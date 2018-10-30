@@ -1,5 +1,5 @@
 // IMPORTS
-const { parseXML } = require(`../lib`);
+const { elan2dlx } = require(`../lib`);
 const path         = require(`path`);
 const { readFile } = require(`fs`).promises;
 
@@ -7,9 +7,6 @@ const { readFile } = require(`fs`).promises;
 const [,, inputFilepath, outputFilepath] = process.argv;
 
 void async function convert() {
-
   const xml  = await readFile(path.join(process.cwd(), inputFilepath), `utf8`);
-  const data = await parseXML(xml);
-  console.log(data);
-
+  const data = await elan2dlx(xml);
 }();
