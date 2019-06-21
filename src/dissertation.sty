@@ -1,0 +1,15 @@
+\ProvidesPackage{dissertation}
+
+% Quote
+\let\origbegquote\quote
+\let\origendquote\endquote
+\renewenvironment{quote}
+{\origbegquote\singlespacing}
+{\origendquote\doublespacing}
+
+% Quotation
+\let\origbegquotation\quotation
+\let\origendquotation\endquotation
+\renewenvironment{quotation}
+{\origbegquotation\singlespacing}
+{\origendquotation\doublespacing}
