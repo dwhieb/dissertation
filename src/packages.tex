@@ -1,14 +1,7 @@
-\usepackage{dissertation}
-
 \usepackage{fancyhdr}
-\pagestyle{fancy}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-\fancyhf{}
-\fancyfoot[C]{\thepage}
-
 \usepackage{fontspec}
-\setmainfont{Times New Roman}
+\usepackage{setspace}
+\usepackage{titling}
 
 \usepackage[
   top=1in,
@@ -17,5 +10,5 @@
   right=1in,
 ]{geometry}
 
-\usepackage{setspace}
-\doublespacing
+% NB: This package must come last
+\usepackage{dissertation}

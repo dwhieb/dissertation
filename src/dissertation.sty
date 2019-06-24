@@ -1,5 +1,12 @@
 \ProvidesPackage{dissertation}
 
+% Header & Footer (fancyhdr package)
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
 % Quote
 \let\origbegquote\quote
 \let\origendquote\endquote
@@ -13,3 +20,7 @@
 \renewenvironment{quotation}
 {\origbegquotation\singlespacing}
 {\origendquotation\doublespacing}
+
+% Text (fontspec, setspace packages)
+\doublespacing
+\setmainfont{Times New Roman}
