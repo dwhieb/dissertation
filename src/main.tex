@@ -1,11 +1,15 @@
 \documentclass[
   12pt,
+  draft,
   letterpaper,
   oneside,
 ]{book}
 
-\include{packages}
+\include{utilities/packages}
 \usepackage{dissertation}
+
+% Load development packages
+\include{utilities/development}
 
 % Uncomment to build only the listed chapters
 % \includeonly{1-introduction}
@@ -15,4 +19,5 @@
   \input{mainmatter/index}
   \input{appendices/index}
   \input{backmatter/index}
+  \listoftodos
 \end{document}
