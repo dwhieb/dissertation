@@ -5,3 +5,9 @@ My Ph.D. dissertation in linguistics at the University of California, Santa Barb
 The majority of the materials in this repository are copyrighted to Daniel W. Hieber.
 
 None of these materials are licensed for copying, reproduction, redistribution, modification, or reuse. Please contact [Daniel W. Hieber](https://danielhieber.com) if you wish to use any of the materials in this repository.
+
+## Versioning
+
+- **major:** new chapter added
+- **minor:** new section added or large revisions made
+- **patch:** minor changes, fixes, typos, etc.
