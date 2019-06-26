@@ -4,26 +4,16 @@
   oneside,
 ]{book}
 
-\include{packages}
-\include{commands}
+\include{utilities/packages}
+\include{utilities/commands}
+\usepackage{dissertation}
 
 % Uncomment to build only the listed chapters
 % \includeonly{1-introduction}
 
 \begin{document}
-
-  \frontmatter
-  \include{title}
-
-  \mainmatter
-  \include{1-introduction}
-  \include{2-background}
-  \include{3-methods}
-  \include{4-results}
-  \include{5-conclusion}
-
-  \appendix
-
-  \backmatter
-
+  \input{frontmatter/index}
+  \input{mainmatter/index}
+  \input{appendices/index}
+  \input{backmatter/index}
 \end{document}
