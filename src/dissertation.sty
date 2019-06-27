@@ -1,5 +1,7 @@
 \ProvidesPackage{dissertation}
 
+% FORMATTING
+
 % Header & Footer (fancyhdr package)
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
@@ -7,9 +9,31 @@
 \fancyhf{}
 \fancyfoot[C]{\thepage}
 
-% Indent
-\def\defaultindent{1.5em}
+% Indents
+\newlength{\defaulthang}
+\setlength{\defaulthang}{1.5em}
+
+\newlength{\defaultindent}
+\setlength{\defaultindent}{1.5em}
 \setlength{\parindent}{\defaultindent}
+
+% Links
+\hypersetup{
+  citecolor=purple,    % bibliography links
+  colorlinks=true,     % use colored links instead of boxes
+  final=true,
+  linkcolor=green,     % internal links
+  urlbordercolor={0 0 1}, % color of URL underline
+  urlcolor=blue        % URL links
+}
+
+  % underline links
+  \makeatletter
+  \Hy@AtBeginDocument{
+    \def\@pdfborder{0 0 1}         % Overrides border definition set with colorlinks=true
+    \def\@pdfborderstyle{/S/U/W 1} % Overrides border style set with colorlinks=true
+  }
+  \makeatother
 
 % Quote
 \let\origbegquote\quote
@@ -30,12 +54,52 @@
 {name=\section, numberless}
 { % formatting
   \centering
+  \Large
   \scshape
 }
 {}    % label
 {0em} % separation
 {}    % code before
+[]    % code after
+
+\titlespacing*
+{name=\section, numberless}
+{0em} % left margin
+{0em} % vertical space before heading
+{0em} % vertical space after heading
+[0em] % right margin
+
+% Subsection (unnumbered)
+\titleformat
+{name=\subsection, numberless}
+{ % formatting
+  \large
+  \scshape
+}
+{}    % label
+{0em} % separation
+{}    % code before
+[]    % code after
+
+\titlespacing*
+{name=\subsection, numberless}
+{0em} % left margin
+{0em} % vertical space before heading
+{0em} % vertical space after heading
+[0em] % right margin
 
 % Text (fontspec, setspace packages)
 \doublespacing
 \setmainfont{Times New Roman}
+
+% COMMANDS
+
+% \tit
+%
+% Used to style titles of books, journals, etc.
+%
+% Example:
+%
+% In her survey \tit{The languages of Native North America}, Mithun says\ldots
+%
+\DeclareTextFontCommand{\tit}{\itshape}
