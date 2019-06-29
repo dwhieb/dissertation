@@ -8,10 +8,16 @@
 \include{frontmatter/cv}
 \include{frontmatter/abstract}
 
-\renewcommand{\contentsname}{Table of Contents}
-
 \begin{singlespace}
+
+  \renewcommand{\contentsname}{Table of Contents}
   \tableofcontents
+  \addcontentsline{toc}{section}{Table of Contents}
+
   \listoffigures
+  \addcontentsline{toc}{section}{List of Figures}
+
   \listoftables
+  \addcontentsline{toc}{section}{List of Tables}
+
 \end{singlespace}
