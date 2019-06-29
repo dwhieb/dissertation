@@ -17,6 +17,17 @@
 \setlength{\defaultindent}{1.5em}
 \setlength{\parindent}{\defaultindent}
 
+% Index
+\makeindex[
+  columns=3,
+  intoc,
+  title={Language Index}
+]
+
+\indexsetup{
+  toclevel=section
+}
+
 % Links
 \hypersetup{
   citecolor=purple,        % bibliography links
@@ -102,7 +113,7 @@
 % Example:
 %
 % Mithun (2008) glosses this as \gl{agt}.
-% 
+%
 \DeclareTextFontCommand{\gl}{\scshape}
 
 % \inlinetitle
