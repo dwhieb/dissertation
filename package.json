@@ -25,7 +25,14 @@
   "dependencies": {},
   "scripts": {
     "bib": "biber src/main",
-    "build": "npm run compile & npm run bib & npm run compile",
-    "compile": "cd src & xelatex main.tex & cd .."
+    "build": "npm run compile & npm run bib & npm run compile & npm copy-pdf",
+    "compile": "cd src & xelatex main.tex & cd ..",
+    "copy-pdf": "node --experimental-modules --no-warnings scripts/copyPDF.mjs",
+    "upload": "node --experimental-modules --no-warnings scripts/upload.mjs"
+  },
+  "devDependencies": {
+    "@azure/storage-blob": "^10.3.0",
+    "eslint": "^6.0.1",
+    "ora": "^3.4.0"
   }
 }
