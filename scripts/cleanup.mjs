@@ -1,9 +1,13 @@
+/**
+ * Cleans build files from the provided directory, except .aux files
+ */
+
 import { createRequire } from 'module';
 import createSpinner     from 'ora';
 import fs                from 'fs';
 import path              from 'path';
 import recurse           from 'recursive-readdir';
-import rootDir           from './rootPath.mjs';
+import rootDir           from './rootDir.mjs';
 
 const require                = createRequire(import.meta.url);
 const { unlink: removeFile } = fs.promises;

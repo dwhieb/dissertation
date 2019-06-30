@@ -24,17 +24,25 @@
   },
   "scripts": {
     "bib": "biber src/main",
-    "build": "npm run compile & npm run bib & npm run compile & npm run copy-pdf",
-    "compile": "cd src & xelatex main.tex & cd ..",
+    "build": "npm run compile && npm run bib && npm run compile",
+    "compile": "cd src && xelatex main.tex && cd ..",
     "cleanup": "node --experimental-modules --no-warnings scripts/cleanup.mjs",
     "copy-pdf": "node --experimental-modules --no-warnings scripts/copyPDF.mjs",
+    "diss-version": "node --experimental-modules --no-warnings scripts/version.mjs",
+    "end-log": "node --experimental-modules --no-warnings scripts/endLog.mjs",
+    "postbuild": "npm run end-log && npm run copy-pdf && open-cli dissertation.pdf",
+    "prebuild": "npm run start-log",
+    "precompile": "npm run diss-version",
+    "start-log": "node --experimental-modules --no-warnings scripts/startLog.mjs",
     "upload": "node --experimental-modules --no-warnings scripts/upload.mjs"
   },
   "devDependencies": {
     "@azure/storage-blob": "^10.3.0",
     "eslint": "^6.0.1",
     "has-flag": "^4.0.0",
+    "open-cli": "^5.0.0",
     "ora": "^3.4.0",
-    "recursive-readdir": "^2.2.2"
+    "recursive-readdir": "^2.2.2",
+    "winston": "^3.2.1"
   }
 }

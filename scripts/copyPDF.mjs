@@ -6,13 +6,13 @@ import { createRequire } from 'module';
 import createSpinner     from 'ora';
 import fs                from 'fs';
 import path              from 'path';
-import rootPath          from './rootPath.mjs';
+import rootDir           from './rootDir.mjs';
 
 const { copyFile: copy } = fs.promises;
 const require            = createRequire(import.meta.url);
 
-const srcPath  = path.join(rootPath, `src/main.pdf`);
-const destPath = path.join(rootPath, `dissertation.pdf`);
+const srcPath  = path.join(rootDir, `src/main.pdf`);
+const destPath = path.join(rootDir, `dissertation.pdf`);
 
 async function copyPDF() {
 

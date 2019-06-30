@@ -3,7 +3,7 @@ import Azure             from '@azure/storage-blob';
 import { createRequire } from 'module';
 import createSpinner     from 'ora';
 import path              from 'path';
-import rootPath          from './rootPath.mjs';
+import rootDir           from './rootDir.mjs';
 
 const {
   Aborter,
@@ -39,7 +39,7 @@ async function upload() {
     const serviceURL   = new ServiceURL(url, pipeline);
     const containerURL = ContainerURL.fromServiceURL(serviceURL, containerName);
     const aborter      = Aborter.none;
-    const filePath     = path.join(rootPath, `dissertation.pdf`);
+    const filePath     = path.join(rootDir, `dissertation.pdf`);
     const blockBlobURL = BlockBlobURL.fromContainerURL(containerURL, filePath);
 
     await uploadFileToBlockBlob(aborter, filePath, blockBlobURL, uploadOptions);
