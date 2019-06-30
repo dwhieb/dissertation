@@ -1,3 +1,7 @@
+/**
+ * Copies main.pdf from the /src folder into the project root as dissertation.pdf
+ */
+
 import { createRequire } from 'module';
 import createSpinner     from 'ora';
 import fs                from 'fs';
