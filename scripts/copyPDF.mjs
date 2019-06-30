@@ -12,7 +12,8 @@ const destPath = path.join(rootPath, `dissertation.pdf`);
 
 async function copyPDF() {
 
-  const spinner = createSpinner(`Copying PDF`).start();
+  const spinner = createSpinner(`Copying PDF`);
+  spinner.start();
 
   try {
 
