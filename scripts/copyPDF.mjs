@@ -26,7 +26,7 @@ async function copyPDF() {
   } catch (e) {
 
     if (e.code === `ENOENT`) return spinner.warn(`PDF does not exist`);
-    spinner.fail(e.message);
+    return spinner.fail(e.message);
 
   }
 

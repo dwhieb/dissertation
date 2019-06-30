@@ -1,15 +1,15 @@
 import { createRequire } from 'module';
 import createSpinner     from 'ora';
 import fs                from 'fs';
-import hasFlag           from 'has-flag';
 import path              from 'path';
 import recurse           from 'recursive-readdir';
 import rootDir           from './rootPath.mjs';
 
 const require                = createRequire(import.meta.url);
-const { unlink: removeFile } = fs;
+const { unlink: removeFile } = fs.promises;
 
 const whiteList = [
+  `**/*.aux`,
   `**/*.bbx`,
   `**/*.bib`,
   `**/*.cbx`,
@@ -18,13 +18,11 @@ const whiteList = [
   `**/*.tex`,
 ];
 
-async function cleanup({ dir = rootDir, fullClean = false } = {}) {
+async function cleanup(dir = `.`) {
 
   const spinner = createSpinner(`Cleaining directory ${dir}`).start();
 
   try {
-
-    if (!fullClean) whiteList.push(`**/*.aux`);
 
     const files = await recurse(dir, whiteList);
 
@@ -32,7 +30,7 @@ async function cleanup({ dir = rootDir, fullClean = false } = {}) {
 
   } catch (e) {
 
-    spinner.fail(e.message);
+    return spinner.fail(e.message);
 
   }
 
@@ -40,13 +38,6 @@ async function cleanup({ dir = rootDir, fullClean = false } = {}) {
 
 }
 
-if (require.main === undefined) {
-
-  const fullClean = hasFlag(`--full`);
-  const dir       = path.join(rootDir, `src`);
-
-  cleanup({ dir, fullClean });
-
-}
+if (require.main === undefined) cleanup(path.join(rootDir, `src`));
 
 export default cleanup;
