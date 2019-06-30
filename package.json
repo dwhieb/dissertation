@@ -23,5 +23,9 @@
     "url": "git+https://github.com/dwhieb/dissertation.git"
   },
   "dependencies": {},
-  "scripts": {}
+  "scripts": {
+    "bib": "biber src/main",
+    "build": "npm run compile & npm run bib & npm run compile",
+    "compile": "cd src & xelatex main.tex & cd .."
+  }
 }
