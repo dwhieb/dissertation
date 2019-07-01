@@ -12,8 +12,8 @@ import yamlParser    from 'yaml';
 const abbreviationsChapterPath = path.join(rootDir, `src/frontmatter/abbreviations.tex`);
 const abbreviationsListPath    = path.join(rootDir, `src/abbreviations.yml`);
 // padding to use at the beginning of each line of the List of Abbreviations table
-const padding                  = 4;
-const tableRegExp              = /(?<beg>% BEGIN ABBREVIATIONS)(?<tableLines>.+)(?<end>% END ABBREVIATIONS)/su;
+const padding                  = 6;
+const tableRegExp              = /(?<beg>% BEGIN ABBREVIATIONS)(?<tableLines>.+?)(?<end>\s+% END ABBREVIATIONS)/su;
 
 const { readFile, writeFile } = fs.promises;
 
@@ -36,7 +36,7 @@ async function generateAbbreviations() {
     .join(`\r\n`);
 
     const oldTeX = await readFile(abbreviationsChapterPath, `utf8`);
-    const newTeX = oldTeX.replace(tableRegExp, `$1\r\n${tableLines}\r\n    $3`);
+    const newTeX = oldTeX.replace(tableRegExp, `$1\r\n${tableLines}$3`);
 
     await writeFile(abbreviationsChapterPath, newTeX, `utf8`);
 
