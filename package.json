@@ -23,6 +23,7 @@
     "url": "git+https://github.com/dwhieb/dissertation.git"
   },
   "scripts": {
+    "abbreviations": "node --experimental-modules --no-warnings scripts/abbreviations.mjs",
     "bib": "biber src/main",
     "build": "npm run compile && npm run bib && npm run compile",
     "compile": "cd src && xelatex main.tex && cd ..",
@@ -32,7 +33,7 @@
     "end-log": "node --experimental-modules --no-warnings scripts/endLog.mjs",
     "postbuild": "npm run end-log && npm run copy-pdf && open-cli dissertation.pdf",
     "prebuild": "npm run start-log",
-    "precompile": "npm run diss-version",
+    "precompile": "npm run diss-version && npm run abbreviations",
     "start-log": "node --experimental-modules --no-warnings scripts/startLog.mjs",
     "upload": "node --experimental-modules --no-warnings scripts/upload.mjs"
   },
@@ -43,6 +44,7 @@
     "open-cli": "^5.0.0",
     "ora": "^3.4.0",
     "recursive-readdir": "^2.2.2",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "yaml": "^1.6.0"
   }
 }
