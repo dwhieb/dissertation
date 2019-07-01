@@ -1,6 +1,6 @@
 {
   "name": "dissertation",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "My Ph.D. dissertation in linguistics at the University of California, Santa Barbara",
   "author": {
     "name": "Daniel W. Hieber",
@@ -24,18 +24,18 @@
   },
   "scripts": {
     "abbreviations": "node --experimental-modules --no-warnings scripts/build/abbreviations.mjs",
-    "bib":           "biber src/main",
-    "build":         "npm run compile && npm run bib && npm run compile",
-    "compile":       "cd src && xelatex main.tex && cd ..",
-    "cleanup":       "node --experimental-modules --no-warnings scripts/build/cleanup.mjs",
-    "copy-pdf":      "node --experimental-modules --no-warnings scripts/build/copyPDF.mjs",
-    "diss-version":  "node --experimental-modules --no-warnings scripts/build/version.mjs",
-    "end-log":       "node --experimental-modules --no-warnings scripts/build/endLog.mjs",
-    "postbuild":     "npm run end-log && npm run copy-pdf && open-cli dissertation.pdf",
-    "prebuild":      "npm run start-log",
-    "precompile":    "npm run diss-version && npm run abbreviations",
-    "start-log":     "node --experimental-modules --no-warnings scripts/build/startLog.mjs",
-    "upload":        "node --experimental-modules --no-warnings scripts/build/upload.mjs"
+    "bib": "biber src/main",
+    "build": "npm run compile && npm run bib && npm run compile",
+    "compile": "cd src && xelatex main.tex && cd ..",
+    "cleanup": "node --experimental-modules --no-warnings scripts/build/cleanup.mjs",
+    "copy-pdf": "node --experimental-modules --no-warnings scripts/build/copyPDF.mjs",
+    "diss-version": "node --experimental-modules --no-warnings scripts/build/version.mjs",
+    "end-log": "node --experimental-modules --no-warnings scripts/build/endLog.mjs",
+    "postbuild": "npm run end-log && npm run copy-pdf && open-cli dissertation.pdf",
+    "prebuild": "npm run start-log",
+    "precompile": "npm run diss-version && npm run abbreviations",
+    "start-log": "node --experimental-modules --no-warnings scripts/build/startLog.mjs",
+    "upload": "node --experimental-modules --no-warnings scripts/build/upload.mjs"
   },
   "devDependencies": {
     "@azure/storage-blob": "^10.3.0",
