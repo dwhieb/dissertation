@@ -1,4 +1,4 @@
-import meta    from '../package.json';
+import meta    from '../../package.json';
 import winston from 'winston';
 
 const { createLogger, format, transports } = winston;

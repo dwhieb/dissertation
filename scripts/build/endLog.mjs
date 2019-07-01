@@ -1,4 +1,4 @@
-import meta    from '../package.json';
+import meta    from '../../package.json';
 import util    from 'util';
 import winston from 'winston';
 

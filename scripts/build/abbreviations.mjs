@@ -2,11 +2,11 @@
  * Generates the List of Abbreviations in the frontmatter
  */
 
-import compare       from './compare.mjs';
+import { compare }   from '../utilities/index.mjs';
 import createSpinner from 'ora';
 import fs            from 'fs';
 import path          from 'path';
-import rootDir       from './rootDir.mjs';
+import rootDir       from '../constants/rootDir.mjs';
 import yamlParser    from 'yaml';
 
 const abbreviationsChapterPath = path.join(rootDir, `src/frontmatter/abbreviations.tex`);

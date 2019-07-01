@@ -7,7 +7,7 @@ import createSpinner     from 'ora';
 import fs                from 'fs';
 import path              from 'path';
 import recurse           from 'recursive-readdir';
-import rootDir           from './rootDir.mjs';
+import rootDir           from '../constants/rootDir.mjs';
 
 const require                = createRequire(import.meta.url);
 const { unlink: removeFile } = fs.promises;
@@ -20,6 +20,7 @@ const whiteList = [
   `**/*.pdf`,
   `**/*.sty`,
   `**/*.tex`,
+  `**/*.yml`,
 ];
 
 async function cleanup(dir = `.`) {

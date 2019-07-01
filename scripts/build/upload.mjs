@@ -1,9 +1,9 @@
-import './credentials.mjs';
+import '../constants/credentials.mjs';
 import Azure             from '@azure/storage-blob';
 import { createRequire } from 'module';
 import createSpinner     from 'ora';
 import path              from 'path';
-import rootDir           from './rootDir.mjs';
+import rootDir           from '../constants/rootDir.mjs';
 
 const {
   Aborter,

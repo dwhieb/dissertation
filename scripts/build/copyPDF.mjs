@@ -6,7 +6,7 @@ import { createRequire } from 'module';
 import createSpinner     from 'ora';
 import fs                from 'fs';
 import path              from 'path';
-import rootDir           from './rootDir.mjs';
+import rootDir           from '../constants/rootDir.mjs';
 
 const { copyFile: copy } = fs.promises;
 const require            = createRequire(import.meta.url);

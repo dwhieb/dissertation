@@ -23,19 +23,19 @@
     "url": "git+https://github.com/dwhieb/dissertation.git"
   },
   "scripts": {
-    "abbreviations": "node --experimental-modules --no-warnings scripts/abbreviations.mjs",
-    "bib": "biber src/main",
-    "build": "npm run compile && npm run bib && npm run compile",
-    "compile": "cd src && xelatex main.tex && cd ..",
-    "cleanup": "node --experimental-modules --no-warnings scripts/cleanup.mjs",
-    "copy-pdf": "node --experimental-modules --no-warnings scripts/copyPDF.mjs",
-    "diss-version": "node --experimental-modules --no-warnings scripts/version.mjs",
-    "end-log": "node --experimental-modules --no-warnings scripts/endLog.mjs",
-    "postbuild": "npm run end-log && npm run copy-pdf && open-cli dissertation.pdf",
-    "prebuild": "npm run start-log",
-    "precompile": "npm run diss-version && npm run abbreviations",
-    "start-log": "node --experimental-modules --no-warnings scripts/startLog.mjs",
-    "upload": "node --experimental-modules --no-warnings scripts/upload.mjs"
+    "abbreviations": "node --experimental-modules --no-warnings scripts/build/abbreviations.mjs",
+    "bib":           "biber src/main",
+    "build":         "npm run compile && npm run bib && npm run compile",
+    "compile":       "cd src && xelatex main.tex && cd ..",
+    "cleanup":       "node --experimental-modules --no-warnings scripts/build/cleanup.mjs",
+    "copy-pdf":      "node --experimental-modules --no-warnings scripts/build/copyPDF.mjs",
+    "diss-version":  "node --experimental-modules --no-warnings scripts/build/version.mjs",
+    "end-log":       "node --experimental-modules --no-warnings scripts/build/endLog.mjs",
+    "postbuild":     "npm run end-log && npm run copy-pdf && open-cli dissertation.pdf",
+    "prebuild":      "npm run start-log",
+    "precompile":    "npm run diss-version && npm run abbreviations",
+    "start-log":     "node --experimental-modules --no-warnings scripts/build/startLog.mjs",
+    "upload":        "node --experimental-modules --no-warnings scripts/build/upload.mjs"
   },
   "devDependencies": {
     "@azure/storage-blob": "^10.3.0",

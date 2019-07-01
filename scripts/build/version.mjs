@@ -5,9 +5,9 @@
 import { createRequire } from 'module';
 import createSpinner     from 'ora';
 import fs                from 'fs';
-import meta              from '../package.json';
+import meta              from '../../package.json';
 import path              from 'path';
-import rootDir           from './rootDir.mjs';
+import rootDir           from '../constants/rootDir.mjs';
 
 const require       = createRequire(import.meta.url);
 const { writeFile } = fs.promises;
