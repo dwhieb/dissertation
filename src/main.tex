@@ -21,8 +21,10 @@
   \input{mainmatter/index}
   \input{backmatter/index}
 
-  \begin{singlespace}
-    \listoftodos
-  \end{singlespace}
+  \ifdraft{
+    \begin{singlespace}
+      \listoftodos
+    \end{singlespace}
+  }{}
 
 \end{document}
