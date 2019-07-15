@@ -1,4 +1,4 @@
 - [ ] version bump: `npm version {major|minor|patch}`
 - [ ] cleanup project: `npm run cleanup`
 - [ ] compile project: `npm run build`
-- [ ] run diff on PDF (Adobe) and save diff as `diff-vX.X.X`
+- [ ] run diff on the PDF (Adobe) versus the previous version and save diff as `diff.pdf`
