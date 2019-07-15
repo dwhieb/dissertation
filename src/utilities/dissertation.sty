@@ -138,3 +138,14 @@
 % In her survey \inlinetitle{The languages of Native North America}, Mithun says\ldots
 %
 \DeclareTextFontCommand{\inlinetitle}{\itshape}
+
+% \tx
+%
+% For inline mentions of language, i.e. inline examples. \tx is short for 'transcription', since every example / mention is a transcription of some piece of language. NB: This command substitutes non-breaking hyphens for regular hyphens
+%
+% Example:
+%
+% The English Participle \tx{-ing} does is, obviously, specific to English.
+%
+% \newcommand{\tx}[1]{\StrSubstitute{\textit{#1}}{-}{‑}}
+\newcommand{\tx}[1]{\textit{\StrSubstitute{#1}{-}{‑}}}
