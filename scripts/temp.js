@@ -17,11 +17,11 @@ void async function renameFiles() {
 
   const filenames = await readDir(textsDir);
 
-  for (const oldFilename in filenames) {
+  for (const oldFilename of filenames) {
 
     const newFilename = oldFilename
     .replace(/^sbc/u, `SBC`)
-    .replace(/_dt2\.txt$/u);
+    .replace(/_dt2\.txt$/u, `.txt`);
 
     await rename(path.join(textsDir, oldFilename), path.join(textsDir, newFilename));
 
