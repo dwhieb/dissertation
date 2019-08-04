@@ -22,6 +22,7 @@
     "type": "git",
     "url": "git+https://github.com/dwhieb/dissertation.git"
   },
+  "type": "module",
   "scripts": {
     "abbreviations": "node --experimental-modules --no-warnings scripts/build/abbreviations.mjs",
     "bib": "biber src/main",
@@ -35,6 +36,7 @@
     "prebuild": "npm run start-log",
     "precompile": "npm run diss-version && npm run abbreviations",
     "start-log": "node --experimental-modules --no-warnings scripts/build/startLog.mjs",
+    "temp": "node --experimental-modules --no-warnings scripts/temp.js",
     "upload": "node --experimental-modules --no-warnings scripts/build/upload.mjs"
   },
   "devDependencies": {
