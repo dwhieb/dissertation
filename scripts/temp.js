@@ -13,7 +13,7 @@ const {
 
 const textsDir = `data/English/SBC/texts`;
 
-void async function renameFiles() {
+async function renameFiles() {
 
   const filenames = await readDir(textsDir);
 
@@ -27,4 +27,4 @@ void async function renameFiles() {
 
   }
 
-}();
+}
