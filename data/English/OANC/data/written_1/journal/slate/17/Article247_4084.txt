@@ -1,0 +1,79 @@
+
+   
+   
+      
+         
+            What_WP Is_VBZ Source_NNP Code_NNP ?_.
+            
+
+            Among_IN the_DT legal_JJ remedies_NNS being_VBG considered_VBN in_IN the_DT Microsoft_NNP antitrust_JJ trial_NN
+is_VBZ a_DT court_NN order_NN that_WDT would_MD force_VB the_DT company_NN to_TO reveal_VB the_DT "_'' source_NN code_NN "_'' for_IN
+part_NN or_CC all_DT of_IN its_PRP$ Windows_NNP operating_VBG system_NN ._. What_WP exactly_RB does_VBZ this_DT mean_NN ?_.
+
+            Source_NN code_NN is_VBZ simply_RB the_DT human-readable_JJ version_NN of_IN the_DT computer_NN commands_NNS
+that_WDT make_VBP up_RP a_DT program_NN ._. It_PRP is_VBZ the_DT letters_NNS and_CC symbols_NNS that_WDT software_NN engineers_NNS
+type_NN into_IN their_PRP$ computers_NNS when_WRB they_PRP create_VBP an_DT application_NN or_CC operating_VBG system_NN ._.
+For_IN example_NN ,_, if_IN a_DT C_NNP +_NN +_NN programmer_NN wrote_VBD a_DT program_NN to_TO make_VB his_PRP$ computer_NN display_NN
+the_DT words_NNS ,_, "_'' Hello_UH ,_, World_NNP ,_, "_'' the_DT source_NN code_NN might_MD look_VB like_IN this_DT :_:
+
+            #_# include_VBP <_NN iostream_NN ._. h_NN >_NN
+void_NN main_JJ (_( )_)
+{_(
+cout_NN <_NN <_NN "_'' Hello_UH ,_, World_NNP "_'' ;_:
+}_)
+
+            Although_IN these_DT commands_NNS are_VBP intelligible_JJ to_TO engineers_NNS ,_, they_PRP are_VBP useless_JJ to_TO
+computers_NNS ,_, which_WDT understand_VBP only_RB ones_NNS and_CC zeros_NNS ._. So_RB ,_, to_TO make_VB the_DT source_NN code_NN
+into_IN a_DT functioning_VBG program_NN ,_, translation_NN software_NN (_( called_VBD a_DT "_'' compiler_NN "_'' )_) must_MD
+convert_VB it_PRP into_IN the_DT binary_JJ "_'' object_VBP code_NN "_'' that_IN computers_NNS can_MD process_VB ._.
+
+            Open_JJ source_NN software_NN ,_, such_JJ as_IN the_DT Linux_NNP operating_VBG system_NN ,_, makes_VBZ both_DT the_DT
+object_NN code_NN and_CC the_DT source_NN code_NN freely_RB available_JJ so_IN that_IN any_DT programmer_NN can_MD
+figure_VB out_IN how_WRB the_DT program_NN is_VBZ constructed_VBN and_CC then_RB alter_VB it_PRP to_TO his_PRP$
+satisfaction_NN ._. But_CC closed_VBD source_NN software_NN ,_, such_JJ as_IN Windows_NNP and_CC most_RBS commercial_JJ
+programs_NNS ,_, is_VBZ shipped_VBN with_IN the_DT object_NN code_NN only_RB ._. Software_NNP companies_NNS argue_VBP that_DT
+source_NN code_NN contains_VBZ valuable_JJ intellectual_JJ property_NN that_WDT must_MD be_VB protected_VBN ._. One_CD
+common_JJ analogy_NN compares_VBZ source_NN code_NN to_TO the_DT formula_NN for_IN Coca-_NNP Cola_NNP :_: The_DT Coca-_NNP Cola_NNP
+Co_NNP ._. ships_NNS only_RB bottles_NNS of_IN Coke_NNP to_TO its_PRP$ customers_NNS ,_, not_RB the_DT formula_NN for_IN the_DT drink_NN ,_,
+because_IN it_PRP does_VBZ n't_RB want_VB competitors_NNS to_TO brew_VB knock-offs_JJ or_CC use_VB the_DT formula_NN to_TO
+improve_VB their_PRP$ drinks_NNS ._.
+
+            With_IN software_NN ,_, "_'' decompilers_NNS "_'' -_: -_: or_CC ,_, reverse-translation_JJ programs--can_JJ
+theoretically_RB convert_VB object_VBP code_NN back_RB into_IN source_NN code_NN ._. But_CC their_PRP$ inaccuracies_NNS
+render_VB them_PRP largely_RB ineffective_JJ ._. (_( Think_VBP of_IN one_CD person_NN translating_VBG a_DT sentence_NN
+from_IN English_NNP to_TO Japanese_JJ and_CC another_DT translating_VBG it_PRP back_RB into_IN English_NNP ;_: chances_NNS
+are_VBP slim_JJ that_IN the_DT sentence_NN would_MD end_VB up_RB in_IN its_PRP$ original_JJ form_NN ._. )_) Additionally_RB ,_,
+attempting_VBG to_TO reverse_VB engineer_NN software_NN is_VBZ illegal_JJ :_: Like_IN most_JJS commercial_JJ
+software_NN companies_NNS ,_, Microsoft_NNP forbids_VBZ it_PRP as_IN part_NN of_IN its_PRP$ licensing_NN
+agreement_NN ._.
+
+            If_IN Microsoft_NNP (_( which_WDT owns_VBZ 
+                  Slate_NNP
+               )_) were_VBD to_TO make_VB the_DT Windows_NNP
+source_NN code_NN public_JJ ,_, competitors_NNS could_MD use_VB this_DT information_NN to_TO market_NN Windows_NNP
+clones_NNS or_CC alter_VB their_PRP$ operating_NN systems_NNS (_( Linux_NNP ,_, Mac_NNP OS_NNP ,_, etc_FW ._. )_) to_TO run_VB software_NN
+designed_VBN for_IN Windows_NNP ._. However_RB ,_, neither_DT project_NN would_MD be_VB easy_JJ ._. Windows_NNP 98_CD
+contains_VBZ approximately_RB 20_CD million_CD lines_NNS of_IN source_NN code_NN written_VBN in_IN multiple_JJ
+computer_NN languages_NNS ._. To_TO use_VB the_DT source_NN code_NN effectively_RB ,_, a_DT competitor_NN would_MD need_VB
+to_TO figure_VB out_IN which_WDT commands_NNS affect_VBP which_WDT functions_NNS and_CC how_WRB changes_NNS to_TO one_CD part_NN
+would_MD affect_VB the_DT functioning_NN of_IN the_DT whole--a_JJ nearly_RB impossible_JJ guessing_VBG game_NN
+for_IN even_RB the_DT most_RBS experienced_VBN programmers_NNS ._. For_IN this_DT reason_NN ,_, releasing_VBG the_DT
+Windows_NNP source_NN code_NN might_MD not_RB instantly_RB erode_VB Microsoft_NNP 's_POS dominance_NN in_IN PC_NN
+operating_NN systems_NNS unless_IN a_DT great_JJ number_NN of_IN software_NN engineers_NNS applied_VBD
+themselves_PRP to_TO the_DT effort_NN ._. Microsoft_NNP argues_VBZ that_IN releasing_VBG the_DT source_NN code_NN would_MD
+be_VB bad_JJ for_IN consumers_NNS because_IN it_PRP would_MD result_VB in_IN many_JJ incompatible_JJ versions_NNS of_IN
+Windows_NNP ._.
+
+            So_RB far_RB ,_, the_DT results_NNS of_IN releasing_VBG source_NN code_NN to_TO the_DT public_JJ are_VBP mixed_JJ ._. It_PRP can_MD
+stir_VB great_JJ creativity_NN among_IN programmers_NNS ,_, as_IN the_DT Linux_NNP story_NN illustrates_VBZ ._. Or_CC ,_, it_PRP
+can_MD prove_VB a_DT disappointment_NN ._. Netscape_NNP made_VBD public_JJ the_DT source_NN code_NN for_IN its_PRP$
+Navigator_NNP browser_NN a_DT year_NN an_DT a_DT half_NN ago_RB ,_, and_CC most_JJS estimate_NN that_IN it_PRP will_MD take_VB at_IN
+least_JJS another_DT six_CD months_NNS for_IN programmers_NNS to_TO create_VB a_DT new_JJ product_NN with_IN it_PRP ._. And_CC a_DT
+browser_NN 's_POS source_NN code_NN is_VBZ only_RB a_DT fraction_NN of_IN the_DT size_NN of_IN that_DT of_IN an_DT operating_VBG
+system_NN ._.
+
+            Next_JJ question_NN ?_.
+
+         
+      
+   

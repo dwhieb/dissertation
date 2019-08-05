@@ -1,0 +1,897 @@
+
+  
+    
+      
+        Background_NNP
+        
+          The_DT state_NN of_IN blind_JJ protein_NN structure_NN
+          prediction_NN
+          The_DT community-wide_JJ experiment_NN on_IN methods_NNS to_TO test_VB
+          protein_NN structure_NN prediction_NN (_( CASP_NNP )_) was_VBD first_RB initiated_VBN
+          in_IN 1994_CD ,_, as_IN a_DT means_NN of_IN evaluating_VBG structure_NN prediction_NN
+          methods_NNS in_IN a_DT blind_JJ and_CC rigourous_JJ manner_NN [_NN 1_CD ]_NN ._. This_DT was_VBD
+          motivated_VBN in_IN part_NN by_IN claims_NNS in_IN the_DT literature_NN of_IN the_DT
+          protein_NN folding_VBG problem_NN being_VBG "_'' solved_VBN "_'' without_IN producing_VBG
+          tangible_JJ benefits_NNS ,_, since_IN most_JJS of_IN the_DT "_'' solutions_NNS "_'' included_VBD
+          a_DT strong_JJ dependence_NN on_IN the_DT test_NN set_VBN ._. These_DT experiments_NNS
+          evaluate_VBP prediction_NN techniques_NNS by_IN asking_VBG modellers_NNS to_TO
+          construct_VB models_NNS for_IN a_DT number_NN of_IN protein_NN sequences_NNS before_IN
+          the_DT experimental_JJ result_NN is_VBZ known_VBN ,_, over_IN a_DT period_NN of_IN 3_CD -_: 4_CD
+          months_NNS ._. We_PRP have_VBP taken_VBN part_NN in_IN all_DT four_CD CASP_NNP experiments_NNS ,_,
+          including_VBG the_DT most_RBS recent_JJ one_CD (_( CASP_NNP 4_LS )_) that_WDT finished_VBD in_IN
+          December_NNP 2000_CD http_NN :_: /_NN /_NN predictioncenter_NN ._. llnl_NN ._. gov_NN ._. The_DT CASP_NNP 4_CD
+          results_NNS provide_VBP a_DT benchmark_NN as_IN to_TO what_WP level_NN of_IN model_NN
+          accuracy_NN we_PRP can_MD currently_RB expect_VB from_IN our_PRP$ approaches_NNS ._.
+          There_EX are_VBP three_CD primary_JJ categories_NNS of_IN methods_NNS for_IN
+          predicting_VBG protein_NN structure_NN from_IN sequence_NN :_: comparative_JJ
+          modelling_VBG ,_, fold_VB recognition_NN ,_, and_CC 
+          ab_NN initio_NN prediction_NN ._. In_IN the_DT
+          comparative_JJ modelling_VBG and_CC fold_VB recognition_NN categories_NNS ,_,
+          the_DT methodologies_NNS rely_VBP on_IN the_DT presence_NN of_IN one_CD or_CC more_RBR
+          evolutionarily_RB related_VBN template_NN protein_NN structures_NNS that_WDT
+          are_VBP used_VBN to_TO construct_VB a_DT model_NN ;_: the_DT evolutionary_JJ
+          relationship_NN can_MD be_VB deduced_JJ from_IN sequence_NN similarity_NN [_NN 2_CD
+          3_CD 4_CD 5_CD ]_NN or_CC by_IN "_'' threading_VBG "_'' a_DT sequence_NN against_IN a_DT library_NN of_IN
+          structures_NNS and_CC selecting_VBG the_DT best_JJS match_NN [_NN 6_CD 7_CD 8_CD ]_NN ._. For_IN
+          both_DT of_IN these_DT approaches_NNS ,_, a_DT sequence_NN alignment_NN between_IN
+          the_DT target_NN protein_NN to_TO be_VB modelled_JJ and_CC the_DT evolutionarily_RB
+          related_VBN protein_NN with_IN known_VBN structure_NN is_VBZ used_VBN to_TO create_VB
+          the_DT initial_NN or_CC seed_NN model_NN ._. In_IN the_DT 
+          ab_NN initio_NN category_NN ,_, there_EX is_VBZ no_DT
+          strong_JJ dependence_NN on_IN database_NN information_NN and_CC prediction_NN
+          methods_NNS are_VBP based_VBN on_IN general_JJ principles_NNS that_WDT govern_VBP
+          protein_NN structure_NN and_CC energetics_NNS [_NN 9_CD 10_CD 11_CD 12_CD 13_CD ]_NN ._. The_DT
+          categories_NNS vary_VBP in_IN difficulty_NN ,_, and_CC consequently_RB methods_NNS
+          in_IN each_DT of_IN these_DT categories_NNS produce_VBP models_NNS with_IN different_JJ
+          levels_NNS of_IN accuracy_NN relative_JJ to_TO the_DT experimental_JJ
+          structures_NNS ._.
+          Since_IN the_DT inception_NN of_IN CASP_NNP ,_, predictors_NNS all_DT over_IN the_DT
+          world_NN have_VBP built_VBN models_NNS for_IN 128_CD proteins_NNS using_VBG the_DT
+          methodologies_NNS described_VBD above_IN ._. Before_IN the_DT first_JJ CASP_NNP
+          experiment_NN ,_, published_VBN results_NNS in_IN comparative_JJ modelling_VBG in_IN
+          the_DT literature_NN usually_RB were_VBD obtained_VBN by_IN applying_VBG
+          structure_NN prediction_NN methods_NNS in_IN the_DT context_NN of_IN the_DT exact_JJ
+          experimental_JJ structure_NN ;_: for_IN example_NN ,_, re-building_JJ side_NN
+          chains_NNS on_IN the_DT native_JJ main_JJ chain_NN ,_, or_CC re-building_JJ regions_NNS
+          of_IN main_JJ chain_NN keeping_VBG the_DT rest_NN of_IN the_DT experimental_JJ
+          structure_NN fixed_VBN ._. (_( This_DT practice_NN continues_VBZ to_TO this_DT day_NN ._. )_) 
+          Ab_NNP initio_NN methodologies_NNS ,_,
+          parameterised_JJ extensively_RB on_IN small_JJ test_NN sets_NNS ,_, failed_VBD when_WRB
+          given_VBN novel_NN types_NNS of_IN sequences_NNS ._.
+          CASP_NNP 1_CD was_VBD an_DT eye-opener_JJ in_IN terms_NNS of_IN understanding_VBG the_DT
+          difficulty_NN of_IN making_VBG accurate_JJ predictions_NNS on_IN approximate_JJ
+          templates_NNS in_IN comparative_JJ modelling_VBG [_NN 14_CD ]_NN ._. The_DT main_JJ
+          problems_NNS in_IN creating_VBG a_DT good_JJ comparative_JJ or_CC fold_VB
+          recognition_NN model_NN were_VBD related_VBN to_TO alignment_NN between_IN the_DT
+          template_NN and_CC target_NN sequences_NNS ,_, and_CC building_NN of_IN
+          non-conserved_JJ variable_JJ regions_NNS (_( side_NN chains_NNS ,_, and_CC main_JJ
+          chain_NN loops_NNS )_) ._. In_IN the_DT 
+          ab_NN initio_NN category_NN ,_, it_PRP appeared_VBD
+          that_IN methods_NNS could_MD not_RB sample_NN conformational_NN space_NN
+          accurately_RB ,_, and_CC select_VB native-like_JJ conformations_NNS ,_, for_IN all_DT
+          but_CC very_RB small_JJ fragments_NNS ._. The_DT highlight_NN of_IN CASP_NNP 1_CD was_VBD the_DT
+          recognition_NN of_IN threading_VBG as_IN viable_JJ method_NN for_IN predicting_VBG
+          folds_NNS [_NN 15_CD ]_NN ,_, and_CC the_DT success_NN of_IN neural-network_JJ based_VBN
+          secondary_JJ structure_NN prediction_NN methods_NNS [_NN 16_CD ]_NN ._.
+          The_DT second_JJ CASP_NNP showed_VBD some_DT improvement_NN in_IN two_CD areas_NNS :_:
+          In_IN comparative_JJ modelling_VBG ,_, loops_NNS were_VBD being_VBG built_VBN better_JJR ,_,
+          and_CC the_DT use_NN of_IN hand-inspected_JJ alignments_NNS greatly_RB
+          increased_VBN model_NN accuracy_NN [_NN 17_CD ]_NN ._. In_IN the_DT fold_VB recognition_NN
+          category_NN ,_, alignments_NNS as_RB well_RB as_IN prediction_NN of_IN folds_NNS
+          improved_VBD [_NN 18_CD ]_NN ._. The_DT results_NNS in_IN the_DT 
+          ab_NN initio_NN category_NN remained_VBD
+          virtually_RB unchanged_JJ except_IN for_IN one_CD model_NN of_IN the_DT
+          alpha-helical_JJ protein_NN NK-Lysin_NNP predicted_VBD to_TO within_IN 6_CD ._. 0_CD Å_NN
+          C_NNP 
+          α_NN RMSD_NNP ,_, capturing_VBG the_DT correct_JJ topology_NN
+          [_NN 19_CD ]_NN ._.
+          The_DT third_JJ CASP_NNP saw_VBD consistent_JJ but_CC little_JJ progress_NN
+          relative_JJ to_TO CASP_NNP 2_CD in_IN both_DT comparative_JJ modelling_VBG and_CC fold_VB
+          recognition_NN categories_NNS [_NN 20_CD 21_CD ]_NN ,_, but_CC the_DT most_RBS dramatic_JJ
+          results_NNS were_VBD observed_VBN in_IN the_DT 
+          ab_NN initio_NN category_NN ._. Here_RB multiple_JJ
+          groups_NNS predicted_VBD large_JJ parts_NNS of_IN a_DT few_JJ protein_NN sequences_NNS
+          at_IN a_DT crude_NN topological_JJ level_NN (_( within_IN 6_CD ._. 0_CD Å_NN C_NNP 
+          α_NN RMSD_NNP for_IN ≈_NN 60_CD residues_NNS )_) [_NN 22_CD ]_NN ._.
+        
+        
+          Performance_NNP of_IN our_PRP$ methods_NNS at_IN CASP_NNP 1_CD -_: 3_CD :_: Comparative_NNP
+          modelling_VBG
+          Table_NNP 1_CD shows_VBZ a_DT general_JJ estimate_NN of_IN how_WRB well_RB our_PRP$
+          comparative_JJ modelling_VBG prediction_NN methods_NNS have_VBP performed_VBN
+          at_IN different_JJ CASP_NNP experiments_NNS [_NN 23_CD 24_CD ]_NN ._.
+          Even_RB though_IN our_PRP$ methods_NNS produced_VBD mediocre_JJ results_NNS at_IN
+          CASP_NNP 1_CD ,_, we_PRP realised_JJ that_IN a_DT major_JJ problem_NN with_IN accurate_JJ
+          comparative_JJ modelling_VBG had_VBN to_TO do_VB with_IN the_DT interconnected_VBN
+          nature_NN of_IN protein_NN structures_NNS [_NN 23_CD ]_NN :_: If_IN a_DT certain_JJ region_NN
+          of_IN the_DT protein_NN varied_VBD with_IN respect_NN to_TO the_DT homologue_NN ,_, then_RB
+          it_PRP was_VBD likely_JJ that_IN a_DT structurally_RB interacting_VBG region_NN
+          would_MD also_RB vary_VB ,_, even_RB if_IN that_DT region_NN was_VBD conserved_JJ in_IN
+          sequence_NN ._. We_PRP therefore_RB developed_VBD a_DT graph-theory_JJ based_VBN
+          approach_NN to_TO address_VB this_DT problem_NN which_WDT demonstrated_VBD
+          significant_JJ progress_NN in_IN loop_NN building_NN at_IN CASP_NNP 2_CD (_( Table_NNP 1_LS )_)
+          [_NN 24_CD ]_NN ._. The_DT CASP_NNP 3_CD and_CC CASP_NNP 4_CD results_NNS are_VBP minor_JJ
+          improvements_NNS over_IN the_DT CASP_NNP 2_CD results_NNS since_IN the_DT
+          enhancements_NNS made_VBN to_TO the_DT graph_NN theory_NN method_NN have_VBP been_VBN
+          minimal_JJ ._.
+        
+        
+          Performance_NNP of_IN methods_NNS at_IN CASP_NNP 1_CD -_: 3_CD :_: Ab_NNP initio_NN
+          prediction_NN
+          In_IN the_DT 
+          ab_NN initio_NN category_NN ,_, as_IN with_IN
+          comparative_JJ modelling_VBG ,_, the_DT first_JJ CASP_NNP experiments_NNS did_VBD not_RB
+          live_VB up_RP to_TO the_DT results_NNS previously_RB published_VBN in_IN the_DT
+          literature_NN [_NN 16_CD 19_CD ]_NN ._. It_PRP was_VBD not_RB until_IN CASP_NNP 3_CD (_( the_DT first_NN
+          time_NN where_WRB we_PRP took_VBD part_NN in_IN this_DT category_NN )_) that_IN the_DT first_JJ
+          consistent_JJ positive_JJ results_NNS were_VBD seen_VBN :_: several_JJ groups_NNS
+          were_VBD able_JJ to_TO predict_VB the_DT correct_JJ topologies_NNS for_IN small_JJ
+          proteins_NNS ,_, or_CC large_JJ fragments_NNS of_IN a_DT protein_NN (_( ~_NN 60_CD -_: 80_CD
+          residues_NNS to_TO about_IN 6_CD ._. 0_CD Å_NN C_NNP 
+          α_NN RMSD_NNP relative_JJ to_TO the_DT experimental_JJ
+          conformation_NN )_) [_NN 22_CD 25_CD ]_NN ._.
+        
+        
+          CASP_NNP 4_CD
+          The_DT fourth_JJ CASP_NNP was_VBD held_VBN in_IN December_NNP 2000_CD ._. CASP_NNP 4_CD
+          demonstrated_VBN further_JJ improvement_NN in_IN our_PRP$ methodologies_NNS in_IN
+          both_DT comparative_JJ modelling_VBG and_CC 
+          ab_NN initio_NN prediction_NN [_NN 26_CD ]_NN ._. Our_PRP$
+          approaches_NNS combine_VBP a_DT Monte_NNP Carlo_NNP procedure_NN ,_, simulated_JJ
+          annealing_VBG ,_, genetic_JJ algorithms_NNS ,_, graph_NN theory_NN ,_, and_CC
+          semi-exhaustive_JJ searches_NNS with_IN move_NN sets_NNS consisting_VBG of_IN
+          fragments_NNS and_CC discrete_JJ state_NN models_NNS ,_, and_CC scoring_VBG
+          functions_NNS consisting_VBG of_IN all_DT atom-based_JJ pairwise_NN
+          functions_NNS ,_, hydrophobicity_NN indices_NNS ,_, secondary_JJ structure_NN
+          preferences_NNS ,_, and_CC hydrogen_NN bonding_NN ._. The_DT goal_NN was_VBD to_TO
+          develop_VB components_NNS that_WDT form_NN a_DT structure_NN prediction_NN
+          engine_NN ,_, combining_VBG and_CC innovating_VBG upon_IN previously_RB
+          developed_VBN approaches_NNS by_IN observing_VBG what_WP methods_NNS work_VBP well_RB
+          at_IN the_DT previous_JJ CASP_NNP experiments_NNS ,_, and_CC adding_VBG new_JJ
+          components_NNS of_IN our_PRP$ own_JJ ._.
+          We_PRP focus_VBP here_RB on_IN the_DT results_NNS of_IN our_PRP$ prediction_NN
+          methodologies_NNS on_IN all_DT of_IN the_DT 40_CD sequences_NNS ,_, for_IN which_WDT an_DT
+          experimental_JJ answer_NN was_VBD later_RB available_JJ ._. Unlike_IN the_DT
+          assessors_NNS '_POS evaluations_NNS at_IN CASP_NNP (_( which_WDT has_VBZ recently_RB
+          appeared_VBN in_IN the_DT special_JJ issue_NN (_( S_NNP 5_LS )_) of_IN 
+          Proteins_NNPS :_: Structure_NNP ,_, Function_NNP ,_, and_CC
+          Genetics_NNP )_) ,_, which_WDT focus_VBP on_IN how_WRB well_RB a_DT particular_JJ
+          group_NN performs_VBZ ,_, we_PRP treat_VBP CASP_NNP as_IN a_DT test-bed_JJ for_IN how_WRB well_RB
+          an_DT individual_JJ method_NN performs_VBZ ._. Using_VBG the_DT lessons_NNS learnt_NN
+          from_IN CASP_NNP successes_NNS and_CC failures_NNS ,_, we_PRP suggest_VBP a_DT unified_JJ
+          approach_NN that_WDT mixes_VBZ and_CC matches_VBZ between_IN the_DT best_JJS
+          predictions_NNS to_TO produce_VB the_DT best_JJS results_NNS ._. The_DT aim_NN of_IN this_DT
+          work_NN is_VBZ to_TO illustrate_VB when_WRB our_PRP$ prediction_NN methods_NNS work_NN ,_,
+          when_WRB they_PRP fail_VBP ,_, and_CC what_WP this_DT means_VBZ in_IN the_DT context_NN of_IN
+          building_NN models_NNS for_IN all_DT proteins_NNS encoded_JJ by_IN the_DT genome_NN of_IN
+          an_DT organism_NN at_IN the_DT present_JJ time_NN ._.
+        
+      
+      
+        Results_NNS and_CC Discussion_NNP
+        
+          What_WP went_VBD right_NN ;_: what_WP went_VBD wrong_JJ
+          
+            Comparative_NNP modelling_VBG and_CC fold_VB recognition_NN
+            Table_NNP 2_CD compares_VBZ all_PDT the_DT predictions_NNS we_PRP made_VBD for_IN
+            CASP_NNP 4_CD using_VBG comparative_JJ modelling_VBG and_CC fold_VB recognition_NN
+            methods_NNS ._. The_DT results_NNS are_VBP qualitatively_RB assessed_VBN as_IN
+            being_VBG one_CD of_IN "_'' excellent_JJ "_'' ,_, "_'' good_JJ "_'' ,_, "_'' useful_JJ "_'' ,_, and_CC
+            "_'' failure_NN "_'' ._. In_IN the_DT comparative_JJ modelling_VBG category_NN ,_, we_PRP
+            made_VBD 29_CD predictions_NNS for_IN targets_NNS that_WDT had_VBD sequence_NN
+            identities_NNS ranging_VBG from_IN 50_CD %_NN to_TO 10_CD %_NN to_TO the_DT nearest_JJS
+            related_VBN protein_NN with_IN known_VBN structure_NN ._. For_IN 23_CD of_IN these_DT
+            proteins_NNS ,_, we_PRP produced_VBD models_NNS ranging_VBG from_IN 1_CD ._. 0_CD to_TO 6_CD ._. 0_CD Å_NN
+            root_NN mean_NN square_JJ deviation_NN (_( RMSD_NNP )_) for_IN the_DT C_NNP 
+            α_NN atoms_NNS between_IN the_DT model_NN and_CC the_DT
+            corresponding_JJ experimental_JJ structure_NN for_IN all_DT or_CC large_JJ
+            parts_NNS of_IN the_DT protein_NN ,_, with_IN model_NN accuracies_NNS scaling_VBG
+            fairly_RB linearly_RB with_IN respect_NN to_TO sequence_NN identity_NN
+            (_( i_NNP ._. e_SYM ._. ,_, the_DT higher_JJR the_DT sequence_NN identity_NN ,_, the_DT better_VB the_DT
+            prediction_NN )_) ._. These_DT 23_CD proteins_NNS ranged_VBD in_IN accuracy_NN from_IN
+            "_'' excellent_JJ "_'' to_TO "_'' useful_JJ "_'' ._. Figure_NN 1_CD shows_VBZ some_DT examples_NNS of_IN
+            the_DT comparative_JJ modelling_VBG predictions_NNS with_IN different_JJ
+            difficulties_NNS made_VBN at_IN CASP_NNP 4_CD ._.
+            The_DT comparative_JJ modelling_VBG and_CC fold_VB recognition_NN
+            targets_NNS are_VBP in_IN Table_NNP 2_CD are_VBP sorted_VBN by_IN the_DT difficulty_NN
+            index_NN ._. The_DT percentage_NN identities_NNS for_IN alignments_NNS between_IN
+            several_JJ comparative_JJ modelling_VBG targets_NNS and_CC their_PRP$
+            corresponding_JJ templates_NNS fall_VBP in_IN the_DT twilight_NN zone_NN or_CC
+            below_IN (_( alignments_NNS with_IN percentage_NN identities_NNS <_NN =_SYM
+            30_CD %_NN )_) ._. In_IN fact_NN ,_, such_JJ targets_NNS belong_VBP more_JJR in_IN the_DT category_NN
+            of_IN fold_VB recognition_NN since_IN it_PRP is_VBZ clear_JJ that_IN even_RB a_DT 20_CD %_NN
+            identity_NN alignment_NN can_MD easily_RB result_VB in_IN a_DT wrong_JJ fold_VB
+            assignment_NN ._. (_( The_DT percentage_NN identity_NN is_VBZ used_VBN for_IN
+            illustration_NN purposes_NNS only-_NN BLAST_NN e-values_JJ follow_VB a_DT
+            similar_JJ trend_NN but_CC are_VBP most_RBS robust_JJ ._. )_)
+            Our_PRP$ comparative_JJ modelling_VBG methods_NNS produce_VBP excellent_JJ
+            models_NNS when_WRB the_DT percentage_NN identity_NN between_IN the_DT target_NN
+            and_CC corresponding_JJ template_NN sequence_NN is_VBZ high_JJ (_( usually_RB
+            within_IN 2_CD ._. 0_CD Å_NN C_NNP 
+            α_NN RMSD_NNP for_IN >_NN 30_CD %_NN identity_NN )_) ._. In_IN
+            several_JJ cases_NNS where_WRB the_DT alignment_NN falls_VBZ into_IN the_DT
+            twilight_NN zone_NN (_( 20_CD -_: 30_CD %_NN sequence_NN identity_NN )_) ,_, models_NNS around_IN
+            4_CD ._. 0_CD Å_NN C_NNP 
+            α_NN RMSD_NNP are_VBP produced_VBN (_( T_NN 0122_CD /_NN trpa_NN ,_,
+            T_NN 0112_CD /_NN dhso_NN ,_, T_NN 0125_CD /_NN spl_NN 8_CD ,_, T_NN 0121_CD /_NN malk_NN )_) ._.
+            In_IN one_CD case_NN ,_, T_NN 0092_CD /_NN yeco_NN ,_, the_DT percentage_NN identity_NN
+            between_IN the_DT target_NN and_CC template_NN proteins_NNS in_IN the_DT
+            alignment_NN we_PRP used_VBD was_VBD 12_CD %_NN ,_, but_CC we_PRP predict_VBP 107_CD residues_NNS
+            to_TO within_IN 6_CD ._. 0_CD Å_NN C_NNP 
+            α_NN RMSD_NNP ._. However_RB ,_, not_RB all_DT cases_NNS where_WRB
+            we_PRP assumed_VBD a_DT homology_NN relationship_NN provided_VBD similar_JJ
+            results_NNS ,_, and_CC the_DT failures_NNS are_VBP indicated_VBN as_IN "_'' F_NN "_'' in_IN Table_NNP
+            2_CD ._.
+            While_IN the_DT graph-theory_JJ methods_NNS have_VBP been_VBN fairly_RB
+            successful_JJ at_IN handling_VBG the_DT interconnectedness_NNS problem_NN
+            to_TO build_VB non-conserved_JJ side_NN chains_NNS and_CC main_JJ chains_NNS [_NN 24_CD
+            ]_NN ,_, other_JJ major_JJ problems_NNS preventing_VBG the_DT construction_NN of_IN
+            accurate_JJ comparative_JJ models_NNS have_VBP to_TO do_VB with_IN inaccurate_JJ
+            alignments_NNS and_CC using_VBG the_DT template_NN structure_NN as_IN a_DT static_JJ
+            model_NN upon_IN which_WDT to_TO build_VB variable_JJ main_JJ chains_NNS ._. In_IN the_DT
+            former_JJ case_NN ,_, if_IN a_DT region_NN of_IN the_DT alignment_NN is_VBZ incorrect_JJ
+            but_CC is_VBZ assumed_VBN to_TO be_VB correct_JJ ,_, then_RB no_DT amount_NN of_IN further_JJ
+            model_NN building_NN will_MD fix_VB this_DT error_NN ._. In_IN the_DT latter_JJ case_NN ,_,
+            the_DT loop_NN and_CC side_NN chain_NN construction_NN methods_NNS ,_, even_RB if_IN
+            interconnectedness_NNS is_VBZ taken_VBN into_IN account_NN ,_, are_VBP limited_VBN
+            by_IN the_DT approximate_JJ nature_NN of_IN the_DT template_NN framework_NN ._. In_IN
+            other_JJ words_NNS ,_, alignment_NN errors_NNS are_VBP irrecoverable_JJ ._. Even_RB
+            though_IN 50_CD -_: 70_CD %_NN of_IN the_DT regions_NNS (_( of_IN up_IN to_TO 15_CD residues_NNS )_) we_PRP
+            thought_VBD would_MD vary_VB with_IN respect_NN to_TO the_DT parent_NN homologue_NN
+            structure_NN were_VBD predicted_VBN to_TO within_IN 3_CD ._. 0_CD Å_NN C_NNP 
+            α_NN RMSD_NNP ,_, this_DT is_VBZ mostly_RB in_IN cases_NNS
+            where_WRB the_DT approximate_JJ template_NN is_VBZ well-predicted_JJ
+            (_( within_IN 2_CD ._. 0_CD Å_NN C_NNP 
+            α_NN RMSD_NNP )_) ._.
+          
+        
+        
+          Ab_NNP initio_NN prediction_NN
+          Table_NNP 2_CD compares_VBZ all_PDT the_DT predictions_NNS we_PRP made_VBD for_IN CASP_NNP 4_CD
+          using_VBG our_PRP$ 
+          ab_NN initio_NN methods_NNS ._. We_PRP made_VBD eleven_CD
+          predictions_NNS for_IN targets_NNS that_WDT had_VBD no_DT detectable_JJ sequence_NN
+          relationships_NNS when_WRB we_PRP began_VBD the_DT modelling_VBG process_NN ._. We_PRP
+          produced_VBD nine_CD models_NNS with_IN accuracies_NNS ranging_VBG from_IN 4_CD ._. 0_CD to_TO
+          6_CD ._. 0_CD Å_NN C_NNP 
+          α_NN RMSD_NNP for_IN 60_CD -_: 100_CD residue_NN proteins_NNS (_( or_CC
+          large_JJ fragments_NNS of_IN a_DT protein_NN )_) ._. Figure_NN 2_CD illustrates_VBZ some_DT
+          of_IN our_PRP$ more_RBR successful_JJ predictions_NNS ._.
+          At_IN CASP_NNP 4_CD ,_, we_PRP were_VBD consistently_RB able_JJ to_TO predict_VB 60_CD -_: 80_CD
+          residue_NN consecutive_JJ fragments_NNS to_TO within_IN 6_CD ._. 0_CD Å_NN ,_, and_CC ,_, at_IN
+          times_NNS ,_, to_TO within_IN 4_CD ._. 0_CD Å_NN C_NNP 
+          α_NN RMSD_NNP ._. These_DT results_NNS are_VBP much_RB more_RBR
+          consistent_JJ than_IN at_IN CASP_NNP 3_CD ,_, and_CC are_VBP also_RB of_IN better_JJR
+          quality_NN ._.
+          While_IN these_DT predictions_NNS are_VBP a_DT significant_JJ improvement_NN
+          compared_VBN to_TO the_DT previous_JJ CASP_NNP results_NNS ,_, we_PRP still_RB have_VBP to_TO
+          make_VB much_JJ progress_NN before_IN we_PRP can_MD produce_VB models_NNS rivalling_VBG
+          that_IN of_IN experiment_NN in_IN accuracy_NN ._. Given_VBN the_DT range_NN of_IN RMSDs_NNP
+          for_IN the_DT population_NN of_IN conformations_NNS sampled_VBN (_( i_NNP ._. e_SYM ._. ,_,
+          "_'' decoys_NNS "_'' )_) for_IN each_DT of_IN the_DT proteins_NNS (_( average_JJ range_NN for_IN the_DT
+          eleven_CD predictions_NNS was_VBD 9_CD ._. 3_CD -_: 17_CD ._. 6_CD Å_NN C_NNP 
+          α_NN RMSD_NNP for_IN the_DT entire_JJ protein_NN ;_: and_CC 5_CD ._. 0_CD
+          -_: 12_CD ._. 6_CD Å_NN C_NNP 
+          α_NN RMSD_NNP when_WRB only_RB the_DT best_JJS fragments_NNS
+          are_VBP considered_VBN )_) ,_, it_PRP is_VBZ clear_JJ that_IN devising_VBG
+          representations_NNS that_WDT will_MD allow_VB us_PRP to_TO explore_VB protein_NN
+          conformational_NN space_NN such_JJ that_IN near-native_JJ conformations_NNS
+          are_VBP encountered_VBN is_VBZ a_DT major_JJ bottleneck_NN ._. Our_PRP$ filter-based_JJ
+          scoring_VBG function_NN approach_NN generally_RB picks_VBZ conformations_NNS
+          from_IN the_DT lower_JJR end_NN of_IN the_DT RMSD_NNP distribution_NN (_( usually_RB
+          within_IN the_DT top_JJ 1_CD %_NN ,_, and_CC no_RB worse_JJR than_IN the_DT 10_CD %_NN ,_, of_IN the_DT
+          conformations_NNS sampled_VBN )_) ,_, but_CC further_JJ improvements_NNS can_MD be_VB
+          made_VBN ._.
+        
+        
+          Caveats_NNP regarding_VBG the_DT use_NN of_IN results_NNS from_IN CASP_NNP
+          experiments_NNS
+          
+            Averaging_NNP over_IN different_JJ methods_NNS and_CC
+            contexts_NNS
+            The_DT results_NNS provided_VBN by_IN the_DT CASP_NNP organisers_NNS and_CC
+            assessors_NNS show_VBP how_WRB well_RB a_DT particular_JJ group_NN did_VBD ,_, but_CC do_VBP
+            not_RB measure_VB performance_NN of_IN individual_JJ methods_NNS in_IN
+            separate_JJ contexts_NNS ._. This_DT makes_VBZ it_PRP harder_RBR to_TO determine_VB
+            which_WDT methods_NNS work_VBP well_RB and_CC places_NNS an_DT inherent_JJ penalty_NN
+            on_IN trying_VBG different_JJ non-conservative_JJ approaches_NNS ._. For_IN
+            example_NN ,_, even_RB successful_JJ loop_NN and_CC side_NN chain_NN building_NN
+            methods_NNS will_MD fail_VB on_IN comparative_JJ models_NNS based_VBN on_IN
+            incorrect_JJ alignments_NNS (_( in_IN our_PRP$ case_NN ,_, we_PRP tried_VBD six_CD
+            different_JJ approaches_NNS in_IN the_DT three_CD categories_NNS combined_VBN ,_,
+            the_DT results_NNS for_IN only_RB two_CD of_IN which_WDT are_VBP listed_VBN in_IN Figures_NNS
+            1_CD and_CC 2_LS )_) ._. This_DT problem_NN has_VBZ been_VBN alleviated_JJ to_TO some_DT
+            degree_NN by_IN the_DT CAFASP_NNP experiment_NN [_NN 47_CD ]_NN ,_, which_WDT provides_VBZ
+            a_DT strict_JJ method-by-method_JJ automatic_JJ evaluation_NN ,_, but_CC it_PRP
+            requires_VBZ that_IN models_NNS be_VB prepared_VBN by_IN the_DT means_NNS of_IN an_DT
+            automated_VBN server_NN in_IN a_DT relatively_RB short_JJ time-frame_JJ ._.
+            Ranking_NNP results_NNS by_IN methods_NNS used_VBN (_( based_VBN on_IN keywords_NNS
+            provided_VBN when_WRB the_DT model_NN is_VBZ submitted_VBN ,_, which_WDT could_MD be_VB
+            standardised_JJ )_) ,_, and_CC considering_VBG subsets_NNS of_IN the_DT target_NN
+            relevant_JJ to_TO particular_JJ methods_NNS ,_, would_MD help_VB
+            significantly_RB in_IN identifying_VBG the_DT methods_NNS that_WDT work_NN
+            best_JJS ._.
+          
+          
+            Subjective_NNP quality_NN of_IN evaluations_NNS
+            Once_RB a_DT certain_JJ evaluation_NN measure_NN is_VBZ chosen_VBN ,_, then_RB
+            evaluating_VBG all_DT models_NNS submitted_VBN by_IN that_DT measure_NN is_VBZ
+            objective_NN ._. However_RB ,_, particular_JJ methods_NNS appear_VBP to_TO
+            perform_VB better_JJR depending_VBG on_IN the_DT choice_NN of_IN evaluation_NN
+            criteria_NNS used_VBN (_( for_IN example_NN ,_, C_NNP 
+            α_NN RMSD_NNP over_IN a_DT contiguous_JJ set_NN of_IN
+            residues_NNS ,_, which_WDT we_PRP prefer_VBP ,_, vs_NNS ._. C_NNP 
+            α_NN RMSD_NNP over_IN non-contiguous_JJ
+            residues_NNS )_) ._. This_DT illustrates_VBZ the_DT need_NN for_IN more_JJR than_IN one_CD
+            measure_NN ,_, but_CC even_RB with_IN that_DT taken_VBN into_IN account_NN ,_, there_EX
+            exists_VBZ an_DT inherent_JJ subjectivity_NN in_IN measurement_NN ,_,
+            especially_RB given_VBN the_DT assessor_NN 's_POS visual_JJ evaluation_NN of_IN
+            the_DT models_NNS during_IN the_DT CASP_NNP experiment_NN (_( one_CD of_IN the_DT
+            authors_NNS of_IN the_DT paper_NN ,_, M_NNP ._. L_NNP ._. ,_, was_VBD an_DT assessor_NN at_IN CASP_NNP 2_LS )_) ._.
+            The_DT reason_NN there_EX is_VBZ a_DT problem_NN is_VBZ because_IN the_DT results_NNS
+            are_VBP not_RB entirely_RB clear_JJ (_( i_NNP ._. e_SYM ._. ,_, the_DT problem_NN has_VBZ not_RB been_VBN
+            solved_VBN )_) ._. Until_IN predictions_NNS with_IN accuracies_NNS rivalling_VBG
+            that_IN of_IN experiment_NN are_VBP made_VBN ,_, assessment_NN of_IN predictions_NNS
+            must_MD be_VB done_VBN automatically_RB using_VBG limited_JJ and_CC stringent_JJ
+            criteria_NNS ,_, most_RBS relevant_JJ to_TO biologists_NNS interested_VBN in_IN
+            function_NN ._. Such_JJ a_DT criteria_NNS could_MD include_VB ,_, for_IN example_NN ,_,
+            how_WRB well_RB the_DT model_NN picks_VBZ out_IN structurally_RB similar_JJ
+            proteins_NNS from_IN the_DT database_NN of_IN known_VBN structures_NNS ,_,
+            relative_JJ to_TO the_DT experimental_JJ result_NN ._.
+          
+        
+        
+          What_WP can_MD be_VB done_VBN
+          
+            Promising_NNP future_JJ areas_NNS
+            While_IN the_DT CASP_NNP experiments_NNS provide_VBP for_IN an_DT
+            environment_NN where_WRB rapid_JJ testing_NN of_IN ideas_NNS is_VBZ possible_JJ in_IN
+            a_DT rigourous_JJ manner_NN ,_, a_DT lot_NN of_IN the_DT development_NN is_VBZ ad_NN hoc_FW ,_,
+            guided_VBN by_IN intuition_NN ,_, and_CC not_RB all_DT parameter_NN choices_NNS are_VBP
+            explored_JJ thoroughly_RB ._.
+            The_DT CASP_NNP experiments_NNS also_RB show_VBP that_IN there_EX is_VBZ not_RB one_CD
+            single_JJ algorithm_NN that_WDT can_MD "_'' solve_VB "_'' the_DT protein_NN structure_NN
+            prediction_NN problem_NN ._. The_DT most_RBS successful_JJ methods_NNS are_VBP
+            those_DT that_WDT combine_VBP and_CC build_VB upon_IN the_DT techniques_NNS
+            developed_VBN by_IN several_JJ researchers_NNS in_IN the_DT last_JJ thirty_CD
+            years_NNS (_( special_JJ issues_NNS of_IN 
+            Proteins_NNPS :_: Structure_NNP ,_, Function_NNP ,_,
+            Genetics_NNP ,_, 1995_CD ,_, 1997_CD ,_, 1999_CD ,_, and_CC 2002_CD )_) ._. Generally_RB
+            the_DT methods_NNS have_VBP incorporated_VBN different_JJ sampling_VBG
+            techniques_NNS and_CC a_DT variety_NN of_IN scoring_VBG functions_NNS each_DT of_IN
+            which_WDT aids_NNS prediction_NN of_IN structure_NN only_RB to_TO a_DT limited_JJ
+            degree_NN when_WRB used_VBN individually_RB ,_, but_CC are_VBP producing_VBG models_NNS
+            useful_JJ for_IN further_JJ biological_JJ study_NN when_WRB combined_VBN
+            together_RB in_IN a_DT coherent_JJ manner_NN ._.
+            To_TO provide_VB a_DT guidance_NN for_IN future_JJ work_NN ,_, we_PRP analysed_JJ
+            some_DT of_IN the_DT more_RBR promising_JJ paths_NNS that_IN we_PRP discovered_VBD to_TO
+            assess_VB their_PRP$ viability_NN in_IN improving_VBG our_PRP$ methods_NNS and_CC
+            making_VBG better_JJR predictions_NNS ,_, focusing_VBG on_IN four_CD major_JJ
+            areas_NNS :_: alignment_NN ,_, refinement_NN ,_, sampling_VBG ,_, and_CC selection_NN ._.
+            An_DT analysis_NN of_IN the_DT results_NNS generated_VBN by_IN our_PRP$ methods_NNS at_IN
+            the_DT next_JJ CASP_NNP (_( evaluated_VBN in_IN December_NNP 2002_CD )_) will_MD provide_VB
+            a_DT measure_NN of_IN the_DT effectiveness_NN of_IN these_DT
+            improvements_NNS ._.
+          
+          
+            Comparative_NNP modelling_VBG and_CC fold_VB recognition_NN :_:
+            Alignment_NNP and_CC template_NN selection_NN using_VBG all-atom_JJ scoring_VBG
+            functions_NNS
+            A_DT major_JJ reason_NN for_IN alignment_NN methods_NNS failing_VBG at_IN CASP_NNP
+            has_VBZ to_TO do_VB with_IN using_VBG sequence_NN information_NN only_RB and_CC not_RB
+            incorporating_VBG structural_JJ information_NN ._. For_IN example_NN ,_,
+            while_IN modelling_VBG T_NN 24_CD /_NN ubc_NN 9_CD ,_, sequence_NN alignments_NNS generated_VBN
+            by_IN several_JJ methods_NNS have_VBP an_DT alignment_NN error_NN relative_JJ to_TO
+            the_DT structural_JJ alignment_NN [_NN 24_CD ]_NN ._. The_DT sequence_NN
+            identity_NN /_NN similarity_NN scores_NNS would_MD have_VB been_VBN lower_JJR with_IN
+            the_DT new_JJ alignment_NN since_IN the_DT number_NN of_IN identical_JJ
+            residues_NNS decreases_NNS by_IN six_CD in_IN a_DT region_NN of_IN fourteen_CD
+            residues_NNS ._. This_DT phenomenon_NN has_VBZ been_VBN observed_VBN time_NN and_CC
+            again_RB at_IN CASP_NNP ,_, illustrated_VBN in_IN Figure_NN 3_CD by_IN three_CD
+            examples_NNS ,_, including_VBG T_NN 24_CD /_NN ucb_NN 9_CD ._. We_PRP were_VBD later_RB able_JJ to_TO
+            readily_RB distinguish_VB between_IN the_DT correct_JJ and_CC incorrect_JJ
+            alignments_NNS when_WRB an_DT all-atom_JJ scoring_VBG function_NN was_VBD
+            applied_VBN to_TO the_DT models_NNS constructed_VBN using_VBG both_DT
+            alignments_NNS ,_, and_CC justify_VB the_DT changes_NNS by_IN detailed_JJ
+            environment_NN analysis_NN ._. The_DT score_NN for_IN the_DT models_NNS based_VBN on_IN
+            the_DT correct_JJ alignments_NNS were_VBD better_JJR by_IN ~_NN 10_CD %_NN on_IN average_JJ
+            relative_NN to_TO the_DT model_NN with_IN the_DT original_JJ alignment_NN ._. This_DT
+            would_MD indicate_VB that_IN a_DT sequence_NN alignment_NN algorithm_NN that_WDT
+            incorporates_VBZ structural_JJ information_NN in_IN a_DT rigourous_JJ
+            manner_NN is_VBZ useful_JJ and_CC necessary_JJ to_TO handle_VB the_DT alignment_NN
+            problem_NN ._.
+            Historically_NNP ,_, in_IN comparative_JJ modelling_VBG ,_, the_DT template_NN
+            with_IN the_DT highest_JJS sequence_NN identity_NN or_CC similarity_NN to_TO the_DT
+            target_NN sequence_NN being_VBG modelled_JJ has_VBZ been_VBN used_VBN for_IN
+            further_JJ analysis_NN ._. However_RB ,_, a_DT comparison_NN of_IN members_NNS of_IN a_DT
+            family_NN with_IN known_VBN structures_NNS shows_VBZ that_DT sequence_NN only_RB
+            measures_VBZ do_VBP not_RB correlate_VBP absolutely_RB with_IN the_DT
+            structural_JJ similarity_NN [_NN 48_CD ]_NN even_RB in_IN cases_NNS where_WRB the_DT
+            evolutionary_JJ relationships_NNS are_VBP obvious_JJ ._.
+            We_PRP thus_RB devised_VBD an_DT experiment_NN where_WRB we_PRP constructed_VBN
+            models_NNS for_IN protein_NN families_NNS with_IN large_JJ numbers_NNS of_IN known_VBN
+            structures_NNS (_( specifically_RB the_DT globin_NN and_CC the_DT
+            immunoglobulin_NN families_NNS )_) ._. We_PRP then_RB conducted_VBD an_DT
+            all-against-all_JJ homology_NN modelling_VBG exercise_NN where_WRB every_DT
+            member_NN of_IN the_DT family_NN was_VBD modelled_JJ on_IN every_DT other_JJ
+            template_NN (_( resulting_VBG in_IN 29_CD and_CC 60_CD models_NNS for_IN each_DT member_NN
+            of_IN the_DT globin_NN and_CC immunoglobulin_NN families_NNS
+            respectively_RB )_) ._. We_PRP compared_VBD the_DT performance_NN of_IN the_DT
+            all-atom_JJ scoring_VBG function_NN to_TO two_CD sequence_NN only_RB metrics_NNS ._.
+            The_DT results_NNS for_IN the_DT globin_NN family_NN are_VBP given_VBN in_IN Figure_NN
+            4_CD ._. On_IN average_JJ ,_, using_VBG the_DT all-atom_JJ function_NN improves_VBZ
+            model_NN quality_NN by_IN 0_CD ._. 8_CD Å_NN C_NNP 
+            α_NN RMSD_NNP compared_VBD to_TO only_RB using_VBG
+            sequence_NN identity_NN ._. The_DT theoretical_JJ best_JJS improvement_NN
+            that_WDT could_MD have_VB been_VBN achieved_VBN on_IN average_NN is_VBZ 0_CD ._. 9_CD Å_NN C_NNP 
+            α_NN RMSD_NNP ._. Similar_JJ improvements_NNS are_VBP
+            observed_VBN for_IN the_DT immunoglobulin_NN family_NN ._.
+            Taken_VBN together_RB with_IN previously_RB published_VBN results_NNS [_NN
+            32_CD 49_CD ]_NN ,_, these_DT results_NNS strongly_RB indicate_VBP that_IN the_DT
+            all-atom_JJ scoring_VBG function_NN is_VBZ a_DT powerful_JJ method_NN to_TO
+            handle_VB the_DT alignment_NN problem_NN ,_, the_DT template_NN selection_NN
+            problem_NN ,_, the_DT construction_NN of_IN side_NN chains_NNS and_CC main_JJ
+            chains_NNS ,_, and_CC potentially_RB helpful_JJ in_IN refining_NN models_NNS when_WRB
+            continuous_JJ forms_NNS of_IN the_DT function_NN are_VBP used_VBN ._.
+          
+          
+            Ab_NNP initio_NN prediction_NN :_: Sampling_NNP conformational_NN
+            space_NN
+            At_IN CASP_NNP 4_CD ,_, we_PRP mixed_JJ and_CC matched_VBN different_JJ move_NN sets_NNS
+            and_CC search_NN methods_NNS for_IN sampling_VBG protein_NN conformational_NN
+            space_NN ._. Since_IN we_PRP did_VBD not_RB have_VB the_DT time_NN to_TO test_VB the_DT
+            performance_NN of_IN each_DT move_NN set_VBN or_CC search_NN method_NN ,_, we_PRP
+            assumed_VBD they_PRP would_MD work_VB equally_RB well_RB on_IN average_JJ and_CC
+            combined_VBD them_PRP sequentially_RB which_WDT generally_RB resulted_VBD in_IN
+            improvements_NNS ._.
+            Table_NNP 4_CD shows_VBZ the_DT average_JJ results_NNS of_IN different_JJ
+            combinations_NNS of_IN move_NN sets_NNS and_CC search_NN methods_NNS for_IN a_DT set_NN
+            of_IN six_CD proteins_NNS (_( PDB_NNP codes_NNS :_: 1_CD ctf_NN ,_, 1_CD e_SYM 68_CD ,_, 1_CD eh_NN 2_CD ,_, 1_CD nkl_NN ,_,
+            1_CD pgb_NN ,_, 1_CD sro_NN ;_: four_CD of_IN these_DT were_VBD CASP_NNP targets_NNS )_) ._. The_DT
+            results_NNS shown_VBN are_VBP for_IN 10_CD ,_, 000_CD trajectories_NNS with_IN
+            different_JJ starting_NN random_JJ seeds_NNS ._. While_IN some_DT of_IN the_DT
+            combinations_NNS do_VBP not_RB necessarily_RB enhance_VB the_DT simple_JJ
+            approach_NN of_IN using_VBG only_RB 3_CD -_: residue_NN fragments_NNS with_IN a_DT
+            straight-forward_JJ monte_NN carlo_NN procedure_NN ,_, the_DT combination_NN
+            of_IN using_VBG fragments_NNS and_CC the_DT 14_CD -_: state_NN model_NN for_IN making_VBG
+            moves_NNS ,_, with_IN MC_NNP and_CC GA_NNP search_NN techniques_NNS for_IN the_DT
+            sampling_VBG ,_, shows_VBZ a_DT significant_JJ improvement_NN ,_, which_WDT we_PRP
+            hope_VBP to_TO demonstrate_VB at_IN CASP_NNP 5_CD by_IN further_JJ extending_VBG the_DT
+            preliminary_JJ studies_NNS described_VBD here_RB ._. Since_IN these_DT
+            combinations_NNS were_VBD tried_VBN with_IN equal_JJ weighting_NN ,_, further_JJ
+            improvement_NN may_MD be_VB obtained_VBN by_IN parameterising_VBG how_WRB the_DT
+            different_JJ move_NN sets_NNS and_CC search_NN techniques_NNS are_VBP applied_VBN
+            depending_VBG on_IN the_DT trajectory_NN landscape_NN ._.
+          
+          
+            Ab_NNP initio_NN prediction_NN :_: Selecting_NNP native-like_JJ
+            conformations_NNS
+            Even_RB though_IN our_PRP$ all-atom_JJ function_NN is_VBZ readily_RB able_JJ to_TO
+            distinguish_VB native-like_JJ conformations_NNS in_IN certain_JJ
+            scenarios_NNS ,_, it_PRP is_VBZ not_RB adequate_JJ for_IN large_JJ sets_NNS of_IN decoys_NNS
+            where_WRB the_DT closest_JJS conformation_NN generated_VBN is_VBZ represented_VBN
+            at_IN the_DT topological_JJ level_NN (_( ≈_NN 6_CD ._. 0_CD Å_NN C_NNP 
+            α_NN RMSD_NNP relative_JJ to_TO the_DT experimental_JJ
+            result_NN )_) ._. Using_VBG the_DT all-atom_JJ function_NN alone_RB to_TO select_VB
+            native-like_JJ conformations_NNS is_VBZ not_RB likely_JJ to_TO suffice_VB when_WRB
+            it_PRP is_VBZ also_RB used_VBN in_IN the_DT actual_JJ minimisation_NN /_NN search_NN
+            process_NN ,_, since_IN all_DT conformations_NNS generated_VBN in_IN such_JJ
+            searches_NNS represent_VBP local_JJ minima_NN of_IN this_DT function_NN ._. Thus_RB ,_,
+            our_PRP$ method_NN has_VBZ incorporates_VBZ multiple_JJ functions_NNS and_CC uses_VBZ
+            hierarchical_JJ filtering_VBG to_TO reduce_VB the_DT number_NN of_IN
+            conformations_NNS from_IN a_DT large_JJ sample_NN to_TO a_DT tiny_JJ fraction_NN to_TO
+            enhance_VB the_DT signal_NN and_CC eliminate_VB false_JJ positives_NNS ._.
+            At_IN CASP_NNP 4_CD ,_, we_PRP used_VBD our_PRP$ expertise_NN to_TO manually_RB devise_VB a_DT
+            single_JJ hierarchical_JJ filtering_VBG scheme_NN where_WRB we_PRP
+            successively_RB eliminated_VBD 10_CD %_NN of_IN the_DT conformations_NNS with_IN
+            each_DT filter_NN until_IN we_PRP were_VBD left_VBN with_IN one_CD conformation_NN ._.
+            In_IN the_DT experiment_NN in_IN Table_NNP 5_CD ,_, we_PRP compare_VBP the_DT average_JJ
+            performance_NN of_IN each_DT of_IN the_DT individual_JJ filters_NNS to_TO our_PRP$
+            final_JJ hierarchical_JJ combination_NN when_WRB reducing_VBG the_DT 10_CD ,_, 000_CD
+            conformations_NNS generated_VBN for_IN each_DT protein_NN by_IN our_PRP$ search_NN
+            method_NN (_( corresponding_JJ to_TO the_DT last_JJ entry_NN in_IN Table_NNP 4_LS )_) to_TO
+            1000_CD conformations_NNS ._. The_DT hierarchical_JJ combination_NN first_RB
+            reduces_VBZ the_DT 10_CD ,_, 000_CD conformations_NNS to_TO 8000_CD by_IN applying_VBG
+            the_DT density_NN function_NN ,_, which_WDT is_VBZ then_RB reduced_VBN to_TO 6000_CD by_IN
+            applying_VBG the_DT hydrophobic_JJ compactness_NNS function_NN ,_, which_WDT is_VBZ
+            then_RB reduced_VBN to_TO 4000_CD ,_, 3000_CD ,_, 2000_CD ,_, and_CC 1000_CD in_IN the_DT same_JJ
+            order_NN as_IN presented_VBN in_IN Table_NNP 5_CD ._.
+            Table_NNP 5_CD shows_VBZ that_IN particularly_RB promising_JJ filters_NNS
+            include_VBP the_DT use_NN of_IN density-based_JJ scoring_VBG functions_NNS ,_,
+            hydrophobic_JJ compactness_NNS ,_, all-atom_JJ pairwise_NN preferences_NNS
+            and_CC match_NN of_IN the_DT final_JJ conformation_NN to_TO the_DT predicted_VBD
+            secondary_JJ structure_NN ._. Physics-based_NNP functions_NNS based_VBN on_IN
+            electrostatics_NNS and_CC van_NN der_NNP Waals_NNP interactions_NNS do_VBP not_RB
+            discriminate_JJ well_RB on_IN their_PRP$ own_JJ ,_, and_CC only_RB do_VBP so_RB when_WRB an_DT
+            explicit_JJ solvation_NN term_NN is_VBZ added_VBN to_TO the_DT functions_NNS ._.
+            Table_NNP 5_CD also_RB shows_VBZ that_IN even_RB though_IN some_DT of_IN the_DT
+            individual_JJ functions_NNS perform_VBP well_RB ,_, the_DT combination_NN of_IN
+            all_PDT the_DT functions_NNS applied_VBN in_IN a_DT hierarchical_JJ manner_NN
+            performs_VBZ the_DT best_JJS ._. As_IN mentioned_VBN earlier_RBR ,_, this_DT
+            combination_NN was_VBD developed_VBN through_IN intuition_NN under_IN
+            pressure_NN from_IN the_DT CASP_NNP experiment_NN (_( though_IN here_RB the_DT goal_NN
+            was_VBD to_TO reduce_VB the_DT total_JJ number_NN of_IN conformations_NNS to_TO
+            five_CD )_) ._. This_DT suggests_VBZ that_IN there_EX exists_VBZ more_JJR optimal_NN
+            (_( linear_JJ and_CC non-linear_JJ )_) combinations_NNS of_IN these_DT
+            functions_NNS ._.
+          
+        
+        
+          Computational_NNP issues_NNS
+          Table_NNP 6_CD lists_NNS the_DT times_NNS taken_VBN for_IN the_DT computational_NN
+          tasks_NNS outlined_VBN in_IN this_DT paper_NN ._. Times_NNP are_VBP given_VBN per_IN 1000_CD
+          MHz_NNP Pentium_NNP III_NNP processor_NN and_CC for_IN a_DT cluster_NN of_IN 64_CD such_JJ
+          processors_NNS when_WRB the_DT algorithm_NN can_MD run_VB in_IN parallel_NN ._. For_IN
+          CASP_NNP 4_CD ,_, predictions_NNS were_VBD made_VBN with_IN computing_NN power_NN 1_CD /_NN 4_CD th_NN
+          of_IN the_DT capability_NN shown_VBN ._.
+        
+        
+          Application_NNP of_IN structure_NN prediction_NN methods_NNS to_TO
+          whole_JJ genomes_NNS
+          The_DT qualitative_JJ assessment_NN of_IN our_PRP$ methods_NNS ,_, considered_VBD
+          independently_RB of_IN the_DT difficulty_NN of_IN the_DT prediction_NN ,_, ranks_NNS
+          32_CD /_NN 40_CD models_NNS as_IN useful_JJ ,_, good_JJ ,_, or_CC excellent_JJ ._. Similar_JJ
+          results_NNS are_VBP likely_JJ to_TO be_VB observed_VBN when_WRB these_DT methods_NNS are_VBP
+          applied_VBN to_TO large_JJ numbers_NNS of_IN sequences_NNS if_IN we_PRP assume_VBP that_IN
+          the_DT sample_NN of_IN 40_CD proteins_NNS roughly_RB reflects_VBZ the_DT
+          distribution_NN of_IN proteins_NNS seen_VBN in_IN a_DT genome_NN ._. In_IN practice_NN ,_,
+          it_PRP is_VBZ likely_JJ that_IN we_PRP will_MD encounter_VB more_RBR homologous_RB
+          proteins_NNS in_IN a_DT genome_NN since_IN experimentalists_NNS are_VBP not_RB as_IN
+          likely_JJ to_TO solve_VB a_DT structure_NN for_IN which_WDT there_EX clearly_RB
+          exists_VBZ a_DT homolog_NN ._.
+          This_DT is_VBZ a_DT long_JJ way_NN from_IN our_PRP$ predictions_NNS at_IN CASP_NNP 1_CD [_NN 23_CD
+          ]_NN ,_, and_CC our_PRP$ initial_JJ implementations_NNS of_IN these_DT
+          methodologies_NNS [_NN 12_CD 24_CD ]_NN ._. Yet_RB there_EX is_VBZ much_JJ room_NN for_IN
+          further_JJ improvement_NN ._. Besides_IN improving_VBG the_DT existing_VBG
+          methodologies_NNS ,_, and_CC developing_VBG new_JJ ones_NNS ,_, we_PRP can_MD also_RB
+          integrate_VB other_JJ existing_VBG algorithms_NNS such_JJ that_IN consensus_NN
+          predictions_NNS can_MD be_VB used_VBN to_TO assign_VB confidence_NN levels_NNS ,_, as_RB
+          well_RB as_IN having_VBG multiple_JJ choices_NNS for_IN an_DT outcome_NN that_WDT can_MD
+          be_VB tested_VBN experimentally_RB ._.
+          Analyses_NNS of_IN small_JJ genomes_NNS show_VBP that_IN about_IN 30_CD -_: 40_CD %_NN of_IN
+          the_DT proteins_NNS within_IN the_DT genome_NN can_MD be_VB modelled_JJ by_IN
+          comparative_JJ modelling_VBG and_CC fold_VB recognition_NN methods_NNS [_NN 27_CD
+          50_CD 52_CD ]_NN ._. An_DT additional_JJ 20_CD -_: 30_CD %_NN of_IN the_DT sequences_NNS are_VBP (_( or_CC
+          contain_VB )_) small_JJ domains_NNS with_IN simple_JJ secondary_JJ structures_NNS
+          that_WDT are_VBP viable_JJ candidates_NNS for_IN 
+          ab_NN initio_NN structure_NN prediction_NN [_NN 53_CD
+          ]_NN ._. The_DT remaining_VBG proteins_NNS are_VBP usually_RB not_RB amenable_JJ to_TO
+          structure_VB prediction_NN and_CC sometimes_RB even_RB structure_VB
+          determination_NN (_( a_DT significant_JJ fraction_NN of_IN the_DT latter_JJ are_VBP
+          membrane_NN proteins_NNS )_) ._.
+          It_PRP is_VBZ thus_RB possible_JJ to_TO construct_VB a_DT "_'' genome_NN prediction_NN
+          engine_NN "_'' using_VBG the_DT computational_NN resources_NNS available_JJ where_WRB
+          we_PRP can_MD take_VB the_DT protein_NN sequences_NNS encoded_JJ by_IN an_DT
+          organism_NN 's_POS genome_NN and_CC attempt_NN to_TO predict_VB their_PRP$
+          structures_NNS ,_, and_CC use_VB the_DT modelled_JJ structures_NNS to_TO predict_VB
+          functions_NNS ._. The_DT goal_NN of_IN this_DT endeavour_NN is_VBZ to_TO improve_VB
+          existing_VBG methods_NNS and_CC develop_VB new_JJ ones_NNS to_TO perform_VB various_JJ
+          facets_NNS of_IN the_DT genome_NN /_NN proteome_NN modelling_VBG task_NN in_IN an_DT
+          automated_VBN fashion_NN ._. To_TO this_DT end_NN ,_, our_PRP$ predictions_NNS for_IN the_DT
+          next_JJ CASP_NNP are_VBP almost_RB entirely_RB focused_VBN on_IN the_DT
+          fully-automated_JJ (_( CAFASP_NNP )_) aspect_NN via_IN the_DT use_NN of_IN a_DT
+          prediction_NN server_NN
+          http_NN :_: /_NN /_NN protinfo_NN ._. compbio_NN ._. washington_NN ._. edu_NN
+        
+        
+          Using_VBG predicted_VBN structures_NNS to_TO annotate_NN
+          function_NN
+          The_DT reason_NN for_IN obtaining_VBG structures_NNS for_IN proteins_NNS
+          encoded_JJ by_IN a_DT genome_NN is_VBZ that_IN they_PRP can_MD be_VB used_VBN to_TO
+          understand_VB function_NN and_CC further_JJ our_PRP$ knowledge_NN about_IN the_DT
+          organism_NN 's_POS biology_NN ._. Even_RB though_IN structure_NN prediction_NN
+          methods_NNS need_VBP further_RBR development_NN ,_, it_PRP is_VBZ possible_JJ to_TO
+          produce_VB models_NNS where_WRB functional_JJ hypotheses_NNS can_MD be_VB tested_VBN
+          in_IN a_DT rational_JJ manner_NN (_( for_IN example_NN ,_, with_IN mutagenesis_NNS
+          experiments_NNS )_) through_IN detailed_JJ analysis_NN [_NN 54_CD ]_NN ._.
+          Additionally_RB ,_, structure_NN comparisons_NNS can_MD be_VB used_VBN to_TO detect_VB
+          functional_JJ relationships_NNS that_WDT cannot_NN be_VB detected_VBN by_IN
+          sequence_NN information_NN alone_RB [_NN 52_CD ]_NN ,_, and_CC micro-environment_JJ
+          analyses_NNS that_WDT parse_NN models_NNS for_IN particular_JJ
+          three-dimensional_JJ motifs_NNS [_NN 55_CD ]_NN can_MD be_VB used_VBN to_TO discern_VB
+          molecular_JJ function_NN ._. Both_DT of_IN these_DT structure-based_JJ
+          approaches_NNS ,_, used_VBD complementarily_RB in_IN conjunction_NN with_IN
+          sequence-only_JJ motif-finding_JJ approaches_NNS [_NN 56_CD 57_CD 58_CD ]_NN and_CC
+          experimental_JJ data_NNS ,_, will_MD enable_VB to_TO us_PRP better_JJR assign_VB
+          function_NN to_TO all_DT or_CC large_JJ parts_NNS of_IN a_DT proteome_NN ._.
+        
+      
+      
+        Conclusions_NNP
+        
+          Why_WRB is_VBZ protein_NN /_NN proteome_NN modelling_VBG important_JJ ?_.
+          Even_RB given_VBN the_DT ongoing_JJ structural_JJ genomics_NNS projects_NNS ,_,
+          the_DT continually_RB increasing_VBG amount_NN of_IN DNA_NNP and_CC protein_NN
+          sequence_NN data_NNS from_IN genome_NN projects_NNS makes_VBZ it_PRP infeasible_JJ
+          for_IN NMR_NNP and_CC x-ray_JJ crystallography_NN techniques_NNS to_TO rapidly_RB
+          provide_VB information_NN about_IN the_DT 3_CD D_NNP structures_NNS of_IN the_DT
+          sequences_NNS determined_VBD [_NN 59_CD ]_NN ._. Thus_RB there_EX is_VBZ an_DT urgent_JJ
+          need_NN for_IN reliably_RB predicting_VBG structure_NN from_IN amino_JJ acid_NN
+          sequence_NN ._.
+          Proteins_NNPS in_IN a_DT cell_NN do_VBP not_RB work_VB in_IN isolation_NN of_IN one_CD
+          another_DT ._. Thus_RB to_TO understand_VB the_DT function_NN of_IN multi-protein_JJ
+          complexes_NNS ,_, or_CC whole_JJ proteomes_NNS ,_, from_IN a_DT structural_JJ
+          viewpoint_NN ,_, it_PRP is_VBZ necessary_JJ to_TO have_VB a_DT model_NN for_IN many_JJ
+          proteins_NNS encoded_JJ by_IN the_DT genome_NN of_IN an_DT organism_NN ._. The_DT CASP_NNP
+          results_NNS indicate_VBP that_DT structure_NN prediction_NN methods_NNS have_VBP
+          matured_VBN to_TO a_DT point_NN where_WRB they_PRP can_MD be_VB applied_VBN on_IN a_DT
+          genome-wide_JJ scale_NN ,_, and_CC that_IN these_DT structures_NNS can_MD be_VB used_VBN
+          with_IN novel_NN but_CC straight-forward_JJ approaches_NNS to_TO annotate_NN
+          and_CC understand_VB function_NN [_NN 54_CD 55_CD 60_CD 61_CD ]_NN ._. The_DT resulting_VBG
+          models_NNS and_CC annotations_NNS ,_, when_WRB combined_VBN with_IN other_JJ
+          genomic_JJ /_NN proteomic_JJ data_NNS ,_, including_VBG that_IN from_IN gene_NN
+          expression_NN arrays_NNS [_NN 62_CD ]_NN ,_, genome-wide_JJ two-hybrid_JJ
+          experiments_NNS [_NN 63_CD ]_NN ,_, and_CC other_JJ proteomics_NNS studies_NNS [_NN 64_CD ]_NN
+          ,_, will_MD provide_VB us_PRP with_IN a_DT dynamic_JJ picture_NN of_IN organismal_NN
+          structure_NN ,_, function_NN ,_, and_CC evolution_NN [_NN 65_CD ]_NN ._.
+        
+      
+      
+        Methods_NNP
+        
+          Comparative_NNP modelling_VBG and_CC fold_VB recognition_NN
+          
+            Template_NNP selection_NN and_CC alignment_NN
+            Target_NNP sequences_NNS related_VBN to_TO proteins_NNS that_WDT have_VBP
+            conformations_NNS determined_VBN by_IN experiment_NN (_( X-_NNP ray_NN
+            crystallography_NN or_CC NMR_NNP )_) were_VBD candidates_NNS for_IN comparative_JJ
+            modelling_VBG ._. If_IN the_DT sequence_NN relationship_NN between_IN the_DT
+            template_NN and_CC target_NN proteins_NNS was_VBD unambiguous_JJ (_( usually_RB
+            when_WRB the_DT sequence_NN identity_NN is_VBZ >_NN 40_CD %_NN )_) ,_, or_CC if_IN there_EX
+            was_VBD only_RB one_CD protein_NN with_IN known_VBN structure_NN in_IN the_DT
+            family_NN ,_, the_DT template_NN structure_NN was_VBD used_VBN to_TO construct_VB
+            the_DT sole_JJ initial_JJ model_NN ._. If_IN there_EX were_VBD many_JJ possible_JJ
+            template_NN structures_NNS ,_, models_NNS were_VBD constructed_VBN using_VBG all_DT
+            available_JJ templates_NNS ._.
+            PSIBLAST_NNP alignments_NNS and_CC other_JJ publicly_RB available_JJ
+            servers_NNS such_JJ as_IN GenTHREADER_NNP [_NN 27_CD ]_NN and_CC SAM-T_NNP 99_CD [_NN 28_CD ]_NN ,_,
+            available_JJ as_IN part_NN of_IN the_DT CAFASP_NNP meta-server_JJ [_NN 29_CD ]_NN ,_,
+            were_VBD also_RB used_VBN to_TO generate_VB a_DT variety_NN of_IN choices_NNS for_IN
+            alignments_NNS ._. These_DT alternate_JJ alignments_NNS were_VBD used_VBN to_TO
+            construct_VB initial_JJ models_NNS ._. Thus_RB ,_, for_IN a_DT given_VBN protein_NN in_IN
+            a_DT family_NN with_IN at_IN least_JJS one_CD known_VBN representative_NN
+            structure_NN ,_, there_EX could_MD be_VB many_JJ template_NN and_CC alignment_NN
+            choices_NNS for_IN constructing_VBG the_DT initial_JJ models_NNS ._.
+          
+          
+            Constructing_NNP initial_JJ models_NNS
+            Following_VBG the_DT sequence_NN alignment_NN ,_, an_DT initial_JJ model_NN
+            was_VBD generated_VBN for_IN each_DT template_NN structure_NN and_CC
+            corresponding_JJ alignment_NN by_IN copying_VBG atomic_JJ coordinates_VBZ
+            for_IN the_DT main_JJ chain_NN (_( excluding_VBG any_DT insertions_NNS /_NN loops_NNS )_) and_CC
+            for_IN the_DT side_NN chains_NNS of_IN identical_JJ residues_NNS in_IN the_DT target_NN
+            and_CC template_NN proteins_NNS ._. Residues_NNP that_WDT differed_VBD in_IN side_NN
+            chain_NN type_NN were_VBD constructed_VBN using_VBG a_DT minimum_JJ
+            perturbation_NN (_( MP_NNP )_) technique_NN [_NN 24_CD ]_NN ._. The_DT MP_NNP method_NN
+            changes_VBZ a_DT given_VBN amino_JJ acid_NN to_TO the_DT target_NN amino_JJ acid_NN
+            preserving_VBG the_DT values_NNS of_IN equivalent_NN torsion_NN angles_NNS
+            between_IN the_DT two_CD side_NN chains_NNS ,_, where_WRB available_JJ ._. The_DT other_JJ
+            angles_NNS were_VBD constructed_VBN for_IN each_DT residue_NN type_NN using_VBG
+            internally_RB developed_VBN library_NN based_VBN on_IN the_DT most_RBS
+            frequently_RB observed_VBD χ_NN values_NNS in_IN a_DT database_NN of_IN known_VBN
+            structures_NNS [_NN 30_CD ]_NN ._.
+          
+          
+            Manual_NNP inspection_NN to_TO improve_VB alignments_NNS
+            An_DT all-against-all_JJ structure_NN comparison_NN between_IN all_PDT
+            the_DT initial_JJ models_NNS was_VBD used_VBN to_TO produce_VB a_DT multiple_JJ
+            sequence_NN alignment_NN based_VBN on_IN structural_JJ similarity_NN for_IN a_DT
+            given_VBN family_NN ._. This_DT alignment_NN was_VBD used_VBN in_IN conjunction_NN
+            with_IN sequence_NN information_NN and_CC interactive_JJ graphics_NNS to_TO
+            create_VB new_JJ sequence_NN alignments_NNS ._.
+          
+          
+            Constructing_NNP variable_JJ side_NN chains_NNS and_CC main_JJ
+            chains_NNS
+            Multiple_NNP side_NN chain_NN conformations_NNS for_IN residue_NN
+            positions_NNS that_WDT differ_VBP in_IN type_NN between_IN the_DT template_NN and_CC
+            target_NN proteins_NNS were_VBD generated_VBN by_IN exploring_VBG all_PDT the_DT
+            possibilities_NNS in_IN a_DT rotamer_NN library_NN [_NN 31_CD ]_NN ._. The_DT most_RBS
+            probable_JJ conformations_NNS based_VBN on_IN the_DT interactions_NNS of_IN a_DT
+            given_VBN conformation_NN with_IN the_DT local_JJ main_JJ chain_NN were_VBD
+            selected_VBN using_VBG an_DT all-atom_JJ distance_NN dependent_JJ
+            conditional_JJ probability_NN discriminatory_JJ function_NN [_NN 32_CD ]_NN
+            ._.
+            A_DT set_NN of_IN possible_JJ conformations_NNS were_VBD generated_VBN for_IN
+            main_JJ chain_NN regions_NNS (_( loops_NNS )_) considered_VBN to_TO vary_VB in_IN the_DT
+            target_NN with_IN respect_NN to_TO the_DT template_NN structures_NNS ,_,
+            including_VBG insertions_NNS and_CC deletions_NNS ._. Main_JJ chain_NN sampling_VBG
+            was_VBD performed_VBN using_VBG an_DT exhaustive_JJ enumeration_NN technique_NN
+            based_VBN on_IN 14_CD discrete_JJ torsion_NN angle_NN states_NNS [_NN 33_CD ]_NN ._. For_IN
+            longer_RBR main_JJ chain_NN regions_NNS (_( >_NN 15_CD residues_NNS )_) ,_, fragments_NNS
+            from_IN a_DT database_NN of_IN protein_NN structures_NNS are_VBP used_VBN to_TO
+            generate_VB the_DT torsion_NN angle_NN values_NNS ._. Developments_NNS in_IN our_PRP$ 
+            ab_NN initio_NN sampling_VBG protocol_NN were_VBD
+            incorporated_VBN into_IN our_PRP$ loop_NN sampling_VBG technique_NN ._.
+            In_IN CASP_NNP experiments_NNS ,_, main_JJ chain_NN regions_NNS and_CC side_NN
+            chains_NNS selected_VBN for_IN sampling_VBG were_VBD determined_VBN visually_RB
+            using_VBG interactive_JJ computer_NN graphics_NNS ._. We_PRP partially_RB
+            automated_VBN this_DT procedure_NN by_IN developing_VBG programs_NNS to_TO
+            identify_VB side_NN chains_NNS with_IN implausible_JJ packing_NN ,_, clashes_NNS ,_,
+            and_CC unfavorable_JJ electrostatic_JJ interactions_NNS with_IN other_JJ
+            side_NN chains_NNS and_CC /_NN or_CC main_JJ chain_NN ._.
+          
+          
+            All-atom_NNP conditional_JJ probability_NN scoring_VBG
+            function_NN
+            The_DT all-atom_JJ scoring_VBG function_NN is_VBZ the_DT core_NN of_IN many_JJ
+            aspects_NNS of_IN this_DT project_NN where_WRB identification_NN of_IN
+            native-like_JJ conformations_NNS is_VBZ required_VBN ._. The_DT function_NN
+            calculates_VBZ the_DT probability_NN of_IN a_DT conformation_NN being_VBG
+            native-like_JJ given_VBN a_DT set_NN of_IN inter-atomic_JJ distances_NNS [_NN 32_CD
+            ]_NN ._. The_DT conditional_JJ probabilities_NNS are_VBP compiled_VBN by_IN
+            counting_VBG frequencies_NNS of_IN distances_NNS between_IN pairs_NNS of_IN atom_NN
+            types_NNS in_IN a_DT database_NN of_IN protein_NN structures_NNS ._. All_DT
+            non-hydrogen_JJ atoms_NNS are_VBP considered_VBN ,_, and_CC a_DT
+            residue-specific_JJ description_NN of_IN the_DT atoms_NNS is_VBZ used_VBN ,_,
+            i_NNP ._. e_SYM ._. ,_, the_DT C_NNP 
+            α_NN of_IN an_DT alanine_NN is_VBZ different_JJ from_IN
+            the_DT C_NNP 
+            α_NN of_IN a_DT giycine_NN ._. This_DT results_NNS in_IN a_DT
+            total_NN of_IN 167_CD atom_NN types_NNS ._. The_DT distances_NNS observed_VBD are_VBP
+            divided_VBN into_IN 1_CD ._. 0_CD Å_NN bins_NNS ranging_VBG from_IN 3_CD ._. 0_CD Å_NN to_TO 20_CD ._. 0_CD Å_NN ._.
+            Contacts_NNP between_IN atom_NN types_NNS in_IN the_DT 0_CD -_: 3_CD Å_NN range_NN are_VBP
+            placed_VBN in_IN a_DT separate_JJ bin_NN ,_, resulting_VBG in_IN a_DT total_NN of_IN 18_CD
+            distance_NN bins_NNS ._. Distances_NNP between_IN atoms_NNS within_IN a_DT single_JJ
+            residue_NN are_VBP not_RB included_VBN in_IN the_DT counts_NNS ._.
+            We_PRP then_RB compile_VB tables_NNS of_IN scores_NNS proportional_JJ to_TO the_DT
+            negative_JJ log_NN conditional_JJ probability_NN that_IN one_CD is_VBZ
+            observing_VBG a_DT native_JJ conformation_NN given_VBN an_DT interatomic_JJ
+            distance_NN for_IN all_DT possible_JJ pairs_NNS of_IN the_DT 167_CD atom_NN types_NNS
+            for_IN the_DT 18_CD distance_NN ranges_NNS ._. Given_VBN a_DT set_NN of_IN distances_NNS in_IN
+            a_DT conformation_NN ,_, the_DT probability_NN that_IN the_DT conformation_NN
+            represents_VBZ a_DT "_'' correct_JJ "_'' fold_VB is_VBZ evaluated_VBN by_IN summing_VBG the_DT
+            scores_NNS for_IN all_DT distances_NNS and_CC the_DT corresponding_JJ atom_NN
+            pairs_NNS ._.
+          
+          
+            Using_VBG graph_NN theory_NN to_TO generate_VB consistent_JJ
+            conformations_NNS
+            We_PRP use_VBP a_DT graph-theoretic_JJ approach_NN to_TO assemble_VB the_DT
+            sampled_VBN side_NN chain_NN and_CC main_JJ chain_NN conformations_NNS
+            together_RB in_IN a_DT consistent_JJ and_CC optimal_NN manner_NN :_: Each_DT
+            possible_JJ conformation_NN of_IN a_DT residue_NN is_VBZ represented_VBN using_VBG
+            the_DT notion_NN of_IN a_DT node_NN in_IN a_DT graph_NN ._. Each_DT node_NN is_VBZ given_VBN a_DT
+            weight_NN based_VBN on_IN the_DT degree_NN of_IN the_DT interaction_NN between_IN
+            its_PRP$ side_NN chain_NN atoms_NNS and_CC the_DT local_JJ main_JJ chain_NN atoms_NNS ._.
+            The_DT weight_NN is_VBZ computed_JJ using_VBG the_DT all-atom_JJ scoring_VBG
+            function_NN [_NN 32_CD ]_NN ._. Edges_NNP are_VBP then_RB drawn_VBN between_IN pairs_NNS of_IN
+            residues_NNS /_NN nodes_NNS that_WDT are_VBP consistent_JJ with_IN each_DT other_JJ
+            (_( i_NNP ._. e_SYM ._. ,_, clash-free_JJ and_CC satisfying_VBG geometrical_JJ
+            constraints_NNS )_) ._. The_DT edges_NNS are_VBP also_RB weighted_JJ according_VBG to_TO
+            the_DT probability_NN of_IN the_DT interaction_NN between_IN atoms_NNS in_IN the_DT
+            two_CD residues_NNS ._. Once_RB the_DT entire_JJ graph_NN is_VBZ constructed_VBN ,_, all_PDT
+            the_DT maximal_NN sets_NNS of_IN completely_RB connected_VBN nodes_NNS
+            (_( cliques_NNS )_) are_VBP found_VBN using_VBG a_DT clique-finding_JJ algorithm_NN [_NN
+            34_CD ]_NN ._. The_DT cliques_NNS with_IN the_DT best_JJS total_JJ weights_NNS
+            represent_VBP the_DT optimal_NN combinations_NNS of_IN mixing_VBG and_CC
+            matching_VBG among_IN the_DT various_JJ possibilities_NNS ,_, taking_VBG the_DT
+            respective_JJ environments_NNS into_IN account_NN [_NN 35_CD ]_NN ._. The_DT
+            clique-finding_JJ approach_NN for_IN generating_NN conformations_NNS is_VBZ
+            fast_RB ,_, since_IN it_PRP pre-calculates_JJ all_PDT the_DT scores_NNS ._. In_IN its_PRP$
+            present_JJ implementation_NN ,_, it_PRP can_MD sample_NN up_IN to_TO 10_CD
+            11_CD conformations_NNS in_IN a_DT 24_CD -_: hour_NN period_NN on_IN a_DT 1000_CD MHz_NNP Intel_NNP
+            processor_NN ._.
+          
+          
+            Selecting_NNP the_DT most_RBS native-like_JJ
+            conformations_NNS
+            All_DT models_NNS produced_VBN are_VBP refined_VBN using_VBG the_DT Energy_NNP
+            Calculation_NNP and_CC Dynamics_NNP (_( ENCAD_NNP )_) package_NN [_NN 36_CD ]_NN ._. For_IN a_DT
+            given_VBN protein_NN sequence_NN ,_, there_EX could_MD be_VB more_JJR than_IN one_CD
+            all-atom_JJ model_NN produced_VBN ._. For_IN such_JJ cases_NNS ,_, all_DT models_NNS
+            were_VBD ranked_VBN using_VBG the_DT all-atom_JJ pairwise_NN scoring_VBG
+            function_NN [_NN 32_CD ]_NN and_CC the_DT best_JJS scoring_VBG models_NNS are_VBP
+            considered_VBN to_TO be_VB the_DT most_RBS native-like_JJ ones_NNS ._.
+          
+        
+        
+          Ab_NNP initio_NN prediction_NN
+          
+            Sampling_NNP protein_NN conformational_NN space_NN
+            We_PRP initially_RB start_VBP with_IN an_DT all-atom_JJ conformation_NN
+            where_WRB the_DT torsion_NN values_NNS for_IN residues_NNS predicted_VBD to_TO be_VB
+            in_IN helix_NN /_NN sheet_NN by_IN PSIPRED_NNP secondary_JJ structure_NN
+            prediction_NN [_NN 38_CD ]_NN are_VBP set_VBN to_TO idealised_JJ values_NNS [_NN 33_CD ]_NN ._.
+            The_DT remaining_VBG φ_NN /_NN ψ_NN values_NNS are_VBP set_VBN in_IN an_DT extended_VBN
+            conformation_NN ._. Side_NN chain_NN conformations_NNS are_VBP predicted_VBN by_IN
+            simply_RB using_VBG the_DT most_RBS frequently_RB observed_VBD rotamer_NN in_IN a_DT
+            database_NN of_IN protein_NN structures_NNS [_NN 30_CD ]_NN ._. New_NNP
+            conformations_NNS are_VBP generated_VBN by_IN perturbing_VBG the_DT existing_VBG
+            conformation_NN at_IN an_DT arbitrary_JJ residue_NN by_IN one_CD of_IN two_CD
+            methods_NNS :_: (_( 
+            i_NNP )_) the_DT torsion_NN values_NNS for_IN three_CD
+            residues_NNS with_IN identical_JJ sequence_NN from_IN a_DT known_VBN structure_NN
+            are_VBP used_VBN to_TO modify_VB the_DT current_JJ conformation_NN ,_, similar_JJ in_IN
+            spirit_NN to_TO that_DT of_IN Baker_NNP and_CC colleagues_NNS [_NN 39_CD ]_NN ;_: (_( 
+            ii_NN )_) one_CD of_IN possible_JJ 14_CD torsion_NN
+            (_( φ_NN /_NN ψ_NN )_) values_NNS derived_VBN based_VBN on_IN the_DT most_RBS frequently_RB
+            occurring_VBG torsion_NN values_NNS for_IN a_DT given_VBN residue_NN in_IN a_DT
+            database_NN of_IN known_VBN structures_NNS ._. The_DT move_NN sets_NNS were_VBD
+            combined_VBN sequentially_RB (_( i_NNP ._. e_SYM ._. ,_, where_WRB a_DT certain_JJ number_NN of_IN
+            iterations_NNS consisted_VBD of_IN copying_VBG torsion_NN values_NNS for_IN
+            3_CD -_: residue_NN fragments_NNS and_CC the_DT next_JJ few_JJ iterations_NNS would_MD
+            use_VB torsion_NN values_NNS from_IN the_DT 14_CD -_: state_NN φ_NN /_NN ψ_NN model_NN )_) ._.
+            The_DT scoring_VBG function_NN for_IN minimisation_NN is_VBZ primarily_RB a_DT
+            combination_NN of_IN the_DT all-atom_JJ function_NN ,_, a_DT hydrophobic_JJ
+            compactness_NNS function_NN ,_, and_CC a_DT bad_JJ contacts_NNS function_VBP [_NN 40_CD
+            ]_NN ._. The_DT primary_JJ search_NN technique_NN we_PRP used_VBD was_VBD a_DT
+            Metropolis_NNP Monte_NNP Carlo_NNP (_( MC_NNP )_) procedure_NN where_WRB
+            conformations_NNS are_VBP accepted_VBN or_CC rejected_VBD based_VBN on_IN the_DT
+            Boltzmann_NNP 's_POS equation_NN [_NN 41_CD ]_NN ._. Each_DT trajectory_NN was_VBD
+            allowed_VBN 50_CD ,_, 000_CD iterations_NNS ,_, starting_VBG with_IN a_DT high_JJ
+            temperature_NN such_JJ that_IN 99_CD %_NN of_IN the_DT moves_NNS were_VBD accepted_VBN
+            for_IN the_DT first_JJ 1000_CD steps_NNS and_CC "_'' cooled_VBN "_'' linearly_RB until_IN
+            only_RB 1_CD %_NN of_IN the_DT moves_NNS were_VBD accepted_VBN for_IN the_DT last_JJ 100_CD
+            steps_NNS ._.
+            At_IN particular_JJ points_NNS in_IN the_DT trajectory_NN (_( every_DT 1000_CD
+            steps_NNS )_) ,_, a_DT fragment_NN from_IN another_DT trajectory_NN was_VBD copied_VBN
+            at_IN random_JJ ,_, similar_JJ in_IN spirit_NN to_TO genetic_JJ algorithms_NNS (_( GA_NNP )_)
+            strategies_NNS [_NN 42_CD 43_CD ]_NN ._. The_DT standard_JJ Metropolis_NNP
+            criterion_NN would_MD then_RB apply_VB :_: i_NNP ._. e_SYM ._. ,_, if_IN the_DT selected_VBN
+            fragment_NN enhanced_VBD the_DT score_NN of_IN the_DT conformation_NN
+            relative_JJ to_TO the_DT previous_JJ conformation_NN ,_, it_PRP would_MD be_VB
+            accepted_VBN ._. If_IN not_RB ,_, its_PRP$ probability_NN of_IN acceptance_NN would_MD
+            be_VB determined_VBN by_IN the_DT difference_NN in_IN score_NN between_IN the_DT
+            current_JJ conformation_NN and_CC the_DT previous_JJ conformation_NN ._. The_DT
+            probability_NN is_VBZ calculated_VBN by_IN the_DT Boltzmann-like_NNP
+            equation_NN where_WRB Δ_NN 
+            E_NNP is_VBZ the_DT difference_NN in_IN scores_NNS and_CC
+            
+            kT_NN ,_, representing_VBG the_DT product_NN of_IN
+            Boltzmann_NNP 's_POS constant_JJ and_CC temperature_NN ,_, is_VBZ set_VBN to_TO a_DT value_NN
+            calculated_VBD using_VBG the_DT standard_JJ deviation_NN of_IN the_DT scores_NNS
+            of_IN the_DT first_JJ 1000_CD steps_NNS in_IN a_DT given_VBN trajectory_NN ._.
+          
+          
+            Selecting_NNP biologically_RB relevant_JJ
+            conformations_NNS
+            The_DT conformations_NNS generated_VBN were_VBD minimised_JJ using_VBG
+            ENCAD_NNP [_NN 36_CD ]_NN and_CC scored_VBD using_VBG a_DT combination_NN of_IN scoring_VBG
+            functions_NNS that_WDT hierarchically_RB reduces_VBZ the_DT total_JJ number_NN
+            of_IN conformations_NNS produced_VBN to_TO one_CD final_JJ conformation_NN ._.
+            The_DT scoring_VBG functions_NNS used_VBN for_IN the_DT final_JJ filtering_VBG
+            include_VBP the_DT all-atom_JJ function_NN [_NN 32_CD ]_NN ,_, hydrophobic_JJ
+            compactness_NNS [_NN 40_CD ]_NN ,_, a_DT simple_JJ residue-residue_JJ contact_NN
+            function_NN [_NN 44_CD ]_NN ,_, a_DT density-scoring_JJ function_NN that_WDT is_VBZ
+            based_VBN on_IN the_DT distance_NN of_IN a_DT conformation_NN to_TO all_DT its_PRP$
+            relatives_NNS in_IN the_DT conformation_NN pool_NN ,_, contact_NN order_NN [_NN 45_CD
+            ]_NN ,_, a_DT secondary_JJ structure_NN based_VBD scoring_VBG function_NN that_WDT
+            evaluates_VBZ the_DT match_NN between_IN the_DT predicted_VBN structure_NN and_CC
+            the_DT secondary_JJ structure_NN of_IN a_DT final_JJ energy-minimised_JJ
+            conformation_NN ,_, and_CC standard_JJ physics-based_JJ electrostatics_NNS
+            and_CC Van_NNP der_NNP Waals_NNP terms_NNS [_NN 46_CD ]_NN ._.
+          
+        
+        
+          Internal_NNP testing_NN and_CC comparison_NN of_IN models_NNS to_TO the_DT
+          experimental_JJ result_NN
+          We_PRP initially_RB ran_VBD our_PRP$ algorithms_NNS on_IN test_NN sets_NNS
+          consisting_VBG of_IN 10_CD -_: 20_CD proteins_NNS ._. To_TO minimise_NN bias_NN of_IN a_DT
+          particular_JJ algorithm_NN to_TO a_DT fixed_VBN test_NN set_VBD ,_, new_JJ proteins_NNS
+          were_VBD added_VBN to_TO the_DT test_NN sets_NNS regularly_RB ._. In_IN all_DT cases_NNS where_WRB
+          a_DT three-dimensional_JJ model_NN must_MD be_VB compared_VBN to_TO an_DT
+          experimental_JJ structure_NN ,_, we_PRP use_VBP the_DT root_NN mean_NN square_JJ
+          deviation_NN (_( RMSD_NNP )_) between_IN corresponding_JJ atoms_NNS of_IN the_DT
+          prediction_NN and_CC the_DT experimental_JJ answer_NN (_( usually_RB
+          calculated_VBN using_VBG the_DT C_NNP 
+          α_NN atoms_NNS )_) ._.
+        
+        
+          Availability_NNP of_IN software_NN and_CC decoys_NNS
+          The_DT ensembles_NNS of_IN structures_NNS that_WDT were_VBD generated_VBN and_CC
+          much_JJ of_IN the_DT software_NN used_VBN to_TO generate_VB them_PRP are_VBP available_JJ
+          at_IN http_NN :_: /_NN /_NN compbio_NN ._. washington_NN ._. edu_NN
+        
+      
+      
+        Authors_NNP '_'' contributions_NNS
+        RS_NNP performed_VBD the_DT algorithm_NN development_NN ,_, carried_VBD out_RP the_DT
+        computations_NNS ,_, evaluated_VBD the_DT results_NNS ,_, and_CC drafted_VBD the_DT
+        manuscript_NN ._. ML_NNP helped_VBD with_IN the_DT algorithm_NN development_NN and_CC
+        evaluation_NN of_IN the_DT results_NNS produced_VBN ,_, and_CC provided_VBD
+        intellectual_JJ guidance_NN and_CC mentorship_NN ._. All_DT authors_NNS read_VBP and_CC
+        approved_VBD the_DT final_JJ manuscript_NN ._.
+      
+    
+  

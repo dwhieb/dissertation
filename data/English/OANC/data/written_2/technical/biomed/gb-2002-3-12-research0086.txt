@@ -1,0 +1,1773 @@
+
+  
+    
+      
+        Background_NNP
+        The_DT functional_JJ annotation_NN of_IN metazoan_NN genome_NN sequences_NNS
+        represents_VBZ one_CD of_IN the_DT greatest_JJS challenges_NNS in_IN modern_JJ
+        biological_JJ research_NN ._. For_IN example_NN ,_, even_RB with_IN structural_JJ
+        constraints_NNS imposed_VBN by_IN the_DT genetic_JJ code_NN to_TO guide_VB algorithm_NN
+        design_NN ,_, the_DT identification_NN of_IN all_DT protein-coding_JJ genes_NNS in_IN a_DT
+        metazoan_NN genome_NN remains_VBZ an_DT unsolved_JJ computational_NN problem_NN ._.
+        The_DT identification_NN of_IN functional_JJ non-coding_JJ sequences_NNS ,_, such_JJ
+        as_IN untranslated_JJ regions_NNS (_( UTRs_NNP )_) ,_, genes_NNS for_IN
+        non-protein-coding_JJ RNAs_NNP ,_, and_CC 
+        cis_NNS -_: regulatory_JJ elements_NNS ,_, poses_VBZ an_DT
+        even_RB more_RBR difficult_JJ problem_NN for_IN comprehensive_JJ genome_NN
+        annotation_NN ,_, as_IN the_DT rules_NNS governing_VBG their_PRP$ structure_NN and_CC
+        function_NN remain_VB more_RBR elusive_JJ ._. Despite_IN these_DT difficulties_NNS ,_,
+        it_PRP is_VBZ increasingly_RB clear_JJ that_IN comparative_JJ genomic_JJ
+        approaches_NNS will_MD substantially_RB aid_VB efforts_NNS to_TO annotate_NN these_DT
+        and_CC other_JJ important_JJ sequence_NN features_NNS ._. With_IN whole-genome_JJ
+        sequence_NN data_NNS quickly_RB becoming_VBG available_JJ for_IN several_JJ
+        organisms_NNS ,_, it_PRP is_VBZ important_JJ to_TO determine_VB which_WDT species_NNS
+        comparisons_NNS and_CC features_NNS of_IN genome_NN evolution_NN will_MD be_VB most_RBS
+        useful_JJ for_IN comparative_JJ genome_NN annotation_NN ._.
+        The_DT genus_JJ 
+        Drosophila_NNP offers_VBZ a_DT
+        well-characterized_JJ evolutionary_JJ genetic_JJ system_NN for_IN
+        developing_VBG and_CC testing_VBG methods_NNS for_IN comparative_JJ genome_NN
+        annotation_NN ._. From_IN the_DT seminal_NN population-genetic_JJ and_CC
+        phylogenetic_JJ studies_NNS of_IN Dobzhansky_NNP and_CC co-workers_NNS [_NN 1_CD ]_NN ,_, and_CC
+        the_DT classification_NN of_IN taxonomic_JJ relationships_NNS in_IN the_DT genus_JJ
+        by_IN Patterson_NNP ,_, Stone_NNP and_CC others_NNS [_NN 2_CD ]_NN ,_, 
+        Drosophila_NNP has_VBZ long_RB served_VBN as_IN a_DT model_NN
+        system_NN for_IN developing_VBG and_CC testing_VBG evolutionary_JJ principles_NNS
+        at_IN the_DT morphological_JJ and_CC cytological_JJ levels_NNS ._. The_DT genus_JJ 
+        Drosophila_NNP has_VBZ also_RB served_VBN as_IN a_DT
+        proving_VBG ground_NN for_IN developing_VBG and_CC testing_VBG evolutionary_JJ
+        principles_NNS at_IN the_DT protein_NN [_NN 3_CD ]_NN and_CC DNA_NNP sequence_NN levels_NNS [_NN
+        4_CD ]_NN ._. In_IN addition_NN ,_, for_IN over_IN a_DT decade_NN and_CC a_DT half_NN ,_, comparative_JJ
+        sequence_NN analysis_NN has_VBZ had_VBN an_DT important_JJ role_NN in_IN the_DT
+        functional_JJ analysis_NN of_IN genes_NNS and_CC 
+        cis_NNS -_: regulatory_JJ sequences_NNS in_IN 
+        Drosophila_NNP (_( see_VB ,_, for_IN example_NN ,_, [_NN 5_CD ,_,
+        6_CD ]_NN )_) ._. This_DT history_NN of_IN research_NN has_VBZ culminated_VBN in_IN a_DT rich_JJ
+        understanding_NN of_IN the_DT pattern_NN and_CC process_NN of_IN molecular_JJ
+        evolution_NN in_IN the_DT genus_JJ 
+        Drosophila_NNP [_NN 7_CD ]_NN ._. With_IN the_DT complete_JJ
+        sequencing_VBG of_IN the_DT euchromatic_JJ portion_NN of_IN the_DT 
+        Drosophila_NNP melanogaster_NN genome_NN [_NN 8_CD ,_,
+        9_CD ]_NN ,_, this_DT prior_JJ knowledge_NN can_MD be_VB applied_VBN to_TO the_DT task_NN of_IN
+        comparative_JJ genome_NN annotation_NN ._.
+        We_PRP have_VBP undertaken_VBN a_DT pilot_NN study_NN to_TO assess_VB the_DT
+        contribution_NN of_IN large-scale_JJ comparative_JJ genomic_JJ sequence_NN
+        data_NNS on_IN the_DT functional_JJ annotation_NN of_IN the_DT 
+        Drosophila_NNP genome_NN ._. Our_PRP$ goals_NNS are_VBP to_TO
+        identify_VB the_DT species_NNS whose_WP$ genome_NN sequences_NNS would_MD be_VB most_RBS
+        useful_JJ in_IN annotating_VBG the_DT 
+        D_NNP ._. melanogaster_NN genome_NN ,_, and_CC to_TO
+        identify_VB features_NNS of_IN genome_NN evolution_NN that_WDT can_MD assist_VB the_DT
+        annotation_NN of_IN protein-coding_JJ genes_NNS and_CC the_DT non-coding_JJ 
+        cis_NNS -_: regulatory_JJ sequences_NNS controlling_VBG
+        their_PRP$ transcription_NN ._. The_DT lessons_NNS learned_VBD from_IN this_DT study_NN
+        have_VBP implications_NNS for_IN efforts_NNS to_TO annotate_NN the_DT entire_JJ 
+        D_NNP ._. melanogaster_NN genome_NN using_VBG
+        comparative_JJ sequence_NN data_NNS from_IN the_DT forthcoming_JJ 
+        D_NNP ._. pseudoobscura_NN genome_NN [_NN 10_CD ]_NN as_RB well_RB
+        as_IN the_DT recently_RB completed_VBN 
+        Anopheles_NNP gambiae_NN genome_NN [_NN 11_CD ]_NN ._.
+        Beyond_IN the_DT initial_JJ analyses_NNS presented_VBN here_RB ,_, these_DT data_NNS also_RB
+        serve_VBP as_IN materials_NNS for_IN the_DT further_JJ study_NN of_IN molecular_JJ
+        evolutionary_JJ processes_NNS in_IN 
+        Drosophila_NNP and_CC the_DT calibration_NN of_IN
+        comparative_JJ sequence_NN analysis_NN tools_NNS ._.
+        Here_RB ,_, we_PRP report_VBP the_DT isolation_NN and_CC analysis_NN of_IN genomic_JJ
+        sequences_NNS from_IN eight_CD candidate_NN regions_NNS representing_VBG both_DT
+        gene-rich_JJ and_CC gene-poor_JJ regions_NNS of_IN the_DT 
+        Drosophila_NNP genome_NN ,_, totaling_VBG over_IN 1_CD ._. 25_CD
+        megabases_NNS (_( Mb_NNP )_) of_IN DNA_NNP sequence_NN ._. These_DT regions_NNS were_VBD isolated_VBN
+        from_IN fosmid_NN libraries_NNS of_IN four_CD divergent_JJ 
+        Drosophila_NNP species_NNS (_( 
+        D_NNP ._. erecta_NN ,_, D_NNP ._. pseudoobscura_NN ,_, D_NNP ._.
+        willistoni_NN ,_, and_CC 
+        D_NNP ._. littoralis_NNS )_) chosen_VBN to_TO cover_VB a_DT
+        range_NN of_IN divergence_NN times_NNS (_( 6_CD -_: 15_CD ,_, 46_CD ,_, 53_CD and_CC 61_CD -_: 65_CD million_CD
+        years_NNS ,_, respectively_RB )_) from_IN the_DT reference_NN species_NNS ,_, 
+        D_NNP ._. melanogaster_NN [_NN 7_CD ]_NN ._. Using_VBG the_DT
+        annotation_NN pipeline_NN and_CC curation_NN tools_NNS described_VBD in_IN
+        accompanying_VBG papers_NNS [_NN 12_CD ,_, 13_CD ,_, 14_CD ]_NN ,_, we_PRP predicted_VBD the_DT coding_VBG
+        sequence_NN content_NN of_IN these_DT sequences_NNS for_IN subsequent_JJ
+        comparative_JJ analyses_NNS ._. Our_PRP$ results_NNS indicate_VBP that_IN the_DT
+        majority_NN of_IN coding_VBG sequences_NNS predicted_VBD in_IN 
+        D_NNP ._. melanogaster_NN can_MD be_VB identified_VBN in_IN
+        divergent_JJ 
+        Drosophila_NNP species_NNS and_CC show_NN evidence_NN
+        of_IN functional_JJ constraint_NN ._. Microsynteny_NNP is_VBZ generally_RB
+        maintained_VBN at_IN the_DT scale_NN of_IN individual_JJ fosmid_NN clones_NNS ,_, and_CC
+        the_DT few_JJ rearrangement_NN breakpoints_NNS ,_, transposable_JJ elements_NNS
+        and_CC gene_NN transpositions_NNS can_MD readily_RB be_VB identified_VBN ._. Analysis_NNP
+        of_IN coding_VBG sequence_NN evolution_NN suggests_VBZ that_IN uncharacterized_JJ
+        genes_NNS ,_, which_WDT we_PRP will_MD refer_VB to_TO as_IN '_POS predicted_VBD '_POS genes_NNS ,_, tend_VBP to_TO
+        have_VB a_DT higher_JJR rate_NN of_IN protein_NN evolution_NN than_IN '_POS known_VBN '_POS genes_NNS
+        -_: those_DT genes_NNS that_WDT have_VBP been_VBN selected_VBN for_IN experimental_JJ
+        study_NN and_CC thus_RB are_VBP more_RBR likely_JJ to_TO have_VB easily_RB discerned_JJ
+        functions_NNS ._. Analysis_NNP of_IN non-coding_JJ sequence_NN evolution_NN
+        reveals_VBZ that_IN levels_NNS of_IN conservation_NN vary_VBP with_IN divergence_NN
+        time_NN ,_, and_CC that_IN conserved_JJ non-coding_JJ sequences_NNS (_( CNCSs_NNP )_)
+        exhibit_NN a_DT striking_JJ pattern_NN of_IN spatial_NN clustering_VBG in_IN 
+        Drosophila_NNP ._. Using_VBG transgenic_JJ
+        reporter_NN assays_NNS we_PRP show_VBP that_IN CNCS_NNP clusters_NNS can_MD be_VB used_VBN to_TO
+        accurately_RB predict_VBP a_DT developmentally_RB regulated_VBN enhancer_NN in_IN
+        the_DT 
+        apterous_JJ (_( 
+        ap_NN )_) region_NN ._. We_PRP discuss_VBP the_DT
+        implications_NNS of_IN our_PRP$ results_NNS for_IN comparative_JJ approaches_NNS to_TO
+        protein-coding_JJ and_CC 
+        cis_NNS -_: regulatory_JJ sequence_NN prediction_NN
+        in_IN the_DT genus_JJ 
+        Drosophila_NNP ._.
+      
+      
+        Results_NNS
+        
+          Isolation_NNP and_CC sequencing_VBG of_IN genomic_JJ regions_NNS from_IN
+          divergent_JJ Drosophilaspecies_NNP
+          On_IN the_DT basis_NN of_IN genome_NN size_NN considerations_NNS and_CC the_DT
+          desire_NN to_TO investigate_VB a_DT range_NN of_IN divergence_NN times_NNS in_IN the_DT
+          genus_JJ 
+          Drosophila_NNP ,_, we_PRP constructed_VBN fosmid_NN
+          libraries_NNS (_( approximately_RB 40_CD -_: kb_NN inserts_NNS )_) for_IN 
+          D_NNP ._. erecta_NN ,_, D_NNP ._. pseudoobscura_NN ,_, D_NNP ._.
+          willistoni_NN and_CC 
+          D_NNP ._. littoralis_NNS (_( Figure_NN 1_LS )_) ._. 
+          D_NNP ._. littoralis_NNS is_VBZ closely_RB related_VBN to_TO
+          the_DT well-studied_JJ species_NNS ,_, 
+          D_NNP ._. virilis_NNS ,_, but_CC has_VBZ been_VBN reported_VBN
+          to_TO have_VB less_JJR dispersed_VBD repetitive_JJ DNA_NNP than_IN 
+          D_NNP ._. virilis_NNS (_( Kevin_NNP White_NNP ,_, personal_JJ
+          communication_NN )_) ._. We_PRP designed_VBD degenerate_VB PCR_NNP primers_NNS for_IN a_DT
+          set_NN of_IN eight_CD well-characterized_JJ genes_NNS (_( 
+          apterous_JJ (_( ap_NN )_) ,_, even-skipped_JJ (_( eve_NN )_) ,_,
+          fushi-tarazu_JJ (_( ftz_NN )_) ,_, twist_NN (_( twi_NN )_) ,_, and_CC 
+          Rhodopsins_NNP 1_CD ,_, 2_CD ,_, 3_CD and_CC 
+          4_CD (_( 
+          Rh_NNP 1_CD ,_, Rh_NNP 2_CD ,_, Rh_NNP 3_CD and_CC 
+          Rh_NNP 4_LS )_) )_) to_TO obtain_VB species-specific_JJ
+          sequence-tagged_JJ sites_NNS (_( STSs_NNP )_) that_WDT were_VBD subsequently_RB used_VBN
+          for_IN hybridization_NN to_TO gridded_JJ fosmid_NN filters_NNS (_( see_VB
+          Materials_NNPS and_CC methods_NNS )_) ._. Positive_JJ clones_NNS from_IN the_DT library_NN
+          screen_NN were_VBD verified_VBN by_IN PCR_NNP and_CC restriction_NN mapped_VBN to_TO
+          choose_VB the_DT longest_JJS clone_NN containing_VBG the_DT candidate_NN gene_NN
+          and_CC its_PRP$ regulatory_JJ regions_NNS ._.
+          In_IN the_DT initial_JJ design_NN of_IN this_DT project_NN ,_, comparative_JJ
+          sequence_NN data_NNS was_VBD to_TO be_VB collected_VBN from_IN a_DT 
+          D_NNP ._. virilis_NNS P_NN 1_CD library_NN [_NN 15_CD ]_NN ._. Using_VBG
+          a_DT PCR-based_NNP plate-pool_JJ screening_NN strategy_NN ,_, we_PRP isolated_VBD a_DT
+          P_NN 1_CD clone_NN from_IN this_DT library_NN containing_VBG an_DT 83_CD ._. 2_LS -_: kb_NN insert_NN
+          from_IN the_DT 
+          ap_NN region_NN of_IN 
+          D_NNP ._. virilis_NNS ._. Sequencing_NNP of_IN this_DT
+          clone_NN revealed_VBD long_JJ stretches_NNS of_IN repetitive_JJ DNA_NNP ,_, which_WDT
+          complicated_VBD both_DT assembly_NN and_CC comparative_JJ analyses_NNS ._. In_IN
+          addition_NN ,_, the_DT insert_NN size_NN of_IN the_DT 
+          D_NNP ._. virilis_NNS P_NN 1_CD library_NN
+          (_( approximately_RB 60_CD -_: 80_CD kb_NN )_) was_VBD greater_JJR than_IN necessary_JJ for_IN
+          comparative_JJ analysis_NN of_IN single_JJ gene_NN regions_NNS ._. This_DT clone_NN
+          was_VBD used_VBN to_TO guide_VB transgenic_JJ reporter_NN analysis_NN (_( see_VB
+          below_IN )_) ,_, but_CC has_VBZ not_RB been_VBN included_VBN in_IN the_DT other_JJ analyses_NNS
+          reported_VBD here_RB ._.
+          In_IN total_JJ ,_, 30_CD fosmid_NN clones_NNS were_VBD isolated_VBN and_CC sequenced_JJ
+          using_VBG methods_NNS described_VBD in_IN [_NN 9_CD ]_NN which_WDT sum_NN to_TO 1_CD ,_, 257_CD ,_, 069_CD
+          bp_NN ._. All_DT clones_NNS were_VBD finished_VBN to_TO an_DT estimated_VBN error_NN rate_NN
+          of_IN fewer_JJR than_IN 0_CD ._. 17_CD errors_NNS per_IN 10_CD kb_NN ,_, with_IN an_DT average_JJ
+          estimated_VBN error_NN rate_NN of_IN 0_CD ._. 03_CD errors_NNS per_IN 10_CD kb_NN ._. The_DT
+          lengths_NNS of_IN fosmids_NNS sequenced_JJ for_IN the_DT eight_CD candidate_NN
+          regions_NNS are_VBP shown_VBN in_IN Table_NNP 1_CD ._. Though_IN we_PRP were_VBD able_JJ to_TO
+          obtain_VB species-specific_JJ STSs_NNP for_IN the_DT 
+          D_NNP ._. willistoni_NN twi_NN gene_NN ,_, we_PRP were_VBD not_RB
+          able_JJ to_TO obtain_VB clones_NNS for_IN this_DT region_NN from_IN the_DT 
+          D_NNP ._. willistoni_NN fosmid_NN library_NN ._. We_PRP
+          were_VBD also_RB not_RB able_JJ to_TO obtain_VB a_DT species-specific_JJ probe_NN for_IN
+          
+          D_NNP ._. willistoni_NN ftz_NN ,_, nor_CC could_MD we_PRP
+          obtain_VB any_DT 
+          D_NNP ._. willistoni_NN ftz_NN clones_NNS using_VBG
+          probes_NNS from_IN other_JJ non-melanogaster_JJ species_NNS ._. Also_RB shown_VBN in_IN
+          Table_NNP 1_CD are_VBP the_DT lengths_NNS and_CC locations_NNS of_IN 
+          D_NNP ._. melanogaster_NN genomic_JJ regions_NNS
+          corresponding_JJ to_TO the_DT union_NN of_IN the_DT Release_NNP 3_CD sequences_NNS
+          homologous_RB to_TO all_DT four_CD non-melanogaster_JJ species_NNS ._. The_DT
+          union_NN of_IN sequences_NNS from_IN all_DT non-melanogaster_JJ species_NNS for_IN
+          the_DT eight_CD candidate_NN regions_NNS covers_VBZ 494_CD ._. 6_CD kb_NN of_IN the_DT 
+          D_NNP ._. melanogaster_NN genome_NN ;_: an_DT
+          additional_JJ 65_CD ._. 3_LS kb_NN of_IN 
+          D_NNP ._. melanogaster_NN genomic_JJ sequence_NN
+          was_VBD sampled_VBN owing_VBG to_TO rearrangements_NNS in_IN non-melanogaster_JJ
+          species_NNS ._. Thus_RB the_DT 1_CD ._. 25_CD Mb_NNP of_IN comparative_JJ data_NNS presented_VBN
+          here_RB span_NN over_IN 0_CD ._. 5_CD Mb_NNP of_IN coding_VBG and_CC non-coding_JJ sequences_NNS
+          of_IN the_DT 
+          D_NNP ._. melanogaster_NN genome_NN ._.
+        
+        
+          Comparative_NNP annotation_NN of_IN coding_VBG sequences_NNS
+          The_DT 30_CD non-melanogaster_JJ fosmid_NN (_( and_CC the_DT 
+          D_NNP ._. virilis_NNS ap_NN P_NN 1_LS )_) sequences_NNS were_VBD
+          computationally_RB processed_VBN using_VBG the_DT pipeline_NN used_VBN to_TO
+          re-annotate_JJ the_DT 
+          D_NNP ._. melanogaster_NN genome_NN [_NN 12_CD ]_NN ._. The_DT
+          only_RB major_JJ modification_NN to_TO this_DT pipeline_NN was_VBD to_TO add_VB an_DT
+          additional_JJ tier_NN of_IN evidence_NN containing_VBG the_DT results_NNS of_IN
+          TBLASTN_NNP searches_NNS of_IN all_DT Release_NNP 3_CD 
+          D_NNP ._. melanogaster_NN peptides_NNS [_NN 14_CD ]_NN
+          against_IN non-melanogaster_JJ sequences_NNS ._. Predicted_NNP coding_VBG
+          sequences_NNS were_VBD manually_RB verified_VBN and_CC refined_VBN using_VBG the_DT
+          Apollo_NNP annotation_NN tool_NN [_NN 13_CD ]_NN ._. As_IN no_DT expressed_VBN sequence_NN
+          tag_NN (_( EST_NNP )_) information_NN exists_VBZ to_TO annotate_NN transcribed_JJ
+          non-coding_JJ sequences_NNS (_( such_JJ as_IN UTRs_NNP )_) for_IN the_DT four_CD
+          non-melanogaster_JJ species_NNS ,_, we_PRP annotated_JJ only_RB
+          protein-coding_JJ gene_NN and_CC exon_NN models_NNS ._. Thus_RB ,_, in_IN keeping_VBG
+          with_IN other_JJ gene-prediction_JJ studies_NNS (_( for_IN example_NN [_NN 16_CD ]_NN )_) ,_,
+          we_PRP use_VBP the_DT terms_NNS gene_NN and_CC exon_NN to_TO refer_VB to_TO the_DT translated_VBN
+          components_NNS of_IN genes_NNS and_CC exons_NNS ._.
+          In_IN the_DT 30_CD fosmids_NNS ,_, we_PRP predict_VBP a_DT total_NN of_IN 164_CD
+          protein-coding_JJ genes_NNS in_IN non-melanogaster_JJ species_NNS (_( 53_CD in_IN 
+          D_NNP ._. erecta_NN ,_, 41_CD in_IN 
+          D_NNP ._. pseudoobscura_NN ,_, 39_CD in_IN 
+          D_NNP ._. willistoni_NN ,_, 31_CD in_IN 
+          D_NNP ._. littoralis_NNS )_) that_DT form_NN
+          orthologous_JJ clusters_NNS with_IN 81_CD 
+          D_NNP ._. melanogaster_NN genes_NNS ._. Of_IN the_DT 81_CD
+          genes_NNS ,_, 30_CD are_VBP '_POS known_VBN '_POS genes_NNS that_WDT have_VBP been_VBN functionally_RB
+          characterized_VBN in_IN some_DT way_NN by_IN the_DT community_NN of_IN 
+          Drosophila_NNP researchers_NNS ;_: the_DT
+          remaining_VBG 51_CD genes_NNS are_VBP '_POS predicted_VBN '_POS genes_NNS based_VBN only_RB on_IN
+          the_DT evidence_NN in_IN the_DT Release_NNP 3_CD annotations_NNS (_( [_NN 14_CD ]_NN and_CC see_VB
+          Supplementary_NNP Table_NNP 1_CD in_IN the_DT Additional_JJ data_NN files_NNS
+          section_NN )_) ._. Of_IN the_DT 164_CD genes_NNS predicted_VBD in_IN non-melanogaster_JJ
+          species_NNS ,_, 133_CD (_( 81_CD %_NN )_) are_VBP full_JJ length_NN ;_: the_DT remaining_VBG 31_CD
+          (_( 19_CD %_NN )_) are_VBP partial_JJ coding_VBG sequences_NNS that_WDT span_NN the_DT edge_NN of_IN
+          the_DT sequenced_JJ genomic_JJ clone_NN ._. In_IN non-melanogaster_JJ species_NNS ,_,
+          we_PRP predict_VBP 495_CD coding_VBG exons_NNS (_( 148_CD in_IN 
+          D_NNP ._. erecta_NN ,_, 133_CD in_IN 
+          D_NNP ._. pseudoobscura_NN ,_, 111_CD in_IN 
+          D_NNP ._. willistoni_NN ,_, 103_CD in_IN 
+          D_NNP ._. littoralis_NNS )_) that_DT form_NN
+          orthologous_JJ clusters_NNS with_IN 264_CD 
+          D_NNP ._. melanogaster_NN coding_VBG exons_NNS ._. On_IN
+          average_JJ ,_, there_EX are_VBP approximately_RB two_CD non-melanogaster_JJ
+          species_NNS sampled_VBN per_IN orthologous_JJ gene_NN and_CC coding_VBG exon_NN
+          cluster_NN ._. Fifteen_CD genes_NNS (_( 10_CD complete_JJ )_) and_CC 39_CD coding_VBG exons_NNS
+          were_VBD sequenced_JJ in_IN all_DT four_CD non-melanogaster_JJ species_NNS ._.
+          Qualitatively_NNP ,_, our_PRP$ data_NNS reveal_VBP that_IN the_DT majority_NN of_IN 
+          D_NNP ._. melanogaster_NN Release_NNP 3_CD gene_NN
+          models_NNS are_VBP highly_RB conserved_JJ in_IN divergent_JJ 
+          Drosophila_NNP species_NNS ._. This_DT made_VBN it_PRP
+          possible_JJ to_TO automatically_RB identify_VB orthologous_JJ genes_NNS in_IN
+          non-melanogaster_JJ species_NNS using_VBG TBLASTN_NNP results_NNS in_IN
+          conjunction_NN with_IN Genie_NNP [_NN 17_CD ]_NN and_CC /_NN or_CC GENSCAN_NNP [_NN 18_CD ]_NN
+          predictions_NNS to_TO improve_VB intron-exon_JJ boundaries_NNS and_CC
+          identify_VB small_JJ /_NN divergent_JJ exons_NNS in_IN Apollo_NNP ._. In_IN the_DT few_JJ
+          discrepant_NN cases_NNS where_WRB no_DT clear_JJ ortholog_NN could_MD be_VB
+          unambiguously_RB identified_VBN (_( such_JJ as_IN the_DT four_CD closely_RB
+          related_VBN members_NNS of_IN the_DT 
+          Rhodopsin_NNP gene_NN family_NN )_) ,_, we_PRP used_VBD the_DT
+          conserved_JJ microsyntenic_JJ gene_NN orders_NNS maintained_VBN in_IN these_DT
+          species_NNS to_TO resolve_VB orthologs_NNS (_( see_VB below_IN )_) ._. With_IN the_DT
+          exception_NN of_IN the_DT retrotransposition_NN events_NNS discussed_VBN
+          below_IN ,_, the_DT intron-exon_JJ structure_NN of_IN gene_NN models_NNS is_VBZ highly_RB
+          conserved_JJ as_IN well_RB :_: only_RB one_CD case_NN of_IN intron_NN gain_NN was_VBD
+          observed_VBN in_IN the_DT 
+          D_NNP ._. littoralis_NNS Rh_NNP 2_CD ,_, as_IN has_VBZ been_VBN
+          reported_VBN previously_RB for_IN 
+          Rh_NNP 2_CD in_IN the_DT closely_RB related_VBN species_NNS ,_,
+          
+          D_NNP ._. virilis_NNS [_NN 19_CD ]_NN ._. For_IN a_DT small_JJ class_NN
+          of_IN genes_NNS (_( 
+          BcDNA_NNP :_: LD_NNP 21213_CD ,_, Gr_NNP 59_CD a_DT ,_, Gr_NNP 59_CD b_SYM ,_, CG_NNP 9895_CD ,_,
+          CG_NNP 10887_CD ,_, CG_NNP 17186_CD ,_, CG_NNP 4733_CD )_) ,_, orthologs_NNS could_MD be_VB
+          identified_VBN in_IN divergent_JJ species_NNS ,_, but_CC amino-acid_JJ sequences_NNS
+          could_MD not_RB be_VB reliably_RB aligned_VBN with_IN the_DT 
+          D_NNP ._. melanogaster_NN gene_NN model_NN ._. In_IN
+          addition_NN ,_, orthologs_NNS of_IN four_CD genes_NNS (_( 
+          CG_NNP 13029_CD ,_, CG_NNP 14294_CD ,_, CG_NNP 12133_CD ,_,
+          CG_NNP 12378_CD )_) could_MD not_RB be_VB identified_VBN in_IN non-melanogaster_JJ
+          species_NNS except_IN in_IN 
+          D_NNP ._. erecta_NN ,_, the_DT species_NNS most_RBS
+          closely_RB related_VBN to_TO 
+          D_NNP ._. melanogaster_NN ._. The_DT absence_NN of_IN
+          these_DT genes_NNS is_VBZ not_RB simply_RB due_JJ to_TO insufficient_JJ sampling_VBG ,_,
+          since_IN in_IN these_DT cases_NNS both_DT 5_CD '_POS and_CC 3_CD '_POS neighboring_VBG genes_NNS
+          could_MD be_VB identified_VBN in_IN more_RBR divergent_JJ species_NNS (_( see_VB Figure_NN
+          2_CD ,_, for_IN example_NN )_) ._. These_DT may_MD represent_VB genes_NNS overpredicted_JJ
+          in_IN both_DT 
+          D_NNP ._. erecta_NN and_CC 
+          D_NNP ._. melanogaster_NN ,_, lineage-specific_JJ
+          genes_NNS which_WDT evolved_VBD before_IN the_DT divergence_NN of_IN 
+          D_NNP ._. melanogaster_NN from_IN 
+          D_NNP ._. erecta_NN ,_, or_CC genes_NNS which_WDT have_VBP
+          transposed_JJ from_IN (_( or_CC to_TO )_) other_JJ locations_NNS in_IN the_DT genomes_NNS of_IN
+          the_DT more_RBR divergent_JJ species_NNS ._.
+          We_PRP used_VBD an_DT evolutionary_JJ genetic_JJ approach_NN ,_, the_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ test_NN ,_, to_TO assess_VB the_DT accuracy_NN of_IN
+          these_DT gene_NN and_CC exon_NN predictions_NNS [_NN 20_CD ]_NN ._. This_DT test_NN relies_VBZ
+          on_IN the_DT assumption_NN that_IN functionally_RB constrained_VBN
+          protein-coding_JJ sequences_NNS should_MD exhibit_VB significantly_RB
+          lower_JJR rates_NNS of_IN evolution_NN in_IN amino-acid-encoding_JJ
+          nucleotide_NN sites_NNS (_( typically_RB first_JJ and_CC second_JJ positions_NNS in_IN
+          a_DT codon_NN )_) relative_JJ to_TO silent_JJ sites_NNS (_( typically_RB third_JJ
+          positions_NNS in_IN a_DT codon_NN )_) ._. Quantitatively_NNP ,_, this_DT leads_VBZ to_TO the_DT
+          prediction_NN that_IN the_DT ratio_NN of_IN the_DT average_JJ rate_NN of_IN
+          amino-acid_JJ substitution_NN per_IN site_NN (_( K_NNP 
+          a_DT )_) relative_JJ to_TO the_DT average_JJ rate_NN of_IN
+          silent_JJ substitution_NN per_IN site_NN (_( K_NNP 
+          s_VBZ )_) for_IN functionally_RB constrained_VBN
+          coding_VBG sequences_NNS should_MD be_VB significantly_RB less_JJR than_IN 1_CD [_NN
+          21_CD ]_NN ._. Genes_NNP or_CC exons_NNS which_WDT have_VBP a_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ ≈_NN 1_CD are_VBP inferred_VBN to_TO evolve_VB in_IN the_DT
+          absence_NN of_IN functional_JJ constraint_NN ;_: genes_NNS or_CC exons_NNS which_WDT
+          have_VBP a_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ >_NN 1_CD are_VBP inferred_VBN to_TO evolve_VB under_IN
+          the_DT influence_NN of_IN positive_JJ selection_NN ._. The_DT significance_NN of_IN
+          a_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ ratio_NN can_MD be_VB determined_VBN by_IN a_DT
+          likelihood_NN ratio_NN test_NN of_IN the_DT probabilities_NNS of_IN the_DT data_NNS
+          under_IN the_DT alternative_JJ hypotheses_NNS of_IN functional_JJ constraint_NN
+          relative_JJ to_TO no_DT constraint_NN [_NN 22_CD ]_NN ._. Genes_NNP or_CC coding_VBG exons_NNS
+          with_IN a_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ ratio_NN significantly_RB less_JJR than_IN 1_CD
+          '_POS pass_NN '_POS the_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ test_NN ;_: genes_NNS or_CC coding_VBG exons_NNS with_IN a_DT K_NNP
+          
+          a_DT /_NN K_NNP 
+          s_VBZ ratio_NN not_RB significantly_RB less_JJR than_IN 1_CD
+          '_POS fail_VB '_POS the_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ test_NN ._. The_DT power_NN of_IN this_DT test_NN to_TO
+          detect_VB functional_JJ constraint_NN is_VBZ influenced_VBN both_DT by_IN
+          evolutionary_JJ distance_NN and_CC sequence_NN length_NN [_NN 20_CD ]_NN ;_: thus_RB we_PRP
+          analyzed_VBD both_DT genes_NNS and_CC coding_VBG exons_NNS in_IN pairwise_NN
+          comparison_NN with_IN all_DT four_CD non-melanogaster_JJ species_NNS ._.
+          All_DT pairwise_NN gene-level_JJ comparisons_NNS studied_VBN here_RB
+          exhibited_VBN K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ ratios_NNS less_JJR than_IN one_CD (_( see_VB
+          Supplementary_NNP Table_NNP 1_CD in_IN the_DT Additional_JJ data_NN files_NNS
+          section_NN )_) ._. One_CD hundred_CD and_CC fifty-five_JJ of_IN 164_CD (_( 94_CD ._. 5_LS %_NN )_) of_IN
+          these_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ ratios_NNS were_VBD significantly_RB less_JJR than_IN
+          1_CD ,_, indicating_VBG that_IN the_DT vast_JJ majority_NN of_IN genes_NNS in_IN our_PRP$
+          sample_NN show_NN evidence_NN of_IN functional_JJ constraint_NN ._. All_DT nine_CD
+          pairwise_NN comparisons_NNS that_WDT fail_VBP the_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ test_NN at_IN the_DT gene_NN level_NN were_VBD 
+          D_NNP ._. melanogaster-_NN D_NNP ._.
+          erecta_NN comparisons_NNS ,_, and_CC eight_CD out_IN of_IN nine_CD involved_VBN
+          predicted_VBD genes_NNS (_( Supplementary_NNP Table_NNP 1_LS )_) ._. Genomic_NNP
+          sequences_NNS for_IN six_CD of_IN the_DT nine_CD genes_NNS which_WDT fail_VBP the_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ test_NN at_IN the_DT gene_NN level_NN were_VBD sampled_VBN
+          in_IN more_RBR divergent_JJ species_NNS :_: four_CD of_IN these_DT six_CD genes_NNS could_MD
+          be_VB identified_VBN in_IN more_RBR divergent_JJ species_NNS (_( 
+          Lmpt_NNP ,_, CG_NNP 10887_CD ,_, CG_NNP 14292_CD ,_, and_CC 
+          CG_NNP 4468_CD )_) ,_, whereas_IN two_CD could_MD not_RB (_( 
+          CG_NNP 12378_CD and_CC 
+          CG_NNP 14294_CD )_) ,_, indicating_VBG that_WDT genes_NNS
+          conserved_JJ in_IN divergent_JJ species_NNS can_MD fail_VB gene-level_JJ K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ tests_NNS in_IN comparisons_NNS among_IN closely_RB
+          related_VBN species_NNS like_IN 
+          D_NNP ._. erecta_NN ._. Of_IN the_DT four_CD genes_NNS
+          identified_VBN only_RB in_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. erecta_NN and_CC not_RB in_IN more_RBR distantly_RB
+          related_VBN species_NNS ,_, two_CD pass_VB 
+          CG_NNP 12133_CD and_CC 
+          CG_NNP 13029_CD )_) and_CC two_CD fail_VB (_( 
+          CG_NNP 12378_CD and_CC 
+          CG_NNP 14294_CD )_) the_DT gene-level_JJ K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ test_NN ._. We_PRP note_VBP that_IN of_IN these_DT four_CD
+          genes_NNS ,_, the_DT two_CD genes_NNS that_WDT pass_VBP (_( 
+          CG_NNP 12133_CD and_CC 
+          CG_NNP 13029_CD )_) have_VBP multiple_JJ exons_NNS ,_,
+          whereas_IN the_DT two_CD genes_NNS that_WDT fail_VBP (_( 
+          CG_NNP 12378_CD and_CC 
+          CG_NNP 14294_CD )_) have_VBP only_RB a_DT single_JJ exon_NN ._.
+          This_DT result_NN indicates_VBZ that_IN at_IN least_JJS some_DT of_IN the_DT genes_NNS
+          found_VBD only_RB in_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. erecta_NN are_VBP likely_JJ to_TO be_VB real_JJ
+          genes_NNS under_IN functional_JJ constraint_NN ._.
+          Though_IN the_DT majority_NN of_IN pairwise_NN exon_NN level_NN comparisons_NNS
+          have_VBP K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ ratios_NNS less_JJR than_IN one_CD (_( Figure_NN 3_LS )_) ,_, a_DT
+          much_RB lower_JJR proportion_NN of_IN pairwise_NN comparisons_NNS at_IN the_DT exon_NN
+          level_NN pass_VBP the_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ test_NN ._. In_IN total_JJ ,_, 71_CD ._. 9_CD %_NN (_( 356_CD /_NN 495_CD )_) of_IN
+          pairwise_NN comparisons_NNS at_IN the_DT exon_NN level_NN pass_VBP the_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ test_NN :_: 54_CD ._. 0_CD %_NN (_( 80_CD /_NN 148_CD )_) for_IN 
+          D_NNP ._. erecta_NN ;_: 78_CD ._. 9_CD %_NN (_( 105_CD /_NN 133_CD )_) for_IN 
+          D_NNP ._. pseudoobscura_NN ;_: 81_CD ._. 1_LS %_NN (_( 90_CD /_NN 111_CD )_)
+          for_IN 
+          D_NNP ._. willistoni_NN ;_: and_CC 79_CD ._. 6_CD %_NN (_( 82_CD /_NN 103_CD )_)
+          for_IN 
+          D_NNP ._. littoralis_NNS ._. Coding_NNP exons_NNS from_IN
+          known_VBN and_CC predicted_VBN genes_NNS pass_VBP the_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ test_NN at_IN similar_JJ rates_NNS :_: overall_JJ ,_,
+          (_( 72_CD ._. 2_LS %_NN known_VBN versus_CC 71_CD ._. 1_LS %_NN predicted_VBD )_) ,_, 
+          D_NNP ._. erecta_NN (_( 56_CD ._. 6_CD %_NN known_VBN versus_CC 50_CD ._. 0_CD %_NN
+          predicted_VBD )_) ,_, 
+          D_NNP ._. pseudoobscura_NN (_( 80_CD ._. 4_LS %_NN known_VBN
+          versus_CC 75_CD ._. 6_CD %_NN predicted_VBD )_) ,_, 
+          D_NNP ._. willistoni_NN (_( 81_CD ._. 5_LS %_NN known_VBN versus_CC
+          82_CD ._. 1_LS %_NN predicted_VBD )_) ,_, 
+          D_NNP ._. littoralis_NNS (_( 78_CD ._. 0_CD %_NN known_VBN versus_CC
+          80_CD ._. 6_CD %_NN predicted_VBD )_) ._. The_DT majority_NN of_IN exons_NNS that_WDT fail_VBP the_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ test_NN still_RB have_VBP K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ ratios_NNS less_JJR than_IN 1_CD ;_: only_RB six_CD
+          non-significant_JJ pairwise_NN exon_NN comparisons_NNS (_( one_CD in_IN 
+          D_NNP ._. erecta_NN ,_, one_CD in_IN 
+          D_NNP ._. pseudoobscura_NN ,_, two_CD in_IN 
+          D_NNP ._. willistoni_NN ,_, and_CC two_CD in_IN 
+          D_NNP ._. littoralis_NNS )_) have_VBP K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ ratios_NNS greater_JJR than_IN 1_CD (_( Figure_NN 3_LS )_) ._. As_IN
+          with_IN gene-level_JJ comparisons_NNS ,_, the_DT most_RBS closely_RB related_VBN
+          species_NNS ,_, 
+          D_NNP ._. erecta_NN ,_, fails_VBZ the_DT highest_JJS
+          proportion_NN of_IN exon-level_JJ K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ tests_NNS ._. In_IN contrast_NN to_TO gene-level_JJ
+          comparisons_NNS ,_, there_EX is_VBZ no_DT tendency_NN for_IN exons_NNS from_IN
+          predicted_VBD genes_NNS to_TO fail_VB K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ tests_NNS relative_JJ to_TO exons_NNS from_IN known_VBN
+          genes_NNS ._.
+          Pairwise_NNP comparisons_NNS that_WDT do_VBP not_RB pass_VB the_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ test_NN could_MD result_VB from_IN misannotated_JJ
+          exons_NNS or_CC an_DT insufficient_JJ amount_NN of_IN divergence_NN to_TO resolve_VB
+          differential_NN rates_NNS of_IN amino_JJ acid_NN and_CC silent_JJ site_NN
+          evolution_NN ._. Failure_NN to_TO pass_VB exon-level_JJ K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ tests_NNS because_IN of_IN insufficient_JJ
+          divergence_NN is_VBZ a_DT function_NN of_IN divergence_NN time_NN and_CC exon_NN
+          length_NN [_NN 20_CD ]_NN ._. Our_PRP$ results_NNS suggest_VBP that_IN both_DT factors_NNS
+          contribute_VBP to_TO non-significant_JJ exon-level_JJ K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ tests_NNS between_IN species_NNS in_IN the_DT genus_JJ 
+          Drosophila_NNP ._. The_DT fact_NN that_IN the_DT most_RBS
+          closely_RB related_VBN species_NNS ,_, 
+          D_NNP ._. erecta_NN ,_, fails_VBZ the_DT highest_JJS
+          proportion_NN of_IN gene-and_JJ exon-level_JJ K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ tests_NNS indicates_VBZ that_IN insufficient_JJ
+          divergence_NN time_NN contributes_VBZ to_TO non-significant_JJ
+          comparisons_NNS ._. Exon_NNP length_NN is_VBZ also_RB a_DT factor_NN ,_, as_IN there_EX is_VBZ a_DT
+          tendency_NN for_IN shorter_JJR exons_NNS to_TO fail_VB K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ tests_NNS in_IN our_PRP$ data_NNS ._. For_IN example_NN ,_, the_DT
+          average_JJ length_NN of_IN all_DT exons_NNS failing_VBG the_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ test_NN in_IN comparisons_NNS between_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. pseudoobscura_NN is_VBZ 22_CD ._. 1_LS codons_NNS ,_,
+          and_CC the_DT average_JJ length_NN of_IN all_DT exons_NNS passing_VBG the_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ test_NN is_VBZ 152_CD ._. 1_LS codons_NNS ._. Similar_JJ
+          results_NNS are_VBP obtained_VBN for_IN pairwise_NN comparisons_NNS involving_VBG 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. erecta_NN ,_, D_NNP ._. willistoni_NN or_CC 
+          D_NNP ._. littoralis_NNS ,_, and_CC for_IN both_DT known_VBN
+          and_CC predicted_VBN genes_NNS (_( data_NNS not_RB shown_VBN )_) ._.
+          To_TO determine_VB if_IN insufficient_JJ divergence_NN time_NN is_VBZ the_DT
+          major_JJ cause_NN of_IN non-significant_JJ exon-level_JJ K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ tests_NNS ,_, we_PRP performed_VBD multi-species_JJ
+          exon-level_JJ K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ tests_NNS that_WDT capitalize_VB on_IN a_DT greater_JJR
+          total_JJ amount_NN of_IN divergence_NN for_IN a_DT given_VBN exon_NN [_NN 20_CD ]_NN ._. The_DT
+          question_NN addressed_VBN by_IN this_DT analysis_NN is_VBZ :_: does_VBZ the_DT addition_NN
+          of_IN a_DT third_JJ species_NNS to_TO 
+          D_NNP ._. melanogaster-_NN D_NNP ._.
+          pseudoobscura_NN pairwise_NN comparisons_NNS increase_VBP the_DT
+          proportion_NN of_IN exons_NNS that_WDT pass_VBP exon-level_JJ K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ tests_NNS ?_. For_IN this_DT analysis_NN ,_, we_PRP
+          analyzed_VBD exons_NNS that_WDT failed_JJ pairwise_NN tests_NNS between_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. pseudoobscura_NN using_VBG triplets_NNS
+          involving_VBG 
+          D_NNP ._. melanogaster_NN ,_, D_NNP ._.
+          pseudoobscura_NN and_CC one_CD other_JJ non-melanogaster_JJ species_NNS ._.
+          Using_VBG the_DT same_JJ cutoffs_NNS for_IN the_DT pairwise_NN exon-level_JJ
+          analyses_NNS and_CC a_DT guide_NN tree_NN based_VBN on_IN Figure_NN 1_CD ,_, we_PRP tested_VBD
+          16_CD ,_, 14_CD and_CC 13_CD exons_NNS which_WDT did_VBD not_RB show_VB evidence_NN of_IN
+          functional_JJ constraint_NN between_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. pseudoobscura_NN ,_, for_IN which_WDT we_PRP
+          have_VBP sequence_NN data_NNS available_JJ in_IN 
+          D_NNP ._. erecta_NN ,_, D_NNP ._. willistoni_NN and_CC 
+          D_NNP ._. littoralis_NNS ,_, respectively_RB ._. Only_RB
+          2_CD of_IN the_DT 16_CD (_( 12_CD ._. 5_LS %_NN )_) non-significant_JJ exon-level_JJ 
+          D_NNP ._. melanogaster-_NN D_NNP ._.
+          pseudoobscura_NN comparisons_NNS pass_VBP the_DT K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ test_NN when_WRB 
+          D_NNP ._. erecta_NN is_VBZ included_VBN as_IN a_DT third_JJ
+          species_NNS ,_, whereas_IN 6_CD of_IN 14_CD (_( 42_CD ._. 8_CD %_NN )_) and_CC 6_CD of_IN 13_CD (_( 46_CD ._. 1_LS %_NN )_) pass_VB
+          when_WRB 
+          D_NNP ._. willistoni_NN and_CC 
+          D_NNP ._. littoralis_NNS are_VBP included_VBN as_IN a_DT
+          third_JJ species_NNS ,_, respectively_RB ._. These_DT results_NNS demonstrate_VBP
+          that_IN multiple_JJ comparisons_NNS among_IN divergent_JJ species_NNS can_MD
+          reveal_VB functional_JJ constraint_NN acting_VBG on_IN coding_VBG exons_NNS that_WDT
+          cannot_NN otherwise_RB be_VB detected_VBN in_IN pairwise_NN comparisons_NNS ._.
+          Finally_RB ,_, as_IN a_DT preliminary_JJ assessment_NN of_IN the_DT relative_JJ
+          utility_NN of_IN 
+          A_DT ._. gambiae_NN genome_NN sequences_NNS for_IN
+          comparative_JJ gene_NN prediction_NN in_IN 
+          Drosophila_NNP ,_, we_PRP attempted_VBD to_TO
+          identify_VB homologs_NNS in_IN 
+          A_DT ._. gambiae_NN of_IN the_DT 81_CD genes_NNS for_IN
+          which_WDT we_PRP have_VBP comparative_JJ sequence_NN data_NNS in_IN 
+          Drosophila_NNP ._. For_IN 21_CD of_IN the_DT 81_CD genes_NNS
+          in_IN our_PRP$ study_NN (_( 25_CD ._. 9_CD %_NN )_) we_PRP were_VBD not_RB able_JJ to_TO obtain_VB a_DT clear_JJ
+          homolog_NN (_( defined_VBN as_IN a_DT high-scoring_JJ pair_NN (_( HSP_NNP )_) with_IN an_DT
+          expected_VBN (_( E_NNP )_) value_NN less_JJR than_IN 10_CD -_: 20_CD and_CC greater_JJR than_IN or_CC
+          equal_JJ to_TO 30_CD %_NN identity_NN over_IN 100_CD amino_JJ acids_NNS using_VBG default_NN
+          parameters_NNS of_IN TBLASTN_NNP )_) in_IN the_DT 
+          A_DT ._. gambiae_NN mapped_VBN scaffold_NN
+          sequences_NNS ;_: 11_CD of_IN these_DT 21_CD genes_NNS did_VBD not_RB yield_VB any_DT HSPs_NNP at_IN
+          all_DT ._. These_DT results_NNS are_VBP compatible_JJ with_IN a_DT recent_JJ
+          whole-genome_JJ analysis_NN showing_VBG that_DT 18_CD ._. 6_CD %_NN of_IN 
+          D_NNP ._. melanogaster_NN genes_NNS have_VBP no_DT clear_JJ
+          homolog_NN in_IN 
+          A_DT ._. gambiae_NN [_NN 23_CD ]_NN ._. No_DT clear_JJ homolog_NN
+          could_MD be_VB identified_VBN in_IN the_DT 
+          A_DT ._. gambiae_NN genome_NN sequences_NNS for_IN
+          three_CD of_IN 30_CD (_( 10_CD ._. 0_CD %_NN )_) known_VBN genes_NNS in_IN our_PRP$ dataset_NN ,_, whereas_IN a_DT
+          greater_JJR than_IN three_CD times_NNS higher_JJR proportion_NN of_IN predicted_VBD
+          genes_NNS ,_, 18_CD of_IN 51_CD (_( 35_CD ._. 3_LS %_NN )_) ,_, had_VBD no_DT clear_JJ homolog_NN in_IN 
+          A_DT ._. gambiae_NN ._. Five_CD 
+          D_NNP ._. melanogaster_NN genes_NNS -_: the_DT four_CD
+          members_NNS of_IN the_DT 
+          Rhodopsin_NNP gene_NN family_NN and_CC 
+          CG_NNP 5245_CD -_: have_VBP multiple_JJ HSPs_NNP in_IN the_DT 
+          A_DT ._. gambiae_NN genome_NN sequences_NNS ._. We_PRP
+          were_VBD able_JJ to_TO resolve_VB orthology_NN for_IN 
+          Rh_NNP 4_CD only_RB ,_, as_IN the_DT 
+          sina_NN gene_NN in_IN 
+          A_DT ._. gambiae_NN is_VBZ contained_VBN within_IN the_DT 
+          Rh_NNP 4_CD gene_NN as_IN in_IN 
+          D_NNP ._. melanogaster_NN and_CC other_JJ species_NNS
+          in_IN the_DT subgenus_JJ 
+          Sophophora_NNP ._.
+        
+        
+          Rearrangement_NNP and_CC transposition_NN of_IN genomic_JJ
+          sequences_NNS
+          Using_VBG the_DT gene_NN predictions_NNS discussed_VBN above_IN as_IN
+          orthologous_JJ markers_NNS ,_, we_PRP addressed_VBD the_DT question_NN of_IN whether_IN
+          the_DT microsyntenic_JJ relationships_NNS in_IN the_DT 
+          D_NNP ._. melanogaster_NN genomic_JJ sequence_NN
+          surveyed_VBN are_VBP conserved_JJ in_IN non-melanogaster_JJ species_NNS ._. In_IN
+          general_JJ ,_, our_PRP$ data_NNS indicate_VBP that_IN the_DT microsyntenic_JJ order_NN
+          of_IN coding_VBG and_CC non-coding_JJ sequences_NNS is_VBZ highly_RB conserved_JJ in_IN
+          the_DT genus_JJ 
+          Drosophila_NNP at_IN the_DT scale_NN of_IN
+          individual_JJ fosmids_NNS (_( approximately_RB 40_CD kb_NN )_) ._. Our_PRP$ data_NNS
+          provide_VBP evidence_NN for_IN only_RB six_CD genomic_JJ rearrangements_NNS in_IN
+          these_DT sequences_NNS occurring_VBG in_IN the_DT phylogeny_NN of_IN these_DT five_CD
+          species_NNS ,_, one_CD each_DT in_IN the_DT lineages_NNS leading_VBG to_TO the_DT 
+          D_NNP ._. littoralis_NNS ftz_NN ,_, D_NNP ._. pseudoobscura_NN
+          Rh_NNP 1_CD ,_, D_NNP ._. willistoni_NN eve_NN ,_, Rh_NNP 1_CD ,_, and_CC 
+          Rh_NNP 3_CD regions_NNS ,_, as_RB well_RB as_IN in_IN the_DT
+          ancestor_NN of_IN the_DT 
+          D_NNP ._. melanogaster_NN /_NN D_NNP ._. erecta_NN
+          eve_NN region_NN (_( see_VB Figure_NN 1_LS )_) ._. All_DT of_IN these_DT unique_JJ events_NNS
+          occurred_VBD in_IN non-coding_JJ intergenic_JJ regions_NNS and_CC none_NN of_IN the_DT
+          rearrangement_NN breakpoints_NNS is_VBZ associated_VBN with_IN detectable_JJ
+          transposable_JJ element_NN sequences_NNS (_( see_VB also_RB [_NN 24_CD ]_NN )_) ._. Although_IN
+          it_PRP is_VBZ difficult_JJ to_TO estimate_VB the_DT length_NN distribution_NN of_IN
+          microsyntenic_JJ regions_NNS in_IN 
+          Drosophila_NNP from_IN our_PRP$ data_NNS ,_, it_PRP is_VBZ
+          clear_JJ that_IN very_RB small_JJ microsyntenic_JJ regions_NNS can_MD be_VB
+          delimited_JJ in_IN the_DT 
+          Drosophila_NNP genome_NN through_IN multiple_JJ
+          species_NNS comparisons_NNS ._. For_IN example_NN ,_, the_DT two_CD independent_JJ
+          rearrangements_NNS in_IN the_DT vicinity_NN of_IN the_DT 
+          eve_NN locus_JJ reduce_VB this_DT microsyntenic_JJ
+          region_NN to_TO a_DT approximately_RB 20_CD -_: kb_NN interval_NN of_IN the_DT 
+          D_NNP ._. melanogaster_NN genome_NN containing_VBG
+          only_RB three_CD neighboring_VBG genes_NNS (_( 
+          Adam_NNP ,_, CG_NNP 12134_CD and_CC 
+          eve_NN )_) and_CC their_PRP$ flanking_VBG non-coding_JJ
+          sequences_NNS (_( Figure_NN 2_LS )_) ._.
+          We_PRP can_MD directly_RB confirm_VB the_DT nature_NN of_IN one_CD
+          rearrangement_NN (_( 
+          D_NNP ._. littoralis_NNS ftz_NN )_) as_IN a_DT
+          paracentric_JJ micro-inversion_JJ since_IN both_DT breakpoints_NNS are_VBP
+          contained_VBN within_IN a_DT single_JJ fosmid_NN clone_NN ._. In_IN this_DT case_NN ,_, a_DT
+          small_JJ (_( approximately_RB 14_CD kb_NN )_) region_NN containing_VBG the_DT 
+          ftz_NN coding_VBG sequence_NN and_CC flanking_VBG
+          non-coding_JJ DNA_NNP is_VBZ inverted_VBN between_IN the_DT 
+          Antp_NNP and_CC 
+          Scr_NNP genes_NNS relative_JJ to_TO 
+          D_NNP ._. melanogaster_NN ._. Maier_NNP 
+          et_CC al_NN ._. [_NN 25_CD ]_NN provide_VB hybrization_NN
+          data_NNS for_IN a_DT similar_JJ rearrangement_NN in_IN the_DT 
+          ftz_NN locus_JJ of_IN 
+          D_NNP ._. hydei_NN ,_, another_DT member_NN of_IN the_DT
+          subgenus_JJ 
+          Drosophila_NNP ._. It_PRP is_VBZ likely_JJ that_IN the_DT
+          other_JJ rearrangement_NN breakpoints_NNS we_PRP observe_VBP also_RB result_NN
+          from_IN paracentric_JJ inversions_NNS ,_, the_DT predominant_NN form_NN of_IN
+          genome_NN rearrangement_NN in_IN 
+          Drosophila_NNP [_NN 26_CD ]_NN ._. Consistent_NNP with_IN
+          this_DT is_VBZ the_DT fact_NN that_IN rearranged_JJ sequences_NNS can_MD be_VB
+          inferred_VBN to_TO come_VB from_IN the_DT same_JJ chromosome_NN arm_NN ._. At_IN least_JJS
+          two_CD other_JJ breakpoints_NNS (_( in_IN the_DT 
+          D_NNP ._. willistoni_NN Rh_NNP 1_CD and_CC 
+          Rh_NNP 3_CD regions_NNS )_) also_RB have_VBP probably_RB
+          arisen_VBN from_IN micro-inversions_JJ ,_, as_IN in_IN both_DT cases_NNS only_RB two_CD
+          genes_NNS are_VBP inferred_VBN to_TO have_VB switched_VBN order_NN locally_RB on_IN the_DT
+          chromosome_NN ._.
+          We_PRP also_RB identified_VBD eight_CD examples_NNS of_IN novel_NN genetic_JJ
+          elements_NNS in_IN non-melanogaster_JJ species_NNS ,_, seven_CD of_IN which_WDT
+          occur_VBP in_IN intergenic_JJ regions_NNS (_( Figure_NN 1_LS )_) ._. Four_CD of_IN these_DT
+          cases_NNS involve_VBP the_DT insertion_NN of_IN novel_NN transposable_JJ element_NN
+          sequences_NNS :_: full_JJ length_NN 
+          Bari-_NNP 1_CD -_: like_IN elements_NNS in_IN both_DT the_DT 
+          D_NNP ._. pseudoobscura_NN Rh_NNP 1_CD region_NN and_CC the_DT
+          
+          D_NNP ._. willistoni_NN Rh_NNP 3_CD regions_NNS ,_, a_DT
+          partial_JJ 
+          I_PRP -_: like_IN element_NN in_IN the_DT 
+          D_NNP ._. willistoni_NN Rh_NNP 4_CD region_NN ,_, and_CC a_DT
+          partial_JJ 
+          blastopia_NN -_: like_IN element_NN in_IN the_DT 
+          D_NNP ._. littoralis_NNS Rh_NNP 3_CD region_NN ._.
+          Identification_NNP of_IN 
+          Bari-_NNP 1_CD -_: like_IN transposon_NN sequences_NNS
+          in_IN 
+          D_NNP ._. pseudoobscura_NN and_CC 
+          D_NNP ._. willistoni_NN is_VBZ consistent_JJ with_IN
+          previous_JJ observations_NNS [_NN 27_CD ]_NN ;_: 
+          I_PRP -_: like_IN elements_NNS have_VBP been_VBN shown_VBN to_TO
+          exist_VB in_IN the_DT melanogaster_NN and_CC obscura_NN species_NNS [_NN 28_CD ]_NN ,_, but_CC
+          this_DT is_VBZ the_DT first_JJ report_NN of_IN 
+          I_PRP -_: like_IN elements_NNS in_IN the_DT willistoni_NN
+          group_NN ._. The_DT other_JJ four_CD cases_NNS arise_VBP from_IN gene_NN transposition_NN
+          including_VBG :_: a_DT homolog_NN of_IN the_DT 
+          D_NNP ._. melanogaster_NN X-_NNP chromosome_NN gene_NN 
+          CG_NNP 2222_CD in_IN the_DT 
+          D_NNP ._. willistoni_NN eve_NN region_NN ;_: a_DT homolog_NN
+          of_IN the_DT 
+          D_NNP ._. melanogaster_NN 3_CD R-_NNP chromosome_NN gene_NN 
+          CG_NNP 5245_CD in_IN the_DT 
+          D_NNP ._. pseudoobscura_NN Rh_NNP 1_CD region_NN ;_: a_DT
+          homolog_NN of_IN the_DT 
+          D_NNP ._. melanogaster_NN 3_CD R-_NNP chromosome_NN gene_NN 
+          CG_NNP 8319_CD in_IN the_DT 
+          D_NNP ._. willistoni_NN Rh_NNP 1_CD region_NN ,_, and_CC the_DT 
+          Rh_NNP 4_CD gene_NN in_IN 
+          D_NNP ._. littoralis_NNS (_( see_VB below_IN )_) ._. The_DT 
+          CG_NNP 5245_CD -_: like_IN gene_NN in_IN 
+          D_NNP ._. pseudoobscura_NN and_CC the_DT 
+          CG_NNP 8319_CD -_: like_IN gene_NN in_IN 
+          D_NNP ._. willistoni_NN both_DT are_VBP located_VBN in_IN
+          the_DT same_JJ intergenic_JJ region_NN between_IN the_DT 
+          Arc_NNP 42_CD and_CC 
+          PK_NNP 92_CD B_NNP genes_NNS ,_, but_CC result_NN from_IN
+          independent_JJ events_NNS since_IN they_PRP involve_VBP different_JJ ancestral_JJ
+          sequences_NNS and_CC occur_VB on_IN opposite_JJ strands_NNS in_IN this_DT
+          intergenic_JJ region_NN ._. This_DT result_NN suggests_VBZ the_DT possibility_NN
+          of_IN hotspots_NNS for_IN gene_NN transposition_NN in_IN the_DT 
+          Drosophila_NNP genome_NN ._.
+          At_IN least_JJS one_CD novel_NN gene_NN ,_, the_DT 
+          CG_NNP 2222_CD -_: like_IN gene_NN 
+          D_NNP ._. willistoni_NN ,_, is_VBZ likely_JJ to_TO have_VB
+          originated_VBN from_IN a_DT retrotransposition_NN event_NN as_IN this_DT gene_NN
+          lacks_VBZ introns_NNS while_IN its_PRP$ closest_JJS homolog_NN ,_, found_VBD on_IN a_DT
+          different_JJ chromosome_NN arm_NN in_IN the_DT 
+          D_NNP ._. melanogaster_NN genome_NN ,_, has_VBZ two_CD
+          introns_NNS ._. Another_DT striking_JJ example_NN of_IN retrotransposition_NN
+          involves_VBZ the_DT 
+          D_NNP ._. littoralis_NNS Rh_NNP 4_CD gene_NN and_CC
+          illustrates_VBZ the_DT fact_NN that_IN functionally_RB important_JJ genes_NNS
+          can_MD undergo_VB dramatic_JJ changes_NNS in_IN location_NN and_CC gene_NN
+          structure_NN during_IN genome_NN evolution_NN [_NN 29_CD ]_NN ._. This_DT gene_NN
+          maintains_VBZ its_PRP$ microsyntenic_JJ relationship_NN with_IN neighboring_VBG
+          genes_NNS in_IN the_DT 72_CD D_NNP 2_CD -_: 3_CD region_NN of_IN the_DT 
+          D_NNP ._. melanogaster_NN genome_NN in_IN
+          Sophophoran_NNP species_NNS ,_, but_CC has_VBZ retrotransposed_JJ into_IN the_DT
+          intron_NN of_IN another_DT gene_NN ,_, 
+          CG_NNP 10967_CD ,_, in_IN a_DT region_NN of_IN the_DT 
+          D_NNP ._. littoralis_NNS genome_NN that_IN
+          corresponds_NNS to_TO the_DT 69_CD E_NNP 1_CD -_: 2_CD region_NN of_IN the_DT 
+          D_NNP ._. melanogaster_NN genome_NN ._. As_IN a_DT
+          result_NN ,_, genes_NNS contained_VBD in_IN the_DT intron_NN of_IN the_DT Sophophoran_NNP 
+          Rh_NNP 4_CD (_( 
+          sina_NN ,_, 
+          CG_NNP 13030_CD and_CC 
+          CG_NNP 13029_CD )_) have_VBP been_VBN lost_VBN in_IN the_DT
+          process_NN ._. Cytological_NNP evidence_NN for_IN transposition_NN of_IN 
+          Rh_NNP 4_CD exists_VBZ for_IN the_DT closely_RB related_VBN
+          species_NNS 
+          D_NNP ._. virilis_NNS and_CC the_DT more_RBR distantly_RB
+          related_VBN species_NNS 
+          D_NNP ._. repleta_NN [_NN 29_CD ,_, 30_CD ]_NN ._.
+          In_IN contrast_NN to_TO the_DT stability_NN of_IN microsyntenic_JJ gene_NN
+          order_NN in_IN the_DT genus_JJ 
+          Drosophila_NNP ,_, we_PRP found_VBD that_IN the_DT
+          sample_NN of_IN genes_NNS studied_VBN here_RB are_VBP scattered_VBN widely_RB
+          throughout_IN the_DT 
+          Anopheles_NNP genome_NN ._. For_IN example_NN ,_, of_IN
+          the_DT 55_CD 
+          Drosophila_NNP genes_NNS that_WDT had_VBD a_DT single_JJ
+          clear_JJ homolog_NN in_IN 
+          Anopheles_NNP ,_, 27_CD are_VBP located_VBN on_IN 
+          D_NNP ._. melanogaster_NN chromosome_NN arm_NN 2_CD R_NN ._.
+          Of_IN these_DT 27_CD genes_NNS ,_, ten_CD ,_, five_CD ,_, six_CD and_CC six_CD are_VBP located_VBN on_IN 
+          A_DT ._. gambiae_NN chromosome_NN arms_NNS 2_CD L_NNP ,_, 2_CD R_NN ,_,
+          3_CD L_NNP and_CC 3_CD R_NN ._. These_DT results_NNS are_VBP consistent_JJ with_IN previous_JJ
+          reports_NNS comparing_VBG the_DT locations_NNS of_IN genes_NNS in_IN 
+          D_NNP ._. melanogaster_NN with_IN 
+          A_DT ._. gambiae_NN ,_, which_WDT indicate_VBP that_IN
+          extensive_JJ genome_NN rearrangement_NN has_VBZ occurred_VBN since_IN the_DT
+          divergence_NN of_IN these_DT two_CD lineages_NNS [_NN 23_CD ,_, 31_CD ,_, 32_CD ]_NN ._. Some_DT 
+          D_NNP ._. melanogaster_NN genes_NNS in_IN our_PRP$ sample_NN
+          do_VBP maintain_VB microsyntenic_JJ relationships_NNS in_IN 
+          A_DT ._. gambiae_NN ,_, such_JJ as_IN the_DT 
+          Rh_NNP 4_CD and_CC 
+          sina_NN genes_NNS ._. In_IN this_DT case_NN ,_,
+          conservation_NN of_IN microsynteny_NN is_VBZ most_RBS probably_RB maintained_VBN
+          because_IN of_IN the_DT nested_JJ relationship_NN of_IN these_DT genes_NNS ,_, and_CC
+          this_DT configuration_NN in_IN the_DT outgroup_NN 
+          Anopheles_NNP supports_VBZ the_DT scenario_NN
+          that_DT transposition_NN of_IN 
+          Rh_NNP 4_CD occurred_VBD at_IN some_DT point_NN in_IN the_DT
+          lineage_NN leading_VBG to_TO the_DT 
+          Drosophila_NNP subgenus_JJ (_( see_VB above_RB ,_, and_CC
+          [_NN 29_CD ,_, 30_CD ]_NN )_) ._.
+        
+        
+          Patterns_NNS of_IN coding_VBG sequence_NN evolution_NN
+          In_IN addition_NN to_TO providing_VBG a_DT useful_JJ resource_NN for_IN
+          studying_VBG comparative_JJ gene_NN prediction_NN and_CC genome_NN
+          rearrangements_NNS ,_, our_PRP$ data_NNS confirm_VBP and_CC extend_VB emerging_VBG
+          trends_NNS in_IN 
+          Drosophila_NNP coding_VBG sequence_NN
+          evolution_NN ._. Table_NNP 2_CD summarizes_NNS the_DT average_JJ rates_NNS of_IN
+          amino-acid_JJ and_CC silent_JJ site_NN substitution_NN for_IN all_DT ,_, known_VBN
+          and_CC predicted_VBN genes_NNS in_IN our_PRP$ dataset_NN ._. These_DT data_NNS show_VBP that_WDT
+          predicted_VBD genes_NNS tend_VBP to_TO have_VB a_DT higher_JJR rate_NN of_IN amino-acid_JJ
+          substitution_NN than_IN known_VBN genes_NNS in_IN the_DT genus_JJ 
+          Drosophila_NNP ._. This_DT trend_NN is_VBZ
+          significant_JJ for_IN the_DT three_CD most_RBS closely_RB related_VBN pairwise_NN
+          comparisons_NNS (_( 
+          D_NNP ._. melanogaster_NN versus_CC 
+          D_NNP ._. erecta_NN ,_, D_NNP ._. pseudoobscura_NN or_CC 
+          D_NNP ._. willistoni_NN )_) but_CC non-significant_JJ
+          in_IN the_DT comparison_NN involving_VBG the_DT most_RBS distantly_RB related_VBN
+          species_NNS (_( 
+          D_NNP ._. melanogaster_NN versus_CC 
+          D_NNP ._. littoralis_NNS )_) ._. No_DT significant_JJ
+          differences_NNS were_VBD detected_VBN in_IN the_DT rates_NNS of_IN silent_JJ site_NN
+          substitution_NN between_IN known_VBN and_CC predicted_VBN genes_NNS in_IN any_DT
+          pairwise_NN comparison_NN ,_, although_IN predicted_VBD genes_NNS in_IN 
+          D_NNP ._. pseudoobscura_NN ,_, D_NNP ._. willistoni_NN and_CC
+          
+          D_NNP ._. littoralis_NNS tend_VBP to_TO show_NN elevated_VBD
+          rates_NNS of_IN silent_JJ site_NN substitution_NN ._.
+          In_IN contrast_NN to_TO expectation_NN ,_, average_JJ rates_NNS of_IN
+          amino-acid_JJ substitution_NN are_VBP highest_JJS in_IN comparisons_NNS
+          between_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. willistoni_NN ,_, not_RB 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. littoralis_NNS (_( Table_NNP 2_CD ,_, Figure_NN 1_LS )_) ._.
+          The_DT overall_RB increased_VBN rate_NN of_IN amino-acid_JJ substitution_NN for_IN
+          genes_NNS in_IN the_DT 
+          D_NNP ._. willistoni_NN lineage_NN is_VBZ caused_VBN by_IN
+          an_DT increased_VBN rate_NN of_IN amino-acid_JJ substitution_NN in_IN predicted_VBD
+          genes_NNS ._. For_IN known_VBN genes_NNS ,_, average_JJ rates_NNS of_IN amino-acid_JJ
+          substitution_NN are_VBP consistent_JJ with_IN the_DT accepted_VBN
+          phylogenetic_JJ relationships_NNS of_IN these_DT species_NNS :_: 
+          D_NNP ._. erecta_NN is_VBZ most_RBS closely_RB related_VBN
+          to_TO 
+          D_NNP ._. melanogaster_NN ,_, followed_VBN by_IN 
+          D_NNP ._. pseudoobscura_NN ,_, D_NNP ._. willistoni_NN and_CC
+          
+          D_NNP ._. littoralis_NNS ,_, respectively_RB ._.
+          Average_JJ rates_NNS of_IN silent_JJ site_NN substitution_NN also_RB do_VBP not_RB
+          show_VB a_DT pattern_NN consistent_JJ with_IN the_DT accepted_VBN phylogeny_NN of_IN
+          these_DT species_NNS (_( Table_NNP 2_CD ,_, Figure_NN 1_LS )_) ._. This_DT is_VBZ a_DT consequence_NN
+          of_IN the_DT fact_NN that_IN ,_, for_IN comparisons_NNS between_IN 
+          D_NNP ._. melanogaster_NN and_CC either_CC 
+          D_NNP ._. pseudoobscura_NN ,_, D_NNP ._. willistoni_NN or_CC 
+          D_NNP ._. littoralis_NNS ,_, average_JJ rates_NNS of_IN
+          silent_JJ site_NN substitution_NN exceed_VBP an_DT expectation_NN of_IN one_CD
+          substitution_NN per_IN site_NN ,_, indicating_VBG that_IN silent_JJ sites_NNS are_VBP
+          '_POS saturated_VBN '_POS in_IN these_DT comparisons_NNS ._. Even_RB so_RB ,_, it_PRP is_VBZ apparent_JJ
+          that_IN there_EX may_MD be_VB an_DT increased_VBN rate_NN of_IN silent_JJ site_NN
+          substitution_NN as_RB well_RB in_IN the_DT 
+          D_NNP ._. willistoni_NN lineage_NN ._. It_PRP is_VBZ
+          unlikely_JJ that_IN these_DT results_NNS are_VBP simply_RB a_DT consequence_NN of_IN
+          an_DT incorrect_JJ phylogeny_NN ,_, since_IN the_DT phylogenetic_JJ
+          relationships_NNS of_IN these_DT species_NNS are_VBP well_RB established_VBN [_NN
+          7_CD ]_NN ._.
+          Our_PRP$ estimate_NN of_IN the_DT average_JJ rate_NN of_IN amino-acid_JJ
+          substitution_NN per_IN site_NN in_IN known_VBN genes_NNS between_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. pseudoobscura_NN (_( 0_CD ._. 071_CD )_) is_VBZ nearly_RB
+          the_DT same_JJ as_IN previous_JJ estimates_NNS (_( 0_CD ._. 076_CD )_) using_VBG a_DT different_JJ
+          sample_NN of_IN known_VBN genes_NNS and_CC estimation_NN procedure_NN [_NN 33_CD ]_NN ._. In_IN
+          addition_NN ,_, our_PRP$ estimate_NN of_IN the_DT average_JJ rate_NN of_IN amino-acid_JJ
+          substitution_NN for_IN predicted_VBD genes_NNS between_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. erecta_NN (_( 0_CD ._. 071_CD )_) is_VBZ similar_JJ to_TO
+          that_DT estimated_VBD using_VBG different_JJ methods_NNS for_IN a_DT sample_NN of_IN
+          rapidly_RB evolving_VBG genes_NNS between_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. yakuba_NN (_( 0_CD ._. 067_CD )_) [_NN 34_CD ]_NN ,_, a_DT species_NNS
+          approximately_RB as_IN divergent_JJ from_IN 
+          D_NNP ._. melanogaster_NN as_IN 
+          D_NNP ._. erecta_NN [_NN 35_CD ]_NN ._. Thus_RB the_DT
+          categorical_JJ and_CC lineage_NN effects_NNS we_PRP detect_VBP are_VBP unlikely_JJ to_TO
+          be_VB artifacts_NNS of_IN our_PRP$ data_NNS or_CC methods_NNS ._. The_DT cause_NN (_( s_VBZ )_) of_IN the_DT
+          increased_VBN rate_NN of_IN amino-acid_JJ substitution_NN in_IN predicted_VBD
+          genes_NNS in_IN the_DT 
+          D_NNP ._. willistoni_NN lineage_NN remain_VB to_TO be_VB
+          clarified_VBN ,_, but_CC are_VBP most_RBS probably_RB related_VBN to_TO increased_VBN
+          rates_NNS of_IN protein_NN evolution_NN detected_VBD previously_RB in_IN the_DT 
+          D_NNP ._. saltans_NNS lineage_NN [_NN 36_CD ]_NN ,_, which_WDT
+          have_VBP been_VBN explained_VBN by_IN a_DT shift_NN in_IN base_NN composition_NN in_IN the_DT
+          common_JJ ancestor_NN of_IN the_DT 
+          D_NNP ._. saltans_NNS and_CC 
+          D_NNP ._. willistoni_NN groups_NNS (_( see_VB below_RB ,_,
+          and_CC [_NN 37_CD ]_NN )_) ._.
+          In_IN 
+          D_NNP ._. melanogaster_NN ,_, it_PRP is_VBZ well_RB
+          established_VBN that_IN coding_VBG sequences_NNS have_VBP a_DT higher_JJR GC_NNP
+          content_NN ,_, relative_JJ to_TO genomic_JJ averages_NNS ,_, due_JJ to_TO the_DT
+          preferential_JJ use_NN of_IN codons_NNS ending_VBG in_IN C_NNP or_CC G_NNP [_NN 38_CD ,_, 39_CD ]_NN ._.
+          This_DT pattern_NN holds_VBZ in_IN the_DT closely_RB related_VBN species_NNS 
+          D_NNP ._. erecta_NN ,_, as_RB well_RB as_IN in_IN the_DT more_RBR
+          distantly_RB related_VBN species_NNS 
+          D_NNP ._. pseudoobscura_NN and_CC 
+          D_NNP ._. littoralis_NNS (_( Table_NNP 3_LS )_) ._. In_IN
+          contrast_NN ,_, our_PRP$ data_NNS show_VBP that_IN 
+          D_NNP ._. willistoni_NN coding_VBG sequences_NNS have_VBP
+          a_DT higher_JJR frequency_NN of_IN AT_NNP (_( 53_CD %_NN )_) base-pairs_JJ than_IN GC_NNP (_( 47_CD %_NN )_)
+          base-pairs_JJ ._. This_DT shift_NN in_IN base_NN usage_NN in_IN 
+          D_NNP ._. willistoni_NN coding_VBG sequences_NNS is_VBZ
+          apparent_JJ at_IN the_DT dinucelotide_NN level_NN as_IN well_RB ,_, predominantly_RB
+          affecting_VBG those_DT dinucleotides_NNS that_WDT exclusively_RB contain_VB AT_NNP
+          or_CC GC_NNP ._. Non-coding_NNP sequences_NNS of_IN all_DT non-melanogaster_JJ
+          species_NNS are_VBP AT-rich_NNP ,_, as_IN in_IN 
+          D_NNP ._. melanogaster_NN [_NN 40_CD ]_NN ;_: slight_JJ
+          shifts_NNS towards_IN higher_JJR AT_NNP frequency_NN are_VBP observed_VBN in_IN the_DT
+          non-coding_JJ sequences_NNS of_IN the_DT 
+          D_NNP ._. willistoni_NN lineage_NN (_( Table_NNP
+          3_LS )_) ._.
+          The_DT shift_NN in_IN base_NN usage_NN in_IN the_DT 
+          D_NNP ._. willistoni_NN lineage_NN is_VBZ also_RB
+          detected_VBN in_IN the_DT pattern_NN of_IN synonymous_JJ codon_NN usage_NN (_( see_VB
+          Supplementary_NNP Table_NNP 2_CD in_IN the_DT additional_JJ data_NN files_NNS )_) ._.
+          Previous_JJ analyses_NNS of_IN a_DT limited_JJ number_NN of_IN coding_VBG sequences_NNS
+          revealed_VBD a_DT shift_NN away_RB from_IN preferred_VBN C-_NNP ending_VBG codons_NNS used_VBN
+          in_IN the_DT 
+          D_NNP ._. melanogaster_NN lineage_NN ,_, towards_IN
+          T-_NNP ending_VBG codons_NNS in_IN the_DT 
+          D_NNP ._. willistoni_NN lineage_NN [_NN 7_CD ,_, 41_CD ]_NN ._. Our_PRP$
+          data_NNS indicate_VBP that_IN this_DT trend_NN holds_VBZ for_IN a_DT much_RB larger_JJR
+          sample_NN of_IN genes_NNS (_( see_VB Supplementary_NNP Table_NNP 2_CD in_IN additional_JJ
+          data_NNS files_NNS )_) ._. For_IN 10_CD of_IN the_DT 18_CD amino_JJ acids_NNS with_IN more_JJR than_IN
+          one_CD codon_NN (_( Arg_NNP ,_, Asn_NNP ,_, His_PRP$ ,_, Ile_NNP ,_, Leu_NNP ,_, Lys_NNP ,_, Phe_NNP ,_, Pro_FW ,_, Thr_NNP ,_,
+          Tyr_NNP )_) ,_, the_DT most_RBS frequently_RB used_VBN codon_NN in_IN 
+          D_NNP ._. willistoni_NN differs_VBZ from_IN that_DT in_IN 
+          D_NNP ._. melanogaster_NN ._. All_DT 10_CD of_IN these_DT
+          changes_NNS in_IN synonymous_JJ codon_NN usage_NN involve_VB 
+          D_NNP ._. willistoni_NN most_RBS frequently_RB using_VBG
+          an_DT A-_NNP or_CC T-_NNP ending_VBG (_( or_CC beginning_VBG ,_, for_IN example_NN ,_, Leu_NNP )_) codon_NN
+          with_IN 
+          D_NNP ._. melanogaster_NN using_VBG a_DT G-_NNP or_CC
+          C-_NNP ending_VBG (_( or_CC beginning_VBG )_) codon_NN ,_, supporting_VBG a_DT trend_NN
+          identified_VBN originally_RB using_VBG only_RB the_DT 
+          Adh_NNP coding_VBG sequence_NN [_NN 41_CD ]_NN ._. The_DT most_RBS
+          frequently_RB used_VBN codon_NN differs_VBZ between_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. erecta_NN ,_, D_NNP ._. pseudoobscura_NN and_CC 
+          D_NNP ._. littoralis_NNS for_IN only_RB two_CD (_( Asp_NNP ,_,
+          Ser_NNP )_) ,_, one_CD (_( Asn_NNP )_) and_CC four_CD (_( Asn_NNP ,_, Ile_NNP ,_, Pro_FW ,_, Thr_NNP )_) amino_JJ
+          acids_NNS ,_, respectively_RB ._.
+        
+        
+          Patterns_NNS of_IN non-coding_JJ sequence_NN evolution_NN
+          Our_PRP$ data_NNS also_RB provide_VBP an_DT opportunity_NN to_TO study_VB basic_JJ
+          features_NNS of_IN non-coding_JJ conservation_NN in_IN 
+          Drosophila_NNP ._. which_WDT remain_VBP largely_RB
+          unexplored_JJ ._. As_IN shown_VBN in_IN Figures_NNS 2_CD and_CC 4_CD ,_, a_DT substantial_JJ
+          proportion_NN of_IN non-coding_JJ sequences_NNS are_VBP conserved_JJ in_IN 
+          Drosophila_NNP ,_, especially_RB in_IN pairwise_NN
+          comparisons_NNS between_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. erecta_NN ._. Levels_NNP of_IN conservation_NN
+          appear_VBP to_TO plateau_NN in_IN more_JJR divergent_JJ comparisons_NNS ,_, with_IN a_DT
+          tendency_NN for_IN 
+          D_NNP ._. pseudoobscura_NN to_TO show_VB higher_JJR
+          levels_NNS of_IN non-coding_JJ conservation_NN relative_JJ to_TO 
+          D_NNP ._. willistoni_NN or_CC 
+          D_NNP ._. littoralis_NNS in_IN pairwise_NN
+          comparisons_NNS with_IN 
+          D_NNP ._. melanogaster_NN ._. Few_JJ ,_, if_IN any_DT ,_,
+          non-coding_JJ sequences_NNS are_VBP conserved_JJ between_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          A_DT ._. gambiae_NN (_( Figure_NN 4_CD ,_, see_VBP also_RB [_NN
+          23_CD ]_NN )_) ._. There_EX is_VBZ also_RB regional_JJ variation_NN in_IN levels_NNS of_IN
+          non-coding_JJ conservation_NN in_IN the_DT 
+          Drosophila_NNP genome_NN ,_, as_IN illustrated_VBN
+          by_IN contrasting_VBG conservation_NN between_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. erecta_NN ,_, for_IN example_NN ,_, in_IN the_DT 
+          eve_NN (_( Figure_NN 2_LS )_) and_CC 
+          ap_NN (_( Figure_NN 4_LS )_) regions_NNS ._.
+          To_TO estimate_VB levels_NNS of_IN sequence_NN conservation_NN in_IN
+          non-coding_JJ regions_NNS and_CC to_TO contrast_VB patterns_NNS of_IN coding_VBG
+          with_IN non-coding_JJ conservation_NN ,_, we_PRP aligned_VBN genomic_JJ
+          sequences_NNS using_VBG the_DT AVID_NNP alignment_NN tool_NN [_NN 42_CD ]_NN ._. AVID_NNP is_VBZ a_DT
+          global_JJ alignment_NN tool_NN that_WDT works_VBZ by_IN recursively_RB finding_VBG
+          co-linear_JJ '_POS anchors_NNS '_POS of_IN maximal_NN sequence_NN identity_NN ;_:
+          therefore_RB ,_, locally_RB inverted_JJ or_CC transposed_JJ sequences_NNS that_WDT
+          might_MD be_VB conserved_JJ will_MD not_RB be_VB included_VBN in_IN our_PRP$ analysis_NN ._.
+          Conserved_NNP non-coding_JJ sequences_NNS (_( CNCSs_NNP )_) ,_, defined_VBN as_IN
+          windows_NNS of_IN 10_CD bp_NN or_CC greater_JJR with_IN 90_CD %_NN or_CC greater_JJR
+          nucleotide_NN identity_NN ,_, were_VBD identified_VBN in_IN pairwise_NN
+          alignments_NNS using_VBG the_DT VISTA_NNP program_NN [_NN 43_CD ]_NN ._. These_DT
+          parameters_NNS were_VBD chosen_VBN to_TO identify_VB short_JJ ,_, highly_RB
+          conserved_JJ sequences_NNS found_VBD in_IN 
+          Drosophila_NNP non-coding_JJ regions_NNS [_NN
+          44_CD ]_NN ._. We_PRP used_VBD 
+          D_NNP ._. melanogaster_NN as_IN the_DT reference_NN
+          species_NNS in_IN pairwise_NN comparisons_NNS with_IN non-melanogaster_JJ
+          species_NNS ,_, and_CC Release_NNP 3_CD annotations_NNS [_NN 14_CD ]_NN exported_VBN from_IN
+          Gadfly_NNP in_IN VISTA_NNP format_NN to_TO classify_VB conserved_JJ segments_NNS as_IN
+          either_DT coding_VBG or_CC non-coding_JJ ._. Transcribed_NNP and_CC
+          nontranscribed_JJ non-coding_JJ sequences_NNS were_VBD analyzed_VBN
+          together_RB ,_, since_IN previous_JJ results_NNS showed_VBD similar_JJ patterns_NNS
+          of_IN conservation_NN for_IN intergenic_JJ and_CC intronic_JJ sequences_NNS in_IN 
+          Drosophila_NNP [_NN 44_CD ]_NN ._.
+          The_DT results_NNS of_IN this_DT analysis_NN are_VBP shown_VBN in_IN Table_NNP 4_CD ,_,
+          which_WDT contrasts_VBZ features_NNS of_IN conservation_NN in_IN both_DT coding_VBG
+          and_CC non-coding_JJ sequences_NNS by_IN species_NNS ._. For_IN all_DT species_NNS
+          analyzed_VBD ,_, coding_VBG regions_NNS have_VBP a_DT higher_JJR proportion_NN of_IN
+          sequences_NNS that_WDT meet_VBP our_PRP$ definition_NN of_IN conservation_NN
+          relative_JJ to_TO non-coding_JJ sequences_NNS ._. In_IN addition_NN ,_, the_DT median_JJ
+          segment_NN length_NN surpassing_VBG our_PRP$ criterion_NN for_IN conservation_NN
+          is_VBZ longer_RBR for_IN coding_VBG sequences_NNS relative_JJ to_TO non-coding_JJ
+          sequences_NNS for_IN all_DT species_NNS analyzed_VBD ._. These_DT results_NNS are_VBP
+          expected_VBN ,_, as_IN coding_VBG sequences_NNS are_VBP on_IN average_NN thought_NN to_TO
+          experience_VB more_RBR intense_JJ purifying_VBG selection_NN than_IN
+          non-coding_JJ sequences_NNS [_NN 21_CD ]_NN ._. In_IN contrast_NN ,_, the_DT average_JJ
+          percent_NN identity_NN of_IN conserved_JJ segments_NNS is_VBZ higher_JJR for_IN
+          non-coding_JJ sequences_NNS than_IN coding_VBG sequences_NNS ._. This_DT is_VBZ
+          probably_RB a_DT result_NN of_IN silent_JJ site_NN substitution_NN in_IN
+          otherwise_RB functionally_RB constrained_VBN coding_VBG sequences_NNS ._.
+          Analysis_NNP of_IN levels_NNS of_IN conservation_NN by_IN species_NNS shows_VBZ
+          that_IN the_DT increased_VBN rate_NN of_IN amino-acid_JJ sequence_NN evolution_NN
+          in_IN the_DT 
+          D_NNP ._. willistoni_NN lineage_NN detected_VBD
+          above_IN may_MD reflect_VB a_DT more_RBR widespread_JJ phenomenon_NN in_IN the_DT
+          genome_NN of_IN this_DT species_NNS ._. As_IN shown_VBN in_IN Table_NNP 4_CD ,_, 
+          D_NNP ._. willistoni_NN shows_VBZ unexpectedly_RB
+          low_JJ levels_NNS of_IN both_DT non-coding_JJ and_CC coding_VBG conservation_NN ,_,
+          given_VBN the_DT accepted_VBN phylogeny_NN of_IN the_DT species_NNS ._. These_DT data_NNS
+          show_VBP that_IN the_DT increased_VBN rate_NN of_IN evolution_NN in_IN the_DT 
+          D_NNP ._. willistoni_NN lineage_NN is_VBZ not_RB
+          restricted_VBN to_TO coding_VBG sequences_NNS ,_, rendering_VBG
+          coding-sequence-based_JJ interpretations_NNS of_IN the_DT unusual_JJ
+          patterns_NNS of_IN molecular_JJ evolution_NN in_IN this_DT lineage_NN less_RBR
+          tenable_JJ (_( see_VB ,_, for_IN example_NN [_NN 7_CD ,_, 41_CD ]_NN )_) ._. Together_RB with_IN the_DT
+          changes_NNS in_IN base_NN composition_NN in_IN both_DT coding_VBG and_CC non-coding_JJ
+          sequences_NNS noted_VBD above_IN ,_, the_DT increased_VBN rate_NN of_IN evolution_NN in_IN
+          both_DT coding_VBG and_CC non-coding_JJ sequences_NNS detected_VBD in_IN the_DT 
+          D_NNP ._. willistoni_NN suggests_VBZ a_DT
+          genome-wide_JJ effect_NN ,_, possibly_RB resulting_VBG from_IN a_DT change_NN in_IN
+          mutation_NN pressure_NN or_CC a_DT change_NN in_IN population_NN size_NN at_IN some_DT
+          time_NN during_IN the_DT history_NN of_IN this_DT lineage_NN (_( see_VB also_RB [_NN
+          37_CD ]_NN )_) ._.
+          Despite_IN the_DT lineage_NN effect_NN in_IN levels_NNS of_IN conservation_NN
+          in_IN the_DT 
+          D_NNP ._. willistoni_NN genome_NN ,_, the_DT median_JJ
+          length_NN of_IN conserved_JJ coding_VBG or_CC non-coding_JJ segments_NNS
+          generally_RB decreases_VBZ with_IN increasing_VBG divergence_NN time_NN as_IN
+          expected_VBN (_( Table_NNP 4_LS )_) ._. However_RB ,_, the_DT average_JJ percent_NN identity_NN
+          of_IN conserved_JJ coding_VBG or_CC non-coding_JJ segments_NNS identified_VBN
+          does_VBZ not_RB decrease_VB with_IN increasing_VBG divergence_NN time_NN ._.
+          Finally_RB ,_, the_DT ratio_NN of_IN conserved_JJ sequences_NNS that_WDT are_VBP coding_VBG
+          relative_JJ to_TO non-coding_JJ increases_NNS with_IN increasing_VBG
+          divergence_NN time_NN ._. The_DT ratio_NN of_IN conserved_JJ sequences_NNS that_WDT
+          are_VBP coding_VBG relative_JJ to_TO non-coding_JJ is_VBZ 1_CD ._. 36_CD for_IN comparisons_NNS
+          with_IN 
+          D_NNP ._. erecta_NN ,_, but_CC increases_NNS to_TO 2_CD ._. 21_CD
+          for_IN comparisons_NNS involving_VBG 
+          D_NNP ._. pseudoobscura_NN and_CC approximately_RB
+          3_CD ._. 5_CD for_IN comparisons_NNS involving_VBG 
+          D_NNP ._. willistoni_NN or_CC 
+          D_NNP ._. littoralis_NNS ._.
+          Changes_NNS in_IN the_DT median_JJ CNCS_NNP length_NN reflect_VB changes_NNS in_IN
+          the_DT overall_JJ distribution_NN of_IN CNCS_NNP lengths_NNS in_IN pairwise_NN
+          comparisons_NNS between_IN 
+          D_NNP ._. melanogaster_NN and_CC either_CC 
+          D_NNP ._. erecta_NN ,_, D_NNP ._. pseudoobscura_NN ,_, D_NNP ._.
+          willistoni_NN ,_, or_CC 
+          D_NNP ._. littoralis_NNS (_( Figure_NN 5_LS )_) ._. These_DT
+          data_NNS quantitatively_RB describe_VBP the_DT pattern_NN of_IN non-coding_JJ
+          conservation_NN shown_VBN in_IN Figures_NNS 2_CD and_CC 4_CD :_: CNCS_NNP lengths_NNS become_VBP
+          shorter_JJR with_IN increasing_VBG divergence_NN but_CC plateau_NN to_TO
+          approximately_RB the_DT same_JJ length_NN in_IN the_DT most_RBS distant_JJ
+          comparisons_NNS ._. The_DT stability_NN of_IN this_DT distribution_NN at_IN more_JJR
+          extreme_JJ evolutionary_JJ distances_NNS is_VBZ apparently_RB insensitive_JJ
+          to_TO changes_NNS in_IN the_DT proportion_NN of_IN non-coding_JJ DNA_NNP that_WDT is_VBZ
+          conserved_JJ (_( compare_VB 
+          D_NNP ._. willistoni_NN and_CC 
+          D_NNP ._. littoralis_NNS )_) ._. Shown_NNP for_IN
+          comparison_NN is_VBZ the_DT distribution_NN of_IN CNCS_NNP lengths_NNS between_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. virilis_NNS from_IN [_NN 44_CD ]_NN ,_, as_RB well_RB as_IN a_DT
+          reanalysis_NNS of_IN this_DT data_NNS using_VBG the_DT current_JJ methods_NNS ._.
+          Differences_NNS between_IN the_DT present_JJ and_CC previous_JJ results_NNS for_IN
+          the_DT 
+          D_NNP ._. virilis_NNS data_NNS show_VBP the_DT effect_NN of_IN
+          different_JJ methods_NNS for_IN detecting_VBG CNCSs_NNP ._. The_DT differences_NNS
+          observed_VBD in_IN the_DT distribution_NN of_IN CNCS_NNP lengths_NNS between_IN the_DT
+          closely_RB related_VBN species_NNS 
+          D_NNP ._. virilis_NNS and_CC 
+          D_NNP ._. littoralis_NNS using_VBG the_DT AVID-VISTA_NNP
+          method_NN reflect_VBP the_DT fact_NN that_IN the_DT 
+          D_NNP ._. virilis_NNS data_NNS were_VBD obtained_VBN from_IN
+          non-coding_JJ regions_NNS with_IN known_VBN or_CC suspected_VBN 
+          cis_NNS -_: regulatory_JJ function_NN ,_, whereas_IN
+          the_DT data_NNS here_RB represent_VBP a_DT more_RBR random_JJ sampling_VBG of_IN
+          non-coding_JJ regions_NNS in_IN the_DT 
+          Drosophila_NNP genome_NN ._.
+          Conservation_NNP of_IN non-coding_JJ sequences_NNS is_VBZ typically_RB
+          interpreted_VBN as_IN evidence_NN of_IN functional_JJ constraint_NN and_CC this_DT
+          assumption_NN underlies_NNS most_RBS phylogenetic_JJ footprinting_VBG
+          methods_NNS ._. This_DT assumption_NN was_VBD questioned_VBN by_IN Clark_NNP [_NN 45_CD ]_NN ,_,
+          who_WP proposed_VBD an_DT alternative_JJ hypothesis_NNS for_IN non-coding_JJ
+          conservation_NN based_VBN on_IN heterogeneity_NN in_IN mutation_NN rates_NNS
+          (_( that_WDT is_VBZ ,_, mutational_NN cold_JJ spots_NNS )_) ._. To_TO resolve_VB these_DT
+          alternatives_NNS we_PRP studied_VBD the_DT spatial_NN distribution_NN and_CC
+          conservation_NN of_IN spacing_VBG between_IN CNCSs_NNP in_IN the_DT 
+          Drosophila_NNP genome_NN ._. Under_IN a_DT simple_JJ
+          mutational_NN cold-spot_JJ hypothesis_NNS ,_, CNCSs_NNP should_MD occur_VB
+          randomly_RB in_IN non-coding_JJ DNA_NNP and_CC the_DT lengths_NNS of_IN '_POS spacer_NN
+          intervals_NNS '_POS between_IN CNCSs_NNP should_MD be_VB exponentially_RB
+          distributed_VBN [_NN 46_CD ,_, 47_CD ]_NN ._. In_IN addition_NN ,_, there_EX should_MD be_VB no_DT
+          tendency_NN for_IN the_DT spacing_VBG between_IN mutational_NN cold_JJ spots_NNS to_TO
+          remain_VB conserved_JJ between_IN divergent_JJ 
+          Drosophila_NNP species_NNS ,_, given_VBN the_DT rapid_JJ
+          rate_NN of_IN DNA_NNP loss_NN in_IN unconstrained_JJ sequences_NNS in_IN the_DT 
+          Drosophila_NNP genome_NN [_NN 48_CD ,_, 49_CD ]_NN ._.
+          As_IN shown_VBN in_IN Figure_NN 6_CD for_IN non-coding_JJ comparisons_NNS between_IN
+          
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. pseudoobscura_NN ,_, the_DT frequency_NN
+          spacer_NN interval_NN lengths_NNS between_IN CNCSs_NNP in_IN the_DT 
+          D_NNP ._. melanogaster_NN genome_NN differ_VB
+          significantly_RB from_IN the_DT exponential_NN distribution_NN ._. The_DT
+          deviation_NN from_IN expected_VBN results_NNS from_IN an_DT excess_NN of_IN short_JJ
+          and_CC long_JJ spacer_NN intervals_NNS ,_, indicating_VBG that_IN CNCSs_NNP are_VBP
+          clustered_VBN in_IN the_DT 
+          Drosophila_NNP genome_NN ._. Non-random_NNP
+          spacing_VBG of_IN CNCSs_NNP is_VBZ also_RB observed_VBN in_IN other_JJ pairwise_NN
+          species_NNS comparisons_NNS in_IN the_DT genus_JJ 
+          Drosophila_NNP (_( [_NN 46_CD ]_NN and_CC data_NNS not_RB
+          shown_VBN )_) ._. In_IN addition_NN ,_, the_DT lengths_NNS of_IN homologous_RB spacer_NN
+          intervals_NNS are_VBP highly_RB correlated_JJ across_IN species_NNS (_( Figure_NN
+          7_CD )_) ._. This_DT correlation_NN is_VBZ unlikely_JJ to_TO be_VB an_DT artifact_NN of_IN
+          alignment_NN ,_, as_IN the_DT AVID_NNP method_NN first_RB aligns_NNS regions_NNS of_IN
+          local_JJ similarity_NN before_IN generating_VBG a_DT global_JJ alignment_NN ._.
+          Moreover_RB ,_, similar_JJ results_NNS have_VBP been_VBN obtained_VBN using_VBG
+          non-global_JJ alignment_NN methods_NNS [_NN 46_CD ]_NN ._. These_DT results_NNS suggest_VBP
+          that_DT spacer_NN interval_NN sequences_NNS between_IN CNCSs_NNP (_( and_CC
+          therefore_RB CNCSs_NNP themselves_PRP )_) are_VBP functionally_RB constrained_VBN ,_,
+          and_CC provide_VB evidence_NN against_IN the_DT hypothesis_NNS that_IN CNCSs_NNP
+          are_VBP simply_RB mutational_NN cold_JJ spots_NNS ._.
+          Clusters_NNP of_IN CNCSs_NNP are_VBP readily_RB apparent_JJ in_IN VISTA_NNP plots_NNS
+          of_IN complex_JJ gene_NN regions_NNS with_IN known_VBN 
+          cis_NNS -_: regulatory_JJ function_NN (_( Figures_NNS
+          2_CD and_CC 4_LS )_) ._. In_IN addition_NN ,_, there_EX is_VBZ a_DT strong_JJ tendency_NN for_IN
+          known_VBN 
+          cis_NNS -_: regulatory_JJ elements_NNS to_TO overlap_VB
+          clusters_NNS of_IN CNCSs_NNP ._. For_IN example_NN ,_, discrete_JJ enhancers_NNS that_WDT
+          control_NN embryonic_JJ expression_NN of_IN 
+          eve_NN are_VBP contained_VBN within_IN discrete_JJ
+          CNCS_NNP clusters_NNS in_IN the_DT region_NN 5_CD '_POS to_TO 
+          eve_NN (_( Figure_NN 2_LS )_) ._. In_IN contrast_NN ,_,
+          discrete_JJ CNCSs_NNP clusters_NNS are_VBP not_RB observed_VBN in_IN the_DT region_NN 3_CD '_POS
+          to_TO 
+          eve_NN where_WRB enhancers_NNS overlap_VBP one_CD
+          another_DT [_NN 50_CD ,_, 51_CD ]_NN ._. The_DT correspondence_NN of_IN CNCS_NNP clusters_NNS
+          and_CC functional_JJ enhancers_NNS is_VBZ observed_VBN in_IN other_JJ regions_NNS of_IN
+          the_DT 
+          Drosophila_NNP genome_NN ,_, such_JJ as_IN the_DT
+          discrete_JJ muscle-specific_JJ enhancer_NN in_IN the_DT fourth_JJ intron_NN of_IN
+          
+          ap_NN (_( Figure_NN 4_LS )_) ._. The_DT inexact_NN
+          correspondence_NN between_IN enhancer_NN sequences_NNS and_CC CNCS_NNP
+          clusters_NNS is_VBZ perhaps_RB not_RB unexpected_JJ as_IN enhancers_NNS are_VBP
+          typically_RB defined_VBN as_IN the_DT minimal_JJ sequence_NN sufficient_JJ to_TO
+          recapitulate_NN native_JJ expression_NN in_IN a_DT reporter_NN gene_NN assay_NN ._.
+          Nevertheless_RB ,_, this_DT pattern_NN suggests_VBZ a_DT functional_JJ
+          relationship_NN between_IN 
+          cis_NNS -_: regulatory_JJ elements_NNS and_CC
+          discrete_JJ CNCS_NNP clusters_NNS ._.
+          To_TO test_VB the_DT hypothesis_NNS that_IN CNCS_NNP clusters_NNS can_MD predict_VB
+          the_DT location_NN of_IN 
+          cis_NNS -_: regulatory_JJ elements_NNS in_IN the_DT 
+          Drosophila_NNP genome_NN ,_, we_PRP carried_VBD out_IN 
+          P_NN -_: element-mediated_JJ reporter_NN gene_NN
+          analysis_NN of_IN genomic_JJ sequences_NNS corresponding_JJ to_TO a_DT CNCS_NNP
+          cluster_NN in_IN the_DT fourth_JJ intron_NN of_IN 
+          ap_NN ._. This_DT CNCS_NNP cluster_NN is_VBZ apparent_JJ
+          in_IN pairwise_NN comparisons_NNS between_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. pseudoobscura_NN as_RB well_RB as_IN between_IN
+          
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. virilis_NNS (_( Figure_NN 4_LS )_) ._. 
+          ap_NN is_VBZ a_DT LIM-homeobox_NNP transcription_NN
+          factor_NN expressed_VBD in_IN many_JJ tissues_NNS in_IN 
+          Drosophila_NNP ,_, including_VBG embryonic_JJ
+          expression_NN in_IN the_DT developing_VBG brain_NN [_NN 52_CD ,_, 53_CD ]_NN ._. As_IN shown_VBN in_IN
+          Figure_NN 8_CD ,_, the_DT 
+          D_NNP ._. melanogaster_NN genomic_JJ sequences_NNS
+          corresponding_JJ to_TO the_DT CNCS_NNP cluster_NN in_IN the_DT 
+          ap_NN intron_NN 4_CD drives_NNS reporter_NN gene_NN
+          expression_NN in_IN the_DT 
+          Drosophila_NNP embryo_NN in_IN a_DT specific_JJ
+          pattern_NN that_WDT recapitulates_NNS native_JJ 
+          ap_NN expression_NN in_IN the_DT developing_VBG
+          brain_NN ._. In_IN addition_NN ,_, when_WRB introduced_VBN into_IN the_DT genome_NN of_IN 
+          D_NNP ._. melanogaster_NN ,_, the_DT homologous_RB
+          fragment_NN from_IN the_DT 
+          D_NNP ._. virilis_NNS genome_NN also_RB drives_VBZ
+          reporter_NN gene_NN expression_NN in_IN the_DT same_JJ pattern_NN ,_, indicating_VBG
+          that_IN the_DT expression_NN pattern_NN resulting_VBG from_IN this_DT enhancer_NN
+          has_VBZ been_VBN conserved_JJ since_IN the_DT divergence_NN of_IN these_DT two_CD
+          species_NNS ._. Experiments_NNS to_TO test_VB the_DT function_NN of_IN CNCS_NNP
+          clusters_NNS 1_CD ,_, 2_CD ,_, and_CC 3_CD in_IN the_DT 
+          ap_NN region_NN are_VBP currently_RB
+          underway_NN ._.
+        
+      
+      
+        Discussion_NNP
+        
+          Prospects_NNS for_IN comparative_JJ gene_NN prediction_NN in_IN
+          Drosophila_NNP
+          Although_IN great_JJ progress_NN has_VBZ been_VBN made_VBN towards_IN
+          understanding_VBG the_DT protein-coding_JJ component_NN of_IN eukaryotic_JJ
+          genome_NN sequences_NNS [_NN 54_CD ,_, 55_CD ,_, 56_CD ,_, 57_CD ]_NN ,_, comprehensive_JJ genome_NN
+          annotation_NN is_VBZ far_RB from_IN complete_JJ in_IN any_DT metazoan_NN ._.
+          State-of-the-art_NNP statistical_JJ and_CC remote-homology_JJ
+          gene-prediction_JJ methods_NNS are_VBP successful_JJ at_IN identifying_VBG the_DT
+          location_NN of_IN exons_NNS in_IN unannotated_JJ genomic_JJ DNA_NNP ,_, but_CC are_VBP
+          often_RB quite_RB poor_JJ at_IN predicting_VBG the_DT details_NNS of_IN gene_NN
+          structure_NN ,_, necessitating_VBG human_JJ curation_NN [_NN 14_CD ]_NN ._. One_CD of_IN the_DT
+          most_RBS useful_JJ sources_NNS of_IN information_NN for_IN accurately_RB
+          predicting_VBG complex_JJ gene_NN structures_NNS is_VBZ EST_NNP /_NN cDNA_NN data_NNS [_NN
+          58_CD ]_NN ._. Predicting_VBG the_DT structure_NN of_IN genes_NNS for_IN which_WDT no_DT
+          EST_NNP /_NN cDNA_NN data_NNS exists_VBZ will_MD require_VB alternative_JJ approaches_NNS ,_,
+          such_JJ as_IN comparative_JJ gene_NN modeling_NN among_IN divergent_JJ species_NNS
+          with_IN conserved_JJ proteomes_NNS in_IN the_DT same_JJ group_NN of_IN
+          organisms_NNS ._.
+          The_DT results_NNS of_IN our_PRP$ K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ analyses_NNS presented_VBN here_RB give_VB
+          preliminary_JJ insight_NN into_IN the_DT prospects_NNS of_IN comparative_JJ
+          gene_NN modeling_NN using_VBG large-scale_JJ sequence_NN data_NNS in_IN the_DT
+          genus_JJ 
+          Drosophila_NNP ._. From_IN our_PRP$ findings_NNS ,_, we_PRP
+          expect_VBP that_IN structural_JJ details_NNS of_IN most_JJS Release_NNP 3_CD coding_VBG
+          sequences_NNS can_MD be_VB verified_VBN and_CC improved_VBN using_VBG pairwise_NN
+          sequence_NN data_NNS between_IN divergent_JJ species_NNS like_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. pseudoobscura_NN ._. Our_PRP$ results_NNS also_RB
+          indicate_VBP that_IN ,_, although_IN it_PRP may_MD not_RB be_VB necessary_JJ for_IN many_JJ
+          genes_NNS in_IN the_DT 
+          D_NNP ._. melanogaster_NN genome_NN ,_, 
+          de_IN novo_NN comparative_JJ gene_NN prediction_NN
+          between_IN these_DT species_NNS will_MD find_VB the_DT vast_JJ majority_NN of_IN
+          as-yet_RB unidentified_JJ genes_NNS lacking_VBG EST_NNP /_NN cDNA_NN data_NNS ._. It_PRP is_VBZ
+          important_JJ to_TO note_VB that_IN we_PRP do_VBP not_RB expect_VB to_TO detect_VB all_DT
+          coding_VBG exons_NNS (_( especially_RB short_JJ exons_NNS [_NN 20_CD ]_NN )_) in_IN pairwise_NN
+          comparisons_NNS ,_, highlighting_VBG the_DT added_VBN value_NN of_IN multiple_JJ
+          species_NNS data_NNS for_IN comparative_JJ exon_NN prediction_NN ._. In_IN
+          addition_NN ,_, important_JJ details_NNS of_IN gene_NN models_NNS will_MD prove_VB
+          difficult_JJ to_TO predict_VB using_VBG only_RB comparative_JJ data_NNS ,_, as_IN
+          amino-acid_JJ divergence_NN (_( especially_RB insertions_NNS or_CC
+          deletions_NNS )_) can_MD obscure_VB intron-exon_JJ boundaries_NNS and_CC other_JJ
+          details_NNS of_IN gene_NN structure_NN ._. Moreover_RB ,_, there_EX is_VBZ inherent_JJ
+          uncertainty_NN in_IN the_NNP '_POS correct_JJ '_POS gene_NN structure_NN developed_VBN
+          from_IN comparative_JJ data_NNS alone_RB ,_, since_IN two_CD divergent_JJ
+          sequences_NNS are_VBP simultaneously_RB being_VBG modeled_VBN ._. Finally_RB ,_, the_DT
+          comparative_JJ annotation_NN of_IN UTR_NNP sequences_NNS awaits_VBZ the_DT
+          development_NN of_IN methods_NNS that_WDT accurately_RB predict_VBP the_DT
+          non-coding_JJ components_NNS of_IN gene_NN models_NNS ._.
+          The_DT patterns_NNS of_IN protein-coding_JJ sequence_NN evolution_NN
+          detected_VBD in_IN our_PRP$ data_NNS have_VBP important_JJ implications_NNS for_IN
+          comparative_JJ gene_NN prediction_NN ._. Most_JJS notably_RB ,_, the_DT trend_NN we_PRP
+          detect_VBP for_IN predicted_VBD genes_NNS to_TO show_VB an_DT increased_VBN rate_NN of_IN
+          amino-acid_JJ substitution_NN relative_JJ to_TO known_VBN genes_NNS is_VBZ
+          important_JJ ,_, as_IN it_PRP may_MD reflect_VB differences_NNS in_IN functional_JJ
+          constraint_NN or_CC quality_NN of_IN gene_NN models_NNS between_IN the_DT two_CD
+          classes_NNS of_IN genes_NNS ._. For_IN at_IN least_JJS three_CD reasons_NNS ,_, we_PRP believe_VBP
+          that_IN the_DT elevated_VBD rate_NN of_IN amino-acid_JJ substitution_NN in_IN
+          predicted_VBD genes_NNS is_VBZ not_RB a_DT result_NN of_IN poor-quality_JJ gene_NN
+          models_NNS in_IN this_DT class_NN of_IN genes_NNS ._. First_LS ,_, many_JJ of_IN the_DT genes_NNS
+          in_IN the_DT predicted_VBN class_NN have_VBP EST_NNP /_NN cDNA_NN data_NNS (_( see_VB
+          Supplementary_NNP Table_NNP 1_LS )_) ,_, so_IN the_DT details_NNS of_IN these_DT gene_NN
+          models_NNS are_VBP likely_JJ to_TO be_VB correct_JJ ._. Second_JJ ,_, estimates_NNS of_IN K_NNP 
+          a_DT (_( and_CC K_NNP 
+          s_VBZ )_) are_VBP based_VBN on_IN aligned_VBN sequences_NNS ;_:
+          thus_RB gross_JJ inaccuracies_NNS in_IN gene_NN models_NNS that_WDT would_MD create_VB
+          gaps_NNS in_IN the_DT alignment_NN are_VBP excluded_VBN from_IN estimates_NNS of_IN
+          evolutionary_JJ rates_NNS ._. Third_NNP ,_, differential_NN rates_NNS in_IN these_DT
+          two_CD classes_NNS of_IN genes_NNS maybe_RB expected_VBN ,_, as_IN a_DT high_JJ proportion_NN
+          of_IN known_VBN genes_NNS were_VBD selected_VBN for_IN study_NN because_IN their_PRP$
+          mutational_NN inactivation_NN resulted_VBD in_IN an_DT obvious_JJ phenotype_NN ._.
+          Thus_RB we_PRP favor_VBP the_DT interpretation_NN that_WDT increased_VBN rates_NNS of_IN
+          amino-acid_JJ substitution_NN in_IN predicted_VBD genes_NNS results_NNS from_IN
+          lower_JJR levels_NNS of_IN functional_JJ constraint_NN ._.
+          If_IN this_DT interpretation_NN is_VBZ correct_JJ ,_, our_PRP$ results_NNS confirm_VBP
+          those_DT of_IN Schmid_NNP and_CC co-workers_NNS [_NN 34_CD ,_, 59_CD ]_NN who_WP have_VBP shown_VBN
+          that_IN a_DT large_JJ fraction_NN of_IN randomly_RB sampled_VBN coding_VBG
+          sequences_NNS and_CC orphan_JJ genes_NNS are_VBP rapidly_RB evolving_VBG in_IN the_DT
+          genus_JJ 
+          Drosophila_NNP ._. Our_PRP$ results_NNS are_VBP also_RB
+          consistent_JJ with_IN those_DT of_IN Ashburner_NNP 
+          et_CC al_NN ._. [_NN 60_CD ]_NN who_WP show_VBP that_IN genes_NNS
+          with_IN known_VBN mutant_JJ phenotypes_NNS in_IN 
+          D_NNP ._. melanogaster_NN are_VBP more_RBR likely_JJ to_TO
+          have_VB a_DT conserved_JJ homolog_NN in_IN GenBank_NNP relative_JJ to_TO predicted_VBD
+          genes_NNS with_IN no_DT known_VBN phenotype_NN ._. Similarly_RB ,_, Zdobnov_NNP 
+          et_CC al_NN ._. [_NN 23_CD ]_NN show_NN that_IN 
+          D_NNP ._. melanogaster_NN orphan_JJ genes_NNS tend_VBP
+          to_TO exhibit_VB lower_JJR levels_NNS of_IN conservation_NN in_IN pairwise_NN
+          comparison_NN with_IN 
+          A_DT ._. gambiae_NN [_NN 23_CD ]_NN ._. Finally_RB ,_, the_DT
+          interpretation_NN that_WDT known_VBN and_CC predicted_VBN genes_NNS differ_VBP in_IN
+          their_PRP$ levels_NNS of_IN functional_JJ constraint_NN is_VBZ supported_VBN by_IN the_DT
+          fact_NN that_WDT increased_VBN rates_NNS of_IN protein_NN evolution_NN in_IN 
+          D_NNP ._. willistoni_NN affect_NN predicted_VBD
+          genes_NNS more_RBR strongly_RB than_IN known_VBN genes_NNS (_( Table_NNP 2_LS )_) ._. Together_RB
+          these_DT results_NNS suggest_VBP that_IN there_EX is_VBZ a_DT large_JJ class_NN of_IN
+          functional_JJ protein-coding_JJ sequences_NNS evolving_VBG under_IN weak_JJ
+          selective_JJ constraint_NN in_IN the_DT 
+          Drosophila_NNP genome_NN [_NN 34_CD ]_NN ._. Rates_NNS of_IN
+          evolution_NN for_IN this_DT class_NN of_IN genes_NNS may_MD be_VB too_RB fast_RB to_TO
+          allow_VB the_DT identification_NN of_IN homologs_NNS from_IN extremely_RB
+          divergent_JJ species_NNS (_( such_JJ as_IN 
+          Anopheles_NNP )_) for_IN comparative_JJ gene_NN
+          prediction_NN ,_, but_CC slow_JJ enough_RB to_TO use_VB comparative_JJ data_NNS
+          within_IN the_DT genus_JJ 
+          Drosophila_NNP ._.
+        
+        
+          Rearrangement_NNP ,_, transposition_NN and_CC genome_NN
+          annotation_NN
+          Genome_NNP rearrangement_NN in_IN 
+          Drosophila_NNP typically_RB occurs_VBZ through_IN
+          paracentric_JJ inversion_NN ,_, allowing_VBG the_DT homology_NN of_IN
+          chromosome_NN arms_NNS to_TO be_VB maintained_VBN over_IN millions_NNS of_IN years_NNS ._.
+          Homologous_NNP chromosome_NN arms_NNS in_IN the_DT genus_JJ 
+          Drosophila_NNP are_VBP referred_VBN to_TO as_IN
+          Muller_NNP 's_POS elements_NNS ,_, and_CC represent_VB a_DT clearly_RB established_VBN
+          level_NN of_IN synteny_NN between_IN species_NNS [_NN 7_CD ]_NN ._. The_DT homology_NN of_IN
+          Muller_NNP 's_POS elements_NNS can_MD be_VB extended_VBN to_TO 
+          A_DT ._. gambiae_NN [_NN 23_CD ,_, 31_CD ]_NN ;_: however_RB it_PRP is_VBZ
+          clear_JJ that_IN a_DT substantial_JJ fraction_NN of_IN rearrangements_NNS
+          between_IN these_DT species_NNS must_MD occur_VB by_IN other_JJ mechanisms_NNS than_IN
+          paracentric_JJ inversion_NN ._. Levels_NNP of_IN synteny_NN below_IN the_DT
+          chromosome_NN arm_NN are_VBP more_RBR difficult_JJ to_TO establish_VB ,_, and_CC the_DT
+          description_NN of_IN these_DT levels_NNS of_IN conserved_JJ gene_NN order_NN is_VBZ
+          currently_RB arbitrary_JJ [_NN 23_CD ]_NN ._. Thus_RB it_PRP is_VBZ important_JJ to_TO point_VB
+          out_IN that_IN the_DT strictly_RB co-linear_JJ microsynteny_NN we_PRP detect_VBP
+          between_IN 
+          Drosophila_NNP species_NNS differs_VBZ from_IN the_NNP
+          '_POS hyphenated_JJ '_POS microsynteny_NN with_IN multiple_JJ gene_NN losses_NNS and_CC
+          gains_NNS between_IN 
+          Drosophila_NNP and_CC 
+          Anopheles_NNP [_NN 32_CD ]_NN ._.
+          Rates_NNS of_IN genome_NN rearrangement_NN between_IN species_NNS in_IN the_DT
+          genus_JJ 
+          Drosophila_NNP based_VBN on_IN cytological_JJ
+          evidence_NN are_VBP thought_VBN to_TO be_VB among_IN the_DT highest_JJS for_IN any_DT
+          metazoan_NN [_NN 61_CD ]_NN ._. Before_IN this_DT study_NN only_RB a_DT single_JJ fixed_VBN
+          inversion_NN breakpoint_NN had_VBD been_VBN characterized_VBN at_IN the_DT
+          sequence_NN level_NN in_IN 
+          Drosophila_NNP [_NN 24_CD ]_NN ._. Unfortunately_RB ,_,
+          the_DT limited_JJ number_NN of_IN events_NNS in_IN our_PRP$ data_NNS makes_VBZ it_PRP
+          difficult_JJ to_TO estimate_VB the_DT absolute_JJ rate_NN of_IN genome_NN
+          rearrangement_NN at_IN the_DT sequence_NN level_NN in_IN 
+          Drosophila_NNP ._. More_RBR extensive_JJ
+          analysis_NN of_IN genome_NN rearrangement_NN at_IN the_DT sequence_NN level_NN in_IN
+          
+          Caenorhabditis_NNP by_IN Coghlan_NNP and_CC Wolfe_NNP
+          [_NN 62_CD ]_NN ,_, suggests_VBZ that_IN rates_NNS of_IN genome_NN rearrangement_NN are_VBP
+          fourfold_NN higher_JJR in_IN nematodes_NNS than_IN in_IN flies_NNS ._. As_IN
+          micro-inversions_JJ (_( such_JJ as_IN that_DT seen_VBN in_IN the_DT 
+          D_NNP ._. littoralis_NNS ftz_NN region_NN )_) are_VBP not_RB
+          expected_VBN to_TO be_VB included_VBN in_IN cytological_JJ estimates_NNS ,_, this_DT
+          claim_NN will_MD have_VB to_TO be_VB re-evaluated_JJ using_VBG large-scale_JJ
+          comparative_JJ sequence_NN data_NNS in_IN 
+          Drosophila_NNP ._.
+          There_EX is_VBZ mounting_VBG evidence_NN for_IN the_DT role_NN of_IN
+          transposable_JJ elements_NNS in_IN the_DT origin_NN of_IN inversion_NN
+          breakpoints_NNS in_IN 
+          D_NNP ._. melanogaster_NN and_CC other_JJ species_NNS [_NN
+          63_CD ,_, 64_CD ,_, 65_CD ]_NN ._. In_IN contrast_NN ,_, our_PRP$ data_NNS provide_VBP no_DT evidence_NN
+          that_IN rearrangement_NN breakpoints_NNS fixed_VBN between_IN 
+          Drosophila_NNP species_NNS are_VBP associated_VBN
+          with_IN transposable_JJ element_NN sequences_NNS (_( see_VB also_RB [_NN 24_CD ]_NN )_) ._.
+          Together_RB ,_, these_DT observations_NNS suggest_VBP a_NNP '_POS hit-and-run_JJ '_POS
+          scenario_NN in_IN which_WDT transposable_JJ elements_NNS may_MD play_VB a_DT part_NN
+          in_IN the_DT origin_NN of_IN chromosome_NN rearrangements_NNS ,_, but_CC are_VBP lost_VBN
+          (_( either_CC through_IN deletion_NN or_CC transposition_NN )_) by_IN the_DT time_NN
+          rearrangements_NNS reach_VBP high_JJ frequency_NN or_CC fixation_NN between_IN
+          species_NNS [_NN 66_CD ]_NN ._. Consistent_NNP with_IN this_DT scenario_NN is_VBZ the_DT fact_NN
+          that_IN transposable_JJ element_NN sequences_NNS are_VBP not_RB conserved_JJ
+          between_IN species_NNS within_IN unrearranged_JJ microsyntenic_JJ regions_NNS
+          (_( for_IN example_NN ,_, the_DT 
+          HB_NNP element_NN in_IN the_DT 
+          ap_NN region_NN ,_, Figure_NN 4_LS )_) ._.
+          The_DT maintenance_NN of_IN microsyntenic_JJ regions_NNS we_PRP observe_VBP at_IN
+          the_DT scale_NN of_IN multi-gene_JJ fosmid-sized_JJ regions_NNS
+          (_( approximately_RB 40_CD kb_NN )_) should_MD improve_VB identification_NN of_IN
+          orthologs_NNS for_IN comparative_JJ gene_NN modeling_NN ._. On_IN the_DT other_JJ
+          hand_NN ,_, 
+          de_IN novo_NN comparative_JJ gene_NN
+          identification_NN can_MD be_VB complicated_VBN if_IN ,_, for_IN example_NN ,_, nested_JJ
+          genes_NNS maintain_VBP microsyntenic_JJ relationships_NNS [_NN 67_CD ]_NN ._. In_IN
+          addition_NN ,_, as_IN the_DT few_JJ rearrangement_NN breakpoints_NNS we_PRP
+          observed_VBD occur_VB exclusively_RB in_IN intergenic_JJ regions_NNS (_( see_VB
+          also_RB [_NN 24_CD ]_NN )_) ,_, rearrangement_NN breakpoints_NNS may_MD also_RB help_VB
+          define_VB the_DT boundaries_NNS of_IN complex_JJ genetic_JJ loci_NN ._.
+          Conservation_NNP of_IN microsynteny_NN between_IN genes_NNS and_CC flanking_VBG
+          intergenic_JJ regions_NNS may_MD reveal_VB structural_JJ and_CC functional_JJ
+          connections_NNS in_IN the_DT genome_NN ,_, and_CC thus_RB it_PRP may_MD be_VB possible_JJ to_TO
+          associate_JJ functional_JJ non-coding_JJ sequences_NNS with_IN the_DT
+          appropriate_JJ flanking_VBG gene_NN through_IN genome_NN rearrangements_NNS
+          (_( see_VB also_RB [_NN 30_CD ]_NN )_) ._. Proof_NNP of_IN this_DT principle_NN can_MD be_VB seen_VBN for_IN
+          the_DT intergenic_JJ region_NN 3_CD '_POS to_TO 
+          eve_NN and_CC 5_CD '_POS to_TO 
+          TER_NNP 94_CD ,_, which_WDT maintains_VBZ association_NN
+          with_IN 
+          eve_NN ,_, but_CC not_RB 
+          TER_NNP 94_CD ,_, in_IN non-melanogaster_JJ group_NN
+          species_NNS (_( Figure_NN 2_LS )_) ._. This_DT conservation_NN of_IN microsynteny_NN
+          between_IN the_DT 
+          eve_NN coding_VBG and_CC 3_CD '_POS CNCSs_NNP is_VBZ
+          consistent_JJ with_IN the_DT fact_NN that_IN this_DT region_NN is_VBZ known_VBN to_TO
+          contain_VB multiple_JJ enhancer_NN sequences_NNS that_WDT regulate_VB
+          embryonic_JJ 
+          eve_NN expression_NN [_NN 50_CD ,_, 51_CD ]_NN ._.
+        
+        
+          Prospects_NNS for_IN comparative_JJ cis-regulatory_JJ prediction_NN
+          in_IN Drosophila_NNP
+          Conservation_NNP of_IN non-coding_JJ sequences_NNS is_VBZ rapidly_RB
+          becoming_VBG one_CD of_IN the_DT most_RBS powerful_JJ methods_NNS of_IN predicting_VBG
+          individual_JJ 
+          cis_NNS -_: regulatory_JJ elements_NNS in_IN genomic_JJ
+          sequences_NNS [_NN 68_CD ]_NN ._. Most_JJS computational_NN methods_NNS designed_VBN to_TO
+          identify_VB CNCSs_NNP rely_VB on_IN the_DT assumption_NN that_IN non-coding_JJ
+          conservation_NN implies_VBZ functional_JJ constraint_NN ,_, rather_RB than_IN
+          heterogeneity_NN in_IN mutation_NN rates_NNS [_NN 45_CD ]_NN ._. Our_PRP$ results_NNS
+          provide_VBP two_CD pieces_NNS of_IN evidence_NN that_DT support_NN this_DT
+          assumption_NN and_CC argue_VBP against_IN a_DT simple_JJ mutational_NN
+          cold-spot_JJ interpretation_NN of_IN non-coding_JJ conservation_NN ._.
+          First_LS ,_, we_PRP demonstrate_VBP that_IN the_DT lengths_NNS of_IN spacer_NN
+          intervals_NNS separating_VBG CNCSs_NNP are_VBP non-randomly_JJ distributed_VBN
+          in_IN the_DT 
+          Drosophila_NNP genome_NN ,_, indicating_VBG a_DT
+          tendency_NN for_IN CNCSs_NNP to_TO be_VB clustered_VBN in_IN non-coding_JJ DNA_NNP ._.
+          Second_JJ ,_, we_PRP show_VBP that_IN the_DT spatial_NN relationships_NNS of_IN
+          neighboring_VBG CNCSs_NNP are_VBP generally_RB conserved_JJ as_IN revealed_VBN by_IN
+          the_DT strong_JJ correlation_NN of_IN spacer_NN interval_NN lengths_NNS in_IN
+          divergent_JJ species_NNS ._. Clustering_NNP of_IN CNCSs_NNP and_CC conservation_NN
+          of_IN CNCS_NNP spacing_VBG are_VBP not_RB expected_VBN under_IN a_DT mutational_NN
+          cold-spot_JJ hypothesis_NNS ,_, and_CC suggest_VBP that_IN the_DT spacer_NN
+          intervals_NNS between_IN CNCSs_NNP ,_, and_CC therefore_RB CNCSs_NNP themselves_PRP ,_,
+          are_VBP under_IN functional_JJ constraint_NN ._. Given_VBN the_DT rapid_JJ rate_NN of_IN
+          DNA_NNP loss_NN for_IN unconstrained_JJ sequences_NNS in_IN 
+          Drosophila_NNP [_NN 48_CD ,_, 49_CD ]_NN ,_, it_PRP is_VBZ
+          difficult_JJ to_TO understand_VB the_DT mere_JJ existence_NN of_IN spacer_NN
+          intervals_NNS ,_, as_RB well_RB as_IN their_PRP$ conservation_NN of_IN length_NN ,_,
+          without_IN invoking_VBG some_DT form_NN of_IN functional_JJ constraint_NN
+          acting_VBG on_IN these_DT sequences_NNS ._.
+          Clustering_NNP of_IN CNCSs_NNP has_VBZ also_RB been_VBN recently_RB reported_VBN in_IN
+          the_DT worm_NN genome_NN [_NN 47_CD ]_NN ,_, and_CC future_JJ research_NN will_MD determine_VB
+          if_IN CNCS_NNP clustering_VBG is_VBZ a_DT general_JJ feature_NN of_IN non-coding_JJ
+          conservation_NN in_IN metazoan_NN genomes_NNS ._. As_IN yet_RB ,_, there_EX has_VBZ been_VBN
+          no_DT report_NN of_IN a_DT general_JJ tendency_NN for_IN CNCSs_NNP to_TO be_VB clustered_VBN
+          in_IN mammalian_JJ genomes_NNS ,_, although_IN certain_JJ regions_NNS of_IN the_DT
+          mammalian_JJ genome_NN (_( such_JJ as_IN the_DT 
+          H_NNP 19_CD region_NN [_NN 69_CD ]_NN )_) show_NN a_DT strong_JJ
+          pattern_NN of_IN CNCS_NNP clustering_VBG ._. The_DT general_JJ functional_JJ
+          significance_NN of_IN CNCS_NNP clusters_NNS remains_VBZ to_TO be_VB explored_JJ ,_, but_CC
+          it_PRP is_VBZ clear_JJ that_IN some_DT CNCS_NNP clusters_NNS correspond_VB to_TO
+          functional_JJ enhancer_NN sequences_NNS ._. We_PRP show_VBP here_RB proof_NN of_IN the_DT
+          principle_NN that_IN CNCS_NNP clusters_NNS can_MD be_VB used_VBN to_TO identify_VB
+          functional_JJ enhancer_NN sequences_NNS in_IN the_DT 
+          Drosophila_NNP genome_NN (_( Figure_NN 7_CD ,_, 8_CD )_) ,_, as_IN
+          Ishihara_NNP 
+          et_CC al_NN ._. [_NN 69_CD ]_NN have_VBP shown_VBN for_IN CNCS_NNP
+          clusters_NNS in_IN the_DT mammalian_JJ genome_NN ._.
+          Using_VBG CNCS_NNP clusters_NNS to_TO identify_VB enhancers_NNS represents_VBZ
+          the_DT comparative_JJ genomic_JJ analogue_NN of_IN efforts_NNS to_TO predict_VB 
+          cis_NNS -_: regulatory_JJ sequences_NNS by_IN
+          exploiting_VBG the_DT clustering_VBG of_IN predicted_VBD transcription_NN
+          factor_NN binding_JJ sites_NNS [_NN 70_CD ,_, 71_CD ]_NN ._. However_RB ,_, unlike_IN
+          binding-site_JJ clusters_NNS ,_, CNCS_NNP clusters_NNS can_MD be_VB rapidly_RB
+          identified_VBN in_IN the_DT absence_NN of_IN any_DT 
+          a_DT priori_FW information_NN about_IN
+          transcription_NN factor_NN specificity_NN ,_, and_CC may_MD therefore_RB
+          provide_VB a_DT more_RBR general_JJ approach_NN to_TO genome-wide_JJ 
+          cis_NNS -_: regulatory_JJ prediction_NN ._. In_IN
+          fact_NN ,_, CNCS_NNP clusters_NNS may_MD be_VB a_DT powerful_JJ source_NN of_IN data_NNS for_IN
+          inferring_VBG transcription_NN factor_NN specificity_NN ,_, as_IN specific_JJ
+          binding-site_JJ motifs_NNS are_VBP likely_JJ to_TO be_VB locally_RB
+          over-represented_JJ in_IN CNCS_NNP clusters_NNS with_IN demonstrable_JJ
+          enhancer_NN function_NN ._. Using_VBG the_DT intrinsic_JJ clustering_VBG of_IN
+          CNCSs_NNP provides_VBZ a_DT new_JJ way_NN of_IN circumventing_VBG the_DT reliance_NN on_IN
+          expression_NN data_NNS implicit_JJ in_IN current_JJ approaches_NNS to_TO
+          CNCS-based_NNP motif_NN discovery_NN [_NN 72_CD ]_NN ._. Finally_RB ,_, successfully_RB
+          linking_VBG CNCS_NNP clusters_NNS with_IN enhancer_NN function_NN will_MD provide_VB
+          an_DT alternative_NN means_NNS of_IN defining_VBG enhancer_NN structure_NN based_VBN
+          on_IN evolutionary_JJ rather_RB than_IN operational_JJ criteria_NNS ._.
+        
+      
+      
+        Conclusions_NNP
+        The_DT patterns_NNS of_IN divergence_NN in_IN both_DT coding_VBG and_CC 
+        cis_NNS -_: regulatory_JJ sequences_NNS described_VBD
+        here_RB indicate_VBP that_IN 
+        D_NNP ._. pseudoobscura_NN will_MD greatly_RB aid_VB
+        efforts_NNS to_TO functionally_RB annotate_NN the_DT 
+        D_NNP ._. melanogaster_NN genome_NN ,_, and_CC justify_VB
+        the_DT choice_NN of_IN 
+        D_NNP ._. pseudoobscura_NN as_IN the_DT second_JJ 
+        Drosophila_NNP species_NNS for_IN complete_JJ
+        genome_NN sequencing_VBG ._. The_DT divergence_NN between_IN these_DT species_NNS is_VBZ
+        sufficient_JJ such_JJ that_IN there_EX does_VBZ not_RB appear_VB to_TO be_VB any_DT need_VBP
+        to_TO go_VB to_TO more_RBR distantly_RB related_VBN species_NNS to_TO obtain_VB a_DT high_JJ
+        level_NN of_IN signal_NN to_TO noise_NN to_TO detect_VB functionally_RB constrained_VBN
+        sequences_NNS ._. This_DT observation_NN suggests_VBZ that_IN the_DT search_NN for_IN
+        additional_JJ 
+        Drosophila_NNP species_NNS whose_WP$ genome_NN
+        sequence_NN would_MD help_VB interpret_VB the_DT 
+        D_NNP ._. melanogaster_NN sequence_NN should_MD focus_VB
+        on_IN species_NNS at_IN a_DT similar_JJ evolutionary_JJ distance_NN as_IN 
+        D_NNP ._. pseudoobscura_NN ._. 
+        Of_IN the_DT species_NNS studied_VBN here_RB ,_, 
+        D_NNP ._. erecta_NN is_VBZ too_RB closely_RB related_VBN to_TO 
+        D_NNP ._. melanogaster_NN for_IN comprehensive_JJ
+        gene_NN and_CC 
+        cis_NNS -_: regulatory_JJ prediction_NN ._. Neither_DT
+        coding_VBG nor_CC non-coding_JJ sequences_NNS have_VBP experienced_VBN sufficient_JJ
+        divergence_NN to_TO differentiate_VB whether_IN sequences_NNS '_POS conserved_JJ '_POS
+        between_IN 
+        D_NNP ._. erecta_NN and_CC 
+        D_NNP ._. melanogaster_NN result_NN from_IN
+        functional_JJ constraint_NN or_CC shared_VBN ancestry_NN (_( Figures_NNS 2_CD ,_, 4_LS )_) ._. At_IN
+        the_DT other_JJ extreme_NN ,_, using_VBG 
+        A_DT ._. gambiae_NN genome_NN sequences_NNS may_MD not_RB
+        substantially_RB aid_VB comprehensive_JJ genome_NN annotation_NN ,_, as_IN a_DT
+        large_JJ proportion_NN of_IN 
+        Drosophila_NNP genes_NNS may_MD not_RB be_VB present_JJ
+        in_IN the_DT 
+        Anopheles_NNP genome_NN and_CC the_DT lack_NN of_IN
+        non-coding_JJ conservation_NN between_IN these_DT groups_NNS (_( Figure_NN 7_CD and_CC [_NN
+        23_CD ]_NN )_) means_VBZ that_IN this_DT powerful_JJ source_NN of_IN data_NNS is_VBZ unavailable_JJ
+        for_IN 
+        cis_NNS -_: regulatory_JJ annotation_NN ._. In_IN
+        contrast_NN ,_, divergent_JJ species_NNS in_IN the_DT genus_JJ 
+        Drosophila_NNP (_( such_JJ as_IN 
+        D_NNP ._. littoralis_NNS and_CC 
+        D_NNP ._. willistoni_NN )_) show_NN similar_JJ
+        properties_NNS to_TO each_DT other_JJ and_CC to_TO 
+        D_NNP ._. pseudoobscura_NN in_IN terms_NNS of_IN their_PRP$
+        utility_NN for_IN identifying_VBG functionally_RB constrained_VBN coding_VBG or_CC
+        non-coding_JJ sequences_NNS ._.
+        
+        D_NNP ._. willistoni_NN and_CC 
+        D_NNP ._. melanogaster_NN are_VBP both_DT members_NNS of_IN
+        the_DT subgenus_JJ 
+        Sophophora_NNP ;_: thus_RB these_DT two_CD species_NNS
+        are_VBP expected_VBN to_TO share_VB more_JJR aspects_NNS of_IN their_PRP$ biology_NN in_IN
+        common_JJ than_IN either_DT will_MD with_IN 
+        D_NNP ._. littoralis_NNS ._. Therefore_RB ,_, we_PRP propose_VBP
+        that_IN of_IN the_DT species_NNS studied_VBN here_RB ,_, 
+        D_NNP ._. willistoni_NN is_VBZ the_DT most_RBS suitable_JJ
+        candidate_NN for_IN the_DT third_JJ 
+        Drosophila_NNP species_NNS for_IN complete_JJ
+        genome_NN sequencing_VBG ._. We_PRP make_VBP this_DT suggestion_NN despite_IN the_DT
+        increased_VBN rate_NN of_IN evolution_NN and_CC changes_NNS in_IN base_NN composition_NN
+        and_CC codon_NN usage_NN observed_VBD in_IN this_DT lineage_NN ._. In_IN fact_NN ,_, it_PRP may_MD
+        be_VB possible_JJ to_TO take_VB advantage_NN of_IN these_DT unusual_JJ patterns_NNS of_IN
+        molecular_JJ evolution_NN in_IN the_DT 
+        D_NNP ._. willistoni_NN lineage_NN to_TO dissect_NN
+        regions_NNS of_IN the_DT 
+        Drosophila_NNP genome_NN under_IN different_JJ
+        levels_NNS of_IN functional_JJ constraint_NN ._. Given_VBN a_DT more_RBR thorough_JJ
+        understanding_NN of_IN these_DT phenomena_NNS and_CC their_PRP$ cause_NN (_( s_VBZ )_) ,_, we_PRP
+        believe_VBP that_IN a_DT 
+        D_NNP ._. willistoni_NN genome_NN sequence_NN would_MD
+        complement_VB efforts_NNS to_TO annotate_NN the_DT 
+        Drosophila_NNP genome_NN based_VBN on_IN whole_JJ
+        genome_NN comparisons_NNS between_IN 
+        D_NNP ._. melanogaster_NN and_CC 
+        D_NNP ._. pseudoobscura_NN ._. 
+      
+      
+        Materials_NNS and_CC methods_NNS
+        
+          Construction_NNP of_IN Drosophilaspecies_NNP fosmid_NN
+          libraries_NNS
+          Four_CD 
+          Drosophila_NNP species_NNS spanning_VBG a_DT range_NN
+          of_IN divergence_NN times_NNS in_IN the_DT genus_JJ were_VBD selected_VBN for_IN study_NN :_:
+          
+          D_NNP ._. erecta_NN (_( strain_NN 14021_CD -_: 0224_CD ._. 0_CD )_) ,_, 
+          D_NNP ._. pseudoobscura_NN (_( strain_NN
+          14011_CD -_: 0121_CD ._. 4_LS )_) ,_, 
+          D_NNP ._. willistoni_NN (_( strain_NN
+          14030_CD -_: 0814_CD ._. 10_CD )_) and_CC 
+          D_NNP ._. littoralis_NNS (_( strain_NN
+          15010_CD -_: 1001_CD ._. 10_CD )_) ._. All_DT strains_NNS are_VBP available_JJ from_IN the_DT Tucson_NNP
+          
+          Drosophila_NNP species_NNS stock_NN center_NN [_NN
+          73_CD ]_NN ._. To_TO construct_VB fosmid_NN libraries_NNS ,_, genomic_JJ DNA_NNP from_IN
+          adult_NN flies_VBZ was_VBD prepared_VBN by_IN partial_JJ digestion_NN with_IN 
+          Mbo_NNP I_PRP and_CC size-selecting_JJ fragments_NNS
+          using_VBG pulsed-field_JJ gel_NN electrophoresis_NNS ,_, then_RB cloned_VBN in_IN
+          the_DT 
+          Bam_UH HI_NNP site_NN of_IN the_DT fosmid_NN vector_NN
+          pFOS_NN 1_CD [_NN 74_CD ]_NN and_CC transformed_VBN into_IN 
+          Escherichia_NNP coli_NNS strain_VBP XL_NNP 1_CD -_: Blue_NNP MR_NNP
+          (_( Stratagene_NNP )_) ._. Detailed_NNP information_NN about_IN the_DT 
+          Drosophila_NNP stocks_NNS ,_, construction_NN of_IN
+          the_DT genomic_JJ fosmid_NN libraries_NNS and_CC their_PRP$ availability_NN can_MD
+          be_VB found_VBN at_IN the_DT Children_NNP 's_POS Hospital_NNP of_IN Oakland_NNP Research_NNP
+          Institute_NNP BACPAC_NNP Resources_NNPS website_NN [_NN 75_CD ]_NN ._.
+        
+        
+          Probe_NNP design_NN and_CC library_NN screening_NN
+          To_TO amplify_VB gene-specific_JJ STSs_NNP ,_, 
+          D_NNP ._. erecta_NN ,_, D_NNP ._. pseudoobscura_NN ,_, D_NNP ._.
+          willistoni_NN and_CC 
+          D_NNP ._. littoralis_NNS genomic_JJ DNA_NNP was_VBD
+          isolated_VBN from_IN adult_NN flies_VBZ and_CC used_VBN as_IN template_NN for_IN PCR_NNP
+          with_IN degenerate_VB primers_NNS ._. Primer_NNP sequences_NNS are_VBP available_JJ
+          upon_IN request_NN ._. Double-stranded_NNP 40_CD -_: nucleotide_NN oligomers_NNS
+          designed_VBN from_IN the_DT gene_NN and_CC species_NNS specific_JJ STSs_NNP were_VBD
+          radioactively_RB labeled_VBN with_IN 32_CD P_NN and_CC hybridized_JJ to_TO genomic_JJ
+          colony_NN filters_NNS [_NN 76_CD ]_NN ._. Positive_JJ clones_NNS were_VBD subjected_VBN to_TO
+          PCR_NNP to_TO remove_VB false_JJ positives_NNS and_CC restriction_NN mapped_VBN
+          using_VBG 
+          Sal_NNP I-_NNP 
+          Not_RB I_PRP ,_, 
+          Eco_NNP RI-_NNP 
+          Not_RB I_PRP double_JJ digestions_NNS ._. The_DT
+          largest_JJS clone_NN overlapping_VBG all_DT positive_JJ hits_NNS was_VBD sheared_VBN
+          and_CC subcloned_JJ into_IN 3_CD -_: kb_NN plasmids_NNS ,_, and_CC sequenced_JJ using_VBG
+          methods_NNS described_VBD in_IN [_NN 9_CD ]_NN ._. From_IN the_DT results_NNS of_IN this_DT
+          screen_NN ,_, we_PRP estimated_VBD the_DT average_JJ number_NN of_IN unique_JJ hits_NNS
+          per_IN library_NN per_IN species_NNS to_TO be_VB 4_CD ._. 1_CD for_IN 
+          D_NNP ._. erecta_NN ,_, 3_CD ._. 2_CD for_IN 
+          D_NNP ._. pseudoobscura_NN ,_, 2_CD ._. 2_CD for_IN 
+          D_NNP ._. willistoni_NN and_CC 2_CD ._. 9_CD for_IN 
+          D_NNP ._. littoralis_NNS ._. These_DT figures_NNS
+          indicate_VBP that_IN these_DT libraries_NNS have_VBP fewer_RBR unique_JJ hits_NNS than_IN
+          the_DT expected_VBN approximately_RB 5_CD ×_NN coverage_NN ._. Sequences_NNP for_IN
+          these_DT clones_NNS have_VBP been_VBN submitted_VBN to_TO GenBank_NNP under_IN the_DT
+          accession_NN numbers_NNS AY_NNP 186999_CD and_CC AY_NNP 190934_CD -_: AY_NNP 190963_CD ._.
+        
+        
+          Comparative_NNP gene_NN prediction_NN
+          Coding_NNP sequences_NNS in_IN these_DT fosmid_NN clones_NNS were_VBD predicted_VBN
+          using_VBG the_DT computational_NN pipeline_NN used_VBN to_TO re-annotate_JJ the_DT 
+          D_NNP ._. melanogaster_NN genome_NN [_NN 12_CD ]_NN ._. The_DT
+          only_RB major_JJ modification_NN to_TO this_DT pipeline_NN was_VBD to_TO add_VB an_DT
+          additional_JJ tier_NN of_IN evidence_NN containing_VBG the_DT results_NNS of_IN
+          TBLASTN_NNP searches_NNS of_IN all_DT Release_NNP 3_CD 
+          D_NNP ._. melanogaster_NN peptides_NNS [_NN 14_CD ]_NN
+          against_IN non-melanogaster_JJ sequences_NNS ._. Gene_NNP predictions_NNS were_VBD
+          manually_RB verified_VBN and_CC refined_VBN using_VBG the_DT annotation_NN
+          platform_NN Apollo_NNP [_NN 13_CD ]_NN ._. As_IN no_DT EST_NNP information_NN exists_VBZ to_TO
+          annotate_NN transcribed_JJ non-coding_JJ sequences_NNS (_( such_JJ as_IN UTRs_NNP )_)
+          for_IN non-melanogaster_JJ species_NNS ,_, we_PRP annotated_JJ only_RB
+          protein-coding_JJ gene_NN and_CC exon_NN models_NNS ._. For_IN similar_JJ reasons_NNS ,_,
+          and_CC to_TO minimize_VB the_DT insertion_NN /_NN deletion_NN of_IN amino_JJ acids_NNS at_IN
+          intron_NN /_NN exon_NN boundaries_NNS ,_, we_PRP did_VBD not_RB require_VB
+          non-melanogaster_JJ models_NNS to_TO obey_VBP consensus_NN splice_NN site_NN
+          rules_NNS ._. Annotated_NNP sequences_NNS were_VBD stored_VBN and_CC queried_VBN in_IN
+          Gadcompara_NNP ,_, a_DT cloned_VBN version_NN of_IN the_DT 
+          D_NNP ._. melanogaster_NN annotation_NN
+          database_NN ,_, Gadfly_NNP ._.
+          To_TO identify_VB orthologous_JJ genes_NNS in_IN 
+          Anopheles_NNP gambiae_NN ,_, 8_CD ,_, 987_CD scaffolds_NNS
+          from_IN project_NN accession_NN number_NN AAAB_NNP 00000000_CD were_VBD
+          downloaded_JJ from_IN GenBank_NNP and_CC searched_VBD using_VBG default_NN
+          parameters_NNS of_IN TBLASTN_NNP 2_CD ._. 0_CD [_NN 77_CD ]_NN with_IN the_DT 
+          D_NNP ._. melanogaster_NN peptides_NNS listed_VBN in_IN
+          Supplementary_NNP Table_NNP 1_CD (_( see_VB additional_JJ data_NNS files_NNS )_) as_IN
+          queries_NNS ._. Homologs_NNP were_VBD identified_VBN as_IN HSPs_NNP with_IN an_DT
+          expected_VBN value_NN <_NN 10_CD -_: 20_CD and_CC ≥_NN 30_CD %_NN identity_NN over_IN 100_CD
+          amino_JJ acids_NNS ._.
+        
+        
+          Alignment_NNP and_CC estimation_NN of_IN sequence_NN
+          conservation_NN
+          Orthologous_NNP regions_NNS of_IN the_DT 
+          D_NNP ._. melanogaster_NN genome_NN
+          corresponding_JJ to_TO sequenced_JJ fosmids_NNS were_VBD identified_VBN using_VBG
+          default_NN parameters_NNS of_IN BLAT_NNP [_NN 78_CD ]_NN against_IN a_DT database_NN made_VBN
+          up_RP of_IN the_DT Release_NNP 3_CD sequences_NNS [_NN 9_CD ]_NN ._. The_DT union_NN of_IN
+          sequences_NNS spanning_VBG hits_NNS to_TO each_DT candidate_NN region_NN was_VBD
+          extracted_VBN and_CC is_VBZ listed_VBN in_IN Table_NNP 1_CD ._. Orthologous_NNP coding_VBG
+          and_CC peptide_NN sequences_NNS from_IN 
+          D_NNP ._. melanogaster_NN were_VBD identified_VBN by_IN
+          unique_JJ gene_NN symbols_NNS in_IN Gadfly_NNP using_VBG Release_NNP 3_CD annotations_NNS
+          [_NN 14_CD ]_NN ._. For_IN genes_NNS with_IN alternative_JJ transcripts_NNS ,_, the_DT
+          transcript_NN leading_VBG to_TO the_DT longest_JJS translation_NN product_NN was_VBD
+          chosen_VBN in_IN most_JJS ,_, but_CC not_RB all_DT ,_, cases_NNS ._. Coding_NNP and_CC translated_VBN
+          amino-acid_JJ sequences_NNS from_IN non-melanogaster_JJ species_NNS were_VBD
+          extracted_VBN from_IN Gadcompara_NNP using_VBG MySQL_NNP queries_NNS ._.
+          Multiple_NNP alignment_NN of_IN orthologous_JJ amino-acid_JJ sequences_NNS
+          was_VBD carried_VBN out_IN using_VBG the_DT default_NN parameters_NNS of_IN DIALIGN_NNP
+          2_CD ._. 1_CD [_NN 79_CD ]_NN ._. Amino-acid_NNP alignments_NNS were_VBD used_VBN to_TO align_VBP
+          coding_VBG sequences_NNS using_VBG the_DT gap_NN __NN cds_NNS utility_NN of_IN the_DT SEALS_NNP
+          package_NN [_NN 80_CD ]_NN to_TO ensure_VB that_DT nucleotide_NN alignment_NN gaps_NNS
+          were_VBD inserted_VBN between_IN codons_NNS ._. Pairwise_NNP K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ tests_NNS were_VBD carried_VBN out_IN using_VBG PAML_NNP
+          3_CD ._. 12_CD [_NN 22_CD ]_NN with_IN runmode_NN =_SYM -_: 2_CD ,_, as_IN outlined_VBN in_IN [_NN 20_CD ]_NN ._.
+          Evidence_NN of_IN functional_JJ constraint_NN was_VBD inferred_VBN when_WRB twice_RB
+          the_DT difference_NN in_IN likelihoods_NNS between_IN a_DT model_NN with_IN K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ ratio_NN fixed_VBN at_IN 1_CD versus_CC one_CD with_IN K_NNP 
+          a_DT /_NN K_NNP 
+          s_VBZ as_IN a_DT free_JJ parameter_NN exceeded_VBD a_DT
+          cutoff_NN such_JJ that_IN the_DT 
+          p_NN -_: value_NN was_VBD less_JJR than_IN 0_CD ._. 05_CD per_IN
+          number_NN of_IN tests_NNS ._. Estimates_NNS of_IN K_NNP 
+          a_DT and_NN K_NNP 
+          s_VBZ in_IN Table_NNP 2_CD were_VBD obtained_VBN using_VBG the_DT
+          method_NN of_IN Yang_NNP and_CC Nielson_NNP [_NN 81_CD ]_NN ,_, which_WDT accounts_VBZ for_IN
+          differences_NNS in_IN nucleotide_NN and_CC codon_NN frequencies_NNS as_RB well_RB
+          as_IN transition_NN :_: transversion_NN rate_NN bias_NN ,_, implemented_VBN in_IN PAML_NNP
+          3_CD ._. 12_CD [_NN 22_CD ]_NN ._. Multiple_NNP amino-acid_JJ and_CC coding_VBG sequence_NN
+          alignments_NNS are_VBP available_JJ on_IN request_NN ._.
+          Annotations_NNP of_IN candidate_NN regions_NNS in_IN Table_NNP 1_CD were_VBD
+          exported_VBN from_IN Gadfly_NNP in_IN VISTA_NNP format_NN [_NN 43_CD ]_NN ,_, and_CC used_VBD to_TO
+          evaluate_VB conservation_NN in_IN non-coding_JJ sequences_NNS ._.
+          Nontranscribed_NNP (_( intergenic_JJ )_) and_CC transcribed_JJ (_( UTR_NNP and_CC
+          intron_NN )_) non-coding_JJ sequences_NNS were_VBD analyzed_VBN together_RB [_NN
+          44_CD ]_NN ._. Pairwise_NNP alignment_NN of_IN homologous_RB genomic_JJ regions_NNS
+          between_IN 
+          D_NNP ._. melanogaster_NN and_CC individual_JJ
+          non-melanogaster_JJ species_NNS was_VBD performed_VBN using_VBG default_NN
+          parameters_NNS of_IN the_DT AVID_NNP global_JJ alignment_NN tool_NN [_NN 42_CD ]_NN ._. CNCSs_NNP
+          were_VBD identified_VBN in_IN VISTA_NNP using_VBG a_DT window_NN size_NN of_IN 10_CD bp_NN
+          with_IN an_DT identity_NN of_IN 90_CD %_NN with_IN manual_JJ post-processing_JJ to_TO
+          remove_VB spurious_JJ matches_NNS at_IN the_DT beginning_NN and_CC end_NN of_IN the_DT
+          alignments_NNS ._. Repeat_NN masking_VBG was_VBD performed_VBN before_IN coding_VBG
+          sequence_NN annotation_NN to_TO identify_VB transposable_JJ elements_NNS ;_:
+          however_RB ,_, it_PRP is_VBZ possible_JJ that_IN some_DT CNCSs_NNP are_VBP simple_JJ
+          repetitive_JJ sequences_NNS ._. Only_RB sequences_NNS from_IN candidate_NN
+          regions_NNS that_WDT clearly_RB maintain_VB microsynteny_NN in_IN
+          non-melanogaster_JJ species_NNS were_VBD included_VBN in_IN estimates_NNS of_IN
+          non-coding_JJ conservation_NN ._. Thus_RB ,_, the_DT entire_JJ 
+          D_NNP ._. littoralis_NNS ftz_NN ,_, Rh_NNP 3_CD and_CC 
+          Rh_NNP 4_CD clones_NNS as_RB well_RB as_IN rearranged_JJ
+          segments_NNS of_IN the_DT 
+          D_NNP ._. willistoni_NN ,_, D_NNP ._. pseudoobscura_NN and_CC
+          
+          D_NNP ._. littoralis_NNS eve_NN clones_NNS ,_, 
+          D_NNP ._. willistoni_NN and_CC 
+          D_NNP ._. pseudoobscura_NN Rh_NNP 1_CD clones_NNS ,_, and_CC 
+          D_NNP ._. willistoni_NN Rh_NNP 3_CD clones_NNS were_VBD
+          omitted_VBN from_IN analyses_NNS of_IN non-coding_JJ conservation_NN ._. In_IN
+          addition_NN ,_, we_PRP also_RB reanalyzed_JJ non-coding_JJ conservation_NN
+          between_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. virilis_NNS using_VBG this_DT same_JJ approach_NN
+          for_IN the_DT dataset_NN of_IN [_NN 44_CD ]_NN ._. Pairwise_NNP genomic_JJ alignments_NNS and_CC
+          VISTA_NNP regions_NNS files_NNS are_VBP available_JJ on_IN request_NN ._.
+        
+        
+          Generation_NNP of_IN transgenic_JJ flies_VBZ and_CC expression_NN
+          analysis_NN
+          The_DT CNCS_NNP cluster_NN carrying_VBG the_DT 
+          ap_NN brain_NN enhancer_NN was_VBD amplified_VBN
+          from_IN 
+          D_NNP ._. melanogaster_NN (_( BAC_NNP )_) and_CC 
+          D_NNP ._. virilis_NNS (_( P_NN 1_LS )_) clones_NNS bearing_VBG the_DT 
+          ap_NN gene_NN ,_, respectively_RB ._. The_DT
+          following_VBG pairs_NNS of_IN oligonucleotides_NNS were_VBD used_VBN for_IN PCR_NNP
+          amplification_NN :_:
+          DmelBR-F_NNP :_: 5_CD '_POS -_: AAACCATCTCACTCGCATGA-_NNP 3_CD '_''
+          DmelBR-R_NNP :_: 5_CD '_POS -_: TGCTTCCAGACAACGACAAA-_NNP 3_CD '_''
+          DvirBR-F_NNP :_: 5_CD '_POS -_: TTCGCTGGTCAATGGTTCAA-_NNP 3_CD '_''
+          DvirBR-R_NNP :_: 5_CD '_POS -_: ATGGGCTGGCAACATACAACA-_NNP 3_CD '_''
+          The_DT resulting_VBG PCR_NNP products_NNS from_IN 
+          D_NNP ._. melanogaster_NN (_( 1_CD ,_, 235_CD bp_NN )_) and_CC 
+          D_NNP ._. virilis_NNS (_( 1_CD ,_, 658_CD bp_NN )_) were_VBD cloned_VBN
+          into_IN pCaSpeRhs_NNS 43_CD β-gal_JJ to_TO generate_VB pChabMelBR_NN and_CC
+          pChabVirBR_NN ,_, respectively_RB ._. These_DT constructs_NNS were_VBD injected_VBN
+          into_IN 
+          D_NNP ._. melanogaster_NN y_NN ;_: w_NN embryos_NNS by_IN
+          standard_JJ 
+          P_NN -_: element_NN transformation_NN [_NN 82_CD ]_NN ._.
+          Two_CD independent_JJ lines_NNS were_VBD generated_VBN with_IN pChabMelBR_NN and_CC
+          three_CD with_IN pChabVirBR_NN ,_, all_DT of_IN which_WDT showed_VBD similar_JJ
+          expression_NN patterns_NNS ._. Transgenic_NNP embryos_NNS were_VBD
+          immunostained_JJ with_IN monoclonal_NN anti-β-gal_JJ antibody_NN
+          (_( 1_CD :_: 4_CD ,_, 000_CD ;_: Promega_NNP )_) as_IN described_VBN in_IN [_NN 53_CD ]_NN ._.
+        
+      
+      
+        Additional_JJ data_NNS files_NNS
+        Supplementary_NNP Table_NNP 1_CD ,_, describes_VBZ the_DT number_NN of_IN coding_VBG
+        exons_NNS ,_, amino_JJ acids_NNS ,_, ESTs_NNP ,_, and_CC K_NNP 
+        a_DT /_NN K_NNP 
+        s_VBZ ratio_NN for_IN 
+        D_NNP ._. melanogaster_NN genes_NNS in_IN this_DT study_NN ._.
+        Supplementary_NNP Table_NNP 2_CD ,_, details_NNS the_DT codon_NN usage_NN in_IN 
+        D_NNP ._. melanogaster_NN compared_VBN with_IN 
+        D_NNP ._. erecta_NN ,_, D_NNP ._. pseudoobscura_NN ,_, D_NNP ._.
+        willistoni_NN ,_, and_CC 
+        D_NNP ._. littoralis_NNS ._.
+        Additional_JJ data_NNS file_VBP 1_CD
+        Supplementary_NNP table_NN 1_CD
+        Supplementary_NNP table_NN 1_CD
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 2_CD
+        Supplementary_NNP table_NN 2_CD
+        Supplementary_NNP table_NN 2_CD
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+      
+    
+  

@@ -1,0 +1,178 @@
+
+  
+    
+      
+        
+        Biological_JJ databases_NNS offer_VBP access_NN to_TO formalized_JJ facts_NNS about_IN many_JJ aspects_NNS of_IN
+        biology—genes_NNS and_CC gene_NN products_NNS ,_, protein_NN structure_NN ,_, metabolic_JJ pathways_NNS ,_, diseases_NNS ,_,
+        organisms_NNS ,_, and_CC so_RB on_IN ._. These_DT databases_NNS are_VBP becoming_VBG increasingly_RB important_JJ to_TO researchers_NNS ._.
+        The_DT information_NN that_IN populates_NNS databases_NNS is_VBZ generated_VBN by_IN research_NN teams_NNS and_CC is_VBZ usually_RB
+        published_VBN in_IN peer-reviewed_JJ journals_NNS ._. As_IN part_NN of_IN the_DT publication_NN process_NN ,_, some_DT authors_NNS
+        deposit_NN data_NNS into_IN a_DT database_NN but_CC ,_, more_RBR often_RB ,_, it_PRP is_VBZ extracted_VBN from_IN the_DT published_VBN literature_NN
+        and_CC deposited_VBN into_IN the_DT databases_NNS by_IN human_JJ curators_NNS ,_, a_DT painstaking_VBG process_NN ._.
+        Research_NN literature_NN and_CC scientific_JJ databases_NNS fulfil_NN different_JJ needs_NNS ._. Literature_NNP provides_VBZ
+        ideas_NNS and_CC new_JJ hypotheses_NNS ,_, but_CC is_VBZ not_RB constrained_VBN to_TO provide_VB facts_NNS in_IN formats_NNS suitable_JJ for_IN
+        use_NN in_IN databases_NNS ._. By_IN contrast_NN ,_, databases_NNS efficiently_RB provide_VBP large_JJ quantities_NNS of_IN data_NNS and_CC
+        information_NN in_IN a_DT standardised_JJ schema_NN representing_VBG a_DT predefined_JJ interpretation_NN of_IN the_DT data_NNS ._.
+        While_IN the_DT acceptance_NN of_IN a_DT paper_NN can_MD enforce_VB the_DT submission_NN of_IN data_NNS to_TO a_DT central_JJ data_NN
+        repository_NN ,_, such_JJ as_IN EMBL_NNP (_( www_NN ._. ebi_NN ._. ac_NN ._. uk_NN /_NN embl_NN /_NN )_) or_CC ArrayExpress_NNP
+        (_( www_NN ._. ebi_NN ._. ac_NN ._. uk_NN /_NN arrayexpress_NNS /_NN )_) ,_, nobody_NN receives_VBZ credit_NN for_IN the_DT submission_NN of_IN a_DT fact_NN to_TO a_DT
+        database_NN without_IN an_DT associated_VBN publication_NN ._. As_RB long_RB as_IN this_DT practice_NN continues_VBZ ,_, curation_NN
+        will_MD be_VB necessary_JJ to_TO add_VB the_DT (_( re_NN )_) formalised_JJ facts_NNS to_TO biological_JJ databases_NNS ._.
+        Given_VBN that_IN publications_NNS are_VBP not_RB about_IN to_TO be_VB replaced_VBN with_IN routine_JJ deposition_NN of_IN data_NNS
+        into_IN databases_NNS ,_, is_VBZ it_PRP possible_JJ to_TO develop_VB software_NN tools_NNS to_TO support_VB the_DT work_NN of_IN the_DT
+        curator_NN ?_. Could_MD we_PRP automatically_RB analyse_NN new_JJ scientific_JJ publications_NNS routinely_RB to_TO extract_VB
+        facts_NNS ,_, which_WDT could_MD then_RB be_VB inserted_VBN into_IN scientific_JJ databases_NNS ?_. Could_MD we_PRP tag_VB gene_NN and_CC
+        protein_NN names_NNS ,_, as_RB well_RB as_IN other_JJ terms_NNS in_IN the_DT document_NN ,_, so_IN that_IN they_PRP are_VBP easier_JJR to_TO
+        recognise_NN ?_. How_WRB can_MD we_PRP use_VBP controlled_VBD vocabularies_NNS and_CC ontologies_NNS to_TO identify_VB biological_JJ
+        concepts_NNS and_CC phenomena_NNS ?_. Fortunately_RB ,_, there_EX are_VBP many_JJ groups_NNS that_WDT are_VBP now_RB seeking_VBG to_TO answer_VB
+        these_DT questions_NNS ,_, precisely_RB with_IN a_DT view_NN to_TO extracting_VBG facts_NNS from_IN text_NN ._.
+        Part_NN of_IN the_DT motivation_NN for_IN this_DT effort_NN in_IN text_NN mining_NN technology_NN is_VBZ the_DT inexorable_JJ rise_NN
+        in_IN the_DT amount_NN of_IN published_VBN literature_NN (_( Figure_NN 1_LS )_) ._. This_DT massive_JJ growth_NN ,_, coupled_VBN with_IN the_DT
+        current_JJ inefficiencies_NNS in_IN transferring_VBG facts_NNS into_IN other_JJ data_NNS resources_NNS ,_, leads_VBZ to_TO the_DT
+        unfortunate_JJ state_NN that_IN biological_JJ databases_NNS tend_VBP to_TO be_VB incomplete_JJ (_( for_IN example_NN ,_, DNA_NNP
+        sequences_NNS without_IN known_VBN function_NN in_IN genetic_JJ databases_NNS )_) ,_, and_CC there_EX are_VBP inconsistencies_NNS
+        between_IN databases_NNS and_CC literature_NN ._.
+        In_IN theory_NN ,_, text_NN mining_NN is_VBZ the_DT perfect_JJ solution_NN to_TO transforming_VBG factual_JJ knowledge_NN from_IN
+        publications_NNS into_IN database_NN entries_NNS ._. But_CC computational_NN linguists_NNS have_VBP not_RB yet_RB developed_VBN
+        tools_NNS that_WDT can_MD analyse_NN more_JJR than_IN 30_CD %_NN of_IN English_NNP sentences_NNS correctly_RB and_CC transform_VB them_PRP into_IN
+        a_DT structured_VBN formal_JJ representation_NN [_NN 1_CD ,_, 2_CD ]_NN ._. We_PRP can_MD analyse_NN part_NN of_IN a_DT sentence_NN ,_, such_JJ as_IN a_DT
+        subphrase_NN describing_VBG a_DT protein–protein_NN interaction_NN or_CC part_NN of_IN a_DT sentence_NN containing_VBG a_DT gene_NN
+        and_CC a_DT protein_NN name_NN ,_, but_CC we_PRP always_RB run_VBP into_IN Zipf_NNP 's_POS law_NN whenever_WRB we_PRP write_VBP down_RP the_DT rules_NNS for_IN
+        how_WRB the_DT extraction_NN is_VBZ done_VBN (_( Figure_NN 2_LS )_) [_NN 3_CD ]_NN ._. A_DT small_JJ number_NN of_IN patterns_NNS describe_VBP a_DT reasonable_JJ
+        portion_NN of_IN protein–protein_NN interactions_NNS ,_, gene_NN names_NNS ,_, or_CC mutations_NNS ,_, but_CC many_JJ of_IN those_DT
+        entities_NNS are_VBP described_VBN by_IN a_DT pattern_NN of_IN words_NNS that_DT 's_VBZ only_RB ever_RB used_VBN once_RB ._. Even_RB if_IN we_PRP could_MD
+        collect_VB them_PRP all—which_NN is_VBZ impossible—we_NN ca_MD n't_RB stop_VB new_JJ phrases_NNS from_IN being_VBG used_VBN ._.
+      
+      
+        Curators—_NNP The_DT Gold_NNP Standard_NNP
+        Hand-curated_NNP data_NNS is_VBZ precise_JJ ,_, because_IN the_DT curator_NN is_VBZ trained_VBN to_TO inspect_VB literature_NN and_CC
+        databases_NNS ,_, select_VB only_RB high-quality_JJ data_NNS ,_, and_CC reformat_NN the_DT facts_NNS according_VBG to_TO the_DT schema_NN of_IN
+        the_DT database_NN ._. In_IN addition_NN ,_, curators_NNS select_VBP citations_NNS from_IN the_DT text_NN as_IN evidence_NN for_IN the_DT
+        identified_VBN fact_NN ,_, and_CC those_DT citations_NNS are_VBP also_RB added_VBN to_TO the_DT database_NN ._.
+        Curators_NNP read_VBD and_CC interpret_VB the_DT text_NN at_IN the_DT same_JJ time_NN ,_, and_CC if_IN they_PRP do_VBP n't_RB understand_VB the_DT
+        meaning_NN of_IN a_DT sentence_NN ,_, they_PRP can_MD go_VB back_RB and_CC pick_VB a_DT new_JJ strategy_NN to_TO analyse_NN it—they_NN can_MD even_RB
+        call_VB the_DT authors_NNS to_TO iron_VB out_RP any_DT ambiguities_NNS ._. Curators_NNP can_MD also_RB cope_VB with_IN the_DT high_JJ
+        variability_NN of_IN language_NN described_VBN by_IN Zipf_NNP 's_POS law_NN ._. At_IN present_JJ ,_, no_DT computer-based_JJ system_NN comes_VBZ
+        close_RB to_TO matching_VBG these_DT capabilities_NNS ._. In_IN particular_JJ ,_, it_PRP is_VBZ difficult_JJ to_TO convert_VB all_DT the_DT
+        curators_NNS '_POS domain_NN knowledge_NN into_IN a_DT structured_VBN training_NN set_VBN for_IN the_DT purposes_NNS of_IN machine_NN
+        learning_VBG approaches_NNS ._.
+        Curators_NNP fulfil_NN a_DT second_JJ important_JJ task_NN :_: they_PRP know_VBP how_WRB to_TO define_VB standards_NNS for_IN data_NNS
+        consistency_NN ,_, in_IN particular_JJ ,_, the_DT most_RBS relevant_JJ terminology_NN ,_, which_WDT has_VBZ led_VBN to_TO the_DT design_NN of_IN
+        standardised_JJ ontologies_NNS and_CC controlled_VBN vocabularies_NNS (_( see_VB Box_NNP 1_CD for_IN an_DT explanation_NN of_IN these_DT
+        and_CC related_VBN terms_NNS )_) ._. Examples_NNS of_IN these_DT include_VBP Gene_NNP Ontology_NNP (_( GO_NNP ;_: www_NN ._. geneontology_NN ._. org_NN /_NN )_) ,_,
+        Unified_NNP Medical_NNP Language_NNP System_NNP (_( www_NN ._. nlm_NN ._. nih_NN ._. gov_NN /_NN research_NN /_NN umls_NNS /_NN )_) ,_, and_CC MedDRA_NNP
+        (_( www_NN ._. meddramsso_NN ._. com_NN /_NN NewWeb_NNP 2003_CD /_NN index_NN ._. htm_NN )_) [_NN 4_CD ]_NN ._. These_DT terminological_JJ resources_NNS help_VBP to_TO
+        relate_VB entries_NNS in_IN bioinformatics_NNS databases_NNS to_TO concepts_NNS mentioned_VBN in_IN scientific_JJ publications_NNS
+        and_CC to_TO link_VB related_VBD information_NN in_IN databases_NNS using_VBG different_JJ schemas_NNS ._. Text_NNP miners_NNS would_MD
+        love_VB such_JJ standards_NNS to_TO be_VB used_VBN in_IN text_NN ,_, but_CC there_EX is_VBZ an_DT understandable_JJ reluctance_NN to_TO impose_VB
+        and_CC use_VB standards_NNS that_WDT might_MD limit_VB the_DT expressiveness_NNS of_IN natural_JJ language_NN ._.
+      
+      
+        Curation_NNP and_CC Text_NNP Mining—_NNP In_IN Partnership_NNP
+        The_DT problem_NN with_IN curation_NN of_IN data_NNS is_VBZ that_IN it_PRP is_VBZ time_NN consuming_NN and_CC costly_JJ ,_, and_CC therefore_RB
+        has_VBZ to_TO focus_VB on_IN the_DT most_RBS relevant_JJ facts_NNS ._. This_DT compromises_VBZ the_DT completeness_NN of_IN the_DT curated_JJ
+        data_NN ,_, and_CC curation_NN teams_NNS are_VBP doomed_VBN to_TO stay_VB behind_IN the_DT latest_JJS publications_NNS ._. So_RB ,_, is_VBZ it_PRP
+        possible_JJ for_IN curation_NN and_CC text_NN mining_NN to_TO work_VB together_RB for_IN rapid_JJ retrieval_NN and_CC analysis_NN of_IN
+        facts_NNS with_IN precise_JJ postprocessing_VBG and_CC standardisation_NN of_IN the_DT extracted_VBN information_NN ?_.
+        There_EX are_VBP several_JJ software_NN tools_NNS that_WDT perform_VBP well_RB in_IN the_DT identification_NN of_IN standardised_JJ
+        terms_NNS from_IN the_DT literature_NN ._. Examples_NNS include_VBP Textpresso_NNP and_CC Whatizit_NNP [_NN 5_CD ,_, 6_CD ,_, 7_CD ,_, 8_CD ]_NN ._. Extensive_NNP
+        term_NN lists_NNS come_VBP from_IN the_DT Human_NNP Genome_NNP Organization_NNP (_( www_NN ._. gene_NN ._. ucl_NN ._. ac_NN ._. uk_NN /_NN hugo_NN ;_: 20_CD ,_, 000_CD gene_NN
+        and_CC protein_NN names_NNS )_) ,_, GO_NNP (_( almost_RB 20_CD ,_, 000_CD terms_NNS )_) ,_, Uniprot_NNP /_NN Swiss-_NNP Prot_NNP
+        (_( www_NN ._. ebi_NN ._. uniprot_NN ._. org_NN /_NN index_NN ._. shtml_NN ;_: about_IN 200_CD ,_, 000_CD terms_NNS )_) ,_, and_CC other_JJ databases_NNS ._. In_IN addition_NN ,_,
+        terms_NNS describing_VBG diseases_NNS ,_, syndromes_NNS ,_, and_CC drugs_NNS are_VBP available_JJ from_IN the_DT Unified_NNP Medical_NNP
+        Language_NNP System_NNP ._. Altogether_RB ,_, about_IN 500_CD ,_, 000_CD terms_NNS constitute_VBP the_DT basis_NN of_IN domain_NN knowledge_NN
+        in_IN life_NN sciences_NNS ._. To_TO gain_VB some_DT perspective_NN of_IN this_DT figure_NN :_: an_DT average_JJ individual_JJ handles_VBZ
+        2_CD ,_, 000_CD to_TO 20_CD ,_, 000_CD terms_NNS in_IN his_PRP$ or_CC her_PRP$ daily_JJ language_NN ,_, and_CC 
+        Merriam-_NNP Webster_NNP 's_POS Collegiate_NNP Dictionary_NNP provides_VBZ definitions_NNS for_IN 225_CD ,_, 000_CD
+        terms_NNS (_( www_NN ._. merriam-webstercollegiate_JJ ._. com_NN /_NN )_) ._.
+        The_DT identification_NN of_IN all_DT terms_NNS by_IN a_DT text_NN mining_NN system_NN still_RB sets_VBZ challenging_VBG demands_NNS ._.
+        All_DT variants_NNS of_IN a_DT term_NN have_VBP to_TO be_VB taken_VBN into_IN account_NN ,_, including_VBG syntactical_JJ variants_NNS and_CC
+        synonyms_NNS ._. In_IN the_DT case_NN of_IN ambiguities_NNS ,_, relevant_JJ findings_NNS have_VBP to_TO be_VB distinguished_VBN from_IN other_JJ
+        findings—a_NN process_NN referred_VBD to_TO as_IN disambiguation_NN ._. Depending_VBG on_IN the_DT curation_NN task_NN ,_, it_PRP might_MD
+        therefore_RB be_VB advantageous_JJ to_TO select_VB only_RB part_NN of_IN the_DT terminological_JJ resources_NNS and_CC thus_RB
+        restrict_VB the_DT domain_NN of_IN the_DT terminology_NN to_TO the_DT curators_NNS '_POS needs_VBZ (_( Figure_NN 3_LS )_) ._.
+        Available_NNP text_NN mining_NN solutions_NNS are_VBP concerned_VBN with_IN named_VBN entity_NN (_( NE_NNP )_) recognition_NN
+        (_( entities_NNS are_VBP ,_, for_IN example_NN ,_, proteins_NNS ,_, species_NNS ,_, and_CC cell_NN lines_NNS )_) ,_, with_IN identification_NN of_IN
+        relationships_NNS between_IN NEs_NNP (_( such_JJ as_IN protein_NN interactions_NNS )_) ,_, and_CC with_IN the_DT classification_NN of_IN
+        text_NN subphrases_NNS according_VBG to_TO annotation_NN schemata_NN in_IN general_JJ (_( thyroid_NN receptor_NN is_VBZ a_DT thyroid_NN
+        hormone_NN receptor_NN )_) [_NN 9_CD ,_, 10_CD ,_, 11_CD ,_, 12_CD ,_, 13_CD ,_, 14_CD ,_, 15_CD ]_NN ._. Whilst_NNP the_DT identification_NN of_IN a_DT curation_NN team_NN 's_POS
+        terminology_NN in_IN the_DT scientific_JJ text_NN under_IN scrutiny_NN is_VBZ immensely_RB valuable_JJ ,_, there_EX is_VBZ still_RB a_DT
+        long_JJ way_NN to_TO go_VB before_IN this_DT becomes_VBZ routine_JJ ._.
+      
+      
+        Some_DT Immediate_NNP Challenges_VBZ
+        Not_RB all_DT terms_NNS used_VBN in_IN the_DT literature_NN (_( NEs_NNP )_) can_MD actually_RB be_VB found_VBN in_IN some_DT kind_NN of_IN
+        database_NN (_( perhaps_RB because_IN of_IN an_DT author_NN error_NN ,_, or_CC an_DT alternative_JJ name_NN for_IN an_DT entity_NN adopted_VBN
+        by_IN the_DT community_NN )_) ._. Text_NNP mining_NN methods_NNS therefore_RB have_VBP to_TO detect_VB new_JJ terms_NNS and_CC map_VB the_DT term_NN
+        to_TO known_VBN terminology_NN [_NN 16_CD ]_NN ._. If_IN several_JJ mappings_NNS are_VBP possible_JJ ,_, the_DT correct_JJ version_NN has_VBZ to_TO be_VB
+        selected_VBN (_( disambiguation_NN )_) ._.
+        Over_IN the_DT past_JJ several_JJ years_NNS text_NN mining_VBG research_NN teams_NNS have_VBP presented_VBN various_JJ approaches_NNS
+        that_WDT train_NN a_DT software_NN tool_NN to_TO locate_VB representations_NNS of_IN gene_NN or_CC protein_NN names_NNS (_( for_IN example_NN ,_,
+        BioCreative_NNP ,_, www_NN ._. pdg_NN ._. cnb_NN ._. uam_NN ._. es_NNS /_NN BioLINK_NNP /_NN BioCreative_NNP ._. eval_NN ._. html_NN ,_, and_CC JNLPBA_NNP ,_,
+        www_NN ._. genisis_NNS ._. ch_NN /_NN ~_NN natlang_NN /_NN JNLPBA_NNP 04_CD /_NN )_) [_NN 17_CD ,_, 18_CD ]_NN ._. These_DT tools_NNS are_VBP scored_VBN with_IN a_DT statistic_NN known_VBN
+        as_IN the_DT F-_NNP measure_NN ,_, with_IN the_DT best_JJS methods_NNS scoring_VBG about_IN 0_CD ._. 85_CD ._. At_IN the_DT level_NN of_IN 0_CD ._. 85_CD ,_, curators_NNS
+        still_RB tend_VBP to_TO be_VB unhappy_JJ ._. However_RB ,_, analyses_NNS have_VBP shown_VBN that_IN this_DT score_NN is_VBZ in_IN the_DT range_NN of_IN
+        curator–curator_NN variation_NN (_( unpublished_JJ data_NNS ,_, measured_VBN as_IN part_NN of_IN the_DT project_NN work_NN for_IN
+        [_NN 19_CD ]_NN )_) ,_, which_WDT suggests_VBZ that_IN such_JJ methods_NNS produce_VBP useful_JJ results_NNS ._.
+        Additional_JJ information-extraction_JJ methods_NNS have_VBP been_VBN proposed_VBN ,_, for_IN example_NN ,_, for_IN the_DT
+        documentation_NN of_IN mutations_NNS in_IN specific_JJ genes_NNS and_CC for_IN the_DT extraction_NN of_IN the_DT subcellular_NN
+        location_NN of_IN proteins_NNS [_NN 11_CD ,_, 13_CD ]_NN ._. An_DT even_RB larger_JJR number_NN of_IN tools_NNS focus_VBP on_IN the_DT identification_NN of_IN
+        appropriate_JJ terminology_NN for_IN the_DT annotation_NN of_IN genes_NNS (_( GO_NNP terms_NNS )_) [_NN 7_CD ]_NN ._. The_DT evaluation_NN of_IN their_PRP$
+        usefulness_NN depends_VBZ on_IN the_DT demands_NNS of_IN the_DT user_NN groups_NNS ._. Finally_RB ,_, another_DT way_NN to_TO support_VB
+        curation_NN teams_NNS would_MD be_VB to_TO provide_VB information-retrieval_JJ methods_NNS to_TO guide_VB the_DT team_NN members_NNS
+        towards_IN documents_NNS containing_VBG relevant_JJ information_NN ._. For_IN example_NN ,_, in_IN 2002_CD ,_, the_DT participants_NNS
+        in_IN the_DT Knowledge_NNP Discovery_NNP and_CC Data-_NNP Mining_NNP Challenge_NNP Cup_NNP
+        (_( www_NN ._. cs_NNS ._. cornell_NN ._. edu_NN /_NN projects_NNS /_NN kddcup_NN /_NN )_) had_VBD to_TO select_VB documents_NNS from_IN a_DT given_VBN corpus_NN that_WDT
+        contained_VBD relevant_JJ experimental_JJ results_NNS about_IN 
+        Drosophila_NNP [_NN 20_CD ]_NN ._.
+      
+      
+        How_WRB Can_MD Publishers_NNPS Contribute_NNP ?_.
+        For_IN all_DT automated_VBN information-extraction_JJ methods_NNS ,_, it_PRP is_VBZ obvious_JJ that_DT access_NN to_TO
+        literature_NN is_VBZ crucial_JJ ._. Electronic_JJ access_NN has_VBZ ,_, of_IN course_NN ,_, already_RB had_VBD a_DT huge_JJ impact_NN ,_, but_CC the_DT
+        structure_NN and_CC organisation_NN of_IN manuscripts_NNS could_MD also_RB be_VB improved_VBN ._. For_IN example_NN ,_, semantic_JJ
+        tags_NNS could_MD be_VB integrated_VBN into_IN the_DT text_NN ._. The_DT markup_NN would_MD not_RB appear_VB on_IN web_NN pages_NNS or_CC when_WRB
+        the_DT document_NN is_VBZ printed_VBN ,_, but_CC it_PRP would_MD help_VB software_NN to_TO deal_VB with_IN semantic_JJ aspects_NNS of_IN the_DT
+        document_NN ._. Inserting_NNP tags_NNS ,_, for_IN example_NN ,_, to_TO mark_VB protein_NN names_NNS would_MD allow_VB retrieval_NN software_NN
+        to_TO find_VB documents_NNS about_IN proteins_NNS even_RB if_IN they_PRP look_VBP like_IN common_JJ English_NNP words_NNS ,_, such_JJ as_IN “ you_PRP”
+        or_CC “ and_CC” ._. Retrieval_NNP engines_NNS currently_RB often_RB ignore_VB such_JJ terms_NNS ._. In_IN addition_NN ,_, explicit_JJ tags_NNS
+        would_MD enable_VB text_NN mining_NN methods_NNS ,_, for_IN example_NN ,_, when_WRB looking_VBG for_IN protein–protein_NN
+        interactions_NNS ,_, to_TO use_VB the_DT correct_JJ semantic_JJ interpretation_NN ._.
+        Text_NNP mining_NN systems_NNS already_RB available_JJ today_NN ,_, such_JJ as_IN Whatizit_NNP ,_, can_MD integrate_VB semantic_JJ
+        tags_NNS during_IN submission_NN ,_, which_WDT have_VBP to_TO be_VB verified_VBN by_IN the_DT author_NN ._. Text_NNP mining_NN is_VBZ ready_JJ to_TO
+        deliver_VB tools_NNS whereby_WRB information_NN is_VBZ passed_VBN back_RB to_TO the_DT authors_NNS about_IN the_DT proper_JJ use_NN of_IN
+        terminology_NN within_IN their_PRP$ documents_NNS ._. If_IN the_DT use_NN of_IN a_DT term_NN raises_VBZ conflicts_NNS or_CC ambiguities_NNS or_CC
+        if_IN the_DT use_NN of_IN a_DT term_NN is_VBZ wrong_JJ ,_, the_DT author_NN is_VBZ asked_VBN to_TO provide_VB feedback_NN ._. The_DT curation_NN effort_NN
+        is_VBZ resolved_VBN at_IN the_DT earliest_JJS possible_JJ time-point_JJ ._. Author_NN ,_, publisher_NN ,_, reviewer_NN ,_, and_CC reader_NN
+        profit_NN from_IN consistent_JJ information_NN representation_NN ,_, which_WDT leads_VBZ to_TO better_JJR dissemination_NN of_IN
+        documents_NNS and_CC journals_NNS and_CC easily_RB offsets_NNS the_DT additional_JJ cost_NN in_IN the_DT generation_NN of_IN an_DT
+        article_NN ._. Publishers_NNS and_CC authors_NNS have_VBP to_TO agree_VB on_IN standards_NNS though_IN ._.
+      
+      
+        Is_VBZ Text_NNP Mining_NNP Ready_JJ to_TO Deliver_VB ?_.
+        Text_NNP mining_NN solutions_NNS have_VBP found_VBN their_PRP$ way_NN into_IN daily_JJ work_NN ,_, wherever_WRB fast_RB and_CC precise_JJ
+        extraction_NN of_IN details_NNS from_IN a_DT large_JJ volume_NN of_IN text_NN is_VBZ needed_VBN ._. We_PRP have_VBP to_TO keep_VB in_IN mind_NN ,_,
+        however_RB ,_, that_IN any_DT text_NN mining_NN tool_NN ,_, just_RB like_IN other_JJ bioinformatics_NNS resources_NNS ,_, will_MD only_RB be_VB
+        suitable_JJ for_IN a_DT limited_JJ number_NN of_IN tasks_NNS ._. For_IN example_NN ,_, the_DT same_JJ text_NN may_MD serve_VB curators_NNS from_IN
+        different_JJ communities_NNS who_WP extract_VB different_JJ types_NNS of_IN facts_NNS ,_, depending_VBG on_IN their_PRP$ domain_NN
+        knowledge_NN ._. Furthermore_RB ,_, different_JJ communities_NNS have_VBP different_JJ expectations_NNS for_IN accuracy_NN ._. For_IN
+        example_NN ,_, curators_NNS dealing_VBG with_IN a_DT small_JJ set_NN of_IN proteins_NNS prefer_VBP tools_NNS with_IN high_JJ recall_NN ,_,
+        whereas_IN curators_NNS dealing_VBG with_IN a_DT large_JJ number_NN of_IN proteins_NNS prefer_VBP tools_NNS with_IN high_JJ
+        precision_NN ._.
+        Although_IN text_NN mining_NN cannot_NN dissect_NN English_NNP sentences_NNS completely_RB ,_, and_CC cannot_NN extract_NN the_DT
+        meaning_VBG and_CC put_VBD the_DT facts_NNS into_IN a_DT database_NN ,_, text_NN mining_NN tools_NNS are_VBP becoming_VBG increasingly_RB used_VBN
+        and_CC valued_VBN ._. Text_NNP mining_NN is_VBZ ready_JJ to_TO deliver_VB handling_NN of_IN complex_JJ terminology_NN and_CC
+        nomenclature_NN as_IN a_DT mature_VBP service_NN ._. It_PRP is_VBZ only_RB a_DT matter_NN of_IN time_NN and_CC effort_NN before_IN we_PRP are_VBP able_JJ
+        to_TO extract_VB facts_NNS automatically_RB ._. The_DT consequences_NNS are_VBP likely_JJ to_TO be_VB profound_JJ ._. Not_RB only_RB will_MD
+        we_PRP have_VB a_DT more_RBR effective_JJ approach_NN for_IN the_DT mining_NN of_IN knowledge_NN from_IN the_DT literature_NN ,_, our_PRP$
+        approach_NN to_TO the_DT publication_NN process_NN itself_PRP might_MD change_VB ._. If_IN a_DT fact_NN is_VBZ clear_JJ enough_RB for_IN
+        automatic_JJ extraction_NN ,_, it_PRP could_MD be_VB reported_VBN in_IN a_DT fact_NN database_NN instead_RB of_IN a_DT publication_NN ._. As_IN
+        methods_NNS improve_VBP ,_, authors_NNS will_MD see_VB more_JJR and_CC more_JJR of_IN their_PRP$ text_NN being_VBG analysed_JJ and_CC formalised_JJ
+        in_IN a_DT database_NN ._. If_IN appropriate_JJ quality_NN control_NN is_VBZ provided_VBN ,_, and_CC if_IN authors_NNS receive_VBP due_JJ
+        credit_NN for_IN their_PRP$ deposition_NN of_IN facts_NNS into_IN databases_NNS ,_, we_PRP might_MD well_RB see_VB a_DT shift_NN towards_IN
+        original_JJ papers_NNS describing_VBG new_JJ creative_JJ ideas_NNS and_CC visions_NNS rather_RB than_IN just_RB listing_VBG
+        facts_NNS ._.
+      
+    
+  

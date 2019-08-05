@@ -1,0 +1,1173 @@
+
+  
+    
+      
+        Background_NNP
+        Accurate_NNP computational_NN protein_NN function_NN analysis_NN is_VBZ an_DT
+        important_JJ way_NN of_IN extracting_VBG value_NN from_IN primary_JJ sequence_NN
+        data_NNS ._. Due_JJ to_TO the_DT large_JJ amount_NN of_IN data_NNS ,_, automated_VBN systems_NNS
+        seem_VBP unavoidable_JJ (_( at_IN least_JJS for_IN initial_JJ ,_, prioritizing_VBG
+        steps_NNS )_) ._. Such_JJ efforts_NNS are_VBP complicated_VBN ,_, for_IN a_DT variety_NN of_IN
+        reasons_NNS ._. Many_JJ proteins_NNS belong_VBP to_TO large_JJ families_NNS ,_, as_IN
+        suggested_VBN by_IN Dayhoff_NNP [_NN 1_CD ]_NN ._. Such_JJ families_NNS are_VBP often_RB
+        composed_VBN of_IN subfamilies_NNS related_VBN to_TO each_DT other_JJ by_IN gene_NN
+        duplication_NN events_NNS ._. For_IN example_NN ,_, Ingram_NNP [_NN 2_CD ]_NN showed_VBD that_IN
+        human_JJ α_NN ,_, β_NN ,_, and_CC γ_NN chains_NNS of_IN hemoglobins_NNS are_VBP related_VBN to_TO each_DT
+        other_JJ by_IN gene_NN duplications_NNS ._. Gene_NNP duplication_NN allows_VBZ one_CD
+        copy_NN to_TO assume_VB a_DT new_JJ biological_JJ role_NN through_IN mutation_NN ,_,
+        while_IN the_DT other_JJ copy_NN preserves_VBZ the_DT original_JJ functionality_NN [_NN
+        3_CD 4_CD ]_NN ._. Hence_RB ,_, subfamilies_NNS often_RB differ_VBP in_IN their_PRP$ biological_JJ
+        functionality_NN yet_RB still_RB exhibit_VB a_DT high_JJ degree_NN of_IN sequence_NN
+        similarity_NN ._.
+        Other_JJ complications_NNS in_IN functional_JJ analysis_NN include_VBP :_:
+        ignoring_VBG the_DT multi-domain_JJ organization_NN of_IN proteins_NNS ;_: error_NN
+        propagation_NN caused_VBN by_IN transfer_NN of_IN information_NN from_IN
+        previously_RB erroneously_RB annotated_JJ sequences_NNS ;_: insufficient_JJ
+        masking_VBG of_IN low_JJ complexity_NN regions_NNS ;_: and_CC alternative_NN splicing_VBG
+        [_NN 5_CD ]_NN ._.
+        Typically_RB ,_, automated_VBN sequence_NN function_NN analysis_NN relies_VBZ
+        on_IN pairwise_NN sequence_NN similarity_NN and_CC programs_NNS such_JJ as_IN BLAST_NN
+        [_NN 6_CD ]_NN or_CC FASTA_NNP [_NN 7_CD ]_NN ._. Annotating_NNP a_DT sequence_NN by_IN
+        transferring_VBG annotation_NN from_IN its_PRP$ most_RBS similar_JJ sequence_NN (_( s_VBZ )_)
+        tends_VBZ to_TO produce_VB overly_RB specific_JJ annotation_NN ._. In_IN contrast_NN ,_,
+        analyses_NNS using_VBG profile_NN search_NN algorithms_NNS such_JJ as_IN HMMER_NNP
+        http_NN :_: /_NN /_NN hmmer_NN ._. wustl_NN ._. edu_NN /_NN and_CC Pfam_NNP [_NN 8_CD ]_NN classify_VB sequences_NNS
+        too_RB generally_RB ._. They_PRP recognize_VBP that_IN a_DT query_NN sequence_NN belongs_VBZ
+        to_TO a_DT certain_JJ family_NN (_( or_CC ,_, to_TO be_VB more_RBR precise_JJ ,_, indicate_VBP which_WDT
+        domain_NN (_( s_VBZ )_) the_DT query_NN is_VBZ likely_JJ to_TO contain_VB )_) ,_, but_CC do_VBP not_RB
+        subclassify_NN the_DT sequence_NN ._.
+        At_IN least_JJS two_CD scenarios_NNS can_MD cause_VB misleading_JJ predictions_NNS
+        when_WRB using_VBG pairwise_NN sequence_NN similarity_NN alone_RB for_IN
+        annotation_NN :_: (_( i_NNP )_) not_RB having_VBG a_DT known_VBN annotated_JJ representative_NN
+        of_IN the_DT correct_JJ subfamily_RB because_IN incomplete_JJ sequence_NN
+        databases_NNS and_CC /_NN or_CC gene_NN loss_NN (_( Figure_NN 1_LS )_) ,_, and_CC (_( ii_NN )_) unequal_JJ
+        rates_NNS of_IN evolution_NN (_( Figure_NN 2_LS )_) ._. The_DT case_NN of_IN trying_VBG to_TO
+        annotate_NN the_DT first_JJ (_( or_CC only_RB )_) representative_NN of_IN a_DT novel_NN
+        subfamily_RB is_VBZ of_IN particular_JJ interest_NN ._. Pairwise_NNP similarity_NN
+        based_VBD methods_NNS alone_RB cannot_NN recognize_VB that_IN a_DT new_JJ sequence_NN
+        does_VBZ not_RB belong_VB in_IN any_DT currently_RB known_VBN subfamily_RB (_( e_SYM ._. g_SYM ._.
+        "_'' orphan_JJ "_'' G-_NNP protein_NN coupled_VBN receptors_NNS )_) ,_, because_IN every_DT
+        sequence_NN is_VBZ most_RBS similar_JJ to_TO something_NN ._. In_IN contrast_NN ,_, when_WRB
+        constructing_VBG a_DT phylogenetic_JJ tree_NN ,_, this_DT case_NN is_VBZ easy_JJ to_TO
+        observe_VB (_( as_IN illustrated_VBN in_IN Figure_NN 1_LS )_) ._. A_DT human_JJ annotator_NN can_MD
+        use_VB phylogenetic_JJ tree_NN analysis_NN to_TO place_VB a_DT new_JJ sequence_NN in_IN
+        the_DT subfamily_RB structure_NN of_IN a_DT gene_NN tree_NN of_IN known_VBN sequences_NNS ._.
+        This_DT approach_NN was_VBD called_VBN "_'' phylogenomics_NNS "_'' by_IN Eisen_NNP [_NN 9_CD ]_NN ._.
+        It_PRP would_MD be_VB desirable_JJ to_TO automate_NN this_DT procedure_NN ,_, but_CC the_DT
+        best_RBS automated_VBN methods_NNS for_IN subfamily_RB annotation_NN ,_, such_JJ as_IN
+        the_DT COGs_NNP database_NN [_NN 10_CD ]_NN ,_, are_VBP clustering_VBG methods_NNS that_WDT do_VBP
+        not_RB directly_RB use_VB phylogenetic_JJ analysis_NN ._.
+        It_PRP is_VBZ infeasible_JJ to_TO completely_RB automate_NN functional_JJ
+        analysis_NN ,_, because_IN it_PRP is_VBZ impossible_JJ to_TO precisely_RB define_VB what_WP
+        protein_NN "_'' function_NN "_'' means_NNS ._. However_RB ,_, a_DT principle_NN of_IN
+        phylogenomics_NNS is_VBZ that_IN orthologous_JJ sequences_NNS (_( that_IN diverged_JJ
+        by_IN speciation_NN )_) are_VBP more_RBR likely_JJ to_TO conserve_VB protein_NN function_NN
+        than_IN paralogous_JJ sequences_NNS (_( that_IN diverged_JJ by_IN gene_NN
+        duplication_NN )_) ._. Orthology_NNP and_CC paralogy_NN are_VBP well_RB defined_VBN and_CC
+        can_MD be_VB inferred_VBN from_IN gene_NN and_CC species_NNS trees_NNS ._. One_CD useful_JJ and_CC
+        automatable_JJ phylogenomics_NNS approach_VBP would_MD be_VB as_IN follows_VBZ :_: if_IN
+        a_DT novel_NN sequence_NN has_VBZ orthologs_NNS ,_, annotation_NN can_MD be_VB
+        transferred_VBN from_IN them_PRP (_( as_IN in_IN best_JJS BLAST_NN analysis_NN )_) ;_: if_IN there_EX
+        are_VBP no_DT orthologs_NNS ,_, the_DT sequence_NN is_VBZ classified_VBN as_IN just_RB a_DT
+        family_NN member_NN (_( as_IN in_IN Pfam_NNP /_NN InterPro_NNP analysis_NN )_) and_CC flagged_JJ as_IN
+        possibly_RB the_DT first_JJ representative_NN of_IN a_DT novel_NN subfamily_RB ._. At_IN
+        the_DT core_NN of_IN such_JJ approaches_NNS stands_VBZ therefore_RB the_DT
+        distinction_NN between_IN orthologs_NNS and_CC paralogs_NNS ,_, and_CC hence_RB the_DT
+        ability_NN to_TO discriminate_JJ between_IN duplication_NN and_CC speciation_NN
+        events_NNS on_IN a_DT gene_NN tree_NN ._. Various_JJ efficient_JJ algorithms_NNS to_TO
+        infer_NN gene_NN duplications_NNS on_IN a_DT gene_NN tree_NN by_IN comparing_VBG it_PRP to_TO a_DT
+        species_NNS tree_NN have_VBP been_VBN described_VBN (_( for_IN example_NN :_: by_IN
+        Eulenstein_NNP [_NN 11_CD ]_NN ,_, and_CC by_IN Zhang_NNP [_NN 12_CD ]_NN )_) ._. We_PRP developed_VBD a_DT
+        simple_JJ algorithm_NN (_( named_VBN SDI_NNP for_IN Speciation_NNP Duplication_NNP
+        Inference_NNP )_) that_WDT appears_VBZ to_TO solve_VB this_DT problem_NN even_RB more_RBR
+        efficiently_RB on_IN realistic_JJ data_NNS sets_NNS ,_, though_IN it_PRP has_VBZ an_DT
+        asymptotic_JJ worst-case_JJ running_NN time_NN that_WDT is_VBZ less_RBR favorable_JJ [_NN
+        13_CD ]_NN ._.
+        In_IN practice_NN ,_, phylogenetic_JJ trees_NNS are_VBP unreliable_JJ ._. Errors_NNP
+        in_IN trees_NNS will_MD produce_VB spurious_JJ inferred_VBN duplications_NNS ._. This_DT
+        is_VBZ obviously_RB problematic_JJ if_IN duplications_NNS are_VBP to_TO be_VB used_VBN as_IN
+        indicators_NNS of_IN potential_JJ functional_JJ changes_NNS ._. Therefore_RB ,_,
+        instead_RB of_IN determining_VBG the_DT orthologs_NNS of_IN a_DT query_NN sequence_NN on_IN
+        just_RB one_CD gene_NN tree_NN ,_, inference_NN could_MD be_VB performed_VBN over_IN
+        bootstrap_NN resampled_JJ gene_NN trees_NNS [_NN 14_CD 15_CD ]_NN to_TO estimate_NN of_IN the_DT
+        reliability_NN of_IN the_DT assignments_NNS ._. Here_RB we_PRP describe_VBP and_CC test_VB a_DT
+        procedure_NN -_: RIO_NNP (_( for_IN Resampled_NNP Inference_NNP of_IN Orthologs_NNP )_) -_:
+        which_WDT allows_VBZ to_TO perform_VB such_JJ analyses_NNS in_IN an_DT automated_VBN
+        fashion_NN ._. We_PRP present_JJ results_NNS of_IN using_VBG RIO_NNP to_TO analyze_VB a_DT plant_NN
+        (_( 
+        A_DT ._. thaliana_NN [_NN 16_CD ]_NN )_) and_CC an_DT animal_NN
+        (_( the_DT nematode_NN 
+        C_NNP ._. elegans_NNS [_NN 17_CD ]_NN )_) proteome_NN ._.
+      
+      
+        Algorithm_NNP
+        
+          Definitions_NNP
+          Orthologs_NNP are_VBP defined_VBN as_IN two_CD genes_NNS that_IN diverged_JJ by_IN a_DT
+          speciation_NN event_NN ._. Paralogs_NNP are_VBP defined_VBN as_IN two_CD genes_NNS that_IN
+          diverged_JJ by_IN a_DT duplication_NN event_NN [_NN 18_CD ]_NN ._. Other_JJ concepts_NNS
+          derived_VBN from_IN gene_NN trees_NNS can_MD be_VB useful_JJ for_IN functional_JJ
+          prediction_NN ._. We_PRP introduce_VB and_CC justify_VB three_CD such_JJ concepts_NNS
+          (_( "_'' super-orthologs_JJ "_'' ,_, "_'' ultra-paralogs_JJ "_'' ,_, and_CC
+          "_'' subtree-neighbors_JJ "_'' )_) :_:
+          Careless_NNP use_NN of_IN orthology_NN relationships_NNS without_IN
+          examining_VBG the_DT tree_NN itself_PRP can_MD lead_VB to_TO incorrect_JJ
+          annotations_NNS ._. In_IN the_DT example_NN shown_VBN in_IN Figure_NN 3_CD A_DT ,_, the_DT human_JJ
+          query_NN sequence_NN has_VBZ two_CD orthologous_JJ sequences_NNS in_IN wheat_NN ._.
+          These_DT two_CD wheat_NN sequences_NNS are_VBP related_VBN to_TO each_DT other_JJ by_IN a_DT
+          gene_NN duplication_NN and_CC one_CD (_( or_CC even_RB both_DT )_) of_IN them_PRP might_MD
+          have_VB undergone_VBN functional_JJ modification_NN after_IN their_PRP$
+          divergence_NN ._. Given_VBN a_DT procedure_NN that_WDT gave_VBD a_DT list_NN of_IN
+          orthologues_NNS for_IN the_DT human_JJ gene_NN query_NN ,_, such_JJ situations_NNS
+          should_MD be_VB revealed_VBN by_IN only_RB partial_JJ (_( or_CC complete_JJ absence_NN
+          of_IN )_) agreement_NN between_IN the_DT annotations_NNS of_IN the_DT wheat_NN
+          orthologs_NNS ._. Now_RB consider_VB the_DT situation_NN in_IN Figure_NN 3_CD B_NNP ._. This_DT
+          is_VBZ trickier_JJR ,_, since_IN in_IN this_DT case_NN only_RB one_CD ortholog_NN will_MD be_VB
+          reported_VBN for_IN the_DT query_NN sequence_NN ,_, but_CC it_PRP will_MD be_VB just_RB as_IN
+          dangerous_JJ to_TO transfer_VB annotation_NN ._. We_PRP do_VBP not_RB attempt_VB to_TO
+          solve_VB this_DT problem_NN (_( the_DT solution_NN is_VBZ careful_JJ manual_JJ
+          analysis_NN of_IN the_DT gene_NN tree_NN )_) but_CC an_DT automated_VBN procedure_NN can_MD
+          warn_VB that_IN this_DT situation_NN might_MD be_VB present_JJ ._. For_IN this_DT
+          purpose_NN we_PRP introduce_VB the_DT concept_NN of_IN
+          "_'' super-orthologs_JJ "_'' :_:
+          
+          Definition_NNP 1_CD ._. Given_VBN a_DT rooted_VBN gene_NN
+          tree_NN with_IN duplication_NN or_CC speciation_NN assigned_VBN to_TO each_DT of_IN
+          its_PRP$ internal_JJ nodes_NNS ,_, two_CD sequences_NNS are_VBP super-orthologous_JJ
+          if_IN and_CC only_RB if_IN each_DT internal_JJ node_NN on_IN their_PRP$ connecting_VBG
+          path_NN represents_VBZ a_DT speciation_NN event_NN ._.
+          Hence_RB ,_, the_DT query_NN sequences_NNS in_IN Figure_NN 3_CD have_VBP no_DT
+          super-orthologs_JJ ._. In_IN contrast_NN ,_, the_DT rat_NN ,_, mouse_NN ,_, and_CC wheat_NN
+          sequences_NNS in_IN Figure_NN 1_CD Aare_NNP super-orthologs_JJ pf_NN the_DT human_JJ
+          query_NN sequence_NN ._. By_IN definition_NN ,_, the_DT super-orthologs_JJ of_IN a_DT
+          given_VBN sequence_NN are_VBP a_DT subset_NN of_IN its_PRP$ orthologs_NNS ._.
+          Certain_JJ sequences_NNS underwent_VBD multiple_JJ recent_JJ
+          duplications_NNS ,_, resulting_VBG in_IN large_JJ species_NNS specific_JJ
+          sequence_NN families_NNS ,_, such_JJ as_IN the_DT 
+          C_NNP ._. elegans_NNS seven-transmembrane_JJ
+          proteins_NNS acting_VBG as_IN odorant_NN and_CC chemosensory_NN receptors_NNS [_NN
+          19_CD 20_CD ]_NN ._. For_IN query_NN sequences_NNS belonging_VBG to_TO such_JJ sequence_NN
+          families_NNS ,_, orthologs_NNS (_( if_IN present_JJ )_) are_VBP less_RBR effective_JJ for_IN
+          predicting_VBG specific_JJ information_NN ._. In_IN these_DT cases_NNS ,_, paralogs_NNS
+          of_IN the_DT same_JJ (_( sub_NN )_) family_NN might_MD be_VB more_RBR informative_JJ for_IN
+          functional_JJ prediction_NN (_( as_RB long_RB as_IN the_DT duplications_NNS indeed_RB
+          happened_VBD "_'' late_JJ "_'' in_IN evolutionary_JJ times_NNS )_) ._. To_TO formalize_NN
+          this_DT ,_, we_PRP introduce_VB the_DT concept_NN of_IN "_'' ultra-paralogs_JJ "_'' :_:
+          
+          Definition_NNP 2_CD ._. Given_VBN a_DT rooted_VBN gene_NN
+          tree_NN with_IN duplication_NN or_CC speciation_NN assigned_VBN to_TO each_DT of_IN
+          its_PRP$ internal_JJ nodes_NNS ,_, two_CD sequences_NNS are_VBP ultra-paralogous_JJ if_IN
+          and_CC only_RB if_IN the_DT smallest_JJS subtree_NN containing_VBG them_PRP both_DT
+          contains_VBZ only_RB internal_JJ nodes_NNS representing_VBG
+          duplications_NNS ._.
+          Figure_NN 4_CD illustrates_VBZ the_DT concept_NN of_IN ultra-paralogs_JJ ._. It_PRP
+          follows_VBZ from_IN definition_NN 2_CD that_IN two_CD ultra-paralogous_JJ
+          sequences_NNS must_MD occur_VB in_IN the_DT same_JJ species_NNS ._.
+          Often_RB ,_, researchers_NNS construct_VB a_DT gene_NN tree_NN and_CC then_RB
+          informally_RB use_VB "_'' subtrees_NNS "_'' (_( clades_NNS )_) to_TO make_VB inferences_NNS
+          about_IN sequences_NNS (_( without_IN regard_NN to_TO duplications_NNS and_CC
+          speciations_NNS )_) ._. We_PRP introduce_VB this_DT concept_NN into_IN our_PRP$
+          procedure_NN as_IN well_RB ,_, formalized_JJ as_IN "_'' subtree-neighbors_JJ "_''
+          (_( illustrated_VBN in_IN Figure_NN 5_LS )_) :_:
+          
+          Definition_NNP 3_CD ._. Given_VBN a_DT completely_RB
+          binary_JJ and_CC rooted_VBN gene_NN tree_NN ,_, the_DT 
+          k_NN -_: subtree-neighbors_JJ of_IN a_DT sequence_NN 
+          q_NN are_VBP defined_VBN as_IN all_DT sequences_NNS
+          derived_VBN from_IN the_DT 
+          k_NN -_: level_NN parent_NN node_NN of_IN 
+          q_NN ,_, except_IN 
+          q_NN itself_PRP (_( the_DT level_NN of_IN 
+          q_NN itself_PRP is_VBZ 0_CD ,_, 
+          q_NN 's_POS parent_NN is_VBZ 1_CD ,_, and_CC so_RB
+          forth_RB )_) ._.
+          Subtree-neighbors_NNP can_MD be_VB useful_JJ if_IN there_EX is_VBZ (_( partial_JJ )_)
+          agreement_NN among_IN their_PRP$ annotations_NNS (_( for_IN example_NN :_: if_IN the_DT
+          subtree-neighbors_JJ of_IN a_DT query_NN are_NN NAD_NNP +_NN -_: dependent_JJ
+          isocitrate_NN dehydrogenase_NN and_CC NADP_NNP +_NN -_: dependent_JJ isocitrate_NN
+          dehydrogenase_NN we_PRP can_MD suppose_VB that_IN the_DT query_NN is_VBZ likely_JJ to_TO
+          be_VB a_DT isocitrate_NN dehydrogenase_NN ,_, but_CC it_PRP is_VBZ not_RB possible_JJ to_TO
+          determine_VB whether_IN it_PRP is_VBZ dependent_JJ on_IN NAD_NNP +_NN or_CC NADP_NNP +_NN )_) ._. If_IN
+          the_DT subtree-neighbors_JJ lack_NN any_DT agreement_NN in_IN their_PRP$
+          annotations_NNS a_DT useful_JJ inference_NN is_VBZ not_RB possible_JJ (_( see_VB [_NN 9_CD ]_NN
+          for_IN a_DT more_RBR detailed_JJ discussion_NN )_) ._. Furthermore_RB ,_, orthologs_NNS
+          that_WDT are_VBP not_RB also_RB subtree-neighbors_JJ can_MD be_VB misleading_JJ
+          (_( for_IN a_DT more_RBR detailed_JJ discussion_NN of_IN this_DT ,_, see_VB below_RB ,_, and_CC
+          see_VB Figures_NNS 10_CD and_CC 11_CD for_IN examples_NNS )_) ._.
+        
+        
+          The_DT RIO_NNP procedure_NN
+          This_DT basic_JJ RIO_NNP procedure_NN is_VBZ as_IN follows_VBZ ._. For_IN a_DT simple_JJ
+          example_NN with_IN only_RB four_CD bootstrap_NN resamples_NNS ,_, see_VB Figure_NN
+          6_CD ._.
+          We_PRP use_VBP the_DT Pfam_NNP protein_NN family_NN database_NN [_NN 8_CD ]_NN as_IN a_DT
+          source_NN of_IN high_JJ quality_NN curated_JJ multiple_JJ sequence_NN
+          alignments_NNS and_CC profile_NN HMMs_NNP (_( Hidden_NNP Markov_NNP Models_NNP ,_, see_VB [_NN
+          21_CD ]_NN for_IN a_DT review_NN )_) ,_, as_RB well_RB as_IN programs_NNS from_IN the_DT HMMER_NNP
+          package_NN http_NN :_: /_NN /_NN hmmer_NN ._. wustl_NN ._. edu_NN /_NN ._. RIO_NNP can_MD easily_RB be_VB
+          adapted_VBN to_TO work_VB with_IN different_JJ sources_NNS of_IN alignments_NNS and_CC
+          different_JJ alignment_NN programs_NNS ._. For_IN tree_NN reconstruction_NN ,_,
+          the_DT neighbor_NN joining_VBG (_( NJ_NNP )_) algorithm_NN [_NN 22_CD ]_NN is_VBZ used_VBN ,_, since_IN
+          it_PRP is_VBZ reasonably_RB fast_RB ,_, can_MD handle_VB alignments_NNS of_IN large_JJ
+          numbers_NNS of_IN sequences_NNS ,_, and_CC does_VBZ not_RB assume_VB a_DT molecular_JJ
+          clock_NN ._. NJ_NNP recreates_NNS the_DT correct_JJ additive_JJ tree_NN as_RB long_RB as_IN
+          the_DT input_NN distances_NNS are_VBP additive_JJ [_NN 23_CD ]_NN ,_, and_CC is_VBZ
+          effective_JJ even_RB if_IN additivity_NN is_VBZ only_RB approximated_JJ [_NN 24_CD ]_NN
+          ._.
+          
+          Input_NNP :_: A_DT query_NN protein_NN sequence_NN 
+          Q_NNP with_IN unknown_JJ function_NN ._.
+          A_DT curated_JJ multiple_JJ alignment_NN 
+          A_DT from_IN the_DT Pfam_NNP database_NN for_IN the_DT
+          protein_NN family_NN that_IN 
+          Q_NNP belongs_VBZ to_TO (_( as_IN determined_VBN by_IN
+          hmmpfam_NN from_IN the_DT HMMER_NNP package_NN )_) ._.
+          A_DT profile_JJ HMM_NNP 
+          H_NNP for_IN the_DT protein_NN family_NN that_IN Q_NNP
+          belongs_VBZ to_TO ._.
+          
+          Output_NN :_: A_DT list_NN (_( as_IN in_IN Figure_NN 7_CD )_) of_IN
+          proteins_NNS orthologous_JJ to_TO 
+          Q_NNP ,_, sorted_VBN according_VBG to_TO a_DT bootstrap_NN
+          confidence_NN value_NN (_( based_VBN on_IN orthology_NN ,_, super-orthology_JJ ,_, or_CC
+          subtree-neighborings_JJ )_) ._.
+          Optional_NNP :_: A_DT gene_NN tree_NN based_VBN on_IN the_DT multiple_JJ alignment_NN 
+          A_DT and_CC the_DT query_NN 
+          Q_NNP annotated_JJ with_IN orthology_NN
+          bootstrap_NN confidence_NN values_NNS for_IN the_DT query_NN 
+          Q_NNP ._.
+          
+            Procedure_NNP :_: 
+          
+          
+          1_LS ._. Query_NNP sequence_NN 
+          Q_NNP is_VBZ aligned_VBN to_TO the_DT existing_VBG
+          alignment_NN 
+          A_DT (_( using_VBG hmmalign_NN from_IN the_DT HMMER_NNP
+          package_NN and_CC the_DT Pfam_NNP profile_NN HMM_NNP 
+          H_NNP )_) ._.
+          
+          2_LS ._. The_DT alignment_NN is_VBZ bootstrap_NN
+          resampled_JJ 
+          x_SYM times_NNS (_( usually_RB ,_, 
+          x_SYM =_SYM 100_CD )_) ._.
+          
+          3_LS ._. Maximum_NNP likelihood_NN pairwise_NN
+          distance_NN matrices_NNS are_VBP calculated_VBN for_IN each_DT of_IN the_DT 
+          x_SYM multiple_JJ alignments_NNS using_VBG a_DT model_NN
+          of_IN amino_JJ acid_NN substitution_NN (_( for_IN example_NN ,_, BLOSUM_NNP [_NN 25_CD ]_NN or_CC
+          Dayhoff_NNP PAM_NNP [_NN 26_CD ]_NN )_) ._.
+          
+          4_LS ._. An_DT unrooted_JJ phylogenetic_JJ tree_NN is_VBZ
+          inferred_VBN for_IN each_DT of_IN the_DT 
+          x_SYM multiple_JJ alignments_NNS by_IN neighbor_NN
+          joining_VBG [_NN 22_CD ]_NN ,_, resulting_VBG in_IN 
+          x_SYM gene_NN trees_NNS ._. Each_DT tree_NN is_VBZ rooted_VBN
+          by_IN a_DT modified_VBN version_NN of_IN our_PRP$ SDI_NNP algorithm_NN [_NN 13_CD ]_NN that_WDT
+          minimized_VBN the_DT number_NN of_IN duplications_NNS postulated_JJ (_( this_DT is_VBZ
+          discussed_VBN in_IN more_JJR detail_NN later_RB )_) ._.
+          
+          5_LS ._. For_IN each_DT of_IN the_DT 
+          x_SYM rooted_VBN gene_NN trees_NNS :_: For_IN each_DT node_NN
+          it_PRP is_VBZ inferred_VBN whether_IN it_PRP represents_VBZ a_DT duplication_NN or_CC a_DT
+          speciation_NN event_NN by_IN comparing_VBG the_DT gene_NN tree_NN to_TO a_DT trusted_VBD
+          species_NNS tree_NN ._.
+          
+          6_CD ._. For_IN each_DT sequence_NN 
+          s_VBZ in_IN the_DT gene_NN tree_NN (_( except_IN 
+          Q_NNP )_) :_: Count_VBP the_DT number_NN of_IN gene_NN trees_NNS
+          where_WRB 
+          s_VBZ is_VBZ orthologous_JJ to_TO 
+          Q_NNP (_( see_VB Figure_NN 6_CD for_IN an_DT illustration_NN
+          of_IN steps_NNS 5_CD ._. and_CC 6_CD ._. )_) ._. Bootstrap_NNP confidence_NN values_NNS for_IN
+          super-orthologies_JJ ,_, ultra-paralogies_JJ and_CC subtree-neighbors_JJ
+          are_VBP calculated_VBN analogously_RB ._.
+        
+        
+          Precalculation_NNP of_IN pairwise_NN distances_NNS for_IN increased_VBN
+          time_NN efficiency_NN
+          The_DT most_JJS time_NN consuming_NN step_NN in_IN the_DT procedure_NN
+          described_VBD above_IN is_VBZ the_DT calculation_NN of_IN pairwise_NN distances_NNS ._.
+          [_NN The_DT time_NN complexity_NN is_VBZ O_NNP (_( 
+          xLN_NN 2_LS )_) ,_, 
+          N_NNP being_VBG the_DT number_NN of_IN sequences_NNS ,_, 
+          L_NNP being_VBG their_PRP$ length_NN ,_, and_CC 
+          x_SYM being_VBG the_DT number_NN of_IN bootstrap_NN
+          resamples_NNS ._. On_IN an_DT average_JJ Intel_NNP processor_NN the_DT wall_NN clock_NN
+          time_NN for_IN 100_CD bootstrapped_JJ datasets_NNS of_IN a_DT typical_JJ Pfam_NNP
+          multiple_JJ alignment_NN is_VBZ in_IN the_DT range_NN of_IN hours_NNS ._. ]_NN
+          Since_IN the_DT query_NN sequence_NN is_VBZ aligned_VBN to_TO stable_JJ Pfam_NNP
+          alignments_NNS ,_, it_PRP is_VBZ possible_JJ to_TO precalculate_NN the_DT pairwise_NN
+          distances_NNS for_IN each_DT alignment_NN and_CC store_VB the_DT results_NNS ._. Then_RB ,_,
+          when_WRB RIO_NNP is_VBZ being_VBG used_VBN to_TO analyze_VB a_DT query_NN sequence_NN ,_, only_RB
+          the_DT distances_NNS of_IN the_DT query_NN to_TO each_DT sequence_NN in_IN the_DT Pfam_NNP
+          alignment_NN have_VBP to_TO be_VB calculated_VBN ._. This_DT step_NN becomes_VBZ thus_RB
+          O_NNP (_( 
+          xLN_NN )_) instead_RB of_IN O_NNP (_( 
+          xLN_NN 2_LS )_) ._.
+          To_TO do_VB this_DT correctly_RB ,_, the_DT aligned_VBN query_NN sequence_NN has_VBZ
+          to_TO be_VB bootstrap_NN resampled_JJ in_IN exactly_RB the_DT same_JJ way_NN as_IN was_VBD
+          used_VBN for_IN precalculating_VBG the_DT pairwise_NN distances_NNS of_IN the_DT
+          Pfam_NNP alignment_NN ._. For_IN this_DT purpose_NN ,_, bootstrap_NN positions_NNS
+          (_( e_SYM ._. g_SYM ._. which_WDT aligned_VBN columns_NNS from_IN the_DT Pfam_NNP alignment_NN were_VBD
+          chosen_VBN in_IN a_DT particular_JJ bootstrap_NN sample_NN )_) are_VBP saved_VBN to_TO a_DT
+          file_NN ._. With_IN this_DT file_NN it_PRP is_VBZ possible_JJ to_TO bootstrap_NN the_DT new_JJ
+          alignment_NN of_IN N_NNP +_NN 1_CD sequences_NNS (_( Pfam_NNP alignment_NN plus_CC query_NN
+          sequence_NN )_) in_IN precisely_RB the_DT same_JJ manner_NN ,_, so_IN the_DT NxN_NNP
+          precalculated_JJ distances_NNS are_VBP valid_JJ for_IN the_DT (_( N_NNP +_NN 1_LS )_) x_SYM (_( N_NNP +_NN 1_LS )_)
+          distance_NN matrix_NN ._. The_DT alignment_NN method_NN must_MD also_RB guarantee_VB
+          that_IN the_DT original_JJ Pfam_NNP multiple_JJ alignment_NN remains_VBZ
+          unchanged_JJ when_WRB the_DT query_NN sequence_NN is_VBZ aligned_VBN to_TO it_PRP ._. This_DT
+          requires_VBZ specially_RB prepared_VBN Pfam_NNP full_JJ alignments_NNS and_CC
+          profile_NN HMMs_NNP that_WDT are_VBP created_VBN with_IN the_DT HMMER_NNP software_NN as_IN
+          follows_VBZ :_:
+          
+          Input_NNP :_: Original_NNP Pfam_NNP full_JJ alignment_NN 
+          A_DT ._.
+          
+          Output_NN :_: "_'' aln_NN "_'' file_VB containing_VBG
+          RIO-ready_NNP full_JJ alignment_NN
+          "_'' hmm_NN "_'' file_VB containing_VBG a_DT RIO-ready_NNP profile_NN HMM_NNP
+          "_'' nbd_NN "_'' file_VB containing_VBG pairwise_NN distances_NNS
+          "_'' bsp_NN "_'' file_VB bootstrap_NN positions_NNS file_VBP
+          "_'' pwd_NN "_'' file_VB containing_VBG pairwise_NN distances_NNS for_IN bootstrap_NN
+          resampled_JJ alignment_NN
+          
+          1_LS ._. Remove_NNP sequences_NNS from_IN species_NNS not_RB
+          in_IN RIO_NNP 's_POS master_NN species_NNS tree_NN from_IN alignment_NN 
+          A_DT ._. If_IN 
+          A_DT does_VBZ not_RB contain_VB enough_JJ sequences_NNS
+          (_( <_NN 6_CD )_) ,_, abort_NN ._.
+          
+          2_LS ._. Run_NNP hmmbuild_NN -_: o_NN A_NNP '_POS on_IN 
+          A_DT ,_, using_VBG the_DT same_JJ options_NNS as_IN were_VBD
+          used_VBN to_TO build_VB the_DT original_JJ Pfam_NNP HMM_NNP for_IN 
+          A_DT ,_, resulting_VBG in_IN alignment_NN 
+          A_NNP '_POS ._. (_( HMMER_NNP 's_POS construction_NN
+          procedure_NN slightly_RB modifies_VBZ the_DT input_NN alignment_NN in_IN ways_NNS
+          that_WDT are_VBP usually_RB unimportant_JJ ,_, but_CC which_WDT matter_VBP to_TO
+          bootstrapping_VBG in_IN RIO_NNP ._. )_) Keep_VB A_NNP '_POS as_RB the_DT "_'' aln_NN "_'' file_VB ._.
+          
+          3_LS ._. Run_NNP hmmbuild_NN with_IN "_'' -_: -_: hand_NN "_'' option_NN
+          on_IN 
+          A_NNP '_POS ,_, resulting_VBG in_IN HMM_NNP 
+          H_NNP '_POS (_( using_VBG the_DT same_JJ options_NNS as_IN were_VBD
+          used_VBN to_TO build_VB the_DT original_JJ HMM_NNP for_IN 
+          A_DT )_) ._. Calibrate_NNP 
+          H_NNP '_POS with_IN hmmcalibrate_NN and_CC keep_VB as_IN
+          "_'' hmm_NN "_'' file_VB ._.
+          
+          4_LS ._. Remove_NNP non-consensus_JJ (_( insert_VB )_)
+          columns_NNS from_IN 
+          A_NNP '_POS (_( these_DT are_VBP annotated_JJ by_IN HMMER_NNP )_) ,_,
+          resulting_VBG in_IN alignment_NN 
+          A_DT "_'' ._.
+          
+          5_LS ._. Calculate_NNP pairwise_NN distances_NNS for_IN 
+          A_DT "_'' ,_, resulting_VBG in_IN the_DT "_'' nbd_NN "_'' file_VB
+          (_( non-bootstrapped_JJ distances_NNS )_) ._.
+          
+          6_CD ._. Bootstrap_NNP resample_NN the_DT columns_NNS of_IN 
+          A_DT "_'' ,_, resulting_VBG in_IN the_DT "_'' bsp_NN "_'' file_VB
+          (_( bootstrap_NN positions_NNS file_VBP )_) ._.
+          
+          7_CD ._. Calculate_NNP pairwise_NN distances_NNS for_IN
+          bootstrapped_JJ 
+          A_DT "_'' ,_, resulting_VBG in_IN the_DT "_'' pwd_NN "_''
+          file_VB ._.
+        
+        
+          Rooting_NNP of_IN gene_NN trees_NNS
+          The_DT concept_NN of_IN speciation_NN and_CC duplication_NN is_VBZ only_RB
+          meaningful_JJ on_IN rooted_VBN gene_NN trees_NNS ,_, but_CC the_DT neighbor_NN joining_VBG
+          algorithm_NN infers_NNS unrooted_JJ trees_NNS ._. We_PRP use_VBP a_DT simple_JJ
+          parsimony_NN criterion_NN for_IN rooting_VBG ._. Gene_NNP trees_NNS are_VBP rooted_VBN on_IN
+          each_DT branch_NN ,_, resulting_VBG in_IN 2_CD 
+          N_NNP -_: 3_CD differently_RB rooted_VBN trees_NNS for_IN a_DT
+          gene_NN tree_NN of_IN 
+          N_NNP sequences_NNS ._. For_IN each_DT of_IN these_DT ,_, the_DT
+          number_NN of_IN inferred_VBN duplications_NNS is_VBZ determined_VBN ._. From_IN the_DT
+          trees_NNS with_IN a_DT minimal_JJ number_NN of_IN duplications_NNS (_( if_IN there_EX is_VBZ
+          more_JJR than_IN one_CD )_) the_DT tree_NN with_IN the_DT shortest_JJS total_JJ height_NN is_VBZ
+          chosen_VBN as_IN the_DT rooted_VBN tree_NN ._. Empirical_NNP studies_NNS on_IN gene_NN
+          trees_NNS based_VBN on_IN 1750_CD Pfam_NNP alignments_NNS show_VBP that_IN about_IN 60_CD %_NN
+          of_IN trees_NNS rooted_VBN in_IN such_JJ a_DT way_NN have_VBP their_PRP$ root_NN in_IN the_DT same_JJ
+          position_NN that_IN direct_JJ midpoint_NN rooting_VBG [_NN 27_CD ]_NN would_MD place_VB
+          it_PRP ._.
+          Naively_NNP performing_VBG a_DT full_JJ duplication_NN /_NN speciation_NN
+          analysis_NN on_IN each_DT of_IN 2_CD 
+          N_NNP -_: 3_CD differently_RB rooted_VBN trees_NNS
+          results_NNS in_IN a_DT overall_JJ time_NN complexity_NN of_IN O_NNP (_( 
+          N_NNP 2_LS )_) or_CC worse_JJR ,_, but_CC this_DT can_MD be_VB
+          avoided_VBN ._. For_IN the_DT purpose_NN of_IN the_DT following_VBG discussion_NN it_PRP
+          is_VBZ assumed_VBN that_IN our_PRP$ SDI_NNP algorithm_NN for_IN
+          speciation_NN /_NN duplication_NN inference_NN is_VBZ employed_VBN ,_, but_CC the_DT
+          idea_NN applies_VBZ to_TO all_DT algorithms_NNS based_VBN on_IN a_DT mapping_NN
+          function_NN M_NNP defined_VBD as_IN follows_VBZ [_NN 28_CD ]_NN :_:
+          
+          Definition_NNP 4_CD ._. Let_VB 
+          G_NNP be_VB the_DT set_NN of_IN nodes_NNS in_IN a_DT rooted_VBN
+          binary_JJ gene_NN tree_NN and_CC 
+          S_NNP the_DT set_NN of_IN nodes_NNS in_IN a_DT rooted_VBN
+          binary_JJ species_NNS tree_NN ._. For_IN any_DT node_NN 
+          g_SYM ∈_NN 
+          G_NNP ,_, let_VB γ_NN (_( 
+          g_SYM )_) be_VB the_DT set_NN of_IN species_NNS in_IN which_WDT
+          occur_VBP the_DT extant_NN genes_NNS descendant_NN from_IN 
+          g_SYM ._. For_IN any_DT node_NN 
+          s_VBZ ∈_NN 
+          S_NNP ,_, let_VB σ_NN (_( 
+          s_VBZ )_) be_VB the_DT set_NN of_IN species_NNS in_IN the_DT
+          external_JJ nodes_NNS descendant_NN from_IN 
+          s_VBZ ._. For_IN any_DT 
+          g_SYM ∈_NN 
+          G_NNP ,_, let_VB M_NNP (_( 
+          g_SYM )_) ∈_NN 
+          S_NNP be_VB the_DT smallest_JJS (_( lowest_JJS )_) node_NN in_IN 
+          S_NNP satisfying_VBG γ_NN (_( 
+          g_SYM )_) ⊆_NN σ_NN (_( M_NNP (_( 
+          g_SYM )_) )_) ._.
+          Duplications_NNP are_VBP then_RB defined_VBN using_VBG M_NNP (_( 
+          g_SYM )_) as_IN follows_VBZ :_:
+          
+          Definition_NNP 5_CD ._. Let_VB 
+          g_SYM 
+          1_CD and_CC 
+          g_SYM 
+          2_CD be_VB the_DT two_CD child_NN nodes_NNS of_IN an_DT
+          internal_JJ node_NN 
+          g_SYM of_IN a_DT rooted_VBN binary_JJ gene_NN tree_NN 
+          G_NNP ._. Node_NNP 
+          g_SYM is_VBZ a_DT duplication_NN if_IN and_CC only_RB if_IN
+          M_NNP (_( 
+          g_SYM )_) =_SYM M_NNP (_( 
+          g_SYM 
+          1_LS )_) or_CC M_NNP (_( 
+          g_SYM )_) =_SYM M_NNP (_( 
+          g_SYM 
+          2_LS )_) ._.
+          The_DT main_JJ task_NN of_IN most_JJS algorithms_NNS for_IN duplication_NN
+          inference_NN is_VBZ the_DT calculation_NN of_IN M_NNP ._. After_IN M_NNP has_VBZ been_VBN
+          calculated_VBN for_IN any_DT rooted_VBN gene_NN tree_NN 
+          G_NNP it_PRP is_VBZ possible_JJ to_TO explore_VB
+          different_JJ root_NN placements_NNS without_IN having_VBG to_TO recalculate_NN M_NNP
+          for_IN every_DT node_NN of_IN 
+          G_NNP ._. As_RB long_RB as_IN the_DT root_NN is_VBZ moved_VBN
+          one_CD node_NN at_IN the_DT time_NN ,_, M_NNP has_VBZ to_TO be_VB recalculated_VBD only_RB for_IN
+          two_CD nodes_NNS :_: the_DT one_CD node_NN which_WDT was_VBD child_NN 1_CD (_( if_IN the_DT new_JJ
+          root_NN is_VBZ placed_VBN on_IN a_DT branch_NN originating_VBG from_IN child_NN 1_CD of_IN
+          the_DT previous_JJ root_NN )_) or_CC child_NN 2_CD (_( otherwise_RB )_) of_IN the_DT previous_JJ
+          root_NN ,_, as_RB well_RB as_IN for_IN the_DT new_JJ root_NN itself_PRP ._. Hence_RB ,_, two_CD
+          postorder_NN traversal_NN steps_NNS (_( child_NN 1_CD or_CC 2_CD of_IN the_DT old_JJ root_NN ,_,
+          then_RB the_DT new_JJ root_NN )_) in_IN the_DT SDI_NNP algorithm_NN are_VBP all_DT that_WDT is_VBZ
+          needed_VBN ._. The_DT new_JJ sum_NN of_IN duplications_NNS is_VBZ determined_VBN by_IN
+          keeping_VBG track_NN of_IN the_DT change_NN in_IN duplication_NN /_NN speciation_NN
+          status_NN in_IN the_DT two_CD recalculated_VBD nodes_NNS as_RB well_RB as_IN in_IN the_DT
+          previous_JJ root_NN ._. Performing_VBG this_DT over_IN the_DT whole_JJ gene_NN tree_NN
+          (_( some_DT nodes_NNS will_MD be_VB visited_VBN twice_RB )_) it_PRP is_VBZ possible_JJ to_TO
+          explore_VB all_DT possible_JJ root_NN placements_NNS and_CC calculate_VB the_DT
+          resulting_VBG duplications_NNS in_IN practically_RB linear_JJ time_NN ._. The_DT
+          pseudocode_NN algorithm_NN is_VBZ as_IN follows_VBZ :_:
+        
+        
+          Algorithm_NNP for_IN speciation_NN duplication_NN inference_NN
+          combined_VBN with_IN rooting_VBG
+          
+          Input_NNP :_: binary_JJ gene_NN tree_NN 
+          G_NNP ,_, rooted_VBN binary_JJ species_NNS tree_NN 
+          S_NNP ._.
+          
+          Output_NN :_: 
+          G_NNP with_IN "_'' duplication_NN "_'' or_CC
+          "_'' speciation_NN "_'' assigned_VBN to_TO each_DT internal_JJ node_NN and_CC rooted_VBN in_IN
+          such_JJ a_DT way_NN that_IN the_DT sum_NN of_IN duplications_NNS is_VBZ minimized_VBN ._.
+          
+            SDIunrooted_NNP (_( G_NNP ,_, S_NNP )_) 
+          
+          root_NN gene_NN tree_NN 
+          G_NNP at_IN the_DT midpoint_NN of_IN any_DT
+          branch_NN ;_:
+          set_VBN 
+          B_NNP =_SYM getBranchesInOrder_NN (_( 
+          G_NNP )_) ;_:
+          SDIse_NNP (_( 
+          G_NNP ,_, 
+          S_NNP )_) (_( see_VB [_NN 13_CD ]_NN )_) ;_:
+          for_IN each_DT branch_NN 
+          b_SYM in_IN 
+          B_NNP :_:
+          set_VBN 
+          n_NN 
+          1_CD =_SYM child_NN 1_CD of_IN root_NN of_IN 
+          G_NNP ;_:
+          set_VBN 
+          n_NN 
+          2_CD =_SYM child_NN 2_CD of_IN root_NN of_IN 
+          G_NNP ;_:
+          root_NN 
+          G_NNP at_IN the_DT midpoint_NN of_IN branch_NN 
+          b_SYM ;_:
+          updateM_NN (_( 
+          n_NN 
+          1_CD ,_, 
+          n_NN 
+          2_CD ,_, 
+          G_NNP )_) ;_:
+          if_IN (_( sum_NN of_IN duplications_NNS in_IN 
+          G_NNP <_NN 
+          d_SYM 
+          min_NN )_) :_:
+          set_VBN 
+          d_SYM 
+          min_NN =_SYM 
+          d_SYM ;_:
+          set_VBN 
+          G_NNP 
+          dmin_NN =_SYM 
+          G_NNP ;_:
+          return_NN 
+          G_NNP 
+          dmin_NN ;_:
+          
+            updateM_NN (_( 
+            n_NN 
+            1_CD ,_, 
+            n_NN 
+            2_CD ,_, 
+            G_NNP )_) 
+          
+          set_VBN 
+          r_LS =_SYM root_NN of_IN 
+          G_NNP ;_:
+          if_IN (_( child_NN 1_CD of_IN 
+          r_LS =_SYM =_SYM 
+          n_NN 
+          1_CD |_NN |_NN child_NN 2_CD of_IN 
+          r_LS =_SYM =_SYM 
+          n_NN 
+          1_LS )_) :_:
+          calculateMforNode_NN (_( 
+          n_NN 
+          1_LS )_) ;_:
+          else_RB :_:
+          calculateMforNode_NN (_( 
+          n_NN 
+          2_LS )_) ;_:
+          calculateMforNode_NN (_( 
+          r_LS )_) ;_:
+          
+            calculateMforNode_NN (_( 
+            n_NN )_) 
+          
+          if_IN (_( 
+          n_NN !_. =_SYM external_JJ )_) :_:
+          set_VBD 
+          a_DT =_SYM M_NNP (_( child_NN 1_CD of_IN 
+          n_NN )_) ;_:
+          set_VBN 
+          b_SYM =_SYM M_NNP (_( child_NN 2_CD of_IN 
+          n_NN )_) ;_:
+          while_IN (_( 
+          a_DT !_. =_SYM 
+          b_SYM )_) :_:
+          if_IN (_( 
+          a_DT >_NN 
+          b_SYM )_) :_:
+          set_VBD 
+          a_DT =_SYM parent_NN of_IN 
+          a_SYM ;_:
+          else_RB :_:
+          set_VBN 
+          b_SYM =_SYM parent_NN of_IN 
+          b_SYM ;_:
+          set_VBN M_NNP (_( 
+          n_NN )_) =_SYM 
+          a_SYM ;_:
+          if_IN (_( M_NNP (_( 
+          n_NN )_) =_SYM =_SYM M_NNP (_( child_NN 1_CD of_IN 
+          n_NN )_) |_NN |_NN M_NNP (_( 
+          n_NN )_) =_SYM =_SYM M_NNP (_( child_NN 2_CD of_IN 
+          n_NN )_) :_:
+          
+          n_NN is_VBZ duplication_NN ;_:
+          else_RB :_:
+          
+          n_NN is_VBZ speciation_NN ;_:
+          
+            getBranchesInOrder_NN (_( 
+            G_NNP )_) 
+          
+          set_VBN 
+          n_NN =_SYM root_NN of_IN 
+          G_NNP ;_:
+          set_VBN 
+          i_NNP =_SYM 0_CD ;_:
+          while_IN !_. (_( 
+          n_NN =_SYM =_SYM root_NN &_CC &_CC indicator_NN of_IN 
+          n_NN =_SYM =_SYM 2_LS )_) :_:
+          if_IN (_( 
+          n_NN !_. =_SYM external_JJ &_CC &_CC indicator_NN
+          of_IN 
+          n_NN !_. =_SYM 2_LS )_) :_:
+          if_IN (_( indicator_NN of_IN 
+          n_NN =_SYM =_SYM 0_CD )_) :_:
+          set_VBN indicator_NN of_IN 
+          n_NN =_SYM 1_CD ;_:
+          set_VBN 
+          n_NN =_SYM child_NN 1_CD of_IN 
+          n_NN ;_:
+          else_RB :_:
+          set_VBN indicator_NN of_IN 
+          n_NN =_SYM 2_CD ;_:
+          set_VBN 
+          n_NN =_SYM child_NN 2_CD of_IN 
+          n_NN ;_:
+          if_IN (_( parent_NN of_IN 
+          n_NN !_. =_SYM root_NN )_) :_:
+          set_VBN B_NNP [_NN 
+          i_NNP ]_NN =_SYM branch_NN connecting_VBG 
+          n_NN and_CC parent_NN of_IN 
+          n_NN ;_:
+          else_RB :_:
+          set_VBN B_NNP [_NN 
+          i_NNP ]_NN =_SYM branch_NN connecting_VBG child_NN 1_CD of_IN
+          root_NN and_CC child_NN 2_CD of_IN root_NN ;_:
+          set_VBN 
+          i_NNP =_SYM 
+          i_NNP +_NN 1_CD ;_:
+          else_RB :_:
+          if_IN (_( parent_NN of_IN 
+          n_NN !_. =_SYM root_NN &_CC &_CC 
+          n_NN !_. =_SYM external_JJ )_) :_:
+          set_VBN B_NNP [_NN 
+          i_NNP ]_NN =_SYM branch_NN connecting_VBG 
+          n_NN and_CC parent_NN of_IN 
+          n_NN ;_:
+          set_VBN 
+          i_NNP =_SYM 
+          i_NNP +_NN 1_CD ;_:
+          set_VBN 
+          n_NN =_SYM parent_NN of_IN 
+          n_NN ;_:
+          return_NN 
+          B_NNP ;_:
+        
+        
+          Master_NNP species_NNS tree_NN
+          Duplication_NNP inference_NN requires_VBZ a_DT species_NNS tree_NN ._. For_IN
+          this_DT purpose_NN ,_, a_DT single_NN completely_RB binary_JJ master_NN species_NNS
+          tree_NN was_VBD compiled_VBN manually_RB ,_, containing_VBG 249_CD of_IN the_DT most_RBS
+          commonly_RB encountered_VBD species_NNS in_IN Pfam_NNP (_( spanning_VBG Archaea_NNP ,_,
+          Bacteria_NNP ,_, and_CC Eukaryotes_NNP )_) ._. This_DT tree_NN is_VBZ based_VBN mainly_RB on_IN
+          information_NN from_IN Maddison_NNP 's_POS "_'' Tree_NN of_IN Life_NNP "_'' project_NN
+          http_NN :_: /_NN /_NN tolweb_NN ._. org_NN /_NN tree_NN /_NN phylogeny_NN ._. html_NN ,_, NCBI_NNP 's_POS taxonomy_NN
+          database_NN
+          http_NN :_: /_NN /_NN www_NN ._. ncbi_NN ._. nlm_NN ._. nih_NN ._. gov_NN /_NN Taxonomy_NNP /_NN taxonomyhome_NN ._. html_NN ,_,
+          the_DT "_'' Deep_NNP Green_NNP "_'' project_NN
+          http_NN :_: /_NN /_NN ucjeps_NNS ._. berkeley_NN ._. edu_NN /_NN bryolab_NN /_NN greenplantpage_NN ._. html_NN ,_,
+          and_CC [_NN 29_CD 30_CD 31_CD 32_CD ]_NN ._. This_DT master_NN tree_NN groups_NNS nematodes_NNS
+          and_CC arthropods_NNS into_IN a_DT clade_NN of_IN ecdysozoans_NNS (_( molting_VBG
+          animals_NNS )_) as_IN proposed_VBN by_IN Aguinaldo_NNP [_NN 29_CD ]_NN ,_, a_DT
+          classification_NN which_WDT is_VBZ still_RB controversial_JJ ._. The_DT tree_NN is_VBZ
+          available_JJ in_IN NHX_NNP format_NN [_NN 33_CD ]_NN at_IN
+          http_NN :_: /_NN /_NN www_NN ._. genetics_NNS ._. wustl_NN ._. edu_NN /_NN eddy_NN /_NN forester_NN /_NN tree_NN __NN of_IN __NN life_NN __NN bin_NN __NN 1_CD -_: 4_CD ._. nhx_NN ._.
+        
+      
+      
+        Implementation_NNP
+        RIO_NNP is_VBZ implemented_VBN in_IN a_DT Perl_NNP pipeline_NN of_IN several_JJ
+        software_NN programs_NNS as_IN follows_VBZ ._. Alignment_NNP of_IN the_DT query_NN
+        sequence_NN is_VBZ done_VBN programs_NNS from_IN the_DT HMMER_NNP package_NN
+        http_NN :_: /_NN /_NN hmmer_NN ._. wustl_NN ._. edu_NN /_NN ._. Bootstrapping_NNP is_VBZ performed_VBN by_IN a_DT
+        bespoke_NN C_NNP program_NN ._. Maximum_NNP likelihood_NN pairwise_NN distances_NNS
+        are_VBP calculated_VBN using_VBG BLOSUM_NNP matrices_NNS [_NN 25_CD ]_NN by_IN a_DT modified_VBN
+        version_NN of_IN TREE-PUZZLE_NNP [_NN 34_CD ]_NN ._. Neighbor_NNP joining_VBG trees_NNS are_VBP
+        calculated_VBN by_IN a_DT modified_VBN version_NN of_IN NEIGHBOR_NNP from_IN the_DT
+        PHYLIP_NNP package_NN [_NN 35_CD ]_NN
+        http_NN :_: /_NN /_NN evolution_NN ._. genetics_NNS ._. washington_NN ._. edu_NN /_NN phylip_NN ._. html_NN ._.
+        Rooting_NNP and_CC duplication_NN inference_NN are_VBP accomplished_VBN by_IN
+        "_'' SDIunrooted_NNP "_'' -_: a_DT Java_NNP implementation_NN of_IN our_PRP$ SDI_NNP algorithm_NN
+        which_WDT incorporates_VBZ various_JJ methods_NNS for_IN rooting_VBG (_( see_VB above_IN )_) ._.
+        The_DT actual_JJ counting_NN of_IN orthologs_NNS is_VBZ performed_VBN by_IN methods_NNS of_IN
+        the_DT Java_NNP class_NN "_'' RIO_NNP "_'' ._. These_DT programs_NNS ,_, with_IN the_DT exception_NN of_IN
+        HMMER_NNP ,_, are_VBP part_NN of_IN the_DT FORESTER_NNP package_NN and_CC are_VBP available_JJ
+        under_IN the_DT GNU_NNP license_NN at_IN
+        http_NN :_: /_NN /_NN www_NN ._. genetics_NNS ._. wustl_NN ._. edu_NN /_NN eddy_NN /_NN forester_NN /_NN ._.
+        In_IN order_NN to_TO run_VB RIO_NNP locally_RB ,_, the_DT following_VBG packages_NNS and_CC
+        databases_NNS need_VBP to_TO be_VB present_JJ :_: HMMER_NNP ,_, the_DT Pfam_NNP database_NN [_NN 8_CD
+        ]_NN ,_, the_DT SWISS-PROT_NNP and_CC TrEMBL_NNP databases_NNS [_NN 36_CD ]_NN ._.
+        RIO_NNP is_VBZ also_RB available_JJ as_IN an_DT analysis_NN webserver_NN at_IN
+        http_NN :_: /_NN /_NN www_NN ._. rio_NN ._. wustl_NN ._. edu_NN /_NN ._. The_DT pairwise_NN distance_NN and_CC tree_NN
+        calculations_NNS are_VBP parallelized_JJ in_IN this_DT version_NN (_( currently_RB ,_,
+        ten_CD 1_CD ._. 26_CD GHz_NNP Pentium_NNP III_NNP processors_NNS are_VBP being_VBG used_VBN )_) ._.
+      
+      
+        Results_NNS and_CC Discussion_NNP
+        
+          Precalculation_NNP of_IN pairwise_NN distances_NNS
+          Pairwise_NNP distances_NNS to_TO be_VB used_VBN in_IN RIO_NNP analyses_NNS were_VBD
+          calculated_VBN using_VBG the_DT "_'' full_JJ "_'' alignments_NNS (_( as_IN opposed_VBN to_TO the_DT
+          smaller_JJR curated_JJ "_'' seed_NN "_'' alignments_NNS )_) from_IN Pfam_NNP 6_CD ._. 6_CD (_( August_NNP
+          2001_CD ,_, 3071_CD families_NNS ,_, [_NN 8_CD ]_NN )_) ._. Sequences_NNP from_IN species_NNS not_RB
+          present_VBP in_IN the_DT master_NN species_NNS tree_NN were_VBD removed_VBN from_IN the_DT
+          alignments_NNS ._. For_IN computational_NN efficiency_NN reasons_NNS ,_,
+          alignments_NNS that_WDT still_RB contained_VBD more_JJR than_IN 600_CD sequences_NNS
+          were_VBD further_RBR pruned_VBN ;_: sequences_NNS not_RB originating_VBG from_IN
+          SWISS-PROT_NNP were_VBD discarded_VBN ,_, and_CC sequences_NNS from_IN certain_JJ
+          mammals_NNS were_VBD excluded_VBN (_( mouse_NN ,_, rabbit_NN ,_, hamsters_NNS ,_, goat_NN ,_, all_DT
+          primates_NNS except_IN human_JJ )_) ,_, since_IN mammals_NNS are_VBP likely_JJ to_TO be_VB
+          oversampled_JJ in_IN most_JJS Pfam_NNP families_NNS ._. For_IN some_DT extremely_RB
+          large_JJ families_NNS [_NN immunoglobulin_NN domain_NN (_( PF_NNP 00047_CD )_) ,_, protein_NN
+          kinase_NN domain_NN (_( PF_NNP 00069_CD )_) ,_, collagen_NN triple_JJ helix_NN repeat_NN
+          (_( PF_NNP 01391_CD )_) ,_, and_CC rhodopsin-type_JJ 7_CD transmembrane_NN receptor_NN
+          (_( PF_NNP 00001_CD )_) ]_NN ,_, all_DT mammalian_JJ sequences_NNS except_IN those_DT from_IN
+          human_NN and_CC rat_NN were_VBD excluded_VBN ._.
+          Alignments_NNP of_IN average_JJ length_NN <_NN 30_CD amino_JJ acids_NNS
+          (_( <_NN 40_CD for_IN zinc_NN finger_NN domains_NNS )_) or_CC with_IN <_NN 6_CD sequences_NNS
+          were_VBD not_RB analyzed_VBN ,_, because_IN of_IN lack_NN of_IN phylogenetic_JJ
+          signal_NN ._. For_IN all_DT other_JJ families_NNS ,_, pairwise_NN distances_NNS for_IN
+          100_CD bootstrap_NN samples_NNS were_VBD prepared_VBN ._. Following_VBG the_DT above_JJ
+          rules_NNS ,_, pairwise_NN distances_NNS were_VBD precalculated_JJ for_IN 2384_CD
+          alignments_NNS from_IN a_DT total_NN of_IN 3071_CD in_IN Pfam_NNP 6_CD ._. 6_CD (_( 75_CD
+          alignments_NNS were_VBD too_RB short_JJ and_CC 612_CD alignments_NNS contained_VBD
+          less_JJR than_IN six_CD sequences_NNS from_IN species_NNS in_IN the_DT master_NN
+          species_NNS tree_NN )_) ._.
+        
+        
+          Phylogenomic_NNP analyses_NNS of_IN the_DT A_DT ._. thalianaand_NN C_NNP ._.
+          elegansproteomes_NNS
+          In_IN order_NN to_TO get_VB an_DT estimate_NN of_IN the_DT effectiveness_NN of_IN
+          this_DT implementation_NN of_IN automated_VBN phylogenomics_NNS ,_, we_PRP used_VBD
+          the_DT RIO_NNP procedure_NN to_TO analyze_VB the_DT 
+          A_DT ._. thaliana_NN [_NN 16_CD ]_NN and_CC 
+          C_NNP ._. elegans_NNS [_NN 17_CD ]_NN proteomes_NNS ._.
+          The_DT input_NN for_IN RIO_NNP consists_VBZ of_IN a_DT query_NN protein_NN sequence_NN
+          together_RB with_IN a_DT Pfam_NNP alignment_NN for_IN a_DT protein_NN family_NN that_IN
+          the_DT query_NN belongs_VBZ to_TO ._. Before_IN RIO_NNP could_MD be_VB applied_VBN we_PRP
+          therefore_RB had_VBD to_TO determine_VB the_DT matching_VBG domains_NNS for_IN each_DT
+          protein_NN in_IN the_DT 
+          A_DT ._. thaliana_NN and_CC 
+          C_NNP ._. elegans_NNS proteomes_NNS ._. For_IN proteins_NNS
+          composed_VBN of_IN different_JJ domains_NNS ,_, a_DT RIO_NNP analysis_NN is_VBZ
+          performed_VBN for_IN each_DT domain_NN individually_RB ._.
+          The_DT source_NN for_IN protein_NN sequences_NNS were_VBD :_:
+          ATH_NNP 1_CD ._. pep_NN ._. 03202001_CD ,_, a_DT flatfile_NN database_NN of_IN 25_CD ,_, 579_CD 
+          A_DT ._. thaliana_NN amino_JJ acid_NN sequences_NNS
+          (_( hypothetical_JJ ,_, predicted_VBD and_CC experimentally_RB verified_VBN )_)
+          that_WDT have_VBP been_VBN identified_VBN as_IN part_NN of_IN the_DT Arabidopsis_NNP
+          Genome_NNP Initiative_NNP (_( AGI_NNP )_)
+          http_NN :_: /_NN /_NN www_NN ._. arabidopsis_NNS ._. org_NN /_NN info_NN /_NN agi_NN ._. html_NN ,_, and_CC wormpep_NN 43_CD ,_,
+          a_DT flatfile_NN database_NN of_IN 19_CD ,_, 730_CD 
+          C_NNP ._. elegans_NNS amino_JJ acid_NN sequences_NNS
+          http_NN :_: /_NN /_NN www_NN ._. sanger_NN ._. ac_NN ._. uk_NN /_NN Projects_NNPS /_NN C_NNP __NN elegans_NNS /_NN wormpep_NN /_NN ._.
+          The_DT program_NN hmmpfam_NN (_( version_NN 2_CD ._. 2_CD g_SYM )_) from_IN the_DT HMMER_NNP
+          package_NN was_VBD used_VBN to_TO search_VB each_DT protein_NN sequence_NN in_IN
+          ATH_NNP 1_CD ._. pep_NN ._. 03202001_CD and_CC wormpep_NN 43_CD against_IN Pfam_NNP 6_CD ._. 6_CD ._. Only_RB
+          domains_NNS with_IN a_DT score_NN above_IN the_DT so-called_JJ Pfam_NNP gathering_NN
+          cutoff_NN were_VBD reported_VBN (_( "_'' cut_VB __NN ga_NN "_'' option_NN )_) in_IN order_NN to_TO
+          include_VB only_RB confident_JJ domain_NN assignments_NNS ._.
+          The_DT sum_NN of_IN domains_NNS assigned_VBN to_TO the_DT 25_CD ,_, 579_CD 
+          A_DT ._. thaliana_NN protein_NN sequences_NNS was_VBD
+          17_CD ,_, 847_CD (_( counting_VBG multiple_JJ copies_NNS of_IN the_DT same_JJ domain_NN in_IN
+          one_CD protein_NN as_IN one_CD )_) ._. 12_CD ,_, 431_CD sequences_NNS matched_VBD one_CD domain_NN
+          (_( containing_VBG possibly_RB multiple_JJ copies_NNS of_IN this_DT one_CD domain_NN )_) ._.
+          1_LS ,_, 982_CD sequences_NNS matched_VBD two_CD different_JJ domains_NNS (_( containing_VBG
+          possibly_RB multiple_JJ copies_NNS of_IN both_DT )_) ._. 453_CD sequences_NNS matched_VBD
+          three_CD or_CC more_RBR different_JJ domains_NNS (_( containing_VBG possibly_RB
+          multiple_JJ copies_NNS of_IN each_DT )_) ._. Therefore_RB ,_, a_DT total_NN of_IN 14_CD ,_, 866_CD
+          (_( 58_CD %_NN )_) sequences_NNS from_IN ATH_NNP 1_CD ._. pep_NN ._. 03202001_CD could_MD be_VB assigned_VBN
+          to_TO one_CD or_CC more_JJR Pfam_NNP families_NNS ._.
+          Similarly_RB ,_, a_DT sum_NN of_IN 12_CD ,_, 314_CD domains_NNS was_VBD assigned_VBN to_TO the_DT
+          19_CD ,_, 769_CD 
+          C_NNP ._. elegans_NNS protein_NN sequences_NNS ._. 7_CD ,_, 698_CD
+          sequences_NNS matched_VBD one_CD domain_NN ,_, 1_CD ,_, 632_CD matched_VBN two_CD different_JJ
+          domains_NNS ,_, and_CC 388_CD matched_VBN three_CD or_CC more_RBR different_JJ domains_NNS ._.
+          Thus_RB ,_, 9_CD ,_, 718_CD (_( 49_CD %_NN )_) sequences_NNS from_IN wormpep_NN 43_CD could_MD be_VB
+          assigned_VBN to_TO one_CD or_CC more_JJR Pfam_NNP families_NNS ._.
+          RIO_NNP was_VBD then_RB used_VBN to_TO analyze_VB each_DT protein_NN sequence_NN
+          matching_VBG one_CD or_CC more_JJR Pfam_NNP families_NNS ._. The_DT results_NNS from_IN
+          these_DT analyses_NNS can_MD be_VB found_VBN at_IN
+          http_NN :_: /_NN /_NN www_NN ._. genetics_NNS ._. wustl_NN ._. edu_NN /_NN eddy_NN /_NN forester_NN /_NN rio_NN __NN analyses_NNS /_NN ._.
+          The_DT approximate_JJ time_NN requirement_NN was_VBD between_IN two_CD and_CC
+          three_CD weeks_NNS ,_, performed_VBN on_IN eight_CD Pentium_NNP III_NNP 800_CD Mhz_NNP
+          processors_NNS ._.
+        
+        
+          How_WRB many_JJ sequences_NNS can_MD be_VB analyzed_VBN with_IN RIO_NNP ?_.
+          The_DT first_JJ question_NN we_PRP asked_VBD was_VBD simply_RB how_WRB many_JJ
+          sequences_NNS can_MD be_VB analyzed_VBN with_IN RIO_NNP ._. For_IN an_DT overview_NN ,_, see_VB
+          Table_NNP 1_CD ._. From_IN the_DT 17_CD ,_, 847_CD 
+          A_DT ._. thaliana_NN domain_NN sequences_NNS
+          matching_VBG a_DT Pfam_NNP family_NN ,_, 14_CD ,_, 905_CD (_( 84_CD %_NN )_) could_MD be_VB analyzed_VBN
+          with_IN RIO_NNP using_VBG the_DT precalculated_JJ distances_NNS ._. 2859_CD (_( 16_CD %_NN )_)
+          domain_NN sequences_NNS were_VBD not_RB analyzed_VBN because_IN the_DT
+          corresponding_JJ Pfam_NNP alignments_NNS were_VBD either_CC too_RB short_JJ or_CC
+          did_VBD not_RB contain_VB enough_JJ sequences_NNS (_( as_IN described_VBN above_IN )_) ._. 83_CD
+          (_( 0_CD ._. 5_LS %_NN )_) domain_NN sequences_NNS were_VBD not_RB analyzed_VBN because_IN the_DT
+          E-_NNP value_NN for_IN the_DT match_NN to_TO their_PRP$ profile_NN HMM_NNP was_VBD below_IN the_DT
+          threshold_NN of_IN 0_CD ._. 01_CD ._. This_DT represents_VBZ a_DT second_JJ filtering_VBG
+          step_NN for_IN preventing_VBG analyzing_VBG false_JJ domain_NN assignments_NNS
+          (_( besides_IN only_RB analyzing_VBG domain_NN sequences_NNS which_WDT score_VBP
+          above_IN the_DT gathering_NN cutoff_NN in_IN the_DT domain_NN analysis_NN )_) ._. (_( RIO_NNP
+          performs_VBZ a_DT preprocessing_VBG step_NN before_IN aligning_VBG the_DT query_NN
+          sequence_NN to_TO a_DT Pfam_NNP alignment_NN ,_, in_IN which_WDT the_DT program_NN
+          hmmsearch_NN is_VBZ used_VBN to_TO trim_VB the_DT query_NN sequence_NN by_IN searching_VBG
+          it_PRP with_IN the_DT appropriate_JJ profile_NN HMM_NNP ._. If_IN the_DT resulting_VBG
+          E-_NNP value_NN was_VBD below_IN 0_CD ._. 01_CD no_DT analysis_NN was_VBD performed_VBN ._. )_)
+          Multiple_NNP copies_NNS of_IN the_DT same_JJ domain_NN in_IN certain_JJ sequences_NNS
+          result_VBP in_IN a_DT sum_NN of_IN individual_JJ analyses_NNS larger_JJR then_RB the_DT
+          number_NN of_IN analyzed_VBD domain_NN sequences_NNS ._. In_IN case_NN of_IN 
+          A_DT ._. thaliana_NN this_DT number_NN was_VBD
+          17_CD ,_, 940_CD ._.
+          Correspondingly_NNP ,_, from_IN the_DT 12_CD ,_, 314_CD 
+          C_NNP ._. elegans_NNS domain_NN sequences_NNS
+          matching_VBG a_DT Pfam_NNP family_NN ,_, 11_CD ,_, 287_CD (_( 92_CD %_NN )_) could_MD be_VB analyzed_VBN
+          with_IN RIO_NNP using_VBG the_DT precalculated_JJ distances_NNS ._. 901_CD (_( 7_CD %_NN )_)
+          domain_NN sequences_NNS were_VBD not_RB analyzed_VBN because_IN the_DT
+          corresponding_JJ Pfam_NNP alignments_NNS were_VBD either_CC too_RB short_JJ or_CC
+          did_VBD not_RB contain_VB enough_JJ sequences_NNS ._. 53_CD (_( 0_CD ._. 4_LS %_NN )_) domain_NN
+          sequences_NNS were_VBD not_RB analyzed_VBN because_IN the_DT E-_NNP value_NN for_IN the_DT
+          match_NN to_TO their_PRP$ profile_NN HMM_NNP was_VBD below_IN the_DT threshold_NN of_IN
+          0_CD ._. 01_CD ._. In_IN addition_NN ,_, we_PRP did_VBD not_RB analyze_VB the_DT 73_CD 
+          C_NNP ._. elegans_NNS sequences_NNS matching_VBG the_DT
+          immunoglobulin_NN family_NN (_( PF_NNP 00047_CD )_) ,_, because_IN we_PRP considered_VBD
+          the_DT phylogenetic_JJ signal_NN in_IN this_DT alignment_NN to_TO be_VB
+          questionable_JJ ._. Furthermore_RB ,_, most_JJS of_IN the_DT 73_CD sequences_NNS
+          contain_VBP multiple_JJ copies_NNS of_IN the_DT immunoglobulin_NN domain_NN (_( for_IN
+          example_NN ,_, CE_NNP 08028_CD contains_VBZ 48_CD immunoglobulin_NN domains_NNS )_) and_CC
+          we_PRP therefore_RB worried_VBD that_IN the_DT results_NNS from_IN this_DT family_NN
+          might_MD skew_NN our_PRP$ overall_JJ results_NNS ._. The_DT sum_NN of_IN RIO_NNP analyses_NNS
+          was_VBD 14_CD ,_, 740_CD ._.
+          Thus_RB ,_, a_DT little_JJ less_JJR than_IN half_NN of_IN each_DT proteome_NN can_MD be_VB
+          analyzed_VBN by_IN RIO_NNP ._. The_DT most_RBS important_JJ factor_NN is_VBZ whether_IN a_DT
+          protein_NN sequence_NN has_VBZ a_DT match_NN to_TO a_DT Pfam_NNP domain_NN family_NN ._.
+        
+        
+          RIO_NNP analysis_NN of_IN lactate_NN /_NN malate_NN dehydrogenase_NN family_NN
+          members_NNS
+          In_IN order_NN to_TO test_VB whether_IN RIO_NNP performs_VBZ well_RB on_IN an_DT
+          "_'' easy_JJ "_'' case_NN ,_, RIO_NNP was_VBD used_VBN to_TO analyze_VB lactate_NN /_NN malate_NN
+          dehydrogenase_NN family_NN members_NNS both_DT in_IN 
+          A_DT ._. thaliana_NN and_CC 
+          C_NNP ._. elegans_NNS ._. L-L_NNP actate_NN and_CC malate_NN
+          dehydrogenases_NNS are_VBP members_NNS of_IN the_DT same_JJ protein_NN family_NN
+          (_( represented_VBD in_IN Pfam_NNP as_IN ldh_NN for_IN the_DT NAD-binding_NNP domain_NN
+          and_CC ldh_NN __NN C_NNP for_IN the_DT alpha_NN /_NN beta_NN C-_NNP terminal_NN domain_NN )_) ,_, yet_RB they_PRP
+          catalyze_NN different_JJ reactions_NNS ._. L-_NNP lactate_NN dehydrogenase_NN (_( EC_NNP
+          1_CD ._. 1_CD ._. 1_LS ._. 27_CD )_) catalyzes_NNS the_DT following_JJ reaction_NN :_: (_( S_NNP )_) -_: lactate_NN +_NN
+          NAD_NNP +_NN =_SYM pyruvate_NN +_NN NADH_NNP [_NN 37_CD ]_NN ._. Malate_NNP dehydrogenase_NN
+          (_( NAD_NNP )_) (_( EC_NNP 1_CD ._. 1_CD ._. 1_LS ._. 37_CD )_) catalyzes_NNS :_: (_( S_NNP )_) -_: malate_NN +_NN NAD_NNP +_NN =_SYM
+          oxaloacetate_NN +_NN NADH_NNP [_NN 38_CD ]_NN ._. NADP-dependent_NNP malate_NN
+          dehydrogenase_NN (_( EC_NNP 1_CD ._. 1_CD ._. 1_LS ._. 82_CD )_) utilizes_NNS NADP_NNP +_NN as_IN cofactor_NN
+          instead_RB of_IN NAD_NNP +_NN [_NN 39_CD 40_CD ]_NN ._. According_VBG to_TO the_DT Pfam_NNP domain_NN
+          analysis_NN described_VBD above_IN ,_, the_DT 
+          A_DT ._. thaliana_NN proteome_NN contains_VBZ ten_CD
+          lactate_NN /_NN malate_NN dehydrogenase_NN family_NN members_NNS ,_, whereas_IN the_DT 
+          C_NNP ._. elegans_NNS proteome_NN contains_VBZ three_CD ._.
+          (_( In_IN addition_NN ,_, 
+          C_NNP ._. elegans_NNS also_RB contains_VBZ two_CD
+          putative_JJ members_NNS of_IN a_DT second_JJ lactate_NN /_NN malate_NN dehydrogenase_NN
+          family_NN [_NN 41_CD ]_NN ,_, ldh_NN __NN 2_CD ,_, which_WDT are_VBP not_RB discussed_VBN here_RB ._. )_) The_DT
+          RIO_NNP output_NN for_IN the_DT 
+          A_DT ._. thaliana_NN protein_NN F_NN 12_CD M_NNP 16_CD __NN 14_CD
+          analyzed_VBD against_IN the_DT ldh_NN domain_NN alignment_NN is_VBZ shown_VBN as_IN an_DT
+          example_NN in_IN Figure_NN 7_CD ._. The_DT results_NNS are_VBP summarized_VBD in_IN Tables_NNP
+          2_CD and_CC 3_CD ._. Complete_JJ RIO_NNP output_NN files_NNS (_( as_RB well_RB as_IN NHX_NNP [_NN 33_CD ]_NN
+          tree_NN files_NNS )_) are_VBP avaliable_JJ ,_, herefor_NN 
+          A_DT ._. thaliana_NN and_CC at_IN herefor_NN 
+          c_SYM ._. elegans_NNS ._. In_IN all_DT cases_NNS ,_,
+          distinction_NN between_IN malate_NN dehydrogenase_NN (_( NAD_NNP )_) and_CC
+          lactate_NN dehydrogenase_NN is_VBZ unquestionable_JJ and_CC in_IN accordance_NN
+          with_IN existing_VBG annotations_NNS and_CC BLAST_NN results_NNS irrespective_RB
+          which_WDT domain_NN (_( ldh_NN or_CC ldh_NN __NN C_NNP )_) was_VBD used_VBN for_IN the_DT RIO_NNP analysis_NN
+          (_( which_WDT implies_VBZ that_IN no_DT domain_NN swapping_VBG occurred_VBN over_IN long_JJ
+          evolutionary_JJ times_NNS )_) ._. Furthermore_RB ,_, the_DT same_JJ results_NNS are_VBP
+          achieved_VBN whether_IN only_RB the_DT top_JJ 1_CD sequence_NN (_( the_DT one_CD with_IN
+          the_DT highest_JJS orthology_NN value_NN ,_, shown_VBN in_IN Tables_NNP 2_CD and_CC 3_LS )_) or_CC
+          the_DT top_JJ 10_CD sequences_NNS are_VBP used_VBN to_TO transfer_VB annotation_NN
+          from_IN ._. The_DT only_RB likely_JJ NADP-dependent_NNP malate_NN dehydrogenase_NN
+          is_VBZ the_DT 
+          A_DT ._. thaliana_NN sequence_NN MCK_NNP 7_CD __NN 20_CD ._. For_IN
+          some_DT query_NN sequences_NNS ,_, the_DT top_JJ orthology_NN values_NNS are_VBP low_JJ ._.
+          Yet_RB ,_, all_DT subtree-neighborings_JJ above_IN 50_CD %_NN exhibit_NN consensus_NN
+          at_IN distinguishing_VBG between_IN malate_NN and_CC lactate_NN
+          dehydrogenase_NN ._. In_IN contrast_NN ,_, a_DT finer_NN distinction_NN (_( e_SYM ._. g_SYM ._.
+          between_IN mitochondrial_NN and_CC cytoplasmic_JJ malate_NN
+          dehydrogenase_NN )_) proves_VBZ more_RBR problematic_JJ ._. While_IN there_EX is_VBZ no_DT
+          case_NN of_IN actual_JJ conflict_NN between_IN the_DT existing_VBG annotation_NN
+          and_CC the_DT RIO_NNP results_NNS ,_, in_IN many_JJ cases_NNS there_RB is_VBZ no_DT compelling_JJ
+          evidence_NN in_IN the_DT RIO_NNP results_NNS to_TO confirm_VB the_DT finer_NN
+          distinctions_NNS in_IN the_DT existing_VBG annotations_NNS ._. Obviously_RB ,_, the_DT
+          resolution_NN power_NN of_IN RIO_NNP is_VBZ limited_VBN by_IN the_DT given_VBN
+          annotations_NNS and_CC by_IN the_DT number_NN (_( or_CC even_RB presence_NN )_) of_IN
+          sequences_NNS for_IN each_DT sub_NN (_( sub_NN )_) family_NN ._.
+        
+        
+          Sequences_NNP with_IN no_DT orthologs_NNS in_IN the_DT current_JJ
+          databases_NNS
+          Next_JJ ,_, we_PRP determined_VBD the_DT distribution_NN of_IN the_DT top_JJ
+          orthology_NN bootstrap_NN values_NNS ._. The_DT sequence_NN with_IN the_DT top_JJ
+          orthology_NN bootstrap_NN value_NN is_VBZ the_DT one_CD that_WDT is_VBZ most_RBS likely_JJ
+          to_TO be_VB the_DT true_JJ ortholog_NN of_IN the_DT query_NN ._. If_IN the_DT top_JJ
+          orthology_NN bootstrap_NN value_NN is_VBZ low_JJ ,_, then_RB the_DT query_NN sequence_NN
+          is_VBZ likely_JJ to_TO have_VB no_DT ortholog_NN in_IN the_DT Pfam_NNP alignment_NN ._.
+          These_DT results_NNS are_VBP summarized_VBD in_IN Table_NNP 4_CD ._. For_IN example_NN ,_, for_IN
+          2252_CD 
+          A_DT ._. thaliana_NN query_NN sequences_NNS ,_, at_IN
+          least_JJS one_CD sequence_NN was_VBD orthologous_JJ in_IN at_IN least_JJS 95_CD out_IN of_IN
+          100_CD resampled_JJ trees_NNS ._. In_IN contrast_NN ,_, for_IN 930_CD 
+          A_DT ._. thaliana_NN query_NN sequences_NNS ,_, no_DT
+          sequence_NN was_VBD orthologous_JJ in_IN more_JJR than_IN five_CD out_IN of_IN 100_CD
+          bootstrapped_JJ trees_NNS ._. For_IN query_NN sequences_NNS with_IN more_JJR than_IN
+          one_CD copy_NN of_IN the_DT same_JJ domain_NN ,_, each_DT copy_NN had_VBD to_TO meet_VB the_DT
+          conditions_NNS individually_RB in_IN order_NN for_IN the_DT whole_JJ query_NN
+          sequence_NN being_VBG counted_VBN to_TO be_VB below_IN or_CC above_IN the_DT
+          threshold_NN ._.
+          We_PRP do_VBP not_RB think_VB it_PRP is_VBZ possible_JJ at_IN this_DT stage_NN to_TO
+          determine_VB reliable_JJ threshold_NN values_NNS for_IN "_'' true_JJ orthologs_NNS "_''
+          or_CC "_'' absence_NN of_IN orthologs_NNS "_'' ._. Such_JJ thresholds_NNS are_VBP very_RB
+          likely_JJ to_TO be_VB different_JJ for_IN different_JJ Pfam_NNP families_NNS since_IN
+          families_NNS vary_VBP in_IN the_DT phylogenetic_JJ signal_NN their_PRP$ alignment_NN
+          contains_VBZ ._. Some_DT sequences_NNS that_WDT are_VBP very_RB likely_JJ to_TO be_VB true_JJ
+
+          orthologs_NNS nonetheless_RB exhibit_NN marginal_JJ orthology_NN
+          bootstrap_NN values_NNS (_( in_IN the_DT range_NN of_IN 70_CD %_NN or_CC even_RB lower_JJR )_) ._.
+          We_PRP focused_VBD on_IN sequences_NNS that_WDT appeared_VBD to_TO have_VB no_DT
+          orthologs_NNS (_( <_NN 5_CD %_NN bootstrap_NN )_) ,_, since_IN these_DT would_MD be_VB cases_NNS
+          where_WRB a_DT RIO_NNP analysis_NN might_MD be_VB most_RBS able_JJ to_TO correct_VB overly_RB
+          specific_JJ annotations_NNS that_WDT might_MD be_VB transferred_VBN based_VBN
+          solely_RB on_IN sequence_NN similarity_NN (_( as_IN illustrated_VBN in_IN Figure_NN
+          1_LS )_) ._. An_DT example_NN for_IN this_DT is_VBZ the_DT 
+          A_DT ._. thaliana_NN sequence_NN F_NN 28_CD P_NN 22_CD __NN 13_CD ._.
+          (_( Files_NNP related_VBD to_TO this_DT analysis_NN are_VBP avaliable_JJ ,_, here_RB ._. )_)
+          This_DT sequence_NN is_VBZ a_DT zinc-binding_JJ dehydrogenase_NN (_( Pfam_NNP :_:
+          adh_NN __NN zinc_NN ,_, PF_NNP 00107_CD )_) ._. F_NN 28_CD P_NN 22_CD __NN 13_CD has_VBZ been_VBN annotated_JJ in_IN
+          ATH_NNP 1_CD ._. pep_NN ._. 03202001_CD "_'' as_IN putative_JJ cinnamyl-alcohol_JJ
+          dehydrogenase_NN "_'' ,_, based_VBN on_IN sequence_NN similarity_NN (_( its_PRP$ top_JJ 10_CD
+          BLAST_NN matches_NNS are_VBP all_DT cinnamyl-alcohol_JJ dehydrogenases_NNS
+          with_IN E-_NNP values_NNS in_IN the_DT range_NN of_IN 10_CD -_: 94_CD if_IN analyzed_VBD against_IN
+          all_DT non-redundant_JJ GenBank_NNP CDS_NNP
+          translations_NNS +_NN PDB_NNP +_NN SwissProt_NNP +_NN PIR_NNP +_NN PRF_NNP on_IN Jan_NNP 2_CD ,_, 2002_CD )_) ._.
+          Cinnamyl-alcohol_NNP dehydrogenase_NN (_( EC_NNP 1_CD ._. 1_CD ._. 1_LS ._. 195_CD )_) catalyzes_NNS
+          the_DT following_JJ reaction_NN :_: cinnamyl_NN alcohol_NN +_NN NADP_NNP +_NN =_SYM
+          cinnamaldehyde_NN +_NN NADPH_NNP (_( but_CC it_PRP can_MD also_RB act_VB on_IN coniferyl_NN
+          alcohol_NN ,_, sinapyl_NN alcohol_NN and_CC 4_CD -_: coumaryl_NN alcohol_NN )_) in_IN the_DT
+          flavonoid_NN ,_, stilbene_NN and_CC lignin_NN biosynthesis_NNS pathways_NNS [_NN 40_CD
+          42_CD ]_NN ._. According_VBG to_TO the_DT RIO_NNP analysis_NN ,_, F_NN 28_CD P_NN 22_CD __NN 13_CD has_VBZ no_DT
+          orthologs_NNS (_( see_VB Figure_NN 8_CD for_IN the_DT corresponding_JJ tree_NN and_CC
+          Figure_NN 9_CD for_IN the_DT RIO_NNP output_NN )_) ._. Furthermore_RB its_PRP$
+          subtree-neighbors_JJ above_IN 90_CD %_NN ,_, cinnamyl-alcohol_JJ
+          dehydrogenases_NNS and_CC NADP-dependent_NNP alcohol_NN dehydrogenases_NNS
+          (_( EC_NNP 1_CD ._. 1_CD ._. 1_LS ._. 2_LS )_) ,_, exhibit_NN only_RB partial_JJ annotation_NN agreement_NN
+          (_( namely_RB that_IN of_IN some_DT type_NN of_IN NADP-dependent_NNP alcohol_NN
+          dehydrogenase_NN ,_, but_CC not_RB EC_NNP 1_CD ._. 1_CD ._. 1_LS ._. 2_CD or_CC EC_NNP 1_CD ._. 1_CD ._. 1_LS ._. 195_CD )_) ._.
+          Hence_RB ,_, F_NN 28_CD P_NN 22_CD __NN 13_CD is_VBZ likely_JJ to_TO be_VB a_DT (_( possibly_RB novel_NN )_) type_NN
+          of_IN NADP-dependent_NNP alcohol_NN dehydrogenase_NN (_( other_JJ than_IN EC_NNP
+          1_CD ._. 1_CD ._. 1_LS ._. 2_LS )_) ,_, possibly_RB a_DT novel_NN type_NN of_IN cinnamyl-alcohol_JJ
+          dehydrogenase_NN ._.
+          One_PRP might_MD expect_VB that_IN each_DT query_NN sequence_NN that_WDT appears_VBZ
+          to_TO have_VB no_DT orthologs_NNS is_VBZ connected_VBN with_IN scenario_NN similar_JJ
+          to_TO the_DT one_CD described_VBD above_IN for_IN F_NN 28_CD P_NN 22_CD __NN 13_CD ._. Yet_RB ,_, this_DT is_VBZ
+          clearly_RB not_RB the_DT case_NN ,_, for_IN the_DT following_JJ reasons_NNS :_: (_( i_NNP )_) Gene_NNP
+          duplications_NNS might_MD not_RB be_VB followed_VBN by_IN functional_JJ
+          modification_NN (_( many_JJ Pfam_NNP families_NNS are_VBP composed_VBN of_IN
+          sequences_NNS which_WDT have_VBP all_PDT the_DT same_JJ function_NN ,_, at_IN least_JJS at_IN
+          the_DT resolution_NN of_IN the_DT current_JJ annotation_NN )_) ._. (_( ii_NN )_) Some_DT Pfam_NNP
+          families_NNS are_VBP composed_VBN solely_RB of_IN sequences_NNS originating_VBG
+          from_IN closely_RB related_VBN (_( or_CC the_DT same_JJ )_) species_NNS (_( such_JJ as_IN
+          PF_NNP 02362_CD ,_, the_DT B_NNP 3_CD DNA_NNP binding_JJ domain_NN of_IN higher_JJR plants_NNS )_) ._. For_IN
+          such_JJ families_NNS ,_, query_NN sequences_NNS from_IN the_DT same_JJ species_NNS
+          group_NN are_VBP expected_VBN to_TO have_VB low_JJ orthology_NN values_NNS ._. In_IN such_JJ
+          cases_VBZ the_DT concept_NN of_IN subtree-neighbors_JJ and_CC ultra-paralogs_JJ
+          is_VBZ more_RBR useful_JJ than_IN orthologs_NNS ._. (_( iii_NN )_) Erroneous_NNP RIO_NNP
+          results_NNS caused_VBN by_IN an_DT insufficient_JJ phylogenetic_JJ signal_NN
+          (_( due_JJ to_TO short_JJ sequences_NNS ,_, for_IN example_NN )_) can_MD lead_VB to_TO low_JJ
+          orthology_NN values_NNS ._. For_IN this_DT reason_NN ,_, RIO_NNP also_RB outputs_NNS the_DT
+          average_JJ bootstrap_NN value_NN for_IN the_DT consensus_NN tree_NN to_TO give_VB
+          the_DT user_NN a_DT hint_NN about_IN the_DT amount_NN of_IN phylogenetic_JJ signal_NN
+          in_IN the_DT alignment_NN used_VBN ._.
+        
+        
+          Inconsistency_NNP between_IN orthology_NN bootstrap_NN values_NNS
+          and_CC sequence_NN similarity_NN
+          We_PRP were_VBD next_JJ interested_JJ in_IN the_DT number_NN of_IN sequences_NNS in_IN
+          the_DT two_CD proteomes_NNS for_IN which_WDT the_DT orthology_NN bootstrap_NN
+          values_NNS do_VBP not_RB correspond_VB to_TO sequence_NN similarity_NN (_( Table_NNP
+          5_LS )_) ._. Such_JJ disagreements_NNS could_MD be_VB caused_VBN by_IN the_DT situation_NN
+          illustrated_VBN in_IN Figure_NN 2_CD ._. To_TO determine_VB these_DT numbers_NNS ,_, we_PRP
+          used_VBD the_DT following_VBG rules_NNS ._. Two_CD thresholds_NNS for_IN orthology_NN
+          bootstrap_NN values_NNS were_VBD chosen_VBN :_: 
+          O_NNP ,_, the_DT minimum_NN for_IN being_VBG an_DT
+          ortholog_NN (_( e_SYM ._. g_SYM ._. 90_CD %_NN )_) and_CC 
+          N_NNP ,_, the_DT maximum_NN for_IN not_RB being_VBG an_DT
+          ortholog_NN (_( e_SYM ._. g_SYM ._. 10_CD %_NN )_) ._. Furthermore_RB ,_, a_DT maximal_NN ratio_NN 
+          R_NN for_IN the_DT distance_NN of_IN the_DT query_NN to_TO
+          non-orthologs_JJ to_TO the_DT distance_NN of_IN the_DT query_NN to_TO orthologs_NNS
+          was_VBD chosen_VBN (_( e_SYM ._. g_SYM ._. 0_CD ._. 5_LS )_) ._. In_IN order_NN for_IN being_VBG counted_VBN as_IN
+          exhibiting_VBG disagreement_NN between_IN the_DT orthology_NN bootstrap_NN
+          values_NNS and_CC sequence_NN similarity_NN a_DT query_NN sequence_NN had_VBD to_TO
+          fulfill_VB the_DT following_VBG two_CD conditions_NNS :_: (_( i_NNP )_) it_PRP must_MD have_VB a_DT
+          least_JJS one_CD ortholog_NN with_IN bootstrap_NN orthology_NN value_NN above_IN
+          or_CC equal_JJ to_TO 
+          O_NNP ,_, and_CC (_( ii_NN )_) 
+          all_DT sequences_NNS in_IN the_DT alignment_NN with_IN
+          bootstrap_NN orthology_NN values_NNS above_IN 
+          N_NNP ,_, must_MD have_VB distance_VB ratios_NNS
+          smaller_JJR or_CC equal_JJ to_TO 
+          R_NN for_IN at_IN least_JJS one_CD sequence_NN with_IN
+          bootstrap_NN orthology_NN lower_JJR or_CC equal_JJ to_TO 
+          N_NNP ._. Sequences_NNP from_IN the_DT following_VBG
+          species_NNS were_VBD ignored_VBN in_IN this_DT analysis_NN (_( since_IN they_PRP were_VBD
+          the_DT species_NNS of_IN the_DT query_NN sequence_NN or_CC related_VBN to_TO it_PRP )_) :_: 
+          A_DT ._. thaliana_NN proteome_NN :_: 
+          Rosidae_NNP (_( 
+          A_DT ._. thaliana_NN ,_, Pisum_NNP sativum_NN ,_, 
+          Glycine_NNP max_NN ,_, 
+          Cucurbita_NNP maxima_NN ,_, 
+          Cucumis_NNP sativus_JJ ,_, 
+          Brassica_NNP campestris_NNS ,_, 
+          Brassica_NNP napus_JJ ,_, 
+          Citrus_NNP unshiu_NN ,_, 
+          Citrus_NNP sinensis_NNS ,_, 
+          Theobroma_NNP cacao_NN ,_, 
+          Gossypium_NNP hirsutum_NN )_) ;_: 
+          C_NNP ._. elegans_NNS proteome_NN :_: nematodes_NNS (_( 
+          C_NNP ._. elegans_NNS ,_, 
+          Caenorhabditis_NNP briggsae_NN ,_, 
+          Haemonchus_NNP contortus_JJ ,_, 
+          Ascaris_NNP suum_NN )_) ._.
+          Manual_NNP inspection_NN of_IN the_DT RIO_NNP output_NN leads_VBZ to_TO the_DT
+          following_NN ,_, somewhat_RB unexpected_JJ ,_, conclusion_NN ._. In_IN many_JJ cases_VBZ
+          a_DT discrepancy_NN between_IN orthology_NN bootstrap_NN values_NNS and_CC
+          sequence_NN similarity_NN is_VBZ caused_VBN by_IN orthologs_NNS in_IN only_RB
+          phylogenetically_RB distant_JJ (_( relatively_RB to_TO the_DT query_NN
+          sequence_NN )_) species_NNS ._. This_DT can_MD lead_VB to_TO errors_NNS if_IN functional_JJ
+          annotation_NN is_VBZ blindly_RB transferred_VBN from_IN these_DT orthologs_NNS to_TO
+          the_DT query_NN ._. As_IN an_DT example_NN of_IN this_DT ,_, the_DT results_NNS of_IN
+          analyzing_VBG the_DT 
+          A_DT ._. thaliana_NN O-_NNP methyltransferase_NN
+          F_NN 16_CD P_NN 17_CD __NN 38_CD are_VBP shown_VBN in_IN Figures_NNS 10_CD and_CC 11_CD ._. (_( Complete_JJ files_NNS
+          are_VBP at_IN here_RB ._. )_) Even_RB though_IN the_DT F_NN 16_CD P_NN 17_CD __NN 38_CD sequence_NN is_VBZ
+          orthologous_JJ to_TO the_DT bacterial_JJ hydroxyneurosporene_NN
+          methyltransferases_NNS (_( EC_NNP 2_CD ._. 1_CD ._. 1_LS ._. -_: )_) [_NN 43_CD ]_NN it_PRP would_MD be_VB
+          dangerous_JJ to_TO annotate_NN it_PRP as_IN such_JJ ._. A_DT more_RBR reasonable_JJ
+          annotation_NN for_IN this_DT query_NN would_MD be_VB to_TO annotate_NN it_PRP based_VBN
+          on_IN subtree-neighbors_JJ and_CC hence_RB call_VB it_PRP a_DT plant_NN
+          O-_NNP methyltransferase_NN ._. An_DT indication_NN of_IN this_DT problem_NN
+          (_( besides_IN a_DT discrepancy_NN between_IN orthology_NN bootstrap_NN values_NNS
+          and_CC sequence_NN similarity_NN )_) is_VBZ the_DT meeting_NN of_IN the_DT following_VBG
+          three_CD conditions_NNS :_: A_DT query_NN sequence_NN has_VBZ (_( i_NNP )_) likely_JJ
+          orthologs_NNS and_CC (_( ii_NN )_) likely_JJ subtree-neighbors_JJ in_IN other_JJ
+          species_NNS than_IN the_DT query_NN itself_PRP ,_, yet_RB (_( iii_NN )_) there_EX is_VBZ no_DT
+          significant_JJ overlap_VB between_IN the_DT orthologs_NNS and_CC the_DT
+          subtree-neighbors_JJ ._.
+          We_PRP were_VBD unable_JJ to_TO find_VB convincing_JJ examples_NNS in_IN the_DT 
+          C_NNP ._. elegans_NNS and_CC 
+          A_DT ._. thaliana_NN proteomes_NNS where_WRB wrong_JJ
+          sequence_NN similarity_NN based_VBD annotations_NNS might_MD be_VB caused_VBN by_IN
+          unequal_JJ rates_NNS of_IN evolution_NN (_( as_IN illustrated_VBN in_IN Figure_NN 2_LS )_) ._.
+          This_DT is_VBZ not_RB to_TO say_VB that_IN such_JJ cases_NNS do_VBP not_RB exist_VB in_IN those_DT
+          two_CD proteomes_NNS ,_, but_CC they_PRP are_VBP likely_JJ to_TO be_VB quite_RB rare_JJ ._.
+          Similarly_RB to_TO the_DT issues_NNS described_VBD in_IN the_DT previous_JJ
+          section_NN ,_, the_DT detection_NN of_IN such_JJ examples_NNS is_VBZ complicated_VBN by_IN
+          the_DT fact_NN that_IN for_IN many_JJ cases_NNS in_IN which_WDT a_DT discrepancy_NN
+          between_IN orthology_NN bootstrap_NN values_NNS and_CC sequence_NN
+          similarity_NN exists_VBZ ,_, all_DT sequences_NNS in_IN the_DT Pfam_NNP alignment_NN
+          appear_VBP to_TO have_VB to_TO same_JJ function_NN ,_, the_DT Pfam_NNP family_NN is_VBZ
+          lineage_NN specific_JJ ,_, or_CC the_DT annotations_NNS are_VBP too_RB
+          poor_JJ /_NN confusing_JJ to_TO make_VB any_DT kind_NN of_IN inference_NN ._.
+        
+      
+      
+        Conclusions_NNP
+        RIO_NNP is_VBZ a_DT procedure_NN for_IN automated_VBN phylogenomics_NNS ._. The_DT RIO_NNP
+        procedure_NN appears_VBZ to_TO be_VB particularly_RB useful_JJ for_IN the_DT
+        detection_NN of_IN first_JJ representatives_NNS of_IN novel_NN protein_NN
+        subfamilies_NNS ._. Sequence_NNP similarity_NN based_VBD methods_NNS can_MD be_VB
+        misleading_VBG in_IN these_DT cases_NNS since_IN every_DT query_NN is_VBZ always_RB "_'' most_RBS
+        similar_JJ to_TO something_NN "_'' ,_, whereas_IN RIO_NNP can_MD detect_VB the_DT absence_NN
+        of_IN orthologs_NNS ._.
+        Storm_NN ,_, Sonnhammer_NNP ,_, and_CC colleagues_NNS have_VBP recently_RB
+        developed_VBN similar_JJ ideas_NNS and_CC procedures_NNS in_IN a_DT program_NN called_VBD
+        ORTHOSTRAPPER_NNP [_NN 44_CD 45_CD ]_NN ._. One_CD distinction_NN between_IN the_DT two_CD
+        approaches_NNS is_VBZ that_IN ORTHOSTRAPPER_NNP 's_POS orthology_NN determination_NN
+        procedure_NN does_VBZ not_RB employ_VB a_DT species_NNS tree_NN for_IN duplication_NN
+        inference_NN ;_: it_PRP uses_VBZ a_DT heuristic_JJ based_VBN on_IN sequence_NN similarity_NN
+        rather_RB than_IN a_DT formally_RB correct_JJ phylogenetic_JJ means_NNS of_IN
+        inferring_VBG orthology_NN ._. Another_DT distinction_NN is_VBZ that_IN
+        ORTHOSTRAPPER_NNP uses_VBZ uncorrected_JJ observed_VBN mismatches_NNS as_IN a_DT
+        sequence_NN distance_NN measure_NN ,_, rather_RB than_IN estimating_VBG
+        evolutionary_JJ distances_NNS ._. In_IN general_JJ ,_, RIO_NNP brings_VBZ more_JJR of_IN the_DT
+        power_NN of_IN known_VBN phylogenetic_JJ inference_NN algorithms_NNS to_TO bear_VB on_IN
+        the_DT problem_NN of_IN proteomic_JJ annotation_NN ._.
+        Super-orthology_NNP is_VBZ a_DT very_RB stringent_JJ criterion_NN ._. If_IN a_DT
+        query_NN sequence_NN is_VBZ likely_JJ to_TO have_VB super-orthologs_JJ ,_, they_PRP
+        represent_VBP an_DT excellent_JJ source_NN to_TO transfer_VB functional_JJ
+        annotation_NN from_IN ._. In_IN contrast_NN ,_, the_DT absence_NN of_IN
+        super-orthologs_JJ does_VBZ not_RB imply_VB that_IN a_DT function_NN for_IN a_DT query_NN
+        sequence_NN cannot_NN be_VB inferred_VBN (_( in_IN the_DT two_CD proteomes_NNS analyzed_VBD
+        in_IN this_DT work_NN ,_, most_JJS sequences_NNS appear_VBP to_TO have_VB no_DT
+        super-orthologs_JJ in_IN Pfam_NNP 6_CD ._. 6_CD )_) ._.
+        Ultra-paralogs_NNP are_VBP sequences_NNS in_IN the_DT same_JJ species_NNS as_IN the_DT
+        query_NN and_CC are_VBP likely_JJ to_TO be_VB the_DT result_NN of_IN recent_JJ
+        duplications_NNS and_CC therefore_RB might_MD not_RB have_VB yet_RB undergone_VBN
+        much_JJ functional_JJ divergence_NN ._. Operationally_RB ,_, splice_NN variants_NNS
+        can_MD also_RB be_VB thought_VBN of_IN as_IN ultra-paralogs_JJ (_( at_IN least_JJS as_RB long_RB
+        as_IN protein_NN sequences_NNS are_VBP considered_VBN )_) ._.
+        Subtree-neighbors_NNP have_VBP two_CD uses_VBZ :_: (_( i_NNP )_) If_IN the_DT
+        subtree-neighbors_JJ of_IN the_DT query_NN sequence_NN exhibit_NN (_( partial_JJ )_)
+        agreement_NN in_IN their_PRP$ functional_JJ annotations_NNS ,_, the_DT elements_NNS in_IN
+        which_WDT they_PRP agree_VBP might_MD be_VB used_VBN to_TO infer_NN a_DT (_( partial_JJ )_)
+        function_NN for_IN the_DT query_NN ._. This_DT is_VBZ useful_JJ for_IN query_NN sequences_NNS
+        that_WDT are_VBP appear_VB to_TO have_VB no_DT orthologs_NNS in_IN the_DT current_JJ
+        databases_NNS ._. (_( ii_NN )_) For_IN query_NN sequences_NNS that_WDT do_VBP have_VBP orthologs_NNS ,_,
+        absence_NN of_IN overlap_VB between_IN the_DT sequences_NNS considered_VBN
+        orthologous_JJ and_CC those_DT which_WDT appear_VBP to_TO be_VB subtree-neighbors_JJ
+        raises_VBZ a_DT red_JJ flag_NN ,_, indicating_VBG that_IN the_DT orthologs_NNS are_VBP in_IN
+        phylogenetically_RB distant_JJ species_NNS relative_JJ to_TO the_DT query_NN ._.
+        Transferring_NNP annotation_NN from_IN such_JJ orthologs_NNS is_VBZ risky_JJ ._. In_IN
+        this_DT case_NN ,_, subtree-neighbors_JJ are_VBP a_DT more_RBR reliable_JJ source_NN to_TO
+        transfer_VB annotation_NN from_IN ._.
+        RIO_NNP outputs_NNS warnings_NNS if_IN the_DT distance_NN of_IN the_DT query_NN
+        sequence_NN to_TO other_JJ sequences_NNS is_VBZ unusually_RB short_JJ or_CC long_JJ ,_,
+        relative_JJ to_TO other_JJ branch_NN lengths_NNS on_IN the_DT tree_NN ._. The_DT
+        usefulness_NN of_IN this_DT was_VBD not_RB investigated_VBN in_IN this_DT work_NN ._.
+        A_DT RIO_NNP procedure_NN based_VBN on_IN Pfam_NNP alignments_NNS analyzes_NNS each_DT
+        protein_NN domain_NN individually_RB since_IN Pfam_NNP is_VBZ protein_NN family_NN
+        database_NN based_VBN on_IN individual_JJ domains_NNS [_NN 8_CD ]_NN ._. In_IN some_DT
+        respects_VBZ ,_, it_PRP would_MD be_VB preferable_JJ to_TO analyze_VB whole_JJ protein_NN
+        sequences_NNS ,_, but_CC well_RB curated_JJ databases_NNS of_IN complete_JJ protein_NN
+        alignments_NNS are_VBP not_RB available_JJ (_( to_TO our_PRP$ knowledge_NN )_) ._. However_RB ,_,
+        domain-by-domain_JJ analysis_NN is_VBZ not_RB necessarily_RB
+        disadvantageous_JJ ._. Due_JJ to_TO domain_NN shuffling_VBG many_JJ proteins_NNS are_VBP
+        mosaic_JJ proteins_NNS ,_, composed_VBN of_IN domains_NNS with_IN different_JJ
+        evolutionary_JJ histories_NNS [_NN 46_CD 47_CD ]_NN ._. For_IN such_JJ proteins_NNS it_PRP
+        makes_VBZ much_JJ sense_NN to_TO analyze_VB each_DT domain_NN individually_RB ._.
+        Furthermore_RB ,_, mosaic_JJ proteins_NNS from_IN sufficiently_RB distant_JJ
+        species_NNS might_MD be_VB impossible_JJ to_TO be_VB aligned_VBN over_IN more_JJR than_IN
+        one_CD domain_NN at_IN the_DT time_NN ,_, since_IN they_PRP are_VBP unlikely_JJ to_TO exhibit_VB
+        the_DT same_JJ domain_NN organization_NN ._. The_DT same_JJ is_VBZ true_JJ for_IN multiple_JJ
+        copies_NNS of_IN the_DT same_JJ domain_NN in_IN protein_NN :_: Each_DT of_IN them_PRP is_VBZ
+        analyzed_VBN individually_RB (_( such_JJ proteins_NNS often_RB differ_VBP in_IN their_PRP$
+        number_NN of_IN domain_NN copies_NNS and_CC could_MD therefore_RB not_RB be_VB aligned_VBN
+        from_IN end_NN to_TO end_VB for_IN the_DT whole_JJ family_NN )_) ._.
+        In_IN general_JJ ,_, the_DT concept_NN of_IN "_'' annotation_NN consensus_NN "_'' is_VBZ
+        very_RB important_JJ in_IN this_DT work_NN (_( for_IN example_NN consensus_NN between_IN
+        subtree-neighbors_JJ ,_, or_CC between_IN subtree-neighbors_JJ and_CC
+        orthologs_NNS )_) ._. We_PRP have_VBP employed_VBN this_DT notion_NN loosely_RB ._. A_DT useful_JJ
+        future_JJ extension_NN would_MD be_VB to_TO incorporate_VB automated_VBN
+        annotation_NN consensus_NN detection_NN into_IN RIO_NNP ._. This_DT would_MD include_VB
+        annotation_NN of_IN internal_JJ nodes_NNS of_IN a_DT gene_NN tree_NN with_IN a_DT
+        "_'' biological_JJ function_NN "_'' ._. Automated_NNP consensus_NN detection_NN is_VBZ
+        trivial_JJ for_IN a_DT highly_RB formalized_JJ notation_NN system_NN ,_, such_JJ as_IN EC_NNP
+        numbers_NNS (_( the_DT consensus_NN of_IN EC_NNP 1_CD ._. 1_CD ._. 1_LS ._. 3_CD and_CC EC_NNP 1_CD ._. 1_CD ._. 1_LS ._. 23_CD is_VBZ EC_NNP
+        1_CD ._. 1_CD ._. 1_LS ,_, a_DT oxidoreductase_NN acting_VBG on_IN the_DT CH-OH_NNP group_NN of_IN donors_NNS
+        with_IN NAD_NNP +_NN or_CC NADP_NNP +_NN as_IN acceptor_NN [_NN 40_CD ]_NN )_) ._. Obviously_RB ,_, it_PRP is_VBZ
+        much_RB more_RBR difficult_JJ to_TO analyze_VB natural_JJ language_NN annotations_NNS
+        in_IN the_DT same_JJ manner_NN ._. Perhaps_RB this_DT could_MD be_VB accomplished_VBN by_IN
+        utilizing_VBG the_DT set_NN of_IN structured_VBN vocabularies_NNS of_IN the_DT Gene_NNP
+        Ontology_NNP (_( GO_NNP )_) project_NN [_NN 48_CD ]_NN
+        http_NN :_: /_NN /_NN www_NN ._. geneontology_NN ._. org_NN /_NN ._.
+      
+    
+  

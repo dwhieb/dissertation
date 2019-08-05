@@ -1,0 +1,543 @@
+
+  
+    
+      
+        Background_NNP
+        Microarray_NNP technology_NN has_VBZ revolutionized_VBD modern_JJ
+        biological_JJ research_NN by_IN permitting_VBG the_DT simultaneous_JJ study_NN of_IN
+        genes_NNS comprising_VBG a_DT large_JJ part_NN of_IN the_DT genome_NN ._. The_DT blessings_NNS
+        stemming_VBG from_IN this_DT are_VBP accompanied_VBN by_IN the_DT curse_NN of_IN high_JJ
+        dimensionality_NN of_IN the_DT data_NNS output_NN ._. The_DT main_JJ objective_NN of_IN
+        this_DT article_NN is_VBZ to_TO explore_VB one_CD method_NN for_IN ranking_JJ genes_NNS in_IN
+        order_NN of_IN likelihood_NN of_IN being_VBG differentially_RB expressed_VBD ._. Top_JJ
+        gene_NN lists_NNS ,_, that_WDT give_VBP few_JJ false_JJ positives_NNS and_CC few_JJ false_JJ
+        negatives_NNS ,_, are_VBP the_DT output_NN ._. As_IN the_DT interest_NN is_VBZ mainly_RB in_IN
+        ranking_VBG for_IN the_DT purpose_NN of_IN generating_NN top_JJ gene_NN lists_NNS ,_,
+        issues_NNS such_JJ as_IN calculation_NN of_IN 
+        p_NN -_: values_NNS and_CC correction_NN for_IN multiple_JJ
+        tests_NNS are_VBP of_IN secondary_JJ importance_NN ._.
+        Microarrays_NNP have_VBP an_DT important_JJ role_NN in_IN finding_VBG novel_NN drug_NN
+        targets_NNS ;_: the_DT thinking_VBG that_IN guides_NNS the_DT design_NN and_CC
+        interpretation_NN of_IN such_JJ experiments_NNS has_VBZ been_VBN expressed_VBN by_IN
+        Lonnstedt_NNP and_CC Speed_VB [_NN 1_CD ]_NN :_: "_'' The_DT number_NN of_IN genes_NNS selected_VBN
+        would_MD depend_VB on_IN the_DT size_NN ,_, aim_NN ,_, background_NN and_CC follow-up_JJ
+        plans_NNS of_IN the_DT experiment_NN ._. "_'' Often_RB ,_, interest_NN is_VBZ restricted_VBN to_TO
+        so-called_JJ '_POS druggable_JJ '_POS target_NN classes_NNS ,_, thus_RB thinning_VBG out_RP the_DT
+        set_NN of_IN eligible_JJ genes_NNS considerably_RB ._. It_PRP is_VBZ generally_RB
+        sensible_JJ to_TO focus_VB attention_NN first_RB on_IN druggable_JJ targets_NNS with_IN
+        smaller_JJR 
+        p_NN -_: values_NNS (_( where_WRB the_DT 
+        p_NN -_: value_NN is_VBZ the_DT probability_NN of_IN
+        obtaining_VBG at_IN least_JJS the_DT same_JJ degree_NN of_IN differential_NN
+        expression_NN by_IN pure_JJ chance_NN )_) before_IN proceeding_VBG to_TO ones_NNS with_IN
+        larger_JJR 
+        p_NN -_: values_NNS ._. In_IN general_JJ ,_, 
+        p_NN -_: values_NNS have_VBP the_DT greatest_JJS impact_NN on_IN
+        decisions_NNS regarding_VBG target_NN selection_NN by_IN providing_VBG a_DT
+        preliminary_JJ ranking_VBG of_IN the_DT genes_NNS ._. This_DT is_VBZ not_RB to_TO say_VB that_DT
+        multiplicity_NN should_MD never_RB be_VB taken_VBN into_IN account_NN ,_, or_CC that_IN
+        the_DT method_NN presented_VBN here_RB replaces_VBZ correction_NN for_IN
+        multiplicity_NN ._. On_IN the_DT contrary_NN ,_, the_DT approach_NN provides_VBZ a_DT
+        basis_NN for_IN such_JJ calculations_NNS (_( see_VB Additional_JJ data_NNS
+        files_NNS )_) ._.
+        The_DT approach_NN presented_VBN here_RB could_MD be_VB applied_VBN to_TO
+        different_JJ types_NNS of_IN test_NN statistics_NNS ,_, but_CC one_CD particular_JJ type_NN
+        of_IN recently_RB proposed_VBN statistic_NN will_MD be_VB used_VBN ._. In_IN Tusher_NNP [_NN 2_CD
+        ]_NN a_DT methodology_NN based_VBN on_IN a_DT modified_VBN 
+        t_NN -_: statistic_NN is_VBZ described_VBN :_:
+        
+        where_WRB 
+        diff_NN is_VBZ an_DT effect_NN estimate_NN ,_, for_IN
+        example_NN ,_, a_DT group_NN mean_NN difference_NN ,_, 
+        S_NNP is_VBZ a_DT standard_JJ error_NN ,_, and_CC 
+        S_NNP 
+        0_CD is_VBZ a_DT regularizing_VBG constant_JJ ._. This_DT
+        formulation_NN is_VBZ quite_RB general_JJ and_CC includes_VBZ ,_, for_IN example_NN ,_, the_DT
+        estimation_NN of_IN a_DT contrast_NN in_IN an_DT ANOVA_NNP ._. Setting_VBG 
+        S_NNP 
+        0_CD =_SYM 0_CD will_MD yield_VB a_DT 
+        t_NN -_: statistic_NN ._. The_DT constant_JJ ,_, called_VBD
+        the_DT fudge_VB constant_JJ ,_, is_VBZ found_VBN by_IN removing_VBG the_DT trend_NN in_IN 
+        d_SYM as_IN a_DT function_NN of_IN 
+        S_NNP in_IN moving_VBG windows_NNS across_IN the_DT data_NNS ._.
+        The_DT technical_JJ details_NNS are_VBP outlined_VBN in_IN [_NN 3_CD ]_NN ._. The_DT statistic_NN
+        calculated_VBN in_IN this_DT way_NN will_MD be_VB referred_VBN to_TO as_IN SAM_NNP ._. The_DT
+        basic_JJ idea_NN with_IN 
+        d_SYM is_VBZ to_TO eliminate_VB some_DT false_JJ
+        positives_NNS with_IN low_JJ values_NNS of_IN 
+        S_NNP ,_, see_VB Figure_NN 1_CD ._.
+        It_PRP is_VBZ more_RBR relevant_JJ to_TO optimize_NN with_IN respect_NN to_TO
+        false-positive_JJ and_CC false-negative_JJ rates_NNS ._. This_DT is_VBZ the_DT basic_JJ
+        idea_NN behind_IN the_DT new_JJ approach_NN ._. The_DT idea_NN is_VBZ to_TO jointly_RB
+        minimize_VB the_DT number_NN of_IN genes_NNS that_WDT are_VBP falsely_RB declared_VBN
+        positive_JJ and_CC the_DT number_NN of_IN genes_NNS falsely_RB declared_VBD negative_JJ
+        by_IN optimizing_VBG over_IN a_DT range_NN of_IN values_NNS of_IN the_DT significance_NN
+        level_NN a_DT and_NN the_DT fudge_VB constant_JJ 
+        S_NNP 
+        0_CD ._. How_WRB well_RB this_DT is_VBZ achieved_VBN can_MD be_VB
+        judged_VBN by_IN a_DT receiver_NN operating_VBG characteristics_NNS (_( ROC_NNP )_) curve_NN ,_,
+        which_WDT displays_VBZ the_DT number_NN of_IN false_JJ positives_NNS against_IN the_DT
+        number_NN of_IN false_JJ negatives_NNS expressed_VBD as_IN proportions_NNS of_IN the_DT
+        total_JJ number_NN of_IN genes_NNS ._.
+        An_DT alternative_NN to_TO the_DT statistic_NN (_( 1_LS )_) is_VBZ 
+        d_SYM =_SYM 
+        diff_NN /_NN √_NN (_( 
+        S_NNP 
+        0_CD 2_CD +_NN 
+        S_NNP 2_LS )_) ,_, or_CC 
+        d_SYM =_SYM 
+        diff_NN /_NN √_NN (_( 
+        wS_NN 
+        0_CD 2_CD +_NN (_( 1_CD -_: 
+        w_NN )_) 
+        S_NNP 2_LS )_) for_IN some_DT weight_NN 
+        w_NN ,_, which_WDT is_VBZ basically_RB the_DT statistic_NN
+        proposed_VBN in_IN Baldi_NNP [_NN 4_CD ]_NN ._. Its_PRP$ performance_NN appears_VBZ to_TO be_VB
+        very_RB similar_JJ to_TO that_DT of_IN (_( 1_LS )_) (_( data_NNS not_RB shown_VBN )_) ._. A_DT software_NN
+        implementation_NN in_IN R_NN code_NN within_IN the_DT package_NN SAG_NNP [_NN 5_CD 6_CD ]_NN is_VBZ
+        available_JJ from_IN [_NN 7_CD ]_NN via_IN the_DT function_NN 
+        samroc_NN ._.
+      
+      
+        Results_NNS
+        
+          The_DT criterion_NN
+          A_DT comparison_NN of_IN methods_NNS in_IN terms_NNS of_IN their_PRP$ ROC_NNP curves_NNS
+          is_VBZ presented_VBN in_IN Lonnstedt_NNP [_NN 1_CD ]_NN ._. A_DT method_NN whose_WP$ ROC_NNP
+          curve_NN lies_VBZ below_IN another_DT one_CD (_( has_VBZ smaller_JJR ordinate_NN for_IN
+          given_VBN abscissa_NN )_) is_VBZ preferred_VBN (_( Figure_NN 2_LS )_) ._. A_DT method_NN which_WDT
+          has_VBZ a_DT better_JJR ROC_NNP curve_NN ,_, in_IN this_DT sense_NN ,_, will_MD produce_VB top_JJ
+          lists_NNS with_IN more_RBR differentially_RB expressed_VBD genes_NNS (_( DEGs_NNP )_) ,_,
+          fewer_JJR non-_NN DEGs_NNP ,_, and_CC ,_, consequently_RB ,_, will_MD leave_VB out_IN fewer_JJR
+          DEGs_NNP ._. Furthermore_RB ,_, such_JJ a_DT method_NN will_MD give_VB higher_JJR average_JJ
+          ranks_NNS to_TO the_DT DEGs_NNP ,_, if_IN the_DT ranking_NN is_VBZ such_JJ that_IN high_JJ rank_NN
+          means_VBZ more_JJR evidence_NN of_IN differential_NN expression_NN ._.
+          Superiority_NNP in_IN terms_NNS of_IN average_JJ ranks_NNS is_VBZ a_DT weaker_JJR
+          assertion_NN than_IN superiority_NN in_IN terms_NNS of_IN ROC_NNP curves_NNS (_( see_VB
+          Additional_JJ data_NNS files_NNS for_IN a_DT proof_NN )_) ._. If_IN it_PRP is_VBZ desirable_JJ to_TO
+          compare_VB methods_NNS with_IN respect_NN to_TO their_PRP$ ROC_NNP curves_NNS ,_, then_RB
+          the_DT estimation_NN procedures_NNS should_MD find_VB parameter_NN estimates_VBZ
+          that_WDT optimize_NN the_DT ROC_NNP curve_NN ._. This_DT section_NN suggests_VBZ a_DT
+          goodness_NN criterion_NN based_VBN on_IN the_DT ROC_NNP curve_NN ._.
+          False_NNP discovery_NN rate_NN (_( 
+          FDR_NNP )_) may_MD be_VB defined_VBN as_IN the_DT
+          proportion_NN of_IN false_JJ positives_NNS among_IN the_DT significant_JJ
+          genes_NNS ,_, see_VB [_NN 2_CD ]_NN ._. False-positive_NNP rate_NN (_( 
+          FP_NNP )_) may_MD be_VB defined_VBN as_IN the_DT number_NN
+          of_IN false_JJ positives_NNS among_IN the_DT significant_JJ genes_NNS divided_VBN by_IN
+          the_DT total_JJ number_NN of_IN genes_NNS ._. Similarly_RB ,_, we_PRP define_VB the_DT
+          false-negative_JJ rate_NN (_( 
+          FN_NNP )_) as_IN the_DT number_NN of_IN false_JJ
+          negatives_NNS among_IN the_DT nonsignificant_NN genes_NNS divided_VBN by_IN the_DT
+          total_JJ number_NN of_IN genes_NNS ,_, the_DT true-positive_JJ rate_NN (_( 
+          TP_NNP )_) as_IN the_DT number_NN of_IN true_JJ
+          positives_NNS divided_VBN by_IN the_DT total_JJ number_NN of_IN genes_NNS ,_, and_CC ,_, the_DT
+          true-negative_JJ rate_NN (_( 
+          TN_NNP )_) as_IN the_DT number_NN of_IN true_JJ
+          negatives_NNS divided_VBN by_IN the_DT total_JJ number_NN of_IN genes_NNS ._.
+          In_IN Table_NNP 1_CD relations_NNS involving_VBG these_DT entities_NNS are_VBP
+          displayed_VBN ._. For_IN instance_NN ,_, the_DT proportion_NN of_IN unchanged_JJ
+          genes_NNS (_( non-_NN DEGs_NNP )_) ,_, 
+          p_NN 
+          0_CD ,_, equals_VBZ the_DT sum_NN of_IN the_DT proportion_NN
+          of_IN true_JJ negative_JJ and_CC the_DT proportion_NN of_IN false_JJ positive_NN :_: 
+          p_NN 
+          0_CD =_SYM 
+          TN_NNP +_NN 
+          FP_NNP ,_, and_CC the_DT proportion_NN of_IN
+          significant_JJ genes_NNS at_IN a_DT certain_JJ significance_NN level_NN α_NN
+          equals_VBZ the_DT sum_NN of_IN the_DT true_JJ positives_NNS and_CC the_DT false_JJ
+          positives_NNS :_: 
+          p_NN (_( α_NN )_) =_SYM 
+          TP_NNP +_NN 
+          FP_NNP ._. It_PRP is_VBZ intuitive_JJ that_IN the_DT
+          criterion_NN to_TO be_VB minimized_VBN should_MD be_VB an_DT increasing_VBG
+          function_NN of_IN 
+          FP_NNP and_CC 
+          FN_NNP ._. Any_DT top_JJ list_NN produced_VBN should_MD
+          have_VB many_JJ DEGs_NNP and_CC few_JJ non-_NN DEGs_NNP ._.
+          Assume_VB that_IN we_PRP can_MD ,_, for_IN every_DT combination_NN of_IN values_NNS of_IN
+          the_DT significance_NN level_NN α_NN and_CC the_DT fudge_VB constant_JJ 
+          S_NNP 
+          0_CD ,_, calculate_VBP (_( 
+          FP_NNP ,_, FN_NNP )_) ._. The_DT goodness_NN criterion_NN is_VBZ
+          then_RB formulated_VBN in_IN terms_NNS of_IN the_DT distance_NN of_IN the_DT points_NNS (_( 
+          FP_NNP ,_, FN_NNP )_) to_TO the_DT origin_NN (_( which_WDT point_VBP
+          corresponds_NNS to_TO no_DT false_JJ positives_NNS and_CC no_DT false_JJ negatives_NNS ,_,
+          see_VB Figure_NN 2_LS )_) ,_, which_WDT in_IN mathematical_JJ symbols_NNS may_MD be_VB put_VBN
+          as_IN
+          
+          The_DT optimal_NN value_NN of_IN (_( α_NN ,_, 
+          S_NNP 
+          0_CD )_) will_MD be_VB the_DT one_CD that_IN minimizes_NNS
+          (_( 2_LS )_) ._. It_PRP is_VBZ for_IN practical_JJ reasons_NNS not_RB possible_JJ to_TO do_VB this_DT
+          minimization_NN over_IN every_DT combination_NN ,_, so_IN the_DT suggestion_NN is_VBZ
+          to_TO estimate_VB the_DT criterion_NN over_IN a_DT lattice_NN of_IN (_( α_NN ,_, 
+          S_NNP 
+          0_CD )_) values_NNS and_CC pick_VB the_DT best_JJS
+          combination_NN ._.
+          If_IN one_CD has_VBZ an_DT assessment_NN regarding_VBG the_DT relative_JJ
+          importance_NN of_IN 
+          FP_NNP and_CC 
+          FN_NNP ,_, that_WDT may_MD be_VB reflected_VBN in_IN a_DT
+          version_NN of_IN the_DT criterion_NN (_( 2_LS )_) that_WDT incorporates_VBZ a_DT weight_NN λ_NN
+          that_WDT reflects_VBZ the_DT relative_JJ importance_NN of_IN 
+          FP_NNP compared_VBD to_TO 
+          FN_NNP :_: 
+          C_NNP 
+          λ_NN =_SYM √_NN (_( λ_NN 2_CD 
+          FP_NNP 2_CD +_NN 
+          FN_NNP 2_LS )_) ._. The_DT choice_NN λ_NN =_SYM (_( 1_CD -_: 
+          p_NN 
+          0_CD )_) /_NN 
+          p_NN 
+          0_CD corresponds_NNS to_TO another_DT type_NN of_IN ROC_NNP
+          curve_NN ,_, which_WDT displays_VBZ the_DT proportion_NN of_IN true_JJ (_( 
+          TP_NNP /_NN (_( 1_CD -_: 
+          p_NN 
+          0_CD )_) )_) against_IN the_DT proportion_NN of_IN false_JJ (_(
+          
+          FP_NNP /_NN 
+          p_NN 
+          0_CD )_) (_( see_VB Additional_JJ data_NNS files_NNS )_) ._. Other_JJ
+          goodness_NN criteria_NNS are_VBP possible_JJ ,_, such_JJ as_IN the_DT sum_NN of_IN 
+          FP_NNP and_CC 
+          FN_NNP or_CC the_DT area_NN under_IN the_DT curve_NN in_IN
+          Figure_NN 2_CD ._. For_IN more_JJR details_NNS and_CC other_JJ approaches_NNS see_VBP ,_, for_IN
+          example_NN [_NN 8_CD 9_CD ]_NN ._.
+        
+        
+          Calculating_VBG p-values_JJ
+          Using_VBG the_DT permutation_NN method_NN to_TO simulate_VBP the_DT null_NN
+          distribution_NN (_( no_DT change_NN )_) we_PRP can_MD obtain_VB a_DT 
+          p_NN -_: value_NN for_IN a_DT two-sided_JJ test_NN ,_, as_IN
+          detailed_JJ below_IN ._. Loosely_NNP speaking_VBG ,_, in_IN each_DT loop_NN of_IN the_DT
+          simulation_NN algorithm_NN the_DT group_NN labels_VBZ are_VBP randomly_RB
+          rearranged_JJ ,_, so_IN that_IN random_JJ groups_NNS are_VBP formed_VBN ,_, the_DT test_NN
+          statistic_NN is_VBZ calculated_VBN for_IN this_DT arrangement_NN and_CC the_DT
+          value_NN is_VBZ compared_VBN to_TO the_DT observed_VBD one_CD ._. How_WRB extreme_JJ the_DT
+          observed_VBN test_NN statistic_NN is_VBZ will_MD be_VB judged_VBN by_IN counting_VBG the_DT
+          number_NN of_IN times_NNS that_IN more_RBR extreme_JJ values_NNS are_VBP obtained_VBN
+          from_IN the_DT null_NN distribution_NN ._.
+          The_DT data_NNS matrix_NN 
+          
+            X_NNP 
+           has_VBZ genes_NNS in_IN rows_NNS and_CC arrays_NNS in_IN columns_NNS ._. Consider_VB
+          the_DT vector_NN of_IN group_NN labels_VBZ fixed_VBN ._. The_DT permutation_NN method_NN
+          consists_VBZ of_IN repeatedly_RB permuting_VBG the_DT columns_NNS (_( equivalent_JJ
+          to_TO rearranging_VBG group_NN labels_VBZ )_) ,_, thus_RB obtaining_VBG the_DT matrix_NN 
+          
+            X_NN *_NN 
+           ,_, and_CC calculating_VBG the_DT test_NN statistic_NN for_IN each_DT gene_NN
+          and_CC each_DT permutation_NN ._. Let_VB 
+          d_SYM (_( 
+          j_NN )_) *_NN 
+          k_NN be_VBP the_DT value_NN of_IN the_DT statistic_NN of_IN
+          the_DT 
+          j_NN th_NN gene_NN in_IN the_DT 
+          k_NN th_NN permutation_NN of_IN columns_NNS ._. Then_RB
+          the_DT 
+          p_NN -_: value_NN for_IN gene_NN 
+          i_NNP equals_VBZ
+          
+          where_WRB 
+          M_NNP is_VBZ the_DT number_NN of_IN genes_NNS ,_, 
+          d_SYM (_( 
+          i_NNP )_) the_DT observed_VBN statistic_NN for_IN gene_NN
+          
+          i_NNP ,_, 
+          B_NNP the_DT number_NN of_IN permutations_NNS and_CC
+          '_POS #_# '_POS denotes_NNS the_DT cardinality_NN of_IN the_DT set_VBN [_NN 2_CD 10_CD 11_CD ]_NN ._. In_IN
+          words_NNS ,_, this_DT gives_VBZ the_DT relative_JJ frequency_NN of_IN randomly_RB
+          generated_VBN test_NN statistics_NNS with_IN an_DT absolute_JJ value_NN that_WDT
+          exceeds_VBZ the_DT observed_VBN value_NN of_IN gene_NN 
+          i_NNP ._. The_DT formula_NN (_( 3_LS )_) combines_VBZ the_DT
+          permutation_NN method_NN in_IN [_NN 2_CD ]_NN and_CC the_DT 
+          p_NN -_: value_NN calculation_NN in_IN [_NN 10_CD ]_NN ._.
+          These_DT 
+          p_NN -_: values_NNS are_VBP such_JJ that_IN a_DT more_RBR
+          extreme_JJ value_NN of_IN the_DT test_NN statistic_NN will_MD yield_VB a_DT lower_JJR 
+          p_NN -_: value_NN ._.
+          Given_VBN the_DT significance_NN level_NN α_NN (_( 
+          p_NN -_: values_NNS less_JJR than_IN α_NN are_VBP
+          considered_VBN significant_JJ )_) ,_, the_DT proportion_NN of_IN the_DT genes_NNS
+          considered_VBN differentially_RB expressed_VBD is_VBZ
+          
+          which_WDT is_VBZ the_DT relative_JJ frequency_NN of_IN genes_NNS with_IN a_DT 
+          p_NN -_: value_NN less_JJR than_IN α_NN ._.
+          The_DT current_JJ version_NN of_IN 
+          samroc_NN uses_VBZ the_DT estimate_NN
+          
+          where_WRB 
+          q_NN 
+          
+            X_NNP 
+           is_VBZ the_DT 
+          X_NNP %_NN percentile_NN of_IN the_DT 
+          d_SYM *_NN (_( compare_VB [_NN 3_CD ]_NN )_) ._. This_DT estimate_NN
+          makes_VBZ use_NN of_IN the_DT fact_NN that_IN the_DT genes_NNS whose_WP$ test_NN
+          statistics_NNS fall_VBP in_IN the_DT quartile_NN range_NN will_MD be_VB
+          predominantly_RB the_DT unchanged_JJ ones_NNS ._. More_JJR material_NN on_IN this_DT
+          matter_NN is_VBZ in_IN the_DT Additional_JJ data_NN files_NNS ._.
+        
+        
+          Estimating_VBG FP_NNP
+          Going_VBG via_IN results_NNS for_IN the_DT 
+          FDR_NNP in_IN Storey_NNP [_NN 12_CD ]_NN (_( see_VB also_RB [_NN 13_CD
+          14_CD ]_NN )_) it_PRP is_VBZ possible_JJ to_TO derive_VB the_DT estimate_NN
+          
+          which_WDT is_VBZ the_DT proportion_NN of_IN unchanged_JJ genes_NNS multiplied_VBN
+          by_IN the_DT probability_NN that_IN such_JJ a_DT gene_NN produces_VBZ a_DT
+          significant_JJ result_NN ._. For_IN a_DT derivation_NN see_VBP the_DT Additional_JJ
+          data_NN files_NNS ._.
+        
+        
+          Estimating_VBG FN_NNP
+          From_IN Table_NNP 1_CD one_CD obtains_NNS ,_, as_IN outlined_VBN in_IN the_DT Additional_JJ
+          data_NN files_NNS ,_,
+          
+          FN_NNP =_SYM 1_CD -_: 
+          p_NN 
+          0_CD (_( 1_CD -_: 
+          α_NN )_) -_: 
+          p_NN (_( 
+          α_NN )_) (_( 6_CD )_)
+          To_TO get_VB an_DT intuitive_JJ feel_VBP for_IN this_DT equality_NN ,_, just_RB note_NN
+          that_IN the_DT second_JJ term_NN is_VBZ the_DT proportion_NN unchanged_JJ
+          multiplied_VBN by_IN the_DT probability_NN of_IN such_JJ genes_NNS not_RB being_VBG
+          significant_JJ ,_, which_WDT estimates_VBZ 
+          TN_NNP ,_, and_CC that_IN the_DT third_JJ term_NN
+          corresponds_NNS to_TO the_DT positive_JJ (_( 
+          TP_NNP +_NN 
+          FP_NNP )_) ._. Subtracting_NNP the_DT proportion_NN of_IN
+          these_DT two_CD categories_NNS from_IN the_DT whole_NN will_MD leave_VB us_PRP with_IN
+          the_DT 
+          FN_NNP ._.
+        
+        
+          Estimating_VBG the_DT criterion_NN
+          The_DT entities_NNS we_PRP need_NN for_IN the_DT optimisation_NN are_VBP given_VBN by_IN
+          the_DT estimates_NNS
+          
+          and_CC
+          ._.
+          A_DT scatter_NN plot_NN of_IN the_DT estimate_NN of_IN the_DT criterion_NN
+          
+          versus_CC the_DT true_JJ value_NN is_VBZ shown_VBN in_IN Figure_NN 3_CD ,_, and_CC
+          reveals_VBZ a_DT good_JJ level_NN of_IN accuracy_NN ._.
+        
+        
+          Tests_NNP
+          
+            Simulated_JJ cDNA_NN data_NNS
+            The_DT normal_JJ distributions_NNS modeled_VBD after_IN real-life_JJ
+            cDNA_NN data_NNS used_VBN in_IN Baldi_NNP and_CC Long_NNP [_NN 4_CD ]_NN were_VBD used_VBN here_RB
+            to_TO provide_VB a_DT testing_NN ground_NN for_IN the_DT methods_NNS (_( Table_NNP 2_LS )_) ._.
+            In_IN each_DT simulation_NN two_CD groups_NNS of_IN four_CD arrays_NNS each_DT were_VBD
+            created_VBN ._. Three_CD datasets_NNS with_IN 1_CD %_NN ,_, 5_CD %_NN and_CC 10_CD %_NN DEGs_NNP were_VBD
+            generated_VBN using_VBG the_DT normal_JJ distributions_NNS ._. In_IN all_DT cases_NNS 
+            samroc_NN and_CC the_DT 
+            t_NN -_: test_NN coincided_VBD (_( 
+            S_NNP 
+            0_CD =_SYM 0_CD )_) ,_, and_CC were_VBD the_DT best_JJS methods_NNS in_IN
+            terms_NNS of_IN the_DT ROC_NNP curves_NNS ._. Theory_NNP predicts_VBZ that_IN the_DT 
+            t_NN -_: test_NN is_VBZ optimal_NN in_IN this_DT
+            situation_NN (_( see_VB Additional_JJ data_NNS files_NNS )_) ._. When_WRB data_NNS were_VBD
+            antilogarithm-transformed_JJ ,_, giving_VBG rise_NN to_TO lognormal_NN
+            distributions_NNS ,_, 
+            samroc_NN again_RB came_VBD out_IN best_JJS ,_,
+            followed_VBN by_IN the_DT Bayes_NNP method_NN ._. The_DT 
+            t_NN -_: test_NN falls_VBZ behind_IN this_DT time_NN ._.
+            Figure_NN 4_CD gives_VBZ a_DT graphical_JJ presentation_NN of_IN the_DT results_NNS
+            in_IN terms_NNS of_IN ROC_NNP curves_NNS ._.
+          
+          
+            Oligonucleotide_NNP leukemia_NN data_NNS
+            The_DT data_NNS on_IN two_CD types_NNS of_IN leukemia_NN ,_, ALL_NNP and_CC AML_NNP ,_,
+            appeared_VBD in_IN Golub_NNP 
+            et_CC al_NN ._. [_NN 16_CD 17_CD ]_NN ._. Samples_NNP of_IN
+            both_DT types_NNS were_VBD hybridized_JJ to_TO 38_CD arrays_NNS ._. In_IN [_NN 17_CD ]_NN ,_, 50_CD
+            genes_NNS were_VBD identified_VBN as_IN DEGs_NNP using_VBG statistical_JJ
+            analysis_NN of_IN data_NNS from_IN the_DT full_RB set_NN of_IN arrays_NNS ._. For_IN these_DT
+            data_NNS it_PRP is_VBZ impossible_JJ to_TO calculate_VB a_DT ROC_NNP curve_NN as_IN the_DT
+            DEGs_NNP are_VBP unknown_JJ ._. Instead_RB ,_, performance_NN was_VBD assessed_VBN in_IN
+            terms_NNS of_IN the_DT average_JJ rank_NN of_IN the_DT 50_CD genes_NNS ,_, after_IN all_DT
+            genes_NNS were_VBD ranked_VBN by_IN their_PRP$ likelihood_NN of_IN being_VBG DEGs_NNP
+            according_VBG to_TO each_DT of_IN the_DT methods_NNS ._. Using_VBG just_RB three_CD
+            arrays_NNS from_IN each_DT of_IN the_DT two_CD groups_NNS ,_, 
+            samroc_NN gave_VBD the_DT best_JJS results_NNS ,_,
+            followed_VBN by_IN SAM_NNP (_( Table_NNP 3_LS )_) ._. This_DT means_VBZ that_IN a_DT necessary_JJ
+            but_CC not_RB sufficient_JJ condition_NN for_IN the_DT superiority_NN of_IN 
+            samroc_NN in_IN terms_NNS of_IN ROC_NNP curves_NNS is_VBZ
+            satisfied_VBN (_( see_VB Additional_JJ data_NNS files_NNS )_) ._.
+          
+          
+            Affymetrix_NNP spiking_VBG experiment_NN data_NNS
+            In_IN this_DT test_NN ,_, data_NNS generated_VBN by_IN Affymetrix_NNP in_IN an_DT
+            experiment_NN where_WRB 14_CD transcripts_NNS were_VBD spiked_JJ at_IN known_VBN
+            quantities_NNS (_( Table_NNP 4_LS )_) [_NN 18_CD 19_CD ]_NN were_VBD used_VBN ._. Using_VBG three_CD
+            arrays_NNS from_IN each_DT of_IN two_CD groups_NNS of_IN arrays_NNS where_WRB 14_CD probe_NN
+            sets_NNS (_( genes_NNS )_) differ_VB ,_, further_JJ datasets_NNS with_IN 140_CD and_CC 714_CD
+            DEGs_NNP were_VBD generated_VBN by_IN a_DT bootstrap_NN procedure_NN ._. Thus_RB
+            there_EX were_VBD three_CD datasets_NNS with_IN roughly_RB 0_CD ._. 1_CD %_NN ,_, 1_CD %_NN and_CC 5_CD %_NN
+            DEGs_NNP ._. In_IN two_CD of_IN these_DT three_CD settings_NNS 
+            samroc_NN performed_VBN best_JJS ,_, and_CC in_IN one_CD
+            case_NN (_( 0_CD ._. 1_LS %_NN )_) SAM_NNP and_CC the_DT Bayes_NNP method_NN were_VBD better_JJR ._.
+            Figure_NN 5_CD gives_VBZ a_DT graphical_JJ presentation_NN of_IN these_DT results_NNS
+            in_IN terms_NNS of_IN ROC_NNP curves_NNS ._.
+          
+        
+      
+      
+        Discussion_NNP
+        Whether_IN to_TO look_VB at_IN data_NNS on_IN a_DT log_NN scale_NN or_CC not_RB is_VBZ a_DT
+        tricky_JJ question_NN ,_, and_CC is_VBZ beyond_IN the_DT scope_NN of_IN this_DT article_NN ._.
+        However_RB ,_, the_DT best_JJS performance_NN by_IN the_DT tests_NNS considered_VBN was_VBD
+        achieved_VBN when_WRB data_NNS were_VBD lognormal_NN (_( see_VB Additional_JJ data_NNS
+        files_NNS )_) ._. Normal_NNP ,_, lognormal_NN and_CC real-life_JJ data_NNS were_VBD all_DT
+        included_VBN in_IN order_NN to_TO supply_VB a_DT varied_VBN testing_VBG ground_NN ._.
+        As_IN pointed_VBD out_IN in_IN [_NN 20_CD ]_NN ,_, the_DT Bayes_NNP statistic_NN is_VBZ for_IN
+        ranking_JJ purposes_NNS equivalent_JJ to_TO a_DT penalized_VBN 
+        t_NN -_: statistic_NN 
+        t_NN 
+        
+          p_NN 
+         =_SYM (_( 
+        mean_VB 
+        1_CD -_: 
+        mean_VB 
+        2_LS )_) /_NN √_NN (_( 
+        a_DT 
+        1_CD +_NN 
+        S_NNP 2_LS )_) ._. Here_RB 
+        a_DT 
+        1_CD is_VBZ a_DT scale_NN parameter_NN related_VBN to_TO the_DT 
+        a_DT priori_FW distribution_NN of_IN the_DT standard_JJ
+        error_NN ._. This_DT means_VBZ that_IN it_PRP is_VBZ ,_, at_IN least_JJS in_IN form_NN ,_, closely_RB
+        related_VBN to_TO the_DT 
+        t_NN -_: test_NN ,_, SAM_NNP and_CC 
+        samroc_NN ._. SAM_NNP ,_, on_IN the_DT other_JJ hand_NN ,_,
+        chooses_VBZ as_IN its_PRP$ fudge_VB constant_JJ the_DT value_NN among_IN the_DT
+        percentiles_NNS of_IN 
+        S_NNP ,_, which_WDT minimizes_NNS the_DT coefficient_NN
+        of_IN variation_NN of_IN the_DT median_JJ absolute_JJ deviation_NN of_IN the_DT test_NN
+        statistic_NN computed_JJ over_IN a_DT number_NN of_IN percentiles_NNS of_IN 
+        S_NNP [_NN 3_CD ]_NN ._. It_PRP is_VBZ interesting_JJ to_TO note_VB
+        how_WRB different_JJ the_DT three_CD related_VBN statistics_NNS the_DT Bayes_NNP
+        method_NN ,_, SAM_NNP and_CC 
+        samroc_NN turn_NN out_RP in_IN practice_NN ._.
+        One_CD clue_NN to_TO why_WRB this_DT difference_NN occurs_VBZ emerges_VBZ when_WRB
+        comparing_VBG the_DT denominators_NNS of_IN SAM_NNP /_NN 
+        samroc_NN and_CC Bayes_NNP more_RBR closely_RB ._. First_LS
+        square_VB the_DT denominators_NNS of_IN (_( 1_LS )_) and_CC the_DT representation_NN of_IN
+        Bayes_NNP above_IN ._. We_PRP obtain_VBP (_( 
+        a_DT +_NN 
+        S_NNP )_) 2_CD =_SYM 
+        a_DT 2_CD +_NN 2_CD 
+        aS_NN +_NN 
+        S_NNP 2_CD for_IN (_( 1_LS )_) and_CC 
+        a_DT 
+        1_CD +_NN 
+        S_NNP 2_CD for_IN Bayes_NNP (_( where_WRB generally_RB 
+        a_DT 
+        1_CD ≥_NN 
+        a_DT 
+        2_LS )_) ._. For_IN large_JJ values_NNS of_IN 
+        S_NNP the_DT former_NN will_MD exceed_VB the_DT latter_NN ._.
+        This_DT means_VBZ that_IN SAM_NNP /_NN 
+        samroc_NN will_MD downplay_NN the_DT importance_NN
+        of_IN the_DT results_NNS for_IN high_JJ expressing_VBG genes_NNS in_IN a_DT way_NN that_IN the_DT
+        Bayes_NNP method_NN does_VBZ not_RB ._.
+        But_CC there_EX is_VBZ also_RB another_DT difference_NN ._. The_DT Bayes_NNP method_NN
+        seems_VBZ to_TO achieve_VB best_JJS when_WRB the_DT number_NN of_IN false_JJ positives_NNS is_VBZ
+        allowed_VBN to_TO grow_VB rather_RB large_JJ ._. The_DT constant_JJ 
+        a_DT corresponds_NNS to_TO a_DT large_JJ percentile_NN
+        in_IN the_DT distribution_NN of_IN the_DT 
+        S_NNP 2_CD values_NNS (_( see_VB Additional_JJ data_NNS
+        files_NNS )_) ._. Whereas_IN the_DT constant_JJ in_IN SAM_NNP will_MD generally_RB be_VB
+        rather_RB small_JJ ,_, often_RB the_DT 5_CD -_: 10_CD %_NN percentile_NN of_IN the_DT 
+        S_NNP values_NNS ,_, the_DT constant_JJ in_IN the_DT Bayes_NNP
+        method_NN will_MD correspond_VB to_TO at_IN least_JJS the_DT 40_CD %_NN percentile_NN of_IN
+        the_DT 
+        S_NNP 2_CD values_NNS ._. It_PRP seems_VBZ that_IN using_VBG a_DT
+        large_JJ percentile_NN will_MD give_VB a_DT good_JJ performance_NN when_WRB the_DT
+        number_NN of_IN false_JJ positives_NNS grows_VBZ large_JJ ._. This_DT observation_NN is_VBZ
+        consistent_JJ with_IN the_DT observation_NN made_VBN in_IN Lonnstedt_NNP and_CC Speed_VB
+        [_NN 1_CD ]_NN that_IN the_DT particular_JJ version_NN of_IN SAM_NNP ,_, which_WDT always_RB uses_VBZ
+        the_DT 90_CD %_NN percentile_NN ,_, will_MD pass_VB the_DT Bayes_NNP method_NN when_WRB the_DT
+        number_NN of_IN false_JJ positives_NNS is_VBZ allowed_VBN to_TO grow_VB large_JJ ._. Also_RB ,_, 
+        samroc_NN will_MD in_IN general_JJ make_VB use_NN of_IN a_DT
+        smaller_JJR percentile_NN ,_, albeit_IN that_DT 
+        samroc_NN shows_VBZ greater_JJR spread_NN between_IN
+        datasets_NNS in_IN the_DT values_NNS chosen_VBN ,_, as_IN a_DT result_NN of_IN its_PRP$
+        adaptation_NN to_TO the_DT features_NNS specific_JJ to_TO the_DT data_NNS at_IN
+        hand_NN ._.
+        Samroc_NNP is_VBZ the_DT only_JJ method_NN that_WDT makes_VBZ explicit_JJ use_NN of_IN the_DT
+        number_NN of_IN changed_VBN genes_NNS in_IN the_DT ranking_NN ._. If_IN one_CD has_VBZ reason_NN
+        to_TO believe_VB ,_, for_IN example_NN from_IN studying_VBG expression_NN (_( 3_LS )_) ,_, that_IN
+        there_EX are_VBP very_RB few_JJ DEGs_NNP (_( <_NN <_NN 1_CD %_NN )_) ,_, then_RB 
+        samroc_NN is_VBZ probably_RB not_RB the_DT first_JJ
+        choice_NN ._. Probably_RB SAM_NNP or_CC the_DT Bayes_NNP method_NN is_VBZ more_RBR useful_JJ in_IN
+        these_DT situations_NNS ._. If_IN ,_, on_IN the_DT other_JJ hand_NN ,_, the_DT number_NN of_IN DEGs_NNP
+        is_VBZ reasonably_RB large_JJ ,_, 
+        samroc_NN is_VBZ conjectured_JJ to_TO take_VB
+        precedence_NN over_IN SAM_NNP ,_, and_CC to_TO be_VB more_RBR robust_JJ than_IN the_DT Bayes_NNP
+        method_NN ._. Furthermore_RB ,_, one_PRP can_MD argue_VB that_IN the_DT kind_NN of_IN
+        experiments_NNS undertaken_VBN in_IN drug_NN discovery_NN would_MD more_RBR often_RB
+        than_IN not_RB end_VB in_IN comparisons_NNS in_IN which_WDT the_DT biological_JJ systems_NNS
+        show_VBP vast_JJ differences_NNS in_IN a_DT large_JJ number_NN of_IN genes_NNS ,_, mostly_RB as_IN
+        a_DT downstream_JJ effect_NN of_IN some_DT shock_NN to_TO the_DT system_NN ._.
+        The_DT proposed_VBN method_NN comes_VBZ out_IN better_JJR than_IN or_CC as_RB good_JJ as_IN
+        the_DT original_JJ SAM_NNP statistic_NN in_IN most_JJS tests_NNS performed_VBN ._. The_DT 
+        samroc_NN statistic_NN is_VBZ robust_JJ and_CC
+        flexible_JJ in_IN that_IN it_PRP can_MD address_VB all_DT sorts_NNS of_IN problems_NNS that_WDT
+        suit_NN a_DT linear_JJ model_NN ._. The_DT methodology_NN adjusts_VBZ the_DT fudge_VB
+        constant_JJ flexibly_RB and_CC achieves_VBZ an_DT improved_VBN performance_NN ._. The_DT
+        algorithm_NN gives_VBZ fewer_RBR false_JJ positives_NNS and_CC fewer_RBR false_JJ
+        negatives_NNS in_IN many_JJ situations_NNS ,_, and_CC was_VBD never_RB much_RB worse_JJR than_IN
+        the_DT best_JJS test_NN statistic_NN in_IN any_DT circumstance_NN ._. However_RB ,_, a_DT
+        typical_JJ run_NN with_IN real-life_JJ data_NNS will_MD take_VB several_JJ hours_NNS on_IN
+        a_DT desktop_NN computer_NN ._. To_TO make_VB this_DT methodology_NN better_RBR suited_VBN
+        for_IN production_NN it_PRP would_MD be_VB a_DT good_JJ investment_NN to_TO translate_VB
+        part_NN of_IN the_DT R_NN code_NN ,_, or_CC the_DT whole_NN of_IN it_PRP ,_, into_IN C_NNP ._.
+        To_TO improve_VB on_IN standard_JJ univariate_NN tests_NNS one_PRP must_MD make_VB
+        use_NN of_IN the_DT fact_NN that_IN data_NNS are_VBP available_JJ on_IN a_DT large_JJ number_NN
+        of_IN related_VBN tests_NNS ._. One_CD way_NN of_IN achieving_VBG this_DT goal_NN has_VBZ been_VBN
+        shown_VBN in_IN this_DT paper_NN ._. The_DT conclusion_NN is_VBZ that_IN it_PRP is_VBZ possible_JJ
+        and_CC sensible_JJ to_TO calibrate_NN the_DT test_NN with_IN respect_NN to_TO
+        estimates_NNS of_IN the_DT false-positive_JJ and_CC false-negative_JJ
+        rates_NNS ._.
+      
+      
+        Additional_JJ data_NNS files_NNS
+        A_DT zip_NN file_NN (_( Additional_JJ data_NNS file_VBP 1_LS )_) containing_VBG the_DT R_NN
+        package_NN SAG_NNP for_IN retrieval_NN ,_, preparation_NN and_CC analysis_NN of_IN data_NNS
+        from_IN the_DT Affymetrix_NNP GeneChip_NNP and_CC the_DT R_NN script_NN (_( Additional_JJ
+        data_NNS file_VBP 2_LS )_) are_VBP available_JJ with_IN the_DT online_NN version_NN of_IN this_DT
+        article_NN ._. An_DT appendix_NN (_( Additional_JJ data_NNS file_VBP 3_LS )_) giving_VBG
+        further_JJ details_NNS of_IN the_DT statistical_JJ methods_NNS and_CC the_DT 
+        samroc_NN algorithm_NN is_VBZ also_RB available_JJ as_IN
+        a_DT PDF_NNP file_NN ._.
+        Additional_JJ data_NNS file_VBP 1_CD
+        A_DT zip_NN file_NN containing_VBG the_DT R_NN package_NN SAG_NNP for_IN retrieval_NN ,_,
+        preparation_NN and_CC analysis_NN of_IN data_NNS from_IN the_DT Affymetrix_NNP
+        GeneChip_NNP
+        A_DT zip_NN file_NN containing_VBG the_DT R_NN package_NN SAG_NNP for_IN retrieval_NN ,_,
+        preparation_NN and_CC analysis_NN of_IN data_NNS from_IN the_DT Affymetrix_NNP
+        GeneChip_NNP
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 2_CD
+        The_DT R_NN script_NN
+        The_DT R_NN script_NN
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 3_CD
+        An_DT appendix_NN giving_VBG further_JJ details_NNS of_IN the_DT statistical_JJ
+        methods_NNS and_CC the_DT 
+        samroc_NN algorithm_NN
+        An_DT appendix_NN giving_VBG further_JJ details_NNS of_IN the_DT statistical_JJ
+        methods_NNS and_CC the_DT 
+        samroc_NN algorithm_NN
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+      
+    
+  

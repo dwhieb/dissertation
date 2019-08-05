@@ -1,0 +1,592 @@
+
+  
+    
+      
+        Background_NNP
+        Among_IN the_DT many_JJ challenges_NNS that_WDT microarrays_NNS present_JJ to_TO
+        both_DT bioinformaticists_NNS and_CC biologists_NNS ,_, data_NNS communication_NN
+        is_VBZ one_CD of_IN the_DT most_RBS significant_JJ ._. This_DT stems_VBZ from_IN the_DT fact_NN
+        that_IN ,_, unlike_IN biological_JJ sequences_NNS ,_, microarray_NN data_NNS requires_VBZ
+        data_NNS structures_NNS that_WDT are_VBP both_DT multidimensional_NN and_CC varied_VBD ,_,
+        and_CC no_DT natural_JJ or_CC standard_JJ ways_NNS to_TO move_VB results_NNS between_IN
+        research_NN groups_NNS yet_RB exist_VBP ._. This_DT applies_VBZ to_TO both_DT the_DT
+        underlying_VBG gene-expression_JJ data_NNS and_CC the_DT descriptive_JJ
+        biological_JJ annotations_NNS that_WDT provide_VBP context_NN for_IN the_DT
+        gene-expression_JJ measurements_NNS ._. Hundreds_NNS of_IN papers_NNS have_VBP now_RB
+        been_VBN published_VBN ,_, but_CC no_RB more_JJR than_IN a_DT handful_NN have_VBP presented_VBN
+        data_NNS in_IN the_DT same_JJ format_NN ,_, and_CC none_NN has_VBZ provided_VBN adequate_JJ
+        contextual_NN information_NN to_TO allow_VB reproduction_NN of_IN
+        experiments_NNS ._.
+        For_IN the_DT past_JJ two_CD years_NNS ,_, MGED_NNP (_( the_DT microarray_NN gene_NN
+        expression_NN data_NNS group_NN )_) has_VBZ been_VBN wrestling_VBG with_IN
+        standards-based_JJ microarray_NN data_NNS exchange_VBP ._. Recently_RB MGED_NNP has_VBZ
+        published_VBN a_DT specification_NN describing_VBG MIAME_NNP ,_, the_DT minimal_JJ
+        information_NN for_IN the_DT annotation_NN of_IN a_DT microarray_NN experiment_NN [_NN
+        1_CD ]_NN ._. MIAME_NNP is_VBZ based_VBN on_IN the_DT consensus_NN of_IN hundreds_NNS of_IN
+        participants_NNS in_IN the_DT MGED_NNP conferences_NNS (_( for_IN more_JJR information_NN
+        see_VB [_NN 2_CD ]_NN )_) and_CC specifies_VBZ which_WDT data_NNS and_CC contextual_NN
+        information_NN should_MD be_VB supplied_VBN when_WRB a_DT microarray_NN
+        gene-expression_JJ dataset_NN is_VBZ published_VBN ._. Some_DT journals_NNS (_( for_IN
+        example_NN ,_, 
+        Nature_NNP )_) have_VBP begun_VBN to_TO endorse_VB or_CC
+        encourage_VB MIAME_NNP compliance_NN for_IN papers_NNS describing_VBG the_DT
+        results_NNS of_IN microarray_NN experiments_NNS ._. It_PRP is_VBZ expected_VBN (_( indeed_RB
+        hoped_VBN )_) that_IN in_IN the_DT future_NN ,_, journals_NNS and_CC funding_NN agencies_NNS
+        will_MD require_VB MIAME-compliant_NNP data_NNS for_IN continued_JJ funding_VBG and_CC
+        publishing_NN ,_, respectively_RB ._.
+        It_PRP is_VBZ not_RB enough_RB to_TO specify_VB that_IN certain_JJ data_NNS and_CC
+        accessory_JJ information_NN be_VB provided_VBN ._. It_PRP is_VBZ essential_JJ ,_, if_IN
+        MIAME_NNP is_VBZ to_TO be_VB useful_JJ ,_, that_IN a_DT standard_JJ transmission_NN format_NN
+        exists_VBZ for_IN the_DT data_NNS ._. Many_JJ of_IN the_DT authors_NNS of_IN this_DT paper_NN have_VBP
+        previously_RB responded_VBN to_TO this_DT need_NN by_IN developing_VBG XML-based_NNP
+        data-communication_JJ syntaxes_NNS for_IN microarray_NN experiments_NNS
+        (_( GEML_NNP ,_, gene_NN expression_NN markup_NN language_NN [_NN 3_CD ]_NN from_IN Rosetta_NNP
+        Inpharmatics_NNP ,_, and_CC MAML_NNP ,_, microarray_NN markup_NN language_NN from_IN
+        MGED_NNP )_) ._.
+        XML_NNP (_( extensible_JJ markup_NN language_NN )_) is_VBZ a_DT set_NN of_IN rules_NNS
+        whereby_WRB new_JJ vocabularies_NNS may_MD themselves_PRP be_VB defined_VBN ._. In_IN some_DT
+        respects_VBZ it_PRP is_VBZ similar_JJ to_TO HTML_NNP ,_, in_IN that_DT tags_NNS are_VBP used_VBN to_TO
+        encode_NN information_NN ,_, but_CC in_IN HTML_NNP the_DT information_NN is_VBZ related_VBN
+        to_TO the_DT formatting_VBG of_IN a_DT document_NN ,_, using_VBG a_DT predefined_JJ set_NN of_IN
+        tags_NNS ._. In_IN XML_NNP ,_, the_DT tags_NNS do_VBP not_RB indicate_VB how_WRB a_DT document_NN
+        should_MD be_VB formatted_JJ ,_, but_CC instead_RB provide_VB semantic_JJ context_NN
+        to_TO the_DT content_NN of_IN the_DT document_NN ._. XML_NNP vocabularies_NNS define_VB
+        their_PRP$ own_JJ tags_NNS ,_, and_CC thus_RB use_VB XML_NNP to_TO hold_VB information_NN in_IN a_DT
+        way_NN such_JJ that_IN that_DT information_NN can_MD be_VB understood_VBN ._. Because_IN
+        of_IN this_DT ,_, and_CC the_DT wide_JJ support_NN that_IN XML_NNP has_VBZ received_VBN since_IN
+        its_PRP$ release_NN as_IN a_DT W_NNP 3_CD C_NNP recommendation_NN in_IN 1998_CD [_NN 4_CD ]_NN both_DT GEML_NNP
+        and_CC MAML_NNP chose_VBD XML_NNP for_IN encoding_VBG microarray_NN data_NNS ._. Usually_RB an_DT
+        XML_NNP document_NN is_VBZ not_RB a_DT stand-alone_JJ document_NN ,_, but_CC will_MD refer_VB
+        to_TO another_DT document_NN ,_, called_VBD the_DT document_NN type_NN definition_NN ,_,
+        or_CC DTD_NNP ._. The_DT DTD_NNP contains_VBZ a_DT set_NN of_IN rules_NNS ,_, or_CC '_POS declarations_NNS '_POS ,_,
+        that_WDT specify_VB which_WDT tags_NNS can_MD be_VB used_VBN ,_, and_CC what_WP they_PRP contain_VBP ._.
+        It_PRP is_VBZ the_DT DTD_NNP that_IN we_PRP specify_VB in_IN MAGE-ML_NNP ._. XML_NNP documents_NNS
+        created_VBN to_TO use_VB MAGE-ML_NNP will_MD refer_VB to_TO this_DT DTD_NNP ._. In_IN response_NN
+        to_TO a_DT request_NN for_IN proposals_NNS from_IN the_DT OMG_NNP (_( object_VBP management_NN
+        group_NN [_NN 5_CD ]_NN )_) for_IN methods_NNS of_IN communicating_VBG gene-expression_JJ
+        data_NNS ,_, the_DT designers_NNS of_IN GEML_NNP and_CC MAML_NNP submitted_VBD their_PRP$
+        vocabularies_NNS as_IN potential_JJ solutions_NNS to_TO this_DT problem_NN ._.
+      
+      
+        Results_NNS
+        
+          The_DT object_VBP model_NN :_: MAGE-OM_NNP
+          MAGE-OM_NNP is_VBZ a_DT data-centric_JJ model_NN that_WDT contains_VBZ 132_CD
+          classes_NNS grouped_VBN into_IN 17_CD packages_NNS containing_VBG ,_, in_IN total_JJ ,_,
+          123_CD attributes_VBZ and_CC 223_CD associations_NNS between_IN classes_NNS ._.
+          Classes_NNS in_IN our_PRP$ model_NN represent_VB distinct_JJ things_NNS or_CC events_NNS ,_,
+          and_CC each_DT class_NN may_MD have_VB attributes_VBZ as_RB well_RB as_IN
+          associations_NNS to_TO other_JJ classes_NNS ._. A_DT list_NN of_IN the_DT MAGE-OM_NNP
+          packages_NNS and_CC the_DT classes_NNS contained_VBD within_IN each_DT one_CD are_VBP
+          listed_VBN in_IN Table_NNP 1_CD ._. The_DT packages_NNS are_VBP used_VBN to_TO organize_VB
+          classes_NNS that_WDT share_NN a_DT common_JJ purpose_NN ,_, for_IN example_NN the_DT
+          Array_NNP package_NN contains_VBZ classes_NNS that_WDT describe_VBP individual_JJ
+          arrays_NNS ,_, including_VBG detailed_JJ information_NN on_IN relevant_JJ
+          manufacturing_NN processes_NNS ._. The_DT key_JJ components_NNS of_IN MAGE-OM_NNP
+          reflect_VB many_JJ of_IN the_DT core_NN requirements_NNS of_IN MIAME_NNP ,_,
+          specifically_RB :_: experiment_NN goals_NNS and_CC design_NN (_( Experiment_NNP
+          package_NN )_) ;_: biological_JJ materials_NNS used_VBN and_CC description_NN of_IN
+          their_PRP$ creation_NN (_( BioMaterial_NNP package_NN )_) ;_: array_NN design_NN and_CC
+          purpose_NN (_( ArrayDesign_NNP ,_, BioSequence_NNP packages_NNS )_) ;_: array_NN
+          manufacture_NN (_( Array_NNP package_NN )_) ;_: hybridization_NN ,_, wash_VB ,_, and_CC
+          scan_VB information_NN (_( BioAssay_NNP package_NN )_) ;_: gene-expression_JJ data_NNS
+          (_( BioAssayData_NNP package_NN )_) ._.
+          Other_JJ utility_NN packages_NNS support_VBP requirements_NNS shared_VBN by_IN
+          the_DT above_JJ components_NNS ,_, specifically_RB information_NN on_IN people_NNS
+          and_CC organizations_NNS ,_, protocols_NNS used_VBN ,_, simple_JJ annotations_NNS ,_,
+          free-text_JJ descriptions_NNS ,_, and_CC the_DT ability_NN to_TO specify_VB links_NNS
+          to_TO predefined_JJ ontologies_NNS such_JJ as_IN those_DT provided_VBN by_IN MGED_NNP [_NN
+          2_CD ]_NN ._.
+        
+        
+          Mapping_NNP of_IN biological_JJ experiments_NNS to_TO MAGE-OM_NNP
+          MAGE-OM_NNP provides_VBZ a_DT structure_NN for_IN the_DT logical_JJ flow_NN of_IN
+          experiments_NNS using_VBG the_DT six_CD requirements_NNS listed_VBN above_IN ._.
+          While_IN the_DT MAGE_NNP model_NN is_VBZ not_RB a_DT laboratory_NN information_NN
+          management_NN system_NN (_( LIMS_NNP )_) ,_, laboratory_NN information_NN does_VBZ
+          have_VB a_DT critical_JJ role_NN in_IN understanding_VBG microarray_NN data_NNS ,_,
+          and_CC much_JJ of_IN this_DT information_NN is_VBZ accounted_VBN for_IN in_IN our_PRP$
+          model_NN (_( for_IN example_NN ,_, protocols_NNS and_CC sources_NNS for_IN clones_NNS used_VBN
+          in_IN manufacturing_NN microarrays_NNS )_) ._. A_DT conceptualized_JJ model_NN of_IN
+          the_DT biological_JJ work-flow_JJ modified_VBN from_IN the_DT one_CD in_IN the_DT OMG_NNP
+          submission_NN document_NN is_VBZ presented_VBN in_IN Figure_NN 1_CD ._. The_DT
+          workflow_NN is_VBZ based_VBN on_IN two_CD parallel_JJ processes_VBZ -_: the_DT
+          manufacture_NN of_IN microarrays_NNS ,_, and_CC the_DT generation_NN of_IN
+          biological_JJ samples_NNS -_: that_WDT come_VBP together_RB in_IN a_DT
+          hybridization_NN ._. A_DT detailed_VBN breakdown_NN of_IN the_DT model_NN and_CC its_PRP$
+          relation_NN to_TO the_DT workflow_NN are_VBP presented_VBN below_IN ._.
+        
+        
+          Descriptions_NNP and_CC protocols_NNS
+          During_IN the_DT design_NN of_IN MAGE_NNP we_PRP recognized_VBD that_IN despite_IN
+          all_DT efforts_NNS it_PRP would_MD be_VB impossible_JJ to_TO create_VB a_DT model_NN that_WDT
+          would_MD be_VB completely_RB expressive_JJ for_IN all_DT microarray_NN
+          experiments_NNS ._. Thus_RB ,_, to_TO allow_VB extensible_JJ experiment_NN
+          documentation_NN ,_, several_JJ classes_NNS that_WDT allow_VBP additional_JJ
+          information_NN to_TO be_VB associated_VBN with_IN other_JJ entities_NNS in_IN the_DT
+          model_NN were_VBD included_VBN ._. Two_CD of_IN these_DT classes_NNS are_VBP Annotation_NNP
+          and_CC Description_NNP ;_: all_DT model_NN components_NNS can_MD be_VB annotated_JJ by_IN
+          association_NN with_IN an_DT instance_NN of_IN the_DT Annotation_NNP class_NN ,_, and_CC
+          many_JJ can_MD be_VB described_VBN ._. Annotations_NNP are_VBP simple_JJ mechanisms_NNS
+          for_IN storing_VBG local_JJ parameters_NNS ,_, using_VBG name_NN /_NN value_NN /_NN type_NN (_( NVT_NNP )_)
+          associations_NNS ._. Descriptions_NNP are_VBP a_DT method_NN of_IN providing_VBG
+          extra_JJ information_NN allowing_VBG both_DT NVTs_NNP and_CC free_JJ text_NN :_: for_IN
+          example_NN ,_, MAGE-OM_NNP allows_VBZ users_NNS to_TO describe_VB protocols_NNS (_( as_RB
+          well_RB as_IN experimental_JJ materials_NNS ,_, see_VB below_IN )_) using_VBG
+          free-text_JJ descriptions_NNS ._. From_IN a_DT database_NN and_CC computational_NN
+          perspective_NN ,_, structured_VBN annotations_NNS are_VBP preferable_JJ
+          because_IN they_PRP facilitate_VBP searches_NNS and_CC automated_VBN data_NNS
+          processing_NN (_( see_VB below_IN )_) ._.
+          There_EX are_VBP three_CD other_JJ key_JJ components_NNS of_IN the_DT
+          Description_NNP package_NN :_: Databases_NNP ,_, DatabaseEntries_NNP ,_, and_CC
+          OntologyEntries_NNP ._. Databases_NNP are_VBP references_NNS to_TO external_JJ
+          sources_NNS of_IN information_NN such_JJ as_IN GenBank_NNP or_CC the_DT 
+          Saccharomyces_NNP Genome_NNP Database_NNP ,_,
+          whereas_IN DatabaseEntries_NNP refer_VBP to_TO individual_JJ records_NNS in_IN
+          those_DT databases_NNS ._. OntologyEntries_NNP are_VBP a_DT mechanism_NN by_IN which_WDT
+          groups_NNS can_MD use_VB commonly_RB defined_VBD terms_NNS to_TO aid_VB
+          communication_NN ._. In_IN designing_VBG MAGE_NNP it_PRP was_VBD recognized_VBN that_IN
+          it_PRP would_MD be_VB impossible_JJ to_TO specify_VB fully_RB all_DT the_DT many_JJ
+          possible_JJ parameters_NNS and_CC their_PRP$ allowable_JJ values_NNS ,_, but_CC it_PRP
+          was_VBD important_JJ that_IN a_DT flexible_JJ and_CC extensible_JJ mechanism_NN
+          existed_VBD to_TO support_VB this_DT possibility_NN ._. Thus_RB ,_, the_DT model_NN
+          contains_VBZ OntologyEntries_NNP ,_, whose_WP$ roles_NNS are_VBP named_VBN to_TO fit_VB
+          their_PRP$ purpose_NN ;_: for_IN example_NN ,_, BioSequences_NNP has_VBZ an_DT
+          OntologyEntry_NNP named_VBD '_POS species_NNS '_POS ,_, which_WDT should_MD be_VB used_VBN to_TO
+          refer_VB to_TO an_DT entry_NN in_IN the_DT NCBI_NNP taxonomy_NN database_NN ._.
+          The_DT MAGE_NNP model_NN provides_VBZ a_DT rich_JJ mechanism_NN for_IN
+          describing_VBG protocols_NNS and_CC their_PRP$ use_NN ._. Protocols_NNP can_MD use_VB
+          equipment_NN (_( hardware_NN )_) and_CC software_NN ,_, as_RB well_RB as_IN have_VBP a_DT list_NN
+          of_IN parameters_NNS whose_WP$ values_NNS can_MD change_VB between_IN individual_JJ
+          uses_NNS of_IN the_DT protocol_NN ._. The_DT use_NN of_IN a_DT protocol_NN ,_, termed_VBD a_DT
+          ProtocolApplication_NNP ,_, involves_VBZ specifying_VBG the_DT values_NNS for_IN
+          each_DT of_IN the_DT protocol_NN parameters_NNS ,_, as_RB well_RB as_IN setting_VBG the_DT
+          protocol_NN parameters_NNS for_IN any_DT hardware_NN or_CC software_NN used_VBN ._. To_TO
+          encode_NN a_DT PCR_NNP reaction_NN using_VBG this_DT method_NN the_DT protocol_NN
+          could_MD describe_VB the_DT thermal_JJ cycling_NN conditions_NNS and_CC the_DT
+          make_NN /_NN model_NN of_IN the_DT instrument_NN ,_, while_IN the_DT protocol_NN
+          application_NN might_MD give_VB the_DT sequences_NNS of_IN the_DT primers_NNS and_CC
+          the_DT serial_NN number_NN of_IN the_DT thermal_JJ cycler_NN ._. Another_DT example_NN
+          would_MD be_VB to_TO define_VB the_DT feature-extraction_JJ protocol_NN
+          whereby_WRB data_NNS were_VBD extracted_VBN from_IN a_DT scanned_JJ microarray_NN
+          image_NN ,_, which_WDT would_MD have_VB a_DT reference_NN to_TO a_DT piece_NN of_IN
+          software_NN ._. The_DT software_NN might_MD have_VB parameters_NNS for_IN the_DT
+          layout_NN of_IN the_DT features_NNS (_( spacing_VBG and_CC position_NN )_) and_CC the_DT
+          background_NN calculation_NN method_NN ._.
+        
+        
+          Array_NNP information_NN
+          Three_CD MAGE_NNP packages_NNS in_IN the_DT object_NN model_NN ,_, ArrayDesign_NNP ,_,
+          Array_NNP ,_, and_CC DesignElement_NNP ,_, contain_VB information_NN regarding_VBG
+          the_DT design_NN ,_, manufacture_VB and_CC contents_NNS of_IN microarrays_NNS ._. The_DT
+          DesignElement_NNP package_NN is_VBZ arguably_RB the_DT most_RBS complex_NN of_IN the_DT
+          three_CD ,_, allowing_VBG users_NNS to_TO specify_VB information_NN about_IN the_DT
+          biological_JJ materials_NNS deposited_VBN on_IN an_DT array_NN ._. The_DT
+          ArrayDesign_NNP package_NN stores_VBZ the_DT intended_VBN pattern_NN of_IN
+          individual_JJ array_NN elements_NNS ,_, while_IN the_DT Array_NNP package_NN
+          records_NNS information_NN on_IN the_DT actual_JJ events_NNS that_WDT produced_VBD
+          arrays_NNS ._. ArrayDesigns_NNP allow_VB the_DT user_NN to_TO specify_VB the_DT
+          protocol_NN used_VBD ,_, a_DT relevant_JJ contact_NN ,_, the_DT grids_NNS structure_NN ,_,
+          and_CC which_WDT groups_NNS of_IN DesignElements_NNP are_VBP present_JJ in_IN the_DT
+          design_NN ._.
+          There_EX are_VBP three_CD classes_NNS of_IN DesignElements_NNP :_: Features_NNPS ,_,
+          Reporters_NNP and_CC CompositeSequences_NNP ._. Features_NNPS represent_VBP a_DT
+          unique_JJ address_NN on_IN the_DT array_NN ,_, specified_VBN either_CC using_VBG
+          Cartesian_NNP or_CC logical_JJ coordinates_VBZ (_( zone_NN /_NN sector_NN ,_, row_NN ,_,
+          column_NN )_) ._. It_PRP is_VBZ important_JJ to_TO note_VB that_IN in_IN MAGE_NNP ,_, Features_NNPS
+          do_VBP not_RB possess_VB substantial_JJ biological_JJ information_NN ;_: only_RB
+          Reporters_NNP and_CC CompositeSequences_NNP have_VBP associations_NNS to_TO
+          BioSequenes_NNP ._. Reporters_NNP are_VBP the_DT first_JJ level_NN of_IN
+          DesignElement_NNP abstraction_NN ,_, and_CC correspond_VB to_TO one_CD or_CC more_JJR
+          features_NNS ._. A_DT Reporter_NNP models_NNS a_DT physical_JJ sequence_NN ,_, and_CC thus_RB
+          if_IN exactly_RB the_DT same_JJ biological_JJ sequence_NN is_VBZ spotted_VBN on_IN an_DT
+          array_NN twice_RB ,_, as_IN two_CD Features_NNPS ,_, both_DT of_IN these_DT Features_NNPS are_VBP
+          represented_VBN by_IN the_DT same_JJ Reporter_NNP ._. However_RB ,_, two_CD expressed_VBD
+          sequence_NN tag_NN (_( EST_NNP )_) clones_NNS mapping_NN to_TO the_DT same_JJ UniGene_NNP
+          cluster_NN are_VBP represented_VBN by_IN two_CD distinct_JJ Reporters_NNP ,_, as_IN
+          would_MD be_VB two_CD distinct_JJ oligonucleotides_NNS which_WDT map_VBP to_TO the_DT
+          same_JJ open_JJ reading_NN frame_NN ._.
+          CompositeSequences_NNP are_VBP the_DT highest_JJS level_NN of_IN
+          abstraction_NN ,_, allowing_VBG multiple_JJ Reporters_NNP or_CC multiple_JJ
+          CompositeSequences_NNP to_TO be_VB combined_VBN so_IN that_IN data_NNS can_MD be_VB
+          mapped_VBN to_TO DNA_NNP sequences_NNS that_WDT are_VBP longer_RBR than_IN the_DT lengths_NNS
+          of_IN individual_JJ Reporters_NNP ._. Thus_RB ,_, the_DT two_CD previously_RB
+          mentioned_VBN ESTs_NNP that_DT map_NN to_TO the_DT same_JJ UniGene_NNP cluster_NN can_MD
+          be_VB grouped_VBN in_IN a_DT CompositeSequence_NNP that_WDT represents_VBZ that_IN
+          UniGene_NNP cluster_NN ._. It_PRP is_VBZ important_JJ to_TO note_VB that_IN the_DT
+          CompositeSequence_NNP with_IN which_WDT a_DT Reporter_NNP may_MD be_VB associated_VBN
+          is_VBZ dynamic_JJ ,_, as_IN gene_NN predictions_NNS in_IN an_DT organism_NN become_VB
+          more_RBR refined_JJ ._. In_IN addition_NN ,_, the_DT biological_JJ annotation_NN
+          associated_VBN with_IN a_DT CompositeSequence_NNP is_VBZ also_RB dynamic_JJ ,_, as_IN
+          our_PRP$ knowledge_NN of_IN the_DT functions_NNS of_IN genes_NNS ,_, and_CC the_DT
+          processes_NNS in_IN which_WDT they_PRP participate_VBP ,_, changes_NNS over_IN time_NN ._. A_DT
+          CompositeSequence_NNP should_MD not_RB be_VB merely_RB thought_VBN of_IN as_IN a_NNP
+          '_POS gene_NN '_'' ._. There_EX are_VBP many_JJ different_JJ types_NNS of_IN sequence_NN
+          features_NNS in_IN a_DT genome_NN ,_, such_JJ as_IN centromeres_NNS ,_, telomeres_NNS ,_,
+          intergenic_JJ regions_NNS ,_, RNA_NNP genes_NNS and_CC protein-coding_JJ genes_NNS ._.
+          Even_RB a_NNP '_POS gene_NN '_'' itself_PRP has_VBZ several_JJ components_NNS ,_, such_JJ as_IN a_DT
+          promoter_NN ,_, and_CC introns_NNS and_CC exons_NNS ,_, as_RB well_RB as_IN potential_JJ
+          signals_NNS in_IN the_DT 3_CD '_POS -_: untranslated_JJ region_NN ._. A_DT
+          CompositeSequence_NNP can_MD theoretically_RB be_VB used_VBN to_TO represent_VB
+          any_DT of_IN these_DT ,_, or_CC even_RB a_DT chromosome_NN itself_PRP ._.
+          The_DT Array_NNP package_NN stores_NNS information_NN on_IN arrays_NNS created_VBN
+          on_IN the_DT basis_NN of_IN an_DT ArrayDesign_NNP ._. This_DT includes_VBZ the_DT
+          manufacturing_NN protocols_NNS ,_, contacts_NNS ,_, and_CC details_NNS of_IN the_DT
+          exact_JJ materials_NNS used_VBN for_IN each_DT Feature_NNP ._. It_PRP is_VBZ important_JJ to_TO
+          note_VB that_IN the_DT materials_NNS are_VBP actually_RB BioMaterials_NNP
+          (_( described_VBD below_IN )_) ,_, which_WDT allows_VBZ them_PRP to_TO be_VB very_RB detailed_JJ ;_:
+          examples_NNS include_VBP PCR_NNP reactions_NNS based_VBN on_IN different_JJ
+          identifiable_JJ cDNA_NN clones_NNS ._. Position_NNP changes_NNS and_CC other_JJ
+          feature_NN defects_NNS can_MD be_VB recorded_VBN for_IN each_DT array_NN ._. To_TO
+          accommodate_VB some_DT manufacturing_NN processes_VBZ ,_, arrays_NNS may_MD be_VB
+          part_NN of_IN an_DT ArrayGroup_NNP (_( several_JJ distinct_JJ arrays_NNS that_WDT are_VBP
+          synthesized_JJ and_CC distributed_VBN as_IN a_DT single_JJ entity_NN )_) ._. The_DT
+          ArrayGroup_NNP also_RB records_VBZ the_DT locations_NNS of_IN signifying_VBG marks_NNS
+          (_( fiducials_NNS )_) and_CC details_NNS about_IN the_DT array_NN 's_POS substrate_NN ._.
+        
+        
+          Preparation_NNP of_IN experimental_JJ materials_NNS ,_,
+          hybridizations_NNS ,_, and_CC scans_NNS
+          Experimental_NNP samples_NNS from_IN the_DT laboratory_NN are_VBP termed_VBN
+          BioMaterials_NNP in_IN the_DT MAGE-OM_NNP ,_, with_IN key_JJ subclasses_NNS being_VBG
+          BioSource_NNP ,_, BioSample_NNP ,_, and_CC LabeledExtract_NNP ._. The_DT BioSource_NNP
+          is_VBZ used_VBN to_TO designate_VB the_DT innate_JJ (_( or_CC starting_VBG )_) properties_NNS
+          of_IN a_DT sample_NN ,_, such_JJ as_IN genotype_NN ,_, age_NN ,_, species_NNS ,_, and_CC disease_NN
+          state_NN ._. Each_DT of_IN these_DT properties_NNS is_VBZ set_VBN by_IN the_DT
+          associations_NNS to_TO OntologyEntries_NNP ._. A_DT BioMaterial_NNP is_VBZ derived_VBN
+          from_IN one_CD or_CC more_JJR BioMaterials_NNP through_IN Treatment_NNP events_NNS ,_,
+          which_WDT also_RB specify_VB the_DT protocol_NN and_CC amount_NN (_( s_VBZ )_) of_IN the_DT
+          BioMaterial_NNP (_( s_VBZ )_) used_VBN ._. The_DT treatment_NN provides_VBZ an_DT
+          association_NN to_TO the_DT action_NN Ontology-_NNP Entry_NNP ._. Examples_NNS of_IN
+          common_JJ terms_NNS in_IN this_DT ontology_NN might_MD be_VB :_: add_VB ,_, centrifuge_NN ,_,
+          and_CC incubate_NN ._. Each_DT treatment_NN also_RB has_VBZ an_DT optional_JJ
+          actionMeasurement_NN that_WDT would_MD allow_VB relevant_JJ values_NNS to_TO be_VB
+          stored_VBN ._. Together_RB ,_, action_NN and_CC actionMeasurement_NN might_MD be_VB
+          used_VBN to_TO specify_VB "_'' incubate_NN 10_CD minutes_NNS "_'' ._. BioMaterials_NNP can_MD
+          be_VB designated_VBN as_IN being_NN of_IN a_DT certain_JJ type_NN (_( an_DT
+          OntologyEntry_NNP )_) such_JJ as_IN the_DT MIAME_NNP concept_NN of_IN an_DT Extract_NNP ,_,
+          so_IN that_IN the_DT role_NN in_IN the_DT laboratory_NN can_MD be_VB specified_VBN ._. The_DT
+          final_JJ BioMaterial_NNP is_VBZ the_DT LabeledExtract_NNP ,_, which_WDT is_VBZ also_RB
+          created_VBN by_IN a_DT treatment_NN event_NN from_IN other_JJ BioMaterials_NNP ._. The_DT
+          LabeledExtract_NNP has_VBZ an_DT association_NN to_TO labels_NNS (_( compounds_NNS
+          that_WDT will_MD be_VB used_VBN to_TO measure_VB the_DT abundance_NN of_IN components_NNS
+          of_IN the_DT LabeledExtract_NNP )_) ._.
+          In_IN the_DT workflow_NN above_IN ,_, an_DT Array_NNP and_CC one_CD or_CC more_JJR
+          BioMaterials_NNP (_( for_IN two-color_JJ microarrays_NNS this_DT would_MD be_VB two_CD
+          Labeled-_NNP Extracts_NNP )_) are_VBP combined_VBN to_TO create_VB a_DT
+          PhysicalBioAssay_NNP ._. The_DT BioEvent_NNP model_NN used_VBN by_IN MAGE-OM_NNP
+          allows_VBZ for_IN a_DT BioEvent_NNP to_TO be_VB applied_VBN to_TO a_DT
+          PhysicalBioAssay_NNP ,_, to_TO create_VB a_DT new_JJ PhysicalBioAssay_NNP ,_, for_IN
+          example_NN ,_, a_DT washing_VBG event_NN can_MD be_VB applied_VBN to_TO the_DT above_JJ
+          PhysicalBioAssay_NNP to_TO create_VB a_DT new_JJ PhysicalBioAssay_NNP ._. One_CD
+          specialized_JJ BioAssayTreatment_NNP is_VBZ the_DT ImageAcquisition_NNP ,_,
+          the_DT product_NN of_IN which_WDT has_VBZ associations_NNS to_TO one_CD or_CC more_JJR
+          Images_NNP ._. A_DT MeasuredBioAssay_NNP is_VBZ generated_VBN by_IN the_DT
+          FeatureExtraction_NNP event_NN operating_VBG on_IN a_DT PhysicalBioAssay_NNP ._.
+          The_DT FeatureExtraction_NNP is_VBZ Software_NNP guided_VBN and_CC the_DT
+          MeasuredBioAssay_NNP has_VBZ an_DT association_NN with_IN the_DT numeric_JJ data_NN
+          that_WDT are_VBP produced_VBN (_( that_WDT is_VBZ ,_, the_DT tab-delimited_JJ data_NN output_NN
+          by_IN the_DT scanner_NN software_NN )_) ._. MeasuredBioAssays_NNP can_MD be_VB
+          processed_VBN or_CC combined_VBN by_IN a_DT Transformation_NNP producing_VBG a_DT
+          DerivedBioAssay_NNP ._. Again_RB ,_, the_DT DerivedBioAssay_NNP is_VBZ not_RB
+          numeric_JJ data_NNS ,_, its_PRP$ data_NNS are_VBP obtained_VBN through_IN an_DT
+          association_NN to_TO DerivedBioAssayData_NNP ._.
+        
+        
+          Data_NNP model_NN and_CC storage_NN
+          The_DT data_NNS model_NN is_VBZ perhaps_RB the_DT most_RBS complex_JJ aspect_NN of_IN
+          MAGE-OM_NNP ._. We_PRP view_VBP the_DT data_NNS as_IN a_DT three-dimensional_JJ matrix_NN
+          (_( or_CC cube_NN )_) of_IN values_NNS whose_WP$ axes_NNS are_VBP labeled_VBN by_IN
+          Design-_NNP Elements_NNS (_( the_NNP '_POS genes_NNS '_POS )_) ,_, BioAssays_NNP (_( '_POS experimental_JJ
+          samples_NNS '_POS )_) ,_, and_CC QuantitationTypes_NNP (_( parameters_NNS from_IN the_DT
+          scanning_VBG software_NN )_) ._. Figure_NN 2_CD ashows_NNS data_NNS for_IN four_CD
+          DesignElements_NNP ,_, three_CD QuantitationTypes_NNP and_CC a_DT single_JJ
+          BioAssay_NNP ,_, which_WDT is_VBZ similar_JJ to_TO the_DT table_NN of_IN data_NNS generally_RB
+          presented_VBN by_IN a_DT FeatureExtraction_NNP event_NN ._. The_DT
+          QuantitationTypes_NNP shown_VBN include_VBP Channel_NNP 1_CD Foreground_NNP and_CC
+          Background_NNP ,_, Channel_NNP 2_CD Foreground_NNP and_CC Background_NNP ,_, and_CC the_DT
+          ratio_NN between_IN the_DT background_NN subtracted_VBD intensities_NNS of_IN
+          Channel_NNP 2_CD over_IN Channel_NNP 1_CD ._.
+          QuantitationTypes_NNP are_VBP the_DT types_NNS of_IN data_NNS that_WDT are_VBP
+          communicated_VBN in_IN microarray_NN experiments_NNS and_CC can_MD be_VB either_CC
+          Standard_NNP or_CC Specialized_NNP types_NNS ._. StandardQuantitationTypes_NNP
+          were_VBD designed_VBN to_TO allow_VB third_JJ parties_NNS to_TO understand_VB the_DT
+          structure_NN and_CC meaning_NN of_IN the_DT gene-expression_JJ data_NN ._. Four_CD
+          of_IN the_DT StandardQuantitationTypes_NNP are_VBP MeasuredSignal_NNP (_( that_WDT
+          is_VBZ ,_, intensity_NN )_) ,_, DerivedSignal_NNP (_( background_NN subtracted_VBD
+          intensity_NN )_) ,_, Ratio_NNP (_( the_DT result_NN of_IN dividing_VBG one_CD signal_NN by_IN
+          another_DT )_) ,_, and_CC PresentAbsent_NNP (_( enumerated_JJ evaluation_NN of_IN
+          presence_NN )_) ._. There_EX are_VBP three_CD more_JJR
+          StandardQuantitationTypes_NNP :_: PValue_NNP ,_, Error_NNP (_( standard_JJ
+          deviation_NN )_) ,_, and_CC ExpectedValue_NNP ,_, which_WDT are_VBP
+          ConfidenceIndicators_NNP ,_, meaning_VBG that_IN their_PRP$ values_NNS modify_VB or_CC
+          describe_VB another_DT QuantitationType_NNP ._. For_IN example_NN ,_, if_IN a_DT
+          gene_NN 's_POS relative_JJ expression_NN between_IN two_CD BioMaterials_NNP is_VBZ
+          known_VBN by_IN another_DT experimental_JJ method_NN to_TO be_VB unchanged_JJ ,_,
+          then_RB the_DT ExpectedValue_NNP of_IN the_DT Ratio_NNP should_MD be_VB 1_CD ._. 00_CD ,_, while_IN
+          the_DT Ratio_NNP itself_PRP might_MD be_VB 1_CD ._. 08_CD ._. This_DT ability_NN allows_VBZ
+          control_NN values_NNS to_TO be_VB included_VBN in_IN the_DT gene-expression_JJ data_NN
+          so_IN others_NNS can_MD evaluate_VB the_DT accuracy_NN and_CC reliability_NN of_IN
+          the_DT measurements_NNS provided_VBN ._. Each_DT StandardQuantitationType_NNP
+          has_VBZ an_DT optional_JJ association_NN to_TO Channel_NNP and_CC a_DT designator_NN
+          indicating_VBG whether_IN the_DT value_NN refers_VBZ to_TO the_DT background_NN or_CC
+          foreground_NN ._. The_DT SpecializedQuantitationTypes_NNP are_VBP user_NN
+          defined_VBN ;_: possible_JJ examples_NNS include_VBP the_DT number_NN of_IN pixels_NNS
+          in_IN each_DT feature_NN ,_, or_CC the_DT pixel-by-pixel_JJ correlation_NN
+          between_IN two_CD channels_NNS within_IN a_DT feature_NN ._.
+          The_DT matrix_NN of_IN values_NNS is_VBZ represented_VBN in_IN the_DT model_NN as_IN
+          either_DT a_DT cube_NN of_IN values_NNS (_( BioAssayDataCube_NNP )_) ,_, or_CC as_IN value_NN
+          coordinate_VB tuples_NNS (_( BioDataTuples_NNP )_) ._. Both_DT of_IN these_DT data_NNS
+          sources_NNS share_VBP BioAssayDimensions_NNP that_WDT identify_VBP all_DT of_IN the_DT
+          DesignElements_NNP ,_, QuantitationTypes_NNP ,_, or_CC BioAssays_NNP used_VBD ._.
+          Each_DT of_IN the_DT dimensions_NNS of_IN the_DT cube_NN specifies_VBZ the_DT order_NN of_IN
+          the_DT values_NNS along_IN one_CD axis_NNS (_( Figure_NN 2_CD b_SYM )_) ._.
+        
+        
+          Experiments_NNS
+          MAGE-OM_NNP 's_POS highest-level_JJ object_VBP is_VBZ the_DT Experiment_NNP ,_, a_DT
+          collection_NN of_IN results_NNS for_IN one_CD or_CC more_JJR BioAssay_NNP (_( s_VBZ )_) ,_, the_DT
+          intent_NN of_IN which_WDT is_VBZ to_TO communicate_VB the_DT biological_JJ
+          properties_NNS tested_VBN ._. Experiments_NNS have_VBP an_DT ExperimentDesign_NNP ,_,
+          which_WDT records_VBZ the_DT following_VBG key_JJ MIAME_NNP requirements_NNS :_:
+          replicate_VB ;_: quality_NN and_CC data-processing_NN information_NN (_( in_IN
+          free-text_JJ form_NN )_) ;_: Ontology-_NNP Entries_NNP describing_VBG the_DT type_NN of_IN
+          experiment_NN ;_: and_CC a_DT set_NN of_IN ExperimentalFactors_NNP (_( the_DT
+          parameters_NNS of_IN the_DT experiment_NN )_) ._. For_IN example_NN ,_, a_DT simple_JJ
+          gene-expression_JJ time_NN course_NN could_MD vary_VB cell_NN density_NN and_CC
+          glucose_NN concentration_NN over_IN time_NN ;_: these_DT would_MD be_VB the_DT
+          ExperimentalFactors_NNP ._. Each_DT ExperimentalFactor_NNP also_RB has_VBZ an_DT
+          association_NN to_TO FactorValues_NNP ,_, which_WDT hold_VBP the_DT values_NNS for_IN
+          each_DT of_IN the_DT factors_NNS for_IN each_DT BioAssay_NNP in_IN the_DT Experiment_NNP ._.
+          This_DT will_MD facilitate_VB queries_NNS of_IN gene-expression_JJ
+          repositories_NNS where_WRB a_DT user_NN might_MD wish_VB to_TO find_VB all_DT
+          experiments_NNS that_WDT varied_VBD the_DT dosage_NN of_IN exposure_NN to_TO a_DT given_VBN
+          drug_NN ._. The_DT Experiment_NNP also_RB has_VBZ a_DT set_NN of_IN Providers_NNP who_WP are_VBP
+          the_DT relevant_JJ Contacts_NNP for_IN the_DT Experiment_NNP (_( the_DT
+          experimenters_NNS themselves_PRP )_) ._.
+        
+        
+          Data_NNP analysis_NN
+          The_DT Experiment_NNP also_RB has_VBZ associations_NNS to_TO analyses_NNS
+          (_( HigherLevelAnalyses_NNP )_) that_WDT go_VBP beyond_IN the_DT recorded_VBN data_NN ._.
+          Typical_JJ examples_NNS might_MD include_VB clustered_VBN results_NNS (_( from_IN
+          hierarchical_JJ or_CC k-means_JJ clustering_VBG )_) or_CC results_NNS from_IN
+          self-organizing_JJ maps_NNS ._. More_RBR complex_JJ HigherLevelAnalyses_NNP
+          might_MD include_VB predictions_NNS of_IN gene_NN function_NN ,_, experiment_NN
+          class_NN (_( for_IN example_NN ,_, tumor_NN classification_NN )_) ,_, or_CC associated_VBN
+          regulatory_JJ sequences_NNS (_( transcription_NN factor_NN binding_JJ
+          sites_NNS )_) ._.
+          At_IN present_VB the_DT model_NN only_RB contains_VBZ a_DT limited_JJ framework_NN
+          supporting_VBG node-_NN and_CC tree-based_JJ clusters_NNS ._. Each_DT clustering_VBG
+          has_VBZ an_DT association_NN to_TO the_DT data_NNS from_IN which_WDT the_DT results_NNS
+          were_VBD generated_VBN as_RB well_RB as_IN one_CD or_CC more_JJR nodes_NNS ._. Each_DT node_NN
+          can_MD contain_VB other_JJ nodes_NNS to_TO create_VB a_DT tree_NN or_CC it_PRP can_MD
+          contain_VB one_CD or_CC more_JJR dimensions_NNS ,_, allowing_VBG the_DT node_NN to_TO
+          identify_VB which_WDT of_IN the_DT matrix_NN indices_NNS are_VBP clustered_VBN
+          together_RB (_( for_IN example_NN ,_, a_DT node_NN might_MD contain_VB a_DT
+          DesignElementDimension_NNP with_IN two_CD genes_NNS )_) ._.
+        
+        
+          MAGE-ML_NNP
+          A_DT few_JJ simple_JJ rules_NNS were_VBD used_VBN to_TO translate_VB MAGE-OM_NNP into_IN
+          the_DT DTD_NNP named_VBD MAGE-ML_NNP ._. First_LS ,_, each_DT class_NN in_IN the_DT object_NN
+          model_NN is_VBZ represented_VBN as_IN an_DT element_NN with_IN an_DT attribute_VBP list_NN
+          matching_VBG the_DT attributes_NNS of_IN the_DT class_NN ._. Second_JJ ,_, for_IN each_DT
+          association_NN of_IN that_DT class_NN ,_, a_DT daughter_NN element_NN having_VBG the_DT
+          role_NN 's_POS name_NN with_IN '_POS assn_NN '_'' appended_VBN to_TO the_DT end_NN is_VBZ created_VBN ._.
+          Further_RB ,_, if_IN the_DT association_NN is_VBZ by_IN reference_NN '_'' ref_NN is_VBZ
+          appended_VBN and_CC if_IN the_DT cardinality_NN of_IN the_DT association_NN is_VBZ
+          greater_JJR than_IN one_CD '_POS list_NN '_'' is_VBZ appended_VBN ._. For_IN example_NN ,_, in_IN
+          MAGE-OM_NNP ,_, Person_NNP has_VBZ an_DT association_NN ,_, '_'' affiliation_NN '_'' ,_, by_IN
+          reference_NN to_TO an_DT Organization_NNP ._. In_IN the_DT XML_NNP this_DT would_MD
+          appear_VB as_IN :_:
+          <_NN Person_NNP identifier_NN =_SYM "_'' Person_NNP 1_CD "_'' name_NN =_SYM "_'' John_NNP
+          Doe_NNP "_'' >_NN
+          <_NN Affiliation_NNP __NN assnref_NN >_NN
+          <_NN Organization_NNP __NN refidentifier_NN =_SYM "_'' ABC_NNP Inc_NNP ._. "_'' /_NN >_NN
+          <_NN /_NN Affiliation_NNP __NN assnref_NN >_NN
+          <_NN /_NN Person_NNP >_NN
+          We_PRP have_VBP adopted_VBN this_DT strict_JJ naming_NN scheme_NN so_IN that_IN
+          MAGE-ML_NNP is_VBZ predictable_JJ and_CC so_IN that_IN future_JJ additions_NNS and_CC
+          extensions_NNS to_TO MAGE-ML_NNP will_MD be_VB compatible_JJ ._. Several_JJ special_JJ
+          elements_NNS are_VBP also_RB created_VBN :_: one_CD for_IN the_DT model_NN (_( MAGE-ML_NNP )_) ;_:
+          one_CD for_IN each_DT of_IN the_DT packages_NNS in_IN the_DT model_NN ;_: and_CC a_DT list_NN
+          element_NN that_IN each_DT identifiable_JJ class_NN within_IN a_DT package_NN
+          receives_VBZ and_CC that_DT serves_VBZ to_TO organize_VB each_DT instances_NNS of_IN
+          that_DT class_NN ._. The_DT packages_NNS ensure_VBP that_IN MAGE-ML_NNP is_VBZ modular_JJ ,_,
+          so_IN that_RB ,_, for_IN example_NN ,_, related_VBD ArrayDesigns_NNP ,_,
+          DesignElements_NNP ,_, and_CC BioSequences_NNP can_MD be_VB stored_VBN in_IN
+          different_JJ documents_NNS ._.
+        
+        
+          Production_NN uses_NNS of_IN MAGE_NNP
+          There_EX is_VBZ substantial_JJ evidence_NN that_IN MAGE_NNP is_VBZ a_DT useful_JJ
+          specification_NN ._. First_LS ,_, Rosetta_NNP Biosoftware_NNP has_VBZ used_VBN GEML_NNP
+          (_( a_DT MAGE-ML_NNP predecessor_NN )_) as_IN an_DT internal_JJ data-communication_JJ
+          standard_NN for_IN over_IN two_CD years_NNS ,_, primarily_RB as_IN an_DT intermediate_JJ
+          step_NN in_IN their_PRP$ data_NNS pipeline_NN ._. The_DT Rosetta_NNP pipeline_NN
+          principally_RB included_VBD data_NNS associated_VBN with_IN array_NN design_NN ,_,
+          printing_NN ,_, scanning_VBG and_CC feature_NN extraction_NN ._. Their_PRP$ XML_NNP
+          format_NN handles_VBZ many_JJ technology_NN types_NNS ,_, including_VBG
+          two-channel_JJ ratio_NN data_NNS and_CC single-channel_JJ intensity_NN data_NNS ._.
+          At_IN a_DT minimum_NN ,_, GEML_NNP has_VBZ shown_VBN that_IN an_DT XML_NNP format_NN can_MD work_VB
+          very_RB well_RB for_IN a_DT disconnected_VBN high-throughput_JJ internal_JJ
+          pipeline_NN ._. It_PRP showed_VBD that_IN the_DT large_JJ amount_NN of_IN data_NNS in_IN
+          gene-expression_JJ experiments_NNS can_MD be_VB effectively_RB encoded_JJ in_IN
+          an_DT XML_NNP format_NN and_CC also_RB showed_VBD that_IN a_DT single_JJ experiment_NN
+          can_MD be_VB spread_VBN through_IN several_JJ documents_NNS and_CC /_NN or_CC data_NNS
+          stores_NNS and_CC linked_VBN using_VBG common_JJ identifiers_NNS ._.
+          More_RBR recently_RB ,_, the_DT European_NNP Bioinformatics_NNP Institute_NNP
+          (_( EBI_NNP )_) has_VBZ begun_VBN using_VBG MAGE_NNP as_IN the_DT basis_NN for_IN the_DT
+          ArrayExpress_NNP gene-expression_JJ database_NN [_NN 9_CD ]_NN ._. ArrayExpress_NNP
+          is_VBZ a_DT relational_NN implementation_NN of_IN MAGE-OM_NNP that_WDT can_MD
+          import_VB ,_, and_CC in_IN the_DT near_JJ future_JJ ,_, export_NN MAGE-ML_NNP documents_NNS ._.
+          This_DT project_NN has_VBZ proved_VBN that_IN there_EX is_VBZ more_JJR value_NN to_TO
+          MAGE-OM_NNP than_IN just_RB an_DT easier-to-read_JJ MAGE-ML_NNP
+          specification_NN ;_: database_NN schema_NN ,_, various_JJ software_NN pieces_NNS
+          for_IN data_NNS loading_NN and_CC access_NN ,_, as_RB well_RB as_IN templates_NNS for_IN web_NN
+          pages_NNS were_VBD automatically_RB generated_VBN from_IN MAGE-OM_NNP ._. Although_IN
+          this_DT effort_NN is_VBZ just_RB beginning_VBG ,_, a_DT number_NN of_IN submissions_NNS
+          have_VBP been_VBN successfully_RB entered_VBN into_IN the_DT database_NN ._.
+          Affymetrix_NNP has_VBZ also_RB implemented_VBN MAGE-compliant_NNP
+          software_NN ,_, particularly_RB an_DT exporter_NN application_NN
+          programmers_NNS interface_NN (_( API_NNP )_) in_IN a_DT software_NN component_NN
+          called_VBD the_NNP '_POS Expression_NNP Data_NNP Access_NNP Component_NNP Exporter_NNP '_POS or_CC
+          '_POS EDAC-Exporter_NNP '_POS that_WDT will_MD export_VB Affymetrix_NNP experiment_NN
+          result_NN data_NNS files_NNS to_TO MAGE-ML-compliant_NNP XML_NNP documents_NNS ._.
+          Affymetrix_NNP is_VBZ further_JJ providing_VBG the_DT EBI_NNP 's_POS ArrayExpress_NNP
+          with_IN MAGE-ML_NNP files_NNS with_IN ArrayDesign_NNP ,_, DesignElement_NNP ,_, and_CC
+          BioSequence_NNP information_NN to_TO facilitate_VB submissions_NNS of_IN
+          experimental_JJ data_NNS ]_NN from_IN Affymetrix_NNP GeneChips_NNP and_CC queries_NNS
+          of_IN this_DT data_NNS within_IN ArrayExpress_NNP ._.
+          Finally_RB the_DT National_NNP Cancer_NNP Institute_NNP (_( NCI_NNP )_) has_VBZ over_IN
+          150_CD experiments_NNS ,_, including_VBG oligo_NN ,_, spotted_VBD array_NN ,_, CGH_NNP
+          (_( comparative_JJ genome_NN hybridization_NN )_) ,_, and_CC SAGE_NNP (_( serial_NN
+          analysis_NN of_IN gene_NN expression_NN )_) experiments_NNS in_IN their_PRP$
+          database_NN (_( which_WDT is_VBZ based_VBN on_IN MAGE_NNP )_) ._. Currently_RB ,_, the_DT NCI_NNP
+          database_NN can_MD generate_VB MAGE-ML_NNP documents_NNS for_IN all_DT submitted_VBN
+          experiments_NNS ._.
+        
+        
+          The_DT software_NN toolkit_NN :_: MAGE-STK_NNP
+          We_PRP do_VBP not_RB expect_VB that_IN individuals_NNS will_MD access_VB and_CC use_NN
+          MAGE-ML_NNP directly_RB ._. Instead_RB ,_, we_PRP have_VBP developed_VBN a_DT suite_NN of_IN
+          software_NN tools_NNS based_VBN on_IN MAGE-OM_NNP that_WDT is_VBZ collectively_RB
+          called_VBN the_DT MAGE-STK_NNP ._. These_DT tools_NNS define_VB an_DT API_NNP to_TO
+          MAGE-OM_NNP ._. The_DT suite_NN currently_RB supports_VBZ three_CD
+          implementations_NNS :_: MAGE-Perl_NNP ,_, MAGE-Java_NNP ,_, and_CC MAGE-C_NNP +_NN +_NN ._. Each_DT
+          of_IN the_DT APIs_NNP use_NN similarly_RB named_VBD methods_NNS and_CC classes_NNS to_TO
+          provide_VB access_NN to_TO their_PRP$ objects_NNS ._. The_DT goal_NN of_IN MAGE-STK_NNP is_VBZ
+          to_TO provide_VB an_DT intermediate_JJ object_VBP layer_NN that_WDT can_MD then_RB be_VB
+          used_VBN to_TO export_VB data_NNS to_TO MAGE-ML_NNP ,_, to_TO store_VB data_NNS in_IN a_DT
+          persistent_JJ data_NN store_VBP such_JJ as_IN a_DT relational_NN database_NN ,_, or_CC
+          as_IN input_NN to_TO software-analysis_JJ tools_NNS ._.
+          Currently_RB ,_, each_DT API_NNP provides_VBZ a_DT MAGE-ML_NNP reader_NN and_CC a_DT
+          MAGE-ML_NNP writer_NN :_: the_DT reader_NN packages_NNS load_NN a_DT set_NN of_IN MAGE-ML_NNP
+          documents_NNS into_IN the_DT API_NNP ,_, creating_VBG a_DT collection_NN of_IN objects_NNS ;_:
+          the_DT writer_NN packages_NNS create_VBP a_DT MAGE-ML_NNP document_NN from_IN a_DT
+          collection_NN of_IN API_NNP objects_NNS ._.
+          Because_IN there_EX is_VBZ no_DT public_JJ adaptation_NN of_IN MAGE-OM_NNP to_TO a_DT
+          relational_NN database_NN schema_NN ,_, the_DT APIs_NNP must_MD be_VB mapped_VBN to_TO
+          and_CC from_IN a_DT site_NN 's_POS local_JJ model_NN (_( that_WDT is_VBZ ,_, their_PRP$ database_NN
+          schema_NN )_) before_IN use_NN ._. Once_RB this_DT is_VBZ done_VBN ,_, each_DT group_NN will_MD be_VB
+          able_JJ to_TO share_VB (_( and_CC receive_VB )_) data_NNS from_IN other_JJ MAGE_NNP users_NNS in_IN
+          an_DT unambiguous_JJ and_CC predictable_JJ format_NN -_: MAGE-ML_NNP ._. Projects_NNS
+          are_VBP currently_RB underway_NN which_WDT map_VBP MAGE-OM_NNP to_TO a_DT relational_NN
+          database_NN schema_NN (_( see_VB ,_, for_IN example_NN ,_, ArrayExpress_NNP [_NN 10_CD ]_NN )_) ,_,
+          and_CC as_RB soon_RB as_IN such_JJ a_DT public_JJ database_NN schema_NN exists_VBZ ,_, the_DT
+          APIs_NNP will_MD provide_VB a_DT default_NN set_NN of_IN mappings_NNS to_TO that_DT
+          schema_NN ._.
+          As_IN addressed_VBN in_IN MIAME_NNP ,_, one_CD of_IN the_DT current_JJ shortcomings_NNS
+          of_IN public_JJ microarray_NN data_NNS is_VBZ the_DT lack_NN of_IN sufficient_JJ
+          contextual_NN information_NN ._. One_CD of_IN the_DT next_JJ goals_NNS of_IN the_DT
+          MAGE-STK_NNP project_NN is_VBZ to_TO develop_VB tools_NNS for_IN annotating_VBG MAGE_NNP
+          data_NNS ._. The_DT overriding_VBG goal_NN is_VBZ to_TO create_VB tools_NNS that_WDT make_VBP it_PRP
+          less_RBR burdensome_JJ on_IN the_DT experimenter_NN to_TO annotate_NN his_PRP$ or_CC
+          her_PRP$ experiments_NNS ._. MIAME_NNP currently_RB specifies_VBZ a_DT large_JJ amount_NN
+          of_IN annotation_NN as_IN required_VBN for_IN the_NNP '_POS minimal_JJ '_POS amount_NN ._. MIAME_NNP
+          will_MD live_VB or_CC die_VB by_IN whether_IN it_PRP is_VBZ reasonable_JJ to_TO provide_VB
+          this_DT level_NN of_IN annotation_NN ,_, not_RB whether_IN it_PRP is_VBZ unreasonable_JJ
+          not_RB to_TO ._. Thus_RB tools_NNS that_WDT allow_VBP a_DT user_NN rapidly_RB and_CC
+          accurately_RB to_TO annotate_NN microarrays_NNS ,_, or_CC groups_NNS of_IN
+          microarrays_NNS ,_, or_CC even_RB related_VBN experiments_NNS ,_, are_VBP of_IN
+          paramount_JJ importance_NN ._.
+          All_DT MAGE_NNP software_NN is_VBZ open_JJ source_NN ,_, available_JJ under_IN the_DT
+          Massachusetts_NNP Institute_NNP of_IN Technology_NNP (_( MIT_NNP )_) license_NN which_WDT
+          allows_VBZ unrestricted_JJ use_NN of_IN the_DT MAGE-STK_NNP for_IN any_DT purpose_NN ,_,
+          academic_JJ or_CC commercial_JJ ._. All_DT MAGE_NNP software_NN and_CC
+          documentation_NN can_MD be_VB found_VBN at_IN [_NN 11_CD ]_NN ._.
+        
+      
+      
+        Discussion_NNP
+        
+          Future_NNP of_IN MAGE_NNP
+          MAGE-ML_NNP has_VBZ been_VBN designed_VBN to_TO be_VB flexible_JJ so_IN that_IN it_PRP
+          can_MD be_VB used_VBN in_IN a_DT wide_JJ variety_NN of_IN technical_JJ settings_NNS
+          (_( spotted_VBD two-color_JJ cDNA_NN arrays_NNS ,_, Affymetrix_NNP arrays_NNS ,_, and_CC so_RB
+          on_IN )_) ._. These_DT extend_VB well_RB beyond_IN gene-expression_JJ
+          experiments_NNS ,_, for_IN without_IN modification_NN ,_, data_NNS from_IN all_DT DNA_NNP
+          microarray_NN experiments_NNS and_CC technologies_NNS that_IN we_PRP know_VBP of_IN
+          can_MD be_VB stored_VBN ._. Examples_NNS of_IN some_DT of_IN the_DT uses_NNS and_CC
+          technologies_NNS supported_VBN include_VBP :_: one-_NN and_CC two-color_JJ
+          spotted_VBD arrays_NNS (_( cDNAs_NNS ,_, PCR_NNP products_NNS ,_, or_CC oligonucleotides_NNS )_)
+          on_IN glass_NN or_CC nylon_NN ,_, 
+          in_IN situ_NN synthesized_JJ
+          oligonucleotides_NNS (_( Affymetrix_NNP /_NN photolithography_NN ,_, ink-jet_JJ )_) ,_,
+          RNA_NNP abundance_NN (_( gene_NN expression_NN ,_, polysome_NN profiling_VBG )_) ,_, and_CC
+          DNA_NNP abundance_NN (_( array-_NN CGH_NNP ,_, chromatin_NN immunoprecipitation_NN ,_,
+          genotyping_VBG )_) ._. We_PRP believe_VBP that_IN with_IN ,_, at_IN most_JJS ,_, modest_JJ
+          changes_NNS ,_, MAGE-ML_NNP can_MD support_VB experiments_NNS that_WDT use_NN arrays_NNS
+          made_VBN of_IN proteins_NNS ,_, cells_NNS ,_, or_CC tissues_NNS ._.
+          One_CD of_IN the_DT main_JJ weaknesses_NNS of_IN MAGE-OM_NNP is_VBZ the_DT limited_JJ
+          support_NN it_PRP provides_VBZ for_IN data_NNS analysis_NN ._. Our_PRP$ goal_NN is_VBZ to_TO
+          enhance_VB the_DT current_JJ capabilities_NNS in_IN the_DT next_JJ version_NN
+          substantially_RB by_IN providing_VBG explicit_JJ support_NN for_IN different_JJ
+          clustering_VBG and_CC analysis_NN methods_NNS ._. Another_DT development_NN
+          initiative_NN is_VBZ to_TO support_VB conclusions_NNS based_VBN on_IN the_DT
+          microarray_NN data_NN ,_, for_IN example_NN the_DT ability_NN to_TO indicate_VB
+          sequence_NN motifs_NNS or_CC biological_JJ effects_NNS (_( such_JJ as_IN mortality_NN )_)
+          associated_VBN with_IN individual_JJ (_( or_CC sets_NNS of_IN )_) nodes_NNS in_IN a_DT
+          cluster_NN ._.
+          MAGE-ML_NNP will_MD adapt_VB to_TO the_DT changes_NNS that_WDT occur_VBP because_IN
+          the_DT developers_NNS are_VBP actively_RB committed_VBN to_TO maintaining_VBG
+          useful_JJ standards_NNS ._. We_PRP appreciate_VBP all_DT comments_NNS about_IN
+          MAGE-ML_NNP ._. MAGE-ML_NNP has_VBZ a_DT moderated_VBN mailing_NN list_NN at_IN
+          mged-mage_JJ @_IN lists_NNS ._. sourceforge_NN ._. net_NN ,_, which_WDT is_VBZ available_JJ as_IN a_DT
+          mechanism_NN for_IN announcements_NNS ,_, instructive_JJ material_NN ,_, and_CC
+          general_JJ discussion_NN ._.
+        
+        
+          Interaction_NNP of_IN MAGE_NNP with_IN other_JJ projects_NNS
+          The_DT success_NN of_IN this_DT project_NN largely_RB depends_VBZ on_IN the_DT
+          development_NN ,_, availability_NN ,_, and_CC use_NN of_IN ontological_JJ terms_NNS
+          not_RB defined_VBN in_IN the_DT MAGE_NNP project_NN ._. We_PRP expect_VBP some_DT of_IN these_DT
+          to_TO be_VB designed_VBN by_IN MGED_NNP (_( those_DT covering_VBG the_DT general_JJ
+          properties_NNS of_IN microarrays_NNS ,_, and_CC biological_JJ sciences_NNS )_) but_CC
+          some_DT will_MD certainly_RB be_VB developed_VBN outside_IN the_DT MGED_NNP
+          umbrella_NN ._. We_PRP are_VBP actively_RB interested_JJ in_IN this_DT problem_NN and_CC
+          look_VB forward_RB to_TO interacting_VBG with_IN these_DT development_NN
+          efforts_NNS ._. For_IN information_NN on_IN the_DT MGED_NNP ontologies_NNS please_VBP
+          see_VB [_NN 12_CD ]_NN ._.
+          One_CD of_IN the_DT prime_JJ motivations_NNS for_IN developing_VBG MAGE-ML_NNP
+          was_VBD to_TO encourage_VB the_DT analysis_NN of_IN
+          microarray_NN /_NN gene-expression_JJ data_NNS by_IN individuals_NNS other_JJ than_IN
+          the_DT original_JJ authors_NNS ._. The_DT first_JJ key_JJ step_NN in_IN this_DT process_NN
+          is_VBZ the_DT development_NN of_IN databases_NNS (_( public_NN and_CC private_JJ )_) to_TO
+          warehouse_NN the_DT experimental_JJ results_NNS ._. Such_JJ databases_NNS will_MD
+          then_RB allow_VB MIAME-compliant_NNP data_NNS to_TO be_VB retrieved_VBN as_IN
+          MAGE-ML_NNP documents_NNS ._. Many_JJ of_IN us_PRP are_VBP actively_RB involved_VBN in_IN
+          developing_VBG ArrayExpress_NNP -_: a_DT repository_NN of_IN gene-expression_JJ
+          data_NNS hosted_VBD by_IN the_DT EBI_NNP ,_, while_IN others_NNS represent_VBP companies_NNS
+          and_CC academics_NNS developing_VBG laboratory_NN or_CC institutional_JJ
+          databases_NNS (_( Affymetrix_NNP ,_, Iobion_NNP ,_, and_CC Rosetta_NNP ,_, University_NNP of_IN
+          Pennsylvania_NNP ,_, GeneX_NNP )_) ._. We_PRP believe_VBP that_IN the_DT efforts_NNS
+          presented_VBN here_RB will_MD also_RB allow_VB software_NN vendors_NNS to_TO
+          streamline_VB the_DT analysis_NN of_IN gene-expression_JJ data_NNS ,_, thus_RB
+          removing_VBG the_DT current_JJ communication_NN impasse_NN that_WDT is_VBZ so_RB
+          common_JJ ._.
+        
+      
+    
+  

@@ -1,0 +1,822 @@
+
+  
+    
+      
+        Background_NNP
+        Injuries_NNP to_TO nerve_NN or_CC tissue_NN cause_VBP an_DT immediate_JJ sensation_NN
+        of_IN pain_NN ,_, or_CC acute_JJ pain_NN ,_, which_WDT resolves_NNS with_IN the_DT resolution_NN
+        of_IN the_DT injury_NN ._. Less_RBR commonly_RB ,_, these_DT injuries_NNS produce_VBP a_DT
+        heterogeneous_JJ group_NN of_IN pathological_JJ states_NNS that_WDT produce_VBP
+        chronic_JJ pain_NN that_WDT is_VBZ unresponsive_JJ to_TO the_DT analgesics_NNS used_VBN to_TO
+        treat_VB acute_JJ pain_NN ._. It_PRP would_MD be_VB therefore_RB of_IN great_JJ interest_NN
+        to_TO map_VB the_DT characteristic_JJ features_NNS of_IN gene_NN expression_NN
+        following_VBG nerve_NN injuries_NNS ,_, as_IN they_PRP may_MD reveal_VB mechanisms_NNS of_IN
+        chronic_JJ pain_NN and_CC genetic_JJ targets_NNS for_IN the_DT design_NN of_IN novel_NN
+        therapies_NNS ._. In_IN this_DT study_NN we_PRP apply_VBP the_DT powerful_JJ microarray_NN
+        technology_NN to_TO study_VB the_DT injuries_NNS of_IN the_DT brachial_NN plexus_JJ ,_, a_DT
+        typical_JJ form_NN of_IN nerve_NN injury_NN from_IN motorcycle_NN or_CC workplace_NN
+        incidences_NNS [_NN 1_CD ]_NN ._. Since_IN this_DT is_VBZ largely_RB a_DT paper_NN focusing_VBG
+        on_IN methodology_NN ,_, we_PRP refer_VBP the_DT readers_NNS to_TO our_PRP$ website_NN [_NN 2_CD ]_NN
+        for_IN details_NNS of_IN the_DT brachial_NN plexus_JJ injuries_NNS ._.
+        The_DT goal_NN of_IN this_DT study_NN ,_, detection_NN of_IN condition_NN or_CC
+        state-dependent_JJ differentially_RB expressed_VBD genes_NNS ,_, is_VBZ an_DT
+        important_JJ problem_NN in_IN the_DT context_NN of_IN microarrays_NNS ._. Fold_NNP
+        changes_NNS and_CC 
+        t_NN tests_NNS have_VBP been_VBN applied_VBN to_TO
+        microarray_NN datasets_NNS to_TO yield_VB lists_NNS of_IN genes_NNS that_WDT have_VBP
+        undergone_VBN altered_VBN expression_NN under_IN a_DT certain_JJ significance_NN
+        threshold_NN ._. Although_IN these_DT methods_NNS are_VBP useful_JJ in_IN identifying_VBG
+        potential_JJ gene_NN targets_NNS ,_, they_PRP are_VBP best_RBS applied_VBN to_TO small_JJ sets_NNS
+        of_IN hypothesis_NNS tests_NNS ._. In_IN the_DT context_NN of_IN microarray_NN
+        experiments_NNS where_WRB thousands_NNS of_IN genes_NNS are_VBP commonly_RB evaluated_VBN
+        simultaneously_RB ,_, the_DT probability_NN of_IN detecting_VBG false_JJ
+        positives_NNS rises_VBZ sharply_RB ._. Two_CD recently_RB proposed_VBN algorithms_NNS
+        seeking_VBG to_TO address_VB this_DT multiple_JJ testing_NN problem_NN ,_,
+        Significance_NN Analysis_NNP of_IN Microarray_NNP (_( SAM_NNP )_) and_CC Westfall_NNP and_CC
+        Young_NNP step-down_JJ adjusted_VBD 
+        p_NN values_NNS ,_, will_MD be_VB investigated_VBN in_IN our_PRP$
+        study_NN ._. We_PRP note_VBP at_IN the_DT outset_NN that_IN our_PRP$ investigation_NN of_IN
+        methods_NNS for_IN detection_NN of_IN such_JJ differentially_RB expressed_VBD
+        genes_NNS has_VBZ several_JJ limitations_NNS ._. Firstly_NNP ,_, it_PRP is_VBZ based_VBN solely_RB
+        on_IN the_DT brachial_NN plexus_JJ injury_NN data_NNS which_WDT ,_, in_IN turn_NN ,_, is_VBZ
+        limited_VBN by_IN small_JJ sample_NN sizes_NNS (_( 10_CD injured_VBN patients_NNS and_CC 3_CD
+        controls_NNS )_) ._. However_RB ,_, such_JJ small_JJ sample_NN sizes_NNS are_VBP
+        characteristic_NN of_IN many_JJ current_JJ microarray_NN studies_NNS ,_, in_IN view_NN
+        of_IN technologic_JJ expense_NN ,_, so_IN that_DT exploration_NN in_IN this_DT setting_VBG
+        is_VBZ purposeful_JJ ._. Secondly_RB ,_, our_PRP$ investigation_NN is_VBZ largely_RB
+        empiric_JJ ,_, there_EX being_VBG no_DT overarching_VBG theory_NN by_IN which_WDT to_TO
+        arbitrate_NN competing_VBG approaches_NNS ._. Nonetheless_RB ,_, it_PRP is_VBZ the_DT
+        frequently_RB observed_VBN heteroskedasticity_NN of_IN gene_NN expression_NN
+        measurements_NNS that_IN motivates_NNS our_PRP$ extension_NN of_IN the_DT SAM_NNP
+        methodology_NN (_( see_VB below_IN )_) to_TO Welch_NNP statistics_NNS ._.
+        SAM_NNP was_VBD designed_VBN to_TO evaluate_VB the_DT significance_NN of_IN changes_NNS
+        in_IN gene_NN expression_NN between_IN different_JJ biological_JJ states_NNS [_NN 3_CD
+        ]_NN ._. SAM_NNP assigns_VBZ a_DT score_NN to_TO each_DT gene_NN (_( here_RB and_CC below_IN what_WP
+        we_PRP refer_VBP to_TO as_IN genes_NNS are_VBP actually_RB probe_NN sets_NNS on_IN the_DT chip_NN
+        that_DT target_NN full_JJ length_NN cDNAs_NNS or_CC ESTs_NNP )_) as_IN an_DT index_NN of_IN the_DT
+        relative_JJ difference_NN between_IN groups_NNS ._. A_DT gene_NN is_VBZ labeled_VBN as_IN
+        significant_JJ if_IN its_PRP$ score_NN surpasses_NNS a_DT threshold_NN ._. SAM_NNP terms_NNS
+        the_DT percentage_NN of_IN genes_NNS identified_VBN by_IN chance_NN the_DT false_JJ
+        discovery_NN rate_NN (_( FDR_NNP )_) and_CC estimates_NNS this_DT quantity_NN by_IN
+        recourse_NN to_TO permutation_NN ._. The_DT threshold_NN can_MD be_VB adjusted_VBN to_TO
+        identify_VB different_JJ sizes_NNS of_IN sets_NNS of_IN putatively_RB significant_JJ
+        genes_NNS ,_, and_CC FDRs_NNP are_VBP modified_VBN accordingly_RB ._. We_PRP note_VBP here_RB that_IN
+        this_DT differs_VBZ from_IN the_DT formulation_NN and_CC sequential_NN control_NN of_IN
+        FDRs_NNP as_RB originally_RB proposed_VBN by_IN Benjamini_NNP and_CC Hochberg_NNP [_NN 4_CD ]_NN
+        ;_: see_VB Storey_NNP [_NN 5_CD ]_NN and_CC Storey_NNP and_CC Tibshirani_NNP [_NN 6_CD ]_NN for_IN
+        discussion_NN of_IN the_DT distinctions_NNS and_CC considerations_NNS pertinent_JJ
+        to_TO microarray_NN data_NNS analysis_NN ._. Throughout_IN ,_, we_PRP will_MD use_VB FDR_NNP in_IN
+        the_DT sense_NN of_IN SAM_NNP ._. Tusher_NNP ,_, 
+        et_CC al_NN ._. used_VBN SAM_NNP to_TO study_VB the_DT
+        transcriptional_NN response_NN of_IN lymphoblastoid_NN cells_NNS to_TO
+        ionizing_VBG radiation_NN ,_, and_CC they_PRP were_VBD successful_JJ in_IN identifying_VBG
+        34_CD biologically_RB meaningful_JJ genes_NNS ._. A_DT different_JJ algorithm_NN ,_,
+        proposed_VBN by_IN Westfall_NNP and_CC Young_NNP and_CC adapted_VBN by_IN Dudoit_NNP 
+        et_CC al_NN ._. [_NN 7_CD ]_NN for_IN microarrays_NNS ,_, tackles_VBZ
+        the_DT multiple_JJ testing_NN problem_NN from_IN a_DT different_JJ angle_NN ._. It_PRP
+        controls_VBZ the_DT family-wise_JJ Type_NNP I_PRP error_NN rate_NN (_( FWER_NNP )_) ,_, which_WDT is_VBZ
+        the_DT probability_NN of_IN having_VBG at_IN least_JJS one_CD false_JJ positive_NN among_IN
+        all_DT hypotheses_NNS tested_VBN ._. It_PRP provides_VBZ less_RBR conservative_JJ
+        control_NN than_IN the_DT traditional_JJ Bonferroni_NNP ,_, Šidák_NN ,_, and_CC Holm_NNP
+        corrections_NNS and_CC is_VBZ able_JJ to_TO handle_VB the_DT dependence_NN (_( e_SYM ._. g_SYM ._.
+        co-regulation_JJ )_) among_IN gene_NN expression_NN profiles_NNS ._. In_IN a_DT study_NN
+        that_WDT tested_VBD whether_IN alterations_NNS in_IN the_DT expression_NN of_IN genes_NNS
+        related_VBN to_TO high-density_JJ lipoprotein_NN metabolism_NN affects_VBZ the_DT
+        expression_NN of_IN other_JJ genes_NNS ,_, multiple-testing_JJ methods_NNS
+        identified_VBD 5_CD genes_NNS that_WDT showed_VBD significant_JJ altered_VBN
+        expression_NN levels_NNS in_IN scavenger_NN receptor_NN BI_NNP transgenic_JJ mice_NNS
+        and_CC 4_CD genes_NNS in_IN apolipoprotein_NN AI-knockout_NNP mice_NNS [_NN 8_CD ]_NN ._.
+        Further_RB discussions_NNS ,_, additional_JJ approaches_NNS and_CC comparisons_NNS
+        can_MD be_VB found_VBN at_IN [_NN 9_CD ]_NN ._.
+        In_IN the_DT comparison_NN of_IN expression_NN levels_NNS of_IN more_JJR than_IN 5000_CD
+        probe_NN sets_NNS between_IN normal_JJ subjects_NNS and_CC brachial_NN plexus_JJ
+        injury_NN patients_NNS ,_, we_PRP adopt_VBP both_DT SAM_NNP and_CC Westfall_NNP &_CC Young_NNP
+        algorithms_NNS using_VBG regular_JJ 
+        t_NN statistics_NNS assuming_VBG equal_JJ variances_NNS
+        and_CC 
+        t_NN statistics_NNS assuming_VBG unequal_JJ
+        variances_NNS (_( hereafter_RB called_VBN Welch_NNP statistics_NNS )_) ._. The_DT
+        application_NN of_IN Welch_NNP statistics_NNS is_VBZ motivated_VBN by_IN the_DT work_NN of_IN
+        Thomas_NNP ,_, 
+        et_CC al_NN ._. [_NN 10_CD ]_NN ._. In_IN their_PRP$ paper_NN ,_, they_PRP
+        applied_VBD Welch_NNP tests_NNS on_IN a_DT leukemia_NN dataset_NN [_NN 11_CD ]_NN and_CC
+        demonstrated_VBD the_DT importance_NN of_IN allowing_VBG for_IN unequal_JJ
+        variances_NNS ._. Following_VBG a_DT similar_JJ approach_NN ,_, we_PRP have_VBP identified_VBN
+        a_DT set_NN of_IN known_VBN and_CC novel_NN genes_NNS that_WDT largely_RB fall_NN into_IN six_CD
+        categories_NNS :_: cytokines_NNS /_NN neurotrophine_NN ,_, myelin_NN function_NN ,_,
+        signal_NN transduction_NN ,_, cytoskeleton_NN ,_, transcription_NN /_NN
+        translation_NN and_CC others_NNS ._. Some_DT genes_NNS are_VBP confirmed_VBN by_IN
+        literature_NN ;_: others_NNS still_RB require_VBP explanation_NN and_CC future_JJ
+        research_NN ._. We_PRP also_RB compared_VBD the_DT performance_NN of_IN SAM_NNP and_CC
+        Westfall_NNP &_CC Young_NNP algorithms_NNS ,_, as_RB well_RB as_IN 
+        t_NN statistics_NNS and_CC Welch_NNP statistics_NNS ._. In_IN
+        this_DT study_NN ,_, we_PRP hope_VBP to_TO provide_VB a_DT framework_NN for_IN future_JJ
+        experimental_JJ research_NN in_IN avulsion_NN injuries_NNS and_CC pain_NN ._. In_IN
+        addition_NN ,_, we_PRP illustrated_VBD the_DT use_NN of_IN appropriate_JJ multiple_JJ
+        testing_NN methods_NNS for_IN microarrays_NNS in_IN monitoring_VBG differential_NN
+        gene_NN expression_NN between_IN different_JJ biological_JJ states_NNS ._.
+      
+      
+        Results_NNS
+        
+          Data_NNP displays_NNS for_IN test_NN statistics_NNS
+          Figure_NN 1_CD is_VBZ a_DT scatter_NN plot_NN of_IN the_DT intensity_NN readings_NNS
+          for_IN a_DT patient_NN (_( P_NN 15_CD )_) and_CC the_DT corresponding_JJ readings_NNS of_IN a_DT
+          control_NN (_( C_NNP 1_LS )_) ._. The_DT considerable_JJ deviation_NN from_IN the_DT
+          identity_NN line_NN indicates_VBZ that_DT gene_NN expression_NN is_VBZ
+          substantially_RB disturbed_VBN as_IN a_DT consequence_NN of_IN the_DT avulsion_NN
+          injury_NN ._. For_IN comparison_NN ,_, the_DT scatter_NN plots_NNS for_IN a_DT pair_NN of_IN
+          control_NN and_CC a_DT pair_NN of_IN patient_NN data_NNS sets_NNS clearly_RB show_VBP less_JJR
+          deviation_NN ._.
+          The_DT frequency_NN distribution_NN of_IN 
+          t_NN statistics_NNS and_CC the_DT normal_JJ Q-Q_NNP
+          plot_NN for_IN 
+          t_NN -_: statistics_NNS are_VBP provided_VBN in_IN
+          Figure_NN 2_CD ._. Both_DT the_DT histogram_NN and_CC the_DT Q-Q_NNP plot_NN show_NN that_IN
+          the_DT distribution_NN of_IN 
+          t_NN -_: statistics_NNS is_VBZ not_RB normal_JJ ._.
+          However_RB ,_, in_IN our_PRP$ study_NN we_PRP are_VBP more_RBR interested_JJ in_IN
+          identifying_VBG genes_NNS with_IN substantial_JJ 
+          t_NN -_: statistics_NNS than_IN in_IN testing_VBG the_DT
+          distribution_NN of_IN 
+          t_NN -_: statistics_NNS ._. The_DT genes_NNS having_VBG 
+          t_NN -_: statistics_NNS that_WDT deviate_NN markedly_RB
+          from_IN the_DT bulk_NN of_IN the_DT observations_NNS were_VBD labeled_VBN as_RB
+          potentially_RB having_VBG biological_JJ significance_NN and_CC may_MD
+          deserve_VB further_JJ investigation_NN [_NN 8_CD ]_NN ._. Plots_NNP of_IN 
+          t_NN -_: statistics_NNS against_IN average_JJ
+          intensities_NNS and_CC different_JJ components_NNS of_IN 
+          t_NN -_: statistics_NNS against_IN each_DT other_JJ
+          (_( Figure_NN 3_LS )_) are_VBP especially_RB useful_JJ in_IN identifying_VBG genes_NNS
+          with_IN substantial_JJ statistics_NNS and_CC in_IN studying_VBG the_DT features_NNS
+          of_IN these_DT genes_NNS [_NN 7_CD ]_NN ._. The_DT average_JJ intensity_NN for_IN each_DT
+          gene_NN is_VBZ the_DT average_NN of_IN the_DT mean_JJ expression_NN level_NN for_IN the_DT
+          patient_NN and_CC the_DT control_NN groups_NNS ._. In_IN Figure_NN 3_CD ,_, large_JJ 
+          t_NN -_: statistics_NNS were_VBD easily_RB
+          visualized_JJ and_CC labeled_VBN in_IN red_NN ._. They_PRP correspond_VB to_TO the_DT
+          same_JJ genes_NNS identified_VBN as_IN outliers_NNS in_IN the_DT Q-Q_NNP plot_NN (_( Figure_NN
+          2_LS )_) ._. The_DT six_CD genes_NNS that_WDT have_VBP the_DT largest_JJS 
+          t_NN -_: statistics_NNS do_VBP so_RB by_IN virtue_NN of_IN
+          having_VBG denominators_NNS close_RB to_TO zero_CD ,_, implying_VBG near_IN constant_JJ
+          expression_NN levels_NNS ._. Further_RB ,_, their_PRP$ expression_NN levels_NNS are_VBP
+          observed_VBN to_TO be_VB very_RB low_JJ ._. Consequently_RB ,_, these_DT genes_NNS might_MD
+          be_VB of_IN little_RB biological_JJ interest_NN ._. In_IN order_NN to_TO more_RBR
+          systematically_RB evaluate_VB differential_NN expression_NN and_CC
+          complement_VB these_DT graphical_JJ approaches_NNS ,_, we_PRP next_JJ apply_VB
+          SAM_NNP ._.
+        
+        
+          Application_NNP of_IN SAM_NNP :_: t-_NN SAM_NNP and_CC Welch-_NNP SAM_NNP
+          
+            t-_NN SAM_NNP
+            
+              Experimental_NNP outline_VB
+              We_PRP used_VBD the_DT SAM_NNP methodology_NN to_TO identify_VB genes_NNS with_IN
+              statistically_RB significant_JJ changes_NNS in_IN expression_NN ._. For_IN
+              the_DT 
+              i_NNP thgene_NN a_DT modified_VBN 
+              t_NN -_: statistic_NN ,_, 
+              d_SYM (_( i_NNP )_) ,_, was_VBD used_VBN to_TO quantitate_NN
+              differential_NN expression_NN ._.
+              
+              All_DT quantities_NNS here_RB and_CC below_RB are_VBP defined_VBN in_IN the_DT
+              Methods_NNP section_NN ._. The_DT 
+              s_VBZ 
+              0_CD factor_NN was_VBD added_VBN to_TO help_VB ensure_VB
+              that_IN the_DT variance_NN of_IN 
+              d_SYM (_( i_NNP )_) is_VBZ independent_JJ of_IN gene_NN
+              expression_NN level_NN and_CC to_TO mitigate_VB problems_NNS caused_VBN by_IN
+              small_JJ denominators_NNS ._. A_DT similar_JJ strategy_NN derived_VBN from_IN a_DT
+              Bayesian_NNP approach_NN is_VBZ detailed_VBN in_IN [_NN 12_CD ]_NN ._. In_IN order_NN to_TO
+              select_VB an_DT appropriate_JJ 
+              s_VBZ 
+              0_CD value_NN for_IN this_DT dataset_NN ,_, we_PRP
+              plotted_VBD Δ_NN against_IN FDR_NNP using_VBG different_JJ values_NNS of_IN 
+              s_VBZ 
+              0_CD ._. Figure_NN 4_CD shows_VBZ that_DT calculating_VBG
+              
+              s_VBZ 
+              0_CD according_VBG to_TO the_DT Tusher_NNP ,_, 
+              et_CC al_NN ._. prescription_NN yields_VBZ a_DT
+              value_NN equal_JJ to_TO the_DT minimum_NN of_IN the_DT pooled_VBN standard_JJ
+              deviations_NNS over_IN all_PDT the_DT genes_NNS ,_, which_WDT fails_VBZ to_TO reduce_VB
+              FDRs_NNP ._. We_PRP therefore_RB elected_VBD to_TO set_VB 
+              s_VBZ 
+              0_CD at_IN the_DT 5_CD thpercentile_NN of_IN the_DT
+              pooled_VBN standard_JJ deviations_NNS (_( 
+              s_VBZ 
+              0_CD =_SYM 2_CD ._. 8_CD )_) ;_: this_DT choice_NN does_VBZ reduce_VB
+              FDR_NNP ._.
+              As_IN Δ_NN increases_NNS ,_, the_DT number_NN of_IN significant_JJ genes_NNS
+              decreases_NNS ,_, but_CC at_IN the_DT same_JJ time_NN the_DT percentage_NN of_IN
+              falsely_RB called_VBN genes_NNS also_RB decreases_VBZ ._. The_DT curve_NN of_IN FDR_NNP
+              vs_NNS ._. Δ_NN in_IN Figure_NN 4_CD shows_VBZ that_IN FDR_NNP generally_RB decreases_VBZ
+              monotonically_RB as_IN Δ_NN increases_NNS ,_, but_CC from_IN some_DT Δ_NN on_IN the_DT
+              decrease_NN flattens_NNS markedly_RB (_( see_VB also_RB Table_NNP 1_LS )_) ._. The_DT
+              choice_NN of_IN Δ_NN is_VBZ somewhat_RB arbitrary_JJ ,_, but_CC is_VBZ driven_VBN by_IN
+              choosing_VBG an_DT acceptable_JJ FDR_NNP and_CC an_DT appropriate_JJ number_NN
+              of_IN significant_JJ genes_NNS ._. We_PRP choose_VBP Δ_NN =_SYM 12_CD ,_, corresponding_JJ
+              to_TO an_DT FDR_NNP at_IN 18_CD %_NN ._. This_DT yields_VBZ a_DT set_NN of_IN 73_CD significant_JJ
+              genes_NNS that_WDT are_VBP described_VBN next_JJ ._. Not_RB surprisingly_RB ,_, the_DT
+              concordance_NN between_IN genes_NNS identified_VBN via_IN graphical_JJ
+              methods_NNS and_CC those_DT selected_VBN by_IN SAM_NNP is_VBZ high_JJ ._.
+            
+            
+              Genes_NNP identified_VBN by_IN t-_NN SAM_NNP
+              
+                Cytokines_NNP /_NN Neurotrophines_NNP
+                Mild_NNP tissue_NN damage_NN ,_, nerve_NN damage_NN and_CC infection_NN
+                produce_NN inflammation_NN and_CC associated_VBN pain_NN ._. This_DT
+                results_NNS in_IN the_DT migration_NN of_IN immune_JJ cells_NNS to_TO the_DT
+                site_NN of_IN injury_NN ,_, which_WDT is_VBZ followed_VBN by_IN release_NN of_IN
+                cytokines_NNS [_NN 13_CD ]_NN ._. Five_CD genes_NNS identified_VBN as_IN
+                significant_JJ by_IN 
+                t_NN -_: SAM_NNP have_VBP been_VBN reported_VBN in_IN
+                the_DT literature_NN as_IN relevant_JJ to_TO the_DT inflammation_NN and_CC
+                pain_NN pathways_NNS ._. Interleukine_NNP 13_CD inhibits_NNS
+                inflammatory_JJ cytokine_NN production_NN ._. Midkine_NNP is_VBZ
+                associated_VBN with_IN neurite_NN growth_NN and_CC was_VBD recently_RB
+                discovered_VBN to_TO have_VB potent_JJ neuroprotective_JJ activity_NN
+                in_IN vivo_NN [_NN 14_CD ]_NN ._. IGFBP_NNP 6_CD plays_VBZ a_DT significant_JJ role_NN in_IN
+                the_DT differentiation_NN ,_, maintenance_NN and_CC regeneration_NN
+                of_IN the_DT central_JJ cholinergic_JJ neurons_NNS [_NN 15_CD ]_NN ._.
+                Cysteine-rich_NNP fibroblast_NN growth_NN factor_NN receptor_NN is_VBZ
+                also_RB implicated_VBN in_IN neuronal_NN growth_NN and_CC
+                differentiation_NN ._. TrkA_NNP plays_VBZ a_DT crucial_JJ role_NN in_IN the_DT
+                development_NN and_CC function_NN of_IN the_DT nociceptive_JJ
+                reception_NN system_NN ._.
+              
+              
+                Myelin_NNP function_NN
+                Three_CD genes_NNS were_VBD identified_VBN that_WDT are_VBP involved_VBN in_IN
+                myelin_NN structure_NN and_CC myelination_NN :_: MPZ_NNP (_( myelin_NN
+                protein_NN zero_CD )_) ,_, PLP_NNP 1_CD (_( myelin_NN proteolipid_NN protein_NN 1_LS )_)
+                and_CC MBP_NNP (_( myelin_NN basic_JJ protein_NN )_) ._. Defects_NNP in_IN these_DT
+                genes_NNS are_VBP the_DT cause_NN of_IN demyelinating_VBG
+                neuropathies_NNS ._.
+              
+              
+                Signal_NNP transduction_NN
+                PKC_NNP and_CC Frizzled_NNP play_VBP roles_NNS in_IN apoptosis_NNS ._. The_DT
+                down_JJ regulation_NN of_IN both_DT might_MD represent_VB a_DT cellular_JJ
+                response_NN to_TO prevent_VB neurons_NNS from_IN death_NN ._.
+              
+              
+                Cytoskeleton_NNP
+                Three_CD genes_NNS :_: Myosin_NNP light_JJ chain_NN ,_, Myosin_NNP heavy_JJ
+                chain_NN and_CC MLCK_NNP (_( Myosin_NNP light-chain_JJ kinase_NN )_) are_VBP
+                notable_JJ in_IN this_DT category_NN ._. The_DT altered_VBN expression_NN of_IN
+                them_PRP together_RB suggests_VBZ a_DT probable_JJ link_NN between_IN
+                calcium_NN signaling_VBG and_CC rearrangement_NN of_IN the_DT
+                cytoskeleton_NN ,_, possibly_RB leading_VBG to_TO long-term_JJ changes_NNS
+                in_IN neuronal_NN morphology_NN ._.
+              
+              
+                Others_NNS
+                MT-III_NNP has_VBZ been_VBN recently_RB implicated_VBN as_IN being_VBG
+                involved_VBN in_IN sensory_JJ and_CC nociceptive_JJ transmission_NN [_NN
+                16_CD ]_NN ._. Its_PRP$ down_RB regulation_NN might_MD also_RB lead_VB to_TO
+                promotion_NN of_IN neurite_NN extension_NN to_TO promote_VB recovery_NN
+                in_IN the_DT patients_NNS ._.
+              
+            
+          
+          
+            Welch-_NNP SAM_NNP
+            Thomas_NNP ,_, 
+            et_CC al_NN ._. [_NN 10_CD ]_NN showed_VBD that_IN in_IN the_DT
+            two-group_JJ microarray_NN study_NN setting_VBG the_DT 
+            t_NN -_: statistic_NN assumption_NN of_IN equal_JJ
+            variances_NNS between_IN the_DT two_CD groups_NNS could_MD result_VB in_IN poor_JJ
+            performance_NN ._. We_PRP therefore_RB extended_VBD the_DT SAM_NNP framework_NN to_TO
+            include_VB Welch_NNP statistics_NNS ._. Under_IN the_DT assumption_NN of_IN
+            unequal_JJ variances_NNS ,_, the_DT associated_VBN degrees_NNS of_IN freedom_NN
+            are_VBP variable_JJ ,_, and_CC the_DT strict_JJ monotonic_JJ decreasing_VBG
+            relationship_NN between_IN 
+            p_NN values_NNS and_CC test_NN statistic_NN
+            values_NNS no_RB longer_RB holds_VBZ ._. Accordingly_RB ,_, it_PRP is_VBZ misplaced_VBN to_TO
+            use_VB the_DT values_NNS of_IN the_DT statistics_NNS under_IN permutation_NN ._.
+            Rather_RB ,_, for_IN each_DT data_NNS permutation_NN ,_, we_PRP standardized_JJ the_DT
+            Welch_NNP statistic_NN using_VBG an_DT appropriate_JJ 
+            t_NN referent_NN distribution_NN and_CC used_VBD
+            the_DT resultant_JJ "_'' 
+            p_NN values_NNS "_'' as_IN described_VBN in_IN the_DT
+            Method_NNP section_NN ;_: see_VB also_RB Westfall_NNP and_CC Young_NNP [_NN 17_CD ]_NN ._. By_IN
+            so_RB taking_VBG into_IN account_NN between-group_JJ heterogeneity_NN ,_,
+            Welch-_NNP SAM_NNP identified_VBD a_DT set_NN of_IN up_RB regulated_VBN genes_NNS that_WDT
+            were_VBD not_RB detected_VBN by_IN 
+            t_NN -_: SAM_NNP ._. Several_JJ of_IN these_DT up_RB
+            regulated_VBN genes_NNS are_VBP engaged_VBN in_IN transcription_NN and_CC
+            translation_NN regulation_NN :_: transcription_NN factor_NN AP-_NNP 4_CD ,_,
+            transcriptional_NN coactivator_NN Pc_NNP 4_CD ,_, Nrf_NNP 2_CD ,_, EIF_NNP 5_CD (_( Eukaryotic_NNP
+            translation_NN initiation_NN factor_NN 5_LS )_) ,_, and_CC PABPL_NNP 1_CD
+            (_( polyadenylate-binding_JJ protein_NN 1_LS )_) ._. In_IN addition_NN ,_, two_CD
+            genes_NNS are_VBP involved_VBN in_IN cell_NN cycle_NN regulation_NN :_:
+            Autoantigen_NNP pericentriol_NN material_NN and_CC CDC-like_NNP kinase_NN ._.
+            Their_PRP$ identification_NN suggests_VBZ a_DT secondary_JJ mechanism_NN to_TO
+            repair_VB the_DT damaged_JJ cells_NNS ._. The_DT entire_JJ list_NN of_IN genes_NNS
+            identified_VBN by_IN 
+            t_NN -_: SAM_NNP and_CC Welch-_NNP SAM_NNP can_MD be_VB found_VBN
+            at_IN [_NN 2_CD ]_NN ._.
+          
+          
+            t-_NN SAM_NNP vs_NNS ._. Welch-_NNP SAM_NNP
+            The_DT relationship_NN between_IN FDR_NNP and_CC Δ_NN for_IN Welch_NNP is_VBZ also_RB
+            included_VBN in_IN Figure_NN 4_CD ._. The_DT un-pooled_JJ variance_NN in_IN the_DT
+            denominator_NN of_IN Welch_NNP statistic_NN is_VBZ highly_RB unstable_JJ under_IN
+            permutation_NN in_IN this_DT small_JJ sample_NN setting_NN ._. Consequently_RB ,_,
+            FDR_NNP for_IN Welch-_NNP SAM_NNP is_VBZ not_RB a_DT smooth_JJ function_NN of_IN Δ_NN ,_, as_IN is_VBZ
+            the_DT case_NN of_IN 
+            t_NN -_: SAM_NNP ._. FDR_NNP values_NNS for_IN selected_VBN
+            Δs_NNS for_IN both_DT 
+            t_NN -_: SAM_NNP and_CC Welch-_NNP SAM_NNP when_WRB 
+            s_VBZ 
+            0_CD was_VBD chosen_VBN at_IN the_DT 5_CD thpercentile_NN
+            of_IN standard_JJ deviations_NNS ,_, are_VBP listed_VBN in_IN Table_NNP 1_CD along_IN with_IN
+            corresponding_JJ numbers_NNS of_IN significant_JJ genes_NNS and_CC false_JJ
+            positives_NNS ._.
+          
+        
+        
+          Application_NNP of_IN Westfall_NNP and_CC Young_NNP step-down_JJ
+          adjusted_VBD pvalues_NNS
+          Westfall_NNP and_CC Young_NNP 's_POS step-down_JJ adjusted_VBN 
+          p_NN values_NNS were_VBD calculated_VBN using_VBG both_DT
+          
+          t_NN -_: statistics_NNS and_CC Welch_NNP statistics_NNS ._.
+          As_IN before_RB ,_, the_DT Welch_NNP statistics_NNS and_CC 
+          p_NN values_NNS are_VBP not_RB monotonely_RB related_VBN
+          because_IN of_IN the_DT variation_NN in_IN degrees_NNS of_IN freedom_NN ._. So_RB ,_, we_PRP
+          again_RB calibrated_VBN the_DT Welch_NNP statistic_NN against_IN the_DT
+          appropriate_JJ 
+          t_NN referent_NN distribution_NN and_CC
+          determined_VBN (_( unadjusted_JJ )_) "_'' 
+          p_NN values_NNS "_'' for_IN each_DT permutation_NN ._. The_DT
+          smallest_JJS Westfall_NNP and_CC Young_NNP adjusted_VBD 
+          p_NN values_NNS for_IN 
+          t_NN and_CC Welch_NNP statistics_NNS were_VBD 0_CD ._. 053_CD ,_,
+          0_CD ._. 042_CD respectively_RB ._. Figure_NN 5_CD illustrates_VBZ the_DT relationship_NN
+          between_IN adjusted_VBN 
+          p_NN values_NNS and_CC the_DT number_NN of_IN genes_NNS
+          being_VBG tested_VBN ._. A_DT small_JJ simulation_NN shows_VBZ that_IN this_DT
+          relationship_NN is_VBZ governed_VBN by_IN the_DT number_NN of_IN true_JJ null_NN
+          hypotheses_NNS in_IN the_DT tests_NNS (_( unpublished_JJ data_NNS )_) ._. Profiles_NNP for_IN
+          nine_CD selected_VBN genes_NNS are_VBP displayed_VBN ;_: 
+          t_NN -_: statistics_NNS are_VBP presented_VBN in_IN
+          Figure_NN 5_CD Aand_NNP Welch-statistics_NNP in_IN Figure_NN 5_CD B_NNP ._. For_IN each_DT
+          gene_NN ,_, the_DT adjusted_VBN 
+          p_NN value_NN increased_VBD with_IN the_DT increase_NN
+          of_IN the_DT number_NN of_IN null_NN genes_NNS being_VBG tested_VBN ._. Genes_NNP with_IN
+          smaller_JJR statistics_NNS had_VBD greater_JJR adjusted_JJ 
+          p_NN values_NNS and_CC their_PRP$ adjusted_VBN 
+          p_NN values_NNS increased_VBN at_IN a_DT greater_JJR
+          rate_NN when_WRB the_DT number_NN of_IN null_NN genes_NNS being_VBG tested_VBN was_VBD
+          larger_JJR ._.
+        
+      
+      
+        Discussion_NNP
+        
+          FWER_NNP vs_NNS ._. FDR_NNP
+          In_IN a_DT single_JJ hypothesis_NNS test_NN ,_, a_DT Type_NNP I_PRP error_NN occurs_VBZ
+          when_WRB a_DT true_JJ hypothesis_NNS is_VBZ rejected_VBN ._. In_IN multiple_JJ testing_NN ,_,
+          FWER_NNP refers_VBZ to_TO the_DT probability_NN of_IN rejection_NN of_IN any_DT true_JJ
+          hypothesis_NNS ._. When_WRB many_JJ hypotheses_NNS are_VBP tested_VBN ,_, such_JJ as_IN
+          expression_NN data_NNS of_IN thousands_NNS of_IN genes_NNS being_VBG compared_VBN
+          between_IN different_JJ groups_NNS ,_, FWER_NNP increases_NNS dramatically_RB ,_,
+          and_CC is_VBZ typically_RB much_RB larger_JJR than_IN the_DT significance_NN level_NN
+          at_IN which_WDT the_DT individual_JJ hypotheses_NNS are_VBP tested_VBN ._.
+          As_IN defined_VBN by_IN Shaffer_NNP ,_, given_VBN any_DT test_NN procedure_NN ,_, an_DT
+          adjusted_VBN 
+          p_NN value_NN corresponding_JJ to_TO the_DT test_NN
+          of_IN a_DT single_JJ hypothesis_NNS H_NNP 
+          j_NN is_VBZ the_DT level_NN of_IN the_DT entire_JJ test_NN
+          procedure_NN at_IN which_WDT H_NNP 
+          j_NN would_MD just_RB be_VB rejected_VBN ,_, given_VBN the_DT
+          values_NNS of_IN all_DT test_NN statistics_NNS involved_VBD [_NN 18_CD ]_NN ._. Several_JJ
+          approaches_NNS have_VBP been_VBN proposed_VBN to_TO calculate_VB adjusted_VBN 
+          p_NN values_NNS for_IN the_DT purpose_NN of_IN
+          providing_VBG control_NN of_IN FWER_NNP ._. Among_IN these_DT ,_, the_DT method_NN
+          developed_VBN by_IN Westfall_NNP and_CC Young_NNP is_VBZ best_RBS suited_VBN for_IN
+          microarray_NN data_NNS analysis_NN ._. It_PRP is_VBZ superior_JJ to_TO the_DT
+          single-step_JJ methods_NNS proposed_VBN by_IN Bonferroni_NNP and_CC Šidák_NN by_IN
+          allowing_VBG different_JJ 
+          p_NN values_NNS to_TO be_VB adjusted_VBN
+          differently_RB ;_: therefore_RB the_DT power_NN of_IN the_DT procedure_NN is_VBZ
+          improved_VBN ._. It_PRP is_VBZ also_RB able_JJ to_TO take_VB into_IN account_NN the_DT
+          dependence_NN structure_NN between_IN variables_NNS ._. In_IN a_DT biological_JJ
+          system_NN ,_, expression_NN levels_NNS of_IN groups_NNS of_IN genes_NNS may_MD
+          correlate_VBP with_IN each_DT other_JJ for_IN various_JJ reasons_NNS such_JJ as_IN
+          co-regulation_JJ ._.
+          However_RB ,_, when_WRB the_DT Westfall_NNP and_CC Young_NNP 's_POS permutation_NN
+          algorithm_NN was_VBD applied_VBN to_TO calculate_VB step-down_JJ adjusted_VBN 
+          p_NN values_NNS in_IN our_PRP$ dataset_NN ,_, only_RB one_CD
+          of_IN the_DT adjusted_VBN 
+          p_NN values_NNS from_IN Welch_NNP statistics_NNS
+          reached_VBD a_DT conventional_JJ significance_NN level_NN of_IN 0_CD ._. 05_CD ._. A_DT few_JJ
+          factors_NNS might_MD contribute_VB to_TO the_DT absence_NN of_IN adjusted_VBN 
+          p_NN values_NNS at_IN that_DT significance_NN
+          level_NN ._. First_LS and_CC foremost_RB ,_, the_DT small_JJ sample_NN sizes_NNS are_VBP
+          limiting_VBG ._. Furthermore_RB ,_, the_DT unbalanced_JJ allocation_NN of_IN (_( 10_CD )_)
+          patients_NNS and_CC (_( 3_LS )_) controls_NNS limits_VBZ the_DT precision_NN of_IN the_DT
+          adjusted_VBN 
+          p_NN values_NNS ._. The_DT number_NN of_IN
+          permutations_NNS we_PRP can_MD do_VB is_VBZ only_RB 285_CD ._. A_DT more_RBR balanced_JJ
+          experimental_JJ design_NN will_MD increase_VB the_DT number_NN to_TO 1715_CD (_( 13_CD
+          choose_VB 6_CD ,_, then_RB minus_CC 1_LS )_) ._. Second_JJ ,_, the_DT vast_JJ majority_NN of_IN
+          genes_NNS are_VBP expressed_VBN at_IN low_JJ levels_NNS ,_, as_IN depicted_VBN in_IN Figure_NN
+          3_CD ,_, where_WRB biological_JJ signals_NNS may_MD become_VB indistinguishable_JJ
+          from_IN noise_NN ._. For_IN those_DT cases_NNS where_WRB the_DT difference_NN in_IN mean_NN
+          expression_NN levels_NNS is_VBZ small_JJ ,_, a_DT pooled_VBN standard_JJ deviation_NN
+          that_WDT is_VBZ also_RB small_JJ can_MD give_VB rise_NN to_TO a_DT significant_JJ
+          statistic_NN ,_, where_WRB in_IN fact_NN no_DT difference_NN exists_VBZ ._. Third_NNP ,_,
+          Figure_NN 5_CD shows_VBZ that_WDT adjusted_VBD 
+          p_NN values_NNS are_VBP sensitive_JJ to_TO the_DT
+          number_NN of_IN null_NN genes_NNS being_VBG tested_VBN ._. Given_VBN that_IN many_JJ genes_NNS
+          are_VBP likely_JJ to_TO be_VB irrelevant_JJ to_TO the_DT biological_JJ processes_VBZ
+          underlying_VBG the_DT brachial_NN plexus_JJ injuries_NNS and_CC hence_RB are_VBP
+          expected_VBN to_TO show_VB little_JJ difference_NN in_IN their_PRP$ expression_NN
+          levels_NNS between_IN injured_VBN patients_NNS and_CC control_NN subjects_NNS ,_, it_PRP
+          is_VBZ not_RB surprising_VBG that_IN no_DT significant_JJ result_NN was_VBD obtained_VBN
+          for_IN 
+          t_NN -_: SAM_NNP when_WRB applying_VBG the_DT complete_JJ
+          data_NN set_VBN ._. In_IN Figure_NN 5_CD we_PRP also_RB try_VBP to_TO illustrate_VB the_DT
+          potential_JJ abuse_NN of_IN using_VBG filtered_VBN gene_NN subsets_NNS (_( based_VBN on_IN
+          statistics_NNS measuring_VBG differential_NN expression_NN )_) to_TO achieve_VB
+          significant_JJ results_NNS ,_, given_VBN that_IN such_JJ filtering_VBG is_VBZ
+          commonplace_JJ in_IN microarray_NN literature_NN ._. Last_JJ ,_, although_IN
+          Westfall_NNP and_CC Young_NNP 's_POS algorithm_NN is_VBZ more_RBR powerful_JJ than_IN
+          Bonferroni_NNP ,_, Šidák_NN ,_, and_CC Holm_NNP adjustments_NNS by_IN taking_VBG into_IN
+          account_NN the_DT joint_JJ distribution_NN of_IN the_DT test_NN statistics_NNS ,_, it_PRP
+          may_MD still_RB be_VB too_RB stringent_JJ ._. The_DT same_JJ result_NN also_RB occurred_VBD
+          for_IN Tusher_NNP ,_, 
+          et_CC al_NN ._. [_NN 3_CD ]_NN when_WRB applying_VBG this_DT
+          algorithm_NN to_TO study_VB the_DT transcriptional_NN response_NN of_IN
+          lymphoblastoid_NN cells_NNS to_TO ionizing_VBG radiation_NN ._. A_DT less_RBR
+          stringent_JJ method_NN may_MD therefore_RB be_VB needed_VBN to_TO analyze_VB
+          microaray_NN data_NNS ._.
+          The_DT FDR_NNP provides_VBZ a_DT different_JJ point_NN of_IN view_NN on_IN how_WRB the_DT
+          errors_NNS in_IN multiple_JJ testing_NN should_MD be_VB controlled_VBN ._. Having_VBG
+          many_JJ hypotheses_NNS rejected_VBD signals_NNS clearly_RB that_IN many_JJ
+          hypotheses_NNS are_VBP not_RB true_JJ ._. It_PRP is_VBZ therefore_RB more_RBR crucial_JJ to_TO
+          control_VB the_DT rate_NN of_IN false_JJ positives_NNS among_IN all_DT rejected_VBN
+          hypotheses_NNS than_IN the_DT probability_NN of_IN one_CD single_JJ erroneous_JJ
+          rejection_NN ._. It_PRP might_MD thus_RB be_VB argued_VBN that_IN the_DT control_NN of_IN
+          FDR_NNP is_VBZ a_DT more_RBR appropriate_JJ approach_NN to_TO dealing_VBG with_IN the_DT
+          multiplicity_NN concern_NN ._. That_DT argument_NN is_VBZ especially_RB true_JJ in_IN
+          the_DT setting_NN of_IN microarray_NN data_NNS analysis_NN ,_, where_WRB one_CD is_VBZ
+          more_RBR interested_JJ in_IN studying_VBG as_IN many_JJ relevant_JJ genes_NNS as_IN
+          possible_JJ ,_, and_CC less_RBR interested_JJ in_IN sacrificing_VBG possible_JJ
+          targets_NNS for_IN the_DT concern_NN of_IN making_VBG one_CD mistake_NN [_NN 6_CD ]_NN ._. The_DT
+          algorithm_NN of_IN SAM_NNP proposed_VBN by_IN Tusher_NNP ,_, 
+          et_CC al_NN ._. [_NN 3_CD ]_NN provides_VBZ an_DT estimate_NN
+          of_IN the_DT FDR_NNP for_IN each_DT value_NN of_IN the_DT parameter_NN Δ_NN in_IN the_DT
+          application_NN of_IN microarray_NN settings_NNS ._. The_DT estimated_VBN FDR_NNP is_VBZ
+          computed_JJ from_IN permutation_NN of_IN the_DT data_NNS and_CC allows_VBZ for_IN the_DT
+          possibility_NN of_IN dependent_JJ tests_NNS [_NN 3_CD ]_NN ._. We_PRP derived_VBD a_DT set_NN
+          of_IN 73_CD significant_JJ genes_NNS using_VBG SAM_NNP ,_, out_IN of_IN which_WDT 13_CD were_VBD
+          false_JJ positives_NNS ,_, giving_VBG rise_NN to_TO a_DT FDR_NNP of_IN 18_CD %_NN ._. Although_IN
+          SAM_NNP is_VBZ not_RB able_JJ to_TO disclose_VB the_DT identities_NNS of_IN these_DT false_JJ
+          positives_NNS ,_, it_PRP does_VBZ provide_VB biologists_NNS a_DT reasonable_JJ set_NN of_IN
+          potential_JJ target_NN genes_NNS and_CC a_DT sense_NN of_IN the_DT trustworthiness_NNS
+          of_IN the_DT outcome_NN ._. By_IN estimating_VBG FDR_NNP by_IN permutations_NNS of_IN the_DT
+          data_NNS ,_, SAM_NNP assumes_VBZ that_IN all_DT null_NN hypotheses_NNS are_VBP true_JJ ;_:
+          hence_RB the_DT estimated_VBN FDR_NNP is_VBZ biased_VBN upward_RB ._. Storey_NNP and_CC
+          Tibshirani_NNP tackled_VBN this_DT problem_NN by_IN multiplying_VBG FDR_NNP by_IN an_DT
+          estimate_NN of_IN the_DT proportion_NN of_IN true_JJ null_NN hypotheses_NNS ,_, π_NN 
+          0_CD ._. A_DT detailed_VBN description_NN of_IN the_DT
+          algorithm_NN can_MD be_VB found_VBN in_IN Storey_NNP and_CC Tibshirani_NNP [_NN 6_CD ]_NN ._.
+          Following_VBG their_PRP$ approach_NN ,_, the_DT 18_CD %_NN false_JJ discovery_NN rate_NN is_VBZ
+          lowered_VBN to_TO about_IN 13_CD %_NN by_IN assuming_VBG that_IN not_RB all_DT hypotheses_NNS
+          are_VBP null_NN ._. Further_RB recent_JJ comparisons_NNS of_IN multiple_JJ testing_NN
+          procedures_NNS are_VBP provided_VBN by_IN Holland_NNP and_CC Cheung_NNP [_NN 19_CD ]_NN
+          ._.
+        
+        
+          t-statistics_JJ vs_NNS ._. Welch_NNP statistics_NNS
+          We_PRP applied_VBD both_DT 
+          t_NN -_: statistics_NNS and_CC Welch_NNP statistics_NNS ._.
+          The_DT Welch_NNP statistics_NNS identified_VBD a_DT set_NN of_IN genes_NNS having_VBG
+          increased_VBN expression_NN in_IN the_DT patient_NN group_NN that_WDT were_VBD not_RB
+          detected_VBN by_IN 
+          t_NN -_: statistics_NNS under_IN the_DT same_JJ
+          stringency_NN ._. One_PRP can_MD argue_VB that_IN the_DT active_JJ genes_NNS have_VBP
+          greater_JJR variability_NN in_IN gene_NN expression_NN than_IN inactive_JJ ones_NNS
+          have_VBP [_NN 20_CD ]_NN ._. Such_JJ a_DT difference_NN will_MD be_VB reflected_VBN in_IN
+          larger_JJR variances_NNS in_IN the_DT patient_NN group_NN relative_JJ to_TO the_DT
+          control_NN group_NN ,_, a_DT scenario_NN more_RBR appropriate_JJ for_IN Welch_NNP
+          statistics_NNS than_IN 
+          t_NN -_: statistics_NNS ._. In_IN addition_NN ,_,
+          subjects_NNS (_( patients_NNS )_) in_IN our_PRP$ analysis_NN might_MD be_VB in_IN different_JJ
+          conditions_NNS ._. Some_DT patients_NNS might_MD have_VB more_JJR tissue_NN damage_NN
+          and_CC /_NN or_CC more_RBR severe_JJ pain_NN than_IN others_NNS ._. Further_RB ,_, the_DT patient_NN
+          group_NN is_VBZ likely_JJ to_TO be_VB inherently_RB more_RBR heterogeneous_JJ with_IN
+          respect_NN to_TO the_DT extent_NN of_IN tissue_NN damage_NN and_CC other_JJ relevant_JJ
+          yet_RB unmeasured_JJ attributes_NNS ._. These_DT considerations_NNS also_RB
+          argue_VBP for_IN the_DT appropriateness_NN of_IN Welch_NNP statistics_NNS ._.
+          Thomas_NNP ,_, 
+          et_CC al_NN ._. also_RB found_VBD that_IN Welch_NNP
+          statistics_NNS conformed_JJ better_JJR than_IN 
+          t_NN -_: statistics_NNS to_TO their_PRP$ regression_NN
+          modeling_NN approach_NN used_VBN to_TO discover_VB differentially_RB
+          expressed_VBD genes_NNS in_IN a_DT microarray_NN setting_VBG where_WRB
+          between-group_JJ heterogeneity_NN was_VBD evident_JJ [_NN 10_CD ]_NN ._. There_EX
+          are_VBP drawbacks_NNS ,_, however_RB ,_, to_TO using_VBG the_DT Welch_NNP statistics_NNS ._.
+          Firstly_NNP ,_, they_PRP need_VBP to_TO be_VB calibrated_VBN ,_, introducing_VBG
+          distributional_NN assumptions_NNS ._. Secondly_RB ,_, and_CC more_RBR
+          importantly_RB ,_, there_EX are_VBP stability_NN and_CC power_NN concerns_NNS that_WDT
+          pertain_NN in_IN small_JJ sample_NN settings_NNS [_NN 17_CD ]_NN ._.
+        
+      
+      
+        Conclusion_NNP
+        The_DT use_NN of_IN high-density_JJ microarray_NN technology_NN to_TO
+        identify_VB specific_JJ genes_NNS that_WDT are_VBP expressed_VBN differently_RB
+        under_IN one_CD or_CC more_RBR biological_JJ conditions_NNS is_VBZ particularly_RB
+        relevant_JJ to_TO drug_NN discovery_NN and_CC development_NN ._. However_RB ,_, in_IN the_DT
+        context_NN of_IN microarray_NN data_NNS analysis_NN ,_, multiple_JJ testing_NN
+        concerns_NNS are_VBP forefront_NN ._. In_IN this_DT study_NN ,_, we_PRP attacked_VBD the_DT very_RB
+        important_JJ problem_NN of_IN application_NN of_IN appropriate_JJ multiple_JJ
+        testing_NN methods_NNS in_IN identifying_VBG differential_NN gene_NN
+        expression_NN ,_, and_CC in_IN addition_NN ,_, we_PRP have_VBP provided_VBN a_DT framework_NN
+        for_IN future_JJ experimental_JJ research_NN in_IN brachial_NN plexus_JJ
+        injuries_NNS and_CC pain_NN pathways_NNS ._. Simple_NN statistical_JJ summaries_NNS ,_,
+        such_JJ as_IN fold_VB change_NN ,_, 
+        t_NN -_: statistics_NNS and_CC Welch_NNP statistics_NNS ,_,
+        have_VBP been_VBN applied_VBN ._. To_TO further_VB investigate_VB some_DT recently_RB
+        proposed_VBN multiple_JJ testing_NN schemes_NNS ,_, we_PRP compared_VBD the_DT
+        performance_NN of_IN two_CD approaches_NNS ,_, SAM_NNP and_CC Westfall_NNP and_CC Young_NNP
+        step_NN down_RB adjusted_VBD 
+        p_NN values_NNS ,_, as_IN applied_VBN to_TO a_DT microarray_NN
+        study_NN of_IN gene_NN expression_NN in_IN a_DT brachial_NN plexus_JJ injury_NN ._. Our_PRP$
+        results_NNS show_VBP that_IN using_VBG SAM_NNP and_CC controlling_VBG FDR_NNP leads_VBZ to_TO
+        identification_NN of_IN a_DT set_NN of_IN potentially_RB interesting_JJ genes_NNS
+        consistent_JJ with_IN prior_JJ knowledge_NN of_IN their_PRP$ function_NN ._. In_IN
+        addition_NN ,_, SAM_NNP readily_RB quantitates_NNS the_DT trade-offs_NNS between_IN
+        false_JJ discovery_NN rates_NNS and_CC numbers_NNS of_IN selected_VBN genes_NNS ._. On_IN the_DT
+        other_JJ hand_NN ,_, the_DT Westfall_NNP and_CC Young_NNP algorithm_NN ,_, by_IN
+        controlling_VBG FWER_NNP ,_, is_VBZ highly_RB conservative_JJ in_IN this_DT small_JJ
+        sample_NN setting_NN ._. To_TO the_DT extent_NN that_IN FWER_NNP provides_VBZ
+        appreciably_RB more_RBR stringent_JJ selection_NN ,_, attendant_NN findings_NNS of_IN
+        significant_JJ differential_NN gene_NN expression_NN are_VBP more_RBR likely_JJ to_TO
+        be_VB validated_JJ (_( by_IN follow-up_JJ experiment_NN )_) than_IN those_DT deriving_VBG
+        from_IN FDR-controlling_NNP methods_NNS ._. However_RB ,_, there_EX has_VBZ been_VBN
+        recent_JJ recognition_NN [_NN 5_CD 6_CD 21_CD ]_NN and_CC our_PRP$ study_NN also_RB shows_VBZ that_IN
+        FWER-control_NNP can_MD be_VB unnecessarily_RB stringent_JJ since_IN falsely_RB
+        selecting_VBG a_DT few_JJ genes_NNS will_MD not_RB be_VB a_DT serious_JJ problem_NN if_IN the_DT
+        majority_NN of_IN differentially_RB expressed_VBD genes_NNS are_VBP chosen_VBN
+        correctly_RB ._. In_IN addition_NN to_TO comparing_VBG multiple_JJ testing_NN
+        algorithms_NNS ,_, we_PRP also_RB compared_VBD the_DT performance_NN of_IN 
+        t_NN -_: statistics_NNS and_CC Welch_NNP statistics_NNS ._.
+
+        By_IN taking_VBG into_IN account_NN the_DT heterogeneous_JJ nature_NN of_IN the_DT
+        patient_NN group_NN ,_, Welch_NNP statistics_NNS identified_VBD a_DT set_NN of_IN genes_NNS
+        having_VBG increased_VBN expression_NN in_IN the_DT patient_NN group_NN ,_, whereas_IN
+        these_DT genes_NNS were_VBD not_RB selected_VBN by_IN the_DT 
+        t_NN -_: statistics_NNS under_IN the_DT same_JJ
+        criteria_NNS ._.
+      
+      
+        Methods_NNP
+        
+          Materials_NNS
+          Briefly_NNP ,_, cervical_JJ avulsed_JJ human_JJ DRG_NNP tissues_NNS (_( n_NN =_SYM 10_CD )_)
+          were_VBD removed_VBN in_IN the_DT setting_NN of_IN a_DT dorsal_NN rhizotomy_NN of_IN
+          lower_JJR cervical_JJ (_( and_CC upper_JJ thoracic_JJ in_IN one_CD case_NN )_) nerve_NN
+          roots_NNS in_IN patients_NNS with_IN persistent_JJ pain_NN syndromes_NNS after_IN
+          accidental_NN avulsion_NN injuries_NNS ._. Details_NNS on_IN obtaining_VBG ,_,
+          processing_NN and_CC measuring_VBG the_DT expression_NN of_IN total_JJ RNA_NNP in_IN
+          the_DT human_JJ DRG_NNP and_CC control_NN tissue_NN samples_NNS are_VBP located_VBN
+          elsewhere_RB http_NN :_: /_NN /_NN itsa_NN ._. ucsf_NN ._. edu_NN /_NN ~_NN yxiao_NN /_NN Avulsion_NNP ._. The_DT
+          control_NN human_JJ DRG_NNP sample_NN was_VBD pooled_VBN from_IN total_JJ RNA_NNP (_( n_NN =_SYM
+          8_CD ;_: prepared_VBN by_IN Clontech_NNP )_) obtained_VBN from_IN post-mortem_JJ
+          tissues_NNS ._. The_DT pool_NN of_IN n_NN =_SYM 8_CD was_VBD then_RB run_VB in_IN triplicate_NN
+          (_( n_NN =_SYM 3_LS )_) ._. Total_NNP RNA_NNP was_VBD extracted_VBN from_IN the_DT tissue_NN by_IN Trizol_NNP
+          (_( LifeTechnologies_NNP )_) extraction_NN and_CC polyA_NN +_NN RNA_NNP was_VBD
+          recovered_VBN by_IN Oligotex_NNP mRNA_NN Spin_NNP Columns_NNP (_( Qiagen_NNP )_) ._.
+          Biotinylated_NNP cRNA_NN targets_NNS were_VBD prepared_VBN and_CC hybridized_JJ to_TO
+          Affymetrix_NNP HU_NNP 6800_CD oligonucleotide_NN arrays_NNS according_VBG to_TO the_DT
+          manufacturer_NN 's_POS protocol_NN (_( Affymetrix_NNP ,_, Santa_NNP Clara_NNP ,_,
+          California_NNP )_) ._.
+        
+        
+          Data_NNP analysis_NN methods_NNS
+          
+            Normalization_NNP
+            All_DT data_NNS from_IN patient_NN and_CC control_NN samples_NNS were_VBD
+            preprocessed_JJ (_( background_NN subtraction_NN ,_, differential_NN
+            intensities_NNS )_) using_VBG Affymetrix_NNP GeneChip_NNP software_NN ,_, and_CC
+            average_JJ differential_NN intensity_NN (_( ADI_NNP )_) was_VBD used_VBN for_IN
+            analysis_NN ._. The_DT average_NN of_IN all_DT ADI_NNP values_NNS of_IN each_DT chip_NN
+            was_VBD calculated_VBN and_CC the_DT mean_NN of_IN average_JJ values_NNS of_IN all_DT
+            chips_NNS was_VBD used_VBN as_IN the_DT target_NN intensity_NN ._. The_DT ADI_NNP value_NN
+            of_IN each_DT chip_NN was_VBD normalized_JJ to_TO be_VB equal_JJ to_TO the_DT target_NN
+            intensity_NN ._. Since_IN negative_JJ ,_, zero_CD ,_, and_CC very_RB small_JJ
+            positive_JJ values_NNS (_( <_NN 20_CD )_) of_IN ADI_NNP most_RBS likely_JJ represent_VB
+            noise_NN instead_RB of_IN actual_JJ gene_NN expression_NN ,_, all_DT such_JJ
+            values_NNS were_VBD truncated_JJ at_IN 20_CD resulting_VBG in_IN 5_CD ,_, 638_CD probe_NN
+            sets_NNS for_IN analysis_NN ._.
+          
+          
+            Graphical_NNP display_NN
+            A_DT Quantile-_NNP Quantile_NNP plot_NN (_( Q-Q_NNP plot_NN )_) was_VBD generated_VBN by_IN
+            plotting_VBG the_DT quantiles_NNS of_IN 
+            t_NN statistics_NNS of_IN all_DT genes_NNS against_IN
+            the_DT quantiles_NNS of_IN a_DT standard_JJ normal_JJ distribution_NN ._. In_IN
+            addition_NN to_TO examining_VBG the_DT distribution_NN of_IN 
+            t_NN statistics_NNS ,_, we_PRP used_VBD this_DT plot_NN
+            to_TO observe_VB points_NNS that_WDT deviate_NN markedly_RB from_IN the_DT bulk_NN
+            of_IN the_DT observations_NNS since_IN they_PRP may_MD represent_VB difference_NN
+            in_IN means_NNS of_IN the_DT patient_NN and_CC control_NN groups_NNS ._. Four_CD
+            scatter_NN plots_NNS were_VBD generated_VBN to_TO study_VB the_DT features_NNS of_IN
+            large_JJ 
+            t_NN statistics_NNS :_: 
+            t_NN statistics_NNS vs_NNS ._. average_JJ
+            intensities_NNS ,_, 
+            t_NN statistics_NNS vs_NNS ._. 
+            t_NN denominators_NNS ,_, 
+            t_NN statistics_NNS vs_NNS ._. 
+            t_NN numerators_NNS ,_, and_CC 
+            t_NN numerators_NNS vs_NNS ._. 
+            t_NN denominators_NNS ._.
+          
+          
+            Significance_NN Analysis_NNP of_IN Microarrays_NNP (_( SAM_NNP )_)
+            The_DT SAM_NNP procedure_NN described_VBN by_IN Tusher_NNP 
+            et_CC al_NN ._. [_NN 3_CD ]_NN based_VBN on_IN the_DT 
+            t_NN -_: statistic_NN (_( under_IN the_DT
+            assumption_NN of_IN equal_JJ variances_NNS between_IN the_DT two_CD groups_NNS )_)
+            and_CC the_DT Welch_NNP statistic_NN (_( under_IN the_DT assumption_NN of_IN
+            unequal_JJ variances_NNS between_IN the_DT two_CD groups_NNS )_) was_VBD modified_VBN
+            as_IN follows_VBZ :_:
+            1_LS ._. The_DT relative_JJ difference_NN in_IN the_DT expression_NN 
+            d_SYM (_( i_NNP )_) for_IN the_DT 
+            i_NNP thof_NN 
+            k_NN =_SYM 5638_CD probe_NN sets_NNS was_VBD defined_VBN
+            as_IN ,_, ;_: 
+            i_NNP =_SYM 1_CD ,_, 2_CD ,_, ._. ._. ._. ,_, 
+            k_NN 
+            where_WRB and_CC are_VBP means_NNS of_IN expression_NN levels_NNS of_IN probe_NN
+            set_VBD 
+            i_NNP in_IN the_DT patient_NN and_CC control_NN
+            groups_NNS ,_, respectively_RB ._.
+            For_IN statistics_NNS ,_, and_CC for_IN Welch_NNP statistics_NNS ,_, ;_: where_WRB
+            and_CC are_VBP the_DT variances_NNS of_IN expression_NN levels_NNS for_IN probe_NN
+            set_VBD 
+            i_NNP in_IN the_DT patient_NN and_CC control_NN
+            groups_NNS ._. The_DT determination_NN of_IN 
+            s_VBZ 
+            0_CD is_VBZ discussed_VBN in_IN the_DT Results_NNS
+            section_NN ._. For_IN all_DT 
+            d_SYM (_( i_NNP )_) values_NNS ,_, corresponding_JJ 
+            p_NN values_NNS were_VBD calculated_VBN with_IN 
+            d_SYM (_( i_NNP )_) referenced_JJ to_TO an_DT appropriate_JJ
+            t_NN distribution_NN ._.
+            2_LS ._. All_DT 
+            p_NN values_NNS were_VBD ordered_VBN :_: 
+            p_NN 
+            1_CD ≤_NN 
+            p_NN 
+            2_CD ≤_NN ._. ._. ._. ≤_NN 
+            p_NN 
+            
+              k_NN 
+             ._.
+            3_LS ._. An_DT exhaustive_JJ set_NN of_IN 285_CD (_( 286_CD minus_CC the_DT original_JJ
+            configuration_NN ,_, 286_CD being_VBG 13_CD choose_VB 3_LS )_) permutations_NNS were_VBD
+            conducted_VBN ._. For_IN each_DT permutation_NN 
+            b_SYM ,_, 
+            p_NN values_NNS were_VBD calculated_VBN and_CC
+            ordered_VBN in_IN the_DT way_NN of_IN
+            4_LS ._. Expected_NNP 
+            p_NN values_NNS for_IN all_DT probe_NN sets_NNS were_VBD
+            calculated_VBN as_IN ,_, where_WRB 
+            i_NNP =_SYM 1_CD ,_, 2_CD ,_, ._. ._. ._. ,_, 
+            k_NN ._.
+            5_LS ._. For_IN a_DT fixed_VBN threshold_NN Δ_NN ,_, a_DT probe_NN set_VBN was_VBD called_VBN
+            "_'' significant_JJ "_'' if_IN its_PRP$ 
+            p_NN value_NN satisfied_VBD the_DT criterion_NN ._.
+            The_DT total_JJ number_NN of_IN "_'' significant_JJ "_'' probe_NN sets_NNS was_VBD
+            counted_VBN ._. The_DT 
+            p_NN 
+            
+              i_NNP 
+             largest_JJS among_IN the_DT "_'' significant_JJ "_'' probe_NN set_VBN was_VBD
+            defined_VBN as_IN the_DT cutoff_NN value_NN ._.
+            6_CD ._. For_IN each_DT permutation_NN ,_, all_DT probe_NN sets_NNS whose_WP$ 
+            p_NN values_NNS were_VBD smaller_JJR than_IN the_DT
+            cutoff_NN value_NN were_VBD found_VBN and_CC were_VBD called_VBN "_'' falsely_RB
+            significant_JJ "_'' ._. The_DT total_JJ number_NN of_IN these_DT probe_NN sets_NNS was_VBD
+            counted_VBN ._. The_DT estimated_VBN number_NN of_IN "_'' falsely_RB significant_JJ "_''
+            probe_NN sets_NNS was_VBD defined_VBN as_IN the_DT average_NN of_IN the_DT number_NN of_IN
+            "_'' falsely_RB significant_JJ "_'' probe_NN sets_NNS from_IN all_DT permutations_NNS ._.
+            The_DT false_JJ discovery_NN rate_NN (_( FDR_NNP )_) was_VBD computed_JJ as_IN the_DT
+            ratio_NN of_IN the_DT estimated_VBN number_NN of_IN "_'' falsely_RB significant_JJ "_''
+            probe_NN sets_NNS to_TO the_DT total_JJ number_NN of_IN "_'' significant_JJ "_'' probe_NN
+            sets_NNS ._.
+            7_CD ._. FDR_NNP was_VBD computed_JJ with_IN different_JJ values_NNS of_IN
+            threshold_NN Δ_NN ._.
+          
+          
+            Westfall_NNP and_CC Young_NNP step-down_JJ adjusted_VBD
+            pvalues_NNS
+            Both_DT 
+            t_NN -_: statistics_NNS and_CC Welch_NNP
+            statistics_NNS were_VBD used_VBN to_TO compare_VB gene_NN expression_NN between_IN
+            the_DT patient_NN and_CC control_NN groups_NNS ._. Our_PRP$ data_NNS were_VBD organized_VBN
+            in_IN a_DT matrix_NN in_IN which_WDT each_DT row_NN represents_VBZ the_DT expression_NN
+            of_IN one_CD gene_NN for_IN all_DT subjects_NNS and_CC each_DT column_NN represents_VBZ
+            the_DT expression_NN of_IN all_DT genes_NNS for_IN one_CD subject_JJ ._. The_DT
+            permutation_NN algorithm_NN developed_VBN by_IN Westfall_NNP and_CC Young_NNP
+            to_TO obtain_VB step-down_JJ adjusted_VBN 
+            p_NN values_NNS was_VBD then_RB applied_VBN as_IN
+            follows_VBZ ._. Note_VB that_IN the_DT procedures_NNS were_VBD modified_VBN when_WRB
+            using_VBG Welch_NNP statistics_NNS ._. Instead_RB of_IN using_VBG the_DT Welch_NNP
+            statistic_NN to_TO compute_VB adjusted_VBN 
+            p_NN values_NNS ,_, we_PRP used_VBD unadjusted_JJ 
+            p_NN values_NNS derived_VBN from_IN Welch_NNP
+            statistics_NNS and_CC the_DT appropriate_JJ degrees_NNS of_IN freedom_NN ._. An_DT
+            exhaustive_JJ set_NN of_IN 285_CD permutations_NNS were_VBD conducted_VBN ._.
+            1_LS ._. Compute_NNP the_DT 
+            t_NN statistic_NN for_IN each_DT gene_NN in_IN the_DT
+            original_JJ dataset_NN ._.
+            2_LS ._. Order_NNP them_PRP :_: |_NN 
+            t_NN 
+            
+            r_LS 1_CD |_NN ≥_NN |_NN 
+            t_NN 
+            
+            r_LS 2_CD |_NN ≥_NN |_NN 
+            t_NN 
+            
+            r_LS 3_CD |_NN ≥_NN ._. ._. ._. ≥_NN |_NN 
+            t_NN 
+            
+              rk_NN 
+             |_NN ._.
+            3_LS ._. Permute_NNP the_DT 13_CD columns_NNS of_IN the_DT data_NNS matrix_NN ._. The_DT
+            first_JJ 10_CD columns_NNS now_RB represent_VBP the_DT pseudo-patient_JJ group_NN
+            and_CC the_DT other_JJ 3_CD columns_NNS represent_VBP the_DT pseudo-control_JJ
+            group_NN ._.
+            4_LS ._. Compute_NNP 
+            t_NN statistics_NNS for_IN all_DT probe_NN sets_NNS
+            for_IN the_DT permuted_JJ dataset_NN :_:
+            5_LS ._. Compute_NNP and_CC ,_, 1_CD ≤_NN 
+            j_NN ≤_NN 
+            k_NN -_: 1_CD ,_, where_WRB 
+            r_LS 
+            
+              j_NN 
+             is_VBZ such_JJ that_DT |_NN 
+            t_NN 
+            
+            r_LS 1_CD |_NN ≥_NN |_NN 
+            t_NN 
+            
+            r_LS 2_CD |_NN ≥_NN |_NN 
+            t_NN 
+            
+            r_LS 3_CD |_NN ≥_NN ._. ._. ._. ≥_NN |_NN 
+            t_NN 
+            
+              rk_NN 
+             |_NN for_IN the_DT original_JJ dataset_NN ._.
+            6_CD ._. Repeat_NN 1_CD -_: 5_CD 
+            N_NNP (_( 
+            N_NNP =_SYM 286_CD )_) times_NNS and_CC calculate_VB the_DT
+            adjusted_VBN 
+            p_NN values_NNS :_:
+            
+            where_WRB I_PRP (_( •_NN )_) is_VBZ the_DT indicator_NN function_NN setting_VBG to_TO 1_CD if_IN
+            the_DT condition_NN in_IN parentheses_NNS is_VBZ true_JJ and_CC 0_CD if_IN false_JJ ._.
+            The_DT monotonicity_NN was_VBD enforced_VBN as_IN ,_, for_IN 2_CD ≤_NN 
+            j_NN ≤_NN 
+            k_NN ._.
+          
+        
+        
+          Supplementary_NNP material_NN
+          Supplementary_NNP material_NN is_VBZ located_VBN at_IN [_NN 2_CD ]_NN ._. This_DT web_NN
+          page_NN includes_VBZ our_PRP$ data_NNS analysis_NN results_NNS and_CC also_RB further_JJ
+          tissue_NN and_CC patient_NN information_NN ._.
+        
+      
+      
+        Authors_NNP '_'' contributions_NNS
+        YX_NNP performed_VBD the_DT statistical_JJ studies_NNS ,_, participated_VBD in_IN
+        its_PRP$ coordination_NN ,_, and_CC drafted_VBD the_DT manuscript_NN ._. MRS_NNP initiated_VBD
+        and_CC designed_VBD the_DT statistical_JJ analyses_NNS and_CC drafted_VBD the_DT
+        manuscript_NN ._. DR_NNP carried_VBD out_RP the_DT tissue_NN preparation_NN and_CC
+        microarray_NN hybridization_NN ._. AHA_NNP participated_VBD in_IN the_DT drafting_VBG
+        of_IN the_DT manuscript_NN regarding_VBG the_DT biology_NN of_IN avulsion_NN
+        injuries_NNS ._. PA_NNP initiated_VBD and_CC organized_VBD the_DT study_NN ,_, and_CC
+        participated_VBD in_IN the_DT collection_NN and_CC tissue_NN dissection_NN of_IN the_DT
+        DRG_NNP ._. LS_NNP initiated_VBD the_DT study_NN and_CC participated_VBD in_IN its_PRP$ design_NN
+        and_CC coordination_NN ._. DH_NNP participated_VBD in_IN the_DT statistical_JJ
+        analyses_NNS and_CC the_DT initial_JJ manuscript_NN drafting_VBG ._. CAH_NNP initiated_VBD
+        the_DT different_JJ methods_NNS of_IN statistical_JJ analysis_NN and_CC
+        participated_VBD in_IN its_PRP$ design_NN ,_, coordination_NN and_CC manuscript_NN
+        drafting_VBG ._. YX_NNP and_CC MRS_NNP contributed_VBD equally_RB to_TO this_DT work_NN ._.
+      
+    
+  

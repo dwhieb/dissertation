@@ -1,0 +1,789 @@
+
+  
+    
+      
+        Background_NNP
+        DNA_NN microarray_NN analysis_NN has_VBZ become_VBN the_DT most_RBS widely_RB used_VBN
+        technique_NN for_IN the_DT study_NN of_IN gene-expression_JJ patterns_NNS on_IN a_DT
+        genomic_JJ scale_NN [_NN 1_CD ,_, 2_CD ]_NN ._. Differential_NNP microarray_NN
+        co-hybridization_JJ assays_NNS measure_NN the_DT relative_JJ gene_NN
+        expression_NN of_IN paired_VBN query_NN and_CC reference_NN samples_NNS ,_, and_CC the_DT
+        power_NN of_IN microarray_NN analysis_NN comes_VBZ from_IN identification_NN of_IN
+        informative_JJ patterns_NNS of_IN gene_NN expression_NN across_IN multiple_JJ
+        experiments_NNS ._. Achieving_NNP both_DT these_DT objectives_NNS is_VBZ facilitated_JJ
+        by_IN using_VBG a_DT common_JJ reference_NN sample_NN that_WDT provides_VBZ a_DT baseline_NN
+        expression_NN measure_NN for_IN each_DT gene_NN ,_, enabling_VBG normalization_NN
+        and_CC comparison_NN of_IN independent_JJ experiments_NNS ._.
+        Pooled_NNP RNA_NNP derived_VBD from_IN cell_NN lines_NNS is_VBZ a_DT commonly_RB used_VBN
+        reference_NN sample_NN ._. To_TO provide_VB optimal_NN coverage_NN of_IN genes_NNS
+        spotted_VBD on_IN the_DT array_NN ,_, reference_NN samples_NNS are_VBP often_RB
+        constructed_VBN from_IN a_DT large_JJ number_NN of_IN cell_NN lines_NNS from_IN a_DT
+        variety_NN of_IN tissues_NNS ._. One_CD example_NN is_VBZ the_DT universal_JJ human_JJ RNA_NNP
+        reference_NN commercially_RB available_JJ from_IN Stratagene_NNP [_NN 3_CD ]_NN ._. This_DT
+        reference_NN consists_VBZ of_IN equimolar_NN quantities_NNS of_IN RNA_NNP from_IN ten_CD
+        human_JJ cancer_NN cell_NN lines_NNS representing_VBG ten_CD different_JJ tissues_NNS
+        (_( B_NNP cells_NNS ,_, breast_NN ,_, brain_NN ,_, cervix_NN ,_, liver_NN ,_, lipocytes_NNS ,_,
+        macrophage_NN ,_, skin_NN ,_, T_NN cells_NNS and_CC testis_NNS )_) ._.
+        Another_DT challenging_VBG technical_JJ consideration_NN in_IN
+        microarray_NN analysis_NN is_VBZ the_DT cutoff_NN value_NN used_VBN to_TO distinguish_VB
+        differential_NN expression_NN from_IN natural_JJ variability_NN in_IN the_DT
+        data_NNS ._. A_DT cutoff_NN of_IN twofold_NN up-_NN or_CC down-regulation_JJ has_VBZ been_VBN
+        chosen_VBN to_TO define_VB differential_NN expression_NN in_IN most_RBS published_VBN
+        studies_NNS [_NN 1_CD ,_, 2_CD ]_NN ._. However_RB ,_, little_JJ has_VBZ been_VBN done_VBN to_TO evaluate_VB
+        the_DT accuracy_NN of_IN the_DT technique_NN and_CC assess_VB the_DT confidence_NN
+        levels_NNS for_IN various_JJ fold-level_JJ changes_NNS in_IN expression_NN ratios_NNS ._.
+        In_IN addition_NN ,_, microarray_NN analysis_NN is_VBZ a_DT complex_NN ,_, multistep_NN
+        technique_NN involving_VBG array_NN fabrication_NN ,_, labeling_VBG ,_,
+        hybridization_NN and_CC data_NNS analysis_NN ,_, and_CC many_JJ laboratories_NNS have_VBP
+        developed_VBN a_DT variety_NN of_IN protocols_NNS for_IN each_DT of_IN these_DT steps_NNS [_NN
+        4_CD ,_, 5_CD ]_NN ._. Studies_NNS by_IN a_DT number_NN of_IN groups_NNS using_VBG a_DT range_NN of_IN
+        protocols_NNS and_CC including_VBG many_JJ different_JJ RNA_NNP samples_NNS will_MD
+        give_VB a_DT better_JJR picture_NN of_IN how_WRB reliable_JJ microarrays_NNS are_VBP for_IN
+        elucidating_VBG gene-expression_JJ profiles_NNS ._.
+        In_IN this_DT study_NN ,_, we_PRP evaluate_VBP the_DT performance_NN of_IN cDNA_NN
+        microarrays_NNS using_VBG our_PRP$ current_JJ laboratory_NN and_CC data-analysis_JJ
+        protocols_NNS and_CC derive_VB a_DT new_JJ intensity-dependent_JJ approach_NN to_TO
+        identifying_VBG differentially_RB expressed_VBD genes_NNS ._. RNA_NNP from_IN 19_CD
+        different_JJ human_JJ cancer_NN cell_NN lines_NNS ,_, the_DT Stratagene_NNP universal_JJ
+        reference_NN RNA_NNP ,_, and_CC RNA_NNP isolated_VBD from_IN a_DT tumor_NN specimen_NN were_VBD
+        assayed_JJ in_IN a_DT series_NN of_IN '_POS self-self_JJ '_POS hybridizations_NNS on_IN a_DT
+        19_CD ,_, 200_CD -_: element_NN cDNA_NN array_NN (_( containing_VBG 9_CD ,_, 600_CD elements_NNS
+        spotted_VBD in_IN duplicate_VB )_) ._. Statistical_NNP analysis_NN of_IN the_DT ratios_NNS
+        of_IN Cy_NNP 5_CD /_NN Cy_NNP 3_CD fluorescence_NN intensities_NNS among_IN this_DT large_JJ number_NN
+        of_IN distinct_JJ samples_NNS provides_VBZ insight_NN into_IN the_DT variation_NN
+        inherent_JJ in_IN expression_NN ratios_NNS extracted_VBN from_IN cDNA_NN
+        microarrays_NNS ._. We_PRP assess_VBP reproducibility_NN of_IN array_NN experiments_NNS
+        by_IN analyzing_VBG replicates_NNS ,_, using_VBG both_DT clones_NNS spotted_VBD in_IN
+        duplicate_VB on_IN the_DT same_JJ array_NN and_CC in_IN triplicate_NN hybridization_NN
+        assays_NNS ._. In_IN addition_NN ,_, we_PRP use_VBP the_DT methodology_NN developed_VBN in_IN
+        this_DT study_NN to_TO compare_VB expression_NN in_IN a_DT colon_NN and_CC an_DT ovarian_NN
+        cell_NN line_NN to_TO identify_VB tissue-specific_JJ genes_NNS ._.
+        Self-self_NNP hybridization_NN results_NNS for_IN individual_JJ cell_NN
+        lines_NNS were_VBD also_RB analyzed_VBN to_TO determine_VB the_DT composition_NN of_IN an_DT
+        optimal_NN reference_NN pool_NN consisting_VBG of_IN RNA_NNP derived_VBD from_IN cell_NN
+        lines_NNS ._. Our_PRP$ underlying_VBG hypothesis_NNS was_VBD that_IN pooling_VBG a_DT large_JJ
+        number_NN of_IN cell_NN lines_NNS might_MD not_RB necessarily_RB improve_VB the_DT
+        overall_JJ gene_NN representation_NN ._. Although_IN some_DT cell_NN lines_NNS
+        express_VBP significantly_RB more_JJR genes_NNS than_IN others_NNS ,_, not_RB all_DT cell_NN
+        lines_NNS express_VBP all_DT genes_NNS at_IN the_DT same_JJ levels_NNS ._. Consequently_RB ,_,
+        mixing_VBG cell_NN lines_NNS may_MD dilute_VB rare_JJ transcripts_NNS so_IN that_IN their_PRP$
+        representation_NN in_IN the_DT final_JJ RNA_NNP pool_NN is_VBZ below_IN the_DT
+        detectable_JJ limit_NN ._. Results_NNS of_IN our_PRP$ analysis_NN will_MD aid_VB in_IN the_DT
+        future_JJ assessment_NN of_IN gene-expression_JJ patterns_NNS and_CC the_DT
+        design_NN of_IN reference_NN RNA_NNP samples_NNS ._.
+      
+      
+        Results_NNS and_CC discussion_NN
+        
+          Cell_NNP line_NN self-self_JJ hybridizations_NNS
+          To_TO evaluate_VB the_DT natural_JJ variability_NN present_JJ in_IN spotted_JJ
+          cDNA_NN microarray_NN data_NNS across_IN a_DT number_NN of_IN distinct_JJ RNA_NNP
+          samples_NNS ,_, we_PRP carried_VBD out_RP a_DT set_NN of_IN self-self_JJ assays_NNS in_IN
+          which_WDT aliquots_NNS of_IN the_DT same_JJ RNA_NNP are_VBP separately_RB labeled_VBN
+          with_IN Cy_NNP 3_CD and_CC Cy_NNP 5_CD dyes_NNS and_CC co-hybridized_JJ to_TO a_DT single_JJ
+          microarray_NN ._. Poly_NNP (_( A_DT )_) +_NN RNA_NNP was_VBD prepared_VBN from_IN 19_CD human_JJ
+          carcinoma_NN cell_NN lines_NNS (_( 2_CD brain_NN ,_, 5_CD colon_NN ,_, 10_CD ovarian_NN ,_, 1_CD
+          pancreatic_JJ ,_, and_CC 1_CD testicular_NN )_) and_CC Stratagene_NNP 's_POS universal_JJ
+          human_JJ reference_NN RNA_NNP ._. RNA_NNP was_VBD reverse_VB transcribed_JJ into_IN
+          cDNA_NN using_VBG random_JJ hexamer_NN primers_NNS in_IN the_DT presence_NN of_IN
+          5_CD -_: aminoallyl-d_JJ UTP_NNP ;_: Cy_NNP 3_CD and_CC Cy_NNP 5_CD dyes_NNS were_VBD covalently_RB
+          coupled_VBN to_TO the_DT incorporated_VBN aminoallyl_NN linkers_NNS in_IN a_DT
+          subsequent_JJ labeling_VBG reaction_NN ._.
+          For_IN each_DT cell_NN line_NN ,_, Cy_NNP 3_CD -_: and_CC Cy_NNP 5_CD -_: cDNA_NN samples_NNS were_VBD
+          co-hybridized_JJ to_TO a_DT spotted_VBN microarray_NN containing_VBG 19_CD ,_, 200_CD
+          human_JJ cDNA_NN clones_NNS (_( 9_CD ,_, 600_CD clones_NNS printed_VBN in_IN duplicate_VB )_) ._.
+          Hybridization_NNP results_NNS were_VBD analyzed_VBN to_TO determine_VB relative_JJ
+          expression_NN levels_NNS for_IN each_DT printed_VBN element_NN ,_, and_CC
+          hybridization_NN intensity_NN data_NNS were_VBD first_JJ normalized_JJ
+          globally_RB using_VBG an_DT iterative_JJ mean-log_JJ 
+          2_CD (_( ratio_NN )_) -_: centering_VBG approach_NN ._. Briefly_NNP ,_,
+          log_VB 
+          2_CD (_( ratio_NN )_) values_NNS were_VBD calculated_VBN for_IN
+          each_DT array_NN element_NN and_CC the_DT mean_NN of_IN the_DT distribution_NN was_VBD
+          calculated_VBN ._. Ratios_NNP were_VBD adjusted_VBN such_JJ that_IN the_DT mean_NN log_NN 
+          2_CD (_( ratio_NN )_) for_IN the_DT entire_JJ collection_NN of_IN
+          genes_NNS was_VBD set_VBN to_TO zero_CD (_( or_CC a_DT corresponding_JJ average_JJ ratio_NN
+          of_IN 1_LS )_) ._. As_IN outliers_NNS can_MD significantly_RB influence_VB this_DT
+          process_NN ,_, these_DT were_VBD identified_VBN and_CC excluded_VBN and_CC the_DT
+          process_NN repeated_VBN until_IN convergence_NN ._. This_DT process_NN results_NNS
+          in_IN an_DT average_JJ Cy_NNP 5_CD /_NN Cy_NNP 3_CD log_VB 
+          2_CD (_( ratio_NN )_) of_IN zero_CD for_IN the_DT spots_NNS
+          analyzed_VBD in_IN each_DT microarray_NN ._.
+          We_PRP and_CC others_NNS have_VBP noted_VBN that_IN the_DT log_NN 
+          2_CD (_( ratio_NN )_) values_NNS often_RB have_VBP a_DT
+          systematic_JJ dependence_NN on_IN intensity_NN most_RBS often_RB observed_VBD as_IN
+          a_DT deviation_NN from_IN zero_CD for_IN low-intensity_JJ spots_NNS ._. Locally_RB
+          weighted_JJ linear_JJ regression_NN (_( lowess_NNS )_) [_NN 6_CD ]_NN has_VBZ been_VBN
+          proposed_VBN as_IN a_DT normalization_NN method_NN for_IN microarray_NN assays_NNS
+          [_NN 7_CD ,_, 8_CD ]_NN that_WDT can_MD remove_VB intensity-dependent_JJ dye-specific_JJ
+          effects_NNS in_IN the_DT log_NN 
+          2_CD (_( ratio_NN )_) values_NNS ._.
+          In_IN this_DT procedure_NN ,_, fluorescence_NN intensities_NNS are_VBP
+          measured_VBN from_IN both_DT channels_NNS for_IN all_DT elements_NNS on_IN the_DT array_NN
+          and_CC the_DT log_NN 
+          2_CD (_( Cy_NNP 5_CD /_NN Cy_NNP 3_LS )_) ratios_NNS for_IN each_DT spot_NN are_VBP
+          represented_VBN as_IN a_DT function_NN of_IN the_DT log_NN 
+          10_CD (_( Cy_NNP 5_CD *_NN Cy_NNP 3_LS )_) product_NN intensities_NNS ._.
+          Scatter-plots_NNP of_IN such_JJ data_NNS ,_, referred_VBD to_TO as_IN an_DT '_POS R-I_NNP plot_NN '_''
+          (_( for_IN ratio-intensity_JJ )_) ,_, can_MD reveal_VB intensity-specific_JJ
+          artifacts_NNS in_IN the_DT measurement_NN of_IN the_DT ratio_NN ,_, which_WDT tend_VBP to_TO
+          occur_VB most_RBS notably_RB for_IN weakly_RB fluorescing_VBG arrayed_JJ
+          elements_NNS ._. For_IN a_DT self-self_JJ hybridization_NN of_IN the_DT type_NN
+          analyzed_VBD here_RB ,_, one_CD expects_VBZ a_DT mean_NN log_NN 
+          2_CD (_( Cy_NNP 5_CD /_NN Cy_NNP 3_LS )_) ratio_NN of_IN zero_CD for_IN each_DT
+          element_NN in_IN the_DT array_NN independent_JJ of_IN intensity_NN ._. Lowess_NNP
+          enables_VBZ deviations_NNS from_IN this_DT expected_JJ behavior_NN to_TO be_VB
+          detected_VBN and_CC corrected_VBN by_IN performing_VBG a_DT local_JJ weighted_JJ
+          linear_JJ regression_NN for_IN each_DT data_NNS point_VBP in_IN the_DT R-I_NNP plot_NN and_CC
+          subtracting_VBG the_DT average_JJ ratio_NN from_IN the_DT experimentally_RB
+          observed_VBN ratio_NN ._. A_DT representative_JJ R-I_NNP plot_NN for_IN the_DT cell_NN
+          line_NN KM_NNP 12_CD L_NNP 4_CD A_DT in_IN Figure_NN 1_CD shows_VBZ a_DT slight_JJ upward_RB curve_NN of_IN
+          the_DT log_NN 
+          2_CD (_( ratio_NN )_) for_IN low-intensity_JJ data_NNS
+          points_NNS (_( shown_VBN in_IN blue_JJ )_) which_WDT is_VBZ removed_VBN after_IN application_NN
+          of_IN the_DT lowess_NNS correction_NN ,_, producing_VBG a_DT balanced_JJ
+          distribution_NN of_IN expression_NN ratios_NNS around_IN zero_CD independent_JJ
+          of_IN intensity_NN (_( shown_VBN in_IN red_JJ )_) ._. Similar_JJ plots_NNS ,_, including_VBG a_DT
+          calculated_VBN standard_JJ deviation_NN (_( SD_NNP )_) both_DT before_IN and_CC after_IN
+          lowess_NNS correction_NN ,_, are_VBP shown_VBN in_IN Figure_NN 1_CD c_SYM ._. The_DT most_RBS
+          important_JJ feature_NN of_IN the_DT data_NNS is_VBZ the_DT narrow_JJ distribution_NN
+          of_IN ratios_NNS in_IN individual_JJ array_NN experiments_NNS regardless_RB of_IN
+          the_DT RNA_NNP sample_NN assayed_JJ in_IN each_DT experiment_NN ._. This_DT is_VBZ also_RB
+          true_JJ of_IN the_DT entire_JJ dataset_NN ,_, as_IN can_MD be_VB seen_VBN in_IN the_DT
+          histogram_NN of_IN combined_VBN expression_NN ratios_NNS from_IN 30_CD
+          experiments_NNS ,_, shown_VBN in_IN Figure_NN 2_CD ._.
+          These_DT results_NNS are_VBP comparable_JJ to_TO those_DT obtained_VBN in_IN a_DT
+          recent_JJ study_NN of_IN 30_CD self-self_JJ hybridizations_NNS on_IN
+          10_CD ,_, 000_CD -_: element_NN cDNA_NN arrays_NNS [_NN 9_CD ]_NN ._. Yue_NNP 
+          et_CC al_NN ._. [_NN 9_CD ]_NN created_VBD histograms_NNS for_IN
+          three_CD sets_NNS of_IN data_NNS ,_, each_DT consisting_VBG of_IN 10_CD independent_JJ
+          array_NN experiments_NNS ,_, using_VBG mRNA_NN derived_VBN from_IN human_JJ
+          placenta_NN ,_, brain_NN and_CC heart_NN tissue_NN ._. In_IN one_CD of_IN their_PRP$ data_NNS
+          sets_NNS ,_, a_DT 2_CD -_: SD_NNP limit_NN of_IN 1_CD ._. 25_CD -_: fold_VB was_VBD observed_VBN ;_: combined_VBN ,_,
+          99_CD ._. 5_LS %_NN of_IN the_DT data_NNS points_NNS were_VBD within_IN ±_NN 1_CD ._. 4_CD -_: fold_VB ._. A_DT small_JJ
+          number_NN of_IN distinct_JJ samples_NNS (_( 3_LS )_) in_IN combination_NN with_IN a_DT
+          large_JJ number_NN of_IN replicates_NNS per_IN sample_NN (_( 10_CD )_) most_RBS probably_RB
+          accounts_VBZ for_IN the_DT slightly_RB tighter_JJR distribution_NN of_IN
+          expression_NN ratios_NNS than_IN that_DT observed_VBD in_IN our_PRP$ study_NN ._.
+          The_DT second_JJ important_JJ aspect_NN of_IN our_PRP$ dataset_NN is_VBZ the_DT
+          number_NN of_IN '_POS outliers_NNS '_POS ;_: approximately_RB 5_CD %_NN of_IN the_DT data_NNS points_NNS
+          in_IN each_DT array_NN fall_NN outside_IN of_IN 2_CD SD_NNP from_IN the_DT mean_NN (_( data_NNS
+          not_RB shown_VBN )_) ._. While_IN this_DT is_VBZ not_RB unexpected_JJ ,_, it_PRP suggests_VBZ
+          that_IN the_DT distribution_NN of_IN log_NN 
+          2_CD (_( ratio_NN )_) values_NNS does_VBZ not_RB deviate_NN
+          badly_RB from_IN normal_JJ ._. This_DT is_VBZ of_IN a_DT particular_JJ significance_NN
+          because_IN it_PRP should_MD enable_VB detection_NN of_IN genes_NNS with_IN low_JJ
+          levels_NNS of_IN differential_NN expression_NN at_IN high_JJ confidence_NN in_IN
+          future_JJ studies_NNS ._. Combining_NNP all_DT data_NNS from_IN all_DT 30_CD
+          hybridizations_NNS ,_, the_DT 2_CD -_: SD_NNP limit_NN is_VBZ equivalent_JJ to_TO 1_CD ._. 46_CD -_: fold_VB
+          change_NN (_( ±_NN 0_CD ._. 546_CD log_VB 
+          2_CD (_( ratio_NN )_) )_) ,_, only_RB 18_CD ,_, 221_CD out_IN of_IN 332_CD ,_, 601_CD
+          points_NNS ,_, or_CC 5_CD ._. 5_CD %_NN of_IN the_DT expression_NN ratios_NNS ,_, fall_NN outside_IN a_DT
+          2_CD -_: SD_NNP threshold_NN ._. Consequently_RB ,_, if_IN differential_NN expression_NN
+          is_VBZ defined_VBN as_IN greater_JJR than_IN 2_CD SD_NNP from_IN the_DT mean_NN ,_, genes_NNS with_IN
+          fold_VB changes_NNS greater_JJR than_IN 1_CD ._. 5_CD can_MD be_VB classified_VBN as_IN up-_NN or_CC
+          down-regulated_JJ at_IN approximately_RB 95_CD %_NN confidence_NN level_NN ._.
+          Good-quality_NNP array_NN data_NNS can_MD only_RB be_VB generated_VBN using_VBG
+          well_RB developed_VBN and_CC extensively_RB tested_VBN laboratory_NN and_CC
+          data-analysis_JJ protocols_NNS ._. Our_PRP$ group_NN has_VBZ been_VBN working_VBG
+          continuously_RB to_TO improve_VB our_PRP$ laboratory_NN procedures_NNS and_CC
+          implement_VB new_JJ data-analysis_JJ methods_NNS ._. One_CD of_IN the_DT changes_NNS
+          recently_RB adopted_VBN by_IN ours_PRP and_CC many_JJ other_JJ laboratories_NNS is_VBZ
+          indirect_JJ cDNA_NN labeling_VBG ._. As_IN first-strand_JJ cDNA_NN synthesis_NN is_VBZ
+          identical_JJ for_IN both_DT samples_NNS ,_, incorporation_NN of_IN nucleotides_NNS
+          with_IN an_DT aminoallyl_NN linker_NN followed_VBN by_IN the_DT covalent_NN
+          coupling_NN reaction_NN to_TO Cy_NNP dyes_NNS reduces_VBZ bias_NN for_IN
+          incorporation_NN of_IN one_CD dye_NN over_IN the_DT other_JJ by_IN the_DT reverse_JJ
+          transcriptase_NN ._. Slight_NNP dye-specific_JJ effects_NNS are_VBP present_JJ in_IN
+          normalized_JJ low-intensity_JJ data_NNS ,_, probably_RB caused_VBN by_IN a_DT
+          wavelength-dependent_JJ differential_NN response_NN of_IN the_DT
+          photomultiplier_NN tubes_NNS in_IN the_DT array_NN scanners_NNS or_CC slight_JJ
+          differences_NNS or_CC nonlinearities_NNS in_IN the_DT quantum_NN efficiencies_NNS
+          of_IN the_DT fluorescent_NN dyes_NNS ,_, but_CC these_DT can_MD be_VB efficiently_RB
+          removed_VBN by_IN the_DT application_NN of_IN the_DT lowess_NNS correction_NN ._.
+        
+        
+          Tissue_NNP sample_NN self-self_JJ hybridization_NN
+          In_IN our_PRP$ experience_NN ,_, hybridization_NN using_VBG RNA_NNP derived_VBD
+          from_IN tissue_NN samples_NNS is_VBZ generally_RB more_RBR problematic_JJ than_IN
+          that_DT derived_VBD from_IN cell_NN lines_NNS ._. To_TO determine_VB whether_IN data_NNS
+          of_IN comparable_JJ quality_NN can_MD be_VB generated_VBN with_IN tissue_NN RNA_NNP ,_,
+          we_PRP carried_VBD out_RP a_DT similar_JJ expression_NN analysis_NN using_VBG RNA_NNP
+          derived_VBD from_IN a_DT colon_NN tumor_NN liver_NN metastasis_NNS ._. Twenty_CD
+          micrograms_NNS of_IN total_JJ RNA_NNP that_WDT have_VBP been_VBN extracted_VBN using_VBG
+          Trizol_NNP and_CC subjected_VBN to_TO secondary_JJ purification_NN using_VBG
+          Qiagen_NNP RNeasy_NNP columns_NNS were_VBD labeled_VBN with_IN both_DT Cy_NNP 3_CD and_CC Cy_NNP 5_CD
+          and_CC examined_VBD in_IN a_DT self-self_JJ co-hybridization_JJ assay_NN ._. The_DT
+          distribution_NN of_IN expression_NN ratios_NNS is_VBZ in_IN excellent_JJ
+          agreement_NN with_IN cell-line_JJ data_NNS ;_: only_RB 507_CD out_IN of_IN 11_CD ,_, 743_CD
+          (_( 4_CD ._. 3_LS %_NN )_) of_IN identified_VBN spots_NNS fall_VBP outside_IN the_DT 1_CD ._. 42_CD -_: fold_VB
+          change_NN ,_, 2_CD -_: SD_NNP limit_NN ._.
+        
+        
+          Intensity-dependent_NNP estimation_NN of_IN differential_NN
+          expression_NN
+          While_IN lowess_NNS normalization_NN greatly_RB reduces_VBZ
+          dye-specific_JJ artifacts_NNS that_WDT often_RB appear_VB for_IN
+          low-intensity_JJ data_NNS points_NNS ,_, the_DT data_NNS exhibit_NN additional_JJ
+          structure_NN that_WDT can_MD be_VB used_VBN to_TO evaluate_VB patterns_NNS of_IN gene_NN
+          expression_NN ._. As_IN can_MD be_VB seen_VBN in_IN Figure_NN 1_CD a_DT ,_, the_DT log_NN 
+          2_CD (_( ratio_NN )_) measures_NNS generally_RB show_VBP
+          greater_JJR variation_NN at_IN lower_JJR intensities_NNS ._. Most_RBS published_VBN
+          microarray_NN studies_NNS use_VBP a_DT single_JJ log_NN 
+          2_CD (_( ratio_NN )_) threshold_NN as_IN a_DT measure_NN of_IN
+          differential_NN expression_NN ._. Examination_NNP of_IN the_DT distribution_NN
+          in_IN Figure_NN 1_CD suggests_VBZ that_IN this_DT may_MD inappropriately_RB
+          identify_VB genes_NNS at_IN intensities_NNS where_WRB the_DT natural_JJ variation_NN
+          in_IN the_DT data_NNS would_MD not_RB support_VB their_PRP$ selection_NN ,_, while_IN at_IN
+          the_DT same_JJ time_NN causing_VBG genes_NNS to_TO be_VB missed_VBN in_IN other_JJ
+          intensities_NNS where_WRB the_DT data_NNS suggest_VBP that_IN much_RB lower_JJR log_NN 
+          2_CD (_( ratio_NN )_) values_NNS are_VBP statistically_RB
+          significant_JJ ._. Several_JJ mathematical_JJ models_NNS have_VBP been_VBN
+          derived_VBN to_TO explain_VB this_DT phenomenon_NN [_NN 10_CD ,_, 11_CD ,_, 12_CD ,_, 13_CD ,_, 14_CD ]_NN ._.
+          One_CD [_NN 10_CD ]_NN discusses_NNS the_DT use_NN of_IN a_DT smoothed_VBN estimate_NN of_IN the_DT
+          SD_NNP as_IN a_DT function_NN of_IN the_DT fluorescence_NN intensity_NN ._. The_DT study_NN
+          conducted_VBN by_IN Hughes_NNP 
+          et_CC al_NN ._. [_NN 11_CD ]_NN shows_VBZ how_WRB their_PRP$ model_NN
+          for_IN estimating_VBG intensity-dependent_JJ differential_NN
+          expression_NN can_MD be_VB used_VBN to_TO identify_VB biologically_RB
+          meaningful_JJ differential_NN regulation_NN at_IN levels_NNS lower_JJR than_IN
+          twofold_NN in_IN a_DT compendium_NN of_IN 300_CD different_JJ 
+          Saccharomyces_NNP cerevisiae_NN mutants_NNS
+          and_CC chemical_NN treatments_NNS ._.
+          We_PRP developed_VBD a_DT much_RB simpler_JJR approach_NN to_TO identify_VB
+          differentially_RB expressed_VBD genes_NNS using_VBG an_DT
+          intensity-dependent_JJ calculation_NN of_IN a_DT standard_JJ 
+          Z_NNP -_: score_NN ._. Using_VBG a_DT sliding_VBG window_NN of_IN
+          fixed_VBN width_NN in_IN log_NN 
+          10_CD (_( Cy_NNP 5_CD *_NN Cy_NNP 3_LS )_) ,_, the_DT local_JJ mean_NN and_CC SD_NNP
+          was_VBD calculated_VBN for_IN each_DT gene_NN using_VBG the_DT data_NNS in_IN the_DT
+          normalized_JJ R-I_NNP plot_NN ._. Figure_NN 3_CD adepicts_NNS the_DT result_NN of_IN such_JJ
+          a_DT calculation_NN for_IN the_DT cell_NN line_NN KM_NNP 12_CD L_NNP 4_CD A_DT ,_, with_IN data_NNS less_JJR
+          than_IN 1_CD SD_NNP shown_VBN blue_JJ ,_, between_IN 1_CD SD_NNP and_CC 2_CD SD_NNP in_IN green_JJ ,_, and_CC
+          greater_JJR than_IN 2_CD SD_NNP in_IN red_JJ ,_, respectively_RB ;_: genes_NNS greater_JJR
+          than_IN 2_CD SD_NNP from_IN the_DT local_JJ mean_NN (_( 
+          Z_NNP >_NN 2_LS )_) are_VBP identified_VBN as_IN being_VBG
+          significantly_RB differentially_RB expressed_VBD ._.
+          The_DT shape_NN of_IN the_DT R-I_NNP plot_NN and_CC the_DT 
+          Z_NNP -_: score_NN distributions_NNS are_VBP
+          characteristic_NN of_IN the_DT samples_NNS being_VBG compared_VBN in_IN the_DT
+          microarray_NN assay_NN under_IN consideration_NN ._. For_IN closely_RB related_VBN
+          samples_NNS ,_, such_JJ as_IN RNA_NNP from_IN a_DT cell_NN line_NN and_CC the_DT same_JJ line_NN
+          perturbed_VBD with_IN a_DT stressor_NN ,_, the_DT R-I_NNP distribution_NN has_VBZ a_NNP
+          '_POS tadpole_NN '_'' shape_NN similar_JJ to_TO that_DT shown_VBN for_IN our_PRP$ self-self_JJ
+          hybridization_NN ,_, although_IN typically_RB with_IN a_DT slightly_RB broader_JJR
+          distribution_NN in_IN the_DT log_NN 
+          2_CD (_( ratio_NN )_) than_IN that_DT shown_VBN in_IN Figure_NN
+          3_CD a_DT ._. When_WRB two_CD very_RB different_JJ samples_NNS or_CC tissues_NNS are_VBP
+          compared_VBN ,_, however_RB ,_, the_DT distribution_NN generally_RB has_VBZ a_DT
+          characteristic_JJ '_POS eye_NN '_'' shape_NN ,_, with_IN the_DT greatest_JJS spread_NN
+          coming_VBG at_IN intermediate_JJ expression_NN levels_NNS ._. Figure_NN 3_CD bshows_NNS
+          the_DT results_NNS from_IN a_DT hybridization_NN comparing_VBG the_DT CaC_NNP 02_CD
+          (_( colon_NN )_) and_CC PA-_NNP 1_CD (_( ovary_JJ )_) cell_NN lines_NNS ._.
+        
+        
+          Analysis_NNP of_IN replicates_NNS
+          Expression_NNP data_NNS for_IN clones_NNS spotted_VBD in_IN duplicate_VB were_VBD
+          examined_VBN to_TO assess_VB reproducibility_NN within_IN each_DT array_NN ._.
+          Plots_NNP of_IN the_DT log_NN 
+          2_CD -_: transformed_VBN ratios_NNS of_IN the_DT Cy_NNP 5_CD and_CC
+          Cy_NNP 3_CD intensities_NNS for_IN the_DT two_CD replicates_NNS were_VBD generated_VBN for_IN
+          this_DT purpose_NN ._. As_IN can_MD be_VB seen_VBN in_IN the_DT representative_NN plot_NN
+          in_IN Figure_NN 4_CD a_DT (_( blue_JJ )_) ,_, log_VB 
+          2_CD (_( Cy_NNP 5_CD /_NN Cy_NNP 3_LS )_) values_NNS form_VBP a_NNP '_POS sphere_NN '_''
+          centered_VBN around_IN zero_CD with_IN the_DT majority_NN of_IN data_NNS points_NNS
+          lying_VBG between_IN -_: 0_CD ._. 5_CD and_CC +_NN 0_CD ._. 5_CD on_IN both_DT axes_NNS ._. However_RB ,_, a_DT
+          small_JJ number_NN of_IN outliers_NNS is_VBZ present_JJ and_CC probably_RB
+          represent_VB situations_NNS where_WRB one_CD or_CC both_DT of_IN the_DT replica_NN
+          spots_NNS are_VBP of_IN poor_JJ quality_NN ._. Similar_JJ plots_NNS were_VBD obtained_VBN
+          for_IN the_DT other_JJ 29_CD self-self_JJ hybridization_NN assays_NNS (_( data_NNS not_RB
+          shown_VBN )_) ._.
+          Because_IN one_CD cannot_NN determine_VBP 
+          a_DT priori_FW which_WDT of_IN the_DT duplicates_NNS is_VBZ
+          in_IN error_NN ,_, irreproducible_JJ elements_NNS should_MD be_VB removed_VBN
+          before_IN any_DT further_JJ analysis_NN ,_, unless_IN many_JJ more_JJR replicates_NNS
+          are_VBP analyzed_VBN ._. The_DT idea_NN of_IN outlier_NN filtering_VBG was_VBD also_RB
+          incorporated_VBN into_IN the_DT model_NN for_IN the_DT intensity-dependence_JJ
+          of_IN expression_NN ratios_NNS introduced_VBN by_IN Baggerly_NNP 
+          et_CC al_NN ._. [_NN 10_CD ]_NN ;_: we_PRP developed_VBD a_DT simple_JJ
+          approach_NN to_TO flag_NN and_CC eliminate_VB questionable_JJ replicates_NNS ._.
+          Ideally_RB ,_, Cy_NNP 5_CD /_NN Cy_NNP 3_CD ratios_NNS should_MD be_VB the_DT same_JJ for_IN the_DT two_CD
+          replicas_NNS and_CC log_VB 
+          2_CD (_( r_LS 
+          1_CD /_NN r_LS 
+          2_LS )_) (_( where_WRB r_LS 
+          1_CD and_CC r_LS 
+          2_CD are_VBP Cy_NNP 5_CD /_NN Cy_NNP 3_CD ratios_NNS for_IN the_DT two_CD
+          replicas_NNS )_) should_MD be_VB equal_JJ to_TO zero_CD ;_: replicates_NNS where_WRB this_DT
+          condition_NN is_VBZ not_RB satisfied_VBN probably_RB contain_VB one_CD or_CC more_RBR
+          bad_JJ elements_NNS ._. Consequently_RB ,_, we_PRP sought_VBD to_TO filter_NN out_RP genes_NNS
+          whose_WP$ log_VB 
+          2_CD (_( r_LS 
+          1_CD /_NN r_LS 
+          2_LS )_) deviates_NNS greatly_RB from_IN this_DT
+          expected_JJ value_NN of_IN zero_CD ._. We_PRP calculated_VBD the_DT mean_NN and_CC SD_NNP of_IN
+          this_DT log_NN 
+          2_CD (_( r_LS 
+          1_CD /_NN r_LS 
+          2_LS )_) for_IN each_DT pair_NN of_IN replicas_NNS in_IN the_DT
+          entire_JJ array_NN ,_, and_CC eliminated_VBD pairs_NNS of_IN elements_NNS whose_WP$ log_VB 
+          2_CD (_( r_LS 
+          1_CD /_NN r_LS 
+          2_LS )_) is_VBZ greater_JJR than_IN 2_CD SD_NNP from_IN the_DT
+          mean_NN ._. In_IN Figure_NN 4_CD a_DT ,_, 6_CD ._. 3_CD %_NN of_IN data_NNS points_NNS were_VBD eliminated_VBN
+          using_VBG this_DT outlier_NN criterion_NN (_( red_JJ )_) ,_, resulting_VBG in_IN a_DT much_RB
+          tighter_JJR dataset_NN ._.
+          We_PRP also_RB examined_VBD duplicate_VB clone_NN filtering_VBG in_IN a_DT
+          hybridization_NN assay_NN of_IN two_CD different_JJ samples_NNS ,_, CaCO_NNP 2_CD and_CC
+          PA-_NNP 1_CD (_( Figure_NN 4_CD b_SYM )_) ._. In_IN the_DT case_NN of_IN differential_NN expression_NN ,_,
+          the_DT correlation_NN of_IN the_DT replica_NN ratios_NNS is_VBZ expected_VBN to_TO be_VB
+          linear_JJ ._. The_DT correlation_NN increases_NNS from_IN r_LS =_SYM 0_CD ._. 86_CD (_( blue_JJ ;_:
+          dashed_VBN line_NN )_) to_TO r_LS =_SYM 0_CD ._. 95_CD (_( red_JJ ;_: solid_JJ line_NN )_) after_IN 1_CD ._. 7_CD %_NN of_IN
+          outliers_NNS are_VBP filtered_VBN out_IN using_VBG the_DT method_NN outlined_VBN
+          above_IN ._. The_DT substantial_JJ increase_NN in_IN the_DT correlation_NN
+          coefficient_NN suggests_VBZ that_IN our_PRP$ filtering_VBG procedure_NN
+          efficiently_RB removes_VBZ elements_NNS with_IN at_IN least_JJS one_CD unreliable_JJ
+          log_NN 
+          2_CD (_( Cy_NNP 5_CD /_NN Cy_NNP 3_LS )_) value_NN ._.
+          A_DT similar_JJ approach_NN can_MD be_VB used_VBN to_TO identify_VB
+          questionable_JJ replicate_VB spots_NNS on_IN separate_JJ slides_NNS ._. To_TO show_VB
+          this_DT ,_, five_CD cell_NN lines_NNS (_( CaOV_NNP 3_CD ,_, HCT-_NNP 116_CD ,_, KM_NNP 12_CD L_NNP 4_CD A_DT ,_, NT_NNP 2_CD /_NN D_NNP 1_CD ,_,
+          and_CC SW_NNP 480_CD )_) were_VBD selected_VBN and_CC assayed_JJ in_IN triplicate_NN ._. In_IN
+          addition_NN ,_, expression_NN in_IN CaCO_NNP 2_CD and_CC PA-_NNP 1_CD was_VBD compared_VBN in_IN
+          triplicate_NN hybridizations_NNS ._. RNA_NNP from_IN the_DT same_JJ isolation_NN
+          was_VBD used_VBN for_IN replicate_VB hybridizations_NNS ,_, thus_RB allowing_VBG us_PRP
+          to_TO concentrate_VB on_IN technical_JJ and_CC not_RB biological_JJ
+          replication_NN and_CC to_TO explore_VB more_RBR thoroughly_RB the_DT systematic_JJ
+          errors_NNS that_WDT can_MD arise_VB ._. Replicate_NNP slides_NNS were_VBD subject_JJ to_TO
+          filtering_VBG in_IN pairs_NNS (_( arrays_NNS 1_CD and_CC 2_CD ;_: 2_CD and_CC 3_CD ;_: 1_CD and_CC 3_LS )_)
+          using_VBG a_DT process_NN analogous_JJ to_TO that_DT applied_VBD to_TO within-slide_JJ
+          replicates_NNS ;_: representative_NN data_NNS are_VBP shown_VBN in_IN Figure_NN 5_CD ._.
+          Correlations_NNP of_IN log_NN 
+          2_CD (_( Cy_NNP 5_CD /_NN Cy_NNP 3_LS )_) values_NNS for_IN the_DT three_CD pairs_NNS
+          of_IN arrays_NNS before_IN (_( blue_JJ ;_: dashed_VBN line_NN )_) and_CC after_IN (_( red_JJ ;_:
+          solid_JJ line_NN )_) filtering_VBG for_IN the_DT CaOV_NNP 3_CD cell_NN line_NN self-self_JJ
+          hybridizations_NNS are_VBP shown_VBN in_IN Figure_NN 5_CD a_DT ._. The_DT same_JJ set_NN of_IN
+          plots_NNS for_IN differential_NN expression_NN assays_NNS of_IN CaCO_NNP 2_CD and_CC
+          PA-_NNP 1_CD cell_NN lines_NNS including_VBG linear_JJ fits_VBZ to_TO the_DT data_NNS is_VBZ
+          shown_VBN in_IN Figure_NN 5_CD b_SYM ._.
+          Triplicate_NNP hybridization_NN assays_NNS enable_VBP us_PRP to_TO assess_VB
+          variability_NN among_IN independent_JJ labeling_VBG reactions_NNS and_CC
+          hybridizations_NNS ._. As_IN can_MD be_VB seen_VBN in_IN Figure_NN 5_CD a_DT ,_, there_EX is_VBZ
+          some_DT variation_NN in_IN correlations_NNS for_IN each_DT pair_NN of_IN
+          hybridization_NN replicas_NNS (_( arrays_NNS 1_CD and_CC 2_CD ,_, as_RB well_RB as_IN 2_CD and_CC
+          3_CD ,_, show_NN better_JJR correlation_NN than_IN do_VBP arrays_NNS 1_CD and_CC 3_LS )_) ._. When_WRB
+          averaged_VBD over_IN three_CD pairs_NNS of_IN replicas_NNS ,_, however_RB ,_, the_DT
+          variability_NN between_IN arrays_NNS is_VBZ comparable_JJ to_TO within-array_JJ
+          variation_NN ._. Similar_JJ results_NNS were_VBD obtained_VBN for_IN the_DT
+          remaining_VBG four_CD cell_NN lines_NNS (_( data_NNS not_RB shown_VBN )_) ._. For_IN the_DT case_NN
+          of_IN hybridizations_NNS of_IN two_CD different_JJ samples_NNS (_( Figure_NN 5_CD b_SYM )_) ,_,
+          the_DT mean_NN r_LS values_NNS increase_VBP significantly_RB from_IN 0_CD ._. 83_CD (_( blue_JJ ;_:
+          dashed_VBN lines_NNS )_) to_TO 0_CD ._. 94_CD (_( red_JJ ;_: solid_JJ lines_NNS )_) after_IN outliers_NNS
+          in_IN each_DT pair_NN of_IN hybridizations_NNS are_VBP filtered_VBN out_RP ._. These_DT
+          correlations_NNS are_VBP ,_, as_IN in_IN the_DT case_NN of_IN self-self_JJ
+          hybridizations_NNS ,_, similar_JJ to_TO those_DT seen_VBN for_IN within-array_JJ
+          replicas_NNS ._.
+          Our_PRP$ analysis_NN suggests_VBZ that_DT replication_NN is_VBZ essential_JJ
+          for_IN ensuring_VBG data_NNS quality_NN ,_, whether_IN spotting_VBG replicate_VB
+          clones_NNS on_IN single_JJ arrays_NNS or_CC performing_VBG multiple_JJ
+          independent_JJ hybridization_NN assays_NNS ._. Further_RB ,_, the_DT replicate_VB
+          filtering_VBG process_NN we_PRP describe_VBP here_RB is_VBZ a_DT simple_JJ approach_NN
+          that_WDT can_MD eliminate_VB questionable_JJ array_NN elements_NNS and_CC
+          provide_VB higher-confidence_JJ expression_NN measurements_NNS ._.
+        
+        
+          Identification_NNP of_IN differentially_RB expressed_VBD
+          genes_NNS
+          To_TO show_VB how_WRB the_DT concepts_NNS presented_VBN in_IN this_DT study_NN can_MD
+          be_VB applied_VBN to_TO detect_VB differentially_RB regulated_VBN genes_NNS ,_, we_PRP
+          sought_VBD to_TO identify_VB sets_NNS of_IN genes_NNS that_WDT are_VBP over-_NN and_CC
+          under-expressed_JJ in_IN ovary_JJ relative_NN to_TO colon_NN by_IN analyzing_VBG
+          hybridization_NN assays_NNS of_IN CaCO_NNP 2_CD (_( colon_NN )_) and_CC PA-_NNP 1_CD (_( ovary_JJ )_)
+          cell_NN lines_NNS ._. The_DT CaCO_NNP 2_CD sample_NN was_VBD labeled_VBN with_IN Cy_NNP 3_CD and_CC the_DT
+          PA-_NNP 1_CD sample_NN was_VBD labeled_VBN with_IN Cy_NNP 5_CD ;_: genes_NNS that_WDT are_VBP
+          expressed_VBN in_IN colon_NN at_IN much_RB higher_JJR levels_NNS will_MD ,_, therefore_RB ,_,
+          have_VBP negative_JJ log-ratios_JJ and_CC ovary_JJ genes_NNS will_MD have_VB
+          positive_JJ log-ratios_JJ ._.
+          For_IN this_DT analysis_NN ,_, we_PRP applied_VBD the_DT process_NN outlined_VBN in_IN
+          the_DT previous_JJ discussion_NN as_IN follows_VBZ ._. First_LS ,_, individual_JJ
+          arrays_NNS were_VBD normalized_JJ using_VBG mean-log-centering_JJ and_CC
+          lowess_NNS procedures_NNS (_( as_IN outlined_VBN in_IN the_DT Cell_NNP line_NN self-self_JJ
+          hybridizations_NNS section_NN )_) ._. Next_JJ ,_, unreliable_JJ spots_NNS among_IN
+          triplicate_NN arrays_NNS were_VBD eliminated_VBN using_VBG the_DT filtering_VBG
+          approach_NN discussed_VBN in_IN the_DT Analysis_NNP of_IN replicates_NNS section_NN ._.
+          Then_RB ,_, intensity-dependent_JJ SDs_NNP on_IN the_DT log_NN 
+          2_CD (_( ratio_NN )_) were_VBD computed_JJ for_IN each_DT
+          array_NN ,_, as_IN described_VBN in_IN the_DT Intensity-dependent_NNP estimation_NN
+          of_IN differential_NN expression_NN section_NN ._. Array_NNP elements_NNS with_IN
+          ratios_NNS outside_IN the_DT 2_CD -_: SD_NNP limit_NN were_VBD defined_VBN as_RB
+          differentially_RB regulated_VBN ;_: 510_CD ,_, 543_CD and_CC 523_CD were_VBD
+          identified_VBN in_IN each_DT individual_JJ assay_NN ._. Finally_RB ,_, the_DT
+          intersection_NN of_IN differentially_RB expressed_VBD genes_NNS on_IN all_DT
+          three_CD arrays_NNS was_VBD taken_VBN ;_: this_DT resulted_VBD in_IN a_DT list_NN of_IN 324_CD
+          array_NN elements_NNS (_( 225_CD genes_NNS ,_, as_IN some_DT are_VBP within-array_JJ
+          replicates_NNS )_) ,_, of_IN which_WDT 157_CD (_( 109_CD genes_NNS )_) have_VBP higher_JJR
+          expression_NN in_IN colon_NN and_CC 167_CD (_( 116_CD genes_NNS )_) are_VBP more_RBR highly_RB
+          expressed_VBD in_IN the_DT ovary_JJ relative_NN to_TO colon_NN ._.
+          A_DT list_NN of_IN differentially_RB expressed_VBD genes_NNS with_IN mean_NN log_VB
+          
+          2_LS (_( Cy_NNP 5_CD /_NN Cy_NNP 3_LS )_) values_NNS and_CC SD_NNP calculated_VBD
+          over_IN three_CD experiments_NNS is_VBZ available_JJ (_( see_VB Additional_JJ data_NNS
+          files_NNS )_) ._. The_DT small_JJ SDs_NNP illustrate_VBP the_DT reproducibility_NN of_IN
+          measurements_NNS made_VBD using_VBG the_DT methods_NNS described_VBD here_RB and_CC
+          show_VB their_PRP$ ability_NN to_TO provide_VB a_DT high-confidence_JJ list_NN of_IN
+          differentially_RB expressed_VBD genes_NNS and_CC their_PRP$ expression_NN
+          ratios_NNS ._.
+          In_IN an_DT attempt_NN to_TO validate_NN the_DT differential_NN expression_NN
+          we_PRP observed_VBD in_IN this_DT assay_NN ,_, we_PRP compared_VBD our_PRP$ results_NNS to_TO the_DT
+          expression_NN patterns_NNS derived_VBN from_IN EST_NNP libraries_NNS generated_VBN
+          from_IN 18_CD colon_NN and_CC 12_CD ovarian_NN sources_NNS (_( including_VBG normal_JJ
+          tissue_NN ,_, cancer_NN tissue_NN ,_, and_CC cell_NN lines_NNS )_) using_VBG the_DT digital_JJ
+          differential_NN display_NN (_( DDD_NNP )_) available_JJ at_IN the_DT National_NNP
+          Center_NNP for_IN Biotechnology_NNP Information_NNP (_( NCBI_NNP )_) [_NN 15_CD ]_NN (_( see_VB
+          Additional_JJ data_NNS files_NNS )_) ._. Although_IN these_DT data_NNS sets_NNS are_VBP not_RB
+          completely_RB complementary_JJ ,_, we_PRP identified_VBD one_CD gene_NN that_WDT is_VBZ
+          significantly_RB upregulated_JJ in_IN the_DT colon_NN relative_JJ to_TO ovary_JJ
+          (_( 
+          PLAB_NNP ,_, coding_VBG for_IN prostate_NN
+          differentiation_NN factor_NN ;_: Hs_NNP ._. 296638_CD ;_: THC_NNP 888554_CD )_) ,_, and_CC one_CD
+          gene_NN that_WDT is_VBZ overexpressed_JJ in_IN the_DT ovary_JJ relative_NN to_TO colon_NN
+          (_( 24_CD -_: dehydrocholesterol_NN reductase_NN ;_: 
+          DHCR_NNP 24_CD ;_: Hs_NNP ._. 75616_CD ;_: THC_NNP 932478_CD )_) in_IN
+          both_DT microarray_NN and_CC DDD_NNP data_NNS ._. We_PRP also_RB identified_VBD three_CD
+          gene_NN families_NNS significantly_RB differentially_RB expressed_VBD in_IN
+          both_DT datasets_NNS ._. We_PRP found_VBD genes_NNS in_IN the_DT solute_NN carrier_NN
+          families_NNS 34_CD (_( Hs_NNP ._. 84700_CD ;_: DDD_NNP )_) ,_, 22_CD (_( THC_NNP 960422_CD ;_: microarray_NN )_)
+          and_CC 16_CD (_( THC_NNP 863879_CD ;_: microarray_NN )_) ,_, as_RB well_RB as_IN laminin_NN A_DT 5_CD
+          (_( Hs_NNP ._. 11669_CD ;_: DDD_NNP )_) and_CC A_DT 4_CD (_( THC_NNP 933239_CD ;_: microarray_NN )_) to_TO be_VB more_RBR
+          abundant_JJ in_IN the_DT ovary_JJ ._. In_IN addition_NN ,_, serologically_RB defined_VBN
+          colon_NN cancer_NN antigens_NNS 28_CD (_( Hs_NNP ._. 84700_CD ;_: DDD_NNP )_) and_CC 33_CD
+          (_( THC_NNP 899239_CD ;_: microarray_NN )_) were_VBD more_RBR highly_RB represented_VBD in_IN
+          colon_NN ._. However_RB ,_, we_PRP also_RB found_VBD two_CD discrepancies_NNS in_IN
+          relative_JJ abundances_NNS of_IN one_CD gene_NN and_CC one_CD gene_NN family_NN
+          between_IN the_DT DDD_NNP and_CC microarray_NN data_NNS ._. DDD_NNP data_NNS indicate_VBP
+          that_IN the_DT protein-kinase_JJ inhibitor_NN P_NN 58_CD (_( Hs_NNP ._. 177574_CD ;_:
+          THC_NNP 906738_CD )_) is_VBZ more_RBR abundant_JJ in_IN the_DT ovary_JJ but_CC the_DT same_JJ
+          gene_NN appears_VBZ to_TO be_VB more_RBR highly_RB represented_VBD in_IN the_DT colon_NN
+          in_IN our_PRP$ microarray_NN study_NN ._. Similarly_RB ,_, insulin-like_JJ growth_NN
+          factor_NN binding_JJ protein_NN 3_CD (_( Hs_NNP ._. 77326_CD ;_: DDD_NNP )_) is_VBZ upregulated_JJ
+          in_IN the_DT ovary_JJ relative_NN to_TO colon_NN while_IN the_DT opposite_NN is_VBZ true_JJ
+          for_IN insulin-like_JJ growth_NN factor_NN binding_JJ protein_NN 6_CD
+          (_( THC_NNP 1022140_CD ;_: microarray_NN )_) ._.
+          To_TO further_VB validate_NN our_PRP$ findings_NNS ,_, we_PRP performed_VBD
+          quantitative_JJ real-time_JJ reverse_NN transcription_NN PCR_NNP (_( RT-PCR_NNP )_)
+          assays_NNS on_IN 25_CD genes_NNS with_IN log_NN 
+          10_CD (_( R_NN *_NN G_NNP )_) and_CC log_VB 
+          2_CD (_( R_NN /_NN G_NNP )_) values_NNS encompassing_VBG the_DT entire_JJ
+          range_NN present_JJ in_IN the_DT microarray_NN data_NN ._. Expression_NNP ratios_NNS
+          obtained_VBN by_IN quantitative_JJ RT-PCR_NNP (_( see_VB Additional_JJ data_NNS
+          files_NNS )_) ,_, are_VBP in_IN good_JJ agreement_NN with_IN the_DT ratios_NNS obtained_VBD
+          using_VBG microarrays_NNS ._. This_DT concordance_NN is_VBZ especially_RB
+          significant_JJ for_IN genes_NNS with_IN low_JJ expression_NN ratios_NNS and_CC for_IN
+          transcripts_NNS expressed_VBD at_IN low_JJ copy_NN number_NN ,_, confirming_VBG the_DT
+          validity_NN of_IN our_PRP$ approach_NN for_IN obtaining_VBG a_DT high-confidence_JJ
+          list_NN of_IN differentially_RB expressed_VBD genes_NNS ._. RT-PCR_NNP data_NNS also_RB
+          showed_VBD that_IN the_DT P_NN 58_CD protein-kinase_JJ inhibitor_NN (_( Hs_NNP ._. 177574_CD ;_:
+          THC_NNP 906738_CD )_) is_VBZ upregulated_JJ in_IN the_DT colon_NN relative_JJ to_TO ovary_JJ ,_,
+          which_WDT supports_VBZ our_PRP$ array_NN results_NNS and_CC suggests_VBZ that_IN the_DT
+          discrepancy_NN between_IN microarrays_NNS and_CC DDD_NNP is_VBZ not_RB due_JJ to_TO
+          technical_JJ limitations_NNS of_IN microarray_NN assays_NNS but_CC reflects_VBZ a_DT
+          true_JJ biological_JJ difference_NN between_IN the_DT cell_NN lines_NNS we_PRP
+          compared_VBD and_CC tissues_NNS used_VBN in_IN DDD_NNP ._.
+        
+        
+          Reference_NNP pool_NN selection_NN
+          Comparison_NNP of_IN query_NN samples_NNS to_TO a_DT common_JJ reference_NN
+          sample_NN is_VBZ among_IN the_DT most_RBS widely_RB used_VBN experimental_JJ designs_NNS
+          for_IN large-scale_JJ microarray_NN studies_NNS [_NN 16_CD ,_, 17_CD ]_NN ._. Reference_NNP
+          samples_NNS often_RB consist_VBP of_IN pools_NNS of_IN RNA_NNP molecules_NNS derived_VBN
+          from_IN cell_NN lines_NNS because_IN cell_NN lines_NNS provide_VBP a_DT renewable_JJ
+          source_NN of_IN large_JJ quantities_NNS of_IN RNA_NNP ._. Each_DT cell_NN line_NN
+          expresses_VBZ a_DT distinct_JJ assortment_NN of_IN RNA_NNP species_NNS ,_, so_IN any_DT
+          particular_JJ cell_NN line_NN will_MD provide_VB measurable_JJ ,_, baseline_NN
+          hybridization_NN for_IN only_RB a_DT subset_NN of_IN the_DT genes_NNS on_IN an_DT array_NN ._.
+          Consequently_RB ,_, cell_NN line_NN RNA_NNP reference_NN pools_NNS are_VBP typically_RB
+          constructed_VBN from_IN a_DT large_JJ number_NN (_( 10_CD or_CC more_JJR )_) of_IN cell_NN
+          lines_NNS derived_VBN from_IN a_DT variety_NN of_IN primary_JJ tissues_NNS ._. The_DT idea_NN
+          underlying_VBG such_JJ a_DT design_NN is_VBZ that_IN by_IN combining_VBG RNAs_NNP from_IN
+          diverse_JJ cell_NN lines_NNS ,_, one_PRP might_MD obtain_VB a_DT more_RBR complete_JJ
+          representation_NN of_IN the_DT genes_NNS spotted_VBD on_IN the_DT array_NN ._.
+          This_DT approach_NN ,_, however_RB ,_, does_VBZ not_RB take_VB into_IN account_NN the_DT
+          expression_NN levels_NNS of_IN individual_JJ genes_NNS in_IN each_DT cell_NN line_NN ._.
+          While_IN genes_NNS expressed_VBD at_IN high_JJ levels_NNS will_MD give_VB detectable_JJ
+          signal_NN even_RB when_WRB diluted_VBN by_IN a_DT factor_NN of_IN 10_CD ,_, many_JJ of_IN the_DT
+          more_RBR rare_JJ transcripts_NNS may_MD get_VB diluted_VBN to_TO below_IN the_DT
+          detection_NN limit_NN ._. Therefore_RB ,_, we_PRP hypothesized_VBN that_IN
+          comparable_JJ or_CC better_JJR representation_NN of_IN spotted_VBD genes_NNS
+          might_MD be_VB obtained_VBN using_VBG fewer_JJR cell_NN lines_NNS ,_, each_DT expressing_VBG
+          a_DT large_JJ number_NN of_IN diverse_JJ genes_NNS ._. To_TO test_VB this_DT hypothesis_NNS ,_,
+          we_PRP constructed_VBN two_CD reference_NN pools_NNS ,_, TP-_NNP 1_CD and_CC TP-_NNP 2_CD ,_, using_VBG
+          a_DT naive_JJ gene-counting_JJ approach_NN designed_VBN to_TO include_VB three_CD
+          cell_NN lines_NNS with_IN the_DT greatest_JJS representation_NN of_IN unique_JJ
+          genes_NNS that_WDT are_VBP also_RB easy_JJ to_TO grow_VB and_CC yield_VB high_JJ
+          quantities_NNS of_IN RNA_NNP ._. TP-_NNP 1_CD consists_VBZ of_IN colon_NN cell_NN lines_NNS
+          CaCO_NNP 2_CD and_CC KM_NNP 12_CD L_NNP 4_CD A_DT as_RB well_RB as_IN the_DT ovarian_NN cell_NN line_NN
+          OVCAR_NNP 3_CD ;_: OVCAR_NNP 3_CD is_VBZ replaced_VBN with_IN the_DT U_NNP 118_CD MG_NNP (_( brain_NN )_) cell_NN
+          line_NN in_IN TP-_NNP 2_CD ._.
+          The_DT results_NNS of_IN our_PRP$ analysis_NN are_VBP summarized_VBD in_IN Figure_NN
+          6_CD ,_, which_WDT shows_VBZ a_DT histogram_NN representing_VBG the_DT percentage_NN of_IN
+          array_NN elements_NNS with_IN signals_NNS in_IN both_DT Cy_NNP 3_CD and_CC Cy_NNP 5_CD channels_NNS
+          in_IN self-self_JJ hybridizations_NNS ._. The_DT performance_NN of_IN TP-_NNP 1_CD is_VBZ
+          comparable_JJ to_TO that_DT of_IN the_DT Stratagene_NNP pool_NN (_( approximately_RB
+          75_CD %_NN )_) ,_, despite_IN a_DT large_JJ difference_NN in_IN the_DT number_NN of_IN cell_NN
+          lines_NNS in_IN each_DT pool_NN ._. This_DT supports_VBZ our_PRP$ hypothesis_NNS that_IN
+          adding_VBG more_JJR cell_NN lines_NNS to_TO the_DT pool_NN may_MD not_RB necessarily_RB
+          improve_VB the_DT overall_JJ gene_NN representation_NN because_IN some_DT
+          genes_NNS are_VBP diluted_VBN below_IN the_DT detection_NN limit_NN ._.
+          Including_VBG cell_NN lines_NNS from_IN very_RB dissimilar_JJ tissues_NNS may_MD ,_,
+          however_RB ,_, give_VBP a_DT better_JJR representation_NN of_IN the_DT genes_NNS on_IN the_DT
+          array_NN ._. TP-_NNP 2_CD contains_VBZ a_DT brain_NN instead_RB of_IN an_DT ovarian_NN cell_NN
+          line_NN and_CC covers_VBZ close_RB to_TO 80_CD %_NN of_IN the_DT spotted_VBN sequences_NNS ._.
+          This_DT improved_VBN performance_NN relative_JJ to_TO TP-_NNP 1_CD is_VBZ likely_JJ to_TO
+          be_VB due_JJ both_DT to_TO the_DT fact_NN that_DT brain_NN exhibits_VBZ the_DT greatest_JJS
+          diversity_NN of_IN transcripts_NNS (_( on_IN the_DT basis_NN of_IN based_VBN EST_NNP and_CC
+          serial_NN analysis_NN of_IN gene_NN expression_NN ,_, SAGE_NNP ,_, analysis_NN )_) ,_, and_CC
+          that_IN the_DT subset_NN of_IN genes_NNS expressed_VBD in_IN brain_NN is_VBZ more_JJR
+          disjoint_NN with_IN the_DT genes_NNS observed_VBD in_IN colon_NN than_IN in_IN ovary_JJ ._.
+          This_DT illustrates_VBZ that_IN a_DT simple_JJ pool_NN of_IN RNA_NNP from_IN diverse_JJ
+          cell_NN lines_NNS can_MD provide_VB a_DT superior_JJ reference_NN ._.
+        
+      
+      
+        Conclusion_NNP
+        DNA_NN microarray_NN assays_NNS performed_VBD using_VBG well_RB optimized_JJ
+        laboratory_NN protocols_NNS can_MD produce_VB high-quality_JJ ,_, reproducible_JJ
+        data_NNS ,_, although_IN the_DT use_NN of_IN replicates_NNS ,_, particularly_RB
+        dye-reversal_JJ ,_, or_CC '_POS flip-dye_JJ '_POS assays_NNS ,_, are_VBP highly_RB desirable_JJ ._.
+        While_IN global_JJ normalization_NN of_IN the_DT data_NNS can_MD help_VB to_TO provide_VB
+        meaningful_JJ expression_NN ratios_NNS ,_, a_DT more_RBR sophisticated_JJ
+        normalization_NN using_VBG lowess_NNS allows_VBZ for_IN correction_NN of_IN
+        intensity-dependent_JJ artifacts_NNS in_IN the_DT data_NNS ._. Together_RB ,_, the_DT
+        laboratory_NN and_CC analytical_JJ techniques_NNS described_VBD here_RB can_MD
+        produce_VB highly_RB precise_JJ and_CC accurate_JJ data_NNS ._. In_IN the_DT 30_CD assays_NNS
+        we_PRP performed_VBD ,_, the_DT global_JJ 2_CD -_: SD_NNP limit_NN corresponded_VBD to_TO an_DT
+        expression_NN ratio_NN between_IN ±_NN 1_CD ._. 33_CD -_: fold_VB and_CC ±_NN 1_CD ._. 62_CD -_: fold_VB
+        induction_NN or_CC repression_NN ,_, with_IN a_DT mean_NN of_IN ±_NN 1_CD ._. 47_CD
+        (_( corresponding_JJ to_TO log_VB 
+        2_CD (_( ratio_NN )_) values_NNS of_IN ±_NN 0_CD ._. 41_CD ,_, ±_NN 0_CD ._. 70_CD ,_, and_CC
+        ±_NN 0_CD ._. 56_CD ,_, respectively_RB )_) ,_, with_IN fewer_JJR than_IN 5_CD %_NN of_IN the_DT data_NNS
+        points_NNS falling_VBG outside_IN the_DT 2_CD SD_NNP limit_NN ._. This_DT suggests_VBZ that_IN
+        changes_NNS in_IN gene_NN expression_NN smaller_JJR than_IN the_DT ±_NN 2_CD -_: fold_VB
+        commonly_RB used_VBN can_MD be_VB reliably_RB identified_VBN as_IN differential_NN
+        expression_NN ._. More_RBR careful_JJ analysis_NN of_IN the_DT distribution_NN of_IN
+        ratios_NNS as_IN a_DT function_NN of_IN intensity_NN suggests_VBZ that_IN an_DT
+        intensity-dependent_JJ assessment_NN of_IN local_JJ SD_NNP of_IN the_DT
+        distribution_NN provides_VBZ a_DT better_JJR measure_NN of_IN statistically_RB
+        significant_JJ differential_NN expression_NN ;_: essentially_RB
+        calculating_VBG a_DT local_JJ 
+        Z_NNP -_: score_NN ._. The_DT same_JJ holds_VBZ true_JJ for_IN
+        tissue_NN RNA_NNP from_IN tumor_NN samples_NNS ._. Individual_NNP labeling_VBG
+        reactions_NNS and_CC hybridizations_NNS do_VBP not_RB introduce_VB significant_JJ
+        variability_NN ,_, as_IN judged_VBN from_IN good_JJ correlations_NNS of_IN replicate_VB
+        experiments_NNS ._. However_RB ,_, a_DT small_JJ number_NN of_IN outliers_NNS present_JJ in_IN
+        replicate_VB spots_NNS and_CC /_NN or_CC arrays_NNS can_MD be_VB filtered_VBN out_IN ,_,
+        underlining_VBG the_DT importance_NN of_IN replicates_NNS in_IN generating_NN
+        high-quality_JJ expression_NN data_NNS ._.
+        Pooled_NNP reference_NN samples_NNS should_MD be_VB designed_VBN on_IN the_DT basis_NN
+        not_RB only_RB of_IN representation_NN of_IN individual_JJ genes_NNS in_IN each_DT cell_NN
+        line_NN but_CC also_RB of_IN expression_NN levels_NNS of_IN genes_NNS within_IN the_DT cell_NN
+        lines_NNS ._. Adding_VBG more_JJR cell_NN lines_NNS to_TO the_DT pool_NN does_VBZ not_RB
+        necessarily_RB improve_VB overall_JJ gene_NN representation_NN because_IN
+        rare_JJ transcripts_NNS become_VBP undetectable_JJ when_WRB diluted_VBN in_IN a_DT pool_NN
+        of_IN a_DT large_JJ number_NN of_IN cell_NN lines_NNS ._.
+        Overall_RB ,_, the_DT data_NNS presented_VBD herein_NN ,_, derived_VBN from_IN a_DT large_JJ
+        number_NN of_IN RNA_NNP samples_NNS from_IN cell_NN lines_NNS and_CC tissue_NN ,_, suggest_VBP
+        that_IN the_DT laboratory_NN and_CC data_NNS analysis_NN protocols_NNS we_PRP describe_VBP
+        should_MD allow_VB for_IN a_DT more_RBR accurate_JJ and_CC reproducible_JJ
+        identification_NN of_IN differentially_RB expressed_VBD genes_NNS than_IN does_VBZ
+        the_DT selection_NN of_IN an_DT arbitrary_JJ ,_, global_JJ fold-change_JJ threshold_NN
+        chosen_VBN independent_JJ of_IN any_DT measure_NN of_IN the_DT natural_JJ
+        variability_NN in_IN the_DT data_NNS ._. We_PRP propose_VBP a_DT model_NN for_IN analysis_NN of_IN
+        cDNA_NN microarray_NN data_NNS consisting_VBG of_IN three_CD steps_NNS :_:
+        lowess-normalization_JJ of_IN individual_JJ arrays_NNS ,_, followed_VBN by_IN
+        replica_NN filtering_VBG to_TO remove_VB questionable_JJ elements_NNS ,_, and_CC
+        finally_RB estimation_NN of_IN the_DT local_JJ 
+        Z_NNP -_: score_NN for_IN identification_NN of_IN
+        differentially_RB regulated_VBN genes_NNS ._.
+      
+      
+        Materials_NNS and_CC methods_NNS
+        
+          Array_NNP fabrication_NN
+          cDNA_NN clones_NNS were_VBD obtained_VBN from_IN the_DT Research_NNP Genetics_NNP
+          sequence-verified_JJ human_JJ cDNA_NN collection_NN ._. Clone_NNP inserts_NNS
+          were_VBD PCR-amplified_NNP directly_RB from_IN culture_NN and_CC purified_JJ
+          according_VBG to_TO a_DT previously_RB published_VBN protocol_NN [_NN 5_CD ,_, 18_CD ]_NN ._.
+          PCR_NNP from_IN plasmid_NN miniprep_NN DNA_NNP was_VBD carried_VBN out_IN for_IN
+          microtiter_NN plates_NNS that_WDT had_VBD fewer_JJR than_IN 85_CD %_NN single-band_JJ PCR_NNP
+          products_NNS when_WRB amplified_VBN from_IN culture_NN ._. The_DT overall_JJ success_NN
+          rate_NN for_IN single-band_JJ amplification_NN was_VBD 88_CD %_NN ._. Clones_NNP were_VBD
+          printed_VBN in_IN duplicate_VB from_IN 50_CD %_NN DMSO_NNP onto_IN SuperAmine_NNP slides_NNS
+          (_( Telechem_NNP International_NNP )_) as_IN described_VBN previously_RB and_CC
+          cross-linked_JJ at_IN 90_CD mJ_NN using_VBG a_DT Stratalinker_NNP
+          (_( Stratagene_NNP )_) ._.
+        
+        
+          RNA_NNP extraction_NN
+          Cells_NNP were_VBD grown_VBN in_IN a_DT tissue_NN culture_NN incubator_NN (_( 37_CD °_NN C_NNP ,_,
+          5_CD %_NN CO_NNP 
+          2_LS )_) in_IN RPMI_NNP 1640_CD or_CC DMEM_NNP medium_NN (_( Life_NNP
+          Technologies_NNPS )_) supplemented_JJ with_IN 10_CD %_NN fetal_JJ bovine_JJ serum_NN ,_,
+          200_CD μg_NN /_NN ml_NN streptomycin_NN and_CC 200_CD U_NNP /_NN ml_NN penicillin_NN ._. RNA_NNP was_VBD
+          extracted_VBN with_IN Trizol_NNP (_( Life_NNP Technologies_NNPS )_) according_VBG to_TO
+          the_DT manufacturer_NN 's_POS protocol_NN and_CC stored_VBD at_IN -_: 80_CD °_NN C_NNP ._. mRNA_NN
+          selection_NN from_IN 100_CD μg_NN total_JJ RNA_NNP using_VBG oligo-d_JJ (_( T_NN )_) 
+          25_CD Dynabeads_NNP (_( Dynal_NNP )_) and_CC following_VBG the_DT
+          manufacturer_NN 's_POS directions_NNS yielded_VBD 2_CD -_: 3_CD μg_NN poly_RB (_( A_DT )_)
+          +_NN -_: enriched_JJ RNA_NNP in_IN 20_CD μl_NN 10_CD mM_NN Tris-_NNP HCl_NNP ,_, pH_NN 7_CD ._. 5_CD ._. Agilent_NNP
+          2100_CD Bioanalyzer_NNP mRNA_NN assays_NNS were_VBD carried_VBN out_IN on_IN 1_CD -_: μl_NN
+          aliquots_NNS and_CC ribosomal_JJ contamination_NN was_VBD estimated_VBN to_TO
+          vary_VB between_IN 0_CD and_CC 25_CD %_NN ._. The_DT rest_NN of_IN the_DT mRNA_NN sample_NN was_VBD
+          used_VBN to_TO prepare_VB fluorescently_RB labeled_VBN cDNA_NN probes_NNS ._.
+          RNA_NNP from_IN a_DT colon_NN tumor_NN liver_NN metastasis_NNS was_VBD extracted_VBN
+          with_IN Trizol_NNP (_( Life_NNP Technologies_NNPS )_) and_CC further_JJ purified_JJ on_IN
+          RNeasy_NNP columns_NNS (_( Qiagen_NNP )_) using_VBG the_DT protocol_NN supplied_VBN by_IN
+          the_DT manufacturers_NNS ._. For_IN each_DT labeling_VBG reaction_NN ,_, 20_CD μg_NN
+          total_JJ RNA_NNP were_VBD used_VBN ._.
+        
+        
+          Probe_NNP preparation_NN
+          First-strand_NNP cDNA_NN synthesis_NN was_VBD primed_VBN with_IN 4_CD μg_NN of_IN
+          random_JJ nonamers_NNS (_( New_NNP England_NNP Biolabs_NNP )_) or_CC 6_CD μg_NN random_JJ
+          hexamers_NNS (_( Life_NNP Technologies_NNPS )_) by_IN heating_VBG at_IN 70_CD °_NN C_NNP for_IN 10_CD
+          minutes_NNS ,_, snap-cooling_JJ in_IN dry_JJ ice_NN /_NN ethanol_NN for_IN 30_CD sec_NN ,_, and_CC
+          incubating_VBG at_IN room_NN temperature_NN for_IN an_DT additional_JJ 5_CD -_: 10_CD
+          min_NN ._. Reverse_VBP transcription_NN was_VBD performed_VBN in_IN the_DT presence_NN
+          of_IN 500_CD μM_NN each_DT of_IN dATP_NN ,_, dCTP_NN ,_, and_CC dGTP_NN ,_, 200_CD μM_NN
+          5_CD -_: aminoallyl-d_JJ UTP_NNP (_( Sigma_NNP )_) ,_, 300_CD μM_NN dTTP_NN ,_, 1_CD ×_NN first-strand_JJ
+          buffer_NN ,_, 10_CD mM_NN dithiothreitol_NN ,_, and_CC 400_CD U_NNP Superscript_NNP II_NNP
+          (_( Life_NNP Technologies_NNPS )_) in_IN 40_CD -_: μl_NN reactions_NNS at_IN 42_CD °_NN C_NNP for_IN 3_CD h_NN to_TO
+          overnight_JJ ._. Reactions_NNP were_VBD quenched_JJ by_IN the_DT addition_NN of_IN 10_CD
+          μl_NN of_IN 0_CD ._. 5_CD M_NNP EDTA_NNP and_CC RNA_NNP template_NN was_VBD hydrolyzed_JJ by_IN the_DT
+          addition_NN of_IN 10_CD μl_NN of_IN 1_CD M_NNP NaOH_NNP followed_VBN by_IN heating_VBG at_IN 70_CD °_NN C_NNP
+          for_IN 10_CD min_NN ._. Reactions_NNP were_VBD neutralized_VBN with_IN 10_CD μl_NN of_IN 1_CD M_NNP
+          HCl_NNP ,_, and_CC cDNA_NN was_VBD purified_JJ on_IN QIAquick_NNP columns_NNS (_( Qiagen_NNP )_)
+          according_VBG to_TO the_DT manufacturer_NN 's_POS directions_NNS but_CC
+          substituting_VBG phosphate_NN wash_NN buffer_NN (_( 5_CD mM_NN potassium_NN
+          phosphate_NN pH_NN 8_CD ._. 0_CD ,_, 80_CD %_NN ethanol_NN )_) for_IN buffer_NN PE_NNP ,_, and_CC
+          phosphate_NN elution_NN buffer_NN (_( 4_CD mM_NN potassium_NN phosphate_NN pH_NN
+          8_CD ._. 5_LS )_) for_IN buffer_NN EB_NNP ._.
+          cDNA_NN was_VBD lyophilized_JJ to_TO dryness_NN and_CC resuspended_JJ in_IN 4_CD ._. 5_CD
+          μl_NN of_IN 0_CD ._. 1_CD M_NNP sodium_NN carbonate_NN pH_NN 9_CD ._. 0_CD buffer_NN ._. NHS_NNP ester_NN
+          (_( 4_CD ._. 5_LS μl_NN )_) of_IN Cy_NNP 3_CD or_CC Cy_NNP 5_CD dye_NN (_( Amersham_NNP Pharmacia_NNP )_) in_IN DMSO_NNP
+          (_( dye_NN from_IN one_CD tube_NN was_VBD dissolved_VBN in_IN 72_CD μl_NN of_IN DMSO_NNP )_) were_VBD
+          added_VBN and_CC reactions_NNS were_VBD incubated_JJ at_IN room_NN temperature_NN in_IN
+          the_DT dark_NN for_IN 1_CD h_NN ._. Coupling_NNP reactions_NNS were_VBD quenched_JJ by_IN the_DT
+          addition_NN of_IN 41_CD μl_NN of_IN 0_CD ._. 1_CD M_NNP sodium_NN acetate_NN pH_NN 5_CD ._. 2_CD ,_, and_CC
+          unincorporated_JJ dye_NN was_VBD removed_VBN using_VBG QIAquick_NNP columns_NNS ._.
+          Labeling_VBG efficiency_NN was_VBD determined_VBN by_IN analyzing_VBG the_DT whole_JJ
+          undiluted_JJ sample_NN in_IN a_DT spectrophotometer_NN using_VBG a_DT 50_CD -_: μL_NN
+          MicroCuvette_NNP (_( Beckman_NNP )_) ._. Total_JJ incorporated_VBN Cy_NNP dye_NN ranged_VBD
+          from_IN 300_CD -_: 600_CD pmol_NN and_CC the_DT ratio_NN of_IN unlabeled_JJ to_TO labeled_VBN
+          nucleotides_NNS was_VBD typically_RB between_IN 25_CD and_CC 50_CD ._.
+        
+        
+          Hybridization_NNP and_CC image_NN processing_NN
+          Slides_NNS were_VBD prehybridized_JJ in_IN 1_CD ._. 0_CD %_NN BSA_NNP ,_, 5_CD ×_NN SSC_NNP ,_, 0_CD ._. 1_CD %_NN
+          SDS_NNP for_IN 45_CD min_NN ,_, washed_VBN by_IN repeated_VBN dipping_VBG in_IN MilliQ_NNP
+          water_NN twice_RB and_CC 2_CD -_: propanol_NN once_RB ,_, and_CC air_NN dried_VBD ._.
+          Fluorescent_NNP cDNA_NN probes_NNS were_VBD lyophilized_JJ to_TO dryness_NN and_CC
+          resuspended_JJ in_IN 12_CD μl_NN hybridization_NN buffer_NN (_( 50_CD %_NN formamide_NN ,_,
+          5_CD ×_NN SSC_NNP ,_, 0_CD ._. 1_CD %_NN SDS_NNP )_) ._. To_TO combined_VBN Cy_NNP 3_CD and_CC Cy_NNP 5_CD samples_NNS were_VBD
+          added_VBN 20_CD μg_NN Cot_NNP 1_CD DNA_NNP and_CC 20_CD μg_NN poly_RB (_( A_DT )_) +_NN DNA_NNP and_CC samples_NNS
+          were_VBD denatured_JJ at_IN 95_CD °_NN C_NNP for_IN 5_CD min_NN ,_, followed_VBN by_IN snap_NN
+          cooling_VBG on_IN ice_NN for_IN 1_CD min_NN ._. Room-temperature_NNP probes_NNS were_VBD
+          applied_VBN to_TO a_DT prehybridized_JJ array_NN ,_, covered_VBN with_IN a_DT glass_NN
+          coverslip_NN (_( Fisher_NNP )_) ,_, and_CC placed_VBD in_IN a_DT humidified_JJ
+          hybridization_NN chamber_NN (_( Corning_NNP )_) ._. Hybridizations_NNP were_VBD
+          carried_VBN out_RB at_IN 42_CD °_NN C_NNP for_IN 16_CD -_: 20_CD h_NN ,_, followed_VBN by_IN washing_VBG in_IN
+          (_( 5_CD min_NN each_DT )_) :_: 1_CD ×_NN SSC_NNP and_CC 0_CD ._. 2_CD %_NN SDS_NNP at_IN 42_CD °_NN C_NNP once_RB ,_, 0_CD ._. 1_CD ×_NN
+          SSC_NNP and_CC 0_CD ._. 2_CD %_NN SDS_NNP at_IN room_NN temperature_NN once_RB ,_, and_CC 0_CD ._. 1_CD ×_NN SSC_NNP
+          at_IN room_NN temperature_NN twice_RB ._. Arrays_NNP were_VBD scanned_JJ using_VBG a_DT
+          GenePix_NNP 4000_CD dual-color_JJ confocal_NN laser_NN scanner_NN (_( Axon_NNP )_) ._.
+          Data_NNP were_VBD collected_VBN in_IN Cy_NNP 3_CD and_CC Cy_NNP 5_CD channels_NNS and_CC stored_VBD as_IN
+          paired_VBN TIFF_NNP images_NNS ._.
+        
+        
+          Data_NNP analysis_NN
+          Spots_NNS were_VBD identified_VBN and_CC local_JJ background_NN subtracted_VBN
+          in_IN the_DT TIGR_NNP __NN Spotfinder_NNP software_NN [_NN 19_CD ]_NN ._. In_IN the_DT first_JJ step_NN ,_,
+          a_DT grid_NN consisting_VBG of_IN square_JJ cells_NNS is_VBZ drawn_VBN around_IN each_DT
+          array_NN element_NN ._. Spot_NNP segmentation_NN is_VBZ then_RB performed_VBN using_VBG
+          a_DT histogram_NN segmentation_NN method_NN that_WDT uses_VBZ the_DT
+          distribution_NN of_IN pixel_NN intensities_NNS to_TO separate_VB probable_JJ
+          signal_NN from_IN background_NN and_CC a_DT binary_JJ thresholding_VBG approach_NN
+          to_TO identify_VB spots_NNS ,_, followed_VBN by_IN a_DT procedure_NN to_TO exclude_VB
+          disconnected_VBN features_NNS ._. Raw_NNP intensity_NN for_IN each_DT element_NN is_VBZ
+          obtained_VBN by_IN first_JJ excluding_VBG saturated_VBN pixels_NNS and_CC then_RB
+          summing_VBG all_DT remaining_VBG pixel_NN intensities_NNS inside_IN the_DT spot_NN
+          contour_NN ._. The_DT area_NN outside_IN the_DT spot_NN contour_NN but_CC inside_IN the_DT
+          cell_NN is_VBZ used_VBN to_TO calculate_VB local_JJ background_NN ._. Background_NNP
+          per_IN pixel_NN is_VBZ estimated_VBN as_IN a_DT median_NN of_IN the_DT pixels_NNS in_IN this_DT
+          area_NN and_CC is_VBZ multiplied_VBN by_IN the_DT spot_NN area_NN to_TO give_VB an_DT
+          estimated_VBN spot_NN background_NN value_NN ._. In_IN the_DT final_JJ step_NN ,_, this_DT
+          integrated_JJ background_NN value_NN is_VBZ subtracted_VBN from_IN the_DT raw_JJ
+          integrated_VBN spot_NN intensity_NN to_TO produce_VB the_DT
+          background-subtracted_JJ integrated_VBN intensities_NNS we_PRP use_VBP for_IN
+          further_JJ analysis_NN ._. Furthermore_RB ,_, a_DT quality_NN control_NN (_( QC_NNP )_)
+          filter_NN is_VBZ used_VBN to_TO remove_VB questionable_JJ array_NN features_NNS ._. Two_CD
+          criteria_NNS for_IN spot_NN rejection_NN are_VBP a_DT spot_NN shape_NN that_IN
+          deviates_NNS greatly_RB from_IN a_DT circle_NN and_CC low_JJ signal-to-noise_JJ
+          ratio_NN ._. Spots_NNS for_IN which_WDT the_DT ratio_NN of_IN area_NN to_TO circumference_NN
+          deviates_NNS by_IN more_JJR than_IN 20_CD %_NN from_IN the_DT value_NN for_IN an_DT ideal_JJ
+          circle_NN and_CC spots_NNS containing_VBG fewer_JJR than_IN 50_CD %_NN of_IN pixels_NNS
+          above_IN the_DT median_JJ background_NN value_NN are_VBP flagged_JJ and_CC
+          eliminated_VBN from_IN further_JJ consideration_NN ._. This_DT approach_NN has_VBZ
+          proved_VBN extremely_RB robust_JJ to_TO misidentification_NN of_IN the_DT spot_NN
+          boundaries_NNS ,_, and_CC expression_NN measures_NNS have_VBP shown_VBN it_PRP to_TO be_VB
+          both_DT reproducible_JJ and_CC verifiable_JJ ._. The_DT output_NN data_NN from_IN
+          Spotfinder_NNP is_VBZ available_JJ as_IN additional_JJ data_NNS files_NNS ._.
+          Lowess_NNP normalization_NN was_VBD implemented_VBN using_VBG a_DT native_JJ
+          Java_NNP implementation_NN in_IN TIGR_NNP MIDAS_NNP (_( Microarray_NNP Data_NNP
+          Analysis_NNP System_NNP )_) ,_, freely_RB available_JJ through_IN [_NN 19_CD ]_NN and_CC
+          based_VBN on_IN the_DT LOCFIT_NNP package_NN developed_VBN by_IN Bell_NNP Labs_NNPS [_NN 20_CD ]_NN ._.
+          For_IN all_DT normalization_NN ,_, the_DT smoothing_VBG parameter_NN was_VBD set_VBN to_TO
+          33_CD %_NN ._. All_DT additional_JJ data_NN files_NNS and_CC protocols_NNS used_VBN in_IN this_DT
+          study_NN are_VBP available_JJ from_IN [_NN 21_CD ]_NN ._.
+        
+        
+          Quantitative_NNP real-time_JJ RT-PCR_NNP
+          Quantitative_NNP RT-PCR_NNP assays_NNS were_VBD performed_VBN on_IN the_DT ABI_NNP
+          Prism_NNP 7900_CD HT_NNP sequence-detection_JJ system_NN using_VBG the_DT Taqman_NNP
+          Reverse_VBP Transcription_NNP Kit_NNP (_( Applied_NNP Biosystems_NNP )_) and_CC
+          QuantiTech_NNP SYBRGreen_NNP PCR_NNP Kit_NNP (_( Qiagen_NNP )_) using_VBG a_DT two-step_JJ
+          reaction_NN with_IN protocols_NNS supplied_VBN by_IN manufacturers_NNS ._.
+          Primers_NNP were_VBD designed_VBN in_IN the_DT Primer_NNP 3_CD Old_NNP Version_NNP [_NN 22_CD ]_NN
+          using_VBG default_NN parameters_NNS with_IN minor_JJ modifications_NNS
+          (_( product_NN size_NN range_NN 100_CD -_: 150_CD ;_: optimum_JJ T_NN 
+          m_NN 60_CD ;_: minimum_JJ T_NN 
+          m_NN 58_CD ;_: maximum_NN T_NN 
+          m_NN 61_CD ;_: maximum_NN 3_CD '_POS complementarity_NN 1_LS )_) ._.
+          Following_VBG the_DT initial_JJ RT_NNP ,_, 1_CD μl_NN of_IN the_DT resulting_VBG reaction_NN
+          product_NN amplified_VBN by_IN PCR_NNP in_IN a_DT 20_CD μl_NN reaction_NN volume_NN with_IN
+          200_CD nM_NN final_JJ primer_NN concentration_NN ._. Data_NNP were_VBD normalized_JJ
+          to_TO 18_CD S_NNP ribosomal_JJ RNA_NNP Ambion_NNP QuantumRNA_NNP 18_CD S_NNP Internal_NNP
+          Standards_NNP Kit_NNP ;_: the_DT 18_CD S_NNP primers_NNS and_CC competimers_NNS were_VBD in_IN a_DT
+          3_CD :_: 7_CD ratio_NN with_IN the_DT primers_NNS at_IN 200_CD nM_NN final_JJ
+          concentration_NN ._.
+        
+      
+      
+        Additional_JJ data_NNS files_NNS
+        Spotfinder_NNP data_NNS files_NNS (_( tab-delimited_JJ text_NN files_NNS )_) and_CC
+        tables_NNS (_( Word_NNP files_NNS )_) showing_VBG (_( 1_LS )_) Differentially_NNP expressed_VBD
+        genes_NNS in_IN PA-_NNP 1_CD and_CC CaCO_NNP 2_CD cell_NN lines_NNS ,_, and_CC (_( 2_LS )_) genes_NNS
+        differentially_RB expressed_VBD in_IN colon_NN and_CC ovary_JJ as_IN determined_VBN
+        using_VBG digital_JJ differential_NN display_NN to_TO analyze_VB sequence_NN
+        abundance_NN in_IN EST_NNP libraries_NNS deposited_VBN in_IN dbEST_NN ,_, are_VBP
+        available_JJ with_IN as_IN a_DT zip_NN file_NN ._.
+        Additional_JJ data_NNS file_VBP 1_CD
+        Spotfinder_NNP data_NNS files_NNS and_CC tables_NNS showing_VBG differentially_RB
+        expressed_VBD genes_NNS in_IN PA-_NNP 1_CD and_CC CaCO_NNP 2_CD cell_NN lines_NNS ,_, and_CC genes_NNS
+        differentially_RB expressed_VBD in_IN the_DT colon_NN and_CC ovary_JJ
+        Spotfinder_NNP data_NNS files_NNS and_CC tables_NNS showing_VBG differentially_RB
+        expressed_VBD genes_NNS in_IN PA-_NNP 1_CD and_CC CaCO_NNP 2_CD cell_NN lines_NNS ,_, and_CC genes_NNS
+        differentially_RB expressed_VBD in_IN the_DT colon_NN and_CC ovary_JJ
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+      
+    
+  

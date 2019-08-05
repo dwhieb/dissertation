@@ -1,0 +1,611 @@
+
+  
+    
+      
+        Background_NNP
+        Standard_NNP graphical_JJ representations_NNS of_IN complex_JJ systems_NNS
+        have_VBP been_VBN developed_VBN for_IN many_JJ disciplines_NNS in_IN order_NN to_TO
+        communicate_VB ,_, archive_NN and_CC analyze_VB systems_NNS knowledge_NN ._.
+        Electronic_JJ circuit_NN diagrams_NNS and_CC architectural_JJ plans_NNS ,_, for_IN
+        instance_NN ,_, can_MD be_VB created_VBN ,_, read_VB and_CC analyzed_VBN by_IN
+        knowledgeable_JJ persons_NNS ,_, yet_RB there_EX is_VBZ no_DT such_JJ common_JJ
+        graphical_JJ language_NN for_IN describing_VBG functional_JJ systems_NNS in_IN
+        biology_NN ._. A_DT variety_NN of_IN representations_NNS are_VBP used_VBN in_IN print_NN or_CC
+        online_NN to_TO archive_NN knowledge_NN in_IN particular_JJ domains_NNS such_JJ as_IN
+        metabolic_JJ pathways_NNS [_NN 1_CD ,_, 2_CD ]_NN ,_, gene_NN networks_NNS [_NN 3_CD ]_NN ,_, signaling_VBG
+        networks_NNS [_NN 4_CD ,_, 5_CD ]_NN ,_, and_CC molecular_JJ interactions_NNS [_NN 6_CD ,_, 7_CD ]_NN ,_, yet_RB
+        are_VBP not_RB sufficiently_RB standardized_JJ to_TO represent_VB
+        cross-disciplinary_JJ systems_NNS -_: the_DT interactions_NNS of_IN gene_NN
+        expression_NN and_CC metabolism_NN at_IN the_DT inter-_NN and_CC intra-molecular_JJ
+        levels_NNS ,_, for_IN instance_NN ._. To_TO describe_VB such_JJ multidisciplinary_JJ
+        biological_JJ problems_NNS at_IN multiple_JJ levels_NNS of_IN abstraction_NN (_( for_IN
+        example_NN ,_, from_IN intramolecular_NN to_TO disease_NN phenotype_NN )_) ,_,
+        biologists_NNS customarily_RB resort_VBP to_TO informal_JJ cartoon_NN diagrams_NNS
+        which_WDT ,_, although_IN expressive_JJ ,_, are_VBP often_RB ambiguous_JJ and_CC must_MD be_VB
+        annotated_JJ to_TO be_VB interpreted_VBN properly_RB ._.
+        Here_RB we_PRP suggest_VBP that_IN a_DT standardized_JJ visual_JJ biological_JJ
+        description_NN language_NN would_MD provide_VB more_RBR readable_JJ and_CC less_RBR
+        ambiguous_JJ communication_NN and_CC ,_, with_IN computational_NN
+        implementation_NN ,_, provide_VBP a_DT basis_NN for_IN distributed_VBN searchable_JJ
+        archives_NNS of_IN functional_JJ (_( as_IN opposed_VBN to_TO structural_JJ )_)
+        knowledge_NN ,_, and_CC serve_VB as_IN a_NNP '_POS computer-aided_JJ design_NN '_'' (_( CAD_NNP )_)
+        language_NN for_IN simulating_VBG and_CC analyzing_VBG biological_JJ systems_NNS ._.
+        To_TO explore_VB these_DT possibilities_NNS ,_, we_PRP are_VBP developing_VBG a_DT
+        prototype_NN biological_JJ description_NN language_NN ,_, BioD_NNP ,_, as_IN a_DT
+        platform_NN to_TO test_VB its_PRP$ conceptual_JJ basis_NN ,_, explore_VB its_PRP$ utility_NN
+        and_CC identify_VB key_JJ issues_NNS surrounding_VBG its_PRP$ implementation_NN ._.
+      
+      
+        Results_NNS and_CC discussion_NN
+        
+          Functional_NNP properties_NNS :_: a_DT basis_NN for_IN a_DT biological_JJ
+          description_NN language_NN
+          If_IN the_DT goal_NN were_VBD simply_RB to_TO standardize_VB the_DT graphics_NNS of_IN
+          cartoon_NN diagrams_NNS ,_, one_PRP could_MD collect_VB and_CC standardize_VB sets_NNS
+          of_IN icons_NNS and_CC arrows_NNS for_IN use_NN as_IN '_POS clip_NN art_NN '_'' in_IN
+          general-purpose_JJ graphics_NNS software_NN or_CC as_IN templates_NNS in_IN
+          diagramming_VBG software_NN such_JJ as_IN Visio_NNP ™_NN (_( Microsoft_NNP ™_NN ;_: for_IN
+          Windows_NNP ™_NN )_) or_CC TopDown_NNP ™_NN (_( Kaetron_NNP ™_NN Software_NNP ;_: for_IN MacOS_NNP ™_NN and_CC
+          Windows_NNP ™_NN )_) ._. To_TO build_VB a_DT sophisticated_JJ software_NN editor_NN for_IN a_DT
+          visual_JJ language_NN and_CC ,_, especially_RB ,_, to_TO design_VB the_DT language_NN
+          to_TO support_VB computer_NN archiving_VBG and_CC analysis_NN ,_, one_PRP must_MD ,_,
+          however_RB ,_, establish_VB deeper_JJR foundations_NNS for_IN creating_VBG ,_,
+          organizing_VBG and_CC using_VBG graphic_JJ elements_NNS ._.
+          As_IN a_DT starting_NN point_NN ,_, consider_VBP the_DT common_JJ metaphor_NN of_IN
+          biological_JJ systems_NNS as_IN '_POS circuits_NNS '_'' ._. Indeed_RB ,_, viewing_VBG
+          metabolic_JJ pathways_NNS as_IN electrical_JJ circuits_NNS is_VBZ particularly_RB
+          apt_JJ as_IN ,_, in_IN each_DT case_NN ,_, a_DT limited_JJ set_NN of_IN entity_NN classes_NNS
+          (_( metabolites_NNS versus_CC resistors_NNS ,_, capacitors_NNS and_CC inductors_NNS )_)
+          are_VBP represented_VBN by_IN icons_NNS that_WDT are_VBP linked_VBN by_IN lines_NNS (_( or_CC
+          arrows_NNS )_) representing_VBG interactions_NNS between_IN iconified_JJ
+          entities_NNS ._. The_DT benefit_NN of_IN such_JJ pathway_NN and_CC circuit_NN
+          diagrams_NNS is_VBZ ,_, of_IN course_NN ,_, that_IN they_PRP help_VBP us_PRP infer_NN and_CC track_NN
+          how_WRB a_DT change_NN in_IN a_NNP '_POS state_NN property_NN '_'' (_( for_IN example_NN ,_,
+          metabolite_NN concentration_NN versus_CC electrical_JJ voltage_NN )_) of_IN
+          one_CD icon_NN acts_NNS via_IN an_DT '_POS action_NN property_NN '_'' (_( metabolic_JJ flux_NN
+          rate_NN versus_CC electrical_JJ current_JJ )_) on_IN the_DT state_NN properties_NNS
+          of_IN linked_VBN icons_NNS ._. The_DT problem_NN for_IN biologists_NNS is_VBZ that_IN
+          metabolite_NN concentrations_NNS and_CC flux_NN rates_NNS ,_, while_IN
+          absolutely_RB fundamental_JJ to_TO many_JJ biological_JJ systems_NNS ,_, are_VBP
+          not_RB the_DT only_RB functional_JJ properties_NNS that_WDT need_VBP to_TO be_VB
+          considered_VBN ._.
+          Just_RB as_IN architectural_JJ plans_NNS must_MD display_VB and_CC
+          distinguish_VB several_JJ interacting_VBG circuit_NN systems_NNS with_IN
+          different_JJ properties_NNS (_( such_JJ as_IN power_NN ,_, water_NN ,_, drainage_NN ,_,
+          ventilation_NN ,_, telephone_NN ,_, security_NN ,_, and_CC digital_JJ cable_NN )_) ,_,
+          diagrams_NNS of_IN multidisciplinary_JJ biological_JJ systems_NNS must_MD
+          distinguish_VB multiple_JJ functions_NNS (_( metabolic_JJ pathways_NNS ,_,
+          enzyme_NN kinetics_NNS ,_, ion_NN fluxes_NNS ,_, fluid_JJ flow_NN )_) characterized_VBN by_IN
+          different_JJ properties_NNS (_( concentration_NN ,_, catalytic_JJ activity_NN ,_,
+          voltage_NN ,_, pressure_NN ,_, respectively_RB )_) ._. Thus_RB ,_, the_DT key_JJ challenge_NN
+          for_IN describing_VBG ,_, archiving_VBG and_CC analyzing_VBG complex_JJ
+          biological_JJ systems_NNS is_VBZ not_RB simply_RB to_TO collect_VB expressive_JJ
+          icons_NNS and_CC arrows_NNS but_CC to_TO establish_VB a_DT system_NN of_IN expressive_JJ
+          icons_NNS and_CC arrows_NNS that_WDT consistently_RB and_CC unambiguously_RB
+          represents_VBZ the_DT functional_JJ entities_NNS and_CC their_PRP$ specific_JJ
+          functional_JJ properties_NNS ._. Does_VBZ an_DT arrow_NN increase_NN (_( or_CC
+          decrease_VB )_) the_DT concentration_NN or_CC the_DT catalytic_JJ activity_NN of_IN
+          an_DT enzyme_NN icon_NN ?_. Can_MD we_PRP consistently_RB represent_VBP the_DT
+          separate_JJ effects_NNS of_IN transmembrane_NN ion_NN flow_NN on_IN both_DT ion_NN
+          concentration_NN and_CC transmembrane_NN voltage_NN ?_.
+          Whereas_IN state_NN and_CC action_NN properties_NNS are_VBP generally_RB
+          implicit_JJ in_IN most_JJS diagrams_NNS ,_, computer_NN implementation_NN of_IN a_DT
+          visual_JJ language_NN requires_VBZ that_IN language_NN elements_NNS be_VB
+          formalized_JJ as_IN computational_NN objects_NNS in_IN order_NN to_TO edit_VB ,_,
+          archive_NN and_CC analyze_VB models_NNS ._. To_TO this_DT end_NN ,_, we_PRP began_VBD
+          designing_VBG BioD_NNP by_IN creating_VBG building-block_JJ icons_NNS (_( Figure_NN
+          1_LS )_) that_WDT represent_VBP primitive_JJ functional_JJ entities_NNS such_JJ as_IN
+          atoms_NNS ,_, molecules_NNS ,_, compartments_NNS and_CC so_RB on_RB ,_, where_WRB each_DT icon_NN
+          is_VBZ understood_VBN implicitly_RB (_( as_IN in_IN metabolic_JJ pathway_NN and_CC
+          electrical_JJ circuit_NN diagrams_NNS )_) ,_, but_CC specifically_RB ,_, to_TO
+          possess_VB one_CD or_CC more_JJR state_NN properties_NNS ._. For_IN instance_NN ,_,
+          '_'' atom_NN '_'' and_CC '_POS molecule_NN '_'' icons_NNS each_DT have_VBP a_NNP '_POS concentration_NN '_''
+          property_NN ._. A_NNP '_POS compartment_NN '_'' icon_NN has_VBZ '_POS volume_NN '_'' and_CC (_( surface_NN )_)
+          '_POS area_NN '_'' properties_NNS ._. A_NNP '_POS membrane-bound_JJ compartment_NN '_'' icon_NN ,_,
+          derived_VBN from_IN a_DT simple_JJ compartment_NN ,_, is_VBZ used_VBN to_TO represent_VB
+          cells_NNS and_CC organelles_NNS and_CC inherits_VBZ the_DT compartment_NN 's_POS
+          volume_NN and_CC area_NN properties_NNS while_IN including_VBG a_DT
+          (_( transmembrane_NN )_) '_POS voltage_NN '_'' property_NN ._. In_IN this_DT manner_NN ,_, an_DT
+          extensible_JJ hierarchical_JJ lexicon_NN of_IN building-block_JJ icons_NNS
+          can_MD be_VB built_VBN by_IN deriving_VBG new_JJ icons_NNS from_IN existing_VBG icons_NNS ._.
+          Furthermore_RB ,_, additional_JJ state_NN properties_NNS (_( such_JJ as_IN
+          temperature_NN ,_, ionic_JJ charge_NN ,_, isotopy_NN ,_, pressure_NN )_) can_MD be_VB
+          created_VBN and_CC appended_VBN to_TO new_JJ or_CC existing_VBG icons_NNS as_IN needed_VBN
+          to_TO create_VB new_JJ functional_JJ entities_NNS ;_: an_DT '_POS ion_NN '_'' icon_NN is_VBZ an_DT
+          atom_NN icon_NN with_IN an_DT ionic_JJ charge_NN property_NN ,_, for_IN
+          instance_NN ._.
+          In_IN addition_NN to_TO creating_VBG new_JJ icons_NNS by_IN derivation_NN ,_,
+          compound_NN icons_NNS representing_VBG complex_JJ structures_NNS can_MD be_VB
+          built_VBN by_IN aggregating_VBG icons_NNS according_VBG to_TO common-sense_JJ
+          structural_JJ rules_NNS (_( for_IN example_NN ,_, a_NNP '_POS molecular_JJ site_NN '_'' ,_, but_CC
+          not_RB a_DT cell_NN ,_, can_MD be_VB part_NN of_IN a_DT molecule_NN )_) ._. In_IN the_DT examples_NNS
+          below_IN ,_, a_DT simple_JJ model_NN of_IN the_DT cell-cycle_JJ kinase_NN Cdk_NNP 4_CD
+          begins_VBZ as_IN a_DT molecule_NN icon_NN to_TO which_WDT is_VBZ appended_VBN a_NNP '_POS kinase_NN
+          site_NN '_'' (_( a_DT square_NN with_IN a_DT K_NNP )_) ,_, a_NNP '_POS phosphorylation_NN site_NN '_'' (_( a_DT
+          circle_NN with_IN a_DT P_NN )_) and_CC a_NNP '_POS binding_JJ site_NN '_'' (_( a_DT small_JJ circle_NN
+          with_IN a_DT dot_VBP )_) (_( Figure_NN 2_CD a_DT )_) ._. As_IN another_DT example_NN ,_, the_DT
+          membrane-bound_JJ compartment_NN representing_VBG a_DT cell_NN could_MD
+          contain_VB other_JJ compartments_NNS representing_VBG internal_JJ
+          organelles_NNS or_CC even_RB compartments_NNS defined_VBN solely_RB by_IN
+          diffusion-limitations_JJ (_( for_IN example_NN a_DT submembrane_NN
+          compartment_NN )_) ._.
+          Functional_NNP interactions_NNS between_IN building-block_JJ icons_NNS ,_,
+          whether_IN aggregated_JJ as_IN compound_NN icons_NNS or_CC not_RB ,_, are_VBP
+          represented_VBN by_IN '_POS action_NN '_'' arrows_NNS (_( Figure_NN 1_CD ,_, upper_JJ right_JJ
+          panel_NN )_) that_WDT are_VBP designed_VBN to_TO minimize_VB the_DT functional_JJ
+          ambiguity_NN of_IN informal_JJ cartoon_NN diagrams_NNS ._. It_PRP is_VBZ required_VBN ,_,
+          for_IN instance_NN ,_, that_IN arrows_NNS consistently_RB distinguish_VB :_: which_WDT
+          (_( if_IN there_EX is_VBZ more_JJR than_IN one_CD )_) of_IN an_DT icon_NN 's_POS functional_JJ
+          properties_NNS are_VBP affected_VBN either_CC by_IN context_NN (_( as_IN in_IN
+          cartoons_NNS )_) or_CC by_IN appearance_NN (_( for_IN example_NN ,_, double-weight_JJ
+          arrows_NNS change_VBP concentration_NN properties_NNS ,_, by_IN chemical_NN
+          reactions_NNS or_CC transport_NN ,_, whereas_IN single-weight_JJ arrows_NNS
+          activate_VBP or_CC inhibit_VB activity_NN properties_NNS )_) ;_: and_CC how_WRB the_DT
+          property_NN is_VBZ affected_VBN (_( for_IN example_NN ,_, filled_VBN heads_VBZ mean_VB
+          '_POS increase_NN '_'' ,_, open_JJ heads_VBZ mean_VB '_POS decrease_VB '_POS )_) ._. As_IN for_IN the_DT
+          lexicon_NN of_IN icons_NNS ,_, the_DT lexicon_NN of_IN action_NN arrows_NNS in_IN Figure_NN
+          1_CD could_MD be_VB extended_VBN to_TO include_VB other_JJ forms_NNS to_TO represent_VB ,_,
+          say_VB ,_, thermal_JJ fluxes_NNS (_( which_WDT change_VBP temperature_NN properties_NNS )_)
+          and_CC fluid_JJ flows_NNS (_( which_WDT change_VBP compartmental_NN volume_NN and_CC
+          pressure_NN properties_NNS )_) ._.
+          In_IN the_DT Cdk_NNP 4_CD kinase_NN model_NN of_IN Figure_NN 2_CD we_PRP use_VBP
+          single-weight_JJ arrows_NNS to_TO represent_VB how_WRB the_DT activity_NN of_IN the_DT
+          kinase_NN site_NN is_VBZ inhibited_VBD by_IN occupancy_NN of_IN the_DT p_NN 15_CD binding_JJ
+          site_NN and_CC is_VBZ activated_VBN by_IN occupancy_NN of_IN the_DT phosphorylation_NN
+          site_NN ._. A_DT double-weight_JJ ,_, solid-headed_JJ '_POS phosphorylate_NN '_'' arrow_NN
+          represents_VBZ the_DT transfer_NN of_IN phosphate_NN groups_NNS by_IN the_DT kinase_NN
+          site_NN of_IN Cdk_NNP 4_CD to_TO increase_VB occupancy_NN of_IN the_DT retinoblastoma_NN
+          protein_NN (_( RB_NNP )_) phosphorylation_NN site_NN ._. A_DT phosphatase_NN
+          molecular_JJ site_NN (_( a_DT square_NN with_IN open-style_JJ P_NN )_) represents_VBZ
+          how_WRB an_DT unspecified_JJ phosphatase_NN activity_NN reduces_VBZ the_DT
+          occupancy_NN of_IN the_DT RB_NNP phosphorylation_NN site_NN ._. A_DT dashed_VBN ,_,
+          double-weight_JJ '_POS occupy_VB '_POS arrow_NN represents_VBZ the_DT binding_JJ to_TO
+          and_CC increased_VBN occupancy_NN of_IN p_NN 15_CD to_TO its_PRP$ binding_JJ site_NN on_IN
+          Cdk_NNP 4_CD ._. In_IN this_DT manner_NN the_DT diagram_NN can_MD represent_VB both_DT
+          intra-_NN and_CC inter-molecular_JJ site-site_JJ interactions_NNS while_IN
+          distinguishing_VBG activation_NN /_NN inhibition_NN (_( as_IN by_IN
+          conformational_NN changes_NNS )_) from_IN chemical_NN reactions_NNS between_IN
+          species_NNS ._.
+          Consistent_NNP coding_VBG of_IN qualitative_JJ effects_VBZ as_IN '_POS increase_NN '_''
+          or_CC '_POS decrease_NN '_POS arrows_NNS allows_VBZ qualitative_JJ '_POS what_WP if_IN
+          experiments_NNS where_WRB an_DT initiating_VBG '_POS event_NN '_'' -_: an_DT increase_NN or_CC
+          decrease_NN of_IN a_DT functional_JJ property_NN of_IN one_CD icon_NN ,_, say_VBP -_: can_MD
+          be_VB tracked_VBN through_IN a_DT model_NN (_( or_CC a_DT network_NN of_IN models_NNS ,_, see_VB
+          below_IN )_) as_IN a_DT chain_NN of_IN events_NNS ._. Such_JJ events_NNS chains_NNS can_MD be_VB
+          displayed_VBN in_IN '_POS event_NN diagrams_NNS '_POS to_TO represent_VB some_DT events_NNS
+          (_( but_CC not_RB necessarily_RB all_DT events_NNS )_) as_IN chains_NNS of_IN '_POS event_NN '_''
+          icons_NNS (_( each_DT representing_VBG a_DT change_NN of_IN a_DT specific_JJ
+          functional_JJ property_NN )_) linked_VBN by_IN 'cause_IN '_POS arrows_NNS ._. For_IN
+          instance_NN ,_, the_DT event_NN diagram_NN in_IN Figure_NN 2_CD bdisplays_NNS the_DT
+          consequences_NNS (_( as_IN events_NNS icons_NNS )_) of_IN increasing_VBG the_DT
+          concentration_NN of_IN p_NN 15_CD in_IN the_DT model_NN in_IN Figure_NN 2_CD a_DT ._. In_IN
+          complex_JJ systems_NNS ,_, such_JJ consistent_JJ qualitative_JJ
+          representations_NNS can_MD reveal_VB previously_RB unappreciated_JJ
+          causal_NN links_NNS -_: redundant_JJ parallel_JJ pathways_NNS or_CC feedback_NN
+          loops_NNS -_: in_IN models_NNS built_VBN solely_RB from_IN pairwise_NN interactions_NNS
+          of_IN many_JJ functional_JJ parts_NNS ._.
+          As_IN we_PRP will_MD discuss_VB below_RB ,_, formalizing_VBG a_DT functional_JJ
+          descriptive_JJ language_NN for_IN biology_NN can_MD offer_VB additional_JJ
+          benefits_NNS for_IN exploring_VBG and_CC understanding_VBG the_DT function_NN of_IN
+          complex_JJ biological_JJ systems_NNS if_IN the_DT functional_JJ structures_NNS
+          and_CC processes_VBZ can_MD be_VB adequately_RB and_CC unambiguously_RB
+          described_VBD ._.
+        
+        
+          Extending_NNP BioD_NNP to_TO other_JJ domains_NNS
+          A_DT major_JJ criterion_NN for_IN the_DT utility_NN of_IN any_DT technical_JJ
+          language_NN is_VBZ whether_IN it_PRP can_MD fully_RB express_VB concepts_NNS within_IN
+          a_DT domain_NN of_IN knowledge_NN ;_: that_DT is_VBZ ,_, is_VBZ the_DT language_NN
+          '_'' complete_JJ '_'' ?_. For_IN a_DT domain_NN such_JJ as_IN biology_NN which_WDT is_VBZ almost_RB
+          limitless_JJ in_IN terms_NNS of_IN physical_JJ (_( not_RB to_TO mention_VB psychic_JJ ,_,
+          social_JJ and_CC evolutionary_JJ )_) phenomena_NNS ,_, it_PRP is_VBZ unlikely_JJ that_IN
+          any_DT single_JJ language_NN will_MD suffice_VB for_IN all_DT purposes_NNS -_: nor_CC
+          could_MD such_JJ a_DT language_NN be_VB proved_VBN complete_JJ by_IN some_DT
+          inductive_JJ process_NN ._. Rather_RB ,_, in_IN our_PRP$ approach_NN to_TO designing_VBG
+          and_CC developing_VBG BioD_NNP ,_, we_PRP have_VBP begun_VBN with_IN basic_JJ
+          cell-biological_JJ models_NNS as_IN test_NN beds_NNS for_IN BioD_NNP 's_POS conceptual_JJ
+          framework_NN (_( that_WDT is_VBZ ,_, of_IN functional_JJ properties_NNS ,_, icons_NNS and_CC
+          arrows_NNS )_) ,_, its_PRP$ lexicon_NN and_CC its_PRP$ icon-arrow_JJ linking_VBG rules_NNS
+          (_( tantamount_JJ to_TO a_DT '_POS graphical_JJ grammar_NN '_'' )_) ._. We_PRP have_VBP
+          iteratively_RB tested_VBN and_CC modified_VBN the_DT language_NN to_TO describe_VB
+          an_DT expanding_VBG array_NN of_IN biological_JJ functions_NNS that_WDT now_RB
+          includes_VBZ online_NN models_NNS of_IN :_: the_DT cell-cycle_JJ G_NNP 1_CD /_NN S_NNP checkpoint_NN
+          machinery_NN as_IN it_PRP may_MD be_VB controlled_VBN by_IN ion_NN channel_NN
+          activation_NN [_NN 8_CD ]_NN ;_: and_CC the_DT metabolic_JJ ,_, signaling_VBG and_CC
+          neuronal_NN pathways_NNS by_IN which_WDT the_DT ketogenic_JJ diet_NN may_MD affect_VB
+          seizure_NN susceptibility_NN [_NN 9_CD ]_NN ._. In_IN this_DT early_JJ phase_NN of_IN
+          design_NN we_PRP expect_VBP modifications_NNS in_IN basic_JJ as_IN well_RB as_IN
+          superficial_JJ features_NNS (_( as_IN for_IN any_DT software_NN design_NN
+          process_NN )_) ,_, but_CC we_PRP also_RB expect_VBP that_IN the_DT basic_JJ precepts_NNS of_IN
+          the_DT functional-property_JJ approach_NN can_MD be_VB extended_VBN to_TO other_JJ
+          phenomenological_JJ domains_NNS such_JJ as_IN fluid_JJ flow_NN ,_, heat_NN
+          exchange_NN ,_, neural_NN circuitry_NN ,_, and_CC so_RB forth_RB ._. To_TO demonstrate_VB
+          the_DT progress_NN of_IN language_NN development_NN within_IN the_DT
+          cell-biological_JJ domain_NN ,_, we_PRP will_MD describe_VB and_CC discuss_VB the_DT
+          G_NNP 1_CD /_NN S_NNP checkpoint_NN control_NN model_NN ._.
+        
+        
+          Extending_NNP the_DT lexicon_NN to_TO describe_VB G_NNP 1_CD /_NN S_NNP checkpoint_NN
+          machinery_NN
+          With_IN a_DT few_JJ additional_JJ icons_NNS and_CC arrows_NNS ,_, the_DT complex_JJ
+          molecular_JJ signaling_VBG network_NN that_WDT includes_VBZ Cdk_NNP 4_CD and_CC
+          controls_VBZ the_DT G_NNP 1_CD /_NN S_NNP transition_NN can_MD be_VB described_VBN compactly_RB
+          (_( Figure_NN 3_LS )_) ._. First_LS ,_, a_DT simple_JJ rectangle_NN is_VBZ used_VBN to_TO
+          represent_VB a_DT '_POS process_NN '_'' that_WDT may_MD be_VB ,_, but_CC need_MD not_RB be_VB ,_,
+          specified_VBN by_IN a_DT separate_JJ model_NN (_( see_VB below_IN )_) ._. Second_JJ ,_, we_PRP use_VBP
+          an_DT arrow_NN with_IN a_DT starred_JJ circle_NN as_IN a_DT tail_NN to_TO mean_VB
+          '_POS produces_VBZ '_POS to_TO correspond_VB to_TO commonly_RB used_VBN shorthand_NN for_IN
+          saying_VBG that_IN a_DT commodity_NN is_VBZ produced_VBN where_WRB the_DT specific_JJ
+          mechanism_NN of_IN production_NN is_VBZ either_CC unknown_JJ or_CC not_RB germane_NN
+          to_TO the_DT model_NN ._. Figure_NN 3_CD can_MD then_RB represent_VB a_DT very_RB complex_JJ
+          network_NN of_IN intramolecular_NN and_CC intermolecular_NN actions_NNS
+          controlling_VBG the_DT G_NNP 1_CD /_NN S_NNP cell-cycle_JJ transition_NN [_NN 6_CD ,_, 10_CD ,_, 11_CD ,_,
+          12_CD ,_, 13_CD ,_, 14_CD ]_NN ,_, including_VBG Cdk_NNP 2_CD ,_, cyclins_NNS A_DT and_CC E_NNP ,_, the_DT
+          inhibitor_NN proteins_NNS p_NN 21_CD and_CC p_NN 27_CD and_CC inputs_NNS from_IN
+          transforming_VBG growth_NN factor-β_JJ (_( TGF-β_NNP )_) stimulation_NN and_CC DNA_NNP
+          damage_NN processes_NNS ._.
+        
+        
+          Extensions_NNS for_IN compartmental_NN transport_NN ,_, gene_NN
+          expression_NN and_CC membrane_NN biophysics_NNS
+          BioD_NNP 's_POS iconography_NN can_MD be_VB extended_VBN to_TO accommodate_VB
+          additional_JJ cell-biological_JJ phenomena_NNS ._. For_IN instance_NN ,_, the_DT
+          model_NN of_IN Figure_NN 4_CD introduces_VBZ '_POS membrane-bound_JJ compartments_NNS '_POS
+          in_IN order_NN to_TO model_VB the_DT dependence_NN of_IN the_DT nuclear_JJ
+          concentration_NN of_IN cyclin_NN D_NNP 1_CD on_IN the_DT complex_JJ kinetics_NNS of_IN its_PRP$
+          synthesis_NN ,_, degradation_NN and_CC cytoplasmic-nuclear_JJ transport_NN ._.
+          The_DT figure_NN also_RB introduces_VBZ two_CD derivatives_NNS of_IN the_NNP
+          '_POS molecule_NN '_'' icon_NN :_: a_NNP '_POS dimer_NN '_'' icon_NN (_( adapted_VBN from_IN Kohn_NNP [_NN 6_CD ]_NN )_)
+          to_TO represent_VB dimers_NNS such_JJ as_IN cyclin_NN D_NNP 1_CD -_: Cdk_NNP 4_CD and_CC a_NNP
+          '_POS biomolecule_NN '_'' icon_NN as_IN a_DT shorthand_NN to_TO represent_VB
+          catalytically_RB active_JJ molecules_NNS with_IN both_DT '_POS concentration_NN '_''
+          and_CC '_POS activity_NN '_'' properties_NNS (_( for_IN example_NN the_DT kinases_NNS in_IN the_DT
+          mitogen-to-_JJ ERK_NNP and_CC -_: Akt_NNP kinase_NN cascades_NNS )_) ._. The_NNP
+          '_POS dimerization_NN '_'' action_NN arrow_NN (_( dashed_VBN ,_, double-weight_JJ )_) is_VBZ
+          derived_VBN from_IN the_NNP '_POS bind_NN occupy_VB '_POS arrow_NN to_TO link_VB to_TO species_NNS
+          participating_VBG in_IN the_DT dimerization_NN reaction_NN ._.
+          To_TO describe_VB the_DT possible_JJ effects_NNS of_IN membrane_NN potential_NN
+          and_CC ion_NN fluxes_NNS on_IN cellular_JJ activity_NN in_IN Figure_NN 5_CD ,_, we_PRP have_VBP
+          introduced_VBN an_DT electrical_JJ '_POS voltage_NN '_'' property_NN (_( represented_VBN
+          by_IN the_NNP '_POS depol_NN '_'' (_( depolarization_NN )_) process_NN icon_NN )_) of_IN
+          membrane-bound_JJ compartments_NNS and_CC an_DT ionic_JJ '_POS charge_NN '_''
+          property_NN used_VBD to_TO derive_VB '_POS ion_NN '_'' icons_NNS from_IN atom_NN icons_NNS ._. Ion_NNP
+          channel_NN function_NN is_VBZ modeled_VBN as_IN a_NNP '_POS transporter_NN '_'' -_: derivative_JJ
+          '_POS ion_NN channel_NN '_'' that_WDT is_VBZ used_VBN to_TO represent_VB the_DT K_NNP +_NN and_CC Ca_MD
+          2_CD +_NN ion_NN transport_NN pathways_NNS as_IN parts_NNS of_IN ATP-sensitive_NNP
+          potassium_NN channels_NNS (_( KATP_NNP )_) and_CC calcium_NN channels_NNS ,_,
+          respectively_RB ._. A_NNP '_POS depol_NN '_'' process_NN icon_NN is_VBZ appended_VBN to_TO the_DT
+          cytoplasmic_JJ compartment_NN 's_POS membrane_NN to_TO represent_VB how_WRB
+          depolarization_NN is_VBZ decreased_VBN by_IN K_NNP +_NN efflux_NN ,_, increased_VBN by_IN Ca_MD
+          2_CD +_NN influx_NN ,_, and_CC further_JJ activates_NNS voltage-dependent_JJ Ca_MD
+          2_CD +_NN channels_NNS ._. With_IN these_DT additions_NNS ,_, we_PRP can_MD represent_VB the_DT
+          hypothetical_JJ action_NN of_IN '_POS K-_NNP channel_NN blockers_NNS '_POS that_DT bind_NN to_TO
+          and_CC inhibit_VB ATP-sensitive_NNP potassium_NN channels_NNS so_IN that_WDT
+          increased_VBD intracellular_NN Ca_MD 2_CD +_NN activates_NNS intranuclear_NN
+          calmodulin_NN ._.
+          The_DT lexicon_NN and_CC example_NN models_NNS presented_VBN so_RB far_RB have_VBP
+          focused_VBN primarily_RB on_IN cell_NN signaling_VBG and_CC transduction_NN
+          pathways_NNS where_WRB intramolecular_NN site-site_JJ interactions_NNS (_( for_IN
+          example_NN conformational_NN regulation_NN of_IN kinase_NN activity_NN )_) are_VBP
+          prominent_JJ ._. However_RB ,_, intermolecular_NN steric_JJ interactions_NNS
+          figure_VBP just_RB as_RB prominently_RB in_IN gene-regulatory_JJ systems_NNS ,_, as_IN
+          exemplified_VBN in_IN the_DT classic_JJ problem_NN of_IN the_DT lysis-lysogeny_JJ
+          '_POS genetic_JJ switch_NN '_POS of_IN lambda_NN phage_NN [_NN 15_CD ]_NN ._. This_DT system_NN is_VBZ
+          modeled_VBN in_IN Figure_NN 6_CD to_TO illustrate_VB how_WRB activation_NN and_CC
+          inhibition_NN arrows_NNS can_MD be_VB adapted_VBN to_TO represent_VB both_DT steric_JJ
+          hindrance_NN and_CC mutual_JJ cooperativity_NN of_IN binding_JJ ._. For_IN
+          instance_NN ,_, steric_JJ hindrance_NN between_IN the_DT binding_VBG of_IN the_DT
+          transcription_NN factor_NN Cro_NNP to_TO its_PRP$ operator_NN (_( Cro-_NNP 
+          OR_NNP 1_LS )_) and_CC RNA_NNP polymerase_NN (_( RNAP_NNP )_) to_TO
+          the_DT promoter_NN 
+          PR_NNP (_( RNAP-_NNP 
+          PR_NNP )_) is_VBZ represented_VBN by_IN a_DT
+          double-headed_JJ '_POS inhibition_NN '_'' arrow_NN linking_VBG the_DT respective_JJ
+          binding-reaction_JJ arrows_NNS ._. The_DT positive_JJ cooperativity_NN of_IN
+          the_DT binding_JJ reactions_NNS CI-_NNP 
+          OR_NNP 2_CD ,_, RNAP-_NNP 
+          PRM_NNP and_CC CI-RNAP_NNP is_VBZ represented_VBN by_IN
+          three_CD pairs_NNS of_IN double-tailed_JJ '_POS activation_NN '_'' arrows_NNS that_IN
+          each_DT link_NN two_CD binding_JJ reactions_NNS to_TO a_DT third_JJ reaction_NN that_WDT
+          is_VBZ enhanced_VBN by_IN the_DT two_CD previous_JJ binding_JJ events_NNS ._. The_DT
+          cooperativity_NN being_VBG mutual_JJ ,_, the_DT three_CD sets_NNS of_IN
+          double-headed_JJ arrows_NNS are_VBP superimposed_VBN to_TO form_VB a_DT triangle_NN
+          of_IN arrows_NNS linking_VBG the_DT three_CD binding_JJ arrows_NNS ._. Similar_JJ
+          cooperativity_NN in_IN the_DT formation_NN of_IN CI-CI_NNP and_CC CI-_NNP 
+          OR_NNP 1_CD bonds_NNS with_IN the_DT CI-_NNP 
+          OR_NNP 2_CD bond_NN further_JJ stabilizes_VBZ the_DT
+          association_NN of_IN RNAP_NNP with_IN 
+          PRM_NNP (_( see_VB Figure_NN 6_CD legend_NN for_IN further_JJ
+          discussion_NN )_) ._.
+          The_DT example_NN models_NNS in_IN Figures_NNS 3_CD ,_, 4_CD ,_, 5_CD ,_, 6_CD demonstrate_VB
+          that_IN a_DT functional_JJ description_NN language_NN can_MD be_VB extended_VBN by_IN
+          defining_VBG new_JJ functional_JJ properties_NNS ,_, associating_VBG the_DT
+          properties_NNS with_IN existing_VBG or_CC new_JJ icons_NNS ,_, and_CC using_VBG the_DT new_JJ
+          icons_NNS to_TO represent_VB a_DT wide_JJ variety_NN of_IN biological_JJ
+          phenomena_NNS ._. In_IN creating_VBG the_DT BioD_NNP lexicon_NN and_CC drawing_VBG
+          conventions_NNS we_PRP have_VBP opted_VBN for_IN simple_JJ icons_NNS and_CC arrows_NNS
+          (_( more_JJR elaborate_VB and_CC expressive_JJ graphics_NNS can_MD readily_RB be_VB
+          imagined_VBN )_) so_IN that_IN diagrams_NNS can_MD be_VB easily_RB drawn_VBN by_IN hand_NN or_CC
+          with_IN a_DT variety_NN of_IN general_JJ purpose_NN computer_NN graphics_NNS
+          applications_NNS ._. Creating_NNP and_CC editing_NN models_NNS is_VBZ greatly_RB
+          facilitated_JJ ,_, however_RB ,_, by_IN applications_NNS such_JJ as_IN TopDown_NNP ™_NN
+          (_( as_IN used_VBN here_RB )_) or_CC Visio_NNP ™_NN that_WDT provide_VBP '_POS templates_NNS '_POS of_IN
+          reuseable_JJ icons_NNS and_CC arrows_NNS and_CC that_IN also_RB maintain_VB
+          icon-icon_JJ arrow_NN links_NNS as_IN icons_NNS are_VBP moved_VBN about_IN in_IN the_DT
+          field_NN of_IN the_DT diagram_NN ._. Even_RB at_IN this_DT stage_NN of_IN development_NN ,_,
+          BioD_NNP diagrams_NNS created_VBN by_IN these_DT general_JJ graphic_JJ and_CC
+          diagramming_VBG tools_NNS can_MD be_VB readily_RB imported_VBN to_TO available_JJ
+          web_NN page_NN design_NN tools_NNS to_TO create_VB ,_, edit_VB ,_, link_NN and_CC post_NN
+          models_NNS on_IN the_DT internet_NN (_( see_VB sample_NN BioD_NNP model_NN sites_NNS [_NN 8_CD ,_,
+          9_CD ]_NN )_) ._.
+        
+        
+          Design_NN considerations_NNS for_IN a_DT BioD_NNP editor_NN
+          To_TO fully_RB realize_VB the_DT advantages_NNS of_IN a_DT standardized_JJ
+          visual_JJ language_NN ,_, however_RB ,_, custom_NN editors_NNS will_MD be_VB required_VBN
+          for_IN creating_VBG new_JJ icon_NN and_CC arrow_NN objects_NNS ,_, for_IN maintaining_VBG
+          icon_NN and_CC arrow_NN lexicons_NNS ,_, and_CC for_IN creating_VBG and_CC editing_NN
+          models_NNS ._. The_DT key_JJ first_JJ step_NN in_IN developing_VBG editors_NNS (_( as_RB well_RB
+          as_IN archiving_VBG and_CC analysis_NN software_NN ,_, see_VB below_IN )_) is_VBZ to_TO
+          develop_VB standardized_JJ ,_, platform-independent_JJ computer_NN
+          representations_NNS of_IN core_NN BioD_NNP language_NN elements_NNS
+          (_( functional_JJ properties_NNS ,_, icons_NNS ,_, arrows_NNS and_CC models_NNS )_) in_IN
+          object-oriented_JJ programming_NN (_( OOP_NNP )_) terms_NNS so_IN that_IN editors_NNS
+          and_CC browsers_NNS can_MD be_VB developed_VBN on_IN a_DT number_NN of_IN
+          platforms_NNS ._.
+          In_IN OOP_NNP parlance_NN ,_, for_IN instance_NN ,_, BioD_NNP icons_NNS and_CC arrow_NN
+          objects_NNS would_MD '_POS know_VB '_POS how_WRB to_TO draw_VB themselves_PRP ,_, '_'' inherit_VBP '_POS
+          functional_JJ and_CC graphical_JJ properties_NNS from_IN '_POS parent_NN '_'' icons_NNS
+          and_CC arrows_NNS ,_, and_CC know_VB how_WRB to_TO link_VB to_TO each_DT other_JJ ._. The_DT tasks_NNS
+          of_IN a_DT BioD_NNP editor_NN ,_, as_IN we_PRP envisage_NN ,_, would_MD be_VB to_TO create_VB
+          icons_NNS and_CC arrows_NNS ,_, organize_VB them_PRP into_IN lexicons_NNS and_CC
+          palettes_NNS ,_, and_CC allow_VB users_NNS to_TO draw_VB and_CC link_VB them_PRP into_IN
+          models_NNS ._. A_DT particularly_RB attractive_JJ ,_, but_CC considerably_RB more_RBR
+          sophisticated_JJ ,_, feature_NN would_MD allow_VB models_NNS to_TO be_VB built_VBN and_CC
+          formatted_JJ automatically_RB according_VBG to_TO pairwise_NN functional_JJ
+          interactions_NNS as_IN available_JJ in_IN metabolic_JJ pathway_NN ,_, gene_NN
+          network_NN and_CC protein_NN interaction_NN databases_NNS ._.
+        
+        
+          Model-model_NNP links_NNS for_IN archiving_VBG and_CC searching_VBG
+          system_NN models_NNS
+          A_DT standardized_JJ biological_JJ description_NN language_NN that_WDT is_VBZ
+          formalized_JJ in_IN terms_NNS of_IN computational_NN and_CC not_RB just_RB
+          graphical_JJ objects_NNS offers_VBZ two_CD very_RB attractive_JJ benefits_NNS ._.
+          First_LS ,_, it_PRP would_MD be_VB possible_JJ to_TO build_VB models_NNS of_IN very_RB large_JJ
+          systems_NNS by_IN linking_VBG individual_JJ submodels_NNS into_IN distributed_VBN
+          model_NN networks_NNS on_IN the_DT internet_NN ._. Second_JJ ,_, it_PRP would_MD be_VB
+          possible_JJ to_TO treat_VB such_JJ model_NN networks_NNS as_IN searchable_JJ
+          archives_NNS of_IN functional_JJ knowledge_NN that_WDT can_MD be_VB queried_VBN for_IN
+          specific_JJ functional_JJ relationships_NNS ._.
+          The_DT first_JJ possibility_NN can_MD be_VB illustrated_VBN by_IN linking_VBG
+          models_NNS (_( see_VB Figures_NNS 3_CD ,_, 4_CD ,_, 5_LS )_) into_IN networks_NNS using_VBG only_RB two_CD
+          kinds_NNS of_IN model-model_JJ links_VBZ :_: '_POS action_NN '_'' and_CC '_POS identity_NN '_''
+          links_NNS ._. Action_NNP links_NNS allow_VBP a_DT functional_JJ property_NN of_IN an_DT
+          icon_NN in_IN one_CD model_NN to_TO act_VB on_IN a_DT functional_JJ property_NN of_IN an_DT
+          icon_NN or_CC action_NN in_IN another_DT model_NN ,_, as_IN if_IN in_IN a_DT single_JJ model_NN ._.
+          For_IN instance_NN ,_, an_DT action_NN link_NN (_( iconified_JJ as_IN a_DT wall_NN plug_NN )_)
+          allows_VBZ the_DT calcium-dependent_JJ activation_NN of_IN calmodulin_NN in_IN
+          Figure_NN 4_CD to_TO inhibit_VB the_DT export_NN of_IN cyclin_NN D_NNP 1_CD from_IN the_DT
+          nucleus_NN in_IN Figure_NN 3_CD ._. Identity_NNP links_NNS ,_, on_IN the_DT other_JJ hand_NN ,_,
+          allow_VB models_NNS to_TO share_VB a_DT common_JJ icon_NN and_CC its_PRP$ properties_NNS ._.
+          For_IN instance_NN ,_, an_DT identity_NN link_NN (_( iconified_JJ as_IN an_DT =_SYM sign_NN )_)
+          establishes_VBZ that_IN the_DT cyclin_NN D_NNP 1_CD concentration_NN in_IN Figure_NN
+          2_CD represents_VBZ the_DT same_JJ cyclin_NN D_NNP 1_CD concentration_NN as_IN in_IN the_DT
+          nucleus_NN in_IN Figure_NN 3_CD ._. Additional_JJ examples_NNS of_IN model-model_JJ
+          links_NNS can_MD be_VB seen_VBN in_IN a_DT network_NN of_IN models_NNS created_VBN to_TO
+          explain_VB how_WRB the_DT ketogenic_JJ diet_NN might_MD affect_VB seizure_NN
+          activity_NN [_NN 9_CD ]_NN ._.
+          The_DT second_JJ possibility_NN is_VBZ to_TO establish_VB online_NN models_NNS
+          as_IN searchable_JJ archives_NNS of_IN functional_JJ ,_, as_IN opposed_VBN to_TO
+          structural_JJ ,_, relationships_NNS ._. Just_RB as_IN modern_JJ bioinformatics_NNS
+          provides_VBZ immense_JJ databases_NNS and_CC search_NN tools_NNS for_IN molecular_JJ
+          structures_NNS and_CC polymer_NN sequences_NNS [_NN 16_CD ]_NN ,_, we_PRP envisage_NN that_IN
+          with_IN suitable_JJ computational_NN implementation_NN ,_, distributed_VBN
+          online_NN models_NNS may_MD be_VB queried_VBN not_RB only_RB for_IN local_JJ pairwise_NN
+          interactions_NNS (_( such_JJ as_IN site-site_JJ interactions_NNS )_) but_CC also_RB
+          for_IN long-distance_NN chains_NNS of_IN events_NNS (_( for_IN example_NN '_'' Find_VBP
+          models_NNS where_WRB a_DT potassium_NN channel_NN blocker_NN affects_VBZ
+          cell-cycle_JJ progression_NN '_'' )_) ,_, a_DT capability_NN not_RB available_JJ in_IN
+          any_DT other_JJ approach_NN to_TO biological_JJ systems_NNS ._. Implementing_NNP
+          this_DT capability_NN would_MD depend_VB ,_, first_JJ ,_, on_IN encoding_VBG and_CC
+          storing_VBG BioD_NNP language_NN elements_NNS and_CC models_NNS as_IN objects_NNS in_IN
+          XML_NNP (_( Extensible_NNP Markup_NNP Language_NNP [_NN 17_CD ]_NN )_) ._. This_DT is_VBZ a_DT
+          standard_JJ language_NN for_IN describing_VBG and_CC exchanging_VBG
+          information_NN on_IN the_DT internet_NN and_CC is_VBZ rapidly_RB beginning_VBG to_TO
+          fulfill_VB its_PRP$ promise_NN [_NN 18_CD ]_NN as_IN a_DT means_NN of_IN representing_VBG
+          biological_JJ knowledge_NN such_JJ as_IN polymer_NN sequences_NNS [_NN 19_CD ]_NN ,_,
+          cellular_JJ and_CC anatomical_JJ structures_NNS [_NN 20_CD ]_NN and_CC mathematical_JJ
+          models_NNS of_IN biological_JJ systems_NNS [_NN 21_CD ]_NN ._. Second_JJ ,_, to_TO link_VB model_NN
+          elements_NNS into_IN distributed_VBN networks_NNS on_IN the_DT internet_NN ,_,
+          XML-encoded_NNP BioD_NNP objects_NNS and_CC models_NNS can_MD be_VB linked_VBN using_VBG
+          XLink_NNP (_( XML_NNP Linking_VBG Language_NNP [_NN 22_CD ]_NN )_) and_CC queried_VBN for_IN
+          patterns_NNS of_IN functional_JJ interactions_NNS using_VBG query_NN languages_NNS
+          such_JJ as_IN Lore_NNP (_( Lightweight_NNP Object_NNP Repository_NNP [_NN 23_CD ]_NN )_) that_WDT
+          have_VBP been_VBN developed_VBN for_IN distributed_VBN ,_, semistructured_JJ
+          data_NNS ._.
+        
+        
+          Beyond_IN description_NN :_: model_NN simulation_NN and_CC
+          analysis_NN
+          Visual_NNP languages_NNS in_IN other_JJ fields_NNS [_NN 24_CD ,_, 25_CD ]_NN have_VBP been_VBN
+          implemented_VBN as_IN formal_JJ computer_NN languages_NNS so_IN that_IN the_DT
+          diagrams_NNS are_VBP not_RB only_RB comprehensible_JJ to_TO humans_NNS but_CC can_MD be_VB
+          analyzed_VBN by_IN computers_NNS ._. This_DT includes_VBZ CAD_NNP systems_NNS for_IN
+          electronic_JJ circuit_NN design_NN and_CC visual_JJ languages_NNS for_IN
+          computer_NN programming_NN (_( for_IN example_NN ProLog_NNP )_) as_RB well_RB as_IN
+          mathematical_JJ modeling_NN software_NN that_IN translates_NNS diagrams_NNS
+          into_IN mathematical_JJ equations_NNS for_IN quantitative_JJ analysis_NN ._.
+          Indeed_RB ,_, visual_JJ languages_NNS suitable_JJ for_IN mathematical_JJ
+          modeling_NN in_IN biology_NN (_( for_IN example_NN Stella_NNP ™_NN [_NN 26_CD ]_NN ,_, SAAM_NNP II_NNP ™_NN
+          [_NN 27_CD ,_, 28_CD ]_NN and_CC KineCyte_NNP ™_NN [_NN 29_CD ,_, 30_CD ]_NN )_) have_VBP contributed_VBN to_TO
+          the_DT establishment_NN of_IN quantitative_JJ modeling_NN as_IN a_NNP '_POS gold_NN
+          standard_JJ '_POS and_CC critical_JJ element_NN of_IN biological_JJ
+          analysis_NN ._.
+          Despite_IN the_DT successes_NNS and_CC value_NN of_IN quantitative_JJ
+          analytical_JJ methods_NNS ,_, it_PRP must_MD be_VB recognized_VBN that_DT progress_NN
+          in_IN the_DT knowledge_NN of_IN biological_JJ systems_NNS proceeds_NNS largely_RB
+          on_IN qualitative_JJ information_NN and_CC reasoning_NN (_( '_POS A_DT binds_NNS to_TO B_NNP ._. '_POS
+          '_POS If_IN C_NNP increases_NNS then_RB D_NNP decreases_NNS ._. '_POS )_) rather_RB than_IN
+          quantitative_JJ analysis_NN ._. This_DT is_VBZ due_JJ in_IN large_JJ part_NN to_TO the_DT
+          huge_JJ range_NN of_IN experimental_JJ conditions_NNS and_CC phenomena_NNS that_WDT
+          are_VBP encountered_VBN and_CC must_MD be_VB considered_VBN ,_, and_CC the_DT great_JJ
+          time_NN ,_, effort_NN and_CC expense_NN required_VBN to_TO generate_VB consistent_JJ
+          sets_NNS of_IN quantitative_JJ system_NN properties_NNS (_( concentrations_NNS ,_,
+          reaction_NN rates_NNS and_CC binding_JJ constants_NNS ,_, for_IN instance_NN )_) many_JJ
+          of_IN which_WDT are_VBP experimentally_RB inaccessible_JJ ._. In_IN the_DT face_NN of_IN
+          such_JJ difficulties_NNS ,_, biology_NN ,_, perhaps_RB more_JJR than_IN other_JJ
+          disciplines_NNS ,_, consists_VBZ of_IN a_DT vast_JJ amount_NN of_IN qualitative_JJ
+          information_NN that_IN forms_VBZ the_DT basis_NN for_IN speculation_NN ,_,
+          reasoning_NN and_CC decision-making_NN at_IN all_DT levels_NNS from_IN the_DT
+          basic_JJ science_NN laboratory_NN to_TO the_DT clinic_NN ._. To_TO exploit_VB this_DT
+          reservoir_NN of_IN qualitative_JJ biological_JJ knowledge_NN ,_, a_DT variety_NN
+          of_IN qualitative_JJ and_CC hybrid_JJ qualitative_JJ /_NN quantitative_JJ
+          simulation_NN and_CC analysis_NN tools_NNS that_WDT have_VBP been_VBN developed_VBN in_IN
+          the_DT artificial_JJ intelligence_NN community_NN [_NN 31_CD ,_, 32_CD ,_, 33_CD ,_, 34_CD ]_NN
+          have_VBP been_VBN adapted_VBN to_TO the_DT analysis_NN of_IN biological_JJ problems_NNS
+          [_NN 35_CD ,_, 36_CD ,_, 37_CD ,_, 38_CD ]_NN ._.
+          The_DT advantage_NN of_IN hybrid_JJ qualitative_JJ /_NN quantitative_JJ
+          methods_NNS with_IN BioD_NNP is_VBZ that_IN they_PRP allow_VBP simulation_NN and_CC
+          analysis_NN of_IN the_DT behavior_NN of_IN complex_JJ systems_NNS at_IN the_DT
+          prevailing_VBG level_NN of_IN systems_NNS knowledge_NN ;_: BioD_NNP models_NNS may_MD be_VB
+          brainstormed_JJ in_IN descriptive_JJ terms_NNS early_RB in_IN the_DT discovery_NN
+          process_NN and_CC then_RB upgraded_VBN in_IN stages_NNS as_IN qualitative_JJ
+          information_NN and_CC then_RB quantitative_JJ data_NNS become_VBP available_JJ ._.
+          Model_NNP development_NN and_CC testing_NN can_MD ,_, therefore_RB ,_, become_VBP an_DT
+          integral_JJ part_NN of_IN early_JJ discovery_NN and_CC hypothesis_NNS testing_VBG
+          all_DT within_IN the_DT context_NN of_IN a_DT single_JJ graphical_JJ description_NN ,_,
+          rather_RB than_IN developing_VBG models_NNS simply_RB as_IN validations_NNS of_IN
+          well_RB understood_VBN phenomena_NNS ._. In_IN effect_NN ,_, BioD_NNP models_NNS would_MD
+          fill_VB the_DT descriptive_JJ and_CC analytical_JJ gap_NN between_IN informal_JJ
+          cartoons_NNS and_CC fully_RB quantitative_JJ mathematical_JJ models_NNS ._.
+          To_TO accomplish_VB this_DT ,_, BioD_NNP object_VBP data_NNS structures_NNS would_MD
+          have_VB to_TO be_VB extended_VBN to_TO first_JJ represent_VB functional_JJ
+          properties_NNS and_CC then_RB provide_VB action_NN arrows_NNS with_IN logical_JJ
+          rules_NNS or_CC mathematical_JJ functions_NNS that_WDT determine_VBP how_WRB the_DT
+          states_NNS of_IN linked_VBN icons_NNS affect_VBP each_DT other_JJ ._. Within_IN a_DT BioD_NNP
+          editor_NN ,_, such_JJ rules_NNS and_CC functions_NNS would_MD be_VB selectable_JJ in_IN
+          preprogrammed_JJ form_NN from_IN context-sensitive_JJ menus_NNS of_IN
+          appropriate_JJ and_CC specific_JJ action_NN arrows_NNS (_( a_DT feature_NN in_IN
+          KineCyte_NNP ™_NN simulation_NN software_NN ;_: RainTown_NNP [_NN 39_CD ]_NN )_) ._. Encoding_NNP
+          BioD_NNP data_NNS structures_NNS in_IN XML_NNP according_VBG to_TO the_DT Systems_NNPS
+          Biology_NNP Markup_NNP Language_NNP (_( SBML_NNP )_) ,_, a_DT recently_RB proposed_VBN '_POS open_JJ
+          standard_JJ '_POS for_IN exchanging_VBG mathematical_JJ models_NNS of_IN
+          biological_JJ systems_NNS [_NN 21_CD ]_NN ,_, would_MD allow_VB BioD_NNP models_NNS to_TO be_VB
+          exported_VBN and_CC quantitatively_RB simulated_JJ in_IN a_DT variety_NN of_IN
+          analytical_JJ software_NN platforms_NNS ._.
+          Dissociating_NNP the_DT specification_NN of_IN functional_JJ
+          properties_NNS and_CC values_NNS from_IN the_DT graphical_JJ description_NN of_IN
+          the_DT model_NN means_VBZ that_IN models_NNS can_MD be_VB created_VBN on_IN a_DT purely_RB
+          speculative_JJ basis_NN ,_, and_CC then_RB ,_, as_IN system_NN knowledge_NN matures_VBZ ,_,
+          qualitative_JJ values_NNS and_CC action_NN rules_NNS can_MD be_VB selected_VBN (_( or_CC
+          specified_VBN )_) to_TO support_VB qualitative_JJ reasoning_NN and_CC
+          hypothesis_NNS testing_NN ._. As_IN quantitative_JJ values_NNS and_CC functions_NNS
+          are_VBP warranted_VBN ,_, they_PRP can_MD then_RB used_VBN to_TO constrain_VB the_DT
+          qualitative_JJ predictions_NNS of_IN the_DT model_NN ._.
+        
+      
+      
+        Discussion_NNP
+        We_PRP propose_VBP a_DT conceptual_JJ basis_NN for_IN an_DT extensible_JJ
+        biological_JJ description_NN language_NN that_WDT is_VBZ designed_VBN to_TO be_VB
+        implemented_VBN as_IN visual_JJ computer_NN language_NN for_IN describing_VBG ,_,
+        archiving_VBG and_CC analyzing_VBG complex_JJ ,_, multidisciplinary_JJ
+        biological_JJ systems_NNS ._. We_PRP view_VBP this_DT suggestion_NN not_RB as_IN radical_JJ
+        but_CC as_IN a_DT natural_NN ,_, perhaps_RB inevitable_JJ ,_, extension_NN to_TO
+        biomedicine_NN of_IN the_DT visual_JJ computer_NN language_NN paradigm_NN [_NN 24_CD ,_,
+        25_CD ,_, 40_CD ]_NN that_WDT has_VBZ been_VBN successfully_RB applied_VBN in_IN other_JJ
+        technical_JJ disciplines_NNS ._. The_DT major_JJ challenge_NN is_VBZ that_DT biology_NN
+        offers_VBZ perhaps_RB some_DT of_IN the_DT most_RBS complex_JJ and_CC functionally_RB
+        diverse_JJ systems_NNS known_VBN ._.
+        With_IN example_NN models_NNS here_RB and_CC online_NN ,_, we_PRP have_VBP shown_VBN that_IN
+        a_DT limited_JJ ,_, but_CC extensible_JJ ,_, lexicon_NN of_IN icons_NNS and_CC arrows_NNS is_VBZ
+        capable_JJ of_IN describing_VBG complex_JJ systems_NNS that_WDT involve_VBP a_DT range_NN
+        of_IN cell-biological_JJ disciplines_NNS from_IN gene_NN regulation_NN to_TO the_DT
+        biophysics_NNS of_IN ion_NN transport_NN ._. The_DT value_NN of_IN such_JJ
+        standardization_NN is_VBZ increased_VBN conciseness_NNS ,_, readability_NN and_CC
+        clarity_NN for_IN communication_NN of_IN knowledge_NN about_IN complex_JJ
+        systems_NNS ._. Beyond_IN simple_JJ graphic_JJ standardization_NN ,_, computer_NN
+        implementation_NN of_IN a_DT graphic_JJ language_NN for_IN biology_NN is_VBZ not_RB
+        only_RB feasible_JJ with_IN currently_RB available_JJ computer_NN and_CC
+        internet_NN technology_NN ,_, but_CC could_MD yield_VB substantial_JJ benefits_NNS
+        to_TO biomedical_JJ education_NN ,_, investigation_NN and_CC industry_NN ._. For_IN
+        instance_NN ,_, development_NN of_IN a_DT common_JJ language_NN to_TO build_VB
+        accessible_JJ common_JJ models_NNS are_VBP critical_JJ elements_NNS in_IN the_NNP
+        '_POS blackboard_NN '_'' approach_NN [_NN 41_CD ,_, 42_CD ]_NN for_IN multidisciplinary_JJ
+        collaborations_NNS on_IN complex_JJ problems_NNS ._. We_PRP suggest_VBP that_IN a_DT
+        standard_JJ language_NN for_IN building_NN and_CC posting_VBG
+        cross-disciplinary_JJ functional_JJ models_NNS on_IN the_DT internet_NN will_MD
+        be_VB a_DT necessary_JJ stage_NN in_IN the_DT evolution_NN of_IN bioinformatics_NNS ,_, as_IN
+        there_EX is_VBZ a_DT growing_VBG need_NN to_TO express_VB and_CC understand_VB
+        whole-systems_JJ behavior_NN and_CC the_DT complex_JJ systems_NNS that_WDT
+        underlie_VB disease_NN ._. We_PRP further_JJ suggest_VBP that_IN additional_JJ
+        extensions_NNS to_TO a_DT standard_JJ graphical_JJ language_NN can_MD serve_VB as_IN a_DT
+        user_NN interface_NN for_IN a_DT variety_NN of_IN qualitative_JJ and_CC
+        quantitative_JJ simulation_NN and_CC analysis_NN methods_NNS used_VBN in_IN other_JJ
+        disciplines_NNS ._.
+        The_DT prototype_NN language_NN we_PRP present_JJ here_RB is_VBZ designed_VBN
+        primarily_RB for_IN describing_VBG cell-biological_JJ systems_NNS as_IN
+        discrete_JJ networks_NNS of_IN interacting_VBG functional_JJ objects_NNS at_IN
+        multiple_JJ conceptual_JJ levels_NNS ._. As_IN such_JJ ,_, it_PRP may_MD prove_VB
+        cumbersome_JJ for_IN describing_VBG massively_RB parallel_JJ systems_NNS (_( such_JJ
+        as_IN the_DT coupled_VBN expression_NN of_IN thousands_NNS of_IN genes_NNS )_) or_CC
+        continuum_NN systems_NNS (_( such_JJ as_IN the_DT wave_NN propagation_NN of_IN
+        cytoplasmic_JJ calcium_NN )_) ._. Even_RB in_IN these_DT modeling_NN domains_NNS ,_,
+        however_RB ,_, a_DT standardized_JJ visual_JJ computational_NN interface_NN
+        would_MD allow_VB modelers_NNS to_TO describe_VB discrete_JJ parts_NNS (_( '_POS finite_JJ
+        elements_NNS '_POS )_) of_IN systems_NNS and_CC /_NN or_CC to_TO embed_JJ the_DT systems_NNS in_IN larger_JJR
+        BioD_NNP models_NNS that_IN both_DT control_NN and_CC depend_VB on_IN the_DT massive_JJ or_CC
+        continuum_NN systems_NNS models_NNS ._.
+        How_WRB might_MD BioD_NNP evolve_VB and_CC be_VB extended_VBN from_IN a_DT core_NN set_NN of_IN
+        elements_NNS as_IN described_VBN above_IN to_TO more_RBR general_JJ biological_JJ
+        description_NN language_NN ?_. In_IN our_PRP$ approach_NN ,_, we_PRP have_VBP followed_VBN the_DT
+        model_NN of_IN recent_JJ developments_NNS of_IN internet_NN protocols_NNS ,_,
+        operating_NN systems_NNS and_CC computer_NN languages_NNS by_IN envisioning_VBG
+        that_IN if_IN a_DT core_NN computational_NN framework_NN can_MD be_VB established_VBN ,_,
+        it_PRP can_MD be_VB extended_VBN and_CC implemented_VBN for_IN a_DT variety_NN of_IN
+        methods_NNS ,_, languages_NNS and_CC operating_NN systems_NNS ._. Thus_RB we_PRP envision_VBP
+        that_IN ,_, given_VBN the_DT development_NN of_IN one_CD (_( or_CC more_JJR )_) editor_NN
+        applications_NNS ,_, users_NNS could_MD invent_VB BioD_NNP language_NN elements_NNS
+        (_( functional_JJ properties_NNS ,_, icons_NNS ,_, arrows_NNS and_CC models_NNS )_) as_IN needed_VBN
+        to_TO describe_VB specific_JJ domains_NNS ._. As_IN domain_NN lexicons_NNS and_CC
+        model-model_JJ networks_NNS expand_VBP ,_, with_IN inevitable_JJ conflicts_NNS and_CC
+        duplications_NNS ,_, we_PRP would_MD suggest_VB more_RBR global_JJ standardization_NN
+        be_VB negotiated_VBN according_VBG to_TO '_POS open-source_JJ '_POS mechanisms_NNS of_IN
+        distributed_VBN ,_, cooperative_JJ development_NN [_NN 43_CD ]_NN used_VBN for_IN
+        developing_VBG the_DT Linux_NNP operating_VBG system_NN and_CC now_RB being_VBG applied_VBN
+        to_TO SBML_NNP development_NN [_NN 21_CD ]_NN ._.
+        By_IN whatever_WDT mechanism_NN ,_, language_NN development_NN raises_VBZ other_JJ
+        key_JJ issues_NNS ._. How_WRB can_MD one_CD maintain_VB the_DT delicate_JJ balance_NN of_IN
+        expressiveness_NNS and_CC readability_NN -_: can_MD the_DT language_NN concisely_RB
+        describe_VB all_DT systems_NNS of_IN interest_NN while_IN still_RB being_VBG
+        understandable_JJ without_IN extensive_JJ training_NN ?_. When_WRB does_VBZ the_DT
+        ability_NN to_TO derive_VB more_RBR expressive_JJ icons_NNS begin_VBP to_TO diminish_VB
+        readability_NN as_IN viewers_NNS are_VBP required_VBN to_TO recognize_VB and_CC
+        interpret_VB subtle_JJ differences_NNS between_IN similar_JJ icons_NNS ?_. Even_RB if_IN
+        successfully_RB developed_VBN for_IN selected_VBN domains_NNS and_CC purposes_NNS ,_,
+        inevitably_RB there_EX will_MD be_VB edges_NNS to_TO any_DT language_NN for_IN
+        describing_VBG all_DT domains_NNS and_CC for_IN all_DT analytical_JJ purposes_NNS -_:
+        hence_RB the_DT continued_VBN appearance_NN of_IN new_JJ computer_NN languages_NNS
+        such_JJ as_IN Java_NNP ._.
+      
+      
+        Conclusions_NNP
+        We_PRP have_VBP proposed_VBN that_IN a_DT generalized_JJ biological_JJ
+        descriptive_JJ language_NN akin_JJ to_TO schematic_JJ diagramming_VBG
+        languages_NNS in_IN other_JJ disciplines_NNS is_VBZ a_DT necessary_JJ step_NN in_IN the_DT
+        evolution_NN of_IN functional_JJ bioinformatics_NNS ._. Toward_IN this_DT ,_, we_PRP
+        have_VBP developed_VBN a_DT prototype_NN language_NN ,_, BioD_NNP ,_, that_IN we_PRP have_VBP
+        used_VBN to_TO test_VB the_DT value_NN of_IN this_DT approach_NN and_CC to_TO explore_VB the_DT
+        feasibility_NN of_IN computational_NN implementation_NN using_VBG
+        object-oriented_JJ programming_NN methods_NNS in_IN the_DT context_NN of_IN
+        Internet-based_NNP communications_NNS ._. We_PRP suggest_VBP that_IN a_DT
+        sufficiently_RB formalized_JJ descriptive_JJ language_NN built_VBN on_IN the_DT
+        BioD_NNP concept_NN of_IN '_POS functional_JJ properties_NNS '_POS can_MD anchor_VB a_DT
+        computational_NN framework_NN capable_JJ of_IN supporting_VBG the_DT archiving_VBG
+        of_IN extended_VBN ,_, web-linked_JJ model_NN networks_NNS and_CC model_NN analysis_NN
+        using_VBG hybrid_JJ qualitative_JJ reasoning_NN and_CC quantitative_JJ
+        simulations_NNS ._.
+      
+    
+  

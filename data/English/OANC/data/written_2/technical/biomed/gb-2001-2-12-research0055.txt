@@ -1,0 +1,909 @@
+
+  
+    
+      
+        Background_NNP
+        Affymetrix_NNP oligonucleotide_NN arrays_NNS (_( referred_VBD to_TO here_RB as_IN
+        oligonucleotide_NN arrays_NNS )_) are_VBP widely_RB used_VBN to_TO measure_VB the_DT
+        abundance_NN of_IN mRNA_NN molecules_NNS in_IN biological_JJ samples_NNS [_NN 1_CD ]_NN ._. The_DT
+        investigator_NN isolates_VBZ total_NN and_CC /_NN or_CC polyadenylated_JJ RNA_NNP from_IN
+        cells_NNS or_CC tissues_NNS ,_, generates_VBZ the_DT corresponding_JJ complementary_JJ
+        DNA_NNP (_( cDNA_NN )_) ,_, transcribes_NNS complementary_JJ RNA_NNP (_( cRNA_NN )_) from_IN the_DT
+        cDNA_NN template_NN ,_, and_CC then_RB hybridizes_NNS the_DT cRNA_NN to_TO the_DT array_NN [_NN
+        2_CD ]_NN ._. There_EX is_VBZ a_DT significant_JJ amount_NN of_IN assay_NN noise_NN associated_VBN
+        with_IN readouts_NNS from_IN oligonucleotide_NN arrays_NNS (_( for_IN example_NN [_NN 3_CD ,_,
+        4_CD ]_NN )_) ._. For_IN these_DT arrays_NNS we_PRP have_VBP found_VBN additive_JJ and_CC
+        multiplicative_JJ noise_NN affecting_VBG individual_JJ gene_NN readouts_NNS
+        (_( typically_RB 5_CD -_: 20_CD %_NN )_) ,_, as_RB well_RB as_IN multiplicative_JJ noise_NN
+        affecting_VBG entire_JJ arrays_NNS (_( often_RB above_IN 20_CD %_NN )_) ._. As_IN defined_VBN here_RB ,_,
+        normalization_NN attempts_NNS to_TO correct_VB for_IN only_RB the_DT latter_JJ type_NN
+        of_IN noise_NN ._. The_DT primary_JJ sources_NNS of_IN this_DT array-level_JJ noise_NN are_VBP
+        between-array_JJ variation_NN in_IN overall_JJ performance_NN (_( due_JJ to_TO
+        inconsistencies_NNS in_IN array_NN fabrication_NN ,_, staining_VBG and_CC
+        scanning_VBG )_) ,_, and_CC between-c_JJ RNA_NNP variation_NN (_( as_RB independently_RB
+        prepared_VBN cRNAs_NNS have_VBP variable_JJ purity_NN and_CC /_NN or_CC
+        fluorescently-labeled_JJ mass_NN fractions_NNS )_) ._. Because_IN these_DT
+        sources_NNS of_IN variation_NN contribute_VB so_RB significantly_RB to_TO array_NN
+        readouts_NNS ,_, normalization_NN is_VBZ a_DT critical_JJ first_JJ step_NN in_IN any_DT
+        analysis_NN of_IN gene_NN expression_NN data_NNS ._.
+        Most_JJS current_JJ normalization_NN procedures_NNS for_IN
+        oligonucleotide_NN arrays_NNS are_VBP global_JJ approaches_NNS ,_, based_VBN on_IN
+        normalization_NN of_IN the_DT overall_JJ mean_NN or_CC median_JJ array_NN intensity_NN
+        to_TO a_DT common_JJ standard_JJ (_( for_IN example_NN [_NN 5_CD ,_, 6_CD ,_, 7_CD ]_NN )_) ._. Spiked_NNP
+        standards_NNS have_VBP also_RB been_VBN used_VBN to_TO normalize_VB cDNA_NN [_NN 8_CD ]_NN and_CC
+        oligonucleotide_NN [_NN 9_CD ,_, 10_CD ,_, 11_CD ]_NN arrays_NNS ._. All_DT these_DT techniques_NNS
+        are_VBP inherently_RB linear_JJ ;_: there_EX have_VBP been_VBN recent_JJ reports_NNS of_IN
+        nonlinear_NN normalizations_NNS for_IN cDNA_NN [_NN 12_CD ]_NN ,_, oligonucleotide_NN [_NN
+        13_CD ,_, 14_CD ]_NN and_CC other_JJ [_NN 15_CD ]_NN arrays_NNS ._. Few_JJ detailed_JJ comparisons_NNS of_IN
+        oligonucleotide-array_JJ normalization_NN procedures_NNS have_VBP been_VBN
+        reported_VBN ,_, however_RB [_NN 13_CD ]_NN ._.
+        For_IN oligonucleotide_NN arrays_NNS ,_, the_DT normalization_NN
+        implemented_VBN in_IN the_DT Affymetrix_NNP GeneChip_NNP ™_NN software_NN
+        (_( Affymetrix_NNP ,_, Santa_NNP Clara_NNP ,_, CA_NNP )_) is_VBZ by_IN far_RB the_DT most_RBS commonly_RB
+        used_VBN (_( for_IN example_NN [_NN 1_CD ,_, 16_CD ]_NN )_) ._. In_IN this_DT approach_NN ,_, the_DT mean_JJ
+        hybridization_NN intensities_NNS (_( the_NNP '_POS average_NN differences_NNS '_POS (_( AD_NNP )_) )_)
+        of_IN all_DT probe_NN sets_NNS on_IN each_DT array_NN are_VBP scaled_VBN to_TO an_DT arbitrary_JJ ,_,
+        fixed_VBN level_NN [_NN 17_CD ]_NN ._. In_IN the_DT rest_NN of_IN this_DT paper_NN ,_, we_PRP refer_VBP to_TO
+        this_DT procedure_NN as_IN '_POS global_JJ normalization_NN '_'' or_CC scaled_VBN average_JJ
+        difference_NN (_( AD_NNP s_VBZ )_) ._. In_IN practice_NN ,_, there_RB are_VBP at_IN least_JJS three_CD
+        limitations_NNS to_TO this_DT method_NN ._. Of_IN these_DT ,_, the_DT first_JJ two_CD relate_VBP
+        to_TO the_DT normalization_NN itself_PRP ,_, and_CC the_DT last_JJ relates_VBZ to_TO the_DT
+        practical_JJ utility_NN of_IN the_DT normalized_JJ readouts_NNS ._.
+        First_LS ,_, global_JJ normalization_NN makes_VBZ no_DT attempt_NN to_TO
+        absolutely_RB quantify_VB mRNA_NN abundances_NNS ._. Readouts_NNP are_VBP
+        normalized_JJ to_TO an_DT arbitrary_JJ scale_NN ,_, which_WDT may_MD vary_VB from_IN one_CD
+        operator_NN to_TO another_DT or_CC between_IN experiments_NNS ._. In_IN contrast_NN ,_,
+        previous_JJ experiments_NNS with_IN spiked_JJ controls_NNS [_NN 1_CD ]_NN and_CC
+        comparisons_NNS with_IN serial_NN analysis_NN of_IN gene_NN expression_NN (_( SAGE_NNP )_)
+        [_NN 18_CD ]_NN have_VBP shown_VBN that_DT array_NN response_NN can_MD be_VB proportional_JJ to_TO
+        true_JJ transcript_NN abundance_NN ,_, suggesting_VBG that_IN absolute_JJ
+        quantitation_NN of_IN transcripts_NNS is_VBZ feasible_JJ ._. If_IN sufficiently_RB
+        accurate_JJ ,_, such_JJ an_DT absolute_JJ scale_NN for_IN all_DT array_NN readouts_NNS
+        could_MD facilitate_VB comparisons_NNS across_IN large_JJ ,_, diverse_JJ gene_NN
+        expression_NN databases_NNS ._.
+        Second_JJ ,_, global_JJ normalization_NN implicitly_RB assumes_VBZ that_IN the_DT
+        mean_JJ expression_NN level_NN of_IN all_DT monitored_VBN mRNAs_NNS is_VBZ constant_JJ ._.
+        The_DT validity_NN of_IN this_DT assumption_NN depends_VBZ on_IN the_DT number_NN and_CC
+        biological_JJ characteristics_NNS of_IN genes_NNS monitored_VBN by_IN an_DT array_NN ._.
+        For_IN smaller_JJR arrays_NNS that_WDT monitor_VBP a_DT limited_JJ set_NN of_IN mRNAs_NNS ,_,
+        this_DT assumption_NN is_VBZ invalid_JJ and_CC may_MD result_VB in_IN erroneous_JJ
+        normalization_NN ._. Ideally_RB ,_, a_DT quantitation_NN method_NN for_IN arrays_NNS
+        would_MD be_VB effective_JJ even_RB in_IN cases_NNS where_WRB this_DT '_POS constant_JJ mean_NN '_POS
+        hypothesis_NNS does_VBZ not_RB hold_VB ._.
+        Third_NNP ,_, as_RB typically_RB applied_VBN ,_, global_JJ normalization_NN does_VBZ
+        not_RB deal_VB well_RB with_IN transcripts_NNS expressed_VBD at_IN low_JJ copy_NN
+        numbers_NNS ._. In_IN a_DT typical_JJ Affymetrix_NNP GeneChip_NNP assay_NN ,_, many_JJ
+        low-abundance_JJ transcripts_NNS are_VBP present_JJ at_IN levels_NNS below_IN the_DT
+        sensitivity_NN of_IN detection_NN of_IN the_DT array_NN (_( typically_RB about_IN
+        1_CD :_: 100_CD ,_, 000_CD mRNAs_NNS )_) ._. Measurements_NNP for_IN such_JJ mRNAs_NNS are_VBP not_RB only_RB
+        noisy_NN but_CC are_VBP sometimes_RB negative_JJ ,_, due_JJ to_TO
+        cross-hybridization_JJ to_TO mismatch_NN probes_NNS [_NN 1_CD ]_NN ._. Negative_JJ
+        intensity_NN values_NNS are_VBP meaningless_JJ and_CC problematic_JJ because_IN
+        they_PRP cannot_NN be_VB log-transformed_JJ ,_, a_DT manipulation_NN that_WDT is_VBZ a_DT
+        common_JJ prelude_NN to_TO downstream_JJ analysis_NN of_IN array_NN data_NNS ._. Simply_RB
+        discarding_VBG negative_JJ values_NNS is_VBZ objectionable_JJ as_IN it_PRP can_MD lead_VB
+        to_TO missed_VBD observations_NNS of_IN biologically_RB significant_JJ
+        upregulation_NN ._. An_DT automated_VBN normalization_NN method_NN that_WDT
+        handles_VBZ noisy_NN and_CC negative_JJ measurements_NNS and_CC responds_VBZ to_TO
+        variable_JJ array_NN sensitivity_NN is_VBZ desirable_JJ ,_, especially_RB in_IN a_DT
+        high-throughput_JJ setting_NN ._.
+        The_DT primary_JJ criterion_NN for_IN any_DT alternative_NN to_TO global_JJ
+        normalization_NN is_VBZ that_IN it_PRP should_MD expand_VB the_DT investigator_NN 's_POS
+        ability_NN to_TO compare_VB diverse_JJ array_NN experiments_NNS done_VBN at_IN
+        different_JJ times_NNS in_IN different_JJ laboratories_NNS ._. In_IN this_DT paper_NN ,_,
+        we_PRP describe_VBP alternative_JJ procedures_NNS that_WDT seek_VBP to_TO quantitate_NN
+        array_NN results_NNS in_IN terms_NNS of_IN transcripts_NNS per_IN unit_NN cRNA_NN ._. We_PRP
+        chose_VBD cRNA_NN quantitation_NN because_IN it_PRP meets_VBZ the_DT primary_JJ
+        criterion_NN ,_, and_CC for_IN several_JJ additional_JJ reasons_NNS ._.
+        First_LS ,_, cRNA_NN quantitation_NN is_VBZ easily_RB applied_VBN to_TO array_NN
+        experiments_NNS using_VBG small_JJ amounts_NNS of_IN starting_VBG total_JJ RNA_NNP that_WDT
+        are_VBP difficult_JJ to_TO quantitate_NN accurately_RB ._. Second_JJ ,_, the_DT spike_NN
+        reagents_NNS described_VBD here_RB for_IN cRNA_NN quantitation_NN can_MD be_VB used_VBN
+        to_TO specifically_RB monitor_VB the_DT performance_NN of_IN individual_JJ
+        arrays_NNS ._. Third_NNP ,_, in_IN our_PRP$ experience_NN ,_, the_DT reproducibility_NN ,_,
+        accuracy_NN and_CC scientific_JJ value_NN of_IN cRNA_NN quantitation_NN are_VBP at_IN
+        least_JJS as_RB good_JJ as_IN those_DT of_IN alternative_JJ techniques_NNS ,_, such_JJ as_IN
+        procedures_NNS to_TO quantitate_NN transcripts_NNS per_IN cell_NN ,_, transcripts_NNS
+        per_IN mass_NN of_IN input_NN material_NN ,_, transcripts_NNS per_IN total_JJ RNA_NNP or_CC
+        transcripts_NNS per_IN polyadenylated_JJ RNA_NNP ._.
+        We_PRP evaluated_VBD two_CD alternatives_NNS to_TO the_DT standard_JJ global_JJ
+        normalization_NN scheme_NN which_WDT we_PRP term_NN '_'' frequency_NN '_'' (_( F_NN )_) and_CC
+        '_POS scaled_VBN frequency_NN '_'' (_( F_NN s_VBZ )_) normalization_NN ._. These_DT normalization_NN
+        procedures_NNS are_VBP based_VBN on_IN the_DT presence_NN of_IN a_DT common_JJ pool_NN of_IN
+        biotin-labeled_JJ transcripts_NNS of_IN known_VBN concentrations_NNS spiked_VBN
+        into_IN each_DT hybridization_NN ._. Constructs_NNP for_IN generating_VBG the_DT
+        control_NN reagents_NNS are_VBP available_JJ through_IN the_DT American_NNP Type_NNP
+        Culture_NNP Collection_NNP (_( ATCC_NNP )_) ;_: accession_NN numbers_NNS are_VBP given_VBN in_IN
+        Table_NNP 1_CD ._. We_PRP describe_VBP how_WRB scaled_VBN frequency_NN normalization_NN can_MD
+        be_VB used_VBN to_TO estimate_VB message_NN abundance_NN in_IN cRNA_NN ,_, compute_VB a_DT
+        chip_NN sensitivity_NN metric_JJ and_CC provide_VB a_DT natural_JJ scale_NN for_IN
+        damping_VBG spurious_JJ signals_NNS from_IN below-sensitivity_JJ mRNAs_NNS ._.
+        Using_VBG previously_RB published_VBN replicated_VBN experimental_JJ
+        hybridizations_NNS and_CC new_JJ simulated_JJ data_NNS ,_, we_PRP compare_VBP the_DT
+        reproducibility_NN and_CC accuracy_NN of_IN frequency_NN ,_, scaled_VBN frequency_NN
+        and_CC global_JJ normalization_NN ._. Our_PRP$ results_NNS suggest_VBP that_WDT scaled_VBD
+        frequency_NN normalization_NN is_VBZ a_DT useful_JJ strategy_NN for_IN
+        oligonucleotide_NN array_NN data_NNS and_CC has_VBZ important_JJ advantages_NNS
+        over_IN current_JJ approaches_NNS ._.
+      
+      
+        Results_NNS and_CC discussion_NN
+        
+          The_DT constant-mean_JJ assumption_NN
+          A_DT key_JJ assumption_NN underlying_VBG global_JJ normalization_NN is_VBZ
+          that_IN the_DT mean_JJ expression_NN level_NN on_IN an_DT array_NN should_MD be_VB the_DT
+          same_JJ for_IN all_DT samples_NNS and_CC all_DT arrays_NNS ._. This_DT assumption_NN is_VBZ
+          distinct_JJ from_IN the_DT additional_JJ implicit_JJ assumption_NN that_IN the_DT
+          fraction_NN of_IN polyadenylated_JJ mRNA_NN per_IN total_JJ RNA_NNP is_VBZ
+          constant_JJ ._. One_PRP can_MD certainly_RB construct_VB special_JJ cases_NNS where_WRB
+          the_DT constant-mean_JJ assumption_NN is_VBZ invalid_JJ ._. One_CD example_NN
+          would_MD be_VB using_VBG a_DT small_JJ array_NN containing_VBG only_RB genes_NNS from_IN a_DT
+          single_JJ pathway_NN in_IN an_DT experiment_NN that_WDT studies_NNS variable_JJ
+          induction_NN of_IN that_DT pathway_NN ._. However_RB ,_, it_PRP is_VBZ unclear_JJ how_WRB
+          well_RB even_RB more_RBR general_JJ array_NN experiments_NNS satisfy_VB this_DT
+          assumption_NN ._.
+          To_TO evaluate_VB the_DT constant-mean_JJ assumption_NN we_PRP examined_VBD
+          the_DT coefficient_NN of_IN variation_NN (_( CV_NNP )_) of_IN the_DT mean_JJ expression_NN
+          level_NN of_IN variable-sized_JJ mRNA_NN sets_NNS across_IN samples_NNS covering_VBG
+          widely_RB divergent_JJ developmental_NN stages_NNS of_IN the_DT nematode_NN 
+          Caenorhabditis_NNP elegans_NNS ._. We_PRP
+          constructed_VBN the_DT largest_JJS possible_JJ subset_NN of_IN our_PRP$ data_NNS that_WDT
+          included_VBD only_RB matched_VBN triplets_NNS of_IN the_DT A_DT ,_, B_NNP and_CC C_NNP array_NN
+          designs_NNS (_( see_VB Materials_NNPS and_CC methods_NNS )_) ._. The_DT subset_NN comprised_VBN
+          39_CD chip_NN hybridzations_NNS ,_, 13_CD of_IN each_DT design_NN ,_, covering_VBG all_DT
+          developmental_NN stages_NNS ._. This_DT dataset_NN represents_VBZ a_DT
+          relatively_RB strong_JJ test_NN of_IN the_DT constant_JJ mean_NN assumption_NN ,_,
+          because_IN very_RB large_JJ biological_JJ modulation_NN of_IN many_JJ mRNAs_NNS
+          occurs_VBZ across_IN the_DT dataset_NN ._. As_IN the_DT 
+          C_NNP ._. elegans_NNS arrays_NNS monitor_VBP around_IN
+          98_CD %_NN of_IN all_DT predicted_VBN 
+          C_NNP ._. elegans_NNS mRNAs_NNS ,_, and_CC the_DT sum_NN of_IN
+          the_DT relative_JJ expression_NN levels_NNS of_IN all_DT expressed_VBN genes_NNS
+          must_MD be_VB constant_JJ by_IN definition_NN ,_, global_JJ normalization_NN is_VBZ
+          well_RB justified_JJ for_IN the_DT dataset_NN as_IN a_DT whole_NN ._. Thus_RB ,_, the_DT 13_CD
+          experimental_JJ hybridizations_NNS of_IN each_DT array_NN design_NN were_VBD
+          globally_RB normalized_JJ ,_, and_CC subsets_NNS of_IN the_DT 19_CD ,_, 031_CD total_JJ
+          mRNAs_NNS monitored_VBN by_IN the_DT arrays_NNS were_VBD selected_VBN at_IN random_JJ ._.
+          For_IN each_DT subset_NN ,_, the_DT CV_NNP of_IN the_DT mean_JJ expression_NN level_NN of_IN
+          the_DT subset_NN across_IN all_DT 13_CD hybridizations_NNS was_VBD computed_JJ ._.
+          Subsets_NNP ranged_VBD in_IN size_NN from_IN 10_CD to_TO 19_CD ,_, 031_CD genes_NNS (_( 0_CD ._. 05_CD %_NN to_TO
+          100_CD %_NN of_IN this_DT transcriptome_NN )_) (_( Figure_NN 1_LS )_) ._. The_DT CV_NNP of_IN the_DT
+          mean_JJ expression_NN level_NN is_VBZ below_IN 7_CD %_NN for_IN any_DT set_NN of_IN mRNAs_NNS
+          larger_JJR than_IN roughly_RB 10_CD %_NN of_IN the_DT total_NN ._. As_IN this_DT CV_NNP is_VBZ no_RB
+          larger_JJR than_IN the_DT typical_JJ contribution_NN of_IN other_JJ noise_NN
+          sources_NNS in_IN the_DT readout_NN ,_, we_PRP conclude_VBP that_IN the_DT
+          constant-mean_JJ assumption_NN can_MD be_VB supported_VBN for_IN arrays_NNS that_WDT
+          monitor_VBP on_IN the_DT order_NN of_IN 20_CD -_: 100_CD %_NN of_IN a_DT transcriptome_NN ._. This_DT
+          is_VBZ typical_JJ of_IN current_JJ commercial_JJ arrays_NNS for_IN several_JJ
+          bacteria_NNS ,_, yeast_NN ,_, mouse_NN and_CC human_JJ ._.
+          These_DT results_NNS only_RB apply_VBP when_WRB genes_NNS monitored_VBN by_IN an_DT
+          array_NN are_VBP randomly_RB selected_VBN with_IN respect_NN to_TO their_PRP$
+          expression_NN characteristics_NNS ._. The_DT example_NN noted_VBD above_IN (_( all_DT
+          genes_NNS on_IN an_DT array_NN from_IN a_DT single_JJ pathway_NN )_) is_VBZ an_DT extreme_JJ
+          case_NN of_IN nonrandom_NN selection_NN ._. Other_JJ common_JJ ways_NNS of_IN
+          selecting_VBG genes_NNS for_IN arrays_NNS may_MD also_RB violate_VB this_DT
+          assumption_NN ,_, including_VBG selection_NN based_VBN on_IN matches_VBZ in_IN
+          specific_JJ cDNA_NN libraries_NNS ._.
+          Nonrandom_NNP selection_NN of_IN even_RB large_JJ mRNA_NN sets_NNS for_IN
+          individual_JJ arrays_NNS can_MD also_RB lead_VB to_TO between-array_JJ
+          inconsistencies_NNS in_IN mean_NN expression_NN level_NN ._. For_IN example_NN ,_,
+          consider_VBP the_DT case_NN of_IN two_CD arrays_NNS ,_, each_DT monitoring_VBG a_DT large_JJ ,_,
+          equal_JJ percentage_NN (_( >_NN 20_CD %_NN )_) of_IN a_DT transcriptome_NN ,_, where_WRB the_DT
+          first_JJ array_NN monitors_VBZ mRNAs_NNS with_IN confirmed_VBD cDNA_NN library_NN
+          matches_VBZ ,_, and_CC the_DT other_JJ array_NN monitors_VBZ mRNAs_NNS whose_WP$
+          sequences_NNS are_VBP based_VBN on_IN lower-quality_JJR expressed_VBD sequence_NN
+          tag_NN (_( EST_NNP )_) sequence_NN matches_VBZ or_CC computational_NN gene_NN
+          predictions_NNS ._. While_IN the_DT constant_JJ mean_NN assumption_NN is_VBZ
+          justified_JJ for_IN each_DT array_NN in_IN isolation_NN ,_, comparison_NN of_IN
+          globally_RB normalized_JJ expression_NN levels_NNS between_IN the_DT two_CD
+          arrays_NNS will_MD give_VB erroneous_JJ results_NNS because_IN the_DT mean_JJ
+          expression_NN level_NN of_IN transcripts_NNS on_IN the_DT first_JJ array_NN is_VBZ
+          higher_JJR than_IN that_DT on_IN the_DT second_NN ._.
+        
+        
+          Spike-in_NNP based_VBD normalization_NN
+          The_DT limitations_NNS of_IN global_JJ normalization_NN suggest_VBP the_DT
+          use_NN of_IN spiked_JJ transcripts_NNS to_TO normalize_VB array_NN data_NNS ._. Our_PRP$
+          '_POS spike-in_JJ '_POS normalization_NN method_NN ,_, which_WDT we_PRP call_VBP '_'' frequency_NN
+          normalization_NN '_'' ,_, uses_VBZ spiked_VBN transcripts_NNS for_IN two_CD purposes_NNS ._.
+          First_LS ,_, they_PRP allow_VBP us_PRP to_TO calibrate_NN the_DT arrays_NNS ,_,
+          transforming_VBG AD_NNP to_TO cRNA_NN frequency_NN (_( F_NN )_) estimates_NNS quoted_VBN in_IN
+          transcripts_NNS per_IN million_CD ._. Second_JJ ,_, the_DT spiked_JJ transcripts_NNS
+          enable_VBP us_PRP to_TO estimate_VB the_DT minimum_JJ detectable_JJ frequency_NN on_IN
+          the_DT array_NN (_( the_NNP '_POS array_NN sensitivity_NN '_'' value_NN )_) ._. The_DT array_NN
+          sensitivity_NN is_VBZ useful_JJ as_IN a_DT quality-control_JJ metric_NN for_IN
+          individual_JJ hybridizations_NNS and_CC is_VBZ also_RB used_VBN to_TO adjust_VB
+          signals_NNS from_IN low-level_JJ transcripts_NNS ._. Specifically_RB ,_,
+          frequency_NN values_NNS below_IN the_DT array_NN sensitivity_NN are_VBP averaged_VBN
+          with_IN the_DT sensitivity_NN estimate_NN to_TO generate_VB '_POS damped_VBN '_POS
+          frequencies_NNS that_WDT lie_VBP between_IN 50_CD %_NN and_CC 100_CD %_NN of_IN the_DT array_NN
+          sensitivity_NN ._. This_DT adjustment_NN introduces_VBZ a_DT small_JJ
+          systematic_JJ error_NN into_IN the_DT damped_VBN data_NN ,_, but_CC in_IN return_NN it_PRP
+          eliminates_VBZ problematic_JJ negative_JJ values_NNS and_CC retains_VBZ
+          low-level_JJ readings_NNS that_WDT can_MD be_VB biologically_RB informative_JJ
+          in_IN the_DT context_NN of_IN additional_JJ experiments_NNS ._.
+          Figure_NN 2_CD shows_VBZ a_DT typical_JJ plot_NN of_IN the_DT spiked_JJ transcript_NN
+          readout_NN from_IN a_DT single_JJ hybridization_NN containing_VBG 2_CD μg_NN of_IN
+          cRNA_NN and_CC a_DT corresponding_JJ amount_NN of_IN spike-in_JJ transcripts_NNS ._.
+          The_DT specific_JJ hybridization_NN intensity_NN (_( AD_NNP )_) value_NN for_IN each_DT
+          of_IN the_DT 11_CD spike-in_JJ controls_NNS is_VBZ plotted_VBD as_IN a_DT function_NN of_IN
+          transcript_NN frequency_NN in_IN units_NNS of_IN transcripts_NNS per_IN million_CD ._.
+          The_DT points_NNS are_VBP fitted_JJ with_IN a_DT generalized_JJ linear_JJ model_NN
+          that_WDT is_VBZ then_RB used_VBN as_IN a_DT calibration_NN curve_NN to_TO compute_VB
+          frequencies_NNS from_IN the_DT AD_NNP values_NNS of_IN the_DT other_JJ genes_NNS on_IN the_DT
+          array_NN ._. Using_VBG logistic_JJ regression_NN ,_, we_PRP define_VB the_DT chip_NN
+          sensitivity_NN as_IN the_DT frequency_NN where_WRB we_PRP estimate_VBP a_DT gene_NN to_TO
+          have_VB a_DT 70_CD %_NN probability_NN of_IN being_VBG called_VBN '_POS Present_NN '_'' ._. We_PRP will_MD
+          use_VB the_DT capitalized_VBN terms_NNS '_POS Absolute_JJ Decision_NNP '_POS ,_, '_'' Present_NN '_POS ,_,
+          '_'' Absent_VB '_POS and_CC '_POS Marginal_JJ '_POS when_WRB referring_VBG to_TO a_DT specific_JJ
+          value_NN that_WDT is_VBZ calculated_VBN by_IN the_DT Affymetrix_NNP GeneChip_NNP
+          software_NN (_( described_VBD in_IN Materials_NNPS and_CC methods_NNS )_) ._. In_IN Figure_NN
+          2_CD ,_, the_DT vertical_JJ line_NN at_IN a_DT frequency_NN of_IN 4_CD ._. 5_CD indicates_VBZ the_DT
+          computed_JJ sensitivity_NN estimate_NN for_IN this_DT array_NN ._.
+          Fitting_NNP a_DT power_NN law_NN model_NN (_( AD_NNP =_SYM k_NN 
+          F_NN 
+          n_NN )_) to_TO the_DT data_NNS in_IN Figure_NN 2_CD yields_NNS
+          the_DT exponent_NN 
+          n_NN =_SYM 0_CD ._. 93_CD ._. This_DT indicates_VBZ mild_JJ
+          curvature_NN in_IN the_DT response_NN ,_, consistent_JJ with_IN progressive_JJ
+          saturation_NN of_IN array_NN readout_NN for_IN the_DT highest_JJS abundance_NN
+          mRNAs_NNS ._. Experiments_NNS using_VBG 0_CD ._. 1_CD to_TO 10_CD μg_NN cRNA_NN per_IN
+          hybridization_NN with_IN corresponding_JJ amounts_NNS of_IN spike-in_JJ
+          transcripts_NNS ,_, as_RB well_RB as_IN high_JJ and_CC low_JJ gain_NN settings_NNS on_IN the_DT
+          scanner_NN ,_, indicated_VBD that_DT readout_NN saturation_NN (_( not_RB
+          hybridization_NN saturation_NN )_) accounted_VBD for_IN most_JJS of_IN the_DT
+          observed_VBN curvature_NN in_IN the_DT spike-in_JJ response_NN ._. The_DT use_NN of_IN
+          approximately_RB 1_CD μg_NN cRNA_NN in_IN each_DT hybridization_NN ,_, or_CC reduced_VBD
+          scanner_NN gain_NN ,_, largely_RB eliminated_VBN saturation_NN with_IN no_DT
+          penalty_NN in_IN sensitivity_NN ._.
+        
+        
+          Scaled_NNP frequency_NN normalization_NN
+          Frequency_NNP normalization_NN is_VBZ appealing_VBG theoretically_RB and_CC
+          effective_JJ even_RB when_WRB the_DT constant-mean_JJ assumption_NN is_VBZ known_VBN
+          to_TO be_VB invalid_JJ ._. However_RB ,_, our_PRP$ experience_NN suggests_VBZ that_IN
+          frequency_NN estimates_NNS might_MD be_VB biased_VBN by_IN experimental_JJ
+          limitations_NNS on_IN the_DT accuracy_NN with_IN which_WDT control_VBP
+          transcripts_NNS can_MD be_VB spiked_JJ into_IN cRNA_NN ._. Specifically_RB ,_,
+          because_IN of_IN the_DT combination_NN of_IN small_JJ fluid-handling_JJ
+          uncertainties_NNS and_CC potentially_RB larger_JJR variation_NN in_IN the_DT
+          purity_NN of_IN cRNA_NN preparations_NNS ,_, the_DT actual_JJ ratio_NN of_IN the_DT
+          spiked_JJ transcripts_NNS to_TO cDNA-template-derived_JJ cRNAs_NNS might_MD
+          be_VB significantly_RB skewed_VBN from_IN one_CD array_NN to_TO another_DT ._. One_CD
+          source_NN of_IN variable_JJ impurities_NNS in_IN cRNA_NN preparations_NNS could_MD
+          be_VB oligo_NN (_( dT_NN )_) -_: primer-dependent_JJ cRNA_NN product_NN [_NN 19_CD ]_NN ._. Such_JJ
+          cRNA_NN impurities_NNS would_MD result_VB in_IN erroneous_JJ normalization_NN
+          in_IN which_WDT all_DT readouts_NNS from_IN one_CD array_NN would_MD be_VB
+          systematically_RB higher_JJR or_CC lower_JJR than_IN those_DT from_IN another_DT
+          array_NN ._. We_PRP use_VBP the_DT term_NN '_'' spike-skew_JJ '_POS to_TO denote_NN this_DT
+          multiplicative_JJ skew_NN in_IN frequency_NN values_NNS among_IN multiple_JJ
+          hybridizations_NNS ._. One_CD expected_VBN symptom_NN of_IN spike-skew_JJ would_MD
+          be_VB replicate_VB hybridization_NN readouts_NNS that_WDT are_VBP highly_RB
+          correlated_JJ but_CC have_VBP widely_RB divergent_JJ mean_NN expression_NN
+          levels_NNS ._.
+          We_PRP developed_VBD the_DT hybrid_JJ scaled_VBN frequency_NN (_( F_NN s_VBZ )_)
+          normalization_NN method_NN to_TO mitigate_VB the_DT effects_NNS of_IN
+          spike-skew_JJ ._. F_NN snormalization_NN is_VBZ based_VBN on_IN the_DT principle_NN of_IN
+          removing_VBG technical_JJ variation_NN in_IN the_DT ratio_NN of_IN spiked_JJ
+          transcripts_NNS to_TO cDNA-template-derived_JJ cRNAs_NNS ,_, by_IN averaging_VBG
+          the_DT response_NN to_TO spiked_JJ cRNAs_NNS over_IN multiple_JJ
+          hybridizations_NNS ._. To_TO compute_VB F_NN svalues_NNS ,_, globally_RB scaled_VBN
+          average_JJ differences_NNS are_VBP first_JJ computed_JJ for_IN all_DT arrays_NNS in_IN
+          a_DT set_VBN ._. This_DT initial_JJ step_NN implicitly_RB makes_VBZ the_DT
+          constant-mean_JJ assumption_NN ._. A_DT calibration_NN function_NN is_VBZ then_RB
+          computed_JJ by_IN fitting_JJ a_DT single_JJ linear_JJ model_NN to_TO the_DT scaled_VBN
+          average_NN differences_NNS of_IN all_DT spiked_JJ cRNAs_NNS on_IN all_PDT the_DT arrays_NNS
+          in_IN the_DT dataset_NN ,_, pooled_VBN together_RB ._. Individual_JJ array_NN
+          sensitivities_NNS are_VBP still_RB computed_JJ as_IN described_VBN above_IN ,_, and_CC
+          the_DT same_JJ damping_VBG of_IN low-end_JJ frequencies_NNS is_VBZ carried_VBN out_IN
+          using_VBG the_DT sensitivity_NN values_NNS for_IN each_DT array_NN ._.
+          To_TO compare_VB F_NN and_CC F_NN smetrics_NNS ,_, consider_VBP an_DT experimental_JJ
+          set_NN of_IN ten_CD arrays_NNS ._. To_TO compute_VB F_NN values_NNS ,_, ten_CD linear_JJ models_NNS
+          are_VBP fitted_JJ to_TO the_DT ten_CD distinct_JJ ,_, unscaled_JJ AD_NNP responses_NNS to_TO
+          the_DT spiked_JJ cRNAs_NNS ,_, yielding_VBG ten_CD different_JJ calibration_NN
+          factors_NNS ,_, one_CD for_IN each_DT array_NN ._. In_IN contrast_NN ,_, when_WRB computing_VBG
+          F_NN svalues_NNS ,_, a_DT single_JJ linear_JJ model_NN is_VBZ fitted_JJ to_TO the_DT pooled_VBN
+          spike_NN response_NN curve_NN consisting_VBG of_IN 10_CD ×_NN 11_CD =_SYM 121_CD globally_RB
+          scaled_VBN AD_NNP values_NNS ,_, and_CC a_DT single_JJ calibration_NN factor_NN
+          generated_VBN for_IN all_DT ten_CD arrays_NNS ._. If_IN there_EX was_VBD no_DT technical_JJ
+          variation_NN in_IN the_DT ratio_NN of_IN spiked_JJ transcripts_NNS to_TO
+          cDNA-template-derived_JJ cRNAs_NNS in_IN the_DT ten_CD experiments_NNS ,_, both_DT
+          approaches_NNS would_MD give_VB the_DT same_JJ quantitation_NN ,_, up_IN to_TO a_DT
+          random_JJ error_NN term_NN arising_VBG from_IN the_DT difference_NN between_IN
+          fitting_JJ ten_CD 11_CD -_: point_NN responses_NNS versus_CC a_DT single_JJ 121_CD -_: point_NN
+          response_NN ._. If_IN ,_, in_IN one_CD of_IN the_DT ten_CD arrays_NNS ,_, the_DT ratio_NN of_IN
+          spiked_JJ transcripts_NNS to_TO cDNA-template-derived_JJ cRNAs_NNS is_VBZ
+          different_JJ for_IN technical_JJ reasons_NNS ,_, then_RB spike_NN response_NN for_IN
+          that_DT array_NN will_MD be_VB skewed_VBN ,_, and_CC the_DT F-_NNP metric_JJ readout_NN for_IN
+          that_DT array_NN will_MD be_VB skewed_VBN relative_JJ to_TO the_DT other_JJ nine_CD
+          arrays_NNS ._. In_IN contrast_NN ,_, such_JJ a_DT skewed_VBN array_NN will_MD only_RB affect_VB
+          the_DT F_NN smetric_JJ to_TO the_DT extent_NN that_IN the_DT single_JJ skewed_VBN
+          response_NN shifts_VBZ the_DT fit_NN to_TO the_DT pooled_VBN spike_NN response_NN ._. The_DT
+          skew_NN for_IN the_DT single_JJ problematic_JJ array_NN will_MD be_VB removed_VBN
+          because_IN all_DT arrays_NNS in_IN the_DT set_VBN will_MD be_VB scaled_VBN and_CC
+          calibrated_VBN with_IN a_DT single_JJ factor_NN ._. In_IN other_JJ words_NNS ,_, F_NN
+          svalues_NNS are_VBP estimates_NNS of_IN transcript_NN abundance_NN in_IN cRNA_NN ,_,
+          based_VBN on_IN the_DT average_JJ response_NN to_TO the_DT spiked_JJ cRNAs_NNS over_IN
+          multiple_JJ hybridizations_NNS and_CC on_IN the_DT sensitivity_NN of_IN each_DT
+          individual_JJ array_NN ._. F_NN values_NNS provide_VBP the_DT same_JJ estimate_NN ,_, but_CC
+          based_VBD solely_RB on_IN the_DT response_NN to_TO spiked_JJ cRNAs_NNS in_IN a_DT single_JJ
+          array_NN hybridization_NN ._.
+        
+        
+          Comparison_NNP of_IN normalization_NN methods_NNS :_:
+          reproducibility_NN
+          We_PRP compared_VBD the_DT performance_NN of_IN four_CD metrics_NNS :_: AD_NNP ;_:
+          globally_RB normalized_JJ AD_NNP (_( AD_NNP s_VBZ )_) ;_: frequency_NN (_( F_NN )_) ;_: and_CC scaled_VBN
+          frequency_NN (_( F_NN s_VBZ )_) ._. The_DT basis_NN for_IN comparison_NN was_VBD
+          experimental_JJ data_NNS consisting_VBG of_IN four_CD sets_NNS of_IN replicated_VBN
+          hybridizations_NNS (_( each_DT 
+          n_NN =_SYM 3_CD or_CC 4_LS )_) of_IN the_DT same_JJ array_NN
+          design_NN (_( the_DT 
+          C_NNP ._. elegans_NNS A_DT array_NN )_) ._. Performance_NNP of_IN
+          each_DT metric_NN was_VBD measured_VBN by_IN the_DT median_JJ absolute_JJ
+          coefficient_NN of_IN variation_NN (_( MEDACV_NNP )_) of_IN probe_NN sets_NNS across_IN
+          the_DT replicated_VBN hybridizations_NNS ._. MEDACV_NNP is_VBZ a_DT measure_NN of_IN
+          reproducibility_NN for_IN which_WDT a_DT value_NN of_IN zero_CD indicates_VBZ
+          perfect_JJ agreement_NN of_IN all_DT transcript_NN readouts_NNS in_IN a_DT set_NN of_IN
+          replicated_VBN hybridizations_NNS ._. We_PRP compared_VBD MEDACV_NNP for_IN two_CD
+          classes_NNS of_IN mRNAs_NNS :_: those_DT called_VBN Present_NN in_IN at_IN least_JJS 50_CD %_NN of_IN
+          replicated_VBN hybridizations_NNS (_( referred_VBD to_TO as_IN '_POS Present_NN '_POS
+          mRNAs_NNS )_) ,_, and_CC those_DT Present_NN in_IN fewer_JJR than_IN 50_CD %_NN of_IN the_DT
+          replicated_VBN hybridizations_NNS (_( referred_VBD to_TO as_IN '_POS Absent_VB '_POS
+          mRNAs_NNS )_) ._. All_DT metrics_NNS showed_VBD higher_JJR (_( worse_JJR )_) MEDACVs_NNP for_IN the_DT
+          low-abundance_JJ Absent_VB mRNAs_NNS than_IN for_IN the_DT higher-abundance_JJ
+          Present_NN mRNAs_NNS (_( Figure_NN 3_LS )_) ,_, as_IN expected_VBN from_IN the_DT presence_NN
+          of_IN background_NN noise_NN on_IN the_DT arrays_NNS ._. For_IN Present_NN genes_NNS ,_, AD_NNP
+          swas_NNS more_RBR reproducible_JJ than_IN AD_NNP ,_, as_IN expected_VBN ._. Scaled_NNP
+          frequency_NN (_( F_NN s_VBZ )_) was_VBD as_RB reproducible_JJ as_IN AD_NNP sfor_NN Present_NN
+          genes_NNS in_IN all_DT replicate_VB sets_NNS ,_, and_CC yielded_VBD trivially_RB higher_JJR
+          reproducibility_NN than_IN AD_NNP sfor_NN Absent_VB mRNAs_NNS ,_, owing_VBG to_TO
+          damping_VBG of_IN background_NN noise_NN ._. Frequency_NNP appeared_VBD
+          equivalent_JJ to_TO F_NN sand_NN AD_NNP sin_NN the_DT first_JJ set_NN of_IN experiments_NNS
+          (_( the_DT 0_CD -_: hour_NN timepoint_NN )_) but_CC had_VBD a_DT higher_JJR MEDACV_NNP than_IN F_NN sin_NN
+          the_DT other_JJ three_CD replicate_VB sets_NNS ._. We_PRP also_RB computed_JJ Pearson_NNP
+          correlation_NN coefficients_NNS for_IN the_DT same_JJ replicate_VB readouts_NNS ._.
+          Unlike_IN MEDACV_NNP ,_, correlation_NN coefficients_NNS between_IN replicate_VB
+          readouts_NNS were_VBD similar_JJ for_IN all_DT metrics_NNS (_( in_IN the_DT range_NN from_IN
+          0_CD ._. 978_CD -_: 0_CD ._. 996_CD )_) ._.
+          To_TO better_JJR understand_VB the_DT reasons_NNS for_IN the_DT markedly_RB
+          different_JJ MEDACV_NNP performances_NNS of_IN the_DT four_CD metrics_NNS on_IN
+          experimental_JJ replicates_NNS ,_, we_PRP performed_VBD simulations_NNS ._. These_DT
+          simulations_NNS incorporated_VBD several_JJ adjustable_JJ noise_NN
+          parameters_NNS ._. We_PRP estimated_VBD values_NNS for_IN these_DT parameters_NNS
+          iteratively_RB ,_, based_VBN on_IN experimental_JJ data_NNS (_( see_VB Materials_NNPS
+          and_CC methods_NNS )_) ._. The_DT similarity_NN in_IN the_DT CV_NNP distributions_NNS of_IN
+          experimental_JJ and_CC simulated_JJ data_NNS indicated_VBD that_IN ,_, for_IN our_PRP$
+          purposes_NNS ,_, the_DT simulations_NNS recapitulated_JJ the_DT major_JJ error_NN
+          properties_NNS of_IN real_JJ array_NN data_NNS (_( Figure_NN 4_LS )_) ._.
+          We_PRP tested_VBD if_IN spike-skew_JJ could_MD account_VB for_IN the_DT
+          relatively_RB high_JJ CV_NNP of_IN frequency_NN in_IN three_CD of_IN the_DT four_CD
+          replicate_VB sets_NNS (_( Figure_NN 3_LS )_) by_IN comparing_VBG experimental_JJ data_NNS
+          to_TO simulated_JJ data_NNS with_IN known_VBN levels_NNS of_IN spike-skew_JJ ._. To_TO
+          approximate_JJ spike-skew_JJ ,_, the_DT concentration_NN of_IN the_DT spike-in_JJ
+          transcripts_NNS in_IN simulations_NNS was_VBD multiplied_VBN by_IN a_DT random_JJ
+          noise_NN term_NN ._. Over_IN a_DT series_NN of_IN simulations_NNS ,_, we_PRP varied_VBD the_DT
+          standard_JJ deviation_NN of_IN the_DT noise_NN term_NN from_IN 0_CD to_TO 40_CD %_NN to_TO
+          model_VB the_DT effect_NN of_IN increasing_VBG spike-skew_JJ ._. MEDACV_NNP values_NNS
+          were_VBD then_RB computed_JJ from_IN the_DT simulation_NN results_NNS in_IN the_DT
+          same_JJ way_NN as_IN for_IN the_DT experimental_JJ data_NN in_IN Figure_NN 3_CD ._.
+          As_IN expected_VBN ,_, only_RB frequency_NN was_VBD sensitive_JJ to_TO
+          spike-skew_JJ (_( Figure_NN 5_LS )_) ._. The_DT F_NN smetric_JJ ,_, which_WDT uses_VBZ a_DT single_JJ
+          standard_JJ curve_NN pooled_VBN from_IN each_DT dataset_NN to_TO normalize_VB all_DT
+          arrays_NNS in_IN that_DT dataset_NN ,_, effectively_RB eliminated_VBN spike-skew_JJ
+          effects_NNS ._. In_IN the_DT simulations_NNS ,_, a_DT spike-skew_JJ level_NN of_IN 20_CD %_NN
+          led_VBN to_TO MEDACV_NNP values_NNS for_IN frequency_NN in_IN simulated_JJ
+          replicates_NNS that_WDT were_VBD much_RB higher_JJR than_IN those_DT of_IN AD_NNP sor_NN F_NN
+          s_VBZ ._. These_DT results_NNS were_VBD highly_RB reminiscent_NN of_IN the_DT 36_CD ,_, 48_CD
+          and_CC 60_CD hour_NN experimental_JJ replicate_VB sets_NNS (_( compare_VB Figures_NNS
+          5_CD and_CC 3_LS )_) ._.
+          Taken_VBN together_RB ,_, the_DT experimental_JJ data_NN and_CC the_DT
+          simulations_NNS suggest_VBP that_IN spike-skews_JJ of_IN roughly_RB 20_CD %_NN can_MD
+          explain_VB the_DT sometimes_RB inferior_JJ MEDACV_NNP (_( but_CC consistently_RB
+          high_JJ inter-replicate_JJ correlation_NN coefficients_NNS )_) of_IN the_DT
+          frequency_NN metric_JJ ._.
+        
+        
+          Comparisons_NNP across_IN array_NN designs_NNS
+          We_PRP next_RB considered_VBD the_DT reproducibility_NN of_IN readouts_NNS of_IN
+          the_DT same_JJ mRNA_NN on_IN different_JJ array_NN designs_NNS ._. For_IN this_DT
+          analysis_NN ,_, we_PRP selected_VBD the_DT three_CD mRNAs_NNS that_WDT were_VBD monitored_VBN
+          by_IN identical_JJ probe_NN sets_NNS on_IN each_DT of_IN the_DT A_DT ,_, B_NNP ,_, and_CC C_NNP array_NN
+          designs_NNS and_CC were_VBD called_VBN Present_VB in_IN all_DT hybridizations_NNS of_IN
+          the_DT 0_CD hour_NN cRNA_NN sample_NN ._. The_DT observed_VBD CV_NNP of_IN the_DT AD_NNP smetric_JJ
+          was_VBD in_IN all_DT cases_NNS larger_JJR than_IN that_DT of_IN the_DT F_NN or_CC F_NN smetric_JJ ,_,
+          and_CC was_VBD greater_JJR than_IN 0_CD ._. 55_CD for_IN all_DT three_CD mRNAs_NNS ,_, indicating_VBG
+          very_RB poor_JJ agreement_NN of_IN readouts_NNS from_IN different_JJ array_NN
+          designs_NNS when_WRB global_JJ normalization_NN was_VBD used_VBN (_( Figure_NN 6_CD )_) ._. In_IN
+          contrast_NN ,_, the_DT CVs_NNP of_IN both_DT F_NN and_CC F_NN smetrics_NNS were_VBD lower_RBR ,_,
+          with_IN CVs_NNP for_IN F_NN sin_NN particular_JJ averaging_NN 0_CD ._. 19_CD (_( range_NN
+          0_CD ._. 13_CD -_: 0_CD ._. 29_CD )_) ._. The_DT mRNA_NN K_NNP 11_CD C_NNP 4_CD ._. 5_LS was_VBD expressed_VBN at_IN >_NN
+          10_CD -_: fold_VB lower_JJR levels_NNS than_IN either_DT of_IN the_DT other_JJ two_CD mRNAs_NNS ,_,
+          and_CC thus_RB had_VBD higher_JJR CV_NNP values_NNS for_IN both_DT F_NN and_CC F_NN sthan_NN the_DT
+          other_JJ two_CD mRNAs_NNS ._. Comparison_NNP of_IN the_DT across-array-design_JJ
+          CVs_NNP to_TO the_DT within-array-design_JJ CVs_NNP for_IN the_DT three_CD
+          transcripts_NNS in_IN Figure_NN 6_CD indicates_VBZ that_IN the_DT reproducibility_NN
+          of_IN AD_NNP swas_NNS substantially_RB poorer_JJR when_WRB comparing_VBG across_IN
+          array_NN designs_NNS rather_RB than_IN within_IN arrays_NNS ._. Specifically_RB ,_, AD_NNP
+          sacross-array_JJ CV_NNP was_VBD 3_CD ._. 2_CD -_: to_TO 6_CD ._. 4_CD -_: fold_VB higher_JJR than_IN the_DT
+          within-array_JJ CV_NNP ._. In_IN contrast_NN ,_, the_DT across-array_JJ CV_NNP for_IN F_NN
+          swas_NNS only_RB 1_CD ._. 3_CD -_: to_TO 1_CD ._. 6_CD -_: fold_VB higher_JJR than_IN the_DT corresponding_JJ
+          within-array_JJ CV_NNP (_( Table_NNP 2_LS )_) ._.
+          The_DT reason_NN for_IN the_DT poor_JJ agreement_NN of_IN AD_NNP sreadouts_NNS
+          across_IN distinct_JJ designs_NNS was_VBD that_IN the_DT mRNAs_NNS monitored_VBN by_IN
+          the_DT A_DT array_NN are_VBP ,_, on_IN average_NN ,_, expressed_VBD at_IN higher_JJR levels_NNS
+          than_IN those_DT on_IN the_DT B_NNP or_CC C_NNP array_NN ,_, as_IN confirmed_VBN by_IN two_CD
+          independent_JJ lines_NNS of_IN evidence_NN ._. First_LS ,_, the_DT mRNAs_NNS on_IN the_DT A_DT
+          array_NN were_VBD intentionally_RB selected_VBN because_IN they_PRP were_VBD
+          represented_VBN in_IN 
+          C_NNP ._. elegans_NNS cDNA_NN libraries_NNS ,_, whereas_IN
+          the_DT B_NNP and_CC C_NNP array_NN genes_NNS (_( many_JJ of_IN them_PRP computational_NN
+          predictions_NNS )_) were_VBD generally_RB not_RB represented_VBD in_IN cDNA_NN
+          libraries_NNS ._. Second_JJ ,_, A_DT array_NN mRNAs_NNS were_VBD more_RBR likely_JJ than_IN B_NNP
+          or_CC C_NNP array_NN mRNAs_NNS to_TO be_VB detected_VBN in_IN the_DT developmental_NN time_NN
+          course_NN by_IN the_DT Affymetrix_NNP Absolute_JJ Decision_NNP metric_JJ [_NN 10_CD ]_NN ._.
+          Because_IN of_IN this_DT systematic_JJ difference_NN between_IN gene_NN sets_NNS ,_,
+          the_DT mean_NN AD_NNP of_IN all_PDT A_DT array_NN genes_NNS was_VBD substantially_RB higher_JJR
+          than_IN that_DT of_IN the_DT genes_NNS on_IN the_DT B_NNP or_CC C_NNP arrays_NNS ._. The_DT AD_NNP
+          smetric_JJ scales_NNS data_NNS under_IN the_DT assumption_NN that_WDT mean_VBP
+          expression_NN levels_NNS for_IN all_DT arrays_NNS should_MD be_VB equal_JJ ._.
+          Therefore_RB ,_, AD_NNP svalues_NNS for_IN genes_NNS on_IN the_DT B_NNP and_CC C_NNP arrays_NNS
+          were_VBD inappropriately_RB inflated_VBN relative_JJ to_TO AD_NNP svalues_NNS from_IN
+          the_DT A_DT array_NN ._.
+        
+        
+          Comparison_NNP of_IN normalization_NN methods_NNS :_:
+          accuracy_NN
+          Normalization_NNP methods_NNS should_MD accurately_RB measure_VB true_JJ
+          biological_JJ variation_NN ._. We_PRP tested_VBD the_DT accuracy_NN of_IN the_DT four_CD
+          methods_NNS using_VBG simulated_JJ data_NNS ._. As_IN a_DT baseline_NN we_PRP chose_VBD the_DT
+          experimental_JJ data_NN from_IN one_CD of_IN the_DT 0_CD -_: hour_NN replicates_NNS on_IN
+          the_DT A_DT array_NN ._. We_PRP generated_VBD 19_CD simulated_JJ experimental_JJ
+          conditions_NNS to_TO produce_VB 20_CD raw_JJ average_JJ difference_NN values_NNS
+          for_IN each_DT of_IN 6_CD ,_, 617_CD genes_NNS ._. For_IN each_DT of_IN the_DT four_CD metrics_NNS ,_,
+          computed_JJ fold-changes_JJ between_IN the_DT modulated_JJ condition_NN and_CC
+          the_DT baseline_NN (_( considering_VBG only_RB messages_NNS called_VBN Present_VB )_)
+          were_VBD compared_VBN to_TO the_DT true_JJ fold-changes_JJ ._. Accuracy_NNP was_VBD
+          defined_VBN as_IN the_DT fraction_NN of_IN computed_JJ fold-changes_JJ that_WDT
+          were_VBD accurate_JJ within_IN twofold_NN ,_, and_CC determined_VBD for_IN assumed_VBD
+          levels_NNS of_IN spike-skew_JJ from_IN 10_CD -_: 40_CD %_NN (_( percentage_NN is_VBZ the_DT ratio_NN
+          of_IN standard_JJ deviation_NN (_( SD_NNP )_) to_TO mean_NN of_IN the_DT random_JJ
+          spike-skew_JJ term_NN in_IN the_DT simulation_NN )_) ._. Three_CD simulations_NNS
+          were_VBD carried_VBN out_RB at_IN each_DT level_NN of_IN assumed_VBD spike-skew_JJ ._. AD_NNP
+          sand_NN F_NN smetrics_NNS performed_VBN equally_RB well_RB and_CC best_JJS overall_JJ ,_,
+          with_IN accuracies_NNS above_IN 99_CD %_NN regardless_RB of_IN spike-skew_JJ ._. As_IN
+          expected_VBN ,_, frequency_NN was_VBD the_DT only_RB metric_JJ with_IN a_DT
+          significant_JJ dependence_NN on_IN the_DT level_NN of_IN spike-skew_JJ ._. At_IN 10_CD %_NN
+          spike-skew_JJ ,_, frequency_NN accuracy_NN was_VBD (_( mean_VB ±_NN SD_NNP )_) 0_CD ._. 9951_CD ±_NN
+          0_CD ._. 0006_CD ,_, at_IN 20_CD %_NN ,_, 0_CD ._. 96_CD ±_NN 0_CD ._. 02_CD ,_, and_CC at_IN 40_CD %_NN ,_, 0_CD ._. 82_CD ±_NN 0_CD ._. 06_CD ._. For_IN
+          comparison_NN ,_, the_DT accuracy_NN of_IN AD_NNP was_VBD 0_CD ._. 88_CD ±_NN 0_CD ._. 07_CD at_IN 10_CD %_NN
+          spike-skew_JJ ,_, and_CC did_VBD not_RB change_VB significantly_RB at_IN higher_JJR
+          spike-skew_JJ levels_NNS ._.
+          We_PRP stress_VBP that_IN the_DT overall_JJ accuracy_NN levels_NNS reported_VBD
+          here_RB are_VBP highly_RB dependent_JJ on_IN adjustable_JJ parameters_NNS in_IN our_PRP$
+          simulation_NN model_NN (_( see_VB Materials_NNPS and_CC methods_NNS )_) ._.
+          Nevertheless_RB ,_, the_DT simulations_NNS demonstrate_VBP that_IN at_IN levels_NNS
+          of_IN spike-skew_JJ consistent_JJ with_IN our_PRP$ experience_NN ,_, scaled_VBN
+          frequency_NN is_VBZ as_RB accurate_JJ as_IN globally_RB normalized_JJ AD_NNP s_VBZ ;_:
+          this_DT observation_NN is_VBZ robust_JJ to_TO changes_NNS in_IN the_DT model_NN
+          parameters_NNS ._.
+        
+        
+          Absolute_JJ quantitation_NN of_IN cRNA_NN and_CC cellular_JJ
+          RNA_NNP
+          There_EX are_VBP several_JJ potential_JJ sources_NNS of_IN inaccuracy_NN in_IN
+          the_DT cRNA_NN quantitiation_NN given_VBN by_IN the_DT scaled_VBN frequency_NN
+          metric_JJ ._.
+          Our_PRP$ results_NNS suggest_VBP that_IN there_EX is_VBZ significant_JJ
+          uncertainty_NN in_IN the_DT molar_NN ratio_NN of_IN spike-in_JJ mRNAs_NNS to_TO
+          template-derived_JJ cRNAs_NNS in_IN any_DT hybridization_NN (_( the_DT
+          spike-skew_JJ effect_NN )_) ._. The_DT MEDACV_NNP for_IN the_DT F_NN metric_JJ in_IN Figure_NN
+          3_CD is_VBZ likely_JJ one_CD measure_NN of_IN this_DT uncertainty_NN ,_, as_IN it_PRP
+          probably_RB arises_VBZ primarily_RB from_IN cRNA_NN purity_NN variation_NN ._.
+          This_DT uncertainty_NN leads_VBZ to_TO proportional_JJ differences_NNS
+          between_IN frequency_NN metric_JJ readouts_NNS and_CC true_JJ cRNA_NN
+          transcript_NN abundances_NNS ._. However_RB ,_, in_IN the_DT scaled_VBN frequency_NN
+          method_NN ,_, the_DT simultaneous_JJ normalization_NN of_IN larger_JJR datasets_NNS
+          reduces_VBZ these_DT differences_NNS through_IN averaging_VBG ._. We_PRP
+          anticipate_VBP that_IN inaccuracies_NNS of_IN cRNA_NN quantitation_NN arising_VBG
+          from_IN this_DT effect_NN will_MD be_VB reduced_VBN by_IN improved_VBN methods_NNS for_IN
+          quantitation_NN of_IN cRNA_NN preparations_NNS ._.
+          For_IN F_NN and_CC F_NN s_VBZ ,_, heterogeneity_NN in_IN probe_NN response_NN will_MD
+          lead_VB to_TO gene-specific_JJ biases_NNS in_IN quantitation_NN ._. Our_PRP$ data_NNS
+          contains_VBZ two_CD observations_NNS that_WDT allow_VBP us_PRP to_TO estimate_VB the_DT
+          degree_NN of_IN heterogeneity_NN among_IN spiked_JJ probe_NN sets_NNS ._. Cursory_NNP
+          examination_NN of_IN the_DT calibration_NN curve_NN (_( Figure_NN 2_LS )_) suggests_VBZ
+          relative_JJ responses_NNS of_IN the_DT 11_CD distinct_JJ probe_NN sets_NNS shown_VBN do_VBP
+          not_RB vary_VB more_JJR than_IN two-fold_JJ :_: no_DT observations_NNS fall_VBP more_JJR
+          than_IN about_IN a_DT factor_NN of_IN two_CD from_IN the_DT fitted_JJ line_NN ._. A_DT more_RBR
+          rigorous_JJ evaluation_NN of_IN probe_NN set_VBD heterogeneity_NN can_MD be_VB
+          done_VBN by_IN comparing_VBG the_DT ratio_NN of_IN AD_NNP values_NNS from_IN two_CD
+          distinct_JJ probe_NN sets_NNS that_WDT monitor_VBP the_DT same_JJ transcript_NN in_IN a_DT
+          single_JJ hybridization_NN ._. This_DT ratio_NN estimates_VBZ the_DT difference_NN
+          in_IN readout_NN that_WDT would_MD be_VB observed_VBN for_IN a_DT single_JJ transcript_NN
+          if_IN a_DT different_JJ probe_NN set_VBN were_VBD selected_VBN ._. This_DT comparison_NN
+          was_VBD made_VBN for_IN the_DT 11_CD spiked_JJ transcripts_NNS (_( each_DT array_NN
+          contained_VBD two_CD probe_NN sets_NNS for_IN each_DT of_IN these_DT mRNAs_NNS )_) ._. On_IN the_DT
+          basis_NN of_IN 138_CD ratio_NN measurements_NNS from_IN the_DT 
+          C_NNP ._. elegans_NNS arrays_NNS ,_, the_DT 10_CD th-_NN 90_CD th_NN
+          percentile_NN range_NN for_IN the_DT ratio_NN was_VBD 0_CD ._. 39_CD -_: 1_CD ._. 44_CD [_NN 10_CD ]_NN ,_,
+          indicating_VBG that_IN for_IN the_DT set_NN of_IN control_NN transcripts_NNS ,_, the_DT
+          uncertainty_NN in_IN cRNA_NN quantitation_NN due_JJ to_TO heterogeneity_NN in_IN
+          probe_NN set_VBD responses_NNS for_IN 80_CD %_NN of_IN transcripts_NNS was_VBD less_RBR than_IN
+          threefold_RB ._.
+          In_IN addition_NN to_TO these_DT factors_NNS leading_VBG to_TO inaccuracies_NNS
+          in_IN cRNA_NN quantitation_NN ,_, there_RB are_VBP at_IN least_JJS two_CD important_JJ
+          factors_NNS leading_VBG to_TO differences_NNS between_IN cRNA_NN abundances_NNS
+          and_CC cellular_JJ RNA_NNP abundances_NNS in_IN the_DT starting_VBG biological_JJ
+          material_NN ._.
+          First_LS ,_, because_IN cRNA_NN is_VBZ generated_VBN from_IN the_DT
+          polyadenylated_JJ fraction_NN of_IN total_JJ cellular_JJ RNA_NNP by_IN a_DT linear_JJ
+          amplification_NN process_NN ,_, frequency_NN estimates_NNS will_MD not_RB
+          reflect_VB sample-specific_JJ changes_NNS in_IN the_DT fraction_NN of_IN
+          polyadenylated_JJ RNA_NNP in_IN total_JJ cellular_JJ RNA_NNP ._. This_DT may_MD be_VB a_DT
+          desirable_JJ feature_NN of_IN frequency_NN estimates_NNS ,_, in_IN cases_NNS where_WRB
+          per-total-_JJ RNA_NNP abundance_NN is_VBZ less_RBR relevant_JJ than_IN
+          per-polyadenylated-_JJ RNA_NNP abundance_NN ._.
+          Second_JJ ,_, any_DT gene-specific_JJ biases_NNS in_IN the_DT cRNA_NN
+          amplification_NN procedure_NN will_MD lead_VB to_TO gene-specific_JJ
+          differences_NNS between_IN cRNA_NN and_CC per-total-_JJ RNA_NNP
+          quantifications_NNS ._. Evidence_NN to_TO date_NN suggests_VBZ that_IN these_DT
+          biases_NNS are_VBP small_JJ [_NN 1_CD ]_NN and_CC reproducible_JJ [_NN 19_CD ]_NN ._.
+          Taken_VBN together_RB ,_, the_DT above-noted_JJ sources_NNS of_IN inaccuracy_NN
+          suggest_VBP that_IN there_EX can_MD typically_RB be_VB around_IN two-_NN to_TO
+          threefold_RB differences_NNS between_IN scaled_VBN frequency_NN per-c_JJ RNA_NNP
+          estimates_NNS and_CC per-polyadenylated-_JJ RNA_NNP abundances_NNS in_IN the_DT
+          starting_VBG material_NN ._. These_DT differences_NNS could_MD be_VB reduced_VBN by_IN
+          improved_VBN cRNA_NN process_NN control_NN and_CC quantitation_NN ,_, and_CC by_IN
+          improved_VBN probe_NN selection_NN algorithms_NNS ._.
+        
+      
+      
+        Conclusions_NNP
+        We_PRP have_VBP shown_VBN that_WDT cRNAs_NNS spiked_VBN into_IN hybridization_NN
+        solutions_NNS at_IN known_VBN concentrations_NNS covering_VBG two_CD to_TO three_CD
+        orders_NNS of_IN magnitude_NN can_MD be_VB used_VBN to_TO normalize_VB array_NN data_NNS and_CC
+        to_TO estimate_VB array_NN sensitivity_NN ._. However_RB ,_, frequency_NN
+        normalization_NN based_VBN solely_RB on_IN these_DT control_NN transcripts_NNS can_MD
+        be_VB adversely_RB affected_VBN by_IN variations_NNS in_IN the_NNP '_POS purity_NN '_'' of_IN cRNA_NN
+        preparations_NNS ._. These_DT observations_NNS underline_VB the_DT need_NN for_IN
+        meticulous_JJ quality_NN control_NN during_IN the_DT production_NN of_IN cRNA_NN
+        samples_NNS and_CC accurate_JJ quantitation_NN of_IN the_DT resulting_VBG
+        material_NN ._. With_IN better_JJR control_NN of_IN these_DT processes_VBZ ,_, the_DT
+        frequency_NN metric_NN may_MD provide_VB a_DT robust_JJ spike-based_JJ
+        normalization_NN that_IN ,_, unlike_IN all_PDT the_DT other_JJ metrics_NNS described_VBD
+        here_RB ,_, does_VBZ not_RB rely_VB on_IN the_DT constant-mean_JJ assumption_NN ._.
+        In_IN the_DT presence_NN of_IN variation_NN in_IN cRNA_NN purity_NN ,_, the_DT F_NN
+        smetric_JJ provides_VBZ a_DT compromise_NN between_IN the_DT robustness_NNS of_IN the_DT
+        AD_NNP smetric_JJ and_CC the_DT more_RBR absolute_JJ quantitation_NN scale_NN of_IN the_DT
+        frequency_NN metric_JJ ,_, in_IN cases_NNS where_WRB the_DT constant-mean_JJ
+        assumption_NN is_VBZ valid_JJ ._. In_IN addition_NN ,_, the_DT F_NN smetric_JJ provides_VBZ a_DT
+        common_JJ scale_NN for_IN comparing_VBG data_NNS from_IN distinct_JJ array_NN
+        designs_NNS ._. This_DT is_VBZ an_DT important_JJ advantage_NN over_IN other_JJ metrics_NNS ._.
+        For_IN example_NN ,_, the_DT F_NN smetric_JJ allows_VBZ comparison_NN of_IN the_DT
+        expression_NN levels_NNS of_IN all_DT worm_NN mRNAs_NNS on_IN all_DT three_CD of_IN our_PRP$
+        array_NN designs_NNS with_IN comparable_JJ confidence_NN to_TO
+        within-array-design_JJ comparisons_NNS ._. This_DT is_VBZ not_RB possible_JJ with_IN
+        globally_RB normalized_JJ average_JJ differences_NNS ._. We_PRP believe_VBP that_DT
+        cRNA_NN quantitation_NN and_CC the_DT damping_VBG of_IN low-amplitude_JJ signals_NNS
+        provided_VBN by_IN the_DT F_NN snormalization_NN make_VBP this_DT metric_JJ a_DT
+        valuable_JJ format_NN for_IN reporting_VBG diverse_JJ gene_NN expression_NN array_NN
+        results_NNS ._.
+      
+      
+        Materials_NNS and_CC methods_NNS
+        
+          Experiments_NNS and_CC arrays_NNS
+          Array_NNP experiments_NNS used_VBD the_DT Genetics_NNP Institute_NNP 
+          C_NNP ._. elegans_NNS Affymetrix_NNP GeneChip_NNP ™_NN
+          oligonucleotide_NN arrays_NNS ,_, a_DT set_NN of_IN three_CD arrays_NNS (_( denoted_JJ A_DT ,_,
+          B_NNP and_CC C_NNP )_) which_WDT in_IN aggregate_JJ monitor_NN approximately_RB 98_CD %_NN of_IN
+          the_DT 19_CD ,_, 099_CD predicted_VBD worm_NN mRNAs_NNS in_IN the_DT October_NNP 1998_CD worm_NN
+          genome_NN sequence_NN release_NN [_NN 20_CD ]_NN ._. The_DT total_JJ number_NN of_IN probe_NN
+          sets_NNS on_IN each_DT array_NN was_VBD 6_CD ,_, 617_CD (_( A_DT array_NN )_) ,_, 5_CD ,_, 768_CD (_( B_NNP )_) ,_, and_CC
+          6_CD ,_, 646_CD (_( C_NNP )_) ._. Each_DT probe_NN set_VBN consists_VBZ of_IN 20_CD distinct_JJ probe_NN
+          pairs_NNS (_( each_DT probe_NN is_VBZ a_DT 25_CD mer_NN )_) designed_VBN to_TO monitor_VB a_DT
+          single_JJ transcript_NN ._. On_IN the_DT 
+          C_NNP ._. elegans_NNS arrays_NNS described_VBD here_RB ,_,
+          probe_NN sets_NNS monitoring_VBG the_DT spiked_JJ transcripts_NNS were_VBD each_DT
+          tiled_JJ twice_RB with_IN a_DT different_JJ set_NN of_IN oligonucleotide_NN
+          probes_NNS ._. On_IN arrays_NNS that_WDT are_VBP commercially_RB available_JJ from_IN
+          Affymetrix_NNP ,_, one_CD probe_NN set_VBN is_VBZ tiled_JJ to_TO monitor_VB each_DT of_IN the_DT
+          spike-in_JJ transcripts_NNS ._. The_DT probe_NN sets_NNS are_VBP not_RB fully_RB
+          randomly_RB distributed_VBN across_IN the_DT arrays_NNS ,_, although_IN on_IN the_DT 
+          C_NNP ._. elegans_NNS arrays_NNS the_DT different_JJ
+          probe_NN sets_NNS are_VBP tiled_JJ in_IN widely_RB different_JJ regions_NNS of_IN the_DT
+          arrays_NNS ._. Experimental_NNP array_NN data_NNS described_VBD here_RB were_VBD taken_VBN
+          from_IN the_DT developmental_NN time_NN course_NN dataset_NN reported_VBD in_IN [_NN
+          10_CD ]_NN ._. Specifically_RB ,_, we_PRP examined_VBD individual_JJ replicate_VB
+          hybridizations_NNS of_IN the_DT A_DT array_NN from_IN the_DT worm_NN developmental_NN
+          time_NN course_NN at_IN each_DT of_IN 0_CD (_( 
+          n_NN =_SYM 4_LS )_) ,_, 36_CD (_( 
+          n_NN =_SYM 3_LS )_) ,_, 48_CD (_( 
+          n_NN =_SYM 4_LS )_) and_CC 60_CD (_( 
+          n_NN =_SYM 4_LS )_) hours_NNS after_IN synchronization_NN
+          of_IN worm_NN eggs_NNS by_IN bleach_NN ,_, as_RB well_RB as_IN a_DT larger_JJR set_JJ of_IN 13_CD
+          hybridizations_NNS of_IN all_DT three_CD arrays_NNS to_TO samples_NNS ranging_VBG
+          from_IN oocytes_NNS to_TO 2_CD -_: week-old_JJ worms_NNS ._. Replicate_NNP
+          hybridizations_NNS in_IN the_DT datasets_NNS included_VBD independently_RB
+          generated_VBN complementary_JJ RNA_NNP (_( cRNA_NN )_) preparations_NNS from_IN the_DT
+          same_JJ starting_NN total_JJ RNA_NNP ._. Primary_JJ data_NNS for_IN all_DT transcripts_NNS
+          on_IN all_DT arrays_NNS (_( including_VBG all_DT replicates_NNS of_IN all_DT three_CD
+          array_NN designs_NNS )_) is_VBZ contained_VBN in_IN the_DT supplementary_JJ Excel_NNP
+          spreadsheet_NN (_( see_VB Additional_JJ data_NNS files_NNS )_) ._.
+        
+        
+          Spike-in_NNP transcript_NN pool_NN
+          A_DT pool_NN of_IN biotin-labeled_JJ spike-in_JJ control_NN transcripts_NNS
+          was_VBD derived_VBN by_IN 
+          in_IN vitro_NN transcription_NN of_IN 11_CD cloned_VBN
+          
+          Bacillus_NN subtilis_NNS genes_NNS ,_, using_VBG the_DT
+          methods_NNS described_VBD in_IN [_NN 21_CD ]_NN ._. The_DT spike-in_JJ pool_NN was_VBD added_VBN
+          into_IN hybridization_NN cocktails_NNS in_IN proportion_NN to_TO the_DT
+          UV-quantitated_NNP cRNA_NN mass_NN in_IN the_DT hybridization_NN ,_, so_RB as_IN to_TO
+          achieve_VB the_DT desired_VBN final_JJ concentration_NN of_IN spike-ins_JJ ._. The_DT
+          spiked_JJ transcripts_NNS and_CC their_PRP$ final_JJ concentrations_NNS in_IN the_DT
+          hybridization_NN cocktails_NNS are_VBP listed_VBN in_IN Table_NNP 1_CD ._. Final_JJ
+          concentrations_NNS in_IN pmol_NN and_CC parts_NNS per_IN million_CD (_( ppm_NN )_) for_IN
+          each_DT spiked_JJ transcript_NN were_VBD computed_JJ from_IN the_DT known_VBN
+          length_NN of_IN each_DT spike-in_JJ ,_, assuming_VBG a_DT total_JJ mass_NN of_IN 2_CD μg_NN
+          worm_NN cRNA_NN in_IN a_DT 200_CD μl_NN hybridization_NN volume_NN ,_, and_CC an_DT
+          average_JJ length_NN of_IN 1_CD ,_, 000_CD bases_NNS for_IN 
+          in_IN vitro_NN transcribed_JJ worm_NN
+          cRNAs_NNS ._.
+        
+        
+          Metrics_NNP for_IN transcript_NN abundance_NN
+          Average_JJ difference_NN (_( AD_NNP )_) is_VBZ the_DT basic_JJ measure_NN of_IN
+          transcript_NN abundance_NN that_WDT is_VBZ calculated_VBN by_IN the_DT Affymetrix_NNP
+          GeneChip_NNP 3_CD ._. 1_CD software_NN ._. The_DT calculation_NN of_IN AD_NNP is_VBZ described_VBN
+          in_IN detail_NN in_IN the_DT Affymetrix_NNP GeneChip_NNP User_NNP Guide_NNP [_NN 17_CD ]_NN ._.
+          Briefly_NNP ,_, a_DT background_NN intensity_NN is_VBZ computed_JJ for_IN each_DT of_IN
+          16_CD rectangular_JJ sectors_NNS on_IN the_DT array_NN ._. This_DT local_JJ
+          background_NN is_VBZ subtracted_VBN from_IN the_DT intensity_NN values_NNS of_IN
+          each_DT probe_NN cell_NN in_IN all_DT sectors_NNS ._. After_IN background_NN
+          subtraction_NN ,_, the_DT difference_NN between_IN perfect_JJ match_NN (_( PM_NNP )_)
+          and_CC mismatch_NN (_( MM_NNP )_) feature_NN intensity_NN is_VBZ calculated_VBN for_IN all_DT
+          probe_NN pairs_NNS in_IN each_DT probe_NN set_VBN (_( in_IN our_PRP$ case_NN ,_, 20_CD probe_NN
+          pairs_NNS in_IN total_JJ )_) ._. The_DT AD_NNP for_IN each_DT probe_NN set_VBN is_VBZ the_DT average_NN
+          of_IN the_DT PM_NNP -_: MM_NNP differences_NNS ,_, after_IN outlying_JJ values_NNS are_VBP
+          removed_VBN ._.
+          A_DT second_JJ important_JJ metric_JJ generated_VBN by_IN the_DT GeneChip_NNP
+          software_NN is_VBZ the_DT Absolute_JJ Decision_NNP ._. The_DT Absolute_JJ Decision_NNP
+          is_VBZ a_DT categorical_JJ call_NN for_IN each_DT transcript_NN :_: either_CC
+          Present_VB ,_, Absent_VB ,_, or_CC Marginal_JJ ._. The_DT Absolute_JJ Decision_NNP is_VBZ a_DT
+          heuristic_JJ metric_JJ based_VBN on_IN the_DT number_NN of_IN probe_NN pairs_NNS for_IN a_DT
+          given_VBN transcript_NN that_DT show_NN strong_JJ specific_JJ hybridization_NN
+          signals_NNS ._. See_VB the_DT Affymetrix_NNP GeneChip_NNP User_NNP Guide_NNP [_NN 17_CD ]_NN for_IN
+          a_DT detailed_VBN description_NN of_IN this_DT metric_NN ._.
+          Because_IN of_IN array-to-array_JJ variation_NN in_IN overall_JJ signal_NN
+          strength_NN ,_, AD_NNP values_NNS from_IN different_JJ arrays_NNS are_VBP usually_RB
+          normalized_JJ to_TO a_DT common_JJ scale_NN ._. We_PRP reproduced_VBD the_DT scaled_VBN AD_NNP
+          normalization_NN of_IN the_DT Affymetrix_NNP GeneChip_NNP 3_CD ._. 1_CD software_NN ._.
+          The_DT calculation_NN is_VBZ described_VBN in_IN detail_NN in_IN the_DT Affymetrix_NNP
+          GeneChip_NNP User_NNP Guide_NNP [_NN 17_CD ]_NN ._. Scaling_NNP is_VBZ done_VBN by_IN equalizing_VBG
+          the_DT average_JJ intensity_NN of_IN all_DT arrays_NNS in_IN a_DT given_VBN dataset_NN ,_,
+          where_WRB the_DT average_JJ intensity_NN is_VBZ defined_VBN as_IN the_DT trimmed_VBN
+          average_NN of_IN the_DT AD_NNP values_NNS of_IN every_DT probe_NN set_VBN on_IN the_DT array_NN ,_,
+          excluding_VBG the_DT highest_JJS 2_CD %_NN and_CC lowest_JJS 2_CD %_NN of_IN the_DT values_NNS ._.
+          This_DT normalization_NN works_VBZ on_IN the_DT assumption_NN that_IN the_DT
+          summed_VBD expression_NN level_NN of_IN all_DT genes_NNS on_IN the_DT array_NN is_VBZ
+          constant_JJ across_IN experiments_NNS ,_, and_CC that_IN differences_NNS in_IN
+          expression_NN levels_NNS between_IN arrays_NNS can_MD be_VB corrected_VBN by_IN
+          array-specific_JJ scaling_NN factors_NNS ._. We_PRP denote_NN the_DT normalized_JJ
+          AD_NNP values_NNS as_IN scaled_VBN average_JJ difference_NN (_( AD_NNP s_VBZ )_) ._.
+          The_DT calculation_NN of_IN frequency_NN (_( F_NN )_) values_NNS involved_VBD two_CD
+          steps_NNS :_: first_JJ ,_, conversion_NN of_IN AD_NNP values_NNS to_TO frequencies_NNS by_IN
+          use_NN of_IN the_DT calibration_NN curve_NN ,_, and_CC second_JJ ,_, estimation_NN of_IN
+          the_DT chip_NN sensitivity_NN of_IN detection_NN and_CC '_POS damping_VBG '_POS of_IN
+          frequency_NN values_NNS below_IN this_DT sensitivity_NN ._.
+          The_DT calibration_NN curve_NN for_IN each_DT hybridization_NN was_VBD
+          constructed_VBN from_IN the_DT AD_NNP values_NNS for_IN each_DT of_IN the_DT 11_CD control_NN
+          transcripts_NNS and_CC their_PRP$ known_VBN frequencies_NNS (_( Table_NNP 1_LS )_) ._. AD_NNP
+          values_NNS that_WDT were_VBD negative_JJ ,_, or_CC associated_VBN with_IN Absent_VB or_CC
+          Marginal_JJ Absolute_JJ Decisions_NNS ,_, were_VBD removed_VBN from_IN the_DT curve_NN
+          in_IN order_NN to_TO improve_VB the_DT robustness_NNS of_IN the_DT fit_NN ._. This_DT
+          calibration_NN curve_NN was_VBD fitted_JJ by_IN a_DT linear_JJ function_NN with_IN
+          zero_CD intercept_NN ,_, using_VBG a_DT generalized_JJ linear_JJ model_NN [_NN 22_CD ]_NN
+          fitting_JJ procedure_NN in_IN the_DT statistical_JJ software_NN S-PLUS_NNP
+          (_( Insightful_NNP Corp_NNP ._. ,_, Seattle_NNP ,_, WA_NNP )_) ._. The_DT fitting_JJ procedure_NN
+          assumed_VBD a_DT gamma_NN error_NN structure_NN ,_, appropriate_JJ for_IN data_NNS
+          with_IN constant_JJ coefficient_NN of_IN variation_NN ,_, and_CC utilized_JJ
+          iterative_JJ reweighting_VBG of_IN errors_NNS ._. The_DT single_JJ coefficient_NN
+          of_IN this_DT linear_JJ fit_NN was_VBD multiplied_VBN with_IN the_DT average_JJ
+          difference_NN values_NNS for_IN each_DT gene_NN on_IN the_DT array_NN to_TO yield_VB
+          initial_JJ frequency_NN estimates_NNS ._. Calibration_NNP curves_NNS for_IN the_DT
+          hybridizations_NNS described_VBD here_RB were_VBD examined_VBN visually_RB to_TO
+          rule_VB out_IN poor_JJ curve_NN fits_NNS ._.
+          Chip_NN sensitivity_NN of_IN detection_NN was_VBD estimated_VBN from_IN the_DT
+          Absolute_JJ Decisions_NNS (_( Present_VB ,_, Marginal_JJ ,_, or_CC Absent_VB )_) for_IN the_DT
+          11_CD spike-in_JJ transcripts_NNS in_IN one_CD of_IN two_CD ways_NNS ._. In_IN the_DT
+          general_JJ case_NN ,_, Absolute_JJ Decisions_NNS were_VBD considered_VBN as_IN a_DT
+          binary_JJ response_NN :_: Absent_VB =_SYM 0_CD ,_, Present_VB =_SYM 1_CD ,_, with_IN Marginal_JJ
+          calls_VBZ treated_VBN as_IN Absent_VB to_TO be_VB conservative_JJ ._. This_DT response_NN
+          was_VBD regressed_JJ against_IN the_DT log-transformed_JJ known_VBN
+          frequencies_NNS ,_, using_VBG a_DT generalized_JJ linear_JJ model_NN with_IN a_DT
+          logit_NN link_NN function_NN ._. The_DT chip_NN sensitivity_NN was_VBD then_RB
+          defined_VBN as_IN the_DT frequency_NN at_IN which_WDT the_DT predicted_VBD odds_NNS of_IN a_DT
+          Present_NN call_NN were_VBD 70_CD %_NN ._. In_IN the_DT special_JJ case_NN where_WRB all_DT
+          spike-in_JJ mRNAs_NNS called_VBN Absent_VB were_VBD lower-abundance_JJ
+          messages_NNS than_IN all_DT spike-ins_JJ called_VBN Present_VB ,_, the_DT
+          sensitivity_NN was_VBD defined_VBN by_IN linear_JJ interpolation_NN as_IN the_DT
+          frequency_NN 70_CD %_NN of_IN the_DT distance_NN between_IN the_DT highest_JJS Absent_VB
+          call_NN frequency_NN and_CC the_DT lowest_JJS Present_NN call_NN frequency_NN ._.
+          Frequency_NNP values_NNS for_IN all_DT genes_NNS on_IN the_DT array_NN that_WDT fell_VBD
+          below_IN the_DT sensitivity_NN were_VBD damped_VBN as_IN follows_VBZ ._. Negative_JJ
+          frequencies_NNS (_( corresponding_JJ to_TO negative_JJ AD_NNP values_NNS )_) were_VBD
+          adjusted_VBN to_TO one-half_NN of_IN the_DT chip_NN sensitivity_NN ._. Frequencies_NNP
+          between_IN zero_CD and_CC the_DT chip_NN sensitivity_NN were_VBD adjusted_VBN to_TO
+          the_DT average_NN of_IN the_DT frequency_NN and_CC the_DT chip_NN sensitivity_NN ._.
+          The_DT rationale_NN for_IN this_DT adjustment_NN was_VBD threefold_RB ._. First_LS ,_,
+          one-half_JJ the_DT chip_NN sensitivity_NN was_VBD a_DT reasonable_JJ 
+          a_DT priori_FW estimate_NN of_IN abundance_NN for_IN
+          many_JJ genes_NNS that_WDT were_VBD not_RB reliably_RB detected_VBD ._. Second_JJ ,_, the_DT
+          adjusted_VBN frequencies_NNS were_VBD guaranteed_VBN to_TO be_VB
+          positive-valued_JJ ,_, making_VBG downstream_JJ analyses_NNS of_IN frequency_NN
+          values_NNS (_( for_IN example_NN ,_, log_VB transformation_NN )_) significantly_RB
+          easier_JJR ._. Third_NNP ,_, retaining_VBG the_DT adjusted_VBN low-level_JJ frequency_NN
+          estimates_NNS was_VBD preferable_JJ to_TO discarding_VBG them_PRP ,_, because_IN
+          discarding_VBG the_DT values_NNS would_MD make_VB it_PRP impossible_JJ to_TO detect_VB
+          potentially_RB important_JJ regulation_NN of_IN these_DT genes_NNS in_IN future_JJ
+          experiments_NNS ._.
+          Frequency_NNP normalization_NN could_MD be_VB adversely_RB affected_VBN by_IN
+          technical_JJ uncertainties_NNS in_IN cRNA_NN preparation_NN (_( see_VB Results_NNS
+          and_CC discussion_NN )_) ._. To_TO attenuate_NN these_DT effects_NNS ,_, an_DT
+          additional_JJ frequency_NN variant_NN termed_VBD scaled_VBN frequency_NN (_( F_NN
+          s_VBZ )_) was_VBD introduced_VBN ._. F_NN swas_NNS a_DT hybrid_NN of_IN ADs_NNP and_CC frequency_NN ,_,
+          and_CC was_VBD computed_JJ as_IN follows_VBZ ._. AD_NNP swas_NNS first_JJ computed_JJ for_IN a_DT
+          set_NN of_IN two_CD or_CC more_JJR arrays_NNS exactly_RB as_IN described_VBN above_IN ._.
+          Then_RB a_DT linear_JJ model_NN (_( with_IN zero_CD intercept_NN )_) was_VBD fitted_JJ to_TO
+          the_DT pooled_VBN AD_NNP svalues_NNS for_IN the_DT 11_CD spike-in_JJ transcripts_NNS
+          from_IN all_DT arrays_NNS ,_, ignoring_VBG negative_JJ AD_NNP svalues_NNS or_CC those_DT
+          associated_VBN with_IN Marginal_JJ /_NN Absent_VB Absolute_JJ Decisions_NNS ._. The_DT
+          slope_NN of_IN this_DT linear_JJ model_NN was_VBD the_DT single_JJ calibration_NN
+          factor_NN for_IN the_DT entire_JJ dataset_NN ._. This_DT slope_NN was_VBD multiplied_VBN
+          with_IN the_DT AD_NNP svalues_NNS from_IN all_DT arrays_NNS to_TO yield_VB F_NN svalues_NNS ._.
+          Per-array_NNP sensitivity_NN values_NNS were_VBD computed_JJ exactly_RB as_IN
+          described_VBN for_IN F_NN ,_, and_CC F_NN svalues_NNS on_IN any_DT array_NN that_WDT were_VBD
+          below_IN the_DT array_NN sensitivity_NN were_VBD adjusted_VBN as_IN described_VBN
+          above_IN ._.
+        
+        
+          Simulated_JJ data_NNS
+          Array_NNP data_NNS was_VBD simulated_JJ as_IN follows_VBZ ._. First_LS ,_, a_DT single_JJ
+          experimental_JJ dataset_NN ,_, one_CD of_IN the_DT 0_CD -_: hour_NN replicates_NNS ,_, was_VBD
+          chosen_VBN as_IN a_DT baseline_NN for_IN generation_NN of_IN all_DT simulated_JJ
+          data_NN ._. To_TO this_DT baseline_NN dataset_NN ,_, several_JJ random_JJ noise_NN
+          sources_NNS were_VBD added_VBN to_TO reproduce_VB key_JJ sources_NNS of_IN
+          variability_NN in_IN array_NN data_NNS ._. The_DT relation_NN describing_VBG the_DT
+          simulated_JJ data_NN was_VBD :_:
+          
+          AD_NNP 
+          
+            ij_NN 
+           =_SYM 
+          b_SYM 
+          
+            ij_NN 
+           +_NN 
+          ADB_NNP 
+          
+            i_NNP 
+           (_( 
+          a_DT 
+          
+            j_NN 
+           
+          m_NN 
+          
+            ij_NN 
+           
+          s_VBZ 
+          
+            ij_NN 
+           
+          r_LS 
+          
+            ij_NN 
+           )_)
+          where_WRB
+          
+          AD_NNP 
+          
+            ij_NN 
+           =_SYM simulated_JJ AD_NNP for_IN the_DT 
+          i_NNP th_NN mRNA_NN on_IN the_DT 
+          j_NN th_NN array_NN
+          
+          ADB_NNP 
+          
+            i_NNP 
+           =_SYM baseline_NN gene_NN expression_NN data_NNS for_IN the_DT 
+          i_NNP th_NN mRNA_NN
+          
+          b_SYM 
+          
+            ij_NN 
+           =_SYM background_NN noise_NN for_IN the_DT 
+          i_NNP th_NN mRNA_NN on_IN the_DT 
+          j_NN th_NN array_NN
+          
+          a_DT 
+          
+            i_NNP 
+           =_SYM array_NN intensity_NN offset_VBN for_IN the_DT 
+          j_NN th_NN array_NN
+          
+          m_NN 
+          
+            ij_NN 
+           =_SYM multiplicative_JJ noise_NN for_IN the_DT 
+          i_NNP th_NN mRNA_NN on_IN the_DT 
+          j_NN th_NN array_NN
+          
+          s_VBZ 
+          
+            ij_NN 
+           =_SYM spike-skew_JJ factor_NN for_IN the_DT 
+          i_NNP th_NN mRNA_NN on_IN the_DT 
+          j_NN th_NN array_NN (_( unity_NN for_IN all_DT nonspiked_JJ
+          mRNAs_NNS )_)
+          
+          r_LS 
+          
+            ij_NN 
+           =_SYM regulation_NN factor_NN for_IN the_DT 
+          i_NNP th_NN gene_NN on_IN the_DT 
+          j_NN th_NN array_NN (_( unity_NN for_IN all_DT spiked_JJ
+          mRNAs_NNS )_)
+          Background_NNP 
+          b_SYM 
+          
+            ij_NN 
+           was_VBD Gaussian_NNP with_IN a_DT standard_JJ deviation_NN (_( SD_NNP )_) that_WDT
+          varied_VBD randomly_RB from_IN one_CD array_NN to_TO another_DT ._. The_DT background_NN
+          noise_NN SD_NNP had_VBD a_DT mean_NN of_IN 20_CD AD_NNP units_NNS ,_, and_CC a_DT standard_JJ
+          deviation_NN of_IN 5_CD AD_NNP units_NNS ._. Array_NNP intensity_NN offsets_NNS a_DT 
+          
+            j_NN 
+           were_VBD Gaussian_NNP with_IN a_DT mean_NN of_IN one_CD and_CC SD_NNP of_IN 0_CD ._. 3_CD ._.
+          Multiplicative_NNP noise_NN ,_, 
+          m_NN 
+          
+            ij_NN 
+           ,_, was_VBD drawn_VBN from_IN a_DT normally_RB distributed_VBN zero-mean_JJ
+          noise_NN source_NN with_IN a_DT constant_JJ CV_NNP of_IN 0_CD ._. 1_CD ._. Spike-skew_NNP factor_NN
+          
+          s_VBZ 
+          
+            ij_NN 
+           was_VBD a_DT single_JJ random_JJ factor_NN for_IN all_DT spiked_JJ cRNAs_NNS on_IN a_DT
+          given_VBN array_NN ,_, and_CC unity_NN for_IN all_DT other_JJ messages_NNS ._. The_DT
+          spike-skew_JJ factor_NN for_IN the_DT spiked_JJ cRNAs_NNS was_VBD Gaussian_NNP with_IN
+          mean_NN 1_CD and_CC a_DT SD_NNP that_WDT was_VBD adjusted_VBN from_IN 0_CD ._. 1_CD to_TO 0_CD ._. 4_CD (_( in_IN
+          percentage_NN terms_NNS ,_, 10_CD -_: 40_CD %_NN )_) ._. Regulation_NN factors_NNS r_LS 
+          
+            ij_NN 
+           were_VBD generated_VBN by_IN a_DT procedure_NN in_IN which_WDT the_DT base-_NN 10_CD
+          log_VB (_( fold-change_JJ )_) for_IN each_DT gene_NN was_VBD selected_VBN from_IN a_DT
+          normal_JJ distribution_NN with_IN mean_NN 0_CD and_CC SD_NNP 0_CD ._. 5_CD ._. Extreme_NNP
+          random_JJ regulation_NN factors_NNS were_VBD limited_JJ so_IN that_IN the_DT
+          regulated_VBN gene_NN expression_NN values_NNS had_VBD the_DT same_JJ range_NN as_IN
+          baseline_NN data_NNS ._. After_IN multiplication_NN of_IN each_DT gene_NN by_IN its_PRP$
+          regulation_NN factor_NN ,_, the_DT mean_JJ expression_NN level_NN of_IN all_DT genes_NNS
+          was_VBD adjusted_VBN so_IN that_IN the_DT overall_JJ mean_NN expression_NN level_NN
+          was_VBD unchanged_JJ by_IN regulation_NN ._.
+        
+      
+      
+        Additional_JJ data_NNS files_NNS
+        Primary_JJ data_NNS for_IN all_DT experimental_JJ hybridizations_NNS are_VBP
+        available_JJ as_IN an_DT Excel_NNP spreadsheet_NN (_( 20_CD ,_, 325_CD Kb_NNP )_) ._.
+        Additional_JJ data_NNS file_VBP 1_CD
+        Primary_JJ data_NNS for_IN all_DT experimental_JJ hybridizations_NNS
+        Primary_JJ data_NNS for_IN all_DT experimental_JJ hybridizations_NNS
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+      
+    
+  

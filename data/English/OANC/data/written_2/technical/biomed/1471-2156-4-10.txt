@@ -1,0 +1,828 @@
+
+  
+    
+      
+        Background_NNP
+        Many_JJ authors_NNS [_NN 1_CD 2_CD 3_CD 4_CD ]_NN have_VBP compared_VBN the_DT statistical_JJ
+        power_NN of_IN different_JJ methods_NNS for_IN quantitative_JJ trait_NN locus_JJ
+        (_( QTL_NNP )_) mapping_NN ._. These_DT comparisons_NNS have_VBP shown_VBN that_IN the_DT
+        additional_JJ information_NN supplied_VBN by_IN the_DT genetic_JJ distance_NN
+        between_IN identifiable_JJ DNA_NNP markers_NNS unconfounds_NNS the_DT QTL_NNP effect_NN
+        from_IN the_DT QTL_NNP location_NN ,_, thus_RB making_VBG two_CD marker_NN models_NNS more_RBR
+        powerful_JJ than_IN single_JJ marker_NN models_NNS of_IN detection_NN (_( for_IN review_NN
+        see_VB Doerge_NNP 
+        et_CC al_NN ._. [_NN 5_CD ]_NN )_) ._.
+        With_IN the_DT goal_NN of_IN detecting_VBG and_CC /_NN or_CC locating_VBG QTL_NNP ,_, there_EX
+        are_VBP two_CD common_JJ statistical_JJ approaches_NNS that_WDT can_MD be_VB taken_VBN ._.
+        The_DT first_JJ approach_NN is_VBZ based_VBN on_IN ANOVA_NNP ,_, or_CC simple_JJ linear_JJ
+        regression_NN ,_, and_CC performs_VBZ statistical_JJ tests_NNS based_VBN solely_RB on_IN
+        single_JJ DNA_NNP marker_NN information_NN ._. No_DT genetic_JJ map_NN is_VBZ required_VBN
+        for_IN single_JJ marker_NN analysis_NN ,_, and_CC the_DT calculations_NNS are_VBP based_VBN
+        on_IN phenotypic_JJ means_VBZ and_CC variances_NNS within_IN each_DT of_IN the_DT
+        genotypic_JJ classes_NNS ._. The_DT second_NN ,_, and_CC more_RBR involved_JJ approach_NN ,_,
+        is_VBZ based_VBN on_IN two_CD DNA_NNP markers_NNS ,_, the_DT estimated_VBN recombination_NN
+        fraction_NN between_IN them_PRP (_( or_CC the_DT estimated_VBN genetic_JJ distance_NN )_) ,_,
+        and_CC either_CC a_DT maximum_NN likelihood_NN based_VBD calculation_NN or_CC a_DT
+        regression_NN model_NN including_VBG multiple_JJ (_( two_CD or_CC more_JJR )_) markers_NNS
+        as_IN independent_JJ variables_NNS ._. The_DT linear_JJ ordering_VBG of_IN multiple_JJ
+        DNA_NNP markers_NNS based_VBN upon_IN their_PRP$ estimated_VBN relationships_NNS (_( 
+        i_NNP ._. e_SYM ._. ,_, recombination_NN fraction_NN (_( or_CC
+        genetic_JJ distance_NN )_) )_) supplies_VBZ the_DT framework_NN or_CC genetic_JJ map_NN
+        for_IN (_( composite_JJ )_) interval_NN mapping_NN [_NN 6_CD 7_CD ]_NN and_CC as_IN such_JJ
+        unconfounds_NNS the_DT QTL_NNP effect_NN and_CC the_DT QTL_NNP location_NN ,_, thus_RB
+        providing_VBG a_DT more_RBR precise_JJ means_NNS for_IN detecting_VBG and_CC locating_VBG
+        QTL_NNP with_IN respect_NN to_TO the_DT estimated_VBN genetic_JJ map_NN for_IN the_DT
+        organism_NN under_IN investigation_NN ._.
+        Rebaï_NNP 
+        et_CC al_NN ._. [_NN 4_CD ]_NN present_VB a_DT comprehensive_JJ
+        comparison_NN of_IN the_DT statistical_JJ power_NN for_IN many_JJ of_IN the_DT
+        commonly_RB used_VBN flanking_VBG marker_NN or_CC two_CD marker_NN methods_NNS
+        employed_VBN ,_, and_CC conclude_VB that_IN two_CD marker_NN mapping_NN provides_VBZ a_DT
+        relatively_RB small_JJ gain_NN (_( 5_CD %_NN )_) in_IN power_NN over_IN single_JJ marker_NN
+        methods_NNS when_WRB the_DT two_CD markers_NNS define_VB an_DT interval_NN of_IN width_NN
+        less_JJR than_IN 20_CD cM_NN ,_, but_CC a_DT substantial_JJ increase_NN (_( greater_JJR than_IN
+        30_CD %_NN )_) in_IN power_NN for_IN intervals_NNS upwards_NNS of_IN 70_CD cM_NN ,_, indicating_VBG
+        that_IN the_DT gain_NN in_IN power_NN may_MD come_VB from_IN the_DT addition_NN of_IN the_DT
+        second_JJ marker_NN to_TO the_DT analysis_NN ,_, or_CC the_DT addition_NN of_IN
+        information_NN from_IN that_DT marker_NN ,_, rather_RB than_IN the_DT map_NN ._.
+        Using_VBG the_DT findings_NNS of_IN Rebaï_NNP 
+        et_CC al_NN ._. [_NN 4_CD ]_NN ,_, and_CC others_NNS as_IN our_PRP$
+        motivation_NN ,_, we_PRP hypothesize_NN that_IN the_DT power_NN increase_NN between_IN
+        single_JJ marker_NN and_CC two_CD marker_NN regression_NN methods_NNS is_VBZ due_JJ to_TO
+        additional_JJ genotypic_JJ information_NN in_IN the_DT second_JJ marker_NN ._. In_IN
+        order_NN to_TO assess_VB this_DT ,_, similar_JJ test_NN statistics_NNS should_MD be_VB
+        compared_VBN ._. A_DT comparison_NN of_IN maximum_NN likelihood_NN interval_NN
+        mapping_NN to_TO single_VB marker_NN ANOVA_NNP is_VBZ complicated_VBN because_IN of_IN
+        the_DT differences_NNS that_WDT may_MD be_VB observed_VBN due_JJ to_TO differences_NNS
+        between_IN regression_NN and_CC maximum_NN likelihood_NN [_NN 3_CD ]_NN ,_, as_RB well_RB
+        as_IN differences_NNS in_IN marker_NN information_NN ._. In_IN order_NN to_TO avoid_VB
+        this_DT complication_NN ,_, we_PRP consider_VBP two_CD regression_NN based_VBD
+        approaches_NNS that_WDT differ_VBP only_RB in_IN the_DT number_NN of_IN markers_NNS
+        included_VBN in_IN the_DT initial_JJ model_NN (_( i_NNP ._. e_SYM ._. the_DT statistical_JJ
+        methodology_NN is_VBZ the_DT same_JJ ,_, the_DT models_NNS are_VBP different_JJ )_) ._. First_LS ,_,
+        a_DT set_NN of_IN compound_NN hypotheses_NNS are_VBP defined_VBN for_IN use_NN with_IN a_DT
+        single_JJ marker_NN analysis_NN and_CC used_VBN to_TO define_VB an_DT intersection_NN
+        test_NN ._. We_PRP then_RB state_VBP the_DT equivalent_NN hypotheses_NNS for_IN a_DT
+        regression_NN based_VBD two_CD marker_NN model_NN for_IN a_DT test_NN of_IN the_DT
+        interval_NN ._. Last_JJ we_PRP compare_VBP ,_, via_IN simulation_NN ,_, the_DT power_NN of_IN the_DT
+        intersection_NN and_CC the_DT two_CD marker_NN test_NN under_IN the_DT stated_VBN
+        hypotheses_NNS for_IN each_DT model_NN ._. We_PRP do_VBP not_RB consider_VB the_DT case_NN of_IN
+        multiple_JJ QTL_NNP in_IN a_DT single_JJ interval_NN ,_, as_IN this_DT case_NN was_VBD not_RB
+        considered_VBN by_IN Rebaï_NNP 
+        et_CC al_NN ._. [_NN 4_CD ]_NN ._. These_DT two_CD approaches_NNS
+        are_VBP then_RB applied_VBN to_TO a_DT '_POS backcross_NNS '_POS population_NN of_IN 
+        Drosophila_NNP with_IN 76_CD informative_JJ
+        markers_NNS [_NN 8_CD ]_NN to_TO detect_VB QTL_NNP associated_VBN with_IN ovariole_NN
+        number_NN ._.
+      
+      
+        Results_NNS
+        
+          Simulations_NNP
+          An_DT overview_NN of_IN the_DT simulations_NNS performed_VBN is_VBZ given_VBN in_IN
+          Table_NNP 1_CD and_CC 2_CD ._. For_IN the_DT purpose_NN of_IN evaluating_VBG the_DT relative_JJ
+          difference_NN in_IN statistical_JJ power_NN between_IN the_DT intersection_NN
+          test_NN and_CC the_DT two_CD marker_NN test_NN ,_, the_DT estimated_VBN statistical_JJ
+          power_NN of_IN the_DT two_CD marker_NN test_NN was_VBD subtracted_VBN from_IN that_DT of_IN
+          the_DT intersection_NN test_NN for_IN each_DT of_IN the_DT parameter_NN
+          combinations_NNS investigated_VBN ,_, and_CC a_DT 
+          t_NN -_: test_NN [_NN 9_CD ]_NN was_VBD performed_VBN to_TO test_VB
+          the_DT null_NN hypothesis_NNS that_IN the_DT mean_JJ difference_NN in_IN power_NN was_VBD
+          zero_CD ._.
+          For_IN the_DT binomial_NN phenotype_NN with_IN a_DT backcross_NNS design_NN ,_,
+          sample_NN size_NN of_IN 100_CD ,_, the_DT 100_CD parameter_NN combinations_NNS
+          examined_VBD resulted_VBN in_IN 34_CD showing_VBG no_DT difference_NN in_IN
+          statistical_JJ power_NN between_IN the_DT intersection_NN test_NN and_CC the_DT
+          two_CD marker_NN test_NN (_( 
+          i_NNP ._. e_SYM ,_, the_DT value_NN of_IN the_DT difference_NN
+          was_VBD exactly_RB zero_CD )_) ,_, 39_CD favoring_VBG the_DT intersection_NN test_NN ,_, and_CC
+          27_CD favoring_VBG the_DT two_CD marker_NN test_NN ._. The_DT intersection_NN test_NN
+          was_VBD more_RBR powerful_JJ with_IN a_DT mean_JJ difference_NN in_IN power_NN of_IN
+          0_CD ._. 010_CD ,_, and_CC the_DT 
+          t_NN -_: test_NN of_IN the_DT null_NN hypothesis_NNS that_IN
+          the_DT difference_NN in_IN power_NN was_VBD zero_CD was_VBD rejected_VBN (_( 
+          p_NN =_SYM 0_CD ._. 020_CD )_) ._. When_WRB 
+          n_NN was_VBD equal_JJ to_TO 500_CD ,_, the_DT 139_CD
+          parameter_NN combinations_NNS examined_VBD yielded_VBN 116_CD showing_VBG there_EX
+          was_VBD no_DT difference_NN in_IN statistical_JJ power_NN ,_, 18_CD parameter_NN
+          combinations_NNS indicated_VBD the_DT intersection_NN test_NN as_IN more_JJR
+          powerful_JJ ,_, and_CC 5_CD indicated_VBD the_DT two_CD marker_NN test_NN as_IN more_JJR
+          powerful_JJ ._. The_DT mean_JJ difference_NN in_IN power_NN was_VBD 0_CD ._. 020_CD ,_, and_CC the_DT
+          
+          t_NN -_: test_NN of_IN the_DT null_NN hypothesis_NNS that_IN
+          the_DT difference_NN in_IN power_NN was_VBD zero_CD was_VBD rejected_VBN (_( 
+          p_NN =_SYM 0_CD ._. 010_CD )_) ._. The_DT test_NN of_IN the_DT null_NN
+          hypothesis_NNS that_IN the_DT mean_JJ difference_NN between_IN the_DT
+          intersection_NN and_CC two_CD marker_NN was_VBD zero_CD was_VBD rejected_VBN for_IN
+          both_DT sets_NNS of_IN simulations_NNS ._. The_DT estimated_VBN difference_NN
+          between_IN the_DT two_CD approaches_NNS was_VBD positive_JJ ,_, indicating_VBG that_IN
+          the_DT intersection_NN test_NN has_VBZ slightly_RB higher_JJR power_NN than_IN the_DT
+          two_CD marker_NN test_NN in_IN these_DT cases_NNS ._.
+          We_PRP also_RB investigated_VBD 
+          F_NN 
+          2_CD experimental_JJ populations_NNS for_IN a_DT
+          binomial_NN phenotype_NN ,_, using_VBG a_DT sample_NN size_NN of_IN 500_CD ._. From_IN the_DT
+          25_CD parameter_NN combinations_NNS investigated_VBN ,_, 5_CD failed_VBD to_TO
+          converge_NN consistently_RB for_IN the_DT two_CD marker_NN model_NN due_JJ to_TO
+          singularity_NN in_IN the_DT design_NN matrix_NN ._. The_DT remaining_VBG 20_CD
+          parameter_NN combinations_NNS showed_VBD 10_CD as_IN having_VBG no_DT difference_NN
+          in_IN statistical_JJ power_NN ,_, while_IN the_DT remaining_VBG 10_CD favored_VBD the_DT
+          intersection_NN test_NN ._. Results_NNS similar_JJ to_TO those_DT found_VBD in_IN the_DT
+          initial_JJ simulations_NNS indicate_VBP that_IN the_DT intersection_NN test_NN
+          performs_VBZ as_RB well_RB as_RB ,_, or_CC better_JJR than_IN the_DT two_CD marker_NN test_NN ._.
+          Comparisons_NNP with_IN smaller_JJR sample_NN sizes_NNS (_( n_NN =_SYM 100_CD )_) were_VBD not_RB
+          conducted_VBN because_IN of_IN convergence_NN problems_NNS using_VBG the_DT two_CD
+          marker_NN model_NN ._.
+          For_IN a_DT normally_RB distributed_VBN phenotype_NN ,_, 75_CD parameter_NN
+          combinations_NNS for_IN the_DT backcross_NNS were_VBD examined_VBN ._. From_IN these_DT ,_,
+          12_CD showed_VBD no_DT difference_NN in_IN statistical_JJ power_NN ,_, 34_CD
+          scenarios_NNS favored_VBD the_DT intersection_NN test_NN ,_, while_IN 29_CD
+          indicated_VBD the_DT two_CD marker_NN test_NN as_IN more_JJR powerful_JJ ._. The_DT mean_JJ
+          difference_NN in_IN power_NN was_VBD 0_CD ._. 015_CD ,_, and_CC we_PRP failed_VBD to_TO reject_VB
+          the_DT test_NN of_IN the_DT null_NN hypothesis_NNS that_IN the_DT difference_NN was_VBD
+          zero_CD ,_, 
+          p_NN =_SYM 0_CD ._. 064_CD ._.
+          Upon_IN investigation_NN of_IN the_DT parameter_NN combinations_NNS that_WDT
+          showed_VBD some_DT difference_NN in_IN power_NN ,_, specifically_RB ,_, for_IN the_DT
+          scenario_NN highlighted_VBN by_IN Rebaï_NNP 
+          et_CC al_NN ._. [_NN 4_CD ]_NN (_( QTL_NNP in_IN the_DT middle_NN of_IN
+          the_DT interval_NN with_IN a_DT large_JJ distance_NN between_IN markers_NNS )_) ,_, we_PRP
+          also_RB find_VBP the_DT two_CD marker_NN approach_NN to_TO be_VB slightly_RB more_RBR
+          powerful_JJ than_IN the_DT intersection_NN test_NN ._. However_RB ,_, when_WRB the_DT
+          distance_NN between_IN the_DT QTL_NNP and_CC one_CD marker_NN is_VBZ much_RB smaller_JJR
+          than_IN the_DT distance_NN between_IN the_DT QTL_NNP and_CC the_DT second_JJ marker_NN ,_,
+          the_DT intersection_NN test_NN is_VBZ more_RBR powerful_JJ ._. Although_IN we_PRP can_MD
+          point_VB to_TO these_DT cases_NNS ,_, it_PRP is_VBZ important_JJ to_TO realize_VB that_IN for_IN
+          most_JJS of_IN the_DT scenarios_NNS no_DT difference_NN in_IN power_NN was_VBD observed_VBN
+          (_( see_VB Figure_NN 1_LS )_) ._.
+        
+        
+          DrosophilaAnalysis_NNP
+          Ovariole_NNP number_NN is_VBZ related_VBN to_TO reproductive_JJ success_NN in_IN 
+          Drosophila_NNP melanogaster_NN and_CC
+          positively_RB correlated_JJ with_IN maximum_NN daily_JJ female_JJ fecundity_NN
+          [_NN 10_CD 11_CD ]_NN ._. The_DT 98_CD RILs_NNP (_( recombinant_JJ inbred_JJ lines_NNS )_) for_IN
+          this_DT study_NN were_VBD scored_VBN for_IN the_DT trait_NN ovariole_NN number_NN and_CC
+          genotyped_JJ as_IN described_VBN in_IN Wayne_NNP 
+          et_CC al_NN ._. [_NN 8_CD ]_NN ._.
+          For_IN the_DT 71_CD marker_NN pairs_NNS considered_VBN ,_, 36_CD markers_NNS were_VBD
+          found_VBN to_TO be_VB significant_JJ using_VBG both_DT the_DT intersection_NN test_NN
+          and_CC the_DT two_CD marker_NN test_NN ,_, and_CC 26_CD were_VBD found_VBN to_TO be_VB
+          non-significant_JJ with_IN both_DT tests_NNS ._. The_DT intersection_NN and_CC two_CD
+          marker_NN tests_NNS were_VBD concordant_NN in_IN 62_CD of_IN the_DT 71_CD pairs_NNS of_IN
+          markers_NNS (_( Table_NNP 3_LS )_) ._. The_DT estimated_VBN chance_NN corrected_VBD
+          agreement_NN (_( Kappa_NNP coefficient_NN )_) was_VBD 0_CD ._. 75_CD with_IN a_DT 95_CD %_NN
+          confidence_NN interval_NN of_IN (_( 0_CD ._. 58_CD ,_, 0_CD ._. 90_CD )_) ._. McNemar_NNP 's_POS test_NN showed_VBD
+          no_DT systematic_JJ difference_NN in_IN the_DT two_CD approaches_NNS (_( 
+          S_NNP =_SYM 1_CD ._. 00_CD ,_, 
+          p_NN =_SYM 0_CD ._. 32_CD )_) ._.
+          Overlapping_NNP regions_NNS on_IN chromosome_NN 
+          3_CD were_VBD identified_VBN by_IN the_DT
+          intersection_NN test_NN ,_, the_DT two_CD marker_NN test_NN ,_, and_CC the_DT interval_NN
+          mapping_NN test_NN (_( Table_NNP 4_LS )_) ._. On_IN chromosome_NN 
+          1_CD ,_, the_DT two_CD marker_NN test_NN identified_VBD
+          a_DT region_NN between_IN 
+          3_CD E_NNP and_CC 
+          7_CD D_NNP while_IN the_DT comparable_JJ
+          intersection_NN test_NN showed_VBD borderline_NN significance_NN for_IN one_CD
+          marker_NN in_IN that_DT region_NN (_( 
+          4_CD F_NN ,_, p_NN =_SYM 0_CD ._. 0256_CD )_) ._. On_IN chromosome_NN 
+          2_CD ,_, the_DT two_CD marker_NN test_NN identified_VBD
+          a_DT region_NN from_IN 
+          35_CD B-_NNP 46_CD C_NNP while_IN intersection_NN tests_NNS
+          identified_VBD a_DT smaller_JJR region_NN from_IN 
+          35_CD B-_NNP 38_CD E_NNP and_CC the_DT interval_NN mapping_NN
+          identified_VBD a_DT region_NN from_IN 
+          38_CD A-_NNP 46_CD C_NNP ._. On_IN Chromosome_NNP 
+          3_CD the_DT two_CD marker_NN test_NN identifies_VBZ
+          two_CD regions_NNS 
+          65_CD A-_NNP 87_CD F_NN and_CC 
+          96_CD F-_NNP 100_CD A_DT while_NN the_DT intersection_NN
+          test_NN finds_VBZ the_DT entire_JJ region_NN from_IN 
+          63_CD A-_NNP 100_CD A_DT significant_JJ ._. The_DT interval_NN
+          mapping_NN agrees_VBZ with_IN the_DT intersection_NN test_NN for_IN interval_NN 
+          63_CD A-_NNP 65_CD A_DT and_CC finds_VBZ it_PRP significant_JJ ,_,
+          while_IN it_PRP agrees_VBZ with_IN the_DT two_CD marker_NN test_NN for_IN the_DT interval_NN
+          
+          97_CD D-_NNP 97_CD F_NN and_CC does_VBZ not_RB find_VB this_DT
+          interval_NN significant_JJ ._. Chromosome_NNP 
+          4_CD was_VBD not_RB associated_VBN with_IN the_DT trait_NN
+          for_IN any_DT test_NN ._.
+          The_DT application_NN of_IN the_DT intersection_NN test_NN to_TO these_DT data_NNS
+          can_MD be_VB further_RBR expanded_VBN to_TO include_VB an_DT analysis_NN with_IN all_DT
+          76_CD markers_NNS ._. We_PRP conducted_VBD 76_CD single_JJ marker_NN regression_NN
+          tests_NNS at_IN a_DT Bonferroni_NNP adjusted_VBD α_NN of_IN 6_CD ._. 6_CD ×_NN 10_CD -_: 4_CD ._. Markers_NNP 
+          68_CD B_NNP ,_, 71_CD E_NNP ,_, 73_CD D_NNP ,_, 76_CD A_DT ,_, 82_CD D_NNP ,_, 99_CD A_DT ,_, 99_CD B_NNP ,_,
+          99_CD E_NNP and_CC 
+          100_CD A_DT were_VBD significant_JJ using_VBG this_DT
+          intersection_NN test_NN (_( see_VB Figure_NN 2_LS )_) ._. The_DT regions_NNS identified_VBN
+          are_VBP consistent_JJ with_IN a_DT regression-based_JJ interval_NN mapping_NN
+          analysis_NN ._.
+        
+      
+      
+        Discussion_NNP
+        The_DT findings_NNS of_IN Rebaï_NNP 
+        et_CC al_NN ._. [_NN 4_CD ]_NN show_NN differences_NNS in_IN the_DT
+        statistical_JJ power_NN of_IN the_DT two_CD marker_NN methods_NNS (_( 
+        i_NNP ._. e_SYM ._. ,_, interval_NN mapping_NN )_) over_IN single_JJ
+        marker_NN tests_NNS (_( 
+        e_SYM ._. g_SYM ._. ,_, ANOVA_NNP ,_, 
+        t_NN -_: test_NN )_) only_RB when_WRB the_DT markers_NNS are_VBP
+        more_JJR than_IN 50_CD cM_NN apart_RB ,_, suggesting_VBG that_IN these_DT differences_NNS may_MD
+        be_VB due_JJ to_TO the_DT addition_NN of_IN information_NN in_IN the_DT second_JJ marker_NN ._.
+        Our_PRP$ simulation_NN study_NN supports_VBZ this_DT hypothesis_NNS ._.
+        The_DT application_NN of_IN an_DT intersection_NN test_NN uses_VBZ information_NN
+        from_IN both_DT markers_NNS ,_, and_CC tests_VBZ the_DT same_JJ null_NN hypotheses_NNS as_IN
+        the_DT two_CD marker_NN test_NN ._. The_DT use_NN of_IN the_DT intersection_NN test_NN takes_VBZ
+        advantage_NN of_IN the_DT additional_JJ genotypic_JJ information_NN provided_VBN
+        in_IN the_DT second_JJ marker_NN ._.
+        While_IN compound_NN hypotheses_NNS are_VBP common_JJ in_IN statistical_JJ
+        theory_NN ,_, and_CC typically_RB seen_VBN in_IN the_DT use_NN of_IN union_NN /_NN intersection_NN
+        tests_NNS ,_, their_PRP$ use_NN in_IN the_DT quantitative_JJ genetics_NNS arena_NN and_CC QTL_NNP
+        application_NN is_VBZ relatively_RB novel_NN ._. Furthermore_RB ,_, the_DT
+        intersection_NN test_NN is_VBZ simple_JJ to_TO implement_VB ,_, the_DT expansion_NN to_TO
+        multiple_JJ markers_NNS is_VBZ straightforward_JJ ,_, and_CC uses_VBZ all_DT available_JJ
+        marker_NN information_NN ._. In_IN a_DT framework_NN map_NN ,_, where_WRB markers_NNS are_VBP
+        unlinked_JJ ,_, the_DT intersection_NN test_NN is_VBZ simply_RB the_DT single_JJ marker_NN
+        analysis_NN with_IN a_DT Bonferroni_NNP correction_NN for_IN the_DT significance_NN
+        level_NN ._. In_IN cases_NNS where_WRB markers_NNS are_VBP correlated_JJ ,_, the_DT
+        application_NN of_IN the_DT Bonferroni_NNP correction_NN will_MD be_VB overly_RB
+        conservative_JJ ._. This_DT correction_NN guarantees_NNS that_IN the_DT nominal_JJ α_NN
+        is_VBZ not_RB exceeded_VBN ,_, but_CC is_VBZ well_RB known_VBN to_TO be_VB overly_RB
+        conservative_JJ in_IN cases_NNS where_WRB tests_NNS are_VBP not_RB independent_JJ ._. In_IN
+        this_DT case_NN ,_, the_DT application_NN of_IN the_DT intersection_NN test_NN will_MD
+        require_VB an_DT alternative_JJ correction_NN in_IN order_NN to_TO achieve_VB
+        maximum_NN power_NN ._.
+        We_PRP demonstrate_VBP situations_NNS for_IN a_DT pair_NN of_IN adjacent_JJ markers_NNS
+        where_WRB the_DT power_NN of_IN the_DT intersection_NN test_NN is_VBZ equal_JJ to_TO or_CC
+        greater_JJR than_IN the_DT power_NN of_IN the_DT two_CD marker_NN test_NN ._. In_IN the_DT case_NN
+        highlighted_VBN by_IN Rebaï_NNP 
+        et_CC al_NN ._. [_NN 4_CD ]_NN ,_, markers_NNS more_JJR than_IN 50_CD
+        cM_NN apart_RB and_CC large_JJ effect_NN size_NN ,_, we_PRP also_RB find_VBP that_IN the_DT two_CD
+        marker_NN test_NN has_VBZ higher_JJR power_NN than_IN the_DT intersection_NN test_NN ._. A_DT
+        counter_JJ example_NN is_VBZ when_WRB one_CD marker_NN is_VBZ much_RB closer_JJR to_TO the_DT
+        QTL_NNP than_IN the_DT other_JJ marker_NN ,_, in_IN this_DT case_NN the_DT intersection_NN
+        test_NN is_VBZ more_RBR powerful_JJ ._. Overall_RB ,_, the_DT power_NN of_IN the_DT two_CD
+        approaches_NNS is_VBZ nearly_RB identical_JJ and_CC differences_NNS between_IN them_PRP
+        small_JJ ._.
+        In_IN the_DT 
+        Drosophila_NNP reanalysis_NNS both_DT methods_NNS
+        identify_VBP the_DT same_JJ general_JJ regions_NNS ._. However_RB ,_, six_CD marker_NN
+        pairs_NNS were_VBD found_VBN to_TO be_VB significant_JJ using_VBG the_DT two_CD marker_NN
+        tests_NNS that_WDT were_VBD not_RB identified_VBN using_VBG the_DT intersection_NN test_NN ._.
+        Using_VBG the_DT map_NN and_CC notation_NN defined_VBN by_IN Nuzhdin_NNP 
+        et_CC al_NN ._. [_NN 12_CD ]_NN they_PRP were_VBD :_: Chromosome_NNP 
+        1_CD pairs_NNS 
+        3_CD E-_NNP 4_CD F_NN ,_, 4_CD F-_NNP 5_CD D_NNP ,_, 6_CD E-_NNP 7_CD D_NNP ;_: Chromosome_NNP 
+        2_CD pairs_NNS 
+        38_CD E-_NNP 43_CD A_DT ,_, 43_CD A-_NNP 43_CD E_NNP ,_, and_CC 
+        43_CD E-_NNP 46_CD C_NNP ._. The_DT 
+        p_NN -_: values_NNS for_IN the_DT 6_CD marker_NN pairs_NNS from_IN
+        the_DT intersection_NN tests_NNS were_VBD small_JJ but_CC did_VBD not_RB exceed_VB the_DT
+        Bonferroni_NNP corrected_VBD significance_NN level_NN (_( see_VB Table_NNP 4_LS )_) ._. The_DT
+        above_IN markers_NNS that_WDT contribute_VBP to_TO these_DT marker_NN pairs_NNS are_VBP
+        linked_VBN indicating_VBG that_IN the_DT Bonferroni_NNP correction_NN may_MD be_VB
+        overly_RB conservative_JJ ._.
+        In_IN contrast_NN ,_, three_CD marker_NN pairs_NNS on_IN Chromosome_NNP 
+        3_CD were_VBD significant_JJ using_VBG the_DT
+        intersection_NN tests_NNS ,_, but_CC were_VBD not_RB significant_JJ using_VBG the_DT two_CD
+        marker_NN tests_NNS :_: 
+        63_CD A-_NNP 65_CD D_NNP ,_, 87_CD F-_NNP 88_CD E_NNP ,_, and_CC 
+        96_CD A-_NNP 96_CD F_NN (_( Table_NNP 4_LS )_) ._. In_IN these_DT cases_VBZ the_DT
+        "_'' internal_JJ "_'' marker_NN of_IN the_DT pair_NN is_VBZ giving_VBG signal_NN while_IN the_DT
+        "_'' outer_JJ "_'' marker_NN does_VBZ not_RB ._. This_DT provides_VBZ an_DT interesting_JJ point_NN
+        of_IN discussion_NN ._. We_PRP could_MD say_VB that_DT marker_NN 
+        65_CD D_NNP appears_VBZ to_TO be_VB associated_VBN with_IN
+        ovariole_NN number_NN ,_, but_CC we_PRP do_VBP not_RB know_VB if_IN the_DT QTL_NNP lies_VBZ to_TO the_DT
+        left_NN or_CC right_NN of_IN this_DT marker_NN ._. Just_RB because_IN marker_NN 
+        63_CD A_DT does_VBZ not_RB appear_VB to_TO be_VB
+        significantly_RB associated_VBN with_IN ovariole_NN number_NN ,_, we_PRP can_MD not_RB
+        infer_NN that_IN the_DT region_NN to_TO the_DT "_'' left_VBD "_'' of_IN 
+        65_CD D_NNP does_VBZ not_RB contain_VB the_DT gene_NN of_IN
+        interest_NN ._.
+        In_IN some_DT cases_NNS ,_, the_DT two_CD marker_NN test_NN results_NNS in_IN a_DT larger_JJR
+        region_NN than_IN the_DT intersection_NN test_NN ,_, while_IN in_IN others_NNS the_DT
+        reverse_NN is_VBZ true_JJ ._. QTL_NNP mapping_NN is_VBZ usually_RB a_DT first_JJ attempt_NN to_TO
+        locate_VB genes_NNS ,_, which_WDT the_DT biologist_NN uses_VBZ to_TO identify_VB all_DT
+        possible_JJ regions_NNS of_IN interest_NN ,_, e_SYM ._. g_SYM ._. is_VBZ willing_JJ to_TO accept_VB
+        type_NN I_PRP error_NN ._. We_PRP have_VBP discussed_VBN different_JJ ways_NNS to_TO detect_VB
+        underlying_VBG QTL_NNP and_CC an_DT approach_NN for_IN maximizing_VBG or_CC minimizing_VBG
+        the_DT potential_JJ region_NN containing_VBG the_DT QTL_NNP ._. It_PRP is_VBZ also_RB
+        possible_JJ to_TO estimate_VB the_DT QTL_NNP position_NN directly_RB ._. Estimates_NNS
+        can_MD be_VB obtained_VBN using_VBG a_DT variety_NN of_IN techniques_NNS and_CC the_DT
+        different_JJ possible_JJ approaches_NNS to_TO estimation_NN are_VBP reviewed_VBN in_IN
+        Doerge_NNP 
+        et_CC al_NN ._. [_NN 5_CD ]_NN and_CC Kao_NNP [_NN 3_CD ]_NN ._. However_RB ,_,
+        even_RB when_WRB the_DT position_NN is_VBZ estimated_VBN ,_, a_DT confidence_NN interval_NN
+        will_MD exist_VB defining_VBG the_DT size_NN of_IN the_DT region_NN to_TO be_VB included_VBN
+        for_IN further_JJ study_NN ._. Different_JJ approaches_NNS will_MD result_VB in_IN
+        regions_NNS of_IN different_JJ sizes_NNS with_IN more_JJR ,_, or_CC fewer_JJR markers_NNS
+        included_VBD ._. The_DT differences_NNS in_IN the_DT size_NN of_IN the_DT regions_NNS are_VBP
+        potentially_RB important_JJ to_TO a_DT biologist_NN ,_, who_WP relies_VBZ on_IN QTL_NNP
+        mapping_NN analyses_NNS to_TO determine_VB regions_NNS for_IN further_JJ study_NN ._.
+        Most_JJS biologists_NNS accept_VBP that_IN current_JJ QTL_NNP mapping_NN methods_NNS are_VBP
+        best_RBS used_VBN for_IN identifying_VBG broad_JJ regions_NNS ,_, which_WDT subsequently_RB
+        can_MD be_VB dissected_VBN with_IN more_RBR precise_JJ genetical_JJ techniques_NNS ._.
+        The_DT question_NN is_VBZ then_RB :_: what_WP region_NN should_MD be_VB advanced_VBN to_TO
+        fine_VB mapping_NN experiments_NNS ?_. The_DT investigator_NN may_MD choose_VB to_TO
+        take_VB only_RB the_DT regions_NNS which_WDT are_VBP significant_JJ in_IN both_DT
+        intersection_NN and_CC multiple_JJ marker_NN approaches_NNS ,_, or_CC s_VBZ /_NN he_PRP may_MD
+        choose_VB to_TO carry_VB forward_RB any_DT marker_NN that_WDT shows_VBZ a_DT positive_JJ
+        result_NN according_VBG to_TO at_IN least_JJS one_CD analysis_NN ._. We_PRP recommend_VBP
+        that_IN experimentalists_NNS perform_VBP both_DT a_DT single_JJ marker_NN analysis_NN
+        with_IN an_DT intersection_NN test_NN and_CC a_DT multiple_JJ marker_NN analysis_NN
+        and_CC use_VB the_DT information_NN available_JJ in_IN both_DT analyses_NNS to_TO guide_VB
+        their_PRP$ decisions_NNS about_IN what_WP regions_NNS to_TO carry_VB forward_RB for_IN
+        further_JJ study_NN ._.
+      
+      
+        Conclusion_NNP
+        We_PRP find_VBP that_IN the_DT intersection_NN test_NN has_VBZ equal_JJ or_CC greater_JJR
+        power_NN compared_VBN to_TO the_DT two_CD marker_NN equivalent_NN ._. Our_PRP$ analyses_NNS
+        were_VBD conducted_VBN using_VBG the_DT Bonferroni_NNP correction_NN for_IN the_DT
+        intersection_NN test_NN ._. When_WRB markers_NNS are_VBP linked_VBN ,_, as_IN in_IN many_JJ of_IN
+        our_PRP$ simulations_NNS ,_, this_DT correction_NN is_VBZ overly_RB conservative_JJ ._. If_IN
+        the_DT intersection_NN test_NN is_VBZ used_VBN in_IN conjunction_NN with_IN a_DT more_RBR
+        appropriate_JJ correction_NN ,_, the_DT performance_NN of_IN the_DT intersection_NN
+        test_NN would_MD improve_VB perhaps_RB even_RB surpassing_VBG the_DT two_CD marker_NN
+        equivalent_NN in_IN more_JJR cases_NNS ._. Thus_RB ,_, our_PRP$ motivation_NN and_CC hope_VBP in_IN
+        presenting_VBG this_DT investigation_NN of_IN the_DT statistical_JJ power_NN of_IN
+        intersection_NN tests_NNS versus_CC two_CD marker_NN tests_NNS is_VBZ to_TO make_VB clear_VB
+        the_DT compound_NN framework_NN and_CC resulting_VBG evidence_NN under_IN which_WDT
+        intersection_NN tests_NNS are_VBP indeed_RB equal_JJ to_TO and_CC /_NN or_CC more_RBR powerful_JJ
+        than_IN the_DT complicated_VBN procedures_NNS based_VBN on_IN two_CD marker_NN
+        models_NNS ._.
+      
+      
+        Materials_NNS
+        
+          Statistical_NNP Framework_NNP
+          As_IN the_DT framework_NN for_IN our_PRP$ comparison_NN ,_, and_CC in_IN
+          conjunction_NN with_IN the_DT previous_JJ simulations_NNS and_CC conclusions_NNS
+          provided_VBN by_IN the_DT work_NN of_IN Rebaï_NNP 
+          et_CC al_NN ._. [_NN 4_CD ]_NN ,_, we_PRP consider_VBP a_DT
+          backcross_NNS experimental_JJ design_NN originating_VBG from_IN a_DT cross_NN of_IN
+          two_CD homozygous_JJ inbred_JJ lines_NNS ,_, differing_VBG in_IN the_DT trait_NN of_IN
+          interest_NN ,_, and_CC producing_VBG heterozygous_JJ lines_NNS that_WDT are_VBP
+          backcrossed_JJ to_TO one_CD of_IN the_DT initial_JJ homozygous_JJ parental_JJ
+          lines_NNS ._. We_PRP examine_VBP both_DT normal_JJ and_CC binomial_NN phenotypic_JJ
+          distributions_NNS ._. In_IN general_JJ ,_, we_PRP denote_NN each_DT marker_NN as_IN 
+          M_NNP 
+          1_CD ._. ._. ._. 
+          M_NNP 
+          
+            k_NN 
+           ,_, where_WRB 
+          k_NN is_VBZ the_DT number_NN of_IN markers_NNS being_VBG
+          examined_VBN and_CC allow_VB each_DT marker_NN to_TO have_VB two_CD alleles_NNS ,_, 
+          M_NNP 
+          11_CD ,_, 
+          M_NNP 
+          12_CD ._. ._. ._. 
+          M_NNP 
+          
+          k_NN 1_CD ,_, 
+          M_NNP 
+          
+          k_NN 2_CD ._. The_DT 2_CD 
+          k_NN phenotypic_JJ means_NNS are_VBP
+          differentiated_JJ via_IN subscripts_NNS (_( e_SYM ._. g_SYM ._. ,_, μ_NN 
+          
+          M_NNP 
+          11_CD ._. ._. ._. 
+          M_NNP 
+          k_NN 1_CD /_NN 
+          M_NNP 
+          11_CD ._. ._. ._. 
+          M_NNP 
+          k_NN 1_CD  or_CC μ_NN 
+          
+          M_NNP 
+          11_CD ._. ._. ._. 
+          M_NNP 
+          k_NN 1_CD /_NN 
+          M_NNP 
+          12_CD ._. ._. ._. 
+          M_NNP 
+          k_NN 2_LS  )_) and_CC the_DT frequencies_NNS of_IN these_DT
+          classes_NNS are_VBP denoted_JJ as_IN 
+          p_NN 
+          11_CD ,_, 
+          p_NN 
+          21_CD ._. ._. ._. 
+          p_NN 
+          
+          k_NN 1_CD under_IN the_DT binomial_NN scenario_NN
+          (_( 
+          i_NNP ._. e_SYM ._. ,_, =_SYM 
+          np_NN 
+          11_CD )_) ._.
+        
+        
+          Single_NNP Marker_NNP Model_NNP and_CC Hypotheses_NNP
+          A_DT simple_JJ linear_JJ regression_NN backcross_NNS model_NN is_VBZ employed_VBN
+          for_IN single_JJ marker_NN QTL_NNP detection_NN
+          
+          Y_NNP 
+          
+            j_NN 
+           =_SYM β_NN 
+          0_CD +_NN β_NN 
+          *_NN 
+          X_NNP 
+          *_NN 
+          j_NN  +_NN ε_NN 
+          
+            j_NN 
+           ;_: 
+          j_NN =_SYM 1_CD ,_, ._. ._. ._. ,_, 
+          n_NN (_( 1_LS )_)
+          where_WRB 
+          Y_NNP 
+          
+            j_NN 
+           is_VBZ the_DT quantitative_JJ trait_NN value_NN ,_, 
+          X_NNP 
+          *_NN 
+          j_NN  is_VBZ an_DT indicator_NN variable_JJ
+          that_IN denotes_NNS the_DT state_NN of_IN a_DT particular_JJ marker_NN ,_, β_NN 
+          0_CD is_VBZ the_DT overall_JJ mean_NN ,_, and_CC β_NN 
+          *_NN is_VBZ the_DT effect_NN of_IN an_DT allelic_JJ
+          substitution_NN at_IN the_DT marker_NN ._. Ideally_RB ,_, if_IN the_DT marker_NN and_CC
+          QTL_NNP are_VBP completely_RB linked_VBN ,_, the_DT effect_NN of_IN an_DT allelic_JJ
+          substitution_NN is_VBZ the_DT effect_NN of_IN the_DT QTL_NNP ._. If_IN 
+          k_NN markers_NNS are_VBP considered_VBN
+          independently_RB ,_, 
+          k_NN linear_JJ regression_NN models_NNS can_MD be_VB
+          considered_VBN (_( 
+          i_NNP ._. e_SYM ._. ,_, one_CD for_IN each_DT marker_NN ,_, 
+          M_NNP 
+          1_CD ,_, 
+          M_NNP 
+          2_CD ,_, ._. ._. ._. ,_, 
+          M_NNP 
+          
+            k_NN 
+           )_) by_IN denoting_VBG the_DT allelic_JJ substitution_NN associated_VBN
+          with_IN marker_NN 
+          M_NNP 
+          
+            i_NNS 
+           as_IN β_NN 
+          *_NN =_SYM β_NN 
+          
+            i_NNP 
+           ,_, for_IN 
+          i_NNP =_SYM 1_CD ._. ._. ._. 
+          k_NN ._. For_IN 
+          k_NN =_SYM 2_CD markers_NNS ,_, we_PRP denote_NN the_DT
+          allelic_JJ substitution_NN associated_VBN with_IN marker_NN 
+          M_NNP 
+          1_CD as_IN β_NN 
+          *_NN =_SYM β_NN 
+          1_CD ,_, where_WRB β_NN 
+          0_CD =_SYM μ_NN 
+          
+          M_NNP 
+          11_CD /_NN 
+          M_NNP 
+          11_CD  and_CC β_NN 
+          1_CD =_SYM μ_NN 
+          
+          M_NNP 
+          11_CD /_NN 
+          M_NNP 
+          12_CD  -_: μ_NN 
+          
+          M_NNP 
+          11_CD /_NN 
+          M_NNP 
+          11_CD  ;_: and_CC the_DT allelic_JJ substitution_NN
+          associated_VBN with_IN marker_NN 
+          M_NNP 
+          2_CD as_IN β_NN 
+          *_NN =_SYM β_NN 
+          2_CD ,_, where_WRB β_NN 
+          0_CD =_SYM μ_NN 
+          
+          M_NNP 
+          21_CD /_NN 
+          M_NNP 
+          21_CD  and_CC β_NN 
+          2_CD =_SYM μ_NN 
+          
+          M_NNP 
+          21_CD /_NN 
+          M_NNP 
+          22_CD  -_: μ_NN 
+          
+          M_NNP 
+          21_CD /_NN 
+          M_NNP 
+          21_CD  ._.
+          A_DT compound_NN hypothesis_NNS testing_VBG the_DT effect_NN of_IN an_DT allelic_JJ
+          substitution_NN at_IN either_DT or_CC both_DT of_IN these_DT two_CD independent_JJ
+          markers_NNS is_VBZ ,_,
+          
+          Rejection_NN of_IN this_DT compound_NN null_NN hypothesis_NNS indicates_VBZ
+          an_DT association_NN between_IN a_DT QTL_NNP and_CC either_CC or_CC both_DT of_IN the_DT
+          markers_NNS ,_, 
+          M_NNP 
+          1_CD and_CC 
+          M_NNP 
+          2_CD ,_, hence_RB the_DT term_NN intersection_NN test_NN ._.
+          From_IN a_DT statistical_JJ perspective_NN the_DT relative_JJ position_NN of_IN
+          the_DT two_CD markers_NNS is_VBZ irrelevant_JJ ._. However_RB ,_, to_TO compare_VB this_DT
+          to_TO a_DT two_CD marker_NN model_NN there_EX is_VBZ an_DT implicit_JJ assumption_NN
+          that_IN the_DT markers_NNS considered_VBD form_NN an_DT interval_NN ,_, or_CC are_VBP
+          adjacent_JJ to_TO one_CD another_DT ._. This_DT marks_VBZ a_DT departure_NN from_IN the_DT
+          traditional_JJ single_JJ marker_NN analysis_NN where_WRB no_DT consideration_NN
+          to_TO marker_NN order_NN is_VBZ given_VBN ._. To_TO define_VB an_DT overall_JJ level_NN α_NN
+          test_NN ,_, the_DT significance_NN level_NN α_NN must_MD be_VB adjusted_VBN for_IN the_DT
+          individual_JJ tests_NNS to_TO account_VB for_IN multiple_JJ testing_NN ._. There_EX
+          are_VBP many_JJ ways_NNS to_TO account_VB for_IN multiple_JJ testing_NN ._. Assuming_VBG
+          the_DT markers_NNS are_VBP independent_JJ ,_, the_DT Bonferroni_NNP correction_NN
+          can_MD be_VB applied_VBN [_NN 9_CD ]_NN ._. The_DT Bonferroni_NNP correction_NN is_VBZ
+          conservative_JJ for_IN the_DT intersection_NN test_NN and_CC the_DT lack_NN of_IN
+          independence_NN between_IN markers_NNS would_MD tend_VB to_TO make_VB it_PRP more_RBR
+          difficult_JJ for_IN the_DT intersection_NN test_NN to_TO reject_VB ._.
+          More_RBR generally_RB ,_, for_IN 
+          k_NN markers_NNS ,_, the_DT compound_NN hypothesis_NNS
+          testing_VBG the_DT effect_NN of_IN an_DT allelic_JJ substitution_NN at_IN any_DT of_IN
+          the_DT independent_JJ markers_NNS ,_, 
+          M_NNP 
+          1_CD ._. ._. ._. 
+          M_NNP 
+          
+            k_NN 
+           is_VBZ
+          
+          
+          Rejection_NN of_IN this_DT compound_NN null_NN hypothesis_NNS indicates_VBZ
+          an_DT association_NN between_IN a_DT QTL_NNP and_CC at_IN least_JJS one_CD of_IN the_DT
+          markers_NNS ,_, 
+          M_NNP 
+          1_CD ._. ._. ._. 
+          M_NNP 
+          
+            k_NN 
+           ._. To_TO define_VB an_DT overall_JJ level_NN α_NN test_NN ,_, using_VBG a_DT
+          Bonferroni_NNP correction_NN [_NN 9_CD ]_NN ,_, each_DT β_NN 
+          *_NN is_VBZ tested_VBN at_IN an_DT adjusted_VBN
+          significance_NN level_NN of_IN ._. An_DT association_NN between_IN a_DT QTL_NNP and_CC
+          a_DT marker_NN is_VBZ then_RB indicated_VBN when_WRB the_DT individual_JJ single_JJ
+          marker_NN test_NN rejects_VBZ the_DT null_NN at_IN the_DT adjusted_VBN α_NN level_NN ._.
+          The_DT practical_JJ result_NN of_IN the_DT application_NN of_IN an_DT
+          intersection_NN test_NN ,_, is_VBZ the_DT simplicity_NN of_IN calculation_NN of_IN
+          the_DT single_JJ marker_NN test_NN statistic_NN ,_, with_IN a_DT correction_NN for_IN
+          multiple_JJ testing_NN ._.
+        
+        
+          Two_CD Marker_NNP Regression_NNP Model_NNP and_CC Test_NNP of_IN the_DT
+          Corresponding_VBG Interval_NNP
+          Extending_NNP the_DT (_( backcross_NNS )_) notation_NN defined_VBN previously_RB ,_,
+          a_DT multiple_JJ linear_JJ regression_NN model_NN (_( based_VBN on_IN two_CD markers_NNS )_)
+          can_MD be_VB employed_VBN for_IN QTL_NNP detection_NN purposes_NNS ._. The_DT model_NN is_VBZ
+          defined_VBN as_IN
+          
+          Y_NNP 
+          
+            j_NN 
+           =_SYM β_NN 
+          0_CD +_NN β_NN 
+          1_CD 
+          X_NNP 
+          1_CD 
+          j_NN  +_NN β_NN 
+          2_CD 
+          X_NNP 
+          2_CD 
+          j_NN  +_NN β_NN 
+          3_CD 
+          X_NNP 
+          3_CD 
+          j_NN  +_NN ε_NN 
+          
+            j_NN 
+           ;_: 
+          j_NN =_SYM 1_CD ,_, ._. ._. ._. ,_, 
+          n_NN 
+          where_WRB 
+          X_NNP 
+          1_CD 
+          j_NN  and_CC 
+          X_NNP 
+          2_CD 
+          j_NN  are_VBP the_DT genotypic_JJ states_NNS of_IN
+          the_DT respective_JJ markers_NNS 
+          M_NNP 
+          1_CD and_CC 
+          M_NNP 
+          2_CD ,_, along_IN with_IN their_PRP$ respective_JJ
+          allelic_JJ substitution_NN effects_NNS (_( β_NN 
+          1_CD ,_, β_NN 
+          2_LS )_) ,_, and_CC 
+          X_NNP 
+          3_CD 
+          j_NN  is_VBZ the_DT combined_VBN genotypic_JJ
+          states_NNS of_IN markers_NNS 
+          M_NNP 
+          1_CD and_CC 
+          M_NNP 
+          2_CD with_IN allelic_JJ substitutions_NNS at_IN both_DT
+          markers_NNS 
+          M_NNP 
+          1_CD and_CC 
+          M_NNP 
+          2_CD having_VBG effect_NN β_NN 
+          3_CD ._. Interestingly_RB to_TO note_VB ,_, when_WRB one_CD is_VBZ
+          selectively_RB genotyping_VBG ,_, the_DT information_NN in_IN β_NN 
+          3_CD is_VBZ maximized_JJ ._.
+          In_IN other_JJ words_NNS ,_,
+          
+          Based_VBN upon_IN this_DT two_CD marker_NN model_NN with_IN four_CD parameters_NNS ,_,
+          the_DT hypothesis_NNS employed_VBN to_TO perform_VB a_DT level_NN α_NN test_NN for_IN
+          association_NN between_IN a_DT trait_NN and_CC the_DT marker_NN loci_NN 
+          M_NNP 
+          1_CD and_CC 
+          M_NNP 
+          2_CD is_VBZ the_DT test_NN of_IN β_NN 
+          3_CD where_WRB ,_,
+          
+          The_DT null_NN hypothesis_NNS for_IN this_DT test_NN is_VBZ that_IN there_EX is_VBZ no_DT
+          association_NN between_IN either_DT marker_NN (_( 
+          M_NNP 
+          1_CD or_CC 
+          M_NNP 
+          2_LS )_) and_CC the_DT trait_NN ._. A_DT similar_JJ set_NN of_IN
+          hypotheses_NNS follow_VBP for_IN an_DT 
+          F_NN 
+          2_CD experimental_JJ design_NN ._.
+          This_DT model_NN parameterization_NN differs_VBZ from_IN the_DT least_JJS
+          squares_NNS interval_NN mapping_NN approach_NN first_RB introduced_VBN by_IN
+          Knott_NNP and_CC Haley_NNP [_NN 2_CD ]_NN ._. In_IN the_DT parameterization_NN proposed_VBN
+          here_RB ,_, only_RB one_CD test_NN is_VBZ performed_VBN for_IN the_DT pair_NN of_IN markers_NNS ._.
+          In_IN contrast_NN ,_, the_DT regression_NN based_VBD interval_NN mapping_NN
+          approach_NN [_NN 2_CD ]_NN ,_, recalculates_NNS the_DT value_NN of_IN the_DT
+          independent_JJ variables_NNS for_IN each_DT putative_JJ position_NN in_IN the_DT
+          interval_NN ._. Our_PRP$ two_CD marker_NN regression_NN has_VBZ a_DT different_JJ
+          parameterization_NN from_IN Knott_NNP and_CC Haley_NNP [_NN 2_CD ]_NN ._. We_PRP chose_VBD
+          the_DT alternate_JJ parameterization_NN in_IN order_NN to_TO directly_RB
+          compare_VB the_DT two_CD marker_NN model_NN and_CC the_DT single_JJ marker_NN model_NN ._.
+          In_IN the_DT Knott_NNP and_CC Haley_NNP [_NN 2_CD ]_NN parameterization_NN ,_, flanking_VBG
+          markers_NNS are_VBP used_VBN to_TO define_VB the_DT coefficients_NNS of_IN the_DT
+          regression_NN as_IN mean_NN ,_, additive_JJ or_CC dominance_NN effects_NNS ._. For_IN 
+          s_VBZ steps_NNS along_IN the_DT interval_NN between_IN
+          two_CD markers_NNS 
+          M_NNP 
+          1_CD and_CC 
+          M_NNP 
+          2_CD values_NNS of_IN 
+          X_NNP are_VBP calculated_VBN according_VBG to_TO the_DT
+          conditional_JJ probability_NN of_IN a_DT QTL_NNP in_IN that_DT location_NN ._.
+          The_DT regression_NN based_VBD interval_NN mapping_NN parameterization_NN
+          thus_RB provides_VBZ a_DT mechanism_NN to_TO test_VB for_IN additive_JJ and_CC
+          dominance_NN effects_NNS using_VBG tests_NNS of_IN the_DT regression_NN
+          parameters_NNS ._. In_IN our_PRP$ parameterization_NN ,_, the_DT regression_NN
+          coefficients_NNS are_VBP tests_NNS for_IN detection_NN ._. Thus_RB ,_, the_DT two_CD
+          parameterizations_NNS have_VBP different_JJ null_NN hypotheses_NNS for_IN the_DT
+          tests_NNS of_IN the_DT regression_NN coefficients_NNS and_CC are_VBP not_RB directly_RB
+          comparable_JJ in_IN terms_NNS of_IN power_NN ._. We_PRP use_VBP the_DT alternative_JJ
+          parameterization_NN so_IN that_IN the_DT interpretation_NN of_IN the_DT tests_NNS
+          is_VBZ comparable_JJ in_IN the_DT single_JJ marker_NN and_CC two_CD marker_NN
+          regression_NN models_NNS and_CC we_PRP can_MD directly_RB compare_VB the_DT power_NN
+          of_IN the_DT two_CD tests_NNS ._.
+        
+        
+          Simulations_NNP
+          Data_NNP were_VBD simulated_JJ for_IN two_CD marker_NN backcross_NNS and_CC 
+          F_NN 
+          2_CD populations_NNS with_IN binomial_NN trait_NN
+          distributions_NNS and_CC two_CD marker_NN backcross_NNS populations_NNS with_IN
+          normal_JJ trait_NN distributions_NNS ._. A_DT total_NN of_IN 339_CD parameter_NN
+          combinations_NNS were_VBD examined_VBN (_( Table_NNP 1_LS )_) ._. For_IN each_DT
+          combination_NN of_IN parameters_NNS ,_, 1000_CD data_NNS sets_NNS were_VBD simulated_JJ ._.
+          Traits_NNP were_VBD simulated_JJ from_IN a_DT binomial_NN distribution_NN 
+          Bin_NNP (_( 
+          n_NN ,_, 
+          p_NN )_) where_WRB sample_NN sizes_NNS 
+          n_NN =_SYM 100_CD and_CC 
+          n_NN =_SYM 500_CD were_VBD utilized_JJ ,_, and_CC from_IN a_DT
+          normal_JJ distribution_NN 
+          N_NNP (_( ,_, 1_CD ._. 0_CD )_) with_IN 
+          n_NN =_SYM 500_CD ._. The_DT effect_NN of_IN the_DT binary_JJ
+          trait_NN [_NN 13_CD ]_NN varied_VBD based_VBN on_IN μ_NN =_SYM 
+          np_NN 
+          
+            i_NNP 
+           (_( Table_NNP 1_LS )_) ._. The_DT binomial_NN probabilities_NNS 
+          p_NN 
+          1_CD ,_, 
+          p_NN 
+          2_CD ,_, and_CC 
+          p_NN 
+          3_CD represent_VB the_DT probability_NN that_IN a_DT
+          binary_JJ trait_NN is_VBZ present_RB given_VBN a_DT specific_JJ BTL_NNP genotype_NN
+          (_( GT_NNP )_) ,_, or_CC the_DT penetrance_NN of_IN the_DT trait_NN for_IN the_DT specific_JJ
+          genotypes_NNS 
+          Q_NNP 
+          1_CD /_NN 
+          Q_NNP 
+          1_CD ,_, 
+          Q_NNP 
+          1_CD /_NN 
+          Q_NNP 
+          2_CD ,_, and_CC 
+          Q_NNP 
+          2_CD /_NN 
+          Q_NNP 
+          2_CD ,_, respectively_RB ._. The_DT location_NN of_IN the_DT
+          locus_JJ relative_NN to_TO marker_NN loci_NN 
+          M_NNP 
+          1_CD  and_CC 
+          M_NNP 
+          2_CD  also_RB varied_VBD ._. Similarly_RB ,_, the_DT
+          effect_NN under_IN the_DT normally_RB distributed_VBN phenotype_NN was_VBD
+          allowed_VBN to_TO vary_VB (_( Table_NNP 2_LS )_) under_IN seventy_NN five_CD parameter_NN
+          combinations_NNS ._. The_DT effect_NN size_NN is_VBZ the_DT difference_NN in_IN the_DT
+          penetrances_NNS (_( for_IN binary_JJ traits_NNS )_) and_CC between_IN the_DT means_NNS
+          (_( for_IN normally_RB distributed_VBN traits_NNS )_) ._. For_IN each_DT phenotypic_JJ
+          trait_NN distribution_NN and_CC each_DT parameter_NN combination_NN (_( Table_NNP
+          1_CD and_CC 2_LS )_) we_PRP analyzed_VBD ,_, via_IN least_JJS squares_NNS ,_, 1000_CD simulated_JJ
+          data_NNS sets_NNS using_VBG both_DT the_DT single_JJ marker_NN regression_NN model_NN
+          and_CC the_DT two_CD marker_NN regression_NN model_NN ._.
+          For_IN the_DT intersection_NN test_NN ,_, the_DT null_NN hypothesis_NNS was_VBD
+          rejected_VBN when_WRB the_DT empirical_JJ p-value_JJ for_IN either_DT single_JJ
+          marker_NN regression_NN test_NN statistic_NN was_VBD less_JJR than_IN =_SYM 0_CD ._. 025_CD
+          (_( Bonferroni_NNP adjustment_NN )_) ._. For_IN the_DT comparable_JJ two_CD marker_NN
+          test_NN (_( 
+          i_NNP ._. e_SYM ._. ,_, β_NN 
+          3_CD =_SYM 0_CD )_) ,_, the_DT null_NN hypothesis_NNS was_VBD
+          rejected_VBN when_WRB the_DT empirical_JJ 
+          p_NN -_: value_NN was_VBD less_JJR than_IN α_NN =_SYM 0_CD ._. 05_CD ._.
+          Under_IN each_DT parameter_NN combination_NN ,_, the_DT cumulative_JJ
+          assessment_NN of_IN statistical_JJ power_NN was_VBD evaluated_VBN from_IN the_DT
+          1000_CD simulated_JJ data_NNS sets_NNS as_IN the_DT proportion_NN of_IN times_NNS the_DT
+          empirical_JJ (_( permutation_NN )_) 
+          p_NN -_: values_NNS were_VBD less_JJR than_IN the_DT
+          specified_VBN α_NN level_NN ._.
+        
+        
+          DrosophilaAnalysis_NNP
+          The_DT population_NN of_IN 
+          Drosophila_NNP melanogaster_NN used_VBN in_IN our_PRP$
+          analysis_NN was_VBD a_DT set_NN of_IN 98_CD RILs_NNP (_( recombinant_JJ in_IN lines_NNS )_)
+          derived_VBN from_IN a_DT cross_NN of_IN two_CD isogenic_JJ lines_NNS as_IN described_VBN
+          in_IN Wayne_NNP 
+          et_CC al_NN ._. [_NN 8_CD ]_NN ,_, for_IN the_DT trait_NN
+          ovariole_NN number_NN ._. There_EX were_VBD 76_CD informative_JJ markers_NNS on_IN 4_CD
+          chromosomes_NNS ._. Markers_NNP used_VBD were_VBD the_DT cytological_JJ map_NN
+          positions_NNS of_IN the_DT insertion_NN sites_NNS of_IN 
+          roo_NN transposable_JJ element_NN markers_NNS ,_,
+          with_IN the_DT exception_NN of_IN the_DT fourth_JJ chromosome_NN ,_, where_WRB a_DT
+          visible_JJ mutation_NN was_VBD used_VBN as_IN a_DT marker_NN (_( 
+          spa_NN )_) [_NN 12_CD ]_NN ._. A_DT complete_JJ linkage_NN
+          map_NN was_VBD obtained_VBN for_IN chromosome_NN 
+          1_CD (_( the_DT 
+          X_NNP )_) and_CC chromosome_NN 3_CD ,_, with_IN 15_CD
+          adjacent_JJ marker_NN pairs_NNS (_( 16_CD markers_NNS )_) on_IN 
+          1_CD and_CC 36_CD adjacent_JJ marker_NN pairs_NNS (_( 37_CD
+          markers_NNS )_) on_IN 
+          3_CD ._. There_EX was_VBD a_DT centromeric_JJ break_NN
+          in_IN the_DT genetic_JJ map_NN for_IN chromosome_NN 
+          2_CD ,_, such_JJ that_IN there_EX were_VBD 18_CD
+          adjacent_JJ pairs_NNS (_( 19_CD markers_NNS )_) on_IN the_DT left_NN arm_NN and_CC 2_CD
+          adjacent_JJ pairs_NNS (_( 3_CD markers_NNS )_) on_IN the_DT right_JJ arm_NN ._.
+          To_TO compare_VB the_DT intersection_NN test_NN to_TO the_DT two_CD marker_NN
+          test_NN ,_, the_DT 71_CD pairs_NNS of_IN markers_NNS identified_VBN above_IN were_VBD
+          examined_VBN ._. For_IN each_DT pair_NN ,_, the_DT two_CD marker_NN regression_NN with_IN
+          the_DT test_NN of_IN the_DT β_NN 
+          3_CD parameter_NN was_VBD conducted_VBN at_IN α_NN =_SYM 0_CD ._. 05_CD ._.
+          The_DT two_CD individual_JJ markers_NNS were_VBD then_RB separately_RB modeled_VBD
+          in_IN a_DT linear_JJ regression_NN model_NN (_( see_VB Equation_NNP 1_LS )_) ,_, and_CC the_DT
+          intersection_NN test_NN was_VBD conducted_VBN ._. For_IN the_DT 71_CD unique_JJ pairs_NNS
+          of_IN markers_NNS ,_, concordance_NN between_IN the_DT intersection_NN test_NN and_CC
+          two_CD marker_NN test_NN was_VBD estimated_VBN using_VBG the_DT Kappa_NNP
+          coefficient_NN ,_, and_CC McNemar_NNP 's_POS test_NN [_NN 14_CD ]_NN was_VBD conducted_VBN to_TO
+          determine_VB whether_IN systematic_JJ differences_NNS existed_VBD between_IN
+          the_DT two_CD methods_NNS ._. Regression_NNP based_VBD interval_NN mapping_NN was_VBD
+          performed_VBN according_VBG to_TO the_DT Haley_NNP and_CC Knott_NNP
+          parameterization_NN [_NN 1_CD 2_CD ]_NN ._. Analysis_NNP was_VBD conducted_VBN using_VBG
+          S-PLUS_NNP 2000_CD (_( Insightful_NNP Corp_NNP ._. )_) ._.
+        
+      
+      
+        Authors_NNP '_'' Contributions_NNP
+        Cynthia_NNP Coffman_NNP is_VBZ the_DT post-doctoral_JJ associate_JJ who_WP
+        programmed_VBN all_DT simulations_NNS and_CC analyzed_VBD the_DT 
+        Drosophila_NNP data_NN ._. Rebecca_NNP Doerge_NNP and_CC
+        Lauren_NNP McIntyre_NNP designed_VBD the_DT simulation_NN study_NN and_CC assisted_VBN
+        with_IN the_DT interpretation_NN of_IN the_DT results_NNS ._. Marta_NNP Wayne_NNP
+        provided_VBD the_DT 
+        Drosophila_NNP data_NN ,_, and_CC assisted_VBN in_IN the_DT
+        interpretation_NN of_IN the_DT results_NNS ._. All_DT authors_NNS contributed_VBD to_TO
+        the_DT writing_NN of_IN this_DT manuscript_NN ._.
+      
+    
+  

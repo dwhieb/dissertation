@@ -1,0 +1,587 @@
+
+  
+    
+      
+        Background_NNP
+        Researchers_NNS are_VBP increasingly_RB realizing_VBG the_DT importance_NN of_IN
+        
+        true_JJ biological_JJ replicates_NNS for_IN
+        assessing_VBG statistical_JJ confidence_NN in_IN microarray_NN experiments_NNS
+        [_NN 1_CD 2_CD 3_CD 4_CD 5_CD 6_CD ]_NN ,_, but_CC replication_NN is_VBZ often_RB hindered_VBN by_IN
+        financial_JJ or_CC technical_JJ constraints_NNS ._. One_CD problem_NN is_VBZ that_IN
+        large_JJ ,_, prefabricated_JJ microarray_NN chips_NNS can_MD be_VB relatively_RB
+        expensive_JJ ,_, driving_VBG up_RP the_DT total_JJ cost_NN of_IN an_DT experiment_NN ._. (_( In_IN
+        fact_NN ,_, the_DT cost_NN of_IN a_DT subject_NN is_VBZ often_RB lower_JJR ._. )_) Another_DT
+        obstacle_NN to_TO using_VBG replicates_NNS is_VBZ that_IN the_DT biological_JJ tissues_NNS
+        from_IN which_WDT RNA_NNP is_VBZ extracted_VBN can_MD often_RB be_VB of_IN such_JJ small_JJ
+        quantity_NN by_IN nature_NN that_IN it_PRP is_VBZ technically_RB difficult_JJ to_TO get_VB
+        enough_RB RNA_NNP sample_NN from_IN one_CD subject_JJ for_IN hybridization_NN to_TO one_CD
+        array_NN [_NN 3_CD ]_NN ._. Either_CC or_CC both_DT of_IN these_DT problems_NNS have_VBP
+        motivated_VBN biologists_NNS to_TO pool_NN RNA_NNP samples_NNS together_RB before_IN
+        hybridization_NN ._. Many_JJ research_NN papers_NNS using_VBG this_DT method_NN have_VBP
+        been_VBN published_VBN [_NN 3_CD 4_CD 5_CD ]_NN ,_, but_CC the_DT statistical_JJ properties_NNS
+        of_IN pooling_VBG have_VBP not_RB been_VBN explicitly_RB addressed_VBN ._. There_EX are_VBP
+        two_CD different_JJ approaches_NNS of_IN sample_NN pooling_VBG ._. One_CD is_VBZ dubbed_VBN
+        "_'' complete_JJ pooling_VBG "_'' ,_, where_WRB all_DT samples_NNS from_IN one_CD treatment_NN
+        group_NN are_VBP pooled_VBN onto_IN one_CD chip_NN and_CC there_EX is_VBZ no_DT replication_NN
+        of_IN chips_NNS for_IN one_CD treatment_NN ._. This_DT approach_NN does_VBZ not_RB provide_VB
+        an_DT estimate_NN of_IN variability_NN among_IN chips_NNS and_CC therefore_RB can_MD
+        not_RB be_VB used_VBN for_IN statistical_JJ analysis_NN ._. The_DT other_JJ approach_NN is_VBZ
+        dubbed_VBN "_'' sub-pooling_JJ "_'' ,_, where_WRB subsets_NNS of_IN samples_NNS are_VBP randomly_RB
+        selected_VBN and_CC pooled_VBN onto_IN one_CD chip_NN but_CC there_EX are_VBP still_RB
+        multiple_JJ chips_NNS within_IN each_DT group_NN ._. Here_RB we_PRP investigated_VBD the_DT
+        statistical_JJ properties_NNS and_CC the_DT technical_JJ and_CC financial_JJ
+        implications_NNS of_IN the_DT second_JJ ,_, sub-pooling_JJ approach_NN ._.
+      
+      
+        Results_NNS
+        
+          Simulation_NN study_NN of_IN statistical_JJ
+          characteristics_NNS
+          First_LS ,_, simulated_JJ microarray_NN data_NNS were_VBD used_VBN to_TO
+          investigate_VB the_DT statistical_JJ properties_NNS (_( see_VB Methods_NNP for_IN
+          details_NNS )_) ._. Figure_NN 1_CD shows_VBZ the_DT simulated_JJ power_NN curves_NNS (_( for_IN
+          two-sample_JJ t_NN tests_NNS )_) with_IN respect_NN to_TO different_JJ α_NN levels_NNS
+          (_( i_NNP ._. e_SYM ._. type_NN I_PRP error_NN rates_NNS )_) ,_, effect_NN sizes_NNS (_( i_NNP ._. e_SYM ._. differences_NNS
+          of_IN the_DT means_NNS divided_VBN by_IN common_JJ standard_JJ deviation_NN )_) ,_, and_CC
+          sample_NN sizes_NNS ._. Some_DT well-known_JJ statistical_JJ properties_NNS are_VBP
+          shown_VBN here_RB :_: power_NN increases_NNS with_IN effect_NN size_NN and_CC /_NN or_CC
+          sample_NN size_NN when_WRB other_JJ conditions_NNS are_VBP fixed_VBN (_( e_SYM ._. g_SYM ._. curve_NN 8_CD
+          vs_NNS ._. curve_NN 5_CD ,_, or_CC curve_NN 4_CD vs_NNS ._. curve_NN 1_LS )_) ;_: but_CC it_PRP decreases_VBZ
+          when_WRB α_NN level_NN is_VBZ lowered_VBN with_IN other_JJ conditions_NNS being_VBG fixed_VBN
+          (_( e_SYM ._. g_SYM ._. curve_NN 8_CD vs_NNS ._. curve_NN 4_LS )_) ._. However_RB ,_, the_DT main_JJ purpose_NN of_IN
+          Figure_NN 1_CD is_VBZ to_TO demonstrate_VB the_DT effect_NN of_IN pooling_VBG ._. Consider_VB
+          curves_NNS 5_CD to_TO 8_CD ,_, all_DT of_IN which_WDT have_VBP α_NN level_NN fixed_VBN at_IN 0_CD ._. 05_CD ._.
+          Without_IN pooling_VBG ,_, nine_CD replicates_NNS per_IN group_NN (_( curve_NN 8_CD )_) give_VB
+          much_RB higher_JJR power_NN than_IN three_CD replicates_NNS per_IN group_NN (_( curve_NN
+          5_LS )_) ._. With_IN pooling_VBG ,_, power_NN curves_NNS are_VBP intermediate_JJ ._. Both_DT
+          curve_NN 6_CD and_CC curve_NN 7_CD reveal_VB the_DT power_NN of_IN pooling_VBG nine_CD
+          samples_NNS onto_IN three_CD chips_NNS each_DT ._. The_DT difference_NN between_IN
+          them_PRP is_VBZ that_IN equal_JJ pooling_VBG with_IN replicates_NNS in_IN the_DT same_JJ
+          pool_NN contributing_VBG equally_RB (_( curve_NN 7_CD )_) has_VBZ better_JJR power_NN than_IN
+          non-equal_JJ pooling_VBG (_( curve_NN 6_CD )_) ._. See_VB methods_NNS section_NN for_IN
+          statistical_JJ justification_NN ._. Notice_NNP that_DT power_NN curve_NN 7_CD is_VBZ
+          not_RB very_RB far_RB from_IN power_NN curve_NN 8_CD ,_, with_IN only_RB one_CD third_JJ the_DT
+          number_NN of_IN chips_NNS being_VBG used_VBN ._.
+          Figure_NN 2_CD shows_VBZ that_IN approximately_RB equivalent_NN power_NN to_TO
+          non-pooling_JJ can_MD be_VB achieved_VBN if_IN the_DT number_NN of_IN gene_NN chips_NNS
+          is_VBZ reduced_VBN but_CC the_DT number_NN of_IN samples_NNS is_VBZ increased_VBN ._. The_DT
+          simulated_JJ power_NN curves_NNS for_IN two-sample_JJ t_NN tests_NNS for_IN
+          different_JJ pooling_VBG schemes_NNS under_IN the_DT same_JJ type_NN I_PRP error_NN
+          rate_NN control_NN are_VBP very_RB similar_JJ ._. In_IN this_DT figure_NN ,_, n_NN 25_CD c_SYM 5_CD
+          means_VBZ that_IN RNA_NNP samples_NNS from_IN 25_CD subjects_NNS are_VBP randomly_RB
+          pooled_VBN onto_IN 5_CD chips_NNS with_IN 5_CD subjects_NNS contributing_VBG equally_RB
+          to_TO each_DT pool_NN ._. Specifically_RB ,_, the_DT power_NN of_IN (_( n_NN 25_CD c_SYM 5_LS )_) ≈_NN power_NN
+          of_IN (_( n_NN 24_CD c_SYM 6_CD )_) ≈_NN power_NN of_IN (_( n_NN 22_CD c_SYM 11_CD )_) ≈_NN power_NN of_IN (_( n_NN 21_CD c_SYM 7_CD )_) ≈_NN power_NN
+          of_IN (_( n_NN 20_CD c_SYM 20_CD )_) ._. Notice_NNP that_DT power_NN of_IN (_( n_NN 25_CD c_SYM 5_LS )_) ≈_NN power_NN of_IN
+          (_( n_NN 20_CD c_SYM 20_CD )_) ,_, which_WDT suggests_VBZ that_IN by_IN randomly_RB pooling_VBG RNA_NNP
+          samples_NNS from_IN 5_CD subjects_NNS onto_IN one_CD chip_NN with_IN equal_JJ
+          contributions_NNS ,_, we_PRP can_MD decrease_VB number_NN of_IN chips_NNS needed_VBN per_IN
+          group_NN from_IN 20_CD to_TO 5_CD while_IN number_NN of_IN subjects_NNS per_IN group_NN
+          only_RB needs_VBZ to_TO be_VB increased_VBN from_IN 20_CD to_TO 25_CD ._. As_IN will_MD be_VB
+          shown_VBN later_RB ,_, this_DT may_MD have_VB great_JJ financial_JJ
+          consequences_NNS ._.
+        
+        
+          "_'' Virtual_NNP "_'' pooling_VBG example_NN using_VBG data_NNS from_IN an_DT
+          Affymetrix_NNP microarray_NN experiment_NN
+          Blalock_NNP et_CC al_NN [_NN 2_CD ]_NN investigated_VBD the_DT correlation_NN of_IN
+          gene_NN expression_NN with_IN cognitive_JJ impairment_NN in_IN rats_NNS of_IN
+          different_JJ ages_NNS ._. Original_NNP data_NNS were_VBD from_IN 29_CD Affymetrix_NNP
+          microarrays_NNS ._. To_TO further_VB study_NN the_DT effect_NN of_IN pooling_VBG ,_, we_PRP
+          used_VBD 24_CD of_IN the_DT 29_CD arrays_NNS to_TO do_VB "_'' virtual_JJ pooling_VBG "_'' ._. Namely_NNP ,_,
+          we_PRP first_JJ randomly_RB selected_VBN 24_CD arrays_NNS and_CC assigned_VBN them_PRP to_TO
+          two_CD groups_NNS ._. P-_NNP values_NNS from_IN two-sample_JJ t-tests_JJ on_IN
+          individual_JJ genes_NNS were_VBD recorded_VBN ._. Next_JJ ,_, in_IN each_DT of_IN the_DT two_CD
+          groups_NNS ,_, we_PRP "_'' virtually_RB "_'' pooled_VBN the_DT 12_CD samples_NNS onto_IN 6_CD ,_, 4_CD ,_, 3_CD
+          arrays_NNS respectively_RB (_( assuming_VBG equal_JJ contribution_NN in_IN each_DT
+          pool_NN )_) ._. The_DT statistical_JJ tests_NNS were_VBD then_RB conducted_VBN on_IN the_DT
+          "_'' pooled_VBN "_'' data_NNS with_IN degrees_NNS of_IN freedom_NN being_VBG reduced_VBN to_TO 10_CD
+          (_( i_NNP ._. e_SYM ._. 2_LS *_NN (_( 6_CD -_: 1_LS )_) )_) ,_, 6_CD (_( i_NNP ._. e_SYM ._. 2_LS *_NN (_( 4_CD -_: 1_LS )_) )_) ,_, or_CC 4_CD (_( i_NNP ._. e_SYM ._. 2_LS *_NN (_( 3_CD -_: 1_LS )_) )_) ,_,
+          respectively_RB ._. The_DT P-_NNP values_NNS from_IN the_DT "_'' pooled_VBN "_'' data_NNS were_VBD
+          then_RB plotted_VBD against_IN the_DT original_JJ P-_NNP values_NNS ._. As_IN shown_VBN in_IN
+          Figure_NN 3_CD ,_, there_EX is_VBZ a_DT good_JJ agreement_NN of_IN the_DT P-_NNP values_NNS among_IN
+          the_DT pooling_VBG schemes_NNS for_IN the_DT majority_NN of_IN the_DT genes_NNS among_IN
+          the_DT pooling_VBG and_CC no_DT pooling_VBG schemes_NNS ._. Table_NNP 1_CD shows_VBZ that_IN a_DT
+          moderate_JJ percentage_NN of_IN those_DT genes_NNS that_WDT are_VBP found_VBN to_TO be_VB
+          significant_JJ at_IN a_DT fixed_VBN α_NN (_( 0_CD ._. 05_CD )_) level_NN can_MD be_VB picked_VBN up_RB by_IN
+          designs_NNS with_IN pooling_VBG at_IN the_DT same_JJ α_NN level_NN ._.
+          Multiple-testing_NNP adjustment_NN was_VBD not_RB considered_VBN here_RB
+          because_IN it_PRP is_VBZ a_DT separate_JJ statistical_JJ issue_NN ._. Note_VB that_IN
+          "_'' virtual_JJ "_'' pooling_VBG serves_VBZ as_IN indirect_JJ evidence_NN only_RB ._.
+        
+        
+          Effect_NN size_NN considerations_NNS
+          Because_IN we_PRP are_VBP testing_VBG hundreds_NNS or_CC thousands_NNS of_IN genes_NNS
+          at_IN the_DT same_JJ time_NN ,_, it_PRP is_VBZ not_RB easy_JJ to_TO determine_VB the_DT effect_NN
+          size_NN needed_VBN for_IN power_NN or_CC sample_NN size_NN estimation_NN ._. Effect_NN
+          size_NN can_MD vary_VB from_IN experiment_NN to_TO experiment_NN ,_, from_IN one_CD
+          kind_NN of_IN biological_JJ sample_NN to_TO another_DT ,_, as_RB well_RB as_IN from_IN
+          gene_NN to_TO gene_NN ._. If_IN we_PRP set_VBD the_DT goal_NN of_IN an_DT experiment_NN to_TO
+          detect_VB all_DT genes_NNS that_WDT are_VBP differentially_RB expressed_VBN at_IN any_DT
+          scale_NN ,_, then_RB the_DT sample_NN size_NN needed_VBN to_TO do_VB so_RB would_MD be_VB
+          prohibitively_RB large_JJ ._. Therefore_RB ,_, we_PRP need_VBP to_TO set_VB up_RP a_DT
+          realistic_JJ goal_NN ,_, say_VB ,_, to_TO detect_VB genes_NNS with_IN effect_NN size_NN ≥_NN
+          0_CD ._. 5_CD ._. For_IN a_DT two-sample_JJ t_NN test_NN ,_, this_DT means_VBZ the_DT true_JJ
+          difference_NN between_IN the_DT means_NNS is_VBZ one_CD half_NN of_IN the_DT common_JJ
+          standard_JJ deviation_NN ._. Empirical_NNP data_NNS from_IN many_JJ experiments_NNS
+          suggest_VBP that_IN this_DT goal_NN is_VBZ often_RB achievable_JJ ._. A_DT pilot_NN study_NN
+          is_VBZ also_RB desirable_JJ to_TO obtain_VB an_DT estimate_NN of_IN approximate_JJ
+          effect_NN size_NN for_IN specific_JJ experiments_NNS and_CC genes_NNS ._. To_TO assist_VB
+          researchers_NNS in_IN making_VBG such_JJ estimates_NNS ,_, we_PRP include_VBP here_RB
+          some_DT empirical_JJ results_NNS from_IN several_JJ experiments_NNS conducted_VBN
+          in_IN our_PRP$ core_NN facility_NN ,_, which_WDT may_MD provide_VB a_DT rough_JJ idea_NN
+          regarding_VBG the_DT range_NN of_IN effect_NN sizes_NNS that_WDT might_MD be_VB
+          realistically_RB expected_VBN with_IN one_CD type_NN of_IN microarray_NN -_: the_DT
+          Affymetrix_NNP oligonucleotide_NN GeneChip_NNP ®_NN array_NN ._. Of_IN course_NN ,_,
+          the_DT reader_NN should_MD be_VB cautious_JJ in_IN relying_VBG on_IN these_DT
+          numbers_NNS ,_, as_IN they_PRP are_VBP estimates_NNS based_VBN on_IN pilot_NN studies_NNS
+          from_IN only_RB one_CD microarray_NN core_NN facility_NN ._.
+        
+        
+          Financial_JJ implications_NNS of_IN sample_NN pooling_VBG and_CC
+          optimal_NN pooling_VBG design_NN
+          Since_IN a_DT microarray_NN chip_NN often_RB costs_VBZ more_JJR than_IN a_DT
+          biological_JJ subject_JJ and_CC we_PRP have_VBP more_JJR than_IN one_CD pooling_VBG
+          design_NN to_TO achieve_VB the_DT same_JJ statistical_JJ control_NN ,_, it_PRP is_VBZ
+          possible_JJ for_IN us_PRP to_TO search_VB for_IN the_DT most_JJS cost_NN effective_JJ
+          pooling_VBG design_NN while_IN maintaining_VBG the_DT desired_VBN statistical_JJ
+          properties_NNS ._. For_IN a_DT given_VBN combination_NN of_IN maximal_NN type_NN I_PRP
+          error_NN rate_NN ,_, minimal_JJ power_NN ,_, and_CC the_DT estimated_VBN or_CC expected_VBN
+          effect_NN size_NN to_TO be_VB detected_VBN ,_, there_EX are_VBP multiple_JJ pooling_VBG
+          designs_NNS that_WDT may_MD satisfy_VB these_DT conditions_NNS ._. We_PRP can_MD compare_VB
+          the_DT total_JJ cost_NN of_IN chips_NNS and_CC subjects_NNS for_IN each_DT design_NN and_CC
+          choose_VB the_DT one_CD with_IN minimal_JJ total_JJ cost_NN ,_, provided_VBN it_PRP is_VBZ
+          technical_JJ feasible_JJ ._. While_IN this_DT is_VBZ a_DT simplified_VBN economic_JJ
+          framework_NN (_( because_IN it_PRP does_VBZ not_RB consider_VB other_JJ cost_NN in_IN the_DT
+          experiment_NN )_) ,_, it_PRP manifests_NNS the_DT major_JJ point_NN of_IN the_DT
+          financial_JJ efficiency_NN with_IN pooling_VBG ._. An_DT example_NN function_NN
+          written_VBN in_IN R_NN language_NN used_VBN to_TO automate_NN the_DT searching_VBG and_CC
+          comparing_VBG process_NN is_VBZ attached_VBN as_IN an_DT additional_JJ file_NN ._.
+        
+      
+      
+        Discussion_NNP
+        Assessing_NNP variability_NN on_IN a_DT per_IN gene_NN basis_NN is_VBZ an_DT
+        increasingly_RB important_JJ aspect_NN of_IN microarray_NN analysis_NN ._. In_IN
+        the_DT present_JJ paper_NN we_PRP demonstrate_VBP that_DT variance_NN could_MD be_VB
+        estimated_VBN accurately_RB with_IN different_JJ pooling_VBG schemes_NNS ,_, and_CC
+        that_IN the_DT chip_NN cost_NN (_( and_CC therefore_RB experimental_JJ cost_NN )_) can_MD be_VB
+        dramatically_RB affected_VBN by_IN decisions_NNS regarding_VBG the_DT pooling_VBG
+        scheme_NN employed_VBN ._. Many_JJ researchers_NNS are_VBP aware_JJ that_IN replicates_NNS
+        of_IN biological_JJ samples_NNS are_VBP needed_VBN to_TO assess_VB experimental_JJ
+        error_NN ._. Even_RB though_IN thousands_NNS of_IN genes_NNS are_VBP interrogated_VBN
+        simultaneously_RB on_IN each_DT chip_NN ,_, estimates_NNS of_IN variance_NN based_VBN on_IN
+        these_DT measures_NNS do_VBP not_RB of_IN course_NN include_VBP biological_JJ variance_NN
+        for_IN any_DT single_JJ gene_NN in_IN question_NN ._. In_IN this_DT paper_NN ,_, we_PRP
+        addressed_VBD the_DT question_NN of_IN how_WRB many_JJ replicates_NNS are_VBP needed_VBN to_TO
+        achieve_VB adequate_JJ power_NN while_IN considering_VBG an_DT efficient_JJ
+        technical_JJ procedure_NN that_WDT is_VBZ applicable_JJ in_IN microarray_NN
+        experiments_NNS ._.
+        Since_IN the_DT specific_JJ design_NN and_CC data_NNS processing_VBG of_IN
+        microarrays_NNS can_MD cause_VB some_DT confusion_NN about_IN what_WP constitutes_VBZ
+        true_JJ replicates_NNS ,_, it_PRP is_VBZ important_JJ to_TO distinguish_VB technical_JJ
+        replicates_NNS from_IN biological_JJ replicates_NNS ._. In_IN the_DT Affymetrix_NNP
+        microarray_NN ,_, 11_CD to_TO 20_CD probe_NN pairs_NNS are_VBP used_VBN to_TO measure_VB
+        expression_NN level_NN of_IN a_DT probe_NN set_VBN ._. It_PRP is_VBZ important_JJ to_TO note_VB
+        that_IN these_DT duplicated_VBN probe_NN pairs_NNS are_VBP different_JJ measurement_NN
+        units_NNS rather_RB than_IN experimental_JJ units_NNS ._. The_DT true_JJ biological_JJ
+        replicates_NNS are_VBP the_DT arrays_NNS (_( provided_VBN that_IN they_PRP do_VBP not_RB
+        measure_VB the_DT same_JJ biological_JJ sample_NN )_) ._. An_DT estimate_NN of_IN
+        variability_NN among_IN the_DT probe_NN pairs_NNS reveals_VBZ the_DT precision_NN of_IN
+        the_DT measurement_NN at_IN the_DT probe_NN level_NN but_CC not_RB the_DT variability_NN
+        among_IN biological_JJ samples_NNS ._. The_DT latter_NN is_VBZ usually_RB what_WP is_VBZ
+        needed_VBN when_WRB conducting_VBG statistical_JJ hypothesis_NNS testing_VBG in_IN
+        order_NN to_TO make_VB inferences_NNS about_IN differential_NN gene_NN expression_NN
+        under_IN various_JJ treatment_NN or_CC environmental_JJ conditions_NNS ._.
+        Confusion_NN between_IN technical_JJ duplicates_NNS and_CC biological_JJ
+        replicates_NNS can_MD sometimes_RB lead_VB to_TO misconceptions_NNS in_IN
+        conducting_VBG and_CC interpreting_VBG statistical_JJ tests_NNS ._. Based_VBN on_IN the_DT
+        intensity_NN readings_NNS on_IN the_DT probe_NN pairs_NNS ,_, Affymetrix_NNP
+        Microarray_NNP Suite_NNP Version_NNP 5_CD ._. 0_CD gives_VBZ a_DT "_'' change_NN P-_NNP value_NN "_'' for_IN
+        the_DT comparison_NN analysis_NN of_IN each_DT probe_NN set_VBN (_( "_'' gene_NN "_'' )_) between_IN
+        a_DT baseline_NN chip_NN and_CC an_DT experiment_NN chip_NN (_( MAS_NNP V_NNP 5_CD ._. 0_CD manual_JJ )_)
+        based_VBN on_IN Wilcoxon_NNP signed_VBD rank_NN test_NN ._. According_VBG to_TO the_DT
+        manual_JJ ,_, the_DT change_NN P-_NNP value_NN indicates_VBZ the_DT significance_NN of_IN
+        the_DT difference_NN between_IN the_DT experimental_JJ chip_NN and_CC the_DT
+        baseline_NN chip_NN ._. However_RB ,_, it_PRP should_MD be_VB noted_VBN that_IN a_DT
+        significant_JJ difference_NN of_IN gene_NN expression_NN between_IN a_DT 
+        single_JJ chip_NN from_IN the_DT experimental_JJ
+        group_NN and_CC a_DT 
+        single_JJ chip_NN from_IN the_DT baseline_NN group_NN
+        can_MD not_RB provide_VB statistical_JJ evidence_NN to_TO show_VB that_IN the_DT two_CD
+        groups_NNS are_VBP different_JJ ._. Often_RB the_DT goal_NN of_IN comparing_VBG a_DT
+        treatment_NN group_NN to_TO a_DT control_NN group_NN is_VBZ to_TO detect_VB the_DT true_JJ
+        difference_NN of_IN the_DT population_NN means_VBZ ,_, and_CC the_DT "_'' change_NN
+        P-_NNP value_NN "_'' is_VBZ not_RB the_DT appropriate_JJ P-_NNP value_NN for_IN that_DT goal_NN ._.
+        To_TO overcome_VB the_DT difficulty_NN of_IN estimating_VBG the_DT variance_NN of_IN
+        microarray_NN data_NNS with_IN few_JJ or_CC no_DT biological_JJ replicates_NNS ,_,
+        so-called_JJ "_'' cross-gene_JJ models_NNS "_'' ,_, "_'' global_JJ error_NN models_NNS "_'' or_CC
+        "_'' local_JJ error_NN models_NNS "_'' have_VBP been_VBN proposed_VBN [_NN 7_CD 8_CD ]_NN ._. According_VBG
+        to_TO such_JJ models_NNS ,_, genes_NNS with_IN similar_JJ expression_NN levels_NNS from_IN
+        the_DT same_JJ chip_NN can_MD be_VB "_'' borrowed_VBN "_'' to_TO construct_VB a_DT pseudo_NN
+        sample_NN as_IN the_DT basis_NN to_TO estimate_VB the_DT "_'' global_JJ "_'' or_CC "_'' local_JJ "_''
+        errors_NNS for_IN each_DT individual_JJ gene_NN ._. This_DT is_VBZ very_RB appealing_VBG
+        because_IN "_'' Statistical_NNP group_NN comparisons_NNS can_MD now_RB be_VB done_VBN on_IN
+        experiments_NNS without_IN replicates_NNS by_IN using_VBG the_DT global_JJ error_NN
+        model_NN "_'' [_NN 8_CD ]_NN ._. However_RB ,_, these_DT algorithms_NNS are_VBP based_VBN on_IN two_CD
+        implicit_JJ assumptions_NNS that_WDT are_VBP difficult_JJ to_TO support_VB :_:
+        (_( 1_LS )_) ._. The_DT measurement_NN of_IN the_DT expression_NN of_IN a_DT gene_NN on_IN one_CD
+        single_JJ chip_NN can_MD be_VB used_VBN to_TO estimate_VB the_DT 
+        true_JJ population_NN mean_NN expression_NN of_IN
+        that_DT gene_NN ._. This_DT assumption_NN is_VBZ often_RB false_JJ because_IN an_DT
+        observed_VBN intensity_NN can_MD be_VB far_RB from_IN the_DT 
+        true_JJ mean_NN with_IN moderate_JJ or_CC high_JJ
+        probability_NN ._. For_IN example_NN ,_, even_RB if_IN gene_NN expression_NN
+        measurements_NNS follow_VBP a_DT perfect_JJ normal_JJ distribution_NN ,_, the_DT
+        chance_NN that_IN a_DT measurement_NN falls_VBZ beyond_IN one_CD standard_JJ
+        deviation_NN from_IN the_DT mean_NN on_IN either_DT side_NN is_VBZ as_RB large_JJ as_IN
+        32_CD %_NN ._.
+        (_( 2_LS )_) ._. Genes_NNP with_IN similar_JJ measurement_NN values_NNS "_'' share_NN "_'' the_DT
+        same_JJ variance_NN within_IN the_DT treatment_NN group_NN ._. This_DT assumption_NN
+        may_MD be_VB reasonably_RB accurate_JJ for_IN some_DT genes_NNS (_( e_SYM ._. g_SYM ._. those_DT with_IN
+        low_JJ expression_NN intensities_NNS )_) ,_, but_CC empirical_JJ observations_NNS
+        show_VBP that_IN it_PRP is_VBZ clearly_RB not_RB true_JJ for_IN all_DT genes_NNS ,_, especially_RB
+        for_IN those_DT with_IN high_JJ intensity_NN ._.
+        The_DT cross_NN gene_NN error_NN model_NN references_NNS for_IN support_NN the_DT
+        two_CD component_NN error_NN model_NN proposed_VBN by_IN Rocke_NNP et_CC al_NN [_NN 9_CD ]_NN and_CC
+        Durbin_NNP et_CC al_NN [_NN 10_CD ]_NN but_CC those_DT papers_NNS made_VBD it_PRP very_RB clear_JJ
+        that_IN true_JJ replication_NN could_MD not_RB be_VB circumvented_JJ ,_, especially_RB
+        to_TO estimate_VB variances_NNS for_IN genes_NNS with_IN high_JJ expression_NN ._. (_( For_IN
+        additional_JJ discussion_NN on_IN different_JJ sources_NNS of_IN error_NN in_IN
+        microarray_NN experiments_NNS ,_, see_VB [_NN 10_CD 11_CD 12_CD 13_CD ]_NN ._. )_)
+        Except_IN under_IN very_RB restrictive_JJ models_NNS ,_, duplicate_VB
+        observations_NNS per_IN chip_NN do_VBP not_RB provide_VB valid_JJ estimates_NNS of_IN
+        variability_NN among_IN subjects_NNS ._. Hence_RB ,_, multiple_JJ chips_NNS per_IN
+        treatment_NN group_NN ,_, each_DT measuring_VBG an_DT RNA_NNP sample_NN from_IN a_DT
+        separate_JJ biological_JJ subject_JJ or_CC pooled_VBN groups_NNS of_IN subjects_NNS ,_,
+        are_VBP required_VBN for_IN statistical_JJ analysis_NN ._. However_RB ,_, this_DT
+        approach_NN often_RB entails_VBZ financial_JJ and_CC /_NN or_CC technical_JJ
+        difficulties_NNS ._. To_TO address_VB these_DT issues_NNS ,_, we_PRP tested_VBD RNA_NNP sample_NN
+        pooling_VBG and_CC showed_VBD that_IN it_PRP provides_VBZ an_DT efficient_JJ
+        alternative_JJ solution_NN ._. Because_IN arrays_NNS are_VBP usually_RB more_RBR
+        expensive_JJ than_IN subjects_NNS ,_, sample_NN pooling_VBG frequently_RB may_MD help_VB
+        defray_NN the_DT total_JJ cost_NN of_IN an_DT experiment_NN ._. The_DT larger_JJR the_DT
+        difference_NN between_IN the_DT cost_NN of_IN a_DT single_JJ array_NN and_CC that_IN of_IN a_DT
+        single_JJ subject_NN ,_, the_DT more_JJR the_DT sub-pooling_JJ strategy_NN will_MD
+        save_VB ._. Simulated_JJ microarray_NN data_NNS and_CC "_'' virtual_JJ pooling_VBG "_'' of_IN
+        actual_JJ data_NNS utilized_JJ here_RB as_RB well_RB as_IN statistical_JJ theory_NN
+        suggest_VBP that_IN the_DT underlying_VBG principles_NNS of_IN this_DT proposal_NN are_VBP
+        sound_NN ._. Note_VB that_IN even_RB with_IN pooling_VBG ,_, we_PRP still_RB show_VBP a_DT
+        requirement_NN for_IN reasonable_JJ replication_NN of_IN (_( pooled_VBN )_) arrays_NNS
+        because_IN there_EX is_VBZ no_DT other_JJ way_NN to_TO assess_VB biological_JJ
+        variation_NN ._.
+        A_DT limitation_NN of_IN our_PRP$ current_JJ study_NN is_VBZ that_IN we_PRP have_VBP yet_RB to_TO
+        conduct_VB a_DT definitive_JJ experiment_NN in_IN which_WDT the_DT same_JJ
+        biological_JJ samples_NNS are_VBP compared_VBN with_IN or_CC without_IN pooling_VBG ._.
+        Although_IN this_DT has_VBZ not_RB been_VBN done_VBN ,_, we_PRP nevertheless_RB have_VBP
+        indirect_JJ supporting_VBG evidences_NNS from_IN multiple_JJ actual_JJ
+        microarray_NN experiments_NNS ._. After_IN analyzing_VBG data_NNS from_IN over_IN 50_CD
+        research_NN projects_NNS (_( 
+        with_IN replications_NNS )_) done_VBN in_IN our_PRP$
+        facility_NN ,_, we_PRP have_VBP consistently_RB seen_VBN smaller_JJR within-group_JJ
+        variability_NN (_( and_CC more_JJR genes_NNS with_IN significant_JJ differences_NNS )_)
+        in_IN experiments_NNS using_VBG appropriate_JJ RNA_NNP pooling_VBG strategies_NNS
+        than_IN those_DT with_IN approximately_RB the_DT same_JJ number_NN of_IN arrays_NNS
+        that_WDT did_VBD not_RB employ_VB pooling_VBG ._. This_DT observation_NN implies_VBZ that_IN
+        experiments_NNS with_IN pooling_VBG have_VBP greater_JJR power_NN than_IN those_DT
+        without_IN pooling_VBG for_IN a_DT fixed_VBN number_NN of_IN chips_NNS ,_, when_WRB
+        conditions_NNS are_VBP comparable_JJ (_( i_NNP ._. e_SYM ._. similar_JJ experimental_JJ
+        conditions_NNS ,_, statistical_JJ methods_NNS and_CC multiple_JJ testing_VBG
+        correction_NN procedures_NNS ,_, etc_FW ._. )_) ._. In_IN addition_NN ,_, a_DT recent_JJ study_NN [_NN
+        5_CD ]_NN found_VBD high_JJ correlation_NN between_IN the_DT intensities_NNS from_IN the_DT
+        calculated_VBN pool_NN and_CC those_DT from_IN the_DT actual_JJ pool_NN using_VBG the_DT
+        same_JJ samples_NNS ,_, (_( although_IN in_IN that_DT study_NN the_DT pooling_VBG effect_NN on_IN
+        reducing_VBG variance_NN was_VBD not_RB explicitly_RB addressed_VBN )_) ._.
+        RNA_NNP pooling_VBG may_MD also_RB have_VB adverse_JJ consequences_NNS ,_, and_CC can_MD
+        be_VB inappropriate_JJ in_IN some_DT cases_NNS ._. Pooling_NNP should_MD not_RB be_VB used_VBN
+        if_IN inferences_NNS are_VBP needed_VBN for_IN single_JJ subjects_NNS ._. For_IN example_NN ,_,
+        when_WRB the_DT goal_NN of_IN the_DT research_NN is_VBZ to_TO correlate_VBP gene_NN
+        expression_NN with_IN some_DT other_JJ variables_NNS measured_VBN at_IN the_DT
+        subject_JJ level_NN [_NN 2_CD ]_NN or_CC to_TO identify_VB gene_NN profiles_NNS that_WDT help_VBP
+        classify_VB individual_JJ subjects_NNS and_CC predict_VBP their_PRP$ membership_NN
+        in_IN groups_NNS (_( e_SYM ._. g_SYM ._. cancer_NN patients_NNS vs_NNS ._. normal_JJ patients_NNS )_) ._.
+        Pooling_NNP will_MD also_RB prevent_VB later_RB analysis_NN of_IN the_DT data_NNS on_IN
+        variables_NNS that_WDT may_MD have_VB been_VBN ignored_VBN initially_RB ._. As_IN an_DT
+        example_NN ,_, suppose_VBP that_IN we_PRP pooled_VBN all_DT samples_NNS from_IN the_DT same_JJ
+        gender_NN and_CC compared_VBD the_DT differential_NN expression_NN of_IN some_DT
+        genes_NNS between_IN the_DT two_CD genders_NNS ._. This_DT would_MD make_VB it_PRP
+        impossible_JJ to_TO subsequently_RB analyze_VB differential_NN gene_NN
+        expression_NN related_VBN to_TO aging_VBG effects_NNS since_IN samples_NNS from_IN
+        different_JJ ages_NNS would_MD have_VB been_VBN pooled_VBN together_RB ._. The_DT
+        researcher_NN must_MD decide_VB at_IN the_DT outset_NN whether_IN the_DT potential_JJ
+        loss_NN of_IN information_NN is_VBZ outweighed_VBN by_IN the_DT increased_VBN
+        statistical_JJ power_NN and_CC cost-efficiency_NN of_IN the_DT design_NN ._.
+        Similarly_RB ,_, pooling_VBG will_MD prevent_VB users_NNS from_IN finding_VBG
+        differences_NNS in_IN expression_NN that_WDT might_MD divide_VB only_RB one_CD set_NN of_IN
+        samples_NNS ._. For_IN example_NN ,_, if_IN the_DT goal_NN of_IN the_DT experiment_NN is_VBZ to_TO
+        find_VB genes_NNS that_WDT help_VBP differentiate_VB subtypes_NNS of_IN colon_NN
+        cancers_NNS rather_RB than_IN between_IN colon_NN cancer_NN and_CC healthy_JJ
+        tissues_NNS ,_, then_RB it_PRP is_VBZ inappropriate_JJ to_TO pool_NN cancer_NN
+        subtypes_NNS ._.
+        As_IN pointed_VBD out_IN by_IN one_CD reviewer_NN ,_, sample_NN pooling_VBG is_VBZ able_JJ
+        to_TO reflect_VB group-specific_JJ variance_NN ,_, but_CC assumes_VBZ that_IN
+        residual_JJ individual_JJ variance_NN is_VBZ not_RB influenced_VBN by_IN the_DT group_NN
+        variable_JJ ._. While_IN this_DT assumption_NN may_MD be_VB a_DT reasonable_JJ first_JJ
+        approximation_NN ,_, it_PRP does_VBZ not_RB allow_VB for_IN the_DT possibility_NN of_IN a_DT
+        cross-product_JJ relationship_NN in_IN which_WDT a_DT group-specific_JJ
+        variable_JJ (_( for_IN example_NN ,_, toxic_JJ exposure_NN )_) might_MD lead_VB to_TO
+        informative_JJ sub-states_JJ that_DT exhibit_NN separate_JJ groups_NNS of_IN
+        coordinately_RB regulated_VBN responsive_JJ genes_NNS as_IN a_DT function_NN of_IN
+        the_DT extent_NN to_TO which_WDT the_DT individual_JJ responds_VBZ ._. Thus_RB ,_, there_EX
+        may_MD also_RB be_VB loss_NN of_IN information_NN regarding_VBG possible_JJ
+        cross-product_JJ relationships_NNS by_IN pooling_VBG ._. The_DT experimenter_NN
+        should_MD be_VB aware_JJ of_IN this_DT caveat_NN before_IN deciding_VBG to_TO pool_NN
+        samples_NNS ._.
+        There_EX are_VBP also_RB a_DT few_JJ technical_JJ concerns_NNS with_IN pooling_VBG ._.
+        Theoretically_RB ,_, the_DT more_JJR samples_NNS pooled_VBN ,_, the_DT greater_JJR the_DT
+        improvement_NN in_IN power_NN ._. Practically_NNP ,_, however_RB ,_, researchers_NNS may_MD
+        be_VB reluctant_JJ to_TO pool_NN more_JJR than_IN five_CD samples_NNS to_TO one_CD chip_NN due_JJ
+        to_TO technical_JJ limitations_NNS ,_, and_CC here_RB we_PRP restricted_VBD our_PRP$
+        comparisons_NNS among_IN pool_NN sizes_NNS to_TO no_DT more_JJR than_IN five_CD ._. Further_RB ,_,
+        we_PRP recommend_VBP pooling_VBG RNA_NNP samples_NNS instead_RB of_IN tissue_NN or_CC cell_NN
+        samples_NNS ,_, because_IN the_DT variability_NN at_IN the_DT tissue_NN level_NN is_VBZ
+        usually_RB larger_JJR than_IN at_IN the_DT RNA_NNP level_NN ._. However_RB ,_, as_RB long_RB as_IN
+        equal_JJ contribution_NN is_VBZ assured_VBN ,_, pooling_VBG at_IN the_DT tissue_NN level_NN
+        should_MD not_RB make_VB a_DT big_JJ difference_NN ._.
+        Finally_RB ,_, although_IN we_PRP used_VBD only_RB Affymetrix_NNP
+        oligonucleotide_NN data_NNS models_NNS as_IN examples_NNS in_IN this_DT paper_NN ,_, the_DT
+        same_JJ principles_NNS should_MD be_VB readily_RB applicable_JJ to_TO two_CD color_NN
+        cDNA_NN arrays_NNS as_RB well_RB ._. In_IN general_JJ ,_, pooling_VBG should_MD have_VB
+        similar_JJ advantages_NNS for_IN more_RBR complex_JJ experimental_JJ designs_NNS
+        (_( such_JJ as_IN factorial_NN designs_NNS ,_, time_NN course_NN designs_NNS ,_, etc_FW ._. )_) ,_,
+        when_WRB inferences_NNS are_VBP being_VBG made_VBN at_IN the_DT group_NN level_NN ._.
+      
+      
+        Conclusions_NNP
+        Appropriately_NNP designed_VBD RNA_NNP sample_NN pooling_VBG can_MD provide_VB
+        adequate_JJ statistical_JJ power_NN ,_, and_CC improve_VB efficiency_NN and_CC
+        cost-effectiveness_JJ ,_, for_IN many_JJ types_NNS of_IN microarray_NN
+        experiments_NNS when_WRB inferences_NNS are_VBP made_VBN at_IN the_DT group_NN level_NN ._.
+        However_RB ,_, researchers_NNS have_VBP to_TO consider_VB the_DT pros_NNS and_CC cons_NNS of_IN
+        pooling_VBG for_IN their_PRP$ experimental_JJ objectives_NNS ._. Designing_NNP
+        optimal_NN pooling_VBG schemes_NNS to_TO achieve_VB statistical_JJ control_NN with_IN
+        minimal_JJ total_JJ cost_NN is_VBZ readily_RB possible_JJ before_IN the_DT
+        experiments_NNS are_VBP conducted_VBN ._.
+      
+      
+        Methods_NNP
+        
+          Mixtures_NNP of_IN Individual_NNP Gene_NNP Expressions_NNP
+          Gene_NNP expression_NN levels_NNS for_IN a_DT single_JJ gene_NN for_IN 
+          n_NN subjects_NNS will_MD be_VB denoted_JJ as_IN X_NNP 
+          1_CD ,_, ._. ._. ._. ,_, X_NNP 
+          n_NN ._. If_IN the_DT RNA_NNP samples_NNS from_IN 
+          p_NN subjects_NNS are_VBP randomly_RB selected_VBN
+          and_CC pooled_VBN ,_, then_RB we_PRP can_MD model_VB the_DT resulting_VBG gene_NN
+          expression_NN level_NN as_IN ,_, where_WRB w_NN 
+          1_CD ,_, ._. ._. ._. ,_, 
+          w_NN 
+          
+            p_NN 
+           are_VBP the_DT mixing_VBG coefficients_NNS ._. These_DT coefficients_NNS may_MD
+          be_VB random_JJ ._. If_IN the_DT original_JJ gene_NN expression_NN levels_NNS ,_, X_NNP 
+          1_CD ,_, ._. ._. ._. ,_, X_NNP 
+          n_NN ,_, are_VBP identically_RB and_CC independently_RB
+          distributed_VBN random_JJ variables_NNS with_IN mean_NN μ_NN and_CC variance_NN σ_NN
+          2_CD and_CC the_DT mixing_VBG coefficients_NNS are_VBP independent_JJ of_IN the_DT
+          individual_JJ gene_NN expression_NN levels_NNS ,_, then_RB we_PRP have_VBP
+          σ_NN 2_CD /_NN 
+          p_NN ≤_NN 
+          Var_NNP (_( 
+          X_NNP *_NN )_) ≤_NN σ_NN 2_CD ._. (_( 1_LS )_)
+          This_DT result_NN follows_VBZ immediately_RB from_IN the_DT fact_NN that_DT
+          
+          and_CC
+          
+          Since_IN ,_, (_( 1_LS )_) follows_VBZ ._. Note_VB that_IN the_DT lower_JJR bound_JJ is_VBZ
+          achieved_VBN when_WRB the_DT mixing_VBG coefficients_NNS are_VBP equal_JJ ;_: i_NNP ._. e_SYM ._. ,_,
+          uniform_NN mixing_VBG ._. This_DT shows_VBZ that_IN RNA_NNP pooling_VBG reduces_VBZ
+          variance_NN and_CC the_DT minimal_JJ variance_NN of_IN the_DT mixture_NN is_VBZ
+          achieved_VBN with_IN equal_JJ pooling_VBG ._.
+        
+        
+          Relative_NNP Efficiency_NNP
+          As_RB far_RB as_IN the_DT number_NN of_IN chips_NNS needed_VBN is_VBZ concerned_VBN ,_, the_DT
+          relative_JJ efficiency_NN of_IN pooling_VBG 
+          n_NN subject_JJ to_TO 
+          n_NN /_NN 
+          p_NN chips_NNS with_IN uniform_NN mixing_VBG can_MD be_VB
+          computed_JJ as_IN :_:
+          
+          as_IN 
+          n_NN →_NN ∞_NN and_CC 
+          p_NN /_NN 
+          n_NN →_NN 0_CD ._. Hence_RB ,_, when_WRB 
+          p_NN samples_NNS are_VBP equally_RB mixed_JJ ,_, we_PRP
+          need_VBP approximately_RB 1_CD /_NN 
+          p_NN of_IN the_DT original_JJ number_NN of_IN chips_NNS
+          to_TO achieve_VB similar_JJ power_NN with_IN pooling_VBG when_WRB both_DT 
+          n_NN is_VBZ large_JJ and_CC 
+          p_NN /_NN 
+          n_NN is_VBZ small_JJ ._. This_DT is_VBZ a_DT large_JJ sample_NN
+          result_NN and_CC does_VBZ not_RB take_VB into_IN account_NN the_DT loss_NN of_IN degrees_NNS
+          of_IN freedom_NN for_IN the_DT test_NN ._. Next_JJ ,_, we_PRP consider_VBP the_DT effects_NNS of_IN
+          both_DT aspects_NNS on_IN statistical_JJ power_NN ._.
+        
+        
+          Power_NNP Equivalence_NNP
+          Although_IN pooling_VBG RNA_NNP samples_NNS with_IN uniform_NN mixing_VBG
+          substantially_RB reduces_VBZ the_DT variability_NN among_IN chips_NNS within_IN
+          a_DT group_NN ,_, this_DT may_MD not_RB result_VB in_IN an_DT increase_NN in_IN power_NN
+          while_IN testing_NN differences_NNS among_IN groups_NNS with_IN a_DT fixed_VBN
+          number_NN of_IN subjects_NNS ._. Here_RB we_PRP investigate_VB the_DT power_NN of_IN the_DT
+          two-sample_JJ t-test_JJ ._. Let_VB X_NNP 
+          1_CD ,_, ._. ._. ._. ,_, X_NNP 
+          n_NN be_VB identically_RB and_CC independently_RB
+          distributed_VBN with_IN N_NNP (_( μ_NN 
+          1_CD ,_, σ_NN 
+          1_CD 2_LS )_) and_CC Y_NNP 
+          1_CD ,_, ._. ._. ._. ,_, Y_NNP 
+          n_NN be_VB identically_RB and_CC independently_RB
+          distributed_VBN with_IN N_NNP (_( μ_NN 
+          2_CD ,_, σ_NN 
+          2_CD 2_LS )_) ._. For_IN simplicity_NN ,_, let_VB σ_NN 
+          1_CD 2_CD =_SYM σ_NN 
+          2_CD 2_CD =_SYM σ_NN 2_CD ._. Suppose_VB we_PRP use_VBP two-sample_JJ
+          t-test_JJ to_TO test_VB H_NNP 
+          0_CD :_: μ_NN 
+          1_CD =_SYM μ_NN 
+          2_CD against_IN H_NNP 
+          a_SYM :_: μ_NN 
+          1_CD <_NN μ_NN 
+          2_CD ._. Without_IN pooling_VBG ,_, the_DT t_NN statistic_NN
+          follows_VBZ the_DT central_JJ t_NN distribution_NN 
+          f_SYM (_( 
+          t_NN ,_, df_NN 
+          1_LS )_) with_IN 
+          df_NN 
+          1_CD =_SYM 2_CD (_( 
+          n_NN -_: 1_LS )_) under_IN H_NNP 
+          0_CD ;_: while_IN under_IN H_NNP 
+          a_DT ,_, it_PRP follows_VBZ a_DT non-central_JJ t_NN
+          distribution_NN with_IN 
+          df_NN 
+          1_CD and_CC non-centrality_JJ parameter_NN ,_, which_WDT
+          is_VBZ inversely_RB related_VBN to_TO the_DT standard_JJ deviation_NN σ_NN ._. For_IN a_DT
+          fixed_VBN α_NN level_NN ,_, we_PRP can_MD find_VB a_DT critical_JJ value_NN t_NN 
+          0_CD under_IN H_NNP 
+          0_CD such_JJ that_IN ._. To_TO compute_VB the_DT power_NN ,_, we_PRP
+          only_RB need_VBP to_TO find_VB the_DT rejection_NN region_NN corresponding_JJ to_TO t_NN
+          
+          0_CD under_IN the_DT alternative_NN non-central_JJ t_NN
+          distribution_NN 
+          g_SYM (_( 
+          t_NN ,_, df_NN 
+          1_CD ,_, δ_NN )_) :_: ._. Now_RB when_WRB the_DT 
+          n_NN samples_NNS are_VBP randomly_RB assigned_VBN
+          into_IN pools_NNS of_IN size_NN 
+          p_NN with_IN equal_JJ mixing_VBG ,_, power_NN is_VBZ
+          decreased_VBN because_IN the_DT degrees_NNS of_IN freedom_NN are_VBP reduced_VBN to_TO 
+          df_NN 
+          2_CD =_SYM 2_CD (_( 
+          n_NN /_NN 
+          p_NN -_: 1_LS )_) ,_, which_WDT makes_VBZ the_DT tails_NNS of_IN
+          the_DT central_JJ t_NN distribution_NN under_IN H_NNP 
+          0_CD heavier_JJR and_CC thus_RB the_DT critical_JJ value_NN
+          t_NN 
+          0_CD *_NN will_MD be_VB further_RB from_IN 0_CD ,_, while_IN the_DT
+          non-centrality_JJ parameter_NN is_VBZ unchanged_JJ :_: (_( since_IN the_DT
+          variance_NN is_VBZ reduced_VBN to_TO σ_NN 2_CD /_NN 
+          p_NN and_CC the_DT number_NN of_IN chips_NNS reduced_VBN
+          to_TO 
+          n_NN /_NN 
+          p_NN )_) ._. However_RB ,_, if_IN 
+          n_NN +_NN 
+          k_NN subjects_NNS with_IN pool_NN size_NN 
+          p_NN are_VBP compared_VBN to_TO 
+          n_NN subjects_NNS without_IN pooling_VBG ,_, then_RB
+          the_DT power_NN change_NN is_VBZ not_RB monotonic_JJ ._. The_DT loss_NN of_IN power_NN due_JJ
+          to_TO reduction_NN of_IN degrees_NNS of_IN freedom_NN will_MD be_VB partially_RB
+          compensated_VBN by_IN gain_NN of_IN power_NN due_JJ to_TO increase_NN of_IN effect_NN
+          size_NN ._. This_DT can_MD be_VB seen_VBN by_IN noting_VBG that_IN the_DT non-centrality_JJ
+          parameter_NN for_IN pooling_VBG is_VBZ now_RB ,_, which_WDT is_VBZ non-trivially_JJ
+          larger_JJR than_IN ._. This_DT shifts_VBZ the_DT alternative_JJ distribution_NN
+          further_JJ away_RB from_IN the_DT null_NN distribution_NN and_CC thus_RB
+          increases_VBZ power_NN ._. Hence_RB we_PRP have_VBP heuristically_RB shown_VBN that_IN
+          the_DT power_NN change_NN is_VBZ not_RB monotonic_JJ when_WRB decreasing_VBG
+          replication_NN of_IN chips_NNS while_IN simultaneously_RB increasing_VBG
+          number_NN of_IN subjects_NNS ._. This_DT implies_VBZ that_DT power_NN can_MD be_VB
+          preserved_VBN with_IN the_DT right_JJ choice_NN of_IN (_( subject_JJ )_) sample_NN size_NN
+          and_CC pool_NN size_NN ._. Many_JJ statistical_JJ software_NN packages_NNS ,_, such_JJ
+          as_IN R_NN ,_, S_NNP Plus_NNP or_CC SAS_NNP ,_, have_VBP built-in_JJ functions_NNS for_IN both_DT
+          central_JJ and_CC non-central_JJ t_NN distributions_NNS and_CC thus_RB we_PRP can_MD
+          write_VB programs_NNS to_TO evaluate_VB the_DT power_NN change_NN or_CC equivalent_NN
+          power_NN curves_NNS under_IN different_JJ pooling_VBG schemes_NNS ._. For_IN two_CD
+          sided_VBN two-sample_JJ t_NN test_NN or_CC experiments_NNS with_IN more_JJR than_IN 2_CD
+          treatment_NN groups_NNS ,_, we_PRP can_MD use_VB the_DT central_JJ and_CC non-central_JJ
+          F_NN distributions_NNS rather_RB than_IN t_NN distributions_NNS ._. The_DT power_NN
+          equivalence_NN should_MD be_VB very_RB similar_JJ ._. Readers_NNS not_RB very_RB
+          familiar_JJ with_IN the_DT above_JJ statistical_JJ concepts_NNS are_VBP referred_VBN
+          to_TO [_NN 14_CD 15_CD 16_CD ]_NN ._.
+        
+        
+          Simulation_NN study_NN
+          To_TO investigate_VB the_DT above_JJ properties_NNS ,_, we_PRP generated_VBD
+          random_JJ samples_NNS based_VBN on_IN two-treatment_JJ design_NN and_CC then_RB
+          compared_VBD the_DT performance_NN of_IN different_JJ pooling_VBG schemes_NNS ._. We_PRP
+          simulated_JJ microarray_NN data_NNS as_IN follows_VBZ :_: randomly_RB generate_VB a_DT
+          data_NNS matrix_NN of_IN 5000_CD rows_NNS and_CC 2_CD 
+          n_NN columns_NNS ,_, with_IN each_DT row_NN represents_VBZ
+          one_CD gene_NN and_CC each_DT column_NN represents_VBZ one_CD subject_JJ ._. The_DT
+          first_JJ 
+          n_NN subjects_NNS are_VBP random_JJ samples_NNS from_IN
+          a_DT normal_JJ distribution_NN with_IN mean_NN μ_NN 
+          1_CD and_CC standard_JJ deviation_NN σ_NN ;_: the_DT last_JJ 
+          n_NN subjects_NNS are_VBP random_JJ samples_NNS from_IN
+          a_DT normal_JJ distribution_NN with_IN mean_NN μ_NN 
+          2_CD and_CC standard_JJ deviation_NN σ_NN ,_, where_WRB ._.
+          For_IN each_DT row_NN ,_, μ_NN 
+          1_CD was_VBD generated_VBN from_IN a_DT uniform_NN
+          distribution_NN U_NNP (_( 0_CD ,_, 30000_CD )_) and_CC standard_JJ deviation_NN σ_NN is_VBZ set_VBN
+          to_TO be_VB 0_CD ._. 2_CD *_NN μ_NN 
+          1_CD ._. The_DT effect_NN size_NN δ_NN was_VBD specified_VBN
+          for_IN every_DT data_NNS matrix_NN ._.
+          Simulation_NN of_IN power_NN curves_NNS without_IN pooling_VBG :_: for_IN δ_NN from_IN
+          0_CD to_TO 4_CD ._. 0_CD ,_, 
+          n_NN from_IN 3_CD to_TO 30_CD ,_, we_PRP generated_VBD data_NNS
+          matrices_NNS and_CC then_RB performed_VBN two-sample_JJ t_NN tests_NNS on_IN each_DT
+          row_NN between_IN the_DT first_JJ 
+          n_NN observations_NNS and_CC the_DT last_JJ 
+          n_NN observations_NNS ._. For_IN each_DT specified_VBN
+          δ_NN ,_, 
+          n_NN and_CC α_NN level_NN (_( 0_CD ._. 05_CD or_CC 0_CD ._. 01_CD )_) ,_, we_PRP
+          repeated_VBD the_DT above_JJ simulation_NN 1000_CD times_NNS and_CC recorded_VBD the_DT
+          proportion_NN of_IN rejections_NNS ,_, 
+          R_NN 
+          α_NN ,_, δ_NN ,_, 
+          n_NN  ,_, for_IN each_DT iteration_NN ._. We_PRP
+          then_RB calculated_VBD the_DT averaged_VBN 
+          R_NN 
+          α_NN ,_, δ_NN ,_, 
+          n_NN  as_IN the_DT simulated_JJ power_NN ._.
+          Simulation_NN of_IN power_NN curves_NNS with_IN pooling_VBG :_: similar_JJ to_TO
+          the_DT above_JJ with_IN the_DT only_JJ difference_NN being_VBG that_IN the_DT
+          two-sample_JJ t_NN tests_NNS were_VBD performed_VBN on_IN first_JJ 
+          m_NN pools_NNS and_CC last_JJ 
+          m_NN pools_NNS ,_, where_WRB each_DT of_IN the_DT 
+          m_NN pools_NNS is_VBZ the_DT average_NN of_IN 
+          p_NN subjects_NNS randomly_RB selected_VBN from_IN
+          the_DT original_JJ 
+          n_NN subjects_NNS ._. Note_VB that_DT 
+          n_NN =_SYM 
+          m_NN *_NN 
+          p_NN and_CC we_PRP used_VBD sampling_VBG without_IN
+          replacement_NN ._. This_DT is_VBZ to_TO simulate_VBP the_DT scenario_NN of_IN equal_JJ
+          pooling_VBG ._.
+        
+      
+      
+        Authors_NNP '_'' Contributions_NNP
+        XP_NNP carried_VBD out_RP the_DT study_NN ._. CLW_NNP and_CC AJS_NNP supervised_VBD the_DT
+        study_NN ._. EMB_NNP ,_, KC_NNP ,_, and_CC PWL_NNP contributed_VBD discussions_NNS ._. All_DT
+        authors_NNS contributed_VBD to_TO writing_VBG the_DT manuscript_NN ._. All_DT authors_NNS
+        read_VBP and_CC approved_VBD the_DT final_JJ manuscript_NN ._.
+      
+    
+  

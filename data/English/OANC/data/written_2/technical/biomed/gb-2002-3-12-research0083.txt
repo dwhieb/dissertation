@@ -1,0 +1,1614 @@
+
+  
+    
+      
+        Background_NNP
+        In_IN the_DT lexicon_NN of_IN genomics_NNS ,_, an_DT annotation_NN is_VBZ any_DT feature_NN
+        tied_VBN to_TO the_DT genomic_JJ DNA_NNP sequence_NN ,_, for_IN example_NN ,_, a_DT
+        protein-coding_JJ gene_NN model_NN ,_, a_DT transposon_NN ,_, or_CC a_DT
+        non-protein-coding_JJ RNA_NNP gene_NN ._. Adding_VBG such_JJ annotations_NNS to_TO the_DT
+        sequence_NN of_IN a_DT genome_NN in_IN a_DT rigorous_JJ and_CC consistent_JJ way_NN is_VBZ a_DT
+        prerequisite_NN for_IN the_DT efficient_JJ use_NN of_IN that_DT sequence_NN in_IN
+        biological_JJ research_NN ._. Learning_NNP how_WRB to_TO identify_VB ,_, display_NN ,_,
+        query_NN ,_, and_CC interpret_VB genome_NN features_NNS in_IN well-characterized_JJ
+        model_NN organisms_NNS like_IN the_DT fruit_NN fly_NN ,_, 
+        Drosophila_NNP melanogaster_NN ,_, is_VBZ crucial_JJ
+        to_TO understanding_VBG the_DT genomes_NNS of_IN more_RBR complex_JJ organisms_NNS ,_,
+        including_VBG 
+        Homo_NN sapiens_JJ ._.
+        A_DT major_JJ long-term_JJ goal_NN of_IN the_DT FlyBase_NNP [_NN 1_CD ,_, 2_CD ]_NN annotation_NN
+        project_NN is_VBZ to_TO overlay_NN the_DT 
+        Drosophila_NNP melanogaster_NN genomic_JJ
+        sequence_NN with_IN all_DT available_JJ biological_JJ information_NN and_CC to_TO
+        provide_VB traceable_JJ evidence_NN for_IN every_DT annotation_NN in_IN a_DT
+        publicly_RB accessible_JJ database_NN ._. In_IN this_DT paper_NN ,_, we_PRP provide_VBP a_DT
+        description_NN of_IN our_PRP$ most_RBS recent_JJ step_NN toward_IN these_DT goals_NNS ._.
+        In_IN March_NNP 2000_CD ,_, a_DT collaborative_JJ group_NN including_VBG Celera_NNP
+        Genomics_NNP ,_, the_DT Berkeley_NNP and_CC European_NNP 
+        Drosophila_NNP Genome_NNP Projects_NNPS (_( BDGP_NNP and_CC
+        EDGP_NNP )_) ,_, and_CC a_DT number_NN of_IN additional_JJ 
+        Drosophila_NNP experts_NNS published_VBD the_DT
+        annotated_JJ ,_, nearly_RB finished_VBD genomic_JJ sequence_NN of_IN the_DT fruit_NN
+        fly_NN [_NN 3_CD ,_, 4_CD ]_NN ._. This_DT annotated_JJ sequence_NN was_VBD called_VBN Release_NNP 1_CD ,_,
+        in_IN anticipation_NN of_IN future_JJ changes_NNS to_TO the_DT sequence_NN and_CC
+        annotations_NNS ._. At_IN that_DT time_NN ,_, the_DT annotation_NN of_IN genes_NNS relied_VBN
+        heavily_RB on_IN computational_NN gene-prediction_JJ algorithms_NNS with_IN
+        only_RB limited_JJ human_JJ curation_NN ._. The_DT BDGP_NNP provided_VBD
+        approximately_RB 80_CD ,_, 000_CD expressed_VBD sequence_NN tags_NNS (_( ESTs_NNP )_) ,_, mostly_RB
+        from_IN the_DT 5_CD '_POS ends_NNS of_IN genes_NNS ,_, which_WDT were_VBD used_VBN in_IN the_DT
+        computational_NN analyses_NNS of_IN the_DT genome_NN [_NN 5_CD ]_NN ._. Because_IN these_DT
+        ESTs_NNP were_VBD derived_VBN from_IN non-normalized_JJ cDNA_NN libraries_NNS and_CC
+        were_VBD limited_JJ in_IN number_NN ,_, they_PRP corresponded_VBD to_TO only_RB about_IN 40_CD %_NN
+        of_IN all_DT genes_NNS in_IN the_DT genome_NN [_NN 5_CD ]_NN ._. Complete_JJ or_CC nearly_RB
+        complete_JJ sequences_NNS for_IN an_DT overlapping_VBG set_NN of_IN approximately_RB
+        2_CD ,_, 500_CD known_VBN 
+        Drosophila_NNP genes_NNS in_IN GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP
+        were_VBD also_RB available_JJ [_NN 3_CD ]_NN ._. Owing_NNP to_TO the_DT nature_NN of_IN
+        whole-genome_JJ shotgun_NN (_( WGS_NNP )_) assembly_NN ,_, the_DT 1_CD ,_, 630_CD gaps_NNS present_JJ
+        in_IN the_DT genome_NN tended_VBD to_TO occur_VB at_IN the_DT sites_NNS of_IN repetitive_JJ
+        sequence_NN [_NN 3_CD ]_NN ;_: gaps_NNS corresponding_JJ to_TO transposable_JJ elements_NNS
+        were_VBD filled_VBN with_IN composite_JJ sequences_NNS (_( reflecting_VBG sequence_NN
+        reads_VBZ from_IN throughout_IN the_DT genome_NN )_) rather_RB than_IN the_DT actual_JJ
+        sequence_NN ._. Release_NNP 1_CD predicted_VBD 13_CD ,_, 601_CD protein-coding_JJ genes_NNS ,_,
+        encoding_VBG 14_CD ,_, 080_CD transcripts_NNS ;_: each_DT gene_NN was_VBD assigned_VBN a_DT
+        unique_JJ CG_NNP identifier_NN ._. The_DT coordinates_VBZ and_CC predicted_VBN
+        sequences_NNS of_IN the_DT annotations_NNS ,_, although_IN not_RB the_DT evidence_NN for_IN
+        the_DT predictions_NNS ,_, were_VBD made_VBN available_JJ to_TO GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP [_NN
+        6_CD ,_, 7_CD ,_, 8_CD ,_, 9_CD ,_, 10_CD ,_, 11_CD ]_NN and_CC FlyBase_NNP ,_, the_DT public_JJ databases_NNS
+        charged_VBN with_IN making_VBG these_DT annotations_NNS accessible_JJ to_TO the_DT
+        research_NN community_NN ._. In_IN FlyBase_NNP ,_, the_DT annotations_NNS were_VBD made_VBN
+        available_JJ as_IN part_NN of_IN the_DT genome_NN annotation_NN database_NN ,_, Gadfly_NNP
+        [_NN 12_CD ]_NN ._.
+        Release_NNP 2_CD ,_, a_DT collaborative_JJ effort_NN between_IN Celera_NNP
+        Genomics_NNP and_CC the_DT BDGP_NNP ,_, was_VBD submitted_VBN to_TO GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP
+        and_CC FlyBase_NNP in_IN October_NNP 2000_CD ,_, after_IN approximately_RB 330_CD of_IN the_DT
+        gaps_NNS in_IN the_DT Release_NNP 1_CD sequence_NN had_VBD been_VBN filled_VBN ._. Changes_NNS to_TO
+        the_DT annotations_NNS were_VBD based_VBN largely_RB on_IN approximately_RB 6_CD ,_, 000_CD
+        new_JJ 3_CD '_POS ESTs_NNP sequenced_JJ by_IN the_DT BDGP_NNP ,_, which_WDT increased_VBD the_DT
+        number_NN of_IN genes_NNS with_IN 3_CD '_POS UTRs_NNP and_CC allowed_VBN further_JJ refinement_NN
+        in_IN gene_NN structures_NNS ._. Sequences_NNP of_IN transposable_JJ elements_NNS
+        remained_VBD inaccurate_JJ ,_, being_VBG based_VBN on_IN composite_JJ sequences_NNS ._. In_IN
+        all_DT ,_, 748_CD transcripts_NNS were_VBD modified_VBN ,_, 114_CD transcripts_NNS were_VBD
+        deleted_VBN ,_, and_CC 336_CD transcripts_NNS were_VBD added_VBN ._. Release_NNP 2_CD
+        predicted_VBD 13_CD ,_, 474_CD protein-coding_JJ genes_NNS ,_, encoding_VBG 14_CD ,_, 335_CD
+        polypeptides_NNS ,_, of_IN which_WDT 13_CD ,_, 218_CD (_( 92_CD %_NN )_) were_VBD unchanged_JJ relative_NN
+        to_TO Release_NNP 1_CD ._. Thus_RB ,_, the_DT change_NN from_IN Release_NNP 1_CD to_TO Release_NNP 2_CD
+        was_VBD minimal_JJ ._.
+        Inaccuracies_NNP in_IN the_DT Release_NNP 1_CD and_CC 2_CD predicted_VBD gene_NN
+        structures_NNS resulted_VBD mainly_RB from_IN computationally_RB predicted_VBD
+        annotations_NNS which_WDT lacked_VBD supporting_VBG cDNA_NN data_NNS ._. In_IN addition_NN ,_,
+        the_DT annotation_NN was_VBD carried_VBN out_IN rapidly_RB by_IN a_DT large_JJ and_CC
+        diverse_JJ group_NN of_IN curators_NNS ._. Mistakes_NNP in_IN the_DT annotation_NN of_IN
+        more_JJR than_IN 1_CD ,_, 000_CD genes_NNS were_VBD reported_VBN to_TO FlyBase_NNP in_IN error_NN
+        reports_NNS from_IN the_DT community_NN ,_, and_CC over_IN 1_CD ,_, 000_CD discrepancies_NNS
+        between_IN the_DT translated_VBN annotations_NNS and_CC those_DT in_IN the_DT curated_JJ
+        protein_NN database_NN SWISS-PROT_NNP [_NN 13_CD ]_NN were_VBD reported_VBN by_IN Karlin_NNP 
+        et_CC al_NN ._. [_NN 14_CD ]_NN ._. Finally_RB ,_, a_DT report_NN of_IN
+        1_CD ,_, 042_CD new_JJ predicted_VBD annotations_NNS that_WDT did_VBD not_RB match_VB any_DT of_IN
+        the_DT original_JJ 13_CD ,_, 601_CD predicted_VBD genes_NNS [_NN 15_CD ]_NN ,_, and_CC another_DT
+        based_VBN on_IN analysis_NN of_IN testes_NNS cDNA_NN sequences_NNS [_NN 16_CD ]_NN ,_, suggested_VBD
+        that_IN the_DT initial_JJ annotation_NN may_MD have_VB missed_VBN a_DT substantial_JJ
+        number_NN of_IN genes_NNS ._.
+        The_DT 
+        D_NNP ._. melanogaster_NN 116_CD ._. 8_CD megabase_NN (_( Mb_NNP )_)
+        euchromatic_JJ genomic_JJ sequence_NN has_VBZ now_RB been_VBN finished_VBN to_TO high_JJ
+        quality_NN [_NN 17_CD ]_NN ._. Here_RB we_PRP report_VBP the_DT results_NNS of_IN the_DT
+        re-evaluation_JJ of_IN previous_JJ annotations_NNS in_IN light_NN of_IN the_DT
+        finished_VBN euchromatic_JJ genome_NN and_CC considerable_JJ additional_JJ
+        experimental_JJ data_NNS ._. We_PRP call_VBP this_DT sequence_NN and_CC new_JJ annotation_NN
+        set_VBD Release_NNP 3_CD ._.
+        To_TO support_VB this_DT re-annotation_JJ effort_NN ,_, a_DT computational_NN
+        '_'' pipeline_NN '_'' was_VBD created_VBN ,_, and_CC the_DT results_NNS were_VBD stored_VBN in_IN a_DT
+        new_JJ Gadfly_NNP database_NN ,_, so_IN that_DT evidence_NN for_IN the_DT annotations_NNS
+        can_MD be_VB tracked_VBN and_CC queried_VBN by_IN the_DT public_JJ [_NN 12_CD ]_NN ._. To_TO identify_VB
+        new_JJ features_NNS in_IN the_DT genome_NN ,_, we_PRP utilized_JJ prediction_NN software_NN
+        and_CC annotated_JJ alignments_NNS of_IN non-protein-coding_JJ genes_NNS ,_,
+        transposons_NNS [_NN 18_CD ]_NN ,_, and_CC pseudogenes_NNS ._. To_TO improve_VB the_DT extent_NN
+        and_CC consistency_NN of_IN human_JJ curation_NN ,_, a_DT small_JJ group_NN of_IN expert_NN
+        FlyBase_NNP curators_NNS visually_RB inspected_VBD each_DT gene_NN in_IN the_DT entire_JJ
+        euchromatic_JJ sequence_NN ,_, using_VBG defined_VBN rules_NNS to_TO integrate_VB
+        computational_NN analyses_NNS ,_, cDNA_NN data_NNS and_CC protein_NN alignments_NNS
+        into_IN updated_VBN annotations_NNS ._. To_TO assess_VB the_DT accuracy_NN of_IN the_DT
+        exon-intron_JJ structures_NNS ,_, we_PRP compared_VBD the_DT resulting_VBG
+        annotations_NNS to_TO the_DT subset_NN of_IN curated_JJ peptides_NNS in_IN SWISS-PROT_NNP
+        and_CC TrEMBL_NNP that_WDT are_VBP based_VBN on_IN experimental_JJ evidence_NN [_NN
+        12_CD ]_NN ._.
+        The_DT annotations_NNS in_IN Release_NNP 3_CD alter_VB the_DT majority_NN (_( 85_CD %_NN )_) of_IN
+        gene_NN models_NNS ,_, yet_RB confirm_VB that_IN previous_JJ releases_NNS accurately_RB
+        reflected_VBD the_DT number_NN of_IN protein-coding_JJ genes_NNS ._. The_DT gene_NN
+        models_NNS have_VBP been_VBN enhanced_VBN in_IN a_DT number_NN of_IN ways_NNS ._. The_DT number_NN
+        of_IN genes_NNS with_IN annotated_JJ untranslated_JJ regions_NNS (_( UTRs_NNP )_) and_CC
+        alternative_JJ transcripts_NNS has_VBZ increased_VBN as_IN a_DT direct_JJ result_NN of_IN
+        the_DT increase_NN in_IN EST_NNP and_CC complete_JJ cDNA_NN sequences_NNS ,_, and_CC the_DT
+        fine_NN details_NNS of_IN the_DT exon-intron_JJ structure_NN are_VBP significantly_RB
+        improved_VBN ._. Numerous_JJ genes_NNS have_VBP been_VBN merged_VBN and_CC /_NN or_CC split_NN -_:
+        that_DT is_VBZ ,_, the_DT partitioning_VBG of_IN adjacent_JJ exons_NNS into_IN individual_JJ
+        gene_NN models_NNS has_VBZ changed_VBN -_: based_VBN on_IN cDNA_NN and_CC protein_NN
+        sequence_NN alignments_NNS ._. Overall_RB ,_, the_DT improved_VBN annotations_NNS
+        result_VBP in_IN changes_NNS in_IN more_JJR than_IN 40_CD %_NN of_IN the_DT predicted_VBN
+        proteins_NNS ;_: however_RB ,_, more_JJR than_IN 85_CD %_NN of_IN the_DT exons_NNS in_IN the_DT
+        originally_RB predicted_VBN genes_NNS contain_VBP sequences_NNS that_WDT are_VBP
+        present_JJ in_IN predicted_VBD exons_NNS in_IN Release_NNP 3_CD ._. We_PRP describe_VBP these_DT
+        changes_NNS under_IN the_DT headings_NNS '_POS Genome_NNP statistics_NNS :_: how_WRB is_VBZ
+        Release_NNP 3_CD different_JJ ?_. '_POS ,_, '_'' New_NNP and_CC deleted_VBN annotations_NNS '_POS ,_, and_CC
+        '_POS Structural_NNP changes_NNS to_TO gene_NN models_NNS '_POS in_IN Results_NNS and_CC
+        discussion_NN ._.
+        The_DT new_JJ annotations_NNS reveal_VBP a_DT surprising_JJ number_NN of_IN genes_NNS
+        that_WDT fall_NN outside_IN the_DT typical_JJ definition_NN of_IN a_DT
+        protein-coding_JJ gene_NN model_NN with_IN a_DT 5_CD '_POS UTR_NNP ,_, coding_VBG sequence_NN
+        (_( CDS_NNP )_) ,_, and_CC 3_CD '_POS UTR_NNP distinct_JJ from_IN neighboring_VBG genes_NNS ._. We_PRP found_VBD
+        genes_NNS containing_VBG 3_CD '_POS UTR_NNP sequences_NNS that_WDT overlap_VBP the_DT 5_CD '_POS UTR_NNP
+        of_IN the_DT gene_NN immediately_RB downstream_JJ ,_, examples_NNS of_IN dicistronic_JJ
+        transcripts_NNS (_( two_CD or_CC more_RBR distinct_JJ and_CC non-overlapping_JJ
+        coding_VBG regions_NNS contained_VBD on_IN a_DT single_JJ processed_VBN mRNA_NN )_) ,_, and_CC
+        genes_NNS that_IN ,_, by_IN means_NNS of_IN alternative_NN splicing_VBG ,_, encode_NN two_CD
+        completely_RB distinct_JJ non-overlapping_JJ peptides_NNS ._. These_DT
+        atypical_JJ gene_NN models_NNS illustrate_VBP the_DT complexity_NN of_IN detailed_JJ
+        annotation_NN and_CC pose_VB new_JJ challenges_NNS for_IN the_DT computational_NN
+        annotation_NN of_IN genomic_JJ sequence_NN ._. We_PRP describe_VBP these_DT unusual_JJ
+        genes_NNS ,_, as_RB well_RB as_IN assessment_NN of_IN and_CC access_NN to_TO the_DT data_NNS ,_,
+        under_IN the_DT headings_NNS '_POS Complex_JJ gene_NN models_NNS '_POS ,_, '_'' Assessment_NNP of_IN
+        Release_NNP 3_CD quality_NN '_'' ,_, '_'' Accessing_NNP data_NNS and_CC reporting_VBG errors_NNS '_POS ,_,
+        and_CC '_POS Future_NNP updates_NNS '_'' ._.
+      
+      
+        Results_NNS and_CC discussion_NN
+        
+          Genome_NNP statistics_NNS :_: how_WRB is_VBZ Release_NNP 3_CD
+          different_JJ ?_.
+          
+            Increase_VB in_IN the_DT number_NN of_IN exons_NNS and_CC transcripts_NNS ,_,
+            but_CC not_RB genes_NNS
+            Although_IN the_DT re-annotation_JJ process_NN changed_VBD the_DT
+            majority_NN of_IN gene_NN models_NNS ,_, the_DT number_NN of_IN protein-coding_JJ
+            genes_NNS changed_VBN minimally_RB ,_, from_IN 13_CD ,_, 601_CD genes_NNS in_IN Release_NNP 1_CD
+            to_TO 13_CD ,_, 474_CD genes_NNS in_IN Release_NNP 2_CD to_TO 13_CD ,_, 676_CD in_IN Release_NNP 3_CD ,_, of_IN
+            which_WDT 13_CD ,_, 379_CD are_VBP in_IN the_DT euchromatin_NN (_( Table_NNP 1_LS )_) and_CC 297_CD
+            in_IN the_DT heterochromatin_NN [_NN 25_CD ]_NN ._. However_RB ,_, the_DT Release_NNP 3_CD
+            gene_NN structures_NNS have_VBP changed_VBN to_TO contain_VB more_JJR exons_NNS ._. The_DT
+            total_JJ number_NN of_IN unique_JJ exons_NNS in_IN euchromatin_NN ,_, defined_VBN as_IN
+            having_VBG unique_JJ sequence_NN coordinate_VB termini_NN ,_, has_VBZ
+            increased_VBD 11_CD %_NN from_IN 54_CD ,_, 793_CD in_IN Release_NNP 2_CD to_TO 60_CD ,_, 897_CD in_IN
+            Release_NNP 3_CD (_( see_VB Table_NNP 1_LS )_) ._. The_DT number_NN of_IN protein-coding_JJ
+            exons_NNS has_VBZ increased_VBN as_IN well_RB ,_, from_IN 50_CD ,_, 667_CD to_TO 54_CD ,_, 934_CD (_( we_PRP
+            define_VB a_DT protein-coding_JJ exon_NN here_RB as_IN any_DT exon_NN
+            containing_VBG CDS_NNP ,_, even_RB if_IN the_DT majority_NN of_IN the_DT exon_NN is_VBZ
+            UTR_NNP )_) ._. The_DT consequence_NN is_VBZ that_IN the_DT average_JJ number_NN of_IN
+            exons_NNS per_IN gene_NN has_VBZ increased_VBN from_IN 4_CD ._. 1_CD in_IN Release_NNP 2_CD to_TO
+            4_CD ._. 6_CD in_IN Release_NNP 3_CD ,_, which_WDT is_VBZ very_RB similar_JJ to_TO 
+            C_NNP ._. elegans_NNS (_( 4_CD ._. 5_LS [_NN 26_CD ]_NN )_) and_CC 
+            Arabidopsis_NNP (_( 4_CD ._. 6_CD [_NN 27_CD ]_NN )_) but_CC
+            significantly_RB lower_JJR than_IN 
+            H_NNP ._. sapiens_JJ (_( 8_CD ._. 9_CD ,_, see_VBP ,_, for_IN example_NN
+            [_NN 28_CD ]_NN )_) ._.
+            A_DT major_JJ contributor_NN to_TO the_DT increase_NN in_IN exons_NNS is_VBZ the_DT
+            increase_NN in_IN the_DT number_NN of_IN protein-coding_JJ genes_NNS with_IN
+            identified_VBN 5_CD '_POS UTRs_NNP ._. One_CD limitation_NN of_IN 
+            ab_NN initio_NN gene_NN prediction_NN
+            programs_NNS is_VBZ that_IN they_PRP predict_VBP only_RB open_JJ reading_NN frames_NNS
+            (_( ORFs_NNP )_) :_: EST_NNP and_CC full-length_JJ cDNA_NN data_NNS are_VBP absolutely_RB
+            essential_JJ to_TO identify_VB UTRs_NNP ._. The_DT expanded_VBN set_NN of_IN
+            available_JJ EST_NNP /_NN cDNA_NN data_NNS led_VBN to_TO a_DT significant_JJ increase_NN
+            in_IN the_DT number_NN of_IN annotated_JJ genes_NNS and_CC transcripts_NNS with_IN
+            5_CD '_POS UTRs_NNP (_( from_IN 57_CD %_NN of_IN the_DT genes_NNS in_IN Release_NNP 2_CD to_TO 76_CD %_NN in_IN
+            Release_NNP 3_LS )_) and_CC 3_CD '_POS UTRs_NNP (_( from_IN 36_CD %_NN of_IN the_DT genes_NNS in_IN
+            Release_NNP 2_CD to_TO 72_CD %_NN in_IN Release_NNP 3_CD ;_: Table_NNP 1_LS )_) ._. These_DT numbers_NNS
+            reflect_VBP data_NNS availability_NN :_: sequences_NNS from_IN cDNA_NN clones_NNS
+            representing_VBG at_IN least_JJS one_CD transcript_NN from_IN approximately_RB
+            78_CD %_NN of_IN the_DT genes_NNS in_IN 
+            Drosophila_NNP were_VBD supplemented_JJ by_IN a_DT
+            large_JJ number_NN of_IN additional_JJ 5_CD '_POS ESTs_NNP [_NN 29_CD ,_, 30_CD ]_NN ._. The_DT
+            length_NN of_IN the_DT UTRs_NNP also_RB increased_VBD with_IN these_DT new_JJ data_NN
+            (_( Table_NNP 1_LS )_) :_: the_DT average_JJ 5_CD '_POS UTR_NNP length_NN per_IN transcript_NN
+            (_( for_IN genes_NNS with_IN annotated_JJ UTRs_NNP )_) increased_VBN by_IN 30_CD %_NN ,_, to_TO
+            265_CD nucleotides_NNS ,_, and_CC the_DT average_JJ 3_CD '_POS UTR_NNP length_NN (_( for_IN
+            genes_NNS with_IN UTRs_NNP )_) by_IN 19_CD %_NN ,_, to_TO 442_CD nucleotides_NNS ._.
+            Four_CD times_NNS as_IN many_JJ genes_NNS in_IN Release_NNP 3_CD (_( 20_CD %_NN )_) as_IN
+            compared_VBN to_TO Release_NNP 2_CD (_( 5_CD %_NN )_) show_NN alternative_JJ transcripts_NNS
+            (_( Table_NNP 1_LS )_) ._. The_DT vast_JJ majority_NN of_IN these_DT are_VBP due_JJ to_TO
+            alternative_NN splicing_VBG (_( an_DT introduced_VBN bias_NN ;_: see_VB Materials_NNPS
+            and_CC methods_NNS )_) ,_, but_CC 13_CD %_NN are_VBP due_JJ to_TO alternative_JJ promoters_NNS
+            and_CC 6_CD %_NN to_TO alternative_JJ polyadenylation_NN sites_NNS ._.
+            Alternative_NNP splicing_VBG results_NNS in_IN the_DT 26_CD %_NN increase_NN in_IN the_DT
+            number_NN of_IN protein-coding_JJ transcripts_NNS ,_, and_CC is_VBZ largely_RB
+            responsible_JJ for_IN a_DT 14_CD %_NN increase_NN in_IN the_DT number_NN of_IN unique_JJ
+            protein_NN species_NNS :_: from_IN 13_CD ,_, 922_CD in_IN Release_NNP 2_CD to_TO 15_CD ,_, 848_CD in_IN
+            Release_NNP 3_CD ._.
+          
+          
+            Forty-five_CD percent_NN of_IN predicted_VBD proteins_NNS differ_VBP
+            from_IN Release_NNP 2_CD
+            The_DT changes_NNS in_IN gene_NN models_NNS also_RB result_VBP in_IN larger_JJR
+            proteins_NNS ._. Proteins_NNPS in_IN Release_NNP 3_CD have_VBP a_DT mean_JJ length_NN of_IN
+            552_CD amino_JJ acids_NNS and_CC a_DT median_NN of_IN 421_CD amino_JJ acids_NNS ._. This_DT
+            is_VBZ an_DT increase_NN compared_VBN to_TO Release_NNP 2_CD ,_, where_WRB the_DT mean_NN
+            was_VBD 503_CD amino_JJ acids_NNS and_CC the_DT median_JJ 385_CD amino_JJ acids_NNS ._. The_DT
+            longest_JJS transcript_NN and_CC protein_NN are_VBP encoded_JJ by_IN 
+            dumpy_NN (_( dp_NN )_) ,_, which_WDT encodes_NNS a_DT
+            massive_JJ 69_CD ._. 7_CD kilobase_NN (_( kb_NN )_) mRNA_NN and_CC a_DT 23_CD ,_, 054_CD amino-acid_JJ
+            polypeptide_NN ._. The_DT Dp_NNP protein_NN is_VBZ a_DT component_NN of_IN the_DT
+            extracellular_NN matrix_NN ,_, and_CC appears_VBZ to_TO serve_VB as_IN an_DT
+            elastic_JJ adhesion_NN molecule_NN at_IN cuticle-cell_JJ junctions_NNS ,_,
+            such_JJ as_IN the_DT epidermalcuticle_NN interface_NN [_NN 31_CD ]_NN ._.
+            The_DT vast_JJ majority_NN (_( 94_CD %_NN )_) of_IN the_DT Release_NNP 3_CD annotations_NNS
+            contain_VBP sequences_NNS that_WDT are_VBP present_JJ in_IN exons_NNS from_IN
+            Release_NNP 2_CD ;_: however_RB ,_, only_RB 63_CD %_NN of_IN the_DT unique_JJ peptides_NNS in_IN
+            Release_NNP 2_CD are_VBP unchanged_JJ in_IN Release_NNP 3_CD (_( Table_NNP 1_LS )_) ._. Of_IN the_DT
+            15_CD ,_, 848_CD unique_JJ Release_NNP 3_CD peptides_NNS ,_, 8_CD ,_, 769_CD (_( 55_CD %_NN )_) are_VBP exact_JJ
+            matches_VBZ to_TO Release_NNP 2_CD peptides_NNS ._. Reciprocally_NNP ,_, 45_CD %_NN of_IN the_DT
+            peptides_NNS are_VBP different_JJ from_IN Release_NNP 2_CD ,_, emphasizing_VBG
+            that_IN ,_, although_IN the_DT overall_JJ picture_NN of_IN the_DT number_NN and_CC
+            distribution_NN of_IN transcription_NN units_NNS in_IN the_DT 
+            D_NNP ._. melanogaster_NN genome_NN remains_VBZ
+            largely_RB the_DT same_JJ ,_, the_DT new_JJ annotations_NNS include_VBP many_JJ
+            changes_NNS to_TO the_DT protein_NN products_NNS encoded_JJ by_IN the_DT
+            genome_NN ._.
+          
+        
+        
+          New_NNP and_CC deleted_VBN annotations_NNS
+          
+            Transposable_NNP elements_NNS
+            The_DT sequences_NNS of_IN the_DT vast_JJ majority_NN of_IN transposons_NNS in_IN
+            Releases_NNP 1_CD and_CC 2_CD were_VBD composites_NNS derived_VBN from_IN a_DT number_NN
+            of_IN copies_NNS of_IN that_DT transposon_NN type_NN ._. In_IN Release_NNP 3_CD ,_, these_DT
+            composite_JJ sequences_NNS are_VBP replaced_VBN with_IN the_DT actual_JJ
+            sequences_NNS present_JJ in_IN the_DT sequenced_JJ 
+            y_NN 1_CD ;_: 
+            cn_NN 1_CD 
+            bw_NN 1_CD 
+            sp_NN 1_CD strain_NN for_IN each_DT individual_JJ
+            element_NN [_NN 17_CD ,_, 18_CD ]_NN ._. In_IN all_DT ,_, 1_CD ,_, 572_CD transposons_NNS are_VBP
+            annotated_JJ in_IN the_DT euchromatic_JJ Release_NNP 3_CD genome_NN (_( Table_NNP
+            2_LS )_) :_: 682_CD long_JJ terminal_NN repeat_NN (_( LTR_NNP )_) transposons_NNS ,_, 486_CD
+            LINE_NNP transposons_NNS ,_, 372_CD terminal_NN inverted_JJ repeat_NN (_( TIR_NNP )_)
+            transposons_NNS ,_, and_CC 32_CD foldback_NN (_( FB_NNP )_) elements_NNS ._. These_DT data_NNS
+            include_VBP both_DT full-length_JJ and_CC partial_JJ elements_NNS ._. Details_NNS
+            of_IN these_DT analyses_NNS are_VBP reported_VBN in_IN an_DT accompanying_VBG
+            article_NN [_NN 18_CD ]_NN ._.
+          
+          
+            Non-protein-coding_NNP RNA_NNP genes_NNS
+            Small_JJ ,_, non-protein-coding_JJ RNAs_NNP are_VBP also_RB included_VBN in_IN
+            this_DT re-annotation_JJ ._. We_PRP searched_VBD for_IN new_JJ tRNA_NN genes_NNS
+            using_VBG the_DT program_NN tRNAscan-SE_JJ [_NN 32_CD ]_NN and_CC Sim_NNP 4_CD alignments_NNS
+            to_TO known_VBN tRNAs_NNS :_: 290_CD are_VBP annotated_JJ in_IN the_DT euchromatin_NN
+            (_( Table_NNP 2_LS )_) ._. Release_NNP 1_CD reported_VBD 292_CD tRNAs_NNS [_NN 3_CD ]_NN ;_: two_CD tRNA_NN
+            genes_NNS were_VBD deleted_VBN as_IN a_DT result_NN of_IN sequence_NN finishing_VBG
+            resolving_VBG repeated_VBN regions_NNS of_IN the_DT genome_NN ._.
+            Other_JJ non-protein-coding_JJ RNAs_NNP are_VBP limited_JJ ,_, in_IN
+            general_JJ ,_, to_TO those_DT already_RB curated_JJ in_IN the_DT FlyBase_NNP
+            database_NN [_NN 1_CD ,_, 2_CD ]_NN ._. All_DT 23_CD of_IN the_DT known_VBN microRNAs_NNS in_IN 
+            Drosophila_NNP are_VBP located_VBN precisely_RB
+            in_IN the_DT Release_NNP 3_CD genome_NN ._. We_PRP annotated_JJ the_DT majority_NN of_IN
+            the_DT 45_CD small_JJ nuclear_JJ RNAs_NNP (_( snRNAs_NNS )_) involved_VBN in_IN
+            splicing_VBG ,_, with_IN the_DT exception_NN of_IN the_DT four_CD snRNAs_NNS ,_, K_NNP 2_CD a_DT ,_,
+            K_NNP 2_CD b_SYM ,_, K_NNP 8_CD ,_, and_CC K_NNP 9_CD [_NN 33_CD ]_NN ,_, for_IN which_WDT there_EX were_VBD no_DT sequence_NN
+            or_CC cytological_JJ data_NNS available_JJ ._. Of_IN the_DT 41_CD snRNAs_NNS
+            supported_VBN by_IN such_JJ data_NNS ,_, we_PRP found_VBD that_IN nine_CD were_VBD
+            redundant_JJ entries_NNS ,_, and_CC another_DT five_CD could_MD not_RB be_VB
+            identified_VBN at_IN the_DT previously_RB specified_VBN cytological_JJ
+            locations_NNS ,_, possibly_RB due_JJ to_TO strain_VB variation_NN and_CC /_NN or_CC
+            inaccuracy_NN in_IN previous_JJ localization_NN experiments_NNS ._. Thus_RB ,_,
+            we_PRP precisely_RB located_VBN by_IN sequence_NN alignment_NN 28_CD snRNAs_NNS in_IN
+            the_DT genome_NN ,_, including_VBG a_DT new_JJ copy_NN of_IN the_DT 
+            snRNA_NN :_: U_NNP 4_CD atac_NN gene_NN in_IN the_DT 83_CD A_DT
+            region_NN ._.
+            All_DT nine_CD of_IN the_DT small_JJ nucleolar_NN RNA_NNP (_( snoRNA_NN )_) genes_NNS
+            in_IN FlyBase_NNP were_VBD identified_VBN by_IN Sim_NNP 4_CD alignment_NN of_IN
+            sequence_NN obtained_VBN from_IN the_DT literature_NN ._. In_IN addition_NN ,_, we_PRP
+            incorporated_VBD data_NNS from_IN Tycowski_NNP and_CC Steitz_NNP [_NN 34_CD ]_NN and_CC
+            located_VBN 19_CD more_JJR snoRNAs_NNS ._. Identification_NNP of_IN other_JJ
+            snoRNAs_NNS should_MD be_VB possible_JJ in_IN the_DT future_NN with_IN the_DT use_NN
+            of_IN algorithms_NNS like_IN Snoscan_NNP ,_, which_WDT looks_VBZ for_IN 2_CD '_POS -_: O-_NNP ribose_NN
+            methylation_NN guide_NN snoRNAs_NNS [_NN 35_CD ]_NN ;_: however_RB ,_, the_DT program_NN
+            will_MD have_VB to_TO be_VB customized_VBN for_IN 
+            Drosophila_NNP ._.
+            The_DT longer_RBR non-protein-coding_JJ RNA_NNP genes_NNS αγ-_NN 
+            element_NN ,_, bft_NN ,_, RNaseP_NNP :_: RNA_NNP ,_, Hsr-omega_NNP ,_,
+            7_CD SLRNA_NNP ,_, pgc_NN ,_, roX_NN 1_CD ,_, roX_NN 2_CD ,_, and_CC 
+            iab-_NN 4_CD ,_, are_VBP annotated_JJ in_IN the_DT
+            genome_NN ._. 27_CD new_JJ '_POS miscellaneous_JJ non-coding_JJ RNA_NNP '_POS genes_NNS
+            were_VBD detected_VBN by_IN alignment_NN of_IN spliced_JJ DGC_NNP cDNAs_NNS that_WDT
+            did_VBD not_RB appear_VB to_TO contain_VB an_DT ORF_NNP of_IN significant_JJ length_NN ._.
+            In_IN some_DT cases_NNS these_DT appear_VB to_TO be_VB candidate_NN antisense_NN
+            genes_NNS ,_, which_WDT have_VBP also_RB been_VBN reported_VBN in_IN other_JJ organisms_NNS
+            [_NN 36_CD ]_NN ._. Further_RB experiments_NNS will_MD be_VB necessary_JJ to_TO verify_VB
+            the_DT existence_NN of_IN these_DT interesting_JJ genes_NNS and_CC to_TO
+            determine_VB their_PRP$ function_NN ._.
+          
+          
+            Pseudogenes_NNP
+            The_DT number_NN of_IN pseudogenes_NNS reported_VBD in_IN 
+            Drosophila_NNP is_VBZ substantially_RB
+            smaller_JJR than_IN that_DT in_IN 
+            Caenorhabditis_NNP elegans_NNS [_NN 37_CD ,_, 38_CD ]_NN ._.
+            We_PRP annotated_JJ the_DT 12_CD pseudogenes_NNS in_IN FlyBase_NNP that_DT map_NN to_TO
+            the_DT euchromatic_JJ sequence_NN and_CC correspond_VB to_TO
+            protein-coding_JJ paralogs_NNS (_( see_VB Supplementary_NNP Table_NNP 1_CD in_IN
+            the_DT additional_JJ data_NN files_NNS )_) ._. We_PRP identified_VBD five_CD new_JJ
+            pseudogenes_NNS :_: four_CD histones_NNS and_CC one_CD lectin_NN (_( 
+            CR_NNP 31541_CD )_) (_( Supplementary_NNP Table_NNP
+            1_LS )_) ._. Of_IN these_DT 17_CD pseudogenes_NNS ,_, 15_CD are_VBP recombinationally_RB
+            derived_VBN (_( with_IN introns_NNS ,_, in_IN tandem_JJ to_TO their_PRP$ functional_JJ
+            paralogs_NNS )_) ,_, one_CD (_( 
+            Mgstl-_NNP Psi_NNP )_) is_VBZ retrotransposed_JJ
+            (_( with_IN a_DT poly_RB (_( A_DT )_) tail_NN ,_, lacking_VBG introns_NNS which_WDT its_PRP$
+            functional_JJ paralog_NN possesses_VBZ )_) ,_, and_CC one_CD is_VBZ too_RB
+            degenerate_VB to_TO classify_VB definitively_RB ._. We_PRP did_VBD not_RB make_VB
+            any_DT attempt_NN to_TO comprehensively_RB survey_VB for_IN new_JJ
+            retrotransposed_JJ pseudogenes_NNS or_CC annotate_NN pseudogenes_NNS
+            identified_VBN by_IN Echols_NNP 
+            et_CC al_NN ._. [_NN 37_CD ]_NN ._. WormBase_NNP [_NN 39_CD ,_, 40_CD ]_NN
+            currently_RB reports_VBZ 392_CD pseudogenes_NNS in_IN 
+            C_NNP ._. elegans_NNS ._. It_PRP is_VBZ very_RB likely_JJ
+            that_IN a_DT subset_NN of_IN the_DT genes_NNS identified_VBN as_IN protein-coding_JJ
+            genes_NNS in_IN Release_NNP 3_CD are_VBP actually_RB pseudogenes_NNS ._. In_IN
+            particular_JJ ,_, 19_CD protein-coding_JJ genes_NNS were_VBD noted_VBN as_IN
+            containing_VBG a_NNP '_POS probable_JJ mutation_NN in_IN the_DT sequenced_JJ
+            strain_NN '_'' and_CC more_JJR than_IN 400_CD were_VBD marked_VBN '_POS problematic_JJ '_POS
+            because_IN of_IN inconsistencies_NNS with_IN the_DT experimental_JJ
+            evidence_NN and_CC the_DT predicted_VBD ORFs_NNP ._.
+          
+          
+            New_NNP protein-coding_JJ genes_NNS
+            Release_NNP 3_CD contains_VBZ a_DT total_NN of_IN 802_CD new_JJ protein-coding_JJ
+            genes_NNS (_( Table_NNP 1_LS )_) ,_, that_WDT is_VBZ ,_, gene_NN models_NNS that_WDT show_NN no_DT
+            overlap_VB with_IN exons_NNS in_IN Release_NNP 2_CD ._. Of_IN these_DT ,_, 55_CD (_( 7_CD %_NN )_) are_VBP
+            based_VBN solely_RB on_IN gene-prediction_JJ data_NNS ,_, and_CC 20_CD of_IN these_DT
+            55_CD are_VBP based_VBN on_IN GENSCAN_NNP predictions_NNS alone_RB ._. Unlike_IN
+            Releases_NNP 1_CD and_CC 2_CD ,_, which_WDT relied_VBD heavily_RB on_IN Genie_NNP [_NN 3_CD ]_NN ,_,
+            Release_NNP 3_CD annotations_NNS did_VBD utilize_VB GENSCAN_NNP predictions_NNS
+            (_( with_IN at_IN least_JJS one_CD exon_NN with_IN a_DT score_NN >_NN 45_CD )_) in_IN the_DT
+            absence_NN of_IN other_JJ data_NNS ._. The_DT majority_NN of_IN the_DT new_JJ genes_NNS
+            show_VBP matches_VBZ to_TO EST_NNP (_( 573_CD ;_: 71_CD %_NN )_) or_CC full-insert_JJ cDNA_NN
+            sequences_NNS (_( 273_CD ;_: 34_CD %_NN )_) ,_, indicating_VBG the_DT importance_NN of_IN
+            these_DT alignments_NNS in_IN identifying_VBG new_JJ genes_NNS missed_VBN by_IN the_DT
+            
+            ab_NN initio_NN gene_NN prediction_NN
+            programs_NNS ._. An_DT additional_JJ set_NN of_IN new_JJ genes_NNS was_VBD identified_VBN
+            by_IN the_DT community_NN in_IN error_NN reports_NNS (_( 52_CD ;_: 7_CD %_NN )_) or_CC in_IN
+            GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP submissions_NNS (_( 58_CD ;_: 7_CD %_NN )_) ._. Finally_RB ,_, we_PRP
+            created_VBD 338_CD (_( 42_CD %_NN )_) new_JJ annotations_NNS in_IN Release_NNP 3_CD using_VBG
+            protein_NN homology_NN data_NNS from_IN BLASTX_NNP analysis_NN ,_, arising_VBG
+            from_IN the_DT comparison_NN of_IN translated_VBN Release_NNP 3_CD sequence_NN
+            with_IN sequence_NN of_IN other_JJ proteins_NNS in_IN 
+            Drosophila_NNP or_CC other_JJ model_NN
+            organisms_NNS ,_, in_IN the_DT absence_NN of_IN other_JJ supporting_VBG data_NNS ._.
+            Release_NNP 3_CD sequence_NN '_'' finishing_VBG '_POS had_VBD the_DT largest_JJS
+            impact_NN on_IN areas_NNS of_IN repetitive_JJ sequence_NN ,_, because_IN the_DT
+            Release_NNP 2_CD WGS_NNP sequence_NN assembly_NN often_RB collapsed_VBD these_DT
+            regions_NNS [_NN 17_CD ]_NN ._. Duplicated_NNP sequences_NNS present_JJ assembly_NN
+            challenges_NNS to_TO genome_NN sequencing_VBG efforts_NNS ;_: tandemly_RB
+            duplicated_VBN genes_NNS tend_VBP to_TO collapse_VB in_IN sequence_NN assembly_NN
+            and_CC cannot_NN be_VB annotated_JJ until_IN the_DT duplications_NNS are_VBP
+            resolved_VBN ._. Whole-genome_NNP analysis_NN of_IN the_DT Release_NNP 2_CD
+            sequence_NN suggested_VBD that_IN 
+            Drosophila_NNP has_VBZ fewer_RBR newly_RB
+            duplicated_VBN genes_NNS than_IN nematodes_NNS or_CC yeast_NN [_NN 41_CD ]_NN ._. We_PRP
+            investigated_VBD whether_IN sequence_NN finishing_VBG might_MD have_VB
+            uncovered_VBN previously_RB undiscovered_JJ duplicated_VBN genes_NNS in_IN 
+            Drosophila_NNP ._. From_IN this_DT analysis_NN ,_,
+            we_PRP found_VBD that_IN the_DT number_NN of_IN newly_RB duplicated_VBN genes_NNS is_VBZ
+            more_RBR similar_JJ to_TO 
+            C_NNP ._. elegans_NNS and_CC 
+            Saccharomyces_NNP cerevisiae_NN than_IN
+            previously_RB believed_VBN ._.
+            We_PRP measured_VBD the_DT frequency_NN of_IN newly_RB annotated_JJ
+            duplicated_VBN genes_NNS by_IN comparing_VBG each_DT of_IN the_DT transcripts_NNS
+            encoded_JJ by_IN the_DT 802_CD new_JJ genes_NNS in_IN Release_NNP 3_CD to_TO all_DT
+            Release_NNP 3_CD transcripts_NNS using_VBG the_DT BLASTN_NNP program_NN ._. Of_IN the_DT
+            new_JJ genes_NNS ,_, 124_CD (_( 15_CD %_NN )_) have_VBP duplicate_VB genes_NNS (_( 75_CD %_NN
+            identity_NN ,_, probability_NN =_SYM 1_CD ×_NN e_SYM -_: 25_CD )_) somewhere_RB in_IN the_DT
+            genome_NN (_( whereas_IN 10_CD %_NN of_IN a_DT random_JJ sample_NN of_IN 
+            Drosophila_NNP genes_NNS have_VBP duplicates_NNS
+            by_IN this_DT measure_NN )_) ._. Thirty-six_NNP new_JJ genes_NNS are_VBP in_IN repeat_NN
+            regions_NNS that_WDT were_VBD collapsed_VBN in_IN Release_NNP 2_CD and_CC have_VBP now_RB
+            been_VBN resolved_VBN ._. For_IN example_NN ,_, in_IN the_DT previously_RB annotated_JJ
+            ten-gene_JJ trypsin_NN cluster_NN on_IN chromosome_NN arm_NN 2_CD R_NN ,_, three_CD
+            new_JJ trypsin_NN genes_NNS (_( 
+            CG_NNP 30025_CD ,_, CG_NNP 30028_CD ,_, CG_NNP 30031_CD )_) have_VBP
+            been_VBN added_VBN (_( [_NN 17_CD ]_NN and_CC Figure_NN 1_LS )_) ._.
+          
+          
+            Deleted_NNP protein-coding_JJ genes_NNS
+            We_PRP rejected_VBD a_DT total_NN of_IN 345_CD Release_NNP 2_CD genes_NNS during_IN
+            the_DT Release_NNP 3_CD re-annotation_JJ (_( Table_NNP 1_LS )_) ,_, primarily_RB on_IN the_DT
+            basis_NN of_IN a_DT lack_NN of_IN supporting_VBG computational_NN or_CC
+            experimental_JJ evidence_NN (_( see_VB Materials_NNPS and_CC methods_NNS )_) ._.
+            Nineteen_NNP Release_NNP 2_CD genes_NNS were_VBD deleted_VBN because_IN they_PRP were_VBD
+            contained_VBN within_IN transposable_JJ elements_NNS ._. If_IN based_VBN solely_RB
+            on_IN computational_NN gene-prediction_JJ evidence_NN ,_, genes_NNS that_WDT
+            were_VBD less_JJR than_IN an_DT arbitrary_JJ length_NN of_IN 100_CD amino_JJ acids_NNS
+            were_VBD deleted_VBN ._. We_PRP required_VBD an_DT arbitrary_JJ length_NN of_IN 50_CD
+            amino_JJ acids_NNS for_IN all_DT annotations_NNS not_RB specifically_RB
+            supported_VBN by_IN literature_NN references_NNS (_( for_IN example_NN ,_, the_DT
+            DIRG_NNP genes_NNS [_NN 42_CD ]_NN )_) ,_, and_CC 42_CD of_IN the_DT deleted_VBN Release_NNP 2_CD
+            annotations_NNS were_VBD removed_VBN because_IN they_PRP failed_VBD to_TO meet_VB
+            this_DT criterion_NN (_( Figure_NN 2_CD a_DT ,_, inset_NN )_) ._.
+            The_DT sizes_NNS of_IN the_DT predicted_VBN protein_NN products_NNS in_IN
+            Release_NNP 2_CD and_CC Release_NNP 3_CD were_VBD compared_VBN (_( Figure_NN 2_CD a_DT )_) ,_,
+            along_IN with_IN the_DT protein_NN sizes_NNS of_IN Release_NNP 2_CD annotations_NNS
+            deleted_VBN in_IN Release_NNP 3_CD ,_, and_CC sizes_NNS of_IN proteins_NNS newly_RB added_VBD
+            in_IN Release_NNP 3_CD (_( Figure_NN 2_CD b_SYM )_) ._. When_WRB examining_VBG the_DT size_NN range_NN
+            of_IN 0_CD -_: 50_CD amino_JJ acids_NNS ,_, there_EX is_VBZ a_DT marked_VBN decrease_NN in_IN
+            Release_NNP 3_CD annotations_NNS compared_VBN to_TO Release_NNP 2_CD ,_, due_JJ to_TO the_DT
+            more_RBR stringent_JJ data_NNS requirements_NNS for_IN small_JJ annotations_NNS
+            in_IN Release_NNP 3_CD (_( Figure_NN 2_CD b_SYM ,_, inset_NN )_) ._.
+          
+        
+        
+          Structural_JJ changes_NNS to_TO gene_NN models_NNS
+          
+            Gene_NNP merges_NNS
+            Evidence_NN supporting_VBG the_DT merger_NN of_IN gene_NN models_NNS came_VBD
+            mainly_RB from_IN the_DT alignment_NN of_IN full-length_JJ cDNA_NN sequences_NNS
+            and_CC ,_, to_TO a_DT lesser_JJR extent_NN ,_, from_IN protein_NN homology_NN
+            evidence_NN ._. Merges_NNP based_VBD solely_RB on_IN BLASTX_NNP similarity_NN were_VBD
+            more_RBR difficult_JJ ,_, as_IN the_DT exact_JJ exon-intron_JJ structure_NN of_IN
+            the_DT merged_VBN model_NN was_VBD not_RB experimentally_RB indicated_VBD ._. A_DT
+            total_NN of_IN 1_CD ,_, 351_CD Release_NNP 2_CD genes_NNS were_VBD merged_VBN to_TO form_VB 602_CD
+            (_( 5_CD %_NN of_IN total_JJ )_) Release_NNP 3_CD genes_NNS ._. Sometimes_RB the_DT original_JJ
+            predictions_NNS were_VBD spaced_JJ quite_RB far_RB apart_RB in_IN the_DT genome_NN ,_,
+            a_DT probable_JJ reason_NN that_IN the_DT gene_NN prediction_NN algorithm_NN (_( s_VBZ )_)
+            separated_JJ the_DT exons_NNS ._. For_IN example_NN ,_, multiple_JJ ESTs_NNP support_NN
+            a_DT merge_VB of_IN 
+            CG_NNP 14409_CD and_CC the_DT 
+            Flotillin-_NNP 2_CD gene_NN (_( 
+            Flo-_NNP 2_CD or_CC 
+            CG_NNP 11547_CD )_) ,_, adding_VBG two_CD 5_CD '_POS exons_NNS
+            almost_RB 80_CD kb_NN away_RB from_IN the_DT Release_NNP 2_CD annotation_NN of_IN the_DT 
+            Flo-_NNP 2_CD gene_NN (_( Figure_NN 3_LS )_) ._. The_DT new_JJ 
+            Flo-_NNP 2_CD transcript_NN encodes_NNS a_DT
+            protein_NN with_IN an_DT additional_JJ 50_CD amino_JJ acids_NNS at_IN its_PRP$ amino_JJ
+            terminus_JJ ._.
+          
+          
+            Gene_NNP splits_NNS
+            Gene_NNP model_NN splits_NNS were_VBD often_RB necessitated_VBN by_IN the_DT
+            facts_NNS that_IN gene-prediction_JJ programs_NNS such_JJ as_IN Genie_NNP and_CC
+            GENSCAN_NNP can_MD string_VB together_RB genes_NNS that_WDT lie_VBP close_RB to_TO
+            each_DT other_JJ and_CC do_VBP not_RB resolve_VB nested_JJ genes_NNS ._. Of_IN the_DT
+            Release_NNP 2_CD genes_NNS ,_, 322_CD were_VBD split_VBN to_TO form_VB 675_CD (_( 5_CD %_NN of_IN
+            total_JJ )_) Release_NNP 3_CD genes_NNS ._. For_IN example_NN ,_, the_DT annotated_JJ gene_NN
+            
+            CG_NNP 6645_CD ,_, with_IN 5_CD exons_NNS in_IN Release_NNP
+            2_CD (_( Figure_NN 4_LS )_) ,_, appears_VBZ to_TO have_VB been_VBN based_VBN on_IN a_DT Genie_NNP
+            prediction_NN (_( note_NN that_IN GENSCAN_NNP had_VBD predicted_VBN two_CD
+            separate_JJ genes_NNS )_) ._. EST_NN evidence_NN and_CC BLASTX_NNP homology_NN to_TO
+            other_JJ fly_NN proteins_NNS indicated_VBD that_IN this_DT gene_NN should_MD be_VB
+            split_VBN into_IN two_CD three-exon_JJ genes_NNS ,_, 
+            CG_NNP 32054_CD and_CC 
+            CG_NNP 32053_CD ._. One_CD 5_CD '_POS UTR_NNP exon_NN and_CC one_CD
+            protein-coding_JJ exon_NN in_IN 
+            CG_NNP 32053_CD were_VBD missed_VBN by_IN both_DT Genie_NNP
+            and_CC GENSCAN_NNP ._. Thus_RB ,_, neither_DT Genie_NNP nor_CC GENSCAN_NNP correctly_RB
+            predicted_VBD the_DT structure_NN of_IN these_DT two_CD genes_NNS ;_: each_DT
+            correctly_RB predicted_VBN aspects_NNS of_IN the_DT gene_NN models_NNS ,_, but_CC EST_NNP
+            and_CC BLASTX_NNP data_NNS were_VBD necessary_JJ to_TO accurately_RB determine_VB
+            the_DT structure_NN of_IN the_DT two_CD genes_NNS ._.
+          
+          
+            Gene_NNP splits_NNS /_NN merges_NNS
+            Gene_NNP splits_NNS /_NN merges_NNS were_VBD defined_VBN as_IN changes_NNS involving_VBG
+            more_JJR than_IN one_CD gene_NN in_IN both_DT Release_NNP 2_CD and_CC 3_CD ._. While_IN not_RB
+            common_JJ ,_, splits_NNS /_NN merges_NNS are_VBP interesting_JJ in_IN that_IN they_PRP
+            involve_VBP simultaneous_JJ restructuring_NN of_IN multiple_JJ Release_NNP
+            2_CD annotations_NNS ._. One_CD notable_JJ example_NN is_VBZ the_DT split_NN of_IN 
+            CG_NNP 8278_CD into_IN the_DT 
+            CG_NNP 30350_CD and_CC 
+            sns_NNS annotations_NNS (_( Figure_NN 5_LS )_) ._. In_IN
+            this_DT instance_NN ,_, BLASTX_NNP ,_, GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP ,_, and_CC cDNA_NN
+            records_NNS indicate_VBP that_IN the_DT 3_CD '_POS half_NN of_IN 
+            CG_NNP 8278_CD should_MD be_VB split_VBN off_RP as_IN a_DT
+            separate_JJ gene_NN model_NN (_( 
+            CG_NNP 30350_CD )_) ,_, while_IN the_DT
+            GenBank_NNP :_: AF_NNP 254867_CD record_NN indicates_VBZ that_IN the_DT 5_CD '_POS exon_NN of_IN 
+            CG_NNP 8278_CD plus_CC six_CD other_JJ Release_NNP 2_CD
+            annotations_NNS should_MD be_VB merged_VBN into_IN the_DT extensive_JJ 
+            sns_NNS annotation_NN ._. There_EX were_VBD 93_CD
+            cases_NNS in_IN which_WDT Release_NNP 2_CD annotations_NNS suffered_VBD a_DT
+            reassignment_NN of_IN exons_NNS more_RBR complex_JJ than_IN a_DT simple_JJ gene_NN
+            split_NN or_CC merge_VB to_TO generate_VB Release_NNP 3_CD annotations_NNS ._.
+          
+        
+        
+          Complex_JJ gene_NN models_NNS
+          
+            Nested_NNP genes_NNS
+            The_DT phenomenon_NN of_IN genes_NNS within_IN genes_NNS ,_, in_IN which_WDT a_DT
+            gene_NN is_VBZ included_VBN within_IN the_DT intron_NN of_IN another_DT gene_NN ,_, is_VBZ
+            common_JJ ._. In_IN the_DT analysis_NN of_IN the_DT 2_CD ._. 9_CD Mb_NNP 
+            Adh_NNP region_NN of_IN 
+            Drosophila_NNP ,_, the_DT frequency_NN of_IN
+            nested_JJ genes_NNS was_VBD reported_VBN to_TO be_VB approximately_RB 7_CD %_NN [_NN 44_CD ]_NN ._.
+            In_IN extending_VBG this_DT analysis_NN to_TO the_DT entire_JJ euchromatin_NN ,_,
+            we_PRP find_VBP that_IN 7_CD ._. 5_CD %_NN (_( 1_CD ,_, 038_CD )_) of_IN all_DT Release_NNP 3_CD genes_NNS ,_,
+            including_VBG non-coding_JJ RNAs_NNP ,_, are_VBP included_VBN within_IN the_DT
+            introns_NNS of_IN other_JJ genes_NNS ._. Of_IN the_DT 879_CD nested_JJ
+            protein-coding_JJ genes_NNS ,_, the_DT majority_NN (_( 574_CD )_) are_VBP
+            transcribed_JJ from_IN the_DT opposite_JJ strand_NN of_IN the_DT including_VBG
+            gene_NN ._. We_PRP observed_VBD 26_CD cases_NNS in_IN which_WDT the_DT exons_NNS and_CC
+            introns_NNS of_IN a_DT gene_NN pair_NN are_VBP interleaved_JJ ._. Transposons_NNP may_MD
+            also_RB be_VB located_VBN within_IN the_DT introns_NNS of_IN genes_NNS ;_: we_PRP
+            observed_VBD 431_CD such_JJ cases_NNS ._.
+          
+          
+            Overlapping_NNP genes_NNS
+            We_PRP analyzed_VBD the_DT mRNAs_NNS predicted_VBD for_IN neighboring_VBG
+            genes_NNS to_TO find_VB those_DT transcripts_NNS that_WDT share_NN common_JJ
+            non-protein-coding_JJ genomic_JJ sequence_NN ._. About_IN 15_CD %_NN of_IN
+            annotated_JJ genes_NNS (_( 2_CD ,_, 054_CD )_) involve_VB the_DT overlap_VB of_IN mRNAs_NNS on_IN
+            opposite_JJ strands_NNS ._. Some_DT of_IN these_DT involve_VB overlapping_VBG
+            messages_NNS that_WDT have_VBP been_VBN previously_RB described_VBN (_( for_IN
+            example_NN ,_, 
+            Dopa_NNP decarboxylase_NN and_CC 
+            CG_NNP 10561_CD [_NN 45_CD ]_NN )_) ;_: however_RB ,_, the_DT vast_JJ
+            majority_NN were_VBD not_RB previously_RB known_VBN to_TO overlap_VB ._.
+            Complementary_NNP sequences_NNS between_IN distinct_JJ RNAs_NNP from_IN
+            overlapping_VBG genes_NNS on_IN opposite_JJ strands_NNS have_VBP previously_RB
+            been_VBN reported_VBN in_IN eukaryotes_NNS and_CC have_VBP been_VBN implicated_VBN in_IN
+            regulating_VBG gene_NN expression_NN (_( for_IN reviews_NNS see_VBP [_NN 46_CD ,_, 47_CD ]_NN )_) ._.
+            For_IN example_NN ,_, the_DT complementary_JJ sequence_NN shared_VBN between_IN 
+            Dopa_NNP decarboxylase_NN and_CC 
+            CG_NNP 10561_CD is_VBZ thought_VBN to_TO be_VB involved_VBN
+            in_IN regulating_VBG the_DT levels_NNS of_IN these_DT transcripts_NNS [_NN 45_CD ]_NN ._.
+            The_DT large_JJ number_NN of_IN such_JJ overlapping_VBG transcripts_NNS
+            identified_VBN here_RB raises_VBZ the_DT possibility_NN that_IN antisense_NN
+            interactions_NNS may_MD not_RB be_VB an_DT uncommon_JJ mechanism_NN for_IN
+            regulating_VBG gene_NN expression_NN in_IN 
+            Drosophila_NNP ._.
+            We_PRP were_VBD surprised_VBN to_TO find_VB over_IN 60_CD cases_NNS of_IN
+            overlapping_VBG genes_NNS on_IN the_DT same_JJ strand_NN ,_, for_IN which_WDT
+            cDNA_NN /_NN EST_NNP data_NNS indicate_VBP that_IN the_DT 3_CD '_POS UTR_NNP of_IN the_DT upstream_JJ
+            gene_NN overlaps_NNS the_DT 5_CD '_POS UTR_NNP of_IN the_DT downstream_JJ gene_NN ._. In_IN
+            some_DT instances_NNS ,_, the_DT 3_CD '_POS UTR_NNP of_IN the_DT upstream_JJ gene_NN extends_VBZ
+            past_JJ the_DT postulated_JJ translation_NN start_NN of_IN the_DT downstream_JJ
+            gene_NN ._. One_CD example_NN of_IN such_JJ an_DT overlapping_VBG model_NN is_VBZ 
+            CG_NNP 9455_CD and_CC 
+            Spn_NNP 1_CD (_( CG_NNP 9456_CD )_) ,_, tandem_JJ genes_NNS
+            encoding_VBG serine_NN protease_NN inhibitors_NNS (_( Figure_NN 6_CD )_) ._. The_DT two_CD
+            gene_NN models_NNS are_VBP individually_RB supported_VBN by_IN a_DT variety_NN of_IN
+            BLASTX_NNP data_NNS as_RB well_RB as_IN full-insert_JJ cDNA_NN sequences_NNS ._.
+            Interestingly_RB ,_, the_DT 5_CD '_POS exon_NN of_IN the_DT DGC_NNP cDNA_NN clone_NN
+            covering_VBG the_DT 
+            Spn_NNP 1_CD gene_NN (_( AT_NNP 24862_CD )_) is_VBZ entirely_RB
+            included_VBN in_IN the_DT 3_CD '_POS -_: most_JJS exon_NN of_IN the_DT 
+            CG_NNP 9455_CD DGC_NNP cDNA_NN clone_NN (_( GH_NNP 04125_CD )_) ._.
+            The_DT existence_NN of_IN overlapping_VBG genes_NNS raises_VBZ many_JJ
+            questions_NNS ._. Are_VBP such_JJ pairs_NNS of_IN genes_NNS typically_RB
+            co-regulated_JJ ?_. Where_WRB are_VBP the_DT transcriptional_NN regulatory_JJ
+            elements_NNS for_IN the_DT downstream_JJ gene_NN ?_. What_WP are_VBP the_DT
+            structural_JJ constraints_NNS on_IN the_DT overlapping_VBG
+            sequences_NNS ?_.
+          
+          
+            Alternatively_RB transcribed_JJ genes_NNS
+            One_CD mechanism_NN for_IN increasing_VBG potential_JJ protein_NN and_CC
+            regulatory_JJ diversity_NN is_VBZ through_IN the_DT production_NN of_IN
+            alternative_JJ transcripts_NNS ._. Approximately_RB 20_CD %_NN of_IN Release_NNP 3_CD
+            genes_NNS have_VBP more_JJR than_IN one_CD predicted_VBD transcript_NN ,_, and_CC this_DT
+            is_VBZ almost_RB certainly_RB an_DT underestimate_NN ._. Many_JJ instances_NNS of_IN
+            internal_JJ alternative_NN splicing_VBG as_RB well_RB as_IN alternative_JJ
+            polyadenylation_NN will_MD have_VB been_VBN missed_VBN ,_, as_IN our_PRP$ dataset_NN
+            of_IN cDNA_NN sequences_NNS contained_VBD many_JJ more_JJR 5_CD '_POS ESTs_NNP than_IN 3_CD '_POS
+            ESTs_NNP or_CC complete_JJ cDNAs_NNS ._. As_IN cDNA_NN collections_NNS are_VBP
+            expanded_VBN ,_, including_VBG those_DT representing_VBG specific_JJ stages_NNS ,_,
+            tissues_NNS ,_, and_CC cell_NN types_NNS ,_, additional_JJ genes_NNS with_IN multiple_JJ
+            transcripts_NNS and_CC additional_JJ protein_NN species_NNS produced_VBN by_IN
+            alternative_NN splicing_VBG will_MD undoubtedly_RB be_VB identified_VBN ._.
+            Despite_IN likely_JJ underestimation_NN ,_, the_DT level_NN of_IN
+            alternative_NN splicing_VBG that_WDT was_VBD observed_VBN clearly_RB
+            illustrates_VBZ that_DT alternative_NN splicing_VBG is_VBZ an_DT important_JJ
+            mechanism_NN for_IN generating_NN transcript_NN diversity_NN in_IN 
+            Drosophila_NNP (_( see_VB Supplementary_NNP
+            Table_NNP 2_CD in_IN the_DT additional_JJ data_NN files_NNS )_) ._.
+            Alternative_NNP splicing_VBG creates_VBZ opportunities_NNS for_IN
+            diversity_NN both_DT at_IN the_DT level_NN of_IN gene_NN regulation_NN and_CC of_IN
+            protein_NN diversity_NN ._. In_IN Release_NNP 3_CD ,_, 35_CD %_NN of_IN the_DT 2_CD ,_, 729_CD genes_NNS
+            encoding_VBG multiple_JJ transcripts_NNS generate_VBP only_RB one_CD protein_NN
+            product_NN ;_: the_DT transcripts_NNS differ_VBP only_RB in_IN their_PRP$ UTRs_NNP ._.
+            Very_RB commonly_RB ,_, these_DT alternative_JJ transcripts_NNS vary_VBP in_IN
+            the_DT location_NN of_IN 5_CD '_POS non-coding_JJ exons_NNS ,_, suggesting_VBG the_DT use_NN
+            of_IN alternative_JJ promoters_NNS and_CC offering_VBG the_DT possibility_NN
+            of_IN differential_NN regulation_NN ._. The_DT other_JJ 65_CD %_NN of_IN genes_NNS with_IN
+            alternative_JJ transcripts_NNS encode_NN two_CD or_CC more_JJR protein_NN
+            products_NNS ,_, indicating_VBG that_DT alternative_NN splicing_VBG
+            generates_VBZ considerable_JJ protein_NN diversity_NN in_IN 
+            Drosophila_NNP ._.
+            A_DT large_JJ number_NN of_IN related_VBN proteins_NNS can_MD be_VB produced_VBN
+            from_IN a_DT single_JJ gene_NN by_IN the_DT simple_JJ substitution_NN of_IN a_DT
+            single_JJ domain_NN ._. This_DT mechanism_NN has_VBZ been_VBN taken_VBN to_TO an_DT
+            extreme_JJ level_NN in_IN the_DT case_NN of_IN 
+            mod_NN (_( mdg_NN 4_LS )_) ,_, which_WDT produces_VBZ at_IN
+            least_JJS 29_CD distinct_JJ transcripts_NNS that_WDT share_NN 5_CD '_POS exons_NNS ,_, but_CC
+            are_VBP alternatively_RB spliced_JJ to_TO an_DT array_NN of_IN different_JJ 3_CD '_POS
+            exons_NNS [_NN 48_CD ,_, 49_CD ]_NN ._. Remarkably_NNP ,_, eight_CD of_IN these_DT transcripts_NNS
+            appear_VBP to_TO be_VB generated_VBN by_IN a_DT 
+            trans_NNS -_: splicing_VBG mechanism_NN ,_, using_VBG
+            variable_JJ 3_CD '_POS exons_NNS encoded_JJ on_IN the_DT opposite_JJ strand_NN ._.
+            (_( Seven_CD 
+            trans_NNS -_: spliced_JJ variants_NNS were_VBD
+            previously_RB reported_VBN [_NN 48_CD ,_, 49_CD ]_NN ;_: our_PRP$ analysis_NN suggests_VBZ
+            eight_CD ._. )_) Although_IN we_PRP did_VBD not_RB find_VB any_DT further_JJ examples_NNS
+            of_IN 
+            trans_NNS -_: splicing_VBG ,_, we_PRP did_VBD find_VB that_IN
+            a_DT similar_JJ gene_NN ,_, 
+            lola_NN ,_, generates_VBZ at_IN least_JJS 21_CD
+            alternative_JJ transcripts_NNS (_( including_VBG four_CD previously_RB
+            described_VBD [_NN 50_CD ]_NN )_) ._. The_DT many_JJ 
+            lola_NN transcripts_NNS also_RB share_VBP 5_CD '_POS
+            exons_NNS ,_, but_CC contain_VB one_CD of_IN an_DT array_NN of_IN different_JJ 3_CD '_POS
+            exons_NNS ._. Both_DT 
+            lola_NN and_CC 
+            mod_NN (_( mdg_NN 4_LS )_) encode_NN families_NNS of_IN
+            specific_JJ RNA_NNP polymerase_NN II_NNP transcription_NN factors_NNS that_WDT
+            include_VBP a_DT BTB_NNP /_NN POZ_NNP dimerization_NN domain_NN near_IN each_DT amino_JJ
+            terminus_JJ [_NN 50_CD ,_, 51_CD ]_NN ._. 
+            mod_NN (_( mdg_NN 4_LS )_) has_VBZ been_VBN implicated_VBN in_IN
+            a_DT range_NN of_IN cellular_JJ and_CC developmental_NN processes_VBZ ,_,
+            including_VBG chromatin_NN insulator_NN functions_NNS [_NN 52_CD ]_NN and_CC
+            apoptosis_NNS [_NN 53_CD ]_NN ,_, and_CC it_PRP has_VBZ been_VBN suggested_VBN that_IN its_PRP$
+            many_JJ different_JJ isoforms_NNS underlie_VB the_DT pleiotropic_JJ nature_NN
+            of_IN this_DT gene_NN [_NN 49_CD ]_NN ._.
+            Alternative_NNP splicing_VBG can_MD produce_VB two_CD (_( or_CC more_JJR )_)
+            distinct_JJ non-overlapping_JJ protein_NN products_NNS from_IN a_DT single_JJ
+            pre-m_JJ RNA_NNP species_NNS ;_: we_PRP identified_VBD 12_CD such_JJ cases_NNS (_( for_IN
+            example_NN ,_, 
+            Vanaso_NNP and_CC α-_NN 
+            Spec_NNP ,_, see_VB Figure_NN 7_CD )_) ._. The_DT mRNAs_NNS
+            produced_VBN most_RBS commonly_RB share_NN 5_CD '_POS UTR_NNP sequences_NNS ,_, but_CC may_MD
+            also_RB share_VB 3_CD '_POS UTR_NNP sequences_NNS ._. FlyBase_NNP defines_VBZ complexes_NNS
+            of_IN this_DT type_NN as_IN two_CD separate_JJ genes_NNS ,_, since_IN two_CD
+            non-overlapping_JJ protein_NN products_NNS are_VBP produced_VBN ._. Although_IN
+            other_JJ groups_NNS sometimes_RB describe_VBP such_JJ genes_NNS as_IN
+            dicistronic_JJ (_( since_IN the_DT unprocessed_JJ transcript_NN is_VBZ
+            dicistronic_JJ )_) ,_, we_PRP do_VBP not_RB include_VB this_DT type_NN in_IN our_PRP$
+            categorization_NN of_IN dicistronic_JJ genes_NNS (_( see_VB below_IN )_) ._. The_DT
+            component_NN coding_VBG regions_NNS are_VBP resolved_VBN on_IN separate_JJ
+            mRNAs_NNS ,_, and_CC thus_RB internal_JJ translation_NN initiation_NN is_VBZ not_RB
+            required_VBN ._. We_PRP view_VBP these_DT cases_NNS as_IN one_CD extreme_JJ along_IN a_DT
+            continuum_NN of_IN protein_NN diversity_NN created_VBN by_IN alternative_NN
+            splicing_VBG ._.
+          
+          
+            Dicistronic_NNP genes_NNS
+            Examples_NNS of_IN dicistronic_JJ transcripts_NNS have_VBP been_VBN
+            previously_RB reported_VBN in_IN 
+            Drosophila_NNP [_NN 54_CD ,_, 55_CD ,_, 56_CD ,_, 57_CD ,_, 58_CD ,_,
+            59_CD ,_, 60_CD ,_, 61_CD ]_NN ._. Our_PRP$ results_NNS confirm_VBP that_RB ,_, while_IN not_RB
+            common_JJ ,_, numerous_JJ examples_NNS of_IN apparent_JJ dicistronic_JJ
+            transcripts_NNS are_VBP encountered_VBN in_IN 
+            Drosophila_NNP ._. We_PRP limit_VBP the_DT term_NN
+            '_'' dicistronic_JJ '_POS to_TO genes_NNS that_WDT meet_VBP the_DT following_JJ
+            criteria_NNS :_: two_CD distinct_JJ and_CC non-overlapping_JJ coding_VBG
+            regions_NNS contained_VBD on_IN a_DT single_JJ processed_VBN mRNA_NN ,_, requiring_VBG
+            internal_JJ initiation_NN of_IN translation_NN of_IN the_DT downstream_JJ
+            CDS_NNP ._. In_IN order_NN to_TO categorize_NN a_DT transcript_NN as_IN
+            dicistronic_JJ ,_, we_PRP required_VBD that_IN each_DT CDS_NNP exceed_VB 50_CD amino_JJ
+            acids_NNS in_IN length_NN and_CC show_VB some_DT similarity_NN to_TO known_VBN
+            proteins_NNS ._. The_DT Release_NNP 3_CD annotation_NN contains_VBZ 31_CD gene_NN
+            pairs_NNS that_WDT can_MD be_VB described_VBN as_IN dicistronic_JJ by_IN these_DT
+            criteria_NNS (_( Figure_NN 8_CD ,_, and_CC see_VB Supplementary_NNP Table_NNP 3_CD in_IN
+            additional_JJ data_NNS files_NNS )_) ._. This_DT includes_VBZ 12_CD cases_NNS for_IN
+            which_WDT the_DT dicistronic_JJ transcript_NN is_VBZ represented_VBN by_IN a_DT
+            single_JJ cDNA_NN ._. There_EX are_VBP 17_CD additional_JJ pairs_NNS ,_, denoted_JJ as_IN
+            putative_JJ ,_, for_IN which_WDT there_EX is_VBZ insufficient_JJ BLASTX_NNP
+            evidence_NN to_TO support_VB both_DT ORFs_NNP in_IN a_DT dicistronic_JJ gene_NN
+            model_NN (_( see_VB Supplementary_NNP Table_NNP 3_LS )_) ._. Since_IN the_DT
+            determination_NN of_IN genes_NNS as_IN dicistronic_JJ requires_VBZ multiple_JJ
+            classes_NNS of_IN data_NNS to_TO confirm_VB the_DT transcript_NN structure_NN and_CC
+            validate_NN the_DT coding_VBG regions_NNS ,_, there_EX are_VBP undoubtedly_RB
+            additional_JJ dicistronic_JJ genes_NNS yet_RB to_TO be_VB uncovered_VBN
+            throughout_IN the_DT genome_NN ._.
+            For_IN many_JJ of_IN the_DT predicted_VBN dicistronic_JJ genes_NNS (_( 31_CD /_NN 48_CD )_) ,_,
+            there_EX is_VBZ evidence_NN supporting_VBG alternative_NN monocistronic_JJ
+            transcript_NN (_( s_VBZ )_) for_IN either_DT the_DT upstream_RB or_CC downstream_JJ
+            CDS_NNP ,_, or_CC for_IN both_DT ._. This_DT includes_VBZ 
+            Mosc_NNP 1_CD A_DT +_NN Mosc_NNP 1_CD B_NNP ,_, for_IN which_WDT the_DT
+            monocistronic_JJ transcript_NN encodes_NNS a_DT fusion_NN protein_NN
+            encompassing_VBG both_DT CDSs_NNP [_NN 59_CD ]_NN ._. In_IN some_DT cases_VBZ the_DT
+            dicistronic_JJ form_NN may_MD be_VB less_RBR prevalent_JJ than_IN the_DT
+            monocistronic_JJ forms_NNS :_: it_PRP has_VBZ been_VBN estimated_VBN that_IN the_DT
+            dicistronic_JJ 
+            Adh_NNP +_NN Adhr_NNP transcript_NN is_VBZ only_RB 5_CD %_NN as_RB
+            abundant_JJ as_IN that_DT of_IN the_DT 
+            Adh_NNP monocistronic_JJ transcripts_NNS [_NN
+            57_CD ]_NN ._.
+            Translation_NN of_IN the_DT second_JJ CDS_NNP of_IN a_DT dicistronic_JJ
+            transcript_NN requires_VBZ that_DT initiation_NN of_IN translation_NN
+            occur_VB at_IN an_DT internal_JJ site_NN ._. There_EX are_VBP two_CD proposed_VBN
+            mechanisms_NNS for_IN the_DT initiation_NN of_IN internal_JJ translation_NN ._.
+            One_CD mechanism_NN is_VBZ that_IN internal_JJ initiation_NN occurs_VBZ by_IN
+            partial_JJ disassembly_RB of_IN the_DT ribosome_NN at_IN the_DT termination_NN
+            of_IN translation_NN of_IN the_DT first_JJ CDS_NNP ,_, followed_VBN by_IN continued_VBD
+            scanning_VBG by_IN the_DT 40_CD S_NNP ribosomal_JJ subunit_NN [_NN 62_CD ]_NN ._. The_DT
+            following_VBG conditions_NNS are_VBP thought_VBN to_TO be_VB criteria_NNS for_IN the_DT
+            ribosomal_JJ scanning_VBG mechanism_NN :_: an_DT absence_NN of_IN any_DT ATG_NNP
+            codons_NNS in_IN the_DT intercistronic_JJ region_NN ,_, an_DT intercistronic_JJ
+            region_NN of_IN 15_CD to_TO 78_CD bp_NN ,_, and_CC an_DT optimized_JJ consensus_NN
+            translation_NN start_NN site_NN for_IN the_DT second_JJ CDS_NNP ._. We_PRP assessed_VBD
+            the_DT sizes_NNS of_IN intercistronic_JJ regions_NNS and_CC the_DT number_NN of_IN
+            ATGs_NNP in_IN these_DT regions_NNS ,_, and_CC found_VBD that_IN there_EX are_VBP seven_CD
+            pairs_NNS of_IN dicistronic_JJ genes_NNS that_WDT appear_VBP to_TO conform_VB to_TO
+            this_DT pattern_NN (_( indicated_VBD in_IN Supplementary_NNP Table_NNP 3_LS )_) ._. The_DT
+            majority_NN of_IN dicistronic_JJ cases_NNS clearly_RB do_VBP not_RB conform_VB to_TO
+            such_JJ a_DT model_NN of_IN partial_JJ ribosome_NN disassembly_RB and_CC
+            continued_VBD scanning_VBG ._. In_IN four_CD cases_NNS ,_, the_DT intercistronic_JJ
+            region_NN is_VBZ less_JJR than_IN 4_CD bp_NN ._. However_RB ,_, most_JJS of_IN the_DT
+            annotated_JJ dicistronic_JJ pairs_NNS are_VBP separated_VBN by_IN several_JJ
+            hundred_CD base_NN pairs_NNS ,_, and_CC the_DT separation_NN can_MD be_VB as_RB much_JJ
+            as_IN 4_CD ._. 5_CD kb_NN ._. In_IN these_DT longer_JJR intercistronic_JJ regions_NNS ,_,
+            there_EX may_MD be_VB multiple_JJ ATG_NNP codons_NNS before_IN the_DT second_JJ
+            translation_NN start_NN site_NN ._. A_DT mechanism_NN of_IN translation_NN
+            initiation_NN utilizing_VBG an_DT internal_JJ ribosome_NN entry_NN site_NN
+            (_( IRES_NNP [_NN 63_CD ]_NN )_) appears_VBZ a_DT better_JJR explanation_NN for_IN these_DT
+            cases_NNS ._. Oh_UH 
+            et_CC al_NN ._. [_NN 64_CD ]_NN have_VBP hypothesized_VBN
+            that_IN certain_JJ 
+            Drosophila_NNP genes_NNS with_IN long_JJ 5_CD '_POS
+            UTRs_NNP might_MD be_VB translated_VBN via_IN internal_JJ ribosome_NN entry_NN ._.
+            If_IN this_DT is_VBZ the_DT case_NN ,_, translation_NN of_IN the_DT second_JJ CDS_NNP
+            within_IN a_DT dicistronic_JJ transcript_NN may_MD be_VB effected_JJ by_IN the_DT
+            same_JJ initiation_NN mechanism_NN ._.
+          
+        
+        
+          Assessment_NNP of_IN Release_NNP 3_CD quality_NN
+          
+            Did_VBD we_PRP miss_VBP genes_NNS ?_.
+            Andrews_NNP 
+            et_CC al_NN ._. [_NN 16_CD ]_NN suggested_VBD that_IN the_DT
+            number_NN of_IN genes_NNS in_IN 
+            Drosophila_NNP might_MD be_VB a_DT severe_JJ
+            underestimate_NN ,_, based_VBN on_IN 7_CD ,_, 297_CD testes_NNS EST_NNP sequences_NNS they_PRP
+            generated_VBD and_CC aligned_VBN to_TO the_DT annotated_JJ genome_NN ._. However_RB ,_,
+            using_VBG their_PRP$ data_NNS ,_, as_RB well_RB as_IN 23_CD ,_, 087_CD additional_JJ
+            testes-derived_JJ ESTs_NNP [_NN 29_CD ]_NN ,_, we_PRP predict_VBP a_DT similar_JJ number_NN
+            of_IN genes_NNS in_IN Release_NNP 3_CD as_IN in_IN previous_JJ releases_NNS ._. The_DT more_RBR
+            likely_JJ explanation_NN for_IN their_PRP$ results_NNS is_VBZ that_IN 5_CD '_POS exons_NNS ,_,
+            and_CC not_RB genes_NNS ,_, were_VBD under-predicted_JJ in_IN 
+            Drosophila_NNP ,_, since_IN there_EX is_VBZ EST_NNP
+            evidence_NN for_IN testes-specific_JJ promoters_NNS and_CC transcripts_NNS
+            [_NN 29_CD ]_NN ._. In_IN most_JJS cases_NNS ,_, the_DT testes_NNS ESTs_NNP did_VBD not_RB align_VBP to_TO
+            Release_NNP 1_CD genes_NNS because_IN only_RB the_DT downstream_JJ CDS_NNP had_VBD
+            previously_RB been_VBN annotated_JJ for_IN those_DT genes_NNS ,_, whereas_IN in_IN
+            Release_NNP 3_CD the_DT UTRs_NNP that_WDT match_VBP the_DT testes_NNS ESTs_NNP are_VBP
+            annotated_JJ ._.
+            Gopal_NNP 
+            et_CC al_NN ._. [_NN 15_CD ]_NN reported_VBD 1_CD ,_, 042_CD
+            novel_NN genes_NNS that_WDT were_VBD not_RB included_VBN in_IN the_DT Release_NNP 2_CD
+            annotation_NN ._. After_IN completing_VBG our_PRP$ re-annotation_JJ ,_, we_PRP
+            compared_VBD this_DT set_JJ of_IN 1_CD ,_, 042_CD genes_NNS to_TO our_PRP$ data_NNS ._. We_PRP found_VBD
+            that_IN 75_CD %_NN of_IN their_PRP$ predicted_VBD genes_NNS mapped_VBN to_TO
+            euchromatin_NN ,_, 16_CD %_NN mapped_VBN to_TO heterochromatin_NN ,_, 7_CD %_NN mapped_VBN
+            within_IN transposable_JJ elements_NNS ,_, and_CC 1_CD %_NN could_MD not_RB be_VB found_VBN
+            in_IN the_DT Release_NNP 3_CD genomic_JJ sequence_NN ._. Of_IN the_DT 75_CD %_NN that_WDT
+            mapped_VBN to_TO euchromatin_NN ,_, 66_CD %_NN (_( 520_CD )_) do_VBP match_VB Release_NNP 3_CD
+            annotations_NNS ._. The_DT remaining_VBG 34_CD %_NN did_VBD not_RB match_VB Release_NNP 3_CD
+            annotations_NNS ,_, leading_VBG to_TO the_DT possibility_NN that_IN some_DT or_CC
+            all_DT of_IN these_DT may_MD represent_VB novel_NN genes_NNS ._. Incorporating_NNP
+            their_PRP$ methods_NNS (_( threading_VBG GENSCAN_NNP predictions_NNS to_TO look_VB
+            for_IN structural_JJ homology_NN )_) into_IN our_PRP$ computational_NN
+            approach_NN may_MD uncover_VB additional_JJ missed_VBD genes_NNS ._.
+            One_CD way_NN to_TO address_VB the_DT quality_NN of_IN the_DT Release_NNP 3_CD
+            annotations_NNS is_VBZ by_IN comparative_JJ sequence_NN analysis_NN ._. In_IN an_DT
+            accompanying_VBG paper_NN ,_, C_NNP ._. Bergman_NNP 
+            et_CC al_NN ._. [_NN 65_CD ]_NN surveyed_VBD sequence_NN
+            conservation_NN in_IN approximately_RB 0_CD ._. 5_CD Mb_NNP of_IN the_DT 
+            D_NNP ._. melanogaster_NN genome_NN containing_VBG
+            81_CD genes_NNS using_VBG comparative_JJ data_NNS from_IN four_CD 
+            Drosophila_NNP species_NNS (_( 
+            D_NNP ._. erecta_NN ,_, D_NNP ._. pseudoobscura_NN ,_, D_NNP ._.
+            willistoni_NN and_CC 
+            D_NNP ._. littoralis_NNS )_) ._. Their_PRP$ comparison_NN
+            to_TO our_PRP$ 
+            D_NNP ._. melanogaster_NN annotations_NNS
+            detected_VBD no_DT genes_NNS conserved_JJ in_IN other_JJ species_NNS that_WDT were_VBD
+            missed_VBN in_IN Release_NNP 3_CD [_NN 65_CD ]_NN ._.
+            Other_JJ genes_NNS likely_JJ to_TO be_VB missed_VBN are_VBP genes_NNS with_IN small_JJ
+            ORFs_NNP (_( because_IN of_IN the_DT arbitrary_JJ length_NN cutoffs_NNS we_PRP used_VBD ,_,
+            see_VB Materials_NNPS and_CC methods_NNS )_) ,_, and_CC genes_NNS expressed_VBD
+            transiently_RB during_IN development_NN ,_, at_IN very_RB low_JJ levels_NNS ,_,
+            and_CC /_NN or_CC in_IN cells_NNS and_CC tissues_NNS not_RB represented_VBN by_IN the_DT DGC_NNP
+            cDNA_NN libraries_NNS ._. Future_NNP DGC_NNP cDNA_NN clones_NNS will_MD be_VB
+            generated_VBN by_IN directed_VBN screening_NN of_IN cDNA_NN libraries_NNS with_IN
+            probes_NNS matching_VBG predicted_VBN exons_NNS [_NN 30_CD ]_NN ,_, and_CC cDNAs_NNS
+            selected_VBN during_IN the_DT re-annotation_JJ process_NN to_TO represent_VB
+            alternative_JJ transcripts_NNS not_RB currently_RB in_IN the_DT DGC_NNP ._.
+          
+          
+            Reliance_NNP on_IN gene_NN prediction_NN data_NNS versus_CC cDNA_NN
+            data_NNS
+            Of_IN the_DT final_JJ set_NN of_IN annotations_NNS ,_, 93_CD %_NN contain_VB
+            sequences_NNS that_WDT are_VBP present_JJ in_IN Genie-predicted_NNP exons_NNS and_CC
+            96_CD %_NN contain_VB sequences_NNS that_WDT are_VBP present_JJ in_IN
+            GENSCAN-predicted_NNP exons_NNS (_( Table_NNP 3_LS )_) ._. Only_RB 249_CD (_( 2_CD %_NN )_) of_IN
+            protein-coding_JJ gene_NN models_NNS were_VBD created_VBN without_IN an_DT 
+            ab_NN initio_NN model_NN ,_, that_WDT is_VBZ ,_, solely_RB
+            on_IN the_DT basis_NN of_IN cDNA_NN or_CC protein_NN homology_NN evidence_NN ._. The_DT
+            fact_NN that_IN 98_CD %_NN of_IN our_PRP$ accepted_JJ annotations_NNS span_VBP a_DT region_NN
+            containing_VBG a_DT gene_NN prediction_NN supports_VBZ both_DT the_DT strength_NN
+            of_IN the_DT prediction_NN programs_NNS '_POS algorithms_NNS as_RB well_RB as_IN our_PRP$
+            reliance_NN on_IN them_PRP for_IN our_PRP$ methods_NNS ._. However_RB ,_, both_DT Genie_NNP
+            and_CC GENSCAN_NNP gene_NN models_NNS were_VBD often_RB wrong_JJ in_IN detail_NN ,_,
+            when_WRB compared_VBN to_TO cDNA_NN sequence_NN alignments_NNS for_IN three_CD
+            main_JJ reasons_NNS :_: first_JJ ,_, exon_NN mis-associations_JJ :_: the_DT
+            programs_NNS placed_VBD exons_NNS from_IN one_CD gene_NN with_IN the_DT exons_NNS of_IN a_DT
+            neighboring_VBG or_CC nested_JJ gene_NN ;_: second_JJ ,_, erroneous_JJ splice_NN
+            site_NN calls_VBZ :_: the_DT donor_NN and_CC acceptor_NN sites_NNS were_VBD slightly_RB
+            misplaced_VBN ;_: or_CC third_NN ,_, missed_VBD mini-_NN and_CC micro-exons_JJ :_:
+            small_JJ ORFs_NNP were_VBD not_RB identified_VBN [_NN 20_CD ,_, 66_CD ]_NN ._.
+            The_DT fraction_NN of_IN gene_NN models_NNS that_WDT are_VBP based_VBN solely_RB on_IN
+            gene_NN prediction_NN data_NNS has_VBZ decreased_VBN considerably_RB ,_, from_IN
+            2_CD ,_, 348_CD (_( 17_CD %_NN )_) in_IN Release_NNP 1_CD to_TO 815_CD (_( 6_CD %_NN )_) in_IN Release_NNP 3_CD
+            (_( Table_NNP 3_LS )_) ._. This_DT shift_NN was_VBD primarily_RB due_JJ to_TO the_DT more_RBR
+            recently_RB available_JJ 
+            Drosophila_NNP EST_NNP and_CC cDNA_NN
+            sequences_NNS ,_, rather_RB than_IN newly_RB evident_JJ similarity_NN to_TO
+            sequences_NNS in_IN other_JJ species_NNS ._.
+            Alignment_NNP of_IN full-length_JJ cDNA_NN sequences_NNS from_IN the_DT
+            same_JJ strain_NN continues_VBZ to_TO be_VB the_DT best_JJS way_NN to_TO annotate_NN
+            gene_NN models_NNS [_NN 66_CD ,_, 67_CD ,_, 68_CD ]_NN ._. The_DT number_NN of_IN ESTs_NNP generated_VBN
+            by_IN the_DT BDGP_NNP project_NN increased_VBN from_IN around_IN 86_CD ,_, 000_CD in_IN
+            Release_NNP 2_CD to_TO 246_CD ,_, 248_CD in_IN Release_NNP 3_CD [_NN 29_CD ]_NN and_CC the_DT number_NN
+            of_IN sequenced_JJ full-insert_JJ cDNAs_NNS from_IN around_IN 1_CD ,_, 000_CD in_IN
+            Release_NNP 2_CD to_TO over_IN 9_CD ,_, 000_CD in_IN Release_NNP 3_CD [_NN 30_CD ]_NN ._. For_IN
+            approximately_RB 6_CD ,_, 000_CD of_IN these_DT ,_, the_DT completely_RB assembled_VBN
+            sequence_NN was_VBD available_JJ during_IN the_DT re-annotation_JJ effort_NN
+            (_( see_VB Materials_NNPS and_CC methods_NNS )_) ._. In_IN addition_NN ,_, 8_CD ,_, 699_CD ESTs_NNP
+            from_IN the_DT community_NN deposited_VBN in_IN dbEST_NN [_NN 69_CD ]_NN ,_, including_VBG
+            a_DT set_NN of_IN 7_CD ,_, 297_CD from_IN a_DT testes_NNS cDNA_NN library_NN [_NN 16_CD ]_NN ,_, were_VBD
+            available_JJ ._. In_IN all_DT ,_, 78_CD %_NN of_IN the_DT protein-coding_JJ genes_NNS show_VBP
+            a_DT match_NN to_TO an_DT EST_NNP sequence_NN (_( Table_NNP 3_LS )_) and_CC over_IN half_NN to_TO
+            full-insert_JJ cDNA_NN sequences_NNS ._. We_PRP anticipate_VBP further_JJ
+            improvement_NN to_TO gene_NN models_NNS as_IN more_JJR cDNA_NN data_NNS become_VBP
+            available_JJ ._.
+          
+          
+            Non-consensus_NNP splice_NN sites_NNS and_CC small_JJ
+            introns_NNS
+            All_DT introns_NNS within_IN protein-coding_JJ genes_NNS were_VBD
+            examined_VBN for_IN conserved_JJ GT_NNP /_NN AG_NNP splice_NN junctions_NNS with_IN the_DT
+            Sequin_NNP program_NN [_NN 70_CD ,_, 71_CD ]_NN ,_, and_CC all_DT instances_NNS of_IN
+            annotations_NNS lacking_VBG GT_NNP /_NN AG_NNP splice_NN junctions_NNS were_VBD
+            inspected_VBN and_CC commented_VBD on_IN ._. Of_IN the_DT 48_CD ,_, 039_CD total_JJ splice_NN
+            junctions_NNS ,_, 0_CD ._. 5_CD %_NN are_VBP annotated_JJ with_IN GC_NNP /_NN AG_NNP splice_NN
+            junctions_NNS ,_, a_DT frequency_NN that_WDT might_MD justify_VB describing_VBG GC_NNP
+            as_IN an_DT alternative_JJ splice_NN donor_NN ._. Eleven_CD instances_NNS of_IN
+            AT_NNP /_NN AC_NNP splice_NN junctions_NNS are_VBP annotated_JJ ._. An_DT especially_RB
+            well_RB supported_VBN example_NN of_IN AT_NNP /_NN AC_NNP usage_NN is_VBZ 
+            CG_NNP 1354_CD ,_, which_WDT has_VBZ more_JJR than_IN 25_CD
+            confirming_VBG ESTs_NNP ._. Other_JJ cases_NNS of_IN non-consensus_JJ splice_NN
+            sites_NNS appear_VBP rare_JJ ;_: however_RB ,_, more_JJR are_VBP likely_JJ to_TO be_VB
+            documented_VBN in_IN the_DT future_NN ._. The_DT particular_JJ alignment_NN
+            algorithm_NN used_VBN (_( see_VB Materials_NNPS and_CC methods_NNS )_) and_CC our_PRP$
+            reliance_NN upon_IN gene-prediction_JJ data_NNS imposed_VBD a_DT bias_NN
+            against_IN unconventional_JJ splice_NN sites_NNS ._. In_IN a_DT number_NN of_IN
+            cases_NNS for_IN which_WDT an_DT unconventional_JJ splice_NN junction_NN was_VBD
+            supported_VBN by_IN cDNA_NN data_NNS ,_, the_DT precise_JJ location_NN of_IN the_DT
+            junction_NN could_MD not_RB be_VB determined_VBN ,_, owing_VBG to_TO repeated_VBN
+            sequence_NN at_IN the_DT donor_NN and_CC acceptor_NN sites_NNS ._. A_DT good_JJ
+            example_NN of_IN this_DT type_NN of_IN pattern_NN is_VBZ 
+            sba_NN (_( CG_NNP 13598_CD )_) ._. Two_CD alternative_JJ
+            transcripts_NNS for_IN this_DT gene_NN are_VBP supported_VBN by_IN cDNA_NN data_NNS ,_,
+            and_CC both_DT appear_VB to_TO contain_VB an_DT unconventional_JJ ,_, ambiguous_JJ
+            splice_NN junction_NN ._. The_DT two_CD transcripts_NNS share_VBP the_DT
+            unconventional_JJ splice_NN acceptor_NN site_NN ;_: they_PRP differ_VBP in_IN the_DT
+            location_NN of_IN the_DT non-consensus_JJ splice_NN donor_NN site_NN ,_, but_CC
+            the_DT two_CD donor_NN sites_NNS are_VBP identical_JJ in_IN sequence_NN ._.
+            We_PRP also_RB examined_VBD every_DT gene_NN model_NN with_IN an_DT intron_NN
+            less_JJR than_IN 48_CD bp_NN ._. The_DT frequency_NN of_IN such_JJ introns_NNS in_IN 
+            Drosophila_NNP is_VBZ low_JJ ;_: 32_CD are_VBP
+            annotated_JJ in_IN Release_NNP 3_CD ._. There_EX are_VBP several_JJ well_RB
+            supported_VBN examples_NNS of_IN introns_NNS less_JJR than_IN 45_CD bp_NN ,_, with_IN at_IN
+            least_JJS two_CD supporting_VBG cDNAs_NNS derived_VBN from_IN the_DT sequenced_JJ
+            strain_NN ._. These_DT include_VBP 
+            mod_NN (_( r_LS )_) and_CC 
+            csul_NN ,_, each_DT with_IN an_DT intron_NN of_IN 44_CD
+            bp_NN ,_, and_CC 
+            CG_NNP 11892_CD ,_, with_IN a_DT diminutive_JJ
+            intron_NN of_IN 43_CD bp_NN ._.
+          
+          
+            SWISS-PROT_NNP /_NN TrEMBL_NNP validation_NN of_IN the_DT models_NNS
+            We_PRP used_VBD the_DT SWISS-PROT_NNP and_CC TrEMBL_NNP protein_NN databases_NNS
+            [_NN 13_CD ]_NN and_CC the_DT PEP-QC_NNP software_NN program_NN [_NN 12_CD ]_NN to_TO validate_NN
+            the_DT integrity_NN of_IN the_DT annotations_NNS and_CC to_TO track_VB
+            consistency_NN with_IN previously_RB published_VBN data_NNS (_( see_VB
+            Materials_NNPS and_CC methods_NNS )_) ._. Of_IN the_DT 3_CD ,_, 687_CD annotated_JJ peptides_NNS
+            with_IN a_DT cognate_NN in_IN the_DT curated_JJ SWISS-PROT_NNP /_NN TrEMBL_NNP
+            dataset_NN ,_, 75_CD %_NN (_( 2_CD ,_, 764_CD )_) were_VBD of_IN identical_JJ length_NN and_CC had_VBD
+            more_JJR than_IN 99_CD %_NN sequence_NN identity_NN ._. Curators_NNP examined_VBD each_DT
+            case_NN with_IN less_JJR than_IN 100_CD %_NN sequence_NN identity_NN ,_, and_CC in_IN some_DT
+            cases_NNS ,_, annotation_NN errors_NNS were_VBD detected_VBN and_CC corrected_VBN ._.
+            For_IN example_NN ,_, translation_NN start_NN sites_NNS were_VBD shifted_VBN to_TO
+            the_DT experimentally_RB reported_VBN position_NN ,_, which_WDT in_IN some_DT
+            cases_NNS was_VBD downstream_JJ of_IN the_DT predicted_VBN start_NN ._. However_RB ,_,
+            in_IN most_JJS cases_NNS discrepancies_NNS appeared_VBD to_TO be_VB due_JJ to_TO
+            strain-specific_JJ polymorphisms_NNS or_CC errors_NNS in_IN the_DT reported_VBN
+            DNA_NNP sequence_NN on_IN which_WDT the_DT SPTRreal_NNP entries_NNS were_VBD based_VBN
+            (_( see_VB Materials_NNPS and_CC methods_NNS )_) ._. Given_VBN the_DT high_JJ quality_NN of_IN
+            the_DT underlying_VBG Release_NNP 3_CD genomic_JJ sequence_NN ,_, we_PRP believe_VBP
+            that_IN in_IN many_JJ cases_VBZ the_DT Release_NNP 3_CD annotation_NN is_VBZ more_RBR
+            accurate_JJ than_IN the_DT sequences_NNS deposited_VBN by_IN the_DT community_NN
+            in_IN SWISS-PROT_NNP and_CC TrEMBL_NNP ._.
+          
+          
+            Confidence_NN in_IN Release_NNP 3_CD gene_NN models_NNS
+            The_DT amount_NN of_IN evidence_NN attributable_JJ to_TO each_DT Release_NNP
+            3_CD gene_NN model_NN varies_VBZ considerably_RB ,_, and_CC therefore_RB our_PRP$
+            confidence_NN in_IN these_DT gene_NN models_NNS ,_, even_RB the_DT confidence_NN in_IN
+            two_CD alternative_JJ transcripts_NNS encoded_JJ by_IN the_DT same_JJ gene_NN ,_,
+            may_MD differ_VB greatly_RB ._. To_TO estimate_VB the_DT reliability_NN of_IN a_DT
+            gene_NN model_NN ,_, we_PRP developed_VBD a_DT classification_NN system_NN that_IN
+            groups_NNS data_NNS into_IN four_CD categories_NNS :_: computational_NN gene_NN
+            predictions_NNS ;_: protein_NN similarities_NNS ;_: alignments_NNS of_IN ESTs_NNP
+            and_CC other_JJ partial_JJ cDNA_NN sequences_NNS ;_: and_CC alignments_NNS of_IN
+            full-insert_JJ cDNA_NN sequences_NNS ._. One_CD point_NN was_VBD assigned_VBN to_TO
+            each_DT data_NNS type_NN that_IN overlapped_JJ a_DT given_VBN annotation_NN ,_, and_CC
+            a_DT score_NN of_IN 1_CD to_TO 4_CD was_VBD determined_VBN for_IN each_DT transcript_NN ,_,
+            with_IN 1_CD being_VBG the_DT lowest_JJS and_CC 4_CD being_VBG the_DT highest_JJS
+            confidence_NN (_( see_VB Materials_NNPS and_CC methods_NNS )_) ._. As_IN shown_VBN in_IN
+            Table_NNP 4_CD ,_, more_JJR than_IN 80_CD %_NN of_IN transcripts_NNS and_CC more_JJR than_IN 75_CD %_NN
+            of_IN genes_NNS were_VBD assigned_VBN a_DT confidence_NN value_NN of_IN 3_CD or_CC 4_CD ._.
+            Thus_RB ,_, we_PRP have_VBP high_JJ confidence_NN in_IN a_DT large_JJ proportion_NN of_IN
+            the_DT Release_NNP 3_CD gene_NN models_NNS ._.
+          
+          
+            Limitations_NNPS in_IN our_PRP$ methods_NNS
+            The_DT Release_NNP 3_CD annotations_NNS should_MD be_VB much_RB more_RBR
+            consistent_JJ than_IN in_IN previous_JJ releases_NNS because_IN fewer_JJR
+            curators_NNS were_VBD involved_VBN ,_, a_DT defined_VBN set_NN of_IN rules_NNS was_VBD
+            used_VBN ,_, and_CC additional_JJ validation_NN steps_NNS were_VBD performed_VBN
+            (_( see_VB Materials_NNPS and_CC methods_NNS )_) ._. We_PRP set_VBD a_DT rigorous_JJ standard_NN
+            for_IN the_DT annotations_NNS by_IN requiring_VBG attributable_JJ evidence_NN
+            for_IN every_DT gene_NN model_NN ,_, for_IN example_NN ,_, a_DT gene_NN prediction_NN ,_,
+            an_DT alignment_NN to_TO a_DT GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP accession_NN ,_, or_CC a_DT
+            curated_JJ personal_JJ communication_NN to_TO FlyBase_NNP ._. However_RB ,_,
+            during_IN the_DT Release_NNP 1_CD analysis_NN ,_, 
+            Drosophila_NNP researchers_NNS annotated_JJ
+            particular_JJ families_NNS of_IN genes_NNS about_IN which_WDT they_PRP were_VBD
+            expert_NN and_CC for_IN which_WDT they_PRP may_MD have_VB had_VBN specific_JJ
+            unpublished_JJ information_NN ._. Much_JJ of_IN the_DT evidence_NN for_IN these_DT
+            annotations_NNS was_VBD not_RB released_VBN to_TO the_DT public_JJ domain_NN and_CC
+            is_VBZ not_RB currently_RB available_JJ ,_, so_IN some_DT of_IN the_DT details_NNS of_IN
+            these_DT gene_NN models_NNS were_VBD lost_VBN in_IN Release_NNP 3_CD ._. The_DT solution_NN
+            in_IN these_DT cases_NNS is_VBZ for_IN biologists_NNS in_IN the_DT community_NN to_TO
+            continue_VB to_TO submit_VB error_NN reports_NNS to_TO FlyBase_NNP to_TO be_VB
+            curated_JJ by_IN FlyBase_NNP as_IN personal_JJ communications_NNS ._. The_DT
+            resulting_VBG set_NN of_IN annotations_NNS will_MD be_VB stronger_JJR because_IN
+            every_DT gene_NN has_VBZ traceable_JJ evidence_NN that_WDT is_VBZ available_JJ in_IN
+            the_DT database_NN and_CC is_VBZ annotated_JJ according_VBG to_TO a_DT standard_JJ
+            set_NN of_IN rules_NNS ._.
+            As_IN is_VBZ expected_VBN with_IN such_JJ a_DT complex_JJ analysis_NN ,_, rules_NNS
+            cannot_NN be_VB expected_VBN to_TO cover_VB every_DT eventuality_NN ._. As_IN a_DT
+            result_NN ,_, some_DT of_IN the_DT annotations_NNS are_VBP based_VBN partially_RB on_IN
+            curator_NN judgment_NN ,_, introducing_VBG a_DT potential_JJ source_NN of_IN
+            inconsistency_NN ._. Visual_NNP inspection_NN and_CC curator_NN expertise_NN
+            were_VBD absolutely_RB necessary_JJ in_IN overcoming_VBG shortcomings_NNS of_IN
+            the_DT automated_VBN processes_VBZ such_JJ as_IN identifying_VBG GC_NNP splice_NN
+            donors_NNS and_CC sorting_VBG out_IN complex_JJ gene_NN models_NNS ._. It_PRP was_VBD also_RB
+            essential_JJ for_IN annotating_VBG unusual_JJ cases_NNS ,_, such_JJ as_IN the_DT
+            dicistronic_JJ genes_NNS and_CC overlapping_VBG gene_NN models_NNS ._. Further_RB ,_,
+            it_PRP should_MD be_VB noted_VBN that_IN manual_JJ annotation_NN is_VBZ an_DT
+            iterative_JJ process_NN ._. Subsequent_JJ to_TO an_DT initial_JJ annotation_NN
+            call_NN ,_, a_DT set_NN of_IN automatic_JJ verification_NN steps_NNS was_VBD carried_VBN
+            out_RP ._. Potential_JJ errors_NNS were_VBD reviewed_VBN and_CC ,_, where_WRB
+            appropriate_JJ ,_, annotations_NNS were_VBD modified_VBN as_IN a_DT result_NN of_IN
+            the_DT verification_NN analysis_NN ._.
+          
+        
+        
+          Accessing_NNP data_NNS and_CC reporting_VBG errors_NNS
+          The_DT Release_NNP 3_CD genomic_JJ sequence_NN available_JJ at_IN
+          GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP [_NN 7_CD ]_NN includes_VBZ all_DT gene_NN models_NNS ,_, that_WDT is_VBZ ,_,
+          the_DT extent_NN of_IN transcripts_NNS and_CC each_DT corresponding_JJ CDS_NNP ._.
+          More_RBR complete_JJ information_NN ,_, including_VBG all_DT classes_NNS of_IN
+          evidence_NN ,_, can_MD be_VB obtained_VBN from_IN FlyBase_NNP ,_, presented_VBN in_IN
+          Gadfly_NNP Gene_NNP Annotation_NNP reports_NNS ,_, in_IN interactive_JJ Genome_NNP
+          Browser_NNP maps_NNS ,_, in_IN the_DT Apollo_NNP annotation_NN tool_NN ,_, and_CC by_IN batch_NN
+          download_NN ._. In_IN addition_NN to_TO transcript_NN structures_NNS ,_, the_DT Gene_NNP
+          Annotation_NNP report_NN presents_VBZ the_DT evidence_NN supporting_VBG a_DT gene_NN
+          model_NN ,_, any_DT comments_NNS included_VBN by_IN the_DT annotator_NN ,_, and_CC a_DT
+          thumbnail_NN view_NN of_IN the_DT immediate_JJ genomic_JJ region_NN ._. There_EX are_VBP
+          links_NNS to_TO the_DT reports_NNS for_IN adjacent_JJ genes_NNS ,_, to_TO the_DT FlyBase_NNP
+          Genome_NNP Browser_NNP view_NN of_IN the_DT surrounding_VBG region_NN ,_, and_CC to_TO
+          FASTA_NNP files_NNS of_IN protein_NN ,_, transcript_NN ,_, and_CC genomic_JJ
+          sequences_NNS ._. Another_DT link_NN takes_VBZ users_NNS to_TO the_DT results_NNS of_IN
+          automated_VBN BLASTP_NNP and_CC InterProScan_NNP [_NN 72_CD ]_NN analyses_NNS of_IN the_DT
+          predicted_VBN peptides_NNS ._. The_DT coordinates_VBZ ,_, comments_NNS ,_, and_CC
+          sub-features_JJ of_IN the_DT annotations_NNS (_( such_JJ as_IN UTRs_NNP ,_, exons_NNS ,_, and_CC
+          so_RB on_IN )_) can_MD be_VB downloaded_JJ in_IN a_DT number_NN of_IN formats_NNS ,_,
+          including_VBG XML_NNP and_CC GFF_NNP ._. The_DT interactive_JJ genome_NN browser_NN
+          shows_VBZ all_DT transcripts_NNS annotated_JJ within_IN a_DT region_NN ;_: a_DT zoom_VB
+          feature_NN allows_VBZ the_DT user_NN to_TO choose_VB the_DT level_NN of_IN
+          resolution_NN ._. Additional_JJ data_NNS classes_NNS can_MD be_VB added_VBN ,_, at_IN the_DT
+          discretion_NN of_IN the_DT user_NN ,_, including_VBG the_DT extent_NN of_IN DGC_NNP cDNA_NN
+          clones_NNS and_CC EST_NNP data_NNS ,_, the_DT BAC_NNP clones_NNS used_VBN for_IN
+          determination_NN of_IN the_DT genomic_JJ sequence_NN ,_, and_CC the_DT position_NN
+          of_IN P-_NNP element_NN insertions_NNS isolated_VBN by_IN the_DT BDGP_NNP Gene_NNP
+          Disruption_NNP Project_NNP [_NN 73_CD ]_NN ._.
+          Researchers_NNS can_MD also_RB use_VB the_DT Apollo_NNP genome_NN annotation_NN
+          and_CC curation_NN tool_NN [_NN 19_CD ]_NN to_TO view_VB the_DT supporting_VBG data_NN in_IN
+          greater_JJR detail_NN ._. This_DT Java_NNP software_NN tool_NN is_VBZ available_JJ for_IN
+          local_JJ installation_NN [_NN 74_CD ]_NN and_CC bulk_NN downloads_NNS of_IN the_DT
+          annotations_NNS and_CC computational_NN evidence_NN are_VBP available_JJ in_IN
+          XML_NNP or_CC GFF_NNP format_NN [_NN 75_CD ]_NN ._. Sequence_NNP data_NNS in_IN multiple_JJ FASTA_NNP
+          format_NN for_IN the_DT entire_JJ set_NN of_IN annotations_NNS are_VBP also_RB
+          available_JJ at_IN this_DT site_NN ._. In_IN addition_NN ,_, Apollo_NNP includes_VBZ
+          software_NN to_TO request_VB and_CC retrieve_VB the_DT annotations_NNS and_CC
+          other_JJ data_NNS transparently_RB from_IN FlyBase_NNP /_NN BDGP_NNP ._. Many_JJ
+          individual_JJ investigators_NNS have_VBP already_RB contributed_VBN
+          substantially_RB to_TO the_DT Release_NNP 3_CD annotations_NNS by_IN submitting_VBG
+          corrections_NNS to_TO gene_NN structures_NNS using_VBG the_DT error_NN report_NN
+          forms_NNS [_NN 76_CD ]_NN ,_, and_CC researchers_NNS can_MD continue_VB to_TO submit_VB
+          reports_NNS to_TO FlyBase_NNP in_IN this_DT manner_NN ._. In_IN the_DT future_NN ,_, we_PRP hope_VBP
+          that_IN by_IN enabling_VBG researchers_NNS to_TO send_VB an_DT Apollo_NNP XML_NNP output_NN
+          file_NN to_TO FlyBase_NNP for_IN review_NN ,_, error_NN reporting_NN of_IN fine_NN gene_NN
+          structures_NNS will_MD be_VB simplified_VBN ._.
+        
+        
+          Future_JJ updates_NNS
+          
+            Changes_NNS to_TO the_DT sequence_NN
+            The_DT BDGP_NNP will_MD continue_VB to_TO finish_VB the_DT remaining_VBG
+            problematic_JJ regions_NNS of_IN the_DT euchromatic_JJ genomic_JJ sequence_NN
+            to_TO high_JJ quality_NN (_( see_VB [_NN 17_CD ]_NN )_) ,_, and_CC focus_VB efforts_NNS on_IN
+            refining_VBG the_DT sequence_NN of_IN the_DT heterochromatin_NN [_NN 25_CD ]_NN ._.
+            Changes_NNS to_TO the_DT sequence_NN will_MD be_VB submitted_VBN to_TO
+            GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP every_DT 6_CD to_TO 12_CD months_NNS ._.
+            Because_IN sequence_NN updates_NNS at_IN the_DT time_NN of_IN new_JJ releases_NNS
+            will_MD result_VB in_IN changes_NNS to_TO the_DT coordinate_VB system_NN for_IN
+            each_DT chromosome_NN arm_NN and_CC for_IN GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP accession_NN
+            units_NNS ,_, it_PRP will_MD be_VB particularly_RB important_JJ for_IN
+            researchers_NNS to_TO make_VB note_NN of_IN specific_JJ release_NN and_CC
+            version_NN dates_NNS when_WRB providing_VBG sequence_NN coordinates_VBZ ._.
+            FlyBase_NNP encourages_VBZ researchers_NNS to_TO refer_VB to_TO coordinates_VBZ
+            as_IN associated_VBN with_IN specific_JJ GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP accession_NN
+            and_CC version_NN numbers_NNS ._.
+          
+          
+            Changes_NNS to_TO gene_NN models_NNS
+            Future_NNP re-annotation_JJ will_MD be_VB on_IN a_DT gene-by-gene_JJ
+            basis_NN ,_, rather_RB than_IN a_DT survey_NN of_IN the_DT entire_JJ genome_NN ._.
+            Future_JJ analyses_NNS will_MD include_VB new_JJ large-scale_JJ datasets_NNS ,_,
+            including_VBG the_DT 
+            Anopheles_NNP gambiae_NN genomic_JJ
+            sequence_NN ,_, the_DT 
+            D_NNP ._. pseudoobscura_NN genomic_JJ
+            sequence_NN ,_, and_CC additional_JJ DGC_NNP cDNA_NN sequences_NNS [_NN 30_CD ]_NN ._.
+            Changes_NNS to_TO the_DT gene_NN models_NNS will_MD occur_VB more_RBR often_RB than_IN
+            changes_NNS in_IN the_DT sequence_NN ,_, and_CC will_MD be_VB reported_VBN in_IN
+            date-stamped_JJ updates_NNS of_IN the_DT GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP
+            accessions_NNS and_CC FlyBase_NNP records_NNS ._. Such_JJ changes_NNS are_VBP
+            reflected_VBN in_IN the_DT feature_NN annotations_NNS only_RB and_CC thus_RB do_VBP
+            not_RB constitute_VB new_JJ releases_NNS ,_, as_IN the_DT underlying_VBG genomic_JJ
+            sequence_NN does_VBZ not_RB change_VB ._.
+            FlyBase_NNP will_MD also_RB focus_VB on_IN the_DT localization_NN of_IN many_JJ
+            more_JJR annotation_NN features_NNS to_TO the_DT genome_NN view_NN ,_, such_JJ as_IN
+            regulatory_JJ elements_NNS ,_, mutational_NN lesions_NNS ,_, rearrangement_NN
+            breakpoints_NNS ,_, and_CC P-_NNP element_NN insertion_NN sites_NNS ._. Many_JJ of_IN
+            these_DT sequence_NN features_NNS are_VBP already_RB in_IN the_DT FlyBase_NNP
+            genetic_JJ data_NNS tables_NNS and_CC gene_NN annotation_NN reports_NNS ,_, based_VBN
+            on_IN data_NNS from_IN literature_NN curation_NN ,_, computational_NN
+            analyses_NNS (_( for_IN example_NN [_NN 77_CD ]_NN )_) ,_, and_CC large-scale_JJ projects_NNS
+            such_JJ as_IN the_DT BDGP_NNP Gene_NNP Disruption_NNP Project_NNP ._.
+          
+          
+            Changes_NNS to_TO functional_JJ annotation_NN
+            In_IN the_DT annotation_NN of_IN genes_NNS in_IN Release_NNP 1_CD attributes_NNS
+            of_IN gene_NN products_NNS were_VBD predicted_VBN with_IN respect_NN to_TO their_PRP$
+            molecular_JJ functions_NNS ,_, the_DT roles_NNS they_PRP might_MD play_VB in_IN
+            biological_JJ processes_NNS ,_, and_CC their_PRP$ cellular_JJ locations_NNS ,_,
+            using_VBG the_DT controlled_VBN vocabularies_NNS developed_VBN by_IN the_DT Gene_NNP
+            Ontology_NNP (_( GO_NNP )_) Consortium_NNP [_NN 78_CD ]_NN ._. These_DT predictions_NNS were_VBD
+            computational_NN ,_, using_VBG a_DT program_NN known_VBN as_IN LOVEATFIRSTSITE_NNP
+            written_VBN by_IN M_NNP ._. Yandell_NNP [_NN 3_CD ]_NN ._. Since_IN then_RB ,_, FlyBase_NNP
+            curators_NNS have_VBP assessed_VBN each_DT of_IN these_DT annotations_NNS ,_,
+            retaining_VBG in_IN FlyBase_NNP only_RB those_DT that_WDT were_VBD reasonably_RB
+            secure_VB ,_, and_CC have_VBP re-annotated_JJ many_JJ genes_NNS with_IN GO_NNP terms_NNS
+            of_IN higher_JJR granularity_NN ._. This_DT work_NN ,_, together_RB with_IN the_DT
+            curation_NN of_IN GO_NNP terms_NNS from_IN the_DT literature_NN and_CC sequence_NN
+            records_NNS ,_, has_VBZ resulted_VBN in_IN 7_CD ,_, 299_CD genes_NNS sharing_VBG 25_CD ,_, 057_CD GO_NNP
+            annotations_NNS ._. This_DT analysis_NN has_VBZ not_RB yet_RB been_VBN repeated_VBN
+            for_IN the_DT Release_NNP 3_CD gene_NN products_NNS ,_, but_CC the_DT curation_NN of_IN GO_NNP
+            terms_NNS for_IN all_DT new_JJ genes_NNS and_CC all_DT split_NN /_NN merged_VBD genes_NNS is_VBZ
+            now_RB in_IN progress_NN ._. When_WRB this_DT annotation_NN is_VBZ completed_VBN we_PRP
+            will_MD have_VB a_DT benchmark_NN for_IN further_JJ automatic_JJ predictions_NNS
+            of_IN GO_NNP terms_NNS ,_, using_VBG programs_NNS similar_JJ to_TO LOVEATFIRSTSITE_NNP
+            [_NN 3_CD ]_NN and_CC PANTHER_NNP [_NN 79_CD ]_NN ._.
+          
+        
+      
+      
+        Conclusions_NNP
+        Annotation_NNP of_IN eukaryotic_JJ genomes_NNS is_VBZ not_RB a_DT
+        straightforward_JJ process_NN ,_, owing_VBG to_TO the_DT limitations_NNS of_IN the_DT
+        current_JJ gene-prediction_JJ algorithms_NNS ._. However_RB ,_, we_PRP have_VBP made_VBN
+        the_DT annotation_NN process_NN much_RB more_RBR rigorous_JJ by_IN utilizing_VBG a_DT
+        large_RB set_NN of_IN experimental_JJ data_NNS ,_, manual_JJ curation_NN ,_, and_CC
+        defined_VBD standards_NNS ._. By_IN using_VBG a_DT large_JJ amount_NN of_IN cDNA_NN
+        alignment_NN data_NNS and_CC a_DT tool_NN facilitating_VBG the_DT rapid_JJ visual_JJ
+        inspection_NN of_IN evidence_NN for_IN each_DT gene_NN model_NN ,_, we_PRP were_VBD able_JJ to_TO
+        significantly_RB improve_VB the_DT quality_NN of_IN 
+        Drosophila_NNP gene_NN annotations_NNS ._. We_PRP found_VBD
+        that_IN a_DT comprehensive_JJ set_NN of_IN curation_NN rules_NNS was_VBD crucial_JJ to_TO
+        making_VBG manual_JJ annotation_NN consistent_JJ and_CC reliable_JJ ._. We_PRP also_RB
+        found_VBD that_DT comparison_NN of_IN predicted_VBD peptides_NNS to_TO
+        experimentally_RB verified_VBN SWISS-PROT_NNP and_CC TrEMBL_NNP sequences_NNS was_VBD
+        an_DT important_JJ quality-assessment_JJ step_NN ._. In_IN future_JJ ,_, we_PRP plan_VBP to_TO
+        make_VB the_DT automated_VBN analysis_NN of_IN predicted_VBD polypeptides_NNS ,_,
+        including_VBG identification_NN of_IN their_PRP$ protein_NN domains_NNS and_CC
+        sequence_NN similarities_NNS ,_, a_DT more_RBR integrated_JJ part_NN of_IN genomic_JJ
+        sequence_NN annotation_NN ._. Finally_RB ,_, by_IN making_VBG the_DT annotations_NNS ,_,
+        comments_NNS ,_, and_CC all_DT supporting_VBG evidence_NN available_JJ to_TO users_NNS ,_,
+        we_PRP have_VBP provided_VBN the_DT scientific_JJ community_NN with_IN the_DT
+        resources_NNS to_TO assess_VB the_DT quality_NN of_IN each_DT gene_NN model_NN ._.
+        Our_PRP$ analysis_NN reveals_VBZ a_DT number_NN of_IN genes_NNS that_WDT fall_NN outside_IN
+        the_DT definition_NN of_IN conventional_JJ gene_NN models_NNS :_: neighboring_VBG
+        genes_NNS with_IN overlapping_VBG UTRs_NNP ;_: genes_NNS with_IN alternative_JJ
+        transcripts_NNS encoding_VBG distinct_JJ coding_VBG regions_NNS ;_: and_CC
+        dicistronic_JJ transcripts_NNS ._. An_DT even_RB larger_JJR number_NN of_IN genes_NNS
+        show_VBP alternative_NN splicing_VBG or_CC are_VBP nested_JJ within_IN neighboring_VBG
+        genes_NNS ._. Currently_RB ,_, gene-prediction_JJ algorithms_NNS are_VBP unable_JJ to_TO
+        accurately_RB predict_VBP such_JJ gene_NN models_NNS ._. Studies_NNS like_IN this_DT one_CD
+        are_VBP a_DT prerequisite_NN to_TO extending_VBG current_JJ computational_NN
+        methods_NNS to_TO more_RBR successfully_RB and_CC specifically_RB predict_VBP
+        eukaryotic_JJ gene_NN structures_NNS ,_, by_IN defining_VBG the_DT classes_NNS of_IN
+        features_NNS and_CC the_DT requirements_NNS for_IN supporting_VBG evidence_NN ._. Once_RB
+        sophisticated_JJ computational_NN pipelines_NNS can_MD cope_VB with_IN the_DT
+        full_JJ range_NN of_IN complex_JJ genomic_JJ features_NNS ,_, we_PRP will_MD benefit_VB
+        from_IN better_JJR resources_NNS for_IN biological_JJ investigation_NN ._.
+        FlyBase_NNP is_VBZ one_CD of_IN several_JJ major_JJ model_NN organism_NN databases_NNS
+        with_IN high-quality_JJ euchromatic_JJ sequence_NN charged_VBN with_IN
+        curation_NN of_IN experimental_JJ data_NNS from_IN the_DT literature_NN ._. Unlike_IN
+        many_JJ other_JJ organisms_NNS ,_, 
+        Drosophila_NNP has_VBZ a_DT genetic_JJ history_NN
+        reaching_VBG back_RB to_TO 1910_CD ,_, and_CC an_DT enormous_JJ amount_NN of_IN data_NNS to_TO
+        tie_VB to_TO the_DT sequence_NN ._. In_IN this_DT paper_NN ,_, we_PRP have_VBP addressed_VBN one_CD
+        of_IN the_DT first_JJ challenges_NNS ,_, accurately_RB annotating_VBG the_DT genomic_JJ
+        sequence_NN ,_, by_IN utilizing_VBG the_DT extensive_JJ resource_NN of_IN
+        full-insert_JJ 
+        D_NNP ._. melanogaster_NN cDNA_NN sequences_NNS and_CC
+        FlyBase_NNP gene_NN records_NNS (_( containing_VBG existing_VBG community_NN data_NNS )_) ,_,
+        and_CC by_IN manually_RB curating_VBG the_DT gene_NN models_NNS using_VBG defined_VBN
+        methods_NNS and_CC controlled_VBN vocabularies_NNS ._. However_RB ,_, there_EX is_VBZ more_JJR
+        work_NN necessary_JJ to_TO tie_VB the_DT annotated_JJ genomic_JJ sequence_NN and_CC
+        annotated_JJ peptide_NN sequences_NNS to_TO further_VB experimental_JJ data_NNS
+        from_IN the_DT literature_NN ,_, results_NNS of_IN large-scale_JJ analyses_NNS (_( for_IN
+        example_NN ,_, microarray_NN expression_NN data_NNS )_) ,_, and_CC new_JJ computational_NN
+        analyses_NNS (_( for_IN example_NN ,_, comparative_JJ sequence_NN analysis_NN )_) ._. We_PRP
+        believe_VBP shared_VBN data-exchange_JJ formats_NNS and_CC ontologies_NNS will_MD be_VB
+        vitally_RB important_JJ to_TO curate_NN ,_, collate_NN ,_, and_CC structure_VB this_DT
+        huge_JJ amount_NN of_IN data_NNS in_IN a_DT way_NN that_WDT allows_VBZ researchers_NNS to_TO
+        exploit_VB the_DT information_NN to_TO its_PRP$ full_JJ potential_NN ._.
+      
+      
+        Materials_NNS and_CC methods_NNS
+        
+          Curation_NNP rules_NNS
+          We_PRP have_VBP attempted_VBN to_TO provide_VB documentation_NN for_IN as_IN many_JJ
+          annotation_NN decisions_NNS as_IN possible_JJ ._. In_IN addition_NN to_TO
+          providing_VBG access_NN to_TO evidence_NN (_( EST_NNP and_CC full-insert_JJ cDNA_NN
+          sequence_NN reads_VBZ ,_, prior_RB sequence_NN submissions_NNS ,_, BLASTX_NNP
+          homologies_NNS ,_, and_CC gene_NN prediction_NN data_NNS )_) ,_, we_PRP have_VBP developed_VBN
+          and_CC made_VBN available_JJ a_DT set_NN of_IN annotation_NN rules_NNS (_( see_VB [_NN 82_CD ]_NN
+          and_CC additional_JJ data_NNS files_NNS )_) and_CC have_VBP provided_VBN textual_NN
+          comments_NNS to_TO explain_VB atypical_JJ or_CC subjective_JJ
+          annotations_NNS ._.
+          The_DT annotation_NN rules_NNS promote_VBP consistency_NN in_IN the_DT
+          annotation_NN effort_NN ,_, and_CC deal_NN with_IN all_DT aspects_NNS of_IN
+          annotation_NN :_: from_IN assessment_NN of_IN whether_IN a_DT marginal_JJ gene_NN
+          prediction_NN should_MD be_VB the_DT basis_NN for_IN a_DT new_JJ gene_NN model_NN to_TO
+          the_DT annotation_NN of_IN atypical_JJ splice_NN sites_NNS ;_: from_IN the_DT
+          determination_NN of_IN alternative_JJ transcriptional_NN starts_VBZ and_CC
+          stops_VBZ ,_, and_CC the_DT designation_NN of_IN translation_NN starts_VBZ ,_, to_TO the_DT
+          use_NN of_IN comments_NNS to_TO flag_NN atypical_JJ or_CC questionable_JJ
+          annotations_NNS ._. Cases_NNS with_IN insufficient_JJ ,_, atypical_JJ ,_, or_CC
+          conflicting_JJ data_NNS that_IN the_DT rules_NNS did_VBD not_RB address_VB were_VBD left_VBN
+          to_TO the_DT discretion_NN of_IN the_DT annotator_NN ;_: in_IN such_JJ instances_NNS ,_,
+          comments_VBZ to_TO document_VB the_DT subjective_JJ nature_NN of_IN the_DT gene_NN
+          model_NN were_VBD added_VBN ._.
+          Typically_RB ,_, at_IN least_JJS one_CD annotation_NN was_VBD created_VBN
+          containing_VBG each_DT site_NN of_IN alternative_NN splicing_VBG represented_VBN
+          in_IN the_DT EST_NNP /_NN cDNA_NN data_NNS ._. For_IN atypical_JJ splice_NN junctions_NNS ,_, a_DT
+          higher_JJR level_NN of_IN supporting_VBG data_NNS was_VBD required_VBN (_( see_VB below_IN )_) ._.
+          Often_RB ,_, sites_NNS of_IN alternative_NN splicing_VBG were_VBD supported_VBN by_IN
+          ESTs_NNP but_CC not_RB full-insert_JJ cDNAs_NNS ._. Since_IN ,_, as_IN a_DT matter_NN of_IN
+          policy_NN ,_, we_PRP tried_VBD to_TO avoid_VB creating_VBG partial_JJ transcript_NN
+          models_NNS ,_, this_DT required_JJ that_IN we_PRP postulate_NN transcripts_NNS
+          combining_VBG ,_, for_IN example_NN ,_, 5_CD '_POS and_CC 3_CD '_POS ESTs_NNP corresponding_JJ to_TO
+          different_JJ cDNAs_NNS ._. In_IN some_DT cases_NNS ,_, these_DT combinations_NNS may_MD
+          not_RB exist_VB 
+          in_IN vivo_NN ._. In_IN particularly_RB complex_JJ
+          cases_NNS ,_, curators_NNS did_VBD not_RB create_VB every_DT splice_NN form_NN
+          suggested_VBN by_IN the_DT data_NNS ,_, but_CC commented_VBD that_IN the_DT potential_JJ
+          exists_VBZ for_IN additional_JJ splice_NN forms_NNS ._.
+          The_DT rules_NNS used_VBN were_VBD specific_JJ for_IN this_DT annotation_NN
+          effort_NN ,_, in_IN particular_JJ ,_, for_IN the_DT types_NNS of_IN data_NNS currently_RB
+          available_JJ ._. For_IN example_NN ,_, because_IN of_IN the_DT limited_JJ amount_NN of_IN
+          3_CD '_POS EST_NNP data_NNS ,_, little_JJ attempt_NN was_VBD made_VBN to_TO annotate_NN
+          alternative_JJ transcripts_NNS that_WDT differ_VBP as_IN a_DT result_NN of_IN
+          multiple_JJ polyadenylation_NN sites_NNS ._.
+          Establishment_NNP of_IN the_DT annotation_NN rules_NNS included_VBD the_DT
+          development_NN of_IN a_DT set_NN of_IN controlled_VBN comments_NNS ,_, that_WDT is_VBZ ,_,
+          comments_NNS that_WDT are_VBP reproducibly_RB phrased_JJ and_CC are_VBP
+          consistently_RB used_VBN ._. Such_JJ controlled_VBN comments_NNS were_VBD used_VBN to_TO
+          confirm_VB atypical_JJ gene_NN structures_NNS ,_, such_JJ as_IN the_DT use_NN of_IN
+          atypical_JJ splice_NN sites_NNS or_CC overlapping_VBG UTRs_NNP ,_, and_CC to_TO
+          document_VB the_DT evidence_NN used_VBN in_IN subjective_JJ cases_NNS ,_, such_JJ as_IN
+          an_DT unusual_JJ gene_NN structure_NN based_VBN on_IN a_DT single_JJ EST_NNP or_CC a_DT gene_NN
+          model_NN based_VBN solely_RB on_IN gene-prediction_JJ data_NNS ._. DGC_NNP cDNA_NN
+          clones_NNS that_WDT appeared_VBD to_TO contradict_VB other_JJ evidence_NN were_VBD
+          also_RB flagged_JJ ;_: most_RBS frequently_RB ,_, these_DT were_VBD not_RB full-length_JJ
+          or_CC appeared_VBD to_TO contain_VB intronic_JJ sequences_NNS ._.
+        
+        
+          Annotation_NNP of_IN non-protein-coding_JJ genes_NNS
+          To_TO annotate_NN small_JJ ,_, non-protein-coding_JJ RNA_NNP genes_NNS
+          previously_RB collected_VBN in_IN the_DT FlyBase_NNP database_NN ,_, we_PRP
+          retrieved_VBD sequences_NNS for_IN each_DT gene_NN from_IN GenBank_NNP [_NN 6_CD ,_, 7_CD ]_NN
+          and_CC generated_VBD a_DT multiple-_NN FASTA_NNP dataset_NN ._. Occasionally_RB ,_,
+          sequence_NN was_VBD retrieved_VBN from_IN the_DT original_JJ literature_NN ._. The_DT
+          FASTA_NNP dataset_NN was_VBD then_RB aligned_VBN to_TO the_DT Release_NNP 3_CD genome_NN by_IN
+          Sim_NNP 4_CD alignment_NN ._. MicroRNAs_NNP were_VBD aligned_VBN by_IN BLASTN_NNP
+          analysis_NN ;_: a_DT single_JJ exact_JJ match_NN was_VBD found_VBN for_IN each_DT of_IN the_DT
+          microRNAs_NNS listed_VBN in_IN FlyBase_NNP ._.
+        
+        
+          Evidence_NN for_IN gene_NN structures_NNS
+          
+            Gene_NNP prediction_NN data_NNS
+            The_DT publicly_RB available_JJ version_NN of_IN Genie_NNP ,_, which_WDT does_VBZ
+            not_RB utilize_VB EST_NNP or_CC BLAST_NN evidence_NN [_NN 20_CD ]_NN ,_, predicted_VBD
+            13_CD ,_, 794_CD genes_NNS on_IN the_DT finished_VBN sequence_NN ._. GENSCAN_NNP
+            predicted_VBD 19_CD ,_, 189_CD genes_NNS ._. As_IN reported_VBD previously_RB [_NN 3_CD ,_,
+            20_CD ]_NN ,_, Genie_NNP appears_VBZ to_TO predict_VB fewer_RBR false_JJ positives_NNS ,_,
+            perhaps_RB because_IN it_PRP has_VBZ been_VBN trained_VBN on_IN 
+            Drosophila_NNP sequences_NNS ,_, whereas_IN
+            GENSCAN_NNP has_VBZ only_RB been_VBN trained_VBN on_IN vertebrate_NN datasets_NNS [_NN
+            21_CD ]_NN ._. However_RB ,_, GENSCAN_NNP also_RB shows_VBZ greater_JJR sensitivity_NN
+            than_IN Genie_NNP ,_, identifying_VBG some_DT real_JJ genes_NNS that_IN Genie_NNP
+            fails_VBZ to_TO find_VB ._. To_TO balance_VB the_DT false-positive_JJ and_CC
+            false-negative_JJ rates_NNS of_IN GENSCAN_NNP ,_, we_PRP used_VBD an_DT empirical_JJ
+            prediction_NN score_NN as_IN a_DT threshold_NN ,_, as_IN done_VBN previously_RB [_NN
+            44_CD ]_NN ._. In_IN the_DT absence_NN of_IN other_JJ supporting_VBG evidence_NN for_IN a_DT
+            gene_NN ,_, we_PRP used_VBD GENSCAN_NNP predictions_NNS only_RB when_WRB at_IN least_JJS
+            one_CD exon_NN had_VBD a_DT score_NN >_NN 45_CD ;_: this_DT is_VBZ a_DT stringent_JJ
+            threshold_NN ,_, as_IN 21_CD %_NN of_IN the_DT genes_NNS in_IN Release_NNP 3_CD with_IN
+            full-length_JJ cDNA_NN evidence_NN do_VBP not_RB contain_VB any_DT exons_NNS
+            scoring_VBG >_NN 45_CD ._.
+          
+          
+            BLASTX_NNP /_NN TBLASTX_NNP sequence_NN similarity_NN data_NNS
+            To_TO detect_VB proteins_NNS with_IN significant_JJ sequence_NN
+            similarity_NN ,_, we_PRP used_VBD BLASTX_NNP to_TO compare_VB translated_VBN
+            genomic_JJ sequence_NN to_TO peptides_NNS in_IN other_JJ species_NNS included_VBN
+            in_IN SWALL_NNP [_NN 13_CD ,_, 83_CD ]_NN ,_, and_CC TBLASTX_NNP to_TO compare_VB translated_VBN
+            genomic_JJ sequence_NN to_TO virtual_JJ translations_NNS of_IN the_DT rodent_NN
+            UniGene_NNP set_VBD [_NN 84_CD ]_NN and_CC insect_NN sequences_NNS in_IN dbEST_NN [_NN 69_CD ]_NN ._.
+            We_PRP also_RB looked_VBD for_IN sequence_NN similarities_NNS to_TO 
+            Drosophila_NNP peptides_NNS that_WDT had_VBD
+            experimental_JJ verification_NN ,_, but_CC not_RB to_TO those_DT
+            representing_VBG purely_RB hypothetical_JJ or_CC computational_NN gene_NN
+            models_NNS (_( see_VB below_IN )_) ._. Although_IN the_DT number_NN of_IN proteins_NNS in_IN
+            a_DT public_JJ database_NN like_IN TrEMBL_NNP [_NN 13_CD ]_NN has_VBZ increased_VBN
+            exponentially_RB in_IN the_DT time_NN between_IN the_DT Release_NNP 1_CD
+            annotation_NN in_IN November_NNP 1999_CD and_CC the_DT Release_NNP 3_CD
+            annotation_NN in_IN 2002_CD [_NN 85_CD ]_NN ,_, the_DT increased_VBN size_NN of_IN the_DT
+            protein_NN datasets_NNS resulted_VBD in_IN a_DT 14_CD %_NN increase_NN in_IN the_DT
+            number_NN of_IN fly_NN genes_NNS that_WDT produce_VBP proteins_NNS with_IN
+            similarity_NN to_TO other_JJ proteins_NNS ._. In_IN March_NNP 2000_CD ,_, Adams_NNP 
+            et_CC al_NN ._. [_NN 3_CD ]_NN reported_VBD that_IN 9_CD ,_, 612_CD
+            (_( 71_CD %_NN )_) of_IN the_DT 13_CD ,_, 601_CD of_IN the_DT Release_NNP 1_CD genes_NNS showed_VBD a_DT
+            match_NN to_TO another_DT protein_NN ._. We_PRP now_RB find_VBP that_IN 10_CD ,_, 996_CD (_( 82_CD %_NN )_)
+            of_IN the_DT Release_NNP 3_CD protein-coding_JJ genes_NNS show_VBP a_DT match_NN by_IN
+            BLASTX_NNP or_CC TBLASTX_NNP (_( with_IN expectation_NN value_NN less_JJR than_IN or_CC
+            equal_JJ to_TO 1_CD ×_NN e_SYM -_: 7_CD )_) ._. However_RB ,_, we_PRP note_VBP that_IN the_DT datasets_NNS
+            we_PRP used_VBD were_VBD fixed_VBN before_IN the_DT release_NN of_IN the_DT genomic_JJ
+            sequence_NN of_IN 
+            A_DT ._. gambiae_NN [_NN 86_CD ]_NN ,_, the_DT only_RB other_JJ
+            dipteran_NN (_( or_CC arthropod_NN )_) with_IN a_DT complete_JJ genome_NN
+            sequence_NN ._. We_PRP expect_VBP that_IN a_DT higher_JJR percentage_NN of_IN 
+            Drosophila_NNP proteins_NNS will_MD show_VB
+            sequence_NN similarity_NN to_TO 
+            Anopheles_NNP proteins_NNS ,_, because_IN 
+            A_DT ._. gambiae_NN is_VBZ more_RBR closely_RB
+            related_VBN to_TO 
+            D_NNP ._. melanogaster_NN than_IN are_VBP the_DT
+            other_JJ available_JJ model_NN organisms_NNS [_NN 86_CD ]_NN ._.
+          
+          
+            EST_NNP and_CC cDNA_NN alignment_NN data_NNS
+            Prediction_NNP of_IN gene_NN models_NNS was_VBD made_VBN more_RBR rigorous_JJ by_IN
+            the_DT increased_VBN availability_NN of_IN cDNA_NN data_NNS ._. However_RB ,_,
+            misleading_JJ alignments_NNS can_MD be_VB created_VBN by_IN the_DT presence_NN of_IN
+            genomic_JJ DNA_NNP contaminants_NNS ,_, cDNA_NN clones_NNS containing_VBG two_CD
+            independent_JJ cDNAs_NNS co-ligated_JJ in_IN the_DT same_JJ plasmid_NN vector_NN
+            (_( chimeras_NNS )_) ,_, and_CC internal_JJ priming_VBG of_IN cDNAs_NNS during_IN
+            library_NN synthesis_NN ._. cDNA_NN clones_NNS derived_VBN from_IN
+            incompletely_RB processed_VBN primary_JJ transcripts_NNS are_VBP not_RB
+            readily_RB distinguishable_JJ from_IN alternative_NN splicing_VBG
+            without_IN experimental_JJ verification_NN ._. Moreover_RB ,_, cDNA_NN
+            sequences_NNS designated_VBN as_IN full_JJ length_NN may_MD actually_RB be_VB
+            truncated_JJ ;_: approximately_RB 1_CD ,_, 000_CD of_IN the_DT 9_CD ,_, 000_CD full-insert_JJ
+            sequences_NNS from_IN the_DT BDGP_NNP are_VBP probably_RB not_RB full-length_JJ [_NN
+            29_CD ,_, 30_CD ]_NN ._. The_DT Sim_NNP 4_CD alignment_NN tool_NN can_MD make_VB mistakes_NNS in_IN
+            determining_VBG splice_NN site_NN junctions_NNS or_CC completely_RB fail_VB to_TO
+            align_VBP very_RB small_JJ exons_NNS [_NN 24_CD ,_, 67_CD ]_NN ;_: indeed_RB ,_, a_DT small_JJ
+            number_NN of_IN cases_NNS of_IN failure_NN to_TO align_VBP microexons_NNS were_VBD
+            identified_VBN by_IN Stapleton_NNP 
+            et_CC al_NN ._. [_NN 30_CD ]_NN when_WRB they_PRP compared_VBD
+            the_DT predicted_VBN translation_NN products_NNS of_IN cDNAs_NNS with_IN those_DT
+            of_IN Release_NNP 3_CD gene_NN models_NNS ._. However_RB ,_, Haas_NNP 
+            et_CC al_NN ._. found_VBD est_NN 2_CD genome_NN and_CC
+            other_JJ alignment_NN tools_NNS were_VBD ,_, in_IN general_JJ ,_, not_RB superior_JJ to_TO
+            Sim_NNP 4_CD [_NN 24_CD ,_, 67_CD ]_NN ._. Despite_IN these_DT limitations_NNS ,_, alignment_NN of_IN
+            complete_JJ cDNA_NN sequences_NNS is_VBZ invaluable_JJ in_IN detecting_VBG
+            UTRs_NNP ,_, alternative_NN splicing_VBG events_NNS ,_, detailed_JJ exon-intron_JJ
+            structures_NNS ,_, nested_JJ genes_NNS ,_, and_CC other_JJ key_JJ aspects_NNS of_IN gene_NN
+            models_NNS ._.
+            Full-insert_NNP 
+            Drosophila_NNP melanogaster_NN cDNA_NN
+            sequences_NNS came_VBD from_IN a_DT number_NN of_IN sources_NNS ._. The_DT largest_JJS
+            set_NN of_IN full-insert_JJ cDNA_NN sequences_NNS came_VBD from_IN the_DT BDGP_NNP 
+            Drosophila_NNP Gene_NNP Collection_NNP (_( DGC_NNP )_)
+            project_NN [_NN 5_CD ,_, 29_CD ,_, 30_CD ]_NN ._. Of_IN the_DT protein-coding_JJ genes_NNS ,_,
+            9_CD ,_, 297_CD (_( 69_CD %_NN )_) show_NN a_DT match_NN to_TO full-insert_JJ sequences_NNS from_IN
+            the_DT cDNA_NN clones_NNS in_IN the_DT DGC_NNP ,_, and_CC in_IN some_DT cases_NNS ,_, more_JJR
+            than_IN one_CD DGC_NNP clone_NN provided_VBD definitive_JJ gene_NN models_NNS for_IN
+            alternatively_RB spliced_JJ products_NNS ._. At_IN the_DT time_NN of_IN
+            annotation_NN ,_, we_PRP had_VBD access_NN to_TO full-insert_JJ sequencing_VBG
+            reads_VBZ from_IN 9_CD ,_, 074_CD of_IN the_DT 10_CD ,_, 910_CD cDNA_NN clones_NNS ,_, but_CC only_RB
+            some_DT 6_CD ,_, 000_CD of_IN these_DT had_VBD been_VBN fully_RB assembled_VBN ._. Gene_NNP
+            models_NNS based_VBN on_IN incompletely_RB assembled_VBN cDNA_NN clones_NNS were_VBD
+            marked_VBN '_POS incomplete_JJ '_'' ._. These_DT gene_NN models_NNS will_MD be_VB among_IN
+            the_DT first_JJ annotations_NNS to_TO be_VB updated_VBN ._.
+            Sequences_NNP deposited_VBD in_IN public_JJ databanks_NNS like_IN
+            GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP [_NN 6_CD ,_, 7_CD ,_, 8_CD ,_, 9_CD ,_, 10_CD ,_, 11_CD ]_NN by_IN 
+            Drosophila_NNP researchers_NNS provided_VBD
+            definitive_JJ evidence_NN for_IN a_DT number_NN of_IN genes_NNS ._. For_IN a_DT subset_NN
+            of_IN well-studied_JJ genes_NNS ,_, FlyBase_NNP curators_NNS synthesized_JJ all_DT
+            of_IN the_DT available_JJ sequence_NN and_CC literature_NN data_NNS into_IN high_JJ
+            quality_NN Annotated_NNP Reference_NNP Gene_NNP Sequences_NNP (_( ARGS_NNP )_) that_WDT
+            have_VBP been_VBN deposited_VBN in_IN GenBank_NNP 's_POS RefSeq_NNP division_NN [_NN 1_CD ]_NN ._.
+            These_DT ARGS_NNP sequences_NNS correspond_VB to_TO 795_CD (_( 6_CD %_NN )_) of_IN the_DT
+            Release_NNP 3_CD annotations_NNS ._.
+            Other_JJ sequences_NNS came_VBD directly_RB to_TO FlyBase_NNP as_IN error_NN
+            reports_NNS from_IN the_DT scientific_JJ community_NN ._. FlyBase_NNP curated_JJ
+            636_CD reports_NNS with_IN information_NN about_IN 1_CD ,_, 094_CD genes_NNS as_IN
+            personal_JJ communications_NNS ,_, and_CC any_DT sequences_NNS supplied_VBN in_IN
+            these_DT reports_NNS were_VBD aligned_VBN to_TO the_DT genome_NN ._. In_IN all_DT ,_, 825_CD
+            (_( 6_CD %_NN )_) of_IN the_DT annotations_NNS overlapped_JJ these_DT sequences_NNS
+            (_( Table_NNP 3_LS )_) ._. Accurate_NNP annotation_NN of_IN three_CD gene_NN families_NNS
+            in_IN particular_RB was_VBD greatly_RB facilitated_JJ by_IN sequence_NN
+            submitted_VBN in_IN error_NN reports_NNS :_: 85_CD cytochrome_NN P_NN 450_CD
+            monooxygenase_NN genes_NNS (_( B_NNP ._. Dunkov_NNP ,_, personal_JJ communication_NN ,_,
+            FBrf_NNP 0132129_CD ,_, FBrf_NNP 0126925_CD ;_: D_NNP ._. R_NN ._. Nelson_NNP ,_, personal_JJ
+            communication_NN ,_, FBrf_NNP 0136021_CD )_) ,_, 80_CD gustatory_NN receptor_NN
+            genes_NNS (_( H_NNP ._. Robertson_NNP ,_, personal_JJ communication_NN ,_,
+            FBrf_NNP 0141780_CD ;_: K_NNP ._. Scott_NNP and_CC R_NN ._. Axel_NNP ,_, personal_JJ
+            communication_NN ,_, FBrf_NNP 0137428_CD )_) ,_, and_CC 61_CD odorant_NN receptor_NN
+            genes_NNS (_( H_NNP ._. Robertson_NNP ,_, personal_JJ communication_NN
+            FBrf_NNP 0136024_CD ;_: C_NNP ._. Warr_NNP and_CC L_NNP ._. Vosshall_NNP ,_, personal_JJ
+            communication_NN ,_, FBrf_NNP 0128191_CD )_) ._.
+          
+          
+            Determination_NNP of_IN confidence_NN values_NNS
+            The_DT extent_NN of_IN each_DT transcript_NN and_CC corresponding_JJ CDS_NNP
+            was_VBD extracted_VBN from_IN the_NNP '_POS 
+            Drosophila_NNP Genomic_NNP Sequence_NNP
+            Annotations_NNP '_POS file_NN (_( in_IN GFF_NNP format_NN [_NN 87_CD ]_NN )_) ,_, which_WDT is_VBZ
+            available_JJ [_NN 75_CD ]_NN ._. The_DT extent_NN of_IN overlap_VB of_IN each_DT
+            transcript_NN against_IN the_DT supporting_VBG evidence_NN used_VBN during_IN
+            the_DT re-annotation_JJ was_VBD determined_VBN using_VBG an_DT intersection_NN
+            algorithm_NN to_TO determine_VB the_DT annotations_NNS overlapped_JJ by_IN
+            particular_JJ types_NNS of_IN evidence_NN [_NN 12_CD ]_NN ._.
+            The_DT evidence_NN datasets_NNS used_VBN included_VBD :_: gene_NN prediction_NN
+            based_VBN on_IN Genie_NNP [_NN 20_CD ]_NN and_CC GENSCAN_NNP [_NN 21_CD ]_NN ;_: Sim_NNP 4_CD alignments_NNS
+            to_TO EST_NNP and_CC full-insert_JJ cDNA_NN sequencing_VBG reads_VBZ derived_VBN
+            from_IN the_DT BDGP_NNP cDNA_NN project_NN [_NN 29_CD ,_, 30_CD ]_NN ,_, the_DT earlier_JJR
+            analysis_NN of_IN the_DT 
+            Adh_NNP region_NN [_NN 44_CD ]_NN ,_, and_CC dbEST_NN (_( for_IN
+            example_NN [_NN 16_CD ]_NN )_) ;_: FlyBase_NNP ARGS_NNP [_NN 1_CD ]_NN ;_: GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP
+            entries_NNS identified_VBN as_IN 
+            Drosophila_NNP cDNA_NN sequences_NNS [_NN 6_CD ,_, 7_CD ,_,
+            8_CD ,_, 9_CD ,_, 10_CD ,_, 11_CD ]_NN and_CC error_NN report_NN submissions_NNS to_TO FlyBase_NNP [_NN
+            1_CD ,_, 2_CD ]_NN ;_: and_CC BLASTX_NNP protein_NN homology_NN data_NNS ._. For_IN a_DT complete_JJ
+            list_NN of_IN the_DT evidence_NN datasets_NNS and_CC their_PRP$ description_NN see_VB
+            [_NN 82_CD ]_NN ._. Data_NNP were_VBD filtered_VBN using_VBG the_DT Bioinformatics_NNP
+            Output_NN Parser_NNP (_( BOP_NNP )_) ,_, which_WDT also_RB assembled_VBD all_DT EST_NNP and_CC
+            full-insert_JJ cDNA_NN sequence_NN reads_VBZ from_IN a_DT particular_JJ cDNA_NN
+            clone_NN into_IN a_DT virtual_JJ assembly_NN (_( BOP_NNP [_NN 12_CD ]_NN )_) ._. The_DT Apollo_NNP
+            tool_NN displayed_VBD these_DT assemblies_NNS with_IN sequence_NN gaps_NNS
+            indicated_VBD differently_RB from_IN introns_NNS ._.
+            The_DT algorithm_NN used_VBN to_TO assess_VB relative_JJ annotation_NN
+            quality_NN assigned_VBN one_CD point_NN for_IN overlap_VB of_IN a_DT gene_NN
+            prediction_NN ,_, either_CC Genie_NNP or_CC GENSCAN_NNP or_CC both_DT ._. One_CD
+            additional_JJ point_NN was_VBD assigned_VBN for_IN overlap_VB with_IN protein_NN
+            similarity_NN data_NNS ._. The_DT remaining_VBG datasets_NNS were_VBD considered_VBN
+            in_IN the_DT following_VBG order_NN and_CC resulted_VBD in_IN an_DT additional_JJ
+            one_CD or_CC two_CD points_NNS :_: the_DT cDNA_NN and_CC annotation_NN data_NNS were_VBD
+            analyzed_VBN to_TO determine_VB if_IN any_DT entry_NN in_IN this_DT class_NN
+            spanned_VBD the_DT entire_JJ length_NN of_IN the_DT CDS_NNP ;_: if_IN so_RB ,_, an_DT
+            additional_JJ two_CD points_NNS were_VBD assigned_VBN ,_, and_CC if_IN not_RB ,_,
+            GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP and_CC error_NN report_NN entries_NNS were_VBD
+            analyzed_VBN and_CC if_IN any_DT spanned_VBD the_DT length_NN of_IN CDS_NNP ,_, two_CD
+            points_NNS were_VBD assigned_VBN ;_: if_IN none_NN of_IN these_DT data_NNS classes_NNS
+            corresponded_VBD to_TO the_DT full-length_JJ CDS_NNP ,_, then_RB the_DT existence_NN
+            of_IN partial_JJ cDNA_NN data_NNS and_CC /_NN or_CC overlapping_VBG EST_NNP data_NNS
+            merited_JJ one_CD point_NN ._. Details_NNS of_IN the_DT rules_NNS for_IN this_DT
+            classification_NN system_NN can_MD be_VB found_VBN at_IN [_NN 82_CD ]_NN ._.
+          
+          
+            Integrity_NNP checks_NNS
+            SWISS-PROT_NNP /_NN TrEMBL_NNP validation_NN of_IN the_DT translated_VBN
+            models_NNS by_IN PEP-QC_NNP is_VBZ described_VBN below_IN ._. Both_DT annotated_JJ
+            segments_NNS and_CC chromosome_NN arms_NNS were_VBD validated_JJ using_VBG the_DT
+            Sequin_NNP software_NN tool_NN from_IN the_DT NCBI_NNP [_NN 71_CD ]_NN ,_, which_WDT found_VBD
+            mistakes_NNS in_IN exon-intron_JJ structure_NN ,_, start_NN of_IN
+            translation_NN ,_, and_CC ID_NNP duplication_NN ._. We_PRP queried_VBN our_PRP$ dataset_NN
+            for_IN proteins_NNS <_NN 50_CD amino_JJ acids_NNS ,_, CDS_NNP features_NNS making_VBG
+            up_RP less_JJR than_IN 25_CD %_NN of_IN the_DT predicted_VBN transcript_NN length_NN ,_,
+            introns_NNS <_NN 48_CD bp_NN ,_, and_CC visually_RB inspected_VBD each_DT
+            annotation_NN in_IN these_DT classes_NNS making_VBG comments_NNS where_WRB
+            appropriate_JJ ._. We_PRP checked_VBD annotations_NNS that_IN overlapped_JJ
+            transposable_JJ elements_NNS and_CC tRNA_NN genes_NNS ,_, or_CC appeared_VBD
+            multiple_JJ times_NNS in_IN the_DT genome_NN with_IN duplicate_VB
+            identifiers_NNS ._. We_PRP verified_VBN that_WDT deleted_VBN Release_NNP 2_CD
+            annotations_NNS had_VBD no_DT independent_JJ evidence_NN in_IN
+            literature-curated_JJ references_NNS ._. Finally_RB ,_, in_IN order_NN to_TO
+            allow_VB the_DT construction_NN of_IN a_DT wild-type_JJ proteome_NN from_IN the_DT
+            mutant_JJ sequenced_JJ 
+            y_NN 1_CD ;_: 
+            cn_NN 1_CD 
+            bw_NN 1_CD 
+            sp_NN 1_CD strain_NN ,_, we_PRP replaced_VBD annotated_JJ
+            sequences_NNS from_IN known_VBN mutated_VBN genes_NNS (_( 
+            y_NN ,_, cn_NN ,_, bw_NN ,_, MstProx_NNP ,_, LysE_NNP ,_, Rh_NNP 6_CD )_)
+            with_IN RefSeq_NNP wild-type_JJ sequences_NNS from_IN GenBank_NNP with_IN an_DT
+            appropriate_JJ note_NN ._.
+          
+          
+            Non-consensus_NNP splice_NN sites_NNS
+            All_DT introns_NNS within_IN protein-coding_JJ genes_NNS were_VBD
+            examined_VBN for_IN conserved_JJ GT_NNP /_NN AG_NNP splice_NN junctions_NNS with_IN the_DT
+            Sequin_NNP program_NN [_NN 70_CD ,_, 71_CD ]_NN ,_, and_CC all_DT instances_NNS of_IN
+            annotations_NNS lacking_VBG GT_NNP /_NN AG_NNP splice_NN junctions_NNS were_VBD
+            inspected_VBN and_CC commented_VBD upon_IN ._. Splice_NNP junctions_NNS were_VBD
+            based_VBN upon_IN alignment_NN of_IN cDNA_NN /_NN EST_NNP sequence_NN and_CC ,_, in_IN the_DT
+            absence_NN of_IN such_JJ data_NNS ,_, on_IN gene_NN prediction_NN models_NNS ._. Even_RB
+            for_IN transcript_NN structures_NNS based_VBN upon_IN EST_NNP data_NNS ,_, the_DT
+            number_NN of_IN atypical_JJ splice_NN junctions_NNS is_VBZ probably_RB an_DT
+            underestimate_NN ._. The_DT alignment_NN algorithm_NN used_VBN (_( Sim_NNP 4_LS )_)
+            forced_VBN intron_NN junctions_NNS to_TO occur_VB at_IN GT_NNP /_NN AG_NNP sites_NNS
+            whenever_WRB possible_JJ ,_, even_RB at_IN the_DT expense_NN of_IN a_DT
+            several-base_JJ mismatch_NN ._. This_DT occasionally_RB resulted_VBN in_IN
+            apparent_JJ early_JJ translation_NN termination_NN ,_, in_IN which_WDT case_NN
+            the_DT annotator_NN checked_VBN for_IN a_DT GC_NNP donor_NN that_WDT would_MD allow_VB
+            read-through_JJ ._. Other_JJ GC_NNP splice_NN annotations_NNS were_VBD based_VBN on_IN
+            information_NN in_IN the_DT literature_NN or_CC GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP
+            records_NNS ._. With_IN the_DT exception_NN of_IN GT_NNP /_NN AG_NNP junctions_NNS ,_, we_PRP
+            imposed_VBD a_DT higher_JJR standard_NN of_IN verification_NN for_IN
+            unconventional_JJ splice_NN annotations_NNS :_: sequence_NN data_NNS from_IN a_DT
+            cDNA_NN isolated_VBN from_IN the_DT sequenced_JJ strain_NN ,_, or_CC multiple_JJ
+            consistent_JJ ESTs_NNP ._.
+          
+          
+            SWISS-PROT_NNP /_NN TrEMBL_NNP validation_NN of_IN the_DT models_NNS
+            The_DT SWISS-PROT_NNP and_CC TrEMBL_NNP protein_NN databases_NNS [_NN 13_CD ]_NN
+            were_VBD used_VBN to_TO validate_NN the_DT integrity_NN of_IN the_DT annotations_NNS
+            and_CC to_TO track_VB consistency_NN with_IN previously_RB published_VBN
+            data_NNS ._. The_DT SWISS-PROT_NNP Protein_NNP Knowledgebase_NNP [_NN 80_CD ]_NN is_VBZ a_DT
+            curated_JJ protein_NN sequence_NN database_NN that_WDT provides_VBZ a_DT high_JJ
+            level_NN of_IN annotation_NN ,_, a_DT minimal_JJ level_NN of_IN redundancy_NN and_CC
+            high_JJ level_NN of_IN integration_NN with_IN other_JJ databases_NNS ._. The_DT
+            TrEMBL_NNP database_NN [_NN 81_CD ]_NN contains_VBZ the_DT translations_NNS of_IN all_DT
+            CDS_NNP present_JJ in_IN the_DT EMBL_NNP Nucleotide_NNP Sequence_NNP Database_NNP [_NN
+            8_CD ,_, 9_CD ]_NN ,_, which_WDT are_VBP not_RB yet_RB integrated_VBN into_IN SWISS-PROT_NNP [_NN
+            80_CD ]_NN ._. A_DT non-redundant_JJ set_NN of_IN SWISS-PROT_NNP and_CC TrEMBL_NNP 
+            Drosophila_NNP sequences_NNS was_VBD created_VBN ,_,
+            and_CC sequences_NNS representing_VBG purely_RB hypothetical_JJ or_CC
+            computational_NN gene_NN models_NNS (_( those_DT corresponding_JJ to_TO CG_NNP ,_,
+            BG_NNP ,_, or_CC EG_NNP genes_NNS in_IN FlyBase_NNP )_) were_VBD excluded_VBN ._. The_DT PEP-QC_NNP
+            program_NN [_NN 12_CD ]_NN compared_VBD the_DT resulting_VBG collection_NN of_IN 3687_CD
+            
+            D_NNP ._. melanogaster_NN sequences_NNS
+            (_( SPTRreal_NNP )_) to_TO the_DT annotated_JJ peptides_NNS using_VBG BLASTP_NNP [_NN
+            22_CD ]_NN ._. Each_DT gene_NN was_VBD placed_VBN into_IN one_CD of_IN four_CD '_POS validation_NN '_''
+            categories_NNS :_: Perfect_NNP match_VBP to_TO SPTRreal_NNP (_( annotated_JJ
+            peptide_NN of_IN identical_JJ length_NN with_IN 100_CD %_NN sequence_NN
+            identity_NN )_) ,_, Single_NNP AA_NN substitutions_NNS (_( annotated_JJ peptide_NN
+            of_IN identical_JJ length_NN with_IN ≥_NN 99_CD %_NN sequence_NN identity_NN )_) ,_,
+            Significant_JJ mismatch_NN (_( annotated_JJ peptide_NN and_CC SPTRreal_NNP
+            entry_NN do_VBP not_RB align_VBP over_IN their_PRP$ entire_JJ length_NN ,_, but_CC do_VBP
+            contain_VB aligned_VBN spans_NNS of_IN 40_CD residues_NNS or_CC 20_CD %_NN peptide_NN
+            length_NN ,_, with_IN at_IN least_JJS 97_CD %_NN sequence_NN identity_NN )_) ,_, or_CC Poor_NNP
+            match_VBP (_( poor_JJ or_CC no_DT BLAST_NN hits_NNS )_) ._. For_IN the_DT first_JJ two_CD
+            categories_NNS ,_, the_DT SPTRreal_NNP peptide_NN was_VBD allowed_VBN to_TO match_VB a_DT
+            portion_NN of_IN the_DT annotated_JJ peptide_NN if_IN it_PRP was_VBD designated_VBN
+            as_IN a_NNP '_POS fragment_NN '_'' of_IN the_DT full_JJ peptide_NN sequence_NN (_( 125_CD or_CC
+            3_CD ._. 4_CD %_NN of_IN SPTRreal_NNP genes_NNS are_VBP designated_VBN with_IN this_DT
+            tag_NN )_) ._.
+            In_IN Release_NNP 3_CD ,_, about_IN 75_CD %_NN of_IN all_DT genes_NNS with_IN a_DT cognate_NN
+            in_IN SPTRreal_NNP are_VBP in_IN the_DT Perfect_NNP match_NN and_CC Single_NNP AA_NN
+            substitution_NN categories_NNS (_( 2_CD ,_, 764_CD out_IN of_IN 3_CD ,_, 687_CD )_) ._. Curators_NNP
+            examined_VBD every_DT gene_NN marked_VBD Single_NNP AA_NN substitutions_NNS ,_,
+            Significant_JJ mismatch_NN ,_, or_CC Poor_NNP match_VBP ._. In_IN some_DT cases_NNS ,_,
+            annotation_NN errors_NNS were_VBD detected_VBN and_CC gene_NN models_NNS were_VBD
+            modified_VBN to_TO produce_VB a_DT translation_NN matching_VBG the_DT SPTRreal_NNP
+            sequence_NN ._. For_IN example_NN ,_, curators_NNS used_VBD the_DT PEP-QC_NNP output_NN
+            to_TO change_VB translation_NN start_NN sites_NNS to_TO the_DT experimentally_RB
+            reported_VBN position_NN where_WRB appropriate_JJ ._. In_IN other_JJ cases_NNS ,_,
+            discrepancies_NNS may_MD be_VB due_JJ to_TO strain_VB polymorphisms_NNS ,_,
+            errors_NNS in_IN the_DT reported_VBN DNA_NNP sequence_NN on_IN which_WDT the_DT
+            SPTRreal_NNP entries_NNS were_VBD based_VBN ,_, or_CC undetected_JJ errors_NNS in_IN
+            either_DT the_DT Release_NNP 3_CD annotation_NN or_CC sequence_NN ._. Given_VBN the_DT
+            high_JJ quality_NN of_IN the_DT underlying_VBG Release_NNP 3_CD genomic_JJ
+            sequence_NN ,_, we_PRP believe_VBP that_IN in_IN many_JJ cases_VBZ the_DT Release_NNP 3_CD
+            annotations_NNS are_VBP more_RBR accurate_JJ than_IN the_DT SPTRreal_NNP
+            sequences_NNS ._.
+            The_DT improvement_NN over_IN the_DT Release_NNP 2_CD annotations_NNS is_VBZ
+            evident_JJ ._. The_DT combined_VBN number_NN of_IN Perfect_NNP match_VB and_CC
+            Single_NNP AA_NN substitution_NN annotations_NNS has_VBZ increased_VBN by_IN
+            22_CD %_NN ,_, from_IN 2_CD ,_, 260_CD in_IN Release_NNP 2_CD to_TO 2_CD ,_, 764_CD in_IN Release_NNP 3_CD ,_,
+            while_IN the_DT combined_VBN number_NN of_IN Significant_JJ mismatch_NN and_CC
+            Poor_NNP match_VBP annotations_NNS has_VBZ decreased_VBN by_IN 35_CD %_NN (_( 1_CD ,_, 427_CD in_IN
+            Release_NNP 2_CD versus_CC 923_CD in_IN Release_NNP 3_LS )_) ._. Over_IN the_DT past_JJ two_CD
+            years_NNS ,_, SWISS-PROT_NNP has_VBZ incorporated_VBN sequences_NNS from_IN
+            Releases_NNP 1_CD and_CC 2_CD of_IN the_DT genomic_JJ annotations_NNS into_IN the_DT
+            curated_JJ protein_NN sequences_NNS (_( E_NNP ._. Whitfield_NNP ,_, personal_JJ
+            communication_NN )_) ._. Therefore_RB ,_, while_IN the_DT overall_JJ quality_NN of_IN
+            the_DT sequences_NNS in_IN SWISS-PROT_NNP has_VBZ almost_RB certainly_RB
+            increased_VBN during_IN this_DT time_NN ,_, it_PRP is_VBZ still_RB worth_JJ asking_NN
+            the_DT question_NN -_: how_WRB well_RB do_VBP the_DT Release_NNP 3_CD annotations_NNS
+            match_VBP SWISS-PROT_NNP sequences_NNS deposited_VBN before_IN the_DT initial_JJ
+            genome_NN annotations_NNS ?_. This_DT question_NN was_VBD answered_VBN for_IN the_DT
+            Release_NNP 1_CD annotations_NNS using_VBG a_DT dataset_NN of_IN 1_CD ,_, 049_CD
+            polypeptide_NN sequences_NNS created_VBN in_IN SWISS-PROT_NNP before_IN
+            1999_CD ,_, prior_RB to_TO the_DT publication_NN of_IN the_DT annotated_JJ Release_NNP
+            1_CD sequence_NN [_NN 14_CD ]_NN ._. That_DT group_NN found_VBD that_IN 578_CD ,_, or_CC 55_CD %_NN ,_, of_IN
+            this_DT SWISS-PROT_NNP set_VBD had_VBD an_DT annotated_JJ peptide_NN of_IN
+            identical_JJ length_NN with_IN at_IN least_JJS 95_CD %_NN amino_JJ acid_NN identity_NN
+            (_( A_DT ._. J_NNP ._. Gentles_NNP ,_, personal_JJ communication_NN )_) ._. Performing_VBG the_DT
+            same_JJ analysis_NN using_VBG the_DT Release_NNP 3_CD annotations_NNS ,_, we_PRP find_VBP
+            that_IN 694_CD ,_, or_CC 66_CD %_NN ,_, of_IN the_DT peptides_NNS in_IN the_DT same_JJ
+            SWISS-PROT_NNP dataset_NN match_NN with_IN 95_CD %_NN identity_NN ._. This_DT 20_CD %_NN
+            increase_NN in_IN the_DT number_NN of_IN matching_VBG polypeptides_NNS most_RBS
+            likely_JJ is_VBZ a_DT reflection_NN of_IN the_DT improvement_NN in_IN the_DT
+            quality_NN of_IN the_DT annotations_NNS ._. But_CC what_WP about_IN the_DT 34_CD %_NN of_IN
+            cases_NNS that_WDT show_NN significant_JJ mismatch_NN between_IN Release_NNP 3_CD
+            and_CC SWISS-PROT_NNP ?_. We_PRP have_VBP examined_VBN these_DT cases_NNS and_CC
+            believe_VBP that_IN the_DT large_JJ majority_NN of_IN these_DT remaining_VBG
+            discrepancies_NNS are_VBP not_RB due_JJ to_TO mistakes_NNS in_IN our_PRP$
+            annotation_NN ,_, but_CC due_JJ to_TO strain_VB polymorphisms_NNS ,_, as_RB well_RB as_IN
+            errors_NNS in_IN the_DT sequence_NN underlying_VBG the_DT SWISS-PROT_NNP
+            entries_NNS created_VBN before_IN 1999_CD ._. If_IN this_DT were_VBD indeed_RB the_DT
+            case_NN ,_, then_RB the_DT analysis_NN of_IN Karlin_NNP 
+            et_CC al_NN ._. [_NN 14_CD ]_NN would_MD have_VB grossly_RB
+            overestimated_JJ the_DT error_NN rate_NN in_IN the_DT Release_NNP 1_CD
+            annotations_NNS ._.
+          
+          
+            Drosophilagenes_NNP
+            References_NNP for_IN all_DT 
+            Drosophila_NNP genes_NNS mentioned_VBN in_IN the_DT
+            paper_NN can_MD be_VB found_VBN in_IN FlyBase_NNP [_NN 1_CD ,_, 2_CD ]_NN ._.
+          
+        
+      
+      
+        Additional_JJ data_NNS files_NNS
+        Supplementary_NNP tablesof_NN annotated_JJ pseudogenes_NNS ,_, the_DT
+        distribution_NN of_IN alternatively_RB spliced_JJ transcripts_NNS ,_, and_CC
+        dicistronic_JJ genes_NNS ,_, along_IN with_IN the_DT guidelines_NNS for_IN
+        re-annotation_JJ ,_, are_VBP available_JJ with_IN the_DT online_NN version_NN of_IN
+        this_DT paper_NN ._.
+        Additional_JJ data_NNS file_VBP 1_CD
+        Supplementary_NNP tables_NNS
+        Supplementary_NNP tables_NNS
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+      
+    
+  

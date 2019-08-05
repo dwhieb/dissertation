@@ -1,0 +1,652 @@
+
+  
+    
+      
+        Background_NNP
+        The_DT availability_NN of_IN a_DT large_JJ number_NN of_IN protein_NN sequences_NNS ,_,
+        including_VBG complete_JJ protein_NN sets_NNS encoded_JJ in_IN diverse_JJ genomes_NNS ,_,
+        and_CC the_DT rapidly_RB growing_VBG database_NN of_IN protein_NN structures_NNS have_VBP
+        already_RB greatly_RB impacted_VBN on_IN our_PRP$ understanding_NN of_IN the_DT
+        evolution_NN of_IN protein_NN structure_NN and_CC function_NN [_NN 1_CD ,_, 2_CD ]_NN ._. This_DT
+        process_NN has_VBZ been_VBN aided_VBN by_IN the_DT development_NN of_IN powerful_JJ
+        algorithms_NNS and_CC sensitive_JJ computational_NN tools_NNS for_IN detecting_VBG
+        sequence_NN and_CC structural_JJ similarities_NNS between_IN proteins_NNS ._. In_IN
+        particular_JJ ,_, methods_NNS that_WDT extract_NN information_NN from_IN multiple_JJ
+        alignments_NNS to_TO construct_VB various_JJ types_NNS of_IN sequence_NN profiles_NNS
+        and_CC use_VB the_DT resulting_VBG sequence_NN profiles_NNS for_IN iterative_JJ
+        database_NN searching_VBG ,_, such_JJ as_IN PSI-BLAST_NNP and_CC
+        Hidden-_NNP Markov-_NNP Model_NNP (_( HMM_NNP )_) -_: based_VBN approaches_NNS ,_, have_VBP
+        substantially_RB improved_VBN the_DT detection_NN of_IN subtle_JJ similarities_NNS
+        between_IN proteins_NNS that_WDT previously_RB were_VBD amenable_JJ only_RB to_TO
+        direct_VB structural_JJ comparison_NN [_NN 3_CD ,_, 4_CD ]_NN ._. The_DT sensitivity_NN and_CC
+        accuracy_NN of_IN these_DT methods_NNS have_VBP been_VBN extensively_RB tested_VBN and_CC
+        statistical_JJ approaches_NNS for_IN validating_VBG the_DT observed_VBD
+        similarities_NNS are_VBP available_JJ [_NN 5_CD ,_, 6_CD ,_, 7_CD ,_, 8_CD ,_, 9_CD ,_, 10_CD ,_, 11_CD ]_NN ._.
+        Despite_IN these_DT achievements_NNS ,_, detection_NN and_CC interpretation_NN
+        of_IN relationships_NNS between_IN homologous_RB proteins_VBZ that_WDT have_VBP
+        limited_JJ sequence_NN similarity_NN remains_VBZ a_DT major_JJ challenge_NN ._. Such_JJ
+        studies_NNS typically_RB require_VBP a_DT case-by-case_JJ approach_NN that_WDT is_VBZ
+        guided_VBN by_IN a_DT detailed_VBN understanding_NN of_IN protein_NN
+        sequence-structure_JJ patterns_NNS and_CC is_VBZ rooted_VBN in_IN the_DT biology_NN of_IN
+        the_DT proteins_NNS analyzed_VBD ._. Prediction_NNP of_IN structures_NNS and_CC
+        function_NN (_( s_VBZ )_) of_IN uncharacterized_JJ proteins_NNS is_VBZ one_CD of_IN the_DT
+        principal_JJ outcomes_NNS of_IN these_DT analyses_NNS ,_, and_CC experimental_JJ
+        verification_NN of_IN such_JJ predictions_NNS tends_VBZ to_TO increase_VB
+        confidence_NN in_IN the_DT validity_NN of_IN sequence-structure_JJ
+        comparative_JJ approaches_NNS ._. The_DT negative_JJ feedback_NN from_IN
+        experiments_NNS that_WDT failed_VBD to_TO confirm_VB a_DT computational_NN
+        prediction_NN is_VBZ potentially_RB even_RB more_RBR important_JJ ,_, because_IN it_PRP
+        could_MD result_VB in_IN revision_NN and_CC refinement_NN of_IN the_DT
+        computational_NN methods_NNS ._.
+        When_WRB examining_VBG cases_NNS of_IN reported_JJ prediction_NN followed_VBN by_IN
+        experimental_JJ validation_NN ,_, however_RB ,_, we_PRP encountered_VBD several_JJ
+        paradoxical_JJ situations_NNS ._. In_IN each_DT of_IN these_DT ,_, a_DT prediction_NN that_WDT
+        has_VBZ been_VBN reportedly_RB confirmed_VBN by_IN experiment_NN was_VBD
+        incompatible_JJ with_IN results_NNS obtained_VBN with_IN several_JJ standard_JJ
+        computational_NN procedures_NNS ._. More_RBR importantly_RB ,_, alternative_JJ
+        predictions_NNS ,_, supported_VBN by_IN statistically_RB significant_JJ
+        sequence_NN and_CC /_NN or_CC structural_JJ similarity_NN ,_, were_VBD made_VBN in_IN some_DT of_IN
+        these_DT cases_NNS ._. Here_RB we_PRP present_JJ several_JJ such_JJ mysteries_NNS ,_,
+        describe_VBP the_DT refutation_NN of_IN the_DT original_JJ predictions_NNS and_CC the_DT
+        new_JJ predictions_NNS ,_, wherever_WRB feasible_JJ ,_, and_CC discuss_VB the_DT
+        discrepancy_NN between_IN the_DT computational_NN and_CC experimental_JJ
+        results_NNS ._. The_DT choice_NN of_IN the_DT cases_NNS was_VBD not_RB systematic_JJ ;_:
+        rather_RB ,_, those_DT chosen_VBN were_VBD notable_JJ because_IN they_PRP relied_VBD on_IN
+        novel_NN computational_NN techniques_NNS ,_, exploited_VBN particularly_RB
+        subtle_JJ sequence_NN or_CC structural_JJ motifs_NNS ,_, and_CC dealt_VBD with_IN
+        crucial_JJ biological_JJ problems_NNS ._.
+      
+      
+        Results_NNS
+        
+          MJ_NNP 1477_CD :_: a_DT predicted_VBN archaeal_NN cysteinyl-t_JJ RNA_NNP
+          synthetase_NN
+          Aminoacyl-t_NNP RNA_NNP synthetases_NNS (_( aaRSs_NNS )_) specific_JJ for_IN 17_CD of_IN
+          the_DT 20_CD amino_JJ acids_NNS are_VBP universally_RB present_JJ in_IN cellular_JJ
+          life_NN forms_NNS ._. The_DT three_CD exceptions_NNS are_VBP GlnRS_NNP ,_, AsnRS_NNP and_CC
+          CysRS_NNP ._. GInRS_NNP and_CC AsnRS_NNP are_VBP missing_VBG in_IN many_JJ bacteria_NNS and_CC
+          archaea_NN because_IN glutamine_NN and_CC asparagine_NN are_VBP incorporated_VBN
+          into_IN proteins_NNS through_IN transamidation_NN of_IN glutamate_NN and_CC
+          aspartate_NN ,_, respectively_RB ._. CysRS_NNP is_VBZ missing_VBG in_IN two_CD archaeal_NN
+          methanogens_NNS whose_WP$ genomes_NNS have_VBP been_VBN sequenced_JJ -_: 
+          Methanobacterium_NNP
+          thermoautotrophicum_NN and_CC 
+          Methanococcus_NNP jannaschii_NN [_NN 12_CD ]_NN ._. No_DT
+          alternative_JJ mechanism_NN for_IN cysteine_NN incorporation_NN into_IN
+          proteins_NNS is_VBZ known_VBN ;_: hence_RB the_DT absence_NN of_IN CysRS_NNP in_IN these_DT
+          organisms_NNS was_VBD an_DT enigma_NN ._.
+          Two_CD solutions_NNS to_TO this_DT puzzle_NN ,_, both_DT unusual_JJ ,_, have_VBP
+          recently_RB been_VBN proposed_VBN and_CC experimentally_RB validated_JJ ._. One_CD
+          involves_VBZ non-orthologous_JJ gene_NN displacement_NN ,_, a_DT situation_NN
+          in_IN which_WDT the_DT same_JJ essential_JJ function_NN is_VBZ carried_VBN out_IN by_IN
+          distantly_RB related_VBN or_CC even_RB unrelated_JJ proteins_NNS in_IN different_JJ
+          organisms_NNS [_NN 13_CD ,_, 14_CD ]_NN ._. It_PRP has_VBZ been_VBN shown_VBN that_IN 
+          M_NNP ._. jannaschii_NN ProRS_NNP ,_, a_DT class_NN II_NNP
+          synthetase_NN that_WDT is_VBZ unrelated_JJ to_TO the_DT class_NN I_PRP CysRS_NNP ,_,
+          substituted_VBN for_IN the_DT missing_VBG CysRS_NNP activity_NN [_NN 15_CD ,_, 16_CD ,_, 17_CD ]_NN ._.
+          The_DT other_JJ solution_NN involved_VBD a_DT new_JJ candidate_NN for_IN the_DT role_NN
+          of_IN CysRS_NNP ,_, the_DT MJ_NNP 1477_CD protein_NN from_IN 
+          M_NNP ._. jannaschii_NN ._. This_DT protein_NN and_CC its_PRP$
+          orthologs_NNS (_( direct_JJ evolutionary_JJ counterparts_NNS related_VBN by_IN
+          vertical_JJ descent_NN from_IN a_DT common_JJ ancestor_NN )_) from_IN the_DT
+          bacteria_NNS 
+          Thermotoga_NNP maritima_NN and_CC 
+          Deinococcus_NNP radiodurans_NNS were_VBD
+          identified_VBN as_IN '_POS distant_JJ orthologs_NNS '_POS of_IN the_DT 
+          Bacillus_NN subtilis_NNS CysRS_NNP by_IN using_VBG a_DT
+          computational_NN method_NN specifically_RB designed_VBD to_TO detect_VB
+          distantly_RB related_VBN orthologs_NNS [_NN 18_CD ]_NN ._. The_DT method_NN is_VBZ based_VBN on_IN
+          application_NN of_IN discriminant_NN analysis_NN to_TO alignment_NN scores_NNS ,_,
+          in_IN order_NN to_TO separate_VB the_DT scores_NNS for_IN pairs_NNS of_IN functionally_RB
+          identical_JJ proteins_NNS from_IN different_JJ genomes_NNS from_IN the_DT scores_NNS
+          for_IN proteins_NNS with_IN different_JJ functions_NNS ._. This_DT prediction_NN
+          was_VBD then_RB validated_JJ experimentally_RB by_IN showing_VBG that_IN MJ_NNP 1477_CD
+          had_VBD CysRS_NNP activity_NN 
+          in_IN vitro_NN and_CC that_IN an_DT ortholog_NN of_IN
+          MJ_NNP 1477_CD from_IN 
+          D_NNP ._. radiodurans_NNS ,_, DR_NNP 0705_CD ,_,
+          complemented_JJ a_DT CysRS_NNP deficient_NN ,_, temperature-sensitive_JJ ,_,
+          lethal_JJ 
+          E_NNP ._. coli_NNS mutant_JJ strain_NN [_NN 18_CD ]_NN ._. An_DT
+          important_JJ corollary_JJ of_IN these_DT surprising_JJ findings_NNS is_VBZ a_DT
+          rapid_JJ divergence_NN of_IN the_DT MJ_NNP 1477_CD family_NN from_IN CysRS_NNP ,_, such_JJ
+          that_IN all_PDT the_DT catalytic_JJ and_CC otherwise_RB functionally_RB
+          important_JJ residues_NNS characteristic_NN of_IN this_DT enzyme_NN ,_, and_CC
+          also_RB present_JJ in_IN other_JJ class_NN I_PRP aaRSs_NNS ,_, have_VBP changed_VBN ._.
+          Furthermore_RB ,_, MJ_NNP 1477_CD and_CC its_PRP$ orthologs_NNS do_VBP not_RB have_VB the_DT
+          accessory_JJ domains_NNS found_VBD in_IN all_DT known_VBN CysRS_NNP ,_, namely_RB the_DT
+          DALR_NNP domain_NN (_( named_VBN after_IN a_DT distinct_JJ amino-acid_JJ
+          signature_NN )_) ,_, which_WDT is_VBZ shared_VBN by_IN aaRSs_NNS of_IN several_JJ
+          specificities_NNS ,_, and_CC another_DT domain_NN specific_JJ to_TO CysRS_NNP [_NN
+          19_CD ]_NN ._.
+          We_PRP examined_VBD the_DT protein_NN sequences_NNS of_IN MJ_NNP 1477_CD and_CC its_PRP$
+          homologs_NNS using_VBG more_RBR traditional_JJ computational_NN techniques_NNS ._.
+          Almost_RB all_PDT these_DT proteins_NNS contain_VBP amino-terminal_JJ signal_NN
+          pep-tides_JJ readily_RB identifiable_JJ by_IN using_VBG the_DT SignalP_NNP
+          program_NN [_NN 20_CD ]_NN ,_, but_CC do_VBP not_RB contain_VB any_DT predicted_VBN
+          transmembrane_NN segments_NNS ,_, and_CC ,_, accordingly_RB ,_, are_VBP predicted_VBN
+          to_TO be_VB secreted_JJ from_IN the_DT cells_NNS (_( Figure_NN 1_LS )_) ._. Furthermore_RB ,_,
+          iterative_JJ database_NN searches_NNS using_VBG the_DT PSI-BLAST_NNP program_NN [_NN
+          9_CD ]_NN showed_VBD statistically_RB significant_JJ sequence_NN similarity_NN
+          between_IN these_DT proteins_NNS and_CC an_DT experimentally_RB
+          characterized_VBN endo_NN α-_NN 1_CD ,_, 4_CD -_: polygalactosaminidase_NN from_IN 
+          Pseudomonas_NNP species_NNS [_NN 21_CD ]_NN ._. For_IN
+          example_NN ,_, in_IN a_DT search_NN initiated_VBN with_IN the_DT sequence_NN of_IN
+          MJ_NNP 1477_CD and_CC a_DT profile_NN inclusion_NN cut-off_JJ of_IN 0_CD ._. 01_CD ,_, the_DT
+          polygalactosaminidase_NN sequence_NN was_VBD retrieved_VBN from_IN the_DT
+          database_NN in_IN the_DT second_JJ iteration_NN ,_, followed_VBN by_IN other_JJ
+          bacterial_JJ proteins_NNS predicted_VBD to_TO possess_VB the_DT same_JJ
+          activity_NN ._. This_DT protein_NN family_NN has_VBZ several_JJ conserved_JJ
+          motifs_NNS ,_, including_VBG a_DT characteristic_JJ Dxhp_NNP signature_NN (_( h_NN ,_,
+          hydrophobic_JJ residue_NN ;_: p_NN ,_, polar_JJ residue_NN )_) ,_, in_IN which_WDT the_DT
+          conserved_JJ aspartate_NN is_VBZ likely_JJ to_TO directly_RB participate_VB in_IN
+          catalysis_NNS (_( Figure_NN 1_LS )_) ._. The_DT hybrid-fold-recognition_JJ method_NN ,_,
+          which_WDT combines_VBZ sequence-profile_JJ analysis_NN with_IN
+          alignment-based_JJ secondary-structure_JJ prediction_NN [_NN 22_CD ]_NN and_CC
+          the_DT 3_CD D-PSSM_NNP method_NN [_NN 23_CD ]_NN both_DT suggested_VBD a_DT likely_JJ
+          α-amylase-like_JJ triosephosphate_NN isomerase_NN (_( TIM_NNP )_) barrel_NN
+          structure_NN for_IN this_DT protein_NN family_NN ._. Thus_RB ,_, although_IN the_DT
+          identification_NN of_IN MJ_NNP 1477_CD as_IN a_DT secreted_JJ
+          polygalactosaminidase_NN or_CC a_DT related_VBN polysaccharide_NN
+          hydrolase_NN with_IN a_DT different_JJ specificity_NN awaits_VBZ
+          experimental_JJ verification_NN ,_, it_PRP shows_VBZ all_PDT the_DT signs_NNS of_IN a_DT
+          correct_JJ computational_NN prediction_NN :_: statistically_RB
+          significant_JJ similarity_NN between_IN the_DT analyzed_VBN protein_NN and_CC
+          an_DT experimentally_RB characterized_VBN enzyme_NN ;_: conservation_NN of_IN
+          distinct_JJ motifs_NNS implicated_VBN in_IN catalysis_NNS ;_: potential_JJ
+          presence_NN of_IN a_DT structural_JJ fold_VB compatible_JJ with_IN the_DT
+          experimentally_RB demonstrated_VBN enzymatic_JJ activity_NN ;_: and_CC
+          confident_JJ prediction_NN of_IN the_DT extracellular_NN localization_NN
+          that_WDT is_VBZ ,_, again_RB ,_, compatible_JJ with_IN a_DT polysaccharide_NN
+          hydrolase_NN activity_NN involved_VBN in_IN environmental_JJ carbohydrate_NN
+          utilization_NN or_CC capsular_NN metabolism_NN ._. None_NN of_IN this_DT evidence_NN
+          is_VBZ offered_VBN by_IN the_DT analysis_NN that_WDT led_VBD to_TO the_DT CysRS_NNP
+          prediction_NN for_IN MJ_NNP 1477_CD ._.
+          Therefore_RB we_PRP are_VBP forced_VBN to_TO conclude_VB that_IN MJ_NNP 1477_CD and_CC
+          its_PRP$ homologs_NNS are_VBP not_RB related_VBN to_TO CysRS_NNP and_CC there_EX is_VBZ
+          nothing_NN in_IN the_DT computational_NN analysis_NN of_IN these_DT proteins_NNS
+          that_WDT would_MD point_VB to_TO an_DT aaRS_NN activity_NN ._. In_IN contrast_NN ,_, we_PRP
+          predict_VBP these_DT proteins_NNS to_TO be_VB extracellular_NN
+          polygalactosaminidases_NNS or_CC similar_JJ polysaccharide_NN
+          hydrolases_NNS ._. The_DT polysaccharide_NN hydrolase_NN and_CC aaRS_NN
+          functions_NNS seem_VBP to_TO be_VB essentially_RB incompatible_JJ ._. First_LS ,_, a_DT
+          secreted_JJ enzyme_NN is_VBZ unlikely_JJ to_TO function_VB as_IN an_DT aaRS_NN whose_WP$
+          site_NN of_IN action_NN is_VBZ ,_, by_IN definition_NN ,_, intracellular_NN ._. Second_JJ ,_,
+          even_RB if_IN an_DT entirely_RB new_JJ class_NN of_IN aaRSs_NNS is_VBZ postulated_JJ ,_, the_DT
+          reaction_NN catalyzed_JJ by_IN this_DT new_JJ aaRS_NN does_VBZ not_RB resemble_VB
+          polysaccharide_NN hydrolysis_NNS or_CC its_PRP$ reversal_NN ._. Aminoacyl-t_NNP RNA_NNP
+          synthetases_NNS catalyze_NN a_DT succession_NN of_IN reactions_NNS ,_, which_WDT
+          involve_VBP :_: hydrolysis_NNS of_IN the_DT α-β_JJ phosphate_NN bond_NN in_IN ATP_NNP ;_:
+          condensation_NN of_IN AMP_NNP with_IN the_DT cognate_NN amino_JJ acid_NN ,_,
+          resulting_VBG in_IN the_DT formation_NN of_IN an_DT aminoacyl-adenylate_JJ ;_:
+          displacement_NN of_IN the_DT AMP_NNP moiety_NN of_IN the_DT aminoacyl-adenylate_JJ
+          with_IN the_DT cognate_NN tRNA_NN ,_, producing_VBG aminoacyl-t_JJ RNA_NNP ._. Even_RB if_IN
+          the_DT two_CD condensation_NN reactions_NNS ,_, in_IN very_RB general_JJ terms_NNS ,_,
+          could_MD be_VB considered_VBN a_DT reversal_NN of_IN the_DT polysaccharide_NN
+          hydrolysis_NNS reaction_NN ,_, there_EX is_VBZ no_DT indication_NN that_IN
+          polysaccharide_NN hydrolases_NNS could_MD bind_NN and_CC hydrolyze_NN ATP_NNP ,_,
+          and_CC the_DT multiple_JJ alignment_NN of_IN the_DT MJ_NNP 1477_CD family_NN did_VBD not_RB
+          include_VB any_DT conserved_JJ signatures_NNS typical_JJ of_IN potential_JJ
+          phosphate-binding_JJ loops_NNS (_( Figure_NN 1_LS )_) ._. Neither_DT does_VBZ this_DT
+          family_NN contain_VBP any_DT recognizable_JJ RNA-binding_NNP domains_NNS ._.
+          Finally_RB ,_, 
+          M_NNP ._. thermoautotrophicum_NN does_VBZ not_RB
+          encode_NN any_DT homologs_NNS of_IN MJ_NNP 1477_CD ,_, ruling_NN out_RP the_DT possibility_NN
+          that_IN this_DT family_NN encompasses_VBZ CysRS_NNP of_IN both_DT archaeal_NN
+          methanogens_NNS ._. Taken_VBN together_RB ,_, these_DT observations_NNS appear_VBP to_TO
+          effectively_RB refute_VB the_DT prediction_NN of_IN a_DT CysRS_NNP activity_NN ,_,
+          thus_RB pitting_VBG computational_NN results_NNS against_IN experimental_JJ
+          data_NNS ._.
+        
+        
+          MJ_NNP 0301_CD :_: a_DT predicted_VBN dihydropteroate_NN synthase_NN
+          Dihydropteroate_NNP synthase_NN (_( DHPS_NNP )_) catalyzes_NNS the_DT
+          condensation_NN of_IN 
+          p_NN -_: aminobenzoic_JJ acid_NN with_IN
+          7_CD ,_, 8_CD -_: dihydro-_NN 6_CD -_: hydroxymethylpterin_NN pyrophosphate_NN to_TO give_VB
+          7_CD ,_, 8_CD -_: dihydropteroate_NN ,_, an_DT intermediate_JJ in_IN folate_NN
+          metabolism_NN ._. The_DT protein_NN from_IN 
+          Staphylococcus_NNP ,_, a_DT Gram-positive_NNP
+          bacterium_NN ,_, has_VBZ been_VBN crystallized_JJ and_CC shown_VBN to_TO adopt_VB a_DT
+          TIM-barrel_NNP structure_NN [_NN 24_CD ]_NN ._. Although_IN it_PRP has_VBZ been_VBN
+          indicated_VBN that_IN no_DT DHPS_NNP could_MD be_VB detected_VBN in_IN archaeal_NN
+          genomes_NNS [_NN 25_CD ]_NN ,_, orthologs_NNS of_IN bacterial_JJ DHPS_NNP are_VBP readily_RB
+          identifiable_JJ in_IN all_DT archaea_NN ;_: this_DT enzyme_NN is_VBZ missing_VBG only_RB
+          in_IN animals_NNS and_CC in_IN several_JJ intracellular_NN bacterial_JJ
+          pathogens_NNS ,_, such_JJ as_IN 
+          Rickettsia_NNP prowazekii_NN ,_, spirochetes_NNS
+          and_CC mycoplasmas_NNS (_( COG_NNP 0294_CD in_IN the_DT database_NN of_IN Clusters_NNP of_IN
+          Orthologous_NNP Groups_NNS of_IN proteins_NNS (_( COGs_NNP )_) )_) [_NN 26_CD ]_NN ._. Most_JJS
+          archaea_NN have_VBP a_DT distinct_JJ version_NN of_IN DHPS_NNP that_WDT shows_VBZ
+          relatively_RB low_JJ sequence_NN similarity_NN to_TO the_DT bacterial_JJ
+          orthologs_NNS and_CC contains_VBZ an_DT additional_JJ uncharacterized_JJ
+          carboxy-terminal_JJ domain_NN ._. This_DT previously_RB undetected_JJ
+          domain_NN is_VBZ also_RB present_JJ in_IN some_DT other_JJ enzymes_NNS of_IN pterin_NN
+          biosynthesis_NNS ,_, such_JJ as_IN
+          tetrahydromethanopterin-_NN S-_NNP methyltransferase_NN from_IN 
+          Streptomyces_NNP (_( L_NNP ._. M_NNP ._. I_PRP ._. ,_, LA_NNP ._. and_CC
+          E_NNP ._. V_NNP ._. K_NNP ._. ,_, unpublished_JJ observation_NN )_) ._. Some_DT archaeal_NN species_NNS ,_,
+          including_VBG 
+          Thermoplasma_NNP and_CC 
+          Halobacterium_NNP ,_, have_VBP the_DT
+          bacterial-type_JJ DHPS_NNP ,_, which_WDT was_VBD probably_RB acquired_VBN by_IN
+          horizontal_NN gene_NN transfer_NN and_CC displaced_VBN the_DT original_JJ
+          archaeal_NN version_NN ._. Despite_IN the_DT relatively_RB low_JJ sequence_NN
+          similarity_NN to_TO bacterial_JJ DHPS_NNP ,_, all_DT archaeal_NN orthologs_NNS have_VBP
+          the_DT conserved_JJ catalytic_JJ residues_NNS identified_VBN in_IN DHPS_NNP
+          (_( Figure_NN 2_LS )_) and_CC are_VBP confidently_RB predicted_VBN ,_, by_IN the_DT
+          hybrid-fold-recognition_JJ method_NN ,_, to_TO assume_VB the_DT same_JJ fold_VB
+          as_IN DHPS_NNP from_IN 
+          Pneumocystis_NNP carinii_NN and_CC 
+          Staphylococcus_NNP aureus_NN whose_WP$ crystal_NN
+          structures_NNS have_VBP been_VBN determined_VBN ._.
+          An_DT analysis_NN using_VBG ORF_NNP ,_, a_DT program_NN developed_VBN to_TO
+          recognize_VB folds_NNS by_IN comparing_VBG predicted_VBN secondary_JJ
+          structures_NNS of_IN proteins_NNS (_( [_NN 27_CD ]_NN ;_: we_PRP are_VBP unaware_JJ of_IN a_DT
+          published_VBN detailed_JJ description_NN of_IN this_DT method_NN )_) ,_,
+          identified_VBD MJ_NNP 0301_CD as_IN a_DT homolog_NN of_IN DHPS_NNP ,_, although_IN ,_, given_VBN
+          the_DT low_JJ sequence_NN similarity_NN ,_, a_DT convergent_NN origin_NN of_IN the_DT
+          relationship_NN between_IN MJ_NNP 0301_CD and_CC DHPS_NNP was_VBD deemed_VBN likely_JJ
+          (_( there_EX seems_VBZ to_TO be_VB a_DT terminological_JJ confusion_NN involved_VBN
+          here_RB ,_, but_CC we_PRP are_VBP quoting_VBG the_DT results_NNS of_IN the_DT original_JJ
+          computational_NN analysis_NN of_IN this_DT protein_NN as_IN they_PRP have_VBP been_VBN
+          presented_VBN )_) ._. It_PRP was_VBD acknowledged_VBN that_IN MJ_NNP 0107_CD (_( a_DT member_NN of_IN
+          COG_NNP 0294_CD )_) could_MD be_VB identified_VBN as_IN a_DT possible_JJ homolog_NN of_IN
+          DHPS_NNP by_IN sequence-based_JJ methods_NNS ,_, and_CC this_DT protein_NN was_VBD
+          assayed_JJ for_IN dihydropteroate_NN synthase_NN activity_NN ,_, but_CC none_NN
+          was_VBD detected_VBN [_NN 25_CD ]_NN ._. In_IN contrast_NN ,_, DHPS_NNP activity_NN (_( albeit_IN
+          relatively_RB low_JJ )_) was_VBD shown_VBN 
+          in_IN vitro_NN for_IN the_DT partially_RB purified_JJ
+          MJ_NNP 0301_CD protein_NN [_NN 25_CD ]_NN ._. However_RB ,_, MJ_NNP 0301_CD has_VBZ been_VBN shown_VBN to_TO
+          belong_VB to_TO the_DT metallo-β-lactamase_JJ superfamily_RB of_IN enzymes_NNS
+          and_CC ,_, in_IN the_DT evolutionary_JJ classification_NN of_IN
+          metallo-β-lactamases_JJ ,_, belongs_VBZ to_TO an_DT archaea-specific_JJ
+          family_NN (_( Figure_NN 2_CD ;_: COG_NNP 1237_CD )_) [_NN 28_CD ]_NN ._. Metallo-β-lactamases_NNP
+          encompass_VB a_DT wide_JJ range_NN of_IN metal-dependent_JJ hydrolytic_JJ and_CC
+          oxidoreductase_NN activities_NNS with_IN a_DT variety_NN of_IN substrates_NNS
+          and_CC are_VBP particularly_RB abundant_JJ in_IN archaea_NN where_WRB some_DT of_IN
+          them_PRP are_VBP involved_VBN in_IN RNA_NNP processing_NN [_NN 28_CD ]_NN ._. None_NN of_IN these_DT
+          enzymes_NNS catalyzes_NNS a_DT reaction_NN resembling_VBG the_DT condensation_NN
+          reaction_NN catalyzed_JJ by_IN DHPS_NNP ._. The_DT characteristic_JJ motifs_NNS of_IN
+          metallo-β-lactamases_JJ ,_, which_WDT mostly_RB include_VBP metal-binding_JJ
+          histidines_NNS ,_, are_VBP highly_RB conserved_JJ in_IN MJ_NNP 0301_CD and_CC its_PRP$
+          orthologs_NNS (_( Figure_NN 3_LS )_) ._. In_IN contrast_NN ,_, most_JJS of_IN the_DT MJ_NNP 0301_CD
+          residues_NNS described_VBD as_IN equivalent_JJ to_TO the_DT functionally_RB
+          important_JJ residues_NNS of_IN 
+          Escherichia_NNP coli_NNS dihydropteroate_NN
+          synthase_NN are_VBP not_RB conserved_JJ ,_, even_RB among_IN the_DT archaeal_NN
+          orthologs_NNS of_IN this_DT protein_NN ._. Finally_RB ,_, the_DT β-lactamase_JJ fold_VB
+          consists_VBZ of_IN two_CD subdomains_NNS of_IN the_DT β_NN 4_CD -_: α-β-α_JJ topology_NN whose_WP$
+          β_NN sheets_NNS are_VBP sandwiched_VBN against_IN each_DT other_JJ ;_: in_IN structural_JJ
+          terms_NNS ,_, these_DT domains_NNS are_VBP completely_RB different_JJ from_IN the_DT
+          TIM-barrel_NNP ,_, with_IN which_WDT the_DT ORF_NNP program_NN matched_VBD the_DT MJ_NNP 0301_CD
+          structural_JJ prediction_NN ._. Taken_VBN together_RB ,_, these_DT observations_NNS
+          are_VBP sufficient_JJ to_TO reject_VB the_DT proposed_VBN relationship_NN
+          between_IN MJ_NNP 0301_CD and_CC dihydropteroate_NN synthases_NNS ._.
+        
+        
+          MJ_NNP 0757_CD :_: a_DT predicted_VBN thymidylate_NN synthase_NN
+          Thymidylate_NNP synthase_NN is_VBZ a_DT central_JJ enzyme_NN of_IN pyrimidine_NN
+          metabolism_NN that_IN catalyzes_NNS the_DT formation_NN of_IN deoxythymidine_NN
+          monophosphate_NN (_( dTMP_NN )_) from_IN deoxyuridine_NN monophosphate_NN
+          (_( dUMP_NN )_) by_IN transfer_NN of_IN a_DT methyl_NN group_NN to_TO its_PRP$ pyrimidine_NN
+          ring_NN ._. This_DT reaction_NN is_VBZ catalyzed_JJ by_IN at_IN least_JJS two_CD
+          unrelated_JJ enzymes_NNS ._. The_DT canonical_JJ thymidylate_NN synthase_NN
+          (_( TS_NNP )_) ,_, such_JJ as_IN the_DT 
+          E_NNP ._. coli_NNS ThyA_NNP ,_, is_VBZ a_DT protein_NN with_IN a_DT
+          distinct_JJ α_NN /_NN β-fold_JJ that_IN transfers_VBZ a_DT methyl_NN group_NN to_TO dUMP_NN
+          from_IN 5_CD ,_, 10_CD -_: methylenetetrahydrofolate_NN [_NN 29_CD ]_NN ._. This_DT classic_JJ
+          TS_NNP is_VBZ readily_RB identifiable_JJ in_IN many_JJ (_( but_CC not_RB all_DT )_)
+          bacteria_NNS ,_, eukaryotes_NNS and_CC three_CD archaeal_NN species_NNS ,_, 
+          Archaeoglobus_NNP fulgidus_JJ ,_, M_NNP ._.
+          jannaschii_NN ,_, and_CC 
+          M_NNP ._. thermoautotrophicum_NN (_( COG_NNP 0207_CD )_) ._.
+          The_DT archaeal_NN members_NNS of_IN the_DT TS_NNP family_NN share_NN with_IN their_PRP$
+          bacterial_JJ orthologs_NNS all_PDT the_DT conserved_JJ residues_NNS involved_VBN
+          in_IN catalysis_NNS (_( Figure_NN 4_LS )_) ._.
+          An_DT alternative_JJ TS_NNP or_CC its_PRP$ subunit_NN is_VBZ predicted_VBN to_TO be_VB
+          encoded_JJ by_IN a_DT gene_NN from_IN 
+          Dictyostelium_NNP that_WDT rescues_VBZ a_DT slime_NN
+          mold_NN mutant_JJ auxotrophic_JJ for_IN thymidylate_NN [_NN 30_CD ]_NN ._. This_DT
+          protein_NN is_VBZ not_RB homologous_RB to_TO the_DT canonical_JJ TS_NNP ,_, but_CC its_PRP$
+          orthologs_NNS in_IN bacteria_NNS and_CC archaea_NN show_NN an_DT almost_RB perfect_JJ
+          complementary_JJ phyletic_JJ distribution_NN (_( COG_NNP 1351_CD )_) ._.
+          In_IN a_DT screen_NN for_IN the_DT TS_NNP in_IN 
+          M_NNP ._. jannaschii_NN ,_, the_DT ORF_NNP method_NN
+          picked_VBD the_DT MJ_NNP 0757_CD protein_NN as_IN the_DT most_RBS likely_JJ homolog_NN of_IN
+          the_DT canonical_JJ TS_NNP family_NN [_NN 27_CD ]_NN ._. In_IN the_DT validation_NN
+          experiment_NN ,_, MJ_NNP 0757_CD overexpressed_JJ in_IN 
+          E_NNP ._. coli_NNS was_VBD shown_VBN to_TO possess_VB TS_NNP
+          activity_NN [_NN 25_CD ]_NN ._. Sequence_NNP searches_NNS show_VBP that_IN MJ_NNP 0757_CD
+          belongs_VBZ to_TO a_DT small_JJ family_NN of_IN euryarchaea-specific_JJ
+          proteins_NNS of_IN uncharacterized_JJ function_NN (_( COG_NNP 1810_CD )_) ._. Of_IN the_DT 17_CD
+          residues_NNS reported_VBD to_TO be_VB conserved_JJ between_IN MJ_NNP 0757_CD and_CC the_DT
+          TS_NNP family_NN ,_, only_RB seven_CD were_VBD conserved_JJ thoughout_NN the_DT MJ_NNP 0757_CD
+          family_NN (_( Figure_NN 5_LS )_) ._. Moreover_RB ,_, a_DT comparison_NN of_IN the_DT
+          secondary_JJ structure_NN elements_NNS derived_VBN from_IN the_DT reported_VBN
+          three-dimensional_JJ model_NN of_IN MJ_NNP 0757_CD [_NN 27_CD ]_NN and_CC those_DT derived_VBN
+          from_IN a_DT prediction_NN generated_VBD using_VBG a_DT multiple_JJ alignment_NN
+          query_NN with_IN the_DT structure-prediction_JJ program_NN PHD_NNP (_( such_JJ
+          predictions_NNS typically_RB exceed_VBP 70_CD %_NN accuracy_NN )_) ,_, showed_VBD an_DT
+          overlap_VB of_IN just_RB two_CD of_IN the_DT 16_CD or_CC so_RB secondary_JJ structural_JJ
+          elements_NNS (_( Figure_NN 5_LS )_) ._. Conversely_RB ,_, several_JJ sequence_NN motifs_NNS
+          that_WDT are_VBP characteristic_NN of_IN the_DT MJ_NNP 0757_CD family_NN did_VBD not_RB
+          overlap_VB with_IN the_DT conserved_JJ regions_NNS in_IN the_DT MJ_NNP 0757_CD -_: TS_NNP
+          alignment_NN (_( Figure_NN 5_LS )_) ._. Furthermore_RB ,_, some_DT ,_, but_CC not_RB all_DT ,_,
+          members_NNS of_IN the_DT MJ_NNP 0757_CD family_NN contain_VBP an_DT amino-terminal_JJ
+          insertion_NN of_IN a_DT small_JJ ,_, metal-chelating_JJ module_NN (_( Figure_NN 5_LS )_) ,_,
+          which_WDT was_VBD used_VBN to_TO improve_VB the_DT alignment_NN with_IN the_DT 
+          E_NNP ._. coli_NNS TS_NNP [_NN 25_CD ]_NN ,_, although_IN this_DT
+          region_NN was_VBD variable_JJ even_RB within_IN the_DT MJ_NNP 0757_CD family_NN itself_PRP ._.
+          On_IN the_DT basis_NN of_IN these_DT observations_NNS ,_, a_DT relationship_NN
+          between_IN MJ_NNP 0757_CD and_CC the_DT canonical_JJ TS_NNP has_VBZ to_TO be_VB rejected_VBN ._.
+          The_DT actual_JJ fold_VB and_CC function_VB of_IN MJ_NNP 0757_CD and_CC its_PRP$ homologs_NNS
+          cannot_NN be_VB predicted_VBN at_IN present_NN ._. However_RB ,_, these_DT proteins_NNS
+          have_VBP several_JJ features_NNS that_WDT suggest_VBP that_IN they_PRP might_MD be_VB
+          metal-dependent_JJ enzymes_NNS potentially_RB involved_VBN in_IN redox_NN
+          reactions_NNS ._. These_DT suggestive_JJ features_NNS include_VBP the_DT fusion_NN
+          with_IN a_DT ferredoxin_NN domain_NN seen_VBN in_IN the_DT 
+          M_NNP ._. thermoautotrophicum_NN member_NN
+          MTH_NNP 601_CD ,_, the_DT insertion_NN of_IN the_DT metal-binding_JJ module_NN in_IN
+          certain_JJ members_NNS ,_, including_VBG MJ_NNP 0757_CD (_( see_VB above_IN )_) ,_, and_CC the_DT
+          presence_NN of_IN three_CD cysteines_NNS that_WDT are_VBP conserved_JJ throughout_IN
+          this_DT family_NN ._.
+        
+        
+          Cmpp_NNP 16_CD :_: a_DT plant_NN '_'' paralog_NN '_'' of_IN plant_NN viral_JJ movement_NN
+          proteins_NNS
+          Viral_NNP movement_NN proteins_NNS (_( MPs_NNP )_) are_VBP encoded_JJ by_IN diverse_JJ ,_,
+          unrelated_JJ families_NNS of_IN plant_NN viruses_NNS ,_, such_JJ as_IN
+          positive-strand_JJ RNA_NNP ,_, negative-strand_JJ RNA_NNP ,_, single-stranded_JJ
+          DNA_NNP and_CC double-stranded_JJ DNA_NNP viruses_NNS ,_, and_CC are_VBP essential_JJ
+          for_IN cell-to-cell_JJ movement_NN of_IN all_PDT these_DT viruses_NNS [_NN 31_CD ,_, 32_CD ]_NN ._.
+          To_TO isolate_VB potential_JJ host_NN homologs_NNS of_IN the_DT red_JJ clover_NN
+          necrotic_JJ mosaic_JJ virus_NN (_( RCNMV_NNP )_) MP_NNP ,_, antibodies_NNS to_TO this_DT
+          protein_NN were_VBD used_VBN to_TO screen_VB phloem_NN extracts_NNS of_IN 
+          Cucurbita_NNP maxima_NN ,_, resulting_VBG in_IN the_DT
+          detection_NN of_IN a_DT protein_NN designated_VBN Cmpp_NNP 16_CD ._. This_DT protein_NN
+          was_VBD identified_VBN as_IN a_NNP '_POS paralog_NN '_'' (_( generally_RB ,_, this_DT term_NN
+          refers_VBZ to_TO homologous_RB genes_NNS related_VBN by_IN duplication_NN within_IN
+          the_DT same_JJ genome_NN )_) of_IN the_DT viral_JJ MPs_NNP on_IN the_DT basis_NN of_IN
+          sequence_NN similarity_NN detected_VBD using_VBG the_DT Megalign_NNP program_NN [_NN
+          33_CD ]_NN ._. Subsequently_RB ,_, Cmpp_NNP 16_CD was_VBD shown_VBN to_TO bind_NN RNA_NNP ,_, which_WDT is_VBZ
+          a_DT common_JJ property_NN of_IN viral_JJ MPs_NNP ,_, and_CC to_TO induce_VB an_DT increase_NN
+          of_IN the_DT size-exclusion_JJ limit_NN of_IN plasmodesmata_NN ,_, also_RB a_DT
+          mechanism_NN associated_VBN with_IN the_DT MPs_NNP [_NN 33_CD ]_NN ._.
+          However_RB ,_, computational_NN analysis_NN of_IN the_DT Cmpp_NNP 16_CD sequence_NN
+          reveals_VBZ a_DT picture_NN that_WDT is_VBZ incompatible_JJ with_IN a_DT homologous_RB
+          relationship_NN with_IN MPs_NNP ._. Cmpp_NNP 16_CD consists_VBZ mostly_RB of_IN a_DT C_NNP 2_CD
+          domain_NN that_WDT is_VBZ readily_RB detected_VBN by_IN PSI-BLAST_NNP or_CC by_IN
+          profile-searching_JJ engines_NNS such_JJ as_IN the_DT CD-search_NNP [_NN 34_CD ]_NN ._.
+          The_DT Cmpp_NNP 16_CD sequence_NN contains_VBZ all_DT critical_JJ residues_NNS of_IN the_DT
+          C_NNP 2_CD domain_NN (_( Figure_NN 6_CD )_) ._. C_NNP 2_CD domains_NNS bind_NN a_DT variety_NN of_IN
+          substrates_NNS ,_, such_JJ as_IN Ca_MD 2_CD +_NN ,_, phospholipids_NNS ,_, inositol_NN
+          polyphosphates_NNS and_CC other_JJ proteins_NNS ,_, but_CC apparently_RB not_RB RNA_NNP
+          [_NN 35_CD ]_NN ._. There_EX is_VBZ no_DT detectable_JJ similarity_NN between_IN C_NNP 2_CD
+          domains_NNS and_CC the_DT MPs_NNP ,_, and_CC conserved_JJ motifs_NNS in_IN the_DT
+          published_VBN alignment_NN of_IN Cmpp_NNP 16_CD and_CC the_DT RCNMV_NNP MP_NNP do_VBP not_RB
+          correspond_VB to_TO those_DT in_IN C_NNP 2_CD domains_NNS ;_: moreover_RB ,_, many_JJ of_IN the_DT
+          residues_NNS described_VBD as_IN conserved_JJ in_IN Cmpp_NNP 16_CD and_CC MP_NNP are_VBP not_RB
+          conserved_JJ within_IN the_DT viral_JJ movement_NN protein_NN family_NN
+          itself_PRP ._. Thus_RB ,_, we_PRP conclude_VBP that_IN viral_JJ MPs_NNP and_CC Cmpp_NNP 16_CD ,_, a_DT
+          C_NNP 2_CD -_: domain_NN protein_NN ,_, are_VBP not_RB homologs_NNS ._. Subsequently_RB ,_, a_DT
+          similar_JJ methodology_NN has_VBZ been_VBN employed_VBN to_TO detect_VB a_DT
+          relationship_NN between_IN Cmpp_NNP 36_CD (_( a_DT cytochrome_NN B_NNP 5_CD reductase_NN )_) ,_,
+          Cmpp_NNP 16_CD and_CC the_DT RCNMV_NNP movement_NN protein_NN [_NN 36_CD ]_NN ._. As_IN in_IN the_DT
+          above_JJ case_NN of_IN Cmpp_NNP 16_CD ,_, this_DT relationship_NN of_IN a_DT cytochrome_NN
+          B_NNP 5_CD reductase_NN with_IN the_DT viral_JJ movement_NN proteins_NNS appears_VBZ to_TO
+          be_VB spurious_JJ (_( data_NNS not_RB shown_VBN )_) ._.
+        
+        
+          Human_NNP activating_VBG transcription_NN factor-_NN 2_CD (_( ATF-_NNP 2_LS )_) :_: a_DT
+          predicted_VBN histone_NN acetyltransferase_NN
+          Histone_NNP acetyltransferases_NNS (_( HAT_NNP )_) are_VBP key_JJ regulators_NNS of_IN
+          eukaryotic_JJ transcription_NN ._. GCN_NNP 5_CD -_: like_IN HATs_NNP ,_, which_WDT modulate_VBP
+          chromatin-associated_JJ transcription_NN ,_, belong_VB to_TO a_DT vast_JJ
+          superfamily_RB of_IN amino-group_JJ acetyl-_NN and_CC
+          myristoyl-transferases_JJ with_IN extremely_RB diverse_JJ functions_NNS [_NN
+          37_CD ]_NN ._. ATF-_NNP 2_CD is_VBZ a_DT basic_JJ leucine_NN zipper_NN (_( b-_NN ZIP_NNP )_) family_NN
+          transcription_NN factor_NN that_IN binds_NNS to_TO cyclic_JJ AMP-response_NNP
+          elements_NNS (_( CRE_NNP )_) and_CC activates_NNS transcription_NN [_NN 38_CD ]_NN ._.
+          Vertebrate_NNP ATF-_NNP 2_CD also_RB has_VBZ an_DT amino-terminal_JJ zinc_NN finger_NN ,_,
+          which_WDT is_VBZ involved_VBN in_IN transcription_NN activation_NN [_NN 39_CD ]_NN ._.
+          Non-vertebrate_NNP orthologs_NNS of_IN ATF-_NNP 2_CD ,_, in_IN 
+          Drosophila_NNP ,_, Caenorhabditis_NNP
+          elegans_NNS and_CC yeasts_NNS ,_, lack_NN the_DT zinc_NN finger_NN ._. In_IN
+          experiments_NNS designed_VBN to_TO isolate_VB ATF-_NNP 2_CD -_: associated_VBN HAT_NNP ,_,
+          ATF-_NNP 2_CD alone_RB was_VBD shown_VBN to_TO be_VB sufficient_JJ for_IN the_DT
+          acetyltransferase_NN activity_NN ._. Examining_NNP the_DT region_NN of_IN ATF-_NNP 2_CD
+          that_WDT showed_VBD HAT_NNP activity_NN ,_, the_DT authors_NNS found_VBD some_DT sequence_NN
+          similarity_NN and_CC at_IN least_JJS one_CD motif_NN resembling_VBG the_DT
+          acetyltransferase_NN superfamily_RB and_CC concluded_VBD that_IN ATF-_NNP 2_CD
+          contained_VBD a_DT GCN_NNP 5_CD -_: like_IN acetyltransferase_NN domain_NN [_NN 40_CD ]_NN ._.
+          Subsequent_JJ site-directed_JJ mutagenesis_NNS supported_VBD the_DT
+          importance_NN of_IN the_DT reported_VBN acetyltransferase_NN motifs_NNS for_IN
+          the_DT HAT_NNP activity_NN of_IN ATF-_NNP 2_CD ._.
+          However_RB ,_, profile-based_JJ sequence_NN searches_NNS and_CC attempts_NNS
+          at_IN fold_VB recognition_NN failed_VBD to_TO detect_VB any_DT relationship_NN
+          between_IN ATF-_NNP 2_CD and_CC the_DT acetyltransferase_NN superfamily_RB ._. The_DT
+          region_NN designated_VBN as_IN having_VBG HAT_NNP activity_NN and_CC containing_VBG
+          the_DT acetyltransferase_NN domain_NN shows_VBZ poor_JJ conservation_NN
+          between_IN orthologs_NNS and_CC closely_RB related_VBN paralogs_NNS of_IN the_DT
+          ATF-_NNP 2_CD family_NN ,_, especially_RB in_IN the_DT sequence_NN identified_VBN as_IN
+          the_DT most_RBS prominent_JJ A_DT motif_NN of_IN the_DT acetyltransferase_NN
+          family_NN (_( Figure_NN 7_CD )_) ._. Furthermore_RB ,_, complexity_NN analysis_NN using_VBG
+          the_DT SEG_NNP program_NN ,_, with_IN the_DT parameters_NNS adjusted_VBN for_IN
+          decomposition_NN of_IN a_DT protein_NN into_IN globular_NN and_CC non-globular_JJ
+          regions_NNS [_NN 41_CD ]_NN ,_, predicted_VBD that_IN the_DT entire_JJ region_NN of_IN the_DT
+          ATF-_NNP 2_CD protein_NN between_IN the_DT amino-terminal_JJ zinc_NN finger_NN and_CC
+          the_DT carboxy-terminal_JJ helical_JJ b-_NN ZIP_NNP was_VBD unstructured_JJ ._. This_DT
+          is_VBZ consistent_JJ with_IN the_DT structural_JJ prediction_NN derived_VBD
+          using_VBG the_DT PHD_NNP program_NN that_WDT indicated_VBD no_DT regular_JJ secondary_JJ
+          structure_NN in_IN this_DT region_NN ._. Thus_RB ,_, the_DT relationship_NN between_IN
+          ATF-_NNP 2_CD and_CC the_DT GCN_NNP 5_CD -_: like_IN acetyltransferase_NN superfamily_RB
+          seems_VBZ to_TO be_VB invalid_JJ ,_, leaving_VBG the_DT structural_JJ basis_NN for_IN the_DT
+          reported_VBN acetyltransferase_NN activity_NN of_IN ATF-_NNP 2_CD an_DT open_JJ
+          issue_NN ._.
+        
+        
+          Predicted_NNP PAS_NNP domain_NN in_IN the_DT phytochrome-interacting_JJ
+          transcription_NN factor_NN PIF_NNP 3_CD
+          PAS_NNP domains_NNS are_VBP sensory_JJ modules_NNS in_IN various_JJ signal_NN
+          transduction_NN proteins_NNS from_IN all_DT major_JJ lineages_NNS of_IN cellular_JJ
+          life_NN [_NN 42_CD ]_NN ._. PAS_NNP domains_NNS are_VBP typically_RB implicated_VBN in_IN
+          sensing_VBG oxygen_NN ,_, redox_NN potential_JJ ,_, light_JJ and_CC small_JJ ligands_NNS
+          [_NN 43_CD ]_NN ._. In_IN addition_NN ,_, PAS_NNP domains_NNS are_VBP sites_NNS for_IN
+          protein-protein_JJ interactions_NNS and_CC are_VBP responsible_JJ for_IN the_DT
+          formation_NN of_IN homo-_NN and_CC hetero-dimers_JJ in_IN several_JJ signal_NN
+          transduction_NN pathways_NNS that_WDT involve_VBP transcriptional_NN
+          activation_NN ._. A_DT PAS_NNP domain_NN has_VBZ been_VBN reported_VBN in_IN the_DT
+          transcription_NN factor_NN PIF_NNP 3_CD from_IN 
+          Arabidopsis_NNP ,_, which_WDT interacts_NNS with_IN a_DT
+          phytochrome_NN photoreceptor_NN and_CC transduces_NNS light_JJ signals_NNS to_TO
+          photoresponsive_JJ plant_NN genes_NNS [_NN 44_CD ]_NN ._. It_PRP has_VBZ been_VBN
+          hypothesized_VBN that_IN the_DT purported_JJ PAS_NNP domain_NN of_IN PIF_NNP 3_CD
+          directly_RB interacts_NNS with_IN the_DT PAS_NNP domains_NNS of_IN the_DT
+          phytochrome_NN [_NN 44_CD ]_NN ._. This_DT hypothesis_NNS was_VBD later_RB tested_VBN
+          experimentally_RB and_CC evidence_NN was_VBD presented_VBN that_IN the_DT PAS_NNP
+          domain_NN of_IN PIF_NNP 3_CD indeed_RB was_VBD a_DT major_JJ contributor_NN to_TO the_DT
+          interaction_NN between_IN the_DT two_CD proteins_NNS [_NN 45_CD ]_NN ._.
+          PIF_NNP 3_CD belongs_VBZ to_TO a_DT plant-specific_JJ family_NN of_IN basic_JJ
+          helix-loop-helix_JJ (_( bHLH_NN )_) -_: domain-_NN containing_VBG proteins_NNS that_IN ,_,
+          in_IN addition_NN to_TO the_DT bHLH_NN domain_NN ,_, have_VBP an_DT uncharacterized_JJ
+          conserved_JJ domain_NN at_IN the_DT amino_JJ terminus_JJ present_NN in_IN single_JJ
+          or_CC duplicate_VB copies_NNS (_( L_NNP ._. M_NNP ._. I_PRP ._. ,_, I_PRP ._. Z_NNP ._. ,_, L_NNP ._. A_DT ._. and_CC E_NNP ._. V_NNP ._. K_NNP ._. ,_,
+          unpublished_JJ observations_NNS )_) ._. The_DT PIF_NNP 3_CD family_NN currently_RB
+          consists_VBZ of_IN about_IN eight_CD paralogous_JJ proteins_NNS in_IN 
+          Arabidopsis_NNP and_CC an_DT ortholog_NN from_IN
+          rice_NN ._. The_DT region_NN predicted_VBD to_TO be_VB a_DT PAS_NNP domain_NN is_VBZ poorly_RB
+          conserved_JJ in_IN the_DT rice_NN ortholog_NN of_IN PIF_NNP 3_CD and_CC the_DT paralogs_NNS
+          from_IN 
+          Arabidopsis_NNP ._. An_DT alignment_NN with_IN the_DT
+          rice_NN ortholog_NN indicated_VBD that_IN the_DT proposed_VBN PAS_NNP domain_NN was_VBD
+          a_DT rapidly_RB diverging_VBG ,_, compositionally_RB biased_VBN sequence_NN
+          (_( Figure_NN 8_CD )_) ._. Complexity_NNP analysis_NN using_VBG the_DT SEG_NNP program_NN
+          showed_VBD that_IN the_DT reported_VBN PAS_NNP domain_NN mapped_VBN to_TO a_DT region_NN
+          that_WDT was_VBD predicted_VBN to_TO be_VB entirely_RB non-globular_JJ ._. All_DT
+          attempts_NNS to_TO objectively_RB detect_VB a_DT PAS_NNP domain_NN in_IN PIF_NNP 3_CD using_VBG
+          sensitive_JJ profile_NN methods_NNS based_VBN on_IN PSI-BLAST-derived_NNP
+          scoring_VBG matrices_NNS or_CC Hidden_NNP Markov_NNP Models_NNP (_( HMM_NNP )_) failed_VBD ._.
+          Additionally_RB ,_, secondary-structure_JJ prediction_NN for_IN the_DT
+          proposed_VBN PAS_NNP region_NN using_VBG PHD_NNP indicated_VBD that_IN this_DT region_NN
+          is_VBZ largely_RB unstructured_JJ ._. These_DT observations_NNS appear_VBP to_TO be_VB
+          sufficient_JJ to_TO reject_VB the_DT presence_NN of_IN a_DT PAS_NNP domain_NN in_IN PIF_NNP 3_CD
+          although_IN the_DT region_NN thought_VBD to_TO be_VB a_DT PAS_NNP domain_NN could_MD
+          indeed_RB be_VB involved_VBN in_IN the_DT interaction_NN with_IN
+          phytochrome_NN ._.
+        
+      
+      
+        Discussion_NNP and_CC conclusions_NNS
+        In_IN the_DT six_CD cases_NNS described_VBD above_IN ,_, we_PRP provide_VBP evidence_NN
+        for_IN rejecting_VBG the_DT homologous_RB relationships_NNS and_CC functional_JJ
+        predictions_NNS inferred_VBN for_IN the_DT proteins_NNS in_IN question_NN by_IN using_VBG
+        computational_NN methods_NNS ._. The_DT number_NN of_IN examples_NNS in_IN this_DT
+        category_NN could_MD be_VB increased_VBN ,_, and_CC some_DT have_VBP already_RB been_VBN
+        considered_VBN in_IN the_DT literature_NN ,_, for_IN example_NN the_DT spurious_JJ
+        discovery_NN of_IN a_NNP '_POS functional_JJ PDZ_NNP domain_NN '_'' in_IN the_DT molecular_JJ
+        chaperone_NN ClpA_NNP (_( [_NN 46_CD ]_NN ,_, see_VB refutation_NN in_IN [_NN 47_CD ]_NN )_) or_CC the_DT
+        finding_NN of_IN an_DT ATPase_NNP domain_NN and_CC death_NN effector_NN domains_NNS in_IN
+        the_DT apoptosis-associated_JJ protein_NN FLASH_NNP (_( [_NN 48_CD ]_NN ,_, see_VB
+        refutation_NN in_IN [_NN 49_CD ]_NN )_) ._. The_DT common_JJ and_CC most_RBS striking_JJ aspect_NN
+        of_IN all_PDT these_DT cases_NNS is_VBZ that_IN the_DT predictions_NNS based_VBN on_IN
+        apparently_RB erroneous_JJ computational_NN analysis_NN were_VBD supported_VBN
+        by_IN experiments_NNS ._. What_WP are_VBP the_DT solutions_NNS to_TO this_DT clash_NN
+        between_IN computational_NN and_CC experimental_JJ evidence_NN ?_.
+        We_PRP envisage_NN three_CD main_JJ possibilities_NNS ._. The_DT first_JJ ,_,
+        experiment-centered_JJ view_NN would_MD hold_VB that_IN experimental_JJ
+        evidence_NN always_RB has_VBZ the_DT upper_JJ hand_NN and_CC that_IN ,_, even_RB if_IN the_DT
+        alternative_JJ computational_NN solutions_NNS that_IN we_PRP describe_VBP here_RB
+        seem_VBP more_RBR plausible_JJ than_IN the_DT original_JJ predictions_NNS ,_, the_DT
+        latter_JJ are_VBP correct_JJ insofar_RB as_IN they_PRP are_VBP supported_VBN by_IN
+        experiment_NN ._. Epistemologically_NNP ,_, this_DT argument_NN is_VBZ not_RB sound_VB
+        because_IN hypotheses_NNS (_( computational_NN predictions_NNS in_IN this_DT case_NN )_)
+        cannot_NN be_VB proved_VBN by_IN the_DT success_NN of_IN the_DT experiments_NNS they_PRP
+        prompt_VB ._. They_PRP can_MD only_RB be_VB falsified_VBN by_IN experiments_NNS producing_VBG
+        results_NNS incompatible_JJ with_IN the_DT predictions_NNS [_NN 50_CD ]_NN ._. Simply_RB
+        put_VB ,_, the_DT experiments_NNS could_MD have_VB worked_VBN for_IN a_DT wrong_JJ reason_NN ._.
+        For_IN example_NN ,_, this_DT seems_VBZ particularly_RB likely_JJ in_IN the_DT case_NN of_IN
+        the_DT site-directed_JJ mutagenesis_NNS of_IN the_DT transcription_NN factor_NN
+        ATF-_NNP 2_CD discussed_VBN above_IN ._. The_DT mutagenized_JJ residues_NNS probably_RB
+        are_VBP indeed_RB important_JJ for_IN the_DT function_NN of_IN this_DT protein_NN ,_, but_CC
+        not_RB because_IN they_PRP are_VBP part_NN of_IN a_DT GCN_NNP 5_CD -_: like_IN acetyltransferase_NN
+        domain_NN ,_, which_WDT this_DT protein_NN does_VBZ not_RB contain_VB ._. Similar_JJ logic_NN
+        applies_VBZ to_TO the_DT case_NN of_IN the_DT predicted_VBN ,_, but_CC apparently_RB
+        nonexistent_JJ ,_, PAS_NNP domain_NN in_IN the_DT transcription_NN factor_NN PIF_NNP 3_CD ._.
+        More_RBR important_JJ ,_, however_RB ,_, computational_NN predictions_NNS are_VBP
+        falsifiable_JJ within_IN the_DT realm_NN of_IN computational_NN analysis_NN
+        itself_PRP ._. Falsification_NNP is_VBZ offered_VBN by_IN alternative_NN ,_,
+        unequivocally_RB supported_VBN predictions_NNS that_WDT are_VBP incompatible_JJ
+        with_IN the_DT original_JJ ones_NNS ._. In_IN four_CD of_IN the_DT six_CD cases_NNS described_VBD
+        (_( CysRS_NNP ,_, DHPS_NNP ,_, TS_NNP and_CC MP_NNP )_) ,_, such_JJ evidence_NN was_VBD obtained_VBN by_IN
+        computational_NN methods_NNS ._.
+        The_DT second_JJ possibility_NN is_VBZ that_IN ,_, although_IN the_DT
+        computational_NN predictions_NNS described_VBD here_RB are_VBP correct_JJ ,_,
+        whereas_IN the_DT original_JJ ones_NNS are_VBP wrong_JJ ,_, the_DT experimental_JJ
+        evidence_NN is_VBZ also_RB solid_JJ ._. In_IN each_DT of_IN the_DT described_VBN cases_NNS ,_,
+        this_DT would_MD elevate_NN the_DT biochemical_JJ activities_NNS identified_VBN
+        through_IN these_DT experiments_NNS to_TO the_DT status_NN of_IN major_JJ ,_,
+        unexpected_JJ discoveries_NNS ,_, because_IN the_DT chemistry_NN underlying_VBG
+        them_PRP would_MD have_VB to_TO be_VB extremely_RB unusual_JJ ._. In_IN particular_JJ ,_, if_IN
+        the_DT identification_NN of_IN the_DT 
+        M_NNP ._. jannaschii_NN cysteinyl-t_JJ RNA_NNP
+        synthetase_NN is_VBZ indeed_RB correct_JJ ,_, this_DT enzyme_NN would_MD have_VB to_TO be_VB
+        a_DT derivative_NN of_IN a_DT specific_JJ family_NN of_IN polysaccharide_NN
+        hydrolases_NNS containing_VBG a_DT signal_NN peptide_NN but_CC no_DT recognizable_JJ
+        ATP-binding_NNP or_CC RNA-binding_NNP domains_NNS ._.
+        The_DT third_JJ explanation_NN is_VBZ that_IN the_DT original_JJ computational_NN
+        predictions_NNS triggered_VBD over-interpretation_JJ of_IN the_DT
+        experimental_JJ results_NNS that_IN ,_, in_IN reality_NN ,_, might_MD have_VB been_VBN
+        obtained_VBN as_IN a_DT result_NN of_IN nonspecific_JJ activities_NNS ,_,
+        contamination_NN or_CC other_JJ artifacts_NNS ._. In_IN this_DT regard_NN ,_, it_PRP is_VBZ
+        important_JJ to_TO realize_VB that_IN not_RB only_RB computational_NN
+        predictions_NNS ,_, but_CC biological_JJ experiments_NNS also_RB ,_, are_VBP
+        intrinsically_RB error-prone_JJ and_CC open_JJ to_TO conflicting_JJ
+        interpretations_NNS ._. The_DT probabilistic_JJ nature_NN of_IN computational_NN
+        analyses_NNS is_VBZ well_RB realized_VBN (_( and_CC at_IN times_NNS ,_, perhaps_RB ,_,
+        overrated_JJ )_) by_IN most_JJS researchers_NNS ,_, probably_RB because_IN explicit_JJ
+        calculation_NN of_IN probability_NN or_CC likelihood_NN is_VBZ at_IN the_DT core_NN of_IN
+        most_RBS widely_RB used_VBN computer_NN methods_NNS for_IN sequence_NN and_CC
+        structure_NN analyses_NNS ._. In_IN this_DT regard_NN ,_, it_PRP is_VBZ prudent_JJ to_TO note_VB
+        that_IN the_DT alternative_JJ computational_NN predictions_NNS presented_VBN
+        here_RB should_MD be_VB considered_VBN to_TO be_VB '_POS more_RBR likely_JJ '_POS than_IN the_DT
+        original_JJ ones_NNS ,_, rather_RB than_IN to_TO contradict_VB the_DT latter_NN in_IN an_DT
+        absolute_JJ sense_NN ._. As_IN we_PRP attempted_VBD to_TO show_VB above_IN ,_, however_RB ,_, the_DT
+        difference_NN in_IN the_DT likelihood_NN of_IN two_CD mutually_RB incompatible_JJ
+        predictions_NNS can_MD be_VB overwhelming_JJ ,_, with_IN one_CD supported_VBN by_IN
+        multiple_JJ lines_NNS of_IN evidence_NN as_IN opposed_VBN to_TO the_DT other_JJ ._. In_IN
+        contrast_NN to_TO computational_NN studies_NNS ,_, experimental_JJ ones_NNS are_VBP
+        often_RB ,_, consciously_RB or_CC unconsciously_RB ,_, treated_VBN as_IN
+        demonstration_NN of_IN '_POS final_JJ truth_NN '_'' ._. In_IN reality_NN ,_, however_RB ,_,
+        probabilistic_JJ inference_NN is_VBZ inherent_JJ in_IN practically_RB any_DT
+        interpretation_NN of_IN experimental_JJ results_NNS when_WRB questions_NNS are_VBP
+        asked_VBN such_JJ as_IN "_'' How_WRB likely_JJ is_VBZ it_PRP that_IN the_DT protein_NN under_IN
+        study_NN has_VBZ a_DT particular_JJ biochemical_JJ activity_NN 
+        in_IN vivo_NN ?_. "_'' or_CC "_'' How_WRB central_NN is_VBZ this_DT
+        activity_NN for_IN the_DT 
+        in_IN vivo_NN function_NN of_IN the_DT protein_NN under_IN
+        study_NN ,_, given_VBN the_DT results_NNS of_IN a_DT surrogate_NN 
+        in_IN vitro_NN assay_NN ?_. "_'' Thus_RB ,_, certain_JJ
+        experimental_JJ designs_NNS may_MD not_RB be_VB appropriate_JJ to_TO ascertain_VB
+        the_DT actual_JJ 
+        in_IN vivo_NN biochemistry_NN of_IN a_DT protein_NN ._.
+        Furthermore_RB ,_, even_RB if_IN the_DT particular_JJ activities_NNS detected_VBD
+        under_IN these_DT conditions_NNS are_VBP genuine_JJ ,_, the_DT likelihood_NN of_IN these_DT
+        being_VBG relevant_JJ 
+        in_IN vivo_NN needs_VBZ to_TO be_VB additionally_RB
+        assessed_VBN ._. Accordingly_RB ,_, when_WRB strong_JJ computational_NN
+        predictions_NNS seem_VBP not_RB to_TO be_VB borne_VBN out_IN by_IN experiment_NN ,_, the_DT
+        conditions_NNS and_CC design_NN of_IN the_DT experiments_NNS deserve_VBP special_JJ
+        scrutiny_NN :_: they_PRP might_MD have_VB given_VBN a_DT negative_JJ result_NN for_IN a_DT
+        wrong_JJ reason_NN ._. A_DT case_NN in_IN point_NN is_VBZ the_DT MJ_NNP 0107_CD protein_NN ,_, the_DT
+        apparent_JJ archaeal_NN ortholog_NN of_IN DHPS_NNP ,_, which_WDT failed_VBD to_TO show_VB
+        dihydropteroate_NN synthase_NN activity_NN [_NN 25_CD ]_NN ._. We_PRP strongly_RB
+        believe_VBP that_IN this_DT issue_NN needs_VBZ to_TO be_VB revisited_VBN ._. All_PDT this_DT
+        considered_JJ ,_, the_DT results_NNS of_IN independent_JJ application_NN of_IN
+        computational_NN and_CC experimental_JJ techniques_NNS tend_VBP to_TO be_VB
+        complementary_JJ ,_, and_CC useful_JJ in_IN adding_VBG or_CC reducing_VBG confidence_NN
+        in_IN the_DT biological_JJ conclusions_NNS of_IN a_DT particular_JJ study_NN ._.
+        Finally_RB ,_, it_PRP should_MD be_VB emphasized_VBN that_IN these_DT cautionary_JJ
+        notes_NNS on_IN application_NN of_IN computational_NN methods_NNS in_IN protein_NN
+        function_NN prediction_NN in_IN no_DT way_NN suggest_VBP that_IN new_JJ
+        computational_NN approaches_NNS that_WDT depart_VBP sharply_RB from_IN more_RBR
+        established_JJ ones_NNS are_VBP doomed_VBN to_TO failure_NN ._. Indeed_RB ,_, the_DT most_RBS
+        popular_JJ advanced_JJ search_NN methods_NNS based_VBN on_IN sequence_NN profiles_NNS
+        -_: PSI-BLAST_NNP and_CC Hidden_NNP Markov_NNP Model_NNP (_( HMM_NNP )_) search_NN -_: are_VBP
+        rather_RB recent_JJ innovations_NNS [_NN 11_CD ,_, 51_CD ,_, 52_CD ]_NN ._. Furthermore_RB ,_,
+        methods_NNS based_VBN on_IN a_DT different_JJ principle_NN ,_, such_JJ as_IN protein_NN
+        sequence-structure_JJ threading_VBG ,_, have_VBP a_DT recent_JJ history_NN of_IN
+        success_NN despite_IN uncertainties_NNS in_IN their_PRP$ statistical_JJ
+        foundations_NNS [_NN 22_CD ,_, 53_CD ,_, 54_CD ,_, 55_CD ,_, 56_CD ]_NN ._. It_PRP does_VBZ seem_VB ,_, however_RB ,_,
+        that_IN when_WRB a_DT structurally_RB and_CC functionally_RB plausible_JJ
+        prediction_NN is_VBZ produced_VBN ,_, with_IN a_DT high_JJ confidence_NN ,_, by_IN a_DT well_RB
+        tested_VBN ,_, statistically_RB sound_NN computational_NN method_NN ,_, an_DT
+        incompatible_JJ prediction_NN yielded_VBN by_IN a_DT new_JJ method_NN without_IN a_DT
+        clear_JJ statistical_JJ foundation_NN is_VBZ most_RBS likely_JJ to_TO be_VB
+        incorrect_JJ ._.
+      
+      
+        Materials_NNS and_CC methods_NNS
+        The_DT non-redundant_JJ protein-sequence_JJ database_NN at_IN the_DT
+        National_NNP Center_NNP for_IN Biotechnology_NNP Information_NNP (_( NCBI_NNP )_) was_VBD
+        searched_VBD using_VBG the_DT gapped_JJ version_NN of_IN the_DT BLAST_NN program_NN [_NN
+        9_CD ]_NN ._. Sequence-profile_NNP searches_NNS were_VBD carried_VBN out_IN using_VBG the_DT
+        PSI-BLAST_NNP program_NN ,_, with_IN the_DT cut-off_JJ for_IN inclusion_NN of_IN
+        sequences_NNS into_IN the_DT profile_NN set_VBN at_IN 
+        E_NNP =_SYM 0_CD ._. 01_CD [_NN 3_CD ,_, 9_CD ]_NN ,_, and_CC the_DT HMMer_NNP
+        program_NN package_NN [_NN 57_CD ]_NN ._. Multiple_NNP alignments_NNS of_IN amino-acid_JJ
+        sequences_NNS were_VBD generated_VBN using_VBG the_DT T_NN __NN Coffee_NNP program_NN [_NN 58_CD ]_NN ._.
+        Protein_NNP secondary-structure_JJ predictions_NNS were_VBD generated_VBN
+        using_VBG the_DT PHD_NNP program_NN [_NN 59_CD ,_, 60_CD ]_NN ,_, with_IN multiple_JJ alignments_NNS
+        of_IN individual_JJ protein_NN families_NNS used_VBN as_IN queries_NNS ._.
+        Sequence-structure_NNP threading_VBG was_VBD carried_VBN out_IN using_VBG the_DT
+        combined-fold-prediction_JJ algorithm_NN [_NN 22_CD ]_NN or_CC the_DT 3_CD D-PSSM_NNP
+        algorithm_NN based_VBN on_IN the_DT use_NN of_IN a_DT three-dimensional_JJ
+        position-specific_JJ scoring_VBG matrix_NN [_NN 23_CD ]_NN ._. Signal_NNP peptides_NNS in_IN
+        protein_NN sequences_NNS were_VBD predicted_VBN using_VBG the_DT SignalP_NNP program_NN
+        [_NN 61_CD ]_NN ._. The_DT COG_NNP database_NN [_NN 62_CD ,_, 63_CD ]_NN was_VBD used_VBN as_IN a_DT source_NN of_IN
+        information_NN on_IN orthologous_JJ relationships_NNS between_IN
+        proteins_NNS ._.
+      
+    
+  

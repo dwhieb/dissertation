@@ -1,0 +1,994 @@
+
+  
+    
+      
+        Background_NNP
+        Recently_RB ,_, DNA_NNP chip_NN or_CC microarray_NN technology_NN has_VBZ been_VBN
+        developed_VBN that_WDT allows_VBZ researchers_NNS to_TO measure_VB the_DT expression_NN
+        levels_NNS of_IN thousands_NNS of_IN genes_NNS simultaneously_RB over_IN different_JJ
+        time_NN points_NNS ,_, different_JJ experimental_JJ conditions_NNS or_CC different_JJ
+        tissue_NN samples_NNS ._. It_PRP is_VBZ based_VBN on_IN the_DT hybridization_NN of_IN DNA_NNP or_CC
+        RNA_NNP molecules_NNS with_IN a_DT library_NN of_IN complementary_JJ strands_NNS fixed_VBN
+        on_IN a_DT solid_JJ surface_NN ._. Oligonucleotide_NNP chips_NNS contain_VBP thousands_NNS
+        of_IN features_NNS with_IN gene-specific_JJ sequences_NNS about_IN 25_CD bases_NNS
+        long_JJ ._. These_DT oligos_NNS are_VBP then_RB hybridized_JJ with_IN labeled_VBN probe_NN
+        derived_VBN from_IN a_DT given_VBN tissue_NN or_CC cell_NN line_NN ._. The_DT resulting_VBG
+        fluorescence_NN intensity_NN gives_VBZ information_NN about_IN the_DT
+        abundance_NN of_IN the_DT corresponding_JJ mRNA_NN ._. This_DT is_VBZ the_DT Affymetrix_NNP
+        DNA_NNP chip_NN technology_NN ._. Alternatively_RB ,_, cDNA_NN can_MD be_VB spotted_VBN on_IN
+        nylon_NN filters_NNS or_CC glass_NN slides_NNS ._. Complex_JJ mRNA_NN probes_NNS are_VBP
+        reverse_VB transcribed_JJ to_TO cDNA_NN and_CC labeled_VBN with_IN red_JJ or_CC green_JJ
+        fluorescent_NN dyes_NNS ._. This_DT technique_NN is_VBZ often_RB called_VBN the_DT
+        spotted_VBN array_NN or_CC cDNA_NN array_NN ._. In_IN both_DT methods_NNS ,_, thousands_NNS of_IN
+        mRNA_NN concentrations_NNS can_MD be_VB measured_VBN in_IN parallel_JJ ,_,
+        potentially_RB revealing_VBG complex_JJ gene_NN regulatory_JJ networks_NNS ._.
+        One_CD important_JJ application_NN of_IN the_DT microarray_NN gene_NN
+        expression_NN data_NNS in_IN medicine_NN is_VBZ to_TO study_VB the_DT relationship_NN
+        between_IN tissue_NN phenotypes_NNS and_CC gene_NN expression_NN profiles_NNS on_IN
+        the_DT whole-genome_JJ scale_NN ._. The_DT phenotype_NN could_MD be_VB several_JJ
+        different_JJ types_NNS of_IN cancers_NNS [_NN 1_CD ,_, 2_CD ,_, 3_CD ]_NN ,_, responses_NNS of_IN cell_NN
+        lines_NNS to_TO different_JJ chemical_NN compounds_NNS [_NN 4_CD ]_NN ,_, or_CC time_NN to_TO
+        tumor_NN recurrence_NN after_IN treatment_NN ._. For_IN binary_JJ phenotypes_NNS
+        such_JJ as_IN two_CD different_JJ types_NNS of_IN cancers_NNS ,_, the_DT problem_NN becomes_VBZ
+        the_DT classification_NN of_IN patients_NNS '_POS samples_NNS ._. It_PRP has_VBZ been_VBN
+        suggested_VBN that_DT gene_NN expression_NN may_MD provide_VB the_DT additional_JJ
+        information_NN needed_VBN to_TO improve_VB cancer_NN classification_NN and_CC
+        diagnosis_NN [_NN 4_CD ]_NN ._. For_IN continuous_JJ phenotypes_NNS such_JJ as_IN drug_NN
+        sensitivity_NN ,_, the_DT problem_NN of_IN interest_NN is_VBZ to_TO relate_VB gene_NN
+        expression_NN patterns_NNS to_TO sensitivity_NN to_TO drugs_NNS and_CC ,_, therefore_RB ,_,
+        aid_NN in_IN the_DT process_NN of_IN drug_NN discovery_NN and_CC provide_VB a_DT
+        rationale_NN for_IN selection_NN of_IN therapy_NN on_IN the_DT basis_NN of_IN the_DT
+        molecular_JJ characteristics_NNS of_IN a_DT patient_NN 's_POS tumor_NN ._.
+        From_IN the_DT statistical_JJ point_NN of_IN view_NN ,_, the_DT challenge_NN is_VBZ
+        that_IN the_DT microarray_NN gene_NN expression_NN data_NNS are_VBP often_RB measured_VBN
+        with_IN a_DT great_JJ deal_NN of_IN noise_NN ,_, and_CC that_IN the_DT sample_NN size_NN of_IN
+        tissues_NNS or_CC cell_NN lines_NNS ,_, denoted_JJ by_IN 
+        n_NN ,_, is_VBZ usually_RB very_RB small_JJ compared_VBN to_TO
+        the_DT number_NN of_IN genes_NNS in_IN expression_NN arrays_NNS ,_, denoted_JJ by_IN 
+        p_NN ._. This_DT results_NNS in_IN the_NNP '_POS large_JJ 
+        p_NN ,_, small_JJ 
+        n_NN '_'' problem_NN [_NN 5_CD ]_NN ._. Most_JJS current_JJ
+        approaches_NNS to_TO dealing_VBG with_IN this_DT problem_NN first_RB select_VB genes_NNS
+        that_WDT can_MD best_JJS separate_JJ tissues_NNS of_IN different_JJ types_NNS by_IN
+        performing_VBG univariate_NN analysis_NN ._. The_DT expression_NN levels_NNS of_IN
+        these_DT genes_NNS are_VBP then_RB combined_VBN linearly_RB in_IN a_DT weighted_JJ way_NN to_TO
+        form_VB compound_NN covariates_NNS ._. These_DT covariates_NNS are_VBP then_RB used_VBN in_IN
+        the_DT standard_JJ regression_NN models_NNS for_IN model_NN fitting_NN and_CC
+        prediction_NN ._. West_NNP 
+        et_CC al_NN ._. [_NN 5_CD ]_NN proposed_VBD a_DT Bayesian_NNP
+        binary_JJ regression_NN approach_NN using_VBG the_DT singular_NN value_NN
+        decomposition_NN to_TO first_JJ reduce_VB the_DT dimension_NN of_IN the_DT variable_JJ
+        space_NN (_( 
+        p_NN )_) to_TO the_DT number_NN of_IN samples_NNS (_( 
+        n_NN )_) ._. They_PRP called_VBD the_DT resulting_VBG linear_JJ
+        combination_NN of_IN the_DT expression_NN levels_NNS of_IN all_PDT the_DT genes_NNS the_DT
+        expression_NN of_IN the_NNP '_POS supergenes_NNS '_'' ._. All_DT these_DT approaches_NNS reduce_VBP
+        the_DT variable_JJ space_NN by_IN making_VBG one_CD or_CC several_JJ linear_JJ
+        combinations_NNS of_IN the_DT expression_NN levels_NNS of_IN some_DT or_CC all_DT of_IN the_DT
+        genes_NNS ._. Linear_NNP combination_NN may_MD not_RB ,_, however_RB ,_, be_VBP the_DT best_JJS way_NN
+        of_IN reducing_VBG the_DT dimension_NN of_IN the_DT variable_JJ space_NN ._.
+        Another_DT popular_JJ approach_NN to_TO analyzing_VBG gene_NN expression_NN
+        data_NNS is_VBZ to_TO use_VB clustering_VBG methods_NNS to_TO simultaneously_RB cluster_NN
+        both_DT samples_NNS and_CC genes_NNS in_IN order_NN to_TO determine_VB some_DT clusters_NNS
+        of_IN genes_NNS that_WDT are_VBP mostly_RB correlated_JJ with_IN some_DT clusters_NNS of_IN
+        samples_NNS ._. Examples_NNS of_IN such_JJ an_DT application_NN include_VBP analysis_NN
+        of_IN gene_NN expression_NN data_NNS and_CC drug_NN response_NN for_IN the_DT 60_CD human_JJ
+        cancer_NN cell_NN lines_NNS of_IN the_DT National_NNP Cancer_NNP Institute_NNP (_( NCI_NNP 60_CD
+        data_NNS )_) [_NN 4_CD ]_NN ,_, and_CC analysis_NN of_IN cancerous_JJ and_CC normal_JJ colon_NN
+        tissues_NNS [_NN 2_CD ]_NN ._. However_RB ,_, the_DT clustering_VBG approach_NN is_VBZ purely_RB
+        exploratory_JJ and_CC requires_VBZ an_DT external_JJ similarity_NN measure_NN ._.
+        Methods_NNP that_WDT can_MD be_VB used_VBN to_TO assess_VB the_DT significance_NN of_IN the_DT
+        clustering_VBG results_NNS are_VBP needed_VBN ._.
+        The_DT Rasch_NNP model_NN (_( RM_NNP )_) and_CC its_PRP$ extensions_NNS [_NN 6_CD ,_, 7_CD ]_NN are_VBP an_DT
+        important_JJ staple_NN of_IN psychological_JJ research_NN and_CC are_VBP used_VBN in_IN
+        other_JJ fields_NNS such_JJ as_IN sociology_NN ,_, educational_JJ testing_NN and_CC
+        medicine_NN ._. The_DT idea_NN of_IN the_DT RM_NNP is_VBZ that_IN one_PRP can_MD indirectly_RB
+        infer_NN a_DT person_NN 's_POS position_NN on_IN a_DT latent_NN trait_NN from_IN his_PRP$ /_NN her_PRP$
+        responses_NNS to_TO a_DT set_NN of_IN well-chosen_JJ items_NNS ._. For_IN example_NN ,_, the_DT
+        RM_NNP has_VBZ been_VBN used_VBN to_TO infer_NN the_DT quality_NN of_IN life_NN of_IN cancer_NN
+        patients_NNS from_IN their_PRP$ answers_NNS to_TO a_DT well-designed_JJ
+        questionnaire_NN [_NN 8_CD ]_NN ,_, or_CC to_TO measure_VB disability_NN from_IN
+        activities_NNS of_IN daily_JJ living_NN [_NN 9_CD ]_NN ._. For_IN these_DT applications_NNS ,_,
+        data_NNS are_VBP usually_RB given_VBN in_IN a_DT matrix_NN ,_, with_IN rows_NNS being_VBG
+        individuals_NNS and_CC columns_NNS being_VBG responses_NNS to_TO a_DT set_NN of_IN items_NNS ._.
+        Microarray_NNP gene_NN expression_NN data_NNS are_VBP also_RB given_VBN in_IN a_DT
+        transposable_JJ matrix_NN form_NN with_IN rows_NNS being_VBG genes_NNS and_CC columns_NNS
+        being_VBG samples_NNS ,_, and_CC vice_NN versa_RB ._. The_DT RM_NNP can_MD therefore_RB be_VB used_VBN
+        to_TO explain_VB the_DT observed_VBD patterns_NNS over_IN different_JJ columns_NNS ._.
+        Here_RB we_PRP propose_VBP two_CD different_JJ formulations_NNS of_IN the_DT
+        polytomous_JJ RM_NNP for_IN analysis_NN of_IN microarray_NN gene_NN expression_NN
+        data_NNS ._. The_DT first_JJ formulation_NN treats_VBZ samples_NNS as_IN '_POS persons_NNS '_POS and_CC
+        genes_NNS as_IN '_POS items_NNS '_'' ._. The_DT idea_NN is_VBZ to_TO infer_NN several_JJ latent_NN
+        factors_NNS associated_VBN with_IN a_DT given_VBN sample_NN on_IN the_DT basis_NN of_IN its_PRP$
+        expression_NN profile_NN over_IN many_JJ genes_NNS ._. We_PRP combine_VBP a_DT
+        model-based_JJ clustering_VBG method_NN [_NN 10_CD ]_NN with_IN the_DT RM_NNP to_TO define_VB a_DT
+        small_JJ set_NN of_IN latent_NN factors_NNS associated_VBN with_IN samples_NNS ._. For_IN a_DT
+        given_VBN sample_NN ,_, we_PRP assume_VBP that_IN genes_NNS in_IN the_DT same_JJ cluster_NN
+        determine_VB one_CD latent_NN factor_NN associated_VBN with_IN this_DT sample_NN ,_,
+        and_CC use_VB the_DT RM_NNP to_TO estimate_VB this_DT latent_NN factor_NN for_IN each_DT gene_NN
+        cluster_NN ._. These_DT latent_NN factors_NNS are_VBP then_RB used_VBN in_IN a_DT regression_NN
+        analysis_NN of_IN the_DT observed_VBN phenotypes_NNS ._. The_DT rational_JJ of_IN this_DT
+        approach_NN is_VBZ that_IN genes_NNS of_IN similar_JJ function_NN yield_NN similar_JJ
+        expression_NN patterns_NNS in_IN microarray_NN hybridization_NN experiments_NNS
+        [_NN 11_CD ,_, 12_CD ,_, 13_CD ]_NN ._. Co-regulated_NNP genes_NNS may_MD share_VB similar_JJ
+        expression_NN profiles_NNS ,_, maybe_RB involved_VBN in_IN related_VBN functions_NNS or_CC
+        regulated_VBN by_IN common_JJ regulatory_JJ elements_NNS [_NN 14_CD ]_NN ._. Therefore_RB ,_,
+        if_IN genes_NNS are_VBP clustered_VBN together_RB ,_, it_PRP is_VBZ impossible_JJ from_IN a_DT
+        statistical_JJ point_NN of_IN view_NN to_TO differentiate_VB one_CD gene_NN from_IN
+        the_DT other_JJ ._. In_IN this_DT case_NN ,_, a_DT better_JJR way_NN of_IN studying_VBG these_DT
+        genes_NNS is_VBZ to_TO treat_VB them_PRP as_IN a_DT cluster_NN ._. Consideration_NNP of_IN genes_NNS
+        in_IN the_DT same_JJ cluster_NN can_MD potentially_RB reduce_VB noise_NN associated_VBN
+        with_IN a_DT single_JJ gene_NN ._.
+        The_DT second_JJ formulation_NN is_VBZ to_TO treat_VB genes_NNS as_IN '_POS persons_NNS '_POS
+        and_CC samples_NNS as_IN '_POS items_NNS '_'' ._. The_DT idea_NN is_VBZ to_TO infer_NN several_JJ latent_NN
+        factors_NNS associated_VBN with_IN each_DT gene_NN based_VBN on_IN its_PRP$ expression_NN
+        levels_NNS across_IN samples_NNS from_IN different_JJ tissue_NN or_CC cell_NN types_NNS ._.
+        This_DT formulation_NN provides_VBZ simple_JJ summary_NN statistics_NNS for_IN
+        genes_NNS based_VBN on_IN their_PRP$ expression_NN profiles_NNS over_IN samples_NNS ,_, and_CC
+        helps_VBZ to_TO identify_VB genes_NNS that_WDT are_VBP more_RBR likely_JJ be_VB over-_NN or_CC
+        underexpressed_JJ within_IN samples_NNS of_IN the_DT same_JJ type_NN or_CC between_IN
+        samples_NNS of_IN different_JJ types_NNS ._. We_PRP first_JJ briefly_NN review_NN some_DT
+        key_JJ ideas_NNS of_IN the_DT polytomous_JJ RM_NNP and_CC its_PRP$ estimation_NN ._. We_PRP then_RB
+        present_JJ two_CD different_JJ formulations_NNS of_IN the_DT RM_NNP for_IN the_DT gene_NN
+        expression_NN data_NNS ._. Details_NNS involved_VBN in_IN these_DT formulations_NNS are_VBP
+        given_VBN ._. We_PRP apply_VBP our_PRP$ proposed_VBN methods_NNS to_TO the_DT analysis_NN of_IN the_DT
+        leukemia_NN dataset_NN [_NN 1_CD ]_NN and_CC the_DT NCI_NNP 60_CD dataset_NN [_NN 4_CD ]_NN and_CC
+        conclude_VB with_IN discussion_NN of_IN our_PRP$ method_NN ._.
+      
+      
+        Results_NNS
+        
+          The_DT Rasch_NNP model_NN (_( RM_NNP )_)
+          The_DT RM_NNP was_VBD originally_RB proposed_VBN as_IN an_DT item-response_JJ
+          theory_NN model_NN in_IN the_DT psychological_JJ test_NN or_CC attitude_NN scale_NN
+          [_NN 6_CD ]_NN ._. The_DT idea_NN is_VBZ that_IN the_DT use_NN of_IN a_DT test_NN or_CC scale_NN
+          presupposes_NNS that_IN one_PRP can_MD indirectly_RB infer_NN a_DT person_NN 's_POS
+          position_NN on_IN a_DT latent_NN trait_NN from_IN his_PRP$ /_NN her_PRP$ responses_NNS to_TO a_DT
+          set_NN of_IN well-chosen_JJ items_NNS ._. Assume_VB that_IN we_PRP have_VBP 
+          I_PRP persons_NNS and_CC 
+          J_NNP items_NNS ._. Let_VB 
+          Z_NNP 
+          
+            ij_NN 
+           be_VBP the_DT response_NN of_IN individual_JJ 
+          i_NNP to_TO the_DT item_NN 
+          j_NN ,_, where_WRB the_DT response_NN can_MD take_VB one_CD
+          from_IN 
+          m_NN +_NN 1_CD possible_JJ ordinal_NN categories_NNS ,_,
+          0_CD ,_, ._. ._. ._. ,_, 
+          m_NN ._. One_CD version_NN of_IN the_DT RM_NNP ,_, which_WDT we_PRP
+          use_VBP in_IN this_DT paper_NN ,_, called_VBD the_DT partial_JJ credit_NN model_NN [_NN 15_CD ]_NN ,_,
+          assumes_VBZ the_DT probability_NN of_IN response_NN 
+          h_NN ,_, as_IN
+                 (_( 1_LS )_)
+          for_IN 
+          i_NNP =_SYM 1_CD ,_, ._. ._. ._. ,_, 
+          I_PRP ,_, 
+          j_NN =_SYM 1_CD ,_, ._. ._. ._. ,_, 
+          J_NNP ,_, and_CC 
+          h_NN =_SYM 0_CD ,_, 1_CD ,_, ._. ._. ._. ,_, 
+          m_NN ,_, where_WRB 
+          β_NN 
+          
+            jl_NN 
+           is_VBZ the_DT item-specific_JJ parameter_NN ,_, which_WDT expresses_VBZ the_DT
+          attractiveness_NN of_IN the_DT respective_JJ level_NN 
+          l_NN of_IN item_NN 
+          j_NN ._. 
+          α_NN 
+          i_NNP  is_VBZ the_DT person_NN parameter_NN that_WDT
+          expresses_VBZ the_DT latent_NN factor_NN of_IN the_DT 
+          i_NNP th_NN person_NN that_WDT is_VBZ measured_VBN by_IN the_DT
+          
+          J_NNP items_NNS ._. It_PRP is_VBZ easy_JJ to_TO verify_VB that_IN
+          the_DT probability_NN of_IN the_DT response_NN is_VBZ monotonous_JJ in_IN both_DT
+          person_NN and_CC item_NN parameters_NNS ._. For_IN example_NN ,_, for_IN 
+          m_NN =_SYM 3_CD ,_, Figure_NN 1_CD plots_NNS the_DT Rasch_NNP
+          probabilities_NNS as_IN a_DT function_NN of_IN the_DT value_NN of_IN the_DT latent_NN
+          factor_NN (_( a_DT )_) for_IN two_CD sets_NNS of_IN item-specific_JJ 
+          β_NN values_NNS ._. It_PRP can_MD be_VB seen_VBN from_IN these_DT
+          plots_NNS that_IN for_IN a_DT given_VBN item_NN ,_, persons_NNS with_IN larger_JJR 
+          α_NN value_NN tend_VBP to_TO have_VB greater_JJR
+          probability_NN of_IN expressing_VBG high_JJ scores_NNS ,_, and_CC for_IN a_DT given_VBN
+          person_NN ,_, the_DT response_NN probabilities_NNS are_VBP different_JJ for_IN
+          items_NNS with_IN different_JJ 
+          β_NN values_NNS ._. To_TO make_VB the_DT model_NN (_( 1_LS )_)
+          identifiable_JJ ,_, the_DT following_VBG constraints_NNS are_VBP required_VBN
+          Therefore_RB ,_, there_EX is_VBZ a_DT total_NN of_IN 
+          Jm_NNP -_: 1_CD unconstraint_NN item-specific_JJ
+          parameters_NNS ._.
+          The_DT item_NN parameters_NNS can_MD be_VB estimated_VBN based_VBN on_IN the_DT
+          conditional_JJ likelihood_NN ,_, given_VBN minimal_JJ sufficient_JJ
+          statistics_NNS for_IN the_DT person_NN parameters_NNS ._. For_IN a_DT given_VBN person_NN ,_,
+          the_DT minimal_JJ sufficient_JJ statistic_NN is_VBZ the_DT sum_NN of_IN the_DT
+          category_NN weights_NNS corresponding_JJ to_TO the_DT observed_VBD responses_NNS ._.
+          After_IN the_DT β_NN parameters_NNS are_VBP estimated_VBN ,_, the_DT person_NN
+          parameters_NNS can_MD then_RB be_VB estimated_VBN by_IN maximizing_VBG the_DT
+          likelihood_NN function_NN ._. Details_NNS on_IN the_DT conditional_JJ
+          likelihood_NN estimation_NN of_IN the_DT item_NN parameters_NNS can_MD be_VB found_VBN
+          in_IN Anderson_NNP [_NN 16_CD ]_NN ._.
+        
+        
+          Relating_NNP gene_NN expression_NN profiles_NNS to_TO
+          phenotypes_NNS
+          
+            Outline_NNP of_IN the_DT approach_NN
+            Our_PRP$ goal_NN is_VBZ to_TO infer_NN several_JJ latent_NN factors_NNS
+            associated_VBN with_IN each_DT sample_NN based_VBN on_IN its_PRP$ gene_NN
+            expression_NN profile_NN ,_, and_CC relate_VBP these_DT latent_NN factors_NNS to_TO
+            the_DT observed_VBD phenotypes_NNS ._. Using_VBG the_DT terms_NNS of_IN the_DT RM_NNP ,_, we_PRP
+            treat_VBP each_DT gene_NN as_IN an_DT '_POS item_NN '_'' ,_, each_DT tissue_NN sample_NN or_CC
+            cell_NN line_NN as_IN a_NNP '_POS person_NN '_'' ,_, and_CC treat_VB the_DT expression_NN level_NN
+            as_IN the_DT response_NN of_IN a_DT given_VBN tissue_NN to_TO a_DT given_VBN gene_NN ._. The_DT
+            unidimensional_NN RM_NNP may_MD not_RB ,_, however_RB ,_, hold_VB for_IN the_DT
+            complete_JJ set_NN of_IN genes_NNS generated_VBN by_IN microarrays_NNS ._. Here_RB we_PRP
+            assume_VBP that_IN genes_NNS with_IN similar_JJ expressions_NNS determine_VBP
+            one_CD latent_NN factor_NN ,_, and_CC that_IN the_DT RM_NNP holds_VBZ for_IN each_DT set_NN
+            of_IN genes_NNS with_IN similar_JJ expression_NN profiles_NNS ._.
+            To_TO identify_VB genes_NNS with_IN similar_JJ expression_NN profiles_NNS
+            over_IN samples_NNS ,_, we_PRP first_JJ use_NN the_DT model-based_JJ clustering_VBG
+            method_NN of_IN Fraley_NNP and_CC Raftery_NNP [_NN 10_CD ]_NN to_TO cluster_NN 
+            p_NN genes_NNS into_IN 
+            K_NNP clusters_NNS based_VBN on_IN their_PRP$ gene_NN
+            expression_NN profiles_NNS over_IN 
+            n_NN samples_NNS ._. Note_VB that_IN the_DT
+            cluster-step_JJ is_VBZ performed_VBN based_VBN on_IN the_DT observed_VBN
+            continuous_JJ gene_NN expression_NN data_NNS ,_, not_RB the_DT discretized_JJ
+            gene_NN expression_NN patterns_NNS ._. For_IN a_DT given_VBN sample_NN ,_, using_VBG
+            expression_NN profiles_NNS of_IN genes_NNS in_IN a_DT given_VBN cluster_NN ,_, we_PRP
+            estimate_VBP a_DT latent_NN factor_NN by_IN fitting_JJ a_DT RM_NNP ._. These_DT latent_NN
+            factors_NNS are_VBP then_RB used_VBN in_IN a_DT regression_NN analysis_NN to_TO study_VB
+            the_DT relationship_NN between_IN the_DT gene_NN expressions_NNS and_CC the_DT
+            phenotype_NN ._. The_DT method_NN allows_VBZ to_TO investigate_VB whether_IN a_DT
+            cluster_NN of_IN genes_NNS with_IN similar_JJ expression_NN profiles_NNS is_VBZ
+            related_VBN to_TO the_DT observed_VBD phenotypes_NNS ,_, and_CC can_MD also_RB be_VB
+            used_VBN for_IN future_JJ prediction_NN by_IN estimating_VBG the_DT latent_NN
+            factors_NNS using_VBG the_DT maximum_NN likelihood_NN estimation_NN ._. We_PRP
+            give_VBP some_DT details_NNS for_IN each_DT of_IN these_DT steps_NNS in_IN the_DT
+            following_VBG sections_NNS ._.
+          
+          
+            Model-based_NNP clustering_VBG analysis_NN
+            Cluster_NNP analysis_NN ,_, based_VBN on_IN multivariate_NN normal_JJ
+            mixture_NN models_NNS [_NN 10_CD ,_, 17_CD ]_NN ,_, has_VBZ been_VBN used_VBN for_IN clustering_VBG
+            various_JJ types_NNS of_IN biological_JJ ,_, zoological_JJ ,_, financial_JJ and_CC
+            industrial_JJ data_NNS ._. We_PRP first_RB set_VBN up_RP the_DT mixture_NN model_NN for_IN
+            the_DT gene_NN expression_NN data_NNS ._. Let_VB 
+            x_SYM 
+            
+              j_NN 
+             =_SYM {_( 
+            x_SYM 
+            1_CD 
+            j_NN  ,_, ._. ._. ._. ,_, 
+            x_SYM 
+            
+              nj_NN 
+             }_) be_VBP the_DT 
+            n_NN -_: dimensional_NN vector_NN of_IN the_DT 
+            j_NN th_NN gene_NN expression_NN over_IN 
+            n_NN samples_NNS ._. We_PRP assume_VBP that_IN the_DT
+            gene_NN expression_NN values_NNS of_IN 
+            p_NN genes_NNS ,_, 
+            x_SYM 
+            1_CD ,_, ._. ._. ._. ,_, 
+            x_SYM 
+            
+              p_NN 
+             ,_, arise_VB from_IN a_DT mixture_NN of_IN 
+            K_NNP n_NN -_: dimensional_NN Gaussian_NNP
+            distribution_NN with_IN density_NN
+                   (_( 2_LS )_)
+            where_WRB the_DT τ_NN 
+            
+              k_NN 
+             is_VBZ the_DT probability_NN that_IN a_DT gene_NN belongs_VBZ to_TO the_DT 
+            k_NN th_NN cluster_NN ,_, and_CC φ_NN 
+            
+              n_NN 
+             (_( 
+            X_NNP |_NN μ_NN 
+            
+              k_NN 
+             ,_, Σ_NN 
+            
+              k_NN 
+             )_) denotes_NNS the_DT density_NN function_NN of_IN the_DT multivariate_NN
+            normal_JJ distribution_NN with_IN mean_NN μ_NN 
+            
+              k_NN 
+             and_CC variance-covariance_JJ matrix_NN Σ_NN 
+            
+              k_NN 
+             Possible_JJ parameterization_NN of_IN the_DT covariance_NN matrix_NN
+            is_VBZ discussed_VBN in_IN Fraley_NNP and_CC Raftery_NNP [_NN 10_CD ]_NN ._. Note_VB that_IN if_IN
+            we_PRP assume_VBP a_DT simple_JJ covariance_NN structure_NN ,_, Σ_NN 
+            
+              k_NN 
+             =_SYM λ_NN 
+            I_PRP ,_, where_WRB 
+            I_PRP is_VBZ the_DT identity_NN matrix_NN ,_, and_CC λ_NN
+            is_VBZ the_DT variance_NN ,_, then_RB the_DT model-based_JJ clustering_VBG method_NN
+            becomes_VBZ the_DT K-_NNP means_VBZ clustering_VBG method_NN [_NN 18_CD ]_NN ._.
+            Treating_NNP clustering_VBG as_IN a_DT mixture_NN model_NN problem_NN
+            allows_VBZ us_PRP to_TO use_VB the_DT EM_NNP algorithm_NN to_TO estimate_VB the_DT
+            probability_NN of_IN a_DT given_VBN gene_NN belonging_VBG to_TO each_DT of_IN the_DT 
+            K_NNP clusters_NNS ,_, and_CC to_TO estimate_VB the_DT
+            corresponding_JJ mean_NN vector_NN and_CC covariance_NN matrix_NN for_IN
+            each_DT cluster_NN [_NN 10_CD ]_NN ._. One_CD advantage_NN of_IN this_DT approach_NN is_VBZ
+            that_IN it_PRP allows_VBZ us_PRP to_TO obtain_VB an_DT estimate_NN of_IN the_DT number_NN
+            of_IN gene_NN clusters_NNS ._. Following_VBG Fraley_NNP and_CC Raftery_NNP [_NN 10_CD ]_NN ,_,
+            we_PRP propose_VBP to_TO use_VB the_DT Bayesian_NNP inference_NN criterion_NN
+            (_( BIC_NNP )_) [_NN 19_CD ]_NN for_IN selecting_VBG the_DT number_NN of_IN gene_NN clusters_NNS ._.
+            BIC_NNP is_VBZ defined_VBN as_IN
+            
+            BIC_NNP (_( 
+            K_NNP )_) =_SYM 2_CD 
+            L_NNP (_( 
+            K_NNP )_) -_: 
+            n_NN 
+            
+              K_NNP 
+             log_VB 
+            p_NN ,_, 
+            where_WRB 
+            L_NNP (_( 
+            K_NNP )_) is_VBZ the_DT maximized_JJ
+            log-likelihood_JJ ,_, 
+            n_NN 
+            
+              k_NN 
+             is_VBZ the_DT number_NN of_IN independent_JJ parameters_NNS to_TO be_VB
+            estimated_VBN in_IN the_DT 
+            K_NNP -_: cluster_NN model_NN and_CC 
+            p_NN is_VBZ the_DT sample_NN size_NN (_( number_NN of_IN
+            the_DT genes_NNS )_) ._. We_PRP will_MD choose_VB 
+            K_NNP that_WDT gives_VBZ the_DT maximum_NN 
+            BIC_NNP (_( 
+            K_NNP )_) value_NN ._.
+            As_IN the_DT first_JJ step_NN of_IN our_PRP$ approach_NN ,_, we_PRP cluster_NN genes_NNS
+            into_IN 
+            K_NNP clusters_NNS using_VBG the_DT model-based_JJ
+            clustering_VBG method_NN described_VBD above_IN ,_, where_WRB the_DT number_NN of_IN
+            gene_NN clusters_NNS 
+            K_NNP is_VBZ determined_VBN by_IN maximizing_VBG the_DT
+            BIC_NNP scores_NNS ._. Let_VB 
+            C_NNP 
+            
+              k_NN 
+             denote_NN the_DT genes_NNS in_IN cluster_NN 
+            k_NN ,_, and_CC 
+            p_NN 
+            
+              k_NN 
+             denote_NN the_DT number_NN of_IN genes_NNS in_IN this_DT cluster_NN ,_, for_IN 
+            k_NN =_SYM 1_CD ,_, ._. ._. ._. ,_, 
+            K_NNP ._.
+          
+          
+            Rasch_NNP model_NN and_CC regression_NN analysis_NN
+            We_PRP fit_VBP a_DT RM_NNP model_NN as_IN in_IN equation_NN (_( 1_LS )_) for_IN genes_NNS in_IN
+            each_DT of_IN the_DT 
+            K_NNP clusters_NNS respectively_RB ,_, treating_VBG
+            samples_NNS as_IN '_POS persons_NNS '_POS and_CC genes_NNS as_IN '_POS items_NNS '_'' ._. To_TO fit_VB the_DT
+            RM_NNP (_( equation_NN 1_LS )_) for_IN genes_NNS in_IN the_DT 
+            k_NN th_NN cluster_NN ,_, we_PRP let_VBP 
+            i_NNP be_VB the_DT sample_NN index_NN ,_, and_CC 
+            j_NN be_VBP the_DT gene_NN index_NN ,_, for_IN 
+            i_NNP =_SYM 1_CD ,_, ._. ._. ._. ,_, 
+            n_NN ,_, and_CC 
+            j_NN =_SYM 1_CD ,_, ._. ._. ._. ,_, 
+            p_NN 
+            
+              k_NN 
+             ,_, and_CC let_VB α_NN 
+            
+              i_NNP 
+             =_SYM α_NN 
+            
+              ik_NN 
+             in_IN model_NN (_( 1_LS )_) be_VB the_DT latent_NN factor_NN for_IN the_DT 
+            i_NNP th_NN sample_NN which_WDT is_VBZ determined_VBN
+            by_IN the_DT genes_NNS in_IN the_DT 
+            k_NN th_NN cluster_NN ,_, and_CC β_NN 
+            
+              jl_NN 
+             be_VBP the_DT gene-specific_JJ parameter_NN for_IN the_DT 
+            j_NN th_NN gene_NN ._. The_DT RM_NNP assumes_VBZ that_IN
+            the_DT variation_NN of_IN the_DT gene_NN expression_NN patterns_NNS observed_VBD
+            over_IN different_JJ samples_NNS is_VBZ due_JJ to_TO a_DT latent_NN factor_NN ,_, and_CC
+            it_PRP provides_VBZ a_DT probabilistic_JJ model_NN to_TO describe_VB the_DT gene_NN
+            expression_NN pattern_NN for_IN a_DT given_VBN sample_NN ._.
+            Let_VB 
+            
+              ik_NN 
+             be_VBP the_DT maximum_NN likelihood_NN estimate_NN of_IN the_DT latent_NN
+            factor_NN for_IN the_DT 
+            i_NNP th_NN sample_NN determined_VBN by_IN the_DT
+            genes_NNS in_IN the_DT 
+            k_NN th_NN cluster_NN ._. Let_VB 
+            
+              i_NNP 
+             =_SYM (_( 
+            
+            i_NNP 1_CD ,_, ._. ._. ._. ,_, 
+            
+              iK_NN 
+             )_) be_VB the_DT vector_NN of_IN the_DT estimated_VBN latent_NN factors_NNS
+            based_VBN on_IN the_DT gene_NN expression_NN profiles_NNS for_IN the_DT 
+            i_NNP th_NN sample_NN ._. In_IN general_JJ ,_, we_PRP can_MD
+            relate_VB the_DT phenotype_NN 
+            y_NN 
+            
+              i_NNS 
+             for_IN the_DT 
+            i_NNP th_NN sample_NN to_TO the_DT estimated_VBN of_IN
+            latent_NN factors_NNS 
+            
+              i_NNS 
+             by_IN a_DT regression_NN model_NN ,_,
+                   (_( 3_LS )_)
+            for_IN 
+            i_NNP =_SYM 1_CD ,_, ._. ._. ._. ,_, 
+            n_NN ,_, where_WRB γ_NN is_VBZ the_DT vector_NN of_IN
+            regression_NN parameters_NNS ,_, ε_NN 
+            
+              i_NNP 
+             ,_, is_VBZ the_DT error_NN term_NN ,_, and_CC the_DT actual_JJ model_NN of_IN the_DT
+            regression_NN function_NN (_( 
+            f_SYM )_) and_CC the_DT distribution_NN of_IN the_DT
+            error_NN depend_VB on_IN type_NN of_IN the_DT phenotype_NN ._. If_IN the_DT phenotype_NN
+            is_VBZ a_DT continuous_JJ variable_JJ ,_, linear_JJ regression_NN can_MD be_VB
+            used_VBN ,_, if_IN it_PRP is_VBZ a_DT binary_JJ variable_JJ ,_, logistic_JJ or_CC probit_NN
+            regression_NN can_MD be_VB used_VBN ,_, and_CC if_IN the_DT phenotype_NN is_VBZ
+            survival_NN time_NN ,_, the_DT Cox_NNP regression_NN model_NN can_MD be_VB used_VBN ._.
+            Alternatively_RB ,_, the_DT generalized_JJ linear_JJ model_NN can_MD be_VB
+            used_VBN ._. One_CD advantage_NN of_IN the_DT proposed_VBN method_NN is_VBZ that_IN we_PRP
+            can_MD model_VB the_DT interactions_NNS between_IN the_DT latent_NN factors_NNS
+            in_IN the_DT standard_JJ way_NN of_IN modeling_NN interactions_NNS in_IN the_DT
+            regression_NN models_NNS ._. As_IN only_RB the_DT estimated_VBN and_CC not_RB the_DT
+            observed_VBN latent_NN factors_NNS are_VBP available_JJ in_IN the_DT regression_NN
+            model_NN (_( equation_NN 3_LS )_) ,_, the_DT variance_NN of_IN the_DT estimate_NN of_IN the_DT
+            γ_NN parameter_NN has_VBZ to_TO be_VB corrected_VBN ._. We_PRP propose_VBP to_TO use_VB a_DT
+            two-step_JJ bootstrap_NN resampling_VBG procedure_NN [_NN 20_CD ]_NN to_TO
+            estimate_VB the_DT variance_NN of_IN the_DT estimate_NN of_IN the_DT parameter_NN
+            γ_NN in_IN the_DT regression_NN model_NN ._. First_LS ,_, within_IN the_DT 
+            k_NN th_NN gene_NN cluster_NN ,_, we_PRP resample_NN
+            genes_NNS and_CC re-estimate_JJ the_DT α_NN 
+            
+              ik_NN 
+             parameter_NN by_IN fitting_JJ the_DT RM_NNP (_( 1_LS )_) ._. Second_JJ ,_, for_IN a_DT
+            given_VBN set_NN of_IN estimated_VBN 
+            α_NN parameters_NNS ,_, we_PRP resample_NN the_DT 
+            n_NN samples_NNS from_IN (_( 
+            y_NN 
+            
+              i_NNP 
+             ,_, 
+            
+              i_NNP 
+             )_) ,_, for_IN 
+            i_NNP =_SYM 1_CD ,_, ._. ._. ._. ,_, 
+            n_NN ,_, and_CC fit_VB the_DT regression_NN model_NN
+            (_( equation_NN 3_LS )_) to_TO obtain_VB a_DT new_JJ estimate_NN of_IN γ_NN ._. We_PRP can_MD then_RB
+            estimate_VB the_DT variance_NN of_IN with_IN these_DT resampled_JJ
+            estimates_NNS ._.
+          
+          
+            Prediction_NNP
+            For_IN a_DT new_JJ sample_NN with_IN gene_NN expression_NN 
+            x_SYM 
+            
+              new_JJ 
+             =_SYM (_( 
+            x_SYM 
+            
+            new_JJ ,_, 1_CD ,_, ._. ._. ._. ,_, 
+            x_SYM 
+            
+            new_JJ ,_, 
+            p_NN  )_) ,_, these_DT 
+            p_NN genes_NNS are_VBP first_RB divided_VBN into_IN 
+            K_NNP clusters_NNS according_VBG to_TO the_DT
+            clustering_VBG result_NN ._. For_IN a_DT gene_NN 
+            j_NN in_IN cluster_NN 
+            k_NN ,_, we_PRP first_JJ discretize_NN its_PRP$
+            expression_NN level_NN into_IN one_CD of_IN the_DT 
+            m_NN +_NN 1_CD categories_NNS using_VBG the_DT
+            cut-off_JJ points_NNS used_VBN in_IN the_DT discretization-step_JJ ,_, denoted_JJ
+            by_IN 
+            z_SYM 
+            
+            new_JJ ,_, 
+            j_NN  ._. We_PRP can_MD then_RB estimate_VB the_DT
+            corresponding_JJ latent_NN factor_NN α_NN 
+            
+              k_NN 
+             by_IN maximizing_VBG the_DT following_NN likelihood_NN
+            function_NN ,_,
+                   (_( 4_LS )_)
+            where_WRB 
+            
+              jh_NN 
+             is_VBZ the_DT estimated_VBN gene-specific_JJ parameter_NN for_IN gene_NN 
+            j_NN in_IN the_DT 
+            k_NN th_NN cluster_NN based_VBN on_IN the_DT
+            training_NN sample_NN ._. Using_VBG the_DT estimated_VBN vector_NN of_IN the_DT
+            latent_NN factors_NNS ,_, the_DT regression_NN model_NN (_( 3_LS )_) can_MD then_RB be_VB
+            used_VBN for_IN predicting_VBG phenotype_NN 
+            Y_NNP 
+            new_JJ  ._.
+          
+        
+        
+          RM_NNP for_IN latent_NN factors_NNS associated_VBN with_IN genes_NNS
+          The_DT second_JJ formulation_NN of_IN the_DT RM_NNP for_IN gene_NN expression_NN
+          data_NNS is_VBZ to_TO treat_VB genes_NNS as_IN '_POS persons_NNS '_POS ,_, and_CC samples_NNS as_IN
+          '_POS items_NNS '_'' ._. Assume_VB that_IN we_PRP have_VBP gene_NN expression_NN data_NNS of_IN 
+          p_NN different_JJ genes_NNS ,_, indexed_VBN by_IN 
+          i_NNP ,_, over_IN 
+          n_NN 
+          
+            k_NN 
+           samples_NNS of_IN the_DT 
+          k_NN th_NN sample_NN type_NN ,_, indexed_VBN by_IN 
+          j_NN ,_, for_IN 
+          k_NN =_SYM 1_CD ,_, ._. ._. ._. ,_, 
+          K_NNP ._. Note_VB that_IN the_DT indices_NNS 
+          i_NNP and_CC 
+          j_NN are_VBP used_VBN differently_RB from_IN the_DT
+          previous_JJ sections_NNS ._. We_PRP are_VBP interested_JJ in_IN identifying_VBG genes_NNS
+          that_WDT are_VBP expressed_VBN differently_RB among_IN these_DT different_JJ
+          sample_NN types_NNS ._. Here_RB each_DT gene_NN has_VBZ its_PRP$ own_JJ expression_NN
+          patterns_NNS over_IN different_JJ samples_NNS ._. For_IN gene_NN 
+          i_NNP ,_, we_PRP can_MD estimate_VB a_DT latent_NN factor_NN
+          α_NN 
+          
+            ik_NN 
+           based_VBN on_IN its_PRP$ gene_NN expression_NN profile_NN over_IN 
+          n_NN 
+          
+            k_NN 
+           samples_NNS from_IN the_DT 
+          k_NN th_NN sample_NN type_NN by_IN fitting_JJ the_DT RM_NNP
+          (_( equation_NN 1_LS )_) ,_, for_IN 
+          k_NN =_SYM 1_CD ,_, ._. ._. ._. ,_, 
+          K_NNP ._. In_IN this_DT formulation_NN of_IN the_DT RM_NNP ,_,
+          we_PRP treat_VBP genes_NNS as_IN '_POS persons_NNS '_POS ,_, treat_NN samples_NNS as_IN '_POS items_NNS '_POS ,_,
+          and_CC treat_VB each_DT gene_NN 's_POS expression_NN level_NN over_IN samples_NNS as_IN
+          the_DT responses_NNS ._. In_IN RM_NNP (_( 1_LS )_) ,_, 
+          I_PRP =_SYM 
+          p_NN ,_, and_CC 
+          J_NNP =_SYM 
+          n_NN 
+          
+            k_NN 
+           ,_, α_NN 
+          
+            i_NNP 
+           =_SYM α_NN 
+          
+            ik_NN 
+           ,_, which_WDT is_VBZ the_DT latent_NN factor_NN for_IN the_DT 
+          i_NNP th_NN gene_NN determined_VBN by_IN the_DT samples_NNS
+          of_IN the_DT 
+          k_NN th_NN type_NN ,_, and_CC β_NN 
+          
+            jl_NN 
+           is_VBZ the_DT sample-specific_JJ parameter_NN ._. This_DT model_NN assumes_VBZ
+          that_IN the_DT variation_NN of_IN gene_NN expression_NN patterns_NNS across_IN
+          different_JJ samples_NNS among_IN different_JJ genes_NNS is_VBZ due_JJ to_TO several_JJ
+          gene-specific_JJ latent_NN factors_NNS ._. Here_RB the_DT latent_NN factor_NN α_NN 
+          
+            ik_NN 
+           can_MD be_VB interpreted_VBN as_IN some_DT quantities_NNS related_VBN to_TO the_DT
+          transcription_NN factors_NNS of_IN the_DT 
+          i_NNP th_NN gene_NN which_WDT determine_VBP the_DT gene_NN
+          expression_NN levels_NNS in_IN samples_NNS of_IN the_DT 
+          k_NN th_NN sample_NN type_NN ._. For_IN a_DT given_VBN
+          tissue_NN or_CC cell_NN line_NN type_NN 
+          k_NN ,_, genes_NNS with_IN larger_JJR estimated_JJ
+          latent_NN factor_NN (_( α_NN 
+          
+            ik_NN 
+           )_) tend_VBP to_TO have_VB higher_JJR expression_NN levels_NNS than_IN those_DT
+          with_IN smaller_JJR estimated_JJ latent_NN factor_NN ._. For_IN a_DT given_VBN sample_NN
+          type_NN 
+          k_NN ,_, the_DT estimated_VBN latent_NN factors_NNS ,_, (_( 
+          1_CD 
+          k_NN  }_) ,_, ._. ._. ._. ,_, 
+          
+            pk_NN 
+           )_) ,_, provide_VBP a_DT nice_JJ way_NN to_TO order_VB genes_NNS based_VBN on_IN their_PRP$
+          expression_NN levels_NNS over_IN a_DT small_JJ number_NN of_IN samples_NNS of_IN
+          sample_NN type_NN 
+          k_NN ,_, and_CC to_TO identify_VB genes_NNS that_WDT are_VBP
+          relatively_RB over-_NN or_CC underexpressed_JJ in_IN the_DT 
+          k_NN th_NN sample_NN type_NN ._. In_IN addition_NN ,_, by_IN
+          comparing_VBG the_DT estimated_VBN latent_NN factors_NNS associated_VBN with_IN
+          genes_NNS across_IN different_JJ sample_NN types_NNS ,_, we_PRP can_MD identify_VB
+          genes_NNS that_WDT are_VBP differentially_RB expressed_VBN among_IN different_JJ
+          tissue_NN or_CC cell_NN line_NN types_NNS ._.
+        
+        
+          Analysis_NNP of_IN the_DT leukemia_NN dataset_NN
+          
+            Classification_NNP using_VBG cluster-_NN RM_NNP
+            We_PRP applied_VBD the_DT proposed_VBN approach_NN to_TO the_DT problem_NN of_IN
+            classifying_VBG acute_JJ leukemias_NNS ._. Acute_NNP leukemias_NNS can_MD
+            broadly_RB be_VB divided_VBN into_IN two_CD classes_NNS ,_, acute_JJ myeloid_NN
+            leukemia_NN (_( AML_NNP )_) and_CC acute_JJ lymphoblastic_JJ leukemia_NN (_( ALL_NNP )_) ,_,
+            that_WDT originate_VB ,_, respectively_RB ,_, from_IN cells_NNS of_IN myeloid_NN or_CC
+            lymphoid_NN origin_NN ._. The_DT two_CD diseases_NNS appear_VBP identical_JJ
+            under_IN the_DT microscope_NN ._. However_RB ,_, correct_JJ diagnosis_NN is_VBZ
+            critical_JJ ,_, as_IN they_PRP respond_VBP best_JJS to_TO different_JJ treatment_NN
+            regimens_NNS ._. Golub_NNP 
+            et_CC al_NN ._. [_NN 1_CD ]_NN used_VBD a_DT set_NN of_IN 38_CD
+            leukemia_NN samples_NNS including_VBG 11_CD AML_NNP and_CC 27_CD ALL_NNP as_IN
+            training_NN samples_NNS set_VBN ,_, and_CC used_VBD an_DT additional_JJ 34_CD samples_NNS
+            (_( 14_CD AML_NNP ,_, 20_CD ALL_NNP )_) as_IN a_DT test_NN set_VBN for_IN testing_VBG their_PRP$
+            proposed_VBN method_NN for_IN class_NN prediction_NN ._. In_IN our_PRP$ analysis_NN ,_,
+            we_PRP combined_VBD both_DT the_DT training_NN and_CC the_DT test_NN datasets_NNS
+            into_IN a_DT dataset_NN of_IN 72_CD samples_NNS (_( 25_CD AML_NNP and_CC 47_CD ALL_NNP )_) ._. For_IN
+            each_DT of_IN the_DT 72_CD samples_NNS ,_, the_DT gene_NN expression_NN data_NNS were_VBD
+            extracted_VBN from_IN Affymetrix_NNP expression_NN arrays_NNS ._.
+            We_PRP first_RB selected_VBD the_DT subset_NN of_IN 3_CD ,_, 571_CD genes_NNS based_VBN on_IN
+            an_DT initial_JJ processing_NN adopted_VBN by_IN the_DT authors_NNS of_IN the_DT
+            leukemia_NN study_NN ._. The_DT expressions_NNS summarized_VBD are_VBP the_DT log_NN
+            (_( base_NN 10_CD )_) values_NNS of_IN the_DT actual_JJ expression_NN levels_NNS
+            following_VBG this_DT initial_JJ filtering_VBG and_CC transformation_NN ._. We_PRP
+            then_RB select_VBP 50_CD genes_NNS that_WDT are_VBP mostly_RB over-expressed_JJ in_IN
+            AML_NNP ,_, and_CC 50_CD genes_NNS that_WDT are_VBP mostly_RB overexpressed_JJ in_IN ALL_NNP
+            by_IN using_VBG the_DT Wilcoxon_NNP rank_NN sums_NNS test_VBP ._. This_DT simple_JJ rule_NN
+            of_IN selecting_VBG a_DT smaller_JJR set_JJ of_IN genes_NNS are_VBP also_RB used_VBN in_IN
+            Golub_NNP 
+            et_CC al_NN ._. [_NN 1_CD ]_NN using_VBG slightly_RB
+            different_JJ tests_NNS ._. As_IN expected_VBN ,_, the_DT model-based_JJ
+            clustering_VBG method_NN assuming_VBG the_DT common_JJ covariance_NN matrix_NN
+            clusters_NNS these_DT 100_CD genes_NNS into_IN two_CD clusters_NNS ,_, with_IN 50_CD
+            genes_NNS in_IN each_DT cluster_NN ._. The_DT left_VBN plot_NN of_IN Figure_NN 2_CD shows_VBZ
+            the_DT gene_NN expression_NN levels_NNS of_IN these_DT 100_CD genes_NNS for_IN the_DT
+            72_CD leukemia_NN samples_NNS ._. Clearly_RB ,_, these_DT 100_CD genes_NNS are_VBP
+            highly_RB differentially_RB expressed_VBD between_IN the_DT two_CD types_NNS
+            of_IN the_DT leukemia_NN samples_NNS ._.
+            Given_VBN the_DT 100_CD genes_NNS selected_VBN ,_, methods_NNS such_JJ as_IN
+            principal_JJ component_NN analysis_NN ,_, partial_JJ least-square_JJ
+            regression_NN or_CC composite_JJ covariate_NN predictor_NN can_MD be_VB used_VBN
+            to_TO further_VB reduce_VB the_DT gene_NN dimension_NN to_TO two_CD or_CC three_CD
+            dimensions_NNS by_IN taking_VBG linear_JJ combinations_NNS of_IN the_DT gene_NN
+            expression_NN levels_NNS ._. Instead_RB of_IN taking_VBG linear_JJ combination_NN
+            of_IN gene_NN expression_NN levels_NNS ,_, we_PRP first_JJ discretize_NN the_DT
+            expression_NN levels_NNS of_IN all_PDT the_DT 100_CD genes_NNS over_IN 72_CD samples_NNS
+            into_IN four_CD categories_NNS using_VBG the_DT quantiles_NNS as_IN the_DT cut-off_JJ
+            points_NNS ._. Therefore_RB ,_, for_IN each_DT gene_NN ,_, their_PRP$ expression_NN
+            level_NN can_MD take_VB one_CD of_IN four_CD possible_JJ values_NNS of_IN 0_CD ,_, 1_CD ,_, 2_CD
+            and_CC 3_CD ._. The_DT same_JJ analysis_NN was_VBD also_RB done_VBN by_IN discretizing_VBG
+            gene_NN expression_NN levels_NNS into_IN eight_CD categories_NNS ,_, the_DT
+            results_NNS were_VBD essentially_RB the_DT same_JJ ._. In_IN the_DT following_NN ,_, we_PRP
+            only_RB present_VB the_DT results_NNS using_VBG four_CD categories_NNS ._. Fitting_NNP
+            two_CD RMs_NNP to_TO these_DT discretized_JJ gene_NN expression_NN levels_NNS ,_, we_PRP
+            estimate_VBP two_CD latent_NN factors_NNS for_IN each_DT sample_NN ;_: one_CD latent_NN
+            factor_NN is_VBZ determined_VBN by_IN gene_NN expression_NN profiles_NNS of_IN 50_CD
+            genes_NNS in_IN one_CD cluster_NN ,_, the_DT other_JJ is_VBZ determined_VBN by_IN the_DT
+            gene_NN expression_NN profiles_NNS of_IN 50_CD genes_NNS in_IN another_DT
+            cluster_NN ._. The_DT right_JJ panel_NN of_IN Figure_NN 2_CD shows_VBZ the_DT estimated_VBN
+            values_NNS of_IN these_DT two_CD latent_NN factors_NNS for_IN all_PDT the_DT 72_CD
+            samples_NNS ._. This_DT plot_NN shows_VBZ that_IN the_DT two_CD leukemia_NN types_NNS
+            are_VBP well_RB separated_VBN by_IN these_DT two_CD latent_NN factors_NNS ,_, with_IN no_DT
+            overlap_VB ,_, except_IN that_DT two_CD leukemia_NN samples_NNS ,_, one_CD from_IN ALL_NNP
+            group_NN and_CC the_DT other_JJ from_IN AML_NNP group_NN ,_, are_VBP close_RB to_TO each_DT
+            other_JJ in_IN this_DT two-dimensional_JJ space_NN ._.
+            Discriminant_NNP analysis_NN using_VBG these_DT two_CD latent_NN factors_NNS
+            would_MD expect_VB to_TO perform_VB very_RB well_RB in_IN classification_NN ._. We_PRP
+            performed_VBD a_DT leave-one-out_JJ cross_NN validation_NN analysis_NN to_TO
+            estimate_VB the_DT misclassification_NN rate_NN ._. Specifically_RB ,_, we_PRP
+            leave_VBP one_CD sample_NN out_IN ,_, and_CC first_JJ estimate_NN the_DT
+            sample-specific_JJ latent_NN factors_NNS α_NN 
+            
+              ik_NN 
+             for_IN the_DT 
+            i_NNP th_NN gene_NN for_IN 
+            k_NN =_SYM 1_CD ,_, 2_CD and_CC gene-specific_JJ
+            parameter_NN β_NN 
+            
+              jl_NN 
+             using_VBG the_DT remaining_VBG samples_NNS ._. We_PRP then_RB estimate_VBP the_DT
+            latent_NN factors_NNS of_IN the_DT left-out_JJ sample_NN by_IN maximizing_VBG the_DT
+            likelihood_NN function_NN (_( Equation_NNP 4_LS )_) ._. Fisher_NNP 's_POS linear_JJ
+            discriminant_NN analysis_NN using_VBG the_DT estimated_VBN latent_NN
+            factors_NNS was_VBD then_RB used_VBN to_TO classify_VB the_DT left-out_JJ sample_NN ._.
+            The_DT above_JJ procedure_NN was_VBD applied_VBN to_TO each_DT of_IN the_DT 72_CD
+            samples_NNS ,_, and_CC resulted_VBD in_IN a_DT misclassification_NN rate_NN of_IN
+            2_CD /_NN 72_CD =_SYM 3_CD %_NN ._. We_PRP use_VBP this_DT example_NN to_TO demonstrate_VB that_IN two_CD
+            latent_NN factors_NNS carry_VBP most_JJS of_IN the_DT information_NN of_IN the_DT
+            gene_NN expression_NN levels_NNS of_IN the_DT 100_CD genes_NNS ._.
+          
+          
+            Summary_NNP of_IN gene_NN expression_NN profiles_NNS
+            In_IN order_NN to_TO study_VB the_DT difference_NN of_IN the_DT gene_NN
+            expression_NN profiles_NNS between_IN the_DT ALL_NNP and_CC AML_NNP samples_NNS ,_, we_PRP
+            fit_VBP two_CD RMs_NNP treating_VBG genes_NNS as_IN '_POS persons_NNS '_'' ._. The_DT first_JJ
+            model_NN uses_VBZ the_DT ALL_NNP samples_NNS as_IN '_POS items_NNS '_POS ,_, and_CC the_DT second_JJ
+            uses_VBZ the_DT AML_NNP samples_NNS as_IN '_POS items_NNS '_'' ._. Therefore_RB ,_, for_IN each_DT
+            gene_NN ,_, we_PRP obtain_VBP two_CD latent_NN factors_NNS ,_, one_CD based_VBN on_IN the_DT
+            gene_NN expression_NN profiles_NNS of_IN ALL_NNP samples_NNS ,_, the_DT other_JJ
+            based_VBN on_IN the_DT gene_NN expression_NN profiles_NNS of_IN AML_NNP samples_NNS ._.
+            Figure_NN 3_CD plots_NNS the_DT estimated_VBN latent_NN factors_NNS for_IN each_DT
+            gene_NN together_RB with_IN the_DT 99_CD %_NN point-wise_JJ confidence_NN
+            intervals_NNS ._. From_IN these_DT two_CD plots_NNS ,_, we_PRP conclude_VBP that_IN the_DT
+            gene_NN expression_NN levels_NNS of_IN most_JJS of_IN the_DT genes_NNS (_( genes_NNS with_IN
+            99_CD %_NN confidence_NN intervals_NNS containing_VBG zero_CD )_) are_VBP not_RB
+            significantly_RB different_JJ in_IN both_DT AML_NNP and_CC ALL_NNP samples_NNS ._.
+            For_IN the_DT ALL_NNP samples_NNS ,_, 189_CD genes_NNS expressed_VBD at_IN lower_JJR level_NN
+            and_CC 164_CD genes_NNS expressed_VBD at_IN higher_JJR level_NN compared_VBN to_TO the_DT
+            rest_NN of_IN the_DT 3_CD ,_, 753_CD genes_NNS ._. For_IN the_DT AML_NNP samples_NNS ,_, 92_CD genes_NNS
+            were_VBD expressed_VBN at_IN lower_JJR level_NN and_CC 94_CD genes_NNS at_IN higher_JJR
+            level_NN compared_VBN to_TO the_DT rest_NN of_IN the_DT 3_CD ,_, 920_CD genes_NNS ._.
+            In_IN order_NN to_TO see_VB the_DT difference_NN of_IN gene_NN expression_NN
+            between_IN ALL_NNP and_CC AML_NNP samples_NNS ,_, the_DT two_CD estimated_VBN factors_NNS
+            are_VBP plotted_VBD on_IN the_DT left_VBN in_IN Figure_NN 4_CD ._. Genes_NNP in_IN the_DT upper_JJ
+            left_JJ quadrant_NN tend_VBP to_TO have_VB higher_JJR gene_NN expression_NN level_NN
+            in_IN AML_NNP ,_, but_CC lower_JJR expression_NN level_NN in_IN ALL_NNP ._. On_IN the_DT other_JJ
+            hand_NN ,_, genes_NNS in_IN the_DT lower_JJR right_JJ quadrant_NN tend_VBP to_TO higher_JJR
+            gene_NN expression_NN level_NN in_IN ALL_NNP ,_, but_CC lower_JJR expression_NN
+            level_NN in_IN AML_NNP ._. The_DT logarithm_NN (_( base_NN 10_CD )_) of_IN the_DT gene_NN
+            expression_NN levels_NNS of_IN these_DT genes_NNS are_VBP plotted_VBD on_IN the_DT
+            right_JJ panel_NN in_IN Figure_NN 4_CD ._. Clearly_RB ,_, these_DT genes_NNS are_VBP
+            differentially_RB expressed_VBN between_IN the_DT two_CD type_NN of_IN the_DT
+            samples_NNS ._. Further_RB examination_NN indicates_VBZ that_IN all_PDT the_DT 100_CD
+            genes_NNS identified_VBN by_IN the_DT Wilcoxon_NNP rank-sum_JJ test_NN are_VBP
+            included_VBN in_IN these_DT genes_NNS ._.
+          
+        
+        
+          Analysis_NNP of_IN NC_NNP 160_CD dataset_NN
+          
+            Relating_NNP gene_NN expression_NN profiles_NNS to_TO drug_NN
+            activities_NNS
+            Scherf_NNP 
+            et_CC al_NN ._. [_NN 4_CD ]_NN reported_VBD the_DT use_NN of_IN
+            cDNA_NN microarrays_NNS to_TO assess_VB gene_NN expression_NN profiles_NNS in_IN
+            a_DT set_NN of_IN 60_CD human_JJ cancer_NN cell_NN lines_NNS that_WDT have_VBP been_VBN
+            characterized_VBN pharmacologically_RB by_IN treatment_NN with_IN more_JJR
+            than_IN 70_CD ,_, 000_CD different_JJ drug_NN agents_NNS ,_, one_CD at_IN time_NN and_CC
+            independently_RB ._. This_DT dataset_NN offers_VBZ us_PRP a_DT unique_JJ
+            opportunity_NN to_TO relate_VB variations_NNS in_IN gene_NN expression_NN to_TO
+            the_DT molecular_JJ pharmacology_NN of_IN cancer_NN ._. The_DT NCI_NNP 60_CD set_VBN
+            includes_VBZ cell_NN lines_NNS derived_VBN from_IN cancers_NNS of_IN colorectal_NN
+            (_( CO_NNP ,_, seven_CD cell_NN lines_NNS )_) ,_, renal_JJ (_( RE_NNP ,_, eight_CD cell_NN lines_NNS )_) ,_,
+            breast_NN (_( BR_NNP ,_, eight_CD cell_NN lines_NNS )_) ,_, ovarian_NN (_( OV_NNP ,_, six_CD cell_NN
+            lines_NNS )_) ,_, prostate_NN (_( PR_NNP ,_, two_CD cell_NN lines_NNS )_) ,_, lung_NN (_( LC_NNP ,_, nine_CD
+            cell_NN lines_NNS )_) and_CC central_JJ nervous_JJ system_NN (_( CNS_NNP ,_, six_CD cell_NN
+            lines_NNS )_) origin_NN ,_, as_RB well_RB as_IN leukemias_NNS (_( LE_NNP ,_, six_CD cell_NN
+            lines_NNS )_) and_CC melanomas_NNS (_( ME_NNP ,_, eight_CD cell_NN lines_NNS )_) ._. In_IN this_DT
+            analysis_NN ,_, we_PRP consider_VBP only_RB the_DT 90_CD drug_NN subsets_NNS whose_WP$
+            mechanisms_NNS of_IN action_NN is_VBZ putatively_RB understood_VBN ,_, and_CC
+            their_PRP$ activity_NN data_NNS are_VBP available_JJ from_IN the_DT Web_NNP ._. We_PRP used_VBD
+            the_DT 1_CD ,_, 376_CD gene_NN subset_NN along_IN with_IN 40_CD individually_RB
+            assessed_VBN targets_NNS for_IN the_DT present_JJ analysis_NN ._. These_DT subset_NN
+            was_VBD selected_VBN by_IN selective_JJ filters_NNS used_VBN in_IN [_NN 4_CD ]_NN ._. These_DT
+            90_CD drugs_NNS are_VBP listed_VBN in_IN Table_NNP 1_CD of_IN [_NN 4_CD ]_NN ._. They_PRP applied_VBD the_DT
+            clustering_VBG methods_NNS to_TO cluster_NN cell_NN lines_NNS basing_VBG on_IN both_DT
+            gene_NN expression_NN profiles_NNS ,_, and_CC the_DT drug_NN expression_NN
+            profiles_NNS ._. The_DT phenotype_NN of_IN interest_NN is_VBZ
+            chemother-apeutic_JJ susceptibility_NN ,_, as_IN measured_VBN by_IN -_: log_VB 
+            GI_NNP 
+            50_CD ,_, where_WRB 
+            GI_NNP 
+            50_CD measures_NNS the_DT dose_NN needed_VBN to_TO cause_VB
+            50_CD %_NN growth_NN inhibition_NN ._. We_PRP first_JJ cluster_NN the_DT 1_CD ,_, 476_CD genes_NNS
+            using_VBG the_DT model-based_JJ clustering_VBG method_NN described_VBD
+            previously_RB using_VBG the_DT original_JJ data_NN of_IN the_DT log-ratios_JJ ._.
+            The_DT BIC_NNP scores_NNS in_IN the_DT upper_JJ left_JJ panel_NN of_IN Figure_NN
+            5_CD indicate_VBP that_IN there_EX are_VBP four_CD gene_NN clusters_NNS ,_, with_IN 307_CD ,_,
+            312_CD ,_, 323_CD and_CC 474_CD genes_NNS in_IN each_DT cluster_NN ,_, respectively_RB ._.
+            As_IN a_DT comparison_NN ,_, we_PRP also_RB applied_VBD the_DT hierarchical_JJ
+            clustering_VBG method_NN to_TO cluster_NN these_DT genes_NNS ._. The_DT
+            dendrogram_NN shown_VBN in_IN the_DT upper_JJ right_JJ plot_NN of_IN Figure_NN
+            5_CD also_RB indicates_VBZ four_CD gene_NN clusters_NNS ._. For_IN each_DT cell_NN line_NN ,_,
+            a_DT latent_NN factor_NN is_VBZ estimated_VBN using_VBG the_DT RM_NNP ,_, based_VBN on_IN the_DT
+            gene_NN expression_NN levels_NNS of_IN the_DT genes_NNS in_IN each_DT of_IN the_DT four_CD
+            clusters_NNS ._. To_TO fit_VB the_DT RM_NNP ,_, we_PRP discretize_NN the_DT gene_NN
+            expression_NN levels_NNS into_IN four_CD categories_NNS using_VBG the_DT
+            quartiles_NNS ._. The_DT same_JJ analysis_NN was_VBD also_RB done_VBN with_IN eight_CD
+            catagories_NNS ,_, and_CC the_DT results_NNS are_VBP the_DT same_JJ ._. The_DT lower_JJR
+            left_VBD plot_NN of_IN Figure_NN 5_CD shows_VBZ the_DT levels_NNS of_IN these_DT four_CD
+            latent_NN factors_NNS sorted_VBN by_IN cancer_NN types_NNS ._. In_IN general_JJ ,_, cell_NN
+            lines_NNS with_IN the_DT same_JJ origin_NN tend_VBP to_TO have_VB similar_JJ levels_NNS
+            of_IN the_DT latent_NN factors_NNS ;_: therefore_RB ,_, these_DT factors_NNS can_MD be_VB
+            used_VBN for_IN discriminating_VBG among_IN the_DT nine_CD different_JJ cell_NN
+            lines_NNS ._. However_RB ,_, for_IN the_DT third_JJ latent_NN factor_NN ,_, the_DT cell_NN
+            lines_NNS MDA-MB-_NNP 435_CD (_( derived_VBN from_IN the_DT pleural_NN effusion_NN of_IN
+            a_DT patient_NN with_IN breast_NN cancer_NN )_) and_CC its_PRP$ Erb_NNP /_NN B_NNP 2_CD
+            transfectant_NN MDA-N_NNP have_VBP similar_JJ levels_NNS to_TO those_DT of_IN
+            latent_NN factors_NNS estimated_VBD for_IN the_DT melanoma_NN cell_NN lines_NNS ._.
+            To_TO verify_VB the_DT utilities_NNS of_IN these_DT latent_NN factors_NNS in_IN
+            clustering_VBG cell_NN lines_NNS ,_, we_PRP performed_VBD the_DT hierarchical_JJ
+            clustering_VBG analysis_NN based_VBN on_IN these_DT four_CD factors_NNS (_( see_VB
+            lower_JJR right_JJ plot_NN in_IN Figure_NN 5_LS )_) ._. We_PRP note_VBP that_IN the_DT two_CD
+            breast_NN cancer_NN cell_NN lines_NNS are_VBP clustered_VBN together_RB with_IN
+            melanomas_NNS ._. Hierarchical_NNP clustering_VBG analysis_NN using_VBG all_PDT
+            the_DT genes_NNS also_RB resulted_VBD in_IN clustering_VBG these_DT two_CD cell_NN
+            lines_NNS with_IN melanomas_NNS ._. In_IN general_JJ ,_, cell_NN lines_NNS of_IN the_DT
+            same_JJ origin_NN are_VBP clustered_VBN together_RB on_IN the_DT basis_NN of_IN the_DT
+            four_CD latent_NN factors_NNS estimated_VBD with_IN the_DT RM_NNP ._. The_DT
+            clustering_VBG result_NN of_IN the_DT cell_NN lines_NNS using_VBG these_DT four_CD
+            factors_NNS are_VBP similar_JJ to_TO the_DT clusters_NNS obtained_VBD using_VBG all_PDT
+            the_DT genes_NNS (_( see_VB [_NN 4_CD ]_NN )_) ._.
+            Each_DT of_IN the_DT 60_CD cell_NN lines_NNS is_VBZ now_RB characterized_VBN by_IN
+            four_CD different_JJ latent_NN factors_NNS ,_, where_WRB each_DT latent_NN factor_NN
+            is_VBZ estimated_VBN based_VBN on_IN the_DT expression_NN profiles_NNS of_IN the_DT
+            genes_NNS in_IN each_DT of_IN the_DT four_CD clusters_NNS ._. It_PRP would_MD be_VB
+            interesting_JJ to_TO relate_VB these_DT four_CD latent_NN factors_NNS to_TO the_DT
+            drug_NN activity_NN patterns_NNS as_IN measured_VBN by_IN -_: log_VB 
+            GI_NNP 
+            50_CD across_IN the_DT 60_CD cell_NN lines_NNS ._. For_IN a_DT
+            given_VBN drug_NN ,_, we_PRP first_RB performed_VBD a_DT simple_JJ linear_JJ
+            regression_NN analysis_NN treating_VBG the_DT drug_NN activity_NN as_IN
+            response_NN variable_JJ and_CC using_VBG one_CD of_IN the_DT four_CD latent_NN
+            factors_NNS as_IN a_DT predictor_NN ,_, and_CC obtained_VBD the_DT parameter_NN
+            estimate_NN of_IN γ_NN in_IN the_DT following_JJ model_NN :_:
+            drug_NN activity_NN =_SYM μ_NN +_NN γx_NN latent_NN factor_NN ._.
+            The_DT left_VBN panel_NN of_IN Figure_NN 6_CD shows_VBZ the_DT estimated_VBN γ_NN
+            value_NN together_RB with_IN point-wise_JJ 99_CD %_NN confidence_NN interval_NN
+            for_IN each_DT of_IN the_DT 90_CD drugs_NNS using_VBG one_CD of_IN the_DT latent_NN
+            factors_NNS as_IN a_DT predictor_NN ._. The_DT variance_NN of_IN the_DT regression_NN
+            parameter_NN β_NN and_CC the_DT 99_CD %_NN confidence_NN interval_NN was_VBD
+            estimated_VBN using_VBG the_DT bootstrap_NN procedure_NN ,_, where_WRB 50_CD
+            resamples_NNS of_IN genes_NNS in_IN each_DT cluster_NN and_CC 50_CD resamples_NNS of_IN
+            samples_NNS were_VBD used_VBN ._. For_IN each_DT latent_NN factor_NN ,_, greater_JJR
+            positive_JJ parameter_NN estimate_NN implies_VBZ that_IN higher_JJR gene_NN
+            expression_NN level_NN in_IN a_DT given_VBN gene_NN cluster_NN corresponds_NNS to_TO
+            a_DT higher_JJR drug_NN activity_NN ._. For_IN a_DT given_VBN latent_NN factor_NN ,_,
+            drugs_NNS with_IN 99_CD %_NN confidence_NN interval_NN of_IN the_DT estimated_VBN γ_NN
+            parameter_NN not_RB including_VBG zero_CD are_VBP those_DT whose_WP$ activities_NNS
+            are_VBP related_VBN to_TO genes_NNS which_WDT determine_VBP this_DT latent_NN
+            factor_NN ._.
+            In_IN order_NN to_TO relate_VB the_DT drug_NN activity_NN of_IN a_DT given_VBN drug_NN
+            to_TO all_DT the_DT four_CD latent_NN factors_NNS ,_, we_PRP performed_VBD multiple_JJ
+            linear_JJ regression_NN analysis_NN where_WRB drug_NN activity_NN for_IN a_DT
+            given_VBN cell_NN line_NN was_VBD treated_VBN as_IN a_DT response_NN variable_JJ ,_, and_CC
+            the_DT four_CD latent_NN factors_NNS were_VBD treated_VBN as_IN the_DT predictors_NNS ._.
+            The_DT right_JJ plot_NN of_IN Figure_NN 6_CD shows_VBZ the_DT estimates_NNS of_IN the_DT
+            parameters_NNS in_IN the_DT multiple_JJ regression_NN model_NN for_IN each_DT of_IN
+            the_DT 90_CD drugs_NNS ._. This_DT plot_NN can_MD be_VB used_VBN for_IN selecting_VBG drugs_NNS
+            that_WDT are_VBP related_VBN to_TO gene_NN expression_NN profiles_NNS ._. For_IN
+            example_NN ,_, only_RB drugs_NNS with_IN at_IN least_JJS one_CD large_JJ parameter_NN
+            estimate_NN are_VBP important_JJ for_IN further_JJ study_NN ,_, as_RB only_RB for_IN
+            these_DT drugs_NNS ,_, their_PRP$ activity_NN levels_NNS are_VBP related_VBN to_TO gene_NN
+            expression_NN profiles_NNS ._.
+          
+          
+            Identifying_NNP genes_NNS differentially_RB expressed_VBD in_IN
+            different_JJ cell_NN lines_NNS
+            It_PRP is_VBZ also_RB interesting_JJ to_TO identify_VB genes_NNS that_WDT are_VBP
+            over-_NN or_CC under-expressed_JJ relative_NN to_TO other_JJ genes_NNS for_IN a_DT
+            given_VBN cell_NN line_NN type_NN ._. Using_VBG the_DT RM_NNP ,_, we_PRP treat_VBP genes_NNS as_IN
+            '_POS persons_NNS '_POS and_CC cell_NN line_NN samples_NNS as_IN different_JJ '_POS items_NNS '_POS ,_,
+            and_CC estimate_VB the_DT latent_NN factor_NN for_IN each_DT gene_NN based_VBN on_IN
+            its_PRP$ expression_NN profiles_NNS over_IN all_PDT the_DT samples_NNS of_IN a_DT given_VBN
+            cell_NN line_NN type_NN ._. Figure_NN 7_CD shows_VBZ the_DT estimated_VBN latent_NN
+            factor_NN for_IN each_DT gene_NN based_VBN on_IN the_DT gene_NN expression_NN
+            profiles_NNS over_IN each_DT of_IN nine_CD different_JJ cell_NN lines_NNS ._. These_DT
+            estimated_VBN latent_NN factors_NNS provide_VBP a_DT summary_NN of_IN gene_NN
+            expressions_NNS over_IN different_JJ cell_NN lines_NNS ._. Clearly_RB ,_, the_DT
+            gene_NN expression_NN profiles_NNS are_VBP different_JJ across_IN different_JJ
+            cell_NN line_NN types_NNS ._.
+            For_IN a_DT given_VBN cell_NN line_NN type_NN ,_, we_PRP can_MD also_RB infer_NN which_WDT
+            genes_NNS are_VBP over-_NN or_CC underexpressed_JJ compared_VBN to_TO other_JJ
+            genes_NNS based_VBN on_IN the_DT estimated_VBN latent_NN factors_NNS ._. Figure_NN
+            8_CD shows_VBZ the_DT estimated_VBN latent_NN factor_NN and_CC the_DT point-wise_JJ
+            99_CD %_NN confidence_NN interval_NN for_IN each_DT gene_NN for_IN each_DT of_IN the_DT
+            nine_CD cell_NN line_NN types_NNS ._. For_IN a_DT given_VBN cell_NN line_NN ,_, genes_NNS with_IN
+            99_CD %_NN confidence_NN interval_NN of_IN the_DT estimated_VBN latent_NN factor_NN
+            not_RB including_VBG zero_CD show_NN significantly_RB different_JJ
+            expression_NN from_IN those_DT genes_NNS with_IN 99_CD %_NN confidence_NN
+            interval_NN of_IN the_DT estimated_VBN latent_NN factor_NN including_VBG zero_CD ._.
+            For_IN example_NN ,_, for_IN breast_NN cancer_NN cell_NN line_NN ,_, the_DT method_NN
+            identified_VBD 15_CD genes_NNS or_CC expressed_VBD sequence_NN tags_NNS (_( ESTs_NNP )_)
+            that_WDT are_VBP relatively_RB overexpressed_JJ (_( the_DT estimated_VBN latent_NN
+            factor_NN is_VBZ greater_JJR than_IN zero_CD ,_, and_CC is_VBZ significant_JJ at_IN the_DT
+            0_CD ._. 01_CD level_NN )_) and_CC 23_CD genes_NNS or_CC ESTs_NNP that_WDT are_VBP relatively_RB
+            underexpressed_JJ (_( estimated_VBN latent_NN factor_NN is_VBZ less_JJR than_IN
+            zero_CD ,_, and_CC is_VBZ significant_JJ at_IN the_DT 0_CD ._. 01_CD level_NN )_) in_IN the_DT
+            breast_NN cancer_NN cell_NN lines_NNS ._. Table_NNP 1_CD lists_NNS the_DT known_VBN genes_NNS ._.
+            Interestingly_RB ,_, we_PRP note_VBP that_IN genes_NNS that_WDT are_VBP
+            overexpressed_JJ include_VBP 
+            p_NN 53_CD ,_, and_CC genes_NNS that_WDT are_VBP
+            underexpressed_JJ include_VBP that_IN for_IN tumor-associated_JJ
+            antigen_NN CO-_NNP 029_CD ._. On_IN the_DT basis_NN of_IN our_PRP$ analysis_NN ,_, all_DT other_JJ
+            genes_NNS have_VBP similar_JJ gene_NN expression_NN level_NN in_IN the_DT breast_NN
+            cancer_NN cell_NN line_NN ._. Genes_NNP that_WDT are_VBP over-_NN or_CC
+            underexpressed_JJ in_IN other_JJ types_NNS of_IN cell_NN line_NN can_MD be_VB
+            similarly_RB identified_VBN ._.
+          
+        
+      
+      
+        Discussion_NNP
+        We_PRP have_VBP described_VBN two_CD different_JJ formulations_NNS of_IN the_DT RM_NNP
+        for_IN relating_VBG gene_NN expression_NN data_NNS to_TO phenotypes_NNS ._. The_DT RM_NNP
+        provides_VBZ a_DT probabilistic_JJ model_NN to_TO describe_VB the_DT observed_VBN
+        gene_NN expression_NN patterns_NNS ._. The_DT first_JJ formulation_NN can_MD be_VB used_VBN
+        for_IN cancer_NN class_NN prediction_NN ,_, and_CC for_IN identifying_VBG clusters_NNS
+        of_IN genes_NNS with_IN similar_JJ expression_NN profiles_NNS that_WDT are_VBP related_VBN
+        to_TO drug_NN responses_NNS ._. The_DT method_NN is_VBZ based_VBN on_IN a_DT combination_NN of_IN
+        clustering_VBG analysis_NN ,_, the_DT RM_NNP and_CC the_DT regression_NN analysis_NN ._.
+        The_DT second_JJ formulation_NN can_MD be_VB used_VBN for_IN identifying_VBG
+        differentially_RB expressed_VBD genes_NNS from_IN different_JJ types_NNS of_IN
+        sample_NN ._. We_PRP applied_VBD this_DT method_NN to_TO a_DT publicly_RB available_JJ
+        leukemia_NN dataset_NN to_TO demonstrate_VB the_DT application_NN of_IN the_DT
+        proposed_VBN method_NN for_IN class_NN prediction_NN ._. We_PRP also_RB applied_VBD this_DT
+        method_NN to_TO an_DT analysis_NN of_IN the_DT NCI_NNP 60_CD data_NNS to_TO show_VB that_IN the_DT
+        method_NN can_MD also_RB be_VB applied_VBN to_TO other_JJ phenotypes_NNS ._.
+        The_DT method_NN introduced_VBN here_RB has_VBZ several_JJ advantages_NNS ._.
+        First_LS ,_, it_PRP provides_VBZ a_DT probabilistic_JJ model_NN for_IN describing_VBG the_DT
+        gene_NN expression_NN patterns_NNS ._. These_DT models_NNS are_VBP used_VBN to_TO reduce_VB
+        the_DT complexity_NN of_IN the_DT raw_JJ data_NN and_CC offer_VB a_DT certain_JJ degree_NN
+        of_IN simplification_NN ._. In_IN contrast_NN to_TO most_JJS of_IN the_DT currently_RB
+        available_JJ methods_NNS for_IN gene_NN expression_NN data_NNS ,_, such_JJ as_IN
+        principal_JJ component_NN analysis_NN ,_, the_DT model_NN used_VBN here_RB provides_VBZ
+        a_DT non-linear_JJ method_NN for_IN dimension_NN reduction_NN ._. Second_JJ ,_,
+        compared_VBN with_IN traditional_JJ density-based_JJ models_NNS ,_, the_DT method_NN
+        is_VBZ more_RBR robust_JJ to_TO outliers_NNS ,_, as_IN it_PRP uses_VBZ ranks_NNS rather_RB than_IN
+        actual_JJ expression_NN levels_NNS ._. There_EX is_VBZ a_DT long_JJ sequence_NN of_IN steps_NNS
+        in_IN the_DT laboratory_NN as_RB well_RB as_IN in_IN the_DT image_NN analysis_NN before_IN a_DT
+        single_JJ number_NN is_VBZ produced_VBN for_IN an_DT expression_NN level_NN ,_, and_CC
+        there_EX are_VBP many_JJ potential_JJ sources_NNS of_IN error_NN ._. Methods_NNP that_IN use_NN
+        ranks_NNS rather_RB than_IN the_DT original_JJ measured_VBN gene_NN expression_NN
+        data_NNS are_VBP also_RB advocated_VBN by_IN A_DT Tsodikov_NNP ,_, A_DT Szabo_NNP and_CC D_NNP Jones_NNP
+        (_( unpublished_JJ data_NNS )_) and_CC Park_NNP 
+        et_CC al_NN ._. [_NN 21_CD ]_NN ._. Third_NNP ,_, in_IN contrast_NN to_TO
+        clustering_VBG methods_NNS for_IN simultaneously_RB clustering_VBG both_DT genes_NNS
+        and_CC samples_NNS ,_, the_DT model-based_JJ approach_NN allows_VBZ formal_JJ
+        estimates_NNS of_IN the_DT variance_NN and_CC therefore_RB facilitates_NNS formal_JJ
+        tests_NNS of_IN null_NN hypotheses_NNS and_CC assignments_NNS of_IN confidence_NN
+        intervals_NNS ._.
+        There_EX are_VBP several_JJ limitations_NNS to_TO the_DT proposed_VBN approach_NN ._.
+        First_LS ,_, in_IN order_NN to_TO apply_VB the_DT RM_NNP ,_, the_DT gene_NN expression_NN levels_NNS
+        are_VBP dis-cretized_JJ ._. It_PRP is_VBZ clear_JJ that_IN by_IN discretizing_VBG the_DT
+        measured_VBN expression_NN levels_NNS we_PRP are_VBP losing_VBG information_NN ._.
+        Certainly_RB ,_, additional_JJ information_NN is_VBZ present_JJ in_IN the_DT level_NN
+        of_IN gene_NN expression_NN ,_, but_CC normalization_NN or_CC scaling_VBG errors_NNS
+        across_IN subjects_NNS or_CC slides_NNS make_VBP it_PRP difficult_JJ to_TO determine_VB
+        the_DT precision_NN of_IN these_DT numbers_NNS ._. We_PRP believe_VBP that_DT
+        discretization_NN provides_VBZ a_DT reasonably_RB unbiased_JJ approach_NN for_IN
+        dealing_VBG with_IN this_DT type_NN of_IN data_NNS ._. For_IN both_DT the_DT leukemia_NN and_CC
+        NCI_NNP 60_CD datasets_NNS ,_, we_PRP fitted_JJ the_DT RMs_NNP by_IN discretizing_VBG the_DT gene_NN
+        expression_NN levels_NNS into_IN both_DT four_CD and_CC eight_CD categories_NNS ,_, and_CC
+        obtained_VBD essentially_RB the_DT same_JJ conclusions_NNS ._. Of_IN course_NN ,_, the_DT
+        more_JJR categories_NNS we_PRP use_VBP ,_, the_DT closer_JJR are_VBP the_DT discretized_JJ data_NN
+        to_TO the_DT real_JJ continuous_JJ data_NNS ._. However_RB ,_, this_DT will_MD introduce_VB
+        more_JJR parameters_NNS to_TO the_DT model_NN ._. Second_JJ ,_, this_DT approach_NN assumes_VBZ
+        that_IN genes_NNS can_MD be_VB clustered_VBN into_IN several_JJ subgroups_NNS based_VBN on_IN
+        their_PRP$ expression_NN profiles_NNS over_IN samples_NNS ._. This_DT might_MD not_RB be_VB
+        true_JJ for_IN some_DT studies_NNS ._. In_IN this_DT case_NN ,_, we_PRP can_MD consider_VB all_PDT
+        the_DT possible_JJ clusters_NNS of_IN genes_NNS in_IN a_DT step-wise_JJ regression_NN
+        analysis_NN as_IN proposed_VBN by_IN Hastie_NNP 
+        et_CC al_NN ._. [_NN 22_CD ]_NN ._. Third_NNP ,_, we_PRP used_VBD the_DT
+        bootstrap_NN resampling_VBG procedure_NN to_TO estimate_VB the_DT variance_NN of_IN
+        the_DT regression_NN parameter_NN β_NN after_IN we_PRP have_VBP clustered_VBN genes_NNS
+        into_IN several_JJ classes_NNS ._. This_DT procedure_NN does_VBZ not_RB account_VB for_IN
+        possible_JJ variability_NN associated_VBN with_IN the_DT clustering_VBG step_NN ,_,
+        and_CC therefore_RB ,_, the_DT bootstrap_NN variance_NN estimates_NNS are_VBP likely_JJ
+        to_TO be_VB underestimated_VBN ._.
+        In_IN our_PRP$ proposed_VBN method_NN ,_, the_DT clustering_VBG ,_, the_DT Rasch_NNP
+        modeling_NN and_CC the_DT regression_NN analysis_NN are_VBP done_VBN separately_RB ._.
+        Important_NNP research_NN for_IN the_DT future_NN is_VBZ to_TO take_VB a_DT joint_JJ
+        likelihood_NN approach_NN that_WDT can_MD combine_VB all_DT three_CD steps_NNS to_TO
+        obtain_VB better_JJR estimates_NNS of_IN the_DT number_NN of_IN clusters_NNS ,_, the_DT
+        latent_NN factors_NNS and_CC the_DT regression_NN parameters_NNS ._. This_DT kind_NN of_IN
+        mixture_NN RM_NNP provides_VBZ a_DT natural_JJ framework_NN for_IN unifying_JJ
+        statistical_JJ inference_NN and_CC clustering_VBG ._. We_PRP are_VBP currently_RB
+        carrying_VBG out_IN research_NN in_IN this_DT direction_NN ._. In_IN conclusion_NN ,_, we_PRP
+        demonstrate_VBP here_RB the_DT potential_JJ application_NN of_IN the_DT RMs_NNP in_IN
+        analysis_NN of_IN gene_NN expression_NN data_NNS ._. RMs_NNP provide_VB a_DT probability_NN
+        model_NN for_IN describing_VBG gene_NN expression_NN profiles_NNS measured_VBN over_IN
+        different_JJ samples_NNS or_CC over_IN different_JJ times_NNS ._. We_PRP are_VBP currently_RB
+        exploring_VBG various_JJ other_JJ formulations_NNS of_IN the_DT microarray_NN gene_NN
+        expression_NN problems_NNS in_IN the_DT framework_NN of_IN the_DT RMs_NNP ,_, including_VBG
+        class_NN discovery_NN in_IN cases_NNS of_IN hidden_VBN taxonomies_NNS based_VBN on_IN the_DT
+        estimated_VBN latent_NN factors_NNS using_VBG the_DT RM_NNP ._.
+      
+    
+  

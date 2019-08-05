@@ -1,0 +1,578 @@
+
+  
+    
+      
+        Rationale_NNP
+        Microarray_NNP technology_NN has_VBZ radically_RB changed_VBN the_DT way_NN
+        researchers_NNS address_VBP many_JJ biological_JJ questions_NNS ._. It_PRP is_VBZ now_RB
+        possible_JJ to_TO measure_VB messenger_NN RNA_NNP levels_NNS quantitatively_RB for_IN
+        thousands_NNS of_IN genes_NNS ,_, or_CC even_RB entire_JJ genomes_NNS ,_, using_VBG DNA_NNP
+        arrays_NNS ,_, microarrays_NNS or_CC '_POS chips_NNS '_POS [_NN 1_CD ,_, 2_CD ]_NN ._. Researchers_NNS can_MD ,_, in_IN
+        a_DT fairly_RB straightforward_JJ fashion_NN ,_, examine_VBP the_DT overall_JJ
+        transcriptional_NN response_NN of_IN thousands_NNS of_IN genes_NNS in_IN normal_JJ
+        cells_NNS and_CC tissues_NNS ,_, in_IN disease_NN states_NNS ,_, in_IN response_NN to_TO
+        biological_JJ ,_, genetic_JJ or_CC chemical_NN stimuli_NNS (_( such_JJ as_IN drugs_NNS )_) ,_, or_CC
+        during_IN normal_JJ biological_JJ processes_VBZ such_JJ as_IN cell-cycle_JJ
+        progression_NN and_CC embryonic_JJ development_NN [_NN 3_CD ,_, 4_CD ,_, 5_CD ]_NN ._.
+        Two_CD of_IN the_DT most_RBS commonly_RB used_VBN microarrays_NNS for_IN
+        gene-expression_JJ measurements_NNS are_VBP oligonucleotide_NN GeneChip_NNP
+        ®_NN expression_NN arrays_NNS made_VBN by_IN Affymetrix_NNP and_CC custom-made_JJ cDNA_NN
+        arrays_NNS ._. Affymetrix_NNP oligonucleotide_NN arrays_NNS are_VBP created_VBN by_IN a_DT
+        combination_NN of_IN DNA_NNP synthesis_NN and_CC photolithographic_JJ
+        techniques_NNS ,_, whereas_IN cDNA_NN arrays_NNS are_VBP constructed_VBN by_IN spotting_VBG
+        or_CC printing_VBG PCR_NNP products_NNS or_CC oligonucleotides_NNS onto_IN glass_NN
+        slides_NNS [_NN 6_CD ,_, 7_CD ,_, 8_CD ,_, 9_CD ]_NN ._. Affymetrix_NNP arrays_NNS contain_VBP sets_NNS of_IN
+        multiple_JJ 25_CD mer_NN oligonucleotide_NN probes_NNS specific_JJ for_IN each_DT
+        gene_NN or_CC expressed-sequence_JJ tag_NN (_( EST_NNP )_) ,_, whereas_IN spotted_VBD
+        arrays_NNS generally_RB contain_VBP longer_JJR cDNA_NN probes_NNS (_( usually_RB 500_CD to_TO
+        1_CD ,_, 000_CD bases_NNS )_) or_CC oligonucleotide_NN probes_NNS (_( usually_RB 25_CD to_TO 60_CD
+        bases_NNS )_) for_IN each_DT gene_NN ._.
+        The_DT large_JJ amount_NN of_IN information_NN generated_VBN from_IN
+        microarrays_NNS has_VBZ been_VBN a_DT great_JJ strength_NN ,_, but_CC is_VBZ sometimes_RB
+        seen_VBN as_IN a_DT frustrating_JJ weakness_NN [_NN 10_CD ]_NN ._. A_DT significant_JJ
+        obstacle_NN in_IN microarray_NN research_NN has_VBZ been_VBN the_DT inability_NN to_TO
+        process_VB experimental_JJ data_NNS easily_RB ,_, assess_VBP the_DT data_NNS quality_NN ,_,
+        manage_VB multiple_JJ data_NNS sets_NNS and_CC mine_NN the_DT data_NNS with_IN
+        user-friendly_JJ tools_NNS that_WDT can_MD be_VB quickly_RB learned_VBN and_CC applied_VBN
+        for_IN routine_JJ analysis_NN by_IN laboratory_NN scientists_NNS [_NN 11_CD ]_NN ._.
+        Two_CD HTML-based_NNP microarray_NN filtering_VBG and_CC analysis_NN
+        programs_NNS were_VBD written_VBN ,_, one_CD for_IN the_DT Affymetrix_NNP platform_NN
+        (_( Bullfrog_NNP )_) and_CC one_CD for_IN the_DT cDNA_NN platform_NN (_( Spot_NNP )_) to_TO address_VB
+        common_JJ data-analysis_JJ needs_NNS ._. Our_PRP$ aim_NN in_IN creating_VBG Bullfrog_NNP
+        and_CC Spot_NNP is_VBZ to_TO provide_VB simple_JJ tools_NNS that_WDT enable_VBP researchers_NNS
+        at_IN all_DT levels_NNS to_TO analyze_VB their_PRP$ data_NNS in_IN multiple_JJ ways_NNS
+        without_IN having_VBG to_TO use_VB more_RBR complex_JJ software_NN ,_, without_IN having_VBG
+        to_TO call_VB in_IN bioinformatics_NNS experts_NNS ,_, and_CC without_IN having_VBG to_TO
+        learn_VB to_TO program_NN in_IN scripting_VBG or_CC database_NN languages_NNS ._.
+        Bullfrog_NNP and_CC Spot_NNP were_VBD built_VBN with_IN an_DT easy-to-navigate_JJ user_NN
+        interface_NN and_CC adjustable_JJ analysis_NN criteria_NNS ,_, and_CC were_VBD
+        written_VBN to_TO run_VB quickly_RB ,_, allowing_VBG multiple_JJ microarray_NN
+        experiments_NNS to_TO be_VB filtered_VBN in_IN several_JJ seconds_NNS ._. They_PRP were_VBD
+        created_VBN to_TO provide_VB the_DT bench_NN researcher_NN with_IN uncomplicated_JJ
+        tools_NNS that_WDT help_VBP focus_VB microarray_NN data_NNS from_IN thousands_NNS of_IN
+        genes_NNS to_TO a_DT relatively_RB small_JJ number_NN of_IN high-confidence_JJ ,_,
+        differentially_RB expressed_VBD candidates_NNS ._. The_DT programs_NNS are_VBP not_RB
+        intended_VBN for_IN high-level_JJ statistical_JJ or_CC other_JJ complex_JJ
+        analyses_NNS ,_, but_CC they_PRP do_VBP make_VB it_PRP easy_JJ to_TO export_VB filtered_VBN data_NNS
+        to_TO GeneSpring_NNP ™_NN or_CC other_JJ visualization_NN and_CC clustering_VBG
+        programs_NNS ._. Lastly_NNP ,_, the_DT programs_NNS are_VBP freeware_NN ,_, made_VBD publicly_RB
+        available_JJ to_TO the_DT research_NN community_NN in_IN the_DT hope_NN of_IN
+        accelerating_VBG functional_JJ genomics_NNS research_NN ._.
+      
+      
+        Manipulating_NNP data_NNS sets_NNS in_IN Bullfrog_NNP
+        Bullfrog_NNP and_CC Spot_NNP can_MD be_VB used_VBN to_TO select_VB genes_NNS (_( probes_NNS ,_,
+        probe_NN sets_NNS or_CC spots_NNS )_) that_WDT behave_VB in_IN specific_JJ ways_NNS across_IN
+        multiple_JJ experiments_NNS by_IN using_VBG a_DT combination_NN of_IN more_JJR than_IN 20_CD
+        different_JJ qualitative_JJ and_CC quantitative_JJ criteria_NNS (_( Figure_NN 1_LS )_) ._.
+        To_TO illustrate_VB a_DT few_JJ of_IN Bullfrog_NNP 's_POS capabilities_NNS ,_, we_PRP use_VBP data_NNS
+        obtained_VBN in_IN gene-expression_JJ studies_NNS of_IN the_DT adult_NN mouse_NN
+        brain_NN using_VBG Affymetrix_NNP oligonucleotide_NN arrays_NNS [_NN 12_CD ]_NN ._. A_DT
+        simple_JJ question_NN to_TO ask_VB is_VBZ ,_, "_'' what_WP genes_NNS are_VBP differentially_RB
+        expressed_VBN between_IN two_CD different_JJ regions_NNS of_IN the_DT brain_NN (_( for_IN
+        example_NN ,_, the_DT cerebellum_NN and_CC the_DT amygdala_NN )_) in_IN a_DT
+        129_CD S_NNP 6_CD /_NN SvEvTac_NNP (_( 129_CD SvEv_NNP )_) inbred_JJ mouse_NN strain_NN ?_. "_'' As_IN in_IN most_JJS
+        experiments_NNS ,_, it_PRP is_VBZ important_JJ to_TO first_JJ estimate_NN the_DT
+        false-positive_JJ rate_NN for_IN this_DT type_NN of_IN comparison_NN between_IN
+        brain_NN regions_NNS ._. The_DT best_JJS way_NN to_TO realistically_RB approximate_JJ
+        the_DT false-positive_JJ rate_NN is_VBZ to_TO perform_VB and_CC analyze_VB
+        independent_JJ experimental_JJ replicates_NNS of_IN the_DT same_JJ brain_NN
+        region_NN from_IN multiple_JJ different_JJ mice_NNS ._. We_PRP used_VBD RNA_NNP from_IN the_DT
+        cerebellums_NNS of_IN two_CD different_JJ mice_NNS with_IN samples_NNS prepared_VBN
+        separately_RB and_CC hybridized_JJ to_TO two_CD different_JJ chips_NNS ._. Ideally_RB ,_,
+        replicate_VB comparisons_NNS from_IN well-controlled_JJ experiments_NNS
+        would_MD show_VB no_DT differentially_RB expressed_VBN genes_NNS ._. However_RB ,_,
+        experimental_JJ noise_NN and_CC biological_JJ variation_NN may_MD lead_VB to_TO
+        genes_NNS being_VBG scored_VBN as_RB differentially_RB expressed_VBD between_IN
+        replicates_NNS ._. For_IN example_NN ,_, small_JJ differences_NNS in_IN the_DT brain_NN
+        dissections_NNS or_CC differences_NNS in_IN the_DT exact_JJ time_NN of_IN sacrifice_NN
+        can_MD affect_VB gene-expression_JJ patterns_NNS ._. It_PRP is_VBZ very_RB important_JJ
+        to_TO estimate_VB the_DT false-positive_JJ rate_NN for_IN the_DT particular_JJ
+        experimental_JJ system_NN being_VBG studied_VBN ,_, and_CC to_TO set_VB analysis_NN
+        filter_NN criteria_NNS that_WDT lead_VBP to_TO appropriate_JJ levels_NNS of_IN false_JJ
+        positives_NNS without_IN sacrificing_VBG sensitivity_NN to_TO low-abundance_JJ
+        mRNA_NN transcripts_NNS or_CC subtle_JJ changes_NNS in_IN gene_NN expression_NN ._.
+        To_TO estimate_VB the_DT false-positive_JJ rate_NN ,_, a_DT comparison_NN
+        between_IN the_DT data_NNS for_IN independent_JJ replicate_VB 129_CD SvEv_NNP
+        cerebellums_NNS was_VBD made_VBN (_( that_WDT is_VBZ ,_, expression_NN data_NNS from_IN mouse_NN 1_CD
+        cerebellum_NN versus_CC expression_NN data_NNS from_IN mouse_NN 2_CD cerebellum_NN )_) ._.
+        This_DT comparison_NN file_NN (_( saved_VBN as_IN text_NN from_IN the_DT Affymetrix_NNP
+        GeneChip_NNP ®_NN MAS_NNP 4_CD ._. 0_CD software_NN )_) was_VBD loaded_VBN into_IN Bullfrog_NNP and_CC
+        the_DT filter_NN criteria_NNS were_VBD selected_VBN ._. A_DT number_NN of_IN different_JJ
+        criteria_NNS may_MD be_VB selected_VBN ,_, but_CC our_PRP$ default_NN criteria_NNS for_IN
+        calling_VBG a_DT gene_NN '_'' differentially_RB expressed_VBD '_POS are_NN as_IN follows_VBZ :_: a_DT
+        qualitative_JJ difference_NN call_NN of_IN '_POS Increase_VB '_POS (_( I_NN )_) ,_, '_'' Marginal_JJ
+        Increase_VB '_POS (_( MI_NNP )_) ,_, '_'' Decrease_NNP '_POS (_( D_NNP )_) or_CC '_POS Marginal_JJ Decrease_NNP '_POS (_( MD_NNP )_) ,_,
+        a_DT fold_VB change_NN (_( expression_NN ratio_NN )_) of_IN greater_JJR than_IN 1_CD ._. 8_CD ,_, an_DT
+        average_JJ difference_NN change_NN of_IN greater_JJR than_IN 50_CD (_( after_IN scaling_VBG
+        to_TO a_DT mean_JJ signal_NN ,_, or_CC target_NN value_NN ,_, across_IN the_DT entire_JJ array_NN
+        of_IN 200_CD )_) ,_, and_CC an_DT absolute_JJ call_NN of_IN '_POS Present_NN '_POS for_IN the_DT probe_NN
+        set_VBN in_IN either_DT or_CC both_DT replicate_VB cerebellums_NNS ._. The_DT use_NN of_IN
+        multiple_JJ filter_NN criteria_NNS reduces_VBZ the_DT risk_NN of_IN erroneously_RB
+        assigning_VBG a_DT gene_NN as_RB differentially_RB expressed_VBD ,_, while_IN
+        maintaining_VBG sensitivity_NN to_TO rare_JJ mRNAs_NNS and_CC small_JJ differences_NNS
+        in_IN expression_NN [_NN 13_CD ,_, 14_CD ]_NN ._.
+        When_WRB applied_VBN to_TO the_DT cerebellum_NN replicate_VB data_NNS ,_, the_DT
+        filter_NN criteria_NNS yielded_VBD 36_CD probe_NN sets_NNS scored_VBD as_RB
+        differentially_RB expressed_VBD out_IN of_IN 6_CD ,_, 529_CD ,_, a_DT false-positive_JJ
+        rate_NN of_IN approximately_RB 0_CD ._. 6_CD %_NN ._. We_PRP have_VBP carried_VBN out_RP a_DT large_JJ
+        number_NN of_IN analyses_NNS using_VBG a_DT combination_NN of_IN qualitative_JJ and_CC
+        quantitative_JJ filters_NNS and_CC consistently_RB observe_VBP
+        false-positive_JJ rates_NNS of_IN less_JJR than_IN 1_CD ._. 0_CD %_NN between_IN well_RB
+        controlled_VBN independent_JJ duplicates_NNS using_VBG the_DT default_NN
+        selection_NN criteria_NNS [_NN 7_CD ,_, 12_CD ,_, 13_CD ]_NN ._. For_IN example_NN ,_, 34_CD duplicate_VB
+        comparisons_NNS for_IN data_NNS from_IN different_JJ brain_NN regions_NNS and_CC
+        different_JJ strains_NNS of_IN mice_NNS were_VBD analyzed_VBN using_VBG the_DT default_NN
+        qualitative_JJ and_CC quantitative_JJ criteria_NNS ._. The_DT number_NN of_IN probe_NN
+        sets_NNS out_IN of_IN 6_CD ,_, 529_CD that_WDT were_VBD scored_VBN as_IN '_POS differentially_RB
+        expressed_VBD '_POS ranged_VBD from_IN 1_CD to_TO 64_CD (_( 0_CD ._. 02_CD %_NN to_TO 1_CD ._. 0_CD %_NN of_IN the_DT total_JJ
+        considered_VBN )_) ,_, with_IN a_DT mean_JJ value_NN of_IN 26_CD (_( SD_NNP =_SYM 17_CD )_) and_CC a_DT median_JJ
+        value_NN of_IN 24_CD ._. For_IN the_DT cerebellum_NN data_NN ,_, decreasing_VBG the_DT
+        fold-change_JJ cut-off_JJ from_IN 1_CD ._. 8_CD to_TO 1_CD ._. 4_CD increased_VBD the_DT number_NN of_IN
+        selected_VBN probe_NN sets_NNS to_TO 52_CD ._. A_DT lower_JJR false-positive_JJ rate_NN was_VBD
+        achieved_VBN ,_, at_IN the_DT expense_NN of_IN sensitivity_NN ,_, by_IN increasing_VBG the_DT
+        average_JJ difference_NN (_( signal_NN )_) change_NN requirement_NN from_IN 50_CD to_TO
+        200_CD and_CC maintaining_VBG the_DT qualitative_JJ criteria_NNS and_CC the_DT
+        fold-change_JJ threshold_NN at_IN 1_CD ._. 8_CD ._. The_DT average_JJ difference_NN
+        (_( signal_NN )_) is_VBZ proportional_JJ to_TO mRNA_NN abundance_NN [_NN 15_CD ]_NN and_CC the_DT
+        average_JJ difference_NN change_NN is_VBZ the_DT difference_NN between_IN the_DT
+        signal_NN intensity_NN for_IN a_DT probe_NN set_VBN on_IN chip_NN 1_CD and_CC the_DT signal_NN
+        intensity_NN for_IN that_DT same_JJ probe_NN set_VBN on_IN chip_NN 2_CD ._. Raising_VBG the_DT
+        average_JJ difference-change_JJ threshold_NN to_TO 200_CD ,_, which_WDT
+        corresponds_NNS to_TO about_IN 3_CD -_: 5_CD copies_NNS of_IN the_DT mRNA_NN transcript_NN per_IN
+        cell_NN on_IN average_JJ [_NN 16_CD ]_NN ,_, yielded_VBD 11_CD genes_NNS scored_VBD as_RB
+        differentially_RB expressed_VBD ,_, producing_VBG a_DT very_RB low_JJ
+        false-positive_JJ rate_NN of_IN less_JJR than_IN 0_CD ._. 2_CD %_NN ._.
+        A_DT common_JJ mistake_NN when_WRB analyzing_VBG gene-expression_JJ data_NNS
+        from_IN oligonucleotide_NN arrays_NNS is_VBZ to_TO ignore_VB the_DT qualitative_JJ
+        calls_VBZ (_( absolute_JJ and_CC difference_NN calls_VBZ )_) and_CC focus_VB solely_RB on_IN
+        the_DT quantitative_JJ values_NNS (_( for_IN example_NN ,_, the_DT average_JJ
+        difference_NN ,_, fold_VB change_NN and_CC average_JJ difference_NN change_NN )_) ._. The_DT
+        qualitative_JJ calls_NNS are_VBP important_JJ ,_, however_RB ,_, because_IN they_PRP
+        provide_VBP an_DT assessment_NN of_IN the_DT consistency_NN of_IN the_DT behavior_NN
+        across_IN the_DT multiple_JJ probes_NNS in_IN a_DT probe_NN set_VBN ._. The_DT use_NN of_IN the_DT
+        qualitative_JJ calls_VBZ enables_VBZ one_CD to_TO determine_VB not_RB only_RB whether_IN
+        there_EX is_VBZ a_DT signal_NN (_( or_CC a_DT signal_NN change_NN )_) ,_, but_CC also_RB whether_IN
+        the_DT signal_NN (_( or_CC the_DT signal_NN change_NN )_) is_VBZ due_JJ to_TO the_DT gene_NN for_IN
+        which_WDT the_DT probe_NN set_VBN was_VBD designed_VBN [_NN 14_CD ,_, 15_CD ]_NN ._. Signals_NNP or_CC
+        signal_NN changes_NNS that_WDT are_VBP not_RB consistent_JJ across_IN a_DT probe_NN set_VBN
+        should_MD not_RB be_VB interpreted_VBN with_IN confidence_NN ._. Ignoring_VBG the_DT
+        qualitative_JJ calls_NNS in_IN an_DT analysis_NN of_IN the_DT replicate_VB 129_CD SvEv_NNP
+        cerebellum_NN data_NNS and_CC using_VBG only_RB quantitative_JJ thresholds_NNS (_( a_DT
+        fold_VB change_NN greater_JJR than_IN 1_CD ._. 8_CD and_CC an_DT average_JJ difference_NN
+        change_NN greater_JJR than_IN 50_CD )_) yielded_VBD a_DT long_JJ list_NN of_IN 715_CD genes_NNS
+        scored_VBD as_RB differentially_RB expressed_VBD ._. In_IN other_JJ words_NNS ,_,
+        ignoring_VBG the_DT qualitative_JJ calls_VBZ increased_VBN the_DT false-positive_JJ
+        rate_NN by_IN a_DT factor_NN of_IN 20_CD ._. To_TO maintain_VB the_DT low_JJ false-positive_JJ
+        rate_NN obtained_VBN with_IN the_DT combination_NN of_IN qualitative_JJ and_CC
+        quantitative_JJ criteria_NNS (_( approximately_RB 0_CD ._. 6_CD %_NN )_) using_VBG only_RB the_DT
+        quantitative_JJ fold_VB change_NN and_CC average_JJ difference_NN change_NN
+        criteria_NNS ,_, the_DT thresholds_NNS would_MD have_VB to_TO be_VB set_VBN very_RB high_JJ
+        (_( for_IN example_NN ,_, fold_VB change_NN greater_JJR than_IN ten_CD and_CC average_JJ
+        difference_NN change_NN greater_JJR than_IN 200_CD )_) ._. Fold_NNP change_NN and_CC signal_NN
+        change_NN thresholds_NNS this_DT high_JJ result_NN in_IN a_DT tremendous_JJ loss_NN in_IN
+        sensitivity_NN ._. This_DT example_NN demonstrates_VBZ that_IN an_DT effective_JJ
+        way_NN to_TO preserve_VB a_DT low_JJ false-positive_JJ rate_NN while_IN maintaining_VBG
+        high_JJ sensitivity_NN is_VBZ to_TO use_VB a_DT combination_NN of_IN both_DT
+        qualitative_JJ and_CC quantitative_JJ filters_NNS ._. Bullfrog_NNP is_VBZ designed_VBN
+        to_TO help_VB researchers_NNS apply_VB these_DT types_NNS of_IN multiple-criteria_JJ
+        analyses_NNS ._.
+        The_DT best_JJS way_NN to_TO reduce_VB the_DT false-positive_JJ rate_NN is_VBZ to_TO
+        combine_VB the_DT filtering_VBG criteria_NNS described_VBD above_IN with_IN the_DT use_NN
+        of_IN multiple_JJ independent_JJ experimental_JJ replicates_NNS ._. Inclusion_NNP
+        of_IN expression_NN measurements_NNS for_IN cerebellar_NN mRNA_NN from_IN two_CD
+        additional_JJ 129_CD SvEv_NNP mice_NNS (_( cerebellums_NNS from_IN mouse_NN 3_CD and_CC mouse_NN
+        4_LS )_) further_JJ reduces_VBZ the_DT false-positive_JJ rate_NN ._. To_TO include_VB data_NNS
+        from_IN more_JJR mice_NNS ,_, a_DT file_NN for_IN the_DT comparison_NN between_IN
+        independent_JJ replicate_VB cerebellums_NNS from_IN mouse_NN 3_CD and_CC mouse_NN 4_CD
+        was_VBD created_VBN in_IN GeneChip_NNP ®_NN (_( Cb_NNP 3_CD versus_CC Cb_NNP 4_LS )_) ._. This_DT comparison_NN
+        file_NN was_VBD loaded_VBN into_IN Bullfrog_NNP along_IN with_IN the_DT comparison_NN
+        between_IN the_DT data_NNS for_IN mouse_NN 1_CD and_CC mouse_NN 2_CD (_( Figure_NN 2_LS )_) ._. The_DT
+        filter_NN criteria_NNS were_VBD set_VBN to_TO select_VB genes_NNS that_WDT scored_VBD as_RB
+        differentially_RB expressed_VBD in_IN both_DT comparisons_NNS (_( I_NN ,_, MI_NNP ,_, D_NNP or_CC
+        MD_NNP ,_, fold_VB change_NN ≥_NN 1_CD ._. 8_CD ,_, average_JJ difference_NN change_NN ≥_NN 50_CD ,_, and_CC
+        P_NN (_( present_JJ )_) in_IN at_IN least_JJS one_CD measurement_NN )_) ._. '_POS Directional_NNP
+        consistency_NN '_'' was_VBD also_RB imposed_VBN on_IN the_DT two_CD comparison_NN files_NNS ._.
+        Directional_NNP consistency_NN means_VBZ that_IN the_DT direction_NN or_CC sign_NN of_IN
+        a_DT change_NN is_VBZ the_DT same_JJ in_IN both_DT comparisons_NNS ._. Adding_VBG the_DT
+        additional_JJ replicates_NNS and_CC using_VBG these_DT filter_NN criteria_NNS
+        yielded_VBD only_RB 3_CD genes_NNS (_( out_IN of_IN 6_CD ,_, 529_CD )_) ,_, indicating_VBG a_DT very_RB low_JJ
+        false-positive_JJ rate_NN with_IN only_RB moderately_RB stringent_JJ
+        selection_NN criteria_NNS ,_, again_RB consistent_JJ with_IN what_WP we_PRP usually_RB
+        observe_VBP [_NN 7_CD ,_, 12_CD ,_, 13_CD ]_NN ._.
+        Once_RB analysis_NN criteria_NNS and_CC an_DT estimate_NN of_IN the_DT
+        false-positive_JJ rate_NN had_VBD been_VBN established_VBN ,_, it_PRP was_VBD possible_JJ
+        to_TO confidently_RB assess_VB differences_NNS in_IN the_DT gene-expression_JJ
+        patterns_NNS between_IN the_DT cerebellum_NN and_CC the_DT amygdala_NN ._. Pairwise_NNP
+        comparisons_NNS between_IN cerebellum_NN (_( Cb_NNP 1_CD and_CC Cb_NNP 2_LS )_) and_CC amygdala_NN
+        (_( Ag_NNP 1_CD and_CC Ag_NNP 2_LS )_) samples_NNS were_VBD made_VBN in_IN GeneChip_NNP ®_NN (_( for_IN example_NN ,_,
+        Cb_NNP 1_CD vs_NNS Ag_NNP 1_CD and_CC Cb_NNP 2_CD vs_NNS Ag_NNP 2_LS )_) ._. Both_DT of_IN these_DT comparisons_NNS were_VBD
+        loaded_VBN into_IN Bullfrog_NNP and_CC filtered_VBN using_VBG the_DT criteria_NNS that_WDT
+        yielded_VBD the_DT very_RB low_JJ false-positive_JJ rate_NN (_( I_NN ,_, MI_NNP ,_, D_NNP ,_, or_CC MD_NNP ,_,
+        fold_VB change_NN ≥_NN 1_CD ._. 8_CD ,_, average_JJ difference_NN change_NN ≥_NN 50_CD ,_, and_CC P_NN in_IN
+        at_IN least_JJS one_CD measurement_NN )_) ._. An_DT analysis_NN of_IN the_DT
+        cerebellum-amygdala_JJ comparisons_NNS with_IN these_DT criteria_NNS yielded_VBD
+        230_CD differentially_RB expressed_VBD genes_NNS ._. In_IN the_DT list_NN of_IN 230_CD
+        genes_NNS ,_, cerebellum-specific_JJ genes_NNS ,_, such_JJ as_IN Purkinje_NNP cell_NN
+        protein_NN 2_CD (_( PCP-_NNP 2_LS )_) and_CC 
+        N_NNP -_: methyl-_NN D-_NNP aspartate_NN (_( NMDA_NNP )_) receptor_NN
+        NR_NNP 2_CD C_NNP subunit_NN ,_, were_VBD identified_VBN as_IN being_VBG specifically_RB
+        expressed_VBD in_IN the_DT cerebellum_NN and_CC not_RB the_DT amygdala_NN ,_,
+        consistent_JJ with_IN expectations_NNS [_NN 17_CD ,_, 18_CD ]_NN ._. On_IN the_DT basis_NN of_IN
+        careful_JJ analysis_NN of_IN independent_JJ replicates_NNS ,_, a_DT high_JJ
+        percentage_NN of_IN the_DT 230_CD genes_NNS are_VBP likely_JJ to_TO be_VB correctly_RB
+        identified_VBN as_RB differentially_RB expressed_VBD ._. Therefore_RB ,_, Bullfrog_NNP
+        provides_VBZ the_DT bench_NN researcher_NN with_IN a_DT way_NN to_TO quickly_RB
+        identify_VB differentially_RB expressed_VBD genes_NNS for_IN further_JJ
+        analysis_NN and_CC follow-up_JJ ._.
+      
+      
+        Manipulating_NNP data_NNS sets_NNS in_IN Spot_NNP
+        Many_JJ of_IN the_DT features_NNS available_JJ in_IN Bullfrog_NNP for_IN
+        oligonucleotide_NN arrays_NNS are_VBP available_JJ in_IN Spot_NNP for_IN cDNA_NN
+        arrays_NNS ._. To_TO illustrate_VB the_DT specific_JJ capabilities_NNS of_IN Spot_NNP ,_, we_PRP
+        use_VBP experimental_JJ data_NNS from_IN a_DT time-course_JJ study_NN of_IN wild-type_JJ
+        and_CC mutant_JJ mouse_NN thymus_JJ (_( C_NNP ._. J_NNP ._. Winrow_NNP ,_, D_NNP ._. G_NNP ._. P_NN ._. ,_, C_NNP ._. T_NN ._. Vibat_NNP ,_,
+        T_NN ._. J_NNP ._. Bowen_NNP ,_, M_NNP ._. A_DT ._. Callahan_NNP ,_, D_NNP ._. J_NNP ._. L_NNP ._. ,_, A_DT ._. J_NNP ._. Warren_NNP ,_, B_NNP ._. S_NNP ._.
+        Hilbush_NNP ,_, A_DT ._. Wynshaw-_NNP Boris_NNP ,_, K_NNP ._. W_NNP ._. Hasel_NNP ,_, Z_NNP ._. Weaver_NNP and_CC C_NNP ._. B_NNP ._. ,_,
+        unpublished_JJ observations_NNS )_) ._. The_DT mutant_JJ mice_NNS typically_RB
+        acquire_VB T-_NNP cell_NN lymphomas_NNS at_IN age_NN 3_CD -_: 4_CD months_NNS [_NN 19_CD ]_NN ._. The_DT cDNA_NN
+        array_NN experiment_NN compared_VBD gene_NN expression_NN in_IN the_DT thymus_JJ of_IN
+        the_DT mutant_JJ and_CC wild-type_JJ mice_NNS at_IN four_CD different_JJ times_NNS (_( 4_CD
+        weeks_NNS ,_, 5_CD weeks_NNS ,_, 8_CD weeks_NNS and_CC 9_CD weeks_NNS )_) ._.
+        As_IN with_IN Affymetrix_NNP experiments_NNS ,_, cDNA_NN microarray_NN
+        experiments_NNS require_VBP meaningful_JJ independent_JJ replicates_NNS to_TO
+        determine_VB the_DT false-positive_JJ rate_NN and_CC to_TO confidently_RB
+        identify_VB genes_NNS that_WDT are_VBP differentially_RB expressed_VBN ._. It_PRP is_VBZ
+        recommended_VBN ,_, when_WRB performing_VBG cDNA_NN microarray_NN experiments_NNS
+        with_IN the_DT standard_JJ two-fluorophore_JJ co-hybridization_JJ
+        reactions_NNS ,_, that_IN all_DT experiments_NNS and_CC replicates_NNS be_VB performed_VBN
+        in_IN fluorophore-reversed_JJ pairs_NNS ._. Reversal_NNP of_IN fluorescent_NN
+        labeling_VBG ,_, in_IN which_WDT the_DT two_CD samples_NNS to_TO be_VB compared_VBN are_VBP
+        labeled_VBN once_RB with_IN one_CD fluorophore_NN and_CC once_RB with_IN the_DT other_JJ ,_,
+        helps_VBZ compensate_VB for_IN differential_NN incorporation_NN of_IN the_DT
+        fluorescent_NN dyes_NNS and_CC other_JJ sources_NNS of_IN fluorophore-related_JJ
+        systematic_JJ errors_NNS or_CC bias_NN [_NN 20_CD ]_NN ._. Newer_NNP labeling_VBG strategies_NNS ,_,
+        such_JJ as_IN amino-allyl-based_JJ labeling_VBG ,_, reduce_VBP some_DT of_IN the_DT bias_NN
+        associated_VBN with_IN differential_NN fluorophore_NN incorporation_NN ,_, but_CC
+        it_PRP is_VBZ still_RB important_JJ to_TO use_VB fluorophore_NN reversal_NN [_NN 21_CD ,_,
+        22_CD ]_NN ._. Fluorophore_NNP reversal_NN results_NNS in_IN two_CD measurements_NNS for_IN
+        each_DT pair_NN of_IN samples_NNS ,_, a_DT forward_JJ measurement_NN (_( fluorophore_NN 1_CD
+        =_SYM experimental_JJ sample_NN ,_, fluorophore_NN 2_CD =_SYM control_NN sample_NN )_) and_CC
+        a_DT reverse_JJ measurement_NN (_( fluorophore_NN 1_CD =_SYM control_NN sample_NN ,_,
+        fluorophore_NN 2_CD =_SYM experimental_JJ sample_NN )_) ._.
+        To_TO estimate_VB the_DT false-positive_JJ rate_NN for_IN the_DT cDNA_NN
+        experiment_NN described_VBD above_IN ,_, RNA_NNP samples_NNS from_IN two_CD
+        independent_JJ thymuses_NNS from_IN wild-type_JJ mice_NNS at_IN age_NN 16_CD weeks_NNS
+        were_VBD compared_VBN ,_, using_VBG fluorophore_NN reversal_NN replicates_NNS ._. The_DT
+        array_NN data_NN were_VBD background_NN subtracted_VBD ,_, normalized_JJ and_CC
+        analyzed_VBD with_IN the_DT custom_NN cDNA_NN normalization_NN program_NN
+        described_VBD below_IN ._. The_DT forward_JJ measurement_NN file_NN was_VBD loaded_VBN
+        into_IN Spot_NNP together_RB with_IN the_DT reverse_JJ measurement_NN file_NN (_( saved_VBN
+        from_IN the_DT custom_NN cDNA_NN normalization_NN program_NN )_) ._. Application_NNP of_IN
+        the_DT standard_JJ filter_NN criteria_NNS (_( a_DT difference_NN call_NN of_IN I_PRP ,_, MI_NNP ,_, D_NNP
+        or_CC MD_NNP ,_, fold_VB change_NN =_SYM 1_CD ._. 8_CD ;_: signal_NN change_NN =_SYM 50_CD in_IN both_DT files_NNS ,_,
+        after_IN scaling_VBG to_TO a_DT mean_JJ signal_NN ,_, or_CC target_NN value_NN ,_, across_IN the_DT
+        entire_JJ array_NN of_IN 100_CD ,_, an_DT absolute_JJ call_NN of_IN P_NN in_IN at_IN least_JJS one_CD
+        measurement_NN ,_, and_CC directional_NN consistency_NN )_) yielded_VBD 1_CD gene_NN
+        scored_VBD as_RB differentially_RB expressed_VBD out_IN of_IN 4_CD ,_, 608_CD ._. To_TO
+        increase_VB sensitivity_NN ,_, the_DT fold-change_JJ threshold_NN was_VBD
+        decreased_VBN to_TO 1_CD ._. 4_CD and_CC the_DT scaled_VBN signal_NN change_NN cut-off_JJ to_TO
+        25_CD ._. This_DT more_RBR sensitive_JJ filter_NN yielded_VBD only_RB 2_CD genes_NNS out_IN of_IN
+        4_CD ,_, 608_CD ,_, indicating_VBG a_DT low_JJ and_CC satisfactory_JJ false-positive_JJ
+        rate_NN ._.
+        Once_RB the_DT false-positive_JJ rate_NN had_VBD been_VBN estimated_VBN ,_, the_DT
+        time-course_JJ comparisons_NNS were_VBD filtered_VBN for_IN differences_NNS
+        between_IN mutant_JJ and_CC wild-type_JJ mice_NNS ._. For_IN this_DT cDNA_NN microarray_NN
+        experiment_NN ,_, there_EX were_VBD four_CD time-point_JJ comparisons_NNS of_IN
+        mutant_JJ to_TO wild-type_JJ mouse_NN thymus_JJ (_( 4_CD weeks_NNS ,_, 5_CD weeks_NNS ,_, 8_CD weeks_NNS
+        and_CC 9_CD weeks_NNS )_) ._. First_LS ,_, we_PRP looked_VBD for_IN differentially_RB expressed_VBD
+        genes_NNS (_( wild_JJ type_NN vs_NNS mutant_JJ )_) at_IN each_DT individual_JJ time_NN point_NN ._.
+        Using_VBG the_DT criteria_NNS established_VBN above_IN ,_, 48_CD genes_NNS were_VBD found_VBN
+        to_TO be_VB significantly_RB different_JJ at_IN 4_CD weeks_NNS ,_, five_CD genes_NNS at_IN 5_CD
+        weeks_NNS ,_, four_CD at_IN 8_CD weeks_NNS ,_, and_CC nine_CD at_IN 9_CD weeks_NNS ._. None_NN of_IN these_DT
+        genes_NNS was_VBD common_JJ to_TO all_DT time_NN points_NNS ._. However_RB ,_, three_CD genes_NNS
+        were_VBD common_JJ to_TO the_DT 4_CD -_: and_CC 5_CD -_: week_NN time_NN points_NNS ,_, two_CD genes_NNS to_TO
+        4_CD and_CC 8_CD weeks_NNS ,_, and_CC one_CD gene_NN to_TO 4_CD and_CC 9_CD weeks_NNS ._.
+        Both_DT Bullfrog_NNP and_CC Spot_NNP allow_VBP the_DT user_NN to_TO apply_VB the_DT
+        filtering_VBG criteria_NNS to_TO a_DT subset_NN of_IN the_DT loaded_VBN files_NNS (_( done_VBN by_IN
+        checking_VBG the_NNP '_POS Filter_NNP ?_. '_POS box_NN for_IN the_DT relevant_JJ files_NNS only_RB )_) ._.
+        Bullfrog_NNP and_CC Spot_NNP display_NN the_DT results_NNS for_IN all_DT loaded_VBN files_NNS ,_,
+        but_CC the_DT filter_NN criteria_NNS are_VBP only_RB applied_VBN to_TO checked_VBN files_NNS ._.
+        It_PRP is_VBZ often_RB useful_JJ to_TO filter_NN using_VBG only_RB a_DT subset_NN of_IN the_DT
+        files_NNS ,_, while_IN viewing_VBG the_DT results_NNS across_IN all_PDT the_DT files_NNS ._. For_IN
+        example_NN ,_, in_IN the_DT time-course_JJ experiment_NN ,_, it_PRP is_VBZ possible_JJ to_TO
+        identify_VB the_DT 48_CD genes_NNS that_WDT were_VBD differentially_RB expressed_VBN in_IN
+        the_DT first_JJ time_NN point_NN ,_, while_IN also_RB monitoring_VBG how_WRB those_DT same_JJ
+        genes_NNS behaved_VBD in_IN the_DT other_JJ three_CD time_NN points_NNS ._. Using_VBG this_DT
+        feature_NN ,_, eight_CD candidate_NN genes_NNS were_VBD found_VBN that_WDT were_VBD
+        directionally_RB consistent_JJ for_IN all_DT time_NN points_NNS ,_, but_CC were_VBD
+        slightly_RB below_IN at_IN least_JJS some_DT of_IN the_DT thresholds_NNS for_IN some_DT
+        time_NN points_NNS ._. Similar_JJ to_TO Bullfrog_NNP ,_, Spot_NNP quickly_RB identified_VBD a_DT
+        list_NN of_IN differentially_RB expressed_VBD genes_NNS for_IN further_JJ analysis_NN
+        and_CC follow-up_JJ ._. To_TO determine_VB all_PDT this_DT information_NN ,_, including_VBG
+        estimating_VBG the_DT false-positive_JJ rate_NN and_CC testing_VBG the_DT
+        selection_NN criteria_NNS ,_, required_VBN less_JJR than_IN ten_CD minutes_NNS ._.
+      
+      
+        Further_RB features_VBZ of_IN Bullfrog_NNP and_CC Spot_NNP
+        
+          Double-tiered_NNP filters_NNS
+          In_IN addition_NN to_TO the_DT commonly_RB used_VBN filters_NNS described_VBD
+          above_IN ,_, Bullfrog_NNP and_CC Spot_NNP have_VBP several_JJ double-tiered_JJ
+          filters_NNS (_( located_VBN on_IN the_DT right_NN in_IN Figure_NN 1_LS )_) ._. An_DT example_NN of_IN
+          their_PRP$ use_NN is_VBZ to_TO select_VB genes_NNS that_WDT are_VBP differentially_RB
+          expressed_VBN with_IN a_DT fold_VB change_NN greater_JJR than_IN 1_CD ._. 3_CD in_IN six_CD of_IN
+          six_CD files_NNS AND_CC with_IN a_DT larger_JJR fold_VB change_NN of_IN greater_JJR than_IN
+          3_CD ._. 0_CD in_IN at_IN least_JJS one_CD of_IN the_DT six_CD files_NNS ._.
+          Bullfrog_NNP and_CC Spot_NNP also_RB contain_VBP a_DT simple_JJ logical_JJ Venn_NNP
+          function_NN ._. The_DT Venn_NNP function_NN (_( taken_VBN from_IN Venn_NNP diagrams_NNS )_)
+          allows_VBZ two_CD or_CC more_JJR lists_NNS of_IN probe_NN sets_NNS or_CC spots_NNS to_TO be_VB
+          compared_VBN to_TO find_VB common_JJ occurrences_NNS within_IN the_DT lists_NNS ._. The_DT
+          Venn_NNP function_NN lets_VBZ the_DT user_NN quickly_RB identify_VB the_DT genes_NNS in_IN
+          common_JJ between_IN lists_NNS generated_VBN from_IN different_JJ
+          measurements_NNS or_CC using_VBG different_JJ filtering_VBG criteria_NNS ._. In_IN
+          addition_NN ,_, Bullfrog_NNP and_CC Spot_NNP allow_VBP the_DT user_NN to_TO save_VB the_DT
+          results_NNS of_IN a_DT filtering_VBG operation_NN and_CC reload_NN them_PRP for_IN
+          further_JJ filtering_VBG ._.
+        
+        
+          Attaching_NNP gene_NN information_NN
+          Once_RB a_DT filtered_VBN list_NN of_IN genes_NNS has_VBZ been_VBN generated_VBN ,_, gene_NN
+          information_NN can_MD be_VB attached_VBN to_TO the_DT list_NN ._. This_DT information_NN
+          can_MD include_VB GenBank_NNP accession_NN numbers_NNS ,_, UniGene_NNP numbers_NNS
+          with_IN direct_JJ hyperlinks_NNS to_TO UniGene_NNP Resources_NNPS ,_, Locus_NNP Link_NN
+          IDs_NNP ,_, gene_NN names_NNS ,_, gene_NN descriptions_NNS ,_, BLAST_NN hits_NNS ,_, protein_NN
+          products_NNS ,_, functions_NNS ,_, chromosomal_NN locations_NNS and_CC known_VBN
+          associations_NNS with_IN particular_JJ phenotypes_NNS ._. The_DT gene_NN
+          information_NN is_VBZ stored_VBN in_IN tables_NNS created_VBN in_IN Microsoft_NNP
+          Excel_NNP and_CC must_MD contain_VB these_DT columns_NNS (_( comma_NN separated_JJ )_) in_IN
+          the_DT following_JJ order_NN :_: probe_NN set_VBN or_CC spot_NN identifier_NN ,_,
+          accession_NN number_NN ,_, UniGene_NNP ID_NNP ,_, gene_NN title_NN ,_, and_CC map_NN
+          location_NN ._. Additional_JJ information_NN may_MD be_VB added_VBN past_JJ these_DT
+          columns_NNS ._. To_TO append_VB gene_NN information_NN to_TO a_DT filtered_VBN list_NN in_IN
+          Bullfrog_NNP or_CC Spot_NNP ,_, the_DT browse_VB button_NN next_JJ to_TO the_DT '_POS Enter_VB
+          Probe_NNP Set_NNP Description_NNP From_IN File_NNP :_: '_POS statement_NN at_IN the_DT bottom_NN
+          of_IN the_DT filter_NN criteria_NNS table_NN is_VBZ pressed_VBN (_( Figure_NN 3_LS )_) ._. The_DT
+          user_NN can_MD choose_VB to_TO show_VB or_CC hide_VB gene_NN information_NN by_IN
+          pressing_VBG the_NNP '_POS Show_NNP Probe_NNP Set_NNP Description_NNP '_POS button_NN ._. Gene_NNP
+          lists_NNS for_IN the_DT Mu_NNP 11_CD KsubA_NNP ,_, Mu_NNP 11_CD KsubB_NNP ,_, Hu_NNP 6800_CD ,_, MG-U_NNP 74_CD av_NN 2_CD ,_,
+          HG-U_NNP 95_CD av_NN 2_CD and_CC RG-U_NNP 34_CD a_DT Affymetrix_NNP chips_NNS are_VBP available_JJ for_IN
+          download_NN as_IN additional_JJ data_NNS files_NNS with_IN this_DT article_NN or_CC
+          from_IN the_DT Barlow_NNP website_NN [_NN 23_CD ]_NN ._.
+        
+        
+          Exporting_NNP results_NNS
+          Genes_NNP (_( spots_NNS or_CC probe_NN sets_NNS )_) that_WDT pass_VBP the_DT set_VBN filter_NN
+          criteria_NNS are_VBP listed_VBN in_IN a_DT simple_JJ table_NN format_NN that_WDT can_MD be_VB
+          exported_VBN to_TO Excel_NNP (_( Figure_NN 4_LS )_) ._. To_TO export_VB the_DT entire_JJ
+          filtered_VBN table_NN with_IN all_PDT the_DT information_NN present_JJ ,_,
+          including_VBG gene_NN information_NN ,_, the_NNP '_POS Save_VB Table_NNP To_TO Excel_NNP '_POS
+          button_NN is_VBZ pressed_VBN ._. To_TO export_VB a_DT more_RBR refined_JJ list_NN ,_, check_NN
+          boxes_NNS are_VBP provided_VBN ._. For_IN example_NN ,_, if_IN only_RB the_DT fold_VB change_NN
+          and_CC average_JJ difference_NN values_NNS are_VBP needed_VBN ,_, the_DT pertinent_JJ
+          boxes_NNS are_VBP checked_VBN and_CC the_NNP '_POS Save_VB As_IN Series_NNP To_TO Excel_NNP '_POS
+          button_NN is_VBZ pressed_VBN ._. To_TO export_VB a_DT simple_JJ list_NN of_IN the_DT probe_NN
+          sets_NNS that_WDT passed_VBD certain_JJ filter_NN criteria_NNS ,_, without_IN
+          associated_VBN information_NN ,_, the_NNP '_POS Save_VB List_NN To_TO Excel_NNP '_POS button_NN
+          is_VBZ pressed_VBN ._. This_DT exported_VBN data_NN can_MD be_VB analyzed_VBN further_RB in_IN
+          clustering_VBG and_CC visualization_NN programs_NNS ._. In_IN our_PRP$ experience_NN ,_,
+          it_PRP is_VBZ often_RB helpful_JJ to_TO pre-filter_JJ data_NNS sets_NNS using_VBG
+          Bullfrog_NNP and_CC Spot_NNP before_IN hierarchical_JJ or_CC k-means_JJ
+          clustering_VBG [_NN 24_CD ]_NN ._.
+        
+      
+      
+        Program_NN architecture_NN of_IN Bullfrog_NNP and_CC Spot_NNP
+        Bullfrog_NNP and_CC Spot_NNP are_VBP Internet_NNP Explorer_NNP 5_CD ._. 0_CD +_NN client_NN
+        applications_NNS running_VBG on_IN Windows_NNP NT_NNP operating_NN systems_NNS ._. They_PRP
+        are_VBP written_VBN using_VBG a_DT combination_NN of_IN C_NNP +_NN +_NN ,_, HTML_NNP and_CC Scripting_NNP
+        code_NN (_( VBScript_NNP and_CC JScript_NNP )_) ._. They_PRP are_VBP relatively_RB small_JJ
+        programs_NNS ,_, 1_CD ._. 1_CD MB_NNP and_CC 1_CD ._. 2_CD MB_NNP respectively_RB ,_, and_CC are_VBP easy_JJ to_TO
+        install_VB ._. Double_RB clicking_VBG the_DT setup_NN ._. bat_NN module_NN registers_NNS
+        Bullfrog_NNP and_CC Spot_NNP onto_IN the_DT hard_JJ drive_NN ._.
+        The_DT C_NNP +_NN +_NN module_NN (_( Atlprov_NNP ._. dll_NN )_) performs_VBZ the_DT
+        computationally_RB intensive_JJ functions_NNS such_JJ as_IN parsing_VBG and_CC
+        filtering_VBG the_DT Affymetrix_NNP or_CC cDNA_NN data_NNS files_NNS ._. This_DT module_NN
+        makes_VBZ the_DT data_NNS files_NNS accessible_JJ as_IN a_DT Microsoft_NNP OLE-DB_NNP data_NNS
+        source_NN ,_, allowing_VBG script_NN code_NN to_TO communicate_VB through_IN
+        Microsoft_NNP 's_POS Active_JJ Data_NNP Objects_NNP (_( ADO_NNP )_) interface_NN ._.
+        Atlprov_NNP ._. dll_NN is_VBZ a_DT C_NNP +_NN +_NN Windows_NNP Dynamic_NNP Link_NN Library_NNP developed_VBD
+        with_IN Visual_NNP Studio_NN 6_CD ._. 0_CD ._. The_DT ADO_NNP Interface_NNP uses_VBZ the_DT Active_JJ
+        Template_NNP Library_NNP (_( ATL_NNP )_) to_TO implement_VB the_DT appropriate_JJ
+        Component_NNP Object_NNP Model_NNP (_( COM_NNP )_) Interfaces_NNP ,_, as_IN provided_VBN by_IN the_DT
+        Visual_NNP Studio_NN Wizard_NNP for_IN creating_VBG an_DT OLE-DB_NNP data_NN
+        provider_NN ._.
+        The_DT Bullfrog_NNP ._. htm_NN and_CC Spot_NNP ._. htm_NN modules_NNS have_VBP scripting_VBG
+        code_NN that_WDT uses_VBZ the_DT ADO_NNP interface_NN to_TO query_NN the_DT C_NNP +_NN +_NN module_NN as_IN
+        if_IN it_PRP were_VBD a_DT database_NN ._. These_DT modules_NNS are_VBP a_DT combination_NN of_IN
+        static_JJ HTML_NNP ,_, VBScript_NNP and_CC JScript_NNP that_WDT produce_VBP HTML_NNP on_IN the_DT
+        fly_NN (_( DHTML_NNP )_) and_CC use_NN ADO_NNP commands_NNS and_CC Recordsets_NNP ._. They_PRP were_VBD
+        developed_VBN and_CC debugged_JJ using_VBG Microsoft_NNP 's_POS Visual_NNP InterDev_NNP
+        and_CC Visual_NNP Studio_NN ._. NET_NNP ._. The_DT static_JJ HTML_NNP provides_VBZ a_DT simple_JJ
+        and_CC familiar_JJ user_NN interface_NN for_IN loading_NN files_NNS and_CC choosing_VBG
+        filtering_VBG options_NNS ._. The_DT user_NN interface_NN has_VBZ scripts_NNS to_TO
+        dynamically_RB create_VB and_CC modify_VB the_DT page_NN 's_POS HTML_NNP (_( DHTML_NNP )_) ,_, such_JJ
+        as_IN occurs_VBZ when_WRB displaying_VBG a_DT results_NNS table_NN ._.
+        Bullfrog_NNP and_CC Spot_NNP require_VBP that_IN data_NNS from_IN experiments_NNS be_VB
+        saved_VBN as_IN specific_JJ file_NN types_NNS before_IN loading_VBG ._. Bullfrog_NNP
+        requires_VBZ that_IN the_DT data_NNS from_IN ._. chp_NN comparison_NN files_NNS be_VB saved_VBN
+        as_IN ._. txt_NN files_NNS (_( tab-delimited_JJ text_NN ,_, refer_VBP to_TO the_DT user_NN 's_POS
+        manual_JJ for_IN complete_JJ instructions_NNS )_) ._. Spot_NNP requires_VBZ that_IN data_NNS
+        from_IN the_DT Excel_NNP summary_NN files_NNS ,_, discussed_VBN below_IN ,_, be_VB saved_VBN as_IN
+        ._. csv_NN files_NNS (_( comma-separated_JJ text_NN )_) ._. These_DT files_NNS can_MD then_RB be_VB
+        loaded_VBN into_IN their_PRP$ respective_JJ programs_NNS for_IN analysis_NN by_IN
+        clicking_VBG the_NNP '_POS Add_VB Text_NNP File_NNP '_POS button_NN (_( see_VB Figure_NN 2_LS )_) ._. If_IN the_NNP
+        '_POS Prompt_NNP For_IN File_NNP Auto_NNP Load_NN '_'' box_NN is_VBZ checked_VBN ,_, the_DT program_NN
+        will_MD automatically_RB import_VB up_IN to_TO 200_CD files_NNS from_IN the_DT same_JJ
+        directory_NN or_CC folder_NN ._. Once_RB the_DT files_NNS are_VBP loaded_VBN ,_, clicking_VBG
+        the_NNP '_POS Complete_JJ Summary_NNP Table_NNP '_POS button_NN displays_NNS relevant_JJ
+        hybridization_NN and_CC data_NNS analysis_NN information_NN ._. To_TO download_NN
+        the_DT user_NN 's_POS manual_JJ ,_, see_VBP the_DT online_NN version_NN of_IN this_DT article_NN
+        or_CC [_NN 23_CD ]_NN ._.
+      
+      
+        Features_NNPS and_CC architecture_NN of_IN the_DT cDNA_NN normalization_NN
+        program_NN
+        The_DT custom_NN cDNA_NN normalization_NN program_NN is_VBZ a_DT Microsoft_NNP
+        Excel_NNP macro_NN and_CC was_VBD written_VBN in_IN Visual_NNP Basic_JJ for_IN
+        Applications_NNS (_( VBA_NNP )_) using_VBG Microsoft_NNP 's_POS Visual_NNP Basic_NNP Editor_NNP ._.
+        The_DT program_NN background_NN subtracts_NNS and_CC normalizes_NNS raw_JJ cDNA_NN
+        data_NNS before_IN data_NNS analysis_NN and_CC filtering_VBG in_IN Spot_NNP ._. The_DT
+        normalization_NN program_NN output_NN includes_VBZ quantitative_JJ
+        information_NN and_CC qualitative_JJ calls_VBZ similar_JJ to_TO those_DT used_VBN for_IN
+        Affymetrix_NNP oligonucleotide_NN arrays_NNS ._. Raw_NNP median_JJ pixel_NN
+        intensities_NNS for_IN each_DT gene_NN are_VBP loaded_VBN into_IN Microsoft_NNP Excel_NNP ._.
+        Median_JJ pixel_NN intensities_NNS are_VBP used_VBN because_IN they_PRP are_VBP less_RBR
+        likely_JJ to_TO be_VB affected_VBN by_IN small_JJ artifacts_NNS or_CC slight_JJ
+        imperfections_NNS in_IN spot_NN morphology_NN ._. The_DT regional_JJ background_NN
+        is_VBZ calculated_VBN by_IN dividing_VBG the_DT cDNA_NN array_NN into_IN 24_CD equal_JJ
+        sections_NNS ,_, and_CC the_DT average_NN of_IN the_DT lowest_JJS 4_CD %_NN of_IN spot_NN
+        intensities_NNS in_IN a_DT section_NN is_VBZ considered_VBN the_DT section_NN
+        background_NN (_( a_DT section_NN typically_RB contains_VBZ 384_CD to_TO 418_CD spots_NNS )_) ._.
+        The_DT background_NN signal_NN is_VBZ the_DT result_NN of_IN nonspecific_JJ
+        hybridization_NN ,_, binding_VBG of_IN the_DT fluorophores_NNS to_TO the_DT glass_NN
+        surface_NN ,_, and_CC fluorescence_NN and_CC reflection_NN from_IN the_DT surface_NN
+        of_IN the_DT cDNA_NN array_NN ._. The_DT lowest_JJS 4_CD %_NN of_IN spots_NNS (_( typically_RB 15_CD -_: 17_CD
+        spots_NNS )_) was_VBD chosen_VBN as_IN a_DT balance_NN between_IN using_VBG multiple_JJ spots_NNS
+        at_IN different_JJ locations_NNS that_WDT accurately_RB reflect_VB nonspecific_JJ
+        signals_NNS and_CC not_RB including_VBG too_RB many_JJ spots_NNS that_WDT contain_VBP
+        '_POS real_JJ '_POS signals_NNS ._. A_DT separate_JJ background_NN value_NN is_VBZ calculated_VBN
+        for_IN each_DT section_NN to_TO help_VB correct_JJ for_IN background_NN that_WDT may_MD be_VB
+        uneven_JJ ._. The_DT background_NN is_VBZ subtracted_VBN from_IN each_DT spot_NN in_IN a_DT
+        particular_JJ section_NN before_IN further_JJ scaling_NN or_CC processing_VBG of_IN
+        quantitative_JJ results_NNS ._. For_IN more_JJR information_NN on_IN background_NN
+        subtraction_NN ,_, please_VB review_NN the_DT Salk_NNP cDNA_NN analysis_NN algorithm_NN
+        guide_NN in_IN the_DT user_NN 's_POS manual_JJ folder_NN ,_, available_JJ with_IN the_DT
+        online_NN version_NN of_IN this_DT article_NN or_CC at_IN [_NN 23_CD ]_NN ._.
+        After_IN background_NN subtraction_NN ,_, the_DT cDNA_NN array_NN signals_NNS are_VBP
+        linearly_RB scaled_VBN and_CC normalized_JJ to_TO compensate_VB for_IN
+        non-biological_JJ variation_NN (_( for_IN example_NN ,_, differential_NN
+        fluorophore_NN incorporation_NN ,_, different_JJ amounts_NNS of_IN labeled_VBN
+        sample_NN ,_, array-to-array_JJ variability_NN )_) ._. Background-subtracted_NNP
+        signals_NNS are_VBP scaled_VBN to_TO an_DT overall_JJ ,_, average_JJ target_NN value_NN that_WDT
+        can_MD be_VB set_VBN by_IN the_DT user_NN (_( the_DT default_NN value_NN is_VBZ 100_CD )_) ._. The_DT
+        scaling_VBG factor_NN is_VBZ calculated_VBN on_IN the_DT basis_NN of_IN the_DT total_JJ
+        signal_NN intensity_NN ,_, after_IN ignoring_VBG the_DT lowest_JJS 60_CD %_NN and_CC the_DT
+        highest_JJS 10_CD %_NN of_IN signals_NNS ._. We_PRP determined_VBD empirically_RB ,_, by_IN
+        analyzing_VBG large_JJ amounts_NNS of_IN cDNA_NN array_NN data_NNS and_CC testing_VBG
+        different_JJ combinations_NNS of_IN high_JJ and_CC low_JJ exclusion_NN
+        percentages_NNS ,_, that_IN ignoring_VBG the_DT bottom_NN 60_CD %_NN and_CC top_JJ 10_CD %_NN of_IN
+        signals_NNS led_VBN to_TO scaling_VBG factors_NNS that_WDT were_VBD consistent_JJ and_CC
+        well_RB behaved_VBD (_( for_IN example_NN ,_, the_DT mean_NN and_CC median_NN of_IN the_DT
+        resulting_VBG distributions_NNS were_VBD approximately_RB equal_JJ )_) ._. More_RBR
+        important_JJ ,_, scaling_VBG factors_NNS calculated_VBN in_IN this_DT way_NN
+        consistently_RB resulted_VBD in_IN the_DT smallest_JJS number_NN of_IN genes_NNS
+        scoring_VBG as_IN '_POS differentially_RB expressed_VBD '_POS between_IN replicates_NNS ._.
+        To_TO identify_VB scaled_VBN signals_NNS that_WDT are_VBP detectable_JJ above_IN
+        background_NN and_CC to_TO accurately_RB estimate_VB fold_VB changes_NNS
+        (_( ratios_NNS )_) ,_, a_DT threshold_NN is_VBZ set_VBN using_VBG the_DT scaled_VBN background_NN
+        values_NNS ._. Scaled_NNP signals_NNS that_WDT are_VBP less_JJR than_IN the_DT threshold_NN are_VBP
+        considered_VBN undetectable_JJ and_CC are_VBP set_VBN equal_JJ to_TO the_DT threshold_NN
+        value_NN ._. For_IN more_JJR information_NN on_IN scaling_VBG and_CC the_DT setting_NN of_IN
+        the_DT thresholds_NNS please_VBP review_NN the_DT Salk_NNP cDNA_NN analysis_NN
+        algorithm_NN guide_NN in_IN the_DT user_NN 's_POS manual_JJ folder_NN ,_, available_JJ with_IN
+        the_DT online_NN version_NN of_IN this_DT article_NN or_CC at_IN [_NN 23_CD ]_NN ._.
+        The_DT custom_NN cDNA_NN normalization_NN program_NN generates_VBZ a_DT file_NN
+        in_IN Microsoft_NNP Excel_NNP that_WDT provides_VBZ a_DT single_JJ printable_JJ summary_NN
+        sheet_NN for_IN each_DT experiment_NN (_( Table_NNP 1_LS )_) ._. The_DT file_NN includes_VBZ
+        information_NN on_IN the_DT cDNA_NN array_NN background_NN ,_, the_DT raw_JJ average_NN
+        signal_NN intensity_NN ,_, the_DT scaling_VBG factors_NNS ,_, the_DT thresholds_NNS ,_, the_DT
+        percentage_NN of_IN genes_NNS scored_VBD as_IN present_JJ ,_, the_DT number_NN of_IN genes_NNS
+        with_IN fold_VB changes_NNS (_( ratios_NNS )_) above_IN certain_JJ thresholds_NNS and_CC
+        several_JJ correlation_NN coefficients_NNS ._. This_DT file_NN provides_VBZ an_DT
+        assessment_NN of_IN the_DT overall_JJ quality_NN of_IN the_DT data_NNS and_CC a_DT summary_NN
+        of_IN the_DT experimental_JJ results_NNS for_IN each_DT cDNA_NN array_NN ._. At_IN the_DT top_NN
+        of_IN the_DT summary_NN file_NN ,_, not_RB shown_VBN in_IN Table_NNP 1_CD ,_, are_VBP several_JJ
+        user-entered_JJ parameters_NNS that_WDT define_VB the_DT experiment_NN ._. If_IN
+        controls_NNS were_VBD spotted_VBN on_IN the_DT cDNA_NN array_NN ,_, a_DT control_NN summary_NN
+        is_VBZ also_RB created_VBN ._. In_IN addition_NN to_TO the_DT data_NNS summary_NN ,_, the_DT
+        detailed_VBN results_NNS for_IN each_DT spot_NN on_IN the_DT microarray_NN are_VBP
+        provided_VBN in_IN a_DT table_NN for_IN further_JJ analysis_NN with_IN Spot_NNP or_CC other_JJ
+        programs_NNS ._. The_DT results_NNS for_IN each_DT spot_NN (_( or_CC gene_NN )_) include_VBP an_DT
+        absolute_JJ call_NN of_IN present_JJ (_( P_NN )_) or_CC absent_JJ (_( A_DT )_) (_( a_DT call_NN of_IN
+        present_JJ indicates_VBZ that_IN the_DT signal_NN was_VBD greater_JJR than_IN the_DT
+        regional_JJ background_NN AND_CC greater_JJR than_IN the_DT local_JJ background_NN
+        measured_VBN in_IN the_DT four_CD corners_NNS surrounding_VBG the_DT individual_JJ
+        spot_NN )_) ,_, the_DT scaled_VBN intensity_NN ,_, the_DT difference_NN between_IN the_DT
+        scaled_VBN fluorophore_NN intensities_NNS ,_, the_DT fold_VB change_NN or_CC ratio_NN of_IN
+        the_DT two-color_JJ intensities_NNS (_( expression_NN ratio_NN )_) ,_, and_CC a_DT
+        qualitative_JJ difference_NN or_CC change_NN call_NN of_IN I_PRP ,_, MI_NNP ,_, D_NNP or_CC MD_NNP
+        (_( change_NN calls_NNS are_VBP based_VBN on_IN the_DT fold_VB changes_NNS across_IN the_DT
+        duplicate_JJ spot_NN data_NNS )_) ._. The_DT spot-by-spot_JJ results_NNS are_VBP easily_RB
+        exportable_JJ to_TO other_JJ programs_NNS for_IN further_JJ visualization_NN or_CC
+        clustering_VBG ._. Once_RB the_DT cDNA_NN data_NN are_VBP normalized_JJ and_CC in_IN a_DT
+        systematic_JJ format_NN similar_JJ to_TO the_DT normalized_JJ Affymetrix_NNP
+        data_NNS ,_, the_DT data_NNS are_VBP ready_JJ for_IN further_JJ analysis_NN in_IN Spot_NNP ._. To_TO
+        download_NN the_DT Salk_NNP cDNA_NN analysis_NN algorithm_NN guide_NN see_VBP the_DT
+        user_NN 's_POS manual_JJ folder_NN ,_, available_JJ with_IN the_DT online_NN version_NN of_IN
+        this_DT article_NN or_CC at_IN [_NN 23_CD ]_NN ._.
+      
+      
+        Overall_RB assessment_NN
+        By_IN creating_VBG an_DT intuitive_JJ user_NN interface_NN with_IN multiple_JJ ,_,
+        adjustable_JJ filter_NN criteria_NNS ,_, we_PRP have_VBP established_VBN valuable_JJ
+        research_NN tools_NNS for_IN microarray_NN users_NNS ._. Bullfrog_NNP ,_, Spot_NNP and_CC the_DT
+        custom_NN cDNA_NN normalization_NN program_NN were_VBD not_RB designed_VBN to_TO do_VB
+        complex_JJ statistical_JJ analyses_NNS and_CC visualization_NN ._. Rather_RB ,_,
+        they_PRP were_VBD designed_VBN to_TO help_VB the_DT researcher_NN narrow_JJ their_PRP$
+        search_NN from_IN tens_NNS of_IN thousands_NNS of_IN gene_NN candidates_NNS to_TO several_JJ
+        hundred_CD or_CC fewer_JJR that_WDT meet_VBP specific_JJ ,_, but_CC adjustable_JJ ,_,
+        criteria_NNS ._. Bullfrog_NNP ,_, Spot_NNP and_CC the_DT custom_NN cDNA_NN normalization_NN
+        program_NN eliminate_VBP some_DT of_IN the_DT difficulty_NN of_IN handling_VBG large_JJ
+        numbers_NNS of_IN array_NN results_NNS and_CC allow_VB researchers_NNS to_TO answer_VB
+        crucial_JJ questions_NNS about_IN their_PRP$ data_NNS quickly_RB ._. These_DT programs_NNS ,_,
+        along_IN with_IN detailed_JJ instructions_NNS and_CC user_NN manuals_NNS ,_, may_MD be_VB
+        downloaded_JJ at_IN [_NN 23_CD ]_NN ._.
+      
+      
+        Downloading_NNP files_NNS
+        The_DT microarray_NN data_NN analysis_NN tools_NNS Bullfrog_NNP and_CC Spot_NNP and_CC
+        associated_VBN files_NNS are_VBP available_JJ for_IN download_NN from_IN the_DT Barlow_NNP
+        homepage_NN [_NN 23_CD ]_NN ._. Full_NNP help_VB manuals_NNS are_VBP also_RB available_JJ at_IN the_DT
+        website_NN ._.
+        Bullfrog_NNP and_CC Spot_NNP analysis_NN programsare_NN also_RB available_JJ
+        for_IN download_NN ._. Also_RB available_JJ are_VBP the_DT Bullfrog_NNP and_CC Spot_NNP
+        analysis_NN programs_NNS user_NN 's_POS manuals_NNS ,_, gene_NN lists_NNS for_IN Bullfrog_NNP ,_,
+        and_CC Bullfrog_NNP and_CC Spot_NNP sample_NN data_NNS ._.
+        Additional_JJ data_NNS file_VBP 1_CD
+        Bullfrog_NNP and_CC Spot_NNP analysis_NN programs_NNS (_( ZIP_NNP file_VB )_)
+        Bullfrog_NNP and_CC Spot_NNP analysis_NN programs_NNS (_( ZIP_NNP file_VB )_)
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 2_CD
+        Bullfrog_NNP and_CC Spot_NNP analysis_NN programs_NNS user_NN 's_POS manuals_NNS (_( ZIP_NNP
+        file_VB )_)
+        Bullfrog_NNP and_CC Spot_NNP analysis_NN programs_NNS user_NN 's_POS manuals_NNS (_( ZIP_NNP
+        file_VB )_)
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 3_CD
+        Gene_NNP lists_NNS for_IN Bullfrog_NNP (_( ZIP_NNP file_VB )_)
+        Gene_NNP lists_NNS for_IN Bullfrog_NNP (_( ZIP_NNP file_VB )_)
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 4_CD
+        Bullfrog_NNP and_CC Spot_NNP sample_NN data_NNS (_( ZIP_NNP file_VB )_)
+        Bullfrog_NNP and_CC Spot_NNP sample_NN data_NNS (_( ZIP_NNP file_VB )_)
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+      
+    
+  

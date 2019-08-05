@@ -1,0 +1,800 @@
+
+  
+    
+      
+        Background_NNP
+        For_IN over_IN a_DT decade_NN the_DT idea_NN of_IN representing_VBG biological_JJ
+        sequences_NNS in_IN a_DT continuous_JJ coordinate_VB space_NN has_VBZ maintained_VBN
+        its_PRP$ appeal_NN but_CC not_RB been_VBN fully_RB realized_VBN [_NN 1_CD 2_CD 3_CD ]_NN ._. The_DT
+        basic_JJ idea_NN is_VBZ that_IN sequences_NNS of_IN symbols_NNS ,_, such_JJ as_IN
+        nucleotides_NNS in_IN genomes_NNS ,_, aminoacids_NNS in_IN proteomes_NNS ,_, repeated_VBN
+        sequences_NNS in_IN MLST_NNP [_NN Multi_NNP Locus_NNP Sequence_NNP Typing_NNP ,_, 4_CD ]_NN ,_, words_NNS
+        in_IN languages_NNS or_CC letters_NNS in_IN words_NNS ,_, would_MD define_VB trajectories_NNS
+        in_IN this_DT continuous_JJ space_NN conserving_VBG the_DT statistical_JJ
+        properties_NNS of_IN the_DT original_JJ sequences_NNS [_NN 3_CD 5_CD 6_CD 7_CD 8_CD 9_CD ]_NN ._.
+        Accordingly_RB ,_, the_DT coordinate_VB position_NN of_IN each_DT unit_NN would_MD
+        uniquely_RB encode_NN for_IN both_DT its_PRP$ identity_NN and_CC its_PRP$ context_NN ,_, i_NNP ._. e_SYM ._.
+        the_DT identity_NN of_IN its_PRP$ neighbors_NNS [_NN 10_CD ]_NN ._. Ideally_RB ,_, the_DT
+        position_NN should_MD be_VB scale-independent_JJ ,_, such_JJ that_IN the_DT
+        extraction_NN of_IN the_DT encompassing_VBG sequence_NN can_MD be_VB performed_VBN
+        with_IN any_DT resolution_NN ,_, leading_VBG to_TO an_DT oligomer_NN of_IN arbitrary_JJ
+        length_NN ._. The_DT pioneer_NN work_NN by_IN Jeffrey_NNP published_VBD in_IN 1990_CD [_NN 5_CD ]_NN
+        achieved_VBD this_DT for_IN genomic_JJ sequences_NNS by_IN using_VBG the_DT Chaos_NNP Game_NNP
+        Representation_NNP technique_NN (_( CGR_NNP )_) ,_, defining_VBG a_DT unit-square_JJ
+        where_WRB each_DT corner_NN corresponds_NNS to_TO one_CD of_IN the_DT 4_CD possible_JJ
+        nucleotides_NNS ._. Subsequent_JJ work_NN further_JJ explored_JJ the_DT
+        properties_NNS of_IN CGR_NNP of_IN biological_JJ sequences_NNS ,_, but_CC two_CD main_JJ
+        obstacles_NNS prevented_VBD the_DT realization_NN of_IN its_PRP$ early_JJ promise_NN -_:
+        lack_NN of_IN scalability_NN with_IN regard_NN to_TO the_DT number_NN of_IN possible_JJ
+        unique_JJ units_NNS and_CC inability_NN to_TO represent_VB succession_NN schemes_NNS ._.
+        Meanwhile_RB ,_, Markov_NNP Chain_NNP theory_NN already_RB offered_VBD a_DT solid_JJ
+        foundation_NN for_IN the_DT identification_NN of_IN discrete_JJ spaces_NNS to_TO
+        represent_VB sequences_NNS as_IN cross-tabulated_JJ conditional_JJ
+        probabilities_NNS -_: Markov_NNP transition_NN tables_NNS ._. This_DT Bayesian_NNP
+        technique_NN is_VBZ widely_RB explored_JJ in_IN bioinformatic_JJ applications_NNS
+        seeking_VBG to_TO measure_VB homology_NN and_CC align_VBP sequences_NNS [_NN 11_CD ]_NN ._. In_IN
+        a_DT recent_JJ report_NN [_NN 12_CD ]_NN we_PRP have_VBP shown_VBN that_IN ,_, for_IN genomic_JJ
+        sequences_NNS ,_, Markov_NNP tables_NNS are_VBP in_IN fact_NN a_DT special_JJ case_NN of_IN CGR_NNP ,_,
+        contrary_JJ to_TO what_WP had_VBD been_VBN suggested_VBN previously_RB [_NN 13_CD ]_NN ._.
+        This_DT raised_VBD the_DT prospect_NN of_IN an_DT advantageous_JJ use_NN of_IN
+        iterative_JJ maps_NNS as_IN state_NN spaces_NNS not_RB only_RB for_IN representation_NN
+        of_IN sequences_NNS but_CC also_RB to_TO identify_VB scale_NN independent_JJ
+        stochastic_JJ models_NNS of_IN the_DT succession_NN scheme_NN ._. That_DT work_NN [_NN 12_CD
+        ]_NN is_VBZ hereby_NN extended_VBN and_CC further_JJ generalized_JJ to_TO be_VB
+        applicable_JJ to_TO sequences_NNS with_IN arbitrary_JJ numbers_NNS of_IN unique_JJ
+        component_NN units_NNS ,_, without_IN sacrificing_VBG the_DT inverse_NN
+        correlation_NN between_IN distance_NN in_IN the_DT map_NN and_CC sequence_NN
+        similarity_NN independent_JJ of_IN position_NN ._. Accordingly_RB ,_, the_DT
+        technique_NN is_VBZ named_VBN Universal_NNP Sequence_NNP Map_NNP (_( USM_NNP )_) ._.
+      
+      
+        Results_NNS
+        
+          Conceptual_NNP foundations_NNS
+          The_DT USM_NNP generalization_NN proposed_VBN here_RB is_VBZ achieved_VBN by_IN
+          observing_VBG two_CD stipulations_NNS :_: A-_NNP alternative_JJ units_NNS in_IN the_DT
+          iterative_JJ map_NN are_VBP positioned_VBN in_IN distinct_JJ corners_NNS of_IN 
+          unit_NN block_NN structures_NNS '_POS ,_, and_CC B_NNP -_:
+          sequence_NN processing_NN is_VBZ bi-directional_JJ ._.
+          Basis_NNP for_IN USM_NNP generalization_NN :_:
+          A_DT ._. Each_DT unique_JJ unit_NN is_VBZ referenced_JJ in_IN the_DT map_NN for_IN
+          positions_NNS that_WDT are_VBP at_IN equal_JJ 
+          n-distances_JJ from_IN each_DT other_JJ ,_, and_CC
+          possibly_RB ,_, but_CC not_RB necessarily_RB ,_, defining_VBG a_DT complete_JJ 
+          block_NN structure_NN [_NN 3_CD ]_NN ._. 
+          n-distances_JJ are_VBP defined_VBN as_IN the_DT
+          maximum_NN distance_NN along_IN any_DT dimension_NN ,_, e_SYM ._. g_SYM ._. 
+          n-distance_JJ between_IN [_NN 
+          a_DT 
+          1_CD ,_, 
+          a_DT 
+          2_CD ,_, ._. ._. ._. ,_, 
+          a_DT 
+          
+            n_NN 
+           ]_NN and_CC [_NN 
+          b_SYM 
+          1_CD ,_, 
+          b_SYM 
+          2_CD ,_, ._. ._. ._. ,_, 
+          b_SYM 
+          
+            n_NN 
+           ]_NN is_VBZ 
+          max_NN (_( |_NN b_SYM 
+          1_CD -_: 
+          a_DT 
+          1_CD |_NN ,_, |_NN 
+          b_SYM 
+          2_CD -_: 
+          a_DT 
+          2_CD |_NN ,_, ._. ._. ._. ,_, |_NN 
+          b_SYM 
+          
+            n_NN 
+           -_: 
+          a_DT 
+          
+            n_NN 
+           |_NN )_) ,_, see_VB also_RB Equation_NNP 3_CD ._. It_PRP will_MD be_VB shown_VBN that_IN this_DT
+          stipulation_NN leads_VBZ to_TO the_DT definition_NN of_IN spaces_NNS where_WRB
+          distance_NN is_VBZ inversely_RB proportional_JJ to_TO sequence_NN
+          similarity_NN ,_, independent_JJ of_IN position_NN ._. In_IN this_DT respect_NN ,_, USM_NNP
+          departs_NNS from_IN previous_JJ attempts_NNS to_TO generalize_VB Chaos_NNP Game_NNP
+          Representation_NNP that_WDT conserve_VB the_DT bi-dimensionality_JJ of_IN the_DT
+          original_JJ CGR_NNP representation_NN [_NN 8_CD 15_CD 16_CD 17_CD ]_NN ._.
+          B_NNP ._. The_DT iterative_JJ positioning_NN is_VBZ performed_VBN in_IN both_DT
+          directions_NNS ._. Therefore_RB ,_, there_EX will_MD be_VB two_CD sets_NNS of_IN
+          coordinates_VBZ ,_, the_DT result_NN of_IN forward_RB and_CC backward_RB iterative_JJ
+          operations_NNS ._. It_PRP will_MD be_VB shown_VBN that_IN ,_, by_IN adding_VBG backward_RB and_CC
+          forward_RB map_VB distances_NNS between_IN two_CD positions_NNS ,_, the_DT number_NN
+          of_IN identical_JJ units_NNS in_IN the_DT encompassing_VBG sequences_NNS can_MD be_VB
+          extracted_VBN directly_RB from_IN the_DT USM_NNP coordinates_VBZ ._. As_IN a_DT
+          consequence_NN ,_, two_CD arbitrary_JJ positions_NNS can_MD be_VB compared_VBN ,_, and_CC
+          the_DT number_NN of_IN contiguous_JJ similar_JJ units_NNS is_VBZ extracted_VBN by_IN an_DT
+          algebraic_JJ operation_NN that_WDT relies_VBZ solely_RB on_IN the_DT USM_NNP
+          coordinates_VBZ of_IN those_DT very_RB two_CD positions_NNS ._.
+        
+        
+          Implementation_NNP of_IN USM_NNP algorithm_NN
+          The_DT algorithm_NN will_MD be_VB first_RB illustrated_VBN for_IN the_DT first_JJ
+          and_CC last_JJ stanzas_NNS of_IN Wendy_NNP Cope_NNP 's_POS poem_NN "_'' The_DT Uncertainty_NN of_IN
+          the_DT Poet_NNP "_'' (_( 14_CD )_) ,_, respectively_RB ,_, "_'' I_PRP am_VBP a_DT poet_NN ._. I_PRP am_VBP very_RB
+          fond_JJ of_IN bananas_NNS ._. "_'' and_CC "_'' I_PRP am_VBP of_IN very_RB fond_JJ bananas_NNS ._. Am_NNP I_PRP a_DT
+          poet_NN ?_. "_'' ._. The_DT procedure_NN includes_VBZ four_CD steps_NNS :_:
+          1_LS ._. Identification_NNP of_IN unique_JJ sequence_NN units_NNS -_: e_SYM ._. g_SYM ._.
+          these_DT two_CD stanzas_NNS have_VBP 19_CD unique_JJ characters_NNS ,_, (_( table_NN 1_LS )_) ,_,
+          i_NNP ._. e_SYM ._. 
+          uu_NN =_SYM 19_CD ._. 
+          2_LS ._. Replacement_NNP of_IN each_DT unique_JJ unit_NN (_( in_IN this_DT case_NN units_NNS
+          are_VBP alphabetic_JJ characters_NNS )_) by_IN a_DT unique_JJ binary_JJ number_NN -_:
+          e_SYM ._. g_SYM ._. in_IN table_NN 1_CD each_DT of_IN the_DT 19_CD unique_JJ units_NNS is_VBZ replaced_VBN by_IN
+          its_PRP$ rank_NN order_NN minus_CC one_CD ,_, represented_VBD as_IN a_DT binary_JJ number_NN ._.
+          Other_JJ arrangements_NNS are_VBP possible_JJ leading_VBG to_TO the_DT same_JJ final_JJ
+          result_NN as_IN discussed_VBN below_IN ._. The_DT minimum_JJ number_NN of_IN
+          dimensions_NNS necessary_JJ to_TO accommodate_VB 
+          uu_NN unique_JJ units_NNS ,_, 
+          n_NN ,_, is_VBZ the_DT upper_JJ integer_NN of_IN the_DT
+          length_NN of_IN its_PRP$ binary_JJ representation_NN :_: 
+          n_NN =_SYM ceil_NN (_( log_VB 
+          2_CD 
+          (_( uu_NN )_) )_) ._. For_IN W_NNP ._. Cope_NNP 's_POS stanzas_NNS ,_, 
+          n_NN =_SYM ceil_NN (_( log_VB 
+          2_CD 
+          (_( 19_CD )_) )_) =_SYM 5_CD ._. The_DT binary_JJ reference_NN
+          coordinates_VBZ for_IN the_DT unique_JJ units_NNS are_VBP defined_VBN by_IN the_DT
+          numerals_NNS of_IN the_DT binary_JJ code_NN -_: for_IN example_NN ,_, 
+          a_DT will_MD be_VB assigned_VBN to_TO the_DT position_NN 
+          U_NNP 
+          '_POS 
+          a_NNP '_POS =_SYM 
+          [_NN 0_CD ,_, 0_CD ,_, 1_CD ,_, 0_CD ,_, 1_CD ]_NN ._. Each_DT symbol_NN is_VBZ
+          represented_VBN as_IN a_DT corner_NN in_IN a_DT n-dimensional_JJ cube_NN (_( Table_NNP
+          1_LS )_) ._. The_DT purpose_NN of_IN these_DT first_JJ two_CD steps_NNS is_VBZ to_TO guarantee_VB
+          that_IN the_DT reference_NN positions_NNS for_IN each_DT unique_JJ sequence_NN
+          unit_NN component_NN are_VBP equidistant_NN (_( stipulation_NN A_DT )_) in_IN the_DT 
+          n-metric_JJ defined_VBN above_IN ._. Any_DT other_JJ
+          procedure_NN resulting_VBG in_IN equidistant_NN unique_JJ positions_NNS will_MD
+          lead_VB to_TO the_DT same_JJ final_JJ results_NNS independently_RB of_IN the_DT
+          actual_JJ binary_JJ numbers_NNS used_VBN or_CC the_DT number_NN of_IN dimensions_NNS
+          used_VBN to_TO contain_VB them_PRP ._.
+          3_LS ._. The_DT CGR_NNP procedure_NN [_NN 5_CD ]_NN (_( Eq_NNP ._. 1_LS )_) is_VBZ applied_VBN
+          independently_RB to_TO each_DT coordinate_VB ,_, 
+          j_NN =_SYM 1_CD ,_, 2_CD ,_, ._. ._. ._. ,_, n_NN ,_, for_IN each_DT unit_NN ,_, 
+          i_NNP ,_, in_IN the_DT sequence_NN of_IN length_NN 
+          k_NN ,_, u_NN 
+          
+            j_NN 
+           
+          (_( i_NNP )_) with_IN 
+          i_NNP =_SYM 1_CD ,_, 2_CD ,_, ._. ._. ._. ,_, k_NN ,_, and_CC starting_VBG with_IN a_DT
+          random_JJ map_NN position_NN taken_VBN from_IN a_DT uniform_NN distribution_NN in_IN
+          [_NN 0_CD ,_, 1_CD ]_NN 
+          n_NN ,_, i_NNP ._. e_SYM ._. 
+          Unif_NNP (_( [_NN 0_CD ,_, 1_CD ]_NN 
+          n_NN )_) ._. The_DT random_JJ seed_NN is_VBZ not_RB
+          fundamentally_RB different_JJ from_IN using_VBG the_DT middle_JJ position_NN in_IN
+          the_DT map_NN as_IN is_VBZ conventional_JJ in_IN CGR_NNP and_CC it_PRP has_VBZ the_DT added_VBN
+          feature_NN that_IN it_PRP prevents_VBZ the_DT invalidation_NN of_IN the_DT inverse_NN
+          logarithmic_JJ proportionality_NN of_IN 
+          n-distance_JJ to_TO sequence_NN similarity_NN [_NN
+          12_CD ]_NN for_IN sequences_NNS that_WDT start_VBP or_CC end_VB with_IN the_DT same_JJ
+          motif_NN ._.
+          For_IN a_DT sequence_NN with_IN 
+          k_NN units_NNS ,_, the_DT USM_NNP positions_NNS 
+          i_NNP =_SYM 1_CD ,_, ._. ._. ._. ,_, k_NN for_IN the_DT 
+          j_NN =_SYM 1_CD ,_, ._. ._. ._. ,_, n_NN dimensions_NNS are_VBP
+          determined_VBN as_IN follows_VBZ :_:
+          
+          4_LS ._. The_DT previous_JJ step_NN generated_VBD 
+          k_NN positions_NNS in_IN a_DT 
+          n_NN -_: dimension_NN space_NN by_IN processing_VBG
+          the_DT sequence_NN forward_RB (_( Eq_NNP ._. 1_LS )_) ._. This_DT subsequent_JJ step_NN adds_VBZ
+          an_DT additional_JJ set_NN of_IN 
+          n_NN dimensions_NNS by_IN implementing_VBG the_DT
+          same_JJ procedure_NN backward_RB (_( Eq_NNP ._. 2_LS )_) ,_, again_RB starting_VBG at_IN random_JJ
+          positions_NNS for_IN each_DT coordinate_VB ._. Consequently_RB the_DT first_JJ 
+          n_NN dimensions_NNS of_IN USM_NNP will_MD be_VB
+          referred_VBN as_IN defining_VBG 
+          a_DT forward_JJ map_NN and_CC the_DT second_RB set_NN of_IN
+          
+          n_NN dimensions_NNS will_MD define_VB a_DT 
+          backward_RB map_NN ._. Put_VB together_RB ,_, the_DT
+          bidirectional_NN USM_NNP map_NN defines_VBZ a_DT 
+          2_CD n-unit_JJ block_NN structure_NN ._. 
+          The_DT 
+          n_NN additional_JJ backward_RB coordinates_VBZ
+          are_VBP determined_VBN as_IN follows_VBZ :_:
+          
+          The_DT forward_RB USM_NNP map_NN for_IN genomic_JJ sequences_NNS ,_, where_WRB 
+          uu_NN =_SYM 4_CD ,_, and_CC ,_, consequently_RB ,_, 
+          n_NN =_SYM 2_CD ,_, is_VBZ the_DT same_JJ as_IN the_DT result_NN
+          generated_VBN by_IN CGR_NNP ._. However_RB ,_, by_IN freeing_VBG the_DT iterative_JJ map_NN
+          from_IN the_DT dual-dimensional_JJ constraint_NN of_IN conventional_JJ CGR_NNP ,_,
+          the_DT USM_NNP forward_RB map_NN alone_RB achieved_VBD the_DT goal_NN of_IN producing_VBG
+          a_DT scale_NN independent_JJ representation_NN of_IN sequences_NNS of_IN
+          arbitrary_JJ number_NN of_IN unique_JJ units_NNS ._. These_DT properties_NNS will_MD
+          be_VB briefly_NN illustrated_VBN with_IN W_NNP Cope_NNP 's_POS example_NN ._. The_DT 16_CD
+          thunit_NN of_IN the_DT first_JJ stanza_NN ,_, "_'' I_PRP am_VBP a_DT poet_NN ._. I_PRP am_VBP very_RB fond_JJ
+          of_IN bananas_NNS ._. "_'' ,_, has_VBZ USM_NNP coordinates_VBZ 
+          USM_NNP 
+          
+            [_NN 1_CD ,_, ._. ._. ._. ,_, 2_CD n_NN ]_NN 
+           
+          (_( 16_CD )_) =_SYM 
+          [_NN 0_CD ._. 02_CD 0_CD ._. 01_CD 0_CD ._. 63_CD 0_CD ._. 00_CD 0_CD ._. 53_CD 0_CD ._. 07_CD 0_CD ._. 30_CD
+          0_CD ._. 52_CD 0_CD ._. 27_CD 0_CD ._. 57_CD ]_NN ._. The_DT first_JJ 
+          n_NN =_SYM 5_CD coordinates_VBZ ,_, the_DT position_NN in_IN
+          the_DT forward_JJ map_NN ,_, can_MD now_RB be_VB used_VBN ,_, by_IN reversing_VBG equation_NN 1_CD
+          [_NN 12_CD 13_CD ]_NN ,_, not_RB only_RB to_TO extract_VB the_DT identity_NN the_DT unit_NN 
+          i_NNP =_SYM 16_CD but_CC also_RB the_DT identity_NN of_IN the_DT
+          preceding_VBG units_NNS :_:
+          -_: using_VBG forward_RB coordinates_VBZ alone_RB 
+          [_NN 0_CD ._. 0156_CD 0_CD ._. 0138_CD 0_CD ._. 6314_CD 0_CD ._. 0001_CD
+          0_CD ._. 5338_CD ]_NN 
+          
+          The_DT same_JJ procedure_NN can_MD be_VB applied_VBN to_TO the_DT remaining_VBG 
+          n_NN =_SYM 5_CD coordinates_VBZ ,_, the_DT position_NN in_IN
+          the_DT backward_RB map_NN ,_, to_TO extract_VB the_DT identity_NN of_IN the_DT
+          succeeding_VBG units_NNS ,_, now_RB ordered_VBD backwards_JJ ._.
+          -_: using_VBG backward_RB coordinates_VBZ alone_RB 
+          [_NN 0_CD ._. 0703_CD 0_CD ._. 3004_CD 0_CD ._. 5169_CD 0_CD ._. 2742_CD
+          0_CD ._. 5652_CD ]_NN 
+          
+          The_DT length_NN of_IN the_DT sequence_NN that_WDT can_MD be_VB recovered_VBN from_IN
+          a_DT position_NN in_IN the_DT CGR_NNP or_CC USM_NNP space_NN is_VBZ only_RB as_RB long_RB as_IN the_DT
+          resolution_NN ,_, in_IN bits_NNS ,_, of_IN the_DT coordinates_VBZ themselves_PRP ._. In_IN
+          addition_NN ,_, the_DT relevance_NN of_IN these_DT iterative_JJ techniques_NNS is_VBZ
+          not_RB associated_VBN with_IN the_DT property_NN of_IN recovering_VBG sequences_NNS
+          as_RB much_JJ as_IN with_IN the_DT ability_NN to_TO recover_VB the_DT succession_NN
+          schemes_NNS ,_, e_SYM ._. g_SYM ._. the_DT Markov_NNP probability_NN tables_NNS ._. It_PRP has_VBZ been_VBN
+          recognized_VBN for_IN almost_RB a_DT decade_NN that_IN the_DT density_NN of_IN
+          positions_NNS in_IN unidirectional_NN ,_, bi-dimensional_JJ ,_, iterated_JJ CGR_NNP
+          maps_NNS (_( e_SYM ._. g_SYM ._. of_IN genomic_JJ sequences_NNS ,_, 
+          uu_NN =_SYM 4_CD -_: >_NN 
+          n_NN =_SYM 2_LS )_) defines_VBZ a_DT Markov_NNP table_NN [_NN 12_CD
+          13_CD ]_NN ._. The_DT complete_JJ accommodation_NN of_IN Markov_NNP chains_NNS in_IN
+          unidirectional_NN USM_NNP (_( i_NNP ._. e_SYM ._. either_CC forward_RB or_CC backward_RB ,_,
+          which_WDT is_VBZ an_DT equivalent_NN to_TO a_DT multidimensional_NN solution_NN for_IN
+          CGR_NNP )_) can_MD be_VB quickly_RB established_VBN by_IN noting_VBG that_IN the_DT
+          identity_NN of_IN a_DT quadrant_NN is_VBZ set_VBN by_IN its_PRP$ middle_JJ coordinates_VBZ [_NN
+          13_CD ]_NN ._. In_IN order_NN to_TO extract_VB the_DT Markov_NNP format_NN ,_, for_IN an_DT
+          arbitrary_JJ integer_NN order_NN 
+          ord_NN ,_, each_DT of_IN the_DT two_CD n-unit_JJ
+          hypercubes_NNS ,_, the_DT set_NN of_IN 
+          n_NN forward_RB or_CC backward_RB coordinates_VBZ ,_,
+          would_MD be_VB divided_VBN in_IN 
+          q_NN =_SYM 2_CD 
+          n_NN ._. (_( ord_NN +_NN 1_LS )_) equal_JJ quadrants_NNS and_CC the_DT
+          quadrant_NN frequencies_NNS rearranged_JJ [_NN 12_CD ]_NN ._. The_DT use_NN of_IN 
+          quadrant_NN to_TO designate_VB what_WP is_VBZ in_IN
+          fact_NN a_DT sub-unit_JJ hypercube_NN is_VBZ a_DT consonance_NN with_IN the_DT
+          preceding_VBG work_NN on_IN bidimensional_NN CGR_NNP maps_NNS [_NN 12_CD ]_NN ,_, where_WRB
+          it_PRP was_VBD shown_VBN that_IN since_IN any_DT number_NN of_IN subdivisions_NNS can_MD be_VB
+          considered_VBN in_IN a_DT continuous_JJ domain_NN ,_, the_DT density_NN
+          distribution_NN becomes_VBZ an_DT order-free_JJ Markov_NNP Table_NNP that_IN
+          accommodates_NNS both_DT integer_NN and_CC fractal_NN memory_NN lengths_NNS ._. The_DT
+          extraction_NN of_IN Markov_NNP chain_NN transition_NN tables_NNS from_IN USM_NNP
+          representations_NNS ,_, both_DT forward_RB and_CC backward_RB ,_, is_VBZ included_VBN
+          in_IN the_DT accompanying_VBG web-based_JJ application_NN (_( see_VB
+          Abstract_NNP )_) ._.
+          Above_IN ,_, the_DT USM_NNP procedure_NN was_VBD shown_VBN to_TO allow_VB for_IN the_DT
+          representation_NN of_IN sequences_NNS as_IN multidimensional_NN objects_NNS
+          without_IN loss_NN of_IN identity_NN or_CC context_NN ._. These_DT objects_NNS can_MD
+          now_RB be_VB analyzed_VBN to_TO characterize_VB the_DT sequences_NNS for_IN
+          quantities_NNS such_JJ as_IN similarity_NN between_IN segments_NNS or_CC entropy_NN
+          [_NN 18_CD 19_CD ]_NN within_IN the_DT sequence_NN ._. In_IN figure_NN 1_CD the_DT
+          10_CD -_: dimensional_NN object_VBP defined_VBN by_IN the_DT USM_NNP positions_NNS of_IN the_DT
+          two_CD stanzas_NNS was_VBD projected_VBN in_IN 3_CD -_: dimensions_NNS by_IN principal_JJ
+          component_NN analysis_NN ._. The_DT dimensionality_NN reduction_NN by_IN
+          principal_JJ factor_NN extraction_NN has_VBZ visualization_NN purposes_NNS
+          only_RB ._. As_IN established_VBN above_IN ,_, the_DT minimum_JJ necessary_JJ
+          dimensionality_NN of_IN the_DT USM_NNP state_NN space_NN is_VBZ set_VBN by_IN the_DT
+          binary_JJ logarithm_NN of_IN the_DT number_NN of_IN unique_JJ units_NNS ._.
+          Nevertheless_RB ,_, the_DT sequence_NN variance_NN associated_VBN with_IN each_DT
+          component_NN is_VBZ provided_VBN in_IN the_DT figure_NN legend_NN ._. In_IN figure_NN 1_CD a_DT ,_,
+          the_DT segments_NNS "_'' 
+          very_RB fond_JJ of_IN "_'' in_IN the_DT two_CD stanzas_NNS
+          are_VBP linked_VBN by_IN solid_JJ lines_NNS to_TO highlight_VB the_DT fact_NN that_DT
+          sequence_NN similarity_NN is_VBZ reflected_VBN by_IN spatial_NN proximity_NN of_IN
+          USM_NNP coordinates_VBZ ._. The_DT representation_NN is_VBZ repeated_VBN in_IN Figure_NN
+          1_CD bwith_NN solid_JJ lining_NN of_IN the_DT segment_NN "_'' 
+          bananas_NNS "_'' ._. The_DT matching_NN of_IN the_DT two_CD
+          segments_NNS of_IN the_DT second_JJ stanza_NN (_( light_JJ )_) to_TO the_DT similar_JJ
+          segments_NNS of_IN the_DT first_JJ stanza_NN (_( dark_JJ )_) is_VBZ ,_, again_RB ,_, visually_RB
+          apparent_JJ ._.
+          The_DT USM_NNP algorithm_NN determines_VBZ that_IN similar_JJ sequences_NNS ,_,
+          or_CC segments_NNS of_IN sequences_NNS ,_, will_MD have_VB converging_VBG iterated_JJ
+          trajectories_NNS :_: the_DT distance_NN will_MD be_VB cut_VBN in_IN half_NN for_IN every_DT
+          consecutive_JJ similar_JJ unit_NN ._. This_DT property_NN was_VBD notice_NN before_IN
+          for_IN CGR_NNP of_IN genomic_JJ sequences_NNS [_NN 12_CD ]_NN ,_, and_CC will_MD be_VB further_JJ
+          explored_JJ here_RB for_IN USM_NNP generalization_NN ._. In_IN that_DT preceding_VBG
+          work_NN it_PRP was_VBD shown_VBN that_IN the_DT number_NN of_IN similar_JJ consecutive_JJ
+          units_NNS can_MD be_VB approximated_JJ by_IN a_DT symmetrical_JJ logarithmic_JJ
+          transformation_NN of_IN the_DT maximum_NN distance_NN between_IN two_CD
+          positions_NNS in_IN either_DT of_IN the_DT dimensions_NNS (_( 
+          n-distance_JJ )_) ,_, 
+          d_SYM ._. 
+          
+          d_SYM =_SYM -_: log_VB 
+          2_CD (_( Max_NNP |_NN Δ_NN 
+          USM_NNP 
+          
+            undirectional_NN 
+           |_NN )_)     (_( Eq_NNP ._. 3_LS )_)
+          Since_IN the_DT USM_NNP coordinates_VBZ include_VBP two_CD CGR_NNP iterations_NNS
+          per_IN dimension_NN ,_, one_CD forward_RB and_CC another_DT backward_RB ,_, two_CD
+          distances_NNS can_MD be_VB extracted_VBN ._. The_DT first_JJ 1_CD ,_, ._. ._. ._. ,_, 
+          n_NN coordinates_VBZ define_VB a_DT forward_JJ
+          similarity_NN estimate_NN ,_, 
+          d_SYM 
+          
+            f_SYM 
+           ,_, and_CC the_DT second_JJ 
+          n_NN +_NN 1_CD ,_, ._. ._. ._. ,_, 2_CD n_NN coordinates_VBZ can_MD be_VB used_VBN
+          to_TO estimate_VB backward_RB similarity_NN ,_, 
+          d_SYM 
+          
+            b_SYM 
+           ._. The_DT former_JJ measures_NNS similarity_NN with_IN regard_NN to_TO the_DT
+          units_NNS preceding_VBG the_DT one_CD being_VBG compared_VBN and_CC the_DT latter_JJ
+          does_VBZ the_DT same_JJ for_IN those_DT the_DT succeeding_VBG that_IN same_JJ units_NNS ._.
+          Therefore_RB ,_, the_DT forward_RB and_CC backward_RB distances_NNS between_IN the_DT
+          positions_NNS 
+          i_NNP and_CC 
+          j_NN of_IN two_CD sequences_NNS ,_, 
+          a_DT and_NN 
+          b_SYM ,_, with_IN a_DT length_NN of_IN 
+          k_NN 
+          
+            a_DT 
+           and_NN 
+          k_NN 
+          
+            b_SYM 
+           ,_, respectively_RB ,_, would_MD be_VB calculated_VBN as_IN described_VBN by_IN
+          equation_NN 4_CD ,_, defining_VBG two_CD rectangular_JJ matrices_NNS ,_, 
+          d_SYM 
+          
+            f_SYM 
+           and_CC 
+          d_SYM 
+          
+            b_SYM 
+           ,_, of_IN size_NN 
+          k_NN 
+          
+            a_DT 
+           ×_NN 
+          k_NN 
+          
+            b_SYM 
+           (_( Fig_NNP ._. 2_LS a_DT ,_, 2_CD b_SYM )_) ._.
+          
+          However_RB ,_, the_DT values_NNS of_IN d_SYM necessarily_RB overestimate_NN the_DT
+          number_NN of_IN similar_JJ contiguous_JJ units_NNS preceding_VBG (_( 
+          d_SYM 
+          
+            f_SYM 
+           ,_, illustration_NN for_IN stanza_NN comparison_NN in_IN Fig_NNP ._. 2_LS a_DT )_) or_CC
+          succeeding_VBG (_( 
+          d_SYM 
+          
+            b_SYM 
+           ,_, illustration_NN for_IN stanza_NN comparison_NN in_IN Fig_NNP ._. 2_LS b_SYM )_) the_DT
+          positions_NNS being_VBG compared_VBN ._. The_DT value_NN of_IN 
+          d_SYM would_MD be_VB the_DT exact_JJ number_NN of_IN
+          contiguous_JJ similar_JJ units_NNS ,_, 
+          h_NN ,_, if_IN the_DT starting_VBG positions_NNS for_IN
+          the_DT similar_JJ segments_NNS where_WRB at_IN a_DT 
+          n-distance_JJ of_IN 1_CD ,_, e_SYM ._. g_SYM ._. if_IN they_PRP were_VBD
+          in_IN different_JJ corners_NNS of_IN the_DT unit_NN hyper-dimensional_JJ USM_NNP
+          cube_NN ._. Since_IN the_DT initial_JJ distance_NN is_VBZ always_RB somewhat_RB
+          smaller_JJR ,_, the_DT homology_NN ,_, 
+          h_NN ,_, measured_VBN as_IN the_DT number_NN of_IN
+          consecutive_JJ similar_JJ units_NNS ,_, will_MD be_VB smaller_JJR than_IN 
+          d_SYM (_( Eq_NNP ._. 5_LS )_) ._.
+          
+          The_DT contribution_NN of_IN φ_NN to_TO the_DT similarity_NN distance_NN ,_, 
+          d_SYM ,_, can_MD be_VB estimated_VBN from_IN the_DT
+          distribution_NN of_IN positions_NNS in_IN the_DT USM_NNP map_NN of_IN a_DT random_JJ
+          sequence_NN ._. A_DT uniformly_RB random_JJ sequence_NN [_NN 3_CD 19_CD 20_CD ]_NN will_MD
+          occupy_VB the_DT USM_NNP space_NN uniformly_RB ,_, and_CC ,_, for_IN that_DT matter_NN ,_, so_RB
+          will_MD the_DT random_JJ seed_NN of_IN forward_RB and_CC backward_RB iterative_JJ
+          mapping_NN ,_, respectively_RB equations_NNS 1_CD and_CC 2_CD ._. Therefore_RB ,_, a_DT
+          uniform_NN distribution_NN is_VBZ an_DT appropriated_VBN starting_NN point_NN to_TO
+          estimate_VB the_DT effect_NN of_IN (_( 
+          p_NN ,_, the_DT over-determination_JJ of_IN 
+          h_NN by_IN 
+          d_SYM (_( Eq_NNP ._. 5_LS )_) ._. Accordingly_RB ,_, for_IN a_DT given_VBN 
+          x_SYM ∈_NN [_NN 0_CD ,_, 1_CD ]_NN ,_, the_DT probability_NN ,_, 
+          P_NN 
+          
+            o_NN 
+           ,_, that_IN any_DT two_CD coordinates_VBZ ,_, 
+          x_SYM 
+          1_CD and_CC 
+          x_SYM 
+          2_CD ,_, are_VBP located_VBN within_IN a_DT radius_JJ 
+          r_LS ∈_NN (_( 0_CD ,_, 1_LS )_) is_VBZ given_VBN by_IN Equation_NNP
+          6_CD ._.
+          
+          Since_IN 
+          P_NN 
+          
+            o_NN 
+           (_( 
+          r_LS )_) is_VBZ the_DT probability_NN of_IN two_CD
+          points_NNS chosen_VBN randomly_RB from_IN a_DT uniform_NN distribution_NN 
+          Unif_NNP (_( [_NN 0_CD ,_, 1_CD ]_NN )_) being_VBG at_IN a_DT distance_NN
+          less_JJR than_IN 
+          r_LS from_IN each_DT other_JJ ,_, for_IN any_DT set_NN of_IN 
+          n_NN coordinates_VBZ in_IN the_DT USM_NNP ,_, the_DT
+          likelihood_NN of_IN finding_VBG another_DT position_NN within_IN a_DT block_JJ
+          distance_NN of_IN 
+          r_LS would_MD be_VB described_VBN by_IN raising_VBG
+          equation_NN 6_CD to_TO the_DT 
+          n_NN exponent_NN ._. Finally_RB ,_, recalling_VBG from_IN
+          equation_NN 3_CD that_DT sequence_NN similarity_NN can_MD be_VB obtained_VBN by_IN a_DT
+          logarithmic_JJ transformation_NN of_IN r_LS ,_, the_DT probability_NN that_IN the_DT
+          unidirectional_NN coordinates_VBZ of_IN two_CD random_JJ sequences_NNS are_VBP at_IN
+          a_DT similar_JJ length_NN 
+          d_SYM >_NN φ_NN is_VBZ described_VBN by_IN equation_NN
+          7_CD ._. The_DT simplicity_NN of_IN the_DT expansion_NN for_IN higher_JJR dimensions_NNS
+          highlights_VBZ the_DT order-statistics_JJ properties_NNS [_NN 21_CD ]_NN of_IN the_DT 
+          n-metric_JJ introduced_VBN above_IN (_( Eq_NNP ._. 3_LS )_) ._.
+          It_PRP is_VBZ noteworthy_JJ that_IN the_DT model_NN for_IN the_DT likelihood_NN of_IN
+          over-determination_JJ is_VBZ the_DT null-model_JJ ,_, e_SYM ._. g_SYM ._. the_DT comparison_NN
+          of_IN actual_JJ sequences_NNS is_VBZ evaluated_VBN against_IN the_DT hypothesis_NNS
+          that_IN the_DT similarity_NN observed_VBD happened_VBN by_IN chance_NN
+          alone_RB ._.
+          
+          Finally_RB ,_, it_PRP is_VBZ also_RB relevant_JJ to_TO recall_VB that_IN the_DT null_NN
+          model_NN for_IN 
+          d_SYM (_( Eq_NNP ._. 7_CD for_IN unidirectional_NN
+          comparisons_NNS ,_, bi-directional_JJ null_NN models_NNS are_VBP derived_VBN
+          below_IN )_) allows_VBZ the_DT generalization_NN for_IN non-integer_JJ
+          dimensions_NNS ._. For_IN example_NN ,_, the_DT 19_CD unique_JJ unites_VBZ found_VBN in_IN
+          the_DT two_CD stanzas_NNS (_( Table_NNP 1_LS )_) ,_, define_VB forward_RB and_CC backward_RB
+          USM_NNP maps_NNS in_IN 5_CD dimensions_NNS each_DT ._. However_RB the_DT 5_CD thdimension_NN
+          is_VBZ not_RB fully_RB utilized_JJ ,_, as_IN that_DT would_MD require_VB 
+          2_CD 5_CD =_SYM 
+          32_CD unique_JJ units_NNS ._. Therefore_RB ,_, if_IN
+          there_EX is_VBZ no_DT requirement_NN for_IN an_DT integer_NN result_NN ,_, the_DT
+          effective_JJ value_NN of_IN 
+          n_NN for_IN the_DT two_CD stanzas_NNS can_MD be_VB
+          refined_VBN as_IN being_VBG 
+          n_NN =_SYM log_VB 
+          2_CD 
+          (_( 19_CD )_) =_SYM 4_CD ._. 25_CD ._. 
+          An_DT estimation_NN of_IN bi-directional_JJ similarity_NN will_MD now_RB be_VB
+          introduced_VBN that_WDT adds_VBZ the_DT forward_RB and_CC backward_RB distance_VB
+          measures_NNS 
+          d_SYM 
+          
+            f_SYM 
+           and_CC 
+          d_SYM 
+          
+            b_SYM 
+           ._. The_DT motivation_NN for_IN this_DT new_JJ estimate_NN is_VBZ the_DT the_DT
+          determination_NN of_IN the_DT similar_JJ length_NN of_IN the_DT entire_JJ similar_JJ
+          segment_NN between_IN two_CD sequences_NNS solely_RB by_IN comparing_VBG any_DT two_CD
+          homologous_RB units_NNS ._. Accordingly_RB ,_, since_IN 
+          d_SYM 
+          
+            f_SYM 
+           is_VBZ an_DT estimate_NN of_IN preceding_VBG similarity_NN and_CC 
+          d_SYM 
+          
+            b_SYM 
+           provides_VBZ the_DT succeeding_VBG similarity_NN equivalent_NN the_DT
+          sum_NN of_IN the_DT two_CD similar_JJ distances_NNS ,_, 
+          D_NNP ,_, (_( Eq_NNP ._. 8_CD )_) will_MD estimate_NN of_IN the_DT
+          bi-directional_JJ similarity_NN ,_, e_SYM ._. g_SYM ._. the_DT length_NN of_IN the_DT similar_JJ
+          segment_NN ,_, 
+          H_NNP ._. 
+          
+          As_IN illustrated_VBN later_RB in_IN the_DT implementation_NN ,_, for_IN
+          pairwise_NN comparisons_NNS of_IN homologous_RB units_NNS of_IN similar_JJ
+          segments_NNS ,_, all_DT values_NNS of_IN 
+          D_NNP and_CC ,_, consequently_RB ,_, of_IN φ_NN ,_, are_VBP
+          exactly_RB the_DT same_JJ ._. This_DT result_NN could_MD possibly_RB have_VB been_VBN
+          anticipated_VBN from_IN the_DT preceding_VBG work_NN [_NN 12_CD ]_NN by_IN noting_VBG that_IN
+          the_DT value_NN of_IN 
+          d_SYM between_IN two_CD adjacent_JJ homologous_RB
+          units_NNS differs_VBZ exactly_RB by_IN one_CD unit_NN ._. However_RB ,_, this_DT result_NN
+          was_VBD in_IN fact_NN a_DT surprise_NN and_CC one_CD with_IN far_RB reaching_VBG
+          fundamental_JJ and_CC practical_JJ implications_NNS ._.
+          Similarly_RB to_TO unidirectional_NN similarity_NN estimation_NN ,_, 
+          d_SYM ,_, the_DT bi-directional_JJ estimate_NN ,_, 
+          D_NNP ,_, being_VBG the_DT sum_NN of_IN two_CD
+          overestimates_NNS ,_, is_VBZ also_RB overestimated_JJ by_IN a_DT quantity_NN to_TO be_VB
+          defined_VBN ,_, φ_NN (_( Eq_NNP ._. 8_CD )_) ._. The_DT derivation_NN of_IN an_DT expression_NN for_IN
+          the_DT bi-directional_JJ overestimation_NN will_MD require_VB the_DT
+          decomposition_NN of_IN 
+          P_NN 
+          1_CD (_( Eq_NNP ._. 7_CD )_) for_IN two_CD cases_NNS ,_, comparison_NN
+          between_IN unidirectional_NN coordinates_VBZ of_IN similar_JJ quadrants_NNS ,_, 
+          P_NN 
+          1_CD 
+          a_DT  ,_, and_CC of_IN opposite_JJ quadrants_NNS ,_,
+          
+          P_NN 
+          1_CD 
+          b_SYM  ,_, as_IN described_VBN in_IN equation_NN
+          9_CD ._. Recalling_NNP from_IN equation_NN 2_CD ,_, positions_NNS in_IN the_DT same_JJ
+          quadrant_NN correspond_VB to_TO sequence_NN units_NNS with_IN the_DT same_JJ
+          identity_NN ,_, and_CC positions_NNS in_IN opposite_JJ quadrants_NNS correspond_VB
+          to_TO comparison_NN between_IN coordinates_VBZ of_IN units_NNS with_IN a_DT
+          different_JJ identity_NN ._.
+          
+          The_DT need_NN for_IN the_DT distinction_NN between_IN same_JJ and_CC opposite_JJ
+          quadrant_NN comparison_NN ,_, which_WDT is_VBZ to_TO say_VB between_IN similar_JJ and_CC
+          between_IN dissimilar_JJ sequence_NN units_NNS ,_, is_VBZ caused_VBN by_IN the_DT fact_NN
+          that_IN same_JJ quadrant_NN comparisons_NNS are_VBP more_RBR likely_JJ to_TO lead_VB to_TO
+          higher_JJR values_NNS of_IN 
+          d_SYM ._. As_IN illustrated_VBN above_IN for_IN the_DT 16_CD
+          thunit_NN of_IN the_DT first_JJ stanza_NN ,_, the_DT forward_RB and_CC backward_RB
+          coordinates_VBZ must_MD fall_VB in_IN the_DT same_JJ quadrant_NN ._. Consequently_RB ,_,
+          the_DT similar_JJ pattern_NN of_IN same_JJ and_CC opposite_JJ quadrant_NN
+          comparisons_NNS for_IN each_DT dimension_NN will_MD be_VB reflected_VBN as_IN a_DT
+          bias_NN in_IN the_DT bi-directional_JJ overestimation_NN ._. The_DT
+          determination_NN of_IN probability_NN ,_, 
+          P_NN 
+          2_CD ,_, of_IN over-determination_JJ between_IN sums_NNS
+          of_IN independent_JJ unidirectional_NN similarity_NN estimates_NNS is_VBZ
+          derived_VBN in_IN equation_NN 10_CD ._.
+          
+          The_DT probability_NN of_IN bi-directional_JJ over-determination_JJ ,_,
+          can_MD now_RB be_VB established_VBN by_IN using_VBG the_DT same_JJ and_CC opposite_JJ
+          unidirectional_NN comparison_NN expressions_NNS presented_VBN in_IN
+          Equation_NNP 9_CD ._. The_DT resulting_VBG expression_NN for_IN similarity_NN
+          over-determination_JJ by_IN the_DT distance_NN between_IN bidirectional_NN
+          USM_NNP coordinates_VBZ ,_, 
+          P_NN 
+          3_CD ,_, is_VBZ presented_VBN in_IN equation_NN 11_CD ._.
+          
+          In_IN figure_NN 3_CD ,_, the_DT probability_NN distribution_NN for_IN both_DT
+          unidirectional_NN (_( 
+          P_NN 
+          1_CD ,_, in_IN gray_JJ )_) and_CC bidirectional_NN (_( 
+          P_NN 
+          3_CD ,_, in_IN black_JJ )_) comparisons_NNS is_VBZ
+          represented_VBN for_IN different_JJ dimensions_NNS ,_, 
+          n_NN ._. It_PRP is_VBZ clearly_RB apparent_JJ that_IN the_DT
+          over-determination_JJ becomes_VBZ much_RB less_RBR significant_JJ as_IN
+          dimensionality_NN increases_NNS ._. From_IN a_DT practical_JJ point_NN of_IN view_NN ,_,
+          the_DT over-determination_JJ is_VBZ of_IN little_JJ consequence_NN because_IN
+          the_DT computational_NN load_NN of_IN comparing_VBG sequences_NNS corresponds_NNS
+          mostly_RB to_TO the_DT identification_NN of_IN candidate_NN pairing_VBG
+          combinations_NNS ._. The_DT fact_NN that_IN the_DT n-metric_JJ unidirectional_NN
+          distances_NNS ,_, 
+          d_SYM 
+          
+            f_SYM 
+           and_CC 
+          d_SYM 
+          
+            b_SYM 
+           ,_, defined_VBN in_IN Equation_NNP 4_CD ,_, and_CC bidirectional_NN 
+          D_NNP ,_, defined_VBN in_IN Eq_NNP ._. 8_CD ,_, are_VBP
+          over-determined_JJ implies_VBZ that_IN the_DT identification_NN of_IN
+          similar_JJ segments_NNS between_IN two_CD sequences_NNS will_MD include_VB false_JJ
+          positives_NNS but_CC will_MD not_RB generate_VB false_JJ negatives_NNS ._. The_DT
+          false_JJ positive_JJ identifications_NNS can_MD be_VB readily_RB recognized_VBN
+          by_IN comparing_VBG the_DT sequences_NNS extracted_VBN from_IN the_DT
+          coordinates_VBZ ,_, as_IN demonstrated_VBN above_IN for_IN the_DT 16_CD thunit_NN of_IN
+          the_DT first_JJ stanza_NN ._. Nevertheless_RB ,_, since_IN over-determination_JJ
+          will_MD necessarily_RB occur_VB ,_, its_PRP$ probability_NN distribution_NN was_VBD
+          identified_VBN (_( Eq_NNP ._. 11_CD ,_, Fig_NNP ._. 3_LS )_) ._. This_DT can_MD also_RB be_VB achieved_VBN
+          for_IN individual_JJ values_NNS by_IN solving_VBG Eq_NNP ._. 11_CD for_IN the_DT value_NN of_IN
+          φ_NN observed_VBD ._. For_IN example_NN ,_, for_IN the_DT conditions_NNS of_IN the_DT two_CD
+          stanzas_NNS ,_, the_DT value_NN of_IN (_( φ_NN 
+          
+          p_NN 1_CD =_SYM 0_CD ._. 5_CD ,_, 
+          n_NN =_SYM 4_CD ._. 25_CD is_VBZ 0_CD ._. 71_CD sequence_NN units_NNS ,_,
+          which_WDT is_VBZ the_DT expected_VBN median_JJ unidirectional_NN
+          over-determination_JJ ,_, 
+          P_NN 
+          1_CD ,_, of_IN 
+          d_SYM 
+          
+            f_SYM 
+           and_CC 
+          d_SYM 
+          
+            b_SYM 
+           (_( Eqs_NNP ._. 5_LS ,_, 7_CD )_) ._. The_DT corresponding_JJ probability_NN of_IN
+          bi-directional_JJ overdetermination_NN ,_, 
+          P_NN 
+          3_CD ,_, should_MD be_VB somewhat_RB above_IN twice_RB
+          that_DT value_NN ._. Using_VBG equation_NN 11_CD ,_, the_DT value_NN obtained_VBN is_VBZ 1_CD ._. 67_CD
+          similar_JJ units_NNS ._. Finally_RB ,_, it_PRP is_VBZ worthy_JJ to_TO stress_VB that_IN the_DT
+          expressions_NNS for_IN calculation_NN of_IN likelihood_NN of_IN arbitrary_JJ
+          levels_NNS of_IN over-determination_JJ (_( Eq_NNP ._. 5_LS -_: 11_CD )_) can_MD be_VB inverted_VBN
+          to_TO anticipate_VB the_DT level_NN of_IN over-determination_JJ for_IN
+          arbitrary_JJ probability_NN levels_NNS ._. This_DT use_NN of_IN the_DT null_NN random_JJ
+          model_NN is_VBZ also_RB included_VBN in_IN the_DT accompanying_VBG online_NN tool_NN
+          (_( see_VB Abstract_NNP for_IN URL_NNP )_) ._.
+        
+      
+      
+        Discussion_NNP
+        
+          USM_NNP of_IN biological_JJ sequences_NNS
+          The_DT representation_NN of_IN biological_JJ information_NN as_IN
+          discrete_JJ sequences_NNS is_VBZ dominated_VBN by_IN the_DT fact_NN that_IN genomes_NNS
+          are_VBP sequences_NNS of_IN discrete_JJ units_NNS and_CC so_RB are_VBP the_DT products_NNS
+          of_IN its_PRP$ transcription_NN and_CC translation_NN ._. However_RB ,_, not_RB all_DT
+          biological_JJ sequences_NNS are_VBP composed_VBN of_IN units_NNS that_WDT are_VBP
+          functionally_RB equally_RB distinct_JJ from_IN each_DT other_JJ ,_, as_IN is_VBZ the_DT
+          case_NN of_IN proteomic_JJ data_NNS and_CC Multi-locus_NNP sequence_NN typing_VBG
+          [_NN MLST_NNP ,_, 4_CD ]_NN ._. To_TO avoid_VB the_DT issue_NN of_IN unit_NN inequality_NN and_CC
+          highlight_VB the_DT general_JJ applicability_NN of_IN the_DT USM_NNP procedure_NN ,_,
+          stanzas_NNS of_IN a_DT poem_NN were_VBD used_VBN to_TO illustrate_VB the_DT
+          implementation_NN instead_RB ._. Nevertheless_RB the_DT original_JJ
+          motivation_NN of_IN analyzing_VBG biological_JJ sequences_NNS is_VBZ now_RB
+          recalled_VBN ._.
+          In_IN the_DT preceding_VBG report_NN the_DT authors_NNS have_VBP illustrated_VBN
+          the_DT properties_NNS of_IN unidirectional_NN 
+          n-metric_JJ estimation_NN of_IN similarity_NN
+          for_IN the_DT threonine_NN operon_NN of_IN 
+          E_NNP ._. coli_NNS [_NN 12_CD ]_NN ._. The_DT same_JJ two_CD two_CD
+          regions_NNS of_IN 
+          thrA_NN and_CC 
+          thrB_NN sequences_NNS of_IN 
+          E_NNP ._. coli_NNS K-_NNP 12_CD MG_NNP 1655_CD are_VBP compared_VBN in_IN
+          Figure_NN 5_CD to_TO highlight_VB the_DT advancement_NN achieved_VBN by_IN USM_NNP ._. It_PRP
+          should_MD be_VB recalled_VBN that_IN the_DT particular_JJ dimensionality_NN of_IN
+          DNA_NNP sequences_NNS ,_, 
+          n_NN =_SYM 2_CD ,_, allows_VBZ a_DT very_RB convenient_JJ
+          unidirectional_NN bi-dimensional_JJ representation_NN ,_, which_WDT is_VBZ in_IN
+          fact_NN the_DT Chaos_NNP Game_NNP Representation_NNP procedure_NN (_( CGR_NNP )_) [_NN 5_CD ]_NN
+          ._. Consequently_RB ,_, CGR_NNP is_VBZ a_DT particular_JJ case_NN of_IN USM_NNP ,_, obtained_VBN
+          when_WRB 
+          n_NN =_SYM 2_CD and_CC only_RB the_DT forward_RB
+          coordinates_VBZ are_VBP determined_VBN ._. This_DT can_MD also_RB be_VB verified_VBN by_IN
+          comparing_VBG Figure_NN 5_CD awith_NN a_DT similar_JJ representation_NN reported_VBD
+          before_IN [_NN 12_CD ]_NN ,_, obtained_VBN with_IN the_DT same_JJ data_NN using_VBG CGR_NNP
+          [_NN Fig_NNP ._. 10_CD of_IN that_DT report_NN ]_NN ._. The_DT advantageous_JJ properties_NNS of_IN
+          full_JJ (_( bi-directional_JJ )_) USM_NNP become_VBD apparent_JJ when_WRB Fig_NNP ._. 5_LS ais_NNS
+          compared_VBN with_IN Fig_NNP ._. 5_LS b_SYM ._. It_PRP is_VBZ clearly_RB apparent_JJ for_IN
+          bi-directional_JJ USM_NNP (_( Fig_NNP ._. 5_LS b_SYM )_) that_IN all_DT pair-wise_JJ
+          comparisons_NNS of_IN units_NNS of_IN identical_JJ segments_NNS now_RB have_VBP the_DT
+          same_JJ 
+          D_NNP values_NNS ._. This_DT coverts_NNS any_DT
+          individual_NN homologous_RB pair-wise_JJ comparison_NN into_IN an_DT
+          estimation_NN of_IN the_DT length_NN of_IN the_DT entire_JJ similar_JJ segment_NN ._.
+          The_DT conservation_NN of_IN statistical_JJ properties_NNS by_IN the_DT
+          distances_NNS obtained_VBN ,_, 
+          D_NNP ,_, can_MD also_RB be_VB confirmed_VBN by_IN
+          comparing_VBG observed_VBN values_NNS with_IN the_DT corresponding_JJ null_NN
+          models_NNS (_( Fig_NNP ._. 4_LS )_) ._. For_IN the_DT analysis_NN of_IN this_DT figure_NN it_PRP is_VBZ
+          noteworthy_JJ to_TO recall_VB that_IN the_DT statistical_JJ properties_NNS of_IN
+          prokaryote_NN DNA_NNP are_VBP often_RB undistinguishable_JJ from_IN uniform_NN
+          randomness_NN [_NN 12_CD 18_CD 19_CD ]_NN ._. The_DT genomic_JJ sequence_NN of_IN the_DT
+          first_JJ gene_NN of_IN the_DT threonine_NN operon_NN of_IN 
+          E_NNP ._. coli_NNS ,_, thrA_NN ,_, is_VBZ compared_VBN with_IN
+          that_DT of_IN the_DT second_NN ,_, 
+          thrB_NN ._. The_DT distribution_NN of_IN the_DT
+          resulting_VBG 
+          D_NNP values_NNS is_VBZ represented_VBN in_IN figure_NN
+          4_CD (_( solid_JJ black_JJ line_NN )_) ,_, alongside_IN with_IN the_DT null_NN model_NN for_IN
+          that_DT dimensionality_NN (_( Eq_NNP ._. 11_CD ,_, with_IN 
+          n_NN =_SYM log_VB 
+          2_CD 
+          (_( 4_LS )_) =_SYM 2_CD ,_, gray_JJ dotted_JJ line_NN )_) ._. The_DT
+          genomic_JJ sequences_NNS of_IN 
+          thrA_NN and_CC 
+          thrB_NN were_VBD translated_VBN into_IN proteomic_JJ
+          sequences_NNS using_VBG SwissProt_NNP 's_POS on_IN line_NN translator_NN ,_, applied_VBN
+          to_TO the_DT 5_CD '_POS 3_CD '_POS first_JJ frame_NN
+          http_NN :_: /_NN /_NN www_NN ._. expasy_NN ._. ch_NN /_NN tools_NNS /_NN dna_NN ._. html_NN ._. Similarly_RB ,_, the_DT
+          distribution_NN of_IN 
+          D_NNP values_NNS for_IN the_DT comparison_NN of_IN the_DT
+          proteomic_JJ 
+          thrA_NN and_CC 
+          thrB_NN sequences_NNS is_VBZ also_RB represented_VBN
+          in_IN Figure_NN 4_CD ,_, alongside_IN with_IN the_DT null_NN model_NN ,_, Eq_NNP ._. 11_CD ,_, for_IN
+          its_PRP$ dimensionality_NN (_( 
+          n_NN =_SYM log_VB 
+          2_CD (_( 
+          uu_NN =_SYM 20_CD possible_JJ aminoacids_NNS )_) =_SYM
+          4_CD ._. 32_CD )_) ,_, which_WDT is_VBZ graphically_RB nearly_RB undistiguishable_JJ
+          from_IN that_DT of_IN the_DT comparison_NN between_IN the_DT stanzas_NNS ,_, with_IN 
+          n_NN =_SYM log_VB 
+          2_CD (_( 
+          uu_NN =_SYM 19_CD possible_JJ letters_NNS )_) =_SYM
+          4_CD ._. 25_CD (_( dotted_JJ gray_JJ line_NN for_IN the_DT rounded_JJ value_NN ,_, 
+          n_NN =_SYM 4_CD ._. 3_LS )_) ._. Both_DT the_DT genomic_JJ and_CC the_DT
+          proteomic_JJ distribution_NN of_IN 
+          D_NNP values_NNS is_VBZ observed_VBN to_TO be_VB
+          contained_VBN by_IN the_DT null_NN model_NN ,_, unlike_IN the_DT comparison_NN
+          between_IN the_DT stanzas_NNS discussed_VBN above_IN ,_, where_WRB the_DT existence_NN
+          of_IN structure_NN is_VBZ clearly_RB reflected_VBN by_IN its_PRP$ distribution_NN ._.
+          The_DT genomic_JJ and_CC proteomic_JJ of_IN 
+          thrA_NN and_CC 
+          thraB_NN ,_, used_VBN to_TO illustrate_VB this_DT
+          discussion_NN ,_, are_VBP provided_VBN with_IN the_DT web-based_JJ
+          implementation_NN of_IN USM_NNP (_( see_VB Methods_NNP for_IN URL_NNP )_) ._.
+        
+      
+      
+        Conclusions_NNP
+        The_DT mounting_VBG quantity_NN and_CC complexity_NN of_IN biological_JJ
+        sequence_NN data_NNS being_VBG produced_VBN [_NN 22_CD ]_NN commands_NNS the_DT
+        investigation_NN of_IN new_JJ approaches_NNS to_TO sequence_NN analysis_NN ._. In_IN
+        particular_JJ ,_, the_DT need_NN for_IN scale_NN independent_JJ methodologies_NNS
+        becomes_VBZ even_RB more_RBR necessary_JJ as_IN the_DT limitations_NNS of_IN
+        conventional_JJ Markov_NNP chains_NNS are_VBP increasingly_RB noted_VBN [_NN 6_CD ]_NN ._.
+        These_DT limitations_NNS are_VBP bound_VBN to_TO become_VB overwhelming_JJ when_WRB
+        signals_NNS such_JJ as_IN succession_NN schemes_NNS of_IN the_DT expression_NN of_IN
+        over_IN 30_CD ,_, 000_CD human_JJ genes_NNS [_NN 23_CD ]_NN become_VB available_JJ ._. This_DT
+        particular_JJ signal_NN would_MD be_VB conveniently_RB packaged_VBN within_IN a_DT
+        30_CD dimension_NN USM_NNP unit_NN block_NN (_( 
+        n_NN =_SYM ceil_NN (_( log_VB 
+        2_CD (_( 
+        3_CD 10_CD 3_LS )_) =_SYM 15_CD )_) ._.
+        In_IN addition_NN ,_, the_DT advances_NNS in_IN statistical_JJ mechanics_NNS for_IN
+        the_DT study_NN of_IN complex_JJ systems_NNS ,_, particularly_RB in_IN non-linear_JJ
+        dynamics_NNS ,_, have_VBP not_RB been_VBN fully_RB utilizable_JJ for_IN the_DT analysis_NN
+        of_IN sequences_NNS due_JJ to_TO the_DT missing_VBG formal_JJ link_NN between_IN
+        discrete_JJ sequences_NNS and_CC trajectories_NNS in_IN continuous_JJ spaces_NNS ._.
+        The_DT properties_NNS of_IN USM_NNP reported_VBD above_IN suggest_VBP that_IN this_DT may_MD
+        indeed_RB be_VB such_PDT a_DT bridge_NN ._. For_IN example_NN ,_, the_DT embedding_VBG of_IN
+        dimensions_NNS ,_, a_DT technique_NN at_IN the_DT foundations_NNS of_IN many_JJ
+        time-series_JJ analysis_NN techniques_NNS offers_VBZ a_DT good_JJ example_NN of_IN
+        the_DT completeness_NN of_IN USM_NNP representation_NN of_IN sequences_NNS ._. By_IN
+        embedding_VBG the_DT forward_RB and_CC backward_RB coordinates_VBZ separately_RB ,_,
+        at_IN the_DT relevant_JJ memory_NN length_NN ,_, the_DT resulting_VBG embedded_VBN USM_NNP
+        is_VBZ exactly_RB what_WP would_MD be_VB obtained_VBN by_IN applying_VBG USM_NNP technique_NN
+        to_TO the_DT embedded_VBN dimeric_JJ sequence_NN itself_PRP ._.
+      
+      
+        Methods_NNP
+        
+          Computation_NNP
+          The_DT algorithms_NNS described_VBD in_IN this_DT manuscript_NN were_VBD coded_VBN
+          using_VBG MATLAB_NNP ™_NN 6_CD ._. 0_CD language_NN (_( Release_NNP 12_CD )_) ,_, licensed_VBN by_IN The_DT
+          MathWorks_NNP Inc_NNP http_NN :_: /_NN /_NN www_NN ._. mathworks_NNS ._. com_NN ._. An_DT internet_NN
+          interface_NN was_VBD also_RB developed_VBN to_TO make_VB them_PRP freely_RB
+          accessible_JJ through_IN user-friendly_JJ web-pages_JJ
+          http_NN :_: /_NN /_NN bioinformatics_NNS ._. musc_NN ._. edu_NN /_NN ~_NN jonas_NNS /_NN usm_NN /_NN ._.
+        
+        
+          Source_NN code_NN
+          In_IN order_NN to_TO facilitate_VB the_DT development_NN of_IN sequence_NN
+          analysis_NN applications_NNS based_VBN on_IN the_DT USM_NNP state_NN space_NN ,_, the_DT
+          software_NN library_NN of_IN functions_NNS written_VBN to_TO calculate_VB the_DT
+          USM_NNP coordinates_VBZ is_VBZ provided_VBN with_IN the_DT web-based_JJ
+          implementation_NN (_( see_VB address_VB above_IN )_) ._. The_DT code_NN is_VBZ provided_VBN
+          in_IN MATLAB_NNP format_NN ,_, which_WDT is_VBZ general_JJ enough_RB as_IN to_TO be_VB easily_RB
+          ported_JJ into_IN other_JJ environments_NNS ._. These_DT functions_NNS process_VBP
+          sequences_NNS provided_VBN as_IN text_NN files_NNS in_IN FASTA_NNP format_NN ._. In_IN
+          addition_NN to_TO the_DT functions_NNS ,_, the_DT test_NN datasets_NNS and_CC a_DT brief_JJ
+          readme_NN ._. txt_NN documentation_NN file_NN are_VBP also_RB included_VBN ._.
+        
+        
+          Test_NN data_NNS
+          The_DT USM_NNP mapping_NN proposed_VBN is_VBZ applicable_JJ to_TO any_DT discrete_JJ
+          sequence_NN ,_, even_RB if_IN the_DT primary_JJ goal_NN is_VBZ the_DT analysis_NN of_IN
+          biological_JJ sequences_NNS ._. For_IN ease_NN of_IN illustration_NN and_CC to_TO
+          emphasize_VB USM_NNP 's_POS general_JJ validity_NN ,_, the_DT test_NN dataset_NN used_VBN
+          to_TO describe_VB implementation_NN of_IN the_DT algorithm_NN consists_VBZ of_IN
+          two_CD stanzas_NNS of_IN a_DT Poem_NNP by_IN Wendy_NNP Cope_NNP ,_, "_'' The_DT Uncertainty_NN of_IN
+          the_DT Poet_NNP "_'' [_NN 14_CD ]_NN ._. In_IN the_DT Discussion_NNP section_NN ,_, USM_NNP was_VBD
+          also_RB applied_VBN to_TO the_DT DNA_NNP sequence_NN of_IN the_DT threonine_NN operon_NN
+          of_IN 
+          Escherichia_NNP coli_NNS K-_NNP 12_CD MG_NNP 1655_CD ,_,
+          obtained_VBN from_IN the_DT University_NNP of_IN Winsconsin_NNP 
+          E_NNP ._. coli_NNS Genome_NNP Project_NNP
+          http_NN :_: /_NN www_NN ._. genetics_NNS ._. wisc_NN ._. edu_NN ,_, and_CC to_TO its_PRP$ 5_CD '_POS 3_CD '_POS first_JJ frame_NN
+          proteomic_JJ translation_NN obtained_VBN by_IN using_VBG SwissProt_NNP on_IN line_NN
+          translator_NN http_NN :_: /_NN /_NN www_NN ._. expasy_NN ._. ch_NN /_NN tools_NNS /_NN dna_NN ._. html_NN ._. The_DT three_CD
+          test_NN sequence_NN datasets_NNS are_VBP also_RB included_VBN in_IN the_DT web-based_JJ
+          USM_NNP application_NN ._.
+        
+      
+    
+  

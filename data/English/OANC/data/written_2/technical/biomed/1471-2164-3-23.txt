@@ -1,0 +1,524 @@
+
+  
+    
+      
+        Background_NNP
+        
+          Hypothesis_NNP formulation_NN
+          The_DT assessment_NN of_IN bias_NN in_IN dinucleotide_NN relative_JJ
+          abundance_NN begins_VBZ with_IN the_DT "_'' odds_NNS ratios_NNS "_'' 
+          r_LS 
+          
+            xy_NN 
+           =_SYM 
+          f_SYM 
+          
+            xy_NN 
+           /_NN 
+          f_SYM 
+          
+            x_SYM 
+           
+          f_SYM 
+          
+            y_NN 
+           where_WRB 
+          f_SYM 
+          
+            x_SYM 
+           denotes_NNS the_DT (_( normalized_JJ )_) frequency_NN of_IN nucleotide_NN
+          (_( base_NN )_) 
+          x_SYM and_CC 
+          f_SYM 
+          
+            xy_NN 
+           is_VBZ the_DT frequency_NN of_IN dinucleotide_NN (_( base_NN step_NN )_) 
+          xy_NN in_IN the_DT leading_VBG strand_NN ._. These_DT
+          ratios_NNS compare_VBP observed_VBD dinucleotide_NN frequencies_NNS to_TO those_DT
+          expected_VBN from_IN the_DT base_NN composition_NN alone_RB under_IN the_DT
+          assumption_NN of_IN statistical_JJ independence_NN (_( i_NNP ._. e_SYM ._. ,_, thorough_JJ
+          shuffling_NN of_IN the_DT sequence_NN )_) ._. When_WRB 
+          r_LS 
+          
+            xy_NN 
+           is_VBZ greater_JJR (_( less_JJR )_) than_IN one_CD ,_, 
+          xy_NN is_VBZ over_IN (_( under_IN )_) -_: represented_VBD ._. The_DT
+          symmetrized_JJ version_NN 
+          r_LS *_NN 
+          
+            xy_NN 
+           is_VBZ computed_JJ from_IN frequencies_NNS of_IN the_DT sequence_NN
+          concatenated_JJ with_IN its_PRP$ inverted_JJ complement_VB ._. The_DT numbers_NNS {_( 
+          r_LS *_NN 
+          
+            xy_NN 
+           }_) comprise_VBP the_DT dinucleotide_NN relative_JJ abundance_NN
+          profile_NN [_NN 3_CD 4_CD 5_CD 6_CD ]_NN ._.
+          The_DT statistical_JJ problem_NN is_VBZ to_TO test_VB the_DT hypotheses_NNS that_IN
+          patterns_NNS of_IN dinucleotide_NN over-_NN and_CC under-representation_JJ
+          in_IN a_DT given_VBN genome_NN are_VBP invariant_NN ._. Using_VBG symbol_NN 
+          f_SYM for_IN frequencies_NNS in_IN windows_NNS ,_, let_VB 
+          g_SYM be_VB used_VBN to_TO represent_VB the_DT global_JJ
+          frequencies_NNS computed_JJ for_IN a_DT complete_JJ sequence_NN (_( a_DT genome_NN or_CC
+          chromosome_NN )_) ._. The_DT hypothesis_NNS asserts_VBZ that_DT 
+          r_LS *_NN 
+          
+            xy_NN 
+           in_IN any_DT window_NN is_VBZ approximately_RB equal_JJ to_TO a_DT constant_JJ ._.
+          This_DT constant_JJ is_VBZ the_DT global_JJ signature_NN 
+          c_SYM *_NN 
+          
+            xy_NN 
+           =_SYM 
+          g_SYM *_NN 
+          
+            xy_NN 
+           /_NN 
+          g_SYM *_NN 
+          
+            x_SYM 
+           
+          g_SYM *_NN 
+          
+            y_NN 
+           ._.
+          Karlin_NNP ,_, Landunga_NNP ,_, and_CC Blaisdell_NNP [_NN 8_CD ]_NN assessed_VBD
+          homogeneity_NN of_IN the_DT dinucleotide_NN relative_JJ abundance_NN
+          profile_NN through_IN the_DT delta-distance_JJ δ_NN *_NN =_SYM (_( 1_CD /_NN 16_CD )_) Σ_NN |_NN 
+          r_LS *_NN 
+          
+            xy_NN 
+           -_: 
+          c_SYM *_NN 
+          
+            xy_NN 
+           |_NN ._. They_PRP provided_VBD standards_NNS for_IN classifying_VBG δ_NN *_NN in_IN 100_CD
+          kb_NN windows_NNS as_IN follows_VBZ :_: "_'' random_JJ "_'' (_( 0_CD <_NN 1000_CD δ_NN *_NN <_NN 15_CD )_) ,_,
+          "_'' very_RB close_VB "_'' (_( 15_CD <_NN 1000_CD δ_NN *_NN <_NN 30_CD )_) ,_, "_'' close_VB "_'' (_( 30_CD <_NN
+          1000_CD δ_NN *_NN <_NN 45_CD )_) ,_, "_'' moderately_RB related_VBN "_'' (_( 45_CD <_NN 1000_CD δ_NN *_NN
+          <_NN 65_CD )_) ,_, and_CC "_'' distantly_RB related_VBN "_'' (_( 65_CD <_NN 1000_CD δ_NN *_NN <_NN
+          95_CD )_) ._. The_DT upper_JJ limit_NN of_IN the_DT "_'' random_JJ "_'' range_NN ,_, which_WDT
+          typifies_VBZ thoroughly_RB shuffled_VBD sequences_NNS ,_, scales_NNS as_IN 1_CD /_NN √_NN 
+          n_NN ,_, where_WRB 
+          n_NN is_VBZ the_DT number_NN of_IN bases_NNS in_IN the_DT
+          window_NN ._.
+          The_DT local_JJ stability_NN of_IN 
+          r_LS 
+          
+            xy_NN 
+           would_MD be_VB an_DT ancillary_JJ result_NN under_IN the_DT assumption_NN of_IN
+          a_DT stationary_JJ stochastic_JJ process_NN ,_, since_IN then_RB the_DT
+          frequencies_NNS converge_NN in_IN probability_NN to_TO fixed_VBN limits_NNS ,_, 
+          f_SYM 
+          
+            x_SYM 
+           →_NN 
+          p_NN 
+          
+            x_SYM 
+           and_CC 
+          f_SYM 
+          
+            xy_NN 
+           /_NN 
+          f_SYM 
+          
+            x_SYM 
+           →_NN 
+          p_NN 
+          
+            xy_NN 
+           as_IN 
+          n_NN →_NN ∞_NN ._. The_DT simplest_JJS case_NN would_MD be_VB a_DT
+          homogeneous_JJ Markov_NNP chain_NN with_IN base_NN step_NN transition_NN
+          probabilities_NNS 
+          p_NN 
+          
+            xy_NN 
+           and_CC stationary_JJ base_NN composition_NN 
+          p_NN 
+          
+            x_SYM 
+           ._. In_IN this_DT case_NN the_DT differences_NNS 
+          f_SYM 
+          
+            x_SYM 
+           -_: 
+          p_NN 
+          
+            x_SYM 
+           and_CC 
+          f_SYM 
+          
+            xy_NN 
+           /_NN 
+          f_SYM 
+          
+            x_SYM 
+           -_: 
+          p_NN 
+          
+            xy_NN 
+           tend_VBP to_TO zero_CD as_IN 1_CD /_NN √_NN 
+          n_NN and_CC it_PRP is_VBZ clear_JJ that_DT 
+          r_LS 
+          
+            xy_NN 
+           -_: 
+          p_NN 
+          
+            xy_NN 
+           /_NN 
+          p_NN 
+          
+            y_NN 
+           will_MD vanish_VB at_IN the_DT same_JJ rate_NN [_NN 18_CD ]_NN ._. Moreover_RB ,_, the_DT
+          globally_RB computed_JJ quotient_NN 
+          c_SYM 
+          
+            xy_NN 
+           =_SYM 
+          g_SYM 
+          
+            xy_NN 
+           /_NN 
+          g_SYM 
+          
+            x_SYM 
+           
+          g_SYM 
+          
+            y_NN 
+           would_MD be_VB a_DT consistent_JJ estimate_NN of_IN 
+          p_NN 
+          
+            xy_NN 
+           /_NN 
+          p_NN 
+          
+            y_NN 
+           ._. Thus_RB the_DT separate_JJ terms_NNS of_IN Σ_NN |_NN 
+          r_LS 
+          
+            xy_NN 
+           -_: 
+          c_SYM 
+          
+            xy_NN 
+           |_NN tend_VBP to_TO zero_CD as_IN 1_CD /_NN √_NN 
+          n_NN and_CC the_DT same_JJ must_MD obviously_RB apply_VB
+          to_TO δ_NN *_NN ._.
+          We_PRP start_VBP however_RB with_IN the_DT understanding_NN that_IN the_DT
+          sequence_NN is_VBZ fundamentally_RB nonstationary_JJ ,_, exhibiting_VBG
+          statistically_RB significant_JJ variations_NNS in_IN base_NN frequencies_NNS
+          between_IN non-overlapping_JJ windows_NNS [_NN 1_CD 2_CD ]_NN ._. Locally_RB or_CC
+          globally_RB estimated_VBN Markov_NNP models_NNS may_MD describe_VB it_PRP better_JJR
+          than_IN assuming_VBG that_IN the_DT bases_NNS are_VBP independent_JJ and_CC
+          identically_RB distributed_VBN [_NN 19_CD ]_NN but_CC they_PRP fail_VBP to_TO reflect_VB
+          the_DT salient_NN features_NNS of_IN natural_JJ sequences_NNS [_NN 20_CD ]_NN ._. For_IN
+          example_NN ,_, Robin_NNP and_CC Daudin_NNP [_NN 21_CD ]_NN compared_VBD the_DT frequency_NN
+          of_IN a_DT specific_JJ motif_NN in_IN the_DT genome_NN sequence_NN of_IN 
+          Haemophilus_NNP influenzae_NN to_TO Markovian_NNP
+          predictions_NNS and_CC found_VBD that_IN the_DT observed_VBN frequencies_NNS were_VBD
+          everywhere_RB higher_RBR than_IN predicted_VBD ._.
+          This_DT point_NN aside_RB ,_, the_DT stationary_JJ Markov_NNP analogy_NN
+          provides_VBZ a_DT useful_JJ benchmark_NN in_IN assessing_VBG local_JJ stability_NN
+          of_IN the_DT genomic_JJ signature_NN ._. If_IN nucleotide_NN sequences_NNS behaved_VBD
+          like_IN Markov_NNP chains_NNS ,_, then_RB δ_NN *_NN √_NN 
+          n_NN would_MD not_RB depend_VB on_IN 
+          n_NN ._. We_PRP will_MD examine_VB this_DT 
+          scaled_VBN delta-distance_JJ δ_NN *_NN √_NN 
+          n_NN to_TO see_VB if_IN it_PRP exhibits_VBZ any_DT trend_NN ._.
+          A_DT decreasing_VBG (_( "_'' super-_NN Markov_NNP "_'' )_) trend_NN would_MD imply_VB that_DT
+          signature_NN stability_NN emerges_VBZ as_IN the_DT scale_NN increases_NNS and_CC
+          could_MD indicate_VB the_DT breakdown_NN of_IN stability_NN for_IN some_DT window_NN
+          size_NN below_IN 50_CD kb_NN ._.
+        
+        
+          Scope_NNP of_IN the_DT investigation_NN
+          This_DT survey_NN examines_VBZ 22_CD sequences_NNS from_IN 19_CD species_NNS and_CC
+          17_CD genera_NN ._. The_DT sequences_NNS are_VBP listed_VBN in_IN Table_NNP 1_CD along_IN with_IN
+          serial_NN numbers_NNS (_( 
+          SN_NNP )_) and_CC 4_CD -_: letter_NN abbreviations_NNS (_( 
+          Abbr_NNP )_) ._. Most_JJS of_IN them_PRP have_VBP been_VBN
+          previously_RB studied_VBN and_CC found_VBN to_TO show_VB stability_NN of_IN the_DT
+          genomic_JJ signature_NN in_IN 50_CD kb_NN windows_NNS [_NN 9_CD ]_NN ._. The_DT shortest_JJS
+          is_VBZ the_DT 580_CD kb_NN complete_JJ genome_NN of_IN 
+          Mycoplasma_NNP genitalium_NN ._. The_DT longest_JJS
+          complete_JJ sequence_NN is_VBZ the_DT 7657_CD kb_NN 
+          human_JJ chromosome_NN XXII_NNP ._.
+          The_DT selected_VBN sequences_NNS ,_, which_WDT are_VBP not_RB always_RB complete_JJ
+          genomes_NNS ,_, fall_NN into_IN two_CD main_JJ classes_NNS ,_, being_VBG typically_RB (_( 1_LS )_)
+          the_DT chromosome_NN that_WDT constitutes_VBZ the_DT largest_JJS single_JJ
+          element_NN in_IN a_DT prokaryotic_JJ genome_NN or_CC (_( 2_LS )_) one_CD of_IN the_DT
+          chromosomes_NNS in_IN a_DT eukaryotic_JJ genome_NN ._. In_IN the_DT first_JJ case_NN ,_,
+          for_IN example_NN ,_, is_VBZ the_DT 
+          Borrelia_NNP burgdorferi_NN sequence_NN that_WDT
+          excludes_VBZ 21_CD identified_VBN plasmids_NNS ._. The_DT second_JJ case_NN is_VBZ
+          exemplified_VBN by_IN 
+          Plasmodium_NNP falciparum_NN where_WRB
+          chromosomes_NNS II_NNP and_CC III_NNP are_VBP selected_VBN to_TO the_DT exclusion_NN of_IN
+          the_DT other_JJ 12_CD ._. Since_IN our_PRP$ investigation_NN focuses_VBZ on_IN scaling_VBG
+          properties_NNS of_IN the_DT genomic_JJ signature_NN ,_, it_PRP is_VBZ appropriate_JJ to_TO
+          consider_VB sequences_NNS comprised_VBN of_IN many_JJ 50_CD kb_NN contigs_NNS ,_,
+          assuming_VBG that_DT variation_NN between_IN such_JJ contigs_NNS is_VBZ small_JJ
+          compared_VBN to_TO variation_NN between_IN species_NNS ._.
+          The_DT present_JJ sample_NN ,_, which_WDT spans_NNS a_DT wide_JJ range_NN of_IN G_NNP +_NN C_NNP
+          proportion_NN ,_, is_VBZ hoped_VBN diverse_JJ enough_RB that_IN any_DT consistent_JJ
+          trends_NNS and_CC features_NNS in_IN the_DT statistical_JJ picture_NN it_PRP
+          produces_VBZ cannot_NN be_VB easily_RB attributed_VBN to_TO chance_NN ._. A_DT broader_JJR
+          range_NN of_IN sequences_NNS ,_, including_VBG mitochondrial_NN and_CC large_JJ
+          viral_JJ genomes_NNS ,_, has_VBZ been_VBN surveyed_VBN by_IN Karlin_NNP 
+          et_CC al_NN [_NN 3_CD 4_CD 6_CD 8_CD 9_CD 12_CD 17_CD ]_NN using_VBG 50_CD
+          kb_NN and_CC larger_JJR windows_NNS ._. This_DT investigation_NN ,_, which_WDT applies_VBZ
+          similar_JJ methodology_NN to_TO smaller_JJR window_NN sizes_NNS ,_, concerns_VBZ the_DT
+          intra-genomic_JJ homogeneity_NN of_IN dinucleotide_NN relative_JJ
+          abundance_NN ,_, and_CC inter-sequence_JJ distance_NN calculations_NNS are_VBP
+          beyond_IN its_PRP$ scope_NN ._.
+          Our_PRP$ use_NN of_IN nonoverlapping_VBG windows_NNS is_VBZ consistent_JJ with_IN
+          the_DT methodology_NN employed_VBN in_IN prior_JJ studies_VBZ using_VBG 50_CD kb_NN and_CC
+          longer_JJR windows_NNS ._. (_( Overlapping_NNP windows_NNS with_IN a_DT high_JJ
+          percentage_NN overlap_VB would_MD be_VB required_VBN to_TO localize_NN and_CC sort_NN
+          out_RP the_DT significance_NN of_IN nonconforming_VBG segments_NNS that_WDT could_MD
+          possibly_RB reflect_VB a_DT foreign_JJ signature_NN ._. )_) Overlap_NNP would_MD
+          introduce_VB statistical_JJ dependence_NN between_IN successive_JJ
+          windows_NNS and_CC such_JJ dependence_NN could_MD only_RB complicate_VB the_DT
+          analysis_NN of_IN variance_NN within_IN sequences_NNS ._. Window_NNP size_NN was_VBD
+          varied_VBN by_IN factors_NNS of_IN approximately_RB two_CD ,_, the_DT specific_JJ
+          values_NNS being_VBG 50_CD kb_NN ,_, 25_CD kb_NN ,_, 10_CD kb_NN ,_, 5_CD kb_NN ,_, 2_CD kb_NN ,_, 1_CD kb_NN ,_, 500_CD
+          b_SYM ,_, 250_CD b_SYM ,_, and_CC 125_CD b_SYM ._.
+        
+      
+      
+        Results_NNS and_CC discussion_NN
+        
+          Increasing_VBG trend_NN in_IN mean_NN scaled_VBN
+          delta-distance_JJ
+          Table_NNP 2_CD shows_VBZ mean_VB scaled_VBN delta-distance_JJ by_IN sequence_NN (_( 
+          Abbr_NNP )_) and_CC window_NN size_NN (_( 
+          n_NN )_) ._. Scaled_NNP delta-distance_JJ ,_, defined_VBN
+          above_IN as_IN δ_NN *_NN √_NN 
+          n_NN ,_, is_VBZ a_DT statistical_JJ invariant_NN for_IN
+          any_DT benchmark_NN sequence_NN generated_VBN by_IN a_DT Markov_NNP chain_NN
+          exhibiting_VBG the_DT same_JJ signature_NN as_IN the_DT given_VBN sequence_NN ._.
+          Except_IN for_IN the_DT 
+          Borrelia_NNP burgdorferi_NN sequence_NN ,_, the_DT
+          mean_NN scaled_VBN delta-distance_JJ is_VBZ increasing_VBG in_IN window_NN size_NN
+          for_IN every_DT sequence_NN ._. The_DT lone_JJ exception_NN is_VBZ a_DT drop_NN ,_, for_IN 
+          B_NNP ._. burgdorferi_NN ,_, from_IN 3_CD ._. 580_CD to_TO
+          3_CD ._. 553_CD ,_, as_IN window_NN size_NN increases_NNS from_IN 10_CD kb_NN to_TO 25_CD kb_NN ._.
+          The_DT essentially_RB increasing_VBG trend_NN in_IN δ_NN *_NN √_NN 
+          n_NN has_VBZ an_DT obvious_JJ implication_NN for_IN
+          the_DT scalability_NN of_IN standard_JJ binning_VBG levels_NNS used_VBN in_IN
+          classifying_VBG intra-genomic_JJ delta-distance_JJ [_NN 8_CD ]_NN ._. These_DT
+          levels_NNS cannot_NN be_VB re-scaled_JJ by_IN the_DT reciprocal_JJ square_JJ root_NN
+          of_IN window_NN size_NN without_IN admitting_VBG that_IN the_DT profiles_NNS seen_VBN
+          through_IN smaller_JJR windows_NNS are_VBP statistically_RB closer_JJR to_TO the_DT
+          global_JJ signature_NN ._. The_DT profiles_NNS seen_VBN through_IN larger_JJR
+          windows_NNS obviously_RB tend_VBP toward_IN the_DT signature_NN but_CC local_JJ
+          fluctuations_NNS tend_VBP to_TO zero_CD slower_JJR than_IN 1_CD /_NN √_NN 
+          n_NN (_( i_NNP ._. e_SYM ._. ,_, the_DT convergence_NN rate_NN is_VBZ
+          "_'' sub-_NN Markov_NNP "_'' )_) ._.
+        
+        
+          Quasi-stable_NNP hierarchy_NN of_IN mean_NN scaled_VBN
+          delta-distances_JJ
+          The_DT rows_NNS of_IN Table_NNP 2_CD are_VBP grouped_VBN as_IN archaea_NN (_( 
+          Aful_NNP ,_, Mjan_NNP )_) ,_, protist_NN (_( 
+          Pfa_NNP 2_CD ,_, Pfa_NNP 3_LS )_) ,_, yeast_NN (_( 
+          Sc_NNP 11_CD ,_, Sc_NNP 15_CD )_) ,_, plant_NN (_( 
+          Ath_NNP 4_LS )_) ,_, human_JJ (_( 
+          Hs_NNP 22_CD )_) ,_, or_CC bacteria_NNS (_( all_DT 14_CD
+          others_NNS )_) ._. Rows_NNP are_VBP averaged_VBN in_IN groups_NNS and_CC the_DT results_NNS are_VBP
+          plotted_VBD in_IN Figure_NN 1_CD ._. Granted_NNP that_IN the_DT curves_NNS for_IN archaea_NN
+          and_CC bacteria_NNS are_VBP almost_RB indistinguishable_JJ ,_, we_PRP see_VBP that_IN
+          ranking_JJ mean_NN scaled_VBN delta_NN distances_NNS by_IN groups_NNS produces_VBZ
+          about_IN the_DT same_JJ result_NN for_IN every_DT window_NN size_NN ._. The_DT one_CD
+          clear_JJ exception_NN is_VBZ the_DT crossing_VBG of_IN the_DT curves_NNS for_IN plant_NN (_(
+          
+          Arabidopsis_NNP thaliana_NN ,_, chromosome_NN
+          IV_NNP )_) and_CC human_JJ (_( 
+          chromosome_NN XXII_NNP )_) between_IN 
+          n_NN =_SYM 2_CD kb_NN and_CC 
+          n_NN =_SYM 5_CD kb_NN ._. Thus_RB the_DT view_NN through_IN 50_CD
+          kb_NN windows_NNS shows_VBZ that_IN the_DT imprint_NN of_IN the_DT global_JJ signature_NN
+          is_VBZ weaker_JJR in_IN the_DT latter_JJ ;_: but_CC 2_CD kb_NN and_CC smaller_JJR windows_NNS
+          show_VBP relatively_RB clearer_JJR imprints_NNS in_IN the_DT human_JJ
+          chromosome_NN ._.
+        
+        
+          Normality_NNP and_CC homoscedasticity_NN of_IN log_NN delta_NN
+          The_DT increasing_VBG trend_NN in_IN all_PDT the_DT curves_NNS of_IN Figure_NN
+          1_CD suggests_VBZ that_IN local_JJ deviations_NNS from_IN the_DT global_JJ signature_NN
+          are_VBP better_JJR described_VBN by_IN a_DT multiplicative_JJ error_NN process_NN
+          (_( instead_RB of_IN additive_JJ )_) ._. Therefore_RB we_PRP examine_VBP the_DT (_( natural_JJ )_)
+          logarithms_NNS of_IN the_DT delta-distances_JJ in_IN windows_NNS and_CC find_VB
+          that_IN they_PRP are_VBP close_RB to_TO normally_RB distributed_VBN with_IN nearly_RB
+          constant_JJ variance_NN over_IN the_DT range_NN of_IN window_NN size_NN ._. Mean_VB
+          values_NNS of_IN -_: log_VB (_( δ_NN *_NN )_) are_VBP shown_VBN in_IN Table_NNP 3_CD with_IN corresponding_JJ
+          standard_JJ deviations_NNS in_IN Table_NNP 4_CD ._.
+          Each_DT pair_NN of_IN corresponding_JJ cells_NNS in_IN Tables_NNP 3_CD and_CC
+          4_CD defines_VBZ a_DT normal_JJ distribution_NN with_IN mean_NN a_DT variance_NN
+          determined_VBN by_IN a_DT sample_NN of_IN observed_VBD delta-distances_JJ ._. Each_DT
+          sample_NN is_VBZ subjected_VBN to_TO the_DT Kolmogorov-_NNP Smirnov_NNP test_NN of_IN fit_NN
+          to_TO the_DT corresponding_JJ normal_JJ distribution_NN [_NN 22_CD ]_NN ._. (_( We_PRP
+          generate_VBP a_DT random_JJ sample_NN of_IN the_DT same_JJ size_NN as_IN the_DT observed_VBN
+          sample_NN from_IN a_DT normal_JJ distribution_NN with_IN the_DT same_JJ
+          parameters_NNS ._. The_DT Kolmogorov-_NNP Smirnov_NNP two-sample_JJ test_NN is_VBZ
+          then_RB invoked_VBN ._. The_DT null_NN hypothesis_NNS is_VBZ that_IN the_DT observed_VBN
+          and_CC simulated_JJ samples_NNS share_VBP a_DT common_JJ underlying_VBG
+          distribution_NN ._. )_) P-_NNP values_NNS from_IN the_DT test_NN ,_, which_WDT measure_NN
+          support_NN for_IN the_DT null_NN hypothesis_NNS of_IN normality_NN ,_, are_VBP shown_VBN
+          in_IN Table_NNP 5_CD ._. The_DT bottom_JJ row_NN of_IN Table_NNP 5_CD counts_VBZ (_( by_IN window_NN
+          size_NN )_) the_DT number_NN of_IN times_NNS the_DT test_NN accepts_VBZ normality_NN of_IN
+          log_NN (_( δ_NN *_NN )_) at_IN the_DT 5_CD %_NN significance_NN level_NN ._.
+          Delta-distances_NNP tend_VBP to_TO fit_VB the_DT log-normal_JJ
+          distribution_NN better_JJR for_IN window_NN sizes_NNS 1_CD kb_NN and_CC larger_JJR ._.
+          Rejection_NN of_IN log-normality_JJ for_IN the_DT smallest_JJS window_NN sizes_NNS
+          is_VBZ to_TO some_DT extent_NN a_DT consequence_NN of_IN increasing_VBG sample_NN
+          size_NN ._. The_DT apparent_JJ goodness-of-fit_JJ actually_RB gets_VBZ better_JJR
+          as_IN window_NN size_NN decreases_NNS as_IN illustrated_VBN in_IN Figure_NN 2_CD for_IN
+          three_CD indicated_VBD window_NN sizes_NNS on_IN the_DT 
+          Haemophilus_NNP influenzae_NN sequence_NN ._.
+          (_( The_DT sample_NN CDF_NNP approaches_VBZ a_DT smooth_JJ curve_NN as_IN window_NN size_NN
+          declines_NNS and_CC the_DT number_NN of_IN windows_NNS increases_NNS ._. The_DT heavy_NN
+          plotted_VBD points_NNS are_VBP from_IN log-normal_JJ distribution_NN functions_NNS
+          with_IN means_VBZ and_CC variances_NNS of_IN the_DT corresponding_JJ
+          samples_NNS ._. )_)
+        
+        
+          Sub-_NNP Markov_NNP convergence_NN rate_NN of_IN mean_NN log_VB
+          delta_NN
+          Since_IN δ_NN *_NN √_NN 
+          n_NN is_VBZ essentially_RB increasing_VBG in_IN 
+          n_NN ,_, we_PRP infer_NN that_IN the_DT locally_RB
+          computed_JJ dinucleotide_NN relative_JJ abundance_NN converges_NNS to_TO the_DT
+          global_JJ signature_NN more_RBR slowly_RB than_IN the_DT reciprocal_JJ square_JJ
+          root_NN of_IN window_NN size_NN ._. The_DT log-normality_JJ of_IN the_DT
+          intragenomic_JJ delta_NN distance_NN suggests_VBZ a_DT log-linear_JJ model_NN
+          of_IN the_DT form_NN log_NN (_( δ_NN *_NN )_) =_SYM α_NN -_: βlog_NN (_( 
+          n_NN )_) for_IN intercept_NN (_( α_NN )_) and_CC slope_NN (_( β_NN )_)
+          coefficients_NNS that_WDT can_MD be_VB estimated_VBN for_IN each_DT sequence_NN (_( or_CC
+          group_NN )_) by_IN simple_JJ linear_JJ regression_NN ._. Table_NNP 3_CD ,_, columns_NNS 10_CD
+          and_CC 11_CD ,_, give_VBP intercept_NN and_CC slope_NN coefficients_NNS of_IN least_JJS
+          squares_NNS fits_VBZ to_TO the_DT scatter_NN plots_NNS of_IN mean_NN log_VB (_( δ_NN *_NN )_) versus_CC
+          log_VB (_( 
+          n_NN )_) ._. Column_NNP 12_CD gives_VBZ the_DT mean_JJ
+          absolute_JJ residual_JJ (_( MAR_NNP )_) to_TO indicate_VB the_DT closeness_NN of_IN the_DT
+          straight_JJ line_NN fit_NN ._. All_DT estimated_VBN slope_NN coefficients_NNS are_VBP
+          greater_JJR than_IN the_DT benchmark_NN value_NN -_: 1_CD /_NN 2_CD implied_VBN by_IN the_DT
+          Markovian_NNP analogy_NN ._. Figure_NN 3_CD shows_VBZ least_JJS squares_NNS fits_VBZ to_TO
+          log-log_JJ scatter_NN plots_NNS obtained_VBN by_IN grouping_VBG rows_NNS of_IN Table_NNP
+          3_CD (_( in_IN the_DT same_JJ as_IN way_NN described_VBD above_IN for_IN going_VBG from_IN Table_NNP
+          2_CD to_TO Figure_NN 1_LS )_) ._.
+        
+        
+          Weakly_NNP consistent_JJ patterns_NNS of_IN intragenomic_JJ
+          variability_NN in_IN delta-distance_JJ
+          Residual_NNP accumulated_VBN delta-distance_JJ (_( RADD_NNP )_) is_VBZ defined_VBN
+          as_IN window_NN size_NN times_NNS the_DT cumulative_JJ sum_NN of_IN terms_NNS δ_NN *_NN (_( 
+          t_NN )_) -_: mean_VB (_( δ_NN *_NN )_) ,_, 
+          t_NN =_SYM 1_CD ,_, 2_CD ,_, ._. ._. ._. ,_, 
+          T_NN where_WRB 
+          t_NN is_VBZ the_DT position_NN index_NN (_( counted_VBN in_IN
+          windows_NNS from_IN the_DT 5_CD '_POS end_NN )_) and_CC 
+          T_NN is_VBZ the_DT total_JJ number_NN of_IN windows_NNS ._.
+          Here_RB mean_VB (_( δ_NN *_NN )_) is_VBZ just_RB the_DT average_NN of_IN unscaled_JJ
+          delta-distances_JJ in_IN windows_NNS of_IN size_NN 
+          n_NN ._. Since_IN δ_NN *_NN (_( 1_LS )_) +_NN ._. ._. ._. +_NN δ_NN *_NN (_( 
+          T_NN )_) =_SYM 
+          T_NN mean_NN (_( δ_NN *_NN )_) ,_, a_DT plot_NN of_IN RADD_NNP versus_CC 
+          t_NN always_RB returns_VBZ to_TO zero_CD ._. The_DT RADD_NNP
+          plot_NN will_MD superficially_RB resemble_VB random_JJ walks_VBZ obtained_VBN by_IN
+          integrating_VBG counts_NNS of_IN purine_NN minus_CC pyrimidine_NN bases_NNS ._. Such_JJ
+          "_'' walking_VBG plots_NNS "_'' are_VBP useful_JJ in_IN depicting_VBG long_JJ range_NN
+          compositional_JJ biases_NNS concomitant_NN to_TO replication_NN [_NN 7_CD ]_NN and_CC
+          their_PRP$ self-similarity_JJ with_IN respect_NN to_TO re-scaling_JJ has_VBZ been_VBN
+          said_VBD to_TO instantiate_NN the_DT "_'' fractal_NN geometry_NN of_IN nature_NN [_NN 23_CD
+          24_CD ]_NN ._. "_''
+          Here_RB we_PRP use_VBP the_DT RADD_NNP plot_NN to_TO examine_VB how_WRB well_RB
+          delta-distances_JJ in_IN smaller_JJR windows_NNS are_VBP smoothed_VBN by_IN
+          corresponding_JJ larger_JJR windows_NNS ._. For_IN example_NN ,_, take_VBP a_DT single_JJ
+          50_CD kb_NN window_NN on_IN the_DT 
+          M_NNP ._. genitalium_NN sequence_NN ,_, compute_VB its_PRP$
+          delta-distance_JJ from_IN the_DT global_JJ signature_NN ,_, then_RB divide_VBP it_PRP
+          into_IN 50_CD contiguous_JJ 1_CD kb_NN windows_NNS and_CC repeat_VB the_DT
+          calculation_NN for_IN each_DT piece_NN ._. Do_VBP the_DT 50_CD delta-distances_JJ
+          exhibit_NN random_JJ fluctuations_NNS about_IN the_DT level_NN indicated_VBN by_IN
+          the_DT single_JJ larger_JJR window_NN ?_. If_IN so_RB ,_, the_DT patterns_NNS would_MD be_VB
+          judged_VBN consistent_JJ ,_, and_CC that_DT result_NN would_MD typify_NN a_DT
+          stationary_JJ process_NN ._. Such_JJ consistency_NN is_VBZ only_RB weakly_RB
+          evidenced_VBN In_IN Figure_NN 4_CD ,_, however_RB ,_, as_IN larger_JJR scales_NNS give_VBP
+          rise_NN to_TO emergent_NN trends_NNS ._. The_DT same_JJ effect_NN is_VBZ seen_VBN in_IN
+          Figure_NN 5_CD where_WRB the_DT 125_CD b_SYM and_CC 1_CD kb_NN traces_NNS track_VBP each_DT other_JJ
+          closely_RB but_CC diverge_VB from_IN the_DT other_JJ traces_NNS in_IN the_DT central_JJ
+          region_NN ._.
+        
+      
+      
+        Conclusions_NNP
+        The_DT imprint_NN of_IN the_DT global_JJ signature_NN is_VBZ locally_RB pervasive_JJ
+        on_IN all_DT scales_NNS considered_VBN in_IN the_DT sequences_NNS that_WDT were_VBD
+        scanned_JJ ._. No_DT lower_JJR bound_JJ can_MD yet_RB be_VB placed_VBN on_IN the_DT local_JJ
+        scale_NN on_IN which_WDT the_DT global_JJ signature_NN is_VBZ reflected_VBN ._. The_DT
+        inter-genomic_JJ hierarchy_NN of_IN mean_NN intra-genomic_JJ
+        delta-distances_JJ is_VBZ essentially_RB preserved_VBN across_IN the_DT range_NN
+        of_IN window_NN sizes_NNS ._. Intra-genomic_NNP delta-distance_JJ is_VBZ
+        approximately_RB log-normally_JJ distributed_VBN (_( in_IN windows_NNS down_IN to_TO
+        1_CD kb_NN )_) and_CC the_DT variance_NN of_IN log-delta_JJ is_VBZ fairly_RB uniform_NN
+        across_IN the_DT set_NN of_IN sequences_NNS ._. Delta-distance_NNP tends_VBZ to_TO zero_CD
+        with_IN increasing_VBG window_NN size_NN but_CC the_DT rate_NN of_IN this_DT
+        convergence_NN is_VBZ significantly_RB slower_JJR than_IN for_IN simple_JJ random_JJ
+        processes_NNS ._.
+      
+      
+        Methods_NNP
+        The_DT sequences_NNS listed_VBN in_IN Table_NNP 1_CD were_VBD downloaded_JJ from_IN the_DT
+        (_( National_NNP Center_NNP for_IN Biotechnology_NNP Information_NNP )_) GenBank_NNP [_NN
+        25_CD ]_NN in_IN FASTA_NNP format_NN and_CC saved_VBN as_IN plain_JJ text_NN files_NNS ._. The_DT
+        last_JJ two_CD columns_NNS of_IN Table_NNP 1_CD provide_VB GenBank_NNP accession_NN
+        numbers_NNS and_CC approximate_JJ dates_NNS of_IN the_DT revisions_NNS used_VBN in_IN this_DT
+        analysis_NN ._. The_DT sequences_NNS ,_, as_IN text_NN files_NNS ,_, were_VBD processed_VBN by_IN
+        routines_NNS written_VBN in_IN SPlus_NNP ,_, Version_NNP 4_CD ._. 5_CD ._. The_DT texts_NNS were_VBD read_VBN
+        in_IN blocks_NNS (_( contigs_NNS )_) of_IN 50_CD kb_NN (_( when_WRB computing_NN
+        delta-distances_JJ in_IN 50_CD kb_NN and_CC 25_CD kb_NN windows_NNS )_) or_CC 20_CD kb_NN (_( for_IN
+        smaller_JJR windows_NNS )_) ._. Counts_NNP of_IN overlapping_VBG base_NN steps_NNS in_IN
+        windows_NNS were_VBD computed_JJ with_IN the_DT last_JJ base_NN of_IN one_CD window_NN
+        serving_VBG as_IN the_DT first_JJ base_NN of_IN the_DT next_JJ ._. Thus_RB the_DT number_NN of_IN
+        base_NN steps_NNS in_IN a_DT window_NN is_VBZ equal_JJ to_TO the_DT number_NN of_IN bases_NNS (_( not_RB
+        one_CD less_JJR )_) ._. However_RB ,_, one_CD base_NN step_NN was_VBD uncounted_JJ at_IN the_DT
+        start_NN of_IN every_DT block_NN ._. Incomplete_NNP windows_NNS in_IN the_DT last_JJ block_NN
+        were_VBD discarded_VBN and_CC blocks_NNS past_JJ end-of-file_JJ were_VBD ignored_VBN ._.
+        Sometimes_RB complete_JJ blocks_NNS near_IN end-of-file_JJ were_VBD omitted_VBN ._.
+        With_IN the_DT exception_NN of_IN 
+        Arabidopsis_NNP thaliana_NN ,_, chromosome_NN IV_NNP ,_,
+        the_DT total_JJ sequence_NN lengths_NNS in_IN kilobases_NNS are_VBP listed_VBN in_IN the_DT
+        fourth_JJ column_NN (_( 
+        kb_NN )_) of_IN Table_NNP 1_CD ._. All_DT corresponding_JJ
+        sample_NN lengths_NNS are_VBP at_IN least_JJS 96_CD %_NN of_IN total_JJ length_NN ,_, and_CC most_JJS
+        are_VBP close_RB to_TO 99_CD %_NN ,_, when_WRB texts_NNS were_VBD read_VBN in_IN 20_CD kb_NN blocks_NNS ._. For_IN
+        
+        A_DT ._. thaliana_NN ,_, however_RB ,_, the_DT global_JJ
+        signature_NN was_VBD computed_JJ from_IN a_DT scan_VB of_IN the_DT 99_CD %_NN complete_JJ
+        sequence_NN ;_: but_CC local_JJ delta-distances_JJ from_IN the_DT global_JJ
+        signature_NN were_VBD computed_JJ only_RB for_IN the_DT first_JJ 50_CD %_NN of_IN the_DT
+        complete_JJ sequence_NN due_JJ to_TO computing_NN difficulties_NNS ._. The_DT 8750_CD
+        kb_NN length_NN for_IN this_DT sequence_NN in_IN Table_NNP 1_CD is_VBZ therefore_RB about_IN
+        half_PDT the_DT total_JJ bases_NNS in_IN the_DT chromosome_NN ._.
+      
+      
+        Authors_NNP '_'' contributions_NNS
+        RHB_NNP conceived_VBD the_DT study_NN and_CC carried_VBD out_RP the_DT
+        computations_NNS ._. RWJ_NNP participated_VBD in_IN experimental_JJ design_NN and_CC
+        data_NNS analysis_NN ._. Both_DT authors_NNS read_VBP and_CC approved_VBD the_DT final_JJ
+        manuscript_NN ._.
+      
+      
+        List_NN of_IN abbreviations_NNS
+        CDF_NNP :_: Cumulative_NNP Distribution_NN Function_NNP
+        MAR_NNP :_: Mean_VB Absolute_JJ Residual_NNP
+        RADD_NNP :_: Residual_NNP Accumulated_NNP Delta-_NNP Distance_NNP
+        Sequence_NNP abbreviations_NNS are_VBP as_IN shown_VBN in_IN Table_NNP 1_CD ._.
+      
+    
+  

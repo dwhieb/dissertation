@@ -1,0 +1,970 @@
+
+  
+    
+      
+        Background_NNP
+        
+          Linear_NNP normalization_NN methods_NNS
+          Linear_NNP methods_NNS are_VBP the_DT predominant_NN means_NNS of_IN microarray_NN
+          normalization_NN ._. Scaling_NNP ,_, the_DT simplest_JJS linear_JJ approach_NN ,_,
+          assumes_VBZ a_DT linear_JJ relationship_NN passing_VBG through_IN the_DT origin_NN ._.
+          Forcing_NNP array_NN distributions_NNS to_TO have_VB the_DT same_JJ central_JJ
+          tendency_NN (_( arithmetic_NN mean_NN ,_, geometric_JJ mean_NN ,_, median_JJ )_) can_MD be_VB
+          accomplished_VBN by_IN a_DT scaling_VBG factor_NN and_CC has_VBZ been_VBN the_DT method_NN
+          chosen_VBN by_IN Affymetrix_NNP and_CC others_NNS [_NN 5_CD ]_NN ._. Linear_NNP regression_NN [_NN
+          6_CD ,_, 7_CD ]_NN and_CC general_JJ linear_JJ modeling_NN such_JJ as_IN ANOVA_NNP [_NN 8_CD ,_, 9_CD ]_NN
+          provide_VB offsets_NNS ,_, scaling_VBG factors_NNS and_CC other_JJ parameters_NNS ,_,
+          but_CC again_RB assume_VB linear_JJ relationships_NNS and_CC properties_NNS of_IN
+          the_DT data_NNS or_CC log_VB data_NNS distributions_NNS ,_, such_JJ as_IN normality_NN ,_,
+          that_WDT are_VBP not_RB always_RB true_JJ ._. In_IN all_DT cases_NNS ,_, linear_JJ approaches_NNS
+          will_MD fall_VB short_JJ when_WRB the_DT signal_NN bias_NN is_VBZ not_RB linear_JJ ._.
+          Approaches_NNP for_IN two-channel_JJ cDNA_NN arrays_NNS apply_VBP scaling_VBG
+          in_IN order_NN to_TO zero_CD a_DT central_JJ tendency_NN of_IN the_DT log_NN expression_NN
+          ratios_NNS [_NN 10_CD ,_, 11_CD ,_, 12_CD ]_NN ._. These_DT approaches_NNS may_MD also_RB be_VB
+          applied_VBN to_TO pairs_NNS of_IN single-channel_JJ oligonucleotide_NN
+          arrays_NNS ._. Applying_VBG an_DT additive_JJ offset_VBN to_TO the_DT log_NN data_NN is_VBZ
+          equivalent_JJ to_TO a_DT multiplicative_JJ scaling_NN of_IN one_CD channel_NN
+          before_IN taking_VBG the_DT log_NN ._. Moving_VBG the_DT median_NN or_CC mode_NN of_IN the_DT
+          log-ratios_JJ to_TO zero_CD makes_VBZ the_DT assumption_NN that_IN the_DT majority_NN
+          of_IN genes_NNS are_VBP not_RB differentially_RB regulated_VBN ._. Additional_JJ
+          steps_NNS may_MD scale_VB the_DT log-ratios_JJ by_IN a_DT measure_NN of_IN dispersion_NN
+          such_JJ as_IN the_DT standard_JJ deviation_NN or_CC median_JJ absolute_JJ
+          deviation_NN (_( MAD_NNP )_) ,_, possibly_RB grouping_VBG spots_NNS according_VBG to_TO the_DT
+          printing-tip_JJ ._. This_DT is_VBZ equivalent_JJ to_TO raising_VBG both_DT channels_NNS
+          to_TO a_DT power_NN before_IN taking_VBG the_DT log_NN and_CC is_VBZ therefore_RB a_DT
+          non-linear_JJ transformation_NN of_IN the_DT original_JJ signals_NNS though_IN
+          giving_VBG rise_NN to_TO a_DT linear_JJ transformation_NN of_IN the_DT
+          log-signals_JJ ._. Unfortunately_RB ,_, systematic_JJ biases_NNS are_VBP not_RB
+          always_RB linear_JJ in_IN log-space_JJ either_RB ._.
+        
+        
+          Non-linear_NNP normalization_NN methods_NNS
+          Non-linear_NNP normalization_NN methods_NNS have_VBP been_VBN shown_VBN to_TO
+          control_VB signal-dependent_JJ non-linear_JJ bias_NN between_IN Cy_NNP 5_CD and_CC
+          Cy_NNP 3_CD channels_NNS of_IN cDNA_NN arrays_NNS [_NN 11_CD ,_, 13_CD ]_NN ._. The_DT promising_JJ
+          approach_NN of_IN Yang_NNP 
+          et_CC al_NN ._. [_NN 11_CD ]_NN uses_VBZ lowess_NNS local_JJ
+          regression_NN [_NN 14_CD ]_NN directly_RB to_TO paired_VBN data_NNS as_IN a_DT function_NN of_IN
+          signal_NN intensity_NN ._. For_IN the_DT cDNA_NN data_NN used_VBN by_IN Yang_NNP 
+          et_CC al_NN ._. and_CC Tseng_NNP 
+          et_CC al_NN ._. [_NN 11_CD ,_, 13_CD ]_NN ,_, lowess_NNS was_VBD used_VBN
+          for_IN local_JJ linear_JJ regression_NN of_IN log_NN (_( 
+          R_NN )_) -_: log_VB (_( 
+          G_NNP )_) versus_CC 1_CD /_NN 2_CD (_( log_VB (_( 
+          R_NN )_) +_NN log_NN (_( 
+          G_NNP )_) )_) where_WRB 
+          R_NN ,_, and_CC 
+          G_NNP are_VBP the_DT intensities_NNS of_IN the_DT Cy_NNP 5_CD
+          and_CC Cy_NNP 3_CD channels_NNS respectively_RB ._. Rather_RB than_IN regressing_VBG
+          log_NN (_( 
+          R_NN )_) directly_RB to_TO log_VB (_( 
+          G_NNP )_) ,_, these_DT approaches_NNS correctly_RB
+          attribute_VBP uncertainty_NN to_TO both_DT channels_NNS by_IN regressing_VBG to_TO
+          the_DT geometric_JJ mean_NN of_IN the_DT intensity_NN ._. Even_RB so_RB ,_, standard_JJ
+          regression_NN techniques_NNS can_MD be_VB sensitive_JJ to_TO outliers_NNS ,_, which_WDT
+          are_VBP likely_JJ to_TO occur_VB in_IN microarray_NN data_NNS ._. Robust_NNP regression_NN
+          techniques_NNS ,_, as_IN found_VBN in_IN the_DT R_NN version_NN of_IN lowess_NNS [_NN 15_CD ]_NN ,_,
+          are_VBP relatively_RB insensitive_JJ to_TO outliers_NNS ._. Robust_NNP regression_NN
+          techniques_NNS incur_VBP significant_JJ computational_NN costs_NNS and_CC ,_, in_IN
+          practice_NN ,_, a_DT small_JJ random_JJ sample_NN of_IN data_NNS must_MD be_VB used_VBN for_IN
+          today_NN 's_POS oligonucleotide_NN arrays_NNS ._. The_DT approach_NN taken_VBN by_IN
+          Tseng_NNP 
+          et_CC al_NN ._. [_NN 13_CD ]_NN and_CC Schadt_NNP 
+          et_CC al_NN ._. [_NN 4_CD ]_NN addresses_VBZ the_DT outlier_NN
+          issue_NN by_IN selecting_VBG non-regulated_JJ features_NNS based_VBN on_IN a_DT rank_NN
+          invariant_NN criterion_NN where_WRB all_DT signals_NNS from_IN both_DT arrays_NNS
+          are_VBP sorted_VBN and_CC signals_NNS with_IN ranks_NNS deviating_VBG by_IN less_JJR than_IN
+          a_DT threshold_NN are_NN included_VBN ._. Normalization_NNP of_IN replicate_VB
+          arrays_NNS raises_VBZ the_DT question_NN of_IN which_WDT signals_NNS should_MD be_VB
+          excluded_VBN when_WRB none_NN of_IN the_DT genes_NNS are_VBP differentially_RB
+          expressed_VBN ._. In_IN the_DT method_NN we_PRP will_MD describe_VB ,_, no_DT data_NNS need_VBP
+          to_TO be_VB excluded_VBN for_IN curve_NN fitting_JJ and_CC it_PRP is_VBZ therefore_RB
+          global_JJ and_CC unbiased_JJ by_IN subset_NN selection_NN ._.
+        
+        
+          Signal-dependent_NNP non-linear_JJ normalization_NN
+          The_DT goal_NN of_IN signal-dependent_JJ normalization_NN is_VBZ to_TO make_VB
+          signal_NN distributions_NNS comparable_JJ across_IN the_DT intensity_NN
+          range_NN ._. This_DT suggests_VBZ that_IN the_DT expectation_NN for_IN the_DT
+          difference_NN of_IN paired_VBN measurements_NNS ,_, or_CC log-ratios_JJ ,_, should_MD
+          not_RB significantly_RB deviate_NN from_IN zero_CD anywhere_RB over_IN the_DT
+          intensity_NN range_NN ._. Again_RB ,_, this_DT is_VBZ the_DT motivation_NN for_IN
+          centering_VBG Cy_NNP 5_CD to_TO Cy_NNP 3_CD log-ratio_JJ distributions_NNS of_IN cDNA_NN
+          arrays_NNS ,_, but_CC now_RB we_PRP consider_VBP multiple_JJ arrays_NNS ._. If_IN the_DT
+          log-ratio_JJ distributions_NNS between_IN arrays_NNS or_CC color_NN channels_NNS
+          are_VBP to_TO be_VB centered_VBN across_IN the_DT intensity_NN range_NN ,_, then_RB the_DT
+          resulting_VBG correlation_NN will_MD be_VB linear_JJ with_IN intercept_NN zero_CD
+          and_CC slope_NN one_CD ._. The_DT resulting_VBG data_NN correlation_NN will_MD retain_VB
+          stochastic_JJ noise_NN and_CC ,_, more_RBR important_JJ ,_, the_DT biological_JJ
+          variation_NN ._. This_DT linear_JJ data_NN correlation_NN presupposes_NNS that_IN
+          the_DT distributions_NNS of_IN signals_NNS be_VB roughly_RB the_DT same_JJ ._. Our_PRP$
+          approach_NN seeks_VBZ to_TO transform_VB the_DT distribution_NN of_IN one_CD array_NN
+          to_TO the_DT distribution_NN of_IN a_DT target_NN array_NN in_IN order_NN to_TO achieve_VB
+          this_DT goal_NN ._. If_IN the_DT target_NN array_NN is_VBZ chosen_VBN to_TO be_VB the_DT
+          geometric_JJ mean_NN probe_NN intensities_NNS over_IN the_DT arrays_NNS in_IN an_DT
+          experiment_NN ,_, then_RB each_DT array_NN distribution_NN is_VBZ fitted_JJ to_TO an_DT
+          empirical_JJ estimate_NN of_IN the_DT signal_NN distribution_NN for_IN the_DT
+          experiment_NN ._. In_IN principle_NN ,_, any_DT measure_NN of_IN central_JJ tendency_NN
+          may_MD be_VB used_VBN ,_, although_IN the_DT geometric_JJ mean_NN is_VBZ a_DT natural_JJ
+          extension_NN of_IN existing_VBG cDNA_NN methodologies_NNS ._. Alternatively_RB ,_,
+          each_DT array_NN can_MD be_VB fitted_JJ to_TO the_DT theoretical_JJ quantiles_NNS of_IN
+          a_DT known_VBN distribution_NN (_( for_IN example_NN ,_, the_DT log-normal_JJ
+          distribution_NN )_) ._. This_DT approach_NN was_VBD not_RB chosen_VBN here_RB as_IN the_DT
+          observed_VBN distributions_NNS did_VBD not_RB fit_VB a_DT theoretical_JJ model_NN
+          and_CC contained_VBD well_RB determined_VBN ,_, systematic_JJ features_NNS ._. In_IN
+          this_DT work_NN we_PRP seek_VBP only_RB to_TO make_VB the_DT distributions_NNS similar_JJ
+          to_TO each_DT other_JJ whatever_WDT those_DT distributions_NNS may_MD be_VB ._.
+          For_IN Affymetrix_NNP data_NNS ,_, all_PDT the_DT arrays_NNS of_IN an_DT experiment_NN
+          can_MD be_VB used_VBN to_TO define_VB a_DT target_NN array_NN and_CC thus_RB a_DT target_NN
+          distribution_NN that_IN all_DT arrays_NNS are_VBP normalized_JJ to_TO ._. As_IN a_DT
+          result_NN of_IN the_DT dye_NN effects_NNS ,_, data_NNS from_IN two-channel_JJ cDNA_NN
+          arrays_NNS display_VBP significantly_RB different_JJ Cy_NNP 3_CD and_CC Cy_NNP 5_CD signal_NN
+          distributions_NNS ,_, suggesting_VBG that_WDT means_VBZ calculated_VBN over_IN both_DT
+          signal_NN types_NNS may_MD not_RB make_VB sense_NN for_IN the_DT definition_NN of_IN a_DT
+          target_NN distribution_NN ._. Instead_RB ,_, either_CC the_DT geometric_JJ mean_NN
+          of_IN the_DT Cy_NNP 3_CD or_CC Cy_NNP 5_CD channels_NNS are_VBP used_VBN ,_, and_CC all_DT channels_NNS
+          from_IN all_DT arrays_NNS are_VBP normalized_JJ to_TO a_DT single_JJ Cy_NNP 3_CD or_CC Cy_NNP 5_CD
+          distribution_NN ._. This_DT accomplishes_VBZ both_DT Cy_NNP 3_CD to_TO Cy_NNP 5_CD
+          normalization_NN within_IN and_CC between_IN arrays_NNS ._. The_DT approach_NN
+          described_VBD here_RB can_MD be_VB used_VBN to_TO normalize_VB the_DT Cy_NNP 3_CD channel_NN
+          to_TO the_DT Cy_NNP 5_CD channel_NN within_IN a_DT single_JJ array_NN or_CC may_MD also_RB be_VB
+          applied_VBN to_TO pairs_NNS of_IN Affymetrix_NNP arrays_NNS ._.
+        
+        
+          Qspline_NNP normalization_NN
+          The_DT normalization_NN method_NN described_VBD in_IN this_DT work_NN ,_,
+          qspline_NN ,_, uses_VBZ quantiles_NNS from_IN array_NN signals_NNS and_CC target_NN
+          signals_NNS ,_, 
+          x_SYM and_CC 
+          v_NN ,_, to_TO fit_VB smoothing_VBG B-_NNP splines_NNS ._. The_DT
+          splines_NNS are_VBP then_RB used_VBN as_IN signal-dependent_JJ normalization_NN
+          functions_NNS on_IN the_DT signals_NNS of_IN 
+          x_SYM ._. The_DT target_NN signals_NNS can_MD be_VB from_IN
+          another_DT array_NN or_CC could_MD be_VB means_VBZ calculated_VBN from_IN multiple_JJ
+          arrays_NNS as_RB just_RB described_VBD ._. Splines_NNP are_VBP a_DT natural_JJ and_CC
+          robust_JJ choice_NN in_IN that_IN they_PRP are_VBP capable_JJ of_IN representing_VBG
+          almost_RB any_DT smooth_JJ relationship_NN and_CC will_MD also_RB work_VB well_RB if_IN
+          data_NNS is_VBZ linearly_RB related_VBN ._. Using_VBG quantile_NN information_NN
+          provides_VBZ a_DT much_RB easier_RBR fitting_JJ problem_NN and_CC avoids_VBZ
+          directly_RB fitting_JJ the_DT pairwise_NN data_NN which_WDT often_RB requires_VBZ
+          robust_JJ regression_NN techniques_NNS ._. An_DT example_NN oligonucleotide_NN
+          array_NN signal_NN distribution_NN and_CC quantile_NN comparison_NN can_MD be_VB
+          seen_VBN in_IN Figure_NN 1_CD ._.
+        
+        
+          Spatial_NNP normalization_NN
+          Spatial_NNP heterogeneity_NN of_IN signal_NN can_MD be_VB observed_VBN in_IN
+          microarray_NN data_NNS and_CC in_IN particular_JJ in_IN cDNA_NN microarray_NN
+          data_NNS ._. Variability_NNP in_IN Cy_NNP 3_CD /_NN Cy_NNP 5_CD ratios_NNS has_VBZ been_VBN shown_VBN to_TO be_VB
+          generated_VBN ,_, in_IN part_NN ,_, by_IN the_DT specific_JJ print-tip_JJ used_VBN during_IN
+          the_DT spotting_VBG of_IN the_DT cDNA_NN probes_NNS [_NN 11_CD ]_NN ._. In_IN fact_NN ,_, an_DT F-_NNP test_NN
+          found_VBD that_IN at_IN least_JJS one_CD print-tip_JJ was_VBD very_RB significantly_RB
+          correlated_JJ to_TO log-ratio_JJ (_( log_VB (_( 
+          p_NN -_: value_NN )_) less_JJR than_IN -_: 20_CD )_) in_IN all_DT
+          cDNA_NN arrays_NNS used_VBN in_IN this_DT study_NN ._. Spatial_NNP effects_NNS are_VBP not_RB
+          only_RB caused_VBN by_IN the_DT printing_NN device_NN but_CC may_MD also_RB be_VB
+          related_VBN to_TO ;_: temperature_NN or_CC humidity_NN during_IN the_DT time_NN of_IN
+          printing_NN ,_, the_DT batch_NN of_IN cDNA_NN represented_VBN by_IN a_DT specific_JJ
+          microtiter_NN plate_NN ,_, reagent_NN flow_NN during_IN the_DT washing_VBG
+          procedure_NN after_IN hybridization_NN ,_, or_CC from_IN uneven_JJ or_CC tilted_JJ
+          glass_NN surfaces_VBZ during_IN scanning_VBG ._. Microtiter_NNP plate_NN effects_NNS
+          can_MD appear_VB as_IN vertical_JJ or_CC horizontal_NN bands_NNS across_IN the_DT
+          array_NN whereas_IN other_JJ effects_NNS may_MD generate_VB smooth_JJ gradients_NNS
+          of_IN arbitrary_JJ orientation_NN ._. Signal_NNP gradients_NNS can_MD be_VB
+          normalized_JJ by_IN subtracting_VBG local_JJ signal_NN estimates_NNS (_( log_VB
+          intensities_NNS or_CC log-ratios_JJ )_) and_CC a_DT preliminary_JJ approach_NN for_IN
+          this_DT was_VBD tested_VBN ._.
+          These_DT effects_NNS ,_, though_IN not_RB as_RB significant_JJ as_IN the_DT Cy_NNP 3_CD
+          Cy_NNP 5_CD bias_NN ,_, can_MD be_VB quite_RB pronounced_VBN ,_, as_IN will_MD be_VB observed_VBN in_IN
+          the_DT 
+          A_DT ._. thaliana_NN microarrays_NNS ._.
+          Older-generation_NNP Affymetrix_NNP arrays_NNS like_IN those_DT used_VBN in_IN
+          this_DT study_NN were_VBD subject_JJ to_TO local_JJ signal_NN biases_NNS due_JJ to_TO the_DT
+          adjacent_JJ placement_NN of_IN probes_NNS for_IN each_DT gene-probe_JJ set_VBN ._.
+          This_DT bias_NN has_VBZ since_IN been_VBN corrected_VBN in_IN more_RBR recent_JJ
+          oligonucleotide_NN array_NN designs_NNS ._. Other_JJ spatial_NN biases_NNS can_MD
+          be_VB observed_VBN for_IN Affymetrix_NNP arrays_NNS and_CC are_VBP best_JJS described_VBN
+          as_IN smooth_JJ gradients_NNS ._.
+        
+        
+          Normalization_NNP comparison_NN
+          Log-intensity_NNP scaling_VBG ,_, lowess_NNS and_CC invariant_NN set_VBD
+          normalization_NN approaches_NNS were_VBD compared_VBN to_TO qspline_NN for_IN the_DT
+          reduction_NN of_IN variation_NN between_IN replicate_VB arrays_NNS in_IN
+          oligonucleotide_NN and_CC cDNA_NN array_NN experiments_NNS ._. Six_CD
+          microarrays_NNS were_VBD used_VBN for_IN each_DT of_IN the_DT HIV_NNP and_CC 
+          B_NNP ._. subtilis_NNS studies_NNS ._. Three_CD control_NN
+          replicate_VB and_CC three_CD treatment_NN replicate_VB single-channel_JJ
+          arrays_NNS were_VBD used_VBN in_IN the_DT oligonucleotide_NN array_NN study_NN of_IN
+          HIV-infected_NNP T-_NNP cells_NNS ._. Six_CD replicate_VB two-channel_JJ cDNA_NN
+          arrays_NNS provided_VBD six_CD control_NN and_CC six_CD treatment_NN channels_NNS
+          for_IN each_DT 
+          B_NNP ._. subtilis_NNS study_VBP ._. In_IN addition_NN ,_, a_DT
+          pair_NN of_IN dye-swapped_JJ replicate_VB arrays_NNS from_IN 
+          A_DT ._. thaliana_NN were_VBD also_RB normalized_JJ to_TO
+          investigate_VB the_DT various_JJ normalizations_NNS methods_NNS versus_CC
+          dye-swap_JJ normalization_NN ._.
+          The_DT lowess_NNS normalization_NN method_NN for_IN cDNA_NN array_NN data_NNS
+          was_VBD taken_VBN from_IN the_DT Rarray_NNP module_NN of_IN the_DT sma_NN package_NN
+          (_( version_NN 0_CD ._. 5_CD ._. 8_CD )_) [_NN 16_CD ]_NN and_CC was_VBD used_VBN for_IN the_DT normalization_NN
+          of_IN all_DT cDNA_NN microarray_NN data_NNS sets_NNS ._. For_IN oligonucleotide_NN
+          array_NN data_NNS ,_, a_DT lowess_NNS method_NN was_VBD adapted_VBN from_IN Raffy_NNP module_NN
+          of_IN the_DT sma_NN package_NN ._. Instead_RB of_IN averaging_VBG all_DT pairwise_NN
+          array_NN regressions_NNS on_IN a_DT single_JJ random_JJ sample_NN of_IN feature_NN
+          pairs_NNS ,_, iterative_JJ regressions_NNS between_IN an_DT array_NN and_CC the_DT
+          target_NN array_NN were_VBD averaged_VBN using_VBG a_DT new_JJ random_JJ sample_NN for_IN
+          each_DT iteration_NN ._. The_DT former_JJ method_NN tended_VBD to_TO significantly_RB
+          under-normalize_JJ whereas_IN the_DT adapted_VBN method_NN used_VBN
+          essentially_RB the_DT same_JJ procedure_NN but_CC performed_VBN
+          significantly_RB better_RB ._.
+          In_IN addition_NN to_TO print-tip_JJ normalization_NN for_IN cDNA_NN
+          arrays_NNS ,_, a_DT spatial_NN gradient_NN normalization_NN was_VBD devised_VBN
+          using_VBG a_DT two-dimensional_JJ Gaussian_NNP function_NN ._. This_DT function_NN
+          was_VBD used_VBN to_TO estimate_VB local_JJ background_NN bias_NN over_IN a_DT window_NN
+          of_IN probes_NNS for_IN the_DT log-ratios_JJ of_IN cDNA_NN and_CC oligonucleotide_NN
+          array_NN data_NNS ._. Log-ratios_NNP for_IN oligonucleotide_NN array_NN data_NNS
+          were_VBD calculated_VBN versus_CC the_DT geometric_JJ mean_NN of_IN each_DT probe_NN
+          across_IN arrays_NNS ,_, as_IN will_MD be_VB seen_VBN throughout_IN this_DT work_NN ._.
+          Lastly_NNP ,_, although_IN it_PRP is_VBZ only_RB a_DT matter_NN of_IN preference_NN ,_, we_PRP
+          used_VBD log_VB base_NN 2_CD throughout_IN ._.
+        
+      
+      
+        Results_NNS
+        
+          Global_JJ assessment_NN of_IN normalization_NN
+          The_DT assessment_NN of_IN normalizations_NNS was_VBD first_RB observed_VBD
+          for_IN global_JJ features_NNS such_JJ as_IN absolute_JJ signal_NN distribution_NN
+          and_CC relative_JJ signal_NN distribution_NN ._. Absolute_JJ signals_NNS result_VBP
+          from_IN the_DT image_NN analysis_NN and_CC are_VBP the_DT values_NNS extracted_VBN from_IN
+          the_DT pixel_NN intensities_NNS of_IN each_DT spot_NN ,_, whereas_IN relative_JJ
+          signals_NNS are_VBP log-ratios_JJ of_IN absolute_JJ signals_NNS versus_CC
+          measured_VBN or_CC calculated_VBN background_NN probe_NN signals_NNS ._. The_DT
+          absolute_JJ signal_NN distributions_NNS of_IN the_DT six_CD oligonucleotide_NN
+          arrays_NNS can_MD be_VB seen_VBN in_IN Figure_NN 2_CD for_IN the_DT HIV_NNP (_( perfect-match_JJ
+          (_( PM_NNP )_) distributions_NNS )_) and_CC 
+          glnA_NN (_( Cy_NNP 3_CD 
+          G_NNP and_CC Cy_NNP 5_CD 
+          R_NN distributions_NNS )_) experiments_NNS both_DT
+          before_IN and_CC after_IN normalization_NN ._. Distributions_NNP for_IN
+          replicate_VB arrays_NNS or_CC replicated_VBN Cy_NNP 3_CD ,_, Cy_NNP 5_CD channels_NNS are_VBP
+          shown_VBN in_IN the_DT same_JJ color_NN ._.
+          Figure_NN 2_CD shows_VBZ that_IN signal-distribution_JJ inconsistencies_NNS
+          between_IN replicate_VB oligonucleotide_NN arrays_NNS are_VBP comparable_JJ
+          to_TO those_DT between_IN treatments_NNS ._. For_IN this_DT example_NN ,_,
+          distribution_NN discrepancies_NNS appear_VBP minor_JJ though_IN we_PRP have_VBP
+          encountered_VBN Affymetrix_NNP experiments_NNS showing_VBG dramatically_RB
+          disparate_JJ distribution_NN profiles_NNS ._. Scaling_NNP by_IN the_DT trimmed_VBN
+          mean_NN of_IN PM-mismatch_NNP (_( MM_NNP )_) ,_, as_IN done_VBN by_IN the_DT Affymetrix_NNP
+          GeneChip_NNP software_NN (_( MAS_NNP 4_CD ._. 0_CD )_) ,_, was_VBD observed_VBN to_TO separate_VB PM_NNP
+          intensity_NN distributions_NNS more_JJR than_IN is_VBZ observed_VBN for_IN
+          unnormalized_JJ data_NNS and_CC was_VBD not_RB considered_VBN in_IN this_DT study_NN ._.
+          Newer_NNP versions_NNS of_IN the_DT Affymetrix_NNP software_NN (_( MAS_NNP 5_CD ._. 0_CD )_)
+          incorporate_VB additional_JJ log-intensity_JJ scaling_NN routines_NNS
+          that_WDT improve_VBP normalization_NN performance_NN but_CC were_VBD not_RB
+          investigated_VBN in_IN this_DT study_NN ._. Log-intensity_NNP scaling_VBG used_VBN in_IN
+          this_DT comparison_NN also_RB did_VBD not_RB make_VB signal_NN distributions_NNS
+          more_RBR comparable_JJ than_IN the_DT unnormalized_JJ case_NN ._. Both_DT lowess_NNS
+          and_CC invariant_NN set_VBD normalization_NN methods_NNS resulted_VBD in_IN
+          similar_JJ array_NN distributions_NNS ,_, whereas_IN our_PRP$ version_NN of_IN
+          lowess_NNS normalization_NN gave_VBD more_RBR comparable_JJ distributions_NNS
+          than_IN the_DT Raffy_NNP version_NN ._. The_DT qspline_NN normalization_NN
+          resulted_VBD in_IN the_DT most_RBS similar_JJ array_NN distributions_NNS ,_, which_WDT
+          are_VBP indistinguishable_JJ from_IN each_DT other_JJ in_IN Figure_NN 2_CD ._.
+          Normalized_NNP array_NN distributions_NNS for_IN the_DT two_CD cDNA_NN
+          experiments_NNS showed_VBD a_DT similar_JJ trend_NN ,_, although_IN cDNA_NN array_NN
+          distributions_NNS strongly_RB depended_VBD on_IN the_DT cyanine_NN dye_NN and_CC in_IN
+          all_DT cases_NNS ,_, distributions_NNS were_VBD much_RB less_RBR smooth_JJ ._. The_DT dye_NN
+          bias_NN can_MD clearly_RB be_VB seen_VBN in_IN the_DT unnormalized_JJ Cy_NNP 3_CD and_CC Cy_NNP 5_CD
+          signal_NN distributions_NNS shown_VBN in_IN green_JJ and_CC red_JJ respectively_RB
+          in_IN Figure_NN 2_CD ._. Both_DT global_JJ and_CC scaled_VBN print-tip_JJ lowess_NNS and_CC
+          qspline_NN normalizations_NNS showed_VBD similar_JJ signal-distribution_JJ
+          comparisons_NNS ._. Lowess_NNP and_CC qspline_NN normalizations_NNS generated_VBD
+          more_RBR comparable_JJ Cy_NNP 3_CD and_CC Cy_NNP 5_CD distributions_NNS than_IN scaling_VBG
+          alone_RB ,_, whereas_IN qspline_NN methods_NNS generated_VBD the_DT most_RBS similar_JJ
+          signal_NN distributions_NNS ._.
+          The_DT effects_NNS of_IN normalization_NN on_IN the_DT relative_JJ signal_NN
+          distributions_NNS ,_, log_VB (_( 
+          x_SYM 
+          
+            i_NNP 
+           /_NN 
+          v_NN )_) ,_, are_VBP shown_VBN in_IN Figure_NN 3_CD for_IN both_DT
+          oligonucleotide_NN and_CC cDNA_NN arrays_NNS for_IN the_DT same_JJ
+          normalizations_NNS shown_VBN in_IN Figure_NN 2_CD ._. These_DT probe-deviation_JJ
+          distributions_NNS show_VBP the_DT variability_NN from_IN each_DT 
+          v_NN calculated_VBN over_IN all_PDT the_DT channels_NNS in_IN
+          an_DT experiment_NN and_CC therefore_RB show_VB log-intensity_JJ deviations_NNS
+          from_IN the_DT experiments_NNS '_POS centroid_NN ._. The_DT original_JJ signal_NN
+          intensities_NNS are_VBP lost_VBN in_IN these_DT plots_NNS of_IN relative_JJ
+          information_NN ,_, but_CC global_JJ biases_NNS can_MD still_RB be_VB seen_VBN ._.
+          Comparable_JJ decreases_NNS in_IN global_JJ array_NN bias_NN were_VBD observed_VBN
+          for_IN lowess_NNS ,_, qspline_NN and_CC invariant_NN set_VBD normalized_JJ results_NNS ._.
+          Systematic_NNP differences_NNS between_IN cDNA_NN Cy_NNP 3_CD and_CC Cy_NNP 5_CD channel_NN
+          distributions_NNS can_MD be_VB seen_VBN before_IN normalization_NN but_CC
+          display_VB similar_JJ distributions_NNS after_IN signal-dependent_JJ
+          normalization_NN ._. By_IN visual_JJ inspection_NN ,_, print-tip_JJ scaling_NN
+          followed_VBN by_IN qspline_NN normalization_NN resulted_VBD in_IN the_DT
+          greatest_JJS decrease_NN of_IN relative_JJ signal_NN bias_NN for_IN the_DT cDNA_NN
+          array_NN data_NNS ._. Little_RB if_IN any_DT difference_NN was_VBD observed_VBN between_IN
+          global_JJ lowess_NNS and_CC scaled_VBN print-tip_JJ lowess_NNS with_IN regard_NN to_TO
+          relative_JJ signal_NN distributions_NNS ._. The_DT same_JJ was_VBD observed_VBN for_IN
+          the_DT two_CD variants_NNS of_IN qspline_NN ,_, suggesting_VBG that_IN print-tip_JJ
+          effects_NNS are_VBP much_RB smaller_JJR than_IN the_DT global_JJ biases_NNS ._. The_DT same_JJ
+          trends_NNS were_VBD observed_VBN for_IN the_DT four_CD channels_NNS of_IN the_DT
+          dye-swap_JJ replicate_VB cDNA_NN arrays_NNS ._.
+          Quantitative_NNP results_NNS in_IN Table_NNP 1_CD confirm_VB the_DT
+          observations_NNS from_IN the_DT distribution_NN analysis_NN ._. Variances_NNP
+          were_VBD estimated_VBN within_IN each_DT control_NN or_CC treatment_NN group_NN and_CC
+          served_VBD as_IN a_DT measure_NN of_IN replicate_VB error_NN ._. Oligonucleotide_NNP
+          arrays_NNS showed_VBD large_JJ decreases_NNS of_IN from_IN 50_CD to_TO 70_CD %_NN in_IN
+          replicate_VB error_NN ,_, for_IN all_DT normalization_NN methods_NNS ,_, whereas_IN
+          cDNA_NN replicate_VB errors_NNS showed_VBD decreases_NNS of_IN from_IN 0_CD to_TO 50_CD %_NN ,_,
+          depending_VBG on_IN the_DT normalization_NN ._. Reductions_NNP in_IN variability_NN
+          for_IN lowess_NNS ,_, qspline_NN and_CC invariant-set_JJ methods_NNS were_VBD
+          comparable_JJ for_IN both_DT treatment_NN and_CC control_NN replicates_NNS of_IN
+          oligonucleotide_NN data_NNS ._. The_DT largest_JJS decrease_NN in_IN replicate_VB
+          variability_NN for_IN the_DT HIV_NNP experiment_NN was_VBD observed_VBN for_IN
+          qspline_NN and_CC invariant-set_JJ normalization_NN ,_, where_WRB both_DT gave_VBD
+          decreases_NNS of_IN 59_CD %_NN and_CC 68_CD %_NN for_IN control_NN and_CC infected_JJ ,_,
+          respectively_RB ._. Including_VBG spatial_NN normalization_NN after_IN
+          qspline_NN improved_VBN on_IN these_DT decreases_NNS by_IN an_DT additional_JJ 1_CD %_NN ._.
+          Results_NNS for_IN the_DT cDNA_NN experiments_NNS showed_VBD that_IN global_JJ and_CC
+          print-tip_JJ qspline_NN provided_VBN greater_JJR reduction_NN of_IN replicate_VB
+          error_NN versus_CC the_DT lowess_NNS methods_NNS ._.
+        
+        
+          Signal-dependent_NNP assessment_NN of_IN normalization_NN
+          To_TO visualize_VB signal-dependent_JJ bias_NN ,_, Figure_NN 4_CD shows_VBZ
+          log-signal_JJ deviations_NNS from_IN 
+          v_NN versus_CC signal_NN intensity_NN for_IN each_DT of_IN
+          the_DT three_CD HIV-infected_NNP samples_NNS (_( that_WDT is_VBZ ,_, log_VB (_( 
+          x_SYM 
+          
+            i_NNP 
+           )_) -_: log_VB (_( 
+          v_NN )_) versus_CC log_VB (_( 
+          v_NN )_) )_) ._. As_IN previously_RB noted_VBD [_NN 11_CD ]_NN ,_, MA_NNP
+          plots_NNS ,_, where_WRB M_NNP =_SYM log_VB (_( x_SYM /_NN y_NN )_) is_VBZ plotted_VBD versus_CC
+          A_DT =_SYM log_NN (_( sqrt_NN (_( x_SYM *_NN y_NN )_) )_) for_IN signals_NNS x_SYM and_CC y_NN ,_, contain_VBP the_DT same_JJ
+          information_NN as_IN 
+          xy_NN correlation_NN plots_NNS but_CC are_VBP much_RB
+          better_JJR at_IN visualizing_VBG deviations_NNS from_IN the_DT identity_NN line_NN ._.
+          This_DT representation_NN clearly_RB shows_VBZ the_DT need_NN for_IN
+          signal-dependent_JJ normalization_NN between_IN replicates_NNS ,_, and_CC
+          similar_JJ results_NNS were_VBD found_VBN for_IN the_DT three_CD control_NN
+          replicates_NNS ._. A_DT comparison_NN of_IN normalization_NN curves_NNS shows_VBZ
+          differences_NNS between_IN all_DT normalization_NN techniques_NNS and_CC that_IN
+          the_DT signal-dependent_JJ methods_NNS were_VBD able_JJ to_TO correct_VB for_IN
+          non-linearities_JJ in_IN the_DT log_NN scale_NN ._. The_DT comparison_NN of_IN
+          normalizing_VBG curves_NNS shows_VBZ that_IN the_DT lowess_NNS method_NN generated_VBN
+          smoother_JJR curves_NNS than_IN the_DT cubic_JJ spline_NN methods_NNS (_( qspline_NN
+          and_CC invariant_NN set_VBN )_) and_CC that_IN the_DT spline-based_JJ curves_NNS were_VBD
+          very_RB similar_JJ ._.
+          The_DT signal-dependent_JJ biases_NNS for_IN the_DT individual_JJ
+          channels_NNS of_IN cDNA_NN array_NN data_NNS can_MD be_VB seen_VBN for_IN an_DT example_NN 
+          glnA_NN microarray_NN in_IN Figure_NN 5_CD after_IN
+          print-tip_JJ scaling_NN ,_, lowess_NNS and_CC qspline_NN normalizations_NNS ._. In_IN
+          this_DT case_NN ,_, log_VB (_( 
+          G_NNP )_) and_CC log_VB (_( 
+          R_NN )_) signals_NNS are_VBP compared_VBN to_TO mean_VB
+          log_VB (_( 
+          G_NNP )_) signals_NNS calculated_VBN over_IN the_DT six_CD
+          arrays_NNS ._. Although_IN qspline_NN normalized_JJ to_TO signals_NNS calculated_VBN
+          from_IN all_DT six_CD arrays_NNS ,_, normalization_NN performance_NN was_VBD
+          comparable_JJ if_IN not_RB better_JJR than_IN the_DT lowess_NNS method_NN that_IN only_RB
+          used_VBD the_DT Cy_NNP 3_CD and_CC Cy_NNP 5_CD signals_NNS within_IN each_DT individual_JJ
+          array_NN ._. Additional_JJ examples_NNS can_MD be_VB found_VBN in_IN the_DT additional_JJ
+          data_NN files_NNS available_JJ with_IN this_DT paper_NN (_( see_VB Additional_JJ data_NNS
+          files_NNS and_CC [_NN 17_CD ]_NN )_) ._.
+          Figure_NN 6_CD compares_VBZ lowess_NNS and_CC qspline_NN normalization_NN to_TO
+          dye-swap_JJ normalization_NN for_IN replicate_VB arrays_NNS A_DT and_CC B_NNP ,_,
+          where_WRB 
+          G_NNP 
+          
+            A_DT 
+           and_CC 
+          R_NN 
+          
+            A_DT 
+           were_VBD the_DT control_NN and_CC mutant_JJ RNA_NNP samples_NNS on_IN array_NN A_DT
+          and_CC 
+          G_NNP 
+          
+            B_NNP 
+           and_CC 
+          R_NN 
+          
+            B_NNP 
+           were_VBD the_DT mutant_JJ and_CC control_NN samples_NNS on_IN array_NN B_NNP ._.
+          Dye-swap_NNP normalization_NN effectively_RB averages_VBZ log_VBP
+          intensities_NNS within_IN each_DT sample_NN type_NN and_CC is_VBZ used_VBN to_TO
+          calculate_VB a_DT single_JJ set_NN of_IN log-ratios_JJ log_NN (_( (_( 
+          R_NN 
+          
+            A_DT 
+           
+          G_NNP 
+          
+            B_NNP 
+           )_) /_NN (_( 
+          G_NNP 
+          
+            A_DT 
+           
+          R_NN 
+          
+            B_NNP 
+           )_) )_) ._. From_IN Figure_NN 6_CD it_PRP is_VBZ clear_JJ that_IN dye-swap_JJ
+          normalization_NN alone_RB is_VBZ not_RB enough_RB to_TO account_VB for_IN
+          signal-dependent_JJ biases_NNS for_IN this_DT example_NN ._. Either_CC lowess_NNS
+          or_CC qspline_NN alone_RB provided_VBD more_RBR effective_JJ normalization_NN
+          than_IN dye-swap_JJ averaging_NN ._. This_DT was_VBD due_JJ to_TO the_DT fact_NN that_IN ,_,
+          in_IN this_DT case_NN ,_, the_DT dye_NN bias_NN was_VBD not_RB consistent_JJ between_IN
+          replicates_NNS and_CC can_MD be_VB seen_VBN to_TO be_VB much_RB worse_JJR in_IN array_NN B_NNP ._.
+          Signal-dependent_NNP normalization_NN followed_VBN by_IN dye-swap_JJ
+          averaging_NN should_MD provide_VB significantly_RB better_JJR results_NNS
+          than_IN either_DT approach_NN alone_RB ._.
+          When_WRB the_DT signal-intensity_JJ range_NN was_VBD separated_JJ into_IN
+          quartiles_NNS ,_, the_DT median_JJ log-ratio_JJ versus_CC the_DT probe_NN means_VBZ v_NN
+          was_VBD plotted_VBD for_IN each_DT array_NN and_CC each_DT quartile_NN ._. These_DT
+          medians_NNS can_MD be_VB seen_VBN in_IN Figure_NN 7_CD for_IN the_DT HIV_NNP ,_, 
+          glnA_NN and_CC dye-swap_JJ experiments_NNS after_IN
+          the_DT various_JJ normalizations_NNS ._. Separating_NNP these_DT
+          distributions_NNS by_IN quartiles_NNS shows_VBZ the_DT performance_NN of_IN the_DT
+          normalization_NN methods_NNS relative_JJ to_TO signal_VB intensity_NN and_CC
+          again_RB confirms_VBZ the_DT effectiveness_NN of_IN the_DT methods_NNS described_VBD
+          here_RB ._. The_DT lowess_NNS methods_NNS used_VBN for_IN cDNA_NN data_NNS were_VBD only_RB
+          employed_VBN to_TO normalize_VB within_IN individual_JJ arrays_NNS and_CC thus_RB
+          signal_VB differences_NNS can_MD still_RB be_VB observed_VBN between_IN arrays_NNS ._.
+          The_DT 
+          R_NN /_NN G_NNP log-ratio_JJ variability_NN for_IN each_DT
+          array_NN was_VBD found_VBN to_TO be_VB comparable_JJ for_IN both_DT single_JJ and_CC
+          multiple_JJ array_NN normalization_NN strategies_NNS ._. Again_RB ,_, the_DT
+          results_NNS from_IN global_JJ and_CC print-tip_JJ methods_NNS were_VBD not_RB seen_VBN
+          to_TO differ_VB ._.
+          The_DT distributions_NNS of_IN 
+          R_NN /_NN 
+          G_NNP log-ratios_JJ versus_CC print-tip_JJ can_MD
+          be_VB compared_VBN for_IN an_DT example_NN 
+          glnA_NN array_NN in_IN Figure_NN 8_CD ._. After_IN
+          global_JJ normalization_NN ,_, a_DT print-tip_JJ dependence_NN can_MD still_RB be_VB
+          observed_VBN in_IN most_JJS cases_NNS ._. Scaling_NNP the_DT individual_JJ Cy_NNP 3_CD and_CC
+          Cy_NNP 5_CD log-signals_JJ before_IN qspline_NN normalization_NN is_VBZ shown_VBN to_TO
+          correct_VB for_IN some_DT of_IN this_DT effect_NN ,_, although_IN this_DT method_NN
+          does_VBZ not_RB directly_RB scale_VB the_DT 
+          R_NN /_NN 
+          G_NNP log-ratios_JJ ._. The_DT scaled_VBN print-tip_JJ
+          lowess_NNS first_JJ performs_VBZ regressions_NNS by_IN print-tip_JJ group_NN ,_,
+          followed_VBN by_IN tip-group_JJ scaling_NN of_IN the_DT log-ratios_JJ and_CC ,_, not_RB
+          surprisingly_RB ,_, generates_VBZ the_DT most_RBS comparable_JJ print-tip_JJ
+          log-ratio_JJ distributions_NNS ._. The_DT preliminary_JJ spatial_NN scaling_VBG
+          technique_NN also_RB normalizes_NNS log-ratio_JJ information_NN and_CC can_MD
+          be_VB seen_VBN to_TO generate_VB comparable_JJ print-tip_JJ log-ratio_JJ
+          distributions_NNS ._.
+          Spatial_NNP effects_NNS can_MD be_VB more_JJR or_CC less_RBR dependent_JJ on_IN the_DT
+          print-tip_JJ group_NN ,_, depending_VBG on_IN the_DT strength_NN of_IN the_DT other_JJ
+          spatial_NN effects_NNS ._. Figure_NN 9_CD shows_VBZ an_DT example_NN from_IN the_DT
+          dye-swap_JJ experiment_NN where_WRB gradient_NN effects_NNS tended_VBD to_TO be_VB
+          as_RB large_JJ as_IN the_DT print-tip_JJ effects_NNS ._. Tip-group_NNP
+          normalization_NN alone_RB can_MD be_VB seen_VBN still_RB to_TO contain_VB spatial_NN
+          bias_NN within_IN each_DT tip_NN sector_NN ._. Spatial_NNP log-ratio_JJ
+          normalization_NN after_IN global_JJ normalization_NN can_MD be_VB seen_VBN to_TO
+          give_VB the_DT most_RBS homogeneous_JJ log-ratio_JJ signals_NNS across_IN the_DT
+          surface_NN of_IN the_DT array_NN ._. An_DT example_NN oligonucleotide_NN array_NN is_VBZ
+          shown_VBN before_IN and_CC after_IN spatial_NN normalization_NN ,_, along_IN with_IN
+          the_DT values_NNS that_WDT were_VBD used_VBN for_IN the_DT normalization_NN in_IN Figure_NN
+          10_CD ._. The_DT distribution_NN of_IN the_DT log-signal_JJ differences_NNS used_VBN
+          for_IN the_DT spatial_NN normalization_NN had_VBD a_DT MAD_NNP of_IN 0_CD ._. 014_CD for_IN
+          Affymetrix_NNP data_NNS compared_VBN to_TO 0_CD ._. 3_CD for_IN the_DT cDNA_NN array_NN data_NNS
+          of_IN the_DT 
+          glnA_NN experiment_NN ,_, suggesting_VBG that_DT
+          spatial_NN bias_NN is_VBZ more_JJR than_IN ten_CD times_NNS stronger_JJR for_IN cDNA_NN
+          array_NN data_NNS ._.
+        
+        
+          Biological_JJ assessment_NN of_IN normalization_NN
+          A_DT set_NN of_IN genes_NNS was_VBD known_VBN to_TO be_VB differentially_RB
+          regulated_VBN in_IN the_DT 
+          glnA_NN mutant_JJ strain_NN of_IN 
+          B_NNP ._. subtilis_NNS ._. These_DT 41_CD genes_NNS were_VBD
+          found_VBN to_TO rank_VB higher_JJR in_IN a_DT 
+          t_NN -_: test_NN analysis_NN after_IN
+          signal-dependent_JJ normalization_NN compared_VBN to_TO rankings_NNS from_IN
+          unnormalized_JJ and_CC scaled_VBN log-signals_JJ (_( Figure_NN 11_CD )_) ._. A_DT paired_VBN
+          Welch_NNP 
+          t-_NN test_NN was_VBD performed_VBN on_IN the_DT
+          individual_JJ Cy_NNP 5_CD and_CC Cy_NNP 3_CD signals_NNS for_IN each_DT gene_NN ._. The_DT top_JJ 20_CD
+          ranking_JJ genes_NNS can_MD be_VB seen_VBN in_IN Figure_NN 12_CD ,_, where_WRB the_DT genes_NNS
+          known_VBN to_TO be_VB differentially_RB regulated_VBN are_VBP shown_VBN in_IN
+          parentheses_NNS and_CC up-_NN or_CC downregulation_NN is_VBZ shown_VBN in_IN red_JJ or_CC
+          green_JJ ,_, respectively_RB ._. Unnormalized_NNP data_NNS rankings_NNS showed_VBD
+          only_RB one_CD of_IN the_DT 41_CD genes_NNS in_IN the_DT top_JJ 20_CD and_CC overall_JJ these_DT
+          genes_NNS had_VBD an_DT average_JJ rank_NN corresponding_JJ to_TO the_DT 51_CD st_NN
+          percentile_NN ,_, as_IN would_MD be_VB expected_VBN from_IN randomly_RB selected_VBN
+          genes_NNS ._. Log-signal_NNP scaling_VBG shifted_VBD the_DT rankings_NNS of_IN these_DT
+          genes_NNS to_TO an_DT average_JJ rank_NN corresponding_JJ to_TO the_DT 20_CD th_NN
+          percentile_NN ,_, whereas_IN signal-dependent_JJ normalizations_NNS
+          raised_VBD the_DT average_JJ rank_NN to_TO correspond_VB with_IN the_DT 8_CD th_NN to_TO 9_CD th_NN
+          percentile_NN (_( 2_CD nd_NN to_TO 3_CD rd_NN percentile_NN for_IN the_DT median_JJ rank_NN )_) ._.
+          Seven_CD of_IN the_DT 41_CD genes_NNS can_MD be_VB seen_VBN in_IN the_DT top_JJ 20_CD after_IN
+          scaled_VBN print-tip_JJ lowess_NNS and_CC qspline_NN ._. The_DT spatial_NN
+          normalization_NN approach_NN appears_VBZ to_TO adversely_RB effect_VB the_DT
+          top_JJ 20_CD ranking_JJ genes_NNS though_IN the_DT resulting_VBG mean_NN and_CC median_JJ
+          ranks_NNS of_IN the_DT 41_CD genes_NNS were_VBD comparable_JJ or_CC better_JJR than_IN the_DT
+          other_JJ approaches_NNS ._. The_DT lowest_JJS average_JJ rank_NN was_VBD observed_VBN
+          for_IN the_DT global_JJ qspline_NN method_NN (_( 8_CD ._. 1_LS percentile_NN )_) followed_VBN
+          closely_RB by_IN global_JJ and_CC print-tip_JJ lowess_NNS both_DT at_IN the_DT 8_CD ._. 5_CD
+          percentile_NN ._. The_DT lowest_JJS median_JJ rank_NN was_VBD seen_VBN for_IN the_DT
+          spatial_NN normalization_NN results_NNS (_( 1_CD ._. 9_CD percentile_NN )_) followed_VBN
+          by_IN global_JJ qspline_NN (_( 2_CD ._. 4_LS )_) and_CC print-tip_JJ qspline_NN (_( 2_CD ._. 7_CD )_) ._.
+          
+          t_NN -_: tests_NNS were_VBD applied_VBN to_TO
+          gene-expression_JJ estimates_NNS calculated_VBN from_IN the_DT Li_NNP and_CC Wong_NNP
+          [_NN 1_CD ]_NN reduced_VBD model_NN for_IN the_DT oligonucleotide_NN array_NN data_NNS ._.
+          Unfortunately_RB ,_, the_DT set_NN of_IN genes_NNS believed_VBN to_TO be_VB
+          differentially_RB regulated_VBN due_JJ to_TO HIV_NNP infection_NN was_VBD found_VBN
+          to_TO be_VB randomly_RB distributed_VBN throughout_IN the_DT two_CD sample_NN 
+          t_NN -_: test_NN rankings_NNS both_DT before_IN and_CC
+          after_IN different_JJ normalizations_NNS ._. The_DT overall_JJ effects_NNS of_IN
+          normalization_NN on_IN the_DT 
+          p_NN -_: values_NNS can_MD be_VB seen_VBN for_IN the_DT HIV_NNP
+          and_CC 
+          glnA_NN experiments_NNS in_IN Figure_NN 12_CD ._. For_IN
+          this_DT comparison_NN ,_, only_RB the_DT relative_JJ characteristics_NNS
+          between_IN normalization_NN methods_NNS are_VBP of_IN interest_NN ._. The_DT actual_JJ
+          
+          p_NN -_: values_NNS are_VBP not_RB correct_JJ as_IN a_DT
+          result_NN of_IN multiple_JJ testing_NN ._. Log_NNP rank_NN versus_CC log_VB 
+          p_NN -_: value_NN plots_NNS show_VBP differing_VBG
+          trends_NNS for_IN oligonucleotide_NN and_CC cDNA_NN array_NN data_NNS ._.
+          Unnormalized_NNP data_NNS show_VBP lower_JJR 
+          p_NN -_: values_NNS for_IN genes_NNS in_IN the_DT lower_JJR
+          half_NN of_IN the_DT ranking_NN in_IN cDNA_NN because_IN of_IN the_DT dye_NN bias_NN and_CC
+          lack_NN of_IN dye_NN swapping_VBG over_IN the_DT six_CD replicates_NNS ,_, and_CC suggest_VBP
+          poorer_RBR signal-to-noise_JJ characteristics_NNS ._. Lack_NN of_IN
+          normalization_NN in_IN the_DT HIV_NNP experiment_NN showed_VBD less_RBR
+          significant_JJ 
+          p_NN -_: values_NNS over_IN all_DT genes_NNS ._.
+          Log-signal_NNP scaling_VBG showed_VBN slightly_RB higher_JJR 
+          p_NN -_: values_NNS whereas_IN lowess_NNS ,_, invariant_NN
+          set_VBN and_CC qspline_NN showed_VBD comparably_RB lower_JJR 
+          p_NN -_: values_NNS ._.
+        
+      
+      
+        Discussion_NNP
+        Three_CD important_JJ assumptions_NNS must_MD hold_VB for_IN
+        signal-dependent_JJ normalization_NN methods_NNS ._. The_DT first_JJ two_CD were_VBD
+        suggested_VBN by_IN Zien_NNP 
+        et_CC al_NN ._. [_NN 18_CD ]_NN in_IN their_PRP$ linear_JJ
+        centralization_NN approach_NN :_: the_DT majority_NN of_IN genes_NNS are_VBP not_RB
+        differentially_RB regulated_VBN (_( assumption_NN 1_LS )_) ;_: and_CC the_DT number_NN of_IN
+        upregulated_JJ genes_NNS roughly_RB equals_VBZ the_DT number_NN downregulated_JJ
+        (_( assumption_NN 2_LS )_) ._. The_DT third_JJ assumption_NN is_VBZ that_IN these_DT two_CD
+        assumptions_NNS hold_VBP across_IN the_DT signal-intensity_JJ range_NN ._.
+        Assumption_NNP 1_CD was_VBD used_VBN as_IN a_DT justification_NN for_IN centering_VBG
+        log-ratio_JJ distributions_NNS and_CC is_VBZ likely_JJ to_TO hold_VB when_WRB an_DT
+        unbiased_JJ selection_NN of_IN thousands_NNS of_IN genes_NNS is_VBZ measured_VBN ._. If_IN
+        assumption_NN 1_CD is_VBZ true_JJ ,_, then_RB assumption_NN 2_CD can_MD be_VB relaxed_VBN as_RB
+        long_RB as_IN random_JJ effects_NNS on_IN non-differentially_JJ expressed_VBD
+        genes_NNS are_VBP equally_RB positive_JJ and_CC negative_JJ ._. The_DT third_JJ
+        assumption_NN is_VBZ important_JJ for_IN signal-dependent_JJ normalizations_NNS
+        and_CC is_VBZ supported_VBN by_IN the_DT intuition_NN that_IN genes_NNS with_IN 100_CD to_TO
+        1_CD ,_, 000_CD mRNA_NN copies_NNS per_IN cell_NN will_MD be_VB no_DT more_JJR or_CC less_RBR biased_VBN
+        toward_IN up-_NN or_CC downregulation_NN than_IN genes_NNS with_IN 10_CD ,_, 000_CD to_TO
+        100_CD ,_, 000_CD copies_NNS per_IN cell_NN ._. Microarrays_NNP with_IN a_DT small_JJ number_NN of_IN
+        genes_NNS may_MD be_VB biased_VBN to_TO over-_NN or_CC underexpression_NN and_CC could_MD
+        generate_VB data_NNS that_WDT do_VBP not_RB conform_VB to_TO any_DT of_IN the_DT listed_VBN
+        assumptions_NNS ._. We_PRP believe_VBP that_IN future_JJ microarrays_NNS will_MD only_RB
+        include_VB more_JJR features_NNS and_CC genes_NNS ,_, making_VBG these_DT assumptions_NNS
+        even_RB more_RBR valid_JJ ._. In_IN coming_VBG years_NNS ,_, oligonucleotide_NN arrays_NNS
+        for_IN humans_NNS will_MD contain_VB all_DT 35_CD ,_, 000_CD genes_NNS (_( or_CC however_RB many_JJ
+        there_EX may_MD be_VB )_) and_CC therefore_RB will_MD not_RB contain_VB a_DT biased_VBN
+        selection_NN of_IN genes_NNS ._.
+        A_DT potential_NN fourth_JJ assumption_NN motivates_NNS spatial-_NN or_CC
+        pin-specific_JJ normalization_NN and_CC would_MD state_VB that_DT assumption_NN
+        2_CD should_MD hold_VB spatially_RB across_IN the_DT surface_NN of_IN the_DT array_NN ._.
+        These_DT effects_NNS were_VBD observed_VBN to_TO be_VB more_RBR significant_JJ for_IN cDNA_NN
+        microarrays_NNS ,_, whereas_IN global_JJ signal-dependent_JJ biases_NNS
+        dominated_VBN over_IN spatial_NN effects_NNS for_IN oligonucleotide_NN array_NN
+        data_NNS ._. The_DT MAD_NNP for_IN the_DT difference_NN of_IN log_NN (_( PM_NNP )_) before_IN and_CC
+        after_IN global_JJ normalization_NN was_VBD 30_CD times_NNS larger_JJR than_IN the_DT MAD_NNP
+        of_IN the_DT difference_NN between_IN globally_RB normalized_JJ and_CC spatially_RB
+        normalized_JJ (_( 0_CD ._. 3_LS versus_CC 0_CD ._. 01_CD )_) ._. For_IN the_DT 
+        glnA_NN experiment_NN ,_, the_DT spatial_NN effect_NN
+        as_IN measured_VBN by_IN a_DT similar_JJ MAD_NNP was_VBD ten_CD times_NNS larger_JJR than_IN that_DT
+        of_IN the_DT HIV_NNP experiment_NN but_CC still_RB roughly_RB ten_CD times_NNS smaller_JJR
+        than_IN the_DT global_JJ cDNA_NN effects_NNS (_( 1_CD ._. 3_LS versus_CC 0_CD ._. 1_LS )_) ._. Although_IN
+        spatial_NN effects_NNS may_MD not_RB always_RB be_VB significant_JJ ,_,
+        probe-specific_JJ effects_NNS are_VBP a_DT significant_JJ issue_NN for_IN
+        oligonucleotide_NN arrays_NNS ,_, and_CC must_MD be_VB addressed_VBN by_IN other_JJ
+        techniques_NNS such_JJ as_IN the_DT method_NN of_IN Li_NNP and_CC Wong_NNP [_NN 2_CD ]_NN ._. The_DT
+        preliminary_JJ spatial_NN normalization_NN method_NN presented_VBN in_IN this_DT
+        work_NN will_MD require_VB further_JJ validation_NN and_CC development_NN as_IN the_DT
+        current_JJ method_NN ,_, by_IN visual_JJ inspection_NN ,_, appears_VBZ to_TO be_VB
+        overfitting_VBG the_DT cDNA_NN data_NN ._. Probe_NNP placement_NN and_CC microarray_NN
+        designs_NNS do_VBP not_RB always_RB correctly_RB randomize_NN strongly_RB or_CC
+        weakly_RB expressed_VBD genes_NNS ,_, and_CC may_MD contain_VB spatial_NN biases_NNS that_WDT
+        should_MD not_RB be_VB removed_VBN ._. That_DT said_VBD ,_, the_DT ranking_NN of_IN genes_NNS
+        known_VBN to_TO be_VB regulated_VBN did_VBD not_RB change_VB significantly_RB as_IN a_DT
+        result_NN of_IN this_DT overfitting_VBG ._.
+        The_DT process_NN of_IN comparing_VBG and_CC validating_VBG these_DT methods_NNS
+        should_MD depend_VB most_RBS heavily_RB on_IN the_DT biological_JJ assessment_NN ._.
+        Unfortunately_RB ,_, this_DT evidence_NN was_VBD found_VBN to_TO be_VB the_DT most_RBS
+        unreliable_JJ ._. Genes_NNP from_IN the_DT list_NN that_WDT were_VBD known_VBN to_TO be_VB
+        differentially_RB regulated_VBN were_VBD found_VBN throughout_IN the_DT 
+        t_NN -_: test_NN ranking_VBG in_IN both_DT the_DT HIV_NNP and_CC
+        the_DT 
+        glnA_NN experiments_NNS ._. Statistical_NNP
+        measures_NNS ,_, such_JJ as_IN reproducibility_NN ,_, were_VBD less_RBR ambiguous_JJ ,_, but_CC
+        showed_VBD similar_JJ performance_NN for_IN global_JJ and_CC print-tip_JJ ,_,
+        although_IN clear_JJ print-tip_JJ biases_NNS were_VBD present_JJ ._. Each_DT
+        microarray_NN system_NN presented_VBD different_JJ sources_NNS of_IN bias_NN and_CC
+        in_IN the_DT end_NN ,_, no_DT one_CD criterion_NN was_VBD sufficient_JJ for_IN assessing_VBG
+        whether_IN microarray_NN data_NNS was_VBD properly_RB normalized_JJ ._. Observing_VBG
+        global_JJ ,_, signal-dependent_JJ and_CC spatially_RB dependent_JJ
+        distributions_NNS is_VBZ recommended_VBN in_IN all_DT cases_NNS ._.
+      
+      
+        Conclusions_NNP
+        Assessments_NNP of_IN normalizations_NNS were_VBD shown_VBN globally_RB for_IN
+        array_NN signal_NN and_CC relative_JJ signal_NN distributions_NNS as_RB well_RB as_IN
+        for_IN signal-dependent_JJ MA-style_NNP plots_NNS and_CC medians_NNS of_IN relative_JJ
+        signals_NNS by_IN quartile_NN ._. In_IN all_DT cases_NNS ,_, these_DT analyses_NNS showed_VBD
+        favorable_JJ results_NNS for_IN lowess_NNS ,_, invariant_NN set_VBN and_CC qspline_NN
+        methods_NNS ._. Certain_JJ aspects_NNS of_IN the_DT spline-based_JJ methods_NNS make_VBP
+        it_PRP preferable_JJ to_TO the_DT other_JJ methods_NNS ._. First_LS ,_, the_DT qspline_NN
+        method_NN is_VBZ computationally_RB more_RBR efficient_JJ than_IN the_DT lowess_NNS
+        methods_NNS ;_: second_JJ ,_, owing_VBG to_TO the_DT random_JJ sampling_VBG procedure_NN ,_,
+        lowess-based_JJ methods_NNS will_MD give_VB slightly_RB different_JJ results_NNS
+        for_IN each_DT data_NNS fitting_JJ whereas_IN the_DT spline_NN methods_NNS are_VBP
+        deterministic_JJ ;_: and_CC third_JJ ,_, the_DT quantile-based_JJ approach_NN of_IN
+        qspline_NN can_MD normalize_VB arrays_NNS with_IN different_JJ numbers_NNS of_IN
+        features_NNS ._. Only_RB through_IN population-based_JJ methods_NNS ,_, such_JJ as_IN
+        qspline_NN ,_, can_MD arrays_NNS with_IN different_JJ features_NNS be_VB normalized_JJ
+        for_IN signal_NN dependent_JJ bias_NN ._.
+      
+      
+        Materials_NNS and_CC methods_NNS
+        
+          T-_NNP cell_NN cultures_NNS infected_VBN with_IN HIV_NNP
+          Ten_CD million_CD MT-_NNP 4_CD cells_NNS were_VBD incubated_JJ with_IN either_DT 1_CD ml_NN
+          virus_NN stock_NN (_( 2_CD multiplicity_NN of_IN infection_NN (_( MOI_NNP )_) units_NNS of_IN
+          strain_NN IIIB_NNP )_) or_CC 1_CD ml_NN mock_JJ virus_NN for_IN 3_CD h_NN at_IN 37_CD °_NN C_NNP ._. After_IN
+          extensive_JJ washing_NN the_DT cells_NNS were_VBD transferred_VBN to_TO 80_CD cm_NN
+          3_CD Nunclon_NNP bottles_NNS in_IN 20_CD ml_NN culture_NN medium_NN (_( RPMI_NNP 1640_CD with_IN
+          10_CD %_NN fetal_JJ calf_NN serum_NN and_CC antibiotics_NNS )_) and_CC cultured_JJ at_IN
+          37_CD °_NN C_NNP ,_, 5_CD %_NN CO_NNP 
+          2_CD for_IN 7_CD days_NNS ._. Messenger_NNP RNA_NNP was_VBD
+          extracted_VBN using_VBG QIAGEN_NNP RNeasy_NNP Mini_NNP kit_NN and_CC prepared_VBN for_IN
+          hybridization_NN to_TO Affymetrix_NNP HuGeneFL_NNP chips_NNS according_VBG to_TO
+          protocols_NNS provided_VBN by_IN Affymetrix_NNP ._.
+          The_DT Affymetrix_NNP HuGeneFL_NNP arrays_NNS contain_VBP about_IN 1_CD ._. 4_CD ×_NN 10_CD
+          5_CD PM_NNP ,_, MM_NNP probe_NN pairs_NNS ._. Probe-based_NNP normalization_NN was_VBD found_VBN
+          to_TO work_VB on_IN both_DT PM_NNP and_CC pooled_VBN PM_NNP ,_, MM_NNP values_NNS ,_, although_IN the_DT
+          MM_NNP values_NNS were_VBD ignored_VBN in_IN this_DT analysis_NN (_( We_PRP believe_VBP that_IN
+          MM_NNP values_NNS are_VBP unreliable_JJ indicators_NNS of_IN
+          cross-hybridization_JJ and_CC can_MD be_VB shown_VBN to_TO have_VB a_DT
+          confounding_VBG effect_NN on_IN all_DT but_CC the_DT top_JJ 20_CD %_NN of_IN the_DT signal_NN
+          intensity_NN range_NN ._. )_) Control_NN features_NNS designed_VBN for_IN grid_NN
+          alignment_NN ,_, spiked_JJ controls_NNS and_CC ALU_NNP controls_NNS (_( "_'' AFFX_NNP "_'' ,_,
+          "_'' hum_VB __NN alu_NN "_'' )_) were_VBD removed_VBN ._.
+        
+        
+          Bacilluscultures_NNP on_IN cDNA_NN microarrays_NNS
+          Cells_NNP were_VBD grown_VBN at_IN 37_CD °_NN C_NNP in_IN a_DT modified_VBN Spizizen_NNP
+          salt-buffered_JJ minimal_JJ medium_NN as_IN described_VBN previously_RB [_NN
+          19_CD ]_NN supplemented_JJ with_IN 100_CD μg_NN /_NN ml_NN L-_NNP tryptophan_NN ._. Na_NNP 
+          2_CD SO_NNP 
+          4_CD was_VBD used_VBN instead_RB of_IN (_( NH_NNP 
+          4_LS )_) 
+          2_CD SO_NNP 
+          4_CD and_CC glutamine_NN (_( 0_CD ._. 2_LS %_NN )_) was_VBD added_VBN as_IN
+          the_DT sole_JJ nitrogen_NN source_NN ._. At_IN an_DT OD_NNP =_SYM 1_CD (_( 450_CD nm_NN )_) ,_,
+          approximately_RB 100_CD ml_NN of_IN culture_NN was_VBD harvested_VBN by_IN
+          centrifugation_NN at_IN 7_CD ,_, 000_CD rpm_NN for_IN 5_CD min_NN ._. The_DT pellet_NN was_VBD
+          resuspended_JJ in_IN 400_CD μl_NN water_NN and_CC RNA_NNP was_VBD isolated_VBN from_IN
+          this_DT by_IN the_DT use_NN of_IN four_CD tubes_NNS from_IN the_DT fastRNA_NN kit_NN blue_JJ
+          (_( BIO_NNP 101_CD ,_, Carlsbad_NNP ,_, CA_NNP )_) and_CC as_IN recommended_VBN by_IN the_DT
+          supplier_NN ._. cDNA_NN synthesis_NN ,_, dye_NN coupling_NN of_IN probe_NN ,_, array_NN ,_,
+          hybridization_NN and_CC scanning_VBG were_VBD carried_VBN out_IN as_IN described_VBN
+          by_IN DeRisi_NNP and_CC co-workers_NNS (_( protocol_NN available_JJ at_IN [_NN 20_CD ]_NN )_) ._.
+          RNA_NNP preparations_NNS were_VBD run_VBN in_IN duplicate_VB and_CC each_DT sample_NN
+          was_VBD hybridized_JJ to_TO triplicate_NN arrays_NNS ._. In_IN all_DT cases_VBZ the_DT
+          control_JJ RNA_NNP was_VBD labeled_VBN with_IN Cy_NNP 5_CD and_CC treatment_NN RNA_NNP with_IN
+          Cy_NNP 3_CD ._. Each_DT of_IN the_DT 4_CD ,_, 100_CD genes_NNS was_VBD spotted_VBN on_IN the_DT array_NN
+          twice_RB ,_, which_WDT gave_VBD 12_CD measurements_NNS per_IN gene_NN per_IN
+          experiment_NN ._.
+        
+        
+          Microarray_NNP normalization_NN
+          The_DT variance_NN within_IN replicate_VB group_NN was_VBD estimated_VBN for_IN
+          each_DT normalization_NN described_VBD below_IN ,_,
+          
+          where_WRB 
+          i_NNP is_VBZ an_DT index_NN over_IN 
+          n_NN probe_NN signals_NNS ,_, and_CC 
+          j_NN is_VBZ an_DT index_NN over_IN 
+          m_NN replicates_NNS ._.
+        
+        
+          Global_NNP scaling_NN of_IN log_NN intensities_NNS
+          As_IN a_DT comparison_NN with_IN the_DT signal-dependent_JJ qspline_NN and_CC
+          lowess_NNS approaches_NNS ,_, a_DT scaling_NN of_IN log_NN intensities_NNS was_VBD
+          carried_VBN out_IN as_IN follows_VBZ ._. Probe_NNP intensities_NNS were_VBD
+          log-transformed_JJ (_( in_IN all_DT cases_NNS ,_, we_PRP used_VBD log_VB base_NN 2_CD on_IN
+          signal-intensity_JJ data_NNS )_) and_CC a_DT measure_NN of_IN central_JJ tendency_NN ,_,
+          
+          c_SYM 
+          
+            j_NN 
+           ,_, was_VBD calculated_VBN for_IN each_DT array_NN and_CC for_IN the_DT entire_JJ
+          matrix_NN (_( 
+          c_SYM )_) ._. The_DT mean_NN of_IN the_DT log_NN values_NNS was_VBD
+          used_VBN but_CC the_DT median_NN was_VBD found_VBN to_TO work_VB just_RB as_RB well_RB ._. Each_DT
+          array_NN was_VBD then_RB scaled_VBN in_IN the_DT log-space_JJ to_TO the_DT global_JJ
+          mean_NN ,_, log_VB (_( 
+          x_SYM 
+          
+            j_NN 
+           )_) (_( 
+          c_SYM /_NN 
+          c_SYM 
+          
+            j_NN 
+           )_) ._. This_DT simple_JJ transformation_NN often_RB accounted_VBD for_IN
+          much_RB of_IN the_DT variability_NN between_IN oligonucleotide_NN arrays_NNS ._.
+          The_DT approach_NN used_VBN on_IN cDNA_NN array_NN data_NNS scaled_VBD each_DT Cy_NNP 3_CD and_CC
+          Cy_NNP 5_CD channel_NN to_TO the_DT same_JJ central_JJ tendency_NN with_IN the_DT
+          additional_JJ constraint_NN that_IN each_DT print-tip_JJ group_NN also_RB had_VBD
+          the_DT same_JJ Cy_NNP 3_CD and_CC Cy_NNP 5_CD central_JJ tendency_NN ._.
+        
+        
+          Lowess_NNP normalizations_NNS
+          The_DT Affymetrix_NNP normalization_NN method_NN found_VBD in_IN the_DT Raffy_NNP
+          module_NN of_IN the_DT sma_NN package_NN uses_VBZ the_DT lowess_NNS function_VBP
+          (_( '_POS loess_NNS '_POS )_) with_IN a_DT robust_JJ local_JJ linear_JJ regression_NN mode_NN
+          (_( '_POS symmetric_JJ '_POS )_) ._. The_DT Raffy_NNP method_NN performed_VBD all_DT pairwise_NN
+          normalizations_NNS between_IN the_DT six_CD HIV_NNP arrays_NNS and_CC averaged_VBD
+          the_DT five_CD results_NNS (_( 
+          m_NN -_: 1_LS )_) for_IN each_DT array_NN ._. The_DT process_NN
+          was_VBD then_RB repeated_VBN on_IN the_DT new_JJ data_NN ,_, which_WDT resulted_VBD in_IN 30_CD
+          total_JJ fits_NNS for_IN the_DT six_CD arrays_NNS ._. Instead_RB of_IN averaging_VBG all_DT
+          pairwise_NN array_NN regressions_NNS on_IN a_DT single_JJ random_JJ sample_NN of_IN
+          feature_NN pairs_NNS ,_, the_DT modified_VBN version_NN averaged_VBD iterative_JJ
+          regressions_NNS between_IN each_DT array_NN and_CC the_DT target_NN array_NN using_VBG
+          a_DT new_JJ random_JJ sample_NN on_IN each_DT iteration_NN ._. This_DT resulted_VBD in_IN
+          18_CD total_JJ fits_NNS for_IN the_DT six_CD arrays_NNS ._. The_DT former_JJ method_NN
+          tended_VBD to_TO undernormalize_NN and_CC did_VBD not_RB perform_VB as_RB well_RB as_IN
+          simple_JJ log-intensity_JJ scaling_NN ._. The_DT adapted_VBN method_NN used_VBN
+          essentially_RB the_DT same_JJ procedure_NN and_CC code_NN but_CC performed_VBN
+          significantly_RB better_RB when_WRB used_VBN in_IN this_DT scheme_NN ._.
+          The_DT six_CD replicates_NNS for_IN each_DT 
+          glnA_NN and_CC 
+          tnrA_NN experiment_NN were_VBD normalized_JJ to_TO
+          a_DT prototype_NN ,_, 
+          v_NN ,_, denned_JJ by_IN the_DT median_JJ or_CC geometric_JJ
+          mean_NN of_IN the_DT six_CD Cy_NNP 3_CD channels_NNS used_VBN to_TO measure_VB the_DT control_NN
+          mRNA_NN (_( wild_JJ type_NN )_) ._. By_IN this_DT method_NN ,_, all_DT 12_CD channels_NNS from_IN
+          the_DT six_CD arrays_NNS were_VBD normalized_JJ to_TO each_DT other_JJ and_CC at_IN the_DT
+          same_JJ time_NN the_DT Cy_NNP 5_CD channels_NNS were_VBD normalized_JJ to_TO the_DT Cy_NNP 3_CD
+          channels_NNS ._. The_DT cDNA_NN normalization_NN method_NN found_VBD in_IN the_DT
+          Rarray_NNP module_NN of_IN the_DT sma_NN package_NN uses_VBZ the_DT lowess_NNS function_VBP
+          (_( '_POS lowess_NNS '_POS )_) with_IN analogous_JJ settings_NNS as_IN described_VBN for_IN
+          oligonucleotide_NN array_NN normalization_NN ._. Both_DT global_JJ and_CC
+          scaled_VBN print-tip_JJ group_NN lowess_NNS normalization_NN were_VBD
+          performed_VBN (_( norm_NN =_SYM '_POS l_NN '_'' and_CC norm_NN =_SYM 's_POS '_POS ,_, respectively_RB )_) ._. The_DT
+          scaled_VBN print-tip_JJ mode_NN performed_VBD lowess_NNS normalization_NN for_IN
+          within_IN each_DT print-tip_JJ group_NN and_CC then_RB scaled_VBD the_DT
+          log-ratios_JJ of_IN each_DT group_NN by_IN its_PRP$ respective_JJ MAD_NNP [_NN 11_CD ]_NN ._.
+        
+        
+          Cubic_NNP spline_NN normalization_NN using_VBG quantiles_NNS
+          For_IN this_DT approach_NN ,_, all_DT signal_NN channels_NNS are_VBP normalized_JJ
+          to_TO a_DT target_NN array_NN ._. The_DT same_JJ method_NN was_VBD used_VBN for_IN cDNA_NN and_CC
+          oligonucleotide_NN array_NN data_NNS ._.
+          The_DT geometric_JJ mean_NN of_IN each_DT probe_NN was_VBD calculated_VBN over_IN
+          all_DT arrays_NNS ,_, 
+          x_SYM 
+          
+            j_NN 
+           ,_, in_IN the_DT experiment_NN ,_,
+          
+          where_WRB 
+          j_NN indexed_VBN over_IN the_DT 
+          m_NN =_SYM 6_CD arrays_NNS and_CC 
+          i_NNP indexed_VBN over_IN the_DT 
+          n_NN probes_NNS ._.
+          From_IN each_DT array_NN and_CC the_DT vector_NN 
+          v_NN ,_, 100_CD quantiles_NNS were_VBD taken_VBN ,_, 
+          q_NN 
+          
+            j_NN 
+           and_CC 
+          q_NN 
+          
+            v_NN 
+           (_( percentiles_NNS )_) ._. The_DT size_NN of_IN the_DT quantile_NN sample_NN
+          represented_VBD <_NN 0_CD ._. 1_CD %_NN of_IN 
+          n_NN ._. Figure_NN 1_CD shows_VBZ an_DT example_NN
+          comparison_NN of_IN array_NN signal_NN distributions_NNS 
+          x_SYM 
+          
+            j_NN 
+           and_CC 
+          v_NN along_IN with_IN a_DT quantile-quantile_JJ plot_NN
+          showing_VBG the_DT correlation_NN between_IN the_DT corresponding_JJ 
+          q_NN 
+          
+            j_NN 
+           and_CC 
+          q_NN 
+          
+            v_NN 
+           ._. Each_DT 
+          q_NN 
+          
+            v_NN 
+           ,_, 
+          q_NN 
+          
+            j_NN 
+           pair_NN was_VBD used_VBN to_TO fit_VB a_DT cubic_JJ spline_NN function_NN ,_, 
+          s_VBZ 
+          
+            j_NN 
+           =_SYM 
+          f_SYM (_( 
+          q_NN 
+          
+            v_NN 
+           ,_, 
+          q_NN 
+          
+            j_NN 
+           )_) ,_, where_WRB 
+          f_SYM was_VBD a_DT spline_NN function_NN generator_NN
+          that_WDT fits_VBZ the_DT parameters_NNS of_IN a_DT natural_JJ cubic_JJ spline_NN
+          (_( B-_NNP spline_NN )_) ._. The_DT splinefun_NN function_NN in_IN the_DT R_NN base_NN package_NN
+          was_VBD used_VBN for_IN this_DT purpose_NN ._. Spline_NNP parameters_NNS were_VBD fit_VBN for_IN
+          each_DT interval_NN between_IN consecutive_JJ quantiles_NNS ._. The_DT
+          interpolating_VBG spline_NN function_NN defined_VBN over_IN the_DT 
+          k_NN th_NN interval_NN ,_, is_VBZ defined_VBN for_IN the_DT
+          parameters_NNS 
+          a_DT 
+          
+            jk_NN 
+           and_CC 
+          y_NN 
+          
+            jk_NN 
+           in_IN Equation_NNP 3_CD ._. For_IN an_DT unsmoothed_JJ cubic_JJ spline_NN ,_, 
+          y_NN 
+          
+            jk_NN 
+           =_SYM 
+          q_NN 
+          
+            vk_NN 
+           ,_,
+          
+          s_VBZ 
+          
+            j_NN 
+           (_( 
+          x_SYM )_) =_SYM 
+          a_DT 
+          
+          jk_NN 1_CD +_NN 
+          a_DT 
+          
+          jk_NN 2_CD (_( 
+          x_SYM -_: 
+          y_NN 
+          
+            jk_NN 
+           )_) +_NN 
+          a_DT 
+          
+          jk_NN 3_CD (_( 
+          x_SYM -_: 
+          y_NN 
+          
+            jk_NN 
+           )_) 2_CD +_NN 
+          a_DT 
+          
+          jk_NN 4_CD (_( 
+          x_SYM -_: 
+          y_NN 
+          
+            jk_NN 
+           )_) 3_CD    (_( 3_LS )_)
+          In_IN an_DT iterative_JJ approach_NN ,_, quantiles_NNS were_VBD resampled_JJ
+          from_IN percentiles_NNS shifted_VBN by_IN a_DT small_JJ offset_VBN 
+          np_NN 
+          0_CD /_NN 
+          k_NN where_WRB 
+          p_NN 
+          0_CD was_VBD the_DT first_JJ percentile_NN and_CC 
+          k_NN the_DT number_NN of_IN iterations_NNS (_( defines_VBZ
+          the_DT difference_NN in_IN rank_NN between_IN consecutive_JJ quantiles_NNS )_) ._.
+          This_DT provided_VBD a_DT different_JJ set_NN of_IN evenly_RB spaced_JJ quantiles_NNS
+          for_IN each_DT curve_NN fitting_JJ ._. For_IN the_DT normalizations_NNS performed_VBN
+          here_RB ,_, the_DT results_NNS from_IN five_CD interpolations_NNS were_VBD averaged_VBN ._.
+          The_DT qspline_NN method_NN was_VBD implemented_VBN in_IN R_NN and_CC included_VBN in_IN
+          the_DT Bioconductor_NNP package_NN ,_, which_WDT will_MD be_VB described_VBN
+          elsewhere_RB and_CC is_VBZ available_JJ from_IN the_DT web_NN [_NN 21_CD ]_NN ._.
+          Data_NNS for_IN cDNA_NN experiments_NNS were_VBD qspline_NN normalized_JJ with_IN
+          percentile_NN samples_NNS and_CC fitted_JJ in_IN an_DT iterative_JJ approach_NN as_IN
+          described_VBN for_IN the_DT oligonucleotide_NN arrays_NNS ._. The_DT signal_NN
+          distributions_NNS were_VBD found_VBN to_TO contain_VB many_JJ non-smooth_JJ
+          features_NNS not_RB common_JJ for_IN both_DT channels_NNS ._. To_TO account_VB for_IN the_DT
+          print-tip_JJ effect_NN ,_, an_DT additional_JJ normalization_NN was_VBD
+          performed_VBN where_WRB Cy_NNP 3_CD and_CC Cy_NNP 5_CD signals_NNS were_VBD scaled_VBN within_IN
+          each_DT print-tip_JJ group_NN ,_, as_IN described_VBN in_IN global_JJ scaling_NN of_IN
+          log_NN intensities_NNS ,_, before_IN qspline_NN normalization_NN as_RB just_RB
+          described_VBD ._.
+        
+        
+          Spatial_NNP normalization_NN
+          Local_JJ signal_NN (_( log-ratio_JJ )_) was_VBD estimated_VBN for_IN each_DT probe_NN
+          using_VBG a_DT weighted_JJ mean_NN of_IN neighboring_VBG probe_NN signals_NNS ._. A_DT
+          sliding_VBG square_JJ window_NN centered_VBN on_IN the_DT each_DT probe_NN (_( 50_CD ×_NN 50_CD
+          for_IN oligonucleotide_NN arrays_NNS ,_, and_CC 10_CD ×_NN 10_CD for_IN cDNA_NN )_) was_VBD
+          used_VBN to_TO define_VB the_DT local_JJ neighborhood_NN ._. Weights_NNP were_VBD
+          defined_VBN by_IN their_PRP$ Euclidean_NNP distance_NN to_TO the_DT center_NN probe_NN
+          using_VBG a_DT Gaussian_NNP function_NN (_( standard_JJ deviation_NN 19_CD for_IN 50_CD ×_NN
+          50_CD neighborhood_NN and_CC 3_CD for_IN the_DT 10_CD ×_NN 10_CD neighborhood_NN )_) ._. For_IN
+          both_DT oligonucleotide_NN and_CC cDNA_NN array_NN data_NNS ,_, this_DT adjustment_NN
+          was_VBD made_VBN after_IN global_JJ qspline_NN normalization_NN ._.
+        
+      
+      
+        Additional_JJ data_NNS files_NNS
+        Additional_JJ data_NNS files_NNS showing_VBG MA_NNP plots_NNS and_CC signal_NN
+        distributions_NNS from_IN all_PDT the_DT HIV_NNP ,_, glnA_NN ,_, tnrAarrays_NNS for_IN the_DT
+        different_JJ normalizations_NNS are_VBP available_JJ with_IN the_DT online_NN
+        version_NN of_IN this_DT paper_NN and_CC at_IN [_NN 17_CD ]_NN ._.
+        Additional_JJ data_NNS file_VBP 1_CD
+        MA_NNP plots_NNS and_CC signal_NN distributions_NNS from_IN all_PDT the_DT HIV_NNP
+        arrays_NNS
+        MA_NNP plots_NNS and_CC signal_NN distributions_NNS from_IN all_PDT the_DT HIV_NNP
+        arrays_NNS
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 2_CD
+        MA_NNP plots_NNS and_CC signal_NN distributions_NNS from_IN all_PDT the_DT glnA_NN
+        arrays_NNS
+        MA_NNP plots_NNS and_CC signal_NN distributions_NNS from_IN all_PDT the_DT glnA_NN
+        arrays_NNS
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 3_CD
+        MA_NNP plots_NNS and_CC signal_NN distributions_NNS from_IN all_PDT the_DT tnrA_NN
+        arrays_NNS
+        MA_NNP plots_NNS and_CC signal_NN distributions_NNS from_IN all_PDT the_DT tnrA_NN
+        arrays_NNS
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+      
+    
+  

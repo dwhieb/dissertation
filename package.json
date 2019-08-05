@@ -25,7 +25,7 @@
   "type": "module",
   "scripts": {
     "abbreviations": "node --experimental-modules --no-warnings scripts/build/abbreviations.mjs",
-    "anc": "java -Xmx500M -jar ANCTool-2.0.0-jar.jar",
+    "anc": "java -Xmx500M -jar scripts/ANC/ANCTool-2.0.0-jar.jar",
     "bib": "biber src/main",
     "build": "npm run compile && npm run bib && npm run compile",
     "compile": "cd src && xelatex main.tex && cd ..",

@@ -1,0 +1,477 @@
+
+  
+    
+      
+        Introduction_NNP
+        The_DT World_NNP Trade_NNP Center_NNP and_CC anthrax_NN terrorist_JJ attacks_NNS in_IN 2001_CD ,_, as_RB well_RB as_IN the_DT recent_JJ West_NNP
+        Nile_NNP virus_NN and_CC SARS_NNP outbreaks_NNS ,_, have_VBP motivated_VBN many_JJ public_JJ health_NN departments_NNS to_TO develop_VB
+        early_JJ disease_NN outbreak_NN detection_NN systems_NNS using_VBG non-diagnostic_JJ information_NN ,_, often_RB derived_VBN
+        from_IN electronic_JJ data_NNS collected_VBN for_IN other_JJ purposes_NNS (_(“ syndromic_JJ surveillance_NN” )_)
+        [_NN 1_CD ,_, 2_CD ,_, 3_CD ,_, 4_CD ,_, 5_CD ,_, 6_CD ,_, 7_CD ,_, 8_CD ,_, 9_CD ,_, 10_CD ,_, 11_CD ,_, 12_CD ,_, 13_CD ,_, 14_CD ,_, 15_CD ,_, 16_CD ,_, 17_CD ]_NN ._. These_DT include_VBP systems_NNS that_WDT monitor_VBP the_DT number_NN
+        of_IN emergency_NN department_NN visits_NNS ,_, primary_JJ care_NN visits_NNS ,_, ambulance_NN dispatches_NNS ,_, nurse_NN hot_JJ line_NN
+        calls_VBZ ,_, pharmaceutical_JJ sales_NNS ,_, and_CC West_NNP Nile–related_NNP dead_JJ bird_NN reports_NNS ._. The_DT establishment_NN of_IN
+        such_JJ systems_NNS involves_VBZ many_JJ challenges_NNS in_IN data_NNS collection_NN ,_, analytical_JJ methods_NNS ,_, signal_NN
+        interpretation_NN ,_, and_CC response_NN ._. Important_NNP analytical_JJ challenges_NNS include_VBP dealing_VBG with_IN the_DT
+        unknown_JJ time_NN ,_, place_NN ,_, and_CC size_NN of_IN an_DT outbreak_NN ,_, detecting_VBG an_DT outbreak_NN as_RB early_RB as_IN possible_JJ ,_,
+        adjusting_VBG for_IN natural_JJ temporal_JJ and_CC geographical_JJ variation_NN ,_, and_CC dealing_VBG with_IN the_DT lack_NN of_IN
+        suitable_JJ population-at-risk_JJ data_NNS ._.
+        Most_JJS analytical_JJ methods_NNS in_IN use_NN for_IN the_DT early_JJ detection_NN of_IN disease_NN outbreaks_NNS are_VBP purely_RB
+        temporal_JJ in_IN nature_NN [_NN 18_CD ,_, 19_CD ,_, 20_CD ,_, 21_CD ,_, 22_CD ]_NN ._. These_DT methods_NNS are_VBP useful_JJ for_IN detecting_VBG outbreaks_NNS that_WDT
+        simultaneously_RB affect_VB all_DT parts_NNS of_IN the_DT geographical_JJ region_NN under_IN surveillance_NN ,_, but_CC may_MD be_VB
+        late_RB at_IN detecting_VBG outbreaks_NNS that_WDT start_VBP locally_RB ._. While_IN purely_RB temporal_JJ methods_NNS can_MD be_VB used_VBN
+        in_IN parallel_JJ for_IN overlapping_VBG areas_NNS of_IN different_JJ sizes_NNS in_IN order_NN to_TO cover_VB all_DT possible_JJ
+        outbreaks_NNS ,_, that_DT approach_NN leads_VBZ to_TO a_DT severe_JJ problem_NN of_IN multiple_JJ testing_NN ,_, generating_VBG many_JJ
+        more_RBR false_JJ signals_NNS than_IN the_DT nominal_JJ statistical_JJ significance_NN level_NN would_MD indicate_VB ._.
+        First_LS studied_VBN by_IN Naus_NNP [_NN 23_CD ]_NN ,_, the_DT scan_VB statistic_NN is_VBZ an_DT elegant_JJ way_NN to_TO solve_VB problems_NNS of_IN
+        multiple_JJ testing_NN when_WRB there_EX are_VBP closely_RB overlapping_VBG spatial_NN areas_NNS and_CC /_NN or_CC time_NN intervals_NNS
+        being_VBG evaluated_VBN ._. Temporal_NNP ,_, spatial_NN ,_, and_CC space–time_NN scan_VB statistics_NNS [_NN 24_CD ,_, 25_CD ,_, 26_CD ,_, 27_CD ]_NN are_VBP now_RB
+        commonly_RB used_VBN for_IN disease_NN cluster_NN detection_NN and_CC evaluation_NN ,_, for_IN a_DT wide_JJ variety_NN of_IN diseases_NNS
+        including_VBG cancer_NN [_NN 28_CD ,_, 29_CD ]_NN ,_, Creutzfeldt-_NNP Jakob_NNP disease_NN [_NN 30_CD ]_NN ,_, granulocytic_JJ ehrlichiosis_NNS [_NN 31_CD ]_NN ,_,
+        sclerosis_NN [_NN 32_CD ]_NN ,_, and_CC diabetes_NN [_NN 33_CD ]_NN ._. The_DT basic_JJ idea_NN is_VBZ that_IN there_EX is_VBZ a_DT scanning_VBG window_NN that_IN
+        moves_NNS across_IN space_NN and_CC /_NN or_CC time_NN ._. For_IN each_DT location_NN and_CC size_NN of_IN the_DT window_NN ,_, the_DT number_NN of_IN
+        observed_VBD and_CC expected_VBN cases_NNS is_VBZ counted_VBN ._. Among_IN these_DT ,_, the_DT most_RBS “ unusual_JJ” excess_NN of_IN observed_VBD
+        cases_NNS is_VBZ noted_VBN ._. The_DT statistical_JJ significance_NN of_IN this_DT cluster_NN is_VBZ then_RB evaluated_VBN taking_VBG into_IN
+        account_NN the_DT multiple_JJ testing_NN stemming_VBG from_IN the_DT many_JJ potential_JJ cluster_NN locations_NNS and_CC sizes_NNS
+        evaluated_VBN ._.
+        To_TO date_NN ,_, all_DT scan_VB statistics_NNS require_VB either_CC a_DT uniform_NN population_NN at_IN risk_NN ,_, a_DT control_NN
+        group_NN ,_, or_CC other_JJ data_NNS that_WDT provide_VBP information_NN about_IN the_DT geographical_JJ and_CC temporal_JJ
+        distribution_NN of_IN the_DT underlying_VBG population_NN at_IN risk_NN ._. Census_NNP population_NN numbers_NNS are_VBP useful_JJ as_IN
+        a_DT denominator_NN for_IN cancer_NN ,_, birth_NN defects_NNS ,_, and_CC other_JJ registry_NN data_NNS ,_, where_WRB the_DT expected_VBN number_NN
+        of_IN cases_NNS can_MD be_VB accurately_RB estimated_VBN based_VBN on_IN the_DT underlying_VBG population_NN ._. They_PRP are_VBP less_RBR
+        relevant_JJ for_IN surveillance_NN data_NNS such_JJ as_IN emergency_NN department_NN visits_NNS and_CC pharmacy_NN sales_NNS ,_,
+        since_IN the_DT catchment_NN area_NN for_IN each_DT hospital_NN /_NN pharmacy_NN is_VBZ undefined_JJ ._. Even_RB if_IN it_PRP were_VBD
+        available_JJ ,_, the_DT catchment_NN area_NN population_NN would_MD not_RB be_VB a_DT good_JJ denominator_NN since_IN there_EX can_MD be_VB
+        significant_JJ natural_JJ geographical_JJ variation_NN in_IN health-care_NN utilization_NN data_NNS ,_, due_JJ to_TO
+        disparities_NNS in_IN disease_NN prevalence_NN ,_, access_NN to_TO health_NN care_NN ,_, and_CC consumer_NN behavior_NN [_NN 34_CD ]_NN ._. One_CD
+        option_NN when_WRB evaluating_VBG data_NNS that_WDT are_VBP affected_VBN by_IN utilization_NN behavior_NN is_VBZ to_TO use_VB total_JJ
+        volume_NN as_IN the_DT denominator_NN ._. For_IN example_NN ,_, one_PRP may_MD use_VB total_JJ emergency_NN department_NN visits_NNS as_IN a_DT
+        denominator_NN when_WRB evaluating_VBG diarrhea_NN visits_NNS [_NN 7_CD ]_NN ,_, or_CC similarly_RB ,_, all_DT pharmacy_NN sales_NNS as_IN the_DT
+        denominator_NN when_WRB evaluating_VBG diarrhea_NN medication_NN sales_NNS [_NN 4_CD ]_NN ._. This_DT may_MD or_CC may_MD not_RB work_VB
+        depending_VBG on_IN the_DT nature_NN of_IN the_DT data_NNS ._. For_IN example_NN ,_, changes_NNS in_IN total_JJ drug_NN sales_NNS due_JJ to_TO sales_NNS
+        promotions_NNS or_CC the_DT allergy_NN season_NN could_MD hide_VB a_DT true_JJ signal_NN or_CC create_VB a_DT false_JJ signal_NN for_IN the_DT
+        drug_NN category_NN of_IN interest_NN ._.
+        In_IN this_DT paper_NN we_PRP present_VB a_DT prospective_JJ space–time_NN permutation_NN scan_VB statistic_NN that_WDT does_VBZ
+        not_RB require_VB population-at-risk_JJ data_NNS ,_, and_CC which_WDT can_MD be_VB used_VBN for_IN the_DT early_JJ detection_NN of_IN
+        disease_NN outbreaks_NNS when_WRB only_RB the_DT number_NN of_IN cases_NNS is_VBZ available_JJ ._. The_DT method_NN can_MD be_VB used_VBN
+        prospectively_RB to_TO regularly_RB scan_VB a_DT geographical_JJ region_NN for_IN outbreaks_NNS of_IN any_DT location_NN and_CC any_DT
+        size_NN ._. For_IN each_DT location_NN and_CC size_NN ,_, it_PRP looks_VBZ at_IN potential_JJ one-day_JJ as_IN well_RB as_IN multi-day_JJ
+        outbreaks_NNS ,_, in_IN order_NN to_TO quickly_RB detect_VB a_DT rapidly_RB rising_VBG outbreak_NN and_CC still_RB have_VBP power_NN to_TO
+        detect_VB a_DT slowly_RB emerging_VBG outbreak_NN by_IN combining_VBG information_NN from_IN multiple_JJ days_NNS ._.
+        The_DT space–time_NN permutation_NN scan_VB statistic_NN was_VBD gradually_RB developed_VBN as_IN part_NN of_IN the_DT New_NNP
+        York_NNP City_NNP Department_NNP of_IN Health_NNP and_CC Mental_NNP Hygiene_NNP (_( DOHMH_NNP )_) surveillance_NN initiatives_NNS ,_, in_IN
+        parallel_JJ with_IN the_DT adaptation_NN of_IN population-at-risk-based_JJ scan_VB statistics_NNS for_IN dead_JJ bird_NN
+        reports_NNS (_( for_IN West_NNP Nile_NNP virus_NN )_) [_NN 13_CD ]_NN ,_, emergency_NN department_NN visits_NNS [_NN 7_CD ]_NN ,_, ambulance_NN dispatch_NN
+        calls_VBZ [_NN 6_CD ]_NN ,_, pharmacy_NN sales_NNS [_NN 4_CD ]_NN ,_, and_CC student_NN absentee_NN records_NNS [_NN 3_CD ]_NN ._. In_IN this_DT methodological_JJ
+        paper_NN ,_, the_DT space–time_NN permutation_NN scan_VB statistic_NN is_VBZ presented_VBN and_CC illustrated_VBN using_VBG
+        emergency_NN department_NN visits_NNS for_IN diarrhea_NN ,_, respiratory_JJ ,_, and_CC fever_NN /_NN flu-like_JJ illnesses_NNS ._.
+      
+      
+        Methods_NNP
+        
+          New_NNP York_NNP City_NNP Emergency_NNP Department_NNP Syndromic_NNP Surveillance_NNP System_NNP
+          The_DT New_NNP York_NNP City_NNP Emergency_NNP Department_NNP syndromic_JJ surveillance_NN system_NN is_VBZ described_VBN in_IN
+          detail_NN elsewhere_RB [_NN 7_CD ]_NN ._. In_IN brief_JJ ,_, participating_VBG hospitals_NNS transmit_VB electronic_JJ files_NNS to_TO the_DT
+          DOHMH_NNP seven_CD days_NNS per_IN week_NN ._. Files_NNP contain_VB data_NNS for_IN all_DT emergency_NN department_NN patient_NN visits_NNS
+          on_IN the_DT previous_JJ day_NN ,_, including_VBG the_DT time_NN of_IN visit_NN ,_, patient_NN age_NN ,_, gender_NN ,_, home_NN zip_NN code_NN ,_, and_CC
+          chief_JJ complaint—a_NN free-text_JJ field_NN that_IN captures_NNS the_DT patient_NN 's_POS own_JJ description_NN of_IN their_PRP$
+          illness_NN ._. As_IN of_IN November_NNP 2002_CD ,_, 38_CD of_IN New_NNP York_NNP City_NNP 's_POS 66_CD emergency_NN departments_NNS were_VBD
+          participating_VBG in_IN the_DT system_NN ,_, covering_VBG an_DT estimated_VBN 75_CD %_NN of_IN emergency_NN department_NN visits_NNS in_IN
+          the_DT city_NN ._.
+          Data_NNP are_VBP verified_VBN for_IN completeness_NN and_CC accuracy_NN ,_, concatenated_JJ into_IN a_DT single_JJ dataset_NN ,_,
+          and_CC appended_VBN to_TO a_DT master_NN archive_NN using_VBG SAS_NNP [_NN 35_CD ]_NN ._. To_TO categorize_NN visits_NNS into_IN “ syndromes_NNS”
+          (_( e_SYM ._. g_SYM ._. ,_, “ diarrhea_NN syndrome_NN” )_) ,_, a_DT computer_NN algorithm_NN searches_VBZ the_DT free-text_JJ chief_JJ complaint_NN
+          field_NN for_IN character_NN strings_NNS indicating_VBG symptoms_NNS consistent_JJ with_IN that_DT syndrome_NN ._.
+          The_DT goal_NN of_IN data_NNS analysis_NN ,_, which_WDT is_VBZ carried_VBN out_IN seven_CD days_NNS per_IN week_NN ,_, is_VBZ to_TO detect_VB
+          unusual_JJ increases_NNS in_IN key_JJ syndrome_NN categories_NNS ._. To_TO run_VB the_DT space–time_NN permutation_NN scan_VB
+          statistic_NN we_PRP have_VBP written_VBN a_DT SAS_NNP program_NN that_WDT generates_VBZ the_DT necessary_JJ case_NN and_CC parameter_NN
+          files_NNS ,_, invokes_VBZ the_DT SaTScan_NNP software_NN [_NN 36_CD ]_NN ,_, and_CC reads_VBZ the_DT results_NNS back_RB into_IN SAS_NNP for_IN
+          reporting_VBG and_CC display_NN ._.
+          Two_CD sets_NNS of_IN analyses_NNS are_VBP performed_VBN ,_, one_CD based_VBN on_IN assigning_VBG each_DT individual_NN to_TO the_DT
+          coordinates_VBZ of_IN their_PRP$ residential_JJ zip_NN code_NN and_CC the_DT other_JJ based_VBN on_IN their_PRP$ hospital_NN address_NN ._.
+          With_IN 183_CD zip_NN codes_NNS versus_CC 38_CD hospitals_NNS ,_, the_DT former_JJ utilizes_NNS more_RBR detailed_JJ geographical_JJ
+          information_NN ,_, while_IN the_DT latter_NN may_MD be_VB able_JJ to_TO pick_VB up_RP outbreaks_NNS not_RB only_RB related_VBN to_TO place_NN
+          of_IN residence_NN but_CC also_RB to_TO place_NN of_IN work_NN or_CC other_JJ outside_JJ activities_NNS (_( if_IN people_NNS go_VBP to_TO the_DT
+          nearest_JJS hospital_NN when_WRB they_PRP feel_VBP sick_JJ )_) ._. Residential_NNP zip_NN code_NN is_VBZ not_RB recorded_VBN by_IN the_DT
+          hospital_NN for_IN about_IN 3_CD %_NN of_IN patients_NNS ,_, and_CC for_IN the_DT analyses_NNS described_VBD here_RB ,_, these_DT individuals_NNS
+          are_VBP only_RB included_VBN in_IN the_DT hospital-based_JJ analyses_NNS ._.
+          The_DT performance_NN of_IN the_DT prospective_JJ space–time_NN permutation_NN scan_VB statistic_NN was_VBD evaluated_VBN
+          using_VBG both_DT hospital_NN and_CC residential_JJ analyses_NNS ._. We_PRP used_VBD historical_JJ diarrhea_NN data_NNS to_TO mimic_VB a_DT
+          prospective_JJ surveillance_NN system_NN with_IN daily_JJ analyses_NNS from_IN 15_CD November_NNP 2001_CD to_TO 14_CD November_NNP
+          2002_CD ._. For_IN each_DT of_IN these_DT days_NNS ,_, the_DT analysis_NN only_RB used_VBD data_NNS prior_RB to_TO and_CC including_VBG the_DT day_NN
+          in_IN question_NN ,_, ignoring_VBG all_DT data_NNS from_IN subsequent_JJ days_NNS ._. This_DT corresponds_NNS to_TO the_DT actual_JJ data_NN
+          available_JJ at_IN the_DT DOHMH_NNP 8_CD –_NN 12_CD h_NN after_IN the_DT end_NN of_IN that_DT day_NN ,_, when_WRB that_DT analysis_NN would_MD have_VB
+          been_VBN conducted_VBN if_IN the_DT system_NN has_VBZ been_VBN in_IN place_NN at_IN that_DT time_NN ._. We_PRP also_RB present_JJ one_CD week_NN of_IN
+          daily_JJ prospective_JJ analyses_NNS conducted_VBN in_IN November_NNP 2003_CD ,_, where_WRB the_DT daily_JJ analysis_NN was_VBD run_VBN
+          about_IN 12_CD h_NN after_IN the_DT conclusion_NN of_IN each_DT day_NN ,_, as_IN part_NN of_IN the_DT regular_JJ syndromic_JJ
+          surveillance_NN activities_NNS at_IN the_DT DOHMH_NNP ._.
+        
+        
+          The_DT Space–_NNP Time_NNP Permutation_NNP Scan_NNP Statistic_NNP
+          As_IN with_IN the_DT Poisson-_NNP and_CC Bernoulli-based_NNP prospective_JJ space–time_NN scan_VB statistics_NNS [_NN 27_CD ]_NN ,_,
+          the_DT space–time_NN permutation_NN scan_VB statistic_NN utilizes_NNS thousands_NNS or_CC millions_NNS of_IN overlapping_VBG
+          cylinders_NNS to_TO define_VB the_DT scanning_VBG window_NN ,_, each_DT being_VBG a_DT possible_JJ candidate_NN for_IN an_DT outbreak_NN ._.
+          The_DT circular_JJ base_NN represents_VBZ the_DT geographical_JJ area_NN of_IN the_DT potential_JJ outbreak_NN ._. A_DT typical_JJ
+          approach_NN is_VBZ to_TO first_JJ iterate_NN over_IN a_DT finite_JJ number_NN geographical_JJ grid_NN points_NNS and_CC then_RB
+          gradually_RB increase_VB the_DT circle_NN radius_JJ from_IN zero_CD to_TO some_DT maximum_NN value_NN defined_VBN by_IN the_DT user_NN ,_,
+          iterating_VBG over_IN the_DT zip_NN codes_NNS in_IN the_DT order_NN in_IN which_WDT they_PRP enter_VBP the_DT circle_NN ._. In_IN this_DT way_NN ,_,
+          both_DT small_JJ and_CC large_JJ circles_NNS are_VBP considered_VBN ,_, all_DT of_IN which_WDT overlap_VBP with_IN many_JJ other_JJ
+          circles_NNS ._. The_DT height_NN of_IN the_DT cylinder_NN represents_VBZ the_DT number_NN of_IN days_NNS ,_, with_IN the_DT requirement_NN
+          that_IN the_DT last_JJ day_NN is_VBZ always_RB included_VBN together_RB with_IN a_DT variable_JJ number_NN of_IN preceding_VBG days_NNS ,_,
+          up_IN to_TO some_DT maximum_NN defined_VBN by_IN the_DT user_NN ._. For_IN example_NN ,_, we_PRP may_MD consider_VB all_DT cylinders_NNS with_IN a_DT
+          height_NN of_IN 1_CD ,_, 2_CD ,_, 3_CD ,_, 4_CD ,_, 5_CD ,_, 6_CD ,_, or_CC 7_CD d_SYM ._. For_IN each_DT center_NN and_CC radius_JJ of_IN the_DT circular_JJ cylinder_NN
+          base_NN ,_, the_DT method_NN iterates_NNS over_IN all_DT possible_JJ temporal_JJ cylinder_NN lengths_NNS ._. This_DT means_VBZ that_IN we_PRP
+          will_MD evaluate_VB cylinders_NNS that_WDT are_VBP geographically_RB large_JJ and_CC temporally_RB short_JJ ,_, forming_VBG a_DT
+          flat_JJ disk_NN ,_, those_DT that_WDT are_VBP geographically_RB small_JJ and_CC temporally_RB long_JJ ,_, forming_VBG a_DT pole_NN ,_, and_CC
+          every_DT other_JJ combination_NN in_IN between_IN ._.
+          What_WP is_VBZ new_JJ with_IN the_DT space–time_NN permutation_NN scan_VB statistic_NN is_VBZ the_DT probability_NN model_NN ._.
+          Since_IN we_PRP do_VBP not_RB have_VB population-at-risk_JJ data_NNS ,_, the_DT expected_VBN must_MD be_VB calculated_VBN using_VBG only_RB
+          the_DT cases_NNS ._. Suppose_VB we_PRP have_VBP daily_JJ case_NN counts_VBZ for_IN zip-code_JJ areas_NNS ,_, where_WRB 
+          c_SYM
+          zd_NN is_VBZ the_DT observed_VBN number_NN of_IN cases_NNS in_IN zip-code_JJ area_NN 
+          z_SYM during_IN day_NN 
+          d_SYM ._. The_DT total_JJ number_NN of_IN observed_VBD cases_NNS (_(
+          C_NNP )_) is_VBZ
+          
+          For_IN each_DT zip_NN code_NN and_CC day_NN ,_, we_PRP calculate_VBP the_DT expected_VBN number_NN of_IN cases_NNS μ_NN
+          
+            zd_NN
+          conditioning_NN on_IN the_DT observed_VBN marginals_NNS :_:
+          
+          In_IN words_NNS ,_, this_DT is_VBZ the_DT proportion_NN of_IN all_DT cases_NNS that_WDT occurred_VBD in_IN zip-code_JJ area_NN 
+          z_SYM times_NNS the_DT total_JJ number_NN of_IN cases_NNS during_IN day_NN 
+          d_SYM ._. The_DT expected_VBN number_NN of_IN cases_NNS μ_NN
+          
+            A_DT
+          in_IN a_DT particular_JJ cylinder_NN 
+          A_DT is_VBZ the_DT summation_NN of_IN these_DT expectations_NNS over_IN all_PDT the_DT zip-code-days_JJ
+          within_IN that_DT cylinder_NN :_:
+          
+          The_DT underlying_VBG assumption_NN when_WRB calculating_VBG these_DT expected_VBN numbers_NNS is_VBZ that_IN the_DT
+          probability_NN of_IN a_DT case_NN being_VBG in_IN zip-code_JJ area_NN 
+          z_SYM ,_, given_VBN that_IN it_PRP was_VBD observed_VBN on_IN day_NN 
+          d_SYM ,_, is_VBZ the_DT same_JJ for_IN all_DT days_NNS 
+          d_SYM ._.
+          Let_VB 
+          c_SYM
+          A_DT be_VB the_DT observed_VBN number_NN of_IN cases_NNS in_IN the_DT cylinder_NN ._. Conditioned_NNP on_IN
+          the_DT marginals_NNS ,_, and_CC when_WRB there_EX is_VBZ no_DT space–time_NN interaction_NN ,_, 
+          c_SYM
+          A_DT is_VBZ distributed_VBN according_VBG to_TO the_DT hypergeometric_JJ distribution_NN
+          with_IN mean_NN μ_NN
+          
+            A_DT
+          and_CC probability_NN function_NN
+          
+          When_WRB both_DT Σ_NN
+          
+            z_SYM
+          
+          εA_NN
+          c_SYM
+          zd_NN and_CC Σ_NN
+          
+            d_SYM
+          
+          εA_NN
+          c_SYM
+          zd_NN are_VBP small_JJ compared_VBN to_TO 
+          C_NNP ,_, c_SYM
+          A_DT is_VBZ approximately_RB Poisson_NNP distributed_VBD with_IN mean_NN μ_NN
+          
+            A_DT
+          [_NN 37_CD ]_NN ._. Based_VBN on_IN this_DT approximation_NN ,_, we_PRP use_VBP the_DT Poisson_NNP generalized_JJ likelihood_NN ratio_NN
+          (_( GLR_NNP )_) as_IN a_DT measure_NN of_IN the_DT evidence_NN that_DT cylinder_NN 
+          A_DT contains_VBZ an_DT outbreak_NN :_:
+          
+          In_IN words_NNS ,_, this_DT is_VBZ the_DT observed_VBN divided_VBN by_IN the_DT expected_VBN to_TO the_DT power_NN of_IN the_DT observed_VBN
+          inside_IN the_DT cylinder_NN ,_, multiplied_VBN by_IN the_DT observed_VBN divided_VBN by_IN the_DT expected_VBN to_TO the_DT power_NN of_IN
+          the_DT observed_VBN outside_IN the_DT cylinder_NN ._. Among_IN the_DT many_JJ cylinders_NNS evaluated_VBN ,_, the_DT one_CD with_IN the_DT
+          maximum_JJ GLR_NNP constitutes_VBZ the_DT space–time_NN cluster_NN of_IN cases_NNS that_WDT is_VBZ least_JJS likely_JJ to_TO be_VB a_DT
+          chance_NN occurrence_NN and_CC ,_, hence_RB ,_, is_VBZ the_DT primary_JJ candidate_NN for_IN a_DT true_JJ outbreak_NN ._. One_CD reason_NN
+          for_IN using_VBG the_DT Poisson_NNP approximation_NN is_VBZ that_IN it_PRP is_VBZ much_RB easier_JJR to_TO work_VB with_IN this_DT
+          distribution_NN than_IN the_DT hypergeometric_JJ when_WRB adjusting_VBG for_IN space_NN by_IN day-of-week_JJ interaction_NN
+          (_( see_VB below_IN )_) ,_, as_IN the_DT sum_NN of_IN Poisson_NNP distributions_NNS is_VBZ still_RB a_DT Poisson_NNP distribution_NN ._.
+          Since_IN we_PRP are_VBP evaluating_VBG a_DT huge_JJ number_NN of_IN outbreak_NN locations_NNS ,_, sizes_NNS ,_, and_CC time_NN lengths_NNS ,_,
+          there_EX is_VBZ serious_JJ multiple_JJ testing_NN that_IN we_PRP need_VBP to_TO adjust_VB for_IN ._. Since_IN we_PRP do_VBP not_RB have_VB
+          population-at-risk_JJ data_NNS ,_, this_DT cannot_NN be_VB done_VBN in_IN any_DT of_IN the_DT usual_JJ ways_NNS for_IN scan_VB
+          statistics_NNS ._. Instead_RB ,_, it_PRP is_VBZ done_VBN by_IN creating_VBG a_DT large_JJ number_NN of_IN random_JJ permutations_NNS of_IN the_DT
+          spatial_NN and_CC temporal_JJ attributes_NNS of_IN each_DT case_NN in_IN the_DT dataset_NN ._. That_DT is_VBZ ,_, we_PRP shuffle_NN the_DT
+          dates_NNS /_NN times_NNS and_CC assign_VB them_PRP to_TO the_DT original_JJ set_NN of_IN case_NN locations_NNS ,_, ensuring_VBG that_IN both_DT the_DT
+          spatial_NN and_CC temporal_JJ marginals_NNS are_VBP unchanged_JJ ._. After_IN that_DT ,_, the_DT most_RBS likely_JJ cluster_NN is_VBZ
+          calculated_VBN for_IN each_DT simulated_JJ dataset_NN in_IN exactly_RB the_DT same_JJ way_NN as_IN for_IN the_DT real_JJ data_NN ._.
+          Statistical_NNP significance_NN is_VBZ evaluated_VBN using_VBG Monte_NNP Carlo_NNP hypothesis_NNS testing_NN [_NN 38_CD ]_NN ._. If_IN ,_, for_IN
+          example_NN ,_, the_DT maximum_JJ GLR_NNP is_VBZ calculated_VBN from_IN 999_CD simulated_JJ datasets_NNS ,_, and_CC the_DT maximum_JJ GLR_NNP
+          for_IN the_DT real_JJ data_NN is_VBZ higher_JJR than_IN the_DT 50_CD th_NN highest_JJS ,_, then_RB that_DT cluster_NN is_VBZ statistically_RB
+          significant_JJ at_IN the_DT 0_CD ._. 05_CD level_NN ._. In_IN general_JJ terms_NNS ,_, the_DT 
+          p_NN -_: value_NN is_VBZ 
+          p_NN =_SYM 
+          R_NN /_NN (_(
+          S_NNP +_NN 1_LS )_) where_WRB 
+          R_NN is_VBZ the_DT rank_NN of_IN the_DT maximum_JJ GLR_NNP from_IN the_DT real_JJ dataset_NN and_CC 
+          S_NNP is_VBZ the_DT number_NN of_IN simulated_JJ datasets_NNS [_NN 38_CD ]_NN ._. In_IN addition_NN to_TO 
+          p_NN -_: values_NNS ,_, we_PRP also_RB report_VBP null_NN occurrence_NN rates_NNS [_NN 8_CD ]_NN ,_, such_JJ as_IN once_RB every_DT
+          45_CD d_SYM or_CC once_RB every_DT 23_CD mo_NN ._. The_DT null_NN occurrence_NN rate_NN is_VBZ the_DT expected_VBN time_NN between_IN seeing_VBG an_DT
+          outbreak_NN signal_NN with_IN an_DT equal_JJ or_CC higher_JJR GLR_NNP assuming_VBG that_IN the_DT null_NN hypothesis_NNS is_VBZ true_JJ ._.
+          For_IN daily_JJ analyses_NNS ,_, it_PRP is_VBZ defined_VBN as_IN once_RB every_DT 1_CD
+          /_NN p_NN d_SYM ._. For_IN example_NN ,_, under_IN the_DT null_NN hypothesis_NNS we_PRP would_MD at_IN the_DT 0_CD ._. 05_CD level_NN
+          on_IN average_JJ expect_VBP one_CD false_JJ alarm_NN every_DT 20_CD d_SYM for_IN each_DT syndrome_NN under_IN surveillance_NN ._.
+          Because_IN of_IN the_DT Monte_NNP Carlo_NNP hypothesis_NNS testing_NN ,_, the_DT method_NN is_VBZ computer_NN intensive_JJ ._. To_TO
+          facilitate_VB the_DT use_NN of_IN the_DT methods_NNS by_IN local_JJ ,_, state_NN ,_, and_CC federal_JJ health_NN departments_NNS ,_, the_DT
+          space–time_NN permutation_NN scan_VB statistic_NN has_VBZ been_VBN implemented_VBN as_IN a_DT feature_NN in_IN the_DT free_JJ and_CC
+          public_JJ domain_NN SaTScan_NNP software_NN [_NN 36_CD ]_NN ._.
+        
+        
+          Implementation_NNP for_IN New_NNP York_NNP City_NNP Syndromic_NNP Surveillance_NNP
+          Depending_VBG on_IN the_DT application_NN ,_, the_DT method_NN may_MD be_VB used_VBN with_IN different_JJ parameter_NN
+          settings_NNS ._. For_IN the_DT syndromic_JJ surveillance_NN analyses_NNS we_PRP set_VBD the_DT upper_JJ limit_NN on_IN the_DT
+          geographical_JJ size_NN of_IN the_DT outbreak_NN to_TO be_VB a_DT circle_NN with_IN a_DT 5_CD -_: km_NN radius_JJ ,_, and_CC the_DT maximum_NN
+          temporal_JJ length_NN to_TO be_VB 7_CD d_SYM ._. This_DT means_VBZ that_IN we_PRP are_VBP evaluating_VBG outbreaks_NNS with_IN a_DT circle_NN
+          radius_JJ size_NN anywhere_RB between_IN 0_CD km_NN (_( one_CD zip_NN code_NN only_RB )_) and_CC 5_CD km_NN ,_, and_CC a_DT time_NN length_NN
+          (_( cylinder_NN height_NN )_) of_IN 1_CD to_TO 7_CD d_SYM ._. The_DT latter_JJ restriction_NN is_VBZ a_DT reflection_NN of_IN the_DT belief_NN that_IN
+          the_DT main_JJ purpose_NN of_IN this_DT syndromic_JJ surveillance_NN system_NN is_VBZ early_JJ disease_NN outbreak_NN
+          detection_NN ,_, and_CC if_IN the_DT outbreak_NN has_VBZ existed_VBN for_IN over_IN 1_CD wk_NN ,_, it_PRP is_VBZ more_RBR likely_JJ to_TO be_VB picked_VBN
+          up_RB by_IN reporting_NN of_IN specific_JJ disease_NN diagnoses_NNS by_IN clinicians_NNS or_CC laboratories_NNS ._.
+          Another_DT practical_JJ choice_NN is_VBZ the_DT total_JJ number_NN of_IN days_NNS to_TO include_VB in_IN the_DT analysis_NN ._. One_CD
+          option_NN is_VBZ to_TO include_VB all_DT previous_JJ days_NNS for_IN which_WDT data_NNS are_VBP available_JJ ._. We_PRP chose_VBD instead_RB to_TO
+          analyze_VB the_DT last_JJ 30_CD d_SYM of_IN data_NNS ,_, adding_VBG one_CD day_NN and_CC removing_VBG another_DT for_IN each_DT daily_JJ
+          analysis_NN ._. We_PRP believe_VBP this_DT time_NN frame_NN provides_VBZ enough_JJ baseline_NN beyond_IN the_DT 1_CD -_: to_TO 7_CD -_: d_SYM
+          scanning_VBG window_NN to_TO establish_VB the_DT usual_JJ pattern_NN of_IN visits_NNS while_IN avoiding_VBG inclusion_NN of_IN data_NNS
+          that_WDT may_MD no_RB longer_RB be_VB relevant_JJ to_TO the_DT current_JJ period_NN ._.
+          To_TO reduce_VB the_DT computational_NN load_NN ,_, we_PRP limited_VBD the_DT centers_NNS of_IN the_DT circular_JJ cylinder_NN
+          bases_NNS to_TO be_VB a_DT collection_NN of_IN 446_CD zip-code_JJ area_NN centroids_NNS and_CC hospital_NN locations_NNS in_IN New_NNP
+          York_NNP City_NNP and_CC adjacent_JJ areas_NNS ._. This_DT ensures_VBZ ,_, among_IN other_JJ things_NNS ,_, that_IN each_DT zip-code_JJ area_NN
+          may_MD constitute_VB an_DT outbreak_NN on_IN its_PRP$ own_JJ ._.
+          The_DT last_JJ parameter_NN that_IN we_PRP need_VBP to_TO set_VB is_VBZ the_DT number_NN of_IN Monte_NNP Carlo_NNP replications_NNS used_VBN
+          for_IN each_DT analysis_NN ._. For_IN the_DT daily_JJ prospective_JJ analyses_NNS we_PRP chose_VBD 999_CD ,_, which_WDT meant_VBD that_IN the_DT
+          smallest_JJS 
+          p_NN -_: value_NN we_PRP could_MD get_VB was_VBD 0_CD ._. 001_CD ,_, so_IN that_IN the_DT smallest_JJS null_NN occurrence_NN
+          rate_NN possible_JJ for_IN a_DT signal_NN was_VBD once_RB every_DT 2_CD ._. 7_CD y_NN ._. In_IN our_PRP$ system_NN ,_, signals_NNS of_IN that_DT strength_NN
+          clearly_RB merit_NN investigation_NN ._. For_IN the_DT historical_JJ evaluation_NN ,_, in_IN order_NN to_TO obtain_VB more_RBR
+          precise_JJ null_NN occurrence_NN rates_NNS ,_, we_PRP set_VBD the_DT number_NN of_IN replications_NNS to_TO 9_CD ,_, 999_CD ._.
+        
+        
+          Adjusting_NNP for_IN Space_NNP by_IN Day-of-_NNP Week_NNP Interaction_NNP
+          The_DT space–time_NN permutation_NN scan_VB statistic_NN automatically_RB adjusts_VBZ for_IN any_DT purely_RB spatial_NN
+          and_CC purely_RB temporal_JJ variation_NN ._. For_IN many_JJ syndromic_JJ surveillance_NN data_NNS sources_NNS ,_, there_EX is_VBZ
+          also_RB natural_JJ space_NN by_IN day-of-week_JJ interaction_NN in_IN the_DT data_NNS that_WDT is_VBZ not_RB due_JJ to_TO a_DT disease_NN
+          outbreak_NN but_CC to_TO consumer_NN behavior_NN ,_, store_NN hours_NNS ,_, etc_FW ._. For_IN example_NN ,_, if_IN a_DT particular_JJ
+          pharmacy_NN has_VBZ an_DT exceptionally_RB high_JJ number_NN of_IN sales_NNS on_IN Sundays_NNS because_IN neighboring_VBG
+          pharmacies_NNS are_VBP closed_VBN ,_, we_PRP might_MD get_VB a_DT signal_NN for_IN this_DT pharmacy_NN every_DT Sunday_NNP unless_IN we_PRP
+          adjust_VBP for_IN this_DT space_NN by_IN day-of-week_JJ interaction_NN ._. This_DT can_MD be_VB done_VBN through_IN a_DT stratified_JJ
+          random_JJ permutation_NN procedure_NN ._.
+          The_DT first_JJ step_NN is_VBZ to_TO stratify_NN the_DT data_NNS by_IN day_NN of_IN week_NN :_: Monday_NNP ,_, Tuesday_NNP ,_, …_NN ,_, Sunday_NNP ._. The_DT
+          space–time_NN permutation_NN randomization_NN step_NN is_VBZ then_RB done_VBN separately_RB for_IN each_DT day_NN of_IN the_DT
+          week_NN ._. For_IN each_DT zip_NN code_NN and_CC day_NN combination_NN ,_, the_DT expected_VBN is_VBZ then_RB calculated_VBN using_VBG only_RB
+          data_NNS from_IN that_DT day_NN of_IN the_DT week_NN ._. For_IN each_DT cylinder_NN ,_, both_DT the_DT observed_VBD and_CC expected_VBN number_NN
+          of_IN cases_NNS is_VBZ summed_VBD over_IN all_DT day-of-week_JJ strata_NN ,_, zip_NN code_NN ,_, and_CC day_NN combinations_NNS within_IN
+          that_DT cylinder_NN ._. The_DT same_JJ technique_NN can_MD be_VB used_VBN to_TO adjust_VB for_IN other_JJ types_NNS of_IN space–time_NN
+          interaction_NN ._. The_DT underlying_VBG assumption_NN when_WRB calculating_VBG these_DT expected_VBN numbers_NNS is_VBZ now_RB
+          that_IN the_DT probability_NN of_IN a_DT case_NN being_VBG in_IN zip-code_JJ area_NN 
+          z_SYM ,_, given_VBN that_IN it_PRP was_VBD observed_VBN on_IN a_DT Monday_NNP ,_, is_VBZ the_DT same_JJ for_IN all_DT Mondays_NNS ,_,
+          etc_FW ._.
+          All_DT our_PRP$ analyses_NNS were_VBD adjusted_VBN for_IN space_NN by_IN day-of-week_JJ interaction_NN ._.
+        
+        
+          Missing_NNP Data_NNP
+          Daily_JJ disease_NN surveillance_NN systems_NNS require_VBP rapid_JJ transmission_NN of_IN data_NNS ,_, and_CC it_PRP may_MD not_RB
+          be_VB possible_JJ to_TO get_VB complete_JJ data_NNS from_IN each_DT provider_NN every_DT single_JJ day_NN ._. When_WRB we_PRP first_RB tried_VBD
+          the_DT new_JJ method_NN in_IN New_NNP York_NNP City_NNP ,_, a_DT number_NN of_IN highly_RB significant_JJ outbreak_NN signals_NNS were_VBD
+          generated_VBN that_WDT were_VBD artifacts_NNS of_IN previously_RB unrecognized_JJ missing_VBG or_CC incomplete_JJ data_NNS from_IN
+          one_CD or_CC more_JJR hospitals_NNS ._. This_DT is_VBZ a_DT good_JJ reflection_NN on_IN the_DT method_NN ,_, since_IN it_PRP should_MD be_VB able_JJ
+          to_TO detect_VB abnormalities_NNS in_IN the_DT data_NNS no_DT matter_NN what_WP their_PRP$ cause_NN ,_, but_CC it_PRP also_RB illustrates_VBZ
+          the_DT importance_NN of_IN accounting_NN for_IN missing_VBG data_NNS in_IN order_NN to_TO create_VB an_DT early_JJ detection_NN
+          system_NN that_WDT is_VBZ useful_JJ on_IN a_DT practical_JJ level_NN ._.
+          Depending_VBG on_IN the_DT exact_JJ nature_NN of_IN the_DT missing_VBG data_NN ,_, there_EX are_VBP different_JJ ways_NNS to_TO handle_VB
+          it_PRP ._. We_PRP used_VBD a_DT combination_NN of_IN three_CD different_JJ approaches_NNS ._. (_( 1_LS )_) If_IN a_DT hospital_NN had_VBD missing_VBG
+          data_NNS for_IN all_DT of_IN the_DT past_JJ 7_CD d_SYM (_( all_DT possible_JJ days_NNS within_IN the_DT cylinder_NN )_) ,_, we_PRP completely_RB
+          removed_VBD that_DT hospital_NN from_IN the_DT analysis_NN ,_, including_VBG all_DT previous_JJ 23_CD d_SYM ._. (_( 2_LS )_) If_IN a_DT hospital_NN
+          had_VBD no_DT missing_VBG data_NN during_IN the_DT last_JJ 7_CD d_SYM ,_, but_CC one_CD or_CC more_JJR missing_VBG days_NNS during_IN the_DT previous_JJ
+          23_CD baseline_NN days_NNS ,_, then_RB we_PRP completely_RB removed_VBD the_DT baseline_NN days_NNS with_IN some_DT missing_VBG data_NN ,_,
+          for_IN all_DT of_IN the_DT hospitals_NNS ._. (_( 3_LS )_) If_IN a_DT hospital_NN had_VBD missing_VBG data_NNS for_IN at_IN least_JJS one_CD but_CC not_RB all_DT
+          of_IN the_DT last_JJ 7_CD d_SYM ,_, then_RB we_PRP removed_VBD those_DT missing_VBG days_NNS together_RB with_IN all_DT previous_JJ days_NNS for_IN
+          the_DT same_JJ hospital_NN and_CC the_DT same_JJ day_NN of_IN week_NN ._. That_DT is_VBZ ,_, if_IN Monday_NNP was_VBD missing_VBG during_IN the_DT
+          last_JJ week_NN ,_, then_RB we_PRP removed_VBD all_DT Mondays_NNS for_IN that_DT hospital_NN ._. This_DT removal_NN introduces_VBZ
+          artificial_JJ space_NN by_IN day-of-week_JJ interaction_NN ,_, so_IN this_DT approach_NN only_RB works_VBZ if_IN it_PRP is_VBZ
+          implemented_VBN in_IN conjunction_NN with_IN the_DT stratified_JJ adjustment_NN for_IN space_NN by_IN day-of-week_JJ
+          interaction_NN ._.
+          For_IN some_DT analyses_NNS ,_, more_JJR than_IN one_CD of_IN these_DT approaches_NNS were_VBD used_VBN simultaneously_RB ._. Note_VB
+          that_RB ,_, since_IN the_DT missing_VBG data_NN depend_VBP on_IN the_DT hospital_NN ,_, the_DT solution_NN is_VBZ to_TO remove_VB specific_JJ
+          hospitals_NNS and_CC days_NNS rather_RB than_IN zip_NN codes_NNS and_CC days_NNS ,_, even_RB when_WRB we_PRP are_VBP doing_VBG the_DT
+          zip-code-based_JJ residential_JJ analyses_NNS ._. If_IN there_EX are_VBP many_JJ hospitals_NNS with_IN missing_VBG data_NNS ,_, then_RB
+          the_DT second_JJ approach_NN could_MD potentially_RB remove_VB all_DT or_CC almost_RB all_DT of_IN the_DT baseline_NN days_NNS ._. To_TO
+          avoid_VB this_DT ,_, one_PRP could_MD sometimes_RB go_VB further_JJ back_RB in_IN time_NN and_CC add_VB the_DT same_JJ number_NN of_IN
+          earlier_JJR days_NNS to_TO compensate_VB ._. Another_DT option_NN is_VBZ to_TO impute_NN into_IN the_DT cells_NNS with_IN missing_VBG data_NNS
+          a_DT Poisson_NNP random_JJ number_NN of_IN cases_NNS generated_VBN under_IN the_DT null_NN hypothesis_NNS ._. Given_VBN the_DT
+          completeness_NN of_IN our_PRP$ data_NNS ,_, neither_DT of_IN these_DT methods_NNS were_VBD employed_VBN (_( 94_CD %_NN of_IN analyses_NNS were_VBD
+          conducted_VBN with_IN four_CD or_CC fewer_JJR baseline_NN days_NNS removed_VBN )_) ._.
+        
+      
+      
+        Results_NNS
+        
+          Evaluation_NNP Using_VBG Historical_NNP Data_NNP :_: Diarrhea_NNP Surveillance_NNP
+          We_PRP first_RB tested_VBD the_DT new_JJ method_NN by_IN mimicking_VBG daily_JJ prospective_JJ analyses_NNS of_IN hospital_NN
+          emergency_NN department_NN data_NNS from_IN 15_CD Nov_NNP 2001_CD to_TO 14_CD Nov_NNP 2002_CD ,_, looking_VBG at_IN diarrhea_NN visits_NNS ._.
+          Signals_NNP with_IN 
+          p_NN ≤_NN 0_CD
+          ._. 0027_CD are_VBP listed_VBN in_IN Table_NNP 1_CD and_CC depicted_VBN on_IN the_DT map_NN in_IN Figure_NN 1_CD ._. That_DT
+          is_VBZ ,_, we_PRP only_RB list_VBP those_DT signals_NNS with_IN a_DT null_NN occurrence_NN rate_NN of_IN once_RB every_DT year_NN or_CC less_RBR
+          often_RB ._.
+          For_IN the_DT residential_JJ zip-code_JJ analyses_NNS ,_, there_EX were_VBD two_CD such_JJ signals_NNS ._. For_IN the_DT hospital_NN
+          analyses_NNS ,_, there_EX were_VBD six_CD ,_, two_CD of_IN which_WDT occurred_VBD in_IN the_DT same_JJ place_NN on_IN consecutive_JJ days_NNS ._. It_PRP
+          is_VBZ worth_JJ noting_VBG that_IN at_IN the_DT false_JJ alarm_NN rate_NN chosen_VBN ,_, none_NN of_IN the_DT residential_JJ signals_NNS
+          correspond_VB to_TO any_DT of_IN the_DT hospital_NN signals_NNS ._.
+          For_IN the_DT residential_JJ analysis_NN ,_, the_DT strongest_JJS signal_NN was_VBD on_IN 9_CD February_NNP 2002_CD ,_, covering_VBG 17_CD
+          zip-code_JJ areas_NNS in_IN southern_JJ Bronx_NNP and_CC northern_JJ Manhattan_NNP ._. This_DT signal_NN had_VBD 63_CD cases_NNS
+          observed_VBD over_IN 2_CD d_SYM when_WRB 34_CD ._. 7_CD were_VBD expected_VBN (_( relative_JJ risk_NN =_SYM 1_CD ._. 82_CD )_) ._. With_IN a_DT null_NN occurrence_NN
+          rate_NN of_IN once_RB every_DT 5_CD ._. 5_CD y_NN ,_, a_DT spike_NN in_IN cases_NNS of_IN this_DT magnitude_NN is_VBZ unlikely_JJ to_TO be_VB due_JJ to_TO
+          random_JJ variation_NN ._. The_DT signal_NN immediately_RB preceded_VBN a_DT sharp_JJ increase_NN in_IN citywide_JJ diarrheal_NN
+          visits_NNS from_IN 10_CD February_NNP to_TO 20_CD March_NNP (_( Figure_NN 2_LS )_) ._. In_IN both_DT the_DT localized_JJ 9_CD February_NNP cluster_NN
+          and_CC the_DT citywide_JJ outbreak_NN ,_, the_DT increase_NN was_VBD most_RBS notable_JJ among_IN children_NNS less_JJR than_IN 5_CD y_NN of_IN
+          age_NN ._. The_DT weaker_JJR 26_CD February_NNP hospital_NN signal_NN and_CC the_DT 7_CD March_NNP residential_JJ signal_NN that_WDT were_VBD
+          centered_VBN in_IN northern_JJ Manhattan_NNP occurred_VBD at_IN the_DT peak_NN of_IN this_DT citywide_JJ outbreak_NN ._. Laboratory_NN
+          investigation_NN of_IN the_DT citywide_JJ increase_NN in_IN diarrheal_NN activity_NN indicated_VBD the_DT rotavirus_JJ as_IN
+          the_DT most_RBS likely_JJ causative_JJ agent_NN ._.
+          The_DT two_CD hospital_NN signals_NNS on_IN 1_CD November_NNP and_CC 2_CD November_NNP 2002_CD ,_, were_VBD at_IN the_DT same_JJ three_CD
+          hospitals_NNS in_IN southern_JJ Bronx_NNP and_CC northern_JJ Manhattan_NNP ,_, with_IN null_NN occurrence_NN rates_NNS of_IN 1_CD ._. 6_CD and_CC
+          3_CD ._. 4_CD y_NN ,_, respectively_RB ._. These_DT signals_NNS immediately_RB preceded_VBN another_DT sharp_JJ increase_NN in_IN
+          citywide_JJ diarrheal_NN activity_NN ,_, this_DT time_NN among_IN individuals_NNS of_IN all_DT ages_NNS (_( Figure_NN 2_LS )_) ._. This_DT
+          citywide_JJ outbreak_NN lasted_VBD approximately_RB 6_CD wk_NN and_CC coincided_VBD with_IN a_DT number_NN of_IN institutional_JJ
+          outbreaks_NNS in_IN nursing_NN homes_NNS and_CC on_IN cruise_NN ships_NNS ._. Laboratory_NN investigation_NN of_IN several_JJ of_IN
+          these_DT outbreaks_NNS revealed_VBD the_DT norovirus_JJ as_IN the_DT most_RBS likely_JJ causative_JJ agent_NN ._. A_DT similar_JJ
+          citywide_JJ outbreak_NN of_IN norovirus_JJ in_IN 2001_CD began_VBD shortly_RB before_IN the_DT 21_CD November_NNP 2001_CD hospital_NN
+          signal_NN in_IN northern_JJ Bronx_NNP ,_, which_WDT had_VBD a_DT null_NN occurrence_NN rate_NN of_IN once_RB every_DT 3_CD ._. 4_CD y_NN ._.
+          For_IN the_DT hospital_NN analyses_NNS ,_, the_DT strongest_JJS signal_NN was_VBD a_DT 1_CD -_: d_SYM cluster_NN at_IN a_DT single_JJ hospital_NN
+          in_IN Queens_NNP on_IN 11_CD January_NNP 2002_CD ,_, with_IN ten_CD diarrhea_NN cases_NNS when_WRB only_RB 2_CD ._. 3_CD were_VBD expected_VBN ,_, which_WDT
+          one_PRP would_MD only_RB expect_VB to_TO happen_VB once_RB every_DT 3_CD ._. 9_CD y_NN ._. Being_VBG very_RB local_JJ in_IN both_DT time_NN and_CC
+          space_NN ,_, it_PRP is_VBZ different_JJ from_IN the_DT previously_RB described_VBN signals_NNS preceding_VBG citywide_JJ
+          outbreaks_NNS ._. While_IN examination_NN of_IN individual-level_JJ data_NNS revealed_VBD a_DT predominance_NN of_IN infants_NNS
+          under_IN the_DT age_NN of_IN two_CD ,_, this_DT cluster_NN could_MD not_RB be_VB associated_VBN with_IN any_DT known_VBN outbreak_NN ,_, and_CC
+          retrospective_NN investigation_NN was_VBD not_RB feasible_JJ ._.
+          As_IN shown_VBN in_IN Table_NNP 1_CD ,_, at_IN the_DT 
+          p_NN =_SYM 0_CD ._. 0027_CD threshold_NN there_EX were_VBD six_CD and_CC two_CD signals_NNS for_IN the_DT hospital_NN
+          and_CC residential_JJ analyses_NNS ,_, respectively_RB ,_, compared_VBN to_TO one_CD expected_VBN in_IN each_DT ._. Figure_NN 3_CD shows_VBZ
+          the_DT number_NN of_IN days_NNS on_IN which_WDT the_DT 
+          p_NN -_: value_NN of_IN the_DT most_RBS likely_JJ cluster_NN was_VBD within_IN a_DT given_VBN range_NN ._. Had_VBD the_DT
+          null_NN hypothesis_NNS been_VBN true_JJ on_IN all_DT 365_CD d_SYM analyzed_VBD ,_, the_DT 
+          p_NN -_: values_NNS would_MD have_VB been_VBN uniformly_RB distributed_VBN between_IN zero_CD and_CC one_CD ._.
+          The_DT fact_NN that_IN in_IN our_PRP$ data_NNS there_EX were_VBD more_JJR days_NNS with_IN low_JJ rather_RB than_IN high_JJ 
+          p_NN -_: values_NNS is_VBZ an_DT indication_NN that_IN there_EX may_MD be_VB additional_JJ true_JJ
+          “ outbreaks_NNS” that_WDT are_VBP indistinguishable_JJ from_IN random_JJ noise_NN ._. These_DT could_MD be_VB very_RB small_JJ
+          disease_NN outbreaks_NNS ,_, for_IN example_NN ,_, due_JJ to_TO spoiled_VBD food_NN eaten_VBN by_IN only_RB a_DT few_JJ people_NNS ,_, or_CC they_PRP
+          could_MD be_VB artifacts_NNS caused_VBN by_IN ,_, for_IN example_NN ,_, changes_NNS in_IN the_DT hours_NNS of_IN operation_NN at_IN an_DT
+          emergency_NN department_NN or_CC coding_VBG differences_NNS between_IN the_DT emergency_NN department_NN triage_NN
+          nurses_NNS ._.
+        
+        
+          Daily_NNP Prospective_JJ Surveillance_NNP
+          Since_IN 1_CD November_NNP 2003_CD ,_, the_DT space–time_NN permutation_NN scan_VB statistic_NN has_VBZ been_VBN used_VBN daily_JJ
+          in_IN parallel_JJ with_IN the_DT population-at-risk-based_JJ space–time_NN scan_VB statistics_NNS [_NN 7_CD ]_NN as_IN part_NN of_IN
+          the_DT DOHMH_NNP Emergency_NNP Department_NNP surveillance_NN system_NN ._. For_IN respiratory_JJ symptoms_NNS ,_, fever_NN /_NN flu_NN ,_,
+          and_CC diarrhea_NN ,_, the_DT results_NNS for_IN the_DT last_JJ week_NN of_IN November_NNP are_VBP listed_VBN in_IN Tables_NNP 2_CD and_CC 3_CD ._. For_IN
+          diarrhea_NN or_CC respiratory_JJ symptoms_NNS there_EX were_VBD no_DT strong_JJ signals_NNS warranting_VBG an_DT
+          epidemiological_JJ investigation_NN ,_, and_CC all_DT had_VBN null_NN occurrence_NN rates_NNS of_IN more_RBR often_RB than_IN once_RB
+          every_DT month_NN ._. This_DT reflects_VBZ a_DT very_RB typical_JJ week_NN ._.
+          For_IN fever_NN /_NN flu_NN there_EX was_VBD a_DT strong_JJ 7_CD -_: d_SYM hospital_NN signal_NN in_IN southern_JJ Bronx_NNP and_CC northern_JJ
+          Manhattan_NNP on_IN 28_CD November_NNP with_IN a_DT null_NN occurrence_NN rate_NN of_IN once_RB every_DT 2_CD ._. 7_CD y_NN ._. On_IN each_DT of_IN the_DT
+          following_VBG 2_CD d_SYM ,_, there_EX were_VBD again_RB strong_JJ hospital_NN signals_NNS in_IN the_DT same_JJ general_JJ area_NN as_RB well_RB
+          as_IN residential_JJ zip-code_JJ signals_NNS of_IN lesser_JJR magnitude_NN ._. These_DT signals_NNS started_VBD 12_CD d_SYM into_IN a_DT
+          gradual_JJ citywide_JJ increase_NN in_IN fever_NN /_NN flu_NN that_WDT continued_VBD to_TO grow_VB through_IN the_DT end_NN of_IN
+          December_NNP ,_, driven_VBN by_IN an_DT unusually_RB early_JJ influenza_NN season_NN in_IN New_NNP York_NNP City_NNP ._.
+        
+      
+      
+        Discussion_NNP
+        In_IN this_DT paper_NN we_PRP have_VBP presented_VBN a_DT new_JJ method_NN for_IN prospective_JJ infectious_JJ disease_NN outbreak_NN
+        surveillance_NN that_WDT uses_VBZ only_RB case_NN data_NNS ,_, handles_VBZ missing_VBG data_NNS ,_, and_CC makes_VBZ minimal_JJ assumptions_NNS
+        about_IN the_DT spatiotemporal_NN characteristics_NNS of_IN an_DT outbreak_NN ._. When_WRB using_VBG historical_JJ emergency_NN
+        department_NN chief_NN complaint_NN data_NNS to_TO mimic_VB a_DT prospective_JJ surveillance_NN system_NN with_IN daily_JJ
+        analyses_NNS ,_, we_PRP detected_VBD four_CD highly_RB unusual_JJ clusters_NNS of_IN diarrhea_NN cases_NNS ,_, three_CD of_IN which_WDT
+        heralded_VBN citywide_JJ gastrointestinal_NN outbreaks_NNS due_JJ to_TO rotavirus_JJ and_CC norovirus_JJ ._. Three_CD of_IN four_CD
+        weaker_JJR signals_NNS also_RB occurred_VBD immediately_RB preceding_VBG or_CC concurrent_JJ with_IN these_DT citywide_JJ
+        outbreaks_NNS ._. If_IN we_PRP assume_VBP that_IN all_DT of_IN these_DT clusters_NNS were_VBD associated_VBN with_IN the_DT citywide_JJ
+        disease_NN outbreaks_NNS ,_, then_RB the_DT method_NN generated_VBN at_IN most_JJS two_CD false_JJ alarms_NNS at_IN a_DT signal_NN threshold_NN
+        where_WRB we_PRP would_MD have_VB expected_VBN one_CD by_IN chance_NN alone_RB ._.
+        For_IN disease_NN outbreak_NN detection_NN ,_, the_DT public-health_NN community_NN has_VBZ historically_RB relied_VBN on_IN
+        the_DT watchful_JJ eyes_NNS of_IN physicians_NNS and_CC other_JJ health-care_NN workers_NNS ._. However_RB ,_, the_DT increasing_VBG
+        availability_NN of_IN timely_JJ electronic_JJ surveillance_NN data_NNS ,_, both_DT reportable_JJ diagnoses_NNS and_CC
+        pre-diagnostic_JJ syndromic_JJ indicators_NNS ,_, raises_VBZ the_DT possibility_NN of_IN earlier_JJR outbreak_NN detection_NN
+        and_CC intervention_NN if_IN suitable_JJ analytic_JJ methods_NNS are_VBP found_VBN ._. While_IN it_PRP is_VBZ still_RB unclear_JJ whether_IN
+        systematic_JJ health_NN surveillance_NN using_VBG syndromic_JJ or_CC reportable_JJ disease_NN data_NNS will_MD be_VB able_JJ to_TO
+        quickly_RB detect_VB a_DT bioterrorism_NN attack_NN [_NN 39_CD ,_, 40_CD ]_NN ,_, the_DT methods_NNS described_VBD here_RB can_MD also_RB be_VB
+        applied_VBN to_TO early_JJ detection_NN of_IN outbreaks_NNS of_IN other_JJ ,_, more_RBR common_JJ infectious_JJ diseases_NNS ._.
+        There_EX are_VBP other_JJ alternative_JJ ways_NNS to_TO calculate_VB expected_VBN counts_VBZ from_IN a_DT series_NN of_IN case_NN
+        data_NNS ._. One_CD naive_JJ approach_NN is_VBZ to_TO use_VB the_DT observed_VBN count_NN 7_CD d_SYM ago_RB in_IN a_DT zip-code_JJ area_NN as_IN the_DT
+        expected_VBN count_NN for_IN that_DT same_JJ area_NN today_NN ,_, and_CC then_RB apply_VB the_DT regular_JJ Poisson-based_NNP
+        space–time_NN scan_VB statistic_NN ._. When_WRB applied_VBN to_TO the_DT New_NNP York_NNP City_NNP diarrhea_NN data_NNS described_VBD above_IN ,_,
+        such_JJ an_DT approach_NN generated_VBN at_IN least_JJS one_CD “ statistically_RB significant_JJ” outbreak_NN signal_NN on_IN each_DT
+        of_IN the_DT 365_CD d_SYM evaluated_VBN ._. The_DT basic_JJ problem_NN with_IN this_DT is_VBZ that_IN there_EX is_VBZ random_JJ variation_NN in_IN
+        the_DT observed_VBN counts_VBZ that_WDT are_VBP used_VBN to_TO calculate_VB the_DT expected_VBN ,_, which_WDT is_VBZ not_RB accounted_VBN for_IN in_IN
+        the_DT Poisson-based_NNP scan_VB statistic_NN ._. If_IN we_PRP based_VBD the_DT expected_VBN on_IN the_DT average_NN of_IN multiple_JJ prior_RB
+        weeks_NNS of_IN data_NNS ,_, we_PRP would_MD get_VB less_JJR variability_NN in_IN the_DT expected_VBN counts_VBZ and_CC fewer_RBR false_JJ
+        signals_NNS ,_, but_CC the_DT problem_NN would_MD still_RB persist_VB ,_, and_CC as_IN the_DT number_NN of_IN weeks_NNS increase_VBP beyond_IN a_DT
+        few_JJ months_NNS other_JJ problems_NNS may_MD gradually_RB arise_VB due_JJ to_TO ,_, for_IN example_NN ,_, seasonal_JJ trends_NNS or_CC
+        population_NN size_NN changes_NNS ._.
+        Computing_NNP time_NN depends_VBZ on_IN the_DT size_NN of_IN the_DT dataset_NN and_CC the_DT analysis_NN parameters_NNS chosen_VBN ._.
+        With_IN 999_CD replications_NNS ,_, the_DT hospital_NN analyses_NNS with_IN 38_CD data_NNS locations_NNS take_VBP 7_CD s_VBZ to_TO run_VB on_IN a_DT
+        2_CD ._. 5_CD -_: MHz_NNP Pentium_NNP 4_CD computer_NN ,_, while_IN the_DT residential_JJ analyses_NNS using_VBG 183_CD zip-code_JJ area_NN
+        locations_NNS take_VBP 11_CD s_VBZ ._. The_DT same_JJ numbers_NNS for_IN 9_CD ,_, 999_CD replications_NNS are_VBP 27_CD and_CC 57_CD s_VBZ ,_,
+        respectively_RB ._.
+        There_EX are_VBP a_DT number_NN of_IN limitations_NNS with_IN the_DT proposed_VBN method_NN ._. The_DT method_NN is_VBZ highly_RB
+        sensitive_JJ to_TO missing_VBG or_CC incomplete_JJ data_NNS ._. Our_PRP$ first_JJ implementation_NN of_IN the_DT method_NN resulted_VBD in_IN
+        a_DT number_NN of_IN false_JJ alarms_NNS ,_, and_CC highlights_VBZ the_DT need_NN for_IN systematic_JJ data_NNS quality_NN checks_NNS and_CC
+        the_DT analytic_JJ adjustments_NNS described_VBD above_IN ._. When_WRB excellent_JJ population-at-risk_JJ data_NNS are_VBP
+        available_JJ ,_, we_PRP expect_VBP the_DT Poisson-based_NNP space–time_NN scan_VB statistic_NN that_IN utilizes_NNS this_DT extra_JJ
+        information_NN to_TO perform_VB better_JJR than_IN the_DT space–time_NN permutation_NN scan_VB statistic_NN ._. If_IN ,_, however_RB ,_,
+        the_DT population-at-risk_JJ data_NN are_VBP of_IN poor_JJ quality_NN or_CC nonexistent_JJ ,_, which_WDT is_VBZ often_RB the_DT case_NN ,_,
+        then_RB the_DT space–time_NN permutation_NN scan_VB statistic_NN should_MD be_VB used_VBN ._.
+        Since_IN the_DT space–time_NN permutation_NN scan_VB statistic_NN adjusts_VBZ for_IN purely_RB temporal_JJ clusters_NNS ,_, it_PRP
+        can_MD only_RB detect_VB citywide_JJ outbreaks_NNS if_IN they_PRP start_VBP locally_RB ,_, but_CC not_RB if_IN they_PRP occur_VBP more_JJR or_CC
+        less_RBR simultaneously_RB in_IN the_DT whole_JJ city_NN ._. Hence_RB ,_, it_PRP does_VBZ not_RB replace_VB purely_RB temporal_JJ
+        surveillance_NN methods_NNS ,_, but_CC rather_RB complements_VBZ them_PRP ._.
+        Finally_RB ,_, it_PRP is_VBZ important_JJ to_TO note_VB that_IN the_DT geographical_JJ boundary_NN of_IN the_DT detected_VBN outbreak_NN
+        is_VBZ not_RB necessarily_RB the_DT same_JJ as_IN the_DT boundary_NN of_IN the_DT true_JJ outbreak_NN ._. Since_IN we_PRP used_VBD circles_NNS as_IN
+        the_DT base_NN for_IN the_DT scanning_VBG cylinder_NN ,_, all_DT detected_VBD outbreaks_NNS are_VBP approximately_RB circular_JJ ._.
+        Other_JJ shapes_NNS of_IN the_DT scanning_VBG window_NN are_VBP also_RB available_JJ [_NN 36_CD ]_NN ,_, but_CC it_PRP has_VBZ been_VBN shown_VBN that_IN
+        circular_JJ scan_VB statistics_NNS are_VBP also_RB able_JJ to_TO detect_VB noncircular_NN outbreak_NN areas_NNS [_NN 41_CD ]_NN ._. The_DT less_RBR
+        geographically_RB compact_JJ the_DT outbreak_NN is_VBZ ,_, though_RB ,_, the_DT less_JJR power_NN (_( sensitivity_NN )_) there_EX is_VBZ to_TO
+        detect_VB it_PRP ._. For_IN example_NN ,_, using_VBG circles_NNS we_PRP cannot_NN expect_VBP to_TO pick_VB up_RP an_DT outbreak_NN that_WDT is_VBZ very_RB
+        long_JJ and_CC narrow_JJ such_JJ as_IN a_DT one-block_JJ area_NN on_IN each_DT side_NN of_IN Broadway_NNP ,_, stretching_VBG from_IN southern_JJ
+        to_TO northern_JJ Manhattan_NNP ._.
+        The_DT emergency_NN department_NN data_NNS used_VBN in_IN this_DT study_NN also_RB have_VBP some_DT limitations_NNS ._. In_IN addition_NN
+        to_TO the_DT citywide_JJ outbreaks_NNS ,_, there_EX were_VBD several_JJ institutional_JJ gastrointestinal_NN outbreaks_NNS
+        reported_VBD to_TO DOHMH_NNP during_IN the_DT historical_JJ 1_CD -_: y_NN period_NN but_CC not_RB detected_VBD in_IN emergency_NN department_NN
+        data_NNS using_VBG the_DT space–time_NN permutation_NN scan_VB statistic_NN ._. One_CD reported_VBD outbreak_NN involved_VBD school_NN
+        children_NNS that_WDT went_VBD to_TO the_DT emergency_NN department_NN of_IN a_DT nonparticipating_VBG hospital_NN ._. Other_JJ
+        outbreaks_NNS went_VBD undetected_JJ because_IN medical_JJ care_NN was_VBD not_RB sought_VBN in_IN emergency_NN departments_NNS ._.
+        Most_JJS people_NNS with_IN diarrhea_NN do_VBP not_RB go_VB to_TO the_DT hospital_NN emergency_NN department_NN ._. Rather_RB ,_, they_PRP call_VBP
+        or_CC go_VB to_TO their_PRP$ primary_JJ care_NN physician_NN ,_, they_PRP visit_VBP the_DT pharmacy_NN to_TO buy_VB over-the-counter_JJ
+        medication_NN ,_, or_CC they_PRP may_MD have_VB symptoms_NNS that_WDT are_VBP so_RB mild_JJ that_IN they_PRP do_VBP not_RB seek_VB medical_JJ care_NN ._.
+        Further_RB studies_VBZ are_VBP needed_VBN to_TO evaluate_VB the_DT strengths_NNS and_CC weaknesses_NNS of_IN different_JJ data_NNS
+        sources_NNS ._.
+        The_DT geographic_JJ units_NNS of_IN analysis_NN used_VBN were_VBD residential_JJ zip_NN code_NN and_CC hospital_NN location_NN ._.
+        It_PRP may_MD be_VB hard_JJ to_TO detect_VB outbreaks_NNS that_WDT affect_VBP only_RB a_DT small_JJ part_NN of_IN a_DT single_JJ zip_NN code_NN ,_,
+        especially_RB if_IN the_DT background_NN rate_NN of_IN the_DT syndrome_NN is_VBZ fairly_RB high_JJ ._. Where_WRB available_JJ ,_, the_DT
+        exact_JJ coordinates_VBZ of_IN a_DT patient_NN 's_POS residence_NN can_MD be_VB used_VBN to_TO avoid_VB problems_NNS introduced_VBN when_WRB
+        aggregating_VBG data_NNS ._. Furthermore_RB ,_, some_DT outbreaks_NNS may_MD not_RB be_VB clustered_VBN by_IN place_NN of_IN residence_NN ,_,
+        as_IN in_IN the_DT case_NN of_IN an_DT exposure_NN occurring_VBG at_IN the_DT place_NN of_IN work_NN or_CC in_IN a_DT subway_NN ._. Using_VBG the_DT
+        location_NN of_IN the_DT hospital_NN rather_RB than_IN residence_NN may_MD provide_VB higher_JJR power_NN to_TO detect_VB
+        workplace-related_JJ outbreaks_NNS ,_, but_CC the_DT only_JJ way_NN to_TO fully_RB address_VB this_DT issue_NN may_MD be_VB to_TO conduct_VB
+        workplace_NN surveillance_NN ._.
+        In_IN spite_NN of_IN these_DT limitations_NNS ,_, we_PRP have_VBP presented_VBN a_DT new_JJ method_NN for_IN the_DT early_JJ detection_NN of_IN
+        disease_NN outbreaks_NNS and_CC illustrated_VBD its_PRP$ practical_JJ use_NN ._. The_DT primary_JJ advantages_NNS of_IN the_DT method_NN
+        are_VBP that_IN it_PRP is_VBZ easy_JJ to_TO use_VB ,_, it_PRP only_RB requires_VBZ case_NN data_NNS ,_, it_PRP automatically_RB adjusts_VBZ for_IN
+        naturally_RB occurring_VBG purely_RB spatial_NN and_CC purely_RB temporal_JJ variation_NN ,_, it_PRP allows_VBZ adjustment_NN for_IN
+        space_NN by_IN day-of-week_JJ interaction_NN ,_, and_CC it_PRP is_VBZ capable_JJ of_IN handling_VBG missing_VBG data_NNS ._.
+        While_IN the_DT method_NN was_VBD developed_VBN and_CC applied_VBN in_IN the_DT context_NN of_IN syndromic_JJ surveillance_NN ,_, it_PRP
+        may_MD also_RB be_VB used_VBN for_IN the_DT early_JJ detection_NN of_IN diagnosed_VBN disease_NN outbreaks_NNS ,_, or_CC for_IN detecting_VBG
+        changes_NNS in_IN the_DT pattern_NN of_IN chronic_JJ diseases_NNS ,_, when_WRB population_NN census_NN information_NN is_VBZ
+        unavailable_JJ ,_, unreliable_JJ ,_, or_CC not_RB available_JJ at_IN the_DT fine_NN geographical_JJ resolution_NN needed_VBN ._. The_DT
+        ability_NN to_TO perform_VB disease_NN surveillance_NN without_IN population-at-risk_JJ data_NNS is_VBZ especially_RB
+        important_JJ in_IN developing_VBG countries_NNS ,_, where_WRB these_DT data_NNS may_MD be_VB hard_JJ to_TO obtain_VB ._. The_DT space–time_NN
+        permutation_NN scan_VB statistic_NN could_MD also_RB be_VB used_VBN for_IN similar_JJ early_JJ detection_NN problems_NNS in_IN other_JJ
+        fields_NNS ,_, such_JJ as_IN criminology_NN ,_, ecology_NN ,_, engineering_NN ,_, social_JJ sciences_NNS ,_, and_CC veterinary_JJ
+        sciences_NNS ._.
+      
+    
+  

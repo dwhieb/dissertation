@@ -1,0 +1,841 @@
+
+  
+    
+      
+        Background_NNP
+        Microarray_NNP technologies_NNS provide_VBP the_DT means_NNS of_IN measuring_VBG
+        the_DT expression_NN of_IN thousands_NNS of_IN genes_NNS or_CC proteins_NNS
+        simultaneously_RB ._. This_DT revolution_NN brings_VBZ new_JJ perspectives_NNS for_IN
+        the_DT study_NN of_IN expression_NN networks_NNS and_CC their_PRP$ regulation_NN ,_,
+        potentially_RB providing_VBG valuable_JJ insights_NNS into_IN the_DT molecular_JJ
+        mechanisms_NNS underlying_VBG disease_NN [_NN 1_CD ]_NN ._. Increasingly_RB accessible_JJ
+        microarray_NN platforms_NNS allow_VBP the_DT unrestrained_JJ and_CC rapid_JJ
+        generation_NN of_IN large_JJ expression_NN datasets_NNS ._. As_IN large_JJ volumes_NNS
+        of_IN data_NNS are_VBP being_VBG generated_VBN ,_, the_DT need_NN for_IN data-mining_JJ
+        programs_NNS that_WDT provide_VBP the_DT means_NNS to_TO manage_VB ,_, normalize_VB ,_,
+        filter_NN ,_, group_NN and_CC visualize_VB expression_NN data_NNS expands_VBZ ._. These_DT
+        tools_NNS help_VBP to_TO identify_VB subsets_NNS of_IN genes_NNS whose_WP$ expression_NN
+        changes_NNS significantly_RB and_CC organize_VB them_PRP according_VBG to_TO their_PRP$
+        expression_NN profiles_NNS ._. Although_IN necessary_JJ ,_, this_DT type_NN of_IN
+        analysis_NN does_VBZ not_RB reveal_VB the_DT biological_JJ implications_NNS
+        encrypted_JJ in_IN expression_NN data_NNS ._. Indeed_RB ,_, the_DT evaluation_NN of_IN the_DT
+        functional_JJ significance_NN of_IN large_JJ ,_, heterogeneous_JJ and_CC noisy_NN
+        groups_NNS of_IN genes_NNS constitutes_VBZ the_DT real_JJ challenge_NN for_IN
+        microarray_NN users_NNS [_NN 2_CD ]_NN ._.
+        A_DT further_JJ problem_NN is_VBZ that_IN the_DT wealth_NN of_IN knowledge_NN
+        accumulated_VBN after_IN decades_NNS of_IN biological_JJ research_NN has_VBZ
+        resulted_VBN in_IN a_DT considerable_JJ narrowing_NN of_IN research_NN fields_NNS ._. As_IN
+        a_DT consequence_NN ,_, in-depth_JJ knowledge_NN of_IN gene_NN function_NN
+        possessed_VBN by_IN highly_RB specialized_JJ investigators_NNS is_VBZ biased_VBN and_CC
+        limited_VBN to_TO relatively_RB small_JJ subsets_NNS of_IN genes_NNS that_WDT become_VBP
+        the_DT focus_NN of_IN the_DT expression-data_JJ analysis_NN ._. The_DT definition_NN
+        of_IN functional_JJ classes_NNS and_CC improved_VBN access_NN to_TO information_NN
+        associated_VBN with_IN individual_JJ genes_NNS partly_RB makes_VBZ up_RP for_IN this_DT
+        lack_NN of_IN perspective_NN ._. However_RB ,_, information_NN about_IN gene_NN
+        function_NN is_VBZ primarily_RB contained_VBN in_IN the_DT 11_CD million_CD articles_NNS
+        indexed_VBN in_IN the_DT Medline_NNP database_NN ._. Evaluating_VBG the_DT functional_JJ
+        associations_NNS that_WDT might_MD exist_VB among_IN large_JJ groups_NNS of_IN genes_NNS
+        from_IN this_DT huge_JJ volume_NN of_IN literature_NN is_VBZ not_RB feasible_JJ in_IN a_DT
+        time_NN frame_NN compatible_JJ with_IN the_DT pace_NN at_IN which_WDT the_DT data_NNS can_MD
+        be_VB generated_VBN ._. Limitations_NNPS in_IN our_PRP$ capacity_NN to_TO explore_VB the_DT
+        functional_JJ dimension_NN of_IN microarray_NN expression_NN are_VBP one_CD of_IN
+        the_DT major_JJ impediments_NNS to_TO the_DT optimal_NN exploitation_NN of_IN this_DT
+        powerful_JJ technology_NN ._. Surprisingly_RB ,_, only_RB a_DT few_JJ groups_NNS have_VBP
+        previously_RB addressed_VBN this_DT shortcoming_NN [_NN 3_CD ,_, 4_CD ,_, 5_CD ]_NN ._.
+        We_PRP describe_VBP here_RB how_WRB a_DT literature-derived_JJ term_NN frequency_NN
+        database_NN can_MD be_VB generated_VBN and_CC mined_JJ through_IN the_DT analysis_NN of_IN
+        patterns_NNS of_IN occurrences_NNS of_IN a_DT restricted_VBN subset_NN of_IN relevant_JJ
+        terms_NNS ._. This_NNP '_POS literature_NN profiling_VBG '_POS produces_VBZ a_DT coherent_JJ
+        picture_NN of_IN the_DT functional_JJ relationships_NNS among_IN large_JJ and_CC
+        heterogeneous_JJ lists_NNS of_IN genes_NNS and_CC should_MD enable_VB the_DT
+        development_NN of_IN tools_NNS for_IN rapidly_RB extracting_VBG meaningful_JJ
+        knowledge_NN from_IN large_JJ microarray_NN expression_NN databases_NNS ._.
+      
+      
+        Results_NNS and_CC discussion_NN
+        
+          Literature_NNP indexing_NN
+          The_DT method_NN requires_VBZ articles_NNS related_VBN to_TO each_DT of_IN the_DT
+          genes_NNS included_VBN in_IN the_DT analysis_NN to_TO be_VB extracted_VBN ._. This_DT is_VBZ
+          done_VBN by_IN querying_VBG the_DT Medline_NNP database_NN though_IN PubMed_NNP [_NN 6_CD ]_NN
+          using_VBG appropriate_JJ search_NN strings_NNS ._. We_PRP chose_VBD to_TO retrieve_VB
+          entries_NNS containing_VBG the_DT official_JJ gene_NN name_NN ,_, abbreviation_NN
+          or_CC aliases_NNS in_IN the_DT title_NN field_NN ._. Information_NNP about_IN gene_NN
+          nomenclature_NN can_MD be_VB found_VBN on_IN the_DT website_NN of_IN the_DT Human_NNP
+          Gene_NNP Nomenclature_NNP Committee_NNP (_( HGNC_NNP [_NN 7_CD ]_NN )_) ._. Using_VBG this_DT
+          source_NN we_PRP created_VBD a_DT database_NN containing_VBG URLs_NNP in_IN the_DT
+          PubMed_NNP query_NN format_NN for_IN the_DT more_JJR than_IN 10_CD ,_, 500_CD known_VBN human_JJ
+          genes_NNS defined_VBN by_IN HGNC_NNP (_( for_IN example_NN ,_, for_IN protein_NN kinase_NN C_NNP
+          eta_NN :_: the_DT URL_NNP found_VBD in_IN the_DT database_NN is_VBZ
+          http_NN :_: /_NN /_NN www_NN 3_CD ._. ncbi_NN ._. nlm_NN ._. nih_NN ._. gov_NN /_NN htbin-post_JJ /_NN Entrez_NNP /_NN query_NN ?_. db_NN =_SYM 0_CD &_CC form_NN =_SYM 1_CD &_CC term_NN =_SYM PRKCH_NNP +_NN %_NN 5_CD Bti_NNP %_NN 5_CD D_NNP +_NN OR_NNP +_NN PKC-L_NNP +_NN %_NN 5_CD Bti_NNP %_NN 5_CD D_NNP +_NN OR_NNP +_NN PRKCL_NNP +_NN %_NN 5_CD Bti_NNP %_NN 5_CD D_NNP +_NN OR_NNP +_NN protein_NN %_NN 20_CD kinase_NN %_NN 20_CD C_NNP %_NN 20_CD eta_NN +_NN %_NN 5_CD Bti_NNP %_NN 5_CD D_NNP ;_:
+          pointing_VBG a_DT web_NN browser_NN to_TO this_DT address_NN gives_VBZ the_DT 17_CD
+          entries_NNS that_WDT would_MD have_VB been_VBN retrieved_VBN by_IN typing_VBG the_DT
+          following_NN search_NN string_NN :_: '_POS PRKCH_NNP [_NN ti_NN ]_NN OR_NNP PKC-L_NNP [_NN ti_NN ]_NN OR_NNP
+          PRKCL_NNP [_NN ti_NN ]_NN OR_NNP protein_NN kinase_NN C_NNP eta_NN [_NN ti_NN ]_NN '_'' )_) ._. URL_NNP entries_NNS
+          are_VBP indexed_VBN by_IN GenBank_NNP [_NN 8_CD ]_NN and_CC LocusLink_NNP [_NN 9_CD ]_NN IDs_NNP and_CC
+          can_MD be_VB downloaded_JJ as_IN a_DT Microsoft_NNP Excel_NNP table_NN (_( see_VB
+          Additional_JJ data_NNS files_NNS )_) ._. The_DT search_NN for_IN relevant_JJ
+          literature_NN for_IN each_DT individual_JJ gene_NN is_VBZ complicated_VBN by_IN the_DT
+          fact_NN that_IN the_DT same_JJ gene_NN can_MD have_VB many_JJ different_JJ names_NNS
+          associated_VBN with_IN it_PRP and_CC that_IN the_DT same_JJ name_NN or_CC abbreviation_NN
+          can_MD have_VB different_JJ meanings_NNS ._. A_DT rapid_JJ scanning_VBG of_IN the_DT
+          search_NN results_NNS is_VBZ useful_JJ for_IN the_DT identification_NN and_CC
+          removal_NN of_IN inappropriate_JJ search_NN strings_NNS (_( see_VB below_IN )_) ._.
+          For_IN each_DT gene_NN ,_, the_DT result_NN of_IN the_DT query_NN is_VBZ downloaded_JJ
+          in_IN XML_NNP format_NN ._. Abstracts_NNP are_VBP then_RB extracted_VBN from_IN the_DT file_NN
+          by_IN means_NNS of_IN a_DT macro_NN running_VBG on_IN Microsoft_NNP Excel_NNP and_CC saved_VBN
+          as_IN a_DT new_JJ file_NN to_TO be_VB used_VBN for_IN text_NN analysis_NN ._.
+          Methodologies_NNP described_VBD in_IN this_DT report_NN were_VBD tested_VBN on_IN
+          a_DT list_NN of_IN 70_CD genes_NNS (_( see_VB Additional_JJ data_NNS files_NNS )_) derived_VBN
+          from_IN a_DT subset_NN of_IN conditions_NNS belonging_VBG to_TO a_DT sample_NN
+          gene-expression_JJ dataset_NN generated_VBN to_TO study_VB the_DT
+          transcriptional_NN response_NN of_IN professional_JJ
+          antigen-presenting_JJ cells_NNS to_TO pathogens_NNS using_VBG high-density_JJ
+          oligonucleotide_NN arrays_NNS (_( D_NNP ._. Chaussabel_NNP ,_, R_NN ._. Semnani_NNP ,_, M_NNP ._.
+          Mcdowell_NNP ,_, D_NNP ._. Sacks_NNP ,_, A_DT ._. Sher_NNP and_CC T_NN ._. B_NNP ._. Nutman_NNP ,_, unpublished_JJ
+          observations_NNS )_) ._. We_PRP were_VBD able_JJ to_TO find_VB at_IN least_JJS five_CD
+          relevant_JJ records_NNS in_IN the_DT Medline_NNP database_NN containing_VBG
+          abstracts_NNS for_IN 44_CD out_IN of_IN the_DT 70_CD genes_NNS listed_VBN ._. Another_DT 10_CD
+          genes_NNS had_VBD at_IN least_JJS five_CD records_NNS with_IN accompanying_VBG
+          abstracts_NNS when_WRB their_PRP$ generic_JJ name_NN was_VBD used_VBN as_IN a_DT search_NN
+          string_NN (_( for_IN example_NN ,_, '_'' interferon_NN induced_VBD transmembrane_NN
+          protein_NN '_'' instead_RB of_IN '_POS interferon_NN induced_VBD transmembrane_NN
+          protein_NN 1_CD '_POS )_) ._.
+        
+        
+          Text_NNP analysis_NN
+          Word_NNP occurrence_NN in_IN abstracts_NNS is_VBZ determined_VBN for_IN each_DT
+          gene_NN by_IN analyzing_VBG the_DT contents_NNS of_IN Medline_NNP entries_NNS (_( nearly_RB
+          4_CD ,_, 000_CD in_IN the_DT example_NN presented_VBN here_RB )_) ._. This_DT parameter_NN
+          describes_VBZ the_DT relative_JJ frequency_NN of_IN abstracts_NNS containing_VBG
+          a_DT given_VBN word_NN (_( for_IN example_NN ,_, 18_CD ._. 2_LS %_NN of_IN the_DT abstracts_NNS indexed_VBN
+          for_IN the_DT gene_NN 
+          GADD_NNP 45_CD B_NNP contain_VB the_DT word_NN
+          '_'' proliferation_NN '_'' )_) ._.
+        
+        
+          Data_NNP filtering_VBG
+          Occurrence_NNP values_NNS are_VBP assigned_VBN to_TO every_DT unique_JJ word_NN
+          found_VBD in_IN the_DT literature_NN analyzed_VBD ,_, resulting_VBG in_IN tens_NNS of_IN
+          thousands_NNS of_IN entries_NNS for_IN each_DT gene_NN ._. A_DT vast_JJ majority_NN of_IN
+          these_DT terms_NNS are_VBP either_CC found_VBN ubiquitously_RB (_( for_IN example_NN ,_,
+          '_'' if_IN ,_, '_'' because_IN '_POS ,_, '_'' cell_NN '_'' ,_, '_'' identified_VBN '_POS are_NN present_JJ in_IN most_JJS
+          abstracts_NNS of_IN most_JJS genes_NNS )_) or_CC very_RB rarely_RB (_( present_JJ in_IN very_RB
+          few_JJ abstracts_NNS of_IN few_JJ genes_NNS )_) and_CC therefore_RB are_VBP of_IN very_RB
+          little_JJ use_NN for_IN the_DT definition_NN of_IN gene-specific_JJ term_NN
+          occurrence_NN profiles_NNS ._. However_RB ,_, a_DT third_JJ category_NN of_IN terms_NNS
+          can_MD be_VB found_VBN in_IN most_JJS abstracts_NNS of_IN very_RB few_JJ genes_NNS and_CC
+          convey_VB relevant_JJ information_NN about_IN these_DT genes_NNS ._. These_DT
+          terms_NNS are_VBP characterized_VBN both_DT by_IN high_JJ occurrence_NN values_NNS in_IN
+          gene-specific_JJ collections_NNS of_IN abstracts_NNS and_CC a_DT low_JJ baseline_NN
+          occurrence_NN in_IN the_DT literature_NN ._.
+          An_DT example_NN is_VBZ given_VBN in_IN Figure_NN 1_CD ,_, where_WRB terms_NNS present_JJ
+          in_IN more_JJR than_IN 25_CD %_NN of_IN the_DT abstracts_NNS related_VBN to_TO the_DT gene_NN
+          '_'' RANTES_NNP '_POS are_NN plotted_VBD on_IN the_DT 
+          y_NN -_: axis_NNS ._. Baseline_NNP occurrence_NN was_VBD
+          determined_VBN by_IN averaging_VBG the_DT values_NNS found_VBD for_IN these_DT terms_NNS
+          for_IN genes_NNS picked_VBD at_IN random_JJ from_IN all_DT known_VBN human_JJ genes_NNS ._. As_IN
+          shown_VBN Figure_NN 1_CD ,_, when_WRB sufficient_JJ genes_NNS are_VBP used_VBN to_TO
+          constitute_VB the_DT baseline_NN ,_, averaged_VBD occurrence_NN values_NNS
+          become_VBP stable_JJ ._. In_IN this_DT example_NN we_PRP found_VBD that_IN most_JJS of_IN the_DT
+          terms_NNS for_IN which_WDT baseline_NN occurrence_NN was_VBD less_JJR than_IN 5_CD %_NN
+          conveyed_VBD significant_JJ information_NN on_IN that_DT gene_NN (_( for_IN
+          example_NN ,_, '_'' infection_NN '_'' ,_, '_'' secreted_JJ '_POS ,_, '_'' chemokine_NN '_'' ,_,
+          '_'' inflammatory_JJ '_POS )_) ._. Some_DT (_( '_POS production_NN '_'' ,_, '_'' regulated_VBN '_POS )_) seemed_VBD
+          to_TO be_VB less_RBR meaningful_JJ ,_, however_RB ,_, and_CC terms_NNS with_IN higher_JJR
+          baseline_NN occurrence_NN were_VBD nonspecific_JJ (_( for_IN example_NN ,_,
+          '_'' induced_VBN '_POS ,_, '_'' response_NN '_'' ,_, '_'' activation_NN '_'' ,_, '_'' important_JJ '_POS )_) ._. As_IN
+          expected_VBN ,_, terms_NNS such_JJ as_IN '_POS a_NNP '_POS ,_, '_'' we_PRP '_POS ,_, '_'' protein_NN '_'' or_CC '_POS cells_NNS '_POS
+          had_VBD the_DT highest_JJS baseline_NN occurrence_NN (_( 92_CD %_NN ,_, 59_CD %_NN ,_, 41_CD %_NN and_CC
+          39_CD %_NN respectively_RB )_) ._.
+          The_DT terms_NNS found_VBD in_IN thousands_NNS of_IN abstracts_NNS retrieved_VBD
+          for_IN the_DT list_NN of_IN genes_NNS considered_VBN in_IN this_DT report_NN were_VBD
+          filtered_VBN systematically_RB using_VBG several_JJ criteria_NNS ._. The_DT first_JJ
+          step_NN consists_VBZ in_IN removing_VBG terms_NNS commonly_RB found_VBD throughout_IN
+          the_DT scientific_JJ literature_NN ._. A_DT baseline_NN occurrence_NN for_IN each_DT
+          term_NN was_VBD determined_VBN by_IN taking_VBG the_DT average_JJ occurrence_NN of_IN
+          the_DT set_NN of_IN 250_CD randomly_RB picked_VBD genes_NNS as_IN described_VBN in_IN
+          Figure_NN 1_CD ._. In_IN our_PRP$ example_NN ,_, terms_NNS with_IN a_DT baseline_NN
+          occurrence_NN of_IN more_JJR than_IN 5_CD %_NN were_VBD categorized_VBN as_IN
+          undiscriminatory_NN and_CC eliminated_VBN (_( Table_NNP 1_LS )_) ._. In_IN the_DT second_JJ
+          step_NN ,_, term-occurrence_JJ values_NNS for_IN each_DT gene_NN were_VBD compared_VBN
+          to_TO the_DT baseline_NN ._. We_PRP arbitrarily_RB set_VBD the_DT difference_NN
+          cut-off_JJ between_IN gene_NN term_NN occurrence_NN and_CC baseline_NN
+          occurrence_NN at_IN 25_CD %_NN (_( see_VB Table_NNP 1_LS )_) ._. A_DT term_NN can_MD only_RB be_VB
+          useful_JJ in_IN defining_VBG relationships_NNS among_IN genes_NNS if_IN it_PRP is_VBZ
+          shared_VBN by_IN at_IN least_JJS two_CD of_IN them_PRP ._. For_IN this_DT reason_NN ,_, only_RB
+          terms_NNS found_VBD to_TO pass_VB the_DT filter_NN for_IN at_IN least_JJS two_CD of_IN the_DT
+          genes_NNS considered_VBN for_IN analysis_NN are_VBP further_RBR retained_VBN (_( see_VB
+          Table_NNP 1_LS )_) ._. For_IN the_DT set_NN of_IN genes_NNS used_VBN to_TO illustrate_VB the_DT
+          technique_NN (_( Table_NNP 2_CD ,_, and_CC see_VB Additional_JJ data_NNS files_NNS )_) 101_CD
+          terms_NNS out_IN of_IN nearly_RB 25_CD ,_, 000_CD were_VBD retained_VBN after_IN
+          application_NN of_IN these_DT filters_NNS ._. Stringency_NNP of_IN term_NN
+          selection_NN can_MD be_VB adjusted_VBN at_IN the_DT user_NN 's_POS convenience_NN by_IN
+          modifying_VBG the_DT filtering_VBG parameters_NNS ._. For_IN instance_NN ,_, a_DT
+          greater_JJR number_NN of_IN relevant_JJ terms_NNS might_MD be_VB retrieved_VBN by_IN
+          lowering_VBG thresholds_NNS ,_, insuring_VBG term_NN specificity_NN at_IN the_DT
+          cost_NN of_IN increasing_VBG the_DT level_NN of_IN noise_NN (_( less-relevant_JJ
+          terms_NNS )_) in_IN the_DT list_NN of_IN terms_NNS ._. When_WRB lists_NNS of_IN terms_NNS become_VBP
+          too_RB noisy_NN ,_, the_DT manual_JJ removal_NN of_IN irrelevant_JJ terms_NNS can_MD be_VB
+          considered_VBN ._.
+        
+        
+          Clustering_NNP analysis_NN
+          Isolating_NNP useful_JJ information_NN out_IN of_IN tens_NNS of_IN thousands_NNS
+          of_IN irrelevant_JJ terms_NNS closely_RB resembles_VBZ the_DT task_NN of_IN sorting_VBG
+          through_IN gene-expression_JJ data_NNS produced_VBN by_IN microarray_NN
+          technology_NN ._. But_CC the_DT parallel_NN is_VBZ not_RB restricted_VBN to_TO the_DT
+          filtering_VBG of_IN data_NNS as_IN we_PRP also_RB found_VBD that_IN tools_NNS used_VBN for_IN
+          the_DT analysis_NN of_IN gene_NN expression_NN could_MD be_VB applied_VBN to_TO
+          term-occurrence_JJ values_NNS to_TO identify_VB groups_NNS of_IN genes_NNS
+          sharing_VBG similar_JJ '_POS literature_NN profiles_NNS '_'' ._. The_DT vocabulary_JJ
+          defined_VBN after_IN successive_JJ rounds_NNS of_IN filtering_VBG is_VBZ used_VBN to_TO
+          create_VB a_DT term-by-gene_JJ array_NN of_IN term-occurrence_JJ values_NNS
+          relative_JJ to_TO each_DT individual_JJ gene_NN ._. Relationships_NNPS among_IN
+          genes_NNS are_VBP then_RB assessed_VBN by_IN hierarchical_JJ clustering_VBG
+          analysis_NN using_VBG a_DT software_NN package_NN originally_RB created_VBD for_IN
+          the_DT analysis_NN of_IN gene-expression_JJ data_NNS [_NN 10_CD ]_NN ._. The_DT resulting_VBG
+          clustergram_NN shows_VBZ the_DT grouping_VBG of_IN genes_NNS according_VBG to_TO
+          patterns_NNS of_IN term_NN occurrences_NNS (_( Figure_NN 2_LS )_) ._. Genes_NNP are_VBP
+          grouped_VBN on_IN the_DT basis_NN of_IN similarity_NN between_IN
+          term-occurrence_JJ profiles_NNS ._. The_DT nature_NN of_IN the_DT relationships_NNS
+          found_VBD through_IN the_DT analysis_NN of_IN term_NN occurrences_NNS in_IN
+          abstracts_NNS can_MD be_VB determined_VBN by_IN browsing_VBG this_DT diagram_NN ._. The_DT
+          relationships_NNS among_IN genes_NNS listed_VBN in_IN Table_NNP 2_CD as_IN determined_VBN
+          through_IN the_DT analysis_NN of_IN literature_NN content_NN are_VBP
+          represented_VBN by_IN the_DT dendrogram_NN detailed_JJ in_IN Figure_NN 3_CD ._. In_IN
+          this_DT tree_NN diagram_NN the_DT distance_NN between_IN nodes_NNS is_VBZ inversely_RB
+          proportional_JJ to_TO the_DT degree_NN of_IN correlation_NN found_VBD between_IN
+          the_DT genes_NNS ._. The_DT main_JJ ramifications_NNS of_IN the_DT tree_NN define_VB the_DT
+          predominant_NN groups_NNS identified_VBN by_IN this_DT analysis_NN ._. To_TO help_VB
+          understand_VB the_DT nature_NN of_IN the_DT associations_NNS found_VBD among_IN
+          groups_NNS of_IN genes_NNS ,_, occurrence_NN values_NNS of_IN a_DT limited_JJ number_NN of_IN
+          terms_NNS used_VBN in_IN the_DT analysis_NN are_VBP shown_VBN opposite_JJ the_DT
+          dendrogram_NN (_( Figure_NN 3_LS )_) ._.
+          It_PRP is_VBZ notable_JJ that_IN the_DT functional_JJ groups_NNS identified_VBN in_IN
+          this_DT list_NN of_IN genes_NNS significantly_RB induced_VBN after_IN infection_NN
+          of_IN professional_JJ antigen-presenting_JJ cells_NNS are_VBP related_VBN to_TO
+          immune_JJ responses_NNS ._. Genes_NNP for_IN transcription_NN factors_NNS that_WDT
+          control_NN inflammatory_JJ responses_NNS and_CC programmed_VBN cell_NN death_NN
+          make_NN up_RP the_DT first_JJ gene_NN cluster_NN considered_VBN (_( Figure_NN 2_CD ,_,
+          color_NN coded_VBN in_IN blue_JJ )_) ._. These_DT genes_NNS have_VBP abstracts_NNS with_IN a_DT
+          frequent_JJ occurrence_NN of_IN terms_NNS such_JJ as_IN '_POS TNF_NNP '_POS (_( the_DT
+          inflammatory_JJ mediator_NN tumor_NN necrosis_NNS factor_NN )_) ,_, '_'' death_NN '_'' or_CC
+          '_POS apoptosis_NNS '_'' ._. The_DT largest_JJS group_NN is_VBZ composed_VBN of_IN genes_NNS
+          associated_VBN with_IN the_DT term_NN '_'' interferon_NN '_'' (_( also_RB '_POS IFN_NNP '_POS and_CC
+          '_POS IFN-alpha_NNP '_POS ,_, color_NN coded_VBN green_JJ ,_, Figure_NN 2_LS )_) ;_: indeed_RB ,_, STATs_NNP
+          are_VBP factors_NNS specifically_RB required_VBN for_IN interferon_NN
+          signaling_VBG ._. Interferon_NNP regulatory_JJ factors_NNS (_( IRFs_NNP )_) trigger_VB
+          the_DT interferon_NN response_NN ,_, whereas_IN other_JJ members_NNS of_IN the_DT
+          group_NN are_VBP effector_NN antiviral_JJ molecules_NNS (_( for_IN example_NN ,_,
+          ISG_NNP 15_CD ,_, ISG_NNP 20_CD )_) sometimes_RB associated_VBN with_IN terms_NNS such_JJ as_IN
+          '_POS virus_NN '_'' ,_, '_'' infected_JJ '_POS or_CC '_POS infection_NN '_'' (_( OAS_NNP ,_, Mx_NNP 1_CD ,_, Mx_NNP 2_LS )_) ._. The_DT
+          next_JJ group_NN (_( Figure_NN 2_CD ,_, red_JJ )_) is_VBZ composed_VBN exclusively_RB of_IN
+          chemokines_NNS ._. Interestingly_RB ,_, the_DT analysis_NN of_IN abstract_JJ
+          contents_NNS was_VBD able_JJ to_TO distinguish_VB monokines_NNS belonging_VBG to_TO
+          the_DT CXCR_NNP family_NN (_( SCYB_NNP chemokines_NNS :_: IP-_NNP 9_CD ,_, IP-_NNP 10_CD ,_, MIG_NNP ;_:
+          associated_VBN with_IN '_POS CXC_NNP '_POS ,_, '_'' CXCR_NNP '_POS ,_, '_'' monokine_NN '_'' or_CC '_POS MIG_NNP '_POS )_) from_IN
+          CC_NNP chemokines_NNS (_( SCYA_NNP chemokines_NNS :_: LARC_NNP ,_, RANTES_NNP ,_, MCP_NNP 2_CD ,_,
+          MCP_NNP 3_LS )_) ._. The_DT last_JJ group_NN (_( Figure_NN 2_CD ,_, violet_NN )_) is_VBZ composed_VBN of_IN
+          genes_NNS involved_VBN throughout_IN the_DT MHC_NNP class_NN I_PRP
+          antigen-presentation_JJ pathway_NN ._. Specifically_RB ,_, these_DT genes_NNS
+          encode_NN proteins_NNS involved_VBN in_IN the_DT degradation_NN of_IN proteins_NNS
+          into_IN peptides_NNS by_IN the_DT immunoproteasome_NN (_( PSMAs_NNP ,_, PSME_NNP )_) ,_,
+          antigenic_JJ peptide_NN loading_NN and_CC transport_NN (_( ABCB_NNP 2_CD also_RB known_VBN
+          as_IN TAP_NNP 1_CD ,_, for_IN transporter_NN associated_VBN with_IN antigen_NN
+          processing_NN 1_LS )_) and_CC presentation_NN at_IN the_DT cell_NN surface_NN
+          (_( HLA-F_NNP ,_, B_NNP 2_CD M_NNP )_) ._. It_PRP is_VBZ notable_JJ that_IN one_CD of_IN the_DT closest_JJS pairs_NNS
+          formed_VBN consists_VBZ of_IN a_DT receptor-ligand_JJ pair_NN :_: VEGF_NNP and_CC NRP_NNP 2_CD
+          (_( Figure_NN 3_LS )_) ._. Overall_RB ,_, these_DT examples_NNS illustrate_VBP the_DT
+          concept_NN that_IN appropriate_JJ terms_NNS taken_VBN out_IN of_IN context_NN can_MD
+          still_RB convey_VB valuable_JJ information_NN and_CC can_MD be_VB used_VBN to_TO
+          rapidly_RB explore_VB and_CC assess_VB the_DT biological_JJ meaning_NN of_IN
+          complex_JJ datasets_NNS ._.
+        
+        
+          Analyzing_NNP patterns_NNS of_IN term_NN occurrence_NN in_IN groups_NNS of_IN
+          genes_NNS with_IN different_JJ degrees_NNS of_IN association_NN
+          The_DT basis_NN for_IN analyzing_VBG expression_NN patterns_NNS is_VBZ the_DT
+          assumption_NN that_IN genes_NNS under_IN common_JJ transcriptional_NN
+          control_NN are_VBP involved_VBN in_IN similar_JJ processes_VBZ [_NN 1_CD ,_, 11_CD ]_NN ._. This_DT
+          notion_NN provides_VBZ a_DT rationale_NN for_IN developing_VBG tools_NNS to_TO
+          evaluate_VB the_DT existence_NN of_IN functional_JJ relationships_NNS among_IN
+          groups_NNS of_IN co-regulated_JJ genes_NNS ._. In_IN the_DT group_NN of_IN 50_CD
+          co-induced_JJ genes_NNS in_IN our_PRP$ example_NN ,_, we_PRP found_VBD that_IN 101_CD terms_NNS
+          were_VBD shared_VBN by_IN at_IN least_JJS two_CD genes_NNS (_( according_VBG to_TO our_PRP$
+          filtering_VBG criteria_NNS )_) with_IN as_RB many_JJ as_IN 300_CD positive_JJ
+          associations_NNS between_IN genes_NNS and_CC terms_NNS (_( defined_VBN as_IN
+          exceeding_VBG baseline_NN occurrence_NN by_IN 25_CD %_NN )_) ._. For_IN comparison_NN ,_,
+          analysis_NN of_IN the_DT literature_NN relative_JJ to_TO 50_CD genes_NNS picked_VBD
+          randomly_RB from_IN all_DT known_VBN human_JJ genes_NNS indexed_VBN in_IN the_DT
+          LocusLink_NNP database_NN only_RB retrieved_VBD 49_CD shared_VBN terms_NNS and_CC 109_CD
+          associations_NNS (_( Figure_NN 4_CD b_SYM )_) ._. This_DT is_VBZ in_IN contrast_NN with_IN the_DT
+          116_CD shared_VBN terms_NNS and_CC 523_CD associations_NNS found_VBD when_WRB 50_CD genes_NNS
+          are_VBP picked_VBN randomly_RB from_IN a_DT homogenous_JJ functional_JJ group_NN
+          (_( all_DT known_VBN cytokines_NNS and_CC chemokines_NNS and_CC their_PRP$ receptors_NNS ,_,
+          Figure_NN 4_CD c_SYM )_) ._. As_IN shown_VBN by_IN this_DT example_NN ,_, the_DT number_NN of_IN
+          associations_NNS found_VBN by_IN literature_NN profiling_VBG correlates_NNS
+          with_IN the_DT likelihood_NN that_IN a_DT group_NN of_IN genes_NNS is_VBZ functionally_RB
+          related_VBN ._.
+        
+        
+          Conditions_NNP for_IN the_DT formation_NN of_IN '_POS meaningful_JJ '_POS gene_NN
+          clusters_NNS
+          We_PRP sought_VBD to_TO identify_VB the_DT critical_JJ elements_NNS leading_VBG to_TO
+          the_DT formation_NN of_IN clusters_NNS of_IN related_VBN genes_NNS described_VBD in_IN
+          Figure_NN 2_CD and_CC represented_VBD in_IN Figure_NN 5_CD ausing_VBG similar_JJ color_NN
+          codes_NNS ._. The_DT terms_NNS making_VBG up_RP each_DT gene_NN 's_POS '_POS literature_NN
+          profile_NN '_'' include_VBP gene_NN names_NNS or_CC words_NNS making_VBG up_RP gene_NN
+          names_NNS ._. To_TO meet_VB our_PRP$ filtering_VBG criteria_NNS each_DT term_NN must_MD have_VB
+          had_VBD a_DT high_JJ occurrence_NN in_IN the_DT literature_NN of_IN at_IN least_JJS two_CD
+          of_IN the_DT genes_NNS covered_VBN by_IN the_DT analysis_NN ._. To_TO test_VB the_DT
+          relative_JJ importance_NN of_IN such_JJ terms_NNS for_IN the_DT analysis_NN ,_, gene_NN
+          names_NNS and_CC term-occurrence_JJ values_NNS were_VBD clustered_VBN without_IN
+          gene_NN names_NNS (_( for_IN example_NN ,_, RANTES_NNP ,_, IP_NNP 10_CD ,_, NFkappaB_NNP ,_, STAT_NNP ,_,
+          IRF_NNP )_) or_CC terms_NNS included_VBN in_IN gene_NN names_NNS (_( for_IN example_NN ,_,
+          interferon_NN ,_, proteasome_NN ,_, regulatory_JJ ,_, monokine_NN )_) ._. As_IN shown_VBN
+          in_IN Figure_NN 5_CD b_SYM ,_, clusters_NNS were_VBD largely_RB conserved_JJ ._. Gene_NNP names_NNS
+          or_CC terms_NNS included_VBN in_IN gene_NN names_NNS are_VBP therefore_RB not_RB
+          necessary_JJ for_IN the_DT formation_NN of_IN meaningful_JJ clusters_NNS but_CC
+          may_MD have_VB a_DT significant_JJ role_NN :_: terms_NNS such_JJ as_IN '_POS NFkappaB_NNP or_CC
+          '_POS interferon_NN '_'' ,_, which_WDT are_VBP found_VBN throughout_IN the_DT literature_NN
+          on_IN genes_NNS involved_VBN in_IN these_DT pathways_NNS ,_, will_MD generate_VB valid_JJ
+          associations_NNS ._. Similarly_RB ,_, the_DT discovery_NN of_IN references_NNS to_TO
+          the_DT chemokine_NN '_'' RANTES_NNP '_POS in_IN abstracts_NNS relevant_JJ to_TO different_JJ
+          genes_NNS suggests_VBZ the_DT existence_NN of_IN a_DT functional_JJ link_NN ._.
+          Indeed_RB ,_, the_DT literature-mining_JJ tool_NN developed_VBN by_IN Jenssen_NNP 
+          et_CC al_NN ._. [_NN 5_CD ]_NN is_VBZ based_VBN on_IN a_DT gene_NN
+          co-citation_JJ network_NN and_CC therefore_RB relies_VBZ entirely_RB on_IN the_DT
+          same_JJ type_NN of_IN association_NN ._.
+          To_TO exclude_VB the_DT possibility_NN that_IN groups_NNS of_IN meaningful_JJ
+          genes_NNS may_MD arise_VB by_IN using_VBG a_DT sufficient_JJ number_NN of_IN
+          co-occurring_JJ terms_NNS ,_, we_PRP permuted_JJ term-occurrence_JJ values_NNS
+          for_IN each_DT gene_NN before_IN clustering_VBG (_( Figure_NN 5_CD c_SYM )_) ._. The_DT fact_NN
+          that_IN this_DT treatment_NN results_NNS in_IN a_DT complete_JJ loss_NN of_IN the_DT
+          original_JJ hierarchy_NN proves_VBZ that_IN the_DT formation_NN of_IN
+          meaningful_JJ groups_NNS of_IN genes_NNS cannot_NN be_VB attributed_VBN to_TO a_DT
+          clustering_VBG artifact_NN ._.
+        
+        
+          Literature_NNP profiling_VBG of_IN large_JJ gene_NN lists_NNS
+          The_DT size_NN of_IN the_DT list_NN of_IN genes_NNS that_WDT must_MD be_VB analyzed_VBN
+          can_MD vary_VB greatly_RB from_IN one_CD microarray_NN experiment_NN to_TO
+          another_DT ._. In_IN an_DT ideal_JJ setting_NN ,_, the_DT analysis_NN of_IN
+          gene-expression_JJ patterns_NNS groups_NNS co-regulated_JJ genes_NNS into_IN
+          small_JJ subsets_NNS ._. In_IN most_JJS cases_NNS ,_, however_RB ,_, partitioning_VBG of_IN
+          the_DT data_NNS on_IN the_DT basis_NN of_IN expression_NN is_VBZ impaired_VBN by_IN a_DT
+          small_JJ number_NN of_IN conditions_NNS or_CC straightforward_JJ expression_NN
+          profiles_NNS ._. As_IN a_DT consequence_NN ,_, microarray_NN experiments_NNS often_RB
+          generate_VBP lists_NNS of_IN several_JJ hundred_CD genes_NNS for_IN which_WDT
+          biological_JJ meaning_NN must_MD be_VB sought_VBN ._. The_DT use_NN of_IN a_DT mining_NN
+          technique_NN such_JJ as_IN the_DT one_CD described_VBD here_RB will_MD be_VB most_RBS
+          valuable_JJ in_IN this_DT context_NN ._. In_IN this_DT section_NN we_PRP give_VBP two_CD
+          examples_NNS of_IN literature_NN profiles_NNS generated_VBN from_IN published_VBN
+          datasets_NNS ._.
+          When_WRB a_DT large_JJ number_NN of_IN genes_NNS are_VBP analyzed_VBN ,_, the_DT level_NN
+          of_IN noise_NN (_( less-specific_JJ terms_NNS )_) can_MD be_VB more_RBR important_JJ ,_, and_CC
+          filtering_VBG criteria_NNS were_VBD adjusted_VBN accordingly_RB ._. The_DT fixed_VBN
+          25_CD %_NN cut-off_JJ we_PRP used_VBD in_IN our_PRP$ previous_JJ example_NN can_MD be_VB too_RB
+          high_JJ for_IN a_DT gene_NN represented_VBN by_IN hundreds_NNS of_IN abstracts_NNS but_CC
+          can_MD also_RB be_VB relatively_RB low_JJ when_WRB considering_VBG a_DT gene_NN for_IN
+          which_WDT only_RB five_CD abstracts_NNS could_MD be_VB retrieved_VBN ._. To_TO take_VB
+          such_JJ discrepancies_NNS into_IN account_NN we_PRP optimized_JJ the_DT cut-off_JJ
+          for_IN each_DT gene_NN as_IN follows_VBZ :_: cut-off_JJ =_SYM 
+          t_NN +_NN (_( 
+          k_NN /_NN 
+          n_NN )_) where_WRB 
+          t_NN is_VBZ the_DT minimum_JJ threshold_NN ,_, 
+          k_NN is_VBZ a_DT constant_JJ and_CC 
+          n_NN is_VBZ the_DT number_NN of_IN abstracts_NNS
+          retrieved_VBD for_IN a_DT given_VBN gene_NN ;_: 
+          t_NN and_CC 
+          k_NN must_MD be_VB set_VBN arbitrarily_RB and_CC will_MD
+          directly_RB influence_VB resolution_NN and_CC noise_NN levels_NNS ._. For_IN these_DT
+          examples_NNS we_PRP chose_VBD 
+          t_NN =_SYM 15_CD %_NN and_CC 
+          k_NN =_SYM 1_CD ._. 5_CD ,_, therefore_RB cut-off_JJ values_NNS
+          for_IN genes_NNS represented_VBN by_IN 5_CD or_CC 100_CD abstracts_NNS are_VBP 45_CD %_NN and_CC
+          16_CD ._. 5_LS %_NN respectively_RB ._. The_DT gene-term_JJ specificity_NN was_VBD further_RBR
+          improved_VBN by_IN adding_VBG a_DT filter_NN that_WDT removes_VBZ terms_NNS present_JJ in_IN
+          the_DT vocabulary_JJ of_IN more_JJR than_IN half_NN of_IN the_DT genes_NNS considered_VBN
+          (_( for_IN example_NN ,_, '_'' bound_VBN '_POS ,_, '_'' contained_VBD '_POS ,_, '_'' clones_NNS '_POS ,_, '_'' putative_JJ '_POS ,_,
+          '_'' process_NN '_'' )_) ._. Such_JJ a_DT filter_NN is_VBZ particularly_RB appropriate_JJ for_IN
+          large_JJ datasets_NNS ,_, as_IN the_DT chance_NN of_IN less-specific_JJ terms_NNS
+          being_VBG retained_VBN by_IN other_JJ filters_NNS increases_NNS with_IN the_DT number_NN
+          of_IN genes_NNS analyzed_VBD ._. The_DT functional_JJ heterogeneity_NN inherent_JJ
+          in_IN large_JJ gene_NN lists_NNS eliminates_VBZ the_DT risk_NN of_IN relevant_JJ terms_NNS
+          being_VBG removed_VBN by_IN this_DT filter_NN ._. Similar_JJ themes_NNS were_VBD
+          identified_VBN when_WRB the_DT cut-off_JJ applied_VBN in_IN the_DT previous_JJ
+          example_NN is_VBZ used_VBN instead_RB ._. However_RB ,_, increasing_VBG the_DT
+          stringency_NN of_IN the_DT filter_NN resulted_VBD in_IN a_DT tighter_JJR clustering_VBG
+          of_IN large_JJ datasets_NNS ._. In_IN these_DT examples_NNS we_PRP eliminated_VBD
+          redundant_JJ singular_NN /_NN plural_NN forms_NNS by_IN averaging_VBG
+          term-occurrence_JJ values_NNS derived_VBN from_IN both_DT entries_NNS
+          (_( considering_VBG ,_, for_IN instance_NN ,_, '_'' lipoprotein_NN '_'' and_CC
+          '_POS lipoproteins_NNS '_POS as_IN a_DT single_JJ entity_NN )_) ._.
+          In_IN the_DT first_JJ dataset_NN a_DT list_NN of_IN nearly_RB 200_CD genes_NNS and_CC
+          expressed_VBD sequence_NN tags_NNS (_( ESTs_NNP )_) that_WDT constitutes_VBZ the_DT human_JJ
+          macrophage_NN '_'' common_JJ transcriptional_NN program_NN '_'' induced_VBN upon_IN
+          bacterial_JJ infection_NN [_NN 12_CD ]_NN is_VBZ analyzed_VBN ._. Sufficient_NNP
+          publications_NNS could_MD be_VB retrieved_VBN for_IN 147_CD of_IN these_DT genes_NNS
+          (_( see_VB Additional_JJ data_NNS files_NNS )_) ._. Patterns_NNS of_IN term_NN occurrence_NN
+          appear_VBP once_RB gene_NN names_NNS have_VBP been_VBN rearranged_JJ by_IN
+          hierarchical_JJ clustering_VBG (_( Figure_NN 6_CD )_) ._. The_DT existence_NN of_IN
+          functional_JJ relationships_NNS between_IN genes_NNS can_MD be_VB inferred_VBN
+          from_IN the_DT visual_JJ analysis_NN of_IN the_DT resulting_VBG clustergram_NN
+          (_( Figure_NN 6_CD ,_, top_NN left_JJ panel_NN )_) ._. Putative_NNP relationships_NNS are_VBP
+          then_RB confirmed_VBN by_IN investigating_VBG the_DT few_JJ relevant_JJ
+          publications_NNS pinpointed_VBN by_IN the_DT analysis_NN of_IN literature_NN
+          profiles_NNS ._.
+          Several_JJ groups_NNS of_IN genes_NNS involved_VBN in_IN different_JJ aspects_NNS
+          of_IN the_DT immune_JJ response_NN to_TO an_DT infection_NN were_VBD uncovered_VBN by_IN
+          literature_NN profiling_VBG (_( interferon_NN response_NN ,_, chemotaxis_NNS ,_,
+          inflammation_NN :_: Figure_NN 6_CD d_SYM ,_, 6_CD f_SYM ,_, and_CC 6_CD g_SYM ,_, respectively_RB )_) ._. But_CC
+          many_JJ other_JJ functional_JJ groups_NNS were_VBD also_RB identified_VBN as_IN
+          follows_VBZ ._.
+          As_IN indicated_VBN by_IN their_PRP$ names_NNS ,_, lipoprotein_NN lipase_NN (_( LPL_NNP )_)
+          and_CC low-density_NN lipoprotein_NN receptor_NN (_( LDLR_NNP )_) genes_NNS are_VBP
+          involved_VBN in_IN lipid_NN and_CC cholesterol_NN metabolism_NN and_CC were_VBD
+          logically_RB associated_VBN by_IN literature_NN profiling_VBG (_( Figure_NN 6_CD a_DT )_) ._.
+          Interestingly_RB ,_, the_DT CD_NNP 36_CD -_: like_IN 1_CD antigen_NN (_( alias_NNS
+          thrombospondin_NN receptor-like_JJ 1_CD -_: CD_NNP 36_CD L_NNP 1_LS )_) clustered_VBN
+          tightly_RB with_IN LPL_NNP and_CC LDLR_NNP and_CC shared_VBN with_IN these_DT genes_NNS
+          terms_NNS such_JJ as_IN '_POS lipoprotein_NN '_'' ,_, '_'' lipid_NN '_'' or_CC '_POS cholesterol_NN '_''
+          (_( Figure_NN 6_CD a_DT )_) ._. This_DT association_NN was_VBD validated_JJ by_IN browsing_VBG
+          the_DT literature_NN relevant_JJ to_TO CD_NNP 36_CD L_NNP 1_CD whch_NN contains_VBZ reports_NNS
+          showing_VBG the_DT role_NN of_IN this_DT molecule_NN as_IN a_DT receptor_NN for_IN
+          high-density_JJ lipoprotein_NN ._.
+          The_DT two_CD major_JJ groups_NNS of_IN proteinases_NNS involved_VBN in_IN
+          extracellular_NN matrix_NN degradation_NN -_: serine_NN proteinases_NNS and_CC
+          metalloproteinases_NNS -_: have_VBP been_VBN grouped_VBN by_IN literature_NN
+          profiling_VBG (_( Figure_NN 6_CD b_SYM :_: urokinase_NN plasminogen_NN activation_NN
+          cascade_NN (_( UPA_NNP ,_, PLAUR_NNP ,_, SERPIN_NNP )_) and_CC matrix_NN
+          metalloproteinases_NNS (_( MMP_NNP 14_CD ,_, MMP_NNP 10_CD ,_, MMP_NNP 1_LS )_) )_) ._. Both_DT families_NNS
+          are_VBP activated_VBN during_IN inflammation_NN and_CC ,_, as_IN indicated_VBN by_IN
+          their_PRP$ literature_NN profiles_NNS ,_, are_VBP involved_VBN in_IN tumor_NN invasion_NN
+          and_CC metastasis_NNS [_NN 13_CD ,_, 14_CD ]_NN ._. In_IN the_DT context_NN of_IN a_DT bacterial_JJ
+          infection_NN these_DT proteins_NNS enable_VBP activated_VBN macrophages_NNS to_TO
+          cross_VB endothelial_NN barriers_NNS and_CC gain_NN access_NN to_TO the_DT site_NN of_IN
+          the_DT infection_NN [_NN 15_CD ,_, 16_CD ]_NN (_( other_JJ terms_NNS shared_VBN by_IN these_DT
+          genes_NNS are_VBP '_POS migration_NN '_'' ,_, '_'' vascular_NN '_'' ,_, '_'' endothelial_NN '_'' )_) ._. An_DT
+          extracellular-matrix-binding_JJ protein_NN ,_, SPARC_NNP (_( secreted_JJ
+          protein_NN ,_, acidic_JJ ,_, cysteine-rich_JJ ,_, alias_NNS osteonectin_NN )_) ,_, was_VBD
+          also_RB associated_VBN with_IN these_DT proteinases_NNS by_IN literature_NN
+          profiling_VBG ._. SPARC_NNP can_MD increase_VB endothelial_NN permeability_NN
+          and_CC is_VBZ known_VBN to_TO participate_VB in_IN tumor_NN angiogenesis_NNS and_CC
+          extravasation_NN [_NN 17_CD ]_NN ._. Interestingly_RB ,_, this_DT protein_NN has_VBZ not_RB
+          been_VBN reported_VBN as_IN being_VBG upregulated_JJ upon_IN cell_NN infection_NN
+          and_CC its_PRP$ possible_JJ role_NN in_IN macrophage_NN transendothelial_NN
+          migration_NN was_VBD never_RB addressed_VBN ._. This_DT example_NN illustrates_VBZ
+          how_WRB functional_JJ relationships_NNS that_WDT could_MD not_RB be_VB deduced_JJ
+          from_IN gene_NN names_NNS were_VBD uncovered_VBN through_IN the_DT analysis_NN of_IN
+          patterns_NNS of_IN term_NN occurrence_NN :_: matrix_NN metalloproteinases_NNS
+          (_( MMP_NNP 1_CD ,_, 10_CD ,_, 14_CD )_) and_CC urokinase_NN plasminogen_NN activator_NN (_( UPA_NNP ,_,
+          SPARC_NNP )_) are_VBP matrix-interacting_JJ molecules_NNS involved_VBN in_IN tumor_NN
+          invasion_NN and_CC metastasis_NNS ._.
+          The_DT cluster_NN shown_VBN in_IN Figure_NN 6_CD cis_NNS composed_VBN of_IN members_NNS
+          of_IN two_CD genes_NNS families_NNS :_: adenosine_NN receptors_NNS (_( ADORA_NNP 3_CD and_CC
+          ADORA_NNP 2_CD A_DT )_) and_CC purinergic_JJ receptors_NNS (_( P_NN 2_CD RX_NNP 1_CD and_CC P_NN 2_CD RX_NNP 7_CD )_) ._.
+          Indeed_RB ,_, although_IN not_RB evident_JJ from_IN its_PRP$ name_NN ,_, P_NN 2_CD RX_NNP acts_NNS as_IN
+          a_DT receptor_NN for_IN a_DT phosphorylated_JJ form_NN of_IN adenosine_NN
+          (_( adenosine_NN triphosphate_NN )_) ._.
+          Another_DT interesting_JJ example_NN where_WRB non-obvious_JJ
+          associations_NNS were_VBD revealed_VBN by_IN literature_NN profiling_VBG is_VBZ
+          shown_VBN in_IN Figure_NN 6_CD e_SYM ._. This_DT group_NN consists_VBZ of_IN genes_NNS for_IN
+          which_WDT related_VBD abstracts_NNS have_VBP in_IN common_JJ terms_NNS such_JJ as_IN
+          '_POS disorder_NN '_'' ,_, '_'' allele_NN '_'' ,_, '_'' recessive_JJ '_POS or_CC '_POS autosomal_NN '_'' ._. This_DT
+          shared_VBN vocabulary_JJ is_VBZ indicative_JJ of_IN an_DT association_NN that_IN ,_,
+          given_VBN the_DT diversity_NN of_IN genes_NNS implicated_VBN ,_, would_MD have_VB
+          undoubtedly_RB been_VBN overlooked_VBN by_IN the_DT mere_JJ examination_NN of_IN
+          the_DT gene_NN list_NN ._. Indeed_RB ,_, a_DT rapid_JJ search_NN of_IN the_DT Online_NNP
+          Mendelian_NNP Inheritance_NNP in_IN Man_NN database_NN (_( OMIM_NNP [_NN 18_CD ]_NN )_) for_IN
+          genes_NNS associated_VBN with_IN the_DT terms_NNS '_POS severe_JJ '_POS and_CC '_POS disorder_NN '_''
+          confirmed_VBD that_IN mutations_NNS of_IN GALC_NNP ,_, LAMB_NNP 3_CD ,_, GJB_NNP 2_CD ,_, JAG_NNP 1_CD ,_,
+          TGFBI_NNP ,_, LPL_NNP and_CC LDLR_NNP were_VBD the_DT origin_NN of_IN serious_JJ disorders_NNS :_:
+          Krabbe_NNP disease_NN ,_, Herlitz_NNP junctional_NN epidermolysis_NNS bullosa_NN ,_,
+          autosomal_NN dominant_JJ deafness_NNS -_: Vohwinkel_NNP syndrome_NN ,_,
+          Alagille_NNP syndrome_NN ,_, corneal_JJ dystrophy_NN ,_, type_NN I_PRP
+          hyperlipoproteinemia_NN and_CC hypercholesterolemia_NN ,_,
+          respectively_RB ._. In_IN addition_NN ,_, two_CD genes_NNS sharing_VBG a_DT similar_JJ
+          vocabulary_JJ could_MD be_VB found_VBN outside_IN the_DT region_NN outlined_VBN in_IN
+          Figure_NN 6_CD e_SYM :_: GCDH_NNP (_( linked_VBN to_TO glutaric_JJ acidemia_NN type_NN I_PRP )_) and_CC
+          MPI_NNP (_( linked_VBN to_TO carbohydrate-deficient_JJ glycoprotein_NN
+          syndrome_NN ,_, type_NN Ib_NNP )_) ._.
+          Literature_NNP profiles_NNS were_VBD generated_VBN for_IN a_DT second_JJ large_JJ
+          dataset_NN consisting_VBG of_IN the_DT 200_CD genes_NNS and_CC ESTs_NNP found_VBD to_TO be_VB
+          the_DT most_RBS differentially_RB regulated_VBN in_IN classic_JJ versus_CC
+          desmoplastic_JJ medulloblastomas_NNS in_IN a_DT study_NN of_IN central_JJ
+          nervous_JJ system_NN tumors_NNS [_NN 19_CD ]_NN ._. At_IN least_JJS five_CD references_NNS
+          were_VBD found_VBN for_IN 137_CD of_IN the_DT genes_NNS listed_VBN (_( see_VB Additional_JJ
+          data_NNS files_NNS )_) ._. In_IN contrast_NN to_TO the_DT previous_JJ example_NN ,_, gene_NN
+          expression_NN in_IN this_DT case_NN was_VBD not_RB measured_VBN for_IN a_DT purified_JJ
+          cell_NN population_NN but_CC for_IN heterogeneous_JJ tumor_NN tissue_NN ._. This_DT
+          fact_NN is_VBZ reflected_VBN in_IN the_DT analysis_NN of_IN literature_NN profiles_NNS ,_,
+          as_IN groups_NNS of_IN genes_NNS could_MD be_VB found_VBN to_TO be_VB associated_VBN with_IN
+          brain_NN tissues_NNS (_( Figure_NN 7_CD f_SYM ,_, for_IN example_NN ,_, HPCA_NNP
+          (_( hippocalcin_NN )_) ,_, SYP_NNP (_( synaptophysin_NN )_) ,_, GRIK_NNP 1_CD (_( glutamate_NN
+          receptor_NN ,_, ionotropic_JJ ,_, kainate_NN 1_LS )_) ,_, APLP_NNP (_( amyloid_NN beta_NN A_DT 4_CD
+          precursor-like_JJ protein_NN )_) )_) ,_, immune_JJ cells_NNS (_( Figure_NN 7_CD b_SYM ,_, for_IN
+          example_NN ,_, CD_NNP 40_CD ,_, IL_NNP 15_CD RA_NNP (_( IL-_NNP 15_CD receptor_NN ,_, alpha_NN chain_NN )_) ,_,
+          LILB_NNP 4_CD (_( leukocyte_NN immunoglobulin-like_JJ receptor_NN 4_LS )_) )_) or_CC
+          tumor_NN cells_NNS (_( Figure_NN 7_CD a_DT ,_, for_IN example_NN ,_, MYBL_NNP 1_CD (_( v-_NN 
+          myb_NN avian_NN myeloblastosis_NNS viral_JJ
+          oncogene_NN )_) ,_, ABL_NNP 2_CD (_( v-_NN 
+          abl_NN Abelson_NNP murine_NN leukemia_NN viral_JJ
+          oncogene_NN homolog_NN 2_LS )_) )_) ._. Interestingly_RB ,_, three_CD genes_NNS whose_WP$
+          products_NNS are_VBP known_VBN to_TO promote_VB viral_JJ replication_NN were_VBD
+          associated_VBN with_IN v-_NN 
+          myb_NN and_CC v-_NN 
+          abl_NN oncogenes_NNS (_( shared_VBN terms_NNS :_:
+          '_POS virus_NN '_'' ,_, '_'' transformation_NN '_'' or_CC '_POS leukemia_NN '_'' )_) :_: TAX_NN 1_CD BP_NNP 1_CD
+          (_( Tax_NNP 1_CD -_: binding_JJ protein_NN 1_LS )_) ,_, CREB_NNP 3_CD (_( cAMP-response_JJ element_NN
+          binding_JJ protein_NN 3_CD /_NN LZIP_NNP )_) and_CC TARBP_NNP 2_CD (_( TAR-binding_NNP protein_NN
+          2_LS )_) (_( Figure_NN 7_CD a_DT )_) [_NN 20_CD ,_, 21_CD ,_, 22_CD ]_NN ._. These_DT proteins_NNS could_MD have_VB a_DT
+          potentially_RB important_JJ role_NN in_IN the_DT regulation_NN of_IN cell_NN
+          growth_NN ,_, as_IN TAX_NN 1_CD BP_NNP ,_, CREB_NNP 3_CD and_CC TARBP_NNP possess_VBP
+          anti-apoptotic_JJ ,_, tumor_NN suppressor_NN and_CC oncogenic_JJ activities_NNS
+          [_NN 23_CD ,_, 24_CD ,_, 25_CD ]_NN ,_, respectively_RB ._. Another_DT group_NN of_IN genes_NNS
+          encoding_VBG three_CD enzymes_NNS (_( PLK_NNP (_( Polo-like_NNP kinase_NN )_) ,_, CDKN_NNP 3_CD
+          (_( cyclin-dependent_JJ kinase_NN inhibitor_NN 3_CD /_NN p_NN 27_CD -_: Kip_NNP 1_LS )_) ,_, CDC_NNP 25_CD A_DT
+          (_( cell_NN division_NN cycle_NN 25_CD A_DT )_) )_) and_CC a_DT transcription_NN factor_NN
+          (_( E_NNP 2_CD F_NN 1_CD ,_, E_NNP 2_CD F_NN transcription_NN factor_NN 1_LS )_) involved_VBN in_IN the_DT
+          control_NN of_IN the_DT cell_NN cycle_NN were_VBD grouped_VBN (_( Figure_NN 7_CD g_SYM )_) ._. All_DT
+          three_CD enzymes_NNS have_VBP been_VBN found_VBN to_TO be_VB overexpressed_JJ in_IN
+          tumors_NNS of_IN various_JJ origins_NNS [_NN 26_CD ,_, 27_CD ,_, 28_CD ]_NN ._. Other_JJ groups_NNS of_IN
+          functionally_RB related_VBN genes_NNS are_VBP shown_VBN in_IN Figure_NN 7_CD :_: some_DT
+          are_VBP ion_NN channels_NNS (_( Figure_NN 7_CD d_SYM ,_, whereas_IN others_NNS are_VBP
+          associated_VBN with_IN keratinocytes_NNS (_( Figure_NN 7_CD c_SYM )_) or_CC involved_VBN in_IN
+          the_DT respiratory_JJ chain_NN (_( Figure_NN 7_CD e_SYM )_) ._. A_DT wide_JJ diversity_NN of_IN
+          adhesion_NN molecules_NNS was_VBD also_RB identified_VBN (_( Figure_NN 7_CD h_NN )_) ._. These_DT
+          included_VBD the_DT obvious_JJ -_: MCAM_NNP (_( melanoma_NN cell_NN adhesion_NN
+          molecule_NN )_) -_: but_CC also_RB ATP_NNP 1_CD B_NNP 2_CD (_( ATPase_NNP ,_, Na_NNP +_NN /_NN K_NNP
+          +_NN transporting_NN ,_, beta_NN 2_CD polypeptide_NN ,_, which_WDT is_VBZ believed_VBN to_TO
+          function_VB in_IN neuron-astrocyte_JJ adhesion_NN [_NN 29_CD ,_, 30_CD ]_NN )_) ,_, THBS_NNP
+          (_( thrombospondin_NN ,_, an_DT adhesion_NN molecule_NN involved_VBN in_IN blood_NN
+          clotting_VBG )_) ,_, OPN_NNP (_( osteopontin_NN ,_, which_WDT promotes_VBZ osteoclast_NN
+          adhesion_NN [_NN 31_CD ]_NN )_) and_CC OSF_NNP 2_CD (_( osteoblast-specific_JJ factor_NN 2_CD ,_, a_DT
+          human_JJ homolog_NN of_IN the_DT insect_NN protein_NN fasciclin_NN thought_VBD to_TO
+          have_VB a_DT role_NN in_IN bone_NN adhesion_NN [_NN 32_CD ]_NN )_) ._. Finally_RB ,_, as_IN shown_VBN in_IN
+          Figure_NN 7_CD i_NNP ,_, MADH_NNP 2_CD and_CC MADH_NNP 5_CD (_( mothers_NNS against_IN
+          decapentaplegic_JJ homolog_NN 2_CD and_CC 5_LS )_) shared_VBN with_IN TGFB_NNP 3_CD
+          (_( transforming_VBG growth_NN factor_NN beta_NN 3_LS )_) terms_NNS such_JJ as_IN
+          '_POS TGF-beta_NNP '_POS ,_, transforming_VBG '_POS and_CC '_POS factor_NN beta_NN '_'' ,_, reflecting_VBG
+          the_DT involvement_NN of_IN MADH_NNP in_IN the_DT signaling_VBG pathway_NN of_IN
+          TGF-beta_NNP family_NN members_NNS [_NN 33_CD ]_NN ._.
+          Taken_VBN together_RB ,_, these_DT examples_NNS demonstrate_VBP the_DT power_NN
+          of_IN the_DT analysis_NN of_IN literature_NN profiles_NNS in_IN revealing_VBG
+          unsuspected_JJ functional_JJ relationships_NNS in_IN large_JJ and_CC
+          heterogeneous_JJ lists_NNS of_IN genes_NNS ._.
+        
+        
+          Benefits_NNP and_CC limitations_NNS
+          The_DT mining_NN technique_NN we_PRP describe_VBP is_VBZ designed_VBN to_TO guide_VB
+          the_DT interpretation_NN of_IN complex_JJ expression_NN databases_NNS ._. Key_JJ
+          aspects_NNS of_IN the_DT technique_NN contributing_VBG to_TO the_DT fulfillment_NN
+          of_IN this_DT goal_NN include_VBP ._. The_DT method_NN is_VBZ independent_JJ of_IN the_DT
+          user_NN 's_POS knowledge_NN of_IN gene_NN function_NN and_CC can_MD therefore_RB be_VB
+          used_VBN to_TO identify_VB promising_JJ findings_NNS rapidly_RB in_IN an_DT
+          unbiased_JJ way_NN ._. The_DT method_NN renders_NNS the_DT data_NNS intelligible_JJ by_IN
+          bringing_VBG functional_JJ coherence_NN to_TO large_JJ and_CC heterogeneous_JJ
+          lists_NNS of_IN genes_NNS ._. The_DT terms_NNS used_VBN as_IN criteria_NNS to_TO explore_VB
+          relationships_NNS among_IN genes_NNS differ_VBP with_IN the_DT composition_NN of_IN
+          the_DT group_NN of_IN genes_NNS considered_VBN for_IN analysis_NN ._. Because_IN the_DT
+          basis_NN for_IN classifying_VBG genes_NNS is_VBZ flexible_JJ ,_, associations_NNS
+          made_VBN between_IN them_PRP will_MD change_VB with_IN the_DT context_NN in_IN which_WDT
+          they_PRP are_VBP found_VBN ._. The_DT technique_NN is_VBZ based_VBN on_IN the_DT analysis_NN of_IN
+          the_DT content_NN of_IN scientific_JJ publications_NNS and_CC constitutes_VBZ a_DT
+          contemporary_JJ solution_NN for_IN the_DT exploitation_NN of_IN swelling_VBG
+          literature_NN resources_NNS by_IN providing_VBG investigators_NNS with_IN
+          leads_VBZ for_IN further_JJ in-depth_JJ investigation_NN of_IN the_DT
+          literature_NN ._. Term-occurrence_NNP data_NNS derived_VBN from_IN literature_NN
+          profiling_VBG can_MD be_VB used_VBN to_TO annotate_NN heterogeneous_JJ gene_NN
+          lists_NNS ,_, thus_RB adding_VBG to_TO the_DT value_NN of_IN this_DT technique_NN as_IN a_DT
+          visualization_NN tool_NN (_( Figure_NN 3_LS )_) ._.
+          The_DT implementation_NN of_IN our_PRP$ mining_NN technique_NN as_IN a_DT
+          computational_NN tool_NN is_VBZ hindered_VBN by_IN the_DT need_NN to_TO retrieve_VB
+          the_DT relevant_JJ literature_NN reliably_RB for_IN each_DT gene_NN included_VBN
+          in_IN the_DT analysis_NN ._. Indeed_RB ,_, gene-by-gene_JJ editing_NN of_IN
+          automatically_RB generated_VBN PubMed_NNP query_NN strings_NNS is_VBZ often_RB
+          required_VBN to_TO insure_VB low_JJ levels_NNS of_IN false_JJ positives_NNS among_IN
+          the_DT abstracts_NNS retrieved_VBD ._. Several_JJ names_NNS and_CC abbreviations_NNS
+          are_VBP often_RB associated_VBN with_IN a_DT single_JJ gene_NN but_CC are_VBP used_VBN in_IN a_DT
+          different_JJ context_NN (_( for_IN example_NN ,_, to_TO designate_JJ drugs_NNS ,_,
+          bacterial_JJ strains_NNS or_CC medical_JJ procedures_NNS )_) ,_, or_CC they_PRP belong_VBP
+          to_TO the_DT English_NNP vocabulary_JJ (_( e_SYM ._. g_SYM ._. '_POS Wars_NNS '_POS =_SYM
+          '_POS tryptophanyl-t_JJ RNA_NNP synthetase_NN '_'' ,_, '_'' Sky_NNP '_POS =_SYM '_POS TYRO_NNP 3_CD protein_NN
+          tyrosine_NN kinase_NN '_'' ,_, '_'' God_NNP '_POS =_SYM '_POS Godzilla_NNP '_POS )_) ._. Short_JJ acronyms_NNS are_VBP
+          especially_RB problematic_JJ (_( for_IN example_NN ,_, '_'' CT_NNP '_POS ,_, the_DT
+          abbreviation_NN for_IN '_POS calcitonin_NN '_'' can_MD be_VB found_VBN in_IN the_DT title_NN
+          of_IN over_IN 20_CD ,_, 000_CD abstracts_NNS ,_, of_IN which_WDT only_RB 25_CD contain_VB the_DT
+          term_NN '_'' calcitonin_NN '_'' )_) ._. Parsing_NNP issues_NNS that_WDT are_VBP caused_VBN by_IN a_DT
+          confusing_JJ gene_NN nomenclature_NN can_MD ,_, however_RB ,_, be_VB avoided_VBN when_WRB
+          curated_JJ literature_NN resources_NNS are_VBP available_JJ (_( for_IN example_NN ,_,
+          the_DT Yeast_NN Literature_NNP Database_NNP [_NN 34_CD ]_NN )_) ._.
+          The_DT reduction_NN of_IN the_DT information_NN contained_VBD in_IN the_DT
+          literature_NN is_VBZ also_RB limiting_VBG ._. Words_NNPS taken_VBN out_IN of_IN their_PRP$
+          context_NN convey_VB useful_JJ but_CC limited_JJ information_NN ,_, and_CC this_DT
+          superficial_JJ assessment_NN of_IN the_DT literature_NN can_MD only_RB be_VB used_VBN
+          to_TO direct_VB further_JJ investigation_NN ._. The_DT selection_NN of_IN terms_NNS
+          through_IN rounds_NNS of_IN filtering_VBG inevitably_RB results_VBZ in_IN the_DT
+          selection_NN of_IN irrelevant_JJ terms_NNS (_( false_JJ positives_NNS )_) ,_, and_CC
+          pertinent_JJ terms_NNS will_MD also_RB be_VB lost_VBN (_( false_JJ negatives_NNS )_) ._.
+          Reviewing_VBG the_DT terms_NNS and_CC literature_NN that_WDT prompted_VBD the_DT
+          definition_NN of_IN relationships_NNS among_IN genes_NNS can_MD easily_RB
+          identify_VB false-positive_JJ associations_NNS ._. False-negative_NNP
+          associations_NNS are_VBP harder_RBR to_TO identify_VB and_CC can_MD only_RB be_VB kept_VBN
+          to_TO a_DT minimum_NN by_IN combining_VBG existing_VBG approaches_NNS designed_VBN to_TO
+          assess_VB the_DT biological_JJ significance_NN of_IN large_JJ sets_NNS of_IN
+          genes_NNS ._. Like_IN the_DT other_JJ literature-mining_JJ approaches_NNS
+          previously_RB published_VBN ,_, our_PRP$ technique_NN cannot_NN be_VB expected_VBN to_TO
+          give_VB definitive_JJ answers_NNS ,_, but_CC nonetheless_RB provides_VBZ
+          investigators_NNS with_IN much-needed_JJ solutions_NNS for_IN the_DT
+          functional_JJ evaluation_NN of_IN complex_JJ microarray_NN data_NNS [_NN
+          35_CD ]_NN ._.
+          Relatively_RB few_JJ groups_NNS have_VBP attempted_VBN to_TO resolve_VB the_DT
+          bottleneck_NN constituted_VBD by_IN the_DT inability_NN of_IN highly_RB
+          specialized_JJ investigators_NNS to_TO assess_VB the_DT existence_NN of_IN
+          relationships_NNS between_IN genes_NNS in_IN a_DT high-throughput_JJ fashion_NN
+          [_NN 3_CD ,_, 4_CD ,_, 5_CD ]_NN ._. Jenssen_NNP 
+          et_CC al_NN ._. [_NN 5_CD ]_NN analyzed_VBD literature_NN
+          contents_NNS to_TO create_VB a_DT gene-to-gene_JJ co-citation_JJ network_NN
+          revealing_VBG associations_NNS between_IN genes_NNS ._. Our_PRP$ technique_NN
+          differs_VBZ fundamentally_RB from_IN Jenssen_NNP 
+          et_CC al_NN ._. 's_POS method_NN in_IN that_IN it_PRP is_VBZ
+          based_VBN on_IN term_NN occurrences_NNS in_IN indexed_VBN abstracts_NNS as_IN opposed_VBN
+          to_TO gene_NN name_NN co-citation_JJ frequencies_NNS ._. This_DT approach_NN
+          allowed_VBD us_PRP to_TO take_VB advantage_NN of_IN the_DT powerful_JJ algorithms_NNS
+          used_VBN for_IN the_DT analysis_NN of_IN patterns_NNS of_IN gene_NN expression_NN ._.
+          Also_RB ,_, this_DT literature-profiling_JJ method_NN should_MD benefit_VB
+          from_IN ongoing_JJ efforts_NNS to_TO improve_VB visualization_NN tools_NNS ,_,
+          clustering_VBG techniques_NNS ,_, and_CC associated_VBN statistics_NNS [_NN 36_CD ,_,
+          37_CD ]_NN ._. Another_DT major_JJ advantage_NN arises_VBZ from_IN the_DT capacity_NN to_TO
+          include_VB any_DT of_IN the_DT terms_NNS present_JJ in_IN abstracts_NNS ,_, resulting_VBG
+          in_IN a_DT considerable_JJ increase_NN in_IN the_DT number_NN of_IN potential_JJ
+          relationships_NNS generated_VBN ._. Finally_RB ,_, the_DT number_NN of_IN genes_NNS
+          covered_VBN by_IN this_DT type_NN of_IN analysis_NN is_VBZ also_RB much_RB greater_JJR ,_,
+          thanks_NNS to_TO the_DT low_JJ requirements_NNS in_IN the_DT volume_NN of_IN
+          literature_NN associated_VBN with_IN each_DT gene_NN ._.
+          Text-mining_NNP software_NN is_VBZ also_RB available_JJ commercially_RB ._.
+          Omniviz_NNP [_NN 38_CD ]_NN ,_, one_CD of_IN the_DT most_JJS advanced_VBN solutions_NNS for_IN the_DT
+          analysis_NN of_IN the_DT scientific_JJ literature_NN ,_, can_MD group_VB
+          publications_NNS (_( or_CC patents_NNS or_CC any_DT other_JJ kind_NN of_IN text_NN
+          entries_NNS )_) associated_VBN with_IN a_DT common_JJ theme_NN (_( for_IN example_NN ,_,
+          Alzheimer_NNP 's_POS disease_NN )_) through_IN the_DT analysis_NN of_IN their_PRP$
+          content_NN ._. In_IN contrast_NN ,_, our_PRP$ mining_NN algorithm_NN was_VBD
+          specifically_RB designed_VBN to_TO group_VB genes_NNS (_( instead_RB of_IN
+          publications_NNS )_) through_IN the_DT analysis_NN of_IN the_DT content_NN of_IN
+          their_PRP$ associated_VBN literatures_NNS ._. This_DT conceptual_JJ difference_NN
+          makes_VBZ the_DT techniques_NNS distinct_JJ from_IN one_CD another_DT ._. Our_PRP$
+          approach_NN requires_VBZ the_DT literature_NN to_TO be_VB indexed_VBN for_IN each_DT
+          gene_NN and_CC treated_VBN separately_RB throughout_IN the_DT analysis_NN ._. We_PRP
+          also_RB filter_NN terms_NNS using_VBG stringent_JJ criteria_NNS ,_, a_DT critical_JJ
+          step_NN that_WDT allows_VBZ the_DT analysis_NN of_IN patterns_NNS of_IN term_NN
+          occurrences_NNS by_IN hierarchical_JJ clustering_VBG ._.
+        
+        
+          Applications_NNS and_CC perspectives_NNS
+          This_DT report_NN constitutes_VBZ a_DT proof_NN of_IN principle_NN on_IN the_DT
+          feasibility_NN and_CC use_NN of_IN literature_NN profiling_VBG for_IN
+          high-throughput_JJ research_NN ._. Although_IN room_NN exists_VBZ for_IN
+          improvements_NNS in_IN indexing_NN ,_, filtering_VBG and_CC clustering_VBG
+          strategies_NNS ,_, the_DT methodology_NN described_VBD provides_VBZ a_DT
+          blueprint_NN for_IN the_DT development_NN of_IN computational_NN tools_NNS that_WDT
+          can_MD rapidly_RB assess_VB literature_NN content_NN to_TO guide_VB the_DT
+          biological_JJ interpretation_NN of_IN complex_JJ expression_NN data_NNS ._.
+          Because_IN this_DT literature-mining_JJ technique_NN analyzes_NNS data_NNS at_IN
+          a_DT high_JJ level_NN it_PRP is_VBZ independent_JJ of_IN the_DT platform_NN used_VBN by_IN
+          investigators_NNS (_( for_IN example_NN ,_, spotted_VBD cDNA_NN or_CC high-density_JJ
+          oligonucleotide_NN arrays_NNS ,_, protein_NN arrays_NNS )_) and_CC could_MD find_VB
+          applications_NNS in_IN both_DT genomics_NNS and_CC proteomics_NNS
+          research_NN ._.
+          In_IN addition_NN to_TO providing_VBG help_NN to_TO explore_VB large_JJ
+          expression_NN datasets_NNS ,_, occurrence_NN values_NNS displayed_VBN for_IN
+          certain_JJ terms_NNS in_IN the_DT format_NN used_VBN in_IN Figure_NN 3_CD can_MD be_VB used_VBN
+          to_TO annotate_NN large_JJ and_CC complex_JJ lists_NNS of_IN genes_NNS ,_, providing_VBG
+          readers_NNS with_IN information_NN on_IN gene_NN function_NN ._. In_IN our_PRP$
+          example_NN ,_, giving_VBG occurrence_NN values_NNS for_IN terms_NNS such_JJ as_IN
+          '_POS apoptosis_NNS '_POS ,_, '_'' endothelial_NN '_'' ,_, '_'' interferon_NN '_'' ,_, '_'' inflammatory_JJ '_POS
+          '_POS chemoattractant_NN '_'' or_CC '_POS histocompatibility_NN '_'' provides_VBZ a_NNP
+          '_POS naive_JJ '_POS reader_NN with_IN insight_NN into_IN the_DT function_NN attributed_VBD
+          in_IN the_DT literature_NN to_TO each_DT of_IN the_DT listed_VBN genes_NNS ._.
+          Associating_NNP literature_NN profiles_NNS with_IN gene-expression_JJ
+          data_NNS could_MD be_VB used_VBN for_IN orienting_VBG gene_NN discovery_NN ._. It_PRP is_VBZ
+          believed_VBN that_IN co-regulated_JJ genes_NNS share_VBP similar_JJ promoters_NNS
+          and_CC /_NN or_CC are_VBP involved_VBN in_IN similar_JJ biological_JJ processes_VBZ [_NN 1_CD ]_NN ._.
+          Using_VBG this_DT principle_NN of_IN '_POS guilt_NN by_IN association_NN '_'' ,_, functions_NNS
+          attributed_VBD to_TO known_VBN genes_NNS can_MD be_VB inferred_VBN for_IN unknown_JJ
+          genes_NNS sharing_VBG similar_JJ expression_NN profiles_NNS ._. In_IN the_DT first_JJ
+          example_NN used_VBN in_IN this_DT report_NN (_( see_VB Additional_JJ data_NNS files_NNS )_) ,_,
+          many_JJ of_IN the_DT genes_NNS were_VBD identified_VBN using_VBG literature_NN
+          profiles_NNS as_IN being_VBG related_VBN to_TO '_POS interferon_NN '_'' ,_, '_'' virus_NN '_'' and_CC
+          '_POS infection_NN '_'' ,_, and_CC thus_RB it_PRP can_MD be_VB assumed_VBN that_IN some_DT of_IN the_DT
+          genes_NNS and_CC ESTs_NNP that_WDT were_VBD not_RB included_VBN in_IN the_DT analysis_NN
+          from_IN lack_NN of_IN literature_NN (_( see_VB Additional_JJ data_NNS files_NNS )_) are_VBP
+          also_RB associated_VBN with_IN these_DT terms_NNS ._. For_IN instance_NN ,_, among_IN the_DT
+          co-regulated_JJ ESTs_NNP is_VBZ the_NNP '_POS Homo_NN sapiens_JJ cig_NN 5_CD mRNA_NN ,_, partial_JJ
+          sequence_NN '_'' (_( AF_NNP 026941_CD )_) ,_, which_WDT was_VBD obtained_VBN using_VBG
+          differential_NN display_NN analysis_NN to_TO identify_VB sequences_NNS for_IN
+          which_WDT transcription_NN is_VBZ induced_VBN following_VBG cytomegalovirus_JJ
+          infection_NN [_NN 39_CD ]_NN ._. Another_DT co-regulated_JJ but_CC poorly_RB studied_VBN
+          gene_NN is_VBZ '_POS secreted_JJ and_CC transmembrane_NN 1_CD '_POS (_( U_NNP 77643_CD )_) ,_, which_WDT
+          resembles_VBZ a_DT cytokine_NN or_CC growth_NN factor_NN in_IN its_PRP$ broad_JJ
+          structural_JJ characteristics_NNS [_NN 40_CD ]_NN ._. This_DT gene_NN was_VBD later_RB
+          reported_VBN to_TO be_VB the_DT ligand_NN for_IN the_DT surface_NN antigen_NN CD_NNP 7_CD and_CC
+          found_VBD to_TO be_VB capable_JJ of_IN activating_VBG NK_NNP cells_NNS [_NN 41_CD ]_NN ,_, which_WDT
+          constitute_VBP the_DT primary_JJ source_NN of_IN IFN-gamma_NNP during_IN early_JJ
+          responses_NNS to_TO infection_NN [_NN 42_CD ]_NN ._. In_IN both_DT examples_NNS the_DT link_NN
+          to_TO '_POS interferon_NN '_'' ,_, '_'' virus_NN '_'' or_CC '_POS infection_NN '_'' can_MD only_RB be_VB
+          suspected_VBN ,_, but_CC certainly_RB deserves_VBZ attention_NN because_IN these_DT
+          sequences_NNS are_VBP regulated_VBN together_RB with_IN genes_NNS known_VBN to_TO be_VB
+          involved_VBN in_IN the_DT biology_NN of_IN interferons_NNS ._.
+        
+      
+      
+        Conclusions_NNP
+        The_DT sequencing_VBG of_IN whole_JJ genomes_NNS and_CC the_DT introduction_NN of_IN
+        technologies_NNS capable_JJ of_IN measuring_VBG simultaneously_RB the_DT
+        expression_NN of_IN thousands_NNS of_IN genes_NNS provides_VBZ biological_JJ
+        research_NN with_IN a_DT global_JJ perspective_NN that_WDT opposes_VBZ the_DT trend_NN
+        over_IN the_DT past_JJ few_JJ decades_NNS of_IN the_DT narrowing_NN into_IN highly_RB
+        specialized_JJ research_NN fields_NNS ._. But_CC the_DT optimal_NN exploitation_NN
+        of_IN these_DT invaluable_JJ resources_NNS by_IN researchers_NNS necessitates_NNS
+        the_DT development_NN of_IN mining_NN tools_NNS to_TO explore_VB and_CC interpret_VB
+        data_NNS in_IN a_DT time_NN frame_NN compatible_JJ with_IN the_DT impressive_JJ rate_NN at_IN
+        which_WDT they_PRP are_VBP generated_VBN ._. Individual_JJ knowledge_NN is_VBZ built_VBN on_IN
+        associations_NNS made_VBN between_IN the_DT information_NN we_PRP acquire_VB from_IN
+        the_DT literature_NN ._. The_DT method_NN we_PRP describe_VBP here_RB mimics_VBZ this_DT
+        learning_VBG process_NN by_IN associating_VBG meaningful_JJ terms_NNS found_VBD in_IN
+        scientific_JJ publications_NNS to_TO create_VB a_DT coherent_JJ picture_NN of_IN the_DT
+        relationships_NNS that_WDT exist_VBP within_IN complex_JJ groups_NNS of_IN genes_NNS ._.
+        Because_IN this_DT analysis_NN is_VBZ performed_VBN independently_RB of_IN
+        knowledge_NN of_IN gene_NN function_NN it_PRP provides_VBZ a_DT means_NN of_IN rapidly_RB
+        probing_VBG the_DT biological_JJ significance_NN of_IN complex_JJ expression_NN
+        data_NNS in_IN an_DT unbiased_JJ fashion_NN ._.
+      
+      
+        Materials_NNS and_CC methods_NNS
+        
+          Literature_NNP indexing_NN
+          Relevant_NNP literature_NN was_VBD retrieved_VBN for_IN each_DT gene_NN by_IN
+          querying_VBG Medline_NNP for_IN entries_NNS containing_VBG gene_NN names_NNS or_CC
+          abbreviations_NNS or_CC aliases_NNS ._. The_DT URL_NNP database_NN used_VBN to_TO
+          generate_VB basic_JJ PubMed_NNP search_NN strings_NNS for_IN human_JJ genes_NNS can_MD
+          be_VB downloaded_JJ (_( see_VB Additional_JJ data_NNS files_NNS )_) ._. The_DT database_NN
+          is_VBZ indexed_VBN by_IN LocusLink_NNP [_NN 9_CD ]_NN and_CC GenBank_NNP IDs_NNP [_NN 8_CD ]_NN ._. Most_JJS
+          search_NN strings_NNS must_MD be_VB edited_JJ on_IN a_DT gene-by-gene_JJ basis_NN ,_, as_IN
+          a_DT vast_JJ majority_NN of_IN publications_NNS do_VBP not_RB adhere_VB to_TO the_DT
+          official_JJ nomenclature_NN and_CC gene_NN names_NNS and_CC abbreviations_NNS in_IN
+          use_NN can_MD differ_VB from_IN the_DT aliases_NNS provided_VBN by_IN HGNC_NNP or_CC lack_NN
+          specificity_NN (_( see_VB discussion_NN in_IN '_POS Benefits_NNP and_CC
+          limitations_NNS '_POS )_) ._. Acronyms_NNP that_WDT contain_VBP only_RB few_JJ letters_NNS are_VBP
+          particularly_RB problematic_JJ and_CC must_MD often_RB be_VB removed_VBN from_IN
+          the_DT query_NN in_IN order_NN to_TO avoid_VB high_JJ proportions_NNS of_IN
+          false-positive_JJ hits_NNS ._.
+        
+        
+          Data_NNP filtering_VBG
+          Data_NNP were_VBD filtered_VBN as_IN described_VBN in_IN Results_NNS and_CC
+          discussion_NN using_VBG Microsoft_NNP Excel_NNP ._. The_DT spreadsheet_NN used_VBN to_TO
+          filter_NN the_DT gene_NN list_NN analyzed_VBD in_IN this_DT report_NN and_CC baseline_NN
+          occurrence_NN values_NNS can_MD be_VB downloaded_JJ (_( see_VB Additional_JJ data_NNS
+          files_NNS )_) ._.
+        
+        
+          Examples_NNS
+          The_DT literature_NN profiles_NNS generated_VBN for_IN the_DT two_CD large_RB
+          published_VBN datasets_NNS analyzed_VBD in_IN this_DT report_NN can_MD be_VB
+          downloaded_JJ (_( see_VB Additional_JJ data_NNS files_NNS )_) and_CC explored_JJ using_VBG
+          the_DT clustergram_NN browser_NN Treeview_NNP ,_, which_WDT is_VBZ available_JJ
+          online_NN at_IN no_DT charge_NN [_NN 10_CD ]_NN ._. The_DT three_CD types_NNS of_IN files_NNS
+          provided_VBN for_IN each_DT example_NN (_( ATR_NNP ,_, GTR_NNP ,_, CDT_NNP )_) must_MD be_VB copied_VBN
+          in_IN the_DT same_JJ folder_NN before_IN opening_VBG the_DT CDT_NNP file_NN with_IN
+          Treeview_NNP ._.
+        
+        
+          Text_NNP analysis_NN
+          Results_NNS from_IN PubMed_NNP queries_NNS can_MD be_VB downloaded_JJ using_VBG
+          the_DT save_VB button_NN on_IN the_DT toolbar_NN after_IN selecting_VBG the_DT
+          appropriate_JJ output_NN format_NN (_( the_DT default_NN output_NN format_NN -_:
+          '_POS summary_NN '_'' -_: must_MD be_VB substituted_VBN by_IN '_POS XML_NNP '_POS )_) ._. Abstracts_NNP are_VBP
+          extracted_VBN from_IN the_DT output_NN files_NNS and_CC saved_VBN in_IN a_DT new_JJ file_NN
+          containing_VBG abstracts_NNS separated_VBN by_IN a_DT new_JJ line_NN ._. The_DT text_NN
+          analysis_NN of_IN abstract_JJ content_NN was_VBD performed_VBN using_VBG the_DT
+          simstat_NN /_NN wordstat_NN modules_NNS (_( Provalis_NNP Research_NNP ,_, Montreal_NNP )_) ._.
+          Individual_JJ files_NNS are_VBP merged_VBN into_IN a_DT single_JJ file_NN by_IN
+          Wordstat_NNP 's_POS '_POS document_NN conversion_NN wizard_NN '_'' that_WDT can_MD be_VB
+          opened_VBN in_IN simstat_NN and_CC analyzed_VBN by_IN running_VBG the_NNP '_POS content_NN
+          analysis_NN '_'' statistics_NNS ._. The_DT output_NN consists_VBZ of_IN a_DT table_NN
+          (_( crosstab_NN -_: tabulate_NN :_: word_NN occurrence_NN ;_: display_NN :_: category_NN
+          percent_NN )_) ,_, which_WDT can_MD be_VB saved_VBN as_IN a_DT tab-delimited_JJ text_NN
+          file_NN ._.
+        
+        
+          Hierarchical_NNP clustering_VBG
+          Clustering_NNP analysis_NN was_VBD performed_VBN using_VBG
+          Cluster_NNP /_NN Treeview_NNP programs_NNS available_JJ from_IN the_DT Eisen_NNP lab_NN
+          website_NN [_NN 10_CD ]_NN ._. Genes_NNP were_VBD grouped_VBN using_VBG the_DT average_JJ
+          linkage_NN hierarchical_JJ clustering_VBG algorithm_NN ._.
+        
+      
+      
+        Additional_JJ data_NNS files_NNS
+        Additional_JJ tables_NNS contain_VBP an_DT indexof_NN the_DT gene_NN
+        abbreviations_NNS used_VBN throughout_IN the_DT paper_NN and_CC a_DT detailed_VBN list_NN
+        of_IN non-obvious_JJ functional_JJ relationships_NNS identified_VBN by_IN the_DT
+        exploration_NN of_IN Figures_NNS 6_CD and_CC 7_CD ._. Our_PRP$ URL_NNP database_NN of_IN indexed_VBN
+        PubMed_NNP entries_NNS (_( in_IN Microsoft_NNP Excelor_NNP tab_NN delimited_JJ
+        textformats_NNS )_) and_CC a_DT sample_NN term_NN filtering_VBG tableare_NN
+        available_JJ ._. The_DT literature_NN profiles_NNS of_IN Figures_NNS 6_CD and_CC 7_CD (_( ATR_NNP
+        (_( Figure_NN 6_CD and_CC Figure_NN 7_CD )_) ,_, GTR_NNP (_( Figure_NN 6_CD and_CC Figure_NN 7_CD )_) and_CC
+        CDT_NNP files_NNS (_( Figure_NN 6_CD and_CC Figure_NN 7_CD )_) )_) can_MD be_VB read_VBN by_IN the_DT
+        well-known_JJ open_JJ source_NN dendrogram_NN browser_NN Treeview_NNP [_NN
+        10_CD ]_NN ._.
+        Additional_JJ data_NNS file_VBP 1_CD
+        An_DT index_NN of_IN the_DT gene_NN abbreviations_NNS and_CC a_DT detailed_VBN list_NN
+        of_IN non-obvious_JJ functional_JJ relationships_NNS
+        An_DT index_NN of_IN the_DT gene_NN abbreviations_NNS and_CC a_DT detailed_VBN list_NN
+        of_IN non-obvious_JJ functional_JJ relationships_NNS
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 2_CD
+        Our_PRP$ URL_NNP database_NN of_IN indexed_VBN PubMed_NNP entries_NNS in_IN Microsoft_NNP
+        Excel_NNP format_NN
+        Our_PRP$ URL_NNP database_NN of_IN indexed_VBN PubMed_NNP entries_NNS in_IN Microsoft_NNP
+        Excel_NNP format_NN
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 3_CD
+        Our_PRP$ URL_NNP database_NN of_IN indexed_VBN PubMed_NNP entries_NNS in_IN tab_NN
+        delimited_JJ text_NN format_NN
+        Our_PRP$ URL_NNP database_NN of_IN indexed_VBN PubMed_NNP entries_NNS in_IN tab_NN
+        delimited_JJ text_NN format_NN
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 4_CD
+        A_DT sample_NN term_NN filtering_VBG table_NN
+        A_DT sample_NN term_NN filtering_VBG table_NN
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 5_CD
+        ATR_NNP file_VB for_IN Figure_NN 6_CD
+        ATR_NNP file_VB for_IN Figure_NN 6_CD
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 6_CD
+        ATR_NNP file_VB for_IN Figure_NN 7_CD
+        ATR_NNP file_VB for_IN Figure_NN 7_CD
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 7_CD
+        GTR_NNP file_VB for_IN Figure_NN 6_CD
+        GTR_NNP file_VB for_IN Figure_NN 6_CD
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 8_CD
+        GTR_NNP file_VB for_IN Figure_NN 7_CD
+        GTR_NNP file_VB for_IN Figure_NN 7_CD
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 9_CD
+        CDT_NNP file_VB for_IN Figure_NN 6_CD
+        CDT_NNP file_VB for_IN Figure_NN 6_CD
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 10_CD
+        CDT_NNP file_VB for_IN Figure_NN 7_CD
+        CDT_NNP file_VB for_IN Figure_NN 7_CD
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+      
+    
+  
