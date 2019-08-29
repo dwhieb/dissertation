@@ -22,6 +22,9 @@
 % NB: This needs to be declared *after* the todonotes package
 \reversemarginpar
 
+\usepackage{soul}
+\sethlcolor{magenta}
+
 \input{utilities/version}
 
 % COMMANDS
@@ -35,13 +38,13 @@
 % Is is the subject of much debate whether these language-specific categories can be mapped onto each other or compared in any useful way \addref{Haspelmath 2010, other publications on this debate}.
 %
 \newcommand{\addcite}[1]{%
-  \colorbox{magenta}{(CITE: #1)}%
+  \hl{(CITE: #1)}%
   \todo[
     caption={citation},
     color=magenta,
     noline,
     size=\tiny
-  ]{}
+  ]{}%
 }
 
 % \addissue{}{}
