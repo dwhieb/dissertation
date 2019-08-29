@@ -1,6 +1,6 @@
 {
   "name": "dissertation",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "My Ph.D. dissertation in linguistics at the University of California, Santa Barbara",
   "author": {
     "name": "Daniel W. Hieber",
@@ -35,6 +35,8 @@
     "postbuild": "npm run end-log && npm run copy-files && open-cli dissertation.pdf",
     "prebuild": "npm run start-log",
     "precompile": "npm run diss-version && npm run abbreviations",
+    "quick-bib": "npm run quick-build && biber src/main && npm run quick-build",
+    "quick-build": "cd src && xelatex main.tex && cd .. && open-cli src/main.pdf",
     "start-log": "node --experimental-modules --no-warnings scripts/build/startLog.mjs",
     "temp": "node --experimental-modules --no-warnings scripts/temp.js",
     "upload": "node --experimental-modules --no-warnings scripts/build/upload.mjs"
