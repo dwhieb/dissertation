@@ -98,6 +98,16 @@ More information about the ANC Tool may be found [here][ANC-Tool]. Steps for app
 
 In this repository, the converted corpus is located in the folder `data/English/OANC/data`.
 
+#### Converting the Corpus to JSON
+
+When scripting with JavaScript, I find it significantly easier to work with data in <abbr title='JavaScript Object Notation'>JSON</abbr> (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about the JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][Daffodil].
+
+To convert the OANC to JSON format, I wrote a small JavaScript script called `tags2dlx`, which converts linguistic texts tagged in MonoConc format (the word followed by an underscore and then the part-of-speech tag) to JSON. More specifically, it converts the text to a JSON format that adheres to the Data Format for Digital Linguistics (<abbr title='Data Format for Digital Linguistics'><Daffodil</abbr>), a standard for representing linguistic texts and other linguistic data in JSON. More information about the `tags2dlx` library and how to use it may be found [here][tags2dlx]. More information about the Data Format for Digital Linguistics may be found [here][Daffodil].
+
+The `tags2dlx` package creates a JSON file for each text in the corpus with the same filename as the original text, but with the `.txt` extension replaced by `.json`. This new file is created in the same folder as the original file.
+
+To use the `tags2dlx` package to convert the OANC corpus in this repository to JSON, run `npm run convert-oanc` from the command line. To use the `tags2dlx` package to convert other data sets, or data that lives elsewhere, follow the instructions in the `tags2dlx` readme, located [here][tags2dlx].
+
 ### Stage 5: Data Coding
 
 ### Stage 6: Data Description & Analysis
