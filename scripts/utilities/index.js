@@ -1,3 +1,3 @@
-import compare from './compare.mjs';
+import compare from './compare.js';
 
 export { compare };

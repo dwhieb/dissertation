@@ -2,7 +2,7 @@ import { createRequire } from 'module';
 import fs                from 'fs';
 import path              from 'path';
 import recurse           from 'recursive-readdir';
-import rootDir           from '../constants/rootDir.mjs';
+import rootDir           from '../constants/rootDir.js';
 
 const { readFile } = fs.promises;
 // const require      = createRequire(import.meta.url);
