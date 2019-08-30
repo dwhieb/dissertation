@@ -1,0 +1,492 @@
+
+  
+    
+      
+        Background_NNP
+        Even_RB though_IN the_DT DNA_NNP microarray_NN is_VBZ still_RB an_DT emerging_VBG
+        technology_NN ,_, its_PRP$ usefulness_NN as_IN a_DT profiling_VBG tool_NN is_VBZ well_RB
+        established_VBN ._. Affymetrix_NNP GeneChip_NNP ®_NN arrays_NNS enable_VBP the_DT
+        concurrent_JJ assessment_NN of_IN expression_NN levels_NNS for_IN thousands_NNS of_IN
+        genes_NNS in_IN a_DT single_JJ experiment_NN ._. At_IN the_DT molecular_JJ level_NN ,_,
+        however_RB ,_, the_DT microarray_NN experiment_NN is_VBZ a_DT challenging_VBG
+        biophysical_JJ problem_NN that_WDT is_VBZ extremely_RB dependent_JJ on_IN
+        probe-target_JJ kinetics_NNS ,_, specificity_NN and_CC design_NN ._. Among_IN the_DT
+        principal_JJ sources_NNS of_IN variability_NN are_VBP the_DT nonspecific_JJ
+        interactions_NNS due_JJ to_TO combinatorial_NN complexity_NN of_IN the_DT genome_NN ,_,
+        the_DT thermodynamic_JJ equivalence_NN of_IN probes_NNS ,_, the_DT accuracy_NN and_CC
+        spatial_NN uniformity_NN of_IN probe_NN synthesis_NN and_CC the_DT preparation_NN ,_,
+        amplification_NN and_CC fractionation_NN of_IN cDNA_NN and_CC cRNA_NN ._.
+        The_DT photolithographically_RB synthesized_JJ oligonucleotide_NN
+        microarrays_NNS that_WDT underlie_VB the_DT Affymetrix_NNP GeneChip_NNP ®_NN array_NN
+        use_NN pairs_NNS (_( typically_RB 16_CD or_CC 20_CD )_) of_IN perfect-match_JJ (_( PM_NNP )_) and_CC
+        mismatch_NN (_( MM_NNP )_) features_NNS ._. Each_DT feature_NN is_VBZ a_DT rectangular_JJ
+        region_NN containing_VBG oligonucleotides_NNS complementary_JJ to_TO a_DT
+        corresponding_JJ region_NN of_IN a_DT gene_NN ._. Because_IN of_IN the_DT inherent_JJ
+        difficulties_NNS of_IN oligonucleotide_NN synthesis_NN ,_, the_DT proportion_NN
+        of_IN full-length_JJ (_( 25_CD mer_NN )_) probes_NNS within_IN a_DT feature_NN is_VBZ rather_RB
+        low_JJ [_NN 1_CD ]_NN ._. The_DT PM_NNP probes_NNS are_VBP distinguishable_JJ from_IN the_DT MM_NNP
+        probes_NNS only_RB by_IN the_DT nucleotide_NN in_IN the_DT 13_CD th_NN position_NN ._. The_DT
+        expressed_VBN design_NN intent_NN behind_IN the_DT MM_NNP feature_NN is_VBZ to_TO
+        quantify_VB the_DT background_NN noise_NN (_( for_IN example_NN ,_, scanner_NN noise_NN )_)
+        and_CC nonspecific_JJ interactions_NNS (_( for_IN example_NN ,_,
+        cross-hybridization_JJ )_) embedded_VBN within_IN the_DT PM_NNP signal_NN ._. To_TO
+        arrive_VB at_IN a_DT pristine_JJ measure_NN of_IN the_DT signal_NN attributable_JJ to_TO
+        probe-target_JJ interaction_NN ,_, it_PRP has_VBZ been_VBN suggested_VBN [_NN 2_CD ,_, 3_CD ,_, 4_CD ]_NN
+        that_IN the_DT intensity_NN for_IN the_DT MM_NNP feature_NN should_MD be_VB subtracted_VBN
+        from_IN that_DT of_IN the_DT PM_NNP feature_NN for_IN each_DT probe_NN pair_NN and_CC
+        subsequently_RB averaged_VBD (_( excluding_VBG outliers_NNS )_) to_TO produce_VB the_DT
+        average_JJ difference_NN intensity_NN (_( ADI_NNP )_) ._. This_DT heuristic_JJ is_VBZ
+        currently_RB utilized_JJ to_TO characterize_VB the_DT expression_NN level_NN for_IN
+        a_DT given_VBN gene_NN ._.
+        While_IN the_DT importance_NN of_IN differentiating_VBG actual_JJ
+        expression_NN from_IN noise_NN cannot_NN be_VB overemphasized_JJ ,_, no_DT
+        published_VBN experiment_NN establishes_VBZ the_DT assumption_NN that_IN the_DT MM_NNP
+        signal_NN closely_RB resembles_VBZ the_DT nonspecific_JJ component_NN of_IN the_DT
+        PM_NNP signal_NN ._. It_PRP has_VBZ been_VBN suggested_VBN [_NN 1_CD ]_NN that_IN a_DT significant_JJ
+        portion_NN of_IN the_DT MM_NNP signal_NN may_MD derive_VB from_IN probe-target_JJ
+        rather_RB than_IN background_NN interactions_NNS ;_: however_RB ,_, the_DT relative_JJ
+        contributions_NNS of_IN specific_JJ and_CC nonspecific_JJ components_NNS have_VBP
+        not_RB been_VBN established_VBN ._. In_IN the_DT present_JJ study_NN ,_, an_DT assay_NN was_VBD
+        specifically_RB designed_VBN to_TO isolate_VB the_DT fundamental_JJ components_NNS
+        of_IN the_DT PM_NNP and_CC MM_NNP signals_NNS ._. The_DT stratification_NN of_IN nonspecific_JJ
+        interactions_NNS unique_JJ to_TO or_CC common_JJ to_TO the_DT PM_NNP and_CC MM_NNP signals_NNS
+        was_VBD not_RB addressed_VBN ._.
+        Our_PRP$ results_NNS show_VBP that_IN for_IN transcript_NN concentrations_NNS
+        above_IN 100_CD pM_NN ,_, the_DT nonspecific_JJ component_NN of_IN PM_NNP signal_NN is_VBZ a_DT
+        negligible_JJ part_NN of_IN the_DT MM_NNP signal_NN ._. In_IN fact_NN ,_, the_DT greater_JJR part_NN
+        of_IN the_DT MM_NNP signal_NN reflects_VBZ interaction_NN with_IN the_DT
+        corresponding_JJ target_NN transcript_NN ._. This_DT prevents_VBZ the_DT ADI_NNP (_( PM_NNP
+        -_: MM_NNP )_) from_IN being_VBG sensitive_JJ to_TO changes_NNS in_IN transcript_NN
+        concentration_NN above_IN the_DT 100_CD pM_NN level_NN (_( approximately_RB 1_CD in_IN
+        1_CD ,_, 500_CD transcript_NN frequency_NN )_) ._. Comparison_NNP of_IN absolute_JJ values_NNS
+        of_IN probe_NN intensities_NNS across_IN the_DT different_JJ experimental_JJ
+        conditions_NNS of_IN the_DT study_NN suggest_VBP that_IN thermodynamic_JJ
+        equilibrium_NN may_MD be_VB dominated_VBN by_IN stable_JJ nonspecific_JJ
+        interactions_NNS essentially_RB decreasing_VBG target_NN availability_NN
+        (_( that_WDT is_VBZ ,_, cross-target_JJ bridges_NNS )_) in_IN the_DT presence_NN of_IN complex_JJ
+        cRNA_NN ._. Whereas_IN our_PRP$ results_NNS show_VBP that_IN quantitative_JJ detection_NN
+        of_IN target_NN transcripts_NNS is_VBZ possible_JJ with_IN commercially_RB
+        available_JJ arrays_NNS ,_, they_PRP also_RB demonstrate_VBP the_DT potential_NN of_IN
+        alternative_JJ metrics_NNS for_IN further_JJ improving_NN the_DT power_NN of_IN the_DT
+        analysis_NN ._.
+      
+      
+        Results_NNS
+        Biotinylated_NNP target_NN cRNA_NN from_IN four_CD prokaryotic_JJ genes_NNS -_: 
+        lys_NNS ,_, dap_NN ,_, phe_NN and_CC 
+        thr_NN from_IN 
+        Bacillus_NN subtilis_NNS -_: was_VBD collectively_RB
+        hybridized_JJ to_TO Test_NNP 2_CD arrays_NNS with_IN and_CC without_IN 0_CD ._. 05_CD g_SYM /_NN l_NN of_IN
+        complex_JJ cRNA_NN background_NN generated_VBN from_IN human_JJ brain_NN total_JJ
+        RNA_NNP ._. This_DT background_NN concentration_NN roughly_RB corresponds_NNS to_TO
+        150_CD nM_NN (_( 0_CD ._. 05_CD g_SYM /_NN l_NN /_NN (_( 330_CD g_SYM /_NN (_( mol_NN ×_NN nucleotide_NN )_) ×_NN 1_CD ,_, 000_CD
+        nucleotides_NNS )_) )_) ._. The_DT target_NN transcript_NN frequency_NN can_MD then_RB be_VB
+        simply_RB computed_JJ by_IN dividing_VBG transcript_NN concentration_NN by_IN
+        total_JJ RNA_NNP concentration_NN ._. 
+        B_NNP ._. subtilis_NNS genes_NNS were_VBD selected_VBN on_IN
+        the_DT basis_NN of_IN their_PRP$ designation_NN as_IN standardization_NN controls_NNS ._.
+        In_IN accordance_NN with_IN the_DT probe_NN array_NN design_NN ,_, genes_NNS encoded_JJ on_IN
+        the_DT Test_NNP 2_CD array_NN contain_VB three_CD probe_NN sets_NNS corresponding_JJ to_TO
+        the_DT 5_CD '_POS ,_, middle_JJ and_CC 3_CD '_POS regions_NNS ._. Thus_RB ,_, a_DT total_NN of_IN 12_CD distinct_JJ
+        controlled_VBN target-transcript_JJ measurements_NNS were_VBD obtained_VBN per_IN
+        hybridization_NN ._. Precision_NNP in_IN target-transcript_JJ concentration_NN
+        was_VBD increased_VBN through_IN a_DT series_NN of_IN tenfold_RB dilutions_NNS from_IN a_DT
+        presynthesized_JJ 
+        in_IN vitro_NN transcribed_JJ mixture_NN ._. Each_DT
+        combination_NN of_IN dilution_NN and_CC background_NN was_VBD replicated_VBN four_CD
+        times_NNS (_( array_NN availability_NN )_) to_TO account_VB for_IN and_CC assess_VB
+        variability_NN ._.
+        Figures_NNS 1_CD and_CC 2_CD show_NN that_IN the_DT plot_NN of_IN intensity_NN versus_CC
+        target_NN concentration_NN has_VBZ the_DT typical_JJ sigmoidal_NN shape_NN
+        encountered_VBD in_IN chemical_NN kinetics_NNS ._. The_DT error_NN bars_NNS reflect_VBP
+        the_DT range_NN of_IN observed_VBD values_NNS ,_, which_WDT increases_VBZ for_IN
+        measurements_NNS obtained_VBD subsequent_JJ to_TO the_DT lag_NN phase_NN and_CC is_VBZ
+        greatest_JJS for_IN the_DT 100_CD pM_NN level_NN ._. Table_NNP 1_CD supplements_NNS these_DT
+        graphs_NNS by_IN distinguishing_VBG values_NNS at_IN low_JJ transcript_NN
+        concentrations_NNS ._. Table_NNP 2_CD depicts_VBZ averaged_VBN ,_, pairwise_NN ADI_NNP
+        ratios_NNS across_IN consecutive_JJ dilution_NN levels_NNS (_( four_CD replicates_NNS
+        per_IN dilution_NN ;_: 16_CD pairs_NNS in_IN total_JJ )_) after_IN normalization_NN ._. Given_VBN
+        the_DT sensitivity_NN of_IN the_DT ratio_NN to_TO small_JJ absolute_JJ values_NNS ,_, the_DT
+        variance_NN of_IN the_DT ADI_NNP ratios_NNS in_IN the_DT 1_CD -_: 0_CD ._. 1_LS pM_NN range_NN was_VBD
+        comparable_JJ to_TO that_DT of_IN the_DT mean_NN ,_, and_CC was_VBD highly_RB influenced_VBN
+        by_IN the_DT outlier-removal_JJ algorithm_NN ._. It_PRP is_VBZ worth_JJ noting_VBG that_DT
+        normalization_NN did_VBD not_RB have_VB a_DT significant_JJ effect_NN owing_VBG to_TO
+        the_DT extremely_RB uniform_NN conditions_NNS of_IN this_DT study_NN ._.
+        A_DT cursory_NN review_NN of_IN Table_NNP 2_CD will_MD establish_VB that_IN under_IN
+        both_DT hybridization_NN conditions_NNS (_( target_NN transcripts_NNS versus_CC
+        target_NN transcripts_NNS +_NN cRNA_NN background_NN )_) ,_, a_DT tenfold_RB reduction_NN
+        in_IN the_DT quantity_NN of_IN target_NN transcript_NN was_VBD consistently_RB
+        reflected_VBN by_IN the_DT ADI_NNP in_IN the_DT 1_CD -_: 10_CD pM_NN range_NN ._. Additionally_RB ,_,
+        the_DT window_NN of_IN target-transcript_JJ concentration_NN under_IN which_WDT
+        proportionality_NN was_VBD preserved_VBN varied_VBD in_IN accordance_NN with_IN
+        background_NN cRNA_NN content_NN ._. In_IN the_DT cRNA_NN sample_NN comprised_VBN
+        solely_RB of_IN target_NN transcripts_NNS and_CC hybridization_NN controls_NNS (_( 
+        bioB_NN ,_, bioC_NN ,_, bioD_NN ,_, cre_NN and_CC 
+        dap_NN )_) ,_, approximate_JJ ratio_NN equality_NN was_VBD
+        witnessed_VBN between_IN 0_CD ._. 1_CD -_: 10_CD pM_NN ._. Under_IN conditions_NNS more_RBR akin_JJ to_TO
+        a_DT standard_JJ assay_NN (_( brain_NN cRNA_NN background_NN )_) ,_, the_DT range_NN of_IN
+        proportionality_NN shifted_VBN to_TO 1_CD -_: 100_CD pM_NN ._. In_IN both_DT cases_NNS ,_, the_DT ADI_NNP
+        peaks_NNS and_CC subsequently_RB plateaus_JJ above_IN 100_CD pM_NN (_( Figures_NNS 1_CD ,_,
+        2_CD and_CC Table_NNP 1_CD for_IN PheX_NNP __NN 3_LS )_) as_IN the_DT rate_NN of_IN increase_NN in_IN the_DT MM_NNP
+        signal_NN becomes_VBZ equivalent_JJ to_TO or_CC greater_JJR than_IN that_DT of_IN the_DT PM_NNP
+        signal_NN ._. In_IN the_DT veritable_JJ absence_NN of_IN nonspecific_JJ
+        interactions_NNS ,_, background_NN noise_NN is_VBZ bounded_JJ by_IN the_DT absolute_JJ
+        value_NN of_IN the_DT 0_CD ._. 1_CD pM_NN MM_NNP signal_NN ._. Analogously_NNP ,_, the_DT nonspecific_JJ
+        interaction_NN component_NN of_IN the_DT MM_NNP signal_NN is_VBZ bounded_JJ by_IN the_DT
+        observed_VBN increase_NN in_IN the_DT 0_CD ._. 1_CD pM_NN signal_NN in_IN the_DT presence_NN of_IN
+        complex_JJ cRNA_NN ._. Consequently_RB ,_, by_IN comparing_VBG both_DT sides_NNS of_IN
+        Table_NNP 1_CD ,_, we_PRP conclude_VBP that_IN less_JJR than_IN 20_CD %_NN of_IN the_DT MM_NNP signal_NN at_IN
+        the_DT 100_CD pM_NN level_NN reflects_VBZ nonspecific_JJ binding_JJ ._. The_DT major_JJ
+        component_NN of_IN the_DT MM_NNP signal_NN (_( 66_CD -_: 80_CD %_NN )_) therefore_RB constitutes_VBZ
+        interaction_NN with_IN the_DT intended_VBN PM_NNP target_NN transcript_NN ._.
+        Absolute_JJ values_NNS for_IN the_DT same_JJ transcript_NN concentration_NN
+        differ_VB significantly_RB ,_, despite_IN averaging_VBG over_IN 20_CD probe_NN
+        pairs_NNS ,_, which_WDT shows_VBZ the_DT influence_NN of_IN selected_VBN probe_NN
+        sequences_NNS (_( Table_NNP 1_LS )_) ._.
+        Addition_NNP of_IN a_DT complex_JJ cRNA_NN background_NN elicited_JJ a_DT
+        profound_JJ effect_NN on_IN observed_VBD intensities_NNS ,_, especially_RB at_IN the_DT
+        lower_JJR range_NN of_IN concentration_NN ._. The_DT absolute_JJ values_NNS of_IN PM_NNP and_CC
+        MM_NNP increased_VBD for_IN the_DT 0_CD ._. 1_CD pM_NN level_NN whereas_IN they_PRP decreased_VBD
+        for_IN the_DT 10_CD pM_NN and_CC 100_CD pM_NN levels_NNS (_( Table_NNP 1_LS )_) ._. Surprisingly_RB ,_,
+        the_DT decrease_NN in_IN absolute_JJ values_NNS for_IN 100_CD pM_NN resulted_VBD in_IN the_DT
+        improved_VBN sensitivity_NN of_IN the_DT 100_CD -_: 10_CD pM_NN average_JJ ADI_NNP ratio_NN
+        (_( factor_NN of_IN 6_CD versus_CC factor_NN of_IN 3_LS )_) ._. In_IN addition_NN ,_, the_DT
+        signal-to-noise_JJ ratio_NN (_( when_WRB defined_VBN as_IN ADI_NNP /_NN MM_NNP )_) decreased_VBD
+        dramatically_RB in_IN the_DT 0_CD ._. 1_CD -_: 10_CD pM_NN range_NN whereas_IN the_DT standard_JJ
+        error_NN of_IN the_DT 10_CD -_: 1_CD pM_NN ADI_NNP ratios_NNS increased_VBN (_( Table_NNP 1_LS )_) ._. For_IN
+        the_DT 0_CD ._. 1_CD pM_NN target_NN concentration_NN ,_, all_DT 12_CD target_NN transcripts_NNS
+        were_VBD detectable_JJ in_IN the_DT absence_NN of_IN brain_NN cRNA_NN background_NN ._.
+        However_RB ,_, the_DT presence_NN of_IN complex_JJ cRNA_NN essentially_RB rendered_VBD
+        them_PRP undetectable_JJ ._. It_PRP is_VBZ evident_JJ that_IN the_DT complex_JJ cRNA_NN
+        background_NN had_VBD a_DT nonlinear_NN effect_NN on_IN the_DT ADI_NNP ,_, with_IN up_IN to_TO a_DT
+        fourfold_NN difference_NN in_IN the_DT average_JJ ADIs_NNP observed_VBD for_IN the_DT
+        same_JJ quantity_NN of_IN transcript_NN (_( Figure_NN 3_LS )_) ._.
+        To_TO study_VB the_DT effect_NN of_IN hybridization_NN duration_NN ,_, the_DT 0_CD ._. 1_CD ,_,
+        1_CD and_CC 10_CD pM_NN hybridizations_NNS were_VBD repeated_VBN in_IN the_DT presence_NN of_IN
+        fixed_VBN eukaryotic_JJ background_NN with_IN the_DT hybridization_NN time_NN
+        doubled_VBD from_IN 16_CD to_TO 32_CD hours_NNS ._. A_DT marginal_JJ increase_NN in_IN the_DT
+        average_JJ ADI_NNP was_VBD observed_VBN (_( by_IN around_IN 10_CD %_NN )_) although_IN such_JJ
+        increase_NN was_VBD within_IN the_DT observed_VBN 16_CD -_: hour_NN range_NN ._.
+        Additionally_RB ,_, the_DT increase_NN in_IN signal_NN for_IN the_DT 10_CD pM_NN level_NN
+        remained_VBD consistently_RB less_JJR than_IN half_NN of_IN that_DT obtained_VBD in_IN
+        the_DT absence_NN of_IN complex_JJ cRNA_NN ._. The_DT increased_VBN hybridization_NN
+        time_NN did_VBD result_NN in_IN partial_JJ detection_NN of_IN prokaryotic_JJ
+        controls_NNS at_IN 0_CD ._. 1_CD pM_NN (_( 5_CD out_IN of_IN 12_CD transcripts_NNS )_) ._.
+        Finally_RB ,_, to_TO examine_VB reproducibility_NN ,_, a_DT scatter_NN plot_NN of_IN
+        the_DT log_NN of_IN gene_NN ADIs_NNP for_IN two_CD distinct_JJ hybridizations_NNS (_( 10_CD pM_NN
+        transcript_NN concentration_NN in_IN the_DT presence_NN of_IN fixed_VBN
+        eukaryotic_JJ background_NN )_) was_VBD produced_VBN (_( Figure_NN 4_CD a_DT )_) ._. About_IN 10_CD %_NN
+        of_IN the_DT points_NNS corresponding_JJ to_TO positive_JJ ADIs_NNP fell_VBD outside_IN
+        the_DT region_NN corresponding_JJ to_TO a_DT factor_NN of_IN 2_CD deviations_NNS from_IN
+        the_DT mean_NN ._.
+      
+      
+        Discussion_NNP
+        This_DT study_NN was_VBD designed_VBN to_TO validate_NN objectively_RB the_DT
+        sensitivity_NN of_IN the_DT Affymetrix_NNP GeneChip_NNP ®_NN array_NN ._. Whereas_IN
+        excellent_JJ earlier_JJR studies_NNS show_VBP a_DT quantitative_JJ relationship_NN
+        between_IN the_DT ADI_NNP and_CC transcript_NN abundance_NN [_NN 2_CD ,_, 3_CD ]_NN ,_, the_DT
+        experimental_JJ design_NN of_IN this_DT study_NN differs_VBZ significantly_RB
+        from_IN those_DT described_VBN in_IN earlier_JJR publications_NNS in_IN order_NN to_TO
+        assess_VB the_DT system_NN 's_POS capabilities_NNS under_IN conditions_NNS closer_JJR to_TO
+        real-life_JJ experiments_NNS ._. These_DT differences_NNS include_VBP :_: increased_VBN
+        precision_NN in_IN spiked_JJ transcript_NN concentration_NN through_IN
+        dilution_NN from_IN the_DT same_JJ IVT_NNP product_NN ;_: utilization_NN of_IN Test_NNP 2_CD
+        chips_NNS reflecting_VBG current_JJ probe_NN sets_NNS and_CC production_NN
+        chemistry_NN ;_: no_DT post-hybridization_JJ streptavidin_NN
+        amplification_NN ;_: multiple_JJ measurements_NNS per_IN condition_NN ;_:
+        comparison_NN of_IN transcript_NN intensities_NNS obtained_VBN with_IN absent_JJ
+        or_CC present_JJ complex_JJ cRNA_NN background_NN ;_: and_CC the_DT use_NN of_IN
+        commercially_RB available_JJ Test_NNP 2_CD arrays_NNS rather_RB than_IN custom-made_JJ
+        arrays_NNS containing_VBG hundreds_NNS of_IN probe_NN pairs_NNS per_IN gene_NN ._.
+        Of_IN practical_JJ consideration_NN is_VBZ the_DT ability_NN of_IN the_DT system_NN
+        to_TO provide_VB a_DT robust_JJ ,_, directional_NN measure_NN of_IN transcript_NN
+        levels_NNS ._. In_IN order_NN for_IN the_DT system_NN to_TO reliably_RB characterize_VB
+        gene_NN expression_NN ,_, correspondence_NN between_IN the_DT quantity_NN of_IN
+        transcript_NN and_CC the_DT numerical_JJ measure_NN selected_VBN as_IN its_PRP$ proxy_NN
+        (_( intensity_NN )_) must_MD be_VB demonstrated_VBN ._. It_PRP has_VBZ been_VBN shown_VBN
+        previously_RB that_IN the_DT ADI_NNP is_VBZ proportional_JJ to_TO cRNA_NN level_NN and_CC
+        predictive_JJ of_IN absolute_JJ RNA_NNP concentration_NN within_IN a_DT factor_NN of_IN
+        2_CD [_NN 2_CD ,_, 3_CD ,_, 4_CD ]_NN ._. Typically_RB ,_, the_DT latter_NN is_VBZ demonstrated_VBN by_IN
+        plotting_VBG the_DT log_NN of_IN gene_NN ADIs_NNP between_IN two_CD identical_JJ tissue_NN
+        samples_NNS with_IN 98_CD %_NN [_NN 3_CD ]_NN of_IN the_DT points_NNS falling_VBG within_IN a_DT region_NN
+        bounded_JJ by_IN the_DT lines_NNS 
+        y_NN =_SYM 2_CD 
+        x_SYM and_CC 
+        y_NN =_SYM 0_CD ._. 5_CD 
+        x_SYM (_( factor_NN of_IN 2_CD region_NN )_) ._. Although_IN
+        never_RB rigorously_RB derived_VBN ,_, this_DT region_NN can_MD be_VB viewed_VBN as_IN an_DT
+        empirical_JJ analogy_NN of_IN the_DT confidence_NN region_NN ._. It_PRP is_VBZ clear_JJ
+        that_IN although_IN this_DT assertion_NN may_MD hold_VB for_IN an_DT average_JJ gene_NN ,_,
+        it_PRP will_MD be_VB more_RBR likely_JJ to_TO fail_VB for_IN rare_JJ genes_NNS with_IN small_JJ
+        ADIs_NNP (_( Figure_NN 4_CD a_DT )_) ._. Comparison_NNP of_IN Figure_NN 4_CD aand_NN bshows_NNS how_WRB the_DT
+        log_NN scale_NN gives_VBZ a_DT somewhat_RB misleading_JJ impression_NN of_IN the_DT
+        uniformity_NN of_IN the_NNP '_POS factor_NN of_IN 2_CD '_POS region_NN across_IN the_DT dynamic_JJ
+        range_NN ._. In_IN addition_NN ,_, it_PRP is_VBZ important_JJ to_TO remember_VB that_DT
+        sequence_NN diversity_NN and_CC amount_NN of_IN cRNA_NN will_MD nonlinearly_RB
+        affect_VB probe-target_JJ binding_JJ kinetics_NNS and_CC ,_, by_IN extension_NN ,_,
+        intensities_NNS ._. Even_RB averaged_VBD ADIs_NNP for_IN an_DT identical_JJ quantity_NN
+        of_IN transcript_NN differed_VBD dramatically_RB (_( up_RP to_TO a_DT factor_NN of_IN 4_LS )_) ,_,
+        solely_RB because_IN of_IN the_DT presence_NN of_IN eukaryotic_JJ cRNA_NN
+        background_NN ._. This_DT effect_NN is_VBZ difficult_JJ to_TO account_VB for_IN through_IN
+        linear_JJ normalization_NN schemes_NNS currently_RB used_VBN ._. It_PRP is_VBZ
+        important_JJ to_TO note_VB that_IN the_DT experimental_JJ conditions_NNS
+        underlying_VBG the_DT initial_JJ '_POS factor_NN of_IN 2_CD '_POS claim_NN are_VBP quite_RB
+        specific_JJ and_CC relate_VBP to_TO cRNA_NN derived_VBN from_IN the_DT same_JJ yeast_NN
+        source_NN ._.
+        As_IN evidenced_VBN by_IN the_DT range_NN bars_NNS in_IN Figures_NNS 1_CD and_CC 2_CD ,_, the_DT
+        variability_NN of_IN actual_JJ transcript_NN intensities_NNS appears_VBZ to_TO
+        increase_VB with_IN concentration_NN ._. It_PRP has_VBZ been_VBN suggested_VBN that_DT
+        variability_NN can_MD be_VB reduced_VBN by_IN selecting_VBG pixels_NNS adaptively_RB [_NN
+        5_CD ]_NN ._. However_RB ,_, it_PRP is_VBZ not_RB clear_JJ how_WRB to_TO account_VB algorithmically_RB
+        for_IN large_JJ pixel-to-pixel_JJ variability_NN from_IN the_DT biophysical_JJ
+        or_CC statistical_JJ standpoint_NN ,_, given_VBN that_IN each_DT pixel_NN is_VBZ
+        supposed_VBN to_TO contain_VB an_DT identical_JJ distribution_NN of_IN millions_NNS
+        of_IN oligonucleotides_NNS ._. A_DT contributing_VBG factor_NN to_TO spatial_NN
+        variability_NN appears_VBZ to_TO be_VB microscopic_JJ defects_NNS on_IN the_DT
+        surface_NN of_IN the_DT wafer_NN [_NN 6_CD ]_NN ._. Investigation_NNP of_IN the_DT nature_NN of_IN
+        pixel-to-pixel_JJ variability_NN may_MD potentially_RB improve_VB the_DT
+        predictive_JJ utility_NN of_IN obtained_VBN data_NNS ._.
+        The_DT observed_VBD linear_JJ range_NN of_IN the_DT ADI_NNP is_VBZ narrower_JJR than_IN
+        that_DT previously_RB reported_VBD [_NN 2_CD ]_NN ,_, and_CC potentially_RB inflated_VBN
+        from_IN what_WP might_MD typically_RB be_VB encountered_VBN given_VBN the_DT
+        reduction_NN in_IN procedural_JJ variability_NN achieved_VBN through_IN the_DT
+        comparatively_RB uniform_NN conditions_NNS of_IN the_DT experiments_NNS
+        presented_VBN here_RB ._. It_PRP is_VBZ worth_JJ noting_VBG ,_, however_RB ,_, that_IN the_DT
+        linear_JJ range_NN initially_RB reported_VBD [_NN 2_CD ]_NN was_VBD obtained_VBN using_VBG a_DT
+        custom_NN array_NN containing_VBG probe_NN sets_NNS with_IN more_JJR than_IN 500_CD PM_NNP /_NN MM_NNP
+        probe_NN pairs_NNS per_IN gene_NN ._. Consequently_RB ,_, it_PRP is_VBZ not_RB surprising_JJ
+        that_IN even_RB with_IN technological_JJ advances_NNS in_IN chip_NN manufacturing_NN
+        over_IN the_DT past_JJ four_CD years_NNS ,_, we_PRP are_VBP still_RB unable_JJ to_TO reproduce_VB
+        fully_RB the_DT linear_JJ range_NN of_IN the_DT ADI_NNP using_VBG commercial_JJ chips_NNS
+        with_IN 20_CD or_CC fewer_JJR PM_NNP /_NN MM_NNP probe_NN pairs_NNS per_IN probe_NN set_VBN ._.
+        The_DT premise_NN that_DT subtraction_NN of_IN the_DT MM_NNP from_IN PM_NNP
+        essentially_RB serves_VBZ to_TO extract_VB constructively_RB the_DT
+        nonspecific_JJ components_NNS (_( cross-hybridization_JJ ,_, noise_NN ,_, and_CC so_RB
+        on_IN )_) of_IN the_DT signal_NN common_JJ to_TO both_DT should_MD be_VB reconsidered_VBN in_IN
+        the_DT light_NN of_IN the_DT results_NNS obtained_VBN in_IN this_DT study_NN ._. It_PRP appears_VBZ
+        to_TO perform_VB inadequately_RB for_IN low_JJ and_CC high_JJ transcript_NN
+        concentrations_NNS alike_RB ,_, although_IN the_DT basis_NN for_IN the_DT failure_NN
+        differs_VBZ ._. At_IN high_JJ concentrations_NNS (_( above_IN 100_CD pM_NN level_NN )_) ,_, the_DT
+        rate_NN of_IN increase_NN of_IN the_DT MM_NNP signal_NN can_MD eclipse_VB that_IN of_IN the_DT
+        PM_NNP signal_NN (_( Figures_NNS 1_CD d_SYM ,_, 2_CD d_SYM ,_, Table_NNP 1_CD for_IN PheX_NNP __NN 3_LS )_) resulting_VBG in_IN
+        an_DT eventual_JJ decline_NN in_IN the_DT ADI_NNP (_( Figures_NNS 1_CD d_SYM ,_, 2_CD dfor_NN PheX_NNP __NN 3_LS )_) ._.
+        For_IN example_NN ,_, the_DT average_JJ ADI_NNP of_IN the_DT ThrX_NNP __NN 3_CD probe_NN set_VBN at_IN 1_CD
+        nM_NN was_VBD approximately_RB 47_CD %_NN higher_JJR than_IN at_IN 10_CD nM_NN (_( Table_NNP 1_LS )_) ._.
+        Probe-target_NNP binding_JJ can_MD be_VB characterized_VBN by_IN sigmoidal_NN
+        dose-response_JJ curves_NNS with_IN different_JJ parameters_NNS ._. While_IN both_DT
+        PM_NNP and_CC MM_NNP seem_VBP to_TO have_VB comparable_JJ maximum_NN slopes_NNS ,_, due_JJ to_TO
+        lower_JJR target_NN affinity_NN ,_, the_DT linear_JJ response_NN phase_NN of_IN the_DT MM_NNP
+        signal_NN is_VBZ shifted_VBN from_IN that_DT of_IN the_DT PM_NNP signal_NN (_( it_PRP occurs_VBZ at_IN
+        higher_JJR concentrations_NNS )_) ._. Consequently_RB ,_, the_DT ADI_NNP decreases_NNS for_IN
+        high_JJ target_NN concentrations_NNS where_WRB the_DT slope_NN of_IN the_DT PM_NNP
+        sigmoidal_NN has_VBZ tapered_JJ ._. Reports_NNS that_IN the_DT ADI_NNP saturates_NNS
+        simply_RB as_IN a_DT result_NN of_IN saturation_NN of_IN both_DT the_DT MM_NNP and_CC PM_NNP
+        signals_NNS [_NN 2_CD ]_NN do_VBP not_RB seem_VB to_TO be_VB supported_VBN by_IN our_PRP$ results_NNS ._. It_PRP
+        should_MD be_VB noted_VBN that_DT part_NN of_IN the_DT observed_VBN saturation_NN effect_NN
+        is_VBZ attributable_JJ to_TO limited_JJ scanner_NN sensitivity_NN ,_, which_WDT might_MD
+        reflect_VB a_DT limitation_NN of_IN our_PRP$ installation_NN ._. Scanner-related_NNP
+        saturation_NN is_VBZ functionally_RB related_VBN to_TO absolute_JJ intensity_NN ,_,
+        which_WDT ,_, in_IN turn_NN ,_, is_VBZ dependent_JJ on_IN underlying_VBG probe_NN kinetics_NNS ._.
+        Examination_NNP of_IN individual_JJ probe_NN signals_NNS suggests_VBZ that_IN
+        scanner_NN effects_NNS are_VBP likely_JJ to_TO be_VB more_RBR pronounced_JJ at_IN higher_JJR
+        target_NN concentrations_NNS (_( 1_CD -_: 10_CD nM_NN )_) ,_, as_IN many_JJ of_IN the_DT probes_NNS have_VBP
+        reached_VBN the_DT maximum_NN detectable_JJ intensity_NN (_( around_IN 46_CD ,_, 000_CD )_) ._.
+        However_RB ,_, saturation_NN in_IN the_DT 10_CD -_: 100_CD pM_NN range_NN is_VBZ most_RBS likely_JJ
+        to_TO be_VB dominated_VBN by_IN the_DT kinetic_JJ properties_NNS of_IN the_DT PM_NNP and_CC MM_NNP
+        probes_NNS ._.
+        At_IN the_DT lower_JJR end_NN of_IN transcript_NN concentration_NN ,_, it_PRP seems_VBZ
+        that_IN eukaryotic_JJ background_NN affects_VBZ the_DT PM_NNP and_CC MM_NNP probes_NNS
+        nonsymmetrically_RB ,_, generally_RB resulting_VBG in_IN a_DT decrease_NN in_IN the_DT
+        ADI_NNP ._. Notably_RB ,_, the_DT DapX_NNP __NN M_NNP probe_NN set_VBN in_IN Table_NNP 1_CD has_VBZ a_DT positive_JJ
+        ADI_NNP for_IN 0_CD ._. 1_CD pM_NN level_NN even_RB though_IN the_DT MM_NNP signal_NN is_VBZ greater_JJR
+        than_IN the_DT PM_NNP signal_NN before_IN outlier_NN removal_NN ._. Additionally_RB ,_,
+        the_DT same_JJ outlier-removal_JJ algorithm_NN rendered_VBD the_DT small_JJ 0_CD ._. 1_CD
+        pM_NN ADI_NNP for_IN the_DT PheX_NNP __NN 3_CD nonexistent_JJ ,_, suggesting_VBG that_IN simple_JJ
+        heuristics_NNS can_MD fail_VB in_IN a_DT low_JJ signal-to-noise_JJ environment_NN ._.
+        Outlier_NNP classification_NN is_VBZ perhaps_RB best_RBS addressed_VBN using_VBG a_DT
+        functional_JJ (_( kinetic_JJ )_) ,_, as_IN opposed_VBN to_TO a_DT purely_RB inferential_NN ,_,
+        profile_NN constructed_VBN from_IN a_DT large_JJ repository_NN of_IN experimental_JJ
+        data_NNS ._. Given_VBN the_DT large_JJ number_NN of_IN experiments_NNS used_VBN to_TO derive_VB
+        the_DT ADI_NNP ,_, such_JJ an_DT approach_NN would_MD seem_VB eminently_RB feasible_JJ ._. In_IN
+        lieu_NN of_IN an_DT ideal_JJ functional_JJ profile_NN ,_, the_DT use_NN of_IN alternative_JJ
+        heuristics_NNS may_MD be_VB promising_JJ ._. For_IN example_NN ,_, PM_NNP +_NN MM-background_NNP
+        (_( PM_NNP +_NN MM_NNP also_RB mentioned_VBD in_IN [_NN 5_CD ]_NN )_) ,_, while_IN being_VBG less_RBR sensitive_JJ
+        in_IN the_DT 1_CD -_: 10_CD pM_NN range_NN ,_, was_VBD more_RBR sensitive_JJ for_IN higher_JJR ranges_NNS
+        and_CC more_RBR robust_JJ for_IN 0_CD ._. 1_CD -_: 1_CD pM_NN ._.
+        Given_VBN that_IN a_DT significant_JJ number_NN of_IN genes_NNS of_IN biological_JJ
+        interest_NN have_VBP transcript_NN frequencies_NNS at_IN or_CC below_IN 1_CD pM_NN [_NN 7_CD ]_NN ,_,
+        the_DT commercial_JJ usefulness_NN of_IN the_DT system_NN is_VBZ constrained_VBN by_IN
+        the_DT minimum_JJ abundance_NN level_NN that_WDT is_VBZ reliably_RB detectable_JJ ._. A_DT
+        current_JJ limit_NN of_IN 1_CD in_IN 2_CD ×_NN 10_CD 6_CD transcripts_NNS ,_, that_WDT is_VBZ ,_, around_IN
+        0_CD ._. 075_CD pM_NN or_CC 1_CD in_IN 7_CD cells_NNS )_) has_VBZ been_VBN reported_VBN [_NN 4_CD ]_NN ._. Indeed_RB ,_,
+        the_DT Affymetrix_NNP GeneChip_NNP ®_NN array_NN was_VBD able_JJ to_TO detect_VB this_DT very_RB
+        low_JJ transcript_NN level_NN in_IN the_DT absence_NN of_IN eukaryotic_JJ
+        background_NN ._. However_RB ,_, after_IN addition_NN of_IN cRNA_NN background_NN ,_,
+        transcripts_NNS at_IN the_DT 0_CD ._. 1_CD pM_NN concentration_NN became_VBD essentially_RB
+        undetectable_JJ for_IN all_DT 12_CD independent_JJ transcripts_NNS ,_, whereas_IN 1_CD
+        pM_NN transcripts_NNS remained_VBD robustly_RB detected_VBN ._. Our_PRP$ results_NNS are_VBP
+        consistent_JJ with_IN a_DT recent_JJ study_NN [_NN 8_CD ]_NN showing_VBG a_DT range_NN of_IN
+        detection_NN between_IN 1_CD in_IN 300_CD ,_, 000_CD and_CC 1_CD in_IN 50_CD ,_, 000_CD (_( 0_CD ._. 5_LS -_: 1_CD ._. 5_LS
+        pM_NN )_) ._. It_PRP is_VBZ possible_JJ to_TO argue_VB that_IN post-hybridization_JJ
+        amplification_NN would_MD improve_VB detection_NN ,_, but_CC obviously_RB at_IN the_DT
+        expense_NN of_IN potentially_RB saturating_VBG expression_NN levels_NNS of_IN more_RBR
+        abundant_JJ genes_NNS ._. Perhaps_RB scanning_VBG images_NNS before_IN and_CC after_IN
+        amplification_NN could_MD maximize_VB detection_NN without_IN suffering_VBG
+        saturation_NN penalties_NNS ._. Longer_JJR hybridization_NN cycles_NNS seem_VBP to_TO
+        be_VB a_DT viable_JJ alternative_NN ,_, as_IN these_DT enabled_VBN partial_JJ detection_NN
+        of_IN transcripts_NNS (_( about_IN 5_CD out_IN of_IN 12_CD )_) at_IN the_DT 0_CD ._. 1_CD pM_NN level_NN
+        without_IN significantly_RB affecting_VBG high-end_JJ intensities_NNS ._. Given_VBN
+        the_DT current_JJ inability_NN to_TO localize_NN transcripts_NNS with_IN similar_JJ
+        abundances_NNS on_IN different_JJ arrays_NNS ,_, care_NN should_MD be_VB taken_VBN to_TO
+        ensure_VB a_DT sufficient_JJ overall_JJ number_NN of_IN replicates_NNS to_TO obtain_VB
+        a_DT small_JJ standard_JJ error_NN for_IN 0_CD ._. 1_CD pM_NN level_NN measurements_NNS ._. Also_RB ,_,
+        new_JJ methods_NNS of_IN mRNA_NN amplification_NN [_NN 9_CD ]_NN that_IN robustly_RB
+        increase_NN the_DT hybridization_NN concentration_NN of_IN rare_JJ
+        transcripts_NNS might_MD improve_VB detectability_NN but_CC could_MD
+        simultaneously_RB distort_VB the_DT underlying_VBG RNA_NNP expression_NN
+        profile_NN ._. The_DT addition_NN of_IN eukaryotic_JJ background_NN had_VBD a_DT
+        profound_JJ effect_NN on_IN the_DT properties_NNS of_IN thermodynamic_JJ
+        equilibrium_NN of_IN probe-target_JJ binding_JJ ._. The_DT decrease_NN in_IN 10_CD pM_NN
+        and_CC 100_CD pM_NN intensities_NNS suggests_VBZ the_DT presence_NN of_IN complex_JJ ,_,
+        stable_JJ interactions_NNS (_( that_WDT is_VBZ ,_, cross-target_JJ binding_JJ )_) which_WDT
+        persist_VBP subsequent_JJ to_TO the_DT 32_CD -_: hour_NN hybridization_NN ._. A_DT similar_JJ
+        hypothesis_NNS was_VBD previously_RB proposed_VBN [_NN 4_CD ]_NN where_WRB probe-probe_JJ
+        interactions_NNS were_VBD implicated_VBN ._. We_PRP believe_VBP that_IN cross-target_JJ
+        interactions_NNS are_VBP more_RBR important_JJ in_IN our_PRP$ case_NN as_IN the_DT
+        saturation_NN level_NN was_VBD not_RB affected_VBN by_IN cRNA_NN background_NN ._. The_DT
+        marginal_JJ increase_NN in_IN the_DT signal_NN after_IN 32_CD hours_NNS of_IN
+        hybridization_NN ,_, though_RB ,_, suggests_VBZ that_IN thermodynamic_JJ
+        equilibrium_NN was_VBD not_RB quite_RB reached_VBN in_IN 16_CD hours_NNS ._. The_DT increase_NN
+        in_IN signal_NN for_IN 0_CD ._. 1_CD pM_NN is_VBZ obviously_RB due_JJ to_TO increased_VB
+        background_NN noise_NN ._. The_DT net_JJ result_NN of_IN cRNA_NN background_NN is_VBZ that_IN
+        it_PRP has_VBZ a_DT nonlinear_NN effect_NN on_IN the_DT ADIs_NNP (_( Figure_NN 3_LS )_) ,_, which_WDT is_VBZ
+        impossible_JJ to_TO compensate_VB for_IN using_VBG linear_JJ methods_NNS ._.
+      
+      
+        Conclusions_NNP
+        Our_PRP$ findings_NNS suggest_VBP that_IN while_IN high-density_JJ microarrays_NNS
+        are_VBP a_DT convenient_JJ way_NN of_IN monitoring_VBG thousands_NNS of_IN genes_NNS
+        simultaneously_RB ,_, increased_VBN care_NN is_VBZ needed_VBN in_IN the_DT design_NN of_IN
+        experiments_NNS and_CC scrutiny_NN of_IN the_DT predictive_JJ utility_NN of_IN the_DT
+        numerical_JJ measure_NN used_VBN to_TO represent_VB gene_NN expression_NN ._. An_DT
+        increase_NN in_IN the_DT number_NN of_IN replicates_NNS is_VBZ preferable_JJ to_TO
+        reliance_NN upon_IN magnitudes_NNS of_IN fold_VB changes_NNS ,_, as_IN the_DT latter_NN is_VBZ
+        not_RB always_RB linearly_RB related_VBN to_TO target_VB concentration_NN and_CC is_VBZ
+        extremely_RB variable_JJ for_IN low_JJ transcript_NN concentrations_NNS ._. In_IN
+        light_NN of_IN the_DT fact_NN that_IN the_DT MM_NNP signal_NN predominantly_RB
+        characterizes_VBZ interactions_NNS with_IN the_DT target_NN transcript_NN ,_, a_DT
+        different_JJ heuristic_JJ used_VBN to_TO weight_VB the_DT MM_NNP signal_NN
+        accordingly_RB for_IN each_DT probe_NN pair_NN might_MD further_RB improve_VB the_DT
+        quality_NN of_IN Affymetrix_NNP GeneChip_NNP ®_NN array_NN data_NNS ._. Perhaps_RB such_JJ an_DT
+        approach_NN underlies_NNS the_DT announced_VBD supplanting_VBG of_IN historical_JJ
+        algorithms_NNS in_IN the_DT impending_JJ GeneChip_NNP 5_CD ._. 0_CD release_NN ._. Finally_RB ,_,
+        longer_JJR hybridization_NN times_NNS can_MD improve_VB partial_JJ detection_NN of_IN
+        transcripts_NNS expressed_VBD at_IN very_RB low_JJ levels_NNS ._.
+      
+      
+        Materials_NNS and_CC methods_NNS
+        
+          Preparation_NNP of_IN labeled_VBN targets_NNS for_IN
+          hybridization_NN
+          The_DT Test_NNP 2_CD array_NN (_( Affymetrix_NNP ,_, Santa_NNP Clara_NNP ,_, CA_NNP )_) contains_VBZ
+          probes_NNS corresponding_JJ to_TO commonly_RB expressed_VBD genes_NNS from_IN the_DT
+          human_NN ,_, mouse_NN ,_, rat_NN and_CC yeast_NN genomes_NNS ,_, along_IN with_IN several_JJ
+          prokaryotic_JJ control_NN genes_NNS ._. For_IN each_DT of_IN these_DT genes_NNS ,_,
+          probes_NNS derived_VBN from_IN the_DT 5_CD '_POS ,_, middle_JJ and_CC 3_CD '_POS portions_NNS of_IN the_DT
+          genes_NNS are_VBP arrayed_JJ ._. The_DT prokaryotic_JJ controls_NNS used_VBN in_IN this_DT
+          study_NN contain_VB engineered_VBN poly_RB (_( A_DT )_) +_NN tails_NNS and_CC are_VBP available_JJ
+          through_IN the_DT American_NNP Type_NNP Culture_NNP Collection_NNP [_NN 10_CD ]_NN (_( 
+          dapB_NN ,_, ATCC_NNP 87486_CD ;_: 
+          lysA_NN ,_, ATCC_NNP 87482_CD ;_: 
+          pheB_NN ,_, ATCC_NNP 87483_CD ;_: and_CC 
+          thrC_NN ,_, ATCC_NNP 87484_CD )_) ._. Methods_NNP for_IN
+          preparing_VBG cRNA_NN and_CC subsequent_JJ steps_NNS leading_VBG to_TO
+          hybridization_NN and_CC scanning_VBG of_IN the_DT Test_NNP 2_CD arrays_NNS were_VBD
+          provided_VBN by_IN the_DT manufacturer_NN ._. Briefly_NNP ,_, amplified_VBN and_CC
+          purified_JJ prokaryotic_JJ control_NN vectors_NNS were_VBD linearized_JJ at_IN
+          the_DT 5_CD '_POS end_NN using_VBG 
+          Xho_NNP I_PRP and_CC purified_JJ by_IN gel_NN
+          electrophoresis_NNS ._. Poly_NNP (_( A_DT )_) +_NN cDNA_NN was_VBD transcribed_JJ 
+          in_IN vitro_NN by_IN incorporation_NN of_IN
+          biotinylated_JJ CTP_NNP and_CC UTP_NNP (_( Enzo_NNP Diagnostics_NNPS ,_, Farmingdale_NNP ,_,
+          NY_NNP )_) using_VBG a_DT BioArray_NNP High_NNP Yield_NNP RNA_NNP Transcript_NNP Labeling_VBG
+          kit_NN according_VBG to_TO the_DT manufacturer_NN 's_POS instructions_NNS ._. The_DT
+          labeled_VBN cRNA_NN was_VBD purified_JJ using_VBG RNeasy_NNP spin_VB columns_NNS
+          (_( Qiagen_NNP ,_, Chatsworth_NNP ,_, CA_NNP )_) ,_, followed_VBN by_IN DNase_NNP I_PRP treatment_NN
+          and_CC a_DT second_JJ round_NN of_IN RNeasy_NNP spin-column_JJ purification_NN ._.
+          The_DT integrity_NN of_IN all_DT labeled_VBN and_CC purified_JJ transcript_NN was_VBD
+          checked_VBN by_IN denaturing_VBG gel_NN electrophoresis_NNS ._. Each_DT of_IN the_DT
+          four_CD transcripts_NNS ,_, 
+          dap_NN ,_, lys_NNS ,_, phe_NN and_CC 
+          thr_NN ,_, were_VBD pooled_VBN ,_, and_CC fragmented_JJ
+          in_IN fragmentation_NN buffer_NN (_( 40_CD mM_NN Tris-acetate_NNP pH_NN 8_CD ._. 1_LS ,_, 100_CD mM_NN
+          potassium_NN acetate_NN ,_, 30_CD mM_NN magnesium_NN acetate_NN )_) ,_, and_CC brought_VBD
+          up_RP in_IN hybridization_NN mix_NN according_VBG to_TO the_DT manufacturer_NN 's_POS
+          protocols_NNS (_( 1_CD M_NNP NaCl_NNP ,_, 10_CD mM_NN Tris-acetate_NNP pH_NN 8_CD ._. 1_LS ,_, 0_CD ._. 01_CD %_NN
+          Triton-_NNP X_NNP 100_CD ,_, 100_CD μg_NN /_NN ml_NN herring_NN sperm_NN DNA_NNP ,_, and_CC 50_CD pM_NN
+          biotinylated_JJ control_NN oligo_NN 948_CD )_) such_JJ that_IN each_DT of_IN the_DT
+          combined_VBN transcripts_NNS would_MD yield_VB a_DT final_JJ concentration_NN of_IN
+          10_CD nM_NN ._. All_DT subsequent_JJ serial_NN dilutions_NNS were_VBD carried_VBN out_IN
+          using_VBG components_NNS of_IN the_DT hybridization_NN buffer_NN to_TO yield_VB
+          final_JJ concentrations_NNS of_IN 1_CD nM_NN ,_, 100_CD pM_NN ,_, 10_CD pM_NN ,_, 1_CD pM_NN and_CC 0_CD ._. 1_CD
+          pM_NN ._.
+          For_IN all_DT experiments_NNS simulating_VBG a_DT complex_JJ background_NN of_IN
+          eukaryotic_JJ transcripts_NNS ,_, 20_CD μg_NN total_JJ human_JJ brain_NN RNA_NNP
+          (_( Clontech_NNP ,_, Palo_NNP Alto_NNP ,_, CA_NNP )_) was_VBD used_VBN and_CC processed_VBN
+          according_VBG to_TO Affymetrix_NNP protocols_NNS ._. Subsequent_JJ to_TO 
+          in_IN vitro_NN transcription_NN ,_, 4_CD μg_NN
+          labeled_VBD cRNA_NN was_VBD included_VBN into_IN a_DT final_JJ volume_NN of_IN 80_CD μl_NN
+          hybridization_NN mix_NN per_IN array_NN ,_, also_RB containing_VBG the_DT labeled_VBN
+          prokaryotic_JJ transcripts_NNS ._.
+        
+        
+          Array_NNP hybridization_NN and_CC scanning_VBG
+          Before_IN hybridization_NN ,_, the_DT cRNA_NN samples_NNS were_VBD heated_VBN to_TO
+          94_CD °_NN C_NNP for_IN 5_CD min_NN ,_, equilibrated_JJ to_TO 40_CD °_NN C_NNP for_IN 5_CD min_NN ,_, and_CC
+          clarified_VBN by_IN centrifugation_NN at_IN 14_CD ,_, 000_CD g_SYM for_IN 5_CD min_NN ._.
+          Aliquots_NNP of_IN the_DT pooled_VBN samples_NNS and_CC tenfold_RB dilutions_NNS of_IN
+          the_DT pool_NN in_IN hybridization_NN buffer_NN were_VBD hybridized_JJ to_TO Test_NNP 2_CD
+          arrays_NNS at_IN 45_CD °_NN C_NNP for_IN 16_CD h_NN in_IN a_DT rotisserie_NN oven_NN set_VBN at_IN 60_CD
+          rpm_NN ._. Subsequently_RB ,_, the_DT arrays_NNS were_VBD washed_VBN with_IN
+          non-stringent_JJ wash_NN buffer_NN (_( 0_CD ._. 9_CD M_NNP NaCl_NNP ,_, 60_CD mM_NN NaH_NNP 
+          2_CD PO_NNP 
+          4_CD ,_, 6_CD mM_NN EDTA_NNP ,_, 0_CD ._. 01_CD %_NN Tween-_NNP 20_CD )_) at_IN 25_CD °_NN C_NNP
+          followed_VBN by_IN stringent_JJ wash_NN buffer_NN (_( 100_CD mM_NN methyl_NN ethyl_NN
+          sulfonate_NN (_( MES_NNP )_) ,_, 100_CD mM_NN NaCl_NNP ,_, 0_CD ._. 01_CD %_NN Tween-_NNP 20_CD )_) at_IN 50_CD °_NN C_NNP in_IN
+          a_DT fluidics_NNS station_NN (_( Affymetrix_NNP )_) ._. The_DT probe_NN arrays_NNS were_VBD
+          then_RB stained_JJ by_IN adding_VBG 80_CD μl_NN staining_VBG solution_NN (_( 100_CD mM_NN
+          MES_NNP ,_, 1_CD M_NNP NaCl_NNP ,_, 0_CD ._. 05_CD %_NN Tween-_NNP 20_CD with_IN 2_CD mg_NN /_NN ml_NN acetylated_JJ BSA_NNP
+          (_( Sigma_NNP ,_, St_NNP Louis_NNP ,_, MO_NNP )_) and_CC 10_CD μg_NN /_NN ml_NN streptavidin_NN
+          R-_NNP phycoerythrin_NN (_( Molecular_NNP Probes_NNP ,_, Portland_NNP ,_, OR_NNP )_) for_IN 30_CD
+          min_NN at_IN 25_CD °_NN C_NNP ._. After_IN staining_VBG ,_, the_DT arrays_NNS were_VBD rinsed_JJ with_IN
+          non-stringent_JJ wash_NN buffer_NN at_IN 25_CD °_NN C_NNP and_CC scanned_JJ using_VBG a_DT
+          GeneArray_NNP confocal_NN scanner_NN (_( Agilent_NNP ,_, Palo_NNP Alto_NNP ,_, CA_NNP )_) ._.
+          To_TO evaluate_VB the_DT influence_NN of_IN hybridization_NN duration_NN on_IN
+          intensity_NN values_NNS ,_, the_DT 0_CD ._. 1_CD pM_NN ,_, 1_CD pM_NN and_CC 10_CD pM_NN prokaryotic_JJ
+          target_NN concentrations_NNS were_VBD repeated_VBN in_IN experiments_NNS where_WRB
+          the_DT hybridization_NN time_NN was_VBD extended_VBN to_TO 32_CD h_NN with_IN all_DT
+          other_JJ conditions_NNS left_VBD unchanged_JJ ._.
+        
+        
+          Data_NNP analysis_NN
+          Data_NNP analysis_NN was_VBD performed_VBN using_VBG the_DT Affymetrix_NNP
+          GeneChip_NNP array_NN 4_CD ._. 0_CD software_NN ._. Four_CD chips_NNS representing_VBG one_CD
+          target_NN concentration_NN level_NN (_( that_WDT is_VBZ ,_, 10_CD pM_NN )_) were_VBD paired_VBN
+          with_IN four_CD chips_NNS from_IN the_DT following_VBG target_NN concentration_NN
+          level_NN (_( that_WDT is_VBZ ,_, 1_CD pM_NN )_) resulting_VBG in_IN 16_CD total_JJ pairs_NNS ._. For_IN
+          each_DT pair_NN ,_, the_DT data_NNS was_VBD multiplied_VBN by_IN a_DT normalization_NN
+          factor_NN (_( calculated_VBN with_IN a_DT mask_NN excluding_VBG prokaryotic_JJ
+          target_NN transcripts_NNS )_) to_TO make_VB the_DT average_JJ signal_NN for_IN both_DT
+          arrays_NNS equivalent_NN ._. Fold_NNP changes_NNS were_VBD subsequently_RB
+          averaged_VBN across_IN different_JJ pairs_NNS ,_, excluding_VBG fold_VB changes_NNS
+          involving_VBG negative_JJ ADIs_NNP ._. All_DT normalization_NN factors_NNS were_VBD
+          within_IN 10_CD %_NN of_IN 1_CD ._. Statistical_NNP curve_NN fitting_NN was_VBD carried_VBN
+          out_IN using_VBG GraphPad_NNP Prism_NNP 2_CD ._. 01_CD ._. Sigmoidal_NNP dose-response_JJ
+          curves_NNS were_VBD fitted_JJ to_TO PM_NNP and_CC MM_NNP data_NNS ,_, allowing_VBG all_DT four_CD
+          parameters_NNS to_TO be_VB variable_JJ ._. The_DT ADI_NNP was_VBD fitted_JJ with_IN a_DT 100_CD
+          segment_NN cubic_JJ spline_NN ._.
+        
+      
+    
+  

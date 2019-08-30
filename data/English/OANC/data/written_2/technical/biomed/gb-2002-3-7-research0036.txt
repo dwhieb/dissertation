@@ -1,0 +1,1803 @@
+
+  
+    
+      
+        Background_NNP
+        
+          Cluster_NNP analysis_NN
+          In_IN classification_NN ,_, one_CD is_VBZ concerned_VBN with_IN assigning_VBG
+          objects_NNS to_TO classes_NNS on_IN the_DT basis_NN of_IN measurements_NNS made_VBN on_IN
+          these_DT objects_NNS ._. There_EX are_VBP two_CD main_JJ aspects_NNS to_TO
+          classification_NN :_: discrimination_NN and_CC clustering_VBG ,_, or_CC
+          supervised_JJ and_CC unsupervised_JJ learning_NN ._. In_IN unsupervised_JJ
+          learning_NN (_( also_RB known_VBN as_IN cluster_NN analysis_NN ,_, class_NN discovery_NN
+          and_CC unsupervised_JJ pattern_NN recognition_NN )_) ,_, the_DT classes_NNS are_VBP
+          unknown_JJ 
+          a_DT priori_FW and_CC need_VBP to_TO be_VB discovered_VBN
+          from_IN the_DT data_NNS ._. In_IN contrast_NN ,_, in_IN supervised_JJ learning_NN (_( also_RB
+          known_VBN as_IN discriminant_NN analysis_NN ,_, class_NN prediction_NN ,_, and_CC
+          supervised_JJ pattern_NN recognition_NN )_) ,_, the_DT classes_NNS are_VBP
+          predefined_JJ and_CC the_DT task_NN is_VBZ to_TO understand_VB the_DT basis_NN for_IN
+          the_DT classification_NN from_IN a_DT set_NN of_IN labeled_VBN objects_NNS
+          (_( training_NN or_CC learning_VBG set_VBN )_) ._. This_DT information_NN is_VBZ then_RB used_VBN
+          to_TO classify_VB future_JJ observations_NNS ._. The_DT present_JJ article_NN
+          focuses_VBZ on_IN the_DT unsupervised_JJ problem_NN ,_, that_WDT is_VBZ ,_, on_IN cluster_NN
+          analysis_NN ,_, but_CC draws_VBZ on_IN notions_NNS from_IN supervised_JJ learning_NN
+          to_TO address_VB the_DT problem_NN ._.
+          In_IN cluster_NN analysis_NN ,_, the_DT data_NNS are_VBP assumed_VBN to_TO be_VB
+          sampled_VBN from_IN a_DT mixture_NN distribution_NN with_IN 
+          K_NNP components_NNS corresponding_JJ to_TO the_DT 
+          K_NNP clusters_NNS to_TO be_VB recovered_VBN ._. Let_VB (_( 
+          X_NNP 
+          1_CD ,_, ._. ._. ._. ,_, 
+          X_NNP 
+          
+            p_NN 
+           )_) denote_NN a_DT random_JJ 1_CD ×_NN 
+          p_NN vector_NN of_IN explanatory_JJ variables_NNS
+          or_CC features_NNS ,_, and_CC let_VB 
+          Y_NNP {_( 1_CD ,_, ._. ._. ._. ,_, 
+          K_NNP }_) denote_NN the_DT unknown_JJ component_NN or_CC
+          cluster_NN label_NN ._. Given_VBN a_DT sample_NN of_IN 
+          X_NNP values_NNS ,_, the_DT goal_NN is_VBZ to_TO estimate_VB
+          the_DT number_NN of_IN clusters_NNS 
+          K_NNP and_CC to_TO estimate_VB ,_, for_IN each_DT
+          observation_NN ,_, its_PRP$ cluster_NN label_NN 
+          Y_NNP ._. 
+          Suppose_VB we_PRP have_VBP data_NNS 
+          X_NNP =_SYM (_( 
+          x_SYM 
+          
+            ij_NN 
+           )_) on_IN 
+          p_NN explanatory_JJ variables_NNS (_( for_IN
+          example_NN ,_, genes_NNS )_) for_IN 
+          n_NN observations_NNS (_( for_IN example_NN ,_, tumor_NN
+          mRNA_NN samples_NNS )_) ,_, where_WRB 
+          x_SYM 
+          
+            ij_NN 
+           denotes_NNS the_DT realization_NN of_IN variable_JJ 
+          X_NNP 
+          
+            j_NN 
+           for_IN observation_NN 
+          i_NNP and_CC 
+          x_SYM 
+          
+            i_NNP 
+           =_SYM (_( 
+          x_SYM 
+          
+          i_NNP 1_CD ,_, ._. ._. ._. ,_, ._. x_SYM 
+          
+            ip_NN 
+           )_) denotes_NNS the_DT data_NNS vector_NN for_IN observation_NN 
+          i_NNP ,_, 
+          i_NNP =_SYM 1_CD ,_, ._. ._. ._. ,_, 
+          n_NN ,_, 
+          j_NN =_SYM 1_CD ,_, ._. ._. ._. ,_, 
+          p_NN ._. We_PRP consider_VBP clustering_VBG
+          procedures_NNS that_WDT partition_NN the_DT learning_VBG set_VBN =_SYM {_( 
+          x_SYM 
+          1_CD ,_, ._. ._. ._. ,_, 
+          x_SYM 
+          
+            n_NN 
+           }_) into_IN 
+          K_NNP clusters_NNS of_IN observations_NNS that_WDT are_VBP
+          '_POS similar_JJ '_POS to_TO each_DT other_JJ ,_, where_WRB 
+          K_NNP is_VBZ a_DT user-prespecified_JJ integer_NN ._.
+          More_RBR specifically_RB ,_, the_DT clustering_VBG (_( ·_NN ;_: )_) assigns_VBZ class_NN
+          labels_NNS (_( 
+          X_NNP 
+          
+            i_NNP 
+           ;_: )_) to_TO each_DT observation_NN ,_, where_WRB Clustering_NNP procedures_NNS
+          generally_RB operate_VBP on_IN a_DT matrix_NN of_IN pairwise_NN dissimilarities_NNS
+          (_( or_CC similarities_NNS )_) between_IN the_DT observations_NNS to_TO be_VB
+          clustered_VBN ,_, such_JJ as_IN the_DT Euclidean_NNP or_CC Manhattan_NNP distance_NN
+          matrices_NNS [_NN 8_CD ]_NN ._. A_DT partitioning_VBG of_IN the_DT learning_VBG set_VBN can_MD be_VB
+          produced_VBN directly_RB by_IN partitioning_VBG clustering_VBG methods_NNS (_( for_IN
+          example_NN ,_, 
+          k_NN -_: means_VBZ ,_, partitioning_VBG around_IN
+          medoid_NN (_( PAM_NNP )_) ,_, self-organizing_JJ maps_NNS (_( SOM_NNP )_) )_) or_CC by_IN
+          hierarchical_JJ clustering_VBG methods_NNS ,_, by_IN '_POS cutting_VBG '_POS the_DT
+          dendrogram_NN to_TO obtain_VB 
+          K_NNP '_POS branches_NNS '_POS or_CC clusters_NNS ._. Important_NNP
+          issues_NNS ,_, which_WDT will_MD only_RB be_VB addressed_VBN briefly_NN in_IN this_DT
+          article_NN ,_, include_VBP :_: the_DT selection_NN of_IN observational_NN units_NNS ,_,
+          the_DT selection_NN of_IN variables_NNS for_IN defining_VBG the_DT groupings_NNS ,_,
+          the_DT transformation_NN and_CC standardization_NN of_IN variables_NNS ,_, the_DT
+          choice_NN of_IN a_DT similarity_NN or_CC dissimilarity_NN measure_NN ,_, and_CC the_DT
+          choice_NN of_IN a_DT clustering_VBG method_NN [_NN 9_CD ]_NN ._. Our_PRP$ main_JJ concern_NN here_RB
+          is_VBZ to_TO estimate_VB the_DT number_NN of_IN clusters_NNS 
+          K_NNP ._. 
+          When_WRB a_DT clustering_VBG algorithm_NN is_VBZ applied_VBN to_TO a_DT set_NN of_IN
+          observations_NNS ,_, a_DT partition_NN of_IN the_DT data_NNS is_VBZ returned_VBN whether_IN
+          or_CC not_RB the_DT data_NNS show_VBP a_DT true_JJ clustering_VBG structure_NN ,_, that_WDT
+          is_VBZ ,_, whether_IN or_CC not_RB 
+          K_NNP =_SYM 1_CD ._. This_DT fact_NN causes_NNS no_DT problems_NNS
+          if_IN clustering_VBG is_VBZ done_VBN to_TO obtain_VB a_DT practical_JJ grouping_VBG of_IN
+          the_DT given_VBN set_NN of_IN objects_NNS ,_, as_IN for_IN organizational_JJ or_CC
+          visualization_NN purposes_NNS (_( for_IN example_NN ,_, hierarchical_JJ
+          clustering_VBG for_IN displaying_VBG large_JJ gene-expression_JJ data_NNS
+          matrices_NNS as_IN in_IN Eisen_NNP 
+          et_CC al_NN ._. [_NN 10_CD ]_NN )_) ._. However_RB ,_, if_IN interest_NN
+          lies_VBZ primarily_RB in_IN the_DT recognition_NN of_IN an_DT unknown_JJ
+          classification_NN of_IN the_DT data_NNS ,_, an_DT artificial_JJ clustering_VBG is_VBZ
+          not_RB satisfactory_JJ ,_, and_CC clusters_NNS resulting_VBG from_IN the_DT
+          algorithm_NN must_MD be_VB investigated_VBN for_IN their_PRP$ relevance_NN and_CC
+          reproducibility_NN ._. This_DT task_NN can_MD be_VB carried_VBN out_IN by_IN
+          descriptive_JJ and_CC graphical_JJ exploratory_JJ methods_NNS ,_, or_CC by_IN
+          relying_VBG on_IN probabilistic_JJ models_NNS and_CC suitable_JJ statistical_JJ
+          significance_NN tests_NNS (_( for_IN example_NN [_NN 11_CD ,_, 12_CD ]_NN )_) ._.
+          We_PRP argue_VBP here_RB that_IN validating_VBG the_DT results_NNS of_IN a_DT
+          clustering_VBG procedure_NN can_MD be_VB done_VBN effectively_RB by_IN focusing_VBG
+          on_IN prediction_NN accuracy_NN ._. Once_RB new_JJ classes_NNS are_VBP identified_VBN
+          and_CC class_NN labels_NNS are_VBP assigned_VBN to_TO the_DT observations_NNS ,_, the_DT
+          next_JJ step_NN is_VBZ often_RB to_TO build_VB a_DT classifier_NN for_IN predicting_VBG
+          the_DT class_NN of_IN future_JJ observations_NNS ._. The_DT reproducibility_NN or_CC
+          predictability_NN of_IN cluster_NN assignments_NNS becomes_VBZ very_RB
+          important_JJ in_IN this_DT context_NN ,_, and_CC therefore_RB provides_VBZ a_DT
+          motivation_NN for_IN using_VBG ideas_NNS from_IN supervised_JJ learning_NN in_IN an_DT
+          unsupervised_JJ setting_NN ._. Resampling_NNP methods_NNS such_JJ as_IN bagging_VBG
+          [_NN 13_CD ]_NN and_CC boosting_VBG [_NN 14_CD ,_, 15_CD ]_NN have_VBP been_VBN applied_VBN
+          successfully_RB in_IN the_DT field_NN of_IN supervised_JJ learning_NN to_TO
+          improve_VB prediction_NN accuracy_NN ._. We_PRP propose_VBP here_RB a_DT novel_NN
+          resampling_VBG method_NN ,_, Clest_NNP ,_, which_WDT combines_VBZ ideas_NNS from_IN
+          discriminant_NN and_CC cluster_NN analysis_NN for_IN estimating_VBG the_DT
+          number_NN of_IN clusters_NNS in_IN a_DT dataset_NN ._. Although_IN the_DT proposed_VBN
+          resampling_VBG methods_NNS are_VBP applicable_JJ to_TO general_JJ clustering_VBG
+          problems_NNS and_CC procedures_NNS ,_, particular_JJ attention_NN is_VBZ given_VBN to_TO
+          the_DT clustering_VBG of_IN tumors_NNS on_IN the_DT basis_NN of_IN gene-expression_JJ
+          data_NNS using_VBG the_DT partitioning_VBG around_IN medoids_NNS (_( PAM_NNP )_)
+          procedure_NN (_( see_VB below_IN )_) ._.
+        
+        
+          Partitioning_NNP around_IN medoids_NNS
+          The_DT new_JJ Clest_NNP procedure_NN is_VBZ demonstrated_VBN using_VBG the_DT PAM_NNP
+          method_NN of_IN Kaufman_NNP and_CC Rousseeuw_NNP [_NN 16_CD ]_NN ._. As_IN implemented_VBN in_IN
+          the_DT cluster_NN package_NN in_IN R_NN and_CC S-P_NNP lus_JJ ,_, the_DT PAM_NNP function_NN
+          takes_VBZ as_IN its_PRP$ arguments_NNS a_DT dissimilarity_NN matrix_NN (_( for_IN
+          example_NN the_DT Euclidean_NNP distance_NN matrix_NN as_IN used_VBN here_RB )_) and_CC a_DT
+          prespecified_JJ number_NN of_IN clusters_NNS 
+          K_NNP ._. The_DT PAM_NNP procedure_NN is_VBZ based_VBN on_IN
+          the_DT search_NN for_IN 
+          K_NNP representative_NN objects_NNS ,_, or_CC
+          medoids_NNS ,_, among_IN the_DT observations_NNS to_TO be_VB clustered_VBN ._. After_IN
+          finding_VBG a_DT set_NN of_IN 
+          K_NNP medoids_NNS ,_, 
+          K_NNP clusters_NNS are_VBP constructed_VBN by_IN
+          assigning_VBG each_DT observation_NN to_TO the_DT nearest_JJS medoid_NN ._. The_DT
+          goal_NN is_VBZ to_TO find_VB 
+          K_NNP medoids_NNS that_WDT minimize_VB the_DT sum_NN of_IN
+          the_DT dissimilarities_NNS of_IN the_DT observations_NNS to_TO their_PRP$ closest_JJS
+          medoid_NN ._. The_DT algorithm_NN first_RB looks_NNS for_IN a_DT good_JJ initial_JJ set_NN
+          of_IN medoids_NNS ,_, then_RB finds_VBZ a_DT local_JJ minimum_NN for_IN the_DT objective_NN
+          function_NN ,_, that_WDT is_VBZ ,_, a_DT solution_NN such_JJ that_IN there_EX is_VBZ no_DT
+          single_JJ switch_NN of_IN an_DT observation_NN with_IN a_DT medoid_NN that_WDT will_MD
+          decrease_VB the_DT objective_NN ._.
+          The_DT PAM_NNP method_NN tends_VBZ to_TO be_VB more_RBR robust_JJ and_CC
+          computationally_RB efficient_JJ than_IN 
+          k_NN -_: means_NNS ._. In_IN addition_NN ,_, PAM_NNP provides_VBZ
+          a_DT graphical_JJ display_NN ,_, the_DT silhouette_NN plot_NN ,_, which_WDT can_MD be_VB
+          used_VBN to_TO select_VB the_DT number_NN of_IN clusters_NNS and_CC to_TO assess_VB how_WRB
+          well_RB individual_JJ observations_NNS are_VBP clustered_VBN ._. Let_VB 
+          a_DT 
+          
+            i_NNP 
+           denote_NN the_DT average_JJ dissimilarity_NN between_IN 
+          i_NNP and_CC all_DT other_JJ observations_NNS in_IN the_DT
+          cluster_NN to_TO which_WDT 
+          i_NNP belongs_VBZ ._. For_IN any_DT other_JJ cluster_NN 
+          C_NNP ,_, let_VB 
+          d_SYM (_( 
+          i_NNP ,_, C_NNP )_) denote_NN the_DT average_JJ
+          dissimilarity_NN of_IN 
+          i_NNP to_TO all_DT objects_NNS of_IN 
+          C_NNP and_CC let_VB 
+          b_SYM 
+          
+            i_NNP 
+           denote_NN the_DT smallest_JJS of_IN these_DT 
+          d_SYM (_( 
+          i_NNP ,_, C_NNP )_) ._. The_DT silhouette_NN width_NN of_IN
+          observation_NN 
+          i_NNP is_VBZ 
+          sil_NN 
+          
+            i_NNP 
+           =_SYM (_( 
+          b_SYM 
+          
+            i_NNP 
+           -_: 
+          a_DT 
+          
+            i_NNP 
+           )_) /_NN max_NN (_( 
+          a_DT 
+          
+            i_NNP 
+           ,_, 
+          b_SYM 
+          
+            i_NNP 
+           )_) and_CC the_DT overall_JJ average_NN silhouette_NN width_NN is_VBZ simply_RB
+          the_DT average_NN of_IN 
+          sil_NN 
+          
+            i_NNS 
+           over_IN all_DT observations_NNS 
+          i_NNP ,_, =_SYM ∑_NN 
+          
+            i_NNP 
+           
+          sil_NN 
+          
+            i_NNP 
+           /_NN 
+          n_NN ._. Intuitively_NNP ,_, objects_NNS with_IN large_JJ
+          silhouette_NN width_NN 
+          sil_NN 
+          
+            i_NNP 
+           ,_, are_VBP well_RB clustered_VBN ,_, whereas_IN those_DT with_IN small_JJ 
+          sil_NN 
+          
+            i_NNP 
+           ,_, tend_VBP to_TO lie_VB between_IN clusters_NNS ._. Kaufman_NNP and_CC
+          Rousseeuw_NNP suggest_VBP estimating_VBG the_DT number_NN of_IN clusters_NNS 
+          K_NNP by_IN that_DT which_WDT gives_VBZ the_DT largest_JJS
+          average_NN silhouette_NN width_NN ,_, ._.
+        
+        
+          Existing_JJ methods_NNS for_IN estimating_VBG the_DT number_NN of_IN
+          clusters_NNS in_IN a_DT dataset_NN
+          
+            Null_NNP hypothesis_NNS
+            Suppose_VB that_IN the_DT maximum_NN possible_JJ number_NN of_IN clusters_NNS
+            in_IN the_DT data_NNS is_VBZ set_VBN to_TO 
+            M_NNP ,_, 2_CD ≤_NN 
+            M_NNP ≤_NN 
+            n_NN ._. One_CD approach_NN to_TO estimating_VBG
+            the_DT number_NN of_IN clusters_NNS 
+            K_NNP is_VBZ to_TO look_VB for_RB ,_, 1_CD <_NN ≤_NN 
+            M_NNP ,_, that_WDT provides_VBZ the_DT strongest_JJS
+            significant_JJ evidence_NN against_IN the_DT null_NN hypothesis_NNS H_NNP 
+            0_CD of_IN 
+            K_NNP =_SYM 1_CD ,_, that_WDT is_VBZ ,_, '_'' no_DT clusters_NNS '_POS in_IN
+            the_DT data_NNS ._. Two_CD commonly_RB used_VBN parametric_JJ null_NN hypotheses_NNS
+            are_VBP the_DT unimodality_NN hypothesis_NNS and_CC the_DT uniformity_NN
+            hypothesis_NNS ._.
+            Under_IN the_DT unimodality_NN hypothesis_NNS ,_, the_DT data_NNS are_VBP
+            thought_VBN to_TO be_VB a_DT random_JJ sample_NN from_IN a_DT multivariate_NN
+            normal_JJ distribution_NN ._. This_DT model_NN typically_RB gives_VBZ a_DT high_JJ
+            probability_NN of_IN rejection_NN of_IN the_DT null_NN 
+            K_NNP =_SYM 1_CD if_IN the_DT data_NNS are_VBP sampled_VBN
+            from_IN a_DT distribution_NN with_IN a_DT lower_JJR kurtosis_NNS than_IN the_DT
+            normal_JJ distribution_NN ,_, such_JJ as_IN the_DT uniform_NN distribution_NN [_NN
+            17_CD ]_NN ._.
+            The_DT uniformity_NN hypothesis_NNS ,_, also_RB referred_VBD to_TO as_IN
+            random_JJ position_NN hypothesis_NNS ,_, states_NNS that_IN the_DT data_NNS are_VBP
+            sampled_VBN from_IN a_DT uniform_NN distribution_NN in_IN 
+            p_NN -_: dimensional_NN space_NN [_NN 18_CD ,_, 19_CD ,_,
+            20_CD ]_NN ._. Methods_NNP based_VBN on_IN the_DT uniformity_NN hypothesis_NNS tend_VBP to_TO
+            be_VB conservative_JJ ,_, that_WDT is_VBZ ,_, lead_VB to_TO few_JJ rejections_NNS of_IN the_DT
+            null_NN hypothesis_NNS ,_, when_WRB the_DT data_NNS are_VBP sampled_VBN from_IN a_DT
+            strongly_RB unimodal_NN distribution_NN such_JJ as_IN the_DT normal_JJ
+            distribution_NN ._. In_IN two_CD or_CC more_JJR dimensions_NNS ,_, and_CC depending_VBG
+            on_IN the_DT test_NN statistic_NN ,_, the_DT results_NNS can_MD be_VB very_RB
+            sensitive_JJ to_TO the_DT region_NN of_IN support_NN of_IN the_DT reference_NN
+            distribution_NN [_NN 17_CD ]_NN ._.
+            For_IN both_DT types_NNS of_IN hypotheses_NNS ,_, evidence_NN against_IN the_DT
+            null_NN hypothesis_NNS can_MD be_VB summarized_VBD formally_RB under_IN
+            probability_NN models_NNS for_IN the_DT data_NNS or_CC more_RBR informally_RB by_IN
+            using_VBG internal_JJ indices_NNS as_IN described_VBN next_JJ ._.
+          
+          
+            Internal_NNP indices_NNS
+            Numerous_JJ methods_NNS have_VBP been_VBN proposed_VBN for_IN testing_VBG the_DT
+            null_NN hypothesis_NNS 
+            K_NNP =_SYM 1_CD and_CC estimating_VBG the_DT number_NN
+            of_IN clusters_NNS in_IN a_DT dataset_NN ,_, however_RB ,_, none_NN of_IN them_PRP is_VBZ
+            completely_RB satisfactory_JJ ._. Jain_NNP and_CC Dubes_NNP [_NN 20_CD ]_NN provide_VBP a_DT
+            general_JJ overview_NN of_IN such_JJ methods_NNS ._. The_DT majority_NN of_IN
+            existing_VBG approaches_NNS do_VBP not_RB attempt_VB to_TO formally_RB test_VB the_DT
+            null_NN hypothesis_NNS that_IN 
+            K_NNP =_SYM 1_CD ,_, but_CC rather_RB look_VB for_IN the_DT
+            clustering_VBG structure_NN under_IN which_WDT a_DT summary_NN statistic_NN of_IN
+            interest_NN is_VBZ optimal_NN ,_, being_VBG large_JJ or_CC small_JJ depending_VBG on_IN
+            the_DT statistic_NN [_NN 21_CD ,_, 22_CD ,_, 23_CD ]_NN ._. These_DT statistics_NNS are_VBP
+            typically_RB functions_NNS of_IN the_DT within-clusters_JJ ,_, and_CC
+            possibly_RB between-clusters_JJ ,_, sums_NNS of_IN squares_NNS ._. They_PRP are_VBP
+            referred_VBN to_TO as_IN internal_JJ indices_NNS ,_, in_IN the_DT sense_NN that_IN they_PRP
+            are_VBP computed_JJ from_IN the_DT same_JJ observations_NNS that_WDT are_VBP used_VBN
+            to_TO create_VB the_DT clustering_VBG ._. Consequently_RB ,_, the_DT
+            distribution_NN of_IN these_DT indices_NNS is_VBZ intractable_JJ ._. In_IN
+            particular_JJ ,_, as_IN clustering_VBG methods_NNS attempt_VBP to_TO maximize_VB
+            the_DT separation_NN between_IN clusters_NNS ,_, the_DT ordinary_JJ
+            significance_NN tests_NNS such_JJ as_IN analysis_NN of_IN variance_NN 
+            F_NN -_: tests_NNS are_VBP not_RB valid_JJ for_IN
+            testing_NN differences_NNS between_IN the_DT clusters_NNS ._. Milli-gan_NNP and_CC
+            Cooper_NNP [_NN 12_CD ]_NN conducted_VBD an_DT extensive_JJ Monte_NNP Carlo_NNP
+            evaluation_NN of_IN 30_CD internal_JJ indices_NNS ._. Other_JJ approaches_NNS
+            include_VBP modeling_VBG the_DT data_NNS using_VBG Gaussian_NNP mixtures_NNS and_CC
+            applying_VBG a_DT Bayesian_NNP criterion_NN to_TO determine_VB the_DT number_NN
+            of_IN components_NNS in_IN the_DT mixture_NN [_NN 11_CD ]_NN ._. A_DT recent_JJ proposal_NN
+            of_IN Tib-shirani_NNP 
+            et_CC al_NN ._. [_NN 24_CD ]_NN ,_, called_VBD the_DT gap_NN
+            statistic_NN method_NN ,_, calibrates_NNS an_DT internal_JJ index_NN ,_, such_JJ as_IN
+            the_DT within-clusters_JJ sum_NN of_IN squares_NNS ,_, against_IN its_PRP$
+            expectation_NN under_IN a_DT suitably_RB defined_VBN null_NN hypothesis_NNS
+            (_( note_NN that_IN gap_NN tests_NNS have_VBP been_VBN used_VBN in_IN another_DT context_NN
+            in_IN cluster_NN analysis_NN by_IN Bock_NNP [_NN 18_CD ]_NN to_TO test_VB the_DT null_NN
+            hypothesis_NNS of_IN a_NNP '_POS homogeneous_JJ '_POS population_NN against_IN the_DT
+            alternative_NN of_IN '_POS heterogeneity_NN '_'' )_) ._. Tibshirani_NNP 
+            et_CC al_NN ._. carried_VBD out_RP a_DT comparative_JJ
+            Monte_NNP Carlo_NNP study_NN of_IN the_DT gap_NN statistic_NN and_CC several_JJ of_IN
+            the_DT internal_JJ indices_NNS that_WDT showed_VBD a_DT better_JJR performance_NN
+            in_IN the_DT study_NN of_IN Milligan_NNP and_CC Cooper_NNP [_NN 12_CD ]_NN ._. These_DT
+            internal_JJ indices_NNS and_CC the_DT gap_NN statistic_NN are_VBP described_VBN in_IN
+            more_JJR detail_NN below_IN ._.
+            For_IN a_DT given_VBN partition_NN of_IN the_DT learning_VBG set_VBN into_IN 1_CD ≤_NN 
+            k_NN ≤_NN 
+            M_NNP clusters_NNS ,_, define_VB 
+            B_NNP 
+            
+              k_NN 
+             and_CC 
+            W_NNP 
+            
+              k_NN 
+             to_TO be_VB the_DT 
+            p_NN ×_NN 
+            p_NN matrices_NNS of_IN between_IN and_CC within_IN 
+            k_NN -_: clusters_NNS sums_NNS of_IN squares_NNS and_CC
+            cross-products_JJ [_NN 8_CD ]_NN ._. Note_VB that_IN 
+            B_NNP 
+            1_CD is_VBZ not_RB defined_VBN ._. The_DT following_VBG six_CD
+            internal_JJ indices_NNS are_VBP commonly_RB used_VBN to_TO estimate_VB the_DT
+            number_NN of_IN clusters_NNS in_IN a_DT dataset_NN ._.
+            
+            sil_NN :_: Kaufman_NNP and_CC Rousseeuw_NNP [_NN 16_CD ]_NN
+            suggest_VBP selecting_VBG the_DT number_NN of_IN clusters_NNS 
+            k_NN ≥_NN 2_CD which_WDT gives_VBZ the_DT largest_JJS
+            average_NN silhouette_NN width_NN ,_, 
+            
+              k_NN 
+             ._. Silhouette_NNP widths_NNS were_VBD defined_VBN above_IN with_IN the_DT
+            clustering_VBG procedure_NN PAM_NNP ._.
+            
+            ch_NN :_: Calinski_NNP and_CC Harabasz_NNP [_NN 21_CD ]_NN ._.
+            For_IN each_DT number_NN of_IN clusters_NNS 
+            k_NN ≥_NN 2_CD ,_, define_VB the_DT index_NN
+            
+            where_WRB tr_NN denotes_NNS the_DT trace_VB of_IN a_DT matrix_NN ,_, that_WDT is_VBZ ,_, the_DT
+            sum_NN of_IN the_DT diagonal_NN entries_NNS ._. The_DT estimated_VBN number_NN of_IN
+            clusters_NNS is_VBZ argmax_NN 
+            
+            k_NN ≥_NN 2_CD 
+            ch_NN 
+            
+              k_NN 
+             ._.
+            
+            kl_NN :_: Krzanowski_NNP and_CC Lai_NNP [_NN 23_CD ]_NN ._. For_IN
+            each_DT number_NN of_IN clusters_NNS 
+            k_NN ≥_NN 2_CD ,_, define_VB the_DT indices_NNS
+            
+            diff_NN 
+            
+              k_NN 
+             =_SYM (_( 
+            k_NN -_: 1_LS )_) 2_CD /_NN 
+            p_NN tr_NN 
+            W_NNP 
+            
+            k_NN -_: 1_CD -_: 
+            k_NN 2_CD /_NN 
+            p_NN tr_NN 
+            W_NNP 
+            
+              k_NN 
+             and_CC
+            
+            kl_NN 
+            
+              k_NN 
+             =_SYM |_NN 
+            diff_NN 
+            
+              k_NN 
+             |_NN /_NN |_NN 
+            diff_NN 
+            
+            k_NN +_NN 1_CD |_NN ._.
+            The_DT estimated_VBN number_NN of_IN clusters_NNS is_VBZ argmax_NN 
+            
+            k_NN ≥_NN 2_CD 
+            kl_NN 
+            
+              k_NN 
+             ._.
+            
+            hart_NN :_: Hartigan_NNP [_NN 25_CD ]_NN ._. For_IN each_DT
+            number_NN of_IN clusters_NNS 
+            k_NN ≥_NN 1_CD ,_, define_VB the_DT index_NN
+            
+            The_DT estimated_VBN number_NN of_IN clusters_NNS is_VBZ the_DT smallest_JJS 
+            k_NN ≥_NN 1_CD such_JJ that_DT 
+            hart_NN 
+            
+              k_NN 
+             ≤_NN 10_CD ._.
+            
+            gap_NN or_CC 
+            gapPC_NN :_: Tibshirani_NNP 
+            et_CC al_NN ._. [_NN 24_CD ]_NN ._. This_DT method_NN
+            compares_VBZ an_DT observed_VBN internal_JJ index_NN ,_, such_JJ as_IN the_DT
+            within-clusters_JJ sum_NN of_IN squares_NNS ,_, to_TO its_PRP$ expectation_NN
+            under_IN a_DT reference_NN null_NN distribution_NN as_IN follows_VBZ ._. For_IN
+            each_DT number_NN of_IN clusters_NNS 
+            k_NN ≥_NN 1_CD ,_, compute_VB the_DT
+            within-clusters_JJ sum_NN of_IN squares_NNS tr_NN 
+            W_NNP 
+            
+              k_NN 
+             ._. Generate_NNP 
+            B_NNP (_( here_RB 
+            B_NNP =_SYM 10_CD )_) reference_NN datasets_NNS under_IN
+            the_DT null_NN distribution_NN and_CC apply_VB the_DT clustering_VBG
+            algorithm_NN to_TO each_DT ,_, calculating_VBG the_DT within-clusters_JJ sums_NNS
+            of_IN squares_NNS tr_NN 
+            W_NNP 
+            
+              k_NN 
+             1_CD ,_, ._. ._. ._. ,_, tr_NN 
+            W_NNP 
+            
+              k_NN 
+             
+            B_NNP ._. Compute_NNP the_DT estimated_VBN gap_NN
+            statistic_NN
+            
+            and_CC the_DT standard_JJ deviation_NN 
+            sd_NN 
+            
+              k_NN 
+             of_IN log_NN tr_NN 
+            W_NNP 
+            
+              k_NN 
+             
+            b_SYM ,_, 1_CD ≤_NN 
+            b_SYM ≤_NN 
+            B_NNP ._. Let_NNP ._. The_DT estimated_VBN number_NN of_IN
+            clusters_NNS is_VBZ the_DT smallest_JJS 
+            k_NN ≥_NN 1_CD such_JJ that_IN ,_, where_WRB 
+            k_NN *_NN =_SYM argmax_NN 
+            
+            k_NN ≥_NN 1_CD 
+            gap_NN 
+            
+              k_NN 
+             ._.
+            Tibshirani_NNP 
+            et_CC al_NN ._. [_NN 24_CD ]_NN chose_VBD the_DT uniformity_NN
+            hypothesis_NNS to_TO create_VB a_DT reference_NN null_NN distribution_NN and_CC
+            considered_VBN two_CD approaches_NNS for_IN constructing_VBG the_DT region_NN
+            of_IN support_NN of_IN the_DT distribution_NN ._. In_IN the_DT first_JJ approach_NN ,_,
+            the_DT sampling_VBG window_NN for_IN the_DT 
+            j_NN th_NN variable_JJ ,_, 1_CD ≤_NN 
+            j_NN ≤_NN 
+            p_NN ,_, is_VBZ the_DT range_NN of_IN the_DT observed_VBN
+            values_NNS for_IN that_DT variable_NN ._. In_IN the_DT second_JJ approach_NN ,_,
+            following_VBG Sarle_NNP [_NN 17_CD ]_NN ,_, the_DT variables_NNS are_VBP sampled_VBN from_IN a_DT
+            uniform_NN distribution_NN over_IN a_DT box_NN aligned_VBN with_IN the_DT
+            principal_JJ components_NNS of_IN the_DT centered_VBN design_NN matrix_NN
+            (_( that_WDT is_VBZ ,_, the_DT columns_NNS of_IN 
+            X_NNP are_VBP first_RB set_VBN to_TO have_VB mean_VB 0_CD and_CC
+            the_DT singular_NN value_NN decomposition_NN of_IN 
+            X_NNP is_VBZ computed_JJ )_) ._. The_DT new_JJ design_NN
+            matrix_NN is_VBZ then_RB back-transformed_JJ to_TO obtain_VB a_DT reference_NN
+            dataset_NN ._. Whereas_IN the_DT first_JJ approach_NN has_VBZ the_DT advantage_NN
+            of_IN simplicity_NN ,_, the_DT second_JJ takes_VBZ into_IN account_NN the_DT shape_NN
+            of_IN the_DT data_NNS distribution_NN ._. Note_VB that_IN in_IN both_DT approaches_VBZ
+            the_DT variables_NNS are_VBP sampled_VBN independently_RB ._. The_DT version_NN of_IN
+            the_DT gap_NN method_NN that_WDT uses_VBZ the_DT original_JJ variables_NNS to_TO
+            construct_VB the_DT region_NN of_IN support_NN is_VBZ referred_VBN to_TO as_IN gap_NN
+            and_CC the_DT second_JJ version_NN as_IN gapPC_NN ,_, where_WRB '_POS PC_NN '_'' stands_NNS for_IN
+            principal_JJ components_NNS ._.
+            Note_VB that_IN of_IN the_DT above_JJ methods_NNS ,_, only_RB hart_NN ,_, gap_NN ,_, and_CC
+            gapPC_NN allow_VBP the_DT estimation_NN of_IN only_RB one_CD cluster_NN in_IN the_DT
+            data_NNS ,_, that_WDT is_VBZ ,_, =_SYM 1_CD ._.
+          
+          
+            External_NNP indices_NNS
+            The_DT term_NN '_'' validation_NN of_IN a_DT clustering_VBG procedure_NN '_''
+            usually_RB refers_VBZ to_TO the_DT ability_NN of_IN a_DT given_VBN method_NN to_TO
+            recover_VB the_DT true_JJ clustering_VBG structure_NN in_IN a_DT dataset_NN ._.
+            There_EX have_VBP been_VBN several_JJ attempts_NNS to_TO assess_VB validity_NN on_IN
+            theoretical_JJ grounds_NNS [_NN 18_CD ,_, 25_CD ]_NN ;_: however_RB ,_, such_JJ approaches_NNS
+            turn_VBP out_RP to_TO be_VB of_IN little_JJ applicability_NN in_IN the_DT context_NN
+            of_IN high-dimensional_JJ complex_JJ datasets_NNS ._. In_IN many_JJ
+            validation_NN studies_NNS ,_, clustering_VBG methods_NNS are_VBP evaluated_VBN on_IN
+            their_PRP$ performance_NN on_IN empirical_JJ datasets_NNS with_IN 
+            a_DT priori_FW known_VBN cluster_NN labels_NNS [_NN
+            25_CD ]_NN or_CC ,_, more_RBR commonly_RB ,_, on_IN simulation_NN studies_NNS where_WRB true_JJ
+            cluster_NN labels_NNS are_VBP known_VBN ._. To_TO assess_VB the_DT ability_NN of_IN a_DT
+            clustering_VBG procedure_NN to_TO recover_VB true_JJ cluster_NN labels_NNS it_PRP
+            is_VBZ necessary_JJ to_TO define_VB a_DT measure_NN of_IN agreement_NN between_IN
+            two_CD partitions_NNS ;_: the_DT first_JJ partition_NN being_VBG the_DT 
+            a_DT priori_FW known_VBN clustering_VBG
+            structure_NN of_IN the_DT data_NNS ,_, and_CC the_DT second_JJ partition_NN
+            resulting_VBG from_IN the_DT clustering_VBG procedure_NN ._. In_IN the_DT
+            clustering_VBG literature_NN ,_, measures_NNS of_IN agreement_NN between_IN
+            partitions_NNS are_VBP referred_VBN to_TO as_IN external_JJ indices_NNS ;_: several_JJ
+            such_JJ indices_NNS are_VBP reviewed_VBN next_JJ ._.
+            Consider_VB two_CD partitions_NNS of_IN 
+            n_NN objects_NNS 
+            x_SYM 
+            1_CD ,_, ._. ._. ._. ,_, 
+            x_SYM 
+            
+              n_NN 
+             :_: the_DT 
+            R_NN -_: class_NN partition_NN =_SYM {_( 
+            u_NN 
+            1_CD ,_, ._. ._. ._. ,_, 
+            u_NN 
+            
+              R_NN 
+             }_) and_CC the_DT 
+            C_NNP -_: class_NN partition_NN =_SYM {_( 
+            v_NN 
+            1_CD ,_, ._. ._. ._. ,_, 
+            v_NN 
+            
+              C_NNP 
+             }_) ._. External_NNP indices_NNS of_IN partitional_NN agreement_NN can_MD
+            be_VB expressed_VBN in_IN terms_NNS of_IN a_DT contingency_NN table_NN (_( Table_NNP 1_LS )_) ,_,
+            with_IN entry_NN 
+            n_NN 
+            
+              ij_NN 
+             denoting_VBG the_DT number_NN of_IN objects_NNS that_WDT are_VBP both_DT in_IN
+            clusters_NNS 
+            u_NN 
+            
+              i_NNP 
+             and_CC 
+            v_NN 
+            
+              j_NN 
+             ,_, 
+            i_NNP =_SYM 1_CD ,_, ._. ._. ._. ,_, 
+            R_NN ,_, 
+            j_NN =_SYM 1_CD ,_, ._. ._. ._. ,_, 
+            C_NNP [_NN 20_CD ]_NN ._. Let_VB and_CC denote_NN the_DT row_NN
+            and_CC column_NN sums_NNS of_IN the_DT contingency_NN table_NN ,_, respectively_RB ,_,
+            and_CC let_VB ._.
+            The_DT following_VBG indices_NNS can_MD then_RB be_VB used_VBN ._.
+            1_LS ._. 
+            Rand_NNP :_: Rand_NNP [_NN 26_CD ]_NN
+            
+            2_LS ._. 
+            Jaccard_NNP :_: Jain_NNP and_CC Dubes_NNP [_NN 20_CD ]_NN
+            
+            3_LS ._. 
+            FM_NNP :_: Fowlkes_NNP and_CC Mallows_NNP [_NN 27_CD ]_NN
+            
+            Note_VB that_IN Rand_NNP and_CC FM_NNP are_VBP linear_JJ functions_NNS of_IN 
+            Z_NNP ,_, and_CC hence_RB are_VBP linear_JJ
+            functions_NNS of_IN one_CD another_DT ,_, conditional_JJ on_IN the_DT row_NN and_CC
+            column_NN sums_NNS in_IN Table_NNP 1_CD ._. If_IN the_DT row_NN and_CC column_NN sums_NNS in_IN
+            Table_NNP 1_CD are_VBP fixed_VBN ,_, but_CC the_DT partitions_NNS are_VBP selected_VBN at_IN
+            random_JJ ;_: that_DT is_VBZ ,_, if_IN there_EX is_VBZ independence_NN in_IN the_DT table_NN ,_,
+            the_DT hypergeometric_JJ distribution_NN can_MD be_VB applied_VBN to_TO
+            determine_VB the_DT expected_VBN value_NN of_IN quantities_NNS such_JJ as_IN 
+            Z_NNP ._. In_IN particular_JJ
+            
+            An_DT external_JJ index_NN S_NNP is_VBZ often_RB standardized_JJ in_IN such_JJ a_DT
+            way_NN that_IN its_PRP$ expected_VBN value_NN is_VBZ 0_CD when_WRB the_DT partitions_NNS
+            are_VBP selected_VBN at_IN random_JJ and_CC 1_CD when_WRB they_PRP match_VBP perfectly_RB ._.
+            This_DT amounts_NNS to_TO computing_VBG a_DT standardized_JJ external_JJ
+            index_NN
+            
+            where_WRB 
+            S_NNP 
+            
+              max_NN 
+             is_VBZ the_DT maximum_NN value_NN of_IN the_DT statistic_NN 
+            S_NNP and_CC 
+            E_NNP (_( 
+            S_NNP )_) is_VBZ the_DT expected_VBN value_NN of_IN 
+            S_NNP when_WRB partitions_NNS are_VBP selected_VBN at_IN
+            random_JJ ._. Accordingly_RB ,_, an_DT often_RB used_VBN correction_NN for_IN the_DT
+            Rand_NNP statistic_NN is_VBZ
+            
+            The_DT significance_NN of_IN an_DT observed_VBN external_JJ index_NN is_VBZ
+            usually_RB assessed_VBN under_IN the_DT assumption_NN that_IN the_DT two_CD
+            partitions_NNS to_TO be_VB compared_VBN are_VBP independent_JJ ._. This_DT
+            assumption_NN does_VBZ not_RB hold_VB for_IN the_DT resampling_VBG methods_NNS
+            described_VBD in_IN the_DT following_VBG section_NN ,_, since_IN the_DT same_JJ data_NN
+            are_VBP used_VBN to_TO produce_VB the_DT two_CD partitions_NNS ._. Nevertheless_RB ,_,
+            external_JJ indices_NNS are_VBP convenient_JJ tools_NNS for_IN comparing_VBG two_CD
+            clusterings_NNS ,_, and_CC are_VBP used_VBN in_IN the_DT new_JJ resampling_VBG method_NN
+            Clest_NNP ._. In_IN this_DT context_NN ,_, one_PRP should_MD think_VB of_IN these_DT
+            indices_NNS as_IN internal_JJ rather_RB than_IN external_JJ measures_NNS ._.
+          
+        
+      
+      
+        Results_NNS
+        
+          Clest_NNP ,_, a_DT prediction-based_JJ resampling_VBG method_NN for_IN
+          estimating_VBG the_DT number_NN of_IN clusters_NNS
+          We_PRP propose_VBP a_DT new_JJ prediction-based_JJ resampling_VBG method_NN ,_,
+          Clest_NNP ,_, for_IN estimating_VBG the_DT number_NN of_IN clusters_NNS ,_, if_IN any_DT ,_, in_IN
+          a_DT dataset_NN ._. The_DT idea_NN behind_IN Clest_NNP is_VBZ very_RB intuitive_JJ if_IN one_CD
+          is_VBZ concerned_VBN with_IN reproducibility_NN or_CC predictability_NN of_IN
+          cluster_NN assignments_NNS ._.
+          It_PRP is_VBZ proposed_VBN to_TO estimate_VB the_DT number_NN of_IN clusters_NNS 
+          K_NNP by_IN repeatedly_RB randomly_RB dividing_VBG
+          the_DT original_JJ dataset_NN into_IN two_CD non-overlapping_JJ sets_NNS ,_, a_DT
+          learning_VBG set_VBN 
+          b_SYM and_CC a_DT test_NN set_VBN ._. For_IN each_DT
+          iteration_NN and_CC for_IN each_DT number_NN of_IN clusters_NNS 
+          k_NN ,_, a_DT clustering_VBG (_( ·_NN ;_: 
+          b_SYM )_) of_IN the_DT learning_VBG set_VBN 
+          b_SYM is_VBZ obtained_VBN and_CC a_DT predictor_NN 
+          C_NNP (_( ·_NN ;_: 
+          b_SYM )_) is_VBZ built_VBN using_VBG the_DT class_NN labels_NNS
+          from_IN the_DT clustering_VBG ._. The_DT predictor_NN 
+          C_NNP (_( ·_NN ;_: 
+          b_SYM )_) is_VBZ then_RB applied_VBN to_TO the_DT test_NN set_VBN
+          and_CC the_DT predicted_VBD labels_NNS are_VBP compared_VBN to_TO those_DT produced_VBN
+          by_IN applying_VBG the_DT clustering_VBG procedure_NN to_TO the_DT test_NN set_VBD ,_,
+          using_VBG one_CD of_IN the_DT external_JJ indices_NNS (_( or_CC similarity_NN
+          statistics_NNS )_) described_VBD in_IN the_DT Background_NNP section_NN ._. The_DT
+          number_NN of_IN clusters_NNS is_VBZ estimated_VBN by_IN comparing_VBG the_DT observed_VBN
+          similarity_NN statistic_NN for_IN each_DT 
+          k_NN to_TO its_PRP$ expected_VBN value_NN under_IN a_DT
+          suitable_JJ null_NN distribution_NN with_IN 
+          K_NNP =_SYM 1_CD ._. The_DT estimated_VBN number_NN of_IN
+          clusters_NNS is_VBZ defined_VBN to_TO be_VB the_DT corresponding_JJ to_TO the_DT
+          largest_JJS significant_JJ evidence_NN against_IN the_DT null_NN hypothesis_NNS
+          of_IN 
+          K_NNP =_SYM 1_CD ._.
+          An_DT early_JJ version_NN of_IN this_DT approach_NN was_VBD introduced_VBN by_IN
+          Breckenridge_NNP [_NN 28_CD ]_NN under_IN the_DT name_NN of_IN replication_NN analysis_NN
+          and_CC was_VBD designed_VBN to_TO evaluate_VB the_DT stability_NN of_IN a_DT
+          clustering_VBG ._. In_IN the_DT original_JJ replication_NN analysis_NN ,_, the_DT
+          number_NN of_IN clusters_NNS 
+          k_NN is_VBZ fixed_VBN ,_, and_CC the_DT data_NNS are_VBP
+          randomly_RB divided_VBN into_IN two_CD samples_NNS ._. A_DT clustering_VBG procedure_NN
+          partitions_NNS both_DT samples_NNS into_IN 
+          k_NN clusters_NNS ,_, and_CC the_DT centroids_NNS of_IN
+          the_DT clusters_NNS of_IN the_DT first_JJ sample_NN are_VBP computed_JJ ._. A_DT second_RB
+          set_NN of_IN labels_NNS is_VBZ assigned_VBN to_TO the_DT observations_NNS in_IN the_DT
+          second_JJ sample_NN by_IN assigning_VBG to_TO each_DT observation_NN the_DT
+          cluster_NN label_NN of_IN the_DT closest_JJS centroid_NN from_IN the_DT first_JJ
+          sample_NN ._. Finally_RB ,_, an_DT external_JJ index_NN is_VBZ used_VBN to_TO assess_VB the_DT
+          agreement_NN between_IN the_DT two_CD partitions_NNS of_IN the_DT second_JJ
+          sample_NN ._. This_DT measure_NN reflects_VBZ the_DT stability_NN of_IN the_DT
+          clustering_VBG structure_NN ._. The_DT Clest_NNP procedure_NN proposed_VBN here_RB
+          generalizes_NNS the_DT work_NN of_IN Breckenridge_NNP [_NN 28_CD ]_NN ._.
+        
+        
+          Clest_NNP procedure_NN for_IN estimating_VBG the_DT number_NN of_IN
+          clusters_NNS in_IN a_DT dataset_NN
+          Denote_NNP the_DT maximum_NN possible_JJ number_NN of_IN clusters_NNS by_IN 
+          M_NNP ,_, 2_CD ≤_NN 
+          M_NNP ≤_NN 
+          n_NN ._. For_IN each_DT number_NN of_IN clusters_NNS 
+          k_NN ,_, 2_CD ≤_NN 
+          k_NN ≤_NN 
+          M_NNP ,_, perform_VB steps_NNS 1_CD -_: 4_CD ._.
+          1_LS ._. Repeat_NN the_DT following_VBG 
+          B_NNP times_NNS :_:
+          (_( a_DT )_) Randomly_NNP split_NN the_DT original_JJ learning_NN set_VBN into_IN two_CD
+          non-overlapping_JJ sets_NNS ,_, a_DT learning_VBG set_VBN 
+          b_SYM and_CC a_DT test_NN set_VBN ._.
+          (_( b_SYM )_) Apply_NNP a_DT clustering_VBG procedure_NN to_TO the_DT learning_VBG set_VBN 
+          b_SYM to_TO obtain_VB a_DT partition_NN (_( ·_NN ;_: 
+          b_SYM )_) ._.
+          (_( c_SYM )_) Build_NNP a_DT classifier_NN 
+          C_NNP (_( ·_NN ;_: 
+          b_SYM )_) using_VBG the_DT learning_NN set_VBN 
+          b_SYM and_CC its_PRP$ cluster_NN labels_NNS ._.
+          (_( d_SYM )_) Apply_NNP the_DT resulting_VBG classifier_NN to_TO the_DT test_NN set_VBN
+          ._.
+          (_( e_SYM )_) Apply_NNP the_DT clustering_VBG procedure_NN to_TO the_DT test_NN set_VBN to_TO
+          obtain_VB a_DT partition_NN (_( ·_NN ;_: )_) ._.
+          (_( f_SYM )_) Compute_NNP an_DT external_JJ index_NN 
+          s_VBZ 
+          
+            k_NN ,_, b_SYM 
+           comparing_VBG the_DT two_CD sets_NNS of_IN labels_NNS for_IN ,_, namely_RB the_DT
+          labels_NNS obtained_VBN by_IN clustering_VBG and_CC prediction_NN ._.
+          2_LS ._. Let_VB 
+          t_NN 
+          
+            k_NN 
+           =_SYM median_JJ (_( 
+          s_VBZ 
+          
+          k_NN ,_, 1_CD ,_, ._. ._. ._. ,_, 
+          s_VBZ 
+          
+            k_NN ,_, B_NNP 
+           )_) denote_NN the_DT observed_VBN similarity_NN statistic_NN for_IN the_DT 
+          k_NN -_: cluster_NN partition_NN of_IN the_DT
+          data_NNS ._.
+          3_LS ._. Generate_NNP 
+          B_NNP 
+          0_CD datasets_NNS under_IN a_DT suitable_JJ null_NN
+          hypothesis_NNS ._. For_IN each_DT reference_NN dataset_NN ,_, repeat_NN the_DT
+          procedure_NN described_VBD in_IN steps_NNS 1_CD and_CC 2_CD above_IN ,_, to_TO obtain_VB 
+          B_NNP 
+          0_CD similarity_NN statistics_NNS 
+          t_NN 
+          
+          k_NN ,_, 1_CD ,_, ._. ._. ._. ,_, 
+          t_NN 
+          
+          k_NN ,_, 
+          Bo_NNP  ._.
+          4_LS ._. Let_VB denote_NN the_DT average_NN of_IN these_DT 
+          B_NNP 
+          0_CD statistics_NNS ,_, ,_, and_CC let_VB 
+          p_NN 
+          
+            k_NN 
+           denote_NN the_DT proportion_NN of_IN the_DT 
+          t_NN 
+          
+          k_NN ,_, 
+          b_SYM  ,_, 1_CD ≤_NN 
+          b_SYM ≤_NN 
+          B_NNP 
+          0_CD ,_, that_WDT are_VBP at_IN least_JJS as_RB large_JJ as_IN the_DT
+          observed_VBN statistic_NN 
+          t_NN 
+          
+            k_NN 
+           ,_, that_WDT is_VBZ ,_, the_DT 
+          p_NN -_: value_NN for_IN 
+          t_NN 
+          
+            k_NN 
+           ._. Finally_RB ,_, let_VB 
+          d_SYM 
+          
+            k_NN 
+           =_SYM 
+          t_NN 
+          
+            k_NN 
+           -_: denote_NN the_DT difference_NN between_IN the_DT observed_VBN
+          similarity_NN statistic_NN and_CC its_PRP$ estimated_VBN expected_VBN value_NN
+          under_IN the_DT null_NN hypothesis_NNS of_IN 
+          K_NNP =_SYM 1_CD ._.
+          Define_NNP the_DT set_VBN 
+          K_NNP as_IN
+          
+          K_NNP -_: =_SYM {_( 2_CD ≤_NN 
+          k_NN ≤_NN 
+          M_NNP :_: 
+          p_NN 
+          
+            k_NN 
+           ≤_NN 
+          p_NN 
+          
+            max_NN 
+           ,_, 
+          d_SYM 
+          
+            k_NN 
+           ≥_NN 
+          d_SYM 
+          
+            min_NN 
+           }_) ,_,
+          where_WRB 
+          p_NN 
+          
+            max_NN 
+           and_CC 
+          d_SYM 
+          
+            min_NN 
+           are_VBP preset_JJ thresholds_NNS (_( see_VB Parameters_NNP of_IN the_DT Clest_NNP
+          procedure_NN section_NN below_IN )_) ._. If_IN this_DT set_JJ is_VBZ empty_JJ ,_, estimate_NN
+          the_DT number_NN of_IN clusters_NNS as_IN =_SYM 1_CD ._. Otherwise_RB ,_, let_VB =_SYM argmax_NN 
+          
+            k_NN 
+           
+          
+            K_NNP 
+           -_: 
+          d_SYM 
+          
+            k_NN 
+           ,_, that_WDT is_VBZ ,_, take_VBP the_DT number_NN of_IN clusters_NNS that_IN
+          corresponds_NNS to_TO the_DT largest_JJS significant_JJ difference_NN
+          statistic_NN 
+          d_SYM 
+          
+            k_NN 
+           ._.
+        
+        
+          Parameters_NNP of_IN the_DT Clest_NNP procedure_NN
+          
+            Clustering_NNP procedure_NN :_: partitioning_VBG around_IN medoids_NNS
+            (_( PAM_NNP )_)
+            The_DT PAM_NNP clustering_VBG procedure_NN of_IN Kaufman_NNP and_CC
+            Rousseeuw_NNP [_NN 16_CD ]_NN ,_, implemented_VBN in_IN the_DT cluster_NN package_NN in_IN
+            R_NN and_CC S-P_NNP lus_JJ ,_, was_VBD used_VBN to_TO cluster_NN observations_NNS based_VBN on_IN
+            the_DT Euclidean_NNP distance_NN metric_JJ (_( see_VB Background_NNP )_) ._.
+          
+          
+            Classifier_NNP :_: diagonal_NN linear_JJ discriminant_NN analysis_NN
+            (_( DLDA_NNP )_)
+            For_IN multivariate_NN Gaussian_NNP class_NN conditional_JJ
+            densities_NNS ,_, that_WDT is_VBZ ,_, for_IN 
+            x_SYM |_NN 
+            y_NN =_SYM 
+            k_NN ~_NN N_NNP (_( 
+            
+              k_NN 
+             ,_, Σ_NN 
+            
+              k_NN 
+             )_) ,_, the_DT maximum_NN likelihood_NN (_( ML_NNP )_) discriminant_NN rule_NN
+            (_( or_CC Bayes_NNP rule_NN with_IN uniform_NN class_NN priors_NNS )_) predicts_VBZ the_DT
+            class_NN of_IN an_DT observation_NN 
+            x_SYM by_IN that_DT which_WDT gives_VBZ the_DT largest_JJS
+            likelihood_NN to_TO 
+            x_SYM ,_, that_DT is_VBZ ,_,
+            
+            When_WRB the_DT class_NN densities_NNS have_VBP the_DT same_JJ diagonal_NN
+            covariance_NN matrix_NN ,_, the_DT discriminant_NN rule_NN is_VBZ linear_JJ and_CC
+            given_VBN by_IN
+            
+            For_IN the_DT corresponding_JJ sample_NN ML_NNP discriminant_NN rules_NNS ,_,
+            the_DT population_NN mean_NN vectors_NNS and_CC covariance_NN matrices_NNS are_VBP
+            estimated_VBN from_IN a_DT learning_VBG set_VBN by_IN the_DT sample_NN mean_NN
+            vectors_NNS and_CC covariance_NN matrices_NNS ,_, respectively_RB :_: and_CC ._.
+            For_IN the_DT constant_JJ covariance_NN matrix_NN case_NN ,_, the_DT pooled_VBN
+            estimate_NN of_IN the_DT common_JJ covariance_NN matrix_NN is_VBZ used_VBN :_: ,_,
+            where_WRB 
+            n_NN 
+            
+              k_NN 
+             denotes_NNS the_DT number_NN of_IN observations_NNS in_IN class_NN 
+            k_NN and_CC 
+            n_NN is_VBZ the_DT total_JJ sample_NN size_NN ._. DLDA_NNP
+            is_VBZ a_DT very_RB simple_JJ classifier_NN but_CC it_PRP has_VBZ been_VBN shown_VBN to_TO
+            perform_VB well_RB in_IN complex_JJ situations_NNS ,_, in_IN particular_JJ ,_, in_IN
+            an_DT extensive_JJ study_NN of_IN discrimination_NN methods_NNS for_IN the_DT
+            classification_NN of_IN tumors_NNS using_VBG gene-expression_JJ data_NNS [_NN
+            29_CD ]_NN ._. DLDA_NNP is_VBZ also_RB known_VBN as_IN naive_JJ Bayes_NNP
+            classification_NN ._.
+          
+          
+            Reference_NNP null_NN distribution_NN
+            The_DT reference_NN datasets_NNS are_VBP generated_VBN under_IN the_DT
+            uniformity_NN hypothesis_NNS as_IN in_IN the_DT gap_NN statistic_NN method_NN
+            (_( see_VB Background_NNP )_) ._.
+          
+          
+            External_NNP index_NN
+            All_DT the_DT external_JJ indices_NNS described_VBD in_IN Background_NNP
+            were_VBD considered_VBN ._. The_DT FM_NNP index_NN [_NN 27_CD ]_NN was_VBD found_VBN to_TO be_VB
+            superior_JJ to_TO the_DT other_JJ indices_NNS when_WRB reference_NN datasets_NNS
+            are_VBP generated_VBN under_IN the_DT uniformity_NN hypothesis_NNS (_( data_NNS not_RB
+            shown_VBN )_) ._.
+          
+          
+            Threshold_NNP parameters_NNS ,_, p_NN maxand_NN d_SYM min_NN
+            The_DT choices_NNS 
+            p_NN 
+            
+              max_NN 
+             =_SYM 0_CD ._. 05_CD and_CC 
+            d_SYM 
+            
+              min_NN 
+             =_SYM 0_CD ._. 05_CD are_VBP 
+            ad_NN hoc_FW and_CC can_MD probably_RB be_VB
+            improved_VBN upon_IN ._. Nevertheless_RB ,_, this_DT rule_NN gives_VBZ a_DT
+            satisfactory_JJ performance_NN and_CC is_VBZ used_VBN in_IN the_DT absence_NN of_IN
+            a_DT better_JJR choice_NN ._.
+          
+          
+            Number_NNP of_IN iterations_NNS and_CC reference_NN
+            datasets_NNS
+            Here_RB we_PRP used_VBD 
+            B_NN =_SYM 
+            B_NNP 
+            0_CD =_SYM 20_CD ._. In_IN general_JJ ,_, the_DT Clest_NNP
+            procedure_NN is_VBZ robust_JJ to_TO the_DT choice_NN of_IN 
+            B_NN and_CC 
+            B_NNP 
+            0_CD (_( data_NNS not_RB shown_VBN )_) ._.
+          
+        
+        
+          Comparison_NNP of_IN procedures_NNS on_IN simulated_JJ data_NNS
+          The_DT new_JJ procedure_NN Clest_NNP was_VBD compared_VBN to_TO six_CD existing_VBG
+          methods_NNS presented_VBN in_IN Background_NNP using_VBG data_NNS simulated_JJ from_IN
+          the_DT models_NNS described_VBD in_IN Materials_NNPS and_CC methods_NNS ._. Figure_NN
+          1_CD displays_NNS bar_NN plots_NNS for_IN the_DT percentage_NN of_IN simulations_NNS for_IN
+          which_WDT a_DT given_VBN method_NN correctly_RB recovered_VBD the_DT number_NN of_IN
+          clusters_NNS for_IN each_DT of_IN the_DT eight_CD models_NNS ._. Table_NNP 3_CD provides_VBZ a_DT
+          more_RBR detailed_JJ account_NN of_IN the_DT simulation_NN results_NNS for_IN each_DT
+          procedure_NN ._. It_PRP can_MD be_VB seen_VBN that_IN Clest_NNP gave_VBD uniformly_RB good_JJ
+          results_NNS over_IN the_DT range_NN of_IN models_NNS ,_, its_PRP$ worst_JJS performance_NN
+          being_VBG for_IN Model_NNP 7_CD with_IN two_CD overlapping_VBG clusters_NNS ._. The_DT rest_NN
+          of_IN the_DT methods_NNS failed_VBD for_IN at_IN least_JJS one_CD of_IN the_DT eight_CD
+          models_NNS considered_VBN ._. The_DT gap_NN procedure_NN failed_VBD twice_RB (_( Models_NNP
+          5_CD and_CC 6_CD )_) and_CC gapPC_NN failed_VBD once_RB (_( Model_NNP 6_CD )_) ._. Neither_DT gap_NN nor_CC
+          gapPC_NN were_VBD able_JJ to_TO identify_VB the_DT presence_NN of_IN the_DT two_CD
+          clusters_NNS for_IN Model_NNP 6_CD ,_, which_WDT is_VBZ a_DT model_NN with_IN two_CD drawn-out_JJ
+          clusters_NNS and_CC seven_CD noise_NN variables_NNS with_IN varying_VBG
+          variances_NNS ._. Both_DT gap_NN and_CC gapPC_NN consistently_RB estimated_VBD one_CD
+          cluster_NN for_IN this_DT model_NN ,_, perhaps_RB because_IN both_DT methods_NNS are_VBP
+          based_VBN on_IN the_DT within-clusters_JJ sums_NNS of_IN squares_NNS and_CC
+          consequently_RB are_VBP more_RBR affected_JJ by_IN the_DT variables_NNS with_IN
+          larger_JJR variances_NNS ._. In_IN a_DT majority_NN of_IN the_DT simulations_NNS from_IN
+          Model_NNP 7_CD ,_, Clest_NNP ,_, gap_NN ,_, and_CC gapPC_NN failed_VBD to_TO distinguish_VB
+          between_IN one_CD and_CC two_CD clusters_NNS ,_, while_IN the_DT simple_JJ hart_NN index_NN
+          performed_VBN well_RB ._. The_DT rest_NN of_IN the_DT procedures_NNS do_VBP not_RB have_VB ,_,
+          by_IN definition_NN ,_, the_DT ability_NN to_TO estimate_VB one_CD cluster_NN and_CC
+          hence_RB generally_RB identified_VBD the_DT two_CD clusters_NNS ._.
+          Interestingly_RB ,_, for_IN Model_NNP 8_CD with_IN three_CD overlapping_VBG
+          clusters_NNS ,_, sil_NN and_CC ch_NN performed_VBN poorly_RB ,_, choosing_VBG two_CD
+          clusters_NNS in_IN a_DT majority_NN of_IN the_DT simulations_NNS ,_, while_IN hart_NN and_CC
+          Clest_NNP showed_VBD the_DT best_JJS performance_NN ._. Overall_RB ,_, most_JJS methods_NNS
+          tended_VBD to_TO underestimate_NN more_RBR often_RB than_IN they_PRP
+          overestimated_JJ the_DT number_NN of_IN clusters_NNS ,_, but_CC the_DT situation_NN
+          was_VBD reversed_VBN for_IN hart_NN and_CC kl_NN ._. For_IN Model_NNP 1_CD it_PRP is_VBZ only_RB fair_JJ
+          to_TO compare_VB Clest_NNP gap_NN ,_, gapPC_NN ,_, and_CC hart_NN ,_, as_IN the_DT other_JJ
+          methods_NNS only_RB estimate_VBP ≥_NN 2_CD ._.
+          In_IN summary_NN ,_, for_IN the_DT simulation_NN models_NNS considered_VBN here_RB ,_,
+          Clest_NNP was_VBD the_DT most_RBS robust_JJ and_CC accurate_JJ ,_, whereas_IN hart_NN
+          performed_VBN worst_JJS ._. gapPC_NN was_VBD better_JJR than_IN gap_NN and_CC the_DT rest_NN
+          of_IN the_DT methods_NNS performed_VBN similarly_RB ._.
+          For_IN a_DT given_VBN model_NN ,_, it_PRP is_VBZ of_IN interest_NN to_TO consider_VB the_DT
+          median_JJ value_NN of_IN the_DT statistics_NNS used_VBN by_IN each_DT method_NN to_TO
+          estimate_VB the_DT number_NN of_IN clusters_NNS ._. For_IN each_DT number_NN of_IN
+          clusters_NNS 
+          k_NN ,_, the_DT plots_NNS of_IN the_DT median_JJ values_NNS ,_,
+          over_IN the_DT 50_CD simulated_JJ datasets_NNS ,_, of_IN the_DT Clest_NNP 
+          d_SYM 
+          k_NN  -_: statistic_NN ,_, 
+          gapPC_NN 
+          k_NN  ,_, and_CC 
+          
+            k_NN 
+           statistics_NNS are_VBP shown_VBN in_IN Figures_NNS 2_CD ,_, 3_CD and_CC 4_CD ,_,
+          respectively_RB ._. The_DT 
+          d_SYM -_: statistic_NN does_VBZ not_RB generally_RB
+          have_VB local_JJ maxima_NN except_IN for_IN Model_NNP 5_CD ._. There_RB ,_, a_DT local_JJ
+          maximum_NN appears_VBZ at_IN 
+          K_NNP =_SYM 4_CD clusters_NNS ,_, but_CC the_DT global_JJ
+          maximum_NN occurs_VBZ at_IN 
+          K_NNP =_SYM 2_CD ._. It_PRP can_MD be_VB seen_VBN that_IN the_DT
+          ability_NN of_IN Clest_NNP to_TO distinguish_VB between_IN one_CD and_CC two_CD
+          clusters_NNS is_VBZ very_RB low_JJ for_IN Model_NNP 7_CD ;_: the_DT median_NN of_IN the_DT 
+          d_SYM 
+          2_CD values_NNS is_VBZ less_JJR than_IN the_DT significance_NN
+          cut-off_JJ 
+          d_SYM 
+          
+            min_NN 
+           used_VBN in_IN the_DT Clest_NNP procedure_NN ._. Indeed_RB ,_, the_DT results_NNS in_IN
+          Table_NNP 3_CD show_NN that_IN Clest_NNP identified_VBD two_CD clusters_NNS for_IN only_RB
+          30_CD %_NN of_IN the_DT datasets_NNS simulated_JJ from_IN Model_NNP 7_CD ._. The_DT figures_NNS
+          suggest_VBP that_IN for_IN the_DT majority_NN of_IN the_DT models_NNS ,_, the_DT global_JJ
+          maximum_NN of_IN the_DT median_JJ 
+          d_SYM -_: statistic_NN is_VBZ more_RBR pronounced_JJ
+          than_IN the_DT global_JJ maxima_NN of_IN the_DT median_JJ 
+          gapPC_NN 
+          k_NN  and_CC 
+          
+            k_NN 
+           statistics_NNS ,_, respectively_RB ._. This_DT again_RB suggests_VBZ good_JJ
+          robustness_NNS and_CC accuracy_NN properties_NNS for_IN the_DT Clest_NNP
+          method_NN ._.
+        
+        
+          Comparison_NNP of_IN procedures_NNS on_IN microarray_NN data_NNS
+          The_DT new_JJ Clest_NNP method_NN was_VBD also_RB evaluated_VBN using_VBG
+          gene-expression_JJ data_NNS from_IN the_DT four_CD cancer_NN microarray_NN
+          studies_NNS described_VBD in_IN Materials_NNPS and_CC methods_NNS and_CC summarized_VBD
+          in_IN Table_NNP 4_CD ._. Recall_VB that_IN mRNA_NN samples_NNS in_IN the_DT lymphoma_NN ,_,
+          leukemia_NN ,_, and_CC NCI_NNP 60_CD datasets_NNS were_VBD assigned_VBN class_NN labels_NNS
+          from_IN the_DT laboratory_NN analyses_NNS of_IN the_DT tumor_NN samples_NNS or_CC from_IN
+          
+          a_DT priori_FW knowledge_NN of_IN the_DT cell_NN
+          lines_NNS ._. For_IN the_DT melanoma_NN dataset_NN ,_, tumor_NN class_NN labels_NNS were_VBD
+          obtained_VBN from_IN the_DT statistical_JJ analysis_NN described_VBD in_IN
+          Bittner_NNP 
+          et_CC al_NN ._. [_NN 30_CD ]_NN ._. In_IN the_DT discussion_NN
+          that_WDT follows_VBZ ,_, these_DT class_NN labels_NNS are_VBP treated_VBN as_IN known_VBN ._.
+          The_DT six_CD methods_NNS described_VBD in_IN Background_NNP and_CC Clest_NNP were_VBD
+          applied_VBN to_TO estimate_VB the_DT number_NN of_IN clusters_NNS for_IN each_DT of_IN
+          the_DT four_CD microarray_NN datasets_NNS ;_: the_DT results_NNS are_VBP presented_VBN
+          in_IN Table_NNP 5_CD ._.
+          The_DT methods_NNS Clest_NNP and_CC sil_NN correctly_RB estimated_VBD the_DT
+          presumed_VBN number_NN of_IN classes_NNS for_IN all_DT but_CC the_DT NCI_NNP 60_CD dataset_NN ,_,
+          where_WRB both_DT methods_NNS identified_VBD three_CD clusters_NNS only_RB ._. The_DT
+          gap_NN and_CC gapPC_NN methods_NNS overestimated_JJ the_DT number_NN of_IN
+          clusters_NNS for_IN all_DT datasets_NNS ,_, with_IN the_DT exception_NN of_IN gapPC_NN ,_,
+          which_WDT identified_VBD eight_CD clusters_NNS for_IN the_DT NCI_NNP 60_CD dataset_NN ._.
+          The_DT ch_NN method_NN estimated_VBD two_CD clusters_NNS for_IN each_DT of_IN the_DT four_CD
+          datasets_NNS ,_, whereas_IN kl_NN and_CC hart_NN identified_VBD four_CD classes_NNS for_IN
+          the_DT lymphoma_NN dataset_NN ._.
+          For_IN Clest_NNP ,_, gapPC_NN ,_, and_CC sil_NN ,_, we_PRP further_RBR investigated_VBN how_WRB
+          the_DT strength_NN of_IN the_DT evidence_NN for_IN the_DT estimated_VBN number_NN of_IN
+          clusters_NNS varied_VBD between_IN datasets_NNS ._. Figure_NN 5_CD displays_NNS plots_NNS
+          of_IN the_DT 
+          d_SYM 
+          
+            k_NN 
+           ,_, 
+          gapPC_NN 
+          
+            k_NN 
+           ,_, and_CC 
+          
+            k_NN 
+           statistics_NNS versus_CC the_DT number_NN of_IN clusters_NNS 
+          k_NN ._. Error_NNP bars_NNS for_IN 
+          d_SYM 
+          
+            k_NN 
+           and_CC 
+          gapPC_NN 
+          
+            k_NN 
+           are_VBP based_VBN on_IN the_DT standard_JJ deviations_NNS of_IN 
+          t_NN 
+          
+            k_NN 
+           and_CC log_VB tr_NN 
+          W_NNP 
+          
+            k_NN 
+           under_IN their_PRP$ respective_JJ null_NN distributions_NNS ._. Whereas_IN
+          the_DT evidence_NN for_IN the_DT existence_NN of_IN clusters_NNS is_VBZ very_RB strong_JJ
+          for_IN the_DT lymphoma_NN ,_, leukemia_NN ,_, and_CC NCI_NNP 60_CD datasets_NNS ,_, the_DT
+          evidence_NN for_IN the_DT two_CD clusters_NNS in_IN the_DT melanoma_NN dataset_NN is_VBZ
+          much_RB weaker_JJR ._. In_IN particular_JJ ,_, for_IN Clest_NNP ,_, the_DT maximum_NN value_NN
+          of_IN the_DT 
+          d_SYM 
+          
+            k_NN 
+           statistic_NN barely_RB reaches_VBZ the_DT 
+          d_SYM 
+          
+            min_NN 
+           threshold_NN of_IN 0_CD ._. 05_CD ._. For_IN the_DT leukemia_NN dataset_NN ,_, the_DT 
+          d_SYM 
+          
+            k_NN 
+           statistic_NN clearly_RB peaks_NNS at_IN 
+          k_NN =_SYM 3_CD clusters_NNS and_CC drops_NNS off_RP
+          abruptly_RB ;_: for_IN the_DT lymphoma_NN and_CC NCI_NNP 60_CD datasets_NNS the_DT
+          decrease_NN is_VBZ more_RBR gradual_JJ ._. Note_VB that_IN according_VBG to_TO Clest_NNP
+          there_EX was_VBD not_RB enough_JJ evidence_NN to_TO identify_VB the_DT two_CD DLBCL_NNP
+          subclasses_NNS for_IN the_DT lymphoma_NN dataset_NN ._. Alizadeh_NNP 
+          et_CC al_NN ._. [_NN 1_CD ]_NN identified_VBD these_DT
+          subclasses_NNS using_VBG subject_JJ matter_NN knowledge_NN to_TO select_VB the_DT
+          genes_NNS for_IN the_DT clustering_VBG procedure_NN ;_: here_RB the_DT genes_NNS were_VBD
+          selected_VBN in_IN an_DT unsupervised_JJ manner_NN ._.
+        
+      
+      
+        Discussion_NNP
+        Resampling_NNP methods_NNS such_JJ as_IN bagging_VBG and_CC boosting_VBG have_VBP
+        been_VBN applied_VBN successfully_RB in_IN a_DT supervised_JJ learning_NN context_NN
+        to_TO improve_VB prediction_NN accuracy_NN ._. Here_RB and_CC in_IN a_DT related_VBN
+        article_NN [_NN 7_CD ]_NN ,_, we_PRP have_VBP proposed_VBN resampling_VBG methods_NNS to_TO
+        address_VB two_CD main_JJ problems_NNS in_IN cluster_NN analysis_NN :_: estimating_VBG
+        the_DT number_NN of_IN clusters_NNS ,_, if_IN any_DT ,_, in_IN a_DT dataset_NN ;_: improving_VBG and_CC
+        assessing_VBG the_DT accuracy_NN of_IN a_DT given_VBN clustering_VBG procedure_NN ._. As_IN
+        the_DT groups_NNS obtained_VBN from_IN cluster_NN analysis_NN are_VBP often_RB used_VBN
+        later_RB on_IN for_IN prediction_NN purposes_NNS ,_, the_DT approaches_NNS to_TO these_DT
+        two_CD problems_NNS rely_VBP on_IN and_CC extend_VB ideas_NNS from_IN supervised_JJ
+        learning_NN ._. Although_IN the_DT methods_NNS are_VBP applicable_JJ to_TO general_JJ
+        clustering_VBG problems_NNS and_CC procedures_NNS ,_, particular_JJ attention_NN is_VBZ
+        given_VBN to_TO the_DT clustering_VBG of_IN tumors_NNS using_VBG gene-expression_JJ
+        data_NNS ._. The_DT performance_NN of_IN the_DT proposed_VBN and_CC existing_VBG methods_NNS
+        was_VBD compared_VBN using_VBG simulated_JJ data_NNS and_CC gene-expression_JJ data_NNS
+        from_IN four_CD recently_RB published_VBN cancer_NN microarray_NN studies_NNS ._.
+        To_TO estimate_VB the_DT number_NN of_IN clusters_NNS in_IN a_DT dataset_NN ,_, we_PRP
+        propose_VBP a_DT prediction-based_JJ resampling_VBG method_NN ,_, Clest_NNP ,_, which_WDT
+        estimates_VBZ the_DT number_NN of_IN clusters_NNS 
+        K_NNP based_VBN on_IN the_DT reproducibility_NN of_IN
+        cluster_NN assignments_NNS ._. In_IN comparative_JJ studies_NNS ,_, Clest_NNP was_VBD
+        generally_RB found_VBN to_TO be_VB more_RBR accurate_JJ and_CC robust_JJ than_IN six_CD
+        existing_VBG methods_NNS ._. For_IN the_DT simulated_JJ datasets_NNS ,_, Clest_NNP
+        performed_VBD well_RB across_IN a_DT wide_JJ range_NN of_IN models_NNS with_IN varying_VBG
+        numbers_NNS of_IN overlapping_VBG and_CC non-overlapping_JJ clusters_NNS ,_,
+        different_JJ numbers_NNS of_IN variables_NNS and_CC covariance_NN matrix_NN
+        structures_NNS ._. Unlike_IN methods_NNS based_VBN on_IN between-_NN or_CC
+        within-clusters_JJ sums_NNS of_IN squares_NNS ,_, the_DT resampling_VBG method_NN
+        seems_VBZ robust_JJ to_TO the_DT varying_VBG covariance_NN structure_NN of_IN the_DT
+        variables_NNS ._.
+        For_IN the_DT microarray_NN datasets_NNS ,_, Clest_NNP and_CC sil_NN correctly_RB
+        estimated_VBD the_DT number_NN of_IN tumor_NN or_CC cell-line_JJ clusters_NNS (_( as_IN
+        determined_VBN from_IN 
+        a_DT priori_FW known_VBN or_CC putative_JJ tumor_NN and_CC
+        cell-line_JJ classes_NNS )_) for_IN three_CD out_IN of_IN the_DT four_CD datasets_NNS ;_: the_DT
+        performance_NN of_IN other_JJ methods_NNS was_VBD significantly_RB worse_JJR ._. We_PRP
+        focus_VBP here_RB on_IN the_DT clustering_VBG of_IN tumor_NN mRNA_NN samples_NNS using_VBG
+        gene-expression_JJ data_NNS ._. Once_RB tumor_NN classes_NNS are_VBP specified_VBN ,_, an_DT
+        important_JJ next_JJ step_NN would_MD be_VB the_DT identification_NN of_IN marker_NN
+        genes_NNS that_WDT characterize_VBP these_DT different_JJ tumor_NN classes_NNS ._. A_DT
+        related_VBN question_NN ,_, which_WDT we_PRP have_VBP not_RB considered_VBN here_RB ,_, is_VBZ the_NNP
+        '_POS transpose_NN '_'' clustering_VBG problem_NN ;_: that_DT is_VBZ ,_, the_DT clustering_VBG of_IN
+        genes_NNS that_WDT have_VBP similar_JJ expression_NN levels_NNS across_IN biological_JJ
+        samples_NNS ._. One_PRP could_MD then_RB investigate_VB the_DT clusters_NNS for_IN the_DT
+        presence_NN of_IN shared_VBN regulatory_JJ motifs_NNS among_IN the_DT genes_NNS [_NN 31_CD ]_NN ._.
+        This_DT could_MD lead_VB to_TO the_DT identification_NN of_IN genes_NNS that_WDT are_VBP not_RB
+        only_RB coexpressed_JJ but_CC are_VBP also_RB under_IN similar_JJ regulatory_JJ
+        control_NN ._. Joint_NNP analysis_NN of_IN transcript_NN level_NN and_CC sequence_NN
+        data_NNS should_MD lead_VB to_TO greater_JJR biological_JJ insight_NN into_IN the_DT
+        molecular_JJ characterization_NN of_IN tumors_NNS ._.
+        A_DT number_NN of_IN decisions_NNS were_VBD made_VBN regarding_VBG the_DT different_JJ
+        parameters_NNS of_IN the_DT Clest_NNP procedure_NN ._. The_DT clustering_VBG procedure_NN
+        PAM_NNP was_VBD used_VBN in_IN the_DT comparison_NN ;_: however_RB ,_, one_PRP should_MD keep_VB in_IN
+        mind_NN that_IN different_JJ clustering_VBG procedures_NNS can_MD generate_VB
+        different_JJ partitions_NNS of_IN the_DT same_JJ data_NN ,_, possibly_RB leading_VBG to_TO
+        different_JJ inferences_NNS about_IN the_DT number_NN of_IN clusters_NNS ._. In_IN
+        addition_NN ,_, the_DT clustering_VBG (_( PAM_NNP )_) and_CC prediction_NN methods_NNS (_( DLDA_NNP
+        or_CC naive_JJ Bayes_NNP )_) considered_VBN in_IN this_DT article_NN focus_NN on_IN similar_JJ
+        features_NNS of_IN the_DT data_NNS ,_, namely_RB ,_, the_DT distance_NN of_IN the_DT
+        observations_NNS from_IN cluster_NN '_'' centers_NNS '_'' ._. More_JJR work_NN is_VBZ needed_VBN to_TO
+        investigate_VB the_DT robustness_NNS of_IN Clest_NNP to_TO these_DT choices_NNS ._. In_IN
+        particular_JJ ,_, it_PRP would_MD be_VB interesting_JJ to_TO consider_VB prediction_NN
+        and_CC clustering_VBG methods_NNS that_WDT focus_VBP on_IN different_JJ aspects_NNS of_IN
+        the_DT data_NNS (_( for_IN example_NN ,_, classification_NN trees_NNS instead_RB of_IN
+        DLDA_NNP )_) ._. Although_IN it_PRP may_MD seem_VB that_IN having_VBG a_DT classifier_NN as_IN a_DT
+        parameter_NN of_IN the_DT Clest_NNP procedure_NN creates_VBZ more_JJR room_NN for_IN
+        error_NN ,_, we_PRP have_VBP found_VBN that_IN this_DT is_VBZ not_RB the_DT case_NN in_IN practice_NN ._.
+        When_WRB the_DT classifier_NN in_IN Clest_NNP performs_VBZ poorly_RB ,_, other_JJ methods_NNS
+        for_IN estimating_VBG the_DT number_NN of_IN clusters_NNS also_RB perform_VBP poorly_RB ._.
+        Another_DT important_JJ choice_NN in_IN the_DT Clest_NNP procedure_NN is_VBZ the_DT
+        reference_NN null_NN distribution_NN used_VBN to_TO calibrate_NN the_DT observed_VBN
+        similarity_NN statistics_NNS 
+        t_NN 
+        
+          k_NN 
+         for_IN different_JJ numbers_NNS of_IN clusters_NNS ._. The_DT uniformity_NN
+        hypothesis_NNS was_VBD used_VBN here_RB ;_: a_DT natural_JJ alternative_NN would_MD be_VB to_TO
+        consider_VB random_JJ permutations_NNS of_IN the_DT variables_NNS ,_, that_WDT is_VBZ ,_,
+        permutations_NNS of_IN the_DT entries_NNS of_IN the_DT design_NN matrix_NN within_IN
+        columns_NNS ._. In_IN Clest_NNP ,_, the_DT observed_VBN similarity_NN statistics_NNS 
+        t_NN 
+        
+          k_NN 
+         are_VBP compared_VBN across_IN numbers_NNS of_IN clusters_NNS 
+        k_NN by_IN considering_VBG their_PRP$ distance_NN from_IN
+        their_PRP$ estimated_VBN expected_VBN value_NN under_IN the_DT null_NN distribution_NN ._.
+        A_DT more_RBR sensitive_JJ calibration_NN may_MD be_VB achieved_VBN by_IN taking_VBG
+        scale_NN into_IN account_NN ,_, that_WDT is_VBZ ,_, by_IN dividing_VBG the_DT difference_NN
+        statistic_NN 
+        d_SYM 
+        
+          k_NN 
+         by_IN the_DT standard_JJ deviation_NN of_IN 
+        t_NN 
+        
+          k_NN 
+         under_IN the_DT null_NN distribution_NN ,_, or_CC even_RB by_IN considering_VBG 
+        p_NN -_: values_NNS 
+        p_NN 
+        
+          k_NN 
+         for_IN 
+        t_NN 
+        
+          k_NN 
+         ._. We_PRP briefly_NN considered_VBD these_DT refinements_NNS and_CC found_VBD
+        that_IN on_IN their_PRP$ own_JJ they_PRP did_VBD not_RB allow_VB good_JJ discrimination_NN
+        between_IN the_DT different_JJ 
+        k_NN s_VBZ ._. The_DT Clest_NNP method_NN does_VBZ ,_, however_RB ,_,
+        use_NN the_DT idea_NN of_IN 
+        p_NN -_: value_NN in_IN combination_NN with_IN the_DT
+        differences_NNS 
+        d_SYM 
+        
+          k_NN 
+         ,_, as_IN it_PRP imposes_VBZ an_DT upper_JJ limit_NN on_IN the_DT 
+        p_NN -_: value_NN 
+        p_NN 
+        
+          k_NN 
+         ._. Finally_RB ,_, the_DT choice_NN of_IN cut-off_JJ parameters_NNS 
+        d_SYM 
+        
+          min_NN 
+         and_CC 
+        p_NN 
+        
+          max_NN 
+         was_VBD rather_RB 
+        ad_NN hoc_FW and_CC could_MD be_VB fine_NN tuned_VBN ._.
+        We_PRP have_VBP not_RB considered_VBN model-based_JJ methods_NNS ,_, such_JJ as_IN the_DT
+        Bayesian_NNP approach_NN of_IN Fraley_NNP and_CC Raftery_NNP [_NN 11_CD ]_NN or_CC the_DT
+        mixture-model_JJ approach_NN of_IN McLachlan_NNP 
+        et_CC al_NN ._. [_NN 32_CD ]_NN ._. Another_DT issue_NN only_RB
+        briefly_NN addressed_VBN here_RB is_VBZ the_DT selection_NN of_IN variables_NNS on_IN
+        which_WDT to_TO base_VB the_DT clusterings_NNS ._. For_IN the_DT microarray_NN datasets_NNS ,_,
+        genes_NNS were_VBD selected_VBN on_IN the_DT basis_NN of_IN the_DT variance_NN of_IN their_PRP$
+        expression_NN levels_NNS across_IN samples_NNS ,_, and_CC it_PRP was_VBD found_VBN that_IN the_DT
+        clusterings_NNS were_VBD fairly_RB robust_JJ to_TO the_DT number_NN of_IN genes_NNS ._.
+        Resampling_NNP methods_NNS are_VBP promising_JJ tools_NNS for_IN addressing_VBG
+        various_JJ problems_NNS in_IN cluster_NN analysis_NN ._. Ben-_NNP Hur_NNP 
+        et_CC al_NN ._. [_NN 33_CD ]_NN have_VBP recently_RB proposed_VBN a_DT
+        stability-based_JJ method_NN for_IN estimating_VBG the_DT number_NN of_IN
+        clusters_NNS ,_, where_WRB stability_NN is_VBZ characterized_VBN by_IN the_DT
+        distribution_NN of_IN pairwise_NN similarities_NNS between_IN clusterings_NNS
+        obtained_VBN from_IN subsamples_NNS of_IN the_DT data_NNS ._. It_PRP would_MD be_VB
+        interesting_JJ to_TO relate_VB the_DT approach_NN of_IN Ben-_NNP Hur_NNP 
+        et_CC al_NN ._. and_CC Clest_NNP ._. Elsewhere_RB ,_, we_PRP
+        proposed_VBD two_CD bagged_JJ clustering_VBG methods_NNS for_IN improving_VBG and_CC
+        assessing_VBG the_DT accuracy_NN of_IN a_DT given_VBN partitioning_VBG clustering_VBG
+        procedure_NN [_NN 7_CD ]_NN ._. There_RB ,_, the_DT bootstrap_NN is_VBZ used_VBN to_TO generate_VB
+        and_CC aggregate_JJ multiple_JJ clusterings_NNS and_CC to_TO assess_VB the_DT
+        confidence_NN of_IN cluster_NN assignments_NNS for_IN individual_JJ
+        observations_NNS ._. Leisch_NNP [_NN 34_CD ]_NN proposed_VBD a_DT bagged_JJ clustering_VBG
+        method_NN which_WDT is_VBZ a_DT combination_NN of_IN partitioning_VBG and_CC
+        hierarchical_JJ methods_NNS ._. A_DT partitioning_VBG method_NN is_VBZ applied_VBN to_TO
+        bootstrap_NN learning_VBG sets_NNS and_CC the_DT resulting_VBG partitions_NNS are_VBP
+        combined_VBN by_IN performing_VBG hierarchical_JJ clustering_VBG of_IN the_DT
+        cluster_NN centers_NNS ._. This_DT method_NN is_VBZ similar_JJ in_IN spirit_NN to_TO our_PRP$
+        two_CD new_JJ bagging_VBG procedures_NNS [_NN 7_CD ]_NN ._.
+      
+      
+        Conclusions_NNP
+        Focusing_VBG on_IN prediction_NN accuracy_NN in_IN conjunction_NN with_IN
+        resampling_VBG produces_VBZ accurate_JJ and_CC robust_JJ estimates_NNS of_IN the_DT
+        number_NN of_IN clusters_NNS ._. As_IN reproducibility_NN of_IN the_DT cluster_NN
+        assignments_NNS is_VBZ an_DT integral_JJ part_NN of_IN the_DT Clest_NNP method_NN ,_, the_DT
+        clustering_VBG results_NNS can_MD be_VB used_VBN reliably_RB for_IN building_VBG a_DT
+        classifier_NN to_TO predict_VB the_DT class_NN of_IN future_JJ observations_NNS ._. In_IN
+        addition_NN ,_, the_DT procedure_NN is_VBZ robust_JJ to_TO the_DT covariance_NN
+        structure_NN among_IN variables_NNS ._.
+      
+      
+        Materials_NNS and_CC methods_NNS
+        
+          Simulation_NN models_NNS
+          Procedures_NNP for_IN estimating_VBG the_DT number_NN of_IN clusters_NNS in_IN a_DT
+          dataset_NN were_VBD evaluated_VBN using_VBG simulated_JJ data_NNS from_IN a_DT
+          variety_NN of_IN models_NNS ,_, including_VBG those_DT considered_VBN by_IN
+          Tibshirani_NNP 
+          et_CC al_NN ._. [_NN 24_CD ]_NN ._. The_DT models_NNS used_VBN for_IN
+          comparison_NN contain_VB different_JJ numbers_NNS of_IN overlapping_VBG and_CC
+          non-overlapping_JJ clusters_NNS ,_, different_JJ numbers_NNS of_IN variables_NNS ,_,
+          and_CC a_DT wide_JJ range_NN of_IN covariance_NN matrix_NN structures_NNS ._. In_IN
+          addition_NN ,_, a_DT variable_JJ number_NN of_IN irrelevant_JJ or_CC '_POS noise_NN '_''
+          variables_NNS are_VBP included_VBN in_IN the_DT models_NNS ._. A_DT noise_NN variable_NN is_VBZ
+          a_DT variable_JJ whose_WP$ distribution_NN does_VBZ not_RB depend_VB on_IN the_DT
+          cluster_NN label_NN ,_, and_CC such_JJ variables_NNS are_VBP added_VBN to_TO obscure_VB
+          the_DT underlying_VBG clustering_VBG structure_NN to_TO be_VB recovered_VBN ._.
+          
+          Model_NNP 1_CD ._. One_CD cluster_NN in_IN 10_CD
+          dimensions_NNS ,_, 
+          n_NN =_SYM 200_CD observations_NNS are_VBP simulated_JJ
+          from_IN the_DT uniform_NN distribution_NN over_IN the_DT unit_NN hypercube_NN in_IN 
+          p_NN =_SYM 10_CD dimensions_NNS ._.
+          
+          Model_NNP 2_CD ._. Three_CD clusters_NNS in_IN two_CD
+          dimensions_NNS ._. The_DT observations_NNS in_IN each_DT of_IN the_DT three_CD
+          clusters_NNS are_VBP independent_JJ bivariate_NN normal_JJ random_JJ
+          variables_NNS with_IN means_VBZ (_( 0_CD ,_, 0_CD )_) ,_, (_( 0_CD ,_, 5_LS )_) ,_, and_CC (_( 5_CD ,_, -_: 3_LS )_) ,_,
+          respectively_RB ,_, and_CC identity_NN covariance_NN matrix_NN ._. There_EX are_VBP
+          25_CD ,_, 25_CD ,_, and_CC 50_CD observations_NNS in_IN each_DT of_IN the_DT 3_CD clusters_NNS ,_,
+          respectively_RB ._.
+          
+          Model_NNP 3_CD ._. Four_CD clusters_NNS in_IN 10_CD
+          dimensions_NNS ,_, 7_CD noise_NN variables_NNS ._. Each_DT cluster_NN is_VBZ randomly_RB
+          chosen_VBN to_TO have_VB 25_CD or_CC 50_CD observations_NNS ,_, and_CC the_DT
+          observations_NNS in_IN a_DT given_VBN cluster_NN are_VBP independently_RB drawn_VBN
+          from_IN a_DT multivariate_NN normal_JJ distribution_NN with_IN identity_NN
+          covariance_NN matrix_NN ._. For_IN each_DT cluster_NN ,_, the_DT cluster_NN means_VBZ
+          for_IN the_DT first_JJ three_CD variables_NNS are_VBP randomly_RB chosen_VBN from_IN a_DT
+          N_NNP (_( 
+          o_NN 
+          3_CD ,_, 25_CD 
+          I_PRP 
+          3_LS )_) distribution_NN ,_, where_WRB 
+          o_NN 
+          
+            p_NN 
+           denotes_NNS a_DT 1_CD ×_NN 
+          p_NN vector_NN of_IN zeros_NNS and_CC 
+          I_PRP 
+          
+            p_NN 
+           denotes_NNS the_DT 
+          p_NN ×_NN 
+          p_NN identity_NN matrix_NN ._. The_DT means_VBZ for_IN
+          the_DT remaining_VBG seven_CD variables_NNS are_VBP 0_CD ._. Any_DT simulation_NN where_WRB
+          the_DT Euclidean_NNP distance_NN between_IN the_DT two_CD closest_JJS
+          observations_NNS belonging_VBG to_TO different_JJ clusters_NNS is_VBZ less_JJR than_IN
+          1_CD is_VBZ discarded_VBN ._.
+          
+          Model_NNP 4_CD ._. Four_CD clusters_NNS in_IN 10_CD
+          dimensions_NNS ._. Each_DT cluster_NN is_VBZ randomly_RB chosen_VBN to_TO contain_VB 25_CD
+          or_CC 50_CD observations_NNS ,_, with_IN means_VBZ randomly_RB chosen_VBN as_IN N_NNP (_( 
+          o_NN 
+          10_CD ,_, 3_CD ._. 6_CD 
+          I_PRP 
+          10_CD )_) ._. The_DT observations_NNS in_IN a_DT given_VBN
+          cluster_NN are_VBP independently_RB drawn_VBN from_IN a_DT normal_JJ
+          distribution_NN with_IN identity_NN covariance_NN matrix_NN and_CC
+          appropriate_JJ mean_NN vector_NN ._. Any_DT simulation_NN where_WRB the_DT
+          Euclidean_NNP distance_NN between_IN the_DT two_CD closest_JJS observations_NNS
+          belonging_VBG to_TO different_JJ clusters_NNS is_VBZ less_JJR than_IN 1_CD is_VBZ
+          discarded_VBN ._.
+          
+          Model_NNP 5_CD ._. Two_CD elongated_JJ clusters_NNS in_IN
+          three_CD dimensions_NNS ._. Cluster_NNP 1_CD contains_VBZ 100_CD observations_NNS
+          generated_VBN as_IN follows_VBZ ._. Set_NNP 
+          x_SYM 
+          1_CD =_SYM 
+          x_SYM 
+          2_CD =_SYM 
+          x_SYM 
+          3_CD =_SYM 
+          t_NN ,_, with_IN 
+          t_NN taking_VBG on_IN equally_RB spaced_JJ values_NNS
+          from_IN -_: 0_CD ._. 5_LS to_TO 0_CD ._. 5_CD ._. Gaussian_NNP noise_NN with_IN standard_JJ deviation_NN
+          of_IN 0_CD ._. 1_CD is_VBZ then_RB added_VBN to_TO each_DT variable_NN ._. Cluster_NNP 2_CD is_VBZ
+          generated_VBN in_IN the_DT same_JJ way_NN except_IN that_IN the_DT value_NN 10_CD is_VBZ
+          added_VBN to_TO each_DT variable_NN ._. This_DT results_NNS in_IN two_CD elongated_JJ
+          clusters_NNS ,_, stretching_VBG out_IN along_IN the_DT main_JJ diagonal_NN of_IN a_DT
+          three-dimensional_JJ cube_NN ,_, with_IN 100_CD observations_NNS each_DT ._.
+          
+          Model_NNP 6_CD ._. Two_CD elongated_JJ clusters_NNS in_IN 10_CD
+          dimensions_NNS ,_, 7_CD noise_NN variables_NNS ._. The_DT clusters_NNS are_VBP generated_VBN
+          as_IN in_IN Model_NNP 5_CD ,_, but_CC ,_, in_IN addition_NN ,_, seven_CD noise_NN variables_NNS
+          are_VBP simulated_JJ independently_RB from_IN a_DT normal_JJ distribution_NN
+          with_IN mean_NN 0_CD and_CC variance_NN 
+          v_NN 2_CD for_IN the_DT 
+          v_NN th_NN variable_JJ ,_, 4_CD ≤_NN 
+          v_NN ≤_NN 10_CD ._.
+          
+          Model_NNP 7_CD ._. Two_CD overlapping_VBG clusters_NNS in_IN
+          10_CD dimensions_NNS ,_, 9_CD noise_NN variables_NNS ._. Each_DT cluster_NN contains_VBZ
+          50_CD observations_NNS ._. The_DT first_JJ variable_NN in_IN each_DT of_IN the_DT two_CD
+          clusters_NNS is_VBZ normally_RB distributed_VBN with_IN mean_NN 0_CD and_CC 2_CD ._. 5_CD ,_,
+          respectively_RB ,_, and_CC with_IN variance_NN 1_CD ._. The_DT remaining_VBG nine_CD
+          variables_NNS are_VBP simulated_JJ from_IN the_DT N_NNP (_( 
+          o_NN 
+          9_CD ,_, 
+          I_PRP 
+          9_CD )_) distribution_NN (_( independently_RB of_IN the_DT
+          first_JJ variable_JJ )_) ._.
+          
+          Model_NNP 8_CD ._. Three_CD overlapping_VBG clusters_NNS
+          in_IN 13_CD dimensions_NNS ,_, 10_CD noise_NN variables_NNS ._. Each_DT cluster_NN
+          contains_VBZ 50_CD observations_NNS ._. The_DT first_JJ three_CD variables_NNS have_VBP
+          a_DT multivariate_NN normal_JJ distribution_NN with_IN mean_NN vectors_NNS
+          (_( 0_CD ,_, 0_CD ,_, 0_CD )_) ,_, (_( 2_CD ,_, -_: 2_CD ,_, 2_LS )_) ,_, and_CC (_( -_: 2_CD ,_, 2_CD ,_, -_: 2_LS )_) ,_, respectively_RB ,_, and_CC
+          covariance_NN matrix_NN Σ_NN ,_, where_WRB σ_NN 
+          
+            ij_NN 
+           =_SYM 1_CD ,_, 1_CD ≤_NN 
+          i_NNP ≤_NN 3_CD ,_, and_CC σ_NN 
+          
+            ij_NN 
+           =_SYM 0_CD ._. 5_CD ,_, 1_CD ≤_NN 
+          i_NNP ≠_NN 
+          j_NN ≤_NN 3_CD ._. The_DT remaining_VBG 10_CD variables_NNS
+          are_VBP simulated_JJ independently_RB from_IN the_DT N_NNP (_( 
+          o_NN 
+          10_CD ,_, 
+          I_PRP 
+          10_CD )_) distribution_NN ._.
+          Note_VB that_IN Models_NNP 1_CD ,_, 2_CD ,_, 4_CD ,_, and_CC 5_CD were_VBD considered_VBN in_IN
+          Tibshirani_NNP 
+          et_CC al_NN ._. [_NN 24_CD ]_NN ._. Model_NNP 3_CD is_VBZ similar_JJ to_TO
+          the_DT third_JJ model_NN in_IN [_NN 24_CD ]_NN ,_, with_IN the_DT addition_NN of_IN seven_CD
+          noise_NN variables_NNS ._. Model_NNP 6_CD is_VBZ the_DT same_JJ as_IN Model_NNP 5_CD ,_, with_IN the_DT
+          addition_NN of_IN seven_CD noise_NN variables_NNS ._.
+          Fifty_NNP datasets_NNS were_VBD simulated_JJ from_IN each_DT model_NN and_CC the_DT
+          methods_NNS described_VBD in_IN the_DT Background_NNP and_CC Results_NNS sections_NNS
+          were_VBD applied_VBN to_TO estimate_VB the_DT number_NN of_IN clusters_NNS in_IN the_DT
+          resulting_VBG datasets_NNS ._. We_PRP are_VBP primarily_RB interested_JJ in_IN
+          comparing_VBG the_DT percentage_NN of_IN simulations_NNS for_IN which_WDT each_DT
+          procedure_NN recovers_VBZ the_DT correct_JJ number_NN of_IN clusters_NNS ,_, as_IN
+          this_DT quantity_NN reflects_VBZ the_DT accuracy_NN of_IN the_DT procedure_NN ._.
+          However_RB ,_, for_IN the_DT purpose_NN of_IN future_JJ applications_NNS ,_, it_PRP is_VBZ
+          useful_JJ to_TO also_RB know_VB whether_IN a_DT method_NN tends_VBZ to_TO
+          underestimate_NN or_CC overestimate_NN the_DT true_JJ number_NN of_IN
+          clusters_NNS ._. Hence_RB ,_, the_DT full_JJ distribution_NN of_IN the_DT number_NN of_IN
+          clusters_NNS estimated_VBD by_IN each_DT method_NN is_VBZ presented_VBN in_IN Table_NNP
+          3_CD ._. Note_VB that_IN only_RB the_DT methods_NNS Clest_NNP ,_, gap_NN ,_, gapPC_NN and_CC hart_NN
+          have_VBP the_DT capability_NN to_TO identify_VB one_CD cluster_NN in_IN the_DT
+          data_NNS ._.
+        
+        
+          Microarray_NNP data_NNS
+          
+            Lymphoma_NNP
+            This_DT dataset_NN comes_VBZ from_IN a_DT study_NN of_IN gene_NN expression_NN
+            in_IN the_DT three_CD most_RBS prevalent_JJ adult_NN lymphoid_NN
+            malignancies_NNS :_: B-_NNP cell_NN chronic_JJ lymphocytic_JJ leukemia_NN
+            (_( B-CLL_NNP )_) ,_, follicular_NN lymphoma_NN (_( FL_NNP )_) ,_, and_CC diffuse_NN large_JJ
+            B-_NNP cell_NN lymphoma_NN (_( DLBCL_NNP )_) (_( see_VB [_NN 1_CD ,_, 37_CD ]_NN for_IN a_DT detailed_VBN
+            description_NN of_IN the_DT experiments_NNS )_) ._. Gene-expression_NNP levels_NNS
+            were_VBD measured_VBN using_VBG a_DT specialized_JJ cDNA_NN microarray_NN ,_, the_DT
+            Lymphochip_NNP ,_, containing_VBG genes_NNS that_WDT are_VBP preferentially_RB
+            expressed_VBN in_IN lymphoid_NN cells_NNS or_CC which_WDT are_VBP of_IN known_VBN
+            immunological_JJ or_CC oncological_JJ importance_NN ._. In_IN each_DT
+            hybridization_NN ,_, fluorescent_NN cDNA_NN targets_NNS were_VBD prepared_VBN
+            from_IN a_DT tumor_NN mRNA_NN sample_NN (_( red-fluorescent_JJ dye_NN ,_, Cy_NNP 5_LS )_) and_CC
+            a_DT reference_NN mRNA_NN sample_NN derived_VBN from_IN a_DT pool_NN of_IN nine_CD
+            different_JJ lymphoma_NN cell_NN lines_NNS (_( green-fluorescent_JJ dye_NN ,_,
+            Cy_NNP 3_LS )_) ._. The_DT cell_NN lines_NNS in_IN the_DT common_JJ reference_NN pool_NN were_VBD
+            chosen_VBN to_TO represent_VB diverse_JJ expression_NN patterns_NNS ,_, so_IN
+            that_IN most_JJS spots_NNS on_IN the_DT array_NN would_MD exhibit_VB a_DT non-zero_JJ
+            signal_NN in_IN the_DT Cy_NNP 3_CD channel_NN ._. This_DT study_NN produced_VBD
+            gene-expression_JJ data_NNS for_IN 
+            p_NN =_SYM 4_CD ,_, 682_CD genes_NNS in_IN 
+            n_NN =_SYM 81_CD mRNA_NN samples_NNS ._. The_DT tumor_NN
+            mRNA_NN samples_NNS consist_VBP of_IN 29_CD cases_NNS of_IN B-CLL_NNP ,_, 9_CD cases_NNS of_IN
+            FL_NNP ,_, and_CC 43_CD cases_NNS of_IN DLBCL_NNP ._. Alizadeh_NNP 
+            et_CC al_NN ._. [_NN 1_CD ]_NN further_RBR showed_VBD that_IN
+            the_DT DLBCL_NNP class_NN is_VBZ heterogeneous_JJ and_CC comprises_VBZ two_CD
+            distinct_JJ subclasses_NNS of_IN tumors_NNS with_IN different_JJ clinical_JJ
+            behaviors_NNS ._. The_DT gene-expression_JJ data_NN are_VBP summarized_VBD by_IN
+            an_DT 81_CD ×_NN 4_CD ,_, 682_CD matrix_NN 
+            X_NNP =_SYM (_( 
+            x_SYM 
+            
+              ij_NN 
+             )_) ,_, where_WRB 
+            x_SYM 
+            
+              ij_NN 
+             denotes_NNS the_DT base-_NN 2_CD logarithm_NN of_IN the_DT Cy_NNP 5_CD /_NN Cy_NNP 3_CD
+            background-corrected_JJ and_CC normalized_JJ fluorescence_NN
+            intensity_NN ratio_NN for_IN gene_NN 
+            j_NN in_IN lymphoma_NN sample_NN 
+            i_NNP ._. The_DT mean_JJ percentage_NN of_IN missing_VBG
+            observations_NNS per_IN array_NN is_VBZ 6_CD ._. 6_CD %_NN and_CC missing_VBG data_NNS were_VBD
+            inferred_VBN as_IN outlined_VBN below_IN ._. The_DT data_NNS were_VBD standardized_JJ
+            as_IN described_VBN below_IN ._.
+          
+          
+            Leukemia_NNP
+            The_DT leukemia_NN dataset_NN is_VBZ described_VBN in_IN [_NN 3_CD ]_NN and_CC
+            available_JJ at_IN [_NN 38_CD ]_NN ._. This_DT dataset_NN comes_VBZ from_IN a_DT study_NN of_IN
+            gene_NN expression_NN in_IN two_CD types_NNS of_IN acute_JJ leukemia_NN :_: acute_JJ
+            lymphoblastic_JJ leukemia_NN (_( ALL_NNP )_) and_CC acute_JJ myeloid_NN leukemia_NN
+            (_( AML_NNP )_) ._. Gene-expression_NNP levels_NNS were_VBD measured_VBN using_VBG
+            Affymetrix_NNP high-density_JJ oligonu-cleotide_JJ arrays_NNS
+            containing_VBG 
+            p_NN =_SYM 6_CD ,_, 817_CD human_JJ genes_NNS ._. The_DT data_NNS
+            comprise_VBP 47_CD cases_NNS of_IN ALL_NNP (_( 38_CD ALL_NNP B-_NNP cell_NN and_CC 9_CD ALL_NNP
+            T-_NNP cell_NN )_) and_CC 25_CD cases_NNS of_IN AML_NNP ._. Following_VBG Golub_NNP 
+            et_CC al_NN ._. (_( P_NN ._. Tamayo_NNP ,_, personal_JJ
+            communication_NN )_) ,_, three_CD pre-processing_JJ steps_NNS were_VBD applied_VBN
+            to_TO the_DT normalized_JJ matrix_NN of_IN intensity_NN values_NNS available_JJ
+            on_IN the_DT website_NN (_( after_IN pooling_VBG the_DT 38_CD mRNA_NN samples_NNS from_IN
+            the_DT learning_VBG set_VBN and_CC the_DT 34_CD mRNA_NN samples_NNS from_IN the_DT test_NN
+            set_VBN )_) ._. First_LS ,_, a_DT floor_NN of_IN 100_CD and_CC ceiling_NN of_IN 16_CD ,_, 000_CD was_VBD
+            set_VBN ;_: second_JJ ,_, the_DT data_NNS were_VBD filtered_VBN to_TO exclude_VB genes_NNS
+            with_IN max_NN /_NN min_NN ≤_NN 5_CD or_CC (_( max_NN -_: min_NN )_) ≤_NN 500_CD ,_, where_WRB max_NN and_CC
+            min_NN refer_VBP respectively_RB to_TO the_DT maximum_NN and_CC minimum_JJ
+            intensities_NNS for_IN a_DT particular_JJ gene_NN across_IN the_DT 72_CD mRNA_NN
+            samples_NNS ;_: and_CC third_JJ ,_, the_DT data_NNS were_VBD transformed_VBN to_TO base_VB
+            10_CD logarithms_NNS ._. The_DT data_NNS are_VBP then_RB summarized_VBD by_IN a_DT 72_CD ×_NN
+            3_CD ,_, 571_CD matrix_NN 
+            X_NNP =_SYM (_( 
+            x_SYM 
+            
+              ij_NN 
+             )_) ,_, where_WRB 
+            x_SYM 
+            
+              ij_NN 
+             denotes_NNS the_DT expression_NN level_NN for_IN gene_NN 
+            j_NN in_IN mRNA_NN sample_NN 
+            i_NNP ._. There_EX are_VBP no_DT missing_VBG values_NNS
+            and_CC the_DT data_NNS were_VBD standardized_JJ as_IN described_VBN below_IN ._. Note_VB
+            that_IN this_DT standardization_NN differs_VBZ from_IN the_DT one_CD
+            described_VBD in_IN Golub_NNP 
+            et_CC al_NN ._. [_NN 3_CD ]_NN ._.
+          
+          
+            NCI_NNP 60_CD
+            In_IN this_DT study_NN ,_, cDNA_NN microarrays_NNS were_VBD used_VBN to_TO examine_VB
+            the_DT variation_NN in_IN gene_NN expression_NN among_IN the_DT 60_CD cell_NN
+            lines_NNS from_IN the_DT National_NNP Cancer_NNP Institute_NNP 's_POS (_( NCI_NNP 60_CD )_)
+            anti-cancer_JJ drug_NN screen_NN [_NN 6_CD ,_, 39_CD ]_NN ._. The_DT cell_NN lines_NNS were_VBD
+            derived_VBN from_IN tumors_NNS with_IN different_JJ sites_NNS of_IN origin_NN :_: 7_CD
+            breast_NN ,_, 6_CD central_JJ nervous_JJ system_NN (_( CNS_NNP )_) ,_, 7_CD colon_NN ,_, 6_CD
+            leukemia_NN ,_, 8_CD melanoma_NN ,_, 9_CD non-small-cell-lung-carcinoma_JJ
+            (_( NSCLC_NNP )_) ,_, 6_CD ovarian_NN ,_, 2_CD prostate_NN ,_, 8_CD renal_JJ ,_, and_CC 1_CD unknown_JJ
+            (_( ADR-RES_NNP )_) ._. Gene_NNP expression_NN was_VBD studied_VBN using_VBG
+            microarrays_NNS with_IN 9_CD ,_, 703_CD spotted_VBD DNA_NNP sequences_NNS ._. In_IN each_DT
+            hybridization_NN ,_, fluorescent_NN cDNA_NN targets_NNS were_VBD prepared_VBN
+            from_IN a_DT cell-line_JJ mRNA_NN sample_NN (_( red-fluorescent_JJ dye_NN ,_, Cy_NNP 5_LS )_)
+            and_CC a_DT reference_NN mRNA_NN sample_NN obtained_VBN by_IN pooling_VBG equal_JJ
+            mixtures_NNS of_IN mRNA_NN from_IN 12_CD of_IN the_DT cell_NN lines_NNS
+            (_( green-fluorescent_JJ dye_NN ,_, Cy_NNP 3_LS )_) ._. To_TO investigate_VB the_DT
+            reproducibility_NN of_IN the_DT entire_JJ experimental_JJ procedure_NN
+            (_( cell_NN culture_NN ,_, mRNA_NN isolation_NN ,_, labeling_VBG ,_, hybridization_NN ,_,
+            scanning_VBG ,_, and_CC so_RB on_IN )_) ,_, a_DT leukemia_NN (_( K_NNP 562_CD )_) and_CC a_DT breast_NN
+            cancer_NN (_( MCF_NNP 7_CD )_) cell_NN line_NN were_VBD analyzed_VBN by_IN three_CD
+            independent_JJ microarray_NN experiments_NNS ._. Ross_NNP 
+            et_CC al_NN ._. screened_VBD out_RP genes_NNS with_IN
+            missing_VBG data_NNS in_IN more_JJR than_IN two_CD arrays_NNS ._. In_IN addition_NN ,_,
+            because_IN of_IN their_PRP$ small_JJ class_NN size_NN ,_, the_DT two_CD prostate_NN
+            cell_NN lines_NNS and_CC the_DT unknown_JJ cell_NN line_NN (_( ADR-RES_NNP )_) were_VBD
+            excluded_VBN from_IN our_PRP$ analysis_NN ._. The_DT data_NNS are_VBP summarized_VBD by_IN
+            a_DT 61_CD ×_NN 5_CD ,_, 244_CD matrix_NN 
+            X_NNP =_SYM (_( 
+            x_SYM 
+            
+              ij_NN 
+             )_) ,_, where_WRB 
+            x_SYM 
+            
+              ij_NN 
+             denotes_NNS the_DT base-_NN 2_CD logarithm_NN of_IN the_DT Cy_NNP 5_CD /_NN Cy_NNP 3_CD
+            background-corrected_JJ and_CC normalized_JJ fluorescence_NN
+            intensity_NN ratio_NN for_IN gene_NN 
+            j_NN in_IN cell_NN line_NN 
+            i_NNP ._. The_DT mean_JJ percentage_NN of_IN missing_VBG
+            observations_NNS per_IN array_NN is_VBZ 3_CD ._. 3_CD %_NN and_CC missing_VBG data_NNS were_VBD
+            inferred_VBN as_IN outlined_VBN below_IN ._. The_DT data_NNS were_VBD standardized_JJ
+            as_IN described_VBN below_IN ._.
+          
+          
+            Melanoma_NNP
+            The_DT melanoma_NN dataset_NN is_VBZ described_VBN in_IN the_DT recent_JJ
+            paper_NN of_IN Bittner_NNP 
+            et_CC al_NN ._. [_NN 30_CD ]_NN and_CC is_VBZ available_JJ at_IN
+            [_NN 40_CD ]_NN ._. There_EX are_VBP 31_CD melanoma_NN samples_NNS and_CC 7_CD control_NN
+            samples_NNS ._. Gene-expression_NNP levels_NNS were_VBD measured_VBN using_VBG
+            cDNA_NN microarrays_NNS with_IN 8_CD ,_, 150_CD probe_NN sequences_NNS ,_,
+            representing_VBG 6_CD ,_, 971_CD unique_JJ genes_NNS ._. In_IN each_DT hybridization_NN ,_,
+            fluorescent_NN cDNA_NN targets_NNS were_VBD prepared_VBN from_IN a_DT melanoma_NN
+            or_CC control_NN mRNA_NN sample_NN (_( red-fluorescent_JJ dye_NN ,_, Cy_NNP 5_LS )_) and_CC a_DT
+            common_JJ reference_NN mRNA_NN sample_NN (_( green-fluorescent_JJ dye_NN ,_,
+            Cy_NNP 3_LS )_) ._. The_DT following_VBG pre-processing_JJ steps_NNS were_VBD applied_VBN
+            by_IN Bittner_NNP 
+            et_CC al_NN ._. First_LS ,_, a_DT gene_NN was_VBD excluded_VBN
+            from_IN the_DT analysis_NN if_IN its_PRP$ average_JJ mean_NN intensity_NN above_IN
+            background_NN for_IN the_DT least_JJS intense_JJ signal_NN (_( Cy_NNP 3_CD or_CC Cy_NNP 5_LS )_)
+            across_IN all_DT experiments_NNS was_VBD ≤_NN 2_CD ,_, 000_CD or_CC its_PRP$ average_JJ spot_NN
+            size_NN across_IN all_DT experiments_NNS was_VBD ≤_NN 30_CD pixels_NNS ;_: and_CC
+            second_JJ ,_, a_DT floor_NN and_CC ceiling_NN of_IN 0_CD ._. 02_CD and_CC 50_CD ,_,
+            respectively_RB ,_, were_VBD applied_VBN to_TO the_DT individual_JJ intensity_NN
+            log-ratios_JJ ._. This_DT initial_JJ screening_NN resulted_VBD in_IN a_DT
+            dataset_NN of_IN 3_CD ,_, 613_CD genes_NNS (_( see_VB Supplemental_NNP Information_NNP to_TO
+            [_NN 30_CD ]_NN ,_, document_NN II_NNP ,_, page_NN 2_LS )_) ._. Finally_RB ,_, Bittner_NNP 
+            et_CC al_NN ._. did_VBD not_RB include_VB the_DT seven_CD
+            control_NN samples_NNS in_IN their_PRP$ analysis_NN ._. The_DT data_NNS are_VBP
+            summarized_VBD by_IN a_DT 31_CD ×_NN 3_CD ,_, 613_CD matrix_NN 
+            X_NNP =_SYM (_( 
+            x_SYM 
+            
+              ij_NN 
+             )_) ,_, where_WRB 
+            x_SYM 
+            
+              ij_NN 
+             denotes_NNS the_DT base-_NN 2_CD logarithm_NN of_IN the_DT Cy_NNP 5_CD /_NN Cy_NNP 3_CD
+            background-corrected_JJ and_CC normalized_JJ fluorescence_NN
+            intensity_NN ratio_NN for_IN gene_NN 
+            j_NN in_IN mRNA_NN sample_NN 
+            i_NNP ._. There_EX were_VBD no_DT 
+            a_DT priori_FW known_VBN classes_NNS for_IN this_DT
+            dataset_NN ,_, but_CC the_DT analysis_NN of_IN Bittner_NNP 
+            et_CC al_NN ._. suggests_VBZ that_IN two_CD classes_NNS
+            may_MD be_VB present_JJ in_IN the_DT data_NNS ,_, with_IN observations_NNS in_IN one_CD of_IN
+            the_DT classes_NNS (_( Group_NNP A_DT in_IN their_PRP$ figures_NNS )_) being_VBG more_RBR
+            tightly_RB clustered_VBN ._. There_EX were_VBD no_DT missing_VBG values_NNS and_CC the_DT
+            data_NNS were_VBD standardized_JJ as_IN described_VBN below_IN ._. Note_VB that_IN
+            this_DT standardization_NN is_VBZ slightly_RB different_JJ from_IN the_DT one_CD
+            described_VBD in_IN [_NN 30_CD ]_NN ._.
+          
+        
+        
+          Imputation_NNP of_IN missing_VBG data_NNS
+          For_IN the_DT lymphoma_NN and_CC NCI_NNP 60_CD datasets_NNS ,_, each_DT array_NN
+          contains_VBZ a_DT number_NN of_IN genes_NNS with_IN fluorescence-intensity_JJ
+          measurements_NNS that_WDT were_VBD flagged_JJ by_IN the_DT experimenter_NN and_CC
+          recorded_VBN as_IN missing_VBG data_NNS points_NNS ._. Missing_NNP data_NNS were_VBD
+          imputed_JJ by_IN a_DT simple_JJ 
+          k_NN -_: nearest-neighbor_JJ algorithm_NN ,_, in_IN
+          which_WDT the_DT neighbors_NNS are_VBP the_DT genes_NNS and_CC the_DT distance_NN
+          between_IN neighbors_NNS is_VBZ based_VBN on_IN the_DT correlation_NN between_IN
+          their_PRP$ gene-expression_JJ levels_NNS across_IN arrays_NNS ._. For_IN each_DT gene_NN
+          with_IN missing_VBG data_NNS :_: first_JJ compute_VB its_PRP$ correlation_NN with_IN all_DT
+          other_JJ 
+          p_NN -_: 1_CD genes_NNS ,_, and_CC then_RB ,_, for_IN each_DT
+          missing_VBG array_NN ,_, identify_VBP the_DT 
+          k_NN nearest_JJS genes_NNS having_VBG data_NNS for_IN
+          this_DT array_NN and_CC infer_NN the_DT missing_VBG entry_NN from_IN the_DT average_NN
+          of_IN the_DT corresponding_JJ entries_NNS for_IN the_DT 
+          k_NN neighbors_NNS ._. A_DT value_NN of_IN 
+          k_NN =_SYM 5_CD neighbors_NNS was_VBD used_VBN for_IN the_DT
+          lymphoma_NN and_CC NCI_NNP 60_CD datasets_NNS ._. For_IN a_DT detailed_VBN study_NN of_IN
+          methods_NNS for_IN filling_VBG in_IN missing_VBG values_NNS in_IN microarray_NN
+          experiments_NNS ,_, see_VB [_NN 41_CD ]_NN ,_, which_WDT suggests_VBZ that_IN a_DT
+          nearest-neighbor_JJ approach_NN provides_VBZ accurate_JJ and_CC robust_JJ
+          estimates_NNS of_IN missing_VBG values_NNS ._.
+        
+        
+          Standardization_NNP
+          The_DT gene-expression_JJ data_NN were_VBD standardized_JJ so_IN that_IN the_DT
+          observations_NNS (_( arrays_NNS )_) have_VBP mean_VB 0_CD and_CC variance_NN 1_CD across_IN
+          variables_NNS (_( genes_NNS )_) ._. Standardizing_NNP the_DT data_NNS in_IN this_DT fashion_NN
+          achieves_VBZ a_DT location_NN and_CC scale_NN normalization_NN of_IN the_DT
+          different_JJ arrays_NNS ._. In_IN a_DT study_NN of_IN normalization_NN methods_NNS ,_, we_PRP
+          have_VBP found_VBN scale_NN adjustment_NN to_TO be_VB desirable_JJ in_IN some_DT
+          cases_NNS ,_, to_TO prevent_VB the_DT expression_NN levels_NNS in_IN one_CD particular_JJ
+          array_NN from_IN dominating_VBG the_DT average_JJ expression_NN levels_NNS
+          across_IN arrays_NNS [_NN 36_CD ]_NN ._. Furthermore_RB ,_, this_DT standardization_NN is_VBZ
+          consistent_JJ with_IN the_DT common_JJ practice_NN in_IN microarray_NN
+          experiments_NNS of_IN using_VBG the_DT correlation_NN between_IN the_DT
+          gene-expression_JJ profiles_NNS of_IN two_CD mRNA_NN samples_NNS to_TO measure_VB
+          their_PRP$ similarity_NN [_NN 1_CD ,_, 4_CD ,_, 6_CD ]_NN ._. In_IN practice_NN ,_, however_RB ,_, we_PRP
+          recommend_VBP general_JJ adaptive_JJ and_CC robust_JJ normalization_NN
+          methods_NNS which_WDT correct_JJ for_IN intensity_NN ,_, spatial_NN ,_, and_CC other_JJ
+          types_NNS of_IN dye_NN biases_NNS using_VBG robust_JJ local_JJ regression_NN [_NN
+          36_CD ]_NN ._.
+        
+        
+          Preliminary_JJ gene_NN selection_NN
+          Expression_NNP levels_NNS were_VBD monitored_VBN for_IN thousands_NNS of_IN
+          genes_NNS in_IN each_DT of_IN the_DT four_CD studies_NNS ._. However_RB ,_, the_DT majority_NN
+          of_IN the_DT genes_NNS exhibit_NN near-constant_JJ expression_NN levels_NNS ,_, as_IN
+          measured_VBN by_IN the_DT variance_NN (_( or_CC coefficient_NN of_IN variation_NN )_) of_IN
+          the_DT expression_NN levels_NNS across_IN tumor_NN samples_NNS ._. Genes_NNP showing_VBG
+          nearly_RB constant_JJ expression_NN levels_NNS are_VBP not_RB likely_JJ to_TO be_VB
+          useful_JJ for_IN classification_NN purposes_NNS ;_: therefore_RB ,_, we_PRP chose_VBD
+          to_TO exclude_VB low-variance_JJ genes_NNS from_IN the_DT clustering_VBG
+          process_NN ._.
+          Figure_NN 6_CD displays_NNS for_IN each_DT dataset_NN the_DT individual_JJ gene_NN
+          variances_NNS divided_VBN by_IN the_DT maximum_NN variance_NN over_IN all_DT genes_NNS ._.
+          All_DT four_CD variance_NN curves_NNS show_VBP a_DT sharp_JJ drop-off_NN which_WDT
+          gradually_RB flattens_NNS ._. The_DT plots_NNS are_VBP remarkably_RB similar_JJ for_IN
+          all_PDT the_DT datasets_NNS ,_, with_IN the_DT melanoma_NN dataset_NN having_VBG the_DT
+          fastest_JJS drop-off_NN ._. In_IN this_DT report_NN ,_, the_DT 
+          p_NN =_SYM 100_CD most_RBS variable_JJ genes_NNS were_VBD
+          used_VBN to_TO analyze_VB the_DT leukemia_NN ,_, lymphoma_NN and_CC melanoma_NN
+          datasets_NNS ,_, and_CC the_DT 
+          p_NN =_SYM 200_CD most_RBS variable_JJ genes_NNS were_VBD
+          used_VBN for_IN the_DT NCI_NNP 60_CD dataset_NN as_IN it_PRP contains_VBZ more_JJR classes_NNS ._.
+          Increasing_VBG the_DT number_NN of_IN genes_NNS to_TO 
+          p_NN =_SYM 300_CD -_: 400_CD or_CC decreasing_VBG the_DT
+          number_NN of_IN genes_NNS to_TO 
+          p_NN =_SYM 50_CD did_VBD not_RB have_VB much_JJ effect_NN on_IN
+          the_DT results_NNS (_( data_NNS not_RB shown_VBN )_) ._. One_PRP could_MD also_RB select_VB genes_NNS
+          based_VBN on_IN a_DT coefficient_NN of_IN variation_NN filter_NN ._.
+        
+        
+          Correlation_NNP matrices_NNS
+          
+            Lymphoma_NNP
+            The_DT existence_NN of_IN three_CD well-separated_JJ classes_NNS for_IN
+            the_DT lymphoma_NN dataset_NN is_VBZ reflected_VBN in_IN Figure_NN 7_CD for_IN both_DT
+            sets_NNS of_IN genes_NNS ,_, the_DT classes_NNS being_VBG more_RBR clearly_RB separated_JJ
+            when_WRB the_DT majority_NN of_IN the_DT genes_NNS are_VBP screened_VBD out_RP ._. Recall_VB
+            that_IN gene-expression_JJ levels_NNS were_VBD measured_VBN using_VBG a_DT
+            specialized_JJ cDNA_NN microarray_NN ,_, the_DT Lymphochip_NNP ,_, enriched_JJ
+            in_IN genes_NNS that_WDT are_VBP involved_VBN in_IN the_DT immune_JJ system_NN ._. This_DT
+            may_MD partly_RB account_VB for_IN the_DT clear_JJ separation_NN of_IN the_DT
+            classes_NNS even_RB when_WRB the_DT correlation_NN matrix_NN is_VBZ computed_JJ
+            using_VBG the_DT full_RB set_NN of_IN genes_NNS ._. When_WRB PAM_NNP is_VBZ applied_VBN to_TO the_DT
+            lymphoma_NN dataset_NN using_VBG the_DT 100_CD genes_NNS with_IN the_DT largest_JJS
+            variance_NN ,_, the_DT 
+            K_NNP =_SYM 2_CD ,_, 3_CD ,_, 4_CD ,_, 5_CD partitions_NNS are_VBP as_IN
+            follows_VBZ ._. For_IN 
+            K_NNP =_SYM 2_CD classes_NNS ,_, one_CD cluster_NN
+            consists_VBZ of_IN the_DT FL_NNP and_CC DLBCL_NNP classes_NNS combined_VBN and_CC the_DT
+            other_JJ consists_VBZ of_IN the_DT CLL_NNP class_NN ._. This_DT could_MD reflect_VB
+            differences_NNS in_IN tissue_NN sampling_VBG ,_, as_IN the_DT CLL_NNP mRNA_NN samples_NNS
+            were_VBD obtained_VBN from_IN peripheral_JJ blood_NN cells_NNS as_IN opposed_VBN to_TO
+            lymph-node_JJ biopsy_NN specimens_NNS for_IN the_DT FL_NNP and_CC DLBCL_NNP
+            samples_NNS ._. For_IN 
+            K_NNP =_SYM 3_CD ,_, all_DT three_CD classes_NNS (_( CLL_NNP ,_,
+            FL_NNP ,_, DLBCL_NNP )_) are_VBP recovered_VBN as_IN distinct_JJ clusters_NNS ._. For_IN 
+            K_NNP =_SYM 4_CD ,_, the_DT largest_JJS DLBCL_NNP class_NN is_VBZ
+            divided_VBN into_IN two_CD clusters_NNS of_IN approximately_RB equal_JJ size_NN
+            and_CC the_DT remaining_VBG two_CD classes_NNS (_( CLL_NNP and_CC FL_NNP )_) are_VBP
+            recovered_VBN as_IN two_CD distinct_JJ clusters_NNS ._. The_DT two_CD DLBCL_NNP
+            clusters_NNS have_VBP a_DT 75_CD %_NN overlap_VB with_IN the_DT subclasses_NNS of_IN
+            Alizadeh_NNP 
+            et_CC al_NN ._. [_NN 1_CD ]_NN ._. Finally_RB ,_, for_IN 
+            K_NNP =_SYM 5_CD ,_, the_DT smallest_JJS class_NN ,_, FL_NNP ,_, is_VBZ
+            divided_VBN into_IN two_CD clusters_NNS and_CC the_DT rest_NN of_IN the_DT clusters_NNS
+            are_VBP as_IN with_IN 
+            K_NNP =_SYM 4_CD ._. On_IN the_DT basis_NN of_IN this_DT
+            analysis_NN we_PRP do_VBP not_RB expect_VB to_TO recover_VB more_JJR than_IN four_CD
+            classes_NNS in_IN the_DT lymphoma_NN data_NN ._.
+          
+          
+            Leukemia_NNP
+            Images_NNP of_IN the_DT correlation_NN matrix_NN for_IN the_DT leukemia_NN
+            dataset_NN are_VBP displayed_VBN in_IN Figure_NN 8_CD ._. The_DT three_CD classes_NNS
+            corresponding_JJ to_TO the_DT ALL_NNP T-_NNP cell_NN ,_, ALL_NNP B-_NNP cell_NN ,_, and_CC AML_NNP
+            samples_NNS clearly_RB stand_VBP out_IN in_IN the_DT image_NN of_IN the_DT
+            correlation_NN matrix_NN for_IN the_DT 100_CD genes_NNS with_IN the_DT largest_JJS
+            variance_NN ,_, but_CC are_VBP indistinguishable_JJ in_IN the_DT image_NN of_IN the_DT
+            correlation_NN matrix_NN based_VBN on_IN all_DT genes_NNS ._. When_WRB the_DT PAM_NNP
+            procedure_NN is_VBZ applied_VBN to_TO the_DT leukemia_NN dataset_NN using_VBG the_DT
+            100_CD genes_NNS with_IN the_DT largest_JJS variance_NN ,_, the_DT results_NNS are_VBP as_IN
+            follows_VBZ ._. For_IN 
+            K_NNP =_SYM 2_CD ,_, eight_CD ALL_NNP T-_NNP cell_NN
+            observations_NNS are_VBP misclassified_VBN with_IN the_DT AML_NNP
+            observations_NNS ._. For_IN 
+            K_NNP =_SYM 3_CD classes_NNS ,_, one_CD ALL_NNP B-_NNP cell_NN
+            sample_NN is_VBZ clustered_VBN with_IN the_DT ALL_NNP T-_NNP cell_NN tumors_NNS and_CC the_DT
+            rest_NN of_IN the_DT observations_NNS are_VBP allocated_VBN correctly_RB ._. For_IN 
+            K_NNP =_SYM 4_CD ,_, the_DT ALL_NNP B-_NNP cell_NN samples_NNS are_VBP
+            partitioned_JJ into_IN two_CD clusters_NNS ._. Finally_RB ,_, for_IN 
+            K_NNP =_SYM 5_CD ,_, the_DT AML_NNP samples_NNS are_VBP
+            partitioned_JJ into_IN two_CD clusters_NNS ._. On_IN the_DT basis_NN of_IN the_DT
+            correlation_NN matrix_NN ,_, one_PRP would_MD expect_VB to_TO identify_VB three_CD
+            tumor_NN classes_NNS in_IN this_DT dataset_NN ._.
+          
+          
+            NCI_NNP 60_CD
+            For_IN the_DT NCI_NNP 60_CD cell-line_JJ dataset_NN ,_, the_DT classes_NNS are_VBP not_RB
+            clearly_RB distinguishable_JJ from_IN the_DT images_NNS of_IN the_DT
+            correlation_NN matrix_NN ._. Colon_NN ,_, leukemia_NN and_CC melanoma_NN cell_NN
+            lines_NNS display_VBP the_DT strongest_JJS correlations_NNS within_IN class_NN ,_,
+            whereas_IN breast_NN ,_, NSCLC_NNP and_CC ovarian_NN cell_NN lines_NNS seem_VBP to_TO be_VB
+            the_DT most_RBS heterogeneous_JJ classes_NNS ._. When_WRB the_DT PAM_NNP procedure_NN
+            is_VBZ applied_VBN to_TO the_DT NCI_NNP 60_CD dataset_NN using_VBG the_DT 200_CD genes_NNS
+            with_IN the_DT largest_JJS variance_NN and_CC varying_VBG the_DT number_NN of_IN
+            clusters_NNS 
+            K_NNP ≤_NN 8_CD ,_, only_RB five_CD types_NNS of_IN cell_NN
+            lines_NNS tend_VBP to_TO cluster_NN together_RB (_( CNS_NNP ,_, colon_NN ,_, leukemia_NN ,_,
+            melanoma_NN ,_, and_CC renal_JJ cell_NN lines_NNS )_) ._. On_IN the_DT basis_NN of_IN this_DT
+            observation_NN ,_, one_PRP should_MD not_RB expect_VB to_TO recover_VB more_JJR than_IN
+            five_CD classes_NNS ._.
+          
+          
+            Melanoma_NNP
+            Finally_RB ,_, for_IN the_DT melanoma_NN dataset_NN ,_, the_DT image_NN of_IN the_DT
+            correlation_NN matrix_NN for_IN the_DT 
+
+            p_NN =_SYM 100_CD most_RBS variable_JJ genes_NNS
+            (_( Figure_NN 10_CD )_) could_MD possibly_RB suggest_VB the_DT existence_NN of_IN a_DT
+            subclass_NNS of_IN tumors_NNS which_WDT includes_VBZ the_DT group_NN A_DT samples_NNS
+            of_IN Bittner_NNP 
+            et_CC al_NN ._. [_NN 30_CD ]_NN ._. However_RB ,_, some_DT
+            observations_NNS in_IN this_DT cluster_NN (_( the_DT first_NN one_CD from_IN the_DT
+            left_VBN in_IN particular_JJ )_) were_VBD not_RB identified_VBN by_IN Bittner_NNP 
+            et_CC al_NN ._. as_IN being_VBG part_NN of_IN the_DT tight_JJ
+            cluster_NN ._. Indeed_RB ,_, when_WRB PAM_NNP is_VBZ applied_VBN to_TO the_DT melanoma_NN
+            dataset_NN using_VBG the_DT 100_CD genes_NNS with_IN the_DT largest_JJS variance_NN ,_,
+            four_CD additional_JJ observations_NNS are_VBP joined_VBN to_TO the_DT 19_CD
+            observation_NN cluster_NN (_( group_NN A_DT )_) proposed_VBN by_IN Bittner_NNP 
+            et_CC al_NN ._. Dividing_NNP the_DT data_NNS into_IN
+            three_CD clusters_NNS results_NNS in_IN a_DT split_NN of_IN the_DT 19_CD
+            observations_NNS into_IN two_CD clusters_NNS ._. One_PRP would_MD expect_VB to_TO
+            identify_VB ,_, at_IN most_JJS ,_, two_CD or_CC three_CD classes_NNS for_IN this_DT
+            dataset_NN because_IN of_IN the_DT small_JJ sample_NN size_NN ._.
+          
+        
+      
+    
+  

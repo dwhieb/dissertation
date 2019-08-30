@@ -1,0 +1,390 @@
+
+  
+    
+      
+        Background_NNP
+        Radiotherapy_NNP treatment_NN planning_NN is_VBZ ,_, in_IN broad_JJ terms_NNS ,_, the_DT
+        process_NN of_IN planning_VBG the_DT delivery_NN of_IN a_DT prescribed_VBN dose_NN to_TO a_DT
+        tumor_NN or_CC target_NN volume_NN while_IN minimizing_VBG dose_NN to_TO the_DT
+        surrounding_VBG critical_JJ structures_NNS ._. Prior_RB to_TO the_DT modern_JJ
+        radiotherapy_NN treatment_NN planning_NN era_NN ,_, the_NNP '_POS optimum_JJ '_POS plan_NN was_VBD
+        decided_VBN upon_IN using_VBG qualitative_JJ criteria_NNS ,_, or_CC by_IN estimating_VBG
+        the_DT inhomogeneity_NN of_IN the_DT dose_NN in_IN the_DT target_NN or_CC in_IN critical_JJ
+        regions_NNS ._. With_IN the_DT advent_NN of_IN CT-based_NNP planning_NN ,_, the_DT planning_NN
+        process_NN could_MD be_VB done_VBN with_IN increased_VBN precision_NN ,_, as_IN
+        3_CD -_: dimensional_NN structures_NNS representing_VBG the_DT target_NN and_CC
+        critical_JJ structures_NNS could_MD be_VB defined_VBN more_RBR accurately_RB and_CC
+        reproducibly_RB ._. One_CD of_IN the_DT most_RBS useful_JJ tools_NNS which_WDT emerged_VBD in_IN
+        the_DT 3_CD -_: dimensional_NN planning_NN era_NN that_WDT could_MD be_VB used_VBN in_IN
+        establishing_VBG the_DT acceptability_NN or_CC unacceptability_NN of_IN a_DT
+        treatment_NN plan_NN is_VBZ the_DT dose-volume_JJ histogram_NN (_( DVH_NNP )_) [_NN 1_CD ]_NN
+        ._.
+        The_DT DVH_NNP is_VBZ used_VBN ubiquitously_RB and_CC plots_NNS delivered_VBD dose_NN on_IN
+        the_DT x-axis_JJ and_CC percent_NN volume_NN of_IN the_DT structure_NN of_IN interest_NN
+        on_IN the_DT y-axis_JJ ._. The_DT general_JJ shape_NN and_CC area_NN under_IN the_DT DVH_NNP
+        curve_NN is_VBZ instrumental_JJ in_IN determining_VBG adequate_JJ coverage_NN and_CC
+        homogeneity_NN of_IN dose_NN in_IN the_DT target_NN volume_NN as_RB well_RB as_IN in_IN
+        determining_VBG acceptable_JJ dose_NN to_TO critical_JJ structures_NNS ._. Indeed_RB ,_,
+        the_DT DVH_NNP has_VBZ occupied_VBD a_DT central_JJ role_NN in_IN modern_JJ treatment_NN
+        planning_NN [_NN 2_CD 3_CD 4_CD 5_CD ]_NN ._.
+        The_DT DVH_NNP is_VBZ not_RB without_IN its_PRP$ limitations_NNS ,_, however_RB ._. First_LS ,_,
+        there_EX is_VBZ an_DT inherent_JJ loss_NN of_IN spatial_NN information_NN with_IN the_DT
+        construction_NN of_IN a_DT DVH_NNP plot_NN ._. Second_JJ ,_, the_DT dose_NN plotted_VBD on_IN the_DT
+        x-axis_JJ of_IN a_DT conventional_JJ DVH_NNP (_( C-DVH_NNP )_) is_VBZ conventional_JJ dose_NN ,_,
+        which_WDT does_VBZ not_RB take_VB into_IN account_NN many_JJ factors_NNS influencing_VBG
+        the_DT effects_NNS of_IN the_DT dose_NN on_IN the_DT given_VBN tissue_NN ._. Among_IN them_PRP are_VBP
+        the_DT α_NN /_NN β_NN of_IN the_DT structure_NN (_( which_WDT can_MD vary_VB considerably_RB for_IN
+        early_JJ vs_NNS late_JJ reacting_VBG tissues_NNS and_CC for_IN early_JJ vs_NNS late_JJ
+        reactions_NNS within_IN the_DT same_JJ tissue_NN )_) ,_, time_NN taken_VBN to_TO deliver_VB
+        treatment_NN ,_, fraction_NN size_NN ,_, and_CC length_NN of_IN treatment_NN
+        interruptions_NNS ._. For_IN this_DT reason_NN ,_, the_DT concept_NN of_IN
+        biological-effective_JJ dose_NN (_( BED_NNP )_) was_VBD developed_VBN [_NN 6_CD 7_CD ]_NN and_CC
+        has_VBZ been_VBN studied_VBN extensively_RB by_IN the_DT radiobiology_NN community_NN ._.
+        Because_IN the_DT BED_NNP incorporates_VBZ factors_NNS related_VBN to_TO delivery_NN of_IN
+        treatment_NN and_CC tissue_NN factors_NNS ,_, it_PRP is_VBZ a_DT better_JJR representation_NN
+        of_IN the_DT dose_NN delivered_VBN to_TO a_DT given_VBN tissue_NN than_IN conventional_JJ
+        dose_NN [_NN 6_CD 7_CD 8_CD ]_NN ._.
+        The_DT application_NN of_IN BED_NNP has_VBZ particular_JJ importance_NN to_TO
+        radiation_NN treatment_NN planning_NN for_IN prostate_NN cancer_NN ._. The_DT
+        prostate_NN ,_, more_RBR so_RB than_IN any_DT other_JJ disease_NN site_NN ,_, has_VBZ been_VBN the_DT
+        focus_NN of_IN advances_NNS in_IN treatment_NN delivery_NN technique_NN ._. The_DT
+        prostate_NN has_VBZ been_VBN the_DT paradigm_NN site_NN for_IN treatment_NN planning_NN
+        efforts_NNS related_VBN to_TO conformal_NN therapy_NN [_NN 9_CD 10_CD 11_CD 12_CD ]_NN and_CC
+        intensity_NN modulated_JJ radiotherapy_NN (_( IMRT_NNP )_) /_NN inverse_NN planning_NN [_NN
+        13_CD 14_CD ]_NN ._. Also_RB ,_, the_DT prostate_NN has_VBZ been_VBN the_DT leading_VBG disease_NN
+        site_NN for_IN efforts_NNS related_VBN to_TO improving_VBG daily_JJ setup_NN [_NN 15_CD ]_NN
+        and_CC incorporating_VBG organ_NN motion_NN into_IN the_DT delivery_NN strategy_NN [_NN
+        16_CD ]_NN ._. These_DT above_IN efforts_NNS have_VBP allowed_VBN for_IN dose_NN escalation_NN
+        of_IN the_DT prostate_NN while_IN minimizing_VBG early_JJ and_CC late_JJ treatment_NN
+        toxicity_NN [_NN 9_CD 10_CD 11_CD 12_CD 13_CD 14_CD 17_CD ]_NN ._.
+        In_IN view_NN of_IN the_DT lead_JJ role_NN the_DT prostate_NN has_VBZ taken_VBN in_IN
+        understanding_NN treatment_NN planning_NN ,_, patient_NN setup_NN ,_, and_CC dose_NN
+        escalation_NN ,_, incorporation_NN of_IN treatment-related_JJ information_NN
+        into_IN the_DT DVH_NNP -_: to_TO further_VB facilitate_VB advances_NNS in_IN reduction_NN
+        of_IN rectal_NN or_CC urinary_JJ toxicity_NN -_: is_VBZ highly_RB appropriate_JJ ._. The_DT
+        purpose_NN of_IN the_DT current_JJ investigation_NN is_VBZ to_TO compare_VB C-DVH_NNP 's_POS
+        of_IN the_DT bladder_NN and_CC rectum_NN in_IN those_DT patients_NNS who_WP developed_VBD
+        late_JJ treatment_NN toxicity_NN versus_CC those_DT patients_NNS who_WP did_VBD not_RB
+        develop_VB such_JJ toxicity_NN ,_, and_CC ,_, using_VBG the_DT same_JJ groups_NNS of_IN
+        patients_NNS ,_, to_TO determine_VB whether_IN the_DT biological-effective_JJ DVH_NNP
+        (_( BED-DVH_NNP )_) can_MD potentially_RB serve_VB as_IN a_DT better_JJR tool_NN for_IN such_JJ
+        toxicity_NN comparisons_NNS than_IN the_DT C-DVH_NNP ._.
+      
+      
+        Methods_NNP
+        A_DT generalized_JJ theoretical_JJ model_NN for_IN determination_NN of_IN
+        biological_JJ effective_JJ dose_NN has_VBZ been_VBN developed_VBN and_CC reported_VBN
+        extensively_RB [_NN 6_CD 7_CD 8_CD ]_NN ._. Recently_RB ,_, our_PRP$ group_NN has_VBZ applied_VBN
+        this_DT model_NN for_IN use_NN with_IN any_DT combination_NN of_IN short-lived_JJ
+        interstitial_NN brachytherapy_NN and_CC external_JJ beam_NN radiotherapy_NN
+        for_IN prostate_NN cancer_NN (_( unpublished_JJ /_NN submitted_VBD data_NNS ,_, 2003_CD )_) ._. For_IN
+        external_JJ beam_NN radiotherapy_NN ,_, the_DT generalized_JJ BED_NNP model_NN
+        reduces_VBZ to_TO the_DT familiar_JJ equation_NN :_:
+        BED_NNP =_SYM [_NN n_NN *_NN d_SYM (_( 1_CD +_NN d_SYM /_NN (_( α_NN /_NN β_NN )_) )_) ]_NN -_: [_NN (_( 0_CD ._. 693_CD *_NN T_NN )_) /_NN (_( α_NN *_NN Tp_NNP )_) ]_NN (_( 1_LS )_)
+        where_WRB n_NN =_SYM number_NN of_IN treatments_NNS ,_, d_SYM =_SYM dose_NN per_IN fraction_NN ,_, T_NN
+        =_SYM treatment_NN time_NN ,_, α_NN /_NN β_NN =_SYM 3_CD Gy_NNP (_( for_IN late_JJ effects_NNS )_) ,_, and_CC Tp_NNP
+        (_( potential_JJ doubling_NN time_NN )_) and_CC α_NN (_( linear_JJ component_NN of_IN cell_NN
+        killing_VBG )_) were_VBD estimated_VBN from_IN the_DT published_VBN literature_NN [_NN 6_CD 7_CD
+        8_CD ]_NN ,_, [_NN 18_CD 19_CD ]_NN to_TO be_VB 34_CD days_NNS and_CC 0_CD ._. 3_CD /_NN Gy_NNP ,_, respectively_RB ._. The_DT
+        first_JJ term_NN in_IN Equation_NNP (_( 1_LS )_) accounts_NNS for_IN dose_NN fractionation_NN
+        and_CC the_DT second_JJ term_NN accounts_NNS for_IN repopulation_NN ._. The_DT authors_NNS
+        recognize_VBP that_IN there_EX is_VBZ considerable_JJ controversy_NN in_IN the_DT
+        exact_JJ values_NNS used_VBN for_IN α_NN /_NN β_NN ,_, α_NN ,_, and_CC Tp_NNP for_IN prostate_NN cancer_NN in_IN
+        the_DT reported_VBN literature_NN ._.
+        The_DT charts_NNS of_IN 190_CD consecutive_JJ patients_NNS with_IN T_NN 1_CD or_CC T_NN 2_CD
+        prostate_NN cancer_NN treated_VBN with_IN external_JJ beam_NN radiotherapy_NN at_IN
+        our_PRP$ institution_NN between_IN 1996_CD -_: 1999_CD were_VBD reviewed_VBN ._. During_IN
+        this_DT period_NN ,_, external_JJ beam_NN radiotherapy_NN was_VBD delivered_VBN using_VBG
+        6_CD -_: field_NN technique_NN ,_, once_RB daily_JJ ,_, 5_CD times_NNS a_DT week_NN ,_, using_VBG 180_CD
+        cGy_NN or_CC 200_CD cGy_NN fractions_NNS ,_, to_TO a_DT final_JJ dose_NN of_IN 7000_CD -_: 7200_CD cGy_NN
+        (_( minimum_JJ PTV_NNP dose_NN )_) ._. The_DT conformal_NN techniques_NNS at_IN our_PRP$
+        institution_NN have_VBP been_VBN previously_RB reported_VBN [_NN 20_CD ]_NN -_: the_DT
+        prostate_NN ,_, seminal_NN vesicles_NNS ,_, rectum_NN ,_, and_CC bladder_NN were_VBD
+        outlined_VBN routinely_RB on_IN all_DT patients_NNS ,_, and_CC uniform_NN guidelines_NNS
+        were_VBD adhered_VBD to_TO in_IN order_NN to_TO minimize_VB inter-observer_JJ
+        variability_NN in_IN the_DT definition_NN of_IN these_DT structures_NNS ._. In_IN
+        particular_JJ ,_, with_IN regard_NN to_TO the_DT rectum_NN ,_, our_PRP$ institution_NN
+        followed_VBD routine_JJ Radiation_NNP Therapy_NNP Oncology_NNP Group_NNP (_( RTOG_NNP )_)
+        guidelines_NNS for_IN definition_NN -_: from_IN the_DT anus_JJ at_IN the_DT level_NN of_IN
+        the_DT ischial_NN tuberosities_NNS {_( lower_JJR border_NN }_) to_TO the_DT rectosigmoid_NN
+        junction_NN {_( upper_JJ border_NN }_) [_NN 21_CD ]_NN ._. The_DT bladder_NN was_VBD contoured_JJ
+        from_IN the_DT apex_NN to_TO the_DT dome_NN ,_, again_RB as_IN outlined_VBN per_IN RTOG_NNP
+        guidelines_NNS ._. The_DT planning_NN target_NN volume_NN (_( PTV_NNP )_) was_VBD the_DT
+        prostate_NN +_NN seminal_NN vesicles_NNS +_NN 1_CD cm_NN margin_NN for_IN the_DT initial_JJ
+        phase_NN ;_: after_IN 4500_CD -_: 5000_CD cGy_NN ,_, the_DT PTV_NNP was_VBD the_DT prostate_NN +_NN 1_CD cm_NN
+        margin_NN ._. Corresponding_VBG DVH_NNP 's_POS were_VBD computed_JJ for_IN the_DT PTV_NNP ,_,
+        entire_JJ rectum_NN (_( i_NNP ._. e_SYM ._. ,_, not_RB the_DT rectal_NN wall_NN or_CC rectal_NN
+        surface_NN )_) ,_, and_CC entire_JJ bladder_NN (_( again_RB ,_, not_RB the_DT bladder_NN wall_NN
+        or_CC bladder_NN surface_NN )_) ._. The_DT dose-fractionation_JJ and_CC total_JJ
+        treatment_NN time_NN for_IN each_DT patient_NN were_VBD recorded_VBN to_TO obtain_VB
+        values_NNS for_IN n_NN ,_, d_SYM ,_, and_CC T_NN in_IN Equation_NNP (_( 1_LS )_) above_IN ._.
+        No_DT charts_NNS for_IN those_DT patients_NNS treated_VBN after_IN 1999_CD were_VBD
+        reviewed_VBN to_TO ensure_VB long_JJ minimum_JJ follow-up_JJ ._. At_IN each_DT routine_JJ
+        follow-up_JJ ,_, the_DT GI_NNP and_CC GU_NNP complications_NNS using_VBG definitions_NNS
+        and_CC grading_VBG as_IN stated_VBN by_IN the_DT RTOG_NNP [_NN 22_CD ]_NN were_VBD recorded_VBN ._.
+        Thus_RB ,_, the_DT charts_NNS were_VBD reviewed_VBN to_TO identify_VB those_DT patients_NNS
+        with_IN significant_JJ (_( RTOG_NNP grade_NN 3_CD or_CC grade_NN 4_LS )_) late_JJ GI_NNP (_( large_JJ
+        bowel_NN )_) or_CC GU_NNP (_( bladder_NN )_) complications_NNS ._.
+        Of_IN the_DT 190_CD patients_NNS ,_, 6_CD patients_NNS (_( 3_CD ._. 2_LS %_NN )_) were_VBD found_VBN to_TO
+        have_VB late_JJ grade_NN 3_CD rectal_NN toxicity_NN and_CC 6_CD patients_NNS (_( 3_CD ._. 2_LS %_NN )_)
+        were_VBD found_VBN to_TO have_VB late_JJ grade_NN 3_CD urinary_JJ toxicity_NN ._. No_DT
+        patients_NNS were_VBD found_VBN to_TO have_VB grade_NN 4_CD GI_NNP or_CC GU_NNP toxicity_NN ._. A_DT
+        matched-pair_JJ group_NN of_IN patients_NNS (_( 6_CD GI_NNP and_CC 6_CD GU_NNP )_) with_IN grade_NN 0_CD
+        toxicity_NN having_VBG similar_JJ pretreatment_NN (_( age_NN ,_, stage_NN ,_, grade_NN ,_,
+        and_CC PSA_NNP )_) and_CC treatment_NN (_( technique_NN and_CC dose_NN )_) characteristics_NNS
+        were_VBD identified_VBN from_IN the_DT same_JJ patient_NN database_NN ._. The_DT
+        characteristics_NNS of_IN the_DT groups_NNS are_VBP shown_VBN in_IN comparison_NN with_IN
+        the_DT groups_NNS of_IN patients_NNS demonstrating_VBG toxicity_NN in_IN Tables_NNP
+        1_CD and_CC 2_CD ._. The_DT limitations_NNS and_CC potential_JJ biases_NNS inherent_JJ to_TO a_DT
+        matched-pair_JJ comparison_NN are_VBP well-understood_JJ by_IN the_DT authors_NNS ;_:
+        however_RB ,_, as_IN these_DT tables_NNS demonstrate_VBP ,_, there_EX is_VBZ no_DT
+        difference_NN in_IN the_DT pretreatment_NN and_CC treatment_NN
+        characteristics_NNS between_IN the_DT groups_NNS demonstrating_VBG and_CC not_RB
+        demonstrating_VBG GI_NNP [_NN Table_NNP 1_CD ]_NN and_CC GU_NNP [_NN Table_NNP 2_CD ]_NN toxicity_NN ._.
+        The_DT C-DVH_NNP 's_POS were_VBD already_RB constructed_VBN (_( prior_RB to_TO
+        undertaking_VBG the_DT current_JJ investigation_NN )_) for_IN the_DT patients_NNS in_IN
+        each_DT of_IN the_DT four_CD groups_NNS (_( grade_NN 0_CD -_: rectal_NN ,_, grade_NN 3_CD -_:
+        rectal_NN ,_, grade_NN 0_CD -_: bladder_NN ,_, grade_NN 3_CD -_: bladder_NN )_) -_: these_DT are_VBP
+        the_DT C-DVH_NNP 's_POS that_WDT were_VBD approved_VBN by_IN the_DT attending_VBG radiation_NN
+        oncologist_NN prior_RB to_TO delivering_VBG the_DT external_JJ beam_NN treatment_NN ._.
+        Then_RB ,_, these_DT C-DVH_NNP 's_POS derived_VBN from_IN each_DT of_IN the_DT individual_JJ
+        dose_NN distributions_NNS were_VBD averaged_VBN over_IN the_DT six_CD patients_NNS in_IN
+        each_DT of_IN the_DT four_CD groups_NNS (_( grade_NN 0_CD -_: rectal_NN ,_, grade_NN 3_CD -_:
+        rectal_NN ,_, grade_NN 0_CD -_: bladder_NN ,_, and_CC grade_NN 3_CD -_: bladder_NN )_) to_TO
+        produce_VB average_JJ C-DVH_NNP 's_POS ._.
+        Using_VBG equation_NN (_( 1_LS )_) ,_, the_DT time-dose_JJ fractionation_NN
+        parameters_NNS were_VBD incorporated_VBN to_TO transform_VB the_DT conventional_JJ
+        dose_NN to_TO BED_NNP at_IN each_DT conventional_JJ dose_NN level_NN ._. This_DT allowed_VBN
+        for_IN the_DT construction_NN of_IN the_DT BED-DVH_NNP 's_POS for_IN all_DT of_IN the_DT
+        patients_NNS ._. Then_RB ,_, in_IN a_DT process_NN similar_JJ to_TO that_DT for_IN the_DT
+        C-DVH_NNP 's_POS ,_, the_DT BED-DVH_NNP 's_POS derived_VBN from_IN each_DT of_IN the_DT individual_JJ
+        dose_NN distributions_NNS were_VBD averaged_VBN over_IN the_DT six_CD patients_NNS in_IN
+        each_DT of_IN the_DT four_CD groups_NNS (_( grade_NN 0_CD -_: rectal_NN ,_, grade_NN 3_CD -_:
+        rectal_NN ,_, grade_NN 0_CD -_: bladder_NN ,_, and_CC grade_NN 3_CD -_: bladder_NN )_) to_TO
+        produce_VB average_JJ BED-DVH_NNP 's_POS ._. The_DT authors_NNS are_VBP aware_JJ of_IN the_DT
+        recent_JJ efforts_NNS regarding_VBG advanced_VBN modeling_VBG concepts_NNS for_IN
+        evaluating_VBG the_DT relationship_NN between_IN physical_JJ irradiation_NN
+        and_CC biological_JJ damage_NN on_IN normal_JJ structures_NNS -_: in_IN particular_JJ ,_,
+        BED_NNP provides_VBZ a_DT measure_NN of_IN biological_JJ effect_NN at_IN a_DT point_NN at_IN
+        which_WDT it_PRP is_VBZ calculated_VBN -_: measuring_VBG the_DT absolute_JJ biological_JJ
+        effect_NN over_IN a_DT volume_NN having_VBG a_DT non-uniform_JJ dose_NN distribution_NN
+        formally_RB requires_VBZ the_DT computation_NN of_IN the_DT equivalent_NN uniform_NN
+        dose_NN (_( EUD_NNP )_) [_NN 23_CD ]_NN ._. However_RB ,_, this_DT caveat_NN does_VBZ not_RB apply_VB
+        directly_RB to_TO the_DT current_JJ task_NN ,_, because_IN the_DT goal_NN of_IN the_DT
+        current_JJ investigation_NN is_VBZ to_TO use_VB the_DT DVH_NNP (_( constructed_VBN using_VBG
+        either_CC conventional_JJ dose_NN or_CC BED_NNP )_) as_IN a_DT 
+        relative_JJ measure_NN of_IN biological_JJ
+        response_NN ,_, not_RB as_IN an_DT absolute_JJ measure_NN ,_, and_CC in_IN this_DT context_NN
+        constructing_VBG a_DT DVH_NNP from_IN BED_NNP computations_NNS and_CC averaging_VBG the_DT
+        DVH_NNP 's_POS (_( both_DT C-DVH_NNP 's_POS and_CC BED-DVH_NNP 's_POS )_) over_IN a_DT patient_NN
+        population_NN was_VBD felt_VBN to_TO be_VB an_DT appropriate_JJ methodology_NN ._.
+        After_IN construction_NN of_IN the_DT C-DVH_NNP 's_POS and_CC BED-DVH_NNP 's_POS ,_, it_PRP was_VBD
+        clear_JJ that_IN the_DT general_JJ shape_NN of_IN the_DT two_CD were_VBD slightly_RB
+        different_JJ ,_, as_IN would_MD be_VB expected_VBN by_IN the_DT non-linear_JJ
+        transformation_NN in_IN Equation_NNP (_( 1_LS )_) above_IN ._. In_IN order_NN to_TO perform_VB
+        comparison_NN of_IN the_DT individual_JJ matched_VBN pairs_NNS in_IN an_DT objective_NN ,_,
+        reproducible_JJ ,_, and_CC systematic_JJ manner_NN ,_, the_DT following_VBG measure_NN
+        of_IN normalized_JJ difference_NN in_IN the_DT average_JJ DVH_NNP was_VBD
+        computed_JJ :_:
+        
+        Equation_NNP (_( 2_LS )_) represents_VBZ an_DT attempt_NN to_TO compress_NNS the_DT DVH_NNP
+        difference_NN information_NN into_IN a_DT single_JJ quantity_NN ,_, and_CC was_VBD felt_VBN
+        to_TO be_VB a_DT valid_JJ quantity_NN as_IN the_DT DVH_NNP 's_POS did_VBD not_RB '_POS cross_NN '_'' -_: that_DT
+        is_VBZ ,_, the_DT grade_NN 3_CD DVH_NNP 's_POS were_VBD above_IN and_CC to_TO the_DT right_NN of_IN the_DT
+        grade_NN 0_CD DVH_NNP 's_POS at_IN all_DT dose_NN (_( or_CC BED_NNP )_) levels_NNS ._. Furthermore_RB ,_,
+        this_DT approach_NN was_VBD felt_VBN to_TO be_VB valid_JJ biologically_RB ,_, as_IN
+        integral_JJ dose_NN to_TO critical_JJ structures_NNS has_VBZ been_VBN correlated_JJ by_IN
+        many_JJ investigators_NNS with_IN late_JJ treatment_NN toxicity_NN [_NN 24_CD 25_CD 26_CD
+        27_CD 28_CD 29_CD 30_CD ]_NN ._. The_DT authors_NNS are_VBP also_RB aware_JJ of_IN the_DT special_JJ
+        problems_NNS related_VBN to_TO applying_VBG the_DT DVH_NNP for_IN tubular_JJ and_CC
+        surface_NN structures_NNS (_( such_JJ as_IN the_DT rectum_NN and_CC bladder_NN )_) [_NN 28_CD 31_CD
+        ]_NN ._. However_RB ,_, because_IN C-DVH_NNP 's_POS of_IN the_DT whole_JJ organs_NNS were_VBD used_VBN
+        as_IN the_DT basis_NN for_IN the_DT original_JJ clinical_JJ decision_NN making_VBG on_IN
+        the_DT patient_NN population_NN under_IN consideration_NN (_( i_NNP ._. e_SYM ._. ,_, those_DT
+        treated_VBN before_IN 1999_CD )_) ,_, it_PRP was_VBD felt_VBN that_IN integral_JJ dose_NN to_TO the_DT
+        entire_JJ rectum_NN and_CC entire_JJ bladder_NN would_MD be_VB appropriate_JJ as_IN
+        one_CD measure_NN for_IN clinical_JJ comparison_NN of_IN the_DT use_NN of_IN BED-DVH_NNP 's_POS
+        versus_CC C-DVH_NNP 's_POS ._.
+        Equation_NNP (_( 2_LS )_) was_VBD applied_VBN to_TO compute_VB the_DT δ_NN 
+        AUC_NNP 's_POS (_( both_DT for_IN the_DT C-DVH_NNP 's_POS and_CC for_IN the_DT
+        BED-DVH_NNP 's_POS )_) for_IN each_DT of_IN the_DT six_CD matched-patient_JJ pairs_NNS in_IN the_DT
+        rectal_NN toxicity_NN category_NN and_CC to_TO each_DT of_IN the_DT six_CD
+        matched-patient_JJ pairs_NNS in_IN the_DT bladder_NN toxicity_NN category_NN ._. In_IN
+        order_NN to_TO perform_VB a_DT statistical_JJ comparison_NN between_IN these_DT
+        matched-pair_JJ δ_NN 
+        AUC_NNP 's_POS obtained_VBN using_VBG C-DVH_NNP 's_POS and_CC those_DT
+        obtained_VBN using_VBG BED-DVH_NNP 's_POS ,_, the_DT student_NN 's_POS t-test_JJ was_VBD
+        used_VBN ._.
+        Although_IN the_DT treatment_NN decisions_NNS were_VBD made_VBN with_IN
+        knowledge_NN of_IN the_DT integral_JJ dose_NN delivered_VBN to_TO the_DT critical_JJ
+        structures_NNS ,_, the_DT authors_NNS recognize_VBP that_IN there_EX is_VBZ controversy_NN
+        with_IN regard_NN to_TO the_DT classification_NN of_IN biological_JJ response_NN of_IN
+        the_DT normal_JJ structures_NNS under_IN study_NN in_IN the_DT current_JJ
+        investigation_NN ._. In_IN particular_JJ ,_, many_JJ recent_JJ reports_NNS (_( e_SYM ._. g_SYM ._. ,_, [_NN
+        32_CD ]_NN )_) suggest_VBP that_IN the_DT bladder_NN and_CC rectum_NN may_MD be_VB serial_NN
+        rather_RB than_IN parallel_JJ structures_NNS with_IN regard_NN to_TO their_PRP$
+        biological_JJ response_NN to_TO radiation_NN injury_NN ._. Thus_RB ,_, an_DT
+        alternative_JJ measure_NN of_IN merit_NN was_VBD chosen_VBN to_TO complement_VB the_DT
+        AUC_NNP analysis_NN above_IN ._. Specifically_RB ,_, the_DT percent_NN volume_NN
+        receiving_VBG above_IN a_DT set_VBN high_JJ dose_NN level_NN (_( in_IN this_DT study_NN ,_, 60_CD
+        Gy_NNP )_) was_VBD analyzed_VBN ._. The_DT analogous_JJ expression_NN to_TO Equation_NNP (_( 2_LS )_)
+        is_VBZ the_DT following_VBG :_:
+        
+        Equation_NNP (_( 3_LS )_) was_VBD applied_VBN in_IN exactly_RB the_DT same_JJ manner_NN as_IN
+        above_IN to_TO compute_VB δ_NN 
+        V_NNP 60_CD 's_POS for_IN the_DT C-DVH_NNP 's_POS and_CC BED-DVH_NNP 's_POS for_IN
+        both_DT the_DT bladder_NN and_CC rectum_NN ._. It_PRP should_MD be_VB noted_VBN that_IN when_WRB
+        applying_VBG Equation_NNP (_( 3_LS )_) to_TO the_DT BED-DVH_NNP 's_POS ,_, the_DT 60_CD Gy_NNP
+        conventional_JJ dose_NN transforms_VBZ [_NN using_VBG Equation_NNP (_( 1_LS )_) ,_, assuming_VBG
+        once-daily_JJ 2_CD Gy_NNP fractions_NNS ]_NN to_TO approximately_RB 100_CD Gy_NNP ;_: thus_RB ,_,
+        V_NNP 60_CD on_IN the_DT C-DVH_NNP 's_POS corresponds_NNS to_TO V_NNP 100_CD on_IN the_DT BED-DVH_NNP 's_POS ._.
+        The_DT statistical_JJ comparison_NN between_IN the_DT matched-pair_JJ δ_NN 
+        V_NNP 60_CD 's_POS obtained_VBN between_IN C-DVH_NNP 's_POS and_CC
+        BED-DVH_NNP 's_POS was_VBD performed_VBN using_VBG the_DT student_NN 's_POS t-test_JJ ._.
+      
+      
+        Results_NNS
+        As_IN expected_VBN ,_, the_DT DVH_NNP 's_POS (_( both_DT C-DVH_NNP 's_POS and_CC BED-DVH_NNP 's_POS )_) were_VBD
+        predictive_JJ of_IN rectal_NN and_CC urinary_JJ toxicity_NN -_: that_DT is_VBZ ,_, those_DT
+        that_WDT developed_VBD late_JJ GI_NNP or_CC GU_NNP toxicity_NN had_VBD DVH_NNP 's_POS that_WDT
+        demonstrated_VBD more_RBR integral_JJ dose_NN to_TO the_DT rectum_NN or_CC bladder_NN
+        than_IN those_DT patients_NNS who_WP did_VBD not_RB develop_VB such_JJ toxicity_NN ._. This_DT
+        reinforces_VBZ and_CC validates_NNS the_DT well-known_JJ and_CC widespread_JJ use_NN
+        of_IN DVH_NNP 's_POS in_IN evaluating_VBG external_JJ beam_NN [_NN 5_CD 24_CD 25_CD 26_CD 27_CD 28_CD 29_CD
+        ]_NN and_CC interstitial_NN [_NN 33_CD ]_NN treatment_NN plans_NNS for_IN prostate_NN
+        cancer_NN patients_NNS ._.
+        Figure_NN 1_CD shows_VBZ the_DT comparison_NN for_IN the_DT case_NN of_IN the_DT
+        conventional_JJ DVH_NNP 's_POS of_IN the_DT rectum_NN ._. In_IN this_DT figure_NN ,_, the_DT
+        average_JJ C-DVH_NNP of_IN the_DT rectum_NN was_VBD computed_JJ for_IN the_DT 6_CD patients_NNS
+        in_IN the_DT grade_NN 3_CD group_NN as_RB well_RB as_IN the_DT 6_CD patients_NNS in_IN the_DT grade_NN
+        0_CD group_NN ._. The_DT average_JJ DVH_NNP 's_POS are_NN displayed_VBN -_: as_IN is_VBZ
+        demonstrated_VBN ,_, the_DT grade_NN 3_CD curve_NN is_VBZ to_TO the_DT right_NN of_IN and_CC
+        above_IN the_DT grade_NN 0_CD curve_NN ._. Similar_JJ analyses_NNS were_VBD done_VBN for_IN the_DT
+        BED-DVH-Rectum_NNP (_( as_IN demonstrated_VBN in_IN Figure_NN 2_LS )_) ,_, for_IN the_DT
+        C-DVH-B_NNP ladder_NN (_( as_IN demonstrated_VBN in_IN Figure_NN 3_LS )_) and_CC for_IN the_DT
+        BED-DVH-Bladder_NNP (_( as_IN demonstrated_VBN in_IN Figure_NN 4_LS )_) ._. It_PRP should_MD be_VB
+        noted_VBN that_IN in_IN all_DT cases_NNS ,_, the_DT average_JJ grade_NN 3_CD DVH_NNP 's_POS -_:
+        conventional_JJ or_CC BED_NNP -_: were_VBD consistently_RB above_IN and_CC to_TO the_DT
+        right_NN of_IN the_DT corresponding_JJ grade_NN 0_CD curve_NN at_IN each_DT dose_NN (_( or_CC
+        BED_NNP )_) level_NN from_IN zero_CD to_TO maximum_NN ,_, again_RB validating_VBG the_DT
+        uniform_NN comparison_NN approach_NN summarized_VBD in_IN Equations_NNP (_( 2_LS )_) and_CC
+        (_( 3_LS )_) ._.
+        Table_NNP 3_CD shows_VBZ the_DT results_NNS of_IN the_DT detailed_VBN matched-pair_JJ
+        AUC_NNP analysis_NN ._. In_IN this_DT table_NN ,_, the_DT δ_NN 
+        AUC_NNP 's_POS obtained_VBN using_VBG the_DT C-DVH_NNP 's_POS and_CC
+        BED-DVH_NNP 's_POS for_IN each_DT of_IN the_DT matched-patient_JJ pairs_NNS is_VBZ
+        displayed_VBN ._. The_DT students_NNS '_POS t-test_JJ was_VBD used_VBN to_TO obtain_VB a_DT
+        p-value_JJ for_IN each_DT of_IN the_DT rectal_NN toxicity_NN and_CC bladder_NN
+        toxicity_NN categories_NNS ._. As_IN Table_NNP 3_CD displays_NNS ,_, the_DT δ_NN 
+        AUC_NNP analysis_NN demonstrates_VBZ a_DT p-value_JJ of_IN
+        0_CD ._. 036_CD for_IN the_DT rectal_NN toxicity_NN comparison_NN ,_, and_CC a_DT p-value_JJ of_IN
+        0_CD ._. 065_CD for_IN the_DT bladder_NN toxicity_NN comparison_NN ,_, suggesting_VBG that_DT
+        [_NN when_WRB using_VBG AUC_NNP as_IN the_DT measure_NN of_IN merit_NN ]_NN the_DT BED-DVH_NNP 's_POS were_VBD
+        significantly_RB better-correlated_JJ (_( than_IN the_DT corresponding_JJ
+        C-DVH_NNP 's_POS )_) with_IN rectal_NN toxicity_NN ,_, and_CC marginally_RB
+        better-correlated_JJ with_IN bladder_NN toxicity_NN ._.
+        Table_NNP 4_CD displays_NNS the_DT results_NNS of_IN the_DT matched-pair_JJ V_NNP 60_CD
+        analysis_NN ._. In_IN this_DT table_NN ,_, the_DT δ_NN 
+        V_NNP 60_CD 's_POS obtained_VBN using_VBG the_DT C-DVH_NNP 's_POS and_CC
+        BED-DVH_NNP 's_POS for_IN each_DT of_IN the_DT matched-patient_JJ pairs_NNS is_VBZ
+        displayed_VBN ._. This_DT table_NN demonstrates_VBZ a_DT p-value_JJ of_IN 0_CD ._. 021_CD for_IN
+        the_DT rectal_NN toxicity_NN comparison_NN ,_, and_CC a_DT p-value_JJ of_IN 0_CD ._. 021_CD for_IN
+        the_DT bladder_NN toxicity_NN comparison_NN ,_, suggesting_VBG that_DT [_NN when_WRB
+        using_VBG V_NNP 60_CD as_IN the_DT measure_NN of_IN merit_NN ]_NN the_DT BED-DVH_NNP 's_POS were_VBD
+        significantly_RB better-correlated_JJ (_( than_IN the_DT corresponding_JJ
+        C-DVH_NNP 's_POS )_) with_IN rectal_NN toxicity_NN and_CC with_IN bladder_NN
+        toxicity_NN ._.
+      
+      
+        Conclusions_NNP
+        The_DT values_NNS for_IN δ_NN 
+        AUC_NNP and_CC δ_NN 
+        V_NNP 60_CD are_VBP higher_JJR for_IN the_DT BED-DVH_NNP 's_POS of_IN the_DT
+        rectum_NN and_CC bladder_NN than_IN for_IN the_DT counterpart_NN C-DVH_NNP 's_POS ._.
+        Because_IN the_DT AUC_NNP and_CC V_NNP 60_CD are_VBP dosimetric_JJ endpoints_NNS used_VBN
+        routinely_RB for_IN the_DT evaluation_NN of_IN radiation_NN treatment_NN plans_NNS ,_,
+        this_DT analysis_NN suggests_VBZ that_IN BED-DVH_NNP 's_POS for_IN the_DT rectum_NN and_CC
+        bladder_NN correlate_VBP better_JJR with_IN late_JJ toxicity_NN than_IN C-DVH_NNP 's_POS
+        and_CC should_MD be_VB considered_VBN when_WRB attempting_VBG to_TO minimize_VB late_JJ
+        GI_NNP and_CC GU_NNP toxicity_NN after_IN radiotherapy_NN for_IN prostate_NN cancer_NN ._.
+        Because_IN this_DT analysis_NN was_VBD performed_VBN with_IN two_CD independent_JJ
+        measures_NNS of_IN merit_NN of_IN the_DT DVH_NNP 's_POS -_: the_DT AUC_NNP and_CC the_DT V_NNP 60_CD ,_, the_DT
+        early_JJ results_NNS reported_VBD herein_NN appear_VBP promising_VBG for_IN the_DT use_NN
+        of_IN BED-DVH_NNP 's_POS ._.
+        Because_IN the_DT patient_NN population_NN having_VBG late_JJ grade_NN 3_CD /_NN 4_CD
+        toxicity_NN (_( which_WDT is_VBZ a_DT small_JJ population_NN but_CC was_VBD chosen_VBN as_IN the_DT
+        target_NN population_NN that_WDT is_VBZ most_RBS likely_JJ to_TO benefit_VB from_IN the_DT
+        incorporation_NN of_IN BED-DVH_NNP 's_POS into_IN the_DT process_NN of_IN treatment_NN
+        planning_NN )_) was_VBD the_DT focus_NN of_IN this_DT initial_JJ investigation_NN ,_, the_DT
+        number_NN of_IN patients_NNS in_IN the_DT current_JJ study_NN is_VBZ understandably_RB
+        small_JJ ._. Six_CD cases_NNS of_IN late_JJ grade_NN 3_CD /_NN 4_CD GI_NNP toxicity_NN represent_VB
+        approximately_RB 3_CD %_NN of_IN the_DT study_NN population_NN -_: this_DT low_JJ
+        incidence_NN also_RB applies_VBZ to_TO the_DT six_CD cases_NNS of_IN late_JJ grade_NN 3_CD /_NN 4_CD
+        GU_NNP toxicity_NN ._. Assuming_VBG that_IN the_DT same_JJ low_JJ rate_NN of_IN late_JJ
+        toxicity_NN is_VBZ maintained_VBN ,_, the_DT number_NN of_IN cases_NNS of_IN such_JJ late_JJ
+        complications_NNS will_MD not_RB increase_VB significantly_RB with_IN a_DT
+        significant_JJ increase_NN in_IN size_NN of_IN the_DT study_NN population_NN ._. Thus_RB ,_,
+        while_IN the_DT results_NNS are_VBP encouraging_VBG for_IN the_DT correlation_NN of_IN
+        BED-DVH_NNP 's_POS to_TO rectal_NN toxicity_NN ,_, the_DT correlation_NN to_TO bladder_NN
+        toxicity_NN using_VBG the_DT integral_JJ dose_NN /_NN AUC_NNP endpoint_NN did_VBD not_RB reach_VB
+        statistical_JJ significance_NN ,_, likely_JJ due_NN to_TO the_DT limitations_NNS in_IN
+        sample_NN size_NN ._. However_RB ,_, because_IN the_DT integral_JJ dose_NN /_NN AUC_NNP
+        analysis_NN did_VBD reach_VB significance_NN for_IN the_DT rectum_NN ,_, and_CC because_IN
+        the_DT V_NNP 60_CD analysis_NN did_VBD reach_VB statistical_JJ significance_NN for_IN
+        both_DT the_DT bladder_NN and_CC rectum_NN ,_, the_DT results_NNS of_IN the_DT current_JJ
+        investigation_NN represent_VB initial_JJ success_NN with_IN the_DT
+        application_NN of_IN the_DT BED-DVH_NNP concept_NN ._.
+        As_IN one_CD means_NNS of_IN avoiding_VBG the_DT statistical_JJ problems_NNS posed_VBN
+        by_IN evaluating_VBG late_JJ toxicity_NN ,_, analyzing_VBG early_JJ grade_NN 3_CD /_NN 4_CD
+        toxicity_NN ,_, which_WDT has_VBZ a_DT higher_JJR incidence_NN ,_, may_MD allow_VB for_IN
+        greater_JJR statistical_JJ power_NN in_IN validating_VBG the_DT BED-DVH_NNP
+        concept_NN ._. However_RB ,_, because_IN the_DT modeling_NN for_IN the_DT Tp_NNP ,_, alpha_NN ,_,
+        and_CC alpha_NN /_NN beta_NN is_VBZ altogether_RB different_JJ for_IN early_JJ vs_NNS late_JJ
+        structures_NNS and_CC because_IN the_DT transformation_NN between_IN late_JJ to_TO
+        early_JJ parameters_NNS in_IN Equations_NNP (_( 1_CD -_: 2_LS )_) above_IN are_VBP nonlinear_NN ,_,
+        the_DT results_NNS of_IN the_DT current_JJ analysis_NN (_( and_CC corresponding_JJ
+        conclusions_NNS )_) may_MD be_VB completely_RB different_JJ from_IN such_JJ an_DT early_JJ
+        toxicity_NN analysis_NN ._. For_IN these_DT reasons_NNS ,_, the_DT use_NN of_IN BED-DVH_NNP 's_POS
+        for_IN evaluating_VBG and_CC predicting_VBG early_JJ GI_NNP and_CC GU_NNP toxicity_NN will_MD
+        be_VB the_DT subject_NN of_IN a_DT separate_JJ communication_NN ._.
+        The_DT results_NNS of_IN the_DT current_JJ investigation_NN are_VBP encouraging_VBG
+        -_: the_DT well-known_JJ conventional_JJ DVH_NNP can_MD be_VB successfully_RB
+        expanded_VBN to_TO include_VB treatment_NN delivery_NN ,_, tissue_NN biology_NN ,_, and_CC
+        time_NN /_NN fractionation-related_JJ information_NN that_IN better_JJR
+        represents_VBZ the_DT true_JJ effect_NN of_IN the_DT treatment_NN on_IN critical_JJ
+        structures_NNS ._. Other_JJ investigators_NNS have_VBP expanded_VBN the_DT C-DVH_NNP to_TO
+        include_VB functional_JJ and_CC spatial_NN information_NN [_NN 4_CD 34_CD 35_CD ]_NN ,_,
+        but_CC 
+        the_DT current_JJ investigation_NN is_VBZ the_DT first_JJ
+        report_NN correlating_VBG a_DT DVH_NNP which_WDT has_VBZ been_VBN expanded_VBN to_TO include_VB
+        BED_NNP parameters_NNS with_IN late_JJ treatment_NN toxicity_NN for_IN prostate_NN
+        cancer_NN irradiation_NN ._.
+        Although_IN the_DT initial_JJ focus_NN of_IN this_DT investigation_NN was_VBD the_DT
+        study_NN of_IN late_JJ radiation_NN effects_NNS on_IN the_DT rectum_NN and_CC bladder_NN ,_,
+        there_EX is_VBZ no_DT conceptual_JJ limitation_NN to_TO the_DT use_NN of_IN the_DT
+        techniques_NNS described_VBD herein_NN to_TO study_VB early_JJ effects_NNS of_IN
+        treatment_NN (_( for_IN acute_JJ toxicity_NN assessment_NN )_) or_CC to_TO study_VB
+        target_NN structures_NNS (_( for_IN outcome_NN /_NN survival_NN analysis_NN )_) at_IN any_DT
+        anatomic_JJ site_NN ._. The_DT results_NNS of_IN the_DT current_JJ investigation_NN ,_,
+        while_IN encouraging_VBG ,_, are_VBP preliminary_JJ and_CC require_VB validation_NN
+        by_IN other_JJ investigators_NNS -_: because_IN of_IN the_DT low_JJ incidence_NN of_IN
+        late_JJ grade_NN 3_CD /_NN 4_CD complications_NNS ,_, such_JJ an_DT analysis_NN might_MD be_VB
+        better_RBR undertaken_VBN at_IN a_DT multi-institutional_JJ level_NN ._.
+      
+      
+        Competing_VBG interests_NNS
+        None_NNP Declared_NNP
+      
+      
+        Authors_NNP '_'' contributions_NNS
+        ABJ_NNP designed_VBD and_CC coordinated_VBN the_DT investigation_NN and_CC
+        drafted_VBD the_DT manuscript_NN ._. CMH_NNP ,_, CAP_NNP ,_, and_CC JCR_NNP constructed_VBN and_CC
+        implemented_VBD the_DT software_NN code_NN for_IN which_WDT the_DT dose_NN volume_NN
+        histograms_NNS could_MD be_VB computed_JJ and_CC averaged_VBD ._. LK_NNP and_CC SV_NNP were_VBD
+        responsible_JJ for_IN maintaining_VBG the_DT patient_NN database_NN -_: in_IN
+        addition_NN SV_NNP provided_VBD general_JJ methodological_JJ and_CC clinical_JJ
+        guidance_NN ._. All_DT authors_NNS have_VBP read_VBN and_CC approved_VBD the_DT final_JJ
+        manuscript_NN ._.
+      
+    
+  

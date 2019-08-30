@@ -1,0 +1,400 @@
+
+  
+    
+      
+        Background_NNP
+        Expression_NNP microarrays_NNS provide_VBP a_DT vehicle_NN for_IN exploring_VBG
+        the_DT gene_NN expression_NN in_IN a_DT manner_NN that_WDT is_VBZ rapid_JJ ,_, sensitive_JJ ,_,
+        systematic_JJ and_CC comprehensive_JJ [_NN 1_CD 2_CD 3_CD 4_CD 5_CD 6_CD ]_NN ._. Thousands_NNS of_IN
+        genes_NNS can_MD now_RB be_VB studied_VBN simultaneously_RB without_IN the_DT need_NN of_IN
+        an_DT 
+        a_DT priori_FW candidate_NN gene_NN list_NN ._. In_IN
+        order_NN to_TO keep_VB up_RP with_IN advances_NNS in_IN genome_NN sequencing_VBG ,_, the_DT
+        number_NN and_CC composition_NN of_IN representative_NN gene_NN sequences_NNS are_VBP
+        frequently_RB updated_VBN and_CC probe_NN sets_NNS representing_VBG newly_RB
+        discovered_VBN expressed_VBD sequences_NNS are_VBP added_VBN on_IN commercial_JJ
+        microarrays_NNS ._. Furthermore_RB ,_, existing_VBG probe_NN sets_NNS are_VBP revised_VBN
+        because_IN probe_NN sequences_NNS once_RB thought_VBD to_TO be_VB unique_JJ for_IN a_DT
+        single_JJ gene_NN are_VBP occasionally_RB found_VBN to_TO be_VB less_RBR specific_JJ ._.
+        This_DT leads_VBZ to_TO the_DT question_NN of_IN whether_IN results_NNS from_IN newer_JJR
+        microarray_NN generations_NNS are_VBP comparable_JJ to_TO those_DT of_IN previous_JJ
+        generations_NNS ._. The_DT cost_NN ,_, time_NN and_CC irreplaceable_JJ nature_NN of_IN
+        some_DT of_IN the_DT samples_NNS used_VBN for_IN microarray_NN analysis_NN require_VB
+        that_IN a_DT method_NN to_TO compare_VB data_NNS from_IN different_JJ generations_NNS be_VB
+        developed_VBN ._.
+        Although_IN Affymetrix_NNP Chips_NNPS can_MD each_DT measure_VB the_DT
+        expression_NN of_IN over_IN 12_CD ,_, 000_CD genes_NNS and_CC ESTs_NNP ,_, the_DT true_JJ
+        transcript_NN level_NN is_VBZ confounded_JJ by_IN a_DT substantial_JJ amount_NN of_IN
+        noise_NN and_CC variability_NN induced_VBN by_IN both_DT the_DT large_JJ number_NN of_IN
+        observations_NNS and_CC the_DT wide_JJ range_NN of_IN gene_NN expression_NN values_NNS [_NN
+        7_CD ]_NN ._. Microarrays_NNP are_VBP sensitive_JJ to_TO noise_NN from_IN many_JJ sources_NNS
+        including_VBG the_DT manufacturing_NN process_NN and_CC the_DT experimental_JJ
+        (_( RNA_NNP isolation_NN ,_, labeling_VBG ,_, hybridization_NN ,_, staining_VBG ,_, washing_VBG
+        and_CC scanning_VBG )_) processes_NNS ._. Even_RB within_IN the_DT same_JJ generation_NN of_IN
+        chips_NNS and_CC for_IN replicates_NNS of_IN single_JJ tissue_NN samples_NNS ,_, there_EX
+        may_MD be_VB substantial_JJ variability_NN in_IN the_DT measurement_NN levels_NNS
+        for_IN the_DT same_JJ gene_NN [_NN 8_CD ]_NN ._. It_PRP is_VBZ critical_JJ to_TO distinguish_VB
+        this_DT noise_NN from_IN the_DT changes_NNS that_WDT are_VBP real_JJ ._. Many_JJ empirical_JJ
+        approaches_NNS have_VBP been_VBN adopted_VBN to_TO decrease_VB noise_NN from_IN
+        microarray_NN based_VBD experiments_NNS ._. Different_JJ methodologies_NNS and_CC
+        strategies_NNS for_IN reducing_VBG noise_NN include_VBP establishing_VBG an_DT
+        arbitrary_JJ global_JJ threshold_NN for_IN fold-changes_JJ [_NN 9_CD ]_NN ,_,
+        noise-filtering_JJ look_NN up_RP tables_NNS [_NN 8_CD ]_NN ,_, normalization_NN
+        techniques_NNS to_TO make_VB microarrays_NNS comparable_JJ ,_, such_JJ as_IN using_VBG
+        ANOVA_NNP methods_NNS to_TO provide_VB estimates_NNS of_IN changes_NNS in_IN gene_NN
+        expression_NN that_WDT are_VBP corrected_VBN for_IN potential_JJ confounding_VBG
+        effects_NNS [_NN 10_CD 11_CD ]_NN ,_, and_CC using_VBG replicate_VB experiments_NNS to_TO
+        estimate_VB the_DT variability_NN in_IN reported_JJ gene_NN expression_NN [_NN 12_CD ]_NN
+        ._. Applying_VBG fold_VB change_NN thresholds_NNS has_VBZ been_VBN the_DT most_RBS common_JJ
+        method_NN of_IN reducing_VBG noise_NN by_IN filtering_VBG out_RP the_DT false_JJ
+        positives_NNS [_NN 8_CD 9_CD 13_CD ]_NN ._. However_RB ,_, much_JJ of_IN the_DT work_NN done_VBN to_TO
+        date_NN has_VBZ focused_VBN on_IN decreasing_VBG noise_NN within_IN the_DT same_JJ
+        generation_NN and_CC has_VBZ not_RB addressed_VBN the_DT issue_NN of_IN comparability_NN
+        across_IN generations_NNS ._.
+        In_IN this_DT analysis_NN ,_, we_PRP have_VBP estimated_VBN the_DT level_NN of_IN
+        congruency_NN between_IN corresponding_JJ probe_NN sets_NNS on_IN two_CD
+        generations_NNS of_IN Affymetrix_NNP Chips_NNPS ,_, HuGeneFL_NNP (_( old_JJ )_) and_CC HG-U_NNP 95_CD A_DT
+        (_( new_JJ )_) ._. We_PRP aim_VBP to_TO understand_VB the_DT characteristics_NNS that_WDT
+        contribute_VBP to_TO the_DT systematic_JJ variability_NN of_IN the_DT expression_NN
+        values_NNS for_IN experiments_NNS performed_VBN on_IN different_JJ generations_NNS
+        of_IN microarrays_NNS and_CC extract_VB features_NNS that_WDT would_MD make_VB them_PRP
+        more_RBR comparable_JJ ._. Furthermore_RB ,_, we_PRP address_VBP the_DT issue_NN of_IN
+        variable_JJ scanner_NN settings_NNS ,_, since_IN a_DT ten-fold_JJ decrease_NN in_IN the_DT
+        photo-multiplier_JJ tube_NN (_( PMT_NNP )_) settings_NNS of_IN the_DT scanner_NN was_VBD
+        another_DT parameter_NN introduced_VBN by_IN Affymetrix_NNP in_IN parallel_JJ to_TO
+        the_DT new_JJ chip_NN generation_NN ,_, and_CC interfered_VBD with_IN data_NNS
+        comparability_NN ._. More_RBR specifically_RB ,_, to_TO expand_VB the_DT dynamic_JJ
+        range_NN of_IN the_DT expression_NN assay_NN ,_, a_DT reduction_NN of_IN the_DT system_NN
+        amplification_NN was_VBD recommended_VBN when_WRB using_VBG HG-U_NNP 95_CD A_DT chips_NNS ._.
+      
+      
+        Results_NNS
+        In_IN order_NN to_TO assess_VB the_DT accuracy_NN and_CC reproducibility_NN of_IN
+        the_DT experiments_NNS ,_, as_RB well_RB as_IN the_DT effect_NN of_IN different_JJ scanner_NN
+        settings_NNS and_CC different_JJ chip_NN generations_NNS we_PRP performed_VBD the_DT
+        following_VBG types_NNS of_IN comparisons_NNS ._. The_DT labeled_VBN cRNA_NN from_IN a_DT
+        single_JJ sample_NN was_VBD split_VBN in_IN two_CD ,_, hybridized_JJ to_TO two_CD HG-U_NNP 95_CD A_DT
+        chips_NNS and_CC both_DT were_VBD scanned_JJ at_IN "_'' low_JJ gain_NN "_'' photo-multiplier_JJ
+        tube_NN (_( PMT_NNP )_) settings_NNS (_( Exp_NNP 1_LS )_) ._. The_DT labeled_VBN cRNA_NN from_IN a_DT sample_NN
+        was_VBD split_VBN ,_, hybridized_JJ to_TO two_CD HG-U_NNP 95_CD A_DT chips_NNS ,_, one_CD was_VBD scanned_JJ
+        at_IN "_'' low_JJ gain_NN "_'' PMT_NNP settings_NNS ,_, the_DT other_JJ at_IN "_'' high_JJ gain_NN "_''
+        settings_NNS (_( Exp_NNP 2_LS )_) ._. The_DT labeled_VBN cRNA_NN from_IN a_DT sample_NN was_VBD split_VBN ,_,
+        hybridized_JJ to_TO two_CD HuGeneFL_NNP chips_NNS ,_, one_CD was_VBD scanned_JJ at_IN "_'' low_JJ
+        gain_NN "_'' ,_, the_DT other_JJ at_IN "_'' high_JJ gain_NN "_'' (_( Exp_NNP 3_LS )_) ._. The_DT labeled_VBN cRNA_NN
+        from_IN one_CD sample_NN was_VBD split_VBN ,_, hybridized_JJ to_TO a_DT HuGeneFL_NNP chip_NN
+        and_CC a_DT HG-U_NNP 95_CD A_DT chip_NN ,_, the_DT HuGeneFL_NNP scanned_JJ at_IN "_'' high_JJ gain_NN "_'' and_CC
+        the_DT HG-U_NNP 95_CD A_DT at_IN "_'' low_JJ gain_NN "_'' (_( Exp_NNP 4_LS )_) according_VBG to_TO
+        manufacturer_NN 's_POS recommendations_NNS ._.
+        For_IN the_DT two_CD HG-U_NNP 95_CD A_DT chip-pairs_JJ ,_, where_WRB each_DT chip-pair_JJ was_VBD
+        hybridized_JJ with_IN a_DT single_JJ tissue_NN sample_NN and_CC scanned_JJ at_IN the_DT
+        same_JJ "_'' low_JJ gain_NN "_'' scanner_NN setting_NN ,_, the_DT correlations_NNS across_IN
+        all_DT probe_NN sets_NNS were_VBD greater_JJR than_IN 0_CD ._. 99_CD (_( Exp_NNP 1_CD in_IN Table_NNP 1_LS )_) ._.
+        Looking_VBG at_IN the_DT four_CD HG-U_NNP 95_CD A_DT chip-pairs_JJ in_IN Exp_NNP 2_CD ,_, with_IN one_CD
+        chip_NN of_IN each_DT pair_NN scanned_JJ at_IN "_'' high_JJ gain_NN "_'' and_CC the_DT other_JJ at_IN
+        "_'' low_JJ gain_NN "_'' PMT_NNP settings_NNS ,_, the_DT correlation_NN coefficients_NNS
+        across_IN all_DT probe_NN sets_NNS ranged_VBD from_IN 0_CD ._. 756_CD to_TO 0_CD ._. 872_CD (_( Table_NNP 1_LS )_) ._.
+        The_DT same_JJ analysis_NN on_IN the_DT three_CD HuGeneFL_NNP chip-pairs_JJ (_( with_IN
+        one_CD of_IN each_DT pair_NN scanned_JJ at_IN "_'' high_JJ gain_NN "_'' and_CC the_DT other_JJ at_IN
+        "_'' low_JJ gain_NN "_'' )_) resulted_VBD in_IN the_DT correlation_NN coefficients_NNS across_IN
+        the_DT 7_CD ,_, 129_CD probe_NN sets_NNS ranging_VBG between_IN 0_CD ._. 904_CD and_CC 0_CD ._. 947_CD (_( Exp_NNP
+        3_CD ,_, Table_NNP 1_LS )_) ._. Finally_RB ,_, in_IN the_DT analysis_NN of_IN the_DT 8_CD ,_, 044_CD common_JJ
+        probe_NN sets_NNS between_IN HuGeneFL_NNP chips_NNS (_( measured_VBN at_IN "_'' high_JJ gain_NN "_'' )_)
+        and_CC HG-U_NNP 95_CD A_DT chips_NNS (_( measured_VBN at_IN "_'' low_JJ gain_NN "_'' )_) ,_, the_DT correlation_NN
+        coefficients_NNS ranged_VBD between_IN 0_CD ._. 730_CD and_CC 0_CD ._. 810_CD (_( Exp_NNP 4_CD ,_, Table_NNP
+        1_LS )_) ._.
+        The_DT rest_NN of_IN the_DT analyses_NNS focused_VBN solely_RB on_IN the_DT
+        measurements_NNS made_VBN on_IN the_DT seven_CD samples_NNS split_NN across_IN the_DT
+        HuGeneFL_NNP at_IN "_'' high_JJ gain_NN "_'' and_CC the_DT HG-U_NNP 95_CD A_DT chips_NNS at_IN "_'' low_JJ
+        gain_NN "_'' ,_, as_IN this_DT is_VBZ the_DT most_RBS common_JJ comparison_NN that_WDT will_MD need_VB
+        to_TO be_VB made_VBN (_( Exp_NNP 4_LS )_) ._. The_DT correlation_NN between_IN the_DT gene_NN
+        expression_NN values_NNS was_VBD computed_JJ for_IN different_JJ subsets_NNS of_IN
+        probe_NN sets_NNS based_VBN on_IN i_NNP )_) the_DT number_NN of_IN common_JJ probe_NN pairs_NNS ;_:
+        ii_NN )_) the_DT number_NN of_IN '_POS P_NN '_'' calls_VBZ assigned_VBN to_TO every_DT probe_NN set_VBN ;_:
+        iii_NN )_) the_DT expression_NN level_NN of_IN the_DT genes_NNS on_IN HuGeneFL_NNP
+        chips_NNS ._.
+        For_IN the_DT first_JJ analysis_NN each_DT subset_NN consisted_VBD of_IN probe_NN
+        sets_NNS with_IN the_DT same_JJ number_NN of_IN common_JJ probe_NN pairs_NNS ._. The_DT
+        correlation_NN coefficient_NN (_( r_LS )_) was_VBD calculated_VBN by_IN plotting_VBG all_PDT
+        the_DT measurements_NNS on_IN the_DT HuGeneFL_NNP versus_CC all_PDT the_DT
+        measurements_NNS on_IN the_DT HG-U_NNP 95_CD A_DT for_IN every_DT subset_NN ._. The_DT number_NN of_IN
+        common_JJ probe_NN pairs_NNS within_IN probe_NN sets_NNS ranged_VBD from_IN zero_CD to_TO 16_CD
+        (_( see_VB Methods_NNP )_) ._. The_DT correlation_NN improved_VBN as_IN the_DT number_NN of_IN
+        common_JJ probe_NN pairs_NNS increased_VBN (_( Figure_NN 1_LS )_) ._. When_WRB probe_NN sets_NNS
+        had_VBD 1_CD or_CC more_JJR probe_NN pairs_NNS in_IN common_JJ ,_, r_LS was_VBD greater_JJR than_IN
+        0_CD ._. 8_CD ,_, and_CC for_IN 14_CD or_CC more_JJR probe_NN pairs_NNS in_IN common_JJ ,_, r_LS was_VBD more_JJR
+        than_IN 0_CD ._. 9_CD ._.
+        A_DT second_JJ analysis_NN was_VBD performed_VBN in_IN a_DT similar_JJ manner_NN ,_, by_IN
+        creating_VBG subsets_NNS based_VBN on_IN the_DT number_NN of_IN '_POS P_NN '_'' calls_NNS per_IN probe_NN
+        set_VBD ,_, across_IN the_DT 14_CD chips_NNS (_( 7_CD HuGeneFL_NNP and_CC 7_CD HG-U_NNP 95_CD A_DT chips_NNS )_) ._.
+        The_DT correlation_NN coefficient_NN increased_VBD for_IN the_DT genes_NNS as_IN the_DT
+        number_NN of_IN '_POS P_NN '_'' calls_VBZ increased_VBN (_( Figure_NN 2_LS )_) ._.
+        Based_VBN on_IN the_DT level_NN of_IN gene_NN expression_NN on_IN the_DT HuGeneFL_NNP
+        chips_NNS ,_, different_JJ groups_NNS were_VBD made_VBN for_IN gene_NN expression_NN level_NN
+        ranging_VBG from_IN ,_, for_IN example_NN ,_, -_: 100_CD ,_, 000_CD to_TO -_: 10_CD ,_, 000_CD ,_, -_: 10_CD ,_, 000_CD to_TO
+        -_: 1_CD ,_, 000_CD and_CC so_RB on_IN ._. The_DT correlation_NN across_IN the_DT two_CD chips_NNS was_VBD
+        computed_JJ for_IN each_DT of_IN these_DT groups_NNS (_( Figure_NN 3_LS )_) ._. It_PRP was_VBD
+        observed_VBN that_IN the_DT higher_JJR the_DT reported_VBN gene_NN expression_NN level_NN
+        on_IN the_DT HuGeneFL_NNP chips_NNS ,_, the_DT higher_JJR the_DT correlation_NN of_IN the_DT
+        gene_NN expression_NN values_NNS between_IN HuGeneFL_NNP and_CC HG-U_NNP 95_CD A_DT
+        chips_NNS ._.
+        A_DT chi-square_JJ analysis_NN was_VBD done_VBN for_IN all_PDT the_DT probe_NN sets_NNS on_IN
+        both_DT generations_NNS to_TO determine_VB if_IN the_DT absolute_JJ calls_VBZ made_VBN
+        for_IN the_DT HuGeneFL_NNP chips_NNS were_VBD statistically_RB independent_JJ from_IN
+        the_DT absolute_JJ calls_VBZ made_VBN for_IN the_DT HG-U_NNP 95_CD A_DT chips_NNS ._. A_DT
+        three-by-three_JJ contingency_NN table_NN was_VBD constructed_VBN based_VBN on_IN
+        the_DT absolute_JJ calls_NNS ._. The_DT 113_CD ,_, 050_CD pairs_NNS of_IN calls_NNS (_( 7_CD samples_NNS ×_NN
+        2_CD chip_NN generations_NNS ×_NN 8_CD ,_, 044_CD common_JJ probe_NN sets_NNS )_) were_VBD placed_VBN
+        into_IN this_DT contingency_NN table_NN and_CC the_DT chi-square_JJ value_NN
+        computed_JJ ._. The_DT computed_JJ chi-square_JJ value_NN was_VBD greater_JJR than_IN
+        the_DT chi-square_JJ value_NN at_IN 0_CD ._. 01_CD significance_NN level_NN ,_, giving_VBG
+        sufficient_JJ confidence_NN to_TO reject_VB the_DT null_NN hypothesis_NNS that_IN
+        the_DT calls_NNS made_VBN for_IN the_DT HuGeneFL_NNP chips_NNS were_VBD independent_JJ from_IN
+        the_DT calls_NNS made_VBN for_IN the_DT HG-U_NNP 95_CD A_DT generation_NN of_IN Chips_NNPS ._.
+        The_DT correlation_NN coefficient_NN was_VBD computed_JJ for_IN each_DT probe_NN
+        set_VBN across_IN the_DT two_CD chip_NN generations_NNS ._. There_EX were_VBD seven_CD pairs_NNS
+        of_IN expression_NN values_NNS for_IN each_DT probe_NN set_VBN and_CC 8_CD ,_, 044_CD
+        correlations_NNS corresponding_JJ to_TO the_DT 8_CD ,_, 044_CD probe_NN sets_NNS common_JJ
+        to_TO HuGeneFL_NNP and_CC HG-U_NNP 95_CD A_DT chips_NNS (_( Figure_NN 4_LS )_) ._. 2_LS ,_, 200_CD of_IN the_DT
+        8_CD ,_, 044_CD genes_NNS (_( 27_CD %_NN )_) had_VBD a_DT negative_JJ correlation_NN (_( i_NNP ._. e_SYM ._. r_LS <_NN
+        0_CD )_) ,_, indicating_VBG that_IN the_DT gene_NN expression_NN levels_NNS changed_VBN in_IN
+        opposite_JJ direction_NN across_IN generations_NNS (_( i_NNP ._. e_SYM ._. the_DT more_JJR of_IN a_DT
+        transcript_NN reported_VBN by_IN one_CD generation_NN ,_, the_DT less_JJR reported_VBN by_IN
+        the_DT other_JJ generation_NN )_) (_( see_VB Table_NNP 3_CD [_NN Additional_JJ File_NNP 1_CD ]_NN at_IN
+        http_NN :_: /_NN /_NN www_NN ._. chip_NN ._. org_NN /_NN ~_NN ashish_NN /_NN Reproducibility_NNP /_NN for_IN the_DT
+        correlation_NN coefficients_NNS between_IN the_DT probe_NN sets_NNS of_IN the_DT two_CD
+        chip_NN generations_NNS )_) ._.
+        In_IN order_NN to_TO determine_VB if_IN high_JJ intensity_NN can_MD compensate_VB
+        for_IN low_JJ number_NN of_IN matched_VBN probe_NN pairs_NNS ,_, correlation_NN was_VBD
+        computed_JJ for_IN different_JJ intensity_NN levels_NNS of_IN HuGeneFL_NNP for_IN
+        probe_NN sets_NNS with_IN specific_JJ number_NN of_IN common_JJ probe_NN pairs_NNS ._. For_IN
+        example_NN ,_, we_PRP looked_VBD at_IN all_PDT the_DT probe_NN sets_NNS with_IN 0_CD common_JJ
+        probe_NN pairs_NNS and_CC computed_JJ correlations_NNS for_IN different_JJ ranges_NNS
+        of_IN HuGeneFL_NNP intensity_NN levels_NNS ._. It_PRP was_VBD observed_VBN that_IN even_RB for_IN
+        probe_NN sets_NNS with_IN low_JJ number_NN of_IN common_JJ probe_NN pairs_NNS ,_, the_DT
+        correlation_NN between_IN HuGeneFL_NNP and_CC HG-U_NNP 95_CD A_DT gene_NN expression_NN
+        levels_NNS increased_VBN as_IN the_DT reported_VBN gene_NN expression_NN on_IN
+        HuGeneFL_NNP increased_VBD (_( Figure_NN 5_CD and_CC 6_CD )_) ._.
+        All_DT the_DT above_JJ described_VBD analysis_NN was_VBD repeated_VBN using_VBG the_DT
+        Affymetrix_NNP MAS_NNP 5_CD ._. 0_CD algorithm_NN ._. The_DT obtained_VBN results_NNS were_VBD
+        highly_RB similar_JJ (_( see_VB Additional_JJ Figures_NNS 7_CD -_: 10_CD at_IN
+        http_NN :_: /_NN /_NN www_NN ._. chip_NN ._. org_NN /_NN ~_NN ashish_NN /_NN Reproducibility_NNP /_NN )_) ._. However_RB ,_,
+        when_WRB using_VBG the_DT MAS_NNP 5_CD ._. 0_CD algorithm_NN ,_, 2_CD ,_, 637_CD of_IN the_DT 8_CD ,_, 044_CD genes_NNS
+        (_( 32_CD %_NN )_) were_VBD negatively_RB correlated_JJ ._.
+      
+      
+        Discussion_NNP
+        This_DT work_NN is_VBZ focused_VBN on_IN the_DT comparison_NN of_IN HuGeneFL_NNP at_IN
+        "_'' high_JJ gain_NN "_'' settings_NNS and_CC HG-U_NNP 95_CD A_DT settings_NNS at_IN "_'' low_JJ gain_NN "_''
+        settings_NNS ._. Although_IN this_DT comparison_NN represents_VBZ probe_NN sets_NNS
+        with_IN the_DT worst_JJS correlation_NN coefficients_NNS ,_, it_PRP was_VBD
+        specifically_RB chosen_VBN because_IN most_JJS research_NN labs_NNS tend_VBP to_TO use_VB
+        HuGeneFL_NNP chips_NNS with_IN the_DT old_JJ scanner_NN (_( "_'' high_JJ gain_NN "_'' )_) settings_NNS
+        and_CC HG-U_NNP 95_CD A_DT chips_NNS with_IN the_DT new_JJ scanner_NN (_( "_'' low_JJ gain_NN "_'' )_)
+        settings_NNS ,_, due_JJ to_TO a_DT change_NN in_IN Affymetrix_NNP recommendations_NNS ._.
+        This_DT represents_VBZ the_DT most_RBS common_JJ problem_NN of_IN comparability_NN
+        across_IN the_DT two_CD generations_NNS ._.
+        Many_JJ of_IN the_DT probe_NN sets_NNS in_IN the_DT new_JJ generation_NN of_IN
+        Affymetrix_NNP chips_NNS (_( HG-U_NNP 95_CD A_DT )_) have_VBP been_VBN significantly_RB modified_VBN
+        from_IN the_DT corresponding_JJ probe_NN sets_NNS in_IN the_DT older_JJR generation_NN ._.
+        These_DT differences_NNS in_IN the_DT design_NN of_IN the_DT probe_NN sets_NNS are_VBP due_JJ
+        to_TO several_JJ factors_NNS ,_, including_VBG corrections_NNS and_CC additions_NNS
+        made_VBN to_TO the_DT public_JJ databases_NNS and_CC new_JJ techniques_NNS used_VBN in_IN
+        probe_NN selection_NN ._. Our_PRP$ aim_NN was_VBD to_TO determine_VB the_DT
+        characteristics_NNS of_IN the_DT two_CD chip_NN generations_NNS that_WDT would_MD
+        account_VB for_IN the_DT systematic_JJ variability_NN in_IN the_DT gene_NN
+        expression_NN values_NNS across_IN them_PRP ._.
+        The_DT gene_NN expression_NN values_NNS for_IN replicates_NNS of_IN a_DT
+        particular_JJ tissue_NN sample_NN measured_VBN at_IN the_DT same_JJ scanner_NN
+        setting_NN and_CC on_IN the_DT same_JJ chip_NN generation_NN (_( HG-U_NNP 95_CD A_DT )_) gave_VBD a_DT
+        very_RB high_JJ correlation_NN of_IN 0_CD ._. 99_CD (_( Exp_NNP 1_CD ,_, Table_NNP 1_LS )_) ._. This_DT
+        indicates_VBZ that_IN expression_NN measurements_NNS within_IN one_CD
+        generation_NN are_VBP highly_RB reproducible_JJ ._. Therefore_RB ,_, any_DT
+        variation_NN in_IN gene_NN expression_NN levels_NNS across_IN the_DT two_CD
+        generations_NNS should_MD be_VB due_JJ to_TO the_DT chip_NN technology_NN itself_PRP and_CC
+        the_DT specificity_NN of_IN the_DT probe_NN set_VBD sequences_NNS ._.
+        The_DT reproducibility_NN of_IN HG-U_NNP 95_CD A_DT chips_NNS scanned_JJ at_IN "_'' high_JJ
+        gain_NN "_'' and_CC "_'' low_JJ gain_NN "_'' scanner_NN settings_NNS is_VBZ poorer_JJR than_IN the_DT
+        reproducibility_NN of_IN HuGeneFL_NNP chips_NNS at_IN the_DT two_CD scanner_NN
+        settings_NNS ._. This_DT lower_JJR correlation_NN of_IN HG-U_NNP 95_CD A_DT chips_NNS at_IN the_DT
+        two_CD scanner_NN settings_NNS could_MD be_VB attributed_VBN to_TO the_DT fact_NN that_IN
+        HG-U_NNP 95_CD A_DT chips_NNS have_VBP higher_JJR density_NN of_IN probe_NN pairs_NNS than_IN
+        HuGeneFL_NNP chips_NNS ,_, making_VBG them_PRP more_RBR sensitive_JJ to_TO background_NN
+        noise_NN ._. Furthermore_RB ,_, since_IN the_DT HG-U_NNP 95_CD A_DT chips_NNS are_VBP more_RBR
+        specific_JJ with_IN respect_NN to_TO their_PRP$ sequence_NN selection_NN criteria_NNS ,_,
+        they_PRP would_MD hybridize_NN more_RBR efficiently_RB than_IN HuGeneFL_NNP chips_NNS
+        and_CC so_RB would_MD be_VB more_JJR saturated_VBN at_IN high_JJ scanner_NN settings_NNS
+        giving_VBG a_DT lower_JJR correlation_NN between_IN "_'' high_JJ gain_NN "_'' and_CC "_'' low_JJ
+        gain_NN "_'' scanner_NN settings_NNS ._. The_DT experiment_NN involving_VBG HG-U_NNP 95_CD A_DT
+        chips_NNS at_IN "_'' high_JJ gain_NN "_'' versus_CC the_DT HG-U_NNP 95_CD A_DT at_IN "_'' low_JJ gain_NN "_'' had_VBD a_DT
+        higher_JJR correlation_NN compared_VBN to_TO the_DT HuGeneFL_NNP at_IN "_'' high_JJ gain_NN "_''
+        versus_CC the_DT HG-U_NNP 95_CD A_DT at_IN "_'' low_JJ gain_NN "_'' experiments_NNS (_( Table_NNP 1_LS )_) ._.
+        This_DT could_MD be_VB attributed_VBN to_TO several_JJ factors_NNS ._. The_DT different_JJ
+        composition_NN of_IN probe_NN pairs_NNS used_VBN for_IN some_DT probe_NN set_VBN across_IN
+        generations_NNS could_MD result_VB in_IN altered_VBN hybridization_NN
+        efficiency_NN ,_, and_CC consequently_RB different_JJ expression_NN values_NNS
+        for_IN the_DT corresponding_JJ genes_NNS ._. The_DT different_JJ number_NN of_IN probe_NN
+        pairs_NNS per_IN probe_NN set_VBN in_IN each_DT generation_NN could_MD also_RB introduce_VB
+        some_DT variance_NN since_IN it_PRP alters_NNS the_DT "_'' sample_NN size_NN "_'' on_IN which_WDT
+        all_DT calculations_NNS are_VBP based_VBN ._. The_DT higher_JJR density_NN of_IN probe_NN
+        cells_NNS in_IN the_DT HG-U_NNP 95_CD A_DT chips_NNS means_VBZ that_IN probe_NN pairs_NNS are_VBP
+        closely_RB packed_VBN ,_, and_CC perhaps_RB affected_VBN in_IN a_DT different_JJ way_NN
+        than_IN standard_JJ density_NN chips_NNS by_IN noise_NN and_CC background_NN levels_NNS ._.
+        Moreover_RB ,_, the_DT probe_NN pairs_NNS for_IN each_DT probe_NN set_VBN are_VBP scattered_VBN
+        over_IN HG-U_NNP 95_CD A_DT chips_NNS as_IN opposed_VBN to_TO being_VBG physically_RB grouped_VBN
+        together_RB as_IN on_IN the_DT HuGeneFL_NNP chips_NNS ._. This_DT could_MD result_VB in_IN a_DT
+        variable_JJ impact_NN of_IN background_NN and_CC noise_NN on_IN the_DT expression_NN
+        value_NN obtained_VBN for_IN each_DT probe_NN set_VBN ._.
+        Every_DT probe_NN set_VBN on_IN HuGeneFL_NNP has_VBZ a_DT corresponding_JJ probe_NN
+        set_VBN on_IN HG-U_NNP 95_CD A_DT ._. However_RB ,_, not_RB all_PDT the_DT probe_NN pairs_NNS within_IN a_DT
+        probe_NN set_VBN are_VBP common_JJ for_IN the_DT corresponding_JJ probe_NN sets_NNS on_IN
+        both_DT chip_NN types_NNS ._. In_IN this_DT analysis_NN ,_, the_DT correlation_NN between_IN
+        probe_NN sets_VBZ increases_NNS as_IN the_DT number_NN of_IN common_JJ probe_NN pairs_NNS
+        increases_NNS (_( from_IN zero_CD to_TO 16_CD probe_NN pairs_NNS )_) ,_, with_IN a_DT correlation_NN
+        coefficient_NN of_IN 0_CD ._. 4_CD if_IN there_EX are_VBP no_DT probe_NN pairs_NNS in_IN common_JJ
+        and_CC over_IN 0_CD ._. 8_CD if_IN even_RB one_CD probe_NN pair_NN is_VBZ in_IN common_NN ._. The_DT sharp_JJ
+        increase_NN of_IN the_DT correlation_NN coefficient_NN between_IN probe_NN sets_NNS
+        with_IN none_NN and_CC one_CD common_JJ probe_NN pairs_NNS ,_, could_MD be_VB explained_VBN by_IN
+        the_DT use_NN of_IN poor_JJ sequence_NN selection_NN criteria_NNS for_IN the_DT
+        specific_JJ HuGeneFL_NNP probe_NN sets_NNS ,_, which_WDT later_RB required_VBD the_DT
+        complete_JJ replacement_NN of_IN the_DT probe_NN set_VBN ._. The_DT chi_NN square_JJ value_NN
+        computed_JJ using_VBG the_DT absolute_JJ calls_VBZ given_VBN to_TO each_DT of_IN the_DT
+        probe_NN sets_NNS demonstrates_VBZ that_IN most_JJS probe_NN sets_NNS (_( 77_CD %_NN )_) were_VBD
+        assigned_VBN the_DT same_JJ absolute_JJ calls_NNS on_IN both_DT generations_NNS ._. Using_VBG
+        the_DT reproducibility_NN of_IN absolute_JJ calls_NNS as_IN a_DT measure_NN of_IN
+        consistency_NN across_IN the_DT two_CD generations_NNS indicates_VBZ that_IN the_DT
+        two_CD generations_NNS are_VBP consistent_JJ overall_NN ._.
+        The_DT reproducibility_NN of_IN gene_NN expression_NN measurements_NNS
+        across_IN generations_NNS was_VBD higher_JJR for_IN probe_NN sets_NNS with_IN higher_JJR
+        gene_NN expression_NN measurements_NNS ._. To_TO some_DT extent_NN ,_, high_JJ
+        expression_NN levels_NNS appear_VBP to_TO compensate_VB for_IN low_JJ numbers_NNS of_IN
+        common_JJ probe_NN pairs_NNS between_IN chip_NN generations_NNS ,_, with_IN highest_JJS
+        correlations_NNS reached_VBN when_WRB increased_VBN gene_NN expression_NN was_VBD
+        combined_VBN with_IN a_DT large_JJ number_NN of_IN common_JJ probe_NN pairs_NNS (_( Figure_NN
+        5_CD and_CC 6_CD )_) ._. This_DT pattern_NN was_VBD also_RB evident_JJ when_WRB analyzing_VBG the_DT
+        number_NN of_IN '_POS P_NN '_'' calls_NNS for_IN every_DT probe_NN set_VBN ._. More_RBR specifically_RB ,_,
+        the_DT correlation_NN of_IN absolute_JJ calls_NNS for_IN every_DT probe_NN set_VBD ,_,
+        increased_VBN with_IN increasing_VBG gene_NN expression_NN levels_NNS ._. Although_IN
+        the_DT absolute_JJ calls_NNS are_VBP qualitative_JJ indicators_NNS of_IN the_DT
+        presence_NN of_IN a_DT transcript_NN in_IN a_DT sample_NN ,_, they_PRP are_VBP derived_VBN from_IN
+        the_DT intensities_NNS of_IN individual_JJ probe_NN pairs_NNS within_IN the_DT probe_NN
+        set_VBN ._. We_PRP propose_VBP that_IN the_DT increased_VBN reproducibility_NN at_IN
+        higher_JJR expression_NN levels_NNS is_VBZ due_JJ to_TO the_DT decreased_VBN
+        significance_NN of_IN the_DT fixed_VBN measurement_NN noise_NN effect_NN ._.
+      
+      
+        Conclusions_NNP
+        This_DT paper_NN gives_VBZ a_DT basic_JJ summary_NN statistic_NN of_IN the_DT
+        comparison_NN between_IN different_JJ chip_NN generations_NNS ,_, as_RB well_RB as_IN
+        information_NN on_IN the_DT extent_NN to_TO which_WDT this_DT is_VBZ possible_JJ ._. Being_VBG
+        able_JJ to_TO perform_VB such_JJ comparisons_NNS is_VBZ critical_JJ especially_RB
+        when_WRB tissue_NN availability_NN and_CC financial_JJ limitations_NNS are_VBP an_DT
+        issue_NN ._. Skeletal_NNP muscle_NN was_VBD used_VBN for_IN the_DT purposes_NNS of_IN this_DT
+        study_NN ,_, but_CC any_DT tissue_NN can_MD be_VB used_VBN for_IN the_DT establishment_NN of_IN
+        benchmarks_NNS depending_VBG on_IN the_DT specific_JJ interests_NNS of_IN
+        individual_JJ labs_NNS ._. Further_RB study_NN of_IN more_JJR samples_NNS and_CC tissue_NN
+        types_NNS could_MD establish_VB a_DT widely_RB applicable_JJ analytical_JJ model_NN
+        to_TO make_VB the_DT most_JJS of_IN current_JJ datasets_NNS and_CC accelerate_VB work_NN
+        with_IN future_JJ microarray_NN generations_NNS and_CC platforms_NNS ._.
+      
+      
+        Methods_NNP
+        
+          RNA_NNP extraction_NN and_CC hybridization_NN
+          Total_NNP RNA_NNP was_VBD extracted_VBN from_IN normal_JJ human_JJ skeletal_NN
+          muscle_NN tissue_NN samples_NNS and_CC used_VBN for_IN cDNA_NN and_CC labeled_VBN cRNA_NN
+          synthesis_NN as_RB previously_RB described_VBD [_NN 14_CD 15_CD ]_NN ._. The_DT
+          fragmented_JJ cRNA_NN together_RB with_IN control_NN targets_NNS recommended_VBN
+          by_IN Affymetrix_NNP were_VBD hybridized_JJ to_TO the_DT GeneChip_NNP of_IN choice_NN
+          (_( HuGeneFL_NNP or_CC HG-U_NNP 95_CD A_DT )_) ._. HuGeneFL_NNP chips_NNS contain_VBP
+          oligonucleotide_NN sequences_NNS representative_NN of_IN 5_CD ,_, 600_CD genes_NNS ._.
+          Each_DT gene_NN is_VBZ represented_VBN by_IN at_IN least_JJS one_CD probe_NN set_VBD ,_, which_WDT
+          in_IN turn_NN consists_VBZ of_IN approximately_RB 20_CD probe_NN pairs_NNS ._. Each_DT
+          probe_NN pair_NN consists_VBZ of_IN two_CD probe_NN cells_NNS ,_, the_DT perfect_JJ match_NN
+          (_( PM_NNP )_) and_CC the_DT mismatch_NN (_( MM_NNP )_) ._. The_DT former_NN is_VBZ complementary_JJ
+          to_TO ,_, and_CC interrogates_NNS the_DT expression_NN of_IN a_DT 25_CD base_NN pair_NN
+          region_NN of_IN the_DT gene_NN sequence_NN ,_, while_IN the_DT latter_JJ contains_VBZ a_DT
+          one-base_JJ change_NN and_CC is_VBZ used_VBN to_TO control_VB for_IN non-specific_JJ
+          hybridization_NN ._. HG-U_NNP 95_CD A_DT chips_NNS contain_VBP probe_NN sets_NNS ,_, each_DT
+          consisting_VBG of_IN approximately_RB 16_CD probe_NN pairs_NNS ,_,
+          representative_NN of_IN ~_NN 12_CD ,_, 600_CD genes_NNS ._. All_DT 5_CD ,_, 600_CD measured_VBN by_IN
+          the_DT HuGeneFL_NNP chips_NNS are_VBP also_RB measured_VBN by_IN the_DT HG-U_NNP 95_CD A_DT
+          chips_NNS ;_: however_RB ,_, in_IN order_NN to_TO improve_VB their_PRP$ sensitivity_NN and_CC
+          specificity_NN ,_, the_DT composition_NN of_IN some_DT of_IN the_DT probe_NN pairs_NNS
+          has_VBZ been_VBN changed_VBN ._.
+        
+        
+          Signal_NNP detection_NN and_CC analysis_NN
+          The_DT chips_NNS were_VBD incubated_JJ (_( 16_CD -_: 17_CD hours_NNS ,_, 45_CD °_NN C_NNP and_CC 60_CD
+          rpm_NN )_) in_IN a_DT rotating_VBG oven_NN ,_, washed_VBN by_IN the_DT Affymetrix_NNP
+          Fluidics_NNP Station_NNP ,_, using_VBG the_DT recommended_VBN signal_NN
+          amplification_NN step_NN ,_, and_CC scanned_JJ by_IN the_DT Affymetrix_NNP
+          Scanner_NNP ._. Two_CD different_JJ scanner_NN settings_NNS were_VBD used_VBN ._. "_'' High_JJ
+          gain_NN "_'' PMT_NNP )_) settings_NNS were_VBD recommended_VBN for_IN HuGeneFL_NNP chips_NNS ,_,
+          and_CC "_'' low_JJ gain_NN "_'' PMT_NNP settings_NNS were_VBD introduced_VBN for_IN the_DT
+          HG-U_NNP 95_CD A_DT chips_NNS ._. Therefore_RB most_JJS HuGeneFL_NNP chips_NNS were_VBD scanned_JJ
+          using_VBG Affymetrix_NNP "_'' high_JJ gain_NN "_'' settings_NNS and_CC most_JJS HG-U_NNP 95_CD A_DT
+          chips_NNS were_VBD scanned_JJ using_VBG the_DT "_'' low_JJ gain_NN "_'' settings_NNS ._. In_IN
+          order_NN to_TO assess_VB the_DT influence_NN of_IN the_DT "_'' scanner_NN settings_NNS "_''
+          parameter_NN in_IN our_PRP$ data_NNS ,_, some_DT HuGeneFL_NNP chips_NNS were_VBD rescanned_JJ
+          under_IN "_'' low_JJ gain_NN "_'' and_CC some_DT HG-U_NNP 95_CD A_DT chips_NNS were_VBD rescanned_JJ
+          under_IN "_'' high_JJ gain_NN "_'' ._. A_DT list_NN of_IN experiments_NNS and_CC settings_NNS is_VBZ
+          presented_VBN in_IN Table_NNP 2_CD (_( the_DT raw_JJ ._. CEL_NNP files_NNS for_IN all_PDT these_DT
+          experiments_NNS can_MD be_VB accessed_JJ at_IN
+          http_NN :_: /_NN /_NN www_NN ._. chip_NN ._. org_NN /_NN ~_NN ashish_NN /_NN Reproducibility_NNP /_NN )_) ._. Using_VBG the_DT
+          Affymetrix_NNP software_NN (_( Microarray_NNP Suite_NNP 4_CD ._. 0_CD )_) ,_, each_DT probe_NN
+          set_VBN was_VBD assigned_VBN an_DT "_'' average_JJ difference_NN "_'' value_NN
+          corresponding_JJ to_TO the_DT expression_NN level_NN of_IN the_DT particular_JJ
+          gene_NN it_PRP represents_VBZ ._. The_DT calculated_VBN average_JJ difference_NN was_VBD
+          used_VBN as_IN the_DT measure_NN of_IN expression_NN levels_NNS throughout_IN this_DT
+          analysis_NN ._. The_DT analysis_NN was_VBD repeated_VBN using_VBG the_DT Affymetrix_NNP
+          Microarray_NNP Suite_NNP 5_CD ._. 0_CD (_( MAS_NNP 5_CD ._. 0_CD )_) ._.
+          Affymetrix_NNP software_NN also_RB assigns_VBZ every_DT probe_NN set_VBD an_DT
+          "_'' absolute_JJ call_NN "_'' (_( Present_VB [_NN P_NN ]_NN ,_, Absent_VB [_NN A_DT ]_NN ,_, Marginal_JJ [_NN M_NNP ]_NN )_) ,_,
+          which_WDT represents_VBZ a_DT qualitative_JJ indication_NN of_IN whether_IN or_CC
+          not_RB a_DT transcript_NN is_VBZ detected_VBN within_IN a_DT sample_NN ._. In_IN the_DT MAS_NNP
+          4_CD ._. 0_CD algorithm_NN these_DT calls_NNS are_VBP determined_VBN using_VBG the_DT
+          following_JJ metrics_NNS :_: 1_LS )_) the_DT ratio_NN of_IN the_DT number_NN of_IN positive_JJ
+          probe_NN pairs_NNS to_TO the_DT number_NN of_IN negative_JJ probe_NN pairs_NNS (_( known_VBN
+          as_IN the_DT Positive_JJ /_NN Negative_JJ Ratio_NNP )_) ,_, 2_LS )_) the_DT fraction_NN of_IN
+          positive_JJ probe_NN pairs_NNS (_( Positive_JJ Fraction_NNP )_) ,_, and_CC 3_LS )_) the_DT
+          average_NN across_IN the_DT probe_NN set_NN of_IN each_DT probe_NN pair_NN 's_POS log_NN
+          ratio_NN of_IN positive_JJ intensity_NN over_IN negative_JJ intensity_NN (_( Log_NNP
+          Average_NNP Ratio_NNP )_) (_( 1_LS )_) ._.
+          Affymetrix_NNP tables_NNS
+          http_NN :_: /_NN /_NN www_NN ._. affymetrix_NN ._. com_NN /_NN Auth_NNP /_NN support_NN /_NN downloads_NNS /_NN comparisons_NNS /_NN PN_NNP 600444_CD HumanFLComp_NNP ._. zipindicate_NN
+          that_IN 6_CD ,_, 623_CD probe_NN sets_NNS from_IN HuGeneFL_NNP chip_NN have_VBP been_VBN mapped_VBN
+          to_TO 7_CD ,_, 094_CD probe_NN sets_NNS from_IN the_DT HG-U_NNP 95_CD A_DT chip_NN giving_VBG a_DT total_NN
+          of_IN 8_CD ,_, 044_CD comparisons_NNS between_IN the_DT two_CD generations_NNS ._.
+          Affymetrix_NNP also_RB provides_VBZ a_DT list_NN of_IN the_DT numbers_NNS of_IN probe_NN
+          pairs_NNS common_JJ for_IN the_DT two_CD generations_NNS ._.
+          The_DT correlation_NN coefficient_NN was_VBD used_VBN as_IN a_DT measure_NN of_IN
+          congruency_NN between_IN the_DT probe_NN sets_NNS across_IN the_DT two_CD
+          generations_NNS of_IN Affymetrix_NNP Chips_NNPS (_( see_VB Table_NNP 3_CD [_NN Additional_JJ
+          File_NNP 1_CD ]_NN )_) ._. The_DT correlation_NN for_IN different_JJ subsets_NNS of_IN probe_NN
+          sets_NNS was_VBD computed_JJ based_VBN on_IN certain_JJ probe_NN set_VBD
+          characteristics_NNS ,_, as_IN discussed_VBN above_IN ._. Finally_RB ,_, a_DT
+          chi-square_JJ analysis_NN was_VBD done_VBN to_TO determine_VB whether_IN the_DT
+          absolute_JJ calls_VBZ made_VBN for_IN the_DT HuGeneFL_NNP chip_NN were_VBD different_JJ
+          from_IN the_DT absolute_JJ calls_VBZ made_VBN for_IN the_DT HG-U_NNP 95_CD A_DT chip_NN ._.
+        
+      
+      
+        Authors_NNP '_'' contributions_NNS
+        AN_DT conceived_VBD the_DT study_NN ,_, performed_VBD the_DT bioinformatical_JJ
+        analysis_NN and_CC drafted_VBD the_DT manuscript_NN ._. DS_NNP designed_VBD the_DT
+        experimental_JJ part_NN of_IN the_DT study_NN ,_, performed_VBD the_DT microarray_NN
+        experiments_NNS and_CC drafted_VBD the_DT manuscript_NN ._. AJB_NNP guided_VBD the_DT
+        study_NN and_CC helped_VBD with_IN the_DT analyses_NNS ._. JNH_NNP performed_VBD the_DT
+        microarray_NN experiments_NNS and_CC helped_VBD with_IN the_DT manuscript_NN ._. LMK_NNP
+        guided_VBD the_DT study_NN ._. AHB_NNP guided_VBD the_DT study_NN ._. ISK_NNP guided_VBD the_DT
+        study_NN and_CC coordinated_VBN the_DT project_NN ._. All_DT authors_NNS read_VBP and_CC
+        approved_VBD the_DT final_JJ manuscript_NN ._.
+        Additional_JJ File_NNP 1_CD
+        Correlation_NNP between_IN HuGeneFL_NNP and_CC HG-U_NNP 95_CD A_DT ._. Correlation_NNP
+        Coefficients_NNP between_IN HuGeneFL_NNP and_CC HG-U_NNP 95_CD A_DT probe_NN sets_NNS with_IN
+        the_DT confidence_NN intervals_NNS of_IN their_PRP$ correlations_NNS and_CC number_NN
+        of_IN common_JJ probe_NN pairs_NNS ._.
+        Click_NNP here_RB for_IN file_NN
+      
+    
+  

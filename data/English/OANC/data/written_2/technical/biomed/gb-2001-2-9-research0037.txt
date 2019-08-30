@@ -1,0 +1,875 @@
+
+  
+    
+      
+        Background_NNP
+        Access_NNP to_TO automated_VBN DNA_NNP sequencing_VBG technology_NN has_VBZ made_VBN
+        possible_JJ the_DT rapid_JJ generation_NN and_CC analysis_NN of_IN gene_NN
+        transcripts_NNS expressed_VBD in_IN organisms_NNS via_IN expressed_VBD sequence_NN
+        tags_NNS (_( ESTs_NNP )_) [_NN 1_CD ,_, 2_CD ,_, 3_CD ,_, 4_CD ,_, 5_CD ]_NN ._. This_DT information_NN has_VBZ helped_VBN
+        to_TO identify_VB those_DT genes_NNS expressed_VBD in_IN particular_JJ stages_NNS of_IN
+        development_NN and_CC in_IN specialized_JJ tissues_NNS or_CC organs_NNS [_NN 6_CD ,_, 7_CD ,_, 8_CD ,_,
+        9_CD ,_, 10_CD ]_NN ._. Novel_NNP gene_NN products_NNS and_CC target_NN leads_VBZ for_IN
+        therapeutic_JJ intervention_NN can_MD also_RB be_VB gleaned_VBN rapidly_RB from_IN
+        ESTs_NNP [_NN 1_CD ,_, 2_CD ,_, 11_CD ]_NN ._. A_DT more_RBR detailed_JJ understanding_NN of_IN the_DT
+        molecular_JJ interactions_NNS between_IN symbionts_NNS ,_, whether_IN
+        pathogenic_JJ or_CC mutualistic_JJ [_NN 12_CD ]_NN ,_, is_VBZ also_RB possible_JJ with_IN this_DT
+        approach_NN [_NN 13_CD ,_, 14_CD ,_, 15_CD ,_, 16_CD ,_, 17_CD ]_NN ._.
+        For_IN a_DT sequence_NN isolated_VBN from_IN interacting_VBG symbionts_NNS ,_,
+        determining_VBG its_PRP$ cellular_JJ role_NN (_( or_CC roles_NNS )_) is_VBZ complicated_VBN by_IN
+        not_RB knowing_VBG which_WDT species_NNS expressed_VBD the_DT sequence_NN [_NN 18_CD ]_NN ._. We_PRP
+        refer_VBP to_TO this_DT challenge_NN as_IN '_POS the_DT problem_NN '_'' :_: given_VBN a_DT sequence_NN 
+        x_SYM expressed_VBD in_IN an_DT interaction_NN between_IN
+        species_NNS 
+        A_DT and_CC 
+        B_NNP ,_, did_VBD 
+        x_SYM originate_VB from_IN 
+        A_DT or_CC 
+        B_NNP ?_. Various_JJ solutions_NNS are_VBP readily_RB
+        conceived_VBN ,_, each_DT with_IN merits_NNS and_CC faults_NNS ._. Here_RB ,_, we_PRP show_VBP that_IN
+        a_DT comparative_JJ lexical_JJ analysis_NN of_IN word_NN counts_VBZ
+        (_( specifically_RB ,_, hexamer_NN frequencies_NNS )_) ,_, previously_RB used_VBN to_TO
+        detect_VB library_NN contamination_NN in_IN sequencing_VBG projects_NNS [_NN 19_CD ]_NN ,_,
+        provides_VBZ a_DT powerful_JJ computational_NN basis_NN to_TO infer_NN a_DT
+        transcript_NN 's_POS species_NNS of_IN origin_NN ._.
+        Experimentally_NNP ,_, one_PRP can_MD attempt_VB to_TO solve_VB the_DT problem_NN by_IN
+        hybridizing_VBG a_DT clone_NN (_( as_IN probe_NN )_) to_TO genomic_JJ DNA_NNP (_( target_NN )_) from_IN
+        both_DT species_NNS and_CC determining_VBG to_TO which_WDT target_VBP the_DT probe_NN
+        hybridizes_NNS ._. This_DT approach_NN can_MD produce_VB very_RB reliable_JJ
+        results_NNS ._. However_RB ,_, if_IN a_DT sequence_NN is_VBZ highly_RB conserved_JJ in_IN the_DT
+        two_CD taxa_NN ,_, hybridization_NN stringency_NN conditions_NNS can_MD influence_VB
+        the_DT outcome_NN considerably_RB ._. For_IN high-throughput_JJ EST_NNP sequence_NN
+        analysis_NN ,_, source_NN verification_NN by_IN hybridization_NN is_VBZ
+        impractical_JJ in_IN terms_NNS of_IN time_NN and_CC reagents_NNS ._. As_IN an_DT
+        alternative_NN to_TO 
+        in_IN vitro_NN hybridization_NN ,_, several_JJ
+        computational_NN solutions_NNS are_VBP possible_JJ ._.
+        Were_VBD the_DT genome_NN sequence_NN of_IN both_DT species_NNS completely_RB
+        determined_VBN ,_, one_PRP could_MD simply_RB use_VB sequence_NN similarity_NN
+        searching_VBG [_NN 20_CD ,_, 21_CD ,_, 22_CD ]_NN ._. However_RB ,_, most_JJS plant_NN hosts_NNS and_CC
+        their_PRP$ microbial_NN symbionts_NNS have_VBP little_JJ or_CC no_DT genomic_JJ
+        sequence_NN data_NNS available_JJ ,_, which_WDT makes_VBZ this_DT approach_NN very_RB
+        unreliable_JJ ._. Strong_JJ similarity_NN to_TO a_DT sequence_NN from_IN one_CD
+        organism_NN does_VBZ not_RB preclude_VB the_DT possibility_NN that_IN a_DT similar_JJ
+        sequence_NN is_VBZ present_JJ in_IN the_DT other_JJ species_NNS ._. Conclusions_NNP based_VBN
+        upon_IN such_JJ partial_JJ knowledge_NN have_VBP been_VBN informative_JJ ,_, but_CC are_VBP
+        potentially_RB misleading_JJ [_NN 18_CD ,_, 23_CD ]_NN ._.
+        Codon_NNP usage_NN varies_VBZ across_IN taxa_NN [_NN 24_CD ,_, 25_CD ,_, 26_CD ]_NN ._. Exploiting_NNP
+        this_DT fact_NN may_MD seem_VB a_DT viable_JJ solution_NN to_TO the_DT problem_NN ,_, as_IN it_PRP
+        has_VBZ proven_VBN suitable_JJ for_IN predicting_VBG the_DT presence_NN of_IN introns_NNS
+        among_IN exons_NNS in_IN genomic_JJ DNA_NNP ._. However_RB ,_, it_PRP really_RB is_VBZ not_RB
+        practical_JJ ,_, because_IN of_IN the_DT need_NN to_TO know_VB the_DT reading_NN frame_NN
+        for_IN translation_NN of_IN a_DT messenger_NN RNA_NNP into_IN an_DT amino_JJ acid_NN ._. EST_NN
+        data_NNS are_VBP of_IN notoriously_RB unreliable_JJ quality_NN ,_, sometimes_RB
+        having_VBG a_DT large_JJ proportion_NN of_IN ambiguous_JJ bases_NNS ,_, and_CC sometimes_RB
+        having_VBG single_JJ base-pair_JJ insertions_NNS or_CC deletions_NNS ,_, which_WDT
+        disrupt_VB a_DT reading_NN frame_NN ._. Word_NNP counting_VBG is_VBZ less_RBR prone_JJ to_TO
+        these_DT sources_NNS of_IN error_NN ,_, and_CC uses_VBZ information_NN intrinsic_JJ to_TO
+        biases_NNS in_IN codon_NN usage_NN by_IN counting_VBG codon_NN pairs_NNS as_IN hexamers_NNS
+        in_IN a_DT sliding_VBG window_NN ,_, whereas_IN codons_NNS are_VBP read_VBN in_IN
+        non-overlapping_JJ ,_, tiled_JJ windows_NNS ._.
+        An_DT intuitive_JJ approach_NN to_TO the_DT problem_NN that_WDT examines_VBZ
+        sequence_NN composition_NN is_VBZ to_TO compare_VB the_DT guanine_NN and_CC cytosine_NN
+        (_( GC_NNP )_) base_NN content_NN of_IN a_DT sequence_NN with_IN other_JJ sequences_NNS from_IN
+        the_DT species_NNS being_VBG studied_VBN ._. When_WRB two_CD species_NNS '_POS genomes_NNS have_VBP
+        different_JJ GC_NNP content_NN ,_, this_DT method_NN can_MD be_VB very_RB useful_JJ ._. In_IN a_DT
+        recent_JJ investigation_NN ,_, for_IN instance_NN ,_, sequences_NNS from_IN the_DT
+        stramenopile_NN plant_NN pathogen_NN 
+        Phytophthora_NNP sojae_NN and_CC its_PRP$ soybean_NN (_( 
+        Glycine_NNP max_NN )_) host_NN showed_VBD a_DT 20_CD %_NN
+        difference_NN in_IN mean_NN GC_NNP content_NN [_NN 18_CD ]_NN ._. The_DT origin_NN of_IN a_DT number_NN
+        of_IN sequences_NNS could_MD readily_RB be_VB identified_VBN this_DT way_NN ,_, but_CC a_DT
+        large_JJ proportion_NN could_MD not_RB ,_, because_IN of_IN considerable_JJ overlap_VB
+        in_IN the_DT distributions_NNS '_POS tails_NNS ._. Counting_VBG frequencies_NNS of_IN GC_NNP is_VBZ
+        simple_JJ word_NN counting_NN ,_, where_WRB the_DT word_NN size_NN 
+        k_NN is_VBZ 1_CD /_NN 2_CD :_: only_RB two_CD semi-words_JJ ,_, G_NNP /_NN C_NNP
+        and_CC A_DT /_NN T_NN are_VBP counted_VBN ._.
+        An_DT alternative_JJ approach_NN to_TO determining_VBG the_DT origin_NN of_IN a_DT
+        sequence_NN is_VBZ suggested_VBN by_IN previous_JJ work_NN on_IN analysis_NN of_IN word_NN
+        counts_VBZ ,_, or_CC 
+        k_NN -_: tuple_NN frequencies_NNS ,_, which_WDT was_VBD
+        intended_VBN as_IN a_DT means_NN of_IN evaluating_VBG a_DT library_NN for_IN
+        contamination_NN when_WRB sequencing_VBG from_IN a_DT single_JJ model_NN organism_NN
+        [_NN 19_CD ]_NN ._. The_DT word-counting_JJ method_NN provides_VBZ distinct_JJ
+        advantages_NNS over_IN other_JJ computational_NN methods_NNS ._. Unlike_IN
+        sequence-similarity_JJ searching_VBG ,_, it_PRP does_VBZ not_RB require_VB that_IN the_DT
+        full_JJ protein-coding_JJ content_NN of_IN both_DT genomes_NNS be_VB known_VBN for_IN
+        reasonable_JJ inferences_NNS to_TO be_VB made_VBN ._. Further_RB ,_, word_NN counting_VBG is_VBZ
+        sensitive_JJ to_TO biases_NNS in_IN codon_NN usage_NN and_CC GC_NNP content_NN commonly_RB
+        observed_VBD when_WRB comparing_VBG taxa_NN ,_, but_CC does_VBZ not_RB require_VB
+        knowledge_NN of_IN the_DT reading_NN frame_NN for_IN amino-acid_JJ translation_NN ._.
+        That_DT is_VBZ ,_, the_DT underlying_VBG differences_NNS between_IN the_DT two_CD
+        organisms_NNS that_WDT result_NN in_IN base_NN composition_NN or_CC codon_NN usage_NN
+        biases_NNS can_MD also_RB be_VB detected_VBN by_IN counting_VBG words_NNS ._. Unlike_IN GC_NNP
+        analysis_NN ,_, lexical_JJ analysis_NN establishes_VBZ a_DT clear_JJ threshold_NN
+        above_IN or_CC below_IN which_WDT we_PRP can_MD infer_NN the_DT species_NNS of_IN origin_NN ,_,
+        and_CC a_DT confidence_NN level_NN for_IN an_DT inference_NN can_MD readily_RB be_VB
+        assigned_VBN ._. Dunning_NNP 's_POS likelihood-ratio_JJ test_NN of_IN word_NN
+        dissimilarities_NNS [_NN 27_CD ]_NN also_RB has_VBZ the_DT appealing_VBG property_NN of_IN
+        being_VBG non-parametric_JJ ,_, having_VBG no_DT assumption_NN of_IN normality_NN for_IN
+        the_DT underlying_VBG frequency_NN distribution_NN ,_, which_WDT makes_VBZ it_PRP
+        statistically_RB powerful_JJ [_NN 28_CD ]_NN ._. Dunning_NNP [_NN 27_CD ]_NN demonstrated_VBN
+        that_IN unreliable_JJ results_NNS can_MD be_VB obtained_VBN from_IN parametric_JJ
+        tests_NNS ,_, such_JJ as_IN Χ_NN 2_CD ,_, particularly_RB in_IN such_JJ cases_NNS as_IN lexical_JJ
+        analysis_NN ._.
+        In_IN the_DT experiments_NNS detailed_VBN below_IN ,_, we_PRP first_JJ validate_NN the_DT
+        word-counting_JJ method_NN on_IN sequences_NNS whose_WP$ origin_NN and_CC function_NN
+        are_VBP known_VBN ,_, then_RB compare_VB it_PRP with_IN ability_NN to_TO diagnose_NN the_DT
+        origin_NN of_IN sequences_NNS with_IN distributions_NNS of_IN GC_NNP content_NN ._. We_PRP
+        examine_VBP sequences_NNS from_IN pathogenic_JJ interactions_NNS between_IN
+        species_NNS from_IN the_DT genus_JJ 
+        Phytophthora_NNP and_CC the_DT plant_NN hosts_NNS 
+        G_NNP ._. max_NN and_CC 
+        Medicago_NNP truncatula_NN ,_, then_RB apply_VB the_DT
+        word-counting_JJ approach_NN to_TO sequences_NNS from_IN two_CD microbial_NN
+        mutualists_NNS in_IN association_NN with_IN 
+        M_NNP ._. truncatula_NN ,_, the_DT arbuscular_NN
+        mycorrhizal_NN zygomycete_NN 
+        Glomus_NNP versiforme_NN ,_, and_CC the_DT
+        nitrogen-fixing_JJ bacterium_NN 
+        Sinorhizobium_NNP meliloti_NN ._.
+      
+      
+        Results_NNS
+        Validation_NNP sequence_NN accession_NN numbers_NNS ,_, gene_NN names_NNS ,_, and_CC
+        comparison_NN results_NNS appear_VBP in_IN Table_NNP 1_CD ._. Incorrect_NNP inferences_NNS
+        are_VBP underlined_VBD ._. The_DT word-counting_JJ method_NN was_VBD generally_RB
+        quite_RB reliable_JJ when_WRB tested_VBN against_IN sequences_NNS of_IN known_VBN
+        origin_NN ,_, being_VBG wrong_JJ in_IN 3_CD cases_NNS out_IN of_IN 50_CD ;_: a_DT phosphate_NN
+        transporter_NN from_IN 
+        G_NNP ._. versiforme_NN and_CC two_CD 
+        in_IN planta_NN -_: induced_VBN genes_NNS from_IN 
+        Phytophthora_NNP infestans_NNS were_VBD
+        misidentified_JJ as_IN plant_NN sequences_NNS ._. This_DT indicates_VBZ a_DT failure_NN
+        rate_NN of_IN 6_CD %_NN -_: all_DT false_JJ negatives_NNS under_IN the_DT null_NN hypothesis_NNS
+        that_IN a_DT transcript_NN originates_VBZ from_IN the_DT plant_NN host_NN ._.
+        Performance_NNP of_IN the_DT method_NN was_VBD not_RB influenced_VBN by_IN whether_IN the_DT
+        isolated_VBN source_NN of_IN a_DT sequence_NN was_VBD an_DT mRNA_NN or_CC DNA_NNP molecule_NN ,_,
+        as_IN indicated_VBN by_IN the_DT column_NN labeled_VBN '_POS mRNA_NN ?_. '_'' ._.
+        Distributions_NNP of_IN GC_NNP content_NN are_VBP approximately_RB normal_JJ in_IN
+        two_CD of_IN three_CD cases_NNS studied_VBN ,_, those_DT of_IN axenic_JJ 
+        P_NN ._. sojae_NN cultures_NNS (_( Figure_NN 1_LS )_) ._. For_IN
+        sequences_NNS from_IN infected_JJ plant_NN cultures_NNS ,_, a_DT bimodal_NN
+        distribution_NN is_VBZ apparent_JJ ._. Roughly_RB 25_CD %_NN of_IN a_DT total_NN of_IN 927_CD
+        infected_JJ 
+        G_NNP ._. max_NN sequences_NNS contain_VBP less_JJR than_IN
+        50_CD %_NN GC_NNP ;_: most_JJS of_IN these_DT are_VBP likely_JJ to_TO be_VB plant_NN transcripts_NNS [_NN
+        18_CD ]_NN ._. This_DT is_VBZ a_DT considerably_RB greater_JJR number_NN than_IN for_IN axenic_JJ 
+        P_NN ._. sojae_NN cultures_NNS ,_, in_IN which_WDT fewer_JJR
+        than_IN 5_CD %_NN of_IN mycelia_NN and_CC zoospore_NN isolates_VBZ contain_VB less_JJR than_IN
+        50_CD %_NN GC_NNP ._.
+        Several_JJ properties_NNS of_IN cumulative_JJ distribution_NN functions_NNS
+        warrant_VBP comment_NN ,_, to_TO help_VB explain_VB similar_JJ plots_NNS from_IN word_NN
+        dissimilarity_NN comparisons_NNS (_( Figures_NNS 1_CD b_SYM ,_, 2_CD a_DT )_) ._. The_DT median_NN of_IN a_DT
+        distribution_NN occurs_VBZ where_WRB the_DT function_NN reaches_VBZ a_DT cumulative_JJ
+        probability_NN of_IN 0_CD ._. 5_CD ._. Medians_NNP from_IN all_DT three_CD 
+        P_NN ._. sojae_NN libraries_NNS are_VBP similar_JJ ,_,
+        varying_VBG by_IN less_JJR than_IN 4_CD %_NN GC_NNP (_( Figure_NN 1_CD b_SYM )_) ._. Other_JJ moments_NNS of_IN
+        the_DT distributions_NNS are_VBP readily_RB apparent_JJ ;_: the_DT variance_NN is_VBZ
+        inversely_RB related_VBN to_TO the_DT slope_NN at_IN the_DT median_JJ value_NN of_IN the_DT
+        function_NN ._. A_DT useful_JJ property_NN of_IN cumulative_JJ distribution_NN
+        functions_NNS is_VBZ that_IN any_DT point_NN on_IN the_DT 
+        y_NN axis_NNS gives_VBZ the_DT integrated_VBN area_NN
+        (_( cumulative_JJ probability_NN )_) under_IN the_DT curve_NN ._. We_PRP use_VBP this_DT
+        property_NN to_TO establish_VB experiment-wide_JJ false-positive_JJ and_CC
+        false-negative_JJ rates_NNS (_( Figure_NN 2_CD a_DT )_) ._. In_IN this_DT case_NN ,_, α_NN =_SYM 0_CD ._. 088_CD
+        and_CC β_NN =_SYM 0_CD ._. 032_CD ._.
+        Calibration_NNP curves_NNS from_IN hexamer_NN dissimilarity_NN tests_NNS ,_,
+        shown_VBN in_IN Figure_NN 2_CD bas_NNS solid_JJ black_JJ lines_NNS for_IN plant_NN and_CC dashed_VBN
+        black_JJ lines_NNS for_IN stramenopile_NN training_NN sequences_NNS are_VBP
+        approximately_RB normal_JJ ._. The_DT medians_NNS differ_VBP considerably_RB ,_, with_IN
+        only_RB about_IN 10_CD %_NN percent_NN overlap_VB in_IN the_DT two_CD distributions_NNS '_POS
+        tails_NNS about_IN the_DT neutral_JJ 
+        t_NN -_: value_NN of_IN zero_CD ._. Superimposed_NNP are_VBP
+        comparison_NN curves_NNS from_IN 
+        P_NN ._. sojae_NN test_NN sets_NNS (_( Figure_NN 2_CD b_SYM )_) ,_, which_WDT
+        parallel_VB the_DT GC_NNP content_NN curves_NNS in_IN Figure_NN 1_CD bbut_NN show_NN
+        slightly_RB less_JJR variance_NN ._. Axenic_NNP sequences_NNS are_VBP clearly_RB more_RBR
+        like_IN stramenopiles_NNS (_( 
+        B_NNP 
+        1_LS )_) than_IN plants_NNS (_( 
+        A_DT 
+        1_LS )_) in_IN hexamer_NN composition_NN ,_, with_IN all_DT but_CC
+        a_DT small_JJ percentage_NN having_VBG positive_JJ 
+        t_NN values_NNS ._. Plant-like_NNP sequences_NNS are_VBP as_IN
+        abundant_JJ in_IN the_DT mixed_JJ library_NN as_IN detected_VBN by_IN GC_NNP content_NN ,_,
+        about_IN 23_CD %_NN ._. As_IN expected_VBN ,_, the_DT two_CD methods_NNS agree_VBP ,_, having_VBG
+        positively_RB correlated_JJ values_NNS for_IN GC_NNP and_CC 
+        t_NN (_( 
+        r_LS 2_CD =_SYM 0_CD ._. 852_CD ,_, 
+        P_NN <_NN 10_CD -_: 16_CD ,_, 
+        v_NN =_SYM 2_CD ,_, 641_CD )_) ._.
+        Looking_VBG in_IN more_JJR detail_NN at_IN the_DT paired_VBN dissimilarity_NN
+        values_NNS (_( Figure_NN 3_LS )_) ,_, we_PRP can_MD see_VB which_WDT individual_JJ sequences_NNS
+        are_VBP more_JJR or_CC less_RBR like_IN plant_NN and_CC pathogen_NN ._. The_DT magnitudes_NNS of_IN
+        dissimilarity_NN are_VBP also_RB apparent_JJ ,_, with_IN longer_JJR sequences_NNS
+        having_VBG larger_JJR dissimilarity_NN values_NNS ._. BLASTX_NNP similarity_NN
+        searches_NNS against_IN the_DT protein_NN sequences_NNS in_IN nr_NN ,_, a_DT
+        non-redundant_JJ library_NN of_IN proteins_NNS [_NN 29_CD ,_, 30_CD ,_, 31_CD ]_NN revealed_VBD
+        that_DT none_NN of_IN the_DT 12_CD plant-like_JJ mycelial_NN transcripts_NNS
+        significantly_RB resemble_VBP known_VBN proteins_NNS (_( 
+        E_NNP >_NN 10_CD -_: 4_LS )_) ._. Among_IN the_DT top_JJ ten_CD most_RBS
+        plant-like_JJ transcripts_NNS from_IN the_DT infected_JJ 
+        G_NNP ._. max_NN library_NN ,_, three_CD had_VBD no_DT
+        significant_JJ matches_NNS ,_, four_CD matched_VBN putative_JJ 
+        Arabidopsis_NNP thaliana_NN proteins_NNS ,_, and_CC
+        three_CD matched_VBN known_VBN 
+        G_NNP ._. max_NN proteins_NNS :_: cytochrome_NN P_NN 450_CD
+        (_( accession_NN AF_NNP 022460_CD ,_, 
+        E_NNP <_NN 10_CD -_: 34_CD )_) ,_, methylglyoxalase_NN
+        (_( accession_NN P_NN 46417_CD ,_, 
+        E_NNP <_NN 10_CD -_: 34_CD )_) ,_, and_CC a_DT ripening_VBG
+        related_VBN protein_NN (_( accession_NN AF_NNP 127110_CD ,_, 
+        E_NNP <_NN 10_CD -_: 71_CD )_) ._. Thus_RB ,_, the_DT majority_NN of_IN
+        the_DT most_RBS plant-like_JJ transcripts_NNS in_IN the_DT infected_JJ soybean_NN
+        library_NN strongly_RB resemble_VB characterized_VBN plant_NN sequences_NNS ._.
+        Analysis_NN results_NNS from_IN all_DT 
+        P_NN ._. sojae_NN and_CC mixed-culture_JJ
+        transcripts_NNS are_VBP available_JJ as_IN additional_JJ data_NNS files_NNS ,_, grouped_VBN
+        by_IN the_DT library_NN from_IN which_WDT transcripts_NNS were_VBD sequenced_JJ ._.
+        Figure_NN 4_CD shows_VBZ that_IN calibration_NN curves_NNS from_IN comparing_VBG
+        plant_NN and_CC microbial_NN symbiont_NN training_NN sets_NNS have_VBP good_JJ
+        separation_NN and_CC minimal_JJ overlap_VB (_( about_IN 10_CD %_NN )_) in_IN two_CD of_IN three_CD
+        cases_NNS ,_, but_CC not_RB for_IN training_NN set_VBD 
+        B_NNP 
+        2_CD ,_, comprised_VBN of_IN zygomycetes_NNS and_CC
+        chytridiomycetes_NNS ,_, which_WDT overlaps_NNS considerably_RB with_IN plants_NNS
+        (_( Figure_NN 4_CD b_SYM )_) ._. The_DT associated_VBN error_NN rates_NNS are_VBP α_NN =_SYM 0_CD ._. 126_CD and_CC β_NN
+        =_SYM 0_CD ._. 207_CD ._. When_WRB comparing_VBG between_IN plants_NNS and_CC bacteria_NNS ,_, the_DT
+        error_NN rates_NNS are_VBP α_NN =_SYM 0_CD ._. 052_CD and_CC β_NN =_SYM 0_CD ._. 084_CD ,_, much_RB lower_JJR than_IN
+        when_WRB comparing_VBG plants_NNS (_( 
+        A_DT 
+        2_CD ,_, 
+        Medicago_NNP )_) with_IN fungi_NNS (_( 
+        B_NNP 
+        2_CD ,_, zygomycetes_NNS and_CC chytridiomycetes_NNS )_) ._.
+        Error_NNP rates_NNS for_IN comparing_VBG stramenopiles_NNS and_CC 
+        P_NN ._. infestans_NNS ESTs_NNP with_IN plants_NNS are_VBP as_IN
+        in_IN Figure_NN 2_CD (_( α_NN =_SYM 0_CD ._. 088_CD ,_, β_NN =_SYM 0_CD ._. 032_CD )_) ._.
+        Also_RB shown_VBN in_IN Figure_NN 4_CD are_VBP cumulative_JJ distributions_NNS from_IN
+        comparisons_NNS with_IN 
+        M_NNP ._. truncatula_NN and_CC microbial_NN
+        symbionts_NNS ._. All_DT resemble_VB calibration_NN curves_NNS from_IN plant_NN
+        sequences_NNS ,_, having_VBG similar_JJ medians_NNS and_CC slightly_RB less_JJR
+        variance_NN than_IN the_DT plant_NN calibration_NN curves_NNS ._. Comparison_NNP
+        curves_NNS show_VBP that_IN the_DT great_JJ majority_NN of_IN test_NN sequences_NNS are_VBP
+        more_RBR plant-like_JJ than_IN otherwise_RB ,_, with_IN 20_CD %_NN or_CC less_JJR resembling_VBG
+        microbial_NN symbionts_NNS more_RBR closely_RB than_IN plants_NNS ._. A_DT greater_JJR
+        proportion_NN of_IN microbial_NN sequences_NNS is_VBZ present_JJ in_IN the_DT 
+        M_NNP ._. truncatula_NN -_: 
+        G_NNP ._. versiforme_NN interaction_NN library_NN
+        (_( 20_CD %_NN ,_, Figure_NN 4_CD b_SYM )_) than_IN in_IN the_DT 
+        P_NN ._. medicaginis_NNS -_: infected_JJ 
+        M_NNP ._. truncatula_NN library_NN (_( 5_CD %_NN ,_, Figure_NN
+        4_CD a_DT )_) ._. However_RB ,_, Long_NNP 's_POS root-hair_JJ enriched_JJ library_NN (_( MtRHE_NNP )_) [_NN
+        6_CD ]_NN had_VBD a_DT greater_JJR proportion_NN of_IN putative_JJ microbial_NN sequences_NNS
+        present_JJ (_( 7_CD %_NN and_CC 25_CD %_NN )_) than_IN any_DT of_IN the_DT libraries_NNS isolated_VBN
+        from_IN symbiont-associated_JJ cultures_NNS ._. The_DT axenic_JJ and_CC
+        nodulating_VBG root_NN libraries_NNS had_VBD the_DT smallest_JJS portion_NN of_IN
+        putative_JJ microbial_NN transcripts_NNS (_( <_NN 2_CD %_NN ,_, Figure_NN 4_CD c_SYM )_) ,_, with_IN
+        the_DT axenic_JJ library_NN closely_RB resembling_VBG nodulating_VBG root_NN
+        libraries_NNS ._. The_DT method_NN of_IN preparing_VBG a_DT library_NN can_MD affect_VB the_DT
+        proportion_NN of_IN plant_NN and_CC non-plant_JJ sequences_NNS ,_, as_IN discussed_VBN
+        below_IN ._.
+        Paired_NNP dissimilarity_NN values_NNS in_IN Figure_NN 5_CD show_NN in_IN greater_JJR
+        detail_NN which_WDT sequences_NNS are_VBP more_JJR or_CC less_RBR like_IN plant_NN and_CC
+        symbiont_NN ._. Sequences_NNP from_IN an_DT interaction_NN library_NN and_CC pure_JJ
+        plant_NN root_NN cultures_NNS appear_VBP together_RB for_IN comparison_NN ._.
+        Considerable_NNP variation_NN in_IN the_DT degree_NN of_IN dissimilarity_NN to_TO
+        both_DT training_NN sets_NNS is_VBZ clear_JJ ,_, largely_RB due_JJ to_TO variation_NN in_IN
+        the_DT length_NN of_IN sequences_NNS within_IN test_NN sets_NNS ._. Consistent_NNP with_IN
+        the_DT cumulative_JJ distributions_NNS of_IN 
+        D_NNP (_( A_DT )_) -_: 
+        D_NNP (_( B_NNP )_) in_IN Figure_NN 4_CD ,_, most_JJS sequences_NNS lie_VBP
+        above_IN the_DT identity_NN function_NN ,_, and_CC resemble_VB the_DT plant_NN host_NN
+        more_RBR closely_RB than_IN the_DT microbial_NN symbiont_NN ._. Mycorrhizal_NNP test_NN
+        sequences_NNS are_VBP more_RBR difficult_JJ to_TO differentiate_VB than_IN
+        sequences_NNS from_IN the_DT rhizobacterial_NN or_CC pathogenic_JJ
+        associations_NNS ,_, as_IN seen_VBN by_IN the_DT diminished_VBN variation_NN about_IN the_DT
+        identity_NN function_NN in_IN mycorrhizal_NN comparisons_NNS (_( Figure_NN 5_CD b_SYM )_) ,_,
+        contrasted_VBN with_IN comparisons_NNS from_IN pathogen-infected_JJ and_CC
+        nodulating_VBG root_NN libraries_NNS (_( Figures_NNS 5_CD aand_NN c_SYM ,_, respectively_RB )_) ._.
+        Analysis_NN results_NNS from_IN all_DT 
+        M_NNP ._. truncatula_NN and_CC mixed-culture_JJ
+        transcripts_NNS are_VBP available_JJ as_IN additional_JJ data_NNS files_NNS ,_, grouped_VBN
+        by_IN the_DT library_NN from_IN which_WDT transcripts_NNS were_VBD sequenced_JJ ,_, and_CC
+        sorted_VBN from_IN the_DT least_JJS plant-like_JJ transcripts_NNS to_TO the_DT most_RBS
+        plant-like_JJ ._.
+      
+      
+        Discussion_NNP
+        Clearly_RB ,_, the_DT word-counting_JJ approach_NN provides_VBZ a_DT reliable_JJ
+        solution_NN to_TO the_DT problem_NN of_IN source_NN identification_NN with_IN known_VBN
+        confidence_NN ,_, and_CC has_VBZ several_JJ significant_JJ advantages_NNS ._. The_DT
+        reliability_NN of_IN the_DT method_NN is_VBZ best_RBS justified_JJ in_IN terms_NNS of_IN the_DT
+        favorable_JJ validation_NN test_NN results_NNS ,_, and_CC is_VBZ further_JJ
+        corroborated_JJ by_IN agreement_NN with_IN an_DT analysis_NN of_IN GC_NNP content_NN ._.
+        In_IN test_NN cases_NNS where_WRB the_DT correct_JJ answer_NN is_VBZ known_VBN 
+        a_DT priori_FW ,_, results_NNS were_VBD correct_JJ
+        within_IN error_NN rates_NNS expected_VBN from_IN overlap_VB in_IN training_NN sets_NNS ._.
+        (_( Recall_VB that_DT α_NN =_SYM 0_CD ._. 088_CD for_IN comparisons_NNS between_IN plants_NNS and_CC
+        stramenopiles_NNS ,_, and_CC α_NN =_SYM 0_CD ._. 052_CD for_IN comparisons_NNS between_IN plants_NNS
+        and_CC bacteria_NNS ._. )_) Unlike_IN GC_NNP content_NN ,_, the_DT problem_NN is_VBZ clearly_RB
+        resolved_VBN by_IN word_NN counting_VBG with_IN a_DT threshold_NN value_NN of_IN 
+        t_NN =_SYM 0_CD ,_, and_CC with_IN statistical_JJ rigor_NN ,_,
+        because_IN false-positive_JJ and_CC false-negative_JJ rates_NNS for_IN a_DT set_NN
+        of_IN comparisons_NNS are_VBP readily_RB computed_JJ from_IN cumulative_JJ
+        distributions_NNS of_IN dissimilarity_NN between_IN two_CD training_NN sets_NNS ._.
+        Optimal_NNP statistical_JJ power_NN (_( minimal_JJ false-negative_JJ rate_NN )_) is_VBZ
+        ensured_JJ when_WRB using_VBG a_DT likelihood-ratio_JJ test_NN statistic_NN ,_, as_IN
+        demonstrated_VBN by_IN the_DT Pearson-_NNP Neyman_NNP Theorem_NNP [_NN 28_CD ]_NN ._. Further_RB ,_,
+        word_NN counting_VBG need_MD not_RB be_VB trained_VBN only_RB for_IN the_DT species_NNS
+        being_VBG compared_VBN ._. Rather_RB ,_, it_PRP is_VBZ sufficient_JJ that_IN the_DT training_NN
+        set_VBN be_VB related_VBN to_TO ,_, but_CC not_RB necessarily_RB congeners_NNS of_IN ,_, the_DT
+        species_NNS from_IN which_WDT sequences_NNS are_VBP being_VBG compared_VBN ._. Sequences_NNP
+        from_IN several_JJ species_NNS of_IN the_DT genus_JJ 
+        Phytophthora_NNP were_VBD correctly_RB
+        distinguished_VBN from_IN plant_NN and_CC bacterial_JJ sequences_NNS ,_, and_CC three_CD
+        genes_NNS from_IN 
+        Agrobacterium_NNP tumefaciens_NNS were_VBD
+        correctly_RB identified_VBN as_IN representing_VBG a_DT bacterial_JJ
+        sequence_NN ._.
+        However_RB ,_, several_JJ caveats_NNS warrant_VBP prudence_NN ._. Transcribed_NNP
+        sequences_NNS that_WDT do_VBP not_RB encode_NN proteins_NNS ,_, but_CC rather_RB catalytic_JJ
+        single-stranded_JJ RNAs_NNP such_JJ as_IN transfer_NN and_CC ribosomal_JJ RNAs_NNP [_NN
+        32_CD ]_NN ,_, should_MD be_VB treated_VBN independently_RB because_IN they_PRP are_VBP more_RBR
+        highly_RB conserved_JJ across_IN taxa_NN than_IN messenger_NN RNAs_NNP ._. Also_RB ,_,
+        filtering_VBG or_CC trimming_NN of_IN low-complexity_JJ repeat_NN regions_NNS ,_,
+        such_JJ as_IN poly_RB (_( A_DT )_) or_CC poly_RB (_( T_NN )_) tracts_NNS ,_, is_VBZ helpful_JJ because_IN
+        comparison_NN results_NNS can_MD be_VB influenced_VBN by_IN the_DT abundance_NN of_IN a_DT
+        single_JJ hexamer_NN ._. Early_RB in_IN our_PRP$ investigations_NNS ,_, using_VBG one_CD set_NN
+        of_IN training_NN sequences_NNS obtained_VBN from_IN directionally_RB cloned_VBN 
+        P_NN ._. infestans_NNS cDNAs_NNS produced_VBD results_NNS
+        that_WDT were_VBD difficult_JJ to_TO interpret_VB ._. It_PRP eventually_RB became_VBD
+        clear_JJ that_IN ,_, as_IN the_DT 
+        P_NN ._. infestans_NNS sequences_NNS were_VBD all_DT
+        single-pass_JJ reads_VBZ from_IN the_DT 5_CD '_POS end_NN of_IN a_DT clone_NN generated_VBN with_IN
+        the_DT T_NN 3_CD primer_NN ,_, few_JJ sequences_NNS complementary_JJ to_TO the_DT 3_CD '_POS end_NN of_IN
+        the_DT mRNA_NN sequence_NN were_VBD present_JJ in_IN the_DT training_NN set_VBN ._. This_DT
+        meant_VBN that_IN the_DT hexamer_NN AAAAAA_NNP was_VBD common_JJ ,_, but_CC the_DT hexamer_NN
+        TTTTTT_NNP scarce_JJ ._. Large_JJ amounts_NNS of_IN the_DT poly_RB (_( T_NN )_) hexamer_NN would_MD
+        be_VB expected_VBN when_WRB sequencing_VBG reverse_NN complements_VBZ of_IN mRNAs_NNS
+        obtained_VBN from_IN 3_CD '_POS sequences_NNS generated_VBN with_IN the_DT T_NN 7_CD primer_NN ._.
+        Both_DT poly_RB (_( A_DT )_) and_CC poly_RB (_( T_NN )_) regions_NNS were_VBD present_JJ among_IN plant_NN
+        training_NN sequences_NNS ._. As_IN a_DT result_NN ,_, any_DT sequence_NN that_WDT
+        contained_VBD a_DT poly_RB (_( T_NN )_) tract_NN tended_VBD to_TO resemble_VB the_DT plant_NN
+        sequences_NNS ._. Further_RB ,_, because_IN the_DT error_NN rates_NNS for_IN an_DT
+        inference_NN depend_VB on_IN the_DT degree_NN to_TO which_WDT calibration_NN curves_NNS
+        overlap_VBP ,_, the_DT best_JJS results_NNS are_VBP obtained_VBN where_WRB overlap_VB is_VBZ
+        minimal_JJ ._. Despite_IN these_DT caveats_NNS ,_, word_NN counting_VBG presents_VBZ a_DT
+        viable_JJ solution_NN to_TO the_DT problem_NN ._.
+        The_DT 
+        P_NN ._. sojae_NN -_: infected_JJ 
+        G_NNP ._. max_NN library_NN provides_VBZ a_DT clear_JJ
+        example_NN of_IN contrast_NN in_IN both_DT hexamer_NN composition_NN and_CC GC_NNP
+        content_NN ,_, resulting_VBG in_IN readily_RB diagnosed_VBN origins_NNS ._. Not_RB every_DT
+        case_NN is_VBZ this_DT simple_NN ._. For_IN clear_JJ separation_NN between_IN the_DT two_CD
+        species_NNS to_TO appear_VB ,_, the_DT two_CD must_MD differ_VB in_IN composition_NN and_CC a_DT
+        detectable_JJ proportion_NN of_IN transcripts_NNS from_IN each_DT species_NNS must_MD
+        be_VB present_JJ in_IN the_DT library_NN ._. To_TO be_VB detectable_JJ ,_, the_DT proportion_NN
+        of_IN transcripts_NNS present_JJ from_IN a_DT particular_JJ species_NNS must_MD be_VB
+        greater_JJR than_IN the_DT error_NN rate_NN obtained_VBN from_IN calibration_NN
+        curves_NNS ._.
+        Though_IN these_DT criteria_NNS are_VBP true_JJ for_IN the_DT infected_JJ 
+        G_NNP ._. max_NN library_NN (_( 
+        t_NN <_NN 0_CD for_IN <_NN 25_CD %_NN of_IN 927_CD
+        transcripts_NNS )_) ,_, they_PRP do_VBP not_RB appear_VB to_TO be_VB true_JJ for_IN the_DT 
+        M_NNP ._. truncatula_NN libraries_NNS we_PRP analyzed_VBD (_(
+        
+        t_NN <_NN 0_CD for_IN 80_CD -_: 99_CD %_NN of_IN 890_CD -_: 3_CD ,_, 017_CD
+        transcripts_NNS )_) ._. In_IN the_DT 
+        P_NN ._. medicaginis_NNS interaction_NN library_NN ,_,
+        we_PRP might_MD expect_VB the_DT same_JJ bimodal_NN distribution_NN as_IN seen_VBN with_IN 
+        P_NN ._. sojae_NN ._. However_RB ,_, the_DT two_CD libraries_NNS
+        were_VBD prepared_VBN in_IN different_JJ ways_NNS ._. The_DT 
+        P_NN ._. sojae_NN -_: infected_JJ library_NN was_VBD
+        prepared_VBN two_CD days_NNS after_IN infection_NN ,_, using_VBG a_DT susceptible_JJ
+        plant_NN host_NN strain_NN ,_, so_RB as_IN to_TO maximize_VB the_DT number_NN of_IN pathogen_NN
+        transcripts_NNS present_JJ in_IN the_DT host_NN tissue_NN [_NN 18_CD ]_NN ._. Further_RB ,_, 
+        G_NNP ._. max_NN hypocotyl_NN tissues_NNS were_VBD
+        infected_VBN directly_RB with_IN a_DT zoospore_NN suspension_NN ._. In_IN contrast_NN ,_,
+        the_DT 
+        P_NN ._. medicaginis_NNS -_: infected_JJ library_NN was_VBD
+        prepared_VBN ten_CD days_NNS after_IN infection_NN and_CC individual_JJ plants_NNS
+        varied_VBD in_IN their_PRP$ degree_NN of_IN susceptibility_NN (_( C_NNP ._. Vance_NNP ,_,
+        unpublished_JJ data_NNS )_) ._. Plants_NNP were_VBD also_RB inoculated_JJ in_IN a_DT
+        different_JJ manner_NN :_: ground_NN mycelia_NN were_VBD dissolved_VBN in_IN sterile_JJ
+        water_NN and_CC incubated_JJ ,_, and_CC the_DT resulting_VBG inoculum_NN was_VBD
+        pipetted_JJ onto_IN the_DT soil_NN surface_NN ,_, rather_RB than_IN the_DT plant_NN ._.
+        These_DT differences_NNS in_IN how_WRB tissues_NNS were_VBD cultured_JJ prior_RB to_TO
+        library_NN preparation_NN could_MD have_VB produced_VBN the_DT disparate_JJ
+        abundance_NN of_IN plant_NN transcripts_NNS ,_, though_IN both_DT libraries_NNS were_VBD
+        prepared_VBN from_IN plant_NN tissues_NNS infected_VBN with_IN 
+        Phytophthora_NNP ._.
+        For_IN mycorrhizal_NN root_NN libraries_NNS ,_, we_PRP might_MD explain_VB the_DT
+        relative_JJ lack_NN of_IN symbiont_NN sequences_NNS as_IN resulting_VBG simply_RB
+        from_IN a_DT relative_JJ lack_NN of_IN transcripts_NNS in_IN the_DT host_NN tissue_NN ._.
+        Most_JJS of_IN the_DT biomass_NNS in_IN mycorrhizal_NN roots_NNS is_VBZ plant_NN biomass_NNS [_NN
+        33_CD ]_NN ._. We_PRP might_MD therefore_RB expect_VB that_IN most_JJS of_IN the_DT transcripts_NNS
+        therein_RB originate_VB from_IN the_DT plant_NN host_NN ._. Confounding_NNP this_DT
+        result_NN ,_, the_DT error_NN rates_NNS in_IN this_DT comparison_NN are_VBP the_DT greatest_JJS
+        among_IN all_PDT the_DT comparisons_NNS we_PRP performed_VBD ,_, most_RBS likely_JJ because_IN
+        the_DT evolutionary_JJ distance_NN between_IN fungi_NNS (_( zygomycetes_NNS and_CC
+        chytridiomycetes_NNS )_) and_CC plants_NNS is_VBZ the_DT least_JJS among_IN comparisons_NNS
+        [_NN 34_CD ]_NN ._. Also_RB ,_, zygomycete_NN protein-coding_JJ sequences_NNS are_VBP rare_JJ
+        in_IN GenBank_NNP ,_, which_WDT resulted_VBD in_IN a_DT small_JJ training_NN set_VBN for_IN
+        these_DT fungi_NNS ,_, and_CC may_MD have_VB amplified_VBN any_DT biases_NNS ._. The_DT high_JJ
+        false-negative_JJ rate_NN probably_RB led_VBD to_TO a_DT failure_NN to_TO detect_VB
+        some_DT symbiont_NN transcripts_NNS ._.
+        In_IN nodulating_VBG root_NN libraries_NNS ,_, we_PRP do_VBP not_RB expect_VB to_TO
+        observe_VB an_DT abundance_NN of_IN bacterial_JJ transcripts_NNS ,_, because_IN
+        bacteria_NNS generally_RB do_VBP not_RB form_VB polyadenylated_JJ mRNAs_NNS [_NN 35_CD ]_NN ._.
+        As_IN the_DT protocols_NNS used_VBN to_TO extract_VB and_CC purify_NN mRNAs_NNS from_IN
+        tissue_NN lysate_NN for_IN the_DT libraries_NNS cited_VBD in_IN this_DT study_NN all_DT
+        relied_VBN on_IN the_DT presence_NN of_IN polyadenylation_NN sites_NNS ,_, we_PRP
+        generally_RB do_VBP not_RB expect_VB to_TO find_VB bacterial_JJ transcripts_NNS ._.
+        The_DT abundance_NN of_IN putative_JJ microbial_NN symbiont_NN transcripts_NNS
+        among_IN sequences_NNS from_IN a_DT pure_JJ plant_NN root_NN library_NN is_VBZ difficult_JJ
+        to_TO interpret_VB ._. The_DT predicted_VBN portion_NN of_IN microbial_NN
+        transcripts_NNS was_VBD greater_JJR in_IN the_DT axenic_JJ root-hair_JJ enriched_JJ
+        library_NN than_IN in_IN mixed_JJ cultures_NNS ._. Error_NNP rates_NNS were_VBD greatest_JJS
+        for_IN comparisons_NNS between_IN training_NN sets_NNS from_IN plant_NN and_CC pooled_VBN
+        zygomycete_NN and_CC chytridiomycete_NN sequences_NNS ._. Other_JJ than_IN
+        providing_VBG an_DT 87_CD %_NN confidence_NN level_NN ,_, the_DT 13_CD %_NN false-positive_JJ
+        rate_NN does_VBZ not_RB completely_RB explain_VB why_WRB about_IN 15_CD %_NN of_IN root-hair_JJ
+        enriched_JJ transcripts_NNS resemble_VBP fungal_NN hexamer_NN composition_NN
+        more_RBR closely_RB than_IN plants_NNS ,_, and_CC warrants_NNS further_JJ study_NN ._.
+        Care_NNP had_VBD been_VBN taken_VBN to_TO avoid_VB contaminating_VBG plant_NN tissue_NN
+        cultures_NNS by_IN culturing_VBG seedlings_NNS in_IN covered_VBN plates_NNS ._. Because_IN
+        of_IN concern_NN that_DT ethylene_NN accumulation_NN in_IN covered_VBN plates_NNS
+        could_MD improperly_RB stimulate_VB nodulation-related_JJ gene_NN
+        expression_NN ,_, seedlings_NNS were_VBD treated_VBN with_IN Ag_NNP 
+        2_CD SO_NNP 
+        4_CD ,_, an_DT inhibitor_NN of_IN the_DT plants_NNS '_POS response_NN
+        to_TO ethylene_NN [_NN 6_CD ]_NN ._. Inhibition_NNP of_IN the_DT ethylene_NN response_NN could_MD
+        have_VB resulted_VBN in_IN synthesis_NN of_IN transcripts_NNS that_WDT are_VBP
+        uncharacteristic_JJ of_IN plant_NN roots_NNS ._. Analysis_NNP of_IN another_DT axenic_JJ
+        root-hair_JJ enriched_JJ library_NN ,_, particularly_RB one_CD provided_VBD a_DT
+        carbon_NN source_NN to_TO identify_VB potential_JJ contaminants_NNS ,_, and_CC not_RB
+        treated_VBN with_IN an_DT inhibitor_NN of_IN ethylene_NN response_NN ,_, would_MD be_VB an_DT
+        informative_JJ test_NN ._.
+        These_DT observations_NNS warrant_VBP further_JJ experimental_JJ
+        scrutiny_NN ._. The_DT transcripts_NNS identified_VBN as_IN most_JJS and_CC least_JJS like_IN
+        plant_NN or_CC symbiont_NN might_MD also_RB be_VB studied_VBN in_IN more_JJR detail_NN as_IN
+        candidate_NN participants_NNS in_IN symbiosis_NNS ._. Symbiotic_NNP
+        interactions_NNS ,_, whether_IN pathogenic_JJ or_CC mutualistic_JJ ,_, present_JJ
+        novel_NN challenges_NNS to_TO both_DT plant_NN hosts_NNS and_CC the_DT biologists_NNS who_WP
+        study_VBP them_PRP ._. Computational_NNP approaches_NNS ,_, in_IN concert_NN with_IN
+        experimental_JJ verification_NN ,_, can_MD help_VB resolve_VB these_DT
+        challenges_NNS ._.
+      
+      
+        Methods_NNP and_CC materials_NNS
+        
+          Training_NNP sequences_NNS
+          
+            Calibration_NNP
+            To_TO characterize_VB hexamer_NN frequencies_NNS in_IN plant_NN hosts_NNS
+            and_CC their_PRP$ microbial_NN symbionts_NNS ,_, we_PRP collected_VBD sets_NNS of_IN
+            training_NN sequences_NNS from_IN public_JJ databases_NNS and_CC edited_JJ
+            them_PRP for_IN quality_NN ._. Training_NNP sets_NNS were_VBD chosen_VBN to_TO be_VB
+            representative_NN of_IN ,_, but_CC obtained_VBD independently_RB from_IN ,_,
+            taxa_NN participating_VBG in_IN symbiotic_JJ associations_NNS for_IN which_WDT
+            a_DT diagnosis_NN of_IN origin_NN would_MD be_VB made_VBN ._. Because_IN the_DT
+            species_NNS being_VBG compared_VBN are_VBP represented_VBN unevenly_RB in_IN
+            public_JJ sequence_NN databases_NNS ,_, taxa_NN were_VBD chosen_VBN so_IN that_IN
+            roughly_RB the_DT same_JJ number_NN of_IN genes_NNS were_VBD analyzed_VBN in_IN each_DT
+            training_NN set_VBD ,_, rather_RB than_IN simply_RB to_TO maximize_VB the_DT
+            numbers_NNS of_IN species_NNS or_CC sequences_NNS present_JJ ._.
+            Training_NNP sets_NNS represent_VBP protein-coding_JJ sequences_NNS
+            from_IN three_CD taxonomic_JJ groupings_NNS :_: plants_NNS (_( 
+            A_DT 
+            1_CD ,_, 
+            Medicago_NNP and_CC 
+            Glycine_NNP spp_NN ._. )_) ,_, either_CC fungi_NNS (_( 
+            B_NNP 
+            2_CD ,_, zygomycetes_NNS and_CC
+            chytridiomycetes_NNS )_) or_CC stramenopiles_NNS (_( 
+            B_NNP 
+            1_LS )_) ,_, including_VBG ESTs_NNP from_IN 
+            P_NN ._. infestans_NNS [_NN 16_CD ]_NN ,_, and_CC bacteria_NNS
+            (_( 
+            B_NNP 
+            3_CD ,_, 
+            Rhizobium_NNP ,_, 
+            Sinorhizobium_NNP and_CC 
+            Bradyrhizobium_NNP )_) ._. We_PRP performed_VBD
+            pairwise_NN comparisons_NNS with_IN two_CD different_JJ ,_, taxon-specific_JJ
+            training_NN sets_NNS (_( 
+            A_DT and_CC 
+            B_NNP )_) to_TO infer_NN the_DT origin_NN of_IN a_DT
+            transcript_NN ._.
+            Training_NNP sets_NNS were_VBD obtained_VBN by_IN querying_VBG the_DT GenBank_NNP
+            database_NN using_VBG the_DT Entrez_NNP retrieval_NN tool_NN [_NN 29_CD ,_, 30_CD ,_, 31_CD ]_NN ._.
+            A_DT preliminary_JJ query_NN by_IN taxon_NN name_NN obtained_VBD all_DT
+            available_JJ nucleotide_NN sequences_NNS from_IN that_DT taxon_NN ,_, then_RB
+            the_DT Limits_NNP option_NN excluded_VBD ESTs_NNP ,_, STSs_NNP (_( sequence-tagged_JJ
+            sites_NNS )_) ,_, GSSs_NNP (_( genome_NN survey_NN sequences_NNS )_) ,_, working_VBG draft_NN
+            sequences_NNS ,_, and_CC patented_VBD sequences_NNS from_IN the_DT query_NN set_VBN ._.
+            Organellar_NNP (_( mitochondrial_NN and_CC chloroplast_NN )_) DNA_NNP was_VBD also_RB
+            excluded_VBN via_IN the_DT Limits_NNP option_NN ._. A_DT query_NN term_NN to_TO require_VB
+            that_IN a_DT sequence_NN contain_VBP a_DT protein-coding_JJ region_NN (_( CDS_NNP )_)
+            was_VBD also_RB added_VBN ,_, which_WDT excluded_VBD ribosomal_JJ and_CC transfer_VB
+            RNA_NNP sequences_NNS ._. The_DT results_NNS consisted_VBD of_IN all_DT sequences_NNS
+            that_WDT contain_VBP a_DT nuclear_JJ protein-coding_JJ sequence_NN
+            available_JJ for_IN that_DT taxon_NN at_IN the_DT time_NN of_IN the_DT query_NN ._. This_DT
+            was_VBD done_VBN on_IN two_CD separate_JJ occasions_NNS :_: in_IN April_NNP and_CC
+            October_NNP 2000_CD ._. (_( Changing_VBG slightly_RB the_DT composition_NN of_IN
+            training_NN sets_NNS between_IN those_DT dates_NNS did_VBD not_RB notably_RB
+            affect_VB the_DT experimental_JJ outcome_NN ._. )_)
+            Following_VBG a_DT previously_RB established_VBN protocol_NN [_NN 19_CD ]_NN ,_,
+            we_PRP used_VBD a_DT resampling_VBG procedure_NN to_TO evaluate_VB the_DT degree_NN
+            of_IN overlap_VB between_IN distributions_NNS of_IN hexamer_NN composition_NN
+            obtained_VBN from_IN comparing_VBG two_CD training_NN sets_NNS ._. In_IN this_DT
+            protocol_NN ,_, we_PRP resampled_JJ each_DT training_NN set_VBD 40_CD times_NNS by_IN
+            random_JJ partitioning_VBG into_IN training_NN (_( for_IN hexamer_NN counts_VBZ )_)
+            and_CC test_NN calculation_NN pools_NNS ._. To_TO control_VB for_IN any_DT bias_NN
+            introduced_VBN by_IN length_NN variation_NN ,_, a_DT program_NN randomly_RB
+            clipped_VBD 300_CD nucleotide_NN fragments_NNS for_IN word_NN counting_NN ._. As_IN
+            a_DT result_NN ,_, one_CD random_JJ 300_CD nucleotide_NN fragment_NN from_IN each_DT
+            training_NN sequence_NN was_VBD present_JJ in_IN the_DT training_NN set_VBN
+            during_IN a_DT single_JJ resampling_VBG replicate_VB ;_: independent_JJ
+            replicates_NNS contained_VBD different_JJ ,_, randomly_RB chosen_VBN
+            training_NN sequences_NNS and_CC 300_CD nucleotide_NN fragments_NNS ._. Values_NNP
+            of_IN the_DT test_NN statistic_NN from_IN 40_CD resampled_JJ replicates_NNS were_VBD
+            pooled_VBN for_IN calibration_NN purposes_NNS ._.
+            As_IN with_IN the_DT original_JJ protocol_NN [_NN 19_CD ]_NN ,_, we_PRP pooled_VBN the_DT
+            resulting_VBG test_NN statistic_NN distributions_NNS ,_, normalized_JJ them_PRP
+            as_IN cumulative_JJ distributions_NNS ,_, and_CC then_RB evaluated_VBN them_PRP
+            for_IN overlap_VB ._. We_PRP call_VBP the_DT resulting_VBG comparisons_NNS
+            '_POS calibration_NN curves_NNS '_POS ,_, as_IN they_PRP are_VBP not_RB used_VBN directly_RB to_TO
+            make_VB inferences_NNS ,_, but_CC rather_RB indirectly_RB ,_, to_TO evaluate_VB the_DT
+            degree_NN of_IN separation_NN in_IN hexamer_NN counts_VBZ from_IN different_JJ
+            taxa_NN ._. Overlap_NNP of_IN calibration_NN curves_NNS should_MD be_VB minimal_JJ
+            to_TO yield_VB the_DT most_RBS statistically_RB powerful_JJ results_NNS
+            possible_JJ ._.
+            Due_JJ to_TO considerable_JJ overlap_VB of_IN calibration_NN curves_NNS
+            between_IN taxonomically_RB general_JJ ,_, inclusive_JJ training_NN sets_NNS
+            (_( that_WDT is_VBZ ,_, all_DT eudicots_NNS ,_, all_DT fungi_NNS and_CC miscellaneous_JJ
+            eukaryotes_NNS ,_, and_CC all_DT eubacteria_NN ,_, data_NNS not_RB shown_VBN )_) ,_, we_PRP
+            opted_VBD to_TO work_VB with_IN specific_JJ training_NN sets_NNS that_WDT included_VBD
+            only_RB the_DT most_RBS species-specific_JJ sequences_NNS available_JJ ,_,
+            while_IN maintaining_VBG approximately_RB equal_JJ sample_NN sizes_NNS
+            across_IN taxa_NN ._.
+            The_DT most_JJS challenging_VBG case_NN was_VBD that_IN of_IN the_DT arbuscular_NN
+            mycorrhizal_NN fungi_NNS ,_, for_IN which_WDT very_RB few_JJ protein-coding_JJ
+            sequences_NNS are_VBP available_JJ ._. To_TO increase_VB the_DT amount_NN of_IN data_NNS
+            in_IN this_DT training_NN set_VBN (_( 
+            B_NNP 
+            2_LS )_) without_IN biasing_VBG sample_NN sizes_NNS ,_, we_PRP
+            pooled_VBN sequences_NNS from_IN all_DT species_NNS in_IN the_DT zygomycetes_NNS
+            with_IN all_DT available_JJ chytridiomycete_NN coding_VBG sequences_NNS ,_,
+            and_CC compared_VBD this_DT training_NN set_VBN with_IN a_DT set_VBN from_IN a_DT single_JJ
+            plant_NN genus_JJ ,_, 
+            Medicago_NNP (_( 
+            A_DT 
+            2_LS )_) ._. We_PRP chose_VBD this_DT option_NN ,_, rather_RB
+            than_IN including_VBG an_DT arbitrary_JJ subset_NN of_IN sequences_NNS from_IN
+            the_DT ascomycetes_NNS and_CC basidiomycetes_NNS ,_, because_IN zygomycetes_NNS
+            and_CC chytridiomycetes_NNS have_VBP diverged_JJ from_IN their_PRP$ common_JJ
+            ancestor_NN less_RBR recently_RB than_IN the_DT ascomycetes_NNS and_CC
+            basidiomycetes_NNS ,_, based_VBN on_IN 18_CD S_NNP ribosomal_JJ RNA_NNP sequence_NN
+            data_NNS [_NN 34_CD ]_NN ._. That_DT is_VBZ ,_, the_DT ascomycetes_NNS and_CC basidiomycetes_NNS
+            are_VBP more_RBR highly_RB derived_VBN from_IN the_DT common_JJ fungal_NN ancestor_NN
+            than_IN zygomycetes_NNS and_CC chytridiomycetes_NNS ,_, which_WDT resemble_VBP
+            more_RBR closely_RB the_DT ancestral_JJ state_NN in_IN modern_JJ
+            lineages_NNS ._.
+          
+          
+            Data_NNP quality_NN
+            Starting_VBG with_IN a_DT full_RB set_NN of_IN sequences_NNS ,_, we_PRP filtered_VBN
+            for_IN high-quality_JJ sequences_NNS by_IN trimming_VBG regions_NNS having_VBG
+            extensive_JJ ambiguous_JJ bases_NNS (_( N-_NNP rich_JJ )_) and_CC poly_RB (_( A_DT )_) or_CC
+            poly_RB (_( T_NN )_) regions_NNS ._. The_DT test_NN statistic_NN can_MD be_VB sensitive_JJ to_TO
+            the_DT abundance_NN of_IN a_DT single_JJ word_NN [_NN 19_CD ]_NN ._. Thus_RB ,_, we_PRP trimmed_VBD
+            poly_RB (_( A_DT )_) and_CC poly_RB (_( T_NN )_) sites_NNS to_TO minimize_VB the_DT cases_NNS in_IN
+            which_WDT a_DT test_NN sequence_NN resembles_VBZ one_CD training_VBG set_VBN more_RBR
+            closely_RB than_IN the_DT other_JJ ,_, simply_RB by_IN virtue_NN of_IN having_VBG an_DT
+            abundance_NN of_IN the_DT hexamer_NN AAAAAA_NNP or_CC TTTTTT_NNP ._. Similarly_RB ,_,
+            test_NN results_NNS obtained_VBN from_IN short_JJ or_CC N-_NNP rich_JJ sequences_NNS
+            can_MD be_VB difficult_JJ to_TO interpret_VB [_NN 19_CD ]_NN ._. We_PRP allowed_VBD no_RB more_JJR
+            than_IN one_CD N_NNP per_IN hexamer_NN and_CC trimmed_VBD poly_RB (_( A_DT )_) or_CC poly_RB (_( T_NN )_)
+            tracts_NNS longer_JJR than_IN 13_CD nucleotides_NNS ._. To_TO accommodate_VB for_IN
+            possible_JJ sequence_NN chimeras_NNS ,_, those_DT sequences_NNS found_VBD to_TO
+            contain_VB an_DT internal_JJ poly_RB (_( A_DT )_) or_CC poly_RB (_( T_NN )_) segment_NN longer_JJR
+            than_IN 13_CD nucleotides_NNS were_VBD partitioned_JJ into_IN two_CD
+            fragments_NNS ,_, and_CC the_DT longer_RBR of_IN the_DT two_CD fragments_NNS was_VBD used_VBN
+            in_IN analysis_NN ,_, provided_VBD its_PRP$ length_NN was_VBD at_IN least_JJS 300_CD
+            nucleotides_NNS ._.
+            After_IN trimming_VBG ,_, we_PRP screened_VBD all_DT remaining_VBG sequences_NNS
+            of_IN 300_CD nt_RB or_CC longer_RBR for_IN similarity_NN to_TO 
+            Escherichia_NNP coli_NNS using_VBG BLASTN_NNP [_NN
+            20_CD ,_, 21_CD ]_NN ._. All_DT BLAST_NN searches_NNS used_VBD default_NN parameters_NNS and_CC
+            low-complexity_JJ filtering_VBG with_IN the_DT programs_NNS DUST_NNP or_CC SEG_NNP ._.
+            The_DT decision_NN to_TO exclude_VB non-coding_JJ RNA_NNP sequences_NNS from_IN
+            training_NN sets_NNS was_VBD informed_VBN by_IN the_DT appearance_NN of_IN bimodal_NN
+            distributions_NNS of_IN hexamer_NN frequencies_NNS and_CC a_DT large_JJ degree_NN
+            of_IN overlap_VB between_IN calibration_NN curves_NNS (_( data_NNS not_RB shown_VBN )_) ,_,
+            likely_JJ a_DT result_NN of_IN divergent_JJ evolutionary_JJ rates_NNS between_IN
+            protein-coding_JJ and_CC non-coding_JJ sequences_NNS [_NN 36_CD ,_, 37_CD ]_NN ._.
+            Chloroplast_NNP and_CC mitochondrial_NN sequences_NNS were_VBD eliminated_VBN
+            to_TO avoid_VB complications_NNS due_JJ to_TO variation_NN in_IN codon_NN usage_NN
+            between_IN nuclear_JJ and_CC organellar_NN genomes_NNS ._.
+            Table_NNP 2_CD summarizes_NNS counts_NNS of_IN sequences_NNS and_CC
+            nucleotides_NNS in_IN training_NN sets_NNS before_IN and_CC after_IN trimming_VBG
+            and_CC screening_VBG ._. All_DT training_NN sets_NNS obtained_VBD using_VBG the_DT
+            procedure_NN described_VBD above_IN are_VBP available_JJ as_IN additional_JJ
+            files_NNS ._.
+          
+          
+            Validation_NNP
+            To_TO test_VB the_DT validity_NN of_IN word_NN counting_VBG as_IN a_DT solution_NN
+            to_TO the_DT problem_NN ,_, we_PRP identified_VBD a_DT set_NN of_IN 50_CD gene_NN
+            sequences_NNS from_IN plants_NNS (_( 
+            M_NNP ._. truncatula_NN and_CC 
+            G_NNP ._. max_NN )_) ,_, oomycetes_NNS (_( 
+            Phytophthora_NNP )_) ,_, zygomycetes_NNS (_( 
+            Glomus_NNP versiforme_NN )_) ,_, and_CC bacteria_NNS
+            (_( 
+            Sinorhizobium_NNP meliloti_NN and_CC 
+            Agrobacterium_NNP tumefaciens_NNS )_) ,_, for_IN
+            which_WDT the_DT function_NN and_CC origin_NN have_VBP been_VBN characterized_VBN
+            experimentally_RB ._. We_PRP chose_VBD genes_NNS known_VBN to_TO play_VB a_DT role_NN in_IN
+            plant-microbe_JJ interactions_NNS ,_, as_RB well_RB as_IN genes_NNS that_WDT are_VBP
+            found_VBN across_IN taxa_NN ._. We_PRP withheld_VBD these_DT sequences_NNS ,_, and_CC
+            partial_JJ transcripts_NNS of_IN the_DT same_JJ genes_NNS ,_, from_IN training_NN
+            sets_NNS prior_RB to_TO comparative_JJ lexical_JJ analysis_NN ,_, and_CC
+            calculated_VBD hexamer_NN dissimilarities_NNS for_IN each_DT of_IN the_DT
+            three_CD training_NN sets_NNS as_IN described_VBN below_IN ._.
+          
+        
+        
+          Test_NN sequences_NNS
+          To_TO diagnose_NN the_DT species_NNS of_IN origin_NN for_IN sequences_NNS
+          expressed_VBD in_IN symbiotic_JJ cultures_NNS ,_, we_PRP collected_VBD sequences_NNS
+          generated_VBN by_IN distinct_JJ EST_NNP sequencing_VBG projects_NNS from_IN the_DT
+          GenBank_NNP database_NN [_NN 29_CD ,_, 30_CD ,_, 31_CD ]_NN ._. Sequences_NNP from_IN pathogenic_JJ
+          interactions_NNS originated_VBN from_IN cultures_NNS of_IN a_DT species_NNS from_IN
+          the_DT genus_JJ 
+          Phytophthora_NNP with_IN its_PRP$ plant_NN host_NN ,_,
+          such_JJ as_IN 
+          P_NN ._. sojae_NN and_CC soybean_NN (_( 
+          G_NNP ._. max_NN )_) isolated_VBN from_IN inoculated_JJ
+          hypocotyls_NNS two_CD days_NNS after_IN infection_NN [_NN 18_CD ]_NN and_CC 
+          P_NN ._. medicaginis_NNS and_CC 
+          M_NNP ._. truncatula_NN isolated_VBN from_IN
+          infected_JJ roots_NNS 10_CD days_NNS after_IN infection_NN (_( C_NNP ._. Vance_NNP ,_,
+          unpublished_JJ data_NNS )_) ._. Sequences_NNP expressed_VBD during_IN mutualistic_JJ
+          interactions_NNS were_VBD obtained_VBN from_IN cultures_NNS with_IN 
+          M_NNP ._. truncatula_NN and_CC mycorrhizal_NN (_( 
+          Glomus_NNP versiforme_NN ;_: M_NNP ._. J_NNP ._. Harrison_NNP ,_,
+          unpublished_JJ data_NNS )_) or_CC rhizobacterial_NN (_( 
+          S_NNP ._. meliloti_NN ;_: K_NNP ._. VandenBosch_NNP ,_,
+          unpublished_JJ data_NNS )_) endosymbionts_NNS several_JJ days_NNS after_IN
+          inoculation_NN ._. Sequences_NNP expressed_VBD in_IN pure_JJ ,_, axenic_JJ cultures_NNS
+          from_IN 
+          P_NN ._. sojae_NN mycelia_NN and_CC zoospores_NNS [_NN
+          18_CD ]_NN and_CC from_IN sterile_JJ ,_, uninoculated_JJ 
+          M_NNP ._. truncatula_NN roots_NNS [_NN 6_CD ]_NN provided_VBD a_DT
+          basis_NN for_IN comparison_NN in_IN which_WDT no_DT foreign_JJ transcripts_NNS were_VBD
+          expected_VBN ._.
+          To_TO maximize_VB the_DT reliability_NN of_IN diagnostic_JJ comparisons_NNS ,_,
+          we_PRP screened_VBD test_NN sequences_NNS for_IN high_JJ quality_NN as_IN for_IN
+          training_NN sequences_NNS ,_, and_CC for_IN low_JJ similarity_NN to_TO 
+          E_NNP ._. coli_NNS ,_, chloroplast_NN and_CC
+          mitochondrial_NN genes_NNS ,_, and_CC non-coding_JJ RNA_NNP transcripts_NNS
+          (_( ribosomal_JJ and_CC transfer_VB RNAs_NNP )_) ._. Independent_NNP BLASTN_NNP
+          comparisons_NNS identified_VBD sequences_NNS having_VBG very_RB high_JJ
+          similarity_NN (_( 
+          E_NNP <_NN 10_CD -_: 100_CD )_) to_TO vector_NN sequences_NNS
+          or_CC moderately_RB high_JJ similarity_NN (_( 
+          E_NNP <_NN 10_CD -_: 20_CD )_) to_TO non-nuclear_JJ or_CC
+          non-coding_JJ sequences_NNS obtained_VBN from_IN GenBank_NNP ._. Sequences_NNP so_RB
+          identified_VBD were_VBD withheld_VBN from_IN analysis_NN ._. A_DT summary_NN of_IN test_NN
+          sequences_NNS appears_VBZ in_IN Table_NNP 3_CD ._. All_DT test_NN sequences_NNS obtained_VBD
+          using_VBG the_DT procedure_NN described_VBD above_IN are_VBP available_JJ as_IN
+          additional_JJ files_NNS ._.
+        
+        
+          Base_NNP content_NN
+          We_PRP wrote_VBD a_DT PERL_NNP program_NN (_( countGC_NN ._. pl_NN )_) that_WDT calculates_VBZ
+          the_DT GC_NNP base_NN content_NN of_IN a_DT sequence_NN as_IN the_DT portion_NN of_IN
+          guanine_NN and_CC cytosine_NN residues_NNS among_IN all_DT unambiguous_JJ
+          (_( non-_NN N_NNP )_) nucleotides_NNS in_IN a_DT sequence_NN ._. The_DT hist_NN method_NN in_IN R_NN ,_,
+          version_NN 1_CD ._. 1_CD ._. 1_LS [_NN 38_CD ]_NN aggregated_JJ continuous_JJ percentages_NNS
+          into_IN discrete_JJ histogram_NN bins_NNS ,_, using_VBG bin_NN sizes_NNS of_IN 2_CD %_NN
+          difference_NN in_IN GC_NNP ,_, with_IN inclusive_JJ lower_JJR bin_NN boundaries_NNS and_CC
+          exclusive_JJ upper_JJ bounds_NNS ;_: the_DT lm_NN method_NN tested_VBN for_IN linear_JJ
+          correlation_NN of_IN the_DT dissimilarity_NN test_NN statistic_NN 
+          t_NN with_IN GC_NNP ._.
+        
+        
+          Comparative_NNP lexical_JJ analysis_NN
+          White_NNP 
+          et_CC al_NN ._. [_NN 19_CD ]_NN used_VBD a_DT
+          likelihood-ratio_JJ test_NN to_TO determine_VB whether_IN word_NN
+          frequencies_NNS from_IN a_DT particular_JJ sequence_NN more_RBR closely_RB
+          resemble_VB the_DT frequency_NN distribution_NN of_IN control_NN data_NNS sets_NNS
+          from_IN the_DT taxon_NN being_VBG sequenced_JJ or_CC a_DT distantly_RB related_VBN
+          outgroup_NN ._. They_PRP computed_JJ a_DT test_NN statistic_NN 
+          t_NN (_( A_DT ,_, B_NNP ,_, x_SYM )_) for_IN each_DT sequence_NN 
+          x_SYM as_IN the_DT difference_NN of_IN
+          log-likelihood_JJ ratio_NN dissimilarity_NN measures_NNS ,_, 
+          D_NNP (_( 
+          A_DT ,_, 
+          x_SYM )_) =_SYM -_: 2_CD logλ_NN (_( 
+          A_DT ,_, 
+          x_SYM )_) ,_, for_IN two_CD data_NNS sets_NNS ,_, a_DT control_NN
+          set_VBD 
+          A_DT and_CC an_DT outgroup_NN 
+          B_NNP ,_, such_JJ that_DT 
+          t_NN (_( A_DT ,_, B_NNP ,_, x_SYM )_) =_SYM D_NNP (_( A_DT ,_, x_SYM )_) -_: D_NNP (_( B_NNP ,_, x_SYM )_) ._. A_DT
+          negative_JJ value_NN for_IN 
+          t_NN indicates_VBZ that_IN the_DT sequence_NN more_RBR
+          closely_RB resembles_VBZ words_NNS from_IN 
+          A_DT ;_: conversely_RB ,_, a_DT positive_JJ value_NN
+          indicates_VBZ a_DT likely_JJ contaminant_NN related_VBN to_TO 
+          B_NNP ._. (_( Dissimilarity_NNP is_VBZ conceptually_RB
+          related_VBN to_TO distance_VB ._. However_RB ,_, dissimilarity_NN does_VBZ not_RB
+          measure_VB distance_NN because_IN it_PRP does_VBZ not_RB possess_VB the_DT
+          mathematical_JJ properties_NNS of_IN a_DT distance_NN metric_JJ [_NN 39_CD ]_NN ._. )_)
+          Unlike_IN the_DT calculation_NN of_IN calibration_NN curves_NNS ,_, in_IN which_WDT
+          300_CD -_: nucleotide_NN subsequences_NNS are_VBP randomly_RB resampled_JJ ,_,
+          hexamer_NN dissimilarity_NN is_VBZ measured_VBN over_IN the_DT whole_JJ length_NN
+          of_IN a_DT test_NN sequence_NN when_WRB inferring_VBG a_DT transcript_NN 's_POS origin_NN ._.
+          Originally_RB ,_, the_DT investigators_NNS used_VBD the_DT null_NN hypothesis_NNS
+          that_IN no_DT difference_NN exists_VBZ for_IN dissimilarity_NN measures_NNS
+          between_IN the_DT two_CD data_NN sets_NNS ,_, or_CC that_DT 
+          t_NN (_( A_DT ,_, B_NNP ,_, x_SYM )_) =_SYM 0_CD [_NN 19_CD ]_NN ._. White_NNP 
+          et_CC al_NN ._. [_NN 19_CD ]_NN tested_VBD two_CD alternative_JJ
+          hypotheses_NNS :_: that_DT 
+          t_NN <_NN 0_CD ,_, being_VBG more_RBR like_IN 
+          A_DT ,_, or_CC 
+          t_NN >_NN 0_CD ,_, like_IN 
+          B_NNP ._.
+          Lexical_NNP analysis_NN using_VBG pentamers_NNS or_CC heptamers_NNS yields_NNS
+          similar_JJ error_NN rates_NNS and_CC very_RB highly_RB correlated_JJ values_NNS for_IN
+          the_DT test_NN result_NN (_( not_RB shown_VBN )_) ._. Because_IN White_NNP 
+          et_CC al_NN ._. [_NN 19_CD ]_NN reported_VBD the_DT best_JJS
+          results_NNS were_VBD obtained_VBN using_VBG hexamers_NNS ,_, and_CC because_IN a_DT word_NN
+          size_NN of_IN six_CD nucleotides_NNS corresponds_NNS to_TO the_DT size_NN of_IN a_DT
+          dicodon_NN ,_, we_PRP chose_VBD to_TO analyze_VB hexamer_NN frequencies_NNS ._. To_TO use_VB
+          longer_JJR words_NNS requires_VBZ more_JJR training_NN data_NNS ,_, because_IN the_DT
+          number_NN of_IN possible_JJ words_NNS increases_NNS exponentially_RB with_IN
+          increasing_VBG word_NN size_NN ._. Use_NN of_IN shorter_JJR words_NNS may_MD be_VB
+          adequate_JJ for_IN some_DT applications_NNS and_CC will_MD be_VB investigated_VBN
+          in_IN future_JJ work_NN ._.
+          Though_IN we_PRP used_VBD White_NNP 's_POS word-counting_JJ methods_NNS ,_, we_PRP did_VBD
+          make_VB slight_JJ modifications_NNS ._. We_PRP simplified_VBN one_CD program_NN
+          (_( called_VBN hybridize_NN )_) to_TO compute_VB individual_JJ dissimilarity_NN
+          values_NNS ,_, rather_RB than_IN paired_VBN differences_NNS ;_: a_DT patch_NN that_IN
+          details_NNS how_WRB to_TO modify_VB the_DT C_NNP program_NN is_VBZ available_JJ (_( see_VB
+          hyb_NN 2_CD dis_NNS ._. txt_NN in_IN additional_JJ data_NNS files_NNS )_) ._. More_RBR importantly_RB ,_,
+          we_PRP amended_VBD the_DT null_NN hypothesis_NNS and_CC interpreted_VBN
+          calibration_NN curves_NNS to_TO test_VB for_IN statistically_RB significant_JJ
+          dissimilarity_NN differences_NNS ._. Though_IN the_DT likelihood-ratio_JJ
+          test_NN statistic_NN indicates_VBZ the_DT magnitude_NN of_IN similarity_NN to_TO 
+          A_DT or_CC 
+          B_NNP ,_, we_PRP do_VBP not_RB know_VB what_WP values_NNS for_IN 
+          t_NN are_VBP significant_JJ with_IN known_VBN
+          confidence_NN ._. When_WRB testing_NN hypotheses_NNS ,_, one_PRP can_MD make_VB two_CD
+          types_NNS of_IN error_NN :_: type_NN I_PRP ,_, or_CC false_JJ positives_NNS ,_, and_CC type_NN II_NNP ,_,
+          false_JJ negatives_NNS [_NN 28_CD ]_NN ._. The_DT false-positive_JJ rate_NN is_VBZ denoted_JJ
+          α_NN and_CC false-negative_JJ rate_NN β_NN ._. We_PRP determine_VBP α_NN and_CC β_NN from_IN
+          overlap_VB in_IN the_DT calibration_NN curves_NNS ._. Inferring_NNP error_NN rates_NNS
+          from_IN calibration_NN curves_NNS is_VBZ justified_JJ because_IN we_PRP know_VBP the_DT
+          correct_JJ answer_NN and_CC determine_VB the_DT error_NN rate_NN via_IN
+          resampling_VBG ,_, as_IN with_IN bootstrap_NN methods_NNS to_TO infer_NN error_NN
+          rates_NNS or_CC confidence_NN intervals_NNS [_NN 40_CD ]_NN ._.
+          We_PRP are_VBP interested_JJ in_IN knowing_VBG from_IN which_WDT of_IN two_CD
+          organisms_NNS a_DT sequence_NN originated_VBN ,_, and_CC are_VBP reasonably_RB
+          confident_JJ that_IN it_PRP came_VBD from_IN either_DT one_CD or_CC the_DT other_JJ ._.
+          Thus_RB ,_, we_PRP assume_VBP it_PRP came_VBD from_IN one_CD and_CC test_NN whether_IN we_PRP have_VBP
+          evidence_NN to_TO refute_VB this_DT assumption_NN ._. The_DT null_NN hypothesis_NNS
+          here_RB is_VBZ that_DT sequence_NN 
+          x_SYM is_VBZ from_IN 
+          A_DT ._. Alternatively_RB ,_, it_PRP might_MD be_VB from_IN
+          
+          B_NNP ._. Evaluating_VBG the_DT calibration_NN
+          curve_NN overlap_VB at_IN 
+          t_NN =_SYM 0_CD quantifies_NNS the_DT associated_VBN
+          error_NN rates_NNS ._. The_DT cumulative_JJ distribution_NN function_NN (_( 
+          cdf_NN )_) of_IN taxon_NN 
+          B_NNP specifies_VBZ β_NN where_WRB 
+          cdf_NN 
+          B_NNP intersects_NNS 0_CD ;_: the_DT 
+          cdf_NN from_IN 
+          A_DT specifies_VBZ α_NN as_IN 1_CD -_: 
+          cdf_NN 
+          A_DT (_( 0_CD )_) ._. We_PRP can_MD thus_RB resolve_VB the_DT problem_NN
+          with_IN known_VBN confidence_NN 
+          P_NN :_: 
+          P_NN (_( 
+          t_NN >_NN 0_CD )_) =_SYM α_NN ._. All_DT other_JJ
+          computations_NNS were_VBD performed_VBN as_IN described_VBN previously_RB [_NN
+          19_CD ]_NN ._. Software_NNP used_VBD for_IN lexical_JJ analysis_NN was_VBD obtained_VBN via_IN
+          anonymous_JJ ftp_NN from_IN the_DT TIGR_NNP software_NN FTP_NNP site_NN [_NN 41_CD ]_NN ._.
+        
+      
+      
+        Additional_JJ data_NNS files_NNS
+        The_DT following_VBG files_NNS are_VBP available_JJ for_IN download_NN :_:
+        countGC_NN ._. pl_NN :_: PERL_NNP script_NN used_VBN to_TO compute_VB GC_NNP content_NN of_IN
+        sequences_NNS analyzed_VBD ._.
+        hyb_NN 2_CD dis_NNS ._. txt_NN :_: patch_NN file_NN that_WDT converts_VBZ White_NNP 's_POS hybridize_NN
+        program_NN to_TO compute_VB individual_JJ dissimilarity_NN values_NNS ._.
+        Training_NNP sets_NNS (_( GlycineMedicago_NNP ._. txt_NN ,_, Rhizobia_NNP ._. txt_NN ,_,
+        Stramenopiles_NNP ._. txt_NN ,_, ZygoChytrid_NNP ._. txt_NN )_) :_: FASTA-formatted_NNP text_NN
+        files_NNS that_WDT contain_VBP the_DT sequences_NNS used_VBN for_IN calibration_NN and_CC
+        comparison_NN ._.
+        Test_NN sets_NNS (_( PsojaeHA_NNP ._. txt_NN ,_, PsojaeMY_NNP ._. txt_NN ,_, PsojaeZO_NNP ._. txt_NN ,_,
+        MtRHE_NNP ._. txt_NN ,_, DSIR_NNP ._. txt_NN ,_, MHAM_NNP ._. txt_NN ,_, KV_NNP 0_CD ._. txt_NN ,_, KV_NNP 2_CD ._. txt_NN ,_, KV_NNP 3_CD ._. txt_NN )_) :_:
+        FASTA-formatted_NNP text_NN files_NNS containing_VBG transcripts_NNS analyzed_VBD ,_,
+        edited_JJ for_IN quality_NN ._.
+        Test_NN results_NNS (_( PsojaeHA_NNP ._. dat_NN ,_, PsojaeMY_NNP ._. dat_NN ,_, PsojaeZO_NNP ._. dat_NN ,_,
+        MtRHE-A_NNP 1_CD B_NNP 1_CD ._. dat_NN ,_, MtRHE-A_NNP 2_CD B_NNP 2_CD ._. dat_NN ,_, DSIR_NNP ._. dat_NN ,_, MHAM_NNP ._. dat_NN ,_,
+        KV_NNP 0_CD ._. dat_NN ,_, KV_NNP 2_CD ._. dat_NN ,_, KV_NNP 3_CD ._. dat_NN )_) :_: text_NN files_NNS that_WDT contain_VBP
+        transcript_NN analysis_NN results_NNS ,_, sorted_VBN from_IN least_JJS to_TO most_RBS
+        plant-like_JJ ._.
+        countGC_NN ._. pl_NN
+        
+        PERL_NNP script_NN used_VBN to_TO compute_VB GC_NNP content_NN of_IN sequences_NNS
+        analyzed_VBD ._.
+        countGC_NN ._. pl_NN
+        hyb_NN 2_CD dis_NNS ._. txt_NN
+        
+        Patch_NNP file_VB that_WDT converts_VBZ White_NNP 's_POS hybridize_NN program_NN to_TO
+        compute_VB individual_JJ dissimilarity_NN values_NNS ._.
+        hyb_NN 2_CD dis_NNS ._. txt_NN
+        Training_NNP sets_NNS
+        
+        FASTA-formatted_NNP text_NN files_NNS that_WDT contain_VBP the_DT sequences_NNS
+        used_VBN for_IN calibration_NN and_CC comparison_NN ._.
+        GlycineMedicago_NNP ._. txt_NN
+        Rhizobia_NNP ._. txt_NN
+        Stramenopiles_NNP ._. txt_NN
+        ZygoChytrid_NNP ._. txt_NN
+        Test_NN sets_NNS
+        
+        FASTA-formatted_NNP text_NN files_NNS containing_VBG transcripts_NNS
+        analyzed_VBD ,_, edited_JJ for_IN quality_NN ._.
+        PsojaeHA_NNP ._. txt_NN
+        PsojaeMY_NNP ._. txt_NN
+        PsojaeZO_NNP ._. txt_NN
+        MtRHE_NNP ._. txt_NN
+        DSIR_NNP ._. txt_NN
+        KV_NNP 0_CD ._. txt_NN
+        KV_NNP 2_CD ._. txt_NN
+        KV_NNP 3_CD ._. txt_NN
+        Test_NN results_NNS
+        
+        Text_NNP files_NNS that_WDT contain_VBP transcript_NN analysis_NN results_NNS ,_,
+        sorted_VBN from_IN least_JJS to_TO most_RBS plant-like_JJ ._.
+        PsojaeHA_NNP ._. dat_NN
+        PsojaeMY_NNP ._. dat_NN
+        PsojaeZO_NNP ._. dat_NN
+        MtRHE-A_NNP 1_CD B_NNP 1_CD ._. dat_NN
+        MtRHE-A_NNP 2_CD B_NNP 2_CD ._. dat_NN
+        DSIR_NNP ._. dat_NN
+        MHAM_NNP ._. dat_NN
+        KV_NNP 0_CD ._. dat_NN
+        KV_NNP 2_CD ._. dat_NN
+        KV_NNP 3_CD ._. dat_NN
+      
+    
+  

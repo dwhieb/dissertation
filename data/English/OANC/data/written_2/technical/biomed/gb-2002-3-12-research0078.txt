@@ -1,0 +1,609 @@
+
+  
+    
+      
+        Background_NNP
+        The_DT discovery_NN of_IN genes_NNS underlying_VBG multigenic_JJ diseases_NNS
+        and_CC traits_NNS is_VBZ one_CD of_IN the_DT most_RBS important_JJ challenges_NNS
+        currently_RB facing_VBG genetic_JJ researchers_NNS ._. This_DT effort_NN has_VBZ been_VBN
+        aided_VBN by_IN quantitative_JJ trait_NN locus_JJ (_( QTL_NNP )_) mapping_NN methods_NNS ,_,
+        which_WDT have_VBP now_RB been_VBN applied_VBN to_TO numerous_JJ complex_JJ phenotypes_NNS
+        in_IN a_DT range_NN of_IN species_NNS ,_, including_VBG many_JJ behavioral_JJ phenotypes_NNS
+        of_IN high_JJ interest_NN ._. A_DT QTL_NNP is_VBZ a_DT chromosomal_NN region_NN that_WDT
+        contains_VBZ a_DT gene_NN or_CC genes_NNS that_WDT influence_NN a_DT quantitative_JJ
+        trait_NN ._. The_DT power_NN of_IN this_DT approach_NN was_VBD first_RB demonstrated_VBN in_IN
+        plants_NNS [_NN 1_CD ]_NN and_CC later_RB in_IN yeast_NN [_NN 2_CD ]_NN ,_, flies_VBZ [_NN 3_CD ]_NN ,_, livestock_NN
+        [_NN 4_CD ,_, 5_CD ]_NN ,_, rodents_NNS [_NN 6_CD ,_, 7_CD ,_, 8_CD ,_, 9_CD ]_NN and_CC humans_NNS [_NN 10_CD ,_, 11_CD ,_,
+        12_CD ]_NN ._.
+        Historically_NNP ,_, a_DT typical_JJ approach_NN to_TO going_VBG from_IN QTL_NNP to_TO
+        gene_NN has_VBZ been_VBN to_TO select_VB one_CD or_CC a_DT few_JJ of_IN the_DT best_JJS biological_JJ
+        candidate_NN genes_NNS from_IN within_IN the_DT QTL_NNP interval_NN and_CC search_NN for_IN
+        sequence_NN differences_NNS that_WDT predict_VBP differential_NN expression_NN
+        and_CC /_NN or_CC structure_NN of_IN the_DT gene_NN product_NN ._. An_DT alternative_JJ
+        strategy_NN is_VBZ to_TO carry_VB out_IN comparative_JJ sequencing_VBG of_IN large_JJ
+        numbers_NNS of_IN potential_JJ candidate_NN genes_NNS located_VBN within_IN the_DT QTL_NNP
+        interval_NN ,_, which_WDT is_VBZ feasible_JJ given_VBN the_DT automated_VBN sequencing_VBG
+        methods_NNS now_RB available_JJ [_NN 13_CD ]_NN ._. However_RB ,_, these_DT approaches_NNS are_VBP
+        limited_JJ because_IN the_DT gene_NN underlying_VBG a_DT QTL_NNP may_MD not_RB be_VB
+        recognized_VBN as_IN a_DT good_JJ candidate_NN gene_NN if_IN little_JJ is_VBZ known_VBN
+        about_IN the_DT gene_NN 's_POS function_NN and_CC /_NN or_CC if_IN a_DT QTL_NNP region_NN is_VBZ large_JJ ,_,
+        in_IN which_WDT case_NN sequencing_VBG every_DT gene_NN within_IN the_DT QTL_NNP requires_VBZ
+        considerable_JJ time_NN ,_, cost_NN and_CC labor_NN to_TO complete_VB ._.
+        The_DT recent_JJ development_NN of_IN murine_NN whole-genome_JJ draft_NN
+        sequences_NNS [_NN 14_CD ]_NN should_MD speed_VB the_DT process_NN of_IN identifying_VBG
+        disease_NN genes_NNS underlying_VBG QTLs_NNP because_IN several_JJ of_IN the_DT
+        strains_NNS used_VBN for_IN genome_NN sequencing_VBG are_VBP the_DT same_JJ as_IN those_DT
+        that_WDT have_VBP been_VBN used_VBN to_TO develop_VB the_DT majority_NN of_IN mouse_NN QTLs_NNP
+        so_RB far_RB identified_VBN ._. The_DT public_JJ mouse_NN genome_NN sequencing_VBG
+        effort_NN used_VBD C_NNP 57_CD BL_NNP /_NN 6_CD J_NNP (_( B_NNP 6_CD )_) mice_NNS ,_, while_IN the_DT private_JJ effort_NN by_IN
+        Celera_NNP has_VBZ sequenced_JJ the_DT mouse_NN genome_NN in_IN four_CD strains_NNS :_:
+        DBA_NNP /_NN 2_CD J_NNP (_( D_NNP 2_LS )_) ,_, A_DT /_NN J_NNP ,_, 129_CD X_NNP 1_CD /_NN SvJ_NNP ,_, and_CC 129_CD S_NNP 1_CD /_NN SvImJ_NNP ._. Combinations_NNP
+        of_IN these_DT strains_NNS ,_, for_IN example_NN B_NNP 6_CD xD_NN 2_CD and_CC B_NNP 6_CD xA_NN /_NN J_NNP ,_, have_VBP been_VBN
+        used_VBN for_IN the_DT identification_NN of_IN over_IN 250_CD murine_NN QTLs_NNP ._.
+        Because_IN of_IN these_DT resources_NNS ,_, we_PRP reasoned_VBD that_IN sequence_NN
+        variations_NNS in_IN QTL_NNP genes_NNS might_MD now_RB be_VB identified_VBN simply_RB by_IN
+        direct_JJ 
+        in_IN silico_NN alignment_NN of_IN the_DT sequences_NNS
+        obtained_VBN directly_RB from_IN the_DT databases_NNS of_IN the_DT two_CD relevant_JJ
+        strains_NNS ,_, obviating_VBG much_JJ of_IN the_DT need_NN for_IN 
+        de_IN novo_NN sequencing_VBG ._. We_PRP show_VBP that_IN ,_,
+        once_RB several_JJ factors_NNS were_VBD addressed_VBN ,_, such_JJ as_IN sequencing_VBG
+        error_NN detection_NN and_CC discrimination_NN between_IN closely_RB related_VBN
+        genes_NNS ,_, a_DT high-throughput_JJ pipeline_NN could_MD be_VB developed_VBN that_WDT
+        allows_VBZ large_JJ numbers_NNS of_IN gene-coding_JJ regions_NNS from_IN QTL_NNP
+        intervals_NNS to_TO be_VB rapidly_RB compared_VBN 
+        in_IN silico_NN and_CC interstrain_NN allelic_JJ
+        sequence_NN differences_NNS quickly_RB identified_VBN and_CC targeted_VBN for_IN
+        further_JJ hypothesis-driven_JJ analyses_NNS ._. We_PRP also_RB believe_VBP that_IN
+        this_DT strategy_NN has_VBZ considerable_JJ general_JJ utility_NN ,_, and_CC should_MD
+        be_VB applicable_JJ to_TO any_DT QTL_NNP as_RB long_RB as_IN the_DT strains_NNS used_VBN are_VBP
+        those_DT for_IN which_WDT relatively_RB complete_JJ genome_NN sequences_NNS are_VBP
+        available_JJ ._.
+        While_IN our_PRP$ work_NN was_VBD in_IN progress_NN ,_, Celera_NNP incorporated_VBD the_DT
+        public_JJ B_NNP 6_CD sequence_NN into_IN its_PRP$ mouse_NN genome_NN assembly_NN and_CC
+        developed_VBD a_DT searchable_JJ database_NN of_IN mouse_NN single_JJ nucleotide_NN
+        polymorphisms_NNS (_( SNPs_NNP )_) [_NN 15_CD ]_NN ._. Comparison_NNP of_IN the_DT gene_NN variants_NNS
+        identified_VBN by_IN our_PRP$ approach_NN to_TO the_DT SNPs_NNP identified_VBN by_IN a_DT
+        search_NN of_IN Celera_NNP 's_POS SNP_NNP database_NN indicates_VBZ that_IN the_DT latter_NN
+        significantly_RB underestimates_NNS the_DT number_NN of_IN SNPs_NNP present_JJ and_CC
+        that_IN the_DT method_NN described_VBD here_RB provides_VBZ the_DT most_RBS complete_JJ
+        and_CC accurate_JJ compilation_NN of_IN QTL_NNP gene_NN variants_NNS ._.
+        We_PRP tested_VBD this_DT approach_NN on_IN two_CD QTLs_NNP involved_VBD in_IN physical_JJ
+        dependence_NN on_IN ethanol_NN ;_: these_DT are_VBP located_VBN on_IN murine_NN
+        chromosomes_NNS 1_CD and_CC 13_CD and_CC were_VBD identified_VBN using_VBG two_CD mapping_NN
+        populations_NNS derived_VBN from_IN the_DT B_NNP 6_CD and_CC D_NNP 2_CD progenitor_NN strains_NNS ._.
+        The_DT well_RB documented_VBN difference_NN in_IN susceptibility_NN to_TO
+        withdrawal_NN after_IN chronic_JJ ethanol_NN exposure_NN between_IN the_DT B_NNP 6_CD
+        and_CC D_NNP 2_CD inbred_JJ mouse_NN strains_NNS provided_VBD an_DT excellent_JJ starting_NN
+        point_NN for_IN dissecting_VBG genetic_JJ influences_VBZ involved_VBN in_IN
+        physical_JJ dependence_NN on_IN ethanol_NN and_CC to_TO study_VB how_WRB common_JJ
+        allele_NN variants_NNS influence_VBP genetic_JJ predisposition_NN to_TO
+        physical_JJ dependence_NN on_IN ethanol_NN ._. Genome-wide_NNP evaluations_NNS of_IN
+        chronic_JJ ethanol_NN withdrawal_NN convulsions_NNS identified_VBD QTLs_NNP on_IN
+        murine_NN chromosomes_NNS 1_CD ,_, 13_CD ,_, 19_CD and_CC 4_CD [_NN 16_CD ]_NN ._. The_DT QTLs_NNP on_IN
+        chromosome_NN 1_CD and_CC chromosome_NN 13_CD (_( a_DT sex-limited_JJ QTL_NNP )_) were_VBD
+        detected_VBN in_IN two_CD mapping_NN populations_NNS ,_, that_WDT is_VBZ ,_, the_DT BXD_NNP
+        recombinant_JJ inbred_JJ strains_NNS and_CC a_DT B_NNP 6_CD D_NNP 2_CD F_NN 2_CD intercross_NNS [_NN 16_CD ,_,
+        17_CD ]_NN ._.
+      
+      
+        Results_NNS
+        A_DT flow_NN chart_NN showing_VBG the_DT steps_NNS involved_VBN in_IN the_DT 
+        in_IN silico_NN comparison_NN of_IN the_DT coding_VBG
+        region_NN of_IN genes_NNS within_IN the_DT two_CD alcohol_NN withdrawal_NN QTLs_NNP is_VBZ
+        shown_VBN in_IN Figure_NN 1_CD ._. The_DT National_NNP Center_NNP for_IN Biotechnology_NNP
+        Information_NNP (_( NCBI_NNP )_) /_NN Mouse_NNP Genome_NNP Database_NNP (_( MGD_NNP )_) human_JJ /_NN mouse_NN
+        homology_NN map_NN and_CC the_DT Celera_NNP mouse_NN genome_NN assembly_NN were_VBD
+        searched_VBD to_TO obtain_VB a_DT list_NN of_IN genes_NNS and_CC predicted_VBD genes_NNS
+        within_IN each_DT QTL_NNP ._. The_DT selected_VBN genes_NNS included_VBD plausible_JJ
+        candidate_NN genes_NNS that_WDT have_VBP been_VBN implicated_VBN in_IN functions_NNS
+        relevant_JJ to_TO alcohol_NN action_NN ,_, as_RB well_RB as_IN genes_NNS whose_WP$
+        functions_NNS are_VBP not_RB well_RB understood_VBN or_CC were_VBD not_RB previously_RB
+        suspected_VBN to_TO be_VB related_VBN to_TO alcohol_NN action_NN ._. For_IN the_DT QTL_NNP on_IN
+        chromosome_NN 1_CD ,_, a_DT list_NN of_IN 121_CD genes_NNS was_VBD selected_VBN ,_, most_JJS of_IN
+        which_WDT are_VBP within_IN 4_CD million_CD bases_NNS (_( Mb_NNP )_) upstream_RB or_CC 4_CD Mb_NNP
+        downstream_JJ of_IN the_DT peak_NN log_NN of_IN odds_NNS (_( LOD_NNP )_) score_NN
+        (_( approximately_RB 18_CD -_: 24_CD centimorgans_NNS (_( cM_NN )_) from_IN the_DT
+        centromere_NN )_) ._. For_IN chromosome_NN 13_CD ,_, a_DT list_NN of_IN 78_CD genes_NNS was_VBD
+        selected_VBN ,_, most_JJS of_IN which_WDT are_VBP within_IN 2_CD Mb_NNP upstream_RB or_CC 2_CD Mb_NNP
+        downstream_JJ of_IN the_DT peak_JJ LOD_NNP score_NN (_( approximately_RB 37_CD cM_NN from_IN
+        the_DT centromere_NN )_) ._. The_DT complete_JJ coding_VBG region_NN of_IN each_DT gene_NN ,_,
+        as_IN available_JJ ,_, was_VBD retrieved_VBN either_CC from_IN Celera_NNP or_CC NCBI_NNP to_TO
+        be_VB used_VBN as_IN the_DT query_NN for_IN subsequent_JJ strain-specific_JJ BLAST_NN
+        searches_NNS [_NN 18_CD ]_NN ._. B_NNP 6_CD sequences_NNS were_VBD retrieved_VBN from_IN the_DT
+        mmtrace_NN database_NN at_IN NCBI_NNP using_VBG a_DT MegaBLAST_NNP search_NN ,_, and_CC D_NNP 2_CD
+        sequences_NNS were_VBD retrieved_VBN from_IN Celera_NNP by_IN BLAST_NN search_NN of_IN the_DT
+        All_DT Mouse_NNP Fragments_NNP (_( masked_VBN )_) database_NN ._. All_DT data_NNS were_VBD
+        retrieved_VBN from_IN Celera_NNP and_CC NCBI_NNP between_IN August_NNP 2001_CD and_CC
+        April_NNP 2002_CD ._. Two_CD in-house_JJ programs_NNS were_VBD used_VBN to_TO parse_NN the_DT
+        BLAST_NN results_NNS and_CC remove_VB any_DT hits_NNS with_IN low_JJ
+        nucleotide-similarity_JJ scores_NNS or_CC an_DT insignificant_JJ e-value_JJ ._.
+        The_DT filtered_VBN BLAST_NN results_NNS from_IN the_DT B_NNP 6_CD and_CC D_NNP 2_CD strains_NNS were_VBD
+        then_RB aligned_VBN using_VBG AutoAssembler_NNP and_CC allelic_JJ sequence_NN
+        variations_NNS were_VBD detected_VBN ._.
+        On_IN proximal_NN chromosome_NN 1_CD ,_, 121_CD genes_NNS covering_VBG 125_CD ,_, 385_CD
+        base-pairs_JJ (_( bp_NN )_) were_VBD selected_VBN and_CC the_DT sequences_NNS aligned_VBN ,_,
+        and_CC for_IN chromosome_NN 13_CD ,_, 78_CD genes_NNS covering_VBG 84_CD ,_, 635_CD bp_NN were_VBD
+        selected_VBN and_CC aligned_VBN ._. Altogether_RB ,_, the_DT alignment_NN encompassed_VBD
+        199_CD genes_NNS spanning_VBG 210_CD ,_, 020_CD bp_NN ._. Because_IN of_IN some_DT gaps_NNS that_WDT
+        remain_VBP in_IN the_DT available_JJ genome_NN sequences_NNS for_IN the_DT B_NNP 6_CD and_CC D_NNP 2_CD
+        strains_NNS ,_, complete_JJ coding_VBG regions_NNS were_VBD sometimes_RB not_RB
+        available_JJ and_CC in_IN such_JJ cases_VBZ the_DT coverage_NN was_VBD therefore_RB
+        incomplete_JJ ._. Our_PRP$ calculations_NNS indicate_VBP that_IN the_DT 
+        in_IN silico_NN coverage_NN of_IN the_DT coding_VBG
+        region_NN of_IN the_DT 199_CD genes_NNS for_IN the_DT B_NNP 6_CD and_CC D_NNP 2_CD strains_NNS was_VBD 86_CD %_NN
+        and_CC 69_CD %_NN ,_, respectively_RB ._. The_DT lower_JJR percent_NN coverage_NN of_IN the_DT D_NNP 2_CD
+        genome_NN is_VBZ likely_JJ to_TO be_VB due_JJ to_TO the_DT fact_NN that_IN it_PRP is_VBZ only_RB one_CD
+        out_IN of_IN four_CD mouse_NN strains_NNS used_VBN to_TO generate_VB Celera_NNP 's_POS 5_CD ._. 2_CD x_SYM
+        coverage_NN of_IN the_DT mouse_NN genome_NN ._. When_WRB the_DT B_NNP 6_CD and_CC D_NNP 2_CD data_NNS are_VBP
+        combined_VBN ,_, 61_CD %_NN of_IN the_DT length_NN of_IN the_DT coding_VBG regions_NNS was_VBD
+        covered_VBN by_IN both_DT genome_NN sequences_NNS (_( Table_NNP 1_LS )_) ._.
+        Previous_JJ efforts_NNS to_TO identify_VB human_JJ SNPs_NNP by_IN database_NN
+        mining_NN found_VBD it_PRP important_JJ to_TO filter_NN results_NNS in_IN order_NN to_TO
+        eliminate_VB the_DT false_JJ detection_NN of_IN SNPs_NNP [_NN 19_CD ]_NN ._. With_IN this_DT in_IN
+        mind_NN ,_, we_PRP took_VBD the_DT following_VBG steps_NNS to_TO ensure_VB the_DT quality_NN of_IN
+        SNPs_NNP detected_VBD in_IN our_PRP$ data_NNS ._. First_LS ,_, to_TO avoid_VB the_DT inclusion_NN of_IN
+        sequences_NNS from_IN additional_JJ closely_RB related_VBN paralogous_JJ genes_NNS ,_,
+        we_PRP used_VBD a_DT BLAST_NN hit_VBD cutoff_NN of_IN 98_CD %_NN ,_, so_IN that_WDT only_RB reads_VBZ at_IN
+        least_JJS 98_CD %_NN similar_JJ to_TO the_DT query_NN sequence_NN were_VBD selected_VBN ._.
+        Furthermore_RB ,_, reads_VBZ that_IN potentially_RB affected_VBN amino_JJ acid_NN
+        sequence_NN were_VBD used_VBN for_IN a_DT BLAST_NN search_NN against_IN the_DT mouse_NN
+        genome_NN and_CC removed_VBN from_IN the_DT B_NNP 6_CD /_NN D_NNP 2_CD alignment_NN if_IN the_DT best_JJS
+        BLAST_NN hit_VBD was_VBD on_IN a_DT sequence_NN scaffold_NN located_VBN in_IN another_DT
+        part_NN of_IN the_DT genome_NN ._. Second_JJ ,_, to_TO avoid_VB the_DT inclusion_NN of_IN
+        changes_NNS due_JJ to_TO poor-quality_JJ sequence_NN ,_, Phred_NNP [_NN 20_CD ]_NN scores_NNS of_IN
+        individual_JJ B_NNP 6_CD reads_VBZ were_VBD checked_VBN at_IN changed_VBN nucleotide_NN
+        positions_NNS and_CC poor-quality_JJ changes_NNS (_( Phred_NNP score_NN ≤_NN 10_CD )_)
+        eliminated_VBN ._. This_DT step_NN was_VBD not_RB done_VBN with_IN D_NNP 2_CD sequences_NNS
+        because_IN individual_JJ sequence_NN traces_NNS and_CC Phred_NNP scores_NNS were_VBD
+        not_RB available_JJ from_IN Celera_NNP ._. Third_NNP ,_, by_IN in-house_JJ sequencing_VBG of_IN
+        44_CD gene_NN coding_VBG variations_NNS found_VBD in_IN the_DT 
+        in_IN silico_NN alignments_NNS of_IN three_CD genes_NNS
+        from_IN B_NNP 6_CD ,_, D_NNP 2_CD ,_, A_DT /_NN J_NNP ,_, 129_CD X_NNP 1_CD /_NN SvJ_NNP ,_, and_CC 129_CD S_NNP 1_CD /_NN SvImJ_NNP DNA_NNP ,_, we_PRP
+        verified_VBN that_IN Celera_NNP had_VBD not_RB mislabeled_JJ the_DT strain_NN from_IN
+        which_WDT sequence_NN reads_VBZ were_VBD derived_VBN and_CC showed_VBN that_IN no_DT mix-up_JJ
+        or_CC cross-contamination_JJ of_IN samples_NNS had_VBD occurred_VBN ._. Even_RB after_IN
+        the_DT above_JJ steps_NNS were_VBD taken_VBN ,_, there_EX were_VBD still_RB instances_NNS
+        where_WRB some_DT reads_VBZ had_VBN one_CD sequence_NN and_CC other_JJ reads_VBZ had_VBD a_DT
+        slightly_RB different_JJ sequence_NN for_IN the_DT same_JJ strain_NN ._. In-house_NNP
+        sequencing_VBG of_IN B_NNP 6_CD and_CC D_NNP 2_CD DNA_NNP for_IN a_DT subset_NN of_IN interstrain_NN
+        frame_NN shifts_NNS (_( 10_CD %_NN of_IN the_DT total_JJ )_) showed_VBD that_IN all_PDT the_DT
+        apparent_JJ differences_NNS were_VBD false_JJ ._. In-house_NNP sequencing_VBG for_IN a_DT
+        subset_NN of_IN intrastrain_NN single_JJ base-pair_JJ substitutions_NNS (_( 21_CD %_NN
+        of_IN the_DT total_JJ )_) was_VBD also_RB carried_VBN out_RP ._. This_DT analysis_NN showed_VBD
+        that_IN when_WRB two_CD different_JJ intrastrain_NN sequences_NNS (_( for_IN example_NN ,_,
+        in_IN the_DT D_NNP 2_CD strain_NN )_) were_VBD detected_VBN ,_, the_DT correct_JJ sequence_NN was_VBD
+        always_RB identical_JJ to_TO the_DT other_JJ strain_NN (_( for_IN example_NN ,_, B_NNP 6_CD )_) ,_, so_IN
+        that_IN no_DT interstrain_NN variant_NN appeared_VBD at_IN that_DT position_NN ._. On_IN
+        the_DT basis_NN of_IN this_DT in-house_JJ sequence_NN analysis_NN we_PRP chose_VBD to_TO
+        operationally_RB classify_VB all_DT frameshifts_NNS as_IN false_JJ and_CC
+        interstrain_NN substitutions_NNS present_JJ in_IN 50_CD %_NN ,_, or_CC fewer_JJR than_IN
+        50_CD %_NN ,_, of_IN the_DT reads_VBZ for_IN one_CD strain_NN as_IN false_JJ ._.
+        The_DT number_NN of_IN nonsynonymous_JJ changes_NNS was_VBD totaled_VBN from_IN all_DT
+        199_CD genes_NNS within_IN the_DT chronic_JJ alcohol_NN withdrawal_NN QTLs_NNP on_IN
+        proximal_NN chromosome_NN 1_CD and_CC mid-chromosome_JJ 13_CD for_IN which_WDT
+        allelic_JJ sequences_NNS were_VBD aligned_VBN ,_, together_RB covering_VBG 7_CD cM_NN and_CC
+        12_CD Mb_NNP of_IN the_DT mouse_NN genome_NN and_CC representing_VBG 210_CD ,_, 019_CD bp_NN of_IN
+        coding_VBG region_NN ._. In_IN total_JJ ,_, 21_CD of_IN the_DT 199_CD genes_NNS surveyed_VBN from_IN
+        the_DT chromosome_NN 1_CD and_CC 13_CD QTL_NNP regions_NNS showed_VBD nonsynonymous_JJ
+        changes_NNS in_IN their_PRP$ coding_VBG regions_NNS between_IN B_NNP 6_CD and_CC D_NNP 2_CD animals_NNS
+        (_( Table_NNP 1_LS )_) ._. A_DT search_NN of_IN Celera_NNP 's_POS SNP_NNP database_NN found_VBD
+        approximately_RB half_NN of_IN the_DT nonsynonymous_JJ B_NNP 6_CD /_NN D_NNP 2_CD sequence_NN
+        changes_NNS which_WDT we_PRP identified_VBN by_IN multiple_JJ alignment_NN of_IN BLAST_NN
+        hits_NNS ._. Of_IN the_DT nonsynonymous_JJ changes_NNS that_IN we_PRP identified_VBN by_IN
+        multiple_JJ alignment_NN of_IN BLAST_NN hits_NNS and_CC verified_VBN by_IN in-house_JJ
+        sequencing_VBG ,_, fewer_JJR than_IN half_NN are_VBP listed_VBN in_IN the_DT SNP_NNP
+        database_NN ._.
+        On_IN chromosome_NN 1_CD ,_, where_WRB 121_CD genes_NNS were_VBD compared_VBN ,_, eight_CD
+        amino-acid_JJ changes_NNS were_VBD identified_VBN in_IN six_CD genes_NNS (_( Table_NNP 2_LS )_) ._.
+        Of_IN these_DT ,_, two_CD are_VBP known_VBN genes_NNS and_CC four_CD are_VBP based_VBN only_RB on_IN
+        computational_NN predictions_NNS by_IN Celera_NNP ._. One_CD of_IN the_DT two_CD known_VBN
+        genes_NNS for_IN which_WDT allelic_JJ variation_NN was_VBD identified_VBN within_IN its_PRP$
+        coding_VBG region_NN sequence_NN was_VBD 
+        Slc_NNP 5_CD a_DT 7_CD ._. This_DT encodes_NNS a_DT high-affinity_JJ
+        choline_NN transporter_NN expressed_VBD in_IN the_DT brain_NN and_CC spinal_JJ cord_NN
+        and_CC may_MD be_VB considered_VBN a_DT plausible_JJ candidate_NN gene_NN for_IN
+        underlying_VBG the_DT QTL_NNP (_( see_VB Discussion_NNP )_) ._.
+        On_IN chromosome_NN 13_CD ,_, when_WRB looking_VBG only_RB at_IN changes_NNS that_WDT have_VBP
+        multiple_JJ read_NN coverage_NN or_CC were_VBD verified_VBN by_IN in-house_JJ
+        sequencing_VBG ,_, 36_CD amino-acid_JJ changes_NNS were_VBD detected_VBN within_IN 15_CD
+        genes_NNS (_( Table_NNP 2_LS )_) ._. Nine_CD additional_JJ changes_NNS in_IN four_CD other_JJ
+        genes_NNS within_IN the_DT chromosome_NN 13_CD QTL_NNP were_VBD also_RB identified_VBN ,_,
+        but_CC these_DT were_VBD all_DT of_IN limited_JJ reliability_NN in_IN that_IN only_RB a_DT
+        single_JJ sequence_NN read_NN was_VBD available_JJ for_IN either_DT the_DT B_NNP 6_CD or_CC D_NNP 2_CD
+        allele_NN ._. Of_IN the_DT 
+        in_IN silico_NN predicted_VBD changes_NNS based_VBN on_IN
+        single-read_JJ coverage_NN that_WDT were_VBD sequenced_JJ in_IN house_NN ,_,
+        approximately_RB half_NN were_VBD proven_VBN false_JJ ._. The_DT proteins_NNS showing_VBG
+        allelic_JJ differences_NNS with_IN multiple_JJ read_NN coverage_NN span_NN a_DT
+        range_NN of_IN functional_JJ classes_NNS and_CC include_VBP a_DT zinc_NN
+        metalloprotease_NN ,_, 60_CD S_NNP ribosomal_JJ protein_NN ,_, hyaluronic_JJ acid_NN
+        binding_JJ protein_NN (_( gene_NN 
+        Habp_NNP 4_LS )_) ,_, developmental_NN related_VBD
+        protein_NN (_( gene_NN 
+        Ptch_NNP )_) ,_, transport_NN system_NN kinase_NN and_CC
+        several_JJ genes_NNS for_IN which_WDT no_DT functional_JJ assignments_NNS have_VBP yet_RB
+        been_VBN made_VBN ._. As_IN discussed_VBN below_IN ,_, three_CD genes_NNS for_IN which_WDT
+        allelic_JJ variations_NNS were_VBD detected_VBN ,_, 
+        Srd_NNP 5_CD a_DT 1_CD ,_, Nrif-_NNP 2_CD ,_, and_CC 
+        Hsd_NNP 17_CD b_SYM 3_CD are_VBP thought_VBN to_TO be_VB
+        particularly_RB promising_JJ biological_JJ candidates_NNS to_TO underlie_VB
+        the_DT chromosome_NN 13_CD QTL_NNP ._.
+      
+      
+        Discussion_NNP
+        While_IN other_JJ studies_NNS have_VBP mined_JJ EST_NNP databases_NNS to_TO detect_VB
+        SNPs_NNP [_NN 19_CD ]_NN ,_, the_DT work_NN presented_VBN here_RB is_VBZ the_DT first_JJ
+        demonstration_NN of_IN the_DT use_NN of_IN strain-specific_JJ genome_NN sequence_NN
+        databases_NNS to_TO discover_VB gene-coding_JJ variants_NNS for_IN murine_NN QTLs_NNP ._.
+        Whereas_IN previous_JJ studies_NNS have_VBP focused_VBN on_IN detection_NN of_IN SNPs_NNP
+        in_IN expressed_VBD sequence_NN tags_NNS (_( ESTs_NNP )_) that_DT map_NN to_TO locations_NNS
+        throughout_IN the_DT genome_NN for_IN use_NN as_IN genetic_JJ markers_NNS ,_, the_DT
+        present_JJ work_NN searched_VBD strain-specific_JJ genomic_JJ sequence_NN
+        databases_NNS for_IN coding-region_JJ SNPs_NNP underlying_VBG disease-related_JJ
+        QTLs_NNP ._. In_IN this_DT first_JJ application_NN of_IN the_DT strategy_NN ,_, we_PRP
+        surveyed_VBD 199_CD QTL-localized_NNP genes_NNS covering_VBG approximately_RB 7_CD
+        cM_NN and_CC 12_CD Mb_NNP of_IN the_DT mouse_NN genome_NN and_CC identified_VBN 21_CD genes_NNS
+        that_WDT had_VBD altered_VBN coding_VBG regions_NNS between_IN the_DT B_NNP 6_CD and_CC D_NNP 2_CD
+        progenitor_NN strains_NNS ._.
+        At_IN least_JJS one_CD of_IN the_DT allelically_RB variant_NN genes_NNS -_: 
+        Slc_NNP 5_CD a_DT 7_CD ,_, detected_VBD within_IN the_DT proximal_NN
+        chromosome_NN 1_CD QTL_NNP interval_NN -_: is_VBZ a_DT promising_JJ biological_JJ
+        candidate_NN gene_NN ._. 
+        Slc_NNP 5_CD a_DT 7_CD encodes_NNS a_DT high-affinity_JJ
+        choline_NN transporter_NN expressed_VBD in_IN cholinergic_JJ neurons_NNS in_IN the_DT
+        brain_NN and_CC spinal_JJ cord_NN ._. Prolonged_NNP ethanol_NN exposure_NN decreases_NNS
+        high-affinity_JJ choline_NN uptake_NN in_IN rat_NN cerebral_JJ cortex_NN [_NN 21_CD ]_NN ,_,
+        and_CC acute_JJ ethanol_NN exposure_NN decreases_NNS choline_NN transport_NN in_IN
+        erythrocytes_NNS [_NN 22_CD ]_NN ._. There_EX was_VBD a_DT single_JJ amino-acid_JJ change_NN of_IN
+        arginine_NN (_( B_NNP 6_CD )_) to_TO histidine_NN (_( D_NNP 2_LS )_) at_IN position_NN 38_CD ,_, which_WDT is_VBZ
+        located_VBN in_IN the_DT first_JJ cytoplasmic_JJ loop_NN of_IN the_DT transporter_NN ,_,
+        with_IN the_DT arginine_NN also_RB being_VBG conserved_JJ in_IN rat_NN and_CC human_JJ ._.
+        However_RB ,_, while_IN synteny_NN data_NNS between_IN human_NN and_CC mouse_NN suggest_VBP
+        that_IN the_DT gene_NN is_VBZ within_IN the_DT QTL_NNP ,_, data_NNS from_IN Celera_NNP
+        apparently_RB places_VBZ it_PRP on_IN another_DT chromosome_NN ._. Therefore_RB the_DT
+        question_NN of_IN whether_IN 
+        Slc_NNP 5_CD a_DT 7_CD remains_VBZ a_DT good_JJ candidate_NN for_IN
+        the_DT proximal_NN 1_CD QTL_NNP must_MD await_VB resolution_NN of_IN this_DT issue_NN ._.
+        Three_CD genes_NNS for_IN which_WDT allelic_JJ variations_NNS were_VBD detected_VBN -_:
+        
+        Srd_NNP 5_CD a_DT 1_CD ,_, Nrif-_NNP 2_CD and_CC 
+        Hsd_NNP 17_CD b_SYM 3_CD -_: appear_VB to_TO be_VB particularly_RB
+        promising_JJ biological_JJ candidates_NNS to_TO underlie_VB the_DT chromosome_NN
+        13_CD QTL_NNP ._. The_DT most_RBS compelling_JJ of_IN these_DT is_VBZ 
+        Srd_NNP 5_CD a_DT 1_CD ,_, which_WDT encodes_NNS a_DT steroid_NN
+        5_CD α-reductase_JJ 1_CD and_CC is_VBZ expressed_VBN in_IN brain_NN and_CC is_VBZ
+        consequently_RB termed_VBN a_DT neurosteroid_NN ._. 5_LS α-reduced_JJ metabolites_NNS
+        of_IN the_DT neurosteroids_NNS are_VBP thought_VBN to_TO be_VB involved_VBN in_IN
+        myelination_NN [_NN 23_CD ]_NN ,_, and_CC one_CD of_IN the_DT key_JJ features_NNS of_IN
+        alcoholism_NN is_VBZ the_DT loss_NN of_IN cerebral_JJ white_JJ matter_NN [_NN 24_CD ]_NN ._.
+        Steroid_NNP 5_CD α-reductase_JJ is_VBZ also_RB required_VBN for_IN the_DT reduction_NN of_IN
+        progesterone_NN to_TO 5_CD α-dihydroprogesterone_JJ ,_, which_WDT is_VBZ further_RBR
+        metabolized_VBN to_TO 3_CD α_NN ,_, 5_CD α-progesterone_JJ (_( allopregnanolone_NN )_) ,_, which_WDT
+        has_VBZ neuroactivity_NN at_IN GABA_NNP 
+        A_DT receptors_NNS [_NN 25_CD ]_NN ._. Some_DT symptoms_NNS of_IN
+        ethanol_NN withdrawal_NN appear_VBP to_TO be_VB produced_VBN through_IN
+        neuroadaptive_JJ changes_NNS in_IN GABA-mediated_NNP neurotransmission_NN [_NN
+        26_CD ]_NN ._. It_PRP is_VBZ known_VBN that_IN many_JJ neuroactive_JJ steroids_NNS have_VBP
+        anticonvulsant_NN activity_NN [_NN 27_CD ]_NN ,_, and_CC during_IN ethanol_NN
+        withdrawal_NN the_DT B_NNP 6_CD and_CC D_NNP 2_CD mice_NNS have_VBP differential_NN sensitivity_NN
+        to_TO the_DT anticonvulsant_NN effects_NNS of_IN allopregnanolone_NN [_NN 28_CD ]_NN ._. We_PRP
+        identified_VBD three_CD amino_JJ acid_NN changes_NNS within_IN this_DT gene_NN
+        between_IN the_DT B_NNP 6_CD and_CC D_NNP 2_CD strains_NNS ,_, one_CD of_IN which_WDT occurs_VBZ at_IN
+        position_NN 7_CD with_IN arginine_NN (_( B_NNP 6_CD )_) being_VBG replaced_VBN by_IN cysteine_NN
+        (_( D_NNP 2_LS )_) ._. Unlike_IN arginine_NN ,_, cysteine_NN can_MD participate_VB in_IN
+        disulfide_NN bridge_NN formation_NN and_CC thus_RB has_VBZ the_DT potential_NN to_TO
+        produce_VB a_DT marked_VBN difference_NN in_IN the_DT functional_JJ activity_NN of_IN
+        5_CD α-reductase_JJ 1_CD in_IN B_NNP 6_CD compared_VBN to_TO D_NNP 2_CD animals_NNS ._.
+        Another_DT candidate_NN gene_NN is_VBZ 
+        Nrif-_NNP 2_CD ,_, a_DT Krüppel-type_NNP zinc_NN finger_NN
+        protein_NN thought_VBD to_TO function_VB as_IN a_DT transcriptional_NN repressor_NN
+        [_NN 29_CD ]_NN ._. One_CD of_IN the_DT identified_VBN amino-acid_JJ changes_NNS replaces_VBZ
+        the_DT arginine_NN at_IN position_NN 593_CD in_IN the_DT D_NNP 2_CD strain_NN with_IN a_DT
+        glutamine_NN residue_NN in_IN B_NNP 6_CD mice_NNS ,_, and_CC this_DT occurs_VBZ within_IN a_DT
+        known_VBN binding_JJ site_NN for_IN the_DT intracellular_NN domain_NN of_IN the_DT
+        neurotrophin_NN receptor_NN P_NN 75_CD NTR_NNP [_NN 30_CD ]_NN ._. The_DT 
+        Nrif-_NNP 2_CD gene_NN is_VBZ expressed_VBN in_IN brain_NN and_CC
+        several_JJ other_JJ tissues_NNS ,_, but_CC expression_NN is_VBZ highest_JJS in_IN testis_NNS ._.
+        Interestingly_RB ,_, the_DT chromosome_NN 13_CD QTL_NNP is_VBZ sex-limited_JJ and_CC
+        affects_VBZ severity_NN of_IN physical_JJ dependence_NN on_IN alcohol_NN only_RB in_IN
+        males_NNS [_NN 16_CD ]_NN ._. In_IN males_NNS the_DT D_NNP 2_CD allele_NN was_VBD associated_VBN with_IN
+        more_RBR severe_JJ withdrawal_NN responses_NNS than_IN the_DT B_NNP 6_CD allele_NN ,_,
+        whereas_IN the_DT opposite_JJ direction_NN of_IN effect_NN was_VBD found_VBN in_IN
+        female_JJ mice_NNS ._. Because_IN the_DT behavioral_JJ trait_NN is_VBZ sex-limited_JJ ,_,
+        this_DT suggests_VBZ that_IN the_DT actions_NNS of_IN the_DT underlying_VBG gene_NN are_VBP
+        sex-limited_JJ ._. Such_JJ a_DT phenotype_NN might_MD be_VB expected_VBN if_IN the_DT
+        causal_NN variant_NN gene_NN was_VBD expressed_VBN and_CC /_NN or_CC active_JJ in_IN gonadal_NN
+        tissue_NN ,_, as_IN is_VBZ the_DT case_NN with_IN 
+        Nrif-_NNP 2_CD ._.
+        A_DT third_JJ altered_VBN candidate_NN gene_NN within_IN the_DT chromosome_NN 13_CD
+        QTL_NNP is_VBZ 
+        Hsd_NNP 17_CD b_SYM 3_CD ._. This_DT gene_NN encodes_NNS a_DT
+        17_CD β-hydroxysteroid_JJ dehydrogenase_NN expressed_VBD primarily_RB in_IN
+        testis_NNS but_CC also_RB in_IN several_JJ other_JJ tissues_NNS ,_, including_VBG brain_NN [_NN
+        30_CD ]_NN ._. 
+        Hsd_NNP 17_CD b_SYM 3_CD catalyzes_NNS the_DT interconversion_NN
+        of_IN androstenedione_NN and_CC testosterone_NN ,_, favoring_VBG the_DT reduction_NN
+        reaction_NN [_NN 31_CD ]_NN ._. Ethanol_NNP exposure_NN has_VBZ been_VBN shown_VBN to_TO inhibit_VB
+        the_DT reduction_NN of_IN androstenedione_NN to_TO testosterone_NN in_IN rat_NN
+        Leydig_NNP cells_NNS 
+        in_IN vitro_NN [_NN 32_CD ]_NN ._. The_DT amino_JJ acid_NN change_NN
+        within_IN this_DT gene_NN replaces_VBZ a_DT cysteine_NN (_( B_NNP 6_CD )_) at_IN residue_NN 95_CD
+        with_IN an_DT arginine_NN (_( D_NNP 2_LS )_) ._.
+        While_IN these_DT data_NNS are_VBP consistent_JJ with_IN the_DT variant_NN genes_NNS
+        identified_VBN on_IN chromosomes_NNS 1_CD and_CC /_NN or_CC 13_CD being_VBG the_DT gene_NN that_IN
+        underlies_NNS the_DT respective_JJ QTL_NNP ,_, it_PRP is_VBZ also_RB possible_JJ that_IN the_DT
+        polymorphisms_NNS identified_VBN in_IN these_DT genes_NNS are_VBP merely_RB linked_VBN
+        to_TO the_DT polymorphisms_NNS that_WDT actually_RB underlie_VB these_DT two_CD QTLs_NNP ._.
+        Although_IN 
+        Slc_NNP 5_CD a_DT 7_CD ,_, Nrif-_NNP 2_CD ,_, Srd_NNP 5_CD a_DT 1_CD ,_, and_CC 
+        Hsd_NNP 17_CD b_SYM 3_CD are_VBP promising_JJ candidates_NNS to_TO
+        underlie_VB these_DT two_CD QTLs_NNP ,_, a_DT significant_JJ number_NN of_IN altered_VBN
+        genes_NNS were_VBD also_RB identified_VBN that_DT cannot_NN formally_RB be_VB ruled_VBN
+        out_RB at_IN this_DT time_NN ,_, either_CC in_IN place_NN of_IN ,_, or_CC in_IN addition_NN to_TO ,_,
+        these_DT three_CD genes_NNS ._. Additional_JJ fine_NN mapping_NN of_IN these_DT QTLs_NNP is_VBZ
+        needed_VBN to_TO eliminate_VB as_IN many_JJ false_JJ candidate_NN genes_NNS as_IN
+        possible_JJ from_IN these_DT QTL_NNP intervals_NNS ._. In_IN addition_NN ,_, definitive_JJ
+        confirmation_NN that_IN 
+        Slc_NNP 5_CD a_DT 7_CD ,_, Nrif-_NNP 2_CD ,_, Srd_NNP 5_CD a_DT 1_CD and_CC 
+        Hsd_NNP 17_CD b_SYM 3_CD (_( or_CC other_JJ promising_JJ candidate_NN
+        genes_NNS if_IN they_PRP arise_VBP )_) are_VBP involved_VBN in_IN predisposition_NN to_TO
+        physical_JJ dependence_NN on_IN ethanol_NN will_MD probably_RB require_VB
+        verification_NN using_VBG transgenics_NNS (_( for_IN example_NN ,_, allele_NN
+        substitution_NN or_CC bacterial_JJ artificial_JJ chromosome_NN
+        transgenics_NNS )_) ._.
+        Another_DT feature_NN of_IN the_DT approach_NN described_VBD here_RB is_VBZ that_IN
+        it_PRP not_RB only_RB rapidly_RB identifies_VBZ gene_NN variants_NNS within_IN QTL_NNP
+        intervals_NNS but_CC ,_, because_IN it_PRP will_MD find_VB many_JJ genes_NNS that_WDT are_VBP
+        unchanged_JJ between_IN strains_NNS ,_, can_MD also_RB quickly_RB eliminate_VB large_JJ
+        numbers_NNS of_IN gene-coding_JJ regions_NNS as_IN possible_JJ candidates_NNS
+        underlying_VBG the_DT QTL_NNP ._. Finally_RB ,_, it_PRP should_MD be_VB pointed_VBN out_RP that_IN
+        even_RB when_WRB a_DT synonymous_JJ sequence_NN difference_NN is_VBZ found_VBN between_IN
+        QTL_NNP strains_NNS ,_, it_PRP can_MD still_RB be_VB used_VBN as_IN a_DT new_JJ ,_, easily_RB scored_VBD
+        marker_NN to_TO further_VB narrow_VB the_DT QTL_NNP interval_NN using_VBG
+        fine-mapping_JJ resources_NNS such_JJ as_IN interval-specific_JJ congenic_JJ
+        recombinant_JJ mice_NNS [_NN 33_CD ]_NN ._. In_IN this_DT regard_NN we_PRP identified_VBD many_JJ
+        such_JJ synonymous_JJ changes_NNS between_IN B_NNP 6_CD and_CC D_NNP 2_CD that_DT fall_NN within_IN
+        the_DT proximal_NN chromosome_NN 1_CD or_CC mid-chromosome_JJ 13_CD QTLs_NNP ,_, and_CC
+        therefore_RB can_MD serve_VB as_IN new_JJ informative_JJ markers_NNS for_IN fine_NN
+        mapping_NN of_IN these_DT QTLs_NNP ._.
+        The_DT approach_NN described_VBD here_RB has_VBZ considerable_JJ general_JJ
+        applicability_NN ._. Many_JJ other_JJ murine_NN QTLs_NNP ,_, encompassing_VBG a_DT wide_JJ
+        range_NN of_IN complex_JJ phenotypes_NNS of_IN interest_NN ,_, have_VBP been_VBN
+        identified_VBN using_VBG mapping_NN populations_NNS derived_VBN from_IN two_CD of_IN
+        the_DT five_CD mouse_NN strains_NNS for_IN which_WDT whole-genome_JJ draft_NN
+        sequences_NNS are_VBP now_RB available_JJ ,_, and_CC therefore_RB lend_VB themselves_PRP
+        to_TO this_DT 
+        in_IN silico_NN approach_NN ._. When_WRB we_PRP carried_VBD
+        out_RP a_DT PubMed_NNP literature_NN database_NN search_NN ,_, 276_CD QTLs_NNP ,_,
+        corresponding_JJ to_TO 57_CD different_JJ phenotypes_NNS ,_, were_VBD identified_VBN
+        that_IN utilized_JJ two_CD of_IN these_DT five_CD mouse_NN strains_NNS (_( Table_NNP 3_LS )_) ._.
+        The_DT QTL_NNP intervals_NNS that_WDT were_VBD used_VBN in_IN the_DT present_JJ study_NN were_VBD
+        rather_RB large_JJ ,_, and_CC many_JJ other_JJ QTLs_NNP that_IN use_NN strains_NNS amenable_JJ
+        to_TO an_DT 
+        in_IN silico_NN approach_NN are_VBP considerably_RB
+        smaller_JJR ._.
+        While_IN the_DT present_JJ study_NN focused_VBN on_IN QTL_NNP gene-coding_JJ
+        region_NN comparisons_NNS because_IN of_IN their_PRP$ potential_JJ functional_JJ
+        importance_NN [_NN 5_CD ]_NN ,_, it_PRP should_MD be_VB pointed_VBN out_RP that_IN
+        gene-regulatory_JJ regions_NNS ,_, which_WDT are_VBP also_RB of_IN considerable_JJ
+        functional_JJ importance_NN and_CC have_VBP been_VBN shown_VBN to_TO underlie_VB some_DT
+        QTLs_NNP [_NN 34_CD ,_, 35_CD ]_NN ,_, can_MD be_VB studied_VBN in_IN the_DT same_JJ way_NN ._. For_IN
+        example_NN ,_, the_DT approach_NN described_VBD here_RB can_MD be_VB combined_VBN with_IN
+        data_NNS from_IN high-density_JJ DNA_NNP microarray_NN studies_NNS of_IN the_DT B_NNP 6_CD and_CC
+        D_NNP 2_CD strains_NNS (_( J_NNP ._. M_NNP ._. S_NNP ._. ,_, unpublished_JJ work_NN )_) ._. In_IN such_JJ a_DT scenario_NN ,_,
+        interstrain_NN comparison_NN of_IN the_DT expression_NN levels_NNS of_IN tens_NNS of_IN
+        thousands_NNS of_IN genes_NNS would_MD be_VB carried_VBN out_IN ,_, the_DT genes_NNS that_WDT are_VBP
+        differentially_RB expressed_VBN between_IN strains_NNS identified_VBN ,_, and_CC
+        their_PRP$ chromosome_NN location_NN determined_VBN from_IN the_DT genome_NN
+        databases_NNS ._. Those_DT differentially_RB expressed_VBN genes_NNS that_WDT map_NN to_TO
+        a_DT QTL_NNP region_NN would_MD be_VB selected_VBN and_CC the_DT upstream_RB regulatory_JJ
+        regions_NNS aligned_VBN 
+        in_IN silico_NN to_TO search_VB for_IN sequence_NN
+        differences_NNS that_WDT affect_VBP predicted_VBD transcriptional_NN binding_JJ
+        sites_NNS ._. Such_JJ binding-site_JJ differences_NNS ,_, when_WRB present_JJ ,_, would_MD
+        be_VB promising_JJ candidates_NNS to_TO underlie_VB the_DT QTL_NNP in_IN which_WDT the_DT
+        gene_NN resides_VBZ ._. Although_IN less_JJR is_VBZ known_VBN about_IN sequences_NNS
+        affecting_VBG gene_NN regulation_NN than_IN about_IN those_DT affecting_VBG
+        protein_NN sequence_NN ,_, there_EX has_VBZ been_VBN considerable_JJ progress_NN in_IN
+        the_DT past_JJ few_JJ years_NNS in_IN our_PRP$ understanding_NN of_IN the_DT sequences_NNS
+        involved_VBN in_IN controlling_VBG gene_NN regulation_NN [_NN 36_CD ,_, 37_CD ]_NN ._.
+        It_PRP is_VBZ also_RB possible_JJ that_IN sequence_NN changes_NNS in_IN the_DT
+        noncoding_VBG regions_NNS of_IN mRNAs_NNS can_MD have_VB functional_JJ effects_NNS ._. For_IN
+        example_NN ,_, sequence_NN in_IN the_DT 5_CD '_POS untranslated_JJ region_NN (_( UTR_NNP )_) can_MD
+        affect_VB mRNA_NN translation_NN ,_, and_CC sequence_NN in_IN the_DT 3_CD '_POS UTR_NNP can_MD
+        affect_VB mRNA_NN stability_NN ._. The_DT 3_CD '_POS UTR_NNP region_NN can_MD also_RB contain_VB
+        enhancer_NN elements_NNS that_WDT affect_VBP gene_NN regulation_NN and_CC
+        expression_NN ._. Whereas_IN less_JJR is_VBZ known_VBN about_IN the_DT functional_JJ
+        relevance_NN of_IN sequence_NN changes_NNS in_IN noncoding_VBG parts_NNS of_IN mRNAs_NNS
+        than_IN those_DT in_IN the_DT protein-coding_JJ region_NN ,_, they_PRP can_MD
+        nevertheless_RB be_VB functionally_RB important_JJ and_CC ,_, as_IN such_JJ ,_, could_MD
+        be_VB included_VBN in_IN surveys_NNS using_VBG the_DT 
+        in_IN silico_NN approach_NN described_VBD
+        here_RB ._.
+        While_IN Celera_NNP 's_POS SNP_NNP database_NN has_VBZ the_DT ability_NN to_TO quickly_RB
+        identify_VB interstrain_NN SNPs_NNP in_IN QTL_NNP genes_NNS ,_, the_DT information_NN
+        available_JJ from_IN the_DT SNP_NNP database_NN is_VBZ not_RB as_RB complete_JJ as_IN the_DT
+        data_NNS generated_VBN by_IN our_PRP$ 
+        in_IN silico_NN approach_NN ._. Specifically_RB ,_,
+        Celera_NNP uses_VBZ a_DT different_JJ strategy_NN for_IN assigning_VBG SNPs_NNP in_IN the_DT
+        mouse_NN genome_NN and_CC the_DT SNP_NNP database_NN makes_VBZ very_RB conservative_JJ
+        SNP_NNP predictions_NNS ;_: fewer_JJR than_IN half_NN of_IN the_DT SNPs_NNP we_PRP identified_VBD 
+        in_IN silico_NN and_CC verified_VBN by_IN in-house_JJ
+        sequencing_VBG are_VBP in_IN the_DT SNP_NNP database_NN ._. The_DT SNP_NNP database_NN also_RB
+        misclassifies_NNS some_DT SNPs_NNP as_IN missense_NN mutations_NNS when_WRB the_DT SNPs_NNP
+        are_VBP actually_RB in_IN the_DT 5_CD '_POS or_CC 3_CD '_POS UTR_NNP (_( J_NNP ._. M_NNP ._. S_NNP ._. ,_, unpublished_JJ
+        data_NNS )_) ._. And_CC finally_RB ,_, the_DT Celera_NNP SNP_NNP database_NN does_VBZ not_RB
+        indicate_VB which_WDT regions_NNS of_IN a_DT gene_NN 's_POS coding_VBG sequence_NN are_VBP
+        covered_VBN by_IN reads_VBZ in_IN each_DT strain_NN ,_, and_CC therefore_RB does_VBZ not_RB
+        distinguish_VB between_IN completely_RB sequenced_JJ regions_NNS in_IN which_WDT
+        no_DT variants_NNS have_VBP been_VBN detected_VBN and_CC regions_NNS where_WRB no_DT
+        variants_NNS are_VBP found_VBN because_IN sequence_NN coverage_NN for_IN one_CD of_IN the_DT
+        strains_NNS is_VBZ absent_JJ ._. Such_JJ a_DT limitation_NN provides_VBZ an_DT incomplete_JJ
+        picture_NN of_IN the_DT interstrain_NN variants_NNS that_WDT exist_VBP in_IN a_DT given_VBN
+        QTL_NNP ,_, which_WDT in_IN turn_NN could_MD result_VB in_IN passing_VBG over_IN the_DT
+        critical_JJ SNP_NNP underlying_VBG the_DT QTL_NNP ._.
+        Although_IN the_DT strategy_NN presented_VBN here_RB provides_VBZ a_DT
+        significant_JJ new_JJ tool_NN in_IN going_VBG from_IN QTL_NNP to_TO gene_NN ,_, a_DT number_NN of_IN
+        challenges_NNS still_RB remain_VBP on_IN the_DT way_NN to_TO realizing_VBG this_DT goal_NN ._.
+        For_IN example_NN ,_, functional_JJ confirmation_NN that_IN an_DT interstrain_NN
+        gene_NN alteration_NN underlies_NNS a_DT QTL_NNP ,_, while_IN feasible_JJ ,_, is_VBZ not_RB
+        trivial_JJ ._. As_IN more_JJR QTL-localized_NNP genes_NNS are_VBP identified_VBN that_WDT
+        have_VBP potentially_RB important_JJ sequence_NN changes_NNS ,_, as_IN described_VBN
+        here_RB for_IN example_NN ,_, it_PRP becomes_VBZ more_RBR difficult_JJ to_TO test_VB them_PRP
+        all_DT functionally_RB ._. A_DT related_VBN ongoing_JJ development_NN that_WDT should_MD
+        help_VB this_DT situation_NN by_IN reducing_VBG the_DT number_NN of_IN potential_JJ
+        candidate_NN genes_NNS that_WDT remain_VBP within_IN the_DT QTL_NNP interval_NN is_VBZ
+        reduction_NN of_IN the_DT interval_NN by_IN fine_NN mapping_NN using_VBG specialized_JJ
+        congenic_JJ strains_NNS or_CC recombinant_JJ progeny_NN testing_NN [_NN 33_CD ,_, 38_CD ]_NN ._.
+        A_DT number_NN of_IN interval-specific_JJ congenic_JJ strains_NNS have_VBP
+        recently_RB been_VBN developed_VBN for_IN a_DT number_NN of_IN QTLs_NNP and_CC ,_, although_IN
+        straightforward_JJ ,_, fine_NN mapping_NN is_VBZ still_RB a_DT large-scale_JJ
+        enterprise_NN because_IN of_IN the_DT need_NN to_TO generate_VB and_CC test_VB large_JJ
+        numbers_NNS of_IN animals_NNS to_TO identify_VB and_CC behaviorally_RB assess_VB
+        informative_JJ recombinants_NNS ,_, and_CC because_IN of_IN the_DT need_NN for_IN
+        markers_NNS to_TO detect_VB such_JJ recombination_NN events_NNS ._.
+        While_IN such_JJ challenges_NNS remain_VBP ,_, the_DT new_JJ genomics_NNS tools_NNS and_CC
+        resources_NNS that_WDT are_VBP now_RB available_JJ or_CC are_VBP becoming_VBG available_JJ
+        are_VBP clearly_RB providing_VBG a_DT major_JJ impetus_NN to_TO this_DT field_NN ._. The_DT
+        power_NN of_IN high-density_JJ microarray_NN studies_NNS to_TO identify_VB
+        QTL-related_NNP genes_NNS and_CC pathways_NNS ,_, draft_NN genomic_JJ sequences_NNS for_IN
+        the_DT primary_JJ mouse_NN strains_NNS used_VBN for_IN QTL_NNP analysis_NN ,_, and_CC
+        evolving_VBG bioinformatics_NNS tools_NNS and_CC databases_NNS are_VBP all_DT making_VBG
+        major_JJ impacts_NNS on_IN this_DT field_NN ,_, with_IN more_JJR improvements_NNS to_TO be_VB
+        expected_VBN ._. For_IN example_NN ,_, after_IN this_DT work_NN was_VBD completed_VBN ,_, we_PRP
+        used_VBD the_DT 
+        in_IN silico_NN approach_NN on_IN a_DT QTL_NNP
+        identified_VBD using_VBG B_NNP 6_CD and_CC A_DT /_NN J_NNP strains_NNS and_CC found_VBD that_DT coverage_NN
+        was_VBD considerably_RB higher_RBR than_IN reported_VBD in_IN this_DT study_NN ._. We_PRP
+        found_VBD that_IN in_IN an_DT analysis_NN of_IN over_IN 30_CD QTL_NNP genes_NNS the_DT 
+        in_IN silico_NN coverage_NN for_IN B_NNP 6_CD and_CC A_DT /_NN J_NNP was_VBD
+        98_CD %_NN and_CC 91_CD %_NN ,_, respectively_RB ,_, with_IN a_DT total_JJ coverage_NN for_IN both_DT
+        of_IN 90_CD %_NN (_( J_NNP ._. M_NNP ._. S_NNP ._. ,_, unpublished_JJ data_NNS )_) ._. Finally_RB ,_, the_DT anticipated_VBN
+        completion_NN of_IN the_DT B_NNP 6_CD genome_NN sequence_NN and_CC deeper_JJR sequence_NN
+        coverage_NN of_IN the_DT D_NNP 2_CD and_CC A_DT /_NN J_NNP genomes_NNS ,_, in_IN particular_JJ ,_, if_IN
+        carried_VBD out_IN would_MD remove_VB the_DT last_JJ remaining_VBG obstacles_NNS to_TO
+        virtually_RB complete_JJ 
+        in_IN silico_NN discovery_NN of_IN gene_NN variants_NNS
+        for_IN the_DT several_JJ hundred_CD QTLs_NNP identified_VBD using_VBG these_DT
+        strains_NNS ._.
+      
+      
+        Materials_NNS and_CC methods_NNS
+        
+          Identification_NNP of_IN genes_NNS within_IN QTL_NNP regions_NNS
+          A_DT list_NN of_IN known_VBN genes_NNS within_IN the_DT 1_CD ._. 0_CD LOD_NNP confidence_NN
+          interval_NN for_IN each_DT QTL_NNP was_VBD found_VBN using_VBG the_DT NCBI_NNP vs_NNS MGD_NNP
+          human_JJ /_NN mouse_NN homology_NN maps_NNS at_IN NCBI_NNP [_NN 39_CD ]_NN ._. This_DT list_NN was_VBD
+          screened_VBD for_IN candidate_NN genes_NNS on_IN the_DT basis_NN of_IN gene_NN
+          expression_NN within_IN the_DT brain_NN and_CC functional_JJ relevance_NN to_TO
+          the_DT QTL_NNP phenotype_NN ._. GenBank_NNP accession_NN numbers_NNS for_IN the_DT
+          complete_JJ coding_VBG region_NN sequence_NN of_IN each_DT candidate_NN gene_NN
+          were_VBD found_VBN on_IN LocusLink_NNP ._. Coding_NNP region_NN sequences_NNS were_VBD
+          retrieved_VBN from_IN GenBank_NNP and_CC used_VBN as_IN the_DT query_NN for_IN BLAST_NN
+          searches_NNS ._.
+          A_DT more_RBR complete_JJ list_NN of_IN genes_NNS and_CC gene_NN predictions_NNS
+          within_IN the_DT QTL_NNP was_VBD found_VBN on_IN the_DT Celera_NNP Discovery_NNP System_NNP [_NN
+          40_CD ]_NN ._. The_DT genetic_JJ marker_NN with_IN the_DT highest_JJS LOD_NNP score_NN for_IN a_DT
+          QTL_NNP was_VBD localized_JJ on_IN Celera_NNP 's_POS physical_JJ map_NN and_CC a_DT list_NN of_IN
+          genes_NNS and_CC predicted_VBD genes_NNS within_IN an_DT interval_NN on_IN either_DT
+          side_NN of_IN this_DT marker_NN was_VBD generated_VBN and_CC screened_VBD for_IN
+          candidate_NN genes_NNS ._. Coding_NNP region_NN sequences_NNS of_IN the_DT selected_VBN
+          genes_NNS were_VBD retrieved_VBN either_CC from_IN Celera_NNP or_CC NCBI_NNP and_CC used_VBN
+          as_IN the_DT query_NN for_IN BLAST_NN searches_NNS ._.
+        
+        
+          BLAST_NN searches_NNS
+          A_DT MegaBLAST_NNP search_NN of_IN the_DT mmtrace_NN database_NN on_IN NCBI_NNP [_NN
+          41_CD ]_NN was_VBD used_VBN to_TO retrieve_VB B_NNP 6_CD sequences_NNS from_IN the_DT public_JJ
+          database_NN ._. Low_NNP complexity_NN was_VBD filtered_VBN ,_, percent_NN identity_NN
+          was_VBD set_VBN to_TO 98_CD %_NN ,_, and_CC the_DT number_NN of_IN alignments_NNS to_TO return_NN
+          was_VBD set_VBN to_TO 100_CD ._. Results_NNS were_VBD saved_VBN as_IN a_DT text_NN file_NN ._. A_DT
+          BLASTN_NNP search_NN of_IN the_DT All_DT Mouse_NNP Fragments_NNP (_( masked_VBN )_)
+          database_NN on_IN Celera_NNP [_NN 42_CD ]_NN was_VBD used_VBN to_TO search_VB for_IN D_NNP 2_CD
+          sequences_NNS ._. The_DT e-value_JJ was_VBD set_VBN to_TO 0_CD ._. 1_CD ,_, and_CC the_DT number_NN of_IN
+          hits_NNS to_TO return_NN was_VBD set_VBN to_TO 250_CD ._. The_DT complete_JJ entries_NNS view_NN
+          of_IN the_DT results_NNS was_VBD exported_VBN to_TO a_DT file_NN which_WDT was_VBD given_VBN a_DT
+          ._. txt_NN extension_NN ._.
+        
+        
+          JAVA_NNP scripts_NNS to_TO process_VB BLAST_NN results_NNS
+          A_DT script_NN ,_, named_VBD Mouse_NNP Gene_NNP Selection_NN NCBI_NNP (_( MGS_NNP __NN NCBI_NNP )_) ,_,
+          was_VBD written_VBN in_IN JAVA_NNP and_CC used_VBN to_TO parse_NN BLAST_NN results_NNS from_IN
+          NCBI_NNP ._. This_DT script_NN filters_VBZ the_DT BLAST_NN results_NNS and_CC only_RB
+          selects_VBZ hits_NNS which_WDT have_VBP percent_NN identity_NN greater_JJR than_IN or_CC
+          equal_JJ to_TO 98_CD %_NN and_CC e-value_JJ ,_, which_WDT is_VBZ a_DT measure_NN of_IN the_DT
+          statistical_JJ significance_NN of_IN BLAST_NN hits_NNS ,_, less_JJR than_IN or_CC
+          equal_JJ to_TO 0_CD ._. 0001_CD ._. The_DT e-value_JJ is_VBZ the_DT number_NN of_IN hits_NNS with_IN
+          the_DT same_JJ degree_NN of_IN similarity_NN one_PRP would_MD expect_VB to_TO find_VB by_IN
+          chance_NN if_IN there_EX were_VBD no_DT true_JJ matches_NNS in_IN the_DT database_NN ._.
+          Another_DT script_NN ,_, Mouse_NNP Gene_NNP Selection_NN Celera_NNP (_( MGS_NNP __NN Celera_NNP )_) ,_,
+          was_VBD written_VBN in_IN JAVA_NNP and_CC used_VBN to_TO parse_NN BLAST_NN results_NNS from_IN
+          Celera_NNP ._. This_DT script_NN filters_VBZ the_DT BLAST_NN results_NNS and_CC only_RB
+          selects_VBZ hits_NNS with_IN strain_NN name_NN DBA_NNP /_NN 2_CD J_NNP ,_, e-value_JJ less_JJR than_IN
+          or_CC equal_JJ to_TO 0_CD ._. 0001_CD and_CC percent_NN identity_NN greater_JJR than_IN or_CC
+          equal_JJ to_TO 98_CD %_NN ._. After_IN filtering_VBG the_DT BLAST_NN results_NNS ,_, the_DT
+          script_NN saves_VBZ each_DT alignment_NN as_IN an_DT individual_JJ text_NN file_NN ._.
+          When_WRB one_CD hit_VBD aligns_NNS with_IN more_JJR than_IN one_CD region_NN of_IN the_DT
+          query_NN sequence_NN ,_, the_DT entire_NN hit_NN is_VBZ discarded_VBN if_IN any_DT of_IN the_DT
+          alignments_NNS does_VBZ not_RB meet_VB the_DT above_JJ criteria_NNS ._. As_IN both_DT
+          scripts_NNS are_VBP written_VBN in_IN JAVA_NNP ,_, they_PRP can_MD be_VB run_VBN on_IN Unix_NNP ,_,
+          Macintosh_NNP or_CC PC_NN platforms_NNS ._.
+        
+        
+          Alignment_NNP of_IN filtered_VBN BLAST_NN results_NNS
+          Filtered_VBN BLAST_NN results_NNS were_VBD aligned_VBN using_VBG
+          AutoAssembler_NNP 2_CD ._. 1_CD ._. For_IN each_DT gene_NN ,_, one_CD alignment_NN file_NN was_VBD
+          made_VBN of_IN the_DT filtered_VBN B_NNP 6_CD BLAST_NN results_NNS and_CC a_DT separate_JJ
+          alignment_NN file_NN was_VBD made_VBN of_IN the_DT filtered_VBN D_NNP 2_CD BLAST_NN results_NNS ._.
+          The_DT B_NNP 6_CD alignment_NN file_NN was_VBD then_RB compared_VBN to_TO the_DT D_NNP 2_CD
+          alignment_NN file_NN to_TO identify_VB sequence_NN changes_NNS ._. When_WRB
+          sequence_NN variations_NNS were_VBD found_VBN within_IN a_DT strain_NN they_PRP were_VBD
+          regarded_VBN as_IN true_JJ only_RB if_IN more_JJR than_IN half_PDT the_DT reads_VBZ for_IN a_DT
+          strain_NN contained_VBD the_DT change_NN ._. This_DT criterion_NN was_VBD checked_VBN
+          for_IN validity_NN by_IN in-house_JJ sequencing_VBG ._.
+        
+        
+          In-house_NNP sequencing_VBG
+          In-house_NNP sequencing_VBG was_VBD used_VBN to_TO test_VB 
+          in_IN silico_NN sequence_NN predictions_NNS and_CC
+          also_RB occasionally_RB to_TO fill_VB in_IN gaps_NNS that_WDT remained_VBD in_IN
+          certain_JJ genes_NNS ._. C_NNP 57_CD BL_NNP /_NN 6_CD J_NNP and_CC DBA_NNP /_NN 2_CD J_NNP mice_NNS were_VBD obtained_VBN
+          from_IN the_DT Jackson_NNP Laboratory_NNP ._. Animals_NNS were_VBD euthanized_JJ and_CC
+          the_DT brains_NNS dissected_VBN ._. Whole-brain_NNP RNA_NNP was_VBD isolated_VBN using_VBG
+          an_DT RNeasy_NNP Maxi_NNP Kit_NNP (_( Qiagen_NNP )_) ._. cDNA_NN was_VBD synthesized_JJ by_IN
+          RT-PCR_NNP using_VBG SUPERSCRIPT_NNP First_CD Strand_NNP Synthesis_NNP System_NNP
+          for_IN RT-PCR_NNP (_( Invitrogen_NNP )_) ._. C_NNP 57_CD BL_NNP /_NN 6_CD J_NNP ,_, DBA_NNP /_NN 2_CD J_NNP ,_, A_DT /_NN J_NNP ,_,
+          129_CD X_NNP 1_CD /_NN SvJ_NNP ,_, and_CC 129_CD S_NNP 1_CD /_NN SvImJ_NNP genomic_JJ DNAs_NNP were_VBD obtained_VBN
+          from_IN the_DT Jackson_NNP Laboratory_NNP ._. Primer_NNP 3_CD software_NN [_NN 43_CD ]_NN was_VBD
+          used_VBN to_TO design_VB primers_NNS to_TO amplify_VB either_CC cDNA_NN or_CC genomic_JJ
+          DNA_NNP ._. Template_NNP DNA_NNP was_VBD amplified_VBN by_IN PCR_NNP in_IN the_DT Perkin_NNP
+          Elmer_NNP GeneAmp_NNP PCR_NNP system_NN 9700_CD ._. A_DT typical_JJ reaction_NN cycle_NN
+          was_VBD denaturation_NN for_IN 3_CD min_NN at_IN 94_CD °_NN C_NNP followed_VBN by_IN 35_CD cycles_NNS
+          of_IN denaturation_NN for_IN 15_CD s_VBZ at_IN 94_CD °_NN C_NNP ,_, annealing_VBG for_IN 1_CD min_NN 15_CD
+          s_VBZ at_IN 54_CD °_NN C_NNP ,_, and_CC extension_NN for_IN 1_CD min_NN 15_CD s_VBZ at_IN 72_CD °_NN C_NNP with_IN a_DT
+          final_JJ extension_NN step_NN at_IN 72_CD °_NN C_NNP for_IN 10_CD min_NN ._. Products_NNPS were_VBD
+          run_VBN on_IN a_DT 1_CD ._. 7_CD %_NN agarose_NN gel_NN ,_, stained_JJ with_IN ethidium_NN bromide_NN ,_,
+          and_CC purified_JJ using_VBG QIAquick_NNP Gel_NNP Extraction_NNP kits_NNS (_( Qiagen_NNP )_) ._.
+          PCR_NNP products_NNS were_VBD reamplified_JJ when_WRB necessary_JJ ._.
+          PCR_NNP products_NNS were_VBD sequenced_JJ using_VBG ABI_NNP Big_NNP Dye_NNP
+          Terminator_NNP v_NN ._. 2_CD chemistry_NN and_CC cycle_NN sequencing_VBG and_CC
+          sequence_NN traces_NNS read_VBP on_IN an_DT ABI_NNP PRISM_NNP 3100_CD Gene_NNP Analyzer_NNP ._.
+          When_WRB in-house_JJ sequencing_VBG was_VBD done_VBN to_TO fill_VB gaps_NNS from_IN the_DT 
+          in_IN silico_NN alignment_NN ,_, a_DT minimum_NN of_IN
+          one_CD forward_RB read_VB and_CC one_CD reverse_VB read_VB was_VBD run_VBN for_IN each_DT
+          sample_NN of_IN PCR_NNP products_NNS ._. When-in_NNP house_NN sequencing_VBG was_VBD done_VBN
+          to_TO verify_VB nonsynonymous_JJ changes_NNS found_VBD in_IN the_DT 
+          in_IN silico_NN alignment_NN ,_, a_DT minimum_NN of_IN
+          two_CD forward_RB reads_VBZ and_CC two_CD reverse_VB reads_VBZ was_VBD run_VBN for_IN each_DT
+          sample_NN of_IN PCR_NNP products_NNS ._. Sequencing_NNP data_NNS for_IN each_DT strain_NN
+          were_VBD analyzed_VBN with_IN the_DT Consed_NNP software_NN suite_NN [_NN 44_CD ]_NN ._.
+          Sequencing_NNP was_VBD repeated_VBN for_IN regions_NNS of_IN poor_JJ quality_NN (_( that_WDT
+          is_VBZ ,_, Phred_NNP score_NN <_NN 40_CD )_) ._. High-quality_NNP sequence_NN was_VBD
+          exported_VBN and_CC B_NNP 6_CD sequence_NN was_VBD compared_VBN to_TO D_NNP 2_CD sequence_NN
+          using_VBG AutoAssembler_NNP to_TO identify_VB changes_NNS between_IN the_DT two_CD
+          strains_NNS ._.
+        
+      
+    
+  

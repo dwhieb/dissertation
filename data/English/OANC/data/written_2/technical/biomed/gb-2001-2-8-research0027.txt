@@ -1,0 +1,723 @@
+
+  
+    
+      
+        Background_NNP
+        Repetitive_NNP sequences_NNS present_JJ many_JJ difficulties_NNS for_IN
+        genome_NN sequencing_VBG and_CC analysis_NN ._. The_DT presence_NN of_IN large_JJ
+        numbers_NNS of_IN repeats_NNS often_RB confounds_NNS sequence_NN assembly_NN ,_,
+        especially_RB if_IN the_DT repeats_NNS are_VBP long_JJ and_CC highly_RB conserved_JJ ._.
+        The_DT presence_NN of_IN low_JJ copy-number_JJ repeats_VBZ can_MD also_RB confound_NN
+        assembly_NN ,_, especially_RB for_IN whole-genome_JJ shotgun_NN sequencing_VBG
+        projects_NNS [_NN 1_CD ]_NN ._. Once_RB a_DT genome_NN has_VBZ been_VBN assembled_VBN ,_, repeats_VBZ
+        take_VB on_IN a_DT new_JJ and_CC more_RBR important_JJ role_NN involving_VBG their_PRP$
+        biological_JJ function_NN ._. Certain_JJ classes_NNS of_IN repeats_NNS ,_, such_JJ as_IN
+        transposons_NNS ,_, perform_VBP a_DT function_NN by_IN allowing_VBG mobile_JJ elements_NNS
+        to_TO move_VB around_IN a_DT genome_NN ._. Other_JJ classes_NNS belong_VBP to_TO less_RBR
+        well-defined_JJ categories_NNS with_IN respect_NN to_TO their_PRP$ role_NN ,_, though_IN
+        they_PRP may_MD be_VB even_RB more_RBR ubiquitous_JJ ._. Repetitive_NNP sequences_NNS
+        appear_VBP to_TO dominate_VB the_DT centromeres_NNS of_IN many_JJ eukaryotes_NNS [_NN 2_CD ]_NN ,_,
+        and_CC telomeric_JJ and_CC subtelomeric_JJ repeats_VBZ extend_VB for_IN thousands_NNS
+        or_CC tens_NNS of_IN thousands_NNS of_IN nucleotides_NNS at_IN the_DT ends_NNS of_IN
+        chromosomes_NNS ._. These_DT repeats_VBZ also_RB appear_VB elsewhere_RB in_IN the_DT
+        genome_NN ,_, for_IN reasons_NNS as_RB yet_RB unknown_JJ ._. For_IN these_DT and_CC other_JJ
+        reasons_NNS ,_, it_PRP is_VBZ critical_JJ to_TO both_DT the_DT assembly_NN and_CC analysis_NN
+        of_IN genomic_JJ sequences_NNS to_TO identify_VB and_CC characterize_VB
+        repetitive_JJ sequence_NN elements_NNS ._.
+        There_EX are_VBP numerous_JJ computational_NN methods_NNS for_IN detecting_VBG
+        repeats_VBZ ,_, in_IN one_CD form_NN or_CC another_DT ,_, in_IN genomic_JJ DNA_NNP sequences_NNS ._.
+        These_DT include_VBP algorithms_NNS that_WDT locate_VBP repeated_VBN substrings_NNS ,_,
+        including_VBG tandem_JJ repeats_VBZ [_NN 3_CD ,_, 4_CD ,_, 5_CD ,_, 6_CD ]_NN ,_, as_RB well_RB as_IN programs_NNS
+        for_IN identifying_VBG known_VBN repeats_VBZ ,_, such_JJ as_IN the_DT widely-used_JJ
+        RepeatMasker_NNP [_NN 7_CD ]_NN ._. RepeatMasker_NNP uses_VBZ a_DT database_NN of_IN known_VBN
+        repeat_NN sequences_NNS and_CC implements_VBZ a_DT string-matching_JJ algorithm_NN
+        to_TO find_VB copies_NNS of_IN those_DT repeats_VBZ in_IN a_DT new_JJ sequence_NN ._. A_DT more_RBR
+        rapid_JJ implementation_NN of_IN the_DT same_JJ approach_NN is_VBZ MaskerAid_NNP [_NN
+        8_CD ]_NN ,_, a_DT wrapper_NN for_IN WU-BLAST_NNP [_NN 9_CD ,_, 10_CD ]_NN that_WDT uses_VBZ the_DT BLAST_NN
+        engine_NN instead_RB of_IN the_DT CrossMatch_NNP algorithm_NN ._. Most_JJS of_IN these_DT
+        tools_NNS have_VBP some_DT restriction_NN on_IN the_DT maximum_NN length_NN of_IN the_DT
+        input_NN sequence_NN ,_, which_WDT limits_VBZ their_PRP$ use_NN to_TO sequences_NNS
+        considerably_RB smaller_JJR than_IN the_DT size_NN of_IN a_DT eukaryotic_JJ
+        chromosome_NN ._. Recently_RB ,_, however_RB ,_, new_JJ systems_NNS based_VBN on_IN suffix_NN
+        trees_NNS ,_, such_JJ as_IN RepeatMatch_NNP (_( based_VBN on_IN MUMmer_NNP [_NN 11_CD ]_NN )_) and_CC
+        REPuter_NNP [_NN 12_CD ,_, 13_CD ]_NN ,_, have_VBP overcome_VBN this_DT size_NN limitation_NN ,_, at_IN
+        least_JJS for_IN biologically_RB realistic_JJ input_NN sizes_NNS ._. Both_DT
+        RepeatMatch_NNP and_CC REPuter_NNP are_VBP highly_RB efficient_JJ computational_NN
+        tools_NNS that_WDT can_MD find_VB all_DT exact_JJ repeats_NNS in_IN sequences_NNS as_RB long_RB
+        as_IN complete_JJ eukaryotic_JJ chromosomes_NNS -_: 10_CD -_: 100_CD megabases_NNS (_( Mb_NNP )_) ._.
+        The_DT output_NN of_IN these_DT systems_NNS ,_, however_RB ,_, while_IN accurately_RB
+        representing_VBG the_DT long_JJ list_NN of_IN positions_NNS of_IN exact_JJ repeats_NNS ,_,
+        does_VBZ not_RB provide_VB any_DT overview_NN or_CC summary_NN of_IN the_DT repetitive_JJ
+        structure_NN of_IN the_DT sequence_NN ._. The_DT REPuter_NNP system_NN includes_VBZ a_DT
+        visualization_NN tool_NN to_TO generate_VB repeat_NN graphs_NNS ,_, which_WDT are_VBP
+        useful_JJ for_IN identifying_VBG the_DT positions_NNS of_IN repeats_NNS ,_, but_CC this_DT
+        does_VBZ not_RB provide_VB an_DT overview_NN of_IN the_DT exact_JJ and_CC non-exact_JJ
+        repeats_NNS in_IN a_DT genome_NN ._. Figure_NN 1_CD shows_VBZ an_DT example_NN of_IN a_DT repeat_NN
+        graph_NN [_NN 12_CD ]_NN for_IN a_DT short_JJ DNA_NNP sequence_NN ._.
+        Examining_NNP the_DT output_NN of_IN REPuter_NNP and_CC RepeatMatch_NNP for_IN a_DT
+        complete_JJ bacterial_JJ genome_NN ,_, it_PRP quickly_RB becomes_VBZ obvious_JJ that_IN
+        many_JJ exact_JJ repeats_NNS are_VBP non-exact_JJ copies_NNS of_IN one_CD another_DT ._.
+        Whether_IN a_DT genome_NN is_VBZ a_DT few_JJ or_CC hundreds_NNS of_IN megabases_NNS in_IN
+        length_NN ,_, the_DT task_NN of_IN recognizing_VBG and_CC describing_VBG how_WRB repeats_VBZ
+        resemble_VB one_CD another_DT at_IN this_DT scale_NN is_VBZ too_RB complicated_VBN to_TO
+        accomplish_VB manually_RB ._.
+        Here_RB we_PRP describe_VBP a_DT new_JJ system_NN for_IN the_DT recognition_NN of_IN
+        repeat_NN classes_NNS in_IN genome_NN sequences_NNS ._. This_DT system_NN ,_,
+        RepeatFinder_NNP ,_, is_VBZ freely_RB available_JJ from_IN our_PRP$ website_NN [_NN 14_CD ]_NN ._.
+        In_IN contrast_NN to_TO approaches_NNS that_WDT cluster_NN together_RB the_DT results_NNS
+        of_IN BLAST_NN searches_NNS (_( for_IN example_NN ,_, Z_NNP ._. H_NNP ._. Bao_NNP and_CC S_NNP ._. Eddy_NNP ,_,
+        unpublished_JJ data_NNS )_) our_PRP$ algorithm_NN uses_VBZ a_DT comprehensive_JJ set_NN of_IN
+        exact_JJ repeats_NNS as_IN the_DT basis_NN for_IN constructing_VBG repeat_NN classes_NNS ._.
+        It_PRP relies_VBZ on_IN the_DT efficient_JJ suffix_NN tree_NN data_NNS structure_NN for_IN
+        identification_NN of_IN exact_JJ repeats_NNS ,_, which_WDT permits_VBZ rapid_JJ
+        identification_NN of_IN repeat_NN classes_NNS even_RB in_IN sequences_NNS
+        containing_VBG tens_NNS of_IN millions_NNS of_IN nucleotides_NNS ._. The_DT algorithm_NN
+        does_VBZ not_RB make_VB any_DT prior_JJ assumptions_NNS about_IN the_DT number_NN or_CC
+        structure_NN of_IN the_DT classes_NNS ._. At_IN its_PRP$ core_NN is_VBZ a_DT merging_VBG
+        procedure_NN that_WDT produces_VBZ the_DT actual_JJ members_NNS of_IN each_DT repeat_NN
+        class_NN using_VBG merging_VBG criteria_NNS described_VBD below_IN ,_, and_CC it_PRP also_RB
+        builds_VBZ a_DT repeat_NN map_NN of_IN the_DT genome_NN sequence_NN ._.
+        We_PRP have_VBP applied_VBN this_DT system_NN to_TO several_JJ complete_JJ
+        microbial_NN genomes_NNS [_NN 15_CD ,_, 16_CD ,_, 17_CD ,_, 18_CD ,_, 19_CD ,_, 20_CD ,_, 21_CD ]_NN ,_, to_TO the_DT
+        complete_JJ 
+        Arabidopsis_NNP thaliana_NN genome_NN [_NN 2_CD ]_NN ,_, and_CC
+        to_TO a_DT large_JJ collection_NN of_IN rice_NN bacterial_JJ artificial_JJ
+        chromosome_NN (_( BAC_NNP )_) end_NN sequences_NNS [_NN 22_CD ,_, 23_CD ]_NN ._. The_DT results_NNS of_IN
+        this_DT analysis_NN are_VBP described_VBN below_IN ._. The_DT output_NN of_IN the_DT system_NN
+        gives_VBZ a_DT clear_JJ picture_NN of_IN all_DT repeat_NN classes_NNS identified_VBN in_IN a_DT
+        genome_NN or_CC a_DT sequence_NN collection_NN ._. It_PRP provides_VBZ
+        straightforward_JJ access_NN to_TO the_DT actual_JJ repeat_NN sequences_NNS as_IN a_DT
+        multi-fasta_JJ file_NN ,_, simple_JJ statistical_JJ analyses_NNS of_IN the_DT
+        results_NNS ,_, and_CC a_DT procedure_NN for_IN identifying_VBG each_DT class_NN 's_POS most_JJS
+        representative_NN element_NN ._. We_PRP describe_VBP here_RB the_DT computational_NN
+        techniques_NNS used_VBN in_IN the_DT system_NN and_CC demonstrate_VB its_PRP$ use_NN on_IN
+        several_JJ different_JJ genome_NN sequences_NNS ._.
+      
+      
+        Results_NNS and_CC discussion_NN
+        
+          Algorithm_NNP description_NN
+          Our_PRP$ algorithm_NN is_VBZ based_VBN on_IN first_JJ identifying_VBG all_DT exact_JJ
+          repeats_NNS in_IN the_DT input_NN sequence_NN ,_, and_CC then_RB defining_VBG repeat_NN
+          classes_NNS by_IN merging_VBG and_CC extending_VBG these_DT short_JJ exact_JJ
+          matches_NNS ._. An_DT exact_JJ repeat_NN is_VBZ represented_VBN by_IN pair_NN of_IN
+          coordinates_VBZ (_( 
+          A_DT 
+          1_CD ,_, 
+          A_DT 
+          2_LS )_) delimiting_VBG its_PRP$ location_NN in_IN the_DT
+          genome_NN sequence_NN ,_, and_CC by_IN the_DT repeat_NN length_NN 
+          l_NN ._. We_PRP implemented_VBD an_DT algorithm_NN that_WDT
+          uses_VBZ either_DT of_IN two_CD suffix_NN tree_NN methods_NNS ,_, RepeatMatch_NNP [_NN 11_CD ]_NN
+          or_CC REPuter_NNP [_NN 12_CD ]_NN to_TO determine_VB all_DT the_DT exact_JJ repeats_NNS in_IN a_DT
+          given_VBN sequence_NN ._. (_( For_IN more_RBR on_IN suffix_NN trees_NNS see_VBP [_NN 24_CD ]_NN ._. )_) The_DT
+          computational_NN time_NN and_CC space_NN requirements_NNS for_IN both_DT these_DT
+          systems_NNS are_VBP linear_JJ in_IN the_DT size_NN of_IN the_DT input_NN sequences_NNS ,_, an_DT
+          essential_JJ requirement_NN for_IN any_DT algorithm_NN attempting_VBG to_TO
+          process_VB whole_JJ eukaryotic_JJ genomes_NNS ._. The_DT subsequent_JJ
+          clustering_VBG procedure_NN merges_NNS neighboring_VBG repeats_VBZ and_CC
+          groups_NNS them_PRP into_IN classes_NNS ._. The_DT input_NN to_TO the_DT system_NN can_MD be_VB
+          either_CC a_DT single_JJ genome_NN sequence_NN or_CC a_DT set_NN of_IN sequences_NNS ._.
+          The_DT clustering_VBG procedure_NN consists_VBZ of_IN the_DT following_VBG steps_NNS ,_,
+          which_WDT are_VBP described_VBN in_IN more_JJR detail_NN below_IN ._.
+          Step_NN 1_CD :_: Selection_NN and_CC pre-processing_JJ ._. The_DT list_NN of_IN
+          coordinates_VBZ of_IN all_DT exact_JJ repeats_NNS as_IN output_NN by_IN RepeatMatch_NNP
+          or_CC REPuter_NNP can_MD be_VB interpreted_VBN as_IN a_DT partition_NN of_IN the_DT
+          original_JJ genome_NN sequence_NN ._. (_( The_DT output_NN of_IN RepeatMatch_NNP and_CC
+          REPuter_NNP are_VBP very_RB similar_JJ ._. We_PRP used_VBD REPuter_NNP in_IN the_DT example_NN
+          and_CC in_IN the_DT subsequent_JJ repeat_NN analyses_NNS of_IN microbial_NN
+          genomes_NNS ;_: for_IN the_DT 
+          A_DT ._. thaliana_NN genome_NN and_CC and_CC the_DT rice_NN
+          BAC_NNP end-sequence_JJ data_NNS we_PRP used_VBD RepeatMatch_NNP ._. )_) Each_DT
+          partition_NN point_NN has_VBZ a_DT reference_NN to_TO the_DT pair_NN coordinates_VBZ (_(
+          
+          A_DT 
+          1_CD ,_, 
+          A_DT 
+          2_LS )_) and_CC the_DT repeat_NN length_NN 
+          l_NN ._. Each_DT repeat_NN corresponds_NNS to_TO at_IN
+          least_JJS two_CD partition_NN points_NNS ._. Some_DT repeats_VBZ can_MD be_VB found_VBN in_IN
+          the_DT sequence_NN more_RBR than_IN twice_RB ,_, and_CC the_DT corresponding_JJ
+          partition_NN points_NNS can_MD appear_VB with_IN different_JJ coordinates_VBZ
+          and_CC different_JJ lengths_NNS ._. To_TO prepare_VB the_DT data_NNS for_IN the_DT
+          merging_VBG procedure_NN ,_, we_PRP sort_NN the_DT list_NN of_IN partition_NN points_NNS
+          in_IN increasing_VBG order_NN ,_, and_CC in_IN the_DT case_NN of_IN duplicate_VB first_JJ
+          coordinates_VBZ ,_, in_IN increasing_VBG order_NN of_IN second_JJ coordinates_VBZ ._.
+          (_( The_DT clustering_VBG algorithm_NN is_VBZ order-independent_JJ ;_: however_RB ,_,
+          the_DT linear_JJ nature_NN of_IN repeat_NN data_NNS allows_VBZ us_PRP to_TO use_VB this_DT
+          pre-processing_JJ step_NN to_TO simplify_VB the_DT clustering_VBG procedure_NN
+          without_IN affecting_VBG the_DT final_JJ clusters_NNS ._. )_) In_IN particular_JJ
+          cases_NNS it_PRP is_VBZ useful_JJ to_TO filter_NN the_DT original_JJ repeat_NN data_NNS to_TO
+          remove_VB certain_JJ types_NNS of_IN repeats_NNS ;_: for_IN example_NN ,_, simple_JJ
+          one-base_JJ (_( homopolymeric_JJ )_) or_CC two-base_JJ repeats_NNS ._.
+          Step_NN 2_CD :_: Merging_NNP procedure_NN ._. In_IN outline_NN ,_, this_DT procedure_NN
+          works_VBZ by_IN repeatedly_RB merging_VBG together_RB two_CD exact_JJ repeats_NNS
+          that_IN either_DT overlap_VB or_CC that_WDT occur_VBP within_IN a_DT limited_JJ
+          distance_NN (_( a_DT gap_NN )_) of_IN each_DT other_JJ ._. Specific_JJ values_NNS for_IN the_DT
+          overlap_VB and_CC gap_NN distance_NN can_MD be_VB specified_VBN for_IN each_DT genome_NN
+          sequence_NN ._. Whether_IN the_DT algorithm_NN is_VBZ merging_VBG repeats_VBZ that_WDT
+          overlap_VBP (_( Figure_NN 2_CD c_SYM )_) ,_, or_CC merging_VBG repeats_VBZ separated_VBN by_IN a_DT
+          gap_NN (_( Figure_NN 2_CD b_SYM )_) ,_, the_DT new_JJ merging_VBG repeats_VBZ will_MD always_RB have_VB
+          the_DT property_NN that_IN significant_JJ subsequences_NNS of_IN the_DT repeat_NN
+          appear_VBP at_IN least_JJS twice_RB in_IN the_DT genome_NN sequence_NN ._.
+          At_IN the_DT time_NN of_IN merging_VBG procedure_NN ,_, we_PRP generate_VBP a_DT repeat_NN
+          map_NN of_IN the_DT genome_NN sequence_NN ._. This_DT map_NN is_VBZ based_VBN on_IN a_DT
+          linked-list_JJ data_NN structure_NN ,_, which_WDT allows_VBZ for_IN rapid_JJ and_CC
+          simple_JJ modifications_NNS to_TO the_DT dynamically_RB changing_VBG repeat_NN
+          data_NNS ._. Every_DT merging_VBG repeat_NN in_IN the_DT map_NN is_VBZ linked_VBN by_IN
+          pointers_NNS to_TO all_DT the_DT merging_VBG repeats_VBZ with_IN which_WDT it_PRP shares_VBZ
+          exact_JJ repeats_NNS ._.
+          Step_NN 3_CD :_: Classification_NNP ._. This_DT step_NN defines_VBZ the_DT repeat_NN
+          classes_NNS ._. Each_DT merging_VBG repeat_NN will_MD be_VB assigned_VBN to_TO a_DT
+          specific_JJ class_NN if_IN its_PRP$ list_NN of_IN references_NNS (_( that_WDT is_VBZ ,_, the_DT
+          repeats_NNS that_WDT were_VBD combined_VBN into_IN the_DT merging_VBG repeat_NN )_)
+          contains_VBZ at_IN least_JJS one_CD repeat_NN that_WDT already_RB belongs_VBZ to_TO the_DT
+          class_NN ._. If_IN a_DT merging_VBG repeat_NN has_VBZ references_NNS that_WDT belong_VBP to_TO
+          multiple_JJ distinct_JJ classes_NNS ,_, then_RB those_DT classes_NNS are_VBP
+          combined_VBN into_IN one_CD ._. If_IN a_DT merging_VBG repeat_NN contains_VBZ no_DT
+          references_NNS to_TO an_DT existing_VBG class_NN ,_, then_RB the_DT merging_VBG repeat_NN
+          forms_VBZ a_DT new_JJ class_NN ._.
+          Step_NN 4_CD :_: BLAST_NN searches_NNS and_CC repeat_NN class_NN updates_NNS ._. The_DT
+          initial_JJ classification_NN is_VBZ based_VBN on_IN exact_JJ repeats_NNS ._. To_TO
+          merge_VB together_RB similar_JJ but_CC non-exact_JJ repeats_NNS ,_, we_PRP use_VBP
+          WU-BLAST_NNP [_NN 9_CD ,_, 10_CD ]_NN to_TO search_VB all_DT merging_VBG repeats_VBZ against_IN
+          all_DT others_NNS ._. The_DT resulting_VBG matches_VBZ between_IN the_DT classes_NNS are_VBP
+          used_VBN as_IN input_NN to_TO an_DT update_NN procedure_NN which_WDT redistributes_NNS
+          all_DT merging_VBG repeats_VBZ into_IN new_JJ classes_NNS ._. It_PRP is_VBZ possible_JJ to_TO
+          skip_VB this_DT step_NN if_IN the_DT initial_JJ repeat_NN set_VBN contains_VBZ
+          approximate_JJ rather_RB than_IN exact_JJ repeats_NNS ._.
+        
+        
+          Step_NN 1_CD :_: Pre-processing_NNP
+          In_IN this_DT step_NN ,_, the_DT output_NN from_IN REPuter_NNP or_CC RepeatMatch_NNP
+          is_VBZ used_VBN to_TO partition_NN the_DT original_JJ genome_NN sequence_NN ._. For_IN
+          each_DT repeat_NN starting_VBG at_IN coordinates_VBZ 
+          A_DT 
+          1_CD and_CC 
+          A_DT 
+          2_CD with_IN length_NN 
+          l_NN ,_, this_DT list_NN will_MD include_VB both_DT (_( 
+          A_DT 
+          1_CD ,_, 
+          A_DT 
+          2_CD ,_, 
+          l_NN )_) and_CC (_( 
+          A_DT 
+          2_CD ,_, 
+          A_DT 
+          1_CD ,_, 
+          l_NN )_) ._. The_DT list_NN is_VBZ then_RB sorted_VBN by_IN
+          first_JJ and_CC by_IN second_JJ coordinates_VBZ ._. To_TO illustrate_VB the_DT
+          method_NN ,_, we_PRP use_VBP the_DT example_NN shown_VBN in_IN Figure_NN 1_CD ._. The_DT table_NN
+          on_IN the_DT left_VBN in_IN Figure_NN 3_CD shows_VBZ all_DT seven_CD pairs_NNS of_IN repeats_NNS ,_,
+          while_IN the_DT right_JJ table_NN shows_VBZ the_DT corresponding_JJ sorted_VBN
+          partition_NN points_NNS ._.
+        
+        
+          Step_NN 2_CD :_: Merging_NNP and_CC repeat_NN map_NN generation_NN
+          Using_VBG the_DT list_NN of_IN partition_NN points_NNS ,_, we_PRP begin_VBP merging_VBG
+          exact_JJ repeats_VBZ using_VBG the_DT following_NN criteria_NNS ._. Given_VBN two_CD
+          partition_NN points_NNS 
+          p_NN 
+          1_CD =_SYM (_( 
+          A_DT 
+          1_CD ,_, 
+          A_DT 
+          2_CD ,_, 
+          l_NN 
+          
+            A_DT 
+           )_) and_CC 
+          p_NN 
+          2_CD =_SYM (_( 
+          B_NNP 
+          1_CD ,_, 
+          B_NNP 
+          2_CD ,_, 
+          l_NN 
+          
+            B_NNP 
+           )_) where_WRB 
+          A_DT 
+          1_CD <_NN 
+          B_NNP 
+          1_CD ,_, we_PRP compute_VB the_DT distance_NN between_IN
+          the_DT non-overlapping_JJ repeats_NNS as_IN
+          
+          d_SYM (_( 
+          p_NN 
+          1_CD ,_, 
+          p_NN 
+          2_LS )_) =_SYM max_NN (_( 0_CD ,_, 
+          B_NNP 
+          1_CD -_: 
+          A_DT 
+          1_CD -_: 
+          l_NN 
+          
+            A_DT 
+           +_NN 1_LS )_) ._.
+          Next_JJ ,_, given_VBN a_DT maximum_NN gap_NN size_NN 
+          G_NNP >_NN 0_CD ,_, the_NNP '_POS merging_VBG with_IN gap_NN '_''
+          protocol_NN uses_VBZ the_DT rule_NN that_WDT sequences_NNS corresponding_JJ to_TO 
+          p_NN 
+          1_CD and_CC 
+          p_NN 
+          2_CD are_VBP merged_VBN if_IN
+          
+          d_SYM (_( 
+          p_NN 
+          1_CD ,_, 
+          p_NN 
+          2_LS )_) <_NN 
+          G_NNP ._. 
+          The_NNP '_POS merging_VBG with_IN overlap_VB '_POS protocol_NN only_RB merges_NNS
+          sequences_NNS that_WDT overlap_VBP one_CD another_DT ;_: that_DT is_VBZ they_PRP are_VBP at_IN
+          least_JJS partially_RB identical_JJ ._. We_PRP denote_NN the_DT overlap_VB of_IN two_CD
+          sequences_NNS as_IN
+          0_CD (_( 
+          p_NN 
+          1_CD ,_, 
+          p_NN 
+          2_LS )_) =_SYM max_NN (_( 0_CD ,_, 
+          A_DT 
+          1_CD +_NN 
+          l_NN 
+          
+            A_DT 
+           -_: 
+          B_NNP 
+          1_CD +_NN 1_LS )_) for_IN 
+          A_DT 
+          1_CD <_NN 
+          B_NNP 
+          1_CD 
+          Then_RB the_DT criterion_NN for_IN '_POS merging_VBG with_IN overlap_VB '_POS is_NNS as_IN
+          follows_VBZ :_: given_VBN a_DT minimum_JJ overlap_VB proportion_NN 
+          op_NN ,_, where_WRB 0_CD ≤_NN 
+          op_NN ≤_NN 1_CD ,_, repeat_NN points_NNS (_( 
+          A_DT 
+          1_CD ,_, 
+          A_DT 
+          2_CD ,_, 
+          l_NN 
+          
+            A_DT 
+           )_) and_CC (_( 
+          B_NNP 
+          1_CD ,_, 
+          B_NNP 
+          2_CD ,_, 
+          l_NN 
+          
+            B_NNP 
+           )_) are_VBP merged_VBN if_IN at_IN least_JJS one_CD of_IN the_DT four_CD repeats_VBZ has_VBZ
+          overlap_VB satisfying_VBG
+          0_CD (_( 
+          p_NN 
+          1_CD ,_, 
+          p_NN 
+          2_LS )_) >_NN 
+          op_NN min_NN (_( 
+          l_NN 
+          
+            A_DT 
+           ,_, 
+          l_NN 
+          
+            B_NNP 
+           )_) ._.
+          The_DT parameter_NN 
+          op_NN is_VBZ interpreted_VBN as_IN a_DT fraction_NN of_IN
+          the_DT shorter_JJR of_IN the_DT two_CD repeats_NNS ._. Thus_RB for_IN 
+          op_NN =_SYM 0_CD ._. 75_CD ,_, we_PRP will_MD merge_VB two_CD
+          overlapped_JJ sequences_NNS if_IN the_DT length_NN of_IN their_PRP$ overlap_VB is_VBZ at_IN
+          least_JJS 75_CD %_NN of_IN the_DT length_NN of_IN the_DT shorter_JJR sequence_NN ._.
+          Using_VBG either_CC merging_VBG procedure_NN ,_, if_IN two_CD sequences_NNS are_VBP
+          merged_VBN then_RB the_DT new_JJ sequence_NN will_MD be_VB defined_VBN as_IN a_DT merging_VBG
+          repeat_NN with_IN starting_VBG position_NN 
+          M_NNP =_SYM 
+          A_DT 
+          1_CD and_CC with_IN length_NN 
+          l_NN 
+          
+            M_NNP 
+           =_SYM max_NN (_( 
+          A_DT 
+          1_CD +_NN 
+          l_NN 
+          
+            A_DT 
+           ,_, 
+          B_NNP 
+          1_CD +_NN 
+          l_NN 
+          
+            B_NNP 
+           )_) -_: 
+          A_DT 
+          1_CD ._. The_DT merging_VBG procedure_NN is_VBZ not_RB
+          permitted_VBN to_TO merge_VB pairs_NNS of_IN partition_NN points_NNS of_IN the_DT form_NN
+          (_( 
+          B_NNP 
+          1_CD ,_, 
+          B_NNP 
+          2_CD ,_, 
+          l_NN 
+          
+            B_NNP 
+           )_) and_CC (_( 
+          B_NNP 
+          2_CD ,_, 
+          B_NNP 
+          1_CD ,_, 
+          l_NN 
+          
+            B_NNP 
+           )_) ._. This_DT condition_NN avoids_VBZ merging_VBG of_IN tandem_JJ repeats_VBZ
+          and_CC avoids_VBZ repetitiveness_NNS within_IN the_DT merging_VBG repeats_NNS ._.
+          On_IN the_DT left_NN side_NN of_IN Figure_NN 4_CD we_PRP illustrate_VBP the_DT merging_VBG
+          procedure_NN using_VBG a_DT merging_VBG with_IN 
+          G_NNP =_SYM 1_CD ._. Dark_JJ gray_JJ rectangles_NNS mark_VBP
+          the_DT start_NN coordinates_VBZ of_IN merging_VBG repeats_NNS ._. The_DT extent_NN of_IN
+          each_DT merging_VBG repeat_NN is_VBZ shown_VBN by_IN dividing_VBG sets_NNS of_IN repeats_NNS
+          using_VBG horizontal_NN lines_NNS ._.
+          This_DT procedure_NN ,_, by_IN updating_VBG and_CC creating_VBG new_JJ
+          references_NNS ,_, leads_VBZ to_TO the_DT repeat_NN map_NN shown_VBN on_IN the_DT right_NN of_IN
+          Figure_NN 4_CD ._. These_DT references_NNS define_VB the_DT correspondences_NNS
+          between_IN all_DT merging_VBG repeats_NNS ._. Each_DT merging_VBG repeat_NN
+          maintains_VBZ references_NNS to_TO the_DT other_JJ merging_VBG repeats_VBZ with_IN
+          which_WDT it_PRP shares_VBZ exact_JJ repeats_VBZ ;_: each_DT exact_JJ repeat_NN is_VBZ
+          assigned_VBN to_TO the_DT first_JJ merging_VBG repeat_NN in_IN which_WDT it_PRP appears_VBZ ._.
+          In_IN our_PRP$ example_NN ,_, the_DT merging_VBG repeat_NN starting_VBG in_IN coordinate_VB
+          77_CD gets_VBZ a_DT reference_NN to_TO itself_PRP only_RB ,_, because_IN its_PRP$ exact_JJ
+          repeats_NNS have_VBP no_DT previous_JJ references_NNS ._. The_DT next_JJ repeat_NN ,_,
+          starting_VBG in_IN position_NN 116_CD ,_, gets_VBZ a_DT reference_NN to_TO itself_PRP and_CC
+          to_TO its_PRP$ mate_NN the_DT merging_VBG repeat_NN 77_CD ._. A_DT data_NNS structure_NN
+          stores_NNS with_IN each_DT merging_VBG repeat_NN its_PRP$ start_NN coordinate_VB ,_, its_PRP$
+          length_NN (_( 
+          l_NN 
+          
+            M_NNP 
+           )_) ,_, the_DT number_NN of_IN exact_JJ repeats_VBZ it_PRP includes_VBZ (_( 
+          n_NN 
+          
+            M_NNP 
+           )_) ,_, and_CC a_DT list_NN of_IN references_NNS to_TO itself_PRP and_CC to_TO other_JJ
+          repeats_VBZ (_( 
+          R_NN 
+          1_CD ,_, 
+          R_NN 
+          2_CD ,_, 
+          R_NN 
+          3_LS )_) ._.
+        
+        
+          Step_NN 3_CD :_: Classification_NNP
+          Given_VBN the_DT repeat_NN map_NN ,_, we_PRP can_MD begin_VB to_TO define_VB classes_NNS
+          by_IN noting_VBG that_IN if_IN a_DT merging_VBG repeat_NN has_VBZ at_IN least_JJS one_CD
+          reference_NN in_IN common_JJ with_IN another_DT ,_, then_RB they_PRP belong_VBP to_TO the_DT
+          same_JJ class_NN ._. Figure_NN 5_CD illustrates_VBZ one_CD step_NN in_IN this_DT
+          procedure_NN ._. The_DT merging_VBG repeat_NN (_( 
+          M_NNP ,_, l_NN 
+          
+            M_NNP 
+           =_SYM (_( 126_CD ,_, 8_CD )_) has_VBZ two_CD common_JJ references_NNS in_IN two_CD different_JJ
+          classes_NNS ,_, class_NN 1_CD and_CC class_NN 5_CD ._. These_DT classes_NNS are_VBP then_RB
+          combined_VBN together_RB into_IN a_DT new_JJ class_NN 1_CD ,_, which_WDT contains_VBZ all_DT
+          references_NNS from_IN both_DT the_DT original_JJ classes_NNS ._.
+        
+        
+          Step_NN 4_CD :_: BLAST_NN searches_NNS and_CC further_RB merging_VBG
+          For_IN this_DT step_NN ,_, the_DT most_RBS time-consuming_JJ part_NN of_IN the_DT
+          algorithm_NN ,_, we_PRP use_VBP the_DT underlying_VBG sequences_NNS of_IN the_DT merging_VBG
+          repeats_VBZ ,_, and_CC run_VB a_DT BLAST_NN search_NN of_IN all_DT sequences_NNS against_IN
+          all_DT others_NNS ._. Classes_NNS are_VBP merged_VBN if_IN any_DT of_IN their_PRP$ underlying_VBG
+          sequences_NNS have_VBP a_DT BLAST_NN 
+          E_NNP -_: value_NN less_RBR then_RB a_DT user-specified_JJ
+          threshold_NN when_WRB compared_VBN to_TO any_DT sequence_NN in_IN another_DT class_NN ._.
+          If_IN a_DT class_NN appears_VBZ in_IN multiple_JJ similarity_NN pairs_NNS ,_, all_PDT
+          these_DT similar_JJ classes_NNS are_VBP merged_VBN with_IN the_DT original_JJ class_NN ._.
+          For_IN the_DT example_NN in_IN Figure_NN 4_CD ,_, BLAST_NN searches_NNS do_VBP not_RB reveal_VB
+          any_DT new_JJ similarity_NN pairs_NNS ;_: thus_RB the_DT classification_NN from_IN
+          the_DT figure_NN is_VBZ identical_JJ to_TO the_DT final_JJ classification_NN
+          (_( Table_NNP 1_LS )_) ._.
+        
+        
+          Repeat_NN analysis_NN of_IN microbial_NN genomes_NNS
+          We_PRP used_VBD our_PRP$ repeat_NN clustering_VBG algorithm_NN to_TO analyze_VB
+          several_JJ complete_JJ microbial_NN genomes_NNS ._. Table_NNP 2_CD summarizes_NNS the_DT
+          repeat_NN analysis_NN for_IN the_DT 
+          Neisseria_NNP meningitidis_NNS genome_NN [_NN 20_CD ]_NN
+          using_VBG two_CD different_JJ clustering_VBG criteria_NNS ._. It_PRP illustrates_VBZ
+          how_WRB increasing_VBG the_DT exact_JJ repeat_NN size_NN in_IN the_DT initial_JJ step_NN
+          leads_VBZ to_TO fewer_JJR merging_VBG repeats_VBZ and_CC fewer_JJR classes_NNS ._. It_PRP also_RB
+          shows_VBZ how_WRB reducing_VBG the_DT size_NN of_IN the_DT gap_NN and_CC increasing_VBG the_DT
+          required_JJ overlap_VB increases_NNS the_DT number_NN of_IN repeat_NN classes_NNS ,_,
+          as_IN would_MD be_VB expected_VBN ._.
+          For_IN a_DT more_RBR comprehensive_JJ repeat_NN analysis_NN ,_, we_PRP chose_VBD
+          seven_CD different_JJ microbial_NN genomes_NNS ,_, using_VBG 25_CD base_NN pairs_NNS
+          (_( bp_NN )_) as_IN the_DT minimal_JJ exact_JJ repeat_NN length_NN and_CC allowing_VBG less_JJR
+          than_IN a_DT 25_CD bp_NN gap_NN for_IN the_DT merging_VBG procedure_NN ._. Table_NNP 3_CD shows_VBZ
+          the_DT results_NNS for_IN these_DT genomes_NNS ._. It_PRP presents_VBZ the_DT number_NN of_IN
+          merging_VBG repeats_VBZ ,_, the_DT number_NN of_IN repeat_NN classes_NNS ,_, the_DT
+          longest_JJS single_JJ merging_VBG repeat_NN ,_, and_CC the_DT number_NN of_IN classes_NNS
+          containing_VBG more_JJR than_IN two_CD members_NNS ._. As_IN shown_VBN here_RB ,_, these_DT
+          latter_JJ classes_NNS comprise_VBP only_RB 10_CD -_: 25_CD %_NN of_IN all_DT repeat_NN
+          classes_NNS ,_, indicating_VBG that_IN most_JJS repeat_NN types_NNS are_VBP simple_JJ
+          duplications_NNS ._. Among_IN these_DT duplication_NN ,_, the_DT vast_JJ majority_NN
+          occur_VB in_IN tandem_JJ ,_, although_IN this_DT is_VBZ not_RB shown_VBN in_IN Table_NNP 3_CD ._.
+          The_DT picture_NN given_VBN here_RB shows_VBZ how_WRB repeat_NN analysis_NN can_MD
+          quickly_RB provide_VB an_DT overall_JJ picture_NN of_IN how_WRB repetitive_JJ a_DT
+          genome_NN is_VBZ ;_: in_IN addition_NN ,_, the_DT analysis_NN extracts_NNS the_DT repeats_NNS
+          themselves_PRP for_IN further_JJ analysis_NN ._.
+        
+        
+          Defining_VBG the_DT prototype_NN for_IN a_DT repeat_NN class_NN
+          Small_JJ microbial_NN genomes_NNS have_VBP relatively_RB few_JJ types_NNS of_IN
+          repeats_NNS ,_, and_CC relatively_RB few_JJ copies_NNS of_IN each_DT type_NN ._. In_IN
+          contrast_NN ,_, our_PRP$ studies_NNS of_IN longer_RBR eukaryotic_JJ genome_NN
+          sequences_NNS have_VBP uncovered_VBN tens_NNS of_IN thousands_NNS of_IN repeat_NN
+          classes_NNS and_CC hundreds_NNS of_IN thousands_NNS of_IN merging_VBG repeats_NNS ._. In_IN
+          order_NN to_TO be_VB able_JJ to_TO process_VB this_DT data_NNS efficiently_RB -_: in_IN
+          particular_JJ ,_, in_IN order_NN to_TO run_VB the_DT procedure_NN where_WRB all_DT
+          classes_NNS are_VBP compared_VBN against_IN each_DT other_JJ using_VBG BLAST_NN -_: we_PRP
+          developed_VBD a_DT procedure_NN to_TO define_VB the_DT most_JJS representative_NN
+          element_NN for_IN each_DT class_NN ,_, which_WDT we_PRP call_VBP its_PRP$ prototype_NN ._.
+          Referring_VBG to_TO the_DT repeat_NN map_NN shown_VBN in_IN Figure_NN 5_CD ,_, we_PRP use_VBP
+          the_DT length_NN of_IN the_DT merging_VBG repeat_NN (_( 
+          l_NN 
+          
+            M_NNP 
+           )_) and_CC the_DT number_NN of_IN exact_JJ repeats_VBZ (_( 
+          n_NN 
+          
+            M_NNP 
+           )_) to_TO defined_VBD the_DT desirable_JJ properties_NNS for_IN the_DT
+          prototype_NN ._. The_DT different_JJ merging_VBG protocols_NNS affect_VBP the_DT
+          properties_NNS of_IN the_DT prototype_NN ._. Thus_RB ,_, in_IN the_NNP '_POS merging_VBG with_IN
+          gap_NN '_'' procedure_NN ,_, the_DT merging_VBG repeats_VBZ with_IN the_DT longest_JJS
+          lengths_NNS and_CC with_IN the_DT greatest_JJS number_NN of_IN subrepeats_NNS should_MD
+          be_VB the_DT best_JJS candidates_NNS to_TO represent_VB the_DT class_NN ._. In_IN this_DT
+          case_NN ,_, many_JJ members_NNS will_MD consist_VB of_IN simple_JJ subsequences_NNS of_IN
+          the_DT prototype_NN ._. When_WRB we_PRP use_VBP the_NNP '_POS merging_VBG with_IN overlap_VB '_POS
+          procedure_NN ,_, we_PRP also_RB look_VBP for_IN the_DT greatest_JJS number_NN of_IN
+          subrepeats_NNS ,_, but_CC the_DT length_NN of_IN the_DT most_JJS representative_NN
+          repeat_NN should_MD be_VB closer_JJR to_TO the_DT shortest_JJS repeat_NN in_IN the_DT
+          class_NN ._. In_IN this_DT case_NN the_DT representative_NN element_NN will_MD tend_VB
+          to_TO match_VB across_IN most_JJS of_IN its_PRP$ length_NN to_TO every_DT member_NN of_IN the_DT
+          class_NN ._.
+          Using_VBG these_DT considerations_NNS ,_, we_PRP can_MD construct_VB the_DT
+          objective_NN function_NN for_IN both_DT cases_NNS ._. For_IN each_DT class_NN ,_, given_VBN
+          the_DT merging_VBG repeat_NN length_NN 
+          l_NN (_( 
+          l_NN 
+          
+            M_NNP 
+           )_) and_CC number_NN of_IN subrepeats_NNS 
+          n_NN (_( 
+          n_NN 
+          
+            M_NNP 
+           )_) ,_, the_DT maximum_NN and_CC the_DT minimum_JJ repeat_NN lengths_NNS in_IN the_DT
+          class_NN (_( 
+          l_NN 
+          max_NN and_CC 
+          l_NN 
+          min_NN )_) ,_, and_CC the_DT maximum_NN and_CC the_DT minimum_JJ
+          number_NN of_IN subrepeats_NNS in_IN the_DT class_NN (_( 
+          n_NN 
+          max_NN and_CC 
+          n_NN 
+          min_NN )_) ,_, we_PRP define_VB the_DT function_NN 
+          F_NN (_( l_NN ,_, n_NN )_) for_IN each_DT merging_VBG repeat_NN of_IN
+          the_DT class_NN as_IN
+          for_IN '_POS merging_VBG with_IN gaps_NNS '_'' and_CC
+          for_IN '_POS merging_VBG with_IN overlaps_NNS '_'' ._.
+          This_DT non-negative_JJ function_NN is_VBZ a_DT summary_NN of_IN the_DT
+          variance_NN in_IN the_DT length_NN and_CC number_NN of_IN subrepeats_NNS from_IN the_DT
+          desirable_JJ values_NNS for_IN the_DT class_NN prototype_NN ._. Then_RB we_PRP solve_VB
+          the_DT optimization_NN problem_NN of_IN minimizing_VBG function_NN 
+          F_NN (_( l_NN ,_, n_NN )_) :_: 
+          find_VB (_( 
+          l_NN ,_, 
+          n_NN )_) corresponding_JJ to_TO an_DT element_NN in_IN
+          the_DT single_JJ repeat_NN class_NN :_: min_NN 
+          F_NN (_( l_NN ,_, n_NN )_) ._. 
+          If_IN we_PRP get_VBP several_JJ elements_NNS that_WDT minimize_VB this_DT
+          function_NN ,_, we_PRP select_VBP the_DT one_CD with_IN the_DT maximal_NN number_NN of_IN
+          subrepeats_NNS ._. Thus_RB in_IN our_PRP$ example_NN (_( Figures_NNS 1_CD ,_, 3_CD ,_, 4_CD ,_, 5_LS )_) the_DT
+          prototype_NN for_IN class_NN 1_CD is_VBZ the_DT longest_JJS repeat_NN starting_VBG in_IN
+          position_NN 77_CD ,_, with_IN 
+          l_NN =_SYM 11_CD and_CC 
+          n_NN =_SYM 2_CD ._. Likewise_RB ,_, the_DT prototype_NN for_IN
+          class_NN 2_CD is_VBZ the_DT repeat_NN starting_VBG at_IN position_NN 23_CD ,_, and_CC for_IN
+          class_NN 3_CD it_PRP is_VBZ the_DT repeat_NN starting_VBG at_IN position_NN 38_CD ._. We_PRP used_VBD
+          this_DT procedure_NN in_IN our_PRP$ studies_NNS of_IN the_DT genome_NN sequences_NNS of_IN 
+          A_DT ._. thaliana_NN [_NN 2_CD ]_NN and_CC rice_NN BAC_NNP end_NN
+          sequences_NNS [_NN 22_CD ,_, 23_CD ]_NN ._.
+        
+        
+          Repeat_NN structure_NN of_IN the_DT Arabidopsisgenome_NNP
+          The_DT 125_CD Mb_NNP 
+          A_DT ._. thaliana_NN genome_NN consists_VBZ of_IN five_CD
+          chromosomes_NNS ranging_VBG from_IN 18_CD Mb_NNP to_TO 30_CD Mb_NNP in_IN length_NN ._. We_PRP
+          applied_VBD the_DT suffix_NN tree_NN algorithm_NN for_IN finding_VBG exact_JJ
+          repeats_VBZ to_TO each_DT of_IN these_DT sequences_NNS separately_RB ,_, and_CC than_IN
+          used_VBN our_PRP$ clustering_VBG method_NN to_TO determine_VB the_DT repetitive_JJ
+          structure_NN of_IN each_DT chromosome_NN ._. We_PRP found_VBD from_IN 100_CD ,_, 000_CD to_TO
+          400_CD ,_, 000_CD pairs_NNS of_IN exact_JJ repeats_NNS in_IN each_DT chromosome_NN using_VBG a_DT
+          minimum_JJ length_NN of_IN 25_CD bp_NN (_( after_IN filtering_VBG out_IN simple_JJ
+          repeat_NN sequences_NNS )_) ._. These_DT repeats_VBZ in_IN total_JJ represent_VB
+          approximately_RB 10_CD %_NN of_IN the_DT chromosome_NN sequences_NNS ._. To_TO group_VB
+          the_DT repeats_NNS into_IN classes_NNS the_DT gap_NN merging_VBG strategy_NN was_VBD
+          used_VBN ,_, with_IN a_DT maximum_NN gap_NN size_NN of_IN less_JJR than_IN 25_CD bp_NN ._. The_DT
+          algorithm_NN finds_VBZ some_DT 5_CD ,_, 000_CD -_: 7_CD ,_, 000_CD repeat_NN classes_NNS per_IN
+          chromosome_NN ,_, but_CC only_RB 20_CD %_NN of_IN these_DT contain_VB more_JJR than_IN two_CD
+          elements_NNS ._. 
+          Arabidopsis_NNP is_VBZ known_VBN to_TO contain_VB
+          extensive_JJ gene_NN duplication_NN and_CC strong_JJ evidence_NN of_IN a_DT
+          whole-genome_JJ duplication_NN [_NN 2_CD ]_NN ;_: thus_RB it_PRP is_VBZ not_RB surprising_JJ
+          to_TO observe_VB such_JJ a_DT preponderance_NN of_IN repeats_NNS with_IN just_RB two_CD
+          members_NNS ._. We_PRP defined_VBD the_DT prototype_NN element_NN for_IN each_DT class_NN
+          using_VBG the_DT optimization_NN procedure_NN described_VBD above_IN ,_,
+          combined_VBD all_PDT the_DT prototypes_NNS from_IN five_CD chromosomes_NNS in_IN one_CD
+          database_NN ,_, and_CC generated_VBD a_DT final_JJ classification_NN of_IN the_DT
+          whole_JJ genome_NN by_IN clustering_VBG the_DT BLAST_NN search_NN results_NNS of_IN
+          all_DT prototypes_NNS against_IN all_DT ._. This_DT resulted_VBD in_IN over_IN 5_CD ,_, 000_CD
+          classes_NNS with_IN three_CD or_CC more_JJR elements_NNS ._. Table_NNP 4_CD contains_VBZ a_DT
+          summary_NN of_IN the_DT repeat_NN structure_NN for_IN the_DT entire_JJ 
+          A_DT ._. thaliana_NN genome_NN ._.
+          To_TO find_VB out_IN more_JJR about_IN the_DT composition_NN of_IN the_DT 
+          Arabidopsis_NNP repeats_VBZ ,_, each_DT sequence_NN
+          was_VBD searched_VBD against_IN AtRepBase_NNP [_NN 25_CD ]_NN and_CC the_DT 
+          Arabidopsis_NNP gene_NN database_NN [_NN 26_CD ]_NN
+          (_( using_VBG a_DT maximum_NN BLAST_NN E-_NNP value_NN of_IN 0_CD ._. 01_CD and_CC at_IN least_JJS 100_CD %_NN
+          identity_NN for_IN 
+          Arabidopsis_NNP genes_NNS and_CC at_IN least_JJS 95_CD %_NN
+          identity_NN to_TO AtRep-Base_NNP sequences_NNS )_) ._. Of_IN 105_CD ,_, 434_CD repeat_NN
+          sequences_NNS that_WDT fall_NN into_IN 27_CD ,_, 961_CD separate_JJ repeat_NN classes_NNS ,_,
+          2_CD ,_, 124_CD sequences_NNS matched_VBD an_DT annotated_JJ repeat_NN sequence_NN in_IN
+          AtRepBase_NNP ,_, and_CC 25_CD ,_, 149_CD sequences_NNS matched_VBD a_DT segment_NN of_IN an_DT 
+          Arabidopsis_NNP gene_NN ._. Comparing_VBG both_DT
+          sets_NNS of_IN matches_NNS ,_, only_RB 417_CD of_IN the_DT repeat_NN sequences_NNS were_VBD
+          found_VBN to_TO match_VB both_DT a_DT gene_NN segment_NN and_CC an_DT annotated_JJ
+          repeat_NN sequence_NN ._. The_DT large_JJ number_NN of_IN repeats_NNS that_WDT match_VBP
+          gene_NN segments_NNS reflects_VBZ the_DT prevalence_NN of_IN segmental_NN
+          chromosomal_NN duplications_NNS and_CC tandem_JJ gene_NN duplications_NNS in_IN 
+          Arabidopsis_NNP ._. Due_JJ to_TO the_DT greedy_JJ
+          '_POS merging_VBG with_IN gap_NN '_'' method_NN used_VBD to_TO build_VB the_DT repeat_NN
+          classes_NNS ,_, relatively_RB few_JJ of_IN the_DT repeat_NN classes_NNS contained_VBD
+          an_DT abundance_NN of_IN the_DT repeat_NN sequences_NNS ;_: the_DT largest_JJS repeat_NN
+          class_NN contained_VBD 30_CD ,_, 975_CD sequences_NNS of_IN which_WDT 6_CD ,_, 505_CD matched_VBN
+          gene_NN segments_NNS and_CC 1_CD ,_, 723_CD matched_VBN annotated_JJ repeats_NNS ._.
+          To_TO further_VB analyze_VB the_DT composition_NN of_IN the_DT repeat_NN
+          classes_NNS ,_, a_DT prototype_NN repeat_NN sequence_NN was_VBD chosen_VBN to_TO
+          represent_VB each_DT repeat_NN class_NN containing_VBG at_IN least_JJS five_CD
+          members_NNS ,_, and_CC the_DT top_JJ database_NN matches_NNS were_VBD identified_VBN
+          (_( Table_NNP 5_LS )_) ._. Of_IN the_DT 1_CD ,_, 454_CD prototype_NN repeat_NN sequences_NNS
+          examined_VBD ,_, approximately_RB half_NN (_( 755_CD )_) matched_VBN gene_NN segments_NNS
+          and_CC 58_CD matched_VBN annotated_JJ repeats_NNS ._. The_DT genes_NNS matched_VBN by_IN
+          the_DT prototype_NN repeat_NN sequences_NNS include_VBP known_VBN members_NNS of_IN
+          large_JJ 
+          Arabidopsis_NNP gene_NN families_NNS including_VBG
+          a_DT cytochrome_NN P_NN 450_CD ,_, a_DT receptor_NN kinase_NN ,_, a_DT
+          disease-resistance_JJ protein_NN and_CC several_JJ transposon_NN open_JJ
+          reading_NN frames_NNS ._. In_IN addition_NN ,_, there_EX were_VBD many_JJ matches_VBZ to_TO
+          hypothetical_JJ proteins_NNS ,_, the_DT validity_NN of_IN which_WDT remains_VBZ to_TO
+          be_VB determined_VBN ._. The_DT biological_JJ relevance_NN of_IN the_DT remaining_VBG
+          repeat_NN classes_NNS remains_VBZ unclear_JJ at_IN present_NN ._.
+        
+        
+          Rice_NNP repeat_NN database_NN
+          Yuan_NNP 
+          et_CC al_NN ._. [_NN 27_CD ]_NN recently_RB reported_VBD on_IN
+          the_DT construction_NN of_IN a_DT rice_NN repeat_NN database_NN that_WDT was_VBD
+          generated_VBN by_IN searching_VBG all_DT available_JJ rice_NN sequences_NNS for_IN
+          minisatellite_NN sequences_NNS ,_, mobile_JJ elements_NNS ,_, rDNA_NN ,_,
+          centromeric_JJ repeat_NN sequences_NNS and_CC telomeric_JJ repeat_NN
+          sequences_NNS ._. This_DT database_NN includes_VBZ 215_CD sequences_NNS ._. We_PRP
+          attempted_VBD to_TO use_VB the_DT repeat_NN finding_VBG system_NN described_VBD here_RB
+          to_TO enlarge_VB this_DT set_JJ ,_, using_VBG as_IN input_NN the_DT large_JJ collection_NN
+          of_IN sequences_NNS from_IN the_DT Clemson_NNP University_NNP rice_NN BAC_NNP end_NN
+          database_NN [_NN 23_CD ]_NN ._.
+          Unlike_IN either_DT 
+          Arabidopsis_NNP or_CC the_DT microbial_NN
+          genomes_NNS ,_, where_WRB a_DT single_JJ genome_NN sequence_NN or_CC a_DT few_JJ large_JJ
+          chromosomes_NNS were_VBD being_VBG processed_VBN ,_, in_IN this_DT case_NN we_PRP had_VBD
+          101_CD ,_, 562_CD BAC_NNP end_NN sequences_NNS with_IN an_DT average_JJ length_NN of_IN
+          approximately_RB 400_CD -_: 700_CD bp_NN ._. We_PRP therefore_RB developed_VBD a_DT
+          special_JJ pre-processing_JJ procedure_NN which_WDT generates_VBZ a_DT single_JJ
+          sequence_NN (_( approximately_RB 42_CD Mb_NNP long_JJ )_) from_IN all_PDT the_DT BAC_NNP
+          ends_VBZ ._. Each_DT original_JJ sequence_NN is_VBZ represented_VBN by_IN its_PRP$
+          coordinate_VB in_IN the_DT new_JJ sequence_NN ._. This_DT procedure_NN permits_VBZ
+          the_DT algorithm_NN to_TO work_VB with_IN hundreds_NNS of_IN thousands_NNS of_IN
+          different_JJ sequences_NNS simultaneously_RB ._. The_DT system_NN found_VBD
+          5_CD ,_, 208_CD ,_, 206_CD exact_JJ repeat_NN pairs_NNS with_IN lengths_NNS from_IN 25_CD bp_NN to_TO
+          728_CD bp_NN ,_, where_WRB the_DT latter_JJ represents_VBZ an_DT entire_JJ BAC_NNP end_NN
+          that_WDT was_VBD repeated_VBN exactly_RB ._. The_DT maximum_NN length_NN of_IN each_DT
+          repeat_NN was_VBD bounded_JJ by_IN the_DT length_NN of_IN the_DT BAC_NNP end_NN sequence_NN
+          in_IN which_WDT it_PRP was_VBD found_VBN ._. This_DT length_NN restriction_NN was_VBD added_VBN
+          to_TO the_DT merging_VBG procedure_NN to_TO avoid_VB artificially_RB long_JJ
+          repeats_NNS that_WDT might_MD mistakenly_RB span_NN more_JJR than_IN one_CD BAC_NNP end_NN
+          sequence_NN ._. The_DT pre-clustering_JJ procedure_NN also_RB includes_VBZ
+          filtering_VBG of_IN the_DT exact_JJ repeats_VBZ data_NNS to_TO remove_VB
+          simple-sequence_JJ repeats_NNS ,_, which_WDT were_VBD determined_VBN to_TO
+          comprise_VB over_IN 40_CD %_NN of_IN exact_JJ repeats_NNS ._. We_PRP merged_VBD the_DT
+          filtered_VBN exact_JJ repeats_VBZ data_NNS ,_, requiring_VBG an_DT overlap_VB of_IN 95_CD %_NN ._.
+          This_DT resulted_VBD in_IN 48_CD ,_, 768_CD repeat_NN classes_NNS ,_, of_IN which_WDT only_RB
+          8_CD ,_, 118_CD include_VBP more_JJR than_IN two_CD elements_NNS ._. Table_NNP 4_CD contains_VBZ a_DT
+          summary_NN of_IN these_DT repeat_NN classes_NNS ._. A_DT searchable_JJ rice_NN repeat_NN
+          database_NN ,_, based_VBN on_IN the_DT prototypes_NNS of_IN these_DT classes_NNS ,_, is_VBZ
+          available_JJ online_NN at_IN [_NN 28_CD ]_NN ._.
+          To_TO test_VB this_DT new_JJ repeat_NN database_NN ,_, we_PRP compared_VBD it_PRP to_TO
+          the_DT set_NN of_IN annotated_JJ repeats_VBZ based_VBN on_IN known_VBN ,_, expertly_RB
+          curated_JJ repeats_VBZ [_NN 27_CD ]_NN ._. There_EX were_VBD four_CD general_JJ groups_NNS in_IN
+          this_DT set_JJ :_: telomere_NN /_NN centromere_NN repeats_VBZ ,_,
+          transposon_NN /_NN transposon-like_JJ repeats_NNS ,_, rDNA_NN ,_, and_CC all_PDT the_DT
+          rest_NN [_NN 27_CD ]_NN ._. We_PRP used_VBD BLAST_NN to_TO search_VB annotated_JJ repeats_NNS
+          against_IN the_DT rice_NN repeat_NN database_NN ,_, using_VBG an_DT E-_NNP value_NN cutoff_NN
+          of_IN 10_CD -_: 8_CD ._. Classification_NNP of_IN the_DT BLAST_NN hits_NNS shows_VBZ that_IN the_DT
+          annotated_JJ repeats_NNS from_IN the_DT four_CD distinct_JJ groups_NNS always_RB
+          fall_VBP into_IN separate_JJ classes_NNS in_IN the_DT rice_NN repeat_NN database_NN ;_:
+          in_IN other_JJ words_NNS ,_, the_DT new_JJ database_NN divides_VBZ the_DT previous_JJ
+          repeat_NN classes_NNS into_IN a_DT finer-grained_JJ set_NN of_IN repeats_NNS ,_, but_CC
+          it_PRP does_VBZ not_RB merge_VB any_DT of_IN the_DT four_CD known_VBN groups_NNS
+          together_RB ._.
+        
+        
+          Performance_NNP
+          Because_IN of_IN the_DT use_NN of_IN the_DT efficient_JJ suffix_NN tree_NN
+          procedures_NNS ,_, the_DT system_NN runs_VBZ very_RB fast_RB ,_, with_IN the_DT
+          all-versus-all_JJ BLAST_NN search_NN consuming_NN approximately_RB 80_CD %_NN
+          of_IN the_DT computation_NN time_NN ._. The_DT running_VBG time_NN of_IN the_DT exact_JJ
+          repeat_NN finder_NN is_VBZ about_IN 10_CD -_: 15_CD %_NN of_IN the_DT total_NN ,_, with_IN the_DT
+          other_JJ processes_VBZ -_: merging_VBG ,_, clustering_VBG and_CC post-_NN BLAST_NN
+          updating_VBG -_: using_VBG a_DT relatively_RB minor_JJ proportion_NN of_IN overall_JJ
+          computation_NN time_NN ._. The_DT running_VBG time_NN depends_VBZ on_IN both_DT the_DT
+          sequence_NN length_NN and_CC the_DT number_NN of_IN repeats_NNS ;_: for_IN example_NN ,_,
+          small_JJ microbial_NN genomes_NNS take_VBP just_RB 3_CD -_: 15_CD minutes_NNS ,_, whereas_IN
+          the_DT highly_RB repetitive_JJ rice_NN repeat_NN database_NN took_VBD about_IN two_CD
+          days_NNS to_TO process_VB ._. The_DT memory_NN needed_VBN for_IN computation_NN is_VBZ
+          dominated_VBN by_IN the_DT requirements_NNS of_IN the_DT suffix_NN tree_NN used_VBN for_IN
+          the_DT initial_JJ repeats_VBZ computation_NN [_NN 11_CD ,_, 12_CD ,_, 13_CD ]_NN ;_: this_DT can_MD
+          grow_VB to_TO many_JJ gigabytes_NNS for_IN large_JJ eukaryotic_JJ
+          chromosomes_NNS ._.
+        
+      
+      
+        Conclusions_NNP
+        We_PRP describe_VBP a_DT new_JJ system_NN for_IN rapid_JJ identification_NN of_IN all_DT
+        repeats_VBZ in_IN genome_NN sequences_NNS and_CC assignment_NN of_IN these_DT repeats_VBZ
+        to_TO similarity_NN classes_NNS ._. The_DT system_NN has_VBZ been_VBN used_VBN to_TO analyze_VB
+        the_DT repeat_NN structure_NN of_IN several_JJ complete_JJ microbial_NN genomes_NNS ,_,
+        and_CC the_DT much_RB larger_JJR genome_NN of_IN the_DT model_NN plant_NN 
+        A_DT ._. thaliana_NN ._. We_PRP also_RB used_VBD it_PRP to_TO
+        create_VB a_DT new_JJ rice_NN repeat_NN database_NN ,_, based_VBN on_IN an_DT analysis_NN of_IN
+        a_DT large_JJ BAC_NNP end_NN sequence_NN database_NN ._. This_DT new_JJ computational_NN
+        tool_NN should_MD prove_VB helpful_JJ in_IN the_DT analysis_NN of_IN repeat_NN
+        structure_NN for_IN both_DT complete_JJ and_CC partial_JJ genome_NN
+        sequences_NNS ._.
+      
+    
+  

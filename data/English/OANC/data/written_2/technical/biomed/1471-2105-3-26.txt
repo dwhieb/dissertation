@@ -1,0 +1,567 @@
+
+  
+    
+      
+        Background_NNP
+        Pathologic_NNP classification_NN of_IN tumors_NNS has_VBZ been_VBN
+        traditionally_RB based_VBN on_IN microscopic_JJ appearance_NN ._. Although_IN
+        morphology_NN often_RB correlates_NNS with_IN natural_JJ history_NN of_IN
+        disease_NN ,_, tumors_NNS of_IN a_DT given_VBN pattern_NN may_MD have_VB a_DT broad_JJ
+        prognostic_JJ range_NN and_CC different_JJ responses_NNS to_TO treatment_NN ._.
+        Molecular_NNP methods_NNS ,_, such_JJ as_IN the_DT evaluation_NN of_IN hormone_NN
+        receptors_NNS in_IN breast_NN carcinoma_NN ,_, have_VBP been_VBN effectively_RB
+        employed_VBN to_TO further_VB characterize_VB tumors_NNS [_NN 1_CD ]_NN ._. Nucleic_NNP
+        acid_NN array-based_JJ technologies_NNS extend_VBP molecular_JJ
+        characterization_NN by_IN providing_VBG a_DT biochemical_JJ snapshot_NN ,_, or_CC
+        profile_NN ,_, of_IN cellular_JJ activity_NN that_WDT encompasses_VBZ thousands_NNS of_IN
+        gene_NN products_NNS [_NN 2_CD ]_NN ._. Potential_JJ applications_NNS beyond_IN
+        diagnosis_NN and_CC prognosis_NN are_VBP diverse_JJ ,_, and_CC include_VBP treatment_NN
+        response_NN stratification_NN of_IN patients_NNS in_IN clinical_JJ trials_NNS ,_,
+        assessment_NN of_IN relevance_NN to_TO human_JJ safety_NN of_IN drug-associated_JJ
+        tumors_NNS in_IN animal_NN carcinogenicity_NN studies_NNS ,_, and_CC the_DT
+        development_NN of_IN more_JJR pertinent_JJ animal_NN xenograft_NN models_NNS of_IN
+        cancer_NN therapy_NN ._. Successful_JJ application_NN of_IN array-based_JJ tools_NNS
+        depends_VBZ on_IN establishing_VBG robust_JJ laboratory_NN and_CC computational_NN
+        methods_NNS that_WDT effectively_RB and_CC reliably_RB discriminate_JJ between_IN
+        tumor_NN types_NNS ._. Recent_JJ reports_NNS have_VBP demonstrated_VBN the_DT power_NN of_IN
+        such_JJ tools_NNS to_TO distinguish_VB between_IN clinically_RB meaningful_JJ
+        subsets_NNS of_IN cancer_NN [_NN 3_CD 4_CD ]_NN ._.
+        Renal_NNP cell_NN carcinoma_NN (_( RCCa_NNP )_) represents_VBZ approximately_RB 3_CD %_NN
+        of_IN all_DT human_JJ malignancies_NNS with_IN an_DT incidence_NN of_IN 7_CD per_IN
+        100_CD ,_, 000_CD individuals_NNS ._. Of_IN these_DT individuals_NNS about_IN 40_CD %_NN present_JJ
+        with_IN metastatic_JJ disease_NN and_CC a_DT further_JJ third_NN will_MD develop_VB
+        distant_JJ metastases_NNS during_IN the_DT postoperative_JJ course_NN ._. The_DT
+        most_RBS effective_JJ therapy_NN for_IN RCCa_NNP localized_VBN to_TO the_DT kidney_NN is_VBZ
+        surgery_NN and_CC a_DT metastatic_JJ tumor_NN is_VBZ practically_RB incurable_JJ ._.
+        There_EX is_VBZ a_DT low_JJ response_NN to_TO biological_JJ modifiers_NNS and_CC the_DT
+        treatment_NN is_VBZ generally_RB only_RB palliative_JJ [_NN 5_CD ]_NN ._.
+        We_PRP evaluated_VBD the_DT RNA_NNP expression_NN profiles_NNS of_IN renal_JJ cell_NN
+        carcinomas_NNS (_( RCCa_NNP )_) using_VBG the_DT Affymetrix_NNP GeneChip_NNP platform_NN ,_,
+        comparing_VBG mRNA_NN expression_NN profiles_NNS from_IN a_DT total_NN of_IN 21_CD human_JJ
+        tissue_NN samples_NNS and_CC two_CD pooled_VBN samples_NNS ._. The_DT 21_CD samples_NNS
+        consisted_VBD of_IN eight_CD normal_JJ kidneys_NNS ,_, nine_CD clear_JJ cell_NN
+        carcinomas_NNS (_( CC_NNP )_) ,_, two_CD chromophobe_NN carcinomas_NNS (_( Chr_NNP )_) ,_, one_CD
+        urothelial_NN carcinoma_NN and_CC one_CD metanephric_JJ adenoma_NN ._.
+        Expression_NNP profiles_NNS from_IN a_DT pilot_NN data_NN set_NN of_IN ten_CD samples_NNS
+        were_VBD analyzed_VBN using_VBG multiple_JJ clustering_VBG algorithms_NNS ._. Genes_NNP
+        were_VBD then_RB selected_VBN from_IN the_DT pilot_NN data_NN set_VBD using_VBG a_DT
+        fold-change_JJ criteria_NNS or_CC from_IN all_DT of_IN the_DT normal_JJ and_CC CC_NNP
+        samples_NNS using_VBG a_DT p-value_JJ ._. Genes_NNP that_WDT were_VBD identified_VBN from_IN
+        both_DT the_DT pilot_NN and_CC the_DT complete_JJ data_NN set_VBN were_VBD categorized_VBN
+        according_VBG to_TO a_DT hierarchical_JJ classification_NN scheme_NN based_VBN on_IN
+        functional_JJ attributes_NNS of_IN encoded_JJ proteins_NNS ._.
+      
+      
+        Results_NNS
+        
+          Clustering_NNP of_IN the_DT pilot_NN data_NN set_VBN
+          The_DT gene_NN expression_NN data_NNS from_IN a_DT pilot_NN data_NN set_VBN that_WDT
+          consisted_VBD of_IN ten_CD samples_NNS (_( patients_NNS 1_CD -_: 4_CD ,_, consisting_VBG of_IN
+          two_CD CC_NNP ,_, two_CD Chr_NNP ,_, four_CD normals_NNS ,_, two_CD pooled_VBN samples_NNS )_) were_VBD
+          analyzed_VBN using_VBG hierarchical_JJ clustering_VBG to_TO identify_VB
+          structure_NN within_IN the_DT data_NNS set_VBN ._. Pooled_NNP samples_NNS were_VBD
+          included_VBN to_TO determine_VB whether_IN a_DT combined_VBN sample_NN yielded_VBD
+          an_DT expression_NN profile_NN representative_NN of_IN the_DT individual_JJ
+          samples_NNS ._. To_TO determine_VB the_DT relatedness_NNS of_IN the_DT samples_NNS ,_,
+          clustering_VBG analysis_NN was_VBD performed_VBN ._. Ten_CD different_JJ
+          clustering_VBG algorithms_NNS using_VBG four_CD methods_NNS of_IN
+          pre-processing_JJ the_DT data_NNS sets_NNS were_VBD applied_VBN to_TO identify_VB the_DT
+          most_RBS consistent_JJ sample-clustering_JJ pattern_NN ._. The_DT rationale_NN
+          behind_IN this_DT approach_NN was_VBD to_TO avoid_VB the_DT bias_NN inherent_JJ in_IN
+          any_DT single_JJ clustering_VBG method_NN and_CC to_TO determine_VB the_DT most_RBS
+          appropriate_JJ clustering_VBG method_NN for_IN this_DT data_NNS type_NN ._. Genes_NNP
+          that_WDT were_VBD considered_VBN "_'' present_JJ "_'' above_IN background_NN by_IN the_DT
+          Affymetrix_NNP software_NN in_IN at_IN least_JJS one_CD of_IN the_DT samples_NNS were_VBD
+          included_VBN in_IN the_DT analyses_NNS ._. This_DT reduced_VBD the_DT data_NNS set_VBN to_TO
+          4571_CD genes_NNS per_IN sample_NN ._. The_DT 40_CD sample_NN clusters_NNS were_VBD
+          evaluated_VBN to_TO see_VB if_IN their_PRP$ dendrograms_NNS fitted_JJ the_DT expected_VBN
+          sample_NN biology_NN (_( Table_NNP 2_LS )_) ._. The_DT most_RBS consistent_JJ cluster_NN
+          dendrogram_NN ,_, present_JJ in_IN 18_CD of_IN 40_CD analyses_NNS ,_, did_VBD indeed_RB
+          match_VB the_DT sample_NN biology_NN (_( Figure_NN 2_CD A_DT )_) and_CC for_IN 16_CD of_IN these_DT
+          analyses_NNS a_DT logarithmic_JJ transformation_NN was_VBD used_VBN ._. In_IN the_DT
+          consensus_NN dendrogram_NN ,_, the_DT two_CD CC_NNP ,_, two_CD Chr_NNP and_CC four_CD normal_JJ
+          samples_NNS each_DT clustered_VBN in_IN separate_JJ groups_NNS ._. Interestingly_RB ,_,
+          the_DT dendrogram_NN suggested_VBD that_IN the_DT expression_NN pattern_NN of_IN
+          the_DT normal_JJ samples_NNS was_VBD more_RBR similar_JJ to_TO the_DT CC_NNP than_IN to_TO the_DT
+          Chr_NNP samples_NNS ._. As_IN expected_VBN ,_, the_DT pooled_VBN normal_JJ sample_NN
+          clustered_VBN with_IN the_DT normal_JJ kidney_NN samples_NNS ._. The_DT pooled_VBN
+          tumor_NN sample_NN clustered_VBN more_RBR closely_RB to_TO the_DT CC_NNP than_IN to_TO the_DT
+          Chr_NNP ,_, possibly_RB due_JJ to_TO the_DT greater_JJR similarity_NN between_IN the_DT
+          two_CD CC_NNP ,_, and_CC consequent_JJ weighting_NN of_IN the_DT pooled_VBN sample_NN
+          toward_IN the_DT more_JJR uniform_NN CC_NNP expression_NN profile_NN ._.
+        
+        
+          Clustering_NNP of_IN the_DT complete_JJ data_NN set_VBN
+          To_TO expand_VB our_PRP$ data_NNS set_VBD we_PRP obtained_VBD a_DT further_JJ 13_CD human_JJ
+          tissue_NN samples_NNS (_( patients_NNS 12_CD -_: 20_CD )_) ,_, including_VBG four_CD normal_JJ
+          kidneys_NNS and_CC nine_CD kidney_NN tumors_NNS ._. These_DT were_VBD profiled_VBN in_IN
+          the_DT same_JJ manner_NN as_IN the_DT first_JJ 10_CD samples_NNS ._. From_IN this_DT
+          combined_JJ data_NN set_VBN (_( 23_CD samples_NNS )_) we_PRP selected_VBD genes_NNS
+          classified_VBN as_IN Present_NN (_( see_VB Methods_NNP )_) at_IN least_JJS once_RB (_( 5372_CD
+          genes_NNS )_) and_CC then_RB clustered_VBN the_DT log-transformed_JJ data_NN with_IN
+          average_JJ linkage_NN analysis_NN ._. This_DT method_NN had_VBD previously_RB
+          produced_VBN a_DT dendrogram_NN that_WDT matched_VBD the_DT expected_VBN sample_NN
+          biology_NN in_IN the_DT pilot_NN data_NN set_VBN ._. The_DT sample_NN dendrogram_NN
+          (_( Figure_NN 2_CD B_NNP )_) showed_VBD that_IN the_DT relatedness_NNS of_IN the_DT samples_NNS
+          was_VBD similar_JJ to_TO that_DT observed_VBD with_IN the_DT pilot_NN data_NN set_VBN ._. As_IN
+          seen_VBN previously_RB in_IN the_DT pilot_NN data_NN set_VBD the_DT normal_JJ samples_NNS
+          clustered_VBN together_RB off_RP a_DT single_JJ node_NN ._. However_RB the_DT Chr_NNP
+          also_RB clustered_VBN off_IN this_DT node_NN and_CC now_RB appeared_VBD more_RBR
+          similar_JJ to_TO normal_JJ samples_NNS than_IN CC_NNP ._. The_DT two_CD CC_NNP included_VBN in_IN
+          the_DT pilot_NN data_NN set_VBN (_( patients_NNS 2_CD and_CC 4_LS )_) now_RB clustered_VBN
+          within_IN a_DT larger_JJR CC_NNP group_NN that_WDT include_VBP the_DT additional_JJ CC_NNP
+          samples_NNS ._. From_IN this_DT node_NN there_EX also_RB appeared_VBD to_TO be_VB two_CD
+          outlier_NN samples_NNS (_( patients_NNS 18_CD and_CC 20_CD )_) ._. Pathology_NNP reports_NNS
+          on_IN these_DT samples_NNS revealed_VBD that_IN these_DT were_VBD not_RB RCCa_NNP
+          samples_NNS but_CC instead_RB patient_NN 20_CD was_VBD a_DT papillary_JJ urothelial_NN
+          carcinoma_NN and_CC the_DT sample_NN from_IN patient_NN 18_CD was_VBD not_RB a_DT
+          carcinoma_NN but_CC a_DT benign_JJ metanephric_JJ adenoma_NN ._.
+          There_EX were_VBD distinct_JJ patterns_NNS visible_JJ in_IN the_DT gene_NN
+          cluster_NN that_WDT were_VBD conserved_JJ in_IN the_DT CC_NNP samples_NNS (_( Figure_NN 2_CD B_NNP ,_,
+          zone_NN C_NNP )_) ,_, or_CC the_DT Chr_NNP samples_NNS (_( Figure_NN 2_CD B_NNP ,_, zone_NN B_NNP )_) ,_, or_CC the_DT
+          normal_JJ kidney_NN samples_NNS (_( Figure_NN 2_CD B_NNP ,_, zone_NN A_DT )_) ._. These_DT patterns_NNS
+          indicated_VBD that_IN each_DT subtype_NN of_IN tumor_NN expressed_VBD a_DT common_JJ
+          set_NN of_IN genes_NNS that_WDT could_MD be_VB selected_VBN and_CC further_RBR
+          characterized_VBN ._. The_DT urothelial_NN carcinoma_NN and_CC metanephric_JJ
+          adenoma_NN appeared_VBD to_TO share_VB few_JJ of_IN these_DT genes_NNS commonly_RB
+          regulated_VBN between_IN the_DT other_JJ tissue_NN types_NNS ._.
+        
+        
+          Functional_NNP taxonomy_NN :_: Genes_NNP differentially_RB regulated_VBN
+          in_IN CC_NNP and_CC Chr_NNP
+          To_TO select_VB genes_NNS that_WDT were_VBD changed_VBN between_IN CC_NNP and_CC Chr_NNP
+          in_IN our_PRP$ pilot_NN data_NNS set_VBD we_PRP used_VBD an_DT arbitrary_JJ cutoff_NN of_IN 2_CD
+          fold-change_JJ units_NNS in_IN combination_NN with_IN the_DT Affymetrix_NNP
+          difference_NN call_NN (_( see_VB Methods_NNP )_) ._. Genes_NNP were_VBD selected_VBN
+          according_VBG to_TO criteria_NNS described_VBD in_IN Table_NNP 3_CD ,_, which_WDT lists_VBZ
+          the_DT number_NN of_IN selected_VBN genes_NNS in_IN each_DT of_IN eight_CD categories_NNS ._.
+          A_DT total_NN of_IN 456_CD genes_NNS were_VBD selected_VBN by_IN these_DT criteria_NNS ._.
+          In_IN order_NN to_TO understand_VB the_DT molecular_JJ differences_NNS
+          between_IN Chr_NNP and_CC CC_NNP RCCa_NNP on_IN a_DT broader_JJR scale_NN ,_, we_PRP developed_VBD
+          a_DT gene_NN categorization_NN system_NN (_( "_'' Functional_NNP Taxonomy_NNP ,_, "_'' see_VB
+          Methods_NNP )_) in_IN which_WDT genes_NNS were_VBD hierarchically_RB grouped_VBN
+          according_VBG to_TO the_DT cellular_JJ function_NN of_IN their_PRP$ protein_NN
+          products_NNS ._. The_DT number_NN of_IN genes_NNS within_IN each_DT primary_JJ
+          category_NN was_VBD tallied_VBD and_CC plotted_VBD to_TO generate_VB a_DT
+          first-level_JJ "_'' signature_NN "_'' (_( Figure_NN 3_CD A_DT )_) ._. The_DT functional_JJ
+          taxonomy_NN signature_NN provided_VBD a_DT graphical_JJ method_NN to_TO rapidly_RB
+          visualize_VB broad_JJ gene_NN expression_NN characteristics_NNS of_IN the_DT
+          tumors_NNS ._. The_DT cellular_JJ function_NN categories_NNS that_WDT contained_VBD
+          the_DT largest_JJS number_NN of_IN the_DT 456_CD genes_NNS were_VBD Signal_NNP
+          Transduction_NNP (_( 97_CD genes_NNS )_) ,_, Cellular_NNP and_CC Matrix_NNP Organization_NNP
+          and_CC Adhesion_NNP (_( 56_CD genes_NNS )_) ,_, Metabolism_NNP (_( 54_CD genes_NNS )_) ,_, and_CC
+          Unclassified_NNP (_( 65_CD genes_NNS )_) ._. The_DT CC_NNP and_CC Chr_NNP samples_NNS
+          demonstrated_VBD differences_NNS in_IN the_DT numbers_NNS or_CC patterns_NNS of_IN
+          increased_VBN and_CC decreased_VBN genes_NNS in_IN these_DT categories_NNS and_CC
+          their_PRP$ subcategories_NNS ._. Almost_RB twice_RB as_IN many_JJ genes_NNS in_IN Signal_NNP
+          Transduction_NNP were_VBD increased_VBN in_IN CC_NNP compared_VBD to_TO Chr_NNP ;_: a_DT
+          similar_JJ number_NN were_VBD decreased_VBN in_IN both_DT types_NNS ._. Within_IN
+          Cellular_NNP and_CC Matrix_NNP Organization_NNP and_CC Adhesion_NNP ,_, the_DT
+          expression_NN of_IN nearly_RB four_CD times_NNS as_IN many_JJ genes_NNS was_VBD
+          increased_VBN in_IN CC_NNP compared_VBD to_TO Chr_NNP ,_, which_WDT decreased_VBD
+          expression_NN of_IN about_IN three_CD times_NNS as_IN many_JJ genes_NNS as_IN did_VBD CC_NNP ._.
+          Subcategorization_NNP (_( Figure_NN 3_CD C_NNP )_) revealed_VBD a_DT predominance_NN of_IN
+          genes_NNS coding_VBG for_IN extracellular_NN matrix_NN proteins_NNS (_( 16_CD genes_NNS )_)
+          and_CC cellular_JJ adhesion_NN molecules_NNS (_( 10_CD genes_NNS )_) that_WDT were_VBD
+          increased_VBN in_IN expression_NN in_IN CC_NNP ._.
+        
+        
+          Functional_NNP taxonomy_NN :_: Genes_NNP differentially_RB regulated_VBN
+          in_IN CC_NNP
+          To_TO determine_VB the_DT difference_NN between_IN normal_JJ kidney_NN
+          samples_NNS and_CC CC_NNP samples_NNS we_PRP used_VBD a_DT rigorous_JJ statistical_JJ
+          approach_NN based_VBN upon_IN a_DT calculated_VBN p-value_JJ (_( see_VB methods_NNS )_)
+          and_CC the_DT combined_VBN data_NN set_VBD consisting_VBG of_IN eight_CD normal_JJ
+          kidney_NN samples_NNS and_CC nine_CD CC_NNP samples_NNS ._. We_PRP identified_VBD 142_CD
+          genes_NNS that_WDT were_VBD significantly_RB upregulated_JJ in_IN CC_NNP compared_VBD
+          to_TO normal_JJ kidneys_NNS and_CC 213_CD that_WDT were_VBD significantly_RB down_RB
+          regulated_VBN ._. To_TO determine_VB the_DT biological_JJ
+          significance_NN /_NN function_NN of_IN these_DT genes_NNS we_PRP used_VBD Functional_NNP
+          Taxonomy_NNP to_TO classify_VB them_PRP into_IN 16_CD cellular_JJ groupings_NNS
+          (_( Figure_NN 4_CD A_DT )_) ._. The_DT first_JJ level_NN signature_NN showed_VBD similar_JJ
+          trends_NNS to_TO the_DT CC_NNP and_CC Chr_NNP comparison_NN (_( Figure_NN 3_CD A_DT )_) ._. The_DT four_CD
+          categories_NNS that_WDT contained_VBD the_DT most_JJS genes_NNS were_VBD Signal_NNP
+          Transduction_NNP (_( 78_CD genes_NNS )_) ,_, Cellular_NNP and_CC Matrix_NNP Organization_NNP
+          and_CC Adhesion_NNP (_( 47_CD genes_NNS )_) ,_, Metabolism_NNP (_( 40_CD genes_NNS )_) ,_, and_CC
+          Unclassified_NNP (_( 51_CD genes_NNS )_) ._. These_DT were_VBD the_DT same_JJ categories_NNS
+          that_WDT showed_VBD the_DT most_JJS gene_NN changes_NNS in_IN the_DT pilot_NN data_NN set_VBN ._.
+          Subcategorization_NNP of_IN both_DT categories_NNS showed_VBD trends_NNS within_IN
+          CC_NNP samples_NNS that_WDT were_VBD similar_JJ to_TO those_DT observed_VBD in_IN the_DT
+          pilot_NN data_NN set_VBN ._. Within_IN the_DT Signal_NNP Transduction_NNP category_NN
+          there_EX were_VBD many_JJ genes_NNS associated_VBN with_IN ligands_NNS ,_, receptors_NNS
+          and_CC cytosolic_JJ factors_NNS (_( Figure_NN 4_CD Band_NNP Table_NNP 4_LS )_) ._. Gene_NNP
+          expression_NN changes_NNS within_IN the_DT Cellular_NNP Matrix_NNP
+          Organization_NNP and_CC Adhesion_NNP category_NN were_VBD focused_VBN on_IN
+          extracellular_NN matrix_NN genes_NNS and_CC cellular_JJ adhesion_NN
+          molecules_NNS (_( Figure_NN 4_CD Cand_NNP Table_NNP 5_LS )_) ._.
+        
+        
+          Immunohistochemistry_NNP
+          The_DT selected_VBN gene_NN lists_NNS were_VBD reviewed_VBN for_IN genes_NNS that_WDT
+          corresponded_VBD to_TO proteins_NNS that_WDT could_MD be_VB evaluated_VBN with_IN
+          immunohistochemistry_NN ._. The_DT data_NNS sets_NNS revealed_VBD that_IN mRNA_NN
+          transcripts_NNS for_IN CD_NNP 31_CD (_( PECAM_NNP )_) and_CC the_DT T-_NNP cell_NN receptor_NN
+          beta_NN chain_NN were_VBD increased_VBN in_IN CC_NNP but_CC not_RB Chr_NNP ._. Since_IN
+          antibodies_NNS to_TO CD_NNP 31_CD and_CC CD_NNP 3_CD (_( which_WDT forms_VBZ a_DT complex_NN with_IN
+          the_DT T_NN cell_NN receptor_NN )_) are_VBP reactive_JJ in_IN fixed_VBN tissues_NNS ,_, we_PRP
+          used_VBD them_PRP to_TO stain_VB the_DT tumors_NNS ._. CD_NNP 31_CD was_VBD present_JJ in_IN CC_NNP in_IN
+          a_DT prominent_JJ dense_JJ branching_VBG network_NN of_IN fine_NN vessels_NNS
+          surrounding_VBG the_DT tumor_NN cells_NNS (_( Figure_NN 1_CD E_NNP )_) ._. In_IN contrast_NN ,_, Chr_NNP
+          had_VBD few_JJ CD_NNP 31_CD -_: positive_JJ vessels_NNS present_JJ (_( Figure_NN 1_CD F_NN )_) ._. CD_NNP 3_CD
+          stained_JJ numerous_JJ T_NN lymphocytes_NNS scattered_VBN throughout_IN the_DT
+          CC_NNP tumors_NNS (_( Figure_NN 1_CD G_NNP )_) ._. These_DT were_VBD not_RB initially_RB apparent_JJ
+          in_IN the_DT hematoxylin_NN and_CC eosin_NN sections_NNS ,_, probably_RB due_JJ to_TO
+          the_DT similarity_NN in_IN size_NN and_CC appearance_NN of_IN the_DT tumor_NN cell_NN
+          nuclei_NN and_CC the_DT lymphocytes_NNS ._. In_IN contrast_NN ,_, there_EX were_VBD
+          almost_RB no_DT T_NN cells_NNS in_IN the_DT Chr_NNP tumors_NNS (_( Figure_NN 1_CD H_NNP )_) ._. These_DT
+          results_NNS indicated_VBD concordance_NN between_IN the_DT mRNA_NN expression_NN
+          profiles_NNS and_CC the_DT pathobiology_NN of_IN the_DT RCCa_NNP tumor_NN
+          sub-types_JJ ._.
+        
+      
+      
+        Discussion_NNP
+        Expression_NNP profiling_VBG of_IN kidney_NN tumors_NNS using_VBG the_DT
+        Affymetrix_NNP GeneChip_NNP distinctly_RB separated_JJ four_CD different_JJ
+        tumors_NNS from_IN each_DT other_JJ ,_, as_RB well_RB as_IN from_IN normal_JJ kidney_NN
+        cortex_NN ._. This_DT finding_VBG is_VBZ consistent_JJ with_IN the_DT morphologic_JJ ,_,
+        karyotypic_JJ and_CC clinical_JJ outcome_NN differences_NNS between_IN these_DT
+        tumor_NN types_NNS [_NN 6_CD 7_CD ]_NN ._. There_EX are_VBP many_JJ sample-clustering_JJ
+        methods_NNS that_WDT may_MD be_VB applied_VBN to_TO expression_NN microarray_NN data_NNS ,_,
+        none_NN of_IN which_WDT can_MD be_VB conclusively_RB called_VBN "_'' correct_JJ "_'' ,_, since_IN
+        each_DT algorithm_NN makes_VBZ different_JJ assumptions_NNS regarding_VBG the_DT
+        nature_NN of_IN the_DT data_NNS ._. We_PRP used_VBD ten_CD clustering_VBG methods_NNS combined_VBN
+        with_IN four_CD ways_NNS of_IN pre-processing_JJ the_DT data_NNS sets_NNS to_TO
+        eliminate_VB ,_, or_CC at_IN least_JJS reduce_VB bias_NN in_IN a_DT pilot_NN data_NN set_VBN ._. The_DT
+        smaller_JJR pilot_NN data_NNS set_VBN was_VBD used_VBN to_TO simplify_VB the_DT
+        interpretation_NN of_IN the_DT results_NNS ._. A_DT common_JJ cluster_NN dendrogram_NN
+        was_VBD produced_VBN by_IN 18_CD of_IN 40_CD methods_NNS ;_: 16_CD of_IN these_DT were_VBD from_IN the_DT
+        20_CD that_WDT employed_VBN logarithmic_JJ transformation_NN of_IN the_DT data_NNS
+        sets_NNS ._. The_DT pattern_NN was_VBD consistent_JJ with_IN the_DT biology_NN of_IN the_DT
+        sample_NN with_IN normal_JJ kidney_NN ,_, CC_NNP and_CC Chr_NNP samples_NNS each_DT grouping_VBG
+        together_RB (_( Figure_NN 2_CD A_DT )_) ._. That_DT a_DT logarithmic_JJ transformation_NN
+        gave_VBD the_DT most_RBS meaningful_JJ cluster_NN dendrograms_NNS is_VBZ consistent_JJ
+        with_IN the_DT distribution_NN of_IN the_DT untransformed_JJ expression_NN data_NNS
+        being_VBG skewed_VBN to_TO the_DT left_VBN because_IN the_DT majority_NN of_IN genes_NNS have_VBP
+        low_JJ expression_NN levels_NNS ._. Standardization_NNP of_IN the_DT data_NNS assigns_VBZ
+        equal_JJ weight_NN to_TO each_DT gene_NN and_CC ,_, hence_RB ,_, increases_VBZ the_DT
+        contribution_NN of_IN unreliable_JJ low_JJ expression_NN genes_NNS ._. The_DT use_NN of_IN
+        logarithmic_JJ transformation_NN ,_, on_IN the_DT other_JJ hand_NN ,_, improves_VBZ the_DT
+        spread_NN of_IN the_DT data_NNS so_IN the_DT distribution_NN is_VBZ close_JJ to_TO normal_JJ ._.
+        It_PRP also_RB re-adjusts_JJ the_DT weight_NN for_IN each_DT gene_NN ._. For_IN example_NN ,_,
+        genes_NNS with_IN high_JJ expression_NN levels_NNS ,_, which_WDT might_MD be_VB
+        unreliable_JJ or_CC biased_VBN due_JJ to_TO saturation_NN ,_, will_MD have_VB lower_JJR
+        weights_NNS in_IN distance_NN calculation_NN ._. Therefore_RB ,_, the_DT logarithmic_JJ
+        transformation_NN improves_VBZ the_DT calculation_NN of_IN distance_NN for_IN the_DT
+        subsequential_NN clustering_VBG algorithms_NNS and_CC leads_VBZ to_TO uncovering_VBG
+        the_DT biological_JJ meaningful_JJ pattern_NN within_IN the_DT data_NNS ._.
+        A_DT comparison_NN of_IN the_DT dendrograms_NNS from_IN the_DT pilot_NN data_NN set_VBN
+        and_CC complete_JJ data_NNS set_VBN reveals_VBZ some_DT surprising_JJ changes_NNS ._. In_IN
+        general_JJ the_DT major_JJ structure_NN of_IN the_DT dendrogram_NN remained_VBD the_DT
+        same_JJ ,_, CC_NNP ,_, Chr_NNP and_CC normal_JJ kidney_NN all_DT grouped_VBN separately_RB ._.
+        However_RB ,_, in_IN the_DT pilot_NN data_NN set_VBD the_DT CC_NNP were_VBD more_RBR similar_JJ to_TO
+        normal_JJ kidney_NN than_IN Chr_NNP ,_, while_IN in_IN the_DT complete_JJ data_NN set_VBD Chr_NNP
+        were_VBD more_RBR similar_JJ to_TO normal_JJ kidney_NN ._. It_PRP is_VBZ unclear_JJ why_WRB this_DT
+        larger_JJR data_NN set_VBN changed_VBD the_DT dendrogram_NN and_CC suggests_VBZ that_IN
+        the_DT subtle_JJ structure_NN in_IN the_DT dendrogram_NN was_VBD not_RB as_RB robust_JJ as_IN
+        it_PRP appeared_VBD ._. With_IN fewer_JJR Chr_NNP compared_VBD to_TO CC_NNP it_PRP is_VBZ not_RB
+        possible_JJ to_TO draw_VB any_DT strong_JJ conclusions_NNS about_IN relatedness_NNS
+        of_IN the_DT Chr_NNP samples_NNS ._.
+        In_IN order_NN to_TO visualize_VB the_DT functional_JJ patterns_NNS associated_VBN
+        with_IN a_DT particular_RB set_NN of_IN selected_VBN genes_NNS we_PRP used_VBD a_DT simple_JJ ,_,
+        semi-hierarchical_JJ system_NN to_TO categorize_NN genes_NNS according_VBG to_TO
+        the_DT function_NN of_IN the_DT proteins_NNS they_PRP encode_NN ,_, that_IN we_PRP call_VBP
+        Functional_NNP Taxonomy_NNP ._. There_EX are_VBP challenges_NNS associated_VBN with_IN
+        the_DT partly_RB subjective_JJ nature_NN of_IN categorization_NN of_IN gene_NN
+        function_NN ,_, such_JJ as_IN where_WRB to_TO place_VB a_DT single_JJ gene_NN product_NN that_WDT
+        is_VBZ involved_VBN in_IN several_JJ cellular_JJ tasks_NNS ._. Ideally_RB ,_, the_DT
+        categorization_NN should_MD consider_VB multiple_JJ attributes_NNS of_IN a_DT
+        protein_NN ._. To_TO this_DT end_NN ,_, we_PRP propose_VBP three_CD complementary_JJ
+        classification_NN schemes_NNS :_: (_( 1_LS )_) biochemical_JJ function_NN ,_, which_WDT
+        categorizes_NNS according_VBG to_TO molecular_JJ activity_NN ;_: (_( 2_LS )_) cellular_JJ
+        function_NN ,_, which_WDT categorizes_NNS according_VBG to_TO biological_JJ role_NN at_IN
+        a_DT cellular_JJ level_NN ;_: (_( 3_LS )_) tissue_NN function_NN ,_, which_WDT categorizes_NNS
+        according_VBG to_TO anatomic_JJ or_CC organ_NN system_NN location_NN ._. In_IN this_DT
+        paper_NN we_PRP have_VBP visualized_JJ profiling_VBG results_NNS using_VBG the_DT second_NN
+        of_IN these_DT schemes_NNS (_( cellular_JJ function_NN )_) at_IN three_CD levels_NNS :_:
+        primary_JJ categories_NNS ,_, secondary_JJ categories_NNS ,_, and_CC individual_JJ
+        genes_NNS (_( see_VB Figure_NN 3_CD and_CC 4_CD ,_, Table_NNP 4_CD and_CC 5_LS )_) ._. We_PRP have_VBP found_VBN
+        Functional_NNP Taxonomy_NNP to_TO be_VB a_DT useful_JJ visualization_NN tool_NN for_IN
+        understanding_VBG the_DT differences_NNS in_IN gene_NN expression_NN patterns_NNS
+        between_IN CC_NNP and_CC Chr_NNP tumors_NNS ._. This_DT system_NN is_VBZ similar_JJ in_IN
+        concept_NN to_TO what_WP is_VBZ currently_RB being_VBG developed_VBN by_IN the_DT Gene_NNP
+        Ontology_NNP Consortium_NNP [_NN 10_CD ]_NN ._.
+        The_DT cellular_JJ function_NN signatures_NNS of_IN nine_CD CC_NNP and_CC two_CD Chr_NNP
+        revealed_VBD that_IN the_DT greatest_JJS number_NN of_IN gene_NN expression_NN
+        changes_NNS for_IN both_DT tumor_NN types_NNS occurred_VBD in_IN the_DT categories_NNS of_IN
+        Signal_NNP Transduction_NNP ,_, Cellular_NNP and_CC Matrix_NNP Organization_NNP and_CC
+        Adhesion_NNP ,_, and_CC Metabolism_NNP ._. This_DT is_VBZ consistent_JJ with_IN current_JJ
+        theories_NNS of_IN neoplasia_NN ,_, which_WDT hypothesize_NN that_IN tumor_NN cells_NNS
+        modify_VB their_PRP$ signaling_VBG pathways_NNS ,_, establish_VB new_JJ contacts_NNS
+        with_IN an_DT altered_VBN extracellular_NN matrix_NN ,_, and_CC refashion_NN their_PRP$
+        metabolic_JJ machinery_NN ._.
+        There_EX exists_VBZ considerable_JJ literature_NN on_IN the_DT expressed_VBN
+        genes_NNS and_CC gene_NN products_NNS associated_VBN with_IN RCCa_NNP ._. Using_VBG the_DT
+        selected_VBN gene_NN sets_NNS from_IN Table_NNP 3_CD and_CC the_DT p-values_JJ and_CC
+        fold-change_JJ values_NNS calculated_VBN from_IN the_DT eight_CD normal_JJ kidneys_NNS
+        and_CC nine_CD CC_NNP ,_, we_PRP looked_VBD for_IN concordance_NN between_IN our_PRP$ results_NNS
+        and_CC published_VBN reports_NNS ._. The_DT genes_NNS 
+        CA_NNP 9_CD (_( 
+        carbonic_JJ anhydrase_NN IX_CD )_) ,_, 
+        CCND_NNP 1_CD (_( 
+        cyclin_NN D_NNP 1_LS )_) ,_, 
+        CDH_NNP 2_CD (_( 
+        N-C_NNP adherin_NN )_) ,_, 
+        EGFR_NNP (_( 
+        epidermal_NN growth_NN factor_NN receptor_NN )_)
+        and_CC 
+        TGFA_NNP (_( 
+        tranforming_VBG growth_NN factor_NN alpha_NN )_) all_DT
+        showed_VBD increases_NNS in_IN CC_NNP expression_NN that_WDT matched_VBD the_DT
+        literature_NN and_CC had_VBD p-values_JJ ≤_NN 0_CD ._. 0061_CD [_NN 11_CD 12_CD 13_CD 14_CD 15_CD ]_NN ._.
+        The_DT observed_VBD decrease_NN in_IN 
+        CDH_NNP 1_CD (_( 
+        E-_NNP cadherin_NN )_) in_IN CC_NNP (_( p-value_JJ =_SYM 0_CD ._. 0045_CD )_)
+        also_RB matched_VBN previously_RB published_VBN reports_NNS ,_, as_IN did_VBD the_DT
+        decrease_NN in_IN 
+        VIM_NNP (_( 
+        vimentin_NN )_) expression_NN in_IN Chr_NNP RCCa_NNP [_NN
+        13_CD 16_CD ]_NN ._. 
+        VIM_NNP was_VBD also_RB found_VBN to_TO be_VB increased_VBN in_IN
+        CC_NNP with_IN a_DT p-value_JJ =_SYM 0_CD ._. 0045_CD ,_, which_WDT was_VBD consistent_JJ with_IN the_DT
+        literature_NN ._. We_PRP detected_VBD a_DT small_JJ increase_NN in_IN expression_NN of_IN 
+        ICAM_NNP 1_CD (_( 
+        intercellular_NN adhesion_NN molecule_NN 1_LS )_)
+        in_IN CC_NNP (_( Fold-change_NNP =_SYM 1_CD ._. 9_CD ,_, p-value_JJ =_SYM 0_CD ._. 0081_CD )_) ,_, which_WDT was_VBD also_RB
+        consistent_JJ with_IN the_DT literature_NN [_NN 17_CD ]_NN ._.
+        The_DT expression_NN results_NNS for_IN the_DT genes_NNS 
+        JUN_NNP (_( 
+        c-jun_JJ )_) and_CC 
+        VHL_NNP (_( 
+        von_NNP Hippel-_NNP Lindau_NNP )_) did_VBD not_RB match_VB the_DT
+        literature_NN [_NN 18_CD 19_CD ]_NN ._. Nor_CC did_VBD the_DT result_NN for_IN 
+        KRT_NNP 7_CD (_( 
+        cytokeratin_NN 7_CD )_) ,_, which_WDT has_VBZ been_VBN shown_VBN
+        to_TO be_VB overexpressed_JJ in_IN Chr_NNP [_NN 20_CD ]_NN ._. Instead_RB we_PRP found_VBD 
+        KRT_NNP 7_CD to_TO be_VB strongly_RB repressed_JJ in_IN CC_NNP
+        (_( fold-change_JJ =_SYM -_: 5_CD ._. 1_LS ,_, p-value_JJ =_SYM 0_CD ._. 0009_CD )_) ._. Yet_RB ,_, expression_NN
+        profiling_VBG using_VBG nucleic_JJ acid_NN microarrays_NNS does_VBZ not_RB
+        necessarily_RB correlate_VBP with_IN other_JJ forms_NNS of_IN analysis_NN for_IN all_DT
+        genes_NNS [_NN 21_CD 22_CD ]_NN ._. This_DT may_MD be_VB especially_RB true_JJ when_WRB altered_VBN
+        expression_NN of_IN a_DT gene_NN is_VBZ reported_VBN to_TO be_VB present_JJ in_IN a_DT subset_NN
+        of_IN a_DT population_NN of_IN tumors_NNS ,_, since_IN a_DT small_JJ sample_NN number_NN (_( as_IN
+        are_VBP the_DT Chr_NNP samples_NNS in_IN this_DT study_NN )_) may_MD not_RB include_VB the_DT
+        alteration_NN ._.
+        In_IN the_DT case_NN of_IN CD_NNP 31_CD and_CC the_DT T_NN cell_NN receptor_NN beta_NN chain_NN ,_,
+        expression_NN profiling_VBG results_NNS were_VBD concordant_NN with_IN
+        immunohistochemical_JJ analysis_NN of_IN the_DT tumors_NNS ._. The_DT prevalence_NN
+        of_IN the_DT scattered_VBN T_NN cells_NNS within_IN the_DT CC_NNP tumors_NNS was_VBD somewhat_RB
+        surprising_JJ ,_, but_CC entirely_RB consistent_JJ with_IN the_DT biology_NN of_IN
+        response_NN to_TO a_DT treatment_NN for_IN RCCa_NNP ,_, interleukin_NN 2_CD (_( IL-_NNP 2_LS )_) ,_,
+        since_IN IL-_NNP 2_CD activates_NNS lymphocytes_NNS against_IN the_DT tumor_NN [_NN 23_CD ]_NN
+        ._.
+        During_IN preparation_NN of_IN this_DT manuscript_NN ,_, an_DT expression_NN
+        profiling_VBG study_NN of_IN seven_CD renal_JJ neoplasms_NNS (_( four_CD CC_NNP ,_, 2_CD
+        oncocytomas_NNS ,_, and_CC one_CD Chr_NNP )_) was_VBD reported_VBN [_NN 24_CD ]_NN ._. This_DT study_NN
+        employed_VBN a_DT different_JJ platform_NN (_( Incyte_NNP glass_NN slide_NN cDNA_NN
+        microarray_NN )_) and_CC hybridization_NN method_NN (_( competitive_JJ
+        tumor_NN /_NN normal_JJ binding_JJ )_) ,_, and_CC used_VBD related_VBN but_CC not_RB identical_JJ
+        gene_NN selection_NN criteria_NNS (_( two_CD fold-change_JJ in_IN expression_NN
+        versus_CC normal_JJ kidney_NN in_IN at_IN least_JJS two_CD of_IN the_DT seven_CD tumors_NNS )_) ._.
+        The_DT study_NN identified_VBD 189_CD genes_NNS that_WDT were_VBD differentially_RB
+        expressed_VBN in_IN at_IN least_JJS two_CD tumors_NNS ,_, and_CC this_DT gene_NN set_VBN was_VBD
+        also_RB able_JJ to_TO distinguish_VB between_IN CC_NNP and_CC Chr_NNP tumor_NN types_NNS ._. We_PRP
+        suspect_VBP that_IN a_DT greater_JJR number_NN of_IN Chr-associated_NNP genes_NNS would_MD
+        have_VB been_VBN selected_VBN in_IN their_PRP$ study_NN had_VBD there_RB been_VBN at_IN least_JJS
+        two_CD Chr_NNP samples_NNS ,_, since_IN a_DT gene_NN altered_VBN in_IN expression_NN only_RB in_IN
+        the_DT single_JJ Chr_NNP ,_, but_CC not_RB in_IN any_DT of_IN the_DT oncocytomas_NNS or_CC the_DT
+        CC_NNP ,_, would_MD not_RB have_VB been_VBN identified_VBN by_IN the_DT selection_NN
+        criteria_NNS ._.
+      
+      
+        Conclusion_NNP
+        The_DT results_NNS of_IN the_DT present_JJ study_NN demonstrate_VBP the_DT power_NN
+        of_IN Affymetrix_NNP GeneChip_NNP expression_NN profiling_VBG to_TO
+        differentiate_VB between_IN morphologically_RB distinct_JJ tissues_NNS that_WDT
+        are_VBP descended_VBD from_IN a_DT common_JJ organ_NN ._. In_IN addition_NN ,_, they_PRP
+        demonstrate_VBP the_DT value_NN of_IN functional_JJ cataloging_VBG selected_VBN
+        genes_NNS and_CC visualizing_VBG the_DT result_NN in_IN a_DT graphical_JJ format_NN ._.
+      
+      
+        Methods_NNP
+        
+          Sample_NNP isolation_NN ,_, histology_NN and_CC
+          immunohistochemistry_NN
+          Renal_NNP cell_NN carcinoma_NN (_( RCCa_NNP )_) samples_NNS were_VBD collected_VBN
+          from_IN patients_NNS undergoing_VBG radical_JJ nephrectomy_NN at_IN the_DT
+          University_NNP of_IN Michigan_NNP Medical_NNP Center_NNP ._. All_DT samples_NNS and_CC
+          associated_VBN clinical_JJ data_NNS were_VBD obtained_VBN with_IN Institutional_NNP
+          Review_NNP Board_NNP approval_NN ._. A_DT total_NN of_IN 21_CD tissue_NN samples_NNS
+          (_( eight_CD normal_JJ kidneys_NNS and_CC 13_CD tumors_NNS )_) were_VBD obtained_VBN from_IN
+          13_CD patients_NNS ._. Patients_NNS ranged_VBD in_IN age_NN from_IN 40_CD to_TO 83_CD years_NNS
+          with_IN four_CD male_JJ patients_NNS and_CC nine_CD female_JJ patients_NNS ._. Nine_CD
+          patients_NNS were_VBD diagnosed_VBN with_IN clear_JJ cell_NN carcinomas_NNS (_( CC_NNP )_) ,_,
+          two_CD with_IN chromophobe_NN cell_NN carcinomas_NNS (_( Chr_NNP )_) ,_, one_CD with_IN a_DT
+          papillary_JJ urothelial_NN carcinoma_NN ,_, and_CC one_CD with_IN a_DT
+          metanephric_JJ adenoma_NN ._. For_IN eight_CD of_IN the_DT patients_NNS the_DT
+          resection_NN specimens_NNS included_VBD unaffected_JJ kidney_NN (_( termed_VBD
+          "_'' normal_JJ kidney_NN "_'' )_) as_RB well_RB as_IN tumor_NN tissue_NN ._. Tissue_NNP samples_NNS
+          were_VBD fixed_VBN in_IN formalin_NN ,_, or_CC were_VBD immediately_RB frozen_VBN at_IN
+          -_: 80_CD °_NN C_NNP in_IN optimal_NN cutting_VBG temperature_NN embedding_VBG medium_NN
+          (_( OCT_NNP ,_, Sakura_NNP )_) ._. Cryostat_NNP sections_NNS were_VBD prepared_VBN to_TO confirm_VB
+          suitability_NN for_IN profiling_VBG (_( Figure_NN 1_CD Aand_NNP 1_CD B_NNP )_) ;_: only_RB
+          viable-appearing_JJ tissues_NNS were_VBD processed_VBN ._. Care_NNP was_VBD taken_VBN
+          to_TO ensure_VB that_IN normal_JJ tissue_NN was_VBD not_RB contaminated_VBN with_IN
+          tumor_NN tissue_NN and_CC vice_NN versa_RB ._. Normal_NNP kidney_NN samples_NNS were_VBD
+          uniformly_RB taken_VBN from_IN renal_JJ cortex_NN ._. Paraffin-embedded_NNP
+          tissues_NNS were_VBD stained_JJ with_IN hematoxylin_NN and_CC eosin_NN for_IN
+          diagnostic_JJ evaluation_NN ._. Representative_NNP morphologies_NNS are_VBP
+          shown_VBN in_IN Figure_NN 1_CD Cand_NNP 1_CD D_NNP ._. Immunohistochemical_NNP stains_NNS were_VBD
+          performed_VBN on_IN fixed_VBN tissues_NNS ._. Sections_NNP were_VBD deparaffinized_JJ ,_,
+          rehydrated_JJ and_CC treated_VBN with_IN 3_CD %_NN hydrogen_NN peroxide_NN ._. Stains_NNP
+          were_VBD performed_VBN using_VBG an_DT automated_VBN avidin-biotin_JJ complex_JJ
+          method_NN according_VBG to_TO the_DT manufacturer_NN 's_POS protocol_NN (_( Nexes_NNP
+          IHC_NNP Staining_NNP System_NNP ,_, Ventana_NNP Medical_NNP Systems_NNPS )_) ,_, with_IN
+          details_NNS as_IN indicated_VBN in_IN Table_NNP 1_CD ._.
+        
+        
+          RNA_NNP isolation_NN
+          Total_NNP RNA_NNP was_VBD prepared_VBN from_IN each_DT sample_NN (_( eight_CD normal_JJ
+          kidneys_NNS ,_, 13_CD tumors_NNS )_) ._. In_IN addition_NN ,_, two_CD pooled_VBN samples_NNS were_VBD
+          made_VBN by_IN mixing_VBG equal_JJ quantities_NNS of_IN RNA_NNP from_IN the_DT kidney_NN
+          samples_NNS of_IN patients_NNS 1_CD -_: 4_CD together_RB ,_, and_CC by_IN mixing_VBG equal_JJ
+          quantities_NNS of_IN RNA_NNP from_IN the_DT four_CD RCCa_NNP samples_NNS also_RB from_IN
+          patients_NNS 1_CD -_: 4_CD ._. The_DT frozen_VBN tissues_NNS were_VBD warmed_VBN briefly_NN ,_,
+          allowing_VBG the_DT OCT_NNP compound_NN to_TO soften_VB slightly_RB so_IN that_IN it_PRP
+          could_MD be_VB rapidly_RB dissected_VBN away_RB without_IN the_DT tissues_NNS
+          thawing_VBG ._. The_DT tissues_NNS were_VBD then_RB pulverized_JJ using_VBG a_DT frozen_VBN
+          steel_NN block_NN and_CC hammer_VB ._. RNA_NNP was_VBD extracted_VBN using_VBG Trizol_NNP
+          reagent_NN (_( Life_NNP Technologies_NNPS )_) according_VBG to_TO the_DT
+          manufacturer_NN 's_POS protocol_NN ._.
+        
+        
+          RNA_NNP labeling_VBG and_CC GeneChip_NNP hybridization_NN
+          Biotinylated_NNP target_NN RNA_NNP was_VBD prepared_VBN from_IN 15_CD μg_NN of_IN
+          total_JJ RNA_NNP using_VBG the_DT Affymetrix_NNP protocol_NN ._. Labeled_NNP cRNA_NN was_VBD
+          hybridized_JJ on_IN the_DT HuGeneFL_NNP Affymetrix_NNP GeneChip_NNP
+          ®_NN containing_VBG probes_NNS for_IN approximately_RB 5600_CD mRNAs_NNS
+          corresponding_JJ to_TO genes_NNS of_IN known_VBN sequence_NN ._. Each_DT
+          hybridization_NN included_VBD control_NN RNA_NNP transcripts_NNS ._. The_DT
+          hybridization_NN reactions_NNS were_VBD processed_VBN and_CC scanned_JJ
+          according_VBG to_TO standard_JJ Affymetrix_NNP protocols_NNS ._.
+        
+        
+          Data_NNP Analysis_NNP
+          The_DT Affymetrix_NNP Microarray_NNP Suite_NNP and_CC Data_NNP Mining_NNP Tool_NNP
+          were_VBD used_VBN to_TO calculate_VB average_JJ difference_NN (_( gene_NN
+          expression_NN )_) values_NNS ,_, fold-change_JJ values_NNS and_CC difference_NN
+          calls_VBZ from_IN the_DT GeneChip_NNP fluorescent_NN intensity_NN data_NNS ._. All_DT
+          GeneChips_NNP were_VBD normalized_JJ to_TO avoid_VB differences_NNS in_IN
+          fluorescent_NN intensity_NN as_IN described_VBN in_IN the_DT 
+          Affymetrix_NNP GeneChip_NNP Expression_NNP Analysis_NNP
+          Manual_NNP (_( version_NN 3_CD ._. 1_LS )_) ._. The_DT average_JJ intensity_NN of_IN each_DT
+          gene_NN chip_NN was_VBD scaled_VBN to_TO 600_CD ,_, where_WRB average_JJ intensity_NN was_VBD
+          calculated_VBN by_IN averaging_VBG all_PDT the_DT gene_NN expression_NN values_NNS of_IN
+          every_DT probe_NN set_VBN on_IN the_DT array_NN excluding_VBG the_DT highest_JJS and_CC
+          lowest_JJS 2_CD %_NN of_IN the_DT values_NNS ._. If_IN the_DT scaling_VBG factor_NN did_VBD not_RB
+          fall_VB between_IN 0_CD ._. 3_CD and_CC 2_CD ,_, the_DT GeneChip_NNP data_NN was_VBD not_RB used_VBN ._.
+          Fold-change_NNP values_NNS were_VBD calculated_VBN as_IN the_DT ratio_NN of_IN gene_NN
+          expression_NN values_NNS between_IN each_DT tumor-normal_JJ sample_NN pair_NN
+          from_IN the_DT same_JJ patient_NN ,_, with_IN the_DT normal_JJ sample_NN values_NNS used_VBN
+          as_IN the_DT baseline_NN ._. The_DT difference_NN call_NN was_VBD calculated_VBN using_VBG
+          four_CD variables_NNS :_: the_DT number_NN of_IN probes_NNS pairs_NNS that_WDT have_VBP
+          changed_VBN in_IN a_DT certain_JJ direction_NN ,_, the_DT ratio_NN of_IN increased_VBN
+          probe_NN pairs_NNS over_IN decreased_VBD probe_NN pairs_NNS ,_, the_DT log_NN average_NN
+          ratio_NN change_NN ,_, and_CC the_DT difference_NN in_IN the_DT number_NN of_IN probe_NN
+          pairs_NNS changed_VBN (_( either_CC positive_JJ or_CC negative_JJ )_) ._. The_DT default_NN
+          values_NNS (_( explained_VBD in_IN the_DT 
+          Affymetrix_NNP Manual_NNP )_) were_VBD used_VBN in_IN
+          the_DT difference_NN call_NN decision_NN matrix_NN ._. The_DT resulting_VBG data_NN
+          sets_NNS were_VBD manipulated_VBN and_CC filtered_VBN in_IN Microsoft_NNP Access_NNP
+          according_VBG to_TO various_JJ criteria_NNS (_( see_VB results_NNS )_) for_IN selection_NN
+          of_IN genes_NNS that_WDT showed_VBD altered_VBN expression_NN in_IN the_DT
+          tumors_NNS ._.
+          For_IN the_DT pilot_NN data_NN set_VBN ,_, sample_NN clusters_NNS were_VBD prepared_VBN
+          using_VBG the_DT software_NN program_NN SAS_NNP (_( SAS_NNP Institute_NNP ,_, Cary_NNP ,_, NC_NNP )_)
+          on_IN the_DT gene_NN expression_NN values_NNS ._. The_DT following_VBG clustering_VBG
+          algorithms_NNS were_VBD used_VBN :_: seven_CD hierarchical_JJ clustering_VBG
+          methods_NNS (_( single_JJ linkage_NN ,_, average_JJ linkage_NN ,_, complete_JJ
+          linkage_NN ,_, Ward_NNP 's_POS minimum_JJ variance_NN ,_, density_NN linkage_NN ,_,
+          centroid_NN ,_, and_CC flexible-beta_JJ )_) ,_, a_DT k-mean_JJ method_NN ,_, and_CC an_DT
+          oblique_JJ principle_NN component_NN method_NN employing_VBG either_CC (_( 1_LS )_)
+          Pearson_NNP correlation_NN or_CC (_( 2_LS )_) Spearman_NNP correlation_NN based_VBN on_IN
+          rank_NN ._. Negative_JJ values_NNS were_VBD set_VBN equal_JJ to_TO one_CD ._. Data_NNP sets_NNS
+          were_VBD processed_VBN as_IN follows_VBZ for_IN the_DT clustering_VBG analysis_NN :_:
+          unchanged_JJ (_( raw_JJ data_NNS )_) ,_, log_VB 
+          10_CD transformation_NN ,_, standardization_NN to_TO
+          N_NNP (_( 0_CD ,_, 1_LS )_) ,_, and_CC a_DT combination_NN of_IN both_DT log_NN 
+          10_CD transformation_NN and_CC standardization_NN
+          to_TO N_NNP (_( 0_CD ,_, 1_LS )_) ._. This_DT yielded_VBD a_DT total_NN of_IN 40_CD sample_NN cluster_NN
+          dendrograms_NNS ._. For_IN the_DT complete_JJ data_NN set_VBN (_( 21_CD samples_NNS plus_CC
+          two_CD pooled_VBN samples_NNS )_) gene_NN and_CC sample_NN clusters_NNS were_VBD
+          prepared_VBN using_VBG Cluster_NNP and_CC visualized_JJ with_IN TreeView_NNP [_NN 25_CD
+          ]_NN ,_, using_VBG log_NN 
+          10_CD -_: transformed_VBN and_CC median-centered_JJ
+          average_JJ difference_NN values_NNS ._.
+          To_TO select_VB genes_NNS for_IN further_JJ analysis_NN from_IN the_DT pilot_NN
+          data_NN set_VBN ,_, a_DT two_CD fold-change_JJ threshold_NN was_VBD used_VBN in_IN
+          combination_NN with_IN the_DT Affymetrix_NNP difference_NN call_NN of_IN either_DT
+          increase_NN (_( I_NN )_) ,_, marginal_JJ increase_NN (_( MI_NNP )_) ,_, decrease_VB (_( D_NNP )_) and_CC
+          marginal_JJ decrease_NN (_( MD_NNP )_) ._. For_IN genes_NNS selected_VBN as_IN either_DT
+          increased_VBN or_CC decreased_VBN in_IN a_DT particular_JJ RCCa_NNP subtype_NN both_DT
+          samples_NNS had_VBD to_TO show_VB concordance_NN in_IN their_PRP$ fold-change_JJ and_CC
+          difference_NN call_NN ,_, and_CC both_DT samples_NNS from_IN the_DT other_JJ subtype_NN
+          had_VBD to_TO have_VB a_DT difference_NN call_NN of_IN no_DT change_NN (_( NC_NNP )_) or_CC a_DT call_NN
+          that_WDT was_VBD opposite_JJ to_TO that_DT of_IN the_DT first_JJ subtype_NN ._.
+          To_TO select_VB genes_NNS that_WDT were_VBD significantly_RB changed_JJ in_IN CC_NNP
+          (_( nine_CD samples_NNS )_) verses_NNS normal_JJ kidney_NN (_( eight_CD samples_NNS )_) a_DT
+          non-parametric_JJ Wilcoxon_NNP test_NN was_VBD used_VBN to_TO calculate_VB a_DT
+          p-value_JJ for_IN each_DT gene_NN ._. Genes_NNP were_VBD then_RB selected_VBN that_IN
+          conformed_JJ to_TO all_DT of_IN the_DT following_JJ criteria_NNS :_: p-value_JJ ≤_NN
+          0_CD ._. 001_CD ;_: a_DT mean_JJ average_JJ difference_NN value_NN ≥_NN 200_CD ;_: fold-change_JJ
+          ≥_NN 1_CD ._. 1_CD for_IN genes_NNS increased_VBN in_IN CC_NNP relative_JJ to_TO normal_JJ kidney_NN
+          or_CC fold-change_JJ ≤_NN -_: 1_CD ._. 1_LS for_IN genes_NNS decreased_VBD in_IN CC_NNP relative_JJ
+          to_TO normal_JJ kidney_NN ._.
+          All_DT selected_VBN genes_NNS were_VBD then_RB annotated_JJ using_VBG online_NN
+          resources_NNS ,_, such_JJ as_IN Medline_NNP ,_, OMIM_NNP and_CC GeneCards_NNP ._. The_DT
+          information_NN was_VBD used_VBN to_TO build_VB a_DT database_NN that_WDT included_VBD
+          HUGO_NNP (_( Human_NNP Genome_NNP Organization_NNP )_) designated_VBN names_NNS ,_,
+          function_NN and_CC expression_NN information_NN ,_, and_CC any_DT tumor_NN
+          associations_NNS ._.
+          Given_VBN the_DT absence_NN of_IN available_JJ tools_NNS for_IN visualization_NN
+          of_IN tumor_NN gene_NN expression_NN patterns_NNS on_IN a_DT broad_JJ scale_NN ,_, we_PRP
+          devised_VBD a_DT classification_NN system_NN called_VBN "_'' Functional_NNP
+          Taxonomy_NNP "_'' that_IN categorizes_NNS genes_NNS according_VBG to_TO various_JJ
+          functional_JJ attributes_NNS of_IN the_DT proteins_NNS they_PRP encode_NN ._. One_CD
+          such_JJ functional_JJ attribute_VBP is_VBZ a_DT protein_NN 's_POS biological_JJ role_NN
+          at_IN a_DT cellular_JJ level_NN ._. Using_VBG a_DT mammalian_JJ modification_NN of_IN
+          the_DT MIPS_NNP 
+          Saccharomyces_NNP cerevisiae_NN functional_JJ
+          categories_NNS [_NN 26_CD ]_NN ,_, (_( Munich_NNP Information_NNP Center_NNP for_IN
+          Protein_NNP Sequences_NNP ,_, www_NN ._. mips_NNS ._. biochem_NN ._. mpg_NN ._. de_IN )_) the_DT genes_NNS
+          were_VBD placed_VBN into_IN a_DT hierarchical_JJ classification_NN scheme_NN
+          containing_VBG 16_CD primary_JJ categories_NNS of_IN cellular_JJ function_NN ._.
+          The_DT number_NN of_IN genes_NNS that_WDT fell_VBD within_IN each_DT primary_JJ
+          category_NN was_VBD counted_VBN and_CC plotted_VBD graphically_RB to_TO generate_VB
+          a_DT first-level_JJ "_'' signature_NN "_'' (_( see_VB Figure_NN 3_CD Aand_NNP 4_CD A_DT )_) ._. Each_DT of_IN
+          the_DT primary_JJ categories_NNS was_VBD further_RBR divided_VBN into_IN
+          subcategories_NNS for_IN a_DT more_RBR detailed_JJ second-level_JJ
+          visualization_NN of_IN the_DT data_NNS (_( see_VB Figures_NNS 3_CD B_NNP ,_, 3_CD C_NNP ,_, 4_CD Band_NNP
+          4_CD C_NNP )_) ._.
+        
+      
+      
+        Authors_NNP '_'' Contributions_NNP
+        Author_NN 1_CD ,_, MAG_NNP ,_, carried_VBD out_IN sample_NN preparation_NN ,_, RNA_NNP
+        isolation_NN ,_, data_NNS analysis_NN ,_, functional_JJ taxonomy_NN analysis_NN and_CC
+        drafted_VBD the_DT manuscript_NN ._. Author_NN 2_CD ,_, TC_NNP ,_, carried_VBD out_RP the_DT
+        immunohistochemistry_NN ._. Author_NN 3_CD ,_, MZM_NNP ,_, performed_VBD the_DT
+        clustering_VBG analysis_NN ._. Author_NN 4_CD ,_, SJM_NNP ,_, directed_VBD the_DT team_NN who_WP
+        carried_VBD out_RP the_DT Affymetrix_NNP GeneChip_NNP hybridizations_NNS and_CC
+        initial_JJ data_NNS processing_NN ._. Author_NN 4_CD MAR_NNP provided_VBD the_DT samples_NNS
+        and_CC reviewed_VBD the_DT manuscript_NN ._. Author_NN 6_CD EPK_NNP conceived_VBD the_DT
+        study_NN and_CC participated_VBD it_PRP its_PRP$ design_NN and_CC assisted_VBN in_IN
+        writing_VBG the_DT manuscript_NN ._.
+      
+    
+  

@@ -1,0 +1,1386 @@
+
+  
+    
+      
+        Background_NNP
+        
+          Modeling_NNP variable_JJ DNA_NNP sequence_NN sites_NNS
+          The_DT set_NN of_IN binding_JJ sites_NNS for_IN a_DT single_JJ DNA-binding_NNP
+          protein_NN can_MD be_VB highly_RB variable_JJ [_NN 1_CD ,_, 2_CD ]_NN ,_, and_CC the_DT degree_NN of_IN
+          nucleotide_NN variation_NN tolerated_JJ generally_RB differs_VBZ from_IN
+          position_NN to_TO position_VB within_IN a_DT site_NN [_NN 3_CD ,_, 4_CD ,_, 5_CD ]_NN ._. This_DT
+          sequence_NN diversity_NN can_MD have_VB important_JJ functional_JJ
+          consequences_NNS as_IN the_DT affinity_NN between_IN regulatory_JJ proteins_NNS
+          and_CC their_PRP$ binding_JJ sites_NNS is_VBZ modulated_JJ by_IN changes_NNS in_IN
+          binding-site_JJ sequence_NN [_NN 1_CD ]_NN ._. Large_JJ datasets_NNS of_IN related_VBN DNA_NNP
+          sites_NNS are_VBP now_RB available_JJ [_NN 3_CD ,_, 4_CD ,_, 6_CD ,_, 7_CD ]_NN ._. Currently_RB ,_, more_JJR
+          than_IN 100_CD prokaryotic_JJ and_CC eukaryotic_JJ genomes_NNS have_VBP been_VBN
+          completely_RB sequenced_JJ ,_, permitting_VBG cross-species_JJ
+          comparisons_NNS of_IN even_RB larger_JJR sequence_NN assemblies_NNS than_IN
+          collected_VBN here_RB (_( see_VB ,_, for_IN example_NN [_NN 8_CD ,_, 9_CD ]_NN )_) ._. Computational_NNP
+          approaches_NNS can_MD therefore_RB be_VB used_VBN to_TO detect_VB and_CC model_VB the_DT
+          sequence_NN patterns_NNS present_JJ within_IN the_DT binding-site_JJ
+          variability_NN ._. The_DT most_RBS useful_JJ models_NNS of_IN variable_JJ DNA_NNP sites_NNS
+          provide_VBP classification_NN algorithms_NNS for_IN identifying_VBG
+          functional_JJ sites_NNS as_RB well_RB as_IN insights_NNS that_WDT can_MD help_VB
+          elucidate_NN the_DT relationship_NN between_IN the_DT structure_NN and_CC
+          function_NN of_IN these_DT sites_NNS ._.
+          Variable_NNP DNA_NNP sequence_NN sites_NNS are_VBP frequently_RB described_VBN
+          by_IN a_DT consensus_NN sequence_NN [_NN 10_CD ]_NN or_CC a_DT weight_NN matrix_NN [_NN 11_CD ,_,
+          12_CD ,_, 13_CD ]_NN ._. Consensus_NNP sequences_NNS have_VBP limited_JJ utility_NN for_IN
+          even_RB moderately_RB variable_JJ sites_NNS because_IN they_PRP preserve_VB
+          little_JJ or_CC no_DT information_NN about_IN the_DT variability_NN within_IN the_DT
+          sequences_NNS they_PRP characterize_VBP ._. Differences_NNS from_IN consensus_NN
+          are_VBP quantified_VBN by_IN counting_VBG the_DT number_NN of_IN mismatched_JJ
+          positions_NNS ,_, making_VBG no_DT distinction_NN between_IN mismatches_NNS that_WDT
+          abolish_VB function_NN of_IN the_DT site_NN and_CC those_DT that_WDT modulate_VBP
+          function_NN ._.
+          Weight_NNP matrices_NNS were_VBD introduced_VBN to_TO characterize_VB
+          transcription_NN and_CC translation_NN initiation_NN sites_NNS in_IN 
+          Escherichia_NNP coli_NNS [_NN 11_CD ]_NN and_CC have_VBP
+          become_VBN standard_JJ for_IN characterizing_VBG binding_JJ sites_NNS for_IN
+          transcription_NN factors_NNS ._. A_DT weight_NN matrix_NN is_VBZ a_DT
+          two-dimensional_JJ matrix_NN in_IN which_WDT each_DT row_NN corresponds_NNS to_TO
+          one_CD of_IN the_DT four_CD nucleotides_NNS and_CC each_DT column_NN corresponds_NNS
+          to_TO one_CD position_NN in_IN the_DT site_NN being_VBG described_VBN [_NN 11_CD ]_NN ._. The_DT
+          elements_NNS of_IN the_DT matrix_NN are_VBP the_DT observed_VBN counts_VBZ for_IN each_DT
+          nucleotide_NN at_IN each_DT position_NN in_IN an_DT alignment_NN of_IN the_DT DNA_NNP
+          sites_NNS [_NN 11_CD ]_NN ,_, or_CC some_DT function_NN of_IN these_DT counts_VBZ (_( reviewed_VBN
+          in_IN [_NN 13_CD ,_, 14_CD ]_NN )_) ._. Any_DT sequence_NN can_MD be_VB scored_VBN by_IN summing_VBG the_DT
+          matrix_NN elements_NNS corresponding_JJ to_TO the_DT sequence_NN [_NN 11_CD ]_NN ,_,
+          thereby_RB quantitatively_RB rating_VBG the_DT sequence_NN 's_POS functional_JJ
+          potential_NN ._.
+          Weight_NNP matrices_NNS can_MD be_VB used_VBN to_TO scan_VB genomic_JJ DNA_NNP and_CC
+          determine_VB statistically_RB significant_JJ matches_VBZ to_TO the_DT
+          sequence_NN pattern_NN described_VBN by_IN the_DT matrix_NN [_NN 14_CD ]_NN ._. Putative_NNP
+          sites_NNS are_VBP scored_VBN by_IN the_DT weight_NN matrix_NN ,_, so_IN the_DT number_NN of_IN
+          false_JJ positives_NNS and_CC false_JJ negatives_NNS can_MD be_VB balanced_VBN by_IN
+          choosing_VBG an_DT appropriate_JJ threshold_NN score_NN defining_VBG
+          functional_JJ sites_NNS ._. The_DT scores_NNS of_IN functional_JJ sites_NNS are_VBP
+          sometimes_RB correlated_JJ with_IN their_PRP$ level_NN of_IN function_NN [_NN 11_CD ,_,
+          14_CD ,_, 15_CD ,_, 16_CD ,_, 17_CD ,_, 18_CD ,_, 19_CD ,_, 20_CD ,_, 21_CD ,_, 22_CD ,_, 23_CD ]_NN ._.
+          Weight_NNP matrices_NNS are_VBP typically_RB based_VBN on_IN order_NN zero_CD
+          Markov_NNP chains_NNS ,_, meaning_VBG they_PRP assume_VBP that_IN individual_JJ base_NN
+          pairs_NNS in_IN the_DT binding_JJ site_NN affect_NN binding_JJ affinity_NN
+          independently_RB ._. Weight-matrix_NNP models_NNS based_VBN on_IN order_NN one_CD
+          Markov_NNP chains_NNS assume_VBP that_IN adjacent_JJ positions_NNS are_VBP
+          correlated_JJ [_NN 15_CD ,_, 24_CD ,_, 25_CD ,_, 26_CD ,_, 27_CD ]_NN ._. Ponomarenko_NNP 
+          et_CC al_NN ._. [_NN 28_CD ]_NN constructed_VBN weight_NN
+          matrices_NNS for_IN many_JJ different_JJ transcription_NN factor_NN binding_JJ
+          sites_NNS using_VBG mono-_NN ,_, di-_NN ,_, and_CC trinucleotide_NN motifs_NNS allowing_VBG
+          correlation_NN between_IN non-adjacent_JJ positions_NNS by_IN specifying_VBG
+          X_NNP 
+          1_CD NX_NNP 
+          3_CD and_CC X_NNP 
+          1_CD NX_NNP 
+          3_CD NX_NNP 
+          5_CD motifs_NNS ,_, where_WRB X_NNP 
+          i_NNP is_VBZ the_DT nucleotide_NN at_IN position_NN i_NNP of_IN
+          the_DT motif_NN and_CC N_NNP is_VBZ any_DT nucleotide_NN ._. While_IN this_DT approach_NN
+          allows_VBZ for_IN correlation_NN between_IN more_JJR than_IN two_CD non-adjacent_JJ
+          positions_NNS ,_, the_DT motifs_NNS may_MD still_RB be_VB unnecessarily_RB
+          restrictive_JJ ._. The_DT apposition_NN of_IN distant_JJ binding-site_JJ
+          positions_NNS can_MD be_VB important_JJ to_TO recruitment_NN of_IN the_DT binding_JJ
+          protein_NN ,_, for_IN example_NN ,_, through_IN formation_NN of_IN DNA_NNP secondary_JJ
+          structure_NN [_NN 29_CD ,_, 30_CD ,_, 31_CD ,_, 32_CD ]_NN ,_, or_CC to_TO the_DT interaction_NN of_IN the_DT
+          binding_JJ site_NN with_IN its_PRP$ binding_JJ protein_NN [_NN 33_CD ]_NN ._. Therefore_RB
+          correlation_NN between_IN distant_JJ positions_NNS is_VBZ expected_VBN ._.
+          Burge_NNP and_CC Karlin_NNP [_NN 34_CD ]_NN used_VBD hypothesis_NNS testing_VBG via_IN χ_NN
+          2_CD tests_NNS to_TO detect_VB significant_JJ correlations_NNS between_IN any_DT two_CD
+          positions_NNS and_CC introduced_VBD a_DT model-building_JJ procedure_NN ,_,
+          maximal_NN dependence_NN decomposition_NN ,_, to_TO account_VB for_IN the_DT
+          dependencies_NNS ._. For_IN each_DT significant_JJ correlation_NN ,_, this_DT
+          method_NN partitions_NNS the_DT dataset_NN into_IN subsets_NNS of_IN sequences_NNS
+          exhibiting_VBG no_DT correlation_NN ;_: the_DT final_JJ model_NN is_VBZ a_DT composite_NN
+          of_IN weight_NN matrices_NNS (_( order_NN zero_CD )_) ,_, one_CD for_IN each_DT subset_NN ._. Our_PRP$
+          model-building_JJ technique_NN is_VBZ based_VBN on_IN cross-validation_JJ
+          criteria_NNS rather_RB than_IN on_IN hypothesis_NNS testing_VBG 
+          per_IN se_FW ,_, and_CC we_PRP use_VBP a_DT more_RBR general_JJ
+          model_NN class_NN for_IN DNA_NNP sequences_NNS ._.
+          Models_NNP that_WDT allow_VBP for_IN pairwise_NN correlations_NNS between_IN
+          positions_NNS were_VBD developed_VBN in_IN the_DT context_NN of_IN Bayes_NNP networks_NNS
+          by_IN Cai_NNP 
+          et_CC al_NN ._. [_NN 35_CD ]_NN ._. Bayes_NNP networks_NNS
+          represent_VBP a_DT large_JJ class_NN of_IN models_NNS ,_, and_CC in_IN fact_NN ,_, our_PRP$ model_NN
+          can_MD be_VB recast_NN as_IN a_DT Bayes_NNP network_NN ,_, although_IN it_PRP is_VBZ not_RB now_RB
+          formulated_VBN in_IN those_DT terms_NNS ._.
+          We_PRP have_VBP developed_VBN an_DT approach_NN to_TO determine_VB the_DT
+          correlation_NN structure_NN present_JJ in_IN a_DT set_NN of_IN variable_JJ
+          sequence_NN sites_NNS ._. For_IN each_DT position_NN in_IN the_DT site_NN ,_, we_PRP
+          identify_VBP all_DT other_JJ correlated_JJ positions_NNS placing_VBG no_DT
+          restrictions_NNS on_IN the_DT number_NN or_CC spatial_NN relationship_NN of_IN
+          correlated_JJ positions_NNS in_IN the_DT site_NN ._. Our_PRP$ approach_NN
+          determines_VBZ ,_, from_IN all_DT possible_JJ combinations_NNS of_IN disjoint_NN
+          probability_NN distributions_NNS ,_, the_DT set_NN of_IN distributions_NNS that_IN
+          most_RBS effectively_RB distinguishes_NNS functional_JJ sites_NNS from_IN
+          non-functional_JJ sequences_NNS ._. Although_IN the_DT family_NN of_IN models_NNS
+          we_PRP consider_VBP is_VBZ very_RB large_JJ ,_, we_PRP proceed_VBP by_IN model_NN selection_NN
+          rather_RB than_IN hypothesis_NNS testing_NN ._. The_DT selected_VBN probability_NN
+          function_NN is_VBZ the_DT product_NN of_IN these_DT disjoint_NN probability_NN
+          distributions_NNS ._. The_DT natural_JJ logarithm_NN of_IN this_DT probability_NN
+          function_NN can_MD be_VB used_VBN as_IN a_DT score_NN for_IN any_DT sequence_NN ,_, thereby_RB
+          recognizing_VBG the_DT presence_NN of_IN evolutionarily_RB conserved_JJ
+          nucleotide_NN associations_NNS ._. We_PRP have_VBP applied_VBN this_DT approach_NN to_TO
+          recombination_NN signal_NN sequences_NNS (_( RSS_NNP )_) ,_, a_DT set_NN of_IN DNA_NNP
+          binding_JJ sites_NNS necessary_JJ for_IN specific_JJ immunity_NN ._.
+        
+        
+          Recombination_NNP signal_NN sequences_NNS
+          Specific_JJ immunity_NN depends_VBZ on_IN the_DT ability_NN of_IN B_NNP and_CC T_NN
+          lymphocytes_NNS to_TO recognize_VB antigens_NNS ,_, molecular_JJ identifiers_NNS
+          of_IN pathogens_NNS [_NN 36_CD ]_NN ._. The_DT immune_JJ system_NN does_VBZ not_RB anticipate_VB
+          which_WDT antigen_NN will_MD be_VB encountered_VBN ,_, but_CC remarkable_JJ genetic_JJ
+          mechanisms_NNS have_VBP evolved_VBN that_WDT generate_VBP diverse_JJ
+          antigen-receptor_JJ repertoires_NNS ._. The_DT primary_JJ generative_JJ
+          mechanism_NN is_VBZ V_NNP (_( D_NNP )_) J_NNP recombination_NN ,_, the_DT rearrangement_NN of_IN
+          B-_NNP cell_NN receptor_NN (_( BCR_NNP )_) or_CC T-_NNP cell_NN receptor_NN (_( TCR_NNP )_) V_NNP ,_, D_NNP ,_, and_CC
+          J_NNP gene_NN segments_NNS to_TO form_VB functional_JJ genes_NNS ;_: the_DT resulting_VBG
+          combinatorial_NN and_CC junctional_NN diversity_NN can_MD produce_VB around_IN
+          10_CD 14_CD BCR_NNP specificities_NNS and_CC around_IN 10_CD 18_CD TCR_NNP specificities_NNS
+          in_IN one_CD animal_NN [_NN 37_CD ]_NN ._. This_DT extraordinary_JJ plasticity_NN has_VBZ a_DT
+          price_NN :_: V_NNP (_( D_NNP )_) J_NNP recombination_NN can_MD produce_VB self-reactive_JJ
+          receptors_NNS leading_VBG to_TO autoimmune_JJ disease_NN [_NN 38_CD ,_, 39_CD ]_NN and_CC may_MD
+          err_VB to_TO create_VB oncogenic_JJ chromosomal_NN translocations_NNS [_NN
+          40_CD ]_NN ._.
+          V_NNP (_( D_NNP )_) J_NNP recombination_NN proceeds_NNS by_IN the_DT introduction_NN of_IN
+          double-strand_JJ DNA_NNP breaks_NNS (_( reviewed_VBN in_IN [_NN 41_CD ]_NN )_) ._. To_TO prevent_VB
+          DNA_NNP breaks_NNS that_WDT would_MD cause_VB cellular_JJ damage_NN ,_, the_DT V_NNP (_( D_NNP )_) J_NNP
+          recombinase_NN must_MD be_VB specifically_RB targeted_VBN to_TO the_DT 
+          Bcr_NNP and_CC 
+          Tcr_NNP loci_NN ._. This_DT targeting_VBG is_VBZ
+          regulated_VBN primarily_RB by_IN binding_JJ of_IN RAG_NNP 1_CD [_NN 42_CD ]_NN ,_, an_DT enzyme_NN
+          in_IN the_DT recombinase_NN complex_JJ ,_, to_TO the_DT RSS_NNP adjacent_JJ to_TO each_DT
+          V_NNP ,_, D_NNP and_CC J_NNP gene_NN segment_NN [_NN 43_CD ]_NN ._. RSS_NNP were_VBD initially_RB
+          identified_VBN as_IN a_DT conserved_JJ heptamer_NN (_( consensus_NN CACAGTG_NNP )_)
+          and_CC a_DT conserved_JJ nonamer_NN (_( consensus_NN ACAAAAACC_NNP )_) separated_VBN
+          by_IN a_DT less_RBR conserved_JJ spacer_NN of_IN either_DT 12_CD ±_NN 1_CD or_CC 23_CD ±_NN 1_CD
+          base-pairs_JJ (_( bp_NN )_) [_NN 44_CD ]_NN ._. The_DT initial_JJ CAC_NNP of_IN the_DT heptamer_NN is_VBZ
+          highly_RB conserved_JJ ,_, but_CC all_DT remaining_VBG positions_NNS show_VBP
+          moderate_JJ to_TO very_RB low_JJ levels_NNS of_IN conservation_NN (_( reviewed_VBN in_IN
+          [_NN 45_CD ]_NN )_) ._.
+          RSS_NNP variability_NN has_VBZ important_JJ functional_JJ consequences_NNS :_:
+          the_DT efficiency_NN with_IN which_WDT each_DT RSS_NNP mediates_NNS recombination_NN
+          depends_VBZ on_IN its_PRP$ sequence_NN [_NN 46_CD ]_NN ._. There_EX is_VBZ strong_JJ evidence_NN
+          that_IN differing_VBG recombination_NN efficiencies_NNS of_IN RSS_NNP result_NN
+          in_IN the_DT biased_VBN utilization_NN of_IN their_PRP$ associated_VBN gene_NN
+          segments_NNS (_( reviewed_VBN in_IN [_NN 47_CD ,_, 48_CD ]_NN )_) ._. In_IN addition_NN ,_, the_DT biases_NNS
+          in_IN gene_NN segment_NN use_NN observed_VBD in_IN the_DT post-selection_JJ TCR_NNP
+          repertoire_NN are_VBP consistent_JJ with_IN the_DT biases_NNS observed_VBD before_IN
+          selection_NN ,_, suggesting_VBG that_IN the_DT primary_JJ immune_JJ repertoire_NN
+          may_MD be_VB genetically_RB patterned_VBN [_NN 48_CD ]_NN ._.
+          The_DT high_JJ level_NN of_IN diversity_NN among_IN RSS_NNP makes_VBZ it_PRP very_RB
+          difficult_JJ to_TO evaluate_VB their_PRP$ recombinogenic_JJ potential_NN ._. RSS_NNP
+          not_RB associated_VBN with_IN a_DT V_NNP ,_, D_NNP or_CC J_NNP gene_NN segment_NN but_CC
+          participating_VBG in_IN aberrant_NN (_( illegitimate_JJ )_) V_NNP (_( D_NNP )_) J_NNP
+          recombination_NN are_VBP particularly_RB difficult_JJ to_TO recognize_VB ._.
+          These_DT non-physiologic_JJ RSS_NNP are_VBP important_JJ because_IN of_IN their_PRP$
+          potential_JJ involvement_NN in_IN oncogenic_JJ chromosomal_NN
+          translocation_NN and_CC receptor_NN editing_NN ,_, a_DT process_NN that_IN alters_NNS
+          the_DT specificity_NN of_IN autoreactive_JJ receptors_NNS ._.
+          Non-physiologic_NNP RSS_NNP that_WDT have_VBP simply_RB arisen_VBN by_IN chance_NN can_MD
+          be_VB referred_VBN to_TO as_IN fortuitous_JJ RSS_NNP whereas_IN those_DT thought_VBN to_TO
+          have_VB descended_VBD from_IN the_DT same_JJ ancient_JJ transposon_NN as_IN
+          physiologic_JJ RSS_NNP can_MD be_VB referred_VBN to_TO as_IN cryptic_JJ (_( cRSS_NN )_) [_NN
+          49_CD ,_, 50_CD ]_NN ._. Generally_RB ,_, the_DT origin_NN of_IN a_DT non-physiologic_JJ RSS_NNP
+          is_VBZ not_RB known_VBN ;_: for_IN simplicity_NN ,_, we_PRP will_MD refer_VB to_TO both_DT types_NNS
+          as_IN cryptic_JJ ._.
+          To_TO understand_VB the_DT role_NN of_IN RSS_NNP variability_NN in_IN the_DT
+          formation_NN of_IN the_DT primary_JJ immune_JJ repertoire_NN and_CC of_IN cRSS_NN in_IN
+          illegitimate_JJ V_NNP (_( D_NNP )_) J_NNP recombination_NN ,_, it_PRP is_VBZ necessary_JJ to_TO
+          quantify_VB the_DT genetic_JJ variability_NN among_IN physiologic_JJ RSS_NNP
+          and_CC the_DT relationship_NN between_IN this_DT variability_NN and_CC the_DT
+          regulation_NN of_IN recombination_NN ._. Allowing_VBG for_IN each_DT of_IN the_DT 4_CD
+          nucleotides_NNS at_IN just_RB 10_CD of_IN the_DT 28_CD or_CC 39_CD RSS_NNP positions_VBZ
+          results_NNS in_IN over_IN 10_CD 6_CD different_JJ signals_NNS -_: it_PRP is_VBZ not_RB
+          feasible_JJ to_TO measure_VB the_DT efficiency_NN of_IN all_DT potential_JJ RSS_NNP
+          experimentally_RB ._. Statistical_NNP models_NNS of_IN RSS_NNP variability_NN
+          that_WDT allow_VBP prediction_NN of_IN recombination_NN efficiency_NN are_VBP
+          essential_JJ to_TO furthering_VBG our_PRP$ understanding_NN of_IN the_DT
+          biological_JJ function_NN of_IN RSS_NNP variability_NN ._.
+          One_CD estimate_NN of_IN cRSS_NN frequency_NN in_IN mammalian_JJ genomes_NNS is_VBZ
+          one_CD in_IN every_DT 600_CD bp_NN [_NN 49_CD ]_NN ._. Promiscuous_NNP recombination_NN at_IN
+          this_DT frequency_NN ,_, however_RB ,_, would_MD result_VB in_IN significant_JJ
+          damage_NN to_TO the_DT cell_NN ._. This_DT suggests_VBZ that_IN complex_JJ patterns_NNS
+          underlie_VB the_DT high_JJ level_NN of_IN nucleotide_NN diversity_NN observed_VBD
+          at_IN individual_JJ positions_NNS ,_, thereby_RB increasing_VBG the_DT
+          specificity_NN of_IN the_DT signal_NN governing_VBG recruitment_NN of_IN the_DT
+          V_NNP (_( D_NNP )_) J_NNP recombinase_NN ._.
+          We_PRP find_VBP significant_JJ correlations_NNS between_IN nucleotide_NN
+          positions_NNS in_IN RSS_NNP ,_, suggesting_VBG they_PRP act_VBP cooperatively_RB and_CC
+          that_IN nucleotide_NN associations_NNS are_VBP conserved_JJ ._. We_PRP used_VBD our_PRP$
+          model_NN selection_NN procedure_NN to_TO determine_VB the_DT best_JJS models_NNS of_IN
+          RSS_NNP correlation_NN structure_NN ,_, one_CD model_NN for_IN 12_CD -_: bp_NN spacer_NN RSS_NNP
+          (_( 12_CD -_: RSS_NNP )_) and_CC one_CD for_IN 23_CD -_: RSS_NNP ._. We_PRP also_RB modeled_VBD both_DT types_NNS
+          of_IN RSS_NNP with_IN order_NN zero_CD and_CC order_NN one_CD Markov_NNP chains_NNS ._. The_DT
+          scores_NNS from_IN all_DT six_CD models_NNS are_VBP highly_RB correlated_JJ with_IN
+          measured_VBN recombination_NN efficiencies_NNS ,_, but_CC the_DT models_NNS
+          arising_VBG from_IN our_PRP$ technique_NN are_VBP much_RB better_JJR than_IN the_DT
+          Markov_NNP models_NNS at_IN identifying_VBG physiologic_JJ and_CC cryptic_JJ RSS_NNP
+          in_IN genomic_JJ DNA_NNP ._.
+        
+      
+      
+        Results_NNS
+        
+          Mouse_NNP RSS_NNP show_NN limited_JJ sequence_NN conservation_NN
+          We_PRP analyzed_VBD 356_CD physiologic_JJ mouse_NN RSS_NNP (_( see_VB Methods_NNP )_) ._.
+          While_IN 62_CD %_NN (_( 219_CD /_NN 356_CD )_) of_IN these_DT RSS_NNP contain_VB a_DT consensus_NN
+          heptamer_NN ,_, just_RB 16_CD %_NN (_( 57_CD /_NN 356_CD )_) contain_VB a_DT consensus_NN nonamer_NN
+          and_CC only_RB 13_CD %_NN (_( 48_CD /_NN 356_CD )_) contain_VB both_DT a_DT consensus_NN heptamer_NN
+          and_CC a_DT consensus_NN nonamer_NN ._. To_TO measure_VB the_DT level_NN of_IN
+          nucleotide_NN diversity_NN at_IN individual_JJ RSS_NNP positions_NNS ,_, we_PRP
+          computed_JJ the_DT entropy_NN (_( 
+          H_NNP 
+          
+            i_NNP 
+           )_) [_NN 51_CD ]_NN for_IN each_DT position_NN 
+          i_NNP in_IN an_DT alignment_NN of_IN the_DT 201_CD 12_CD -_: RSS_NNP
+          and_CC an_DT alignment_NN of_IN the_DT 155_CD 23_CD -_: RSS_NNP (_( Figure_NN 1_CD a_DT )_) ._. A_DT
+          strictly_RB conserved_JJ position_NN in_IN which_WDT no_DT variation_NN is_VBZ
+          tolerated_JJ has_VBZ 
+          H_NNP 
+          
+            i_NNP 
+           =_SYM 0_CD ,_, while_IN a_DT position_NN in_IN which_WDT the_DT four_CD nucleotides_NNS
+          are_VBP observed_VBN at_IN nearly_RB uniform_NN frequencies_NNS has_VBZ 
+          H_NNP 
+          
+            i_NNP 
+           =_SYM 1_CD ._.
+          The_DT signal_NN specified_VBN by_IN the_DT individual_JJ RSS_NNP positions_NNS
+          is_VBZ very_RB low_JJ ,_, especially_RB in_IN 23_CD -_: RSS_NNP (_( Figure_NN 1_CD a_DT )_) ._. The_DT
+          average_JJ entropy_NN is_VBZ 
+          12_CD =_SYM 0_CD ._. 50_CD for_IN 12_CD -_: RSS_NNP and_CC 
+          23_CD =_SYM 0_CD ._. 67_CD for_IN 23_CD -_: RSS_NNP ;_: for_IN a_DT randomly_RB
+          generate_VB string_NN of_IN A_DT ,_, G_NNP ,_, C_NNP ,_, and_CC T_NN characters_NNS ,_, the_DT
+          expected_VBN value_NN for_IN is_VBZ one_CD ._. The_DT patterns_NNS of_IN nucleotide_NN
+          diversity_NN at_IN individual_JJ positions_NNS are_VBP similar_JJ for_IN both_DT
+          12_CD -_: and_CC 23_CD -_: RSS_NNP :_: the_DT initial_JJ CAC_NNP of_IN the_DT heptamer_NN is_VBZ
+          invariant_NN ,_, the_DT remaining_VBG four_CD positions_NNS of_IN the_DT heptamer_NN
+          are_VBP moderately_RB diverse_JJ ,_, the_DT spacer_NN is_VBZ highly_RB diverse_JJ ,_, and_CC
+          the_DT A_DT tract_NN of_IN the_DT nonamer_NN (_( positions_NNS 5_CD through_IN 7_CD )_) is_VBZ
+          better_RBR conserved_JJ than_IN the_DT other_JJ nonamer_NN positions_NNS (_( Figure_NN
+          1_CD a_DT )_) ._. The_DT average_JJ entropy_NN for_IN 23_CD -_: RSS_NNP is_VBZ higher_JJR than_IN for_IN
+          12_CD -_: RSS_NNP ,_, primarily_RB because_IN the_DT 23_CD -_: RSS_NNP nonamers_NNS are_VBP much_RB
+          more_RBR diverse_JJ than_IN 12_CD -_: RSS_NNP nonamers_NNS (_( 
+          
+          N_NNP 23_CD =_SYM 0_CD ._. 59_CD ;_: 
+          
+          N_NNP 12_CD =_SYM 0_CD ._. 35_CD ;_: Figure_NN 1_CD a_DT )_) ._.
+          It_PRP is_VBZ known_VBN from_IN experimental_JJ studies_NNS that_WDT nucleotide_NN
+          substitutions_NNS at_IN highly_RB diverse_JJ positions_NNS influence_VBP
+          recombination_NN efficiency_NN [_NN 46_CD ,_, 52_CD ]_NN ._. That_DT a_DT given_VBN RSS_NNP
+          position_NN can_MD be_VB both_DT highly_RB variable_NN and_CC exhibit_VB strong_JJ
+          effects_NNS on_IN signal_NN efficiency_NN appears_VBZ contradictory_JJ ._. The_DT
+          contradiction_NN can_MD be_VB reconciled_JJ ,_, however_RB ,_, by_IN
+          hypothesizing_VBG correlations_NNS between_IN nucleotides_NNS in_IN RSS_NNP :_: a_DT
+          nucleotide_NN substitution_NN at_IN one_CD position_NN may_MD be_VB
+          compensated_VBN for_IN by_IN a_DT change_NN at_IN another_DT position_NN in_IN the_DT
+          RSS_NNP ._.
+        
+        
+          Significant_JJ pairwise_NN correlations_NNS exist_VBP between_IN
+          positions_NNS in_IN the_DT RSS_NNP
+          To_TO test_VB for_IN correlation_NN between_IN pairs_NNS of_IN positions_NNS in_IN
+          the_DT RSS_NNP ,_, we_PRP computed_JJ the_DT mutual_JJ information_NN ,_, 
+          MI_NNP 
+          
+          i_NNP ,_, 
+          i_NNP  ,_, [_NN 51_CD ]_NN between_IN all_DT pairs_NNS of_IN
+          positions_NNS 
+          i_NNP and_CC 
+          i_NNP '_POS in_IN an_DT alignment_NN of_IN the_DT 201_CD
+          physiologic_JJ mouse_NN 12_CD -_: RSS_NNP and_CC in_IN an_DT alignment_NN of_IN the_DT 155_CD
+          physiologic_JJ mouse_NN 23_CD -_: RSS_NNP (_( see_VB Methods_NNP )_) (_( Figure_NN 1_CD b_SYM )_) ._.
+          Statistically_NNP significant_JJ 
+          MI_NNP 
+          
+          i_NNP ,_, 
+          i_NNP '_POS values_NNS result_VBP when_WRB there_EX is_VBZ
+          a_DT correlation_NN between_IN nucleotide_NN frequencies_NNS at_IN the_DT two_CD
+          positions_NNS ,_, indicating_VBG selection_NN pressure_NN to_TO maintain_VB (_( or_CC
+          avoid_VB )_) a_DT particular_JJ dinucleotide_NN ._.
+          In_IN 12_CD -_: and_CC 23_CD -_: RSS_NNP ,_, we_PRP detect_VBP statistically_RB significant_JJ
+          correlations_NNS between_IN positions_NNS in_IN those_DT regions_NNS of_IN the_DT
+          RSS_NNP exhibiting_VBG high_JJ levels_NNS of_IN position-wise_JJ entropy_NN ._.
+          These_DT are_VBP the_DT spacer_NN ,_, especially_RB the_DT nonamer-proximal_JJ
+          half_NN ,_, and_CC the_DT positions_NNS of_IN the_DT heptamer_NN and_CC nonamer_NN that_WDT
+          are_VBP adjacent_JJ to_TO the_DT spacer_NN (_( Figure_NN 1_CD b_SYM )_) ._. In_IN general_JJ ,_,
+          correlation_NN between_IN two_CD positions_NNS decreases_NNS as_IN a_DT function_NN
+          of_IN distance_NN ,_, but_CC there_EX are_VBP examples_NNS of_IN strong_JJ correlation_NN
+          between_IN widely_RB separated_JJ positions_NNS (_( Figure_NN 1_CD b_SYM )_) ._. For_IN
+          example_NN ,_, we_PRP observe_VBP 12_CD -_: RSS_NNP with_IN A_DT at_IN positions_NNS 8_CD and_CC 19_CD
+          at_IN a_DT much_RB higher_JJR frequency_NN (_( 0_CD ._. 38_CD )_) than_IN expected_VBN (_( 0_CD ._. 11_CD )_)
+          from_IN the_DT independent_JJ frequencies_NNS of_IN A_DT at_IN each_DT position_NN ._.
+          In_IN addition_NN ,_, we_PRP find_VBP that_IN the_DT levels_NNS of_IN correlation_NN are_VBP
+          higher_JJR in_IN 23_CD -_: RSS_NNP than_IN in_IN 12_CD -_: RSS_NNP (_( Figure_NN 1_CD b_SYM )_) ;_: this_DT is_VBZ an_DT
+          especially_RB interesting_JJ observation_NN given_VBN that_IN 23_CD -_: RSS_NNP are_VBP
+          much_RB more_RBR variable_JJ than_IN 12_CD -_: RSS_NNP (_( Figure_NN 1_CD a_DT )_) ._.
+        
+        
+          Statistical_NNP models_NNS of_IN 12_CD -_: and_CC 23_CD -_: RSS_NNP determine_VB the_DT
+          relevant_JJ correlation_NN structure_NN
+          The_DT 
+          MI_NNP computations_NNS give_VBP evidence_NN for_IN
+          strong_JJ pairwise_NN correlations_NNS ,_, including_VBG between_IN distant_JJ
+          positions_NNS ,_, and_CC correlations_NNS may_MD exist_VB between_IN any_DT number_NN
+          of_IN positions_NNS ._. We_PRP therefore_RB developed_VBD statistical_JJ models_NNS ,_,
+          one_CD for_IN 12_CD -_: RSS_NNP and_CC one_CD for_IN 23_CD -_: RSS_NNP ,_, that_WDT can_MD account_VB for_IN
+          correlations_NNS between_IN arbitrary_JJ positions_NNS without_IN regard_NN
+          for_IN their_PRP$ distance_NN from_IN each_DT other_JJ or_CC the_DT number_NN of_IN
+          correlated_JJ positions_NNS ._. The_DT models_NNS were_VBD developed_VBN using_VBG a_DT
+          procedure_NN that_WDT selects_VBZ from_IN all_DT possible_JJ combinations_NNS of_IN
+          disjoint_NN probability_NN distributions_NNS the_DT set_NN of_IN marginal_JJ
+          (_( for_IN one_CD position_NN )_) and_CC joint_JJ (_( for_IN multiple_JJ positions_NNS )_)
+          distributions_NNS that_IN most_JJS distinguishes_NNS physiologic_JJ RSS_NNP
+          from_IN other_JJ nucleotide_NN sequences_NNS of_IN the_DT same_JJ length_NN ._. For_IN
+          example_NN ,_, positions_NNS 8_CD and_CC 19_CD in_IN 12_CD -_: RSS_NNP are_VBP highly_RB
+          correlated_JJ (_( Figure_NN 1_CD b_SYM )_) ._. They_PRP could_MD be_VB included_VBN in_IN the_DT
+          model_NN either_CC through_IN the_DT two_CD marginal_JJ probability_NN
+          distributions_NNS -_: the_DT distribution_NN over_IN the_DT four_CD
+          nucleotides_NNS at_IN position_NN 8_CD and_CC the_DT distribution_NN over_IN the_DT
+          four_CD nucleotides_NNS at_IN position_NN 19_CD ,_, or_CC through_IN one_CD joint_JJ
+          probability_NN distribution_NN -_: the_DT distribution_NN over_IN the_DT 16_CD
+          pairs_NNS of_IN nucleotides_NNS at_IN the_DT pair_NN of_IN positions_NNS ._. Each_DT model_NN
+          computes_VBZ a_DT score_NN for_IN RSS_NNP information_NN content_NN :_: 
+          RIC_NNP 
+          12_CD for_IN 28_CD -_: bp_NN sequences_NNS and_CC 
+          RIC_NNP 
+          23_CD for_IN 39_CD -_: bp_NN sequences_NNS ;_: the_DT formation_NN
+          of_IN joint_JJ probability_NN functions_NNS is_VBZ determined_VBN by_IN
+          maximizing_VBG the_DT mean_JJ score_NN for_IN physiologic_JJ RSS_NNP ._.
+          The_DT selected_VBN 12_CD -_: RSS_NNP model_NN is_VBZ :_:
+          
+          RIC_NNP 
+          12_CD =_SYM ln_NN [_NN 
+          P_NN 
+          1_CD 
+          P_NN 
+          2_CD 
+          P_NN 
+          3_CD ,_, 15_CD ,_, 25_CD 
+          P_NN 
+          4_CD ,_, 5_CD 
+          P_NN 
+          6_CD ,_, 28_CD 
+          P_NN 
+          7_CD ,_, 8_CD ,_, 19_CD 
+          P_NN 
+          9_CD ,_, 26_CD 
+          P_NN 
+          10_CD ,_, 12_CD 
+          P_NN 
+          11_CD ,_, 27_CD 
+          P_NN 
+          13_CD ,_, 14_CD ,_, 23_CD 
+          P_NN 
+          16_CD ,_, 17_CD ,_, 18_CD 
+          P_NN 
+          20_CD ,_, 21_CD ,_, 22_CD 
+          P_NN 
+          24_CD ]_NN
+          where_WRB 
+          P_NN 
+          1_CD is_VBZ the_DT marginal_JJ probability_NN function_NN
+          for_IN position_NN 1_CD and_CC 
+          P_NN 
+          3_CD ,_, 15_CD ,_, 25_CD is_VBZ the_DT joint_JJ probability_NN
+          function_NN for_IN positions_NNS 3_CD ,_, 15_CD and_CC 25_CD ._. The_DT presence_NN of_IN the_DT
+          joint_JJ probability_NN function_NN in_IN the_DT model_NN indicates_VBZ that_IN
+          these_DT three_CD positions_NNS are_VBP mutually_RB correlated_JJ ._. The_DT
+          selected_VBN 23_CD -_: RSS_NNP model_NN is_VBZ :_:
+          
+          RIC_NNP 
+          23_CD =_SYM ln_NN [_NN 
+          P_NN 
+          1_CD 
+          P_NN 
+          2_CD 
+          P_NN 
+          3_CD 
+          P_NN 
+          4_CD ,_, 14_CD 
+          P_NN 
+          5_CD ,_, 39_CD 
+          P_NN 
+          6_CD 
+          P_NN 
+          7_CD ,_, 24_CD ,_, 25_CD 
+          P_NN 
+          8_CD ,_, 9_CD ,_, 21_CD 
+          P_NN 
+          10_CD ,_, 16_CD 
+          P_NN 
+          11_CD ,_, 12_CD 
+          P_NN 
+          13_CD ,_, 22_CD 
+          P_NN 
+          15_CD ,_, 23_CD 
+          P_NN 
+          17_CD ,_, 18_CD 
+          P_NN 
+          19_CD ,_, 27_CD ,_, 30_CD ,_, 31_CD ,_, 32_CD ,_, 33_CD ,_, 37_CD 
+          P_NN 
+          20_CD ,_, 26_CD 
+          P_NN 
+          28_CD ,_, 29_CD 
+          P_NN 
+          34_CD ,_, 38_CD 
+          P_NN 
+          35_CD ,_, 36_CD ]_NN ._.
+          Most_JJS of_IN the_DT marginal_JJ probabilities_NNS have_VBP been_VBN merged_VBN to_TO
+          form_VB joint_JJ probability_NN functions_NNS ,_, but_CC the_DT order_NN in_IN which_WDT
+          the_DT joint_JJ functions_NNS were_VBD formed_VBN reflects_VBZ the_DT relative_JJ
+          strength_NN of_IN the_DT correlations_NNS between_IN the_DT corresponding_JJ
+          positions_NNS :_: positions_NNS with_IN large_JJ 
+          MI_NNP are_VBP grouped_VBN early_RB in_IN model_NN
+          selection_NN (_( data_NNS not_RB shown_VBN )_) ._. The_DT groups_NNS of_IN positions_NNS with_IN
+          the_DT strongest_JJS correlations_NNS are_VBP (_( 7_CD ,_, 8_CD ,_, 19_CD )_) ,_, (_( 16_CD ,_, 17_CD ,_, 18_CD )_) ,_, and_CC
+          (_( 20_CD ,_, 21_CD ,_, 22_CD )_) in_IN 12_CD -_: RSS_NNP (_( Table_NNP 1_LS )_) and_CC
+          (_( 19_CD ,_, 27_CD ,_, 30_CD ,_, 31_CD ,_, 32_CD ,_, 33_CD ,_, 37_CD )_) ,_, (_( 8_CD ,_, 9_CD ,_, 21_CD )_) ,_, and_CC (_( 7_CD ,_, 24_CD ,_, 25_CD )_) in_IN 23_CD -_: RSS_NNP
+          (_( Table_NNP 2_LS )_) ._. For_IN both_DT 12_CD -_: and_CC 23_CD -_: RSS_NNP ,_, the_DT positions_NNS
+          exhibiting_VBG the_DT strongest_JJS cooperative_JJ influence_NN lie_NN in_IN the_DT
+          nonamer-proximal_JJ half_NN of_IN the_DT spacer_NN and_CC in_IN the_DT heptamer_NN
+          and_CC nonamer_NN positions_NNS adjacent_JJ to_TO the_DT spacer_NN (_( Figure_NN 2_LS )_) ._.
+          Interestingly_RB ,_, these_DT positions_NNS overlap_VBP substantially_RB with_IN
+          positions_NNS exhibiting_VBG ethylation_NN /_NN methylation_NN interference_NN
+          in_IN RSS_NNP complexed_JJ with_IN RAG_NNP 1_CD /_NN RAG_NNP 2_CD (_( Figure_NN 2_CD and_CC [_NN 53_CD ]_NN )_)
+          suggesting_VBG that_IN the_DT correlations_NNS detected_VBN by_IN the_DT models_NNS
+          are_VBP relevant_JJ to_TO RAG-RSS_NNP interaction_NN ._.
+        
+        
+          The_DT selected_VBN models_NNS were_VBD compared_VBN with_IN order_NN zero_CD
+          and_CC order_NN one_CD Markov_NNP models_NNS
+          To_TO determine_VB whether_IN the_DT correlation_NN structure_NN
+          detected_VBN by_IN our_PRP$ model_NN selection_NN procedure_NN improves_VBZ RSS_NNP
+          recognition_NN and_CC evaluation_NN ,_, we_PRP constructed_VBN weight_NN matrix_NN
+          models_NNS based_VBN on_IN order_NN zero_CD or_CC order_NN one_CD Markov_NNP chains_NNS ._.
+          Order_NNP zero_CD Markov_NNP models_NNS (_( 
+          WM_NNP 0_CD 
+          12_CD for_IN 12_CD -_: RSS_NNP and_CC 
+          WM_NNP 0_CD 
+          23_CD for_IN 23_CD -_: RSS_NNP )_) assume_VB that_IN all_DT RSS_NNP
+          positions_NNS are_VBP independent_JJ and_CC are_VBP therefore_RB computed_JJ from_IN
+          marginal_JJ probability_NN distributions_NNS ._. The_DT score_NN for_IN an_DT 
+          N_NNP -_: bp_NN sequence_NN is_VBZ computed_JJ as_IN
+          
+          where_WRB 
+          P_NN 
+          
+            i_NNP 
+           is_VBZ the_DT probability_NN of_IN observing_VBG nucleotide_NN 
+          X_NNP at_IN position_NN 
+          i_NNP ._. Order_NNP one_CD Markov_NNP models_NNS (_( 
+          WM_NNP 1_CD 
+          12_CD and_CC 
+          WM_NNP 1_CD 
+          23_CD )_) assume_VB that_IN adjacent_JJ positions_NNS
+          are_VBP correlated_JJ (_( the_DT identity_NN of_IN the_DT nucleotide_NN at_IN
+          position_NN 
+          i_NNP depends_VBZ on_IN the_DT nucleotide_NN at_IN
+          position_NN 
+          i_NNP -_: 1_LS )_) and_CC are_VBP computed_JJ from_IN
+          conditional_JJ probability_NN distributions_NNS :_:
+          
+          where_WRB 
+          P_NN 
+          1_CD is_VBZ the_DT marginal_JJ probability_NN
+          distribution_NN for_IN position_NN 1_CD ,_, and_CC 
+          P_NN (_( 
+          i_NNP |_NN 
+          i_NNP -_: 1_LS )_) is_VBZ the_DT probability_NN of_IN
+          observing_VBG nucleotide_NN 
+          X_NNP at_IN position_NN 
+          i_NNP given_VBN the_DT nucleotide_NN at_IN position_NN 
+          i_NNP -_: 1_CD ._.
+          For_IN physiologic_JJ 12_CD -_: and_CC 23_CD -_: RSS_NNP ,_, the_DT score_NN distribution_NN
+          is_VBZ shifted_VBN toward_IN higher_JJR scores_NNS for_IN models_NNS that_WDT include_VBP
+          correlation_NN (_( 
+          RIC_NNP and_CC 
+          WM_NNP 1_LS )_) (_( Table_NNP 3_CD ,_, Figure_NN 3_LS )_) ._. The_DT
+          difference_NN is_VBZ most_RBS striking_JJ for_IN 23_CD -_: RSS_NNP (_( Table_NNP 3_CD ,_, Figure_NN
+          3_LS )_) ._. The_DT mean_NN scores_NNS for_IN the_DT physiologic_JJ 12_CD -_: RSS_NNP are_VBP 
+          12_CD =_SYM -_: 19_CD ._. 84_CD ,_, 
+          12_CD =_SYM -_: 18_CD ._. 49_CD ,_, and_CC 
+          12_CD =_SYM -_: 18_CD ._. 47_CD (_( Table_NNP 3_LS )_) ;_: the_DT mean_NN scores_NNS
+          for_IN physiologic_JJ 23_CD -_: RSS_NNP are_VBP 
+          23_CD =_SYM -_: 37_CD ._. 07_CD ,_, 
+          23_CD =_SYM -_: 31_CD ._. 51_CD ,_, and_CC 
+          23_CD =_SYM -_: 32_CD ._. 39_CD (_( Table_NNP 3_LS )_) ._. There_EX is_VBZ
+          relatively_RB little_JJ change_NN in_IN the_DT value_NN of_IN low_JJ scores_NNS
+          across_IN models_NNS ,_, so_RB as_IN the_DT correlation_NN structure_NN of_IN the_DT
+          models_NNS increases_NNS in_IN complexity_NN ,_, the_DT increase_NN in_IN high_JJ
+          scores_NNS results_NNS in_IN an_DT increase_NN in_IN the_DT score_NN range_NN (_( Table_NNP
+          3_CD and_CC Figure_NN 3_LS )_) ._.
+        
+        
+          Functional_NNP RSS_NNP are_VBP best_JJS discriminated_JJ by_IN
+          RICscores_NNP
+          To_TO test_VB whether_IN functional_JJ RSS_NNP can_MD be_VB recognized_VBN by_IN
+          the_DT sequence_NN properties_NNS captured_VBN in_IN the_DT models_NNS ,_, we_PRP
+          characterized_VBD the_DT score_NN distributions_NNS for_IN non-_NN RSS_NNP DNA_NNP
+          (_( Figure_NN 4_LS )_) ._. These_DT background_NN distributions_NNS are_VBP
+          characterized_VBN by_IN their_PRP$ means_NNS and_CC ranges_VBZ ._. 
+          WM_NNP 0_CD ,_, WM_NNP 1_CD and_CC 
+          RIC_NNP scores_NNS were_VBD computed_JJ for_IN all_DT
+          28_CD -_: and_CC 39_CD -_: bp_NN segments_NNS in_IN a_DT 212_CD ,_, 128_CD -_: bp_NN fragment_NN of_IN mouse_NN
+          chromosome_NN 8_CD (_( AC_NNP 084823_CD )_) containing_VBG no_DT known_VBN RSS_NNP ._. We_PRP also_RB
+          characterized_VBD the_DT background_NN distributions_NNS by_IN computing_VBG
+          scores_NNS for_IN a_DT pseudorandom_NN string_NN (_( PRS_NNP )_) of_IN A_DT ,_, T_NN ,_, C_NNP and_CC G_NNP
+          the_DT same_JJ length_NN as_IN sequence_NN AC_NNP 084823_CD and_CC having_VBG the_DT same_JJ
+          nucleotide-usage_JJ frequencies_NNS ._.
+          As_IN expected_VBN ,_, the_DT 
+          WM_NNP 0_CD score_NN distributions_NNS for_IN
+          AC_NNP 084823_CD and_CC the_DT PRS_NNP are_VBP almost_RB identical_JJ for_IN both_DT 28_CD -_:
+          and_CC 39_CD -_: bp_NN segments_NNS (_( Table_NNP 4_CD ,_, Figure_NN 4_LS )_) ._. For_IN the_DT models_NNS
+          that_WDT account_NN for_IN correlation_NN ,_, however_RB ,_, scores_NNS from_IN
+          genomic_JJ DNA_NNP are_VBP higher_RBR on_IN average_JJ than_IN those_DT computed_JJ for_IN
+          the_DT PRS_NNP (_( Table_NNP 4_CD ,_, Figure_NN 4_LS )_) ._. This_DT is_VBZ especially_RB true_JJ for_IN
+          the_DT 
+          WM_NNP 1_CD models_NNS ,_, indicating_VBG that_IN ,_,
+          whereas_IN both_DT the_DT 
+          WM_NNP 1_CD and_CC 
+          RIC_NNP models_NNS are_VBP influenced_VBN by_IN
+          correlations_NNS present_JJ in_IN physiologic_JJ DNA_NNP ,_, the_DT correlations_NNS
+          detected_VBN by_IN the_DT 
+          RIC_NNP models_NNS are_VBP more_RBR specific_JJ to_TO
+          RSS_NNP ._. Importantly_NNP ,_, the_DT distributions_NNS for_IN 
+          RIC_NNP scores_NNS are_VBP always_RB shifted_VBN
+          toward_IN lower_JJR scores_NNS than_IN the_DT corresponding_JJ 
+          WM_NNP 0_CD and_CC 
+          WM_NNP 1_CD distributions_NNS (_( Table_NNP 4_CD ,_, Figure_NN
+          4_LS )_) ._.
+          We_PRP next_JJ compared_VBN across_IN models_NNS the_DT frequency_NN of_IN
+          signal-length_JJ segments_NNS in_IN AC_NNP 084823_CD that_DT score_NN above_IN a_DT
+          given_VBN threshold_NN ._. To_TO determine_VB test_NN thresholds_NNS for_IN a_DT given_VBN
+          model_NN ,_, we_PRP ranked_VBD the_DT physiologic_JJ RSS_NNP by_IN score_NN in_IN
+          ascending_VBG order_NN and_CC took_VBD the_DT lowest_JJS 5_CD %_NN of_IN scores_NNS under_IN
+          each_DT model_NN as_IN the_DT test_NN thresholds_NNS for_IN that_DT model_NN (_( Table_NNP
+          5_CD ,_, Figure_NN 5_LS )_) ._. For_IN example_NN ,_, the_DT lowest_JJS 
+          RIC_NNP 
+          12_CD is_VBZ -_: 48_CD ._. 16_CD ._. It_PRP has_VBZ rank_NN zero_CD ,_, and_CC
+          zero_CD physiologic_JJ RSS_NNP have_VBP a_DT lower_JJR 
+          RIC_NNP 
+          12_CD ._. Of_IN 212_CD ,_, 101_CD (_( 0_CD ._. 00414_CD )_) 28_CD -_: bp_NN
+          segments_NNS in_IN AC_NNP 084823_CD ,_, 859_CD have_VBP 
+          RIC_NNP 
+          12_CD >_NN -_: 48_CD ._. 16_CD ._. Similarly_RB ,_, threshold_NN
+          zero_CD under_IN the_DT 
+          WM_NNP 1_CD 
+          12_CD model_NN is_VBZ -_: 46_CD ._. 32_CD ,_, and_CC 2_CD ,_, 372_CD of_IN
+          212_CD ,_, 101_CD (_( 0_CD ._. 01118_CD )_) 28_CD -_: bp_NN segments_NNS in_IN AC_NNP 084823_CD have_VBP 
+          WM_NNP 1_CD 
+          12_CD >_NN -_: 46_CD ._. 32_CD ._. Under_IN each_DT model_NN ,_, the_DT
+          frequency_NN of_IN physiologic_JJ RSS_NNP scoring_VBG below_IN threshold_NN
+          estimates_VBZ the_DT probability_NN of_IN failing_VBG to_TO recognize_VB a_DT
+          functional_JJ RSS_NNP and_CC is_VBZ a_DT measure_NN of_IN the_DT model_NN 's_POS
+          sensitivity_NN ._. The_DT frequency_NN of_IN non-_NN RSS_NNP scoring_VBG above_IN
+          threshold_NN estimates_VBZ the_DT probability_NN of_IN classifying_VBG
+          non-_NN RSS_NNP as_IN functional_JJ and_CC is_VBZ a_DT measure_NN of_IN the_DT model_NN 's_POS
+          specificity_NN ._. Both_DT numbers_NNS should_MD be_VB small_JJ ._. The_DT
+          high-scoring_JJ non-_NN RSS_NNP segments_NNS may_MD support_VB recombination_NN ,_,
+          however_RB ,_, and_CC ,_, if_IN so_IN ,_, would_MD be_VB classified_VBN as_IN cRSS_NN ._. Those_DT
+          not_RB supporting_VBG recombination_NN would_MD be_VB counted_VBN as_IN false_JJ
+          positives_NNS ._.
+          In_IN general_JJ we_PRP find_VBP that_IN the_DT 
+          WM_NNP 0_CD models_NNS predict_VBP the_DT highest_JJS
+          number_NN of_IN RSS_NNP in_IN AC_NNP 084823_CD ,_, and_CC the_DT 
+          RIC_NNP models_NNS predict_VBP the_DT fewest_JJS
+          (_( Table_NNP 5_CD ,_, Figure_NN 5_LS )_) ._. Of_IN 20_CD test_NN thresholds_NNS ,_, there_EX are_VBP
+          three_CD for_IN which_WDT 
+          RIC_NNP does_VBZ not_RB predict_VB the_DT smallest_JJS
+          number_NN of_IN RSS_NNP :_: for_IN the_DT 12_CD -_: RSS_NNP models_NNS ,_, the_DT score_NN for_IN the_DT
+          ninth-lowest_JJ ranking_JJ physiologic_JJ 12_CD -_: RSS_NNP and_CC for_IN the_DT
+          23_CD -_: RSS_NNP models_NNS ,_, the_DT scores_NNS for_IN the_DT second-_NN and_CC
+          eighth-lowest_JJ ranking_JJ physiologic_JJ 23_CD -_: RSS_NNP (_( Table_NNP 5_CD ,_, Figure_NN
+          5_LS )_) ._.
+          From_IN Figure_NN 5_CD ,_, we_PRP determine_VBP thresholds_NNS at_IN which_WDT
+          excluding_VBG just_RB one_CD more_RBR physiologic_JJ RSS_NNP results_NNS in_IN a_DT
+          large_JJ drop_NN in_IN the_DT models_NNS '_POS predicted_VBD number_NN of_IN cryptic_JJ
+          RSS_NNP ._. We_PRP select_VBP -_: 38_CD ._. 81_CD for_IN 
+          RIC_NNP 
+          12_CD and_CC -_: 58_CD ._. 45_CD for_IN 
+          RIC_NNP 
+          23_CD (_( Figure_NN 5_LS )_) ._. Only_RB two_CD of_IN the_DT 201_CD
+          (_( 0_CD ._. 01_CD )_) 12_CD -_: RSS_NNP have_VBP 
+          RIC_NNP 
+          12_CD <_NN -_: 38_CD ._. 81_CD ,_, and_CC just_RB 54_CD of_IN 212_CD ,_, 101_CD
+          (_( 2_CD ._. 5_LS ×_NN 10_CD -_: 4_LS )_) 28_CD -_: bp_NN segments_NNS in_IN sequence_NN AC_NNP 084823_CD achieve_VB
+          
+          RIC_NNP 
+          12_CD >_NN -_: 38_CD ._. 81_CD ._. The_DT frequency_NN of_IN 
+          RIC_NNP 
+          12_CD >_NN -_: 38_CD ._. 81_CD from_IN the_DT PRS_NNP is_VBZ 9_CD ._. 9_CD ×_NN
+          10_CD -_: 5_CD (_( 21_CD /_NN 212_CD ,_, 102_CD )_) ._. Similarly_RB ,_, of_IN the_DT 155_CD physiologic_JJ
+          23_CD -_: RSS_NNP ,_, only_RB three_CD (_( 0_CD ._. 02_CD )_) have_VBP 
+          RIC_NNP 
+          23_CD <_NN -_: 58_CD ._. 45_CD ._. Just_RB 100_CD of_IN the_DT
+          212_CD ,_, 090_CD (_( 4_CD ._. 7_CD ×_NN 10_CD -_: 4_LS )_) 39_CD -_: bp_NN segments_NNS from_IN sequence_NN
+          AC_NNP 084823_CD and_CC only_RB 58_CD of_IN the_DT 212_CD ,_, 091_CD segments_NNS from_IN the_DT PRS_NNP
+          (_( 2_CD ._. 7_CD ×_NN 10_CD -_: 4_LS )_) have_VBP 
+          RIC_NNP 
+          23_CD >_NN -_: 58_CD ._. 45_CD ._. We_PRP therefore_RB set_VBD
+          -_: 38_CD ._. 81_CD and_CC -_: 58_CD ._. 45_CD as_IN 
+          RIC_NNP 
+          12_CD and_CC 
+          RIC_NNP 
+          23_CD thresholds_NNS ,_, respectively_RB ._.
+        
+        
+          The_DT RICmodels_NNP reliably_RB recognize_VBP physiologic_JJ
+          RSS_NNP
+          We_PRP searched_VBD genomic_JJ DNA_NNP containing_VBG physiologic_JJ RSS_NNP to_TO
+          determine_VB if_IN 
+          RIC_NNP scores_NNS can_MD resolve_VB 12_CD -_: and_CC
+          23_CD -_: RSS_NNP ._. Sequences_NNP X_NNP 58411_CD (_( 7_CD ,_, 360_CD bp_NN )_) and_CC X_NNP 58414_CD (_( 5_CD ,_, 867_CD )_)
+          encompass_VB the_DT mouse_NN Jλ_NNP locus_JJ and_CC contain_VB four_CD 12_CD -_: RSS_NNP ,_,
+          three_CD associated_VBN with_IN functional_JJ Jλ_NNP gene_NN segments_NNS and_CC one_CD
+          associated_VBN with_IN the_DT pseudogene_NN Jλ_NNP 4_CD [_NN 54_CD ]_NN ._. We_PRP computed_JJ 
+          RIC_NNP 
+          12_CD scores_NNS for_IN 13_CD ,_, 173_CD 28_CD -_: bp_NN segments_NNS in_IN
+          X_NNP 58411_CD and_CC X_NNP 58414_CD ;_: the_DT resulting_VBG 
+          RIC_NNP 
+          12_CD distributions_NNS are_VBP almost_RB identical_JJ
+          to_TO that_DT for_IN the_DT chromosome_NN 8_CD sequence_NN with_IN means_VBZ well_RB
+          below_IN threshold_NN (_( Table_NNP 6_CD )_) ._. The_DT 
+          RIC_NNP 
+          12_CD for_IN RSS_NNP associated_VBN with_IN functional_JJ
+          Jλ_NNP gene_NN segments_NNS lie_VBP well_RB outside_IN this_DT distribution_NN
+          (_( Table_NNP 6_CD ,_, Figure_NN 6_CD a_DT )_) ;_: all_DT three_CD score_NN >_NN -_: 38_CD ._. 81_CD (_( 
+          12_CD =_SYM -_: 21_CD ._. 16_CD )_) ._. Analogous_NNP searches_NNS of_IN
+          mouse_NN D_NNP 
+          H_NNP (_( AF_NNP 018146_CD )_) and_CC DJβ_NNP (_( AE_NNP 000665_CD )_)
+          regions_NNS also_RB demonstrated_VBN 
+          RIC_NNP 
+          12_CD values_NNS for_IN physiologic_JJ RSS_NNP above_IN
+          threshold_NN (_( Table_NNP 6_CD )_) ._. Of_IN the_DT 21_CD physiologic_JJ 12_CD -_: RSS_NNP
+          included_VBN in_IN the_DT search_NN ,_, only_RB the_DT RSS_NNP associated_VBN with_IN the_DT
+          Jλ_NNP 4_CD pseudogene_NN [_NN 54_CD ]_NN scored_VBD below_IN threshold_NN (_( Table_NNP
+          6_CD )_) ._.
+          Scans_NNP of_IN the_DT sequence_NN containing_VBG Dβ_NNP and_CC Jβ_NNP gene_NN
+          segments_NNS (_( AE_NNP 000665_CD ,_, described_VBD above_IN )_) and_CC a_DT 250_CD ,_, 611_CD -_: bp_NN
+          sequence_NN containing_VBG 16_CD Vβ_NNP genes_NNS (_( AE_NNP 000663_CD )_) showed_VBD that_IN
+          physiologic_JJ 23_CD -_: RSS_NNP are_VBP also_RB easily_RB resolved_VBN by_IN their_PRP$ 
+          RIC_NNP scores_NNS (_( Table_NNP 6_CD )_) ._. The_DT two_CD Dβ_NNP
+          23_CD -_: RSS_NNP have_VBP 
+          RIC_NNP 
+          23_CD well_RB above_IN threshold_NN (_( -_: 35_CD ._. 85_CD and_CC
+          -_: 49_CD ._. 56_CD ;_: Table_NNP 6_CD )_) ,_, and_CC the_DT Vβ_NNP 23_CD -_: RSS_NNP associated_VBN with_IN
+          functional_JJ gene_NN segments_NNS are_VBP also_RB easily_RB identified_VBN (_( mean_VB
+          -_: 34_CD ._. 17_CD ;_: Table_NNP 6_CD ,_, Figure_NN 6_CD b_SYM )_) ._. Again_RB ,_, the_DT only_RB RSS_NNP not_RB
+          scoring_VBG above_IN threshold_NN are_VBP associated_VBN with_IN pseudogenes_NNS [_NN
+          55_CD ,_, 56_CD ,_, 57_CD ]_NN (_( Vβ_NNP 11_CD -_: 61_CD ._. 78_CD ;_: Vβ_NNP 12_CD -_: 3_CD -_: 61_CD ._. 76_CD ;_: Vβ_NNP 8_CD -_: 58_CD ._. 87_CD )_) ;_:
+          nevertheless_RB ,_, all_DT three_CD 
+          RIC_NNP 
+          23_CD scores_NNS fall_VBP above_IN the_DT background_NN
+          mean_NN (_( -_: 77_CD ._. 75_CD )_) ._. RSS_NNP flanking_VBG pseudogenes_NNS cannot_NN be_VB
+          stringently_RB selected_VBN ,_, so_IN we_PRP expect_VBP their_PRP$ 
+          RIC_NNP to_TO be_VB below_IN threshold_NN but_CC above_IN
+          background_NN ._.
+          For_IN comparison_NN ,_, we_PRP scanned_JJ the_DT five_CD sequences_NNS
+          (_( AE_NNP 000663_CD ,_, AE_NNP 000665_CD ,_, AF_NNP 018146_CD ,_, X_NNP 58411_CD and_CC X_NNP 58414_CD )_) using_VBG
+          the_DT 
+          WM_NNP 0_CD and_CC 
+          WM_NNP 1_CD models_NNS ._. In_IN all_DT cases_VBZ the_DT mean_JJ
+          score_NN for_IN non-_NN RSS_NNP is_VBZ lower_JJR than_IN the_DT mean_JJ score_NN for_IN
+          physiologic_JJ RSS_NNP associated_VBN with_IN functional_JJ gene_NN segments_NNS ,_,
+          but_CC the_DT disparity_NN between_IN the_DT two_CD sets_NNS of_IN scores_NNS is_VBZ
+          always_RB greatest_JJS for_IN the_DT 
+          RIC_NNP models_NNS (_( Table_NNP 6_CD )_) ,_, showing_VBG that_DT
+          discrimination_NN between_IN RSS_NNP and_CC non-_NN RSS_NNP is_VBZ clearest_NN using_VBG
+          the_DT 
+          RIC_NNP models_NNS ._. This_DT wider_JJR disparity_NN
+          may_MD be_VB important_JJ when_WRB searching_VBG for_IN functional_JJ but_CC
+          degenerate_VB signals_NNS such_JJ as_IN cryptic_JJ and_CC
+          pseudogene-associated_JJ RSS_NNP ._.
+          
+          RIC_NNP 
+          23_CD scores_NNS for_IN AE_NNP 000663_CD are_VBP directly_RB
+          compared_VBN with_IN 
+          WM_NNP 0_CD 
+          23_CD or_CC 
+          WM_NNP 1_CD 
+          23_CD scores_NNS in_IN Figure_NN 7_CD ._. The_DT majority_NN of_IN
+          scores_NNS for_IN non-_NN RSS_NNP fall_NN below_IN the_DT 
+          y_NN =_SYM 
+          x_SYM line_NN ,_, indicating_VBG that_IN they_PRP
+          receive_VBP lower_JJR scores_NNS under_IN the_DT 
+          RIC_NNP 
+          23_CD model_NN than_IN under_IN either_DT of_IN the_DT
+          Markov_NNP models_NNS (_( Figure_NN 7_CD )_) ._. The_DT scores_NNS for_IN RSS_NNP associated_VBN
+          with_IN functional_JJ gene_NN segments_NNS tend_VBP to_TO fall_VB above_IN 
+          y_NN =_SYM 
+          x_SYM ,_, indicating_VBG their_PRP$ better_JJR
+          discrimination_NN by_IN the_DT 
+          RIC_NNP 
+          23_CD model_NN (_( Figure_NN 7_CD )_) ._. Of_IN the_DT seven_CD
+          pseudogene-associated_JJ RSS_NNP in_IN AE_NNP 000663_CD ,_, scores_NNS for_IN three_CD
+          fall_NN in_IN the_DT cloud_NN of_IN background_NN scores_NNS under_IN all_DT three_CD
+          models_NNS whereas_IN scores_NNS for_IN the_DT remaining_VBG four_CD do_VBP not_RB
+          (_( Figure_NN 7_CD )_) ._. Although_IN the_DT scores_NNS for_IN these_DT four_CD RSS_NNP are_VBP
+          higher_JJR under_IN both_DT Markov_NNP models_NNS than_IN under_IN the_DT 
+          RIC_NNP 
+          23_CD model_NN ,_, they_PRP are_VBP better_RBR
+          discriminated_JJ by_IN the_DT 
+          RIC_NNP 
+          23_CD model_NN because_IN the_DT background_NN scores_NNS
+          are_VBP higher_JJR under_IN the_DT Markov_NNP models_NNS (_( Figure_NN 7_CD )_) ._.
+          Parameters_NNP for_IN all_DT six_CD models_NNS were_VBD estimated_VBN from_IN the_DT
+          full_RB set_NN of_IN RSS_NNP (_( 201_CD 12_CD -_: RSS_NNP and_CC 155_CD 23_CD -_: RSS_NNP )_) ._. Of_IN the_DT 39_CD
+          RSS_NNP contained_VBD in_IN the_DT search_NN contigs_NNS ,_, 27_CD of_IN the_DT RSS_NNP
+          associated_VBN with_IN functional_JJ gene_NN segments_NNS were_VBD part_NN of_IN the_DT
+          estimation_NN set_VBN ._. In_IN contrast_NN ,_, the_DT pseudogene-associated_JJ
+          RSS_NNP (_( Jλ_NNP 4_CD ,_, Jβ_NNP 2_CD ._. 6_CD ,_, and_CC seven_CD Vβ_NNP )_) and_CC three_CD of_IN the_DT
+          functional_JJ Jβ_NNP RSS_NNP were_VBD not_RB part_VB of_IN the_DT estimation_NN
+          set_VBN ._.
+        
+        
+          RICscores_NNP identify_VB functional_JJ cryptic_JJ RSS_NNP
+          12_CD -_: cRSS_NN in_IN 3_CD '_POS →_NN 5_CD '_POS orientation_NN and_CC embedded_VBN near_IN the_DT
+          3_CD '_POS end_NN of_IN V_NNP gene_NN segments_NNS can_MD mediate_VB receptor_NN editing_NN ,_,
+          the_DT replacement_NN of_IN the_DT V_NNP gene_NN segment_NN portion_NN of_IN a_DT
+          rearranged_JJ variable-region_JJ gene_NN with_IN an_DT upstream_RB V_NNP gene_NN
+          segment_NN (_( reviewed_VBN in_IN [_NN 58_CD ]_NN )_) ._. To_TO test_VB whether_IN our_PRP$ model_NN
+          can_MD recognize_VB these_DT cRSS_NN ,_, we_PRP computed_JJ 
+          WM_NNP 0_CD 
+          12_CD ,_, 
+          WM_NNP 1_CD 
+          12_CD ,_, and_CC 
+          RIC_NNP 
+          12_CD scores_NNS for_IN all_DT 28_CD -_: bp_NN segments_NNS in_IN 3_CD '_POS
+          →_NN 5_CD '_POS orientation_NN in_IN V_NNP 
+          H_NNP gene_NN segments_NNS known_VBN to_TO participate_VB
+          in_IN receptor_NN editing_NN :_: the_DT V_NNP 
+          H_NNP 2_CD S_NNP 1_CD *_NN 01_CD gene_NN segment_NN [_NN 59_CD ]_NN ,_, the_DT V_NNP 
+          H_NNP 14_CD S_NNP 1_CD gene_NN segment_NN [_NN 60_CD ]_NN ,_, and_CC the_DT 3_CD H_NNP 9_CD
+          transgene_NN [_NN 61_CD ]_NN ._. The_DT cRSS_NN were_VBD not_RB part_VB of_IN the_DT RSS_NNP set_VBD
+          used_VBN for_IN parameter_NN estimation_NN ._. While_IN the_DT cRSS_NN in_IN V_NNP 
+          H_NNP 2_CD S_NNP 1_CD *_NN 01_CD and_CC V_NNP 
+          H_NNP 14_CD S_NNP 1_CD have_VBP higher_JJR scores_NNS than_IN any_DT
+          other_JJ 28_CD -_: bp_NN segment_NN in_IN their_PRP$ respective_JJ gene_NN segments_NNS
+          under_IN all_DT three_CD models_NNS ,_, the_DT 
+          RIC_NNP 
+          12_CD and_CC 
+          WM_NNP 0_CD 
+          12_CD models_NNS are_VBP better_JJR at_IN identifying_VBG
+          them_PRP because_IN these_DT models_NNS have_VBP lower_JJR background_NN scores_NNS
+          than_IN the_DT 
+          WM_NNP 1_CD 
+          12_CD model_NN (_( Table_NNP 7_CD )_) ._. The_DT cRSS_NN in_IN 3_CD H_NNP 9_CD ,_,
+          however_RB ,_, is_VBZ best_RBS recognized_VBN by_IN its_PRP$ 
+          RIC_NNP 
+          12_CD score_NN (_( Figure_NN 8_CD )_) ._. While_IN it_PRP has_VBZ a_DT
+          higher_JJR score_NN under_IN the_DT 
+          WM_NNP 1_CD model_NN ,_, its_PRP$ 
+          RIC_NNP 
+          12_CD score_NN is_VBZ more_RBR separated_JJ from_IN the_DT
+          background_NN 
+          RIC_NNP scores_NNS than_IN its_PRP$ 
+          WM_NNP 1_CD 
+          12_CD or_CC 
+          WM_NNP 0_CD 
+          12_CD score_NN (_( Figure_NN 8_CD )_) ._. All_DT
+          receptor-editing_JJ events_NNS in_IN 3_CD H_NNP 9_CD involved_VBD the_DT cRSS_NN
+          identified_VBN by_IN 
+          RIC_NNP [_NN 61_CD ]_NN ._.
+        
+        
+          RICscores_NNP are_VBP correlated_JJ with_IN RSS_NNP recombination_NN
+          efficiencies_NNS
+          To_TO quantify_VB any_DT correlation_NN between_IN 
+          RIC_NNP and_CC RSS_NNP function_NN ,_, we_PRP computed_JJ
+          Spearman_NNP 's_POS rank_NN correlation_NN coefficient_NN (_( 
+          r_LS 
+          
+            s_VBZ 
+           )_) between_IN 
+          RIC_NNP and_CC published_VBN recombination_NN
+          frequencies_NNS [_NN 46_CD ]_NN ._. The_DT correlation_NN coefficients_NNS are_VBP 
+          r_LS 
+          
+            s_VBZ 
+           =_SYM 0_CD ._. 81_CD for_IN 12_CD -_: RSS_NNP (_( Figure_NN 9_CD )_) and_CC 
+          r_LS 
+          
+            s_VBZ 
+           =_SYM 0_CD ._. 86_CD for_IN 23_CD -_: RSS_NNP (_( Figure_NN 10_CD )_) ;_: for_IN these_DT RSS_NNP ,_, 
+          RIC_NNP explains_VBZ 67_CD -_: 74_CD %_NN of_IN the_DT
+          variation_NN in_IN recombination_NN efficiency_NN ._. 
+          WM_NNP 0_CD and_CC 
+          WM_NNP 1_CD are_VBP equally_RB well_RB correlated_JJ
+          with_IN recombination_NN efficiency_NN :_: 
+          WM_NNP 0_CD 
+          12_CD ,_, 
+          r_LS 
+          
+            s_VBZ 
+           =_SYM 0_CD ._. 80_CD ;_: 
+          WM_NNP 1_CD 
+          12_CD ,_, 
+          r_LS 
+          
+            s_VBZ 
+           =_SYM 0_CD ._. 82_CD ,_, 
+          WM_NNP 0_CD 
+          23_CD ,_, 
+          r_LS 
+          
+            s_VBZ 
+           =_SYM 0_CD ._. 88_CD ,_, 
+          WM_NNP 1_CD 
+          23_CD ,_, 
+          r_LS 
+          
+            s_VBZ 
+           =_SYM 0_CD ._. 91_CD ._. Only_RB 1_CD of_IN 27_CD 12_CD -_: RSS_NNP and_CC 1_CD of_IN 13_CD 23_CD -_: RSS_NNP
+          included_VBN in_IN this_DT study_NN [_NN 46_CD ]_NN are_VBP part_NN of_IN our_PRP$ parameter_NN
+          estimation_NN set_VBN ._.
+        
+      
+      
+        Discussion_NNP
+        We_PRP developed_VBD models_NNS of_IN the_DT correlation_NN structure_NN in_IN 12_CD -_:
+        and_CC 23_CD -_: RSS_NNP using_VBG a_DT model_NN selection_NN procedure_NN that_WDT finds_VBZ the_DT
+        models_NNS with_IN the_DT most_JJS power_NN to_TO predict_VB the_DT population_NN of_IN
+        functional_JJ RSS_NNP ._. The_DT procedure_NN determines_VBZ the_DT groups_NNS of_IN
+        positions_NNS such_JJ that_IN the_DT predictive_JJ power_NN of_IN the_DT model_NN is_VBZ
+        increased_VBN by_IN including_VBG the_DT correlation_NN between_IN the_DT
+        positions_NNS within_IN each_DT group_NN ._. Positions_NNP not_RB correlated_JJ with_IN
+        any_DT other_JJ position_NN are_VBP included_VBN in_IN the_DT models_NNS by_IN the_DT
+        probability_NN distribution_NN over_IN the_DT four_CD nucleotides_NNS at_IN that_DT
+        position_NN ;_: groups_NNS of_IN correlated_JJ positions_NNS are_VBP included_VBN by_IN
+        the_DT probability_NN distribution_NN for_IN the_DT set_NN of_IN motifs_NNS
+        prescribed_VBN by_IN the_DT number_NN of_IN positions_NNS within_IN the_DT group_NN ;_: for_IN
+        example_NN ,_, a_DT group_NN of_IN four_CD positions_NNS would_MD be_VB modeled_VBN by_IN the_DT
+        probability_NN distribution_NN for_IN the_DT 256_CD possible_JJ quadruplet_NN
+        motifs_NNS ._. The_DT models_NNS compute_VB an_DT RSS_NNP information_NN content_NN
+        score_NN ,_, 
+        RIC_NNP ,_, for_IN any_DT RSS-length_NNP sequence_NN ,_,
+        that_WDT is_VBZ ,_, 28_CD -_: bp_NN segments_NNS are_VBP scored_VBN by_IN the_DT 12_CD -_: RSS_NNP model_NN and_CC
+        39_CD -_: bp_NN segments_NNS are_VBP scored_VBN by_IN the_DT 23_CD -_: RSS_NNP model_NN ._.
+        Model_NNP selection_NN evaluates_VBZ all_DT possible_JJ combinations_NNS of_IN
+        probability_NN distributions_NNS in_IN a_DT stepwise_NN fashion_NN ,_, so_IN the_DT
+        correlation_NN structure_NN of_IN RSS_NNP is_VBZ not_RB specified_VBN nor_CC assumed_VBN ,_,
+        but_CC rather_RB detected_VBD ._. Interestingly_RB ,_, the_DT positions_NNS
+        exhibiting_VBG the_DT strongest_JJS correlation_NN overlap_VB substantially_RB
+        with_IN the_DT RSS_NNP nucleotides_NNS that_WDT contact_NN the_DT recombinase_NN
+        (_( Figure_NN 2_CD and_CC [_NN 53_CD ]_NN )_) ,_, offering_NN support_NN for_IN the_DT hypothesis_NNS
+        that_IN positions_NNS acting_VBG cooperatively_RB to_TO influence_VB binding_VBG by_IN
+        the_DT recombinase_NN coevolve_NN ._. This_DT overlap_VB also_RB suggests_VBZ that_IN
+        the_DT correlation_NN structure_NN detected_VBN by_IN our_PRP$ model_NN selection_NN
+        procedure_NN is_VBZ relevant_JJ to_TO RSS_NNP function_NN ._.
+        To_TO determine_VB if_IN modeling_VBG the_DT correlation_NN structure_NN
+        specific_JJ to_TO RSS_NNP improves_VBZ RSS_NNP recognition_NN and_CC evaluation_NN ,_, we_PRP
+        compared_VBD the_DT 
+        RIC_NNP models_NNS with_IN models_NNS that_WDT assume_VBP
+        RSS_NNP positions_NNS are_VBP independent_JJ (_( order_NN zero_CD Markov_NNP models_NNS ,_, 
+        WM_NNP 0_CD )_) and_CC models_NNS that_WDT assume_VBP adjacent_JJ
+        positions_NNS are_VBP correlated_JJ (_( order_NN one_CD Markov_NNP models_NNS ,_, 
+        WM_NNP 1_LS )_) ._. In_IN general_JJ we_PRP find_VBP that_RB ,_, while_IN
+        all_DT models_NNS predict_VBP RSS_NNP function_NN equally_RB well_RB ,_, with_IN
+        Spearman_NNP 's_POS rank_NN correlation_NN coefficients_NNS around_IN 0_CD ._. 81_CD for_IN
+        12_CD -_: RSS_NNP and_CC 0_CD ._. 88_CD for_IN 23_CD -_: RSS_NNP ,_, the_DT 
+        RIC_NNP models_NNS are_VBP better_JJR at_IN
+        discriminating_VBG between_IN RSS_NNP and_CC non-_NN RSS_NNP segments_NNS ._. This_DT is_VBZ
+        especially_RB true_JJ for_IN the_DT degenerate_VB relatives_NNS of_IN RSS_NNP -_: cRSS_NN
+        and_CC pseudogene-associated_JJ RSS_NNP ._.
+        Under_IN each_DT model_NN ,_, we_PRP compared_VBD the_DT score_NN distribution_NN for_IN
+        physiologic_JJ RSS_NNP with_IN that_DT for_IN non-_NN RSS_NNP segments_NNS ._. We_PRP find_VBP
+        that_IN the_DT two_CD distributions_NNS are_VBP most_RBS disparate_JJ under_IN the_DT 
+        RIC_NNP models_NNS (_( Figure_NN 3_LS )_) ._. While_IN
+        including_VBG correlation_NN in_IN the_DT models_NNS increases_VBZ the_DT scores_NNS
+        for_IN most_JJS physiologic_JJ RSS_NNP (_( Figure_NN 3_LS )_) ,_, assuming_VBG adjacent_JJ
+        positions_NNS are_VBP correlated_JJ increases_NNS scores_NNS nonspecifically_RB ,_,
+        raising_VBG the_DT background_NN scores_NNS (_( Figures_NNS 3_CD ,_, 4_LS )_) ._. The_DT
+        distribution_NN of_IN scores_NNS for_IN non-_NN RSS_NNP was_VBD approximated_JJ by_IN
+        computing_VBG the_DT score_NN for_IN all_DT RSS-length_NNP segments_NNS in_IN a_DT 200_CD -_: kb_NN
+        region_NN of_IN chromosome_NN 8_CD containing_VBG no_DT known_VBN RSS_NNP and_CC also_RB in_IN
+        a_DT pseudorandom_NN string_NN of_IN A_DT ,_, G_NNP ,_, C_NNP and_CC T_NN characters_NNS the_DT same_JJ
+        length_NN as_IN the_DT chromosome_NN 8_CD region_NN and_CC having_VBG the_DT same_JJ
+        nucleotide-usage_JJ frequencies_NNS ._.
+        We_PRP determined_VBD threshold_NN scores_NNS to_TO discriminate_JJ between_IN
+        functional_JJ RSS_NNP and_CC non-_NN RSS_NNP ._. The_DT lowest_JJS 5_CD %_NN of_IN scores_NNS for_IN
+        physiologic_JJ RSS_NNP under_IN each_DT model_NN were_VBD used_VBN as_IN test_NN
+        thresholds_NNS ;_: for_IN 17_CD of_IN 20_CD thresholds_NNS ,_, the_DT frequency_NN of_IN
+        non-_NN RSS_NNP scoring_VBG above_IN threshold_NN was_VBD lowest_JJS under_IN the_DT 
+        RIC_NNP models_NNS (_( Figure_NN 5_LS )_) ._. We_PRP selected_VBD
+        threshold_NN 
+        RIC_NNP scores_NNS (_( -_: 38_CD ._. 81_CD and_CC -_: 58_CD ._. 45_CD for_IN 12_CD -_:
+        and_CC 23_CD -_: RSS_NNP respectively_RB )_) ,_, at_IN which_WDT more_JJR than_IN 98_CD %_NN of_IN
+        physiologic_JJ RSS_NNP score_NN above_IN threshold_NN ,_, and_CC the_DT predicted_VBN
+        frequency_NN of_IN functional_JJ signals_NNS in_IN the_DT mouse_NN genome_NN is_VBZ on_IN
+        the_DT order_NN of_IN 10_CD -_: 4_CD (_( Table_NNP 6_CD )_) ._. Many_JJ of_IN the_DT signals_NNS identified_VBN
+        by_IN the_DT models_NNS may_MD mediate_VB recombination_NN ,_, and_CC so_IN this_DT
+        frequency_NN overestimates_NNS the_DT false-positive_JJ rate_NN ._. The_DT
+        false-positive_JJ rate_NN can_MD only_RB be_VB estimated_VBN by_IN testing_VBG a_DT
+        random_JJ sample_NN of_IN these_DT putative_JJ cRSS_NN for_IN function_NN ._.
+        We_PRP show_VBP that_IN the_DT threshold_NN scores_NNS can_MD be_VB effectively_RB
+        used_VBN to_TO screen_VB genomic_JJ DNA_NNP for_IN functional_JJ RSS_NNP ._. We_PRP screened_VBD
+        over_IN 650_CD kb_NN of_IN genomic_JJ DNA_NNP containing_VBG 39_CD physiologic_JJ RSS_NNP
+        (_( Table_NNP 6_CD )_) ,_, 12_CD of_IN which_WDT are_VBP not_RB part_VB of_IN the_DT RSS_NNP set_VBD used_VBN for_IN
+        parameter_NN estimation_NN ._. Under_IN all_DT models_NNS ,_, the_DT mean_JJ score_NN for_IN
+        non-_NN RSS_NNP is_VBZ lower_JJR than_IN the_DT mean_JJ score_NN for_IN physiologic_JJ RSS_NNP
+        associated_VBN with_IN functional_JJ gene_NN segments_NNS ,_, but_CC the_DT disparity_NN
+        between_IN the_DT two_CD sets_NNS of_IN scores_NNS is_VBZ always_RB greatest_JJS for_IN the_DT 
+        RIC_NNP models_NNS (_( Table_NNP 6_CD )_) ._. Only_RB four_CD RSS_NNP ,_,
+        one_CD 12_CD -_: RSS_NNP and_CC three_CD 23_CD -_: RSS_NNP have_VBP 
+        RIC_NNP scores_NNS below_IN their_PRP$ respective_JJ
+        threshold_NN scores_NNS ,_, and_CC all_DT four_CD are_VBP associated_VBN with_IN
+        pseudogenes_NNS ._. The_DT remaining_VBG four_CD pseudogene-associated_JJ RSS_NNP
+        included_VBN in_IN our_PRP$ search_NN are_VBP better_RBR recognized_VBN by_IN 
+        RIC_NNP than_IN by_IN 
+        WM_NNP 0_CD or_CC 
+        WM_NNP 1_CD (_( Figure_NN 7_CD )_) ._. Furthermore_RB ,_, we_PRP
+        computed_JJ the_DT 
+        RIC_NNP 
+        12_CD scores_NNS for_IN all_DT potential_JJ 3_CD '_POS →_NN 5_CD '_POS
+        oriented_VBN 12_CD -_: cRSS_NN in_IN three_CD V_NNP 
+        H_NNP gene_NN segments_NNS observed_VBD to_TO mediate_VB
+        receptor_NN editing_NN ._. Importantly_NNP ,_, cRSS_NN were_VBD not_RB included_VBN in_IN
+        the_DT estimation_NN set_VBN ._. Two_CD cRSS_NN are_VBP recognized_VBN by_IN all_DT three_CD
+        models_NNS ,_, but_CC the_DT third_NN is_VBZ recognized_VBN only_RB by_IN 
+        RIC_NNP (_( Figure_NN 8_CD )_) ._. We_PRP expect_VBP cRSS_NN and_CC
+        pseudogene-associated_JJ RSS_NNP to_TO be_VB under_IN less_RBR stringent_JJ
+        selection_NN pressure_NN than_IN physiologic_JJ RSS_NNP and_CC therefore_RB to_TO
+        have_VB lost_VBN some_DT of_IN their_PRP$ sequence_NN similarity_NN to_TO RSS_NNP ._. An_DT
+        important_JJ future_JJ test_NN of_IN the_DT 
+        RIC_NNP models_NNS will_MD be_VB to_TO scan_VB genomic_JJ
+        DNA_NNP prospectively_RB for_IN cRSS_NN and_CC show_NN that_IN the_DT cRSS_NN
+        identified_VBN mediate_VB recombination_NN by_IN the_DT V_NNP (_( D_NNP )_) J_NNP recombinase_NN ._.
+        We_PRP have_VBP successfully_RB used_VBN the_DT model_NN selection_NN procedure_NN
+        introduced_VBN here_RB to_TO develop_VB models_NNS for_IN two_CD sets_NNS of_IN highly_RB
+        variable_JJ and_CC complex_JJ binding_JJ sites_NNS ._. An_DT advantage_NN of_IN this_DT
+        procedure_NN is_VBZ that_IN the_DT correlation_NN structure_NN of_IN the_DT site_NN is_VBZ
+        determined_VBN from_IN the_DT statistical_JJ properties_NNS of_IN the_DT sequence_NN
+        set_VBN alone_RB ;_: therefore_RB ,_, the_DT sequence_NN properties_NNS governing_VBG
+        recognition_NN of_IN the_DT site_NN by_IN the_DT binding_JJ protein_NN (_( s_VBZ )_) can_MD be_VB
+        identified_VBN in_IN the_DT absence_NN of_IN experimental_JJ evaluation_NN of_IN
+        function_NN ._. Often_RB there_EX is_VBZ an_DT abundance_NN of_IN sequence_NN data_NNS that_WDT
+        has_VBZ not_RB yet_RB been_VBN ,_, or_CC perhaps_RB cannot_NN be_VB ,_, experimentally_RB
+        evaluated_VBN ._. Information_NNP about_IN the_DT correlation_NN structure_NN of_IN a_DT
+        binding_JJ site_NN can_MD give_VB important_JJ insight_NN into_IN how_WRB the_DT
+        binding_JJ site_NN and_CC binding_JJ protein_NN (_( s_VBZ )_) interact_NN ,_, and_CC may_MD
+        suggest_VB important_JJ experiments_NNS ._. In_IN addition_NN ,_, by_IN choosing_VBG the_DT
+        positions_NNS to_TO be_VB correlated_JJ independently_RB of_IN their_PRP$ relative_JJ
+        positions_NNS ,_, we_PRP are_VBP able_JJ to_TO model_VB highly_RB complex_JJ patterns_NNS
+        with_IN a_DT relatively_RB reduced_VBN increase_NN in_IN model_NN complexity_NN ._.
+        Inclusion_NNP of_IN highly_RB complex_JJ correlation_NN patterns_NNS in_IN models_NNS
+        of_IN DNA-sequence_NNP sites_NNS can_MD improve_VB the_DT precision_NN with_IN which_WDT
+        sites_NNS are_VBP identified_VBN and_CC functional_JJ levels_NNS are_VBP
+        predicted_VBN ._.
+      
+      
+        Materials_NNS and_CC methods_NNS
+        
+          RSS_NNP sequence_NN set_VBN
+          We_PRP analyzed_VBD 356_CD physiologic_JJ mouse_NN RSS_NNP from_IN all_DT 
+          Tcr_NNP and_CC 
+          Ig_NNP loci_NN available_JJ [_NN 62_CD ]_NN ._. About_IN 96_CD %_NN
+          (_( 340_CD /_NN 356_CD )_) of_IN the_DT RSS_NNP are_VBP associated_VBN with_IN functional_JJ V_NNP ,_, D_NNP
+          or_CC J_NNP gene_NN segments_NNS (_( Immunogenetics_NNP database_NN [_NN 57_CD ,_, 63_CD ,_,
+          64_CD ]_NN )_) ._. Two_CD are_VBP associated_VBN with_IN pseudogenes_NNS known_VBN to_TO
+          rearrange_VB ,_, and_CC two_CD are_VBP associated_VBN with_IN open_JJ reading_NN
+          frames_NNS (_( ORFs_NNP )_) also_RB known_VBN to_TO rearrange_VB (_( see_VB Immunogenetics_NNP
+          database_NN [_NN 57_CD ,_, 63_CD ,_, 64_CD ]_NN )_) ._. The_DT ability_NN of_IN the_DT remaining_VBG RSS_NNP
+          to_TO rearrange_VB is_VBZ unconfirmed_JJ ._.
+        
+        
+          Calculation_NNP of_IN position-wise_JJ entropy_NN and_CC mutual_JJ
+          information_NN
+          For_IN a_DT DNA_NNP sequence_NN alignment_NN ,_, the_DT position-wise_JJ
+          entropy_NN 
+          H_NNP 
+          
+            i_NNP 
+           [_NN 65_CD ]_NN measures_VBZ the_DT level_NN of_IN nucleotide_NN diversity_NN :_:
+          minimum_JJ 
+          H_NNP is_VBZ 0_CD and_CC indicates_VBZ strict_JJ
+          sequence_NN conservation_NN ;_: maximum_NN 
+          H_NNP is_VBZ 1_CD and_CC indicates_VBZ that_IN the_DT four_CD
+          nucleotides_NNS occur_VBP at_IN nearly_RB uniform_NN frequencies_NNS ._. The_DT
+          estimated_VBN entropy_NN at_IN the_DT 
+          i_NNP th_NN position_NN in_IN an_DT alignment_NN is_VBZ
+          given_VBN by_IN where_WRB 
+          p_NN 
+          
+          i_NNP ,_, 
+          j_NN  is_VBZ the_DT estimated_VBN probability_NN
+          of_IN nucleotide_NN 
+          j_NN at_IN position_NN 
+          i_NNP ._.
+          The_DT estimated_VBN mutual_JJ information_NN (_( 
+          MI_NNP )_) [_NN 51_CD ]_NN between_IN two_CD positions_NNS ,_, 
+          i_NNP and_CC 
+          i_NNP '_POS ,_, is_VBZ computed_JJ as_IN :_: 
+          MI_NNP 
+          
+          i_NNP ,_, 
+          i_NNP '_POS =_SYM 
+          H_NNP 
+          
+            i_NNP 
+           +_NN 
+          H_NNP 
+          
+          i_NNP '_POS -_: 
+          H_NNP 
+          
+          i_NNP ,_, 
+          i_NNP '_POS ,_, where_WRB 
+          H_NNP 
+          
+            i_NNP 
+           is_VBZ the_DT estimated_VBN entropy_NN computed_JJ from_IN the_DT frequency_NN
+          of_IN the_DT four_CD nucleotides_NNS at_IN position_NN 
+          i_NNP and_CC 
+          H_NNP 
+          
+          i_NNP ,_, 
+          i_NNP '_POS is_VBZ the_DT entropy_NN computed_JJ
+          using_VBG the_DT frequency_NN of_IN the_DT 16_CD pairs_NNS of_IN nucleotides_NNS at_IN the_DT
+          two_CD positions_NNS ._.
+          Nucleotide_NNP and_CC nucleotide_NN pair_NN probabilities_NNS are_VBP
+          themselves_PRP estimated_VBD using_VBG the_DT Bayesian_NNP posterior_NN mean_NN [_NN
+          66_CD ]_NN
+          
+          where_WRB 
+          m_NN 
+          
+          i_NNP ,_, 
+          s_VBZ  is_VBZ the_DT frequency_NN of_IN
+          nucleotide_NN or_CC nucleotide_NN pair_NN 
+          s_VBZ in_IN position_NN (_( s_VBZ )_) 
+          i_NNP of_IN the_DT alignment_NN ,_, 
+          N_NNP 
+          
+            i_NNP 
+           is_VBZ the_DT total_JJ number_NN of_IN sequences_NNS in_IN the_DT alignment_NN at_IN
+          position_NN (_( s_VBZ )_) 
+          i_NNP ,_, and_CC 
+          r_LS is_VBZ the_DT number_NN of_IN distinct_JJ classes_NNS
+          in_IN the_DT probability_NN distribution_NN (_( for_IN single_JJ nucleotides_NNS 
+          r_LS =_SYM 4_CD ,_, for_IN nucleotide_NN pairs_NNS ,_, 
+          r_LS =_SYM 16_CD ,_, and_CC so_RB on_IN )_) ._.
+          Under_IN the_DT null_NN hypothesis_NNS of_IN no_DT correlation_NN between_IN
+          nucleotide_NN positions_NNS in_IN RSS_NNP ,_, positive_JJ 
+          MI_NNP 
+          
+          i_NNP ,_, 
+          i_NNP '_POS values_NNS may_MD still_RB be_VB
+          observed_VBN ._. To_TO test_VB if_IN the_DT 
+          MI_NNP 
+          
+          i_NNP ,_, 
+          i_NNP '_POS values_NNS differ_VBP significantly_RB
+          from_IN 0_CD ,_, we_PRP randomized_JJ the_DT order_NN of_IN the_DT sequences_NNS in_IN
+          position_NN 
+          i_NNP '_POS and_CC recomputed_JJ 
+          MI_NNP 
+          
+          i_NNP ,_, 
+          i_NNP '_POS ._. By_IN randomizing_VBG the_DT order_NN
+          of_IN the_DT sequences_NNS in_IN one_CD position_NN but_CC not_RB the_DT other_JJ ,_, we_PRP
+          preserve_VB both_DT marginal_JJ distributions_NNS but_CC disrupt_VB any_DT
+          correlations_NNS ._. The_DT proportion_NN of_IN 300_CD permutations_NNS giving_VBG 
+          MI_NNP 
+          
+          i_NNP ,_, 
+          i_NNP '_POS values_NNS higher_JJR than_IN that_DT
+          observed_VBD in_IN the_DT data_NNS is_VBZ our_PRP$ estimate_NN for_IN the_DT 
+          p_NN value_NN under_IN the_DT null_NN
+          hypothesis_NNS ._.
+        
+        
+          Statistical_NNP models_NNS of_IN RSS_NNP structure_NN
+          Single_NNP models_NNS for_IN 12_CD -_: RSS_NNP and_CC 23_CD -_: RSS_NNP define_VB the_DT set_NN of_IN
+          probability_NN distributions_NNS that_WDT contain_VBP the_DT most_JJS
+          information_NN about_IN RSS_NNP structure_NN ._. We_PRP developed_VBD the_DT models_NNS
+          by_IN stepwise_NN model_NN enlargement_NN and_CC selection_NN ._. We_PRP begin_VBP
+          with_IN the_DT smallest_JJS models_NNS ,_, order_NN zero_CD Markov_NNP models_NNS
+          estimated_VBD under_IN the_DT assumption_NN of_IN pairwise_NN site_NN
+          independence_NN ._. These_DT models_NNS take_VBP as_IN the_DT probability_NN of_IN
+          observing_VBG a_DT sequence_NN 
+          S_NNP ,_, the_DT product_NN of_IN the_DT individual_JJ
+          marginal_JJ probabilities_NNS over_IN the_DT RSS_NNP positions_NNS ,_, 
+          P_NN (_( 
+          S_NNP )_) =_SYM Π_NN 
+          
+            i_NNP 
+           
+          P_NN 
+          
+            i_NNP 
+           (_( 
+          s_VBZ )_) where_WRB 
+          s_VBZ is_VBZ the_DT nucleotide_NN observed_VBD in_IN
+          sequence_NN 
+          S_NNP at_IN position_NN 
+          i_NNP ._. The_DT marginal_JJ probability_NN
+          distribution_NN for_IN a_DT position_NN defines_VBZ the_DT probability_NN of_IN
+          observing_VBG each_DT of_IN the_DT four_CD nucleotides_NNS at_IN that_DT position_NN
+          and_CC is_VBZ estimated_VBN from_IN the_DT RSS_NNP dataset_NN using_VBG the_DT Bayesian_NNP
+          estimator_NN for_IN 
+          P_NN 
+          
+            i_NNP 
+           (_( 
+          s_VBZ )_) described_VBN above_IN ._. Each_DT potential_JJ
+          model_NN enlargement_NN is_VBZ accomplished_VBN by_IN replacing_VBG the_DT
+          product_NN of_IN an_DT independent_JJ marginal_JJ probability_NN and_CC 
+          k_NN -_: variate_NN joint_JJ probability_NN by_IN a_DT
+          corresponding_JJ 
+          k_NN +_NN 1_CD -_: variate_NN joint_JJ
+          probability_NN ._.
+          For_IN example_NN ,_, the_DT first_JJ step_NN of_IN model_NN enlargement_NN for_IN
+          RSS_NNP of_IN length_NN 
+          N_NNP compares_VBZ all_DT possible_JJ
+          combinations_NNS of_IN one_CD joint_JJ probability_NN distribution_NN for_IN
+          two_CD positions_NNS and_CC marginal_JJ probability_NN distributions_NNS for_IN
+          the_DT remaining_VBG 
+          N_NNP -_: 2_CD ._. positions_NNS :_: for_IN every_DT pair_NN of_IN
+          positions_NNS 
+          i_NNP and_CC 
+          i_NNP '_POS ,_, there_EX is_VBZ the_DT model_NN
+          
+          Under_IN each_DT of_IN these_DT models_NNS we_PRP compute_VB scores_NNS by_IN taking_VBG
+          the_DT natural_JJ logarithm_NN of_IN 
+          P_NN (_( 
+          S_NNP )_) (_( ln_NN 
+          P_NN (_( 
+          S_NNP )_) )_) for_IN each_DT RSS_NNP in_IN the_DT dataset_NN
+          using_VBG leave-one-out_JJ cross-validation_JJ [_NN 67_CD ]_NN ._. Briefly_NNP ,_, for_IN
+          each_DT model_NN ,_, we_PRP exclude_VBP one_CD RSS_NNP from_IN the_DT dataset_NN ,_, estimate_NN
+          the_DT probability_NN distributions_NNS used_VBN in_IN the_DT model_NN from_IN the_DT
+          remaining_VBG RSS_NNP ,_, and_CC compute_VB ln_NN 
+          P_NN (_( 
+          S_NNP )_) for_IN the_DT excluded_VBN RSS_NNP ._. We_PRP
+          perform_VBP this_DT computation_NN for_IN each_DT RSS_NNP and_CC take_VB the_DT
+          average_JJ ln_NN 
+          P_NN (_( 
+          S_NNP )_) over_IN all_DT RSS_NNP ._. We_PRP then_RB select_VBP
+          the_DT combination_NN of_IN probability_NN distributions_NNS giving_VBG the_DT
+          largest_JJS average_NN ln_NN 
+          P_NN (_( 
+          S_NNP )_) ._.
+          The_DT second_JJ step_NN of_IN model_NN enlargement_NN expands_VBZ the_DT model_NN
+          selected_VBN in_IN step_NN one_CD by_IN comparing_VBG all_DT models_NNS within_IN two_CD
+          classes_NNS :_: those_DT based_VBN on_IN two_CD joint_JJ probability_NN
+          distributions_NNS ,_, the_DT one_CD formed_VBN in_IN step_NN one_CD and_CC one_CD for_IN an_DT
+          additional_JJ pair_NN of_IN positions_NNS ,_, and_CC marginal_JJ probability_NN
+          distributions_NNS for_IN the_DT remaining_VBG 
+          N_NNP -_: 4_CD positions_NNS ,_, and_CC those_DT based_VBN on_IN
+          one_CD joint_JJ probability_NN distribution_NN for_IN a_DT group_NN of_IN three_CD
+          positions_NNS ,_, the_DT pair_NN joint_JJ selected_VBN in_IN step_NN one_CD expanded_VBN
+          to_TO include_VB one_CD additional_JJ position_NN ,_, and_CC marginal_JJ
+          probability_NN distributions_NNS for_IN the_DT remaining_VBG 
+          N_NNP -_: 3_CD positions_NNS ._. We_PRP again_RB compute_VB
+          ln_NN 
+          P_NN (_( 
+          S_NNP )_) under_IN each_DT model_NN for_IN each_DT RSS_NNP
+          using_VBG leave-one-out_JJ cross-validation_JJ and_CC select_VB the_DT model_NN
+          giving_VBG the_DT largest_JJS average_NN ln_NN 
+          P_NN (_( 
+          S_NNP )_) ._.
+          We_PRP continued_VBD the_DT step-wise_JJ model_NN enlargement_NN and_CC
+          selection_NN ,_, iteratively_RB expanding_VBG the_DT models_NNS until_IN the_DT
+          mean_JJ ln_NN 
+          P_NN (_( 
+          S_NNP )_) ceased_VBD improving_VBG ._. The_DT final_JJ
+          model_NN is_VBZ not_RB necessarily_RB optimal_NN ,_, however_RB ;_: we_PRP perform_VBP the_DT
+          maximization_NN in_IN a_DT step-wise_JJ manner_NN and_CC so_RB ,_, as_IN in_IN any_DT
+          stepwise_NN statistical_JJ procedure_NN ,_, are_VBP not_RB guaranteed_VBN to_TO
+          achieve_VB the_DT global_JJ maximum_NN ._.
+          Once_RB the_DT final_JJ set_NN of_IN probability_NN distributions_NNS has_VBZ
+          been_VBN selected_VBN (_( the_DT mean_JJ ln_NN 
+          P_NN (_( 
+          S_NNP )_) no_RB longer_RB improves_VBZ )_) ,_, the_DT
+          parameters_NNS of_IN each_DT probability_NN distribution_NN are_VBP estimated_VBN
+          on_IN the_DT complete_JJ set_NN of_IN RSS_NNP ._. ln_NN 
+          P_NN (_( 
+          S_NNP )_) for_IN an_DT RSS_NNP is_VBZ a_DT value_NN between_IN -_:
+          ∞_NN and_CC 0_CD ._. If_IN RSS_NNP were_VBD strictly_RB conserved_JJ ,_, the_DT consensus_NN
+          RSS_NNP would_MD have_VB ln_NN 
+          P_NN (_( 
+          S_NNP )_) =_SYM 0_CD ._. We_PRP define_VB the_DT ln_NN 
+          P_NN (_( 
+          S_NNP )_) of_IN a_DT sequence_NN computed_JJ from_IN the_DT
+          final_JJ model_NN as_IN its_PRP$ RSS_NNP information_NN content_NN (_( 
+          RIC_NNP )_) ._. The_DT final_JJ models_NNS take_VBP the_DT
+          form_NN :_:
+          
+          RIC_NNP 
+          12_CD =_SYM ln_NN [_NN 
+          P_NN 
+          1_CD 
+          P_NN 
+          2_CD 
+          P_NN 
+          3_CD ,_, 15_CD ,_, 25_CD 
+          P_NN 
+          4_CD ,_, 5_CD 
+          P_NN 
+          6_CD ,_, 28_CD 
+          P_NN 
+          7_CD ,_, 8_CD ,_, 19_CD 
+          P_NN 
+          9_CD ,_, 26_CD 
+          P_NN 
+          10_CD ,_, 12_CD 
+          P_NN 
+          11_CD ,_, 27_CD 
+          P_NN 
+          13_CD ,_, 14_CD ,_, 23_CD 
+          P_NN 
+          16_CD ,_, 17_CD ,_, 18_CD 
+          P_NN 
+          20_CD ,_, 21_CD ,_, 22_CD 
+          P_NN 
+          24_CD ]_NN
+          and_CC
+          
+          RIC_NNP 
+          23_CD =_SYM ln_NN [_NN 
+          P_NN 
+          1_CD 
+          P_NN 
+          2_CD 
+          P_NN 
+          3_CD 
+          P_NN 
+          4_CD ,_, 14_CD 
+          P_NN 
+          5_CD ,_, 39_CD 
+          P_NN 
+          6_CD 
+          P_NN 
+          7_CD ,_, 24_CD ,_, 25_CD 
+          P_NN 
+          8_CD ,_, 9_CD ,_, 21_CD 
+          P_NN 
+          10_CD ,_, 16_CD 
+          P_NN 
+          11_CD ,_, 12_CD 
+          P_NN 
+          13_CD ,_, 22_CD 
+          P_NN 
+          15_CD ,_, 23_CD 
+          P_NN 
+          17_CD ,_, 18_CD 
+          P_NN 
+          19_CD ,_, 27_CD ,_, 30_CD ,_, 31_CD ,_, 32_CD ,_, 33_CD ,_, 37_CD 
+          P_NN 
+          20_CD ,_, 26_CD 
+          P_NN 
+          28_CD ,_, 29_CD 
+          P_NN 
+          34_CD ,_, 38_CD 
+          P_NN 
+          35_CD ,_, 36_CD ]_NN ._.
+          The_DT CA_NNP dinucleotide_NN at_IN positions_NNS 1_CD and_CC 2_CD of_IN the_DT
+          heptamer_NN is_VBZ required_VBN for_IN rearrangement_NN [_NN 46_CD ,_, 52_CD ,_, 68_CD ]_NN ._.
+          Therefore_RB ,_, the_DT models_NNS assign_VBP a_DT probability_NN of_IN 0_CD to_TO any_DT
+          RSS_NNP not_RB beginning_VBG with_IN CA_NNP ._.
+          RSS_NNP in_IN the_DT dataset_NN receive_VB higher_JJR 
+          RIC_NNP values_NNS (_( and_CC 
+          WM_NNP 0_CD and_CC 
+          WM_NNP 1_CD values_NNS ,_, see_VB below_IN )_) during_IN
+          genome_NN searches_NNS than_IN during_IN model_NN development_NN ,_, because_IN
+          the_DT sequence_NN for_IN which_WDT 
+          RIC_NNP is_VBZ calculated_VBN is_VBZ excluded_VBN from_IN
+          the_DT dataset_NN during_IN model_NN development_NN ,_, a_DT property_NN of_IN
+          leave-one-out_JJ cross-validation_JJ [_NN 67_CD ]_NN ._. In_IN contrast_NN ,_,
+          nucleotide_NN frequencies_NNS used_VBN in_IN the_DT searches_NNS are_VBP estimated_VBN
+          on_IN the_DT complete_JJ set_NN of_IN RSS_NNP ._. The_DT difference_NN between_IN the_DT
+          two_CD 
+          RIC_NNP values_NNS is_VBZ greatest_JJS for_IN rare_JJ
+          sequences_NNS and_CC ,_, in_IN general_JJ ,_, the_DT differences_NNS are_VBP larger_JJR for_IN
+          23_CD -_: RSS_NNP ._. The_DT difference_NN between_IN the_DT two_CD scores_NNS is_VBZ <_NN 1_CD
+          for_IN 78_CD %_NN of_IN 12_CD -_: RSS_NNP and_CC for_IN 39_CD %_NN of_IN 23_CD -_: RSS_NNP ._.
+        
+        
+          Markov_NNP models_NNS
+          We_PRP also_RB modeled_VBD RSS_NNP with_IN weight_NN matrices_NNS based_VBN on_IN an_DT
+          order_NN zero_CD or_CC order_NN one_CD Markov_NNP model_NN (_( reviewed_VBN in_IN [_NN 27_CD ]_NN )_) ._.
+          The_DT order_NN zero_CD Markov_NNP model_NN assumes_VBZ that_IN all_DT RSS_NNP
+          positions_NNS are_VBP independent_JJ ,_, so_IN the_DT probability_NN of_IN
+          observing_VBG a_DT sequence_NN 
+          S_NNP that_WDT is_VBZ 
+          N_NNP -_: bp_NN long_JJ is_VBZ :_:
+          
+          where_WRB 
+          P_NN 
+          
+            i_NNP 
+           (_( 
+          s_VBZ )_) is_VBZ the_DT probability_NN of_IN observing_VBG
+          nucleotide_NN 
+          s_VBZ at_IN RSS_NNP position_NN 
+          i_NNP ._. 
+          P_NN 
+          
+            i_NNP 
+           (_( 
+          s_VBZ )_) is_VBZ estimated_VBN as_IN described_VBN above_IN
+          from_IN the_DT set_NN of_IN physiologic_JJ 12_CD -_: or_CC 23_CD -_: RSS_NNP ._. The_DT score_NN for_IN
+          sequence_NN 
+          S_NNP is_VBZ then_RB the_DT natural_JJ logarithm_NN of_IN
+          the_DT probability_NN 
+          P_NN (_( 
+          S_NNP )_) ,_,
+          
+          The_DT order_NN one_CD Markov_NNP model_NN assumes_VBZ that_IN all_DT adjacent_JJ
+          positions_NNS are_VBP correlated_JJ ,_, so_IN the_DT probability_NN of_IN observing_VBG
+          sequence_NN 
+          S_NNP is_VBZ based_VBN on_IN conditional_JJ
+          probabilities_NNS :_:
+          
+          where_WRB 
+          P_NN (_( 
+          s_VBZ 
+          
+            i_NNP 
+           |_NN 
+          s_VBZ 
+          
+          i_NNP -_: 1_LS )_) is_VBZ the_DT probability_NN of_IN
+          observing_VBG nucleotide_NN 
+          s_VBZ 
+          
+            i_NNS 
+           in_IN position_NN 
+          i_NNP given_VBN that_DT nucleotide_NN 
+          s_VBZ 
+          
+          i_NNP -_: 1_CD occupies_VBZ position_NN 
+          i_NNP -_: 1_CD ._. From_IN Bayes_NNP rule_NN ,_,
+          
+          where_WRB 
+          P_NN (_( 
+          s_VBZ 
+          
+          i_NNP -_: 1_CD ,_, 
+          s_VBZ 
+          
+            i_NNP 
+           ,_, )_) is_VBZ the_DT joint_JJ probability_NN distribution_NN for_IN the_DT
+          dinucleotide_NN 
+          s_VBZ 
+          
+          i_NNP -_: 1_CD 
+          s_VBZ 
+          
+            i_NNP 
+           occurring_VBG at_IN the_DT pair_NN of_IN positions_NNS 
+          i_NNP -_: 1_CD and_CC 
+          i_NNP ._. Again_RB ,_, the_DT probability_NN
+          distributions_NNS are_VBP estimated_VBN from_IN the_DT physiologic_JJ 12_CD -_: or_CC
+          23_CD -_: RSS_NNP ,_, and_CC we_PRP take_VBP the_DT natural_JJ logarithm_NN of_IN the_DT
+          probability_NN 
+          P_NN (_( 
+          S_NNP )_) as_IN the_DT score_NN for_IN sequence_NN 
+          S_NNP :_:
+          
+        
+      
+    
+  

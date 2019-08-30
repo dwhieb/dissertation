@@ -1,0 +1,590 @@
+
+  
+    
+      
+        Rationale_NNP
+        The_DT volume_NN and_CC diversity_NN of_IN expressed_VBD sequence_NN tag_NN (_( EST_NNP )_)
+        data_NNS in_IN the_DT public_JJ databases_NNS makes_VBZ them_PRP an_DT important_JJ
+        resource_NN for_IN gene_NN identification_NN ,_, genome_NN annotation_NN and_CC
+        comparative_JJ genomics_NNS ._. The_DT value_NN of_IN EST_NNP data_NNS is_VBZ enhanced_VBN
+        when_WRB the_DT sequences_NNS are_VBP clustered_VBN (_( on_IN the_DT basis_NN of_IN sequence_NN
+        overlap_VB )_) to_TO reduce_VB redundancy_NN ._. In_IN some_DT cases_NNS these_DT sequence_NN
+        clusters_NNS can_MD be_VB used_VBN to_TO generate_VB a_DT consensus_NN sequence_NN that_WDT
+        represents_VBZ a_DT virtual_JJ transcript_NN ._. Examples_NNS of_IN electronic_JJ
+        transcript_NN data_NNS resources_NNS include_VBP UniGene_NNP [_NN 1_CD ]_NN ,_, TIGR_NNP Gene_NNP
+        Indices_NNP [_NN 2_CD ,_, 3_CD ]_NN ,_, DoTS_NNP [_NN 4_CD ]_NN and_CC STACK_NNP [_NN 5_CD ]_NN ._. Each_DT of_IN these_DT
+        resources_NNS differs_VBZ in_IN the_DT methods_NNS used_VBN to_TO reduce_VB the_DT
+        redundancy_NN in_IN EST_NNP sequence_NN data_NNS and_CC in_IN how_WRB the_DT data_NNS are_VBP
+        represented_VBN ._. For_IN example_NN ,_, UniGene_NNP uses_VBZ pairwise_NN sequence_NN
+        comparisons_NNS to_TO group_VB and_CC partition_NN EST_NNP and_CC other_JJ transcript_NN
+        sequences_NNS from_IN GenBank_NNP into_IN gene-orientated_JJ clusters_NNS with_IN
+        no_DT consensus_NN sequence_NN ._. The_DT other_JJ three_CD resources_NNS (_( TIGR_NNP Gene_NNP
+        Indices_NNP ,_, DoTS_NNP ,_, and_CC STACK_NNP )_) cluster_NN sequences_NNS from_IN ESTs_NNP and_CC
+        known_VBN transcripts_NNS and_CC then_RB assemble_VB the_DT members_NNS of_IN each_DT
+        cluster_NN to_TO produce_VB a_DT consensus_NN representation_NN of_IN the_DT
+        transcripts_NNS ._. The_DT algorithms_NNS and_CC /_NN or_CC parameters_NNS used_VBN to_TO guide_VB
+        the_DT clustering_VBG and_CC assembly_NN process_NN for_IN the_DT virtual_JJ
+        transcript_NN resources_NNS are_VBP similar_JJ ,_, but_CC not_RB identical_JJ ._. These_DT
+        resources_NNS also_RB differ_VBP with_IN respect_NN to_TO the_DT number_NN of_IN species_NNS
+        for_IN which_WDT EST_NNP assemblies_NNS are_VBP available_JJ ._. For_IN example_NN ,_, the_DT
+        STACK_NNP database_NN includes_VBZ only_RB human_JJ sequence_NN data_NNS ,_, DoTS_NNP has_VBZ
+        both_DT human_NN and_CC mouse_NN assemblies_NNS ,_, and_CC TIGR_NNP Gene_NNP Indices_NNP
+        maintains_VBZ separate_JJ electronic_JJ transcript_NN databases_NNS for_IN over_IN
+        50_CD species_NNS ._. In_IN contrast_NN to_TO computational_NN approaches_NNS to_TO
+        transcript_NN analysis_NN and_CC representation_NN ,_, the_DT Mammalian_NNP Gene_NNP
+        Collection_NNP (_( MGC_NNP )_) [_NN 6_CD ]_NN and_CC the_DT RIKEN_NNP Mouse_NNP Encyclopedia_NNP
+        projects_NNS [_NN 7_CD ]_NN are_VBP systematically_RB generating_VBG full-length_JJ
+        cDNA_NN clones_NNS with_IN the_DT aim_NN of_IN having_VBG at_IN least_JJS one_CD full-length_JJ
+        clone_NN reagent_NN and_CC sequence_NN for_IN every_DT human_JJ (_( MGC_NNP )_) and_CC mouse_NN
+        (_( MGC_NNP ,_, RIKEN_NNP )_) gene_NN ._.
+        The_DT Mouse_NNP Genome_NNP Informatics_NNP (_( MGI_NNP )_) database_NN [_NN 8_CD ]_NN
+        provides_VBZ integrated_VBN access_NN to_TO genetic_JJ ,_, genomic_JJ and_CC
+        biological_JJ data_NNS for_IN the_DT laboratory_NN mouse_NN ._. The_DT MGI_NNP database_NN
+        represents_VBZ an_DT integrated_VBN platform_NN to_TO which_WDT several_JJ related_VBN
+        projects_NNS contribute_VBP ,_, including_VBG the_DT Mouse_NNP Genome_NNP Database_NNP
+        (_( MGD_NNP )_) [_NN 9_CD ]_NN ,_, the_DT Gene_NNP Expression_NNP Database_NNP (_( GXD_NNP )_) [_NN 10_CD ]_NN ,_, the_DT
+        Mouse_NNP Genome_NNP Sequence_NNP (_( MGS_NNP )_) project_NN [_NN 11_CD ]_NN ,_, the_DT Mouse_NNP Tumor_NNP
+        Biology_NNP (_( MTB_NNP )_) database_NN [_NN 12_CD ]_NN ,_, and_CC the_DT Gene_NNP Ontology_NNP (_( GO_NNP )_)
+        project_NN [_NN 13_CD ]_NN ._. MGI_NNP provides_VBZ access_NN to_TO gene_NN annotation_NN and_CC
+        nomenclature_NN ,_, mapping_NN ,_, nucleotide_NN and_CC protein_NN sequences_NNS ,_,
+        mammalian_JJ gene_NN homology_NN ,_, gene_NN expression_NN ,_, phenotypes_NNS ,_,
+        allelic_JJ variants_NNS and_CC mutants_NNS and_CC strain_NN data_NNS ._. The_DT
+        information_NN in_IN the_DT MGI_NNP database_NN is_VBZ updated_VBN daily_JJ by_IN
+        professional_JJ scientific_JJ curators_NNS who_WP extract_VB relevant_JJ data_NNS
+        from_IN the_DT scientific_JJ literature_NN and_CC other_JJ sources_NNS ._. MGI_NNP staff_NN
+        curate_NN associations_NNS between_IN genes_NNS and_CC nucleotide_NN and_CC
+        protein_NN sequences_NNS in_IN collaboration_NN with_IN other_JJ database_NN
+        groups_NNS ,_, including_VBG SWISS-PROT_NNP [_NN 14_CD ]_NN ,_, RIKEN_NNP [_NN 7_CD ]_NN ,_, and_CC the_DT
+        National_NNP Center_NNP for_IN Biotechnology_NNP Information_NNP 's_POS LocusLink_NNP [_NN
+        15_CD ,_, 16_CD ]_NN ._. Genes_NNP in_IN MGI_NNP are_VBP given_VBN unique_JJ ,_, permanent_JJ accession_NN
+        ids_NNS to_TO facilitate_VB stable_JJ cross-references_JJ with_IN other_JJ
+        databases_NNS even_RB when_WRB such_JJ information_NN as_IN gene_NN name_NN ,_,
+        functional_JJ annotation_NN ,_, and_CC so_RB on_IN changes_NNS over_IN time_NN [_NN 11_CD ]_NN ._.
+        Table_NNP 1_CD shows_VBZ a_DT summary_NN of_IN some_DT of_IN the_DT MGI_NNP database_NN
+        content_NN ._.
+        The_DT utility_NN of_IN both_DT experimentally_RB and_CC computationally_RB
+        derived_VBN transcript_NN resources_NNS are_VBP greatly_RB enhanced_VBN when_WRB the_DT
+        transcripts_NNS are_VBP associated_VBN with_IN well_RB curated_JJ biological_JJ
+        knowledge_NN about_IN the_DT genes_NNS with_IN which_WDT the_DT transcripts_NNS are_VBP
+        associated_VBN [_NN 11_CD ]_NN ._. However_RB ,_, manual_JJ curation_NN of_IN
+        computationally_RB derived_VBN transcript_NN data_NNS is_VBZ not_RB feasible_JJ
+        because_IN the_DT underlying_VBG data_NN for_IN these_DT resources_NNS are_VBP
+        constantly_RB changing_VBG ._. Therefore_RB ,_, we_PRP have_VBP developed_VBN a_DT
+        semi-automated_JJ curation_NN process_NN to_TO create_VB and_CC update_VB
+        associations_NNS between_IN constantly_RB changing_VBG electronic_JJ
+        transcript_NN databases_NNS and_CC the_DT genes_NNS represented_VBD in_IN the_DT MGI_NNP
+        database_NN ._. Associations_NNP are_VBP based_VBN on_IN GenBank_NNP sequence_NN
+        accession_NN identifiers_NNS shared_VBN between_IN MGI_NNP genes_NNS and_CC
+        transcript_NN clusters_NNS /_NN assemblies_NNS ._. Although_IN associations_NNS
+        between_IN the_DT genes_NNS in_IN MGI_NNP and_CC the_DT electronic_JJ transcripts_NNS
+        could_MD also_RB be_VB made_VBN on_IN the_DT basis_NN of_IN sequence_NN similarity_NN ,_, the_DT
+        use_NN of_IN shared_VBN accession_NN ids_NNS is_VBZ faster_RBR and_CC avoids_VBZ
+        inconsistencies_NNS in_IN sequence-to-gene_JJ associations_NNS that_WDT arise_VBP
+        from_IN highly_RB similar_JJ sequence_NN among_IN members_NNS of_IN multigene_NN
+        families_NNS ._.
+      
+      
+        Transitive_NNP associations_NNS between_IN MGI_NNP genes_NNS and_CC
+        assembled_VBN transcripts_NNS
+        To_TO establish_VB associations_NNS between_IN MGI_NNP genes_NNS and_CC the_DT
+        Institute_NNP for_IN Genomic_NNP Research_NNP (_( TIGR_NNP )_) mouse_NN gene_NN index_NN
+        tentative_JJ consensus_NN sequence_NN (_( TCs_NNP )_) or_CC DoTS_NNP mouse_NN transcript_NN
+        assemblies_NNS (_( DTs_NNP )_) ,_, we_PRP used_VBD GenBank_NNP sequence_NN accession_NN
+        identifiers_NNS (_( GB_NNP )_) that_WDT are_VBP associated_VBN with_IN genes_NNS in_IN the_DT MGI_NNP
+        database_NN and_CC are_VBP also_RB component_NN sequences_NNS of_IN transcript_NN
+        assemblies_NNS as_IN bridges_NNS ._. All_DT gene-to-transcript_JJ associations_NNS
+        are_VBP represented_VBN as_IN a_DT set_NN of_IN graphs_NNS (_( Figure_NN 1_LS )_) ._. Nodes_NNP of_IN the_DT
+        graph_NN are_VBP members_NNS of_IN a_DT group_NN of_IN interrelated_JJ MGI_NNP genes_NNS and_CC
+        transcript_NN assemblies_NNS ,_, and_CC each_DT edge_NN is_VBZ a_DT group_NN of_IN GenBank_NNP
+        sequence_NN accession_NN identifiers_NNS that_WDT are_VBP shared_VBN by_IN the_DT
+        related_VBN MGI_NNP gene_NN and_CC the_DT transcript_NN assembly_NN ._.
+        We_PRP first_RB generated_VBD a_DT set_NN of_IN GenBank_NNP sequence_NN accession_NN
+        identifiers_NNS that_WDT have_VBP trusted_VBN associations_NNS (_( that_WDT is_VBZ they_PRP
+        have_VBP been_VBN manually_RB curated_JJ )_) with_IN mouse_NN genes_NNS represented_VBD in_IN
+        MGI_NNP ._. A_DT daily_JJ report_NN of_IN the_DT associations_NNS of_IN MGI_NNP markers_NNS and_CC
+        GenBank_NNP sequences_NNS ,_, MRK_NNP __NN Sequence_NNP ._. rpt_NN ,_, is_VBZ available_JJ from_IN the_DT
+        MGI_NNP public_JJ FTP_NNP site_NN [_NN 17_CD ]_NN ._. We_PRP removed_VBD sequences_NNS associated_VBN
+        with_IN more_JJR than_IN one_CD gene_NN object_VBP in_IN MGI_NNP (_( for_IN example_NN ,_, large_RB
+        cloned_VBN inserts_NNS containing_VBG multiple_JJ genes_NNS )_) to_TO avoid_VB
+        confounding_VBG multiple_JJ genes_NNS to_TO sequence_NN associations_NNS ._. After_IN
+        this_DT filtering_VBG step_NN ,_, the_DT relationships_NNS of_IN MGI_NNP genes_NNS to_TO
+        GenBank_NNP sequences_NNS were_VBD maintained_VBN in_IN a_DT dictionary_JJ data_NN
+        structure_NN ,_, MGI-GB_NNP ,_, with_IN MGI_NNP accession_NN numbers_NNS as_IN keys_NNS and_CC
+        GenBank_NNP accession_NN identifiers_NNS as_IN values_NNS ._.
+        A_DT second_JJ dictionary_JJ ,_, GB-MGI_NNP (_( GB_NNP as_IN keys_NNS and_CC MGI_NNP as_IN
+        values_NNS )_) ,_, was_VBD generated_VBN by_IN reversing_VBG the_DT keys_NNS and_CC values_NNS of_IN
+        MGI-GB_NNP ._. A_DT report_NN with_IN all_DT DT_NNP identifiers_NNS and_CC their_PRP$
+        constituent_NN GenBank_NNP sequences_NNS accession_NN identifiers_NNS ,_,
+        musDoTS_NN __NN rel_NN 5_CD __NN accessionsPerAssembly_RB ._. dat_NN ._. gz_NN file_NN (_( Release_NNP
+        5_CD ._. 0_CD ,_, 19_CD August_NNP 2002_CD )_) ,_, was_VBD downloaded_JJ from_IN CBIL_NNP 's_POS website_NN [_NN
+        18_CD ]_NN ._.
+        A_DT report_NN containing_VBG TIGR_NNP Mouse_NNP Gene_NNP Index_NNP TC_NNP identifiers_NNS
+        and_CC their_PRP$ constituent_NN GenBank_NNP sequence_NN identifiers_NNS was_VBD
+        generated_VBN from_IN TIGR_NNP Mouse_NNP Gene_NNP Index_NNP Release_NNP 9_CD ._. 0_CD (_( October_NNP
+        1_CD ,_, 2002_CD )_) (_( Geo_NNP Pertea_NNP ,_, personal_JJ communication_NN )_) ._. This_DT report_NN
+        was_VBD used_VBN to_TO create_VB two_CD dictionaries_NNS ,_, TC-GB_NNP (_( TC_NNP as_IN keys_NNS and_CC
+        GB_NNP as_IN values_NNS )_) and_CC GB-TC_NNP (_( GB_NNP as_IN keys_NNS and_CC TC_NNP as_IN values_NNS )_) to_TO
+        map_VB TCs_NNP to_TO GenBank_NNP sequence_NN accession_NN ids_NNS ._. There_EX were_VBD many_JJ
+        more_JJR GenBank_NNP sequences_NNS (_( mostly_RB ESTs_NNP )_) in_IN the_DT TIGR_NNP Mouse_NNP Gene_NNP
+        Index_NNP than_IN in_IN the_DT MGI_NNP database_NN because_IN the_DT TIGR_NNP Mouse_NNP Gene_NNP
+        Index_NNP was_VBD built_VBN on_IN all_DT available_JJ GenBank_NNP sequences_NNS ,_, and_CC MGI_NNP
+        curated_JJ only_RB a_DT subset_NN of_IN them_PRP (_( mostly_RB mRNA_NN and_CC RefSeq_NNP
+        sequences_NNS )_) ._. Only_RB GenBank_NNP sequence_NN accession_NN identifiers_NNS
+        that_WDT appear_VBP in_IN the_DT MGI_NNP database_NN were_VBD retained_VBN in_IN TC-GB_NNP and_CC
+        GB-TC_NNP because_IN those_DT sequences_NNS will_MD bridge_VB the_DT transitive_JJ
+        associations_NNS between_IN MGI_NNP genes_NNS and_CC TCs_NNP ._. Sequences_NNP
+        associated_VBN with_IN more_JJR than_IN one_CD TC_NNP were_VBD removed_VBN ._.
+        Two_CD of_IN the_DT dictionaries_NNS described_VBD above_IN ,_, MGI-GB_NNP and_CC
+        GB-TC_NNP ,_, were_VBD used_VBN to_TO link_VB MGI_NNP genes_NNS to_TO TCs_NNP on_IN the_DT basis_NN of_IN
+        shared_VBN GenBank_NNP sequences_NNS ._. A_DT dictionary_JJ ,_, MGI-TC-via-GB_NNP (_( MGI_NNP
+        as_IN keys_NNS and_CC TC_NNP as_IN values_NNS )_) ,_, was_VBD used_VBN to_TO maintain_VB the_DT
+        gene-to-transcript_JJ associations_NNS and_CC their_PRP$ supporting_VBG
+        GenBank_NNP sequences_NNS ._. For_IN each_DT GenBank_NNP accession_NN identifier_NN in_IN
+        MGI-GB_NNP ,_, the_DT related_VBN TC_NNP identifier_NN in_IN GB-TC_NNP was_VBD retrieved_VBN
+        and_CC added_VBD as_IN a_DT value_NN to_TO the_DT MGI_NNP accession_NN identifier_NN key_JJ ,_,
+        keeping_VBG the_DT GenBank_NNP accession_NN identifiers_NNS as_IN a_DT line_NN of_IN
+        evidence_NN in_IN support_NN of_IN the_DT link_NN ._. When_WRB more_JJR than_IN one_CD GenBank_NNP
+        sequence_NN supports_VBZ the_DT same_JJ MGI-to-TC_NNP link_NN ,_, all_DT were_VBD
+        attached_VBN to_TO the_DT same_JJ TC_NNP ._. Figure_NN 2_CD ashows_NNS examples_NNS of_IN links_NNS
+        from_IN MGI_NNP genes_NNS to_TO TCs_NNP with_IN the_DT supporting_VBG GenBank_NNP
+        sequences_NNS ._. Of_IN MGI_NNP genetic_JJ markers_NNS with_IN GenBank_NNP sequences_NNS ,_,
+        71_CD ._. 3_LS %_NN (_( 20_CD ,_, 772_CD out_IN of_IN 29_CD ,_, 144_CD )_) of_IN were_VBD linked_VBN to_TO one_CD or_CC more_JJR
+        TCs_NNP in_IN this_DT analysis_NN ._. The_DT majority_NN of_IN MGI_NNP markers_NNS with_IN no_DT
+        TC_NNP associations_NNS have_VBP only_RB one_CD GenBank_NNP sequence_NN ,_, which_WDT is_VBZ
+        either_CC singleton_NN mRNA_NN /_NN EST_NNP sequence_NN with_IN no_DT TC_NNP accession_NN
+        number_NN assigned_VBN or_CC DNA_NNP sequence_NN excluded_VBN from_IN building_NN TIGR_NNP
+        Mouse_NNP Gene_NNP Index_NNP ._. Table_NNP 2_CD summarizes_NNS the_DT associations_NNS
+        between_IN MGI_NNP markers_NNS and_CC TIGR_NNP Mouse_NNP Gene_NNP Index_NNP TCs_NNP ._.
+        Two_CD other_JJ dictionaries_NNS ,_, TC-GB_NNP and_CC GB-MGI_NNP ,_, were_VBD used_VBN to_TO
+        link_VB TCs_NNP to_TO MGI_NNP genes_NNS in_IN the_DT same_JJ way_NN ._. A_DT dictionary_JJ ,_,
+        TC-MGI-via-GB_NNP (_( TC_NNP as_IN keys_NNS and_CC MGI_NNP as_IN values_NNS )_) ,_, was_VBD used_VBN to_TO
+        maintain_VB links_NNS from_IN TCs_NNP to_TO MGI_NNP genes_NNS and_CC the_DT supporting_VBG
+        GenBank_NNP sequences_NNS ._. Figure_NN 2_CD bshows_NNS examples_NNS of_IN links_NNS from_IN
+        TCs_NNP to_TO MGI_NNP genes_NNS with_IN the_DT supporting_VBG GenBank_NNP sequences_NNS ._.
+        19_CD ._. 8_CD %_NN (_( 20_CD ,_, 942_CD out_IN of_IN 105_CD ,_, 520_CD )_) of_IN TCs_NNP (_( excluding_VBG singletons_NNS )_)
+        were_VBD linked_VBN to_TO one_CD or_CC more_JJR MGI_NNP genes_NNS ._.
+        The_DT same_JJ approaches_NNS were_VBD also_RB used_VBN to_TO associate_JJ MGI_NNP
+        genetic_JJ markers_NNS to_TO DoTS_NNP DTs_NNP ._. A_DT report_NN with_IN all_DT DT_NNP
+        identifiers_NNS and_CC their_PRP$ constituent_NN GenBank_NNP sequence_NN
+        accession_NN identifiers_NNS was_VBD downloaded_JJ from_IN CBIL_NNP 's_POS website_NN
+        (_( Release_NNP 5_CD ._. 0_CD ,_, 19_CD August_NNP ,_, 2002_CD )_) ._. The_DT
+        musDoTS_NN __NN 1_CD -_: 7_CD -_: 02_CD __NN containedIds_NNS ._. dat_NN ._. gz_NN file_NN can_MD be_VB downloaded_JJ
+        from_IN this_DT site_NN [_NN 18_CD ]_NN ._. The_DT report_NN lists_NNS both_DT DoTS_NNP assemblies_NNS
+        (_( excluding_VBG singletons_NNS )_) and_CC singletons_NNS ._. We_PRP included_VBD only_RB
+        assemblies_NNS in_IN our_PRP$ analysis_NN ._. Statistics_NNS of_IN associations_NNS of_IN
+        MGI_NNP markers_NNS and_CC DTs_NNP are_VBP shown_VBN in_IN Table_NNP 2_CD ._. The_DT analysis_NN
+        linked_VBD 83_CD ._. 5_LS %_NN (_( 24_CD ,_, 340_CD out_IN of_IN 29_CD ,_, 144_CD )_) of_IN MGI_NNP markers_NNS with_IN
+        sequence_NN information_NN to_TO 20_CD ._. 1_LS %_NN (_( 25_CD ,_, 799_CD out_IN of_IN 128_CD ,_, 341_CD )_) of_IN
+        DTs_NNP ._. It_PRP is_VBZ not_RB surprising_JJ that_IN only_RB about_IN 20_CD %_NN of_IN DTs_NNP or_CC TCs_NNP
+        can_MD be_VB associated_VBN with_IN genes_NNS in_IN MGI_NNP because_IN the_DT majority_NN of_IN
+        the_DT assemblies_NNS are_VBP composed_VBN solely_RB of_IN EST_NNP sequences_NNS and_CC the_DT
+        MGI_NNP curation_NN processes_VBZ focus_VB primarily_RB on_IN collecting_VBG and_CC
+        curating_VBG associations_NNS with_IN genomic_JJ and_CC mRNA_NN sequence_NN data_NNS ._.
+        There_EX are_VBP a_DT total_NN of_IN 26_CD ,_, 440_CD DTs_NNP (_( including_VBG singletons_NNS )_) with_IN
+        mRNA_NN sequences_NNS and_CC 20_CD ,_, 908_CD of_IN them_PRP have_VBP MGI_NNP associations_NNS ._.
+        The_DT remaining_VBG 5_CD ,_, 532_CD DTs_NNP with_IN mRNA_NN sequences_NNS might_MD represent_VB
+        alternative_JJ transcripts_NNS of_IN MGI_NNP genes_NNS ,_, known_VBN genes_NNS not_RB yet_RB
+        represented_VBN by_IN MGI_NNP ,_, or_CC novel_NN genes_NNS ._. We_PRP will_MD evaluate_VB the_DT
+        component_NN sequences_NNS of_IN these_DT DTs_NNP and_CC incorporate_VB them_PRP into_IN
+        MGI_NNP database_NN over_IN time_NN through_IN manual_JJ curation_NN ._.
+      
+      
+        Classification_NNP of_IN the_DT relationships_NNS between_IN MGI_NNP genes_NNS
+        and_CC transcript_NN assemblies_NNS
+        
+          One-to-many_NNP associations_NNS between_IN genes_NNS and_CC
+          transcripts_NNS are_VBP related_VBN to_TO transcript_NN diversity_NN
+          The_DT TIGR_NNP Mouse_NNP Gene_NNP Index_NNP and_CC DoTS_NNP databases_NNS are_VBP
+          transcript_NN orientated_JJ ._. That_DT is_VBZ ,_, the_DT sequence_NN clustering_VBG
+          and_CC assembly_NN process_NN seeks_VBZ to_TO generate_VB distinct_JJ
+          assemblies_NNS for_IN every_DT form_NN of_IN transcript_NN ._. The_DT MGI_NNP database_NN
+          is_VBZ gene-centric_JJ and_CC associates_NNS transcripts_NNS from_IN the_DT same_JJ
+          locus_JJ to_TO a_DT single_JJ gene_NN object_VBP in_IN the_DT database_NN ._. Therefore_RB ,_,
+          in_IN many_JJ cases_NNS ,_, there_EX are_VBP multiple_JJ TCs_NNP /_NN DTs_NNP associated_VBN with_IN
+          a_DT single_JJ gene_NN in_IN the_DT MGI_NNP database_NN ._. The_DT average_JJ numbers_NNS of_IN
+          DTs_NNP /_NN TCs_NNP per_IN MGI_NNP gene_NN among_IN the_DT one-to-many_JJ associations_NNS
+          were_VBD 2_CD ._. 29_CD and_CC 2_CD ._. 24_CD ,_, respectively_RB ._.
+          Multiple_NNP TCs_NNP /_NN DTs_NNP associated_VBN with_IN a_DT single_JJ MGI_NNP gene_NN
+          often_RB represent_VB alternatively_RB spliced_JJ transcripts_NNS ._. For_IN
+          example_NN ,_, 
+          Ncam_NNP 1_CD (_( neural_NN cell_NN adhesion_NN
+          molecule_NN 1_LS )_) in_IN the_DT MGI_NNP database_NN (_( MGI_NNP :_: 97281_CD )_) was_VBD
+          associated_VBN with_IN five_CD TCs_NNP (_( TC_NNP 549908_CD ,_, TC_NNP 582634_CD ,_, TC_NNP 582635_CD ,_,
+          TC_NNP 640342_CD ,_, TC_NNP 640343_CD )_) and_CC with_IN five_CD DTs_NNP (_( DT_NNP ._. 487850_CD ,_,
+          DT_NNP ._. 87072470_CD ,_, DT_NNP ._. 87072472_CD ,_, DT_NNP ._. 97397085_CD ,_, and_CC DT_NNP ._. 97411237_CD )_) ._. 
+          Ncam_NNP 1_CD is_VBZ known_VBN to_TO exist_VB in_IN three_CD
+          prominent_JJ protein_NN isoforms_NNS encoded_JJ by_IN at_IN least_JJS four_CD
+          different_JJ transcripts_NNS generated_VBN from_IN alternative_NN splicing_VBG
+          [_NN 19_CD ]_NN ._. At_IN least_JJS eight_CD distinct_JJ mRNAs_NNS have_VBP been_VBN identified_VBN
+          by_IN a_DT variety_NN of_IN analyses_NNS ,_, and_CC 24_CD potential_JJ transcripts_NNS
+          have_VBP been_VBN proposed_VBN [_NN 20_CD ]_NN ._. These_DT one-to-many_JJ associations_NNS
+          caused_VBN by_IN alternative_NN splicing_VBG (_( and_CC /_NN or_CC alternative_NN
+          poly_RB (_( A_DT )_) addition_NN sites_NNS ,_, see_VB below_IN )_) were_VBD confirmed_VBN by_IN
+          mapping_VBG the_DT TCs_NNP or_CC DTs_NNP to_TO the_DT mouse_NN genome_NN assembly_NN using_VBG
+          BLAT_NNP search_NN at_IN the_DT University_NNP of_IN California_NNP Santa_NNP Cruz_NNP
+          (_( UCSC_NNP )_) genome_NN browser_NN [_NN 21_CD ]_NN ._. Figure_NN 3_CD ashows_NNS how_WRB these_DT
+          virtual_JJ transcripts_NNS align_VBP to_TO the_DT 
+          Ncam_NNP 1_CD gene_NN on_IN mouse_NN chromosome_NN
+          9_CD ._.
+          Multiple_NNP TCs_NNP or_CC DTs_NNP could_MD also_RB represent_VB products_NNS of_IN
+          transcription_NN from_IN alternative_JJ promoters_NNS and_CC /_NN or_CC
+          polyadenylation_NN sites_NNS of_IN a_DT single_JJ gene_NN ._. For_IN example_NN ,_, 
+          Dtna_NNP (_( dystrobrevin_NN alpha_NN )_) in_IN the_DT
+          MGI_NNP database_NN (_( MGI_NNP :_: 106039_CD )_) was_VBD associated_VBN with_IN five_CD TCs_NNP
+          (_( TC_NNP 546133_CD ,_, TC_NNP 569762_CD ,_, TC_NNP 577975_CD ,_, TC_NNP 590157_CD ,_, TC_NNP 633947_CD )_) and_CC
+          with_IN five_CD DTs_NNP (_( DT_NNP ._. 50316348_CD ,_, DT_NNP ._. 60101497_CD ,_, DT_NNP ._. 87050693_CD ,_,
+          DT_NNP ._. 91340878_CD and_CC DT_NNP ._. 91393353_CD )_) ._. The_DT 
+          Dtna_NNP gene_NN has_VBZ three_CD promoters_NNS that_WDT
+          are_VBP active_JJ in_IN tissue-specific_JJ manner_NN [_NN 22_CD ]_NN ._. Figure_NN
+          3_CD bclearly_RB shows_VBZ multiple_JJ transcripts_NNS from_IN three_CD promoters_NNS
+          of_IN 
+          Dtna_NNP gene_NN on_IN mouse_NN chromosome_NN 18_CD ._.
+          Experimental_NNP results_NNS suggested_VBD that_IN 
+          Ncam_NNP 1_CD contains_VBZ more_JJR than_IN one_CD
+          poly_RB (_( A_DT )_) addition_NN site_NN and_CC produces_VBZ transcripts_NNS with_IN
+          different_JJ 3_CD '_POS untranslated_JJ regions_NNS [_NN 19_CD ]_NN ._. Figure_NN
+          3_CD ademonstrates_NNS that_IN multiple_JJ virtual_JJ transcripts_NNS with_IN
+          different_JJ 3_CD '_POS ends_NNS align_VBP the_DT 
+          Ncam_NNP 1_CD gene_NN on_IN mouse_NN chromosome_NN
+          9_CD ._.
+          Another_DT explanation_NN for_IN one-to-many_JJ MGI_NNP gene_NN to_TO
+          DTs_NNP /_NN TCs_NNP associations_NNS is_VBZ multiple_JJ site-specific_JJ
+          recombination_NN or_CC DNA_NNP rearrangement_NN that_WDT occurs_VBZ normally_RB
+          in_IN certain_JJ cell_NN types_NNS ._. For_IN example_NN ,_, the_DT 
+          Igh-_NNP VS_NNP 107_CD (_( immunoglobulin_NN heavy_JJ
+          chain_NN (_( S_NNP 107_CD family_NN )_) )_) locus_JJ in_IN MGI_NNP (_( MGI_NNP :_: 96490_CD )_) was_VBD
+          associated_VBN with_IN four_CD TCs_NNP (_( TC_NNP 632874_CD ,_, TC_NNP 632875_CD ,_, TC_NNP 632877_CD
+          and_CC TC_NNP 643641_CD )_) and_CC with_IN three_CD DTs_NNP (_( DT_NNP ._. 94166135_CD ,_,
+          DT_NNP ._. 94209475_CD and_CC DT_NNP ._. 94398318_CD )_) ._. All_DT above_IN TCs_NNP /_NN DTs_NNP and_CC
+          sequences_NNS associated_VBN with_IN 
+          Igh-_NNP VS_NNP 107_CD were_VBD mapped_VBN to_TO the_DT same_JJ
+          locus_JJ on_IN chromosome_NN 12_CD using_VBG the_DT UCSC_NNP genome_NN browser_NN
+          (_( data_NNS not_RB shown_VBN )_) ._. The_DT sequence_NN differences_NNS of_IN 
+          Igh-_NNP VS_NNP 107_CD transcripts_NNS are_VBP readily_RB
+          explained_VBN by_IN normal_JJ DNA_NNP rearrangements_NNS (_( V_NNP (_( D_NNP )_) J_NNP
+          recombination_NN )_) [_NN 23_CD ]_NN ._. Another_DT example_NN is_VBZ that_IN 
+          H_NNP 2_CD -_: Eb_NNP 1_CD (_( histocompatibility_NN 2_CD ,_, class_NN
+          II_NNP antigen_NN E_NNP beta_NN )_) in_IN the_DT MGI_NNP database_NN (_( MGI_NNP :_: 95901_CD )_) was_VBD
+          associated_VBN with_IN four_CD TCs_NNP (_( TC_NNP 575977_CD ,_, TC_NNP 608775_CD ,_, TC_NNP 638140_CD
+          and_CC TC_NNP 640785_CD )_) and_CC with_IN two_CD DTs_NNP (_( DT_NNP ._. 493389_CD and_CC
+          DT_NNP ._. 55100612_CD )_) ._. The_DT 
+          H_NNP 2_CD -_: Eb_NNP 1_CD gene_NN contains_VBZ a_DT
+          recombination_NN hotspot_NN ,_, which_WDT has_VBZ a_DT predominant_NN role_NN in_IN
+          generating_VBG different_JJ recombinants_NNS through_IN meiotic_JJ
+          crossing-over_JJ within_IN the_DT I_PRP region_NN of_IN the_DT mouse_NN major_JJ
+          histocompatibility_NN complex_JJ (_( MHC_NNP )_) [_NN 24_CD ]_NN ._. All_DT above_IN TCs_NNP /_NN DTs_NNP
+          except_IN TC_NNP 575977_CD and_CC DT_NNP ._. 55100612_CD were_VBD mapped_VBN to_TO annotated_JJ 
+          H_NNP 2_CD -_: Eb_NNP 1_CD gene_NN on_IN chromosome_NN 17_CD using_VBG
+          the_DT UCSC_NNP genome_NN browser_NN (_( data_NNS not_RB shown_VBN )_) ._. TC_NNP 575977_CD and_CC
+          DT_NNP ._. 55100612_CD were_VBD associated_VBN to_TO 
+          H_NNP 2_CD -_: Eb_NNP 1_CD through_IN one_CD GenBank_NNP sequence_NN
+          AK_NNP 012147_CD ,_, which_WDT was_VBD mapped_VBN to_TO chromosome_NN 5_CD ._. Further_RB
+          analysis_NN indicated_VBD that_IN AK_NNP 012147_CD was_VBD incorrectly_RB
+          associated_VBN with_IN 
+          H_NNP 2_CD -_: Eb_NNP 1_CD ._. 
+          Non-biological_NNP explanations_NNS may_MD also_RB explain_VB some_DT of_IN
+          the_DT one-to-many_JJ associations_NNS among_IN genes_NNS and_CC transcripts_NNS
+          in_IN our_PRP$ analysis_NN ._. For_IN example_NN ,_, low-quality_JJ sequence_NN data_NNS
+          or_CC problematic_JJ sequences_NNS that_WDT are_VBP not_RB filtered_VBN out_IN before_IN
+          clustering_VBG and_CC assembly_NN can_MD cause_VB errors_NNS in_IN the_DT sequence_NN
+          assemblies_NNS ._. Another_DT possible_JJ explanation_NN is_VBZ that_DT
+          nucleotide_NN and_CC protein_NN sequences_NNS are_VBP occasionally_RB
+          associated_VBN with_IN the_DT wrong_JJ gene_NN in_IN MGI_NNP ._. This_DT will_MD always_RB
+          be_VB a_DT challenge_NN to_TO the_DT database_NN community_NN when_WRB both_DT
+          completeness_NN (_( including_VBG as_IN much_JJ data_NNS as_IN possible_JJ in_IN the_DT
+          database_NN )_) and_CC accuracy_NN (_( associating_VBG every_DT sequence_NN to_TO the_DT
+          right_JJ gene_NN )_) are_VBP goals_NNS ._. Fortunately_RB ,_, non-biological_JJ
+          reasons_NNS for_IN one-to-many_JJ associations_NNS between_IN transcripts_NNS
+          and_CC genes_NNS only_RB account_VBP for_IN a_DT small_JJ percentage_NN of_IN the_DT
+          whole_JJ dataset_NN based_VBN on_IN our_PRP$ experience_NN of_IN ongoing_JJ internal_JJ
+          quality_NN control_NN and_CC manual_JJ check_NN of_IN portions_NNS of_IN the_DT data_NNS
+          in_IN this_DT analysis_NN ._.
+        
+        
+          The_DT many-to-one_JJ associations_NNS between_IN genes_NNS and_CC
+          transcripts_NNS are_VBP evidence_NN for_IN over-clustering_JJ or_CC gene_NN
+          redundancy_NN in_IN MGI_NNP
+          In_IN the_DT analysis_NN reported_VBD here_RB ,_, 14_CD ._. 8_CD %_NN (_( 4_CD ,_, 302_CD out_IN of_IN
+          29_CD ,_, 144_CD )_) of_IN MGI_NNP genes_NNS with_IN sequence_NN information_NN were_VBD
+          involved_VBN in_IN many-to-one_JJ gene_NN to_TO TC_NNP transcript_NN
+          associations_NNS and_CC 12_CD ._. 4_LS %_NN (_( 3_CD ,_, 621_CD out_IN 29_CD ,_, 144_CD )_) in_IN many-to-one_JJ
+          gene_NN to_TO DT_NNP transcript_NN associations_NNS ._. The_DT average_JJ numbers_NNS
+          of_IN MGI_NNP genes_NNS per_IN DT_NNP /_NN TC_NNP were_VBD 2_CD ._. 16_CD and_CC 2_CD ._. 23_CD ,_, respectively_RB ._.
+          First_LS ,_, some_DT of_IN the_DT many-to-one_JJ associations_NNS are_VBP due_JJ to_TO
+          sequence_NN clusters_NNS that_WDT contain_VBP mistakenly_RB grouped_VBN similar_JJ
+          sequences_NNS from_IN closely_RB related_VBN genes_NNS (_( paralogs_NNS )_) ._. For_IN
+          example_NN ,_, sequences_NNS from_IN 14_CD members_NNS of_IN the_DT
+          defensin-related_JJ cryptdin_NN gene_NN family_NN were_VBD clustered_VBN into_IN
+          one_CD TC_NNP (_( TC_NNP 6_CD H_NNP 932_CD )_) and_CC to_TO one_CD DT_NNP (_( DT_NNP ._. 94272645_CD )_) ._. These_DT
+          genes_NNS share_VBP similar_JJ structure_NN and_CC sequence_NN ._. Their_PRP$ mRNAs_NNS
+          are_VBP distinguished_VBN by_IN a_DT 45_CD -_: nucleotide_NN 5_CD '_POS untranslated_JJ
+          sequence_NN (_( UTS_NNP )_) encoded_JJ completely_RB by_IN the_DT first_JJ exon_NN [_NN
+          25_CD ]_NN ._. Second_JJ ,_, genes_NNS adjacent_JJ to_TO each_DT other_JJ in_IN the_DT same_JJ
+          chromosomal_NN location_NN were_VBD occasionally_RB clustered_VBN together_RB
+          and_CC assembled_VBN into_IN one_CD sequence_NN because_IN their_PRP$ transcripts_NNS
+          overlap_VBP each_DT other_JJ ._. For_IN example_NN ,_, the_DT 3_CD '_POS end_NN of_IN 
+          Stk_NNP 11_CD (_( serine_NN /_NN threonine_NN kinase_NN 11_CD ;_:
+          MGI_NNP :_: 1341870_CD )_) is_VBZ in_IN very_RB close_JJ proximity_NN to_TO the_DT 3_CD '_POS end_NN of_IN
+          a_DT functionally_RB unrelated_JJ gene_NN dos_NNS (_( downstream_JJ of_IN 
+          Stk_NNP 11_CD ;_: MGI_NNP :_: 1354170_CD )_) and_CC it_PRP seems_VBZ
+          that_IN overlapping_VBG transcripts_NNS of_IN the_DT two_CD genes_NNS are_VBP
+          produced_VBN [_NN 26_CD ]_NN ._. Both_DT 
+          Stk_NNP 11_CD and_CC 
+          Dos_NNP were_VBD linked_VBN to_TO one_CD DT_NNP
+          (_( DT_NNP ._. 493186_CD )_) because_IN sequences_NNS associated_VBN with_IN both_DT genes_NNS
+          were_VBD clustered_VBN and_CC assembled_VBN together_RB ._. Third_NNP ,_, there_EX are_VBP
+          rare_JJ cases_NNS of_IN polycistronic_JJ transcripts_NNS in_IN mammalian_JJ
+          genomes_NNS ._. For_IN example_NN ,_, 
+          Snrpn_NNP (_( small_JJ nuclear_JJ
+          ribonucleoprotein_NN N_NNP ;_: MGI_NNP :_: 98347_CD )_) and_CC 
+          Snurf_NNP (_( 
+          SNRPN_NNP upstream_RB reading_NN frame_NN ;_: MGI_NNP :_:
+          1891236_CD )_) are_VBP expressed_VBN as_IN bicistronic_JJ 
+          Snurf-_NNP Snrpn_NNP transcript_NN [_NN 27_CD ]_NN and_CC
+          both_DT of_IN them_PRP were_VBD associated_VBN with_IN one_CD single_JJ TC_NNP
+          (_( TC_NNP 619385_CD )_) and_CC one_CD single_JJ DT_NNP (_( DT_NNP ._. 535946_CD )_) in_IN our_PRP$ analysis_NN ._.
+          Finally_RB ,_, many-to-one_JJ associations_NNS can_MD be_VB caused_VBN by_IN
+          uncorrected_JJ gene_NN redundancy_NN (_( one_CD gene_NN represented_VBN by_IN
+          multiple_JJ entries_NNS )_) in_IN the_DT MGI_NNP database_NN ._. The_DT majority_NN of_IN
+          the_DT redundant_JJ records_NNS are_VBP the_DT result_NN of_IN genes_NNS in_IN MGI_NNP that_WDT
+          are_VBP represented_VBN solely_RB by_IN EST_NNP sequences_NNS ._. As_IN these_DT
+          redundancies_NNS are_VBP identified_VBN in_IN MGI_NNP they_PRP are_VBP
+          corrected_VBN ._.
+        
+        
+          Many-to-many_NNP associations_NNS between_IN genes_NNS and_CC
+          transcripts_NNS could_MD be_VB the_DT result_NN of_IN any_DT combination_NN of_IN
+          many-to-one_JJ and_CC one-to-many_JJ associations_NNS
+          In_IN the_DT analysis_NN reported_VBD here_RB ,_, we_PRP had_VBD 531_CD MGI-DT_NNP and_CC
+          454_CD MGI-TC_NNP many-to-many_JJ associations_NNS ._. There_EX were_VBD 4_CD ._. 1_CD %_NN
+          (_( 1_CD ,_, 202_CD out_IN of_IN 29_CD ,_, 144_CD )_) of_IN MGI_NNP genes_NNS with_IN sequence_NN
+          information_NN and_CC 1_CD ,_, 355_CD DTs_NNP involved_VBD in_IN many-to-many_JJ MGI_NNP
+          gene_NN to_TO DT_NNP transcript_NN associations_NNS and_CC 3_CD ._. 6_CD %_NN (_( 1_CD ,_, 044_CD out_IN
+          29_CD ,_, 144_CD )_) of_IN MGI_NNP genes_NNS with_IN sequence_NN information_NN and_CC 1_CD ,_, 127_CD
+          TCs_NNP in_IN many-to-many_JJ MGI_NNP gene_NN to_TO TC_NNP transcript_NN
+          associations_NNS ._. The_DT average_JJ numbers_NNS of_IN MGI_NNP genes_NNS per_IN DT_NNP /_NN TC_NNP
+          were_VBD 2_CD ._. 26_CD and_CC 2_CD ._. 30_CD ,_, respectively_RB ,_, and_CC the_DT average_JJ numbers_NNS
+          of_IN DTs_NNP /_NN TCs_NNP per_IN MGI_NNP gene_NN were_VBD 2_CD ._. 55_CD and_CC 2_CD ._. 48_CD ,_, respectively_RB ._.
+          The_DT majority_NN of_IN the_DT many-to-many_JJ associations_NNS had_VBD only_RB
+          two_CD MGI_NNP genes_NNS and_CC two_CD DTs_NNP /_NN TCs_NNP ._. The_DT group_NN with_IN the_DT largest_JJS
+          number_NN of_IN MGI_NNP genes_NNS in_IN MGI-DT_NNP associations_NNS included_VBD eight_CD
+          paired-_NN Ig-like_NNP receptor_NN A_DT genes_NNS (_( 
+          Pira_NNP 1_CD ,_, Pira_NNP 2_CD ,_, Pira_NNP 3_CD ,_, Pira_NNP 4_CD ,_, Pira_NNP 5_CD ,_,
+          Pira_NNP 7_CD ,_, Pira_NNP 10_CD ,_, Pira_NNP 11_CD )_) and_CC two_CD DTs_NNP (_( DT_NNP ._. 87053023_CD and_CC
+          DT_NNP ._. 94272531_CD )_) ._. DNA_NN blot_NN analysis_NN indicated_VBD the_DT presence_NN
+          of_IN multiple_JJ paired-_NN Ig-like_NNP receptor_NN A_DT genes_NNS in_IN the_DT
+          genome_NN ,_, and_CC cDNA_NN sequencing_VBG analysis_NN suggested_VBD 0_CD ._. 2_CD -_: 4_CD ._. 7_CD %_NN
+          frequency_NN of_IN overall_JJ nucleotide_NN variations_NNS [_NN 28_CD ]_NN ._. The_DT
+          group_NN with_IN the_DT largest_JJS number_NN of_IN MGI_NNP genes_NNS in_IN MGI-TC_NNP
+          associations_NNS included_VBD six_CD eosinophil-associated_JJ
+          ribonuclease_NN (_( 
+          Ear_NN 1_CD ,_, Ear_NN 2_CD ,_, Ear_NN 3_CD ,_, Ear_NN 8_CD ,_, Ear_NN 9_CD and_CC 
+          Ear_NN 10_CD )_) and_CC RNA_NNP guanylyltransferase_NN
+          and_CC 5_CD '_POS -_: phosphatase_NN (_( 
+          Rngtt_NNP )_) and_CC four_CD TCs_NNP (_( TC_NNP 561767_CD ,_,
+          TC_NNP 569331_CD ,_, TC_NNP 557280_CD and_CC TC_NNP 557281_CD )_) ._. The_DT mouse_NN Ear_NN family_NN
+          has_VBZ at_IN least_JJS 13_CD members_NNS ,_, 11_CD functional_JJ genes_NNS and_CC 2_CD
+          pseudogenes_NNS [_NN 29_CD ]_NN ._. The_DT genes_NNS within_IN this_DT family_NN share_NN a_DT
+          common_JJ genomic_JJ structure_NN that_WDT is_VBZ conserved_JJ with_IN primate_NN
+          Ear_NN genes_NNS ._. The_DT mouse_NN Ear_NN gene_NN family_NN forms_NNS four_CD unique_JJ
+          clades_NNS (_( 
+          Ear_NN 1_CD /_NN 2_CD /_NN 3_CD /_NN 8_CD /_NN 9_CD /_NN 10_CD genes_NNS form_VBP
+          subfamily_RB A_DT )_) ._. The_DT members_NNS of_IN each_DT clade_NN share_NN a_DT high_JJ
+          degree_NN of_IN sequence_NN identity_NN ._. Transcripts_NNP from_IN 
+          Ear_NN 1_CD /_NN 2_CD /_NN 3_CD /_NN 8_CD /_NN 9_CD /_NN 10_CD were_VBD over-clustered_JJ
+          into_IN one_CD TC_NNP (_( TC_NNP 561767_CD )_) ._. TC_NNP 569331_CD was_VBD associated_VBN with_IN 
+          Ear_NN 2_CD because_IN of_IN shared_VBN EST_NNP sequence_NN
+          AA_NN 510162_CD and_CC associated_VBN with_IN 
+          Rngtt_NNP because_IN of_IN shared_VBN GenBank_NNP
+          sequence_NN AK_NNP 002922_CD ._. Sequence_NNP analysis_NN indicated_VBD that_DT
+          AA_NN 510162_CD encodes_NNS 
+          Rngtt_NNP instead_RB of_IN 
+          Ear_NN 2_CD ._. Further_RB analysis_NN suggested_VBD
+          that_IN a_DT typographical_JJ error_NN in_IN the_DT publication_NN [_NN 30_CD ]_NN
+          caused_VBD the_DT reported_VBD EST_NNP sequence_NN associated_VBN with_IN 
+          Ear_NN 2_CD to_TO be_VB AA_NN 510162_CD instead_RB of_IN
+          AA_NN 510161_CD ._. This_DT many-to-many_JJ association_NN can_MD be_VB resolved_VBN
+          into_IN one_CD many-to-one_JJ association_NN (_( six_CD Ear_NN genes_NNS to_TO
+          TC_NNP 561767_CD )_) caused_VBN by_IN over-clustering_JJ and_CC one_CD one-to-many_JJ
+          association_NN (_( one_CD MGI_NNP gene_NN 
+          Rngtt_NNP to_TO three_CD TCs_NNP )_) caused_VBN by_IN
+          transcript_NN diversity_NN ._. The_DT group_NN with_IN the_DT largest_JJS number_NN
+          of_IN DTs_NNP in_IN MGI-DT_NNP associations_NNS included_VBD 18_CD DTs_NNP and_CC three_CD
+          immunoglobin_NN heavy-chain_JJ genes_NNS (_( 
+          Igh-_NNP 4_CD ,_, Igh-_NNP VJ_NNP 558_CD and_CC 
+          Igh-_NNP V_NNP )_) ._. The_DT group_NN with_IN the_DT largest_JJS
+          number_NN of_IN TCs_NNP in_IN MGI-TC_NNP associations_NNS included_VBD 25_CD TCs_NNP and_CC
+          three_CD immunoglobin_NN heavy-chain_JJ genes_NNS (_( 
+          Igh-_NNP 4_CD ,_, Igh-_NNP VJ_NNP 558_CD and_CC 
+          Igh-_NNP 1_LS )_) ._. The_DT complexity_NN of_IN the_DT
+          many-to-many_JJ associations_NNS demonstrates_VBZ the_DT challenges_NNS of_IN
+          creating_VBG links_NNS between_IN genes_NNS and_CC electronic_JJ transcripts_NNS
+          and_CC highlights_VBZ the_DT caveats_NNS that_IN users_NNS of_IN these_DT resources_NNS
+          must_MD keep_VB in_IN mind_NN ._.
+        
+      
+      
+        Comparison_NNP of_IN DoTS_NNP and_CC TIGR_NNP Mouse_NNP Gene_NNP Index_NNP
+        
+          For_IN the_DT one-to-one_JJ MGI-DT_NNP and_CC MGI-TC_NNP associations_NNS ,_,
+          the_DT number_NN of_IN shared_VBN sequences_NNS between_IN DT_NNP and_CC TC_NNP pairs_NNS
+          linked_VBN to_TO the_DT same_JJ MGI_NNP gene_NN varies_VBZ
+          Our_PRP$ analysis_NN reported_VBD 16_CD ,_, 996_CD MGI-DT_NNP and_CC 13_CD ,_, 451_CD MGI-TC_NNP
+          one-to-one_JJ associations_NNS ._. A_DT total_NN of_IN 11_CD ,_, 126_CD MGI_NNP genes_NNS had_VBD
+          both_DT TC_NNP and_CC DT_NNP one-to-one_JJ associations_NNS ._. Among_IN these_DT ,_, all_DT
+          except_IN eight_CD pairs_NNS of_IN TC_NNP and_CC DT_NNP had_VBD one_CD or_CC more_JJR GenBank_NNP
+          sequences_NNS in_IN common_JJ (_( see_VB Table_NNP 4_CD for_IN details_NNS )_) ._. There_EX are_VBP
+          1_CD ,_, 305_CD MGI_NNP genes_NNS ,_, whose_WP$ associated_VBN DT_NNP and_CC TC_NNP pairs_NNS had_VBD
+          exactly_RB the_DT same_JJ component_NN sequences_NNS ._. The_DT assemblies_NNS that_WDT
+          were_VBD identical_JJ in_IN the_DT number_NN of_IN component_NN sequences_NNS were_VBD
+          generally_RB small_JJ clusters_NNS ._. Of_IN the_DT assemblies_NNS associated_VBN
+          with_IN the_DT 1_CD ,_, 305_CD MGI_NNP genes_NNS described_VBD above_IN ,_, 496_CD had_VBD only_RB
+          two_CD component_NN sequences_NNS ,_, 635_CD had_VBD three_CD to_TO five_CD component_NN
+          sequences_NNS ,_, 136_CD had_VBD six_CD to_TO ten_CD component_NN sequences_NNS ,_, and_CC 38_CD
+          had_VBD more_JJR than_IN ten_CD but_CC less_JJR than_IN 33_CD component_NN sequences_NNS ._.
+          Most_JJS TC_NNP and_CC DT_NNP pairs_NNS associated_VBN with_IN the_DT same_JJ MGI_NNP genes_NNS
+          have_VBP one_CD or_CC more_JJR sequences_NNS in_IN common_NN ._. The_DT number_NN of_IN
+          shared_VBN sequences_NNS between_IN DT_NNP and_CC TC_NNP varies_VBZ widely_RB ,_, ranging_VBG
+          from_IN one_CD to_TO more_JJR than_IN 1_CD ,_, 000_CD ._. The_DT maximum_NN number_NN of_IN shared_VBN
+          GenBank_NNP sequences_NNS is_VBZ 1_CD ,_, 157_CD between_IN DT_NNP ._. 9133761_CD and_CC
+          TC_NNP 615398_CD both_DT associated_VBN with_IN MGI_NNP gene_NN 
+          Svs_NNP 2_CD (_( seminal_NN vesicle_NN protein_NN ,_,
+          secretion_NN 2_CD ;_: MGI_NNP :_: 1858275_CD )_) ._. These_DT pairs_NNS generally_RB have_VBP
+          very_RB different_JJ numbers_NNS of_IN component_NN sequences_NNS ,_, ranging_VBG
+          from_IN only_RB two_CD to_TO more_JJR than_IN a_DT few_JJ thousand_CD sequences_NNS ._. TCs_NNP
+          generally_RB have_VBP larger_JJR numbers_NNS of_IN sequences_NNS per_IN cluster_NN
+          than_IN do_VBP DTs_NNP ._. The_DT maximum_NN number_NN of_IN component_NN sequences_NNS
+          for_IN DT_NNP and_CC TC_NNP are_VBP 1_CD ,_, 592_CD (_( DT_NNP ._. 537719_CD )_) and_CC 9_CD ,_, 193_CD (_( TC_NNP 619155_CD )_)
+          respectively_RB ._.
+        
+        
+          For_IN the_DT one-to-many_JJ MGI-DT_NNP and_CC MGI-TC_NNP associations_NNS ,_,
+          DoTS_NNP and_CC TIGR_NNP Mouse_NNP Gene_NNP Index_NNP did_VBD not_RB consistently_RB
+          cluster_NN the_DT GenBank_NNP sequences_NNS
+          There_EX are_VBP 2_CD ,_, 522_CD MGI_NNP genes_NNS associated_VBN with_IN multiple_JJ
+          DTs_NNP ,_, and_CC 1_CD ,_, 975_CD MGI_NNP genes_NNS with_IN multiple_JJ TCs_NNP ._. And_CC 1_CD ,_, 475_CD MGI_NNP
+          genes_NNS had_VBD both_DT MGI-to-TC_NNP and_CC MGI-to-DT_NNP one-to-many_JJ
+          associations_NNS ._. We_PRP considered_VBD all_DT TCs_NNP or_CC DTs_NNP associated_VBN
+          with_IN the_DT same_JJ MGI_NNP genes_NNS as_IN different_JJ forms_NNS of_IN transcripts_NNS
+          and_CC grouped_VBN them_PRP together_RB ._. We_PRP compared_VBD the_DT identity_NN and_CC
+          grouping_VBG of_IN the_DT component_NN sequences_NNS between_IN the_DT TC_NNP group_NN
+          and_CC its_PRP$ corresponding_JJ DT_NNP group_NN ._. We_PRP included_VBD only_RB the_DT
+          sequences_NNS curated_JJ in_IN the_DT MGI_NNP database_NN in_IN the_DT comparison_NN
+          because_IN they_PRP are_VBP mostly_RB high-quality_JJ mRNA_NN sequences_NNS and_CC
+          should_MD be_VB reliably_RB clustered_VBN ._. There_EX were_VBD only_RB 245_CD pairs_NNS
+          of_IN the_DT TC_NNP group_NN and_CC DT_NNP group_NN associated_VBN with_IN the_DT same_JJ set_NN
+          of_IN MGI_NNP curated_JJ GenBank_NNP sequences_NNS ,_, which_WDT were_VBD also_RB
+          clustered_VBN in_IN the_DT same_JJ way_NN ._. The_DT remaining_VBG pairs_NNS differ_VBP
+          either_CC in_IN their_PRP$ set_NN of_IN associated_VBN GenBank_NNP sequences_NNS or_CC in_IN
+          the_DT way_NN of_IN sequence_NN clustering_VBG ._.
+          The_DT differences_NNS between_IN the_DT two_CD electronic_JJ transcript_NN
+          databases_NNS are_VBP likely_JJ to_TO be_VB due_JJ to_TO the_DT different_JJ criteria_NNS
+          used_VBN by_IN the_DT two_CD groups_NNS for_IN clustering_VBG and_CC assembly_NN of_IN EST_NNP
+          and_CC mRNA_NN sequences_NNS ._. One_CD possibility_NN is_VBZ different_JJ degrees_NNS
+          of_IN trimming_VBG poor-quality_JJ sequences_NNS from_IN the_DT ends_NNS of_IN ESTs_NNP
+          (_( C_NNP ._. J_NNP ._. S_NNP ._. ,_, personal_JJ communication_NN )_) ._. Less_RBR trimming_VBG in_IN DoTS_NNP
+          build_VB might_MD result_VB in_IN more_JJR assemblies_NNS than_IN TIGR_NNP TCs_NNP ._. In_IN
+          testing_VBG ,_, fewer_JJR larger_JJR assemblies_NNS were_VBD generated_VBN when_WRB
+          trimming_VBG was_VBD not_RB limited_JJ ._. Limited_NNP trimming_VBG was_VBD chosen_VBN in_IN
+          attempt_NN to_TO preserve_VB better_JJR representation_NN of_IN
+          differentially_RB processed_VBN transcripts_NNS in_IN DoTS_NNP build_VB ._. The_DT
+          comparison_NN of_IN the_DT two_CD databases_NNS using_VBG curated_JJ data_NNS from_IN
+          MGI_NNP as_IN a_DT reference_NN provides_VBZ some_DT measures_NNS to_TO evaluate_VB and_CC
+          improve_VB computational_NN methods_NNS ._.
+        
+      
+      
+        Utility_NNP of_IN the_DT analysis_NN
+        The_DT association_NN of_IN MGI_NNP genes_NNS with_IN electronic_JJ transcript_NN
+        assemblies_NNS supplies_NNS biological_JJ context_NN to_TO the_DT
+        computationally_RB assembled_VBN transcripts_NNS and_CC allows_VBZ
+        researchers_NNS to_TO access_VB these_DT data_NNS from_IN biological_JJ as_IN well_RB as_IN
+        sequence_NN perspectives_NNS ._. The_DT curation_NN process_NN described_VBD here_RB
+        permits_VBZ us_PRP to_TO rapidly_RB build_VB high-confidence_JJ associations_NNS
+        between_IN MGI_NNP genes_NNS and_CC electronic_JJ transcript_NN sequences_NNS ._. The_DT
+        results_NNS reveal_VBP the_DT complications_NNS that_WDT can_MD arise_VB from_IN the_DT
+        clustering_VBG process_NN as_RB well_RB as_IN errors_NNS in_IN the_DT MGI_NNP database_NN ._.
+        The_DT assessment_NN of_IN the_DT results_NNS will_MD provide_VB measures_NNS to_TO
+        evaluate_VB and_CC improve_VB the_DT EST-assembly_NNP protocols_NNS and_CC to_TO
+        check_VB the_DT quality_NN of_IN gene_NN representation_NN in_IN the_DT MGI_NNP
+        database_NN ._.
+      
+      
+        Access_NNP to_TO the_DT links_NNS between_IN the_DT MGI_NNP database_NN and_CC the_DT
+        TIGR_NNP and_CC CBIL_NNP electronic_JJ transcript_NN databases_NNS
+        Only_RB associations_NNS between_IN MGI_NNP genes_NNS and_CC TCs_NNP /_NN DTs_NNP that_WDT are_VBP
+        supported_VBN by_IN non-conflicting_JJ evidence_NN (_( one-to-one_JJ and_CC
+        one-to-many_JJ associations_NNS )_) are_VBP accessible_JJ from_IN the_DT web_NN
+        browsers_NNS for_IN these_DT resources_NNS ._. The_DT links_NNS from_IN MGI_NNP genes_NNS to_TO
+        TCs_NNP and_CC DTs_NNP are_VBP available_JJ from_IN the_DT MGI_NNP gene_NN detail_NN pages_NNS ._.
+        The_DT links_NNS from_IN TCs_NNP to_TO MGI_NNP genes_NNS are_VBP available_JJ from_IN TIGR_NNP 's_POS
+        TC_NNP report_NN page_NN and_CC through_IN another_DT TIGR_NNP database_NN resource_NN ,_,
+        RESOURCERER_NNP [_NN 31_CD ]_NN ._. The_DT links_NNS from_IN DTs_NNP to_TO MGI_NNP genes_NNS are_VBP
+        available_JJ from_IN Allgenes_NNP 's_POS DT_NNP report_NN page_NN [_NN 32_CD ]_NN ._. Users_NNS can_MD
+        query_NN for_IN related_VBN DTs_NNP by_IN MGI_NNP gene_NN accession_NN identifiers_NNS or_CC
+        symbols_NNS ._. The_DT data_NNS files_NNS for_IN MGI-DT_NNP /_NN TC_NNP associations_NNS are_VBP
+        available_JJ from_IN MGI_NNP public_JJ FTP_NNP site_NN [_NN 17_CD ]_NN ._. These_DT data_NNS will_MD
+        be_VB updated_VBN after_IN each_DT build_VB of_IN TIGR_NNP 's_POS Mouse_NNP Gene_NNP Index_NNP and_CC
+        CBIL_NNP 's_POS DoTS_NNP database_NN or_CC after_IN every_DT major_JJ change_NN in_IN MGI_NNP
+        databases_NNS ._.
+      
+      
+        Additional_JJ data_NNS files_NNS
+        The_DT original_JJ datasets_NNS from_IN TIGR_NNP (_( from_IN TIGR_NNP Mouse_NNP Gene_NNP
+        Index_NNP Release_NNP 9_CD ._. 0_CD (_( 1_CD October_NNP 2002_CD )_) )_) ,_, DoTS_NNP (_( from_IN DoTS_NNP mouse_NN
+        assembly_NN Release_NNP 5_CD ._. 0_CD (_( 19_CD August_NNP 2002_CD )_) )_) and_CC MGI_NNP (_( 11_CD October_NNP
+        2002_CD )_) are_VBP available_JJ as_IN additional_JJ data_NNS files_NNS ._. Links_NNP from_IN
+        MGI_NNP to_TO the_DT DOTS_NNP (_( one-to-one_JJ ,_, one-to-many_JJ ,_, many-to-oneand_JJ
+        many-to-many_JJ )_) and_CC TIGR_NNP (_( one-to-one_JJ ,_, one-to-many_JJ ,_,
+        many-to-oneand_JJ many-to-many_JJ )_) electronic_JJ transcript_NN
+        associations_NNS from_IN the_DT analysis_NN done_VBN on_IN 11_CD October_NNP 2002_CD are_VBP
+        also_RB available_JJ as_IN additional_JJ data_NNS files_NNS ._. The_DT most_RBS recent_JJ
+        data_NNS files_NNS for_IN MGI-DT_NNP /_NN TC_NNP associations_NNS can_MD be_VB obtained_VBN from_IN
+        MGI_NNP public_JJ FTP_NNP site_NN [_NN 17_CD ]_NN ._.
+        Additional_JJ data_NNS file_VBP 1_CD
+        The_DT original_JJ datasets_NNS from_IN TIGR_NNP
+        The_DT original_JJ dataset_NN from_IN TIGR_NNP
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 2_CD
+        The_DT original_JJ dataset_NN from_IN DoTs_NNP
+        The_DT original_JJ dataset_NN from_IN DoTs_NNP
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 3_CD
+        The_DT original_JJ dataset_NN from_IN MGI_NNP
+        The_DT original_JJ dataset_NN from_IN MGI_NNP
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 4_CD
+        Links_NNP from_IN MGI_NNP to_TO the_DT DOTS_NNP -_: one-to-one_JJ
+        Links_NNP from_IN MGI_NNP to_TO the_DT DOTs_NNP -_: one-to-one_JJ
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 5_CD
+        Links_NNP from_IN MGI_NNP to_TO the_DT DOTS_NNP -_: one-to-many_JJ
+        Links_NNP from_IN MGI_NNP to_TO the_DT DOTS_NNP -_: one-to-many_JJ
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 6_CD
+        Links_NNP from_IN MGI_NNP to_TO the_DT DOTS_NNP -_: many-to-one_JJ
+        Links_NNP from_IN MGI_NNP to_TO the_DT DOTS_NNP -_: many-to-one_JJ
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 7_CD
+        Links_NNP from_IN MGI_NNP to_TO the_DT DOTS_NNP -_: many-to-many_JJ
+        Links_NNP from_IN MGI_NNP to_TO the_DT DOTS_NNP -_: many-to-many_JJ
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 8_CD
+        Links_NNP from_IN MGI_NNP to_TO TIGR_NNP -_: one-to-one_JJ
+        Links_NNP from_IN MGI_NNP to_TO TIGR_NNP -_: one-to-one_JJ
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 9_CD
+        Links_NNP from_IN MGI_NNP to_TO TIGR_NNP -_: one-to-many_JJ
+        Links_NNP from_IN MGI_NNP to_TO TIGR_NNP -_: one-to-many_JJ
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 10_CD
+        Links_NNP from_IN MGI_NNP to_TO TIGR_NNP -_: many-to-one_JJ
+        Links_NNP from_IN MGI_NNP to_TO TIGR_NNP -_: many-to-one_JJ
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 11_CD
+        Links_NNP from_IN MGI_NNP to_TO TIGR_NNP -_: many-to-many_JJ
+        Links_NNP from_IN MGI_NNP to_TO TIGR_NNP -_: many-to-many_JJ
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+      
+    
+  

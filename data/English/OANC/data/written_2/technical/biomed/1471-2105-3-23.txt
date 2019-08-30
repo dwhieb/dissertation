@@ -1,0 +1,573 @@
+
+  
+    
+      
+        Background_NNP
+        Affymetrix_NNP microarrays_NNS are_VBP used_VBN by_IN many_JJ laboratories_NNS to_TO
+        study_VB differences_NNS in_IN gene_NN expression_NN associated_VBN with_IN
+        experimental_JJ treatments_NNS ,_, diseases_NNS ,_, development_NN ,_, aging_VBG ,_, and_CC
+        other_JJ conditions_NNS ._. Typically_RB ,_, an_DT arbitrary_JJ value_NN for_IN
+        expression_NN ratios_NNS (_( or_CC fold-change_JJ values_NNS )_) is_VBZ chosen_VBN to_TO
+        define_VB significant_JJ differences_NNS in_IN gene_NN expression_NN between_IN
+        conditions_NNS ._. For_IN example_NN ,_, in_IN several_JJ studies_NNS of_IN aging_VBG [_NN 1_CD 2_CD
+        3_CD 4_CD 5_CD 6_CD ]_NN ,_, only_RB differences_NNS >_NN 1_CD ._. 7_CD -_: fold_VB in_IN magnitude_NN
+        were_VBD considered_VBN to_TO be_VB significant_JJ ._. None_NN of_IN the_DT reports_NNS
+        indicated_VBD whether_IN there_EX were_VBD smaller_JJR effects_NNS that_WDT were_VBD
+        statistically_RB significant_JJ ._. It_PRP has_VBZ been_VBN pointed_VBN out_RP that_IN
+        statistically_RB significant_JJ differences_NNS in_IN gene_NN expression_NN
+        often_RB are_VBP of_IN small_JJ magnitude_NN (_( sometimes_RB as_RB low_JJ as_IN
+        1_CD ._. 2_CD -_: fold_VB )_) ,_, and_CC that_IN larger_JJR effects_NNS often_RB are_VBP artefacts_NNS of_IN
+        high_JJ variance_NN [_NN 7_CD 8_CD ]_NN ._. For_IN those_DT interested_JJ in_IN detecting_VBG
+        these_DT smaller_JJR effects_NNS ,_, it_PRP is_VBZ important_JJ to_TO minimize_VB
+        nonspecific_JJ sources_NNS of_IN inter-array_JJ variance_NN ._.
+        To_TO understand_VB the_DT approach_NN described_VBD in_IN this_DT report_NN ,_, it_PRP
+        is_VBZ necessary_JJ to_TO understand_VB the_DT design_NN of_IN Affymetrix_NNP
+        microarrays_NNS and_CC analysis_NN software_NN (_( Microarray_NNP Suite_NNP )_) ._. There_EX
+        are_VBP multiple_JJ probe_NN pairs_NNS for_IN each_DT mRNA_NN (_( 8_CD -_: 20_CD for_IN the_DT arrays_NNS
+        used_VBN in_IN the_DT present_JJ study_NN )_) ._. A_DT probe_NN pair_NN consists_VBZ of_IN a_DT 25_CD
+        base_NN oligonucleotide_NN that_WDT matches_VBZ an_DT mRNA_NN sequence_NN (_( perfect_JJ
+        match_NN ,_, or_CC PM_NNP probe_NN )_) and_CC an_DT oligonucleotide_NN with_IN a_DT
+        mismatched_JJ base_NN in_IN the_DT center_NN (_( MM_NNP probe_NN )_) ._. The_DT specific_JJ
+        hybridization_NN signal_NN for_IN each_DT probe_NN pair_NN is_VBZ the_DT difference_NN
+        between_IN the_DT PM_NNP intensity_NN and_CC the_DT MM_NNP intensity_NN (_( although_IN the_DT
+        latest_JJS version_NN of_IN Affymetrix_NNP Microarray_NNP Suite_NNP ,_, 5_CD ._. 0_CD ,_, has_VBZ
+        special_JJ rules_NNS for_IN handling_VBG MM_NNP probes_NNS that_WDT have_VBP higher_JJR
+        signals_NNS than_IN their_PRP$ PM_NNP partner_NN )_) ._. No_DT single_JJ hybridization_NN
+        condition_NN is_VBZ optimal_NN for_IN all_DT oligonucleotide_NN probes_NNS ,_, so_IN it_PRP
+        is_VBZ inevitable_JJ that_IN there_EX is_VBZ variability_NN among_IN the_DT signals_NNS
+        within_IN a_DT probe_NN set_VBN ._. The_DT expression_NN level_NN reported_VBD for_IN each_DT
+        probe_NN set_VBN (_( by_IN the_DT Affymetrix_NNP "_'' absolute_JJ analysis_NN "_'' algorithm_NN )_)
+        is_VBZ based_VBN on_IN a_DT weighted_JJ average_NN of_IN the_DT signals_NNS from_IN the_DT
+        individual_JJ probe_NN pairs_NNS ,_, with_IN signals_NNS near_IN the_DT median_JJ given_VBN
+        more_JJR weight_NN than_IN those_DT far_RB from_IN the_DT median_NN ._. We_PRP refer_VBP to_TO
+        this_DT as_IN the_DT signal_NN method_NN in_IN this_DT report_NN ._. The_DT weights_NNS
+        assigned_VBN to_TO each_DT probe_NN pair_NN can_MD vary_VB from_IN one_CD array_NN to_TO
+        another_DT ,_, but_CC it_PRP is_VBZ unclear_JJ whether_IN variable_JJ weighting_NN adds_VBZ
+        significantly_RB to_TO inter-array_JJ variance_NN ._. Microarray_NNP Suite_NNP
+        also_RB has_VBZ a_DT procedure_NN (_( "_'' comparative_JJ analysis_NN "_'' algorithm_NN )_) for_IN
+        comparing_VBG two_CD arrays_NNS at_IN the_DT level_NN of_IN individual_JJ probe_NN
+        pairs_NNS ._. With_IN this_DT algorithm_NN ,_, ratios_NNS of_IN signals_NNS (_( PM-MM_NNP for_IN
+        each_DT probe_NN pair_NN )_) from_IN one_CD array_NN to_TO those_DT of_IN the_DT other_JJ array_NN
+        are_VBP computed_JJ first_NN ._. Weighted_NNP averages_NNS of_IN these_DT ratios_NNS are_VBP
+        then_RB computed_JJ ._. We_PRP refer_VBP to_TO this_DT as_IN the_DT ratio_NN method_NN ._. This_DT
+        method_NN is_VBZ supposed_VBN to_TO be_VB more_RBR precise_JJ than_IN the_DT signal_NN
+        method_NN for_IN inter-array_JJ comparisons_NNS ._. Thus_RB ,_, many_JJ
+        investigators_NNS use_VBP this_DT algorithm_NN for_IN all_DT possible_JJ
+        one-to-one_JJ comparisons_NNS across_IN groups_NNS (_( e_SYM ._. g_SYM ._. ,_, 9_CD comparisons_NNS
+        for_IN 3_CD arrays_NNS per_IN group_NN )_) and_CC report_VB the_DT average_NN of_IN the_DT
+        ratios_NNS as_IN the_DT change_NN in_IN gene_NN expression_NN [_NN 1_CD 2_CD 3_CD 4_CD 5_CD 9_CD ]_NN ._. A_DT
+        problem_NN with_IN this_DT approach_NN is_VBZ that_IN there_EX is_VBZ no_DT absolute_JJ or_CC
+        relative_JJ expression_NN level_NN assigned_VBN to_TO each_DT mRNA_NN on_IN
+        individual_JJ arrays_NNS ,_, so_IN that_IN formal_JJ statistical_JJ approaches_NNS
+        (_( e_SYM ._. g_SYM ._. ,_, t-tests_JJ )_) cannot_NN be_VB used_VBN to_TO rate_NN the_DT statistical_JJ
+        significance_NN of_IN differences_NNS ._. In_IN this_DT report_NN ,_, we_PRP describe_VBP
+        how_WRB we_PRP circumvented_JJ this_DT problem_NN by_IN using_VBG the_DT ratio_NN method_NN
+        to_TO generate_VB a_DT composite_JJ gene_NN expression_NN score_NN for_IN each_DT mRNA_NN
+        on_IN each_DT array_NN ._.
+        The_DT procedure_NN used_VBN to_TO estimate_VB the_DT statistical_JJ
+        significance_NN of_IN differences_NNS determines_VBZ which_WDT genes_NNS ,_, and_CC how_WRB
+        many_JJ genes_NNS ,_, are_VBP defined_VBN as_IN being_VBG differentially_RB expressed_VBD ._.
+        For_IN a_DT comparison_NN between_IN two_CD groups_NNS ,_, the_DT t-test_JJ is_VBZ the_DT most_RBS
+        commonly_RB used_VBN procedure_NN in_IN biological_JJ research_NN ._. However_RB ,_,
+        with_IN 6_CD arrays_NNS per_IN group_NN ,_, even_RB a_DT single_JJ outlier_NN can_MD markedly_RB
+        reduce_VB the_DT value_NN of_IN t_NN even_RB when_WRB there_EX is_VBZ no_DT overlap_VB between_IN
+        groups_NNS ._. Therefore_RB ,_, we_PRP also_RB used_VBD the_DT nonparametric_JJ rank_NN sum_NN
+        test_NN ,_, which_WDT is_VBZ insensitive_JJ to_TO a_DT skewed_VBN distribution_NN ._. False_NNP
+        detection_NN rates_NNS were_VBD estimated_VBN with_IN the_DT Significance_NN
+        Analysis_NNP of_IN Microarrays_NNP (_( SAM_NNP )_) program_NN [_NN 8_CD ]_NN ._.
+      
+      
+        Results_NNS
+        
+          Normalization_NNP method_NN
+          Comparisons_NNP among_IN arrays_NNS are_VBP meaningful_JJ only_RB after_IN
+          accounting_VBG for_IN variability_NN in_IN overall_JJ target_NN
+          concentration_NN (_( "_'' target_NN "_'' is_VBZ the_DT Affymetrix_NNP nomenclature_NN
+          for_IN a_DT labeled_VBN cRNA_NN that_IN hybridizes_NNS with_IN a_DT probe_NN )_) ,_,
+          hybridization_NN efficiency_NN ,_, staining_VBG ,_, etc_FW ._. The_DT
+          normalization_NN procedure_NN recommended_VBN by_IN Affymetrix_NNP is_VBZ to_TO
+          multiply_VB raw_JJ signals_NNS by_IN a_DT scaling_VBG factor_NN such_JJ that_IN the_DT
+          trimmed_VBN mean_NN (_( excluding_VBG 2_CD %_NN highest_JJS and_CC 2_CD %_NN lowest_JJS )_) of_IN
+          signals_NNS is_VBZ always_RB the_DT same_JJ (_( 500_CD in_IN this_DT study_NN )_) ._. This_DT
+          procedure_NN could_MD be_VB problematic_JJ if_IN a_DT variable_JJ proportion_NN
+          (_( >_NN 2_CD %_NN )_) of_IN the_DT signals_NNS are_VBP beyond_IN the_DT linear_JJ range_NN of_IN
+          the_DT system_NN ._. Another_DT concern_NN about_IN the_DT normalization_NN
+          procedure_NN was_VBD that_IN the_DT majority_NN of_IN the_DT targets_NNS did_VBD not_RB
+          produce_VB signals_NNS that_WDT were_VBD significantly_RB greater_JJR than_IN
+          those_DT caused_VBN by_IN nonspecific_JJ hybridization_NN ._. After_IN the_DT
+          recommended_VBN normalization_NN procedure_NN was_VBD applied_VBN ,_, we_PRP
+          confirmed_VBD that_IN there_EX was_VBD negligible_JJ inter-array_JJ
+          variability_NN of_IN the_DT mean_JJ signal_NN (_( with_IN 5_CD %_NN of_IN signals_NNS
+          trimmed_VBD from_IN both_DT the_DT high_JJ and_CC low_JJ ends_VBZ )_) across_IN the_DT 4629_CD
+          targets_NNS that_WDT passed_VBD the_DT presence_NN /_NN absence_NN filter_NN
+          (_( described_VBD in_IN the_DT next_JJ section_NN )_) ._. The_DT trimmed_VBD mean_NN was_VBD 649_CD
+          ±_NN 14_CD (_( standard_JJ deviation_NN )_) arbitrary_JJ units_NNS for_IN the_DT 6_CD
+          arrays_NNS probing_VBG RNA_NNP from_IN young_JJ muscle_NN ,_, and_CC 643_CD ±_NN 18_CD for_IN
+          the_DT 6_CD arrays_NNS probing_VBG RNA_NNP from_IN older_JJR muscle_NN ._. These_DT data_NNS
+          were_VBD not_RB used_VBN to_TO re-scale_JJ the_DT arrays_NNS because_IN the_DT variance_NN
+          would_MD have_VB been_VBN reduced_VBN by_IN less_JJR than_IN 2_CD %_NN ._. Plots_NNP of_IN signals_NNS
+          from_IN individual_JJ arrays_NNS versus_CC the_DT average_NN of_IN all_DT 12_CD
+          arrays_NNS generally_RB showed_VBD the_DT expected_VBN scatter_NN around_IN the_DT
+          line_NN of_IN identity_NN (_( Figure_NN 1_CD A_DT )_) ,_, but_CC a_DT few_JJ showed_VBD systematic_JJ
+          deviations_NNS either_CC above_IN or_CC below_IN the_DT line_NN of_IN identity_NN for_IN
+          signals_NNS >_NN ~_NN 10_CD 4_CD arbitrary_JJ units_NNS (_( worst-case_JJ array_NN shown_VBN
+          in_IN Figure_NN 1_CD B_NNP )_) ._. While_IN this_DT problem_NN might_MD be_VB addressed_VBN by_IN
+          using_VBG a_DT different_JJ scaling_NN factor_NN for_IN high-intensity_JJ
+          signals_NNS [_NN 10_CD ]_NN ,_, few_JJ targets_NNS produced_VBD such_JJ high_JJ signals_NNS ,_,
+          and_CC the_DT magnitude_NN of_IN the_DT effect_NN was_VBD small_JJ ._. Thus_RB ,_, the_DT
+          Affymetrix_NNP normalization_NN method_NN was_VBD employed_VBN without_IN
+          modification_NN ._.
+        
+        
+          Exclusion_NNP of_IN targets_NNS based_VBN on_IN the_DT absolute_JJ
+          detection_NN algorithm_NN
+          Microarray_NNP Suite_NNP estimates_VBZ probabilities_NNS that_IN targets_NNS
+          are_VBP absent_JJ (_( P_NN 
+          detection_NN )_) based_VBN on_IN ratios_NNS of_IN signals_NNS
+          from_IN PM_NNP probes_NNS to_TO those_DT of_IN MM_NNP probes_NNS ,_, together_RB with_IN the_DT
+          degree_NN of_IN consistency_NN across_IN the_DT multiple_JJ probe_NN pairs_NNS for_IN
+          each_DT target_NN ._. As_IN illustrated_VBN in_IN Figure_NN 2_CD ,_, the_DT average_JJ
+          signal_NN from_IN the_DT multiple_JJ probe_NN pairs_NNS cannot_NN be_VB used_VBN to_TO
+          decide_VB whether_IN a_DT target_NN should_MD be_VB considered_VBN present_JJ or_CC
+          absent_JJ ._. We_PRP restricted_VBD the_DT data_NNS analyses_NNS to_TO targets_NNS for_IN
+          which_WDT P_NN 
+          detection_NN was_VBD less_JJR than_IN 0_CD ._. 1_CD for_IN at_IN
+          least_JJS 3_CD of_IN the_DT 6_CD samples_NNS from_IN either_DT the_DT younger_JJR or_CC older_JJR
+          group_NN ._. This_DT filter_NN reduced_VBD the_DT number_NN of_IN targets_NNS included_VBN
+          in_IN the_DT statistical_JJ analyses_NNS to_TO 4629_CD ._. While_IN excluding_VBG data_NNS
+          does_VBZ not_RB affect_VB the_DT nominal_JJ value_NN of_IN P_NN for_IN each_DT
+          comparison_NN made_VBN with_IN a_DT t-test_JJ or_CC rank_NN sum_NN test_NN ,_, it_PRP
+          significantly_RB reduces_VBZ the_DT estimated_VBN false_JJ detection_NN rate_NN
+          (_( see_VB 
+          t-_NN Tests_NNP and_CC 
+          SAM_NNP below_IN )_) ._.
+        
+        
+          Signal_NNP method_NN vs_NNS ._. ratio_NN method_NN
+          When_WRB two_CD arrays_NNS are_VBP compared_VBN ,_, the_DT gene_NN expression_NN
+          ratios_NNS obtained_VBN by_IN the_DT signal_NN method_NN and_CC those_DT obtained_VBN
+          by_IN the_DT ratio_NN method_NN (_( see_VB 
+          Background_NNP for_IN explanation_NN of_IN terms_NNS )_)
+          are_VBP highly_RB correlated_JJ ._. However_RB ,_, the_DT results_NNS often_RB differ_VBP
+          by_IN more_JJR than_IN 1_CD ._. 5_CD -_: fold_VB (_( Figure_NN 3_LS )_) ._. The_DT advantage_NN of_IN the_DT
+          signal_NN method_NN is_VBZ that_IN Microarray_NNP Suite_NNP provides_VBZ ,_, for_IN each_DT
+          target_NN ,_, a_DT number_NN describing_VBG the_DT level_NN of_IN gene_NN expression_NN
+          (_( in_IN arbitrary_JJ units_NNS )_) that_WDT can_MD be_VB used_VBN for_IN t-tests_JJ or_CC
+          other_JJ statistical_JJ procedures_NNS ._. However_RB ,_, according_VBG to_TO
+          Affymetrix_NNP (_( Microarray_NNP Suite_NNP 5_CD ._. 0_CD User_NNP 's_POS Guide_NNP )_) ,_,
+          comparisons_NNS between_IN arrays_NNS are_VBP more_RBR precise_JJ when_WRB the_DT
+          ratio_NN method_NN is_VBZ used_VBN ,_, so_IN the_DT values_NNS on_IN the_DT horizontal_NN
+          axis_NNS of_IN Figure_NN 3_CD should_MD be_VB more_RBR accurate_JJ ._. The_DT Affymetrix_NNP
+          ratio_NN method_NN only_RB provides_VBZ ratios_NNS between_IN two_CD arrays_NNS ,_, and_CC
+          does_VBZ not_RB provide_VB gene_NN expression_NN values_NNS for_IN the_DT
+          individual_JJ arrays_NNS that_WDT can_MD be_VB used_VBN with_IN standard_JJ tests_NNS of_IN
+          statistical_JJ significance_NN ._. We_PRP therefore_RB extended_VBD the_DT ratio_NN
+          method_NN to_TO generate_VB a_DT relative_JJ expression_NN score_NN for_IN each_DT
+          target_NN on_IN each_DT array_NN ,_, as_IN follows_VBZ :_:
+          The_DT first_JJ step_NN was_VBD to_TO name_VB one_CD of_IN the_DT arrays_NNS as_IN the_DT
+          baseline_NN in_IN the_DT comparative_JJ analysis_NN program_NN (_( Microarray_NNP
+          Suite_NNP 5_CD ._. 0_CD )_) ._. Every_DT other_JJ array_NN included_VBN in_IN the_DT study_NN was_VBD
+          then_RB compared_VBN with_IN that_DT baseline_NN array_NN ._. This_DT procedure_NN
+          yielded_VBD ,_, for_IN each_DT target_NN ,_, a_DT set_NN of_IN 11_CD expression_NN ratios_NNS (_(
+          
+          r_LS )_) representing_VBG the_DT relative_JJ
+          expression_NN level_NN on_IN each_DT array_NN compared_VBN with_IN the_DT baseline_NN
+          array_NN ._.
+          The_DT next_JJ step_NN was_VBD to_TO compute_VB ,_, for_IN each_DT target_NN ,_, the_DT
+          expression_NN level_NN (_( 
+          R_NN )_) of_IN the_DT baseline_NN array_NN relative_JJ
+          to_TO all_DT 12_CD arrays_NNS included_VBN in_IN the_DT study_NN ._. For_IN array_NN #_# 1_CD ,_, 
+          R_NN was_VBD computed_JJ with_IN the_DT
+          formula_NN :_:
+          
+          R_NN 
+          1_CD =_SYM 12_CD /_NN (_( 1_CD +_NN 
+          r_LS 
+          2_CD vs_NNS ._. 1_CD +_NN 
+          r_LS 
+          3_CD vs_NNS ._. 1_CD +_NN ._. ._. ._. +_NN 
+          r_LS 
+          12_CD vs_NNS ._. 1_LS )_)
+          The_DT value_NN of_IN 1_CD in_IN the_DT denominator_NN of_IN this_DT formula_NN
+          represents_VBZ the_DT comparison_NN of_IN array_NN #_# 1_CD with_IN itself_PRP ._. The_DT
+          number_NN of_IN arrays_NNS is_VBZ the_DT numerator_NN rather_RB than_IN the_DT
+          denominator_NN in_IN this_DT formula_NN because_IN the_DT Affymetrix_NNP
+          comparative_JJ analysis_NN program_NN sets_VBZ the_DT baseline_NN array_NN as_IN
+          the_DT denominator_NN ,_, so_IN that_IN values_NNS of_IN 
+          r_LS are_VBP the_DT inverse_NN of_IN the_DT relevant_JJ
+          ratios_NNS ._.
+          A_DT different_JJ array_NN was_VBD then_RB named_VBN as_IN the_DT baseline_NN ._.
+          E_NNP ._. g_SYM ._. ,_, for_IN array_NN #_# 2_CD as_IN the_DT baseline_NN :_:
+          
+          R_NN 
+          2_CD =_SYM 12_CD /_NN (_( 
+          r_LS 
+          1_CD vs_NNS ._. 2_CD +_NN 1_CD +_NN 
+          r_LS 
+          3_CD vs_NNS ._. 2_CD +_NN ._. ._. ._. +_NN 
+          r_LS 
+          12_CD vs_NNS ._. 2_LS )_)
+          These_DT steps_NNS were_VBD repeated_VBN until_IN all_DT 12_CD arrays_NNS had_VBD been_VBN
+          named_VBN as_IN the_DT baseline_NN ._. The_DT values_NNS R_NN 
+          1_CD through_IN R_NN 
+          12_CD were_VBD then_RB used_VBN for_IN comparisons_NNS
+          between_IN age_NN groups_NNS with_IN t-tests_JJ ,_, rank_NN sum_NN tests_NNS ,_, and_CC SAM_NNP
+          as_IN described_VBN below_IN ._.
+          For_IN the_DT 4629_CD probe_NN sets_NNS that_WDT passed_VBD the_DT presence_NN /_NN
+          absence_NN filter_NN ,_, the_DT expression_NN ratios_NNS (_( mean_VB value_NN in_IN old_JJ
+          group_NN /_NN mean_NN value_NN in_IN young_JJ group_NN )_) generated_VBN by_IN the_DT
+          signal_NN method_NN and_CC those_DT generated_VBN by_IN the_DT ratio_NN method_NN
+          were_VBD highly_RB correlated_JJ (_( r_LS =_SYM 0_CD ._. 89_CD )_) ._. There_EX also_RB was_VBD a_DT
+          fairly_RB good_JJ correlation_NN between_IN the_DT signal_NN and_CC ratio_NN
+          methods_NNS with_IN respect_NN to_TO the_DT level_NN of_IN statistical_JJ
+          significance_NN (_( log_VB P_NN )_) of_IN the_DT age-related_JJ differences_NNS (_( r_LS =_SYM
+          0_CD ._. 74_CD )_) ._. The_DT advantage_NN of_IN the_DT ratio_NN method_NN was_VBD that_IN it_PRP
+          usually_RB reduced_VBD the_DT within-group_JJ variance_NN so_IN that_IN the_DT
+          same_JJ mean_NN difference_NN between_IN young_JJ and_CC old_JJ was_VBD associated_VBN
+          with_IN a_DT higher_JJR level_NN of_IN statistical_JJ significance_NN ._. The_DT
+          average_JJ within-group_JJ coefficient_NN of_IN variation_NN (_( CV_NNP ,_,
+          standard_JJ deviation_NN /_NN mean_NN )_) was_VBD 20_CD %_NN with_IN the_DT ratio_NN method_NN
+          and_CC 25_CD %_NN with_IN the_DT signal_NN method_NN (_( average_JJ CVs_NNP were_VBD the_DT same_JJ
+          for_IN young_JJ and_CC old_JJ groups_NNS )_) ._. The_DT distribution_NN of_IN CVs_NNP
+          improved_VBD significantly_RB with_IN the_DT ratio_NN method_NN (_( Figure_NN 4_LS )_) ._.
+          Table_NNP 1_CD shows_VBZ that_IN more_JJR differences_NNS were_VBD detected_VBN by_IN the_DT
+          ratio_NN method_NN whether_IN we_PRP used_VBD t-tests_JJ ,_, rank_NN sum_NN tests_NNS ,_, or_CC
+          SAM_NNP to_TO define_VB significant_JJ differences_NNS ._. Moreover_RB ,_,
+          consistency_NN between_IN the_DT initial_JJ scan_VB and_CC the_DT
+          antibody-enhanced_JJ scan_VB was_VBD significantly_RB improved_VBN by_IN the_DT
+          ratio_NN method_NN ,_, for_IN both_DT expression_NN ratios_NNS and_CC for_IN the_DT
+          statistical_JJ significance_NN of_IN differences_NNS between_IN young_JJ and_CC
+          old_JJ (_( Table_NNP 2_LS )_) ._. With_IN the_DT signal_NN method_NN ,_, 38_CD %_NN of_IN the_DT
+          differences_NNS significant_JJ at_IN P_NN <_NN 0_CD ._. 01_CD (_( by_IN t-test_JJ )_) on_IN the_DT
+          initial_JJ scan_VB were_VBD also_RB significant_JJ at_IN P_NN <_NN 0_CD ._. 01_CD on_IN the_DT
+          antibody-enhanced_JJ scan_VB ,_, and_CC 65_CD %_NN were_VBD significant_JJ at_IN P_NN
+          <_NN 0_CD ._. 05_CD on_IN the_DT antibody_NN enhanced_VBN scan_VB ._. With_IN the_DT ratio_NN
+          method_NN ,_, 51_CD %_NN of_IN the_DT differences_NNS significant_JJ at_IN P_NN <_NN 0_CD ._. 01_CD
+          on_IN the_DT initial_JJ scan_VB were_VBD also_RB significant_JJ at_IN P_NN <_NN 0_CD ._. 01_CD
+          on_IN the_DT antibody-enhanced_JJ scan_VB ,_, and_CC 77_CD %_NN were_VBD significant_JJ
+          at_IN P_NN <_NN 0_CD ._. 05_CD on_IN the_DT antibody_NN enhanced_VBN scan_VB ._.
+        
+        
+          t-_NN Tests_NNP
+          A_DT plot_NN of_IN expression_NN ratio_NN vs_NNS ._. statistical_JJ
+          significance_NN (_( Figure_NN 5_LS )_) shows_VBZ that_IN differences_NNS with_IN high_JJ
+          statistical_JJ significance_NN (_( by_IN t-test_JJ )_) usually_RB were_VBD less_JJR
+          than_IN 1_CD ._. 7_CD -_: fold_VB in_IN magnitude_NN ._. The_DT validity_NN of_IN at_IN least_JJS some_DT
+          of_IN the_DT small_JJ differences_NNS is_VBZ demonstrated_VBN by_IN the_DT fact_NN that_DT
+          ~_NN 1_CD ._. 3_LS -_: fold_VB differences_NNS were_VBD detected_VBN (_( P_NN <_NN 0_CD ._. 01_CD )_) for_IN 17_CD
+          genes_NNS encoding_VBG proteins_NNS involved_VBN in_IN mitochondrial_NN
+          electron_NN transport_NN or_CC ATP_NNP synthesis_NN (_( Table_NNP 3_LS )_) ._. This_DT
+          finding_VBG replicates_NNS our_PRP$ previous_JJ research_NN ,_, in_IN which_WDT SAGE_NNP
+          and_CC quantitative_JJ RT-PCR_NNP assays_NNS demonstrated_VBD ~_NN 1_CD ._. 3_LS -_: fold_VB
+          declines_NNS in_IN older_JJR muscle_NN of_IN several_JJ mRNAs_NNS encoding_VBG
+          components_NNS of_IN NADH_NNP dehydrogenase_NN ,_, cytochrome_NN c_SYM oxidase_NN ,_,
+          and_CC ATP_NNP synthase_NN complexes_NNS [_NN 11_CD ]_NN ._. For_IN all_DT of_IN these_DT
+          mRNAs_NNS ,_, both_DT the_DT signal_NN and_CC ratio_NN methods_NNS detected_VBD the_DT
+          differences_NNS at_IN P_NN <_NN 0_CD ._. 03_CD ,_, whereas_IN the_DT ratio_NN method_NN was_VBD
+          a_DT bit_NN more_RBR likely_JJ to_TO detect_VB them_PRP at_IN P_NN <_NN 0_CD ._. 01_CD (_( 14_CD /_NN 17_CD
+          genes_NNS )_) than_IN was_VBD the_DT signal_NN method_NN (_( 12_CD /_NN 17_CD genes_NNS ,_, Table_NNP
+          3_LS )_) ._.
+          The_DT P_NN values_NNS generated_VBN by_IN the_DT t-tests_JJ were_VBD not_RB
+          adjusted_VBN for_IN multiple_JJ comparisons_NNS ._. However_RB ,_, a_DT Bonferroni_NNP
+          correction_NN would_MD be_VB too_RB stringent_JJ for_IN exploratory_JJ
+          research_NN [_NN 12_CD ]_NN ._. A_DT useful_JJ alternative_NN to_TO P_NN in_IN studies_NNS
+          involving_VBG thousands_NNS of_IN comparisons_NNS is_VBZ the_DT estimated_VBN false_JJ
+          detection_NN rate_NN ,_, which_WDT is_VBZ the_DT ratio_NN of_IN the_DT expected_VBN number_NN
+          of_IN chance_NN differences_NNS (_( P_NN ×_NN number_NN of_IN comparisons_NNS )_) to_TO the_DT
+          number_NN of_IN differences_NNS observed_VBD ._. If_IN we_PRP use_VBP P_NN <_NN 0_CD ._. 01_CD to_TO
+          define_VB a_DT significant_JJ difference_NN ,_, we_PRP should_MD expect_VB ~_NN 46_CD
+          chance_NN differences_NNS (_( 0_CD ._. 01_CD ×_NN 4629_CD comparisons_NNS )_) if_IN there_EX is_VBZ
+          no_DT effect_NN of_IN aging_VBG on_IN gene_NN expression_NN ._. Because_IN 124_CD
+          differences_NNS were_VBD significant_JJ at_IN P_NN <_NN 0_CD ._. 01_CD (_( by_IN the_DT ratio_NN
+          method_NN )_) ,_, the_DT estimated_VBN false_JJ detection_NN rate_NN was_VBD 46_CD /_NN 124_CD ,_,
+          or_CC 37_CD %_NN ._. When_WRB no_DT presence_NN /_NN absence_NN filter_NN was_VBD applied_VBN
+          (_( 12533_CD probe_NN sets_NNS included_VBN in_IN the_DT analysis_NN )_) ,_, the_DT
+          estimated_VBN false_JJ detection_NN rate_NN (_( ratio_NN method_NN )_) increased_VBN
+          from_IN 37_CD %_NN to_TO 73_CD %_NN because_IN there_EX were_VBD fewer_JJR differences_NNS (_( at_IN
+          P_NN <_NN 0_CD ._. 01_CD )_) among_IN the_DT "_'' absent_JJ "_'' mRNAs_NNS than_IN expected_VBN by_IN
+          chance_NN (_( 48_CD observed_VBD vs_NNS ._. 79_CD expected_VBN by_IN chance_NN )_) ._.
+        
+        
+          Mann-_NNP Whitney_NNP rank_NN sum_NN tests_NNS
+          The_DT Mann-_NNP Whitney_NNP rank_NN sum_NN test_NN was_VBD used_VBN to_TO detect_VB
+          transcripts_NNS for_IN which_WDT there_EX was_VBD little_JJ or_CC no_DT overlap_VB of_IN
+          values_NNS between_IN groups_NNS ._. This_DT test_NN revealed_VBD 107_CD differences_NNS
+          at_IN P_NN <_NN 0_CD ._. 01_CD (_( exact_JJ P_NN =_SYM 0_CD ._. 00866_CD at_IN rank_NN sum_NN cutoff_NN
+          values_NNS )_) when_WRB the_DT ratio_NN method_NN was_VBD used_VBN ._. We_PRP would_MD expect_VB
+          to_TO find_VB 40_CD differences_NNS by_IN chance_NN alone_RB (_( 0_CD ._. 00866_CD ×_NN 4629_CD
+          genes_NNS )_) ,_, so_IN the_DT false_JJ detection_NN rate_NN (_( 40_CD /_NN 107_CD =_SYM 37_CD %_NN )_) is_VBZ the_DT
+          same_JJ as_IN that_DT estimated_VBD from_IN t-tests_JJ ._. There_EX were_VBD 21_CD
+          differences_NNS significant_JJ at_IN P_NN <_NN 0_CD ._. 01_CD by_IN rank_NN sum_NN tests_NNS
+          but_CC not_RB by_IN t-tests_JJ according_VBG to_TO the_DT ratio_NN method_NN ._. Thus_RB ,_,
+          for_IN exploratory_JJ research_NN being_VBG done_VBN to_TO generate_VB lists_NNS of_IN
+          mRNAs_NNS that_WDT warrant_NN further_JJ study_NN ,_, use_NN of_IN both_DT parametric_JJ
+          and_CC nonparametric_JJ tests_NNS is_VBZ one_CD way_NN to_TO significantly_RB
+          expand_VB the_DT list_NN ._.
+        
+        
+          SAM_NNP
+          SAM_NNP computes_VBZ a_DT value_NN ,_, termed_VBD d_SYM [_NN d_SYM =_SYM (_( mean_VB 
+          1_CD -_: mean_VB 
+          2_LS )_) /_NN (_( s_VBZ 
+          d_SYM +_NN s_VBZ 
+          0_CD )_) ]_NN ,_, that_WDT is_VBZ similar_JJ to_TO t_NN [_NN t_NN =_SYM (_( mean_VB 
+          1_CD -_: mean_VB 
+          2_LS )_) /_NN s_VBZ 
+          d_SYM ]_NN ._. The_DT "_'' exchangeability_NN factor_NN "_'' ,_, s_VBZ 
+          0_CD ,_, minimizes_NNS the_DT number_NN of_IN extreme_JJ d_SYM
+          values_NNS among_IN targets_NNS with_IN small_JJ variances_NNS in_IN signal_NN
+          intensity_NN ._. When_WRB absolute_JJ signals_NNS are_VBP analyzed_VBN ,_, these_DT
+          small_JJ variances_NNS are_VBP associated_VBN with_IN targets_NNS that_WDT are_VBP more_RBR
+          difficult_JJ to_TO quantify_VB accurately_RB because_IN of_IN low_JJ
+          concentrations_NNS ._. We_PRP already_RB have_VBP filtered_VBN most_JJS of_IN these_DT
+          targets_NNS from_IN the_DT analysis_NN ._. When_WRB data_NNS based_VBN on_IN the_DT signal_NN
+          method_NN were_VBD analyzed_VBN ,_, s_VBZ 
+          0_CD was_VBD very_RB small_JJ (_( lowest_JJS percentile_NN of_IN
+          the_DT s_VBZ 
+          d_SYM values_NNS )_) ._. When_WRB relative_JJ expression_NN
+          levels_NNS were_VBD computed_JJ by_IN the_DT ratio_NN method_NN ,_, all_DT means_NNS were_VBD
+          close_RB to_TO 1_CD regardless_RB of_IN the_DT absolute_JJ signal_NN intensity_NN ._.
+          In_IN this_DT case_NN ,_, s_VBZ 
+          0_CD was_VBD large_JJ (_( 53_CD rd_NN percentile_NN of_IN the_DT s_VBZ 
+          d_SYM values_NNS )_) ,_, and_CC lower_JJR s_VBZ 
+          d_SYM values_NNS were_VBD associated_VBN with_IN stronger_JJR
+          rather_RB than_IN weaker_JJR signals_NNS ._. This_DT problem_NN precluded_VBN the_DT
+          use_NN of_IN SAM_NNP for_IN data_NNS normalized_JJ in_IN this_DT fashion_NN ._. However_RB ,_,
+          by_IN multiplying_VBG each_DT value_NN of_IN 
+          R_NN by_IN the_DT gene-specific_JJ mean_NN signal_NN
+          (_( mean_NN of_IN all_DT 12_CD arrays_NNS )_) ,_, we_PRP generated_VBD a_DT data_NNS set_VBD
+          compatible_JJ with_IN SAM_NNP ._.
+          SAM_NNP lists_VBZ genes_NNS for_IN which_WDT d_SYM exceeds_VBZ (_( by_IN an_DT adjustable_JJ
+          threshold_NN termed_VBD Δ_NN )_) the_DT value_NN that_WDT would_MD be_VB expected_VBN by_IN
+          chance_NN (_( d_SYM 
+          e_SYM )_) ._. Values_NNP of_IN d_SYM 
+          e_SYM are_VBP generated_VBN by_IN computing_VBG the_DT d_SYM
+          distribution_NN numerous_JJ times_NNS with_IN random_JJ permutations_NNS of_IN
+          the_DT group_NN assignments_NNS (_( we_PRP instructed_VBD SAM_NNP to_TO perform_VB 100_CD
+          permutations_NNS )_) ._. The_DT average_JJ distribution_NN from_IN these_DT
+          permutations_NNS defines_VBZ the_DT values_NNS of_IN d_SYM 
+          e_SYM ._. Reducing_VBG Δ_NN expands_VBZ the_DT list_NN of_IN
+          "_'' significant_JJ "_'' genes_NNS ,_, but_CC also_RB increases_VBZ the_DT false_JJ
+          detection_NN rate_NN ._. When_WRB we_PRP chose_VBD a_DT value_NN of_IN Δ_NN corresponding_JJ
+          to_TO a_DT false_JJ detection_NN rate_NN <_NN 20_CD %_NN ,_, there_EX were_VBD 124_CD
+          differences_NNS according_VBG to_TO the_DT ratio_NN method_NN but_CC only_RB 56_CD
+          differences_NNS according_VBG to_TO the_DT signal_NN method_NN ._. There_EX were_VBD 20_CD
+          differences_NNS for_IN which_WDT the_DT false_JJ detection_NN rate_NN was_VBD <_NN
+          5_CD %_NN when_WRB the_DT ratio_NN method_NN was_VBD used_VBN (_( including_VBG 9_CD for_IN genes_NNS
+          involved_VBN in_IN energy_NN metabolism_NN that_WDT are_VBP listed_VBN in_IN Table_NNP
+          3_LS )_) ,_, but_CC none_NN when_WRB the_DT signal_NN method_NN was_VBD used_VBN ._. When_WRB no_DT
+          presence_NN /_NN absence_NN filter_NN was_VBD applied_VBN ,_, the_DT highest-ranked_JJ
+          differences_NNS had_VBD false_JJ detection_NN rates_NNS of_IN 30_CD %_NN even_RB with_IN
+          the_DT ratio_NN method_NN ,_, and_CC only_RB 34_CD genes_NNS achieved_VBD this_DT level_NN ._.
+          Thus_RB ,_, it_PRP is_VBZ very_RB important_JJ to_TO remove_VB noisy_NN data_NNS before_IN
+          using_VBG SAM_NNP ._.
+        
+      
+      
+        Discussion_NNP
+        Careful_NNP subject_JJ selection_NN and_CC consistency_NN in_IN
+        experimental_JJ conditions_NNS ,_, sample_NN collection_NN procedures_NNS ,_, and_CC
+        sample_NN processing_NN obviously_RB are_VBP needed_VBN if_IN small_JJ differences_NNS
+        in_IN gene_NN expression_NN are_VBP to_TO be_VB detected_VBN ._. A_DT further_JJ reduction_NN
+        in_IN total_JJ within-group_JJ variance_NN can_MD be_VB achieved_VBN by_IN using_VBG the_DT
+        ratio_NN method_NN described_VBD in_IN this_DT report_NN ._. This_DT method_NN is_VBZ based_VBN
+        on_IN the_DT Affymetrix_NNP comparative_JJ analysis_NN algorithm_NN ,_, which_WDT was_VBD
+        designed_VBN for_IN comparisons_NNS between_IN two_CD arrays_NNS ._. To_TO use_VB the_DT
+        procedure_NN for_IN groups_NNS rather_RB than_IN individual_JJ arrays_NNS ,_, we_PRP
+        assigned_VBN each_DT target_NN on_IN each_DT array_NN a_DT score_NN that_WDT was_VBD the_DT
+        average_JJ ratio_NN from_IN all_DT one-to-one_JJ comparisons_NNS of_IN that_DT array_NN
+        with_IN every_DT array_NN included_VBN in_IN the_DT study_NN ._. The_DT best_JJS
+        illustration_NN of_IN the_DT increase_NN in_IN power_NN gained_VBN by_IN the_DT ratio_NN
+        method_NN was_VBD the_DT fact_NN that_IN that_DT 20_CD differences_NNS were_VBD below_IN the_DT
+        5_CD %_NN false_JJ detection_NN rate_NN (_( by_IN SAM_NNP )_) when_WRB this_DT method_NN was_VBD used_VBN ,_,
+        whereas_IN no_DT differences_NNS below_IN the_DT 5_CD %_NN false_JJ detection_NN rate_NN
+        were_VBD found_VBN when_WRB the_DT signal_NN method_NN was_VBD used_VBN ._. The_DT major_JJ
+        drawback_NN of_IN the_DT ratio_NN method_NN is_VBZ increased_VBN computational_NN
+        time_NN ._.
+        It_PRP has_VBZ been_VBN suggested_VBN that_IN inter-array_JJ variance_NN can_MD be_VB
+        reduced_VBN by_IN ignoring_VBG data_NNS from_IN MM_NNP probes_NNS ,_, or_CC by_IN using_VBG an_DT
+        alternative_JJ computation_NN to_TO take_VB advantage_NN of_IN the_DT MM_NNP data_NN [_NN
+        13_CD 14_CD 15_CD 16_CD ]_NN ._. In_IN previous_JJ versions_NNS of_IN Microarray_NNP Suite_NNP ,_,
+        MM_NNP signals_NNS were_VBD always_RB subtracted_VBN from_IN PM_NNP signals_NNS ,_, which_WDT
+        often_RB led_VBN to_TO negative_JJ expression_NN levels_NNS ._. The_DT newer_JJR version_NN
+        (_( 5_CD ._. 0_CD )_) ,_, used_VBN in_IN this_DT study_NN ,_, has_VBZ a_DT different_JJ procedure_NN for_IN
+        dealing_VBG with_IN high_JJ signals_NNS from_IN MM_NNP probes_NNS ._. It_PRP is_VBZ not_RB clear_JJ
+        whether_IN alternative_JJ algorithms_NNS for_IN using_VBG the_DT MM_NNP signals_NNS ,_, or_CC
+        ignoring_VBG MM_NNP signals_NNS ,_, would_MD improve_VB the_DT accuracy_NN of_IN the_DT
+        data_NNS ._. We_PRP therefore_RB used_VBD the_DT Affymetrix_NNP algorithm_NN ,_, which_WDT is_VBZ
+        likely_JJ to_TO be_VB used_VBN by_IN most_JJS investigators_NNS until_IN there_EX is_VBZ
+        definitive_JJ evidence_NN that_IN alternative_JJ methods_NNS are_VBP
+        superior_JJ ._.
+        There_EX is_VBZ no_DT consensus_NN about_IN the_DT optimal_NN statistical_JJ
+        approach_NN for_IN finding_VBG differences_NNS in_IN expression_NN among_IN
+        thousands_NNS of_IN genes_NNS ._. When_WRB a_DT specific_JJ hypothesis_NNS is_VBZ being_VBG
+        tested_VBN ,_, "_'' shopping_NN "_'' for_IN the_DT best_JJS statistical_JJ test_NN to_TO support_VB
+        the_DT hypothesis_NNS should_MD be_VB avoided_VBN ._. In_IN contrast_NN ,_, when_WRB the_DT
+        goal_NN is_VBZ to_TO generate_VB descriptive_JJ information_NN to_TO guide_VB
+        decisions_NNS about_IN future_JJ research_NN directions_NNS ,_, there_EX is_VBZ no_DT
+        reason_NN not_RB to_TO use_VB multiple_JJ approaches_NNS to_TO obtain_VB as_IN much_JJ
+        information_NN as_IN possible_JJ ._. For_IN a_DT comparison_NN of_IN two_CD groups_NNS ,_,
+        the_DT t-test_JJ is_VBZ simple_JJ and_CC robust_JJ ,_, and_CC does_VBZ not_RB require_VB
+        special_JJ software_NN ._. Some_DT investigators_NNS may_MD be_VB wary_JJ about_IN
+        using_VBG t-tests_JJ rather_RB than_IN mean_VB differences_NNS to_TO rank_VB genes_NNS
+        because_IN one_CD or_CC two_CD extreme_JJ values_NNS can_MD reduce_VB t_NN even_RB when_WRB
+        there_EX is_VBZ no_DT overlap_VB between_IN groups_NNS ._. The_DT rank_NN sum_NN test_NN can_MD
+        be_VB used_VBN to_TO detect_VB such_JJ effects_NNS ._. Log_NNP transformation_NN of_IN the_DT
+        data_NNS also_RB can_MD minimize_VB the_DT impact_NN of_IN outliers_NNS with_IN high_JJ
+        signals_NNS ._. However_RB ,_, log_VB transformation_NN reduces_VBZ t_NN when_WRB the_DT
+        outliers_NNS are_VBP close_RB to_TO zero_CD ._. It_PRP has_VBZ been_VBN suggested_VBN that_IN this_DT
+        feature_NN of_IN the_DT log_NN transformation_NN is_VBZ advantageous_JJ because_IN
+        it_PRP can_MD exclude_VB effects_NNS that_WDT are_VBP artefacts_NNS of_IN noisy_NN data_NNS at_IN
+        low_JJ expression_NN levels_NNS [_NN 17_CD ]_NN ._. We_PRP prefer_VBP to_TO filter_NN noisy_NN
+        data_NNS by_IN using_VBG the_DT P_NN 
+        detection_NN algorithm_NN ._.
+        SAM_NNP [_NN 8_CD ]_NN is_VBZ an_DT alternative_NN to_TO t-tests_JJ or_CC rank_NN sum_NN
+        tests_NNS ._. The_DT false_JJ detection_NN rates_NNS computed_JJ by_IN SAM_NNP were_VBD
+        markedly_RB increased_VBN when_WRB we_PRP did_VBD not_RB apply_VB our_PRP$ presence_NN /_NN
+        absence_NN filter_NN ._. When_WRB the_DT filter_NN was_VBD used_VBN ,_, SAM_NNP generated_VBD a_DT
+        lower_JJR estimate_NN of_IN the_DT number_NN of_IN false_JJ differences_NNS than_IN
+        estimates_NNS based_VBN on_IN multiplying_VBG P_NN (_( t_NN )_) or_CC P_NN (_( rank_NN sum_NN )_) by_IN the_DT
+        number_NN of_IN comparisons_NNS ._. Perhaps_RB this_DT observation_NN can_MD be_VB
+        explained_VBN by_IN the_DT fact_NN that_IN expression_NN levels_NNS of_IN many_JJ genes_NNS
+        are_VBP correlated_JJ with_IN expression_NN levels_NNS of_IN many_JJ others_NNS ._. The_DT
+        number_NN of_IN random_JJ differences_NNS to_TO be_VB expected_VBN among_IN thousands_NNS
+        of_IN comparisons_NNS with_IN t-tests_JJ or_CC rank_NN sum_NN tests_NNS is_VBZ based_VBN on_IN
+        the_DT assumption_NN that_IN comparisons_NNS are_VBP independent_JJ of_IN one_CD
+        another_DT ._. SAM_NNP computes_VBZ the_DT false_JJ detection_NN rate_NN with_IN a_DT
+        method_NN that_WDT does_VBZ not_RB rely_VB on_IN this_DT assumption_NN ._.
+        Some_DT of_IN the_DT arrays_NNS included_VBN in_IN this_DT study_NN (_( n_NN =_SYM 4_LS )_) probed_JJ
+        RNA_NNP pooled_VBN from_IN multiple_JJ subjects_NNS ,_, whereas_IN others_NNS (_( n_NN =_SYM 8_CD )_)
+        probed_JJ RNA_NNP from_IN individual_JJ subjects_NNS ._. The_DT heterogeneous_JJ
+        nature_NN of_IN the_DT samples_NNS conceivably_RB could_MD influence_VB the_DT
+        statistical_JJ properties_NNS of_IN this_DT data_NNS set_VBN ._. However_RB ,_, there_EX was_VBD
+        good_JJ uniformity_NN among_IN arrays_NNS in_IN terms_NNS of_IN scaling_VBG factors_NNS
+        and_CC percentages_NNS of_IN probe_NN sets_NNS with_IN P_NN 
+        detection_NN <_NN 0_CD ._. 1_CD ,_, and_CC both_DT age_NN groups_NNS
+        were_VBD comprised_VBN of_IN 2_CD pools_NNS and_CC 4_CD individual_JJ samples_NNS ,_, which_WDT
+        should_MD minimize_VB the_DT influence_NN of_IN using_VBG both_DT pooled_VBN and_CC
+        individual_JJ samples_NNS (_( see_VB Additional_JJ file_NN 1_LS )_) ._. After_IN the_DT data_NNS
+        analyses_NNS described_VBD in_IN this_DT report_NN were_VBD completed_VBN ,_, we_PRP
+        reanalyzed_JJ the_DT individual_JJ samples_NNS along_IN with_IN 8_CD new_JJ
+        individual_JJ samples_NNS (_( total_NN of_IN 8_CD individual_JJ samples_NNS per_IN age_NN
+        group_NN )_) using_VBG U_NNP 133_CD A_DT and_CC U_NNP 133_CD B_NNP arrays_NNS ,_, which_WDT have_VBP ~_NN 44000_CD
+        probe_NN sets_NNS with_IN 11_CD probe_NN pairs_NNS per_IN set_VBN ._. The_DT reduction_NN of_IN
+        within-group_JJ variance_NN by_IN the_DT ratio_NN method_NN was_VBD replicated_VBN
+        (_( Table_NNP 4_LS )_) ,_, demonstrating_VBG that_IN it_PRP is_VBZ not_RB unique_JJ to_TO U_NNP 95_CD A_DT
+        arrays_NNS ,_, and_CC is_VBZ not_RB an_DT artefact_NN of_IN including_VBG both_DT pooled_VBN and_CC
+        individual_JJ samples_NNS ._. We_PRP cannot_NN guarantee_NN that_IN the_DT same_JJ
+        reduction_NN in_IN variance_NN will_MD occur_VB in_IN all_DT cases_NNS ._. If_IN variance_NN
+        caused_VBN by_IN biological_JJ heterogeneity_NN or_CC by_IN inconsistent_JJ
+        laboratory_NN procedures_NNS is_VBZ very_RB high_JJ ,_, then_RB the_DT difference_NN
+        between_IN the_DT signal_NN and_CC ratio_NN methods_NNS might_MD be_VB trivial_JJ in_IN
+        relation_NN to_TO overall_JJ variance_NN ._. The_DT proposed_VBN computational_NN
+        method_NN appears_VBZ to_TO reduce_VB the_DT inflation_NN of_IN variance_NN caused_VBN
+        by_IN variable_JJ weighting_NN of_IN individual_JJ probes_NNS within_IN a_DT set_VBN ,_,
+        but_CC cannot_NN compensate_VB for_IN variance_NN from_IN other_JJ sources_NNS ._.
+        Additional_JJ Files_NNP
+        Source_NN of_IN RNA_NNP ,_, scaling_VBG factors_NNS ,_, and_CC percentage_NN of_IN probe_NN
+        sets_NNS with_IN Pdetection_NNP <_NN 0_CD ._. 1_CD for_IN 12_CD arrays_NNS included_VBN in_IN
+        this_DT study_NN
+        Click_NNP here_RB for_IN file_NN
+        The_DT data_NNS generated_VBN in_IN this_DT study_NN have_VBP been_VBN deposited_VBN in_IN
+        the_DT NCBI_NNP Gene_NNP Expression_NNP Omnibus_NN (_( GEO_NNP ,_, accession_NN numbers_NNS
+        GSM_NNP 2390_CD through_IN GSM_NNP 2401_CD ,_, Series_NNP accession_NN number_NN GSE_NNP 80_CD )_)
+        http_NN :_: /_NN /_NN www_NN ._. ncbi_NN ._. nlm_NN ._. nih_NN ._. gov_NN /_NN geo_NN /_NN and_CC the_DT AMDeC_NNP Microarray_NNP
+        Resource_NNP Center_NNP Gene_NNP Expression_NNP Database_NNP www_NN ._. amdec_NN ._. org_NN ._.
+        Both_DT the_DT signal_NN data_NN and_CC the_DT ratio_NN data_NN have_VBP been_VBN
+        deposited_VBN ._. The_DT Affymetrix_NNP files_NNS (_( *_NN ._. exp_NN ,_, *_NN ._. dat_NN ,_, *_NN ._. cel_NN ,_,
+        *_NN ._. chp_NN )_) can_MD be_VB obtained_VBN from_IN the_DT corresponding_JJ author_NN ._.
+      
+      
+        Conclusions_NNP
+        The_DT ratio_NN method_NN reduces_VBZ inter-array_JJ variance_NN and_CC
+        thereby_RB enhances_VBZ statistical_JJ power_NN ._. SAM_NNP is_VBZ very_RB sensitive_JJ
+        to_TO noisy_NN data_NNS ,_, which_WDT should_MD be_VB removed_VBN a_DT priori_FW ._.
+      
+      
+        Methods_NNP
+        
+          Subjects_NNP
+          The_DT subjects_NNS were_VBD 16_CD young_JJ (_( 21_CD -_: 31_CD yr_NN )_) and_CC 19_CD older_JJR men_NNS
+          (_( 62_CD -_: 77_CD yr_NN )_) ._. All_DT had_VBD normal_JJ neuromuscular_NN function_NN and_CC
+          were_VBD healthy_JJ according_VBG to_TO history_NN ,_, physical_JJ examination_NN ,_,
+          and_CC laboratory_NN tests_NNS ._. None_NN of_IN them_PRP was_VBD involved_VBN in_IN any_DT
+          type_NN of_IN regular_JJ exercise_NN program_NN involving_VBG strenuous_JJ
+          activity_NN ._. All_DT subjects_NNS gave_VBD written_VBN consent_NN after_IN the_DT
+          procedures_NNS and_CC risks_NNS were_VBD explained_VBN ._. The_DT research_NN was_VBD
+          approved_VBN by_IN the_DT University_NNP of_IN Rochester_NNP Research_NNP Subjects_NNP
+          Review_NNP Board_NNP ._.
+        
+        
+          Procedures_NNP
+          Subjects_NNP were_VBD asked_VBN to_TO refrain_VB from_IN any_DT activity_NN more_RBR
+          strenuous_JJ than_IN walking_VBG for_IN 3_CD days_NNS before_IN the_DT muscle_NN
+          biopsy_NN ._. Each_DT subject_NN stayed_VBD at_IN the_DT University_NNP of_IN
+          Rochester_NNP General_NNP Clinical_NNP Research_NNP Center_NNP the_DT night_NN
+          before_IN the_DT biopsy_NN to_TO minimize_VB variability_NN between_IN
+          subjects_NNS in_IN the_DT amount_NN of_IN activity_NN performed_VBN on_IN the_DT day_NN
+          of_IN the_DT biopsy_NN ._. The_DT needle_NN biopsy_NN was_VBD obtained_VBN from_IN the_DT
+          vastus_JJ lateralis_NNS ._. The_DT skin_NN and_CC muscle_NN were_VBD anesthetized_JJ
+          with_IN lidocaine_NN a_DT few_JJ minutes_NNS before_IN tissue_NN removal_NN ._. The_DT
+          muscle_NN sample_NN was_VBD frozen_VBN in_IN liquid_JJ nitrogen_NN within_IN 30_CD
+          seconds_NNS of_IN removal_NN ,_, then_RB stored_VBD at_IN -_: 70_CD °_NN C_NNP until_IN
+          analysis_NN ._.
+        
+        
+          Analysis_NNP of_IN gene_NN expression_NN by_IN high_JJ density_NN
+          oligonucleotide_NN arrays_NNS
+          RNA_NNP was_VBD extracted_VBN from_IN the_DT muscle_NN samples_NNS as_IN described_VBN
+          previously_RB [_NN 11_CD ]_NN ._. All_DT RNA_NNP samples_NNS were_VBD of_IN high_JJ quality_NN
+          as_IN indicated_VBN by_IN the_DT pattern_NN of_IN staining_VBG with_IN ethidium_NN
+          bromide_NN in_IN an_DT agarose_NN gel_NN after_IN electrophoretic_JJ
+          separation_NN ._. RNA_NNP was_VBD probed_JJ with_IN Affymetrix_NNP HG-U_NNP 95_CD A_DT high_JJ
+          density_NN oligonucleotide_NN arrays_NNS ,_, which_WDT have_VBP ~_NN 12500_CD probe_NN
+          sets_NNS ._. Twelve_CD arrays_NNS were_VBD examined_VBN :_: four_CD (_( two_CD for_IN each_DT age_NN
+          group_NN )_) that_IN probed_JJ RNA_NNP pooled_VBN from_IN 4_CD -_: 8_CD subjects_NNS and_CC eight_CD
+          (_( four_CD for_IN each_DT age_NN group_NN )_) that_IN probed_JJ RNA_NNP from_IN a_DT single_JJ
+          subject_NN ._. Pooling_NNP of_IN RNA_NNP was_VBD necessary_JJ in_IN some_DT cases_NNS
+          because_IN most_JJS of_IN the_DT RNA_NNP from_IN some_DT samples_NNS had_VBD been_VBN used_VBN
+          for_IN other_JJ purposes_NNS ._. Additional_JJ file_NN 1_CD shows_VBZ the_DT source_NN of_IN
+          RNA_NNP ,_, scaling_VBG factors_NNS ,_, and_CC percentage_NN of_IN transcripts_NNS
+          present_JJ (_( P_NN 
+          detection_NN <_NN 0_CD ._. 1_LS )_) for_IN each_DT
+          array_NN ._.
+          Analytical_NNP procedures_NNS were_VBD carried_VBN out_IN using_VBG standard_JJ
+          operating_NN procedures_NNS developed_VBN and_CC validated_JJ by_IN the_DT
+          University_NNP of_IN Rochester_NNP Microarray_NNP Core_NNP Facility_NNP ._. After_IN
+          hybridization_NN and_CC washing_VBG ,_, arrays_NNS were_VBD stained_JJ with_IN
+          phycoerythrin-streptavidin_JJ ,_, which_WDT binds_NNS to_TO the_DT
+          biotinylated_JJ cRNAs_NNS hybridized_JJ with_IN the_DT probes_NNS ._. The_DT
+          initial_JJ scan_VB detected_VBD the_DT fluorescence_NN of_IN the_DT
+          phycoerythrin-streptavidin_JJ ._. The_DT analyses_NNS described_VBD in_IN
+          this_DT report_NN are_VBP based_VBN on_IN data_NNS from_IN this_DT initial_JJ scan_VB ._.
+          After_IN the_DT initial_JJ scan_VB ,_, signals_NNS were_VBD amplified_VBN by_IN
+          staining_VBG the_DT array_NN with_IN biotin-labeled_JJ anti-streptavidin_JJ
+          antibody_NN followed_VBN by_IN phycoerythrin-streptavidin_JJ ._. Analyses_NNS
+          of_IN the_DT antibody-enhanced_JJ scans_NNS are_VBP not_RB presented_VBN ,_, except_IN
+          for_IN correlations_NNS with_IN the_DT initial_JJ scans_NNS ,_, since_IN the_DT same_JJ
+          statistical_JJ issues_NNS are_VBP relevant_JJ to_TO both_DT scans_NNS ._. These_DT
+          scans_VBZ supported_VBN the_DT results_NNS discussed_VBN above_IN ._. Data_NNS from_IN
+          both_DT scans_NNS were_VBD deposited_VBN in_IN the_DT GEO_NNP and_CC AMDeC_NNP
+          databases_NNS ._.
+        
+        
+          Software_NNP
+          The_DT statistical_JJ algorithms_NNS of_IN Microarray_NNP Suite_NNP 5_CD ._. 0_CD
+          were_VBD used_VBN with_IN the_DT default_NN parameters_NNS to_TO generate_VB
+          signals_NNS ,_, ratios_NNS of_IN signals_NNS between_IN two_CD arrays_NNS ,_, and_CC P_NN 
+          detection_NN values_NNS ._. Data_NNP generated_VBN by_IN
+          Microarray_NNP Suite_NNP were_VBD exported_VBN to_TO Microsoft_NNP Excel_NNP for_IN
+          further_JJ analysis_NN ._. SAM_NNP runs_VBZ within_IN Excel_NNP ._.
+        
+      
+      
+        Authors_NNP '_'' contributions_NNS
+        SW_NNP was_VBD responsible_JJ for_IN data_NNS analyses_NNS and_CC was_VBD the_DT
+        principal_JJ author_NN ._. AIB_NNP was_VBD responsible_JJ for_IN generating_VBG
+        microarray_NN data_NNS ,_, and_CC contributed_VBD to_TO writing_VBG the_DT manuscript_NN ._.
+        CAT_NNP was_VBD responsible_JJ for_IN obtaining_VBG the_DT muscle_NN samples_NNS ,_, and_CC
+        contributed_VBD to_TO writing_VBG the_DT manuscript_NN ._. All_DT authors_NNS read_VBP and_CC
+        approved_VBD the_DT final_JJ manuscript_NN ._.
+      
+    
+  

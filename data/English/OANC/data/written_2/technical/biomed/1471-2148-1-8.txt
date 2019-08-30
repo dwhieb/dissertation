@@ -1,0 +1,890 @@
+
+  
+    
+      
+        Background_NNP
+        The_DT determination_NN of_IN multiple_JJ ,_, complete_JJ genome_NN sequences_NNS
+        of_IN bacteria_NNS ,_, archaea_NN and_CC eukaryotes_NNS has_VBZ created_VBN the_DT
+        opportunity_NN for_IN a_DT new_JJ level_NN of_IN phylogenetic_JJ analysis_NN that_WDT
+        is_VBZ based_VBN not_RB on_IN a_DT phylogenetic_JJ tree_NN for_IN selected_VBN molecules_NNS ,_,
+        for_IN example_NN ,_, rRNAs_NNS ,_, as_IN in_IN traditional_JJ molecular_JJ
+        phylogenetic_JJ studies_NNS [_NN 1_CD 2_CD ]_NN ,_, but_CC (_( ideally_RB )_) on_IN the_DT entire_JJ
+        body_NN of_IN information_NN contained_VBD in_IN the_DT genomes_NNS ._. The_DT most_RBS
+        straightforward_JJ version_NN of_IN this_DT type_NN of_IN analysis_NN ,_, to_TO which_WDT
+        we_PRP hereinafter_NN refer_VBP to_TO as_IN '_POS genome-tree_JJ '_POS building_NN ,_, involves_VBZ
+        scaling-up_JJ the_DT traditional_JJ tree-building_JJ approach_NN and_CC
+        analyzing_VBG the_DT phylogenetic_JJ trees_NNS for_IN multiple_JJ gene_NN families_NNS
+        (_( in_IN principle_NN ,_, all_DT families_NNS represented_VBD in_IN many_JJ genomes_NNS )_) ,_,
+        in_IN an_DT attempt_NN to_TO derive_VB a_DT consensus_NN ,_, '_'' organismal_NN '_'' phylogeny_NN
+        [_NN 3_CD 4_CD 5_CD ]_NN ._. However_RB ,_, because_IN of_IN the_DT wide_JJ spread_NN of_IN
+        horizontal_NN gene_NN transfer_NN and_CC lineage-specific_JJ gene_NN loss_NN ,_, at_IN
+        least_JJS in_IN the_DT prokaryotic_JJ world_NN ,_, comparison_NN of_IN trees_NNS for_IN
+        different_JJ families_NNS and_CC consensus_NN derivation_NN may_MD become_VB
+        highly_RB problematic_JJ [_NN 6_CD 7_CD ]_NN ._. Probably_RB due_JJ to_TO all_DT these_DT
+        problems_NNS ,_, a_DT pessimistic_JJ conclusion_NN has_VBZ been_VBN reached_VBN that_IN
+        prokaryotic_JJ phylogeny_NN might_MD not_RB be_VB reconstructable_JJ from_IN
+        protein_NN sequences_NNS ,_, at_IN least_JJS with_IN current_JJ phylogenetic_JJ
+        methods_NNS [_NN 4_CD ]_NN ._.
+        With_IN the_DT complete_JJ genome_NN sequences_NNS at_IN hand_NN ,_, it_PRP appears_VBZ
+        natural_JJ to_TO seek_VB for_IN alternatives_NNS to_TO traditional_JJ ,_,
+        alignment-based_JJ tree-building_JJ in_IN the_DT form_NN of_IN integral_JJ
+        characteristics_NNS of_IN the_DT evolutionary_JJ process_NN ._. Probably_RB the_DT
+        most_RBS obvious_JJ of_IN such_JJ characteristics_NNS is_VBZ the_DT
+        presence-absence_JJ of_IN representatives_NNS of_IN the_DT analyzed_VBN species_NNS
+        in_IN orthologous_JJ groups_NNS of_IN genes_NNS ,_, and_CC recently_RB ,_, at_IN least_JJS
+        three_CD groups_NNS have_VBP employed_VBN this_DT approach_NN to_TO build_VB genome_NN
+        trees_NNS ,_, primarily_RB for_IN prokaryotes_NNS [_NN 8_CD 9_CD 10_CD ]_NN ._. An_DT
+        alternative_JJ way_NN to_TO construct_VB a_DT genome_NN tree_NN involves_VBZ using_VBG
+        the_DT mean_NN or_CC median_JJ level_NN of_IN similarity_NN among_IN all_DT detectable_JJ
+        pairs_NNS of_IN orthologs_NNS as_IN the_DT measure_NN of_IN the_DT evolutionary_JJ
+        distance_NN between_IN species_NNS [_NN 11_CD ]_NN ._. Yet_RB another_DT possibility_NN
+        involves_VBZ building_NN species_NNS trees_NNS by_IN comparing_VBG gene_NN orders_NNS ._.
+        This_DT approach_NN had_VBD been_VBN pioneered_VBD in_IN the_DT classical_JJ work_NN of_IN
+        Dobzhansky_NNP and_CC Sturtevant_NNP who_WP used_VBD inversions_NNS in_IN 
+        Drosophila_NNP chromosomes_NNS to_TO construct_VB
+        an_DT evolutionary_JJ tree_NN [_NN 12_CD ]_NN ._. Subsequently_NNP ,_, mathematical_JJ
+        methods_NNS have_VBP been_VBN developed_VBN to_TO calculate_VB rearrangement_NN
+        distances_NNS between_IN genomes_NNS ,_, and_CC ,_, using_VBG these_DT ,_, phylogenetic_JJ
+        trees_NNS have_VBP been_VBN built_VBN for_IN certain_JJ small_JJ genomes_NNS ,_, such_JJ as_IN
+        plant_NN mitochondria_NN and_CC herpesviruses_NNS [_NN 13_CD 14_CD ]_NN ._. These_DT
+        approaches_NNS ,_, however_RB ,_, are_VBP applicable_JJ only_RB to_TO genomes_NNS that_WDT
+        show_NN significant_JJ conservation_NN of_IN global_JJ gene_NN order_NN ,_, which_WDT
+        is_VBZ manifestly_RB not_RB the_DT case_NN among_IN prokaryotes_NNS [_NN 15_CD 16_CD 17_CD ]_NN ._.
+        Even_RB relatively_RB close_VB species_NNS such_JJ as_IN ,_, for_IN example_NN ,_, 
+        Escherichia_NNP coli_NNS and_CC 
+        Haemophilus_NNP influenzae_NN ,_, two_CD species_NNS
+        of_IN the_DT γ-subdivision_JJ of_IN Proteobacteria_NNP ,_, retain_VB very_RB little_JJ
+        conservation_NN of_IN gene_NN order_NN beyond_IN the_DT operon_NN level_NN
+        (_( typically_RB ,_, two-to-four_JJ genes_NNS in_IN a_DT row_NN )_) ,_, and_CC essentially_RB
+        none_NN is_VBZ detectable_JJ among_IN evolutionarily_RB distant_JJ bacteria_NNS
+        and_CC archaea_NN [_NN 15_CD 16_CD 18_CD ]_NN ._. Very_RB few_JJ operons_NNS ,_, primarily_RB
+        those_DT coding_VBG for_IN physically_RB interacting_VBG subunits_NNS of_IN
+        multiprotein_NN complexes_NNS such_JJ as_IN certain_JJ ribosomal_JJ proteins_NNS
+        or_CC RNA-polymerase_NNP subunits_NNS ,_, are_VBP conserved_JJ across_IN a_DT wide_JJ
+        range_NN of_IN prokaryotic_JJ lineages_NNS [_NN 15_CD 16_CD ]_NN ._. On_IN the_DT other_JJ
+        hand_NN ,_, pairwise_NN comparisons_NNS of_IN even_RB distantly_RB related_VBN
+        prokaryotic_JJ genomes_NNS reveal_VBP considerable_JJ number_NN of_IN shared_VBN
+        (_( predicted_VBD )_) operons_NNS ,_, which_WDT creates_VBZ an_DT opportunity_NN for_IN a_DT
+        meaningful_JJ comparative_JJ analysis_NN [_NN 19_CD ]_NN [_NN 20_CD 21_CD ]_NN ._.
+        The_DT critical_JJ issue_NN with_IN all_PDT these_DT approaches_NNS to_TO genome_NN
+        tree_NN building_NN is_VBZ to_TO what_WP extent_NN each_DT of_IN them_PRP reflects_VBZ
+        phylogeny_NN and_CC to_TO what_WP extent_NN they_PRP are_VBP affected_VBN by_IN other_JJ
+        evolutionary_JJ processes_NNS ,_, such_JJ as_IN lineage-specific_JJ gene_NN loss_NN
+        and_CC horizontal_NN gene_NN transfer_NN ._. Comparative_NNP analyses_NNS have_VBP
+        strongly_RB suggested_VBN that_IN these_DT phenomena_NNS make_VBP major_JJ
+        contributions_NNS to_TO genome_NN evolution_NN ,_, at_IN least_JJS in_IN prokaryotes_NNS
+        [_NN 7_CD 22_CD 23_CD 24_CD 25_CD ]_NN ._. These_DT phenomena_NNS have_VBP the_DT potential_NN to_TO
+        severely_RB affecting_VBG phylogenetic_JJ tree_NN topology_NN ,_, particularly_RB
+        when_WRB similar_JJ sets_NNS of_IN genes_NNS are_VBP lost_VBN indifferent_JJ lineages_NNS
+        because_IN of_IN similar_JJ environmental_JJ pressures_NNS ,_, or_CC when_WRB a_DT
+        preferential_JJ trend_NN of_IN horizontal_NN gene_NN flow_NN exists_VBZ between_IN
+        different_JJ lineages_NNS ._. The_DT possibility_NN even_RB has_VBZ been_VBN discussed_VBN
+        that_IN the_DT amount_NN of_IN lateral_NN gene_NN exchange_NN is_VBZ such_JJ that_IN it_PRP
+        invalidates_NNS the_DT very_JJ principle_NN of_IN representing_VBG the_DT
+        evolution_NN of_IN species_NNS as_IN a_DT tree_NN ;_: instead_RB ,_, the_DT only_RB adequate_JJ
+        representation_NN of_IN evolutionary_JJ history_NN could_MD be_VB a_DT complex_JJ
+        network_NN [_NN 6_CD ]_NN [_NN 25_CD ]_NN ._. Genome-trees_NNP seem_VBP to_TO be_VB the_DT last_JJ
+        resort_NN for_IN the_DT species_NNS tree_NN concept_NN ._. Unless_IN phylogenetic_JJ
+        signal_NN can_MD be_VB revealed_VBN by_IN at_IN least_JJS some_DT approaches_NNS based_VBN on_IN
+        genome-wide_JJ comparisons_NNS ,_, the_DT conclusion_NN seems_VBZ imminent_JJ that_IN
+        this_DT concept_NN should_MD be_VB abandoned_VBN and_CC replaced_VBN by_IN a_DT more_RBR
+        complex_JJ representation_NN of_IN evolution_NN ._.
+        Here_RB ,_, we_PRP compare_VBP the_DT topologies_NNS produced_VBN with_IN five_CD ,_,
+        largely_RB independent_JJ approaches_NNS to_TO genome-tree_JJ building_NN :_: i_NNP )_)
+        presence-absence_JJ of_IN genomes_NNS in_IN Clusters_NNP of_IN Orthologous_NNP
+        Groups_NNS of_IN proteins_NNS (_( COGs_NNP )_) ;_: ii_NN )_) conservation_NN of_IN local_JJ gene_NN
+        order_NN (_( pairs_NNS of_IN adjacent_JJ genes_NNS )_) among_IN prokaryotic_JJ genomes_NNS ;_:
+        iii_NN )_) distribution_NN of_IN percent_NN identity_NN between_IN apparent_JJ
+        orthologs_NNS ;_: iv_NN )_) sequence_NN conservation_NN in_IN concatenated_JJ
+        alignments_NNS of_IN ribosomal_JJ proteins_NNS ;_: v_NN )_) comparative_JJ analysis_NN
+        of_IN multiple_JJ trees_NNS reconstructed_VBD for_IN representative_NN protein_NN
+        families_NNS ._. We_PRP find_VBP that_RB ,_, while_IN the_DT presence-absence_JJ approach_NN
+        is_VBZ most_RBS heavily_RB affected_VBN by_IN gene_NN loss_NN and_CC horizontal_NN
+        transfer_NN ,_, the_DT other_JJ four_CD methods_NNS reveal_VBP stronger_JJR
+        phylogenetic_JJ signals_NNS ._. Although_IN the_DT topologies_NNS of_IN the_DT trees_NNS
+        constructed_VBN with_IN different_JJ approaches_NNS were_VBD only_RB partially_RB
+        compatible_JJ ,_, three_CD previously_RB unnoticed_JJ high-level_JJ clades_NNS
+        among_IN bacteria_NNS were_VBD revealed_VBN with_IN notable_JJ consistency_NN ._. We_PRP
+        suggest_VBP that_IN ,_, in_IN spite_NN of_IN all_PDT the_DT complexity_NN brought_VBN about_IN
+        by_IN horizontal_NN gene_NN transfer_NN and_CC lineage-specific_JJ gene_NN loss_NN ,_,
+        these_DT groups_NNS reflect_VBP certain_JJ evolutionary_JJ reality_NN ,_, i_NNP ._. e_SYM ._. the_DT
+        trajectory_NN of_IN evolution_NN for_IN a_DT relatively_RB stable_JJ gene_NN core_NN ._.
+        It_PRP appears_VBZ that_IN this_DT is_VBZ the_DT only_RB meaningful_JJ way_NN to_TO treat_VB
+        the_DT notion_NN of_IN a_DT species_NNS tree_NN :_: as_IN the_DT history_NN of_IN a_DT
+        relatively_RB large_JJ ensemble_NN of_IN genes_NNS ,_, not_RB a_DT comprehensive_JJ
+        representation_NN of_IN the_DT history_NN of_IN entire_JJ genomes_NNS ._.
+      
+      
+        Results_NNS
+        
+          New_JJ criteria_NNS for_IN genome-tree_JJ construction_NN
+          
+            Conserved_NNP gene_NN pairs_NNS in_IN prokaryotic_JJ
+            genomes_NNS
+            The_DT results_NNS of_IN the_DT present_JJ analysis_NN of_IN conserved_JJ
+            gene_NN pairs_NNS are_VBP consistent_JJ with_IN the_DT notion_NN of_IN the_DT
+            fluidity_NN of_IN prokaryotic_JJ gene_NN order_NN caused_VBN by_IN extensive_JJ
+            recombination_NN ._. Only_RB 17_CD invariant_NN genes_NNS pairs_NNS were_VBD
+            detected_VBN ,_, all_DT of_IN which_WDT consists_VBZ of_IN genes_NNS for_IN ribosomal_JJ
+            proteins_NNS and_CC RNA_NNP polymerase_NN subunits_NNS ._. The_DT remaining_VBG
+            4586_CD gene_NN pairs_NNS were_VBD missing_VBG in_IN at_IN least_JJS one_CD genome_NN ._.
+            The_DT number_NN of_IN gene_NN pairs_NNS represented_VBD in_IN three_CD ,_, four_CD and_CC
+            a_DT greater_JJR number_NN of_IN genomes_NNS decayed_JJ rapidly_RB ,_, with_IN
+            highly_RB conserved_JJ pairs_NNS forming_VBG the_DT tail_NN of_IN the_DT
+            distribution_NN (_( Fig_NNP ._. 1_LS )_) ._. The_DT 95_CD %_NN quantile_NN of_IN this_DT
+            distribution_NN (_( excluding_VBG the_DT highly_RB conserved_JJ pairs_NNS )_) was_VBD
+            found_VBN to_TO fit_VB the_DT geometric_JJ model_NN with_IN a_DT high_JJ
+            statistical_JJ significance_NN (_( Fig_NNP ._. 1_LS )_) ._. This_DT is_VBZ compatible_JJ
+            with_IN random_JJ ,_, independent_JJ loss_NN of_IN gene_NN pairs_NNS during_IN
+            evolution_NN suggesting_VBG that_IN ,_, with_IN the_DT caveat_NN of_IN
+            horizontal_NN transfer_NN ,_, the_DT number_NN of_IN gene_NN pairs_NNS shared_VBN by_IN
+            three_CD genomes_NNS could_MD reflect_VB the_DT evolutionary_JJ distance_NN
+            between_IN them_PRP ._.
+            The_DT number_NN of_IN conserved_JJ gene_NN pairs_NNS present_JJ in_IN
+            individual_JJ prokaryotic_JJ genomes_NNS varied_VBD from_IN 208_CD for_IN 
+            M_NNP ._. genitalium_NN to_TO 2314_CD for_IN 
+            P_NN ._. aeruginosa_NN (_( Table_NNP 1_LS )_) ._. Analysis_NNP
+            of_IN the_DT co-occurrence_JJ of_IN gene_NN pairs_NNS among_IN the_DT
+            prokaryotic_JJ genomes_NNS shows_VBZ high_JJ values_NNS of_IN the_DT Jaquard_NNP
+            coefficient_NN ,_, which_WDT reflect_VBP partial_JJ conservation_NN of_IN gene_NN
+            order_NN (_( see_VB legend_NN to_TO Table_NNP 1_LS )_) ,_, for_IN closely_RB related_VBN
+            species_NNS ,_, for_IN example_NN ,_, 0_CD ._. 32_CD for_IN 
+            E_NNP ._. coli_NNS and_CC 
+            H_NNP ._. influenzae_NN and_CC 0_CD ._. 35_CD for_IN 
+            M_NNP ._. thermoautotrophicum_NN and_CC 
+            M_NNP ._. jannaschi_NN (_( Table_NNP 1_LS )_) ._. The_DT value_NN
+            of_IN this_DT coefficient_NN varied_VBD from_IN 0_CD ._. 16_CD to_TO 0_CD ._. 66_CD ,_, with_IN a_DT
+            mean_NN of_IN 0_CD ._. 26_CD ,_, for_IN archaea_NN ,_, and_CC from_IN 0_CD ._. 04_CD to_TO 0_CD ._. 87_CD ,_, with_IN
+            a_DT mean_NN of_IN 0_CD ._. 16_CD ,_, for_IN bacteria_NNS ._. In_IN contrast_NN ,_, for_IN
+            archaeal-bacterial_JJ comparisons_NNS ,_, the_DT values_NNS varied_VBD from_IN
+            0_CD ._. 04_CD to_TO 0_CD ._. 18_CD ,_, with_IN the_DT average_NN of_IN 0_CD ._. 08_CD (_( Table_NNP 1_LS )_) ._. These_DT
+            observations_NNS appear_VBP to_TO indicate_VB that_IN the_DT distribution_NN
+            of_IN conserved_JJ gene_NN pairs_NNS among_IN prokaryotic_JJ genomes_NNS
+            carries_VBZ a_DT phylogenetic_JJ signal_NN ._.
+          
+          
+            Distributions_NNP of_IN identity_NN percentage_NN between_IN
+            probable_JJ orthologs_NNS from_IN complete_JJ prokaryotic_JJ
+            genomes_NNS
+            Figure_NN 2_CD shows_VBZ a_DT sampling_VBG of_IN the_DT distributions_NNS of_IN
+            identity_NN percentage_NN between_IN pairs_NNS of_IN apparent_JJ orthologs_NNS
+            identified_VBN as_IN reciprocal_JJ best_JJS hits_NNS from_IN a_DT range_NN of_IN
+            genome_NN pairs_NNS separated_VBN by_IN varying_VBG phylogenetic_JJ
+            distances_NNS ._. Most_JJS of_IN the_DT distributions_NNS are_VBP clearly_RB
+            unimodal_NN ,_, and_CC the_DT distributions_NNS for_IN pairs_NNS of_IN
+            phylogenetically_RB distant_JJ genomes_NNS ,_, such_JJ as_IN those_DT from_IN
+            different_JJ major_JJ bacterial_JJ lineages_NNS or_CC bacteria_NNS versus_CC
+            archaea_NN ,_, have_VBP their_PRP$ modes_NNS within_IN a_DT relatively_RB narrow_JJ
+            range_NN around_IN 33_CD %_NN identity_NN (_( Figure_NN 2_LS )_) ._.
+            The_DT use_NN of_IN reciprocal_JJ best_JJS hits_NNS is_VBZ a_DT conservative_JJ
+            way_NN to_TO identify_VB the_DT set_NN of_IN probable_JJ orthologs_NNS between_IN
+            pairs_NNS of_IN genomes_NNS because_IN some_DT of_IN the_DT orthologs_NNS are_VBP
+            missed_VBN due_JJ to_TO complex_JJ relationships_NNS between_IN groups_NNS of_IN
+            paralogs_NNS ._. Nevertheless_RB ,_, all_DT genome-to-genome_JJ
+            comparisons_NNS included_VBD at_IN least_JJS 100_CD (_( for_IN the_DT smallest_JJS
+            genomes_NNS such_JJ as_IN the_DT mycoplasmas_NNS )_) ,_, and_CC typically_RB ,_, a_DT
+            considerably_RB greater_JJR number_NN of_IN protein_NN pairs_NNS (_( [_NN 11_CD ]_NN
+            and_CC data_NNS not_RB shown_VBN )_) ._. This_DT suggests_VBZ that_IN parameters_NNS of_IN
+            the_DT distributions_NNS of_IN the_DT similarity_NN level_NN between_IN
+            probable_JJ orthologs_NNS identified_VBN in_IN this_DT fashion_NN could_MD
+            potentially_RB serve_VB as_IN useful_JJ measures_NNS of_IN the_DT
+            evolutionary_JJ distance_NN between_IN genomes_NNS ._.
+          
+          
+            Genome_NNP trees_NNS constructed_VBN with_IN three_CD different_JJ
+            approaches_NNS
+            Genome_NNP trees_NNS were_VBD generated_VBN using_VBG the_DT approaches_NNS
+            described_VBD under_IN Material_NNP and_CC Methods_NNP ._. All_DT the_DT trees_NNS
+            showed_VBD a_DT clear_JJ separation_NN of_IN the_DT two_CD major_JJ prokaryotic_JJ
+            domains_NNS ,_, Bacteria_NNP and_CC Archaea_NNP (_( Fig_NNP ._. 3_LS ,_, 4_CD ,_, 5_LS )_) ._. Several_JJ
+            terminal_NN bifurcations_NNS that_WDT reflect_VBP clustering_VBG of_IN
+            relatively_RB close_VB species_NNS ,_, such_JJ as_IN three_CD mycoplasmas_NNS (_( 
+            M_NNP ._. genitalium_NN ,_, M_NNP ._. pneumoniae_NN and_CC 
+            U_NNP ._. urealiticum_NN )_) ,_, two_CD spirochetes_NNS
+            (_( 
+            B_NNP ._. burgdorferi_NN and_CC 
+            T_NN ._. pallidum_NN )_) ,_, and_CC 
+            H_NNP ._. pylori_NN and_CC 
+            C_NNP ._. jejuni_NN ,_, are_VBP also_RB reproduced_VBD in_IN
+            all_DT trees_NNS (_( Fig_NNP ._. 3_LS ,_, 4_CD ,_, 5_LS )_) ._. This_DT retention_NN of_IN both_DT the_DT
+            deepest_JJS and_CC the_DT terminal_NN branchings_NNS shows_VBZ that_IN all_DT
+            types_NNS of_IN data_NNS used_VBN for_IN tree_NN construction_NN contained_VBD at_IN
+            least_JJS a_DT crude_NN phylogenetic_JJ signal_NN ._. However_RB ,_, beyond_IN
+            these_DT obvious_JJ aspects_NNS of_IN topology_NN ,_, and_CC in_IN particular_JJ
+            with_IN respect_NN to_TO clustering_VBG of_IN distantly_RB related_VBN
+            bacteria_NNS and_CC archaea_NN ,_, the_DT trees_NNS produced_VBN with_IN different_JJ
+            approaches_NNS showed_VBD significant_JJ differences_NNS ,_, which_WDT appear_VBP
+            to_TO reflect_VB the_DT relative_JJ contributions_NNS of_IN phenotypic_JJ and_CC
+            phylogenetic_JJ signals_NNS ._. A_DT quantitative_JJ comparison_NN of_IN the_DT
+            tree_NN topologies_NNS using_VBG the_DT symmetric_JJ distance_NN method_NN
+            showed_VBD that_IN the_DT presence-absence_JJ tree_NN was_VBD most_RBS
+            different_JJ from_IN the_DT trees_NNS made_VBN by_IN the_DT other_JJ methods_NNS
+            (_( Table_NNP 2_LS )_) ._.
+          
+          
+            Presence-absence_NNP of_IN genomes_NNS in_IN COGs_NNP
+            The_DT topology_NN of_IN the_DT parsimony_NN tree_NN built_VBD using_VBG this_DT
+            criterion_NN appears_VBZ to_TO reflect_VB primarily_RB the_DT phenotypes_NNS
+            of_IN the_DT respective_JJ organisms_NNS (_( Fig_NNP ._. 3_LS )_) ._. This_DT is_VBZ most_RBS
+            clearly_RB manifest_JJ in_IN the_DT two_CD major_JJ bacterial_JJ clusters_NNS
+            that_WDT appear_VBP in_IN this_DT tree_NN ,_, each_DT with_IN a_DT strong_JJ bootstrap_NN
+            support_NN :_:
+            i_NNP )_) bacteria_NNS with_IN large_JJ genomes_NNS ,_, namely_RB 
+            E_NNP ._. coli_NNS ,_, B_NNP ._. subtilis_NNS ,_, Synechocystis_NNP
+            sp_NN ._. ,_, Deinococcus_NNP radiodurans_NNS and_CC 
+            Mycobacterium_NNP tuberculosis_NNS ,_, and_CC
+            free-living_JJ bacteria_NNS with_IN small_JJ genomes_NNS ,_, 
+            A_DT ._. aeolicus_JJ and_CC 
+            T_NN ._. maritima_NN 
+            ii_NN )_) parasites_NNS with_IN small_JJ genomes_NNS (_( mycoplasmas_NNS ,_,
+            spirochetes_NNS ,_, chlamydia_NN and_CC rickettsia_NN )_)
+            Parasites_NNP with_IN moderate-sized_JJ genomes_NNS (_( 
+            H_NNP ._. influenzae_NN ,_, N_NNP ._.
+            meningitidis_NNS ,_, and_CC 
+            P_NN ._. multocida_NN ;_: H_NNP ._. pylori_NN and_CC 
+            C_NNP ._. jejuni_NN )_) formed_VBN two_CD distinct_JJ
+            groups_NNS ._. Thus_RB ,_, well-established_JJ phylogenetic_JJ
+            relationships_NNS between_IN free-living_JJ and_CC parasitic_JJ
+            bacteria_NNS ,_, such_JJ as_IN those_DT within_IN the_DT Proteobacteria_NNP (_( 
+            E_NNP ._. coli-_NN H_NNP ._. influenzae-_NN P_NN ._. multocida-_NN N_NNP ._.
+            meningitidis_NNS )_) and_CC within_IN low-_JJ GC_NNP Gram-positive_NNP
+            bacteria_NNS (_( 
+            B_NNP ._. subtilis-mycoplasmas_JJ )_) ,_, are_VBP
+            not_RB reflected_VBN accurately_RB in_IN this_DT tree_NN topology_NN ._. The_DT two_CD
+            free-living_JJ bacteria_NNS with_IN small_JJ genomes_NNS ,_, the_DT
+            hyperthermophiles_NNS 
+            A_DT ._. aeolicus_JJ and_CC 
+            T_NN ._. maritima_NN ,_, did_VBD not_RB join_VB either_CC
+            the_DT free-living_JJ or_CC the_DT parasitic_JJ bacterial_JJ cluster_NN ,_,
+            despite_IN their_PRP$ small_JJ number_NN of_IN genes_NNS similar_JJ to_TO that_DT in_IN
+            bacterial_JJ parasites_NNS (_( Fig_NNP ._. 3_LS )_) ._. That_DT these_DT bacteria_NNS do_VBP
+            not_RB group_VB with_IN the_DT parasites_NNS despite_IN similar_JJ genome_NN
+            sizes_NNS ,_, suggests_VBZ that_IN it_PRP is_VBZ not_RB the_DT number_NN of_IN genes_NNS per_IN
+            se_FW ,_, but_CC rather_RB the_DT degree_NN of_IN genome_NN degradation_NN and_CC the_DT
+            loss_NN of_IN coherent_JJ sets_NNS of_IN genes_NNS that_WDT affect_VBP the_DT topology_NN
+            of_IN the_DT presence-absence_JJ tree_NN ._. The_DT inclusion_NN of_IN the_DT
+            parasites_NNS 
+            M_NNP ._. tuberculosis_NNS and_CC 
+            Pseudomonas_NNP aeruginosa_NN in_IN the_DT
+            cluster_NN of_IN bacteria_NNS with_IN large_JJ genomes_NNS probably_RB
+            reflects_VBZ the_DT recent_JJ origin_NN of_IN parasitism_NN in_IN these_DT
+            lineages_NNS ._. It_PRP is_VBZ further_JJ notable_JJ that_IN ,_, in_IN this_DT tree_NN ,_, the_DT
+            two_CD representative_NN of_IN Crenarchaeota_NNP (_( 
+            A_DT ._. pernix_NN and_CC 
+            S_NNP ._. solfataricus_JJ )_) do_VBP not_RB comprise_VB
+            a_DT sister_NN group_NN of_IN the_DT Euryarchaeota_NNP (_( the_DT remaining_VBG
+            archaeal_NN species_NNS )_) ,_, but_CC rather_RB for_IN am_VBP branch_NN within_IN the_DT
+            Euryarchaeal_NNP cluster_NN (_( see_VB discussion_NN below_IN )_) ._.
+            In_IN previous_JJ studies_NNS that_WDT employed_VBN similar_JJ approaches_NNS
+            to_TO genome-tree_JJ building_NN ,_, phylogenetically_RB reasonable_JJ
+            clades_NNS were_VBD observed_VBN after_IN a_DT simple_JJ omission_NN of_IN
+            parasitic_JJ species_NNS [_NN 8_CD 9_CD ]_NN ._. Such_JJ an_DT operation_NN could_MD be_VB
+            applied_VBN to_TO the_DT tree_NN shown_VBN in_IN Fig_NNP ._. 3_LS ,_, indeed_RB resulting_VBG
+            in_IN the_DT correct_JJ recovery_NN of_IN the_DT proteobacterial_NN and_CC
+            Gram-positive_NNP bacterial_JJ lineages_NNS ._. However_RB ,_, it_PRP seems_VBZ
+            that_IN ,_, because_IN known_VBN natural_JJ groups_NNS could_MD be_VB reproduced_VBD
+            by_IN this_DT approach_NN only_RB after_IN omission_NN of_IN certain_JJ species_NNS
+            on_IN the_DT basis_NN of_IN independent_JJ prior_RB knowledge_NN ,_, this_DT
+            method_NN hardly_RB can_MD be_VB useful_JJ for_IN delineating_VBG new_JJ ,_,
+            phylogenetically_RB sound_NN clades_NNS ._.
+          
+          
+            Conserved_NNP gene_NN pairs_NNS
+            The_DT topology_NN of_IN the_DT tree_NN based_VBN on_IN gene_NN pair_NN
+            conservation_NN seems_VBZ to_TO carry_VB a_DT stronger_JJR phylogenetic_JJ
+            signal_NN than_IN the_DT gene_NN presence-absence_JJ tree_NN because_IN it_PRP
+            correctly_RB groups_NNS together_RB related_VBN free-living_JJ and_CC
+            parasitic_JJ bacteria_NNS despite_IN major_JJ differences_NNS in_IN gene_NN
+            repertoires_NNS (_( Fig_NNP ._. 4_LS )_) ._. The_DT bacterial_JJ side_NN of_IN this_DT tree_NN
+            consists_VBZ of_IN three_CD major_JJ clades_NNS :_: i_NNP )_) proteobacterial_NN
+            clade_NN that_IN ,_, in_IN addition_NN to_TO bona_JJ fide_JJ Proteobacteria_NNP ,_,
+            includes_VBZ also_RB 
+            A_DT ._. aeolicus_JJ ,_, M_NNP ._. tuberculosis_NNS ,_, D_NNP ._.
+            radiodurans_NNS ,_, and_CC 
+            Synechocystis_NNP sp_NN ,_, ii_NN )_)
+            Gram-positive_NNP clade_NN that_WDT additionally_RB includes_VBZ 
+            T_NN ._. maritima_NN ,_, and_CC iii_NN )_) an_DT
+            unexpected_JJ clade_NN that_WDT unites_VBZ spirochetes_NNS and_CC chlamydia_NN ._.
+            In_IN the_DT archaeal_NN domain_NN ,_, the_DT two_CD species_NNS of_IN the_DT
+            Crenarchaeota_NNP did_VBD not_RB form_VB a_DT clade_NN ,_, but_CC instead_RB were_VBD
+            present_JJ as_IN separate_JJ branches_NNS interspersed_VBN with_IN
+            euryarchaeal_NN species_NNS ._. To_TO further_VB assess_VB the_DT robustness_NNS
+            of_IN the_DT obtained_VBN tree_NN ,_, we_PRP varied_VBD the_DT parameters_NNS of_IN the_DT
+            included_VBN conserved_JJ pairs_NNS by_IN allowing_VBG distances_NNS between_IN
+            the_DT genes_NNS comprising_VBG a_DT pair_NN from_IN 0_CD to_TO 5_CD and_CC changing_VBG
+            the_DT minimal_JJ number_NN of_IN genomes_NNS ,_, in_IN which_WDT a_DT conserved_JJ
+            gene_NN pair_NN had_VBD to_TO be_VB present_JJ ,_, from_IN 2_CD to_TO 4_CD ._. These_DT changes_NNS
+            did_VBD not_RB significantly_RB affect_VB the_DT tree_NN topology_NN (_( data_NNS
+            not_RB shown_VBN )_) ._. The_DT topology_NN of_IN a_DT neighbor-joining_JJ tree_NN
+            constructed_VBN by_IN using_VBG the_DT number_NN of_IN gene_NN pairs_NNS shared_VBN by_IN
+            two_CD genomes_NNS to_TO calculate_VB the_DT evolutionary_JJ distance_NN
+            between_IN them_PRP was_VBD similar_JJ to_TO the_DT topology_NN of_IN the_DT maximum_NN
+            parsimony_NN tree_NN (_( Table_NNP 2_CD and_CC data_NNS not_RB shown_VBN )_) ._.
+            At_IN least_JJS some_DT unusual_JJ aspects_NNS of_IN this_DT tree_NN 's_VBZ the_DT
+            topology_NN could_MD be_VB explained_VBN by_IN horizontal_NN transfer_NN of_IN
+            operons_NNS between_IN particular_JJ bacterial_JJ and_CC archaeal_NN
+            lineages_NNS ._. Specifically_RB ,_, it_PRP has_VBZ been_VBN noticed_VBN previously_RB
+            that_DT 
+            T_NN ._. maritima_NN shares_VBZ a_DT considerable_JJ
+            number_NN of_IN genes_NNS and_CC operons_NNS with_IN Gram-positive_NNP
+            bacteria_NNS ,_, to_TO the_DT exclusion_NN of_IN other_JJ bacteria_NNS [_NN 21_CD ]_NN ;_:
+            this_DT seems_VBZ to_TO be_VB compatible_JJ with_IN the_DT position_NN of_IN 
+            T_NN ._. maritima_NN with_IN the_DT
+            Gram-positive_NNP cluster_NN ._. Similarly_RB ,_, considerable_JJ
+            horizontal_NN gene_NN transfer_NN appear_VB to_TO have_VB occurred_VBN
+            between_IN the_DT 
+            Sulfolobus_NNP and_CC 
+            Thermoplasma_NNP lineages_NNS ,_, which_WDT
+            cluster_NN together_RB in_IN the_DT archaeal_NN part_NN of_IN this_DT tree_NN ._. The_DT
+            presence_NN of_IN extra_JJ species_NNS in_IN the_DT proteobacterial_NN
+            cluster_NN is_VBZ more_RBR surprising_VBG because_IN no_DT obvious_JJ trend_NN for_IN
+            operon_NN transfer_NN between_IN these_DT bacteria_NNS and_CC bona_JJ fide_JJ
+            Proteobacteria_NNP has_VBZ been_VBN noticed_VBN during_IN systematic_JJ
+            genome_NN comparisons_NNS ;_: however_RB ,_, a_DT considerable_JJ number_NN of_IN
+            shared_VBN gene_NN pairs_NNS was_VBD detected_VBN during_IN the_DT present_JJ
+            analysis_NN (_( Table_NNP 1_LS )_) ._. Artifacts_NNP of_IN tree_NN construction_NN
+            could_MD also_RB contribute_VB to_TO these_DT associations_NNS ._. In_IN
+            contrast_NN ,_, the_DT spirochete-chlamydia_JJ clade_NN might_MD reflect_VB
+            a_DT deep_JJ phylogenetic_JJ relationship_NN (_( see_VB discussion_NN
+            below_IN )_) ._.
+          
+          
+            Parameters_NNP of_IN percent_NN identity_NN distributions_NNS
+            between_IN orthologs_NNS
+            Different_JJ characteristics_NNS of_IN the_DT distributions_NNS of_IN
+            percent_NN identity_NN between_IN the_DT probable_JJ orthologs_NNS ,_, such_JJ
+            as_IN the_DT mean_NN ,_, the_DT median_NN ,_, the_DT mode_NN and_CC various_JJ
+            quantiles_NNS ,_, were_VBD used_VBN to_TO calculate_VB distances_NNS between_IN
+            genomes_NNS and_CC construct_VB phylogenetic_JJ trees_NNS ._. Trees_NNP built_VBD
+            with_IN different_JJ cut-off_JJ values_NNS for_IN symmetrical_JJ best_JJS
+            hits_NNS ,_, four_CD different_JJ formulas_NNS for_IN the_DT evolutionary_JJ
+            distance_NN calculation_NN (_( see_VB Materials_NNPS and_CC Methods_NNP )_) and_CC
+            different_JJ parameters_NNS of_IN the_DT distributions_NNS showed_VBD
+            essentially_RB the_DT same_JJ topology_NN ,_, with_IN strong_JJ bootstrap_NN
+            support_NN for_IN most_JJS of_IN the_DT clades_NNS (_( Fig_NNP ._. 5_LS and_CC data_NNS not_RB
+            shown_VBN )_) ._. The_DT complete_JJ proteobacterial_NN and_CC Gram-positive_NNP
+            bacterial_JJ clusters_NNS were_VBD recovered_VBN in_IN this_DT tree_NN as_RB well_RB
+            as_IN the_DT unexpected_JJ grouping_VBG of_IN chlamydia_NN with_IN spirochete_NN
+            noticed_VBD above_IN in_IN the_DT tree_NN based_VBN on_IN conserved_JJ gene_NN pairs_NNS
+            (_( Fig_NNP ._. 4_LS ,_, 5_LS )_) ._. Also_RB similarly_RB to_TO the_DT previous_JJ two_CD trees_NNS ,_,
+            the_DT Crenarchaea_NNP grouped_VBN with_IN 
+            Thermoplasma_NNP within_IN the_DT archaeal_NN
+            part_NN of_IN the_DT tree_NN ._. Beyond_IN these_DT groupings_NNS ,_, the_DT tree_NN
+            appeared_VBD conservative_JJ in_IN the_DT sense_NN that_IN the_DT unassigned_JJ
+            bacterial_JJ species_NNS formed_VBD separate_JJ branches_NNS near_IN the_DT
+            root_NN of_IN the_DT bacterial_JJ subtree_NN ._. The_DT closest_JJS to_TO the_DT root_NN
+            were_VBD the_DT two_CD hyperthermophilic_JJ species_NNS ,_, 
+            A_DT ._. aeolicus_JJ and_CC 
+            T_NN ._. maritima_NN ,_, which_WDT is_VBZ compatible_JJ
+            with_IN the_DT standard_JJ view_NN of_IN their_PRP$ phylogenetic_JJ position_NN [_NN
+            1_CD 26_CD ]_NN ._.
+          
+          
+            Alignment-based_NNP approaches_NNS to_TO the_DT construction_NN of_IN
+            a_DT species_NNS tree_NN
+            
+              Concatenated_NNP alignments_NNS of_IN ribosomal_JJ
+              proteins_NNS
+              The_DT alignments_NNS of_IN the_DT 32_CD ribosomal_JJ proteins_NNS
+              conserved_JJ in_IN all_DT bacterial_JJ and_CC archaeal_NN species_NNS were_VBD
+              concatenated_JJ head-to-tail_JJ and_CC treated_VBN as_IN a_DT single_JJ
+              alignment_NN containing_VBG 4821_CD columns_NNS ._. The_DT underlying_VBG
+              assumption_NN is_VBZ that_IN the_DT genes_NNS coding_VBG for_IN ribosomal_JJ
+              proteins_NNS that_WDT function_NN as_IN components_NNS of_IN a_DT large_JJ
+              macromolecular_NN complex_JJ are_VBP unlikely_JJ to_TO undergo_VB
+              horizontal_NN transfer_NN ,_, which_WDT tends_VBZ to_TO confound_NN
+              comparisons_NNS of_IN the_DT tree_NN topologies_NNS for_IN other_JJ protein_NN
+              families_NNS and_CC would_MD invalidate_NN the_DT concatenation_NN
+              approach_NN ._. The_DT resulting_VBG maximum-likelihood_JJ tree_NN
+              contains_VBZ the_DT complete_JJ proteobacterial_NN and_CC
+              Gram-positive_NNP bacterial_JJ clusters_NNS as_RB well_RB as_IN the_DT
+              spirochete-chlamydia_JJ cluster_NN noticed_VBD in_IN the_DT
+              genome-trees_JJ ._. In_IN addition_NN to_TO the_DT
+              spirochetes-chlamydia_JJ clade_NN ,_, the_DT following_VBG
+              non-trivial_JJ affinities_NNS were_VBD detected_VBN with_IN strong_JJ
+              bootstrap_NN support_NN :_: i_NNP )_) a_DT cluster_NN of_IN the_DT two_CD
+              hyperthemophiles_NNS ,_, 
+              A_DT ._. aeolicus_JJ and_CC T_NN ._.
+              maritima_NN ,_, ii_NN )_) a_DT cluster_NN including_VBG 
+              D_NNP ._. radiodurans_NNS ,_, Synechocystis_NNP ,_, and_CC
+              M_NNP ._. tuberculosis_NNS ,_, which_WDT ,_, at_IN a_DT deeper_JJR level_NN ,_, joined_VBD
+              the_DT Gram-positive_NNP bacterial_JJ branch_NN (_( Fig_NNP ._. 6_CD )_) ._. Similar_JJ
+              tree_NN topologies_NNS were_VBD obtained_VBN when_WRB the_DT ribosomal_JJ
+              protein_NN data_NNS were_VBD analyzed_VBN using_VBG the_DT neighbor-joining_JJ
+              method_NN and_CC when_WRB bacterial_JJ phylogeny_NN was_VBD analyzed_VBN
+              separately_RB by_IN using_VBG a_DT concatenated_JJ alignments_NNS of_IN 51_CD
+              ribosomal_JJ proteins_NNS shared_VBN by_IN all_DT bacteria_NNS (_( data_NNS not_RB
+              shown_VBN )_) ._. Notably_RB ,_, in_IN the_DT quantitative_JJ comparison_NN of_IN
+              tree_NN topologies_NNS ,_, the_DT tree_NN made_VBN of_IN concatenated_JJ
+              ribosomal_JJ protein_NN alignments_NNS showed_VBD the_DT closest_JJS
+              similarity_NN to_TO the_DT genome-tree_JJ based_VBN on_IN the_DT
+              distributions_NNS of_IN percent_NN identity_NN between_IN orthologs_NNS
+              (_( Table_NNP 2_LS )_) ._.
+              The_DT reliability_NN of_IN the_DT observed_VBN non-trivial_JJ
+              groupings_NNS was_VBD further_RBR examined_VBN by_IN using_VBG a_DT maximum_NN
+              likelihood_NN approach_NN (_( the_DT Kishino-_NNP Hasegawa_NNP test_NN )_) ._. For_IN
+              each_DT clade_NN (_( usually_RB ,_, species_NNS )_) forming_VBG the_DT group_NN to_TO be_VB
+              tested_VBN ,_, trees_NNS with_IN alternative_JJ topologies_NNS were_VBD
+              manually_RB constructed_VBN by_IN joining_VBG the_DT clade_NN in_IN question_NN
+              to_TO every_DT other_JJ major_JJ group_NN in_IN the_DT tree_NN ._. For_IN example_NN ,_,
+              to_TO assess_VB the_DT support_NN for_IN the_DT spirochetes-chlamydia_JJ
+              grouping_VBG ,_, spirochetes_NNS were_VBD placed_VBN ,_, sequentially_RB ,_, with_IN
+              
+              Thermotoga_NNP ,_, Aquifex_NNP ,_, the_DT 
+              Thermotoga-_NNP Aquifex_NNP branch_NN ,_,
+              ε-proteobacteria_JJ ,_, the_DT αβγ-proteobacterial_JJ branch_NN ,_,
+              Proteobacteria_NNP ,_, the_DT 
+              
+              Deinococcus-_NNP Synechocystis-_NNP Mycobacterium_NNP cluster_NN ,_,
+              the_DT low_JJ G_NNP +_NN C_NNP Gram-positive_NNP cluster_NN ,_, the_DT branch_NN that_WDT
+              unites_VBZ the_DT latter_JJ two_CD clusters_NNS ,_, and_CC between_IN bacteria_NNS
+              and_CC archaea_NN (_( to_TO the_DT bacterial_JJ root_NN )_) ._. The_DT same_JJ
+              alternatives_NNS were_VBD tested_VBN for_IN chlamydia_NN ._. Alternative_NNP
+              topologies_NNS were_VBD compared_VBN either_CC directly_RB ,_, using_VBG the_DT
+              ProtML_NNP program_NN ,_, or_CC were_VBD subjected_VBN to_TO local_JJ
+              rearrangement_NN first_RB ._. In_IN cases_NNS when_WRB the_DT topology_NN did_VBD
+              not_RB revert_NN to_TO the_DT original_JJ one_CD ,_, the_DT final_JJ ,_,
+              "_'' optimized_JJ "_'' topology_NN was_VBD used_VBN for_IN the_DT comparison_NN ._.
+              These_DT tests_NNS showed_VBD high_JJ stability_NN of_IN the_DT 
+              Thermotoga-_NNP Aquifex_NNP and_CC 
+              
+              Deinococcus-_NNP Synechocystis-_NNP Mycobacterium_NNP groupings_NNS
+              (_( no_DT competing_VBG topologies_NNS with_IN likelihood_NN within_IN 1_CD SD_NNP
+              unit_NN from_IN the_DT original_JJ ;_: Fig_NNP ._. 7_CD ,_, 8_CD ,_, Table_NNP 3_CD ,_, 4_CD ,_, 5_CD ,_, 6_CD )_) ._.
+              The_DT affinity_NN of_IN the_DT 
+              
+              Deinococcus-_NNP Synechocystis-_NNP Mycobacterium_NNP with_IN
+              Gram-positive_NNP bacteria_NNS also_RB was_VBD supported_VBN ,_, although_IN
+              an_DT alternative_JJ topology_NN ,_, with_IN this_DT cluster_NN joining_VBG
+              Proteobacteria_NNP could_MD not_RB be_VB ruled_VBN out_IN (_( Fig_NNP ._. 9_CD ,_, Table_NNP
+              7_CD )_) ._. Assessment_NNP of_IN the_DT spirochete-chlamydia_JJ grouping_VBG
+              revealed_VBN two_CD competing_VBG topologies_NNS ,_, albeit_IN unusual_JJ
+              ones_NNS ._. Specifically_RB ,_, moving_VBG ε-proteobacteria_JJ from_IN the_DT
+              proteobacterial_NN branch_NN to_TO the_DT spirochete_NN branch_NN or_CC ,_,
+              alternatively_RB ,_, moving_VBG spirochetes_NNS with_IN
+              ε-proteobacteria_JJ and_CC simultaneously_RB moving_VBG chlamydia_NN
+              to_TO the_DT bacterial_JJ root_NN results_NNS in_IN statistically_RB
+              acceptable_JJ topologies_NNS (_( Fig_NNP ._. 10_CD ;_: Table_NNP 8_CD ,_, 9_CD )_) ._. Also_RB ,_, a_DT
+              minor_JJ rearrangement_NN of_IN the_DT topology_NN within_IN the_DT
+              euryarchaeal_NN branch_NN allowed_VBN for_IN a_DT reasonable_JJ
+              alternative_NN to_TO the_DT topology_NN in_IN Fig_NNP ._. 8_CD (_( euryarchaeal_NN
+              paraphyly_RB )_) ,_, with_IN the_DT Crenarchaea-_NNP Euryarchaea_NNP
+              radiation_NN at_IN the_DT archaeal_NN root_NN (_( Fig_NNP ._. 11_CD ,_, Table_NNP
+              10_CD )_) ._.
+            
+            
+              A_DT census_NN of_IN protein_NN families_NNS
+              Another_DT approach_NN to_TO the_DT "_'' species_NNS tree_NN "_'' problem_NN
+              involves_VBZ analysis_NN of_IN phylogenetic_JJ trees_NNS for_IN as_IN many_JJ
+              individual_JJ protein_NN families_NNS as_IN possible_JJ ,_, in_IN an_DT
+              attempt_NN to_TO identify_VB a_DT prevailing_VBG topology_NN or_CC at_IN least_JJS
+              common_JJ phylogenetic_JJ patterns_NNS ._. A_DT survey_NN of_IN the_DT COG_NNP
+              data_NN set_VBN identified_VBN 132_CD COGs_NNP ,_, each_DT of_IN which_WDT included_VBD
+              a_DT large_JJ number_NN of_IN bacterial_JJ and_CC archaeal_NN species_NNS ,_, but_CC
+              no_DT or_CC few_JJ paralogs_NNS and_CC thus_RB appeared_VBD to_TO be_VB amenable_JJ
+              to_TO a_DT large-scale_JJ phylogenetic_JJ analysis_NN (_( Table_NNP 11_CD )_) ._.
+              Maximum-likelihood_NNP trees_NNS were_VBD constructed_VBN for_IN each_DT of_IN
+              these_DT COGs_NNP ,_, and_CC a_DT breakdown_NN of_IN nearest_JJS neighbors_NNS was_VBD
+              derived_VBN for_IN species_NNS and_CC groups_NNS involved_VBN in_IN each_DT of_IN
+              the_DT non-trivial_JJ or_CC questionable_JJ branchings_NNS discussed_VBN
+              above_IN (_( 
+              Crenarchaea_NNP ,_, Thermotoga_NNP ,_, Aquifex_NNP ,_,
+              Deinococcus_NNP ,_, Mycobacterium_NNP ,_,
+              Synechocystis_NNP ,_, spirochetes_NNS ,_, chlamydia_NN ,_, and_CC
+              ε-proteobacteria_JJ )_) ._. In_IN each_DT case_NN ,_, a_DT wide_JJ spread_NN of_IN
+              topologies_NNS was_VBD observed_VBN ,_, but_CC the_DT grouping_VBG that_WDT is_VBZ
+              observed_VBN in_IN the_DT concatenated_JJ ribosomal_JJ proteins_NNS tree_NN
+              was_VBD encountered_VBN most_RBS often_RB ,_, although_IN ,_, for_IN example_NN ,_,
+              for_IN the_DT spirochete-chlamydia_JJ cluster_NN ,_, the_DT lead_NN over_IN
+              other_JJ topologies_NNS was_VBD slim_JJ (_( Fig_NNP ._. 13_CD ,_, 14_CD ,_, 15_CD )_) ._.
+            
+          
+        
+      
+      
+        Discussion_NNP and_CC Conclusions_NNP
+        The_DT trees_NNS constructed_VBN with_IN each_DT of_IN the_DT four_CD approaches_NNS
+        employed_VBN here_RB reflect_VB both_DT the_DT phylogenetic_JJ signal_NN and_CC the_DT
+        phenotypic_JJ (_( life_NN style_NN )_) similarities_NNS or_CC differences_NNS between_IN
+        organisms_NNS ,_, but_CC the_DT relative_JJ contributions_NNS of_IN these_DT two_CD
+        types_NNS of_IN information_NN appear_VBP to_TO differ_VB substantially_RB ._. The_DT
+        gene_NN presence-absence_JJ analysis_NN seemed_VBD to_TO be_VB dominated_VBN by_IN
+        the_DT phenotypic_JJ signal_NN ,_, primarily_RB that_IN from_IN gene_NN loss_NN ._. The_DT
+        tree_NN based_VBN on_IN conserved_JJ gene_NN pairs_NNS appeared_VBD to_TO combine_VB
+        phylogenetic_JJ information_NN with_IN major_JJ effects_NNS of_IN horizontal_NN
+        transfer_NN of_IN operons_NNS ._. In_IN contrast_NN ,_, the_DT trees_NNS based_VBN on_IN the_DT
+        distributions_NNS of_IN the_DT identity_NN level_NN of_IN orthologs_NNS appear_VBP to_TO
+        be_VB more_RBR meaningful_JJ phylogenetically_RB as_IN indicated_VBN by_IN the_DT
+        recovery_NN of_IN established_VBN high-level_JJ phylogenetic_JJ groups_NNS of_IN
+        bacteria_NNS ,_, such_JJ as_IN Proteobacteria_NNP and_CC Gram-positive_NNP
+        bacteria_NNS ._. The_DT ability_NN to_TO correctly_RB identify_VB these_DT major_JJ
+        bacterial_JJ subdivisions_NNS and_CC the_DT absence_NN of_IN obviously_RB wrong_JJ
+        groupings_NNS confer_VBP credibility_NN to_TO non-trivial_JJ clades_NNS present_JJ
+        in_IN these_DT trees_NNS ,_, in_IN particular_JJ the_DT spirochete-chlamydia_JJ
+        clade_NN ._. The_DT same_JJ logic_NN applied_VBN to_TO the_DT tree_NN made_VBN of_IN
+        concatenated_JJ ribosomal_JJ protein_NN sequences_NNS ,_, which_WDT included_VBD
+        two_CD other_JJ non-trivial_JJ bacterial_JJ groupings_NNS ,_, 
+        Aquifex-_NNP Thermotoga_NNP and_CC 
+        
+        Synechocystis-_NNP Mycobacterium-_NNP Deinococcus_NNP ,_, the_DT latter_JJ
+        joining_VBG the_DT Gram-positive_NNP branch_NN ._. Furthermore_RB ,_, extensive_JJ
+        testing_NN of_IN alternative_JJ topologies_NNS using_VBG the_DT
+        Kishino-_NNP Hasegawa_NNP test_NN largely_RB supported_VBD these_DT new_JJ bacterial_JJ
+        branches_NNS ._. The_DT nature_NN of_IN this_DT support_NN becomes_VBZ clearer_JJR when_WRB
+        one_CD examines_VBZ the_DT results_NNS of_IN the_DT protein_NN family_NN census_NN ._. Each_DT
+        of_IN the_DT potential_JJ new_JJ clades_NNS was_VBD indeed_RB most_RBS common_JJ among_IN
+        the_DT observed_VBN topologies_NNS ,_, but_CC in_IN no_DT case_NN ,_, was_VBD the_DT excess_NN of_IN
+        this_DT topology_NN overwhelming_JJ ._. Taken_VBN together_RB ,_, these_DT results_NNS
+        seem_VBP to_TO shed_VB light_JJ on_IN the_DT very_JJ notion_NN of_IN a_DT "_'' species_NNS tree_NN "_'' ._.
+        It_PRP appears_VBZ that_IN ,_, at_IN best_JJS ,_, a_DT species_NNS tree_NN can_MD be_VB viewed_VBN as_IN a_DT
+        prevailing_VBG phylogenetic_JJ trend_NN ,_, which_WDT ,_, as_RB far_RB as_IN deep_JJ
+        branchings_NNS are_VBP concerned_VBN ,_, may_MD not_RB even_RB apply_VB to_TO a_DT majority_NN
+        of_IN the_DT genes_NNS in_IN a_DT genome_NN ._.
+        The_DT potential_JJ new_JJ ,_, deep_JJ relationships_NNS between_IN bacterial_JJ
+        lineages_NNS revealed_VBD during_IN this_DT analysis_NN should_MD be_VB considered_VBN
+        preliminary_JJ and_CC treated_VBN with_IN caution_NN ._. Nevertheless_RB ,_, an_DT
+        evolutionary_JJ affinity_NN between_IN Cyanobacteria_NNP (_( 
+        Synechocystis_NNP )_) and_CC Actinomycetes_NNP (_( 
+        Mycobacterium_NNP )_) appears_VBZ plausible_JJ ,_,
+        particularly_RB given_VBN the_DT presence_NN ,_, in_IN these_DT bacterial_JJ groups_NNS ,_,
+        of_IN well-developed_JJ and_CC partly_RB similar_JJ signal_NN transduction_NN
+        systems_NNS [_NN 27_CD ]_NN ._. The_DT connection_NN between_IN two_CD
+        hyperthermophilic_JJ bacteria_NNS ,_, 
+        Aquifex_NNP and_CC 
+        Thermotoga_NNP ,_, also_RB has_VBZ obvious_JJ
+        biological_JJ meaning_NN ,_, although_IN ,_, in_IN this_DT case_NN ,_, particular_JJ
+        caution_NN is_VBZ due_JJ ,_, given_VBN the_DT possibility_NN of_IN preferential_JJ
+        horizontal_NN gene_NN exchange_NN between_IN these_DT organisms_NNS that_WDT
+        inhabit_VBP similar_JJ environments_NNS ._. However_RB ,_, the_DT strong_JJ support_NN
+        for_IN this_DT grouping_VBG obtained_VBN in_IN the_DT analysis_NN of_IN concatenated_JJ
+        ribosomal_JJ proteins_NNS argues_VBZ against_IN horizontal_NN transfer_NN as_IN
+        the_DT primary_JJ cause_NN for_IN the_DT observed_VBN topology_NN ._. Although_IN
+        recent_JJ studies_NNS on_IN the_DT phylogeny_NN of_IN ribosomal_JJ proteins_NNS
+        suggest_VBP some_DT horizontal_NN transfer_NN events_NNS ,_, these_DT seem_VBP to_TO be_VB
+        largely_RB restricted_VBN to_TO bacteria-specific_JJ ribosomal_JJ proteins_NNS ._.
+        In_IN the_DT universal_JJ set_NN of_IN ribosomal_JJ proteins_NNS ,_, only_RB one_CD ,_, S_NNP 14_CD ,_,
+        showed_VBD clear_JJ signs_NNS of_IN horizontal_NN transfer_NN [_NN 28_CD ]_NN ._. The_DT
+        potential_JJ deep_JJ phylogenetic_JJ connections_NNS uncovered_VBN during_IN
+        this_DT analysis_NN call_NN for_IN detailed_JJ genome_NN comparisons_NNS in_IN
+        search_NN of_IN potential_JJ shared_VBN derived_VBN characters_NNS ,_, such_JJ as_IN
+        unique_JJ protein_NN domain_NN architectures_NNS ,_, that_WDT could_MD support_VB the_DT
+        new_JJ clades_NNS ._.
+        The_DT major_JJ bacterial_JJ lineages_NNS are_VBP poorly_RB resolved_VBN in_IN
+        rRNA-based_JJ trees_NNS [_NN 2_CD 29_CD ]_NN and_CC those_DT built_VBN using_VBG alignments_NNS
+        of_IN RNA_NNP polymerase_NN subunits_NNS [_NN 30_CD ]_NN and_CC translation_NN
+        elongation_NN factors_NNS [_NN 29_CD 31_CD ]_NN ._. In_IN the_DT currently_RB accepted_VBN
+        taxonomy_NN ,_, which_WDT is_VBZ based_VBN primarily_RB (_( but_CC not_RB exclusively_RB )_) on_IN
+        16_CD S_NNP RNA_NNP phylogenetic_JJ analysis_NN ,_, bacterial_JJ lineages_NNS that_WDT are_VBP
+        suggested_VBN by_IN this_DT analysis_NN to_TO form_VB higher-level_JJ clusters_NNS ,_,
+        tend_VBP to_TO form_VB primary_JJ nodes_NNS under_IN Bacteria_NNP (_( Chlamydiales_NNP ,_,
+        Spirochetales_NNP ,_, Cyanobacteria_NNP ,_, the_DT 
+        Thermus-_NNP Deinococcus_NNP group_NN ,_,
+        Aquificales_NNP ,_, Thermotogales_NNP )_) ._. Thus_RB ,_, the_DT genome_NN trees_NNS
+        primarily_RB suggest_VBP (_( however_RB tentatively_RB )_) new_JJ unifications_NNS
+        based_VBN on_IN deep_JJ phylogenetic_JJ connections_NNS ,_, rather_RB than_IN split_NN
+        already_RB established_VBD clades_NNS ._. A_DT notable_JJ exception_NN is_VBZ the_DT
+        traditional_JJ unification_NN of_IN Actinomycetes_NNP ,_, or_CC High_NNP G_NNP +_NN C_NNP
+        gram-positive_JJ bacteria_NNS (_( represented_VBD here_RB by_IN 
+        Mycobacterium_NNP )_) ,_, with_IN low_JJ G_NNP +_NN C_NNP
+        Gram-positive_NNP bacteria_NNS (_( the_DT 
+        Bacillus-_NNP Clostridium_NNP group_NN )_) under_IN
+        Firmicutes_NNP (_( Gram-positive_NNP bacteria_NNS )_) ._. Such_JJ a_DT connection_NN was_VBD
+        not_RB supported_VBN by_IN any_DT of_IN the_DT trees_NNS analyzed_VBD here_RB ,_, and_CC it_PRP is_VBZ
+        also_RB poorly_RB ,_, if_IN at_IN all_DT ,_, supported_VBN by_IN the_DT latest_JJS consensus_NN
+        trees_NNS for_IN 16_CD S_NNP RNA_NNP ,_, 23_CD S_NNP RNA_NNP and_CC translation_NN factor_NN EF-Tu_NNP [_NN
+        29_CD ]_NN ._. Therefore_RB it_PRP seems_VBZ likely_JJ that_IN the_DT Firmicutes_NNP clade_NN ,_,
+        at_IN least_JJS in_IN its_PRP$ present_JJ composition_NN ,_, does_VBZ not_RB exist_VB ._. The_DT
+        new_JJ clade_NN that_WDT might_MD replace_VB it_PRP consists_VBZ of_IN low-_JJ GC_NNP
+        Gram-positive_NNP bacteria_NNS and_CC the_DT potential_JJ
+        Actinomycetes-_NNP Deinococcales-_NNP Cyanobacteria_NNP group_NN (_( Fig_NNP ._. 6_CD )_) ._.
+        All_DT methods_NNS of_IN tree_NN analysis_NN applied_VBN here_RB also_RB challenge_VB
+        the_DT traditional_JJ division_NN of_IN the_DT archaeal_NN kingdom_NN into_IN
+        Euryarchaeota_NNP and_CC Crenarchaeota_NNP ,_, suggesting_VBG instead_RB that_IN
+        Euryarchaeota_NNP could_MD be_VB a_DT paraphyletic_JJ group_NN with_IN respect_NN to_TO
+        Crenarchaeota_NNP ,_, or_CC in_IN other_JJ words_NNS ,_, that_IN Crenarchaeota_NNP might_MD
+        have_VB evolved_VBN from_IN within_IN the_DT Euryarchaeota_NNP ._. However_RB ,_, the_DT
+        existence_NN of_IN a_DT statistically_RB supported_VBN alternative_JJ
+        topology_NN ,_, with_IN a_DT sister-group_JJ relationship_NN between_IN
+        Euryarchaeota_NNP and_CC Crenarchaeota_NNP allows_VBZ for_IN the_DT possibility_NN
+        that_IN the_DT apparent_JJ paraphyly_RB of_IN Euryarchaea_NNP is_VBZ an_DT artifact_NN
+        caused_VBN by_IN rapid_JJ evolution_NN in_IN some_DT Euryarchaeal_NNP lineages_NNS ,_,
+        such_JJ as_IN 
+        Halobacterium_NNP and_CC 
+        Thermoplasma_NNP ._. 
+        An_DT independent_JJ phylogenetic_JJ study_NN of_IN concatenated_JJ
+        ribosomal_JJ proteins_NNS has_VBZ been_VBN recently_RB published_VBN [_NN 32_CD ]_NN ._. The_DT
+        main_JJ specific_JJ conclusion_NN reported_VBD in_IN this_DT study_NN was_VBD the_DT
+        apparent_JJ association_NN of_IN 
+        Synechocystis_NNP with_IN Gram-positive_NNP
+        bacteria_NNS ,_, although_IN instability_NN of_IN the_DT tree_NN topology_NN
+        dependent_JJ on_IN the_DT subset_NN of_IN sites_NNS used_VBN for_IN analysis_NN was_VBD
+        noticed_VBN ._. Another_DT recent_JJ study_NN addressed_VBD the_DT issue_NN of_IN a_DT
+        global_JJ tree_NN through_IN phylogenetic_JJ analysis_NN of_IN 14_CD
+        concatenated_JJ sets_NNS of_IN orthologous_JJ proteins_NNS ,_, for_IN which_WDT no_DT
+        strong_JJ evidence_NN of_IN horizontal_NN transfer_NN was_VBD available_JJ [_NN 33_CD ]_NN
+        ._. Notably_RB ,_, some_DT of_IN the_DT unexpected_JJ groupings_NNS within_IN the_DT
+        bacterial_JJ domain_NN reported_VBD in_IN this_DT study_NN coincide_VB or_CC overlap_VB
+        with_IN those_DT described_VBN here_RB ,_, namely_RB ,_, a_DT spirochete-chlamydial_JJ
+        clade_NN and_CC a_DT Deinococcales-_NNP Cyanobacteria_NNP clade_NN ._. The_DT grouping_VBG
+        of_IN the_DT latter_JJ clade_NN with_IN Actinomycetes_NNP ,_, the_DT unification_NN of_IN
+        the_DT Deinococcales-_NNP Cyanobacteria-_NNP Actinomycetes_NNP clade_NN with_IN
+        Gram-positive_NNP bacteria_NNS and_CC the_DT grouping_VBG of_IN the_DT two_CD
+        bacterial_JJ hyperthermophiles_NNS were_VBD not_RB reproduced_VBD in_IN the_DT work_NN
+        of_IN Brown_NNP and_CC co-workers_NNS ._. The_DT differences_NNS between_IN the_DT
+        results_NNS of_IN the_DT two_CD studies_NNS could_MD owe_VB to_TO the_DT differences_NNS
+        between_IN data_NNS sets_NNS analyzed_VBD ,_, the_DT methods_NNS used_VBN or_CC ,_, most_RBS
+        likely_JJ ,_, both_DT ._. We_PRP should_MD note_VB that_IN the_DT present_JJ study_NN engaged_VBD
+        a_DT substantially_RB broader_JJR data_NNS set_VBN and_CC more_RBR diverse_JJ methods_NNS
+        for_IN tree_NN construction_NN ._. We_PRP believe_VBP ,_, however_RB ,_, that_RB ,_, in_IN terms_NNS
+        of_IN the_DT potential_JJ contribution_NN of_IN genome-wide_JJ phylogenetic_JJ
+        analysis_NN to_TO phylogenetic_JJ taxonomy_NN ,_, the_DT areas_NNS where_WRB
+        different_JJ methods_NNS and_CC independent_JJ analyses_NNS by_IN different_JJ
+        groups_NNS converge_NN might_MD be_VB more_RBR important_JJ than_IN the_DT areas_NNS of_IN
+        discrepancy_NN ._. It_PRP appears_VBZ that_IN potential_JJ new_JJ clades_NNS revealed_VBD
+        in_IN such_JJ independent_JJ studies_NNS are_VBP strong_JJ candidates_NNS for_IN new_JJ ,_,
+        high-level_JJ taxa_NN ._.
+        The_DT results_NNS of_IN the_DT present_JJ study_NN suggest_VBP that_IN genome_NN
+        trees_NNS based_VBN on_IN new_JJ ,_, integral_JJ criteria_NNS do_VBP not_RB provide_VB
+        substantial_JJ advantages_NNS in_IN phylogenetic_JJ reconstruction_NN over_IN
+        more_JJR traditional_JJ ,_, alignment-based_JJ methods_NNS expanded_VBN to_TO the_DT
+        genomic_JJ scale_NN ._. In_IN fact_NN ,_, the_DT latter_JJ seem_VBP to_TO be_VB more_RBR
+        sensitive_JJ in_IN detecting_VBG potential_JJ deep_JJ evolutionary_JJ
+        relationships_NNS and_CC this_DT is_VBZ expected_VBN to_TO further_VB improve_VB with_IN
+        the_DT increasing_VBG number_NN of_IN completely_RB sequenced_JJ genomes_NNS
+        becoming_VBG available_JJ for_IN analysis_NN ._. We_PRP believe_VBP ,_, however_RB ,_, that_IN
+        this_DT conclusion_NN does_VBZ not_RB necessarily_RB indicate_VB that_IN genome_NN
+        trees_NNS ,_, such_JJ as_IN those_DT based_VBN on_IN representation_NN of_IN genomes_NNS in_IN
+        orthologous_JJ sets_NNS or_CC conservation_NN of_IN gene_NN pairs_NNS ,_, are_VBP
+        useless_JJ ._. In_IN addition_NN to_TO revealing_VBG some_DT new_JJ phylogenetic_JJ
+        affinities_NNS ,_, they_PRP are_VBP capable_JJ of_IN alerting_VBG researchers_NNS to_TO
+        other_JJ evolutionary_JJ phenomena_NNS ,_, such_JJ as_IN loss_NN of_IN similar_JJ gene_NN
+        sets_NNS in_IN different_JJ organisms_NNS and_CC preferential_JJ horizontal_NN
+        gene_NN exchange_NN between_IN certain_JJ lineages_NNS ._.
+      
+      
+        Material_NNP and_CC Methods_NNP
+        
+          Sequence_NNP data_NNS
+          The_DT sequences_NNS of_IN the_DT proteins_NNS encoded_JJ in_IN complete_JJ
+          genomes_NNS were_VBD extracted_VBN from_IN the_DT Genome_NNP division_NN of_IN the_DT
+          Entrez_NNP retrieval_NN system_NN [_NN 34_CD ]_NN ._. The_DT analyzed_VBD genomes_NNS
+          included_VBD those_DT of_IN 30_CD bacteria_NNS :_: 
+          Aquifex_NNP aeolicus_JJ (_( Aquae_NNP )_) ,_, 
+          Bacillus_NN halodurans_NNS (_( Bacha_NNP )_) ,_, 
+          Bacillus_NN subtilis_NNS (_( Bacsu_NNP )_) ,_, 
+          Borrelia_NNP burgdorferi_NN (_( Borbu_NNP )_) ,_, 
+          Buchnera_NNP sp_NN ._. (_( Bucsp_NNP )_) ,_, 
+          Campylobacter_NNP jejunii_NN (_( Camje_NNP )_) ,_, 
+          Caulobacter_NNP crescentus_JJ (_( Caucr_NNP )_) ,_, 
+          Chlamydia_NNP trachomatis_NNS (_( Chltr_NNP )_) ,_, 
+          Chlamydophila_NNP pneumoniae_NN (_( Chlpn_NNP )_) ,_, 
+          Deinococcus_NNP radiodurans_NNS (_( Deira_NNP )_) ,_, 
+          Escherichia_NNP coli_NNS (_( Escco_NNP )_) ,_, 
+          Haemophilus_NNP influenzae_NN (_( Haein_NNP )_) ,_, 
+          Helicobacter_NNP pylori_NN (_( Helpy_NNP )_) ,_, 
+          Lactococcus_NNP lactis_NNS (_( Lacla_NNP )_) ,_, 
+          Mesorhizobium_NNP loti_NN (_( Meslo_NNP )_) ,_, 
+          Mycoplasma_NNP genitalium_NN (_( Mycge_NNP )_) ,_, 
+          Mycoplasma_NNP pneumoniae_NN (_( Mycpn_NNP )_) ,_, 
+          Mycobacterium_NNP tuberculosis_NNS (_( Myctu_NNP )_) ,_,
+          
+          Neisseria_NNP meningitidis_NNS (_( Neime_NNP )_) ,_, 
+          Pasteurella_NNP multocida_NN (_( Pasmu_NNP )_) ,_, 
+          Psudomonas_NNP aeruginosa_NN (_( Pseae_NNP )_) ,_, 
+          Rickettsia_NNP prowazekii_NN (_( Ricpr_NNP )_) ,_, 
+          Staphyloccocus_NNP aureus_NN (_( Staau_NNP )_) ,_, 
+          Streptococcus_NNP pyogenes_NNS (_( Strpy_NNP )_) ,_, 
+          Synechocystis_NNP PCC_NNP 6803_CD (_( SynPC_NNP )_) ,_, 
+          Thermotoga_NNP maritima_NN (_( Thema_NNP )_) ,_, 
+          Treponema_NNP pallidum_NN (_( Trepa_NNP )_) ,_, 
+          Ureaplasma_NNP urealyticum_NN (_( Ureur_NNP )_) ,_, 
+          Vibrio_NNP cholerae_NN (_( Vibch_NNP )_) ,_, 
+          Xylella_NNP fastidiosa_NN (_( Xylfa_NNP )_) ,_, and_CC ten_CD
+          archaea_NN :_: 
+          Aeropyrum_NNP pernix_NN (_( Aerpe_NNP )_) ,_, 
+          Archaeoglobus_NNP fulgidus_JJ (_( Arcfu_NNP )_) ,_,
+          Halobacterium_NNP sp_NN ._. (_( Halsp_NNP )_) ,_, 
+          Methanobacterium_NNP
+          thermoautotrophicum_NN (_( Metth_NNP )_) ,_, 
+          Methanococcus_NNP jannaschii_NN (_( Metja_NNP )_) ,_, 
+          Pyrococcus_NNP horikoshii_NN (_( Pyrho_NNP )_) ,_, 
+          Pyrococcus_NNP abyssi_NN (_( Pyrab_NNP )_) ,_, 
+          Sulfolobus_NNP solfataricus_JJ (_( Sulso_NNP )_) ,_, 
+          Thermoplasma_NNP acidophilum_NN (_( Theac_NNP )_) ,_, 
+          Thermoplasma_NNP volcanium_NN (_( Thevo_NNP )_) ._.
+        
+        
+          Phylogenetic_NNP tree_NN construction_NN
+          
+            Parsimony_NNP trees_NNS based_VBN on_IN the_DT presence-absence_JJ of_IN
+            conserved_JJ gene_NN pairs_NNS in_IN prokaryotic_JJ genomes_NNS
+            The_DT database_NN of_IN Clusters_NNP of_IN Orthologous_NNP Groups_NNS of_IN
+            proteins_NNS (_( COGs_NNP )_) was_VBD used_VBN as_IN the_DT source_NN of_IN information_NN
+            on_IN orthologous_JJ genes_NNS in_IN prokaryotic_JJ genomes_NNS [_NN 35_CD 36_CD ]_NN ._.
+            Briefly_NNP ,_, the_DT COGs_NNP were_VBD constructed_VBN from_IN the_DT results_NNS of_IN
+            all-against-all_JJ BLAST_NN [_NN 37_CD ]_NN comparison_NN of_IN proteins_NNS
+            encoded_JJ in_IN complete_JJ genomes_NNS by_IN detecting_VBG consistent_JJ
+            groups_NNS of_IN genome-specific_JJ best_JJS hits_NNS (_( BeTs_NNP )_) ._. The_DT COG_NNP
+            construction_NN procedure_NN does_VBZ not_RB rely_VB on_IN any_DT
+            preconceived_JJ phylogenetic_JJ tree_NN of_IN the_DT included_VBN species_NNS
+            except_IN that_DT certain_JJ obviously_RB related_VBN genomes_NNS (_( for_IN
+            example_NN ,_, two_CD species_NNS of_IN mycoplasmas_NNS or_CC pyrococci_NN )_) were_VBD
+            grouped_VBN prior_RB to_TO the_DT analysis_NN ,_, to_TO eliminate_VB strong_JJ
+            dependence_NN between_IN BeTs_NNP ._. In_IN order_NN to_TO avoid_VB spurious_JJ
+            occurrence_NN of_IN the_DT same_JJ gene_NN pair_NN ,_, only_RB gene_NN pairs_NNS
+            conserved_JJ in_IN three_CD or_CC more_JJR genomes_NNS were_VBD considered_VBN ._. A_DT
+            pair_NN of_IN genes_NNS from_IN two_CD COGs_NNP was_VBD considered_VBN to_TO be_VB
+            conserved_JJ if_IN the_DT respective_JJ genes_NNS were_VBD adjacent_JJ in_IN at_IN
+            least_JJS one_CD genome_NN and_CC were_VBD separated_VBN by_IN no_RB more_JJR than_IN two_CD
+            genes_NNS in_IN at_IN least_JJS two_CD additional_JJ genomes_NNS ._. This_DT relaxed_VBN
+            definition_NN of_IN a_DT conserved_JJ gene_NN pair_NN was_VBD adopted_VBN to_TO take_VB
+            into_IN account_NN the_DT high_JJ level_NN of_IN recombination_NN in_IN
+            prokaryotic_JJ genomes_NNS ._. From_IN the_DT data_NNS on_IN the_DT
+            presence-absence_JJ of_IN each_DT conserved_JJ gene_NN pair_NN in_IN the_DT
+            analyzed_VBN genomes_NNS (_( excluding_VBG pairs_NNS of_IN closely_RB related_VBN
+            species_NNS :_: 
+            E_NNP ._. coli-_NN Buchnera_NNP sp_NN ._. ,_, H_NNP ._.
+            influenzae-_NN P_NN ._. multocida_NN ,_, C_NNP ._. trachomatis-_NN C_NNP ._. pneumoniae_NN ,_,
+            P_NN ._. horikoshii-_NN P_NN ._. abyssi_NN ,_, M_NNP ._. genitalium-_NN M_NNP ._. pneumoniae-_NN U_NNP ._.
+            urealyticum_NN ,_, H_NNP ._. pyroli_NN -_: C_NNP ._. jejuni_NN ,_, T_NN ._. acidophilum-_NN T_NN ._.
+            volcanium_NN )_) ,_, a_DT 0_CD /_NN 1_CD matrix_NN analogous_JJ to_TO the_DT one_CD used_VBN
+            for_IN the_DT presence-absence_JJ of_IN individual_JJ genes_NNS was_VBD
+            constructed_VBN ,_, and_CC a_DT tree_NN was_VBD built_VBN using_VBG Dollo_NNP parsimony_NN
+            [_NN 38_CD ]_NN ._. A_DT parsimony_NN method_NN was_VBD chosen_VBN for_IN this_DT
+            analysis_NN because_IN the_DT presence-absence_JJ of_IN a_DT conserved_JJ
+            gene_NN pair_NN in_IN a_DT genome_NN can_MD be_VB naturally_RB treated_VBN in_IN terms_NNS
+            of_IN character_NN states_NNS ._. The_DT Dollo_NNP model_NN is_VBZ based_VBN on_IN the_DT
+            assumption_NN that_IN each_DT derived_VBN character_NN state_NN (_( in_IN this_DT
+            case_NN ,_, the_DT presence_NN of_IN a_DT gene_NN pair_NN )_) originates_VBZ only_RB
+            once_RB ,_, and_CC homoplasies_NNS exist_VBP only_RB in_IN the_DT form_NN of_IN
+            reversals_NNS to_TO the_DT ancestral_JJ condition_NN (_( absence_NN of_IN a_DT gene_NN
+            pair_NN )_) [_NN 38_CD ]_NN ._. In_IN other_JJ words_NNS ,_, parallel_NN or_CC convergent_NN
+            gains_NNS of_IN the_DT derived_VBN condition_NN are_VBP assumed_VBN to_TO be_VB highly_RB
+            unlikely_JJ ._. The_DT Dollo_NNP parsimony_NN method_NN is_VBZ not_RB sensitive_JJ
+            to_TO gene_NN loss_NN which_WDT is_VBZ extremely_RB common_JJ in_IN evolution_NN of_IN
+            prokaryotes_NNS ,_, but_CC the_DT results_NNS can_MD be_VB affected_VBN by_IN
+            independent_JJ acquisition_NN of_IN the_DT same_JJ gene_NN pair_NN by_IN
+            different_JJ genome_NN via_IN horizontal_NN gene_NN transfer_NN ._.
+            Phylogenetic_NNP analysis_NN was_VBD performed_VBN by_IN using_VBG the_DT PAUP_NNP
+            4_CD ._. 0_CD program_NN [_NN 39_CD ]_NN ,_, with_IN 1000_CD bootstrap_NN replicates_NNS
+            performed_VBN to_TO assess_VB the_DT reliability_NN of_IN the_DT tree_NN
+            topology_NN ._. In_IN addition_NN ,_, the_DT tree_NN topology_NN was_VBD analyzed_VBN
+            using_VBG the_DT neighbor-joining_JJ method_NN [_NN 40_CD ]_NN ._.
+          
+          
+            Parsimony_NNP trees_NNS based_VBN on_IN the_DT representation_NN of_IN
+            genomes_NNS in_IN orthologous_JJ gene_NN sets_NNS
+            The_DT information_NN on_IN orthologous_JJ genes_NNS in_IN prokaryotic_JJ
+            genomes_NNS and_CC the_DT yeast_NN genome_NN was_VBD derived_VBN from_IN the_DT COGs_NNP
+            as_IN in_IN the_DT previous_JJ approach_NN ,_, and_CC the_DT orthology_NN data_NN
+            were_VBD similarly_RB represented_VBN as_IN a_DT 0_CD /_NN 1_CD matrix_NN of_IN
+            presence-absence_JJ of_IN the_DT analyzed_VBN genomes_NNS in_IN the_DT COGs_NNP ._. A_DT
+            Dollo_NNP parsimony_NN tree_NN was_VBD constructed_VBN and_CC the_DT
+            reliability_NN of_IN its_PRP$ topology_NN was_VBD assessed_VBN using_VBG the_DT
+            bootstrap_NN method_NN as_IN described_VBN above_IN ._.
+          
+          
+            Distance_NNP trees_NNS based_VBN on_IN distributions_NNS of_IN identity_NN
+            percentage_NN between_IN orthologous_JJ protein_NN sequences_NNS
+            The_DT sequences_NNS of_IN all_DT proteins_NNS encoded_JJ in_IN the_DT
+            analyzed_VBN genomes_NNS were_VBD compared_VBN to_TO each_DT other_JJ using_VBG the_DT
+            gapped_JJ BLASTP_NNP program_NN [_NN 37_CD ]_NN ._. Reciprocal_NNP ,_,
+            genome-specific_JJ BeTs_NNP were_VBD collected_VBN at_IN different_JJ
+            expectation_NN (_( E_NNP )_) value_NN cutoffs_NNS (_( 0_CD ._. 01_CD ,_, 0_CD ._. 001_CD ,_, 0_CD ._. 0001_CD ,_,
+            0_CD ._. 00001_CD )_) ._. This_DT method_NN for_IN identification_NN of_IN probable_JJ
+            orthologs_NNS is_VBZ ,_, in_IN principle_NN ,_, similar_JJ to_TO the_DT method_NN
+            employed_VBN in_IN COG_NNP construction_NN ,_, but_CC differs_VBZ in_IN that_DT there_EX
+            is_VBZ no_DT requirement_NN for_IN the_DT formation_NN of_IN triangles_NNS of_IN
+            consistent_JJ BeTs_NNP ._. The_DT result_NN of_IN this_DT procedure_NN is_VBZ a_DT
+            conservative_JJ selection_NN of_IN orthologous_JJ pairs_NNS because_IN the_DT
+            cases_NNS of_IN lineage-specific_JJ duplication_NN that_DT result_NN in_IN
+            non-symmetrical_JJ BeTs_NNP are_VBP excluded_VBN and_CC so_RB are_VBP
+            orthologous_JJ pairs_NNS with_IN very_RB low_JJ sequence_NN similarity_NN ._.
+            However_RB ,_, the_DT limitation_NN of_IN the_DT COG_NNP system_NN ,_, namely_RB the_DT
+            requirement_NN that_IN each_DT orthologous_JJ group_NN is_VBZ represented_VBN
+            in_IN at_IN least_JJS three_CD genomes_NNS ,_, is_VBZ avoided_VBN ._. The_DT
+            distributions_NNS of_IN identity_NN percentage_NN among_IN the_DT
+            reciprocal_JJ best_JJS hits_NNS were_VBD derived_VBN for_IN each_DT pair_NN of_IN
+            species_NNS ._. The_DT mean_NN ,_, mode_NN ,_, median_JJ and_CC different_JJ quantiles_NNS
+            of_IN the_DT identity_NN percentage_NN distributions_NNS were_VBD used_VBN for_IN
+            estimating_VBG evolutionary_JJ distances_NNS ._. Four_CD distance_NN
+            measures_NNS were_VBD used_VBN ,_, namely_RB :_: i_NNP )_) P-_NNP distances_NNS calculated_VBN
+            as_IN the_DT fraction_NN of_IN different_JJ residues_NNS :_: 
+            d_SYM =_SYM 1_CD -_: 
+            q_NN ,_, ii_NN )_) Poisson_NNP distances_NNS 
+            d_SYM =_SYM -_: 1_CD n_NN 
+            u_NN ,_, iii_NN )_) geometric_JJ distances_NNS
+            calculated_VBD using_VBG the_DT formula_NN 
+            d_SYM =_SYM 1_CD /_NN 
+            u_NN -_: 1_CD ,_, and_CC iv_NN )_) logarithmic_JJ
+            distances_NNS found_VBD as_IN a_DT solution_NN of_IN the_DT equation_NN 
+            u_NN =_SYM ln_NN (_( 1_CD +_NN 2_CD 
+            d_SYM )_) /_NN (_( 2_CD 
+            d_SYM )_) ,_, where_WRB 
+            d_SYM is_VBZ the_DT evolutionary_JJ distance_NN ,_, 
+            q_NN is_VBZ percent_NN identity_NN ,_, and_CC 
+            u_NN =_SYM (_( 
+            q_NN -_: 0_CD ._. 05_CD )_) /_NN 0_CD ._. 95_CD [_NN 41_CD 42_CD ]_NN [_NN 43_CD ]_NN ._.
+            Trees_NNP were_VBD constructed_VBN from_IN the_DT distance_NN matrices_NNS
+            obtained_VBN with_IN the_DT above_JJ distance_NN estimates_NNS using_VBG the_DT
+            neighbor-joining_JJ method_NN [_NN 40_CD ]_NN as_IN implemented_VBN in_IN the_DT
+            NEIGHBOR_NNP program_NN of_IN the_DT PHYLIP_NNP package_NN [_NN 44_CD ]_NN ._.
+            Bootstrap_NNP values_NNS were_VBD estimated_VBN by_IN resampling_VBG the_DT set_NN
+            of_IN orthologs_NNS identified_VBN for_IN each_DT pair_NN of_IN genomes_NNS 1000_CD
+            times_NNS and_CC reconstructing_VBG trees_NNS from_IN the_DT distributions_NNS
+            of_IN the_DT distances_NNS from_IN these_DT resampled_JJ sets_NNS ._.
+          
+          
+            Maximum_NNP Likelihood_NNP trees_NNS based_VBN on_IN concatenated_JJ
+            alignments_NNS of_IN ribosomal_JJ proteins_NNS
+            Sets_NNP of_IN orthologous_JJ ribosomal_JJ proteins_NNS were_VBD
+            extracted_VBN from_IN the_DT COG_NNP database_NN ,_, and_CC their_PRP$ amino_JJ acid_NN
+            sequences_NNS were_VBD aligned_VBN using_VBG the_DT T-C_NNP offee_NN program_NN [_NN 45_CD
+            ]_NN ,_, with_IN subsequent_JJ manual_JJ validation_NN and_CC removal_NN of_IN
+            poorly_RB aligned_VBN regions_NNS ._. The_DT alignments_NNS are_VBP available_JJ
+            upon_IN request_NN ._. Pairwise_NNP evolutionary_JJ distances_NNS between_IN
+            the_DT sequences_NNS in_IN concatenated_JJ alignments_NNS were_VBD
+            calculated_VBN using_VBG the_DT Dayhoff_NNP PAM_NNP model_NN as_IN implemented_VBN
+            in_IN the_DT PROTDIST_NNP program_NN of_IN the_DT PHYLIP_NNP package_NN [_NN 44_CD ]_NN ._.
+            A_DT distance_NN tree_NN was_VBD constructed_VBN from_IN the_DT resulting_VBG
+            distance_NN matrix_NN by_IN using_VBG the_DT least-square_JJ [_NN 46_CD ]_NN method_NN
+            as_IN implemented_VBN in_IN the_DT FITCH_NNP program_NN of_IN PHYLIP_NNP [_NN 44_CD ]_NN ._.
+            The_DT maximum_NN likelihood_NN tree_NN was_VBD constructed_VBN with_IN the_DT
+            JTT-F_NNP model_NN of_IN amino_JJ acid_NN substitutions_NNS [_NN 47_CD ]_NN ,_, as_IN
+            implemented_VBN in_IN the_DT ProtML_NNP program_NN of_IN the_DT MOLPHY_NNP package_NN
+            [_NN 48_CD ]_NN ,_, by_IN optimizing_VBG the_DT least_JJS squares_NNS tree_NN with_IN
+            local_JJ rearrangements_NNS ._. Alternative_NNP topologies_NNS were_VBD
+            created_VBN manually_RB by_IN modifications_NNS of_IN the_DT original_JJ tree_NN
+            and_CC directly_RB compared_VBN by_IN ProtML_NNP ._. Bootstrap_NNP analysis_NN was_VBD
+            performed_VBN by_IN using_VBG the_DT Resampling_NNP of_IN Estimated_VBN
+            Log-_NNP Likelihoods_NNP (_( RELL_NNP )_) method_NN as_IN implemented_VBN in_IN ProtML_NNP
+            [_NN 48_CD 49_CD ]_NN ._.
+          
+          
+            Comparative_NNP analysis_NN of_IN Maximum_NNP Likelihood_NNP trees_NNS
+            for_IN individual_JJ protein_NN families_NNS
+            The_DT representative_NN families_NNS were_VBD selected_VBN from_IN the_DT
+            COG_NNP database_NN according_VBG to_TO the_DT following_JJ criteria_NNS :_: i_NNP )_) at_IN
+            least_JJS 30_CD species_NNS are_VBP represented_VBN ;_: ii_NN )_) no_RB more_JJR than_IN two_CD
+            paralogs_NNS in_IN any_DT of_IN the_DT species_NNS ;_: iii_NN )_) no_RB more_JJR than_IN 1_CD ._. 2_CD
+            paralogs_NNS per_IN genome_NN on_IN average_JJ ;_: iv_NN )_) at_IN least_JJS 100_CD
+            positions_NNS in_IN the_DT alignment_NN containing_VBG less_JJR than_IN 30_CD %_NN of_IN
+            gaps_NNS ._. This_DT selection_NN procedure_NN resulted_VBD in_IN a_DT set_NN of_IN 132_CD
+            families_NNS (_( COGs_NNP )_) ._. Alignments_NNP and_CC ML_NNP trees_NNS were_VBD
+            constructed_VBN for_IN these_DT families_NNS as_IN described_VBN above_IN for_IN
+            the_DT concatenated_JJ ribosomal_JJ proteins_NNS ._.
+          
+          
+            Quantitative_NNP comparison_NN of_IN tree_NN topologies_NNS
+            To_TO compare_VB tree_NN topologies_NNS quantitatively_RB ,_, the_DT
+            symmetric_JJ distance_NN between_IN trees_NNS [_NN 50_CD ]_NN was_VBD computed_JJ
+            using_VBG the_DT TREEDIST_NNP program_NN of_IN the_DT PHYLIP_NNP package_NN
+            (_( version_NN 3_CD ._. 6_CD a_DT )_) ._. Briefly_NNP ,_, each_DT of_IN the_DT two_CD compared_VBN trees_NNS
+            is_VBZ divided_VBN by_IN each_DT internal_JJ branch_NN into_IN two_CD partitions_NNS ._.
+            The_DT symmetric_JJ distance_NN is_VBZ the_DT number_NN of_IN partitions_NNS that_WDT
+            are_VBP found_VBN in_IN one_CD tree_NN but_CC not_RB the_DT other_JJ ._.
+          
+        
+      
+    
+  

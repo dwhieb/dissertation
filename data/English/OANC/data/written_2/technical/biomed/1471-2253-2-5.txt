@@ -1,0 +1,943 @@
+
+  
+    
+      
+        Background_NNP
+        PKQuest_NNP is_VBZ a_DT new_JJ generic_JJ "_'' physiologically_RB based_VBN
+        pharmacokinetic_JJ model_NN "_'' (_( PBPK_NNP )_) [_NN 1_CD ]_NN ._. A_DT PBPK_NNP provides_VBZ an_DT
+        approach_NN to_TO modeling_NN drug_NN distribution_NN and_CC metabolism_NN that_WDT
+        is_VBZ based_VBN on_IN the_DT use_NN of_IN a_DT physiologically_RB realistic_JJ model_NN of_IN
+        the_DT animal_NN ._. This_DT new_JJ PBPK_NNP has_VBZ been_VBN designed_VBN to_TO provide_VB a_DT
+        rigorous_JJ mathematical_JJ treatment_NN that_WDT takes_VBZ into_IN
+        consideration_NN all_PDT the_DT different_JJ biochemical_JJ and_CC
+        physiological_JJ properties_NNS that_IN a_DT drug_NN may_MD have_VB ,_, and_CC yet_RB be_VB
+        very_RB simple_JJ to_TO use_VB ._. Other_JJ papers_NNS in_IN this_DT series_NN have_VBP
+        described_VBN the_DT application_NN of_IN PKQuest_NNP to_TO propranolol_NN ,_, D_NNP 
+        2_CD O_NNP ,_, ethanol_NN ,_, inulin_NN and_CC protein_NN bound_VBN
+        antibiotics_NNS [_NN 1_CD 2_CD 3_CD ]_NN ._. This_DT paper_NN will_MD describe_VB the_DT
+        application_NN of_IN PKQuest_NNP to_TO volatile_JJ solutes_NNS ,_, with_IN particular_JJ
+        emphasis_NN on_IN anesthetics_NNS ._.
+        The_DT use_NN of_IN a_DT PBPK_NNP to_TO model_VB pharmacokinetics_NNS requires_VBZ
+        detailed_VBN information_NN about_IN the_DT blood-tissue_JJ partition_NN
+        coefficient_NN for_IN each_DT organ_NN ._. This_DT is_VBZ the_DT feature_NN that_WDT has_VBZ
+        limited_VBD the_DT applications_NNS of_IN PBPK_NNP to_TO human_JJ studies_NNS since_IN it_PRP
+        is_VBZ normally_RB assumed_VBN that_IN these_DT tissue_NN partition_NN
+        coefficients_NNS must_MD be_VB determined_VBN for_IN each_DT specific_JJ solute_NN
+        that_WDT is_VBZ studied_VBN ._. The_DT major_JJ design_NN philosophy_NN behind_IN PKQuest_NNP
+        is_VBZ to_TO increase_VB the_DT predictive_JJ power_NN of_IN the_DT PBPK_NNP so_IN that_IN it_PRP
+        can_MD applied_VBN to_TO a_DT large_JJ variety_NN of_IN solutes_NNS without_IN the_DT need_NN
+        for_IN this_DT specific_JJ information_NN ._. This_DT is_VBZ accomplished_VBN by_IN
+        preprogramming_VBG a_DT "_'' standard_JJ human_JJ "_'' data_NNS set_VBN that_WDT contains_VBZ
+        most_JJS of_IN the_DT information_NN that_WDT is_VBZ required_VBN to_TO model_VB the_DT
+        different_JJ solutes_NNS ._. The_DT new_JJ approach_NN for_IN the_DT volatile_JJ
+        solutes_NNS that_WDT is_VBZ developed_VBN in_IN this_DT paper_NN is_VBZ to_TO assume_VB that_IN
+        the_DT tissue_NN partition_NN of_IN these_DT solutes_NNS is_VBZ determined_VBN
+        entirely_RB by_IN a_DT )_) the_DT oil_NN /_NN water_NN partition_NN coefficient_NN and_CC b_SYM )_)
+        the_DT fraction_NN of_IN lipid_NN in_IN the_DT blood_NN and_CC each_DT organ_NN i_NNP (_( klip_NN
+        [_NN i_NNP ]_NN )_) ._. A_DT set_NN of_IN "_'' standard_JJ human_JJ "_'' values_NNS for_IN klip_NN [_NN i_NNP ]_NN is_VBZ
+        assigned_VBN for_IN each_DT organ_NN ._. Using_VBG this_DT assumption_NN ,_, the_DT
+        pharmacokinetics_NNS of_IN any_DT inert_NN volatile_JJ solute_NN is_VBZ completely_RB
+        determined_VBN (_( as_IN a_DT first_JJ approximation_NN )_) by_IN just_RB 2_CD parameters_NNS :_:
+        the_DT water_NN /_NN air_NN (_( Kwair_NNP )_) and_CC oil_NN /_NN water_NN (_( Kfwat_NNP )_) partition_NN
+        coefficients_NNS ._. This_DT allows_VBZ PKQuest_NNP to_TO be_VB used_VBN to_TO predict_VB the_DT
+        pharmacokinetics_NNS of_IN any_DT inert_NN volatile_JJ solute_NN for_IN which_WDT
+        experimental_JJ values_NNS for_IN these_DT simple_JJ physical_JJ chemical_NN
+        parameters_NNS are_VBP available_JJ ._. If_IN the_DT solute_NN is_VBZ metabolized_VBN (_( as_IN
+        is_VBZ the_DT case_NN for_IN halothane_NN and_CC toluene_NN )_) then_RB additional_JJ
+        adjustable_JJ parameters_NNS (_( e_SYM ._. g_SYM ._. ,_, metabolic_JJ liver_NN Km_NNP and_CC Vmax_NNP )_)
+        must_MD be_VB added_VBN ._.
+        As_IN a_DT test_NN of_IN this_DT approach_NN to_TO modeling_VBG volatile_JJ solutes_NNS ,_,
+        PKQuest_NNP was_VBD applied_VBN to_TO the_DT simultaneous_JJ uptake_NN and_CC washout_NN
+        measurements_NNS of_IN Munson_NNP et_CC al_NN ._. [_NN 4_CD ]_NN and_CC Carpenter_NNP et_CC al_NN ._. [_NN
+        5_CD ]_NN for_IN N_NNP 
+        2_CD O_NNP ,_, enflurane_NN ,_, halothane_NN ,_, and_CC
+        methoxyflurane_NN ._. Application_NNP of_IN PKQuest_NNP to_TO these_DT
+        simultaneous_JJ anesthetic_JJ measurements_NNS provides_VBZ a_DT stringent_JJ
+        test_NN of_IN the_DT PKQuest_NNP assumptions_NNS because_IN only_RB the_DT specific_JJ
+        partition_NN coefficients_NNS (_( Kbair_NNP ,_, etc_FW )_) vary_VBP for_IN the_DT different_JJ
+        gases_NNS while_IN all_PDT the_DT other_JJ parameters_NNS (_( e_SYM ._. g_SYM ._. percent_NN body_NN
+        fat_JJ ,_, klip_NN ,_, fat_JJ blood_NN flow_NN ,_, ventilation_NN ,_, etc_FW ._. )_) must_MD be_VB
+        identical_JJ ._. In_IN addition_NN ,_, using_VBG the_DT same_JJ set_NN of_IN parameters_NNS to_TO
+        fit_VB the_DT roughly_RB 20_CD fold_VB difference_NN in_IN concentration_NN between_IN
+        the_DT Munson_NNP et_CC al_NN ._. and_CC Carpenter_NNP et_CC al_NN ._. data_NNS provides_VBZ
+        another_DT test_NN ._. Finally_RB ,_, to_TO show_VB that_IN the_DT validity_NN of_IN this_DT
+        approach_NN extended_VBN beyond_IN the_DT anesthetics_NNS ,_, it_PRP was_VBD also_RB
+        applied_VBN to_TO toluene_NN ,_, a_DT volatile_JJ solute_NN for_IN which_WDT detailed_JJ
+        human_JJ PBPKs_NNP are_VBP already_RB available_JJ ._. Since_IN the_DT value_NN of_IN the_DT
+        oil_NN /_NN water_NN partition_NN coefficient_NN varies_VBZ from_IN 3_CD for_IN nitrous_JJ
+        oxide_NN to_TO 120_CD for_IN toluene_NN ,_, the_DT ability_NN of_IN PKQuest_NNP to_TO model_VB
+        these_DT different_JJ solutes_NNS using_VBG a_DT single_JJ set_NN of_IN organ_NN fat_JJ
+        fractions_NNS (_( klip_NN )_) demonstrates_VBZ the_DT generality_NN of_IN this_DT
+        approach_NN ._.
+        Anesthesiologists_NNP have_VBP used_VBN physiological_JJ models_NNS
+        incorporating_VBG air_NN /_NN water_NN partition_NN coefficients_NNS and_CC volumes_NNS
+        of_IN distribution_NN to_TO predict_VB the_DT kinetics_NNS for_IN more_JJR than_IN a_DT 150_CD
+        years_NNS [_NN 6_CD ]_NN ._. However_RB ,_, there_EX have_VBP been_VBN only_RB a_DT few_JJ
+        applications_NNS of_IN detailed_JJ ,_, organ_NN specific_JJ PBPK_NNP to_TO
+        anesthetics_NNS ._. Mapleson_NNP and_CC colleagues_NNS developed_VBD a_DT detailed_VBN
+        anesthetic_JJ PBPK_NNP [_NN 7_CD 8_CD 9_CD ]_NN and_CC measured_VBD the_DT relevant_JJ PBPK_NNP
+        parameters_NNS [_NN 10_CD 11_CD 12_CD ]_NN ._. Smith_NNP and_CC colleagues_NNS [_NN 13_CD 14_CD ]_NN
+        and_CC Fukui_NNP and_CC Smith_NNP [_NN 15_CD 16_CD ]_NN have_VBP developed_VBN complex_JJ PBPKs_NNP
+        in_IN which_WDT the_DT anesthetic_JJ interacts_NNS with_IN and_CC modifies_VBZ the_DT
+        organ_NN parameters_NNS ._. The_DT primary_JJ application_NN of_IN these_DT models_NNS
+        has_VBZ been_VBN to_TO illustrate_VB the_DT theoretical_JJ importance_NN of_IN the_DT
+        different_JJ model_NN components_NNS ._. The_DT only_RB detailed_JJ attempts_NNS to_TO
+        fit_VB human_JJ data_NNS with_IN a_DT PBPK_NNP are_NN for_IN nitrous_JJ oxide_NN in_IN man_NN [_NN
+        17_CD ]_NN and_CC halothane_NN in_IN infants_NNS [_NN 18_CD ]_NN ._. Allott_NNP ,_, Steward_NNP and_CC
+        Mapleson_NNP [_NN 19_CD ]_NN also_RB fit_VB a_DT PBPK_NNP to_TO the_DT experimental_JJ data_NN
+        for_IN halothane_NN in_IN the_DT dog_NN ._. Both_DT of_IN these_DT halothane_NN studies_NNS
+        were_VBD incomplete_JJ because_IN they_PRP did_VBD not_RB account_VB for_IN
+        metabolism_NN ._. The_DT most_RBS complete_JJ PBPK_NNP for_IN halothane_NN is_VBZ the_DT rat_NN
+        study_NN of_IN Loizou_NNP et_CC al_NN ._. [_NN 20_CD ]_NN which_WDT includes_VBZ a_DT metabolic_JJ
+        component_NN that_WDT is_VBZ saturable_JJ and_CC inactivates_NNS ._. There_EX have_VBP
+        been_VBN no_DT previous_JJ attempts_NNS to_TO use_VB a_DT PBPK_NNP to_TO model_VB multiple_JJ ,_,
+        simultaneously_RB measured_VBN anesthetics_NNS such_JJ as_IN is_VBZ described_VBN in_IN
+        this_DT paper_NN ._.
+        In_IN contrast_NN to_TO the_DT PBPK_NNP model_NN of_IN Mapleson_NNP [_NN 7_CD ]_NN ,_,
+        PKQuest_NNP does_VBZ not_RB model_VB the_DT vascular_NN time_NN delays_NNS and_CC
+        therefore_RB is_VBZ not_RB applicable_JJ to_TO short_VB time_NN kinetics_NNS (_( less_JJR
+        than_IN a_DT minute_NN )_) ._. However_RB ,_, PKQuest_NNP does_VBZ incorporate_VB a_DT number_NN
+        of_IN features_NNS that_WDT are_VBP not_RB present_JJ in_IN Mapleson_NNP 's_POS model_NN ,_,
+        including_VBG tissue_NN metabolism_NN ,_, capillary_JJ limitation_NN (_( either_CC
+        in_IN the_DT lung_NN or_CC tissue_NN )_) and_CC ventilation-perfusion_JJ
+        mismatch_NN ._.
+        The_DT PKQuest_NNP program_NN and_CC all_PDT the_DT examples_NNS used_VBN here_RB are_VBP
+        freely_RB available_JJ on_IN the_DT WEB_NNP at_IN www_NN ._. pkquest_NN ._. com_NN ._. The_DT reader_NN
+        is_VBZ encouraged_VBN to_TO download_NN these_DT routines_NNS and_CC try_VB them_PRP
+        out_RP ._.
+      
+      
+        Methods_NNP
+        
+          PBPK_NNP program_NN and_CC its_PRP$ assumptions_NNS
+          PKQuest_NNP [_NN 1_CD ]_NN was_VBD used_VBN for_IN all_PDT the_DT analysis_NN in_IN this_DT
+          paper_NN ._. All_DT the_DT figures_NNS shown_VBN in_IN this_DT paper_NN are_VBP direct_JJ
+          copies_NNS (_( in_IN jpeg_NN format_NN )_) of_IN standard_JJ PKQuest_NNP output_NN ._.
+          PKQuest_NNP makes_VBZ several_JJ simplifying_VBG assumptions_NNS (_( see_VB [_NN 1_CD ]_NN
+          )_) ._. It_PRP is_VBZ assumed_VBN that_IN each_DT organ_NN can_MD be_VB modeled_VBN as_IN a_DT
+          single_JJ well-stirred_JJ compartment_NN ._. For_IN the_DT volatile_JJ solutes_NNS
+          studied_VBN here_RB ,_, it_PRP is_VBZ also_RB assumed_VBN that_IN the_DT blood-tissue_JJ
+          exchange_NN is_VBZ flow_NN limited_JJ so_IN that_IN the_DT partial_JJ pressure_NN in_IN
+          the_DT tissue_NN is_VBZ equal_JJ to_TO that_DT in_IN the_DT vein_NN leaving_VBG the_DT
+          tissue_NN ._. This_DT is_VBZ clearly_RB an_DT approximation_NN and_CC effects_NNS such_JJ
+          a_DT diffusion_NN gradients_NNS ,_, countercurrent_NN exchange_NN and_CC
+          heterogeneous_JJ organ_NN blood_NN flows_NNS [_NN 21_CD 22_CD 23_CD ]_NN will_MD produce_VB
+          small_JJ deviations_NNS from_IN this_DT assumption_NN ._. It_PRP is_VBZ also_RB assumed_VBN
+          that_IN the_DT influence_NN of_IN the_DT anesthesia_NN in_IN the_DT Carpenter_NNP et_CC
+          al_NN ._. studies_NNS on_IN the_DT PBPK_NNP parameters_NNS can_MD be_VB neglected_VBN [_NN 14_CD
+          24_CD ]_NN ._. Although_IN these_DT solutes_NNS may_MD consist_VB of_IN stereo_NN
+          enantiomers_NNS ,_, it_PRP is_VBZ assumed_VBN that_IN there_EX is_VBZ no_DT significant_JJ
+          difference_NN in_IN the_DT pharmacokinetics_NNS of_IN the_DT enantiomers_NNS ,_,
+          which_WDT is_VBZ supported_VBN by_IN experiment_NN [_NN 25_CD 26_CD ]_NN ._. It_PRP is_VBZ
+          assumed_VBN that_IN the_DT metabolism_NN of_IN N_NNP 
+          2_CD O_NNP and_CC enflurane_NN is_VBZ negligible_JJ [_NN 24_CD
+          27_CD 28_CD ]_NN ,_, and_CC that_IN the_DT loss_NN through_IN the_DT skin_NN can_MD be_VB
+          neglected_VBN [_NN 29_CD ]_NN ._.
+          The_DT free_JJ water_NN concentration_NN (_( C_NNP 
+          free_JJ )_) plays_VBZ a_DT central_JJ role_NN in_IN the_DT
+          PKQuest_NNP calculations_NNS (_( see_VB [_NN 1_CD ]_NN for_IN details_NNS )_) ._. For_IN the_DT
+          blood_NN or_CC any_DT organ_NN ,_, the_DT free_JJ concentration_NN can_MD be_VB related_VBN
+          to_TO the_DT total_JJ (_( measured_VBN )_) concentration_NN (_( Ctot_NNP )_) by_IN the_DT
+          relation_NN C_NNP 
+          tot_NN =_SYM C_NNP 
+          free_JJ wfract_NN /_NN fw_NN where_WRB wfract_NN is_VBZ the_DT
+          water_NN fraction_NN in_IN the_DT organ_NN and_CC fw_NN is_VBZ the_DT fraction_NN of_IN the_DT
+          solute_NN that_WDT is_VBZ free_JJ in_IN the_DT water_NN phase_NN ._. The_DT parameter_NN fw_NN
+          [_NN i_NNP ]_NN ,_, the_DT fraction_NN free_JJ in_IN organ_NN i_NNP (_( including_VBG vascular_NN
+          compartments_NNS )_) ,_, characterizes_VBZ the_DT fraction_NN free_JJ (_( and_CC
+          bound_VBN )_) and_CC the_DT corresponding_JJ tissue_NN /_NN blood_NN partition_NN
+          coefficients_NNS ._. In_IN general_JJ ,_, this_DT parameter_NN must_MD be_VB
+          experimentally_RB determined_VBN for_IN each_DT solute_NN (_( and_CC organ_NN )_) ._.
+          However_RB ,_, for_IN these_DT volatile_JJ solutes_NNS it_PRP is_VBZ assumed_VBN that_IN
+          the_DT "_'' bound_VBN "_'' solute_NN is_VBZ equal_JJ to_TO the_DT solute_NN dissolved_VBN in_IN
+          the_DT blood_NN or_CC tissue_NN lipid_NN ._. For_IN this_DT case_NN ,_, the_DT parameter_NN
+          fw_NN [_NN i_NNP ]_NN is_VBZ completely_RB determined_VBN by_IN Kfwat_NNP (_( oil_NN /_NN water_NN
+          partition_NN coefficient_NN )_) and_CC klip_NN [_NN i_NNP ]_NN (_( the_DT fraction_NN of_IN lipid_NN
+          in_IN each_DT organ_NN )_) :_:
+          fw_NN [_NN i_NNP ]_NN =_SYM wfract_NN [_NN i_NNP ]_NN /_NN (_( wfract_NN [_NN i_NNP ]_NN +_NN Kfwat_NNP *_NN klip_NN [_NN i_NNP ]_NN )_)
+          Although_IN PKQuest_NNP uses_VBZ only_RB Kwair_NNP (_( water_NN /_NN air_NN
+          partition_NN )_) ,_, Kfwat_NNP and_CC klip_NN [_NN i_NNP ]_NN for_IN the_DT actual_JJ
+          calculations_NNS ,_, a_DT variety_NN of_IN combinations_NNS of_IN Kfwat_NNP ,_, Kwair_NNP ,_,
+          Kbair_NNP (_( blood_NN /_NN air_NN partition_NN )_) ,_, Kbwat_NNP (_( blood_NN /_NN water_NN
+          partition_NN )_) ,_, etc_FW ._. can_MD be_VB entered_VBN ._. For_IN example_NN ,_, for_IN the_DT
+          anesthetics_NNS investigated_VBN here_RB ,_, the_DT 3_CD parameters_NNS Kbair_NNP ,_,
+          Kwair_NNP and_CC Kfwat_NNP are_VBP known_VBN experimentally_RB and_CC are_VBP entered_VBN ._.
+          PKQuest_NNP then_RB uses_VBZ these_DT 3_CD parameters_NNS to_TO calculate_VB the_DT
+          corresponding_JJ value_NN for_IN klip_NN [_NN blood_NN ]_NN and_CC replaces_VBZ the_DT
+          default_NN "_'' standard_JJ human_JJ "_'' value_NN by_IN this_DT experimental_JJ
+          value_NN ._.
+        
+        
+          Experimental_NNP pharmacokinetic_JJ data_NNS
+          The_DT experimental_JJ data_NN was_VBD obtained_VBN from_IN previous_JJ
+          publications_NNS ._. The_DT anesthetic_JJ data_NN was_VBD based_VBN on_IN the_DT
+          results_NNS in_IN the_DT papers_NNS by_IN Carpenter_NNP et_CC al_NN ._. [_NN 5_CD ]_NN and_CC
+          Munson_NNP et_CC al_NN ._. [_NN 4_CD ]_NN ._. Both_DT of_IN these_DT studies_NNS determined_VBD
+          the_DT simultaneous_JJ uptake_NN and_CC washout_NN of_IN nitrous_JJ oxide_NN (_( N_NNP 
+          2_CD O_NNP )_) ,_, enflurane_NN ,_, halothane_NN ,_, and_CC
+          methoxyflurane_NN ._. Munson_NNP et_CC al_NN ._. used_VBN low_JJ ,_, sub-anesthetic_JJ
+          concentrations_NNS of_IN all_DT 4_CD gases_NNS with_IN a_DT total_JJ inhaled_JJ
+          concentration_NN of_IN about_IN 2_CD %_NN so_IN that_IN the_DT second_JJ gas_NN effect_NN [_NN
+          30_CD ]_NN was_VBD negligible_JJ ._. Carpenter_NNP et_CC al_NN ._. first_RB induced_VBN
+          anesthesia_NN with_IN high_JJ (_( 65_CD -_: 70_CD %_NN )_) concentrations_NNS of_IN N_NNP 
+          2_CD O_NNP and_CC then_RB ,_, after_IN the_DT N_NNP 
+          2_CD O_NNP had_VBD equilibrated_JJ ,_, added_VBD the_DT other_JJ
+          3_CD gases_NNS at_IN concentrations_NNS about_IN 20_CD times_NNS higher_JJR than_IN that_DT
+          of_IN Munson_NNP et_CC al_NN ._. (_( at_IN a_DT total_JJ inhaled_JJ concentration_NN of_IN
+          less_JJR than_IN 2_CD %_NN )_) and_CC then_RB washed_VBN them_PRP out_IN while_IN maintaining_VBG
+          constant_JJ N_NNP 
+          2_CD O_NNP levels_NNS ._. Thus_RB ,_, the_DT second_JJ gas_NN
+          effect_NN can_MD also_RB be_VB neglected_VBN for_IN the_DT data_NNS of_IN Carpenter_NNP et_CC
+          al_NN ._. for_IN enflurane_NN ,_, halothane_NN ,_, and_CC methoxyflurane_NN (_( but_CC not_RB
+          N_NNP 
+          2_CD O_NNP )_) ._. The_DT experimental_JJ data_NN points_NNS
+          were_VBD obtained_VBN by_IN using_VBG UN-SCAN-IT_NNP (_( Silk_NNP Scientific_NNP
+          Corporation_NNP )_) to_TO read_VB the_DT data_NNS from_IN the_DT published_VBN figures_NNS
+          (_( figs_NNS ._. 2_LS and_CC 3_CD ,_, Munson_NNP et_CC al_NN ._. ;_: figs_NNS ._. 1_LS and_CC 2_CD ,_, Carpenter_NNP et_CC
+          al_NN ._. )_) ._.
+          The_DT Munson_NNP et_CC al_NN data_NNS [_NN 4_CD ]_NN represents_VBZ the_DT mean_JJ value_NN
+          for_IN 6_CD healthy_JJ fasted_JJ unanesthetized_JJ males_NNS breathing_VBG for_IN
+          30_CD minutes_NNS a_DT gas_NN containing_VBG 0_CD ._. 0069_CD %_NN methoxyflurane_NN ;_:
+          0_CD ._. 0136_CD %_NN halothane_NN ;_: 0_CD ._. 0186_CD %_NN enflurane_NN ;_: and_CC 1_CD ._. 88_CD %_NN N_NNP 
+          2_CD O_NNP ._. The_DT Carpenter_NNP et_CC al_NN ._. data_NNS [_NN 5_CD ]_NN
+          represents_VBZ the_DT mean_NN values_NNS for_IN 4_CD male_JJ and_CC 5_CD female_JJ
+          healthy_JJ subjects_NNS undergoing_VBG donor_NN nephrectomy_NN ._. The_DT
+          subjects_NNS were_VBD administered_VBN 65_CD -_: 70_CD %_NN N_NNP 
+          2_CD O_NNP for_IN 30_CD minutes_NNS and_CC then_RB a_DT mixture_NN
+          of_IN 0_CD ._. 348_CD %_NN isoflurane_NN ,_, 0_CD ._. 518_CD %_NN enflurane_NN ,_, 0_CD ._. 226_CD halothane_NN
+          and_CC 0_CD ._. 0469_CD %_NN methoxyflurane_NN was_VBD administered_VBN for_IN 2_CD hours_NNS ._.
+          After_IN discontinuing_VBG these_DT gases_NNS ,_, anesthesia_NN was_VBD
+          maintained_VBN with_IN fentanyl_NN ,_, thiopental_NN and_CC N_NNP 
+          2_CD O_NNP for_IN the_DT duration_NN of_IN the_DT operation_NN ._.
+          The_DT Carpenter_NNP et_CC al_NN ._. washout_NN data_NNS was_VBD collected_VBN at_IN
+          intervals_NNS during_IN the_DT first_JJ day_NN ,_, and_CC once_RB a_DT day_NN for_IN the_DT
+          next_JJ 5_CD to_TO 8_CD days_NNS ._. Since_IN subjects_NNS became_VBD ambulatory_JJ upon_IN
+          recovering_VBG from_IN surgery_NN with_IN the_DT associated_VBN changes_NNS in_IN
+          PBPK_NNP parameters_NNS (_( eg_NN ._. muscle_NN blood_NN flow_NN ,_, ventilation_NN )_) only_RB
+          data_NNS out_IN to_TO 15_CD hours_NNS was_VBD used_VBN ._. In_IN fitting_JJ this_DT data_NNS it_PRP is_VBZ
+          assumed_VBN that_IN using_VBG the_DT mean_NN values_NNS of_IN the_DT concentration_NN
+          versus_CC time_NN averaged_VBD over_IN a_DT population_NN is_VBZ equivalent_JJ to_TO
+          treating_VBG these_DT values_NNS as_IN representative_NN of_IN a_DT single_JJ
+          "_'' average_JJ "_'' person_NN [_NN 31_CD ]_NN ._. For_IN this_DT data_NNS with_IN its_PRP$
+          relatively_RB small_JJ standard_JJ error_NN (_( typically_RB ±_NN 2_CD to_TO 3_CD %_NN of_IN
+          the_DT inspired_VBN concentration_NN )_) ,_, this_DT should_MD be_VB a_DT reasonably_RB
+          accurate_JJ assumption_NN ._.
+          The_DT toluene_NN data_NN was_VBD based_VBN on_IN the_DT published_VBN
+          investigation_NN of_IN Pierce_NNP et_CC al_NN ._. [_NN 32_CD ]_NN ._. Pierce_NNP et_CC al_NN ._. [_NN
+          32_CD ]_NN exposed_VBD 26_CD male_JJ Caucasian_NNP subjects_NNS to_TO 50_CD ppm_NN each_DT of_IN
+          1_CD H_NNP 8_CD -_: toluene_NN and_CC 2_CD H_NNP 8_CD -_: toluene_NN for_IN two_CD hours_NNS at_IN rest_NN ,_, and_CC
+          collected_VBD venous_JJ blood_NN and_CC alveolar_NN breath_NN samples_NNS for_IN up_IN
+          to_TO 120_CD hours_NNS ._. Their_PRP$ subject-specific_JJ PBPK_NNP explained_VBD 91_CD %_NN
+          of_IN the_DT observed_VBN data_NN variability_NN and_CC found_VBD
+          interindividual_NN toxicokinetic_JJ differences_NNS ._. All_DT the_DT data_NN
+          for_IN each_DT individual_NN in_IN this_DT series_NN was_VBD generously_RB
+          provided_VBN by_IN C_NNP ._. H_NNP ._. Pierce_NNP ._. Two_CD different_JJ individuals_NNS in_IN the_DT
+          Pierce_NNP et_CC al_NN ._. series_NN were_VBD chosen_VBN to_TO be_VB modeled_VBN by_IN
+          PKQuest_NNP ._. The_DT two_CD subjects_NNS (_( subjects_NNS 5_CD a_DT and_NN 15_CD in_IN Table_NNP I_PRP
+          of_IN Pierce_NNP et_CC al_NN ._. )_) were_VBD chosen_VBN because_IN they_PRP had_VBD large_JJ
+          differences_NNS in_IN percent_NN fat_JJ content_NN (_( 38_CD %_NN versus_CC 22_CD %_NN )_) and_CC
+          corresponding_JJ differences_NNS in_IN toluene_NN kinetics_NNS ._.
+        
+        
+          Experimental_NNP partition_NN coefficients_NNS
+          The_DT partition_NN coefficients_NNS were_VBD based_VBN on_IN previous_JJ
+          published_VBN data_NNS ._. The_DT values_NNS of_IN Kwair_NNP for_IN the_DT anesthetics_NNS
+          (_( enflurane_NN 0_CD ._. 7_CD ;_: halothane_NN 0_CD ._. 8_CD ;_: N_NNP 
+          2_CD O_NNP 0_CD ._. 47_CD ;_: methoxyflurane_NN 4_CD ._. 33_CD )_) were_VBD
+          from_IN the_DT review_NN by_IN Steward_NNP et_CC al_NN ._. [_NN 10_CD ]_NN ._. The_DT average_JJ
+          values_NNS of_IN blood_NN /_NN air_NN partition_NN coefficient_NN for_IN the_DT Munson_NNP
+          et_CC al_NN subjects_NNS (_( [_NN 4_CD ]_NN ,_, Table_NNP II_NNP )_) were_VBD used_VBN for_IN the_DT
+          anesthetics_NNS (_( enflurane_NN 2_CD ._. 0_CD ;_: halothane_NN 2_CD ._. 32_CD ;_: N_NNP 
+          2_CD O_NNP 0_CD ._. 418_CD ;_: methoxyflurane_NN 13_CD ._. 9_CD )_) ._. The_DT
+          value_NN of_IN Kfwat_NNP was_VBD obtained_VBN from_IN different_JJ sources_NNS
+          (_( enflurane_NN 130_CD [_NN 10_CD ]_NN ,_, N_NNP 
+          2_CD O_NNP 2_CD ._. 97_CD [_NN 10_CD ]_NN ,_, halothane_NN 170_CD [_NN 33_CD ]_NN
+          ,_, methoxyflurane_NN 208_CD [_NN 34_CD ]_NN )_) Identical_NNP values_NNS were_VBD used_VBN
+          for_IN modeling_VBG the_DT Munson_NNP et_CC al_NN ._. and_CC Carpenter_NNP et_CC al_NN ._.
+          data_NNS ._.
+          For_IN the_DT toluene_NN data_NN ,_, the_DT value_NN of_IN the_DT blood_NN /_NN air_NN
+          partition_NN coefficient_NN was_VBD measured_VBN for_IN each_DT of_IN the_DT two_CD
+          subjects_NNS that_WDT were_VBD modeled_VBN (_( Table_NNP I_PRP ,_, [_NN 32_CD ]_NN )_) ._. The_DT value_NN
+          of_IN the_DT lipid_NN /_NN air_NN partition_NN coefficient_NN was_VBD based_VBN on_IN the_DT
+          average_JJ value_NN reported_VBN by_IN Pierce_NNP et_CC al_NN ._. [_NN 35_CD ]_NN ._.
+        
+        
+          Standard_NNP Human_NNP parameters_NNS
+          The_DT default_NN standard_JJ values_NNS are_VBP stored_VBN as_IN a_DT Maple_NNP
+          procedure_NN in_IN PKQuest_NNP ._. The_DT values_NNS used_VBN for_IN organ_NN flows_NNS ,_,
+          volumes_NNS ,_, etc_FW ._. are_VBP identical_JJ to_TO those_DT used_VBN in_IN all_PDT the_DT
+          other_JJ applications_NNS of_IN PKQuest_NNP [_NN 1_CD 2_CD 3_CD ]_NN ._. A_DT list_NN of_IN some_DT
+          of_IN the_DT parameters_NNS is_VBZ included_VBN in_IN additional_JJ file_NN 1_CD ._. For_IN a_DT
+          complete_JJ listing_NN ,_, see_VBP the_DT routine_NN on_IN the_DT web_NN site_NN
+          www_NN ._. pkquest_NN ._. com_NN ._.
+          Additional_JJ files_NNS
+          Supplementary_NNP information_NN :_: I_PRP )_) Selected_JJ "_'' standard_JJ
+          human_JJ "_'' values_NNS ;_: and_CC II_NNP )_) PKQuest_NNP Maple_NNP procedures_NNS
+          describing_VBG each_DT solute_NN ._.
+          Click_NNP here_RB for_IN file_NN
+          The_DT critical_JJ new_JJ parameter_NN set_VBN required_VBN for_IN this_DT
+          application_NN is_VBZ the_DT value_NN of_IN klip_NN [_NN i_NNP ]_NN ,_, the_DT fraction_NN of_IN
+          lipid_NN in_IN each_DT organ_NN i_NNP ._. This_DT parameter_NN (_( along_IN with_IN Kfwat_NNP )_)
+          determines_VBZ the_DT tissue_NN /_NN water_NN partition_NN ._. This_DT parameter_NN set_VBN
+          was_VBD determined_VBN by_IN finding_VBG values_NNS of_IN klip_NN that_WDT would_MD
+          reproduce_VB the_DT tissue_NN /_NN air_NN partition_NN coefficients_NNS reported_VBN
+          by_IN Zhou_NNP et_CC [_NN 33_CD ]_NN for_IN a_DT number_NN of_IN anesthetic_JJ solutes_NNS for_IN
+          human_JJ heart_NN ,_, brain_NN ,_, liver_NN ,_, muscle_NN and_CC fat_JJ and_CC assuming_VBG
+          that_IN the_DT other_JJ organs_NNS (_( skin_NN ,_, intestine_NN ,_, kidney_NN )_) had_VBD
+          similar_JJ values_NNS ._. The_DT values_NNS of_IN klip_NN chosen_VBN for_IN each_DT organ_NN
+          are_VBP :_: liver_NN 0_CD ._. 028_CD ;_: intestines_NNS 0_CD ._. 02_CD ;_: kidney_NN 0_CD ._. 028_CD ;_: and_CC all_DT
+          other_JJ organs_NNS 0_CD ._. 017_CD ._. The_DT only_RB other_JJ parameter_NN that_WDT was_VBD
+          adjusted_VBN to_TO fit_VB the_DT data_NNS for_IN these_DT solutes_NNS was_VBD the_DT fat_JJ
+          blood_NN flow_NN ._. The_DT PKQuest_NNP global_JJ (_( simulated_JJ annealing_VBG )_) and_CC
+          local_JJ (_( Powell_NNP )_) optimization_NN routines_NNS were_VBD used_VBN to_TO select_VB
+          the_DT fat_JJ blood_NN flow_NN that_WDT provided_VBD the_DT best_JJS fit_NN to_TO the_DT
+          enflurane_NN data_NN ._. This_DT value_NN was_VBD then_RB used_VBN for_IN all_PDT the_DT
+          other_JJ solutes_NNS that_WDT were_VBD investigated_VBN ._.
+        
+        
+          PKQuest_NNP Maple_NNP input_NN procedure_NN
+          The_DT pharmacokinetics_NNS for_IN each_DT of_IN the_DT solutes_NNS is_VBZ
+          completely_RB characterized_VBN by_IN the_DT Maple_NNP input_NN procedure_NN for_IN
+          that_DT solute_NN ._. The_DT complete_JJ procedures_NNS are_VBP available_JJ on_IN the_DT
+          web_NN (_( www_NN ._. pkquest_NN ._. com_NN )_) ._. A_DT slightly_RB abbreviated_JJ listing_NN of_IN
+          the_DT procedures_NNS for_IN each_DT of_IN the_DT solutes_NNS used_VBN in_IN this_DT paper_NN
+          is_VBZ included_VBN in_IN additional_JJ file_NN 1_CD ._.
+        
+      
+      
+        Results_NNS
+        
+          Enfluane_NNP
+          As_IN described_VBD previously_RB [_NN 1_CD ]_NN ,_, each_DT compound_NN modeled_VBN
+          by_IN PKQuest_NNP is_VBZ completely_RB characterized_VBN by_IN a_DT short_JJ Maple_NNP (_(
+          www_NN ._. maplesoft_NN ._. com_NN )_) procedure_NN that_IN lists_VBZ the_DT PKQuest_NNP
+          parameters_NNS that_WDT are_VBP unique_JJ for_IN that_DT solute_NN ._. The_DT Maple_NNP
+          procedure_NN for_IN enflurane_NN for_IN the_DT data_NNS of_IN Carpenter_NNP et_CC al_NN ._.
+          [_NN 5_CD ]_NN is_VBZ listed_VBN here_RB :_:
+          enflurane_NN :_: =_SYM proc_NN (_( )_)
+          defaultpar_NN (_( )_) :_:
+          Wtot_NNP :_: =_SYM 70_CD ._. 0_CD ;_: #_# Body_NNP weight_NN
+          standardhuman_NN (_( Wtot_NNP )_) ;_:
+          Fat_NNP :_: =_SYM 0_CD ._. 25_CD ;_: #_# average_JJ value_NN for_IN men_NNS and_CC women_NNS
+          cunit_NN :_: =_SYM "_'' 10_CD ml_NN "_'' ;_:
+          Kbair_NNP :_: =_SYM 2_CD ._. 0_CD ;_: #_# blood_NN /_NN air_NN partition_NN coefficient_NN -_: value_NN
+          for_IN Munson_NNP fasted_JJ subjects_NNS ._.
+          Kwair_NNP :_: =_SYM 0_CD ._. 75_CD ;_: #_# water_NN /_NN air_NN partition_NN coefficient_NN -_:
+          standard_JJ reference_NN value_NN
+          Kfair_NNP :_: =_SYM 98_CD ;_: #_# fat_JJ /_NN air_NN partition_NN coefficient_NN -_: literature_NN
+          value_NN
+          Kfwat_NNP :_: =_SYM Kfair_NNP /_NN Kwair_NNP ;_:
+          ninput_NN :_: =_SYM 1_CD ;_: finput_NN [_NN 1_CD ]_NN :_: =_SYM table_NN (_( [_NN organ_NN =_SYM lung_NN ,_, type_NN =_SYM 1_CD ,_,
+          rate_NN =_SYM 0_CD ._. 518_CD ,_, tbeg_NN =_SYM 0_CD ,_,
+          tend_VBP =_SYM 120_CD ,_, csteady_NN =_SYM 0_CD ,_, padjust_NN =_SYM 0_CD ]_NN )_) ;_: #_# 2_CD hour_NN constant_JJ lung_NN
+          input_NN
+          The_DT body_NN weight_NN was_VBD set_VBN arbitrarily_RB to_TO the_DT standard_JJ
+          value_NN of_IN 70_CD Kg_NNP since_IN the_DT input_NN dose_NN should_MD scale_VB with_IN
+          body_NN weight_NN through_IN the_DT alveolar_NN ventilation_NN parameter_NN ._.
+          The_DT fraction_NN body_NN fat_JJ (_( =_SYM Fat_NNP )_) was_VBD chosen_VBN based_VBN on_IN the_DT
+          standard_JJ literature_NN average_JJ value_NN [_NN 36_CD ]_NN for_IN the_DT 4_CD men_NNS
+          and_CC 5_CD women_NNS studied_VBN by_IN Carpenter_NNP et_CC al_NN ._. Since_IN PKQuest_NNP
+          always_RB uses_VBZ units_NNS of_IN liters_NNS ,_, minutes_NNS and_CC Kg_NNP ,_, the_DT
+          concentration_NN of_IN ml_NN anesthetic_JJ /_NN 100_CD ml_NN total_JJ volume_NN
+          (_( abbreviated_JJ as_IN %_NN )_) used_VBN by_IN Carpenter_NNP et_CC al_NN ._. corresponds_NNS
+          to_TO a_DT "_'' cunit_NN "_'' of_IN 10_CD ml_NN per_IN liter_NN (_( this_DT parameter_NN is_VBZ only_RB
+          used_VBN for_IN display_NN of_IN output_NN and_CC does_VBZ not_RB directly_RB enter_VB
+          the_DT calculations_NNS )_) ._. The_DT value_NN of_IN Kbair_NNP is_VBZ the_DT average_JJ
+          value_NN reported_VBN by_IN Munson_NNP et_CC al_NN ._. [_NN 4_CD ]_NN for_IN the_DT fasting_VBG
+          subjects_NNS ._. The_DT value_NN of_IN Kwair_NNP is_VBZ from_IN the_DT standard_JJ
+          reference_NN [_NN 10_CD ]_NN and_CC Kfair_NNP is_VBZ based_VBN on_IN measurements_NNS of_IN
+          solubility_NN in_IN olive_JJ oil_NN [_NN 10_CD ]_NN and_CC in_IN human_JJ fat_JJ tissue_NN [_NN
+          33_CD ]_NN ._. The_DT input_NN was_VBD a_DT constant_JJ 120_CD minute_NN inhaled_JJ
+          concentration_NN of_IN 0_CD ._. 518_CD %_NN ._. Note_VB that_IN all_PDT the_DT parameters_NNS
+          required_VBN to_TO characterize_VB enflurane_NN are_VBP direct_JJ
+          experimental_JJ measurements_NNS so_IN that_IN there_EX are_VBP no_DT adjustable_JJ
+          parameters_NNS (_( see_VB Discussion_NNP Section_NNP for_IN further_JJ discussion_NN
+          of_IN this_DT point_NN )_) ._.
+          It_PRP should_MD be_VB emphasized_VBN that_IN the_DT above_JJ short_JJ procedure_NN
+          completely_RB characterizes_VBZ the_DT enflurane_NN PBPK_NNP ._. All_DT the_DT
+          other_JJ parameters_NNS are_VBP determined_VBN by_IN the_DT default_NN values_NNS set_VBN
+          by_IN the_DT calls_NNS to_TO defaultpar_NN (_( )_) and_CC standardhuman_NN (_( )_) ._. (_( The_DT
+          user_NN can_MD override_VB the_DT default_NN values_NNS and_CC input_NN an_DT
+          arbitrary_JJ value_NN for_IN any_DT parameter_NN ._. )_) ._. The_DT partition_NN
+          coefficients_NNS for_IN the_DT individual_JJ organs_NNS are_VBP determined_VBN by_IN
+          the_DT default_NN value_NN for_IN the_DT fraction_NN of_IN lipid_NN in_IN each_DT organ_NN
+          i_NNP (_( klip_NN [_NN i_NNP ]_NN )_) ._.
+          The_DT PKQuest_NNP output_NN using_VBG this_DT "_'' enflurane_NN "_'' input_NN
+          procedure_NN is_VBZ shown_VBN in_IN the_DT left_NN hand_NN column_NN of_IN fig_NN 1_CD along_IN
+          with_IN the_DT experimental_JJ data_NN (_( squares_NNS )_) of_IN Carpenter_NNP et_CC al_NN ._.
+          [_NN 5_CD ]_NN ._. The_DT top_JJ figure_NN shows_VBZ the_DT results_NNS during_IN uptake_NN
+          and_CC washout_NN and_CC the_DT figures_NNS in_IN the_DT second_JJ and_CC third_JJ rows_NNS
+          show_VBP the_DT semi_NN log_NN plots_NNS of_IN the_DT uptake_NN and_CC washout_NN ,_,
+          respectively_RB ._. All_DT the_DT figures_NNS shown_VBN in_IN this_DT paper_NN are_VBP
+          copied_VBN directly_RB from_IN the_DT standard_JJ PKQuest_NNP output_NN ._.
+          The_DT corresponding_JJ plot_NN for_IN the_DT enflurane_NN data_NN of_IN
+          Munson_NNP et_CC al_NN ._. [_NN 4_CD ]_NN is_VBZ shown_VBN in_IN the_DT right_JJ hand_NN column_NN of_IN
+          fig_NN ._. 1_LS ._. Exactly_RB the_DT same_JJ set_NN of_IN parameters_NNS were_VBD used_VBN
+          except_IN that_DT :_: 1_LS )_) the_DT fraction_NN of_IN body_NN fat_NN was_VBD reduced_VBN to_TO
+          0_CD ._. 16_CD ,_, the_DT standard_JJ literature_NN average_JJ value_NN [_NN 36_CD ]_NN for_IN
+          the_DT 12_CD young_JJ male_JJ subjects_NNS used_VBN in_IN this_DT study_NN ;_: and_CC 2_LS )_) the_DT
+          experimental_JJ inhaled_JJ enflurane_NN concentration_NN was_VBD 0_CD ._. 0186_CD %_NN
+          for_IN 30_CD minutes_NNS (_( versus_CC 0_CD ._. 518_CD %_NN for_IN 120_CD minutes_NNS for_IN
+          Carpenter_NNP et_CC al_NN )_) ._. The_DT fact_NN that_IN both_DT sets_NNS of_IN data_NNS can_MD be_VB
+          fit_VBN using_VBG an_DT identical_JJ parameter_NN set_VBD ,_, even_RB though_IN the_DT
+          concentrations_NNS differ_VBP by_IN a_DT factor_NN of_IN 28_CD ,_, indicates_VBZ that_IN
+          the_DT enflurane_NN pharmacokinetics_NNS must_MD be_VB linear_JJ over_IN a_DT
+          large_JJ concentration_NN range_NN ._.
+        
+        
+          Nitrous_NNP oxide_NN
+          Figure_NN 2_CD compares_VBZ the_DT PKQuest_NNP output_NN with_IN the_DT
+          experimental_JJ data_NN of_IN Munson_NNP et_CC al_NN ._. [_NN 4_CD ]_NN for_IN N_NNP 
+          2_CD O_NNP ._. (_( The_DT N_NNP 
+          2_CD O_NNP data_NNS of_IN Carpenter_NNP et_CC al_NN ._. could_MD not_RB
+          be_VB used_VBN because_IN of_IN the_DT large_JJ second_JJ gas_NN effect_NN ._. )_) ._. The_DT
+          partition_NN coefficients_NNS used_VBN for_IN this_DT calculation_NN are_VBP the_DT
+          standard_JJ N_NNP 
+          2_CD O_NNP literature_NN values_NNS :_: Kwair_NNP =_SYM 0_CD ._. 47_CD [_NN 10_CD
+          ]_NN ;_: Kfair_NNP =_SYM 1_CD ._. 4_LS [_NN 10_CD ]_NN and_CC Kbair_NNP =_SYM 0_CD ._. 418_CD (_( Munson_NNP et_CC al_NN ._. [_NN 4_CD ]_NN
+          ,_, fasting_VBG subjects_NNS )_) ._. All_DT the_DT other_JJ parameters_NNS are_VBP
+          identical_JJ to_TO those_DT used_VBN for_IN the_DT Munson_NNP et_CC al_NN ._. enflurane_NN
+          data_NNS ._. ._. (_( See_VB additional_JJ file_NN 1_CD for_IN the_DT complete_JJ N_NNP 
+          2_CD O_NNP Maple_NNP procedure_NN )_) ._. The_DT agreement_NN
+          between_IN the_DT PKQuest_NNP predictions_NNS and_CC experiment_NN is_VBZ
+          excellent_JJ for_IN the_DT N_NNP 
+          2_CD O_NNP uptake_NN ._. However_RB ,_, there_EX is_VBZ a_DT
+          significant_JJ deviation_NN between_IN the_DT predictions_NNS and_CC the_DT
+          data_NNS during_IN the_DT washout_NN that_WDT is_VBZ especially_RB apparent_JJ in_IN
+          the_DT semi_NN log_NN plot_NN ._. There_EX is_VBZ no_DT obvious_JJ explanation_NN for_IN
+          this_DT discrepancy_NN and_CC it_PRP may_MD be_VB artifactual_NN (_( see_VB
+          Discussion_NNP Section_NNP )_) ._.
+        
+        
+          Halothane_NNP
+          There_EX is_VBZ an_DT additional_JJ complication_NN when_WRB modeling_VBG the_DT
+          halothane_NN data_NN because_IN a_DT significant_JJ fraction_NN of_IN the_DT
+          halothane_NN disappearance_NN is_VBZ the_DT result_NN of_IN metabolism_NN [_NN 24_CD
+          27_CD 28_CD 37_CD 38_CD 39_CD 40_CD 41_CD ]_NN ._. Loizou_NNP et_CC al_NN ._. [_NN 20_CD ]_NN developed_VBD a_DT
+          detailed_VBN PBPK_NNP in_IN the_DT rat_NN with_IN the_DT halothane_NN metabolism_NN
+          described_VBN by_IN a_DT 4_CD parameter_NN function_NN that_WDT included_VBD both_DT
+          Michaelis-_NNP Menten_NNP and_CC inactivation_NN components_NNS ._. Although_IN
+          there_EX is_VBZ qualitative_JJ evidence_NN that_DT halothane_NN metabolism_NN
+          in_IN humans_NNS is_VBZ non-linear_JJ ,_, saturating_VBG at_IN higher_JJR
+          concentrations_NNS [_NN 27_CD ]_NN ,_, the_DT quantitative_JJ aspects_NNS of_IN
+          halothane_NN metabolism_NN are_VBP poorly_RB characterized_VBN in_IN the_DT
+          human_NN ._. Probably_RB the_DT most_RBS relevant_JJ data_NNS is_VBZ provided_VBN by_IN
+          investigations_NNS in_IN miniature_JJ swine_NNS ._. Sawyer_NNP et_CC al_NN ._. [_NN 38_CD ]_NN
+          reported_VBD that_IN the_DT percent_NN liver_NN clearance_NN during_IN the_DT
+          halothane_NN washout_NN in_IN miniature_JJ swine_NNS was_VBD 77_CD %_NN at_IN an_DT
+          alveolar_NN concentrations_NNS of_IN 0_CD ._. 0026_CD %_NN and_CC fell_VBD to_TO 5_CD %_NN at_IN an_DT
+          alveolar_NN concentration_NN of_IN 1_CD %_NN ._. Halsey_NNP et_CC al_NN ._. [_NN 37_CD ]_NN found_VBD
+          that_IN 35_CD %_NN of_IN the_DT halothane_NN entering_VBG the_DT miniature_JJ swine_NNS
+          liver_NN was_VBD metabolized_VBN at_IN a_DT steady_JJ state_NN alveolar_NN
+          concentration_NN of_IN 0_CD ._. 0065_CD %_NN ._.
+          For_IN this_DT study_NN it_PRP was_VBD assumed_VBN that_IN the_DT halothane_NN
+          metabolism_NN could_MD be_VB described_VBN by_IN a_DT two_CD parameter_NN
+          Michaelis-_NNP Menten_NNP (_( Km_NNP and_CC Vmax_NNP )_) liver_NN component_NN ._. The_DT two_CD
+          parameters_NNS were_VBD adjusted_VBN to_TO so_IN that_IN they_PRP a_DT )_) provided_VBD a_DT
+          good_JJ fit_NN to_TO the_DT experimental_JJ halothane_NN data_NNS of_IN both_DT
+          Carpenter_NNP et_CC al_NN ._. [_NN 5_CD ]_NN (_( inhaled_JJ concentration_NN of_IN 0_CD ._. 226_CD %_NN )_)
+          and_CC Munson_NNP et_CC al_NN ._. [_NN 4_CD ]_NN (_( inhaled_JJ concentration_NN of_IN
+          0_CD ._. 0135_CD %_NN )_) and_CC b_SYM )_) were_VBD roughly_RB consistent_JJ with_IN the_DT
+          miniature_JJ swine_NNS data_NNS ._. The_DT final_JJ values_NNS in_IN partial_JJ
+          pressure_NN units_NNS were_VBD Km_NNP =_SYM 0_CD ._. 01_CD ml_NN /_NN 100_CD ml_NN and_CC Vmax_NNP =_SYM 0_CD ._. 6_CD
+          ml_NN /_NN min_NN for_IN the_DT standard_JJ 70_CD Kg_NNP human_NN ._. This_DT corresponds_NNS to_TO
+          a_DT water_NN concentration_NN for_IN Km_NNP of_IN 3_CD ._. 57_CD μmole_NN /_NN liter_NN and_CC a_DT Vm_NNP
+          of_IN 21_CD ._. 4_LS μmole_NN /_NN min_NN ._. This_DT Km_NNP is_VBZ similar_JJ to_TO the_DT Km_NNP of_IN 2_CD ._. 03_CD
+          μmole_NN /_NN liter_NN in_IN the_DT rat_NN [_NN 20_CD ]_NN ._. Given_VBN the_DT limited_JJ human_JJ
+          quantitative_JJ data_NNS that_WDT is_VBZ available_JJ ,_, these_DT human_JJ
+          metabolic_JJ parameters_NNS should_MD be_VB regarded_VBN only_RB as_IN a_DT first_JJ
+          approximation_NN ._. Figure_NN 3_CD shows_VBZ that_IN this_DT set_JJ of_IN metabolic_JJ
+          constants_NNS provided_VBD a_DT good_JJ fit_NN to_TO the_DT 17_CD fold_VB range_NN of_IN
+          inhaled_JJ halothane_NN concentrations_NNS used_VBN in_IN the_DT Carpenter_NNP et_CC
+          al_NN ._. (_( 0_CD ._. 226_CD %_NN concentration_NN )_) and_CC Munson_NNP et_CC al_NN ._. (_( 0_CD ._. 0136_CD %_NN
+          concentration_NN )_) experiments_NNS ._. The_DT partition_NN coefficients_NNS
+          used_VBN in_IN these_DT calculations_NNS were_VBD the_DT standard_JJ literature_NN
+          values_NNS :_: Kbair_NNP =_SYM 2_CD ._. 32_CD (_( Munsen_NNP et_CC al_NN ._. fasted_JJ subject_JJ )_) ;_:
+          Kwair_NNP =_SYM 0_CD ._. 8_CD [_NN 10_CD ]_NN and_CC Kfair_NNP =_SYM 137_CD [_NN 33_CD ]_NN ._. (_( See_VB
+          additional_JJ file_NN 1_CD for_IN the_DT complete_JJ halothane_NN Maple_NNP
+          procedure_NN )_) ._. For_IN these_DT parameters_NNS ,_, the_DT percent_NN liver_NN
+          halothane_NN clearance_NN varied_VBD from_IN 48_CD %_NN at_IN an_DT alveolar_NN
+          concentration_NN of_IN 0_CD ._. 0002_CD %_NN ;_: to_TO 30_CD %_NN at_IN a_DT concentration_NN of_IN
+          0_CD ._. 07_CD %_NN ;_: to_TO 7_CD %_NN at_IN a_DT concentration_NN of_IN 0_CD ._. 26_CD %_NN -_: similar_JJ to_TO the_DT
+          swine_NNS data_NN ._. Using_VBG the_DT PKQuest_NNP PBPK_NNP results_NNS ,_, 65_CD %_NN of_IN the_DT
+          halothane_NN should_MD have_VB been_VBN recovered_VBN during_IN a_DT 5_CD day_NN
+          washout_NN period_NN relative_JJ to_TO the_DT total_JJ uptake_NN ._. This_DT is_VBZ
+          somewhat_RB greater_JJR than_IN the_DT 55_CD %_NN recovery_NN directly_RB estimated_VBD
+          for_IN this_DT same_JJ data_NN by_IN measuring_VBG the_DT mixed_JJ expired_JJ
+          halothane_NN concentration_NN and_CC ventilation_NN rate_NN once_RB per_IN day_NN
+          for_IN 5_CD days_NNS [_NN 28_CD ]_NN ._. The_DT standard_JJ output_NN of_IN PKQuest_NNP
+          provides_VBZ all_PDT the_DT above_JJ information_NN (_( fractional_JJ liver_NN
+          clearance_NN ,_, recovery_NN during_IN washout_NN ,_, etc_FW ._. )_) ._.
+        
+        
+          Methoxyflurane_NNP
+          As_IN shown_VBN by_IN the_DT results_NNS in_IN figs_NNS ._. 1_LS -_: 3_CD ,_, PKQuest_NNP provides_VBZ
+          an_DT accurate_JJ description_NN of_IN the_DT human_JJ pharmacokinetics_NNS of_IN
+          the_DT uptake_NN and_CC washout_NN of_IN enflurane_NN and_CC halothane_NN and_CC the_DT
+          uptake_NN of_IN N_NNP 
+          2_CD O_NNP ._. In_IN contrast_NN ,_, the_DT PKQuest_NNP
+          predictions_NNS are_VBP clearly_RB incorrect_JJ for_IN methoxyflurane_NN ._.
+          Figures_NNS 4_CD show_NN the_DT PKQuest_NNP predictions_NNS for_IN the_DT alveolar_NN
+          concentration_NN (_( solid_JJ line_NN )_) compared_VBN with_IN the_DT experimental_JJ
+          data_NN of_IN Carpenter_NNP et_CC al_NN ._. (_( fig_NN 4_CD ,_, left_VBD column_NN )_) and_CC Monson_NNP
+          et_CC al_NN ._. (_( fig_NN ._. 4_LS ,_, right_JJ column_NN )_) ._. (_( See_VB the_DT additional_JJ file_NN
+          1_CD for_IN the_DT complete_JJ methoxyflurane_NN Maple_NNP procedure_NN )_) ._. The_DT
+          partition_NN coefficients_NNS used_VBN for_IN these_DT figures_NNS are_VBP the_DT
+          standard_JJ literature_NN values_NNS :_: Kbair_NNP =_SYM 13_CD ._. 9_CD (_( Munson_NNP et_CC al_NN ._. [_NN
+          4_CD ]_NN fasted_JJ subjects_NNS )_) ;_: Kfwat_NNP =_SYM 208_CD [_NN 34_CD ]_NN ;_: Kwair_NNP =_SYM 4_CD ._. 0_CD [_NN
+          42_CD ]_NN ._. It_PRP can_MD be_VB seen_VBN that_IN the_DT PKQuest_NNP concentrations_NNS
+          during_IN uptake_NN are_VBP about_IN 30_CD %_NN less_JJR than_IN the_DT experimental_JJ
+          values_NNS ._. The_DT actual_JJ error_NN is_VBZ even_RB worse_JJR than_IN this_DT because_IN
+          these_DT PKQuest_NNP predictions_NNS ignore_VBP metabolism_NN ,_, which_WDT can_MD
+          account_VB for_IN as_RB much_JJ as_IN 70_CD %_NN of_IN the_DT total_JJ removal_NN [_NN 24_CD 27_CD
+          28_CD 37_CD 43_CD ]_NN ._. Including_VBG metabolism_NN would_MD increase_VB the_DT
+          difference_NN between_IN the_DT PKQuest_NNP and_CC experimental_JJ results_NNS
+          during_IN uptake_NN ._. The_DT explanation_NN for_IN this_DT poor_JJ fit_NN is_VBZ
+          provided_VBN in_IN the_DT Discussion_NNP section_NN ._.
+        
+        
+          Toluene_NNP
+          Some_DT of_IN the_DT most_RBS comprehensive_JJ and_CC sophisticated_JJ human_JJ
+          PBPKs_NNP have_VBP been_VBN developed_VBN to_TO describe_VB the_DT
+          pharmacokinetics_NNS of_IN volatile_JJ toxic_JJ solvents_NNS such_JJ as_IN
+          toluene_NN [_NN 32_CD 44_CD 45_CD ]_NN ,_, styrene_NN [_NN 46_CD 47_CD ]_NN ,_, and_CC methyl_NN
+          chloride_NN [_NN 48_CD ]_NN ._. The_DT most_RBS involved_VBN models_NNS incorporate_VB
+          several_JJ different_JJ fat_NN and_CC muscle_NN compartments_NNS with_IN
+          different_JJ flows_NNS and_CC allow_VB for_IN changes_NNS with_IN time_NN in_IN the_DT
+          blood_NN flows_NNS as_IN the_DT subject_NN 's_POS exercise_NN level_NN varies_VBZ [_NN 45_CD
+          47_CD 48_CD ]_NN ._. These_DT studies_NNS have_VBP also_RB introduced_VBN a_DT Bayesian_NNP
+          approach_NN to_TO determine_VB the_DT population_NN distribution_NN of_IN the_DT
+          PBPK_NNP parameters_NNS [_NN 45_CD 47_CD ]_NN ._. PKQuest_NNP cannot_NN complete_JJ with_IN
+          these_DT PBPKs_NNP for_IN this_DT class_NN of_IN solutes_NNS ._. The_DT only_JJ purpose_NN
+          of_IN applying_VBG PKQuest_NNP to_TO toluene_NN is_VBZ to_TO show_VB that_IN the_DT new_JJ
+          approach_NN developed_VBN here_RB of_IN using_VBG just_RB klip_NN and_CC the_DT
+          oil_NN /_NN water_NN partition_NN coefficient_NN to_TO characterize_VB the_DT
+          tissue_NN partition_NN is_VBZ valid_JJ for_IN a_DT wider_JJR class_NN of_IN solutes_NNS
+          than_IN just_RB the_DT anesthetics_NNS gases_NNS (_( at_IN least_JJS as_IN a_DT first_JJ
+          approximation_NN )_) ._. PKQuest_NNP was_VBD applied_VBN to_TO data_NNS for_IN two_CD
+          individuals_NNS (_( subjects_NNS 5_CD a_DT and_NN 15_CD )_) that_WDT were_VBD chosen_VBN from_IN
+          the_DT detailed_VBN investigations_NNS of_IN Pierce_NNP et_CC al_NN ._. [_NN 32_CD ]_NN
+          because_IN they_PRP had_VBD large_JJ differences_NNS in_IN percent_NN fat_JJ content_NN
+          (_( 38_CD %_NN versus_CC 22_CD %_NN )_) and_CC corresponding_JJ differences_NNS in_IN toluene_NN
+          kinetics_NNS ._.
+          The_DT Maple_NNP input_NN procedure_NN for_IN subject_JJ 15_CD is_VBZ :_:
+          toluene_NN __NN 15_CD :_: =_SYM proc_NN (_( )_)
+          defaultpar_NN (_( )_) :_:
+          Wtot_NNP :_: =_SYM 86_CD ._. 2_LS ;_: #_# Body_NNP weight_NN
+          standardhuman_NN (_( Wtot_NNP )_) ;_:
+          Fat_NNP :_: =_SYM 0_CD ._. 22_CD ;_: #_# Fraction_NNP of_IN body_NN weight_NN that_WDT is_VBZ fat_JJ for_IN
+          subject_JJ 15_CD
+          cunit_NN :_: =_SYM "_'' micromole_NN "_'' ;_: #_# concentration_NN in_IN units_NNS of_IN
+          micromole_NN /_NN liter_NN
+          concunit_NN [_NN 1_CD ]_NN :_: 2_CD ;_: #_# experimental_JJ output_NN =_SYM whole_JJ blood_NN
+          conc_NN
+          ninput_NN :_: =_SYM 1_CD ;_: finput_NN [_NN 1_CD ]_NN :_: =_SYM table_NN (_( [_NN organ_NN =_SYM lung_NN ,_, type_NN =_SYM 1_CD ,_,
+          rate_NN =_SYM 2_CD ._. 0_CD ,_, tbeg_NN =_SYM 0_CD ,_,
+          tend_VBP =_SYM 120_CD ,_, csteady_NN =_SYM 0_CD ,_, padjust_NN =_SYM 0_CD ]_NN )_) ;_: #_# 2_CD hour_NN constant_JJ
+          input_NN to_TO the_DT lung_NN of_IN 2_CD μM_NN
+          Kfair_NNP :_: =_SYM 962_CD ;_: #_# fat_JJ /_NN air_NN partition_NN coefficient_NN
+          Kbair_NNP :_: =_SYM 22_CD ._. 2_LS ;_: #_# blood_NN /_NN air_NN partition_NN coefficient_NN for_IN
+          subject_JJ 15_CD
+          Kfbld_NNP :_: =_SYM Kfair_NNP /_NN Kbair_NNP ;_: #_# Calculated_VBN fat_JJ /_NN blood_NN partition_NN
+          coefficient_NN
+          alvent_NN :_: =_SYM 6_CD ._. 07_CD ;_: #_# alveolar_NN ventilation_NN for_IN subject_JJ
+          15_CD
+          Tclr_NNP [_NN liver_NN ]_NN :_: =_SYM 25_CD ._. 0_CD ;_: #_# Liver_NNP clearance_NN optimized_JJ to_TO
+          provides_VBZ best_JJS fit_VB to_TO data_NNS
+          The_DT total_JJ body_NN weight_NN (_( Wtot_NNP )_) ,_, body_NN fat_JJ fraction_NN (_( Fat_NNP )_) ,_,
+          blood_NN /_NN air_NN partition_NN coefficient_NN (_( Kbair_NNP )_) and_CC alveolar_NN
+          ventilation_NN (_( alvent_NN )_) were_VBD measured_VBN for_IN each_DT individual_JJ
+          subject_JJ (_( see_VB Table_NNP I_PRP ,_, Pierce_NNP et_CC al_NN ._. [_NN 32_CD ]_NN )_) and_CC these_DT
+          values_NNS were_VBD used_VBN as_IN input_NN ._. The_DT value_NN of_IN the_DT lipid_NN /_NN air_NN
+          partition_NN coefficient_NN (_( Kfair_NNP )_) was_VBD set_VBN equal_JJ to_TO the_DT
+          average_JJ value_NN determined_VBN by_IN Pierce_NNP et_CC al_NN ._. [_NN 35_CD ]_NN ._. Since_IN
+          Kwair_NNP is_VBZ not_RB input_NN ,_, PKQuest_NNP estimates_NNS Kwair_NNP using_VBG Kbair_NNP
+          and_CC Kfbld_NNP and_CC the_DT default_NN fat_JJ content_NN of_IN blood_NN (_( klip_NN
+          [_NN vein_NN ]_NN )_) ._. The_DT input_NN function_NN was_VBD a_DT 2_CD hour_NN inhalation_NN of_IN
+          toluene_NN at_IN a_DT constant_JJ gas_NN concentration_NN of_IN 2_CD μM_NN ._. The_DT only_RB
+          adjustable_JJ parameters_NNS are_VBP the_DT metabolic_JJ kinetic_JJ
+          constants_NNS ._. The_DT rat_NN liver_NN has_VBZ a_DT number_NN of_IN enzymes_NNS involved_VBN
+          in_IN toluene_NN metabolism_NN [_NN 49_CD ]_NN ._. Since_IN the_DT Km_NNP for_IN all_DT of_IN
+          these_DT enzymes_NNS is_VBZ in_IN the_DT mM_NN range_NN ,_, while_IN the_DT blood_NN toluene_NN
+          concentrations_NNS for_IN this_DT data_NNS are_VBP in_IN the_DT μM_NN range_NN ,_, it_PRP was_VBD
+          assumed_VBN that_IN the_DT metabolism_NN is_VBZ linear_JJ which_WDT ,_, in_IN PKQuest_NNP ,_,
+          is_VBZ indicated_VBN by_IN using_VBG Tclr_NNP (_( in_IN place_NN of_IN Vm_NNP and_CC Km_NNP )_) ._. The_DT
+          value_NN of_IN Tclr_NNP was_VBD obtained_VBN by_IN using_VBG the_DT Powell_NNP
+          minimization_NN routine_JJ that_WDT is_VBZ built_VBN into_IN PKQuest_NNP to_TO
+          optimize_NN the_DT fit_NN to_TO the_DT blood_NN data_NN ._. Pierce_NNP et_CC al_NN ._. [_NN 32_CD ]_NN
+          divided_VBD the_DT metabolism_NN between_IN the_DT liver_NN and_CC lung_NN ._.
+          However_RB ,_, since_IN there_EX is_VBZ little_RB direct_JJ information_NN about_IN
+          human_JJ lung_NN metabolism_NN of_IN toluene_NN ,_, it_PRP was_VBD assumed_VBN here_RB
+          that_IN only_RB the_DT liver_NN was_VBD involved_VBN in_IN the_DT metabolism_NN ._.
+          Subject_NNP 5_CD a_DT was_VBD modeled_VBN using_VBG the_DT same_JJ procedure_NN using_VBG
+          the_DT body_NN weight_NN (_( 121_CD Kg_NNP )_) ,_, fat_JJ fraction_NN (_( 0_CD ._. 38_CD )_) alveolar_NN
+          ventilation_NN ,_, and_CC Kbair_NNP measured_VBD for_IN this_DT subject_NN ._. (_( See_VB
+          the_DT additional_JJ file_NN 1_CD for_IN the_DT complete_JJ subject_JJ 5_CD a_DT Maple_NNP
+          procedure_NN )_) ._. The_DT value_NN of_IN Tclr_NNP for_IN subject_JJ 5_CD a_DT was_VBD set_VBN
+          equal_JJ to_TO the_DT Tclr_NNP of_IN subject_JJ 15_CD scaled_VBN by_IN body_NN weight_NN ._.
+          All_DT the_DT other_JJ parameters_NNS were_VBD identical_JJ to_TO those_DT for_IN
+          subject_JJ 15_CD ._.
+          Figure_NN 5_CD shows_VBZ the_DT agreement_NN between_IN the_DT PKQuest_NNP
+          predictions_NNS for_IN the_DT arterial_NN (_( black_JJ )_) and_CC venous_JJ (_( red_JJ )_)
+          blood_NN concentration_NN and_CC the_DT experimental_JJ data_NN for_IN subject_JJ
+          5_CD a_DT (_( left_VBD hand_NN column_NN )_) and_CC 15_CD (_( right_JJ hand_NN column_NN )_) during_IN
+          the_DT time_NN course_NN of_IN toluene_NN washout_NN ._. (_( PKQuest_NNP allows_VBZ an_DT
+          arbitrary_JJ number_NN of_IN different_JJ organ_NN concentrations_NNS to_TO be_VB
+          simultaneously_RB displayed_VBN )_) ._. Pierce_NNP et_CC al_NN ._. sampled_VBN
+          "_'' arterialized_JJ "_'' venous_JJ blood_NN ._. Since_IN the_DT PKQuest_NNP venous_JJ and_CC
+          arterial_NN concentrations_NNS are_VBP identical_JJ at_IN the_DT time_NN points_NNS
+          of_IN the_DT experimental_JJ data_NN (_( fig_NN ._. 5_LS )_) ,_, the_DT distinction_NN
+          between_IN artery_NN and_CC vein_NN is_VBZ not_RB significant_JJ ._. Figures_NNS 6_CD show_NN
+          the_DT corresponding_JJ fits_NNS for_IN the_DT alveolar_NN gas_NN
+          concentration_NN ._. It_PRP can_MD be_VB seen_VBN that_IN the_DT agreement_NN is_VBZ quite_RB
+          good_JJ and_CC the_DT differences_NNS in_IN the_DT pharmacokinetics_NNS for_IN the_DT
+          two_CD subjects_NNS can_MD be_VB explained_VBN by_IN differences_NNS in_IN the_DT fat_JJ
+          fraction_NN ._. It_PRP should_MD be_VB emphasized_VBN that_IN there_EX is_VBZ only_RB one_CD
+          adjustable_JJ parameter_NN for_IN these_DT 2_CD subjects_NNS -_: the_DT Tclr_NNP of_IN
+          subject_JJ 15_CD ._.
+        
+        
+          Perfusion-_NNP Ventilation_NNP Mismatch_NNP
+          A_DT unique_JJ feature_NN of_IN PKQuest_NNP is_VBZ that_IN it_PRP provides_VBZ a_DT
+          direct_JJ simulation_NN of_IN the_DT mismatch_NN between_IN perfusion_NN and_CC
+          ventilation_NN ._. A_DT detailed_VBN description_NN of_IN the_DT equations_NNS and_CC
+          procedures_NNS used_VBN for_IN this_DT simulation_NN is_VBZ provided_VBN in_IN the_DT
+          original_JJ paper_NN [_NN 1_CD ]_NN ._. Briefly_NNP ,_, the_DT lung_NN is_VBZ divided_VBN into_IN
+          Nlung_NNP equal_JJ volume_NN compartments_NNS ,_, with_IN the_DT blood_NN flow_NN (_( Q_NNP )_)
+          and_CC ventilation_NN (_( V_NNP )_) to_TO each_DT compartment_NN determined_VBN by_IN a_DT
+          bivariate_NN ,_, uncorrelated_JJ ,_, log-normal_JJ function_NN [_NN 50_CD ]_NN ;_:
+          
+          The_DT value_NN of_IN Nlung_NNP is_VBZ determined_VBN by_IN the_DT user_NN input_NN
+          parameter_NN N_NNP 1_CD dim_NN (_( Nlung_NNP =_SYM (_( 2_CD *_NN N_NNP 1_CD dim_NN )_) 2_LS )_) ._. The_DT two_CD parameters_NNS
+          σ_NN 
+          Q_NNP and_CC σ_NN 
+          V_NNP (_( the_DT "_'' log_NN standard_JJ deviation_NN "_'' )_)
+          characterize_VB the_DT distribution_NN of_IN the_DT blood_NN perfusion_NN (_( σ_NN 
+          Q_NNP )_) and_CC the_DT ventilation_NN (_( σ_NN 
+          V_NNP )_) to_TO the_DT different_JJ compartments_NNS of_IN
+          the_DT lung_NN ._. The_DT default_NN values_NNS of_IN σ_NN 
+          Q_NNP and_CC σ_NN 
+          V_NNP of_IN 0_CD ._. 4_CD were_VBD determined_VBN by_IN applying_VBG
+          the_DT analysis_NN of_IN Wilson_NNP and_CC Beck_NNP [_NN 50_CD ]_NN to_TO the_DT
+          ventilation-perfusion_JJ ratio_NN distribution_NN for_IN normal_JJ young_JJ
+          men_NNS [_NN 51_CD ]_NN ._. The_DT rates_NNS of_IN perfusion_NN and_CC ventilation_NN to_TO
+          each_DT lung_NN compartment_NN are_VBP assumed_VBN to_TO be_VB uncorrelated_JJ (_( see_VB
+          [_NN 1_CD ]_NN for_IN details_NNS )_) ._. This_DT assumption_NN is_VBZ consistent_JJ with_IN
+          recent_JJ direct_JJ measurements_NNS of_IN regional_JJ perfusion_NN and_CC
+          ventilation_NN [_NN 52_CD 53_CD ]_NN ._. Results_NNS will_MD be_VB shown_VBN here_RB for_IN
+          the_DT case_NN where_WRB the_DT lung_NN is_VBZ divided_VBN into_IN 16_CD equal_JJ volume_NN
+          compartments_NNS (_( N_NNP 1_CD dim_NN =_SYM 2_CD ,_, Nlung_NNP =_SYM 16_CD )_) ._. This_DT provides_VBZ a_DT
+          good_JJ test_NN of_IN the_DT importance_NN of_IN perfusion-ventilation_JJ
+          mismatch_NN ._. (_( Increasing_VBG N_NNP 1_CD dim_NN to_TO 3_CD ,_, corresponding_JJ to_TO 36_CD
+          lung_NN compartments_NNS ,_, changes_VBZ the_DT results_NNS by_IN less_JJR than_IN 2_CD %_NN )_) ._.
+          Using_VBG the_DT default_NN values_NNS of_IN σ_NN 
+          Q_NNP and_CC σ_NN 
+          V_NNP the_DT fraction_NN of_IN total_JJ flow_NN and_CC total_JJ
+          ventilation_NN assigned_VBN to_TO each_DT of_IN the_DT 16_CD compartments_NNS is_VBZ
+          (_( flow_NN fraction_NN ,_, ventilation_NN fraction_NN )_) :_: (_( ._. 0432_CD ,_, ._. 0423_CD )_) ;_:
+          (_( ._. 0423_CD ,_, ._. 0549_CD )_) ;_: (_( ._. 0423_CD ,_, ._. 0659_CD )_) ;_: (_( ._. 0423_CD ;_: ._. 0869_CD )_) ;_: (_( ._. 0549_CD ,_,
+          ._. 0423_CD )_) ;_: (_( ._. 0549_CD ,_, ._. 0549_CD )_) ;_: (_( ._. 0549_CD ,_, ._. 0659_CD )_) ;_: (_( ._. 0549_CD ,_, ._. 0869_CD )_) ;_:
+          (_( ._. 0659_CD ,_, ._. 0423_CD )_) ;_: (_( ._. 0659_CD ,_, ._. 0549_CD )_) ;_: (_( ._. 0659_CD ,_, ._. 0659_CD )_) ;_: (_( ._. 0659_CD ,_,
+          ._. 0869_CD )_) ;_: (_( ._. 0869_CD ,_, ._. 0423_CD )_) ;_: (_( ._. 0869_CD ,_, ._. 0549_CD )_) ;_: (_( ._. 0869_CD ,_, ._. 0659_CD )_) ;_:
+          (_( ._. 0859_CD ,_, ._. 0869_CD )_) ._.
+          Figure_NN 7_CD shows_VBZ the_DT influence_NN of_IN perfusion-ventilation_JJ
+          mismatch_NN on_IN the_DT PKQuest_NNP results_NNS for_IN the_DT enflurane_NN data_NN of_IN
+          Munson_NNP et_CC al_NN ._. [_NN 4_CD ]_NN ._. The_DT predicted_VBN alveolar_NN
+          concentration_NN is_VBZ shown_VBN for_IN a_DT )_) the_DT 1_CD compartment_NN
+          homogenous_JJ lung_NN model_NN (_( black_JJ )_) ;_: and_CC the_DT 16_CD compartment_NN
+          model_NN with_IN b_SYM )_) the_DT default_NN (_( normal_JJ )_) values_NNS for_IN sig_NN __NN v_NN and_CC
+          sig_NN __NN f_SYM (_( red_JJ )_) ;_: c_SYM )_) twice_RB the_DT normal_JJ values_NNS of_IN sig_NN __NN v_NN and_CC
+          sig_NN __NN f_SYM (_( green_JJ )_) ;_: and_CC d_SYM )_) three_CD times_NNS the_DT normal_JJ values_NNS of_IN
+          sig_NN __NN v_NN and_CC sig_NN __NN f_SYM (_( blue_JJ )_) ._. It_PRP can_MD be_VB seen_VBN that_IN the_DT 16_CD
+          compartment_NN model_NN with_IN normal_JJ sig_NN __NN v_NN and_CC sig_NN __NN f_SYM (_( red_JJ )_) is_VBZ
+          almost_RB indistinguishable_JJ from_IN the_DT homogeneous_JJ 1_CD
+          compartment_NN model_NN (_( black_JJ )_) ._. Thus_RB ,_, normal_JJ values_NNS of_IN
+          perfusion-ventilation_JJ mismatch_NN have_VBP no_DT significant_JJ effect_NN
+          on_IN the_DT uptake_NN and_CC washout_NN of_IN enflurane_NN ._. It_PRP is_VBZ not_RB until_IN
+          the_DT normal_JJ values_NNS of_IN sig_NN __NN v_NN and_CC sig_NN __NN f_SYM are_VBP increased_VBN by_IN a_DT
+          factor_NN of_IN about_IN 3_CD that_IN differences_NNS become_VBP
+          significant_JJ ._.
+          Although_IN the_DT effect_NN of_IN the_DT perfusion-ventilation_JJ
+          mismatch_NN is_VBZ small_JJ ,_, it_PRP can_MD be_VB important_JJ for_IN some_DT
+          experimental_JJ measurements_NNS ._. Figure_NN 8_CD shows_VBZ the_DT alveolar_NN
+          (_( black_JJ )_) ,_, arterial_NN (_( red_JJ )_) and_CC venous_JJ (_( green_JJ )_) N_NNP 
+          2_CD O_NNP concentration_NN using_VBG the_DT 16_CD
+          compartment_NN model_NN and_CC the_DT default_NN (_( normal_JJ )_) of_IN values_NNS of_IN
+          sig_NN __NN v_NN and_CC sig_NN __NN f_SYM for_IN the_DT conditions_NNS of_IN Munson_NNP et_CC al_NN ._. [_NN 4_CD ]_NN
+          -_: with_IN all_DT concentrations_NNS expressed_VBD in_IN terms_NNS of_IN the_DT
+          partial_JJ pressure_NN gas_NN concentration_NN ._. It_PRP can_MD be_VB seen_VBN that_IN
+          the_DT perfusion-ventilation_JJ mismatch_NN produces_VBZ a_DT small_JJ
+          difference_NN in_IN the_DT alveolar_NN and_CC arterial_NN concentrations_NNS
+          during_IN uptake_NN (_( for_IN the_DT 1_CD compartment_NN lung_NN model_NN ,_, alveolar_NN
+          and_CC arterial_NN concentrations_NNS would_MD be_VB identical_JJ )_) ._. This_DT
+          result_NN is_VBZ in_IN quantitative_JJ agreement_NN with_IN the_DT experimental_JJ
+          measurements_NNS of_IN Eger_NNP et_CC al_NN [_NN 54_CD ]_NN in_IN conscious_JJ subjects_NNS :_:
+          At_IN 1_CD ._. 5_CD minutes_NNS ,_, PKQuest_NNP P_NN 
+          art_NN /_NN P_NN 
+          alv_NN =_SYM 0_CD ._. 92_CD ;_: experimental_JJ P_NN 
+          art_NN /_NN P_NN 
+          endtidal_NN =_SYM 0_CD ._. 92_CD ;_: At_IN 8_CD minutes_NNS :_: PKQuest_NNP
+          =_SYM 0_CD ._. 98_CD l_NN experimental_JJ =_SYM 0_CD ._. 98_CD ._.
+        
+      
+      
+        Discussion_NNP and_CC conclusions_NNS
+        
+          Enflurane_NNP ,_, nitrous_JJ oxide_NN ,_, halothane_NN and_CC
+          toluene_NN
+          The_DT simple_JJ PKQuest_NNP approach_NN of_IN using_VBG a_DT single_JJ set_NN of_IN
+          "_'' standard_JJ human_JJ "_'' values_NNS for_IN the_DT lipid_NN fraction_NN of_IN each_DT
+          organ_NN (_( klip_NN )_) to_TO predict_VB tissue_NN /_NN blood_NN partition_NN provides_VBZ
+          an_DT accurate_JJ prediction_NN of_IN the_DT pharmacokinetics_NNS of_IN these_DT 4_CD
+          volatile_JJ solute_NN ._. The_DT word_NN "_'' prediction_NN "_'' (_( and_CC not_RB
+          "_'' description_NN "_'' )_) is_VBZ purposely_RB used_VBN here_RB because_IN most_JJS of_IN the_DT
+          parameters_NNS are_VBP based_VBN on_IN the_DT default_NN ,_, previously_RB
+          determined_VBN set_NN of_IN PBPK_NNP data_NNS and_CC there_EX is_VBZ a_DT minimum_NN of_IN
+          adjustable_JJ parameters_NNS ._. For_IN example_NN ,_, in_IN the_DT PKQuest_NNP input_NN
+          for_IN the_DT enflurane_NN pharmacokinetics_NNS (_( fig_NN ._. 1_LS )_) there_EX are_VBP no_DT
+          adjustable_JJ parameters_NNS ._. Every_DT constant_JJ in_IN the_DT procedure_NN
+          enflurane_NN (_( )_) listed_VBN above_IN is_VBZ pre-determined_JJ from_IN previous_JJ
+          measurements_NNS ._. In_IN this_DT sense_NN ,_, the_DT time_NN dependence_NN of_IN the_DT
+          alveolar_NN enflurane_NN concentration_NN during_IN washin_NN and_CC
+          washout_NN shown_VBN in_IN fig_NN ._. 1_LS is_VBZ a_DT true_JJ prediction_NN ,_, based_VBN on_IN
+          previous_JJ measurements_NNS ._.
+          This_DT example_NN for_IN enflurane_NN is_VBZ slightly_RB misleading_VBG
+          because_IN the_DT default_NN blood_NN flow_NN in_IN "_'' standard_JJ human_JJ "_'' was_VBD
+          adjusted_VBN to_TO give_VB the_DT best_JJS fit_NN to_TO the_DT enflurane_NN data_NN ._. The_DT
+          fat_JJ blood_NN flow_NN parameter_NN plays_VBZ an_DT important_JJ role_NN in_IN
+          determining_VBG the_DT accuracy_NN of_IN the_DT fit_NN to_TO the_DT experimental_JJ
+          data_NN ._. Figure_NN 9_CD compares_VBZ the_DT PKQuest_NNP output_NN for_IN enflurane_NN
+          using_VBG the_DT default_NN fat_JJ blood_NN flow_NN (_( 0_CD ._. 056_CD liters_NNS /_NN min_NN /_NN Kg_NNP ;_:
+          black_JJ )_) and_CC twice_RB the_DT default_NN value_NN (_( red_JJ )_) ._. The_DT generality_NN
+          of_IN this_DT fat_JJ blood_NN flow_NN value_NN is_VBZ evidenced_VBN by_IN the_DT good_JJ fit_NN
+          that_WDT was_VBD obtained_VBN when_WRB it_PRP was_VBD used_VBN in_IN the_DT modeling_NN of_IN the_DT
+          Munson_NNP et_CC al_NN ._. and_CC Carpenter_NNP et_CC al_NN ._. data_NNS for_IN halothane_NN
+          (_( fig_NN ._. 3_LS )_) and_CC the_DT Pierce_NNP et_CC al_NN ._. data_NNS for_IN toluene_NN (_( figs_NNS ._.
+          5_LS and_CC 6_CD )_) ,_, solutes_NNS for_IN which_WDT the_DT fat_JJ blood_NN flow_NN has_VBZ a_DT
+          larger_JJR influence_NN because_IN of_IN the_DT larger_JJR value_NN of_IN the_DT
+          oil_NN /_NN water_NN partition_NN coefficient_NN ._.
+          This_DT use_NN of_IN the_DT enflurane_NN data_NN to_TO determine_VB the_DT fat_JJ
+          blood_NN flow_NN illustrates_VBZ one_CD of_IN the_DT main_JJ advantages_NNS of_IN
+          having_VBG a_DT PBPK_NNP program_NN such_JJ as_IN PKQuest_NNP that_WDT is_VBZ general_JJ
+          enough_RB that_IN it_PRP can_MD be_VB applied_VBN to_TO a_DT large_JJ variety_NN of_IN
+          solutes_NNS ._. Since_IN different_JJ solutes_NNS have_VBP different_JJ
+          sensitivities_NNS to_TO the_DT different_JJ PBPK_NNP parameters_NNS ,_, using_VBG a_DT
+          variety_NN of_IN solutes_NNS to_TO optimize_NN the_DT parameters_NNS increases_VBZ
+          the_DT validity_NN of_IN the_DT PBPK_NNP ._. Other_JJ examples_NNS of_IN PKQuest_NNP
+          standard_JJ human_JJ parameters_NNS that_WDT were_VBD optimized_JJ this_DT way_NN
+          are_VBP the_DT muscle_NN blood_NN flow_NN (_( optimized_JJ using_VBG human_JJ D_NNP 
+          2_CD O_NNP pharmacokinetics_NNS [_NN 2_CD ]_NN )_) and_CC the_DT
+          extracellular_NN space_NN (_( optimized_JJ using_VBG human_JJ inulin_NN
+          pharmacokinetics_NNS [_NN 3_CD ]_NN )_) ._.
+          The_DT single_JJ most_RBS important_JJ difference_NN between_IN PKQuest_NNP
+          and_CC other_JJ PBPKs_NNP that_WDT have_VBP been_VBN applied_VBN to_TO these_DT solutes_NNS
+          is_VBZ the_DT way_NN the_DT tissue_NN /_NN blood_NN partition_NN coefficient_NN is_VBZ
+          handled_VBN ._. The_DT conventional_JJ approach_NN is_VBZ to_TO directly_RB measure_VB
+          this_DT partition_NN coefficient_NN for_IN each_DT solute_NN in_IN various_JJ
+          classes_NNS of_IN tissue_NN in_IN animals_NNS ,_, and_CC then_RB use_VB these_DT values_NNS
+          in_IN the_DT human_JJ model_NN ._. In_IN contrast_NN ,_, in_IN PKQuest_NNP this_DT
+          partition_NN coefficient_NN is_VBZ determined_VBN just_RB from_IN the_DT value_NN
+          of_IN the_DT oil_NN /_NN water_NN partition_NN coefficient_NN (_( along_IN with_IN the_DT
+          default_NN value_NN of_IN the_DT organ_NN and_CC blood_NN lipid_NN content_NN )_) ._.
+          Since_IN this_DT partition_NN coefficient_NN is_VBZ a_DT simple_JJ physical_JJ
+          chemical_NN value_NN and_CC is_VBZ usually_RB available_JJ in_IN the_DT
+          literature_NN ,_, this_DT means_VBZ that_IN one_PRP can_MD apply_VB PKQuest_NNP to_TO
+          solutes_NNS even_RB when_WRB no_DT animal_NN tissue_NN partition_NN data_NNS is_VBZ
+          available_JJ ._. The_DT ability_NN of_IN this_DT approach_NN to_TO describe_VB the_DT
+          pharmacokinetics_NNS of_IN solutes_NNS with_IN an_DT oil_NN /_NN water_NN partition_NN
+          varying_VBG from_IN 3_CD (_( N_NNP 
+          2_CD O_NNP )_) to_TO 120_CD (_( toluene_NN )_) demonstrates_VBZ the_DT
+          large_JJ range_NN of_IN its_PRP$ validity_NN ._.
+          The_DT pharmacokinetic_JJ approach_NN that_WDT seems_VBZ to_TO be_VB
+          currently_RB favored_VBN for_IN anesthetics_NNS is_VBZ to_TO use_VB a_DT general_JJ
+          multi-compartment_JJ fit_NN rather_RB than_IN a_DT PBPK_NNP [_NN 41_CD 55_CD ]_NN ._. In_IN
+          this_DT approach_NN ,_, the_DT data_NNS is_VBZ first_JJ fit_NN with_IN a_DT
+          multi-exponential_JJ function_NN that_WDT is_VBZ then_RB interpreted_VBN in_IN
+          terms_NNS of_IN exchanges_NNS between_IN a_DT central_JJ compartment_NN (_( the_DT
+          vascular_NN system_NN )_) and_CC an_DT adjustable_JJ number_NN of_IN peripheral_JJ
+          compartments_NNS (_( a_DT "_'' mammillary_JJ "_'' system_NN )_) ._. Although_IN this_DT
+          approach_NN may_MD be_VB mathematically_RB similar_JJ to_TO a_DT PBPK_NNP ,_, it_PRP is_VBZ
+          completely_RB different_JJ philosophically_RB ._. The_DT advantage_NN of_IN
+          the_DT multi-compartment_JJ approach_NN is_VBZ that_IN it_PRP is_VBZ completely_RB
+          general_JJ and_CC puts_VBZ no_DT restrictions_NNS or_CC previous_JJ assumptions_NNS
+          on_IN the_DT pharmacokinetic_JJ model_NN ._. This_DT advantage_NN is_VBZ also_RB its_PRP$
+          main_JJ disadvantage_NN ._. For_IN example_NN in_IN a_DT multi-compartment_JJ
+          analysis_NN of_IN anesthetics_NNS by_IN Yasuda_NNP et_CC al_NN ._. [_NN 41_CD ]_NN there_EX are_VBP
+          10_CD different_JJ rate_NN constants_NNS that_WDT are_VBP optimized_JJ for_IN each_DT
+          different_JJ anesthetic_JJ and_CC these_DT constants_NNS are_VBP then_RB
+          interpreted_VBN in_IN terms_NNS of_IN compartments_NNS and_CC flows_NNS ._. In_IN
+          contrast_NN ,_, the_DT major_JJ design_NN feature_NN of_IN PKQuest_NNP is_VBZ to_TO have_VB
+          as_IN many_JJ parameters_NNS as_IN possible_RB set_VBN by_IN default_NN based_VBN on_IN
+          previously_RB determined_VBN measurements_NNS ,_, with_IN the_DT amount_NN of_IN
+          user_NN input_NN reduced_VBN to_TO its_PRP$ absolute_JJ minimum_NN ._. For_IN the_DT case_NN
+          of_IN the_DT typical_JJ volatile_JJ solute_NN described_VBD here_RB ,_, the_DT user_NN
+          only_RB needs_VBZ to_TO input_NN the_DT water_NN /_NN air_NN and_CC oil_NN /_NN water_NN partition_NN
+          coefficients_NNS and_CC the_DT metabolic_JJ parameters_NNS ._. All_DT the_DT other_JJ
+          parameters_NNS required_VBN for_IN the_DT PBPK_NNP (_( organ_NN volumes_NNS ,_, blood_NN
+          flows_NNS ,_, alveolar_NN ventilation_NN ,_, organ_NN /_NN blood_NN partition_NN and_CC
+          volume_NN ,_, etc_FW ._. )_) are_VBP determined_VBN simply_RB by_IN a_DT call_NN to_TO
+          "_'' standardhuman_NN "_'' ._. By_IN using_VBG all_PDT the_DT previous_JJ information_NN
+          that_WDT is_VBZ available_JJ to_TO restrict_VB the_DT model_NN and_CC minimize_VB the_DT
+          number_NN of_IN adjustable_JJ parameters_NNS ,_, PKQuest_NNP greatly_RB
+          increases_VBZ the_DT predictive_JJ power_NN of_IN the_DT analysis_NN ._.
+          The_DT one_CD exception_NN to_TO the_DT generally_RB good_JJ agreement_NN
+          between_IN the_DT PKQuest_NNP predictions_NNS and_CC the_DT experimental_JJ data_NN
+          for_IN these_DT solutes_NNS is_VBZ for_IN the_DT washout_NN of_IN N_NNP 
+          2_CD O_NNP (_( fig_NN ._. 2_LS )_) ._. Although_IN the_DT differences_NNS
+          between_IN the_DT PKQuest_NNP and_CC experimental_JJ data_NNS are_VBP small_JJ in_IN
+          absolute_JJ value_NN ,_, they_PRP represent_VBP large_JJ relative_JJ values_NNS ._. For_IN
+          example_NN ,_, for_IN the_DT last_JJ data_NN point_VBP (_( 60_CD minutes_NNS )_) ,_, the_DT
+          PKQuest_NNP prediction_NN for_IN the_DT end_NN expired_VBD gas_NN concentration_NN
+          is_VBZ 0_CD ._. 067_CD %_NN while_IN the_DT experimental_JJ value_NN is_VBZ 0_CD ._. 026_CD %_NN (_( for_IN an_DT
+          inhaled_JJ concentration_NN of_IN 1_CD ._. 88_CD %_NN )_) ._. (_( This_DT difference_NN is_VBZ
+          larger_JJR than_IN the_DT standard_JJ error_NN of_IN the_DT last_JJ data_NN point_VBP ._. )_)
+          This_DT difference_NN may_MD be_VB artifactual_NN ._. For_IN example_NN ,_, the_DT
+          experimental_JJ N_NNP 
+          2_CD O_NNP data_NNS (_( fig_NN ._. 2_LS )_) has_VBZ a_DT marked_VBN
+          difference_NN in_IN the_DT degree_NN of_IN equilibrium_NN reached_VBN during_IN
+          uptake_NN (_( 93_CD %_NN )_) versus_CC washout_NN (_( 98_CD ._. 7_CD %_NN )_) ._. This_DT result_NN is_VBZ not_RB
+          expected_VBN theoretically_RB and_CC is_VBZ not_RB consistent_JJ with_IN the_DT
+          detailed_VBN experimental_JJ results_NNS of_IN Salamitre_NNP et_CC al_NN ._. [_NN 56_CD ]_NN
+          who_WP found_VBD approximately_RB equal_JJ equilibration_NN times_NNS during_IN
+          uptake_NN and_CC washout_NN of_IN sub_NN anesthetic_JJ doses_NNS of_IN N_NNP 
+          2_CD O_NNP ._. Another_DT indication_NN of_IN the_DT problem_NN
+          presented_VBN by_IN this_DT discrepancy_NN is_VBZ that_IN it_PRP was_VBD not_RB possible_JJ
+          to_TO significantly_RB improve_VB the_DT fit_NN by_IN adjusting_VBG any_DT or_CC all_DT
+          of_IN the_DT PKQuest_NNP parameters_NNS ._. Any_DT parameter_NN change_NN that_WDT
+          improved_VBD the_DT fit_NN for_IN the_DT washout_NN ,_, significantly_RB worsened_VBD
+          the_DT fit_NN for_IN the_DT uptake_NN and_CC the_DT addition_NN of_IN a_DT
+          perfusion-ventilation_JJ mismatch_NN did_VBD not_RB improve_VB the_DT fit_NN ._.
+          One_CD possible_JJ explanation_NN is_VBZ a_DT small_JJ error_NN in_IN the_DT
+          quantitative_JJ measurements_NNS (_( made_VBN in_IN 1977_CD )_) of_IN Munsen_NNP et_CC al_NN
+          [_NN 4_CD ]_NN at_IN low_JJ N_NNP 
+          2_CD O_NNP concentrations_NNS ._. Other_JJ
+          possibilities_NNS are_VBP a_DT difference_NN in_IN some_DT physiological_JJ
+          parameters_NNS (_( e_SYM ._. g_SYM ._. ventilation_NN )_) during_IN uptake_NN and_CC washout_NN
+          or_CC an_DT error_NN in_IN reading_VBG the_DT data_NNS off_RP the_DT published_VBN linear_JJ
+          plot_NN ._.
+        
+        
+          Methoxyflurane_NNP
+          Methoxyflurane_NNP is_VBZ a_DT notable_JJ exception_NN to_TO the_DT generally_RB
+          good_JJ agreement_NN between_IN the_DT PKQuest_NNP PBPK_NNP and_CC the_DT
+          experimental_JJ data_NN ._. For_IN methoxyflurane_NN ,_, the_DT experimental_JJ
+          end_NN tidal_JJ partial_JJ pressure_NN (_( squares_NNS ,_, fig_NN ._. 4_LS )_) is_VBZ about_IN 30_CD %_NN
+          greater_JJR than_IN the_DT PKQuest_NNP prediction_NN during_IN uptake_NN (_( line_NN ,_,
+          fig_NN ._. 4_LS )_) ._. It_PRP is_VBZ assumed_VBN in_IN the_DT PBPK_NNP model_NN that_IN the_DT
+          arterial_NN blood_NN and_CC alveolar_NN gas_NN partial_JJ pressures_NNS are_VBP
+          equal_JJ and_CC correspond_VB to_TO the_DT experimentally_RB measured_VBN end_NN
+          tidal_JJ gas_NN partial_JJ pressure_NN ._. Thus_RB the_DT error_NN in_IN fig_NN ._. 4_LS is_VBZ
+          equivalent_JJ to_TO the_DT statement_NN that_IN "_'' the_DT arterial_NN partial_JJ
+          pressure_NN is_VBZ significantly_RB less_JJR than_IN the_DT end_NN tidal_JJ partial_JJ
+          pressure_NN "_'' ._. This_DT discrepancy_NN for_IN methoxyflurane_NN had_VBD been_VBN
+          noted_VBN previously_RB in_IN the_DT older_JJR literature_NN ._. Holaday_NNP et_CC al_NN ._.
+          [_NN 57_CD ]_NN reported_VBD that_IN during_IN methoxyflurane_NN uptake_NN ,_, the_DT
+          arterial_NN partial_JJ pressure_NN was_VBD only_RB about_IN 50_CD %_NN of_IN the_DT end_NN
+          expired_VBD value_NN ._. Similarly_RB ,_, Stoelting_NNP [_NN 58_CD ]_NN observed_VBD that_IN
+          at_IN the_DT end_NN of_IN the_DT methoxyflurane_NN uptake_NN ,_, the_DT arterial_NN
+          partial_JJ pressure_NN was_VBD 60_CD %_NN of_IN the_DT end_NN expired_VBD ,_, while_IN during_IN
+          washout_NN ,_, the_DT two_CD values_NNS were_VBD nearly_RB identical_JJ ._. Despite_IN
+          these_DT clear_JJ indications_NNS that_IN there_EX was_VBD something_NN
+          anomalous_JJ about_IN methoxyflurane_NN ,_, this_DT problem_NN seems_VBZ to_TO
+          have_VB been_VBN generally_RB ignored_VBN in_IN the_DT recent_JJ literature_NN ._.
+          This_DT inequality_NN is_VBZ almost_RB certainly_RB caused_VBN by_IN the_DT
+          classic_JJ "_'' washin-washout_JJ "_'' artifact_NN that_WDT has_VBZ been_VBN described_VBN
+          for_IN gases_NNS with_IN large_JJ blood_NN /_NN air_NN partition_NN (_( Kbair_NNP )_)
+          coefficients_NNS [_NN 47_CD 59_CD 60_CD 61_CD 62_CD 63_CD 64_CD 65_CD ]_NN ._. This_DT artifact_NN
+          is_VBZ created_VBN when_WRB ,_, during_IN inspiration_NN ,_, the_DT high_JJ
+          concentration_NN gas_NN dissolves_VBZ in_IN the_DT tissues_NNS of_IN the_DT
+          bronchial_NN tree_NN ,_, and_CC then_RB ,_, during_IN expiration_NN ,_, moves_NNS back_RB
+          into_IN the_DT air_NN ,_, raising_VBG the_DT end_NN tidal_JJ concentration_NN above_IN
+          the_DT alveolar_NN values_NNS ._. For_IN extremely_RB soluble_JJ solutes_NNS such_JJ
+          as_IN ethanol_NN (_( Kbair_NNP =_SYM 1756_CD )_) ,_, the_DT expired_VBN gas_NN concentration_NN
+          is_VBZ dominated_VBN by_IN exchange_NN with_IN the_DT conducting_VBG airway_NN and_CC
+          is_VBZ almost_RB independent_JJ of_IN the_DT alveolar_NN concentration_NN [_NN 63_CD
+          65_CD ]_NN ._. For_IN gases_NNS of_IN intermediate_JJ solubility_NN ,_, such_JJ as_IN
+          styrene_NN (_( Kbair_NNP =_SYM 48_CD )_) or_CC toluene_NN (_( Kbair_NNP =_SYM 18_CD )_) the_DT effect_NN
+          is_VBZ less_RBR dramatic_JJ and_CC has_VBZ often_RB been_VBN overlooked_VBN ._. This_DT
+          analysis_NN provides_VBZ a_DT good_JJ example_NN of_IN the_DT advantage_NN of_IN a_DT
+          PBPK_NNP such_JJ as_IN PKQuest_NNP over_IN the_DT more_RBR general_JJ compartmental_NN
+          (_( mamillary_JJ )_) model_NN ._. It_PRP is_VBZ obvious_JJ from_IN the_DT PKQuest_NNP
+          analysis_NN (_( see_VB fig_NN ._. 4_LS )_) that_IN some_DT model_NN assumption_NN must_MD be_VB
+          wrong_JJ ._. In_IN contrast_NN ,_, in_IN a_DT detailed_VBN compartmental_NN
+          (_( mammillary_JJ )_) model_NN analysis_NN of_IN the_DT simultaneous_JJ uptake_NN
+          and_CC washout_NN of_IN methoxyflurane_NN and_CC other_JJ gases_NNS it_PRP was_VBD
+          recognized_VBN that_DT methoxyflurane_NN was_VBD different_JJ ,_, but_CC the_DT
+          "_'' reason_NN for_IN this_DT discrepancy_NN is_VBZ not_RB clear_JJ "_'' [_NN 66_CD ]_NN ._.
+          The_DT strongest_JJS evidence_NN supporting_VBG this_DT explanation_NN for_IN
+          the_DT discrepancy_NN in_IN the_DT methoxyflurane_NN data_NN is_VBZ provided_VBN by_IN
+          a_DT comparison_NN with_IN toluene_NN ._. Since_IN the_DT blood_NN /_NN air_NN partition_NN
+          coefficients_NNS are_VBP similar_JJ for_IN toluene_NN (_( Kbair_NNP =_SYM 18_CD )_) and_CC
+          methoxyflurane_NN (_( Kbair_NNP =_SYM 13_CD ._. 9_CD )_) ,_, this_DT artifact_NN should_MD be_VB of_IN
+          similar_JJ magnitude_NN for_IN these_DT two_CD solutes_NNS ._. During_IN the_DT
+          uptake_NN of_IN toluene_NN in_IN resting_VBG subjects_NNS ,_, the_DT end_NN tidal_JJ
+          partial_JJ pressure_NN is_VBZ only_RB about_IN 1_CD /_NN 2_CD the_DT arterial_NN value_NN [_NN
+          67_CD ]_NN ,_, similar_JJ to_TO what_WP is_VBZ observed_VBN for_IN methoxyflurane_NN (_( [_NN
+          57_CD 68_CD ]_NN ,_, and_CC see_VB fig_NN ._. 4_LS )_) ._. However_RB ,_, when_WRB these_DT same_JJ
+          subjects_NNS begin_VBP to_TO exercise_VB ,_, increasing_VBG the_DT ventilatory_NN
+          rate_NN by_IN a_DT factor_NN of_IN 2_CD ._. 5_CD ,_, the_DT arterial_NN and_CC end_VB tidal_JJ gas_NN
+          concentrations_NNS become_VBP approximately_RB equal_JJ [_NN 67_CD ]_NN ._.
+          Presumably_RB ,_, at_IN the_DT higher_JJR rates_NNS of_IN ventilation_NN ,_, there_EX is_VBZ
+          relatively_RB less_JJR time_NN for_IN exchange_NN with_IN the_DT airways_NNS ,_, and_CC
+          the_DT artifact_NN decreases_NNS ._. This_DT suggests_VBZ that_WDT solutes_NNS such_JJ
+          as_IN methoxyflurane_NN or_CC toluene_NN are_VBP right_RB on_IN the_DT boundary_NN of_IN
+          where_WRB this_DT artifact_NN becomes_VBZ important_JJ ._. The_DT artifact_NN
+          becomes_VBZ negligible_JJ for_IN halothane_NN with_IN a_DT Kbair_NNP of_IN 2_CD ._. 2_CD as_IN
+          indicated_VBN by_IN the_DT nearly_RB identical_JJ end_NN tidal_JJ and_CC arterial_NN
+          partial_JJ pressures_NNS [_NN 58_CD ]_NN ,_, and_CC the_DT good_JJ agreement_NN between_IN
+          the_DT PKQuest_NNP results_NNS and_CC the_DT experimental_JJ data_NN (_( see_VB fig_NN ._.
+          3_LS )_) ._.
+          For_IN solutes_NNS such_JJ as_IN toluene_NN [_NN 45_CD 67_CD ]_NN ,_, styrene_NN [_NN 47_CD ]_NN
+          and_CC methoxyflurane_NN [_NN 58_CD ]_NN there_EX is_VBZ ,_, at_IN first_JJ glance_NN ,_, a_DT
+          peculiar_JJ asymmetry_NN in_IN the_DT data_NNS that_WDT has_VBZ caused_VBN some_DT
+          confusion_NN :_: during_IN uptake_NN there_EX is_VBZ a_DT large_JJ difference_NN in_IN
+          the_DT end_NN tidal_JJ and_CC arterial_NN partial_JJ pressures_NNS ,_, while_IN ,_,
+          during_IN washout_NN ,_, there_EX is_VBZ only_RB a_DT small_JJ or_CC negligible_JJ
+          difference_NN ._. However_RB ,_, this_DT asymmetry_NN disappears_VBZ if_IN the_DT
+          data_NNS is_VBZ reexamined_JJ as_IN follows_VBZ :_: For_IN the_DT resting_VBG toluene_NN
+          data_NNS of_IN Carlsson_NNP et_CC al_NN ._. [_NN 67_CD ]_NN during_IN uptake_NN the_DT inspired_VBN
+          concentration_NN is_VBZ 300_CD mg_NN /_NN m_NN 3_CD ,_, the_DT end_NN tidal_JJ concentration_NN
+          is_VBZ 72_CD mg_NN /_NN m_NN 3_CD ,_, and_CC the_DT arterial_NN concentration_NN is_VBZ 585_CD mg_NN /_NN m_NN
+          3_CD ._. Assuming_VBG a_DT Kbair_NNP of_IN 18_CD ,_, this_DT arterial_NN concentration_NN
+          corresponds_NNS to_TO a_DT gas_NN concentration_NN of_IN 32_CD mg_NN /_NN m_NN 3_CD ,_, an_DT end_NN
+          tidal_JJ -_: arterial_NN difference_NN of_IN 55_CD %_NN ._. If_IN the_DT artifact_NN were_VBD
+          not_RB present_JJ and_CC the_DT end_NN tidal_JJ equaled_VBD the_DT arterial_NN ,_, then_RB
+          the_DT end_NN tidal_JJ concentration_NN should_MD have_VB been_VBN 32_CD mg_NN /_NN m_NN 3_CD ._.
+          Thus_RB ,_, the_DT net_JJ rate_NN of_IN gas_NN uptake_NN (_( inspired_VBN -_: end_NN tidal_JJ )_)
+          is_VBZ decreased_VBN about_IN 13_CD %_NN (_( =_SYM (_( 72_CD -_: 32_CD )_) /_NN 300_CD )_) by_IN the_DT artifact_NN ._.
+          If_IN a_DT symmetrical_JJ error_NN was_VBD present_JJ during_IN washout_NN ,_, the_DT
+          washout_NN rate_NN should_MD also_RB be_VB decreased_VBN by_IN 13_CD %_NN by_IN the_DT
+          artifact_NN ._. Since_IN ,_, during_IN washout_NN ,_, the_DT inspired_VBN
+          concentration_NN is_VBZ zero_CD ,_, this_DT means_VBZ that_IN the_DT washout_NN end_NN
+          tidal_JJ concentration_NN should_MD be_VB 13_CD %_NN less_JJR than_IN the_DT arterial_NN
+          partial_JJ pressure_NN ._. Thus_RB ,_, if_IN the_DT artifact_NN was_VBD symmetrical_JJ ,_,
+          the_DT difference_NN between_IN the_DT end_NN tidal_JJ and_CC arterial_NN partial_JJ
+          pressure_NN during_IN washout_NN should_MD be_VB only_RB about_IN 1_CD /_NN 5_CD of_IN the_DT
+          difference_NN during_IN uptake_NN (_( 13_CD %_NN versus_CC 55_CD %_NN difference_NN )_) ._.
+          Errors_NNP of_IN this_DT magnitude_NN (_( 13_CD %_NN )_) can_MD be_VB swamped_VBN by_IN the_DT
+          normal_JJ variations_NNS in_IN Kbair_NNP that_DT result_NN from_IN variations_NNS in_IN
+          the_DT blood_NN fat_JJ content_NN ._.
+          The_DT observant_NN reader_NN should_MD ,_, at_IN this_DT point_NN ,_, be_VB asking_VBG
+          why_WRB toluene_NN can_MD be_VB modeled_VBN by_IN PKQuest_NNP (_( figs_NNS ._. 5_LS and_CC 6_CD )_) if_IN
+          it_PRP has_VBZ a_DT similar_JJ Kbair_NNP and_CC ,_, therefore_RB ,_, similar_JJ
+          washin-washout_JJ artifact_NN as_IN methoxyflurane_NN ._. There_EX are_VBP 2_CD
+          reasons_NNS :_: 1_LS )_) Only_RB the_DT washout_NN data_NN was_VBD modeled_VBN so_IN that_IN one_PRP
+          would_MD expect_VB only_RB a_DT small_JJ (_( 13_CD %_NN )_) error_NN ;_: and_CC 2_LS )_) This_DT small_JJ
+          error_NN in_IN the_DT washout_NN data_NN was_VBD not_RB present_JJ because_IN the_DT
+          value_NN of_IN Kbair_NNP that_WDT was_VBD used_VBN for_IN this_DT modeling_NN (_( Table_NNP I_PRP ,_,
+          Pierce_NNP et_CC al_NN [_NN 32_CD ]_NN )_) was_VBD determined_VBN from_IN the_DT
+          experimental_JJ ratios_NNS of_IN the_DT blood_NN /_NN end_NN tidal_JJ air_NN for_IN each_DT
+          subject_NN ,_, and_CC ,_, thus_RB ,_, automatically_RB compensated_VBN for_IN this_DT
+          artifact_NN ._. The_DT fact_NN that_IN the_DT average_JJ value_NN of_IN this_DT "_'' in_IN
+          vivo_NN "_'' Kbair_NNP was_VBD about_IN 10_CD %_NN larger_JJR than_IN the_DT "_'' in_IN vitro_NN "_''
+          value_NN [_NN 32_CD ]_NN is_VBZ consistent_JJ with_IN an_DT end_NN tidal_JJ partial_JJ
+          pressure_NN that_WDT is_VBZ 10_CD %_NN less_JJR than_IN the_DT arterial_NN partial_JJ
+          pressure_NN ._.
+        
+      
+      
+        Competing_VBG interests_NNS
+        None_NN declared_VBD ._.
+      
+    
+  

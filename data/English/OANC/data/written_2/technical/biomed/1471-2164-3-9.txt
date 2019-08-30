@@ -1,0 +1,514 @@
+
+  
+    
+      
+        Background_NNP
+        Coiled-coil_NNP domains_NNS are_VBP protein_NN oligomerization_NN motifs_NNS ,_,
+        which_WDT consist_VBP of_IN two_CD or_CC more_JJR alpha_NN helices_NNS that_WDT twist_NN
+        around_IN one_CD another_DT to_TO form_VB a_DT supercoil_NN [_NN 1_CD ]_NN ._. Peptides_NNP
+        with_IN the_DT capacity_NN to_TO form_VB coiled_JJ coils_NNS are_VBP characterized_VBN by_IN
+        a_DT heptad_NN repeat_NN pattern_NN in_IN which_WDT residues_NNS in_IN the_DT first_JJ and_CC
+        fourth_JJ position_NN are_VBP hydrophobic_JJ ,_, and_CC residues_NNS in_IN the_DT fifth_JJ
+        and_CC seventh_JJ position_NN are_VBP predominantly_RB charged_VBN or_CC polar_JJ ._.
+        This_DT pattern_NN can_MD be_VB used_VBN by_IN computational_NN methods_NNS to_TO
+        predict_VB coiled-coil_JJ domains_NNS in_IN amino_JJ acid_NN sequences_NNS [_NN 2_CD 3_CD ]_NN
+        ._.
+        Coiled-coil_NNP proteins_NNS can_MD be_VB grouped_VBN into_IN two_CD general_JJ
+        classes_NNS ._. The_DT first_JJ class_NN is_VBZ comprised_VBN of_IN short_JJ coiled-coil_JJ
+        domains_NNS of_IN six_CD or_CC seven_CD heptad_NN repeats_VBZ ,_, also_RB called_VBN leucine_NN
+        zippers_NNS ._. They_PRP are_VBP frequently_RB found_VBN as_IN homo-_NN and_CC
+        hetero-dimerization_JJ domains_NNS in_IN transcription_NN factors_NNS (_( e_SYM ._. g_SYM ._.
+        [_NN 4_CD ]_NN )_) ._. The_DT second_JJ class_NN is_VBZ defined_VBN by_IN long_JJ coiled-coil_JJ
+        domains_NNS of_IN several_JJ hundred_CD amino_JJ acids_NNS ,_, which_WDT are_VBP found_VBN in_IN
+        a_DT variety_NN of_IN proteins_NNS involved_VBN in_IN structuring_VBG cellular_JJ
+        processes_VBZ [_NN 1_CD ]_NN ._.
+        One_CD of_IN the_DT three_CD main_JJ classes_NNS of_IN cytoskeletal_NN proteins_NNS ,_,
+        the_DT intermediate-filament_JJ proteins_NNS ,_, represents_VBZ a_DT
+        well-characterized_JJ group_NN of_IN coiled-coil_JJ proteins_NNS ._. A_DT
+        subgroup_NN of_IN intermediate-filament_JJ proteins_NNS are_VBP the_DT nuclear_JJ
+        lamins_NNS ,_, which_WDT are_VBP involved_VBN in_IN attaching_VBG chromatin_NN to_TO the_DT
+        nuclear_JJ envelope_NN and_CC have_VBP recently_RB been_VBN implicated_VBN in_IN
+        inherited_VBN human_JJ diseases_NNS [_NN 5_CD 6_CD ]_NN ._. Besides_IN structural_JJ
+        proteins_NNS of_IN the_DT cytoskeleton_NN ,_, the_DT motor_NN proteins_NNS that_WDT
+        interact_NN with_IN them_PRP also_RB contain_VBP coiled-coil_JJ motifs_NNS ._. Myosin_NNP ,_,
+        the_DT actin_NN motor_NN protein_NN ,_, has_VBZ an_DT extended_VBN coiled-coil_JJ domain_NN
+        necessary_JJ for_IN the_DT assembly_NN of_IN the_DT muscle_NN thick_JJ filaments_NNS [_NN
+        7_CD ]_NN ._. Kinesin_NNP and_CC dynein_NN ,_, two_CD microtubule_NN motor_NN proteins_NNS ,_,
+        also_RB contain_VB coiled-coil_JJ domains_NNS [_NN 8_CD 9_CD ]_NN ._.
+        The_DT coiled-coil_JJ motif_NN has_VBZ also_RB been_VBN identified_VBN in_IN a_DT
+        variety_NN of_IN proteins_NNS associated_VBN with_IN centromeres_NNS ,_,
+        centrosomes_NNS ,_, the_DT nuclear_JJ matrix_NN ,_, and_CC chromatin_NN [_NN 10_CD 11_CD 12_CD
+        13_CD 14_CD ]_NN ._. TPR_NNP ,_, a_DT protein_NN associated_VBN with_IN the_DT inner_JJ
+        filaments_NNS of_IN the_DT nuclear_JJ pore_NN complex_NN is_VBZ an_DT extended_VBN
+        coiled-coil_JJ protein_NN [_NN 15_CD ]_NN ._. The_DT filamentous_JJ structures_NNS
+        associated_VBN with_IN both_DT the_DT outer_JJ and_CC inner_JJ surface_NN of_IN the_DT
+        nuclear_JJ pore_NN complex_JJ suggest_VBP that_IN additional_JJ unknown_JJ
+        coiled-coil_JJ proteins_NNS might_MD be_VB involved_VBN in_IN its_PRP$ assembly_NN ._.
+        Several_JJ large_JJ coiled-coil_JJ proteins_NNS were_VBD also_RB found_VBN
+        associated_VBN with_IN the_DT cytoplasmic_JJ surface_NN of_IN the_DT Golgi_NNP
+        apparatus_NN ,_, and_CC two_CD of_IN them_PRP have_VBP been_VBN shown_VBN to_TO function_VB in_IN
+        the_DT docking_VBG of_IN vesicles_NNS to_TO the_DT Golgi_NNP cisternae_NN [_NN 16_CD 17_CD 18_CD ]_NN
+        ._. AKAPs_NNP are_VBP adapter_NN proteins_NNS that_WDT attach_VBP protein_NN kinase_NN PKA_NNP
+        pathways_NNS to_TO cytoskeletal_NN elements_NNS ._. At_IN least_JJS one_CD AKAP_NNP ,_, AKAP_NNP
+        450_CD is_VBZ a_DT large_JJ coiled-coil_JJ protein_NN attaching_VBG PKA_NNP to_TO the_DT
+        centrosome_NN [_NN 19_CD ]_NN ._.
+        Despite_IN the_DT multitude_NN of_IN cellular_JJ functions_NNS in_IN which_WDT
+        coiled-coil_JJ proteins_NNS participate_VBP ,_, the_DT general_JJ theme_NN is_VBZ the_DT
+        association_NN of_IN proteins_NNS with_IN the_DT solid-state_JJ components_NNS of_IN
+        the_DT cell_NN ._. In_IN some_DT cases_NNS ,_, as_IN in_IN the_DT attachment_NN of_IN PKA_NNP ,_, this_DT
+        function_NN appears_VBZ to_TO be_VB crucial_JJ for_IN the_DT spatial_NN regulation_NN
+        of_IN signal_NN transduction_NN ._. Importantly_NNP ,_, mutations_NNS in_IN
+        individual_JJ coiled-coil_JJ proteins_NNS lead_VBP to_TO specific_JJ
+        developmental_NN or_CC even_RB behavioral_JJ phenotypes_NNS ._. The_DT Drosophila_NNP
+        mutations_NNS 
+        Mushroom_NNP body_NN defect_NN (_( a_DT gene_NN involved_VBN
+        in_IN the_DT proliferation_NN of_IN neuronal_NN precursor_NN cells_NNS )_) and_CC 
+        quick-to-court_JJ (_( a_DT mutation_NN that_IN
+        causes_NNS elevated_VBD sexual_JJ behavior_NN )_) lie_VB in_IN two_CD
+        tissue-specifically_JJ expressed_VBD coiled-coil_JJ proteins_NNS of_IN
+        unknown_JJ function_NN [_NN 20_CD 21_CD ]_NN ._. In_IN humans_NNS and_CC mouse_NN models_NNS ,_,
+        specific_JJ point_NN mutations_NNS in_IN nuclear_JJ lamins_NNS are_VBP the_DT cause_NN
+        for_IN autosomal_NN Emery-_NNP Dreifuss_NNP muscular_JJ dystrophy_NN [_NN 22_CD 23_CD ]_NN
+        ._.
+        In_IN contrast_NN to_TO animals_NNS and_CC yeast_NN ,_, only_RB a_DT small_JJ number_NN of_IN
+        long_JJ coiled-coil_JJ proteins_NNS have_VBP been_VBN identified_VBN from_IN plants_NNS ._.
+        MFP_NNP 1_CD contains_VBZ an_DT extended_VBN coiled-coil_JJ domain_NN and_CC is_VBZ located_VBN
+        at_IN the_DT nuclear_JJ periphery_NN of_IN tobacco_NN suspension_NN culture_NN
+        cells_NNS [_NN 24_CD 25_CD ]_NN ._. The_DT carrot_NN protein_NN NMCP_NNP 1_CD is_VBZ also_RB located_VBN
+        at_IN the_DT nuclear_JJ rim_NN and_CC has_VBZ been_VBN shown_VBN to_TO migrate_VB to_TO the_DT
+        spindle_NN poles_NNS in_IN dividing_VBG carrot_NN suspension_NN culture_NN cells_NNS [_NN
+        26_CD 27_CD ]_NN ._. The_DT cellular_JJ function_NN of_IN these_DT plant_NN proteins_NNS is_VBZ
+        not_RB known_VBN ._.
+        Several_JJ candidates_NNS for_IN myosins_NNS and_CC kinesins_NNS have_VBP been_VBN
+        identified_VBN from_IN plants_NNS and_CC their_PRP$ function_NN as_IN motor_NN proteins_NNS
+        is_VBZ under_IN investigation_NN [_NN 28_CD 29_CD ]_NN ._. Besides_IN these_DT few_JJ
+        examples_NNS ,_, nothing_NN is_VBZ presently_RB known_VBN about_IN plant_NN long_JJ
+        coiled-coils_JJ and_CC their_PRP$ potential_JJ function_NN in_IN anchoring_VBG and_CC
+        structuring_NN of_IN different_JJ cellular_JJ events_NNS ._.
+        In_IN the_DT early_JJ nineties_NNS ,_, several_JJ groups_NNS reported_VBD
+        lamin-like_JJ proteins_NNS in_IN different_JJ plant_NN species_NNS [_NN 30_CD 31_CD 32_CD ]_NN
+        ._. A_DT purification_NN protocol_NN adapted_VBN from_IN animal_NN lamins_NNS and_CC
+        applied_VBN to_TO pea_NN nuclei_NN was_VBD used_VBN to_TO purify_NN four_CD proteins_NNS
+        between_IN 49_CD and_CC 66_CD kD_NN [_NN 31_CD ]_NN ._. These_DT proteins_NNS were_VBD
+        recognized_VBN by_IN antibodies_NNS against_IN mammalian_JJ intermediate_JJ
+        filament_NN proteins_NNS ,_, and_CC by_IN antibodies_NNS against_IN a_DT peptide_NN
+        derived_VBN from_IN lamin_NN B_NNP ._. By_IN immunofluorescence_NN and_CC immunogold_NN
+        labeling_VBG ,_, these_DT antigens_NNS were_VBD located_VBN mostly_RB in_IN the_DT
+        internal_JJ nuclear_JJ matrix_NN ,_, and_CC not_RB predominantly_RB at_IN the_DT
+        nuclear_JJ rim_NN ._. Similar_JJ results_NNS were_VBD obtained_VBN by_IN other_JJ
+        investigators_NNS [_NN 32_CD ]_NN ._. Although_IN these_DT early_JJ reports_NNS were_VBD
+        promising_VBG ,_, no_DT lamin_NN ortholog_NN has_VBZ been_VBN identified_VBN
+        molecularly_RB from_IN plants_NNS ._. In_IN a_DT recent_JJ search_NN of_IN all_DT publicly_RB
+        available_JJ plant_NN sequences_NNS ,_, including_VBG the_DT full_JJ 
+        Arabidopsis_NNP genome_NN ,_, no_DT homologs_NNS of_IN
+        lamins_NNS were_VBD found_VBN (_( [_NN 33_CD ]_NN and_CC Meier_NNP ,_, unpublished_JJ results_NNS )_) ._.
+        Similarly_RB ,_, despite_IN earlier_JJR reports_NNS of_IN lamin-like_JJ proteins_NNS
+        in_IN yeast_NN [_NN 34_CD ]_NN ,_, the_DT fully_RB sequenced_JJ 
+        S_NNP ._. cerevisiae_NN genome_NN [_NN 35_CD ]_NN also_RB
+        contains_VBZ no_DT lamin_NN genes_NNS ._. It_PRP is_VBZ therefore_RB likely_JJ that_IN
+        non-animal_JJ eukaryotes_NNS have_VBP a_DT distinct_JJ set_NN of_IN nuclear_JJ
+        envelope_NN proteins_NNS that_WDT functionally_RB replace_VB the_DT lamins_NNS ._.
+        Here_RB ,_, we_PRP have_VBP used_VBN a_DT tomato_NN protein_NN containing_VBG long_JJ
+        coiled-coil_JJ domains_NNS to_TO search_VB the_DT Arabidopsis_NNP genome_NN for_IN
+        related_VBN sequences_NNS ._. We_PRP have_VBP identified_VBN seven_CD novel_NN
+        Arabidopsis_NNP proteins_NNS with_IN extended_VBN coiled-coil_JJ domains_NNS ,_,
+        which_WDT form_VBP a_DT protein_NN family_NN distinct_JJ from_IN other_JJ Arabidopsis_NNP
+        long_JJ coiled-coil_JJ proteins_NNS ._. They_PRP are_VBP characterized_VBN by_IN four_CD
+        novel_NN motifs_NNS ,_, which_WDT are_VBP highly_RB conserved_JJ in_IN sequence_NN and_CC
+        position_NN ,_, and_CC which_WDT were_VBD not_RB found_VBN in_IN proteins_NNS outside_IN of_IN
+        this_DT family_NN ._. In_IN addition_NN ,_, a_DT rice_NN homolog_NN was_VBD identified_VBN ,_,
+        indicating_VBG conservation_NN between_IN dicots_NNS and_CC monocots_NNS ._.
+      
+      
+        Results_NNS
+        
+          LeFPP_NNP ,_, a_DT novel_NN plant_NN coiled-coil_JJ protein_NN
+          A_DT yeast_NN two-hybrid_JJ screen_NN was_VBD performed_VBN to_TO identify_VB
+          interaction_NN partners_NNS of_IN the_DT tomato_NN nuclear_JJ
+          envelope-associated_JJ protein_NN LeMAF_NNP 1_CD [_NN 36_CD ]_NN ._. A_DT prey_NN
+          plasmid_NN (_( pAD-LeFPP_JJ )_) was_VBD identified_VBN that_WDT led_VBD to_TO activation_NN
+          of_IN the_DT two_CD reporter_NN genes_NNS 
+          HIS_PRP$ and_CC 
+          LacZ_NNP after_IN retransformation_NN with_IN
+          the_DT pBD-LeMAF_JJ 1_CD bait_NN ._. We_PRP tested_VBD the_DT specificity_NN of_IN this_DT
+          interaction_NN by_IN co-transforming_JJ pAD-LeFPP_JJ with_IN two_CD
+          additional_JJ bait_NN plasmids_NNS ,_, pBD-AtMAF_JJ 1_CD and_CC pBD-AtRanGAP_JJ 1_CD ._.
+          AtMAF_NNP 1_CD is_VBZ one_CD of_IN three_CD Arabidopsis_NNP homologs_NNS of_IN LeMAF_NNP 1_CD
+          (_( Patel_NNP and_CC Meier_NNP ,_, unpublished_JJ results_NNS )_) ,_, and_CC has_VBZ 45_CD %_NN amino_JJ
+          acid_NN identity_NN with_IN LeMAF_NNP 1_CD ._. AtRanGAP_NNP 1_CD is_VBZ one_CD of_IN the_DT two_CD
+          Arabidopsis_NNP Ran_NNP GTPase_NNP activating_VBG proteins_NNS ._. Its_PRP$
+          N-_NNP terminus_JJ has_VBZ 28_CD %_NN amino_JJ acid_NN identity_NN with_IN LeMAF_NNP 1_CD and_CC
+          30_CD %_NN with_IN AtMAF_NNP 1_CD (_( Fig_NNP ._. 1_LS C_NNP ;_: [_NN 33_CD 37_CD ]_NN )_) ._. Fig_NNP ._. 1_LS Ashows_NNP that_IN
+          pAD-LeFPP_JJ leads_VBZ to_TO activation_NN of_IN the_DT 
+          HIS_PRP$ gene_NN in_IN combination_NN with_IN
+          pBD-LeMAF_JJ 1_CD (_( sector_NN a_DT )_) and_CC with_IN pBD-AtMAF_JJ 1_CD (_( sector_NN b_SYM )_) ,_, but_CC
+          not_RB with_IN pBDAtRanGAP_NN 1_CD (_( sector_NN c_SYM )_) or_CC the_DT binding_JJ domain_NN
+          vector_NN pBD-GAL_JJ 4_CD alone_RB (_( sector_NN d_SYM )_) ._. This_DT demonstrates_VBZ that_IN
+          the_DT observed_VBN interaction_NN is_VBZ specific_JJ for_IN MAF_NNP 1_CD -_: like_IN
+          proteins_NNS ._.
+          Fig_NNP ._. 1_LS Bshows_NNP the_DT quantification_NN of_IN β-_NN Galactosidase_NNP
+          activity_NN in_IN the_DT pBD-LeMAF_JJ 1_CD /_NN pAD-LeFPP_JJ strain_NN ._. Lanes_NNP one_CD
+          and_CC two_CD are_VBP the_DT positive_JJ and_CC negative_JJ control_NN provided_VBN
+          with_IN the_DT kit_NN ,_, respectively_RB ,_, lane_NN three_CD shows_VBZ the_DT activity_NN
+          of_IN the_DT pBD-LeMAF_JJ 1_CD /_NN pAD-LeFPP_JJ strain_NN and_CC lane_NN 4_CD the_DT
+          activity_NN of_IN the_DT pBD-GAL_JJ 4_CD /_NN pAD-LeFFP_JJ strain_NN ._. Although_IN yeast_NN
+          two-hybrid_JJ interactions_NNS can_MD not_RB be_VB easily_RB quantified_VBN ,_, the_DT
+          very_RB high_JJ level_NN of_IN β-_NN Galactosidase_NNP expressed_VBN by_IN the_DT
+          pBD-LeMAF_JJ 1_CD /_NN pAD-LeFPP_JJ stain_VB suggests_VBZ a_DT comparably_RB strong_JJ
+          interaction_NN in_IN the_DT yeast_NN two-hybrid_JJ screen_NN ._.
+          The_DT 1927_CD bp_NN pAD-LeFPP_JJ cDNA_NN was_VBD sequenced_JJ and_CC was_VBD shown_VBN
+          to_TO contain_VB an_DT uninterrupted_JJ open_JJ reading_NN frame_NN in_IN frame_NN
+          with_IN the_DT GAL_NNP 4_CD activation_NN domain_NN ._. The_DT conceptual_JJ
+          translation_NN of_IN this_DT sequence_NN leads_VBZ to_TO a_DT protein_NN of_IN 582_CD
+          amino_JJ acids_NNS (_( aa_NN )_) with_IN a_DT calculated_VBN molecular_JJ weight_NN of_IN
+          64_CD ._. 4_LS kDa_NN and_CC a_DT pI_NN of_IN 4_CD ._. 7_CD ._. The_DT first_JJ methionine_NN is_VBZ at_IN
+          position_NN 71_CD ,_, and_CC does_VBZ not_RB have_VB a_DT plant_NN start_NN ATG_NNP
+          consensus_NN sequence_NN [_NN 38_CD ]_NN ,_, suggesting_VBG that_IN the_DT cDNA_NN is_VBZ
+          not_RB full_JJ length_NN ._.
+          A_DT BLAST_NN search_NN with_IN the_DT pAD-LeFPP_JJ open_JJ reading_NN frame_NN
+          indicated_VBD that_IN it_PRP represents_VBZ a_DT novel_NN protein_NN with_IN weak_JJ
+          similarity_NN to_TO filament-like_JJ proteins_NNS from_IN animals_NNS and_CC
+          yeast_NN (_( see_VB below_IN )_) ._. Secondary_JJ structure_NN prediction_NN
+          algorithms_NNS showed_VBD that_IN it_PRP is_VBZ organized_VBN almost_RB entirely_RB in_IN
+          alpha-helical_JJ domains_NNS and_CC contains_VBZ extensive_JJ stretches_NNS of_IN
+          coiled-coil_JJ domains_NNS (_( Fig_NNP ._. 2_LS Aand_NNP Fig_NNP 3_LS )_) ._. The_DT protein_NN was_VBD
+          named_VBN LeFPP_NNP for_IN tomato_NN filament-like_JJ plant_NN protein_NN ._. RNA_NNP
+          blot_NN analysis_NN showed_VBD a_DT single_JJ species_NNS of_IN mRNA_NN of_IN ca_MD ._. 2_CD ._. 4_CD
+          kb_NN ._. It_PRP is_VBZ present_JJ in_IN tomato_NN leaves_VBZ ,_, fruits_NNS ,_, flowers_NNS ,_,
+          light-grown_JJ seedlings_NNS ,_, and_CC dark-grown_JJ seedlings_NNS (_( Fig_NNP ._.
+          2_LS B_NNP )_) ._.
+        
+        
+          A_DT family_NN of_IN LeFPP-like_NNP proteins_NNS in_IN
+          Arabidopsis_NNP
+          A_DT BLAST_NN search_NN was_VBD performed_VBN with_IN the_DT LeFPP_NNP amino_JJ acid_NN
+          and_CC DNA_NNP sequence_NN ._. In_IN a_DT protein_NN BLAST_NN ,_, sequences_NNS with_IN
+          highest_JJS scores_NNS represented_VBD a_DT number_NN of_IN uncharacterized_JJ
+          open_JJ reading_NN frames_NNS in_IN the_DT Arabidopsis_NNP genome_NN ,_, followed_VBN
+          by_IN sequences_NNS for_IN animal_NN filament-like_JJ proteins_NNS such_JJ as_IN
+          myosin_NN ,_, kinesin_NN ,_, ankyrin_NN ,_, etc_FW ._. While_IN the_DT e-values_JJ for_IN the_DT
+          Arabidopsis_NNP ORFs_NNP were_VBD between_IN 2_CD e-_NN 56_CD and_CC 1_CD e-_NN 16_CD ,_, the_DT best_JJS
+          e-value_JJ for_IN a_DT non-plant_JJ sequence_NN was_VBD 0_CD ._. 003_CD for_IN an_DT unknown_JJ
+          human_JJ open_JJ reading_NN frame_NN ._. The_DT Arabidopsis_NNP "_'' hits_NNS "_''
+          represented_VBD seven_CD unique_JJ genes_NNS ,_, some_DT of_IN which_WDT had_VBD
+          repeated_VBN entries_NNS in_IN GenBank_NNP (_( see_VB Table_NNP 1_LS )_) ._.
+          A_DT translated_VBN BLAST_NN search_NN identified_VBD one_CD additional_JJ
+          "_'' hit_VBD "_'' in_IN the_DT rice_NN BAC_NNP H_NN 0212_CD B_NNP 02_CD of_IN chromosome_NN 4_CD (_( GenBank_NNP
+          accession_NN number_NN AL_NNP 442007_CD )_) ._. The_DT "_'' hit_VBD "_'' lay_VB between_IN the_DT
+          annotated_JJ open_JJ reading_NN frames_NNS H_NN 0212_CD B_NNP 02_CD ._. 17_CD and_CC H_NN 0212_CD B_NNP 02_CD ._. 18_CD
+          in_IN a_DT region_NN of_IN DNA_NNP not_RB predicted_VBD to_TO have_VB coding_VBG capacity_NN ._.
+          However_RB ,_, running_VBG GenScan_NNP [_NN 39_CD ]_NN on_IN this_DT part_NN of_IN the_DT BAC_NNP ,_,
+          an_DT open_JJ reading_NN frame_NN of_IN 1074_CD amino_JJ acids_NNS was_VBD identified_VBN
+          on_IN the_DT opposite_JJ strand_NN that_WDT contained_VBD the_DT "_'' hit_VBD "_'' ._. The_DT
+          predicted_VBD coding_VBG region_NN begins_VBZ at_IN position_NN 114_CD ,_, 922_CD of_IN the_DT
+          H_NN 0212_CD B_NNP 02_CD DNA_NNP sequence_NN ,_, ends_VBZ at_IN position_NN 107_CD ,_, 317_CD ,_, and_CC
+          contains_VBZ seven_CD predicted_VBN introns_NNS ._. This_DT rice_NN open_JJ reading_NN
+          frame_NN was_VBD named_VBN OsFPP_NNP and_CC was_VBD included_VBN in_IN the_DT sequence_NN
+          and_CC structural_JJ analysis_NN shown_VBN in_IN Fig_NNP ._. 3_LS and_CC Fig_NNP ._. 4_LS ._.
+          Fig_NNP ._. 3_LS shows_VBZ a_DT comparison_NN of_IN the_DT secondary_JJ structure_NN of_IN
+          LeFPP_NNP with_IN the_DT seven_CD Arabidopsis_NNP ORFs_NNP and_CC the_DT rice_NN ORF_NNP ._.
+          All_DT open_JJ reading_NN frames_NNS are_VBP characterized_VBN by_IN extended_VBN
+          alpha-helical_JJ and_CC coiled-coil_JJ domains_NNS ._. The_DT extension_NN of_IN
+          the_DT coiled-coil_JJ domains_NNS shown_VBN in_IN Fig_NNP ._. 3_LS is_VBZ derived_VBN from_IN
+          the_DT "_'' coiled-coil_JJ "_'' analysis_NN software_NN in_IN the_DT DNASTAR_NNP
+          sequence_NN analysis_NN software_NN package_NN ,_, and_CC was_VBD confirmed_VBN in_IN
+          all_DT cases_NNS by_IN the_DT MultiCoil_NNP algorithm_NN [_NN 2_CD ]_NN ._. In_IN addition_NN ,_,
+          MultiCoil_NNP predicted_VBD that_IN all_DT coiled-coil_JJ regions_NNS have_VBP a_DT
+          high_JJ probability_NN to_TO form_VB dimers_NNS and_CC a_DT low_JJ probability_NN to_TO
+          form_VB trimers_NNS ._. The_DT seven_CD Arabidopsis_NNP ORFs_NNP were_VBD named_VBN
+          AtFPP_NNP 1_CD -_: AtFPP_NNP 7_CD (_( Fig_NNP ._. 3_LS and_CC Table_NNP 1_LS )_) ._. They_PRP fall_VBP into_IN two_CD
+          groups_NNS according_VBG to_TO size_NN and_CC extension_NN of_IN coiled-coil_JJ
+          domains_NNS ._. AtFPP_NNP 1_CD ,_, AtFPP_NNP 2_CD ,_, and_CC AtFPP_NNP 3_CD are_VBP shorter_JJR (_( 603_CD aa_NN
+          to_TO 779_CD aa_NN )_) and_CC contain_VB two_CD extended_VBN coiled-coil_JJ domains_NNS
+          connected_VBN by_IN a_DT short_JJ non-coiled-coil_JJ linker_NN ._. AtFPP_NNP 4_CD to_TO
+          AtFPP_NNP 7_CD are_VBP longer_JJR (_( 866_CD aa_NN to_TO 1054_CD aa_NN )_) and_CC contain_VB a_DT
+          longer_RBR N-_NNP terminal_NN and_CC a_DT shorter_JJR C-_NNP terminal_NN coiled-coil_JJ
+          domain_NN ,_, separated_VBN by_IN a_DT long_JJ non-coiled-coil_JJ linker_NN domain_NN
+          (_( Fig_NNP ._. 3_LS )_) ._. The_DT rice_NN ORF_NNP (_( OsFPP_NNP )_) resembles_VBZ structurally_RB
+          more_JJR the_DT second_JJ group_NN of_IN Arabidopsis_NNP ORFs_NNP ,_, with_IN two_CD
+          shorter_JJR stretches_NNS of_IN coiled-coil_JJ domains_NNS separated_VBN by_IN a_DT
+          long_JJ linker_NN ._.
+        
+        
+          Novel_NNP sequence_NN motifs_NNS define_VB a_DT subfamily_RB of_IN plant_NN
+          coiled-coil_JJ proteins_NNS
+          Alignment_NNP of_IN all_DT nine_CD amino_JJ acid_NN sequences_NNS showed_VBD the_DT
+          presence_NN of_IN four_CD novel_NN sequence_NN motifs_NNS ,_, which_WDT are_VBP 100_CD %_NN
+          conserved_JJ between_IN the_DT tomato_NN and_CC Arabidopsis_NNP proteins_NNS
+          (_( Fig_NNP ._. 4_LS A_DT )_) ._. Motifs_NNP II_NNP ,_, III_NNP ,_, and_CC IV_NNP are_VBP also_RB 100_CD %_NN conserved_JJ
+          in_IN OsFPP_NNP ,_, while_IN motif_NN I_PRP is_VBZ present_JJ ,_, but_CC slightly_RB less_RBR
+          conserved_JJ in_IN the_DT monocot_NN sequence_NN ._. Their_PRP$ location_NN in_IN each_DT
+          protein_NN is_VBZ indicated_VBN in_IN Fig_NNP ._. 3_LS ._. Their_PRP$ position_NN with_IN
+          respect_NN to_TO the_DT arrangement_NN of_IN the_DT coiled-coil_JJ domains_NNS is_VBZ
+          strikingly_RB conserved_JJ ,_, despite_IN differences_NNS in_IN spacing_VBG
+          between_IN the_DT four_CD motifs_NNS due_JJ to_TO the_DT different_JJ length_NN of_IN
+          the_DT proteins_NNS and_CC the_DT coiled-coil_JJ domains_NNS ._.
+          Motifs_NNP I_PRP and_CC II_NNP always_RB correlate_VBP with_IN the_DT N-_NNP terminal_NN
+          cluster_NN of_IN coiled-coil_JJ domains_NNS ,_, with_IN motif_NN I_PRP being_VBG
+          located_VBN at_IN the_DT beginning_NN and_CC motif_NN II_NNP at_IN the_DT end_NN of_IN this_DT
+          cluster_NN ._. Motif_NN III_NNP is_VBZ always_RB located_VBN in_IN the_DT linker_NN
+          between_IN the_DT N-_NNP terminal_NN and_CC C-_NNP terminal_NN coiled-coil_JJ
+          domains_NNS ._. Motif_NN IV_NNP is_VBZ always_RB located_VBN at_IN the_DT very_JJ end_NN of_IN
+          the_DT most_JJS C-_NNP terminal_NN coiled-coil_JJ domain_NN ._. This_DT positioning_NN
+          is_VBZ conserved_JJ even_RB in_IN the_DT rice_NN sequence_NN ,_, where_WRB the_DT
+          C-_NNP terminal_NN coiled-coil_JJ domain_NN is_VBZ extremely_RB short_JJ (_( Fig_NNP ._.
+          3_LS )_) ._.
+          The_DT amino_JJ acid_NN identities_NNS between_IN the_DT eight_CD dicot_NN
+          proteins_NNS are_VBP in_IN the_DT range_NN of_IN 20_CD %_NN to_TO 50_CD %_NN (_( Fig_NNP ._. 4_LS B_NNP )_) ,_, with_IN
+          the_DT rice_NN sequence_NN showing_VBG between_IN 13_CD %_NN and_CC 26_CD %_NN identity_NN
+          with_IN the_DT dicot_NN sequences_NNS ._. The_DT Arabidopsis_NNP protein_NN with_IN
+          the_DT greatest_JJS similarity_NN to_TO LeFPP_NNP is_VBZ AtFPP_NNP 1_CD (_( 40_CD %_NN
+          identity_NN )_) ._.
+          Table_NNP 1_CD shows_VBZ an_DT overview_NN of_IN the_DT genomic_JJ organization_NN
+          of_IN 
+          AtFPP_NNP 1_CD through_IN 
+          AtFPP_NNP 7_CD and_CC of_IN the_DT features_NNS of_IN the_DT
+          predicted_VBN proteins_NNS ._. The_DT genes_NNS are_VBP not_RB clustered_VBN ,_, and_CC no_DT
+          two_CD of_IN them_PRP are_VBP arranged_VBN in_IN tandem_JJ array_NN ._. Except_IN for_IN
+          chromosome_NN 5_CD ,_, at_IN least_JJS one_CD member_NN of_IN this_DT gene_NN family_NN is_VBZ
+          present_JJ on_IN each_DT chromosome_NN ._. ESTs_NNP have_VBP been_VBN identified_VBN for_IN
+          all_DT genes_NNS ,_, indicating_VBG that_IN they_PRP are_VBP expressed_VBN (_( Table_NNP 1_LS )_) ._.
+          Consistent_NNP with_IN the_DT ubiquitous_JJ expression_NN pattern_NN found_VBD
+          for_IN 
+          LeFPP_NNP ,_, 
+          AtFPP_NNP expression_NN covers_VBZ a_DT variety_NN
+          of_IN tissues_NNS and_CC developmental_NN stages_NNS including_VBG shoots_NNS ,_,
+          hypocotyls_NNS ,_, roots_NNS ,_, and_CC siliques_NNS ._.
+          In_IN order_NN to_TO identify_VB more_RBR long_JJ coiled-coil_JJ proteins_NNS in_IN
+          the_DT Arabidopsis_NNP genome_NN ,_, the_DT complete_JJ list_NN of_IN annotated_JJ
+          ORFs_NNP was_VBD searched_VBD with_IN the_DT keyword_NN "_'' myosin_NN "_'' to_TO identify_VB
+          ORFs_NNP that_WDT had_VBD been_VBN annotated_JJ as_IN myosin-like_JJ proteins_NNS ._.
+          Because_IN of_IN the_DT long_JJ stretches_NNS of_IN conserved_JJ heptad_NN
+          repeats_VBZ ,_, BLAST_NN searches_NNS with_IN large_JJ coiled-coil_JJ proteins_NNS
+          usually_RB produce_VBP significant_JJ e-values_JJ with_IN at_IN least_JJS some_DT
+          of_IN the_DT large_JJ number_NN of_IN myosin_NN heavy-chain_JJ sequences_NNS in_IN
+          GenBank_NNP ,_, frequently_RB leading_VBG to_TO this_DT annotation_NN ._.
+          The_DT 40_CD ORFs_NNP identified_VBD this_DT way_NN were_VBD analyzed_VBN by_IN
+          MultiCoil_NNP and_CC 37_CD were_VBD found_VBN to_TO contain_VB coiled-coil_JJ
+          domains_NNS of_IN at_IN least_JJS 200_CD amino_JJ acids_NNS ._. 3_LS ORFs_NNP showed_VBD no_DT
+          coiled-coil_JJ motifs_NNS and_CC were_VBD discarded_VBN ._. AtFPP_NNP 2_CD and_CC AtFPP_NNP 5_CD
+          had_VBD been_VBN annotated_JJ as_IN "_'' myosin-like_JJ "_'' too_RB and_CC were_VBD
+          therefore_RB identified_VBN in_IN this_DT search_NN ._. They_PRP were_VBD discarded_VBN
+          to_TO avoid_VB duplication_NN ._. None_NN of_IN the_DT remaining_VBG 35_CD new_JJ
+          coiled-coil_JJ proteins_NNS contained_VBD any_DT of_IN the_DT conserved_JJ
+          motifs_NNS identified_VBN in_IN the_DT FPP_NNP family_NN ._.
+          The_DT 35_CD new_JJ sequences_NNS were_VBD aligned_VBN with_IN the_DT seven_CD AtFPP_NNP
+          sequences_NNS in_IN a_DT CLUSTAL_NNP analysis_NN ._. Fig_NNP ._. 5_LS shows_VBZ the_DT results_NNS
+          represented_VBD as_IN a_DT phylogenetic_JJ tree_NN ._. The_DT AtFPP_NNP family_NN
+          clearly_RB forms_VBZ a_DT family_NN of_IN sequences_NNS separate_JJ from_IN the_DT
+          other_JJ coiled-coil_JJ proteins_NNS (_( boxed_JJ in_IN Fig_NNP ._. 5_LS )_) ._. The_DT three_CD
+          "_'' short_JJ "_'' AtFPPs_NNP ,_, AtFPP_NNP 1_CD ,_, AtFPP_NNP 2_CD ,_, and_CC AtFPP_NNP 3_CD form_NN a_DT
+          sub-family_JJ ,_, as_IN do_VBP the_DT four_CD "_'' long_JJ "_'' AtFPPs_NNP AtFPP_NNP 4_CD ,_, AtFPP_NNP 5_CD ,_,
+          AtFPP_NNP 6_CD ,_, and_CC AtFPP_NNP 7_CD (_( see_VB Fig_NNP ._. 3_LS )_) ._. Interestingly_RB ,_, the_DT two_CD
+          most_RBS closely_RB related_VBN 
+          AtFPP_NNP genes_NNS ,_, 
+          AtFPP_NNP 1_CD and_CC 
+          AtFPP_NNP 2_CD are_VBP located_VBN in_IN comparable_JJ
+          positions_NNS on_IN two_CD duplicated_VBN segments_NNS of_IN chromosome_NN 1_CD ,_,
+          indicating_VBG that_IN they_PRP might_MD be_VB derived_VBN from_IN a_DT recent_JJ
+          duplication_NN event_NN ._.
+        
+      
+      
+        Discussion_NNP
+        A_DT novel_NN class_NN of_IN plant_NN coiled-coil_JJ proteins_NNS has_VBZ been_VBN
+        identified_VBN that_WDT are_VBP conserved_JJ in_IN dicots_NNS and_CC monocots_NNS ._. Seven_CD
+        members_NNS of_IN the_DT FPP_NNP protein_NN family_NN are_VBP present_JJ in_IN the_DT
+        Arabidopsis_NNP genome_NN ._. They_PRP are_VBP characterized_VBN by_IN the_DT presence_NN
+        of_IN two_CD clusters_NNS of_IN coiled-coil_JJ domains_NNS separated_VBN by_IN a_DT
+        linker_NN domain_NN of_IN variable_JJ size_NN ._. Four_CD highly_RB conserved_JJ
+        sequence_NN motifs_NNS were_VBD identified_VBN ,_, which_WDT are_VBP a_DT signature_NN
+        feature_NN of_IN this_DT protein_NN family_NN and_CC which_WDT are_VBP also_RB conserved_JJ
+        in_IN the_DT homologs_NNS LeFPP_NNP and_CC OsFPP_NNP from_IN tomato_NN and_CC rice_NN ,_,
+        respectively_RB ._. The_DT tomato_NN homolog_NN of_IN the_DT FPP_NNP family_NN binds_NNS in_IN
+        a_DT yeast_NN two-hybrid_JJ assay_NN to_TO a_DT nuclear_JJ envelope-associated_JJ
+        protein_NN ,_, indicating_VBG that_IN they_PRP might_MD function_VB in_IN nuclear_JJ
+        envelope_NN biology_NN ._.
+        Besides_IN the_DT presence_NN of_IN extended_VBN coiled-coil_JJ domains_NNS ,_,
+        the_DT FPP_NNP family_NN members_NNS have_VBP no_DT sequence_NN similarity_NN to_TO the_DT
+        vertebrate_NN lamins_NNS ._. They_PRP also_RB do_VBP not_RB show_VB significant_JJ
+        sequence_NN similarity_NN to_TO other_JJ vertebrate_NN nuclear_JJ
+        envelope-associated_JJ proteins_NNS such_JJ as_IN LAP_NNP 1_CD ,_, LAP_NNP 2_CD ,_, MAN_NNP 1_CD ,_, and_CC
+        emerin_NN (_( GenBank_NNP accession_NN numbers_NNS A_DT 55649_CD ,_, S_NNP 55255_CD ,_, Q_NNP 9_CD WU_NNP 40_CD ,_,
+        and_CC XP_NNP __NN 048410_CD ,_, respectively_RB )_) ._. None_NN of_IN these_DT proteins_NNS
+        appears_VBZ to_TO have_VB a_DT convincing_JJ ortholog_NN in_IN the_DT Arabidopsis_NNP
+        genome_NN (_( data_NNS not_RB shown_VBN )_) ,_, consistent_JJ with_IN the_DT hypothesis_NNS
+        that_IN the_DT composition_NN of_IN nuclear_JJ envelope-associated_JJ
+        proteins_NNS differs_VBZ significantly_RB between_IN the_DT plant_NN and_CC animal_NN
+        kingdom_NN ._.
+        Interestingly_RB ,_, a_DT recent_JJ report_NN about_IN the_DT protein_NN
+        composition_NN of_IN the_DT nuclear_JJ envelope_NN of_IN the_DT highly_RB divergent_JJ
+        eukaryote_NN 
+        Trypanosoma_NNP brucei_NN has_VBZ identified_VBN a_DT
+        coiled-coil_JJ nuclear_JJ envelope_NN protein_NN (_( TbNUP-_NNP 1_LS )_) in_IN this_DT
+        organism_NN that_WDT also_RB has_VBZ no_DT similarity_NN with_IN lamins_NNS [_NN 40_CD ]_NN ._.
+        TbNUP-_NNP 1_CD is_VBZ a_DT 350_CD kDa_NN protein_NN with_IN a_DT striking_JJ repeat_NN
+        structure_NN ._. Its_PRP$ full_JJ sequence_NN is_VBZ presently_RB not_RB known_VBN but_CC a_DT
+        partial_JJ open_JJ reading_NN frame_NN of_IN 268_CD amino_JJ acids_NNS has_VBZ been_VBN
+        constructed_VBN [_NN 40_CD ]_NN ._. The_DT near-perfect_JJ 144_CD amino_JJ acids_NNS
+        repeats_VBZ contain_VB two_CD coiled-coil_JJ domains_NNS each_DT ._. Pairwise_NNP
+        alignments_NNS of_IN TbNUP-_NNP 1_CD with_IN AtFPP_NNP 1_CD through_IN ATFPP_NNP 7_CD showed_VBD no_DT
+        significant_JJ sequence_NN similarities_NNS beyond_IN the_DT typical_JJ low_JJ
+        degree_NN of_IN similarity_NN generally_RB observed_VBD between_IN coiled-coil_JJ
+        proteins_NNS (_( data_NNS not_RB shown_VBN )_) ._. The_DT TbNUP-_NNP 1_CD open_JJ reading_NN frame_NN
+        was_VBD also_RB used_VBN for_IN a_DT BLAST_NN search_NN of_IN the_DT full_JJ Arabidopsis_NNP
+        genome_NN ._. Only_RB comparably_RB weak_JJ similarities_NNS with_IN other_JJ
+        "_'' myosin-like_JJ proteins_NNS "_'' were_VBD found_VBN ._.
+        The_DT four_CD conserved_JJ sequence_NN motifs_NNS identified_VBN in_IN the_DT FPP_NNP
+        family_NN appear_VBP to_TO be_VB unique_JJ to_TO this_DT group_NN of_IN coiled-coil_JJ
+        proteins_NNS and_CC are_VBP neither_DT shared_VBN by_IN other_JJ coiled-coil_JJ open_JJ
+        reading_NN frames_NNS present_JJ in_IN the_DT Arabidopsis_NNP genome_NN nor_CC by_IN
+        coiled-coil_JJ proteins_NNS such_JJ as_IN lamins_NNS from_IN other_JJ organisms_NNS ._.
+        Their_PRP$ role_NN in_IN the_DT structure_NN or_CC function_NN of_IN the_DT FPP_NNP proteins_NNS
+        is_VBZ presently_RB not_RB known_VBN ,_, but_CC their_PRP$ high_JJ degree_NN of_IN
+        conservation_NN in_IN the_DT tomato_NN and_CC rice_NN sequences_NNS imply_VBP that_IN
+        they_PRP are_VBP of_IN relevance_NN ._. Several_JJ functional_JJ small_JJ conserved_JJ
+        motifs_NNS have_VBP been_VBN identified_VBN in_IN other_JJ families_NNS of_IN long_JJ
+        coiled-coil_JJ proteins_NNS ._. The_DT nuclear_JJ lamins_NNS contain_VBP short_JJ ,_,
+        conserved_JJ sequences_NNS flanking_VBG the_DT lamin_NN rod_NN domain_NN ,_, which_WDT
+        are_VBP phosphorylated_JJ by_IN cdc_NN 2_CD kinase_NN [_NN 41_CD ]_NN ._. The_DT 90_CD amino_JJ
+        acid_NN PACT_NNP domain_NN ,_, which_WDT immediately_RB follows_VBZ the_DT coiled-coil_JJ
+        domain_NN of_IN the_DT related_VBN proteins_NNS pericentrin_NN and_CC AKAP_NNP 450_CD and_CC
+        two_CD uncharacterized_JJ coiled-coil_JJ open_JJ reading_NN frames_NNS from_IN
+        Drosophila_NNP and_CC 
+        Schizosaccharomyces_NNP pombe_NN ,_, confers_VBZ
+        centrosomal_NN localization_NN [_NN 19_CD ]_NN ._. A_DT conserved_JJ domain_NN of_IN ca_MD ._.
+        50_CD amino_JJ acids_NNS was_VBD found_VBN in_IN several_JJ Golgi-associated_NNP large_JJ
+        coiled-coil_JJ proteins_NNS ._. It_PRP has_VBZ been_VBN named_VBN GRIP_NNP domain_NN [_NN 42_CD ]_NN
+        or_CC Golgi_NNP localization_NN domain_NN (_( GLD_NNP )_) [_NN 18_CD ]_NN and_CC is_VBZ sufficient_JJ
+        to_TO specify_VB Golgi_NNP targeting_VBG in_IN mammalian_JJ cells_NNS ._. Nearly_RB all_DT
+        intermediate_JJ filament_NN proteins_NNS exhibit_NN a_DT highly_RB conserved_JJ
+        amino_JJ acid_NN motif_NN (_( YRKLLEGEE_NNP )_) at_IN the_DT C-_NNP terminal_NN end_NN of_IN their_PRP$
+        central_JJ alpha-helical_JJ rod_NN domain_NN which_WDT has_VBZ been_VBN shown_VBN to_TO be_VB
+        crucial_JJ for_IN the_DT formation_NN of_IN authentic_JJ tetrameric_JJ complexes_NNS
+        and_CC for_IN the_DT control_NN of_IN filament_NN width_NN [_NN 43_CD ]_NN ._.
+        No_DT sequences_NNS with_IN similarity_NN to_TO the_DT consensus_NN sequences_NNS
+        of_IN motifs_NNS II_NNP ,_, III_NNP ,_, and_CC IV_NNP were_VBD found_VBN in_IN the_DT databases_NNS that_WDT
+        might_MD indicate_VB their_PRP$ potential_JJ function_NN ._. However_RB ,_, a_DT
+        sequence_NN with_IN some_DT similarity_NN to_TO motif_NN I_PRP was_VBD identified_VBN in_IN
+        the_DT hemaglutinin-esterase_JJ fusion_NN glycoprotein_NN from_IN
+        influenza_NN virus_NN C_NNP (_( GenBank_NNP accession_NN number_NN S_NNP 07412_CD )_) ._.
+        Alignment_NNP of_IN this_DT sequence_NN (_( amino_JJ acids_NNS 39_CD to_TO 74_CD )_) with_IN the_DT
+        central_JJ conserved_JJ residues_NNS of_IN motif_NN I_PRP :_:
+        A--GWEK---E---LK--L------------R--H-D_NNP (_( -_: -_: indicating_VBG
+        non-conserved_JJ residues_NNS )_) shows_VBZ a_DT good_JJ match_NN of_IN identical_JJ and_CC
+        conserved_JJ amino_JJ acid_NN residues_NNS :_:
+        A--GFEK---D---LK--I---------R--H-E_NNP ._. The_DT fusion_NN
+        glycoproteins_NNS contain_VBP a_DT coiled-coil_JJ domain_NN and_CC are_VBP involved_VBN
+        in_IN fusing_NN the_DT viral_JJ envelope_NN with_IN the_DT host_NN cell_NN membrane_NN ._.
+        The_DT conformational_NN change_NN of_IN the_DT protein_NN necessary_JJ for_IN
+        membrane_NN fusion_NN is_VBZ driven_VBN by_IN ionic_JJ interactions_NNS between_IN
+        residues_NNS of_IN the_DT coiled-coil_JJ domain_NN ,_, and_CC Glu_NNP 74_CD ,_, the_DT last_JJ
+        amino_JJ acid_NN aligning_VBG to_TO motif_NN I_PRP ,_, is_VBZ involved_VBN in_IN this_DT process_NN
+        [_NN 1_CD ]_NN ._. In_IN light_NN of_IN their_PRP$ putative_JJ interaction_NN with_IN the_DT
+        nuclear_JJ envelope-associated_JJ protein_NN MAF_NNP 1_CD ,_, it_PRP will_MD be_VB
+        interesting_JJ to_TO investigate_VB if_IN FPPs_NNP are_VBP associated_VBN with_IN
+        membrane_NN systems_NNS of_IN the_DT plant_NN cell_NN ._.
+      
+      
+        Conclusions_NNP
+        A_DT family_NN of_IN novel_NN long_JJ coiled-coil_JJ proteins_NNS has_VBZ been_VBN
+        identified_VBN from_IN plants_NNS ._. They_PRP are_VBP characterized_VBN by_IN two_CD
+        clusters_NNS of_IN long_JJ coiled-coil_JJ domains_NNS separated_VBN by_IN a_DT
+        non-coiled-coil_JJ linker_NN and_CC by_IN four_CD novel_NN sequence_NN motifs_NNS ._.
+        Seven_CD members_NNS of_IN the_DT 
+        filament-like_JJ plant_NN protein_NN (_( 
+        FPP_NNP )_) family_NN are_VBP present_JJ in_IN the_DT
+        Arabidopsis_NNP genome_NN ,_, and_CC one_CD homolog_NN each_DT has_VBZ been_VBN
+        identified_VBN from_IN tomato_NN and_CC rice_NN ._. Thus_RB ,_, this_DT family_NN of_IN
+        proteins_NNS appears_VBZ to_TO be_VB conserved_JJ among_IN higher_JJR plants_NNS ,_, but_CC
+        we_PRP have_VBP not_RB found_VBN convincing_JJ homologs_NNS from_IN yeast_NN or_CC animals_NNS
+        by_IN sequence_NN similarity_NN searches_NNS ._. Tomato_NNP FPP_NNP was_VBD originally_RB
+        isolated_VBN in_IN a_DT yeast_NN two_CD hybrid_JJ screen_NN with_IN MAF_NNP 1_CD ,_, a_DT small_JJ
+        plant-specific_JJ protein_NN associated_VBN with_IN the_DT nuclear_JJ envelope_NN
+        [_NN 36_CD ]_NN ._. Because_IN the_DT full_JJ Arabidopsis_NNP genome_NN does_VBZ not_RB
+        appear_VB to_TO contain_VB genes_NNS for_IN lamins_NNS ,_, it_PRP is_VBZ of_IN particular_JJ
+        interest_NN to_TO investigate_VB which_WDT other_JJ long_JJ coiled-coil_JJ
+        proteins_NNS might_MD functionally_RB replace_VB lamins_NNS in_IN the_DT plant_NN
+        kingdom_NN ._. The_DT FPP_NNP family_NN represents_VBZ an_DT exciting_JJ group_NN of_IN
+        candidates_NNS for_IN such_JJ proteins_NNS ._.
+      
+      
+        Materials_NNS and_CC methods_NNS
+        
+          Yeast_NN two-hybrid_JJ screen_NN
+          Total_NNP RNA_NNP from_IN young_JJ tomato_NN leaves_VBZ (_( 
+          Lycopersicon_NNP esculentum_NN )_) was_VBD
+          isolated_VBN as_IN described_VBN by_IN Wanner_NNP and_CC Gruissem_NNP [_NN 44_CD ]_NN ._.
+          mRNA_NN was_VBD purified_JJ using_VBG the_DT mRNA_NN purification_NN kit_NN
+          (_( Pharmacia_NNP Biotech_NNP ,_, Piscataway_NNP ,_, NJ_NNP )_) ._. To_TO construct_VB the_DT
+          yeast_NN two-hybrid_JJ library_NN the_DT cDNA_NN synthesis_NN kit_NN ,_, the_DT
+          Gigapack_NNP III_NNP gold_NN packaging_NN extract_NN and_CC the_DT HybriZAP_NNP
+          two-hybrid_JJ predigested_JJ vector_NN kit_NN (_( all_DT Stratagene_NNP ,_, La_NNP
+          Jolla_NNP ,_, CA_NNP )_) were_VBD used_VBN according_VBG to_TO the_DT protocol_NN of_IN the_DT
+          manufacturer_NN ._. The_DT size_NN of_IN the_DT primary_JJ library_NN was_VBD
+          determined_VBN to_TO be_VB 1_CD ._. 5_CD ×_NN 10_CD 6_CD plaque_NN forming_VBG units_NNS ._. The_DT
+          complete_JJ cDNA_NN of_IN LeMAF_NNP 1_CD (_( GenBank_NNP accession_NN number_NN
+          AF_NNP 118113_CD )_) was_VBD cloned_VBN as_IN an_DT EcoRI_NNP /_NN XhoI_NNP fragment_NN between_IN
+          the_DT EcoRI_NNP and_CC SalI_NNP sites_NNS of_IN the_DT bait_NN vector_NN pBD-GAL_JJ 4_CD
+          (_( Statagene_NNP )_) ._. Approximately_RB one_CD million_CD primary_JJ
+          transformants_NNS were_VBD screened_VBD for_IN growth_NN on_IN histidine_NN
+          dropout_NN plates_NNS ._. All_DT steps_NNS of_IN the_DT library_NN screening_NN
+          including_VBG the_DT transformation_NN ,_, the_DT isolation_NN of_IN clones_NNS ,_,
+          and_CC the_DT verification_NN of_IN the_DT interactions_NNS ,_, and_CC the_DT
+          β-_NN Galactosidase_NNP assays_NNS were_VBD performed_VBN as_IN described_VBN by_IN the_DT
+          manufacturer_NN ._. pBD-AtRanGAP_JJ 1_CD [_NN 33_CD ]_NN and_CC pBD-AtMAF_JJ 1_CD were_VBD
+          both_DT constructed_VBN by_IN cloning_VBG an_DT EcoRI_NNP fragment_NN containing_VBG
+          the_DT complete_JJ open_JJ reading_NN frames_NNS into_IN the_DT EcoRI_NNP site_NN of_IN
+          pBD-GAL_JJ 4_CD ._. The_DT AtMAF_NNP 1_CD open_JJ reading_NN frame_NN was_VBD isolated_VBN by_IN
+          PCR_NNP from_IN Arabidopis_NNP genomic_JJ DNA_NNP using_VBG the_DT 5_CD '_POS primer_NN
+          5_CD '_POS -_: TCC_NNP ATG_NNP GCC_NNP GAA_NNP ACC_NNP GAA-_NNP 3_CD '_POS and_CC the_DT 3_CD '_POS primer_NN 5_CD '_POS -_: CTA_NNP
+          AGT_NNP TCA_NNP CTT_NNP CGA_NNP ACT_NNP GCT_NNP C-_NNP 3_CD '_POS ,_, which_WDT had_VBD been_VBN designed_VBN to_TO
+          match_VB the_DT Arabidopsis_NNP MAF_NNP 1_CD homolog_NN on_IN the_DT P_NN 1_CD clone_NN MGG_NNP 4_CD
+          of_IN chromosome_NN 5_CD (_( GenBank_NNP accession_NN number_NN AB_NNP 008267_CD )_) ._.
+        
+        
+          RNA_NNP isolation_NN and_CC RNA_NNP blotting_VBG
+          Total_NNP RNA_NNP from_IN tomato_NN leaves_VBZ (_( 5_CD -_: 15_CD mm_NN )_) ,_, fruits_NNS (_( 3_CD -_: 8_CD mm_NN
+          in_IN diameter_NN )_) ,_, whole_JJ flowers_NNS ,_, and_CC light-grown_JJ and_CC
+          dark-grown_JJ tomato_NN seedlings_NNS was_VBD isolated_VBN with_IN the_DT Trizol_NNP
+          Reagent_NNP from_IN Gibco_NNP BRL_NNP (_( Gaithersburg_NNP ,_, MD_NNP )_) ._. Total_NNP RNA_NNP (_( 20_CD
+          μg_NN each_DT )_) was_VBD separated_JJ on_IN a_DT formaldehyde_NN gel_NN ,_, blotted_JJ to_TO
+          a_DT nitrocellulose_NN membrane_NN ,_, and_CC hybridized_JJ with_IN a_DT
+          radioactively_RB labeled_VBN fragment_NN corresponding_JJ to_TO bp_NN 1140_CD -_:
+          1926_CD of_IN the_DT LeFPP_NNP cDNA_NN ,_, essentially_RB as_IN described_VBN by_IN [_NN 45_CD
+          ]_NN ._.
+        
+        
+          Database_NNP searches_NNS ,_, secondary_JJ structure_NN prediction_NN ,_,
+          and_CC sequence_NN comparison_NN
+          Sequences_NNP with_IN similarity_NN to_TO LeFPP_NNP were_VBD identified_VBN by_IN
+          conducting_VBG BLAST_NN (_( Basic_JJ Local_NNP Alignment_NNP Search_NNP Tool_NNP ;_: [_NN 46_CD
+          ]_NN )_) searches_NNS for_IN similarity_NN to_TO sequences_NNS contained_VBD in_IN
+          GenBank_NNP ._. GenBank_NNP data_NNS were_VBD accessed_JJ through_IN NCBI_NNP
+          http_NN :_: /_NN /_NN www_NN ._. ncbi_NN ._. nlm_NN ._. nih_NN ._. gov_NN /_NN ._. Arabidopsis_NNP genome_NN data_NNS
+          were_VBD accessed_JJ through_IN the_DT TAIR_NNP database_NN
+          http_NN :_: /_NN /_NN www_NN ._. arabidopsis_NNS ._. org_NN /_NN ._. Arabidopsis_NNP ESTs_NNP were_VBD
+          accessed_JJ through_IN the_DT TIGR_NNP 
+          Arabidopsis_NNP thaliana_NN database_NN
+          http_NN :_: /_NN /_NN www_NN ._. tigr_NN ._. org_NN /_NN tdb_NN /_NN e_SYM 2_CD k_NN 1_CD /_NN ath_NN 1_CD /_NN ._. Multiple_NNP sequence_NN
+          alignments_NNS were_VBD performed_VBN with_IN the_DT DNASTAR_NNP protein_NN
+          alignment_NN protocol_NN (_( DNASTAR_NNP ,_, Madison_NNP ,_, WI_NNP )_) using_VBG the_DT
+          CLUSTAL_NNP algorithm_NN ._. Parameters_NNP for_IN CLUSTAL_NNP alignments_NNS
+          were_VBD :_: Pairwise_NNP alignment_NN :_: Ktuple_NNP ,_, 1_CD ;_: gap_NN Penalty_NNP ,_, 3_CD ;_:
+          windows_NNS ,_, 5_CD ;_: diagonals_NNS saved_VBN ,_, 5_CD ._. Multiple_NNP alignment_NN :_: gap_NN
+          penalty_NN ,_, 10_CD ;_: gap_NN length_NN penalty_NN ,_, 10_CD ._. The_DT PAM_NNP 250_CD weight_NN
+          table_NN was_VBD used_VBN ._. Percent_NN identities_NNS and_CC phylogenetic_JJ
+          relationships_NNS were_VBD derived_VBN from_IN the_DT CLUSTAL_NNP output_NN using_VBG
+          the_DT MEGALIGN_NNP software_NN package_NN in_IN DNASTAR_NNP ._. The_DT secondary_JJ
+          structures_NNS of_IN the_DT proteins_NNS ,_, α-helical_JJ ,_, and_CC coiled-coil_JJ
+          regions_NNS were_VBD analyzed_VBN using_VBG DNASTAR_NNP PROTEAN_NNP software_NN and_CC
+          the_DT coiled-coil_JJ regions_NNS were_VBD confirmed_VBN with_IN the_DT MultiCoil_NNP
+          algorithm_NN [_NN 2_CD ]_NN ._. Coiled-coil_NNP proteins_NNS from_IN Arabidopsis_NNP
+          were_VBD identified_VBN by_IN searching_VBG the_DT lists_NNS of_IN complete-genome_JJ
+          ORF_NNP annotations_NNS
+          ftp_NN :_: /_NN /_NN ftp_NN ._. arabidopsis_NNS ._. org_NN /_NN home_NN /_NN tair_NN /_NN Genes_NNP /_NN ORF_NNP __NN annotationsfor_NN
+          the_DT keywords_NNS "_'' myosin_NN "_'' (_( 40_CD hits_NNS )_) and_CC "_'' coiled-coil_JJ "_'' (_( 0_CD
+          hits_NNS )_) ._. Arabidopsis_NNP ORFs_NNP for_IN CLUSTAL_NNP analysis_NN were_VBD
+          downloaded_JJ either_CC using_VBG their_PRP$ GenBank_NNP accession_NN numbers_NNS
+          or_CC ,_, if_IN not_RB yet_RB available_JJ ,_, by_IN searching_VBG the_DT TAIR_NNP database_NN
+          with_IN the_DT respective_JJ gene_NN name_NN ._.
+        
+      
+    
+  

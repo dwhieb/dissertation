@@ -1,0 +1,472 @@
+
+
+
+
+Towards_NNP a_DT General_NNP Postal_NNP Service_NNP Cost_NN Function_NNP *_NN
+Robert_NNP Cohen_NNP
+Postal_NNP Rate_NNP Commission_NNP
+Carla_NNP Pace_NNP
+Poste_NNP Italiane_NNP
+Antónia_NNP Rato_NNP
+CTT_NNP -_: Correios_NNP de_IN Portugal_NNP
+Matthew_NNP Robinson_NNP
+Postal_NNP Rate_NNP Commission_NNP
+Ricardo_NNP Santos_NNP
+CTT_NNP -_: Correios_NNP de_IN Portugal_NNP
+Gennaro_NNP Scarfiglieri_NNP
+Poste_NNP Italiane_NNP
+Vincenzo_NNP Visco_NNP Comandini_NNP
+Poste_NNP Italiane_NNP
+John_NNP Waller_NNP
+Postal_NNP Rate_NNP Commission_NNP
+Spyros_NNP Xenakis_NNP
+Postal_NNP Rate_NNP Commission_NNP
+*_NN The_DT views_NNS expressed_VBD in_IN this_DT paper_NN are_VBP those_DT of_IN the_DT authors_NNS and_CC
+do_VBP not_RB necessarilyrepresent_NN the_DT opinions_NNS of_IN CTT_NNP -_: Correios_NNP de_IN
+Portugal_NNP ,_, Poste_NNP Italiane_NNP or_CC the_DT Postal_NNP RateCommission_NNP ._.
+
+1_LS ._. INTRODUCTION_NNP
+Mailhandling_NNP activities_NNS in_IN the_DT posts_NNS of_IN industrial_JJ countries_NNS are_VBP
+remarkably_RB alike_RB ._. Each_DT of_IN the_DT major_JJ functions_NNS (_( delivery_NN ,_, mail_NN
+processing_NN ,_, transportation_NN ,_, and_CC window_NN service_NN )_) is_VBZ conducted_VBN using_VBG
+similar_JJ methods_NNS and_CC technologies_NNS ._. Therefore_RB ,_, it_PRP may_MD be_VB possible_JJ for_IN
+a_DT fairly_RB simple_JJ model_NN to_TO explain_VB total_NN and_CC unit_NN cost_NN differences_NNS
+between_IN posts_NNS ._. Ideally_RB ,_, developing_VBG a_DT cost_NN model_NN for_IN the_DT 20_CD plus_CC
+industrial_JJ posts_NNS would_MD involve_VB collecting_VBG data_NNS on_IN many_JJ individual_JJ
+cost_NN elements_NNS from_IN each_DT and_CC using_VBG regression_NN analysis_NN to_TO estimate_VB
+the_DT coefficients_NNS of_IN a_DT cost_NN function_NN ._. In_IN today_NN 's_POS environment_NN this_DT is_VBZ
+impossible_JJ because_IN virtually_RB all_DT posts_NNS in_IN industrial_JJ countries_NNS
+consider_VBP much_JJ of_IN their_PRP$ operational_JJ cost_NN data_NNS to_TO be_VB commercially_RB
+sensitive_JJ and_CC will_MD not_RB share_VB them_PRP ._.
+In_IN our_PRP$ previous_JJ paper_NN ,_, Cohen_NNP ,_, et_CC al_NN ._. (_( 2002_CD )_) ,_, we_PRP developed_VBD a_DT
+model_NN that_WDT related_VBD unit_NN costs_NNS to_TO volume_NN per_IN capita_NN ._. The_DT model_NN is_VBZ
+based_VBN on_IN U_NNP ._. S_NNP ._. costs_NNS ._. More_RBR specifically_RB ,_, it_PRP is_VBZ based_VBN on_IN the_DT accrued_VBN
+cost_NN of_IN the_DT major_JJ functions_NNS and_CC their_PRP$ cost_NN elasticities_NNS with_IN
+respect_NN to_TO volume_NN ._. A_DT plot_NN of_IN that_DT cost_NN function_NN reveals_VBZ the_DT classic_JJ
+hyperbolic_JJ shape_NN with_IN unit_NN costs_NNS increasing_VBG more_RBR rapidly_RB as_IN volume_NN
+per_IN capita_NN declines_NNS because_IN of_IN the_DT loss_NN of_IN economies_NNS of_IN scale_NN ._. See_VB
+Figure_NN 1_CD ._.
+In_IN our_PRP$ previous_JJ paper_NN ,_, we_PRP made_VBD adjustments_NNS to_TO the_DT model_NN to_TO allow_VB
+for_IN comparison_NN with_IN Poste_NNP Italiane_NNP ._. In_IN particular_JJ ,_, adjustments_NNS were_VBD
+made_VBN for_IN differences_NNS in_IN labor_NN cost_NN ,_, amount_NN of_IN worksharing_VBG ,_, and_CC mix_NN
+of_IN mail_NN by_IN shape_NN ._. 1_LS In_IN this_DT paper_NN ,_, we_PRP add_VBP an_DT adjustment_NN for_IN counter_NN
+costs_NNS ._. 2_LS The_DT resulting_VBG model_NN estimate_NN of_IN Poste_NNP Italiane_NNP 's_POS unit_NN cost_NN
+is_VBZ 74_CD cents_NNS versus_CC the_DT actual_JJ value_NN of_IN 79_CD cents_NNS ._. It_PRP must_MD be_VB pointed_VBN
+out_RP that_IN the_DT cost_NN model_NN is_VBZ used_VBN to_TO estimate_VB costs_NNS over_IN an_DT extreme_JJ
+range_NN of_IN volume_NN ._. U_NNP ._. S_NNP ._. volume_NN per_IN capita_NN in_IN 1999_CD was_VBD 739_CD pieces_NNS
+while_IN Italy_NNP 's_POS was_VBD 115_CD pieces_NNS per_IN capita_NN ._. Given_VBN this_DT range_NN ,_, the_DT
+authors_NNS are_VBP encouraged_VBN by_IN the_DT relatively_RB small_JJ deviation_NN of_IN the_DT
+estimate_NN from_IN actual_JJ ._.
+1_LS
+See_VB the_DT Appendix_NNP to_TO Cohen_NNP ,_, et_CC al_NN ._. (_( 2002_CD )_) ._.
+2_LS
+The_DT USPS_NNP has_VBZ only_RB 14_CD counters_NNS per_IN 100_CD ,_, 000_CD population_NN ,_, while_IN
+Poste_NNP Italiane_NNP has_VBZ 24_CD counters_NNS per_IN 100_CD ,_, 000_CD population_NN ._.
+Figure_NN 1_CD :_: Model_NNP Estimates_NNS of_IN Unit_NNP Cost_NN
+Benchmarked_NNP by_IN U_NNP ._. S_NNP ._. Costs_NNS and_CC Volumes_NNP
+2_LS ._. 50_CD
+2_LS ._. 00_CD
+Cost_NN per_IN Piece_NNP (_( $_$ US_NNP )_)
+1_LS ._. 50_CD
+1_LS ._. 00_CD
+0_CD ._. 50_CD
+0_CD ._. 00_CD 0_CD 100_CD 200_CD 300_CD 400_CD 500_CD 600_CD 700_CD 800_CD
+
+Pieces_NNS per_IN Capita_NNP
+In_IN this_DT paper_NN we_PRP examine_VBP the_DT hypothesis_NNS that_IN the_DT cost_NN model_NN
+provides_VBZ reasonable_JJ estimates_NNS of_IN the_DT unit_NN costs_NNS of_IN other_JJ posts_NNS of_IN
+industrialized_VBN countries_NNS ._. 3_LS The_DT hypothesis_NNS cannot_NN ,_, however_RB ,_, be_VB
+directly_RB confirmed_VBN because_IN we_PRP do_VBP not_RB have_VB sufficient_JJ cost_NN data_NNS on_IN
+other_JJ countries_NNS to_TO compare_VB with_IN the_DT model_NN results_NNS ._.
+We_PRP provide_VBP indirect_JJ confirming_VBG evidence_NN of_IN the_DT hypothesis_NNS ,_, using_VBG
+the_DT fact_NN that_IN the_DT model_NN implies_VBZ that_DT mail_NN processing_NN and_CC delivery_NN
+costs_NNS will_MD comprise_VB specific_JJ percentages_NNS of_IN total_JJ costs_NNS at_IN specific_JJ
+per_IN capita_NN volume_NN levels_NNS ._. We_PRP have_VBP obtained_VBN the_DT actual_JJ percentages_NNS
+of_IN mail_NN processing_NN costs_NNS and_CC delivery_NN costs_NNS relative_JJ to_TO total_JJ costs_NNS
+for_IN seven_CD posts_NNS with_IN which_WDT we_PRP compare_VBP the_DT predicted_VBD percentages_NNS ._.
+Although_IN the_DT evidence_NN is_VBZ not_RB conclusive_JJ ,_, it_PRP confirms_VBZ the_DT
+hypothesis_NNS ._.
+We_PRP first_JJ present_JJ our_PRP$ model_NN for_IN total_JJ costs_NNS and_CC unit_NN costs_NNS ._. We_PRP
+next_JJ present_VB the_DT test_NN of_IN our_PRP$ hypothesis_NNS by_IN comparing_VBG the_DT predicted_VBD
+percentages_NNS for_IN each_DT of_IN the_DT seven_CD posts_NNS with_IN the_DT actual_JJ
+percentages_NNS ._. We_PRP then_RB produce_VBP a_DT trend_NN line_NN through_IN the_DT data_NNS points_NNS
+and_CC compare_VB it_PRP with_IN the_DT model_NN results_NNS ._. Finally_RB ,_, we_PRP compare_VBP actual_JJ
+unit_NN revenues_NNS ,_, and_CC some_DT derived_VBN unit_NN costs_NNS ,_, for_IN the_DT seven_CD posts_NNS
+with_IN the_DT model_NN 's_POS prediction_NN of_IN unit_NN costs_NNS ._.
+The_DT editors_NNS of_IN the_DT book_NN in_IN which_WDT our_PRP$ previous_JJ paper_NN [_NN Cohen_NNP ,_, et_CC
+al_NN ._. (_( 2002_CD )_) ]_NN appears_VBZ suggested_VBN that_IN we_PRP examine_VBP the_DT hypothesis_NNS that_IN
+the_DT cost_NN model_NN accurately_RB describes_VBZ the_DT costs_NNS of_IN other_JJ posts_NNS ._.
+
+
+2_LS ._. THE_DT COST_NNP MODEL_NNP
+The_DT model_NN is_VBZ the_DT same_JJ as_IN that_DT used_VBN by_IN Cohen_NNP ,_, et_CC al_NN ._. (_( 2001_CD )_)
+except_IN that_IN we_PRP now_RB present_JJ it_PRP as_IN a_DT generalized_JJ cost_NN function_NN ._. The_DT
+model_NN assumes_VBZ that_IN there_EX are_VBP two_CD primary_JJ determinants_NNS of_IN cost_NN for_IN a_DT
+postal_JJ system_NN :_: volume_NN and_CC size_NN of_IN the_DT network_NN ._. For_IN each_DT activity_NN a_DT
+post_NN performs_VBZ ,_, there_EX are_VBP volume-driven_JJ attributable_JJ costs_NNS and_CC
+networkdriven_NN institutional_JJ costs_NNS ._.
+To_TO create_VB a_DT total_JJ cost_NN function_NN ,_, we_PRP use_VBP FY_NNP 1999_CD U_NNP ._. S_NNP ._. Postal_NNP
+Service_NNP data_NNS to_TO define_VB the_DT relationship_NN between_IN costs_NNS and_CC cost_NN
+drivers_NNS ._. Costs_NNS for_IN each_DT postal_JJ activity_NN (_( mail_NN processing_NN ,_, delivery_NN ,_,
+etc_FW )_) that_WDT can_MD be_VB attributed_VBN to_TO mail_VB volumes_NNS ,_, are_VBP divided_VBN by_IN total_JJ
+volume_NN to_TO obtain_VB an_DT estimate_NN of_IN the_DT marginal_JJ cost_NN ._. 4_LS The_DT remaining_VBG
+costs_NNS are_VBP institutional_JJ costs_NNS that_WDT are_VBP primarily_RB driven_VBN by_IN the_DT size_NN
+of_IN the_DT network_NN ._. Population_NNP is_VBZ a_DT reasonable_JJ proxy_NN for_IN the_DT size_NN of_IN
+the_DT network_NN and_CC therefore_RB institutional_JJ costs_NNS are_VBP divided_VBN by_IN the_DT
+U_NNP ._. S_NNP ._. population_NN to_TO obtain_VB the_DT additional_JJ cost_NN per_IN person_NN ._. This_DT
+produces_VBZ annual_JJ cost_NN functions_NNS for_IN each_DT of_IN the_DT major_JJ postal_JJ
+activities_NNS and_CC a_DT total_JJ cost_NN function_NN ._.
+Since_IN all_DT costs_NNS are_VBP variable_JJ in_IN the_DT long_JJ run_NN ,_, it_PRP is_VBZ reasonable_JJ
+that_IN non-delivery_JJ institutional_JJ costs_NNS would_MD decline_VB over_IN the_DT large_JJ
+volume_NN range_NN we_PRP explore_VBP with_IN this_DT model_NN ._. For_IN purposes_NNS of_IN this_DT
+analysis_NN we_PRP assume_VBP that_IN 25_CD percent_NN of_IN non-delivery_JJ institutional_JJ
+costs_NNS would_MD be_VB volume_NN variable_JJ ._. 5_LS
+No_DT portion_NN of_IN delivery_NN institutional_JJ costs_NNS is_VBZ considered_VBN to_TO be_VB
+volume_NN variable_JJ ,_, however_RB ,_, because_IN route_NN structure_NN generally_RB does_VBZ
+not_RB change_VB as_IN volume_NN drops_NNS ._. As_RB long_RB as_IN coverage_NN is_VBZ relatively_RB high_JJ ,_,
+carriers_NNS will_MD have_VB to_TO cover_VB their_PRP$ entire_JJ route_NN ._. Thus_RB ,_, fixed_VBN
+delivery_NN costs_NNS would_MD not_RB be_VB expected_VBN to_TO drop_VB until_IN volume_NN per_IN
+capita_NN were_VBD so_RB low_JJ that_IN the_DT resulting_VBG very_RB low_JJ coverage_NN allowed_VBD
+carriers_NNS to_TO skip_VB parts_NNS of_IN their_PRP$ routes_NNS ._.
+4_LS
+Attributable_NNP costs_NNS using_VBG the_DT PRC_NNP cost_NN treatment_NN are_VBP greater_JJR than_IN
+volume_NN variable_JJ costs_NNS ._. Consequently_RB ,_, the_DT estimate_NN is_VBZ slightly_RB
+higher_JJR than_IN the_DT true_JJ marginal_JJ cost_NN ._.
+5_LS
+The_DT results_NNS are_VBP not_RB very_RB sensitive_JJ to_TO this_DT assumption_NN as_IN can_MD be_VB
+seen_VBN in_IN Cohen_NNP ,_, et_CC al_NN ._. (_( 2001_CD )_) ._.
+The_DT cost_NN function_NN in_IN U_NNP ._. S_NNP ._. dollars_NNS is_VBZ :_:
+
+
+Variable_NNP Institutional_JJ
+Mail_NNP Processing_NNP =_SYM 0_CD ._. 1032_CD V_NNP +_NN 2_CD ._. 10_CD P_NN Delivery_NN =_SYM 0_CD ._. 0525_CD V_NNP +_NN 42_CD ._. 24_CD P_NN
+Transportation_NNP =_SYM 0_CD ._. 0200_CD V_NNP +_NN 0_CD ._. 92_CD P_NN Window_NNP Service_NNP =_SYM 0_CD ._. 0092_CD V_NNP +_NN 4_CD ._. 64_CD P_NN
+All_DT Other_JJ costs_NNS =_SYM 0_CD ._. 0241_CD V_NNP +_NN 24_CD ._. 41_CD P_NN Total_JJ costs_NNS =_SYM 0_CD ._. 2089_CD V_NNP +_NN 74_CD ._. 31_CD P_NN
+where_WRB V_NNP =_SYM Volume_NN and_CC P_NN =_SYM Population_NNP ._.
+It_PRP can_MD be_VB seen_VBN that_IN the_DT total_JJ cost_NN of_IN providing_VBG postal_JJ service_NN
+in_IN the_DT U_NNP ._. S_NNP ._. for_IN FY_NNP 1999_CD was_VBD 20_CD ._. 89_CD cents_NNS per_IN piece_NN plus_CC $_$ 74_CD ._. 31_CD per_IN
+person_NN ._. The_DT total_JJ cost_NN for_IN other_JJ countries_NNS can_MD be_VB estimated_VBN by_IN
+substituting_VBG volume_NN and_CC population_NN into_IN the_DT above_JJ formula_NN ._.
+The_DT total_JJ cost_NN function_NN can_MD be_VB used_VBN to_TO estimate_VB average_JJ unit_NN
+cost_NN by_IN dividing_VBG the_DT terms_NNS by_IN V_NNP :_:
+Average_NNP Unit_NNP Cost_NN =_SYM 0_CD ._. 2089_CD +_NN (_( 74_CD ._. 31_CD P_NN /_NN V_NNP )_) ._. This_DT can_MD be_VB restated_VBN
+in_IN terms_NNS of_IN V_NNP /_NN P_NN ,_, or_CC pieces_NNS per_IN capita_NN (_( ppc_NN )_) ,_, as_IN :_:
+Average_NNP Unit_NNP Cost_NN =_SYM 0_CD ._. 2089_CD +_NN (_( 74_CD ._. 31_CD /_NN ppc_NN )_) ._.
+The_DT percent_NN of_IN total_JJ cost_NN for_IN each_DT function_NN included_VBN in_IN the_DT
+model_NN and_CC cost_NN elasticity_NN (_( with_IN respect_NN to_TO volume_NN )_) are_VBP shown_VBN in_IN
+Table_NNP 1_CD ._.
+The_DT model_NN assumes_VBZ constant_JJ unit_NN variable_JJ costs_NNS ._. Thus_RB ,_, when_WRB
+volume_NN is_VBZ reduced_VBN total_JJ variable_JJ cost_NN is_VBZ reduced_VBN by_IN the_DT same_JJ
+percentage_NN ._. At_IN lower_JJR per_IN capita_NN volumes_NNS ,_, the_DT ratio_NN of_IN fixed_VBN to_TO
+variable_JJ cost_NN increases_NNS and_CC the_DT cost_NN elasticities_NNS decrease_VBP (_( because_IN
+a_DT greater_JJR proportion_NN of_IN total_JJ costs_NNS is_VBZ fixed_VBN )_) ._. Similarly_RB ,_, the_DT model_NN
+assumes_VBZ a_DT constant_JJ coefficient_NN for_IN population_NN ._.
+Table_NNP 1_CD :_: FY_NNP 1999_CD USPS_NNP Percent_NN of_IN Total_JJ Cost_NN and_CC Elasticity_NNP (_( with_IN
+respect_NN to_TO Volume_NN )_) of_IN the_DT Major_NNP
+
+a_DT
+Source_NN :_: Postal_NNP Rate_NNP Commission_NNP Docket_NNP R_NNP 2000_CD -_: 1_CD
+b_SYM
+Includes_VBZ both_DT in_IN and_CC out_IN of_IN office_NN activities_NNS ._.
+c_SYM
+Does_VBZ not_RB include_VB intra_NN city_NN transportation_NN costs_NNS ._.
+The_DT U_NNP ._. S_NNP ._. cost_NN elasticities_NNS in_IN Table_NNP 1_CD ,_, when_WRB applied_VBN to_TO the_DT
+accrued_VBN costs_NNS of_IN each_DT function_NN ,_, determine_VBP the_DT coefficients_NNS in_IN the_DT
+cost_NN function_NN ,_, which_WDT in_IN turn_NN generate_VB the_DT unique_JJ shape_NN of_IN the_DT unit_NN
+cost_NN function_NN (_( Figure_NN 1_LS )_) ._. Further_RB ,_, these_DT coefficients_NNS determine_VBP the_DT
+percent_NN of_IN total_JJ cost_NN that_WDT comes_VBZ from_IN mail_NN processing_NN and_CC delivery_NN
+at_IN a_DT specific_JJ volume_NN per_IN capita_NN ._.
+The_DT total_JJ cost_NN for_IN an_DT individual_JJ country_NN can_MD be_VB expressed_VBN as_IN a_DT
+function_NN of_IN pieces_NNS per_IN capita_NN by_IN rewriting_VBG the_DT above_JJ basic_JJ total_JJ
+cost_NN equation_NN as_IN :_:
+Total_JJ Cost_NN for_IN country_NN "_'' i_NNP "_'' =_SYM (_( 0_CD ._. 2089_CD Pi_NNP )_) (_( V_NNP /_NN Pi_NNP )_) +_NN 74_CD ._. 31_CD Pi_NNP ,_,
+where_WRB Pi_NNP =_SYM population_NN for_IN country_NN "_'' i_NNP "_'' ,_,
+0_CD ._. 2089_CD Pi_NNP =_SYM slope_NN
+74_CD ._. 31_CD Pi_NNP =_SYM intercept_NN ._. The_DT values_NNS of_IN the_DT slope_NN (_( rate_NN of_IN increase_NN
+in_IN total_JJ costs_NNS )_) and_CC intercept_NN (_( institutional_JJ costs_NNS )_) are_VBP directly_RB
+related_VBN to_TO the_DT population_NN of_IN the_DT country_NN ._. If_IN country_NN A_DT has_VBZ twice_RB as_IN
+many_JJ inhabitants_NNS as_IN country_NN B_NNP ,_, then_RB the_DT slope_NN and_CC intercept_NN of_IN A_NNP 's_NNP
+cost_NN function_NN will_MD be_VB twice_RB as_RB large_JJ as_IN the_DT slope_NN and_CC intercept_NN of_IN
+B_NNP 's_POS cost_NN function_NN ._.
+Figure_NN 2_CD displays_NNS the_DT total_JJ cost_NN curves_NNS as_IN functions_NNS of_IN pieces_NNS
+per_IN capita_NN for_IN each_DT of_IN the_DT countries_NNS in_IN the_DT sample_NN ._. The_DT differences_NNS
+in_IN slopes_NNS and_CC intercepts_NNS reflect_VBP population_NN differences_NNS ._. If_IN total_JJ
+volume_NN ,_, instead_RB of_IN pieces_NNS per_IN capita_NN ,_, were_VBD displayed_VBN on_IN the_DT
+vertical_JJ axis_NNS ,_, then_RB the_DT Y-_NNP intercepts_NNS would_MD remain_VB unchanged_JJ but_CC the_DT
+cost_NN curves_NNS would_MD be_VB parallel_JJ ._. Although_IN Figure_NN 2_CD shows_VBZ a_DT family_NN of_IN
+total_JJ costs_NNS curves_NNS ,_, Figure_NN 1_CD displays_NNS a_DT single_JJ unit_NN cost_NN curve_NN
+because_IN the_DT unit_NN cost_NN curve_NN depends_VBZ on_IN only_RB one_CD variable_JJ ,_, pieces_NNS
+per_IN capita_NN ._.
+Figure_NN 2_CD ._. Total_JJ Cost_NN Functions_NNP for_IN Sampled_NNP Posts_VBZ
+Not_RB Adjusted_NNP for_IN Structural_NNP Differences_NNS
+
+0_CD 100_CD 200_CD 300_CD 400_CD 500_CD 600_CD
+Pieces_NNS per_IN Capita_NNP
+
+
+3_LS ._. ADJUSTMENTS_NNP
+To_TO estimate_VB the_DT cost_NN of_IN a_DT post_NN using_VBG the_DT model_NN ,_, it_PRP is_VBZ necessary_JJ
+to_TO take_VB into_IN account_NN labor_NN cost_NN differences_NNS between_IN the_DT U_NNP ._. S_NNP ._. Postal_NNP
+Service_NNP and_CC the_DT given_VBN post_NN ._. The_DT test_NN of_IN our_PRP$ hypothesis_NNS ,_, however_RB ,_,
+does_VBZ not_RB involve_VB predicting_VBG unit_NN costs_NNS of_IN other_JJ posts_NNS ._. It_PRP involves_VBZ
+predicting_VBG the_DT percentage_NN of_IN total_JJ cost_NN devoted_VBN to_TO mail_VB processing_NN
+and_CC delivery_NN ._. Thus_RB ,_, labor_NN costs_NNS do_VBP not_RB need_VB to_TO be_VB adjusted_VBN ._.
+The_DT total_JJ percentage_NN of_IN mail_NN processing_NN costs_NNS would_MD have_VB to_TO be_VB
+adjusted_VBN if_IN worksharing_VBG ,_, automation_NN ,_, or_CC mail_NN mix_NN had_VBD significantly_RB
+different_JJ impacts_NNS on_IN mail_NN processing_NN costs_NNS ._. We_PRP have_VBP adjusted_VBN mail_NN
+processing_NN costs_NNS for_IN La_NNP Poste_NNP and_CC Posti_NNP Finland_NNP ._. Both_DT France_NNP and_CC
+Finland_NNP include_VBP the_DT costs_NNS of_IN cancellation_NN and_CC mail_NN preparation_NN in_IN
+counter_NN costs_NNS ._. Because_IN the_DT U_NNP ._. S_NNP ._. Postal_NNP Service_NNP classifies_VBZ these_DT
+costs_NNS as_IN part_NN of_IN mail_NN processing_NN ,_, we_PRP adjust_VBP the_DT percentages_NNS of_IN mail_NN
+processing_NN costs_NNS upward_RB for_IN France_NNP and_CC Finland_NNP to_TO reflect_VB a_DT similar_JJ
+treatment_NN ._. This_DT has_VBZ no_DT effect_NN on_IN total_JJ costs_NNS ,_, and_CC therefore_RB only_RB
+affects_VBZ the_DT mail_NN processing_NN percentage_NN ._.
+The_DT number_NN of_IN deliveries_NNS per_IN week_NN varies_VBZ among_IN the_DT posts_NNS in_IN the_DT
+sample_NN (_( Canada_NNP ,_, Finland_NNP ,_, and_CC Portugal_NNP deliver_VBP five_CD times_NNS per_IN week_NN ,_,
+Great_NNP Britain_NNP delivers_VBZ 12_CD times_NNS weekly_JJ in_IN urban_JJ areas_NNS and_CC six_CD in_IN
+rural_JJ areas_NNS )_) ._. Consequently_RB it_PRP is_VBZ necessary_JJ to_TO adjust_VB the_DT percentage_NN
+of_IN delivery_NN costs_NNS for_IN these_DT posts_NNS to_TO the_DT level_NN it_PRP would_MD be_VB with_IN six_CD
+deliveries_NNS per_IN week_NN (_( as_IN in_IN the_DT U_NNP ._. S_NNP ._. )_) When_WRB the_DT percentage_NN of_IN
+delivery_NN cost_NN is_VBZ increased_VBN or_CC decreased_VBN for_IN a_DT given_VBN post_NN ,_, the_DT
+percentage_NN of_IN mail_NN processing_NN cost_NN is_VBZ decreased_VBN or_CC increased_VBN
+accordingly_RB ._. 6_CD
+
+
+4_LS ._.
+CONFIRMING_NNP THE_DT HYPOTHESIS_NNP
+
+
+4_LS ._. 1_CD
+Data_NNP
+
+
+Canada_NNP Post_NNP ,_, Consignia_NNP (_( Royal_NNP Mail_NNP )_) ,_, Posti_NNP Finland_NNP and_CC La_NNP Poste_NNP
+supplied_VBD the_DT percentages_NNS of_IN delivery_NN and_CC mail_NN processing_NN costs_NNS to_TO
+us_PRP ._. The_DT authors_NNS supplied_VBD the_DT data_NNS for_IN CTT_NNP Correios_NNP de_IN Portugal_NNP and_CC
+Poste_NNP Italiane_NNP ._. Only_RB La_NNP Poste_NNP delivers_VBZ unaddressed_JJ mail_NN separately_RB
+from_IN normal_JJ mail_NN ._. Consequently_RB ,_, the_DT volumes_NNS and_CC percentages_NNS of_IN
+total_JJ cost_NN for_IN La_NNP Poste_NNP do_VBP not_RB include_VB unaddressed_JJ mail_NN ._.
+Unaddressed_NNP mail_NN is_VBZ included_VBN in_IN the_DT calculations_NNS for_IN other_JJ
+posts_NNS ._.
+The_DT cost_NN percentages_NNS reflect_VBP labor_NN and_CC non_NN labor_NN costs_NNS ,_, except_IN
+for_IN Germany_NNP ._. The_DT Deutsche_NNP Post_NNP percentages_NNS are_VBP derived_VBN from_IN
+workforce_NN full_JJ time_NN equivalents_NNS contained_VBD in_IN its_PRP$ annual_JJ report_NN for_IN
+FY_NNP 2001_CD and_CC an_DT internal_JJ Post_NNP Italiane_NNP study_NN on_IN German_JJ delivery_NN
+operations_NNS developed_VBN in_IN part_NN from_IN meetings_NNS with_IN Deutsche_NNP Post_NNP
+management_NN ._. The_DT Deutsche_NNP Post_NNP annual_JJ report_NN provides_VBZ the_DT total_JJ
+number_NN of_IN full_JJ time_NN equivalents_NNS involved_VBN in_IN postal_JJ operations_NNS and_CC
+the_DT Poste_NNP Italiane_NNP document_NN provides_VBZ the_DT number_NN involved_VBN in_IN
+delivery_NN operations_NNS ._. While_IN this_DT is_VBZ a_DT proxy_NN for_IN labor_NN and_CC non_NN labor_NN
+costs_NNS ,_, it_PRP is_VBZ considered_VBN realistic_JJ since_IN in_IN the_DT U_NNP ._. S_NNP ._. ,_, the_DT use_NN of_IN
+workforce_NN full_JJ time_NN equivalents_NNS provide_VBP estimates_NNS within_IN a_DT few_JJ
+percentage_NN points_NNS of_IN those_DT calculated_VBN with_IN labor_NN and_CC non_NN labor_NN
+costs_NNS ._.
+6_CD
+The_DT population_NN density_NN (_( or_CC more_RBR specifically_RB the_DT postal_JJ density_NN
+-_: -_: the_DT average_JJ time_NN it_PRP takes_VBZ to_TO travel_VB between_IN addresses_NNS )_) of_IN a_DT
+country_NN has_VBZ an_DT impact_NN on_IN street_NN delivery_NN costs_NNS ._. Ideally_RB we_PRP could_MD
+adjust_VB for_IN this_DT if_IN data_NN were_VBD available_JJ ._. (_( See_VB Bernard_NNP ,_, et_CC al_NN ._.
+2002_CD )_) ._.
+4_LS ._. 2_CD Empirical_NNP Findings_NNP
+Empirical_NNP findings_NNS from_IN the_DT investigation_NN are_VBP presented_VBN in_IN
+Figure_NN 3_CD ._. The_DT top_JJ line_NN represents_VBZ delivery_NN cost_NN percentage_NN (_( of_IN
+total_JJ cost_NN )_) as_IN a_DT function_NN of_IN pieces_NNS per_IN capita_NN as_IN predicted_VBN by_IN our_PRP$
+cost_NN model_NN ._. The_DT bottom_JJ line_NN represents_VBZ the_DT same_JJ for_IN mail_NN processing_NN
+costs_NNS ._.
+Figure_NN 3_CD :_: Functional_NNP Percentage_NN of_IN Total_JJ Costs_NNS
+Benchmarked_NNP by_IN U_NNP ._. S_NNP ._. Costs_NNS and_CC Volumes_NNP
+Percentage_NN of_IN Total_JJ Costs_NNS
+70_CD
+60_CD
+50_CD
+40_CD
+30_CD
+20_CD
+10_CD
+0_CD 0_CD 100_CD 200_CD 300_CD 400_CD 500_CD 600_CD 700_CD 800_CD
+
+Pieces_NNS per_IN Capita_NNP
+With_IN the_DT exception_NN of_IN the_DT lowest_JJS volume_NN post_NN (_( Poste_NNP Italiane_NNP )_)
+the_DT model_NN 's_POS predicted_VBD percentages_NNS are_VBP close_RB to_TO the_DT actual_JJ
+percentages_NNS for_IN delivery_NN ._. We_PRP think_VBP Poste_NNP Italiane_NNP ,_, a_DT very_RB low_JJ
+volume_NN post_NN ,_, may_MD have_VB a_DT somewhat_RB lower_JJR percentage_NN of_IN delivery_NN costs_NNS
+than_IN predicted_VBD owing_VBG to_TO low_JJ coverage_NN on_IN very_RB low_JJ volume_NN routes_NNS
+especially_RB in_IN rural_JJ areas_NNS ._. When_WRB carriers_NNS deliver_VBP to_TO only_RB a_DT small_JJ
+number_NN of_IN stops_NNS on_IN a_DT route_NN they_PRP tend_VBP to_TO cover_VB the_DT route_NN in_IN a_DT way_NN
+more_RBR similar_JJ to_TO a_DT "_'' traveling_VBG salesman_NN "_'' than_IN following_VBG a_DT fixed_VBN route_NN
+past_JJ every_DT stop_NN ._. Thus_RB ,_, there_EX may_MD be_VB less_RBR fixed_JJ costs_NNS on_IN these_DT
+routes_NNS than_IN indicated_VBN by_IN the_DT elasticities_NNS embedded_VBN in_IN the_DT cost_NN
+model_NN based_VBN on_IN U_NNP ._. S_NNP ._. costs_NNS ,_, which_WDT reflect_VBP very_RB high_JJ coverage_NN levels_NNS ._.
+If_IN this_DT conjecture_NN is_VBZ correct_JJ ,_, then_RB Italy_NNP 's_POS delivery_NN percentages_NNS
+could_MD be_VB adjusted_VBN upwards_NNS (_( by_IN an_DT unknown_JJ amount_NN )_) towards_IN the_DT
+predicted_VBN value_NN and_CC their_PRP$ mail_NN processing_NN costs_NNS would_MD then_RB have_VB to_TO
+be_VB adjusted_VBN downwards_NNS ._. A_DT downward_JJ adjustment_NN would_MD also_RB improve_VB
+Italy_NNP 's_POS relation_NN to_TO the_DT mail_NN processing_NN prediction_NN but_CC move_NN
+Portugal_NNP further_JJ away_RB ._. Some_DT of_IN the_DT deviation_NN for_IN Italy_NNP and_CC Portugal_NNP
+may_MD be_VB due_JJ to_TO the_DT fact_NN that_IN they_PRP have_VBP proportionally_RB much_RB larger_JJR
+retail_JJ operations_NNS involving_VBG collection_NN and_CC acceptance_NN than_IN the_DT U_NNP ._. S_NNP ._.
+and_CC other_JJ posts_NNS ._. For_IN example_NN ,_, Portugal_NNP 's_POS retail_JJ post_NN office_NN
+operations_NNS account_VBP for_IN 21_CD percent_NN of_IN total_JJ costs_NNS ,_, while_IN in_IN the_DT
+U_NNP ._. S_NNP ._. they_PRP account_VBP for_IN approximately_RB six_CD percent_NN ._. Poste_NNP Italiane_NNP
+also_RB has_VBZ a_DT relatively_RB large_JJ percentage_NN of_IN costs_NNS in_IN collection_NN and_CC
+acceptance_NN ,_, 15_CD percent_NN ._. Nevertheless_RB ,_, the_DT authors_NNS cannot_NN explain_VB
+why_WRB Portugal_NNP 's_POS percentage_NN of_IN mail_NN processing_NN cost_NN is_VBZ so_RB low_JJ in_IN
+comparison_NN to_TO the_DT other_JJ posts_NNS in_IN the_DT sample_NN ._.
+A_DT significant_JJ virtue_NN of_IN these_DT curves_NNS is_VBZ that_IN they_PRP are_VBP
+independent_JJ of_IN the_DT price_NN of_IN labor_NN ._. Thus_RB ,_, by_IN using_VBG this_DT evaluation_NN
+technique_NN ,_, we_PRP are_VBP able_JJ to_TO avoid_VB the_DT need_NN for_IN obtaining_VBG productive_JJ
+hourly_JJ costs_NNS translated_VBN into_IN dollars_NNS using_VBG purchasing_VBG power_NN
+parities_NNS ._.
+It_PRP appears_VBZ that_IN other_JJ factors_NNS ,_, for_IN which_WDT adjustments_NNS are_VBP not_RB
+made_VBN ,_, do_VBP not_RB cause_VB significant_JJ differences_NNS ._. This_DT could_MD be_VB because_IN
+these_DT factors_NNS do_VBP not_RB vary_VB significantly_RB from_IN the_DT U_NNP ._. S_NNP ._. ,_, do_VBP not_RB drive_VB
+costs_NNS significantly_RB ,_, or_CC tend_VBP to_TO cancel_VB each_DT other_JJ out_RP ._.
+4_LS ._. 3_CD Trend_NNP Analysis_NNP
+The_DT bold_JJ lines_NNS in_IN Figure_NN 4_CD display_NN trend_NN curves_NNS for_IN the_DT actual_JJ
+processing_NN and_CC delivery_NN cost_NN percentages_NNS from_IN the_DT test_NN countries_NNS ._. 7_CD
+These_DT curves_NNS were_VBD generated_VBN using_VBG Excel_NNP ._. They_PRP have_VBP virtually_RB the_DT
+same_JJ shape_NN as_IN the_DT curves_NNS predicted_VBN by_IN the_DT model_NN and_CC further_JJ confirm_VB
+the_DT fit_NN between_IN the_DT model_NN and_CC the_DT data_NNS ._. The_DT low_JJ delivery_NN cost_NN
+percentage_NN of_IN the_DT low_JJ volume_NN per_IN capita_NN country_NN ,_, Italy_NNP ,_, pulls_VBZ the_DT
+delivery_NN trend_NN line_NN down_RB away_RB from_IN the_DT predicted_VBN line_NN ._. The_DT fact_NN
+that_IN the_DT actual_JJ mail_NN processing_NN percentages_NNS for_IN Italy_NNP and_CC Portugal_NNP
+are_VBP about_IN equidistant_NN below_IN and_CC above_IN the_DT predicted_VBN values_NNS causes_VBZ
+the_DT mail_NN processing_NN trend_NN line_NN to_TO match_VB the_DT model_NN line_NN at_IN low_JJ
+volumes_NNS despite_IN relatively_RB large_JJ errors_NNS ._. These_DT disparities_NNS at_IN low_JJ
+volumes_NNS between_IN the_DT trend_NN and_CC model_NN lines_NNS reinforce_VBP our_PRP$ belief_NN that_IN
+the_DT model_NN is_VBZ less_RBR useful_JJ in_IN predicting_VBG costs_NNS for_IN low_JJ per_IN capita_NN
+volume_NN posts_NNS than_IN it_PRP is_VBZ for_IN medium_NN to_TO high_JJ volume_NN per_IN capita_NN posts_NNS ._.
+It_PRP is_VBZ to_TO be_VB expected_VBN that_IN the_DT accuracy_NN of_IN predictions_NNS will_MD diminish_VB
+as_IN the_DT range_NN over_IN which_WDT the_DT predictions_NNS are_VBP made_VBN increases_NNS ._.
+These_DT trend_NN lines_NNS were_VBD selected_VBN because_IN they_PRP best_JJS fit_VB the_DT data_NNS ._.
+For_IN delivery_NN percentages_NNS ,_, the_DT trend_NN line_NN is_VBZ y_NN =_SYM 46_CD ._. 943_CD e-_NN 0_CD ._. 0004_CD x_SYM with_IN
+an_DT R_NN 2_CD of_IN 0_CD ._. 78_CD ._. For_IN mail_NN processing_NN percentages_NNS the_DT trend_NN line_NN is_VBZ
+y_NN =_SYM 10_CD ._. 869_CD Ln_NNP (_( x_SYM )_) -_: 38_CD ._. 407_CD with_IN an_DT R_NN 2_CD of_IN 0_CD ._. 69_CD ._.
+Figure_NN 4_CD :_: Functional_NNP Percentage_NN of_IN Total_JJ Costs_NNS with_IN Regression_NNP
+Curves_NNP
+70_CD
+60_CD
+Percentage_NN of_IN Total_JJ Costs_NNS
+50_CD
+40_CD
+30_CD
+20_CD
+10_CD
+0_CD 0_CD 100_CD 200_CD 300_CD 400_CD 500_CD 600_CD 700_CD 800_CD
+
+Pieces_NNS per_IN Capita_NNP
+5_LS ._. ESTIMATED_NNP UNIT_NNP COSTS_NNP
+In_IN order_NN to_TO compare_VB unit_NN costs_NNS ,_, it_PRP is_VBZ desirable_JJ to_TO make_VB the_DT
+adjustments_NNS we_PRP have_VBP discussed_VBN above_IN plus_CC an_DT adjustment_NN for_IN
+productive_JJ hourly_JJ wage_NN in_IN purchasing_VBG power_NN parities_NNS (_( PPP_NNP )_) ._. Data_NNS for_IN
+these_DT adjustments_NNS were_VBD not_RB available_JJ ,_, except_IN for_IN Italy_NNP ._. The_DT
+U_NNP ._. S_NNP ._. values_NNS used_VBN in_IN making_VBG adjustments_NNS for_IN Poste_NNP Italiane_NNP data_NNS
+are_VBP listed_VBN in_IN the_DT appendix_NN ._. In_IN the_DT absence_NN of_IN actual_JJ cost_NN data_NNS ,_, we_PRP
+compare_VBP model_NN cost_NN results_NNS to_TO actual_JJ revenues_NNS ._.
+For_IN the_DT posts_NNS in_IN our_PRP$ sample_NN we_PRP have_VBP used_VBN the_DT model_NN to_TO estimate_VB
+unit_NN costs_NNS and_CC adjusted_VBN only_RB for_IN deliveries_NNS per_IN week_NN (_( Canada_NNP ,_,
+Finland_NNP ,_, U_NNP ._. K_NNP ._. ,_, and_CC Portugal_NNP ._. )_) In_IN Table_NNP 2_CD ,_, we_PRP compare_VBP these_DT
+estimates_NNS with_IN average_JJ revenue_NN per_IN piece_NN converted_VBN to_TO U_NNP ._. S_NNP ._. cents_NNS
+using_VBG OECD_NNP 's_POS PPP_NNP for_IN 1999_CD ._.
+Table_NNP 2_CD :_: Comparison_NNP of_IN Model_NNP Estimated_VBN Coststo_NNP Actual_JJ Revenue_NN
+per_IN Piece_NNP for_IN 1999_CD
+(_( U_NNP ._. S_NNP ._. cents_NNS )_)
+Model_NNP Cost_NN Revenue_NN Estimates_NNS per_IN Piecea_NNP
+Canada_NNP 43_CD 41_CD Finland_NNP 34_CD 39_CD France_NNP 38_CD b_SYM 40_CD b_SYM Germany_NNP 50_CD 57_CD Italy_NNP 90_CD
+79_CD c_SYM Portugal_NNP 62_CD 54_CD
+U_NNP ._. K_NNP ._. 46_CD 50_CD
+U_NNP ._. S_NNP ._. 31_CD c_SYM
+a_DT
+From_IN annual_JJ reports_NNS and_CC Posts_VBZ of_IN authors_NNS ,_, 2000_CD for_IN
+Portugal_NNP b_SYM Includes_VBZ unaddressed_JJ mail_NN
+c_SYM
+Actual_JJ cost_NN per_IN piece_NN
+The_DT largest_JJS discrepancy_NN appears_VBZ to_TO be_VB Italy_NNP ._. We_PRP know_VBP ,_, however_RB ,_,
+that_IN the_DT Post_NNP Italiane_NNP productive_JJ hourly_JJ wage_NN is_VBZ three_CD quarters_NNS of_IN
+that_DT of_IN the_DT U_NNP ._. S_NNP ._. Postal_NNP Service_NNP ._. As_IN stated_VBN in_IN the_DT introduction_NN ,_,
+when_WRB we_PRP adjust_VBP for_IN Italian_JJ labor_NN costs_NNS ,_, worksharing_VBG ,_, mail_NN mix_NN ,_, and_CC
+number_NN of_IN counters_NNS ,_, we_PRP get_VBP a_DT modeled_VBN unit_NN cost_NN of_IN 74_CD cents_NNS ._.
+6_CD ._. CONCLUSIONS_NNP
+The_DT principal_JJ conclusion_NN is_VBZ that_IN empirical_JJ evidence_NN corroborates_NNS
+the_DT validity_NN of_IN this_DT model_NN because_IN the_DT predicted_VBN functional_JJ
+percentages_NNS of_IN costs_NNS are_VBP reasonably_RB close_RB to_TO actual_JJ values_NNS ._. See_VB
+Figure_NN 3_CD ._. In_IN particular_JJ ,_, the_DT general_JJ shape_NN of_IN the_DT unit_NN cost_NN curve_NN
+(_( with_IN respect_NN to_TO per_IN capita_NN volume_NN )_) appears_VBZ to_TO be_VB valid_JJ for_IN the_DT
+posts_NNS of_IN industrialized_VBN countries_NNS sampled_VBN ._. See_VB Figure_NN 1_CD ._. The_DT model_NN ,_,
+however_RB ,_, is_VBZ a_DT more_RBR accurate_JJ predictor_NN of_IN the_DT cost_NN behavior_NN of_IN
+medium_NN to_TO large_JJ per_IN capita_NN volume_NN posts_NNS than_IN for_IN small_JJ per_IN capita_NN
+volume_NN posts_NNS ._. The_DT model_NN also_RB demonstrates_VBZ that_IN both_DT volume_NN and_CC
+population_NN are_VBP important_JJ explanatory_JJ factors_NNS of_IN postal_JJ costs_NNS ._.
+Clearly_RB ,_, additional_JJ research_NN is_VBZ warranted_VBN ._. Regulators_NNS and_CC
+operators_NNS in_IN any_DT industrialized_VBN country_NN are_VBP encouraged_VBN to_TO use_VB the_DT
+data_NNS in_IN the_DT appendix_NN on_IN U_NNP ._. S_NNP ._. cost_NN characteristics_NNS to_TO make_VB
+adjustments_NNS to_TO the_DT model_NN and_CC determine_VB if_IN the_DT model_NN forecasts_VBZ costs_NNS
+with_IN reasonable_JJ accuracy_NN ._. Of_IN course_NN ,_, we_PRP would_MD not_RB expect_VB exact_JJ
+correspondence_NN even_RB after_IN adjustments_NNS are_VBP made_VBN owing_VBG to_TO differences_NNS
+in_IN efficiency_NN and_CC service_NN quality_NN ._.
+Appendix_NNP :_: FY_NNP 1999_CD USPS_NNP Operational_NNP Statistics_NNPS
+
+
+•_NN
+Productive_NNP hourly_JJ wage_NN :_: $_$ 23_CD ._. 87644_CD
+
+
+•_NN
+Mail_NNP mix_NN by_IN shape_NN :_: 72_CD percent_NN letters_NNS and_CC cards_NNS ,_, 26_CD
+percent_NN flats_NNS ,_, 1_CD percent_NN parcels_NNS
+
+
+•_NN
+Percentage_NN of_IN mail_NN with_IN some_DT worksharing_VBG :_: 72_CD
+
+
+•_NN
+Percentage_NN of_IN letters_NNS barcoded_JJ by_IN mailers_NNS :_: 56_CD
+
+
+•_NN
+Percentage_NN of_IN letters_NNS barcoded_JJ by_IN USPS_NNP :_: 32_CD
+
+
+•_NN
+Percentage_NN of_IN flats_NNS barcoded_JJ by_IN mailers_NNS :_: 38_CD
+
+
+•_NN
+Percentage_NN of_IN mail_NN not_RB delivered_VBD (_( i_NNP ._. e_SYM ._. Post_NNP Office_NNP Box_NNP
+mail_NN )_) :_: 21_CD ._. 4_LS
+
+
+•_NN
+Average_JJ postal_JJ density_NN (_( addresses_NNS per_IN fixed_VBN street_NN hour_NN )_) :_:
+100_CD ._. 5_LS
+
+
+•_NN
+Counter_NNP Costs_NNS :_: 5_CD ._. 6_CD percent_NN
+
+
+REFERENCES_NNP
+Bernard_NNP ,_, Stephane_NNP ,_, Robert_NNP Cohen_NNP ,_, Matthew_NNP Robinson_NNP ,_, Bernard_NNP Roy_NNP ,_,
+Jöelle_NNP Toledano_NNP ,_, John_NNP Waller_NNP ,_, and_CC Spyros_NNP Xenakis_NNP ._. 2002_CD ._. "_'' Delivery_NN
+Cost_NN Heterogeneity_NNP and_CC Vulnerability_NNP ._. "_'' Paper_NNP presented_VBD at_IN the_DT 10_CD th_NN
+Conference_NNP on_IN Postal_NNP and_CC Delivery_NN Economics_NNP ,_, Potsdam_NNP ,_, Germany_NNP ._.
+Cohen_NNP ,_, Robert_NNP ,_, William_NNP Ferguson_NNP ,_, John_NNP Waller_NNP and_CC Spyros_NNP Xenakis_NNP ._.
+2001_CD "_'' The_DT Impact_NNP of_IN Using_VBG Worksharing_NNP to_TO Liberalize_NNP a_DT Postal_NNP
+Market_NNP ._. "_'' Paper_NNP presented_VBD at_IN Wissenschaftliches_NNP Institut_NNP für_NN
+Kommunikationsdienste_NNP GmbH_NNP ,_, 6_CD th_NN Köenigswinter_NNP Seminar_NNP on_IN Postal_NNP
+Economics_NNP ,_, Liberalization_NNP of_IN Postal_NNP Markets_NNP ._.
+Cohen_NNP ,_, Robert_NNP ,_, Carla_NNP Pace_NNP ,_, Matthew_NNP Robinson_NNP ,_, Gennaro_NNP
+Scarfiglieri_NNP ,_, Vincenzo_NNP Visco_NNP Comandini_NNP ,_, John_NNP Waller_NNP and_CC Spyros_NNP
+Xenakis_NNP ._. 2002_CD ._. "_'' A_DT Comparison_NNP of_IN the_DT Burden_NNP of_IN Universal_NNP Service_NNP in_IN
+Italy_NNP and_CC the_DT United_NNP States_NNPS ._. "_'' In_IN Postal_NNP and_CC Delivery_NN Services_NNPS :_:
+Pricing_NN ,_, Productivity_NNP ,_, Regulation_NNP and_CC Strategy_NN ,_, edited_JJ by_IN M_NNP ._. A_DT ._. Crew_NNP
+and_CC P_NN ._. R_NN ._. Kleindorfer_NNP ._. Boston_NNP ,_, MA_NNP :_: Kluwer_NNP Academic_NNP Publishers_NNPS ._.
+PRC_NNP Docket_NNP No_UH ._. R_NN 2000_CD -_: 1_CD USPS_NNP LR-I-_NNP 481_CD ,_, FY_NNP 1999_CD and_CC TY_NNP Mail_NNP
+Processing_NNP Unit_NNP Costs_NNS by_IN Shape_NNP with_IN Piggyback_NNP Factors_NNP (_( Update_NNP to_TO
+LR-I-_NNP 81_CD &_CC 464_CD Provided_VBN in_IN Response_NNP to_TO POR_NNP No_DT ._. 116_CD )_) Using_VBG FY_NNP 99_CD
+Base_NNP Year_NNP and_CC Alternative_NNP IOCS_NNP Methodology_NNP
+
+
+
+

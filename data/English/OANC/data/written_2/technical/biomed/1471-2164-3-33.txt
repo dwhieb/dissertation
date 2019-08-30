@@ -1,0 +1,599 @@
+
+  
+    
+      
+        Background_NNP
+        Organic_NNP phosphate_NN compounds_NNS are_VBP the_DT central_JJ metabolites_NNS
+        of_IN all_DT biological_JJ systems_NNS [_NN 1_CD 2_CD ]_NN ._. Some_DT are_VBP the_DT basic_JJ
+        building_NN blocks_NNS of_IN nucleic_JJ acids_NNS ,_, some_DT like_IN ATP_NNP and_CC GTP_NNP ,_,
+        are_VBP additionally_RB ,_, cellular_JJ energy_NN stores_NNS ,_, others_NNS like_IN cAMP_NN
+        or_CC cGMP_NN are_VBP messengers_NNS in_IN signal_NN transduction_NN ,_, and_CC ,_, yet_RB
+        others_NNS ,_, such_JJ as_IN FAD_NNP ,_, NAD_NNP ,_, thiamine_NN phosphates_NNS and_CC pyridoxal_NN
+        phosphate_NN are_VBP cofactors_NNS for_IN a_DT range_NN of_IN enzymes_NNS [_NN 1_CD 2_CD ]_NN ._.
+        Protein_NNP domains_NNS belonging_VBG to_TO a_DT relatively_RB small_JJ set_NN of_IN
+        structural_JJ folds_NNS are_VBP known_VBN to_TO bind_NN or_CC catalyze_NN reactions_NNS
+        that_WDT utilize_VB these_DT organic_JJ phosphate_NN compounds_NNS (_( see_VB SCOP_NNP
+        database_NN :_: http_NN :_: /_NN /_NN scop_NN ._. mrc-lmb_JJ ._. cam_NN ._. ac_NN ._. uk_NN /_NN scop_NN /_NN )_) [_NN 3_CD 4_CD ]_NN ._.
+        Several_JJ of_IN these_DT folds_NNS trace_VB back_RB to_TO some_DT of_IN the_DT earliest_JJS
+        phases_NNS of_IN the_DT evolution_NN of_IN the_DT protein_NN world_NN ,_, and_CC
+        participate_VB in_IN a_DT wide_JJ range_NN of_IN disparate_JJ biological_JJ
+        functions_NNS in_IN extant_NN proteins_NNS [_NN 4_CD 5_CD ]_NN ._. Some_DT folds_NNS ,_, such_JJ as_IN
+        the_DT P-_NNP loop_NN fold_VB ,_, the_DT Rossmann_NNP fold_VB and_CC the_DT Hsp_NNP 70_CD -_: like_IN fold_VB ,_,
+        have_VBP been_VBN well_RB studied_VBN ,_, and_CC comprise_VBP mainly_RB of_IN dedicated_VBN
+        nucleotide_NN binding_JJ or_CC hydrolyzing_VBG proteins_NNS [_NN 6_CD 7_CD 8_CD 9_CD ]_NN ._.
+        Others_NNS ,_, such_JJ as_IN the_DT palm-domain_JJ ,_, which_WDT is_VBZ found_VBN in_IN adenylyl_NN
+        cyclases_NNS and_CC various_JJ nucleic_JJ acid_NN polymerases_NNS ,_, belong_VB to_TO
+        more_RBR generalized_JJ protein_NN folds_NNS that_WDT contain_VBP representatives_NNS
+        with_IN diverse_JJ biochemical_JJ activities_NNS [_NN 4_CD 10_CD 11_CD ]_NN ._. Current_JJ
+        availability_NN of_IN extensive_JJ genome_NN sequence_NN data_NNS ,_, allows_VBZ one_CD
+        to_TO identify_VB less_RBR numerous_JJ ,_, nevertheless_RB biological_JJ
+        important_JJ organic_JJ phosphate-binding_JJ domains_NNS that_WDT may_MD have_VB
+        previous_JJ eluded_VBD detection_NN ._. The_DT identification_NN of_IN such_JJ
+        domain_NN superfamilies_NNS ,_, containing_VBG enzymes_NNS with_IN several_JJ
+        different_JJ activities_NNS ,_, often_RB throws_VBZ considerable_JJ light_NN on_IN
+        their_PRP$ evolution_NN ,_, structure_NN and_CC catalytic_JJ mechanisms_NNS [_NN 4_CD 12_CD
+        ]_NN ._.
+        The_DT majority_NN of_IN previously_RB known_VBN nucleotide_NN cyclases_NNS
+        belong_VBP to_TO two_CD major_JJ folds_NNS ._. The_DT classical_JJ adenylyl_NN cyclases_NNS ,_,
+        guanylyl_NN cyclases_NNS and_CC the_DT GGDEF_NNP (_( diguanylate_NN cyclase_NN )_)
+        domains_NNS share_VBP the_DT catalytic_JJ palm_NN domain_NN with_IN the_DT family_NN B_NNP
+        DNA_NNP polymerases_NNS ,_, reverse_VB transcriptases_NNS ,_, viral_JJ RNA_NNP
+        dependent_JJ RNA_NNP polymerases_NNS and_CC eukaryote-type_JJ primases_NNS [_NN 4_CD
+        13_CD 14_CD ]_NN ._. The_DT pathogenic_JJ adenylyl_NN cyclases_NNS of_IN several_JJ
+        bacteria_NNS and_CC the_DT CyaA-like_NNP proteobacteria_NN adenylyl_NN cyclases_NNS
+        are_VBP extremely_RB divergent_JJ versions_NNS of_IN the_DT catalytic_JJ domain_NN
+        seen_VBN in_IN the_DT Pol-β_NNP family_NN of_IN nucleotidyl_NN transferases_NNS [_NN 15_CD ]_NN
+        (_( also_RB see_VB SCOP_NNP database_NN :_:
+        http_NN :_: /_NN /_NN scop_NN ._. mrc-lmb_JJ ._. cam_NN ._. ac_NN ._. uk_NN /_NN scop_NN /_NN )_) ._. While_IN the_DT catalytic_JJ
+        domains_NNS of_IN these_DT two_CD superfamilies_NNS have_VBP very_RB different_JJ
+        folds_NNS ,_, they_PRP follow_VBP a_DT similar_JJ reaction_NN mechanism_NN that_WDT is_VBZ
+        dependent_JJ on_IN two_CD Mg_NNP 2_CD +_NN ions_NNS coordinated_VBN by_IN a_DT cluster_NN of_IN
+        acidic_JJ residues_NNS ._. However_RB ,_, the_DT CyaB_NNP adenylyl_NN cyclase_NN ,_, which_WDT
+        was_VBD identified_VBN in_IN the_DT bacterium_NN 
+        Aeromonas_NNP hydrophila_NN is_VBZ unrelated_JJ to_TO
+        any_DT of_IN these_DT above_IN superfamilies_NNS of_IN enzymes_NNS [_NN 16_CD ]_NN ._. Though_IN
+        close_JJ relatives_NNS of_IN this_DT enzyme_NN exist_VB in_IN some_DT bacteria_NNS ,_, like_IN
+        
+        Yersinia_NNP pestis_NNS and_CC 
+        Borrelia_NNP burgdorferi_NN and_CC the_DT archaea_NN ,_,
+        its_PRP$ antecedents_NNS or_CC catalytic_JJ mechanism_NN have_VBP not_RB been_VBN
+        understood_VBN ._. Using_VBG sensitive_JJ sequence_NN profile_NN comparison_NN
+        methods_NNS ,_, we_PRP show_VBP that_IN the_DT CyaB-like_NNP adenylyl_NN cyclases_NNS are_VBP
+        homologs_NNS of_IN the_DT soluble_JJ mammalian_JJ thiamine_NN triphosphatases_NNS
+        [_NN 17_CD ]_NN ,_, and_CC they_PRP define_VB a_DT novel_NN superfamily_RB of_IN enzymes_NNS
+        that_WDT utilize_VB ATP_NNP and_CC other_JJ organic_JJ phosphates_NNS ._. We_PRP present_JJ
+        evidence_NN that_IN a_DT representative_NN of_IN this_DT domain_NN was_VBD present_JJ
+        in_IN the_DT last_JJ common_JJ ancestor_NN of_IN all_DT extant_NN life_NN forms_NNS ._. The_DT
+        primary_JJ biological_JJ function_NN of_IN these_DT proteins_NNS appears_VBZ to_TO be_VB
+        related_VBN to_TO polyphosphate_NN and_CC nucleotide_NN metabolism_NN ._. Cyclic_NNP
+        AMP_NNP generation_NN and_CC thiamine_NN triphosphate_NN hydrolysis_NNS appear_VBP
+        to_TO be_VB secondarily_RB acquired_VBN activities_NNS ._. We_PRP also_RB identify_VBP the_DT
+        potential_JJ active_JJ site-_NN and_CC substrate_NN interacting-residues_JJ
+        and_CC postulate_NN that_IN these_DT enzymes_NNS are_VBP likely_JJ to_TO catalyze_NN a_DT
+        two-metal_JJ ion_NN dependent_JJ reaction_NN on_IN structural_JJ scaffold_NN
+        that_WDT is_VBZ completely_RB different_JJ from_IN that_DT seen_VBN in_IN the_DT other_JJ
+        two_CD superfamilies_NNS of_IN adenylyl_NN cyclases_NNS ._.
+      
+      
+        Results_NNS and_CC discussion_NN
+        
+          Identification_NNP of_IN the_DT CYTH_NNP domain_NN
+          In_IN order_NN to_TO understand_VB the_DT evolutionary_JJ affinities_NNS and_CC
+          provenance_NN of_IN the_DT CyaB_NNP adenylyl_NN cyclase_NN from_IN 
+          Aeromonas_NNP hydrophila_NN ,_, we_PRP carried_VBD
+          out_IN database_NN searches_NNS using_VBG sensitive_JJ sequence_NN profile_NN
+          analysis_NN methods_NNS ._. As_IN CyaB_NNP is_VBZ a_DT small_JJ protein_NN with_IN no_DT
+          detectable_JJ low_JJ complexity_NN regions_NNS ,_, we_PRP used_VBD it_PRP as_IN a_DT seed_NN
+          to_TO initiate_VB a_DT PSI-BLAST_NNP search_NN [_NN 18_CD ]_NN (_( run_VB to_TO
+          convergence_NN ,_, with_IN expect-value_JJ for_IN inclusion_NN in_IN profile_NN =_SYM
+          ._. 01_CD )_) ._. The_DT search_NN resulted_VBD in_IN the_DT detection_NN of_IN its_PRP$ obvious_JJ
+          orthologs_NNS from_IN 
+          Yersinia_NNP and_CC various_JJ archaea_NN at_IN
+          significant_JJ expect_VBP (_( e_SYM )_) values_NNS ranging_VBG from_IN from_IN 3_CD ×_NN 10_CD
+          -_: 43_CD to_TO 8_CD ×_NN 10_CD -_: 5_CD ._. The_DT second_JJ iteration_NN recovered_VBD proteins_NNS
+          from_IN more_JJR archaea_NN ,_, eukaryotes_NNS (_( e-value_JJ :_: 3_CD ×_NN 10_CD -_: 7_CD )_) ,_, 
+          Clostridium_NNP (_( 3_CD ×_NN 10_CD -_: 8_CD )_) and_CC 
+          Borrelia_NNP (_( 6_CD ×_NN 10_CD -_: 8_CD )_) ._. Further_RB
+          iterations_NNS ,_, run_VB to_TO convergence_NN ,_, recovered_VBD the_DT soluble_JJ
+          mammalian_JJ thiamine_NN triphosphatases_NNS (_( 3_CD ×_NN 10_CD -_: 4_LS )_) ,_, and_CC the_DT
+          N-_NNP terminal_NN region_NN of_IN 
+          E_NNP ._. coli_NNS YgiF_NNP ._. At_IN convergence_NN ,_,
+          several_JJ bacterial_JJ proteins_NNS ,_, that_WDT showed_VBD a_DT conserved_JJ EXEXK_NNP
+          (_( where_WRB X_NNP is_VBZ any_DT amino_JJ acid_NN )_) characteristic_NN of_IN this_DT
+          family_NN ,_, and_CC a_DT region_NN C-_NNP terminal_NN to_TO a_DT P-_NNP loop_NN like_IN uridine_NN
+          kinase_NN domain_NN in_IN plants_NNS were_VBD also_RB recovered_VBN at_IN borderline_NN
+          e-values_JJ (_( e_SYM value_NN ~_NN 0_CD ._. 01_CD -_: 0_CD ._. 05_CD )_) ._. Reciprocal_NNP searches_NNS
+          initiated_VBN with_IN the_DT 
+          E_NNP ._. coli_NNS YgiF_NNP protein_NN (_( residues_NNS
+          1_CD -_: 200_CD )_) ,_, not_RB only_RB recovered_VBD its_PRP$ bacterial_JJ orthologs_NNS ,_,
+          archaeal_NN CyaB_NNP homologs_NNS and_CC eukaryotic_JJ proteins_NNS ,_, but_CC also_RB
+          several_JJ others_NNS such_JJ as_IN 
+          Bacillus_NN subtilis_NNS YjbK_NNP ,_, 
+          Methanosarcina_NNP Ma_NNP 2350_CD ,_, and_CC 
+          Mesorhizobium_NNP loti_NN Mll_NNP 4592_CD with_IN
+          e-values_JJ in_IN the_DT range_NN of_IN 10_CD -_: 4_CD -_: 10_CD -_: 6_CD upon_IN first_JJ detection_NN ._.
+          Additionally_RB ,_, transitive_JJ searches_NNS initiated_VBN from_IN the_DT
+          region_NN C-_NNP terminal_NN to_TO the_DT uridine_NN kinase_NN of_IN the_DT plants_NNS
+          (_( 49_CD D_NNP 11_CD ._. 13_CD from_IN 
+          Oryza_NNP sativa_NN ,_, region_NN :_: 250_CD -_: 410_CD )_)
+          recovered_VBD archaeal_NN CyaB_NNP homologs_NNS confirming_VBG their_PRP$
+          relationship_NN to_TO with_IN the_DT other_JJ proteins_NNS detected_VBD in_IN these_DT
+          searches_NNS ._. Regular_JJ expression_NN searches_NNS with_IN the_DT
+          conservation_NN pattern_NN found_VBD in_IN these_DT CyaB_NNP homologs_NNS also_RB
+          recovered_VBD the_DT most_JJS of_IN the_DT members_NNS detected_VBD in_IN the_DT
+          above-mentioned_JJ profile_NN searches_NNS ,_, but_CC failed_VBD to_TO recover_VB
+          any_DT new_JJ candidates_NNS ._.
+          In_IN all_PDT these_DT searches_NNS ,_, the_DT alignments_NNS more_RBR or_CC less_JJR
+          spanned_VBD the_DT entire_JJ length_NN of_IN the_DT CyaB_NNP protein_NN and_CC
+          typically_RB contained_VBD the_DT same_JJ set_NN of_IN conserved_JJ residues_NNS ._.
+          The_DT Gibbs_NNP sampling_VBG procedure_NN revealed_VBD the_DT presence_NN of_IN
+          seven_CD conserved_JJ motifs_NNS ,_, with_IN a_DT probability_NN of_IN chance_NN
+          occurrence_NN less_JJR than_IN 10_CD -_: 14_CD ,_, in_IN the_DT search_NN space_NN
+          comprising_VBG of_IN the_DT 70_CD or_CC so_RB proteins_VBZ that_WDT were_VBD identified_VBN
+          in_IN the_DT above_JJ searches_NNS as_IN having_VBG this_DT domain_NN ._. We_PRP clustered_VBN
+          these_DT proteins_NNS using_VBG the_DT BLASTCLUST_NNP program_NN in_IN several_JJ
+          smaller_JJR clusters_NNS and_CC prepared_VBN multiple_JJ alignments_NNS for_IN the_DT
+          individual_JJ clusters_NNS and_CC predicted_VBD secondary_JJ structure_NN for_IN
+          these_DT set_VBN using_VBG the_DT PHD_NNP program_NN ._. A_DT nearly_RB complete_JJ
+          congruence_NN was_VBD seen_VBN in_IN the_DT comparison_NN of_IN the_DT secondary_JJ
+          structures_NNS of_IN the_DT individual_JJ clusters_NNS ._. In_IN many_JJ cases_NNS ,_, the_DT
+          region_NN of_IN similarity_NN to_TO CyaB_NNP comprised_VBN the_DT entire_JJ length_NN
+          of_IN the_DT target_NN protein_NN detected_VBD in_IN these_DT searches_NNS ._.
+          However_RB ,_, in_IN some_DT cases_NNS it_PRP only_RB comprised_VBN a_DT part_NN of_IN the_DT
+          protein_NN ,_, with_IN rest_NN of_IN the_DT protein_NN being_VBG made_VBN of_IN other_JJ
+          globular_NN domains_NNS ._. These_DT observations_NNS ,_, taken_VBN together_RB ,_,
+          suggested_VBD that_IN CyaB_NNP and_CC soluble_JJ mammalian_JJ thiamine_NN
+          triphosphatases_NNS define_VB a_DT novel_NN superfamily_RB of_IN conserved_JJ
+          domains_NNS ,_, which_WDT may_MD either_CC occur_VB by_IN itself_PRP or_CC in_IN
+          combination_NN with_IN other_JJ domains_NNS ._. We_PRP named_VBD this_DT domain_NN the_DT
+          CYTH_NNP (_( 
+          Cy_NNP aB_NN ,_, 
+          th_NN iamine_NN triphosphatase_NN )_) domain_NN
+          after_IN the_DT two_CD experimentally_RB characterized_VBN proteins_NNS in_IN
+          which_WDT it_PRP is_VBZ present_JJ ._.
+        
+        
+          Sequence_NNP conservation_NN ,_, structure_NN and_CC biochemical_JJ
+          activities_NNS of_IN the_DT CYTH_NNP domain_NN
+          All_DT complete_JJ CYTH_NNP domain_NN sequences_NNS were_VBD aligned_VBN using_VBG
+          the_DT T_NN __NN Coffee_NNP program_NN ,_, and_CC this_DT alignment_NN was_VBD further_RBR
+          refined_VBN based_VBN on_IN the_DT PSI-BLAST_NNP HSPs_NNP ,_, conserved_JJ motifs_NNS
+          detected_VBD in_IN the_DT Gibbs_NNP sampling_VBG procedure_NN and_CC predicted_VBD
+          secondary_JJ structure_NN for_IN the_DT individual_JJ groups_NNS (_( Fig_NNP ._. 1_LS )_) ._. A_DT
+          text_NN copy_NN of_IN the_DT alignment_NN is_VBZ being_VBG provided_VBN as_IN an_DT
+          additional_JJ file_NN (_( see_VB additional_JJ file_NN 1_CD and_CC additional_JJ file_NN
+          2_LS )_) ._. The_DT predicted_VBD secondary_JJ structure_NN for_IN this_DT domain_NN
+          indicated_VBD an_DT α_NN +_NN β_NN fold_VB ,_, with_IN 6_CD conserved_JJ β-strands_JJ and_CC 6_CD
+          conserved_JJ α-helices_JJ ._. Neither_DT the_DT predicted_VBD secondary_JJ
+          structure_NN ,_, nor_CC the_DT pattern_NN of_IN the_DT conserved_JJ residues_NNS
+          revealed_VBD an_DT obvious_JJ relationship_NN with_IN any_DT previously_RB
+          recognized_VBN fold_VB ._. Given_VBN that_IN the_DT CYTH_NNP domain_NN is_VBZ the_DT only_JJ
+          globular_NN domain_NN in_IN the_DT enzymes_NNS ,_, thiamine_NN triphosphatase_NN
+          and_CC CyaB_NNP ,_, it_PRP is_VBZ predicted_VBN to_TO be_VB an_DT enzymatic_JJ domain_NN ._.
+          While_IN the_DT reactions_NNS catalyzed_JJ by_IN these_DT two_CD enzymes_NNS are_VBP
+          distinct_JJ ,_, their_PRP$ substrates_NNS ,_, respectively_RB thiamine_NN
+          triphosphate_NN and_CC ATP_NNP ,_, are_VBP both_DT organic_JJ triphosphates_NNS ._. The_DT
+          CYTH_NNP domain_NN is_VBZ also_RB present_JJ C-_NNP terminal_NN to_TO the_DT catalytic_JJ
+          P-_NNP loop_NN containing_VBG domain_NN in_IN the_DT plant_NN and_CC slime_NN mold_NN
+          uridine_NN kinase_NN homologs_NNS ._. In_IN these_DT proteins_NNS it_PRP is_VBZ likely_JJ
+          to_TO interact_NN with_IN nucleoside_NN diphosphates_NNS or_CC
+          triphosphates_NNS ,_, which_WDT are_VBP substrates_NNS for_IN these_DT kinases_NNS ._.
+          These_DT observations_NNS suggest_VBP that_IN the_DT CYTH_NNP domains_NNS are_VBP
+          likely_JJ to_TO be_VB domains_NNS specialized_VBN to_TO bind_NN nucleotides_NNS and_CC
+          other_JJ organic_JJ phosphates_NNS ._. A_DT multiple_JJ alignment_NN of_IN this_DT
+          superfamily_RB reveals_VBZ the_DT presence_NN of_IN several_JJ nearly_RB
+          universally_RB conserved_JJ charged_VBN residues_NNS that_WDT are_VBP likely_JJ to_TO
+          form_VB the_DT active_JJ site_NN of_IN these_DT enzymes_NNS (_( Fig_NNP ._. 1_LS )_) ._. The_DT most_RBS
+          prominent_JJ of_IN these_DT are_VBP an_DT EXEXK_NNP motif_NN associated_VBN with_IN
+          strand-_NN 1_CD of_IN the_DT domain_NN ,_, two_CD basic_JJ residues_NNS in_IN helix-_NN 2_CD ,_, a_DT
+          K_NNP at_IN the_DT end_NN of_IN strand_NN 3_CD ,_, an_DT E_NNP in_IN strand_NN 4_CD ,_, a_DT basic_JJ
+          residue_NN in_IN helix-_NN 4_CD ,_, a_DT D_NNP at_IN the_DT end_NN of_IN strand_NN 5_CD and_CC two_CD
+          acidic_JJ residues_NNS (_( typically_RB glutamates_NNS )_) in_IN strand_NN 6_CD (_( Fig_NNP ._.
+          1_LS )_) ._. The_DT presence_NN of_IN around_IN 6_CD conserved_JJ acidic_JJ positions_NNS
+          in_IN the_DT majority_NN of_IN the_DT CYTH_NNP domains_NNS suggests_VBZ that_IN it_PRP
+          coordinates_VBZ two_CD divalent_NN metal_NN ions_NNS ._. Analogous_NNP active_JJ
+          sites_NNS ,_, that_WDT coordinate_VB two_CD metal_NN ions_NNS ,_, are_VBP observed_VBN in_IN
+          domains_NNS with_IN similar_JJ activities_NNS ,_, such_JJ as_IN the_DT classical_JJ
+          adenylyl_NN /_NN guanylyl_NN cyclases_NNS ,_, family_NN B_NNP DNA_NNP polymerases_NNS ,_,
+          pol-β_JJ fold_VB nucleotidyl_NN transferases_NNS ,_, and_CC triphosphatases_NNS
+          or_CC phosphoesterases_NNS of_IN the_DT HD_NNP and_CC DHH_NNP superfamilies_NNS [_NN 11_CD
+          15_CD 19_CD 20_CD ]_NN ._. Consistent_NNP with_IN these_DT observations_NNS ,_, both_DT
+          CyaB_NNP and_CC ThTPase_NNP have_VBP been_VBN shown_VBN to_TO require_VB Mg_NNP 2_CD +_NN ions_NNS for_IN
+          their_PRP$ nucleotide_NN cyclase_NN and_CC phosphatase_NN activities_NNS [_NN 16_CD
+          17_CD ]_NN ._.
+          Additional_JJ file_NN 1_CD
+          A_DT text_NN copy_NN of_IN the_DT alignments_NNS of_IN the_DT CYTH_NNP domain_NN and_CC
+          the_DT CHAD_NNP are_VBP provided_VBN in_IN simple_JJ alignment_NN and_CC Clustal_NNP aln_NN
+          formats_NNS
+          Click_NNP here_RB for_IN file_NN
+          Additional_JJ file_NN 2_CD
+          Alignments_NNP presented_VBD in_IN the_DT article_NN in_IN PDF_NNP format_NN ._.
+          Click_NNP here_RB for_IN file_NN
+          The_DT four_CD conserved_JJ basic_JJ residues_NNS in_IN the_DT CYTH_NNP domain_NN
+          are_VBP most_RBS probably_RB involved_VBN in_IN the_DT binding_JJ of_IN acidic_JJ
+          phosphate_NN moieties_NNS of_IN their_PRP$ substrates_NNS (_( Fig_NNP ._. 1_LS )_) ._. The_DT
+          conservation_NN of_IN these_DT two_CD sets_NNS of_IN residues_NNS in_IN the_DT
+          majority_NN of_IN CYTH_NNP domains_NNS suggests_VBZ that_IN most_JJS members_NNS of_IN
+          this_DT group_NN are_VBP likely_JJ to_TO possess_VB an_DT activity_NN dependent_JJ on_IN
+          two_CD metal_NN ions_NNS ,_, with_IN a_DT preference_NN for_IN nucleotides_NNS or_CC
+          related_VBN phosphate-moiety-bearing_JJ substrates_NNS ._. The_DT proposed_VBN
+          biochemical_JJ activity_NN ,_, and_CC the_DT arrangement_NN of_IN predicted_VBD
+          strands_NNS in_IN the_DT primary_JJ structure_NN of_IN the_DT CYTH_NNP domain_NN imply_VBP
+          that_IN the_DT may_MD adopt_VB a_DT barrel_NN or_CC sandwich-like_JJ
+          configuration_NN ,_, with_IN metal_NN ions_NNS and_CC the_DT substrate_NN bound_VBN in_IN
+          the_DT central_JJ cavity_NN ._. The_DT only_RB prominent_JJ exceptions_NNS to_TO the_DT
+          basic_JJ conservation_NN pattern_NN of_IN the_DT CYTH_NNP domains_NNS are_VBP the_DT
+          versions_NNS found_VBD in_IN the_DT plant_NN and_CC 
+          Dictyostelium_NNP pyrimidine_NN kinase_NN
+          homologs_NNS (_( Fig_NNP ._. 1_LS ,_, At_IN 1_CD g_SYM 26190_CD -_: like_IN )_) ._. These_DT versions_NNS lack_VBP 5_CD
+          of_IN the_DT 6_CD conserved_JJ acidic_JJ residues_NNS ,_, but_CC retain_VB 3_CD of_IN the_DT 4_CD
+          conserved_JJ basic_JJ residues_NNS (_( Fig_NNP ._. 1_LS )_) ._. This_DT leads_VBZ to_TO the_DT
+          prediction_NN that_IN these_DT CYTH_NNP domains_NNS are_VBP catalytically_RB
+          inactive_JJ ._. However_RB ,_, as_IN they_PRP retain_VBP the_DT basic_JJ residues_NNS ,_,
+          they_PRP probably_RB still_RB bind_NN the_DT organic_JJ phosphate_NN
+          substrates_NNS ,_, and_CC function_NN as_IN regulatory_JJ domains_NNS that_WDT are_VBP
+          linked_VBN to_TO P-_NNP loop_NN kinase_NN domains_NNS ._.
+        
+        
+          Phyletic_NNP patterns_NNS ,_, evolutionary_JJ history_NN and_CC
+          potential_JJ biological_JJ functions_NNS of_IN the_DT CYTH_NNP domains_NNS
+          CYTH_NNP domains_NNS are_VBP present_JJ in_IN most_JJS of_IN the_DT major_JJ
+          lineages_NNS ,_, for_IN which_WDT sequence_NN information_NN is_VBZ currently_RB
+          available_JJ ,_, from_IN the_DT three_CD principal_JJ superkingdomains_NNS of_IN
+          life_NN (_( Fig_NNP ._. 2_LS )_) ._. We_PRP used_VBD the_DT multiple_JJ alignment_NN of_IN the_DT CYTH_NNP
+          domain_NN to_TO construct_VB phylogenetic_JJ trees_NNS using_VBG the_DT least_JJS
+          squares_NNS ,_, neighbor_NN joining_VBG and_CC maximum_NN likelihood_NN methods_NNS
+          (_( see_VB Materials_NNPS and_CC Methods_NNP )_) ._. The_DT monophyletic_JJ clusters_NNS
+          that_WDT emerged_VBD in_IN this_DT analysis_NN were_VBD essentially_RB the_DT same_JJ
+          as_IN those_DT that_WDT were_VBD derived_VBN through_IN similarity_NN based_VBD
+          clustering_VBG using_VBG BLASTCLUST_NNP ._. The_DT majority_NN of_IN archaeal_NN and_CC
+          eukaryotic_JJ proteins_NNS formed_VBD a_DT monophyletic_JJ cluster_NN to_TO the_DT
+          exclusion_NN of_IN most_JJS of_IN the_DT bacterial_JJ proteins_NNS (_( RELL_NNP
+          Bootstrap_NNP support_NN 77_CD %_NN )_) (_( Fig_NNP ._. 2_LS )_) ._. This_DT cluster_NN was_VBD also_RB
+          supported_VBN by_IN a_DT unique_JJ synapomorphy_NN (_( a_DT shared_VBN derived_VBN
+          character_NN )_) in_IN the_DT form_NN of_IN a_DT conserved_JJ motif_NN (_( Dh_NNP ;_: where_WRB h_NN
+          is_VBZ a_DT hydrophobic_JJ residue_NN )_) associated_VBN with_IN the_DT second_JJ
+          strand_NN (_( Fig_NNP ._. 1_LS )_) ._. This_DT phylogenetic_JJ tree_NN topology_NN
+          resembles_VBZ that_IN of_IN several_JJ proteins_NNS involved_VBN in_IN core_NN
+          cellular_JJ functions_NNS such_JJ as_IN the_DT DNA_NNP recombinase_NN RecA_NNP ,_,
+          aminoacyl_NN tRNA_NN synthetases_NNS ,_, RNA_NNP polymerase_NN and_CC other_JJ RNA_NNP
+          metabolism_NN proteins_NNS [_NN 21_CD 22_CD 23_CD ]_NN ._. This_DT suggests_VBZ that_IN a_DT
+          CYTH_NNP domain_NN was_VBD present_JJ in_IN the_DT last_JJ universal_JJ common_JJ
+          ancestor_NN of_IN all_DT extant_NN life_NN forms_NNS and_CC the_DT extant_NN forms_NNS
+          are_VBP in_IN part_NN vertically_RB inherited_VBD from_IN this_DT ancestral_JJ
+          form_NN ._.
+          However_RB ,_, there_EX are_VBP certain_JJ anomalies_NNS to_TO this_DT pattern_NN ._.
+          The_DT CYTH_NNP domains_NNS are_VBP entirely_RB absent_JJ from_IN the_DT small_JJ
+          genomes_NNS of_IN pathogenic_JJ bacteria_NNS such_JJ as_IN 
+          Rickettsia_NNP and_CC 
+          Chlamydia_NNP as_RB well_RB as_IN some_DT of_IN the_DT
+          large_JJ genomes_NNS such_JJ as_IN 
+          Deinococcus_NNP radiodurans_NNS ._. At_IN least_JJS ,_,
+          a_DT single_JJ copy_NN of_IN the_DT CYTH_NNP domain_NN is_VBZ seen_VBN in_IN most_JJS archaeal_NN
+          and_CC eukaryotic_JJ genomes_NNS sampled_VBN to_TO date_NN ,_, with_IN the_DT
+          exception_NN of_IN 
+          Thermoplasma_NNP and_CC the_DT yeasts_NNS ,_, where_WRB
+          it_PRP is_VBZ absent_JJ ._. This_DT implies_VBZ that_IN the_DT CYTH_NNP domain_NN has_VBZ been_VBN
+          lost_VBN independently_RB on_IN a_DT number_NN of_IN occasions_NNS in_IN evolution_NN ._.
+          CyaB_NNP homologs_NNS from_IN 
+          Aeromonas_NNP ,_, 
+          Clostridium_NNP ,_, Borrelia_NNP ,_, and_CC 
+          Ralstonia_NNP lie_VBP firmly_RB (_( RELL_NNP
+          Bootstrap_NNP >_NN =_SYM 70_CD %_NN )_) within_IN the_DT archaeal_NN and_CC eukaryotic_JJ
+          clusters_NNS ,_, rather_RB than_IN with_IN their_PRP$ bacterial_JJ counterparts_NNS
+          (_( Fig_NNP ._. 2_LS )_) ._. These_DT bacterial_JJ forms_NNS also_RB share_VBP the_DT unique_JJ
+          sequence_NN signature_NN in_IN the_DT second_JJ strand_NN with_IN this_DT group_NN
+          suggesting_VBG that_IN they_PRP have_VBP been_VBN derived_VBN through_IN horizontal_NN
+          transfer_NN from_IN different_JJ archaeal_NN and_CC eukaryotic_JJ sources_NNS
+          (_( Fig_NNP ._. 1_LS )_) ._. In_IN particular_JJ the_DT CyaB_NNP homolog_NN from_IN 
+          Ralstonia_NNP groups_NNS very_RB strongly_RB with_IN
+          the_DT animal_NN versions_NNS and_CC appears_VBZ to_TO be_VB a_DT recent_JJ horizontal_NN
+          transfer_NN in_IN this_DT bacterium_NN from_IN the_DT latter_JJ clade_NN ._. The_DT
+          possibility_NN of_IN lateral_NN transfer_NN of_IN 
+          Aeromonas_NNP CyaB_NNP from_IN an_DT archaeal_NN
+          source_NN has_VBZ been_VBN previously_RB suggested_VBN ,_, and_CC is_VBZ consistent_JJ
+          with_IN the_DT enzyme_NN being_VBG optimally_RB functional_JJ under_IN high_JJ
+          temperature_NN [_NN 16_CD ]_NN ._. There_EX are_VBP 3_CD distinct_JJ CYTH_NNP domains_NNS in_IN
+          the_DT euryarchaeon_NN 
+          Methanosarcina_NNP acetivorans_NNS ,_, in_IN
+          addition_NN to_TO the_DT version_NN which_WDT groups_NNS with_IN the_DT CYTH_NNP
+          domains_NNS that_WDT are_VBP found_VBN ,_, in_IN single_JJ or_CC duplicate_VB copies_NNS ,_, in_IN
+          other_JJ archaea_NN and_CC eukaryotes_NNS ._. These_DT former_JJ versions_NNS ,_,
+          strongly_RB group_NN with_IN CYTH_NNP domains_NNS from_IN actinobacteria_NN
+          (_( Rell_NNP Boostrap_NNP 77_CD %_NN )_) to_TO the_DT exclusion_NN of_IN other_JJ lineage_NN
+          (_( Fig_NNP ._. 2_LS )_) ._. Furthermore_RB ,_, they_PRP share_VBP a_DT fusion_NN to_TO a_DT novel_NN
+          conserved_JJ domain_NN with_IN characteristic_JJ histidines_NNS (_( see_VB
+          below_IN )_) with_IN the_DT actinobacterial_NN versions_NNS ._. Thus_RB they_PRP
+          appear_VBP to_TO have_VB been_VBN transferred_VBN laterally_RB from_IN the_DT
+          actinobacteria_NN into_IN the_DT 
+          Methanosarcina_NNP lineage_NN followed_VBN by_IN
+          a_DT small_JJ lineage_NN specific_JJ expansion_NN in_IN the_DT latter_NN ._.
+          Bacteriophages_NNP ,_, like_IN RB_NNP 49_CD ,_, that_WDT contain_VBP a_DT solo_JJ CYTH_NNP
+          domain_NN ,_, which_WDT is_VBZ closer_JJR to_TO the_DT version_NN seen_VBN in_IN its_PRP$
+          proteobacterial_NN hosts_NNS ,_, could_MD have_VB served_VBN as_IN conduits_NNS for_IN
+          the_DT lateral_NN distribution_NN of_IN this_DT domain_NN ._.
+          The_DT phyletic_JJ pattern_NN of_IN the_DT CYTH_NNP domain_NN is_VBZ not_RB very_RB
+          typical_JJ of_IN signaling_VBG enzymes_NNS like_IN nucleotide_NN cyclases_NNS ._.
+          Classic_JJ adenylyl_NN and_CC guanylyl_NN cyclases_NNS show_VBP a_DT far_RB more_RBR
+          sporadic_JJ distribution_NN ,_, and_CC are_VBP often_RB present_JJ in_IN multiple_JJ
+          copies_NNS fused_JJ to_TO a_DT variety_NN of_IN signaling_VBG domains_NNS such_JJ as_IN
+          the_DT cyclic_JJ nucleotide_NN binding_JJ domains_NNS [_NN 24_CD ]_NN ._. Cyclic_NNP
+          nucleotide_NN generating_NN activity_NN is_VBZ not_RB known_VBN to_TO exist_VB in_IN a_DT
+          subset_NN of_IN the_DT archaea_NN [_NN 25_CD ]_NN ,_, though_IN most_JJS of_IN them_PRP
+          contain_VBP a_DT well-conserved_JJ copy_NN of_IN the_DT CYTH_NNP domain_NN ._.
+          Experimental_NNP analysis_NN on_IN the_DT 
+          Methanococcus_NNP CyaB_NNP homolog_NN revealed_VBD
+          no_DT adenylyl_NN cyclase_NN activity_NN comparable_JJ to_TO that_DT seen_VBN in_IN 
+          Aeromonas_NNP CyaB_NNP [_NN 16_CD ]_NN ._. Likewise_RB ,_,
+          there_EX is_VBZ no_DT evidence_NN for_IN a_DT widespread_JJ presence_NN of_IN the_DT
+          ThTPase_NNP activity_NN in_IN the_DT organisms_NNS that_WDT contain_VBP CYTH_NNP
+          domain_NN proteins_NNS [_NN 17_CD ]_NN ._. Hence_RB ,_, the_DT principal_JJ biological_JJ
+          function_NN of_IN the_DT CYTH_NNP domains_NNS may_MD be_VB different_JJ from_IN those_DT
+          of_IN the_DT experimentally_RB characterized_VBN members_NNS of_IN this_DT
+          family_NN ._. General_JJ conservation_NN of_IN this_DT domain_NN across_IN a_DT
+          range_NN of_IN organisms_NNS ,_, and_CC its_PRP$ presence_NN in_IN the_DT LUCA_NNP suggests_VBZ
+          the_DT possibility_NN of_IN an_DT important_JJ general_JJ role_NN in_IN cellular_JJ
+          process_NN of_IN free-living_JJ organisms_NNS ._. In_IN order_NN to_TO decipher_NN
+          the_DT potential_JJ biological_JJ roles_NNS of_IN this_DT domain_NN we_PRP used_VBD
+          different_JJ forms_NNS of_IN contextual_NN information_NN regarding_VBG these_DT
+          domains_NNS ,_, in_IN the_DT form_NN of_IN domain_NN architectures_NNS ,_, gene_NN
+          neighborhoods_NNS (_( predicted_VBD operons_NNS )_) and_CC experimental_JJ
+          evidence_NN for_IN interactions_NNS between_IN proteins_NNS ._. Both_DT domain_NN
+          architecture_NN and_CC operon_NN analysis_NN have_VBP been_VBN used_VBN
+          extensively_RB to_TO make_VB functional_JJ predictions_NNS of_IN poorly_RB
+          characterized_VBN domains_NNS or_CC genes_NNS [_NN 26_CD 27_CD 28_CD 29_CD ]_NN ._.
+          Moreover_RB ,_, the_DT presence_NN of_IN evolutionarily_RB conserved_JJ
+          operons_NNS often_RB correlates_NNS with_IN the_DT involvement_NN of_IN the_DT
+          component_NN genes_NNS in_IN a_DT sequential_NN pathway_NN or_CC physically_RB
+          interacting_VBG complex_JJ [_NN 30_CD 31_CD ]_NN ._. We_PRP summarize_VB the_DT
+          different_JJ forms_NNS of_IN contextual_NN information_NN that_IN we_PRP
+          extracted_VBD from_IN the_DT CYTH_NNP domains_NNS in_IN the_DT form_NN a_DT network_NN
+          diagram_NN (_( Fig_NNP ._. 3_LS )_) ._.
+          The_DT CYTH_NNP domain_NN shows_VBZ a_DT small_JJ array_NN set_NN of_IN fusions_NNS to_TO
+          other_JJ conserved_JJ domains_NNS (_( Fig_NNP ._. 3_LS )_) ._. One_CD of_IN the_DT most_RBS
+          prevalent_JJ fusions_NNS is_VBZ to_TO an_DT uncharacterized_JJ domain_NN ,_, with_IN a_DT
+          characteristic_JJ pattern_NN of_IN conserved_JJ histidines_NNS and_CC other_JJ
+          charged_VBN residues_NNS ._. This_DT domain_NN is_VBZ predicted_VBN to_TO adopt_VB an_DT
+          α-helical_JJ fold_VB and_CC is_VBZ according_VBG referred_VBN to_TO as_IN CHAD_NNP
+          (_( CHAD_NNP :_: 
+          c_SYM onserved_JJ 
+          h_NN istidine_NN 
+          α_NN -_: helical_JJ 
+          d_SYM omain_NN ;_: Fig_NNP ._. 4_LS )_) ._. The_DT sequence_NN
+          conservation_NN pattern_NN (_( Fig_NNP ._. 4_LS )_) suggests_VBZ that_IN this_DT domain_NN
+          is_VBZ likely_JJ to_TO contain_VB two_CD repeat_NN units_NNS ,_, with_IN at_IN least_JJS 4_CD
+          helices_NNS each_DT ,_, at_IN its_PRP$ core_NN ._. While_IN no_DT clear_JJ functional_JJ
+          prediction_NN can_MD be_VB made_VBN for_IN the_DT CHAD_NNP ,_, the_DT conserved_JJ
+          charged_VBN residues_NNS could_MD form_VB a_DT strongly_RB polar_JJ surface_NN that_WDT
+          could_MD participate_VB ,_, either_CC in_IN metal_NN chelation_NN ,_, or_CC act_NN as_IN
+          phospho-acceptors_JJ ._. Another_DT notable_JJ fusion_NN is_VBZ with_IN a_DT
+          specific_JJ version_NN of_IN the_DT HD_NNP hydrolase_NN domain_NN [_NN 19_CD ]_NN ,_,
+          which_WDT is_VBZ also_RB found_VBN fused_JJ to_TO the_DT C-_NNP terminus_JJ of_IN the_DT
+          HSP_NNP 70_CD -_: fold_VB domain_NN in_IN the_DT exopolyphosphatase_NN (_( PPX_NNP )_) (_( Fig_NNP ._.
+          3_LS )_) ._. HD_NNP domains_NNS typically_RB possess_VBP phosphoesterase_NN
+          activity_NN ,_, and_CC are_VBP fused_JJ to_TO catalytic_JJ domains_NNS that_WDT possess_VBP
+          nucleotide_NN kinase_NN ,_, nucleotidyltransferase_NN ,_, nucleotide_NN
+          cyclase_NN or_CC diguanylate_NN cyclase_NN activity_NN [_NN 19_CD 29_CD ]_NN ._. This_DT
+          fits_VBZ well_RB with_IN the_DT observed_VBN cyclase_NN activity_NN seen_VBN in_IN
+          CyaB_NNP ,_, but_CC is_VBZ also_RB consistent_JJ with_IN phosphotransferase_NN or_CC
+          nucleotidyl_NN transferase_NN for_IN the_DT CYTH_NNP domain_NN ._. Finally_RB ,_,
+          catalytically_RB inactive_JJ versions_NNS of_IN the_DT CYTH_NNP domain_NN are_VBP
+          found_VBN fused_JJ to_TO the_DT nucleotide_NN kinase_NN domain_NN in_IN uridine_NN
+          kinase_NN homologs_NNS and_CC may_MD serve_VB as_IN an_DT allosteric_JJ
+          nucleotide-binding_JJ site_NN in_IN these_DT enzymes_NNS (_( Fig_NNP ._. 3_LS )_) ._.
+          In_IN terms_NNS of_IN conserved_JJ gene_NN neighborhoods_NNS ,_,
+          CYTH-domain-encoding_NNP genes_NNS ,_, like_IN mll_NN 4592_CD from_IN
+          α-proteobacteria_JJ ,_, are_VBP frequently_RB found_VBN in_IN the_DT
+          neighborhood_NN of_IN genes_NNS encoding_VBG solo_NN CHADs_NNP (_( Fig_NNP ._. 3_LS )_) ._.
+          Additionally_RB ,_, in_IN 
+          Methanosarcina_NNP the_DT CYTH-encoding_NNP
+          genes_NNS are_VBP found_VBN in_IN predicted_VBD operons_NNS or_CC in_IN the_DT
+          neighborhood_NN of_IN genes_NNS encoding_VBG exopolyphosphatase_NN (_( PPX_NNP )_)
+          and_CC polyphosphate_NN kinase_NN (_( PPK_NNP )_) ._. Furthermore_RB ,_, in_IN 
+          Sulfolobus_NNP ,_, a_DT gene_NN for_IN a_DT CHAD_NNP
+          protein_NN is_VBZ in_IN a_DT predicted_VBN operon_NN along_IN with_IN genes_NNS for_IN
+          thymidylate_NN kinase_NN and_CC PPX_NNP ._. CHAD-_NNP and_CC CTYH-encoding_NNP genes_NNS
+          are_VBP also_RB found_VBN in_IN the_DT neighborhood_NN of_IN PPK_NNP and_CC PPX_NNP in_IN 
+          Chlorobium_NNP tepidum_NN and_CC 
+          Geobacter_NNP metallireducens_NNS ,_,
+          respectively_RB (_( Fig_NNP ._. 3_LS )_) ._. Genes_NNP for_IN CYTH_NNP domains_NNS also_RB
+          co-occur_JJ in_IN predicted_VBD operons_NNS with_IN genes_NNS for_IN another_DT
+          polyphosphate_NN utilizing_VBG enzyme_NN ,_, the_DT
+          polyphosphate-dependent_JJ NAD_NNP kinase_NN (_( PPNK_NNP )_) ,_, in_IN certain_JJ
+          cyanobacteria_NN (_( eg_NN ._. 
+          Prochlorococcus_NNP marinus_JJ )_) and_CC Gram_NNP
+          positive_JJ bacteria_NNS like_IN 
+          Oceanobacillus_NNP iheyensis_NNS ._. Other_JJ
+          potential_JJ connections_NNS are_VBP furnished_VBN by_IN the_DT co-occurrence_JJ
+          of_IN genes_NNS for_IN CYTH-domain_NNP proteins_NNS with_IN genes_NNS involved_VBN in_IN
+          with_IN nucleoside_NN polyphosphate_NN metabolism_NN ._. These_DT include_VBP
+          co-occurrence_JJ with_IN the_DT gene_NN for_IN adenosine_NN
+          tetraphosphatase_NN (_( APAH_NNP ;_: eg_NN ._. in_IN 
+          Magnetococcus_NNP sp_NN ._. )_) and_CC with_IN genes_NNS
+          encoding_VBG the_DT YjbM-domain_NNP in_IN Gram-positive_NNP bacteria_NNS ._. The_DT
+          YjbM_NNP domain_NN ,_, most_RBS often_RB ,_, occurs_VBZ fused_JJ to_TO pentaphosphate_NN
+          guanosine-_NN 3_CD '_POS -_: pyrophosphohydrolase_NN (_( SpoT_NNP )_) and_CC GTP_NNP
+          pyrophosphokinase_NN (_( RelA_NNP )_) ,_, suggesting_VBG a_DT role_NN for_IN it_PRP in_IN the_DT
+          metabolism_NN of_IN the_DT stringent-response_JJ nucleoside_NN
+          polyphosphate_NN ._.
+          These_DT contextual_NN connections_NNS are_VBP consistent_JJ with_IN the_DT
+          participation_NN of_IN CYTH_NNP domains_NNS in_IN organo-phosphate_JJ
+          biochemistry_NN ,_, and_CC circumstantially_RB associate_JJ it_PRP with_IN the_DT
+          metabolic_JJ network_NN related_VBN to_TO polyphosphates_NNS and_CC
+          nucleoside_NN polyphospates_NNS (_( Fig_NNP ._. 3_LS )_) [_NN 32_CD ]_NN ._. Specifically_RB ,_,
+          PPK_NNP and_CC PPX_NNP have_VBP been_VBN shown_VBN to_TO ,_, respectively_RB ,_, lengthen_VBP or_CC
+          shorten_VB polyphosphate_NN polymers_NNS [_NN 32_CD ]_NN ._. These_DT two_CD enzymes_NNS
+          also_RB appear_VBP to_TO interact_NN with_IN the_DT nucleotide_NN metabolism_NN of_IN
+          the_DT cell_NN ._. In_IN particular_JJ PPK_NNP and_CC PPNK_NNP can_MD utilize_VB Poly_NNP (_( P_NN )_)
+          to_TO synthesize_VB nucleoside_NN polyphosphates_NNS ,_, while_IN PPK_NNP along_IN
+          with_IN adenylate_NN kinase_NN can_MD carry_VB out_IN
+          polyphosphate-dependent_JJ phosphorylation_NN AMP_NNP [_NN 33_CD 34_CD 35_CD ]_NN
+          ._. Hence_RB ,_, it_PRP is_VBZ likely_JJ that_IN the_DT CYTH_NNP domain_NN proteins_NNS
+          participate_VBP directly_RB in_IN this_DT biochemical_JJ network_NN along_IN
+          with_IN these_DT proteins_NNS ._. One_CD possibility_NN is_VBZ that_IN the_DT CYTH_NNP
+          domains_NNS utilize_VB polyphosphates_NNS to_TO synthesize_VB different_JJ
+          organo-phosphate_JJ derivatives_NNS including_VBG nucleotides_NNS ._.
+          Alternatively_RB ,_, they_PRP could_MD also_RB function_VB as_IN
+          phosphoesterases_NNS that_WDT hydrolyze_NN particular_JJ nucleoside_NN
+          polyphosphates_NNS ._. These_DT leads_VBZ could_MD aid_VB further_JJ
+          experimental_JJ investigations_NNS on_IN the_DT CYTH_NNP domain_NN that_WDT might_MD
+          help_VB in_IN uncovering_VBG ancient_JJ ,_, as-yet-unexplored_JJ links_NNS
+          between_IN polyphosphate_NN and_CC nucleotide_NN metabolism_NN ._.
+          Finally_RB ,_, at_IN least_JJS in_IN some_DT lineages_NNS ,_, the_DT CYTH_NNP domain_NN
+          proteins_NNS may_MD have_VB been_VBN secondarily_RB recruited_VBN for_IN other_JJ
+          functions_NNS ._. The_DT CyaB_NNP protein_NN may_MD represent_VB one_CD such_JJ case_NN
+          where_WRB after_IN the_DT original_JJ transfer_NN from_IN an_DT archaeon_NN into_IN
+          the_DT proteobacterial_NN lineage_NN it_PRP may_MD have_VB acquire_VB the_DT novel_NN
+          function_NN as_IN an_DT adenylyl_NN cyclase_NN ._. However_RB ,_, it_PRP is_VBZ entirely_RB
+          possible_JJ that_IN even_RB in_IN this_DT case_NN the_DT adenylyl_NN cyclase_NN
+          activity_NN is_VBZ secondary_JJ to_TO some_DT other_JJ uncharacterized_JJ
+          metabolic_JJ activity_NN ._. The_DT vertebrate_NN soluble_JJ thiamine_NN
+          triphosphatase_NN has_VBZ undergone_VBN accelerated_VBN divergence_NN ,_, as_IN
+          it_PRP is_VBZ present_JJ on_IN a_DT long_JJ branch_NN in_IN the_DT phylogenetic_JJ tree_NN
+          (_( Fig_NNP ._. 2_LS )_) ._. ThTPase_NNP is_VBZ also_RB unusual_JJ in_IN lacking_VBG the_DT 3_CD
+          rdconserved_JJ acidic_JJ domain_NN of_IN the_DT CYTH_NNP domain_NN ._. Hence_RB ,_, it_PRP
+          may_MD represent_VB a_DT case_NN of_IN relatively_RB recent_JJ acquisition_NN of_IN
+          a_DT new_JJ catalytic_JJ activity_NN ._.
+        
+      
+      
+        Conclusions_NNP
+        We_PRP show_VBP that_IN 
+        Aeromonas_NNP adenylyl_NN cyclase_NN CyaB_NNP and_CC
+        thiamine_NN triphosphatase_NN define_VB a_DT novel_NN superfamily_RB of_IN
+        catalytic_JJ domains_NNS that_WDT act_NN on_IN nucleotides_NNS and_CC
+        organo-phosphate_JJ substrates_NNS ._. These_DT domains_NNS are_VBP widely_RB
+        distributed_VBN in_IN all_PDT the_DT 3_CD superkingdoms_NNS of_IN life_NN and_CC can_MD be_VB
+        traced_VBN back_RB to_TO the_DT last_JJ ancestor_NN of_IN all_DT life_NN forms_NNS ._. We_PRP
+        identify_VBP 6_CD conserved_JJ acidic_JJ residues_NNS ,_, that_WDT are_VBP likely_JJ to_TO
+        form_VB the_DT active_JJ site_NN of_IN these_DT enzymes_NNS ,_, and_CC 4_CD conserved_JJ
+        basic_JJ residues_NNS ,_, that_WDT may_MD participate_VB in_IN interactions_NNS with_IN
+        phosphate-moiety-containing_JJ substrates_NNS ._. We_PRP postulate_NN that_IN
+        these_DT enzymes_NNS are_VBP likely_JJ to_TO chelate_NN 2_CD divalent_NN cations_NNS and_CC
+        are_VBP likely_JJ follow_VB a_DT bimetal_NN reaction_NN mechanism_NN similar_JJ to_TO
+        what_WP has_VBZ been_VBN proposed_VBN for_IN nucleotide_NN cyclases_NNS ,_, nucleic_JJ
+        acid_NN polymerases_NNS ,_, or_CC certain_JJ phosphoesterases_NNS such_JJ as_IN those_DT
+        of_IN the_DT HD_NNP and_CC DHH_NNP superfamilies_NNS ._. A_DT version_NN of_IN the_DT CYTH_NNP
+        domain_NN ,_, which_WDT is_VBZ fused_JJ to_TO the_DT catalytic_JJ domain_NN of_IN
+        nucleotide_NN kinases_NNS ,_, lacks_VBZ the_DT predicted_VBN catalytic_JJ residues_NNS ,_,
+        and_CC probably_RB function_VB as_IN an_DT allosteric_JJ regulatory_JJ domain_NN ._.
+        Additionally_RB ,_, we_PRP detected_VBD a_DT novel_NN domain_NN ,_, termed_VBD CHAD_NNP ,_,
+        which_WDT occurs_VBZ fused_JJ to_TO the_DT CYTH_NNP domain_NN or_CC is_VBZ encoded_JJ by_IN
+        genes_NNS occurring_VBG in_IN the_DT same_JJ operon_NN as_IN those_DT encoding_VBG CYTH_NNP
+        domains_NNS ._. CHAD_NNP contains_VBZ conserved_JJ histidines_NNS that_WDT are_VBP
+        predicted_VBN to_TO either_CC chelate_NN metals_NNS or_CC serve_VB as_IN
+        phosphoacceptors_NNS ._. Based_VBN on_IN phyletic_JJ distribution_NN and_CC
+        contextual_NN information_NN ,_, we_PRP conclude_VBP that_IN these_DT enzymes_NNS may_MD
+        play_VB a_DT critical_JJ role_NN in_IN the_DT interface_NN between_IN nucleotide_NN
+        and_CC polyphosphate_NN metabolism_NN ._.
+      
+      
+        Methods_NNP
+        The_DT non-redundant_JJ (_( NR_NNP )_) database_NN of_IN protein_NN sequences_NNS
+        (_( National_NNP Center_NNP for_IN Biotechnology_NNP Information_NNP ,_, NIH_NNP ,_,
+        Bethesda_NNP )_) was_VBD searched_VBD using_VBG the_DT BLASTP_NNP and_CC PSI-BLAST_NNP
+        programs_NNS [_NN 18_CD ]_NN ._. Profile_NNP searches_NNS using_VBG the_DT PSI-BLAST_NNP
+        program_NN were_VBD conducted_VBN either_CC with_IN a_DT single_JJ sequence_NN or_CC an_DT
+        alignment_NN used_VBN as_IN the_DT query_NN ,_, with_IN a_DT profile_NN inclusion_NN
+        expectation_NN (_( E_NNP )_) value_NN threshold_NN of_IN 0_CD ._. 01_CD and_CC were_VBD iterated_JJ
+        until_IN convergence_NN ._. Additionally_RB ,_, hidden_VBN Markov_NNP model_NN based_VBD
+        searches_NNS using_VBG a_DT multiple_JJ alignment_NN of_IN known_VBN members_NNS were_VBD
+        run_VBN using_VBG the_DT HMMER_NNP 2_CD package_NN [_NN 36_CD ]_NN ._. The_DT Gibbs_NNP sampling_VBG
+        procedure_NN ,_, as_IN implemented_VBN in_IN the_DT MACAW_NNP program_NN was_VBD used_VBN to_TO
+        detect_VB and_CC evaluate_VB statistically_RB significant_JJ conserved_JJ
+        motifs_NNS [_NN 37_CD ]_NN ._. Multiple_NNP alignments_NNS were_VBD constructed_VBN using_VBG
+        the_DT T_NN __NN Coffee_NNP program_NN [_NN 38_CD ]_NN ,_, followed_VBN by_IN manual_JJ correction_NN
+        based_VBN on_IN the_DT PSI-BLAST_NNP results_NNS ._. Protein_NNP secondary_JJ structure_NN
+        was_VBD predicted_VBN using_VBG a_DT multiple_JJ alignment_NN as_IN the_DT input_NN for_IN
+        the_DT JPRED_NNP and_CC PHD_NNP programs_NNS [_NN 39_CD 40_CD ]_NN ._. Preliminary_JJ
+        clustering_VBG of_IN proteins_NNS was_VBD done_VBN using_VBG the_DT BLASTCLUST_NNP
+        program_NN with_IN empirically_RB determined_VBN length_NN and_CC score_NN
+        threshold_NN cut_NN off_RP values_NNS (_( For_IN documentation_NN see_VB
+        ftp_NN :_: /_NN /_NN ftp_NN ._. ncbi_NN ._. nih_NN ._. gov_NN /_NN blast_NN /_NN documents_NNS /_NN README_NNP ._. bcl_NN )_) ._.
+        Phylogenetic_NNP analysis_NN was_VBD performed_VBN using_VBG the_DT neighbor_NN
+        joining_VBG or_CC least_JJS square_JJ method_NN followed_VBN by_IN local_JJ
+        rearrangements_NNS using_VBG the_DT maximum_NN likelihood_NN algorithm_NN to_TO
+        predict_VB the_DT most_RBS likely_JJ tree_NN ._. The_DT robustness_NNS of_IN tree_NN
+        topology_NN was_VBD assessed_VBN with_IN 10_CD ,_, 000_CD Resampling_NNP of_IN Estimated_VBN
+        Log_NNP Likelihoods_NNP (_( RELL_NNP )_) bootstrap_NN replicates_NNS ._. The_DT MOLPHY_NNP and_CC
+        Phylip_NNP software_NN packages_NNS were_VBD used_VBN for_IN phylogenetic_JJ
+        analyses_NNS [_NN 41_CD 42_CD ]_NN ._.
+        The_DT species_NNS abbreviations_NNS used_VBN in_IN the_DT alignments_NNS are_VBP :_:
+        Aehy_NNP :_: 
+        Aeromonas_NNP hydrophila_NN ,_, Af_NNP :_: 
+        Archaeoglobus_NNP fulgidus_JJ ,_, Aga_NNP :_: 
+        Anopheles_NNP gambiae_NN ,_, Ana_NNP :_: 
+        Anabaena_NNP sp_NN ._. PCC_NNP 7120_CD ,_, Ap_NNP :_: 
+        Aeropyrum_NNP pernix_NN ,_, At_IN :_: 
+        Arabidopsis_NNP thaliana_NN ,_, Atu_NNP :_: 
+        Agrobacterium_NNP tumefaciens_NNS ,_, Ban_NNP :_: 
+        Bacillus_NN anthracis_NNS ,_, Bb_NNP :_: 
+        Borrelia_NNP burgdorferi_NN ,_, Bha_NNP :_: 
+        Bacillus_NN halodurans_NNS ,_, BPRB_NNP 49_CD :_:
+        Bacteriophage_NNP RB_NNP 49_CD ,_, Bs_NNP :_: 
+        Bacillus_NN subtilis_NNS ,_, Cac_NNP :_: 
+        Clostridium_NNP acetobutylicum_NN ,_, Cau_NNP :_: 
+        Chloroflexus_NNP aurantiacus_JJ ,_, Ccr_NNP :_: 
+        Caulobacter_NNP crescentus_JJ ,_, Ce_NNP :_: 
+        Caenorhabditis_NNP elegans_NNS ,_, Chte_NNP :_: 
+        Chlorobium_NNP tepidum_NN ,_, Cgl_NNP :_: 
+        Corynebacterium_NNP glutamicum_NN ,_, Cpe_NNP :_: 
+        Clostridium_NNP perfringens_NNS ,_, Ddi_NNP :_: 
+        Dictyostelium_NNP discoideum_NN ,_, Dm_NNP :_: 
+        Drosophila_NNP melanogaster_NN ,_, Ec_NNP :_: 
+        Escherichia_NNP coli_NNS ,_, Gme_NNP :_: 
+        Geobacter_NNP metallireducens_NNS ,_, Hi_NNP :_: 
+        Haemophilus_NNP influenzae_NN ,_, Hs_NNP :_: 
+        Homo_NN sapiens_JJ ,_, Hsp_NNP :_: 
+        Halobacterium_NNP sp_NN ._. ,_, Lin_NNP :_: 
+        Listeria_NNP innocua_NN ,_, Lla_NNP :_: 
+        Lactococcus_NNP lactis_NNS ,_, Lmo_NNP :_: 
+        Listeria_NNP monocytogenes_NNS ,_, Mac_NNP :_: 
+        Methanosarcina_NNP acetivorans_NNS ,_, Mcsp_NNP :_: 
+        Magnetococcus_NNP sp_NN ._. Mfas_NNP :_: 
+        Macaca_NNP fascicularis_NNS ,_, Mjan_NNP :_: 
+        Methanococcus_NNP jannaschii_NN ,_, Mka_NNP :_: 
+        Methanopyrus_NNP kandleri_NN ,_, Mlo_NNP :_: 
+        Mesorhizobium_NNP loti_NN ,_, Mma_NNP :_: 
+        Methanosarcina_NNP mazei_NN ,_, Mta_NNP :_: 
+        Methanothermobacter_NNP
+        thermautotrophicus_JJ ,_, Mtu_NNP :_: 
+        Mycobacterium_NNP tuberculosis_NNS ,_, Nm_NNP :_: 
+        Neisseria_NNP meningitidis_NNS ,_, Oih_NNP :_: 
+        Oceanobacillus_NNP iheyensis_NNS ,_, Osa_NNP :_: 
+        Oryza_NNP sativa_NN ,_, Pa_NNP :_: 
+        Pyrococcus_NNP abyssi_NN ,_, Pae_NNP :_: 
+        Pseudomonas_NNP aeruginosa_NN ,_, Pfu_NNP :_: 
+        Pyrococcus_NNP furiosus_JJ ,_, Ph_NNP :_: 
+        Pyrococcus_NNP horikoshii_NN ,_, Pmar_NNP :_: 
+        Prochlorococcus_NNP marinus_JJ ,_, Pmu_NNP :_: 
+        Pasteurella_NNP multocida_NN ,_, Pyae_NNP :_: 
+        Pyrobaculum_NNP aerophilum_NN ,_, Rsol_NNP :_: 
+        Ralstonia_NNP solanacearum_NN ,_, Sa_NNP :_: 
+        Staphylococcus_NNP aureus_NN ,_, Scoe_NNP :_: 
+        Streptomyces_NNP coelicolor_NN ,_, Sen_NNP :_: 
+        Salmonella_NNP enterica_NN ,_, Sme_NNP :_: 
+        Sinorhizobium_NNP meliloti_NN ,_, Spn_NNP :_: 
+        Streptococcus_NNP pneumoniae_NN ,_, Spy_NNP :_: 
+        Streptococcus_NNP pyogenes_NNS ,_, Sso_NNP :_: 
+        Sulfolobus_NNP solfataricus_JJ ,_, Ssp_NNP :_: 
+        Synechocystis_NNP sp_NN ._. PCC_NNP 6803_CD ,_, Sst_NNP :_: 
+        Sulfolobus_NNP tokodaii_NN ,_, StLT_NNP 2_CD :_: 
+        Salmonella_NNP typhimurium_NN LT_NNP 2_CD ,_, Vch_NNP :_: 
+        Vibrio_NNP cholerae_NN ,_, Xaxo_NNP :_: 
+        Xanthomonas_NNP axonopodis_NNS ,_, Xca_NNP :_: 
+        Xanthomonas_NNP campestris_NNS ,_, Xfa_NNP :_: 
+        Xylella_NNP fastidiosa_NN ,_, Ype_NNP :_: 
+        Yersinia_NNP pestis_NNS ._.
+      
+      
+        Authors_NNP '_'' contributions_NNS
+        Author_NN 1_CD (_( LMI_NNP )_) contributed_VBD to_TO the_DT discovery_NN process_NN ,_,
+        preparation_NN of_IN the_DT multiple_JJ sequence_NN alignments_NNS and_CC
+        figures_NNS ,_, Author_NN 2_CD (_( LA_NNP )_) contributed_VBD to_TO the_DT discovery_NN
+        process_NN ,_, preparation_NN of_IN the_DT figures_NNS and_CC manuscript_NN and_CC
+        conceived_VBD the_DT study_NN ._. All_DT authors_NNS read_VBP and_CC approved_VBD the_DT
+        final_JJ manuscript_NN ._.
+      
+    
+  

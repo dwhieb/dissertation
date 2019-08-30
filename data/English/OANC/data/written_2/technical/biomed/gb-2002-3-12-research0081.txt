@@ -1,0 +1,720 @@
+
+  
+    
+      
+        Rationale_NNP
+        The_DT information_NN held_VBN in_IN genomic_JJ sequence_NN is_VBZ encoded_JJ and_CC
+        highly_RB compressed_VBN ;_: to_TO extract_VB biologically_RB interesting_JJ data_NNS
+        we_PRP must_MD decrypt_NN this_DT primary_JJ data_NN computationally_RB ._. This_DT
+        generates_VBZ results_NNS that_WDT provide_VBP a_DT measure_NN of_IN biologically_RB
+        relevant_JJ characteristics_NNS ,_, such_JJ as_IN coding_VBG potential_NN or_CC
+        sequence_NN similarity_NN ,_, present_JJ in_IN the_DT sequence_NN ._. Because_IN of_IN
+        the_DT amount_NN of_IN sequence_NN to_TO be_VB examined_VBN and_CC the_DT volume_NN of_IN
+        data_NNS generated_VBN ,_, these_DT results_NNS must_MD be_VB automatically_RB
+        processed_VBN and_CC carefully_RB filtered_VBN ._.
+        There_EX are_VBP essentially_RB three_CD different_JJ strategies_NNS for_IN
+        whole-genome_JJ analysis_NN ._. The_DT first_JJ is_VBZ a_DT purely_RB automatic_JJ
+        synthesis_NN from_IN a_DT combination_NN of_IN analyses_NNS to_TO predict_VB gene_NN
+        models_NNS ._. The_DT second_JJ aggregates_NNS analyses_NNS contributed_VBN by_IN the_DT
+        research_NN community_NN that_IN the_DT user_NN is_VBZ then_RB required_VBN to_TO
+        integrate_VB visually_RB on_IN a_DT public_JJ website_NN ._. The_DT third_NN is_VBZ
+        curation_NN by_IN experts_NNS using_VBG a_DT full_JJ trail_NN of_IN evidence_NN to_TO
+        support_VB an_DT integrated_VBN assessment_NN ._. Several_JJ groups_NNS charged_VBN
+        with_IN rapidly_RB providing_VBG a_DT dispersed_VBD community_NN with_IN genome_NN
+        annotations_NNS have_VBP chosen_VBN the_DT purely_RB computational_NN route_NN ;_:
+        examples_NNS are_VBP Ensembl_NNP [_NN 1_CD ]_NN and_CC the_DT National_NNP Center_NNP for_IN
+        Biotechnology_NNP Information_NNP (_( NCBI_NNP )_) [_NN 2_CD ]_NN ._. Approaches_NNP using_VBG
+        aggregation_NN adapt_VB well_RB to_TO the_DT dynamics_NNS of_IN collaborative_JJ
+        groups_NNS which_WDT are_VBP focused_VBN on_IN sharing_VBG results_NNS as_IN they_PRP accrue_VB ;_:
+        examples_NNS are_VBP the_DT University_NNP of_IN California_NNP Santa_NNP Cruz_NNP (_( UCSC_NNP )_)
+        genome_NN browser_NN [_NN 3_CD ]_NN and_CC the_DT Distributed_VBN Annotation_NNP System_NNP
+        (_( DAS_NNP )_) [_NN 4_CD ]_NN ._. For_IN organisms_NNS with_IN well_RB established_VBN and_CC
+        cohesive_JJ communities_NNS the_DT demand_NN is_VBZ for_IN carefully_RB reviewed_VBN
+        and_CC qualified_VBN annotations_NNS ;_: this_DT approach_NN was_VBD adopted_VBN by_IN
+        three_CD of_IN the_DT oldest_JJS genome-community_JJ databases_NNS ,_, SGD_NNP for_IN 
+        Saccharomyces_NNP cerevisiae_NN [_NN 5_CD ]_NN ,_, ACeDB_NNP
+        for_IN 
+        Caenorhabditis_NNP
+        elegans_NNS (_( documentation_NN ,_, code_NN and_CC data_NNS available_JJ from_IN
+        anonymous_JJ FTP_NNP servers_NNS at_IN [_NN 6_CD ]_NN )_) and_CC FlyBase_NNP for_IN 
+        Drosophila_NNP melanogaster_NN [_NN 7_CD ]_NN ._.
+        We_PRP decided_VBD to_TO examine_VB every_DT gene_NN and_CC feature_NN of_IN the_DT 
+        Drosophila_NNP genome_NN and_CC manually_RB
+        improve_VB the_DT quality_NN of_IN the_DT annotations_NNS [_NN 8_CD ]_NN ._. The_DT
+        prerequisites_NNS for_IN this_DT are_VBP :_: first_JJ ,_, a_DT computational_NN pipeline_NN
+        and_CC a_DT database_NN capable_JJ of_IN both_DT monitoring_VBG the_DT pipeline_NN 's_POS
+        progress_NN and_CC storing_VBG the_DT raw_JJ analysis_NN ;_: second_JJ ,_, an_DT
+        additional_JJ database_NN to_TO provide_VB the_DT curators_NNS with_IN a_DT
+        complete_JJ ,_, compact_NN and_CC salient_NN collection_NN of_IN evidence_NN and_CC to_TO
+        store_VB the_DT annotations_NNS generated_VBN by_IN the_DT curators_NNS ;_: and_CC third_JJ ,_,
+        an_DT editing_NN tool_NN for_IN the_DT curators_NNS to_TO create_VB and_CC edit_VB
+        annotations_NNS based_VBN on_IN this_DT evidence_NN ._. This_DT paper_NN discusses_NNS
+        our_PRP$ solution_NN for_IN the_DT first_JJ two_CD requirements_NNS ._. The_DT editing_NN
+        tool_NN used_VBD ,_, Apollo_NNP ,_, is_VBZ described_VBN in_IN an_DT accompanying_VBG paper_NN [_NN
+        9_CD ]_NN ._.
+        Our_PRP$ primary_JJ design_NN requirement_NN was_VBD flexibility_NN ._. This_DT was_VBD
+        to_TO ensure_VB that_IN the_DT pipeline_NN could_MD easily_RB be_VB tuned_VBN to_TO the_DT
+        needs_NNS of_IN the_DT curators_NNS ._. We_PRP use_VBP two_CD distinct_JJ databases_NNS with_IN
+        different_JJ schemata_NN to_TO decouple_NN the_DT management_NN of_IN the_DT
+        sequence_NN workflow_NN from_IN the_DT sequence_NN annotation_NN data_NNS itself_PRP ._.
+        Our_PRP$ long-term_JJ goal_NN is_VBZ to_TO provide_VB a_DT set_NN of_IN open-source_JJ
+        software_NN tools_NNS to_TO support_VB large-scale_JJ genome_NN
+        annotation_NN ._.
+      
+      
+        Sequence_NNP datasets_NNS
+        The_DT sequence_NN datasets_NNS are_VBP the_DT primary_JJ input_NN into_IN the_DT
+        pipeline_NN ._. These_DT fall_NN into_IN three_CD categories_NNS :_: the_DT 
+        D_NNP ._. melanogaster_NN genomic_JJ sequence_NN ;_:
+        expressed_VBD sequences_NNS from_IN 
+        D_NNP ._. melanogaster_NN ;_: and_CC informative_JJ
+        sequences_NNS from_IN other_JJ species_NNS ._.
+        Release_NNP 3_CD of_IN the_DT 
+        D_NNP ._. melanogaster_NN genomic_JJ sequence_NN was_VBD
+        generated_VBN using_VBG bacterial_JJ artificial_JJ chromosome_NN (_( BAC_NNP )_)
+        clones_NNS that_WDT formed_VBD a_DT complete_JJ tiling_VBG path_NN across_IN the_DT
+        genome_NN ,_, as_RB well_RB as_IN whole-genome_JJ shotgun_NN sequencing_VBG reads_VBZ [_NN
+        10_CD ]_NN ._. This_DT genomic_JJ sequence_NN was_VBD '_POS frozen_VBN '_POS when_WRB ,_, during_IN
+        sequence_NN finishing_VBG ,_, there_EX was_VBD sufficient_JJ improvement_NN in_IN the_DT
+        quality_NN to_TO justify_VB a_DT new_JJ '_POS release_NN '_'' ._. This_DT provided_VBD a_DT stable_JJ
+        underlying_VBG sequence_NN for_IN annotation_NN ._.
+        In_IN general_JJ ,_, the_DT accuracy_NN and_CC scalability_NN of_IN
+        gene-prediction_JJ and_CC similarity-search_JJ programs_NNS is_VBZ such_JJ that_DT
+        computing_NN on_IN 20_CD million_CD base_NN (_( Mb_NNP )_) chromosome_NN arms_NNS is_VBZ
+        ill-advised_JJ ,_, and_CC we_PRP therefore_RB cut_VBP the_DT finished_VBD genomic_JJ
+        sequence_NN into_IN smaller_JJR segments_NNS ._. Ideally_RB ,_, we_PRP would_MD have_VB
+        broken_VBN the_DT genome_NN down_RB into_IN sequence_NN segments_NNS containing_VBG
+        individual_JJ genes_NNS or_CC a_DT small_JJ number_NN of_IN genes_NNS ._. Before_IN the_DT
+        first_JJ round_NN of_IN annotation_NN ,_, however_RB ,_, this_DT was_VBD not_RB possible_JJ
+        for_IN the_DT simple_JJ reason_NN that_IN the_DT position_NN of_IN the_DT genes_NNS was_VBD as_RB
+        yet_RB unknown_JJ ._. Therefore_RB ,_, we_PRP began_VBD the_DT process_NN of_IN annotation_NN
+        using_VBG a_DT non-biological_JJ breakdown_NN of_IN the_DT sequence_NN ._. We_PRP
+        considered_VBD two_CD possibilities_NNS for_IN the_DT initial_JJ sequence_NN
+        segments_NNS ,_, either_CC individual_JJ BACs_NNP or_CC the_DT segments_NNS that_WDT
+        comprise_VBP the_DT public_JJ database_NN accessions_NNS ._. We_PRP rejected_VBD the_DT
+        use_NN of_IN individual_JJ BAC_NNP sequences_NNS and_CC chose_VBD to_TO use_VB the_DT
+        GenBank_NNP accessions_NNS as_IN the_DT main_JJ sequence_NN unit_NN for_IN our_PRP$
+        genomic_JJ pipeline_NN because_IN the_DT BACs_NNP are_VBP physical_JJ clones_NNS with_IN
+        physical_JJ breaks_NNS ,_, while_IN the_DT GenBank_NNP accession_NN can_MD
+        subsequently_RB be_VB refined_VBN to_TO respective_JJ biological_JJ entities_NNS ._.
+        At_IN around_IN 270_CD kilobases_NNS (_( kb_NN )_) ,_, these_DT are_VBP manageable_JJ by_IN most_JJS
+        analysis_NN programs_NNS and_CC provide_VB a_DT convenient_JJ unit_NN of_IN work_NN for_IN
+        the_DT curators_NNS ._. To_TO minimize_VB the_DT problem_NN of_IN genes_NNS straddling_VBG
+        these_DT arbitrary_JJ units_NNS we_PRP first_RB fed_VBD the_DT BAC_NNP sequences_NNS into_IN a_DT
+        lightweight_JJ version_NN of_IN the_DT full_JJ annotation_NN pipeline_NN that_WDT
+        estimated_VBD the_DT positions_NNS of_IN genes_NNS ._. We_PRP then_RB projected_VBD the_DT
+        coordinates_VBZ of_IN these_DT predicted_VBN genes_NNS from_IN the_DT BAC_NNP clones_NNS
+        onto_IN the_DT full-arm_JJ sequence_NN assembly_NN ._. This_DT step_NN was_VBD followed_VBN
+        by_IN the_DT use_NN of_IN another_DT in-house_JJ software_NN tool_NN to_TO divide_VB up_RP
+        the_DT arm_NN sequence_NN ,_, trying_VBG to_TO simultaneously_RB optimize_NN two_CD
+        constraints_NNS :_: to_TO avoid_VB the_DT creation_NN of_IN gene_NN models_NNS that_WDT
+        straddle_NN the_DT boundaries_NNS between_IN two_CD accessions_NNS ;_: and_CC to_TO
+        maintain_VB a_DT close_JJ correspondence_NN to_TO the_DT pre-existing_JJ Release_NNP
+        2_CD accessions_NNS in_IN GenBank_NNP /_NN EMBL_NNP /_NN DDBJ_NNP [_NN 11_CD ,_, 12_CD ,_, 13_CD ]_NN ._. During_IN the_DT
+        annotation_NN process_NN ,_, if_IN a_DT curator_NN discovered_VBN that_IN a_DT unit_NN
+        broke_VBD a_DT gene_NN ,_, they_PRP requested_VBD an_DT appropriate_JJ extension_NN of_IN
+        the_DT accession_NN prior_RB to_TO further_VB annotation_NN ._. In_IN hindsight_NN we_PRP
+        have_VBP realized_VBN that_IN we_PRP should_MD have_VB focused_VBN solely_RB on_IN
+        minimizing_VBG gene_NN breaks_NNS because_IN further_JJ adjustments_NNS by_IN
+        GenBank_NNP were_VBD still_RB needed_VBN to_TO ensure_VB that_RB ,_, as_RB much_RB as_IN
+        possible_JJ ,_, genes_NNS remained_VBD on_IN the_DT same_JJ sequence_NN
+        accession_NN ._.
+        To_TO re-annotate_JJ a_DT genome_NN in_IN sufficient_JJ detail_NN ,_, an_DT
+        extensive_JJ set_NN of_IN additional_JJ sequences_NNS is_VBZ necessary_JJ to_TO
+        generate_VB sequence_NN alignments_NNS and_CC search_NN for_IN homologous_RB
+        sequences_NNS ._. In_IN the_DT case_NN of_IN this_DT project_NN ,_, these_DT sequence_NN
+        datasets_NNS included_VBD assembled_VBN full-insert_JJ cDNA_NN sequences_NNS ,_,
+        expressed_VBD sequence_NN tags_NNS (_( ESTs_NNP )_) ,_, and_CC cDNA_NN sequence_NN reads_VBZ
+        from_IN 
+        D_NNP ._. melanogaster_NN as_RB well_RB as_IN peptide_NN ,_,
+        cDNA_NN ,_, and_CC EST_NNP sequences_NNS from_IN other_JJ species_NNS ._. The_DT sequence_NN
+        datasets_NNS we_PRP used_VBD are_VBP listed_VBN in_IN Figure_NN 1_CD and_CC described_VBD more_RBR
+        fully_RB in_IN [_NN 8_CD ]_NN ._.
+      
+      
+        Software_NNP for_IN task_NN monitoring_NN and_CC scheduling_VBG the_DT
+        computational_NN pipeline_NN
+        There_EX are_VBP three_CD major_JJ infrastructure_NN components_NNS of_IN the_DT
+        pipeline_NN :_: the_DT database_NN ,_, the_DT Perl_NNP module_NN (_( named_VBN Pipeline_NNP )_) ,_,
+        and_CC sufficient_JJ computational_NN power_NN ,_, allocated_VBN by_IN a_DT
+        job-management_JJ system_NN ._. The_DT database_NN is_VBZ crucial_JJ because_IN it_PRP
+        maintains_VBZ a_DT persisting_VBG record_NN reflecting_VBG the_DT current_JJ state_NN
+        of_IN all_PDT the_DT tasks_NNS that_WDT are_VBP in_IN progress_NN ._. Maintaining_NNP the_DT
+        jobs_NNS ,_, job_NN parameters_NNS and_CC job_NN output_NN in_IN a_DT database_NN avoids_VBZ
+        some_DT of_IN the_DT inherent_JJ limitations_NNS of_IN a_DT file-system_JJ approach_NN ._.
+        It_PRP is_VBZ easier_JJR to_TO update_VB ,_, provides_VBZ a_DT built-in_JJ querying_VBG
+        language_NN and_CC offers_VBZ many_JJ other_JJ data-management_JJ tools_NNS that_WDT
+        make_VBP the_DT system_NN more_RBR robust_JJ ._. We_PRP used_VBD a_DT MySQL_NNP [_NN 14_CD ]_NN database_NN
+        to_TO manage_VB the_DT large_JJ number_NN of_IN analyses_NNS run_VBP against_IN the_DT
+        genome_NN ,_, transcriptome_NN and_CC proteome_NN (_( see_VB below_IN )_) ._.
+        MySQL_NNP is_VBZ an_DT open-source_JJ '_POS structured_VBN query_NN language_NN '_''
+        (_( SQL_NNP )_) database_NN that_IN ,_, despite_IN having_VBG a_DT limited_JJ set_NN of_IN
+        features_NNS ,_, has_VBZ the_DT advantage_NN of_IN being_VBG fast_RB ,_, free_JJ ,_, and_CC simple_JJ
+        to_TO maintain_VB ._. SQL_NNP is_VBZ a_DT database_NN query_NN language_NN that_WDT was_VBD
+        adopted_VBN as_IN an_DT industry_NN standard_JJ in_IN 1986_CD ._. An_DT SQL_NNP database_NN
+        manages_VBZ data_NNS as_IN a_DT collection_NN of_IN tables_NNS ._. Each_DT table_NN has_VBZ a_DT
+        fixed_VBN set_NN of_IN columns_NNS (_( also_RB called_VBN fields_NNS )_) and_CC usually_RB
+        corresponds_NNS to_TO a_DT particular_JJ concept_NN in_IN the_DT domain_NN being_VBG
+        modeled_VBN ._. Tables_NNP can_MD be_VB cross-referenced_JJ by_IN using_VBG primary_JJ
+        and_CC foreign_JJ key_JJ fields_NNS ._. The_DT database_NN tables_NNS can_MD be_VB queried_VBN
+        using_VBG the_DT SQL_NNP language_NN ,_, which_WDT allows_VBZ the_DT dynamic_JJ
+        combination_NN of_IN data_NNS from_IN different_JJ tables_NNS [_NN 15_CD ]_NN ._. A_DT
+        collection_NN of_IN these_DT tables_NNS is_VBZ called_VBN a_DT database_NN schema_NN ,_, and_CC
+        a_DT particular_JJ instantiation_NN of_IN that_DT schema_NN with_IN the_DT tables_NNS
+        populated_VBN is_VBZ a_DT database_NN ._. The_DT Perl_NNP modules_NNS provide_VBP an_DT
+        application_NN programmer_NN interface_NN (_( API_NNP )_) that_WDT is_VBZ used_VBN to_TO
+        launch_VB and_CC monitor_VB jobs_NNS ,_, retrieve_VB results_NNS and_CC support_VB other_JJ
+        interactions_NNS with_IN the_DT database_NN ._.
+        There_EX are_VBP four_CD basic_JJ abstractions_NNS that_IN all_DT components_NNS of_IN
+        the_DT pipeline_NN system_NN operate_VB upon_IN :_: a_DT sequence_NN ,_, a_DT job_NN ,_, an_DT
+        analysis_NN and_CC a_DT batch_NN ._. A_NNP '_POS sequence_NN '_'' is_VBZ defined_VBN as_IN a_DT string_NN
+        of_IN amino_JJ or_CC nucleic_JJ acids_NNS held_VBN either_CC in_IN the_DT database_NN or_CC as_IN
+        an_DT entry_NN in_IN a_DT FASTA_NNP file_NN (_( usually_RB both_DT )_) ._. A_NNP '_POS job_NN '_'' is_VBZ an_DT
+        instance_NN of_IN a_DT particular_JJ program_NN being_VBG run_NN to_TO analyze_VB a_DT
+        particular_JJ sequence_NN ,_, for_IN example_NN running_VBG BLASTX_NNP to_TO compare_VB
+        one_CD sequence_NN to_TO a_DT peptide_NN set_VBN is_VBZ considered_VBN a_DT single_JJ job_NN ._.
+        Jobs_NNP can_MD be_VB chained_JJ together_RB ._. If_IN job_NN A_DT is_VBZ dependent_JJ on_IN the_DT
+        output_NN of_IN job_NN B_NNP ,_, then_RB the_DT pipeline_NN software_NN will_MD not_RB launch_VB
+        job_NN A_DT until_IN job_NN B_NNP is_VBZ complete_JJ ._. This_DT situation_NN occurs_VBZ ,_, for_IN
+        example_NN ,_, with_IN programs_NNS that_WDT require_VBP masked_VBN sequence_NN as_IN
+        input_NN ._. An_NNP '_POS analysis_NN '_'' is_VBZ a_DT collection_NN of_IN jobs_NNS using_VBG the_DT same_JJ
+        program_NN and_CC parameters_NNS against_IN a_DT set_NN of_IN sequences_NNS ._. Lastly_NNP ,_,
+        a_NNP '_POS batch_NN '_'' is_VBZ a_DT collection_NN of_IN analyses_NNS a_DT user_NN launches_VBZ
+        simultaneously_RB ._. Jobs_NNP ,_, analyses_NNS and_CC batches_NNS all_DT have_VBP a_NNP
+        '_POS status_NN '_'' attribute_NN that_WDT is_VBZ used_VBN to_TO track_VB their_PRP$ progress_NN
+        through_IN the_DT pipeline_NN (_( Figure_NN 2_LS )_) ._.
+        The_DT three_CD applications_NNS that_WDT use_NN the_DT Perl_NNP API_NNP are_VBP the_DT
+        pipe_NN __NN launcher_NN script_NN ,_, the_DT flyshell_NN interactive_JJ command_NN line_NN
+        interpreter_NN ,_, and_CC the_DT internet_NN front_JJ end_NN [_NN 16_CD ]_NN ._. Both_DT
+        pipe_NN __NN launcher_NN and_CC flyshell_NN provide_VB pipeline_NN users_NNS with_IN a_DT
+        variety_NN of_IN powerful_JJ ways_NNS to_TO launch_VB and_CC monitor_VB jobs_NNS ,_,
+        analyses_NNS and_CC batches_NNS ._. These_DT tools_NNS are_VBP useful_JJ to_TO those_DT with_IN
+        a_DT basic_JJ understanding_NN of_IN Unix_NNP and_CC bioinformatics_NNS tools_NNS ,_, as_RB
+        well_RB as_IN those_DT with_IN a_DT good_JJ knowledge_NN of_IN object-oriented_JJ
+        Peri_NNP ._. The_DT web_NN front_JJ end_NN is_VBZ used_VBN for_IN monitoring_VBG the_DT progress_NN
+        of_IN the_DT jobs_NNS in_IN the_DT pipeline_NN ._.
+        The_DT pipe_NN __NN launcher_NN application_NN is_VBZ a_DT command-line_JJ tool_NN
+        used_VBN to_TO launch_VB jobs_NNS ._. Users_NNS create_VBP configuration_NN files_NNS that_WDT
+        specify_VB input_NN data_NNS sources_NNS and_CC any_DT number_NN of_IN analyses_NNS to_TO be_VB
+        performed_VBN on_IN each_DT of_IN these_DT data_NNS sources_NNS ,_, along_IN with_IN the_DT
+        arguments_NNS for_IN each_DT of_IN the_DT analyses_NNS ._. Most_JJS of_IN these_DT
+        specifications_NNS can_MD be_VB modified_VBN with_IN command_NN line_NN options_NNS ._.
+        This_DT allows_VBZ each_DT user_NN to_TO create_VB a_DT library_NN of_IN configuration_NN
+        files_NNS for_IN sending_VBG off_RP large_JJ batches_NNS of_IN jobs_NNS that_WDT can_MD be_VB
+        altered_VBN with_IN command-line_JJ arguments_NNS when_WRB necessary_JJ ._.
+        Pipe_NNP __NN launcher_NN returns_VBZ the_DT batch_NN identifier_NN generated_VBN by_IN the_DT
+        database_NN to_TO the_DT user_NN ._. To_TO monitor_VB jobs_NNS in_IN progress_NN ,_, the_DT
+        batch_NN identifier_NN can_MD be_VB used_VBN in_IN a_DT variety_NN of_IN commands_NNS ,_, such_JJ
+        as_IN '_POS monitor_NN '_POS ,_, '_'' batch_NN '_'' ,_, '_'' delete-batch_JJ '_POS and_CC
+        '_POS query_NN __NN batch_NN '_'' ._.
+        The_DT flyshell_NN application_NN is_VBZ an_DT interactive_JJ command-line_JJ
+        Perl_NNP interpreter_NN that_WDT presents_VBZ the_DT database_NN and_CC pipeline_NN
+        APIs_NNP to_TO the_DT end_NN user_NN ,_, providing_VBG a_DT more_RBR flexible_JJ interface_NN
+        to_TO users_NNS who_WP are_VBP familiar_JJ with_IN object-oriented_JJ Perl_NNP ._.
+        The_DT web_NN front_JJ end_NN allows_VBZ convenient_JJ ,_, browser-based_JJ
+        access_NN for_IN end_NN users_NNS to_TO follow_VB the_DT status_NN of_IN analyses_NNS ._. An_DT
+        HTML_NNP form_NN allows_VBZ users_NNS to_TO query_NN the_DT pipeline_NN database_NN by_IN
+        job_NN ,_, analysis_NN ,_, batch_NN or_CC sequence_NN identifier_NN ._. The_DT user_NN can_MD
+        drill_VB down_RB through_IN batches_NNS and_CC analyses_NNS to_TO get_VB to_TO
+        individual_JJ jobs_NNS and_CC get_VB the_DT status_NN ,_, raw_JJ job_NN output_NN and_CC
+        error_NN files_NNS for_IN each_DT job_NN ._. This_DT window_NN on_IN the_DT pipeline_NN has_VBZ
+        proved_VBN a_DT useful_JJ tool_NN for_IN quickly_RB viewing_VBG results_NNS ._.
+        Once_RB a_DT program_NN has_VBZ successfully_RB completed_VBN an_DT analysis_NN of_IN
+        a_DT sequence_NN ,_, the_DT pipeline_NN system_NN sets_VBZ its_PRP$ job_NN status_NN in_IN the_DT
+        database_NN to_TO FIN_NNP (_( Figure_NN 2_LS )_) ._. The_DT raw_JJ results_NNS are_VBP recorded_VBN in_IN
+        the_DT database_NN and_CC may_MD be_VB retrieved_VBN through_IN the_DT web_NN or_CC Perl_NNP
+        interfaces_NNS ._. The_DT raw_JJ results_NNS are_VBP then_RB parsed_JJ ,_, filtered_VBN and_CC
+        stored_VBN in_IN the_DT database_NN and_CC the_DT job_NN 's_POS status_NN is_VBZ set_VBN to_TO
+        PROCD_NNP ._. At_IN this_DT point_NN a_DT GAME_NNP (_( Genome_NNP Annotation_NNP Markup_NNP
+        Elements_NNS )_) XML_NNP (_( extensible_JJ Markup_NNP Language_NNP [_NN 17_CD ]_NN )_)
+        representation_NN of_IN the_DT processed_VBN data_NN can_MD be_VB retrieved_VBN
+        through_IN either_DT the_DT Perl_NNP or_CC web_NN interfaces_NNS ._.
+      
+      
+        Analysis_NN software_NN
+        
+          Sim_NNP 4_CD wrap_NN
+          Sim_NNP 4_CD [_NN 18_CD ]_NN is_VBZ a_DT highly_RB useful_JJ and_CC largely_RB accurate_JJ way_NN
+          of_IN aligning_VBG full-length_JJ cDNA_NN and_CC EST_NNP sequences_NNS against_IN
+          the_DT genome_NN [_NN 19_CD ]_NN ._. Sim_NNP 4_CD is_VBZ designed_VBN to_TO align_VBP nearly_RB
+          identical_JJ sequences_NNS and_CC if_IN dissimilar_JJ sequences_NNS are_VBP used_VBN ,_,
+          the_DT results_NNS will_MD contain_VB many_JJ errors_NNS and_CC the_DT execution_NN
+          time_NN will_MD be_VB long_JJ ._. To_TO circumvent_VB this_DT problem_NN ,_, we_PRP split_VBD
+          the_DT alignment_NN of_IN 
+          Drosophila_NNP cDNA_NN and_CC EST_NNP sequences_NNS
+          into_IN two_CD serial_NN tasks_NNS and_CC wrote_VBD a_DT utility_NN program_NN ,_,
+          sim_NN 4_CD wrap_NN ,_, to_TO manage_VB these_DT tasks_NNS ._. Sim_NNP 4_CD wrap_NN executes_VBZ a_DT
+          first_JJ pass_NN using_VBG BLASTN_NNP ,_, using_VBG the_DT genome_NN sequence_NN as_IN the_DT
+          query_NN sequence_NN and_CC the_DT cDNA_NN sequences_NNS as_IN the_DT subject_JJ
+          database_NN ._. We_PRP run_VBP BLASTN_NNP [_NN 20_CD ,_, 21_CD ]_NN with_IN the_NNP '_POS -_: B_NNP 0_CD '_POS option_NN ,_,
+          as_IN we_PRP are_VBP only_RB interested_JJ in_IN the_DT summary_NN part_NN of_IN the_DT
+          BLAST_NN report_NN ,_, not_RB in_IN the_DT high-scoring_JJ pairs_NNS (_( HSPs_NNP )_)
+          portion_NN where_WRB the_DT alignments_NNS are_VBP shown_VBN ._. From_IN this_DT BLAST_NN
+          report_NN summary_NN sim_NN 4_CD wrap_NN parses_NNS out_RP the_DT sequence_NN
+          identifiers_NNS and_CC filters_VBZ the_DT original_JJ database_NN to_TO produce_VB
+          a_DT temporary_JJ FASTA_NNP data_NNS file_VBP that_WDT contains_VBZ only_RB these_DT
+          sequences_NNS ._. Finally_RB we_PRP run_VBP sim_NN 4_CD again_RB using_VBG the_DT genomic_JJ
+          sequence_NN as_IN the_DT query_NN and_CC the_DT minimal_JJ set_NN of_IN sequences_NNS
+          that_IN we_PRP have_VBP culled_VBN as_IN the_DT subject_NN ._.
+        
+        
+          Autopromote_NNP
+          The_DT 
+          Drosophila_NNP genome_NN was_VBD not_RB a_DT blank_JJ
+          slate_NN because_IN there_EX were_VBD previous_JJ annotations_NNS from_IN the_DT
+          Release_NNP 2_CD genomic_JJ sequence_NN [_NN 22_CD ]_NN ._. Therefore_RB ,_, before_IN the_DT
+          curation_NN of_IN a_DT chromosome_NN arm_NN began_VBD ,_, we_PRP first_JJ
+          '_POS autopromoted_JJ '_POS the_DT Release_NNP 2_CD annotations_NNS and_CC certain_JJ
+          results_NNS from_IN the_DT computational_NN analyses_NNS to_TO the_DT status_NN of_IN
+          annotations_NNS ._. This_DT simplified_VBN the_DT annotation_NN process_NN by_IN
+          providing_VBG an_DT advanced_VBD starting_NN point_NN for_IN the_DT curators_NNS to_TO
+          work_VB from_IN ._.
+          Autopromotion_NNP is_VBZ not_RB a_DT straightforward_JJ process_NN ._. First_LS ,_,
+          there_EX have_VBP been_VBN significant_JJ changes_NNS to_TO the_DT genome_NN
+          sequence_NN between_IN releases_NNS ._. Second_JJ ,_, all_DT of_IN the_DT annotations_NNS
+          present_JJ in_IN Release_NNP 2_CD must_MD be_VB accounted_VBN for_IN ,_, even_RB if_IN
+          ultimately_RB they_PRP are_VBP deleted_VBN ._. Third_NNP ,_, the_DT autopromotion_NN
+          software_NN must_MD synthesize_VB different_JJ analysis_NN results_NNS ,_, some_DT
+          of_IN which_WDT may_MD be_VB conflicting_JJ ._. Autopromote_NNP resolves_NNS
+          conflicts_NNS using_VBG graph_NN theory_NN and_CC voting_NN networks_NNS ._.
+          Table_NNP 1_CD lists_NNS the_DT programs_NNS and_CC parameters_NNS that_WDT were_VBD
+          used_VBN for_IN the_DT analysis_NN of_IN the_DT genomic_JJ sequence_NN and_CC peptide_NN
+          analysis_NN ._.
+        
+      
+      
+        Berkeley_NN Output_NN Parser_NNP filtering_VBG
+        
+          Sim_NNP 4_CD filtering_VBG
+          Our_PRP$ primary_JJ objective_NN in_IN using_VBG sim_NN 4_CD was_VBD to_TO align_VBP 
+          Drosophila_NNP ESTs_NNP and_CC cDNA_NN sequences_NNS
+          only_RB to_TO the_DT genes_NNS that_IN encoded_JJ them_PRP ,_, and_CC not_RB to_TO
+          gene-family_JJ members_NNS ,_, and_CC for_IN this_DT reason_NN we_PRP applied_VBD
+          stringent_JJ measures_NNS before_IN accepting_VBG an_DT alignment_NN ._. For_IN
+          sim_NN 4_CD the_DT filtering_VBG parameters_NNS are_VBP as_IN follows_VBZ ._.
+          
+          Score_NN is_VBZ the_DT minimum_JJ percent_NN
+          identity_NN that_WDT is_VBZ required_VBN to_TO retain_VB an_DT HSP_NNP or_CC alignment_NN ;_:
+          the_DT default_NN value_NN is_VBZ 95_CD %_NN ._.
+          
+          Coverage_NNP is_VBZ a_DT percentage_NN of_IN the_DT
+          total_JJ length_NN of_IN the_DT sequence_NN that_WDT is_VBZ aligned_VBN to_TO the_DT
+          genome_NN sequence_NN ._. Any_DT alignments_NNS that_WDT are_VBP less_JJR than_IN this_DT
+          percentage_NN length_NN are_VBP eliminated_VBN ;_: we_PRP required_VBD 80_CD %_NN of_IN the_DT
+          length_NN of_IN a_DT cDNA_NN to_TO be_VB aligned_VBN ._.
+          
+          Discontinuity_NNP sets_VBZ a_DT maximum_NN gap_NN
+          length_NN in_IN the_DT aligned_VBN EST_NNP or_CC cDNA_NN sequence_NN ._. The_DT primary_JJ
+          aim_NN of_IN this_DT parameter_NN is_VBZ to_TO identify_VB and_CC eliminate_VB
+          unrelated_JJ sequences_NNS that_WDT were_VBD physically_RB linked_VBN by_IN a_DT cDNA_NN
+          library_NN construction_NN artifact_NN ._.
+          
+          Remove_NNP poly_RB (_( A_DT )_) tail_NN is_VBZ a_DT Boolean_NNP to_TO
+          indicate_VB that_IN short_JJ terminal_NN HSPs_NNP consisting_VBG primarily_RB of_IN
+          runs_NNS of_IN a_DT single_JJ base_NN (_( either_CC T_NN or_CC A_DT because_IN we_PRP could_MD not_RB
+          be_VB certain_JJ of_IN the_DT strand_NN )_) are_VBP to_TO be_VB removed_VBN ._.
+          
+          Join_NNP 5_CD '_POS and_CC 3_CD '_POS is_VBZ a_DT Boolean_NNP
+          operation_NN and_CC is_VBZ used_VBN for_IN EST_NNP data_NNS ._. If_IN it_PRP is_VBZ true_JJ ,_, BOP_NNP
+          will_MD do_VB two_CD things_NNS ._. First_LS ,_, BOP_NNP will_MD reverse_VB complement_VB
+          any_DT hits_NNS where_WRB the_DT name_NN of_IN the_DT sequence_NN contains_VBZ the_DT
+          phrase_NN '_'' 3_CD prime_JJ '_'' ._. Second_JJ ,_, it_PRP will_MD merge_VB all_DT alignments_NNS
+          where_WRB the_DT prefixes_NNS of_IN the_DT name_NN are_VBP the_DT same_JJ ._. Originally_RB
+          this_DT was_VBD used_VBN solely_RB for_IN the_DT 5_CD '_POS and_CC 3_CD '_POS ESTs_NNP that_WDT were_VBD
+          available_JJ ._. However_RB ,_, when_WRB we_PRP introduced_VBD the_DT internal_JJ
+          sequencing_VBG reads_VBZ from_IN the_DT 
+          Drosophila_NNP Gene_NNP Collection_NNP (_( DGC_NNP )_)
+          cDNA_NN sequencing_VBG project_NN [_NN 23_CD ]_NN into_IN the_DT pipeline_NN this_DT
+          portion_NN of_IN code_NN became_VBD an_DT alternative_NN means_NNS of_IN
+          effectively_RB assembling_VBG the_DT cDNA_NN sequence_NN ._. Using_VBG the_DT
+          intersection_NN of_IN each_DT individual_JJ sequence_NN alignment_NN with_IN
+          the_DT genome_NN sequence_NN a_DT single_JJ virtual_JJ cDNA_NN sequence_NN was_VBD
+          constructed_VBN ._.
+          Another_DT tactic_NN for_IN condensing_VBG primary_JJ results_NNS ,_, without_IN
+          removing_VBG any_DT information_NN ,_, is_VBZ to_TO reconstruct_VB all_DT logically_RB
+          possible_JJ alternative_JJ transcripts_NNS from_IN the_DT raw_JJ EST_NNP
+          alignments_NNS by_IN building_VBG a_DT graph_NN from_IN a_DT complete_JJ set_NN of_IN
+          overlapping_VBG ESTs_NNP ._. Each_DT node_NN comprises_VBZ the_DT set_NN of_IN spans_NNS
+          that_WDT share_NN common_JJ splice_NN junctions_NNS ._. The_DT root_NN of_IN the_DT graph_NN
+          is_VBZ the_DT node_NN with_IN the_DT most_JJS 5_CD '_POS donor_NN site_NN ._. It_PRP is_VBZ ,_, of_IN
+          course_NN ,_, also_RB possible_JJ to_TO have_VB more_JJR than_IN one_CD starting_NN
+          point_NN for_IN the_DT graph_NN ,_, if_IN there_EX are_VBP overlapping_VBG nodes_NNS with_IN
+          alternative_JJ donor_NN sites_NNS ._. The_DT set_NN of_IN possible_JJ transcripts_NNS
+          is_VBZ the_DT number_NN of_IN paths_NNS through_IN this_DT tree_NN (_( s_VBZ )_) ._. This_DT
+          analysis_NN produced_VBD an_DT additional_JJ set_NN of_IN alignments_NNS that_IN
+          augmented_JJ the_DT original_JJ EST_NNP alignments_NNS ._.
+        
+        
+          External_NNP pipelines_NNS
+          Of_IN the_DT numerous_JJ gene-prediction_JJ programs_NNS available_JJ ,_, we_PRP
+          incorporated_VBD only_RB two_CD into_IN our_PRP$ pipeline_NN ._. This_DT was_VBD because_IN
+          some_DT of_IN these_DT programs_NNS are_VBP difficult_JJ to_TO integrate_VB into_IN a_DT
+          pipeline_NN ,_, some_DT are_VBP highly_RB computationally_RB expensive_JJ and_CC
+          others_NNS are_VBP only_RB available_JJ under_IN restricted_VBN licenses_NNS ._.
+          Rather_RB than_IN devoting_VBG resources_NNS to_TO running_VBG an_DT
+          exhaustive_JJ suite_NN of_IN analyses_NNS ,_, we_PRP asked_VBD a_DT number_NN of_IN
+          external_JJ groups_NNS to_TO run_VB their_PRP$ pipelines_NNS on_IN our_PRP$ genomic_JJ
+          sequences_NNS ._. We_PRP received_VBD results_NNS for_IN three_CD of_IN the_DT five_CD
+          chromosome_NN arms_NNS (_( 2_CD L_NNP ,_, 2_CD R_NN ,_, 3_CD R_NN )_) from_IN Celera_NNP Genomics_NNP ,_,
+          Ensembl_NNP and_CC NCBI_NNP pipelines_NNS ._. These_DT predictions_NNS were_VBD
+          presented_VBN to_TO curators_NNS as_IN extra_JJ analysis_NN tiers_NNS in_IN Apollo_NNP
+          and_CC were_VBD helpful_JJ in_IN suggesting_VBG where_WRB coding_VBG regions_NNS were_VBD
+          located_VBN ._. However_RB ,_, in_IN practice_NN ,_, human_JJ curators_NNS required_VBD
+          detailed_JJ alignment_NN data_NNS to_TO establish_VB biologically_RB
+          accurate_JJ gene_NN structures_NNS and_CC this_DT information_NN was_VBD only_RB
+          available_JJ from_IN our_PRP$ internal_JJ pipeline_NN ._.
+        
+        
+          Hardware_NNP
+          As_IN an_DT inexpensive_JJ solution_NN to_TO satisfy_VB the_DT
+          computational_NN requirements_NNS of_IN the_DT genomic_JJ analyses_NNS we_PRP
+          built_VBD a_DT Beowulf_NNP cluster_NN [_NN 24_CD ]_NN and_CC utilized_JJ the_DT portable_JJ
+          batch_NN system_NN (_( PBS_NNP )_) software_NN developed_VBN by_IN NASA_NNP [_NN 25_CD ]_NN for_IN
+          job_NN control_NN ._. A_DT Beowulf_NNP cluster_NN is_VBZ a_DT collection_NN of_IN
+          processor_NN nodes_NNS that_WDT are_VBP interconnected_VBN in_IN a_DT network_NN and_CC
+          the_DT sole_JJ purpose_NN of_IN these_DT nodes_NNS and_CC the_DT network_NN is_VBZ to_TO
+          provide_VB processor_NN compute_VB cycles_NNS ._. The_DT nodes_NNS themselves_PRP
+          are_VBP inexpensive_JJ off-the-shelf_JJ processor_NN chips_NNS ,_, connected_VBN
+          using_VBG standard_JJ networking_NN technology_NN ,_, and_CC running_VBG
+          open-source_JJ software_NN ;_: when_WRB combined_VBN ,_, these_DT components_NNS
+          generate_VBP a_DT low-cost_JJ ,_, high-performance_JJ compute_VB system_NN ._. Our_PRP$
+          nodes_NNS are_VBP all_DT identical_JJ and_CC use_NN Linux_NNP as_IN their_PRP$ base_NN
+          operating_VBG system_NN ,_, as_IN is_VBZ usual_JJ for_IN Beowulf_NNP clusters_NNS ._.
+          The_DT Beowulf_NNP cluster_NN was_VBD built_VBN by_IN Linux_NNP NetworX_NNP [_NN 26_CD ]_NN
+          which_WDT also_RB provided_VBN additional_JJ hardware_NN (_( ICE_NNP box_NN )_) and_CC
+          Clusterworx_NNP software_NN to_TO install_VB the_DT system_NN software_NN and_CC
+          control_NN and_CC monitor_VB the_DT hardware_NN of_IN the_DT nodes_NNS ._. The_DT
+          cluster_NN configuration_NN used_VBN in_IN this_DT work_NN consisted_VBD of_IN 32_CD
+          standard_JJ IA_NNP 32_CD architecture_NN nodes_NNS ,_, each_DT with_IN dual_JJ Pentium_NNP
+          III_NNP CPUs_NNP running_VBG at_IN 700_CD MHz_NNP /_NN 1_CD GHz_NNP and_CC 512_CD MB_NNP memory_NN ._. In_IN
+          addition_NN ,_, a_DT single_JJ Pentium_NNP III-based_NNP master_NN node_NN was_VBD used_VBN
+          to_TO control_VB the_DT cluster_NN nodes_NNS and_CC distribute_VB the_DT compute_VB
+          jobs_NNS ._. Nodes_NNP were_VBD interconnected_VBN with_IN standard_JJ 100_CD BT_NNP
+          Ethernet_NNP on_IN an_DT isolated_VBN subnet_NN with_IN the_DT master_NN node_NN as_IN
+          the_DT only_JJ interface_NN to_TO the_DT outside_JJ network_NN ._. The_DT private_JJ
+          cluster_NN 100_CD BT_NNP network_NN was_VBD connected_VBN to_TO the_DT NAS-based_NNP
+          storage_NN volumes_NNS housing_NN the_DT data_NNS and_CC user_NN home_NN
+          directories_NNS with_IN Gigabit_NNP ethernet_NN ._. Each_DT node_NN had_VBD a_DT 2_CD GB_NNP
+          swap_NN partition_NN used_VBN to_TO cache_NN the_DT sequence_NN databases_NNS from_IN
+          the_DT network_NN storage_NN volumes_NNS ._. To_TO provide_VB a_DT consistent_JJ
+          environment_NN ,_, the_DT nodes_NNS had_VBD the_DT same_JJ mounting_VBG points_NNS of_IN
+          the_DT directories_NNS as_IN all_DT other_JJ BDGP_NNP Unix_NNP computers_NNS ._. The_DT
+          network-wide_JJ NIS_NNP maps_NNS were_VBD translated_VBN to_TO the_DT internal_JJ
+          cluster_NN NIS_NNP maps_NNS with_IN an_DT automated_VBN script_NN ._. Local_JJ hard_JJ
+          disks_NNS on_IN the_DT nodes_NNS were_VBD used_VBN as_IN temporary_JJ storage_NN for_IN the_DT
+          pipeline_NN jobs_NNS ._.
+          Job_NNP distribution_NN to_TO the_DT cluster_NN nodes_NNS was_VBD done_VBN with_IN
+          the_DT queuing_VBG system_NN OpenPBS_NNP ,_, version_NN 2_CD ._. 3_CD ._. 12_CD [_NN 25_CD ]_NN ._. PBS_NNP was_VBD
+          configured_JJ with_IN several_JJ queues_NNS and_CC each_DT queue_NN having_VBG
+          access_NN to_TO a_DT dynamically_RB resizable_JJ overlapping_VBG fraction_NN of_IN
+          nodes_NNS ._. Queues_NNP were_VBD configured_JJ to_TO use_VB one_CD node_NN at_IN a_DT time_NN ,_,
+          either_CC running_VBG one_CD job_NN using_VBG both_DT CPUs_NNP (_( such_JJ as_IN the_DT
+          multithreaded_JJ BLAST_NN or_CC Interpro_NNP motif_NN analysis_NN )_) or_CC two_CD
+          jobs_NNS using_VBG one_CD CPU_NNP each_DT for_IN optimal_NN utilization_NN of_IN the_DT
+          resources_NNS ._. Because_IN of_IN the_DT architecture_NN of_IN the_DT pipeline_NN ,_,
+          individual_JJ jobs_NNS were_VBD often_RB small_JJ but_CC tens_NNS of_IN thousands_NNS of_IN
+          them_PRP may_MD be_VB submitted_VBN at_IN any_DT given_VBN time_NN ._. Because_IN the_DT
+          default_NN PBS_NNP first-in_JJ /_NN first-out_JJ (_( FIFO_NNP )_) scheduler_NN ,_, while_IN
+          providing_VBG a_DT lot_NN of_IN flexibility_NN ,_, does_VBZ not_RB scale_VB up_RP beyond_IN
+          about_IN 5_CD ,_, 000_CD -_: 10_CD ,_, 000_CD jobs_NNS per_IN queue_NN ,_, the_DT scheduler_NN was_VBD
+          extended_VBN ._. With_IN this_DT extension_NN the_DT scheduler_NN caches_NNS jobs_NNS
+          in_IN memory_NN if_IN a_DT maximum_NN queue_NN limit_NN is_VBZ exceeded_VBN ._. Job_NNP
+          resource_NN allocation_NN was_VBD managed_VBN on_IN a_DT per_IN queue_NN basis_NN ._.
+          Individual_JJ jobs_NNS could_MD only_RB request_VB cluster_NN resources_NNS
+          based_VBN on_IN the_DT queue_NN they_PRP were_VBD submitted_VBN to_TO and_CC each_DT queue_NN
+          was_VBD run_VBN on_IN a_DT strict_JJ FIFO_NNP basis_NN ._. With_IN those_DT modifications_NNS
+          PBS_NNP was_VBD scaled_VBN to_TO over_IN 100_CD ,_, 000_CD jobs_NNS while_IN still_RB
+          permitting_VBG higher-priority_JJ jobs_NNS to_TO be_VB submitted_VBN to_TO a_DT
+          separate_JJ high-priority_JJ queue_NN ._.
+        
+      
+      
+        Storing_NNP and_CC querying_VBG the_DT annotation_NN results_NNS :_: the_DT
+        Gadfly_NNP database_NN
+        A_DT pipeline_NN database_NN is_VBZ useful_JJ for_IN managing_VBG the_DT execution_NN
+        and_CC post-processing_JJ of_IN computational_NN analyses_NNS ._. The_DT end_NN
+        result_NN of_IN the_DT pipeline_NN process_NN is_VBZ streams_NNS of_IN prediction_NN and_CC
+        alignment_NN data_NNS localized_VBN to_TO genomic_JJ ,_, transcript_NN or_CC peptide_NN
+        sequences_NNS ._. We_PRP store_VBP these_DT data_NNS in_IN a_DT relational_NN database_NN ,_,
+        called_VBD Genome_NNP Annotation_NNP Database_NNP of_IN the_DT Fly_VB (_( Gadfly_NNP )_) ._.
+        Gadfly_NNP is_VBZ the_DT second_NN of_IN the_DT two_CD database_NN schemata_NN used_VBN by_IN
+        the_DT annotation_NN system_NN and_CC will_MD be_VB discussed_VBN elsewhere_RB ._.
+        We_PRP initially_RB considered_VBD using_VBG Ensembl_NNP as_IN our_PRP$ sequence_NN
+        database_NN ._. At_IN the_DT time_NN we_PRP started_VBD building_VBG our_PRP$ system_NN ,_,
+        Ensembl_NNP was_VBD also_RB in_IN an_DT early_JJ stage_NN of_IN development_NN ._. We_PRP
+        decided_VBD to_TO develop_VB our_PRP$ own_JJ database_NN and_CC software_NN ,_, while_IN
+        trying_VBG to_TO retain_VB interoperability_NN between_IN the_DT two_CD ._. This_DT
+        proved_VBD difficult_JJ ,_, and_CC the_DT two_CD systems_NNS diverged_JJ ._. While_IN this_DT
+        was_VBD wasteful_JJ in_IN terms_NNS of_IN redundant_JJ software_NN development_NN ,_, it_PRP
+        did_VBD allow_VB us_PRP to_TO hone_VB our_PRP$ system_NN to_TO the_DT particular_JJ needs_NNS of_IN
+        our_PRP$ project_NN ._. Gadfly_NNP remains_VBZ similar_JJ in_IN architecture_NN and_CC
+        implementation_NN details_NNS to_TO Ensembl_NNP ._. Both_DT projects_NNS make_VBP use_NN
+        of_IN the_DT bioPerl_NN bioinformatics_NNS programming_NN components_NNS [_NN 27_CD ,_,
+        28_CD ,_, 29_CD ]_NN ._.
+        The_DT core_NN data_NN type_NN in_IN Gadfly_NNP is_VBZ called_VBN a_NNP '_POS sequence_NN
+        feature_NN '_'' ._. This_DT can_MD be_VB any_DT piece_NN of_IN data_NNS of_IN biological_JJ
+        interest_NN that_WDT can_MD be_VB localized_VBN to_TO a_DT sequence_NN ._. These_DT roughly_RB
+        correspond_VB to_TO the_DT types_NNS of_IN data_NNS found_VBD in_IN the_NNP '_POS feature_NN
+        table_NN '_'' summary_NN of_IN a_DT GenBank_NNP report_NN ._. Every_DT sequence_NN feature_NN
+        has_VBZ a_NNP '_POS feature_NN type_NN '_'' -_: examples_NNS of_IN feature_NN types_NNS are_VBP
+        '_POS exon_NN '_'' ,_, '_'' transcript_NN '_'' ,_, '_'' protein-coding_JJ gene_NN '_'' ,_, '_'' tRNA_NN gene_NN '_'' ,_,
+        and_CC so_RB on_IN ._.
+        In_IN Gadfly_NNP ,_, sequence_NN features_NNS are_VBP linked_VBN together_RB in_IN
+        hierarchies_NNS ._. For_IN instance_NN ,_, a_DT gene_NN model_NN is_VBZ linked_VBN to_TO the_DT
+        different_JJ transcripts_NNS that_WDT are_VBP expressed_VBN by_IN that_DT gene_NN ,_, and_CC
+        these_DT transcripts_NNS are_VBP linked_VBN to_TO exons_NNS ._. Gadfly_NNP does_VBZ not_RB
+        store_VB some_DT sequence_NN features_NNS ,_, such_JJ as_IN introns_NNS or_CC
+        untranslated_JJ regions_NNS (_( UTR_NNP )_) ,_, as_IN this_DT data_NNS can_MD be_VB inferred_VBN
+        from_IN other_JJ features_NNS ._. Instead_RB Gadfly_NNP contains_VBZ software_NN rules_NNS
+        for_IN producing_VBG these_DT features_NNS on_IN demand_NN ._.
+        Sequence_NNP features_NNS can_MD have_VB other_JJ pieces_NNS of_IN data_NNS linked_VBN
+        to_TO them_PRP ._. Examples_NNS of_IN the_DT kind_NN of_IN data_NNS we_PRP attach_VBP are_VBP :_:
+        functional_JJ data_NNS such_JJ as_IN Gene_NNP Ontology_NNP (_( GO_NNP )_) [_NN 30_CD ]_NN term_NN
+        assignments_NNS ;_: tracking_VBG data_NNS such_JJ as_IN symbols_NNS ,_, synonyms_NNS and_CC
+        accession_NN numbers_NNS ;_: data_NNS relevant_JJ to_TO the_DT annotation_NN process_NN ,_,
+        such_JJ as_IN curator_NN comments_NNS [_NN 8_CD ]_NN ;_: data_NNS relevant_JJ to_TO the_DT
+        pipeline_NN process_NN ,_, such_JJ as_IN scores_NNS and_CC expectation_NN values_NNS in_IN
+        the_DT case_NN of_IN computed_JJ features_NNS ._. Note_VB that_IN there_EX is_VBZ a_DT wealth_NN
+        of_IN information_NN that_IN we_PRP do_VBP not_RB store_VB ,_, particularly_RB genetic_JJ
+        and_CC phenotypic_JJ data_NNS ,_, as_IN this_DT would_MD be_VB redundant_JJ with_IN the_DT
+        FlyBase_NNP relational_NN database_NN ._.
+        A_DT core_NN design_NN principle_NN in_IN Gadfly_NNP is_VBZ flexibility_NN ,_, using_VBG
+        a_DT design_NN principle_NN known_VBN as_IN generic_JJ modeling_NN ._. We_PRP do_VBP not_RB
+        constrain_VB the_DT kinds_NNS of_IN sequence_NN features_NNS that_WDT can_MD be_VB stored_VBN
+        in_IN Gadfly_NNP ,_, or_CC constrain_VB the_DT properties_NNS of_IN these_DT features_NNS ,_,
+        because_IN our_PRP$ knowledge_NN of_IN biology_NN is_VBZ constantly_RB changing_VBG ,_,
+        and_CC because_IN biology_NN itself_PRP is_VBZ often_RB unconstrained_JJ by_IN rules_NNS
+        that_WDT can_MD be_VB coded_VBN into_IN databases_NNS ._. As_RB much_RB as_IN possible_JJ ,_, we_PRP
+        avoid_VBP built-in_JJ assumptions_NNS that_IN ,_, if_IN proven_VBN wrong_JJ ,_, would_MD
+        force_VB us_PRP to_TO revisit_VB and_CC explicitly_RB modify_VB the_DT software_NN that_WDT
+        embodies_VBZ them_PRP ._.
+        The_DT generic_JJ modeling_NN principle_NN has_VBZ been_VBN criticized_VBN for_IN
+        being_VBG too_RB loosely_RB constrained_VBN and_CC leading_VBG to_TO databases_NNS that_WDT
+        are_VBP difficult_JJ to_TO maintain_VB and_CC query_NN ._. This_DT is_VBZ a_DT perceived_VBN
+        weakness_NN of_IN the_DT ACeDB_NNP database_NN ._. We_PRP believe_VBP we_PRP have_VBP found_VBN a_DT
+        way_NN round_NN this_DT by_IN building_VBG the_DT desired_VBN constraints_NNS into_IN the_DT
+        program_NN components_NNS that_WDT work_NN with_IN the_DT database_NN ;_: we_PRP are_VBP also_RB
+        investigating_VBG the_DT use_NN of_IN ontologies_NNS or_CC controlled_VBN
+        vocabularies_NNS to_TO enforce_VB these_DT constraints_NNS ._. A_DT detailed_VBN
+        discussion_NN of_IN this_DT effort_NN is_VBZ outside_IN the_DT scope_NN of_IN this_DT
+        paper_NN and_CC will_MD be_VB reported_VBN elsewhere_RB ._.
+        Figure_NN 3_CD shows_VBZ the_DT data_NNS flow_VBP in_IN and_CC out_IN of_IN Gadfly_NNP ._.
+        Computational_NNP analysis_NN features_NNS come_VBP in_IN through_IN analysis_NN
+        pipelines_NNS -_: either_CC the_DT Pipeline_NNP ,_, via_IN BOP_NNP ,_, or_CC through_IN an_DT
+        external_JJ pipeline_NN ,_, usually_RB delivered_VBN as_IN files_NNS conforming_VBG to_TO
+        some_DT standardized_JJ bioinformatics_NNS format_NN (_( for_IN example_NN ,_, GAME_NNP
+        XML_NNP ,_, GFF_NNP )_) ._.
+        Data_NNS within_IN Gadfly_NNP is_VBZ sometimes_RB transformed_VBN by_IN other_JJ
+        Gadfly_NNP software_NN components_NNS ._. For_IN instance_NN ,_, just_RB before_IN
+        curation_NN of_IN a_DT chromosome_NN arm_NN commences_NNS ,_, different_JJ
+        computational_NN analyses_NNS are_VBP synthesized_JJ into_IN '_POS best_JJS guesses_NNS '_POS
+        of_IN gene_NN models_NNS ,_, as_IN part_NN of_IN the_DT autopromote_NN software_NN we_PRP
+        described_VBD earlier_RBR ._.
+        During_IN the_DT creation_NN of_IN Release_NNP 3_CD annotations_NNS ,_, curators_NNS
+        requested_VBD data_NNS from_IN Gadfly_NNP by_IN specifying_VBG a_DT genomic_JJ region_NN ._.
+        Although_IN this_DT region_NN can_MD be_VB of_IN any_DT size_NN ,_, we_PRP generally_RB
+        allocated_VBD work_NN by_IN GenBank_NNP accessions_NNS ._. Occasionally_RB ,_,
+        curators_NNS worked_VBD one_CD gene_NN at_IN a_DT time_NN by_IN requesting_VBG genomic_JJ
+        regions_NNS immediately_RB surrounding_VBG the_DT gene_NN of_IN interest_NN ._.
+        Gadfly_NNP delivers_VBZ a_DT GAME_NNP XML_NNP file_VB containing_VBG all_DT of_IN the_DT
+        computed_JJ results_NNS and_CC the_DT current_JJ annotations_NNS within_IN the_DT
+        requested_VBN genomic_JJ region_NN ._. The_DT curator_NN used_VBD the_DT Apollo_NNP
+        editing_NN tool_NN to_TO annotate_NN the_DT region_NN ,_, after_IN which_WDT the_DT data_NNS
+        in_IN the_DT modified_VBN XML_NNP file_VB was_VBD stored_VBN in_IN Gadfly_NNP ._.
+        The_DT generation_NN of_IN a_DT high-quality_JJ set_NN of_IN predicted_VBD
+        peptides_NNS is_VBZ one_CD of_IN our_PRP$ primary_JJ goals_NNS ._. To_TO achieve_VB this_DT goal_NN ,_,
+        we_PRP needed_VBD a_DT means_NN of_IN evaluating_VBG the_DT peptides_NNS and_CC presenting_VBG
+        this_DT assessment_NN to_TO the_DT curators_NNS for_IN inspection_NN ,_, so_IN that_IN
+        they_PRP might_MD improve_VB the_DT quality_NN of_IN the_DT predicted_VBN peptides_NNS
+        iteratively_RB ._. Every_DT peptide_NN was_VBD sent_VBN through_IN a_DT peptide_NN
+        pipeline_NN to_TO assess_VB the_DT predicted_VBN peptide_NN both_DT
+        quantitatively_RB and_CC qualitatively_RB ._. Where_WRB possible_JJ ,_, we_PRP wanted_VBD
+        to_TO apply_VB a_DT quantifiable_JJ metric_NN ,_, requiring_VBG a_DT standard_NN
+        against_IN which_WDT we_PRP could_MD rate_NN the_DT peptides_NNS ._. For_IN this_DT purpose_NN
+        we_PRP used_VBD peptides_NNS found_VBD in_IN SPTRREAL_NNP (_( E_NNP ._. Whitfield_NNP ,_, personal_JJ
+        communication_NN )_) ,_, a_DT carefully_RB reviewed_VBN database_NN of_IN published_VBN
+        peptide_NN sequences_NNS ,_, for_IN comparison_NN to_TO our_PRP$ predicted_VBD
+        proteins_NNS ._. SPTRREAL_NNP is_VBZ composed_VBN of_IN 3_CD ,_, 687_CD 
+        D_NNP ._. melanogaster_NN sequences_NNS from_IN the_DT
+        SWISS-PROT_NNP and_CC TrEMBL_NNP protein_NN databases_NNS [_NN 31_CD ]_NN and_CC provides_VBZ
+        a_DT curated_JJ protein-sequence_JJ database_NN with_IN a_DT high_JJ level_NN of_IN
+        annotation_NN ,_, a_DT minimal_JJ level_NN of_IN redundancy_NN and_CC the_DT absence_NN
+        of_IN any_DT hypothetical_JJ or_CC computational_NN gene_NN models_NNS ._. Our_PRP$
+        program_NN ,_, PEP-QC_NNP ,_, performed_VBD this_DT crucial_JJ aspect_NN of_IN the_DT
+        annotation_NN process_NN and_CC is_VBZ described_VBN below_IN ._. In_IN cases_NNS where_WRB a_DT
+        known_VBN peptide_NN was_VBD unavailable_JJ ,_, we_PRP used_VBD a_DT qualitative_JJ
+        measure_NN to_TO evaluate_VB the_DT peptide_NN ._. The_DT peptide_NN pipeline_NN
+        provided_VBD a_DT BLASTP_NNP analysis_NN with_IN comparisons_NNS to_TO peptides_NNS
+        from_IN other_JJ model_NN organism_NN genome_NN sequences_NNS and_CC InterProScan_NNP
+        [_NN 32_CD ]_NN analysis_NN for_IN protein-family_JJ motifs_NNS to_TO enable_VB the_DT
+        curators_NNS to_TO judge_VB whether_IN the_DT biological_JJ properties_NNS of_IN the_DT
+        peptide_NN were_VBD reasonable_JJ ._.
+        Each_DT annotation_NN cycle_NN on_IN a_DT sequence_NN may_MD affect_VB the_DT
+        primary_JJ structure_NN of_IN the_DT proteins_NNS encoded_JJ by_IN that_DT sequence_NN
+        and_CC these_DT changes_NNS must_MD therefore_RB trigger_VB a_DT reanalysis_NNS of_IN
+        the_DT edited_JJ peptides_NNS ._. Whereas_IN the_DT genomic_JJ pipeline_NN is_VBZ
+        launched_VBN at_IN distinct_JJ stages_NNS ,_, on_IN an_DT arm-by-arm_JJ basis_NN ,_, the_DT
+        peptide_NN pipeline_NN is_VBZ run_VB whenever_WRB a_DT curator_NN changes_VBZ a_DT gene_NN
+        model_NN and_CC saves_VBZ it_PRP to_TO the_DT Gadfly_NNP database_NN ._. To_TO rapidly_RB
+        identify_VB whether_IN the_DT peptide_NN sequence_NN generated_VBN by_IN the_DT
+        altered_VBN gene_NN model_NN has_VBZ also_RB changed_VBN ,_, the_DT database_NN uniquely_RB
+        identifies_VBZ every_DT peptide_NN sequence_NN by_IN its_PRP$ name_NN and_CC its_PRP$ MD_NNP 5_CD
+        checksum_NN [_NN 33_CD ]_NN ._. The_DT MD_NNP 5_CD checksum_NN provides_VBZ a_DT fast_RB and_CC
+        convenient_JJ way_NN of_IN determining_VBG whether_IN two_CD sequences_NNS are_VBP
+        identical_JJ ._. To_TO determine_VB whether_IN a_DT peptide_NN sequence_NN has_VBZ been_VBN
+        altered_VBN is_VBZ a_DT simple_JJ comparison_NN of_IN the_DT prior_JJ checksum_NN to_TO the_DT
+        new_JJ checksum_NN ,_, allowing_VBG us_PRP to_TO avoid_VB using_VBG compute_VB cycles_NNS in_IN
+        reanalyzing_VBG sequences_NNS that_WDT have_VBP not_RB changed_VBN ._.
+        PEP-QC_NNP generates_VBZ both_DT summary_NN status_NN codes_NNS and_CC detailed_JJ
+        alignment_NN information_NN for_IN each_DT gene_NN and_CC each_DT peptide_NN ._.
+        ClustalW_NNP [_NN 34_CD ]_NN and_CC showalign_NN [_NN 35_CD ]_NN are_VBP used_VBN to_TO generate_VB a_DT
+        multiple_JJ alignment_NN from_IN the_DT annotated_JJ peptides_NNS for_IN the_DT gene_NN
+        and_CC the_DT corresponding_JJ SPTRREAL_NNP peptide_NN or_CC peptides_NNS ._. In_IN
+        addition_NN ,_, brief_JJ '_POS discrepancy_NN '_'' reports_NNS are_VBP generated_VBN that_WDT
+        describe_VBP each_DT SPTRREAL_NNP mismatch_NN clearly_RB ._. For_IN instance_NN ,_, an_DT
+        annotated_JJ peptide_NN might_MD contain_VB any_DT or_CC all_DT of_IN the_DT
+        mismatches_NNS in_IN Table_NNP 2_CD (_( in_IN this_DT example_NN ,_, CG_NNP 2903_CD -_: PB_NNP is_VBZ the_DT
+        initial_JJ FlyBase_NNP annotation_NN and_CC Q_NNP 960_CD X_NNP 8_CD is_VBZ the_DT SPTRREAL_NNP
+        entry_NN )_) ._.
+        The_DT quality_NN assessments_NNS produced_VBN by_IN the_DT peptide_NN pipeline_NN
+        need_VBP to_TO be_VB available_JJ to_TO the_DT curators_NNS for_IN inspection_NN during_IN
+        annotation_NN sessions_NNS so_IN that_IN any_DT corrections_NNS that_WDT are_VBP needed_VBN
+        can_MD be_VB made_VBN ._. Curators_NNP also_RB need_VBP to_TO access_VB other_JJ relevant_JJ
+        FlyBase_NNP information_NN associated_VBN with_IN a_DT gene_NN in_IN order_NN to_TO
+        refine_VB an_DT annotation_NN efficiently_RB ._. We_PRP developed_VBD
+        automatically_RB generated_VBN '_POS mini-gene-reports_JJ '_POS to_TO consolidate_VB
+        this_DT gene_NN data_NN into_IN a_DT single_JJ web_NN page_NN ._. Mini-gene-reports_NNP
+        include_VBP all_PDT the_DT names_NNS and_CC synonyms_NNS associated_VBN with_IN a_DT gene_NN ,_,
+        its_PRP$ cytological_JJ location_NN and_CC accessions_NNS for_IN the_DT genomic_JJ
+        sequence_NN ,_, ESTs_NNP ,_, PIR_NNP records_NNS and_CC Drosophila_NNP Gene_NNP Collection_NNP
+        [_NN 23_CD ]_NN assignments_NNS ,_, if_IN any_DT ._. All_DT of_IN these_DT items_NNS are_VBP
+        hyperlinked_JJ to_TO the_DT appropriate_JJ databases_NNS for_IN easy_JJ access_NN to_TO
+        more_RBR extensive_JJ information_NN ._. All_DT literature_NN references_NNS for_IN
+        the_DT gene_NN appear_VBP in_IN the_DT reports_NNS ,_, with_IN hyperlinks_NNS to_TO the_DT
+        complete_JJ text_NN or_CC abstracts_NNS ._. The_DT mini-gene-reports_JJ also_RB
+        consolidate_VB any_DT comments_NNS about_IN the_DT gene_NN ,_, including_VBG
+        amendments_NNS to_TO the_DT gene_NN annotation_NN submitted_VBN by_IN FlyBase_NNP
+        curators_NNS or_CC members_NNS of_IN the_DT 
+        Drosophila_NNP community_NN ._. The_DT
+        mini-gene-reports_JJ can_MD be_VB accessed_JJ directly_RB from_IN Apollo_NNP ,_, or_CC
+        searched_VBD via_IN a_DT web_NN form_NN by_IN gene_NN name_NN ,_, symbol_NN ,_, synonym_NN
+        (_( including_VBG the_DT FlyBase_NNP unique_JJ identifier_NN ,_, or_CC FBgn_NNP )_) or_CC
+        genomic_JJ location_NN ._. A_DT web_NN report_NN ,_, grouped_VBN by_IN genomic_JJ segment_NN
+        and_CC annotator_NN ,_, is_VBZ updated_VBN nightly_JJ and_CC contains_VBZ lists_NNS of_IN
+        genes_NNS indexed_VBN by_IN status_NN code_NN and_CC linked_VBN to_TO their_PRP$ individual_JJ
+        mini-gene-reports_JJ ._.
+      
+      
+        Other_JJ integrity_NN checks_NNS
+        Before_IN submission_NN to_TO GenBank_NNP a_DT number_NN of_IN additional_JJ
+        checks_NNS are_VBP run_VBN to_TO detect_VB potential_JJ oversights_NNS in_IN the_DT
+        annotation_NN ._. These_DT checks_NNS include_VBP confirming_VBG the_DT validity_NN of_IN
+        any_DT annotations_NNS with_IN open_JJ reading_NN frames_NNS (_( ORF_NNP )_) that_WDT are_VBP
+        either_DT unusually_RB short_JJ (_( less_JJR than_IN 50_CD amino_JJ acids_NNS )_) or_CC less_JJR
+        than_IN 25_CD %_NN of_IN the_DT transcript_NN length_NN ._. In_IN the_DT special_JJ case_NN of_IN
+        known_VBN small_JJ genes_NNS ,_, such_JJ as_IN the_DT 
+        Drosophila_NNP immune_JJ response_NN genes_NNS
+        (_( DIRGs_NNP )_) [_NN 36_CD ]_NN ,_, the_DT genome_NN annotations_NNS are_VBP scanned_JJ to_TO ensure_VB
+        that_IN no_DT well-documented_JJ genes_NNS have_VBP been_VBN missed_VBN ._. Similarly_RB ,_,
+        the_DT genome_NN is_VBZ scanned_JJ for_IN particular_JJ annotations_NNS to_TO verify_VB
+        their_PRP$ presence_NN ,_, including_VBG those_DT that_WDT have_VBP been_VBN submitted_VBN as_IN
+        corrections_NNS from_IN the_DT community_NN ,_, or_CC are_VBP cited_VBN in_IN the_DT
+        literature_NN ,_, such_JJ as_IN tRNA_NN ,_, snRNA_NN ,_, snoRNA_NN ,_, microRNA_NN or_CC rRNA_NN
+        genes_NNS documented_VBN in_IN FlyBase_NNP ._. If_IN the_DT translation_NN start_NN site_NN
+        is_VBZ absent_JJ ,_, an_DT explanation_NN must_MD be_VB provided_VBN in_IN the_DT comments_NNS ._.
+        Annotations_NNP may_MD also_RB be_VB eliminated_VBN if_IN annotations_NNS with_IN
+        different_JJ identifiers_NNS are_VBP found_VBN at_IN the_DT same_JJ genome_NN
+        coordinates_VBZ or_CC if_IN a_DT protein-coding_JJ gene_NN overlaps_NNS a_DT
+        transposable_JJ element_NN ,_, or_CC a_DT tRNA_NN overlaps_NNS a_DT protein-coding_JJ
+        gene_NN ._. Conversely_RB ,_, duplicated_VBN gene_NN identifiers_NNS that_WDT are_VBP
+        found_VBN at_IN different_JJ genome_NN coordinates_VBZ are_VBP either_CC renamed_VBN or_CC
+        removed_VBN ._. A_DT simple_JJ syntax_NN check_NN is_VBZ also_RB carried_VBN out_IN on_IN all_PDT
+        the_DT annotation_NN symbols_NNS and_CC identifiers_NNS ._. Known_VBN mutations_NNS in_IN
+        the_DT sequenced_JJ strain_NN are_VBP documented_VBN and_CC the_DT wild-type_JJ
+        peptide_NN is_VBZ submitted_VBN in_IN place_NN of_IN the_DT mutated_VBN version_NN ._.
+        The_DT BDGP_NNP also_RB submits_VBZ to_TO GenBank_NNP the_DT cDNA_NN sequence_NN from_IN
+        the_DT DGC_NNP project_NN ._. Each_DT of_IN these_DT cDNA_NN clones_NNS represents_VBZ an_DT
+        expressed_VBN transcript_NN and_CC it_PRP is_VBZ important_JJ to_TO the_DT community_NN
+        that_IN the_DT records_NNS for_IN these_DT cDNA_NN sequences_NNS correctly_RB
+        correspond_VB to_TO the_DT records_NNS for_IN the_DT annotated_JJ transcripts_NNS in_IN
+        both_DT GenBank_NNP and_CC FlyBase_NNP ._. This_DT correspondence_NN is_VBZ
+        accomplished_VBN via_IN the_DT cDNA_NN sequence_NN alignments_NNS to_TO the_DT genome_NN
+        described_VBD previously_RB ._. After_IN annotation_NN of_IN the_DT entire_JJ genome_NN
+        was_VBD completed_VBN these_DT results_NNS were_VBD used_VBN to_TO find_VB the_DT
+        intersection_NN of_IN cDNA_NN alignments_NNS and_CC exons_NNS ._. A_DT cDNA_NN was_VBD
+        assigned_VBN to_TO a_DT gene_NN when_WRB the_DT cDNA_NN overlapped_JJ most_JJS of_IN the_DT
+        gene_NN exons_NNS and_CC the_DT predicted_VBD peptides_NNS of_IN each_DT were_VBD verified_VBN
+        using_VBG a_DT method_NN similar_JJ to_TO PEP-QC_NNP ._.
+      
+      
+        Public_NNP World_NNP Wide_NNP Web_NNP interface_NN
+        We_PRP provide_VBP a_DT website_NN for_IN the_DT community_NN to_TO query_NN Gadfly_NNP ._.
+        This_DT allows_VBZ queries_NNS by_IN gene_NN ,_, by_IN genomic_JJ or_CC map_NN region_NN ,_, by_IN
+        Gene_NNP Ontology_NNP (_( GO_NNP )_) assignments_NNS or_CC by_IN InterPro_NNP domains_NNS ._. As_RB
+        well_RB as_IN delivering_VBG human-readable_JJ web_NN pages_NNS ,_, we_PRP also_RB allow_VBP
+        downloading_VBG of_IN data_NNS in_IN a_DT variety_NN of_IN computer-readable_JJ
+        formats_NNS supported_VBN by_IN common_JJ bioinformatics_NNS tools_NNS ._. We_PRP use_VBP
+        the_DT GBrowse_NNP [_NN 37_CD ]_NN application_NN ,_, which_WDT is_VBZ part_NN of_IN the_DT GMOD_NNP [_NN
+        38_CD ]_NN collection_NN of_IN software_NN for_IN visualization_NN and_CC
+        exploration_NN of_IN genomic_JJ regions_NNS ._.
+      
+      
+        Software_NNP engineering_NN
+        The_DT main_JJ software_NN engineering_NN lesson_NN we_PRP learned_VBD in_IN the_DT
+        course_NN of_IN this_DT project_NN was_VBD the_DT importance_NN of_IN flexibility_NN ._.
+        Nowhere_RB was_VBD this_DT more_RBR important_JJ than_IN in_IN the_DT database_NN
+        schema_NN ._. In_IN any_DT genome_NN ,_, normal_JJ biology_NN conspires_NNS to_TO break_VB
+        carefully_RB designed_VBN data_NNS models_NNS ._. Among_IN the_DT examples_NNS we_PRP
+        encountered_VBD while_IN annotating_VBG the_DT 
+        D_NNP ._. melanogaster_NN genome_NN were_VBD :_: the_DT
+        occurrence_NN of_IN distinct_JJ transcripts_NNS with_IN overlapping_VBG UTRs_NNP
+        but_CC non-overlapping_JJ coding_VBG regions_NNS ,_, leading_VBG us_PRP to_TO modify_VB
+        our_PRP$ original_JJ definition_NN of_IN '_POS alternative_JJ transcript_NN '_'' ;_: the_DT
+        existence_NN of_IN dicistronic_JJ genes_NNS ,_, two_CD or_CC more_RBR distinct_JJ and_CC
+        non-overlapping_JJ coding_VBG regions_NNS contained_VBD on_IN a_DT single_JJ
+        processed_VBN mRNA_NN ,_, requiring_VBG support_NN for_IN one_CD to_TO many_JJ
+        relationships_NNS between_IN transcript_NN and_CC peptides_NNS ;_: and_CC 
+        trans_NNS -_: splicing_VBG ,_, exhibited_VBN by_IN the_DT 
+        mod_NN (_( 
+        mdg_NN 4_LS )_) gene_NN [_NN 39_CD ]_NN ,_, requiring_VBG a_DT new_JJ
+        data_NN model_NN ._. We_PRP also_RB needed_VBD to_TO adapt_VB the_DT pipeline_NN to_TO
+        different_JJ types_NNS and_CC qualities_NNS of_IN input_NN sequence_NN ._. For_IN
+        example_NN ,_, to_TO analyze_VB the_DT draft_NN sequence_NN of_IN the_DT repeat-rich_JJ
+        heterochromatin_NN [_NN 40_CD ]_NN ,_, we_PRP needed_VBD to_TO adjust_VB the_DT parameters_NNS
+        and_CC datasets_NNS used_VBN ,_, but_CC also_RB to_TO develop_VB an_DT entirely_RB new_JJ
+        repeat-masking_JJ approach_NN to_TO facilitate_VB gene_NN finding_VBG in_IN
+        highly_RB repetitive_JJ regions_NNS ._. We_PRP are_VBP now_RB in_IN the_DT process_NN of_IN
+        modifying_VBG the_DT pipeline_NN to_TO exploit_VB comparative_JJ genome_NN
+        sequences_NNS more_RBR efficiently_RB ._. Our_PRP$ intention_NN is_VBZ to_TO continue_VB
+        extending_VBG the_DT system_NN to_TO accommodate_VB new_JJ biological_JJ research_NN
+        situations_NNS ._.
+        Improvements_NNP to_TO tools_NNS and_CC techniques_NNS are_VBP often_RB as_IN
+        fundamental_JJ to_TO scientific_JJ progress_NN as_IN new_JJ discoveries_NNS ,_, and_CC
+        thus_RB the_DT sharing_NN of_IN research_NN tools_NNS is_VBZ as_RB essential_JJ as_IN
+        sharing_VBG the_DT discoveries_NNS themselves_PRP ._. We_PRP are_VBP active_JJ
+        participants_NNS in_IN ,_, and_CC contributors_NNS to_TO ,_, the_DT Generic_NNP Model_NNP
+        Organism_NNP Database_NNP (_( GMOD_NNP )_) project_NN ,_, which_WDT seeks_VBZ to_TO bring_VB
+        together_RB open-source_JJ applications_NNS and_CC utilities_NNS that_WDT are_VBP
+        useful_JJ to_TO the_DT developers_NNS of_IN biological_JJ and_CC genomic_JJ
+        databases_NNS ._. We_PRP are_VBP contributing_VBG the_DT software_NN we_PRP have_VBP
+        developed_VBN during_IN this_DT project_NN to_TO GMOD_NNP ._. Conversely_RB ,_, we_PRP reuse_NN
+        the_DT Perl-based_NNP software_NN ,_, GBrowse_NNP ,_, from_IN GMOD_NNP for_IN the_DT visual_JJ
+        display_NN of_IN our_PRP$ annotations_NNS ._.
+        Automated_NNP pipelines_NNS and_CC the_DT management_NN of_IN downstream_JJ
+        data_NNS require_VBP a_DT significant_JJ investment_NN in_IN software_NN
+        engineering_NN ._. The_DT pipeline_NN software_NN ,_, the_DT database_NN ,_, and_CC the_DT
+        annotation_NN tool_NN ,_, Apollo_NNP ,_, as_IN a_DT group_NN ,_, provide_VBP a_DT core_NN set_NN of_IN
+        utilities_NNS to_TO any_DT genome_NN effort_NN that_IN shares_VBZ our_PRP$ annotation_NN
+        strategy_NN ._. Exactly_RB how_WRB portable_JJ they_PRP are_VBP remains_VBZ to_TO be_VB seen_VBN ,_,
+        as_IN there_EX is_VBZ a_DT tradeoff_NN between_IN customization_NN and_CC ease_NN of_IN
+        use_NN ._. We_PRP will_MD only_RB know_VB the_DT extent_NN to_TO which_WDT we_PRP were_VBD
+        successful_JJ when_WRB other_JJ groups_NNS try_VBP to_TO reuse_NN and_CC extend_VB these_DT
+        software_NN tools_NNS ._. Nevertheless_RB ,_, the_DT wealth_NN of_IN experience_NN we_PRP
+        gained_VBD ,_, as_RB well_RB as_IN the_DT tools_NNS we_PRP developed_VBD in_IN the_DT process_NN of_IN
+        reannotating_VBG the_DT 
+        Drosophila_NNP genome_NN ,_, will_MD be_VB a_DT valuable_JJ
+        resource_NN to_TO any_DT group_NN wishing_VBG to_TO undertake_VB a_DT similar_JJ
+        exercise_NN ._.
+      
+    
+  

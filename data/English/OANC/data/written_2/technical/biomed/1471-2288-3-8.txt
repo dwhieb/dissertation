@@ -1,0 +1,810 @@
+
+  
+    
+      
+        Background_NNP
+        Missing_NNP outcome_NN data_NNS are_VBP common_JJ in_IN clinical_JJ studies_NNS [_NN 1_CD
+        2_CD ]_NN ._. Many_JJ approaches_NNS assume_VBP missing_VBG at_IN random_JJ (_( MAR_NNP )_) as_IN a_DT
+        base_NN case_NN ._. MAR_NNP means_VBZ that_IN the_DT probability_NN of_IN missing_VBG
+        depends_VBZ only_RB on_IN observed_VBD variables_NNS [_NN 3_CD ]_NN ._. Four_CD strategies_NNS
+        for_IN examining_VBG the_DT bias_NN or_CC sensitivity_NN of_IN results_NNS when_WRB MAR_NNP
+        does_VBZ not_RB hold_VB are_VBP to_TO (_( 
+        i_NNP )_) fit_VB all_DT saturated_VBD MAR_NNP and_CC non-_NN MAR_NNP
+        missing-data_JJ models_NNS [_NN 4_CD 5_CD ]_NN ,_, (_( 
+        ii_NN )_) add_VB a_DT parameter_NN to_TO various_JJ MAR_NNP
+        models_NNS to_TO make_VB them_PRP non-_NN MAR_NNP and_CC test_NN if_IN the_DT fit_NN is_VBZ
+        significantly_RB improved_VBN [_NN 6_CD 7_CD ]_NN ,_, (_( 
+        iii_NN )_) impute_NN the_DT missing_VBG data_NN in_IN one_CD
+        arm_NN using_VBG the_DT observed_VBN proportion_NN of_IN events_NNS in_IN the_DT other_JJ
+        arm_NN [_NN 8_CD 9_CD ]_NN ,_, (_( 
+        iv_NN )_) estimate_NN results_NNS under_IN a_DT non-_NN MAR_NNP
+        missing-data_JJ mechanism_NN with_IN key_JJ parameters_NNS specified_VBN by_IN the_DT
+        investigator_NN [_NN 1_CD 10_CD ]_NN -_: [_NN 13_CD ]_NN ._. We_PRP propose_VBP a_DT variation_NN of_IN
+        method_NN (_( 
+        iv_NN )_) for_IN randomized_JJ trials_NNS with_IN
+        binary_JJ outcome_NN that_WDT explicitly_RB uses_VBZ the_DT randomization_NN
+        distribution_NN to_TO reduce_VB user_NN input_NN ._. To_TO our_PRP$ knowledge_NN this_DT is_VBZ
+        the_DT only_JJ method_NN that_IN exploits_VBZ the_DT randomization_NN
+        distribution_NN for_IN missing-data_JJ adjustment_NN ._.
+        We_PRP illustrate_VBP the_DT methodology_NN using_VBG data_NNS from_IN the_DT Polyp_NNP
+        Prevention_NNP Trial_NNP (_( PPT_NNP )_) in_IN which_WDT 2079_CD men_NNS and_CC women_NNS with_IN
+        recently_RB removed_VBN colorectal_NN adenoma_NN were_VBD randomized_JJ to_TO
+        receive_VB either_CC intensive_JJ counseling_NN to_TO adopt_VB a_DT low-fat_JJ diet_NN
+        (_( intervention_NN )_) or_CC a_DT standard_JJ brochure_NN on_IN healthy_JJ eating_NN
+        (_( control_NN )_) [_NN 14_CD ]_NN ._. The_DT binary_JJ outcome_NN was_VBD at_IN least_JJS one_CD
+        adenoma_NN detected_VBD on_IN colonoscopy_NN following_VBG randomization_NN ._. In_IN
+        the_DT control_NN arm_NN 9_CD %_NN of_IN the_DT subjects_NNS were_VBD missing_VBG the_DT
+        outcome_NN ,_, and_CC in_IN the_DT intervention_NN arm_NN 7_CD %_NN were_VBD missing_VBG the_DT
+        outcome_NN ._. Dropping_NNP the_DT data_NNS from_IN subjects_NNS with_IN a_DT missing_VBG
+        outcome_NN gives_VBZ an_DT estimated_VBN difference_NN of_IN -_: ._. 002_CD (_( s_VBZ ._. e_SYM ._. =_SYM ._. 022_CD )_)
+        in_IN the_DT probability_NN of_IN adenoma_NN recurrence_NN between_IN the_DT
+        intervention_NN and_CC control_NN groups_NNS ._. Thus_RB there_EX was_VBD very_RB little_JJ
+        evidence_NN that_IN intensive_JJ counseling_NN to_TO adopt_VB a_DT low-fat_JJ diet_NN
+        reduced_VBD the_DT probability_NN of_IN adenoma_NN recurrence_NN ._. An_DT important_JJ
+        question_NN was_VBD whether_IN or_CC not_RB an_DT adjustment_NN for_IN the_DT missing_VBG
+        outcomes_NNS would_MD have_VB changed_VBN this_DT conclusion_NN ._.
+      
+      
+        Methods_NNP
+        
+          Adjusting_NNP for_IN Observed_NNP Covariates_NNP
+          As_IN a_DT starting_NN point_NN ,_, we_PRP assume_VBP the_DT data_NNS are_VBP missing_VBG at_IN
+          random_JJ (_( MAR_NNP )_) ._. Let_VB 
+          Y_NNP denote_NN the_DT binary_JJ outcome_NN of_IN
+          adenoma_NN recurrence_NN ._. Let_VB 
+          Z_NNP =_SYM 0_CD denote_NN random_JJ assignment_NN to_TO
+          the_DT control_NN group_NN and_CC 
+          Z_NNP =_SYM 1_CD denote_NN random_JJ assignment_NN to_TO
+          the_DT intervention_NN group_NN ._. Also_RB let_VB 
+          R_NN =_SYM 0_CD if_IN the_DT outcome_NN is_VBZ missing_VBG and_CC
+          1_CD if_IN the_DT outcome_NN is_VBZ observed_VBN ._. Suppose_VB we_PRP also_RB have_VBP data_NNS
+          on_IN the_DT observed_VBN variable_JJ 
+          S_NNP ,_, which_WDT represents_VBZ either_CC strata_NN
+          formed_VBN by_IN the_DT cross-classification_JJ of_IN categorical_JJ
+          baseline_NN covariates_NNS or_CC outpoints_NNS of_IN a_DT continuous_JJ
+          variable_NN ._. Under_IN the_DT MAR_NNP assumption_NN ,_, the_DT probability_NN of_IN
+          missing_VBG depends_VBZ on_IN 
+          Z_NNP and_CC 
+          S_NNP but_CC not_RB 
+          Y_NNP ,_, namely_RB ,_,
+          
+          pr_NN (_( 
+          R_NN =_SYM 1_CD |_NN 
+          z_SYM ,_, s_VBZ ,_, Y_NNP =_SYM 1_LS )_) =_SYM 
+          pr_NN (_( 
+          R_NN =_SYM 1_CD |_NN 
+          z_SYM ,_, s_VBZ )_) ._. (_( 1_LS )_)
+          Because_IN 
+          R_NN and_CC 
+          Y_NNP are_VBP conditionally_RB independent_JJ
+          given_VBN 
+          Z_NNP and_CC 
+          S_NNP ,_, it_PRP follows_VBZ from_IN (_( 1_LS )_) that_DT
+          
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          z_SYM ,_, s_VBZ ,_, R_NN =_SYM 1_LS )_) =_SYM 
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          z_SYM ,_, s_VBZ )_) ._. (_( 2_LS )_)
+          In_IN other_JJ words_NNS ,_, under_IN the_DT MAR_NNP assumption_NN in_IN (_( 1_LS )_) ,_, the_DT
+          probability_NN of_IN adenoma_NN recurrence_NN conditional_JJ on_IN
+          treatment_NN assignment_NN and_CC baseline_NN covariates_NNS is_VBZ the_DT same_JJ
+          in_IN all_DT subjects_NNS as_IN in_IN subjects_NNS not_RB missing_VBG outcome_NN ._. Baker_NNP
+          and_CC Laird_NNP [_NN 6_CD ]_NN proved_VBD the_DT related_VBN result_NN that_IN under_IN MAR_NNP
+          the_DT maximum_NN likelihood_NN estimate_NN of_IN the_DT probability_NN of_IN
+          outcome_NN conditional_JJ on_IN covariates_NNS is_VBZ the_DT same_JJ in_IN all_DT
+          subjects_NNS as_IN in_IN subjects_NNS not_RB missing_VBG outcome_NN ._.
+          With_IN binary_JJ outcomes_NNS ,_, the_DT overall_JJ measure_NN of_IN treatment_NN
+          effect_NN is_VBZ typically_RB a_DT difference_NN ,_, a_DT relative_JJ risk_NN ,_, or_CC an_DT
+          odds_NNS ratio_NN ._. We_PRP focus_VBP on_IN the_DT difference_NN because_IN it_PRP is_VBZ easy_JJ
+          to_TO interpret_VB [_NN 15_CD ]_NN and_CC because_IN it_PRP simplifies_NNS our_PRP$
+          formulation_NN ._. Let_VB Δ_NN 
+          
+            s_VBZ 
+           denote_NN the_DT treatment_NN effect_NN for_IN stratum_NN 5_CD ,_,
+          namely_RB
+          Δ_NN 
+          
+            s_VBZ 
+           =_SYM 
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 1_CD ,_, 
+          s_VBZ )_) -_: 
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 0_CD ,_, 
+          s_VBZ )_) ._. (_( 3_LS )_)
+          By_IN virtue_NN of_IN the_DT randomization_NN 
+          pr_NN (_( 
+          S_NNP =_SYM 
+          s_VBZ |_NN 
+          Z_NNP =_SYM 1_LS )_) =_SYM 
+          pr_NN (_( 
+          S_NNP =_SYM 
+          s_VBZ |_NN 
+          Z_NNP =_SYM 0_CD )_) =_SYM 
+          pr_NN (_( 
+          S_NNP =_SYM 
+          s_VBZ )_) ._. Therefore_RB we_PRP can_MD write_VB the_DT
+          overall_JJ treatment_NN effect_NN as_IN
+          Δ_NN =_SYM Σ_NN 
+          
+            s_VBZ 
+           Δ_NN 
+          
+            s_VBZ 
+           
+          pr_NN (_( 
+          S_NNP =_SYM 
+          s_VBZ )_) ._. (_( 4_LS )_)
+          If_IN the_DT missing-data_JJ mechanism_NN is_VBZ given_VBN in_IN (_( 1_LS )_) ,_, then_RB
+          from_IN (_( 2_LS )_) ,_, the_DT treatment_NN effect_NN in_IN stratum_NN 
+          s_VBZ (_( 3_LS )_) equals_VBZ the_DT treatment_NN effect_NN
+          in_IN stratum_NN 
+          s_VBZ among_IN subjects_NNS with_IN observed_VBD
+          outcomes_NNS ,_,
+          Δ_NN 
+          
+            s_VBZ 
+           =_SYM 
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 1_CD ,_, 
+          s_VBZ ,_, R_NN =_SYM 1_LS )_) -_: 
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 0_CD ,_, 
+          s_VBZ ,_, R_NN =_SYM 1_LS )_) ._. (_( 5_LS )_)
+          Let_VB 
+          n_NN 
+          
+            zsy_NN 
+           denote_NN the_DT number_NN of_IN subjects_NNS in_IN treatment_NN group_NN 
+          z_SYM and_CC stratum_NN 
+          s_VBZ who_WP have_VBP 
+          observed_VBN outcome_NN 
+          y_NN ._. Based_VBN on_IN (_( 5_LS )_) ,_, we_PRP estimate_VBP Δ_NN 
+          
+            s_VBZ 
+           by_IN
+          
+          d_SYM 
+          
+            s_VBZ 
+           =_SYM 
+          q_NN 
+          
+          s_VBZ 1_CD -_: 
+          q_NN 
+          
+          s_VBZ 0_CD ,_, where_WRB 
+          q_NN 
+          
+            sz_NN 
+           =_SYM 
+          n_NN 
+          
+          zs_NNS 1_CD /_NN 
+          n_NN 
+          
+          zs_NNS +_NN ,_, (_( 6_CD )_)
+          where_WRB "_'' +_NN "_'' denotes_NNS summation_NN over_IN the_DT indicated_VBN
+          subscript_NN ._. Let_VB 
+          N_NNP 
+          
+            zs_NNS 
+           denote_NN the_DT number_NN of_IN subjects_NNS (_( with_IN either_DT observed_VBD
+          or_CC missing_VBG outcomes_NNS )_) in_IN treatment_NN group_NN 
+          z_SYM and_CC stratum_NN 
+          s_VBZ ._. We_PRP estimate_VBP 
+          pr_NN (_( 
+          S_NNP =_SYM 
+          s_VBZ )_) by_IN 
+          w_NN 
+          
+            s_VBZ 
+           =_SYM 
+          N_NNP 
+          +_NN 
+          s_VBZ  /_NN 
+          N_NNP 
+          +_NN +_NN ,_, giving_VBG an_DT overall_JJ estimate_NN of_IN
+          treatment_NN effect_NN ,_,
+          =_SYM Σ_NN 
+          
+            s_VBZ 
+           
+          d_SYM 
+          
+            s_VBZ 
+           
+          w_NN 
+          
+            s_VBZ 
+           (_( 7_CD )_)
+          The_DT estimate_NN in_IN (_( 7_CD )_) is_VBZ closely_RB related_VBN to_TO the_DT estimate_NN
+          proposed_VBN by_IN Horvitz_NNP and_CC Thompson_NNP [_NN 16_CD ]_NN ._. It_PRP is_VBZ also_RB
+          maximum_NN likelihood_NN because_IN it_PRP is_VBZ a_DT function_NN of_IN maximum_NN
+          likelihood_NN estimates_NNS of_IN the_DT parameters_NNS ._. Using_VBG the_DT delta_NN
+          method_NN ,_, and_CC noting_VBG that_IN =_SYM 
+          d_SYM 
+          1_CD 
+          w_NN 
+          1_CD +_NN 
+          d_SYM 
+          2_CD 
+          w_NN 
+          2_CD +_NN ._. ._. ._. ._. 
+          d_SYM 
+          
+          h_NN -_: 1_CD 
+          w_NN 
+          
+          h_NN -_: 1_CD +_NN 
+          d_SYM 
+          
+            h_NN 
+           (_( 1_CD -_: )_) ,_, we_PRP obtain_VBP
+          
+          where_WRB 
+          w_NN 
+          
+            h_NN 
+           =_SYM 1_CD -_: ._.
+        
+        
+          Bias_NNP from_IN an_DT omitted_VBN binary_JJ covariate_NN
+          Suppose_VB that_IN instead_RB of_IN (_( 1_LS )_) ,_, the_DT probability_NN of_IN
+          missingness_NNS depends_VBZ on_IN treatment_NN assignment_NN ,_, baseline_NN
+          strata_NN ,_, 
+          and_CC an_DT unobserved_JJ binary_JJ covariate_NN 
+          x_SYM ._. For_IN our_PRP$ example_NN from_IN the_DT Polyp_NNP
+          Prevention_NNP Trial_NNP ,_, 
+          x_SYM could_MD be_VB an_DT unreported_JJ indicator_NN
+          of_IN a_DT family_NN history_NN of_IN colon_NN cancer_NN ._. Then_RB
+          
+          pr_NN (_( 
+          R_NN =_SYM 1_CD |_NN 
+          z_SYM ,_, s_VBZ ,_, x_SYM ,_, Y_NNP =_SYM 1_LS )_) =_SYM 
+          pr_NN (_( 
+          R_NN =_SYM 1_CD |_NN 
+          z_SYM ,_, s_VBZ ,_, x_SYM )_) ._. (_( 9_CD )_)
+          In_IN other_JJ words_NNS the_DT data_NNS would_MD be_VB MAR_NNP if_IN 
+          x_SYM were_VBD observed_VBN ._. The_DT model_NN in_IN (_( 9_CD )_)
+          implies_VBZ that_IN ,_, when_WRB 
+          x_SYM is_VBZ not_RB observed_VBN ,_, missingness_NNS
+          depends_VBZ on_IN outcome_NN and_CC on_IN treatment_NN group_NN via_IN
+          
+          We_PRP assume_VBP that_IN for_IN each_DT level_NN of_IN 
+          x_SYM within_IN stratum_NN 
+          s_VBZ ,_, the_DT treatment_NN effect_NN is_VBZ the_DT
+          same_JJ ,_, namely_RB
+          Δ_NN 
+          
+            s_VBZ 
+           =_SYM 
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 1_CD ,_, 
+          s_VBZ ,_, x_SYM )_) -_: 
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 0_CD ,_, 
+          s_VBZ ,_, x_SYM )_)
+          =_SYM 
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 1_CD ,_, 
+          s_VBZ ,_, x_SYM ,_, R_NN =_SYM 1_LS )_) -_: 
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 0_CD ,_, 
+          s_VBZ ,_, x_SYM ,_, R_NN =_SYM 1_LS )_) from_IN (_( 9_CD )_) (_( 11_CD )_)
+          Importantly_NNP Δ_NN 
+          
+            s_VBZ 
+           in_IN (_( 11_CD )_) does_VBZ not_RB depend_VB on_IN 
+          x_SYM ._. Let_VB denote_NN the_DT apparent_JJ
+          treatment_NN effect_NN in_IN stratum_NN 
+          s_VBZ after_IN collapsing_VBG over_IN 
+          x_SYM ,_, namely_RB ,_,
+          
+          To_TO formalize_NN the_DT relationship_NN between_IN and_CC Δ_NN 
+          
+            s_VBZ 
+           let_VB
+          α_NN 
+          
+            xs_NNS 
+           =_SYM 
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 0_CD ,_, 
+          s_VBZ ,_, x_SYM ,_, R_NN =_SYM 1_LS )_) (_( 13_CD )_)
+          ψ_NN 
+          
+            s_VBZ 
+           =_SYM α_NN 
+          1_CD 
+          s_VBZ  -_: α_NN 
+          0_CD 
+          s_VBZ  (_( 14_CD )_)
+          φ_NN 
+          
+            zs_NNS 
+           =_SYM 
+          pr_NN (_( 
+          X_NNP =_SYM 1_CD |_NN 
+          z_SYM ,_, s_VBZ ,_, R_NN =_SYM 1_LS )_) ,_, (_( 15_CD )_)
+          ε_NN 
+          
+            s_VBZ 
+           =_SYM φ_NN 
+          1_CD 
+          s_VBZ  -_: φ_NN 
+          0_CD 
+          s_VBZ  ._. (_( 16_CD )_)
+          Combining_NNP (_( 11_CD )_) and_CC (_( 13_CD )_) ,_, we_PRP can_MD write_VB
+          
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 1_CD ,_, 
+          s_VBZ ,_, x_SYM ,_, R_NN =_SYM 1_LS )_) =_SYM α_NN 
+          
+            xs_NNS 
+           +_NN Δ_NN 
+          
+            s_VBZ 
+           ._. (_( 17_CD )_)
+          Substituting_VBG (_( 13_CD )_) -_: (_( 17_CD )_) into_IN (_( 12_CD )_) gives_VBZ
+          
+          For_IN a_DT tabular_NN display_NN of_IN these_DT calculations_NNS see_VBP Table_NNP
+          1_CD ._. For_IN a_DT graphical_JJ depiction_NN based_VBN on_IN the_DT BK-plot_NNP [_NN 17_CD 18_CD
+          ]_NN ,_, see_VB Figure_NN 1_CD ._.
+          From_IN (_( 18_CD )_) the_DT bias_NN from_IN omitting_VBG 
+          x_SYM in_IN stratum_NN 
+          s_VBZ is_VBZ ψ_NN 
+          
+            s_VBZ 
+           ε_NN 
+          
+            s_VBZ 
+           ._. The_DT first_JJ factor_NN
+          ψ_NN 
+          
+            s_VBZ 
+           =_SYM 
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 0_CD ,_, 
+          s_VBZ ,_, X_NNP =_SYM 1_CD ,_, 
+          R_NN =_SYM 1_LS )_) -_: 
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 0_CD ,_, 
+          s_VBZ ,_, X_NNP =_SYM 0_CD ,_, 
+          R_NN =_SYM 1_LS )_) (_( 19_CD )_)
+          is_VBZ the_DT effect_NN of_IN 
+          X_NNP on_IN subjects_NNS in_IN the_DT control_NN group_NN
+          with_IN observed_VBD outcomes_NNS ._. By_IN virtue_NN of_IN the_DT MAR_NNP assumption_NN
+          in_IN (_( 9_CD )_) ,_, we_PRP could_MD also_RB write_VB ψ_NN 
+          
+            s_VBZ 
+           =_SYM 
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 0_CD ,_, 
+          s_VBZ ,_, X_NNP =_SYM 1_LS )_) -_: 
+          pr_NN (_( 
+          Y_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 0_CD ,_, 5_CD ,_, 
+          X_NNP =_SYM 0_CD )_) ,_, which_WDT is_VBZ the_DT effect_NN of_IN X_NNP on_IN
+          all_DT subjects_NNS in_IN the_DT control_NN group_NN ._. The_DT second_JJ factor_NN ,_,
+          ε_NN 
+          
+            s_VBZ 
+           =_SYM 
+          pr_NN (_( 
+          X_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 1_CD ,_, 
+          s_VBZ ,_, Z_NNP =_SYM 1_LS )_) -_: 
+          pr_NN (_( 
+          X_NNP =_SYM 1_CD |_NN 
+          Z_NNP =_SYM 0_CD ,_, 
+          s_VBZ ,_, R_NN =_SYM 1_LS )_) ,_, (_( 20_CD )_)
+          ranges_NNS from_IN -_: 1_CD to_TO 1_CD and_CC measures_VBZ the_DT degree_NN of_IN
+          confounding_VBG between_IN 
+          X_NNP and_CC 
+          Z_NNP among_IN subjects_NNS with_IN observed_VBD
+          outcomes_NNS (_( i_NNP ._. e_SYM ._. 
+          R_NN =_SYM 1_LS )_) ._. If_IN ε_NN 
+          
+            s_VBZ 
+           =_SYM 0_CD ,_, there_EX is_VBZ no_DT confounding_VBG and_CC no_DT bias_NN because_IN the_DT
+          distribution_NN of_IN 
+          X_NNP among_IN subjects_NNS with_IN observed_VBD
+          outcomes_NNS is_VBZ the_DT same_JJ in_IN the_DT control_NN and_CC study_NN group_NN ._. If_IN ε_NN
+          
+          
+            s_VBZ 
+           =_SYM ±_NN 1_CD there_EX is_VBZ complete_JJ confounding_VBG and_CC the_DT bias_NN
+          reaches_VBZ the_DT maximum_NN value_NN of_IN ±_NN ψ_NN 
+          
+            s_VBZ 
+           ._. Taking_VBG a_DT weighted_JJ average_NN over_IN all_DT strata_NN ,_, the_DT
+          overall_JJ apparent_JJ treatment_NN effect_NN is_VBZ
+          
+          and_CC the_DT overall_JJ bias_NN is_VBZ
+          
+          bias_NN =_SYM Σ_NN 
+          
+            s_VBZ 
+           ψ_NN 
+          
+            s_VBZ 
+           ε_NN 
+          
+            s_VBZ 
+           
+          w_NN 
+          
+            s_VBZ 
+           ._. (_( 22_CD )_)
+          Remarkably_NNP it_PRP is_VBZ possible_JJ to_TO obtain_VB simple_JJ bounds_NNS on_IN ε_NN
+          
+          
+            s_VBZ 
+           based_VBN only_RB on_IN the_DT proportion_NN of_IN subjects_NNS who_WP are_VBP
+          missing_VBG in_IN each_DT randomized_JJ group_NN in_IN stratum_NN 
+          s_VBZ ._. Let_VB
+          π_NN 
+          
+            zs_NNS 
+           =_SYM 
+          pr_NN (_( 
+          R_NN =_SYM 1_CD |_NN 
+          z_SYM ,_, s_VBZ )_) (_( 23_CD )_)
+          denote_NN the_DT proportion_NN of_IN subjects_NNS in_IN randomization_NN
+          group_NN 
+          z_SYM and_CC stratum_NN 
+          s_VBZ with_IN an_DT observed_VBN outcome_NN ._. As_IN
+          derived_VBN in_IN the_DT Appendix_NNP See_NNP additional_JJ file_NN :_: 1_CD ,_, the_DT
+          maximum_NN ε_NN 
+          
+            s_VBZ 
+           ,_, which_WDT we_PRP call_VBP the_DT upper_JJ bound_VBN factor_NN ,_, is_VBZ
+          
+          If_IN only_RB 15_CD %_NN of_IN the_DT subjects_NNS are_VBP missing_VBG in_IN each_DT arm_NN ε_NN 
+          (_( 
+          max_NN )_) 
+          s_VBZ  is_VBZ less_JJR than_IN ._. 18_CD ._. If_IN we_PRP let_VBP
+          ψ_NN 
+          
+            max_NN 
+           denote_NN the_DT anticipated_VBN maximum_NN value_NN of_IN ψ_NN 
+          
+            s_VBZ 
+           ,_, then_RB substituting_VBG (_( 24_CD )_) into_IN (_( 22_CD )_) gives_VBZ the_DT
+          anticipated_VBN maximum_NN bias_NN ,_,
+          
+          bias_NN 
+          
+            max_NN 
+           =_SYM ±_NN ψ_NN 
+          
+            max_NN 
+           Σ_NN 
+          
+            s_VBZ 
+           ε_NN 
+          (_( 
+          max_NN )_) 
+          s_VBZ  
+          w_NN 
+          
+            s_VBZ 
+           ,_, (_( 25_CD )_)
+          where_WRB the_DT anticipated_VBN maximum_NN bias_NN under_IN complete_JJ
+          confounding_VBG ,_, ψ_NN 
+          
+            max_NN 
+           ,_, is_VBZ specified_VBN by_IN the_DT investigator_NN ;_: the_DT upper_JJ bound_VBN
+          factor_NN ,_, ε_NN 
+          (_( 
+          max_NN )_) 
+          s_VBZ  ,_, is_VBZ based_VBN on_IN the_DT fraction_NN
+          with_IN observed_VBD outcomes_NNS in_IN stratum_NN 
+          s_VBZ ;_: and_CC 
+          w_NN 
+          
+            s_VBZ 
+           is_VBZ the_DT fraction_NN of_IN subjects_NNS in_IN stratum_NN 
+          s_VBZ ._.
+          Thus_RB the_DT investigator_NN need_MD only_RB specify_VB ψ_NN 
+          
+            max_NN 
+           ._. One_PRP might_MD argue_VB that_IN if_IN 
+          x_SYM were_VBD a_DT strong_JJ unobserved_JJ
+          inherited_VBN gene_NN ,_, ψ_NN 
+          
+            max_NN 
+           would_MD be_VB close_RB to_TO 1_CD ._. However_RB because_RB ,_, "_'' eligible_JJ
+          subjects_NNS had_VBD no_DT history_NN of_IN colorectal_NN cancer_NN ,_, surgical_JJ
+          resection_NN of_IN adenomas_NNS ,_, bowel_NN resection_NN ,_, the_DT polyposis_NNS
+          syndrome_NN ,_, or_CC inflammatory_JJ bowel_NN disease_NN "_'' [_NN 14_CD ]_NN ,_, it_PRP is_VBZ
+          unlikely_JJ that_IN many_JJ subjects_NNS had_VBD an_DT unobserved_JJ
+          high-penetrance_JJ gene_NN related_VBN to_TO the_DT recurrence_NN of_IN
+          adenomas_NNS ._. We_PRP therefore_RB believe_VBP that_IN unobserved_JJ factors_NNS
+          that_WDT might_MD affect_VB both_DT adenoma_NN recurrence_NN and_CC missingness_NNS
+          could_MD have_VB an_DT effect_NN of_IN similar_JJ magnitude_NN as_IN observed_VBN
+          baseline_NN covariates_NNS ._. Thus_RB to_TO obtain_VB a_DT plausible_JJ value_NN for_IN
+          ψ_NN 
+          
+            max_NN 
+           ,_, we_PRP suggest_VBP estimating_VBG ψ_NN 
+          
+            s_VBZ 
+           ,_, as_IN defined_VBN in_IN (_( 19_CD )_) ,_, based_VBN on_IN observed_VBD covariates_NNS ._.
+          (_( See_VB the_DT Results_NNS section_NN ._. )_) Of_IN course_NN the_DT relationship_NN
+          between_IN observed_VBD covariates_NNS and_CC missingness_NNS could_MD differ_VB
+          substantially_RB from_IN the_DT relationship_NN between_IN an_DT unobserved_JJ
+          covariate_NN and_CC missingness_NNS ._. Nevertheless_RB ,_, we_PRP believe_VBP that_IN
+          estimates_NNS of_IN ψ_NN 
+          
+            s_VBZ 
+           from_IN observed_VBN covariates_NNS are_VBP helpful_JJ for_IN specifying_VBG
+          a_DT realistic_JJ value_NN for_IN ψ_NN 
+          
+            max_NN 
+           ._.
+          Additional_JJ file_NN 1_CD
+          
+          
+          Click_NNP here_RB for_IN file_NN
+        
+      
+      
+        Results_NNS
+        We_PRP applied_VBD our_PRP$ approach_NN to_TO data_NNS from_IN the_DT PPT_NNP trial_NN
+        stratified_JJ by_IN age_NN and_CC sex_NN (_( Table_NNP 2_LS )_) ._. We_PRP first_RB assumed_VBD MAR_NNP
+        and_CC applied_VBN (_( 7_CD )_) and_CC (_( 8_CD )_) to_TO estimate_VB the_DT difference_NN in_IN the_DT
+        probabilities_NNS of_IN adenoma_NN recurrence_NN between_IN the_DT two_CD groups_NNS ._.
+        We_PRP obtained_VBD =_SYM -_: ._. 003_CD with_IN 
+        se_FW (_( )_) ._. =_SYM ._. 022_CD ,_, which_WDT is_VBZ close_JJ to_TO the_DT
+        unstratified_JJ estimate_NN and_CC its_PRP$ standard_JJ error_NN ._.
+        To_TO compute_VB the_DT anticipated_VBN maximum_NN bias_NN (_( 25_CD )_) we_PRP first_JJ
+        computed_JJ ε_NN 
+        (_( 
+        max_NN )_) 
+        s_VBZ  using_VBG (_( 24_CD )_) and_CC estimated_VBN 
+        w_NN 
+        
+          s_VBZ 
+         from_IN the_DT observed_VBN fractions_NNS (_( Table_NNP 2_LS )_) ._. This_DT gave_VBD Σ_NN 
+        
+          s_VBZ 
+         ε_NN 
+        (_( 
+        max_NN )_) 
+        s_VBZ  
+        w_NN 
+        
+          s_VBZ 
+         =_SYM ._. 10_CD ._. We_PRP then_RB specified_VBD ψ_NN 
+        
+          max_NN 
+         ,_, the_DT anticipated_VBN maximum_NN bias_NN under_IN complete_JJ
+        confounding_VBG ._. To_TO obtain_VB a_DT plausible_JJ value_NN for_IN ψ_NN 
+        
+          max_NN 
+         ,_, we_PRP estimated_VBD ψ_NN 
+        
+          s_VBZ 
+         in_IN (_( 19_CD )_) pretending_VBG either_CC sex_NN or_CC age_NN was_VBD the_DT
+        unobserved_JJ covariate_NN 
+        x_SYM ._. This_DT gave_VBD =_SYM ._. 23_CD ,_, ._. 18_CD ,_, ._. 18_CD ,_, ._. 19_CD ,_,
+        for_IN the_DT four_CD age_NN categories_NNS when_WRB 
+        x_SYM =_SYM sex_NN and_CC ._. 07_CD and_CC ._. 09_CD for_IN the_DT two_CD
+        sex_NN categories_NNS when_WRB 
+        x_SYM =_SYM age_NN ._. Treating_NNP the_DT largest_JJS as_IN a_DT
+        realistic_JJ lower_JJR bound_JJ for_IN ψ_NN 
+        
+          max_NN 
+         ,_, we_PRP specified_VBD a_DT slightly_RB larger_JJR value_NN ,_, ψ_NN 
+        
+          max_NN 
+         =_SYM ._. 25_CD ,_, so_IN that_IN the_DT anticipated_VBN maximum_NN bias_NN is_VBZ 
+        bias_NN 
+        
+          max_NN 
+         =_SYM ±_NN ._. 25_CD ×_NN ._. 10_CD =_SYM ._. 025_CD ._. The_DT MAR_NNP confidence_NN interval_NN is_VBZ
+        shifted_VBN to_TO the_DT right_NN or_CC left_VBN by_IN the_DT anticipated_VBN maximum_NN
+        bias_NN (_( Figure_NN 2_LS )_) ._.
+        For_IN purpose_NN of_IN comparison_NN ,_, we_PRP also_RB computed_JJ estimates_NNS
+        and_CC confidence_NN intervals_NNS under_IN a_DT worst_JJS (_( best_JJS )_) case_NN
+        imputation_NN [_NN 9_CD 19_CD ]_NN ,_, where_WRB missing_VBG outcome_NN data_NNS in_IN each_DT
+        stratum_NN were_VBD imputed_JJ as_IN no_DT recurrence_NN (_( recurrence_NN )_) in_IN
+        controls_NNS and_CC recurrence_NN (_( no_DT recurrence_NN )_) in_IN the_DT intervention_NN
+        group_NN ._. (_( These_DT stratum-specific_JJ estimates_NNS were_VBD combined_VBN over_IN
+        strata_NN using_VBG weights_NNS inversely_RB proportional_JJ to_TO the_DT
+        stratum-specific_JJ variances_NNS ._. )_) In_IN the_DT worst_JJS and_CC best_JJS case_NN
+        imputations_NNS the_DT confidence_NN intervals_NNS did_VBD not_RB overlap_VB zero_CD
+        (_( Figure_NN 2_LS )_) ._.
+        Our_PRP$ sensitivity_NN analysis_NN showed_VBD that_IN the_DT worst_JJS and_CC best_JJS
+        case_NN imputations_NNS were_VBD too_RB extreme_JJ ._. Because_IN the_DT absolute_JJ
+        value_NN of_IN the_DT anticipated_VBN maximum_NN bias_NN ,_, ._. 025_CD ,_, is_VBZ smaller_JJR
+        than_IN 1_CD ._. 96_CD ×_NN 
+        se_FW (_( )_) =_SYM ._. 043_CD ,_, the_DT bias-adjusted_JJ
+        confidence_NN intervals_NNS overlap_VBP zero_CD ._. Thus_RB the_DT anticipated_VBN
+        maximum_NN bias_NN of_IN ±_NN ._. 025_CD did_VBD not_RB change_VB our_PRP$ conclusion_NN of_IN
+        little_JJ evidence_NN of_IN an_DT effect_NN of_IN treatment_NN on_IN adenoma_NN
+        recurrence_NN ._. However_RB it_PRP did_VBD increase_NN our_PRP$ uncertainty_NN ,_, as_IN the_DT
+        more_RBR extreme_JJ lower_JJR and_CC upper_JJ bounds_NNS indicated_VBD that_IN the_DT true_JJ
+        effect_NN of_IN treatment_NN could_MD likely_RB be_VB higher_JJR or_CC lower_RBR than_IN
+        indicated_VBN by_IN the_DT original_JJ analysis_NN ._.
+      
+      
+        Discussion_NNP
+        The_DT key_JJ idea_NN of_IN our_PRP$ method_NN is_VBZ to_TO incorporate_VB non-_NN MAR_NNP
+        missingness_NNS by_IN postulating_VBG an_DT unobserved_JJ binary_JJ covariate_NN ._.
+        Although_IN similar_JJ in_IN spirit_NN to_TO using_VBG an_DT unobserved_JJ binary_JJ
+        covariate_NN with_IN observational_NN data_NNS [_NN 20_CD ]_NN ,_, randomization_NN
+        adds_VBZ important_JJ extra_JJ information_NN that_WDT can_MD be_VB usefully_RB
+        exploited_VBN ._. Our_PRP$ formulation_NN implies_VBZ that_IN the_DT probability_NN of_IN
+        missingness_NNS depends_VBZ on_IN both_DT outcome_NN and_CC treatment_NN
+        assignment_NN ._.
+        The_DT proposed_VBN methods_NNS hinges_NNS on_IN first_JJ selecting_NN the_DT
+        appropriate_JJ baseline_NN covariates_NNS ._. We_PRP agree_VBP with_IN Myers_NNP [_NN 21_CD ]_NN
+        that_IN if_IN one_CD anticipates_VBZ missing_VBG data_NNS ,_, one_PRP should_MD collect_VB
+        information_NN on_IN the_DT baseline_NN covariates_NNS related_VBN to_TO outcome_NN
+        that_WDT might_MD predict_VB missing_VBG in_IN outcome_NN ._. We_PRP assumed_VBD that_IN
+        within_IN a_DT stratum_NN ,_, the_DT effect_NN of_IN treatment_NN did_VBD not_RB depend_VB on_IN
+        the_DT unobserved_JJ binary_JJ covariate_NN ._. We_PRP view_VBP this_DT as_IN a_DT main_JJ
+        effect_NN and_CC thus_RB a_DT reasonable_JJ approximation_NN ._.
+        We_PRP also_RB agree_VBP with_IN Shih_NNP [_NN 1_CD ]_NN that_IN one_PRP should_MD collect_VB
+        information_NN on_IN the_DT cause_NN of_IN missingness_NNS ._. In_IN particular_JJ we_PRP
+        recommend_VBP reporting_VBG whether_IN any_DT of_IN the_DT missing_VBG outcomes_NNS
+        were_VBD definitely_RB MAR_NNP ,_, for_IN example_NN ,_, due_JJ to_TO random_JJ technical_JJ
+        problems_NNS ,_, to_TO accidents_NNS ,_, or_CC to_TO leaving_VBG the_DT study_NN for_IN reasons_NNS
+        completely_RB unrelated_JJ to_TO the_DT investigation_NN ._. Suppose_VB that_DT
+        outcome_NN was_VBD definitely_RB MAR_NNP in_IN a_DT proportion_NN 
+        v_NN 
+        
+          zs_NNS 
+         of_IN subjects_NNS ._. Then_RB it_PRP is_VBZ more_RBR informative_JJ to_TO write_VB 
+        v_NN 
+        
+          zs_NNS 
+         as_IN 
+        pr_NN (_( 
+        R_NN =_SYM 1_CD ,_, not_RB MAR_NNP |_NN 
+        z_SYM ,_, s_VBZ )_) +_NN 
+        v_NN 
+        
+          zs_NNS 
+         ._. Because_IN 
+        v_NN 
+        
+          zs_NNS 
+         contains_VBZ no_DT information_NN about_IN the_DT effect_NN of_IN 
+        X_NNP on_IN missingness_NNS ,_, one_PRP can_MD replace_VB π_NN 
+        
+          zs_NNS 
+         by_IN π_NN 
+        
+          zs_NNS 
+         -_: 
+        v_NN 
+        
+          zs_NNS 
+         ,_, which_WDT reduces_VBZ ε_NN 
+        (_( 
+        max_NN )_) 
+        s_VBZ  and_CC hence_RB reduces_VBZ the_DT
+        anticipated_VBN maximum_NN bias_NN ._.
+        Although_IN we_PRP applied_VBD our_PRP$ methodology_NN to_TO a_DT
+        cross-classification_JJ of_IN categorical_JJ covariates_NNS ,_, it_PRP could_MD
+        also_RB be_VB applied_VBN to_TO continuous_JJ covariates_NNS or_CC a_DT univariate_NN
+        combination_NN of_IN covariates_NNS in_IN a_DT manner_NN analogous_JJ to_TO a_DT
+        propensity_NN score_NN [_NN 22_CD ]_NN ._. Let_VB 
+        u_NN denote_NN a_DT vector_NN of_IN covariates_NNS and_CC 
+        e_SYM 
+        
+          z_SYM 
+         =_SYM 
+        pr_NN (_( 
+        R_NN =_SYM 1_CD |_NN 
+        z_SYM ,_, u_NN )_) ._. Following_VBG the_DT derivation_NN of_IN
+        propensity_NN scores_NNS [_NN 22_CD ]_NN ,_, we_PRP can_MD write_VB ,_, 
+        pr_NN (_( 
+        R_NN =_SYM 1_CD |_NN 
+        z_SYM ,_, e_SYM 
+        
+          z_SYM 
+         )_) =_SYM 
+        E_NNP (_( 
+        r_LS |_NN 
+        z_SYM ,_, e_SYM 
+        
+          z_SYM 
+         )_) =_SYM 
+        E_NNP (_( 
+        E_NNP (_( 
+        r_LS |_NN 
+        z_SYM ,_, u_NN )_) |_NN 
+        z_SYM ,_, e_SYM 
+        
+          z_SYM 
+         )_) =_SYM 
+        E_NNP (_( 
+        e_SYM 
+        
+          z_SYM 
+         |_NN 
+        z_SYM ,_, e_SYM 
+        
+          z_SYM 
+         )_) =_SYM 
+        e_SYM 
+        
+          z_SYM 
+         ._. Therefore_RB 
+        pr_NN (_( 
+        R_NN =_SYM 1_CD |_NN 
+        z_SYM ,_, u_NN )_) =_SYM 
+        pr_NN (_( 
+        R_NN =_SYM 1_CD |_NN 
+        z_SYM ,_, e_SYM 
+        
+          z_SYM 
+         )_) ,_, and_CC thus_RB e_SYM 
+        
+          z_SYM 
+         contains_VBZ the_DT same_JJ information_NN for_IN the_DT probability_NN of_IN
+        being_VBG observed_VBN as_IN 
+        u_NN ._. This_DT calculation_NN justifies_VBZ using_VBG 
+        e_SYM 
+        
+          z_SYM 
+         to_TO summarize_VB the_DT covariates_NNS predicting_VBG missingness_NNS ._. To_TO
+        form_VB five_CD strata_NN for_IN randomized_JJ group_NN 
+        z_SYM ,_, we_PRP would_MD compute_VB 
+        e_SYM 
+        
+          z_SYM 
+         for_IN each_DT subject_NN in_IN group_NN 
+        z_SYM and_CC then_RB divide_VBP the_DT distribution_NN of_IN
+        
+        e_SYM 
+        
+          z_SYM 
+         into_IN quintiles_NNS ._.
+      
+      
+        Conclusion_NNP
+        The_DT bias_NN due_JJ to_TO an_DT unobserved_JJ binary_JJ covariate_NN could_MD
+        arise_VB when_WRB the_DT probability_NN of_IN missingness_NNS depends_VBZ on_IN both_DT
+        treatment_NN and_CC outcome_NN ._. Computation_NNP of_IN the_DT bias_NN is_VBZ easy_JJ
+        because_IN it_PRP equals_VBZ the_DT maximum_NN anticipated_VBD bias_NN under_IN
+        complete_JJ confounding_VBG multiplied_VBN by_IN an_DT upper_JJ bound_VBN factor_NN ._.
+        The_DT maximum_NN anticipated_VBD bias_NN might_MD require_VB some_DT expert_NN
+        input_NN but_CC some_DT lower_JJR bound_JJ values_NNS can_MD be_VB obtained_VBN using_VBG
+        observed_VBN baseline_NN covariate_NN ._. The_DT upper_JJ bound_VBN factor_NN is_VBZ
+        easily_RB computed_JJ from_IN the_DT fraction_NN missing_VBG in_IN each_DT group_NN ._.
+        The_DT methodology_NN is_VBZ particularly_RB useful_JJ in_IN the_DT common_JJ
+        situation_NN when_WRB no_RB more_JJR than_IN 15_CD %_NN of_IN the_DT subjects_NNS (_( in_IN excess_NN
+        of_IN those_DT definitely_RB MAR_NNP )_) have_VBP missing_VBG outcomes_NNS ,_, so_IN that_IN the_DT
+        upper_JJ bound_VBN factor_NN in_IN the_DT bias_NN is_VBZ less_JJR than_IN ._. 18_CD ._.
+      
+      
+        Contributions_NNP
+        SGB_NNP devised_VBD the_DT basic_JJ model_NN with_IN the_DT unobserved_JJ
+        covariate_NN ,_, worked_VBD out_RP the_DT unconstrained_JJ maximization_NN ,_, and_CC
+        wrote_VBD the_DT initial_JJ draft_NN of_IN the_DT manuscript_NN ._. LSF_NNP worked_VBD out_RP
+        the_DT constrained_VBN maximization_NN and_CC provided_VBN substantive_JJ
+        improvements_NNS to_TO the_DT manuscript_NN ._.
+      
+    
+  

@@ -1,0 +1,1113 @@
+
+  
+    
+      
+        Background_NNP
+        Methods_NNP for_IN analysis_NN of_IN cDNA_NN microarray_NN data_NNS include_VBP
+        those_DT that_DT cluster_NN hierarchically_RB [_NN 1_CD ]_NN by_IN principles_NNS of_IN
+        self-organization_JJ [_NN 2_CD ]_NN or_CC by_IN k-means_JJ [_NN 3_CD ]_NN ._. These_DT methods_NNS
+        yield_VBP enormous_JJ amounts_NNS of_IN information_NN about_IN similarities_NNS of_IN
+        cell_NN state_NN and_CC coordination_NN of_IN gene_NN regulation_NN ,_, and_CC are_VBP
+        useful_JJ for_IN grouping_VBG genes_NNS or_CC transcriptional_NN profiles_NNS by_IN
+        similarity_NN ._. They_PRP have_VBP the_DT limitation_NN that_IN although_IN
+        experimental_JJ replication_NN enhances_VBZ the_DT significance_NN of_IN
+        groupings_NNS observed_VBD ,_, the_DT groupings_NNS do_VBP not_RB inherently_RB
+        quantify_VB signal_NN and_CC noise_NN ._. A_DT fold-value_JJ cutoff_NN originally_RB
+        was_VBD used_VBN for_IN this_DT purpose_NN [_NN 4_CD ]_NN ,_, and_CC held_VBD double_JJ duty_NN as_IN a_DT
+        signifier_NN of_IN true_JJ signal_NN and_CC a_DT boundary_NN beyond_IN which_WDT
+        observed_VBD fold-measures_JJ were_VBD considered_VBN to_TO be_VB reflective_JJ of_IN
+        actual_JJ fold-change_JJ ._. Other_JJ approaches_NNS use_VBP likelihood-based_JJ
+        methods_NNS [_NN 5_CD ,_, 6_CD ]_NN to_TO obtain_VB P-_NNP values_NNS for_IN gene_NN expression_NN
+        differences_NNS in_IN replicated_VBN comparisons_NNS ._. These_DT methods_NNS make_VBP
+        the_DT assumptions_NNS and_CC have_VBP the_DT power_NN of_IN model-based_JJ
+        statistics_NNS ,_, but_CC as_RB yet_RB are_VBP not_RB formulated_VBN to_TO handle_VB more_JJR
+        than_IN two_CD genotypes_NNS ,_, environments_NNS ,_, or_CC developmental_NN states_NNS
+        within_IN a_DT single_JJ ,_, cohesive_JJ framework_NN ._.
+        One_CD method_NN for_IN analyzing_VBG experiments_NNS that_WDT involve_VBP
+        numerous_JJ treatments_NNS is_VBZ the_DT use_NN of_IN analysis_NN of_IN variance_NN on_IN
+        microarray_NN data_NNS ._. Methods_NNP have_VBP been_VBN developed_VBN that_WDT can_MD yield_VB
+        a_DT profusion_NN of_IN information_NN about_IN the_DT sources_NNS of_IN
+        experimental_JJ variation_NN [_NN 7_CD ,_, 8_CD ]_NN or_CC ,_, at_IN a_DT biological_JJ level_NN ,_,
+        about_IN the_DT proportion_NN of_IN variation_NN in_IN expression_NN profile_NN
+        attributable_JJ to_TO biological_JJ factors_NNS such_JJ as_IN sex_NN or_CC genotype_NN
+        [_NN 9_CD ]_NN ._. These_DT methods_NNS can_MD estimate_VB the_DT magnitude_NN of_IN effects_NNS
+        as_RB well_RB as_IN significance_NN ,_, but_CC also_RB impose_VB considerable_JJ
+        constraints_NNS on_IN experimental_JJ design_NN [_NN 10_CD ]_NN ,_, and_CC they_PRP are_VBP not_RB
+        robust_JJ to_TO missing_VBG or_CC excluded_VBN data_NNS ._.
+        Volcano_NNP plots_NNS [_NN 8_CD ]_NN have_VBP highlighted_VBN well_RB the_DT important_JJ
+        distinction_NN between_IN biological_JJ and_CC statistical_JJ
+        significance_NN ._. There_EX are_VBP effects_NNS that_WDT may_MD be_VB biologically_RB
+        important_JJ that_WDT may_MD not_RB be_VB statistically_RB significant_JJ ,_, and_CC
+        vice_NN versa_RB ._. Because_IN many_JJ microarray_NN experiments_NNS can_MD have_VB a_DT
+        complex_JJ and_CC unbalanced_JJ design_NN ,_, owing_VBG to_TO the_DT technical_JJ
+        failure_NN of_IN certain_JJ hybridizations_NNS and_CC the_DT iterative_JJ nature_NN
+        of_IN the_DT work_NN itself_PRP ,_, we_PRP have_VBP developed_VBN an_DT approach_NN for_IN
+        assessing_VBG statistical_JJ significance_NN that_WDT could_MD potentially_RB
+        use_VB all_PDT the_DT available_JJ observations_NNS in_IN any_DT transitively_RB
+        connected_VBN design_NN ._. Our_PRP$ goal_NN is_VBZ to_TO identify_VB effects_NNS of_IN
+        biologically_RB significant_JJ magnitude_NN to_TO statistically_RB
+        significant_JJ precision_NN ._.
+        To_TO that_DT end_NN ,_, we_PRP introduce_VB a_DT Bayesian_NNP analysis_NN of_IN gene_NN
+        expression_NN level_NN (_( BAGEL_NNP )_) model_NN for_IN statistical_JJ inference_NN of_IN
+        gene_NN expression_NN and_CC demonstrate_VB its_PRP$ utility_NN by_IN re-examining_JJ
+        cDNA_NN microarray_NN data_NNS on_IN the_DT response_NN of_IN yeast_NN to_TO ethanol_NN
+        shock_NN [_NN 11_CD ]_NN ,_, on_IN transcriptional_NN regulation_NN by_IN 
+        SNF_NNP 2_CD and_CC 
+        SWI_NNP 1_CD [_NN 12_CD ]_NN ,_, and_CC on_IN zinc_NN regulation_NN [_NN
+        13_CD ]_NN ._.
+      
+      
+        Results_NNS and_CC discussion_NN
+        
+          Ethanol_NNP shock_NN
+          Alexandre_NNP 
+          et_CC al_NN ._. [_NN 11_CD ]_NN examined_VBD the_DT effect_NN
+          of_IN 30_CD minutes_NNS of_IN ethanol_NN shock_NN on_IN a_DT culture_NN of_IN yeast_NN
+          exposed_VBN during_IN log-phase_JJ growth_NN ,_, by_IN comparing_VBG the_DT global_JJ
+          gene_NN expression_NN of_IN the_DT ethanol-exposed_JJ cells_NNS to_TO the_DT
+          global_JJ gene_NN expression_NN of_IN cells_NNS in_IN the_DT mid-log_JJ phase_NN of_IN
+          growth_NN (_( Figure_NN 1_CD a_DT )_) ._. If_IN we_PRP arbitrarily_RB assign_VBP the_DT node_NN
+          with_IN the_DT lower_JJR estimated_JJ expression_NN to_TO a_DT level_NN of_IN unity_NN
+          and_CC assume_VB an_DT equal_JJ error_NN variance_NN in_IN both_DT treatment_NN and_CC
+          control_NN ,_, there_EX are_VBP only_RB two_CD parameters_NNS to_TO estimate_VB :_: the_DT
+          mean_JJ expression_NN level_NN of_IN the_DT higher-expressed_JJ node_NN ,_, and_CC
+          their_PRP$ common_JJ error_NN variance_NN 2_CD ._. Figure_NN 2_CD ashows_NNS contour_NN
+          plots_NNS of_IN the_DT likelihood_NN functions_NNS (_( see_VB Materials_NNPS and_CC
+          methods_NNS )_) for_IN genes_NNS for_IN three_CD yeast_NN transcriptional_NN
+          regulators_NNS (_( 
+          MSN_NNP 4_CD ,_, 
+          HSF_NNP 1_CD and_CC 
+          GCR_NNP 1_LS )_) that_WDT could_MD potentially_RB be_VB
+          responsible_JJ for_IN observed_VBD downstream_JJ changes_NNS discussed_VBN
+          later_RB in_IN this_DT text_NN ._. These_DT three_CD genes_NNS demonstrate_VBP typical_JJ
+          two-dimensional_JJ likelihood_NN surfaces_VBZ in_IN which_WDT the_DT most_RBS
+          likely_JJ expression_NN levels_NNS are_VBP equivalent_NN ,_, different_JJ ,_, and_CC
+          very_RB different_JJ ,_, respectively_RB ._. Msn_NNP 4_CD p_NN is_VBZ a_DT zinc-finger_JJ
+          transcriptional_NN activator_NN for_IN many_JJ genes_NNS regulated_VBN by_IN
+          Snf_NNP 1_CD p_NN ._. When_WRB 
+          MSN_NNP 4_CD has_VBZ a_DT null_NN allele_NN ,_,
+          stress-response_JJ genes_NNS including_VBG 
+          HSP_NNP 12_CD ,_, 
+          HSP_NNP 26_CD ,_, 
+          HSP_NNP 42_CD ,_, 
+          HSP_NNP 78_CD and_CC 
+          HSP_NNP 104_CD are_VBP upregulated_JJ [_NN 19_CD ]_NN ._. Hsf_NNP 1_CD p_NN
+          is_VBZ a_DT heat-shock_JJ transcription_NN factor_NN that_IN binds_NNS to_TO the_DT
+          heat-shock_JJ DNA_NNP element_NN at_IN both_DT normal_JJ and_CC raised_VBD
+          temperatures_NNS ._. Abundant_NNP transcripts_NNS from_IN 
+          MSN_NNP 4_CD and_CC 
+          HSF_NNP 1_CD could_MD have_VB a_DT role_NN in_IN the_DT
+          upregulation_NN of_IN heat_NN shock_NN genes_NNS after_IN ethanol_NN shock_NN (_( see_VB
+          below_IN )_) ._. Abundant_NNP transcripts_NNS of_IN 
+          MSN_NNP 4_CD and_CC 
+          GCR_NNP 1_CD could_MD have_VB a_DT role_NN in_IN the_DT
+          concomitant_NN upregulation_NN of_IN the_DT trehalose_NN pathway_NN (_( see_VB
+          below_IN )_) ._.
+          The_DT observed_VBD 
+          MSN_NNP 4_CD ratios_NNS in_IN two_CD replicate_VB
+          microarrays_NNS were_VBD inconsistent_JJ (_( 0_CD ._. 6_CD -_: and_CC 2_CD -_: fold_VB )_) ._. This_DT ,_, in_IN
+          fact_NN ,_, gives_VBZ very_RB weak_JJ support_NN to_TO the_DT hypothesis_NNS that_IN the_DT
+          nodes_NNS are_VBP expressed_VBN at_IN nearly_RB the_DT same_JJ level_NN ._. This_DT is_VBZ in_IN
+          part_NN because_IN ,_, conditional_JJ on_IN higher_JJR error_NN variances_NNS ,_,
+          larger_JJR differences_NNS in_IN expression_NN become_VB increasingly_RB
+          likely_JJ ._. This_DT effect_NN is_VBZ seen_VBN more_RBR dramatically_RB in_IN the_DT
+          contour_NN plot_NN for_IN 
+          HSF_NNP 1_CD ,_, for_IN which_WDT the_DT highly_RB
+          dispersed_VBD ,_, somewhat_RB inconsistent_JJ ratios_NNS of_IN 0_CD ._. 9_CD -_: fold_VB ,_,
+          3_CD -_: fold_VB and_CC 5_CD -_: fold_VB were_VBD observed_VBN ._. Consistent_NNP data_NNS ,_, even_RB
+          when_WRB relatively_RB dispersed_VBD (_( ratios_NNS 3_CD -_: fold_VB ,_, 5_CD -_: fold_VB and_CC
+          10_CD -_: fold_VB )_) ,_, as_IN for_IN 
+          GCR_NNP 1_CD ,_, shows_VBZ this_DT effect_NN but_CC with_IN a_DT
+          greater_JJR slope_NN in_IN the_DT likelihood_NN surface_NN ._. Although_IN Figure_NN
+          2_CD adepicts_NNS two-dimensional_JJ surfaces_VBZ from_IN an_DT ordinary_JJ
+          treatment-reference_JJ experimental_JJ design_NN with_IN a_DT common_JJ
+          variance_NN term_NN ,_, it_PRP shows_VBZ typical_JJ simple_JJ topologies_NNS of_IN the_DT
+          likelihood_NN surface_NN ._. Increasing_VBG the_DT amount_NN of_IN data_NNS in_IN
+          larger_JJR datasets_NNS accelerates_VBZ reliable_JJ convergence_NN upon_IN the_DT
+          stationary_JJ distribution_NN of_IN the_DT Markov_NNP chain_NN ,_, which_WDT is_VBZ
+          required_VBN for_IN inference_NN of_IN the_DT posterior_NN distributions_NNS of_IN
+          the_DT parameters_NNS of_IN interest_NN ._. Furthermore_RB ,_, in_IN larger_JJR
+          datasets_NNS ,_, these_DT posterior_NN unconditional_JJ distributions_NNS of_IN
+          the_DT parameters_NNS are_VBP unimodal_NN ._. By_IN inference_NN ,_, the_DT
+          multidimensional_NN likelihood_NN surfaces_VBZ are_VBP expected_VBN to_TO be_VB
+          fairly_RB simple_JJ ._.
+          These_DT likelihood_NN plots_NNS clearly_RB convey_VBP the_DT most_RBS
+          probable_JJ expression_NN levels_NNS ._. To_TO determine_VB statistical_JJ
+          significance_NN ,_, we_PRP examine_VBP the_DT posterior_NN distributions_NNS of_IN
+          the_DT parameters_NNS ,_, as_IN determined_VBN by_IN Markov_NNP chain_NN Monte_NNP Carlo_NNP
+          simulation_NN ._. In_IN fact_NN ,_, the_DT credible_JJ intervals_NNS for_IN the_DT
+          expression_NN level_NN for_IN all_DT three_CD of_IN these_DT genes_NNS overlap_VBP
+          (_( Figure_NN 2_CD b_SYM )_) ._. There_EX is_VBZ not_RB enough_JJ information_NN in_IN the_DT
+          replicated_VBN comparisons_NNS of_IN each_DT gene_NN 's_POS ratio_NN of_IN expression_NN
+          to_TO constrain_VB the_DT variance_NN parameter_NN to_TO a_DT small_JJ enough_JJ
+          value_NN so_IN that_IN expression_NN levels_NNS could_MD be_VB inferred_VBN to_TO lie_VB
+          within_IN a_DT small_JJ range_NN ._.
+          In_IN contrast_NN to_TO the_DT lack_NN of_IN statistical_JJ significance_NN of_IN
+          the_DT expression_NN differences_NNS observed_VBD in_IN these_DT three_CD
+          upstream_RB transcription_NN factors_NNS ,_, many_JJ of_IN the_DT downstream_JJ
+          conclusions_NNS of_IN the_DT original_JJ study_NN are_VBP not_RB only_RB consistent_JJ
+          with_IN BAGEL_NNP estimates_NNS ,_, but_CC are_VBP statistically_RB significant_JJ
+          by_IN the_DT conservative_JJ gene-by-gene_JJ criterion_NN of_IN
+          nonoverlapping_VBG 95_CD %_NN credible_JJ intervals_NNS ._. For_IN instance_NN ,_, the_DT
+          authors_NNS concluded_VBD that_IN the_DT stress-induced_JJ chaperonins_NNS
+          (_( '_POS heat-shock_JJ '_POS genes_NNS )_) were_VBD upregulated_JJ by_IN 30_CD minutes_NNS of_IN
+          exposure_NN to_TO 7_CD %_NN v_NN /_NN v_NN ethanol_NN [_NN 11_CD ]_NN ._. Many_JJ of_IN these_DT genes_NNS are_VBP
+          clearly_RB significantly_RB abundant_JJ in_IN the_DT stressed_VBN state_NN
+          (_( Figure_NN 3_CD a_DT )_) ,_, although_IN there_EX is_VBZ not_RB enough_JJ data_NNS to_TO
+          conclude_VB that_IN all_DT of_IN the_DT set_NN of_IN 
+          HSP_NNP 70_CD -_: family_NN genes_NNS is_VBZ
+          significantly_RB abundant_JJ in_IN the_DT stressed_VBN state_NN (_( Figure_NN 3_CD b_SYM )_) ._.
+          On_IN the_DT basis_NN of_IN the_DT large_RB estimated_VBN expression_NN
+          differences_NNS (_( nearly_RB always_RB twofold_NN or_CC greater_JJR )_) ,_, an_DT effect_NN
+          on_IN the_DT 
+          HSP_NNP 70_CD family_NN may_MD yet_RB be_VB large_JJ and_CC
+          biologically_RB important_JJ ._.
+          In_IN addition_NN ,_, the_DT trehalose_NN pathway_NN ,_, whose_WP$ product_NN aids_VBZ
+          the_DT cell_NN in_IN dealing_VBG with_IN excess_JJ ethanol_NN [_NN 20_CD ]_NN ,_, is_VBZ clearly_RB
+          upregulated_JJ (_( Figure_NN 4_LS )_) ._. Interestingly_RB ,_, the_DT six_CD genes_NNS 
+          HXK_NNP 2_CD ,_, 
+          PGM_NNP 1_CD ,_, YHL_NNP 0012_CD w_NN ,_, 
+          TSL_NNP 1_CD ,_, 
+          TPS_NNP 2_CD and_CC 
+          ATH_NNP 1_CD ,_, form_NN a_DT completely_RB parallel_JJ
+          pathway_NN from_IN α-_NN D-_NNP glucose_NN to_TO α_NN ,_, α-trehalose_JJ to_TO D-_NNP glucose_NN ._.
+          Of_IN those_DT genes_NNS ,_, none_NN is_VBZ significantly_RB upregulated_JJ ._.
+          Teasing_NNP apart_RP the_DT biochemical_JJ modes_NNS of_IN action_NN of_IN these_DT
+          isoforms_NNS (_( '_POS redundant_JJ '_POS genes_NNS )_) will_MD lead_VB to_TO a_DT better_JJR
+          understanding_NN of_IN the_DT modularity_NN of_IN genomes_NNS and_CC of_IN the_DT
+          varied_VBN methods_NNS of_IN response_NN to_TO environmental_JJ challenges_NNS of_IN
+          organisms_NNS ._. Alexandre_NNP 
+          et_CC al_NN ._. propose_VB a_DT futile_JJ trehalose_NN
+          cycle_NN after_IN observing_VBG high_JJ ratios_NNS of_IN expression_NN of_IN 
+          NTH_NNP 1_CD in_IN their_PRP$ ethanol-shocked_JJ
+          sample_NN [_NN 11_CD ]_NN ._. However_RB ,_, the_DT wide_JJ credible_JJ intervals_NNS around_IN
+          the_DT expression_NN levels_NNS of_IN the_DT genes_NNS for_IN the_DT neutral_JJ
+          trehalase_NN NTH_NNP 1_CD (_( Figure_NN 4_LS )_) and_CC the_DT acid_NN trehalase_NN ATH_NNP 1_CD ,_,
+          the_DT observed_VBN accumulation_NN of_IN trehalose_NN in_IN fermentations_NNS [_NN
+          21_CD ]_NN ,_, and_CC the_DT potential_NN for_IN compartmentalization_NN [_NN 22_CD ]_NN
+          indicate_VBP that_IN more_JJR data_NNS are_VBP needed_VBN before_IN one_PRP can_MD infer_NN
+          the_DT extent_NN of_IN such_JJ a_DT cycle_NN ._.
+          In_IN addition_NN to_TO the_DT results_NNS previously_RB noted_VBD ,_, it_PRP is_VBZ
+          interesting_JJ to_TO observe_VB significant_JJ abundant_JJ expression_NN of_IN
+          numerous_JJ open_JJ reading_NN frames_NNS (_( ORFs_NNP )_) containing_VBG
+          transposable-element_JJ sequence_NN under_IN ethanol_NN shock_NN (_( Figure_NN
+          5_LS )_) ._. Although_IN robust_JJ inferences_NNS are_VBP compromised_VBN by_IN the_DT
+          high_JJ sequence_NN homology_NN of_IN these_DT ORFs_NNP ,_, the_DT fact_NN that_IN six_CD
+          were_VBD significantly_RB abundant_JJ and_CC none_NN was_VBD meagerly_RB
+          expressed_VBN suggests_VBZ an_DT interesting_JJ biological_JJ phenomenon_NN ._.
+          One_CD possible_JJ effector_NN is_VBZ the_DT transcriptional_NN regulator_NN
+          Gcr_NNP 1_CD p_NN ,_, whose_WP$ BAGEL_NNP estimate_NN in_IN ethanol_NN shock_NN is_VBZ fivefold_JJ
+          greater_JJR than_IN in_IN normal_JJ log_NN growth_NN and_CC whose_WP$ credible_JJ
+          intervals_NNS in_IN the_DT two_CD conditions_NNS barely_RB overlap_VBP (_( Figure_NN
+          2_LS )_) ._. Gcr_NNP 1_CD p_NN elevates_VBZ transcription_NN of_IN transposable_JJ elements_NNS
+          Ty_NNP 2_CD -_: 917_CD and_CC Ty_NNP 1_CD -_: 912_CD [_NN 23_CD ]_NN as_RB well_RB as_IN of_IN 
+          GLK_NNP 1_CD of_IN the_DT trehalose_NN pathway_NN (_( [_NN
+          24_CD ]_NN ,_, and_CC Figure_NN 4_LS )_) ._.
+          There_EX are_VBP many_JJ reasons_NNS why_WRB data_NNS points_NNS in_IN microarray_NN
+          experiments_NNS are_VBP wisely_RB excluded_VBN from_IN analysis_NN ._. Whole_JJ
+          sectors_NNS occasionally_RB fail_VBP due_JJ to_TO premature_JJ drying_VBG during_IN
+          hybridization_NN ,_, spots_NNS are_VBP occasionally_RB malformed_JJ ,_, and_CC
+          experimental_JJ signal_NN is_VBZ frequently_RB so_RB low_JJ compared_VBN to_TO
+          background_NN that_IN a_DT spot_NN is_VBZ best_RBS excluded_VBN from_IN the_DT data_NNS ._.
+          Only_RB 2_CD ,_, 041_CD genes_NNS of_IN 6_CD ,_, 138_CD in_IN these_DT data_NNS passed_VBD the_DT spot_NN
+          background-foreground_JJ acceptance_NN criteria_NNS (_( see_VB Materials_NNPS
+          and_CC methods_NNS )_) in_IN all_DT three_CD experiments_NNS ._. Of_IN these_DT genes_NNS ,_, 65_CD
+          were_VBD significantly_RB different_JJ by_IN a_DT gene-by-gene_JJ criterion_NN ,_,
+          demanding_VBG nonoverlapping_VBG 95_CD %_NN confidence_NN intervals_NNS ._. A_DT
+          further_JJ 2_CD ,_, 337_CD genes_NNS had_VBD one_CD observation_NN missing_VBG ;_: their_PRP$
+          credible_JJ intervals_NNS were_VBD appropriately_RB wider_JJR after_IN BAGEL_NNP
+          analysis_NN of_IN the_DT data_NNS and_CC only_RB 22_CD were_VBD statistically_RB
+          significant_JJ ._. Genes_NNP with_IN one_CD acceptable_JJ observation_NN were_VBD
+          not_RB analyzed_VBN ._. Use_NN of_IN an_DT informative_JJ prior_RB distribution_NN on_IN
+          the_DT variance_NN ,_, however_RB ,_, would_MD allow_VB such_JJ analysis_NN ._.
+          Table_NNP 1_CD gives_VBZ an_DT overview_NN of_IN informative_JJ pairwise_NN
+          comparisons_NNS from_IN the_DT experiments_NNS analyzed_VBD here_RB ._. In_IN the_DT
+          ethanol-shock_JJ experiments_NNS ,_, only_RB the_DT 87_CD genes_NNS listed_VBN in_IN
+          Table_NNP 1_CD are_VBP statistically_RB significantly_RB different_JJ out_IN of_IN
+          the_DT ,_, on-average_JJ ,_, 1_CD ,_, 851_CD genes_NNS measured_VBN as_IN greater_JJR than_IN
+          twofold_NN differentially_RB expressed_VBD in_IN these_DT single_JJ
+          microarray_NN experiments_NNS ._. BAGEL_NNP analysis_NN allows_VBZ unambiguous_JJ
+          inference_NN as_IN to_TO the_DT expression_NN levels_NNS and_CC confidence_NN
+          intervals_NNS of_IN these_DT genes_NNS of_IN interest_NN ._. In_IN this_DT dataset_NN
+          with_IN only_RB three_CD replicates_NNS ,_, we_PRP detect_VBP no_DT significant_JJ
+          differences_NNS at_IN below_IN a_DT twofold_NN level_NN ._. Datasets_NNP with_IN
+          greater_JJR direct_JJ replication_NN ,_, or_CC with_IN less_JJR dispersed_VBD
+          ratios_NNS ,_, or_CC with_IN transitively_RB informative_JJ comparisons_NNS (_( see_VB
+          below_IN and_CC J_NNP ._. P_NN ._. T_NN ._. ,_, unpublished_JJ data_NNS )_) promise_NN to_TO do_VB so_RB ._.
+        
+        
+          Deletion_NNP of_IN SWI_NNP 1_CD and_CC SNF_NNP 2_CD
+          Sudarsanam_NNP 
+          et_CC al_NN ._. undertook_VBD a_DT study_NN to_TO
+          ascertain_VB which_WDT genes_NNS were_VBD controlled_VBN by_IN the_DT Snf_NNP 2_CD p_NN /_NN Swi_NNP 1_CD p_NN
+          chromatin-remodeling_JJ and_CC transcriptional-activator_JJ
+          complex_JJ subunits_NNS ,_, whether_IN the_DT genes_NNS had_VBD any_DT distinct_JJ
+          regulatory_JJ roles_NNS ,_, and_CC how_WRB their_PRP$ regulatory_JJ roles_NNS compare_VBP
+          in_IN rich_JJ and_CC minimal_JJ media_NNS (_( [_NN 12_CD ]_NN ,_, and_CC Figure_NN 1_CD b_SYM )_) ._. In_IN rich_JJ
+          medium_NN ,_, the_DT credible_JJ intervals_NNS among_IN mutant_JJ and_CC wild-type_JJ
+          expression_NN levels_NNS do_VBP not_RB overlap_VB for_IN 251_CD genes_NNS (_( more_JJR than_IN
+          4_CD %_NN of_IN the_DT genome_NN )_) ._. Importantly_NNP ,_, 46_CD genes_NNS with_IN estimated_VBN
+          ratios_NNS greater_JJR than_IN twofold_NN have_VBP overlapping_VBG credible_JJ
+          intervals_NNS (_( Figure_NN 6_CD a_DT ,_, lower_JJR left_VBD and_CC lower_JJR right_JJ
+          quadrants_NNS )_) ._. Moreover_RB ,_, almost_RB one_CD quarter_NN of_IN the_DT 251_CD
+          significantly_RB different_JJ genes_NNS have_VBP estimated_VBN ratios_NNS less_JJR
+          than_IN twofold_NN (_( densely_RB packed_VBN between_IN the_DT dashed_VBN lines_NNS
+          because_IN the_DT difference_NN between_IN estimates_NNS cannot_NN exceed_VBP
+          the_DT distance_NN between_IN credible_JJ intervals_NNS ,_, Figure_NN 6_CD a_DT )_) ._. In_IN
+          minimal_JJ medium_NN ,_, similar_JJ results_NNS were_VBD acquired_VBN ;_: a_DT greater_JJR
+          number_NN of_IN significant_JJ results_NNS were_VBD obtained_VBN ,_, due_JJ in_IN part_NN
+          to_TO greater_JJR replication_NN (_( Figure_NN 1_CD b_SYM ,_, Table_NNP 1_LS )_) ._. The_DT credible_JJ
+          intervals_NNS of_IN mutant_JJ and_CC wild-type_JJ expression_NN levels_NNS do_VBP
+          not_RB overlap_VB for_IN 604_CD genes_NNS ,_, almost_RB 10_CD %_NN of_IN the_DT genome_NN ._.
+          Interestingly_RB ,_, 14_CD genes_NNS with_IN estimated_VBN ratios_NNS greater_JJR
+          than_IN twofold_NN have_VBP overlapping_VBG credible_JJ intervals_NNS ,_, and_CC 361_CD
+          (_( more_JJR than_IN 50_CD %_NN )_) of_IN the_DT 604_CD significantly_RB differentially_RB
+          expressed_VBD genes_NNS are_VBP differentially_RB expressed_VBN below_IN the_DT
+          twofold_NN level_NN ._.
+          Whether_IN these_DT genes_NNS represent_VBP all_DT of_IN the_DT genes_NNS
+          controlled_VBN by_IN the_DT Snf_NNP /_NN Swi_NNP complex_JJ depends_VBZ ,_, of_IN course_NN ,_, on_IN
+          what_WP level_NN of_IN difference_NN is_VBZ deemed_VBN biologically_RB
+          significant_JJ ,_, which_WDT in_IN many_JJ cases_NNS depends_VBZ upon_IN the_DT gene_NN of_IN
+          interest_NN ._. For_IN many_JJ transcription_NN factors_NNS ,_, it_PRP may_MD be_VB that_IN
+          small_JJ changes_NNS in_IN expression_NN level_NN cause_NN very_RB large_JJ
+          changes_NNS in_IN biological_JJ state_NN [_NN 25_CD ,_, 26_CD ,_, 27_CD ]_NN ,_, and_CC for_IN many_JJ
+          metabolic_JJ genes_NNS ,_, very_RB large_JJ changes_NNS in_IN expression_NN may_MD
+          change_VB pathway_NN throughput_NN very_RB little_JJ [_NN 28_CD ]_NN ._. Note_VB also_RB
+          that_IN these_DT criteria_NNS do_VBP not_RB distinguish_VB between_IN 
+          cis_NNS and_CC 
+          trans_NNS effects_NNS on_IN expression_NN level_NN ._.
+          Presumably_RB ,_, many_JJ 
+          trans_NNS effects_NNS percolate_NN into_IN much_JJ
+          or_CC all_DT of_IN the_DT genome_NN in_IN very_RB small_JJ ways_NNS ;_: some_DT of_IN these_DT
+          effects_NNS may_MD be_VB overwhelmed_VBN by_IN systematic_JJ error_NN induced_VBN by_IN
+          the_DT technology_NN ,_, but_CC most_JJS should_MD be_VB detectable_JJ with_IN
+          sufficient_JJ replication_NN ._.
+          Credible_NNP intervals_NNS determined_VBD using_VBG BAGEL_NNP make_VB it_PRP
+          clear_JJ that_IN even_RB 
+          SER_NNP 3_CD ,_, which_WDT Sudarsanam_NNP 
+          et_CC al_NN ._. examine_VB as_IN a_DT candidate_NN gene_NN
+          differentially_RB affected_VBD in_IN the_DT 
+          snf_NN 2_CD Δ_NN and_CC 
+          swi_NN 1_CD Δ_NN strains_NNS on_IN the_DT basis_NN of_IN cDNA_NN
+          microarray_NN and_CC northern_JJ data_NNS [_NN 12_CD ]_NN ,_, should_MD not_RB be_VB
+          inferred_VBN to_TO be_VB differentially_RB affected_VBN solely_RB on_IN the_DT
+          basis_NN of_IN their_PRP$ cDNA_NN microarray_NN data_NNS ._. Although_IN estimates_NNS
+          of_IN the_DT abundance_NN of_IN 
+          SER_NNP 3_CD transcript_NN differ_VB by_IN more_JJR than_IN
+          twofold_NN ,_, the_DT credible_JJ intervals_NNS for_IN these_DT two_CD mutants_NNS
+          have_VBP extensive_JJ overlap_VB (_( Figure_NN 7_CD a_DT )_) ._. Examining_NNP the_DT
+          rich-media_JJ cDNA_NN microarray_NN dataset_NN for_IN other_JJ candidates_NNS
+          for_IN differential_NN expression_NN ,_, we_PRP observe_VBP that_IN there_EX are_VBP 27_CD
+          genes_NNS in_IN which_WDT only_RB one_CD of_IN the_DT two_CD mutants_NNS has_VBZ
+          nonoverlapping_VBG credible_JJ intervals_NNS with_IN the_DT wild_JJ type_NN ._.
+          More_RBR important_JJ ,_, there_EX are_VBP just_RB two_CD genes_NNS in_IN this_DT
+          global_JJ dataset_NN for_IN which_WDT the_DT credible_JJ intervals_NNS of_IN
+          expression_NN levels_NNS in_IN 
+          snf_NN 2_CD and_CC 
+          swi_NN 1_CD mutants_NNS do_VBP not_RB overlap_VB ._. This_DT
+          answers_VBZ a_DT question_NN posed_VBN by_IN Sudarsanam_NNP 
+          et_CC al_NN ._. as_IN to_TO whether_IN the_DT
+          differences_NNS in_IN gene_NN expression_NN between_IN these_DT mutants_NNS that_IN
+          they_PRP observed_VBD were_VBD due_JJ to_TO variation_NN in_IN microarray_NN
+          measurements_NNS or_CC to_TO real_JJ differences_NNS between_IN the_DT mutants_NNS [_NN
+          12_CD ]_NN ._. Nearly_RB all_DT differences_NNS they_PRP observed_VBD in_IN the_DT
+          transcriptional_NN profiles_NNS of_IN these_DT two_CD mutants_NNS are_VBP
+          potentially_RB due_JJ to_TO variation_NN in_IN microarray_NN experiments_NNS ._. A_DT
+          scatterplot_NN of_IN the_DT log_NN 
+          2_CD estimates_NNS of_IN gene-expression_JJ levels_NNS
+          for_IN genes_NNS significantly_RB different_JJ from_IN wild_JJ type_NN ,_, in_IN the_DT
+          two_CD deletion_NN mutants_NNS compared_VBN to_TO wild_JJ type_NN ,_, yields_VBZ a_DT
+          linear_JJ correlation_NN of_IN 0_CD ._. 97_CD (_( Figure_NN 6_CD b_SYM )_) ._. The_DT large_JJ number_NN
+          of_IN genes_NNS meagerly_RB expressed_VBD compared_VBN to_TO wild_JJ type_NN in_IN both_DT
+          deletion_NN mutants_NNS is_VBZ consistent_JJ with_IN the_DT roles_NNS of_IN Snf_NNP 2_CD p_NN
+          and_CC Swi_NNP 1_CD p_NN as_IN transcriptional_NN activators_NNS ._. In_IN addition_NN ,_,
+          globally_RB ,_, not_RB a_DT single_JJ gene_NN shows_VBZ a_DT contrasting_VBG change_NN in_IN
+          expression_NN in_IN comparison_NN to_TO wild_JJ type_NN ._. This_DT affirms_NNS the_DT
+          conclusion_NN [_NN 12_CD ]_NN that_IN the_DT two_CD genes_NNS work_VBP almost_RB entirely_RB
+          in_IN concert_NN in_IN the_DT media_NNS conditions_NNS tested_VBN ._. The_DT expression_NN
+          levels_NNS of_IN the_DT two_CD genes_NNS detected_VBN by_IN BAGEL_NNP as_IN having_VBG
+          significantly_RB different_JJ expression_NN in_IN the_DT two_CD mutants_NNS ,_, 
+          ECM_NNP 33_CD and_CC YOL_NNP 154_CD w_NN ,_, are_VBP shown_VBN in_IN
+          Figure_NN 7_CD b_SYM ._. The_DT small_JJ magnitude_NN of_IN the_DT difference_NN observed_VBD
+          in_IN 
+          ECM_NNP 33_CD between_IN the_DT two_CD strains_NNS may_MD
+          indicate_VB that_IN this_DT highly_RB statistically_RB significant_JJ
+          difference_NN is_VBZ biologically_RB irrelevant_JJ ,_, but_CC certainly_RB
+          further_JJ investigation_NN of_IN the_DT significantly_RB different_JJ
+          gene-expression_JJ levels_NNS observed_VBD in_IN YOL_NNP 154_CD w_NN is_VBZ
+          warranted_VBN ._.
+          Quantitation_NNP of_IN short_JJ transcript_NN sequence_NN tags_NNS by_IN
+          serial_NN analysis_NN of_IN gene_NN expression_NN (_( SAGE_NNP )_) [_NN 29_CD ]_NN yields_NNS
+          absolute_JJ counts_NNS of_IN expressed_VBN sequences_NNS in_IN the_DT yeast_NN
+          genome_NN [_NN 30_CD ]_NN ._. These_DT quantitations_NNS may_MD be_VB used_VBN to_TO put_VB
+          relative_JJ expression_NN values_NNS obtained_VBN from_IN BAGEL_NNP on_IN an_DT
+          absolute_JJ scale_NN ._. There_EX are_VBP issues_NNS with_IN sampling_VBG error_NN and_CC
+          non-uniqueness_JJ of_IN sequence_NN tags_NNS in_IN SAGE_NNP assays_NNS [_NN 31_CD ]_NN as_RB
+          well_RB as_IN with_IN the_DT linearity_NN of_IN cDNA_NN microarray_NN ratio_NN
+          measures_NNS [_NN 17_CD ]_NN ,_, and_CC with_IN differences_NNS between_IN the_NNP
+          '_POS wild-type_JJ '_POS strain_NN used_VBD in_IN SAGE_NNP and_CC in_IN cDNA_NN microarray_NN
+          experiments_NNS ._. These_DT sources_NNS of_IN error_NN are_VBP many_JJ ,_, but_CC small_JJ
+          and_CC uncorrelated_JJ ._. With_IN these_DT caveats_NNS in_IN mind_NN ,_, Figure_NN
+          8_CD aassumes_NNS that_IN SAGE_NNP counts_NNS are_VBP exact_JJ in_IN order_NN to_TO provide_VB
+          absolute_JJ expression_NN levels_NNS inferred_VBN using_VBG BAGEL_NNP ,_,
+          normalized_JJ so_IN that_IN the_DT wild-type_JJ strain_NN on_IN rich_JJ medium_NN is_VBZ
+          assumed_VBN to_TO have_VB the_DT same_JJ expression_NN levels_NNS as_IN indicated_VBN
+          by_IN SAGE_NNP assay_NN [_NN 30_CD ]_NN ._. Figure_NN 8_CD ashows_NNS that_IN ,_, as_IN observed_VBN by_IN
+          Sudarsanam_NNP 
+          et_CC al_NN ._. [_NN 12_CD ]_NN ,_, the_DT acid_NN phosphatase_NN
+          genes_NNS are_VBP meagerly_RB expressed_VBN in_IN 
+          snf_NN 2_CD Δ_NN and_CC 
+          swi_NN 1_CD Δ_NN mutants_NNS ._.
+          Note_VB that_IN although_IN there_EX is_VBZ esthetic_JJ appeal_NN to_TO having_VBG
+          the_DT measurements_NNS reported_VBD on_IN an_DT absolute_JJ basis_NN of_IN
+          transcripts_NNS per_IN cell_NN ,_, little_RB additional_JJ information_NN is_VBZ
+          obtained_VBN by_IN this_DT transformation_NN for_IN most_JJS experimental_JJ
+          questions_NNS ,_, as_IN the_DT result_NN is_VBZ simply_RB a_DT rescaling_VBG of_IN the_DT 
+          y_NN -_: axis_NNS for_IN each_DT gene_NN ._. Also_RB ,_,
+          whereas_IN the_DT statistical_JJ significance_NN of_IN BAGEL_NNP results_NNS is_VBZ
+          robust_JJ to_TO considerable_JJ deviation_NN from_IN general_JJ linearity_NN
+          of_IN cDNA_NN microarray_NN results_NNS ,_, the_DT quantitative_JJ result_NN using_VBG
+          SAGE_NNP counts_VBZ as_IN a_DT basis_NN depends_VBZ critically_RB upon_IN the_DT
+          linearity_NN of_IN cDNA_NN microarray_NN measurements_NNS ._. Lastly_NNP ,_, it_PRP is_VBZ
+          unclear_JJ how_WRB to_TO scale_VB meagerly_RB expressed_VBD genes_NNS that_WDT had_VBD a_DT
+          count_NN of_IN zero_CD in_IN a_DT SAGE_NNP analysis_NN ._. 
+          PHO_NNP 4_CD is_VBZ such_JJ a_DT gene_NN ;_: in_IN Figure_NN 8_CD b_SYM ,_,
+          we_PRP have_VBP arbitrarily_RB charted_JJ a_DT frequency_NN that_WDT would_MD be_VB
+          appropriate_JJ if_IN it_PRP were_VBD present_JJ at_IN approximately_RB one_CD order_NN
+          of_IN magnitude_NN below_IN the_DT SAGE_NNP experiment_NN 's_POS detection_NN
+          threshold_NN of_IN 0_CD ._. 1_CD molecules_NNS per_IN cell_NN ._. Neither_DT 
+          PHO_NNP 2_CD nor_CC 
+          PHO_NNP 4_CD shows_VBZ significant_JJ evidence_NN of_IN
+          differential_NN expression_NN in_IN 
+          snf_NN 2_CD Δ_NN /_NN 
+          swi_NN 1_CD Δ_NN mutants_NNS ._. Consideration_NNP of_IN
+          the_DT raw_JJ ratio_NN data_NNS led_VBD Sudarsanam_NNP 
+          et_CC al_NN ._. [_NN 12_CD ]_NN to_TO thus_RB conclude_VB that_DT
+          
+          PHO_NNP 5_CD gene_NN expression_NN is_VBZ directly_RB
+          controlled_VBN by_IN Snf_NNP 2_CD p_NN /_NN Swi_NNP 1_CD p_NN ._. 
+          PHO_NNP 3_CD ,_, a_NNP '_POS constitutive_JJ '_POS acid_NN
+          phosphatase_NN ,_, shows_VBZ the_DT same_JJ relative_JJ abundance_NN across_IN 
+          snf_NN 2_CD Δ_NN /_NN 
+          swi_NN 1_CD Δ_NN mutants_NNS as_IN does_VBZ 
+          PHO_NNP 5_CD (_( data_NNS not_RB shown_VBN )_) ._. The_DT 87_CD %_NN
+          identity_NN of_IN the_DT nucleotide_NN sequence_NN of_IN these_DT genes_NNS means_VBZ
+          that_IN cross-hybridization_JJ may_MD confound_NN inference_NN about_IN
+          their_PRP$ regulation_NN ._. However_RB ,_, unlike_IN 
+          PHO_NNP 5_CD ,_, there_EX is_VBZ currently_RB no_DT
+          evidence_NN that_IN 
+          PHO_NNP 3_CD is_VBZ regulated_VBN by_IN 
+          PHO_NNP 2_CD or_CC 
+          PHO_NNP 4_CD ._. 
+          PHO_NNP 5_CD may_MD share_VB a_DT direct_JJ Snf_NNP 2_CD p_NN /_NN Swi_NNP 1_CD p_NN
+          regulatory_JJ mechanism_NN with_IN 
+          PHO_NNP 3_CD ._.
+          Analysis_NNP presented_VBD here_RB supports_VBZ the_DT result_NN that_IN 
+          SWI_NNP 1_CD and_CC 
+          SNF_NNP 2_CD work_NN almost_RB entirely_RB in_IN
+          concert_NN within_IN the_DT cell_NN in_IN rich_JJ medium_NN [_NN 12_CD ]_NN ._. As_IN
+          Sudarsanam_NNP 
+          et_CC al_NN ._. noted_VBD ,_, however_RB ,_, the_DT
+          proteins_NNS may_MD not_RB always_RB be_VB produced_VBN together_RB in_IN all_DT
+          conditions_NNS ._. Moreover_RB ,_, it_PRP should_MD be_VB noted_VBN that_IN their_PRP$
+          experimental_JJ design_NN has_VBZ the_DT least_JJS power_NN to_TO detect_VB these_DT
+          specific_JJ differences_NNS ._. This_DT is_VBZ because_IN all_DT comparisons_NNS of_IN
+          expression_NN level_NN between_IN the_DT mutant_JJ strains_NNS are_VBP
+          transitive_JJ comparisons_NNS ,_, which_WDT inherit_VBP the_DT variance_NN
+          associated_VBN with_IN the_DT intermediary_JJ wild-type_JJ expression_NN
+          level_NN as_RB well_RB as_IN the_DT variance_NN associated_VBN with_IN the_DT
+          expression_NN levels_NNS of_IN the_DT two_CD mutant_JJ strains_NNS ._. The_DT result_NN
+          is_VBZ that_IN on_IN a_DT log_NN scale_NN the_DT credible_JJ intervals_NNS of_IN
+          gene-expression_JJ level_NN are_VBP broader_JJR for_IN the_DT two_CD mutants_NNS
+          than_IN for_IN the_DT wild_JJ type_NN ._. This_DT outcome_NN is_VBZ a_DT recurrent_JJ
+          problem_NN with_IN a_DT repeated_VBN reference-sample_JJ experimental_JJ
+          design_NN :_: one_CD learns_VBZ the_DT most_JJS information_NN about_IN the_DT
+          reference_NN sample_NN ,_, which_WDT is_VBZ frequently_RB arbitrary_JJ and_CC not_RB
+          necessarily_RB of_IN interest_NN ._. An_DT ideal_JJ addition_NN to_TO the_DT
+          experimental_JJ design_NN in_IN Figure_NN 1_CD bwould_NN be_VB several_JJ direct_JJ
+          comparisons_NNS of_IN the_DT mutant_JJ strains_NNS ._. Then_RB ,_, both_DT transitive_JJ
+          and_CC direct_JJ information_NN would_MD contribute_VB to_TO the_DT
+          statistical_JJ power_NN of_IN a_DT BAGEL_NNP analysis_NN for_IN any_DT comparison_NN ._.
+          It_PRP is_VBZ also_RB clear_JJ that_IN an_DT increase_NN in_IN number_NN of_IN
+          comparisons_NNS would_MD yield_VB more_JJR power_NN to_TO detect_VB
+          differentially_RB expressed_VBD genes_NNS ,_, and_CC would_MD indeed_RB find_VB
+          more_JJR of_IN them_PRP ._. Every_DT single_JJ gene_NN that_WDT was_VBD detected_VBN as_RB
+          significantly_RB differentially_RB expressed_VBD in_IN only_RB one_CD of_IN the_DT
+          two_CD mutants_NNS compared_VBN to_TO wild_JJ type_NN in_IN the_DT rich_JJ medium_NN was_VBD
+          significantly_RB different_JJ in_IN expression_NN level_NN only_RB in_IN the_DT 
+          swi_NN 1_CD Δ_NN mutant_JJ ._. The_DT 
+          swi_NN 1_CD Δ_NN mutant_JJ comparison_NN to_TO wild_JJ
+          type_NN had_VBD one_CD more_JJR replicate_VB than_IN did_VBD the_DT comparison_NN of_IN
+          the_DT 
+          snf_NN 2_CD Δ_NN mutant_JJ (_( Figure_NN 1_CD b_SYM )_) ._.
+        
+        
+          Zinc_NNP regulation_NN
+          Lyons_NNP 
+          et_CC al_NN ._. examined_VBD wild-type_JJ and_CC 
+          zap_NN 1_CD mutant_JJ strains_NNS of_IN yeast_NN
+          growing_VBG in_IN cultures_NNS containing_VBG three_CD different_JJ
+          concentrations_NNS of_IN zinc_NN (_( [_NN 13_CD ]_NN ,_, and_CC Figure_NN 1_CD c_SYM )_) ._. Zap_NNP 1_CD p_NN is_VBZ a_DT
+          transcriptional_NN activator_NN that_WDT appears_VBZ to_TO regulate_VB
+          transcription_NN of_IN the_DT zinc-uptake_JJ system_NN genes_NNS in_IN response_NN
+          to_TO zinc_NN [_NN 32_CD ]_NN ._. Using_VBG the_DT nonoverlapping_VBG 95_CD %_NN credible_JJ
+          interval_NN criterion_NN ,_, a_DT BAGEL_NNP analysis_NN on_IN this_DT data_NNS reveals_VBZ
+          469_CD genes_NNS significantly_RB more_RBR abundantly_RB expressed_VBD in_IN
+          cells_NNS grown_VBN in_IN zinc-deficient_JJ medium_NN compared_VBN to_TO cells_NNS
+          grown_VBN in_IN zinc-supplemented_JJ medium_NN ,_, and_CC reveals_VBZ 261_CD genes_NNS
+          significantly_RB less_RBR abundant_JJ in_IN the_DT same_JJ comparison_NN ._. This_DT
+          is_VBZ a_DT total_NN of_IN about_IN 10_CD %_NN of_IN the_DT genome_NN ,_, and_CC is_VBZ two_CD thirds_NNS
+          of_IN the_DT number_NN found_VBN by_IN use_NN of_IN an_DT averaged_VBN twofold_NN
+          criterion_NN ._. A_DT considerable_JJ number_NN of_IN the_DT genes_NNS viewed_VBN as_IN
+          abundant_JJ by_IN a_DT twofold_NN criterion_NN ,_, then_RB ,_, are_VBP not_RB
+          significantly_RB different_JJ by_IN the_DT credible_JJ interval_NN
+          criterion_NN (_( Table_NNP 1_CD ,_, Figure_NN 6_CD c_SYM ,_, lower_JJR left_VBD and_CC lower_JJR right_JJ
+          quadrants_NNS )_) ._. Moreover_RB ,_, 42_CD of_IN the_DT genes_NNS significantly_RB
+          different_JJ by_IN the_DT credible-interval_JJ criterion_NN are_VBP
+          significantly_RB different_JJ at_IN a_DT ratio_NN of_IN below_IN twofold_NN
+          (_( Figure_NN 6_CD c_SYM ,_, densely_RB packed_VBN between_IN the_DT dashed_VBN lines_NNS
+          delimiting_VBG a_DT twofold_NN change_NN )_) ._. As_IN one_PRP might_MD generally_RB
+          expect_VB ,_, making_VBG 
+          ZAP_NNP 1_CD nonfunctional_NN in_IN a_DT
+          zinc-deficient_JJ environment_NN creates_VBZ a_DT similar_JJ relative_JJ
+          effect_NN on_IN most_RBS significantly_RB differentially_RB expressed_VBD
+          genes_NNS to_TO that_DT created_VBN by_IN providing_VBG zinc_NN to_TO a_DT
+          zinc-deficient_JJ wild-type_JJ strain_NN (_( Figure_NN 6_CD d_SYM )_) ._.
+          A_DT common_JJ technique_NN to_TO discover_VB candidate_NN genes_NNS of_IN
+          interest_NN in_IN microarray_NN studies_NNS is_VBZ to_TO pick_VB out_IN overlapping_VBG
+          sets_NNS of_IN genes_NNS expressed_VBD at_IN a_DT ratio_NN greater_JJR than_IN some_DT
+          cutoff_NN from_IN replicate_VB and_CC /_NN or_CC different_JJ microarray_NN
+          experiments_NNS (_( for_IN example_NN ,_, Figure_NN 1_CD of_IN [_NN 13_CD ]_NN ,_, Figure_NN 1_CD of_IN [_NN
+          33_CD ]_NN )_) ._. BAGEL_NNP supplants_NNS any_DT need_VBP to_TO examine_VB overlapping_VBG
+          gene_NN sets_NNS in_IN replicate_VB experiments_NNS ._. Moreover_RB ,_, it_PRP provides_VBZ
+          a_DT statistically_RB rigorous_JJ method_NN for_IN comparison_NN of_IN
+          multiple_JJ different_JJ experiments_NNS ._. The_DT equivalent_NN of_IN an_DT
+          overlap_VB in_IN two_CD lists_NNS of_IN highly_RB expressed_VBD genes_NNS is_VBZ that_IN
+          neither_DT of_IN the_DT credible_JJ intervals_NNS for_IN gene-expression_JJ
+          level_NN in_IN a_DT given_VBN gene_NN in_IN two_CD experimental_JJ conditions_NNS
+          overlaps_NNS the_DT reference_NN condition_NN ._.
+          For_IN instance_NN ,_, BAGEL_NNP analysis_NN of_IN the_DT zinc-regulation_JJ
+          data_NN revealed_VBD 96_CD genes_NNS whose_WP$ levels_NNS of_IN gene_NN expression_NN in_IN
+          a_DT wild-type_JJ genotype_NN and_CC zinc-deficient_JJ medium_NN were_VBD
+          significantly_RB greater_JJR than_IN both_DT zinc-supplemented_JJ
+          wild-type_JJ and_CC 
+          zap_NN 1_CD in_IN zinc-deficient_JJ medium_NN ._. This_DT
+          is_VBZ 31_CD more_JJR genes_NNS than_IN were_VBD detected_VBN using_VBG the_DT twofold_NN
+          criterion_NN ._. Figure_NN 9_CD shows_VBZ BAGEL_NNP results_NNS for_IN two_CD genes_NNS ,_, 
+          PHM_NNP 7_CD and_CC YGL_NNP 121_CD c_SYM ,_, discussed_VBN by_IN [_NN
+          13_CD ]_NN ,_, as_RB well_RB as_IN results_NNS on_IN four_CD other_JJ genes_NNS ._. A_DT
+          zinc-responsive_JJ element_NN (_( ZRE_NNP )_) consensus_NN DNA_NNP sequence_NN ,_,
+          ACCYTNARGGT_NNP (_( in_IN the_DT single-letter_JJ amino-acid_JJ code_NN ,_, where_WRB
+          N_NNP is_VBZ any_DT nucleotide_NN ,_, Y_NNP is_VBZ C_NNP or_CC T_NN ,_, and_CC R_NN is_VBZ A_DT or_CC G_NNP )_)
+          (_( compare_VB Figure_NN 2_CD of_IN [_NN 13_CD ]_NN )_) ,_, is_VBZ located_VBN in_IN close_JJ proximity_NN
+          to_TO 
+          CTT_NNP 1_CD (_( chromosome_NN VII_NNP ,_, location_NN
+          65270_CD -_: 80_CD )_) ,_, 
+          MNT_NNP 2_CD (_( VII_NNP ,_, 20659_CD -_: 69_CD and_CC 20774_CD -_: 84_CD )_) ,_,
+          YOL_NNP 083_CD w_NN (_( XI_NNP ,_, 442975_CD -_: 85_CD )_) and_CC YNL_NNP 253_CD w_NN (_( XIV_NNP ,_, 169669_CD )_) ._. BAGEL_NNP
+          results_NNS shown_VBN in_IN Figure_NN 9_CD convey_VB not_RB just_RB the_DT significance_NN
+          but_CC also_RB the_DT extent_NN of_IN differential_NN regulation_NN ._. 
+          CTT_NNP 1_CD and_CC YOL_NNP 083_CD w_NN are_VBP like_IN the_DT two_CD
+          genes_NNS 
+          PHM_NNP 7_CD and_CC YGL_NNP 121_CD c_SYM discussed_VBN by_IN [_NN
+          13_CD ]_NN ,_, in_IN that_DT having_VBG the_DT 
+          zap_NN 1_CD :_: :_: 
+          TRP_NNP 1_CD genotype_NN does_VBZ not_RB entirely_RB
+          eliminate_VB transcriptional_NN response_NN to_TO zinc_NN deficiency_NN ._.
+          These_DT intermediate_JJ levels_NNS of_IN expression_NN indicate_VBP the_DT
+          action_NN of_IN auxiliary_JJ zinc-regulatory_JJ mechanisms_NNS ._.
+          Figure_NN 10_CD charts_NNS several_JJ transcription_NN factors_NNS that_WDT are_VBP
+          significantly_RB differentially_RB expressed_VBD below_IN the_DT twofold_NN
+          level_NN ._. For_IN every_DT gene_NN shown_VBN ,_, the_DT credible_JJ intervals_NNS
+          between_IN wild_JJ type_NN in_IN 3_CD mM_NN zinc_NN and_CC wild_JJ type_NN in_IN <_NN 100_CD
+          nM_NN zinc_NN do_VBP not_RB overlap_VB ._. For_IN 
+          VPS_NNP 20_CD ,_, in_IN contrast_NN to_TO the_DT other_JJ
+          four_CD genes_NNS ,_, expression_NN is_VBZ greater_JJR when_WRB in_IN zinc-deficient_JJ
+          medium_NN ._. Expression_NNP levels_NNS in_IN Figure_NN 10_CD are_VBP graphed_JJ
+          cosequentially_RB with_IN the_DT experimental_JJ design_NN structure_NN
+          (_( Figure_NN 1_CD c_SYM )_) ._. As_IN a_DT result_NN ,_, the_DT increasing_VBG size_NN of_IN credible_JJ
+          intervals_NNS as_IN one_CD scans_VBZ from_IN the_DT middle_JJ expression_NN nodes_NNS
+          to_TO the_DT expression_NN nodes_NNS at_IN the_DT ends_NNS of_IN the_DT chain_NN of_IN
+          experiments_NNS is_VBZ clear_JJ ._. The_DT largest_JJS credible_JJ interval_NN is_VBZ
+          for_IN the_DT 
+          zap_NN 1_CD strain_NN grown_VBN in_IN 10_CD μM_NN zinc_NN ,_, on_IN
+          the_DT far_JJ right_NN of_IN each_DT cluster_NN of_IN columns_NNS ._. This_DT is_VBZ as_IN
+          expected_VBN ,_, given_VBN that_IN it_PRP is_VBZ at_IN the_DT end_NN of_IN the_DT line_NN of_IN
+          comparisons_NNS and_CC is_VBZ informed_VBN by_IN only_RB one_CD cDNA_NN microarray_NN
+          comparison_NN ._. In_IN a_DT balanced_JJ linear_JJ set_NN of_IN comparisons_NNS such_JJ
+          as_IN this_DT ,_, it_PRP turns_VBZ out_RP that_IN for_IN any_DT gene_NN on_IN a_DT log_NN scale_NN ,_,
+          the_DT credible_JJ intervals_NNS around_IN the_DT gene-expression_JJ values_NNS
+          of_IN the_DT ends_NNS are_VBP greater_JJR than_IN the_DT credible_JJ intervals_NNS
+          around_IN those_DT in_IN the_DT middle_NN of_IN the_DT chain_NN (_( data_NNS not_RB
+          shown_VBN )_) ._.
+          For_IN an_DT analysis_NN such_JJ as_IN this_DT one_CD ,_, the_DT statistical_JJ
+          power_NN could_MD be_VB improved_VBN if_IN expression_NN nodes_NNS were_VBD compared_VBN
+          to_TO more_JJR than_IN two_CD neighbors_NNS ._. Specifically_RB ,_, direct_JJ
+          comparisons_NNS between_IN wild_JJ type_NN in_IN 3_CD mM_NN Zn_NNP and_CC 
+          zap_NN 1_CD in_IN 3_CD mM_NN Zn_NNP would_MD complete_VB a_DT
+          circle_NN of_IN comparisons_NNS ,_, increasing_VBG transitive_JJ information_NN
+          on_IN all_DT expression_NN nodes_NNS ._. Cross-circle_NNP comparisons_NNS would_MD
+          also_RB contribute_VB considerable_JJ power_NN ._. Generally_RB ,_,
+          eliminating_VBG '_POS ends_VBZ '_POS of_IN chains_NNS of_IN comparisons_NNS should_MD be_VB a_DT
+          goal_NN of_IN any_DT cDNA_NN microarray_NN experimental_JJ design_NN ._.
+        
+      
+      
+        Conclusions_NNP
+        Small_JJ datasets_NNS such_JJ as_IN the_DT ethanol_NN dataset_NN are_VBP very_RB good_JJ
+        candidates_NNS for_IN use_NN of_IN a_DT more_RBR informative_JJ prior_RB distribution_NN
+        to_TO keep_VB variances_NNS within_IN a_DT reasonable_JJ range_NN and_CC yield_VB
+        better_JJR results_NNS ._. Analysis_NNP of_IN larger_JJR datasets_NNS indicates_VBZ that_IN
+        true_JJ variances_NNS for_IN microarray_NN data_NNS within_IN this_DT model_NN are_VBP
+        not_RB larger_JJR than_IN one_CD ._. The_DT impact_NN of_IN using_VBG less-vague_JJ priors_NNS ,_,
+        especially_RB for_IN the_DT variance_NN ,_, when_WRB there_EX are_VBP few_JJ
+        comparisons_NNS ,_, is_VBZ under_IN investigation_NN by_IN a_DT number_NN of_IN
+        researchers_NNS ._. A_DT hierarchical_JJ Bayesian_NNP model_NN [_NN 34_CD ]_NN has_VBZ been_VBN
+        used_VBN to_TO analyze_VB ratio_NN data_NNS and_CC provide_VB 95_CD %_NN confidence_NN
+        intervals_NNS for_IN the_DT log_NN ratio_NN of_IN gene_NN expression_NN from_IN
+        reference_NN to_TO control_VB ._. This_DT method_NN assumes_VBZ normal_JJ
+        distributions_NNS of_IN the_DT log_NN ratios_NNS rather_RB than_IN ratios_NNS of_IN
+        normal_JJ distributions_NNS ._. It_PRP has_VBZ a_DT hierarchical_JJ structure_NN that_IN
+        allocates_NNS error_NN variance_NN among_IN microarrays_NNS and_CC experiments_NNS ._.
+        The_DT authors_NNS suggest_VBP use_NN of_IN calibration_NN data_NNS ,_, or_CC ,_,
+        alternatively_RB ,_, empirical_JJ evaluation_NN of_IN the_DT distribution_NN of_IN
+        variances_NNS across_IN all_DT other_JJ genes_NNS in_IN order_NN to_TO construct_VB a_DT
+        prior_RB ._. A_DT subset_NN of_IN genes_NNS of_IN nearly_RB equal_JJ intensity_NN can_MD be_VB
+        used_VBN to_TO form_VB a_DT prior_RB for_IN variances_NNS [_NN 35_CD ]_NN ._. This_DT prior_RB was_VBD
+        used_VBN by_IN the_DT authors_NNS to_TO input_NN reliable_JJ variances_NNS in_IN 
+        t_NN -_: tests_NNS of_IN significance_NN ._. Promising_NNP
+        advances_NNS have_VBP been_VBN made_VBN on_IN Bayesian_NNP methods_NNS for_IN correcting_VBG
+        misleading_JJ fold-change_JJ measurements_NNS made_VBN from_IN low-intensity_JJ
+        spots_NNS [_NN 36_CD ]_NN ,_, using_VBG a_DT gamma_NN rather_RB than_IN normal_JJ model_NN of_IN
+        ratio_NN results_NNS ._.
+        All_DT these_DT methods_NNS have_VBP considerable_JJ potential_NN to_TO be_VB
+        incorporated_VBN as_IN priors_NNS into_IN a_DT framework_NN such_JJ as_IN that_DT
+        presented_VBD here_RB ,_, so_IN that_IN the_DT prior_RB may_MD be_VB applied_VBN to_TO
+        multiple_JJ samples_NNS from_IN different_JJ genotypes_NNS ,_, environments_NNS or_CC
+        developmental_NN states_NNS ._. Priors_NNP such_JJ as_IN those_DT above_IN should_MD
+        result_VB in_IN smaller_JJR credible_JJ intervals_NNS and_CC detection_NN of_IN
+        increasingly_RB significant_JJ differences_NNS because_IN they_PRP curtail_VBP
+        the_DT exploration_NN of_IN unrealistically_RB high_JJ variances_NNS that_IN
+        small_JJ datasets_NNS have_VBP too_RB few_JJ observations_NNS to_TO rule_VB out_IN '_POS on_IN
+        their_PRP$ own_JJ '_'' ._. Continued_VBN work_NN in_IN this_DT area_NN ,_, using_VBG an_DT increased_VBN
+        amount_NN of_IN non-ratio_JJ data_NNS provided_VBN from_IN scanned_JJ microarrays_NNS ,_,
+        should_MD be_VB very_RB fruitful_JJ [_NN 10_CD ]_NN ._. Furthermore_RB ,_, posterior_NN
+        distributions_NNS from_IN such_JJ analyses_NNS of_IN gene-expression_JJ level_NN
+        have_VBP subsequent_JJ use_NN in_IN Bayesian_NNP methodologies_NNS for_IN
+        clustering_VBG [_NN 37_CD ]_NN and_CC tumor_NN identification_NN [_NN 38_CD ]_NN ._.
+        In_IN summary_NN ,_, the_DT model-based_JJ approach_NN we_PRP have_VBP implemented_VBN
+        can_MD accommodate_VB complex_JJ and_CC unbalanced_JJ experimental_JJ
+        designs_NNS ._. Some_DT research_NN will_MD continue_VB to_TO be_VB carried_VBN out_IN
+        comparing_VBG just_RB two_CD samples_NNS multiple_JJ times_NNS ._. However_RB ,_, complex_JJ
+        designs_NNS will_MD increase_VB in_IN popularity_NN as_IN investigators_NNS
+        explore_VBP multiple_JJ genotypes_NNS ,_, environments_NNS and_CC developmental_NN
+        states_NNS within_IN a_DT single_JJ research_NN project_NN [_NN 18_CD ]_NN ._. The_DT utility_NN
+        of_IN this_DT approach_NN in_IN determining_VBG levels_NNS of_IN gene_NN expression_NN
+        may_MD be_VB maximized_JJ if_IN these_DT designs_NNS incorporate_VB certain_JJ
+        features_NNS ._.
+        First_LS ,_, compare_VBP samples_NNS of_IN direct_JJ interest_NN directly_RB ._. When_WRB
+        interested_JJ in_IN the_DT differences_NNS between_IN two_CD samples_NNS ,_, compare_VB
+        them_PRP to_TO each_DT other_JJ rather_RB than_IN to_TO an_DT arbitrary_JJ reference_NN
+        sample_NN [_NN 7_CD ,_, 8_CD ]_NN ._. Whenever_WRB possible_JJ ,_, study_NN a_DT few_JJ expression_NN
+        nodes_NNS thoroughly_RB ,_, rather_RB than_IN many_JJ superficially_RB ._.
+        Second_JJ ,_, replicate_VB each_DT comparison_NN at_IN least_JJS once_RB [_NN 39_CD ]_NN ._.
+        Whether_IN this_DT is_VBZ done_VBN directly_RB by_IN incorporation_NN of_IN dye_NN
+        during_IN reverse_NN transcription_NN ,_, or_CC ,_, preferably_RB ,_, by_IN labeling_VBG
+        incorporated_VBN amino-allyl-d_JJ UTP_NNP ,_, reverse_VB the_DT dye_NN labeling_VBG to_TO
+        ameliorate_NN any_DT dye_NN effect_NN thereof_RB [_NN 9_CD ,_, 10_CD ,_, 18_CD ]_NN ._.
+        Third_NNP ,_, eliminate_VB '_POS ends_VBZ '_POS of_IN comparison_NN chains_NNS by_IN carrying_VBG
+        out_RP hybridizations_NNS comparing_VBG one_CD end_NN to_TO another_DT ._. This_DT
+        allows_VBZ reconciliation_NN of_IN transitive_JJ data_NNS around_IN a_DT circle_NN of_IN
+        comparisons_NNS ._. The_DT more_JJR circles_NNS created_VBN ,_, the_DT more_JJR
+        reconciliation_NN occurs_VBZ ._. The_DT smaller_JJR the_DT circumference_NN of_IN the_DT
+        circle_NN created_VBD ,_, the_DT stronger_JJR the_DT transitive_JJ power_NN ._.
+        Fourth_JJ ,_, connect_VB nodes_NNS otherwise_RB distantly_RB located_VBN on_IN a_DT
+        chain_NN of_IN comparisons_NNS with_IN extra_JJ cross-comparisons_JJ ._. The_DT
+        number_NN of_IN '_POS extra_JJ '_POS comparisons_NNS to_TO make_VB depends_VBZ on_IN what_WP size_NN
+        of_IN effect_NN is_VBZ of_IN interest_NN ._. The_DT observation_NN of_IN a_DT small_JJ but_CC
+        significant_JJ effect_NN on_IN key_JJ regulatory_JJ genes_NNS may_MD be_VB of_IN
+        greater_JJR biological_JJ interest_NN than_IN the_DT same_JJ observation_NN on_IN a_DT
+        metabolic_JJ enzyme_NN ._. The_DT appropriate_JJ weighing_VBG of_IN the_DT cost_NN of_IN
+        additional_JJ comparisons_NNS against_IN the_DT greater_JJR precision_NN of_IN
+        measurement_NN depends_VBZ critically_RB upon_IN the_DT question_NN being_VBG
+        asked_VBN ._.
+        For_IN time-course_JJ experiments_NNS or_CC any_DT other_JJ experiment_NN with_IN
+        an_DT explicit_JJ ordered_VBD 
+        x_SYM -_: axis_NNS these_DT guidelines_NNS may_MD still_RB be_VB
+        followed_VBN ,_, as_RB long_RB as_IN replicate_VB comparisons_NNS are_VBP made_VBN among_IN
+        nodes_NNS ._. Inferred_NNP estimates_NNS at_IN each_DT node_NN are_VBP assessed_VBN
+        independently_RB of_IN location_NN along_IN the_DT 
+        x_SYM -_: axis_NNS ,_, so_IN that_IN regressions_NNS across_IN
+        them_PRP are_VBP valid_JJ ._. Ultimately_RB ,_, experimental_JJ design_NN may_MD be_VB
+        subject_JJ to_TO limitation_NN owing_VBG to_TO lack_NN of_IN resources_NNS or_CC
+        experimental_JJ failure_NN ._. Fortunately_RB ,_, within_IN a_DT framework_NN such_JJ
+        as_IN that_DT developed_VBD here_RB ,_, missing_VBG spots_NNS or_CC missing_VBG
+        comparisons_NNS do_VBP not_RB require_VB any_DT special_JJ consideration_NN or_CC any_DT
+        change_NN in_IN methodology_NN ._. Credible_NNP intervals_NNS acquired_VBN for_IN less_RBR
+        well_RB determined_VBN genes_NNS or_CC less_RBR well_RB determined_VBN expression_NN
+        nodes_NNS are_VBP correspondingly_RB larger_JJR ._. This_DT quantitative_JJ
+        information_NN on_IN gene-expression_JJ levels_NNS tendered_VBN by_IN a_DT
+        thorough_JJ analysis_NN of_IN microarray_NN results_NNS should_MD be_VB carefully_RB
+        considered_VBN in_IN assessments_NNS of_IN the_DT biological_JJ effects_NNS of_IN
+        genetic_JJ or_CC environmental_JJ differences_NNS upon_IN cellular_JJ
+        state_NN ._.
+      
+      
+        Materials_NNS and_CC methods_NNS
+        
+          Normalization_NNP
+          For_IN the_DT ethanol-shock_JJ dataset_NN [_NN 11_CD ]_NN ,_, raw_JJ data_NNS from_IN
+          GenePix_NNP files_NNS was_VBD processed_VBN as_IN follows_VBZ ._. Any_DT spot_NN was_VBD
+          excluded_VBN from_IN analysis_NN if_IN both_DT the_DT Cy_NNP 3_CD and_CC Cy_NNP 5_CD
+          fluorescence_NN signals_NNS were_VBD within_IN two_CD standard_JJ deviations_NNS
+          of_IN the_DT distribution_NN of_IN intensities_NNS of_IN the_DT background_NN
+          pixels_NNS for_IN that_DT spot_NN ._. These_DT low-intensity_JJ spots_NNS are_VBP those_DT
+          most_JJS aberrant_NN in_IN fold-change_JJ and_CC are_VBP those_DT for_IN which_WDT the_DT
+          magnitude_NN is_VBZ adjusted_VBN most_JJS by_IN the_DT model_NN of_IN Newton_NNP 
+          et_CC al_NN ._. [_NN 36_CD ]_NN ._. Expression_NNP values_NNS
+          were_VBD normalized_JJ by_IN linear_JJ scaling_NN of_IN the_DT Cy_NNP 5_CD values_NNS so_IN
+          that_IN the_DT mean_NN Cy_NNP 5_CD and_CC Cy_NNP 3_CD values_NNS of_IN nonexcluded_JJ spots_NNS
+          were_VBD equal_JJ ._. Two_CD of_IN three_CD experiments_NNS thereby_RB achieved_VBD a_DT
+          linear_JJ log-log_JJ intensity_NN plot_NN for_IN included_VBD spots_NNS ,_, with_IN
+          slope_NN approximately_RB 1_CD ._. The_DT third_JJ was_VBD linearized_JJ by_IN
+          exponentiation_NN of_IN the_DT Cy_NNP 3_CD channel_NN to_TO 0_CD ._. 8_CD ,_, before_IN
+          normalization_NN of_IN the_DT means_NNS ._.
+          For_IN other_JJ experiments_NNS ,_, ratio_NN and_CC spot_NN pass_NN criteria_NNS
+          were_VBD used_VBN as_IN reported_VBN in_IN the_DT papers_NNS ._. In_IN the_DT dataset_NN
+          released_VBN by_IN Sudarsanam_NNP 
+          et_CC al_NN ._. [_NN 12_CD ]_NN ,_, one_CD of_IN the_DT three_CD
+          reported_VBD microarray_NN hybridizations_NNS between_IN wild-type_JJ and_CC 
+          snf_NN 2_CD nodes_NNS was_VBD excluded_VBN from_IN
+          analysis_NN because_IN it_PRP had_VBD an_DT anomalous_JJ global_JJ mean_NN log_VB
+          ratio_NN of_IN -_: 0_CD ._. 26_CD ,_, whereas_IN for_IN all_DT others_NNS that_WDT value_NN was_VBD
+          very_RB nearly_RB zero_CD ._. For_IN the_DT zinc-regulation_JJ dataset_NN [_NN 13_CD ]_NN ,_,
+          no_DT pass_NN criterion_NN had_VBD been_VBN used_VBN to_TO ensure_VB each_DT spot_NN on_IN
+          each_DT microarray_NN carried_VBD considerably_RB more_JJR signal_NN than_IN
+          noise_NN ._. The_DT data_NNS appeared_VBD to_TO be_VB of_IN high_JJ quality_NN ._. However_RB ,_,
+          in_IN a_DT few_JJ cases_NNS ,_, one_CD or_CC two_CD misleading_JJ data_NNS points_NNS from_IN
+          low-intensity_JJ spots_NNS may_MD have_VB led_VBN to_TO especially_RB high_JJ
+          gene-by-gene_JJ error_NN variance_NN estimates_NNS and_CC thus_RB concealed_VBN
+          otherwise_RB significant_JJ differences_NNS ._.
+          The_DT best_JJS normalization_NN method_NN and_CC spot_NN pass_NN criteria_NNS
+          are_VBP highly_RB dependent_JJ on_IN cDNA_NN microarray_NN protocol_NN ,_,
+          methodology_NN ,_, experimental_JJ experience_NN and_CC analytical_JJ
+          resources_NNS ._. As_RB long_RB as_IN normalization_NN method_NN and_CC spot_NN pass_NN
+          criteria_NNS are_VBP applied_VBN uniformly_RB within_IN a_DT dataset_NN ,_, the_DT
+          resulting_VBG ratios_NNS should_MD be_VB appropriate_JJ for_IN analysis_NN by_IN
+          the_DT model_NN described_VBD here_RB ._.
+        
+        
+          Model_NNP
+          In_IN microarray_NN experiments_NNS ,_, the_DT original_JJ idea_NN was_VBD that_IN ,_,
+          with_IN current_JJ technology_NN ,_, spots_NNS on_IN a_DT cDNA_NN microarray_NN had_VBD a_DT
+          number_NN of_IN confounding_VBG pseudolinear_NN terms_NNS -_: whose_WP$
+          variation_NN from_IN experiment_NN to_TO experiment_NN could_MD be_VB
+          minimized_VBN but_CC not_RB eliminated_VBN -_: which_WDT contributed_VBD to_TO the_DT
+          intensity_NN measurements_NNS observed_VBD when_WRB a_DT hybridization_NN was_VBD
+          scanned_JJ ._. Model_NNP parameters_NNS under_IN this_DT scheme_NN differ_VB from_IN
+          those_DT used_VBN for_IN high-density_JJ oligonucleotide_NN microarrays_NNS [_NN
+          40_CD ]_NN ._. These_DT terms_NNS included_VBD the_DT density_NN and_CC size_NN of_IN the_DT
+          cDNA_NN deposition_NN ,_, the_DT correspondingly_RB larger_JJR or_CC smaller_JJR
+          amount_NN of_IN labeled_VBN mRNA_NN hybridized_JJ to_TO the_DT microarray_NN ,_, the_DT
+          hybridization_NN conditions_NNS and_CC the_DT sequence_NN of_IN the_DT gene_NN [_NN
+          41_CD ]_NN ._. With_IN these_DT assumptions_NNS ,_, the_DT post-normalization_JJ
+          intensity_NN in_IN one_CD fluorescence_NN channel_NN at_IN a_DT reporter_NN spot_NN
+          may_MD be_VB modeled_VBN linearly_RB as_IN
+          
+          where_WRB is_VBZ the_DT absolute_JJ quantity_NN of_IN mRNA_NN per_IN cell_NN ,_, the_DT 
+          c_SYM 
+          
+            m_NN 
+           are_VBP terms_NNS for_IN any_DT 
+          q_NN multiplicatively_RB confounding_VBG
+          factors_NNS ,_, the_DT 
+          c_SYM 
+          
+            l_NN 
+           are_VBP terms_NNS for_IN any_DT 
+          q_NN -_: t_NN linearly_RB confounding_VBG factors_NNS ,_,
+          and_CC is_VBZ an_DT error_NN term_NN accounting_NN for_IN mild_JJ pseudorandom_NN
+          departures_NNS from_IN linearity_NN and_CC unavoidable_JJ small_JJ
+          variations_NNS in_IN cell-growth_JJ conditions_NNS ._. Note_VB that_IN
+          multiplicative_JJ error_NN associated_VBN with_IN the_DT sample_NN must_MD have_VB
+          been_VBN compensated_VBN for_IN by_IN an_DT appropriate_JJ normalization_NN (_( [_NN
+          42_CD ]_NN ,_, reviewed_VBN by_IN [_NN 43_CD ]_NN )_) ;_: if_IN ,_, on_IN the_DT other_JJ hand_NN ,_, there_EX are_VBP
+          considerable_JJ multiplicative_JJ factors_NNS that_WDT are_VBP common_JJ to_TO a_DT
+          spot_NN ,_, they_PRP are_VBP accommodated_VBN by_IN the_DT 
+          c_SYM 
+          
+            m_NN 
+           above_IN ._. This_DT model_NN cannot_NN be_VB directly_RB implemented_VBN
+          because_IN experimental_JJ replication_NN to_TO estimate_VB each_DT
+          confounding_VBG term_NN is_VBZ technically_RB difficult_JJ ._. These_DT
+          difficulties_NNS led_VBN to_TO a_DT rapid_JJ conclusion_NN that_IN the_DT
+          information_NN that_WDT can_MD be_VB best_RBS obtained_VBN from_IN a_DT cDNA_NN
+          microarray_NN experiment_NN is_VBZ ratio_NN information_NN rather_RB than_IN
+          absolute_JJ quantification_NN ._. This_DT is_VBZ because_IN the_DT confounding_VBG
+          spot_NN terms_NNS above_IN will_MD apply_VB equally_RB to_TO two_CD samples_NNS
+          competitively_RB hybridized_JJ against_IN a_DT single_JJ spot_NN on_IN a_DT
+          single_JJ microarray_NN ,_, yielding_VBG a_DT ratio_NN that_WDT correctly_RB
+          represents_VBZ the_DT ratio_NN of_IN expression_NN levels_NNS in_IN the_DT
+          comparison_NN of_IN interest_NN ._.
+          When_WRB comparing_VBG just_RB two_CD samples_NNS ,_, ratio_NN measurements_NNS
+          are_VBP nearly_RB as_RB good_JJ as_IN absolute_JJ data_NNS ._. However_RB ,_, when_WRB more_JJR
+          than_IN one_CD genotype_NN or_CC environmental_JJ condition_NN or_CC cell_NN
+          developmental_NN stage_NN is_VBZ examined_VBN ,_, ratio_NN measurements_NNS
+          rapidly_RB become_VBP cumbersome_JJ because_IN comparing_VBG across_IN
+          numerous_JJ states_NNS requires_VBZ a_DT common_JJ unit_NN of_IN measurement_NN ._.
+          Therefore_RB it_PRP is_VBZ of_IN interest_NN to_TO use_VB these_DT ratio_NN
+          measurements_NNS within_IN a_DT statistical_JJ model_NN to_TO estimate_VB
+          gene-expression_JJ levels_NNS in_IN a_DT common_JJ (_( if_IN arbitrary_JJ )_) unit_NN ,_,
+          and_CC also_RB to_TO assess_VB the_DT significance_NN of_IN such_JJ a_DT
+          difference_NN ._.
+          Consistent_NNP with_IN the_DT original_JJ interpretation_NN of_IN cDNA_NN
+          microarray_NN data_NNS that_IN privileged_JJ ratio_NN over_IN absolute_JJ
+          quantification_NN [_NN 41_CD ]_NN ,_, the_DT observed_VBD ratios_NNS of_IN intensities_NNS ,_,
+          
+          y_NN 
+          
+            ij_NN 
+           ,_, maybe_RB modeled_VBD as_IN
+          
+          where_WRB 
+          
+            i_NNP 
+           ,_, and_CC 
+          
+            j_NN 
+           are_VBP the_DT scaled_VBN quantities_NNS of_IN mRNA_NN in_IN samples_NNS 
+          i_NNP versus_CC 
+          j_NN ._. This_DT expression_NN is_VBZ true_JJ for_IN any_DT
+          terms_NNS that_WDT are_VBP consistent_JJ for_IN both_DT mRNA_NN preparations_NNS ,_,
+          regardless_RB of_IN linearity_NN ,_, which_WDT is_VBZ fortunate_JJ ,_, as_IN there_EX are_VBP
+          known_VBN nonlinearities_NNS in_IN microarray_NN data_NNS acquisition_NN [_NN
+          17_CD ]_NN ._. This_DT yields_NNS
+          
+          Assuming_VBG that_IN error_NN terms_NNS are_VBP composed_VBN of_IN many_JJ small_JJ ,_,
+          unbiased_JJ effects_NNS ,_, and_CC scaling_VBG the_DT error_NN terms_NNS 
+          
+            i_NNP 
+           and_CC 
+          
+            j_NN 
+           by_IN
+          
+          a_DT constant_JJ for_IN every_DT microarray_NN spot_NN ,_, so_IN that_IN they_PRP are_VBP
+          distributed_VBN with_IN variances_NNS specific_JJ to_TO each_DT sample_NN ,_, 
+          
+            i_NNP 
+           2_CD and_CC 
+          
+            j_NN 
+           2_CD ,_, it_PRP follows_VBZ directly_RB that_IN the_DT observed_VBN ratio_NN data_NNS ,_,
+          
+          z_SYM 
+          
+            ij_NN 
+           ,_, are_VBP drawn_VBN from_IN
+          
+          This_DT can_MD be_VB true_JJ even_RB if_IN the_DT distribution_NN of_IN
+          intensities_NNS across_IN spots_NNS and_CC arrays_NNS is_VBZ decidedly_RB not_RB
+          Gaussian_NNP ,_, because_IN confounding_VBG factors_NNS which_WDT vary_VBP linearly_RB
+          or_CC multiplicatively_RB or_CC even_RB interactively_RB across_IN spots_NNS or_CC
+          arrays_NNS are_VBP commonly_RB presumed_VBN not_RB to_TO be_VB different_JJ between_IN
+          two_CD labeled_VBN samples_NNS hybridized_JJ to_TO a_DT single_JJ spot_NN [_NN 41_CD ]_NN ._.
+          Note_VB that_IN samples_NNS may_MD ,_, under_IN this_DT formulation_NN ,_, have_VBP
+          different_JJ variances_NNS as_RB well_RB as_IN different_JJ means_NNS ._.
+          The_DT ratio_NN of_IN standard_JJ normal_JJ distributions_NNS is_VBZ a_DT Cauchy_NNP
+          distribution_NN ,_, which_WDT has_VBZ the_DT unpleasant_JJ property_NN that_IN it_PRP
+          has_VBZ no_DT moments_NNS ._. The_DT ratio_NN of_IN nonstandard_NN normal_JJ
+          distributions_NNS is_VBZ not_RB much_RB better_JJR ._. Fortunately_RB ,_, the_DT
+          infinite_NN tails_NNS of_IN the_DT normal_JJ distributions_NNS that_WDT result_NN in_IN
+          this_DT property_NN are_VBP not_RB generally_RB observed_VBD in_IN real_JJ data_NNS ;_: in_IN
+          fact_NN ,_, a_DT model_NN that_WDT allows_VBZ negative_JJ gene_NN expression_NN levels_NNS
+          is_VBZ not_RB valid_JJ ._. The_DT joint_JJ normal_JJ distribution_NN may_MD be_VB
+          truncated_JJ at_IN a_DT considerable_JJ distance_NN from_IN its_PRP$ peak_NN ,_, along_IN
+          an_DT elliptical_JJ probability_NN contour_NN within_IN the_DT positive_JJ
+          quadrant_NN [_NN 44_CD ]_NN ,_, yielding_VBG a_DT ratio_NN 
+          z_SYM 
+          
+            ij_NN 
+           distributed_VBN approximately_RB as_IN
+          
+          This_DT approximation_NN of_IN the_DT density_NN of_IN the_DT ratio_NN of_IN two_CD
+          nonstandard_NN normal_JJ distributions_NNS is_VBZ extremely_RB good_JJ as_IN
+          long_RB as_IN 
+          
+            i_NNP 
+           >_NN >_NN 
+          
+            i_NNP 
+           ,_, and_CC 
+          
+            j_NN 
+           >_NN >_NN 
+          
+            j_NN 
+           ,_, which_WDT is_VBZ certainly_RB true_JJ for_IN informative_JJ cDNA_NN
+          microarray_NN experiments_NNS ._. It_PRP is_VBZ not_RB symmetrical_JJ like_IN a_DT
+          normal_JJ distribution_NN ,_, but_CC skewed_VBN with_IN a_DT long_JJ right-hand_JJ
+          tail_NN ,_, like_IN gene_NN expression_NN data_NNS ._. Moreover_RB ,_, as_IN implied_VBN
+          above_IN ,_, if_IN microarray_NN data_NNS contain_VBP no_DT negative_JJ expression_NN
+          levels_NNS (_( a_DT natural_NN proposition_NN )_) ,_, it_PRP is_VBZ likely_JJ that_IN the_DT
+          distribution_NN of_IN 
+          z_SYM above_IN is_VBZ closer_JJR to_TO the_DT true_JJ
+          distribution_NN of_IN microarray_NN data_NNS than_IN is_VBZ the_DT distribution_NN
+          of_IN the_DT ratio_NN of_IN true_JJ normal_JJ distributions_NNS ._.
+          Let_VB us_PRP consider_VB how_WRB this_DT result_NN may_MD be_VB used_VBN ._. An_DT ideal_JJ
+          statistical_JJ framework_NN for_IN the_DT analysis_NN of_IN microarray_NN
+          ratio_NN data_NNS could_MD be_VB used_VBN to_TO analyze_VB microarray_NN data_NNS of_IN
+          any_DT experimental_JJ design_NN including_VBG any_DT number_NN of_IN
+          treatments_NNS ,_, genotypes_NNS ,_, or_CC developmental_NN states_NNS ;_: would_MD be_VB
+          highly_RB robust_JJ to_TO missing_VBG data_NNS ;_: and_CC would_MD yield_VB estimates_NNS
+          of_IN the_DT magnitude_NN of_IN expression_NN differences_NNS and_CC measures_NNS
+          of_IN statistical_JJ significance_NN across_IN all_DT treatments_NNS ,_,
+          genotypes_NNS ,_, and_CC developmental_NN states_NNS ._.
+          The_DT number_NN of_IN expression_NN nodes_NNS ,_, 
+          n_NN ,_, is_VBZ equal_JJ to_TO the_DT number_NN of_IN
+          permutations_NNS of_IN strain_NN ,_, treatment_NN ,_, and_CC developmental_NN
+          state_NN that_WDT are_VBP examined_VBN ._. Unless_IN informative_JJ prior_RB
+          information_NN about_IN expression_NN levels_NNS or_CC error_NN variance_NN is_VBZ
+          used_VBN ,_, the_DT following_VBG (_( minimal_JJ )_) requirements_NNS must_MD be_VB met_VBN ._.
+          First_LS ,_, every_DT node_NN of_IN interest_NN must_MD be_VB present_JJ in_IN at_IN least_JJS
+          one_CD comparison_NN ._. Second_JJ ,_, every_DT node_NN of_IN interest_NN must_MD be_VB
+          connected_VBN to_TO every_DT other_JJ node_NN of_IN interest_NN by_IN an_DT unbroken_JJ
+          chain_NN of_IN comparisons_NNS ._. And_CC third_JJ ,_, there_EX must_MD be_VB as_IN many_JJ
+          comparisons_NNS as_IN there_EX are_VBP mean_VB and_CC variance_NN parameters_NNS to_TO
+          be_VB estimated_VBN ._.
+          If_IN separate_JJ error_NN variances_NNS for_IN each_DT sample_NN are_VBP to_TO be_VB
+          estimated_VBN as_RB well_RB as_IN means_VBZ ,_, the_DT last_JJ requirement_NN
+          indicates_VBZ that_IN there_EX must_MD be_VB at_IN least_JJS 2_CD 
+          n_NN -_: 1_CD measurements_NNS when_WRB each_DT
+          expression_NN node_NN is_VBZ assumed_VBN to_TO have_VB an_DT independent_JJ
+          variance_NN ,_, and_CC there_EX must_MD be_VB at_IN least_JJS 
+          n_NN measurements_NNS when_WRB each_DT expression_NN
+          node_NN is_VBZ assumed_VBN to_TO have_VB the_DT same_JJ error_NN variance_NN ._. A_DT few_JJ
+          measurements_NNS beyond_IN the_DT minimum_JJ contribute_VB greatly_RB to_TO the_DT
+          power_NN to_TO detect_VB differences_NNS in_IN gene_NN expression_NN and_CC to_TO the_DT
+          ease_NN with_IN which_WDT significance_NN of_IN results_NNS is_VBZ ascertained_JJ
+          within_IN the_DT Bayesian_NNP framework_NN ._. Figure_NN 1_CD shows_VBZ the_DT
+          comparison_NN structure_NN of_IN experiments_NNS examined_VBD in_IN this_DT
+          paper_NN ._. The_DT three-dimensional_JJ matrix_NN of_IN ratio_NN results_NNS from_IN
+          these_DT comparisons_NNS ,_, 
+          
+            Z_NNP 
+           ,_, may_MD be_VB constructed_VBN ,_, with_IN dimensions_NNS 
+          i_NNP denoting_VBG the_DT sample_NN labeled_VBN with_IN
+          one_CD fluorophore_NN ,_, 
+          j_NN denoting_VBG the_DT sample_NN labeled_VBN with_IN
+          another_DT ,_, and_CC 
+          k_NN denoting_VBG the_DT replicate_VB ordinate_NN
+          of_IN that_DT particular_JJ comparison_NN ._. Then_RB ,_, for_IN any_DT continuous_JJ
+          structure_NN of_IN comparisons_NNS among_IN the_DT nodes_NNS of_IN interest_NN ,_, the_DT
+          likelihood_NN density_NN for_IN the_DT parameters_NNS μ_NN 
+          
+            l_NN 
+           and_CC σ_NN 
+          
+            l_NN 
+           2_CD ,_, 1_CD ≤_NN 
+          l_NN ≤_NN 
+          n_NN ,_, is_VBZ ,_, by_IN Bayes_NNP '_POS rule_NN ,_,
+          
+          where_WRB 
+          g_SYM (_( 
+          
+            i_NNP 
+           ,_, 
+          
+            i_NNP 
+           2_CD ,_, 
+          
+            j_NN 
+           ,_, 
+          
+            j_NN 
+           2_LS )_) is_VBZ the_DT prior_JJ distribution_NN of_IN the_DT parameters_NNS ,_, and_CC
+          where_WRB the_DT probability_NN 
+          f_SYM (_( 
+          z_SYM 
+          
+            ijk_NN 
+           )_) of_IN empty_JJ elements_NNS in_IN the_DT data_NNS matrix_NN 
+          
+            Z_NNP 
+           is_VBZ evaluated_VBN as_IN 1_CD ._.
+          Any_DT genes_NNS for_IN which_WDT ,_, where_WRB 
+          I_PRP is_VBZ an_DT indicator_NN variable_NN and_CC 
+          v_NN =_SYM 
+          n_NN when_WRB variances_NNS are_VBP common_JJ among_IN
+          all_DT samples_NNS within_IN a_DT gene_NN and_CC 
+          v_NN =_SYM 
+          2_CD n_NN -_: 1_CD when_WRB variances_NNS are_VBP not_RB ,_,
+          yield_VB improper_JJ posteriors_NNS unless_IN an_DT informative_JJ prior_RB is_VBZ
+          used_VBN ._. These_DT few_JJ genes_NNS are_VBP not_RB analyzed_VBN here_RB ,_, nor_CC are_VBP
+          genes_NNS whose_WP$ matrix_NN 
+          
+            Z_NNP 
+           is_VBZ reducible_JJ ._. Note_VB that_IN diagonal_NN entries_NNS in_IN 
+          
+            Z_NNP 
+           are_VBP control_NN ,_, self-self_JJ hybridizations_NNS ,_, in_IN which_WDT the_DT
+          same_JJ expression_NN node_NN has_VBZ been_VBN labeled_VBN with_IN two_CD different_JJ
+          dyes_NNS ._. In_IN this_DT framework_NN ,_, these_DT controls_NNS can_MD and_CC should_MD be_VB
+          included_VBN in_IN the_DT dataset_NN if_IN performed_VBN with_IN all_DT sources_NNS of_IN
+          experimental_JJ error_NN included_VBN in_IN their_PRP$ preparation_NN ._. They_PRP
+          contribute_VBP to_TO estimation_NN of_IN the_DT error_NN variance_NN of_IN
+          genes_NNS ._.
+          Appropriate_NNP informative_JJ priors_NNS for_IN the_DT variance_NN of_IN
+          microarray_NN data_NNS are_VBP currently_RB under_IN investigation_NN by_IN a_DT
+          number_NN of_IN groups_NNS [_NN 34_CD ,_, 35_CD ,_, 36_CD ]_NN ._. An_DT informative_JJ prior_RB must_MD
+          be_VB clearly_RB justified_JJ in_IN order_NN to_TO prevent_VB inappropriate_JJ
+          conclusions_NNS of_IN statistical_JJ significance_NN ._. In_IN this_DT paper_NN ,_, a_DT
+          noninformative_JJ prior_RB distribution_NN ,_, uniform_NN across_IN
+          positive_JJ real_JJ numbers_NNS ,_, has_VBZ been_VBN used_VBN for_IN both_DT the_DT
+          expression_NN levels_NNS and_CC for_IN their_PRP$ variance_NN ._. In_IN theory_NN ,_, we_PRP
+          use_VBP a_DT uniform_NN prior_RB for_IN the_DT variance_NN ,_, bounded_JJ from_IN 0_CD to_TO
+          100_CD ._. In_IN practice_NN ,_, the_DT upper_JJ limit_NN ,_, beyond_IN 20_CD or_CC so_RB ,_, makes_VBZ
+          no_DT difference_NN ,_, as_IN such_JJ high_JJ values_NNS are_VBP very_RB improbable_JJ
+          and_CC are_VBP never_RB sampled_VBN by_IN the_DT chain_NN in_IN the_DT datasets_NNS
+          analyzed_VBD here_RB ._. This_DT uniform_NN prior_RB gives_VBZ the_DT microarray_NN
+          data_NN itself_PRP the_DT greatest_JJS impact_NN on_IN the_DT inferred_VBN means_VBZ and_CC
+          variances_NNS ,_, and_CC implies_VBZ that_IN credible_JJ intervals_NNS
+          constructed_VBN are_VBP close_RB to_TO those_DT that_WDT would_MD be_VB found_VBN by_IN
+          maximum_NN likelihood_NN if_IN analytical_JJ integration_NN of_IN the_DT full_JJ
+          multidimensional_NN parameter_NN surface_NN were_VBD feasible_JJ ._. A_DT
+          frequently_RB used_VBN '_POS noninformative_JJ '_POS prior_RB such_JJ as_IN -_: 1_CD [_NN 45_CD ]_NN is_VBZ
+          in_IN this_DT case_NN not_RB desirable_JJ ,_, because_RB ,_, in_IN practice_NN ,_, the_DT
+          most_RBS likely_JJ variances_NNS observed_VBD are_VBP so_RB small_JJ that_IN this_DT
+          prior_RB has_VBZ a_DT considerable_JJ impact_NN on_IN the_DT posterior_NN
+          distribution_NN ._.
+          Fortunately_RB ,_, we_PRP may_MD use_VB the_DT constant_JJ denominator_NN of_IN
+          the_DT Bayes_NNP '_POS rule_NN formulation_NN (_( Equation_NNP 5_LS )_) to_TO assert_VB
+          that_DT
+          
+          This_DT may_MD be_VB used_VBN to_TO construct_VB a_DT Markov_NNP chain_NN whose_WP$
+          stationary_JJ distribution_NN is_VBZ the_DT posterior_NN distribution_NN of_IN
+          the_DT parameters_NNS given_VBN the_DT data_NNS ._. A_DT vector_NN and_CC a_DT vector_NN of_IN
+          initial_JJ expression_NN levels_NNS ,_, [_NN 
+          1_CD ,_, ._. ._. ._. ,_, 
+          
+            n_NN 
+           ]_NN is_VBZ chosen_VBN such_JJ that_IN at_IN step_NN 
+          t_NN =_SYM 0_CD ,_, and_CC subsequent_JJ values_NNS in_IN the_DT
+          chain_NN are_VBP determined_VBN iteratively_RB by_IN choosing_VBG successive_JJ
+          proposed_VBN values_NNS according_VBG to_TO an_DT acceptance_NN rule_NN ._.
+          Our_PRP$ proposed_VBN values_NNS are_VBP constructed_VBN in_IN two_CD separate_JJ
+          steps_NNS ._. First_LS ,_, two_CD of_IN the_DT 
+          n_NN gene-expression_JJ level_NN parameters_NNS
+          from_IN are_VBP chosen_VBN at_IN random_JJ ._. A_DT step_NN size_NN is_VBZ drawn_VBN at_IN random_JJ
+          from_IN a_DT triangular_NN distribution_NN centered_VBN at_IN zero_CD with_IN
+          range_NN [_NN -_: 
+          μ_NN ,_, +_NN 
+          μ_NN ]_NN ._. The_DT first_JJ of_IN the_DT two_CD chosen_VBN
+          parameters_NNS is_VBZ incremented_JJ by_IN the_DT chosen_VBN step_NN size_NN ,_, and_CC
+          the_DT second_NN is_VBZ decremented_JJ by_IN the_DT same_JJ quantity_NN ,_, so_IN that_WDT
+          is_VBZ maintained_VBN ,_, where_WRB the_DT apostrophe_NN indicates_VBZ a_DT proposed_VBN
+          parameter_NN value_NN ._. In_IN the_DT next_JJ iteration_NN ,_, the_DT variance_NN
+          parameters_NNS ,_, 
+          
+            l_NN 
+           2_CD are_VBP incremented_JJ by_IN an_DT amount_NN drawn_VBN at_IN random_JJ from_IN a_DT
+          triangular_NN distribution_NN with_IN range_NN to_TO form_VB ._. Because_IN
+          these_DT operations_NNS have_VBP probabilities_NNS of_IN transitions_NNS from_IN
+          the_DT current_JJ state_NN to_TO the_DT proposed_VBN state_NN equal_JJ to_TO the_DT
+          probabilities_NNS that_IN the_DT converse_NN transitions_NNS would_MD have_VB ,_,
+          this_DT proposal_NN scheme_NN satisfies_NNS Hastings_NNP [_NN 46_CD ]_NN and_CC can_MD be_VB
+          implemented_VBN in_IN the_DT Metropolis_NNP [_NN 47_CD ]_NN algorithm_NN ._. Thus_RB the_DT
+          conjecture_NN is_VBZ accepted_VBN for_IN the_DT next_JJ state_NN of_IN the_DT Markov_NNP
+          chain_NN if_IN
+          
+          Otherwise_RB the_DT original_JJ state_NN is_VBZ retained_VBN for_IN the_DT next_JJ
+          iteration_NN of_IN the_DT Markov_NNP chain_NN ._.
+          These_DT steps_NNS are_VBP repeated_VBN over_IN many_JJ generations_NNS in_IN
+          order_NN to_TO '_POS burn_VB in_IN '_POS the_DT chain_NN ,_, so_IN that_IN it_PRP converges_NNS from_IN
+          the_DT initial_JJ parameter_NN settings_NNS to_TO a_DT stationary_JJ
+          distribution_NN ._. Subsequently_RB ,_, states_VBZ are_VBP sampled_VBN from_IN the_DT
+          chain_NN at_IN regular_JJ intervals_NNS to_TO build_VB a_DT posterior_NN
+          distribution_NN for_IN each_DT parameter_NN ,_, integrated_VBN across_IN the_DT
+          probable_JJ states_NNS of_IN all_DT other_JJ parameters_NNS ._. An_DT easy-to-use_JJ
+          stand-alone_JJ software_NN program_NN entitled_VBD BAGEL_NNP ,_, which_WDT
+          implements_VBZ this_DT Bayesian_NNP analysis_NN of_IN gene_NN expression_NN
+          levels_NNS on_IN MacOS_NNP or_CC Windows_NNP platforms_NNS ,_, is_VBZ available_JJ on_IN the_DT
+          web_NN with_IN an_DT online_NN manual_JJ [_NN 48_CD ]_NN ._. It_PRP accepts_VBZ tab-delimited_JJ
+          text_NN files_NNS of_IN ratio_NN data_NNS as_IN input_NN ._.
+          To_TO decrease_VB the_DT number_NN of_IN parameters_NNS that_WDT must_MD be_VB
+          estimated_VBN ,_, we_PRP estimate_VBP a_DT single_JJ variance_NN parameter_NN for_IN
+          each_DT gene_NN across_IN all_DT expression_NN nodes_NNS ,_, which_WDT is_VBZ
+          equivalent_JJ to_TO the_DT assumption_NN that_DT 
+          
+            i_NNP 
+           and_CC 
+          
+            j_NN 
+           ._. from_IN the_DT same_JJ distribution_NN for_IN every_DT sample_NN ._. On_IN
+          larger_JJR ,_, more_RBR highly_RB replicated_VBN datasets_NNS ,_, where_WRB all_DT
+          parameters_NNS could_MD be_VB estimated_VBN ,_, constraining_VBG the_DT variance_NN
+          has_VBZ not_RB led_VBN to_TO substantially_RB different_JJ results_NNS (_( J_NNP ._. P_NN ._. T_NN ._. ,_,
+          unpublished_JJ data_NNS and_CC J_NNP ._. M_NNP ._. Ranz_NNP ,_, personal_JJ communication_NN )_) ._.
+          All_DT analyses_NNS in_IN this_DT paper_NN were_VBD performed_VBN with_IN 20_CD ,_, 000_CD
+          generations_NNS of_IN burn-in_JJ ,_, followed_VBN by_IN 200_CD ,_, 000_CD generations_NNS
+          during_IN which_WDT the_DT chain_NN was_VBD sampled_VBN every_DT 20_CD generations_NNS
+          to_TO construct_VB the_DT posterior_NN distribution_NN ._. Runs_NNP using_VBG
+          multiple_JJ starting_NN vectors_NNS and_CC were_VBD performed_VBN and_CC always_RB
+          converged_VBD to_TO the_DT same_JJ ,_, unimodal_NN ,_, posteriors_NNS ,_, indicating_VBG
+          that_IN this_DT is_VBZ a_DT well-behaved_JJ multidimensional_NN likelihood_NN
+          surface_NN (_( see_VB Figure_NN 2_CD a_DT )_) ._. Results_NNS reported_VBD here_RB were_VBD the_DT
+          outcomes_NNS of_IN Markov_NNP chains_NNS started_VBD with_IN the_DT elements_NNS of_IN
+          all_DT equal_JJ to_TO one_CD ,_, and_CC started_VBD with_IN the_DT elements_NNS of_IN all_DT
+          equal_JJ to_TO 0_CD ._. 03_CD ._. Step_NN sizes_NNS 
+          μ_NN and_CC were_VBD tuned_VBN for_IN each_DT gene_NN so_IN that_IN
+          acceptance_NN ratios_NNS for_IN each_DT parameter_NN update_NN were_VBD in_IN the_DT
+          efficient_JJ and_CC well-mixed_JJ range_NN (_( 0_CD ._. 15_CD ,_, 0_CD ._. 50_CD )_) [_NN 49_CD ]_NN ._. If_IN
+          acceptance_NN ratios_NNS for_IN either_DT parameter_NN jump_NN were_VBD less_JJR
+          than_IN 0_CD ._. 15_CD or_CC greater_JJR than_IN 0_CD ._. 5_CD ,_, the_DT chain_NN was_VBD run_VBN again_RB
+          with_IN a_DT better-tuned_JJ jump_NN size_NN ,_, until_IN acceptable_JJ ratios_NNS
+          for_IN both_DT parameters_NNS were_VBD obtained_VBN ._. In_IN this_DT way_NN ,_, there_EX is_VBZ
+          no_DT alteration_NN of_IN the_DT jump_NN size_NN during_IN any_DT run_NN ._. There_EX is_VBZ
+          only_RB the_DT evaluation_NN of_IN pilot_NN Markov_NNP chains_NNS to_TO optimize_NN
+          jump_NN size_NN ._.
+          Output_NN from_IN the_DT BAGEL_NNP software_NN is_VBZ in_IN the_DT form_NN of_IN a_DT
+          tab-delimited_JJ text_NN file_NN with_IN one_CD header_NN row_NN ._. Each_DT row_NN
+          thereafter_RB displays_VBZ the_DT results_NNS for_IN a_DT single_JJ gene_NN ,_,
+          including_VBG columns_NNS with_IN the_DT estimate_NN of_IN expression_NN level_NN
+          for_IN each_DT sample_NN (_( the_DT median_NN of_IN the_DT posterior_NN
+          distribution_NN )_) ;_: the_DT additions_NNS and_CC subtractions_NNS to_TO make_VB 95_CD %_NN
+          upper_JJ and_CC lower_JJR bounds_NNS on_IN that_DT estimate_NN ;_: the_DT stationary_JJ
+          acceptance_NN rates_NNS for_IN the_DT Monte_NNP Carlo_NNP steps_NNS for_IN that_DT gene_NN ;_:
+          and_CC a_DT column_NN that_WDT reads_VBZ '_POS TRUE_JJ '_POS when_WRB those_DT rates_NNS are_VBP
+          acceptable_JJ ._. Further_RB columns_NNS contain_VBP the_DT posterior_NN
+          probabilities_NNS for_IN whether_IN that_DT gene_NN 's_POS expression_NN level_NN in_IN
+          each_DT expression_NN node_NN is_VBZ greater_JJR ,_, or_CC lesser_JJR ,_, than_IN that_DT
+          gene_NN 's_POS expression_NN level_NN in_IN each_DT other_JJ expression_NN
+          node_NN ._.
+        
+      
+      
+        Additional_JJ data_NNS files_NNS
+        Estimates_NNS and_CC credible_JJ intervals_NNS for_IN expression_NN levels_NNS
+        of_IN all_DT genes_NNS assayed_JJ in_IN these_DT experiments_NNS in_IN all_DT conditions_NNS
+        are_VBP available_JJ with_IN the_DT online_NN version_NN of_IN this_DT manuscript_NN as_IN
+        tab-delimited_JJ text_NN output_NN files_NNS ,_, with_IN columns_NNS of_IN data_NNS as_IN
+        described_VBN in_IN the_DT methods_NNS section_NN ._. The_DT files_NNS are_VBP entitled_VBN
+        '_POS EtOH_NNP ._. txt_NN '_'' ,_, '_'' SwiSnfMin_NNP ._. txt_NN '_'' and_CC '_POS SwiSnfRich_NNP ._. txt_NN '_'' ,_, and_CC
+        '_POS Zinc_NNP ._. txt_NN '_'' ._.
+        Additional_JJ data_NNS file_VBP 1_CD
+        Tab-delimited_NNP text_NN output_NN files_NNS for_IN EtOH_NNP
+        Tab-delimited_NNP text_NN output_NN files_NNS for_IN EtOH_NNP
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 2_CD
+        Tab-delimited_NNP text_NN output_NN files_NNS for_IN SwiSnfMin_NNP
+        Tab-delimited_NNP text_NN output_NN files_NNS for_IN SwiSnfMin_NNP
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 3_CD
+        Tab-delimited_NNP text_NN output_NN files_NNS for_IN SwiSnfRich_NNP
+        Tab-delimited_NNP text_NN output_NN files_NNS for_IN SwiSnfRich_NNP
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+        Additional_JJ data_NNS file_VBP 4_CD
+        Tab-delimited_NNP text_NN output_NN files_NNS for_IN Zinc_NNP
+        Tab-delimited_NNP text_NN output_NN files_NNS for_IN Zinc_NNP
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+      
+    
+  

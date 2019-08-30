@@ -1,0 +1,723 @@
+
+  
+    
+      
+        Background_NNP
+        Sequencing_NNP of_IN the_DT human_JJ genome_NN has_VBZ led_VBN to_TO the_DT
+        identification_NN of_IN mutations_NNS and_CC single_JJ nucleotide_NN
+        polymorphisms_NNS (_( SNPs_NNP )_) that_WDT can_MD be_VB linked_VBN with_IN specific_JJ
+        phenotypes_NNS ._. A_DT number_NN of_IN assays_NNS have_VBP been_VBN developed_VBN to_TO
+        genotype_NN known_VBN SNPs_NNP and_CC mutations_NNS ._. However_RB ,_, the_DT majority_NN of_IN
+        these_DT methods_NNS have_VBP many_JJ steps_NNS and_CC are_VBP difficult_JJ to_TO
+        automate_NN ._. Currently_RB ,_, most_JJS genotyping_VBG methods_NNS require_VBP that_IN
+        the_DT target_NN region_NN of_IN the_DT genomic_JJ DNA_NNP be_VB amplified_VBN using_VBG PCR_NNP
+        prior_RB to_TO the_DT genotyping_VBG assay_NN (_( reviewed_VBN in_IN [_NN 1_CD 2_CD ]_NN )_) ._.
+        Following_VBG amplification_NN ,_, the_DT PCR_NNP product_NN is_VBZ either_CC
+        sequenced_JJ directly_RB ,_, or_CC probed_JJ for_IN the_DT mutation_NN of_IN interest_NN ._.
+        Similarly_RB ,_, OCP_NNP ligation_NN /_NN ERCA_NNP can_MD be_VB used_VBN to_TO accurately_RB
+        genotype_NN PCR_NNP products_NNS in_IN a_DT biallelic_JJ format_NN ,_, where_WRB the_DT
+        probes_NNS for_IN both_DT alleles_NNS are_VBP present_JJ in_IN a_DT single_JJ reaction_NN [_NN
+        3_CD ]_NN ._. The_DT OCP_NNP ligation_NN /_NN ERCA_NNP method_NN is_VBZ based_VBN on_IN ligation_NN
+        dependent_JJ circularization_NN of_IN allele_NN specific_JJ DNA_NNP probes_NNS
+        followed_VBN by_IN exponential_NN rolling_VBG circle_NN amplification_NN of_IN the_DT
+        circularized_JJ probes_NNS [_NN 4_CD 5_CD ]_NN ._. ERCA_NNP probes_NNS have_VBP also_RB been_VBN
+        variously_RB described_VBN as_IN '_POS padlock_NN probes_NNS '_POS [_NN 6_CD 7_CD ]_NN or_CC
+        '_POS circularizable_JJ probes_NNS '_POS [_NN 4_CD ]_NN ._. Although_IN OCP_NNP ligation_NN /_NN ERCA_NNP
+        can_MD be_VB used_VBN to_TO genotype_NN PCR_NNP products_NNS ,_, it_PRP also_RB provides_VBZ a_DT
+        means_NN for_IN directly_RB genotyping_VBG genomic_JJ DNA_NNP without_IN requiring_VBG
+        an_DT initial_JJ amplification_NN of_IN the_DT genomic_JJ DNA_NNP locus_JJ ._. For_IN
+        example_NN ,_, we_PRP recently_RB described_VBD a_DT high_JJ throughput_NN
+        ligation_NN /_NN ERCA_NNP protocol_NN for_IN genotyping_VBG genomic_JJ DNA_NNP samples_NNS
+        in_IN microtiter_NN plates_NNS [_NN 8_CD ]_NN ._.
+        This_DT report_NN describes_VBZ modifications_NNS to_TO OCP_NNP ligation_NN /_NN ERCA_NNP
+        genotyping_VBG that_WDT reduce_VBP reaction_NN time_NN and_CC improve_VB accuracy_NN
+        to_TO above_IN 99_CD %_NN ._. Methods_NNP for_IN improving_VBG accuracy_NN include_VBP
+        simultaneous_JJ detection_NN of_IN two_CD alleles_NNS per_IN well_RB ,_, probes_NNS
+        designed_VBN to_TO contain_VB hairpin_NN sequences_NNS that_WDT regulate_VB
+        ligation_NN discrimination_NN and_CC prevent_VB nonspecific_JJ
+        amplification_NN ,_, and_CC introduction_NN of_IN a_DT Q-PNA_NNP fluorescent_NN
+        detection_NN system_NN [_NN 9_CD ]_NN ._. Improvements_NNP in_IN probe_NN design_NN ,_,
+        rolling_VBG circle_NN reaction_NN design_NN ,_, and_CC assay_NN methods_NNS were_VBD
+        integrated_VBN into_IN an_DT improved_VBN high_JJ accuracy_NN genotyping_VBG assay_NN ,_,
+        and_CC the_DT utility_NN of_IN the_DT method_NN was_VBD demonstrated_VBN for_IN four_CD
+        clinically_RB important_JJ mutations_NNS ._. The_DT Q-PNA_NNP fluorescent_NN
+        detection_NN system_NN produced_VBD a_DT six-fold_RB reduction_NN in_IN time_NN to_TO
+        result_VB ._.
+        In_IN many_JJ instances_NNS only_RB limited_JJ quantities_NNS of_IN genomic_JJ DNA_NNP
+        are_VBP available_JJ from_IN clinical_JJ samples_NNS for_IN genetic_JJ testing_NN ._.
+        DNA_NNP can_MD also_RB be_VB limiting_VBG when_WRB large_JJ numbers_NNS of_IN assays_NNS must_MD
+        be_VB performed_VBN on_IN a_DT single_JJ sample_NN ._. Recently_RB ,_, a_DT whole_JJ genome_NN
+        amplification_NN method_NN (_( WGA_NNP )_) has_VBZ been_VBN developed_VBN that_WDT is_VBZ
+        capable_JJ of_IN accurately_RB producing_VBG large_JJ quantities_NNS of_IN genomic_JJ
+        DNA_NNP from_IN limited_JJ sample_NN [_NN 10_CD 11_CD ]_NN ._. In_IN cases_NNS where_WRB genomic_JJ
+        DNA_NNP was_VBD limiting_VBG ,_, WGA_NNP genomic_JJ DNA_NNP was_VBD substituted_VBN for_IN
+        genomic_JJ DNA_NNP ._. Complete_JJ and_CC faithful_NN amplification_NN of_IN the_DT
+        entire_JJ genome_NN resulted_VBD in_IN WGA_NNP product_NN that_WDT could_MD be_VB
+        substituted_VBN for_IN genomic_JJ DNA_NNP without_IN affecting_VBG the_DT accuracy_NN
+        of_IN genotyping_VBG ._. WGA_NNP DNA_NNP amplification_NN and_CC OCP_NNP ligation_NN /_NN ERCA_NNP
+        can_MD be_VB combined_VBN to_TO create_VB an_DT automated_VBN high_JJ throughput_NN
+        mutation_NN assay_NN that_WDT includes_VBZ DNA_NNP amplification_NN from_IN
+        limiting_VBG samples_NNS and_CC allele_NN detection_NN in_IN a_DT single_JJ tube_NN ._.
+      
+      
+        Results_NNS
+        
+          Probe_NNP Design_NNP
+          The_DT OCP_NNP ligation_NN /_NN ERCA_NNP assay_NN was_VBD improved_VBN to_TO meet_VB the_DT
+          requirements_NNS for_IN fast_RB ,_, and_CC accurate_JJ ,_, genotyping_VBG ._. Probes_NNP
+          for_IN both_DT alleles_NNS were_VBD combined_VBN in_IN a_DT single_JJ reaction_NN tube_NN
+          (_( Figure_NN 1_LS )_) ._. One_CD OCP_NNP annealed_JJ perfectly_RB to_TO the_DT normal_JJ
+          sequence_NN of_IN interest_NN ,_, and_CC the_DT other_JJ targeted_VBD the_DT mutant_JJ ._.
+          The_DT 3_CD '_POS terminal_NN nucleotide_NN of_IN the_DT OCP_NNP annealed_JJ opposite_JJ
+          the_DT variant_NN nucleotide_NN ._. If_IN the_DT OCP_NNP and_CC the_DT target_NN matched_VBN
+          at_IN the_DT mutation_NN site_NN ,_, the_DT OCP_NNP was_VBD circularized_JJ by_IN ligase_NN ._.
+          If_IN the_DT OCP_NNP was_VBD mismatched_JJ at_IN the_DT 3_CD '_POS end_NN ,_, it_PRP was_VBD not_RB
+          ligated_JJ ._. There_EX are_VBP a_DT number_NN of_IN advantages_NNS to_TO having_VBG both_DT
+          probes_NNS present_JJ in_IN the_DT same_JJ reaction_NN ,_, as_IN opposed_VBN to_TO having_VBG
+          each_DT probe_NN in_IN a_DT separate_JJ reaction_NN [_NN 3_CD ]_NN ._. For_IN instance_NN ,_,
+          if_IN amplification_NN fails_VBZ in_IN a_DT biallelic_JJ (_( ie_NN ._. ,_, two_CD allele_NN )_)
+          reaction_NN ,_, signal_NN is_VBZ not_RB generated_VBN for_IN either_DT allele_NN ,_, and_CC
+          the_DT result_NN can_MD be_VB discarded_VBN ._. However_RB ,_, if_IN only_RB one_CD of_IN the_DT
+          two_CD reactions_NNS fail_VBP in_IN a_DT two_CD reaction_NN /_NN single_JJ allele_NN per_IN
+          well_RB format_NN ,_, a_DT heterozygote_NN could_MD be_VB miscalled_JJ as_IN a_DT
+          homozygote_NN ._. Furthermore_RB ,_, the_DT two_CD allele_NN per_IN well_RB format_NN
+          reduced_VBD non-specific_JJ amplification_NN ._. With_IN both_DT mutant_JJ and_CC
+          normal_JJ OCP_NNP in_IN the_DT reaction_NN ,_, either_CC one_CD or_CC the_DT other_JJ or_CC
+          both_DT OCPs_NNP were_VBD circularized_JJ ,_, depending_VBG on_IN the_DT genotype_NN ._.
+          Therefore_RB ,_, there_EX was_VBD a_DT specific_JJ rolling_NN circle_NN reaction_NN
+          in_IN every_DT assay_NN ,_, regardless_RB of_IN the_DT genotype_NN ._. The_DT kinetics_NNS
+          of_IN the_DT specific_JJ rolling_NN circle_NN reaction_NN were_VBD sufficiently_RB
+          rapid_JJ so_IN that_IN non-specific_JJ amplification_NN was_VBD greatly_RB
+          reduced_VBN or_CC eliminated_VBN ._. Details_NNS of_IN the_DT mechanism_NN of_IN the_DT
+          Exponential_NNP Rolling_NNP Circle_NNP Amplification_NNP (_( ERCA_NNP )_) reaction_NN
+          are_VBP shown_VBN in_IN Figure_NN 2_CD ._.
+          The_DT exponential_NN amplification_NN of_IN the_DT ligated_JJ probe_NN
+          sequence_NN generates_VBZ double_RB stranded_VBN DNA_NNP products_NNS that_WDT are_VBP
+          unit_NN lengths_NNS of_IN the_DT probe_NN [_NN 4_CD ]_NN ._. Electrophoretic_NNP
+          separation_NN on_IN an_DT agarose_NN gel_NN generates_VBZ a_DT ladder_NN of_IN DNA_NNP
+          bands_NNS as_IN seen_VBN in_IN Figure_NN 3_CD ._. Typically_RB ,_, the_DT products_NNS ranged_VBD
+          in_IN size_NN from_IN 80_CD bases_NNS to_TO 1_CD ._. 2_CD kb_NN ,_, with_IN most_JJS products_NNS less_JJR
+          than_IN 500_CD bases_NNS long_JJ ._. The_DT ERCA_NNP products_NNS for_IN normal_JJ and_CC
+          mutant_JJ alleles_NNS incorporate_VB a_DT different_JJ fluorescent_NN P_NN 1_CD
+          primer_NN ._. In_IN Figure_NN 3_CD ,_, signal_NN from_IN the_DT normal_JJ allele_NN
+          results_NNS in_IN FAM_NNP (_( false_JJ color_NN green_JJ )_) fluorescence_NN ,_, while_IN
+          signal_NN from_IN the_DT mutant_JJ allele_NN results_NNS in_IN Cy_NNP 3_CD (_( false_JJ color_NN
+          red_JJ )_) fluorescence_NN ._. A_DT sample_NN with_IN heterozygous_JJ genotype_NN
+          produces_VBZ both_DT colors_NNS ._.
+          The_DT OCPs_NNP were_VBD redesigned_VBN to_TO incorporate_VB a_DT hairpin_NN
+          structure_NN (_( Figure_NN 4_LS )_) that_WDT improved_VBD target_NN specificity_NN
+          analogous_JJ to_TO beacon_NN [_NN 12_CD ]_NN probe_NN design_NN ._. Parameters_NNP
+          affecting_VBG the_DT stability_NN of_IN the_DT hairpin_NN were_VBD tailored_VBN to_TO
+          increase_VB the_DT specificity_NN of_IN target_NN recognition_NN ._. Target_NNP
+          directed_VBD hybridization_NN using_VBG a_DT hairpin_NN is_VBZ more_RBR specific_JJ
+          than_IN hybridization_NN of_IN a_DT linear_JJ probe_NN because_IN the_DT
+          structure_NN of_IN the_DT hairpin_NN probe_NN is_VBZ maintained_VBN in_IN a_DT folded_VBN
+          state_NN unless_IN the_DT hairpin_NN sequence_NN encounters_VBZ its_PRP$
+          preferred_JJ target_NN sequence_NN ._. If_IN the_DT probe_NN does_VBZ not_RB
+          encounter_VB the_DT correct_JJ target_NN ,_, the_DT hairpin_NN will_MD remain_VB
+          self-annealed_JJ ,_, reducing_VBG the_DT possibility_NN of_IN nonspecific_JJ or_CC
+          transient_JJ annealing_VBG events_NNS ._. Only_RB the_DT extensive_JJ base_NN
+          pairing_VBG between_IN the_DT probe_NN and_CC target_NN sequence_NN is_VBZ
+          sufficient_JJ to_TO disrupt_VB the_DT hairpin_NN ._.
+          The_DT new_JJ probe_NN design_NN also_RB provides_VBZ a_DT way_NN to_TO reduce_VB
+          background_NN by_IN rendering_VBG unused_JJ probe_NN inert_NN ._. (_( Figure_NN 5_LS )_) ._.
+          During_IN ERCA_NNP ,_, the_DT 3_CD '_POS -_: end_NN of_IN the_DT hairpin_NN of_IN unused_JJ probe_NN is_VBZ
+          extended_VBN by_IN DNA_NNP polymerase_NN to_TO produce_VB a_DT non-reactive_JJ
+          double-stranded_JJ product_NN (_( data_NNS not_RB shown_VBN )_) ._. In_IN the_DT absence_NN
+          of_IN a_DT method_NN such_JJ as_IN this_DT for_IN either_DT removing_VBG or_CC
+          inactivating_VBG unused_JJ OCP_NNP ,_, nonspecific_JJ background_NN
+          amplification_NN can_MD occur_VB [_NN 13_CD ]_NN ._. Sequencing_NNP of_IN
+          misamplification_NN products_NNS (_( data_NNS not_RB shown_VBN ,_, [_NN 14_CD ]_NN )_) has_VBZ
+          revealed_VBN that_IN misamplification_NN products_NNS produced_VBN in_IN the_DT
+          absence_NN of_IN ligase_NN usually_RB consist_VBP of_IN a_DT short_JJ OCP-derived_NNP
+          sequence_NN immediately_RB flanked_JJ by_IN primer_NN sequences_NNS ._. Each_DT
+          '_POS primer-_NN OCP-primer_NNP '_POS unit_NN was_VBD repeated_VBN dozens_NNS or_CC hundreds_NNS
+          of_IN times_NNS in_IN tandem_NN ._. The_DT unit_NN sequence_NN varied_VBD randomly_RB
+          from_IN reaction_NN to_TO reaction_NN ,_, and_CC sometimes_RB more_JJR than_IN one_CD
+          sequence_NN was_VBD present_JJ in_IN a_DT reaction_NN ._. The_DT exact_JJ mechanism_NN
+          for_IN generating_NN and_CC expanding_VBG misamplification_NN products_NNS
+          with_IN this_DT overall_JJ sequence_NN motif_NN is_VBZ not_RB completely_RB
+          understood_VBN ._. However_RB ,_, improved_VBN probe_NN design_NN that_IN results_NNS
+          in_IN enzymatic_JJ elimination_NN of_IN unused_JJ OCPs_NNP ,_, as_IN demonstrated_VBN
+          with_IN the_DT 3_CD '_POS hairpin_NN OCP_NNP ,_, can_MD reduce_VB or_CC eliminate_VB unwanted_JJ
+          nonspecific_JJ amplifications_NNS ._.
+          To_TO determine_VB the_DT effect_NN of_IN the_DT 3_CD '_POS hairpin_NN on_IN
+          genotyping_VBG accuracy_NN ,_, probes_NNS with_IN and_CC without_IN 3_CD '_POS hairpins_NNS
+          were_VBD designed_VBN for_IN both_DT the_DT Factor_NN V_NNP Leiden_NNP and_CC
+          Hemochromatosis_NNP H_NNP 63_CD D_NNP mutations_NNS (_( Table_NNP 1_LS )_) ._. Control_NN probes_NNS
+          lacking_VBG hairpins_NNS were_VBD constructed_VBN in_IN two_CD different_JJ ways_NNS :_:
+          1_LS )_) Hairpins_NNP in_IN the_DT FVL_NNP probes_NNS were_VBD removed_VBN by_IN simply_RB
+          deleting_VBG the_DT non-target_JJ directed_VBN OCP_NNP sequence_NN involved_VBN in_IN
+          hairpin_NN formation_NN ._. This_DT did_VBD not_RB change_VB priming_VBG sites_NNS or_CC
+          the_DT base_NN pairing_VBG between_IN the_DT probe_NN and_CC target_NN ,_, but_CC
+          non-hairpin_JJ probes_NNS were_VBD reduced_VBN in_IN length_NN by_IN 10_CD
+          nucleotides_NNS compared_VBN to_TO the_DT hairpin_NN probes_NNS ._. 2_LS )_) To_TO
+          eliminate_VB the_DT 3_CD '_POS hairpin_NN without_IN changing_VBG the_DT length_NN of_IN
+          the_DT OCP_NNP ,_, the_DT hairpins_NNS in_IN the_DT H_NNP 63_CD D_NNP probes_NNS were_VBD removed_VBN by_IN
+          changing_VBG the_DT sequence_NN of_IN the_DT OCP_NNP such_JJ that_IN the_DT length_NN of_IN
+          the_DT probes_NNS was_VBD conserved_JJ but_CC the_DT base_NN pairing_VBG in_IN the_DT
+          hairpin_NN was_VBD disrupted_VBN ._. Real_JJ time_NN ERCA_NNP genotyping_VBG
+          reactions_NNS were_VBD performed_VBN using_VBG FVL_NNP and_CC H_NNP 63_CD D_NNP probes_NNS with_IN
+          and_CC without_IN 3_CD '_POS hairpins_NNS (_( Figures_NNS 6_CD ,_, 7_CD ,_, 8_CD and_CC 9_CD )_) ._. The_DT
+          fluorescence_NN versus_CC time_NN was_VBD plotted_VBD for_IN each_DT of_IN 48_CD
+          samples_NNS ,_, grouped_VBN according_VBG to_TO genotype_NN ._. The_DT genotyping_VBG
+          signals_NNS appeared_VBD in_IN as_RB little_JJ as_IN 10_CD minutes_NNS using_VBG the_DT
+          Q-PNA_NNP detection_NN system_NN ._. Genotyping_NNP calls_NNS were_VBD made_VBN as_IN
+          described_VBN in_IN Methods_NNP ,_, (_( Determination_NNP of_IN Genotypes_NNP ,_, Real_NNP
+          Time_NNP OCP_NNP ligation_NN /_NN ERCA_NNP )_) ._. For_IN both_DT FVL_NNP and_CC H_NNP 63_CD D_NNP ,_,
+          nonspecific_JJ amplification_NN occurred_VBD when_WRB OCPs_NNP lacked_VBD the_DT
+          hairpin_NN structure_NN ._. Strong_JJ nonspecific_JJ signal_NN appeared_VBD for_IN
+          samples_NNS known_VBN to_TO be_VB either_CC homozygous_JJ mutant_JJ or_CC normal_JJ ,_,
+          frequently_RB generating_VBG a_DT heterozygous_JJ genotyping_VBG miscall_NN ._.
+          48_CD samples_NNS were_VBD genotyped_JJ for_IN FVL_NNP and_CC H_NNP 63_CD ._. FVL_NNP genotyping_VBG
+          with_IN the_DT non-hairpin_JJ probes_NNS resulted_VBD in_IN unacceptably_RB high_JJ
+          error_NN ,_, with_IN only_RB 65_CD %_NN of_IN the_DT samples_NNS called_VBN correctly_RB
+          (_( Figure_NN 6_CD )_) ._. Results_NNS for_IN non-hairpin_JJ H_NNP 63_CD D_NNP probes_NNS were_VBD
+          similar_JJ ,_, with_IN only_RB 65_CD %_NN called_VBN correctly_RB (_( Figure_NN 8_CD )_) ._. In_IN
+          both_DT cases_NNS ,_, the_DT non-hairpin_JJ genotyping_VBG reactions_NNS showed_VBD a_DT
+          dramatic_JJ increase_NN in_IN the_DT incidence_NN of_IN late_JJ appearing_VBG ,_,
+          non-specific_JJ signal_NN ._. When_WRB the_DT hairpin_NN containing_VBG OCPs_NNP
+          were_VBD used_VBN ,_, all_DT 96_CD samples_NNS were_VBD genotyped_JJ correctly_RB
+          (_( Figures_NNS 7_CD and_CC 9_CD )_) ._.
+          To_TO increase_VB the_DT accuracy_NN of_IN genotyping_VBG ,_, probes_NNS for_IN
+          both_DT alleles_NNS were_VBD combined_VBN in_IN a_DT single_JJ tube_NN format_NN ._. For_IN
+          heterozygotes_NNS ,_, the_DT two_CD probes_NNS are_VBP concurrently_RB amplified_VBN
+          in_IN the_DT ERCA_NNP reaction_NN ._. Exponential_NNP amplification_NN of_IN
+          circularized_JJ OCP_NNP requires_VBZ primers_NNS P_NN 1_CD and_CC P_NN 2_CD (_( see_VB Figure_NN
+          2_LS )_) ._. The_DT concurrent_JJ amplification_NN of_IN mutant_JJ and_CC normal_JJ
+          probes_NNS is_VBZ kept_VBN in_IN balance_NN by_IN using_VBG the_DT same_JJ P_NN 2_CD for_IN each_DT
+          probe_NN ._. P_NN 1_CD primers_NNS were_VBD routinely_RB titrated_JJ to_TO determine_VB
+          optimum_JJ concentration_NN [_NN 4_CD ]_NN ._. This_DT approach_NN greatly_RB
+          reduces_VBZ the_DT difficulty_NN of_IN balancing_VBG the_DT kinetics_NNS of_IN
+          biallelic_JJ ERCA_NNP amplifications_NNS ._. If_IN the_DT P_NN 2_CD primer_NN is_VBZ common_JJ
+          to_TO both_DT OCPs_NNP ,_, only_RB P_NN 1_CD priming_VBG efficiencies_NNS need_VBP to_TO be_VB
+          similar_JJ ,_, greatly_RB simplifying_VBG the_DT process_NN of_IN obtaining_VBG
+          balanced_JJ reaction_NN kinetics_NNS in_IN a_DT biallelic_JJ assay_NN ._.
+          The_DT use_NN of_IN several_JJ P_NN 1_CD and_CC P_NN 2_CD primers_NNS ,_, which_WDT initiate_VBP
+          DNA_NNP synthesis_NN from_IN multiple_JJ positions_NNS on_IN the_DT probe_NN and_CC
+          product_NN ,_, increases_NNS ERCA_NNP rate_NN ,_, sensitivity_NN and_CC specificity_NN
+          (_( [_NN 15_CD ]_NN ,_, data_NNS not_RB shown_VBN )_) ._. Therefore_RB ,_, secondary_JJ
+          amplification_NN primers_NNS were_VBD designed_VBN for_IN each_DT probe_NN ._. In_IN
+          genotyping_VBG reactions_NNS where_WRB two_CD probes_NNS were_VBD present_JJ in_IN a_DT
+          single_JJ reaction_NN ,_, the_DT secondary_JJ primers_NNS were_VBD designed_VBN to_TO
+          anneal_NN to_TO target_VB specific_JJ sequences_NNS shared_VBN by_IN both_DT OCPs_NNP ,_,
+          in_IN the_DT 5_CD '_POS and_CC /_NN or_CC 3_CD '_POS arms_NNS (_( Table_NNP 1_LS )_) ._.
+        
+        
+          Genotyping_NNP Accuracy_NNP
+          The_DT improvements_NNS to_TO the_DT OCP_NNP ligation_NN /_NN ERCA_NNP genotyping_VBG
+          reaction_NN outlined_VBN above_IN were_VBD incorporated_VBN into_IN four_CD
+          genotyping_VBG assays_NNS ,_, and_CC a_DT study_NN was_VBD performed_VBN to_TO test_VB the_DT
+          reaction_NN design_NN for_IN genotyping_VBG accuracy_NN ._. Probes_NNP for_IN the_DT
+          Factor_NN V_NNP Leiden_NNP (_( FVL_NNP )_) mutant_JJ and_CC normal_JJ alleles_NNS (_( see_VB
+          Table_NNP 1_LS )_) were_VBD designed_VBN using_VBG the_DT parameters_NNS outlined_VBN in_IN
+          Methods_NNP ._. These_DT probes_NNS were_VBD used_VBN to_TO screen_VB a_DT 216_CD patient_NN
+          sample_NN set_VBN that_WDT had_VBD been_VBN previously_RB genotyped_JJ using_VBG RFLP_NNP ._.
+          The_DT sample_NN groups_NNS were_VBD enriched_JJ for_IN the_DT mutant_JJ genotypes_NNS
+          that_WDT normally_RB occur_VB at_IN very_RB low_JJ frequency_NN in_IN the_DT
+          population_NN ._. For_IN example_NN ,_, the_DT FVL_NNP sample_NN group_NN contained_VBD
+          105_CD normal_JJ ,_, 98_CD heterozygous_JJ ,_, and_CC 13_CD homozygous_JJ mutant_JJ
+          patient_NN samples_NNS for_IN the_DT FVL_NNP allele_NN ._. Of_IN 352_CD genotyping_VBG
+          reactions_NNS performed_VBN in_IN triplicate_NN (_( 1056_CD total_JJ FVL_NNP
+          reactions_NNS )_) ,_, only_RB 6_CD samples_NNS gave_VBD inconsistent_JJ genotyping_VBG
+          results_NNS and_CC had_VBD to_TO be_VB repeated_VBN ._. A_DT repeat_NN was_VBD indicated_VBN if_IN
+          any_DT of_IN the_DT three_CD independent_JJ experiments_NNS did_VBD not_RB agree_VB ._.
+          By_IN performing_VBG reactions_NNS in_IN triplicate_NN ,_, the_DT assay_NN yielded_VBD
+          results_NNS that_WDT were_VBD 100_CD %_NN accurate_JJ ,_, with_IN a_DT 1_CD ._. 7_CD %_NN repeat_NN rate_NN ._.
+          Reactions_NNP performed_VBD only_RB once_RB had_VBD an_DT accuracy_NN of_IN 99_CD ._. 4_LS %_NN ._.
+          Results_NNS were_VBD visualized_JJ as_IN both_DT real_JJ time_NN and_CC end-point_JJ ,_,
+          and_CC a_DT representative_JJ FVL_NNP genotyping_VBG experiment_NN is_VBZ shown_VBN
+          in_IN Figure_NN 10_CD ._. The_DT genotype_NN for_IN each_DT sample_NN was_VBD determined_VBN
+          as_IN outlined_VBN in_IN Methods_NNP ,_, and_CC compared_VBD to_TO the_DT known_VBN
+          genotype_NN ._. The_DT number_NN of_IN samples_NNS genotyped_JJ and_CC the_DT
+          accuracy_NN of_IN genotyping_VBG are_VBP summarized_VBD in_IN Table_NNP 2_CD ._.
+          Probes_NNP for_IN the_DT Factor_NN II_NNP prothrombin_NN (_( FII_NNP )_) mutant_JJ and_CC
+          normal_JJ alleles_NNS (_( see_VB Table_NNP 1_LS )_) were_VBD designed_VBN as_IN discussed_VBN
+          in_IN Methods_NNP ._. These_DT probes_NNS were_VBD used_VBN to_TO screen_VB a_DT 298_CD
+          patient_NN sample_NN set_VBN that_WDT was_VBD previously_RB genotyped_JJ using_VBG
+          RFLP_NNP ._. There_EX were_VBD two_CD mutant_JJ genotypes_NNS ,_, 12_CD heterozygotes_NNS ,_,
+          and_CC 284_CD homozygous_JJ normal_JJ genotypes_NNS ._. Because_IN mutant_JJ
+          patient_NN samples_NNS were_VBD limiting_VBG ,_, a_DT separate_JJ sample_NN group_NN
+          that_WDT consisted_VBD of_IN multiple_JJ repeats_NNS of_IN the_DT same_JJ Factor_NN II_NNP
+          mutant_JJ and_CC heterozygous_JJ samples_NNS was_VBD screened_VBD ._. As_IN with_IN the_DT
+          genotyping_VBG assays_NNS described_VBD above_IN ,_, Factor_NN II_NNP prothrombin_NN
+          (_( FII_NNP )_) mutant_JJ genotyping_VBG results_NNS were_VBD also_RB visualized_JJ
+          either_CC in_IN real_JJ time_NN or_CC as_IN an_DT end-point_JJ assay_NN (_( Figure_NN 11_CD )_) ._.
+          Summary_NNP of_IN results_NNS is_VBZ shown_VBN in_IN Table_NNP 2_CD ._. Samples_NNP probed_JJ
+          for_IN the_DT Factor_NN II_NNP mutation_NN were_VBD genotyped_JJ with_IN 99_CD ._. 5_LS %_NN
+          accuracy_NN within_IN a_DT single_JJ assay_NN ,_, 100_CD %_NN accuracy_NN if_IN
+          performed_VBN in_IN triplicate_NN ._.
+          Probes_NNP for_IN the_DT two_CD Hemochromatosis_NNP mutations_NNS H_NNP 63_CD D_NNP and_CC
+          C_NNP 282_CD Y_NNP were_VBD designed_VBN using_VBG the_DT parameters_NNS outlined_VBN in_IN
+          Methods_NNP and_CC used_VBN to_TO screen_VB patient_NN sample_NN sets_NNS of_IN known_VBN
+          genotype_NN (_( probe_NN sequences_NNS in_IN Table_NNP 1_LS )_) ._. There_EX were_VBD 138_CD
+          samples_NNS screened_VBD for_IN H_NNP 63_CD D_NNP and_CC 190_CD samples_NNS screened_VBD for_IN
+          C_NNP 282_CD Y_NNP ._. This_DT sample_NN group_NN was_VBD also_RB enriched_JJ for_IN the_DT mutant_JJ
+          genotype_NN ,_, containing_VBG 89_CD homozygous_JJ normal_JJ ,_, 48_CD
+          heterozygous_JJ and_CC 1_CD homozygous_JJ mutant_JJ (_( the_DT single_NN mutant_JJ
+          was_VBD repeated_VBN 29_CD times_NNS )_) for_IN the_DT H_NNP 63_CD allele_NN and_CC 84_CD normal_JJ ,_,
+          93_CD heterozygous_JJ and_CC 13_CD homozygous_JJ mutant_JJ patient_NN samples_NNS
+          for_IN the_DT C_NNP 282_CD allele_NN ._. Examples_NNS of_IN typical_JJ genotyping_VBG
+          results_NNS for_IN H_NNP 63_CD D_NNP are_VBP shown_VBN in_IN Figure_NN 12_CD and_CC results_NNS for_IN
+          C_NNP 282_CD Y_NNP are_VBP shown_VBN in_IN Figure_NN 13_CD ._. Genotyping_NNP results_NNS were_VBD
+          visualized_JJ as_IN both_DT real_JJ time_NN reaction_NN traces_NNS and_CC as_IN an_DT
+          end-point_JJ assay_NN ._. Samples_NNP screened_VBD for_IN both_DT
+          hemochromatosis_NNS mutations_NNS were_VBD genotyped_JJ with_IN 99_CD ._. 5_LS %_NN
+          accuracy_NN within_IN a_DT single_JJ assay_NN ,_, 100_CD %_NN accuracy_NN if_IN
+          performed_VBN in_IN triplicate_NN (_( Table_NNP 2_LS )_) ._.
+        
+      
+      
+        Discussion_NNP
+        OCP_NNP ligation_NN /_NN ERCA_NNP can_MD be_VB used_VBN to_TO directly_RB probe_VB genomic_JJ
+        DNA_NNP for_IN SNPs_NNP or_CC mutations_NNS ,_, and_CC the_DT entire_JJ process_NN can_MD be_VB
+        performed_VBN in_IN a_DT single_JJ tube_NN ._. The_DT ERCA_NNP amplification_NN reaction_NN
+        is_VBZ rapid_JJ ,_, generating_NN signal_NN in_IN as_RB little_JJ as_IN 10_CD minutes_NNS ,_, and_CC
+        is_VBZ incubated_JJ at_IN a_DT single_JJ temperature_NN ._. These_DT characteristics_NNS
+        make_VBP OCP_NNP ligation_NN /_NN ERCA_NNP easily_RB adaptable_JJ to_TO high_JJ throughput_NN
+        automated_VBN genotyping_VBG platforms_NNS ._. Accurate_NNP genotyping_VBG was_VBD
+        obtained_VBN in_IN screens_NNS designed_VBN to_TO detect_VB four_CD clinically_RB
+        relevant_JJ mutations_NNS ,_, Factor_NN V_NNP Leiden_NNP ,_, Factor_NN II_NNP prothrombin_NN ,_,
+        Hemochromatosis_NNP C_NNP 282_CD Y_NNP and_CC Hemochromatosis_NNP H_NNP 63_CD D_NNP ._.
+        Several_JJ improvements_NNS to_TO the_DT ligation_NN /_NN ERCA_NNP method_NN [_NN 8_CD ]_NN
+        have_VBP increased_VBN accuracy_NN to_TO levels_NNS acceptable_JJ for_IN diagnostic_JJ
+        applications_NNS and_CC reduced_VBN reaction_NN time_NN ._. Other_JJ reports_NNS using_VBG
+        ERCA_NNP based_VBD genotyping_VBG require_VB PCR_NNP amplification_NN of_IN the_DT
+        locus_JJ of_IN interest_NN prior_RB to_TO genotyping_VBG [_NN 3_CD 16_CD ]_NN ,_, which_WDT is_VBZ
+        prohibitively_RB expensive_JJ ,_, time_NN consuming_NN ,_, and_CC more_RBR difficult_JJ
+        to_TO automate_NN ._. We_PRP have_VBP designed_VBN ERCA_NNP primers_NNS that_WDT are_VBP
+        optimized_JJ for_IN minimal_JJ misamplification_NN and_CC artifact_NN
+        formation_NN ._. With_IN any_DT exponential_NN signal_NN amplification_NN
+        method_NN ,_, nonspecific_JJ amplification_NN due_JJ to_TO exponential_NN
+        artifacts_NNS presents_VBZ a_DT potential_JJ problem_NN ._. In_IN ERCA_NNP as_IN in_IN PCR_NNP ,_,
+        amplification_NN of_IN primer-primer_JJ artifacts_NNS can_MD mimic_VB specific_JJ
+        signal_NN if_IN primers_NNS are_VBP not_RB selected_VBN carefully_RB ._. To_TO avoid_VB this_DT
+        problem_NN ,_, commercially_RB available_JJ primer_NN design_NN software_NN was_VBD
+        used_VBN to_TO design_VB P_NN 1_CD and_CC P_NN 2_CD primers_NNS that_WDT are_VBP optimal_NN for_IN
+        amplification_NN ._. This_DT step_NN does_VBZ not_RB necessarily_RB have_VB to_TO be_VB
+        repeated_VBN for_IN each_DT target_NN ,_, however_RB ,_, which_WDT is_VBZ an_DT advantage_NN
+        over_IN PCR_NNP based_VBD methodologies_NNS ._. The_DT primary_JJ amplification_NN
+        primer_NN sequences_NNS are_VBP present_JJ in_IN the_DT OCP_NNP backbone_NN ,_, not_RB in_IN
+        the_DT portion_NN of_IN the_DT OCP_NNP that_IN anneals_NNS to_TO target_VB ,_, allowing_VBG
+        optimized_JJ P_NN 1_CD and_CC P_NN 2_CD pairs_NNS ,_, to_TO be_VB used_VBN for_IN many_JJ different_JJ
+        targets_NNS ._. In_IN principle_NN ,_, a_DT small_JJ collection_NN of_IN optimized_JJ
+        P_NN 1_CD /_NN P_NN 2_CD pairs_NNS should_MD contain_VB primers_NNS that_WDT can_MD be_VB used_VBN for_IN any_DT
+        given_VBN target_NN ._.
+        The_DT Q-PNA_NNP detection_NN system_NN [_NN 9_CD ]_NN was_VBD used_VBN as_IN a_DT
+        fluorescent_NN reporter_NN during_IN ERCA_NNP ._. During_IN ERCA_NNP ,_, Q-PNA_NNP is_VBZ
+        rapidly_RB displaced_VBN from_IN the_DT ERCA_NNP product_NN and_CC is_VBZ physically_RB
+        separated_JJ from_IN the_DT fluor_NN in_IN a_DT bimolecular_NN reaction_NN ,_,
+        resulting_VBG in_IN detectable_JJ signal_NN in_IN as_RB little_JJ as_IN 10_CD minutes_NNS ._.
+        By_IN comparison_NN ,_, Amplifluors_NNP typically_RB required_VBD 60_CD -_: 120_CD
+        minutes_NNS to_TO generate_VB signal_NN [_NN 8_CD ]_NN ._. The_DT substantial_JJ
+        difference_NN in_IN time_NN to_TO generate_VB signal_NN may_MD be_VB due_JJ to_TO the_DT
+        nature_NN of_IN Amplifluor_NNP design_NN ._. In_IN an_DT Ampliflour_NNP ,_,
+        complementary_JJ DNA_NNP sequences_NNS ,_, fluorescent_NN reporter_NN ,_, and_CC
+        quencher_NN are_VBP all_DT covalently_RB linked_VBN on_IN the_DT same_JJ DNA_NNP strand_NN ._.
+        The_DT comparative_JJ stability_NN of_IN the_DT unimolecular_NN Amplifluor_NNP
+        hairpin_NN is_VBZ likely_JJ to_TO hinder_VB displacement_NN synthesis_NN when_WRB
+        compared_VBN to_TO the_DT bimolecular_NN Q-PNA_NNP system_NN ._. In_IN addition_NN ,_, the_DT
+        high_JJ local_JJ concentration_NN of_IN fluor_NN and_CC quencher_NN may_MD serve_VB to_TO
+        supress_NNS signal_VBP from_IN the_DT Amplifluor_NNP ._. The_DT Q-PNA_NNP based_VBD
+        reporter_NN system_NN consistently_RB produces_VBZ signal_NN far_RB more_RBR
+        rapidly_RB than_IN the_DT Amplifluor_NNP based_VBD system_NN ,_, allowing_VBG time_NN to_TO
+        result_NN of_IN less_JJR than_IN an_DT hour_NN for_IN the_DT entire_JJ assay_NN ._.
+        Secondary_JJ allele_NN specific_JJ ,_, nonfluorescent_NN ,_, primers_NNS can_MD
+        also_RB be_VB used_VBN to_TO increase_VB the_DT speed_NN and_CC specificity_NN of_IN ERCA_NNP ._.
+        These_DT primers_NNS significantly_RB advanced_VBD the_DT rate_NN of_IN ERCA_NNP
+        amplification_NN ,_, cutting_VBG the_DT reaction_NN time_NN in_IN half_NN for_IN the_DT
+        Factor_NN V_NNP Leiden_NNP probe_NN set_VBN (_( data_NNS not_RB shown_VBN )_) ,_, resulting_VBG in_IN a_DT
+        20_CD -_: minute_NN assay_NN ._. Although_IN maximum_NN fluorescent_NN signal_NN
+        decreased_VBD slightly_RB as_IN each_DT additional_JJ nonfluorescent_NN primer_NN
+        was_VBD added_VBN ,_, the_DT addition_NN of_IN one_CD or_CC two_CD more_JJR primers_NNS to_TO the_DT
+        reaction_NN did_VBD not_RB adversely_RB influence_VB signal_NN strength_NN to_TO the_DT
+        extent_NN that_IN genotyping_VBG was_VBD compromised_VBN ._.
+        Each_DT of_IN the_DT four_CD assays_NNS developed_VBN for_IN this_DT report_NN
+        contained_VBD two_CD probes_NNS ,_, one_CD for_IN each_DT allele_NN ._. Using_VBG both_DT
+        probes_NNS in_IN a_DT single_JJ reaction_NN has_VBZ been_VBN demonstrated_VBN to_TO reduce_VB
+        the_DT levels_NNS of_IN nonspecific_JJ amplification_NN due_JJ to_TO primer_NN
+        dimers_NNS and_CC misamplification_NN of_IN unligated_JJ probe_NN [_NN 3_CD ]_NN ._. At_IN
+        least_JJS one_CD of_IN the_DT probes_NNS will_MD always_RB be_VB amplified_VBN ,_,
+        suppressing_VBG low_JJ levels_NNS of_IN nonspecific_JJ signal_NN ._.
+        The_DT introduction_NN of_IN a_DT hairpin_NN into_IN the_DT design_NN of_IN the_DT
+        open_JJ circle_NN probes_NNS ,_, similar_JJ to_TO approaches_NNS taken_VBN in_IN
+        molecular_JJ beacon_NN design_NN [_NN 12_CD ]_NN ,_, provides_VBZ a_DT means_NN to_TO
+        regulate_VB the_DT degree_NN of_IN ligation_NN discrimination_NN ._. A_DT 3_CD '_POS and_CC /_NN or_CC
+        5_CD '_POS stem-loop_JJ structure_NN may_MD be_VB designed_VBN to_TO increase_VB specific_JJ
+        binding_JJ to_TO difficult_JJ sequences_NNS ._. The_DT ratio_NN of_IN the_DT hairpin_NN
+        stability_NN to_TO target_VB annealing_VBG stability_NN directly_RB affects_VBZ
+        the_DT overall_JJ target_NN annealing_VBG specificity_NN ._. By_IN modulating_VBG the_DT
+        stability_NN of_IN the_DT hairpin_NN any_DT OCP_NNP can_MD be_VB fine_NN tuned_VBN for_IN
+        ligation_NN specificity_NN ._.
+        The_DT OCP_NNP 3_CD '_POS hairpin_NN also_RB decreases_VBZ the_DT level_NN of_IN
+        nonspecific_JJ DNA_NNP synthesis_NN caused_VBN by_IN misamplification_NN of_IN OCP_NNP
+        sequences_NNS ._. Analysis_NNP of_IN misamplified_JJ products_NNS has_VBZ shown_VBN that_IN
+        OCP_NNP sequences_NNS are_VBP usually_RB found_VBN in_IN the_DT misamplified_JJ DNA_NNP
+        products_NNS ._. This_DT means_VBZ that_IN uncircularized_JJ OCP_NNP is_VBZ able_JJ to_TO
+        provide_VB a_DT template_NN for_IN primer-based_JJ misamplification_NN ._.
+        Removing_NNP the_DT unligated_JJ OCP_NNP helps_VBZ to_TO reduce_VB background_NN
+        amplification_NN [_NN 13_CD ]_NN ,_, but_CC digestion_NN of_IN the_DT unused_JJ OCP_NNP or_CC
+        purification_NN of_IN the_DT ligated_JJ circles_NNS introduces_VBZ time_NN
+        consuming_NN and_CC expensive_JJ steps_NNS ._. Designing_NNP a_DT 3_CD '_POS hairpin_NN into_IN
+        the_DT OCP_NNP creates_VBZ a_DT self-priming_JJ sequence_NN in_IN unligated_JJ OCP_NNP ._.
+        During_IN ERCA_NNP ,_, the_DT polymerase_NN will_MD extend_VB unligated_JJ OCP_NNP
+        starting_VBG at_IN the_DT 3_CD '_POS end_NN in_IN a_DT suicide_NN pathway_NN that_IN renders_NNS
+        the_DT OCP_NNP double_RB stranded_VBN and_CC inert_NN ._. This_DT approach_NN eliminates_VBZ
+        nonspecific_JJ amplification_NN and_CC improves_VBZ genotyping_VBG accuracy_NN
+        without_IN the_DT introduction_NN of_IN separate_JJ isolation_NN or_CC
+        purification_NN steps_NNS ._. As_IN demonstrated_VBN above_IN ,_, removal_NN of_IN the_DT
+        hairpin_NN sequence_NN either_CC by_IN deletion_NN or_CC point_NN mutation_NN of_IN
+        the_DT base_NN paired_VBN region_NN resulted_VBD in_IN greatly_RB decreased_VBD
+        genotyping_VBG accuracy_NN for_IN both_DT Factor_NN V_NNP Leiden_NNP and_CC
+        Hemochromatosis_NNP H_NNP 63_CD D_NNP genotyping_VBG assays_NNS ._.
+        Additional_JJ methods_NNS to_TO improve_VB ERCA_NNP specificity_NN were_VBD
+        integrated_VBN into_IN the_DT genotyping_VBG protocol_NN ._. Careful_NNP design_NN
+        allowed_VBD the_DT same_JJ P_NN 2_CD sequence_NN to_TO be_VB used_VBN in_IN the_DT ERCA_NNP
+        reaction_NN for_IN both_DT alleles_NNS ._. For_IN each_DT set_NN of_IN OCPs_NNP ,_, the_DT P_NN 2_CD
+        sequence_NN was_VBD generic_JJ ._. The_DT generic_JJ P_NN 2_CD was_VBD not_RB part_VB of_IN the_DT
+        target_NN specific_JJ portion_NN of_IN the_DT probe_NN ,_, which_WDT allowed_VBD it_PRP to_TO
+        be_VB used_VBN in_IN both_DT the_DT normal_JJ and_CC mutant_JJ OCP_NNP ._. Because_IN both_DT
+        probes_NNS in_IN each_DT assay_NN contained_VBD the_DT same_JJ P_NN 2_CD ,_, the_DT reaction_NN
+        kinetics_NNS could_MD be_VB more_RBR easily_RB balanced_JJ ,_, promoting_VBG uniform_NN
+        amplification_NN for_IN both_DT alleles_NNS ._. Uniform_NNP amplification_NN is_VBZ
+        especially_RB important_JJ when_WRB the_DT genotype_NN is_VBZ heterozygous_JJ so_IN
+        that_IN both_DT alleles_NNS are_VBP accurately_RB represented_VBN ._.
+        Genotyping_NNP accuracy_NN depends_VBZ on_IN using_VBG sufficient_JJ
+        quantities_NNS of_IN genomic_JJ DNA_NNP target_NN ._. As_IN expected_VBN ,_, OCP_NNP
+        ligation_NN /_NN ERCA_NNP results_NNS were_VBD influenced_VBN by_IN the_DT amount_NN of_IN
+        genomic_JJ DNA_NNP used_VBD in_IN the_DT assay_NN ._. Typically_RB ,_, genotyping_VBG was_VBD
+        possible_JJ with_IN as_RB little_JJ as_IN 50_CD ng_NN target_NN DNA_NNP ._. However_RB ,_,
+        specific_JJ signal_NN strength_NN increased_VBD with_IN more_JJR DNA_NNP target_NN ,_, up_IN
+        to_TO 1000_CD ng_NN ,_, after_IN which_WDT no_DT further_JJ benefit_NN was_VBD seen_VBN (_( data_NNS
+        not_RB shown_VBN )_) ._. WGA_NNP DNA_NNP can_MD be_VB produced_VBN in_IN milligram_NN quantities_NNS
+        from_IN nanograms_NNS [_NN 10_CD ]_NN of_IN original_JJ sample_NN allowing_VBG use_NN of_IN
+        high_JJ DNA_NNP concentration_NN for_IN optimal_NN signal_NN ._. As_IN a_DT result_NN ,_,
+        1000_CD ng_NN WGA_NNP DNA_NNP was_VBD used_VBN to_TO obtain_VB optimal_NN genotyping_VBG
+        reaction_NN conditions_NNS ._. The_DT results_NNS obtained_VBN for_IN the_DT WGA_NNP DNA_NNP
+        agreed_VBD in_IN every_DT instance_NN with_IN the_DT known_VBN genotypes_NNS
+        determined_VBN by_IN RFLP_NNP ._. WGA_NNP product_NN should_MD also_RB be_VB compatible_JJ
+        with_IN other_JJ genotyping_VBG assays_NNS where_WRB better_JJR results_NNS can_MD be_VB
+        obtained_VBN using_VBG more_JJR target_NN DNA_NNP ._.
+        Many_JJ aspects_NNS of_IN probe_NN design_NN are_VBP open_JJ to_TO manipulation_NN ,_,
+        and_CC in_IN practice_NN probes_NNS can_MD be_VB successfully_RB designed_VBN for_IN
+        most_JJS target_NN sequences_NNS of_IN interest_NN ._. Pickering_NNP 
+        et_CC al_NN ._. demonstrated_VBD a_DT 95_CD %_NN success_NN
+        rate_NN in_IN designing_VBG OCPs_NNP for_IN 99_CD different_JJ targets_NNS on_IN the_DT
+        first_JJ attempt_NN [_NN 3_CD ]_NN ._. Probes_NNP can_MD be_VB designed_VBN against_IN either_DT
+        strand_NN of_IN genomic_JJ DNA_NNP ,_, and_CC the_DT backbone_NN portion_NN can_MD also_RB be_VB
+        varied_VBN ._. Optimization_NNP of_IN T_NN 
+        m_NN parameters_NNS ,_, and_CC sequence_NN allows_VBZ rapid_JJ
+        design_NN of_IN OCPs_NNP with_IN a_DT high_JJ degree_NN of_IN success_NN ._.
+        The_DT degree_NN to_TO which_WDT a_DT genotyping_VBG assay_NN needs_VBZ to_TO be_VB
+        optimized_JJ depends_VBZ in_IN part_NN on_IN the_DT purpose_NN of_IN the_DT assay_NN ._. A_DT
+        genotyping_VBG system_NN intended_VBN for_IN diagnostic_JJ purposes_NNS needs_VBZ to_TO
+        meet_VB the_DT highest_JJS standards_NNS of_IN accuracy_NN ,_, robustness_NNS ,_, and_CC
+        throughput_NN ,_, as_IN compared_VBN to_TO a_DT system_NN that_WDT is_VBZ intended_VBN solely_RB
+        for_IN research_NN purposes_NNS ._. In_IN recognition_NN of_IN the_DT expectation_NN
+        that_IN 100_CD %_NN accuracy_NN is_VBZ a_DT requirement_NN ,_, even_RB under_IN suboptimal_NN
+        conditions_NNS ,_, the_DT assays_NNS developed_VBN for_IN the_DT targets_NNS in_IN this_DT
+        report_NN have_VBP undergone_VBN extensive_JJ optimization_NN to_TO maximize_VB
+        accuracy_NN even_RB under_IN less_JJR than_IN optimal_NN conditions_NNS ._. As_IN a_DT
+        result_NN ,_, the_DT concentrations_NNS of_IN primers_NNS ,_, probes_NNS and_CC
+        polymerase_NN vary_VBP between_IN assays_NNS ._. After_IN determining_VBG the_DT best_JJS
+        conditions_NNS for_IN each_DT individual_JJ genotyping_VBG assay_NN ,_, the_DT
+        expectation_NN is_VBZ that_IN these_DT conditions_NNS would_MD be_VB the_DT best_JJS
+        possible_JJ for_IN genotyping_VBG large_JJ numbers_NNS of_IN samples_NNS with_IN high_JJ
+        accuracy_NN ._. The_DT critical_JJ nature_NN of_IN the_DT information_NN derived_VBN
+        from_IN the_DT output_NN of_IN the_DT assay_NN justifies_VBZ the_DT extra_JJ
+        optimization_NN effort_NN ._. To_TO minimize_VB the_DT potential_NN for_IN error_NN ,_,
+        the_DT accuracy_NN for_IN a_DT single_JJ assay_NN was_VBD compared_VBN to_TO the_DT accuray_NN
+        for_IN the_DT same_JJ assay_NN performed_VBN in_IN triplicate_NN ._. Depending_VBG on_IN
+        the_DT assay_NN requirements_NNS ,_, the_DT level_NN of_IN accuracy_NN can_MD be_VB
+        selected_VBN by_IN increasing_VBG or_CC decreasing_VBG the_DT number_NN of_IN repeats_NNS ._.
+        The_DT demonstration_NN that_IN high_JJ levels_NNS of_IN input_NN genomic_JJ DNA_NNP
+        improve_VB robustness_NNS of_IN genotyping_VBG results_NNS is_VBZ paralleled_JJ by_IN
+        PCR_NNP results_NNS ._. WGA_NNP can_MD be_VB used_VBN to_TO generate_VB sufficient_JJ DNA_NNP for_IN
+        genotyping_VBG using_VBG large_JJ quantities_NNS of_IN template_NN ._. The_DT cost_NN of_IN
+        performing_VBG WGA_NNP is_VBZ offset_VBN by_IN the_DT fact_NN that_DT sample_NN prep_NN is_VBZ
+        unnecessary_JJ ;_: WGA_NNP product_NN can_MD be_VB performed_VBN directly_RB on_IN crude_NN
+        blood_NN sample_NN and_CC yields_NNS enough_RB DNA_NNP for_IN dozens_NNS or_CC hundreds_NNS
+        of_IN genotyping_VBG reactions_NNS [_NN 11_CD ]_NN ._. Under_IN different_JJ
+        circumstances_NNS ,_, it_PRP may_MD be_VB necessary_JJ to_TO rapidly_RB generate_VB
+        assays_NNS for_IN a_DT large_JJ number_NN of_IN SNPs_NNP ._. For_IN this_DT ,_, the_DT emphasis_NN
+        could_MD be_VB placed_VBN on_IN optimization_NN of_IN assay_NN design_NN ._. Amounts_NNP of_IN
+        input_NN DNA_NNP ,_, primers_NNS and_CC polymerase_NN could_MD be_VB standardized_JJ ,_,
+        rapidly_RB yielding_VBG accurate_JJ genotyping_VBG assays_NNS but_CC without_IN the_DT
+        highest_JJS accuracy_NN under_IN suboptimal_NN conditions_NNS ._. The_DT process_NN
+        of_IN OCP_NNP ligation_NN followed_VBN by_IN ERCA_NNP has_VBZ been_VBN designed_VBN such_JJ
+        that_IN genomic_JJ DNA_NNP can_MD be_VB genotyped_JJ directly_RB in_IN less_JJR than_IN an_DT
+        hour_NN ._. Hundreds_NNS of_IN individual_JJ samples_NNS were_VBD genotyped_JJ with_IN
+        over_IN 99_CD %_NN accuracy_NN ._. Accurate_NNP genotyping_VBG was_VBD demonstrated_VBN for_IN
+        both_DT genomic_JJ DNA_NNP and_CC whole_JJ genome_NN amplified_VBN DNA_NNP ._. Isothermal_NNP
+        exponential_NN amplification_NN produces_VBZ a_DT fluorescent_NN signal_NN
+        from_IN ligated_JJ OCP_NNP using_VBG nanomolar_NN amounts_NNS of_IN probe_NN ._. Because_IN
+        OCP_NNP ligation_NN /_NN ERCA_NNP does_VBZ not_RB rely_VB on_IN thermal_JJ cycling_NN for_IN
+        amplification_NN ,_, amplification_NN kinetics_NNS are_VBP not_RB limited_VBN by_IN
+        cycling_VBG rate_NN ._. The_DT exponential_NN nature_NN of_IN the_DT reaction_NN
+        produces_VBZ millions_NNS of_IN fold_VB amplification_NN in_IN as_RB little_JJ as_IN 20_CD
+        minutes_NNS ._. Output_NN can_MD be_VB read_VBN on_IN a_DT fluorescent_NN plate_NN reader_NN ,_,
+        real_JJ time_NN PCR_NNP instrument_NN ,_, fluorescent_NN imager_NN ,_, or_CC other_JJ
+        device_NN equipped_VBN with_IN the_DT ability_NN to_TO measure_VB fluorescent_NN
+        signals_NNS ._. OCP_NNP ligation_NN /_NN ERCA_NNP probes_NNS can_MD be_VB multiplexed_JJ ._. OCP_NNP
+        ligation_NN and_CC ERCA_NNP reactions_NNS for_IN each_DT SNP_NNP target_NN are_VBP
+        performed_VBN in_IN a_DT single_JJ tube_NN ,_, and_CC are_VBP easily_RB scalable_JJ from_IN 96_CD
+        to_TO 384_CD well_RB formats_NNS ,_, making_VBG OCP_NNP ligation_NN /_NN ERCA_NNP ideal_JJ for_IN
+        high_JJ throughput_NN screening_NN ._.
+      
+      
+        Methods_NNP
+        
+          Hairpin_NNP OCP_NNP Design_NNP
+          All_DT oligomers_NNS were_VBD ordered_VBN from_IN Integrated_NNP DNA_NNP
+          Technologies_NNPS ,_, Inc_NNP ._. (_( Coralville_NNP ,_, IA_NNP )_) ._. Sequences_NNP of_IN
+          oligomers_NNS are_VBP shown_VBN in_IN Table_NNP 1_CD ._. All_DT OCPs_NNP were_VBD 5_CD '_POS
+          phosphorylated_JJ and_CC gel_NN purified_JJ ._. OCPs_NNP were_VBD designed_VBN such_JJ
+          that_IN the_DT 3_CD '_POS terminal_NN nucleotide_NN annealed_JJ opposite_JJ the_DT
+          mutation_NN of_IN interest_NN (_( Figure_NN 1_LS )_) ._. The_DT T_NN 
+          m_NN for_IN the_DT 3_CD '_POS arm_NN of_IN the_DT probe_NN annealed_JJ
+          to_TO target_NN was_VBD designed_VBN to_TO be_VB between_IN 60_CD -_: 65_CD °_NN C_NNP ._. The_DT 5_CD '_POS arm_NN
+          of_IN all_DT OCPs_NNP annealed_JJ to_TO target_VB upstream_RB of_IN the_DT mutation_NN
+          and_CC was_VBD designed_VBN to_TO have_VB a_DT T_NN 
+          m_NN of_IN approximately_RB 70_CD °_NN C_NNP ._. Oligo_NNP 6_CD
+          (_( Molecular_NNP Biology_NNP Insights_NNPS ,_, Inc_NNP ._. ,_, Cascade_NNP ,_, CO_NNP )_) was_VBD used_VBN
+          to_TO calculate_VB T_NN 
+          m_NN values_NNS ._.
+          To_TO reduce_VB or_CC eliminate_VB the_DT artifactual_NN amplification_NN
+          of_IN unligated_JJ OCPs_NNP ,_, a_DT hairpin_NN was_VBD designed_VBN into_IN the_DT 3_CD '_POS end_NN
+          of_IN the_DT OCP_NNP ,_, with_IN approximately_RB 10_CD bases_NNS in_IN the_DT stem_NN and_CC
+          10_CD in_IN the_DT loop_NN ._. The_DT hairpin_NN was_VBD calculated_VBN to_TO be_VB stable_JJ
+          at_IN 60_CD °_NN C_NNP in_IN the_DT context_NN of_IN the_DT entire_JJ OCP_NNP using_VBG the_DT DNA_NNP
+          folding_VBG server_NN at_IN Michael_NNP Zucker_NNP 's_POS website_NN
+          http_NN :_: /_NN /_NN bioinfo_NN ._. math_NN ._. rpi_NN ._. edu_NN /_NN ~_NN zukerm_NN /_NN OCP_NNP sequence_NN was_VBD
+          chosen_VBN such_JJ that_IN the_DT hairpin_NN was_VBD the_DT only_RB stable_JJ
+          structure_NN in_IN the_DT OCP_NNP ,_, with_IN a_DT ΔG_NN of_IN -_: 0_CD ._. 5_LS to_TO -_: 1_CD ._. 5_LS
+          kcal_NN /_NN mol_NN ._.
+        
+        
+          Generic_NNP P_NN 1_CD and_CC P_NN 2_CD design_NN
+          ERCA_NNP primers_NNS P_NN 1_CD and_CC P_NN 2_CD were_VBD chosen_VBN using_VBG Oligo_NNP 6_CD ._.
+          These_DT were_VBD generic_JJ primer_NN sequences_NNS ,_, and_CC could_MD be_VB used_VBN to_TO
+          amplify_VB any_DT circle_NN sequence_NN ._. First_LS ,_, 10_CD -_: 20_CD kb_NN of_IN randomly_RB
+          generated_VBN DNA_NNP sequence_NN was_VBD scanned_JJ for_IN primers_NNS using_VBG
+          settings_NNS limiting_VBG 3_CD '_POS dimer_NN ΔG_NN to_TO -_: 1_CD ._. 0_CD kcal_NN /_NN mol_NN ,_, 3_CD '_POS dimer_NN
+          length_NN to_TO 3_CD ,_, 3_CD '_POS terminal_NN stability_NN range_NN -_: 5_CD ._. 5_LS to_TO -_: 8_CD ._. 0_CD
+          kcal_NN /_NN mol_NN ,_, GC_NNP clamp_VB stability_NN to_TO -_: 10_CD kcal_NN /_NN mol_NN ,_, no_DT
+          acceptable_JJ loop_NN ,_, T_NN 
+          m_NN range_NN 52_CD ._. 1_LS to_TO 56_CD ._. 2_LS °_NN C_NNP ._. Compatible_NNP
+          primers_NNS were_VBD selected_VBN using_VBG the_DT multiplex_NN function_NN of_IN
+          Oligo_NNP 6_CD ._. A_DT subset_NN of_IN these_DT compatible_JJ primers_NNS was_VBD
+          utilized_JJ as_IN generic_JJ P_NN 1_CD and_CC P_NN 2_CD primers_NNS (_( see_VB Table_NNP 1_LS )_) ._. ERCA_NNP
+          P_NN 1_CD primers_NNS were_VBD labeled_VBN with_IN FAM_NNP (_( if_IN paired_VBN with_IN the_DT
+          normal_JJ OCP_NNP )_) or_CC 5_CD -_: Cy_NNP 3_CD (_( if_IN paired_VBN with_IN the_DT mutant_JJ OCP_NNP )_) and_CC
+          were_VBD RP-HPLC_NNP purified_JJ ._. P_NN 2_CD primers_NNS were_VBD purified_JJ by_IN
+          desalting_VBG ._.
+        
+        
+          Allele_NNP Specific_JJ ERCA_NNP primers_NNS
+          The_DT sequence_NN of_IN these_DT primers_NNS was_VBD chosen_VBN from_IN the_DT
+          target_NN specific_JJ 5_CD '_POS and_CC 3_CD '_POS -_: arms_NNS of_IN the_DT OCP_NNP ,_, either_CC
+          complementary_JJ to_TO the_DT OCP_NNP (_( 5_CD '_POS -_: arm_NN )_) or_CC the_DT exact_JJ sequence_NN
+          of_IN the_DT OCP_NNP (_( 3_CD '_POS -_: arm_NN )_) ._. These_DT primers_NNS annealed_JJ to_TO both_DT the_DT
+          normal_JJ and_CC mutant_JJ OCPs_NNP ._. The_DT sequences_NNS of_IN these_DT allele_NN
+          specific_JJ primers_NNS are_VBP shown_VBN in_IN Table_NNP 1_CD ._. Allele_NNP specific_JJ
+          primers_NNS were_VBD desalted_JJ after_IN synthesis_NN ._.
+        
+        
+          Q-PNA_NNP
+          Exponential_NNP amplification_NN of_IN circularized_JJ OCP_NNP (_( see_VB
+          Figure_NN 2_LS )_) was_VBD accomplished_VBN using_VBG generic_JJ primers_NNS P_NN 1_CD and_CC
+          P_NN 2_CD ,_, along_IN with_IN allele_NN specific_JJ primer_NN (_( s_VBZ )_) ._. Each_DT P_NN 1_CD primer_NN
+          contained_VBD a_DT universal_JJ 13_CD base_NN 5_CD '_POS -_: tail_NN (_( see_VB Table_NNP 1_LS )_) with_IN
+          a_DT fluorescent_NN dye_NN at_IN the_DT 5_CD '_POS -_: end_NN ._. Fluorescence_NNP was_VBD
+          quenched_JJ in_IN unincorporated_JJ primers_NNS by_IN the_DT annealing_VBG of_IN a_DT
+          13_CD -_: residue_NN PNA_NNP molecule_NN ,_, Q-PNA-_NNP 13_CD (_( Applied_NNP
+          Biosystems_NNP /_NN Boston_NNP Probes_NNP ,_, Bedford_NNP ,_, MA_NNP )_) ._. The_DT sequence_NN of_IN
+          Q-PNA-_NNP 13_CD is_VBZ Ac-_NNP X-OO-TGA-TTG-CGA-ATG-A-L_NNP ys_NNS (_( Dabcyl_NNP )_) ._. The_DT
+          C-_NNP terminal_NN dabcyl_NN was_VBD positioned_VBN so_IN that_IN it_PRP was_VBD proximal_NN
+          to_TO the_DT 5_CD '_POS -_: fluorescent_NN moiety_NN on_IN the_DT DNA_NNP reporter_NN ,_,
+          quenching_VBG fluorescence_NN when_WRB the_DT reporter_NN and_CC Q-PNA-_NNP 13_CD
+          were_VBD annealed_JJ ,_, as_IN shown_VBN in_IN Figure_NN 2_CD ._. After_IN P_NN 1_CD primer_NN is_VBZ
+          incorporated_VBN into_IN ERCA_NNP product_NN ,_, Q-PNA_NNP is_VBZ displaced_VBN ,_,
+          producing_VBG a_DT fluorescent_NN signal_NN ._.
+        
+        
+          Genomic_NNP DNA_NNP
+          Genomic_NNP DNA_NNP samples_NNS were_VBD purchased_VBN from_IN Coriell_NNP Cell_NNP
+          Repositories_NNP ,_, Camden_NNP ,_, NJ_NNP ._. Human_NNP Variation_NNP Panel_NNP ,_,
+          Caucasian_NNP panel_NN of_IN 100_CD ,_, Reference_NNP #_# HD_NNP 100_CD CAU_NNP ,_, was_VBD used_VBN as_IN
+          non-mutant_JJ controls_NNS and_CC for_IN general_JJ screening_NN purposes_NNS ._.
+          Human_JJ samples_NNS containing_VBG specific_JJ mutations_NNS were_VBD also_RB
+          purchased_VBN from_IN Coriell_NNP :_: Factor_NN V_NNP Leiden_NNP mutation_NN
+          (_( heterozygous_JJ NA_NNP 14642_CD and_CC homozygous_JJ NA_NNP 14899_CD )_) ;_:
+          Hemochromatosis_NNP C_NNP 282_CD Y_NNP (_( heterozygous_JJ NA_NNP 14642_CD ,_, homozygous_JJ
+          NA_NNP 14620_CD )_) ;_: and_CC Hemochromatosis_NNP H_NNP 63_CD D_NNP (_( heterozygous_JJ NA_NNP 14641_CD
+          and_CC homozygous_JJ NA_NNP 13591_CD )_) ;_: Factor_NN II_NNP Prothrombin_NNP mutation_NN
+          (_( heterozygous_JJ NA_NNP 16028_CD and_CC homozygous_JJ NA_NNP 16000_CD )_) ._. Other_JJ
+          patient_NN DNA_NNP samples_NNS were_VBD genotyped_JJ using_VBG RFLP_NNP ,_, and_CC an_DT
+          aliquot_NN of_IN the_DT purified_JJ DNA_NNP was_VBD subsequently_RB used_VBN either_CC
+          directly_RB in_IN genotyping_VBG reactions_NNS ,_, or_CC used_VBD after_IN Whole_JJ
+          Genome_NNP Amplification_NNP (_( WGA_NNP )_) ._.
+        
+        
+          Whole_JJ Genome_NNP Amplification_NNP (_( WGA_NNP )_) of_IN genomic_JJ DNA_NNP
+          samples_NNS
+          For_IN some_DT rare_JJ genotypes_NNS ,_, it_PRP was_VBD only_RB possible_JJ to_TO
+          obtain_VB a_DT few_JJ nanograms_NNS of_IN sample_NN ,_, insufficient_JJ for_IN more_JJR
+          than_IN one_CD genotyping_VBG reaction_NN ._. As_IN a_DT result_NN ,_, the_DT rare_JJ
+          samples_NNS were_VBD subjected_VBN to_TO whole_JJ genome_NN amplification_NN
+          (_( WGA_NNP )_) ,_, which_WDT yielded_VBD enough_RB DNA_NNP for_IN 200_CD or_CC more_JJR
+          reactions_NNS ._. WGA_NNP was_VBD performed_VBN as_IN described_VBN previously_RB [_NN 10_CD
+          ]_NN ._. Briefly_NNP ,_, 10_CD ng_NN of_IN each_DT individual_JJ genomic_JJ sample_NN was_VBD
+          amplified_VBN into_IN 40_CD μg_NN of_IN product_NN by_IN adding_VBG 99_CD μl_NN of_IN
+          amplification_NN mix_NN and_CC incubating_VBG at_IN 30_CD °_NN C_NNP for_IN 6_CD hours_NNS ._.
+          Quality_JJ control_NN assays_NNS demonstrating_VBG that_IN whole_JJ genome_NN
+          amplification_NN was_VBD successful_JJ were_VBD performed_VBN for_IN locus_JJ 979_CD
+          and_CC 1004_CD as_IN described_VBN [_NN 10_CD ]_NN ,_, and_CC amplified_VBN DNA_NNP was_VBD used_VBN
+          directly_RB in_IN genotyping_VBG reactions_NNS at_IN the_DT same_JJ
+          concentration_NN as_IN the_DT original_JJ genomic_JJ DNA_NNP ,_, typically_RB 200_CD
+          ng_NN /_NN reaction_NN ._.
+        
+        
+          Genotyping_NNP reactions_NNS
+          50_CD ng_NN to_TO 1_CD μg_NN of_IN either_DT genomic_JJ DNA_NNP or_CC WGA_NNP genomic_JJ
+          sample_NN was_VBD mixed_VBN with_IN OCP_NNP (_( typically_RB 0_CD ._. 5_CD nM_NN final_JJ
+          concentration_NN )_) and_CC 0_CD ._. 5_CD unit_NN of_IN Ampligase_NNP (_( Epicentre_NNP
+          Technologies_NNPS ,_, Madison_NNP ,_, WI_NNP )_) in_IN 1_CD x_SYM Ampligase_NNP buffer_NN
+          (_( Epicentre_NNP )_) ,_, for_IN a_DT total_JJ volume_NN of_IN 10_CD μl_NN ._. The_DT reaction_NN
+          was_VBD heated_VBN to_TO 95_CD °_NN C_NNP for_IN 10_CD seconds_NNS ,_, and_CC cooled_VBD to_TO 63_CD -_: 68_CD °_NN C_NNP
+          for_IN 5_CD -_: 20_CD minutes_NNS ,_, during_IN which_WDT time_NN OCP_NNP annealed_JJ to_TO
+          genomic_JJ target_NN and_CC was_VBD circularized_JJ by_IN ligase_NN ._. The_DT
+          reaction_NN was_VBD subsequently_RB heated_VBN to_TO 95_CD °_NN C_NNP for_IN 10_CD minutes_NNS
+          to_TO release_VB ligated_JJ circles_NNS from_IN genomic_JJ DNA_NNP ._. The_DT reaction_NN
+          was_VBD cooled_VBN to_TO 4_CD °_NN C_NNP ,_, and_CC 20_CD μl_NN ERCA_NNP reaction_NN mix_NN was_VBD added_VBN
+          (_( typically_RB 16_CD units_NNS BST_NNP polymerase_NN (_( New_NNP England_NNP Biolabs_NNP ,_,
+          Beverly_NNP ,_, MA_NNP )_) ,_, 6_CD mM_NN dNTPs_NNS ,_, 0_CD ._. 5_CD μM_NN P_NN 1_CD ,_, 0_CD ._. 5_CD μM_NN P_NN 2_CD ,_, 4_CD μM_NN
+          Q-PNA_NNP ,_, 7_CD ._. 5_CD μM_NN TMAO_NNP in_IN 1_CD x_SYM ThermoPol_NNP Buffer_NNP II_NNP ,_, all_DT
+          concentrations_NNS final_JJ )_) ._. Reactions_NNP were_VBD incubated_JJ at_IN 60_CD °_NN C_NNP
+          for_IN 1_CD hour_NN in_IN an_DT I-C_NNP ycler_NN (_( BioRad_NNP ,_, Hercules_NNP ,_, CA_NNP )_) reading_VBG
+          both_DT FAM_NNP and_CC Cy_NNP 3_CD channels_NNS ._. Signals_NNP typically_RB appeared_VBD
+          after_IN 10_CD -_: 20_CD minutes_NNS ._.
+        
+        
+          Specific_JJ reaction_NN component_NN concentrations_NNS
+          
+            FV_NNP ligation_NN reaction_NN conditions_NNS
+            0_CD ._. 5_CD nM_NN wt_NN OCP_NNP and_CC 0_CD ._. 5_CD nM_NN mut_NN OCP_NNP (_( final_JJ
+            concentration_NN )_) ;_: 0_CD ._. 5_CD U_NNP ampligase_NN ._.
+          
+          
+            FV_NNP ERCA_NNP reaction_NN conditions_NNS
+            0_CD ._. 5_CD μM_NN WT_NNP P_NN 1_CD ;_: 0_CD ._. 5_CD μM_NN mutant_JJ P_NN 1_CD ;_: 0_CD ._. 75_CD μM_NN P_NN 2_CD ;_: 0_CD ._. 75_CD μM_NN
+            5_CD '_POS -_: allele_NN specific_JJ primer_NN ;_: 0_CD ._. 75_CD μM_NN 3_CD '_POS -_: allele_NN specific_JJ
+            primer_NN ;_: 4_CD μM_NN PNA_NNP (_( final_JJ concentrations_NNS )_) ;_: 24_CD -_: 32_CD U_NNP DNA_NNP
+            polymerase_NN ._.
+          
+          
+            FII_NNP ligation_NN reaction_NN conditions_NNS
+            0_CD ._. 5_CD nM_NN wt_NN OCP_NNP and_CC 0_CD ._. 5_CD nM_NN mut_NN OCP_NNP (_( final_JJ
+            concentration_NN )_) ;_: 0_CD ._. 5_CD U_NNP ampligase_NN ._.
+          
+          
+            FII_NNP ERCA_NNP reaction_NN conditions_NNS
+            0_CD ._. 5_CD μM_NN WT_NNP P_NN 1_CD ;_: 0_CD ._. 7_CD μM_NN mutant_JJ P_NN 1_CD ;_: 0_CD ._. 9_CD μM_NN P_NN 2_CD ;_: 0_CD ._. 4_CD μM_NN
+            3_CD '_POS -_: allele_NN specific_JJ primer_NN ;_: 4_CD μM_NN PNA_NNP (_( final_JJ
+            concentrations_NNS )_) ;_: 16_CD U_NNP DNA_NNP polymerase_NN ._.
+          
+          
+            Hemochromatosis_NNP H_NNP 63_CD ligation_NN reaction_NN
+            conditions_NNS
+            0_CD ._. 1_CD nM_NN wt_NN OCP_NNP and_CC 1_CD ._. 2_CD nM_NN mut_NN OCP_NNP (_( final_JJ
+            concentration_NN )_) ;_: 0_CD ._. 5_CD U_NNP ampligase_NN ._.
+          
+          
+            Hemochromatosis_NNP H_NNP 63_CD ERCA_NNP reaction_NN
+            conditions_NNS
+            0_CD ._. 4_CD μM_NN WT_NNP P_NN 1_CD ;_: 0_CD ._. 5_CD μM_NN mutant_JJ P_NN 1_CD ;_: 0_CD ._. 75_CD μM_NN P_NN 2_CD ;_: 0_CD ._. 5_CD μM_NN
+            5_CD '_POS -_: allele_NN specific_JJ primer_NN ;_: 0_CD ._. 5_CD μM_NN 3_CD '_POS -_: allele_NN specific_JJ
+            primer_NN ;_: 4_CD μM_NN PNA_NNP (_( final_JJ concentrations_NNS )_) ;_: 16_CD U_NNP DNA_NNP
+            polymerase_NN ._.
+          
+          
+            Hemochromatosis_NNP C_NNP 282_CD ligation_NN reaction_NN
+            conditions_NNS
+            0_CD ._. 1_CD nM_NN wt_NN OCP_NNP and_CC 1_CD ._. 2_CD nM_NN mut_NN OCP_NNP (_( final_JJ
+            concentration_NN )_) ;_: 0_CD ._. 5_CD U_NNP ampligase_NN ._.
+          
+          
+            Hemochromatosis_NNP C_NNP 282_CD ERCA_NNP reaction_NN
+            conditions_NNS
+            0_CD ._. 4_CD μM_NN WT_NNP P_NN 1_CD ;_: 0_CD ._. 5_CD μM_NN mutant_JJ P_NN 1_CD ;_: 0_CD ._. 75_CD μM_NN P_NN 2_CD ;_: 0_CD ._. 5_CD μM_NN
+            5_CD '_POS -_: allele_NN specific_JJ primer_NN ;_: 0_CD ._. 5_CD μM_NN 3_CD '_POS -_: allele_NN specific_JJ
+            primer_NN ;_: 4_CD μM_NN PNA_NNP (_( final_JJ concentrations_NNS )_) ;_: 16_CD U_NNP DNA_NNP
+            polymerase_NN ._.
+          
+        
+        
+          Determination_NNP of_IN genotype_NN
+          
+            Real_NNP Time_NNP OCP_NNP ligation_NN /_NN ERCA_NNP
+            The_DT genotype_NN for_IN each_DT sample_NN was_VBD determined_VBN by_IN
+            amplitude_NN of_IN amplification_NN ._. The_DT average_JJ amplification_NN
+            threshold_NN time_NN for_IN all_DT amplified_VBN reactions_NNS was_VBD
+            determined_VBN using_VBG the_DT I-C_NNP ycler_NN software_NN ._. Fluorescence_NNP
+            traces_NNS were_VBD normalized_JJ using_VBG early_JJ cycles_NNS as_IN a_DT
+            baseline_NN ,_, and_CC a_DT threshold_NN value_NN was_VBD determined_VBN ,_,
+            typically_RB at_IN 10_CD -_: fold_VB above_IN the_DT average_JJ standard_JJ
+            deviation_NN of_IN the_DT baseline_NN values_NNS ._. Threshold_NNP cycle_NN for_IN
+            each_DT trace_VB was_VBD measured_VBN at_IN the_DT point_NN where_WRB the_DT trace_VB
+            crossed_VBN the_DT threshold_NN value_NN ._. Threshold_NNP cycle_NN values_NNS
+            fell_VBD into_IN three_CD distinct_JJ clusters_NNS ,_, one_CD each_DT for_IN
+            homozygous_JJ normal_JJ ,_, heterozygous_JJ ,_, and_CC homozygous_JJ mutant_JJ ._.
+            Reactions_NNP with_IN times_NNS more_JJR than_IN 2_CD standard_JJ deviations_NNS
+            beyond_IN the_DT mean_JJ cluster_NN value_NN were_VBD considered_VBN failures_NNS
+            and_CC repeated_VBN ._. In_IN general_JJ ,_, amplification_NN reactions_NNS with_IN
+            an_DT increase_NN of_IN less_JJR than_IN 300_CD units_NNS were_VBD scored_VBN as_IN
+            negative_NN ._. Any_DT reaction_NN with_IN amplification_NN of_IN 300_CD
+            fluorescence_NN units_NNS above_IN baseline_NN or_CC greater_JJR was_VBD scored_VBN
+            as_IN positive_NN ._. Reactions_NNP with_IN fluorescent_NN units_NNS between_IN
+            101_CD -_: 299_CD above_IN baseline_NN were_VBD repeated_VBN ._. Any_DT reaction_NN
+            where_WRB signal_NN was_VBD baseline_NN for_IN both_DT alleles_NNS was_VBD
+            repeated_VBN ._.
+          
+          
+            End_NNP Point_NNP OCP_NNP ligation_NN /_NN ERCA_NNP
+            ERCA_NNP reactions_NNS were_VBD allowed_VBN to_TO incubate_NN at_IN 60_CD °_NN C_NNP
+            until_IN the_DT reaction_NN was_VBD expected_VBN to_TO be_VB complete_JJ (_( 30_CD to_TO
+            40_CD minutes_NNS ,_, depending_VBG on_IN the_DT assay_NN )_) ._. After_IN the_DT reaction_NN
+            was_VBD complete_JJ ,_, the_DT results_NNS could_MD be_VB read_VBN at_IN any_DT time_NN ._.
+            Some_DT reactions_NNS were_VBD allowed_VBN to_TO remain_VB at_IN room_NN
+            temperature_NN overnight_JJ ,_, some_DT were_VBD stored_VBN at_IN 4_CD °_NN C_NNP ,_, some_DT
+            were_VBD frozen_VBN at_IN -_: 20_CD °_NN C_NNP ._. In_IN each_DT case_NN ,_, the_DT reaction_NN was_VBD
+            protected_VBN from_IN light_JJ to_TO prevent_VB photobleaching_VBG of_IN the_DT
+            fluorescent_NN reporters_NNS ._. The_DT genotype_NN of_IN each_DT sample_NN was_VBD
+            determined_VBN automatically_RB using_VBG a_DT modified_VBN fuzzy_JJ 
+            c_SYM -_: means_VBZ clustering_VBG algorithm_NN [_NN 3_CD
+            ]_NN ,_, which_WDT groups_NNS the_DT data_NNS into_IN three_CD genotypes_NNS plus_CC a_DT
+            negative_JJ control_NN ,_, and_CC assigns_VBZ a_DT confidence_NN level_NN to_TO
+            each_DT genotyping_VBG call_NN from_IN 0_CD (_( not_RB in_IN cluster_NN )_) to_TO 1_CD (_( 100_CD %_NN
+            certainty_NN that_DT point_NN belongs_VBZ to_TO cluster_NN )_) ._.
+          
+        
+      
+      
+        Authors_NNP '_'' Contributions_NNP
+        OA_NNP contributed_VBD the_DT hairpin_NN OCP_NNP idea_NN and_CC performed_VBN
+        initial_JJ hairpin_NN OCP_NNP design_NN and_CC hairpin_NN folding_VBG experiments_NNS ,_,
+        and_CC edited_JJ the_DT manuscript_NN ._. CB_NNP designed_VBD and_CC tested_VBN FVL_NNP OCPs_NNP
+        and_CC participated_VBD in_IN generating_NN figures_NNS and_CC writing_VBG the_DT
+        manuscript_NN ._. WS_NNP performed_VBD Factor_NN II_NNP OCP_NNP genotyping_VBG ._. MW_NNP
+        designed_VBD H_NNP 63_CD D_NNP and_CC C_NNP 282_CD probes_NNS and_CC performed_VBN H_NNP 63_CD D_NNP OCP_NNP
+        genotyping_VBG ._. JD_NNP assisted_VBN with_IN FVL_NNP genotyping_VBG ._. JB_NNP assisted_VBN
+        with_IN OCP_NNP model_NN validation_NN ._. AFF_NNP and_CC SH_NNP assisted_VBN in_IN OCP_NNP
+        design_NN and_CC troubleshooting_VBG ._. ZS_NNP ,_, YD_NNP ,_, XW_NNP performed_VBD WGA_NNP
+        amplifications_NNS of_IN genomic_JJ DNA_NNP ._. ME_NNP provided_VBD PNA_NNP idea_NN ,_, edited_JJ
+        manuscript_NN ._. PA_NNP participated_VBD in_IN editing_NN the_DT manuscript_NN ,_,
+        design_NN and_CC coordination_NN of_IN the_DT hairpin_NN OCP_NNP work_NN ._. RSL_NNP edited_JJ
+        manuscript_NN and_CC participated_VBD in_IN study_NN design_NN and_CC
+        coordination_NN ._. MD_NNP led_VBD study_NN design_NN and_CC coordination_NN ,_,
+        participated_VBD in_IN writing_VBG the_DT manuscript_NN ,_, designed_VBN and_CC
+        validated_JJ primers_NNS ,_, probes_NNS ._. All_DT authors_NNS read_VBP and_CC approved_VBD
+        the_DT manuscript_NN ._.
+      
+    
+  

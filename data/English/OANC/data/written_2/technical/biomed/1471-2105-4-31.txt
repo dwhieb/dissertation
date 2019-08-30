@@ -1,0 +1,499 @@
+
+  
+    
+      
+        Background_NNP
+        It_PRP is_VBZ not_RB uncommon_JJ in_IN many_JJ fields_NNS to_TO encounter_VB data_NNS
+        distributions_NNS that_WDT are_VBP skewed_VBN or_CC contain_VB outliers_NNS ._. In_IN those_DT
+        cases_NNS ,_, the_DT arithmetic_NN mean_NN may_MD not_RB be_VB an_DT appropriate_JJ
+        statistic_NN to_TO represent_VB the_DT center_NN of_IN location_NN of_IN the_DT data_NNS ._.
+        Alternative_NNP statistics_NNS with_IN less_JJR bias_NN are_VBP the_DT median_JJ and_CC
+        the_DT mode_NN ._. The_DT median_NN is_VBZ the_DT value_NN of_IN the_DT variable_NN ,_, in_IN an_DT
+        ordered_VBN array_NN ,_, which_WDT has_VBZ an_DT equal_JJ number_NN of_IN data_NNS points_NNS on_IN
+        either_DT side_NN ,_, whereas_IN the_DT mode_NN is_VBZ the_DT value_NN of_IN the_DT peak_NN of_IN
+        the_DT distribution_NN (_( Figure_NN 1_LS )_) ._. The_DT mode_NN is_VBZ biased_VBN the_DT least_JJS
+        by_IN outliers_NNS and_CC contaminants_NNS [_NN 1_CD 2_CD 3_CD ]_NN and_CC is_VBZ used_VBN commonly_RB
+        in_IN astronomy_NN [_NN 4_CD 5_CD ]_NN and_CC occasionally_RB in_IN other_JJ fields_NNS ,_,
+        including_VBG biology_NN [_NN 6_CD 7_CD 8_CD 9_CD 10_CD ]_NN ._. However_RB ,_, calculation_NN of_IN
+        the_DT mode_NN is_VBZ more_RBR difficult_JJ than_IN the_DT mean_NN or_CC median_JJ and_CC this_DT
+        has_VBZ limited_VBN its_PRP$ widespread_JJ application_NN ._.
+        For_IN discrete_JJ data_NNS involving_VBG a_DT relatively_RB small_JJ number_NN of_IN
+        possible_JJ values_NNS and_CC a_DT large_JJ number_NN of_IN data_NNS points_NNS ,_, the_DT mode_NN
+        is_VBZ easily_RB calculated_VBN as_IN the_DT most_RBS frequent_JJ value_NN ._. Otherwise_RB ,_,
+        the_DT most_RBS common_JJ mode_NN estimation_NN method_NN for_IN discrete_JJ or_CC
+        continuous_JJ data_NNS involves_VBZ construction_NN of_IN a_DT histogram_NN ._. The_DT
+        value_NN of_IN the_DT bin_NN with_IN the_DT greatest_JJS number_NN of_IN data_NNS points_NNS is_VBZ
+        the_DT mode_NN ,_, and_CC this_DT value_NN can_MD be_VB fine-tuned_JJ by_IN simple_JJ
+        interpolation_NN with_IN adjacent_JJ bins_NNS [_NN 11_CD ]_NN ._. The_DT major_JJ
+        drawback_NN of_IN the_DT histogram_NN method_NN is_VBZ that_IN different_JJ modes_NNS
+        can_MD be_VB obtained_VBN using_VBG different_JJ bin_NN sizes_NNS ,_, although_IN some_DT
+        stability_NN can_MD be_VB gained_VBN by_IN using_VBG the_DT mean_NN of_IN modes_NNS obtained_VBN
+        from_IN different_JJ bin_NN sizes_NNS ._. For_IN continuous_JJ data_NNS ,_, two_CD other_JJ
+        simple_JJ methods_NNS have_VBP been_VBN proposed_VBN ._. The_DT Dalenius_NNP method_NN [_NN 1_CD
+        ]_NN is_VBZ calculated_VBN by_IN selecting_VBG the_DT interval_NN with_IN the_DT maximum_NN
+        number_NN of_IN data_NNS points_NNS and_CC using_VBG the_DT mean_NN of_IN that_DT interval_NN
+        as_IN the_DT mode_NN ._. The_DT Grenander_NNP method_NN [_NN 12_CD ]_NN uses_VBZ two_CD
+        parameters_NNS ;_: one_CD defines_VBZ an_DT interval_NN by_IN limiting_VBG the_DT number_NN
+        of_IN data_NNS points_NNS in_IN the_DT interval_NN and_CC ,_, the_DT other_JJ defines_VBZ the_DT
+        weight_NN exponent_NN applied_VBN as_IN penalty_NN to_TO the_DT range_NN of_IN an_DT
+        interval_NN ._. However_RB ,_, the_DT former_JJ method_NN is_VBZ sensitive_JJ to_TO the_DT
+        size_NN of_IN the_DT interval_NN selected_VBD ,_, and_CC the_DT latter_JJ method_NN is_VBZ
+        sensitive_JJ to_TO outliers_NNS [_NN 13_CD ]_NN ._.
+        Several_JJ new_JJ mode_NN estimation_NN methods_NNS have_VBP been_VBN proposed_VBN
+        in_IN recent_JJ years_NNS ._. Two_CD related_VBN ones_NNS are_VBP the_DT Half-_NNP Sample_NNP Mode_NNP
+        (_( HSM_NNP )_) and_CC Half-_NNP Range_NNP Mode_NNP (_( HRM_NNP )_) [_NN 2_CD ]_NN ._. The_DT HSM_NNP uses_VBZ
+        shortest_JJS half_NN samples_NNS ,_, in_IN an_DT iterative_JJ fashion_NN ,_, to_TO estimate_VB
+        the_DT mode_NN ._. Similarly_RB ,_, the_DT HRM_NNP uses_VBZ densest_NN half_NN samples_NNS to_TO
+        estimate_VB the_DT mode_NN ._. Two_CD substantially_RB different_JJ methods_NNS are_VBP
+        the_DT Standard_NNP Parametric_NNP Mode_NNP (_( SPM_NNP )_) and_CC the_DT Robust_NNP
+        Parametric_NNP Mode_NNP (_( RPM_NNP )_) [_NN 13_CD ]_NN ._. These_DT methods_NNS transform_VB the_DT
+        data_NNS distribution_NN to_TO an_DT approximate_JJ normal_JJ and_CC use_VB the_DT
+        probability_NN density_NN function_NN of_IN the_DT approximated_JJ
+        distribution_NN to_TO estimate_VB the_DT mode_NN ._. The_DT SPM_NNP uses_VBZ the_DT mean_NN
+        and_CC standard_JJ deviation_NN ,_, whereas_IN the_DT RPM_NNP uses_VBZ the_DT median_JJ and_CC
+        the_DT median_JJ absolute_JJ deviation_NN as_IN the_DT average_NN and_CC variance_NN
+        parameters_NNS ._. Each_DT of_IN these_DT methods_NNS has_VBZ been_VBN tested_VBN in_IN
+        simulations_NNS with_IN normally_RB and_CC asymmetrically_RB distributed_VBN
+        data_NNS ,_, with_IN and_CC without_IN contamination_NN [_NN 13_CD ]_NN ._. The_DT results_NNS
+        showed_VBD that_IN different_JJ estimators_NNS perform_VBP better_JJR under_IN
+        different_JJ conditions_NNS ,_, but_CC that_IN the_DT RPM_NNP method_NN is_VBZ perhaps_RB
+        more_JJR versatile_NN than_IN the_DT others_NNS ._.
+        Non-normal_NNP distributions_NNS of_IN divergence_NN time_NN estimates_NNS
+        are_VBP often_RB obtained_VBN in_IN molecular_JJ clock_NN studies_NNS involving_VBG
+        many_JJ genes_NNS ,_, or_CC with_IN genomic_JJ data_NNS [_NN 7_CD 8_CD 14_CD ]_NN ._. Typically_RB
+        those_DT distributions_NNS are_VBP right_RB skewed_VBN ,_, or_CC have_VBP noticeable_JJ
+        outliers_NNS on_IN the_DT right_NN (_( older_JJR )_) side_NN ._. The_DT reason_NN for_IN such_JJ
+        non-normal_JJ distributions_NNS is_VBZ unclear_JJ ,_, but_CC they_PRP are_VBP
+        consistent_JJ with_IN contamination_NN from_IN paralogous_JJ comparisons_NNS
+        (_( those_DT involving_VBG gene_NN duplications_NNS )_) ,_, although_IN other_JJ sources_NNS
+        of_IN bias_NN have_VBP been_VBN proposed_VBN [_NN 15_CD ]_NN ._. (_( The_DT right-skewed_JJ
+        distributions_NNS seen_VBN in_IN some_DT plots_NNS of_IN evolutionary_JJ distances_NNS
+        are_VBP different_JJ ,_, because_IN they_PRP have_VBP not_RB been_VBN normalized_JJ by_IN a_DT
+        calibration_NN time_NN )_) ._. It_PRP is_VBZ sometimes_RB difficult_JJ to_TO distinguish_VB
+        a_DT paralogous_JJ comparison_NN from_IN an_DT orthologous_JJ comparison_NN
+        (_( speciation_NN event_NN )_) when_WRB comparing_VBG different_JJ species_NNS ,_,
+        because_IN of_IN gene_NN loss_NN and_CC incomplete_JJ taxon_NN sampling_VBG ._. For_IN
+        these_DT reasons_NNS ,_, the_DT mode_NN -_: as_IN estimated_VBN using_VBG the_DT histogram_NN
+        method_NN -_: has_VBZ been_VBN used_VBN to_TO avoid_VB the_DT bias_NN of_IN such_JJ outliers_NNS [_NN
+        7_CD ]_NN ._.
+        In_IN this_DT study_NN ,_, we_PRP extend_VBP the_DT analyses_NNS of_IN Bickel_NNP [_NN 13_CD ]_NN
+        to_TO assess_VB the_DT accuracy_NN and_CC precision_NN of_IN mode_NN estimation_NN
+        methods_NNS for_IN continuous_JJ data_NNS using_VBG simulations_NNS ._. We_PRP evaluate_VBP
+        additional_JJ types_NNS of_IN distributions_NNS ,_, the_DT effect_NN of_IN coarse_JJ
+        data_NNS (_( sub_NN peaks_NNS )_) ,_, and_CC additional_JJ levels_NNS and_CC distributions_NNS
+        of_IN contamination_NN ._. Finally_RB ,_, we_PRP applied_VBD these_DT different_JJ
+        estimators_NNS to_TO five_CD published_VBN data_NNS sets_NNS from_IN a_DT molecular_JJ
+        clock_NN study_NN ._. Our_PRP$ immediate_JJ goal_NN was_VBD to_TO determine_VB the_DT
+        optimal_NN method_NN for_IN use_NN with_IN molecular_JJ clock_NN data_NNS
+        (_( divergence_NN times_NNS )_) involving_VBG large_JJ numbers_NNS of_IN genes_NNS ,_,
+        although_IN the_DT results_NNS are_VBP generally_RB applicable_JJ ._.
+      
+      
+        Results_NNS
+        
+          General_JJ Patterns_NNS
+          The_DT mode_NN estimators_NNS were_VBD not_RB biased_VBN by_IN randomly_RB
+          distributed_VBN contamination_NN ,_, and_CC the_DT cauchy-distributed_JJ
+          contamination_NN produced_VBD similar_JJ results_NNS (_( albeit_IN at_IN higher_JJR
+          levels_NNS of_IN bias_NN )_) to_TO the_DT normally_RB distributed_VBN
+          contamination_NN ._. For_IN these_DT reasons_NNS ,_, we_PRP confine_NN our_PRP$
+          discussion_NN to_TO results_NNS using_VBG the_DT normally_RB distributed_VBN
+          contamination_NN ._. Also_RB ,_, simulations_NNS using_VBG contaminant_NN data_NNS
+          located_VBN close_RB to_TO the_DT true_JJ mode_NN (_( 67_CD thpercentile_NN )_) showed_VBD
+          that_IN mode_NN estimators_NNS performed_VBN poorly_RB under_IN those_DT
+          conditions_NNS ,_, as_IN noted_VBN elsewhere_RB [_NN 2_CD ]_NN ,_, especially_RB with_IN
+          the_DT normal_JJ and_CC coarse_JJ original_JJ distributions_NNS ._. In_IN those_DT
+          cases_NNS ,_, all_DT estimators_NNS (_( mean_VB and_CC modes_NNS )_) showed_VBD similar_JJ
+          bias_NN ,_, being_VBG equally_RB misled_VBN by_IN the_DT contamination_NN ._. On_IN the_DT
+          other_JJ hand_NN ,_, most_JJS mode_NN estimators_NNS performed_VBD better_JJR (_( lower_JJR
+          bias_NN )_) than_IN the_DT mean_NN or_CC median_JJ in_IN simulations_NNS using_VBG
+          contamination_NN located_VBN at_IN the_DT 99_CD thand_NN twice_RB the_DT 99_CD
+          thpercentiles_NNS ._. Because_IN we_PRP wished_VBD to_TO compare_VB the_DT
+          efficiencies_NNS of_IN the_DT various_JJ mode_NN estimators_NNS ,_, we_PRP further_JJ
+          confine_NN the_DT discussion_NN to_TO results_NNS using_VBG contamination_NN
+          centered_VBN at_IN twice_RB the_DT 99_CD thpercentile_NN (_( Figs_NNP ._. 1_LS ,_, 4_CD ,_, 5_CD ;_:
+          Table_NNP 1_LS )_) ._.
+          The_DT normal_JJ and_CC coarse_JJ distributions_NNS produced_VBD similar_JJ
+          results_NNS for_IN the_DT different_JJ mode_NN estimators_NNS ,_, although_IN HRM_NNP
+          showed_VBD the_DT least_JJS bias_NN as_IN contamination_NN level_NN increased_VBD
+          (_( Figure_NN 4_CD e_SYM ,_, 4_CD i_NNP )_) ._. RPM_NNP and_CC SPM_NNP showed_VBD an_DT increase_NN in_IN bias_NN in_IN
+          a_DT negative_JJ direction_NN (_( away_RB from_IN contamination_NN )_) as_IN
+          contamination_NN level_NN increased_VBD ._. However_RB ,_, those_DT two_CD
+          estimators_NNS did_VBD not_RB show_VB such_JJ negative_JJ bias_NN with_IN the_DT
+          lognormal_NN distribution_NN (_( Figure_NN 4_CD e_SYM )_) ._.
+          All_DT estimators_NNS of_IN central_JJ location_NN (_( mean_VB ,_, median_JJ ,_,
+          mode_NN )_) performed_VBN well_RB (_( had_VBD little_JJ or_CC no_DT bias_NN )_) when_WRB
+          contamination_NN was_VBD absent_JJ ,_, at_IN least_JJS with_IN the_DT normal_JJ and_CC
+          coarse_JJ original_JJ distributions_NNS ._. Bias_NNP increased_VBD as_IN the_DT
+          level_NN of_IN contamination_NN increased_VBN ,_, with_IN RPM_NNP and_CC SPM_NNP
+          exhibiting_VBG negative_JJ bias_NN at_IN higher_JJR levels_NNS in_IN the_DT normal_JJ
+          and_CC coarse_JJ original_JJ distributions_NNS (_( as_IN noted_VBN previously_RB )_) ._.
+          In_IN almost_RB all_DT cases_NNS (_( at_IN different_JJ levels_NNS of_IN
+          contamination_NN )_) ,_, the_DT mean_NN exhibited_VBN the_DT greatest_JJS bias_NN ,_,
+          followed_VBN by_IN the_DT median_JJ and_CC then_RB various_JJ mode_NN estimates_NNS ._.
+          The_DT HRM_NNP method_NN showed_VBD almost_RB no_DT bias_NN at_IN any_DT level_NN of_IN
+          contamination_NN and_CC original_JJ distribution_NN type_NN (_( Figure_NN 4_LS )_) ._.
+          However_RB ,_, the_DT highest_JJS levels_NNS of_IN contamination_NN (_( 40_CD %_NN )_)
+          produced_VBD a_DT spike_NN in_IN the_DT bias_NN and_CC variance_NN of_IN several_JJ mode_NN
+          estimators_NNS (_( especially_RB HRM_NNP )_) ,_, probably_RB because_IN the_DT
+          contamination_NN was_VBD a_DT significant_JJ peak_NN in_IN the_DT distribution_NN ,_,
+          competing_VBG with_IN the_DT true_JJ mode_NN ._. The_DT SPM_NNP method_NN generally_RB
+          produced_VBD the_DT highest_JJS bias_NN of_IN the_DT mode_NN estimators_NNS ,_, in_IN some_DT
+          cases_NNS even_RB performing_VBG more_RBR poorly_RB than_IN the_DT median_NN ._. These_DT
+          patterns_NNS also_RB are_VBP reflected_VBN in_IN rankings_NNS of_IN the_DT methods_NNS
+          (_( Table_NNP 1_LS )_) ._.
+        
+        
+          Bootstrapping_NNP
+          The_DT use_NN of_IN bootstrapping_VBG with_IN mode_NN estimation_NN had_VBD
+          little_JJ or_CC no_DT affect_NN on_IN bias_NN ,_, except_IN that_DT bias_NN increased_VBN
+          slightly_RB for_IN the_DT lognormal_NN original_JJ distribution_NN (_( Figure_NN
+          4_CD f_SYM ,_, 4_CD g_SYM )_) ._. On_IN the_DT other_JJ hand_NN ,_, bootstrapping_VBG lowered_VBN the_DT
+          variance_NN of_IN all_DT mode_NN estimators_NNS ,_, with_IN HRM_NNP showing_VBG the_DT
+          greatest_JJS improvement_NN and_CC RPM_NNP (_( lognormal_NN )_) the_DT least_JJS
+          improvement_NN (_( Figure_NN 5_CD b_SYM ,_, 5_CD c_SYM ,_, 5_CD d_SYM ,_, 5_CD f_SYM ,_, 5_CD g_SYM ,_, 5_CD h_NN ,_, 5_CD j_NN ,_, 5_CD k_NN ,_, 5_CD l_NN )_) ._. In_IN
+          effect_NN ,_, bootstrapping_VBG eliminated_VBD the_DT disparity_NN between_IN
+          HRM_NNP and_CC RPM_NNP in_IN terms_NNS of_IN variance_NN ,_, with_IN bootstrapped_JJ
+          versions_NNS of_IN those_DT estimators_NNS having_VBG similar_JJ low_JJ levels_NNS of_IN
+          variance_NN ._.
+        
+        
+          Molecular_NNP Clock_NNP Analyses_NNS
+          Analysis_NNP of_IN the_DT published_VBN molecular_JJ clock_NN data_NNS for_IN
+          fungi_NNS and_CC plants_NNS (_( Figure_NN 6_CD ,_, Table_NNP 2_LS )_) showed_VBD that_IN the_DT mean_NN
+          was_VBD higher_JJR than_IN the_DT median_NN in_IN most_JJS cases_NNS ,_, indicating_VBG
+          asymmetric_JJ distributions_NNS and_CC supporting_VBG the_DT use_NN of_IN the_DT
+          mode_NN ._. Although_IN the_DT true_JJ modes_NNS are_VBP not_RB known_VBN in_IN these_DT
+          cases_NNS ,_, some_DT patterns_NNS were_VBD evident_JJ ._. Among_IN the_DT mode_NN
+          estimates_NNS ,_, those_DT using_VBG SPM_NNP often_RB were_VBD the_DT lowest_JJS and_CC
+          appeared_VBD to_TO visually_RB underestimate_NN the_DT center_NN of_IN the_DT
+          distribution_NN ._. Of_IN the_DT remaining_VBG mode_NN estimators_NNS ,_, HRM_NNP and_CC
+          RPM_NNP were_VBD 10_CD ._. 1_LS %_NN different_JJ from_IN each_DT other_JJ ,_, on_IN average_JJ ,_,
+          across_IN the_DT five_CD sample_NN data_NNS sets_NNS (_( Table_NNP 2_LS )_) ._. HRM-BMO_NNP (_( mode_NN
+          of_IN the_DT bootstrapped_JJ modes_NNS )_) and_CC RPM-BMO_NNP averaged_VBD 7_CD ._. 2_CD %_NN
+          different_JJ ,_, and_CC HRM-BME_NNP (_( mean_NN of_IN the_DT bootstrapped_JJ modes_NNS )_)
+          and_CC RPM-BME_NNP were_VBD only_RB 1_CD ._. 4_CD %_NN different_JJ ._. A_DT greater_JJR
+          difference_NN was_VBD observed_VBN between_IN HRM_NNP and_CC its_PRP$ bootstrapped_JJ
+          estimate_NN (_( HRM-BME_NNP )_) than_IN between_IN RPM_NNP and_CC RPM-BME_NNP ._. All_DT of_IN
+          these_DT results_NNS from_IN analyses_NNS of_IN real_JJ data_NNS were_VBD consistent_JJ
+          with_IN the_DT simulation_NN results_NNS (_( Figure_NN 5_LS )_) ._.
+          The_DT results_NNS of_IN all_DT simulations_NNS ,_, and_CC software_NN for_IN
+          estimating_VBG the_DT mode_NN and_CC its_PRP$ standard_JJ error_NN ,_, are_VBP available_JJ
+          as_IN Supplementary_NNP Data_NNP
+          http_NN :_: /_NN /_NN www_NN ._. evogenomics_NNS ._. org_NN /_NN publications_NNS /_NN data_NNS /_NN mode_NN /_NN index_NN ._. htm_NN ._.
+        
+      
+      
+        Discussion_NNP
+        
+          General_JJ performance_NN of_IN the_DT mode_NN
+          There_EX were_VBD few_JJ cases_NNS in_IN this_DT study_NN where_WRB mode_NN
+          estimates_NNS performed_VBD worse_JJR than_IN the_DT mean_NN in_IN determining_VBG
+          the_DT center_NN of_IN location_NN of_IN a_DT data_NNS set_VBN ,_, suggesting_VBG a_DT more_RBR
+          general_JJ application_NN for_IN the_DT mode_NN ._. For_IN example_NN ,_, in_IN
+          situations_NNS where_WRB centers_NNS of_IN location_NN are_VBP needed_VBN but_CC
+          distributions_NNS are_VBP not_RB predictably_RB normal_JJ ,_, the_DT mode_NN might_MD
+          be_VB used_VBN as_IN a_DT routine_JJ statistic_NN ._. In_IN those_DT cases_NNS it_PRP would_MD
+          produce_VB a_DT similar_JJ result_NN to_TO the_DT mean_NN for_IN normal_JJ
+          distributions_NNS and_CC would_MD estimate_VB the_DT center_NN of_IN location_NN
+          with_IN less_JJR bias_NN than_IN the_DT mean_NN for_IN non-normal_JJ and_CC
+          contaminated_JJ distributions_NNS ._. However_RB ,_, our_PRP$ simulations_NNS
+          showed_VBD that_DT contamination_NN located_VBN close_RB to_TO the_DT true_JJ mode_NN
+          will_MD mislead_NN any_DT estimator_NN (_( mean_VB or_CC mode_NN )_) ._. In_IN the_DT future_NN ,_,
+          it_PRP would_MD be_VB useful_JJ to_TO explore_VB the_DT performance_NN of_IN the_DT
+          various_JJ mode_NN estimators_NNS under_IN a_DT greater_JJR diversity_NN of_IN
+          "_'' coarse_JJ "_'' data_NNS distributions_NNS ._.
+        
+        
+          Negative_JJ Bias_NNP of_IN some_DT Mode_NNP Estimators_NNP
+          We_PRP found_VBD that_IN RPM_NNP and_CC SPM_NNP ,_, the_DT two_CD estimators_NNS that_WDT use_NN
+          a_DT data_NNS transformation_NN method_NN ,_, exhibited_VBN increasing_VBG
+          negative_JJ bias_NN (_( bias_NN away_RB from_IN the_DT position_NN of_IN
+          contamination_NN )_) as_IN the_DT contamination_NN level_NN increased_VBD ._.
+          Because_IN the_DT contamination_NN was_VBD applied_VBN to_TO the_DT right_JJ side_NN
+          of_IN the_DT distribution_NN ,_, the_DT bias_NN resulted_VBD in_IN underestimates_NNS
+          of_IN the_DT true_JJ mode_NN ._.
+          This_DT may_MD be_VB attributed_VBN to_TO the_DT fact_NN that_IN both_DT
+          estimators_NNS are_VBP based_VBN on_IN the_DT transformation_NN of_IN sample_NN data_NNS
+          to_TO conform_VB to_TO a_DT single_JJ normal_JJ distribution_NN ,_, not_RB to_TO
+          additional_JJ secondary_JJ distributions_NNS often_RB encountered_VBD with_IN
+          outliers_NNS ._. The_DT HRM_NNP estimator_NN would_MD appear_VB to_TO be_VB less_RBR
+          affected_JJ by_IN such_JJ secondary_JJ distributions_NNS and_CC therefore_RB is_VBZ
+          at_IN an_DT advantage_NN ._. Compared_VBN with_IN the_DT normal_JJ original_JJ
+          distribution_NN and_CC same_JJ location_NN of_IN contamination_NN ,_, the_DT
+          right_JJ tail_NN of_IN the_DT lognormal_NN distribution_NN integrates_NNS with_IN
+          the_DT outliers_NNS to_TO a_DT greater_JJR extent_NN and_CC thus_RB obscures_VBZ more_JJR
+          of_IN the_DT secondary_JJ peaks_NNS ._. This_DT may_MD explain_VB the_DT lack_NN of_IN a_DT
+          negative_JJ bias_NN by_IN RPM_NNP and_CC SPM_NNP in_IN the_DT lognormal_NN
+          distribution_NN (_( Figure_NN 4_CD e_SYM )_) ._.
+        
+        
+          Increased_VBN Performance_NNP of_IN the_DT Bootstrapped_NNP Mode_NNP
+          Estimators_NNP
+          Bootstrapping_NNP clearly_RB improved_VBD the_DT variance_NN of_IN the_DT
+          mode_NN estimators_NNS ._. Of_IN the_DT two_CD bootstrap_NN methods_NNS tested_VBN ,_, the_DT
+          bootstrap_NN mean_NN of_IN the_DT modes_NNS (_( BME_NNP )_) is_VBZ preferred_VBN because_IN it_PRP
+          performed_VBD substantially_RB better_RB than_IN the_DT bootstrap_NN mode_NN of_IN
+          the_DT modes_NNS (_( BMO_NNP )_) in_IN terms_NNS of_IN lowering_VBG variance_NN ._. The_DT better_JJR
+          performance_NN of_IN BME_NNP may_MD result_VB from_IN the_DT lower_JJR variance_NN
+          usually_RB associated_VBN with_IN the_DT mean_NN ._. The_DT bootstrapping_VBG
+          probably_RB acts_VBZ to_TO "_'' smooth_JJ "_'' the_DT coarseness_NNS and_CC irregularity_NN
+          that_IN otherwise_RB might_MD cause_VB inaccurate_JJ estimation_NN of_IN the_DT
+          center_NN of_IN location_NN ._. This_DT is_VBZ important_JJ for_IN a_DT statistic_NN
+          (_( the_DT mode_NN )_) that_WDT relies_VBZ on_IN the_DT overall_JJ shape_NN of_IN a_DT
+          distribution_NN or_CC peak_NN in_IN density_NN ._.
+          Without_IN bootstrapping_VBG ,_, the_DT RPM_NNP estimator_NN has_VBZ a_DT lower_JJR
+          variance_NN than_IN the_DT HRM_NNP (_( Figure_NN 5_LS )_) ,_, in_IN part_NN leading_VBG to_TO the_DT
+          recommendation_NN of_IN RPM_NNP as_IN a_DT general_JJ purpose_NN estimator_NN [_NN 13_CD
+          ]_NN ._. However_RB ,_, bootstrapping_VBG not_RB only_RB lowers_VBZ the_DT variance_NN
+          of_IN both_DT estimators_NNS but_CC it_PRP reduces_VBZ that_DT disparity_NN ,_, with_IN
+          RPM-BME_NNP showing_VBG only_RB a_DT small_JJ improvement_NN in_IN variance_NN over_IN
+          HRM-BME_NNP ._. The_DT same_JJ pattern_NN was_VBD seen_VBN in_IN the_DT analysis_NN of_IN
+          divergence_NN times_NNS (_( Figure_NN 6_CD )_) ,_, where_WRB RPM_NNP and_CC HRM_NNP mode_NN
+          estimates_NNS exhibited_VBN a_DT large_JJ difference_NN (_( 10_CD %_NN )_) without_IN
+          bootstrapping_VBG and_CC a_DT much_RB smaller_JJR difference_NN (_( 1_CD %_NN )_) with_IN
+          bootstrapping_VBG ._.
+        
+        
+          Standard_NNP Error_NNP and_CC Confidence_NNP Interval_NNP of_IN the_DT
+          Mode_NNP
+          Methods_NNP for_IN direct_JJ calculation_NN of_IN the_DT standard_JJ error_NN
+          of_IN the_DT mode_NN have_VBP been_VBN suggested_VBN [_NN 16_CD ]_NN but_CC are_VBP rather_RB
+          complex_JJ ._. Another_DT approach_NN would_MD be_VB to_TO trim_VB the_DT outliers_NNS
+          from_IN the_DT distribution_NN and_CC estimate_VB the_DT standard_JJ error_NN of_IN
+          the_DT mean_NN of_IN the_DT trimmed_VBN data_NN set_VBN ,_, assuming_VBG that_IN the_DT
+          outliers_NNS can_MD be_VB identified_VBN and_CC the_DT underlying_VBG
+          distribution_NN is_VBZ normal_JJ ._. However_RB ,_, a_DT simpler_JJR method_NN ,_, and_CC
+          one_CD that_IN we_PRP recommend_VBP ,_, is_VBZ to_TO estimate_VB the_DT bootstrap_NN 95_CD %_NN
+          confidence_NN interval_NN (_( range_NN )_) and_CC /_NN or_CC bootstrap_NN standard_JJ
+          error_NN of_IN the_DT mode_NN ._. Although_IN bootstrapping_VBG already_RB is_VBZ used_VBN
+          to_TO calculate_VB the_DT mode_NN (_( M_NNP 
+          HRMB_NNP or_CC M_NNP 
+          RPMB_NNP )_) ,_, that_WDT must_MD be_VB considered_VBN
+          separately_RB ._. The_DT error_NN estimation_NN requires_VBZ that_IN each_DT
+          resampled_JJ data_NN set_VBN be_VB used_VBN to_TO calculate_VB the_DT mode_NN ;_: in_IN this_DT
+          case_NN ,_, each_DT such_JJ data_NN set_VBN is_VBZ used_VBN as_IN a_DT starting_NN point_NN for_IN
+          further_JJ resampling_VBG to_TO calculate_VB M_NNP 
+          HRMB_NNP or_CC M_NNP 
+          RPMB_NNP ._. Although_IN a_DT bootstrap_NN standard_JJ
+          error_NN can_MD be_VB calculated_VBN ,_, it_PRP would_MD not_RB be_VB appropriate_JJ for_IN
+          skewed_VBN distributions_NNS where_WRB the_DT error_NN is_VBZ distributed_VBN
+          asymmetrically_RB around_IN the_DT mode_NN ._. In_IN those_DT cases_NNS ,_, or_CC more_RBR
+          generally_RB ,_, we_PRP recommend_VBP calculating_VBG the_DT bootstrap_NN 95_CD %_NN
+          confidence_NN interval_NN (_( range_NN )_) ._.
+        
+      
+      
+        Conclusions_NNP
+        The_DT HRM_NNP and_CC RPM_NNP mode_NN methods_NNS [_NN 2_CD 13_CD ]_NN both_DT performed_VBN
+        reasonably_RB well_RB under_IN a_DT diversity_NN of_IN conditions_NNS ._. However_RB ,_,
+        bootstrapping_VBG is_VBZ recommended_VBN for_IN both_DT methods_NNS because_IN it_PRP
+        reduces_VBZ the_DT variance_NN ._. Suggested_NNP conventions_NNS for_IN indicating_VBG
+        modes_NNS that_WDT are_VBP estimated_VBN using_VBG these_DT methods_NNS are_VBP M_NNP 
+        HRM_NNP and_CC M_NNP 
+        RPM_NNP for_IN the_DT non-bootstrapped_JJ versions_NNS
+        and_CC M_NNP 
+        HRMB_NNP and_CC M_NNP 
+        RPMB_NNP for_IN the_DT bootstrapped_JJ versions_NNS ._. The_DT
+        bootstrapping_VBG should_MD be_VB accomplished_VBN by_IN taking_VBG the_DT mean_NN of_IN
+        the_DT bootstrapped_JJ mode_NN estimates_NNS and_CC by_IN using_VBG a_DT relatively_RB
+        large_JJ number_NN of_IN replications_NNS ,_, such_JJ as_IN 1_CD ,_, 000_CD or_CC more_JJR [_NN 17_CD ]_NN
+        ._. In_IN our_PRP$ implementation_NN of_IN the_DT two_CD methods_NNS ,_, the_DT M_NNP 
+        RPMB_NNP estimate_NN takes_VBZ 16_CD times_NNS longer_RBR to_TO
+        compute_VB ._. In_IN cases_NNS where_WRB time_NN permits_VBZ ,_, it_PRP might_MD be_VB
+        informative_JJ to_TO use_VB and_CC compare_VB both_DT estimators_NNS (_( M_NNP 
+        HRMB_NNP and_CC M_NNP 
+        RPMB_NNP )_) and_CC to_TO construct_VB a_DT histogram_NN for_IN
+        visual_JJ inspection_NN of_IN the_DT distribution_NN ._. The_DT RPM_NNP method_NN might_MD
+        have_VB a_DT slight_JJ advantage_NN in_IN cases_NNS where_WRB the_DT data_NNS form_VBP a_DT
+        single_JJ ,_, asymmetric_JJ (_( right-_NN or_CC left-skewed_JJ )_) distribution_NN and_CC
+        a_DT disadvantage_NN in_IN some_DT other_JJ cases_NNS (_( Figs_NNP 4_CD ,_, 5_LS )_) ._. However_RB ,_,
+        because_IN M_NNP 
+        HRMB_NNP is_VBZ simpler_JJR ,_, faster_RBR to_TO estimate_VB ,_, and_CC
+        does_VBZ not_RB exhibit_VB negative_JJ bias_NN in_IN cases_NNS of_IN outlier_NN
+        contamination_NN ,_, we_PRP recommend_VBP it_PRP as_IN a_DT general-purpose_JJ mode_NN
+        estimator_NN ,_, along_IN with_IN a_DT bootstrap_NN standard_JJ error_NN or_CC 95_CD %_NN
+        confidence_NN interval_NN (_( range_NN )_) ._.
+      
+      
+        Methods_NNP
+        
+          Mode_NNP Estimation_NNP Methods_NNP
+          The_DT HSM_NNP method_NN [_NN 2_CD ]_NN iteratively_RB divides_VBZ the_DT data_NNS set_VBN
+          into_IN samples_NNS of_IN half_PDT the_DT size_NN as_IN the_DT original_JJ set_VBN and_CC
+          uses_VBZ the_DT half-sample_JJ with_IN the_DT minimum_JJ range_NN ,_, where_WRB range_NN
+          is_VBZ defined_VBN as_IN the_DT difference_NN between_IN the_DT maximum_NN and_CC the_DT
+          minimum_JJ value_NN of_IN the_DT sample_NN ._. This_DT method_NN terminates_NNS when_WRB
+          the_DT half-sample_JJ is_VBZ less_JJR than_IN three_CD data_NNS points_NNS ._. An_DT
+          average_NN of_IN these_DT three_CD or_CC fewer_JJR values_NNS is_VBZ the_DT mode_NN ._. The_DT
+          HRM_NNP method_NN [_NN 2_CD ]_NN is_VBZ similar_JJ but_CC uses_VBZ the_DT sub-sample_JJ with_IN
+          the_DT densest_NN half-range_JJ ,_, where_WRB range_NN is_VBZ defined_VBN as_IN the_DT
+          absolute_JJ difference_NN between_IN the_DT maximum_NN and_CC the_DT minimum_JJ
+          values_NNS in_IN a_DT sample_NN ._. Of_IN these_DT two_CD methods_NNS ,_, only_RB the_DT HRM_NNP
+          was_VBD used_VBN in_IN this_DT study_NN because_IN HRM_NNP has_VBZ been_VBN shown_VBN to_TO have_VB
+          lower_JJR bias_NN with_IN increasing_VBG contamination_NN and_CC asymmetry_NN [_NN
+          2_CD ]_NN ._.
+          The_DT parametric_JJ methods_NNS [_NN 13_CD ]_NN are_VBP based_VBN on_IN the_DT idea_NN of_IN
+          transforming_VBG the_DT data_NNS set_VBN to_TO an_DT approximate_JJ normal_JJ
+          distribution_NN by_IN raising_VBG it_PRP to_TO a_DT real_JJ power_NN ._. Different_JJ
+          values_NNS for_IN the_DT exponent_NN are_VBP tested_VBN and_CC a_DT correlation_NN
+          coefficient_NN between_IN the_DT transformed_VBN data_NN and_CC an_DT ideal_JJ
+          normal_JJ distribution_NN is_VBZ calculated_VBN ._. The_DT exponent_NN with_IN the_DT
+          maximum_NN correlation_NN coefficient_NN is_VBZ used_VBN to_TO transform_VB the_DT
+          data_NNS and_CC approximate_JJ it_PRP to_TO a_DT normal_JJ distribution_NN ._. For_IN a_DT
+          normal_JJ distribution_NN ,_, the_DT mode_NN is_VBZ the_DT value_NN that_IN maximizes_NNS
+          the_DT probability_NN density_NN function_NN ._. Thus_RB ,_, by_IN equating_VBG the_DT
+          first_JJ derivative_NN of_IN the_DT probability_NN density_NN function_NN to_TO
+          zero_CD to_TO find_VB the_DT maxima_NN ,_, the_DT mode_NN can_MD be_VB estimated_VBN ._.
+          Thus_RB ,_,
+          
+          where_WRB
+          α_NN =_SYM transforming_VBG exponent_NN
+          =_SYM mean_VB parameter_NN
+          σ_NN =_SYM standard_JJ deviation_NN parameter_NN
+          In_IN the_DT SPM_NNP method_NN [_NN 13_CD ]_NN ,_, the_DT sample_NN mean_NN and_CC sample_NN
+          standard_JJ deviation_NN of_IN the_DT transformed_VBN data_NN are_VBP used_VBN as_IN
+          the_DT mean_NN and_CC standard_JJ deviation_NN parameters_NNS (_( and_CC σ_NN )_) for_IN
+          mode_NN estimation_NN ._. The_DT correlation_NN coefficient_NN used_VBN to_TO
+          estimate_VB the_DT best_JJS value_NN of_IN the_DT exponent_NN α_NN in_IN Equation_NNP (_( 1_LS )_)
+          is_VBZ expressed_VBN as_IN :_:
+          
+          with_IN the_DT operator_NN δ_NN giving_VBG the_DT sample_NN standard_JJ
+          deviation_NN ._.
+          In_IN the_DT RPM_NNP method_NN [_NN 13_CD ]_NN ,_, the_DT sample_NN median_JJ and_CC the_DT
+          sample_NN standardized_JJ median_JJ absolute_JJ deviation_NN (_( MAD_NNP )_) of_IN
+          the_DT transformed_VBN data_NN are_VBP used_VBN as_IN the_DT mean_NN and_CC standard_JJ
+          deviation_NN parameters_NNS (_( and_CC σ_NN )_) for_IN the_DT mode_NN estimation_NN ._.
+          The_DT MAD_NNP is_VBZ defined_VBN as_IN the_DT average_JJ difference_NN of_IN each_DT data_NNS
+          point_VBP from_IN the_DT median_NN ._. The_DT correlation_NN coefficient_NN used_VBN
+          to_TO estimate_VB the_DT best_JJS value_NN of_IN the_DT exponent_NN α_NN in_IN (_( 1_LS )_) is_VBZ
+          expressed_VBN as_IN :_:
+          
+          with_IN the_DT operator_NN Δ_NN giving_VBG the_DT median_JJ absolute_JJ
+          deviation_NN ._.
+        
+        
+          Evaluation_NNP of_IN the_DT Methods_NNP
+          We_PRP designed_VBD 63_CD simulated_JJ data_NNS sets_NNS to_TO compare_VB the_DT
+          three_CD mode_NN estimation_NN methods_NNS (_( HRM_NNP ,_, SPM_NNP ,_, and_CC RPM_NNP )_) with_IN
+          the_DT mean_NN and_CC median_JJ ._. Each_DT data_NNS set_VBN was_VBD defined_VBN using_VBG
+          combinations_NNS of_IN the_DT following_VBG six_CD parameters_NNS ,_, modeled_VBD in_IN
+          part_NN after_IN the_DT study_NN of_IN Bickel_NNP [_NN 13_CD ]_NN but_CC with_IN slightly_RB
+          larger_JJR variance_NN (_( standard_JJ deviation_NN parameter_NN =_SYM 2_LS )_) to_TO
+          more_RBR closely_RB approximate_JJ real_JJ biological_JJ data_NNS sets_NNS [_NN 7_CD 9_CD
+          ]_NN ,_, additional_JJ levels_NNS ,_, distributions_NNS ,_, and_CC locations_NNS of_IN
+          contamination_NN ,_, and_CC other_JJ features_NNS :_: (_( 1_LS )_) Type_NNP of_IN original_JJ
+          distribution_NN :_: normal_JJ (_( mode_NN =_SYM 6_CD )_) ,_, lognormal_NN (_( mode_NN =_SYM 1_CD ,_,
+          median_JJ =_SYM 2_CD ._. 72_CD )_) ,_, and_CC coarse_JJ (_( mode_NN =_SYM 6_CD ._. 25_CD )_) distributions_NNS
+          (_( Figure_NN 2_CD a_DT )_) ._. (_( 2_LS )_) Type_NNP of_IN contamination_NN :_: normal_JJ ,_, cauchy_NN ,_,
+          and_CC random_JJ (_( Figure_NN 2_CD b_SYM )_) ._. (_( 3_LS )_) Level_NNP of_IN contamination_NN :_: 0_CD %_NN ,_,
+          5_CD %_NN ,_, 10_CD %_NN ,_, 15_CD %_NN ,_, 20_CD %_NN ,_, 30_CD %_NN ,_, and_CC 40_CD %_NN ._. (_( 4_LS )_) Location_NNP of_IN the_DT
+          contaminant_NN :_: 67_CD thpercentile_NN of_IN the_DT original_JJ
+          distribution_NN ,_, 99_CD thpercentile_NN of_IN the_DT original_JJ
+          distribution_NN ,_, and_CC "_'' twice_RB the_DT 99_CD thpercentile_NN "_'' (_( true_JJ mode_NN
+          plus_CC twice_RB the_DT distance_NN between_IN the_DT 99_CD th_NN percentile_NN of_IN
+          original_JJ distribution_NN and_CC the_DT true_JJ mode_NN )_) ._. (_( 5_LS )_) Spread_NNP of_IN
+          the_DT contaminant_NN :_: standard_JJ deviation_NN =_SYM 2_CD ._. 0_CD ._. (_( 6_CD )_) Sample_NNP
+          size_NN :_: N_NNP =_SYM 20_CD ,_, 100_CD ,_, 1000_CD ._. For_IN simulations_NNS testing_VBG the_DT
+          non-bootstrap_JJ mode_NN methods_NNS ,_, 1000_CD replications_NNS were_VBD used_VBN ._.
+          Additionally_RB ,_, 100_CD replicates_NNS were_VBD used_VBN for_IN simulations_NNS
+          testing_VBG the_DT use_NN of_IN bootstrapping_VBG ,_, with_IN 100_CD bootstrap_NN
+          iterations_NNS performed_VBN during_IN each_DT replication_NN ._. An_DT overview_NN
+          of_IN the_DT simulation_NN design_NN is_VBZ shown_VBN in_IN Figure_NN 3_CD ._.
+          The_DT coarse_JJ original_JJ distribution_NN was_VBD intended_VBN to_TO model_VB
+          the_DT class_NN of_IN real_JJ data_NNS where_WRB there_EX is_VBZ a_DT central_JJ tendency_NN ,_,
+          but_CC there_EX are_VBP multiple_JJ subpeaks_NNS within_IN an_DT otherwise_RB
+          single_JJ peak_NN ._. This_DT may_MD arise_VB from_IN limited_JJ sampling_VBG ,_, minor_JJ
+          clumping_VBG of_IN data_NNS ,_, or_CC other_JJ factors_NNS ._. For_IN the_DT purpose_NN of_IN
+          these_DT simulations_NNS ,_, we_PRP have_VBP modeled_VBN the_DT simplest_JJS case_NN
+          involving_VBG two_CD subpeaks_NNS of_IN a_DT single_JJ distribution_NN ;_: it_PRP is_VBZ
+          not_RB intended_VBN to_TO be_VB a_DT bimodal_NN distribution_NN ._. To_TO construct_VB
+          this_DT coarse_JJ distribution_NN ,_, we_PRP used_VBD two_CD normal_JJ
+          distributions_NNS ,_, with_IN one_CD distribution_NN centered_VBN at_IN the_DT 60_CD
+          thpercentile_NN of_IN the_DT other_JJ distribution_NN ._. Thus_RB ,_, the_DT latter_JJ
+          distribution_NN is_VBZ partly_RB to_TO the_DT left_VBN of_IN the_DT first_JJ one_CD ._. We_PRP
+          sampled_VBN 33_CD %_NN of_IN the_DT data_NNS points_NNS from_IN the_DT first_JJ two_CD
+          quartiles_NNS of_IN the_DT distribution_NN on_IN the_DT left_NN ,_, 33_CD %_NN of_IN the_DT
+          data_NNS points_NNS from_IN the_DT last_JJ two_CD quartiles_NNS of_IN the_DT
+          distribution_NN on_IN the_DT right_NN ,_, and_CC 33_CD %_NN of_IN the_DT data_NNS points_NNS
+          from_IN the_DT remaining_VBG half_NN portions_NNS of_IN both_DT the_DT
+          distributions_NNS (_( Figure_NN 2_CD a_DT )_) ._. There_EX are_VBP many_JJ other_JJ possible_JJ
+          types_NNS of_IN coarse_JJ distributions_NNS ,_, with_IN multiple_JJ subpeaks_NNS ,_,
+          but_CC we_PRP considered_VBD only_RB this_DT simple_JJ case_NN ._. The_DT cauchy_NN
+          distribution_NN was_VBD used_VBN as_IN one_CD of_IN the_DT contaminants_NNS to_TO model_VB
+          erratic_JJ contamination_NN and_CC a_DT high_JJ number_NN of_IN outliers_NNS
+          (_( Figure_NN 2_CD b_SYM )_) ._.
+          In_IN previous_JJ simulations_NNS ,_, contamination_NN was_VBD applied_VBN
+          only_RB at_IN the_DT 99_CD ._. 99_CD thpercentile_NN ,_, and_CC with_IN a_DT narrow_JJ
+          standard_JJ deviation_NN equal_JJ to_TO 1_CD /_NN 100_CD thof_NN the_DT interquartile_NN
+          range_NN of_IN the_DT main_JJ distribution_NN divided_VBN by_IN the_DT
+          interquartile_NN range_NN of_IN the_DT standard_JJ normal_JJ distribution_NN [_NN
+          13_CD ]_NN ._. This_DT resulted_VBD in_IN a_DT sharp_JJ spike_NN (_( peak_NN )_) in_IN the_DT tail_NN
+          of_IN the_DT distribution_NN ._. In_IN real_JJ data_NNS sets_NNS involving_VBG
+          distributions_NNS of_IN molecular_JJ time_NN estimates_NNS ,_, outliers_NNS more_RBR
+          frequently_RB appear_VB removed_VBN from_IN the_DT main_JJ distribution_NN and_CC
+          spread_NN broadly_RB rather_RB than_IN focused_VBN at_IN one_CD point_NN (_( e_SYM ._. g_SYM ._. ,_,
+          Figure_NN 1_LS )_) ._. Therefore_RB ,_, we_PRP used_VBD contamination_NN locations_NNS
+          that_WDT were_VBD further_RBR removed_VBN (_( twice_RB the_DT 99_CD thpercentile_NN )_) and_CC
+          more_RBR broadly_RB distributed_VBN (_( standard_JJ deviation_NN =_SYM 2_LS )_) ._. For_IN
+          comparison_NN ,_, we_PRP also_RB simulated_JJ contamination_NN at_IN the_DT 99_CD
+          thpercentile_NN and_CC 67_CD thpercentile_NN ._. We_PRP predicted_VBD that_IN the_DT
+          mode_NN estimators_NNS would_MD perform_VB poorly_RB with_IN contaminants_NNS
+          located_VBN close_RB to_TO the_DT true_JJ mode_NN ._.
+          We_PRP evaluated_VBD the_DT bias_NN (_( the_DT difference_NN between_IN the_DT
+          estimated_VBN value_NN and_CC the_DT true_JJ mode_NN )_) and_CC variance_NN of_IN the_DT
+          estimators_NNS for_IN each_DT simulation_NN ._. A_DT ranking_JJ system_NN was_VBD used_VBN
+          to_TO make_VB comparisons_NNS of_IN the_DT different_JJ methods_NNS ._. Ranking_NNP was_VBD
+          done_VBN individually_RB (_( each_DT simulation_NN )_) and_CC in_IN groups_NNS ,_, to_TO
+          determine_VB a_DT consensus_NN order_NN ._. Grouped_NNP ranking_VBG for_IN a_DT
+          particular_JJ simulation_NN run_NN was_VBD calculated_VBN as_IN the_DT average_JJ
+          rank_NN of_IN each_DT estimator_NN for_IN all_DT levels_NNS of_IN contamination_NN ._.
+          The_DT grouping_VBG was_VBD done_VBN by_IN collecting_VBG the_DT nodes_NNS at_IN the_DT
+          third_JJ and_CC fourth_JJ levels_NNS of_IN the_DT tree_NN in_IN Figure_NN 3_CD ._. In_IN other_JJ
+          words_NNS ,_, the_DT ranks_NNS for_IN the_DT different_JJ types_NNS and_CC positions_NNS of_IN
+          the_DT contaminants_NNS were_VBD averaged_VBN for_IN a_DT unique_JJ combination_NN
+          of_IN the_DT original_JJ distribution_NN type_NN and_CC sample_NN size_NN ._. This_DT
+          was_VBD done_VBN because_IN the_DT original_JJ distribution_NN type_NN and_CC
+          sample_NN size_NN are_VBP characteristics_NNS that_WDT are_VBP more_RBR easily_RB
+          determined_VBN for_IN real_JJ data_NNS sets_NNS ,_, and_CC were_VBD therefore_RB of_IN
+          greater_JJR interest_NN in_IN this_DT study_NN ._. Average_NNP and_CC individual_JJ
+          ranks_NNS for_IN particular_JJ levels_NNS of_IN contamination_NN shown_VBN in_IN
+          Table_NNP 1_CD are_VBP for_IN two_CD simulation_NN sets_NNS (_( normal_JJ and_CC
+          lognormal_NN )_) ,_, each_DT using_VBG normal_JJ contamination_NN located_VBN at_IN
+          twice_RB the_DT 99_CD thpercentile_NN and_CC with_IN a_DT sample_NN size_NN of_IN 100_CD ._.
+          This_DT combination_NN of_IN intermediate_JJ sample_NN size_NN and_CC
+          contamination_NN location_NN most_RBS closely_RB corresponded_VBD to_TO real_JJ
+          data_NNS sets_NNS involving_VBG distributions_NNS of_IN time_NN estimates_NNS [_NN 8_CD ]_NN
+          ._.
+          In_IN addition_NN to_TO the_DT non-bootstrapped_JJ mode_NN estimate_NN
+          (_( NBM_NNP ,_, using_VBG original_JJ data_NNS )_) for_IN each_DT method_NN ,_, we_PRP calculated_VBD
+          a_DT bootstrap_NN estimate_NN using_VBG the_DT mean_NN (_( BME_NNP )_) and_CC the_DT mode_NN
+          (_( BMO_NNP )_) of_IN bootstrapped_JJ modes_NNS ._. This_DT permitted_VBN us_PRP to_TO compare_VB
+          biases_NNS and_CC variances_NNS associated_VBN with_IN bootstrapped_JJ and_CC
+          non-bootstrapped_JJ versions_NNS of_IN each_DT method_NN for_IN each_DT data_NNS
+          set_VBN ._. We_PRP predicted_VBD that_IN bootstrapping_VBG [_NN 18_CD ]_NN might_MD improve_VB
+          mode_NN estimates_NNS because_IN of_IN the_DT smoothing_VBG effect_NN of_IN the_DT
+          resampling_VBG ,_, emphasizing_VBG (_( by_IN chance_NN )_) different_JJ subpeaks_NNS
+          and_CC thus_RB generating_VBG different_JJ modes_NNS centered_VBN around_IN a_DT
+          single_JJ (_( overall_JJ )_) peak_NN in_IN the_DT distribution_NN ._. Therefore_RB ,_, the_DT
+          mean_NN (_( or_CC mode_NN )_) of_IN those_DT multiple_JJ subpeaks_NNS might_MD better_JJR
+          represent_VB the_DT central_JJ tendency_NN of_IN the_DT overall_JJ data_NN
+          set_VBN ._.
+          Finally_RB ,_, we_PRP applied_VBD these_DT mode_NN estimators_NNS to_TO published_VBN
+          data_NNS sets_NNS of_IN divergence_NN time_NN estimates_NNS of_IN fungi_NNS and_CC
+          plants_NNS [_NN 8_CD ]_NN ._. The_DT objective_NN was_VBD to_TO observe_VB how_WRB the_DT
+          different_JJ estimators_NNS performed_VBN with_IN real_JJ data_NNS and_CC to_TO
+          compare_VB their_PRP$ performance_NN with_IN simulation_NN results_NNS to_TO
+          assist_VB in_IN formulating_VBG recommendations_NNS for_IN mode_NN
+          estimation_NN ._.
+        
+      
+      
+        Authors_NNP '_'' contributions_NNS
+        SBH_NNP conceived_VBD the_DT study_NN ;_: SBH_NNP and_CC PS_NNP designed_VBD the_DT
+        simulations_NNS ;_: PS_NNP carried_VBD out_RP the_DT simulations_NNS ;_: SBH_NNP and_CC PS_NNP
+        drafted_VBD the_DT manuscript_NN and_CC both_DT authors_NNS approved_VBD the_DT final_JJ
+        manuscript_NN ._.
+      
+    
+  

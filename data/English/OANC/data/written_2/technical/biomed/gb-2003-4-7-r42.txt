@@ -1,0 +1,1201 @@
+
+  
+    
+      
+        Background_NNP
+        Although_IN the_DT analysis_NN of_IN sequenced_JJ genomes_NNS to_TO date_NN has_VBZ
+        focused_VBN most_RBS heavily_RB on_IN the_DT protein-coding_JJ set_NN of_IN genes_NNS ,_,
+        all_DT genomes_NNS also_RB contain_VBP a_DT constellation_NN of_IN non-coding_JJ RNA_NNP
+        genes_NNS ._. With_IN the_DT exception_NN of_IN certain_JJ classes_NNS of_IN RNAs_NNP with_IN
+        strongly_RB conserved_JJ sequences_NNS and_CC /_NN or_CC structures_NNS ,_, such_JJ as_IN
+        ribosomal_JJ and_CC transfer_VB RNAs_NNP ,_, identification_NN of_IN most_JJS
+        non-coding_JJ RNAs_NNP has_VBZ historically_RB been_VBN a_DT relatively_RB
+        serendipitous_JJ affair_NN ._. Only_RB very_RB recently_RB have_VBP there_EX been_VBN
+        concerted_JJ efforts_NNS to_TO identify_VB such_JJ genes_NNS systematically_RB ,_,
+        using_VBG both_DT experimental_JJ and_CC computational_NN approaches_NNS [_NN 1_CD ]_NN
+        ._.
+        Our_PRP$ collective_JJ ignorance_NN of_IN the_DT totality_NN of_IN non-coding_JJ
+        RNA_NNP genes_NNS was_VBD laid_VBN bare_JJ by_IN recent_JJ work_NN on_IN microRNAs_NNS
+        (_( miRNAs_NNS )_) ,_, an_DT abundant_JJ family_NN of_IN 21_CD -_: 22_CD nucleotide_NN non-coding_JJ
+        RNAs_NNP [_NN 2_CD 3_CD ]_NN ._. The_DT founding_NN members_NNS of_IN this_DT family_NN ,_, lin-_NN 4_CD
+        and_CC let-_NN 7_CD ,_, were_VBD identified_VBN through_IN forward_RB analysis_NN of_IN
+        extant_NN 
+        Caenorhabditis_NNP elegans_NNS mutants_NNS [_NN 4_CD 5_CD
+        ]_NN ._. Both_DT of_IN these_DT RNAs_NNP are_VBP post-transcriptional_JJ regulators_NNS
+        of_IN developmental_NN timing_NN that_DT function_NN by_IN binding_VBG to_TO the_DT 3_CD '_POS
+        untranslated_JJ regions_NNS (_( 3_CD '_POS UTRs_NNP )_) of_IN target_NN genes_NNS [_NN 5_CD 6_CD 7_CD 8_CD ]_NN
+        ._. Although_IN they_PRP were_VBD long_VBP regarded_VBN as_IN genetic_JJ curiosities_NNS
+        possibly_RB specific_JJ to_TO nematodes_NNS ,_, let-_NN 7_CD was_VBD subsequently_RB
+        found_VBN to_TO be_VB broadly_RB conserved_JJ across_IN bilaterian_NN evolution_NN [_NN
+        9_CD ]_NN and_CC miRNA_NN genes_NNS are_VBP now_RB recognized_VBN as_IN a_DT pervasive_JJ and_CC
+        widespread_JJ feature_NN of_IN animal_NN and_CC plant_NN genomes_NNS [_NN 10_CD 11_CD 12_CD
+        13_CD 14_CD 15_CD 16_CD ]_NN ._.
+        In_IN general_JJ ,_, it_PRP is_VBZ thought_VBN that_IN miRNA_NN biogenesis_NNS proceeds_NNS
+        via_IN intermediate_JJ precursor_NN transcripts_NNS of_IN more_JJR than_IN 70_CD
+        nucleotides_NNS that_WDT have_VBP the_DT capacity_NN to_TO form_VB an_DT extended_VBN
+        stem-loop_JJ structure_NN (_( pre-mi_JJ RNA_NNP )_) ,_, although_IN at_IN least_JJS some_DT
+        pre-mi_JJ RNAs_NNP are_VBP further_RBR derived_VBN from_IN even_RB longer_JJR transcripts_NNS
+        (_( primary_JJ miRNA_NN transcripts_NNS ,_, or_CC pri-mi_JJ RNAs_NNP )_) ._. These_DT can_MD exist_VB
+        as_IN long_JJ individual_JJ pre-mi_JJ RNA_NNP precursor_NN transcripts_NNS ,_, as_IN
+        operon-like_JJ multiple_JJ pre-mi_JJ RNA_NNP precursors_NNS ,_, or_CC even_RB as_IN part_NN
+        of_IN primary_JJ mRNA_NN transcripts_NNS ._. Processing_NNP of_IN pri-mi_JJ RNA_NNP into_IN
+        the_DT pre-mi_JJ RNA_NNP stem-loop_JJ occurs_VBZ in_IN the_DT nucleus_NN ,_, while_IN
+        subsequent_JJ processing_NN of_IN pre-mi_JJ RNA_NNP into_IN 21_CD -_: 22_CD mers_NNS is_VBZ a_DT
+        cytoplasmic_JJ event_NN mediated_JJ by_IN the_DT RNAse_NNP III_NNP enzyme_NN Dicer_NNP [_NN
+        17_CD 18_CD 19_CD 20_CD ]_NN ;_: Dicer_NNP is_VBZ also_RB responsible_JJ for_IN cleavage_NN of_IN
+        long_RB perfectly_RB double-stranded_JJ RNA_NNP into_IN 21_CD -_: 22_CD nucleotide_NN
+        fragments_NNS during_IN RNA_NNP interference_NN (_( RNAi_NNP )_) [_NN 2_CD 21_CD ]_NN ._. These_DT
+        latter_JJ molecules_NNS ,_, known_VBN as_IN silencing_VBG RNA_NNP (_( siRNA_NN )_) ,_, bind_NN to_TO
+        and_CC trigger_VB the_DT degradation_NN of_IN perfectly_RB homologous_RB mRNA_NN
+        molecules_NNS via_IN RISC_NNP ,_, a_DT double-strand_JJ RNA-induced_NNP silencing_VBG
+        complex_JJ containing_VBG nuclease_NN activity_NN [_NN 22_CD 23_CD ]_NN ._.
+        Although_IN the_DT 
+        in_IN vivo_NN function_NN of_IN only_RB a_DT few_JJ miRNAs_NNS
+        is_VBZ known_VBN so_RB far_RB ,_, it_PRP is_VBZ believed_VBN that_IN the_DT vast_JJ majority_NN are_VBP
+        likely_JJ to_TO participate_VB in_IN post-transcriptional_JJ gene_NN
+        regulation_NN of_IN complementary_JJ mRNA_NN targets_NNS ._. Interestingly_RB ,_,
+        perfect_JJ or_CC near-perfect_JJ target_NN complementarity_NN is_VBZ
+        associated_VBN with_IN mRNA_NN degradation_NN [_NN 24_CD 25_CD 26_CD ]_NN ,_, similar_JJ to_TO
+        the_DT effects_NNS of_IN siRNA_NN ,_, whereas_IN imperfect_JJ base-pairing_JJ is_VBZ
+        associated_VBN with_IN regulation_NN by_IN translational_NN inhibition_NN [_NN 6_CD
+        27_CD ]_NN ._. Recently_RB ,_, siRNAs_NNS with_IN imperfect_JJ match_NN to_TO target_VB mRNA_NN
+        were_VBD observed_VBN to_TO function_VB as_IN translational_NN inhibitors_NNS [_NN 28_CD
+        ]_NN ,_, suggesting_VBG that_IN the_DT type_NN of_IN 21_CD -_: 22_CD nucleotide_NN
+        RNA-mediated_NNP regulation_NN may_MD be_VB largely_RB determined_VBN by_IN the_DT
+        quality_NN of_IN target_NN complementarity_NN ._.
+        The_DT vast_JJ majority_NN of_IN the_DT approximately_RB 300_CD miRNAs_NNS
+        currently_RB known_VBN were_VBD identified_VBN through_IN direct_JJ cloning_VBG of_IN
+        short_JJ RNA_NNP molecules_NNS ._. Although_IN this_DT method_NN has_VBZ been_VBN quite_RB
+        successful_JJ thus_RB far_RB ,_, its_PRP$ practicality_NN is_VBZ limited_VBN by_IN the_DT
+        necessity_NN for_IN a_DT considerable_JJ amount_NN of_IN RNA_NNP as_IN raw_JJ material_NN
+        for_IN cloning_VBG ,_, and_CC cloned_VBN products_NNS are_VBP often_RB dominated_VBN by_IN a_DT
+        few_JJ highly_RB expressed_VBD miRNAs_NNS ._. For_IN example_NN ,_, 41_CD %_NN of_IN miRNAs_NNS
+        cloned_VBN from_IN HeLa_NNP cells_NNS are_VBP variants_NNS of_IN let-_NN 7_CD ,_, 28_CD %_NN of_IN human_JJ
+        brain_NN miRNAs_NNS are_VBP variants_NNS of_IN miR-_NN 124_CD ,_, and_CC 45_CD %_NN of_IN miRNAs_NNS
+        cloned_VBN from_IN human_JJ heart_NN and_CC 32_CD %_NN of_IN those_DT cloned_VBN from_IN early_JJ 
+        Drosophila_NNP embryos_NNS are_VBP miR-_NN 1_CD [_NN 10_CD 29_CD
+        ]_NN ._. In_IN fact_NN ,_, it_PRP has_VBZ been_VBN opined_JJ that_IN few_JJ additional_JJ
+        mammalian_JJ miRNAs_NNS will_MD be_VB easily_RB identified_VBN by_IN the_DT direct_JJ
+        cloning_VBG method_NN [_NN 30_CD ]_NN ._.
+        As_IN a_DT complementary_JJ approach_NN to_TO miRNA_NN identification_NN ,_, we_PRP
+        developed_VBD an_DT informatic_JJ strategy_NN (_( '_POS miRseeker_NN '_'' )_) and_CC applied_VBD
+        it_PRP to_TO the_DT completed_VBN genomes_NNS of_IN 
+        Drosophila_NNP melanogaster_NN and_CC 
+        D_NNP ._. pseudoobscura_NN ,_, which_WDT are_VBP some_DT 30_CD
+        million_CD years_NNS diverged_JJ ._. miRseeker_NN subjects_NNS conserved_JJ
+        intronic_JJ and_CC intergenic_JJ sequences_NNS to_TO an_DT RNA_NNP folding_VBG and_CC
+        evaluation_NN procedure_NN to_TO identify_VB evolutionarily_RB constrained_VBN
+        hairpin_NN structures_NNS with_IN features_NNS characteristic_NN of_IN known_VBN
+        miRNAs_NNS ._. The_DT specificity_NN of_IN this_DT computational_NN procedure_NN was_VBD
+        shown_VBN by_IN the_DT presence_NN of_IN 18_CD out_IN of_IN 24_CD reference_NN miRNAs_NNS
+        within_IN the_DT top_JJ 124_CD candidates_NNS ._. We_PRP identified_VBD a_DT total_NN of_IN 48_CD
+        novel_NN miRNA_NN candidates_NNS whose_WP$ existence_NN was_VBD strongly_RB
+        supported_VBN by_IN conservation_NN in_IN other_JJ insect_NN ,_, nematode_NN or_CC
+        vertebrate_NN genomes_NNS ._. Expression_NNP of_IN 24_CD novel_NN miRNA_NN genes_NNS was_VBD
+        verified_VBN by_IN northern_JJ analysis_NN (_( including_VBG 20_CD out_IN of_IN 27_CD
+        candidates_NNS that_WDT were_VBD supported_VBN by_IN third-species_JJ
+        conservation_NN and_CC 4_CD out_IN of_IN 11_CD high-scoring_JJ predictions_NNS
+        specific_JJ to_TO 
+        Drosophila_NNP )_) ,_, demonstrating_VBG that_IN the_DT
+        bioinformatic_JJ screen_NN was_VBD successful_JJ ._. As_IN might_MD be_VB expected_VBN ,_,
+        the_DT newly_RB verified_VBN miRNA_NN genes_NNS vary_VBP tremendously_RB with_IN
+        respect_NN to_TO abundance_NN and_CC developmental_NN expression_NN profile_NN ,_,
+        suggesting_VBG diverse_JJ roles_NNS for_IN these_DT genes_NNS ._. Inference_NNP of_IN our_PRP$
+        false-positive_JJ prediction_NN and_CC false-negative_JJ verification_NN
+        rates_NNS (_( based_VBN on_IN our_PRP$ ability_NN to_TO identify_VB known_VBN miRNAs_NNS and_CC
+        detect_VB the_DT expression_NN of_IN highly_RB conserved_JJ ,_, and_CC thus_RB
+        presumed_VBN genuine_JJ ,_, novel_NN miRNAs_NNS )_) leads_VBZ us_PRP to_TO estimate_VB that_IN
+        drosophilid_NN genomes_NNS contain_VBP around_IN 110_CD miRNA_NN genes_NNS ,_, or_CC
+        nearly_RB 1_CD %_NN of_IN the_DT number_NN of_IN predicted_VBD protein-coding_JJ genes_NNS ._.
+        In_IN combination_NN with_IN other_JJ concurrent_JJ genomic_JJ analyses_NNS [_NN 31_CD
+        32_CD 33_CD 34_CD ]_NN ,_, it_PRP is_VBZ likely_JJ that_IN most_JJS miRNAs_NNS in_IN completed_VBN
+        animal_NN genomes_NNS have_VBP now_RB been_VBN identified_VBN ._. Collectively_RB ,_, this_DT
+        sets_VBZ the_DT stage_NN for_IN both_DT genome-wide_JJ and_CC targeted_VBN studies_NNS of_IN
+        this_DT functionally_RB elusive_JJ family_NN of_IN regulators_NNS ._.
+      
+      
+        Results_NNS
+        
+          Evolutionarily_NNP conserved_JJ characteristics_NNS of_IN miRNA_NN
+          genes_NNS
+          The_DT starting_NN point_NN for_IN our_PRP$ studies_NNS was_VBD a_DT reference_NN set_NN
+          of_IN 24_CD 
+          Drosophila_NNP pre-mi_JJ RNA_NNP sequences_NNS (_( 
+          let-_NN 7_CD ,_, the_DT 21_CD originally_RB
+          identified_VBN by_IN Lagos-_NNP Quintana_NNP and_CC colleagues_NNS ,_, 
+          mir-_NN 125_CD ,_, and_CC a_DT previously_RB
+          undescribed_JJ paralog_NN of_IN 
+          mir-_NN 2_CD that_IN we_PRP named_VBD 
+          mir-_NN 2_CD c_SYM [_NN 9_CD 10_CD 29_CD ]_NN )_) ._. We_PRP analyzed_VBD
+          this_DT set_JJ to_TO derive_VB rules_NNS and_CC determine_VB parameters_NNS that_WDT
+          specifically_RB describe_VB known_VBN miRNA_NN genes_NNS within_IN anonymous_JJ
+          genomic_JJ sequence_NN ._.
+          Examination_NNP of_IN the_DT genomic_JJ sequence_NN of_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. pseudoobscura_NN showed_VBD that_IN all_DT 24_CD
+          members_NNS of_IN the_DT reference_NN set_VBN are_VBP highly_RB conserved_JJ along_IN
+          the_DT entirety_NN of_IN the_DT predicted_VBN precursor_NN transcripts_NNS ,_,
+          which_WDT typically_RB range_NN between_IN 70_CD -_: 100_CD nucleotides_NNS ._. When_WRB
+          viewed_VBN in_IN VISTA_NNP plot_NN alignments_NNS [_NN 35_CD ]_NN ,_, miRNA_NN genes_NNS
+          reside_VB in_IN short_JJ regions_NNS of_IN exceptional_JJ conservation_NN ,_,
+          easily_RB seen_VBN as_IN local_JJ '_POS peaks_NNS '_POS (_( Figure_NN 1_LS )_) ._. As_IN is_VBZ the_DT case_NN
+          for_IN many_JJ other_JJ non-coding_JJ RNA_NNP genes_NNS ,_, their_PRP$ degree_NN of_IN
+          conservation_NN usually_RB exceeds_VBZ that_IN of_IN coding_VBG regions_NNS ,_, due_JJ
+          to_TO their_PRP$ lack_NN of_IN third-position_JJ wobble_JJ ._. This_DT suggested_VBD
+          that_IN miRNA_NN genes_NNS might_MD be_VB found_VBN by_IN folding_VBG fixed_VBN lengths_NNS
+          of_IN conserved_JJ sequence_NN to_TO identify_VB ones_NNS that_WDT display_NN the_DT
+          high_JJ degree_NN of_IN relatively_RB continuous_JJ helicity_NN
+          characteristic_NN of_IN known_VBN pre-mi_JJ RNAs_NNP ._. However_RB ,_, pilot_NN
+          studies_NNS identified_VBD a_DT very_RB large_JJ number_NN of_IN conserved_JJ
+          stem-loops_JJ in_IN genomic_JJ sequence_NN ,_, suggesting_VBG that_IN
+          additional_JJ criteria_NNS were_VBD necessary_JJ to_TO make_VB effective_JJ
+          miRNA_NN gene_NN predictions_NNS ._.
+          We_PRP next_RB aligned_VBN the_DT 24_CD pairs_NNS of_IN orthologous_JJ 
+          Drosophila_NNP pre-mi_JJ RNA_NNP sequences_NNS and_CC
+          assessed_VBD their_PRP$ pattern_NN of_IN nucleotide_NN divergence_NN ._. There_EX
+          are_VBP only_RB three_CD pairs_NNS that_WDT have_VBP been_VBN completely_RB conserved_JJ
+          (_( Figure_NN 2_CD a_DT ,_, class_NN 1_LS )_) ,_, indicating_VBG that_IN most_JJS pre-mi_JJ RNAs_NNP
+          have_VBP diverged_JJ to_TO some_DT extent_NN within_IN 
+          Drosophila_NNP ._. Unexpectedly_NNP ,_, we_PRP
+          detected_VBD mild_JJ selective_JJ pressure_NN on_IN the_DT precise_JJ sequence_NN
+          of_IN the_DT non-mi_JJ RNA-encoding_NNP arm_NN ._. This_DT attribute_VBP is_VBZ not_RB
+          self-evident_JJ ._. It_PRP might_MD have_VB been_VBN the_DT case_NN that_IN point_NN
+          mutations_NNS along_IN an_DT arm_NN would_MD be_VB neutral_JJ as_IN long_RB as_IN the_DT
+          status_NN of_IN base-pairing_JJ was_VBD maintained_VBN ;_: this_DT is_VBZ possible_JJ
+          due_NN to_TO the_DT acceptability_NN of_IN G-U_NNP base-pairing_JJ in_IN RNA_NNP ._.
+          Instead_RB ,_, we_PRP observed_VBD preferential_JJ divergence_NN within_IN the_DT
+          loop_NN sequence_NN ._. Ten_CD members_NNS of_IN the_DT reference_NN set_VBN have_VBP
+          diverged_JJ exclusively_RB within_IN their_PRP$ loop_NN sequence_NN (_( Figure_NN
+          2_CD a_DT ,_, class_NN 2_LS )_) ,_, whereas_IN there_EX are_VBP no_DT members_NNS that_WDT have_VBP
+          diverged_JJ exclusively_RB along_IN an_DT arm_NN (_( Figure_NN 2_CD a_DT ,_, class_NN 5_LS )_) ._.
+          This_DT is_VBZ well_RB illustrated_VBN by_IN the_DT 
+          Drosophila_NNP let-_NN 7_CD orthologs_NNS ,_, which_WDT
+          have_VBP accumulated_VBN four_CD mismatches_NNS and_CC gaps_NNS in_IN the_DT loop_NN
+          sequence_NN but_CC maintain_VB perfectly_RB conserved_JJ arms_NNS (_( Figure_NN
+          2_CD b_SYM )_) ._. Thus_RB ,_, the_DT terminal_NN loop_NN is_VBZ the_DT most_RBS evolutionary_JJ
+          labile_NN portion_NN of_IN pre-mi_JJ RNA_NNP ._.
+          Mutations_NNP do_VBP eventually_RB accumulate_VBP on_IN the_DT
+          non-mi_JJ RNA-encoding_NNP arm_NN ,_, and_CC orthologous_JJ pre-mi_JJ RNAs_NNP from_IN
+          more_RBR diverged_JJ species_NNS will_MD often_RB preserve_VB only_RB the_DT 21_CD -_: 24_CD
+          nucleotide_NN mature_VBP miRNA_NN itself_PRP ._. However_RB ,_, because_IN of_IN
+          preferential_JJ divergence_NN within_IN the_DT loop_NN ,_, orthologous_JJ
+          miRNAs_NNS from_IN species_NNS of_IN an_DT appropriate_JJ evolutionary_JJ
+          distance_NN (_( such_JJ as_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. pseudoobscura_NN )_) show_NN an_DT equal_JJ or_CC
+          greater_JJR amount_NN of_IN change_NN within_IN the_DT loop_NN than_IN on_IN the_DT
+          non-mi_JJ RNA-encoding_NNP arm_NN (_( Figure_NN 2_CD a_DT ,_, class_NN 3_LS )_) ._. This_DT is_VBZ the_DT
+          case_NN despite_IN the_DT fact_NN that_IN the_DT loop_NN is_VBZ typically_RB only_RB a_DT
+          third_JJ to_TO a_DT quarter_NN the_DT length_NN of_IN each_DT arm_NN ._. Of_IN the_DT eleven_CD
+          members_NNS of_IN the_DT reference_NN set_VBN that_DT show_NN divergence_NN on_IN both_DT
+          an_DT arm_NN and_CC the_DT loop_NN ,_, seven_CD show_NN more_JJR changes_NNS in_IN the_DT loop_NN
+          than_IN on_IN the_DT non-mi_JJ RNA-encoding_NNP arm_NN and_CC three_CD have_VBP an_DT
+          equal_JJ number_NN of_IN changes_NNS on_IN the_DT loop_NN and_CC
+          non-mi_JJ RNA-encoding_NNP arm_NN (_( Figure_NN 2_CD a_DT ,_, class_NN 3_LS )_) ;_: only_RB one_CD
+          member_NN of_IN the_DT reference_NN set_VBN (_( miR-_NN 2_CD b-_NN 1_LS )_) shows_VBZ a_DT greater_JJR
+          number_NN of_IN changes_NNS on_IN the_DT non-mi_JJ RNA_NNP arm_NN than_IN the_DT loop_NN
+          (_( Figure_NN 2_CD a_DT ,_, class_NN 6_CD )_) ._. Finally_RB ,_, there_EX are_VBP no_DT cases_NNS where_WRB
+          both_DT arms_NNS have_VBP diverged_JJ (_( irrespective_RB of_IN loop_NN status_NN )_) ,_, a_DT
+          situation_NN that_WDT would_MD imply_VB that_IN the_DT miRNA_NN sequence_NN itself_PRP
+          had_VBD diverged_JJ (_( Figure_NN 2_CD a_DT ,_, class_NN 4_LS )_) ._.
+          We_PRP propose_VBP then_RB that_IN classes_NNS 1_CD -_: 3_CD represent_VB the_DT normal_JJ
+          pattern_NN of_IN evolutionary_JJ divergence_NN of_IN miRNAs_NNS ,_, and_CC
+          consider_VB 
+          Drosophila_NNP candidates_NNS that_WDT fall_NN
+          into_IN these_DT classes_NNS to_TO represent_VB '_POS good_JJ '_POS miRNA_NN candidates_NNS ._.
+          Conversely_RB ,_, we_PRP consider_VBP classes_NNS 4_CD -_: 6_CD to_TO have_VB a_DT low_JJ
+          probability_NN of_IN reflecting_VBG a_DT genuine_JJ miRNA_NN in_IN 
+          Drosophila_NNP ,_, regardless_RB of_IN how_WRB
+          '_POS impressive_JJ '_POS the_DT helical_JJ nature_NN of_IN the_DT conserved_JJ
+          stem-loop_JJ is_VBZ ._. Indeed_RB ,_, we_PRP tested_VBD one_CD class_NN 4_CD and_CC seven_CD
+          class_NN 5_CD candidates_NNS by_IN northern_JJ blot_NN and_CC failed_VBD to_TO observe_VB
+          expression_NN for_IN any_DT of_IN them_PRP ,_, despite_IN extensive_JJ ,_, conserved_JJ
+          stem-loop_JJ structure_NN (_( data_NNS not_RB shown_VBN )_) ._. We_PRP emphasize_VBP that_IN
+          these_DT evolutionary_JJ considerations_NNS are_VBP most_RBS relevant_JJ to_TO
+          relatively_RB closely_RB related_VBN species_NNS :_: since_IN the_DT loop_NN is_VBZ
+          much_RB shorter_JJR than_IN the_DT arms_NNS ,_, we_PRP expect_VBP class_NN 3_CD candidates_NNS
+          to_TO eventually_RB evolve_VB into_IN class_NN 6_CD candidates_NNS in_IN species_NNS
+          separated_VBN by_IN greater_JJR evolutionary_JJ distance_NN than_IN the_DT two_CD 
+          Drosophila_NNP species_NNS analyzed_VBD in_IN the_DT
+          present_JJ study_NN (_( Figure_NN 2_CD a_DT )_) ._.
+        
+        
+          Computational_NNP prediction_NN of_IN DrosophilamiRNA_NNP genes_NNS
+          using_VBG miRseeker_NN
+          
+            Extraction_NNP of_IN candidate_NN ,_, conserved_JJ ,_, '_'' nongenic_JJ '_''
+            Drosophilasequences_NNP
+            We_PRP first_JJ subdivided_JJ Release_NNP 3_CD of_IN the_DT 
+            D_NNP ._. melanogaster_NN genome_NN [_NN 36_CD ]_NN
+            into_IN 1_CD ,_, 287_CD contigs_NNS of_IN 100_CD ,_, 500_CD nucleotides_NNS each_DT ,_, with_IN
+            500_CD nucleotides_NNS of_IN overlap_VB at_IN either_DT end_NN ._. These_DT were_VBD
+            matched_VBN to_TO the_DT approximately_RB 18_CD ,_, 000_CD contigs_NNS in_IN the_DT
+            first_JJ assembly_NN of_IN the_DT 
+            D_NNP ._. pseudoobscura_NN genome_NN produced_VBN
+            by_IN the_DT Human_NNP Genome_NNP Sequencing_NNP Center_NNP at_IN the_DT Baylor_NNP
+            College_NNP of_IN Medicine_NNP [_NN 37_CD ]_NN ,_, using_VBG a_DT dataset_NN provided_VBN
+            by_IN the_DT Berkeley_NNP Genome_NNP Pipeline_NNP [_NN 38_CD ]_NN ._. We_PRP then_RB
+            aligned_VBN the_DT repeat-masked_JJ 
+            D_NNP ._. melanogaster_NN sequence_NN to_TO
+            corresponding_JJ 
+            D_NNP ._. pseudoobscura_NN sequence_NN using_VBG
+            the_DT global_JJ alignment_NN tool_NN AVID_NNP [_NN 35_CD 39_CD ]_NN ._. We_PRP
+            subsequently_RB eliminated_VBD from_IN the_DT alignment_NN all_DT
+            sequences_NNS associated_VBN with_IN the_DT following_VBG Release_NNP 3_CD ._. 1_CD
+            annotations_NNS [_NN 40_CD ]_NN :_: exons_NNS ,_, transposable_JJ elements_NNS ,_,
+            snRNA_NN ,_, snoRNA_NN ,_, tRNA_NN and_CC rRNA_NN genes_NNS ._. In_IN total_JJ ,_, we_PRP were_VBD
+            able_JJ to_TO align_VBP 51_CD ._. 3_LS out_IN of_IN 90_CD ._. 2_LS megabases_NNS of_IN intronic_JJ
+            and_CC intergenic_JJ 
+            D_NNP ._. melanogaster_NN sequence_NN by_IN this_DT
+            procedure_NN ._.
+            Using_VBG the_DT reference_NN set_VBD ,_, we_PRP empirically_RB determined_VBD
+            parameters_NNS for_IN extracting_VBG conserved_JJ sequences_NNS that_WDT
+            could_MD contain_VB miRNA_NN genes_NNS (_( designated_VBN as_IN '_POS regions_NNS '_POS )_) ._. We_PRP
+            found_VBD that_IN a_DT 100_CD -_: unit_NN segment_NN of_IN the_DT alignment_NN (_( where_WRB a_DT
+            unit_NN is_VBZ either_CC a_DT single_JJ paired_VBN or_CC gapped_JJ nucleotide_NN )_)
+            containing_VBG no_RB more_JJR than_IN 13_CD %_NN gaps_NNS or_CC 15_CD %_NN mismatches_NNS ,_, was_VBD
+            sufficient_JJ to_TO identify_VB all_DT known_VBN miRNA_NN genes_NNS within_IN
+            their_PRP$ respective_JJ genomic_JJ neighborhoods_NNS ,_, with_IN a_DT minimum_NN
+            of_IN additionally_RB selected_VBN sequences_NNS ._.
+            Conserved_NNP intergenic_JJ or_CC intronic_JJ sequences_NNS are_VBP
+            frequently_RB longer_JJR than_IN 100_CD nucleotides_NNS ._. We_PRP chose_VBD to_TO
+            evaluate_VB these_DT as_IN a_DT series_NN of_IN '_POS regions_NNS '_POS that_WDT overlap_VBP
+            each_DT other_JJ by_IN around_IN 10_CD nucleotides_NNS ,_, and_CC grouped_VBN these_DT
+            regions_NNS into_IN a_DT single_JJ '_POS super-region_JJ '_'' ._. The_DT rationale_NN for_IN
+            defining_VBG '_POS regions_NNS '_POS and_CC '_POS super-regions_JJ '_POS came_VBD from_IN our_PRP$
+            observation_NN that_IN RNA_NNP folding_VBG algorithms_NNS would_MD not_RB
+            necessarily_RB identify_VB characteristic_JJ pre-mi_JJ RNA_NNP
+            structures_NNS if_IN they_PRP were_VBD folded_VBN within_IN the_DT context_NN of_IN
+            longer_RBR RNAs_NNP ,_, owing_VBG to_TO base-pairing_JJ with_IN non-mi_JJ RNA_NNP
+            sequence_NN ._. Thus_RB ,_, region-folding_JJ should_MD offer_VB optimal_NN
+            structures_NNS ,_, while_IN tracking_NN of_IN super-regions_JJ would_MD
+            ensure_VB that_IN multiple_JJ overlapping_VBG regions_NNS were_VBD evaluated_VBN
+            as_IN a_DT single_JJ candidate_NN gene_NN ._. We_PRP took_VBD care_NN to_TO verify_VB that_IN
+            our_PRP$ windowing_VBG parameters_NNS segregated_VBD individual_JJ miRNAs_NNS
+            within_IN known_VBN miRNA_NN clusters_NNS (_( the_DT 
+            mir-_NN 2_CD ,_, 
+            mir-_NN 13_CD and_CC 
+            mir-_NN 3_CD →_NN mir-_NN 6_CD clusters_NNS [_NN 10_CD ]_NN )_)
+            into_IN distinct_JJ super-regions_JJ ._. This_DT analysis_NN identified_VBD
+            436_CD ,_, 000_CD conserved_JJ regions_NNS that_WDT originate_VB from_IN 118_CD ,_, 000_CD
+            super-regions_JJ ._.
+          
+          
+            Identification_NNP of_IN conserved_JJ stem-loops_JJ and_CC
+            evaluation_NN of_IN their_PRP$ quality_NN
+            We_PRP analyzed_VBD conserved_JJ regions_NNS with_IN mfold_NN 3_CD ._. 1_CD ,_, an_DT
+            RNA-folding_NNP algorithm_NN [_NN 41_CD ]_NN ._. As_IN miRNA_NN genes_NNS can_MD be_VB
+            located_VBN on_IN either_DT strand_NN ,_, and_CC the_DT quality_NN of_IN predicted_VBD
+            hairpin_NN structures_NNS can_MD vary_VB significantly_RB between_IN the_DT
+            respective_JJ strands_NNS (_( depending_VBG on_IN the_DT amount_NN of_IN G-U_NNP
+            base-pairing_JJ )_) ,_, we_PRP folded_VBD each_DT region_NN as_IN both_DT the_DT
+            forward_RB and_CC the_DT reverse_JJ complement_VB of_IN the_DT extracted_VBN
+            sequence_NN (_( 436_CD ,_, 000_CD regions_NNS ×_NN 2_CD =_SYM 872_CD ,_, 000_CD mfolds_NNS )_) ._.
+            Evaluation_NNP of_IN candidate_NN structures_NNS took_VBD into_IN account_NN
+            the_DT length_NN of_IN the_DT longest_JJS helical_JJ arm_NN (_( with_IN a_DT minimum_JJ
+            cutoff_NN of_IN 23_CD base-pairs_JJ )_) and_CC the_DT free_JJ energy_NN of_IN this_DT
+            isolated_JJ arm_NN (_( with_IN a_DT minimum_JJ cutoff_NN of_IN ΔG_NN ≤_NN -_: 23_CD ._. 0_CD
+            kcal_NN /_NN mol_NN )_) ._. The_DT physical_JJ resemblance_NN to_TO the_DT canonical_JJ
+            stem-loop_JJ precursor_NN was_VBD also_RB assessed_VBN with_IN metrics_NNS that_WDT
+            reward_NN continuous_JJ helical_JJ pairing_VBG and_CC progressively_RB
+            penalize_VB internal_JJ loops_NNS of_IN increasing_VBG size_NN ._. Since_IN
+            unpaired_JJ nucleotides_NNS in_IN known_VBN miRNAs_NNS have_VBP a_DT tendency_NN to_TO
+            be_VB found_VBN in_IN symmetric_JJ loops_NNS ,_, the_DT presence_NN of_IN asymmetric_JJ
+            loops_NNS and_CC bulged_JJ nucleotides_NNS was_VBD further_RBR penalized_VBN ._. The_DT
+            size_NN of_IN the_DT hairpin_NN loop_NN was_VBD not_RB specifically_RB evaluated_VBN
+            as_IN it_PRP appears_VBZ to_TO be_VB variable_JJ in_IN known_VBN pre-mi_JJ RNAs_NNP ;_:
+            however_RB it_PRP was_VBD indirectly_RB assessed_VBN ,_, as_IN maximization_NN of_IN
+            stem_NN length_NN concomitantly_RB minimizes_NNS terminal_NN loop_NN
+            size_NN ._.
+            Given_VBN a_DT 100_CD -_: nucleotide_NN input_NN sequence_NN ,_, mfold_NN 3_CD ._. 1_CD
+            typically_RB returns_VBZ one_CD to_TO six_CD alternate_JJ structures_NNS ,_, each_DT
+            containing_VBG one_CD to_TO four_CD helical_JJ arms_NNS ;_: thus_RB ,_, the_DT
+            structure_NN containing_VBG the_DT highest-scoring_JJ helical_JJ arm_NN
+            had_VBD to_TO be_VB determined_VBN for_IN each_DT folded_VBN sequence_NN ._. The_DT
+            highest-scoring_JJ region_NN in_IN each_DT super-region_JJ (_( which_WDT
+            could_MD be_VB located_VBN on_IN either_DT strand_NN )_) was_VBD then_RB saved_VBN as_IN
+            its_PRP$ representative_NN ,_, and_CC these_DT were_VBD ordered_VBN ._. For_IN the_DT top_JJ
+            25_CD ,_, 000_CD 
+            D_NNP ._. melanogaster_NN super-regions_JJ ,_, we_PRP
+            repeated_VBD this_DT analysis_NN on_IN all_DT regions_NNS in_IN the_DT
+            corresponding_JJ 
+            D_NNP ._. pseudoobscura_NN super-regions_JJ ._.
+            We_PRP averaged_VBD the_DT scores_NNS obtained_VBN for_IN each_DT aligned_VBN pair_NN
+            of_IN 
+            Dm_NNP /_NN Dp_NNP regions_NNS (_( termed_VBD a_DT
+            region-pair_JJ )_) and_CC selected_VBD the_DT highest-scoring_JJ
+            region-pair_JJ within_IN each_DT super-region_JJ as_IN its_PRP$ most_RBS
+            probable_JJ miRNA_NN candidate_NN sequence_NN ._. We_PRP then_RB searched_VBD for_IN
+            homologs_NNS of_IN these_DT selected_VBN regions_NNS in_IN 
+            Anopheles_NNP gambiae_NN using_VBG WU-BLAST_NNP
+            of_IN the_DT 
+            Dm_NNP sequence_NN [_NN 42_CD ]_NN ,_, extending_VBG
+            the_DT returned_VBD sequences_NNS as_IN necessary_JJ on_IN their_PRP$ 5_CD '_POS and_CC 3_CD '_POS
+            ends_VBZ to_TO make_VB 100_CD -_: nucleotide_NN windows_NNS equivalent_JJ to_TO the_DT
+            queried_VBN sequence_NN ._. The_DT top_JJ three_CD mosquito_NN hits_NNS were_VBD then_RB
+            folded_VBN and_CC scored_VBD as_IN before_RB ._. However_RB ,_, as_IN a_DT large_JJ
+            fraction_NN of_IN known_VBN fly_VB miRNAs_NNS lack_VBP mosquito_NN counterparts_NNS
+            (_( Table_NNP 1_LS )_) ,_, we_PRP decided_VBD to_TO rank_VB the_DT candidates_NNS solely_RB on_IN
+            their_PRP$ average_JJ 
+            Dm_NNP /_NN Dp_NNP score_NN ._.
+            miR-_NN 125_CD and_CC miR-_NN 2_CD c_SYM received_VBD exceptionally_RB low_JJ scores_NNS
+            in_IN this_DT analysis_NN ,_, while_IN miR-_NN 10_CD was_VBD absent_JJ because_IN it_PRP
+            was_VBD not_RB located_VBN in_IN an_DT alignable_JJ contig_NN in_IN the_DT first_JJ
+            available_JJ assembly_NN of_IN 
+            D_NNP ._. pseudoobscura_NN (_( although_IN it_PRP was_VBD
+            identifiable_JJ by_IN BLAST_NN search_NN )_) ._. The_DT other_JJ 21_CD members_NNS of_IN
+            the_DT reference_NN set_VBN fell_VBD into_IN the_DT top_JJ 600_CD or_CC so_RB in_IN the_DT
+            initial_JJ round_NN of_IN scoring_VBG ,_, indicating_VBG that_IN our_PRP$ method_NN of_IN
+            scoring_VBG stem-loops_JJ effectively_RB identified_VBN genuine_JJ
+            miRNAs_NNS from_IN among_IN the_DT 118_CD ,_, 000_CD conserved_JJ
+            super-regions_JJ ._.
+          
+          
+            Evaluation_NNP of_IN the_DT divergence_NN pattern_NN in_IN conserved_JJ
+            stem-loops_JJ
+            As_IN discussed_VBN earlier_JJR ,_, 23_CD /_NN 24_CD members_NNS of_IN the_DT 
+            Drosophila_NNP reference_NN set_VBN are_VBP
+            described_VBN by_IN one_CD of_IN three_CD patterns_NNS of_IN divergence_NN
+            (_( Figure_NN 2_CD a_DT ,_, classes_NNS 1_CD -_: 3_LS )_) ._. In_IN the_DT final_JJ set_NN of_IN tests_NNS ,_, we_PRP
+            implemented_VBD a_DT series_NN of_IN Boolean_NNP filters_NNS to_TO eliminate_VB
+            high-scoring_JJ ,_, conserved_JJ stem-loops_JJ whose_WP$ patterns_NNS of_IN
+            nucleotide_NN divergence_NN are_VBP incompatible_JJ with_IN a_DT high_JJ
+            likelihood_NN of_IN representing_VBG genuine_JJ miRNAs_NNS (_( Figure_NN 2_CD a_DT ,_,
+            classes_NNS 4_CD -_: 6_CD )_) ._.
+            We_PRP began_VBD this_DT analysis_NN by_IN trimming_VBG the_DT 100_CD -_: unit_NN
+            region_NN to_TO exclude_VB sequences_NNS at_IN the_DT ends_NNS of_IN the_DT windowed_JJ
+            sequence_NN that_WDT lie_VBP outside_IN of_IN the_DT main_JJ helical_JJ arm_NN ._. We_PRP
+            then_RB defined_VBD a_DT potential_JJ miRNA_NN candidate_NN sequence_NN as_IN
+            being_VBG a_DT perfectly_RB conserved_JJ block_NN of_IN sequence_NN greater_JJR
+            than_IN 22_CD nucleotides_NNS in_IN length_NN located_VBN less_JJR than_IN 10_CD
+            nucleotides_NNS from_IN the_DT end_NN of_IN the_DT terminal_NN loop_NN ,_, and_CC
+            eliminated_VBD those_DT candidates_NNS that_WDT did_VBD not_RB contain_VB a_DT
+            potential_JJ miRNA_NN (_( Figure_NN 2_CD a_DT ,_, class_NN 4_LS )_) ._. If_IN both_DT arms_NNS
+            passed_VBD this_DT test_NN ,_, it_PRP was_VBD kept_VBN as_IN a_DT miRNA_NN candidate_NN
+            regardless_RB of_IN loop_NN status_NN (_( Figure_NN 2_CD a_DT ,_, classes_NNS 1_CD and_CC 2_LS )_)
+            as_IN either_DT arm_NN could_MD potentially_RB contain_VB a_DT miRNA_NN ._. The_DT
+            remaining_VBG candidates_NNS contain_VBP only_RB a_DT single_JJ conserved_JJ
+            candidate_NN miRNA_NN arm_NN ._. We_PRP defined_VBD the_DT nonconserved_JJ arm_NN as_IN
+            the_DT non-mi_JJ RNA-encoding_NNP arm_NN and_CC eliminated_VBD the_DT candidate_NN
+            if_IN it_PRP displayed_VBD a_DT perfectly_RB conserved_JJ loop_NN (_( Figure_NN 2_CD a_DT ,_,
+            class_NN 5_LS )_) ._. The_DT remaining_VBG candidates_NNS contain_VBP divergent_JJ
+            positions_NNS in_IN both_DT the_DT loop_NN and_CC the_DT non-mi_JJ RNA-encoding_NNP
+            arm_NN ._. We_PRP eliminated_VBD those_DT that_WDT contained_VBD more_JJR than_IN four_CD
+            additional_JJ non-conserved_JJ positions_NNS in_IN the_DT
+            non-mi_JJ RNA-encoding_NNP arm_NN compared_VBN to_TO within_IN the_DT loop_NN
+            (_( Figure_NN 2_CD a_DT ,_, class_NN 6_CD )_) ,_, leaving_VBG behind_IN class_NN 3_CD candidates_NNS
+            as_IN potential_JJ miRNAs_NNS ._. Of_IN the_DT reference_NN set_VBD miRNAs_NNS ,_, only_RB
+            mir-_NN 2_CD b-_NN 1_CD failed_VBD these_DT filters_NNS (_( as_IN a_DT class_NN 6_CD miRNA_NN )_) ,_,
+            even_RB though_IN it_PRP received_VBD the_DT eighth_JJ highest_JJS score_NN of_IN all_DT
+            super-regions_JJ in_IN the_DT entire_JJ euchromatic_JJ sequence_NN of_IN the_DT
+            drosophilid_NN genomes_NNS ._.
+            Only_RB about_IN one-third_NN of_IN the_DT highest-scoring_JJ
+            conserved_JJ stem-loops_JJ passed_VBD these_DT filters_NNS (_( with_IN an_DT even_RB
+            greater_JJR fraction_NN of_IN lower-scoring_JJ candidates_NNS failing_VBG
+            these_DT filters_NNS )_) ,_, leaving_VBG behind_IN around_IN 200_CD candidates_NNS
+            from_IN the_DT initial_JJ top_JJ 600_CD ._. Of_IN the_DT reference_NN set_VBD ,_, 18_CD /_NN 24_CD
+            (_( 75_CD %_NN )_) reside_VB in_IN the_DT first_JJ 124_CD candidates_NNS ,_, demonstrating_VBG
+            that_IN the_DT overall_JJ procedure_NN robustly_RB selected_VBD for_IN
+            genuine_JJ miRNAs_NNS (_( Figure_NN 4_CD ,_, Table_NNP 1_LS )_) ._. A_DT second_JJ measure_NN of_IN
+            the_DT utility_NN of_IN assessing_VBG patterns_NNS of_IN nucleotide_NN
+            divergence_NN is_VBZ their_PRP$ ability_NN to_TO select_VB against_IN
+            self-complementary_JJ repeats_NNS ._. Many_JJ high-scoring_JJ
+            candidates_NNS were_VBD previously_RB noticed_VBN to_TO be_VB rich_JJ in_IN
+            complementary_JJ nucleotide_NN repeats_VBZ (_( such_JJ as_IN CAG_NNP ,_, UUG_NNP and_CC
+            CUG_NNP ,_, AUAU_NNP ,_, or_CC poly_RB (_( A_DT )_) -_: poly_RB (_( U_NNP )_) repeats_VBZ )_) and_CC were_VBD
+            presumed_VBN to_TO be_VB poor_JJ candidates_NNS in_IN spite_NN of_IN occasionally_RB
+            remarkable_JJ helical_JJ structure_NN :_: nearly_RB all_DT of_IN them_PRP were_VBD
+            eliminated_VBN by_IN the_DT step_NN 3_CD filters_NNS ._. We_PRP have_VBP generated_VBN a_DT
+            web_NN interface_NN where_WRB folded_VBD structures_NNS and_CC evaluation_NN of_IN
+            the_DT top_JJ 208_CD miRseeker_NN candidates_NNS may_MD be_VB accessed_JJ [_NN 43_CD ]_NN
+            ._.
+            Candidate_NNP mature_VBP miRNA_NN sequences_NNS were_VBD defined_VBN by_IN the_DT
+            bounds_NNS of_IN the_DT perfectly_RB conserved_JJ sequence_NN ._. A_DT total_NN of_IN
+            42_CD novel_NN candidates_NNS in_IN the_DT top_JJ 208_CD miRseeker_NN
+            predictions_NNS were_VBD supported_VBN by_IN additional_JJ evidence_NN of_IN
+            sequence_NN and_CC structural_JJ conservation_NN in_IN a_DT third_JJ species_NNS
+            (_( primarily_RB 
+            Anopheles_NNP and_CC 
+            Apis_NNP ,_, with_IN a_DT smaller_JJR fraction_NN in_IN
+            nematodes_NNS or_CC vertebrates_NNS )_) ._. In_IN cases_NNS where_WRB candidate_NN
+            miRNAs_NNS were_VBD identifiable_JJ in_IN non-insect_JJ species_NNS ,_, a_DT
+            putative_JJ 21_CD -_: 24_CD nucleotide_NN product_NN was_VBD usually_RB evident_JJ ._.
+            A_DT predicted_VBN miRNA_NN produced_VBN from_IN candidates_NNS whose_WP$ only_RB
+            homologs_NNS were_VBD found_VBN in_IN other_JJ insects_NNS could_MD usually_RB be_VB
+            inferred_VBN to_TO within_IN 5_CD nucleotides_NNS (_( Table_NNP 1_LS )_) ._.
+          
+        
+        
+          Experimental_NNP verification_NN of_IN novel_NN candidate_NN
+          miRNAs_NNS
+          We_PRP next_RB sought_VBN to_TO validate_NN the_DT predicted_VBD miRNAs_NNS by_IN
+          northern_JJ blot_NN of_IN total_JJ RNA_NNP isolated_VBD from_IN 0_CD -_: 24_CD hour_NN
+          embryos_NNS ,_, third_JJ instar_NN larvae_NN and_CC early_JJ pupae_NN ,_, and_CC adult_NN
+          males_NNS ._. The_DT total_JJ number_NN of_IN genes_NNS authenticated_JJ by_IN this_DT
+          method_NN is_VBZ an_DT underestimate_NN ,_, for_IN two_CD main_JJ reasons_NNS ._. First_LS ,_,
+          the_DT mature_VBP miRNA_NN can_MD be_VB derived_VBN from_IN either_DT arm_NN of_IN a_DT
+          given_VBN stem-loop_JJ ,_, and_CC many_JJ predicted_VBD pre-mi_JJ RNAs_NNP fold_VB well_RB
+          on_IN either_DT strand_NN ._. In_IN some_DT cases_NNS (_( such_JJ as_IN miR-_NN 4_CD and_CC
+          miR-_NN 100_CD )_) ,_, the_DT nontranscribed_JJ strand_NN actually_RB adopts_VBZ a_DT
+          fold_VB with_IN longer_JJR continuous_JJ helices_NNS than_IN does_VBZ the_DT
+          transcribed_JJ strand_NN ._. As_IN we_PRP tested_VBD one_CD or_CC two_CD probes_NNS for_IN
+          each_DT candidate_NN ,_, a_DT false-negative_JJ result_NN will_MD have_VB been_VBN
+          obtained_VBN if_IN we_PRP tested_VBD either_CC the_DT incorrect_JJ arm_NN or_CC strand_NN
+          of_IN a_DT putative_JJ miRNA_NN ._. Second_JJ ,_, a_DT significant_JJ fraction_NN of_IN
+          miRNAs_NNS are_VBP likely_JJ to_TO be_VB expressed_VBN at_IN extremely_RB low_JJ levels_NNS
+          or_CC in_IN a_DT highly_RB tissue-specific_JJ manner_NN ,_, and_CC so_RB may_MD not_RB be_VB
+          amenable_JJ to_TO confirmation_NN by_IN these_DT means_NNS ._. With_IN these_DT
+          concerns_NNS in_IN mind_NN ,_, we_PRP tested_VBD 38_CD candidate_NN genes_NNS from_IN two_CD
+          classes_NNS of_IN predicted_VBD miRNAs_NNS :_: 27_CD that_WDT were_VBD conserved_JJ
+          outside_IN of_IN 
+          Drosophila_NNP (_( 25_CD of_IN which_WDT were_VBD
+          high-scoring_JJ candidates_NNS )_) and_CC 11_CD high-scoring_JJ ,_, 
+          Drosophila_NNP -_: specific_JJ candidates_NNS ._.
+          This_DT analysis_NN confirmed_VBD 24_CD novel_NN miRNA_NN genes_NNS that_WDT give_VBP
+          rise_NN to_TO processed_VBN 21_CD -_: 24_CD nucleotide_NN RNAs_NNP (_( Figure_NN 5_CD ,_, Table_NNP
+          2_LS )_) ._.
+          The_DT expression_NN profiles_NNS of_IN computationally_RB identifed_JJ
+          miRNAs_NNS during_IN development_NN were_VBD much_RB more_RBR heterogenous_JJ
+          than_IN those_DT of_IN the_DT known_VBN set_NN of_IN embryonically_RB derived_VBN
+          miRNAs_NNS [_NN 10_CD ]_NN ._. We_PRP identified_VBD miRNAs_NNS whose_WP$ expression_NN was_VBD
+          highly_RB restricted_VBN to_TO individual_JJ developmental_NN periods_NNS
+          (_( embryogenesis_NNS ,_, larval_NN /_NN pupal_NN development_NN ,_, or_CC adulthood_NN )_) ,_,
+          ones_NNS expressed_VBD in_IN two_CD of_IN these_DT developmental_NN windows_NNS ,_, and_CC
+          ones_NNS expressed_VBD throughout_IN development_NN ,_, either_CC at_IN a_DT
+          relatively_RB uniform_NN level_NN or_CC in_IN a_DT progressive_JJ fashion_NN ._.
+          Selected_JJ hybridizations_NNS that_WDT illustrate_VBP the_DT different_JJ
+          temporal_JJ and_CC quantitative_JJ profiles_NNS are_VBP shown_VBN in_IN Figure_NN
+          5_CD and_CC the_DT collected_VBN northern_JJ data_NNS are_VBP summarized_VBD in_IN Table_NNP
+          2_CD ._. We_PRP also_RB note_VBP that_IN these_DT experimentally_RB verified_VBN miRNAs_NNS
+          vary_VBP tremendously_RB in_IN abundance_NN ,_, with_IN several_JJ being_NN two_CD to_TO
+          three_CD orders_NNS of_IN magnitude_NN less_RBR abundant_JJ than_IN miRNAs_NNS
+          discovered_VBN by_IN direct_JJ cloning_VBG ._. Other_JJ undetected_JJ miRNAs_NNS
+          orthologous_JJ to_TO ones_NNS cloned_VBN in_IN other_JJ species_NNS (_( that_WDT is_VBZ ,_,
+          miR-_NN 137_CD and_CC miR-_NN 219_CD ,_, Table_NNP 1_LS )_) may_MD be_VB present_JJ at_IN even_RB
+          lower_JJR levels_NNS ._. This_DT suggests_VBZ that_IN their_PRP$ identification_NN by_IN
+          sequencing_VBG miRNA_NN cDNA_NN libraries_NNS would_MD have_VB been_VBN
+          unlikely_JJ ._.
+          In_IN total_JJ ,_, we_PRP observed_VBD expression_NN for_IN 20_CD out_IN of_IN 27_CD
+          (_( 74_CD %_NN )_) candidate_NN genes_NNS that_WDT were_VBD conserved_JJ outside_IN 
+          Drosophila_NNP and_CC 4_CD out_IN of_IN 11_CD (_( 36_CD %_NN )_) of_IN
+          high-scoring_JJ 
+          Drosophila_NNP -_: specific_JJ predictions_NNS
+          (_( Figure_NN 4_CD b_SYM )_) ._. Two_CD of_IN the_DT former_JJ class_NN were_VBD low-scoring_JJ
+          candidates_NNS that_WDT were_VBD nonetheless_RB conserved_JJ in_IN 
+          Anopheles_NNP (_( miR-_NN 287_CD and_CC miR-_NN 288_CD )_) ,_,
+          indicating_VBG that_IN third-species_JJ conservation_NN is_VBZ in_IN our_PRP$
+          hands_VBZ a_DT very_RB strong_JJ indicator_NN of_IN a_DT candidate_NN gene_NN 's_POS
+          validity_NN ._. Table_NNP 1_CD lists_NNS 
+          bona_JJ fide_JJ Drosophila_NNP miRNAs_NNS that_WDT
+          scored_VBD in_IN the_DT top_JJ 208_CD ,_, grouped_VBN as_IN members_NNS of_IN the_DT
+          reference_NN set_VBN followed_VBN by_IN newly_RB identified_VBN miRNAs_NNS that_WDT
+          fulfill_VBP accepted_VBD criteria_NNS for_IN miRNA_NN biogenesis_NNS (_( that_WDT is_VBZ ,_,
+          ones_NNS whose_WP$ expression_NN was_VBD confirmed_VBN here_RB by_IN northern_JJ blot_NN
+          and_CC /_NN or_CC are_VBP homologous_RB to_TO miRNAs_NNS cloned_VBN in_IN other_JJ species_NNS )_) ;_:
+          each_DT subset_NN is_VBZ rank-ordered_JJ by_IN miRseeker_NN score_NN ._. The_DT
+          high-scoring_JJ ,_, third-species-conserved_JJ candidates_NNS whose_WP$
+          expression_NN is_VBZ unverified_JJ at_IN present_JJ (_( either_CC untested_JJ or_CC
+          negative_JJ by_IN northern_JJ blot_NN )_) are_VBP listed_VBN separately_RB ;_: they_PRP
+          are_VBP provisionally_RB referred_VBN to_TO by_IN their_PRP$ nucleotide_NN
+          position_NN along_IN the_DT chromosome_NN arm_NN (_( that_WDT is_VBZ ,_, 2_CD R_NN :_: 4681879_CD )_) ._.
+          We_PRP note_VBP that_IN while_IN this_DT work_NN was_VBD in_IN preparation_NN ,_, forward_RB
+          genetic_JJ analysis_NN of_IN 
+          bantam_NN demonstrated_VBN that_IN it_PRP encodes_NNS
+          a_DT miRNA_NN [_NN 44_CD ]_NN that_WDT was_VBD identified_VBN as_IN a_DT high-scoring_JJ
+          candidate_NN by_IN miRseeker_NN ._. In_IN addition_NN ,_, a_DT subset_NN of_IN the_DT
+          newly_RB identified_VBN miRNAs_NNS (_( miR-_NN 34_CD ,_, miR-_NN 79_CD ,_, miR-_NN 87_CD ,_, miR-_NN 92_CD a_DT ,_,
+          miR-_NN 124_CD b_SYM ,_, miR-_NN 133_CD and_CC miR-_NN 263_CD a_DT )_) were_VBD independently_RB found_VBN
+          by_IN homology_NN search_NN or_CC by_IN informatic_JJ means_VBZ and_CC confirmed_VBN
+          by_IN northern_JJ analysis_NN while_IN this_DT work_NN was_VBD under_IN review_NN [_NN
+          34_CD 45_CD ]_NN ._.
+          Conservation_NNP alone_RB is_VBZ an_DT insufficient_JJ criterion_NN for_IN
+          assessing_VBG the_DT validity_NN of_IN a_DT miRNA_NN [_NN 46_CD ]_NN ._. Indeed_RB ,_, one_CD
+          high-scoring_JJ candidate_NN (_( number_NN 78_CD ,_, 2_CD L_NNP :_: 13233310_CD that_WDT is_VBZ
+          strongly_RB conserved_JJ in_IN 
+          Anopheles_NNP and_CC was_VBD identified_VBN by_IN
+          miRseeker_NN appears_VBZ to_TO be_VB an_DT unannotated_JJ U_NNP 2_CD snRNA_NN [_NN 43_CD ]_NN ._.
+          Nevertheless_RB ,_, our_PRP$ high_JJ success_NN rate_NN (_( 20_CD /_NN 27_CD )_) leads_VBZ us_PRP to_TO
+          believe_VB that_DT failure_NN to_TO observe_VB expression_NN of_IN a_DT
+          high-scoring_JJ ,_, third-species-conserved_JJ miRseeker_NN candidate_NN
+          could_MD reflect_VB a_DT false-negative_JJ result_NN ._. As_IN an_DT example_NN ,_, we_PRP
+          show_VBP alignments_NNS and_CC RNA_NNP folds_NNS of_IN the_DT four_CD insect_NN
+          orthologs_NNS of_IN 2_CD R_NN :_: 11128979_CD ,_, which_WDT all_DT adopt_VBP canonical_JJ ,_,
+          high-scoring_JJ stem-loop_JJ structures_NNS and_CC collectively_RB
+          display_VB patterns_NNS of_IN nucleotide_NN divergence_NN characteristic_NN
+          of_IN genuine_JJ miRNAs_NNS (_( preponderance_NN of_IN divergence_NN within_IN the_DT
+          loop_NN ,_, slightly_RB less_JJR divergence_NN along_IN a_DT nonconserved_JJ arm_NN ,_,
+          and_CC perfect_JJ conservation_NN of_IN a_DT putative_JJ miRNA-encoding_JJ
+          arm_NN )_) (_( Figure_NN 6_CD )_) ._. Although_IN in_IN this_DT case_NN evidence_NN for_IN
+          expression_NN of_IN either_DT strand_NN by_IN northern_JJ analysis_NN was_VBD not_RB
+          obtained_VBN ,_, it_PRP was_VBD subsequently_RB found_VBN to_TO be_VB orthologous_JJ to_TO
+          miR-_NN 137_CD ,_, and_CC thus_RB accepted_VBD as_IN a_DT genuine_JJ miRNA_NN ._. We_PRP
+          hypothesize_NN that_IN other_JJ novel_NN ,_, high-scoring_JJ candidates_NNS
+          with_IN a_DT similar_JJ level_NN of_IN third-species-conservation_JJ but_CC
+          which_WDT lack_VBP evidence_NN of_IN expression_NN may_MD in_IN fact_NN be_VB genuine_JJ ,_,
+          thus_RB implying_VBG up_IN to_TO 7_CD /_NN 27_CD (_( 26_CD %_NN )_) false-negative_JJ rate_NN of_IN
+          northern_JJ analysis_NN ._.
+          Together_RB ,_, these_DT data_NNS allow_VBP us_PRP to_TO estimate_VB the_DT number_NN
+          of_IN 
+          Drosophila_NNP miRNA_NN genes_NNS ._. In_IN the_DT
+          first_JJ 124_CD candidates_NNS ,_, there_EX are_VBP 18_CD members_NNS of_IN the_DT
+          reference_NN set_VBN and_CC 25_CD novel_NN miRNAs_NNS that_WDT meet_VBP accepted_VBD
+          criteria_NNS for_IN representing_VBG genuine_JJ miRNAs_NNS ._. Of_IN the_DT
+          remaining_VBG candidates_NNS ,_, around_IN 36_CD %_NN may_MD be_VB genuine_JJ ,_, although_IN
+          this_DT rises_VBZ to_TO a_DT maximum_NN of_IN approximately_RB 62_CD %_NN if_IN one_CD
+          considers_VBZ the_DT inferred_VBN false-negative_JJ rate_NN of_IN northern_JJ
+          analysis_NN ._. Thus_RB ,_, there_EX may_MD be_VB between_IN 81_CD ×_NN (_( 0_CD ._. 36_CD to_TO 0_CD ._. 62_CD )_)
+          =_SYM 29_CD to_TO 50_CD additional_JJ miRNAs_NNS in_IN this_DT list_NN of_IN unverified_JJ
+          and_CC /_NN or_CC untested_JJ candidates_NNS ._. Therefore_RB ,_, we_PRP estimate_VBP 72_CD -_: 93_CD
+          miRNAs_NNS (_( 18_CD reference_NN +_NN 25_CD novel_NN verified_VBN genes_NNS +_NN 29_CD -_: 50_CD
+          additional_JJ unverified_JJ candidates_NNS )_) at_IN a_DT cutoff_NN that_WDT
+          includes_VBZ 18_CD /_NN 24_CD (_( 75_CD %_NN )_) members_NNS of_IN the_DT reference_NN set_VBD ,_,
+          allowing_VBG us_PRP to_TO extrapolate_NN that_IN drosophilid_NN genomes_NNS may_MD
+          contain_VB 96_CD -_: 124_CD ,_, or_CC around_IN 110_CD miRNA_NN genes_NNS ._. This_DT suggests_VBZ
+          that_IN nearly_RB 1_CD %_NN of_IN 
+          Drosophila_NNP genes_NNS are_VBP miRNAs_NNS ,_, a_DT
+          figure_NN that_WDT is_VBZ in_IN relative_JJ accord_NN with_IN the_DT percentage_NN
+          recently_RB ascribed_VBN to_TO vertebrate_NN genomes_NNS [_NN 31_CD ]_NN ._.
+        
+        
+          miRNA_NN genes_NNS :_: clusters_NNS and_CC paralogs_NNS
+          A_DT subset_NN of_IN miRNA_NN genes_NNS are_VBP known_VBN to_TO reside_VB in_IN local_JJ
+          genomic_JJ clusters_NNS with_IN possible_JJ operon-like_JJ organization_NN ._.
+          The_DT largest_JJS cluster_NN of_IN miRNA_NN genes_NNS in_IN 
+          Drosophila_NNP includes_VBZ six_CD that_WDT were_VBD
+          previously_RB identified_VBN as_IN the_DT 
+          mir-_NN 3_CD →_NN mir-_NN 6_CD -_: 3_CD cluster_NN [_NN 10_CD ]_NN ._. We_PRP
+          identified_VBD two_CD additional_JJ conserved_JJ stem-loop_JJ structures_NNS
+          that_WDT flank_NN 
+          mir-_NN 3_CD (_( Figure_NN 7_CD a_DT )_) ,_, one_CD of_IN which_WDT (_( 
+          mir-_NN 286_CD )_) was_VBD confirmed_VBN by_IN northern_JJ
+          blot_NN (_( Figure_NN 5_CD a_DT )_) ._. Surprisingly_RB ,_, 
+          mir-_NN 286_CD is_VBZ the_DT only_JJ member_NN of_IN this_DT
+          seven-mi_JJ RNA_NNP cluster_NN that_WDT is_VBZ conserved_JJ in_IN 
+          Anopheles_NNP ,_, indicating_VBG tremendous_JJ
+          flux_NN in_IN the_DT miRNA_NN content_NN of_IN this_DT region_NN even_RB within_IN the_DT
+          Diptera_NNP ._. We_PRP also_RB observed_VBD that_DT miR-_NN 286_CD is_VBZ related_VBN at_IN its_PRP$
+          5_CD '_POS end_NN to_TO another_DT experimentally_RB verified_VBN miRNA_NN (_( miR-_NN 279_CD ,_,
+          Figure_NN 5_CD h_NN )_) ,_, suggesting_VBG that_IN they_PRP may_MD have_VB related_VBN
+          functions_NNS ._.
+          The_DT volatility_NN of_IN miRNA_NN genes_NNS is_VBZ further_RBR indicated_VBN by_IN
+          members_NNS of_IN the_DT miR-_NN 2_CD /_NN miR-_NN 13_CD K_NNP box_NN subfamily_RB [_NN 47_CD ]_NN ._.
+          Seven_CD members_NNS were_VBD previously_RB reported_VBN that_WDT are_VBP scattered_VBN
+          in_IN four_CD genomic_JJ locations_NNS on_IN three_CD different_JJ chromosome_NN
+          arms_NNS ,_, including_VBG a_DT cluster_NN of_IN three_CD 
+          mir-_NN 2_CD genes_NNS on_IN 2_CD L_NNP and_CC a_DT cluster_NN of_IN
+          two_CD 
+          mir-_NN 13_CD genes_NNS on_IN 3_CD R_NN ;_: we_PRP also_RB
+          identified_VBD an_DT additional_JJ paralog_NN of_IN 
+          mir-_NN 2_CD (_( 
+          mir-_NN 2_CD c_SYM )_) that_WDT is_VBZ located_VBN in_IN the_DT 
+          mir-_NN 13_CD cluster_NN ._. Unexpectedly_NNP ,_, the_DT 
+          Anopheles_NNP genome_NN contains_VBZ only_RB four_CD
+          members_NNS of_IN this_DT subfamily_RB ,_, and_CC all_DT are_VBP located_VBN in_IN a_DT
+          single_JJ cluster_NN on_IN 2_CD L_NNP (_( Figure_NN 7_CD b_SYM )_) ;_: the_DT same_JJ four_CD members_NNS
+          were_VBD identifiable_JJ in_IN the_DT unassembled_JJ genomic_JJ sequence_NN of_IN 
+          Apis_NNP [_NN 48_CD ]_NN ._. The_DT simplest_JJS scenario_NN
+          is_VBZ that_IN members_NNS of_IN the_DT K_NNP box-family_JJ have_VBP undergone_VBN
+          radical_JJ duplication_NN and_CC dispersal_NN about_IN the_DT genome_NN in_IN 
+          Drosophila_NNP ._. This_DT is_VBZ consistent_JJ
+          with_IN the_DT finding_VBG that_IN the_DT remaining_VBG members_NNS of_IN the_DT K-_NNP box_NN
+          family_NN [_NN 47_CD ]_NN ,_, including_VBG 
+          mir-_NN 11_CD ,_, the_DT three_CD 
+          mir-_NN 6_CD paralogs_NNS and_CC the_DT
+          K-_NNP box-antisense_JJ gene_NN 
+          mir-_NN 5_CD ,_, are_VBP similarly_RB absent_JJ from_IN
+          both_DT 
+          Anopheles_NNP and_CC 
+          Apis_NNP ._. However_RB ,_, one_CD new_JJ putative_JJ
+          member_NN of_IN the_DT K-_NNP box_NN family_NN (_( 2_CD R_NN :_: 4681879_CD )_) was_VBD identified_VBN by_IN
+          miRseeker_NN ,_, and_CC it_PRP has_VBZ been_VBN conserved_JJ in_IN all_DT four_CD
+          sequenced_JJ insect_NN genomes_NNS ._.
+          Another_DT notable_JJ cluster_NN that_WDT includes_VBZ previously_RB
+          identified_VBN miRNAs_NNS is_VBZ one_CD containing_VBG 
+          mir-_NN 100_CD ,_, 
+          let-_NN 7_CD and_CC 
+          mir-_NN 125_CD (_( Figure_NN 7_CD c_SYM )_) ._. miR-_NN 125_CD is_VBZ an_DT
+          apparent_JJ homolog_NN of_IN 
+          C_NNP ._. elegans_NNS lin-_NN 4_CD [_NN 29_CD ]_NN ,_, which_WDT
+          functions_NNS with_IN let-_NN 7_CD to_TO regulate_VB developmental_NN timing_NN in_IN
+          nematodes_NNS ._. Although_IN complementary_JJ sites_NNS for_IN both_DT miRNAs_NNS
+          are_VBP found_VBN in_IN the_DT 3_CD '_POS UTRs_NNP of_IN several_JJ putative_JJ nematode_NN
+          targets_NNS ,_, these_DT miRNAs_NNS are_VBP not_RB physically_RB linked_VBN in_IN the_DT 
+          C_NNP ._. elegans_NNS genome_NN and_CC their_PRP$ mutant_JJ
+          phenotypes_NNS are_VBP principally_RB due_JJ to_TO misregulation_NN of_IN
+          different_JJ transcripts_NNS [_NN 4_CD 5_CD 6_CD 8_CD ]_NN ._. The_DT function_NN of_IN these_DT
+          miRNAs_NNS has_VBZ not_RB yet_RB been_VBN explicitly_RB demonstrated_VBN in_IN other_JJ
+          species_NNS ,_, but_CC 
+          Drosophila_NNP let-_NN 7_CD is_VBZ regulated_VBN at_IN
+          the_DT larval-pupal_JJ transition_NN by_IN ecdysone_NN [_NN 49_CD ]_NN ,_, and_CC all_DT
+          three_CD members_NNS of_IN this_DT cluster_NN are_VBP present_JJ in_IN other_JJ
+          insects_NNS and_CC in_IN vertebrates_NNS ,_, thus_RB implying_VBG broadly_RB
+          conserved_JJ functions_NNS ._. Their_PRP$ existence_NN in_IN a_DT gene_NN cluster_NN in_IN
+          
+          Drosophila_NNP and_CC 
+          Anopheles_NNP (_( data_NNS not_RB shown_VBN )_) may_MD
+          imply_VB that_IN their_PRP$ functions_NNS overlap_VBP to_TO a_DT greater_JJR extent_NN in_IN
+          insects_NNS than_IN in_IN nematodes_NNS ._. This_DT could_MD explain_VB why_WRB
+          individual_JJ let-_NN 7_CD or_CC miR-_NN 125_CD mutants_NNS with_IN strong_JJ
+          developmental_NN defects_NNS have_VBP not_RB yet_RB been_VBN identified_VBN in_IN 
+          Drosophila_NNP by_IN genetic_JJ means_NNS ._. Our_PRP$
+          observation_NN that_IN the_DT temporal_JJ expression_NN profile_NN of_IN
+          miR-_NN 100_CD (_( Figure_NN 5_CD d_SYM )_) is_VBZ similar_JJ to_TO that_DT described_VBD for_IN
+          let-_NN 7_CD and_CC miR-_NN 125_CD (_( that_WDT is_VBZ ,_, expression_NN is_VBZ initiated_VBN
+          during_IN larval_NN /_NN pupal_NN development_NN and_CC continues_VBZ through_IN
+          adulthood_NN [_NN 9_CD 29_CD ]_NN )_) is_VBZ consistent_JJ with_IN probable_JJ
+          coordinate_VB expression_NN of_IN all_DT three_CD as_IN a_DT single_JJ pri-mi_JJ RNA_NNP
+          transcript_NN ,_, and_CC may_MD further_RB implicate_VB miR-_NN 100_CD in_IN
+          developmental_NN timing_NN ._. While_IN this_DT work_NN was_VBD under_IN review_NN ,_,
+          the_DT clustering_VBG of_IN miR-_NN 100_CD ,_, let-_NN 7_CD and_CC miR-_NN 125_CD was_VBD
+          independently_RB reported_VBN ;_: these_DT researchers_NNS also_RB provide_VBP
+          evidence_NN for_IN coordinate_VB expression_NN of_IN these_DT miRNAs_NNS as_IN a_DT
+          single_JJ pri-mi_JJ RNA_NNP [_NN 45_CD 50_CD ]_NN ._.
+          The_DT characteristics_NNS of_IN miR-_NN 100_CD are_VBP highly_RB unusual_JJ and_CC
+          thus_RB serve_VB as_IN a_DT useful_JJ caution_NN ._. First_LS ,_, although_IN miRseeker_NN
+          correctly_RB identified_VBD it_PRP as_IN a_DT high-scoring_JJ conserved_JJ
+          stem-loop_JJ ,_, the_DT incorrect_JJ strand_NN was_VBD identified_VBN as_IN its_PRP$
+          nontranscribed_JJ strand_NN adopts_VBZ greater_JJR helical_JJ structure_NN
+          than_IN does_VBZ its_PRP$ transcribed_JJ strand_NN ._. Second_JJ ,_, it_PRP is_VBZ the_DT only_RB
+          confirmed_VBN 
+          Drosophila_NNP miRNA_NN that_IN deviates_NNS from_IN
+          the_DT expected_VBN pattern_NN of_IN divergence_NN in_IN two_CD fundamental_JJ
+          ways_NNS :_: it_PRP not_RB only_RB contains_VBZ a_DT mismatch_NN on_IN the_DT arm_NN while_IN
+          maintaining_VBG a_DT perfectly_RB conserved_JJ loop_NN (_( and_CC thus_RB failed_VBD
+          the_DT conservation_NN filter_NN as_IN a_DT class_NN 5_CD candidate_NN )_) ,_, but_CC the_DT
+          mismatch_NN actually_RB resides_VBZ within_IN the_DT mature_VBP miRNA_NN
+          sequence_NN itself_PRP ._. Therefore_RB ,_, the_DT identification_NN of_IN miR-_NN 100_CD
+          in_IN flies_VBZ relied_VBN upon_IN its_PRP$ conservation_NN in_IN other_JJ
+          species_NNS ._.
+          We_PRP identified_VBD several_JJ additional_JJ examples_NNS of_IN closely_RB
+          linked_VBN miRNAs_NNS that_WDT are_VBP transcribed_JJ from_IN the_DT same_JJ strand_NN
+          (_( Figure_NN 7_CD d_SYM )_) ._. These_DT include_VBP clusters_NNS containing_VBG paralogous_JJ
+          miRNA_NN genes_NNS (_( such_JJ as_IN 
+          mir-_NN 281_CD a_DT and_NN 
+          mir-_NN 281_CD b_SYM )_) others_NNS that_WDT contain_VBP
+          unrelated_JJ genes_NNS (_( 
+          mir-_NN 12_CD /_NN mir-_NN 283_CD ,_, 
+          mir-_NN 34_CD /_NN mir-_NN 277_CD and_CC 
+          mir-_NN 275_CD /_NN 2_CD L_NNP :_: 7418176_CD clusters_NNS )_) ,_, and_CC
+          some_DT that_WDT are_VBP a_DT mixture_NN of_IN both_DT (_( 
+          mir-_NN 79_CD cluster_NN )_) ._. Unexpectedly_NNP ,_, we_PRP
+          did_VBD not_RB find_VB that_IN clusters_NNS of_IN paralogous_JJ miRNA_NN genes_NNS were_VBD
+          more_RBR prevalent_JJ ,_, as_IN might_MD have_VB been_VBN predicted_VBN 
+          a_DT priori_FW if_IN gene_NN clusters_NNS generally_RB
+          result_VBP from_IN local_JJ gene_NN duplications_NNS ._. This_DT is_VBZ apparently_RB
+          corroborated_JJ by_IN the_DT identification_NN of_IN several_JJ miRNA_NN
+          clusters_NNS whose_WP$ processed_VBN products_NNS derive_VB from_IN opposing_VBG
+          arms_NNS of_IN their_PRP$ respective_JJ precursors_NNS (_( Figure_NN 7_CD )_) [_NN 10_CD 29_CD ]_NN
+          ._. A_DT second_JJ curious_JJ observation_NN is_VBZ that_IN relatively_RB few_JJ 
+          Drosophila_NNP miRNAs_NNS are_VBP members_NNS of_IN
+          paralogous_JJ gene_NN sets_NNS ,_, irrespective_RB of_IN whether_IN they_PRP are_VBP
+          physically_RB linked_VBN or_CC not_RB ._. In_IN fact_NN ,_, we_PRP identified_VBD only_RB
+          four_CD new_JJ examples_NNS (_( 
+          miR-_NN 281_CD a_DT +_NN 
+          b_SYM ,_, 
+          miR-_NN 276_CD a_DT +_NN 
+          b_SYM ,_, 
+          miR-_NN 92_CD a_DT +_NN 
+          b_SYM and_CC 
+          miR-_NN 263_CD a_DT +_NN 
+          b_SYM )_) to_TO add_VB to_TO the_DT previously_RB
+          described_VBN sets_NNS of_IN 
+          miR-_NN 6_CD and_CC 
+          miR-_NN 2_CD /_NN 
+          miR-_NN 13_CD genes_NNS ._. This_DT contrasts_VBZ with_IN
+          observations_NNS of_IN miRNAs_NNS in_IN vertebrates_NNS ,_, where_WRB the_DT majority_NN
+          of_IN known_VBN miRNAs_NNS are_VBP members_NNS of_IN paralogous_JJ gene_NN sets_NNS [_NN 31_CD
+          ]_NN ._. The_DT most_RBS extreme_JJ examples_NNS of_IN this_DT disparity_NN are_VBP 
+          let-_NN 7_CD and_CC 
+          mir-_NN 29_CD ,_, which_WDT are_VBP present_JJ in_IN
+          single_JJ copies_NNS in_IN 
+          Drosophila_NNP ,_, but_CC are_VBP represented_VBN by_IN
+          thirteen_NN and_CC six_CD distinct_JJ human_JJ homologs_NNS ,_,
+          respectively_RB ._.
+        
+      
+      
+        Discussion_NNP
+        
+          Drosophilid_NNP genomes_NNS contain_VBP around_IN 110_CD microRNA_NN
+          genes_NNS
+          Although_IN the_DT first_JJ two_CD miRNA_NN genes_NNS were_VBD identified_VBN
+          through_IN forward_JJ genetics_NNS ,_, the_DT vast_JJ majority_NN of_IN known_VBN
+          miRNAs_NNS were_VBD identified_VBN by_IN direct_JJ cloning_VBG of_IN mature_VBP 21_CD -_: 22_CD
+          nucleotide_NN RNAs_NNP ,_, either_CC from_IN size-selected_JJ total_JJ RNA_NNP or_CC
+          from_IN purified_JJ miRNP_NN complexes_NNS ._. The_DT direct_JJ cloning_VBG method_NN
+          has_VBZ the_DT distinct_JJ advantages_NNS of_IN being_VBG expression_NN based_VBN and_CC
+          aimed_VBN at_IN identifying_VBG the_DT processed_VBN miRNA_NN that_WDT is_VBZ
+          presumably_RB the_DT active_JJ regulatory_JJ species_NNS ._. While_IN it_PRP is_VBZ
+          clear_JJ that_IN cloning_VBG efforts_NNS in_IN some_DT organisms_NNS have_VBP been_VBN
+          far_RB from_IN saturating_VBG ,_, work_NN in_IN other_JJ organisms_NNS (_( mammals_NNS )_)
+          suggests_VBZ that_IN efforts_NNS of_IN this_DT sort_NN will_MD give_VB sharply_RB
+          diminishing_VBG returns_NNS ._. In_IN any_DT case_NN ,_, it_PRP is_VBZ likely_JJ that_IN many_JJ
+          miRNAs_NNS will_MD not_RB be_VB amenable_JJ to_TO direct_VB cloning_VBG ,_, including_VBG
+          those_DT that_WDT are_VBP present_JJ at_IN very_RB low_JJ levels_NNS (_( be_VB they_PRP poorly_RB
+          expressed_VBD ,_, highly_RB unstable_JJ ,_, inefficiently_RB processed_VBN ,_, or_CC
+          expressed_VBN by_IN small_JJ numbers_NNS of_IN cells_NNS )_) or_CC whose_WP$ expression_NN
+          is_VBZ otherwise_RB restricted_VBN to_TO times_NNS and_CC /_NN or_CC locations_NNS for_IN
+          which_WDT the_DT isolation_NN of_IN sufficient_JJ amounts_NNS of_IN RNA_NNP for_IN
+          cloning_VBG is_VBZ impractical_JJ ._.
+          In_IN theory_NN ,_, a_DT computational_NN approach_NN based_VBN on_IN the_DT
+          structural_JJ features_NNS of_IN known_VBN miRNA_NN genes_NNS might_MD permit_VB the_DT
+          unbiased_JJ discovery_NN of_IN the_DT remaining_VBG complement_VB of_IN miRNA_NN
+          genes_NNS in_IN a_DT given_VBN sequenced_JJ genome_NN ._. However_RB ,_, in_IN one_CD test_NN ,_,
+          around_IN 5_CD %_NN of_IN randomly_RB selected_VBN 
+          C_NNP ._. elegans_NNS genomic_JJ sequences_NNS were_VBD
+          found_VBN to_TO have_VB the_DT capacity_NN to_TO fold_VB into_IN plausible_JJ miRNA_NN
+          precursor_NN hairpins_NNS [_NN 11_CD ]_NN ._. This_DT suggests_VBZ that_DT
+          computational_NN prediction_NN of_IN miRNAs_NNS based_VBN on_IN presumed_VBN
+          structure_NN alone_RB would_MD have_VB an_DT unacceptably_RB high_JJ
+          false-positive_JJ rate_NN ._. This_DT type_NN of_IN approach_NN might_MD be_VB
+          strongly_RB aided_VBN by_IN comparative_JJ genomics_NNS ,_, whereby_WRB one_CD
+          confined_VBN the_DT analysis_NN to_TO genomic_JJ regions_NNS subject_JJ to_TO both_DT
+          evolutionary_JJ and_CC structural_JJ constraint_NN ._. The_DT proof_NN of_IN
+          principle_NN behind_IN this_DT dual_JJ scheme_NN was_VBD demonstrated_VBN by_IN the_DT
+          identification_NN of_IN several_JJ miRNAs_NNS via_IN a_DT structural_JJ
+          analysis_NN of_IN genomic_JJ sequence_NN conserved_JJ over_IN 50_CD million_CD
+          years_NNS of_IN nematode_NN evolution_NN [_NN 12_CD ]_NN ._. Indeed_RB ,_, the_DT great_JJ
+          majority_NN of_IN 
+          C_NNP ._. elegans_NNS miRNAs_NNS identified_VBN
+          through_IN the_DT direct_JJ cloning_VBG approach_NN are_VBP conserved_JJ in_IN the_DT
+          genome_NN of_IN 
+          C_NNP ._. briggsae_NN ,_, with_IN conservation_NN
+          typically_RB extending_VBG across_IN the_DT length_NN of_IN the_DT predicted_VBN
+          miRNA_NN precursor_NN ._.
+          In_IN this_DT study_NN ,_, we_PRP describe_VBP miRseeker_NN ,_, a_DT computational_NN
+          approach_NN for_IN the_DT identification_NN of_IN 
+          Drosophila_NNP miRNA_NN genes_NNS that_WDT ranks_NNS
+          conserved_JJ stem-loop_JJ structures_NNS and_CC assesses_NNS their_PRP$ pattern_NN
+          of_IN nucleotide_NN divergence_NN ._. miRseeker_NN successfully_RB
+          identified_VBD nearly_RB all_DT of_IN the_DT known_VBN 
+          Drosophila_NNP miRNA_NN genes_NNS ,_, and_CC a_DT
+          strong_JJ majority_NN of_IN novel_NN ,_, high-scoring_JJ candidates_NNS were_VBD
+          verified_VBN by_IN northern_JJ analysis_NN ._. In_IN total_JJ ,_, we_PRP catalogued_JJ 32_CD
+          newly_RB verified_VBN miRNAs_NNS (_( 24_CD of_IN which_WDT were_VBD confirmed_VBN here_RB by_IN
+          northern_JJ blot_NN )_) ,_, bringing_VBG the_DT current_JJ 
+          Drosophila_NNP tally_NN to_TO 56_CD ._. Our_PRP$ data_NNS
+          allows_VBZ us_PRP to_TO estimate_VB the_DT presence_NN of_IN around_IN 110_CD miRNA_NN
+          genes_NNS in_IN 
+          Drosophila_NNP ._. The_DT approach_NN used_VBN in_IN
+          this_DT study_NN should_MD be_VB applicable_JJ to_TO the_DT analysis_NN of_IN other_JJ
+          sets_NNS of_IN sequenced_JJ genomes_NNS of_IN related_VBN higher_JJR eukaryotic_JJ
+          model_NN organisms_NNS ._. While_IN this_DT manuscript_NN was_VBD in_IN preparation_NN
+          and_CC in_IN submission_NN ,_, several_JJ other_JJ computational_NN
+          predictions_NNS of_IN miRNA_NN genes_NNS by_IN similar_JJ overall_JJ strategies_NNS
+          were_VBD reported_VBN [_NN 31_CD 32_CD 33_CD 34_CD ]_NN ._. The_DT results_NNS of_IN our_PRP$
+          studies_NNS are_VBP most_RBS similar_JJ to_TO analyses_NNS by_IN Bartel_NNP and_CC
+          colleagues_NNS predicting_VBG 200_CD -_: 255_CD miRNA_NN genes_NNS in_IN vertebrates_NNS ,_,
+          or_CC nearly_RB 1_CD %_NN of_IN the_DT predicted_VBN genes_NNS in_IN humans_NNS [_NN 31_CD ]_NN ;_:
+          this_DT is_VBZ comparable_JJ to_TO our_PRP$ estimate_NN of_IN flies_NNS ._.
+          A_DT unique_JJ aspect_NN of_IN miRseeker_NN amongst_IN the_DT recently_RB
+          described_VBN methodologies_NNS is_VBZ its_PRP$ assessment_NN of_IN the_DT pattern_NN
+          of_IN nucleotide_NN divergence_NN within_IN miRNA_NN precursors_NNS ._. The_DT
+          existence_NN of_IN this_DT pattern_NN ,_, which_WDT is_VBZ reflected_VBN by_IN initial_JJ
+          divergence_NN within_IN loop_NN sequence_NN ,_, was_VBD unexpected_JJ ._. Two_CD
+          conclusions_NNS may_MD be_VB drawn_VBN from_IN this_DT phenomenon_NN ._. First_LS ,_, the_DT
+          loop_NN appears_VBZ to_TO be_VB the_DT least_JJS critical_JJ feature_NN of_IN a_DT
+          pre-mi_JJ RNA_NNP ,_, an_DT observation_NN supported_VBN by_IN the_DT identification_NN
+          of_IN orthologous_JJ insect_NN miRNAs_NNS that_WDT vary_VBP quite_RB
+          significantly_RB in_IN terms_NNS of_IN both_DT loop_NN size_NN and_CC sequence_NN
+          (_( data_NNS not_RB shown_VBN )_) ._. Second_JJ ,_, there_EX appears_VBZ to_TO be_VB measurable_JJ
+          selective_JJ pressure_NN on_IN the_DT sequence_NN of_IN the_DT non-mi_JJ RNA_NNP arm_NN ,_,
+          above_IN and_CC beyond_IN the_DT necessity_NN to_TO maintain_VB a_DT certain_JJ
+          degree_NN of_IN helical_JJ structure_NN that_WDT would_MD make_VB it_PRP a_DT Dicer_NNP
+          substrate_NN ._. This_DT is_VBZ perhaps_RB at_IN odds_NNS with_IN the_DT nonspecific_JJ
+          activity_NN of_IN Dicer_NNP ,_, which_WDT efficiently_RB processes_VBZ virtually_RB
+          every_DT input_NN dsRNA_NN ever_RB tested_VBD in_IN RNAi_NNP assays_NNS ._. It_PRP may_MD be_VB
+          the_DT case_NN that_IN specific_JJ sequence_NN requirements_NNS become_VBP
+          greater_JJR when_WRB processing_NN imperfect_JJ stem-loops_JJ
+          characteristic_NN of_IN pre-mi_JJ RNA_NNP ,_, or_CC alternatively_RB ,_, that_IN the_DT
+          non-mi_JJ RNA-encoding_NNP product_NN may_MD in_IN fact_NN have_VB some_DT
+          previously_RB unappreciated_JJ function_NN ._. Nonetheless_RB ,_, it_PRP is_VBZ
+          clear_JJ that_IN the_DT selective_JJ pressure_NN on_IN the_DT
+          non-mi_JJ RNA-encoding_NNP arm_NN is_VBZ mild_JJ ,_, and_CC that_IN it_PRP diverges_NNS long_RB
+          before_IN the_DT sequence_NN of_IN the_DT mature_VBP miRNA_NN does_VBZ ._.
+          It_PRP is_VBZ worth_JJ noting_VBG that_IN the_DT fraction_NN of_IN miRNAs_NNS
+          conserved_JJ between_IN mammals_NNS and_CC fish_NN ,_, which_WDT are_VBP around_IN 450_CD
+          million_CD years_NNS diverged_JJ ,_, appears_VBZ to_TO be_VB significantly_RB
+          higher_JJR than_IN the_DT fraction_NN of_IN miRNAs_NNS that_WDT are_VBP conserved_JJ
+          between_IN flies_VBZ and_CC mosquitoes_NNS ,_, which_WDT are_VBP separated_VBN by_IN only_RB
+          250_CD million_CD years_NNS of_IN evolution_NN (_( this_DT paper_NN and_CC [_NN 31_CD ]_NN )_) ._.
+          This_DT indicates_VBZ that_IN insect_NN miRNAs_NNS evolve_VB much_RB more_RBR
+          rapidly_RB than_IN do_VBP vertebrate_NN miRNAs_NNS ._. This_DT is_VBZ in_IN general_JJ
+          agreement_NN with_IN analyses_NNS of_IN orthologous_JJ protein_NN pairs_NNS ,_,
+          which_WDT showed_VBD that_IN dipteran_NN pairs_NNS had_VBD a_DT higher_JJR rate_NN of_IN
+          divergence_NN than_IN did_VBD fish_NN /_NN human_JJ pairs_NNS [_NN 51_CD ]_NN ._. Since_IN it_PRP
+          may_MD be_VB argued_VBN that_IN the_DT selective_JJ environmental_JJ pressures_NNS
+          are_VBP more_RBR different_JJ between_IN these_DT sequenced_JJ vertebrates_NNS ,_,
+          it_PRP may_MD be_VB that_IN the_DT relatively_RB high_JJ rate_NN of_IN divergence_NN in_IN
+          Diptera_NNP is_VBZ a_DT consequence_NN of_IN their_PRP$ shorter_JJR generation_NN
+          times_NNS ._.
+        
+        
+          Of_IN false_JJ negatives_NNS and_CC false_JJ positives_NNS
+          In_IN these_DT heady_JJ times_NNS of_IN miRNA_NN gene_NN discovery_NN ,_, it_PRP is_VBZ
+          prudent_JJ to_TO exercise_VB caution_NN in_IN designating_VBG predicted_VBN
+          genes_NNS as_IN 
+          bona_JJ fide_JJ ,_, just_RB because_IN they_PRP
+          resemble_VBP known_VBN miRNA_NN genes_NNS [_NN 46_CD ]_NN ._. At_IN the_DT same_JJ time_NN ,_,
+          while_IN many_JJ thousands_NNS of_IN annotated_JJ protein-coding_JJ genes_NNS
+          are_VBP not_RB associated_VBN with_IN cDNA_NN clones_NNS or_CC other_JJ evidence_NN of_IN
+          expression_NN ,_, computational_NN methods_NNS of_IN their_PRP$ identification_NN
+          are_VBP robust_JJ enough_RB for_IN them_PRP to_TO be_VB considered_VBN '_POS real_JJ '_POS genes_NNS
+          until_IN proven_VBN otherwise_RB ._. It_PRP is_VBZ our_PRP$ hope_VBP that_DT refinement_NN of_IN
+          miRNA_NN prediction_NN algorithms_NNS may_MD further_RB reduce_VB the_DT
+          false-positive_JJ rate_NN and_CC elevate_NN confidence_NN in_IN their_PRP$
+          output_NN to_TO a_DT comparable_JJ level_NN ._. Consideration_NNP of_IN nucleotide_NN
+          bias_NN at_IN the_DT 5_CD '_POS end_NN of_IN miRNA_NN (_( including_VBG a_DT propensity_NN to_TO
+          begin_VB with_IN U_NNP )_) may_MD improve_VB predictions_NNS [_NN 11_CD ]_NN ,_, although_IN
+          we_PRP stress_VBP that_IN our_PRP$ algorithms_NNS were_VBD designed_VBN to_TO predict_VB
+          pre-mi_JJ RNA_NNP genes_NNS and_CC not_RB mature_VB miRNA_NN sequences_NNS
+          themselves_PRP ._. The_DT extent_NN of_IN the_DT precisely_RB conserved_JJ arm_NN
+          (_( thus_RB including_VBG a_DT potential_JJ miRNA_NN )_) was_VBD in_IN most_JJS cases_NNS
+          longer_RBR than_IN the_DT mature_VBP product_NN ,_, and_CC it_PRP would_MD have_VB been_VBN
+          arbitrary_JJ to_TO select_VB a_DT candidate_NN miRNA_NN sequence_NN just_RB so_IN
+          that_IN it_PRP began_VBD with_IN a_DT U_NNP ._. Notably_RB ,_, a_DT recent_JJ study_NN suggests_VBZ
+          that_IN different_JJ chemical_NN strategies_NNS for_IN capturing_VBG miRNA_NN
+          molecules_NNS may_MD differentially_RB recover_VB miRNAs_NNS according_VBG to_TO
+          their_PRP$ 5_CD '_POS ends_VBZ [_NN 33_CD ]_NN ,_, so_RB reevaluation_NN of_IN miRNA_NN 5_CD '_POS bias_NN
+          may_MD be_VB in_IN order_NN ._. Incorporation_NNP of_IN promoter_NN evidence_NN in_IN
+          gene_NN models_NNS may_MD also_RB help_VB ,_, given_VBN recent_JJ speculation_NN that_IN
+          miRNA_NN genes_NNS may_MD be_VB transcribed_JJ by_IN RNA_NNP polymerase_NN II_NNP ._. Our_PRP$
+          confidence_NN in_IN the_DT high-scoring_JJ 
+          Drosophila_NNP -_: specific_JJ candidates_NNS ,_,
+          most_JJS of_IN which_WDT we_PRP did_VBD not_RB test_VB in_IN this_DT study_NN ,_, will_MD also_RB
+          undoubtedly_RB be_VB bolstered_VBN by_IN their_PRP$ conservation_NN in_IN the_DT
+          genomes_NNS of_IN additional_JJ species_NNS of_IN 
+          Drosophila_NNP ._. We_PRP eagerly_RB await_VBP the_DT
+          initiation_NN of_IN these_DT sequencing_VBG projects_NNS ._.
+          Potential_JJ false_JJ negatives_NNS fall_VBP into_IN several_JJ classes_NNS ._.
+          First_LS ,_, our_PRP$ search_NN was_VBD based_VBN on_IN the_DT currently_RB sequenced_JJ
+          and_CC alignable_JJ portions_NNS of_IN the_DT 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. pseudoobscura_NN genomes_NNS ._. As_IN
+          mentioned_VBN earlier_JJR ,_, one_CD of_IN the_DT 24_CD reference_NN miRNAs_NNS
+          (_( miR-_NN 10_CD )_) did_VBD not_RB reside_VB in_IN an_DT aligned_VBN region_NN ,_, even_RB though_IN
+          it_PRP was_VBD readily_RB identified_VBN in_IN available_JJ 
+          D_NNP ._. pseudoobscura_NN sequence_NN by_IN BLAST_NN
+          query_NN ._. Next_JJ ,_, as_IN our_PRP$ strategy_NN relies_VBZ upon_IN conservation_NN of_IN
+          primary_JJ sequence_NN ,_, we_PRP will_MD have_VB missed_VBN exceptionally_RB
+          divergent_JJ miRNAs_NNS ,_, including_VBG class_NN 6_CD candidates_NNS ._.
+          Comparisons_NNP with_IN 
+          Anopheles_NNP demonstrate_VB that_DT dipteran_NN
+          miRNA_NN genes_NNS evolve_VB rapidly_RB and_CC although_IN none_NN of_IN the_DT
+          reference_NN set_VBN is_VBZ absent_JJ from_IN 
+          D_NNP ._. pseudoobscura_NN ,_, there_EX may_MD be_VB
+          examples_NNS that_WDT are_VBP specific_JJ to_TO individual_JJ drosophilid_NN
+          species_NNS ._. The_DT recent_JJ discovery_NN of_IN a_DT large_JJ class_NN of_IN tiny_JJ
+          non-coding_JJ RNA_NNP genes_NNS (_( tncRNAs_NNS )_) that_DT share_NN some_DT features_NNS
+          with_IN miRNAs_NNS provides_VBZ a_DT precedent_NN for_IN exceptionally_RB
+          rapidly_RB evolving_VBG small_JJ RNA_NNP genes_NNS ;_: tncRNAs_NNS are_VBP not_RB even_RB
+          conserved_JJ within_IN 
+          Caenorhabditis_NNP [_NN 33_CD ]_NN ._. We_PRP also_RB
+          masked_VBD exons_NNS from_IN the_DT search_NN ,_, so_IN we_PRP will_MD have_VB excluded_VBN
+          any_DT miRNAs_NNS that_WDT might_MD be_VB processed_VBN from_IN spliced_JJ mRNA_NN ,_,
+          including_VBG untranslated_JJ regions_NNS ._. Finally_RB ,_, we_PRP will_MD have_VB
+          missed_VBN those_DT miRNAs_NNS that_WDT proceed_VBP through_IN precursor_NN
+          transcripts_NNS of_IN unusual_JJ structure_NN ._. Although_IN most_RBS known_VBN
+          pre-mi_JJ RNAs_NNP in_IN 
+          Drosophila_NNP ,_, 
+          Caenorhabditis_NNP ,_, mice_NNS and_CC humans_NNS
+          form_VBP relatively_RB canonical_JJ stem-loops_JJ of_IN around_IN 70_CD to_TO 100_CD
+          nucleotides_NNS in_IN length_NN ,_, plant_NN miRNA_NN precursors_NNS are_VBP often_RB
+          processed_VBN through_IN exceptionally_RB long_JJ stem-loops_JJ (_( many_JJ 150_CD
+          nucleotides_NNS or_CC longer_RBR )_) [_NN 14_CD 15_CD 16_CD ]_NN ._. miR-_NN 125_CD is_VBZ a_DT member_NN
+          of_IN the_DT 
+          Drosophila_NNP reference_NN set_VBN that_WDT
+          received_VBD a_DT low_JJ score_NN by_IN our_PRP$ informatic_JJ procedure_NN ,_,
+          possibly_RB because_IN it_PRP may_MD derive_VB from_IN an_DT unusually_RB long_JJ
+          stem-loop_JJ (_( 120_CD nucleotides_NNS )_) ,_, only_RB a_DT portion_NN of_IN which_WDT was_VBD
+          included_VBN in_IN the_DT queried_VBN window_NN ._. In_IN addition_NN ,_, other_JJ plant_NN
+          miRNAs_NNS may_MD proceed_VB through_IN precursors_NNS of_IN noncanonical_JJ
+          structure_NN ,_, such_JJ as_IN multiple_JJ stem-loops_JJ or_CC stem-loops_JJ of_IN
+          poor_JJ quality_NN [_NN 14_CD ]_NN ._. The_DT existence_NN of_IN these_DT types_NNS of_IN
+          pre-mi_JJ RNAs_NNP in_IN metazoans_NNS is_VBZ unknown_JJ at_IN present_NN ._.
+          Despite_IN these_DT potential_JJ sources_NNS of_IN error_NN ,_, the_DT robust_JJ
+          ability_NN of_IN miRseeker_NN to_TO identify_VB genuine_JJ miRNAs_NNS is_VBZ
+          clearly_RB indicated_VBN by_IN its_PRP$ ability_NN to_TO identify_VB most_JJS of_IN the_DT
+          previously_RB known_VBN 
+          Drosophila_NNP miRNAs_NNS as_RB very_RB
+          high-scoring_JJ candidates_NNS and_CC by_IN our_PRP$ experimental_JJ
+          validation_NN of_IN a_DT very_RB large_JJ number_NN of_IN newly_RB identified_VBN
+          candidate_NN miRNA_NN genes_NNS ._.
+        
+        
+          Prospects_NNS
+          Perhaps_RB the_DT most_RBS outstanding_JJ current_JJ challenge_NN
+          regarding_VBG miRNAs_NNS lies_VBZ in_IN determining_VBG their_PRP$ regulatory_JJ
+          targets_NNS ._. It_PRP is_VBZ presumed_VBN that_IN most_JJS of_IN them_PRP will_MD form_VB RNA_NNP
+          duplexes_NNS with_IN complementary_JJ sequences_NNS in_IN mRNA_NN ,_, but_CC direct_JJ
+          regulatory_JJ relationships_NNS are_VBP known_VBN for_IN only_RB a_DT handful_NN of_IN
+          miRNAs_NNS ._. Although_IN many_JJ miRNAs_NNS in_IN plants_NNS were_VBD found_VBN to_TO be_VB
+          nearly_RB or_CC completely_RB complementary_JJ to_TO known_VBN or_CC putative_JJ
+          target_NN mRNAs_NNS [_NN 24_CD 52_CD ]_NN ,_, the_DT few_JJ cases_NNS of_IN known_VBN or_CC
+          presumed_VBN animal_NN miRNA_NN targets_NNS involve_VBP imperfect_JJ and_CC
+          limited_JJ homology_NN ._. Indeed_RB ,_, searches_NNS for_IN complements_VBZ to_TO
+          miRNAs_NNS in_IN animal_NN genomes_NNS to_TO date_NN have_VBP not_RB succeeded_VBN in_IN
+          detecting_VBG matches_VBZ more_RBR compelling_JJ than_IN those_DT identified_VBN
+          in_IN random_JJ sequence_NN ._. Thus_RB ,_, matching_VBG miRNAs_NNS to_TO their_PRP$
+          cognate_NN targets_NNS 
+          in_IN silico_NN presents_VBZ a_DT daunting_JJ
+          task_NN ._.
+          The_DT 5_CD '_POS ends_NNS of_IN a_DT large_JJ subset_NN of_IN experimentally_RB
+          derived_VBN 
+          Drosophila_NNP miRNAs_NNS were_VBD recently_RB
+          observed_VBN to_TO be_VB perfectly_RB complementary_JJ to_TO Brd_NNP boxes_NNS ,_, K_NNP
+          boxes_NNS and_CC GY_NNP boxes_NNS ,_, a_DT set_NN of_IN 3_CD '_POS UTR_NNP sequence_NN motifs_NNS
+          involved_VBN in_IN post-transcriptional_JJ regulation_NN [_NN 47_CD 53_CD 54_CD 55_CD
+          ]_NN ._. This_DT suggests_VBZ that_IN ,_, at_IN least_JJS in_IN 
+          Drosophila_NNP ,_, a_DT subset_NN of_IN relevant_JJ
+          miRNA_NN targets_NNS might_MD be_VB found_VBN by_IN searching_VBG for_IN complements_VBZ
+          to_TO the_DT 5_CD '_POS -_: most_JJS 8_CD -_: 10_CD nucleotides_NNS of_IN miRNAs_NNS in_IN 3_CD '_POS UTRs_NNP ._.
+          This_DT procedure_NN certainly_RB produces_VBZ many_JJ candidate_NN
+          regulatory_JJ pairs_NNS (_( I_NN ._. Holmes_NNP and_CC E_NNP ._. C_NNP ._. L_NNP ._. ,_, unpublished_JJ
+          observations_NNS )_) ,_, but_CC so_RB many_JJ matches_NNS are_VBP found_VBN that_IN it_PRP is_VBZ
+          difficult_JJ to_TO single_VB out_IN individual_JJ cases_NNS as_IN being_VBG more_RBR
+          likely_JJ to_TO be_VB genuine_JJ ._.
+          Comparative_NNP genomic_JJ analyses_NNS of_IN orthologous_JJ
+          drosophilid_NN genes_NNS should_MD aid_VB in_IN this_DT endeavor_NN ,_, as_IN
+          evidenced_VBN by_IN the_DT recent_JJ demonstration_NN that_IN several_JJ
+          conserved_JJ motifs_NNS in_IN the_DT 3_CD '_POS UTR_NNP of_IN the_DT pro-apoptotic_JJ gene_NN 
+          hid_VBD are_VBP targets_NNS of_IN the_DT miRNA_NN bantam_NN
+          [_NN 44_CD ]_NN ._. Statistically_NNP significant_JJ pairings_NNS of_IN conserved_JJ
+          and_CC /_NN or_CC overrepresented_JJ 3_CD '_POS UTR_NNP motifs_NNS can_MD be_VB assessed_VBN for_IN
+          complementarity_NN to_TO miRNAs_NNS ._. Comparisons_NNP with_IN 
+          Anopheles_NNP orthologs_NNS may_MD also_RB prove_VB
+          useful_JJ in_IN this_DT regard_NN ._. For_IN example_NN ,_, as_IN is_VBZ the_DT case_NN for_IN
+          their_PRP$ drosophilid_NN counterparts_NNS ,_, 
+          Anopheles_NNP transcripts_NNS for_IN two_CD types_NNS
+          of_IN 
+          Enhancer_NNP of_IN split_NN genes_NNS (_( basic_JJ
+          helix-loop-helix_JJ repressor_NN and_CC Brd-family_NNP )_) contain_VB Brd_NNP ,_, K_NNP
+          and_CC GY_NNP box_NN motifs_NNS in_IN their_PRP$ 3_CD '_POS UTRs_NNP (_( E_NNP ._. C_NNP ._. L_NNP ._. ,_, unpublished_JJ
+          observations_NNS )_) ._. We_PRP anticipate_VBP that_IN other_JJ examples_NNS of_IN
+          sequence_NN motifs_NNS that_WDT are_VBP conserved_JJ in_IN orthologs_NNS of_IN the_DT
+          three_CD dipterans_NNS and_CC that_WDT are_VBP strongly_RB complementary_JJ to_TO
+          miRNAs_NNS will_MD be_VB prime_JJ candidates_NNS to_TO test_VB as_IN new_JJ examples_NNS
+          of_IN miRNA-mediated_JJ post-transcriptional_JJ gene_NN
+          regulation_NN ._.
+        
+      
+      
+        Materials_NNS and_CC methods_NNS
+        
+          Genome_NNP analysis_NN
+          We_PRP used_VBD the_DT following_VBG genomic_JJ sequences_NNS and_CC analyses_NNS
+          in_IN this_DT work_NN :_: 
+          D_NNP ._. melanogaster_NN Release_NNP 3_CD sequence_NN
+          (_( Berkeley_NNP Drosophila_NNP Genome_NNP Project_NNP ,_, BDGP_NNP )_) [_NN 36_CD ]_NN ;_: 
+          D_NNP ._. melanogaster_NN Release_NNP 3_CD ._. 1_CD
+          annotation_NN (_( BDGP_NNP )_) [_NN 40_CD ]_NN ;_: 
+          D_NNP ._. pseudoobscura_NN Release_NNP 1_CD sequence_NN
+          and_CC assembly_NN (_( Human_NNP Genome_NNP Sequencing_NNP Center_NNP at_IN Baylor_NNP
+          College_NNP of_IN Medicine_NNP ,_, HGSC_NNP at_IN BCM_NNP )_) [_NN 37_CD ]_NN ;_: whole-genome_JJ
+          alignment_NN of_IN 
+          D_NNP ._. melanogaster_NN and_CC 
+          D_NNP ._. pseudoobscura_NN (_( Berkeley_NNP Genome_NNP
+          Pipeline_NNP )_) [_NN 32_CD ]_NN ;_: 
+          Anopheles_NNP gambiae_NN assembled_VBD genomic_JJ
+          sequence_NN (_( Anopheles_NNP Genome_NNP Project_NNP )_) [_NN 56_CD ]_NN ;_: 
+          Apis_NNP mellifera_NN unassembled_JJ genomic_JJ
+          trace_VB sequence_NN (_( HGSC_NNP at_IN BCM_NNP )_) [_NN 48_CD ]_NN ._.
+        
+        
+          miRseeker_NN computational_NN pipeline_NN
+          
+            Extraction_NNP of_IN conserved_JJ
+            Drosophilasequences_NNP
+            Release_NNP 3_CD of_IN the_DT 
+            D_NNP ._. melanogaster_NN genome_NN [_NN 36_CD ]_NN was_VBD
+            divided_VBN into_IN 1_CD ,_, 287_CD contigs_NNS of_IN 100_CD ,_, 500_CD nucleotides_NNS each_DT ,_,
+            with_IN 500_CD nucleotides_NNS of_IN overlap_VB at_IN either_DT end_NN ._. These_DT
+            contigs_NNS were_VBD aligned_VBN to_TO the_DT first_JJ assembly_NN of_IN the_DT 
+            D_NNP ._. pseudoobscura_NN euchromatic_JJ
+            sequence_NN [_NN 37_CD ]_NN by_IN running_VBG 1287_CD parallel_JJ AVID_NNP jobs_NNS on_IN
+            the_DT Linux_NNP cluster_NN ._. Aligned_NNP sequences_NNS with_IN the_DT following_VBG
+            Release_NNP 3_CD ._. 1_CD annotations_NNS [_NN 40_CD ]_NN were_VBD eliminated_VBN :_: exons_NNS ,_,
+            transposable_JJ elements_NNS ,_, snRNA_NN ,_, snoRNA_NN ,_, tRNA_NN and_CC rRNA_NN
+            genes_NNS ._. Conserved_NNP miRNA_NN candidate_NN regions_NNS were_VBD extracted_VBN
+            from_IN the_DT aligned_VBN nongenic_JJ drosophilid_NN sequence_NN as_IN
+            follows_VBZ ._. A_DT 100_CD -_: unit_NN window_NN (_( where_WRB a_DT unit_NN is_VBZ either_CC an_DT
+            aligned_VBN or_CC a_DT gapped_JJ nucleotide_NN )_) was_VBD advanced_VBN across_IN the_DT
+            AVID_NNP alignment_NN files_NNS by_IN single_JJ units_NNS ._. Once_RB a_DT window_NN
+            that_WDT satisfied_VBD minimal_JJ conservation_NN criteria_NNS (_( ≤_NN 13_CD %_NN gaps_NNS
+            and_CC ≤_NN 15_CD %_NN mismatches_NNS )_) was_VBD identified_VBN ,_, the_DT corresponding_JJ 
+            Dm_NNP and_CC 
+            Dp_NNP sequences_NNS (_( regions_NNS )_) were_VBD
+            stored_VBN as_IN a_DT multiple_JJ fasta_NN file_NN ._. The_DT window_NN was_VBD then_RB
+            advanced_VBN by_IN 10_CD units_NNS and_CC reassessed_JJ ._. The_DT window_NN
+            continued_VBD to_TO advance_VB by_IN 10_CD units_NNS until_IN it_PRP no_RB longer_RB
+            satisfied_VBN our_PRP$ criteria_NNS for_IN conservation_NN ,_, at_IN which_WDT point_VBP
+            it_PRP was_VBD advanced_VBN by_IN single_JJ units_NNS until_IN the_DT next_JJ
+            conserved_JJ region_NN was_VBD identified_VBN ._. Around_IN 436_CD ,_, 000_CD
+            conserved_JJ regions_NNS were_VBD identified_VBN in_IN this_DT way_NN ._.
+            The_DT forward_RB and_CC reverse_VB complement_VB sequences_NNS of_IN the_DT
+            regions_NNS were_VBD loaded_VBN into_IN a_DT MySQL_NNP database_NN ._. If_IN two_CD 
+            D_NNP ._. melanogaster_NN regions_NNS initiated_VBN
+            within_IN less_JJR than_IN 13_CD nucleotides_NNS of_IN each_DT other_JJ ,_, they_PRP
+            were_VBD grouped_VBN into_IN a_DT super-region_JJ ;_: reiterated_VBD grouping_VBG
+            sorted_VBN the_DT 436_CD ,_, 000_CD regions_NNS into_IN 118_CD ,_, 000_CD distinct_JJ
+            super-regions_JJ ._.
+          
+          
+            RNA_NNP folding_VBG and_CC scoring_VBG of_IN conserved_JJ
+            stem-loops_JJ
+            All_DT 
+            Dm_NNP regions_NNS were_VBD folded_VBN with_IN mfold_NN
+            3_CD ._. 1_CD by_IN submitting_VBG parallel_JJ batches_NNS of_IN 500_CD mfolds_NNS to_TO the_DT
+            cluster_NN nodes_NNS and_CC copying_VBG the_DT ._. det_NN and_CC ._. out_IN mfold_NN
+            output_NN files_NNS to_TO a_DT final_JJ storage_NN destination_NN ._. All_DT mfold_NN
+            outputs_NNS were_VBD parsed_JJ ,_, and_CC information_NN about_IN the_DT number_NN
+            of_IN structures_NNS ,_, number_NN of_IN arms_NNS per_IN structure_NN ,_, size_NN of_IN
+            helices_NNS within_IN arms_NNS and_CC size_NN and_CC symmetry_NN of_IN the_DT
+            internal_JJ loops_NNS within_IN arms_NNS was_VBD loaded_VBN into_IN the_DT MySQL_NNP
+            database_NN ._.
+            Two_CD parameters_NNS for_IN each_DT individual_JJ arm_NN in_IN each_DT
+            output_NN structure_NN were_VBD evaluated_VBN :_: free_JJ energy_NN (_( ΔG_NN
+            kcal_NN /_NN mol_NN )_) and_CC miRNA-like_JJ helicity_NN ._. Helicity_NNP was_VBD
+            calculated_VBN by_IN awarding_VBG +_NN 1_CD for_IN each_DT paired_VBN nucleotide_NN ,_,
+            -_: 1_CD for_IN each_DT one-nucleotide_JJ symmetric_JJ loop_NN and_CC -_: 2_CD for_IN
+            each_DT two-nucleotide_JJ symmetric_JJ loop_NN ._. A_DT progressively_RB
+            increasing_VBG penalty_NN was_VBD applied_VBN for_IN symmetric_JJ loops_NNS
+            greater_JJR than_IN three_CD nucleotides_NNS as_RB well_RB as_IN for_IN all_DT
+            bulged_JJ nucleotides_NNS and_CC asymmetrically_RB sized_VBD loops_NNS ,_, as_IN
+            these_DT are_VBP more_RBR rarely_RB observed_VBD in_IN genuine_JJ miRNAs_NNS ._. An_DT
+            overall_JJ score_NN was_VBD calculated_VBN as_IN (_( helical_JJ score_NN +_NN
+            (_( ABS_NNP (_( ΔG_NN )_) /_NN 2_LS )_) )_) /_NN 2_CD ._. For_IN each_DT super-region_JJ a_DT single_JJ region_NN
+            that_WDT includes_VBZ the_DT highest_JJS scoring_VBG arm_NN was_VBD flagged_JJ ._.
+            All_DT steps_NNS outlined_VBN above_IN in_IN the_DT sub-section_JJ above_IN
+            were_VBD repeated_VBN for_IN regions_NNS contained_VBD within_IN 
+            Dp_NNP super-regions_JJ corresponding_JJ to_TO
+            the_DT top_JJ 25_CD %_NN 
+            Dm_NNP super-regions_JJ ._. The_DT average_JJ
+            score_NN of_IN each_DT corresponding_JJ 
+            Dm_NNP and_CC 
+            Dp_NNP region_NN (_( termed_VBD a_DT region-pair_JJ )_)
+            was_VBD determined_VBN ,_, and_CC the_DT highest-scoring_JJ region-pair_JJ in_IN
+            each_DT super-region_JJ was_VBD flagged_JJ as_IN its_PRP$ best_JJS candidate_NN
+            miRNA_NN ._.
+            Representative_NNP regions_NNS were_VBD then_RB rank-ordered_JJ by_IN
+            average_JJ 
+            Dm_NNP /_NN Dp_NNP score_NN ._. The_DT 
+            D_NNP ._. melanogaster_NN sequences_NNS from_IN
+            the_DT top_JJ 20_CD %_NN of_IN 
+            Dm_NNP /_NN Dp_NNP regions_NNS were_VBD blasted_VBD
+            against_IN the_DT 
+            Anopheles_NNP genome_NN ._. The_DT top_JJ three_CD 
+            Anopheles_NNP blast_NN hits_NNS were_VBD
+            subjected_VBN to_TO the_DT steps_NNS outlined_VBN in_IN the_DT previous_JJ
+            sub-section_JJ and_CC the_DT best-scoring_JJ structure_NN was_VBD
+            determined_VBN and_CC linked_VBN to_TO rank-ordered_JJ 
+            Dm_NNP /_NN Dp_NNP regions_NNS ._. In_IN most_JJS cases_NNS ,_,
+            either_CC no_DT 
+            Anopheles_NNP blast_NN hit_VBD or_CC
+            non-homologous_JJ sequence_NN was_VBD returned_VBN ._. The_DT blast_NN hit_VBD was_VBD
+            determined_VBN to_TO be_VB homologous_RB if_IN it_PRP folded_VBD into_IN a_DT similar_JJ
+            structure_NN as_IN the_DT drosophilid_NN sequences_NNS and_CC one_CD or_CC both_DT
+            helical_JJ arms_NNS were_VBD highly_RB conserved_JJ ;_: these_DT candidates_NNS
+            are_VBP flagged_JJ orange_NN on_IN the_DT web_NN output_NN ._.
+          
+          
+            Evaluation_NNP of_IN the_DT divergence_NN pattern_NN in_IN conserved_JJ
+            stem-loops_JJ
+            The_DT alignment_NN of_IN 
+            Dm_NNP /_NN Dp_NNP sequences_NNS was_VBD processed_VBN to_TO
+            distinguish_VB loop_NN regions_NNS (_( colored_VBN blue_JJ on_IN the_DT web_NN
+            output_NN )_) and_CC arm_NN regions_NNS (_( colored_VBN red_JJ on_IN the_DT web_NN
+            output_NN )_) ._. Since_IN mfold_NN tends_VBZ to_TO insert_VB small_JJ helices_NNS
+            within_IN terminal_NN loops_NNS that_WDT falsely_RB reduce_VB the_DT size_NN of_IN
+            the_DT terminal_NN loop_NN ,_, small_JJ terminal_NN loops_NNS (_( 3_CD ,_, 4_CD or_CC 5_CD
+            nucleotides_NNS in_IN length_NN )_) were_VBD extended_VBN to_TO seven_CD
+            nucleotides_NNS ._. Potential_JJ miRNA-encoding_JJ arms_NNS were_VBD then_RB
+            identified_VBN as_RB perfectly_RB matched_VBN blocks_NNS of_IN sequence_NN more_JJR
+            than_IN 22_CD nucleotides_NNS long_JJ and_CC less_JJR than_IN 10_CD nucleotides_NNS
+            from_IN the_DT end_NN of_IN either_DT side_NN of_IN the_DT terminal_NN loop_NN
+            (_( colored_VBN yellow_JJ on_IN the_DT web_NN output_NN )_) ._. If_IN no_DT such_JJ sequence_NN
+            was_VBD found_VBN ,_, the_DT region_NN was_VBD eliminated_VBN ._. If_IN both_DT arms_NNS
+            contained_VBD potential_JJ miRNA_NN sequences_NNS ,_, the_DT region_NN passed_VBN
+            and_CC it_PRP was_VBD considered_VBN a_DT miRNA_NN candidate_NN (_( colored_VBN green_JJ
+            on_IN the_DT web_NN output_NN )_) ._. If_IN only_RB one_CD potential_JJ
+            miRNA-encoding_JJ arm_NN was_VBD identified_VBN ,_, then_RB the_DT other_JJ arm_NN
+            was_VBD defined_VBN as_IN the_DT non-mi_JJ RNA-encoding_NNP arm_NN ._. The_DT terminus_JJ
+            of_IN the_DT potential_JJ miRNA-encoding_JJ arm_NN was_VBD provisionally_RB
+            defined_VBN as_IN the_DT end_NN of_IN the_DT perfectly_RB conserved_JJ sequence_NN ,_,
+            and_CC the_DT non-mi_JJ RNA-encoding_NNP arm_NN was_VBD trimmed_VBN to_TO an_DT equal_JJ
+            helical_JJ length_NN ._. The_DT number_NN of_IN mismatched_JJ and_CC gapped_JJ
+            nucleotides_NNS in_IN the_DT loop_NN region_NN and_CC in_IN the_DT
+            non-mi_JJ RNA-encoding_NNP arm_NN was_VBD evaluated_VBN ._. Candidates_NNP with_IN
+            only_RB a_DT single_JJ candidate_NN miRNA-encoding_JJ arm_NN were_VBD
+            disqualified_VBN if_IN they_PRP did_VBD not_RB diverge_VB in_IN the_DT loop_NN or_CC the_DT
+            number_NN of_IN mismatches_NNS in_IN the_DT non-mi_JJ RNA-encoding_NNP arm_NN was_VBD
+            four_CD or_CC more_JJR mismatches_NNS greater_JJR than_IN the_DT number_NN of_IN
+            mismatches_NNS within_IN the_DT loop_NN ._. The_DT candidates_NNS that_WDT pass_VBP
+            the_DT conservation_NN filter_NN are_VBP colored_VBN green_JJ on_IN the_DT web_NN
+            report_NN ._. The_DT first_JJ 208_CD candidates_NNS produced_VBN by_IN miRseeker_NN ,_,
+            along_IN with_IN information_NN on_IN structures_NNS ,_, scores_NNS ,_,
+            alignments_NNS ,_, and_CC genomic_JJ locations_NNS ,_, are_VBP accessible_JJ via_IN
+            the_DT web_NN [_NN 43_CD ]_NN ._.
+          
+        
+        
+          miRseeker_NN public_JJ interface_NN
+          For_IN the_DT genome-wide_JJ search_NN ,_, several_JJ steps_NNS of_IN the_DT
+          pipeline_NN that_WDT do_VBP not_RB require_VB interaction_NN with_IN the_DT
+          database_NN were_VBD run_VBN in_IN parallel_JJ on_IN the_DT Linux_NNP cluster_NN
+          (_( including_VBG AVID_NNP alignments_NNS ,_, extraction_NN of_IN conserved_JJ
+          regions_NNS ,_, and_CC mfolds_NNS )_) and_CC represent_VB a_DT significant_JJ amount_NN
+          of_IN computational_NN time_NN ._. To_TO allow_VB public_JJ access_NN to_TO
+          miRseeker_NN ,_, we_PRP developed_VBD a_DT scaled-down_JJ version_NN of_IN our_PRP$
+          computational_NN pipeline_NN [_NN 58_CD ]_NN ._. It_PRP allows_VBZ a_DT user_NN to_TO input_NN
+          two_CD sets_NNS of_IN homologous_RB sequences_NNS (_( up_IN to_TO 100_CD kb_NN )_) from_IN any_DT
+          two_CD species_NNS along_IN with_IN gene_NN annotation_NN for_IN one_CD of_IN them_PRP ,_,
+          and_CC performs_VBZ all_PDT the_DT steps_NNS of_IN the_DT miRNA-finding_JJ procedure_NN
+          described_VBD above_IN ,_, producing_VBG a_DT list_NN of_IN miRNA_NN candidates_NNS
+          ordered_VBN by_IN score_NN ._. A_DT cutoff_NN score_NN that_IN reliably_RB
+          distinguishes_NNS genuine_JJ miRNAs_NNS will_MD differ_VB with_IN sequences_NNS
+          from_IN different_JJ input_NN genomes_NNS ._. Our_PRP$ experience_NN with_IN
+          drosophilid_NN genomes_NNS suggests_VBZ that_IN a_DT cutoff_NN of_IN 16_CD ._. 00_CD
+          produces_VBZ genuine_JJ candidates_NNS but_CC also_RB a_DT high_JJ fraction_NN of_IN
+          probable_JJ false_JJ negatives_NNS ,_, whereas_IN a_DT cutoff_NN of_IN 17_CD ._. 00_CD
+          defines_VBZ candidates_NNS of_IN much_RB higher_JJR overall_JJ quality_NN ._. We_PRP
+          stress_VBP that_IN the_DT conservation_NN consideration_NN described_VBD
+          above_IN applies_VBZ only_RB to_TO appropriately_RB related_VBN species_NNS (_( such_JJ
+          as_IN 
+          Dm_NNP /_NN Dp_NNP )_) and_CC should_MD not_RB be_VB
+          indiscriminately_RB used_VBN to_TO filter_NN miRNA_NN candidates_NNS derived_VBN
+          from_IN comparative_JJ analysis_NN of_IN other_JJ species_NNS ._. The_DT miRseeker_NN
+          public_JJ interface_NN currently_RB supports_VBZ only_RB a_DT single_JJ
+          concurrent_JJ user_NN ._.
+        
+        
+          Northern_JJ blot_NN validation_NN of_IN predicted_VBD miRNA_NN
+          genes_NNS
+          Total_NNP RNA_NNP was_VBD isolated_VBN from_IN embryos_NNS (_( made_VBN by_IN combining_VBG
+          equal_JJ amounts_NNS of_IN 0_CD -_: 12_CD -_: hour_NN and_CC 12_CD -_: 24_CD -_: hour_NN embryo_NN RNA_NNP )_) ,_,
+          larvae_NN and_CC pupae_NN (_( made_VBN by_IN combining_VBG equal_JJ amounts_NNS of_IN
+          third_JJ instar_NN and_CC 0_CD -_: 1_CD -_: day-old_JJ pupal_NN RNA_NNP )_) ,_, and_CC 0_CD -_: 2_CD -_: day-old_JJ
+          adult_NN males_NNS ._. Blots_NNP were_VBD prepared_VBN by_IN electrophoresing_VBG 40_CD
+          mg_NN RNA_NNP from_IN each_DT time_NN point_NN per_IN lane_NN on_IN 15_CD %_NN acrylamide_NN
+          gels_NNS ,_, followed_VBN by_IN electroblotting_VBG to_TO ZetaProbe_NNP GT_NNP
+          membranes_NNS (_( BioRad_NNP )_) ._. These_DT were_VBD then_RB probed_JJ with_IN
+          radioactive_JJ DNA_NNP oligonucleotide_NN probes_NNS end-labeled_JJ with_IN
+          the_DT StarFire_NNP system_NN (_( Integrated_NNP DNA_NNP Technologies_NNPS ,_,
+          Coralville_NNP ,_, IA_NNP )_) ._.
+        
+      
+      
+        Additional_JJ data_NNS file_VBP
+        A_DT detailed_VBN description_NN (_( Additional_JJ data_NNS file_VBP 1_LS )_) of_IN the_DT
+        miRseeker_NN output_NN data_NNS ,_, including_VBG the_DT folded_VBD structures_NNS and_CC
+        evaluation_NN of_IN the_DT top_JJ 208_CD miRseeker_NN candidates_NNS ,_, that_WDT can_MD be_VB
+        accessed_JJ at_IN [_NN 43_CD ]_NN is_VBZ available_JJ with_IN the_DT online_NN version_NN of_IN
+        this_DT article_NN ._.
+        Additional_JJ data_NNS file_VBP 1_CD
+        The_DT miRseeker_NN output_NN data_NNS
+        the_DT miRseeker_NN output_NN data_NNS ,_, including_VBG the_DT folded_VBD
+        structures_NNS and_CC evaluation_NN of_IN the_DT top_JJ 208_CD miRseeker_NN
+        candidates_NNS ,_,
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+      
+    
+  

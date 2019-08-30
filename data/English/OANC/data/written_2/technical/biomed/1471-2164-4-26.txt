@@ -1,0 +1,631 @@
+
+  
+    
+      
+        Background_NNP
+        Grain_NN filling_VBG aspects_NNS of_IN nutrient_NN partitioning_VBG are_VBP
+        intensely_RB studied_VBN as_IN they_PRP affect_VBP the_DT yield_NN and_CC quality_NN of_IN
+        many_JJ important_JJ cereals_NNS ._. This_DT quality_NN can_MD be_VB measured_VBN in_IN
+        nutritional_JJ and_CC aesthetic_JJ terms_NNS ._. The_DT grain-filling_JJ process_NN
+        of_IN cereal_NN development_NN typically_RB has_VBZ two_CD processes_VBZ :_: dilatory_NN
+        and_CC filling_VBG ._. Together_RB these_DT processes_VBZ encompass_VB the_DT
+        synthesis_NN ,_, transport_NN ,_, and_CC storage_NN of_IN carbohydrates_NNS ,_, fatty_NN
+        acids_NNS ,_, proteins_NNS ,_, and_CC minerals_NNS ._. The_DT dilatory_NN process_NN is_VBZ
+        characterized_VBN by_IN high_JJ biosynthetic_JJ activity_NN and_CC low_JJ dry_JJ
+        matter_NN accumulation_NN ._. During_IN the_DT filling_VBG phase_NN all_DT plant_NN
+        resources_NNS contribute_VBP toward_IN a_DT steady_JJ rate_NN of_IN starch_NN
+        accumulation_NN in_IN the_DT starch_NN storage_NN unit_NN ._. Genes_NNP that_DT
+        influence_NN the_DT grain_NN filling_VBG process_NN are_VBP particularly_RB
+        important_JJ in_IN achieving_VBG the_DT goal_NN of_IN manipulating_VBG nutrient_NN
+        partitioning_VBG pathways_NNS ._.
+        In_IN Zhu_NNP 
+        et_CC al_NN ._. (_( 2003_CD )_) [_NN 1_CD ]_NN ,_, several_JJ genes_NNS
+        responsible_JJ for_IN grain_NN filling_VBG in_IN rice_NN were_VBD computationally_RB
+        identified_VBN ._. There_RB ,_, clustering_VBG of_IN gene_NN expression_NN profiles_NNS
+        was_VBD used_VBN to_TO identify_VB grain_NN filling_VBG genes_NNS and_CC their_PRP$
+        transcription_NN factors_NNS from_IN 21_CD ,_, 000_CD rice_NN genes_NNS ._. The_DT method_NN
+        used_VBN consisted_VBD of_IN an_DT initial_JJ identification_NN of_IN nutrient_NN
+        partitioning_VBG genes_NNS based_VBN on_IN annotation_NN and_CC selection_NN of_IN
+        genes_NNS that_WDT potentially_RB participate_VB in_IN the_DT grain-filling_JJ
+        process_NN by_IN clustering_VBG of_IN expression_NN profiles_NNS via_IN
+        Self-_NNP Organizing_NNP Map_NNP (_( SOM_NNP )_) ,_, followed_VBN by_IN hierarchical_JJ
+        clustering_VBG influenced_VBN by_IN the_DT SOM_NNP gene_NN ordering_VBG [_NN 2_CD ]_NN ._. A_DT
+        set_NN of_IN grain_NN filling_VBG related_VBN ,_, nutrient_NN partitioning_VBG gene_NN
+        clusters_NNS were_VBD identified_VBN via_IN informed_VBN visual_JJ inspection_NN of_IN
+        the_DT hierarchical_JJ clustering_VBG results_NNS ._. This_DT initial_JJ set_NN of_IN
+        genes_NNS formed_VBD the_DT sole_JJ basis_NN for_IN identification_NN of_IN a_DT wider_JJR
+        range_NN of_IN grain_NN filling_VBG related_VBN genes_NNS with_IN diverse_JJ
+        functions_NNS ,_, over-represented_JJ 
+        cis_NNS acting_VBG regulatory_JJ elements_NNS ,_, and_CC
+        associated_VBN transcription_NN factors_NNS ._. Such_JJ an_DT approach_NN provided_VBD
+        a_DT powerful_JJ way_NN to_TO associate_JJ genes_NNS with_IN traits_NNS of_IN interest_NN ,_,
+        to_TO identify_VB key_JJ regulators_NNS as_IN putative_JJ target_NN genes_NNS in_IN this_DT
+        complicated_JJ biological_JJ process_NN ,_, and_CC a_DT potential_JJ method_NN to_TO
+        identify_VB strategies_NNS for_IN improvement_NN of_IN crop_NN yield_NN and_CC
+        nutrient_NN value_NN by_IN pathway_NN engineering_NN ._. However_RB ,_, the_DT
+        identified_VBN genes_NNS and_CC their_PRP$ regulatory_JJ networks_NNS require_VBP
+        thorough_JJ functional_JJ validations_NNS by_IN experimental_JJ methods_NNS
+        such_JJ as_IN reverse_NN genetics_NNS ._. These_DT experimental_JJ validation_NN
+        steps_NNS usually_RB are_VBP time-consuming_JJ and_CC expensive_JJ ._. Thus_RB ,_,
+        improvement_NN of_IN microarray_NN data_NNS analysis_NN by_IN false_JJ positive_JJ
+        reduction_NN becomes_VBZ necessary_JJ ._.
+        Competitive_NNP learning_VBG schemes_NNS like_IN the_DT Kohonen_NNP SOM_NNP [_NN 3_CD ]_NN
+        and_CC hierarchical_JJ clustering_VBG are_VBP popular_JJ methods_NNS for_IN
+        visualization_NN and_CC identification_NN of_IN patterns_NNS in_IN a_DT large_RB set_NN
+        of_IN gene_NN expression_NN profiles_NNS ._. SOM_NNP analysis_NN can_MD provide_VB
+        nonexclusive_JJ classifications_NNS ,_, but_CC requires_VBZ an_DT estimate_NN for_IN
+        the_DT number_NN of_IN classes_NNS (_( nodes_NNS )_) and_CC is_VBZ usually_RB carried_VBN out_IN in_IN
+        a_DT low-dimensional_JJ space_NN ._. Hierarchical_NNP clustering_VBG is_VBZ a_DT more_RBR
+        frequently_RB used_VBN method_NN ,_, but_CC visualization_NN via_IN
+        one-dimensional_JJ lists_NNS can_MD lead_VB to_TO poor_JJ resolution_NN of_IN
+        related_VBN genes_NNS even_RB if_IN a_DT SOM_NNP gene_NN ordering_VBG influences_VBZ the_DT
+        branch_NN flipping_VBG ,_, as_IN implemented_VBN in_IN the_DT software_NN tool_NN
+        Cluster_NNP [_NN 2_CD ]_NN ._.
+        Recently_RB ,_, singular_NN value_NN decomposition_NN (_( SVD_NNP )_) has_VBZ emerged_VBN
+        as_IN an_DT alternative_JJ method_NN for_IN genomic_JJ research_NN ._. Several_JJ
+        groups_NNS have_VBP demonstrated_VBN its_PRP$ utility_NN in_IN identifying_VBG global_JJ ,_,
+        cyclic_JJ patterns_NNS of_IN gene_NN expression_NN [_NN 4_CD 5_CD ]_NN ,_, and_CC its_PRP$
+        application_NN in_IN reduction_NN of_IN experimental_JJ and_CC biological_JJ
+        noise_NN in_IN microarray_NN datasets_NNS [_NN 5_CD 6_CD ]_NN ._. SVD_NNP is_VBZ a_DT feature_NN
+        generation_NN technique_NN that_IN facilitates_NNS the_DT exploration_NN of_IN
+        multiple_JJ dimensions_NNS of_IN data_NNS variability_NN ._. SVD_NNP is_VBZ an_DT
+        operation_NN applied_VBN to_TO a_DT matrix_NN that_IN results_NNS in_IN a_DT list_NN of_IN
+        vectors_NNS ,_, which_WDT contain_VBP features_NNS measuring_VBG different_JJ aspects_NNS
+        of_IN variation_NN in_IN the_DT data_NNS ._. One_PRP can_MD produce_VB multiple_JJ
+        nonexclusive_JJ gene_NN orderings_NNS or_CC classifications_NNS based_VBN on_IN
+        significant_JJ feature_NN vectors_NNS ._. The_DT patterns_NNS exhibited_VBN by_IN one_CD
+        or_CC more_JJR feature_NN vectors_NNS ,_, singly_RB or_CC in_IN combination_NN ,_, may_MD
+        correspond_VB to_TO biological_JJ processes_NNS ._.
+        To_TO improve_VB accuracy_NN of_IN target_NN identification_NN by_IN avoiding_VBG
+        
+        exclusive_JJ clustering_VBG and_CC exploring_VBG a_DT
+        wider_JJR range_NN of_IN dimensionality_NN in_IN expression_NN pattern_NN
+        variation_NN ,_, we_PRP have_VBP examined_VBN the_DT utility_NN of_IN singular_NN value_NN
+        decomposition_NN in_IN identifying_VBG grain-filling_JJ genes_NNS ._. In_IN this_DT
+        manuscript_NN ,_, we_PRP focus_VBP on_IN nutrient_NN partitioning_VBG genes_NNS
+        potentially_RB involved_VBN in_IN grain_NN filling_NN ._. After_IN evaluating_VBG the_DT
+        full_JJ spectrum_NN of_IN expression_NN patterns_NNS ,_, we_PRP address_VBP the_DT
+        identification_NN of_IN grain_NN filling_VBG genes_NNS by_IN a_DT measure_NN of_IN
+        correlation_NN with_IN a_DT familiar_JJ expression_NN pattern_NN ,_,
+        conceptually_RB conforming_VBG to_TO grain_NN filling_NN ._. In_IN this_DT manner_NN we_PRP
+        have_VBP identified_VBN several_JJ genes_NNS potentially_RB involved_VBN in_IN grain_NN
+        filling_NN ,_, and_CC evaluate_VB them_PRP by_IN comparison_NN with_IN grain_NN filling_VBG
+        genes_NNS identified_VBN in_IN an_DT earlier_JJR study_NN [_NN 1_CD ]_NN ._. These_DT genes_NNS
+        have_VBP similar_JJ expression_NN profiles_NNS showing_VBG significant_JJ
+        differential_NN expression_NN during_IN rice_NN grain_NN development_NN and_CC
+        tissue_NN specificity_NN to_TO panicle_NN and_CC grain_NN ._. 
+        Cis_NNP -_: acting_VBG regulatory_JJ element_NN
+        surveys_NNS also_RB support_VBP their_PRP$ role_NN in_IN the_DT grain_NN filling_VBG
+        process_NN ._.
+      
+      
+        Results_NNS
+        The_DT decomposition_NN of_IN a_DT matrix_NN of_IN expression_NN levels_NNS ,_, 
+        A_DT ,_, presented_VBN us_PRP with_IN several_JJ
+        interesting_JJ patterns_NNS for_IN gene_NN expression_NN during_IN grain_NN
+        development_NN (_( Figure_NN 1_LS )_) ._. The_DT first_JJ three_CD patterns_NNS are_VBP
+        significant_JJ according_VBG to_TO the_DT relative_JJ variance_NN threshold_NN ,_, 
+        t_NN ,_, described_VBN by_IN Everitt_NNP and_CC Dunn_NNP
+        (_( 2001_CD )_) [_NN 7_CD ]_NN ,_, 0_CD ._. 7_CD /_NN 
+        n_NN (_( 
+        n_NN =_SYM 491_CD →_NN 
+        t_NN =_SYM 0_CD ._. 00142_CD ._. )_) The_DT entropy_NN in_IN the_DT
+        distribution_NN of_IN relative_JJ variances_NNS is_VBZ very_RB low_JJ ,_, indicating_VBG
+        uneven_JJ contribution_NN of_IN the_DT patterns_NNS to_TO the_DT expression_NN
+        profiles_NNS in_IN 
+        A_DT (_( Figure_NN 2_LS )_) ._. The_DT first_JJ pattern_NN ,_, 
+        v_NN 
+        1_CD ,_, reflects_VBZ a_DT significant_JJ deviation_NN
+        from_IN the_DT basal_NN expression_NN level_NN ,_, with_IN an_DT insignificant_JJ
+        variance_NN between_IN experimental_JJ conditions_NNS ._. In_IN addition_NN ,_, the_DT
+        coefficients_NNS of_IN 
+        u_NN 
+        1_CD have_VBP higher_JJR entropy_NN of_IN distribution_NN
+        than_IN the_DT following_VBG left_VBN singular_NN vectors_NNS ,_, making_VBG it_PRP a_DT
+        weaker_JJR gene_NN classifier_NN ._. 
+        v_NN 
+        1_CD may_MD represent_VB normalized_JJ global_JJ gene_NN
+        expression_NN deviation_NN from_IN the_DT project_NN mean_NN ,_, and_CC was_VBD not_RB
+        used_VBN to_TO identify_VB grain-filling_JJ genes_NNS ._. 
+        v_NN 
+        2_CD has_VBZ a_DT significant_JJ pattern_NN of_IN variation_NN
+        between_IN experiments_NNS ,_, indicative_JJ of_IN a_DT process_NN very_RB similar_JJ
+        to_TO our_PRP$ grain-filling_JJ ideal_NN ._. 
+        u_NN 
+        2_CD was_VBD used_VBN to_TO sort_VB the_DT 491_CD genes_NNS ._. The_DT
+        sorted_VBN expression_NN profiles_NNS are_VBP shown_VBN in_IN Figure_NN 3_CD ._. We_PRP
+        classified_VBD genes_NNS as_IN grain_NN filling_VBG if_IN their_PRP$ rank_NN percentile_NN
+        was_VBD greater_JJR than_IN or_CC equal_JJ to_TO 0_CD ._. 8_CD ._. We_PRP limited_JJ our_PRP$ threshold_NN
+        to_TO 0_CD ._. 8_CD in_IN order_NN to_TO obtain_VB a_DT set_NN of_IN at_IN least_JJS 98_CD genes_NNS ._. The_DT
+        control_NN set_VBN was_VBD a_DT list_NN of_IN 98_CD genes_NNS previously_RB classified_VBN as_IN
+        grain_NN filling_VBG by_IN Zhu_NNP 
+        et_CC al_NN ._. (_( 2003_CD )_) [_NN 1_CD ]_NN ._. Thus_RB ,_, the_DT
+        maximum_NN possible_JJ fraction_NN of_IN overlap_VB between_IN our_PRP$ grain_NN
+        filling_VBG gene_NN list_NN and_CC the_DT control_NN set_VBN could_MD be_VB 100_CD %_NN ._.
+        Seventy-two_NNP percent_NN of_IN the_DT control_NN set_VBN had_VBD rank_NN percentiles_NNS
+        greater_JJR than_IN 0_CD ._. 8_CD ._. There_EX were_VBD 28_CD genes_NNS ranked_VBD above_IN this_DT
+        level_NN that_WDT were_VBD not_RB in_IN the_DT control_NN set_VBN (_( Table_NNP 1_CD a_DT )_) ._. The_DT
+        control_NN set_VBD percentiles_NNS are_VBP shown_VBN in_IN Table_NNP 2_CD (_( see_VB
+        Additional_JJ file_NN :_: 1_LS )_) ,_, with_IN values_NNS derived_VBN from_IN rankings_NNS by_IN
+        several_JJ patterns_NNS ._. Those_DT in_IN the_DT control_NN set_VBN not_RB greater_JJR than_IN
+        the_DT 80_CD thpercentile_NN in_IN the_DT 
+        v_NN 
+        2_CD ranking_NN were_VBD investigated_VBN further_JJ to_TO
+        see_VB if_IN they_PRP followed_VBD other_JJ potential_JJ nutrient_NN partitioning_VBG
+        patterns_NNS ._. Of_IN these_DT twenty-seven_JJ ,_, five_CD were_VBD strongly_RB
+        composed_VBN of_IN pattern_NN 
+        v_NN 
+        3_CD ,_, and_CC ten_CD of_IN 
+        v_NN 
+        5_CD ,_, leaving_VBG thirteen_NN genes_NNS in_IN the_DT grain_NN
+        filling_VBG control_NN set_VBD unaccounted_JJ for_IN (_( Table_NNP 1_CD b_SYM )_) ._.
+        Additional_JJ file_NN 1_CD
+        
+        
+        Click_NNP here_RB for_IN file_NN
+        The_DT selection_NN of_IN grain_NN filling_VBG genes_NNS by_IN SVD_NNP pattern_NN
+        association_NN ,_, when_WRB compared_VBN to_TO visual_JJ selection_NN relying_VBG on_IN
+        clustering_VBG ,_, returns_NNS genes_NNS with_IN expression_NN profiles_NNS more_RBR
+        consistent_JJ with_IN our_PRP$ grain-filling_JJ ideal_NN ._. The_DT expression_NN
+        profiles_NNS for_IN genes_NNS in_IN the_DT control_NN set_VBN found_VBN by_IN one_CD pattern_NN
+        or_CC another_DT were_VBD averaged_VBN (_( Class_NNP A_NNP )_) ._. A_DT similar_JJ treatment_NN was_VBD
+        given_VBN to_TO those_DT not_RB found_VBN (_( Class_NN B_NNP )_) ,_, and_CC separately_RB ,_, those_DT
+        not_RB in_IN the_DT control_NN set_VBN but_CC highly_RB ranked_VBN by_IN 
+        u_NN 
+        2_CD (_( Class_NNP C_NNP )_) ._. Classes_NNS A_DT ,_, B_NNP ,_, and_CC C_NNP were_VBD
+        plotted_VBD together_RB to_TO compare_VB their_PRP$ expression_NN profiles_NNS ,_,
+        Figure_NN 4_CD ._. Class_NN B_NNP shows_VBZ little_JJ differential_NN expression_NN when_WRB
+        compared_VBN with_IN C_NNP and_CC A_DT ._. A_DT shows_VBZ differential_NN expression_NN that_IN
+        corresponds_NNS with_IN our_PRP$ ideal_JJ for_IN grain_NN filling_VBG expression_NN
+        profiles_NNS ._. Class_NNP C_NNP also_RB shows_VBZ grain-filling-like_JJ
+        differential_NN expression_NN ,_, but_CC with_IN lower_JJR magnitude_NN of_IN
+        variation_NN ._.
+        The_DT detailed_VBN classification_NN of_IN the_DT grain_NN filling_VBG related_VBN
+        nutrient_NN partitioning_VBG genes_NNS was_VBD examined_VBN and_CC compared_VBN
+        between_IN the_DT two_CD studies_NNS ._. It_PRP is_VBZ clear_JJ that_IN the_DT previously_RB
+        selected_VBN grain-filling_JJ genes_NNS in_IN our_PRP$ control_NN set_VBN comprised_VBN
+        four_CD different_JJ gene_NN clusters_NNS (_( Figures_NNS 5_CD ,_, 6_CD )_) ._. In_IN Table_NNP 2_CD
+        (_( see_VB Additional_JJ file_NN :_: 1_LS )_) the_DT genes_NNS are_VBP ordered_VBN according_VBG to_TO
+        that_DT in_IN the_DT clustering_VBG ._. Among_IN them_PRP ,_, ninety-two_JJ percent_NN of_IN
+        the_DT genes_NNS in_IN cluster_NN node_NN 439_CD were_VBD classified_VBN by_IN 
+        u_NN 
+        2_CD as_IN grain_NN filling_VBG genes_NNS ,_, while_IN the_DT
+        other_JJ three_CD clusters_NNS had_VBD approximately_RB 42_CD %_NN of_IN their_PRP$ genes_NNS
+        classified_VBN as_IN grain_NN filling_VBG genes_NNS ._. These_DT three_CD clusters_NNS
+        differ_VBP from_IN the_DT first_JJ in_IN purity_NN of_IN signal_NN ._. The_DT three_CD
+        clusters_NNS with_IN fewer_JJR matches_NNS seem_VBP to_TO exhibit_VB a_DT mixture_NN of_IN
+        expression_NN patterns_NNS ,_, while_IN the_DT first_JJ cluster_NN does_VBZ so_RB to_TO a_DT
+        much_RB lower_JJR extent_NN ._.
+        The_DT involvement_NN in_IN grain_NN filling_NN of_IN the_DT novel_NN set_VBN (_( C_NNP )_) of_IN
+        genes_NNS is_VBZ supported_VBN by_IN the_DT over-representation_JJ of_IN the_DT grain_NN
+        filling_VBG 
+        cis_NNS -_: element_NN ._. A_DT survey_NN of_IN 
+        cis_NNS elements_NNS of_IN the_DT C_NNP set_NN of_IN genes_NNS
+        shows_VBZ that_IN they_PRP have_VBP more_JJR in_IN common_JJ with_IN grain_NN filling_VBG
+        genes_NNS than_IN the_DT unselected_JJ genes_NNS ._. The_DT element_NN AACA_NNP was_VBD found_VBN
+        to_TO be_VB over_IN represented_VBN among_IN grain-filling_JJ genes_NNS in_IN earlier_JJR
+        work_NN by_IN Zhu_NNP 
+        et_CC al_NN ._. ,_, and_CC is_VBZ more_RBR abundant_JJ among_IN
+        the_DT novel_NN genes_NNS ._. AACA_NNP was_VBD part_NN of_IN the_DT motif_NN CAACA_NNP ,_, which_WDT
+        occurred_VBD in_IN 12_CD of_IN the_DT 14_CD promoters_NNS ._. This_DT motif_NN was_VBD
+        described_VBN as_IN the_DT RAV_NNP 1_CD AAT_NNP binding_JJ consensus_NN sequence_NN of_IN 
+        Arabidopsis_NNP thaliana_NN transcription_NN
+        factor_NN ,_, RAV_NNP 1_CD [_NN 8_CD ]_NN ._. AACA_NNP was_VBD also_RB found_VBN in_IN an_DT E_NNP 4_CD -_: TATA_NNP Box_NNP
+        element_NN contained_VBD in_IN 6_CD of_IN the_DT 14_CD promoters_NNS [_NN 9_CD ]_NN ._. Looking_VBG
+        for_IN AACA_NNP in_IN the_DT set_NN of_IN unselected_JJ genes_NNS ,_, it_PRP was_VBD found_VBN in_IN
+        the_DT motif_NN TAACAAA_NNP ,_, which_WDT only_RB occurred_VBD in_IN 2_CD of_IN the_DT 8_CD
+        promoters_NNS ._. This_DT motif_NN was_VBD described_VBN as_IN a_DT binding_JJ site_NN for_IN
+        GAMYB_NNP [_NN 10_CD ]_NN ._. Considering_VBG the_DT similarities_NNS in_IN expression_NN
+        pattern_NN and_CC promoter_NN elements_NNS between_IN the_DT novel_NN genes_NNS and_CC
+        the_DT previously_RB identified_VBN grain_NN filling_VBG genes_NNS ,_, the_DT novel_NN
+        set_NN of_IN genes_NNS is_VBZ likely_JJ to_TO be_VB involved_VBN in_IN grain_NN filling_VBG as_RB
+        well_RB ._.
+        To_TO characterize_VB the_DT function_NN of_IN genes_NNS that_WDT were_VBD
+        classified_VBN differently_RB by_IN each_DT method_NN (_( Class_NN B_NNP )_) ,_, we_PRP
+        analyzed_VBD their_PRP$ expression_NN patterns_NNS in_IN the_DT vegetative_JJ growth_NN
+        phase_NN and_CC their_PRP$ promoter_NN sequences_NNS ._. Among_IN the_DT vegetative_JJ
+        growth_NN samples_NNS ,_, this_DT set_JJ of_IN genes_NNS is_VBZ generally_RB expressed_VBN at_IN
+        a_DT higher_JJR level_NN than_IN either_DT the_DT novel_NN set_VBN (_( Class_NNP C_NNP )_) or_CC the_DT
+        grain_NN filling_VBG set_VBN (_( Class_NNP A_NNP )_) -_: both_DT of_IN which_WDT have_VBP very_RB
+        similar_JJ un-normalized_JJ expression_NN levels_NNS ._. Figure_NN
+        7_CD illustrates_VBZ the_DT un-normalized_JJ average_NN expression_NN levels_NNS
+        for_IN each_DT set_VBN ._. Closer_RBR inspection_NN of_IN the_DT differences_NNS between_IN
+        expression_NN levels_NNS of_IN these_DT genes_NNS in_IN the_DT vegetative_JJ growth_NN
+        samples_NNS reveals_VBZ a_DT slight_JJ elevation_NN in_IN expression_NN for_IN
+        non-photosynthetic_JJ samples_NNS ,_, including_VBG all_DT root_NN samples_NNS ,_, and_CC
+        senescence_NN stem_NN and_CC senescence_NN leaf_NN samples_NNS (_( Figure_NN 8_CD )_) ._. A_DT 
+        cis_NNS element_NN unique_JJ to_TO this_DT set_JJ of_IN
+        genes_NNS is_VBZ AACCAA_NNP ,_, and_CC may_MD explain_VB this_DT bias_NN ._. It_PRP was_VBD found_VBN in_IN
+        5_CD of_IN the_DT 8_CD promoters_NNS from_IN this_DT set_JJ ,_, but_CC was_VBD not_RB present_JJ
+        among_IN the_DT other_JJ genes_NNS with_IN a_DT grain-filling_JJ pattern_NN ._. This_DT
+        light-repressed_JJ promoter_NN element_NN was_VBD previously_RB found_VBN to_TO
+        have_VB higher_JJR DNA_NNP binding_JJ activity_NN in_IN etiolated_JJ plants_NNS but_CC
+        much_RB lower_JJR activity_NN in_IN green_JJ plants_NNS [_NN 11_CD ]_NN ._.
+      
+      
+        Discussion_NNP
+        Our_PRP$ association_NN of_IN genes_NNS to_TO singular_NN vectors_NNS was_VBD not_RB
+        exclusive_JJ ._. A_DT gene_NN 's_POS expression_NN profile_NN can_MD be_VB described_VBN as_IN
+        linear_JJ combination_NN of_IN each_DT right_JJ singular_NN vector_NN ,_, and_CC said_VBD
+        gene_NN can_MD be_VB associated_VBN with_IN those_DT vectors_NNS that_WDT contribute_VBP
+        the_DT most_JJS ._. Clustering_NNP provides_VBZ nested_JJ clusters_NNS with_IN mutual_JJ
+        exclusivity_NN among_IN clusters_NNS at_IN a_DT given_VBN correlation_NN
+        threshold_NN ._. When_WRB there_EX are_VBP genes_NNS with_IN low_JJ intensity_NN
+        patterns_NNS ,_, clustering_VBG can_MD result_VB in_IN groups_NNS with_IN a_DT mixture_NN of_IN
+        patterns_NNS and_CC low_JJ internal_JJ correlation_NN ._. Sets_NNP of_IN genes_NNS
+        strongly_RB correlated_JJ with_IN a_DT particular_JJ singular_NN vector_NN will_MD
+        have_VB greater_JJR internal_JJ correlation_NN ._. Given_VBN these_DT differences_NNS ,_,
+        both_DT methods_NNS agree_VBP on_IN a_DT majority_NN of_IN grain_NN filling_VBG genes_NNS ,_,
+        which_WDT had_VBD very_RB significant_JJ differential_NN expression_NN during_IN
+        grain_NN development_NN ._. This_DT could_MD be_VB expected_VBN as_IN both_DT
+        clustering_VBG and_CC SVD_NNP seek_VBP to_TO minimize_VB the_DT squared_VBN error_NN ._.
+        The_DT area_NN of_IN disagreement_NN between_IN methods_NNS concerned_VBD genes_NNS
+        with_IN low_JJ differential_NN expression_NN ._. They_PRP were_VBD listed_VBN as_IN grain_NN
+        filling_VBG in_IN the_DT control_NN set_VBN but_CC were_VBD not_RB selected_VBN with_IN the_DT
+        SVD_NNP method_NN ._. These_DT unselected_JJ genes_NNS are_VBP not_RB any_DT less_RBR
+        important_JJ than_IN those_DT identified_VBN with_IN SVD_NNP ,_, they_PRP simply_RB
+        exhibit_NN small_JJ changes_NNS in_IN expression_NN level_NN during_IN grain_NN
+        filling_VBG -_: changes_NNS that_WDT may_MD be_VB insignificant_JJ due_NN to_TO the_DT
+        presence_NN of_IN errors_NNS ._. In_IN many_JJ cases_VBZ regulatory_JJ genes_NNS have_VBP
+        small_JJ changes_NNS in_IN expression_NN level_NN ,_, while_IN target_NN genes_NNS
+        further_RB along_IN in_IN the_DT cascade_NN have_VBP larger_JJR changes_NNS ._. The_DT
+        increased_VBN sensitivity_NN of_IN pattern_NN detection_NN will_MD improve_VB our_PRP$
+        ability_NN to_TO extract_VB these_DT target_NN genes_NNS before_IN using_VBG them_PRP to_TO
+        search_VB for_IN regulatory_JJ genes_NNS with_IN other_JJ methods_NNS ._. Almost_RB all_DT
+        of_IN these_DT genes_NNS with_IN a_DT weak_JJ grain-filling_JJ pattern_NN were_VBD
+        originally_RB part_NN of_IN hierarchical_JJ clustering_VBG nodes_NNS with_IN very_RB
+        low_JJ internal_JJ correlation_NN (_( average_JJ pair-wise_JJ correlation_NN )_) ._. A_DT
+        more_RBR stringent_JJ classification_NN that_WDT excluded_VBD such_JJ nodes_NNS
+        would_MD have_VB resulted_VBN in_IN a_DT more_JJR concordant_NN set_NN of_IN gene_NN
+        expression_NN profiles_NNS ._.
+        The_DT unselected_JJ set_VBN might_MD be_VB misclassified_VBN in_IN the_DT earlier_JJR
+        study_NN [_NN 1_CD ]_NN ,_, possibly_RB carrying_VBG out_RP roles_NNS important_JJ in_IN the_DT
+        grain_NN filling_VBG process_NN but_CC sites_NNS physically_RB distant_JJ from_IN the_DT
+        grain_NN body_NN itself_PRP ._. Their_PRP$ expression_NN profiles_NNS did_VBD not_RB follow_VB
+        a_DT pattern_NN similar_JJ to_TO that_DT of_IN known_VBN grain_NN filling_VBG genes_NNS ,_, and_CC
+        during_IN vegetative_JJ growth_NN ,_, their_PRP$ expression_NN levels_NNS are_VBP
+        consistently_RB higher_JJR ._. These_DT genes_NNS ,_, in_IN general_NN ,_, lacked_VBD
+        promoter_NN elements_NNS common_JJ to_TO grain_NN filling_VBG genes_NNS ._. They_PRP also_RB
+        had_VBD conserved_JJ promoter_NN elements_NNS that_WDT were_VBD not_RB found_VBN in_IN
+        grain_NN filling_VBG genes_NNS ._. If_IN functional_JJ in_IN rice_NN ,_, their_PRP$ light_JJ
+        repressed_JJ elements_NNS would_MD explain_VB the_DT higher_JJR expression_NN in_IN
+        root_NN ,_, which_WDT grows_VBZ in_IN dark_JJ conditions_NNS ._. It_PRP is_VBZ possible_JJ that_IN
+        the_DT higher_JJR expression_NN levels_NNS observed_VBD during_IN stem_NN and_CC leaf_NN
+        senescence_NN are_VBP due_JJ to_TO suppression_NN of_IN photosynthesis_NN
+        activity_NN ._. Rice_NNP is_VBZ a_DT monocot_NN plant_NN and_CC there_EX are_VBP portions_NNS of_IN
+        stem_NN that_WDT are_VBP etiolated_JJ due_NN to_TO blockage_NN of_IN light_JJ from_IN
+        permanent_JJ leaf_NN encirclement_NN ._. During_IN senescence_NN ,_, the_DT light_JJ
+        sensitivity_NN of_IN stem_NN and_CC leaf_NN is_VBZ biochemically_RB reduced_VBN ._. This_DT
+        may_MD result_VB in_IN a_DT 
+        de_IN facto_FW etiolated_JJ state_NN also_RB
+        explaining_VBG the_DT elevated_VBD gene_NN expression_NN ._. The_DT
+        misclassification_NN of_IN these_DT genes_NNS was_VBD due_JJ to_TO the_DT combined_VBN
+        effects_NNS of_IN including_VBG nodes_NNS with_IN low_JJ internal_JJ correlation_NN
+        and_CC information_NN loss_NN from_IN hierarchical_JJ clustering_VBG ._. It_PRP
+        should_MD also_RB be_VB noted_VBN that_WDT compared_VBD to_TO the_DT set_NN of_IN novel_NN
+        genes_NNS and_CC the_DT set_NN of_IN agreed-upon_JJ genes_NNS ,_, a_DT greater_JJR fraction_NN ,_,
+        0_CD ._. 3_CD vs_NNS ._. 0_CD ._. 107_CD &_CC 0_CD ._. 115_CD respectively_RB ,_, of_IN these_DT unselected_JJ
+        genes_NNS have_VBP potentially_RB unreliable_JJ probe_NN sets_NNS ._. This_DT
+        unreliability_NN stems_VBZ from_IN the_DT inability_NN to_TO compile_VB a_DT full_RB
+        set_NN of_IN unique_JJ probes_NNS for_IN these_DT genes_NNS ,_, and_CC is_VBZ indicated_VBN by_IN
+        the_DT Probe_NNP Set_NNP ID_NNP suffixes_NNS '_POS r_LS '_POS and_CC '_POS i_NNP '_POS ,_, indicating_VBG sequences_NNS
+        for_IN which_WDT it_PRP was_VBD not_RB possible_JJ to_TO pick_VB a_DT full_RB set_NN of_IN unique_JJ
+        probes_NNS or_CC for_IN which_WDT there_EX are_VBP fewer_JJR than_IN fifteen_NN
+        probes_NNS ._.
+        When_WRB using_VBG hierarchical_JJ clustering_VBG to_TO classify_VB gene_NN
+        expression_NN profiles_NNS ,_, there_EX are_VBP several_JJ drawbacks_NNS to_TO
+        consider_VB ._. Generally_RB ,_, microarray_NN data_NNS is_VBZ information-rich_JJ ,_,
+        with_IN multiple_JJ dimensions_NNS of_IN variability_NN ._. The_DT ordering_VBG of_IN
+        genes_NNS produced_VBN by_IN hierarchical_JJ clustering_VBG reduces_VBZ this_DT
+        variability_NN to_TO a_DT single_JJ dimension_NN ,_, which_WDT may_MD not_RB accurately_RB
+        reflect_VB the_DT differences_NNS between_IN expression_NN profiles_NNS ._. As_IN a_DT
+        result_NN ,_, closeness_NN in_IN this_DT single_JJ dimension_NN may_MD not_RB reflect_VB
+        similarities_NNS occurring_VBG in_IN a_DT higher_JJR dimensional_NN space_NN ._. These_DT
+        factors_NNS impact_NN difficult-to-classify_JJ profiles_NNS more_RBR
+        significantly_RB ._. In_IN Zhu_NNP 
+        et_CC al_NN ._. (_( 2003_CD )_) [_NN 1_CD ]_NN this_DT lead_NN to_TO
+        grain-filling_JJ genes_NNS ,_, with_IN less_RBR obvious_JJ expression_NN profiles_NNS ,_,
+        being_VBG grouped_VBN with_IN a_DT mixture_NN of_IN other_JJ profiles_NNS ,_, resulting_VBG
+        in_IN the_DT selection_NN of_IN unreliable_JJ patterns_NNS over_IN better_JJR
+        candidates_NNS ._. The_DT SOM_NNP ordering_VBG used_VBN to_TO influence_VB the_DT
+        hierarchical_JJ clustering_VBG ordering_VBG helped_VBN with_IN this_DT problem_NN ,_,
+        but_CC there_EX are_VBP other_JJ ways_NNS to_TO improve_VB classification_NN
+        accuracy_NN ._. To_TO avoid_VB these_DT pitfalls_NNS ,_, a_DT more_RBR stringent_JJ
+        selection_NN criterion_NN could_MD have_VB been_VBN used_VBN with_IN the_DT
+        hierarchical_JJ clustering_VBG results_NNS to_TO build_VB a_DT core_NN set_VBD ,_,
+        followed_VBN by_IN a_DT profile_NN ranking_JJ based_VBN on_IN correlation_NN with_IN the_DT
+        core_NN set_VBN ._. The_DT second_JJ round_NN of_IN selection_NN would_MD help_VB to_TO
+        recover_VB profiles_NNS with_IN a_DT weaker_JJR pattern_NN ,_, which_WDT would_MD have_VB
+        been_VBN randomly_RB ordered_VBN by_IN hierarchical_JJ clustering_VBG ._. Another_DT
+        way_NN to_TO avoid_VB these_DT pitfalls_NNS would_MD be_VB to_TO take_VB advantage_NN of_IN
+        the_DT many_JJ "_'' fuzzy_JJ "_'' clustering_VBG algorithms_NNS ,_, which_WDT generate_VBP
+        non-exclusive_JJ assignment_NN of_IN genes_NNS to_TO clusters_NNS [_NN 12_CD 13_CD ]_NN
+        ._.
+        While_IN exploring_VBG this_DT use_NN of_IN SVD_NNP ,_, there_EX were_VBD a_DT few_JJ
+        caveats_NNS learned_VBD which_WDT concern_NN the_DT contribution_NN of_IN noise_NN to_TO
+        the_DT pattern_NN spectrum_NN ._. The_DT matrix_NN that_WDT is_VBZ decomposed_JJ by_IN SVD_NNP
+        is_VBZ usually_RB a_DT dissimilarity_NN matrix_NN like_IN the_DT covariance_NN
+        matrix_NN ._. The_DT singular_NN values_NNS ,_, 
+        w_NN 
+        
+          i_NNP 
+         ,_, are_VBP typically_RB used_VBN to_TO indicate_VB the_DT significance_NN of_IN
+        each_DT right_JJ singular_NN vector_NN to_TO the_DT dataset_NN ._. The_DT first_JJ 
+        n_NN vectors_NNS that_WDT cumulatively_RB account_NN
+        for_IN greater_JJR than_IN 90_CD %_NN of_IN the_DT dataset_NN 's_POS variation_NN are_VBP
+        sometimes_RB used_VBN to_TO describe_VB the_DT dataset_NN and_CC reduce_VB its_PRP$
+        dimensionality_NN ._. The_DT rest_NN of_IN the_DT right_JJ singular_NN vectors_NNS are_VBP
+        then_RB considered_VBN noise_NN ._. This_DT interpretation_NN is_VBZ not_RB always_RB
+        correct_JJ and_CC should_MD be_VB tempered_VBN by_IN a_DT study_NN of_IN the_DT right_JJ
+        singular_NN vectors_NNS themselves_PRP ._. In_IN the_DT situation_NN where_WRB the_DT
+        dataset_NN contains_VBZ significant_JJ additive_JJ noise_NN or_CC where_WRB the_DT
+        means_NNS are_VBP not_RB centered_VBN ,_, the_DT previous_JJ assumption_NN could_MD
+        result_VB in_IN one_CD ignoring_VBG informative_JJ patterns_NNS exhibited_VBN by_IN
+        the_DT right_JJ singular_NN vectors_NNS with_IN relatively_RB low_JJ singular_NN
+        values_NNS ._. The_DT primary_JJ signal_NN would_MD represent_VB this_DT noise_NN
+        (_( unconformable_JJ pattern_NN )_) and_CC mask_NN the_DT other_JJ patterns_NNS ._. An_DT
+        observation_NN of_IN the_DT primary_JJ right_JJ singular_NN vector_NN 's_POS pattern_NN
+        would_MD indicate_VB a_DT relatively_RB constant_JJ level_NN for_IN all_DT samples_NNS ,_,
+        poorly_RB classifying_VBG experiments_NNS or_CC correlating_VBG with_IN
+        differentially_RB expressed_VBD genes_NNS ._. Although_IN possible_JJ ,_, there_EX
+        was_VBD no_DT need_VBP to_TO filter_NN out_IN strong_JJ noise_NN from_IN the_DT dataset_NN and_CC
+        recalculate_NN the_DT SVD_NNP ._. This_DT condition_NN was_VBD dealt_VBN with_IN by_IN
+        focusing_VBG on_IN right_JJ singular_NN vectors_NNS that_WDT correlate_VBP with_IN our_PRP$
+        conceptual_JJ grain-filling_JJ pattern_NN ,_, regardless_RB of_IN their_PRP$
+        singular_NN value_NN 's_POS magnitude_NN ._. These_DT "_'' grain_NN filling_VBG "_'' right_JJ
+        singular_NN vectors_NNS were_VBD then_RB used_VBN to_TO classify_VB the_DT genes_NNS in_IN
+        our_PRP$ dataset_NN ._. In_IN fact_NN ,_, a_DT classification_NN of_IN genes_NNS using_VBG the_DT
+        right_JJ singular_NN vector_NN with_IN the_DT largest_JJS singular_NN value_NN was_VBD
+        of_IN low_JJ quality_NN ._.
+        As_IN the_DT coefficients_NNS for_IN each_DT right_JJ singular_NN vector_NN are_VBP
+        used_VBN to_TO classify_VB genes_NNS and_CC the_DT genes_NNS in_IN each_DT class_NN should_MD
+        ideally_RB have_VB coefficients_NNS different_JJ from_IN genes_NNS in_IN other_JJ
+        classes_NNS ,_, the_DT challenge_NN to_TO identify_VB a_DT vector_NN that_WDT produces_VBZ a_DT
+        good_JJ classification_NN can_MD be_VB simplified_VBN by_IN measurement_NN of_IN the_DT
+        entropy_NN for_IN each_DT vector_NN 's_POS coefficient_NN distribution_NN ._. Vectors_NNP
+        with_IN the_DT lowest_JJS entropy_NN ,_, even_RB if_IN they_PRP have_VBP a_DT small_JJ singular_NN
+        value_NN ,_, have_VBP the_DT most_JJS ordered_VBN coefficient_NN distribution_NN and_CC
+        may_MD be_VB quite_RB useful_JJ in_IN classifying_VBG genes_NNS into_IN distinct_JJ
+        groups_NNS ._. We_PRP will_MD follow_VB up_RB on_IN this_DT idea_NN in_IN future_JJ
+        applications_NNS of_IN SVD_NNP to_TO RNA_NNP dynamics_NNS ._.
+        SVD_NNP can_MD be_VB used_VBN to_TO reduce_VB the_DT dimensionality_NN of_IN a_DT data_NNS
+        set_VBN ,_, but_CC our_PRP$ method_NN uses_VBZ the_DT singular_NN vectors_NNS generated_VBN by_IN
+        the_DT decomposition_NN to_TO identify_VB patterns_NNS that_WDT may_MD relate_VB to_TO
+        grain_NN filling_VBG in_IN rice_NN ._. In_IN this_DT way_NN ,_, we_PRP attempt_VBP to_TO avoid_VB
+        overlooking_VBG any_DT dimensions_NNS of_IN expression_NN profile_NN variance_NN ._.
+        A_DT gene_NN ranking_JJ based_VBN on_IN similarity_NN to_TO interesting_JJ
+        feature-vectors_JJ allows_VBZ recovery_NN of_IN profiles_NNS with_IN weaker_JJR but_CC
+        relevant_JJ grain_NN filling_VBG patterns_NNS ._. This_DT method_NN selected_VBD genes_NNS
+        with_IN greater_JJR differential_NN expression_NN than_IN the_DT questionable_JJ
+        set_VBN presented_VBN by_IN clustering_VBG ._. The_DT newly_RB identified_VBN genes_NNS are_VBP
+        important_JJ because_IN they_PRP represent_VBP genes_NNS that_WDT have_VBP a_DT stronger_JJR
+        pattern_NN of_IN grain_NN filling_NN ,_, which_WDT were_VBD not_RB easily_RB visually_RB
+        identified_VBN from_IN the_DT hierarchical_JJ clustering_VBG ._. It_PRP is_VBZ likely_JJ
+        that_IN if_IN the_DT previous_JJ method_NN only_RB relied_VBD on_IN SOM_NNP ,_, more_JJR of_IN
+        these_DT genes_NNS would_MD have_VB been_VBN identified_VBN ._. SVD_NNP provides_VBZ much_JJ
+        information_NN about_IN patterns_NNS of_IN variability_NN in_IN a_DT dataset_NN
+        rather_RB than_IN a_DT rigid_JJ assignment_NN of_IN genes_NNS to_TO clusters_NNS ._. This_DT
+        added_VBN perspective_NN ,_, plus_CC the_DT ability_NN to_TO amplify_VB or_CC attenuate_NN
+        specific_JJ patterns_NNS in_IN the_DT dataset_NN ,_, complements_VBZ the_DT
+        classifications_NNS given_VBN by_IN commonly_RB used_VBN clustering_VBG
+        techniques_NNS ._.
+      
+      
+        Conclusions_NNP
+        We_PRP conclude_VBP that_IN SVD_NNP is_VBZ a_DT useful_JJ alternative_JJ method_NN that_WDT
+        complements_VBZ widely_RB used_VBN clustering_VBG methods_NNS for_IN studying_VBG
+        function_NN of_IN genes_NNS ._. The_DT SVD_NNP identified_VBD grain-filling_JJ related_VBN
+        genes_NNS ,_, providing_VBG additional_JJ ,_, valuable_JJ candidate_NN genes_NNS for_IN
+        improving_VBG grain_NN composition_NN and_CC yield_VB ._.
+      
+      
+        Methods_NNP
+        
+          Datasets_NNP used_VBD
+          The_DT dataset_NN comprised_VBN expression_NN levels_NNS of_IN 491_CD genes_NNS
+          in_IN 33_CD samples_NNS ,_, with_IN emphasis_NN on_IN the_DT 17_CD samples_NNS directly_RB
+          related_VBN to_TO grain_NN filling_VBG [_NN 1_CD ]_NN ._. The_DT complete_JJ dataset_NN
+          used_VBN is_VBZ available_JJ at_IN
+          http_NN :_: /_NN /_NN www_NN ._. blackwell-science_JJ ._. com_NN /_NN products_NNS /_NN journals_NNS /_NN suppmat_NN /_NN PBI_NNP /_NN PBI_NNP 006_CD /_NN PBI_NNP 006_CD sm_NN ._. htm_NN ._.
+          Based_VBN on_IN their_PRP$ sequence_NN annotation_NN and_CC functional_JJ
+          classification_NN [_NN 14_CD ]_NN ,_, the_DT 491_CD genes_NNS were_VBD selected_VBN
+          because_IN their_PRP$ products_NNS are_VBP presumably_RB involved_VBN in_IN or_CC
+          associated_VBN with_IN three_CD major_JJ pathways_NNS of_IN nutrient_NN
+          partitioning_VBG :_: the_DT synthesis_NN and_CC transport_NN of_IN fatty_NN acids_NNS ,_,
+          carbohydrates_NNS ,_, and_CC proteins_NNS ._. The_DT 17_CD grain_NN filling_VBG related_VBN
+          tissue_NN samples_NNS include_VBP panicle_NN 1_CD -_: 3_CD cm_NN ,_, panicle_NN 4_CD -_: 7_CD cm_NN ,_,
+          panicle_NN 8_CD -_: 14_CD cm_NN ,_, panicle_NN 15_CD -_: 20_CD cm_NN ,_, seed_NN 0_CD day_NN ,_, seed_NN 2_CD
+          day_NN ,_, seed_NN 4_CD day_NN ,_, seed_NN 7_CD day_NN ,_, seed_NN 9_CD day_NN ,_, seed_NN (_( soft_JJ
+          dough_NN )_) ,_, seed_NN (_( hard_JJ dough_NN )_) ,_, embryo_NN ,_, endosperm_NN ,_, seed_NN coat_NN
+          (_( milk_NN stage_NN )_) ,_, aleurone_NN ,_, and_CC seed_NN (_( milk_NN stage_NN )_) ._. A_DT complete_JJ
+          description_NN of_IN the_DT experimental_JJ protocols_NNS used_VBN to_TO
+          generate_VB this_DT dataset_NN can_MD be_VB found_VBN in_IN Zhu_NNP et_CC al_NN (_( 2003_CD )_) [_NN
+          1_CD ]_NN ._.
+        
+        
+          Data_NNP normalization_NN
+          In_IN our_PRP$ matrix_NN 
+          A_NNP '_POS each_DT row_NN corresponded_VBD to_TO a_DT
+          different_JJ gene_NN and_CC each_DT column_NN corresponded_VBD to_TO one_CD of_IN 17_CD
+          different_JJ conditions_NNS ._. The_DT 
+          a_DT 
+          
+            ij_NN 
+           cell_NN in_IN 
+          A_NNP '_POS was_VBD the_DT expression_NN level_NN of_IN gene_NN
+          
+          i_NNS under_IN condition_NN 
+          j_NN ._. The_DT data_NNS in_IN 
+          A_NNP '_POS was_VBD transformed_VBN to_TO the_DT 
+          n_NN ×_NN 
+          m_NN matrix_NN 
+          A_DT according_VBG to_TO the_DT protocol_NN in_IN Zhu_NNP 
+          et_CC al_NN ._. (_( 2002_CD )_) [_NN 1_CD ]_NN ._. During_IN this_DT
+          transformation_NN values_NNS of_IN 
+          a_DT 
+          
+            ij_NN 
+           less_JJR than_IN 5_CD were_VBD set_VBN equal_JJ to_TO 5_CD and_CC
+          log_VB 2_CD -_: transformed_VBN ._. Next_JJ ,_, the_DT expression_NN vectors_NNS were_VBD
+          median-centered_JJ and_CC normalized_JJ such_JJ that_IN the_DT sum_NN of_IN
+          squares_NNS for_IN each_DT expression_NN vector_NN was_VBD equal_JJ to_TO one_CD ._. In_IN
+          efforts_NNS to_TO validate_NN our_PRP$ results_NNS ,_, we_PRP also_RB investigated_VBD
+          gene_NN expression_NN level_NN in_IN a_DT wider_JJR range_NN of_IN samples_NNS ,_,
+          including_VBG the_DT 17_CD mentioned_VBN above_IN ,_, totaling_VBG 33_CD samples_NNS ._.
+          The_DT normalization_NN applied_VBN to_TO this_DT broader_JJR set_JJ was_VBD the_DT
+          same_JJ as_IN that_DT described_VBD for_IN the_DT set_NN of_IN 17_CD ,_, above_RB ._. Note_VB
+          that_IN the_DT difference_NN in_IN sample_NN number_NN will_MD affect_VB the_DT
+          median_JJ centering_VBG and_CC normalization_NN steps_NNS ,_, making_VBG smaller_JJR
+          deviations_NNS from_IN the_DT median_JJ less_RBR obvious_JJ ._.
+        
+        
+          Data_NNP decomposition_NN
+          The_DT SVD_NNP theorem_NN (_( Press_NNP 
+          et_CC al_NN ._. ,_, 1992_CD )_) is_VBZ stated_VBN in_IN eq_NN 1_CD [_NN
+          15_CD ]_NN ._. U_NNP (_( 
+          n_NN ×_NN 
+          q_NN )_) and_CC V_NNP (_( 
+          q_NN ×_NN 
+          q_NN )_) contain_VB orthogonal_NN vectors_NNS ,_, and_CC
+          W_NNP (_( 
+          q_NN ×_NN 
+          q_NN )_) is_VBZ a_DT diagonal_NN matrix_NN of_IN
+          coefficients_NNS or_CC singular_NN values_NNS ,_,
+          
+          A_DT =_SYM 
+          UWV_NNP 
+          T_NN [_NN 1_CD ]_NN
+          denoted_JJ 
+          w_NN 1_CD ,_, w_NN 2_CD ,_, ._. ._. ._. wq_NN ._. 
+          q_NN is_VBZ the_DT rank_NN of_IN 
+          A_DT ,_, and_CC is_VBZ generally_RB the_DT smaller_JJR of_IN
+          the_DT two_CD dimensions_NNS 
+          n_NN and_CC 
+          m_NN ._. The_DT decomposition_NN was_VBD performed_VBN
+          using_VBG the_DT commercial_JJ software_NN package_NN S-PLUS_NNP ™_NN (_( Insightful_NNP
+          Co_NNP ._. ,_, Seattle_NNP ,_, WA_NNP )_) according_VBG to_TO Golub_NNP and_CC van_NN Loan_NNP (_( 1996_CD )_)
+          [_NN 16_CD ]_NN ._. The_DT rows_NNS of_IN 
+          V_NNP 
+          T_NN ,_, or_CC 
+          V_NNP transposed_JJ ,_, are_VBP the_DT right_JJ
+          singular_NN vectors_NNS ,_, 
+          v_NN 
+          
+            j_NN 
+           ._. Each_DT right_JJ singular_NN vector_NN ,_, alone_RB or_CC in_IN
+          combination_NN with_IN other_JJ vectors_NNS ,_, describes_VBZ a_DT pattern_NN of_IN
+          variation_NN in_IN 
+          A_DT that_WDT could_MD be_VB indicative_JJ of_IN a_DT
+          biological_JJ process_NN ._. The_DT columns_NNS of_IN 
+          U_NNP are_VBP the_DT left_NN singular_NN vectors_NNS ,_, 
+          u_NN 
+          
+            j_NN 
+           ._. Each_DT coefficient_NN ,_, 
+          u_NN 
+          
+            ij_NN 
+           ,_, indicates_VBZ the_DT relative_JJ contribution_NN of_IN pattern_NN 
+          v_NN 
+          
+            j_NN 
+           to_TO the_DT expression_NN profile_NN of_IN gene_NN 
+          i_NNP ._. The_DT singular_NN value_NN 
+          w_NN 
+          
+            i_NNP 
+           indicates_VBZ the_DT relative_JJ contribution_NN of_IN pattern_NN 
+          v_NN 
+          
+            i_NNP 
+           to_TO all_DT gene_NN expression_NN patterns_NNS in_IN 
+          A_DT ._. The_DT square_NN of_IN the_DT singular_NN
+          values_NNS divided_VBN by_IN the_DT sum_NN of_IN singular_NN values_VBZ squares_NNS
+          defines_VBZ the_DT relative_JJ variance_NN for_IN each_DT singular_NN value_NN ._.
+          This_DT relative_JJ variance_NN indicates_VBZ how_WRB much_JJ of_IN the_DT variance_NN
+          in_IN A_DT is_VBZ explained_VBN by_IN a_DT particular_JJ singular_NN vector_NN ._. The_DT
+          expression_NN profile_NN of_IN any_DT gene_NN can_MD be_VB written_VBN as_IN a_DT linear_JJ
+          combination_NN of_IN these_DT singular_NN vectors_NNS and_CC the_DT singular_NN
+          values_NNS in_IN 
+          W_NNP ._.
+        
+        
+          Pattern_NNP recognition_NN
+          The_DT right_JJ singular_NN vectors_NNS that_WDT match_VBP our_PRP$
+          preconception_NN of_IN a_DT grain_NN filling_VBG pattern_NN of_IN expression_NN ,_,
+          for_IN example_NN ,_, low_JJ expression_NN during_IN panicle_NN development_NN
+          and_CC increasing_VBG expression_NN during_IN grain_NN development_NN ,_, were_VBD
+          identified_VBN after_IN 
+          A_DT was_VBD decomposed_JJ ._. For_IN each_DT
+          interesting_JJ pattern_NN ,_, 
+          v_NN 
+          
+            j_NN 
+           ,_, the_DT genes_NNS ,_, 
+          g_SYM 
+          
+            i_NNP 
+           ,_, were_VBD sorted_VBN by_IN 
+          u_NN 
+          
+            ij_NN 
+           and_CC the_DT top_JJ 80_CD thpercentile_NN were_VBD selected_VBN ._. These_DT top_JJ
+          scorers_NNS were_VBD compared_VBN to_TO 98_CD genes_NNS previously_RB identified_VBN
+          as_IN grain_NN filling-related_JJ nutrient_NN partitioning_VBG genes_NNS by_IN
+          Zhu_NNP 
+          et_CC al_NN ._. ,_, which_WDT they_PRP used_VBD as_IN a_DT
+          template_NN for_IN selecting_VBG other_JJ genes_NNS and_CC transcription_NN
+          factors_NNS involved_VBN in_IN grain_NN filling_NN ._. In_IN Zhu_NNP 
+          et_CC al_NN ._. ,_, the_DT 98_CD genes_NNS were_VBD manually_RB
+
+          selected_VBN by_IN visualization_NN of_IN a_DT hierarchical_JJ clustering_VBG
+          informed_VBN by_IN a_DT SOM_NNP grouping_VBG of_IN the_DT 491_CD potential_JJ nutrient_NN
+          partitioning_VBG genes_NNS (_( Figures_NNS 5_CD ,_, 6_CD )_) ._. The_DT quality_NN of_IN the_DT
+          ordering_VBG given_VBN by_IN 
+          u_NN 
+          
+            j_NN 
+           was_VBD assessed_VBN by_IN plotting_VBG the_DT percent_NN of_IN the_DT 98_CD found_VBD
+          having_VBG a_DT percentile_NN greater_JJR than_IN 
+          p_NN for_IN all_DT 
+          p_NN less_JJR than_IN 1_CD ._. Similarly_RB ,_, the_DT
+          percent_NN of_IN those_DT genes_NNS selected_VBN that_WDT are_VBP in_IN the_DT set_NN of_IN
+          98_CD ,_, for_IN all_DT 
+          p_NN ,_, is_VBZ plotted_VBD ._.
+          We_PRP observed_VBD the_DT entropy_NN (_( E_NNP )_) of_IN various_JJ distributions_NNS
+          during_IN our_PRP$ study_NN ,_, and_CC the_DT generalized_JJ formula_NN we_PRP used_VBD is_VBZ
+          shown_VBN in_IN Equations_NNP 2_CD and_CC 3_CD for_IN a_DT vector_NN F_NN ,_, containing_VBG N_NNP
+          scalars_NNS ._.
+          
+        
+        
+          Promoter_NNP analysis_NN
+          After_IN genes_NNS were_VBD classified_VBN ,_, their_PRP$ promoter_NN sequences_NNS
+          were_VBD identified_VBN to_TO check_VB if_IN pattern_NN similarity_NN could_MD be_VB
+          related_VBN to_TO conserved_JJ 
+          cis_NNS elements_NNS ._. The_DT statistically_RB
+          significant_JJ elements_NNS were_VBD identified_VBN with_IN a_DT PERL_NNP script_NN
+          and_CC annotated_JJ with_IN the_DT PLACE_NNP database_NN [_NN 17_CD ]_NN ._. The_DT PERL_NNP
+          script_NN identified_VBD motifs_NNS among_IN promoter_NN sequences_NNS for_IN a_DT
+          given_VBN set_NN of_IN genes_NNS ._. Those_DT elements_NNS that_WDT matched_VBD to_TO an_DT
+          annotated_JJ 
+          cis_NNS -_: acting_VBG regulatory_JJ DNA_NNP element_NN
+          from_IN the_DT PLACE_NNP database_NN were_VBD then_RB presented_VBN ._. We_PRP limited_JJ
+          our_PRP$ investigation_NN to_TO elements_NNS located_VBN within_IN 2_CD KB_NNP of_IN the_DT
+          transcriptional_NN start_NN site_NN and_CC that_DT had_VBD an_DT e-value_JJ less_JJR
+          than_IN 3_CD E-_NNP 02_CD ._. At_IN the_DT time_NN of_IN publication_NN ,_, not_RB all_DT probe_NN
+          sets_NNS could_MD be_VB associated_VBN with_IN high_JJ quality_NN assembled_VBN
+          upstream_RB sequences_NNS ._.
+        
+      
+      
+        Authors_NNP '_'' Contributions_NNP
+        AA_NN participated_VBD in_IN the_DT design_NN of_IN the_DT study_NN ,_, carried_VBD out_RP
+        the_DT computational_NN analyses_NNS and_CC drafted_VBD the_DT manuscript_NN ._. MH_NNP
+        contributed_VBD to_TO the_DT promoter_NN analysis_NN ._. WC_NNP participated_VBD in_IN
+        the_DT design_NN of_IN the_DT study_NN and_CC discussion_NN ._. TZ_NNP conceived_VBD of_IN the_DT
+        study_NN ,_, and_CC participated_VBD in_IN its_PRP$ design_NN and_CC coordination_NN ._. All_DT
+        authors_NNS read_VBP and_CC approved_VBD the_DT final_JJ manuscript_NN ._.
+      
+    
+  

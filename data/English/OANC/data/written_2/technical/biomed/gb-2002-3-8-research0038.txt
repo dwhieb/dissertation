@@ -1,0 +1,841 @@
+
+  
+    
+      
+        Background_NNP
+        During_IN the_DT development_NN of_IN multicellular_NN organisms_NNS ,_,
+        complexity_NN builds_VBZ sequentially_RB in_IN discrete_JJ steps_NNS as_IN cells_NNS
+        proliferate_VBP and_CC their_PRP$ descendants_NNS choose_VBP between_IN
+        alternative_JJ developmental_NN fates_NNS ._. Much_JJ of_IN our_PRP$ understanding_NN
+        of_IN these_DT processes_VBZ in_IN 
+        Drosophila_NNP has_VBZ come_VBN from_IN mutants_NNS that_WDT
+        have_VBP developmental_NN defects_NNS ._. There_EX are_VBP many_JJ examples_NNS ._. For_IN
+        instance_NN ,_, mutations_NNS in_IN the_DT homeodomain_NN protein_NN genes_NNS of_IN the_DT
+        Antennapedia_NNP and_CC Bithorax_NNP complexes_NNS provide_VBP evidence_NN for_IN
+        the_DT role_NN of_IN transcription_NN factors_NNS in_IN making_VBG developmental_NN
+        decisions_NNS ._. Flies_NNP with_IN gain-of-function_JJ mutations_NNS in_IN the_DT 
+        Antennapedia_NNP (_( 
+        Antp_NNP )_) gene_NN cannot_NN grow_VB normal_JJ
+        antennae_NN ,_, but_CC instead_RB make_VB extra_JJ legs_NNS with_IN their_PRP$ antennal_NN
+        cells_NNS ._. Conversely_RB ,_, loss_NN of_IN Antp_NNP function_NN causes_NNS
+        transformation_NN of_IN the_DT second_JJ leg_NN to_TO antenna-like_JJ structures_NNS
+        [_NN 1_CD ]_NN ._. Another_DT example_NN is_VBZ the_DT 
+        glass_NN gene_NN ,_, which_WDT encodes_NNS a_DT
+        zinc-finger_JJ transcription_NN factor_NN that_WDT is_VBZ expressed_VBN in_IN many_JJ
+        of_IN the_DT cell_NN types_NNS in_IN the_DT eye_NN imaginal_NN disc_NN and_CC is_VBZ required_VBN
+        for_IN photoreceptor_NN development_NN [_NN 2_CD ]_NN ._. The_DT common_JJ functions_NNS of_IN
+        these_DT and_CC many_JJ other_JJ genes_NNS in_IN regulating_VBG gene_NN expression_NN
+        suggest_VBP that_IN developmental_NN fates_NNS are_VBP manifested_JJ in_IN part_NN in_IN
+        the_DT transcripts_NNS that_IN different_JJ cell_NN types_NNS produce_VBP ._.
+        Although_IN the_DT number_NN of_IN 
+        Drosophila_NNP mutants_NNS with_IN interesting_JJ
+        developmental_NN phenotypes_NNS is_VBZ large_JJ ,_, we_PRP cannot_NN assume_VB that_IN
+        the_DT genetic_JJ screens_NNS that_WDT have_VBP been_VBN carried_VBN out_IN identified_VBD
+        all_PDT the_DT relevant_JJ genes_NNS ._. Many_JJ 
+        Drosophila_NNP genes_NNS have_VBP been_VBN refractory_JJ
+        to_TO genetic_JJ analysis_NN ,_, either_CC because_IN they_PRP are_VBP duplicated_VBN and_CC
+        may_MD code_VB for_IN redundant_JJ functions_NNS ,_, or_CC because_IN they_PRP have_VBP
+        mutant_JJ phenotypes_NNS that_WDT are_VBP difficult_JJ to_TO recognize_VB ._. In_IN
+        addition_NN ,_, genetic_JJ and_CC biochemical_JJ approaches_NNS have_VBP yielded_VBN
+        few_JJ downstream_JJ genes_NNS that_IN the_DT key_JJ transcription_NN factors_NNS
+        regulate_VB ._. The_DT recent_JJ release_NN of_IN the_DT 
+        Drosophila_NNP genome_NN sequence_NN [_NN 3_CD ]_NN and_CC
+        the_DT demonstration_NN that_IN cDNA_NN microarrays_NNS can_MD be_VB used_VBN to_TO
+        catalog_NN the_DT transcriptome_NN of_IN both_DT unicellular_NN and_CC
+        multicellular_NN organisms_NNS [_NN 4_CD ,_, 5_CD ,_, 6_CD ,_, 7_CD ,_, 8_CD ,_, 9_CD ,_, 10_CD ,_, 11_CD ,_, 12_CD ,_, 13_CD ,_,
+        14_CD ,_, 15_CD ,_, 16_CD ,_, 17_CD ,_, 18_CD ,_, 19_CD ,_, 20_CD ]_NN opens_VBZ up_RP a_DT new_JJ approach_NN ._.
+        Hybridization_NNP of_IN mRNA_NN pools_NNS to_TO DNA_NNP microarrays_NNS can_MD
+        potentially_RB identify_VB the_DT differences_NNS in_IN gene_NN activity_NN that_WDT
+        define_VB every_DT developmental_NN state_NN ._. Thus_RB ,_, transcriptional_NN
+        regulators_NNS and_CC their_PRP$ downstream_JJ targets_NNS can_MD be_VB identified_VBN
+        simultaneously_RB ._.
+        The_DT 
+        Drosophila_NNP larva_NN contains_VBZ two_CD
+        developmentally_RB distinct_JJ sets_NNS of_IN organs_NNS ._. One_CD set_VBN comprises_VBZ
+        the_DT vital_JJ organs_NNS of_IN the_DT larva_NN -_: the_DT epidermis_NNS and_CC
+        musculature_NN ,_, the_DT central_JJ and_CC peripheral_JJ nervous_JJ systems_NNS ,_,
+        and_CC the_DT organs_NNS of_IN the_DT digestive_JJ tract_NN ._. Most_JJS of_IN these_DT
+        tissues_NNS will_MD be_VB destroyed_VBN at_IN metamorphosis_NNS and_CC will_MD be_VB
+        replaced_VBN by_IN imaginal_NN (_( adult_NN )_) cells_NNS ._. The_DT imaginal_NN precursor_NN
+        cells_NNS have_VBP no_DT functional_JJ role_NN in_IN the_DT larva_NN ._. For_IN some_DT adult_NN
+        structures_NNS such_JJ as_IN the_DT eyes_NNS ,_, antennae_NN ,_, legs_NNS ,_, wings_NNS ,_,
+        halteres_NNS and_CC genitalia_NN ,_, the_DT imaginal_NN precursors_NNS are_VBP
+        sequestered_VBN as_RB physically_RB distinct_JJ primordia_NN -_: the_DT imaginal_NN
+        discs_NNS ._. The_DT different_JJ discs_NNS are_VBP determined_VBN as_IN to_TO disc_NN type_NN ,_,
+        but_CC do_VBP not_RB differentiate_VB until_IN the_DT late_JJ larval_NN and_CC
+        subsequent_JJ pupal_NN stages_NNS when_WRB they_PRP form_VBP the_DT adult_NN
+        structures_NNS ._. The_DT distinct_JJ developmental_NN phases_NNS of_IN the_DT
+        imaginal_NN discs_NNS ,_, their_PRP$ easy_JJ accessibility_NN ,_, along_IN with_IN the_DT
+        numerous_JJ advantages_NNS of_IN 
+        Drosophila_NNP as_IN a_DT model_NN genetic_JJ and_CC
+        developmental_NN organism_NN make_NN imaginal_NN disc_NN development_NN an_DT
+        ideal_JJ system_NN to_TO explore_VB the_DT feasibility_NN and_CC usefulness_NN of_IN
+        such_JJ an_DT analysis_NN at_IN a_DT genomic_JJ scale_NN ._.
+        The_DT principal_JJ technical_JJ difficulty_NN such_JJ a_DT study_NN must_MD
+        surmount_NN is_VBZ that_IN the_DT quantity_NN of_IN probe_NN needed_VBN for_IN efficient_JJ
+        hybridization_NN to_TO microarrays_NNS is_VBZ large_JJ relative_NN to_TO the_DT
+        amount_NN of_IN RNA_NNP contained_VBD in_IN a_DT single_JJ 
+        Drosophila_NNP imaginal_NN disc_NN ._.
+        Approximately_RB 4_CD μg_NN poly_RB (_( A_DT )_) +_NN RNA_NNP is_VBZ required_VBN to_TO make_VB a_DT
+        probe_NN ,_, but_CC a_DT third_JJ instar_NN wing_NN imaginal_NN disc_NN has_VBZ only_RB about_IN
+        1_CD -_: 4_CD ng_NN (_( Figure_NN 1_LS )_) ._. Thus_RB ,_, several_JJ thousand_CD discs_NNS would_MD need_VB
+        to_TO be_VB dissected_VBN for_IN each_DT set_NN of_IN experiments_NNS ._. In_IN previous_JJ
+        reports_NNS of_IN expression_NN profiling_VBG ,_, 
+        Drosophila_NNP embryos_NNS ,_, adult_NN flies_VBZ and_CC
+        adult_NN heads_VBZ ,_, and_CC collections_NNS of_IN animals_NNS were_VBD pooled_VBN after_IN
+        carefully_RB timing_VBG or_CC otherwise_RB selecting_VBG individual_JJ animals_NNS
+        [_NN 9_CD ,_, 14_CD ,_, 18_CD ,_, 20_CD ]_NN ._. However_RB ,_, any_DT scheme_NN to_TO stage_VB animals_NNS is_VBZ
+        inherently_RB inexact_NN ._. In_IN addition_NN ,_, parameters_NNS such_JJ as_IN genetic_JJ
+        variability_NN ,_, nutritional_JJ state_NN ,_, pathogen_NN exposure_NN and_CC
+        effects_NNS of_IN the_DT isolation_NN procedure_NN cannot_NN be_VB easily_RB
+        controlled_VBN or_CC measured_VBN ._. Pools_NNP of_IN animals_NNS therefore_RB yield_VBP
+        only_RB an_DT average_NN of_IN their_PRP$ varied_JJ inputs_NNS ,_, and_CC depending_VBG on_IN
+        the_DT extent_NN of_IN variability_NN ,_, critical_JJ differences_NNS between_IN
+        samples_NNS may_MD be_VB submerged_JJ ._. Furthermore_RB ,_, the_DT level_NN of_IN
+        resolution_NN is_VBZ relatively_RB low_JJ when_WRB RNA_NNP preparations_NNS from_IN
+        whole_JJ animals_NNS are_VBP used_VBN ._. For_IN many_JJ biological_JJ questions_NNS ,_, it_PRP
+        is_VBZ necessary_JJ to_TO detect_VB differences_NNS in_IN subsets_NNS of_IN cells_NNS that_WDT
+        might_MD account_VB for_IN only_RB a_DT small_JJ fraction_NN of_IN the_DT many_JJ
+        thousands_NNS of_IN cells_NNS in_IN the_DT animal_NN ._. To_TO circumvent_VB these_DT
+        problems_NNS ,_, we_PRP used_VBD techniques_NNS that_WDT allow_VBP us_PRP to_TO carry_VB out_IN
+        several_JJ hybridizations_NNS with_IN probes_NNS derived_VBN from_IN different_JJ
+        tissues_NNS of_IN a_DT single_JJ animal_NN ._.
+        We_PRP applied_VBD linear_JJ RNA_NNP amplification_NN methods_NNS that_WDT were_VBD
+        first_RB introduced_VBN by_IN Eberwine_NNP and_CC co-workers_NNS [_NN 21_CD ,_, 22_CD ]_NN and_CC
+        have_VBP been_VBN refined_VBN by_IN Baugh_NNP 
+        et_CC al_NN ._. [_NN 23_CD ]_NN ._. We_PRP used_VBD two_CD rounds_NNS of_IN
+        reverse_NN transcription_NN (_( RT_NNP )_) and_CC 
+        in_IN vitro_NN transcription_NN (_( IVT_NNP )_) ,_, and_CC
+        achieved_VBD as_RB much_JJ as_IN 1_CD -_: 5_CD ×_NN 10_CD 5_CD -_: fold_VB amplification_NN ._. The_DT
+        amplified_VBN RNA_NNP (_( aRNA_NN )_) from_IN different_JJ tissues_NNS of_IN single_JJ larva_NN
+        was_VBD used_VBN to_TO perform_VB pairwise_NN comparisons_NNS and_CC to_TO identify_VB
+        sets_NNS of_IN genes_NNS with_IN preferential_JJ expression_NN ._. The_DT
+        preferential_JJ expression_NN of_IN many_JJ of_IN the_DT genes_NNS in_IN these_DT sets_NNS
+        had_VBD been_VBN previously_RB shown_VBN by_IN genetic_JJ or_CC molecular_JJ analysis_NN ._.
+        We_PRP also_RB confirmed_VBD the_DT preferential_JJ expression_NN of_IN ten_CD genes_NNS
+        that_WDT had_VBD not_RB been_VBN previously_RB characterized_VBN by_IN 
+        in_IN situ_NN hybridization_NN to_TO imaginal_NN
+        discs_NNS ._. Several_JJ of_IN these_DT genes_NNS had_VBD particularly_RB interesting_JJ
+        patterns_NNS of_IN expression_NN ._. Our_PRP$ findings_NNS show_VBP that_IN this_DT method_NN
+        can_MD be_VB applied_VBN to_TO determine_VB the_DT expression_NN profile_NN of_IN
+        individual_JJ tissues_NNS and_CC to_TO identify_VB candidate_NN genes_NNS with_IN
+        specific_JJ expression_NN patterns_NNS ._.
+      
+      
+        Results_NNS and_CC discussion_NN
+        
+          Principle_NNP of_IN amplification_NN
+          The_DT amplification_NN procedure_NN we_PRP used_VBD is_VBZ based_VBN on_IN
+          protocols_NNS described_VBN by_IN Eberwine_NNP [_NN 21_CD ,_, 22_CD ,_, 24_CD ]_NN ,_, Wang_NNP 
+          et_CC al_NN ._. [_NN 25_CD ]_NN ,_, and_CC Baugh_NNP 
+          et_CC al_NN ._. [_NN 23_CD ]_NN ,_, and_CC details_NNS are_VBP given_VBN
+          in_IN Materials_NNPS and_CC methods_NNS ._. Briefly_NNP ,_, double-stranded_JJ cDNA_NN
+          was_VBD synthesized_JJ either_CC from_IN total_JJ RNA_NNP isolated_VBD from_IN
+          imaginal_NN discs_NNS or_CC from_IN poly_RB (_( A_DT )_) +_NN -_: purified_JJ embryonic_JJ RNA_NNP ._.
+          The_DT cDNA_NN was_VBD used_VBN as_IN a_DT template_NN for_IN 
+          in_IN vitro_NN transcription_NN ,_, routinely_RB
+          generating_VBG an_DT RNA_NNP product_NN that_WDT represented_VBD an_DT
+          amplification_NN of_IN approximately_RB 1_CD ,_, 000_CD fold_VB ._. This_DT RNA_NNP was_VBD
+          subjected_VBN to_TO a_DT second_JJ round_NN of_IN RT_NNP and_CC IVT_NNP ._. The_DT yield_NN from_IN
+          the_DT second_JJ round_NN represented_VBD an_DT approximately_RB 100_CD -_: fold_VB
+          amplification_NN ,_, resulting_VBG in_IN an_DT overall_JJ amplification_NN of_IN
+          1_CD -_: 5_CD ×_NN 10_CD 5_CD ._. Probes_NNP for_IN hybridization_NN were_VBD synthesized_JJ by_IN
+          RT_NNP and_CC labeled_VBN with_IN either_DT Cy_NNP 5_CD (_( red_JJ )_) or_CC Cy_NNP 3_CD (_( green_JJ )_) ._.
+          Arrays_NNP were_VBD hybridized_JJ simultaneously_RB with_IN Cy_NNP 5_CD -_: and_CC
+          Cy_NNP 3_CD -_: labeled_VBN probes_NNS ,_, and_CC the_DT intensities_NNS and_CC ratios_NNS of_IN
+          bound_VBN fluor_NN were_VBD measured_VBN for_IN each_DT spot_NN ._. Because_IN of_IN
+          inherent_JJ variability_NN in_IN the_DT hybridization_NN efficiency_NN of_IN
+          individual_JJ microarrays_NNS ,_, only_RB the_DT ratios_NNS of_IN the_DT red_JJ and_CC
+          green_JJ fluorescence_NN were_VBD interpreted_VBN to_TO indicate_VB relative_JJ
+          transcript_NN abundance_NN in_IN the_DT starting_VBG pool_NN of_IN poly_RB (_( A_DT )_)
+          +_NN RNA_NNP ._.
+          A_DT known_VBN drawback_NN of_IN linear_JJ amplification_NN is_VBZ that_IN
+          sequences_NNS at_IN the_DT 5_CD '_POS end_NN of_IN transcripts_NNS can_MD be_VB
+          preferentially_RB lost_VBN ._. This_DT reduction_NN in_IN sequence_NN
+          complexity_NN can_MD probably_RB be_VB attributed_VBN to_TO incomplete_JJ RT_NNP ,_,
+          to_TO priming_VBG from_IN subterminal_NN locations_NNS ,_, and_CC to_TO incomplete_JJ
+          IVT_NNP ._. To_TO overcome_VB this_DT problem_NN ,_, we_PRP supplemented_JJ the_DT random_JJ
+          hexanucleotides_NNS that_WDT were_VBD used_VBN to_TO prime_JJ the_DT second_JJ RT_NNP
+          reaction_NN with_IN a_DT template-switch_JJ (_( TS_NNP )_) primer_NN [_NN 25_CD ]_NN ._. This_DT
+          primer_NN includes_VBZ a_DT guanosine_NN triplet_NN that_WDT is_VBZ designed_VBN to_TO
+          pair_VB with_IN a_DT 3_CD '_POS cytidine_NN overhang_NN created_VBN by_IN the_DT reverse_JJ
+          transcriptase_NN (_( Clontech_NNP [_NN 25_CD ]_NN )_) ._. Control_NN amplifications_NNS
+          with_IN the_DT TS_NNP primer_NN alone_RB or_CC random_JJ hexanucleotides_NNS alone_RB
+          yielded_VBD similar_JJ quantities_NNS of_IN aRNA_NN ._. When_WRB these_DT aRNA_NN
+          preparations_NNS were_VBD used_VBN for_IN microarray_NN hybridizations_NNS ,_,
+          many_JJ spots_NNS had_VBD significantly_RB different_JJ signal_NN intensities_NNS
+          (_( data_NNS not_RB shown_VBN )_) ._. The_DT 25_CD cDNAs_NNS with_IN the_DT most_RBS intense_JJ
+          signals_NNS for_IN the_DT probe_NN amplified_VBN with_IN the_DT TS_NNP primer_NN alone_RB
+          had_VBD an_DT average_JJ length_NN of_IN 1_CD ._. 6_CD kilobases_NNS (_( kb_NN )_) ._. In_IN contrast_NN ,_,
+          after_IN amplification_NN with_IN hexanucleotides_NNS alone_RB ,_, the_DT 25_CD
+          cDNAs_NNS with_IN the_DT most_RBS intense_JJ signals_NNS had_VBD an_DT average_JJ length_NN
+          of_IN 1_CD ._. 1_CD kb_NN ._. We_PRP interpret_VBP the_DT bias_NN towards_IN long_JJ transcripts_NNS
+          in_IN TS-primer_NNP amplified_VBN probes_NNS as_IN indicating_VBG better_JJR
+          preservation_NN of_IN 5_CD '_POS -_: complexity_NN ._.
+        
+        
+          Representation_NNP of_IN transcripts_NNS in_IN amplified_VBN
+          probes_NNS
+          The_DT most_RBS important_JJ feature_NN of_IN RNA_NNP pools_NNS that_WDT
+          amplification_NN must_MD preserve_VB is_VBZ proportionality_NN ,_, the_DT
+          maintenance_NN of_IN the_DT relative_JJ concentration_NN of_IN different_JJ
+          RNAs_NNP ._. We_PRP established_VBD the_DT quality_NN of_IN our_PRP$ amplification_NN
+          method_NN in_IN several_JJ ways_NNS ._. First_LS ,_, we_PRP isolated_VBD poly_RB (_( A_DT )_) +_NN RNA_NNP
+          from_IN embryos_NNS and_CC subjected_VBN 100_CD pg_NN ,_, 1_CD ng_NN and_CC 10_CD ng_NN
+          aliquots_NNS to_TO two_CD rounds_NNS of_IN linear_JJ amplification_NN ._. The_DT size_NN
+          distribution_NN of_IN the_DT aRNA_NN ranged_VBD from_IN about_IN 100_CD
+          nucleotides_NNS to_TO high-molecular-weight_JJ products_NNS ,_, with_IN the_DT
+          majority_NN between_IN 240_CD and_CC 2_CD ,_, 000_CD nucleotides_NNS (_( Figure_NN 2_CD a_DT )_) ._.
+          aRNA_NN from_IN independent_JJ amplifications_NNS was_VBD then_RB used_VBN to_TO
+          generate_VB probes_NNS and_CC to_TO compare_VB hybridization_NN efficiencies_NNS
+          of_IN pairs_NNS of_IN probes_NNS ._. Such_JJ separate_JJ amplifications_NNS of_IN
+          aliquots_NNS of_IN 1_CD ng_NN of_IN the_DT same_JJ embryonic_JJ poly_RB (_( A_DT )_) +_NN RNA_NNP
+          produced_VBD signals_NNS with_IN similar_JJ intensities_NNS ._. A_DT scatterplot_NN
+          of_IN the_DT Cy_NNP 3_CD and_CC Cy_NNP 5_CD signal_NN intensities_NNS showed_VBD a_DT tight_JJ
+          correlation_NN coefficient_NN (_( CC_NNP )_) of_IN 0_CD ._. 97_CD ,_, with_IN a_DT low_JJ standard_JJ
+          deviations_NNS (_( SD_NNP )_) of_IN the_DT red_JJ /_NN green_JJ (_( R_NN /_NN G_NNP )_) ratios_NNS for_IN all_DT
+          spots_NNS (_( SD_NNP 0_CD ._. 25_CD ,_, log_VBP 
+          2_CD -_: transformed_VBN )_) (_( Figure_NN 2_CD b_SYM )_) ._.
+          Comparisons_NNP of_IN probes_NNS made_VBN from_IN 100_CD pg_NN and_CC 1_CD ng_NN and_CC from_IN
+          1_CD ng_NN and_CC 10_CD ng_NN poly_RB (_( A_DT )_) +_NN RNA_NNP yielded_VBD essentially_RB the_DT same_JJ
+          level_NN of_IN reproducibility_NN (_( CC_NNP 0_CD ._. 95_CD ,_, SD_NNP 0_CD ._. 29_CD ;_: data_NNS not_RB
+          shown_VBN )_) ._. We_PRP conclude_VBP that_IN the_DT amplifications_NNS were_VBD
+          reproducible_JJ and_CC that_IN good_JJ proportionality_NN of_IN RNA_NNP was_VBD
+          maintained_VBN during_IN amplification_NN even_RB if_IN the_DT concentration_NN
+          of_IN poly_RB (_( A_DT )_) +_NN RNA_NNP differed_VBD by_IN tenfold_RB ._.
+          Comparisons_NNP between_IN amplified_VBN and_CC unamplified_JJ RNA_NNP
+          indicated_VBD that_IN essentially_RB no_DT transcripts_NNS were_VBD lost_VBN
+          during_IN amplificaton_NN ._. Of_IN the_DT spots_NNS that_IN hybridized_JJ to_TO
+          probes_NNS generated_VBN from_IN amplified_VBN and_CC unamplified_JJ embryonic_JJ
+          poly_RB (_( A_DT )_) +_NN RNA_NNP 99_CD %_NN (_( 5_CD ,_, 514_CD out_IN of_IN 5_CD ,_, 574_CD )_) did_VBD so_RB with_IN both_DT
+          probes_NNS ._. Differences_NNS in_IN intensities_NNS were_VBD ,_, nevertheless_RB ,_,
+          significant_JJ (_( CC_NNP 0_CD ._. 53_CD and_CC SD_NNP 1_CD ._. 13_CD ,_, data_NNS not_RB shown_VBN )_) ._. We_PRP do_VBP
+          not_RB know_VB whether_IN these_DT differences_NNS in_IN intensities_NNS were_VBD a_DT
+          result_NN of_IN changes_NNS in_IN relative_JJ abundance_NN or_CC in_IN transcript_NN
+          length_NN ,_, both_DT of_IN which_WDT will_MD affect_VB hybridization_NN signals_NNS ._.
+          Nevertheless_RB ,_, the_DT good_JJ correspondence_NN of_IN the_DT hybridizing_VBG
+          spots_NNS shows_VBZ that_IN the_DT aRNA_NN is_VBZ an_DT essentially_RB complete_JJ
+          representation_NN of_IN the_DT population_NN of_IN transcripts_NNS present_JJ
+          in_IN the_DT initial_JJ pool_NN ._. We_PRP conclude_VBP that_IN comparisons_NNS of_IN two_CD
+          different_JJ probes_NNS on_IN microarrays_NNS are_VBP valid_JJ if_IN the_DT RNA_NNP
+          pools_NNS have_VBP been_VBN amplified_VBN in_IN the_DT same_JJ way_NN ._.
+        
+        
+          Pairwise_NNP comparisons_NNS of_IN imaginal_NN discs_NNS and_CC larval_NN
+          organs_NNS
+          We_PRP carried_VBD out_IN 43_CD separate_JJ hybridizations_NNS ,_, comparing_VBG
+          13_CD different_JJ pairwise_NN combinations_NNS of_IN tissues_NNS (_( Table_NNP 1_LS )_) ._.
+          This_DT analysis_NN identified_VBD many_JJ genes_NNS that_WDT are_VBP
+          preferentially_RB expressed_VBN in_IN specific_JJ tissues_NNS ;_: it_PRP also_RB
+          provided_VBD an_DT independent_JJ and_CC quantitative_JJ measure_NN of_IN the_DT
+          distinct_JJ nature_NN of_IN larval_NN tissue_NN and_CC imaginal_NN disc_NN
+          cells_NNS ._.
+          Hybridizations_NNP that_WDT were_VBD carried_VBN out_IN were_VBD of_IN two_CD
+          types_NNS :_: with_IN probes_NNS generated_VBN from_IN different_JJ imaginal_NN
+          discs_NNS ;_: and_CC with_IN probes_NNS from_IN imaginal_NN discs_NNS and_CC larval_NN
+          organs_NNS ._. Comparisons_NNP between_IN imaginal_NN disc_NN probes_NNS revealed_VBD
+          a_DT high_JJ degree_NN of_IN similarity_NN ,_, but_CC comparisons_NNS between_IN
+          imaginal_NN disc_NN and_CC larval_NN organ_NN probes_NNS identified_VBD many_JJ
+          differentially_RB expressed_VBD genes_NNS ._. We_PRP now_RB give_VBP a_DT general_JJ
+          description_NN of_IN these_DT results_NNS ,_, starting_VBG with_IN those_DT tissues_NNS
+          that_WDT were_VBD most_RBS alike_RB ._. It_PRP should_MD be_VB noted_VBN that_IN these_DT
+          results_NNS were_VBD obtained_VBN with_IN microarrays_NNS that_WDT represent_VBP a_DT
+          pool_NN of_IN cDNAs_NNS obtained_VBN from_IN the_DT Berkeley_NNP 
+          Drosophila_NNP Genome_NNP Project_NNP (_( BDGP_NNP )_)
+          containing_VBG approximately_RB 44_CD %_NN (_( 6_CD ,_, 000_CD /_NN 13_CD ,_, 600_CD )_) of_IN the_DT
+          transcription_NN units_NNS predicted_VBD to_TO be_VB in_IN the_DT 
+          Drosophila_NNP genome_NN ._. As_IN this_DT pool_NN may_MD
+          not_RB be_VB a_DT truly_RB random_JJ subset_NN ,_, extrapolations_NNS to_TO the_DT whole_JJ
+          genome_NN may_MD be_VB of_IN limited_JJ value_NN ._. Indeed_RB ,_, a_DT preliminary_JJ
+          comparison_NN of_IN our_PRP$ cDNA_NN arrays_NNS with_IN microarrays_NNS that_WDT
+          contain_VBP short_JJ cDNA_NN sequences_NNS for_IN all_DT annotated_JJ genes_NNS
+          suggests_VBZ that_IN the_DT total_JJ number_NN of_IN genes_NNS that_WDT produce_VBP a_DT
+          signal_NN with_IN these_DT probes_NNS is_VBZ similar_JJ ._. It_PRP is_VBZ possible_JJ that_IN
+          the_DT set_NN of_IN 6_CD ,_, 000_CD cDNAs_NNS distributed_VBN by_IN the_DT BDGP_NNP is_VBZ biased_VBN
+          toward_IN genes_NNS expressed_VBD in_IN the_DT tissues_NNS we_PRP analyzed_VBD ._.
+        
+        
+          Expression_NNP profiles_NNS of_IN imaginal_NN discs_NNS
+          
+            Left_NNP and_CC right_JJ wing_NN discs_NNS
+            We_PRP first_RB asked_VBD whether_IN microarray_NN hybridization_NN
+            could_MD detect_VB differences_NNS in_IN expression_NN profiles_NNS between_IN
+            left_VBD and_CC right_JJ wing_NN discs_NNS ._. Although_IN few_JJ differences_NNS
+            might_MD be_VB expected_VBN ,_, previous_JJ studies_NNS have_VBP revealed_VBN a_DT
+            left_VBN /_NN right_JJ difference_NN in_IN wing_NN size_NN ,_, suggesting_VBG that_IN the_DT
+            respective_JJ developmental_NN programs_NNS are_VBP not_RB identical_JJ [_NN
+            26_CD ]_NN ._. When_WRB probes_NNS were_VBD prepared_VBN independently_RB from_IN the_DT
+            poly_RB (_( A_DT )_) +_NN RNA_NNP isolated_VBD from_IN left_VBD and_CC right_JJ wing_NN discs_NNS of_IN
+            a_DT third_JJ instar_NN larva_NN ,_, only_RB minor_JJ differences_NNS in_IN the_DT
+            intensities_NNS were_VBD observed_VBN (_( CC_NNP 0_CD ._. 99_CD and_CC SD_NNP 0_CD ._. 14_CD )_) (_( Figure_NN
+            2_CD c_SYM )_) ._. This_DT tight_JJ correlation_NN again_RB shows_VBZ the_DT
+            reproducibility_NN of_IN the_DT amplification_NN procedure_NN ._.
+          
+          
+            Leg_NNP discs_NNS
+            We_PRP then_RB asked_VBD if_IN any_DT of_IN the_DT genes_NNS represented_VBD on_IN our_PRP$
+            arrays_NNS were_VBD differentially_RB expressed_VBN in_IN first_JJ ,_, second_JJ
+            or_CC third_JJ leg_NN discs_NNS ._. Among_IN the_DT several_JJ genes_NNS that_WDT have_VBP
+            been_VBN shown_VBN to_TO be_VB differentially_RB required_VBN or_CC expressed_VBN
+            in_IN the_DT different_JJ leg_NN discs_NNS (_( for_IN example_NN ,_, 
+            Ultrabithorax_NNP [_NN 27_CD ]_NN ,_, 
+            Antp_NNP [_NN 28_CD ]_NN and_CC 
+            Sex_NN combs_NNS reduced_VBD [_NN 29_CD ,_, 30_CD ]_NN )_) ,_,
+            only_RB 
+            Antp_NNP was_VBD among_IN the_DT set_NN of_IN cDNAs_NNS
+            on_IN our_PRP$ microarrays_NNS ._. Comparisons_NNP of_IN probes_NNS from_IN first_JJ ,_,
+            second_JJ and_CC third_JJ leg_NN discs_NNS yielded_VBD CC_NNP values_NNS in_IN the_DT
+            0_CD ._. 93_CD ranges_NNS ._. To_TO identify_VB differentially_RB expressed_VBD genes_NNS
+            in_IN the_DT leg_NN discs_NNS ,_, cluster_NN analysis_NN was_VBD used_VBN to_TO group_VB
+            genes_NNS with_IN similar_JJ expression_NN profiles_NNS [_NN 31_CD ]_NN ._. For_IN this_DT
+            and_CC all_DT subsequent_JJ analyses_NNS a_DT threshold_NN setting_VBG of_IN >_NN
+            1_CD ._. 74_CD (_( =_SYM 0_CD ._. 8_CD log_VB 
+            2_CD -_: transformed_VBN ratios_NNS )_) was_VBD applied_VBN
+            to_TO identify_VB subclusters_NNS ._. We_PRP identified_VBD 2_CD ,_, 12_CD or_CC 17_CD
+            differentially_RB expressed_VBD genes_NNS in_IN the_DT leg_NN 1_CD :_: leg_NN 3_CD ,_,
+            leg_NN 2_CD :_: leg_NN 3_CD and_CC leg_NN 1_CD :_: leg_NN 2_CD disc_NN arrays_NNS ,_, respectively_RB
+            (_( Figure_NN 3_LS )_) ._. The_DT induced_VBN expression_NN of_IN 
+            Antp_NNP in_IN the_DT second_JJ leg_NN discs_NNS was_VBD
+            noteworthy_JJ ._. This_DT finding_VBG is_VBZ consistent_JJ with_IN previous_JJ
+            studies_NNS showing_VBG that_IN although_IN 
+            Antp_NNP is_VBZ expressed_VBN in_IN all_DT three_CD
+            leg_NN discs_NNS ,_, it_PRP is_VBZ expressed_VBN at_IN a_DT much_RB greater_JJR level_NN in_IN
+            second_JJ leg_NN discs_NNS [_NN 28_CD ]_NN ._.
+          
+          
+            Leg_NNP and_CC wing_NN discs_NNS
+            Comparisons_NNP were_VBD also_RB made_VBN between_IN the_DT first_JJ leg_NN and_CC
+            wing_NN imaginal_NN discs_NNS (_( two_CD experiments_NNS )_) ._. Cluster_NNP analysis_NN
+            identified_VBD 23_CD genes_NNS that_WDT were_VBD preferentially_RB expressed_VBN
+            in_IN the_DT leg_NN discs_NNS and_CC 8_CD in_IN the_DT wing_NN discs_NNS (_( Figure_NN 4_LS )_) ._.
+            Notable_NNP in_IN the_DT wing_NN cluster_NN are_VBP 
+            broad_JJ ,_, which_WDT is_VBZ expressed_VBN in_IN
+            imaginal_NN cells_NNS and_CC encodes_NNS a_DT family_NN of_IN transcription_NN
+            factors_NNS [_NN 32_CD ]_NN ,_, and_CC 
+            apterous_JJ ,_, which_WDT is_VBZ expressed_VBN in_IN
+            the_DT dorsal_NN wing_NN cells_NNS and_CC is_VBZ required_VBN for_IN wing_NN
+            formation_NN [_NN 33_CD ]_NN ._.
+          
+          
+            Wing_NNP and_CC eye-antennal_JJ imaginal_NN discs_NNS
+            Comparing_VBG probes_NNS from_IN the_DT wing_NN and_CC eye-antennal_JJ
+            discs_NNS isolated_VBN from_IN the_DT same_JJ larva_NN revealed_VBD a_DT higher_JJR
+            degree_NN of_IN divergence_NN ._. Eleven_CD independent_JJ
+            wing_NN :_: eye-antennal_JJ comparisons_NNS were_VBD made_VBN ._. Twenty-four_CD
+            genes_NNS were_VBD identified_VBN that_WDT had_VBD elevated_VBD expression_NN in_IN
+            the_DT wing_NN discs_NNS ,_, and_CC 73_CD genes_NNS were_VBD identified_VBN with_IN
+            elevated_JJ expression_NN in_IN eye-antennal_JJ discs_NNS (_( Figure_NN 5_LS )_) ._.
+            Many_JJ of_IN these_DT genes_NNS are_VBP known_VBN from_IN previous_JJ studies_NNS to_TO
+            be_VB expressed_VBN specifically_RB in_IN these_DT tissues_NNS ._. Among_IN the_DT
+            genes_NNS with_IN elevated_JJ expression_NN in_IN wing_NN discs_NNS were_VBD 
+            apterous_JJ and_CC 
+            engrailed_JJ ._. apterous_JJ is_VBZ expressed_VBN
+            in_IN the_DT dorsal_NN compartment_NN of_IN the_DT wing_NN disc_NN ,_, but_CC not_RB in_IN
+            the_DT eye-antennal_JJ disc_NN ;_: 
+            engrailed_JJ is_VBZ expressed_VBN in_IN the_DT
+            posterior_NN compartment_NN cells_NNS of_IN both_DT the_DT wing_NN and_CC
+            eye-antennal_JJ discs_NNS ._. However_RB ,_, inclusion_NN of_IN 
+            engrailed_JJ in_IN the_DT wing_NN group_NN is_VBZ
+            reasonable_JJ as_IN the_DT posterior_NN compartment_NN represents_VBZ
+            approximately_RB half_NN of_IN the_DT wing_NN disc_NN ,_, but_CC is_VBZ less_JJR than_IN a_DT
+            quarter_NN of_IN the_DT eye-antennal_JJ disc_NN ._. Among_IN the_DT genes_NNS with_IN
+            increased_VBN expression_NN in_IN eye-antennal_JJ discs_NNS were_VBD 
+            white_NN ,_, which_WDT encodes_NNS an_DT eye_NN
+            pigment_NN precursor_NN transporter_NN and_CC the_DT eye-specific_JJ
+            transcription_NN factor-encoding_JJ gene_NN ,_, 
+            glass_NN ._. Consistent_NNP with_IN the_DT
+            neuronal_NN fate_NN of_IN many_JJ cells_NNS in_IN the_DT eye-antennal_JJ disc_NN ,_,
+            ten_CD genes_NNS known_VBN to_TO be_VB expressed_VBN and_CC to_TO function_VB in_IN
+            neuronal_NN or_CC glial_NN cells_NNS were_VBD grouped_VBN into_IN the_DT
+            eye-antennal_JJ cluster_NN :_: 
+            prospero_NN ,_, atonal_JJ ,_, fasciclin_NN I_PRP ,_,
+            longitudinal_NN lacking_VBG ,_, locomotion_NN defects_NNS ,_, Rapgap_NNP 1_CD ,_,
+            unc-_NN 13_CD ,_, sanpodo_NN ,_, Caps_NNP and_CC 
+            beta-amyloid_JJ protein_NN
+            precursor-like_JJ ._. 
+            In_IN addition_NN to_TO the_DT genes_NNS whose_WP$ tissue-specific_JJ
+            expression_NN was_VBD confirmed_VBN by_IN this_DT array_NN analysis_NN ,_, many_JJ
+            have_VBP not_RB been_VBN characterized_VBN previously_RB ._. One_CD of_IN these_DT
+            novel_NN genes_NNS ,_, CG_NNP 9335_CD ,_, was_VBD notable_JJ for_IN its_PRP$ 16_CD -_: fold_VB
+            relative_JJ induction_NN in_IN eye-antennal_JJ discs_NNS (_( Figure_NN 5_LS )_) ._. We_PRP
+            also_RB single_JJ out_RP 
+            Gliolectin_NNP (_( glec_NN )_) in_IN the_DT
+            eye-antennal_JJ cluster_NN ,_, as_IN this_DT is_VBZ not_RB consistent_JJ with_IN
+            previous_JJ studies_NNS ._. 
+            glec_NN is_VBZ expressed_VBN in_IN midline_NN glia_NN
+            cells_NNS ,_, but_CC previous_JJ 
+            in_IN situ_NN hybridization_NN and_CC
+            immunohistochemistry_NN failed_VBD to_TO detect_VB it_PRP in_IN discs_NNS [_NN
+            34_CD ]_NN ._. We_PRP did_VBD not_RB characterize_VB 
+            glec_NN further_JJ and_CC cannot_NN therefore_RB
+            distinguish_VB whether_IN this_DT discrepancy_NN should_MD be_VB
+            attributed_VBN to_TO greater_JJR sensitivity_NN of_IN the_DT array_NN analysis_NN
+            or_CC to_TO possible_JJ contamination_NN by_IN glial_NN cell_NN RNA_NNP in_IN the_DT
+            eye-antennal_JJ RNA_NNP ._.
+            To_TO gauge_VB the_DT validity_NN of_IN these_DT sets_NNS of_IN genes_NNS ,_, eight_CD
+            genes_NNS with_IN uncharacterized_JJ expression_NN in_IN imaginal_NN discs_NNS
+            -_: four_CD from_IN the_DT wing-disc_JJ cluster_NN and_CC four_CD from_IN the_DT
+            eye-antennal-disc_JJ cluster_NN -_: were_VBD chosen_VBN for_IN examination_NN
+            by_IN 
+            in_IN situ_NN hybridization_NN ._. These_DT
+            genes_NNS were_VBD chosen_VBN to_TO represent_VB a_DT spectrum_NN of_IN relative_JJ
+            intensity_NN of_IN expression_NN ,_, from_IN just_RB above_IN the_DT threshold_NN
+            to_TO the_DT maximum_NN observed_VBD ._. All_DT of_IN the_DT patterns_NNS we_PRP
+            obtained_VBD correlated_JJ with_IN the_DT array_NN analysis_NN and_CC had_VBD the_DT
+            preferential_JJ expression_NN as_IN predicted_VBN for_IN each_DT cluster_NN
+            (_( Figure_NN 6_CD )_) ._. Two_CD out_IN of_IN eight_CD genes_NNS were_VBD expressed_VBN
+            specifically_RB in_IN either_DT wing_NN (_( CG_NNP 10962_CD ;_: Figure_NN 6_CD c_SYM )_) or_CC
+            eye-antennal_JJ (_( CG_NNP 9335_CD ;_: Figure_NN 6_CD g_SYM )_) discs_NNS ._. CG_NNP 1607_CD was_VBD
+            expressed_VBN specifically_RB in_IN the_DT peripodial_NN cells_NNS of_IN wing_NN
+            discs_NNS (_( Figure_NN 6_CD b_SYM )_) ._. CG_NNP 11798_CD (_( Figure_NN 6_CD f_SYM )_) and_CC CG_NNP 9335_CD
+            (_( Figure_NN 6_CD g_SYM )_) were_VBD expressed_VBN specifically_RB by_IN cells_NNS in_IN or_CC
+            near_IN the_DT morphogenetic_JJ furrow_NN of_IN eye_NN discs_NNS ._. CG_NNP 9335_CD was_VBD
+            expressed_VBN in_IN R_NN 8_CD precursor_NN cells_NNS that_WDT also_RB stained_JJ with_IN
+            the_DT neuronal-specific_JJ 22_CD C_NNP 10_CD antibody_NN in_IN a_DT pattern_NN
+            reminiscent_NN of_IN 
+            atonal_JJ (_( data_NNS not_RB shown_VBN )_) ;_: it_PRP was_VBD
+            also_RB expressed_VBN in_IN the_DT optic_JJ lobe_NN ,_, in_IN Bolwig_NNP 's_POS organ_NN
+            (_( the_DT light-sensing_JJ organ_NN of_IN the_DT larva_NN )_) ,_, and_CC in_IN a_DT subset_NN
+            of_IN neurons_NNS in_IN the_DT embryonic_JJ and_CC larval_NN central_JJ nervous_JJ
+            system_NN (_( CNS_NNP ;_: data_NNS not_RB shown_VBN )_) ._. Another_DT notable_JJ but_CC
+            unexpected_JJ finding_NN was_VBD that_IN Arrestin_NNP 2_CD ,_, the_DT
+            metarhodopsin-binding_JJ protein_NN ,_, was_VBD expressed_VBN in_IN all_DT
+            imaginal_NN discs_NNS we_PRP tested_VBD ,_, not_RB only_RB in_IN eye_NN discs_NNS ._.
+            Indeed_RB ,_, 
+            in_IN situ_NN hybridization_NN indicated_VBD
+            that_IN it_PRP is_VBZ expressed_VBN more_RBR abundantly_RB in_IN the_DT wing_NN than_IN
+            in_IN the_DT eye-antennal_JJ disc_NN (_( Figure_NN 6_CD d_SYM )_) ._. This_DT distribution_NN
+            suggests_VBZ that_IN the_DT 
+            Drosophila_NNP Arrestin_NNP 2_CD might_MD
+            function_VB outside_IN the_DT visual_JJ system_NN ._.
+          
+          
+            Haltere_NNP and_CC genital_JJ imaginal_NN discs_NNS
+            In_IN five_CD direct_JJ comparisons_NNS of_IN haltere_NN and_CC genital_JJ
+            imaginal_NN discs_NNS ,_, 130_CD genes_NNS were_VBD found_VBN to_TO be_VB
+            preferentially_RB expressed_VBN in_IN the_DT haltere_NN disc_NN and_CC 54_CD in_IN
+            the_DT genital_JJ disc_NN (_( see_VB Additional_JJ data_NNS files_NNS )_) ._. As_IN with_IN
+            the_DT wing_NN /_NN eye-antennal_JJ analysis_NN ,_, known_VBN genes_NNS clustered_VBN
+            as_IN predicted_VBN from_IN previous_JJ studies_NNS ._. For_IN example_NN ,_, 
+            caudal_NN ,_, a_DT homeobox_NN domain_NN
+            transcription_NN factor_NN ,_, partitioned_JJ into_IN the_DT genital-disc_JJ
+            cluster_NN ._. 
+            caudal_NN is_VBZ expressed_VBN in_IN the_DT
+            genital_JJ disc_NN but_CC not_RB in_IN more_JJR anterior_NN tissues_NNS such_JJ as_IN
+            the_DT haltere_NN disc_NN [_NN 35_CD ]_NN ._. 
+            abdominal_NN B_NNP ,_, which_WDT would_MD be_VB
+            predicted_VBN to_TO show_VB preferential_JJ expression_NN in_IN the_DT
+            genital_JJ disc_NN ,_, was_VBD not_RB represented_VBN on_IN the_DT arrays_NNS ._. These_DT
+            184_CD differentially_RB expressed_VBD genes_NNS correspond_VB to_TO 3_CD %_NN of_IN
+            the_DT entire_JJ set_NN of_IN 6_CD ,_, 000_CD and_CC represent_VB the_DT largest_JJS
+            cluster_NN we_PRP obtained_VBD in_IN all_DT pairwise_NN comparisons_NNS of_IN
+            imaginal_NN discs_NNS ._.
+          
+        
+        
+          Expression_NNP profiles_NNS of_IN larval_NN organs_NNS
+          In_IN order_NN to_TO compare_VB and_CC contrast_VB the_DT expression_NN
+          profiles_NNS of_IN larval_NN organs_NNS and_CC imaginal_NN discs_NNS ,_, we_PRP made_VBD
+          probes_NNS from_IN the_DT poly_RB (_( A_DT )_) +_NN RNA_NNP isolated_VBD from_IN several_JJ larval_NN
+          organs_NNS ._. We_PRP directly_RB compared_VBD probes_NNS from_IN the_DT wing_NN
+          imaginal_NN disc_NN with_IN :_: the_DT salivary_JJ gland_NN ,_, an_DT anterior_NN
+          fraction_NN of_IN the_DT midgut_NN ,_, parts_NNS of_IN the_DT fat_JJ body_NN and_CC the_DT
+          brain_NN hemisphere_NN ,_, including_VBG the_DT optic_JJ lobe_NN primordium_NN ._.
+          For_IN each_DT experiment_NN ,_, probes_NNS prepared_VBN from_IN a_DT single_JJ larva_NN
+          were_VBD compared_VBN ._. With_IN the_DT exception_NN of_IN the_DT comparisons_NNS
+          between_IN the_DT first_JJ leg_NN disc_NN and_CC fat_JJ body_NN which_WDT was_VBD carried_VBN
+          out_IN once_RB ,_, each_DT of_IN the_DT other_JJ comparisons_NNS was_VBD repeated_VBN at_IN
+          least_JJS three_CD times_NNS ._.
+          Visual_NNP inspection_NN of_IN the_DT array_NN scans_NNS of_IN imaginal_NN disc_NN
+          to_TO larval_NN tissue_NN comparisons_NNS revealed_VBD a_DT large_JJ number_NN of_IN
+          red_JJ and_CC green_JJ spots_NNS ,_, indicative_JJ of_IN a_DT high_JJ degree_NN of_IN
+          divergence_NN ._. A_DT representative_NN block_NN from_IN one_CD wing_NN
+          disc-to-fat_JJ body_NN scan_VB is_VBZ shown_VBN in_IN Figure_NN 7_CD b_SYM ._. These_DT
+          results_NNS contrast_VBP with_IN disc_NN to_TO disc_NN comparisons_NNS which_WDT
+          produced_VBD mostly_RB yellow_JJ and_CC only_RB few_JJ red_JJ or_CC green_JJ spots_NNS on_IN
+          the_DT arrays_NNS ._. For_IN purposes_NNS of_IN illustration_NN ,_, the_DT same_JJ block_NN
+          of_IN spots_NNS from_IN a_DT leg_NN 1_CD disc-to-leg_JJ 3_CD disc_NN scan_VB is_VBZ shown_VBN in_IN
+          Figure_NN 7_CD a_DT ._. When_WRB the_DT intensity_NN of_IN Cy_NNP 3_CD and_CC Cy_NNP 5_CD signals_NNS for_IN
+          all_DT cDNAs_NNS was_VBD plotted_VBD on_IN a_DT scatterplot_NN ,_, only_RB a_DT small_JJ
+          number_NN of_IN data_NNS points_NNS are_VBP positioned_VBN away_RB from_IN the_DT
+          bisector_NN on_IN which_WDT signals_NNS of_IN equal_JJ intensity_NN in_IN the_DT two_CD
+          channels_NNS fall_VBP (_( Figure_NN 7_CD c_SYM )_) ._. This_DT is_VBZ indicative_JJ of_IN strong_JJ
+          similarity_NN in_IN expression_NN profiles_NNS and_CC is_VBZ reflected_VBN in_IN a_DT
+          high_JJ CC_NNP (_( 0_CD ._. 93_CD )_) ._. In_IN contrast_NN ,_, the_DT wing_NN disc-to-fat_JJ body_NN
+          comparison_NN had_VBD many_JJ data_NNS points_NNS located_VBN on_IN each_DT side_NN of_IN
+          the_DT bisector_NN (_( CC_NNP 0_CD ._. 37_CD )_) (_( Figure_NN 7_CD d_SYM )_) ._. This_DT disparity_NN
+          between_IN leg_NN disc-to-leg_JJ disc_NN and_CC wing_NN disc-to-fat_JJ body_NN
+          comparison_NN was_VBD also_RB observed_VBN for_IN all_DT other_JJ disc-to-disc_JJ
+          and_CC disc-to-larval_JJ organ_NN comparisons_NNS we_PRP carried_VBD out_RP ._.
+          Figure_NN 8_CD aillustrates_NNS the_DT numbers_NNS of_IN cDNAs_NNS that_WDT were_VBD
+          expressed_VBN differentially_RB in_IN the_DT various_JJ pairwise_NN
+          comparisons_NNS as_IN a_DT bar_NN diagram_NN ._. All_DT disc-to-disc_JJ
+          comparisons_NNS showed_VBD small_JJ numbers_NNS of_IN differentially_RB
+          expressed_VBD cDNAs_NNS ,_, whereas_IN the_DT disc-to-nondisc_JJ comparisons_NNS
+          revealed_VBD many_JJ ._. The_DT only_JJ exceptions_NNS were_VBD the_DT comparisons_NNS
+          of_IN the_DT wing_NN imaginal_NN disc_NN to_TO the_DT brain_NN /_NN optic_JJ lobe_NN (_( see_VB
+          below_IN )_) ._. To_TO score_NN for_IN the_DT differences_NNS in_IN expression_NN for_IN
+          all_DT 6_CD ,_, 000_CD genes_NNS ,_, the_DT standard_JJ deviations_NNS of_IN the_DT R_NN /_NN G_NNP
+          ratios_NNS (_( log_VB 
+          2_CD -_: transformed_VBN )_) for_IN each_DT gene_NN were_VBD
+          calculated_VBN for_IN all_DT 42_CD experiments_NNS and_CC represented_VBD in_IN a_DT
+          scatterplot_NN (_( Figure_NN 8_CD b_SYM )_) ._. Standard_JJ deviations_NNS from_IN the_DT
+          datasets_NNS derived_VBN from_IN disc-to-disc_JJ comparisons_NNS (_( 25_CD
+          experiments_NNS )_) were_VBD all_DT <_NN 1_CD ,_, indicating_VBG the_DT high_JJ level_NN
+          of_IN similarity_NN among_IN the_DT different_JJ imaginal_NN discs_NNS ._. In_IN
+          contrast_NN ,_, the_DT disc-to-nondisc_JJ comparisons_NNS (_( 17_CD
+          experiments_NNS )_) were_VBD ,_, with_IN a_DT single_JJ exception_NN (_( see_VB below_IN )_)
+          >_NN 1_CD ,_, reflecting_VBG a_DT high_JJ degree_NN of_IN divergence_NN (_( Figure_NN
+          8_CD b_SYM )_) ._. These_DT observations_NNS are_VBP consistent_JJ with_IN the_DT distinct_JJ
+          developmental_NN programs_NNS of_IN imaginal_NN and_CC larval_NN cells_NNS ._.
+          The_DT only_JJ exceptions_NNS to_TO emerge_VB in_IN this_DT analysis_NN were_VBD
+          the_DT cells_NNS of_IN the_DT optic_JJ lobe_NN /_NN brain_NN hemisphere_NN ._. Comparisons_NNP
+          of_IN these_DT neuronal_NN tissues_NNS with_IN wing_NN discs_NNS revealed_VBD only_RB a_DT
+          small_JJ number_NN of_IN differentially_RB expressed_VBD genes_NNS (_( Figure_NN
+          8_CD a_DT )_) and_CC had_VBD low_JJ standard_JJ deviations_NNS that_WDT were_VBD in_IN the_DT
+          range_NN of_IN disc-to-disc_JJ comparisons_NNS (_( Figure_NN 8_CD b_SYM )_) ._. The_DT optic_JJ
+          lobe_NN primordium_NN and_CC brain_NN of_IN late_JJ third_JJ instar_NN larvae_NN
+          have_VBP only_RB limited_JJ functions_NNS in_IN larval_NN photoreception_NN and_CC
+          contain_VB only_RB a_DT small_JJ number_NN of_IN mature_VBP neurons_NNS ._. The_DT larval_NN
+          brain_NN is_VBZ populated_VBN with_IN clusters_NNS of_IN immature_NN neurons_NNS ,_,
+          neuroblasts_NNS and_CC ganglion_NN mother_NN cells_NNS whose_WP$ descendants_NNS
+          will_MD generate_VB the_DT neuronal_NN and_CC glial_NN populations_NNS of_IN the_DT
+          adult_NN optic_JJ neuropil_NN and_CC the_DT brain_NN hemisphere_NN ._. The_DT brain_NN
+          hemisphere_NN also_RB differs_VBZ from_IN other_JJ larval_NN tissues_NNS by_IN not_RB
+          degenerating_VBG during_IN metamorphosis_NNS ._. Instead_RB ,_, most_JJS neurons_NNS
+          of_IN the_DT larva_NN join_VB with_IN newly_RB formed_VBN adult-specific_JJ
+          neurons_NNS to_TO build_VB the_DT CNS_NNP of_IN the_DT adult_NN (_( [_NN 36_CD ]_NN and_CC
+          references_NNS therein_RB )_) ._. We_PRP interpret_VBP the_DT high_JJ degree_NN of_IN
+          similarity_NN in_IN the_DT expression_NN profiles_NNS of_IN imaginal_NN discs_NNS
+          and_CC the_DT brain_NN /_NN optic_JJ lobe_NN preparations_NNS as_IN a_DT manifestation_NN
+          of_IN the_DT apparent_JJ commonalities_NNS of_IN their_PRP$ developmental_NN
+          programs_NNS ._.
+          The_DT number_NN of_IN genes_NNS that_WDT were_VBD found_VBN to_TO be_VB induced_VBN in_IN
+          the_DT larval_NN organs_NNS is_VBZ significantly_RB greater_JJR than_IN the_DT
+          number_NN of_IN genes_NNS in_IN the_DT sets_NNS defined_VBN by_IN the_DT disc-to-disc_JJ
+          comparisons_NNS ._. Most_JJS of_IN the_DT genes_NNS in_IN these_DT sets_NNS have_VBP not_RB
+          been_VBN characterized_VBN previously_RB and_CC therefore_RB have_VBP no_DT known_VBN
+          function_NN ,_, but_CC the_DT known_VBN genes_NNS in_IN these_DT clusters_NNS
+          illustrate_VBP the_DT predictive_JJ power_NN of_IN the_DT method_NN ;_: we_PRP mention_VBP
+          three_CD examples_NNS ._.
+          Many_JJ of_IN the_DT genes_NNS that_WDT are_VBP preferentially_RB expressed_VBN in_IN
+          the_DT optic_JJ lobe_NN /_NN brain_NN hemisphere_NN have_VBP predicted_VBN or_CC
+          described_VBD expression_NN and_CC /_NN or_CC function_NN in_IN neurons_NNS or_CC glial_NN
+          cells_NNS (_( data_NNS not_RB shown_VBN )_) ._. One_CD of_IN these_DT is_VBZ 
+          lola_NN ,_, which_WDT encodes_NNS a_DT
+          transcription_NN factor_NN involved_VBN in_IN axon_NN guidance_NN and_CC is_VBZ
+          expressed_VBN in_IN the_DT embryonic_JJ optic_JJ lobe_NN placodes_NNS as_RB well_RB as_IN
+          other_JJ tissues_NNS [_NN 37_CD ]_NN ._. Another_DT is_VBZ 
+          beta_NN amyloid_NN protein_NN precursor-like_JJ
+          (_( Appl_NNP )_) ,_, with_IN known_VBN expression_NN in_IN the_DT larval_NN optic_JJ
+          lobe_NN [_NN 38_CD ]_NN ._.
+          The_DT expression_NN profile_NN of_IN the_DT cyclin-dependent_JJ kinase_NN
+          1_CD (_( 
+          Cdk-_NNP 1_CD /_NN cdc_NN 2_LS )_) ,_, is_VBZ also_RB noteworthy_JJ ._.
+          Cdk-_NNP 1_CD is_VBZ believed_VBN to_TO regulate_VB the_DT G_NNP 2_CD checkpoint_NN of_IN the_DT
+          cell_NN cycle_NN and_CC is_VBZ required_VBN to_TO maintain_VB diploidy_NN ._.
+          Mutations_NNP in_IN 
+          Cdk-_NNP 1_CD drive_NN cells_NNS that_WDT would_MD
+          normally_RB remain_VB diploid_NN into_IN endoreplication_NN [_NN 39_CD ]_NN ._. We_PRP
+          found_VBD 
+          Cdk-_NNP 1_CD (_( CG_NNP 5363_CD )_) to_TO be_VB repressed_JJ in_IN
+          larval_NN tissues_NNS when_WRB compared_VBN to_TO imaginal_NN discs_NNS (_( Figure_NN
+          9_CD )_) ._. As_IN most_JJS of_IN the_DT cells_NNS in_IN the_DT larval_NN fat_JJ body_NN ,_, salivary_JJ
+          gland_NN and_CC midgut_NN are_VBP polyploid_NN (_( reviewed_VBN in_IN [_NN 40_CD ]_NN )_) ,_, the_DT
+          array_NN hybridizations_NNS are_VBP in_IN good_JJ agreement_NN with_IN the_DT known_VBN
+          function_NN of_IN 
+          Cdk-_NNP 1_CD ._.
+        
+        
+          Experimental_NNP design_NN and_CC data_NNS analysis_NN
+          Two_CD methods_NNS for_IN comparative_JJ hybridizations_NNS to_TO DNA_NNP
+          microarrays_NNS have_VBP been_VBN used_VBN in_IN previous_JJ studies_NNS ._. Most_JJS
+          commonly_RB ,_, experimental_JJ samples_NNS have_VBP been_VBN compared_VBN to_TO a_DT
+          common_JJ reference_NN sample_NN that_WDT contains_VBZ an_DT appropriate_JJ
+          diversity_NN of_IN cell_NN types_NNS and_CC states_NNS ._. An_DT alternative_JJ
+          method_NN ,_, which_WDT we_PRP have_VBP used_VBN in_IN this_DT study_NN ,_, is_VBZ to_TO directly_RB
+          compare_VB probes_NNS generated_VBN from_IN two_CD experimental_JJ samples_NNS ._.
+          This_DT second_JJ method_NN should_MD be_VB the_DT more_RBR sensitive_JJ ._. The_DT
+          amplification_NN technique_NN we_PRP used_VBD was_VBD such_JJ that_DT product_NN
+          generated_VBN from_IN a_DT single_JJ imaginal_NN disc_NN was_VBD sufficient_JJ to_TO
+          make_VB several_JJ probes_NNS and_CC to_TO carry_VB out_IN multiple_JJ array_NN
+          hybridizations_NNS ._. By_IN comparing_VBG samples_NNS that_WDT had_VBD been_VBN
+          isolated_VBN from_IN a_DT single_JJ animal_NN ,_, this_DT method_NN minimized_VBN
+          differences_NNS due_JJ to_TO biological_JJ variability_NN ._. By_IN repeating_VBG
+          experiments_NNS several_JJ times_NNS and_CC by_IN reversing_VBG the_DT label_NN
+          (_( dye-flip_JJ )_) for_IN experimental_JJ samples_NNS in_IN repeat_NN
+          hybridizations_NNS ,_, we_PRP also_RB attempted_VBD to_TO minimize_VB
+          experimental_JJ noise_NN ._.
+          In_IN addition_NN to_TO these_DT design_NN aspects_NNS of_IN the_DT
+          experimental_JJ protocols_NNS ,_, we_PRP applied_VBD a_DT number_NN of_IN filters_NNS to_TO
+          the_DT data_NNS analysis_NN ._. We_PRP selected_VBD only_RB those_DT genes_NNS with_IN
+          hybridization_NN signals_NNS over_IN background_NN in_IN 80_CD %_NN of_IN all_DT
+          experiments_NNS and_CC with_IN a_DT 1_CD ._. 74_CD -_: fold_VB difference_NN between_IN the_DT
+          two_CD channels_NNS in_IN at_IN least_JJS 45_CD %_NN ._. Applying_VBG this_DT method_NN to_TO 11_CD
+          arrays_NNS that_WDT compared_VBD wing_NN and_CC eye-antennal_JJ discs_NNS ,_, we_PRP
+          found_VBD two_CD subclusters_NNS representing_VBG genes_NNS preferentially_RB
+          expressed_VBD in_IN either_DT disc_NN ._. These_DT lists_NNS of_IN genes_NNS are_VBP
+          largely_RB validated_JJ by_IN the_DT previously_RB described_VBN expression_NN
+          pattern_NN in_IN either_DT tissue_NN and_CC by_IN 
+          in_IN situ_NN hybridization_NN analysis_NN ._. We_PRP
+          understand_VBP that_IN the_DT use_NN of_IN any_DT such_JJ threshold_NN settings_NNS is_VBZ
+          likely_JJ to_TO filter_NN out_IN biologically_RB relevant_JJ genes_NNS ._. For_IN
+          example_NN ,_, when_WRB less_RBR stringent_JJ settings_NNS were_VBD used_VBN (_( for_IN
+          example_NN ,_, a_DT 1_CD ._. 6_CD -_: fold_VB intensity_NN difference_NN increased_VBD the_DT
+          gene_NN sets_NNS by_IN 20_CD %_NN )_) ,_, additional_JJ genes_NNS such_JJ as_IN 
+          twin_NN of_IN eyeless_JJ were_VBD included_VBN in_IN
+          the_DT eye-antennal_JJ cluster_NN and_CC 
+          Antp_NNP and_CC CG_NNP 6680_CD (_( Figure_NN 6_CD e_SYM )_) in_IN the_DT
+          wing_NN cluster_NN ._. Relaxing_NNP the_DT requirement_NN to_TO produce_VB a_DT ratio_NN
+          in_IN at_IN least_JJS 80_CD %_NN of_IN all_DT experiments_NNS to_TO 70_CD %_NN identifies_VBZ yet_RB
+          another_DT group_NN of_IN genes_NNS ,_, and_CC includes_VBZ LD_NNP 11162_CD (_( Figure_NN 6_CD j_NN )_) ._.
+          Conversely_RB ,_, setting_VBG a_DT more_RBR stringent_JJ threshold_NN to_TO
+          1_CD ._. 9_CD -_: fold_VB intensity_NN difference_NN decreased_VBD the_DT gene_NN sets_NNS by_IN
+          25_CD %_NN and_CC removed_VBN genes_NNS such_JJ as_IN Arrestin_NNP 2_CD and_CC CG_NNP 11798_CD
+          (_( Figure_NN 6_CD d_SYM ,_, 6_CD f_SYM )_) ._.
+          Setting_VBG a_DT threshold_NN level_NN for_IN the_DT clusters_NNS is_VBZ
+          arbitrary_JJ ,_, and_CC as_IN some_DT candidate_NN genes_NNS may_MD be_VB expressed_VBN
+          by_IN only_RB a_DT small_JJ subset_NN of_IN cells_NNS in_IN the_DT experimental_JJ
+          sample_NN ,_, each_DT analysis_NN must_MD be_VB evaluated_VBN separately_RB ._.
+          Nevertheless_RB ,_, we_PRP interpret_VBP the_DT good_JJ correlation_NN between_IN
+          the_DT array_NN analysis_NN and_CC expression_NN patterns_NNS we_PRP have_VBP
+          described_VBN as_IN indicating_VBG that_IN the_DT method_NN is_VBZ both_DT efficient_JJ
+          and_CC reliable_JJ ._. Subsequent_JJ to_TO the_DT analyses_NNS described_VBD above_IN ,_,
+          we_PRP carried_VBD out_IN single-disc_JJ comparisons_NNS with_IN microarrays_NNS
+          that_WDT represent_VBP a_DT nearly_RB complete_JJ set_NN of_IN the_DT approximately_RB
+          14_CD ,_, 000_CD annotated_JJ 
+          Drosophila_NNP genes_NNS ._. The_DT short_JJ cDNAs_NNS
+          spotted_VBD on_IN these_DT arrays_NNS were_VBD produced_VBN with_IN specific_JJ
+          primer_NN pairs_NNS obtained_VBN from_IN Incyte_NNP Genomics_NNP ,_, Inc_NNP ._. Use_NN of_IN
+          these_DT arrays_NNS for_IN disc-to-disc_JJ comparisons_NNS also_RB identified_VBN
+          only_RB a_DT relatively_RB small_JJ number_NN of_IN differentially_RB
+          expressed_VBD genes_NNS (_( data_NNS not_RB shown_VBN )_) ._. The_DT list_NN of_IN induced_VBN
+          genes_NNS was_VBD apparently_RB more_RBR complete_JJ ,_, however_RB ,_, and_CC
+          included_VBD ,_, for_IN example_NN ,_, 
+          vestigal_NN in_IN the_DT wing-to-leg_JJ disc_NN
+          comparisons_NNS (_( A_DT ._. K_NNP ._. ,_, G_NNP ._. Schubiger_NNP and_CC T_NN ._. B_NNP ._. K_NNP ._. ,_, unpublished_JJ
+          observations_NNS )_) ._.
+          Although_IN the_DT absolute_JJ number_NN of_IN genes_NNS included_VBN in_IN the_DT
+          lists_NNS of_IN tissue-specific_JJ genes_NNS is_VBZ not_RB meaningful_JJ ,_, the_DT
+          relatively_RB small_JJ number_NN of_IN genes_NNS that_WDT differ_VBP between_IN
+          imaginal_NN tissues_NNS and_CC the_DT significantly_RB greater_JJR number_NN of_IN
+          genes_NNS that_WDT differ_VBP between_IN imaginal_NN and_CC larval_NN tissues_NNS
+          certainly_RB is_VBZ ._.
+        
+      
+      
+        Conclusions_NNP
+        We_PRP have_VBP shown_VBN that_IN linear_JJ RNA_NNP amplification_NN is_VBZ
+        reproducible_JJ and_CC can_MD be_VB used_VBN to_TO generate_VB probes_NNS for_IN
+        microarray_NN experiments_NNS with_IN limited_JJ quantities_NNS of_IN starting_VBG
+        material_NN ._. We_PRP used_VBD this_DT technique_NN to_TO determine_VB the_DT
+        expression_NN profiles_NNS of_IN imaginal_NN and_CC larval_NN tissues_NNS by_IN
+        pairwise_NN comparisons_NNS of_IN tissues_NNS dissected_VBN from_IN single_JJ
+        larvae_NN ._. Our_PRP$ approach_NN was_VBD validated_JJ by_IN the_DT presence_NN of_IN
+        characterized_VBN genes_NNS in_IN the_DT appropriate_JJ cluster_NN and_CC by_IN
+        confirmation_NN of_IN expression_NN patterns_NNS by_IN direct_JJ analysis_NN ._.
+        Applying_VBG stringent_JJ threshold_NN criteria_NNS ,_, we_PRP found_VBD that_IN less_JJR
+        than_IN 3_CD %_NN of_IN the_DT genes_NNS represented_VBD on_IN the_DT arrays_NNS were_VBD
+        preferentially_RB expressed_VBN when_WRB discs_NNS were_VBD compared_VBN to_TO each_DT
+        other_JJ ._. Many_JJ of_IN these_DT genes_NNS have_VBP either_CC not_RB been_VBN
+        characterized_VBN previously_RB or_CC lack_NN obvious_JJ similarity_NN to_TO
+        known_VBN coding_VBG domains_NNS ._. Those_DT that_WDT have_VBP been_VBN previously_RB
+        characterized_VBN or_CC share_NN sequence_NN similarities_NNS represent_VBP a_DT
+        broad_JJ array_NN of_IN cellular_JJ functions_NNS ._. These_DT include_VBP basic_JJ
+        metabolic_JJ and_CC transporting_VBG functions_NNS ,_, structural_JJ ,_,
+        cell-adhesive_JJ and_CC signaling_VBG functions_NNS ,_, as_RB well_RB as_IN
+        transcriptional_NN regulation_NN ._. We_PRP lack_VBP sufficient_JJ
+        understanding_NN of_IN the_DT specific_JJ processes_NNS in_IN most_JJS cell_NN types_NNS
+        to_TO interpret_VB the_DT significance_NN of_IN the_DT genes_NNS that_IN they_PRP
+        specifically_RB express_VBP ._. Future_JJ studies_NNS will_MD be_VB required_VBN to_TO
+        identify_VB the_DT functional_JJ networks_NNS that_IN the_DT identified_VBN
+        candidate_NN genes_NNS describe_VBP and_CC to_TO establish_VB how_WRB they_PRP
+        contribute_VBP to_TO the_DT execution_NN of_IN specific_JJ developmental_NN
+        programs_NNS ._.
+        We_PRP anticipate_VBP that_IN the_DT methods_NNS we_PRP describe_VBP here_RB can_MD be_VB
+        applied_VBN to_TO determine_VB and_CC compare_VB the_DT expression_NN profiles_NNS of_IN
+        small_JJ cell_NN groups_NNS in_IN 
+        Drosophila_NNP tissues_NNS ._. We_PRP look_VBP forward_RB
+        to_TO a_DT further_JJ enhancement_NN in_IN resolution_NN that_WDT can_MD be_VB achieved_VBN
+        by_IN combining_VBG cell-sorting_JJ techniques_NNS with_IN this_DT type_NN of_IN
+        array_NN analysis_NN ._. We_PRP found_VBD that_IN starting_VBG with_IN as_RB little_JJ as_IN 10_CD
+        pg_NN poly_RB (_( A_DT )_) +_NN RNA_NNP yields_NNS enough_JJ aRNA_NN for_IN one_CD hybridization_NN ._.
+        This_DT amount_NN roughly_RB corresponds_NNS to_TO 300_CD cells_NNS of_IN the_DT third_JJ
+        instar_NN wing_NN imaginal_NN disc_NN ._.
+      
+      
+        Materials_NNS and_CC methods_NNS
+        
+          Microarray_NNP production_NN and_CC labeling_VBG
+          Spotted_VBN cDNA_NN microarrays_NNS were_VBD produced_VBN essentially_RB as_IN
+          described_VBN at_IN [_NN 41_CD ]_NN ._. In_IN brief_JJ ,_, the_DT 
+          Drosophila_NNP Gene_NNP Collection_NNP (_( DGC_NNP
+          1_CD ._. 0_CD ,_, kindly_RB provided_VBN by_IN the_DT Berkeley_NNP 
+          Drosophila_NNP Genome_NNP Project_NNP )_) of_IN 5_CD ,_, 849_CD
+          nonredundant_NN cDNAs_NNS was_VBD amplified_VBN using_VBG universal_JJ primers_NNS
+          essentially_RB as_IN described_VBN at_IN [_NN 42_CD ]_NN ._. The_DT amplification_NN
+          products_NNS were_VBD purified_JJ with_IN 96_CD -_: well_RB format_NN Qiagen_NNP PCR_NNP
+          purification_NN columns_NNS ._. All_DT PCR_NNP products_NNS were_VBD analyzed_VBN on_IN
+          agarose_NN gels_NNS ,_, and_CC reactions_NNS with_IN no_DT detectable_JJ product_NN ,_,
+          multiple_JJ bands_NNS or_CC bands_NNS of_IN unexpected_JJ size_NN were_VBD repeated_VBN
+          using_VBG Herculase_NNP (_( Amersham_NNP )_) or_CC Expand_NNP polymerase_NN (_( Roche_NNP )_) ._.
+          One_CD hundred_CD and_CC seventy-five_JJ cDNAs_NNS from_IN our_PRP$ lab_NN
+          collection_NN were_VBD amplified_VBN and_CC added_VBN to_TO the_DT set_VBN ,_, resulting_VBG
+          in_IN a_DT total_NN of_IN 6_CD ,_, 024_CD cDNAs_NNS ._. Reactions_NNP were_VBD arrayed_JJ into_IN
+          384_CD -_: well_RB plates_NNS and_CC printed_VBN on_IN poly-_NN L-_NNP lysine-coated_JJ glass_NN
+          slides_NNS using_VBG a_DT linear_JJ servo_NN arrayer_NN and_CC ArrayMaker_NNP
+          Version_NNP 2_CD control_NN software_NN ._. To_TO minimize_VB background_NN caused_VBN
+          by_IN oxidation_NN of_IN the_DT polylysine_NN coating_NN ,_, slides_NNS were_VBD
+          pretreated_JJ by_IN a_DT protocol_NN suggested_VBN by_IN Paul_NNP Ebert_NNP ._. Before_IN
+          post-processing_JJ ,_, slides_NNS were_VBD incubated_JJ for_IN 5_CD min_NN in_IN 3_CD ×_NN
+          SSC_NNP ;_: 0_CD ._. 2_CD %_NN SDS_NNP at_IN 65_CD °_NN C_NNP ,_, washed_VBD first_JJ in_IN water_NN and_CC then_RB in_IN
+          95_CD %_NN ethanol_NN ,_, followed_VBN by_IN centrifugation_NN to_TO dry_VB the_DT
+          slides_NNS ._. Slides_NNS were_VBD then_RB treated_VBN ,_, and_CC the_DT hybridization_NN
+          reaction_NN was_VBD carried_VBN out_IN as_IN described_VBN at_IN [_NN 42_CD ]_NN ._. We_PRP
+          indirectly_RB labeled_VBD the_DT hybridization_NN probes_NNS by_IN
+          incorporation_NN of_IN amino-allyl_JJ modified_VBN nucleotides_NNS in_IN a_DT
+          first-strand_JJ cDNA_NN RT_NNP reaction_NN ._. Monofunctional_NNP Cy_NNP 5_CD or_CC Cy_NNP 3_CD
+          dye_NN (_( Amersham_NNP )_) was_VBD subsequently_RB coupled_VBN to_TO the_DT reactive_JJ
+          residues_NNS ._. Multiple_NNP hybridizations_NNS were_VBD carried_VBN out_IN for_IN
+          most_JJS experiments_NNS ,_, and_CC dye_NN labeling_VBG was_VBD reversed_VBN to_TO avoid_VB
+          systematic_JJ bias_NN ._.
+        
+        
+          Larval_NNP dissections_NNS ,_, RNA_NNP isolation_NN and_CC in_IN
+          situhybridization_NN
+          Third_JJ instar_NN wandering_VBG larvae_NN were_VBD dissected_VBN and_CC
+          washed_VBN several_JJ times_NNS in_IN Ringer_NNP solution_NN (_( 130_CD mM_NN NaCl_NNP ,_, 5_CD
+          mM_NN KCl_NNP ,_, 2_CD mM_NN Na_NNP 
+          2_CD HPO_NNP 
+          4_CD ,_, 1_CD ._. 5_CD mM_NN CaCl_NNP 
+          2_CD ,_, 0_CD ._. 37_CD mM_NN KH_NNP 
+          2_CD PO_NNP 
+          4_LS )_) ._. Fat-body_NNP fragments_NNS were_VBD mainly_RB
+          anterior_NN plates_NNS ._. Midgut_NNP was_VBD the_DT anterior_NN portion_NN just_RB
+          posterior_NN to_TO the_DT gastric_JJ caeca_NN ._. Brain_NNP /_NN optic_JJ lobe_NN
+          consisted_VBD of_IN one_CD brain_NN hemisphere_NN including_VBG the_DT optic_JJ
+          lobe_NN primordium_NN ._.
+          Total_NNP RNA_NNP from_IN larval_NN tissues_NNS was_VBD extracted_VBN using_VBG the_DT
+          Mini_NNP RNA_NNP Isolation_NNP Kit_NNP (_( Zymo_NNP Research_NNP ,_, Orange_NNP ,_, CA_NNP )_) and_CC
+          was_VBD eluted_JJ with_IN RNase-free_NNP water_NN ._. Total_NNP RNA_NNP from_IN embryos_NNS
+          was_VBD extracted_VBN with_IN Trizol_NNP reagent_NN (_( Invitrogen_NNP )_) ._. Embryonic_NNP
+          poly_RB (_( A_DT )_) +_NN RNA_NNP was_VBD purified_JJ using_VBG the_DT Oligotex_NNP mRNA_NN Mini_NNP
+          Kit_NNP (_( Qiagen_NNP )_) ._. Poly_NNP (_( A_DT )_) +_NN RNA_NNP was_VBD not_RB purified_JJ before_IN
+          amplification_NN of_IN disc_NN RNA_NNP because_IN of_IN the_DT small_JJ amounts_NNS
+          (_( see_VB Figure_NN 1_LS )_) ._.
+          
+          In_IN situ_NN hybridizations_NNS were_VBD carried_VBN
+          out_IN as_IN described_VBN in_IN O_NNP '_POS Neill_NNP and_CC Bier_NNP [_NN 43_CD ]_NN ._. The_DT plasmids_NNS
+          used_VBN to_TO generate_VB 
+          in_IN situ_NN probes_NNS were_VBD derived_VBN by_IN
+          subcloning_VBG an_DT aliquot_NN of_IN the_DT PCR_NNP product_NN that_WDT was_VBD printed_VBN
+          onto_IN the_DT microarray_NN with_IN Topo_NNP TA_NNP cloning_VBG (_( Invitrogen_NNP )_) ._.
+          All_DT cloned_VBN products_NNS were_VBD sequenced_JJ and_CC separate_JJ
+          hybridizations_NNS were_VBD carried_VBN out_IN for_IN sense_NN and_CC antisense_NN
+          probes_NNS ._.
+        
+        
+          RNA_NNP amplification_NN
+          Methods_NNP for_IN amplification_NN were_VBD adapted_VBN from_IN Wang_NNP 
+          et_CC al_NN ._. [_NN 25_CD ]_NN and_CC Baugh_NNP 
+          et_CC al_NN ._. [_NN 23_CD ]_NN ._. Total_NNP RNA_NNP isolated_VBD
+          from_IN dissected_VBN larval_NN tissues_NNS or_CC poly_RB (_( A_DT )_) +_NN RNA_NNP purified_JJ
+          from_IN embryos_NNS was_VBD incubated_JJ with_IN 100_CD ng_NN oligo_NN (_( dT_NN )_) 
+          24_CD -_: T_NN 7_CD primer_NN
+          (_( GGCCAGTGAATTGTAATACGACTCACTATAGGGAGGCG-GTTTTTTTTTTTTTTTTTTTTTTTT_NNP )_)
+          and_CC 125_CD ng_NN TS_NNP primer_NN (_( AAGCAGTGGTAACAACGCAGAGTACGCGGG_NNP )_) in_IN
+          5_CD μl_NN at_IN 65_CD °_NN C_NNP for_IN 10_CD min_NN and_CC cooled_VBN on_IN ice_NN ._. Six_CD
+          microliters_NNS first-strand_JJ premix_NN were_VBD added_VBN and_CC incubated_JJ
+          at_IN 42_CD °_NN C_NNP for_IN 2_CD h_NN (_( 6_CD μl_NN mix_NN was_VBD made_VBN up_RP with_IN 2_CD μl_NN 5_CD ×_NN
+          first-strand_JJ buffer_NN ,_, 1_CD μl_NN 0_CD ._. 1_CD M_NNP DTT_NNP ,_, 1_CD μl_NN dNTPs_NNS (_( 10_CD mM_NN
+          each_DT )_) ,_, 0_CD ._. 3_CD μl_NN T_NN 4_CD gp_NN 32_CD (_( USB_NNP ,_, 13_CD ._. 82_CD mg_NN /_NN ml_NN )_) ,_, 0_CD ._. 5_CD μl_NN RNasin_NNP
+          (_( Promega_NNP )_) ,_, 1_CD μl_NN Superscript_NNP II_NNP (_( Invitrogen_NNP )_) )_) ._. The_DT
+          reaction_NN was_VBD incubated_JJ at_IN 65_CD °_NN C_NNP for_IN 10_CD min_NN and_CC cooled_VBN on_IN
+          ice_NN ._. Cold_NNP second-strand_JJ premix_NN (_( 64_CD ._. 5_LS μl_NN prepared_VBN on_IN ice_NN :_:
+          45_CD μl_NN RNase-free_NNP water_NN ,_, 15_CD μl_NN 5_CD ×_NN second-strand_JJ buffer_NN
+          (_( Invitrogen_NNP )_) ,_, 1_CD ._. 5_CD μl_NN dNTPs_NNS (_( 10_CD mM_NN each_DT )_) ,_, 0_CD ._. 5_CD μl_NN 
+          E_NNP ._. coli_NNS ligase_NN (_( 10_CD U_NNP /_NN μl_NN )_) ,_, 2_CD μl_NN 
+          E_NNP ._. coli_NNS polymerase_NN (_( 10_CD U_NNP /_NN μl_NN )_) ,_, 0_CD ._. 5_CD
+          μl_NN 
+          E_NNP ._. coli_NNS RNaseH_NNP (_( 2_CD U_NNP /_NN μl_NN )_) )_) ._. Enzymes_NNP
+          for_IN the_DT second-strand_JJ premix_NN (_( Invitrogen_NNP )_) were_VBD added_VBN and_CC
+          incubated_JJ at_IN 16_CD °_NN C_NNP for_IN 2_CD h_NN ,_, followed_VBN by_IN the_DT addition_NN of_IN 2_CD
+          units_NNS T_NN 4_CD DNA_NNP polymerase_NN (_( Promega_NNP )_) and_CC incubation_NN at_IN 16_CD °_NN C_NNP
+          for_IN 15_CD min_NN before_IN heat_NN inactivation_NN at_IN 70_CD °_NN C_NNP for_IN 10_CD min_NN ._.
+          Clean-up_NNP was_VBD performed_VBN with_IN DNA_NNP clean_VB and_CC concentrator-_NN 5_CD
+          (_( Zymo_NNP Research_NNP )_) ,_, eluting_VBG twice_RB with_IN 8_CD μl_NN RNase-free_NNP
+          water_NN ._. The_DT total_JJ volume_NN was_VBD adjusted_VBN to_TO 8_CD μl_NN in_IN a_DT Speed_NN
+          Vac_NNP ._. The_DT first_JJ IVT_NNP was_VBD performed_VBN with_IN Megascript_NNP T_NN 7_CD
+          (_( Ambion_NNP )_) in_IN a_DT 20_CD μl_NN volume_NN for_IN 5_CD -_: 6_CD h_NN ,_, followed_VBN by_IN DNA_NNP
+          digestion_NN ._. aRNA_NN was_VBD purified_JJ using_VBG Mini_NNP RNA_NNP Isolation_NNP Kit_NNP
+          or_CC RNA_NNP Clean-up_NNP kit_NN (_( Zymo_NNP Research_NNP )_) ,_, eluting_VBG in_IN 2_CD ×_NN 8_CD μl_NN
+          RNase-free_NNP water_NN ._. Random_NNP hexanucleotides_NNS (_( 250_CD ng_NN )_) and_CC TS_NNP
+          primer_NN (_( 1_CD μg_NN )_) were_VBD added_VBN and_CC the_DT volume_NN adjusted_VBN to_TO 5_CD μl_NN ._.
+          The_DT mix_NN was_VBD incubated_JJ at_IN 65_CD °_NN C_NNP for_IN 10_CD min_NN before_IN 5_CD μl_NN
+          first-strand_JJ premix_NN was_VBD added_VBN followed_VBN by_IN incubation_NN at_IN
+          42_CD °_NN C_NNP for_IN 2_CD h_NN ._. Before_IN the_DT second-strand_JJ synthesis_NN ,_, 200_CD -_: 500_CD
+          ng_NN oligo_NN (_( dT_NN )_) 
+          24_CD -_: T_NN 7_CD primer_NN was_VBD added_VBN and_CC denatured_JJ
+          at_IN 65_CD °_NN C_NNP for_IN 10_CD min_NN ._. The_DT second-round_JJ second-strand_JJ
+          synthesis_NN ,_, clean-up_JJ and_CC IVT_NNP were_VBD carried_VBN out_IN as_IN for_IN the_DT
+          first_JJ round_NN ,_, except_IN that_IN no_DT ligase_NN was_VBD added_VBN to_TO the_DT
+          second-strand_JJ premix_NN ._. One-quarter_NNP to_TO one-third_NN of_IN the_DT
+          total_JJ aRNA_NN was_VBD applied_VBN to_TO the_DT clean-up_JJ columns_NNS after_IN the_DT
+          second_JJ IVT_NNP to_TO avoid_VB overloading_VBG ._. All_DT reactions_NNS were_VBD
+          carried_VBN out_IN in_IN a_DT thermocycler_NN with_IN heated_JJ lid_NN or_CC air_NN
+          incubator_NN to_TO avoid_VB evaporation_NN ._.
+        
+        
+          Data_NNP analysis_NN
+          Hybridized_NNP microarrays_NNS were_VBD scanned_JJ with_IN a_DT GenePix_NNP
+          4000_CD A_DT Microarray_NNP Scanner_NNP (_( Axon_NNP Instruments_NNP ,_, Union_NNP City_NNP ,_,
+          CA_NNP )_) ._. Data_NNP were_VBD analyzed_VBN and_CC displayed_VBN with_IN Cluster_NNP and_CC
+          Treeview_NNP [_NN 31_CD ]_NN ,_, AMAD_NNP [_NN 41_CD ]_NN ,_, Genepix_NNP PRO_FW (_( Axon_NNP
+          Instruments_NNP )_) ,_, and_CC Microsoft_NNP Excel_NNP ._. Normalization_NNP for_IN
+          cluster_NN analysis_NN and_CC calculation_NN of_IN standard_JJ deviations_NNS
+          were_VBD done_VBN with_IN AMAD_NNP ._. Only_RB genes_NNS that_WDT qualified_VBD with_IN a_DT
+          combined_VBN median_JJ intensity_NN >_NN 300_CD above_IN background_NN in_IN
+          both_DT channels_NNS in_IN at_IN least_JJS 80_CD %_NN of_IN the_DT repeated_VBN experiments_NNS
+          were_VBD included_VBN in_IN the_DT analysis_NN ._. A_DT threshold_NN of_IN >_NN 1_CD ._. 74_CD
+          (_( =_SYM 0_CD ._. 8_CD of_IN the_DT log_NN 
+          2_CD -_: transformed_VBN ratios_NNS )_) was_VBD chosen_VBN for_IN
+          all_DT comparisons_NNS ._. A_DT requirement_NN to_TO show_VB induction_NN above_IN
+          threshold_NN in_IN 100_CD %_NN of_IN the_DT arrays_NNS was_VBD applied_VBN for_IN
+          experiments_NNS that_WDT were_VBD repeated_VBN three_CD times_NNS or_CC less_JJR ._. For_IN
+          experiments_NNS that_WDT were_VBD repeated_VBN more_JJR than_IN three_CD times_NNS this_DT
+          requirement_NN was_VBD relaxed_VBN to_TO 45_CD %_NN ._. Standard_JJ deviations_NNS were_VBD
+          calculated_VBN on_IN the_DT log_NN 
+          2_CD -_: transformed_VBN normalized_JJ R_NN /_NN G_NNP ratios_NNS
+          using_VBG the_NNP '_POS nonbiased_JJ '_POS method_NN ._. To_TO calculate_VB the_DT
+          correlation_NN coefficients_NNS ,_, the_DT intensities_NNS of_IN both_DT
+          channels_NNS were_VBD normalized_JJ to_TO equalize_NN the_DT sums_NNS of_IN the_DT
+          intensities_NNS ._.
+        
+      
+      
+        Additional_JJ data_NNS files_NNS
+        A_DT comparison_NN of_IN expression_NN profiles_NNS of_IN genital_JJ and_CC
+        haltere_NN discsis_NNS available_JJ ._. Five_CD comparisons_NNS between_IN the_DT
+        haltere_NN (_( H_NNP )_) and_CC genital_JJ (_( G_NNP )_) disc_NN were_VBD carried_VBN out_RP ._. Four_CD of_IN
+        the_DT G_NNP discs_NNS were_VBD female_JJ (_( nos_NNS 48_CD ,_, 149_CD ,_, 150_CD ,_, 224_CD )_) and_CC one_CD was_VBD
+        male_JJ (_( no_UH ._. 148_CD )_) ._. To_TO control_VB for_IN contaminating_VBG fat_JJ body_NN (_( FB_NNP )_)
+        cells_NNS in_IN the_DT disc_NN preparations_NNS ,_, one_CD direct_JJ comparison_NN
+        between_IN haltere_NN disc_NN and_CC FB_NNP (_( no_UH ._. 129_CD )_) was_VBD included_VBN ._. The_DT
+        columns_NNS indicate_VBP the_DT subclusters_NNS with_IN consistent_JJ induction_NN
+        in_IN one_CD channel_NN (_( H_NNP ,_, green_JJ ;_: G_NNP ,_, red_JJ )_) ,_, the_DT gene_NN identification_NN
+        numbers_NNS (_( ID_NNP )_) ,_, the_DT average_JJ fold_VB induction_NN of_IN the_DT five_CD H_NNP :_: G_NNP
+        comparisons_NNS ,_, the_DT gene_NN name_NN and_CC function_NN as_IN published_VBN on_IN [_NN
+        44_CD ]_NN ._. 130_CD and_CC 54_CD genes_NNS were_VBD induced_VBN in_IN the_DT H_NNP and_CC G_NNP
+        subclusters_NNS ,_, respectively_RB ,_, using_VBG the_DT same_JJ threshold_NN
+        settings_NNS as_IN in_IN Figure_NN 3_CD ._. Note_VB the_DT 2_CD ._. 5_CD -_: fold_VB induction_NN of_IN 
+        caudal_NN (_( CG_NNP 1759_CD )_) in_IN the_DT G_NNP
+        subcluster_NN ._.
+        Additional_JJ data_NNS file_VBP 1_CD
+        A_DT comparison_NN of_IN expression_NN profiles_NNS of_IN genital_JJ and_CC
+        haltere_NN discs_NNS
+        A_DT comparison_NN of_IN expression_NN profiles_NNS of_IN genital_JJ and_CC
+        haltere_NN discs_NNS
+        Click_NNP here_RB for_IN additional_JJ data_NNS file_VBP
+      
+    
+  

@@ -1,0 +1,880 @@
+
+  
+    
+      
+        Background_NNP
+        
+          Model_NNP of_IN an_DT oscillating_VBG biochemical_JJ network_NN
+          In_IN [_NN 8_CD ]_NN ,_, Laub_NNP and_CC Loomis_NNP propose_VBP a_DT model_NN of_IN the_DT
+          molecular_JJ network_NN underlying_VBG adenosine_NN 3_CD '_POS ,_, 5_CD '_POS -_: cyclic_JJ
+          monophosphate_NN (_( cAMP_NN )_) oscillations_NNS observed_VBD in_IN fields_NNS of_IN
+          chemotactic_JJ 
+          Dictyostelium_NNP discoideum_NN cells_NNS ._. The_DT
+          model_NN ,_, based_VBN on_IN the_DT network_NN depicted_VBN in_IN Fig_NNP ._. 1_LS ,_, induces_VBZ
+          the_DT spontaneous_JJ oscillations_NNS in_IN cAMP_NN observed_VBD during_IN the_DT
+          early_JJ development_NN of_IN 
+          D_NNP ._. discoideum_NN ._. 
+          In_IN this_DT model_NN ,_, changes_NNS in_IN the_DT enzymatic_JJ activities_NNS of_IN
+          these_DT proteins_NNS are_VBP described_VBN by_IN a_DT system_NN of_IN seven_CD
+          non-linear_JJ differential_NN equations_NNS :_:
+          
+          where_WRB the_DT state_NN variable_JJ 
+          x_SYM =_SYM [_NN 
+          x_SYM 
+          1_CD ,_, ._. ._. ._. ,_, 
+          x_SYM 
+          7_CD ]_NN represents_VBZ the_DT concentrations_NNS of_IN
+          the_DT seven_CD proteins_NNS :_: 
+          x_SYM 
+          1_CD =_SYM [_NN ACA_NNP ]_NN ,_, 
+          x_SYM 
+          2_CD =_SYM [_NN PKA_NNP ]_NN ,_, 
+          x_SYM 
+          3_CD =_SYM [_NN ERK_NNP 2_CD ]_NN ,_, 
+          x_SYM 
+          4_CD =_SYM [_NN REG_NNP A_DT ]_NN ,_, 
+          x_SYM 
+          5_CD =_SYM [_NN Internal_NNP cAMP_NN ]_NN ,_, 
+          x_SYM 
+          6_CD =_SYM [_NN External_NNP cAMP_NN ]_NN and_CC 
+          x_SYM 
+          7_CD =_SYM [_NN CAR_NNP 1_CD ]_NN and_CC the_DT fourteen_CD different_JJ 
+          k_NN 
+          
+            i_NNP 
+           represent_VB system_NN parameter_NN values_NNS ._. It_PRP was_VBD shown_VBN
+          numerically_RB in_IN [_NN 8_CD ]_NN that_IN spontaneous_JJ oscillations_NNS appear_VBP
+          at_IN the_DT nominal_JJ parameter_NN values_NNS found_VBD in_IN Table_NNP 1_CD ._. Note_VB
+          that_IN because_IN there_EX are_VBP typographical_JJ errors_NNS in_IN the_DT
+          original_JJ paper_NN ,_, the_DT values_NNS being_VBG used_VBN here_RB for_IN the_DT
+          nominal_JJ parameters_NNS were_VBD obtained_VBN directly_RB from_IN the_DT
+          authors_NNS of_IN [_NN 8_CD ]_NN ._.
+          This_DT particular_JJ model_NN is_VBZ primarily_RB concerned_VBN with_IN
+          describing_VBG self-sustaining_JJ oscillations_NNS in_IN the_DT
+          biochemical_JJ system_NN ._. From_IN Fig_NNP ._. 2_LS ,_, it_PRP is_VBZ clear_JJ that_IN at_IN the_DT
+          nominal_JJ parameter_NN values_NNS of_IN the_DT model_NN ,_, this_DT is_VBZ achieved_VBN ._.
+          We_PRP seek_VBP to_TO determine_VB whether_IN the_DT system_NN is_VBZ robust_JJ -_: that_DT
+          is_VBZ ,_, if_IN we_PRP change_VBP these_DT kinetic_JJ parameters_NNS ,_, will_MD the_DT
+          systems_NNS oscillatory_NN behaviour_NN persist_VB ?_. We_PRP next_JJ present_JJ
+          two_CD possible_JJ means_NNS ,_, based_VBN on_IN whether_IN parameters_NNS are_VBP
+          changed_VBN one_CD at_IN a_DT time_NN or_CC in_IN groups_NNS ._.
+        
+      
+      
+        Methods_NNP
+        
+          Single_NNP parameter_NN robustness_NNS :_: Bifurcation_NNP
+          analysis_NN
+          Self-sustained_NNP oscillations_NNS such_JJ as_IN those_DT being_VBG
+          modelled_JJ here_RB appear_VB as_IN stable_JJ limit_NN cycles_NNS in_IN trajectory_NN
+          of_IN the_DT underlying_VBG dynamical_JJ system_NN [_NN 11_CD ]_NN ._. The_DT existence_NN
+          and_CC stability_NN of_IN these_DT limit_NN cycles_NNS may_MD change_VB under_IN
+          parametric_JJ perturbations_NNS ._. Whenever_WRB a_DT stable_JJ periodic_JJ
+          solution_NN loses_VBZ stability_NN as_IN we_PRP vary_VBP the_DT underlying_VBG
+          parameters_NNS of_IN the_DT system_NN and_CC this_DT solution_NN transitions_NNS to_TO
+          another_DT qualitative_JJ solution_NN -_: for_IN example_NN ,_, a_DT
+          steady-state_JJ equilibrium_NN -_: we_PRP say_VBP that_IN the_DT system_NN
+          undergoes_NNS a_DT 
+          Hopf_NNP bifurcation_NN ._. It_PRP is_VBZ therefore_RB
+          possible_JJ to_TO use_VB bifurcation_NN theory_NN as_IN a_DT means_NN of_IN
+          quantifying_VBG the_DT robustness_NNS of_IN this_DT oscillatory_NN network_NN
+          model_NN [_NN 12_CD 13_CD ]_NN ._.
+          Using_VBG the_DT bifurcation_NN analysis_NN package_NN AUTO_NNP [_NN 14_CD ]_NN ,_,
+          it_PRP is_VBZ possible_JJ to_TO produce_VB one-parameter_JJ bifurcation_NN
+          diagrams_NNS for_IN each_DT of_IN the_DT model_NN parameters_NNS 
+          k_NN 
+          
+            i_NNP 
+           ._. These_DT diagrams_NNS illustrate_VBP the_DT steady-state_JJ
+          behaviour_NN of_IN the_DT systems_NNS as_IN the_DT parameter_NN values_NNS are_VBP
+          changed_VBN ._. Suppose_VB that_IN Hopf_NNP bifurcations_NNS occur_VBP at_IN 
+          
+            k_NN 
+           
+          
+            i_NNP 
+           and_CC 
+          
+            i_NNP 
+           so_IN that_IN (_( stable_JJ )_) limit_NN cycles_NNS occur_VBP for_IN the_DT range_NN (_( 
+          
+            k_NN 
+            
+              i_NNP 
+             
+           ,_, 
+          
+            i_NNP 
+           )_) ._. Both_DT the_DT size_NN of_IN this_DT interval_NN as_RB well_RB as_IN the_DT
+          proximity_NN of_IN the_DT nominal_JJ parameter_NN value_NN to_TO either_CC
+          boundary_NN are_VBP measures_NNS of_IN the_DT robustness_NNS of_IN the_DT system_NN ._. To_TO
+          compare_VB the_DT robustness_NNS of_IN the_DT system_NN to_TO the_DT different_JJ
+          parameters_NNS ,_, we_PRP can_MD define_VB a_DT series_NN of_IN parametric_JJ
+          robustness_NNS measures_NNS ._. We_PRP define_VB the_DT 
+          degree_NN of_IN robustness_NNS (_( DOR_NNP )_) for_IN each_DT
+          parameter_NN 
+          k_NN 
+          
+            i_NNS 
+           as_IN :_:
+          
+          It_PRP is_VBZ straightforward_JJ to_TO see_VB that_IN this_DT value_NN is_VBZ always_RB
+          between_IN zero_CD and_CC one_CD ._. The_DT former_JJ indicates_VBZ extreme_JJ
+          parameter_NN sensitivity_NN whereas_IN the_DT latter_JJ implies_VBZ large_JJ
+          insensitivity_NN ._.
+          Bifurcation_NNP diagrams_NNS provide_VBP an_DT excellent_JJ means_NNS of_IN
+          determining_VBG the_DT robustness_NNS of_IN systems_NNS to_TO single_VB parameter_NN
+          perturbations_NNS ._. We_PRP next_JJ describe_VB a_DT method_NN for_IN analysing_VBG
+          and_CC quantifying_VBG robustness_NNS to_TO simultaneous_JJ changes_NNS in_IN
+          several_JJ parameters_NNS ._.
+        
+        
+          Multiparametric_NNP robustness_NNS :_: Structural_NNP singular_NN
+          values_NNS
+          
+            Determining_VBG the_DT limit_NN cycle_NN :_: Harmonic_NNP balance_NN
+            method_NN
+            The_DT first_JJ step_NN is_VBZ to_TO obtain_VB a_DT mathematical_JJ
+            expression_NN for_IN the_DT limit_NN cycle_NN oscillation_NN ._. The_DT
+            harmonic_JJ balance_NN method_NN can_MD be_VB used_VBN [_NN 17_CD ]_NN ._. The_DT basic_JJ
+            idea_NN is_VBZ to_TO represent_VB the_DT limit_NN cycle_NN by_IN a_DT Fourier_NNP
+            series_NN with_IN unknown_JJ coefficients_NNS (_( 
+            a_DT 
+            
+            n_NN ,_, 
+            i_NNP  ,_, φ_NN 
+            
+            n_NN ,_, 
+            i_NNP  )_) and_CC period_NN 
+            T_NN :_:
+            
+            The_DT non-linear_JJ differential_NN equation_NN can_MD be_VB used_VBN to_TO
+            set_VB up_RP a_DT series_NN of_IN algebraic_JJ equations_NNS that_IN the_DT
+            coefficients_NNS must_MD satisfy_VB ._. These_DT equations_NNS can_MD be_VB
+            solved_VBN using_VBG numerical_JJ packages_NNS such_JJ as_IN Mathematica_NNP or_CC
+            Maple_NNP ._. Depending_VBG on_IN the_DT particular_JJ form_NN of_IN the_DT limit_NN
+            cycle_NN ,_, a_DT small_JJ finite_JJ number_NN of_IN coefficients_NNS can_MD be_VB
+            used_VBN ._. We_PRP can_MD denote_NN this_DT periodic_JJ solution_NN as_IN 
+            x_SYM *_NN (_( 
+            t_NN )_) ._.
+          
+          
+            Linearization_NNP
+            The_DT non-linear_JJ differential_NN equation_NN must_MD now_RB be_VB
+            linearized_JJ about_IN this_DT periodic_JJ orbit_NN [_NN 17_CD ]_NN ._. Writing_VBG
+            the_DT state_NN vector_NN 
+            x_SYM (_( 
+            t_NN )_) as_IN
+            
+            x_SYM (_( 
+            t_NN )_) =_SYM 
+            x_SYM *_NN (_( 
+            t_NN )_) +_NN 
+            x_SYM 
+            δ_NN (_( 
+            t_NN )_)
+            then_RB the_DT local_JJ behaviour_NN of_IN the_DT non-linear_JJ system_NN is_VBZ
+            governed_VBN by_IN that_DT of_IN the_DT linearized_JJ system_NN :_:
+            
+            δ_NN (_( 
+            t_NN )_) ≅_NN 
+            J_NNP (_( 
+            x_SYM *_NN (_( 
+            t_NN )_) )_) 
+            x_SYM 
+            ≈_NN (_( 
+            t_NN )_)
+            where_WRB 
+            J_NNP is_VBZ the_DT Jacobian_NNP matrix_NN of_IN the_DT
+            vector_NN field_NN 
+            f_SYM ._. Note_VB that_IN since_IN the_DT
+            linearization_NN is_VBZ performed_VBN about_IN a_DT periodic_JJ orbit_NN ,_, the_DT
+            linear_JJ system_NN is_VBZ periodic_JJ ._.
+          
+          
+            Restructuring_NNP into_IN nominal_JJ /_NN uncertainty_NN
+            systems_NNS
+            The_DT Jacobian_NNP matrix_NN includes_VBZ all_DT uncertain_JJ
+            parameters_NNS ._. At_IN this_DT point_NN we_PRP need_VBP to_TO separate_VB the_DT
+            system_NN into_IN a_DT nominal_JJ model_NN and_CC a_DT feedback_NN
+            interconnection_NN that_WDT involves_VBZ all_DT parametric_JJ
+            uncertainty_NN ._. We_PRP first_JJ write_VB each_DT parameter_NN as_IN
+            
+            where_WRB 
+            k_NN 
+            
+              i_NNP 
+             is_VBZ the_DT nominal_JJ value_NN and_CC δ_NN 
+            
+              i_NNP 
+             is_VBZ the_DT relative_JJ amount_NN of_IN perturbation_NN in_IN the_DT 
+            i_NNP thparameter_NN ._. We_PRP now_RB separate_VB
+            the_DT Jacobian_NNP matrix_NN as_IN
+            
+            J_NNP (_( 
+            x_SYM *_NN (_( 
+            t_NN )_) )_) =_SYM 
+            A_DT 
+            0_CD (_( 
+            t_NN )_) +_NN 
+            B_NNP 
+            0_CD (_( 
+            t_NN )_) Δ_NN 
+            C_NNP 
+            0_CD (_( 
+            t_NN )_) (_( 4_LS )_)
+            where_WRB 
+            A_DT 
+            0_CD (_( 
+            t_NN )_) is_VBZ the_DT Jacobian_NNP matrix_NN with_IN
+            all_DT parameters_NNS at_IN their_PRP$ nominal_JJ value_NN ,_, and_CC Δ_NN is_VBZ a_DT
+            diagonal_NN matrix_NN containing_VBG all_PDT the_DT uncertainties_NNS δ_NN 
+            
+              i_NNP 
+             ._. Let_NNP 
+            y_NN (_( 
+            t_NN )_) =_SYM 
+            C_NNP 
+            0_CD (_( 
+            t_NN )_) 
+            x_SYM 
+            δ_NN (_( 
+            t_NN )_) and_CC 
+            u_NN (_( 
+            t_NN )_) =_SYM Δ_NN 
+            y_NN (_( 
+            t_NN )_) ,_, the_DT system_NN is_VBZ now_RB of_IN the_DT
+            form_NN of_IN Eqn_NNP ._. (_( 2_LS )_) (_( with_IN 
+            x_SYM (_( 
+            t_NN )_) replaced_VBN by_IN 
+            x_SYM 
+            δ_NN (_( 
+            t_NN )_) )_) ._.
+          
+          
+            Discretization_NNP
+            The_DT system_NN can_MD be_VB discretized_JJ by_IN sampling_VBG the_DT state_NN
+            and_CC output_NN with_IN sampling_VBG period_NN 
+            h_NN =_SYM 
+            T_NN /_NN n_NN ,_, where_WRB 
+            n_NN is_VBZ a_DT positive_JJ integer_NN and_CC
+            assuming_VBG that_IN the_DT inputs_NNS are_VBP piecewise_NN constant_JJ ;_: this_DT
+            is_VBZ also_RB a_DT standard_JJ technique_NN in_IN control_NN engineering_NN [_NN
+            18_CD ]_NN ._. In_IN particular_JJ ,_, a_DT linear_JJ continuous-time_JJ system_NN
+            governed_VBN by_IN Eqn_NNP ._. (_( 2_LS )_) gives_VBZ rise_NN to_TO the_DT discrete-time_JJ ,_,
+            linear_JJ system_NN
+            ξ_NN (_( 
+            k_NN +_NN 1_LS )_) =_SYM 
+            A_DT 
+            
+              d_SYM 
+             (_( 
+            k_NN )_) ξ_NN (_( 
+            k_NN )_) +_NN 
+            B_NNP 
+            
+              d_SYM 
+             (_( 
+            k_NN )_) 
+            v_NN (_( 
+            k_NN )_)
+            η_NN (_( 
+            k_NN )_) =_SYM 
+            C_NNP 
+            
+              d_SYM 
+             (_( 
+            k_NN )_) ξ_NN (_( 
+            k_NN )_)
+            where_WRB 
+            A_DT 
+            
+              d_SYM 
+             (_( 
+            k_NN )_) =_SYM Φ_NN (_( 
+            kh_NN +_NN 
+            h_NN ,_, 
+            kh_NN )_) ,_, 
+            B_NNP 
+            
+              d_SYM 
+             (_( 
+            k_NN )_) =_SYM Φ_NN (_( 
+            kh_NN +_NN 
+            h_NN ,_, 
+            s_VBZ )_) 
+            B_NNP 
+            0_CD (_( 
+            s_VBZ )_) 
+            ds_NNS ,_, 
+            C_NNP 
+            
+              d_SYM 
+             (_( 
+            k_NN )_) =_SYM 
+            C_NNP 
+            0_CD (_( 
+            kh_NN )_) ,_, and_CC Φ_NN (_( 
+            t_NN ,_, τ_NN )_) is_VBZ the_DT transition_NN matrix_NN
+            of_IN 
+            A_DT 
+            0_CD (_( 
+            t_NN )_) [_NN 19_CD ]_NN ._. The_DT discretized_JJ
+            signals_NNS are_VBP 
+            v_NN (_( 
+            k_NN )_) =_SYM 
+            u_NN (_( 
+            kh_NN )_) ,_, η_NN (_( 
+            k_NN )_) =_SYM 
+            y_NN (_( 
+            kh_NN )_) ,_, and_CC ξ_NN (_( 
+            k_NN )_) =_SYM 
+            x_SYM (_( 
+            kh_NN )_) ._. Periodicity_NNP of_IN 
+            A_DT 
+            
+              d_SYM 
+             and_CC 
+            B_NNP 
+            
+              d_SYM 
+             is_VBZ preserved_VBN due_JJ to_TO the_DT periodicity_NN of_IN the_DT
+            transition_NN matrix_NN ._. Moreover_RB ,_, it_PRP is_VBZ not_RB difficult_JJ to_TO
+            confirm_VB that_DT 
+            A_DT 
+            
+              d_SYM 
+             ,_, 
+            B_NNP 
+            
+              d_SYM 
+             and_CC 
+            C_NNP 
+            
+              d_SYM 
+             are_VBP periodic_JJ with_IN period_NN 
+            n_NN ._. The_DT uncertainty_NN matrix_NN after_IN
+            discretization_NN is_VBZ now_RB Δ_NN 
+            
+              d_SYM 
+             ._. The_DT discretization_NN step_NN is_VBZ illustrated_VBN in_IN Fig_NNP ._.
+            4_LS A_DT ._.
+          
+          
+            Lifting_NNP
+            The_DT final_JJ step_NN in_IN preparing_VBG the_DT system_NN for_IN SSV_NNP
+            analysis_NN is_VBZ to_TO transform_VB the_DT periodic_JJ ,_, linearized_JJ
+            system_NN into_IN an_DT equivalent_NN time-invariant_JJ one_CD ._. The_DT
+            technique_NN for_IN this_DT is_VBZ known_VBN as_IN 
+            lifting_NN [_NN 18_CD ]_NN ._. Rather_RB than_IN
+            giving_VBG the_DT general_JJ formulae_NN ,_, it_PRP is_VBZ easier_JJR to_TO illustrate_VB
+            the_DT general_JJ principle_NN with_IN an_DT example_NN ._.
+            Suppose_VB that_IN a_DT discrete-time_JJ system_NN with_IN state_NN
+            variable_JJ ξ_NN ,_, input_NN 
+            v_NN ,_, and_CC output_NN η_NN obeys_NNS the_DT
+            difference_NN equation_NN
+            ξ_NN (_( 
+            k_NN +_NN 1_LS )_) =_SYM 
+            a_DT (_( 
+            k_NN )_) ξ_NN (_( 
+            k_NN )_) +_NN 
+            b_SYM (_( 
+            k_NN )_) 
+            v_NN (_( 
+            k_NN )_)
+            η_NN (_( 
+            k_NN )_) =_SYM 
+            c_SYM (_( 
+            k_NN )_) ξ_NN (_( 
+            k_NN )_)
+            where_WRB the_DT time_NN varying_VBG coefficients_NNS 
+            a_DT (_( 
+            k_NN )_) ,_, 
+            b_SYM (_( 
+            k_NN )_) and_CC 
+            c_SYM (_( 
+            k_NN )_) are_VBP all_DT periodic_JJ with_IN period_NN
+            two_CD ._. Calculating_VBG the_DT state_NN variable_NN and_CC output_NN
+            step-by-step_JJ leads_VBZ to_TO :_:
+            
+            for_IN any_DT integer_NN 
+            p_NN ._. By_IN defining_VBG "_'' lifted_VBN "_'' inputs_NNS
+            and_CC outputs_NNS
+            
+            and_CC considering_VBG the_DT system_NN state_NN only_RB at_IN the_DT even_JJ
+            time_NN points_NNS (_( (_( 
+            p_NN )_) =_SYM ξ_NN (_( 2_CD 
+            p_NN )_) )_) we_PRP arrive_VBP at_IN an_DT equivalent_NN
+            time-invariant_JJ system_NN ._.
+            The_DT lifting_NN technique_NN has_VBZ been_VBN illustrated_VBN above_IN for_IN
+            a_DT discrete-time_JJ system_NN with_IN period_NN two_CD ;_: however_RB ,_, it_PRP can_MD
+            be_VB applied_VBN to_TO systems_NNS with_IN arbitrary_JJ period_NN -_: though_IN
+            the_DT corresponding_JJ formulae_NN are_VBP considerably_RB more_RBR
+            complicated_JJ ;_: see_VB [_NN 18_CD ]_NN ._.
+          
+          
+            Computation_NNP of_IN SSV_NNP
+            There_EX is_VBZ considerable_JJ literature_NN in_IN control_NN theory_NN
+            on_IN the_DT computation_NN of_IN the_DT SSV_NNP ;_: see_VB for_IN example_NN [_NN 20_CD 21_CD
+            22_CD ]_NN ._. For_IN general_JJ classes_NNS of_IN uncertainty_NN ,_, computing_NN μ_NN 
+            Δ_NN is_VBZ known_VBN to_TO be_VB NP-hard_NNP [_NN 21_CD ]_NN ._.
+            Typically_RB ,_, given_VBN the_DT feedback_NN loop_NN consisting_VBG of_IN 
+            G_NNP and_CC Δ_NN we_PRP compute_VB upper_JJ and_CC
+            lower_JJR bounds_NNS for_IN the_DT SSV_NNP [_NN 15_CD ]_NN ._. The_DT lower_JJR bound_JJ is_VBZ
+            exactly_RB equal_JJ to_TO μ_NN 
+            Δ_NN [_NN 15_CD ]_NN ;_: unfortunately_RB computing_VBG
+            this_DT lower_JJR bound_JJ involves_VBZ a_DT search_NN over_IN a_DT non-convex_JJ
+            set_VBN and_CC therefore_RB may_MD converge_NN to_TO local_JJ optimums_NNS that_WDT
+            are_VBP not_RB global_JJ ._. In_IN contrast_NN ,_, the_DT upper_JJ bound_VBN can_MD be_VB
+            rewritten_VBN in_IN terms_NNS of_IN a_DT convex_NN optimisation_NN problem_NN ,_, so_IN
+            that_IN a_DT global_JJ minimum_NN can_MD be_VB obtained_VBN ._. However_RB ,_, this_DT
+            upper_JJ bound_VBN is_VBZ ,_, in_IN general_JJ not_RB tight_JJ ._. A_DT software_NN
+            package_NN is_VBZ commercially_RB available_JJ that_WDT can_MD compute_VB μ_NN 
+            upper_JJ and_CC uses_VBZ a_DT power_NN algorithm_NN
+            to_TO attempt_VB to_TO compute_VB μ_NN 
+            lower_JJR [_NN 22_CD ]_NN ._.
+          
+        
+      
+      
+        Results_NNS
+        
+          Single_NNP parameter_NN robustness_NNS
+          The_DT robustness_NNS of_IN Laub_NNP and_CC Loomis_NNP 's_POS oscillatory_NN model_NN
+          was_VBD first_JJ analysed_JJ by_IN means_NNS of_IN single-parameter_JJ
+          bifurcation_NN diagrams_NNS ._. Four_CD typical_JJ diagrams_NNS are_VBP shown_VBN in_IN
+          Fig_NNP ._. 5_LS ._. The_DT activity_NN of_IN internal_JJ cAMP_NN (_( 
+          x_SYM 
+          5_LS )_) is_VBZ plotted_VBD as_IN a_DT function_NN of_IN the_DT
+          variation_NN of_IN each_DT parameter_NN ._. We_PRP use_VBP internal_JJ cAMP_NN in_IN the_DT
+          diagram_NN as_IN it_PRP is_VBZ the_DT element_NN that_WDT is_VBZ usually_RB observed_VBN
+          experimentally_RB [_NN 23_CD ]_NN ._. In_IN each_DT of_IN the_DT diagrams_NNS ,_, there_EX
+          are_VBP three_CD types_NNS of_IN solutions_NNS :_: stable_JJ steady_JJ state_NN ,_,
+          unstable_JJ steady_JJ state_NN and_CC limit_NN cycle_NN oscillations_NNS ._.
+          These_DT diagrams_NNS illustrate_VBP that_IN Hopf_NNP bifurcations_NNS occur_VBP
+          for_IN each_DT parameter_NN ;_: that_DT is_VBZ ,_, the_DT oscillatory_NN behaviour_NN
+          exists_VBZ only_RB in_IN a_DT limited_JJ range_NN of_IN parameters_NNS around_IN the_DT
+          nominal_JJ value_NN ._. For_IN each_DT of_IN these_DT parameters_NNS ,_, the_DT
+          respective_JJ intervals_NNS and_CC values_NNS for_IN degree-of-robustness_JJ
+          are_VBP found_VBN in_IN Table_NNP 1_CD ._.
+        
+        
+          Structural_JJ singular_NN value_NN
+          From_IN the_DT numerical_JJ simulation_NN (_( Fig_NNP ._. 2_LS )_) of_IN the_DT
+          non-linear_JJ model_NN ,_, we_PRP observed_VBD that_IN the_DT oscillatory_NN curves_NNS
+          did_VBD not_RB deviate_NN greatly_RB from_IN a_DT simple_JJ harmonic_JJ oscillator_NN
+          plus_CC a_DT constant_JJ offset_VBN ._. Thus_RB ,_, to_TO obtain_VB an_DT analytic_JJ
+          expression_NN for_IN the_DT periodic_JJ orbits_NNS we_PRP assume_VBP that_IN the_DT
+          state_NN variables_NNS are_VBP expanded_VBN into_IN Fourier_NNP series_NN
+          containing_VBG only_RB the_DT fundamental_JJ and_CC constant_JJ terms_NNS :_:
+          
+          for_IN each_DT of_IN the_DT seven_CD states_NNS ._. Since_IN it_PRP is_VBZ the_DT relative_JJ
+          phase_NN shift_NN between_IN each_DT state_NN variable_JJ that_WDT is_VBZ relevant_JJ ,_,
+          we_PRP assume_VBP that_DT θ_NN 
+          1_CD =_SYM 0_CD ._. The_DT substitution_NN of_IN the_DT Fourier_NNP
+          series_NN into_IN the_DT original_JJ equations_NNS leads_VBZ to_TO a_DT series_NN of_IN
+          real_JJ algebraic_JJ equations_NNS for_IN the_DT coefficients_NNS (_( not_RB shown_VBN )_)
+          whose_WP$ solution_NN was_VBD obtained_VBN using_VBG Mathematica_NNP ._. This_DT leads_VBZ
+          us_PRP to_TO obtain_VB the_DT corresponding_JJ periodic_JJ solutions_NNS where_WRB
+          the_DT values_NNS of_IN 
+          A_DT 
+          0_CD ,_, 
+          i_NNP  ,_, 
+          A_DT 
+          1_CD ,_, 
+          i_NNP  and_CC θ_NN 
+          
+            i_NNP 
+           are_VBP found_VBN in_IN Table_NNP 2_CD ._. The_DT period_NN 
+          T_NN is_VBZ approximately_RB 7_CD ._. 31_CD minutes_NNS ._.
+          This_DT analytic_JJ solution_NN matches_VBZ well_RB with_IN the_DT numerical_JJ
+          simulation_NN except_IN for_IN an_DT arbitrary_JJ phase_NN shift_NN ,_, which_WDT
+          does_VBZ not_RB affect_VB the_DT shape_NN and_CC location_NN of_IN the_DT limit_NN cycle_NN
+          in_IN the_DT phase_NN space_NN and_CC can_MD thereby_RB be_VB ignored_VBN (_( not_RB
+          shown_VBN )_) ._.
+          Following_VBG our_PRP$ prescribed_VBN methods_NNS ,_, we_PRP next_JJ linearized_JJ
+          the_DT system_NN ._. The_DT Jacobian_NNP matrix_NN is_VBZ obtained_VBN and_CC was_VBD
+          decomposed_JJ as_IN in_IN Eqn_NNP ._. (_( 4_LS )_) to_TO obtain_VB :_:
+          
+          The_DT matrix_NN 
+          B_NNP 
+          0_CD (_( 
+          t_NN )_) =_SYM {_( 
+          B_NNP 
+          
+          i_NNP ,_, 
+          j_NN  }_) where_WRB
+          
+          Similarly_RB ,_, the_DT matrix_NN 
+          C_NNP 
+          0_CD (_( 
+          t_NN )_) =_SYM {_( 
+          C_NNP 
+          
+          i_NNP ,_, 
+          j_NN  }_) where_WRB all_DT coefficients_NNS are_VBP
+          zero_CD except_IN for_IN the_DT following_VBG :_:
+          
+          Finally_RB ,_, 
+          D_NNP 
+          0_CD =_SYM 0_CD and_CC the_DT perturbation_NN structure_NN
+          is_VBZ given_VBN by_IN
+          Δ_NN =_SYM diag_NN {_( δ_NN 
+          1_CD ,_, δ_NN 
+          2_CD ,_, δ_NN 
+          2_CD ,_, δ_NN 
+          3_CD ,_, δ_NN 
+          4_CD ,_, δ_NN 
+          5_CD ,_, δ_NN 
+          6_CD ,_, δ_NN 
+          6_CD ,_, δ_NN 
+          8_CD ,_, δ_NN 
+          8_CD ,_, δ_NN 
+          9_CD ,_, δ_NN 
+          10_CD ,_, δ_NN 
+          10_CD ,_, δ_NN 
+          11_CD ,_, δ_NN 
+          12_CD ,_, δ_NN 
+          13_CD ,_, δ_NN 
+          14_CD }_)
+          Note_VB that_IN since_IN the_DT nominal_JJ trajectory_NN is_VBZ periodic_JJ ,_,
+          the_DT matrix_NN functions_NNS in_IN the_DT nominal_JJ description_NN are_VBP also_RB
+          periodic_JJ ._. Note_VB also_RB that_IN in_IN the_DT uncertainty_NN matrix_NN ,_, Δ_NN ,_,
+          some_DT uncertainties_NNS are_VBP repeated_VBN (_( δ_NN 
+          2_CD ,_, δ_NN 
+          6_CD ,_, δ_NN 
+          8_CD and_CC δ_NN 
+          10_CD )_) while_IN δ_NN 
+          7_CD is_VBZ missing_VBG ._.
+          The_DT system_NN was_VBD then_RB discretized_JJ and_CC lifted_VBN following_VBG
+          the_DT procedure_NN outlined_VBN above_IN ._. A_DT comparison_NN of_IN the_DT system_NN
+          response_NN for_IN each_DT of_IN the_DT approximations_NNS at_IN the_DT nominal_JJ
+          parameter_NN values_NNS is_VBZ given_VBN in_IN Fig_NNP ._. 4_LS B_NNP ._.
+          For_IN the_DT sampling_VBG time_NN we_PRP tried_VBD various_JJ values_NNS of_IN 
+          n_NN but_CC found_VBD negligible_JJ differences_NNS
+          for_IN values_NNS above_IN eight_CD ._. Finally_RB ,_, we_PRP computed_JJ the_DT bounds_NNS
+          on_IN the_DT SSV_NNP ._. Once_RB again_RB ,_, we_PRP found_VBD that_IN the_DT values_NNS of_IN these_DT
+          two_CD bounds_NNS were_VBD not_RB affected_VBN much_JJ by_IN the_DT sampling_VBG
+          frequency_NN provided_VBN that_DT 
+          n_NN is_VBZ greater_JJR than_IN eight_CD ._. The_DT upper_JJ
+          bound_VBN was_VBD successfully_RB computed_JJ using_VBG [_NN 22_CD ]_NN ._. The_DT
+          maximum_NN over_IN all_DT frequencies_NNS is_VBZ approximately_RB 12_CD ._. 06_CD ._.
+          However_RB ,_, the_DT high_JJ dimension_NN of_IN system_NN causes_NNS convergence_NN
+          problem_NN during_IN the_DT computation_NN of_IN μ_NN 
+          lower_JJR using_VBG this_DT package_NN ._. To_TO obtain_VB
+          an_DT acceptable_JJ lower_JJR bound_JJ ,_, we_PRP calculate_VBP the_DT spectral_NN
+          radius_JJ at_IN each_DT frequency_NN ._. This_DT gives_VBZ us_PRP a_DT lower_JJR bound_JJ for_IN
+          μ_NN 
+          lower_RBR ._. The_DT plot_NN of_IN the_DT bounds_NNS for_IN
+          the_DT SSV_NNP when_WRB 
+          n_NN =_SYM 16_CD is_VBZ shown_VBN in_IN Fig_NNP ._. 6_CD ._. We_PRP can_MD
+          use_VB μ_NN 
+          lower_JJR to_TO obtain_VB a_DT conservative_JJ
+          region_NN for_IN robust_JJ stability_NN ._. The_DT highest_JJS value_NN over_IN all_DT
+          frequencies_NNS for_IN μ_NN 
+          lower_JJR is_VBZ approximately_RB 2_CD ._. 636_CD ._.
+        
+      
+      
+        Discussion_NNP
+        Recent_JJ years_NNS has_VBZ seen_VBN an_DT appreciation_NN that_IN key_JJ cellular_JJ
+        properties_NNS are_VBP robust_JJ to_TO variations_NNS in_IN individual_JJ parameter_NN
+        values_NNS ._. Based_VBN on_IN the_DT topology_NN of_IN many_JJ of_IN these_DT networks_NNS ,_,
+        this_DT should_MD not_RB be_VB surprising_JJ ._. Feedback_NNP -_: both_DT negative_JJ and_CC
+        positive_JJ -_: control_NN systems_NNS are_VBP ubiquitous_JJ in_IN most_JJS
+        biological_JJ networks_NNS [_NN 24_CD ]_NN and_CC one_CD of_IN the_DT reasons_NNS for_IN using_VBG
+        feedback_NN is_VBZ that_IN it_PRP reduces_VBZ sensitivity_NN of_IN a_DT system_NN 's_POS
+        behaviour_NN to_TO its_PRP$ parameter_NN values_NNS ._.
+        In_IN modelling_VBG biological_JJ networks_NNS ,_, it_PRP is_VBZ important_JJ that_IN
+        this_DT robustness_NNS also_RB be_VB in_IN evidence_NN ._. The_DT particular_JJ
+        behaviour_NN being_VBG characterized_VBN by_IN the_DT model_NN should_MD not_RB rely_VB
+        on_IN precise_JJ values_NNS of_IN the_DT model_NN 's_POS parameters_NNS -_: for_IN example_NN ,_,
+        reaction_NN rate_NN constants_NNS or_CC protein_NN concentrations_NNS ._. In_IN
+        particular_JJ ,_, a_DT precise_JJ measurement_NN of_IN these_DT constants_NNS is_VBZ
+        difficult_JJ whereas_IN protein_NN concentrations_NNS will_MD vary_VB from_IN one_CD
+        cell_NN to_TO another_DT or_CC throughout_IN the_DT lifetime_NN of_IN any_DT
+        individual_NN ._. Deviations_NNP from_IN the_DT nominal_JJ model_NN parameter_NN
+        values_NNS should_MD not_RB result_VB in_IN a_DT loss_NN of_IN the_DT network_NN 's_POS
+        performance_NN ;_: thus_RB ,_, parameter_NN sensitivity_NN can_MD be_VB used_VBN to_TO
+        validate_NN mathematical_JJ models_NNS of_IN biochemical_JJ system_NN ._. That_DT
+        is_VBZ ,_, the_DT more_RBR insensitive_JJ the_DT system_NN response_NN is_VBZ to_TO the_DT
+        accuracy_NN of_IN the_DT parameter_NN ,_, the_DT more_JJR faith_NN we_PRP should_MD have_VB in_IN
+        the_DT model_NN [_NN 25_CD ]_NN ._.
+        In_IN looking_VBG at_IN certain_JJ classes_NNS of_IN behaviour_NN ,_, where_WRB
+        qualitative_JJ changes_NNS in_IN the_DT stability_NN of_IN the_DT system_NN are_VBP
+        possible_JJ ,_, bifurcation_NN diagrams_NNS provide_VBP an_DT elegant_JJ means_NNS of_IN
+        evaluating_VBG robustness_NNS ._. For_IN example_NN ,_, in_IN evaluating_VBG the_DT
+        robustness_NNS of_IN the_DT model_NN of_IN Laub_NNP and_CC Loomis_NNP ,_, of_IN primary_JJ
+        importance_NN is_VBZ determining_VBG whether_IN the_DT oscillatory_NN behaviour_NN
+        will_MD persist_VB if_IN the_DT parameter_NN values_NNS are_VBP altered_VBN ._. This_DT
+        qualitative_JJ difference_NN in_IN performance_NN -_: from_IN limit_NN cycle_NN
+        oscillations_NNS to_TO constant_JJ steady_JJ states_NNS -_: can_MD be_VB quantified_VBN
+        and_CC compared_VBN across_IN parameters_NNS or_CC from_IN one_CD model_NN to_TO
+        another_DT ._. Once_RB the_DT robustness_NNS of_IN the_DT oscillatory_NN behaviour_NN
+        is_VBZ established_VBN ,_, further_JJ investigations_NNS of_IN the_DT robustness_NNS of_IN
+        some_DT of_IN the_DT oscillatory_NN features_NNS ,_, for_IN example_NN frequency_NN and_CC
+        amplitude_NN can_MD further_RB be_VB evaluated_VBN ._.
+        From_IN the_DT bifurcation_NN diagrams_NNS obtained_VBN for_IN each_DT of_IN the_DT
+        fourteen_CD parameters_NNS ,_, we_PRP know_VBP that_IN oscillations_NNS exist_VBP only_RB
+        in_IN a_DT limited_JJ range_NN around_IN the_DT nominal_JJ value_NN ._. We_PRP find_VBP the_DT
+        system_NN to_TO be_VB quite_RB sensitive_JJ to_TO variations_NNS in_IN 
+        k_NN 
+        2_CD ,_, 
+        k_NN 
+        4_CD ,_, 
+        k_NN 
+        10_CD and_CC 
+        k_NN 
+        14_CD and_CC mostly_RB insensitive_JJ to_TO the_DT others_NNS ._.
+        Single-parameter_NNP bifurcation_NN analysis_NN also_RB shows_VBZ that_IN the_DT
+        amplitude_NN of_IN the_DT oscillation_NN is_VBZ greatly_RB affected_VBN by_IN the_DT
+        variation_NN of_IN 9_CD parameters_NNS (_( 
+        k_NN 
+        1_CD ,_, 
+        k_NN 
+        2_CD ,_, 
+        k_NN 
+        4_CD ,_, 
+        k_NN 
+        6_CD ,_, 
+        k_NN 
+        7_CD ,_, 
+        k_NN 
+        10_CD ,_, 
+        k_NN 
+        11_CD ,_, 
+        k_NN 
+        12_CD ,_, and_CC 
+        k_NN 
+        14_CD )_) ._.
+        Based_VBN on_IN the_DT SSV_NNP stability_NN to_TO interpret_VB multiple_JJ
+        parameter_NN sensitivity_NN ,_, we_PRP can_MD conclude_VB that_IN robust_JJ
+        stability_NN of_IN the_DT periodic_JJ orbits_NNS will_MD be_VB maintained_VBN ,_,
+        provided_VBN that_DT
+        
+        Since_IN the_DT uncertainty_NN matrix_NN consists_VBZ only_RB of_IN diagonal_NN
+        entries_NNS ,_, this_DT bound_JJ applies_VBZ to_TO each_DT of_IN the_DT individual_JJ
+        parameters_NNS ._. Thus_RB ,_, we_PRP can_MD guarantee_VB that_IN the_DT system_NN will_MD be_VB
+        robustly_RB stable_JJ provided_VBN that_IN no_DT single_JJ parameter_NN differs_VBZ
+        more_JJR than_IN 8_CD ._. 3_CD %_NN from_IN its_PRP$ nominal_JJ value_NN ._.
+        In_IN our_PRP$ analysis_NN we_PRP found_VBD a_DT large_JJ gap_NN between_IN μ_NN 
+        upper_JJ and_CC our_PRP$ lower_JJR bound_JJ for_IN μ_NN ._. As_IN
+        we_PRP later_RB show_VBP ,_, for_IN this_DT system_NN the_DT upper_JJ bound_VBN is_VBZ fairly_RB
+        tight_JJ ,_, as_IN we_PRP are_VBP able_JJ to_TO obtain_VB a_DT destabilizing_JJ
+        perturbation_NN of_IN size_NN 9_CD %_NN ._. For_IN general_JJ biological_JJ models_NNS ,_, a_DT
+        robustness_NNS measure_NN based_VBN on_IN the_DT upper_JJ bound_VBN μ_NN 
+        upper_JJ may_MD also_RB be_VB more_RBR appropriate_JJ ._.
+        Robustness_NNP bounds_NNS for_IN systems_NNS in_IN which_WDT arbitrarily_RB
+        slowly-time-varying_JJ parameter_NN values_NNS are_VBP allowed_VBN are_VBP known_VBN
+        [_NN 26_CD ]_NN ._. For_IN these_DT systems_NNS it_PRP has_VBZ been_VBN shown_VBN that_IN the_DT
+        bounds_NNS converge_NN as_IN the_DT time-variations_JJ approach_NN zero_CD to_TO the_DT
+        upper_JJ bound_VBN μ_NN 
+        upper_JJ [_NN 26_CD ]_NN ._. Since_IN many_JJ of_IN the_DT
+        parameters_NNS in_IN models_NNS of_IN biochemical_JJ networks_NNS represent_VBP
+        features_NNS that_WDT will_MD vary_VB over_IN time_NN ,_, such_JJ as_IN enzyme_NN
+        concentrations_NNS ,_, this_DT number_NN may_MD therefore_RB be_VB more_RBR
+        indicative_JJ of_IN the_DT model_NN 's_POS true_JJ robustness_NNS ._.
+        The_DT ability_NN to_TO consider_VB the_DT effect_NN of_IN time-variations_JJ on_IN
+        the_DT robustness_NNS of_IN the_DT system_NN is_VBZ one_CD great_JJ advantage_NN of_IN the_DT
+        SSV_NNP over_IN other_JJ methodologies_NNS ._. One_CD drawback_NN of_IN the_DT SSV_NNP
+        approach_NN compared_VBN to_TO the_DT bifurcation_NN theory_NN is_VBZ that_IN it_PRP does_VBZ
+        not_RB provide_VB the_DT precise_JJ combination_NN of_IN parameters_NNS that_IN
+        destabilizes_NNS the_DT system_NN -_: only_RB its_PRP$ size_NN ._. Also_RB ,_, since_IN the_DT
+        upper_JJ bound_VBN is_VBZ only_RB sufficient_JJ to_TO guarantee_VB robustness_NNS ,_,
+        this_DT number_NN may_MD ,_, in_IN general_JJ ,_, give_VBP an_DT overly_RB conservative_JJ
+        notion_NN of_IN robustness_NNS ._.
+        It_PRP must_MD be_VB emphasized_VBN that_IN the_DT SSV_NNP approach_NN denoted_JJ here_RB
+        is_VBZ based_VBN on_IN the_DT linearized_JJ model_NN of_IN the_DT system_NN ._. For_IN some_DT
+        classes_NNS of_IN systems_NNS this_DT linearization_NN may_MD not_RB be_VB possible_JJ -_:
+        in_IN this_DT case_NN ,_, the_DT linear_JJ SSV_NNP approach_NN documented_VBN here_RB will_MD
+        not_RB be_VB applicable_JJ ._. However_RB ,_, for_IN most_JJS models_NNS used_VBN to_TO
+        describe_VB biochemical_JJ reactions_NNS ,_, this_DT should_MD not_RB be_VB a_DT
+        problem_NN ._.
+        Because_IN we_PRP are_VBP concentrating_VBG exclusively_RB on_IN the_DT local_JJ
+        stability_NN of_IN the_DT linearized_JJ model_NN ,_, important_JJ parameters_NNS of_IN
+        the_DT oscillatory_NN behaviour_NN such_JJ as_IN robustness_NNS of_IN the_DT
+        frequency_NN and_CC amplitudes_NNS of_IN oscillation_NN are_VBP not_RB evaluated_VBN ._.
+        Also_RB ,_, the_DT effect_NN of_IN parameter_NN variations_NNS on_IN the_DT equilibrium_NN
+        orbit_NN are_VBP omitted_VBN ._. In_IN particular_JJ ,_, varying_VBG the_DT kinetic_JJ
+        parameters_NNS will_MD change_VB the_DT behaviour_NN of_IN the_DT system_NN in_IN two_CD
+        different_JJ ways_NNS :_: the_DT equilibrium_NN periodic_JJ orbit_NN will_MD change_VB
+        and_CC the_DT stability_NN of_IN deviations_NNS about_IN this_DT orbit_NN will_MD also_RB
+        change_VB ._. The_DT SSV_NNP allows_VBZ one_CD to_TO quantify_VB the_DT robustness_NNS of_IN
+        the_DT second_NN of_IN these_DT two_CD effects_NNS ._. It_PRP does_VBZ not_RB say_VB anything_NN
+        directly_RB regarding_VBG the_DT effect_NN of_IN parameter_NN variations_NNS on_IN
+        the_DT equilibrium_NN periodic_JJ orbit_NN ._. One_CD way_NN of_IN bounding_VBG the_DT
+        effect_NN of_IN these_DT parameter_NN changes_NNS is_VBZ to_TO write_VB the_DT original_JJ
+        differential_NN equation_NN as_IN
+        (_( 
+        t_NN )_) =_SYM 
+        f_SYM (_( 
+        x_SYM ,_, 
+        k_NN )_)
+        where_WRB 
+        k_NN =_SYM 
+        k_NN 
+        0_CD +_NN δ_NN is_VBZ the_DT set_NN of_IN kinetic_JJ parameters_NNS
+        with_IN nominal_JJ values_NNS 
+        k_NN 
+        0_CD ._. If_IN the_DT nominal_JJ periodic_JJ orbit_NN (_( when_WRB
+        δ_NN =_SYM 0_CD )_) is_VBZ given_VBN by_IN
+        
+        x_SYM *_NN (_( 
+        t_NN )_) =_SYM 
+        x_SYM (_( 
+        t_NN )_) -_: 
+        x_SYM 
+        δ_NN (_( 
+        t_NN )_)
+        then_RB ,_, linearizing_VBG about_IN this_DT orbit_NN yields_NNS
+        
+        δ_NN (_( 
+        t_NN )_) =_SYM 
+        A_DT (_( 
+        t_NN )_) 
+        x_SYM 
+        δ_NN (_( 
+        t_NN )_) +_NN 
+        v_NN 
+        where_WRB δ_NN is_VBZ a_DT constant_JJ vector_NN that_WDT includes_VBZ the_DT effect_NN of_IN
+        this_DT parametric_JJ uncertainty_NN ._. Thus_RB ,_, the_DT system_NN can_MD be_VB
+        considered_VBN as_IN being_VBG perturbed_VBD by_IN a_DT constant_JJ input_NN signal_NN 
+        v_NN ._. Provided_VBN that_IN the_DT homogeneous_JJ
+        system_NN is_VBZ exponentially_RB stable_JJ (_( and_CC this_DT is_VBZ guaranteed_VBN by_IN
+        the_DT existence_NN of_IN a_DT stable_JJ limit_NN cycle_NN )_) and_CC that_DT 
+        v_NN is_VBZ not_RB "_'' too_RB large_JJ "_'' ,_, the_DT perturbed_VBD
+        system_NN 's_POS state_NN will_MD remain_VB in_IN a_DT neighbourhood_NN of_IN the_DT origin_NN
+        if_IN the_DT 
+        f_SYM (_( 
+        x_SYM ,_, 
+        p_NN )_) in_IN the_DT original_JJ equation_NN is_VBZ
+        reasonably_RB well_RB behaved_VBD in_IN 
+        k_NN ._. Detailed_NNP bounds_NNS and_CC conditions_NNS on_IN
+        
+        f_SYM are_VBP given_VBN in_IN Theorem_NNP 5_CD ._. 1_CD of_IN [_NN 17_CD ]_NN
+        ,_, though_IN it_PRP should_MD be_VB emphasized_VBN that_IN these_DT bounds_NNS tend_VBP to_TO
+        be_VB overly_RB conservative_JJ in_IN practice_NN ._.
+        To_TO illustrate_VB the_DT local_JJ nature_NN of_IN the_DT SSV_NNP analysis_NN for_IN
+        this_DT system_NN ,_, we_PRP perturbed_VBD the_DT system_NN parameters_NNS by_IN varying_VBG
+        amounts_NNS ._. The_DT particular_JJ parameters_NNS were_VBD either_CC increased_VBN or_CC
+        decreased_VBN so_RB as_IN to_TO bring_VB them_PRP closer_JJR to_TO the_DT Hopf_NNP
+        bifurcation_NN ._. For_IN example_NN ,_, the_DT nominal_JJ value_NN of_IN 
+        k_NN 
+        1_CD is_VBZ closer_JJR to_TO 
+        
+          k_NN 
+         
+        1_LS than_IN to_TO 
+        1_CD so_IN that_IN we_PRP reduced_VBD 
+        k_NN 
+        1_CD whereas_IN 
+        k_NN 
+        4_CD is_VBZ closer_JJR to_TO 
+        4_CD than_IN to_TO 
+        
+          k_NN 
+         
+        4_LS so_IN we_PRP increased_VBD 
+        k_NN 
+        4_CD ._. In_IN Fig_NNP ._. 7_CD we_PRP show_VBP the_DT response_NN of_IN
+        these_DT systems_NNS to_TO changes_NNS of_IN 7_CD %_NN and_CC 9_CD %_NN both_DT for_IN the_DT
+        linearized_JJ system_NN -_: where_WRB the_DT linearized_JJ response_NN has_VBZ been_VBN
+        superimposed_VBN on_IN the_DT nominal_JJ limit_NN cycle_NN (_( Fig_NNP ._. 7_CD A_DT )_) and_CC the_DT
+        original_JJ non-linear_JJ system_NN (_( Fig_NNP ._. 7_CD B_NNP )_) ._. For_IN the_DT smaller_JJR
+        value_NN ,_, the_DT linearized_JJ response_NN is_VBZ stable_JJ and_CC we_PRP see_VBP that_RB ,_,
+        after_IN a_DT transient_JJ ,_, the_DT response_NN settles_VBZ to_TO the_DT nominal_JJ
+        limit_NN cycle_NN ._. We_PRP also_RB see_VBP this_DT same_JJ behaviour_NN in_IN the_DT
+        response_NN of_IN the_DT non-linear_JJ system_NN with_IN this_DT level_NN of_IN
+        parameter_NN perturbation_NN ._. For_IN a_DT 9_CD %_NN change_NN in_IN the_DT parameters_NNS ,_,
+        however_RB ,_, the_DT linearized_JJ system_NN is_VBZ unstable_JJ ._. We_PRP see_VBP this_DT as_IN
+        a_DT deviation_NN from_IN the_DT nominal_JJ limit_NN cycle_NN ._. In_IN the_DT non-linear_JJ
+        system_NN 's_POS response_NN ,_, this_DT translates_NNS into_IN an_DT end_NN to_TO the_DT
+        stable_JJ limit_NN cycle_NN ._. The_DT response_NN does_VBZ not_RB "_'' blow_NN up_RB "_'' but_CC
+        instead_RB settles_VBZ into_IN a_DT fixed_VBN point_NN ._.
+        This_DT example_NN illustrates_VBZ how_WRB a_DT robustness_NNS analysis_NN of_IN
+        the_DT linearized_JJ system_NN can_MD be_VB used_VBN to_TO deduce_NN the_DT robustness_NNS
+        of_IN the_DT original_JJ non-linear_JJ system_NN ,_, as_IN it_PRP shows_VBZ that_IN when_WRB
+        the_DT linearized_JJ system_NN is_VBZ unstable_JJ ,_, the_DT desired_VBN behaviour_NN of_IN
+        the_DT non-linear_JJ system_NN will_MD no_RB longer_RB be_VB present_JJ ._. This_DT
+        example_NN also_RB points_VBZ out_RP the_DT fact_NN that_IN the_DT upper_JJ bound_VBN μ_NN 
+        upper_JJ ≅_NN 8_CD ._. 3_CD %_NN is_VBZ not_RB overly_RB
+        conservative_JJ for_IN this_DT system_NN as_IN we_PRP were_VBD able_JJ to_TO produce_VB a_DT
+        destabilizing_JJ perturbation_NN of_IN size_NN 9_CD %_NN ._.
+        Finally_RB ,_, we_PRP note_VBP that_IN multiparametric_JJ robustness_NNS
+        analysis_NN considered_VBN here_RB is_VBZ based_VBN on_IN local_JJ properties_NNS of_IN
+        the_DT dynamical_JJ system_NN ,_, since_IN we_PRP are_VBP evaluating_VBG the_DT
+        robustness_NNS of_IN the_DT linearized_JJ model_NN ._. Extensions_NNS to_TO the_DT
+        non-linear_JJ model_NN are_VBP the_DT subject_NN of_IN active_JJ investigation_NN [_NN
+        27_CD ]_NN ._.
+        However_RB ,_, it_PRP is_VBZ by_IN combining_VBG the_DT robustness_NNS analysis_NN of_IN
+        both_DT single_JJ and_CC multiple_JJ parameters_NNS ,_, we_PRP can_MD obtain_VB a_DT more_RBR
+        thorough_JJ understanding_NN of_IN the_DT region_NN of_IN stability_NN of_IN the_DT
+        periodic_JJ solution_NN in_IN the_DT high_JJ dimensional_NN parameter_NN space_NN
+        and_CC use_VB this_DT to_TO improve_VB upon_IN the_DT model_NN ._. In_IN this_DT particular_JJ
+        example_NN ,_, we_PRP find_VBP that_IN the_DT system_NN 's_POS robustness_NNS is_VBZ governed_VBN
+        by_IN several_JJ "_'' robustness_NNS limiting_VBG "_'' parameters_NNS ,_, 
+        k_NN 
+        2_CD ,_, 
+        k_NN 
+        4_CD ,_, 
+        k_NN 
+        10_CD and_CC 
+        k_NN 
+        14_CD ._.
+      
+      
+        Conclusions_NNP
+        Determining_VBG the_DT robustness_NNS of_IN mathematical_JJ models_NNS of_IN
+        biological_JJ systems_NNS is_VBZ important_JJ for_IN several_JJ reasons_NNS ._. First_LS ,_,
+        there_EX is_VBZ growing_VBG evidence_NN that_IN many_JJ aspects_NNS of_IN the_DT networks_NNS
+        being_VBG modelled_JJ have_VBP evolved_VBN in_IN such_JJ a_DT way_NN so_IN that_IN they_PRP are_VBP
+        robust_JJ as_IN this_DT allows_VBZ them_PRP to_TO tolerate_VB natural_JJ variations_NNS
+        in_IN the_DT environment_NN ._. Thus_RB ,_, faithful_NN models_NNS should_MD replicate_VB
+        this_DT robustness_NNS ._. Second_JJ ,_, robustness_NNS of_IN the_DT models_NNS provide_VBP a_DT
+        means_NN of_IN validating_VBG model_NN quality_NN since_IN the_DT performance_NN of_IN
+        the_DT models_NNS should_MD not_RB rely_VB on_IN precisely_RB tuned_VBN parameter_NN
+        values_NNS that_WDT are_VBP impossible_JJ -_: or_CC at_IN best_JJS -_: difficult_JJ to_TO
+        measure_VB exactly_RB ._.
+        In_IN this_DT paper_NN ,_, we_PRP illustrated_VBD the_DT use_NN of_IN two_CD tools_NNS
+        developed_VBN in_IN dynamical_JJ systems_NNS theory_NN and_CC control_NN
+        engineering_NN to_TO assess_VB robustness_NNS quantitatively_RB ._. For_IN an_DT
+        example_NN ,_, we_PRP considered_VBD an_DT oscillatory_NN molecular_JJ network_NN
+        model_NN due_JJ to_TO Laub_NNP and_CC Loomis_NNP that_WDT aims_VBZ at_IN describing_VBG
+        oscillatory_NN behaviour_NN in_IN cAMP_NN signalling_VBG observed_VBN in_IN the_DT
+        social_JJ amoeba_NN 
+        D_NNP ._. discoideum_NN ._. This_DT behaviour_NN appears_VBZ
+        as_IN a_DT stable_JJ limit_NN cycle_NN of_IN the_DT equations_NNS describing_VBG the_DT
+        model_NN ._. We_PRP have_VBP evaluated_VBN the_DT degree_NN to_TO which_WDT this_DT limit_NN
+        cycle_NN is_VBZ robust_JJ to_TO variations_NNS in_IN all_DT the_DT system_NN
+        parameters_NNS ._.
+        The_DT robustness_NNS of_IN the_DT oscillatory_NN behaviour_NN to_TO single_VB
+        parameter_NN variations_NNS was_VBD quantified_VBN using_VBG bifurcation_NN
+        analysis_NN ._. Using_VBG the_DT bifurcation_NN analysis_NN software_NN tool_NN AUTO_NNP
+        we_PRP determined_VBD that_IN single_JJ parameter_NN changes_NNS as_RB small_JJ as_IN 20_CD %_NN
+        from_IN the_DT nominal_JJ value_NN can_MD cause_VB the_DT limit_NN cycle_NN to_TO
+        disappear_VB and_CC a_DT stable_JJ equilibrium_NN to_TO appear_VB ._. In_IN addition_NN
+        to_TO the_DT stability_NN robustness_NNS ,_, AUTO_NNP is_VBZ also_RB able_JJ to_TO evaluate_VB
+        the_DT sensitivity_NN of_IN the_DT amplitude_NN of_IN the_DT oscillation_NN to_TO
+        these_DT parameter_NN changes_NNS ._.
+        To_TO investigate_VB the_DT robustness_NNS of_IN the_DT model_NN to_TO
+        simultaneous_JJ changes_NNS in_IN parameter_NN values_NNS ,_, the_DT structured_VBN
+        singular_NN value_NN (_( SSV_NNP )_) analysis_NN tool_NN was_VBD used_VBN ._. Once_RB the_DT
+        system_NN was_VBD in_IN the_DT correct_JJ framework_NN for_IN SSV_NNP analysis_NN ,_, we_PRP
+        were_VBD able_JJ to_TO determine_VB that_IN the_DT system_NN can_MD only_RB tolerate_VB
+        very_RB small_JJ changes_NNS in_IN the_DT parameter_NN values_NNS -_: in_IN the_DT order_NN
+        of_IN 8_CD %_NN -_: if_IN we_PRP allow_VBP these_DT parameters_NNS to_TO vary_VB with_IN time_NN
+        arbitrarily_RB slowly_RB ._.
+        Finally_RB ,_, it_PRP is_VBZ important_JJ to_TO note_VB that_IN to_TO understand_VB
+        completely_RB the_DT robustness_NNS properties_NNS of_IN a_DT model_NN ,_, it_PRP is_VBZ
+        appropriate_JJ to_TO combine_VB single_JJ and_CC multiple_JJ parameter_NN
+        sensitivity_NN analyses_NNS ._.
+      
+      
+        Authors_NNP '_'' contributions_NNS
+        LM_NNP carried_VBD out_RP the_DT computational_NN studies_NNS and_CC analysis_NN ._.
+        PAI_NNP conceived_VBD of_IN the_DT study_NN and_CC participated_VBD in_IN its_PRP$ design_NN
+        and_CC coordination_NN ._. All_DT authors_NNS read_VBP and_CC approved_VBD the_DT final_JJ
+        manuscript_NN ._.
+      
+    
+  

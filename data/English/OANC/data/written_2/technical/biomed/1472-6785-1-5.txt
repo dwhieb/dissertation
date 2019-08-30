@@ -1,0 +1,701 @@
+
+  
+    
+      
+        Background_NNP
+        Early_RB recognition_NN of_IN the_DT contrast_NN between_IN the_DT
+        stabilizing_VBG influences_NNS of_IN density-dependent_JJ population_NN
+        regulation_NN ,_, and_CC potentially_RB de-stabilizing_JJ influences_NNS of_IN
+        environmental_JJ variation_NN [_NN 1_CD ]_NN ,_, laid_VBD a_DT foundation_NN for_IN
+        theoretical_JJ modeling_NN of_IN population_NN stability_NN in_IN stochastic_JJ
+        environments_NNS [_NN 2_CD ]_NN that_WDT assumes_VBZ renewed_VBN relevance_NN in_IN light_NN
+        of_IN current_JJ developments_NNS in_IN ecology_NN and_CC climate_NN research_NN [_NN 3_CD
+        ]_NN ._. Recently_RB ,_, for_IN instance_NN ,_, numerous_JJ studies_NNS have_VBP
+        documented_VBN the_DT influences_NNS of_IN global-scale_JJ climatic_JJ
+        variation_NN on_IN the_DT population_NN dynamics_NNS of_IN vertebrates_NNS in_IN
+        widely_RB diverse_JJ ecosystems_NNS (_( see_VB ,_, e_SYM ._. g_SYM ._. ,_, [_NN 4_CD 5_CD ]_NN for_IN reviews_NNS )_) ,_,
+        including_VBG species_NNS interactions_NNS at_IN the_DT community_NN level_NN [_NN 6_CD 7_CD
+        8_CD ]_NN ._. To_TO our_PRP$ knowledge_NN ,_, however_RB ,_, no_DT study_NN has_VBZ yet_RB
+        documented_VBN a_DT simultaneous_JJ and_CC direct_JJ influence_NN of_IN
+        large-scale_JJ climate_NN on_IN the_DT dynamics_NNS at_IN all_DT trophic_JJ levels_NNS
+        in_IN a_DT single_JJ system_NN ._. Such_JJ a_DT pervasive_JJ influence_NN could_MD pose_VB
+        consequences_NNS for_IN the_DT persistence_NN of_IN biological_JJ communities_NNS
+        if_IN the_DT climatic_JJ influence_NN at_IN any_DT trophic_JJ level_NN (_( or_CC multiple_JJ
+        levels_NNS )_) were_VBD strong_JJ enough_RB to_TO alter_VB its_PRP$ dynamical_JJ stability_NN
+        [_NN 3_CD ]_NN ._.
+        Here_RB ,_, we_PRP use_VBP empirical_JJ data_NNS on_IN a_DT three-trophic_JJ level_NN
+        system_NN involving_VBG predators_NNS ,_, herbivores_NNS ,_, and_CC vegetation_NN ,_, and_CC
+        a_DT community-level_JJ model_NN ,_, to_TO test_VB for_IN the_DT influences_NNS of_IN
+        climate_NN on_IN the_DT dynamics_NNS at_IN and_CC among_IN individual_JJ trophic_JJ
+        levels_NNS ,_, while_IN simultaneously_RB accounting_VBG for_IN the_DT roles_NNS of_IN
+        intrinsic_JJ (_( density-dependent_JJ )_) and_CC interspecific_JJ
+        interactions_NNS ._. Previously_RB ,_, we_PRP identified_VBD correlations_NNS
+        between_IN large-scale_JJ variation_NN in_IN winter_NN climate_NN ,_, the_DT North_NNP
+        Atlantic_NNP Oscillation_NNP (_( NAO_NNP )_) [_NN 9_CD ]_NN ,_, and_CC :_: predation_NN
+        efficiency_NN of_IN wolves_NNS (_( 
+        Canis_NNP lupus_JJ )_) ,_, mortality_NN of_IN old_JJ moose_NN
+        (_( 
+        Alces_NNP alces_NNS )_) ,_, and_CC growth_NN dynamics_NNS of_IN
+        balsam_NN fir_NN (_( 
+        Abies_NNP balsamea_NN )_) on_IN Isle_NNP Royale_NNP [_NN 6_CD ]_NN
+        ._. Additionally_RB ,_, we_PRP have_VBP documented_VBN influences_NNS of_IN the_DT NAO_NNP ,_,
+        wolf_NN predation_NN ,_, and_CC density_NN dependence_NN on_IN the_DT intrinsic_JJ
+        rate_NN of_IN increase_NN in_IN the_DT moose_NN population_NN on_IN Isle_NNP Royale_NNP [_NN
+        10_CD ]_NN ._. Hence_RB ,_, the_DT current_JJ analysis_NN was_VBD motivated_VBN by_IN the_DT
+        results_NNS of_IN these_DT earlier_JJR attempts_NNS to_TO dissect_NN the_DT relative_JJ
+        contributions_NNS of_IN intrinsic_JJ and_CC extrinsic_JJ processes_VBZ to_TO the_DT
+        dynamics_NNS of_IN this_DT community_NN ,_, as_RB well_RB as_IN by_IN a_DT more_RBR general_JJ
+        interest_NN in_IN developing_VBG a_DT community-level_JJ model_NN of_IN climatic_JJ
+        effects_NNS at_IN and_CC among_IN multiple_JJ trophic_JJ levels_NNS that_WDT may_MD
+        subsequently_RB contribute_VB to_TO our_PRP$ understanding_NN of_IN the_DT
+        implications_NNS of_IN climatic_JJ change_NN for_IN community_NN stability_NN ._.
+        Quantifying_NNP the_DT role_NN of_IN climatic_JJ variation_NN in_IN the_DT dynamics_NNS
+        at_IN multiple_JJ trophic_JJ levels_NNS requires_VBZ ,_, however_RB ,_, a_DT modeling_NN
+        framework_NN that_IN first_JJ accounts_NNS for_IN the_DT influence_NN of_IN
+        interspecific_JJ and_CC intrinsic_JJ processes_NNS on_IN the_DT dynamical_JJ
+        structure_NN at_IN each_DT level_NN ,_, so_IN that_IN the_DT influence_NN of_IN intrinsic_JJ
+        processes_NNS on_IN the_DT autoregressive_JJ (_( AR_NNP )_) structure_NN of_IN the_DT time_NN
+        series_NN data_NNS is_VBZ not_RB mistaken_VBN for_IN a_DT lagged_VBN influence_NN of_IN
+        environmental_JJ stochasticity_NN [_NN 11_CD ]_NN ._.
+        Based_VBN on_IN the_DT approach_NN used_VBN in_IN the_DT development_NN of_IN
+        previous_JJ bivariate_NN population_NN models_NNS [_NN 12_CD 13_CD 14_CD ]_NN ,_, we_PRP
+        developed_VBD and_CC applied_VBD a_DT model_NN testing_NN for_IN the_DT direct_JJ
+        influence_NN of_IN large-scale_JJ climate_NN on_IN the_DT dynamics_NNS at_IN
+        individual_JJ trophic_JJ levels_NNS and_CC interactions_NNS among_IN levels_NNS
+        (_( Figure_NN 1_LS )_) ._. This_DT graphical_JJ model_NN was_VBD used_VBN to_TO express_VB
+        mathematically_RB the_DT predicted_VBD autoregressive_JJ structure_NN of_IN
+        the_DT time_NN series_NN data_NNS at_IN each_DT level_NN on_IN the_DT basis_NN of_IN
+        interspecific_JJ density_NN interactions_NNS at_IN adjacent_JJ trophic_JJ
+        levels_NNS [_NN 12_CD ]_NN ,_, as_RB well_RB as_IN the_DT time_NN lags_VBZ at_IN which_WDT climate_NN
+        might_MD influence_VB dynamics_NNS at_IN each_DT level_NN (_( see_VB equations_NNS (_( 1_CD -_: 4_LS )_)
+        in_IN Methods_NNP ,_, below_IN )_) ._. The_DT time_NN series_NN we_PRP analyzed_VBD comprise_VBP 30_CD
+        years_NNS of_IN data_NNS (_( 1958_CD -_: 88_CD )_) from_IN the_DT monitoring_VBG study_NN on_IN Isle_NNP
+        Royale_NNP on_IN the_DT population_NN dynamics_NNS of_IN wolves_NNS and_CC moose_NN ,_, and_CC
+        interannual_NN variability_NN in_IN growth_NN increments_NNS of_IN balsam_NN fir_NN
+        [_NN 6_CD 15_CD 16_CD ]_NN ._. Though_IN the_DT data_NNS extend_VBP to_TO the_DT present_NN ,_,
+        estimates_NNS of_IN moose_NN density_NN beyond_IN 1988_CD have_VBP not_RB been_VBN
+        adjusted_VBN by_IN cohort_NN reconstruction_NN (_( see_VB ref_NN ._. [_NN 6_CD ]_NN )_) ,_, so_IN we_PRP
+        constrained_VBN our_PRP$ analysis_NN to_TO the_DT first_JJ 3_CD decades_NNS ._.
+      
+      
+        Results_NNS
+        The_DT corrected_VBN Akaike_NNP Information_NNP Criterion_NNP (_( AIC_NNP 
+        
+          c_SYM 
+         )_) [_NN 17_CD ]_NN scores_NNS of_IN the_DT pure_JJ time_NN series_NN data_NNS at_IN each_DT
+        level_NN of_IN the_DT Isle_NNP Royale_NNP community_NN indicate_VBP that_IN the_DT AR_NNP
+        dimension_NN of_IN the_DT data_NNS for_IN the_DT period_NN 1958_CD -_: 88_CD is_VBZ one_CD for_IN
+        wolves_NNS ,_, three_CD for_IN moose_NN ,_, and_CC one_CD for_IN fir_NN ._. AIC_NNP 
+        
+          c_SYM 
+         scores_NNS of_IN the_DT first_JJ ,_, second_JJ ,_, and_CC third_JJ order_NN
+        autoregressive_JJ models_NNS [_NN i_NNP ._. e_SYM ._. ,_, AR_NNP (_( 1_LS )_) ,_, AR_NNP (_( 2_LS )_) ,_, and_CC AR_NNP (_( 3_LS )_) ]_NN are_VBP ,_,
+        for_IN wolves_NNS 4_CD ._. 2_CD ,_, 7_CD ._. 1_CD ,_, 10_CD ._. 6_CD ;_: for_IN moose_NN -_: 64_CD ._. 6_CD ,_, -_: 63_CD ._. 9_CD ,_, -_: 67_CD ._. 1_LS ;_:
+        and_CC for_IN balsam_NN fir_NN -_: 26_CD ._. 0_CD ,_, -_: 22_CD ._. 1_LS ,_, -_: 21_CD ._. 6_CD ._. The_DT lowest_JJS AIC_NNP 
+        
+          c_SYM 
+         score_NN indicates_VBZ the_DT most_RBS parsimonious_JJ dimension_NN at_IN
+        each_DT trophic_JJ level_NN ._.
+        In_IN full_JJ agreement_NN with_IN the_DT pure_JJ AR_NNP structure_NN of_IN the_DT time_NN
+        series_NN ,_, the_DT most_RBS parsimonious_JJ ecological_JJ model_NN of_IN wolf_NN
+        dynamics_NNS was_VBD an_DT AR_NNP (_( 1_LS )_) model_NN with_IN current-year_JJ climate_NN as_IN a_DT
+        covariate_NN (_( Table_NNP 1_CD a_DT )_) ;_: the_DT best_JJS model_NN of_IN moose_NN dynamics_NNS was_VBD
+        an_DT AR_NNP (_( 3_LS )_) model_NN with_IN current-year_JJ climate_NN as_IN a_DT covariate_NN
+        (_( Table_NNP 1_CD b_SYM )_) ;_: and_CC the_DT best_JJS model_NN of_IN fir_NN dynamics_NNS was_VBD an_DT AR_NNP (_( 1_LS )_)
+        model_NN with_IN current-year_JJ climate_NN as_IN a_DT covariate_NN (_( Table_NNP 1_CD c_SYM )_) ._.
+        Each_DT of_IN these_DT models_NNS provided_VBD a_DT good_JJ approximation_NN of_IN the_DT
+        dynamics_NNS at_IN the_DT individual_JJ trophic_JJ levels_NNS (_( Table_NNP 1_CD ;_: Figure_NN
+        2_LS )_) ._. Note_VB ,_, however_RB ,_, that_IN for_IN moose_NN a_DT good_JJ approximation_NN of_IN
+        the_DT dynamics_NNS was_VBD afforded_VBN by_IN an_DT AR_NNP (_( 2_LS )_) model_NN with_IN the_DT same_JJ
+        covariates_NNS as_IN the_DT best_JJS AR_NNP (_( 3_LS )_) model_NN in_IN Table_NNP 1_CD (_( 
+        R_NN 2_CD =_SYM 0_CD ._. 96_CD ,_, AIC_NNP 
+        
+          c_SYM 
+         =_SYM -_: 63_CD ._. 9_CD )_) ,_, and_CC so_RB might_MD be_VB favored_VBN over_IN the_DT AR_NNP (_( 3_LS )_) model_NN
+        on_IN the_DT basis_NN of_IN parsimony_NN ._.
+        Direct_JJ density_NN dependence_NN was_VBD slightly_RB stronger_JJR at_IN the_DT
+        middle_JJ trophic_JJ level_NN (_( moose_NN )_) than_IN at_IN the_DT top_NN or_CC bottom_NN
+        levels_NNS ,_, though_IN none_NN of_IN the_DT tests_NNS for_IN differences_NNS between_IN
+        these_DT coefficients_NNS was_VBD significant_JJ (_( Figure_NN 3_LS )_) ._. In_IN contrast_NN ,_,
+        the_DT influence_NN of_IN large-scale_JJ climate_NN was_VBD significantly_RB
+        weaker_JJR at_IN the_DT middle_JJ trophic_JJ level_NN than_IN at_IN either_DT the_DT top_NN
+        or_CC bottom_VB trophic_JJ levels_NNS (_( Figure_NN 3_LS )_) ._.
+      
+      
+        Discussion_NNP
+        The_DT results_NNS of_IN our_PRP$ analysis_NN corroborate_VBP previous_JJ
+        observations_NNS of_IN the_DT limiting_VBG influences_NNS of_IN winter_NN climate_NN
+        in_IN moose_NN population_NN dynamics_NNS [_NN 18_CD ]_NN ,_, of_IN the_DT mediating_VBG
+        influence_NN of_IN winter_NN climate_NN in_IN wolf-moose_JJ interactions_NNS [_NN 19_CD
+        ]_NN ,_, of_IN the_DT roles_NNS of_IN wolf_NN predation_NN and_CC density_NN dependence_NN
+        in_IN moose_NN dynamics_NNS [_NN 10_CD 20_CD ]_NN ,_, and_CC of_IN the_DT direct_JJ influence_NN
+        of_IN winter_NN climate_NN on_IN growth_NN dynamics_NNS of_IN balsam_NN fir_NN [_NN 6_CD ]_NN on_IN
+        Isle_NNP Royale_NNP ._. To_TO our_PRP$ knowledge_NN ,_, however_RB ,_, this_DT study_NN
+        constitutes_VBZ the_DT first_JJ documentation_NN of_IN direct_JJ and_CC
+        simultaneous_JJ influences_NNS of_IN large-scale_JJ climate_NN on_IN the_DT
+        dynamics_NNS at_IN multiple_JJ trophic_JJ levels_NNS in_IN a_DT single_JJ system_NN ._.
+        Although_IN many_JJ studies_NNS have_VBP documented_VBN influences_NNS of_IN
+        winter_NN weather_NN ,_, particularly_RB snow_NN conditions_NNS ,_, on_IN wolf-prey_JJ
+        interactions_NNS (_( e_SYM ._. g_SYM ._. ,_, [_NN 19_CD 21_CD 22_CD 23_CD ]_NN ,_, we_PRP are_VBP unaware_JJ of_IN
+        studies_NNS showing_VBG an_DT influence_NN of_IN winter_NN climate_NN on_IN wolf_NN
+        population_NN dynamics_NNS ._. Evidence_NN of_IN influences_NNS of_IN snow_NN on_IN wolf_NN
+        movement_NN ,_, social_JJ tendencies_NNS [_NN 24_CD ]_NN and_CC predation_NN rates_NNS [_NN 6_CD
+        ]_NN suggests_VBZ ,_, however_RB ,_, that_DT winter_NN climate_NN might_MD affect_VB wolf_NN
+        survival_NN ._. While_IN we_PRP wish_VBP to_TO avoid_VB speculating_VBG as_IN to_TO
+        potential_JJ mechanisms_NNS underlying_VBG the_DT direct_JJ influence_NN of_IN the_DT
+        NAO_NNP on_IN wolf_NN dynamics_NNS indicated_VBN by_IN our_PRP$ analysis_NN (_( Table_NNP 1_LS )_) ,_,
+        it_PRP may_MD be_VB worth_JJ considering_VBG that_IN residual_JJ variation_NN in_IN
+        annual_JJ wolf_NN mortality_NN ,_, after_IN accounting_VBG for_IN the_DT influences_NNS
+        of_IN wolf_NN density_NN and_CC pack_NN size_NN [_NN 6_CD ]_NN ,_, correlates_NNS negatively_RB
+        with_IN the_DT current-year_JJ NAO_NNP index_NN (_( standardized_JJ 
+        r_LS =_SYM -_: 0_CD ._. 52_CD ,_, 
+        t_NN =_SYM 2_CD ._. 22_CD ,_, 
+        P_NN =_SYM 0_CD ._. 038_CD )_) ._.
+        Trophic_NNP theory_NN [_NN 25_CD ]_NN ,_, statistical_JJ ecology_NN [_NN 26_CD 27_CD ]_NN ,_,
+        and_CC our_PRP$ model_NN (_( Figure_NN 1_CD and_CC equation_NN (_( 4_LS )_) in_IN Methods_NNP )_) predict_VBP
+        that_IN the_DT embedding_VBG dimension_NN (_( i_NNP ._. e_SYM ._. ,_, the_DT number_NN of_IN time_NN lags_VBZ
+        we_PRP must_MD look_VB back_RB upon_IN in_IN order_NN to_TO find_VB a_DT correlation_NN with_IN
+        the_DT current_JJ year_NN 's_POS density_NN )_) of_IN the_DT dynamics_NNS at_IN each_DT trophic_JJ
+        level_NN should_MD reflect_VB the_DT number_NN of_IN species_NNS influencing_VBG the_DT
+        dynamics_NNS at_IN each_DT level_NN ,_, as_IN several_JJ recent_JJ analyses_NNS have_VBP
+        also_RB demonstrated_VBN [_NN 14_CD 28_CD 29_CD ]_NN ._. In_IN this_DT perspective_NN ,_, we_PRP
+        found_VBD ,_, however_RB ,_, lower_JJR dimension_NN (_( i_NNP ._. e_SYM ._. ,_, first-order_JJ )_) at_IN both_DT
+        the_DT predator_NN and_CC vegetation_NN levels_NNS than_IN expected_VBN (_( Table_NNP 1_LS )_) ,_,
+        while_IN dynamics_NNS at_IN the_DT herbivore_NN level_NN displayed_VBD the_DT higher_JJR
+        dimension_NN predicted_VBN by_IN our_PRP$ model_NN ._. Interestingly_RB ,_,
+        dimensionality_NN in_IN this_DT large-mammal_JJ system_NN parallels_VBZ the_DT
+        dynamic_JJ structure_NN of_IN the_DT lynx-hare_JJ system_NN of_IN the_DT Canadian_JJ
+        boreal_NN forest_NN at_IN the_DT herbivore_NN level_NN ,_, but_CC not_RB at_IN the_DT
+        predator_NN level_NN [_NN 28_CD ]_NN ._. The_DT embedding_VBG dimension_NN of_IN lynx_NN ,_,
+        which_WDT are_VBP affected_VBN by_IN many_JJ species_NNS other_JJ than_IN snowshoe_NN hare_NN
+        across_IN the_DT boreal_NN forest_NN of_IN Canada_NNP ,_, is_VBZ generally_RB two_CD or_CC
+        higher_JJR [_NN 28_CD 30_CD ]_NN ._. The_DT contrasting_VBG simplicity_NN of_IN wolf_NN
+        dynamics_NNS on_IN Isle_NNP Royale_NNP reflects_VBZ ,_, we_PRP suggest_VBP ,_, the_DT
+        comparatively_RB insular_NN nature_NN of_IN the_DT Isle_NNP Royale_NNP system_NN and_CC
+        relative_JJ scarcity_NN of_IN additional_JJ species_NNS influencing_VBG the_DT
+        dynamics_NNS of_IN wolves_NNS there_RB [_NN 31_CD ]_NN ._.
+        Despite_IN having_VBG low_JJ dimension_NN ,_, the_DT top_NN and_CC bottom_VB trophic_JJ
+        levels_NNS displayed_VBD complex_JJ dynamics_NNS (_( Table_NNP 1_LS )_) ._. Indeed_RB ,_,
+        spectral_NN analysis_NN of_IN the_DT wolf_NN and_CC moose_NN time_NN series_NN reveals_VBZ
+        significant_JJ periodicity_NN at_IN both_DT levels_NNS that_WDT is_VBZ apparently_RB
+        driven_VBN by_IN phase-dependent_JJ predation_NN ,_, a_DT process_NN that_WDT is_VBZ
+        endogenous_JJ to_TO wolf_NN dynamics_NNS but_CC exogenous_JJ to_TO moose_NN (_( E_NNP ._.
+        Post_NNP ,_, N_NNP ._. C_NNP ._. Stenseth_NNP ,_, R_NN ._. O_NNP ._. Peterson_NNP ,_, J_NNP ._. A_DT ._. Vucetich_NNP ,_, A_DT ._. M_NNP ._.
+        Ellis_NNP ,_, in_IN review_NN )_) ._. Fir_NNP dynamics_NNS on_IN Isle_NNP Royale_NNP are_VBP ,_,
+        moreover_RB ,_, tightly_RB linked_VBN with_IN changes_NNS in_IN moose_NN density_NN [_NN 6_CD
+        16_CD ]_NN ,_, which_WDT could_MD contribute_VB to_TO exogenously_RB generated_VBN
+        periodicity_NN at_IN that_DT level_NN [_NN 27_CD ]_NN ._.
+        The_DT low_JJ dimension_NN of_IN the_DT dynamics_NNS at_IN the_DT top_NN and_CC bottom_VB
+        trophic_JJ levels_NNS masks_NNS ,_, in_IN a_DT sense_NN ,_, interactions_NNS with_IN the_DT
+        adjacent_JJ (_( herbivore_NN )_) level_NN that_WDT were_VBD captured_VBN in_IN these_DT
+        models_NNS ._. Note_VB ,_, however_RB ,_, that_IN in_IN the_DT most_RBS parsimonious_JJ model_NN
+        of_IN wolf_NN dynamics_NNS (_( Table_NNP 1_LS )_) ,_, the_DT lag-one_JJ autoregressive_JJ term_NN
+        quantifying_VBG direct_JJ density_NN dependence_NN includes_VBZ the_DT
+        coefficient_NN of_IN self-regulation_NN in_IN moose_NN (_( 1_CD +_NN 
+        b_SYM 
+        1_LS )_) ,_, and_CC the_DT coefficient_NN of_IN the_DT lag-one_JJ
+        pack_NN size_NN term_NN includes_VBZ the_DT coefficient_NN quantifying_VBG the_DT
+        interaction_NN between_IN moose_NN density_NN and_CC wolf_NN density_NN
+        (_( coefficient_NN 
+        a_DT 
+        2_CD from_IN Equation_NNP 2_CD a_DT )_) ._. As_IN well_RB ,_, in_IN the_DT
+        most_RBS parsimonious_JJ model_NN of_IN fir_NN dynamics_NNS (_( Table_NNP 1_LS )_) ,_, the_DT
+        lag-one_JJ autoregressive_JJ term_NN includes_VBZ the_DT coefficients_NNS
+        quantifying_VBG the_DT influences_NNS of_IN moose_NN on_IN fir_NN (_( coefficient_NN 
+        c_SYM 
+        2_CD from_IN equation_NN 2_CD c_SYM )_) and_CC of_IN fir_NN on_IN moose_NN
+        (_( coefficient_NN b_SYM 
+        3_CD from_IN equation_NN 2_CD b_SYM )_) ._. Hence_RB ,_, an_DT important_JJ
+        conclusion_NN of_IN this_DT analysis_NN is_VBZ that_IN while_IN interactions_NNS
+        between_IN adjacent_JJ trophic_JJ levels_NNS lead_VBP to_TO predictions_NNS of_IN
+        higher-order_JJ dynamics_NNS during_IN the_DT derivation_NN of_IN the_DT
+        community_NN model_NN (_( Figure_NN 1_LS )_) ,_, the_DT act_NN of_IN following_VBG the_DT
+        coefficients_NNS from_IN the_DT individual_JJ trophic-level_JJ models_NNS (_( 
+        sensu_NN [_NN 32_CD ]_NN )_) allows_VBZ us_PRP to_TO observe_VB
+        that_IN trophic_JJ interactions_NNS may_MD also_RB appear_VB in_IN first-order_JJ
+        density_NN dependence_NN ._.
+      
+      
+        Conclusions_NNP
+        Experimental_NNP evidence_NN from_IN microcosm_NN studies_NNS indicates_VBZ
+        that_IN climatic_JJ change_NN may_MD alter_VB community_NN stability_NN if_IN
+        individual_JJ populations_NNS composing_VBG the_DT community_NN exhibit_NN weak_JJ
+        density_NN dependence_NN ,_, or_CC if_IN climate_NN change_NN influences_VBZ
+        interspecific_JJ interactions_NNS [_NN 33_CD ]_NN ._. While_IN we_PRP caution_VBP
+        against_IN drawing_VBG general_JJ conclusions_NNS from_IN this_DT analysis_NN ,_, our_PRP$
+        results_NNS suggest_VBP that_IN climatic_JJ change_NN has_VBZ the_DT potential_NN to_TO
+        influence_VB the_DT stability_NN of_IN this_DT community_NN by_IN altering_VBG the_DT
+        dynamics_NNS and_CC stability_NN at_IN any_DT single_NN ,_, or_CC all_DT three_CD ,_, of_IN the_DT
+        individual_JJ trophic_JJ levels_NNS ._. Because_IN self-regulation_NN (_( i_NNP ._. e_SYM ._. ,_,
+        direct_JJ density_NN dependence_NN )_) was_VBD relatively_RB weaker_JJR at_IN the_DT top_NN
+        and_CC bottom_VB trophic_JJ levels_NNS (_( though_IN not_RB significant_JJ
+        statistically_RB )_) ,_, it_PRP may_MD be_VB these_DT levels_NNS at_IN which_WDT climate_NN
+        change_NN alters_NNS stability_NN of_IN the_DT community_NN ._. It_PRP is_VBZ worth_JJ
+        recalling_VBG ,_, however_RB ,_, that_DT theory_NN predicts_VBZ that_DT population_NN
+        stability_NN depends_VBZ on_IN the_DT relative_JJ strengths_NNS of_IN intrinsic_JJ
+        and_CC environmental_JJ influences_NNS on_IN population_NN dynamics_NNS [_NN 2_CD ]_NN ._.
+        In_IN this_DT regard_NN ,_, it_PRP may_MD be_VB the_DT observation_NN that_DT climate_NN
+        exerted_VBN its_PRP$ greatest_JJS influence_NN on_IN the_DT dynamics_NNS of_IN the_DT top_NN
+        and_CC bottom_VB trophic_JJ levels_NNS (_( Figure_NN 3_LS )_) that_WDT is_VBZ most_RBS relevant_JJ
+        because_IN ,_, even_RB if_IN self_NN regulation_NN were_VBD equivalent_NN at_IN all_DT
+        three_CD levels_NNS ,_, it_PRP is_VBZ at_IN the_DT levels_NNS most_RBS responsive_JJ to_TO
+        climate_NN where_WRB we_PRP will_MD see_VB the_DT greatest_JJS effects_NNS of_IN climate_NN
+        change_NN on_IN dynamics_NNS and_CC stability_NN [_NN 3_CD ]_NN ._.
+        Moreover_RB ,_, it_PRP appears_VBZ that_IN in_IN this_DT system_NN ,_, the_DT two_CD
+        trophic_JJ levels_NNS with_IN the_DT simplest_JJS dynamics_NNS (_( predator_NN and_CC
+        vegetation_NN )_) also_RB displayed_VBD the_DT greatest_JJS response_NN to_TO
+        climate_NN ._. Whether_IN community_NN stability_NN in_IN a_DT changing_VBG climate_NN
+        relates_VBZ to_TO dynamic_JJ complexity_NN at_IN individual_JJ trophic_JJ levels_NNS ,_,
+        as_IN opposed_VBN to_TO complexity_NN of_IN entire_JJ food_NN webs_NNS (_( 
+        sensu_NN [_NN 34_CD ]_NN )_) ,_, should_MD prove_VB to_TO be_VB a_DT
+        fruitful_JJ and_CC important_JJ pursuit_NN in_IN future_JJ research_NN ._.
+      
+      
+        Methods_NNP
+        We_PRP expressed_VBD the_DT dynamics_NNS of_IN predator_NN density_NN (_( P_NN )_) ,_,
+        herbivore_NN density_NN (_( 
+        H_NNP )_) ,_, and_CC incremental_JJ vegetation_NN
+        growth_NN (_( 
+        V_NNP )_) as_IN (_( see_VB Figure_NN 1_LS )_) :_:
+        
+        P_NN 
+        
+          t_NN 
+         =_SYM 
+        P_NN 
+        
+        t_NN -_: 1_CD exp_NN (_( 
+        f_SYM (_( 
+        X_NNP 
+        
+        t_NN -_: 1_CD ,_, 
+        Y_NNP 
+        
+        t_NN -_: 1_LS )_) ,_, 
+        U_NNP 
+        
+          Dt_NNP 
+         ,_, 
+        U_NNP 
+        
+          Pt_NNP 
+         )_)     (_( 1_CD a_DT )_)
+        
+        H_NNP 
+        
+          t_NN 
+         =_SYM 
+        H_NNP 
+        
+        t_NN -_: 1_CD exp_NN (_( 
+        g_SYM (_( 
+        X_NNP 
+        
+        t_NN -_: 1_CD ,_, 
+        Y_NNP 
+        
+        t_NN -_: 1_CD ,_, 
+        Z_NNP 
+        
+        t_NN -_: 1_LS )_) ,_, 
+        U_NNP 
+        
+          Dt_NNP 
+         ,_, 
+        U_NNP 
+        
+          Pt_NNP 
+         )_)     (_( 1_CD b_SYM )_)
+        
+        V_NNP 
+        
+          t_NN 
+         =_SYM 
+        V_NNP 
+        
+        t_NN -_: 1_CD exp_NN (_( 
+        h_NN (_( 
+        Z_NNP 
+        
+        t_NN -_: 1_CD ,_, 
+        Y_NNP 
+        
+          t_NN 
+         )_) ,_, 
+        U_NNP 
+        
+          Dt_NNP 
+         )_)     (_( 1_CD c_SYM )_)
+        where_WRB 
+        X_NNP 
+        
+          t_NN 
+         
+        ,_, Y_NNP 
+        
+          t_NN 
+         and_CC 
+        Z_NNP 
+        
+          t_NN 
+         are_VBP the_DT log_NN 
+        
+          e_SYM 
+         -_: transformed_VBN 
+        P_NN 
+        
+          t_NN 
+         ,_, 
+        H_NNP 
+        
+          t_NN 
+         and_CC 
+        Z_NNP 
+        
+          t_NN 
+         ,_, respectively_RB ,_, and_CC where_WRB 
+        U_NNP 
+        
+          Dt_NNP 
+         is_VBZ a_DT climate_NN variable_JJ (_( here_RB ,_, 
+        U_NNP 
+        
+          Dt_NNP 
+         is_VBZ the_DT NAO_NNP winter_NN index_NN ;_: see_VB [_NN 9_CD ]_NN )_) ,_, and_CC where_WRB 
+        U_NNP 
+        
+          Pt_NNP 
+         represents_VBZ wolf_NN pack_NN size_NN ,_, which_WDT correlates_NNS with_IN
+        winter_NN climatic_JJ conditions_NNS and_CC pack_NN kill_NN rate_NN (_( moose_NN
+        killed_VBD /_NN pack_NN /_NN day_NN )_) [_NN 6_CD ]_NN ,_, and_CC which_WDT incorporates_VBZ social_JJ
+        structure_NN and_CC associated_VBN non-predatory_JJ behavior_NN that_WDT could_MD
+        affect_VB dynamics_NNS of_IN both_DT wolves_NNS [_NN 35_CD ]_NN and_CC moose_NN [_NN 6_CD ]_NN ._.
+        The_DT choice_NN of_IN the_DT ecological_JJ functions_NNS 
+        f_SYM (_( •_NN )_) ,_, 
+        g_SYM (_( •_NN )_) ,_, and_CC 
+        h_NN (_( •_NN )_) is_VBZ not_RB straightforward_JJ ,_,
+        considering_VBG the_DT variety_NN of_IN functional_JJ forms_NNS that_WDT have_VBP been_VBN
+        suggested_VBN [_NN 36_CD ]_NN ._. However_RB ,_, for_IN the_DT subsequent_JJ purposes_NNS of_IN
+        estimating_VBG statistical_JJ density_NN dependence_NN ,_, it_PRP is_VBZ
+        biologically_RB reasonable_JJ to_TO assume_VB that_IN the_DT functions_NNS may_MD be_VB
+        approximately_RB linear_JJ in_IN 
+        X_NNP 
+        
+          t_NN 
+         ,_, 
+        Y_NNP 
+        
+          t_NN 
+         ,_, and_CC 
+        Z_NNP 
+        
+          t_NN 
+         ;_: that_DT is_VBZ ,_, we_PRP may_MD assume_VB that_DT population_NN and_CC
+        vegetation_NN growth_NN rates_NNS are_VBP approximately_RB linearly_RB related_VBN
+        to_TO log-density_JJ [_NN 12_CD 14_CD 37_CD 38_CD ]_NN ._. Hence_RB ,_, we_PRP may_MD re-write_JJ
+        equation_NN (_( 1_LS )_) as_IN :_:
+        
+        X_NNP 
+        
+          t_NN 
+         =_SYM 
+        a_DT 
+        0_CD +_NN (_( 1_CD +_NN 
+        a_DT 
+        1_LS )_) 
+        X_NNP 
+        
+        t_NN -_: 1_CD +_NN 
+        a_DT 
+        2_CD 
+        Y_NNP 
+        
+        t_NN -_: 1_CD +_NN 
+        a_DT 
+        3_CD 
+        U_NNP 
+        
+          Dt_NNP 
+         +_NN 
+        a_DT 
+        4_CD 
+        U_NNP 
+        
+          Pt_NNP 
+             (_( 2_CD a_DT )_)
+        
+        Y_NNP 
+        
+          t_NN 
+         =_SYM 
+        b_SYM 
+        0_CD +_NN (_( 1_CD +_NN 
+        b_SYM 
+        1_LS )_) 
+        Y_NNP 
+        
+        t_NN -_: 1_CD +_NN 
+        b_SYM 
+        2_CD 
+        X_NNP 
+        
+        t_NN -_: 1_CD +_NN 
+        b_SYM 
+        3_CD 
+        Z_NNP 
+        
+        t_NN -_: 1_CD +_NN 
+        b_SYM 
+        4_CD 
+        U_NNP 
+        
+          Dt_NNP 
+         +_NN 
+        b_SYM 
+        5_CD 
+        U_NNP 
+        
+          Pt_NNP 
+             (_( 2_CD b_SYM )_)
+        
+        Z_NNP 
+        
+          t_NN 
+         =_SYM 
+        c_SYM 
+        0_CD +_NN (_( 1_CD +_NN 
+        c_SYM 
+        1_LS )_) 
+        Z_NNP 
+        
+        t_NN -_: 1_CD +_NN 
+        c_SYM 
+        2_CD 
+        Y_NNP 
+        
+          t_NN 
+         +_NN 
+        c_SYM 
+        3_CD 
+        U_NNP 
+        
+          t_NN 
+             (_( 2_CD c_SYM )_)
+        In_IN a_DT straight-chain_JJ community_NN (_( Figure_NN 1_LS )_) ,_, equations_NNS (_( 2_LS )_)
+        can_MD be_VB integrated_VBN to_TO produce_VB bi-variate_JJ autoregressive_JJ
+        statistical_JJ models_NNS at_IN each_DT trophic_JJ level_NN [_NN 26_CD ]_NN ,_,
+        giving_VBG :_:
+        
+        X_NNP 
+        
+          t_NN 
+         =_SYM 
+        a_DT 
+        0_CD +_NN 
+        a_DT 
+        2_CD 
+        b_SYM 
+        0_CD -_: 
+        a_DT 
+        0_CD (_( 1_CD +_NN 
+        b_SYM 
+        1_LS )_) +_NN [_NN (_( 1_CD +_NN 
+        a_DT 
+        1_LS )_) +_NN (_( 1_CD +_NN 
+        b_SYM 
+        1_LS )_) ]_NN 
+        X_NNP 
+        
+        t_NN -_: 1_CD +_NN [_NN 
+        a_DT 
+        2_CD 
+        b_SYM 
+        2_CD -_: (_( 1_CD +_NN 
+        a_DT 
+        1_LS )_) (_( 1_CD +_NN 
+        b_SYM 
+        1_LS )_) ]_NN 
+        X_NNP 
+        
+        t_NN -_: 2_CD +_NN +_NN 
+        a_DT 
+        3_CD 
+        U_NNP 
+        
+          Dt_NNP 
+         +_NN [_NN 
+        a_DT 
+        2_CD 
+        b_SYM 
+        5_CD -_: (_( 1_CD +_NN 
+        b_SYM 
+        1_LS )_) 
+        a_DT 
+        4_CD ]_NN 
+        U_NNP 
+        
+        Pt_NNP -_: 1_CD +_NN 
+        a_DT 
+        4_CD 
+        U_NNP 
+        
+          Pt_NNP 
+         +_NN [_NN 
+        a_DT 
+        2_CD 
+        b_SYM 
+        5_CD -_: (_( 1_CD +_NN 
+        b_SYM 
+        1_LS )_) 
+        a_DT 
+        4_CD ]_NN 
+        U_NNP 
+        
+        Pt_NNP -_: 1_CD     (_( 3_CD a_DT )_)
+        
+        
+        Z_NNP 
+        
+          t_NN 
+         =_SYM [_NN 
+        c_SYM 
+        0_CD +_NN 
+        c_SYM 
+        2_CD 
+        b_SYM 
+        0_CD -_: (_( 1_CD +_NN 
+        b_SYM 
+        1_LS )_) 
+        c_SYM 
+        0_CD ]_NN +_NN [_NN (_( 1_CD +_NN 
+        b_SYM 
+        1_LS )_) +_NN (_( 1_CD +_NN 
+        c_SYM 
+        1_LS )_) +_NN 
+        c_SYM 
+        2_CD 
+        b_SYM 
+        3_CD ]_NN 
+        Z_NNP 
+        
+        t_NN -_: 1_CD -_: (_( 1_CD +_NN 
+        b_SYM 
+        1_LS )_) (_( 1_CD +_NN 
+        c_SYM 
+        1_LS )_) 
+        Z_NNP 
+        
+        t_NN -_: 2_CD +_NN (_( 
+        c_SYM 
+        2_CD 
+        b_SYM 
+        4_CD +_NN 
+        c_SYM 
+        3_LS )_) 
+        U_NNP 
+        
+          Dt_NNP 
+         -_: (_( 1_CD +_NN 
+        b_SYM 
+        1_LS )_) 
+        c_SYM 
+        3_CD 
+        U_NNP 
+        
+        Dt_NNP -_: 1_CD +_NN 
+        c_SYM 
+        2_CD 
+        b_SYM 
+        5_CD 
+        U_NNP 
+        
+          Pt_NNP 
+             (_( 3_CD c_SYM )_)
+        After_IN re-designation_JJ of_IN the_DT coefficients_NNS (_( see_VB also_RB [_NN 26_CD
+        ]_NN ,_, pp_NN ._. 71_CD -_: 72_CD )_) ,_, these_DT equations_NNS simplify_VBP to_TO :_:
+        
+        
+        Y_NNP 
+        
+          t_NN 
+         =_SYM β_NN 
+        0_CD +_NN (_( 3_CD +_NN β_NN 
+        1_LS )_) 
+        Y_NNP 
+        
+        t_NN -_: 1_CD +_NN (_( 2_CD +_NN β_NN 
+        2_LS )_) 
+        Y_NNP 
+        
+        t_NN -_: 2_CD +_NN (_( 1_CD +_NN β_NN 
+        3_LS )_) 
+        Y_NNP 
+        
+        t_NN -_: 3_CD +_NN ω_NN 
+        1_CD 
+        U_NNP 
+        
+          Dt_NNP 
+         +_NN ω_NN 
+        2_CD 
+        U_NNP 
+        
+        Dt_NNP -_: 1_CD +_NN +_NN ω_NN 
+        3_CD 
+        U_NNP 
+        
+        Dt_NNP -_: 2_CD +_NN +_NN ω_NN 
+        4_CD U_NNP 
+        
+          Pt_NNP 
+         +_NN ω_NN 
+        5_CD 
+        U_NNP 
+        
+        Pt_NNP -_: 1_CD     (_( 4_CD b_SYM )_)
+        
+        Z_NNP 
+        
+          t_NN 
+         =_SYM γ_NN 
+        0_CD +_NN (_( 2_CD +_NN γ_NN 
+        1_LS )_) 
+        Z_NNP 
+        
+        t_NN -_: 1_CD +_NN (_( 1_CD +_NN γ_NN 
+        2_LS )_) 
+        Z_NNP 
+        
+        t_NN -_: 2_CD +_NN ω_NN 
+        1_CD 
+        U_NNP 
+        
+          Dt_NNP 
+         +_NN ω_NN 
+        2_CD 
+        U_NNP 
+        
+        Dt_NNP -_: 1_CD +_NN ω_NN 
+        3_CD 
+        U_NNP 
+        
+          Pt_NNP 
+             (_( 4_CD c_SYM )_)
+        We_PRP used_VBD the_DT full_JJ model_NN framework_NN (_( equations_NNS 4_LS )_) to_TO
+        identify_VB the_DT most_RBS parsimonious_JJ model_NN of_IN the_DT dynamics_NNS at_IN
+        each_DT trophic_JJ level_NN ._. Beginning_VBG with_IN the_DT full_JJ model_NN at_IN each_DT
+        trophic_JJ level_NN ,_, we_PRP used_VBD autoregressive_JJ analysis_NN with_IN maximum_NN
+        likelihood_NN estimation_NN and_CC backwards_JJ elimination_NN of_IN
+        non-significant_JJ covariates_NNS and_CC lagged_VBN autoregressive_JJ terms_NNS
+        to_TO arrive_VB at_IN reduced_VBN models_NNS that_WDT minimized_VBN the_DT corrected_VBN
+        Akaike_NNP Information_NNP Criterion_NNP (_( AIC_NNP 
+        
+          c_SYM 
+         )_) [_NN 17_CD ]_NN ._. We_PRP considered_VBD changes_NNS in_IN the_DT AIC_NNP 
+        
+          c_SYM 
+         scores_NNS of_IN less_JJR than_IN one_CD to_TO be_VB insignificant_JJ
+        improvement_NN of_IN the_DT models_NNS [_NN 37_CD 39_CD ]_NN ._.
+      
+    
+  

@@ -1,0 +1,594 @@
+
+  
+    
+      
+        Background_NNP
+        Microarrays_NNP are_VBP a_DT powerful_JJ tool_NN to_TO investigate_VB
+        differential_NN gene_NN expression_NN of_IN thousands_NNS of_IN genes_NNS of_IN a_DT
+        cell_NN type_NN ,_, tissue_NN ,_, or_CC organism_NN [_NN 1_CD 2_CD ]_NN ._. While_IN traditional_JJ
+        microarray_NN experiments_NNS strive_VBP to_TO establish_VB the_DT '_POS global_JJ
+        view_NN '_'' of_IN the_DT activity_NN of_IN 
+        all_DT genes_NNS (_( i_NNP ._. e_SYM ._. ,_, the_DT genome_NN )_) in_IN
+        response_NN to_TO environmental_JJ conditions_NNS ,_, they_PRP may_MD also_RB be_VB used_VBN
+        to_TO characterize_VB and_CC quantitatively_RB describe_VB gene_NN expression_NN
+        behavior_NN of_IN a_DT selected_VBN set_NN of_IN genes_NNS as_IN a_DT true_JJ genotypic_JJ
+        correlate_VBP of_IN a_DT particular_JJ phenotype_NN ._. Application-targeted_NNP
+        arrays_NNS and_CC array_NN reagents_NNS are_VBP already_RB commercially_RB
+        available_JJ (_( Operon_NNP ,_, Clontech_NNP ,_, Incyte_NNP Pharmaceuticals_NNP ,_,
+        Affymetrix_NNP )_) for_IN research_NN in_IN diverse_JJ areas_NNS such_JJ as_IN cancer_NN ,_,
+        stress_NN and_CC aging_VBG ,_, toxicology_NN ,_, hematology_NN ,_, cell_NN cycle_NN ,_,
+        neurology_NN and_CC apoptosis_NNS ._. Contrary_JJ to_TO '_POS genome-wide_JJ '_POS chips_NNS ,_,
+        custom-fabricated_JJ microarrays_NNS are_VBP less_RBR expensive_JJ and_CC more_RBR
+        readily_RB adapted_VBN to_TO the_DT economically_RB sensitive_JJ environment_NN
+        of_IN the_DT molecular_JJ diagnostics_NNS laboratory_NN ,_, where_WRB relatively_RB
+        few_JJ interrogations_NNS are_VBP relevant_JJ for_IN clinical_JJ investigation_NN
+        of_IN a_DT patient_NN specimen_NN ._.
+        Because_IN typical_JJ microarray_NN results_NNS are_VBP usually_RB burdened_VBN
+        with_IN substantial_JJ amounts_NNS of_IN noise_NN [_NN 3_CD ]_NN ,_, rigorous_JJ
+        statistical_JJ methods_NNS must_MD be_VB applied_VBN to_TO interpretation_NN of_IN
+        data_NNS ._. Methods_NNP for_IN systematically_RB addressing_VBG noise_NN in_IN the_DT
+        analysis_NN of_IN the_DT microarray_NN data_NN are_VBP only_RB beginning_VBG to_TO be_VB
+        described_VBN [_NN 4_CD 5_CD 6_CD 7_CD 8_CD 9_CD 10_CD ]_NN ._. Such_JJ noise_NN in_IN microarray_NN
+        experiments_NNS may_MD arise_VB from_IN non-specific_JJ hybridization_NN of_IN
+        the_DT labeled_VBN samples_NNS to_TO elements_NNS printed_VBN on_IN the_DT microarray_NN ,_,
+        print-tip_JJ effects_NNS ,_, slide_NN inhomogeneities_NNS ,_, and_CC variability_NN
+        in_IN RNA_NNP isolation_NN ,_, purity_NN ,_, labeling_VBG and_CC detection_NN [_NN 6_CD 9_CD 10_CD
+        11_CD 12_CD ]_NN ._. Among_IN these_DT ,_, hybridization_NN variance_NN contributes_VBZ
+        most_RBS significantly_RB to_TO the_DT overall_JJ variation_NN [_NN 12_CD ]_NN ._.
+        Non-specific_NNP hybridization_NN can_MD be_VB measured_VBN through_IN the_DT
+        use_NN of_IN specificity_NN controls_NNS on_IN the_DT microarray_NN and_CC addressed_VBN
+        as_IN a_DT statistical_JJ problem_NN [_NN 8_CD 13_CD ]_NN ._. The_DT most_RBS common_JJ
+        strategy_NN in_IN microarray_NN experiments_NNS is_VBZ to_TO focus_VB on_IN
+        fluorescent_NN signal_NN ratios_NNS in_IN two-color_JJ competitive_JJ
+        hybridization_NN experiments_NNS ._. The_DT problem_NN with_IN using_VBG ratio_NN
+        data_NNS alone_RB is_VBZ that_IN it_PRP does_VBZ not_RB take_VB into_IN account_NN the_DT
+        absolute_JJ signal_NN intensity_NN measurements_NNS used_VBN to_TO calculate_VB
+        the_DT ratios_NNS ._. While_IN this_DT approach_NN may_MD work_VB adequately_RB for_IN
+        ratios_NNS of_IN moderate_JJ to_TO highly_RB expressed_VBD genes_NNS that_WDT yield_VBP
+        bright_JJ fluorescent_NN signals_NNS ,_, weak_JJ signals_NNS arising_VBG from_IN low_JJ
+        transcript_NN levels_NNS may_MD be_VB masked_VBN or_CC biased_VBN by_IN noise_NN
+        (_( non-specific_JJ hybridization_NN )_) ._. Non-specific_NNP hybridization_NN is_VBZ
+        a_DT characteristic_NN of_IN cDNA_NN microarray_NN hybridization_NN and_CC may_MD
+        be_VB attributed_VBN to_TO the_DT uniform_NN hybridization_NN condition_NN
+        applied_VBN for_IN all_DT sequences_NNS on_IN the_DT chip_NN [_NN 4_CD 6_CD 7_CD ]_NN ._. The_DT
+        frequently_RB used_VBN fold_VB change_NN threshold_NN values_NNS of_IN 2_CD -_: 3_CD to_TO
+        define_VB a_DT significant_JJ change_NN are_VBP often_RB arbitrarily_RB chosen_VBN
+        and_CC do_VBP not_RB take_VB into_IN account_NN the_DT statistical_JJ significance_NN
+        of_IN absolute_JJ signal_NN intensity_NN ._. For_IN example_NN ,_, microarray_NN data_NNS
+        showing_VBG a_DT 4_CD -_: fold_VB change_NN derived_VBN from_IN low_JJ signal_NN intensities_NNS
+        may_MD have_VB no_DT statistical_JJ significance_NN whereas_IN a_DT 1_CD ._. 4_CD fold_VB
+        change_NN derived_VBN from_IN strong_JJ signal_NN intensities_NNS may_MD be_VB highly_RB
+        significant_JJ in_IN terms_NNS of_IN reflecting_VBG actual_JJ changes_NNS in_IN mRNA_NN
+        concentration_NN within_IN a_DT biological_JJ sample_NN ._. Thus_RB ,_, focusing_VBG on_IN
+        fold-changes_JJ alone_RB is_VBZ insufficient_JJ and_CC confidence_NN
+        statements_NNS about_IN differential_NN expression_NN must_MD take_VB into_IN
+        account_NN absolute_JJ signal_NN intensities_NNS [_NN 8_CD ]_NN ._. In_IN this_DT study_NN
+        we_PRP have_VBP adapted_VBN a_DT statistical_JJ method_NN that_WDT utilizes_NNS absolute_JJ
+        signal_NN intensities_NNS from_IN a_DT reference_NN set_NN of_IN positive_JJ
+        controls_NNS and_CC negative_JJ non-homologous_JJ control_NN sequences_NNS to_TO
+        determine_VB the_DT absolute_JJ intensity_NN range_NN in_IN each_DT channel_NN that_WDT
+        may_MD be_VB used_VBN with_IN a_DT certain_JJ confidence_NN level_NN on_IN a_DT particular_JJ
+        microarray_NN to_TO calculate_VB expression_NN ratios_NNS ._. The_DT method_NN of_IN
+        analysis_NN proposed_VBN in_IN this_DT paper_NN was_VBD originally_RB developed_VBN
+        along_IN with_IN radar_NN and_CC detailed_JJ results_NNS go_VBP back_RB to_TO the_DT area_NN
+        of_IN signal_NN processing_NN ._. ROC_NNP curves_NNS have_VBP been_VBN used_VBN for_IN many_JJ
+        years_NNS in_IN numerous_JJ other_JJ areas_NNS ,_, including_VBG psychology_NN [_NN 14_CD 15_CD
+        ]_NN ,_, and_CC other_JJ areas_NNS of_IN medical_JJ diagnostics_NNS [_NN 16_CD ]_NN ._. For_IN
+        this_DT purpose_NN ,_, diagnostic_JJ accuracy_NN ROC_NNP curves_NNS have_VBP been_VBN used_VBN
+        to_TO depict_VB the_DT pattern_NN of_IN sensitivities_NNS and_CC specificities_NNS
+        observed_VBD when_WRB the_DT performance_NN of_IN a_DT diagnostic_JJ test_NN is_VBZ
+        evaluated_VBN at_IN several_JJ different_JJ thresholds_NNS ._. Here_RB ,_, receiver_NN
+        operating_VBG characteristic_JJ curves_NNS describe_VBP the_DT ability_NN of_IN a_DT
+        particular_JJ parameter_NN (_( e_SYM ._. g_SYM ._. fluorescence_NN intensity_NN )_) to_TO
+        discriminate_JJ between_IN two_CD conditions_NNS (_( e_SYM ._. g_SYM specific_JJ and_CC
+        non-specific_JJ hybridization_NN )_) ._. We_PRP illustrate_VBP our_PRP$ approach_NN
+        using_VBG gene_NN expression_NN data_NNS from_IN a_DT study_NN comparing_VBG
+        expression_NN profiles_NNS of_IN highly_RB invasive_JJ and_CC poorly_RB invasive_JJ
+        human_JJ melanoma_NN cell_NN lines_NNS [_NN 17_CD ]_NN ._. The_DT goal_NN of_IN these_DT
+        experiments_NNS is_VBZ to_TO identify_VB candidate_NN genes_NNS that_WDT may_MD
+        regulate_VB the_DT invasive_JJ behavior_NN of_IN melanoma_NN cells_NNS ._. The_DT area_NN
+        under_IN the_DT ROC_NNP curve_NN may_MD be_VB used_VBN to_TO assess_VB the_DT quality_NN of_IN
+        individual_JJ microarray_NN hybridizations_NNS which_WDT is_VBZ particularly_RB
+        important_JJ because_IN the_DT quality_NN of_IN microarray_NN hybridization_NN
+        can_MD vary_VB significantly_RB [_NN 9_CD 12_CD ]_NN ._. The_DT statistical_JJ
+        evaluation_NN of_IN a_DT reference_NN set_NN of_IN genes_NNS to_TO measure_VB the_DT
+        sensitivity_NN and_CC specificity_NN of_IN each_DT microarray_NN
+        hybridization_NN reaction_NN dramatically_RB improves_VBZ the_DT ability_NN to_TO
+        quality_NN control_NN the_DT resulting_VBG data_NN ,_, a_DT key_JJ requirement_NN for_IN
+        the_DT use_NN of_IN microarrays_NNS in_IN diagnostic_JJ applications_NNS ._. Here_RB ,_, we_PRP
+        propose_VBP the_DT design_NN of_IN a_DT prototype_NN diagnostic_JJ microarray_NN
+        with_IN respect_NN to_TO control_VB sequences_NNS and_CC we_PRP show_VBP how_WRB a_DT ROC_NNP
+        analysis_NN using_VBG percentile_NN ranks_NNS of_IN specific_JJ and_CC
+        non-specific_JJ hybridization_NN signals_NNS can_MD be_VB used_VBN to_TO establish_VB
+        signal_NN detection_NN thresholds_NNS and_CC hybridization_NN quality_NN
+        assessments_NNS for_IN each_DT individual_JJ microarray_NN experiment_NN ._.
+      
+      
+        Results_NNS
+        The_DT reliability_NN of_IN ratios_NNS measured_VBN to_TO describe_VB changes_NNS
+        in_IN gene_NN expression_NN depends_VBZ on_IN the_DT absolute_JJ signal_NN
+        intensities_NNS ._. While_IN ratios_NNS from_IN highly_RB abundant_JJ transcripts_NNS
+        may_MD be_VB accurate_JJ ,_, rare_JJ transcripts_NNS give_VBP absolute_JJ intensities_NNS
+        that_WDT may_MD be_VB obscured_VBD by_IN non-specific_JJ hybridization_NN ._. Thus_RB
+        both_DT ratio_NN and_CC absolute_JJ signal_NN intensity_NN are_VBP important_JJ to_TO
+        evaluate_VB differential_NN gene_NN expression_NN properly_RB ._. Calibrating_NNP
+        the_DT appropriate_JJ signal_NN and_CC noise_NN intensity_NN thresholds_NNS for_IN a_DT
+        given_VBN microarray_NN hybridization_NN requires_VBZ the_DT analysis_NN of_IN a_DT
+        set_NN of_IN positive_JJ and_CC negative_JJ reference_NN genes_NNS ._. At_IN low_JJ signal_NN
+        intensities_NNS ,_, both_DT reference_NN groups_NNS yield_VBP overlapping_VBG signal_NN
+        distributions_NNS (_( Figure_NN 1_CD aand_NN 1_CD b_SYM )_) ._. Test_NN signals_NNS from_IN array_NN 1_CD
+        and_CC 2_CD falling_VBG within_IN the_DT overlap_VB region_NN cannot_NN easily_RB be_VB
+        categorized_VBN as_IN either_DT present_JJ or_CC absent_JJ and_CC calculating_VBG
+        ratios_NNS may_MD lead_VB to_TO the_DT identification_NN of_IN false_JJ positives_NNS
+        (_( or_CC false_JJ negatives_NNS )_) (_( Figure_NN 1_CD cand_NN 1_CD d_SYM )_) ._.
+        Traditionally_RB ,_, cut-offs_JJ for_IN microarrays_NNS have_VBP been_VBN
+        calculated_VBN from_IN negative_JJ controls_NNS ._. Here_RB ,_, we_PRP compare_VBP three_CD
+        widely_RB used_VBN thresholds_NNS (_( T_NN 
+        X_NNP =_SYM mean_VB ;_: T_NN 
+        0_CD ._. 5_CD X_NNP =_SYM median_JJ ;_: T_NN 
+        X_NNP 2_CD SD_NNP =_SYM mean_VB +_NN 2_CD standard_JJ deviations_NNS )_) to_TO
+        the_DT ROC-_NNP analyses_NNS derived_VBD threshold_NN (_( T_NN 
+        M_NNP =_SYM the_DT threshold_NN with_IN maximum_NN
+        specificity_NN and_CC senitivity_NN (_( T_NN 
+        M_NNP )_) obtained_VBN as_IN the_DT point_NN of_IN
+        intersection_NN in_IN figure_NN 2_LS )_) in_IN terms_NNS of_IN specificity_NN (_( Sp_NNP )_) and_CC
+        sensitivity_NN (_( Se_NNP )_) (_( Table_NNP 1_LS )_) ._. For_IN T_NN 
+        X_NNP and_CC T_NN 
+        0_CD ._. 5_CD X_NNP the_DT Se_NNP is_VBZ ≅_NN 100_CD %_NN ,_, however_RB ,_, the_DT Sp_NNP
+        would_MD only_RB be_VB ≅_NN 50_CD %_NN indicating_VBG that_IN approximately_RB every_DT
+        second_JJ signal_NN would_MD be_VB a_DT false_JJ positive_JJ arising_VBG from_IN
+        non-specific_JJ hybridization_NN ._. As_IN a_DT benefit_NN ,_, however_RB ,_, >_NN 99_CD %_NN
+        of_IN test_NN genes_NNS would_MD be_VB included_VBN in_IN data_NNS analyses_NNS (_( Table_NNP 1_LS )_) ._.
+        If_IN T_NN 
+        X_NNP 2_CD SD_NNP or_CC T_NN 
+        M_NNP is_VBZ the_DT desired_VBN threshold_NN ,_, the_DT Sp_NNP can_MD
+        be_VB increased_VBN to_TO >_NN 95_CD %_NN with_IN only_RB minor_JJ reductions_NNS in_IN Se_NNP ,_,
+        however_RB ,_, the_DT trade-off_NN is_VBZ an_DT increase_NN in_IN the_DT number_NN of_IN
+        genes_NNS excluded_VBN from_IN analyses_NNS (_( Table_NNP 1_LS )_) ._. If_IN Sp_NNP and_CC Se_NNP are_VBP
+        plotted_VBD as_IN a_DT function_NN of_IN the_DT thresholds_NNS ,_, the_DT intersection_NN
+        point_NN of_IN the_DT two_CD curves_NNS indicates_VBZ maximum_NN Sp_NNP and_CC Se_NNP which_WDT
+        can_MD be_VB directly_RB read_VBN from_IN the_DT graph_NN (_( Figure_NN 2_LS )_) ._. As_IN the_DT
+        criterion_NN for_IN a_DT positive_JJ test_NN becomes_VBZ more_RBR stringent_JJ ,_, the_DT
+        point_NN on_IN the_DT curve_NN corresponding_JJ to_TO Sp_NNP and_CC Se_NNP (_( point_NN c_SYM ,_,
+        Figure_NN 3_CD a_SYM ;_: point_NN d_SYM ,_, Figure_NN 3_CD b_SYM )_) moves_NNS down_RB and_CC to_TO the_DT left_NN
+        (_( lower_JJR Se_NNP ,_, higher_JJR Sp_NNP )_) ;_: if_IN less_JJR evidence_NN is_VBZ required_VBN for_IN a_DT
+        positive_JJ test_NN ,_, the_DT point_NN on_IN the_DT curve_NN corresponding_JJ to_TO Sp_NNP
+        and_CC Se_NNP (_( point_NN a_DT ,_, Figure_NN 3_CD aand_NN 3_CD b_SYM )_) moves_NNS up_RB and_CC to_TO the_DT right_NN
+        (_( lower_JJR Sp_NNP ,_, higher_JJR Se_NNP )_) ._. The_DT area_NN under_IN the_DT ROC_NNP curve_NN (_( Figure_NN
+        3_CD ,_, Table_NNP 2_LS )_) is_VBZ a_DT measure_NN of_IN how_WRB well_RB positive_JJ and_CC negative_JJ
+        signal_NN can_MD be_VB distinguished_VBN in_IN individual_JJ microarray_NN
+        experiments_NNS and_CC indicates_VBZ hybridization_NN quality_NN ._.
+        The_DT discriminatory_JJ power_NN of_IN a_DT threshold_NN based_VBN on_IN the_DT
+        receiver_NN operating_VBG characteristics_NNS depends_VBZ on_IN the_DT proper_JJ
+        controls_NNS included_VBN in_IN the_DT study_NN and_CC this_DT choice_NN will_MD affect_VB
+        the_DT interpretation_NN of_IN the_DT data_NNS ._. Unlike_IN spots_NNS containing_VBG
+        printed_VBN control_NN DNA_NNP (_( plant_NN ,_, bacterial_JJ ,_, or_CC viral_JJ )_) ,_, blank_JJ
+        spots_NNS printed_VBN with_IN 3_CD X_NNP SSC_NNP often_RB show_NN strong_JJ signals_NNS
+        indicating_VBG that_IN unusually_RB large_JJ amounts_NNS of_IN label_NN are_VBP
+        inexplicably_RB deposited_VBN on_IN these_DT manifestly_RB blank_JJ areas_NNS ._.
+        (_( The_DT morphology_NN of_IN SSC_NNP spots_NNS giving_VBG relatively_RB high_JJ signals_NNS
+        are_VBP quite_RB distinct_JJ from_IN spots_NNS where_WRB DNA_NNP has_VBZ been_VBN deposited_VBN ,_,
+        often_RB showing_VBG small_JJ ,_, highly_RB concentrated_VBN areas_NNS of_IN
+        fluorescence_NN ._. The_DT cause_NN of_IN this_DT fluorescence_NN is_VBZ not_RB well_RB
+        understood_VBN ._. Their_PRP$ signal_NN distribution_NN is_VBZ skewed_VBN towards_IN
+        large_JJ signals_NNS as_IN compared_VBN to_TO plant_VB ,_, bacterial_JJ ,_, and_CC viral_JJ
+        genes_NNS ;_: data_NNS not_RB shown_VBN )_) ._. Consequently_RB ,_, the_DT inclusion_NN of_IN SSC_NNP
+        spots_VBZ results_NNS in_IN a_DT considerable_JJ overlap_VB with_IN positive_JJ
+        controls_NNS resulting_VBG in_IN increased_VBN thresholds_NNS and_CC a_DT lower_JJR
+        overall_JJ discriminatory_JJ power_NN (_( Table_NNP 2_LS )_) ._.
+        To_TO illustrate_VB the_DT importance_NN of_IN signal_NN threshold_NN
+        detection_NN ,_, we_PRP categorized_VBN differentially_RB expressed_VBD genes_NNS of_IN
+        the_DT melanoma_NN study_NN [_NN 17_CD ]_NN according_VBG to_TO confidence_NN based_VBN on_IN
+        our_PRP$ predictive_JJ model_NN (_( Table_NNP 3_LS )_) ._. For_IN this_DT purpose_NN ,_, we_PRP use_VBP T_NN 
+        M_NNP as_IN the_DT threshold_NN ._. Group_NNP A_DT contains_VBZ
+        gene_NN expression_NN ratios_NNS derived_VBN from_IN signals_NNS that_WDT exceed_VBP the_DT
+        selected_VBN threshold_NN in_IN both_DT channels_NNS and_CC are_VBP assigned_VBN high_JJ
+        confidence_NN ratios_NNS ._. In_IN group_NN B_NNP ,_, either_CC Cy_NNP 3_CD or_CC Cy_NNP 5_CD signals_NNS
+        were_VBD below_IN that_DT threshold_NN ,_, whereas_IN in_IN group_NN C_NNP signals_NNS from_IN
+        both_DT channels_NNS were_VBD below_IN the_DT defined_VBN detection_NN limit_NN ._.
+        '_POS Risky_NNP '_POS absolute_JJ intensities_NNS can_MD be_VB flagged_JJ and_CC displayed_VBN
+        when_WRB further_JJ processing_VBG the_DT data_NNS (_( e_SYM ._. g_SYM ._. clustering_VBG
+        analysis_NN )_) ._.
+      
+      
+        Discussion_NNP
+        Microarray_NNP data_NNS are_VBP generated_VBN from_IN multi-step_JJ
+        biochemical_JJ reactions_NNS ,_, scanning_VBG /_NN data_NNS collection_NN ,_, image_NN
+        analysis_NN and_CC data_NNS processing_NN ._. This_DT process_NN is_VBZ inherently_RB
+        prone_JJ to_TO variability_NN that_WDT affects_VBZ the_DT specificity_NN and_CC
+        sensitivity_NN of_IN the_DT assay_NN ,_, thus_RB requiring_VBG evaluation_NN of_IN each_DT
+        microarray_NN data_NN set_VBD [_NN 9_CD 10_CD 12_CD ]_NN ._. In_IN order_NN to_TO calibrate_NN the_DT
+        sensitivity_NN and_CC specificity_NN of_IN the_DT output_NN data_NN ,_, appropriate_JJ
+        statistical_JJ tools_NNS applied_VBN to_TO reference_NN sequences_NNS composed_VBN
+        of_IN positive_JJ and_CC negative_JJ controls_NNS may_MD be_VB used_VBN to_TO quality_NN
+        control_NN data_NNS from_IN a_DT given_VBN hybridization_NN ._. We_PRP argue_VBP that_IN any_DT
+        procedure_NN which_WDT uses_VBZ raw_JJ intensity_NN ratios_NNS alone_RB to_TO infer_NN
+        differential_NN expression_NN may_MD be_VB inefficient_JJ and_CC thus_RB may_MD
+        lead_VB to_TO excessive_JJ errors_NNS ._.
+        Since_IN ratios_NNS are_VBP simply_RB the_DT result_NN of_IN uneven_JJ signal_NN
+        distributions_NNS between_IN Cy_NNP 5_CD and_CC Cy_NNP 3_CD channels_NNS ,_, analyzing_VBG these_DT
+        distributions_NNS will_MD help_VB interpret_VB the_DT biological_JJ relevance_NN
+        of_IN an_DT observed_VBN ratio_NN ._. Signals_NNP are_VBP the_DT result_NN of_IN specific_JJ
+        and_CC non-specific_JJ binding_VBG when_WRB a_DT complex_JJ probe_NN DNA_NNP mixture_NN
+        is_VBZ incubated_JJ on_IN the_DT slide_NN surface_NN containing_VBG target_NN DNA_NNP ._.
+        The_DT quality_NN of_IN DNA_NNP microarray_NN data_NNS rests_VBZ on_IN the_DT ability_NN to_TO
+        measure_VB non-specific_JJ components_NNS of_IN a_DT spot_NN signal_NN and_CC
+        eliminate_VB them_PRP from_IN ratio_NN analysis_NN ._. Such_JJ a_DT component_NN
+        analysis_NN on_IN spotted_VBD DNA_NNP microarrays_NNS is_VBZ not_RB possible_JJ with_IN
+        today_NN 's_POS technology_NN and_CC the_DT proportion_NN of_IN non-specific_JJ
+        binding_JJ will_MD vary_VB for_IN each_DT spot_NN because_IN of_IN competitive_JJ
+        binding_VBG in_IN the_DT presence_NN of_IN sequence_NN specific_JJ hybridization_NN
+        (_( Note_VB :_: GeneChip_NNP arrays_NNS from_IN Affymetrix_NNP using_VBG perfect_JJ vs_NNS ._.
+        mismatch_NN oligonucleotide_NN pairs_NNS do_VBP ,_, to_TO a_DT certain_JJ extent_NN ,_,
+        measure_NN the_DT non-specific_JJ binding_JJ component_NN of_IN every_DT
+        sequence_NN ;_: see_VB technical_JJ note_NN discussing_VBG probe_NN length_NN and_CC
+        performance_NN ,_,
+        http_NN :_: /_NN /_NN www_NN ._. affymetrix_NN ._. com_NN /_NN support_NN /_NN technical_JJ /_NN technotes_NNS /_NN 25_CD mer_NN __NN technote_NN ._. pdf_NN )_) ._.
+        Since_IN the_DT influence_NN of_IN non-specific_JJ binding_JJ is_VBZ more_RBR severe_JJ
+        for_IN probes_NNS where_WRB no_DT or_CC little_RB specific_JJ hybridization_NN occurs_VBZ
+        [_NN 8_CD ]_NN ,_, we_PRP treat_VBP the_DT problem_NN as_IN one_CD of_IN detecting_VBG a_DT
+        threshold_NN value_NN that_WDT is_VBZ both_DT determined_VBN by_IN the_DT highest_JJS
+        signals_NNS attributable_JJ to_TO spots_NNS representing_VBG non-specific_JJ
+        hybridization_NN and_CC the_DT lowest_JJS signals_NNS from_IN spots_NNS where_WRB
+        sequence_NN specific_JJ hybridization_NN must_MD be_VB assumed_VBN ._. Simply_RB
+        put_VB ,_, we_PRP determine_VBP a_DT threshold_NN separating_VBG specific_JJ from_IN
+        non-specific_JJ hybridization_NN assuming_VBG that_IN the_DT former_NN usually_RB
+        results_VBZ in_IN stronger_JJR signals_NNS than_IN the_DT latter_JJ [_NN 18_CD ]_NN ._. A_DT
+        similar_JJ approach_NN has_VBZ been_VBN reported_VBN for_IN Affymetrix_NNP GeneChip_NNP
+        arrays_NNS ,_, so_RB called_VBN '_POS LUT_NNP based_VBD scoring_VBG system_NN '_'' [_NN 8_CD ]_NN (_( tables_NNS
+        to_TO check_VB noise_NN level_NN of_IN particular_JJ chips_NNS or_CC noise_NN filtering_VBG
+        look_NN up_RP tables_NNS )_) ._.
+        Methods_NNP used_VBD to_TO determine_VB a_DT signal_NN threshold_NN include_VBP the_DT
+        use_NN of_IN arbitrary_JJ fluorescence_NN intensities_NNS [_NN 19_CD ]_NN ,_, relative_JJ
+        errors_NNS in_IN Cy_NNP 3_CD /_NN Cy_NNP 5_CD ratios_NNS [_NN 9_CD 20_CD 21_CD ]_NN or_CC certain_JJ
+        signal-to-background_JJ ratios_NNS [_NN 22_CD ]_NN ._. However_RB ,_, these_DT methods_NNS
+        lack_VBP information_NN about_IN the_DT specificity_NN and_CC sensitivity_NN of_IN
+        the_DT threshold_NN ,_, which_WDT are_VBP crucial_JJ parameters_NNS for_IN estimation_NN
+        of_IN the_DT diagnostic_JJ accuracy_NN of_IN microarray_NN hybridizations_NNS ._. To_TO
+        select_VB a_DT threshold_NN ,_, we_PRP have_VBP exploited_VBN a_DT reference_NN set_NN of_IN
+        positive_JJ and_CC negative_JJ control_NN genes_NNS based_VBN on_IN presence_NN or_CC
+        absence_NN of_IN their_PRP$ cognate_NN labeled_VBD cDNAs_NNS in_IN the_DT hybridization_NN
+        mix_NN ._.
+        Positive_JJ controls_NNS may_MD be_VB spiked_JJ RNAs_NNP from_IN non-homologous_JJ
+        species_NNS or_CC transcripts_NNS known_VBN to_TO be_VB expressed_VBN in_IN the_DT sample_NN
+        i_NNP ._. e_SYM ._. housekeepers_NNS [_NN 13_CD 23_CD ]_NN ._. Signals_NNP from_IN positive_JJ
+        controls_NNS should_MD cover_VB the_DT range_NN of_IN test_NN signals_NNS ._. This_DT can_MD
+        be_VB achieved_VBN by_IN appropriate_JJ spiking_VBG and_CC /_NN or_CC selection_NN of_IN
+        housekeeping_NN genes_NNS that_WDT fulfill_VBP this_DT criterion_NN ._.
+        The_DT negative_JJ controls_NNS should_MD be_VB chosen_VBN to_TO lack_NN sequence_NN
+        homology_NN to_TO test_VB genes_NNS ,_, however_RB ,_, choosing_VBG appropriate_JJ
+        control_NN sequences_NNS for_IN a_DT ROC_NNP plot_NN analysis_NN is_VBZ crucial_JJ :_: we_PRP
+        conclude_VBP that_IN SSC_NNP spots_NNS show_VBP a_DT distinct_JJ signal_NN pattern_NN
+        different_JJ from_IN plant_NN ,_, bacterial_JJ and_CC viral_JJ DNA_NNP deposits_NNS ._.
+        Unlike_IN spots_NNS containing_VBG control_NN DNA_NNP ,_, blank_JJ spots_NNS are_VBP not_RB
+        representative_NN of_IN non-specific_JJ hybridization_NN to_TO cellular_JJ
+        probe_NN DNA_NNP ,_, do_VBP not_RB behave_VB well_RB as_IN control_NN spots_NNS ,_, and_CC should_MD
+        be_VB disregarded_VBD for_IN threshold_NN detection_NN on_IN custom_NN
+        arrays_NNS ._.
+        The_DT robustness_NNS of_IN ROC_NNP analysis_NN to_TO yield_VB T_NN 
+        M_NNP and_CC ROC_NNP area_NN values_NNS to_TO discriminate_JJ
+        '_POS good_JJ '_POS from_IN '_POS poor_JJ '_POS microarray_NN hybridizations_NNS relies_VBZ on_IN the_DT
+        relative_JJ positions_NNS of_IN signal_NN ranges_NNS from_IN positive_JJ and_CC
+        negative_JJ controls_NNS as_RB well_RB as_IN from_IN target_NN genes_NNS ._. We_PRP can_MD
+        imagine_VB two_CD szenarios_NNS making_VBG ROC_NNP analysis_NN inappropriate_JJ for_IN
+        determination_NN of_IN threshold_NN and_CC /_NN or_CC microarray_NN hybridization_NN
+        quality_NN :_: (_( i_NNP )_) If_IN the_DT set_NN of_IN positive_JJ controls_NNS is_VBZ in_IN the_DT high_JJ
+        signal_NN range_NN ,_, ROC_NNP analysis_NN will_MD yield_VB a_DT higher_JJR T_NN 
+        M_NNP and_CC ROC_NNP areas_NNS close_RB to_TO 1_CD ._. 0_CD (_( indicating_VBG
+        good_JJ microarray_NN hybridization_NN )_) because_IN positive_JJ and_CC
+        negative_JJ signals_NNS are_VBP well_RB separated_JJ ,_, irrespective_RB of_IN the_DT
+        distance_NN between_IN the_DT greatest_JJS observation_NN in_IN the_DT negative_JJ
+        and_CC the_DT lowest_JJS observation_NN in_IN the_DT positive_JJ sample_NN ._.
+        Consequently_RB ,_, a_DT large_JJ portion_NN of_IN target_NN genes_NNS will_MD be_VB
+        discarded_VBN because_IN of_IN the_DT relatively_RB high_JJ T_NN 
+        M_NNP ._. (_( ii_NN )_) Alternatively_RB ,_, if_IN the_DT positive_JJ
+        controls_NNS are_VBP spiked_JJ below_IN the_DT detection_NN limit_NN of_IN
+        microarrays_NNS (_( i_NNP ._. e_SYM ._. typically_RB 1_CD :_: 500_CD ,_, 000_CD wt_NN /_NN wt_NN )_) ,_, their_PRP$ signal_NN
+        range_NN may_MD resemble_VB the_DT one_CD from_IN negative_JJ controls_NNS ._. This_DT
+        scenario_NN will_MD produce_VB a_DT low_JJ T_NN 
+        M_NNP and_CC ROC_NNP areas_NNS close_RB to_TO 0_CD ._. 5_CD falsley_NN
+        indicating_VBG '_POS poor_JJ '_POS hybridization_NN ._.
+        The_DT overall_JJ performance_NN of_IN individual_JJ microarray_NN
+        hybridizations_NNS can_MD be_VB assessed_VBN by_IN the_DT position_NN of_IN the_DT
+        receiver_NN operating_VBG characteristic_JJ line_NN (_( Figure_NN 3_LS )_) using_VBG one_CD
+        single_JJ parameter_NN :_: the_DT area_NN under_IN the_DT ROC_NNP curve_NN (_( Table_NNP 2_LS )_) ._.
+        Poor_JJ microarray_NN hybridizations_NNS have_VBP lines_NNS close_RB to_TO the_DT
+        rising_VBG diagonal_NN (_( or_CC values_NNS ~_NN 0_CD ._. 5_LS )_) ,_, whereas_IN the_DT lines_NNS for_IN
+        '_POS perfect_JJ '_POS hybridizations_NNS would_MD rise_VB steeply_RB and_CC pass_VB
+        closely_RB to_TO the_DT top_NN left_JJ hand_NN corner_NN (_( or_CC values_NNS ~_NN 1_CD ._. 0_CD )_) ,_, where_WRB
+        both_DT ,_, the_DT specificity_NN and_CC sensitivity_NN are_VBP 100_CD %_NN ._. In_IN
+        high-throughput_JJ applications_NNS such_JJ as_IN routine_JJ diagnostic_JJ
+        examinations_NNS ,_, where_WRB a_DT large_JJ number_NN of_IN hybridizations_NNS may_MD be_VB
+        performed_VBN using_VBG a_DT standard_JJ microarray-design_JJ ,_, the_DT ROC-plot_NNP
+        area_NN may_MD be_VB used_VBN as_IN a_NNP '_POS hybridization_NN quality_NN checkpoint_NN '_'' to_TO
+        either_CC accept_VB or_CC discard_VB individual_JJ microarray_NN
+        hybridizations_NNS (_( for_IN example_NN 0_CD ._. 990_CD for_IN array_NN 1_CD and_CC 2_CD ,_, Table_NNP
+        2_LS )_) ._. The_DT area_NN under_IN the_DT ROC_NNP curve_NN represents_VBZ a_DT summary_NN
+        statistic_NN of_IN the_DT overall_JJ performance_NN of_IN individual_JJ
+        microarray_NN hybridizations_NNS ._. A_DT modification_NN of_IN the_DT Wilcoxon_NNP
+        rank-sum_JJ procedure_NN may_MD then_RB be_VB used_VBN as_IN a_DT statistical_JJ test_NN
+        to_TO determine_VB whether_IN two_CD ROC_NNP curves_NNS are_VBP significantly_RB
+        different_JJ [_NN 15_CD ]_NN ._.
+        Among_IN 25_CD thresholds_NNS calculated_VBN here_RB we_PRP have_VBP compared_VBN Sp_NNP
+        and_CC Se_NNP of_IN 3_CD commonly_RB used_VBN cut-offs_JJ with_IN the_DT ROC_NNP
+        analysis-derived_JJ threshold_NN T_NN 
+        M_NNP (_( Table_NNP 1_LS )_) ._. The_DT median_JJ or_CC mean_NN of_IN a_DT
+        negative_JJ control_NN group_NN is_VBZ regarded_VBN an_DT adequate_JJ measure_NN for_IN
+        non-specific_JJ hybridization_NN [_NN 13_CD ]_NN ,_, however_RB ,_, due_JJ to_TO low_JJ
+        specificity_NN (_( ~_NN 50_CD %_NN )_) we_PRP conclude_VBP that_IN neither_DT thresholds_NNS
+        should_MD be_VB used_VBN if_IN maximum_NN specificity_NN is_VBZ required_VBN ._. In_IN such_JJ
+        a_DT case_NN ,_, we_PRP find_VBP that_IN the_DT widely_RB used_VBN cut-off_JJ value_NN defined_VBN
+        as_IN the_DT mean_NN plus_CC two_CD standard_JJ deviations_NNS of_IN the_DT negative_JJ
+        reference_NN sample_NN may_MD be_VB used_VBN adequately_RB for_IN DNA_NNP
+        microarrays_NNS ._. The_DT underlying_VBG rationale_NN of_IN using_VBG this_DT
+        threshold_NN is_VBZ to_TO establish_VB a_DT cut-off_JJ value_NN providing_VBG a_DT
+        specificity_NN of_IN 97_CD ._. 5_LS %_NN [_NN 24_CD 25_CD ]_NN ._. In_IN our_PRP$ own_JJ example_NN (_( Figure_NN
+        1_LS )_) skewness_NNS to_TO the_DT left_NN makes_VBZ the_DT T_NN 
+        X_NNP 2_CD SD_NNP overly_RB conservative_NN ,_, which_WDT will_MD
+        sacrifice_VB sensitivity_NN unnecessarily_RB ._. Hence_RB ,_, T_NN 
+        X_NNP 2_CD SD_NNP may_MD be_VB inadequate_JJ and_CC to_TO adjust_VB the_DT
+        sensitivity_NN one_PRP should_MD use_VB T_NN 
+        M_NNP ._. Most_JJS importantly_RB ,_, the_DT T_NN 
+        X_NNP 2_CD SD_NNP procedure_NN does_VBZ not_RB account_VB for_IN the_DT
+        sensitivity_NN of_IN the_DT threshold_NN ._. Although_IN the_DT ROC-analysis_NNP
+        derived_VBD cut-off_JJ resembles_VBZ closely_RB the_DT cut-off_JJ defined_VBN as_IN
+        the_DT mean_JJ +_NN 2_CD SD_NNP ,_, it_PRP is_VBZ entirely_RB possible_JJ that_IN choosing_VBG a_DT
+        finer-grained_JJ partition_NN of_IN the_DT signal_NN space_NN would_MD alter_VB the_DT
+        relative_JJ positions_NNS of_IN theses_NNS two_CD points_NNS ._. Likewise_RB ,_, this_DT may_MD
+        be_VB a_DT characteristic_NN for_IN the_DT 2_CD exemplary_JJ microarrays_NNS ._.
+        Usually_RB ,_, the_DT cut-off_JJ selection_NN procedure_NN is_VBZ an_DT informed_VBN
+        decision_NN based_VBN on_IN the_DT motivation_NN of_IN the_DT individual_NN to_TO
+        accept_VB false_JJ positives_NNS (_( high_JJ Sp_NNP )_) or_CC false_JJ negatives_NNS (_( high_JJ
+        Se_NNP )_) that_WDT takes_VBZ into_IN account_NN whether_IN it_PRP is_VBZ crucial_JJ to_TO
+        exclude_VB any_DT false_JJ positives_NNS (_( high_JJ Sp_NNP )_) or_CC to_TO cover_VB the_DT
+        broadest_JJS signal_NN range_NN possible_JJ (_( high_JJ Se_NNP )_) ._. Which_WDT cutoff_NN to_TO
+        use_VB depends_VBZ on_IN the_DT objective_NN of_IN the_DT experiment_NN :_: If_IN one_CD
+        needs_VBZ to_TO make_VB sure_JJ that_IN the_NNP '_POS present_JJ '_POS or_CC '_POS absent_JJ '_POS call_NN for_IN
+        a_DT particular_JJ gene_NN is_VBZ correct_JJ ,_, a_DT cut-off_JJ with_IN high_JJ Sp_NNP should_MD
+        be_VB chosen_VBN ,_, whereas_IN if_IN one_CD is_VBZ willing_JJ to_TO accept_VB
+        false-positives_JJ where_WRB signals_NNS are_VBP low_JJ ,_, high_JJ Se_NNP will_MD be_VB the_DT
+        driving_VBG force_NN ._.
+        The_DT signal_NN intensity_NN is_VBZ the_DT most_RBS critical_JJ parameter_NN that_WDT
+        influences_VBZ the_DT informative_JJ value_NN of_IN ratio_NN estimates_NNS [_NN 26_CD ]_NN
+        ._. Therefore_RB ,_, ratios_NNS should_MD be_VB judged_VBN based_VBN on_IN the_DT absolute_JJ
+        signal_NN intensity_NN of_IN each_DT gene_NN ._. To_TO diagnose_NN the_DT metastatic_JJ
+        potential_NN of_IN highly_RB versus_CC poorly_RB invasive_JJ melanoma_NN cells_NNS
+        we_PRP compared_VBD their_PRP$ gene_NN expression_NN profile_NN with_IN our_PRP$
+        metastasis_NNS chip_NN ,_, which_WDT contains_VBZ genes_NNS critical_JJ for_IN aspects_NNS
+        of_IN the_DT metastatic_JJ process_NN ,_, including_VBG tumor_NN cell_NN motility_NN
+        and_CC the_DT ability_NN to_TO form_VB primitive_JJ tubular_JJ networks_NNS [_NN 17_CD 27_CD
+        ]_NN ._. Each_DT ratio_NN was_VBD tested_VBN for_IN the_DT Null_NNP hypothesis_NNS that_IN
+        there_EX is_VBZ no_DT difference_NN between_IN the_DT means_NNS of_IN the_DT ranks_NNS of_IN
+        the_DT Cy_NNP 5_CD and_CC Cy_NNP 3_CD signals_NNS over_IN 6_CD replicate_VB spots_NNS representing_VBG
+        a_DT unique_JJ sequence_NN ._. At_IN signal_NN intensities_NNS below_IN the_DT
+        threshold_NN with_IN maximum_NN specificity_NN and_CC sensitivity_NN some_DT
+        genes_NNS gave_VBD a_DT ratio_NN greater_JJR than_IN 1_CD ._. 6_CD -_: fold_VB (_( at_IN a_DT confidence_NN
+        level_NN of_IN p_NN <_NN 0_CD ._. 05_CD )_) ._. In_IN such_JJ a_DT case_NN ,_, however_RB ,_, ratios_NNS are_VBP
+        not_RB optimal_NN estimators_NNS because_IN the_DT low_JJ denominator_NN value_NN
+        introduces_VBZ large_JJ artifacts_NNS [_NN 8_CD ]_NN ._. Therefore_RB we_PRP sought_VBD to_TO
+        determine_VB ratio_NN confidence_NN categories_NNS based_VBN on_IN the_DT absolute_JJ
+        signal_NN intensities_NNS [_NN 13_CD ]_NN ._. Assuming_VBG that_IN the_DT ROC-analysis_NNP
+        derived_VBD threshold_NN is_VBZ an_DT '_POS appropriate_JJ '_POS cut-off_JJ for_IN
+        distinguishing_VBG absent_JJ /_NN present_JJ genes_NNS ,_, the_DT proposed_VBN
+        '_POS confidence_NN categories_NNS '_POS may_MD be_VB interpreted_VBN as_IN follows_VBZ :_:
+        (_( A_DT )_) The_DT gene_NN is_VBZ present_JJ in_IN both_DT samples_NNS ,_, and_CC this_DT is_VBZ the_DT
+        best_JJS estimate_NN of_IN the_DT true_JJ ratio_NN ,_, while_IN further_JJ statistical_JJ
+        evaluation_NN should_MD be_VB applied_VBN to_TO take_VB into_IN account_NN the_DT
+        variability_NN of_IN the_DT measurements_NNS ._.
+        (_( B_NNP )_) The_DT gene_NN is_VBZ present_JJ in_IN one_CD sample_NN and_CC absent_JJ in_IN the_DT
+        other_JJ ._. Ratios_NNP are_VBP meaningless_JJ ,_, but_CC this_DT is_VBZ still_RB an_DT
+        extremely_RB significant_JJ biological_JJ result_NN !_.
+        (_( C_NNP )_) The_DT gene_NN is_VBZ absent_JJ in_IN both_DT samples_NNS ._. Not_RB only_RB are_VBP the_DT
+        ratios_NNS meaningless_JJ ,_, but_CC so_RB are_VBP the_DT intensity_NN estimates_NNS ._.
+        As_IN a_DT result_NN of_IN threshold_NN setting_NN ,_, certain_JJ genes_NNS may_MD be_VB
+        falsely_RB included_VBN (_( =_SYM false_JJ positives_NNS )_) or_CC ,_, less_RBR frequently_RB [_NN 5_CD
+        ]_NN ,_, falsely_RB discarded_VBN (_( =_SYM false_JJ negatives_NNS )_) from_IN further_JJ
+        analysis_NN (_( i_NNP ._. e_SYM ._. ratio_NN calculations_NNS ,_, clustering_VBG analysis_NN ,_,
+        etc_FW ._. )_) as_IN exemplified_VBN here_RB with_IN the_DT microarray_NN experiment_NN
+        for_IN investigating_VBG invasion_NN in_IN cancer_NN ._. The_DT ROC-derived_NNP
+        threshold_NN correctly_RB classifies_VBZ the_DT signal_NN for_IN Laminin-_NNP 5_CD ,_, γ_NN 2_CD
+        as_IN '_POS absent_JJ '_POS ,_, whereas_IN the_DT mean-_NN or_CC median_JJ -_: derived_VBN
+        thresholds_NNS would_MD produce_VB a_DT false-positive_JJ result_NN ._. Since_IN
+        this_DT gene_NN product_NN plays_VBZ a_DT significant_JJ role_NN in_IN vasculogenic_JJ
+        mimicry_NN [_NN 17_CD ]_NN ._. Classifying_NNP the_DT expression_NN level_NN is_VBZ
+        biologically_RB crucial_JJ ._. ROC_NNP analysis_NN leads_VBZ to_TO a_DT result_NN (_( Type_NNP
+        B_NNP ,_, above_IN )_) that_WDT is_VBZ in_IN line_NN with_IN data_NNS obtained_VBN otherwise_RB ,_,
+        whereas_IN both_DT mean-_NN or_CC median_JJ -_: derived_VBN threshold_NN would_MD have_VB
+        resulted_VBN in_IN accepting_VBG falsely_RB a_DT change_NN (_( type_NN A_DT ,_, above_IN )_) in_IN
+        Laminin-_NNP 5_CD ,_, γ_NN 2_CD expression_NN ._.
+        Collectively_RB ,_, the_DT present_JJ study_NN demonstrated_VBN that_IN
+        microarray-derived_JJ signals_NNS from_IN positive_JJ and_CC negative_JJ
+        controls_NNS may_MD be_VB used_VBN to_TO compute_VB accurately_RB type_NN I_PRP and_CC type_NN
+        II_NNP errors_NNS for_IN a_DT series_NN of_IN signal_NN thresholds_NNS ._. We_PRP have_VBP
+        introduced_VBN a_DT new_JJ model_NN for_IN signal_NN threshold_NN determination_NN
+        for_IN gene_NN expression_NN microarray_NN experiments_NNS that_WDT greatly_RB
+        eases_VBZ the_DT interpretation_NN and_CC comparison_NN of_IN these_DT data_NNS ._. This_DT
+        model_NN is_VBZ based_VBN on_IN analysis_NN of_IN signal_NN intensities_NNS and_CC
+        distributions_NNS of_IN a_DT reference_NN set_NN of_IN positive_JJ and_CC negative_JJ
+        controls_NNS included_VBD on_IN each_DT microarray_NN ._. It_PRP provides_VBZ a_DT
+        framework_NN for_IN determination_NN of_IN detection_NN limits_NNS ,_, confidence_NN
+        about_IN fluorescent_NN ratios_NNS and_CC for_IN pre-processing_JJ data_NNS for_IN
+        subsequent_JJ data_NNS analyses_NNS ,_, such_JJ as_IN cluster_NN analyses_NNS [_NN 23_CD 28_CD
+        ]_NN ._.
+      
+      
+        Materials_NNS &_CC Methods_NNP
+        
+          Synthesis_NNP of_IN PCR_NNP products_NNS
+          IMAGE_NNP cDNA_NN clones_NNS representing_VBG 72_CD human_JJ genes_NNS involved_VBN
+          in_IN cell_NN migration_NN were_VBD purchased_VBN from_IN Research_NNP Genetics_NNP
+          (_( Huntsville_NNP ,_, AL_NNP )_) and_CC sequence_NN verified_VBN in-house_JJ ._. Control_NN
+          cDNA_NN clones_NNS (_( GenBank_NNP Accession_NNP numbers_NNS are_VBP in_IN brackets_NNS )_)
+          from_IN 
+          Arabidopsis_NNP thaliana_NN (_( T_NN 76518_CD ,_,
+          T_NN 45394_CD ,_, H_NNP 37673_CD )_) ,_, human_JJ cytomegalovirus_JJ (_( NP_NNP __NN 039949_CD ,_,
+          NP_NNP __NN 039950_CD ,_, NP_NNP __NN 039952_CD ,_, NP_NNP __NN 039955_CD ,_, NP_NNP __NN 039971_CD ,_, NP_NNP __NN 039974_CD ,_,
+          NP_NNP __NN 039976_CD )_) 
+          E_NNP ._. coli_NNS (_( J_NNP 04423_CD :_: BioB_NNP ,_, BioC_NNP ,_, BioD_NNP )_)
+          and_CC 
+          B_NNP ._. subtilis_NNS (_( X_NNP 04603_CD ,_, M_NNP 24537_CD ,_,
+          X_NNP 17013_CD ,_, L_NNP 38424_CD )_) were_VBD provided_VBN by_IN the_DT Scripps_NNP Research_NNP
+          Institute_NNP 's_POS microarray_NN facility_NN and_CC were_VBD chosen_VBN to_TO lack_NN
+          homology_NN to_TO human_JJ sequences_NNS ._. Plasmids_NNP were_VBD prepared_VBN from_IN
+          IMAGE_NNP clones_NNS using_VBG Qiagen_NNP 's_POS (_( Santa_NNP Clara_NNP ,_, CA_NNP )_) plasmid_NN
+          mini_NN prep_NN kits_NNS following_VBG manufacturer_NN 's_POS protocols_NNS ._. All_DT
+          plasmid_NN inserts_NNS were_VBD amplified_VBN in_IN 100_CD μl_NN reactions_NNS using_VBG
+          the_DT following_NN primer_NN sequences_NNS :_:
+          M_NNP 13_CD Forward_NNP 5_CD '_POS -_: GTTTTCCCAGTCACGACGTTG-_NNP 3_CD '_''
+          M_NNP 13_CD Reverse_VBP 5_CD '_POS -_: TGAGCGGATAACAATTTCACACAG_NNP
+          PCR_NNP reactions_NNS were_VBD cycled_JJ 35_CD times_NNS under_IN the_DT following_JJ
+          conditions_NNS :_: 94_CD degrees_NNS for_IN 30_CD seconds_NNS ,_, 55_CD degrees_NNS for_IN 1_CD
+          minute_NN and_CC 72_CD degrees_NNS for_IN 2_CD minutes_NNS ._. All_DT PCR_NNP products_NNS
+          were_VBD analyzed_VBN by_IN gel_NN electrophoresis_NNS to_TO confirm_VB the_DT
+          presence_NN of_IN a_DT single_JJ band_NN ._. PCR_NNP products_NNS showing_VBG weak_JJ
+          and_CC /_NN or_CC multiple_JJ bands_NNS were_VBD reamplified_JJ using_VBG variable_JJ
+          MgCl_NNP 
+          2_CD concentrations_NNS (_( 1_CD ._. 5_LS -_: 2_CD ._. 5_LS mM_NN )_) until_IN
+          single_JJ bands_NNS were_VBD generated_VBN ._. The_DT PCR_NNP products_NNS were_VBD
+          purified_JJ using_VBG Qiagen_NNP 's_POS 96_CD -_: well_RB PCR_NNP purification_NN kit_NN
+          according_VBG to_TO manufacturer_NN 's_POS protocols_NNS ._. Purified_NNP PCR_NNP
+          products_NNS were_VBD dried_VBN down_RB and_CC resuspended_JJ in_IN 80_CD ul_NN 3_CD X_NNP SSC_NNP
+          (_( standard_JJ saline_NN citrate-_NN 1_CD X_NNP SSC_NNP =_SYM 150_CD mM_NN NaCl_NNP ,_, 15_CD mM_NN
+          sodium_NN citrate_NN )_) with_IN 0_CD ._. 01_CD %_NN sodium_NN dodecyl_NN sulfate_NN
+          (_( SDS_NNP )_) ._.
+        
+        
+          Microarray_NNP production_NN
+          Each_DT gene_NN was_VBD spotted_VBN 6_CD times_NNS at_IN various_JJ locations_NNS
+          across_IN one_CD of_IN the_DT four_CD subarrays_NNS printed_VBN on_IN each_DT glass_NN
+          slide_NN ._. DNA_NNP was_VBD printed_VBN on_IN poly-lysine_JJ coated_JJ slides_NNS using_VBG
+          a_DT custom_NN built_VBD robotic_JJ arrayer_NN in_IN the_DT TSRI_NNP 's_POS DNA_NNP
+          Microarray_NNP Core_NNP Facility_NNP ._. This_DT facility_NN houses_VBZ a_DT custom_NN
+          made_VBD spotter_NN built_VBN by_IN Robotic_NNP Labware_NNP Designs_NNS (_( Carlsbad_NNP ,_,
+          CA_NNP )_) ._. The_DT arraying_VBG instrument_NN was_VBD conceptually_RB modeled_VBN
+          after_IN that_DT of_IN Dr_NNP ._. Patrick_NNP Brown_NNP and_CC colleagues_NNS at_IN
+          Stanford_NNP University_NNP (_( details_NNS can_MD be_VB obtained_VBN from_IN :_:
+          http_NN :_: /_NN /_NN cmgm_NN ._. stanford_NN ._. edu_NN /_NN pbrown_NN /_NN array_NN ._. html_NN )_) ._. Spotting_NNP
+          tips_NNS (_( CMPB_NNP 2_LS )_) are_VBP purchased_VBN from_IN Telechem_NNP International_NNP
+          (_( San_NNP Jose_NNP ,_, CA_NNP )_) ._. Polylysine_NNP coated_JJ slides_NNS were_VBD prepared_VBN as_IN
+          described_VBN in_IN the_DT Brown_NNP lab_NN website_NN (_( see_VB above_IN )_) ._.
+        
+        
+          Preparation_NNP of_IN Cy_NNP 3_CD and_CC Cy_NNP 5_CD labeled_VBN cDNA_NN
+          probes_NNS
+          Cy_NNP 3_CD and_CC Cy_NNP 5_CD -_: labeled_VBN cDNA_NN probes_NNS were_VBD synthesized_JJ as_IN
+          described_VBN in_IN (_( 14_CD )_) Briefly_NNP ,_, 2_CD μg_NN mRNA_NN spiked_VBN with_IN 
+          B_NNP ._. subtilis_NNS RNA_NNP cocktail_NN (_( described_VBD
+          below_IN )_) at_IN indicated_VBD amounts_NNS ._. mRNA_NN was_VBD added_VBN to_TO 4_CD μg_NN of_IN
+          oligo_NN (_( dT_NN 21_CD )_) primer_NN (_( Life_NNP Technologies_NNPS ,_, Rockville_NNP ,_, MD_NNP )_) ,_,
+          DEPC_NNP water_NN was_VBD used_VBN to_TO bring_VB the_DT volume_NN to_TO 27_CD μl_NN and_CC the_DT
+          mixture_NN was_VBD incubated_JJ at_IN 65_CD °_NN C_NNP for_IN 10_CD min_NN and_CC placed_VBN on_IN
+          ice_NN ._. A_DT reaction_NN mixture_NN consisting_VBG of_IN mRNA_NN ,_, first-strand_JJ
+          buffer_NN (_( Life_NNP Technologies_NNPS )_) ,_, DTT_NNP (_( 0_CD ._. 1_LS M_NNP )_) ,_, d_SYM (_( GAT_NNP )_) TP_NNP (_( 25_CD
+          mM_NN )_) ,_, dCTP_NN (_( 1_CD mM_NN )_) ,_, Cy_NNP 3_CD -_: dCTP_NN (_( 2_CD mM_NN )_) (_( Amersham_NNP ,_, Piscataway_NNP ,_,
+          NJ_NNP )_) and_CC Superscript_NNP RT_NNP II_NNP (_( 200_CD units_NNS )_) were_VBD added_VBN and_CC
+          incubated_JJ at_IN room_NN temperature_NN for_IN 10_CD minutes_NNS and_CC then_RB at_IN
+          42_CD °_NN C_NNP for_IN 2_CD hours_NNS ._. The_DT cDNA_NN :_: mRNA_NN hybrid_NN was_VBD isolated_VBN on_IN a_DT
+          Qiaquick_NNP PCR_NNP purification_NN column_NN (_( Qiagen_NNP )_) and_CC degraded_JJ
+          after_IN addition_NN of_IN 2_CD ._. 5_CD μl_NN 1_CD N_NNP NaOH_NNP for_IN 10_CD minutes_NNS at_IN 37_CD °_NN C_NNP ._.
+          After_IN addition_NN of_IN 2_CD ._. 5_CD μl_NN 1_CD N_NNP Tris_NNP /_NN HCl_NNP (_( pH_NN 7_CD ._. 5_LS )_) ,_, labeled_VBN
+          cDNA_NN was_VBD concentrated_VBN by_IN ETOH_NNP precipitation_NN and_CC
+          resuspended_JJ in_IN 2_CD μl_NN water_NN ._.
+        
+        
+          Generation_NNP of_IN B_NNP ._. subtilisRNA_NN cocktail_NN
+          Four_CD 
+          B_NNP ._. subtilis_NNS clones_NNS containing_VBG
+          engineered_VBN polyA_NN tails_NNS were_VBD purchased_VBN as_IN plasmids_NNS from_IN
+          ATCC_NNP (_( Manassas_NNP ,_, VA_NNP ;_: ATCC_NNP No_UH ._. pglbs-lys_JJ ,_, pglbs-phe_JJ ,_,
+          pglbs-thr_JJ ,_, pglbs-dap_JJ )_) ._. Polyadenylated_NNP control_NN RNA_NNP was_VBD
+          prepared_VBN from_IN these_DT clones_NNS by_IN in-vitro_JJ transcription_NN of_IN
+          linearized_JJ plasmids_NNS using_VBG the_DT AmpliScribe_NNP transcription_NN
+          kit_NN (_( Epicenter_NNP Technologies_NNPS ,_, Madison_NNP ,_, WI_NNP )_) following_VBG the_DT
+          manufacturer_NN 's_POS instructions_NNS ._. The_DT 
+          B_NNP ._. subtilis_NNS control_VBP cocktail_NN
+          contained_VBD equal_JJ proportions_NNS (_( wt_NN /_NN wt_NN )_) of_IN each_DT RNA_NNP species_NNS
+          and_CC was_VBD spiked_JJ into_IN cDNA_NN reactions_NNS at_IN 125_CD pg_NN /_NN 2_CD ug_NN mRNA_NN in_IN
+          order_NN to_TO normalize_VB Cy_NNP 3_CD and_CC Cy_NNP 5_CD signals_NNS after_IN
+          scanning_VBG ._.
+        
+        
+          Hybridization_NNP ,_, image_NN processing_NN and_CC
+          normalization_NN
+          Resuspended_NNP probes_NNS were_VBD mixed_VBN with_IN 4_CD μl_NN of_IN 5_CD ×_NN
+          hybridization_NN buffer_NN (_( 20_CD ×_NN SSX_NNP ,_, 1_CD %_NN SDS_NNP )_) ,_, 1_CD μl_NN human_JJ Cot-_NNP 1_CD
+          DNA_NNP (_( 10_CD μg_NN /_NN μl_NN )_) ,_, 1_CD μl_NN polyA_NN DNA_NNP (_( 2_CD μg_NN /_NN μl_NN )_) (_( Amersham_NNP )_) and_CC 8_CD
+          μl_NN formamide_NN (_( Sigma_NNP ,_, St_NNP ._. Louis_NNP ,_, MO_NNP )_) ,_, heated_VBN to_TO 65_CD °_NN C_NNP for_IN 2_CD
+          min_NN and_CC then_RB centrifuged_JJ briefly_NN ._. Samples_NNP were_VBD hybridized_JJ
+          to_TO a_DT previously_RB prepared_VBN microarray_NN overnight_JJ at_IN 42_CD °_NN C_NNP in_IN
+          a_DT humid_JJ chamber_NN in_IN the_DT dark_NN ._. Following_VBG hybridization_NN ,_,
+          slides_NNS were_VBD washed_VBN serially_RB in_IN 2_CD ×_NN SSC_NNP ,_, 0_CD ._. 2_CD %_NN SDS_NNP ,_, once_RB in_IN
+          2_CD ×_NN SSC_NNP and_CC once_RB in_IN 0_CD ._. 2_CD ×_NN SSC_NNP for_IN 5_CD min_NN at_IN room_NN temperature_NN
+          each_DT ._. The_DT slides_NNS were_VBD then_RB air_NN dried_VBD and_CC scanned_JJ on_IN a_DT
+          ScanArray_NNP 5000_CD (_( GSI_NNP Lumonics_NNP ,_, Watertown_NNP ,_, MA_NNP )_) using_VBG the_DT
+          appropriate_JJ excitation_NN and_CC emission_NN filter_NN wavelengths_NNS
+          for_IN Cy_NNP 3_CD and_CC Cy_NNP 5_CD ._. Image_NN files_NNS were_VBD analyzed_VBN using_VBG ImaGene_NNP
+          4_CD ._. 0_CD (_( Biodiscovery_NNP )_) ._. Background_NNP subtracted_VBD fluorescence_NN
+          intensities_NNS were_VBD normalized_JJ by_IN dividing_VBG all_DT signals_NNS on_IN
+          the_DT microarray_NN by_IN the_DT median_JJ signal_NN generated_VBN by_IN the_DT four_CD
+          
+          B_NNP ._. subtilis_NNS genes_NNS 
+          dap_NN ,_, lys_NNS ,_, phe_NN and_CC 
+          thr_NN (_( n_NN =_SYM 96_CD =_SYM 4_CD ×_NN 24_CD )_) [_NN 29_CD 30_CD 31_CD ]_NN
+          ._. ;_: for_IN reviews_NNS about_IN current_JJ normalization_NN strategies_NNS see_VBP
+          [_NN 10_CD 23_CD ]_NN ._.
+        
+        
+          ROC_NNP analysis_NN
+          
+            Steps_VBZ for_IN construction_NN of_IN the_DT ROC_NNP curves_NNS
+            1_LS :_: Divide_VB the_DT positive_JJ and_CC negative_JJ control_NN signals_NNS
+            arithmetically_RB into_IN an_DT appropriate_JJ number_NN of_IN intervals_NNS
+            (_( e_SYM ._. g_SYM ._. 20_CD -_: 30_CD )_) with_IN the_DT resulting_VBG limits_VBZ termed_VBD
+            '_POS thresholds_NNS '_POS (_( T_NN 
+            j_NN )_) ._. Alternatively_RB ,_, each_DT observed_VBN
+            measurement_NN point_NN (_( i_NNP ._. e_SYM ._. signal_NN from_IN positive_JJ and_CC
+            negative_JJ controls_NNS )_) may_MD be_VB used_VBN as_IN Tj_NNP ._. (_( Scott_NNP ,_, DW_NNP ;_: 1976_CD ._.
+            Nonparametric_NNP Probability_NNP Density_NNP Estimation_NNP by_IN
+            Optimization_NNP Theoretic_NNP Techniques_NNP ,_, Technical_NNP report_NN
+            TR_NNP 476_CD -_: 131_CD -_: 1_CD ,_,
+            http_NN :_: /_NN /_NN www_NN ._. stat_NN ._. rice_NN ._. edu_NN /_NN stat_NN /_NN techr_NN ._. html_NN )_)
+            2_LS :_: Specificity_NNP Sp_NNP 
+            j_NN and_CC Sensitivity_NNP Se_NNP 
+            j_NN obtained_VBN with_IN each_DT threshold_NN value_NN
+            T_NN 
+            j_NN are_VBP calculated_VBN as_IN the_DT proportion_NN
+            of_IN positive_JJ results_NNS in_IN the_DT positive_JJ and_CC negative_JJ
+            results_NNS in_IN the_DT negative_JJ reference_NN group_NN ,_, respectively_RB ._.
+            Note_VB that_IN these_DT calculations_NNS are_VBP estimates_NNS of_IN type_NN I_PRP
+            and_CC type_NN II_NNP errors_NNS (_( equivalent_JJ to_TO α_NN and_CC β_NN errors_NNS )_) for_IN
+            each_DT threshold_NN ._.
+            3_LS :_: Draw_NNP a_DT ROC_NNP curve_NN by_IN plotting_VBG the_DT false_JJ positive_JJ
+            rate_NN or_CC (_( 100_CD -_: specificity_NN )_) on_IN the_DT x-axis_JJ ._. The_DT y-axis_JJ
+            shows_VBZ the_DT true_JJ positive_JJ rate_NN or_CC sensitivity_NN ._. The_DT area_NN
+            under_IN the_DT ROC_NNP plot_NN is_VBZ an_DT estimator_NN of_IN the_DT
+            discriminatory_JJ power_NN of_IN selecting_VBG a_DT cut-off_JJ and_CC varies_VBZ
+            from_IN array_NN to_TO array_NN ._. The_DT area_NN of_IN the_DT ROC_NNP plot_NN was_VBD
+            calculated_VBN as_IN the_DT sum_NN of_IN
+            Area_NNP =_SYM Σ_NN {_( [_NN α_NN 
+            t_NN (_( n_NN )_) -_: (_( α_NN 
+            t_NN (_( n_NN +_NN 1_LS )_) )_) ]_NN /_NN [_NN 1_CD -_: β_NN 
+            t_NN (_( n_NN )_) ]_NN }_)
+            where_WRB t_NN (_( n_NN )_) denotes_NNS the_DT threshold_NN n_NN =_SYM 1_CD ,_, 2_CD ,_, ._. ._. ._. 22_CD ,_, α_NN =_SYM
+            alpha_NN error_NN ,_, and_CC β_NN =_SYM beta_NN error_NN ._. (_( For_IN a_DT detailed_VBN
+            description_NN of_IN ROC-area_NNP calculation_NN :_: [_NN 15_CD 16_CD ]_NN )_) ._. A_DT sum_NN
+            of_IN 0_CD ._. 5_CD indicates_VBZ that_IN negative_JJ and_CC positive_JJ test_NN groups_NNS
+            cannot_NN be_VB distinguished_VBN ._. A_DT ROC_NNP curve_NN representing_VBG a_DT
+            parameter_NN with_IN no_DT discrimination_NN at_IN all_DT is_VBZ a_DT 45_CD °_NN
+            diagonal_NN line_NN from_IN the_DT left_NN lower_JJR corner_NN (_( 0_CD %_NN true_JJ
+            positive_JJ rate_NN and_CC 0_CD %_NN false_JJ positive_JJ rate_NN )_) to_TO the_DT upper_JJ
+            right_JJ corner_NN (_( 100_CD %_NN true_JJ positive_JJ rate_NN and_CC 100_CD %_NN false_JJ
+            positive_JJ rate_NN )_) with_IN an_DT area_NN under_IN the_DT curve_NN of_IN 0_CD ._. 5_CD ._. A_DT
+            parameter_NN with_IN no_DT overlap_VB between_IN the_DT two_CD conditions_NNS
+            will_MD discriminate_JJ perfectly_RB and_CC has_VBZ an_DT ROC_NNP curve_NN
+            passing_VBG along_RB the_DT y-axis_JJ to_TO the_DT upper_JJ left_JJ corner_NN (_( 100_CD %_NN
+            true_JJ positive_JJ rate_NN and_CC 0_CD %_NN false_JJ positive_JJ rate_NN )_) to_TO end_VB
+            again_RB in_IN the_DT upper_JJ right_JJ corner_NN with_IN an_DT area_NN under_IN the_DT
+            curve_NN of_IN 1_CD ._. 0_CD ._. Software_NNP for_IN ROC_NNP analysis_NN is_VBZ available_JJ
+            commercially_RB or_CC as_IN spreadsheet_NN calculation_NN macros_NNS [_NN 24_CD
+            ]_NN ._.
+          
+        
+      
+    
+  

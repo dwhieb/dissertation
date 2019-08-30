@@ -1,0 +1,692 @@
+
+  
+    
+      
+        Background_NNP
+        Microarrays_NNP have_VBP become_VBN standard_JJ tools_NNS for_IN gene_NN
+        expression_NN analysis_NN as_IN the_DT messenger_NN RNA_NNP levels_NNS of_IN
+        thousands_NNS of_IN genes_NNS can_MD be_VB measured_VBN in_IN one_CD assay_NN ._. In_IN a_DT
+        standard_JJ microarray_NN experiment_NN ,_, total_JJ RNA_NNP or_CC mRNA_NN is_VBZ
+        extracted_VBN from_IN cells_NNS or_CC tissue_NN ,_, labeled_VBN by_IN reverse_NN
+        transcription_NN with_IN radioactive_JJ or_CC fluorescent-tag-labeled_JJ
+        nucleotides_NNS and_CC hybridized_JJ to_TO the_DT arrays_NNS ._. After_IN
+        hybridization_NN and_CC washing_VBG ,_, the_DT arrays_NNS are_VBP scanned_JJ and_CC the_DT
+        hybridization_NN intensities_NNS at_IN each_DT spot_NN are_VBP determined_VBN by_IN
+        image-analysis_JJ software_NN ._. Two-channel_NNP microarrays_NNS open_JJ up_RP
+        the_DT possibility_NN of_IN carrying_VBG out_IN many_JJ hybridizations_NNS in_IN
+        parallel_JJ using_VBG a_DT common_JJ reference_NN RNA_NNP ._. In_IN such_JJ experiments_NNS ,_,
+        different_JJ experimental_JJ conditions_NNS can_MD be_VB compared_VBN to_TO each_DT
+        other_JJ ._. In_IN many_JJ cases_NNS ,_, different_JJ conditions_NNS are_VBP analyzed_VBN
+        with_IN some_DT replications_NNS to_TO allow_VB variance_NN analysis_NN [_NN 1_CD ,_, 2_CD ]_NN ._.
+        This_DT procedure_NN results_NNS in_IN multivariate_NN grouped_VBN data_NNS in_IN
+        which_WDT one_CD group_NN represents_VBZ a_DT condition_NN with_IN several_JJ
+        replicates_NNS ._. Such_JJ data_NNS can_MD be_VB represented_VBN as_IN a_DT matrix_NN with_IN 
+        n_NN rows_NNS (_( genes_NNS )_) and_CC 
+        p_NN columns_NNS (_( hybridizations_NNS )_) and_CC a_DT
+        vector_NN of_IN length_NN 
+        p_NN containing_VBG the_DT group_NN labels_VBZ ._. These_DT
+        data_NNS are_VBP characteristic_NN of_IN multi-condition_JJ microarray_NN
+        experiments_NNS ._.
+        To_TO analyze_VB such_JJ data_NNS ,_, multivariate_NN statistics_NNS are_VBP
+        needed_VBN ._. Before_IN carrying_VBG out_RP the_DT analysis_NN ,_, the_DT data_NNS must_MD be_VB
+        pre-processed_JJ by_IN background_NN subtraction_NN ,_, computation_NN of_IN
+        ratios_NNS and_CC array-wise_JJ normalization_NN ._. After_IN this_DT step_NN ,_, the_DT
+        data_NNS can_MD be_VB analyzed_VBN using_VBG different_JJ multivariate_NN
+        approaches_NNS ._. These_DT methods_NNS can_MD be_VB classified_VBN as_IN supervised_JJ
+        and_CC unsupervised_JJ ._. A_DT wide_JJ variety_NN of_IN supervised_JJ approaches_NNS
+        have_VBP been_VBN described_VBN ,_, for_IN example_NN ,_, classification_NN and_CC
+        regression_NN trees_NNS [_NN 3_CD ]_NN or_CC support_NN vector_NN machines_NNS [_NN 4_CD ]_NN ._.
+        Among_IN unsupervised_JJ methods_NNS ,_, hierarchical_JJ clustering_VBG [_NN 5_CD ]_NN
+        and_CC other_JJ clustering_VBG approaches_NNS [_NN 6_CD ,_, 7_CD ]_NN ,_, as_RB well_RB as_IN
+        projection_NN methods_NNS such_JJ as_IN multidimensional_NN scaling_VBG [_NN 8_CD ]_NN ,_,
+        principal_JJ components_NNS analysis_NN (_( PCA_NNP )_) [_NN 9_CD ,_, 10_CD ,_, 11_CD ,_, 12_CD ,_, 13_CD ]_NN
+        and_CC correspondence_NN analysis_NN [_NN 14_CD ]_NN have_VBP been_VBN described_VBN ._. Such_JJ
+        projection_NN techniques_NNS reduce_VBP the_DT dimensionality_NN of_IN
+        multivariate_NN data_NNS to_TO embed_JJ the_DT variables_NNS and_CC objects_NNS of_IN the_DT
+        data_NNS in_IN a_DT visualizable_JJ (_( two-_NN or_CC three-dimensional_JJ )_) space_NN ._.
+        The_DT projection_NN aims_VBZ to_TO represent_VB the_DT objects_NNS and_CC variables_NNS
+        in_IN the_DT reduced_VBN space_NN in_IN such_JJ a_DT way_NN that_IN they_PRP approximate_JJ
+        their_PRP$ original_JJ distances_NNS in_IN the_DT high-dimensional_JJ space_NN ._.
+        This_DT enables_VBZ one_CD to_TO extract_VB and_CC visualize_VB the_DT dominant_JJ
+        effects_NNS on_IN variance_NN from_IN the_DT data_NNS ._. With_IN PCA_NNP ,_, linear_JJ
+        combinations_NNS (_( principal_JJ components_NNS )_) of_IN the_DT original_JJ
+        variables_NNS can_MD thus_RB be_VB functionally_RB interpreted_VBN (_( for_IN review_NN
+        see_VB [_NN 15_CD ]_NN )_) ._. This_DT enables_VBZ a_DT biological_JJ interpretation_NN of_IN the_DT
+        nature_NN of_IN coherent_JJ variation_NN ._.
+        In_IN microarray_NN experiments_NNS ,_, the_DT identification_NN of_IN subsets_NNS
+        of_IN genes_NNS with_IN large_JJ variation_NN between_IN groups_NNS is_VBZ of_IN primary_JJ
+        interest_NN ._. This_DT process_NN has_VBZ to_TO comprise_VB a_DT criterion_NN that_IN
+        accounts_NNS for_IN the_DT variance_NN within_IN groups_NNS ._. Sometimes_RB this_DT
+        selection_NN is_VBZ only_RB the_DT first_JJ step_NN in_IN the_DT data_NNS analysis_NN ._.
+        Hastie_NNP 
+        et_CC al_NN ._. [_NN 16_CD ]_NN carried_VBD out_IN
+        hierarchical_JJ clustering_VBG of_IN gene-expression_JJ data_NNS and_CC
+        computed_JJ an_DT average_JJ expression_NN profile_NN for_IN each_DT cluster_NN ,_,
+        providing_VBG the_DT input_NN for_IN a_DT response_NN model_NN ._. A_DT direct_JJ
+        significance_NN analysis_NN to_TO select_VB genes_NNS from_IN microarray_NN data_NNS
+        (_( SAM_NNP )_) was_VBD proposed_VBN by_IN Tusher_NNP 
+        et_CC al_NN ._. [_NN 17_CD ]_NN ._. This_DT method_NN is_VBZ based_VBN
+        on_IN 
+        t_NN -_: like_IN (_( in_IN the_DT case_NN of_IN two_CD
+        conditions_NNS )_) or_CC F-_NNP like_IN statistics_NNS ._.
+        Several_JJ methods_NNS for_IN gene_NN selection_NN involving_VBG PCA_NNP have_VBP
+        been_VBN proposed_VBN ._. The_NNP '_POS gene_NN shaving_NN '_'' approach_NN of_IN Hastie_NNP 
+        et_CC al_NN ._. [_NN 10_CD ]_NN restricts_VBZ PCA_NNP to_TO the_DT
+        first_JJ principal_JJ component_NN ._. Groups_NNS of_IN genes_NNS are_VBP generated_VBN by_IN
+        iterative_JJ exclusion_NN of_IN fixed_VBN fractions_NNS of_IN genes_NNS (_( typically_RB
+        10_CD %_NN )_) with_IN smallest_JJS absolute_JJ loadings_NNS according_VBG to_TO the_DT first_JJ
+        principal_JJ component_NN ._. After_IN orthogonalization_NN of_IN the_DT data_NNS
+        with_IN respect_NN to_TO an_DT averaged_VBN expression_NN profile_NN of_IN the_DT first_JJ
+        group_NN ,_, the_DT procedure_NN is_VBZ repeated_VBN ._. Another_DT PCA-based_NNP method_NN
+        of_IN gene_NN selection_NN using_VBG PCA-derived_NNP gene_NN coefficient_NN
+        vectors_NNS and_CC F-_NNP statistics_NNS was_VBD described_VBN by_IN Landgrebe_NNP 
+        et_CC al_NN ._. [_NN 18_CD ]_NN ._.
+        Although_IN these_DT methods_NNS allow_VBP the_DT detection_NN of_IN patterns_NNS
+        or_CC '_POS characteristic_JJ nodes_NNS '_POS by_IN dimension_NN reduction_NN and_CC the_DT
+        selection_NN of_IN gene_NN subsets_NNS with_IN large_JJ variation_NN between_IN
+        condition_NN groups_NNS ,_, the_DT reliability_NN of_IN the_DT results_NNS has_VBZ to_TO be_VB
+        determined_VBN ._. Therefore_RB ,_, it_PRP is_VBZ imperative_JJ to_TO assess_VB whether_IN
+        the_DT results_NNS are_VBP statistically_RB reliable_JJ relative_NN to_TO the_DT
+        level_NN of_IN noise_NN in_IN the_DT data_NNS ._. Classical_NNP statistical_JJ
+        parametric_JJ tests_NNS depend_VBP on_IN the_DT assumptions_NNS of_IN normality_NN and_CC
+        independence_NN of_IN variables_NNS (_( hybridizations_NNS )_) ._. Yet_RB ,_, these_DT
+        assumptions_NNS do_VBP not_RB hold_VB for_IN microarray_NN data_NNS [_NN 1_CD ,_, 19_CD ]_NN ._.
+        Consequently_RB ,_, computationally_RB intensive_JJ methods_NNS such_JJ as_IN
+        permutation_NN tests_NNS or_CC bootstrap_NN procedures_NNS as_IN introduced_VBN by_IN
+        Efron_NNP [_NN 20_CD ]_NN are_VBP preferable_JJ ._. Kerr_NNP 
+        et_CC al_NN ._. [_NN 1_CD ]_NN show_NN the_DT application_NN of_IN
+        bootstrap_NN technique_NN to_TO clustering_VBG results_NNS ._. Ghosh_NNP [_NN 21_CD ]_NN
+        describes_VBZ another_DT approach_NN based_VBN on_IN mixture_NN modeling_NN to_TO
+        assess_VB the_DT reliability_NN of_IN clustering_VBG results_NNS ._. Other_JJ
+        permutation-based_JJ approaches_NNS were_VBD published_VBN by_IN Tusher_NNP 
+        et_CC al_NN ._. [_NN 17_CD ]_NN and_CC Dudoit_NNP 
+        et_CC al_NN ._. [_NN 3_CD ]_NN ._. The_DT method_NN proposed_VBN by_IN
+        Hastie_NNP 
+        et_CC al_NN ._. [_NN 10_CD ]_NN also_RB contains_VBZ bootstrap_NN
+        elements_NNS ._. An_DT approach_NN of_IN Wall_NNP 
+        et_CC al_NN ._. [_NN 22_CD ]_NN tries_VBZ to_TO combine_VB
+        PCA-based_NNP gene_NN selection_NN with_IN a_DT confidence_NN measure_NN using_VBG
+        leave-one-out_JJ cross-validation_JJ ._.
+        Here_RB we_PRP describe_VBP an_DT approach_NN combining_VBG PCA-directed_NNP gene_NN
+        selection_NN with_IN validation_NN by_IN permutation_NN tests_NNS ._. We_PRP use_VBP a_DT
+        test_NN statistic_NN based_VBN on_IN the_DT genes_NNS '_POS object_NN scores_NNS to_TO select_VB
+        genes_NNS with_IN high_JJ variance_NN with_IN respect_NN to_TO the_DT principal_JJ
+        components_NNS ._. The_DT method_NN was_VBD developed_VBN for_IN the_DT analysis_NN of_IN
+        microarray_NN data_NNS having_VBG several_JJ conditions_NNS with_IN a_DT few_JJ
+        replicates_NNS per_IN condition_NN or_CC a_DT group_NN structure_NN ._. We_PRP
+        demonstrate_VBP this_DT approach_NN by_IN applying_VBG it_PRP to_TO the_DT
+        well-characterized_JJ data_NN of_IN Spellman_NNP 
+        et_CC al_NN ._. [_NN 23_CD ]_NN ._. Although_IN other_JJ methods_NNS
+        are_VBP better_RBR adapted_VBN to_TO the_DT analysis_NN of_IN temporal_JJ effects_NNS (_( for_IN
+        example_NN [_NN 24_CD ]_NN )_) ,_, we_PRP chose_VBD the_DT yeast_NN data_NN to_TO allow_VB comparison_NN
+        with_IN other_JJ approaches_NNS applied_VBN to_TO this_DT dataset_NN [_NN 14_CD ,_, 23_CD ]_NN ._. In_IN
+        addition_NN ,_, two_CD datasets_NNS generated_VBN in_IN our_PRP$ own_JJ laboratory_NN were_VBD
+        also_RB analyzed_VBN ._. Our_PRP$ method_NN was_VBD successfully_RB applied_VBN to_TO the_DT
+        different_JJ datasets_NNS ._. We_PRP revealed_VBD the_DT main_JJ sources_NNS of_IN
+        variance_NN in_IN the_DT data_NNS and_CC described_VBD the_DT genes_NNS related_VBN to_TO
+        this_DT variance_NN ._. This_DT allowed_VBD the_DT interpretation_NN of_IN variance_NN
+        and_CC the_DT permutation-validated_JJ selection_NN of_IN genes_NNS in_IN a_DT
+        functional_JJ context_NN ._.
+      
+      
+        Results_NNS
+        
+          Permutation-test-validated_NNP PCA_NNP
+          We_PRP carried_VBD out_IN permutation-test-validated_JJ PCA_NNP on_IN
+          grouped_VBN data_NNS with_IN few_JJ replicates_NNS to_TO study_VB variation_NN in_IN
+          gene_NN expression_NN across_IN several_JJ conditions_NNS ,_, to_TO understand_VB
+          the_DT structure_NN of_IN the_DT data_NNS ,_, to_TO uncover_VB patterns_NNS underlying_VBG
+          the_DT hybridization_NN conditions_NNS and_CC to_TO identify_VB subsets_NNS of_IN
+          genes_NNS with_IN large_JJ variation_NN across_IN these_DT patterns_NNS ._. PCA_NNP is_VBZ
+          primarily_RB aimed_VBN at_IN finding_VBG and_CC interpreting_VBG complex_JJ
+          relationships_NNS between_IN variables_NNS in_IN a_DT dataset_NN ._. Correlated_NNP
+          variables_NNS are_VBP converted_VBN to_TO factors_NNS that_WDT are_VBP not_RB
+          correlated_JJ to_TO each_DT other_JJ ._. The_DT central_JJ point_NN of_IN such_JJ
+          analysis_NN is_VBZ to_TO decompose_NN the_DT original_JJ 
+          n_NN ×_NN 
+          p_NN data_NNS matrix_NN (_( 
+          n_NN objects_NNS ,_, 
+          p_NN variables_NNS )_) in_IN the_DT following_JJ
+          manner_NN :_:
+          
+          X_NNP =_SYM 
+          AF_NNP T_NN 
+          where_WRB 
+          X_NNP is_VBZ the_DT 
+          n_NN ×_NN 
+          p_NN data_NNS matrix_NN ,_, 
+          A_DT is_VBZ the_DT 
+          n_NN ×_NN 
+          p_NN matrix_NN of_IN factor_NN scores_NNS and_CC 
+          F_NN is_VBZ the_DT 
+          p_NN ×_NN 
+          p_NN matrix_NN of_IN factor_NN loadings_NNS ._. With_IN 
+          s_VBZ =_SYM 
+          p_NN factors_VBZ the_DT total_JJ variance_NN of_IN all_DT
+          variables_NNS is_VBZ explained_VBN ._. The_DT decomposition_NN of_IN 
+          X_NNP is_VBZ done_VBN in_IN such_JJ a_DT way_NN that_IN the_DT
+          factors_NNS explain_VBP the_DT total_JJ variance_NN in_IN a_DT descending_VBG order_NN ._.
+          Therefore_RB ,_, it_PRP is_VBZ possible_JJ to_TO reduce_VB the_DT data_NNS to_TO 
+          s_VBZ dimensions_NNS with_IN a_DT minimum_JJ loss_NN of_IN
+          information_NN expressed_VBN by_IN the_DT matrix_NN of_IN residuals_NNS 
+          E_NNP :_: 
+          
+          where_WRB Ã_NN is_VBZ the_DT 
+          n_NN ×_NN 
+          s_VBZ matrix_NN of_IN factor_NN scores_NNS ,_, the_DT 
+          p_NN ×_NN 
+          s_VBZ matrix_NN of_IN factor_NN loadings_NNS and_CC 
+          E_NNP is_VBZ the_DT matrix_NN of_IN residuals_NNS as_IN a_DT
+          result_NN of_IN dimension_NN reduction_NN ._. In_IN this_DT manner_NN ,_, PCA_NNP
+          provides_VBZ a_DT projection_NN of_IN the_DT objects_NNS from_IN 
+          p_NN -_: dimensional_NN to_TO 
+          s_VBZ -_: dimensional_NN space_NN ._.
+          In_IN grouped_VBN data_NNS with_IN replicates_NNS per_IN group_NN (_( condition_NN )_) ,_,
+          there_EX is_VBZ additional_JJ information_NN about_IN the_DT columns_NNS of_IN the_DT
+          data_NNS matrix_NN :_: 
+          y_NN '_'' =_SYM (_( 
+          y_NN 
+          1_CD ,_, 
+          y_NN 
+          2_CD ,_, ._. ._. ._. ,_, 
+          y_NN 
+          p_NN  )_) is_VBZ a_DT set_NN of_IN class_NN labels_NNS
+          identifying_VBG the_DT replicates_NNS for_IN each_DT condition_NN ._. Although_IN
+          PCA_NNP is_VBZ generally_RB not_RB considered_VBN to_TO be_VB appropriate_JJ for_IN
+          grouped_VBN data_NNS ,_, the_DT method_NN has_VBZ been_VBN adapted_VBN for_IN this_DT data_NNS
+          type_NN (_( rank-ordered_JJ PCA_NNP [_NN 25_CD ]_NN )_) ._.
+          The_DT consecutive_JJ steps_NNS of_IN the_DT permutation_NN validated_JJ PCA_NNP
+          procedure_NN are_VBP shown_VBN in_IN Figure_NN 1_CD ._. In_IN step_NN 1_CD ,_, we_PRP perform_VBP
+          rank-ordered_JJ PCA_NNP based_VBN on_IN the_DT polished_JJ gene_NN expression_NN
+          matrix_NN 
+          X_NNP (_( see_VB Materials_NNPS and_CC methods_NNS )_) by_IN
+          computing_VBG separate_JJ oneway_NN ANOVAs_NNP on_IN the_DT principal_JJ
+          components_NNS loadings_NNS for_IN each_DT of_IN the_DT components_NNS ._. If_IN the_DT
+          between-group_JJ variance_NN dominates_VBZ the_DT total_JJ variability_NN in_IN
+          the_DT data_NNS ,_, PCA_NNP discriminates_NNS between_IN groups_NNS ._. In_IN this_DT
+          situation_NN ,_, the_DT first_JJ components_NNS of_IN the_DT PCA_NNP and_CC components_NNS
+          with_IN high_JJ F-_NNP values_NNS are_VBP identical_JJ ._. Thus_RB ,_, following_VBG the_DT
+          order_NN of_IN explained_VBD variance_NN ,_, we_PRP select_VBP the_DT components_NNS
+          with_IN significant_JJ F-_NNP statistics_NNS (_( 
+          p_NN ≤_NN 0_CD ._. 01_CD )_) ._. At_IN the_DT occurrence_NN of_IN a_DT
+          component_NN with_IN nonsignificant_NN F-_NNP statistics_NNS ,_, we_PRP terminate_VB
+          the_DT selection_NN ._. This_DT process_NN results_NNS in_IN 
+          k_NN components_NNS (_( step_NN 2_LS )_) ._. Data_NNP
+          approximated_JJ in_IN the_DT space_NN based_VBN on_IN these_DT components_NNS
+          reflect_VBP the_DT between-group_JJ variance_NN ._. Thus_RB ,_, in_IN step_NN 3_CD of_IN
+          the_DT procedure_NN ,_, we_PRP compute_VB components_NNS from_IN the_DT
+          group-averaged_JJ data_NN and_CC derive_VB the_DT exact_JJ between-group_JJ
+          variance_NN for_IN each_DT gene_NN ,_, which_WDT can_MD be_VB estimated_VBN by_IN :_:
+          
+          where_WRB 
+          a_DT 
+          
+            gi_NN 
+           is_VBZ the_DT factor_NN score_NN for_IN gene_NN 
+          g_SYM and_CC component_NN 
+          i_NNP ._. As_IN a_DT test_NN value_NN ,_, we_PRP use_VBP (_( step_NN
+          3_LS )_) ._. Genes_NNP with_IN a_DT high_JJ value_NN are_VBP candidates_NNS for_IN
+          selection_NN ._.
+          To_TO assess_VB the_DT reliability_NN of_IN the_DT results_NNS we_PRP perform_VBP a_DT
+          permutation_NN analysis_NN (_( steps_NNS 4_CD -_: 6_CD )_) ._. Under_IN the_DT hypothesis_NNS of_IN
+          no_DT effect_NN of_IN different_JJ conditions_NNS on_IN gene_NN expression_NN
+          profiles_NNS ,_, the_DT class_NN labels_NNS given_VBN by_IN 
+          y_NN '_'' are_NN randomly_RB sampled_VBN to_TO
+          determine_VB the_DT permutation_NN distribution_NN of_IN the_DT required_JJ
+          test_NN statistics_NNS ._. Computing_NNP PCAs_NNP from_IN randomized_JJ
+          group-averaged_JJ data_NNS yields_VBZ the_DT distribution_NN of_IN the_DT test_NN
+          statistic_NN 
+          T_NN 
+          
+            g_SYM 
+           for_IN each_DT gene_NN 
+          g_SYM (_( step_NN 4_LS )_) :_:
+          
+          We_PRP compute_VB 1_CD ,_, 000_CD permutation_NN distributions_NNS for_IN each_DT
+          gene_NN (_( step_NN 5_LS )_) ._. In_IN step_NN 6_CD we_PRP select_VBP the_DT genes_NNS for_IN which_WDT 
+          t_NN 
+          g_SYM  is_VBZ greater_JJR than_IN the_DT 95_CD %_NN
+          quantile_NN of_IN the_DT permutation_NN distribution_NN of_IN 
+          T_NN 
+          g_SYM  ._. The_DT last_JJ step_NN is_VBZ the_DT
+          visualization_NN of_IN the_DT arrays_NNS and_CC selected_VBN genes_NNS in_IN the_DT
+          reduced_VBN 
+          k_NN -_: components_NNS space_NN ._. If_IN 
+          k_NN =_SYM 2_CD ,_, a_DT twofold_NN visualization_NN is_VBZ
+          suggested_VBN ._. The_DT biplot_NN with_IN marked_VBD selected_VBN genes_NNS can_MD be_VB
+          used_VBN to_TO relate_VB genes_NNS and_CC conditions_NNS ._. Genes_NNP lying_VBG near_IN an_DT
+          axis_NNS of_IN a_DT condition_NN are_NN upregulated_JJ in_IN this_DT hybridization_NN
+          and_CC genes_NNS lying_VBG in_IN the_DT opposite_JJ direction_NN are_VBP repressed_JJ ._.
+          With_IN several_JJ conditions_NNS ,_, this_DT relation_NN is_VBZ generally_RB not_RB
+          unique_JJ ._. Therefore_RB ,_, the_DT visualization_NN maybe_RB supported_VBN by_IN
+          color-coded_VBN expression-profile_JJ tables_NNS ._. Here_RB ,_, the_DT data_NNS
+          matrix_NN is_VBZ rearranged_JJ according_VBG to_TO the_DT angular_NN distance_NN
+          from_IN the_DT 
+          x_SYM -_: axis_NNS for_IN each_DT gene_NN (_( rearranging_VBG 
+          n_NN rows_NNS )_) ._. The_DT same_JJ is_VBZ done_VBN for_IN
+          hybridizations_NNS (_( rearranging_VBG 
+          p_NN columns_NNS )_) ._. If_IN 
+          k_NN >_NN 2_CD several_JJ biplots_NNS and_CC
+          color-coded_VBN tables_NNS must_MD be_VB constructed_VBN ._.
+        
+        
+          Application_NNP to_TO yeast_NN cell-cycle_JJ data_NNS
+          To_TO demonstrate_VB our_PRP$ approach_NN ,_, we_PRP applied_VBD it_PRP to_TO the_DT
+          yeast_NN cell-cycle_JJ data_NNS published_VBN by_IN Spellman_NNP 
+          et_CC al_NN ._. [_NN 23_CD ]_NN ._. These_DT authors_NNS
+          synchronized_VBN the_DT yeast_NN cell_NN cycle_NN using_VBG independent_JJ
+          methods_NNS of_IN cell-cycle_JJ arrest_NN and_CC measured_VBD the_DT expression_NN
+          of_IN all_DT yeast_NN open_JJ reading_NN frames_NNS (_( ORFs_NNP )_) at_IN different_JJ time_NN
+          points_NNS after_IN the_DT cell-cycle_JJ synchronization_NN ._. They_PRP
+          identified_VBD genes_NNS related_VBN to_TO the_DT cell_NN cycle_NN using_VBG Fourier_NNP
+          transformation_NN and_CC correlation_NN measures_NNS ._. We_PRP analyzed_VBD the_DT
+          cell-cycle-related_JJ genes_NNS selected_VBN by_IN Spellman_NNP 
+          et_CC al_NN ._. [_NN 23_CD ]_NN to_TO demonstrate_VB the_DT
+          relationship_NN between_IN cell-cycle_JJ phases_NNS and_CC
+          gene-expression_JJ patterns_NNS and_CC to_TO select_VB a_DT subset_NN of_IN genes_NNS
+          that_WDT show_NN the_DT highest_JJS and_CC most_RBS reproducible_JJ variance_NN
+          across_IN the_DT cell-cycle_JJ phases_NNS ._. We_PRP analyzed_VBD the_DT expression_NN
+          patterns_NNS of_IN 773_CD selected_VBN genes_NNS over_IN all_DT 73_CD
+          hybridizations_NNS ._.
+          The_DT cell_NN cycle_NN is_VBZ a_DT temporal_JJ continuum_NN that_WDT is_VBZ
+          generally_RB grouped_VBN into_IN cell-cycle_JJ phases_NNS ._. This_DT
+          classification_NN was_VBD also_RB carried_VBN out_IN by_IN Spellman_NNP 
+          et_CC al_NN ._. [_NN 23_CD ]_NN ._. The_DT classification_NN
+          of_IN genes_NNS in_IN cell-cycle_JJ phase_NN groups_NNS enables_VBZ one_CD to_TO
+          analyze_VB the_DT variance_NN of_IN gene_NN expression_NN across_IN the_DT
+          cell-cycle_JJ phases_NNS and_CC to_TO select_VB genes_NNS with_IN different_JJ and_CC
+          robust_JJ regulation_NN ._. We_PRP analyzed_VBD the_DT data_NNS using_VBG
+          permutation-validated_JJ PCA_NNP ._. A_DT first_JJ PCA_NNP was_VBD based_VBN on_IN the_DT
+          polished_JJ logarithmic_JJ ratios_NNS including_VBG all_DT arrays_NNS ._. An_DT
+          analysis_NN of_IN variance_NN (_( ANOVA_NNP )_) using_VBG the_DT variable_JJ loadings_NNS
+          as_IN dependent_JJ variables_NNS and_CC the_DT classification-derived_JJ
+          cell-cycle_JJ phase_NN groups_NNS as_IN factors_NNS was_VBD carried_VBN out_RP ._. The_DT
+          first_JJ two_CD components_NNS were_VBD highly_RB significant_JJ whereas_IN the_DT
+          others_NNS were_VBD not_RB ._. Figure_NN 2_CD shows_VBZ a_DT plot_NN of_IN the_DT first_JJ two_CD
+          component_NN loadings_NNS against_IN each_DT other_JJ ._. Of_IN the_DT data_NNS 's_POS
+          variance_NN ,_, 37_CD ._. 2_LS %_NN was_VBD explained_VBN by_IN the_DT first_JJ two_CD
+          components_NNS ._. The_DT plot_NN shows_VBZ that_IN the_DT resulting_VBG ordination_NN
+          of_IN the_DT hybridizations_NNS corresponds_NNS to_TO the_DT assignment_NN of_IN
+          cell-cycle_JJ phases_NNS by_IN Spellman_NNP 
+          et_CC al_NN ._. [_NN 23_CD ]_NN ._. The_DT angular_NN position_NN
+          of_IN the_DT hybridizations_NNS in_IN the_DT plot_NN reflects_VBZ their_PRP$ correct_JJ
+          temporal_JJ situation_NN in_IN the_DT cycle_NN ._. The_DT first_JJ seven_CD arrays_NNS
+          of_IN the_DT CDC_NNP series_NN seem_VBP to_TO be_VB misclassified_VBN ._. They_PRP are_VBP
+          shown_VBN with_IN colored_VBN labels_NNS in_IN Figure_NN 2_CD and_CC show_VB a_DT
+          counterclockwise_NN shift_NN in_IN expression_NN in_IN the_DT cell_NN cycle_NN ._.
+          Thus_RB ,_, the_DT first_JJ two_CD components_NNS approximate_JJ the_DT cell-cycle_JJ
+          aspect_NN of_IN the_DT data_NNS quite_RB well_RB and_CC could_MD be_VB interpreted_VBN as_IN
+          cell-cycle_JJ components_NNS ._. They_PRP reflect_VBP the_DT main_JJ temporal_JJ
+          aspect_NN of_IN the_DT data_NNS ._.
+          A_DT second_JJ PCA_NNP was_VBD carried_VBN out_IN on_IN the_DT group-averaged_JJ
+          data_NN using_VBG the_DT original_JJ cell-cycle_JJ classification_NN with_IN
+          two_CD components_NNS (_( 94_CD ._. 4_LS %_NN explained_VBD variance_NN )_) ._. Figure_NN 3_CD shows_VBZ
+          a_DT biplot_NN of_IN the_DT 773_CD gene_NN scores_NNS and_CC the_DT five_CD cell-cycle_JJ
+          phase_NN group_NN loadings_NNS ._. For_IN each_DT gene_NN the_DT distance_NN to_TO the_DT
+          origin_NN indicates_VBZ the_DT variance_NN in_IN the_DT reduced_VBN
+          two-dimensional_JJ space_NN ._. The_DT hole_NN in_IN the_DT middle_NN of_IN the_DT plot_NN
+          reflects_VBZ the_DT fact_NN that_IN only_JJ genes_NNS related_VBN to_TO the_DT cell_NN
+          cycle_NN were_VBD chosen_VBN by_IN Spellman_NNP 
+          et_CC al_NN ._. [_NN 23_CD ]_NN ._. Genes_NNP without_IN
+          variance_NN with_IN respect_NN to_TO the_DT cell_NN cycle_NN (_( equally_RB
+          transcribed_JJ in_IN most_JJS cell-cycle_JJ phases_NNS )_) would_MD lie_VB in_IN the_DT
+          middle_NN of_IN the_DT biplot_NN ._. In_IN Figure_NN 3_CD ,_, 60_CD genes_NNS are_VBP labeled_VBN
+          with_IN gene_NN symbols_NNS ._. These_DT genes_NNS had_VBD a_DT test_NN value_NN above_IN the_DT
+          95_CD %_NN percentile_NN of_IN the_DT permutation_NN distribution_NN of_IN the_DT
+          related_VBN test_NN statistic_NN ._. Figure_NN 3_CD allows_VBZ the_DT assignment_NN of_IN
+          the_DT genes_NNS to_TO the_DT cell-cycle_JJ phases_NNS in_IN which_WDT they_PRP are_VBP
+          regulated_VBN ._. As_IN illustrated_VBN by_IN Figures_NNS 3_CD and_CC 4_CD ,_, in_IN the_DT
+          cell-cycle_JJ phase_NN M_NNP /_NN G_NNP 1_CD ,_, 
+          CDC_NNP 46_CD (_( encoding_VBG part_NN of_IN the_DT
+          replication_NN complex_JJ )_) was_VBD selected_VBN as_IN an_DT upregulated_JJ gene_NN ,_,
+          whereas_IN the_DT histone_NN genes_NNS 
+          HTB_NNP 2_CD ,_, HTA_NNP 2_CD and_CC 
+          HHO_NNP 1_CD (_( also_RB marked_VBN by_IN Spellman_NNP 
+          et_CC al_NN ._. [_NN 23_CD ]_NN and_CC Fellenberg_NNP 
+          et_CC al_NN ._. [_NN 14_CD ]_NN )_) were_VBD selected_VBN as_IN
+          downregulated_JJ genes_NNS ._. In_IN phases_NNS G_NNP 1_CD and_CC S_NNP ,_, 
+          POL_NNP 30_CD (_( replication_NN complex_JJ )_) and_CC 
+          RAD_NNP 51_CD (_( cell-cycle-related_JJ protein_NN
+          kinase_NN )_) were_VBD selected_VBN ._. The_DT histone_NN genes_NNS repressed_VBN in_IN
+          M_NNP /_NN G_NNP 1_CD were_VBD upregulated_JJ in_IN S_NNP ._. In_IN G_NNP 2_CD and_CC M_NNP ,_, 
+          CLB_NNP 1_CD (_( G_NNP 2_CD /_NN M-_NNP specific_JJ cyclin_NN involved_VBN
+          in_IN mitotic_JJ induction_NN )_) ,_, 
+          CDC_NNP 5_CD (_( mitotic_JJ DNA_NNP replication_NN )_) and_CC 
+          CLB_NNP 2_CD (_( G_NNP 2_CD /_NN M-_NNP specific_JJ cyclin_NN involved_VBN
+          in_IN mitotic_JJ induction_NN )_) were_VBD selected_VBN as_IN upregulated_JJ ,_, in_IN
+          phase_NN M_NNP 
+          CDC_NNP 20_CD (_( cyclin_NN degradation_NN ,_, part_NN of_IN
+          the_DT anaphase-promoting_JJ complex_JJ )_) ._. Thus_RB ,_, among_IN the_DT known_VBN
+          genes_NNS selected_VBN by_IN our_PRP$ algorithm_NN ,_, many_JJ play_NN a_DT crucial_JJ role_NN
+          in_IN the_DT cell_NN cycle_NN ._. As_IN described_VBN by_IN Spellman_NNP 
+          et_CC al_NN ._. [_NN 23_CD ]_NN ,_, the_DT microarray_NN
+          expression_NN data_NNS confirm_VBP the_DT results_NNS of_IN other_JJ gene_NN
+          expression_NN studies_NNS ._.
+        
+        
+          Application_NNP to_TO abolition_NN of_IN CRH-RI_NNP function_NN
+          data_NNS
+          In_IN this_DT experiment_NN ,_, mRNAs_NNS from_IN whole_JJ brains_NNS of_IN mice_NNS of_IN
+          different_JJ genetic_JJ backgrounds_NNS which_WDT had_VBD been_VBN treated_VBN with_IN
+          an_DT antagonist_NN directed_VBN against_IN the_DT ligand-binding_JJ domain_NN
+          of_IN a_DT seven-transmembrane_JJ neuropeptide_NN receptor_NN [_NN 26_CD ]_NN (_( the_DT
+          corticotropin-releasing_JJ hormone_NN receptor_NN 1_CD (_( CRH-R_NNP 1_LS )_) [_NN
+          27_CD ]_NN )_) were_VBD compared_VBN to_TO mRNAs_NNS from_IN brains_NNS of_IN mice_NNS lacking_VBG a_DT
+          functional_JJ CRH-R_NNP 1_CD (_( CRH-R_NNP 1_CD knockout_NN mice_NNS [_NN 28_CD ]_NN )_) using_VBG
+          cDNA-microarrays_JJ (_( Table_NNP 1_LS )_) ._. The_DT data_NNS consist_VBP of_IN log_NN 
+          2_CD ratios_NNS ._. The_DT matrix_NN had_VBD 1_CD ,_, 810_CD
+          complete_JJ observations_NNS (_( genes_NNS )_) and_CC 21_CD hybridizations_NNS ._. We_PRP
+          computed_JJ a_DT PCA_NNP based_VBN on_IN the_DT polished_JJ matrix_NN of_IN single_JJ
+          hybridizations_NNS to_TO show_VB that_IN the_DT treatment_NN group_NN members_NNS
+          clustered_VBN together_RB (_( data_NNS not_RB shown_VBN )_) ._. We_PRP performed_VBD an_DT
+          ANOVA_NNP using_VBG the_DT variable_JJ loadings_NNS as_IN dependent_JJ variables_NNS
+          and_CC the_DT treatment_NN groups_NNS as_IN factors_NNS ._. The_DT first_JJ two_CD
+          components_NNS were_VBD highly_RB significant_JJ ,_, whereas_IN the_DT third_JJ
+          component_NN was_VBD not_RB ._. The_DT first_JJ two_CD components_NNS explained_VBD
+          37_CD ._. 5_LS %_NN of_IN the_DT data_NNS 's_POS variance_NN ._. We_PRP carried_VBD out_RP PCA_NNP for_IN
+          group-averaged_JJ data_NNS with_IN two_CD components_NNS (_( 54_CD ._. 8_CD %_NN explained_VBD
+          variance_NN )_) ._. Figure_NN 5_CD shows_VBZ a_DT biplot_NN of_IN these_DT components_NNS ._.
+          The_DT two_CD components_NNS describe_VBP a_DT gradient_NN effect_NN of_IN the_DT
+          abolition_NN of_IN CRH-R_NNP 1_CD function_NN in_IN different_JJ genetic_JJ
+          backgrounds_NNS ._. Component_NNP 1_CD (_( abscissa_NN )_) distinguishes_NNS the_DT
+          CRH-R_NNP 1_CD abolition_NN (_( null_NN mutant_JJ )_) from_IN relatively_RB mild_JJ
+          CRH-R_NNP 1_CD function_NN impairment_NN (_( h_NN 1_CD ,_, w_NN 1_CD :_: 1_CD day_NN of_IN treatment_NN
+          with_IN antagonist_NN )_) ._. With_IN the_DT increasing_VBG effect_NN on_IN the_DT
+          animals_NNS of_IN gene_NN function_NN impairment_NN ,_, the_DT animals_NNS '_POS
+          loadings_NNS on_IN the_DT first_JJ component_NN become_VB more_RBR similar_JJ to_TO
+          the_DT genetic_JJ CRH-R_NNP 1_CD inactivation_NN ._. Component_NNP 2_CD (_( ordinate_NN )_)
+          distinguishes_NNS between_IN impairment_NN of_IN heterozygotes_NNS treated_VBN
+          for_IN 1_CD day_NN and_CC wild-type_JJ animals_NNS treated_VBN for_IN 7_CD days_NNS (_( both_DT
+          of_IN 129_CD Ola_NNP /_NN CD_NNP 1_CD background_NN )_) ._.
+          Because_IN long-term-treated_JJ wild-type_JJ animals_NNS of_IN 129_CD SvJ_NNP
+          background_NN (_( sy_NN )_) are_VBP similar_JJ to_TO the_DT knockout_NN animals_NNS ,_,
+          treatment_NN seems_VBZ to_TO have_VB a_DT strong_JJ effect_NN in_IN these_DT animals_NNS ._.
+          Animals_NNS with_IN a_DT 129_CD Ola_NNP /_NN CD_NNP 1_CD background_NN (_( group_NN wy_NN )_) show_NN a_DT
+          weaker_JJR response_NN to_TO treatment_NN with_IN the_DT antagonist_NN ._. Both_DT
+          components_NNS describe_VBP abolition-of-function_JJ effects_NNS in_IN a_DT
+          background-dependent_JJ manner_NN ._. Thus_RB ,_, given_VBN a_DT particular_JJ
+          genetic_JJ background_NN ,_, treatment_NN with_IN an_DT antagonist_NN against_IN
+          CRH-R_NNP 1_CD can_MD mimic_VB the_DT genetic_JJ abolition_NN of_IN gene_NN function_NN ._.
+          A_DT comparable_JJ phenomenon_NN was_VBD shown_VBN in_IN yeast_NN by_IN Hughes_NNP 
+          et_CC al_NN ._. [_NN 29_CD ]_NN ._.
+          Only_RB 25_CD genes_NNS were_VBD selected_VBN by_IN permutation_NN tests_NNS and_CC
+          are_VBP labeled_VBN with_IN gene_NN symbols_NNS in_IN Figure_NN 5_CD ._. These_DT genes_NNS
+          show_VBP high_JJ variance_NN across_IN the_DT treatment_NN groups_NNS and_CC are_VBP
+          highly_RB reproducible_JJ ._. Only_RB genes_NNS that_WDT contrast_NN the_DT groups_NNS
+          ko_NN and_CC s_VBZ 7_CD on_IN one_CD side_NN and_CC in_IN the_DT groups_NNS w_NN 1_CD and_CC w_NN 7_CD on_IN the_DT
+          other_JJ side_NN are_VBP selected_VBN ._. The_DT profiles_NNS of_IN these_DT genes_NNS are_VBP
+          illustrated_VBN in_IN Figure_NN 6_CD and_CC support_VB the_DT interpretation_NN of_IN
+          the_DT biplot_NN ._.
+        
+        
+          Application_NNP to_TO antidepressant_NN data_NNS
+          In_IN this_DT experiment_NN ,_, 29_CD 12_CD -_: week-old_JJ male_JJ mice_NNS of_IN 129_CD SvJ_NNP
+          background_NN were_VBD treated_VBN with_IN mirtazapine_NN ,_, paroxetine_NN or_CC
+          vehicle_NN for_IN 1_CD ,_, 7_CD or_CC 28_CD days_NNS (_( Table_NNP 2_LS )_) ._. cDNA_NN microarrays_NNS
+          were_VBD used_VBN to_TO measure_VB the_DT mRNA_NN expression_NN in_IN total_JJ brain_NN
+          homogenates_NNS of_IN these_DT animals_NNS ._. The_DT data_NNS consist_VBP of_IN log_NN 
+          2_CD ratios_NNS ._. The_DT matrix_NN had_VBD 2_CD ,_, 190_CD
+          complete_JJ observations_NNS (_( genes_NNS )_) and_CC 24_CD hybridizations_NNS ._. We_PRP
+          computed_JJ a_DT PCA_NNP based_VBN on_IN the_DT polished_JJ matrix_NN of_IN single_JJ
+          hybridizations_NNS to_TO show_VB that_IN the_DT treatment_NN groups_NNS were_VBD
+          ordinated_JJ together_RB (_( data_NNS not_RB shown_VBN )_) ._. We_PRP performed_VBD an_DT
+          ANOVA_NNP using_VBG the_DT variable_JJ loadings_NNS as_IN dependent_JJ variables_NNS
+          and_CC the_DT treatment_NN groups_NNS as_IN factors_NNS ._. The_DT first_JJ two_CD
+          components_NNS were_VBD highly_RB significant_JJ ._. They_PRP explained_VBD 36_CD ._. 3_LS %_NN
+          of_IN the_DT data_NNS 's_POS variance_NN and_CC the_DT object_NN (_( gene_NN )_) scores_NNS with_IN
+          respect_NN to_TO these_DT two_CD components_NNS were_VBD used_VBN to_TO compute_VB the_DT
+          variance_NN of_IN genes_NNS according_VBG to_TO the_DT group_NN differences_NNS ._.
+          We_PRP carried_VBD out_RP a_DT PCA_NNP with_IN group-averaged_JJ data_NNS and_CC two_CD
+          components_NNS (_( 72_CD ._. 1_LS %_NN explained_VBD variance_NN )_) ._. Figure_NN 7_CD shows_VBZ a_DT
+          biplot_NN of_IN these_DT components_NNS with_IN 127_CD selected_VBN genes_NNS at_IN the_DT
+          95_CD %_NN percentile_NN (_( labeled_VBN with_IN numbers_NNS )_) and_CC 30_CD genes_NNS at_IN the_DT
+          99_CD %_NN percentile_NN (_( labeled_VBN with_IN gene_NN symbols_NNS )_) ._. The_DT
+          components_NNS describe_VBP the_DT effects_NNS of_IN antidepressant_NN
+          treatment_NN on_IN the_DT mouse_NN brain_NN ._. The_DT first_JJ component_NN
+          (_( abscissa_NN )_) discerns_VBZ treatment_NN with_IN mirtazapine_NN (_( a_DT )_) from_IN
+          treatment_NN with_IN paroxetine_NN (_( p_NN )_) ._. This_DT component_NN can_MD be_VB
+          interpreted_VBN as_IN the_DT drug-type_JJ effect_NN ._. The_DT second_JJ component_NN
+          discerns_VBZ short_JJ (_( 1_CD day_NN )_) from_IN longer_JJR (_( 7_CD or_CC 28_CD days_NNS )_)
+          treatment_NN and_CC can_MD be_VB interpreted_VBN as_IN the_DT treatment_NN
+          duration_NN effect_NN ._. Figure_NN 8_CD shows_VBZ the_DT 30_CD genes_NNS selected_VBN at_IN
+          the_DT 99_CD %_NN percentile_NN in_IN a_DT color-coded_VBN expression_NN table_NN ._.
+          These_DT genes_NNS strongly_RB reflect_VBP the_DT treatment_NN type_NN and_CC
+          duration_NN effect_NN ._.
+        
+      
+      
+        Discussion_NNP
+        Here_RB we_PRP propose_VBP a_DT method_NN for_IN analyzing_VBG microarray_NN data_NNS
+        with_IN group_NN structure_NN imposed_VBN by_IN different_JJ conditions_NNS ._. We_PRP
+        combine_VBP the_DT visualization_NN focused_VBN on_IN the_DT variance_NN of_IN genes_NNS
+        between_IN groups_NNS and_CC gene_NN selection_NN ,_, taking_VBG into_IN account_NN the_DT
+        within-group_JJ variance_NN ._. Based_VBN on_IN PCA_NNP ,_, this_DT method_NN is_VBZ able_JJ to_TO
+        visualize_VB relationships_NNS between_IN hybridizations_NNS by_IN dimension_NN
+        reduction_NN ._. Yet_RB ,_, data_NNS visualization_NN via_IN a_DT biplot_NN allows_VBZ more_JJR
+        than_IN biological_JJ interpretation_NN of_IN the_DT components_NNS ._. After_IN
+        appropriate_JJ data_NNS preprocessing_VBG ,_, searching_VBG for_IN genes_NNS with_IN
+        changes_NNS in_IN expression_NN patterns_NNS across_IN the_DT groups_NNS can_MD be_VB
+        based_VBN on_IN the_DT genes_NNS '_POS (_( objects_NNS '_POS )_) distance_NN from_IN the_DT centroid_NN
+        of_IN the_DT biplot_NN ._. This_DT distance_NN is_VBZ proportional_JJ to_TO the_DT
+        variance_NN of_IN genes_NNS in_IN the_DT dimension-reduced_JJ space_NN ._. A_DT
+        correspondence_NN analysis_NN would_MD give_VB a_DT similar_JJ result_NN [_NN 14_CD ]_NN ._.
+        But_CC a_DT selection_NN of_IN genes_NNS must_MD be_VB accompanied_VBN by_IN an_DT
+        assessment_NN of_IN whether_IN the_DT results_NNS are_VBP statistically_RB
+        reliable_JJ relative_NN to_TO the_DT level_NN of_IN noise_NN in_IN the_DT data_NNS ._.
+        Whereas_IN classic_JJ statistical_JJ tests_NNS (_( like_IN 
+        t-_NN and_CC F-_NNP statistics_NNS )_) are_VBP based_VBN on_IN
+        assumptions_NNS concerning_VBG distribution_NN and_CC variable_JJ
+        independence_NN that_WDT do_VBP not_RB hold_VB for_IN microarray_NN data_NNS [_NN 1_CD ,_, 19_CD ]_NN
+        the_DT permutation-validation_JJ procedure_NN presented_VBN here_RB makes_VBZ
+        no_DT assumption_NN about_IN the_DT dependence_NN of_IN gene-expression_JJ
+        measurement_NN within_IN the_DT expression_NN matrix_NN 
+        X_NNP ._. Therefore_RB ,_, gene-specific_JJ scatter_NN is_VBZ
+        taken_VBN into_IN consideration_NN by_IN calculating_VBG the_DT test-value_JJ
+        permutation_NN distributions_NNS for_IN each_DT gene_NN under_IN the_DT null_NN
+        hypothesis_NNS of_IN no_DT group-structure_JJ effect_NN in_IN the_DT expression_NN
+        profiles_NNS ._. Another_DT method_NN for_IN validating_VBG PCA_NNP results_NNS using_VBG a_DT
+        leave-one-out_JJ approach_NN (_( Wall_NNP 
+        et_CC al_NN ._. [_NN 22_CD ]_NN )_) is_VBZ very_RB global_JJ ,_, and_CC
+        can_MD only_RB be_VB applied_VBN when_WRB the_DT conditions_NNS correspond_VB to_TO a_DT
+        continuous_JJ parameter_NN ,_, such_JJ as_IN time_NN or_CC dose_NN ._.
+        The_DT last_JJ step_NN of_IN the_DT permutation-validated_JJ PCA_NNP procedure_NN
+        concerns_VBZ the_DT visualization_NN and_CC the_DT interpretation_NN of_IN the_DT
+        selected_VBN genes_NNS according_VBG to_TO their_PRP$ importance_NN in_IN a_DT
+        biological_JJ context_NN ._. In_IN the_DT case_NN of_IN two_CD dimensions_NNS (_( 
+        k_NN =_SYM 2_LS )_) ,_, a_DT color-coded_VBN expression_NN
+        profile_NN can_MD be_VB generated_VBN by_IN rearranging_VBG the_DT selected_VBN genes_NNS
+        and_CC the_DT arrays_NNS with_IN respect_NN to_TO angular_NN distances_NNS in_IN the_DT
+        biplot_NN ._. When_WRB looking_VBG at_IN a_DT biplot_NN showing_VBG several_JJ variable_JJ
+        loadings_NNS ,_, a_DT given_VBN object_NN (_( gene_NN )_) has_VBZ to_TO be_VB projected_VBN on_IN all_DT
+        different_JJ variables_NNS (_( conditions_NNS )_) to_TO understand_VB its_PRP$ pattern_NN
+        with_IN regard_NN to_TO all_DT of_IN them_PRP ._. A_DT color-coded_VBN
+        expression-profile_JJ table_NN may_MD support_VB this_DT visual_JJ
+        interpretation_NN ._. As_IN a_DT further_JJ development_NN of_IN the_DT method_NN
+        described_VBD here_RB ,_, we_PRP envisage_NN cluster_NN analysis_NN of_IN the_DT
+        selected_VBN genes_NNS for_IN higher_JJR dimensions_NNS (_( 
+        k_NN >_NN 2_LS )_) ._.
+        The_DT application_NN of_IN permutation-validated_JJ PCA_NNP to_TO
+        microarray_NN data_NNS shows_VBZ that_IN the_DT basic_JJ sources_NNS of_IN variance_NN
+        could_MD be_VB extracted_VBN from_IN all_DT datasets_NNS :_: The_DT components_NNS
+        computed_JJ from_IN the_DT Spellman_NNP 
+        et_CC al_NN ._. [_NN 23_CD ]_NN yeast_NN data_NNS described_VBD
+        the_DT cell_NN cycle_NN and_CC allowed_VBN ordinations_NNS of_IN the_DT
+        hybridizations_NNS according_VBG to_TO their_PRP$ temporal_JJ situation_NN in_IN the_DT
+        cell_NN cycle_NN ._. Arrays_NNP misclassified_VBN by_IN the_DT Fourier_NNP
+        transformation_NN [_NN 23_CD ]_NN were_VBD assigned_VBN to_TO shifted_VBN positions_NNS in_IN
+        the_DT cell_NN cycle_NN (_( this_DT was_VBD also_RB achieved_VBN by_IN correspondence_NN
+        analysis_NN [_NN 14_CD ]_NN )_) ._. The_DT components_NNS computed_JJ from_IN the_DT abolition_NN
+        of_IN CRH-R_NNP 1_CD function_NN experiment_NN described_VBD a_DT gradient_NN of_IN
+        increasing_VBG functional_JJ impairment_NN depending_VBG on_IN the_DT genetic_JJ
+        background_NN of_IN the_DT animals_NNS ._. The_DT analysis_NN of_IN the_DT
+        antidepressant_NN data_NN also_RB shows_VBZ how_WRB principal_JJ components_NNS led_VBN
+        to_TO an_DT understanding_NN of_IN the_DT fundamental_JJ biological_JJ phenomena_NNS
+        captured_VBN by_IN the_DT data_NNS :_: here_RB ,_, they_PRP discern_VB the_DT types_NNS of_IN
+        treatment_NN and_CC the_DT treatment_NN duration_NN ._.
+        But_CC there_EX were_VBD important_JJ differences_NNS in_IN the_DT results_NNS :_:
+        whereas_IN the_DT grouped_VBN PCA_NNP of_IN the_DT cell-cycle_JJ data_NN explained_VBD
+        94_CD ._. 4_LS %_NN of_IN the_DT data_NNS 's_POS variance_NN ,_, the_DT corresponding_JJ rates_NNS were_VBD
+        72_CD ._. 1_LS %_NN explained_VBD variance_NN for_IN the_DT antidepressant_NN data_NN and_CC
+        54_CD ._. 8_CD %_NN for_IN the_DT CRH-R_NNP 1_CD abolition_NN data_NNS ._. In_IN a_DT situation_NN with_IN
+        homogeneous_JJ array_NN groups_NNS and_CC preselected_JJ genes_NNS such_JJ as_IN the_DT
+        cell-cycle_JJ data_NN ,_, the_DT level_NN of_IN explained_VBD variance_NN was_VBD very_RB
+        high_JJ as_IN the_DT components_NNS explained_VBD the_DT kind_NN of_IN variance_NN the_DT
+        genes_NNS were_VBD preselected_JJ for_IN ._. For_IN the_DT antidepressant_NN data_NN ,_, no_DT
+        
+        a_DT priori_FW information_NN about_IN the_DT
+        relation_NN of_IN genes_NNS to_TO treatment_NN type_NN and_CC duration_NN was_VBD
+        available_JJ ._. Thus_RB the_DT level_NN of_IN explained_VBD variance_NN was_VBD lower_JJR
+        (_( 72_CD ._. 1_LS %_NN )_) ,_, although_IN the_DT two_CD components_NNS used_VBN to_TO build_VB the_DT test_NN
+        statistics_NNS still_RB captured_VBD a_DT big_JJ part_NN of_IN the_DT variance_NN
+        present_JJ in_IN the_DT data_NNS ._. Although_IN the_DT material_NN used_VBN for_IN the_DT
+        antidepressant_NN treatment_NN data_NNS (_( RNA_NNP from_IN total_JJ mouse_NN brain_NN
+        homogenates_NNS containing_VBG a_DT variety_NN of_IN cell_NN types_NNS )_) was_VBD more_RBR
+        heterogeneous_JJ than_IN the_DT clonal_NN yeast_NN cell_NN lines_NNS ,_,
+        antidepressant_NN effects_NNS on_IN the_DT brain_NN 's_POS mRNA_NN transcription_NN
+        were_VBD so_RB important_JJ that_IN clear_JJ variance_NN structures_NNS emerged_VBD in_IN
+        the_DT data_NNS ._. In_IN contrast_NN ,_, the_DT level_NN of_IN explained_VBD variance_NN for_IN
+        the_DT CRH-R_NNP 1_CD function_NN abolition_NN data_NNS was_VBD 54_CD ._. 8_CD %_NN ._. In_IN this_DT
+        experiment_NN ,_, different_JJ methods_NNS of_IN impairing_VBG or_CC abolishing_VBG
+        the_DT function_NN of_IN CRH-R_NNP 1_CD were_VBD used_VBN on_IN different_JJ mouse_NN genetic_JJ
+        backgrounds_NNS ._. The_DT variance_NN in_IN the_DT experimental_JJ design_NN was_VBD
+        thus_RB quite_RB high_JJ ._. Heterogeneity_NNP within_IN the_DT groups_NNS was_VBD also_RB
+        higher_JJR than_IN in_IN the_DT antidepressant_NN experiment_NN ,_, probably_RB
+        because_IN a_DT selective_JJ pharmacologic_JJ antagonization_NN of_IN the_DT
+        neuro-modulating_JJ peptide_NN CRH_NNP [_NN 27_CD ]_NN had_VBD a_DT less_RBR pronounced_JJ
+        and_CC stereotypic_JJ effect_NN on_IN transcription_NN in_IN the_DT brain_NN than_IN
+        the_DT antidepressant_NN drugs_NNS acting_VBG on_IN a_DT wide_JJ spectrum_NN of_IN
+        neurotransmitter_NN receptors_NNS ,_, transporters_NNS and_CC related_VBN
+        enzymes_NNS [_NN 30_CD ]_NN ._. In_IN this_DT situation_NN of_IN high_JJ variance_NN in_IN the_DT
+        experimental_JJ design_NN ,_, and_CC a_DT relatively_RB high_JJ rate_NN of_IN
+        heterogeneity_NN in_IN the_DT treatment_NN groups_NNS ,_,
+        permutation-validated_JJ PCA_NNP only_RB selected_VBD genes_NNS reflecting_VBG
+        the_DT contrast_NN between_IN the_DT groups_NNS w_NN 1_CD ,_, w_NN 7_CD on_IN one_CD side_NN and_CC s_VBZ 7_CD
+        and_CC k_NN 0_CD on_IN the_DT other_JJ side_NN because_IN this_DT contrast_NN was_VBD captured_VBN
+        by_IN the_DT first_JJ two_CD components_NNS ._. Other_JJ aspects_NNS of_IN the_DT data_NNS were_VBD
+        not_RB captured_VBN by_IN PCA_NNP ._. Thus_RB ,_, a_DT multivariate_NN approach_NN trying_VBG
+        to_TO compare_VB very_RB different_JJ gene_NN expression_NN patterns_NNS at_IN the_DT
+        same_JJ time_NN might_MD lead_VB to_TO loss_NN of_IN information_NN ._. In_IN such_JJ a_DT
+        case_NN ,_, the_DT selection_NN of_IN genes_NNS should_MD be_VB treated_VBN with_IN caution_NN
+        and_CC cross-validation_JJ by_IN independent_JJ methods_NNS should_MD be_VB
+        applied_VBN if_IN hypotheses_NNS are_VBP to_TO be_VB derived_VBN from_IN the_DT selected_VBN
+        genes_NNS ._. Pairwise_NNP comparisons_NNS of_IN groups_NNS might_MD be_VB more_RBR
+        appropriate_JJ in_IN such_JJ a_DT situation_NN ._.
+        In_IN conclusion_NN ,_, permutation-validated_JJ PCA_NNP can_MD be_VB used_VBN to_TO
+        extract_VB the_DT leading_VBG source_NN of_IN variance_NN from_IN microarray_NN
+        data_NNS ,_, to_TO visualize_VB relationships_NNS between_IN genes_NNS and_CC
+        hybridizations_NNS and_CC to_TO select_VB informative_JJ genes_NNS in_IN a_DT
+        statistically_RB reliable_JJ manner_NN ._. This_DT selection_NN accounts_NNS for_IN
+        the_DT level_NN of_IN reproducibility_NN of_IN replicates_NNS or_CC group_NN
+        structure_NN as_RB well_RB as_IN gene-specific_JJ scatter_NN ._.
+      
+      
+        Materials_NNS and_CC methods_NNS
+        
+          Sample_NNP processing_NN and_CC hybridization_NN
+          A_DT subset_NN of_IN the_DT data_NNS from_IN Spellman_NNP 
+          et_CC al_NN ._. [_NN 23_CD ]_NN was_VBD used_VBN ._. To_TO acquire_VB
+          our_PRP$ own_JJ data_NNS ,_, microarrays_NNS were_VBD manufactured_VBN ,_, mice_NNS treated_VBN
+          and_CC total_JJ brain_NN RNA_NNP extracted_VBD ,_, labeled_VBN and_CC hybridized_JJ as_IN
+          described_VBN in_IN [_NN 18_CD ]_NN ._. Briefly_NNP ,_, mice_NNS were_VBD killed_VBN after_IN the_DT
+          end_NN of_IN treatment_NN ,_, RNA_NNP was_VBD extracted_VBN by_IN RNeasy_NNP and_CC TRIZOL_NNP
+          procedure_NN ._. Total_NNP RNA_NNP (_( 100_CD μg_NN )_) was_VBD fluorescence-labeled_JJ by_IN
+          oligo-d_JJ T-_NNP primed_VBN reverse_VB transcription_NN to_TO cDNA_NN in_IN the_DT
+          presence_NN of_IN Cy_NNP 3_CD -_: dUTP_NN as_IN described_VBN by_IN Eisen_NNP and_CC Brown_NNP [_NN
+          31_CD ]_NN ._. After_IN reverse_NN transcription_NN ,_, total_JJ brain_NN Cy_NNP 3_CD -_: labeled_VBN
+          cDNA_NN from_IN each_DT animal_NN was_VBD hybridized_JJ to_TO a_DT microarray_NN ._.
+          Fluorescence_NNP intensity_NN was_VBD detected_VBN using_VBG the_DT Genetic_NNP
+          Microsystems_NNPS GMS_NNP 418_CD Array_NNP Scanner_NNP ._. Raw_NNP data_NNS were_VBD
+          assessed_VBN with_IN the_DT Spectrum_NNP vs_NNS ._. 3_CD ._. 2_LS image-analysis_JJ software_NN
+          developed_VBN by_IN Chen_NNP 
+          et_CC al_NN ._. [_NN 32_CD ]_NN ._.
+        
+        
+          Data_NNP preprocessing_VBG
+          Data_NNS from_IN Spellman_NNP 
+          et_CC al_NN ._. [_NN 23_CD ]_NN were_VBD also_RB used_VBN by_IN
+          Fellenberg_NNP 
+          et_CC al_NN ._. [_NN 14_CD ]_NN ;_: we_PRP did_VBD not_RB modify_VB
+          the_DT described_VBD preprocessing_VBG ._. The_DT two_CD datasets_NNS from_IN our_PRP$
+          lab_NN were_VBD preprocessed_JJ in_IN the_DT following_VBG manner_NN ._. Matrix_NNP
+          rows_NNS (_( genes_NNS )_) with_IN missing_VBG observations_NNS were_VBD excluded_VBN from_IN
+          the_DT datasets_NNS ,_, resulting_VBG in_IN data_NNS without_IN missing_VBG values_NNS ._.
+          To_TO normalize_VB and_CC compare_VB the_DT different_JJ hybridizations_NNS to_TO
+          each_DT other_JJ ,_, the_DT intensity_NN measured_VBN at_IN each_DT spot_NN of_IN the_DT
+          arrays_NNS was_VBD divided_VBN by_IN the_DT centered_VBN median_NN of_IN the_DT
+          intensities_NNS measured_VBN at_IN the_DT corresponding_JJ spot_NN in_IN the_DT
+          reference_NN groups_NNS ._. Thus_RB ,_, every_DT single_JJ hybridization_NN was_VBD
+          normalized_JJ against_IN the_DT reference_NN groups_NNS by_IN computing_VBG the_DT
+          log_NN 
+          2_CD of_IN the_DT ratios_NNS (_( the_DT mean_NN of_IN groups_NNS
+          so_RB ,_, ho_NN and_CC wo_MD for_IN the_DT CRH-R_NNP 1_CD data_NNS and_CC group_NN c_SYM 28_CD for_IN the_DT
+          antidepressant_NN data_NN )_) ._. Therefore_RB ,_, these_DT groups_NNS do_VBP not_RB
+          appear_VB in_IN Figures_NNS 5_CD to_TO 8_CD ._. Given_VBN an_DT 
+          n_NN ×_NN 
+          p_NN data_NNS matrix_NN ,_, the_DT following_VBG model_NN
+          [_NN 1_CD ,_, 2_CD ]_NN can_MD be_VB stated_VBN :_:
+          
+          X_NN 
+          gj_NN  =_SYM μ_NN +_NN α_NN 
+          
+            g_SYM 
+           +_NN β_NN 
+          
+            j_NN 
+           +_NN δ_NN 
+          
+            gj_NN 
+           +_NN ε_NN 
+          
+            gj_NN 
+           
+          In_IN this_DT model_NN ,_, 
+          X_NNP 
+          gi_NN  is_VBZ the_DT log-ratio_JJ of_IN gene_NN 
+          g_SYM under_IN experimental_JJ condition_NN 
+          j_NN ,_, α_NN 
+          
+            g_SYM 
+           is_VBZ the_DT normalizing_VBG effect_NN for_IN gene_NN 
+          g_SYM (_( row_NN )_) ,_, β_NN 
+          
+            j_NN 
+           is_VBZ the_DT experimental_JJ variance_NN effect_NN for_IN j_NN (_( column_NN )_) ,_,
+          δ_NN 
+          
+            gj_NN 
+           is_VBZ the_DT differential_NN gene_NN expression_NN for_IN gene_NN 
+          g_SYM under_IN experimental_JJ condition_NN j_NN
+          and_CC ε_NN 
+          
+            gj_NN 
+           is_VBZ the_DT random_JJ error_NN ._.
+          To_TO estimate_VB the_DT interaction_NN term_NN δ_NN 
+          
+            gj_NN 
+           ,_, several_JJ other_JJ effects_NNS must_MD be_VB controlled_VBN :_: as_IN α_NN 
+          
+            g_SYM 
+           reflects_VBZ the_DT relation_NN of_IN experiment_NN RNA_NNP to_TO
+          normalizing_VBG RNA_NNP and_CC is_VBZ of_IN no_DT biological_JJ interest_NN ,_, it_PRP can_MD
+          be_VB controlled_VBN by_IN mean_NN centering_VBG rows_NNS ._. β_NN 
+          
+            j_NN 
+           reflects_VBZ the_DT global_JJ variance_NN in_IN RNA_NNP preparation_NN ,_,
+          labeling_VBG efficacy_NN and_CC hybridization_NN quality_NN as_RB well_RB as_IN
+          other_JJ sources_NNS of_IN experimental_JJ variance_NN between_IN the_DT arrays_NNS
+          and_CC can_MD be_VB controlled_VBN by_IN standardizing_VBG the_DT matrix_NN
+          columns_NNS ._. Doing_VBG replicates_NNS enables_VBZ control_NN of_IN ε_NN 
+          
+            gj_NN 
+           ._. The_DT term_NN δ_NN 
+          
+            gj_NN 
+           can_MD thus_RB be_VB obtained_VBN by_IN data_NNS polishing_VBG|NN [_NN 9_CD ]_NN ,_, that_WDT
+          is_VBZ ,_, the_DT matrix_NN is_VBZ iteratively_RB subjected_VBN to_TO column_NN
+          standardization_NN and_CC row_NN mean_NN centering_VBG until_IN convergence_NN
+          is_VBZ reached_VBN ._. This_DT polished_JJ matrix_NN was_VBD used_VBN as_IN the_DT basis_NN
+          for_IN multivariate_NN analysis_NN ._.
+        
+      
+    
+  

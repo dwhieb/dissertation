@@ -1,0 +1,1209 @@
+
+  
+    
+      
+        Background_NNP
+        Genomics_NNP sequencing_VBG projects_NNS have_VBP rapidly_RB generated_VBN
+        tremendous_JJ amount_NN of_IN information_NN ._. At_IN the_DT time_NN of_IN writing_VBG ,_,
+        the_DT NCBI_NNP UniGene_NNP database_NN [_NN 1_CD ]_NN
+        http_NN :_: /_NN /_NN www_NN ._. ncbi_NN ._. nlm_NN ._. nih_NN ._. gov_NN /_NN UniGenecontained_NNP 96_CD ,_, 109_CD Homo_NN
+        sapiens_JJ clusters_NNS and_CC 85_CD ,_, 047_CD Mus_NNP musculus_JJ clusters_NNS ._.
+        Predictions_NNS from_IN the_DT Human_NNP Genome_NNP Project_NNP [_NN 2_CD ]_NN and_CC Celera_NNP
+        Genomics_NNP [_NN 3_CD ]_NN suggest_VBP there_RB are_VBP about_IN 26_CD ,_, 000_CD -_: 40_CD ,_, 000_CD human_JJ
+        genes_NNS ._. Other_JJ recent_JJ studies_NNS suggest_VBP that_IN these_DT numbers_NNS may_MD
+        be_VB an_DT underestimation_NN and_CC that_IN the_DT human_JJ genome_NN appears_VBZ
+        more_RBR complicated_JJ [_NN 4_CD ]_NN ._. Understanding_NNP the_DT functions_NNS of_IN
+        such_JJ a_DT large_JJ number_NN of_IN genes_NNS has_VBZ been_VBN an_DT unprecedented_JJ
+        challenge_NN for_IN functional_JJ genomics_NNS research_NN ._. As_IN the_DT array_NN of_IN
+        hope_VBP in_IN recent_JJ years_NNS ,_, gene_NN expression_NN array_NN technology_NN has_VBZ
+        quickly_RB grown_VBN into_IN a_DT powerful_JJ tool_NN to_TO chart_VB a_DT gene_NN atlas_NNS in_IN
+        various_JJ biological_JJ sources_NNS and_CC under_IN various_JJ conditions_NNS in_IN
+        a_DT massively_RB parallel_JJ manner_NN [_NN 5_CD 6_CD 7_CD ]_NN ._. Facing_NNP the_DT
+        challenge_NN of_IN annotating_VBG such_JJ a_DT huge_JJ amount_NN of_IN genomic_JJ data_NNS ,_,
+        increasing_VBG array_NN information_NN density_NN and_CC improving_VBG analysis_NN
+        algorithms_NNS have_VBP become_VBN two_CD critical_JJ research_NN areas_NNS to_TO
+        ensure_VB that_DT gene_NN expression_NN profiling_VBG proceeds_NNS in_IN an_DT
+        efficient_JJ and_CC cost_VB effective_JJ manner_NN ._.
+        Take_VB an_DT Affymetrix_NNP high-density_JJ oligonucleotide_NN GeneChip_NNP
+        http_NN :_: /_NN /_NN www_NN ._. affymetrix_NN ._. comfor_NN example_NN ._. Firstly_NNP ,_, its_PRP$ human_JJ
+        U_NNP 95_CD series_NN chip_NN consists_VBZ of_IN 5_CD chip_NN types_NNS with_IN 12_CD ,_, 000_CD coding_VBG
+        clusters_NNS each_DT ,_, which_WDT makes_VBZ it_PRP expensive_JJ to_TO profile_VB all_DT the_DT
+        human_JJ genes_NNS in_IN samples_NNS of_IN interest_NN ._. Can_MD a_DT gene_NN chip_NN take_NN
+        more_JJR genes_NNS ?_. Comparing_VBG its_PRP$ U_NNP 95_CD chip_NN and_CC Human_NNP 6800_CD chip_NN ,_,
+        Affymetrix_NNP has_VBZ already_RB increased_VBN chip_NN information_NN density_NN
+        by_IN 20_CD %_NN by_IN reducing_VBG the_DT number_NN of_IN probe_NN pairs_NNS per_IN gene_NN from_IN
+        20_CD to_TO 16_CD ._. Since_IN demand_NN for_IN higher_JJR information_NN density_NN has_VBZ
+        still_RB not_RB been_VBN met_VBN ,_, it_PRP is_VBZ of_IN interest_NN to_TO study_VB the_DT probe_NN
+        number_NN effect_NN in_IN detail_NN ._. Secondly_RB ,_, most_RBS optional_JJ research_NN
+        efforts_NNS focus_VBP on_IN the_DT downstream_JJ statistical_JJ and_CC clustering_VBG
+        analysis_NN ._. However_RB ,_, on_IN the_DT upstream_JJ side_NN ,_, Affymetrix_NNP chip_NN
+        users_NNS are_VBP still_RB dependent_JJ on_IN the_DT Microarray_NNP Suite_NNP ®_NN software_NN
+        that_WDT comes_VBZ with_IN the_DT measurement_NN system_NN to_TO interpret_VB raw_JJ
+        data_NNS ._. The_DT Affymetrix_NNP algorithm_NN implemented_VBN in_IN its_PRP$
+        Microarray_NNP Suite_NNP 4_CD ._. 0_CD package_NN (_( referred_VBD hereafter_RB as_IN MAS_NNP 4_LS )_)
+        uses_VBZ empirical_JJ rules_NNS derived_VBN from_IN its_PRP$ internal_JJ research_NN
+        data_NNS to_TO assign_VB absolute_JJ calls_NNS for_IN the_DT significance_NN of_IN gene_NN
+        presence_NN and_CC assign_VB fold_VB change_NN calls_VBZ for_IN the_DT significance_NN
+        of_IN expression_NN variations_NNS ._. Such_JJ discrete_JJ categorizations_NNS are_VBP
+        not_RB the_DT most_RBS appropriate_JJ language_NN to_TO describe_VB quantities_NNS of_IN
+        continuous_JJ nature_NN ._. Although_IN it_PRP is_VBZ well_RB known_VBN that_WDT fold_VBP
+        change_NN numbers_NNS have_VBP defined_VBN behaviors_NNS of_IN uncertainty_NN ,_, there_EX
+        are_VBP very_RB few_JJ studies_NNS in_IN this_DT area_NN ._. How_WRB does_VBZ one_CD assign_VB
+        statistical_JJ significance_NN to_TO expression_NN analysis_NN results_NNS ?_.
+        This_DT work_NN presents_VBZ our_PRP$ preliminary_JJ research_NN results_NNS for_IN the_DT
+        two_CD questions_NNS raised_VBD above_IN ._.
+        The_DT Affymetrix_NNP gene_NN chip_NN layout_NN used_VBN in_IN this_DT study_NN
+        contains_VBZ the_DT same_JJ number_NN of_IN perfect_JJ match_NN (_( PM_NNP )_) probes_NNS and_CC
+        mismatch_NN (_( MM_NNP )_) probes_NNS ._. MAS_NNP 4_CD uses_VBZ differences_NNS between_IN these_DT
+        two_CD types_NNS of_IN probes_NNS for_IN gene_NN expression_NN signals_NNS ._. The_DT
+        primary_JJ goal_NN of_IN Match-_NNP Only_RB Integral_NNP Distribution_NN (_( MOID_NNP )_)
+        algorithm_NN is_VBZ to_TO discard_VB mismatch_NN information_NN ,_, which_WDT allows_VBZ
+        immediate_JJ doubling_NN of_IN the_DT chip_NN information_NN density_NN ._. In_IN this_DT
+        study_NN ,_, the_DT performance_NN of_IN both_DT algorithms_NNS were_VBD benchmarked_JJ
+        using_VBG 366_CD known_VBN fold_VB change_NN values_NNS derived_VBN from_IN 34_CD spiking_VBG
+        experiments_NNS ._. Their_PRP$ false_JJ positive_JJ tendencies_NNS were_VBD assessed_VBN
+        by_IN no-change_JJ expression_NN experiments_NNS ._. Computer_NN simulations_NNS
+        were_VBD used_VBN to_TO study_VB their_PRP$ noise_NN tolerances_NNS ,_, and_CC to_TO determine_VB
+        the_DT minimum_JJ number_NN of_IN probes_NNS required_VBN for_IN chip_NN
+        analysis_NN ._.
+        The_DT idea_NN of_IN using_VBG PM-only_NNP information_NN is_VBZ based_VBN on_IN the_DT
+        following_JJ observations_NNS :_: MAS_NNP 4_CD essentially_RB discards_NNS the_DT
+        one-one_JJ correspondence_NN between_IN a_DT PM_NNP and_CC its_PRP$ MM_NNP partner_NN (_( for_IN
+        details_NNS ,_, see_VB materials_NNS and_CC methods_NNS on_IN MAS_NNP 4_CD algorithm_NN for_IN
+        absolute_JJ analysis_NN )_) and_CC still_RB gives_VBZ satisfactory_JJ
+        interpretation_NN ,_, which_WDT suggests_VBZ the_DT contribution_NN of_IN MM_NNP
+        probes_NNS might_MD be_VB approximated_JJ in_IN a_DT nonspecific_JJ manner_NN
+        overall_JJ ._. After_IN we_PRP designed_VBD the_DT first_JJ mismatch-free_JJ gene_NN
+        chip_NN (_( GNF-HS_NNP 1_LS )_) in_IN July_NNP 1999_CD ,_, the_DT match-only_JJ expression_NN
+        analysis_NN idea_NN was_VBD proposed_VBN in_IN other_JJ independent_JJ studies_NNS as_RB
+        well_RB ._. Li_NNP (_( submitted_VBN ,_, 2001_CD )_) adjusted_VBN their_PRP$ previous_JJ
+        model-based_JJ analysis_NN of_IN oligonucleotide_NN arrays_NNS [_NN 8_CD ]_NN to_TO
+        PM-only_NNP calculations_NNS and_CC found_VBD their_PRP$ results_NNS correlate_VBP well_RB
+        with_IN that_DT of_IN using_VBG PM_NNP and_CC MM_NNP information_NN ._. In_IN addition_NN ,_, the_DT
+        idea_NN is_VBZ endorsed_VBN by_IN recent_JJ studies_NNS of_IN Naef_NNP 
+        et_CC al_NN [_NN 9_CD ]_NN and_CC Irizarry_NNP 
+        et_CC al_NN (_( 2002_CD ,_, in_IN prepare_VB )_)
+        http_NN :_: /_NN /_NN biosun_NN 01_CD ._. biostat_NN ._. jhsph_NN ._. edu_NN /_NN ~_NN ririzarr_NN /_NN papers_NNS /_NN ._.
+        One_CD difficulty_NN in_IN comparing_VBG algorithms_NNS for_IN gene_NN
+        expression_NN analysis_NN is_VBZ the_DT lack_NN of_IN "_'' known_VBN "_'' results_NNS ._. Here_RB we_PRP
+        overcome_VBP the_DT problem_NN by_IN resorting_VBG to_TO a_DT spiking_VBG set_VBN and_CC set_NN
+        of_IN no-change_JJ experiments_NNS ,_, where_WRB results_NNS are_VBP unambiguous_JJ ._.
+        Model-based_NNP methods_NNS [_NN 8_CD ]_NN generally_RB require_VB a_DT reasonable_JJ
+        numbers_NNS of_IN training_NN experiments_NNS of_IN the_DT same_JJ chip_NN type_NN ,_,
+        among_IN which_WDT probes_NNS under_IN study_NN give_VB significantly_RB large_JJ
+        signals_NNS in_IN at_IN least_JJS some_DT experiments_NNS ._. Considering_VBG the_DT fact_NN
+        that_IN the_DT 34_CD spiking_VBG experiments_NNS used_VBN were_VBD obtained_VBN by_IN three_CD
+        different_JJ chip_NN types_NNS ,_, and_CC in_IN addition_NN some_DT experiments_NNS are_VBP
+        replicates_NNS under_IN different_JJ concentrations_NNS and_CC hybridization_NN
+        conditions_NNS ,_, it_PRP is_VBZ impractical_JJ to_TO sufficiently_RB train_VB
+        model-based_JJ algorithms_NNS in_IN this_DT study_NN ._. We_PRP limit_VBP our_PRP$ study_NN to_TO
+        MOID_NNP and_CC MAS_NNP 4_CD ,_, where_WRB training_NN is_VBZ not_RB required_VBN ._.
+        In_IN the_DT materials_NNS and_CC methods_NNS section_NN ,_, we_PRP summarize_VB
+        Affymetrix_NNP chip_NN technologies_NNS and_CC describe_VB the_DT MOID_NNP
+        algorithms_NNS in_IN detail_NN ._. MAS_NNP 4_CD algorithms_NNS for_IN both_DT absolute_JJ
+        expression_NN analysis_NN and_CC comparison_NN analysis_NN are_VBP included_VBN
+        afterwards_RB ._. The_DT benchmarks_NNS used_VBN for_IN algorithm_NN comparison_NN
+        were_VBD explained_VBN and_CC comparison_NN results_NNS were_VBD shown_VBN in_IN the_DT
+        results_NNS session_NN ._. Issues_NNS such_JJ as_IN noise-tolerance_JJ of_IN both_DT
+        algorithms_NNS and_CC further_JJ reduction_NN of_IN the_DT probe_NN set_VBD size_NN are_VBP
+        also_RB included_VBN ._. We_PRP discuss_VBP generalization_NN of_IN the_DT
+        normalization_NN algorithm_NN ,_, which_WDT may_MD be_VB of_IN interest_NN to_TO other_JJ
+        researchers_NNS ._. Finally_RB ,_, the_DT main_JJ differences_NNS between_IN MAS_NNP 4_CD and_CC
+        MOID_NNP are_VBP summarized_VBD in_IN a_DT tabular_NN form_NN as_IN conclusions_NNS ._.
+      
+      
+        Results_NNS and_CC Discussion_NNP
+        
+          Spiking_NNP experiments_NNS
+          Spiking_NNP experiments_NNS were_VBD done_VBN by_IN adding_VBG to_TO tissue_NN
+          samples_NNS a_DT certain_JJ number_NN of_IN control_NN genes_NNS with_IN known_VBN
+          concentrations_NNS ._. Since_IN signal_NN intensity_NN is_VBZ not_RB exactly_RB
+          proportional_JJ to_TO gene_NN concentration_NN across_IN different_JJ probe_NN
+          sets_NNS ,_, only_RB the_DT fold_VB change_NN values_NNS of_IN each_DT gene_NN between_IN
+          comparisons_NNS are_VBP considered_VBN reliable_JJ and_CC used_VBN to_TO benchmark_NN
+          both_DT algorithms_NNS ._. We_PRP are_VBP fortunate_JJ to_TO have_VB access_NN to_TO 34_CD
+          spiking_VBG experiments_NNS done_VBN previously_RB in_IN GNF_NNP for_IN a_DT
+          hybridization_NN protocol_NN study_NN ,_, where_WRB 366_CD independent_JJ known_VBN
+          fold_VB change_NN numbers_NNS were_VBD derived_VBN ._. These_DT experiments_NNS
+          covered_VBD three_CD Affymetrix_NNP chip_NN types_NNS :_: Hu_NNP 35_CD kSubA_NN ,_, Hu_NNP 6800_CD ,_,
+          and_CC Mu_NNP 11_CD kSubA_NN ._. True_JJ experimental_JJ fold_VB change_NN values_NNS ,_, 
+          f_SYM 
+          exp_NN ,_, range_NN from_IN 1_CD ._. 0_CD to_TO 10_CD ._. 0_CD ._. The_DT raw_JJ
+          data_NN (_( 34_CD CEL_NNP files_NNS )_) and_CC experimental_JJ fold_VB change_NN values_NNS
+          are_VBP available_JJ from_IN
+          http_NN :_: /_NN /_NN carrier_NN ._. gnf_NN ._. org_NN /_NN publications_NNS /_NN MOID_NNP ._.
+          We_PRP applied_VBD both_DT algorithms_NNS to_TO these_DT array_NN data_NN and_CC the_DT
+          fold_VB change_NN numbers_NNS calculated_VBN were_VBD compared_VBN to_TO known_VBN
+          experimental_JJ values_NNS ._. Because_IN of_IN the_DT way_NN we_PRP defined_VBD the_DT
+          base_NN and_CC experiment_NN ,_, 
+          f_SYM 
+          exp_NN are_VBP always_RB no_RB less_JJR than_IN 1_CD ._. 0_CD ._. For_IN
+          MAS_NNP 4_CD ,_, we_PRP used_VBD all_PDT the_DT default_NN parameters_NNS used_VBN by_IN the_DT
+          Microarray_NNP Suite_NNP 4_CD ._. 0_CD program_NN in_IN the_DT calculation_NN ._. For_IN
+          MOID_NNP ,_, we_PRP found_VBD using_VBG 70_CD percentile_NN for_IN 
+          both_DT pct_NN and_CC 
+          pct_NN 
+          
+            f_SYM 
+           (_( defined_VBN in_IN materials_NNS and_CC methods_NNS )_) gave_VBD optimal_NN
+          performance_NN ._. Figure_NN 1_CD shows_VBZ the_DT comparison_NN results_NNS (_( data_NNS
+          available_JJ from_IN http_NN :_: /_NN /_NN carrier_NN ._. gnf_NN ._. org_NN /_NN publications_NNS /_NN MOID_NNP )_) ._.
+          Two_CD algorithms_NNS give_VBP virtually_RB similar_JJ performance_NN ._.
+          In_IN the_DT comparison_NN ,_, we_PRP defined_VBD relative_JJ error_NN ,_, 
+          R_NN 
+          err_VBP ,_, as_IN the_DT following_VBG to_TO benchmark_NN
+          each_DT algorithm_NN ,_,
+          
+          R_NN 
+          err_VBP 1_CD =_SYM <_NN |_NN (_( 
+          f_SYM 
+          calc_NN -_: 
+          f_SYM 
+          exp_NN >_NN )_) /_NN 
+          f_SYM 
+          exp_NN |_NN >_NN 
+          all_DT pairs_NNS ,_,
+          
+          R_NN 
+          err_VBP 2_CD =_SYM <_NN |_NN (_( 1_CD /_NN 
+          f_SYM 
+          calc_NN -_: 1_LS )_) /_NN 
+          f_SYM 
+          exp_NN )_) ·_NN 
+          f_SYM 
+          exp_NN |_NN >_NN 
+          all_DT pairs_NNS ,_,
+          and_CC
+          
+          R_NN 
+          err_VBP =_SYM <_NN |_NN (_( 
+          f_SYM 
+          exp_NN /_NN 
+          f_SYM 
+          calc_NN -_: 
+          f_SYM 
+          calc_NN /_NN 
+          f_SYM 
+          exp_NN )_) |_NN >_NN 
+          all_DT pairs_NNS ._.
+          Where_WRB 
+          f_SYM 
+          exp_NN and_CC 
+          f_SYM 
+          calc_NN are_VBP fold_VB change_NN values_NNS from_IN
+          experiment_NN and_CC calculation_NN ,_, respectively_RB ._. 
+          R_NN 
+          err_VBP 1_CD and_CC 
+          R_NN 
+          err_VBP 2_CD are_VBP defined_VBN symmetrically_RB for_IN
+          relative_JJ errors_NNS of_IN 
+          f_SYM 
+          exp_NN and_CC 1_CD /_NN 
+          f_SYM 
+          exp_NN ,_, reflecting_VBG the_DT fact_NN that_DT base_NN
+          and_CC experiment_NN can_MD be_VB defined_VBN arbitrarily_RB ,_, and_CC the_DT final_JJ 
+          R_NN 
+          err_VBP is_VBZ defined_VBN as_IN the_DT average_NN of_IN the_DT
+          two_CD ._. Each_DT relative_JJ error_NN number_NN is_VBZ an_DT average_NN over_IN all_PDT
+          the_DT 366_CD data_NN points_NNS ._.
+          It_PRP seems_VBZ the_DT two_CD algorithms_NNS have_VBP very_RB close_JJ
+          performance_NN Table_NNP 1_CD ._. They_PRP all_DT have_VBP greater_JJR error_NN margins_NNS
+          for_IN calculating_VBG down-regulated_JJ fold_VB changes_NNS (_( captured_VBN by_IN 
+          R_NN 
+          err_VBP 2_LS )_) than_IN up-regulated_JJ ones_NNS
+          (_( captured_VBN by_IN 
+          R_NN 
+          err_VBP 1_LS )_) ._. MAS_NNP 4_CD is_VBZ more_RBR asymmetric_JJ than_IN
+          MOID_NNP in_IN this_DT aspect_NN ._.
+        
+        
+          No-_NNP Change_NNP experiments_NNS
+          Another_DT set_NN of_IN experiments_NNS used_VBN for_IN benchmarking_VBG
+          algorithms_NNS is_VBZ the_DT comparison_NN between_IN two_CD experiments_NNS
+          where_WRB mRNA_NN prepared_VBN from_IN the_DT same_JJ tissue_NN sample_NN was_VBD
+          hybridized_JJ twice_RB under_IN slightly_RB different_JJ conditions_NNS ._.
+          Those_DT fold_VB change_NN numbers_NNS that_WDT deviate_NN largely_RB from_IN 1_CD ._. 0_CD
+          are_VBP considered_VBN to_TO be_VB false_JJ positives_NNS ._. When_WRB we_PRP applied_VBD the_DT
+          algorithms_NNS to_TO ten_CD experiments_NNS done_VBN with_IN either_DT human_JJ
+          brain_NN or_CC human_JJ lung_NN replicate_VB samples_NNS (_( same_JJ mRNA_NN ,_,
+          slightly_RB different_JJ hybridization_NN conditions_NNS )_) ,_, the_DT results_NNS
+          were_VBD all_DT similar_JJ ._. Figure_NN 2_CD shows_VBZ one_CD of_IN the_DT typical_JJ
+          comparison_NN results_NNS ._. When_WRB only_RB "_'' Present_VB "_'' genes_NNS (_( defined_VBN by_IN
+          MAS_NNP 4_LS )_) were_VBD taken_VBN into_IN account_NN ,_, 80_CD %_NN of_IN fold_VB change_NN numbers_NNS
+          were_VBD spread_VBN across_IN 0_CD ._. 54_CD for_IN MAS_NNP 4_CD and_CC only_RB 0_CD ._. 30_CD for_IN MOID_NNP ._.
+          Clearly_RB MOID_NNP assigns_VBZ much_RB less_RBR false_JJ positive_JJ fold_VB
+          changes_NNS than_IN MAS_NNP 4_CD does_VBZ in_IN this_DT comparison_NN ._. If_IN all_PDT the_DT
+          genes_NNS were_VBD counted_VBN ,_, the_DT spreads_NNS of_IN MAS_NNP 4_CD and_CC MOID_NNP results_NNS
+          would_MD be_VB 0_CD ._. 89_CD and_CC 0_CD ._. 29_CD for_IN the_DT same_JJ data_NN sets_NNS ._. This_DT test_NN
+          suggests_VBZ MOID_NNP is_VBZ more_RBR robust_JJ than_IN MAS_NNP 4_CD ._.
+        
+        
+          Reduced_NNP Probe_NNP Set_NNP Simulation_NN
+          In_IN the_DT studies_NNS above_IN ,_, we_PRP demonstrated_VBD the_DT feasibility_NN
+          of_IN a_DT match-only_JJ gene_NN chip_NN design_NN based_VBN on_IN the_DT MOID_NNP
+          algorithm_NN ._. In_IN order_NN to_TO further_VB increase_NN chip_NN information_NN
+          density_NN ,_, it_PRP is_VBZ of_IN common_JJ interest_NN to_TO understand_VB how_WRB many_JJ
+          probes_NNS are_VBP sufficient_JJ for_IN expression_NN analysis_NN and_CC push_VB
+          for_IN the_DT lower_JJR limit_NN of_IN the_DT size_NN of_IN a_DT probe_NN set_VBN ._. This_DT is_VBZ
+          done_VBN via_IN computer_NN simulations_NNS ._.
+          In_IN the_DT simulation_NN ,_, for_IN each_DT probe_NN set_VBD ,_, a_DT subset_NN of_IN 
+          n_NN 
+          
+            r_LS 
+           probes_NNS were_VBD randomly_RB chosen_VBN to_TO be_VB used_VBN in_IN the_DT
+          calculation_NN ._. Both_DT the_DT spiking_VBG and_CC no-change_JJ calculations_NNS
+          presented_VBN above_IN were_VBD repeated_VBN with_IN the_DT selected_VBN subset_NN ,_,
+          as_IN we_PRP gradually_RB reduced_VBD 
+          n_NN 
+          
+            r_LS 
+           ._. Figure_NN 3_CD and_CC figure_NN 4_CD show_NN the_DT results_NNS for_IN the_DT
+          spiking_VBG calculation_NN and_CC no-change_JJ calculation_NN ,_,
+          respectively_RB ._. As_IN the_DT graph_NN suggested_VBD ,_, accuracy_NN of_IN MOID_NNP is_VBZ
+          essentially_RB unaffected_JJ while_IN reducing_VBG the_DT number_NN of_IN
+          probes_NNS down_IN to_TO ten_CD ._. This_DT result_NN enables_VBZ us_PRP to_TO almost_RB
+          triple_VB the_DT amount_NN of_IN clusters_NNS one_PRP can_MD put_VB on_IN a_DT gene_NN chip_NN
+          using_VBG MOID_NNP design_NN ._. Combined_VBN with_IN other_JJ new_JJ design_NN ideas_NNS ,_,
+          MOID_NNP lays_VBZ the_DT foundation_NN for_IN the_DT first_JJ universal_JJ human_JJ
+          chip_NN that_WDT contains_VBZ 75_CD ,_, 000_CD UniGene_NNP clusters_NNS (_( release_NN 116_CD )_) ._.
+          The_DT results_NNS have_VBP recently_RB been_VBN validated_JJ and_CC led_VBN to_TO many_JJ
+          interesting_JJ discoveries_NNS ,_, which_WDT provides_VBZ indirect_JJ support_NN
+          for_IN MOID_NNP (_( to_TO be_VB submitted_VBN )_) ._.
+        
+        
+          Noise_NNP Tolerance_NNP of_IN both_DT Algorithms_NNP
+          Computer_NN simulations_NNS also_RB enable_VBP us_PRP to_TO study_VB the_DT
+          behaviors_NNS of_IN both_DT algorithms_NNS under_IN noise_NN disturbance_NN ._. In_IN
+          simulations_NNS ,_, a_DT subset_NN of_IN 
+          n_NN 
+          
+            n_NN 
+           probes_NNS were_VBD randomly_RB chosen_VBN ,_, their_PRP$ PM_NNP values_NNS were_VBD
+          multiplied_VBN by_IN ten_CD to_TO mimic_VB the_DT effect_NN of_IN serious_JJ noise_NN
+          effect_NN ._. We_PRP repeated_VBD the_DT calculations_NNS for_IN both_DT spiking_VBG
+          experiments_NNS and_CC no-change_JJ experiments_NNS ,_, while_IN gradually_RB
+          increasing_VBG 
+          n_NN 
+          
+            n_NN 
+           ._. Figure_NN 5_CD and_CC figure_NN 6_CD show_NN the_DT results_NNS for_IN spiking_VBG
+          calculation_NN and_CC no-change_JJ calculation_NN ,_, respectively_RB ._. As_IN
+          the_DT graph_NN suggested_VBD ,_, both_DT MAS_NNP 4_CD and_CC MOID_NNP can_MD resist_VB noise_NN
+          perturbation_NN up_IN to_TO 2_CD cells_NNS out_IN of_IN 16_CD ,_, the_DT test_NN favors_VBZ
+          MOID_NNP slightly_RB ._.
+        
+        
+          Probe-_NNP Specific_JJ Effect_NN
+          MOID_NNP is_VBZ based_VBN on_IN the_DT assumption_NN that_IN the_DT background_NN
+          for_IN probes_NNS is_VBZ mainly_RB non-probe-specific_JJ ._. The_DT results_NNS
+          indicate_VBP that_IN this_DT assumption_NN is_VBZ sound_NN overall_JJ ._. However_RB ,_,
+          it_PRP is_VBZ clear_JJ that_IN by_IN better_JJR understanding_VBG probe-specific_JJ
+          behaviors_NNS ,_, the_DT analysis_NN accuracy_NN can_MD be_VB further_RBR improved_VBN ._.
+          For_IN instance_NN ,_, probe_NN response_NN factors_NNS might_MD be_VB derived_VBN by_IN
+          accumulating_VBG and_CC studying_VBG many_JJ experiments_NNS ._. If_IN there_EX are_VBP
+          a_DT sufficient_JJ number_NN of_IN experiments_NNS ,_, where_WRB the_DT target_NN gene_NN
+          is_VBZ significantly_RB present_JJ ,_, probe_NN response_NN factors_NNS may_MD be_VB
+          retrieved_VBN by_IN some_DT statistical_JJ modeling_NN ._. A_DT recent_JJ study_NN [_NN
+          8_CD ]_NN provides_VBZ an_DT important_JJ example_NN in_IN this_DT direction_NN ._.
+          Researchers_NNS at_IN Corimbia_NNP http_NN :_: /_NN /_NN www_NN ._. corimbia_NN ._. comalso_NN
+          developed_VBD some_DT proprietary_JJ methods_NNS to_TO identify_VB "_'' good_JJ "_''
+          probes_NNS and_CC assign_VB different_JJ weights_NNS to_TO them_PRP to_TO improve_VB
+          data_NNS analysis_NN ._. Efforts_NNS can_MD be_VB made_VBN along_IN similar_JJ lines_NNS
+          with_IN the_DT MOID_NNP algorithm_NN in_IN the_DT future_NN ._. If_IN probe_NN response_NN
+          factors_NNS can_MD be_VB calculated_VBN ,_, the_DT "_'' bad_JJ "_'' but_CC "_'' stable_JJ "_'' probes_NNS
+          can_MD be_VB scaled_VBN ,_, and_CC the_DT distribution_NN may_MD be_VB expected_VBN to_TO be_VB
+          closer_JJR to_TO normal_JJ ,_, therefore_RB expression_NN levels_NNS and_CC their_PRP$
+          uncertainties_NNS can_MD be_VB calculated_VBN in_IN a_DT more_RBR statistically_RB
+          sound_NN manner_NN ._.
+          Future_JJ studies_NNS for_IN more_RBR accurate_JJ background_NN
+          subtraction_NN models_NNS may_MD also_RB improve_VB the_DT fold_VB change_NN
+          distribution_NN ;_: therefore_RB yield_VB better_JJR statistics_NNS for_IN fold_VB
+          change_NN evaluation_NN as_RB well_RB ._. The_DT relative_JJ error_NN in_IN spiking_VBG
+          experiments_NNS (_( 28_CD %_NN )_) suggests_VBZ that_IN there_EX is_VBZ room_NN for_IN future_JJ
+          improvement_NN ._.
+        
+        
+          LogP_NNP and_CC Absolute_JJ Calls_NNS
+          In_IN the_DT derivation_NN of_IN LogP_NNP (_( see_VB materials_NNS and_CC methods_NNS ,_,
+          Figure_NN 7_CD )_) ,_, it_PRP is_VBZ assumed_VBN that_IN the_DT statistics_NNS of_IN any_DT
+          absent_JJ probe_NN can_MD be_VB described_VBN by_IN the_DT general_JJ background_NN
+          curve_NN 
+          B_NNP ._. The_DT 
+          P_NN value_NN should_MD not_RB be_VB literally_RB
+          interpreted_VBN as_IN accurate_JJ probabilities_NNS ,_, since_IN it_PRP is_VBZ only_RB
+          as_RB good_JJ as_IN the_DT underlining_VBG assumption_NN ._. Users_NNS should_MD also_RB
+          bear_VB in_IN mind_NN that_IN a_DT 
+          P_NN value_NN is_VBZ for_IN the_DT null_NN hypothesis_NNS
+          that_IN the_DT discrepancy_NN between_IN observables_NNS and_CC generic_JJ
+          mismatches_NNS is_VBZ generated_VBN by_IN noise_NN ,_, which_WDT is_VBZ different_JJ from_IN
+          the_DT likelihood_NN of_IN gene_NN presence_NN conditioned_VBN on_IN the_DT
+          observed_VBN discrepancy_NN ._. However_RB ,_, LogP_NNP values_NNS more_RBR or_CC less_JJR
+          serve_VB as_IN a_DT statistical_JJ indicator_NN for_IN the_DT sorting_VBG of_IN genes_NNS
+          by_IN their_PRP$ significance_NN ._. The_DT discrete_JJ absolute_JJ calls_NNS in_IN
+          MAS_NNP 4_CD are_VBP determined_VBN in_IN a_DT completely_RB different_JJ empirically_RB
+          manner_NN ._. Although_IN higher_JJR LogP_NNP values_NNS have_VBP a_DT higher_JJR
+          tendency_NN of_IN being_VBG assigned_VBN "_'' Absent_VB "_'' in_IN MAS_NNP 4_CD ,_, the_DT exact_JJ
+          correspondence_NN between_IN the_DT two_CD varies_VBZ from_IN experiment_NN to_TO
+          experiment_NN ._. Roughly_RB ,_, LogP_NNP values_NNS above_IN -_: 3_CD ._. 0_CD have_VBP a_DT
+          greater_JJR chance_NN to_TO be_VB called_VBN "_'' Absent_VB "_'' than_IN "_'' Present_VB "_'' by_IN
+          MAS_NNP 4_CD ._. Users_NNS should_MD be_VB aware_JJ not_RB to_TO over_IN interpret_VB this_DT
+          correspondence_NN ._. One_CD interesting_JJ observation_NN we_PRP had_VBD in_IN
+          this_DT study_NN was_VBD that_IN discrete_JJ calls_NNS by_IN MAS_NNP 4_CD are_VBP not_RB as_RB
+          stable_JJ as_IN LogP_NNP values_NNS ._. Sometimes_RB a_DT gene_NN can_MD be_VB reassigned_VBN
+          to_TO "_'' Present_VB "_'' from_IN "_'' Absent_VB "_'' by_IN MAS_NNP 4_CD due_JJ to_TO a_DT small_JJ
+          perturbation_NN in_IN the_DT underlying_VBG quantities_NNS without_IN going_VBG
+          through_IN a_DT "_'' Marginal_JJ "_'' transitional_JJ stage_NN ._.
+        
+        
+          Curve_NNP Normalization_NNP
+          It_PRP is_VBZ clear_JJ by_IN observing_VBG various_JJ experiments_NNS that_IN the_DT
+          response_NN of_IN intensity_NN to_TO signal_VB varies_VBZ in_IN different_JJ
+          intensity_NN regions_NNS ._. Occasionally_RB ,_, the_DT normalization_NN
+          constant_JJ 
+          n_NN 
+          
+            f_SYM 
+           does_VBZ not_RB cover_VB well_RB for_IN all_DT intensity_NN values_NNS ._. A_DT more_RBR
+          generalized_JJ normalization_NN procedure_NN should_MD use_VB a_DT
+          normalization_NN curve_NN instead_RB of_IN a_DT constant_JJ factor_NN ._. The_DT
+          MOID_NNP normalization_NN algorithm_NN can_MD be_VB easily_RB modified_VBN to_TO
+          the_DT following_VBG (_( see_VB [_NN 10_CD ]_NN for_IN a_DT similar_JJ approach_NN )_) :_:
+          Step_NN 1_CD :_: include_VBP all_DT genes_NNS in_IN the_DT normalization_NN gene_NN
+          list_NN ._.
+          Step_NN 2_CD :_: using_VBG the_DT 
+          E_NNP 
+          
+            k_NN 
+           values_NNS for_IN all_PDT the_DT genes_NNS in_IN the_DT list_NN ,_, generate_VB
+          integral_JJ intensity_NN distributions_NNS for_IN both_DT experiments_NNS ._. A_DT
+          normalization_NN curve_NN 
+          NF_NNP (_( I_NN )_) is_VBZ constructed_VBN in_IN such_JJ a_DT way_NN
+          that_IN the_DT two_CD integral_JJ distributions_NNS are_VBP identical_JJ after_IN
+          normalization_NN ._.
+          Step_NN 3_CD :_: normalize_VB the_DT data_NNS sets_NNS using_VBG 
+          NF_NNP obtained_VBD in_IN the_DT previous_JJ step_NN ;_:
+          refine_VB the_DT gene_NN list_NN by_IN further_JJ excluding_VBG those_DT genes_NNS
+          whose_WP$ intensity_NN values_NNS changed_VBN by_IN more_JJR than_IN a_DT certain_JJ
+          fold_VB ,_, >_NN 
+          f_SYM 
+          max_NN or_CC <_NN 1_CD /_NN 
+          f_SYM 
+          max_NN ,_, between_IN the_DT two_CD data_NN sets_NNS ._.
+          Step_NN 4_CD :_: repeat_NN Step_NN 2_CD and_CC update_VB 
+          NF_NNP to_TO 
+          NF_NNP '_POS ,_, until_IN one_CD of_IN the_DT following_VBG
+          conditions_NNS is_VBZ met_VBN :_:
+          1_LS )_) the_DT maximum_NN number_NN of_IN iterations_NNS ,_, 
+          Itr_NNP 
+          max_NN ,_, is_VBZ reached_VBN ;_:
+          2_LS )_) max_NN (_( |_NN 
+          NF_NNP (_( 
+          I_NN )_) /_NN 
+          NF_NNP '_POS (_( 
+          I_NN )_) -_: 1_CD |_NN )_) ≤_NN 
+          max_NN ,_, where_WRB 
+          max_NN is_VBZ a_DT small_JJ predefined_JJ
+          threshold_NN ;_:
+          3_LS )_) size_NN of_IN the_DT normalization_NN gene_NN list_NN drops_NNS below_IN a_DT
+          predefined_JJ threshold_NN ,_, 
+          Sz_NNP 
+          min_NN ._.
+          This_DT algorithm_NN offers_VBZ a_DT chance_NN to_TO correct_VB
+          non-linearity_JJ in_IN the_DT chip_NN system_NN to_TO a_DT certain_JJ extent_NN ._. To_TO
+          demonstrate_VB the_DT algorithm_NN ,_, we_PRP applied_VBD the_DT procedure_NN to_TO
+          two_CD measurements_NNS ,_, where_WRB genomics_NNS DNA_NNP sample_NN of_IN yeast_NN
+          s_VBZ 288_CD c_SYM strain_NN were_VBD hybridized_JJ onto_IN Affymetrix_NNP YG_NNP __NN S_NNP 98_CD
+          arrays_NNS ._. The_DT second_JJ experiment_NN was_VBD a_DT repeat_NN of_IN the_DT first_JJ
+          one_CD after_IN about_IN 50_CD days_NNS ,_, where_WRB some_DT of_IN hybridization_NN and_CC
+          scanning_VBG parameters_NNS had_VBD been_VBN changed_JJ over_IN the_DT course_NN ._. It_PRP
+          is_VBZ shown_VBN in_IN Figure_NN 8_CD that_IN the_DT curve_NN normalization_NN
+          procedure_NN out-performed_JJ constant_JJ normalization_NN as_IN
+          expected_VBN ._.
+        
+      
+      
+        Conclusions_NNP
+        MOID_NNP algorithm_NN allows_VBZ at_IN least_JJS double_JJ or_CC even_RB triple_VB the_DT
+        information_NN density_NN of_IN current_JJ (_( U_NNP 95_CD human_JJ chip_NN )_) Affymetrix_NNP
+        high-density_JJ oligo_NN nucleotide_NN arrays_NNS without_IN compromising_VBG
+        analysis_NN accuracy_NN ._. Table_NNP 2_CD summarizes_NNS feature_VBP comparisons_NNS
+        between_IN MOID_NNP and_CC MAS_NNP 4_CD ._.
+        It_PRP should_MD be_VB noted_VBN that_IN at_IN the_DT time_NN of_IN this_DT study_NN ,_,
+        Affymetrix_NNP U_NNP 95_CD chip_NN uses_VBZ 16_CD probe_NN pairs_NNS per_IN set_VBN ._. As_IN
+        Affymetirx_NNP is_VBZ planning_VBG on_IN further_JJ reducing_VBG probe_NN set_VBD size_NN
+        in_IN their_PRP$ next_JJ design_NN ,_, the_DT density_NN improvement_NN by_IN using_VBG MOID_NNP
+        may_MD be_VB less_JJR than_IN the_DT estimation_NN given_VBN above_IN ._.
+      
+      
+        Materials_NNS and_CC Methods_NNP
+        
+          Affymetrix_NNP Oligonucleotide_NNP Chip_NNP
+          At_IN the_DT time_NN of_IN this_DT study_NN ,_, Affymetrix_NNP synthesizes_NNS
+          25_CD -_: mer_NN oligonucleotides_NNS on_IN a_DT 640_CD ×_NN 640_CD array_NN with_IN 20_CD μm_NN
+          feature_NN size_NN using_VBG photolithographic_JJ fabrication_NN
+          techniques_NNS (_( some_DT data_NNS used_VBN in_IN this_DT study_NN were_VBD collected_VBN
+          from_IN some_DT previous_JJ generation_NN arrays_NNS of_IN 540_CD ×_NN 540_CD cells_NNS
+          and_CC 24_CD μm_NN feature_NN size_NN )_) ._. Each_DT cell_NN (_( also_RB called_VBD a_DT probe_NN )_)
+          in_IN the_DT array_NN contains_VBZ the_DT same_JJ oligonucleotide_NN sequences_NNS ._.
+          As_IN shown_VBN in_IN Figure_NN 9_CD ,_, typically_RB a_DT set_NN of_IN 16_CD -_: 20_CD probes_NNS are_VBP
+          designed_VBN for_IN each_DT targeting_VBG cluster_NN (_( called_VBD a_DT probe_NN set_VBD ,_,
+          or_CC sometimes_RB a_DT "_'' gene_NN "_'' ._. )_) ._. An_DT expression_NN value_NN will_MD be_VB
+          derived_VBN per_IN probe_NN set_VBN as_IN the_DT result_NN of_IN analysis_NN ._. Probes_NNP
+          taken_VBN as_IN fragments_NNS from_IN a_DT target_NN sequence_NN are_VBP called_VBN
+          perfect_JJ matches_VBZ (_( PM_NNP )_) ._. Multiple_NNP matches_VBZ per_IN set_VBN serve_VB as_IN
+          independent_JJ signal_NN detectors_NNS and_CC provide_VB a_DT possibility_NN to_TO
+          capture_VB statistical_JJ uncertainties_NNS ._. For_IN each_DT match_NN ,_, there_EX
+          is_VBZ also_RB a_DT corresponding_JJ mismatch_NN (_( MM_NNP )_) probe_NN ,_, whose_WP$
+          sequence_NN differs_VBZ from_IN its_PRP$ match_NN by_IN a_DT single_JJ base_NN in_IN the_DT
+          middle_NN ._. Mismatches_NNP are_VBP meant_VBN to_TO detect_VB cross_NN
+          hybridization_NN components_NNS of_IN their_PRP$ corresponding_JJ matches_NNS ,_,
+          and_CC are_VBP used_VBN by_IN MAS_NNP 4_CD for_IN probe-specific_JJ background_NN
+          subtraction_NN ._. There_EX are_VBP also_RB several_JJ Affymetrix_NNP control_NN
+          sets_NNS on_IN each_DT chip_NN used_VBN for_IN quality_NN references_NNS ,_, which_WDT were_VBD
+          used_VBN in_IN the_DT spiking_VBG experiments_NNS to_TO validate_NN and_CC refine_VB
+          hybridization_NN protocols_NNS ._.
+        
+        
+          Intensity_NNP Distribution_NN
+          In_IN an_DT ideal_JJ case_NN ,_, all_PDT the_DT probes_NNS in_IN a_DT set_VBN should_MD give_VB
+          similar_JJ signals_NNS and_CC serve_VB as_IN replicate_VB measurements_NNS ._. One_CD
+          common_JJ rule_NN in_IN probe_NN design_NN is_VBZ to_TO select_VB probes_NNS with_IN
+          similar_JJ melting_NN temperatures_NNS to_TO minimize_VB the_DT variances_NNS
+          among_IN probes_NNS ._. The_DT chemistry_NN involved_VBN in_IN a_DT hybridization_NN
+          experiment_NN is_VBZ often_RB too_RB complicated_VBN to_TO be_VB predicted_VBN
+          computationally_RB at_IN the_DT current_JJ stage_NN ,_, therefore_RB in_IN
+          reality_NN probe_NN intensity_NN distribution_NN for_IN a_DT set_VBN is_VBZ usually_RB
+          fairly_RB wide_JJ and_CC has_VBZ a_DT long_JJ tail_NN ,_, which_WDT causes_VBZ all_DT kinds_NNS
+          of_IN difficulty_NN for_IN data_NNS analysis_NN ._.
+          One_CD usual_JJ attraction_NN in_IN expression_NN analysis_NN is_VBZ to_TO
+          assume_VB a_DT normal_JJ distribution_NN for_IN probe_NN intensities_NNS ._. This_DT
+          hypothesis_NNS can_MD be_VB examined_VBN by_IN the_DT following_VBG calculation_NN ._.
+          For_IN each_DT probe_NN set_VBD ,_, we_PRP applied_VBD a_DT linear_JJ transformation_NN to_TO
+          probe_VB intensities_NNS ,_, so_IN that_IN the_DT mean_NN and_CC the_DT standard_JJ
+          deviation_NN of_IN the_DT intensities_NNS in_IN the_DT set_VBN were_VBD normalized_JJ
+          to_TO zero_CD and_CC one_CD ,_, respectively_RB ._. Then_RB all_PDT the_DT resulting_VBG
+          match_NN intensities_NNS were_VBD used_VBN to_TO generate_VB an_DT overall_JJ
+          distribution_NN ._. Our_PRP$ calculation_NN shows_VBZ the_DT normal_JJ
+          distribution_NN assumption_NN is_VBZ not_RB an_DT appropriate_JJ one_CD ._. When_WRB
+          similar_JJ analysis_NN was_VBD applied_VBN to_TO mismatch_NN intensities_NNS and_CC
+          mismatch-subtracted_JJ match_NN intensities_NNS ,_, the_DT conclusion_NN
+          stays_VBZ more_JJR or_CC less_JJR the_DT same_JJ ._.
+          Despite_IN the_DT fact_NN that_IN the_DT intensity_NN distribution_NN of_IN a_DT
+          set_VBN is_VBZ non-_NN Gaussian_NNP ,_, it_PRP is_VBZ still_RB crucial_JJ to_TO find_VB out_RP the_DT
+          distribution_NN function_NN for_IN match_NN or_CC mismatch_NN intensities_NNS
+          to_TO generate_VB meaningful_JJ statistics_NNS tests_NNS ,_, if_IN such_JJ
+          distributions_NNS actually_RB exist_VBP ._. The_DT authors_NNS tried_VBD several_JJ
+          analytical_JJ functions_NNS on_IN match_NN and_CC mismatch_NN probe_NN
+          intensities_NNS ._. Unfortunately_RB ,_, the_DT distributions_NNS seemed_VBD to_TO
+          be_VB quite_RB "_'' bad_JJ "_'' ,_, the_DT tail_NN portions_NNS even_RB fade_VB out_IN slower_JJR
+          than_IN the_DT extreme_JJ value_NN distribution_NN ._. It_PRP was_VBD found_VBN that_IN
+          distributions_NNS of_IN mismatch_NN signals_NNS also_RB significantly_RB
+          depended_VBD on_IN the_DT sample_NN and_CC experimental_JJ conditions_NNS ._. One_PRP
+          may_MD reasonably_RB suspect_VB that_DT cross_NN hybridization_NN ,_,
+          intensity_NN saturation_NN ,_, overall_JJ sample_NN concentration_NN ,_, chip_NN
+          production_NN irregularities_NNS ,_, and_CC miscellaneous_JJ noise_NN may_MD
+          all_DT cause_VBP a_DT change_NN in_IN the_DT signal_NN distribution_NN ._. The_DT study_NN
+          seems_VBZ to_TO suggest_VB the_DT distribution_NN of_IN cross_NN hybridization_NN
+          should_MD be_VB taken_VBN from_IN each_DT experiment_NN as_IN a_DT result_NN of_IN
+          measurement_NN instead_RB of_IN using_VBG an_DT 
+          a_DT priori_FW determined_VBN analytical_JJ
+          expression_NN ._. This_DT guideline_NN is_VBZ used_VBN in_IN MOID_NNP algorithm_NN ._.
+        
+        
+          MOID_NNP algorithm_NN :_: hypothesis_NNS and_CC principles_NNS
+          As_IN mentioned_VBN in_IN the_DT intensity_NN distribution_NN analysis_NN ,_,
+          MOID_NNP assumes_VBZ cross_NN hybridization_NN behavior_NN of_IN probes_NNS is_VBZ
+          mainly_RB non-probe-specific_JJ ,_, and_CC therefore_RB all_PDT the_DT match_NN
+          cells_NNS can_MD share_VB the_DT same_JJ cross_NN hybridization_NN background_NN ._.
+          MOID_NNP primarily_RB aims_VBZ at_IN saving_VBG 50_CD %_NN of_IN the_DT chip_NN space_NN
+          currently_RB dedicated_VBD to_TO mismatch_NN cells_NNS in_IN the_DT Affymetrix_NNP
+          design_NN under_IN this_DT study_NN ._. It_PRP was_VBD also_RB discussed_VBN before_IN
+          that_DT cross_NN hybridization_NN distributions_NNS should_MD be_VB taken_VBN
+          from_IN experimental_JJ data_NNS instead_RB of_IN from_IN some_DT analytical_JJ
+          function_NN ._. Based_VBN upon_IN the_DT general_JJ belief_NN that_IN there_EX is_VBZ
+          always_RB a_DT significant_JJ amount_NN of_IN genes_NNS unexpressed_JJ in_IN any_DT
+          mRNA_NN experiment_NN ,_, we_PRP will_MD use_VB the_DT match_VB cell_NN signals_NNS from_IN
+          the_DT 5_CD %_NN darkest_NN probe_NN sets_NNS in_IN the_DT current_JJ public_JJ
+          Affymetrix_NNP arrays_NNS to_TO prove_VB the_DT point_NN that_IN it_PRP is_VBZ possible_JJ
+          for_IN MOID_NNP not_RB to_TO use_VB any_DT mismatch_NN signal_NN ._. For_IN the_DT next_JJ
+          generation_NN gene_NN chip_NN designed_VBN based_VBN on_IN MOID_NNP algorithm_NN ,_,
+          some_DT designated_VBN probes_NNS may_MD be_VB used_VBN as_IN generic_JJ mismatches_NNS
+          to_TO collect_VB non-probe-specific_JJ cross_NN hybridization_NN data_NNS ._.
+          In_IN fact_NN ,_, on_IN GNF-HS_NNP 1_CD ,_, 16_CD ,_, 460_CD probes_NNS from_IN 476_CD viral_JJ genes_NNS
+          are_VBP used_VBN for_IN such_JJ a_DT purpose_NN ._.
+          As_IN discussed_VBN ,_, the_DT distributions_NNS of_IN quantities_NNS in_IN
+          expression_NN analysis_NN are_VBP usually_RB asymmetric_JJ and_CC contain_VB a_DT
+          long_JJ tail_NN ,_, regardless_RB whether_IN it_PRP is_VBZ match_VB intensity_NN ,_,
+          mismatch_NN intensity_NN ,_, or_CC average_JJ intensity_NN difference_NN ._. For_IN
+          such_JJ abnormal_JJ distributions_NNS ,_, concepts_NNS like_IN mathematical_JJ
+          average_JJ and_CC standard_JJ deviation_NN are_VBP not_RB the_DT most_RBS
+          appropriate_JJ statistical_JJ terms_NNS to_TO use_VB ._. Pre-filtering_NNP the_DT
+          data_NNS ,_, like_IN what_WP MAS_NNP 4_CD does_VBZ ,_, certainly_RB helps_VBZ reshape_VB the_DT
+          distribution_NN ,_, but_CC by_IN no_DT means_VBZ this_DT can_MD bring_VB the_DT
+          distribution_NN back_RB to_TO normal_JJ without_IN throwing_VBG out_RP a_DT
+          significant_JJ portion_NN of_IN measurements_NNS ._. The_DT MOID_NNP algorithm_NN
+          is_VBZ specifically_RB designed_VBN to_TO avoid_VB these_DT problems_NNS by_IN using_VBG
+          percentile_NN instead_RB of_IN mean_NN and_CC using_VBG confidence_NN intervals_NNS
+          instead_RB of_IN standard_JJ deviation_NN in_IN all_DT possible_JJ cases_NNS ._.
+        
+        
+          MOID_NNP algorithm_NN for_IN significance_NN of_IN gene_NN
+          presence_NN
+          A_DT non-probe-specific_JJ integral_JJ background_NN distribution_NN
+          (_( representing_VBG noise_NN ,_, cross_NN hybridization_NN ,_, and_CC possible_JJ
+          other_JJ factors_NNS )_) ,_, 
+          B_NNP (_( 
+          I_NN )_) ,_, is_VBZ derived_VBN from_IN the_DT
+          intensities_NNS of_IN the_DT 5_CD %_NN darkest_NN probe_NN sets_NNS (_( or_CC from_IN generic_JJ
+          mismatches_NNS in_IN the_DT future_JJ )_) ._. 
+          I_PRP stands_VBZ for_IN intensity_NN ;_: 
+          B_NNP satisfies_NNS boundary_NN conditions_NNS :_: 
+          B_NNP (_( 0_CD )_) =_SYM 0_CD and_CC 
+          B_NNP (_( ∞_NN )_) =_SYM 1_CD ._. For_IN each_DT probe_NN set_VBD 
+          k_NN ,_, the_DT match_NN signals_NNS are_VBP sorted_VBN and_CC
+          the_DT integral_JJ distribution_NN ,_, 
+          S_NNP 
+          
+            k_NN 
+           (_( 
+          I_NN )_) ,_, is_VBZ generated_VBN as_RB well_RB ._. Figure_NN
+          7_CD is_VBZ a_DT schematic_JJ diagram_NN ._.
+          If_IN the_DT gene_NN represented_VBN by_IN a_DT probe_NN set_VBN is_VBZ absent_JJ ,_, the_DT
+          intensity_NN data_NN from_IN matches_NNS are_VBP due_JJ to_TO pure_JJ background_NN
+          contribution_NN ,_, therefore_RB 
+          S_NNP 
+          
+            k_NN 
+           is_VBZ likely_JJ to_TO be_VB close_RB to_TO 
+          B_NNP ._. We_PRP choose_VBP the_DT Kolmogorov-_NNP Smirnov_NNP
+          test_NN to_TO determine_VB likelihood_NN that_IN the_DT observed_VBN signal_NN
+          distribution_NN ,_, 
+          S_NNP 
+          
+            k_NN 
+           ,_, could_MD be_VB explained_VBN by_IN 
+          B_NNP ._. If_IN we_PRP define_VB 
+          d_SYM 
+          
+          k_NN max_NN as_IN the_DT maximum_NN vertical_JJ
+          distance_NN between_IN 
+          B_NNP and_CC 
+          S_NNP 
+          
+            k_NN 
+           ,_, according_VBG to_TO K-S_NNP statistics_NNS ,_, the_DT probability_NN of_IN
+          observing_VBG discrepancies_NNS greater_JJR than_IN 
+          d_SYM 
+          
+          k_NN max_NN is_VBZ determined_VBN by_IN a_DT P_NN
+          value_NN [_NN 11_CD ]_NN ,_,
+          
+          where_WRB
+          
+          
+          n_NN 
+          
+            k_NN 
+           is_VBZ the_DT effective_JJ number_NN of_IN data_NNS points_NNS in_IN the_DT K-S_NNP
+          statistics_NNS ,_, which_WDT is_VBZ the_DT number_NN of_IN PM_NNP for_IN gene_NN 
+          k_NN in_IN our_PRP$ case_NN ._. 
+          P_NN carries_VBZ the_DT meaning_NN of_IN
+          probability_NN ,_, therefore_RB is_VBZ a_DT number_NN between_IN 0_CD and_CC 1_CD ._.
+          Practically_NNP ,_, Log_NNP 
+          10_CD 
+          P_NN ,_, a_DT negative_JJ value_NN ,_, is_VBZ used_VBN as_IN
+          our_PRP$ final_JJ representation_NN ._. In_IN this_DT way_NN ,_, MOID_NNP uses_VBZ a_DT
+          continuous_JJ LogP_NNP criterion_NN to_TO replace_VB MAS_NNP 4_CD absolute_JJ calls_NNS ._.
+          Those_DT signal_NN sets_NNS that_WDT can_MD be_VB easily_RB explained_VBN by_IN noise_NN
+          are_VBP assigned_VBN a_DT LogP_NNP value_NN closer_JJR to_TO zero_CD ._.
+        
+        
+          MOID_NNP algorithm_NN for_IN expression_NN level_NN
+          calculation_NN
+          MOID_NNP uses_VBZ the_DT horizontal_NN distance_NN between_IN 
+          S_NNP 
+          
+            k_NN 
+           and_CC 
+          B_NNP to_TO represent_VB gene_NN expression_NN
+          level_NN (_( Figure_NN 7_CD )_) ._. Since_IN the_DT darkest_NN probes_NNS may_MD be_VB more_RBR
+          likely_RB caused_VBN by_IN their_PRP$ poor_JJ binding_JJ properties_NNS to_TO the_DT
+          target_NN gene_NN ,_, and_CC the_DT brightest_JJS probes_NNS may_MD be_VB more_RBR likely_RB
+          caused_VBN by_IN serious_JJ cross_NN hybridization_NN issues_NNS ,_, different_JJ
+          parts_NNS of_IN the_DT integral_JJ distribution_NN tend_VBP to_TO have_VB different_JJ
+          qualities_NNS ._. Therefore_RB ,_, the_DT MOID_NNP algorithm_NN uses_VBZ the_DT
+          horizontal_NN distance_NN measured_VBN at_IN a_DT certain_JJ percentile_NN ,_, 
+          pct_NN ,_, instead_RB of_IN the_DT whole_JJ curve_NN ._.
+          Based_VBN on_IN the_DT analysis_NN of_IN the_DT spiking_VBG experiments_NNS
+          discussed_VBN later_RB ,_, it_PRP is_VBZ empirically_RB determined_VBN that_IN 70_CD %_NN is_VBZ
+          the_DT optimal_NN percentile_NN for_IN signal_NN retrieval_NN ._. We_PRP also_RB
+          tried_VBD to_TO use_VB the_DT average_NN of_IN horizontal_NN distances_NNS from_IN
+          several_JJ 
+          pct_NN ,_, but_CC without_IN significant_JJ
+          improvement_NN ._. Therefore_RB the_DT expression_NN level_NN 
+          E_NNP 
+          
+            k_NN 
+           ,_, related_VBN to_TO gene_NN concentration_NN for_IN gene_NN 
+          k_NN ,_, is_VBZ defined_VBN as_IN
+          
+          E_NNP 
+          
+            k_NN 
+           =_SYM max_NN (_( 
+          I_NN |_NN 
+          
+          S_NNP 
+          
+            k_NN 
+           =_SYM 
+          pct_NN  -_: 
+          I_PRP |_NN 
+          
+          B_NNP =_SYM 
+          pct_NN  ,_, 0_CD )_) ._.
+          Instead_RB of_IN using_VBG the_DT standard_JJ deviation_NN ,_, we_PRP take_VBP
+          confidence_NN intervals_NNS directly_RB from_IN the_DT distribution_NN curve_NN
+          
+          S_NNP 
+          
+            k_NN 
+           ,_, with_IN the_DT background_NN subtracted_VBN ._. E_NNP ._. g_SYM ._. ,_, 80_CD %_NN
+          confidence_NN intervals_NNS can_MD be_VB represented_VBN by_IN a_DT lower_JJR bound_JJ
+          (_( 
+          E_NNP 
+          
+            kl_NN 
+           )_) at_IN 10_CD percentile_NN and_CC an_DT upper_JJ bound_VBN (_( 
+          E_NNP 
+          
+            ku_NN 
+           )_) at_IN 90_CD percentile_NN of_IN the_DT distribution_NN ,_, i_NNP ._. e_SYM ._. ,_,
+          
+          E_NNP 
+          
+            kl_NN 
+           0_CD (_( 0_CD ._. 1_LS )_) =_SYM max_NN (_( 
+          I_NN |_NN 
+          
+          S_NNP 
+          
+            k_NN 
+           =_SYM 0_CD ._. 1_CD -_: 
+          I_PRP |_NN 
+          
+          B_NNP =_SYM 
+          pct_NN  ,_, 0_CD )_)
+          and_CC
+          
+          E_NNP 
+          
+            ku_NN 
+           0_CD (_( 0_CD ._. 9_CD )_) =_SYM max_NN (_( 
+          I_NN |_NN 
+          
+          S_NNP 
+          
+            k_NN 
+           =_SYM 0_CD ._. 9_CD -_: 
+          I_PRP |_NN 
+          
+          B_NNP =_SYM 
+          pct_NN  ,_, 0_CD )_) ._.
+          As_IN one_PRP might_MD expect_VB ,_, increment_NN of_IN the_DT probe_NN set_VBD size_NN
+          helps_VBZ narrowing_NN down_RP the_DT confidence_NN intervals_NNS in_IN a_DT manner_NN
+          determined_VBN by_IN the_DT statistics_NNS of_IN probe_NN distribution_NN ._.
+          However_RB ,_, this_DT piece_NN of_IN information_NN is_VBZ unknown_JJ and_CC we_PRP took_VBD
+          an_DT 
+          ad_NN hoc_FW approach_NN by_IN modifying_VBG the_DT
+          boundaries_NNS formulae_NN as_IN the_DT following_VBG :_:
+          
+          and_CC
+          
+        
+        
+          MOID_NNP algorithm_NN for_IN normalization_NN
+          The_DT most_RBS common_JJ way_NN of_IN understanding_VBG gene_NN functions_NNS by_IN
+          expression_NN profiling_VBG is_VBZ to_TO study_VB the_DT change_NN of_IN their_PRP$
+          expression_NN levels_NNS in_IN various_JJ disease_NN states_NNS and_CC cellular_JJ
+          environments_NNS ._. The_DT observed_VBN expression_NN level_NN is_VBZ a_DT product_NN
+          of_IN complicated_VBN protocols_NNS ,_, and_CC is_VBZ subjected_VBN to_TO various_JJ
+          factors_NNS from_IN sample_NN preparation_NN to_TO final_JJ image_NN scanning_VBG ._.
+          Therefore_RB ,_, it_PRP is_VBZ a_DT common_JJ practice_NN to_TO normalize_VB
+          expression_NN data_NNS drawn_VBN from_IN multiple_JJ profiles_NNS before_IN
+          making_VBG any_DT reliable_JJ interpretation_NN ._.
+          The_DT normalization_NN procedure_NN in_IN MAS_NNP 4_CD aims_VBZ at_IN
+          normalizing_VBG the_DT average_JJ intensities_NNS of_IN probe_NN sets_NNS
+          (_( excluding_VBG the_DT top_NN and_CC bottom_NN 2_CD %_NN )_) ._. To_TO avoid_VB possible_JJ
+          signal_NN contamination_NN ,_, MOID_NNP takes_VBZ similar_JJ approach_NN by_IN
+          normalizing_VBG the_DT probe_NN sets_NNS between_IN 10_CD and_CC 90_CD percentiles_NNS ._.
+          However_RB ,_, it_PRP is_VBZ noticed_VBN that_IN an_DT ideal_JJ normalization_NN factor_NN
+          should_MD be_VB derived_VBN from_IN only_RB those_DT genes_NNS that_WDT do_VBP not_RB
+          change_VB their_PRP$ expression_NN levels_NNS between_IN the_DT two_CD
+          experiments_NNS ._. MAS_NNP software_NN provides_VBZ the_DT possibility_NN to_TO use_VB
+          a_DT list_NN of_IN housekeeping_NN genes_NNS for_IN such_JJ purposes_NNS ;_: however_RB ,_,
+          it_PRP certainly_RB requires_VBZ careful_JJ downstream_JJ research_NN to_TO
+          validate_NN any_DT such_JJ a_DT list_NN ._. Some_DT common_JJ normalization_NN
+          criteria_NNS were_VBD summarized_VBD in_IN a_DT recent_JJ study_NN by_IN Zien_NNP et_CC al_NN ._.
+          [_NN 12_CD ]_NN ._. MOID_NNP uses_VBZ a_DT heuristic_JJ bootstrap_NN method_NN to_TO
+          identify_VB an_DT approximate_JJ list_NN of_IN unchanged_JJ genes_NNS between_IN
+          two_CD data_NNS sets_NNS :_:
+          Step_NN 1_CD :_: include_VBP all_DT genes_NNS as_IN the_DT normalization_NN gene_NN
+          list_NN ._.
+          Step_NN 2_CD :_: sort_NN the_DT 
+          E_NNP 
+          
+            k_NN 
+           values_NNS (_( already_RB background_NN subtracted_VBN )_) for_IN all_PDT the_DT
+          genes_NNS in_IN the_DT list_NN ;_: the_DT interesting_JJ portion_NN of_IN expression_NN
+          values_NNS (_( between_IN 10_CD %_NN and_CC 90_CD %_NN in_IN our_PRP$ case_NN )_) is_VBZ retrieved_VBN and_CC
+          average_JJ intensity_NN is_VBZ calculated_VBN for_IN each_DT experiment_NN ,_,
+          respectively_RB ._. The_DT initial_JJ normalization_NN factor_NN 
+          nf_NN is_VBZ calculated_VBN by_IN the_DT ratio_NN of_IN
+          the_DT two_CD average_NN intensities_NNS ._.
+          Step_NN 3_CD :_: normalize_VB the_DT data_NNS sets_NNS using_VBG 
+          nf_NN obtained_VBN in_IN the_DT previous_JJ step_NN ;_:
+          refine_VB the_DT gene_NN list_NN by_IN further_JJ excluding_VBG those_DT genes_NNS ,_,
+          whose_WP$ intensity_NN values_NNS changed_VBN by_IN more_JJR than_IN a_DT certain_JJ
+          fold_VB ,_, >_NN 
+          f_SYM 
+          max_NN or_CC <_NN 1_CD /_NN 
+          f_SYM 
+          max_NN ,_, between_IN the_DT two_CD data_NN sets_NNS ._.
+          Step_NN 4_CD :_: repeat_NN Step_NN 2_CD and_CC update_VB 
+          nf_NN to_TO 
+          nf_NN '_'' ,_, until_IN one_CD of_IN the_DT following_VBG
+          conditions_NNS is_VBZ met_VBN :_:
+          1_LS )_) the_DT maximum_NN number_NN of_IN iterations_NNS ,_, 
+          Itr_NNP 
+          max_NN ,_, is_VBZ reached_VBN ;_:
+          2_LS )_) |_NN 
+          nf_NN /_NN nf_NN '_'' -_: 1_CD |_NN ≤_NN 
+          max_NN ,_, where_WRB 
+          max_NN is_VBZ a_DT small_JJ predefined_JJ
+          threshold_NN ;_:
+          3_LS )_) size_NN of_IN the_DT normalization_NN gene_NN list_NN drops_NNS below_IN a_DT
+          predefined_JJ threshold_NN ,_, 
+          Sz_NNP 
+          min_NN ._.
+          In_IN practice_NN ,_, a_DT single_JJ iteration_NN is_VBZ usually_RB sufficient_JJ
+          for_IN most_JJS comparisons_NNS ._. User_NNP can_MD adjust_VB threshold_NN
+          parameters_NNS towards_IN their_PRP$ preferred_JJ stringent_JJ levels_NNS ._. In_IN
+          this_DT study_NN we_PRP use_VBP 
+          f_SYM 
+          max_NN =_SYM 2_CD ._. 0_CD ,_, 
+          max_NN =_SYM 0_CD ._. 05_CD ,_, 
+          Itr_NNP 
+          max_NN =_SYM 5_CD ,_, 
+          Sz_NNP 
+          min_NN =_SYM 1000_CD ._.
+        
+        
+          MOID_NNP algorithm_NN for_IN comparison_NN analysis_NN
+          Different_JJ probes_NNS within_IN the_DT same_JJ probe_NN set_VBN generally_RB
+          respond_VB very_RB differently_RB to_TO mRNA_NN sample_NN fragments_NNS ._. We_PRP
+          examined_VBD various_JJ probe_NN properties_NNS such_JJ as_IN melting_VBG
+          temperature_NN ,_, nucleotide_NN base_NN composition_NN ,_, possible_JJ
+          sequence_NN motifs_NNS ,_, and_CC potential_JJ secondary_JJ structures_NNS in_IN
+          order_NN to_TO understand_VB the_DT cause_NN of_IN such_JJ diverse_JJ response_NN
+          properties_NNS ._. That_DT study_NN did_VBD not_RB find_VB any_DT conclusive_JJ factor_NN
+          that_WDT explains_VBZ observed_VBN probe_NN signal_NN distribution_NN
+          satisfactory_JJ ._. Although_IN it_PRP seems_VBZ rather_RB difficult_JJ to_TO
+          pre-compute_JJ and_CC predict_VBP probe_NN responses_NNS ,_, it_PRP is_VBZ possible_JJ
+          to_TO derive_VB some_DT features_NNS afterwards_RB for_IN a_DT probe_NN based_VBN on_IN a_DT
+          significant_JJ amount_NN of_IN expression_NN data_NNS where_WRB the_DT target_NN
+          gene_NN of_IN interest_NN is_VBZ present_JJ [_NN 8_CD ]_NN ._. Instead_RB of_IN using_VBG a_DT
+          modeling_NN approach_NN to_TO explain_VB various_JJ signal_NN
+          contributions_NNS ,_, MOID_NNP uses_VBZ a_DT new_JJ approach_NN to_TO avoid_VB the_DT
+          affect_NN of_IN diversities_NNS of_IN probe_NN response_NN factors_NNS in_IN
+          calculating_VBG expression_NN fold_VB changes_NNS ._.
+          Let_VB us_PRP assume_VB any_DT two_CD probes_NNS in_IN a_DT probe_NN set_VBD 
+          k_NN of_IN size_NN 
+          n_NN 
+          
+            k_NN 
+           always_RB respond_VB to_TO their_PRP$ target_NN gene_NN concentration_NN
+          with_IN factor_NN 
+          r_LS 
+          1_CD and_CC 
+          r_LS 
+          2_CD ,_, respectively_RB ._. That_DT is_VBZ ,_, if_IN the_DT gene_NN
+          is_VBZ present_JJ at_IN concentration_NN 
+          c_SYM 
+          1_CD and_CC 
+          c_SYM 
+          2_CD in_IN two_CD hybridizations_NNS ,_, the_DT two_CD
+          probes_NNS in_IN average_JJ give_VB signal_NN intensities_NNS 
+          r_LS 
+          1_CD 
+          c_SYM 
+          1_CD and_CC 
+          r_LS 
+          2_CD 
+          c_SYM 
+          1_CD in_IN the_DT first_JJ experiment_NN ,_, 
+          r_LS 
+          1_CD 
+          c_SYM 
+          2_CD and_CC 
+          r_LS 
+          2_CD 
+          c_SYM 
+          2_CD in_IN the_DT second_JJ experiment_NN ._. As_IN in_IN
+          MAS_NNP 4_CD ,_, fold_VBP change_NN is_VBZ calculated_VBN by_IN the_DT ratio_NN between_IN 
+          r_LS 
+          1_CD 
+          c_SYM 
+          2_CD +_NN 
+          r_LS 
+          2_CD 
+          c_SYM 
+          2_CD and_CC 
+          r_LS 
+          1_CD 
+          c_SYM 
+          1_CD +_NN 
+          r_LS 
+          2_CD 
+          c_SYM 
+          1_CD ,_, where_WRB the_DT result_NN is_VBZ essentially_RB
+          dominated_VBN by_IN the_DT probes_NNS with_IN the_DT largest_JJS response_NN
+          factors_NNS ,_, and_CC the_DT statistics_NNS of_IN the_DT ratio_NN becomes_VBZ
+          difficult_JJ to_TO estimate_VB ._. However_RB ,_, we_PRP observe_VBP that_IN by_IN taking_VBG
+          the_DT ratio_NN of_IN the_DT two_CD signals_NNS for_IN each_DT probe_NN individually_RB ,_,
+          one_CD essentially_RB is_VBZ looking_VBG at_IN 
+          n_NN 
+          
+            k_NN 
+           independent_JJ measurements_NNS of_IN 
+          c_SYM 
+          2_CD /_NN 
+          c_SYM 
+          1_CD for_IN that_DT probe_NN set_VBN ._. This_DT opens_VBZ a_DT
+          possibility_NN for_IN obtaining_VBG a_DT distribution_NN of_IN fold_VB change_NN
+          values_NNS ._.
+          If_IN one_CD assumes_VBZ most_JJS probes_NNS have_VBP a_DT rather_RB stable_JJ
+          intrinsic_JJ response_NN factor_NN ,_, 
+          r_LS ,_, a_DT fold_VB change_NN number_NN can_MD be_VB
+          calculated_VBN from_IN each_DT probe_NN 
+          i_NNP in_IN the_DT set_VBN independently_RB ,_, which_WDT
+          hopefully_RB removes_VBZ the_DT affect_NN of_IN the_DT unknown_JJ response_NN
+          factors_NNS 
+          r_LS 
+          
+            i_NNP 
+           ._. However_RB ,_, it_PRP seems_VBZ the_DT response_NN factor_NN of_IN each_DT
+          probe_NN has_VBZ a_DT non-negligible_JJ intrinsic_JJ spread_NN as_RB well_RB ;_: this_DT
+          may_MD be_VB further_RBR complicated_VBN by_IN alternative_NN splicing_VBG and_CC
+          tissue-specific_JJ cross_NN hybridization_NN issues_NNS ._. In_IN addition_NN ,_,
+          the_DT 
+          n_NN 
+          
+            k_NN 
+           ratio_NN numbers_NNS calculated_VBN for_IN a_DT probe_NN set_VBN are_VBP not_RB
+          normally_RB distributed_VBN (_( it_PRP is_VBZ well_RB known_VBN that_IN even_RB the_DT
+          ratio_NN of_IN two_CD normally_RB distributed_VBN values_NNS is_VBZ no_RB longer_RB
+          normally_RB distributed_VBN )_) ._. The_DT current_JJ background_NN subtraction_NN
+          algorithm_NN may_MD not_RB take_VB fully_RB into_IN account_NN response_NN
+          factor-unrelated_JJ signals_NNS ,_, therefore_RB could_MD further_VB
+          increase_VB the_DT non-normal_JJ component_NN ._. To_TO overcome_VB this_DT
+          difficulty_NN ,_, MOID_NNP uses_VBZ a_DT percentile_NN ,_, 
+          pct_NN 
+          
+            f_SYM 
+           ,_, of_IN the_DT integral_JJ distribution_NN formed_VBN by_IN the_DT 
+          n_NN 
+          
+            k_NN 
+           fold_VB change_NN numbers_NNS ,_, 
+          F_NN 
+          
+            k_NN 
+           (_( 
+          f_SYM )_) ,_, which_WDT satisfied_VBD the_DT boundary_NN
+          conditions_NNS :_: 
+          F_NN (_( 0_CD )_) =_SYM 0_CD and_CC 
+          F_NN (_( ∞_NN )_) =_SYM 1_CD ._. Empirically_NNP ,_, 70_CD %_NN is_VBZ used_VBN
+          for_IN 
+          pct_NN 
+          
+            f_SYM 
+           as_IN determined_VBN by_IN spiking_VBG experiments_NNS discussed_VBN
+          later_RB ._. The_DT confidence_NN intervals_NNS are_VBP also_RB directly_RB taken_VBN
+          from_IN relevant_JJ percentiles_NNS in_IN the_DT distribution_NN
+          corresponding_JJ to_TO the_DT lower_JJR bound_JJ and_CC upper_JJ bound_VBN ,_,
+          respectively_RB ._. The_DT effect_NN of_IN the_DT number_NN 
+          n_NN 
+          
+            k_NN 
+           is_VBZ taken_VBN into_IN account_NN in_IN the_DT same_JJ heuristic_JJ manner_NN
+          as_IN we_PRP did_VBD previously_RB for_IN absolute_JJ analysis_NN ._. The_DT final_JJ
+          formulae_NN are_VBP :_:
+          
+        
+        
+          MAS_NNP 4_CD Algorithm_NNP for_IN Absolute_JJ Analysis_NNP
+          After_IN a_DT sample_NN is_VBZ hybridized_JJ to_TO probes_NNS on_IN a_DT chip_NN ,_, the_DT
+          chip_NN is_VBZ scanned_JJ and_CC fluorescent_NN signals_NNS are_VBP collected_VBN and_CC
+          stored_VBN in_IN an_DT Affymetrix_NNP DAT_NNP file_VB ._. For_IN cell_NN 
+          i_NNP ,_, after_IN filtering_VBG out_IN boundary_NN
+          pixels_NNS ,_, 
+          N_NNP 
+          
+            i_NNP 
+           numbers_NNS of_IN pixels_NNS are_VBP used_VBN to_TO calculate_VB an_DT average_JJ
+          intensity_NN value_NN 
+          I_PRP 
+          
+            i_NNP 
+           and_CC standard_JJ deviation_NN σ_NN 
+          
+            i_NNP 
+           ._. Hereafter_NNP we_PRP index_NN a_DT probe_NN set_VBN by_IN 
+          k_NN ,_, which_WDT contains_VBZ 
+          n_NN 
+          
+            k_NN 
+           probe_NN pairs_NNS ._. The_DT calculated_VBN intensity_NN values_NNS for_IN the_DT
+          
+          j_NN th_NN pair_NN in_IN the_DT 
+          k_NN th_NN probe_NN set_VBN are_VBP denoted_JJ as_IN 
+          PM_NNP 
+          
+            kj_NN 
+           for_IN PM_NNP and_CC 
+          MM_NNP 
+          
+            kj_NN 
+           for_IN MM_NNP ._. Background_NNP intensity_NN ,_, 
+          bg_NN ,_, is_VBZ derived_VBN from_IN the_DT average_JJ
+          intensity_NN of_IN the_DT 2_CD %_NN darkest_NN cells_NNS ._. Noise_NNP level_NN ,_, 
+          Q_NNP ,_, is_VBZ determined_VBN as_IN
+          
+          where_WRB average_NN is_VBZ done_VBN over_IN all_DT background_NN cells_NNS ._.
+          MAS_NNP 4_CD assumes_VBZ that_IN the_DT cross_NN hybridization_NN component_NN of_IN
+          a_DT match_NN is_VBZ captured_VBN by_IN its_PRP$ mismatch_NN companion_NN ,_, therefore_RB
+          the_DT difference_NN ,_, 
+          PM_NNP 
+          
+            k_NN 
+           -_: 
+          MM_NNP 
+          
+            k_NN 
+           ,_, is_VBZ used_VBN to_TO derive_VB expression_NN levels_NNS ._. MAS_NNP 4_CD also_RB
+          uses_VBZ a_DT "_'' super-_NN Olympic_NNP scoring_VBG "_'' procedure_NN to_TO iteratively_RB
+          filter_NN out_RP outliers_NNS ,_, defined_VBN as_IN those_DT probe_NN pairs_NNS with_IN
+          difference_NN values_NNS more_JJR than_IN three_CD times_NNS the_DT standard_JJ
+          deviation_NN away_RB from_IN the_DT mean_NN ._. After_IN filtering_VBG ,_, the_DT
+          average_JJ difference_NN value_NN for_IN a_DT probe_NN set_VBD ,_, 
+          D_NNP 
+          
+            k_NN 
+           ,_, is_VBZ used_VBN to_TO represent_VB the_DT expression_NN level_NN of_IN that_DT
+          particular_JJ gene_NN ._.
+          The_DT significance_NN of_IN gene_NN presence_NN is_VBZ determined_VBN by_IN an_DT
+          empirical_JJ absolute_JJ call_NN decision_NN matrix_NN coupled_VBN with_IN
+          proprietary_JJ MAS_NNP 4_CD algorithms_NNS ,_, parts_NNS of_IN which_WDT are_VBP described_VBN
+          in_IN the_DT Microarray_NNP Suite_NNP documentation_NN ._. As_IN the_DT result_NN ,_, a_DT
+          probe_NN set_VBN is_VBZ marked_VBN as_RB either_DT "_'' Present_VB "_'' ,_, "_'' Absent_VB "_'' ,_, or_CC
+          "_'' Marginal_JJ "_'' ._.
+          MAS_NNP 4_CD calculates_VBZ average_JJ difference_NN by_IN
+          
+          D_NNP 
+          
+            k_NN 
+           =_SYM <_NN 
+          PM_NNP 
+          
+            kj_NN 
+           -_: 
+          MM_NNP 
+          
+            kj_NN 
+           >_NN 
+          
+            j_NN 
+           ,_,
+          which_WDT is_VBZ essentially_RB
+          
+          D_NNP 
+          
+            k_NN 
+           =_SYM <_NN 
+          PM_NNP 
+          
+            kj_NN 
+           >_NN 
+          
+            j_NN 
+           -_: <_NN 
+          MM_NNP 
+          
+            kj_NN 
+           >_NN 
+          
+            j_NN 
+           ,_,
+          where_WRB the_DT average_NN is_VBZ taken_VBN over_IN all_PDT the_DT probe_NN pairs_NNS
+          surviving_VBG the_DT super-_NN Olympic_NNP filtering_VBG process_NN mentioned_VBN
+          above_IN ._. Based_VBN on_IN this_DT observation_NN ,_, the_DT one-one_JJ
+          correspondences_NNS between_IN 
+          PM_NNP 
+          
+            kj_NN 
+           and_CC 
+          MM_NNP 
+          
+            kj_NN 
+           ,_, typically_RB with_IN an_DT average_JJ correlation_NN coefficient_NN
+          around_IN 0_CD ._. 8_CD ,_, are_VBP essentially_RB lost_VBN during_IN such_JJ averaging_NN ._.
+          Since_IN MAS_NNP 4_CD is_VBZ successful_JJ in_IN various_JJ applications_NNS despite_IN
+          the_DT fact_NN it_PRP averages_VBZ out_IN probe-specific_JJ mismatch_NN signals_NNS ,_,
+          we_PRP hypothesize_NN that_IN contributions_NNS of_IN the_DT mismatch_NN probes_NNS
+          are_VBP mainly_RB probe-nonspecific_JJ ,_, if_IN the_DT pairwise_NN
+          correspondence_NN between_IN 
+          PM_NNP 
+          
+            kj_NN 
+           and_CC 
+          MM_NNP 
+          
+            kj_NN 
+           are_VBP not_RB enforced_VBN ._. This_DT observation_NN led_VBN to_TO the_DT idea_NN
+          of_IN only_RB using_VBG match_NN probes_NNS in_IN the_DT MOID_NNP algorithm_NN
+          discussed_VBN above_IN ._.
+        
+        
+          MAS_NNP 4_CD Algorithm_NNP for_IN Normalization_NNP
+          MAS_NNP 4_CD introduces_VBZ a_DT normalization_NN factor_NN (_( a_DT scaling_VBG
+          factor_NN in_IN MAS_NNP 4_CD serves_VBZ the_DT same_JJ purpose_NN )_) ._. The_DT goal_NN of_IN
+          normalization_NN is_VBZ to_TO reduce_VB false_JJ positives_NNS in_IN the_DT
+          expression_NN fold_VB change_NN calculation_NN and_CC ensure_VB
+          housekeeping_NN genes_NNS are_VBP marked_VBN as_IN unchanged_JJ ._. Since_IN it_PRP is_VBZ
+          usually_RB unknown_JJ 
+          a_DT priori_FW what_WP genes_NNS sustain_VB their_PRP$
+          expression_NN level_NN during_IN the_DT two_CD experiments_NNS ,_, different_JJ
+          heuristic_JJ normalization_NN schemes_NNS may_MD be_VB adopted_VBN and_CC it_PRP is_VBZ
+          unclear_JJ at_IN this_DT point_NN which_WDT particular_JJ approach_NN is_VBZ
+          optimal_NN ._. MAS_NNP 4_CD normally_RB derives_VBZ the_DT normalization_NN factor_NN
+          by_IN scaling_VBG average_JJ 
+          D_NNP 
+          
+            k_NN 
+           for_IN all_DT genes_NNS with_IN expression_NN levels_NNS within_IN the_DT
+          central_JJ 96_CD %_NN to_TO a_DT certain_JJ target_NN intensity_NN constant_JJ ._. This_DT
+          algorithm_NN is_VBZ based_VBN on_IN the_DT assumption_NN that_IN the_DT total_JJ copy_NN
+          of_IN mRNA_NN per_IN cell_NN is_VBZ a_DT conserved_JJ number_NN among_IN
+          experiments_NNS ._.
+        
+        
+          MAS_NNP 4_CD Algorithm_NNP for_IN Comparison_NNP Analysis_NNP
+          In_IN comparison_NN of_IN two_CD chips_NNS ,_, we_PRP follow_VBP Affymetrix_NNP
+          convention_NN of_IN calling_VBG the_DT reference_NN chip_NN measurement_NN as_IN
+          the_DT base_NN (_( 
+          b_SYM )_) ,_, the_DT other_JJ one_CD as_IN the_DT
+          experiment_NN (_( 
+          e_SYM )_) ._. After_IN the_DT above_JJ normalization_NN
+          procedure_NN ,_, the_DT fold_VB change_NN value_NN for_IN gene_NN 
+          k_NN ,_, f_SYM 
+          
+            k_NN 
+           ,_, is_VBZ essentially_RB calculated_VBN by_IN dividing_VBG 
+          D_NNP 
+          
+            k_NN 
+           (_( 
+          e_SYM )_) with_IN 
+          D_NNP 
+          
+            k_NN 
+           (_( 
+          b_SYM )_) ._. MAS_NNP 4_CD uses_VBZ a_DT filtering_VBG process_NN
+          to_TO ensure_VB that_IN a_DT common_JJ subset_NN of_IN "_'' good_JJ "_'' probe_NN pairs_NNS
+          between_IN 
+          b_SYM and_CC 
+          e_SYM are_VBP used_VBN to_TO recalculate_NN 
+          D_NNP 
+          
+            k_NN 
+           ._. Very_RB weak_JJ expression_NN signals_NNS (_( sometimes_RB negative_JJ )_)
+          are_VBP rounded_VBN to_TO the_DT noise_NN level_NN mentioned_VBN before_RB ._. The_DT
+          final_JJ formula_NN for_IN 
+          f_SYM is_VBZ :_:
+          
+          f_SYM 
+          
+            k_NN 
+           =_SYM [_NN 
+          D_NNP 
+          
+            k_NN 
+           (_( 
+          e_SYM )_) +_NN max_NN (_( 
+          Q_NNP -_: 
+          D_NNP 
+          
+            k_NN 
+           (_( 
+          b_SYM )_) ,_, 0_CD )_) ]_NN /_NN max_NN (_( 
+          D_NNP 
+          
+            k_NN 
+           (_( 
+          b_SYM )_) ,_, 
+          Q_NNP )_) ,_, if_IN 
+          D_NNP 
+          
+            k_NN 
+           (_( 
+          e_SYM )_) ≥_NN 
+          D_NNP 
+          
+            k_NN 
+           (_( 
+          b_SYM )_) ,_,
+          or_CC
+          
+          f_SYM 
+          
+            k_NN 
+           =_SYM max_NN (_( 
+          D_NNP 
+          
+            k_NN 
+           (_( 
+          e_SYM )_) ,_, 
+          Q_NNP )_) /_NN [_NN 
+          D_NNP 
+          
+            k_NN 
+           (_( 
+          b_SYM )_) +_NN max_NN (_( 
+          Q_NNP -_: 
+          D_NNP 
+          
+            k_NN 
+           (_( 
+          e_SYM )_) ,_, 0_CD )_) ]_NN ,_, otherwise_RB ._.
+          An_DT empirical_JJ difference_NN call_NN decision_NN matrix_NN and_CC a_DT
+          proprietary_JJ MAS_NNP 4_CD algorithm_NN ,_, partly_RB described_VBD in_IN the_DT
+          Microarray_NNP Suite_NNP 4_CD ._. 0_CD documentation_NN ,_, determine_VBP the_DT
+          significance_NN of_IN the_DT fold_VB change_NN ._. As_IN a_DT result_NN ,_, the_DT probe_NN
+          set_VBN is_VBZ marked_VBN as_IN "_'' Increase_VB "_'' ,_, "_'' No_DT Change_NNP "_'' ,_, "_'' Decrease_NNP "_'' ,_,
+          "_'' Marginally_NNP Increase_VB "_'' ,_, or_CC "_'' Marginally_NNP Decrease_NNP "_'' ._. It_PRP is_VBZ
+          obvious_JJ that_IN the_DT fold_VB change_NN number_NN is_VBZ only_RB meaningful_JJ if_IN
+          the_DT probe_NN set_VBN is_VBZ clearly_RB present_JJ at_IN a_DT level_NN above_IN the_DT
+          noise_NN in_IN both_DT data_NNS sets_NNS ._.
+        
+      
+      
+        List_NN of_IN Abbreviations_NNP
+        MOID_NNP -_: match-only_JJ integral_JJ distribution_NN
+        MAS_NNP 4_CD -_: Affymetrix_NNP algorithms_NNS implemented_VBN in_IN its_PRP$
+        Microarray_NNP Suit_NNP 4_CD ._. 0_CD software_NN
+        PM_NNP -_: perfect_JJ match_NN
+        DMM_NNP -_: mismatch_NN
+      
+    
+  

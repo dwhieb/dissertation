@@ -1,0 +1,560 @@
+
+  
+    
+      
+        Background_NNP
+        Modern_NNP drug_NN discovery_NN is_VBZ concerned_VBN with_IN identification_NN
+        and_CC validation_NN of_IN novel_NN protein_NN targets_NNS from_IN among_IN the_DT
+        >_NN 30_CD ,_, 000_CD genes_NNS postulated_JJ to_TO be_VB present_JJ in_IN the_DT human_JJ
+        genome_NN [_NN 1_CD ]_NN ._. In_IN understanding_VBG the_DT importance_NN of_IN any_DT new_JJ
+        gene_NN and_CC its_PRP$ connection_NN to_TO a_DT given_VBN phenotype_NN ,_, there_EX is_VBZ the_DT
+        need_NN to_TO know_VB the_DT immediate_JJ "_'' neighborhood_NN "_'' of_IN partners_NNS for_IN
+        each_DT gene_NN product_NN since_IN they_PRP are_VBP most_RBS likely_RB involved_VBN in_IN
+        the_DT action_NN of_IN the_DT gene_NN product_NN ._. In_IN this_DT regard_NN ,_, there_EX are_VBP
+        few_JJ if_IN any_DT new_JJ chemical_NN entities_NNS (_( NCEs_NNP )_) capable_JJ of_IN
+        regulating_VBG protein_NN :_: protein_NN interactions_NNS as_IN either_DT agonists_NNS
+        or_CC antagonists_NNS ._. In_IN the_DT past_NN ,_, peptides_NNS have_VBP sometimes_RB been_VBN
+        used_VBN to_TO obtain_VB information_NN about_IN protein_NN :_: protein_NN
+        interactions_NNS as_RB well_RB as_IN regulate_VB their_PRP$ activity_NN [_NN 2_CD 3_CD ]_NN ._.
+        This_DT has_VBZ most_RBS often_RB been_VBN accomplished_VBN with_IN libraries_NNS
+        consisting_VBG of_IN peptides_NNS between_IN <_NN 15_CD amino_JJ acids_NNS in_IN
+        length_NN ._. Using_VBG this_DT approach_NN ,_, peptides_NNS have_VBP been_VBN identified_VBN
+        which_WDT act_VBP as_IN agonists_NNS and_CC antagonists_NNS though_IN ,_, in_IN most_JJS
+        cases_NNS ,_, these_DT peptides_NNS have_VBP not_RB shown_VBN any_DT sequence_NN homology_NN
+        to_TO the_DT natural_JJ ligand_NN [_NN 4_CD 5_CD 6_CD ]_NN ._. Clearly_RB these_DT peptides_NNS
+        did_VBD not_RB use_VB any_DT of_IN the_DT natural_JJ amino_JJ acid_NN contacts_NNS required_VBN
+        for_IN binding_VBG of_IN the_DT growth_NN factors_NNS to_TO their_PRP$ receptors_NNS ._. As_IN
+        these_DT peptides_NNS were_VBD functional_JJ but_CC not_RB compositional_JJ
+        mimics_NNS ,_, they_PRP lacked_VBD primary_JJ sequence_NN information_NN useful_JJ for_IN
+        identifying_VBG (_( by_IN motif_NN ,_, sequence_NN identity_NN or_CC similarity_NN )_) the_DT
+        true_JJ biological_JJ partner_NN ._. These_DT results_NNS are_VBP not_RB surprising_VBG
+        since_IN the_DT putative_JJ contact_NN domains_NNS between_IN receptors_NNS and_CC
+        hormones_NNS are_VBP expected_VBN to_TO be_VB conformational_NN and_CC short_JJ
+        peptides_NNS were_VBD probably_RB unable_JJ to_TO mimic_VB a_DT large_JJ
+        three-dimensional_JJ shape_NN ._. In_IN this_DT report_NN ,_, we_PRP describe_VBP a_DT
+        novel_NN post-genomic_JJ approach_NN (_( called_VBN Phenogenix_NNP ®_NN )_) that_WDT
+        involves_VBZ the_DT use_NN of_IN complex_JJ and_CC random_JJ peptide_NN libraries_NNS of_IN
+        large_JJ size_NN (_( up_IN to_TO 40_CD amino_JJ acids_NNS )_) and_CC diversity_NN (_( >_NN 10_CD
+        11_CD independent_JJ clones_NNS per_IN library_NN )_) in_IN combination_NN with_IN
+        computational_NN analysis_NN for_IN garnering_VBG information_NN on_IN the_DT
+        natural_JJ biological_JJ partners_NNS and_CC pathways_NNS [_NN 7_CD ]_NN ._. We_PRP also_RB
+        show_VBP that_IN the_DT specificity_NN of_IN these_DT peptides_NNS can_MD be_VB improved_VBN
+        by_IN mutation_NN at_IN the_DT DNA_NNP level_NN that_WDT has_VBZ implications_NNS for_IN
+        phenotyping_VBG and_CC the_DT development_NN of_IN Site_NNP Directed_NNP Assays_NNP ._.
+        Overall_RB ,_, the_DT data_NNS indicates_VBZ that_IN the_DT surrogate_JJ peptides_NNS ,_,
+        derived_VBN in_IN this_DT manner_NN ,_, can_MD contain_VB sequence_NN information_NN
+        regarding_VBG the_DT natural_JJ contact_NN domains_NNS for_IN both_DT
+        protein_NN :_: protein_NN and_CC protein_NN :_: non-protein_JJ interactions_NNS ._.
+      
+      
+        Results_NNS and_CC Discussion_NNP
+        
+          Criteria_NNP for_IN a_DT Partner_NNP Hit_VBP
+          The_DT first_JJ stage_NN in_IN the_DT computational_NN analysis_NN of_IN our_PRP$
+          surrogates_NNS requires_VBZ the_DT alignment_NN of_IN the_DT peptides_NNS into_IN
+          groups_NNS based_VBN on_IN motifs_NNS or_CC consensus_NN regions_NNS ._. In_IN addition_NN ,_,
+          we_PRP examine_VBP each_DT peptide_NN for_IN significant_JJ differences_NNS in_IN
+          the_DT expected_VBN frequency_NN of_IN amino_JJ acids_NNS and_CC the_DT number_NN of_IN
+          times_NNS a_DT specific_JJ peptide_NN sequence_NN has_VBZ been_VBN repeated_VBN ._.
+          After_IN defining_VBG our_PRP$ query_NN strategy_NN (_( e_SYM ._. g_SYM ._. ,_, entire_JJ surrogate_JJ
+          sequence_NN ,_, motifs_NNS ,_, etc_FW ._. )_) ,_, we_PRP simultaneously_RB search_VBP several_JJ
+          public_JJ databases_NNS using_VBG programs_NNS such_JJ as_IN Blastp_NNP ,_, MAST_NNP
+          (_( Motif_NN Alignment_NNP and_CC Search_NNP Tool_NNP )_) and_CC Patternfind_NNP (_( see_VB
+          Materials_NNPS and_CC Methods_NNP )_) ._. The_DT output_NN from_IN each_DT search_NN is_VBZ
+          further_RBR analyzed_VBN based_VBN on_IN criteria_NNS described_VBD in_IN Table_NNP 1_CD ._.
+          Homology_NNP between_IN the_DT partner_NN and_CC surrogate_JJ oftentimes_NNS
+          ranges_NNS over_IN a_DT long_JJ stretch_NN (_( 15_CD -_: 20_CD amino_JJ acids_NNS )_) or_CC may_MD be_VB
+          found_VBN in_IN a_DT perfect_JJ match_NN within_IN a_DT short_JJ sequence_NN of_IN 5_CD -_: 8_CD
+          amino_JJ acids_NNS (_( unpublished_JJ data_NNS )_) ._. Other_JJ positive_JJ indicators_NNS
+          include_VBP :_: 1_CD ._. the_DT appearance_NN of_IN the_DT partner_NN in_IN at_IN least_JJS 50_CD %_NN
+          of_IN the_DT top_JJ cohort_NN (_( i_NNP ._. e_SYM ._. ,_, first_JJ 10_CD matches_VBZ )_) of_IN any_DT one_CD
+          search_NN ;_: 2_CD ._. the_DT appearance_NN of_IN the_DT same_JJ or_CC related_VBN hits_NNS
+          occurring_VBG in_IN several_JJ different_JJ searches_NNS ;_: 3_CD ._. the_DT
+          identification_NN of_IN the_DT same_JJ partner_NN for_IN multiple_JJ peptides_NNS
+          from_IN the_DT same_JJ or_CC related_VBN pans_NNS ._. Criterion_NNP 2_CD addresses_NNS the_DT
+          biological_JJ relevance_NN of_IN a_DT hit_VBN (_( e_SYM ._. g_SYM ._. ,_, distribution_NN ,_,
+          disease_NN indication_NN ,_, etc_FW ._. )_) and_CC criterion_NN 3_CD relates_VBZ to_TO the_DT
+          biological_JJ activity_NN of_IN the_DT surrogate_JJ and_CC its_PRP$ ability_NN to_TO
+          cause_VB a_DT phenotypic_JJ change_NN in_IN the_DT appropriate_JJ test_NN system_NN
+          (_( phenotyping_VBG )_) ._.
+        
+        
+          Panning_NNP of_IN mRNA_NN targets_NNS
+          In_IN one_CD series_NN of_IN experiments_NNS ,_, biotinylated_JJ
+          oligonucleotides_NNS comprising_VBG the_DT UTRs_NNP (_( untranslated_JJ
+          regions_NNS )_) of_IN four_CD mRNAs_NNS were_VBD synthesized_JJ (_( Table_NNP 2_LS )_) ._. The_DT
+          oligonucleotides_NNS were_VBD heat_NN denatured_JJ and_CC allowed_VBN to_TO
+          anneal_NN at_IN room_NN temperature_NN to_TO allow_VB the_DT appropriate_JJ
+          re-folding_JJ ._. All_DT of_IN the_DT mRNAs_NNS were_VBD subjected_VBN to_TO 4_CD rounds_NNS
+          of_IN panning_VBG using_VBG both_DT 40_CD mer_NN and_CC 20_CD mer_NN random_JJ libraries_NNS
+          under_IN similar_JJ but_CC not_RB equivalent_NN conditions_NNS ._. Individual_JJ
+          phage_NN clones_NNS from_IN rounds_NNS three_CD and_CC four_CD were_VBD amplified_VBN ,_,
+          tested_VBN for_IN binding_VBG to_TO the_DT specific_JJ and_CC a_DT non-specific_JJ
+          mRNA_NN and_CC sequenced_JJ ._. Table_NNP 3_CD shows_VBZ the_DT overall_JJ results_NNS that_WDT
+          were_VBD obtained_VBN from_IN each_DT of_IN the_DT pannings_NNS ._. On_IN average_JJ ,_,
+          about_IN 8_CD %_NN of_IN the_DT surrogates_NNS were_VBD found_VBN to_TO be_VB specific_JJ for_IN
+          each_DT target_NN when_WRB compared_VBN to_TO a_DT control_JJ RNA_NNP (_( RRE_NNP )_) ._. For_IN
+          each_DT RNA_NNP target_NN ,_, the_DT predicted_VBD amino_JJ acid_NN sequences_NNS of_IN
+          the_DT peptide_NN binders_NNS were_VBD analyzed_VBN in_IN terms_NNS of_IN both_DT
+          overall_JJ amino_JJ acid_NN content_NN and_CC the_DT occurrence_NN of_IN known_VBN
+          RNA-binding_NNP motifs_NNS and_CC consensus_NN domains_NNS ._. Two_CD motifs_NNS were_VBD
+          observed_VBN for_IN the_DT APP_NNP and_CC HCV_NNP RNAs_NNP (_( Figure_NN 1_CD and_CC see_VB
+          below_IN )_) ._. RNA_NNP binding_JJ proteins_NNS are_VBP known_VBN to_TO have_VB an_DT overall_JJ
+          abundance_NN of_IN certain_JJ amino_JJ acid_NN residues_NNS [_NN 8_CD 9_CD ]_NN ._. Table_NNP
+          4_CD shows_VBZ a_DT comparison_NN of_IN the_DT specific_JJ amino_JJ acid_NN
+          composition_NN of_IN peptide_NN binders_NNS with_IN regard_NN to_TO their_PRP$
+          average_JJ frequency_NN of_IN occurrence_NN seen_VBN within_IN the_DT original_JJ
+          unpanned_JJ library_NN ._. All_DT of_IN the_DT peptide_NN binders_NNS showed_VBD
+          enrichment_NN of_IN arginine_NN residues_NNS ,_, as_IN would_MD be_VB expected_VBN for_IN
+          RNA_NNP binding_JJ proteins_NNS ._. Also_RB ,_, tryptophan_NN ,_, serine_NN ,_, and_CC
+          glycine_NN residues_NNS were_VBD enriched_JJ ._. In_IN addition_NN ,_, several_JJ
+          peptide_NN binders_NNS showed_VBD the_DT presence_NN of_IN the_DT 
+          RGG_NNP box_NN (_( Figure_NN 2_CD A_DT )_) and_CC one_CD sequence_NN
+          was_VBD found_VBN that_WDT contained_VBD the_DT 
+          KH_NNP motif_NN (_( Figure_NN 2_CD B_NNP )_) ,_, both_DT of_IN which_WDT
+          are_VBP known_VBN RNA-binding_NNP motifs_NNS [_NN 8_CD 9_CD ]_NN ._. The_DT isolation_NN of_IN
+          surrogates_NNS containing_VBG generic_JJ RNA_NNP binding_JJ motifs_NNS is_VBZ not_RB
+          unexpected_JJ and_CC probably_RB results_VBZ from_IN enhanced_VBN binding_JJ and_CC
+          concomitant_NN enrichment_NN of_IN these_DT peptides_NNS during_IN the_DT
+          panning_VBG process_NN ._. In_IN addition_NN ,_, an_DT additional_JJ consensus_NN
+          motif_NN was_VBD identified_VBN among_IN peptides_NNS isolated_VBN by_IN panning_VBG
+          on_IN RRE_NNP RNA_NNP [_NN 10_CD ]_NN ._. This_DT motif_NN [_NN 
+          K_NNP /_NN R_NN ]_NN 
+          LRRR_NNP ,_, aligns_NNS with_IN a_DT region_NN on_IN the_DT
+          expected_VBN natural_JJ partner_NN ,_, the_DT Rev_NNP peptide_NN (_( Figure_NN 3_LS )_) ._.
+          One_CD peptide_NN was_VBD chosen_VBN from_IN each_DT of_IN the_DT APP_NNP ,_, HCV_NNP and_CC
+          IGF_NNP pans_NNS (_( based_VBN on_IN the_DT highest_JJS specific_JJ binding_JJ vs_NNS ._. RRE_NNP
+          RNA_NNP )_) as_IN templates_NNS for_IN the_DT construction_NN of_IN secondary_JJ
+          libraries_NNS ._. Each_DT of_IN these_DT libraries_NNS contained_VBD >_NN 10_CD
+          10_CD independent_JJ clones_NNS and_CC was_VBD used_VBN for_IN panning_VBG the_DT
+          appropriate_JJ target_NN RNA_NNP ._. Results_NNS are_VBP shown_VBN in_IN Figure_NN 4_CD and_CC
+          Table_NNP 5_CD ._. Since_IN library_NN construction_NN was_VBD based_VBN on_IN peptides_NNS
+          previously_RB selected_VBN for_IN binding_JJ and_CC selectivity_NN to_TO
+          specific_JJ RNAs_NNP ,_, the_DT number_NN of_IN target-specific_JJ clones_NNS
+          increased_VBN dramatically_RB following_VBG 
+          in_IN vitro_NN maturation_NN ._. In_IN addition_NN ,_,
+          motifs_NNS were_VBD observed_VBN suggesting_VBG the_DT critical_JJ nature_NN of_IN
+          these_DT specific_JJ residues_NNS in_IN terms_NNS of_IN binding_JJ to_TO target_VB ._.
+          Preliminary_JJ studies_NNS have_VBP shown_VBN that_IN the_DT secondary_JJ
+          surrogates_NNS have_VBP higher_JJR relative_JJ affinities_NNS when_WRB compared_VBN
+          to_TO the_DT original_JJ clones_NNS (_( unpublished_JJ data_NNS )_) ._.
+          In_IN the_DT case_NN of_IN the_DT HCV_NNP RNA_NNP ,_, we_PRP panned_VBD a_DT sequence_NN (_( AA_NN
+          UUG_NNP CCA_NNP GGA_NNP CGA_NNP CCG_NNP GGU_NNP CCU_NNP UUC_NNP UUG_NNP GAU_NNP CAA_NNP CCC_NNP GCU_NNP CAA_NNP
+          UGC_NNP CUG_NNP GAG_NNP AUU_NNP )_) predicted_VBD to_TO bind_NN to_TO at_IN least_JJS one_CD of_IN the_DT
+          proteins_NNS comprising_VBG the_DT translation_NN complex_JJ eukaryotic_JJ
+          Initiation_NNP Factor_NN 3_CD (_( eIF_NN 3_CD ;_: [_NN 11_CD 12_CD 13_CD 14_CD ]_NN )_) ._. Published_VBN
+          reports_NNS identify_VBP the_DT p_NN 120_CD subunit_NN of_IN eIF_NN 3_CD as_IN the_DT one_CD
+          binding_VBG to_TO the_DT apical_JJ loop_NN of_IN the_DT domain_NN III_NNP of_IN HCV_NNP
+          5_CD '_POS UTR_NNP ,_, and_CC p_NN 170_CD (_( also_RB called_VBN p_NN 160_CD )_) as_IN binding_VBG the_DT stem_NN
+          portion_NN of_IN the_DT domain_NN III_NNP ._. The_DT oligonucleotide_NN used_VBN for_IN
+          these_DT studies_NNS contains_VBZ the_DT apical_JJ portion_NN and_CC part_NN of_IN the_DT
+          stem_NN portion_NN of_IN domain_NN III_NNP and_CC ,_, therefore_RB ,_, might_MD bind_NN one_CD
+          or_CC both_DT of_IN these_DT subunits_NNS ._. Interestingly_RB ,_, the_DT binding_JJ of_IN
+          p_NN 170_CD (_( p_NN 160_CD )_) to_TO the_DT stem_NN of_IN domain_NN III_NNP is_VBZ
+          position-independent_JJ (_( i_NNP ._. e_SYM ._. ,_, not_RB constrained_VBN by_IN other_JJ
+          structural_JJ elements_NNS on_IN the_DT mRNA_NN [_NN 12_CD 13_CD ]_NN )_) ._.
+          Sequence_NNP analysis_NN of_IN surrogate_JJ peptide_NN binders_NNS to_TO HCV_NNP
+          using_VBG MEME_NNP (_( Motif_NN Elicitation_NNP Program_NNP )_) and_CC other_JJ peptide_NN
+          sequence_NN alignment_NN programs_NNS identified_VBD a_DT consensus_NN
+          sequence_NN 
+          TxRLL_NNP found_VBD in_IN four_CD peptides_NNS binding_VBG
+          to_TO the_DT HCV_NNP mRNA_NN (_( Figure_NN 5_LS )_) ._. This_DT motif_NN was_VBD unique_JJ to_TO HCV_NNP
+          and_CC not_RB found_VBD in_IN peptides_NNS derived_VBN from_IN any_DT of_IN the_DT other_JJ
+          mRNA_NN pans_NNS ._. Interestingly_RB ,_, the_DT 
+          TxRLL_NNP -_: containing_VBG surrogates_NNS were_VBD
+          found_VBN by_IN two_CD investigators_NNS in_IN the_DT laboratory_NN ,_, using_VBG the_DT
+          20_CD mer_NN or_CC 40_CD mer_NN random_JJ libraries_NNS under_IN different_JJ
+          experimental_JJ conditions_NNS ._. Database_NNP searches_NNS using_VBG
+          Patternfind_NNP at_IN the_DT ISREC_NNP server_NN were_VBD performed_VBN using_VBG
+          parameters_NNS appropriate_JJ for_IN short_JJ protein_NN queries_NNS and_CC were_VBD
+          successful_JJ in_IN identifying_VBG a_DT human_JJ gene_NN product_NN ,_, subunit_NN
+          p_NN 170_CD of_IN eIF_NN 3_CD (_( Figure_NN 3_LS )_) ._. Searches_NNP using_VBG the_DT consensus_NN
+          region_NN as_IN the_DT query_NN likewise_RB identified_VBD sequence_NN homology_NN
+          with_IN the_DT large_JJ subunit_NN p_NN 170_CD of_IN eIF_NN 3_CD ._. These_DT results_NNS fit_VBP
+          our_PRP$ partner_NN criteria_NNS 1_CD -_: 3_CD (_( Table_NNP 1_LS )_) ._. Interestingly_RB ,_, other_JJ
+          amino_JJ acids_NNS in_IN these_DT surrogates_NNS were_VBD found_VBN to_TO be_VB
+          identical_JJ to_TO residues_NNS flanking_VBG the_DT 
+          TxRLL_NNP motif_NN in_IN p_NN 170_CD on_IN both_DT the_DT amino_JJ
+          and_CC carboxy_NN sides_NNS (_( Figure_NN 5_LS )_) ._. Thus_RB ,_, the_DT library_NN contained_VBD
+          peptide_NN surrogates_NNS binding_VBG to_TO the_DT HCV_NNP target_NN mRNA_NN as_RB well_RB
+          as_IN containing_VBG sequence_NN information_NN identifying_VBG the_DT
+          natural_JJ interacting_VBG partner_NN and_CC predicting_VBG the_DT putative_JJ
+          contact_NN amino_JJ acids_NNS on_IN the_DT p_NN 170_CD subunit_NN of_IN eIF_NN 3_CD ._. The_DT fact_NN
+          that_IN multiple_JJ surrogates_NNS had_VBD the_DT 
+          TxRLL_NNP motif_NN suggests_VBZ that_IN this_DT region_NN
+          of_IN p_NN 170_CD is_VBZ necessary_JJ and_CC critical_JJ for_IN binding_JJ of_IN HCV_NNP mRNA_NN
+          to_TO eIF_NN 3_CD ._.
+        
+        
+          Panning_NNP of_IN TNF-β_NNP
+          In_IN a_DT separate_JJ study_NN ,_, we_PRP panned_VBD the_DT immune_JJ cytokine_NN
+          TNF-β_NNP (_( lymphotoxin_NN α_NN ,_, Lt_NNP α_NN ;_: [_NN 15_CD 16_CD 17_CD ]_NN )_) using_VBG a_DT highly_RB
+          stringent_JJ protocol_NN involving_VBG both_DT positive_JJ (_( vs_NNS ._. TNF-β_NNP )_)
+          and_CC negative_JJ (_( vs_NNS ._. TNF-α_NNP ,_, TNFR_NNP 1_CD and_CC TNFR_NNP 2_LS )_) selection_NN ._. One_CD
+          of_IN these_DT peptides_NNS ,_, designated_VBN KcB_NNP 7_CD ,_, had_VBD the_DT amino_JJ acid_NN
+          sequence_NN 
+          RKEMGGGGGPGWSENLFQ_NNP ._. A_DT Blastp_NNP search_NN ,_,
+          using_VBG several_JJ different_JJ queries_NNS revealed_VBD TNFR_NNP 1_CD ,_, which_WDT is_VBZ
+          the_DT natural_JJ biological_JJ partner_NN of_IN TNFβ_NNP (_( Figure_NN 5_LS )_) ._.
+          Interestingly_RB ,_, the_DT other_JJ cognate_NN partner_NN (_( i_NNP ._. e_SYM ._. ,_, receptor_NN
+          TNFR_NNP 2_LS )_) was_VBD not_RB identified_VBN ._. Closer_RBR examination_NN of_IN the_DT
+          complementary_JJ sequences_NNS revealed_VBD that_IN the_DT short_JJ
+          N-_NNP terminal_NN sequence_NN 
+          RKEMG_NNP and_CC the_DT C-_NNP terminal_NN sequence_NN 
+          WSENLFQ_NNP were_VBD identical_JJ to_TO regions_NNS on_IN
+          TNFR_NNP 1_CD (_( amino_JJ acids_NNS 77_CD -_: 81_CD and_CC 107_CD -_: 113_CD respectively_RB )_) ._.
+          Although_IN not_RB complete_JJ ,_, these_DT segments_NNS corresponded_VBD to_TO
+          amino_JJ acids_NNS within_IN two_CD critical_JJ ligand_NN :_: receptor_NN contact_NN
+          domains_NNS [_NN 18_CD ]_NN ._. In_IN the_DT case_NN of_IN the_DT N-_NNP terminal_NN grouping_VBG ,_,
+          the_DT surrogate_NN contained_VBD 5_CD of_IN the_DT 15_CD amino_JJ acids_NNS of_IN the_DT
+          77_CD -_: 81_CD contact_NN domain_NN whereas_IN in_IN the_DT C-_NNP terminal_NN grouping_VBG ,_,
+          the_DT surrogate_NN contained_VBD 6_CD of_IN the_DT 9_CD amino_JJ acids_NNS identified_VBN
+          within_IN the_DT 107_CD -_: 113_CD contact_NN domain_NN ._. It_PRP is_VBZ also_RB worth_JJ
+          noting_VBG that_IN ,_, on_IN the_DT receptor_NN ,_, these_DT two_CD domains_NNS are_VBP not_RB
+          contiguous_JJ but_CC are_VBP separated_VBN by_IN 25_CD amino_JJ acids_NNS whereas_IN
+          only_RB a_DT 6_CD amino_JJ acid_NN hydrophobic_JJ stretch_NN separates_NNS the_DT two_CD
+          noncontiguous_JJ contact-mimicking_JJ domains_NNS in_IN the_DT surrogate_NN ._.
+          Therefore_RB ,_, the_DT seven_CD amino_JJ acid_NN linker_NN may_MD provide_VB the_DT
+          appropriate_JJ molecular_JJ distances_NNS needed_VBN for_IN TNFβ_NNP binding_VBG
+          to_TO the_DT receptor_NN ._.
+        
+        
+          Robustness_NNP of_IN the_DT System_NNP
+          The_DT successful_JJ isolation_NN of_IN a_DT useful_JJ surrogate_JJ may_MD
+          seem_VB an_DT improbable_JJ task_NN especially_RB in_IN cases_NNS where_WRB nothing_NN
+          is_VBZ known_VBN about_IN the_DT hotspot_NN surface_NN (_( s_VBZ )_) on_IN a_DT target_NN ._. In_IN
+          reality_NN ,_, biopanning_VBG using_VBG the_DT RAPIDLIB_NNP ®_NN library_NN has_VBZ
+          allowed_VBN ,_, (_( in_IN >_NN 90_CD %_NN of_IN cases_NNS )_) the_DT identification_NN of_IN
+          partner-specific_JJ peptides_NNS among_IN the_DT >_NN 10_CD
+          10_CD -_: 11_CD independent_JJ clones_NNS that_WDT are_VBP expressed_VBN within_IN this_DT
+          library_NN [_NN [_NN 7_CD 19_CD 20_CD ]_NN and_CC unpublished_JJ data_NNS ]_NN ._. More_RBR often_RB
+          than_IN not_RB ,_, between_IN 10_CD and_CC 100_CD different_JJ surrogates_NNS have_VBP
+          been_VBN found_VBN for_IN any_DT one_CD target_NN panned_VBN and_CC >_NN 75_CD %_NN of_IN the_DT
+          targets_NNS gave_VBD rise_NN to_TO surrogates_NNS that_WDT bound_VBN to_TO regulatory_JJ
+          hotspots_NNS on_IN the_DT target_NN [_NN [_NN 7_CD ]_NN and_CC unpublished_JJ data_NNS ]_NN ._.
+          Several_JJ important_JJ facts_NNS are_VBP critical_JJ to_TO the_DT success_NN of_IN
+          the_DT process_NN ._. In_IN the_DT first_JJ place_NN ,_, there_EX must_MD be_VB a_DT high_JJ
+          degree_NN of_IN diversity_NN within_IN the_DT library_NN so_IN that_IN one_CD
+          surrogate_NN can_MD be_VB found_VBN for_IN each_DT protein_NN target_NN ._.
+          Additionally_RB ,_, It_PRP appears_VBZ that_IN panning_VBG seems_VBZ to_TO favor_VB the_DT
+          enrichment_NN of_IN regulatory_JJ surrogates_NNS versus_CC irrelevant_JJ
+          peptides_NNS ._. In_IN our_PRP$ experience_NN ,_, the_DT large_JJ number_NN of_IN random_JJ
+          peptides_NNS includes_VBZ a_DT broad_JJ sampling_VBG of_IN linear_JJ and_CC
+          conformational_NN protein_NN surfaces_VBZ sufficient_JJ to_TO present_VB at_IN
+          least_JJS one_CD low_JJ affinity_NN "_'' complement_VB '_POS for_IN any_DT target_NN 's_POS
+          surface_NN [_NN 19_CD 20_CD ]_NN ._. The_DT immune_JJ system_NN 's_POS antibody_NN
+          repertoire_NN arises_VBZ through_IN a_DT process_NN [_NN 21_CD 22_CD 23_CD 24_CD ]_NN
+          similar_JJ to_TO in_IN some_DT aspects_NNS to_TO what_WP occurs_VBZ during_IN the_DT
+          panning_VBG process_NN ._. Initially_RB ,_, immunoglobulins_NNS are_VBP
+          synthesized_JJ containing_VBG multiple_JJ small_JJ contact_NN domains_NNS
+          (_( i_NNP ._. e_SYM ._. ,_, CDR_NNP or_CC Complementarity_NNP Defining_VBG Regions_NNP )_) to_TO
+          provide_VB a_DT "_'' rough_JJ "_'' complement_VB of_IN an_DT antigen_NN 's_POS surface_NN ._.
+          Subsequently_RB ,_, antibody_NN /_NN antigen_NN binding_JJ is_VBZ improved_VBN via_IN
+          mutational_NN events_NNS within_IN the_DT antibody_NN genes_NNS to_TO produce_VB a_DT
+          complement_VB with_IN higher_JJR affinity_NN and_CC selectivity_NN ._.
+          Biopanning_NNP works_VBZ in_IN an_DT analogous_JJ manner_NN by_IN initially_RB
+          enriching_VBG for_IN peptides_NNS with_IN low_JJ affinity_NN for_IN a_DT specific_JJ
+          target_NN ._. However_RB ,_, surrogates_NNS may_MD only_RB need_VB to_TO contain_VB some_DT
+          amino_JJ acids_NNS identical_JJ to_TO those_DT on_IN the_DT partner_NN to_TO bind_NN
+          with_IN sufficient_JJ "_'' avidity_NN "_'' rather_RB than_IN affinity_NN ._.
+          Other_JJ methods_NNS that_WDT have_VBP been_VBN used_VBN extensively_RB for_IN high_JJ
+          throughput_NN partner_NN identification_NN include_VBP the_DT yeast_NN
+          two-hybrid_JJ system_NN [_NN 25_CD ]_NN ._. While_IN the_DT two_CD hybrid_JJ approach_NN
+          is_VBZ popular_JJ ,_, it_PRP has_VBZ a_DT number_NN of_IN inherent_JJ problems_NNS
+          including_VBG a_DT high_JJ potential_NN for_IN false_JJ positives_NNS ,_, the_DT
+          inability_NN to_TO use_VB non-protein_JJ targets_NNS such_JJ as_IN mRNA_NN or_CC
+          membrane_NN bound_VBN /_NN extracellular_NN proteins_NNS and_CC the_DT inability_NN
+          to_TO address_VB postranslational_NN modifications_NNS on_IN a_DT target_NN ._.
+          The_DT generation_NN of_IN surrogates_NNS ,_, on_IN the_DT other_JJ hands_NNS ,_, is_VBZ
+          target_NN independent_JJ and_CC their_PRP$ utility_NN for_IN partner_NN
+          identification_NN resides_VBZ in_IN the_DT computational_NN analysis_NN of_IN
+          the_DT peptide_NN 's_POS sequence_NN ._. Since_IN our_PRP$ libraries_NNS contain_VBP
+          totally_RB random_JJ peptides_NNS ranging_VBG from_IN 20_CD and_CC up_IN to_TO 40_CD
+          amino_JJ acids_NNS in_IN length_NN ,_, there_EX are_VBP no_DT known_VBN restrictions_NNS on_IN
+          the_DT amino_JJ acids_NNS that_WDT can_MD be_VB selected_VBN to_TO create_VB the_DT
+          surrogate_NN 's_POS '_POS complementary_JJ '_POS surface_NN [_NN 7_CD ]_NN ._. Thus_RB ,_, the_DT
+          examples_NNS described_VBD in_IN this_DT report_NN relate_VBP to_TO the_DT utility_NN
+          of_IN the_DT surrogate_JJ approach_NN for_IN finding_VBG the_DT cognate_NN
+          receptor_NN for_IN both_DT protein_NN and_CC non-protein_JJ targets_NNS ._. In_IN the_DT
+          case_NN of_IN the_DT surrogates_NNS for_IN both_DT HCV-mRNA_NNP and_CC TNFβ_NNP ,_, it_PRP is_VBZ
+          clear_JJ that_IN the_DT large_JJ diversity_NN and_CC size_NN of_IN the_DT original_JJ
+          library_NN was_VBD ,_, in_IN fact_NN ,_, critical_JJ to_TO their_PRP$ successful_JJ
+          isolation_NN since_IN libraries_NNS of_IN <_NN 20_CD amino_JJ acids_NNS would_MD not_RB
+          have_VB contained_VBN either_CC the_DT KcB_NNP 7_CD peptide_NN or_CC the_DT
+          HCV-specific_NNP surrogates_NNS ._.
+          In_IN addition_NN to_TO the_DT data_NNS presented_VBN in_IN this_DT paper_NN ,_, we_PRP
+          have_VBP screened_VBD other_JJ targets_NNS using_VBG this_DT approach_NN ._. While_IN
+          the_DT expected_VBN natural_JJ partners_NNS were_VBD found_VBN for_IN many_JJ of_IN the_DT
+          proteins_NNS ,_, there_EX were_VBD instances_NNS where_WRB surrogates_NNS were_VBD
+          generated_VBN but_CC lacked_VBN partner_NN information_NN (_( e_SYM ._. g_SYM ._. ,_, IGF-_NNP 1_CD R_NN ,_,
+          growth_NN hormone_NN receptor_NN ,_, insulin_NN receptor_NN [_NN [_NN 7_CD ]_NN and_CC
+          manuscripts_NNS in_IN preparation_NN ]_NN )_) ._. There_EX are_VBP several_JJ possible_JJ
+          explanations_NNS for_IN these_DT results_NNS ._. While_IN our_PRP$ libraries_NNS are_VBP
+          large_JJ and_CC diverse_JJ ,_, it_PRP is_VBZ probable_JJ that_DT identification_NN of_IN
+          a_DT surrogate_JJ peptide_NN with_IN partner_NN information_NN is_VBZ a_DT rare_JJ
+          event_NN ._. With_IN that_DT in_IN mind_NN ,_, it_PRP may_MD require_VB the_DT isolation_NN
+          and_CC sequencing_VBG of_IN large_JJ numbers_NNS of_IN clones_NNS (_( perhaps_RB
+          >_NN 500_CD /_NN target_NN )_) in_IN order_NN to_TO find_VB the_DT appropriate_JJ
+          surrogate_NN for_IN partner_NN identification_NN ._. On_IN the_DT other_JJ hand_NN ,_,
+          some_DT targets_NNS may_MD have_VB complex_JJ or_CC unusual_JJ protein_NN :_: protein_NN
+          contact_NN sites_NNS that_WDT preclude_VB generation_NN of_IN a_DT surrogate_NN
+          with_IN partner_NN information_NN ._. Ongoing_NNP experiments_NNS will_MD
+          address_VB both_DT of_IN these_DT possibilities_NNS ._. Surrogates_NNP have_VBP also_RB
+          been_VBN found_VBN to_TO have_VB the_DT minimal_JJ structural_JJ content_NN
+          necessary_JJ to_TO induce_VB a_DT pharmacological_JJ effect_NN on_IN any_DT
+          target_NN in_IN addition_NN to_TO their_PRP$ use_NN in_IN partner_NN
+          identification_NN ._. Most_JJS of_IN our_PRP$ surrogates_NNS have_VBP been_VBN shown_VBN to_TO
+          have_VB either_CC agonist_NN or_CC antagonist_NN activity_NN in_IN the_DT
+          appropriate_JJ biochemical_JJ and_CC /_NN or_CC biological_JJ models_NNS (_( [_NN 7_CD ]_NN
+          manuscripts_NNS in_IN preparation_NN )_) ._. The_DT surrogates_NNS were_VBD also_RB
+          able_JJ to_TO subdivide_NN large_JJ contact_NN surfaces_VBZ into_IN smaller_JJR
+          contact_NN domains_NNS through_IN which_WDT target_VBP activity_NN can_MD be_VB
+          modified_VBN [_NN 7_CD ]_NN ._. These_DT attributes_VBZ point_NN to_TO surrogate_JJ use_NN
+          in_IN phenotyping_VBG and_CC validating_VBG novel_NN genes_NNS whose_WP$ functions_NNS
+          are_VBP unknown_JJ and_CC for_IN which_WDT no_DT known_VBN partners_NNS exist_VBP ._.
+          Finally_RB ,_, it_PRP is_VBZ worthwhile_JJ to_TO note_VB that_IN surrogates_NNS have_VBP
+          been_VBN used_VBN to_TO develop_VB competitive_JJ Site_NNP Directed_NNP Assays_NNP
+          (_( SDAs_NNP )_) for_IN essential_JJ sub-domains_JJ thereby_RB allowing_VBG their_PRP$
+          use_NN in_IN high_JJ throughput_NN screening_NN of_IN large_JJ combinatorial_NN
+          libraries_NNS of_IN small_JJ molecules_NNS (_( unpublished_JJ data_NNS )_) ._. In_IN our_PRP$
+          experience_NN ,_, almost_RB all_DT of_IN the_DT peptide_NN surrogates_NNS isolated_VBN
+          from_IN these_DT complex_JJ libraries_NNS by_IN our_PRP$ various_JJ panning_VBG
+          procedures_NNS bind_NN to_TO regulatory_JJ hot_JJ spots_NNS on_IN varied_VBD
+          targets_NNS ._. This_DT non-random_JJ association_NN between_IN a_DT surrogate_JJ
+          and_CC a_DT target_NN 's_POS pharmacologically_RB active_JJ site_NN assures_VBZ a_DT
+          high_JJ degree_NN of_IN probability_NN that_IN ,_, once_RB found_VBD ,_, surrogates_NNS
+          will_MD have_VB utility_NN for_IN the_DT rapid_JJ development_NN of_IN SDAs_NNP
+          capable_JJ of_IN identifying_VBG small_JJ molecules_NNS of_IN pharmacological_JJ
+          importance_NN ._.
+        
+      
+      
+        Conclusions_NNP
+        The_DT results_NNS of_IN these_DT experiments_NNS support_VBP the_DT use_NN of_IN 
+        in_IN vitro_NN panning_VBG procedures_NNS with_IN our_PRP$
+        highly_RB complex_JJ and_CC random_JJ 20_CD -_: 40_CD mer_NN peptide_NN libraries_NNS as_IN a_DT
+        method_NN to_TO obtain_VB information_NN on_IN large_JJ numbers_NNS of_IN protein_NN
+        partners_NNS and_CC enable_VB the_DT elucidation_NN of_IN biologically_RB
+        relevant_JJ protein_NN networks_NNS ._. This_DT post-genomic_JJ approach_NN can_MD
+        be_VB automated_VBN to_TO increase_VB the_DT number_NN of_IN known_VBN and_CC unknown_JJ
+        genes_NNS and_CC gene_NN products_NNS that_WDT can_MD be_VB used_VBN as_IN targets_NNS for_IN
+        partner_NN identification_NN as_IN the_DT first_JJ step_NN in_IN the_DT drug_NN
+        discovery_NN process_NN ._. Additionally_RB ,_, the_DT surrogates_NNS isolated_VBN in_IN
+        such_JJ studies_NNS would_MD be_VB prime_JJ candidates_NNS for_IN phenotyping_VBG and_CC
+        target_NN validation_NN through_IN their_PRP$ ability_NN to_TO regulate_VB target_NN
+        activity_NN and_CC for_IN identifying_VBG small_JJ molecule_NN drug_NN leads_VBZ
+        through_IN their_PRP$ use_NN in_IN Site_NNP Directed_NNP Assays_NNP ._. Overall_RB ,_, the_DT
+        surrogates_NNS can_MD be_VB seen_VBN as_IN providing_VBG a_DT discovery_NN continuum_NN
+        by_IN bridging_VBG the_DT gap_NN between_IN functional_JJ genomics_NNS and_CC
+        proteomics_NNS and_CC modern_JJ drug_NN discovery_NN ._.
+      
+      
+        Materials_NNS and_CC Methods_NNP
+        
+          Targets_NNP
+          Oligonucleotides_NNP for_IN the_DT mRNA_NN pans_NNS were_VBD synthesized_JJ by_IN
+          Dharmacon_NNP Research_NNP (_( Lafayette_NNP ,_, CO_NNP )_) and_CC used_VBN for_IN the_DT
+          experiments_NNS after_IN heat_NN treatment_NN and_CC re-annealing_JJ (_( 65_CD °_NN
+          for_IN 10_CD '_POS and_CC slow_JJ cooling_NN at_IN room_NN temperature_NN )_) ._. The_DT APP_NNP
+          and_CC IGF_NNP oligo_NN sequences_NNS are_VBP proprietary_JJ to_TO Message_NNP
+          Pharmaceuticals_NNP ._. The_DT following_VBG sequence_NN was_VBD used_VBN to_TO
+          obtain_VB the_DT HCV_NNP surrogates_NNS :_: 5_CD '_POS -_: biotin_NN '_'' AA_NN UUG_NNP CCA_NNP GGA_NNP CGA_NNP
+          CCG_NNP GGU_NNP CCU_NNP UUC_NNP UUG_NNP GAU_NNP CAA_NNP CCC_NNP GCU_NNP CAA_NNP UGC_NNP CUG_NNP GAG_NNP
+          AUU-_NNP 3_CD '_'' ._. The_DT sequence_NN for_IN RRE_NNP (_( Rev-response_NNP element_NN )_) has_VBZ
+          been_VBN previously_RB published_VBN [_NN 10_CD ]_NN ._. Streptavidin_NNP coated_JJ
+          plates_NNS were_VBD obtained_VBN from_IN Pierce_NNP (_( Rockford_NNP ,_, IL_NNP )_) ._. TNFR_NNP 1_CD ,_,
+          TNFR_NNP 2_CD ,_, TNF-α_NNP and_CC TNF-β_NNP were_VBD obtained_VBN from_IN R_NN &_CC D_NNP Systems_NNPS
+          (_( Minneapolis_NNP ,_, MN_NNP )_) and_CC reconstituted_JJ according_VBG to_TO the_DT
+          manufacturer_NN 's_POS instructions_NNS ._. The_DT 
+          E_NNP ._. coli_NNS ,_, strain_NN TG_NNP 1_CD (_( genotype_NN =_SYM
+          K_NNP 12_CD Δ_NN 
+          (_( lac-pro_JJ )_) ,_, supE_NN ,_, thi_NN ,_, hsdΔ_NN 5_CD /_NN F_NN '_'' [_NN traD_NN 36_CD ,_,
+          proAB_NN ,_, 
+          lacI_NN q_NN ,_, 
+          lacZΔM_NN 15_CD ]_NN )_) was_VBD obtained_VBN from_IN
+          Pharmacia_NNP (_( Piscataway_NNP NJ_NNP )_) ._.
+        
+        
+          Design_NNP of_IN the_DT Primary_JJ Peptide_NNP Libraries_NNP
+          DNA_NN fragments_NNS coding_VBG for_IN peptides_NNS containing_VBG 40_CD random_JJ
+          amino_JJ acids_NNS were_VBD generated_VBN by_IN a_DT PCR_NNP approach_NN using_VBG
+          synthetic_JJ oligonucleotides_NNS as_RB previously_RB described_VBD [_NN 7_CD 26_CD
+          ]_NN ._. Peptides_NNP are_VBP expressed_VBN on_IN the_DT capsid_NN protein_NN pIII_NN of_IN
+          the_DT phage_NN at_IN low_JJ copy_NN number_NN (_( 1_CD -_: 2_CD peptides_NNS /_NN phage_NN )_) ._.
+        
+        
+          Construction_NNP of_IN secondary_JJ cell_NN libraries_NNS
+          Amino_NNP acid_NN mutations_NNS were_VBD introduced_VBN at_IN the_DT
+          oligonucleotide_NN level_NN under_IN controlled_VBN conditions_NNS [_NN 7_CD ]_NN ._.
+          This_DT oligonucleotide_NN was_VBD used_VBN as_IN the_DT template_NN in_IN a_DT PCR_NNP
+          reaction_NN with_IN two_CD shorter_JJR 5_CD '_POS biotinylated_JJ oligonucleotide_NN
+          primers_NNS contributing_VBG the_DT restriction_NN sites_NNS ._. The_DT library_NN
+          was_VBD then_RB produced_VBN essentially_RB as_RB previously_RB described_VBD
+          (_( above_IN )_) ._. Cell_NNP transformants_NNS were_VBD pooled_VBN and_CC an_DT aliquot_NN
+          was_VBD plated_JJ to_TO determine_VB the_DT total_JJ number_NN of_IN
+          transformants_NNS ._. The_DT diversity_NN of_IN the_DT secondary_JJ cell_NN
+          libraries_NNS >_NN 10_CD 10_CD independent_JJ clones_NNS per_IN library_NN ._.
+        
+        
+          Biopanning_NNP and_CC ELISA_NNP protocols_NNS
+          For_IN the_DT TNF_NNP experiments_NNS ,_, 6_CD wells_NNS of_IN a_DT 96_CD -_: well_RB
+          microtiter_NN plate_NN (_( Maxisorb_NNP Immuno_NNP plates_NNS ,_, Nunc_NNP )_) are_VBP
+          coated_VBN with_IN target_NN at_IN concentrations_NNS ranging_VBG from_IN 5_CD -_: 50_CD
+          ng_NN /_NN well_RB and_CC are_VBP incubated_JJ overnight_JJ at_IN 4_CD °_NN C_NNP ._. At_IN the_DT same_JJ
+          time_NN ,_, an_DT aliquot_NN of_IN 
+          E_NNP ._. coli_NNS TG_NNP 1_CD cells_NNS is_VBZ inoculated_JJ
+          into_IN 2_CD x_SYM YT_NNP media_NNS and_CC grown_VBN overnight_JJ at_IN 37_CD °_NN C_NNP ._. The_DT next_JJ
+          day_NN ,_, unbound_NN antigen_NN is_VBZ removed_VBN and_CC the_DT coated_JJ wells_NNS are_VBP
+          blocked_VBN with_IN 300_CD μl_NN of_IN 2_CD %_NN non-fat_JJ milk_NN in_IN PBS_NNP (_( NFM-PBS_NNP )_)
+          for_IN one_CD hour_NN at_IN room_NN temperature_NN ._. The_DT phage_NN libraries_NNS (_( in_IN
+          NFM-PBS_NNP )_) are_VBP thawed_JJ and_CC 100_CD μl_NN of_IN each_DT library_NN is_VBZ added_VBN
+          to_TO the_DT antigen-coated_JJ wells_NNS and_CC the_DT plates_NNS are_VBP incubated_JJ
+          for_IN 3_CD hours_NNS at_IN room_NN temperature_NN ._. Each_DT well_RB is_VBZ washed_VBN 13_CD
+          times_NNS with_IN PBS_NNP and_CC the_DT phage_NN eluted_JJ with_IN 100_CD μl_NN of_IN 50_CD mM_NN
+          glycine-_NN HCl_NNP containing_VBG 0_CD ._. 1_CD %_NN BSA_NNP (_( pH_NN 2_CD ._. 2_LS )_) following_VBG a_DT five_CD
+          minute_NN incubation_NN ._. The_DT eluted_JJ phage_NN are_VBP pooled_VBN ,_,
+          neutralized_VBN with_IN 100_CD μl_NN of_IN 1_CD M_NNP Tris-_NNP HCl_NNP (_( pH_NN 8_CD ._. 0_CD )_) ._. The_DT
+          eluted_JJ phage_NN were_VBD then_RB panned_VBN vs_NNS ._. other_JJ members_NNS of_IN the_DT
+          TNF_NNP family_NN as_IN a_DT way_NN to_TO obtain_VB peptides_NNS specific_JJ to_TO the_DT
+          original_JJ target_NN (_( Subtractive_NNP panning_VBG )_) ._. For_IN example_NN ,_,
+          phage_NN ,_, initially_RB panned_VBN vs_NNS ._. TNF-α_NNP would_MD be_VB subsequently_RB
+          panned_VBN vs_NNS ._. TNF-β_NNP ,_, TNFR_NNP 1_CD and_CC TNFR_NNP 2_CD to_TO remove_VB peptides_NNS
+          cross-reacting_JJ with_IN the_DT other_JJ members_NNS ._. After_IN the_DT final_JJ
+          panning_VBG ,_, the_DT phage_NN are_VBP added_VBN to_TO 10_CD ml_NN of_IN log_NN phase_NN 
+          E_NNP coli_NNS TG_NNP 1_CD (_( OD_NNP 
+          600_CD =_SYM 1_CD ._. 0_CD )_) ,_, and_CC amplified_VBN in_IN 2_CD x_SYM
+          YT-glucose_NNP medium_NN for_IN one_CD hour_NN at_IN 37_CD °_NN C_NNP ._. Helper_NNP phage_NN
+          (_( M_NNP 13_CD K_NNP 07_CD )_) and_CC ampicillin_NN are_VBP then_RB added_VBN and_CC the_DT cells_NNS are_VBP
+          incubated_JJ for_IN an_DT additional_JJ hour_NN at_IN 37_CD °_NN C_NNP ._. The_DT cells_NNS are_VBP
+          pelleted_JJ at_IN 3500_CD RPM_NNP for_IN 10_CD minutes_NNS ,_, resuspended_JJ in_IN 2_CD x_SYM
+          YT-AK_NNP medium_NN (_( YT_NNP medium_NN containing_VBG ampicillin_NN and_CC
+          kanamycin_NN )_) and_CC incubated_JJ overnight_JJ at_IN 37_CD °_NN C_NNP ._. The_DT next_JJ day_NN ,_,
+          the_DT infected_JJ bacterial_JJ cells_NNS are_VBP centrifuged_JJ at_IN 3500_CD RPM_NNP
+          at_IN 4_CD °_NN C_NNP for_IN 10_CD minutes_NNS and_CC the_DT pellet_NN discarded_VBN ._. The_DT
+          supernatant_NN contains_VBZ the_DT phage_NN and_CC is_VBZ precipitated_VBD with_IN ¼
+          volume_NN of_IN 20_CD %_NN PEG-_NNP 8000_CD in_IN 1_CD ._. 6_CD M_NNP NaCl_NNP by_IN incubating_VBG on_IN ice_NN
+          for_IN 1_CD hour_NN ._. The_DT precipitant_NN is_VBZ centrifuged_JJ at_IN 10_CD ,_, 000_CD RPM_NNP
+          at_IN 4_CD °_NN C_NNP for_IN 10_CD minutes_NNS and_CC the_DT precipitated_VBD phage_NN pellet_NN
+          resupended_JJ in_IN about_IN 1_CD ml_NN of_IN NFM-PBS_NNP ._. The_DT phage_NN is_VBZ then_RB
+          used_VBN for_IN the_DT next_JJ round_NN of_IN panning_VBG ._. Normally_RB ,_, 3_CD -_: 4_CD rounds_NNS
+          of_IN panning_VBG are_VBP done_VBN for_IN secondary_JJ libraries_NNS ._. Usually_RB ,_, 96_CD
+          random_JJ clones_NNS are_VBP picked_VBN from_IN rounds_NNS 3_CD and_CC 4_CD and_CC grown_VBN in_IN
+          96_CD well_RB cluster_NN plates_NNS as_IN a_DT master_NN stock_NN ._.
+          For_IN the_DT mRNA_NN pans_NNS ,_, all_DT solutions_NNS and_CC surfaces_VBZ are_VBP
+          pretreated_JJ with_IN DEPC_NNP or_CC RNaseZap_NNP (_( Ambion_NNP ,_, Austin_NNP TX_NNP )_) ,_,
+          respectively_RB ,_, to_TO eliminate_VB RNase_NNP contamination_NN that_WDT may_MD
+          compromise_VB the_DT integrity_NN of_IN the_DT RNA_NNP ._. The_DT biotinylated_JJ -_:
+          RNA_NNP target_NN diluted_VBN to_TO 1_CD mg_NN /_NN ml_NN in_IN binding_JJ buffer_NN (_( PBS_NNP
+          containing_VBG 1_CD mM_NN MgCl_NNP 
+          2_LS )_) ,_, denatured_JJ at_IN 65_CD °_NN C_NNP for_IN 5_CD min_NN and_CC
+          reannealed_JJ by_IN slow_JJ cooling_NN to_TO room_NN temperature_NN ._.
+          Re-annealed_NNP mRNAs_NNS are_VBP stored_VBN in_IN small_JJ aliquots_NNS (_( 10_CD -_: 25_CD
+          μl_NN /_NN tube_NN )_) at_IN -_: 20_CD °_NN C_NNP ._. Microtiter_NNP wells_NNS are_VBP treated_VBN with_IN
+          RNaseZap_NNP (_( Ambion_NNP )_) before_IN use_NN ._. One_CD hundred_CD microliters_NNS of_IN
+          RNA_NNP solution_NN diluted_VBN to_TO 2_CD ._. 5_CD ng_NN /_NN μl_NN was_VBD added_VBN to_TO an_DT
+          appropriate_JJ number_NN of_IN wells_NNS in_IN a_DT 96_CD -_: well_RB microtiter_NN plate_NN
+          precoated_JJ with_IN Streptavidin_NNP (_( Pierce_NNP )_) and_CC incubated_JJ for_IN 1_CD
+          hr_NN at_IN room_NN temperature_NN ._. Unbound_NNP streptavidin_NN is_VBZ then_RB
+          blocked_VBN with_IN 50_CD μl_NN of_IN 2_CD mM_NN biotin_NN at_IN room_NN temperature_NN for_IN
+          1_CD hr_NN ._. Panning_NNP ,_, with_IN slight_JJ modifications_NNS ,_, proceeded_VBD as_IN
+          described_VBN for_IN TNF-β_NNP ._.
+          For_IN phage_NN rescue_NN prior_RB to_TO ELISA_NNP analysis_NN ,_, 40_CD μl_NN of_IN
+          master_NN stock_NN is_VBZ transferred_VBN from_IN each_DT master_NN to_TO another_DT
+          set_NN of_IN cluster_NN tubes_NNS containing_VBG 400_CD μl_NN of_IN 2_CD x_SYM YT-AG_NNP
+          (_( ampicillin_NN and_CC glucose_NN )_) and_CC helper_NN phage_NN (_( final_JJ
+          concentration_NN of_IN 5_CD ×_NN 10_CD 10_CD /_NN ml_NN )_) ._. The_DT tubes_NNS are_VBP incubated_JJ
+          at_IN 37_CD °_NN C_NNP with_IN constant_JJ shaking_VBG for_IN two_CD hours_NNS ._. The_DT cultures_NNS
+          are_VBP centrifuged_JJ at_IN 2500_CD ×_NN g_SYM at_IN 4_CD °_NN C_NNP for_IN 20_CD minutes_NNS ,_, the_DT
+          supernatant_NN is_VBZ discarded_VBN ,_, and_CC the_DT bacterial_JJ pellet_NN is_VBZ
+          resuspended_JJ in_IN 400_CD μl_NN of_IN 2_CD x_SYM YT-AK_NNP (_( ampicillin_NN and_CC
+          kanamycin_NN )_) medium_NN and_CC is_VBZ incubated_JJ overnight_JJ at_IN 37_CD °_NN C_NNP ._. At_IN
+          that_DT time_NN ,_, the_DT cells_NNS are_VBP removed_VBN by_IN centrifugation_NN at_IN
+          2500_CD ×_NN g_SYM and_CC the_DT supernatants_NNS used_VBN for_IN ELISAs_NNP (_( see_VB
+          below_IN )_) ._.
+        
+        
+          Enzyme_NNP Linked_NNP Immunosorbent_NNP Assays_NNP (_( ELISA_NNP )_)
+          For_IN the_DT TNF-β_NNP surrogate_JJ ELISAs_NNP ,_, each_DT well_RB of_IN a_DT
+          MaxiSorp_NNP Immuno_NNP plate_NN (_( Nunc_NNP )_) is_VBZ coated_VBN with_IN 50_CD μl_NN of_IN
+          target_NN (_( 1_CD μg_NN /_NN ml_NN )_) overnight_JJ at_IN 4_CD °_NN C_NNP ._. In_IN all_DT cases_NNS ,_, the_DT
+          wells_NNS are_VBP blocked_VBN with_IN NFM-PBS_NNP for_IN 1_CD hour_NN at_IN room_NN
+          temperature_NN ._. Phage_NNP is_VBZ added_VBN at_IN 100_CD μl_NN /_NN well_RB and_CC the_DT plates_NNS
+          incubated_JJ for_IN 2_CD -_: 3_CD hours_NNS at_IN room_NN temperature_NN ._. After_IN
+          washing_VBG 3_CD x_SYM with_IN PBS-Tween_NNP (_( DPTC-treated_NNP PBS_NNP for_IN the_DT
+          mRNA_NN )_) ,_, plates_NNS are_VBP probed_JJ with_IN an_DT anti-_NN M_NNP 13_CD antibody_NN
+          conjugated_JJ to_TO horseradish_NN peroxidase_NN (_( 1_CD :_: 3000_CD in_IN PBS-NFM_NNP )_)
+          for_IN 1_CD hour_NN at_IN room_NN temperature_NN followed_VBN by_IN addition_NN of_IN
+          100_CD μl_NN of_IN ABTS_NNP for_IN 15_CD -_: 30_CD minutes_NNS at_IN room_NN temperature_NN ._. The_DT
+          OD_NNP is_VBZ measured_VBN using_VBG a_DT SpectraMax_NNP Microplate_NNP
+          Spectrophotometer_NNP (_( Molecular_NNP Devices_NNPS )_) at_IN 405_CD nm_NN after_IN a_DT
+          30_CD minute_NN incubation_NN at_IN room_NN temperature_NN ._.
+          The_DT mRNA_NN ELISAs_NNP are_VBP performed_VBN in_IN a_DT similar_JJ manner_NN
+          except_IN streptavidin-coated_JJ microtiter_NN plates_NNS are_VBP blocked_VBN
+          with_IN PBS_NNP containing_VBG 2_CD %_NN non_NN fat_JJ milk_NN for_IN 1_CD hr_NN at_IN room_NN
+          temperature_NN ,_, treated_VBN with_IN RNaseZap_NNP ,_, then_RB coated_VBN with_IN
+          biotinylated_JJ RNA_NNP target_NN (_( 100_CD ng_NN /_NN well_RB )_) by_IN incubation_NN for_IN 1_CD
+          hr_NN at_IN room_NN temperature_NN ._. Superasin_NNP was_VBD added_VBN to_TO the_DT wells_NNS
+          prior_RB to_TO addition_NN of_IN 100_CD μl_NN /_NN well_RB of_IN phage_NN from_IN isolated_VBN
+          clones_NNS and_CC incubated_JJ at_IN room_NN temperature_NN for_IN 2_CD hr_NN ._.
+        
+        
+          Steps_VBZ in_IN computational_NN analysis_NN to_TO identify_VB natural_JJ
+          partner_NN
+          Once_RB a_DT surrogate_JJ peptide_NN binder_NN has_VBZ been_VBN identified_VBN
+          and_CC shown_VBN to_TO bind_NN specifically_RB to_TO its_PRP$ target_NN ,_, it_PRP is_VBZ
+          subjected_VBN to_TO partner_NN analysis_NN using_VBG several_JJ different_JJ
+          database_NN search_NN programs_NNS ._. In_IN the_DT initial_JJ step_NN ,_, the_DT entire_JJ
+          peptide_NN sequence_NN and_CC consensus_NN motifs_NNS (_( if_IN found_VBD )_) are_VBP
+          entered_VBN into_IN an_DT Advanced_NNP BLAST_NN search_NN
+          http_NN :_: /_NN /_NN www_NN ._. ncbi_NN ._. nlm_NN ._. nih_NN ._. gov_NN /_NN blast_NN /_NN blast_NN ._. cgi_NN ?_. Jform_NNP =_SYM 1_CD :_:
+          using_VBG the_DT following_JJ parameters_NNS :_:
+          i_NNP ._. Programs_NNP :_: blastp_NN ,_, tblastn_NN
+          ii_NN ._. Databases_NNP :_: protein_NN and_CC nucleotide_NN databases_NNS
+          including_VBG dbest_NN (_( ESTs_NNP )_) ,_, dsts_NNS (_( STSs_NNP )_) and_CC htgs_NNS (_( unfinished_JJ
+          high_JJ throughput_NN genomic_JJ sequences_NNS )_)
+          iii_NN ._. Expect_VB value_NN :_: 1000_CD to_TO 20000_CD
+          iv_NN ._. Matrix_NNP :_: PAM_NNP 30_CD or_CC PAM_NNP 70_CD
+          v_NN ._. Query_NNP :_: Consensus_NNP motif_NN alone_RB and_CC varying_VBG
+          combinations_NNS of_IN sequence_NN at_IN the_DT N-_NNP and_CC C-_NNP terminal_NN
+          ends_NNS
+          In_IN subsequent_JJ steps_NNS ,_, motifs_NNS identified_VBN by_IN sequence_NN
+          alignment_NN programs_NNS like_IN MEME_NNP (_( Multiple_NNP EM_NNP for_IN Motif_NN
+          Elicitation_NNP )_) ,_,
+          http_NN :_: /_NN /_NN meme_NN ._. sdsc_NN ._. edu_NN /_NN meme_NN /_NN website_NN /_NN intro_NN ._. htmlcan_NN also_RB be_VB
+          used_VBN to_TO search_VB the_DT available_JJ databases_NNS using_VBG MAST_NNP (_( Motif_NN
+          Alignment_NNP and_CC Search_NNP Tool_NNP ,_,
+          http_NN :_: /_NN /_NN meme_NN ._. sdsc_NN ._. edu_NN /_NN mem_NN /_NN website_NN /_NN mast-intro_JJ ._. html_NN )_) ._. Motifs_NNP
+          and_CC consensus_NN domains_NNS can_MD also_RB be_VB used_VBN as_IN query_NN patterns_NNS
+          to_TO search_VB the_DT protein_NN databases_NNS using_VBG Patternfind_NNP
+          http_NN :_: /_NN /_NN www_NN ._. isrec_NN ._. isb-sib_JJ ._. ch_NN /_NN software_NN /_NN PATFND_NNP __NN form_NN ._. html_NN ._.
+          For_IN Patternfind_NNP ,_, the_DT following_VBG parameters_NNS are_VBP
+          used_VBN :_:
+          i_NNP ._. Databases_NNP :_: Nonredundant_NNP ,_, Swissprot_NNP ,_, TREST_NNP and_CC
+          TRGEN_NNP
+          ii_NN ._. Limit_NNP :_: Between_IN 10_CD and_CC 5000_CD
+          iii_NN ._. Query_NNP :_: Consensus_NNP motif_NN alone_RB and_CC varying_VBG
+          combinations_NNS of_IN sequence_NN at_IN N-_NNP and_CC C-_NNP terminal_NN ends_NNS
+          Data_NNP obtained_VBD from_IN the_DT various_JJ searches_NNS are_VBP analyzed_VBN
+          under_IN the_DT following_JJ conditions_NNS :_:
+          i_NNP ._. Results_NNS of_IN different_JJ searches_NNS should_MD be_VB analyzed_VBN
+          independently_RB and_CC then_RB together_RB to_TO look_VB for_IN similar_JJ
+          classes_NNS of_IN proteins_NNS (_( e_SYM ._. g_SYM ._. ,_, Nucleic_NNP acid_NN binding_JJ proteins_NNS ,_,
+          kinases_NNS )_) that_WDT may_MD emerge_VB ._.
+          ii_NN ._. Pick_VB some_DT of_IN the_DT best_JJS matches_VBZ that_DT show_NN up_RB in_IN more_JJR
+          than_IN one_CD kind_NN of_IN search_NN (_( e_SYM ._. g_SYM ._. Same_JJ protein_NN /_NN ORF_NNP picked_VBD up_RB
+          by_IN BLAST_NN searches_NNS using_VBG different_JJ parameters_NNS ,_, or_CC by_IN both_DT
+          BLAST_NN and_CC Patternfind_NNP )_) and_CC compare_VB sequence_NN of_IN protein_NN in_IN
+          this_DT region_NN with_IN other_JJ peptide_NN surrogates_NNS containing_VBG this_DT
+          motif_NN ._.
+          iii_NN ._. Look_VB at_IN potential_JJ significance_NN of_IN protein_NN
+          interaction_NN in_IN the_DT context_NN of_IN the_DT cellular_JJ function_NN of_IN
+          target_NN
+          The_DT criteria_NNS for_IN a_DT partner_NN hit_VBD are_VBP listed_VBN in_IN Table_NNP 1_CD ._.
+          Unless_IN there_EX is_VBZ an_DT exact_JJ match_NN (_( Criterion_NNP No_UH ._. 1_LS )_) ,_, the_DT
+          potential_NN hit_NN has_VBZ to_TO match_VB at_IN least_JJS two_CD of_IN the_DT criteria_NNS
+          described_VBD in_IN the_DT table_NN to_TO be_VB considered_VBN a_DT partner_NN
+          hit_VBD ._.
+        
+      
+    
+  

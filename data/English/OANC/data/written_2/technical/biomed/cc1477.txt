@@ -1,0 +1,423 @@
+
+  
+    
+      
+        Introduction_NNP
+        Mortality_NNP prediction_NN systems_NNS have_VBP been_VBN advocated_VBN as_IN
+        means_NNS of_IN evaluating_VBG the_DT performance_NN of_IN intensive_JJ care_NN units_NNS
+        (_( ICUs_NNP )_) [_NN 1_CD ]_NN ._. These_DT systems_NNS allow_VBP adjustment_NN to_TO the_DT severity_NN
+        of_IN illness_NN of_IN the_DT patient_NN population_NN ._. Acute_NNP Physiology_NNP and_CC
+        Chronic_NNP Health_NNP Evaluation_NNP (_( APACHE_NNP )_) II_NNP and_CC Simplified_NNP Acute_NNP
+        Physiology_NNP Score_NN (_( SAPS_NNP )_) II_NNP measure_NN severity_NN of_IN illness_NN by_IN a_DT
+        numeric_JJ score_NN [_NN 2_CD ,_, 3_CD ]_NN based_VBN on_IN physiologic_JJ variables_NNS
+        selected_VBN because_IN of_IN their_PRP$ impact_NN on_IN mortality_NN :_: the_DT sicker_NN
+        the_DT patient_NN ,_, the_DT more_RBR deranged_JJ the_DT values_NNS and_CC the_DT higher_JJR
+        the_DT score_NN ._. The_DT numeric_JJ scores_NNS are_VBP then_RB converted_VBN into_IN
+        predicted_VBD mortality_NN by_IN using_VBG a_DT logistic_JJ regression_NN formula_NN
+        developed_VBN and_CC validated_JJ on_IN populations_NNS of_IN ICU_NNP patients_NNS ._.
+        Mortality_NNP Probability_NNP Models_NNP (_( MPM_NNP )_) II_NNP differ_VB slightly_RB in_IN
+        that_IN they_PRP use_VBP categorical_JJ variables_NNS (_( with_IN the_DT exception_NN of_IN
+        age_NN )_) for_IN mortality_NN prediction_NN [_NN 4_CD ]_NN ._.
+        Before_IN the_DT clinical_JJ application_NN of_IN any_DT of_IN these_DT systems_NNS ,_,
+        they_PRP must_MD be_VB validated_JJ on_IN the_DT population_NN under_IN evaluation_NN [_NN
+        5_CD ,_, 6_CD ]_NN ._. These_DT systems_NNS have_VBP been_VBN assessed_VBN for_IN validity_NN in_IN
+        several_JJ countries_NNS [_NN 7_CD ,_, 8_CD ,_, 9_CD ]_NN ._. We_PRP report_VBP here_RB the_DT result_NN of_IN
+        our_PRP$ validation_NN study_NN of_IN the_DT four_CD systems_NNS in_IN ICU_NNP population_NN
+        in_IN a_DT tertiary_JJ care_NN center_NN in_IN Saudi_NNP Arabia_NNP ._.
+      
+      
+        Methods_NNP
+        King_NNP Fahad_NNP National_NNP Guard_NNP Hospital_NNP is_VBZ a_DT 550_CD -_: bed_NN tertiary_JJ
+        care_NN center_NN in_IN Riyadh_NNP ,_, Saudi_NNP Arabia_NNP ._. The_DT 12_CD -_: bed_NN
+        medical-surgical_JJ ICU_NNP has_VBZ 600_CD admissions_NNS a_DT year_NN ._. The_DT
+        hospital_NN also_RB has_VBZ a_DT coronary_JJ care_NN unit_NN and_CC a_DT cardiac_JJ
+        surgical_JJ intensive_JJ care_NN unit_NN ._. Patients_NNS admitted_VBD to_TO these_DT
+        units_NNS were_VBD not_RB included_VBN in_IN the_DT study_NN ._. The_DT unit_NN is_VBZ run_VBN by_IN
+        full-time_JJ intensivists_NNS and_CC has_VBZ 24_CD -_: hour_NN immediate_JJ access_NN to_TO
+        other_JJ medical_JJ and_CC surgical_JJ specialties_NNS ._. Our_PRP$
+        nurse-to-patient_JJ ratio_NN is_VBZ approximately_RB 1_CD :_: 1_CD ._. 2_LS ._. This_DT high_JJ
+        ratio_NN has_VBZ been_VBN maintained_VBN because_IN of_IN the_DT high_JJ acuity_NN of_IN
+        care_NN ._. Our_PRP$ ICU_NNP database_NN was_VBD established_VBN in_IN March_NNP 1999_CD to_TO
+        record_VB ICU_NNP admissions_NNS ._. The_DT present_JJ study_NN presents_VBZ
+        information_NN on_IN all_DT consecutive_JJ admissions_NNS between_IN 1_CD March_NNP
+        1999_CD and_CC 31_CD December_NNP 2000_CD ._. Data_NNP were_VBD collected_VBN by_IN one_CD of_IN
+        the_DT inten-sivists_JJ (_( Y_NNP ._. A_DT ._. ,_, S_NNP ._. H_NNP ._. or_CC R_NN ._. G_NNP ._. )_) ._. To_TO minimize_VB
+        variability_NN in_IN data_NNS collection_NN ,_, one_CD physician_NN (_( Y_NNP ._. A_DT ._. )_)
+        coordinated_VBN the_DT overall_JJ process_NN ._. In_IN addition_NN ,_, a_DT written_VBN
+        reference_NN with_IN the_DT definitions_NNS used_VBN in_IN original_JJ articles_NNS
+        was_VBD made_VBN ._. Patients_NNS aged_VBN 16_CD years_NNS or_CC more_JJR were_VBD eligible_JJ for_IN
+        the_DT study_NN with_IN the_DT exception_NN of_IN burn_VB and_CC brain-dead_JJ
+        patients_NNS ._. For_IN patients_NNS admitted_VBN to_TO the_DT ICU_NNP more_RBR than_IN once_RB
+        in_IN the_DT same_JJ hospitalization_NN ,_, data_NNS from_IN the_DT first_JJ admission_NN
+        were_VBD used_VBN ._. Approval_NNP from_IN the_DT hospital_NN Ethics_NNP Committee_NNP was_VBD
+        not_RB required_VBN because_IN the_DT information_NN had_VBD already_RB been_VBN
+        collected_VBN for_IN clinical_JJ reasons_NNS ._.
+        The_DT following_VBG data_NN were_VBD collected_VBN :_: demographics_NNS ,_, APACHE_NNP
+        II_NNP and_CC SAPS_NNP II_NNP scores_NNS ,_, and_CC MPM_NNP variables_NNS ._. MPM_NNP II_NNP 
+        0_CD data_NNS were_VBD obtained_VBN on_IN all_DT admissions_NNS ,_,
+        whereas_IN MPM_NNP II_NNP 
+        24_CD ,_, APACHE_NNP II_NNP and_CC SAPS_NNP II_NNP data_NNS were_VBD
+        obtained_VBN on_IN patients_NNS who_WP stayed_VBD for_IN 24_CD hours_NNS or_CC more_JJR in_IN
+        ICU_NNP ._. APACHE_NNP II_NNP and_CC SAPS_NNP II_NNP scores_NNS were_VBD calculated_VBN in_IN
+        accordance_NN with_IN the_DT original_JJ methodology_NN ,_, using_VBG the_DT worst_JJS
+        physiologic_JJ values_NNS in_IN the_DT first_JJ ICU_NNP day_NN [_NN 2_CD ,_, 3_CD ]_NN ._. The_DT only_JJ
+        exception_NN was_VBD Glasgow_NNP Coma_NNP Score_NN (_( GCS_NNP )_) ._. Many_JJ of_IN these_DT
+        patients_NNS were_VBD under_IN the_DT influence_NN of_IN sedation_NN and_CC the_DT worst_JJS
+        GCS_NNP would_MD reflect_VB the_DT effect_NN of_IN sedation_NN more_JJR than_IN the_DT true_JJ
+        underlying_VBG mental_JJ status_NN ._. We_PRP therefore_RB used_VBD the_DT worst_JJS GCS_NNP
+        value_NN for_IN non-sedated_JJ patients_NNS and_CC the_DT pre-sedation_JJ score_NN
+        for_IN patients_NNS under_IN sedation_NN ,_, as_IN described_VBN previously_RB [_NN 4_CD ,_,
+        10_CD ,_, 11_CD ,_, 12_CD ]_NN ._. The_DT main_JJ reason_NN for_IN ICU_NNP admission_NN ,_, whether_IN the_DT
+        admission_NN was_VBD after_IN emergency_NN surgery_NN ,_, and_CC the_DT presence_NN of_IN
+        severe_JJ chronic_JJ illness_NN were_VBD documented_VBN in_IN accordance_NN with_IN
+        the_DT original_JJ definitions_NNS [_NN 2_CD ]_NN ._. Postoperative_NNP patients_NNS with_IN
+        sepsis_NN or_CC cardiac_JJ arrest_NN were_VBD included_VBN with_IN non-operative_JJ
+        patients_NNS with_IN these_DT conditions_NNS [_NN 2_CD ]_NN ._. ICU_NNP and_CC hospital_NN
+        length_NN of_IN stay_NN (_( LOS_NNP )_) and_CC lead_VB time_NN (_( the_DT interval_NN from_IN
+        hospital_NN admission_NN to_TO ICU_NNP admission_NN )_) were_VBD calculated_VBN ._. Vital_NNP
+        status_NN at_IN discharge_NN from_IN the_DT ICU_NNP and_CC from_IN the_DT hospital_NN was_VBD
+        registered_VBN ._.
+        Predicted_NNP hospital_NN mortality_NN was_VBD calculated_VBN with_IN the_DT
+        logistic_JJ regression_NN formulas_NNS described_VBD originally_RB [_NN 2_CD ,_, 3_CD ,_,
+        4_CD ]_NN ._. Standardized_JJ mortality_NN ratio_NN (_( SMR_NNP )_) was_VBD calculated_VBN by_IN
+        dividing_VBG observed_VBN hospital_NN mortality_NN by_IN the_DT predicted_VBN
+        hospital_NN mortality_NN ._. The_DT 95_CD %_NN confidence_NN intervals_NNS (_( CIs_NNP )_) for_IN
+        SMRs_NNP were_VBD calculated_VBN by_IN regarding_VBG the_DT observed_VBN mortality_NN as_IN
+        a_DT Poisson_NNP variable_NN ,_, then_RB dividing_VBG its_PRP$ 95_CD %_NN CI_NNP by_IN the_DT
+        predicted_VBN mortality_NN [_NN 7_CD ]_NN ._.
+        Validation_NNP of_IN the_DT systems_NNS was_VBD tested_VBN by_IN assessing_VBG
+        calibration_NN and_CC discrimination_NN ._. Calibration_NNP (_( the_DT ability_NN to_TO
+        provide_VB risk_NN estimate_NN corresponding_JJ to_TO the_DT observed_VBN
+        mortality_NN )_) was_VBD assessed_VBN by_IN calibration_NN curves_NNS and_CC the_DT
+        Lemeshow-_NNP Hosmer_NNP goodness-of-fit_JJ 
+        C_NNP -_: statistic_NN [_NN 11_CD ]_NN ._. Calibration_NNP
+        curves_NNS were_VBD drawn_VBN by_IN plotting_VBG predicted_VBN against_IN actual_JJ
+        mortality_NN for_IN groups_NNS of_IN the_DT patient_NN population_NN stratified_JJ
+        by_IN 10_CD %_NN increments_NNS of_IN predicted_VBD mortality_NN ._. To_TO calculate_VB the_DT 
+        C_NNP -_: statistic_NN ,_, the_DT study_NN population_NN
+        was_VBD stratified_JJ into_IN ten_CD deciles_NNS with_IN approximately_RB equal_JJ
+        numbers_NNS of_IN patients_NNS ._. The_DT predicted_VBD and_CC actual_JJ number_NN of_IN
+        survivors_NNS and_CC non-survivors_JJ were_VBD compared_VBN statistically_RB
+        with_IN the_DT use_NN of_IN formal_JJ goodness-of-fit_JJ testing_NN to_TO determine_VB
+        whether_IN or_CC not_RB the_DT discrepancy_NN was_VBD statistically_RB
+        insignificant_JJ (_( 
+        P_NN >_NN 0_CD ._. 05_CD )_) ._.
+        Discrimination_NNP was_VBD tested_VBN by_IN receiver_NN operating_VBG
+        characteristic_JJ (_( ROC_NNP )_) curves_NNS and_CC 2_CD ×_NN 2_CD classification_NN
+        matrices_NNS ._. ROC_NNP curves_NNS were_VBD constructed_VBN as_IN a_DT measure_NN of_IN
+        assessing_VBG discrimination_NN with_IN 10_CD %_NN stepwise_NN increments_NNS in_IN
+        predicted_VBD mortality_NN [_NN 14_CD ,_, 15_CD ]_NN ._. The_DT four_CD curves_NNS were_VBD
+        compared_VBN by_IN computing_VBG the_DT areas_NNS under_IN the_DT curves_NNS ._.
+        Classification_NNP matrices_NNS were_VBD performed_VBN at_IN decision_NN criteria_NNS
+        of_IN 10_CD %_NN ,_, 30_CD %_NN and_CC 50_CD %_NN ._. Sensitivity_NNP ,_, specificity_NN ,_, positive_JJ and_CC
+        negative_JJ predictive_JJ values_NNS and_CC overall_JJ correct_JJ
+        classification_NN rate_NN were_VBD calculated_VBN ._.
+        Minitab_NNP for_IN Windows_NNP (_( Release_NNP 12_CD ._. 1_LS ,_, Minitab_NNP Inc_NNP ._. )_) was_VBD
+        used_VBN to_TO perform_VB statistics_NNS ._. Continuous_NNP variables_NNS were_VBD
+        expressed_VBN as_IN means_VBZ ±_NN SD_NNP and_CC were_VBD compared_VBN by_IN standard_JJ 
+        t_NN -_: test_NN ._. Categorical_NNP values_NNS were_VBD
+        expressed_VBN in_IN absolute_JJ and_CC relative_JJ frequencies_NNS and_CC were_VBD
+        analyzed_VBN by_IN χ_NN 2_CD test_NN ._. Linear_NNP regression_NN and_CC logistic_JJ
+        regression_NN analysis_NN were_VBD used_VBN when_WRB appropriate_JJ ._. 
+        P_NN ≤_NN 0_CD ._. 05_CD was_VBD considered_VBN
+        significant_JJ ._.
+      
+      
+        Results_NNS
+        
+          Patient_NNP population_NN
+          The_DT demographics_NNS of_IN the_DT 969_CD eligible_JJ patients_NNS are_VBP
+          shown_VBN in_IN Table_NNP 1_CD ._. It_PRP is_VBZ noteworthy_JJ that_IN 32_CD %_NN of_IN all_DT
+          patients_NNS had_VBD one_CD or_CC more_RBR severe_JJ chronic_JJ illnesses_NNS ._. Severe_NNP
+          hepatic_JJ disease_NN was_VBD the_DT leading_VBG chronic_JJ illness_NN ,_, followed_VBN
+          by_IN immunosuppression_NN ,_, severe_JJ respiratory_JJ illness_NN ,_, renal_JJ
+          illness_NN and_CC cardiovascular_JJ illness_NN ._. Some_DT patients_NNS had_VBD
+          more_JJR than_IN one_CD severe_JJ chronic_JJ illness_NN ._. In_IN comparison_NN with_IN
+          survivors_NNS ,_, non-survivors_JJ were_VBD older_JJR ,_, had_VBD a_DT longer_RBR lead_NN
+          time_NN and_CC ICU_NNP LOS_NNP but_CC shorter_JJR hospital_NN LOS_NNP ._. They_PRP had_VBD
+          higher_JJR APACHE_NNP II_NNP and_CC SAPS_NNP II_NNP scores_NNS ._. The_DT type_NN of_IN
+          admission_NN was_VBD more_RBR likely_JJ to_TO be_VB medical_JJ or_CC emergency_NN
+          surgical_JJ in_IN non-survivors_JJ ,_, and_CC to_TO be_VB elective_JJ surgical_JJ in_IN
+          survivors_NNS ._. Severe_NNP chronic_JJ illness_NN was_VBD more_RBR common_JJ in_IN
+          non-survivors_JJ ,_, especially_RB liver_NN disease_NN ._.
+        
+        
+          Mortality_NNP predicted_VBN by_IN the_DT four_CD systems_NNS
+          Table_NNP 2_CD shows_VBZ the_DT actual_JJ mortality_NN and_CC predicted_VBD
+          mortality_NN by_IN all_DT four_CD systems_NNS ,_, and_CC also_RB SMRs_NNP and_CC their_PRP$
+          95_CD %_NN CIs_NNP ._. SMRs_NNP for_IN all_DT system_NN were_VBD not_RB significantly_RB
+          different_JJ from_IN 1_CD ,_, indicating_VBG accurate_JJ overall_JJ mortality_NN
+          prediction_NN ._.
+        
+        
+          Predicted_NNP mortality_NN by_IN subgroups_NNS
+          When_WRB subgrouped_JJ by_IN categories_NNS of_IN main_JJ reasons_NNS for_IN ICU_NNP
+          admission_NN (_( Table_NNP 3_LS )_) ,_, SMRs_NNP by_IN the_DT four_CD systems_NNS were_VBD not_RB
+          significantly_RB different_JJ from_IN 1_CD ,_, with_IN few_JJ exceptions_NNS ._. MPM_NNP
+          II_NNP 
+          0_CD and_CC MPM_NNP II_NNP 
+          24_CD overestimated_JJ mortality_NN for_IN the_DT
+          category_NN '_'' non-operative_JJ trauma_NN '_'' admissions_NNS ,_, and_CC SAPS_NNP II_NNP
+          underestimated_VBD mortality_NN for_IN the_DT category_NN '_'' other_JJ
+          medical_JJ '_'' ._. When_WRB subgrouped_JJ by_IN the_DT source_NN of_IN admission_NN ,_, all_DT
+          SMRs_NNP were_VBD not_RB significantly_RB different_JJ from_IN 1_CD with_IN the_DT
+          exception_NN of_IN the_DT underestimation_NN of_IN mortality_NN of_IN SAPS_NNP II_NNP
+          for_IN patients_NNS admitted_VBN from_IN the_DT floor_NN ._.
+        
+        
+          Calibration_NNP
+          Calibration_NNP curves_NNS are_VBP shown_VBN in_IN Figure_NN 1_CD ._. Of_IN the_DT four_CD
+          systems_NNS ,_, SAPS_NNP II_NNP stands_VBZ out_IN as_IN deviating_VBG from_IN the_DT
+          identity_NN line_NN in_IN most_JJS of_IN the_DT strata_NN ,_, including_VBG those_DT with_IN
+          large_JJ numbers_NNS of_IN patients_NNS ._. The_DT SAPS_NNP II_NNP curve_NN shows_VBZ an_DT
+          underestimation_NN of_IN mortality_NN in_IN low-risk_JJ patients_NNS and_CC an_DT
+          overestimation_NN of_IN mortality_NN in_IN high-risk_JJ patients_NNS ,_,
+          leading_VBG to_TO the_DT skewed_VBN appearance_NN of_IN its_PRP$ calibration_NN
+          curve_NN ._. The_DT curves_NNS of_IN the_DT other_JJ three_CD systems_NNS fell_VBD on_IN the_DT
+          identity_NN line_NN in_IN the_DT strata_NN with_IN large_JJ number_NN of_IN patients_NNS
+          and_CC deviated_VBD in_IN some_DT other_JJ strata_NN ._.
+          The_DT results_NNS of_IN Lemeshow-_NNP Hosmer_NNP goodness-of-fit_JJ tests_NNS
+          are_VBP shown_VBN in_IN Table_NNP 4_CD ._. The_DT 
+          C_NNP -_: statistic_NN was_VBD best_JJS for_IN MPM_NNP II_NNP 
+          24_CD (_( 14_CD ._. 71_CD )_) ,_, with_IN 
+          P_NN =_SYM 0_CD ._. 06_CD ._. For_IN the_DT other_JJ three_CD
+          systems_NNS ,_, calibration_NN tested_VBN by_IN the_DT 
+          C_NNP -_: statistic_NN was_VBD poor_JJ ._. These_DT
+          results_NNS indicate_VBP that_IN ,_, of_IN the_DT four_CD systems_NNS ,_, MPM_NNP II_NNP 
+          24_CD had_VBD the_DT least_JJS statistically_RB
+          significant_JJ discrepancy_NN between_IN predicted_VBD and_CC observed_VBD
+          mortality_NN across_IN the_DT strata_NN of_IN increasing_VBG predicted_VBN
+          mortality_NN ._.
+        
+        
+          Discrimination_NNP
+          Figure_NN 2_CD shows_VBZ the_DT receiver_NN operating_VBG characteristic_JJ
+          (_( ROC_NNP )_) curves_NNS for_IN the_DT four_CD systems_NNS ._. The_DT corresponding_JJ
+          areas_NNS under_IN the_DT curves_NNS were_VBD as_IN follows_VBZ :_: MPM_NNP II_NNP 
+          0_CD ,_, 0_CD ._. 85_CD ;_: MPM_NNP II_NNP 
+          24_CD ,_, 0_CD ._. 84_CD ;_: APACHE_NNP II_NNP ,_, 0_CD ._. 83_CD ;_: SAPS_NNP II_NNP ,_,
+          0_CD ._. 79_CD ._. These_DT reflect_VB the_DT better_RBR discriminative_JJ power_NN of_IN
+          the_DT first_JJ three_CD systems_NNS than_IN that_DT of_IN SAPS_NNP II_NNP ._.
+          The_DT results_NNS of_IN the_DT 2_CD ×_NN 2_CD classification_NN matrix_NN are_VBP shown_VBN
+          in_IN Table_NNP 5_CD ._. The_DT overall_JJ correct_JJ classification_NN rate_NN was_VBD
+          highest_JJS for_IN MPM_NNP II_NNP 
+          0_CD and_CC lowest_JJS for_IN SAPS_NNP II_NNP at_IN the_DT
+          different_JJ cutoff_NN points_NNS ;_: MPM_NNP II_NNP 
+          24_CD and_CC APACHE_NNP II_NNP had_VBD intermediate_JJ
+          rates_NNS ._. This_DT was_VBD consistent_JJ with_IN the_DT results_NNS of_IN ROC_NNP curve_NN
+          testing_NN ._.
+        
+        
+          Correlation_NNP of_IN predicted_VBD mortalities_NNS by_IN the_DT four_CD
+          systems_NNS
+          On_IN the_DT basis_NN of_IN linear_JJ regression_NN analysis_NN ,_,
+          mortalities_NNS predicted_VBN by_IN all_DT four_CD systems_NNS correlated_JJ with_IN
+          each_DT other_JJ (_( 
+          P_NN <_NN 0_CD ._. 001_CD for_IN all_DT combinations_NNS )_) ._.
+          The_DT closest_JJS correlation_NN was_VBD between_IN MPM_NNP II_NNP 
+          0_CD and_CC MPM_NNP II_NNP 
+          24_CD (_( 
+          r_LS 2_CD =_SYM 0_CD ._. 67_CD )_) followed_VBN by_IN APACHE_NNP II_NNP
+          and_CC SAPS_NNP II_NNP 
+          24_CD (_( 
+          r_LS 2_CD =_SYM 0_CD ._. 66_CD )_) ,_, MPM_NNP II_NNP 
+          24_CD and_CC SAPS_NNP II_NNP (_( 
+          r_LS 2_CD =_SYM 0_CD ._. 62_CD )_) ,_, MPM_NNP II_NNP 
+          24_CD and_CC APACHE_NNP II_NNP (_( 
+          r_LS 2_CD =_SYM 0_CD ._. 56_CD )_) ,_, MPM_NNP II_NNP 
+          0_CD and_CC SAPS_NNP II_NNP (_( 
+          r_LS 2_CD =_SYM 0_CD ._. 52_CD )_) and_CC MPM_NNP II_NNP 
+          0_CD and_CC APACHE_NNP II_NNP (_( 
+          r_LS 2_CD =_SYM 0_CD ._. 48_CD )_) ._. Figure_NN 3_CD shows_VBZ plots_NNS for_IN
+          the_DT highest_JJS and_CC lowest_JJS correlations_NNS ._.
+        
+        
+          The_DT effect_NN of_IN lead_NN time_NN and_CC ICU_NNP LOS_NNP on_IN hospital_NN
+          mortality_NN
+          By_IN univariate_NN analysis_NN ,_, lead_VB time_NN was_VBD a_DT significant_JJ
+          predictor_NN of_IN hospital_NN outcome_NN (_( odds_NNS ratio_NN 1_CD ._. 02_CD ,_, 95_CD %_NN CI_NNP
+          1_CD ._. 00_CD -_: 1_CD ._. 03_CD per_IN day_NN ,_, 
+          P_NN =_SYM 0_CD ._. 04_CD )_) ._. However_RB ,_, when_WRB adjusted_VBN
+          to_TO the_DT severity_NN of_IN illness_NN estimated_VBN from_IN the_DT mortality_NN
+          predicted_VBN by_IN any_DT of_IN the_DT four_CD systems_NNS ,_, lead_VB time_NN was_VBD not_RB
+          an_DT independent_JJ predictor_NN of_IN hospital_NN outcome_NN ._. Similarly_RB ,_,
+          ICU_NNP LOS_NNP was_VBD a_DT significant_JJ predictor_NN of_IN hospital_NN outcome_NN
+          by_IN univariate_NN analysis_NN (_( odds_NNS ratio_NN 1_CD ._. 02_CD ,_, 95_CD %_NN CI_NNP 1_CD ._. 00_CD -_: 1_CD ._. 03_CD
+          per_IN day_NN ,_, 
+          P_NN =_SYM 0_CD ._. 01_CD )_) but_CC not_RB when_WRB adjusted_VBN to_TO
+          severity_NN of_IN illness_NN by_IN multivariate_NN analysis_NN ._.
+        
+      
+      
+        Discussion_NNP
+        The_DT main_JJ findings_NNS of_IN this_DT validation_NN study_NN on_IN a_DT Saudi_NNP
+        Arabian_NNP ICU_NNP population_NN can_MD be_VB summarized_VBD as_IN follows_VBZ :_: (_( 1_LS )_)
+        overall_JJ mortality_NN prediction_NN ,_, estimated_VBN by_IN SMR_NNP ,_, was_VBD
+        reasonably_RB accurate_JJ ,_, especially_RB for_IN MPM_NNP II_NNP 
+        0_CD and_CC APACHE_NNP II_NNP ;_: (_( 2_LS )_) MPM_NNP II_NNP 24_CD had_VBD the_DT
+        best_JJS calibration_NN by_IN 
+        C_NNP -_: statistic_NN ;_: (_( 3_LS )_) SAPS_NNP II_NNP had_VBD the_DT
+        lowest_JJS calibration_NN and_CC discrimination_NN ._.
+        There_EX is_VBZ great_JJ international_JJ variability_NN in_IN patient_NN mix_NN
+        and_CC severity_NN of_IN illness_NN [_NN 7_CD ,_, 8_CD ,_, 9_CD ,_, 16_CD ,_, 17_CD ,_, 18_CD ]_NN ._. Some_DT of_IN the_DT
+        differences_NNS are_VBP inherent_JJ in_IN the_DT patient_NN population_NN ._. For_IN
+        example_NN ,_, patients_NNS with_IN cirrhosis_NNS have_VBP a_DT high_JJ severity_NN of_IN
+        illness_NN and_CC poor_JJ prognosis_NN when_WRB admitted_VBN to_TO the_DT ICU_NNP [_NN 19_CD ,_,
+        20_CD ,_, 21_CD ]_NN ._. Case_NN mix_NN is_VBZ also_RB affected_VBN by_IN the_DT type_NN of_IN hospital_NN ,_,
+        for_IN example_NN whether_IN it_PRP is_VBZ primary_JJ or_CC tertiary_JJ ,_, or_CC a_DT
+        transplant_NN or_CC trauma_NN center_NN ._. Patients_NNS referred_VBD from_IN other_JJ
+        hospitals_NNS have_VBP a_DT higher_JJR severity_NN of_IN illness_NN and_CC mortality_NN
+        compared_VBN with_IN direct_JJ admissions_NNS [_NN 22_CD ]_NN ._. Other_JJ factors_NNS are_VBP
+        practice-related_JJ ._. An_DT important_JJ example_NN is_VBZ the_NNP '_POS do_VBP
+        not-resuscitate_JJ '_POS (_( DNR_NNP )_) practice_NN [_NN 23_CD ,_, 24_CD ]_NN ._. Early_RB (_( pre-_NN ICU_NNP )_)
+        determination_NN of_IN DNR_NNP status_NN reduces_VBZ the_DT number_NN of_IN futile_JJ
+        admissions_NNS to_TO the_DT ICU_NNP leading_VBG to_TO a_DT probable_JJ reduction_NN in_IN
+        overall_JJ severity_NN of_IN illness_NN ._. Another_DT example_NN is_VBZ related_VBN to_TO
+        ICU_NNP bed_NN availability_NN ._. It_PRP has_VBZ been_VBN documented_VBN that_IN
+        physicians_NNS tend_VBP to_TO be_VB more_RBR selective_JJ in_IN their_PRP$ ICU_NNP
+        admissions_NNS at_IN times_NNS of_IN bed_NN shortages_NNS ,_, with_IN patients_NNS with_IN
+        higher_JJR severity_NN of_IN illness_NN being_VBG admitted_VBN [_NN 25_CD ]_NN ._. In_IN our_PRP$
+        study_NN ,_, the_DT relatively_RB high_JJ level_NN of_IN severity_NN of_IN illness_NN was_VBD
+        probably_RB related_VBN to_TO a_DT combination_NN of_IN all_PDT these_DT factors_NNS ._.
+        Being_VBG a_DT tertiary_JJ care_NN center_NN ,_, our_PRP$ hospital_NN receives_VBZ
+        referrals_NNS from_IN other_JJ hospitals_NNS ,_, some_DT of_IN them_PRP directly_RB to_TO
+        ICU_NNP (_( Table_NNP 2_LS )_) ._. Being_VBG a_DT transplant_NN center_NN ,_, we_PRP have_VBP a_DT large_JJ
+        population_NN of_IN end-stage_JJ liver_NN disease_NN ._. The_DT concept_NN of_IN DNR_NNP
+        is_VBZ evolving_VBG in_IN Saudi_NNP Arabia_NNP ._. Our_PRP$ hospital_NN has_VBZ been_VBN leading_VBG
+        in_IN the_DT country_NN in_IN this_DT field_NN by_IN establishing_VBG a_DT written_VBN
+        policy_NN for_IN DNR_NNP orders_NNS and_CC raising_VBG the_DT awareness_NN among_IN
+        physicians_NNS about_IN this_DT issue_NN ._. Nevertheless_RB ,_, there_EX is_VBZ room_NN
+        for_IN improvement_NN ._. Frequently_RB the_DT DNR_NNP status_NN is_VBZ discussed_VBN at_IN
+        a_DT very_RB late_JJ stage_NN or_CC is_VBZ not_RB discussed_VBN at_IN all_DT before_IN
+        admission_NN to_TO the_DT ICU_NNP ._. Consequently_RB ,_, many_JJ desperately_RB ill_JJ
+        patients_NNS are_VBP admitted_VBN to_TO the_DT ICU_NNP with_IN very_RB high_JJ severity_NN of_IN
+        illness_NN and_CC no_DT meaningful_JJ chance_NN of_IN survival_NN ._. The_DT nursing_NN
+        shortage_NN in_IN our_PRP$ ICU_NNP led_VBD to_TO selecting_VBG the_DT sicker_NN admissions_NNS
+        and_CC decreasing_VBG the_DT number_NN of_IN elective_JJ admissions_NNS ._.
+        In_IN this_DT study_NN we_PRP showed_VBD that_IN the_DT overall_JJ mortality_NN
+        prediction_NN was_VBD accurate_JJ but_CC calibration_NN was_VBD inadequate_JJ ._.
+        Potential_JJ reasons_NNS for_IN insufficient_JJ calibration_NN might_MD
+        include_VB the_DT following_VBG :_: (_( 1_LS )_) factors_NNS related_VBN to_TO the_DT
+        calibration_NN methodology_NN itself_PRP ;_: (_( 2_LS )_) reasons_NNS related_VBN to_TO data_NNS
+        collection_NN ,_, namely_RB intra-observer_JJ and_CC interobserver_NN
+        variability_NN ;_: (_( 3_LS )_) variability_NN in_IN GCS_NNP ;_: (_( 4_LS )_) differences_NNS in_IN
+        case_NN mix_NN ;_: (_( 5_LS )_) differences_NNS in_IN DNR_NNP policies_NNS ;_: and_CC (_( 6_CD )_)
+        differences_NNS in_IN medical_JJ care_NN ._.
+        The_DT results_NNS of_IN Lemeshow-_NNP Hosmer_NNP statistics_NNS are_VBP dependent_JJ
+        not_RB only_RB on_IN the_DT calibration_NN of_IN the_DT model_NN but_CC also_RB on_IN
+        patient_NN numbers_NNS and_CC the_DT distribution_NN of_IN the_DT estimates_NNS [_NN
+        26_CD ]_NN ._. The_DT results_NNS of_IN the_DT calibration_NN tests_NNS in_IN our_PRP$ study_NN
+        might_MD seem_VB inconsistent_JJ with_IN the_DT overall_JJ estimate_NN of_IN
+        mortality_NN of_IN the_DT whole_JJ population_NN and_CC with_IN the_DT mortality_NN
+        estimates_NNS of_IN the_DT subgroups_NNS (_( Table_NNP 2_LS )_) ._. This_DT apparent_JJ
+        inconsistency_NN is_VBZ probably_RB related_VBN to_TO the_DT distribution_NN of_IN
+        estimates_NNS ._. The_DT overestimation_NN of_IN mortality_NN in_IN certain_JJ
+        strata_NN of_IN severity_NN of_IN illness_NN is_VBZ '_POS counterbalanced_VBN '_POS by_IN
+        underestimation_NN in_IN other_JJ strata_NN (_( Table_NNP 4_LS )_) ,_, leading_VBG to_TO
+        '_POS perfect_JJ '_POS estimation_NN when_WRB the_DT whole_JJ population_NN or_CC a_DT
+        specific_JJ subgroup_NN is_VBZ considered_VBN ._.
+        Interobserver_NNP variability_NN in_IN data_NNS collection_NN has_VBZ been_VBN
+        documented_VBN in_IN several_JJ studies_NNS [_NN 27_CD ,_, 28_CD ,_, 29_CD ]_NN ._. This_DT is_VBZ
+        potentially_RB relevant_JJ to_TO our_PRP$ study_NN because_IN data_NNS collection_NN
+        was_VBD performed_VBN by_IN several_JJ physicians_NNS and_CC over_IN a_DT relatively_RB
+        long_JJ period_NN (_( 22_CD months_NNS )_) ._. We_PRP tried_VBD to_TO minimize_VB variability_NN
+        by_IN having_VBG a_DT written_VBN reference_NN of_IN definitions_NNS based_VBN on_IN the_DT
+        original_JJ articles_NNS of_IN the_DT various_JJ scoring_VBG systems_NNS and_CC having_VBG
+        one_CD person_NN coordinate_VB the_DT process_NN of_IN data_NNS collection_NN ._.
+        Similar_JJ approaches_NNS have_VBP been_VBN shown_VBN to_TO minimize_VB variability_NN
+        [_NN 30_CD ,_, 31_CD ]_NN ._. MPM_NNP II_NNP systems_NNS have_VBP been_VBN documented_VBN to_TO have_VB high_JJ
+        reproducibility_NN ,_, which_WDT might_MD explain_VB the_DT better_JJR calibration_NN
+        of_IN MPM_NNP II_NNP 
+        24_CD in_IN our_PRP$ study_NN [_NN 32_CD ]_NN ._.
+        The_DT variability_NN of_IN GCS_NNP determination_NN in_IN sedated_JJ patients_NNS
+        accounts_NNS for_IN much_JJ of_IN the_DT variability_NN in_IN scoring_VBG APACHE_NNP II_NNP ._.
+        Several_JJ approaches_NNS in_IN determining_VBG GCS_NNP have_VBP been_VBN used_VBN
+        previously_RB ._. For_IN non-sedated_JJ patients_NNS we_PRP used_VBD the_DT worst_JJS
+        value_NN in_IN the_DT first_JJ 24_CD hours_NNS ;_: for_IN sedated_JJ patients_NNS we_PRP used_VBD
+        the_DT pre-sedation_JJ GCS_NNP ._. This_DT approach_NN has_VBZ been_VBN shown_VBN to_TO be_VB
+        associated_VBN with_IN better_RB performance_NN of_IN APACHE_NNP II_NNP than_IN the_DT
+        approach_NN that_WDT assumes_VBZ normal_JJ GCS_NNP for_IN sedated_JJ patients_NNS [_NN
+        10_CD ]_NN ._. This_DT approach_NN also_RB follows_VBZ the_DT original_JJ MPM_NNP II_NNP article_NN
+        definitions_NNS [_NN 4_CD ]_NN and_CC is_VBZ consistent_JJ with_IN the_DT approach_NN
+        described_VBN by_IN Knaus_NNP and_CC others_NNS [_NN 11_CD ,_, 12_CD ]_NN ._.
+        Another_DT potential_JJ reason_NN for_IN the_DT inadequate_JJ calibration_NN
+        is_VBZ the_DT differences_NNS in_IN case_NN mix_NN between_IN our_PRP$ database_NN and_CC the_DT
+        development_NN databases_NNS of_IN the_DT mortality_NN prediction_NN systems_NNS ._.
+        Medical_JJ patients_NNS constitute_VBP a_DT larger_JJR proportion_NN in_IN our_PRP$
+        database_NN (_( 68_CD %_NN )_) than_IN in_IN the_DT development_NN databases_NNS (_( MPM_NNP II_NNP 
+        0_CD ,_, 45_CD %_NN ;_: MPM_NNP II_NNP 
+        24_CD ,_, 48_CD %_NN ;_: SAPS_NNP II_NNP ,_, 49_CD %_NN ;_: APACHE_NNP II_NNP ,_, 58_CD %_NN )_)
+        [_NN 2_CD ,_, 3_CD ,_, 4_CD ]_NN ._. When_WRB the_DT main_JJ diagnostic_JJ categories_NNS in_IN our_PRP$
+        database_NN are_VBP compared_VBN with_IN those_DT in_IN the_DT development_NN
+        database_NN of_IN APACHE_NNP II_NNP ,_, some_DT interesting_JJ differences_NNS appear_VBP ._.
+        The_DT post_NN cardiac_JJ arrest_NN category_NN ,_, which_WDT is_VBZ associated_VBN with_IN
+        a_DT high_JJ mortality_NN risk_NN (_( APACHE_NNP II_NNP diagnostic_JJ category_NN weight_NN
+        is_VBZ 0_CD ._. 393_CD )_) accounts_NNS for_IN 7_CD %_NN of_IN our_PRP$ admissions_NNS ,_, compared_VBN with_IN
+        3_CD %_NN in_IN the_DT developmental_NN database_NN of_IN APACHE_NNP II_NNP ._. The_DT
+        postoperative_JJ category_NN '_'' peripheral_JJ vascular_NN surgery_NN '_'' ,_, which_WDT
+        is_VBZ associated_VBN with_IN a_DT low_JJ mortality_NN risk_NN (_( APACHE_NNP II_NNP
+        diagnostic_JJ weight_NN is_VBZ -_: 1_CD ._. 315_CD )_) accounts_NNS for_IN 1_CD ._. 5_CD %_NN of_IN our_PRP$
+        admissions_NNS ,_, compared_VBN with_IN 9_CD ._. 82_CD %_NN of_IN the_DT development_NN
+        database_NN ._. Our_PRP$ database_NN also_RB has_VBZ more_RBR severe_JJ chronic_JJ
+        illnesses_NNS (_( 32_CD %_NN )_) compared_VBN with_IN 5_CD -_: 29_CD %_NN in_IN different_JJ
+        participating_VBG ICUs_NNP in_IN the_DT APACHE_NNP II_NNP development_NN database_NN ._.
+        This_DT is_VBZ partly_RB related_VBN to_TO the_DT high_JJ percentage_NN of_IN patients_NNS
+        with_IN end-stage_JJ liver_NN disease_NN admitted_VBN to_TO our_PRP$ ICU_NNP (_( 12_CD ._. 5_LS %_NN of_IN
+        all_DT patients_NNS )_) ._.
+        Differences_NNS in_IN admission_NN practises_NNS to_TO the_DT ICUs_NNP might_MD
+        also_RB have_VB an_DT impact_NN on_IN ICU_NNP outcome_NN ._. The_DT delay_NN in_IN DNR_NNP orders_NNS
+        is_VBZ mentioned_VBN earlier_RBR ._. This_DT factor_NN probably_RB contributes_VBZ to_TO
+        our_PRP$ high_JJ severity_NN of_IN illness_NN and_CC could_MD have_VB affected_VBN system_NN
+        calibration_NN ._.
+        Finally_RB ,_, one_PRP must_MD examine_VB whether_IN the_DT inadequate_JJ
+        calibration_NN is_VBZ related_VBN to_TO differences_NNS in_IN medical_JJ care_NN ._.
+        However_RB ,_, in_IN our_PRP$ study_NN ,_, overall_JJ actual_JJ mortality_NN was_VBD not_RB
+        different_JJ from_IN predicted_VBD mortality_NN ,_, as_IN is_VBZ evident_JJ in_IN the_DT
+        SMRs_NNP (_( Table_NNP 2_LS )_) ._. Furthermore_RB ,_, when_WRB the_DT calibration_NN curves_NNS
+        are_VBP examined_VBN there_EX is_VBZ no_DT consistent_JJ pattern_NN of_IN
+        overestimation_NN or_CC underestimation_NN of_IN mortality_NN among_IN the_DT
+        four_CD systems_NNS in_IN the_DT different_JJ strata_NN of_IN severity_NN of_IN
+        illness_NN ._. This_DT suggests_VBZ that_IN the_DT inadequate_JJ calibration_NN is_VBZ
+        inherent_JJ in_IN these_DT systems_NNS when_WRB applied_VBN to_TO this_DT population_NN
+        and_CC less_RBR likely_JJ to_TO be_VB related_VBN to_TO gross_JJ variation_NN in_IN medical_JJ
+        care_NN ._.
+        Our_PRP$ study_NN has_VBZ some_DT limitations_NNS ._. First_LS ,_, it_PRP is_VBZ a_DT
+        single-center_JJ study_NN ,_, which_WDT makes_VBZ it_PRP biased_VBN towards_IN a_DT
+        certain_JJ case_NN mix_NN ._. Second_JJ ,_, as_IN discussed_VBN above_IN ,_, collecting_VBG
+        the_DT data_NNS over_IN a_DT relatively_RB long_JJ period_NN by_IN different_JJ
+        physicians_NNS has_VBZ implications_NNS for_IN consistency_NN of_IN data_NNS
+        collection_NN ._. The_DT use_NN of_IN a_DT written_VBN reference_NN of_IN definitions_NNS
+        and_CC assigning_VBG a_DT coordinator_NN to_TO oversee_VB the_DT whole_JJ process_NN
+        probably_RB decreased_VBD variability_NN ,_, as_IN has_VBZ been_VBN shown_VBN
+        previously_RB [_NN 28_CD ,_, 29_CD ]_NN ._. In_IN addition_NN ,_, variability_NN has_VBZ been_VBN
+        found_VBN to_TO be_VB random_JJ and_CC of_IN little_JJ impact_NN on_IN the_DT overall_JJ
+        estimates_NNS [_NN 29_CD ]_NN ._. A_DT multicenter_NN study_NN would_MD have_VB addressed_VBN
+        some_DT of_IN these_DT concerns_NNS ._.
+        In_IN conclusion_NN ,_, the_DT four_CD mortality_NN prediction_NN systems_NNS
+        gave_VBD accurate_JJ overall_JJ estimates_NNS of_IN mortality_NN ,_, especially_RB
+        MPM_NNP II_NNP 
+        0_CD and_CC APACHE_NNP II_NNP ._. Calibration_NNP was_VBD modest_JJ
+        for_IN MPM_NNP II_NNP 
+        24_CD and_CC inadequate_JJ for_IN the_DT others_NNS ._. SAPS_NNP
+        II_NNP had_VBD the_DT lowest_JJS calibration_NN and_CC discrimination_NN ._. The_DT local_JJ
+        performance_NN of_IN MPM_NNP II_NNP systems_NNS (_( particularly_RB MPM_NNP II_NNP 
+        24_CD )_) ,_, in_IN addition_NN to_TO their_PRP$ ease_NN of_IN use_NN ,_,
+        makes_VBZ them_PRP attractive_JJ models_NNS for_IN use_NN in_IN Saudi_NNP Arabia_NNP ._.
+        However_RB ,_, a_DT multi-center_JJ national_JJ study_NN is_VBZ needed_VBN to_TO confirm_VB
+        these_DT findings_NNS ._.
+      
+      
+        Competing_VBG interests_NNS
+        None_NN declared_VBD ._.
+      
+      
+        Abbreviations_NNP
+        APACHE_NNP =_SYM Acute_NNP Physiology_NNP and_CC Chronic_NNP Health_NNP Evaluation_NNP ;_:
+        CI_NNP =_SYM confidence_NN interval_NN ;_: DNR_NNP =_SYM '_POS do_VBP not_RB resuscitate_VB '_POS ;_: GCS_NNP =_SYM
+        Glasgow_NNP Coma_NNP Score_NN ;_: ICU_NNP =_SYM intensive_JJ care_NN unit_NN ;_: LOS_NNP =_SYM length_NN
+        of_IN stay_NN ;_: MPM_NNP =_SYM Mortality_NNP Probability_NNP Model_NNP ;_: ROC_NNP =_SYM receiver_NN
+        operating_VBG characteristic_JJ ;_: SAPS_NNP =_SYM Simplified_NNP Acute_NNP
+        Physiology_NNP Score_NN ;_: SMR_NNP =_SYM standardized_JJ mortality_NN ratio_NN ._.
+      
+    
+  

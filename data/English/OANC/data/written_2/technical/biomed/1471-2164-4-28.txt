@@ -1,0 +1,598 @@
+
+  
+    
+      
+        Background_NNP
+        Gene_NNP expression_NN profiles_NNS generally_RB present_VBP signatures_NNS
+        for_IN cells_NNS at_IN specific_JJ states_NNS ,_, homeostatic_JJ or_CC stressed_VBD ,_,
+        providing_VBG fingerprints_NNS critical_JJ in_IN identifying_VBG regulatory_JJ
+        pathways_NNS ._. DNA_NN microarray_NN technologies_NNS are_VBP designed_VBN to_TO
+        reveal_VB gene_NN expression_NN profiles_NNS by_IN simultaneously_RB detecting_VBG
+        the_DT expression_NN levels_NNS on_IN a_DT genomic_JJ scale_NN [_NN 1_CD 2_CD ]_NN ._. They_PRP are_VBP
+        now_RB used_VBN to_TO profile_VB gene_NN expression_NN in_IN a_DT variety_NN of_IN model_NN
+        systems_NNS ,_, such_JJ as_IN antioxidant_NN response_NN [_NN 3_CD ]_NN and_CC tumor_NN
+        staging_NN [_NN 4_CD ]_NN ._. However_RB ,_, the_DT hybridization_NN based_VBD approach_NN
+        suffers_VBZ from_IN limitations_NNS including_VBG ,_, low_JJ sensitivity_NN for_IN
+        genes_NNS with_IN small_JJ changes_NNS of_IN expression_NN level_NN ,_, limited_VBN
+        accuracy_NN with_IN potential_JJ for_IN high_JJ experimental_JJ error_NN [_NN 5_CD ]_NN
+        and_CC necessity_NN for_IN a_DT large_JJ amount_NN of_IN biological_JJ starting_NN
+        material_NN ._. The_DT Amplified_NNP Differential_NNP Gene_NNP Expression_NNP (_( ADGE_NNP )_)
+        technique_NN was_VBD designed_VBN to_TO quadratically_RB magnify_VB the_DT ratios_NNS
+        of_IN gene_NN expression_NN [_NN 6_CD ]_NN ._. Briefly_NNP ,_, the_DT control_NN and_CC tester_NN
+        cDNA_NN 's_POS are_NN digested_VBN with_IN 
+        Taq_NNP I_PRP restriction_NN enzyme_NN ,_, then_RB
+        ligated_JJ with_IN the_DT CT_NNP and_CC TT_NNP adapters_NNS ,_, respectively_RB ._. The_DT
+        adapter-linked_JJ control_NN and_CC tester_NN DNA_NNP are_VBP reassociated_JJ
+        through_IN mixing_VBG at_IN a_DT ratio_NN of_IN 1_CD :_: 1_CD ,_, denaturing_VBG and_CC annealing_VBG ._.
+        The_DT DNA_NNP reassociation_NN results_NNS in_IN the_DT quadratic_JJ
+        magnification_NN of_IN expression_NN ratios_NNS for_IN the_DT up-_NN and_CC
+        down-regulated_JJ genes_NNS in_IN control_NN and_CC tester_NN samples_NNS ._. The_DT
+        ADGE_NNP magnification_NN is_VBZ theoretically_RB governed_VBN by_IN the_DT algebra_NN
+        formula_NN (_( a_DT +_NN b_SYM )_) (_( a_NNP '_POS +_NN b_SYM '_POS )_) =_SYM aa_NN '_'' +_NN bb_NN '_'' +_NN a_NNP '_POS b_SYM +_NN ab_NN '_'' where_WRB aa_NN '_''
+        represents_VBZ the_DT control_NN DNA_NNP ,_, bb_NN '_'' represents_VBZ the_DT tester_NN DNA_NNP
+        and_CC a_NNP '_POS b_SYM and_CC ab_NN '_'' represent_VB hybrid_JJ DNA_NNP '_POS s_VBZ ._. For_IN example_NN ,_, for_IN a_DT
+        gene_NN up-regulated_JJ 2_CD -_: fold_VB in_IN tester_NN over_IN control_NN ,_, the_DT
+        formula_NN is_VBZ (_( a_DT +_NN 2_CD b_SYM )_) (_( a_NNP '_POS +_NN 2_CD b_SYM '_POS )_) =_SYM aa_NN '_'' +_NN 4_CD bb_NN '_'' +_NN 2_CD a_NNP '_POS b_SYM +_NN 2_CD ab_NN '_'' ._.
+        After_IN DNA_NNP reassociation_NN ,_, the_DT ratio_NN of_IN bb_NN '_'' /_NN aa_NN '_'' increases_NNS
+        from_IN 2_CD to_TO 4_CD ._. If_IN expression_NN of_IN another_DT gene_NN is_VBZ
+        down-regulated_JJ 3_CD times_NNS in_IN the_DT tester_NN ,_, the_DT formula_NN is_VBZ (_( 3_CD a_DT +_NN
+        b_SYM )_) (_( 3_CD a_NNP '_POS +_NN b_SYM '_POS )_) =_SYM 9_CD aa_NN '_'' +_NN bb_NN '_'' +_NN 3_CD a_NNP '_POS b_SYM +_NN 3_CD ab_NN '_'' ._. Therefore_RB ,_, the_DT
+        ratio_NN of_IN aa_NN '_'' /_NN bb_NN '_'' increases_NNS from_IN 3_CD to_TO 9_CD after_IN
+        reassociation_NN ._. For_IN a_DT gene_NN with_IN a_DT ratio_NN of_IN 1_CD :_: 1_CD ,_, the_DT ratio_NN is_VBZ
+        kept_VBN unchanged_JJ after_IN reassociation_NN ._. The_DT reassociated_JJ DNA_NNP is_VBZ
+        amplified_VBN by_IN using_VBG PCR_NNP with_IN the_DT CT_NNP primer_NN complementary_JJ to_TO
+        the_DT CT_NNP adapter_NN or_CC the_DT TT_NNP primer_NN complementary_JJ to_TO the_DT TT_NNP
+        adapter_NN ._. The_DT CT_NNP primer_NN amplifies_NNS the_DT control_JJ DNA_NNP (_( aa_NN '_'' )_)
+        exponentially_RB and_CC hybrid_JJ DNA_NNP (_( a_NNP '_POS b_SYM and_CC ab_NN '_'' )_) linearly_RB while_IN
+        the_DT TT_NNP primer_NN amplifies_NNS the_DT tester_NN DNA_NNP (_( bb_NN '_'' )_) exponentially_RB
+        and_CC hybrid_JJ DNA_NNP linearly_RB since_IN hybrid_JJ DNA_NNP has_VBZ two_CD different_JJ
+        adapters_NNS at_IN the_DT ends_NNS ._. The_DT PCR_NNP not_RB only_RB exponentially_RB
+        amplifies_NNS the_DT control_NN and_CC tester_NN DNA_NNP but_CC also_RB separates_NNS
+        them_PRP from_IN each_DT other_JJ ._. The_DT expression_NN patterns_NNS for_IN
+        over-expressed_JJ ,_, repressed_JJ and_CC unchanged_JJ genes_NNS were_VBD profiled_VBN
+        with_IN the_DT ADGE_NNP technique_NN [_NN 6_CD ]_NN ._. However_RB ,_, the_DT throughput_NN of_IN
+        ADGE_NNP is_VBZ low_JJ since_IN it_PRP displays_VBZ an_DT average_NN of_IN 4_CD genes_NNS at_IN a_DT
+        time_NN with_IN agarose_NN gels_NNS ._. Our_PRP$ present_JJ paper_NN combines_VBZ the_DT ADGE_NNP
+        technique_NN with_IN DNA_NNP microarray_NN (_( hereafter_RB called_VBN ADGE_NNP
+        microarray_NN )_) in_IN order_NN to_TO integrate_VB the_DT high_JJ throughput_NN of_IN
+        DNA_NNP microarray_NN with_IN the_DT ratio_NN magnification_NN and_CC the_DT PCR_NNP
+        amplification_NN of_IN ADGE_NNP ._. The_DT combination_NN of_IN ADGE_NNP and_CC DNA_NNP
+        microarray_NN was_VBD used_VBN to_TO analyze_VB differential_NN gene_NN expression_NN
+        in_IN a_DT selected_VBN drug_NN resistant_JJ cell_NN line_NN ._.
+        The_DT prodrug_NN TLK_NNP 286_CD
+        [_NN γ-glutamyl-α-amino-β_JJ (_( 2_CD -_: ethyl-_NN N_NNP ,_, N_NNP ,_, N_NNP ,_, N-_NNP tetrakis_NNS (_( 2_CD -_: chloroethyl_NN )_) phosphorodiamidate_NN )_) -_: sulfonyl-propionyl-_JJ (_( R_NN )_) -_: (_( -_: )_) phenylglycine_NN ]_NN
+        is_VBZ activated_VBN by_IN glutathione_NN S-_NNP transferase_NN (_( GST_NNP )_) P_NN 1_CD -_: 1_CD and_CC to_TO
+        a_DT lesser_JJR degree_NN A_DT 1_CD -_: 1_CD and_CC generates_VBZ tetrakis_NNS chloroethyl_NN
+        alkylating_VBG moieties_NNS that_WDT can_MD react_VB with_IN cellular_JJ
+        nucleophiles_NNS ._. Cellular_NNP response_NN to_TO chronic_JJ TLK_NNP 286_CD exposure_NN
+        included_VBD a_DT two-fold_JJ decrease_NN in_IN GSTP_NNP 1_CD -_: 1_CD protein_NN levels_NNS ,_,
+        confirming_VBG a_DT GSTP_NNP 1_CD -_: 1_CD mediated_JJ mechanism_NN of_IN activation_NN [_NN 7_CD ]_NN
+        ._. Mouse_NNP embryo_NN fibroblast_NN cells_NNS from_IN GSTP_NNP 1_CD -_: 1_CD deficient_NN
+        animals_NNS elevated_VBD the_DT expression_NN of_IN signal-regulated_JJ kinases_NNS
+        ERK_NNP 1_CD /_NN ERK_NNP 2_CD and_CC reduced_VBD the_DT doubling_VBG time_NN of_IN cell_NN
+        proliferation_NN [_NN 8_CD ]_NN ._. That_DT paper_NN also_RB found_VBD that_IN a_DT clone_NN of_IN
+        HL_NNP 60_CD cells_NNS resistant_JJ to_TO TLK_NNP 199_CD ,_, an_DT inhibitor_NN of_IN GSTP_NNP 1_CD -_: 1_CD ,_,
+        has_VBZ been_VBN shown_VBN to_TO have_VB elevated_VBD activities_NNS of_IN c-_NN Jun_NNP NH_NNP 
+        2_CD -_: terminal_NN kinase_NN (_( JNK_NNP )_) and_CC ERK_NNP 1_CD /_NN ERK_NNP 2_CD ._.
+        In_IN addition_NN ,_, GSTP_NNP 1_CD -_: 1_CD acts_NNS as_IN a_DT negative_JJ regulator_NN of_IN JNK_NNP
+        primarily_RB through_IN direct_JJ protein_NN :_: protein_NN interactions_NNS [_NN 9_CD
+        10_CD ]_NN ._. These_DT data_NNS suggest_VBP that_IN GSTP_NNP 1_CD -_: 1_CD has_VBZ a_DT role_NN in_IN
+        regulation_NN of_IN kinase_NN activities_NNS and_CC cell_NN proliferation_NN [_NN 8_CD
+        11_CD 12_CD 13_CD ]_NN ._. Because_IN of_IN this_DT available_JJ background_NN
+        information_NN ,_, the_DT HL_NNP 60_CD wild_JJ type_NN and_CC TLK_NNP 286_CD resistant_JJ cell_NN
+        lines_NNS were_VBD chosen_VBN as_IN model_NN systems_NNS for_IN analysis_NN by_IN ADGE_NNP
+        microarray_NN ._. The_DT results_NNS show_VBP that_IN ADGE_NNP microarray_NN improves_VBZ
+        the_DT sensitivity_NN and_CC fidelity_NN of_IN detection_NN and_CC reduces_VBZ the_DT
+        requirement_NN for_IN starting_VBG material_NN while_IN maintaining_VBG the_DT
+        high_JJ throughput_NN of_IN regular_JJ microarray_NN ._. The_DT gene_NN expression_NN
+        profile_NN for_IN the_DT resistant_JJ cells_NNS revealed_VBD with_IN ADGE_NNP
+        microarray_NN reflected_VBD changes_NNS in_IN the_DT expression_NN of_IN GSTP_NNP 1_CD -_: 1_CD
+        and_CC genes_NNS related_VBN to_TO kinase_NN and_CC proliferation_NN pathways_NNS ._.
+      
+      
+        Results_NNS
+        
+          ADGE_NNP microarray_NN magnified_VBD ratios_NNS
+          The_DT ratios_NNS detected_VBD with_IN ADGE_NNP microarray_NN were_VBD greater_JJR
+          than_IN the_DT corresponding_JJ input_NN ratios_NNS ._. The_DT input_NN ratios_NNS of_IN
+          2_CD ,_, 3_CD ,_, 4_CD were_VBD detected_VBN as_IN averages_NNS of_IN 3_CD ._. 6_CD ,_, 5_CD ._. 3_CD and_CC 9_CD ._. 1_CD ,_,
+          respectively_RB ,_, after_IN normalization_NN with_IN the_DT ratio_NN of_IN 1_CD ._. In_IN
+          contrast_NN ,_, these_DT samples_NNS were_VBD detected_VBN as_IN 1_CD ._. 5_CD ,_, 2_CD ._. 0_CD and_CC 2_CD ._. 7_CD
+          with_IN regular_JJ microarray_NN ,_, values_NNS that_WDT were_VBD less_JJR than_IN their_PRP$
+          corresponding_JJ input_NN ratios_NNS (_( Fig_NNP ._. 1_LS )_) ._. The_DT power_NN regression_NN
+          best_JJS fits_VBZ the_DT data_NNS trend_NN of_IN ADGE_NNP microarray_NN with_IN the_DT
+          largest_JJS R_NN 2_CD of_IN 0_CD ._. 97_CD among_IN linear_JJ ,_, logarithmic_JJ ,_, polynomial_NN ,_,
+          power_NN and_CC exponential_NN ._. The_DT relationship_NN between_IN the_DT
+          detected_VBN ratio_NN (_( y_NN )_) and_CC the_DT input_NN ratio_NN (_( x_SYM )_) for_IN ADGE_NNP
+          microarray_NN is_VBZ y_NN =_SYM 1_CD ._. 05_CD x_SYM 1_CD ._. 55_CD (_( Fig_NNP ._. 2_LS A_DT )_) ._. This_DT relationship_NN
+          is_VBZ close_JJ to_TO the_DT theoretical_JJ one_CD of_IN quadratic_JJ
+          magnification_NN y_NN =_SYM x_SYM 2_CD ._. Therefore_RB ,_, the_DT ratios_NNS were_VBD
+          magnified_VBN in_IN power_NN function_NN within_IN this_DT low_JJ range_NN ._.
+          However_RB ,_, the_DT linear_JJ regression_NN best_JJS fits_VBZ the_DT data_NNS trend_NN
+          of_IN regular_JJ microarray_NN with_IN the_DT largest_JJS R_NN 2_CD of_IN 0_CD ._. 96_CD ._. The_DT
+          relationship_NN for_IN regular_JJ microarray_NN is_VBZ y_NN =_SYM 0_CD ._. 56_CD x_SYM +_NN 0_CD ._. 39_CD ,_,
+          which_WDT suggests_VBZ that_IN the_DT ratio_NN detected_VBD with_IN regular_JJ
+          microarray_NN represents_VBZ about_IN half_PDT the_DT input_NN ratio_NN within_IN
+          this_DT range_NN ._.
+          The_DT magnification_NN of_IN power_NN function_NN continued_VBD until_IN
+          the_DT 6_CD -_: fold_VB input_NN ratio_NN ._. After_IN that_DT ,_, the_DT magnitude_NN of_IN ADGE_NNP
+          magnification_NN leveled_VBD off_RP (_( Fig_NNP ._. 2_LS B_NNP )_) ._. The_DT overall_JJ
+          relationship_NN between_IN detected_VBD ratios_NNS and_CC input_NN ratios_NNS had_VBD
+          a_DT logarithmic_JJ trend_NN :_: y_NN =_SYM 15_CD ._. 99_CD ln_NN (_( x_SYM )_) -_: 6_CD ._. 14_CD with_IN R_NN 2_CD =_SYM
+          0_CD ._. 84_CD ._.
+        
+        
+          ADGE_NNP microarray_NN improved_VBD detection_NN
+          sensitivity_NN
+          The_DT ratio_NN magnification_NN was_VBD also_RB observed_VBN when_WRB the_DT
+          ADGE_NNP microarray_NN method_NN was_VBD applied_VBN to_TO the_DT whole_JJ
+          microarray_NN chip_NN ._. The_DT MA_NNP plot_NN of_IN ADGE_NNP microarray_NN has_VBZ wider_RBR
+          upward_RB and_CC downward_JJ distribution_NN from_IN the_DT central_JJ area_NN
+          than_IN that_DT of_IN regular_JJ microarray_NN ,_, particularly_RB for_IN the_DT
+          spots_NNS with_IN high_JJ intensity_NN (_( Fig_NNP ._. 3_LS Aand_NNP 3_CD B_NNP )_) ._. 578_CD of_IN 10_CD ,_, 000_CD
+          genes_NNS were_VBD detected_VBN at_IN 2_CD -_: 4_CD fold_VB up-regulated_JJ and_CC 460_CD
+          genes_NNS at_IN 2_CD -_: 4_CD fold_VB down-regulated_JJ with_IN ADGE_NNP microarray_NN
+          (_( Fig_NNP ._. 3_LS D_NNP )_) ;_: 107_CD and_CC 38_CD genes_NNS detected_VBD at_IN >_NN 4_CD fold_VB up-_NN
+          and_CC down-regulated_JJ ,_, respectively_RB ._. In_IN contrast_NN ,_, with_IN
+          regular_JJ microarray_NN ,_, 227_CD and_CC 244_CD of_IN 10_CD ,_, 000_CD genes_NNS were_VBD
+          detected_VBN at_IN 2_CD -_: 4_CD fold_VB up-_NN and_CC down-regulated_JJ ,_,
+          respectively_RB ;_: 10_CD and_CC 30_CD genes_NNS at_IN >_NN 4_CD fold_VB up-_NN and_CC
+          down-regulated_JJ ,_, respectively_RB ._. Most_JJS outliers_NNS in_IN regular_JJ
+          microarray_NN were_VBD the_DT results_NNS of_IN spontaneous_JJ experimental_JJ
+          error_NN ,_, with_IN low_JJ spot_NN intensities_NNS ._. When_WRB only_RB these_DT genes_NNS
+          with_IN >_NN 99_CD %_NN confidence_NN level_NN of_IN t_NN test_NN are_VBP considered_VBN ,_,
+          one_CD and_CC three_CD genes_NNS were_VBD detected_VBN at_IN 2_CD -_: 4_CD fold_VB up-_NN and_CC
+          down-regulated_JJ ,_, respectively_RB ,_, with_IN regular_JJ microarray_NN ;_:
+          one_CD gene_NN detected_VBD at_IN >_NN 4_CD fold_VB down-regulated_JJ (_( Fig_NNP ._. 3_LS D_NNP )_) ._.
+          However_RB ,_, with_IN ADGE_NNP microarray_NN ,_, there_EX were_VBD 63_CD genes_NNS >_NN 4_CD
+          fold_VB up-regulated_JJ ,_, 220_CD genes_NNS 2_CD -_: 4_CD fold_VB up-regulated_JJ ,_, 92_CD
+          genes_NNS 2_CD -_: 4_CD fold_VB down-regulated_JJ and_CC 14_CD genes_NNS >_NN 4_CD
+          down-regulated_JJ ._. The_DT ADGE_NNP magnification_NN raised_VBD small_JJ
+          changes_NNS in_IN gene_NN expression_NN to_TO a_DT level_NN beyond_IN the_DT inherent_JJ
+          limit_NN of_IN DNA_NNP microarray_NN and_CC improved_VBN detection_NN
+          sensitivity_NN ._.
+        
+        
+          ADGE_NNP microarray_NN improved_VBD detection_NN fidelity_NN
+          Multiple_NNP steps_NNS were_VBD integrated_VBN to_TO improve_VB the_DT fidelity_NN
+          of_IN detection_NN in_IN ADGE_NNP microarray_NN ._. The_DT ADGE_NNP magnification_NN
+          increased_VBD the_DT magnitude_NN of_IN the_DT expression_NN ratios_NNS beyond_IN
+          the_DT detection_NN error_NN of_IN standard_JJ microarray_NN ._. PCR_NNP
+          amplification_NN of_IN DNA_NNP templates_NNS dramatically_RB increased_VBD the_DT
+          amount_NN of_IN probe_NN ._. The_DT CT_NNP and_CC TT_NNP adapters_NNS at_IN the_DT DNA_NNP
+          fragment_NN ends_VBZ facilitated_JJ efficient_JJ labeling_VBG of_IN Cy_NNP 3_CD and_CC
+          Cy_NNP 5_CD ,_, thus_RB enhancing_VBG signal_NN intensity_NN ._. Variances_NNP of_IN Cy_NNP 3_CD
+          and_CC Cy_NNP 5_CD intensities_NNS were_VBD less_JJR in_IN ADGE_NNP microarray_NN than_IN in_IN
+          regular_JJ microarray_NN (_( Fig_NNP ._. 4_LS Aand_NNP 4_CD B_NNP )_) ._. 6888_CD and_CC 6663_CD of_IN
+          10_CD ,_, 000_CD genes_NNS in_IN ADGE_NNP microarray_NN had_VBD variances_NNS of_IN <_NN 0_CD ._. 5_CD
+          in_IN Cy_NNP 3_CD and_CC Cy_NNP 5_CD channels_NNS ,_, respectively_RB ,_, while_IN in_IN regular_JJ
+          microarray_NN ,_, there_EX are_VBP only_RB 717_CD and_CC 741_CD such_JJ genes_NNS ,_,
+          suggesting_VBG that_IN the_DT results_NNS among_IN replicates_NNS were_VBD more_RBR
+          consistent_JJ with_IN less_JJR variation_NN in_IN ADGE_NNP microarray_NN ._.
+          The_DT confidence_NN levels_NNS of_IN t_NN tests_NNS reflect_VBP the_DT magnitude_NN
+          of_IN consistent_JJ differences_NNS between_IN HL_NNP 60_CD and_CC HL_NNP 60_CD /_NN TLK_NNP 286_CD
+          among_IN replicates_NNS ._. 836_CD of_IN 10_CD ,_, 000_CD genes_NNS were_VBD identified_VBN at_IN
+          99_CD %_NN confidence_NN level_NN ,_, 2013_CD genes_NNS at_IN 95_CD -_: 98_CD %_NN ,_, 753_CD genes_NNS at_IN
+          90_CD -_: 94_CD %_NN with_IN ADGE_NNP microarray_NN ._. In_IN contrast_NN ,_, for_IN regular_JJ
+          microarray_NN ,_, 85_CD genes_NNS were_VBD detected_VBN at_IN 99_CD %_NN ,_, 367_CD genes_NNS at_IN
+          95_CD -_: 98_CD %_NN and_CC 409_CD genes_NNS at_IN 90_CD -_: 94_CD %_NN (_( Fig_NNP ._. 4_LS C_NNP )_) ._.
+          Among_IN the_DT genes_NNS with_IN >_NN 99_CD %_NN confidence_NN levels_NNS and_CC
+          >_NN 4_CD fold_VB changes_NNS ,_, five_CD genes_NNS were_VBD found_VBN duplicated_VBN on_IN
+          the_DT chip_NN ._. The_DT results_NNS of_IN the_DT duplicated_VBN spots_NNS were_VBD
+          similar_JJ (_( Table_NNP 1_LS )_) ._. For_IN example_NN ,_, bmi-_NN 1_CD was_VBD detected_VBN at_IN
+          7_CD ._. 96_CD and_CC 7_CD ._. 29_CD in_IN both_DT spots_NNS ._.
+        
+        
+          ADGE_NNP microarray_NN revealed_VBD genes_NNS associated_VBN with_IN drug_NN
+          resistance_NN
+          ADGE_NNP microarray_NN was_VBD used_VBN to_TO compare_VB expression_NN
+          patterns_NNS for_IN the_DT TLK_NNP 286_CD resistant_JJ cell_NN line_NN and_CC its_PRP$ wild_JJ
+          type_NN counterpart_NN by_IN screening_VBG the_DT expression_NN pattern_NN of_IN
+          20_CD ,_, 000_CD genes_NNS ._. Ninety_CD three_CD genes_NNS were_VBD selected_VBN with_IN the_DT
+          threshold_NN average_NN ratio_NN >_NN 4_CD ._. 0_CD and_CC confidence_NN level_NN
+          >_NN 99_CD %_NN ._. Among_IN the_DT 93_CD genes_NNS ,_, 12_CD had_VBD functions_NNS related_VBN to_TO
+          cell_NN proliferation_NN and_CC kinase_NN pathways_NNS (_( Table_NNP 2_LS )_) ._. In_IN
+          addition_NN ,_, expression_NN of_IN GSTP_NNP 1_CD -_: 1_CD was_VBD reduced_VBN in_IN the_DT
+          HL_NNP 60_CD /_NN TLK_NNP 286_CD cell_NN line_NN ,_, which_WDT was_VBD consistent_JJ with_IN a_DT
+          previous_JJ study_NN [_NN 7_CD ]_NN ._. Quantitative_NNP RT-PCR_NNP confirmed_VBD the_DT
+          results_NNS of_IN ADGE_NNP microarray_NN for_IN eleven_CD of_IN thirteen_NN genes_NNS ._.
+          The_DT other_JJ two_CD genes_NNS were_VBD detected_VBN unchanged_JJ with_IN RT-PCR_NNP ._.
+          The_DT gene_NN expression_NN profile_NN revealed_VBD with_IN ADGE_NNP microarray_NN
+          supported_VBD the_DT principle_NN of_IN GSTP_NNP 1_CD -_: 1_CD mediated_JJ regulation_NN of_IN
+          cell_NN proliferation_NN and_CC kinase_NN pathways_NNS ._.
+        
+      
+      
+        Discussion_NNP
+        The_DT ADGE_NNP technique_NN is_VBZ a_DT method_NN designed_VBN to_TO magnify_VB the_DT
+        ratios_NNS of_IN gene_NN expression_NN before_IN detection_NN ._. The_DT ratio_NN
+        magnification_NN was_VBD reported_VBN with_IN a_DT gel_NN system_NN [_NN 6_CD ]_NN and_CC was_VBD
+        observed_VBN in_IN this_DT study_NN with_IN DNA_NNP microarray_NN (_( Fig_NNP ._. 1_LS and_CC 2_LS )_) ._.
+        The_DT magnification_NN of_IN a_DT power_NN function_NN was_VBD found_VBN up_IN to_TO a_DT
+        6_CD -_: fold_VB input_NN ratio_NN or_CC 30_CD -_: fold_VB detected_VBD ratio_NN ._. The_DT magnitude_NN
+        of_IN magnification_NN leveled_VBD off_RP after_IN that_DT ._. Since_IN different_JJ
+        dilutions_NNS ,_, different_JJ cycles_NNS of_IN PCR_NNP and_CC dye_NN reverse_NN were_VBD
+        used_VBN ,_, ADGE_NNP magnification_NN can_MD be_VB applied_VBN for_IN up-_NN and_CC
+        down-regulated_JJ genes_NNS with_IN different_JJ abundance_NN ._. One_CD reason_NN
+        for_IN the_DT level-off_JJ might_MD be_VB the_DT capacity_NN of_IN DNA_NNP microarray_NN
+        to_TO detect_VB large_JJ ratios_NNS ._. For_IN instance_NN ,_, the_DT maximum_NN value_NN of_IN
+        spot_NN intensity_NN is_VBZ 65_CD ,_, 000_CD in_IN an_DT Affymetrix_NNP scanner_NN ._. If_IN an_DT
+        abundant_JJ gene_NN has_VBZ an_DT intensity_NN of_IN 1000_CD in_IN another_DT scanning_VBG
+        channel_NN ,_, the_DT largest_JJS detectable_JJ ratio_NN will_MD be_VB 65_CD ._. Another_DT
+        explanation_NN might_MD be_VB the_DT saturation_NN of_IN PCR_NNP for_IN abundant_JJ
+        genes_NNS ._. The_DT regression_NN equations_NNS of_IN the_DT detected_VBN values_NNS with_IN
+        input_NN values_NNS not_RB only_RB demonstrate_VB the_DT magnitude_NN of_IN
+        magnification_NN with_IN ADGE_NNP technology_NN ,_, but_CC also_RB provide_VB a_DT
+        guideline_NN to_TO interpret_VB the_DT results_NNS of_IN ADGE_NNP microarray_NN ._. The_DT
+        quantitative_JJ relationship_NN between_IN input_NN values_NNS (_( x_SYM )_) and_CC
+        detected_VBD values_NNS (_( y_NN )_) was_VBD y_NN =_SYM 0_CD ._. 56_CD x_SYM +_NN 0_CD ._. 39_CD for_IN regular_JJ
+        microarray_NN ._. Thus_RB ,_, regular_JJ microarray_NN may_MD under-estimate_JJ
+        differences_NNS of_IN gene_NN expression_NN between_IN two_CD samples_NNS ._.
+        ADGE_NNP methodology_NN not_RB only_RB magnifies_NNS the_DT differential_NN
+        expression_NN ratios_NNS but_CC also_RB amplifies_NNS the_DT amount_NN of_IN
+        templates_NNS with_IN PCR_NNP ._. Exponential_NNP amplification_NN by_IN PCR_NNP
+        dramatically_RB increases_VBZ the_DT amount_NN of_IN probes_NNS and_CC reduces_VBZ the_DT
+        requirement_NN for_IN starting_VBG material_NN ._. Based_VBN on_IN the_DT current_JJ
+        working_NN protocol_NN ,_, 10_CD μg_NN of_IN total_JJ RNA_NNP from_IN control_NN and_CC
+        tester_NN samples_NNS was_VBD used_VBN to_TO generate_VB 160_CD μl_NN of_IN reassociated_JJ
+        DNA_NNP ._. 2_LS μl_NN of_IN the_DT reassociated_JJ DNA_NNP was_VBD needed_VBN to_TO make_VB probe_NN
+        for_IN one_CD slide_NN hybridization_NN ._. Thus_RB ,_, 125_CD ng_NN of_IN total_JJ RNA_NNP can_MD
+        be_VB used_VBN for_IN one_CD slide_NN hybridization_NN ._. Therefore_RB ,_, ADGE_NNP
+        microarray_NN could_MD provide_VB a_DT platform_NN for_IN using_VBG 160_CD -_: 200_CD fold_VB
+        less_RBR total_JJ RNA_NNP than_IN regular_JJ microarray_NN (_( which_WDT generally_RB
+        requires_VBZ 20_CD μg_NN of_IN total_JJ RNA_NNP )_) ._. It_PRP is_VBZ also_RB comparable_JJ to_TO
+        other_JJ RNA_NNP amplification_NN methods_NNS ,_, such_JJ as_IN antisense_NN RNA_NNP
+        amplification_NN where_WRB 0_CD ._. 25_CD -_: 3_CD ._. 0_CD μg_NN of_IN total_JJ RNA_NNP is_VBZ required_VBN
+        [_NN 14_CD ]_NN and_CC Amine-modified_NNP random_JJ primer_NN where_WRB 1_CD ._. 0_CD μg_NN of_IN
+        total_JJ RNA_NNP is_VBZ required_VBN [_NN 15_CD ]_NN ._. 20_CD -_: 30_CD PCR_NNP cycles_NNS are_VBP
+        recommended_VBN since_IN too_RB few_JJ cycles_NNS will_MD reduce_VB the_DT difference_NN
+        between_IN the_DT exponentially_RB amplified_VBN tester_NN or_CC control_NN DNA_NNP
+        and_CC the_DT linearly_RB amplified_VBN hybrid_JJ DNA_NNP and_CC too_RB many_JJ cycles_NNS
+        will_MD saturate_VB abundant_JJ genes_NNS ._.
+        The_DT adapters_NNS at_IN the_DT DNA_NNP fragment_NN ends_VBZ facilitate_VB
+        efficient_JJ incorporation_NN of_IN Cy_NNP 3_CD and_CC Cy_NNP 5_CD into_IN DNA_NNP templates_NNS
+        and_CC enhance_VB signal_NN intensity_NN ._. Both_DT methods_NNS of_IN direct_JJ and_CC
+        indirect_JJ labeling_VBG were_VBD used_VBN in_IN this_DT study_NN ._. With_IN direct_JJ
+        labeling_VBG ,_, Cy_NNP 3_CD -_: dCTP_NN is_VBZ incorporated_VBN into_IN control_NN and_CC
+        Cy_NNP 5_CD -_: dCTP_NN into_IN tester_NN DNA_NNP during_IN the_DT PCR_NNP amplification_NN of_IN
+        the_DT hybridized_JJ DNA_NNP templates_NNS ._. The_DT use_NN of_IN Cy_NNP dyes_NNS can_MD be_VB
+        reversed_VBN if_IN required_VBN ._. With_IN indirect_JJ labeling_VBG ,_,
+        aminoallyl-d_JJ UTP_NNP is_VBZ incorporated_VBN into_IN control_NN and_CC tester_NN DNA_NNP
+        with_IN PCR_NNP of_IN 3_CD cycles_NNS after_IN the_DT reassociated_JJ DNA_NNP templates_NNS
+        are_VBP amplified_VBN ._. The_DT aminoallyl-d_JJ UTP_NNP labeled_VBD DNA_NNP templates_NNS
+        are_VBP in_IN turn_NN coupled_VBN with_IN Cy_NNP dyes_NNS ._. The_DT use_NN of_IN
+        aminoallyl-d_JJ UTP_NNP in_IN PCR_NNP amplification_NN of_IN the_DT hybridized_JJ DNA_NNP
+        template_NN is_VBZ not_RB recommended_VBN ._. It_PRP is_VBZ also_RB possible_JJ to_TO adapt_VB
+        other_JJ methods_NNS of_IN signal_NN enhancement_NN to_TO the_DT labeling_VBG
+        procedure_NN ._. For_IN example_NN ,_, the_DT 3_CD DNA_NNP fluorescent_NN dendrimer_NN
+        probes_NNS (_( Genisphere_NNP ,_, Montvale_NNP ,_, NJ_NNP )_) can_MD be_VB attached_VBN on_IN the_DT CT_NNP
+        and_CC TT_NNP primers_NNS which_WDT then_RB are_VBP used_VBN to_TO amplify_VB the_DT control_NN
+        and_CC tester_NN DNA_NNP 's_POS ._. Since_IN both_DT strands_NNS of_IN the_DT probe_NN DNA_NNP are_VBP
+        labeled_VBN with_IN direct_JJ labeling_VBG or_CC indirect_JJ labeling_VBG ,_, the_DT
+        specific_JJ intensity_NN is_VBZ enhanced_VBN ._. The_DT ratio_NN of_IN signal_NN to_TO
+        background_NN was_VBD improved_VBN in_IN ADGE_NNP microarray_NN ._. For_IN example_NN ,_, on_IN
+        slides_NNS of_IN 10_CD ,_, 000_CD genes_NNS ,_, 1301_CD genes_NNS were_VBD detected_VBN at_IN ratios_NNS
+        >_NN 18_CD and_CC 7988_CD genes_NNS at_IN ratios_NNS <_NN 9_CD with_IN ADGE_NNP
+        microarray_NN ._. In_IN contrast_NN ,_, 578_CD genes_NNS were_VBD detected_VBN at_IN ratios_NNS
+        >_NN 18_CD and_CC 8678_CD genes_NNS at_IN ratios_NNS <_NN 9_CD with_IN regular_JJ
+        microarray_NN ._. The_DT reason_NN that_IN overall_JJ spot_NN intensities_NNS in_IN
+        Fig_NNP ._. 3_LS Aare_NNP lower_JJR than_IN in_IN Fig_NNP ._. 3_LS Bis_NNP that_IN smaller_JJR gain_NN values_NNS
+        were_VBD used_VBN for_IN ADGE_NNP microarray_NN when_WRB scanning_VBG microarray_NN
+        chips_NNS ._.
+        The_DT integration_NN of_IN these_DT features_NNS in_IN ADGE_NNP microarray_NN
+        improves_VBZ detection_NN sensitivity_NN and_CC fidelity_NN ._. ADGE_NNP
+        magnification_NN raised_VBD small_JJ changes_NNS in_IN gene_NN expression_NN to_TO a_DT
+        level_NN beyond_IN the_DT inherent_JJ limit_NN of_IN DNA_NNP microarray_NN ._. Thus_RB ,_,
+        genes_NNS with_IN small_JJ expression_NN changes_NNS could_MD be_VB identified_VBN
+        more_RBR accurately_RB and_CC false_JJ negatives_NNS could_MD be_VB minimized_VBN with_IN
+        ADGE_NNP microarray_NN ._. 77_CD genes_NNS with_IN >_NN 99_CD %_NN confidence_NN level_NN and_CC
+        >_NN 4_CD fold_VB changes_NNS were_VBD identified_VBN with_IN ADGE_NNP microarray_NN ,_,
+        compared_VBN to_TO only_RB one_CD such_JJ gene_NN with_IN regular_JJ microarray_NN
+        (_( Fig_NNP ._. 3_LS D_NNP )_) ._. Therefore_RB ,_, a_DT more_RBR informative_JJ gene_NN profile_NN was_VBD
+        revealed_VBN with_IN ADGE_NNP microarray_NN than_IN with_IN regular_JJ microarray_NN ._.
+        The_DT probability_NN that_IN the_DT ADGE_NNP magnification_NN introduces_VBZ
+        false_JJ positives_NNS is_VBZ low_JJ ._. The_DT HL_NNP 60_CD vs_NNS HL_NNP 60_CD self-hybridization_JJ
+        showed_VBD that_IN the_DT relationship_NN of_IN Cy_NNP 3_CD (_( y_NN )_) and_CC Cy_NNP 5_CD (_( x_SYM )_) is_VBZ y_NN =_SYM
+        1_CD ._. 02_CD x_SYM -_: 0_CD ._. 21_CD with_IN R_NN 2_CD =_SYM 0_CD ._. 92_CD ;_: none_NN of_IN the_DT 10_CD ,_, 000_CD genes_NNS was_VBD
+        detected_VBN at_IN ≥_NN 4_CD fold_VB change_NN with_IN confidence_NN level_NN ≥_NN 99_CD %_NN
+        (_( Fig_NNP ._. 3_LS C_NNP )_) ._. Eleven_CD of_IN thirteen_NN genes_NNS have_VBP consistent_JJ results_NNS
+        between_IN ADGE_NNP microarray_NN and_CC quantitative_JJ RT-PCR_NNP ._. The_DT other_JJ
+        two_CD genes_NNS were_VBD detected_VBN unchanged_JJ with_IN RT-PCR_NNP (_( Table_NNP
+        2_LS )_) ._.
+        Experimental_NNP artifacts_NNS in_IN microarray_NN data_NNS are_VBP
+        intensity-dependent_JJ and_CC tend_VBP to_TO occur_VB primarily_RB for_IN weak_JJ
+        spots_NNS [_NN 16_CD ]_NN ._. The_DT nucleporin_NN 88_CD kD_NN (_( AA_NN 488609_CD )_) with_IN the_DT
+        largest_JJS standard_JJ deviation_NN in_IN the_DT Table_NNP 2_CD had_VBD weak_JJ signal_NN ._.
+        Exponential_NNP amplification_NN of_IN DNA_NNP templates_NNS and_CC double_JJ
+        strand_NN labeling_VBG in_IN ADGE_NNP microarray_NN dramatically_RB enhances_VBZ
+        the_DT signal_NN intensity_NN of_IN spots_NNS ._. Combined_VBN with_IN magnified_VBN
+        ratios_NNS ,_, the_DT enhanced_JJ signal_NN intensities_NNS improve_VBP the_DT data_NNS
+        quality_NN and_CC detection_NN fidelity_NN in_IN ADGE_NNP microarray_NN ._. More_JJR
+        genes_NNS have_VBP low_JJ variances_NNS in_IN both_DT Cy_NNP 3_CD and_CC Cy_NNP 5_CD channels_NNS and_CC
+        high_JJ confidence_NN levels_NNS in_IN ADGE_NNP microarray_NN than_IN in_IN regular_JJ
+        microarray_NN (_( Fig_NNP ._. 4_LS )_) ._. The_DT similarity_NN and_CC reproducibility_NN of_IN
+        results_NNS between_IN duplicate_VB spots_NNS also_RB suggests_VBZ the_DT
+        improvement_NN of_IN detection_NN fidelity_NN (_( Table_NNP 1_LS )_) ._.
+        The_DT sensitive_JJ and_CC accurate_JJ method_NN of_IN ADGE_NNP microarray_NN
+        provides_VBZ a_DT novel_NN tool_NN to_TO reveal_VB informative_JJ gene_NN profiles_NNS ._.
+        12_CD of_IN the_DT 93_CD differential_NN genes_NNS were_VBD clustered_VBN in_IN cell_NN
+        proliferation_NN and_CC kinase_NN pathways_NNS ._. Expression_NNP changes_NNS of_IN
+        genes_NNS related_VBN to_TO regulation_NN of_IN cell_NN proliferation_NN may_MD be_VB
+        directly_RB pertinent_JJ to_TO the_DT resistant_JJ phenotype_NN or_CC may_MD be_VB a_DT
+        consequence_NN of_IN cell_NN growth_NN under_IN drug_NN stressed_VBD conditions_NNS ._.
+        Adaptive_NNP changes_NNS in_IN kinase_NN expression_NN have_VBP been_VBN
+        characterized_VBN in_IN a_DT variety_NN of_IN drug_NN resistant_JJ cells_NNS ._. For_IN
+        example_NN ,_, the_DT stress_NN kinase_NN JNK_NNP 1_CD was_VBD activated_VBN during_IN TLK_NNP 286_CD
+        induced_VBN apoptosis_NNS [_NN 17_CD ]_NN and_CC JNK_NNP is_VBZ known_VBN to_TO be_VB activated_VBN
+        during_IN apoptosis_NNS induced_VBN by_IN a_DT variety_NN of_IN stress_NN stimuli_NNS [_NN
+        18_CD ]_NN ._. However_RB ,_, in_IN HL_NNP 60_CD /_NN TLK_NNP 286_CD resistant_JJ cells_NNS ,_, we_PRP observed_VBD
+        an_DT overexpression_NN of_IN two_CD phosphatases_NNS 
+        PP_NNP 2_CD (_( AA_NN 599092_CD )_) and_CC 
+        MKP_NNP 5_CD (_( AA_NN 056608_CD )_) involved_VBN in_IN JNK_NNP
+        dephosphorylation_NN and_CC inactivation_NN (_( Table_NNP 2_LS )_) ._. PP_NNP 2_CD is_VBZ a_DT
+        serine_NN /_NN threonine_NN phosphatase_NN which_WDT dephosphorylates_NNS JNK_NNP
+        during_IN inflammatory_JJ cell_NN signaling_VBG [_NN 19_CD ]_NN ,_, while_IN MKP_NNP 5_CD is_VBZ a_DT
+        member_NN of_IN the_DT dual_JJ specificity_NN phosphatase_NN family_NN which_WDT
+        selectively_RB dephosphorylates_NNS stress_VBP activated_VBN MAP_NNP kinases_NNS
+        including_VBG JNK_NNP [_NN 20_CD ]_NN ._. The_DT overexpression_NN of_IN these_DT two_CD
+        phosphatases_NNS might_MD contribute_VB in_IN part_NN to_TO the_DT resistance_NN of_IN
+        HL_NNP 60_CD /_NN TLK_NNP 286_CD by_IN impairing_VBG the_DT activity_NN of_IN JNK_NNP ._. Kinase_NNP
+        pathways_NNS ,_, particularly_RB those_DT involving_VBG ERK_NNP and_CC JNK_NNP ,_, are_VBP
+        suggested_VBN to_TO have_VB prominent_JJ roles_NNS in_IN regulation_NN of_IN
+        proliferation_NN pathways_NNS in_IN a_DT variety_NN of_IN cell_NN lines_NNS [_NN 11_CD 12_CD
+        13_CD ]_NN ._. Reduced_NNP expression_NN of_IN 
+        GSTP_NNP 1_CD -_: 1_CD in_IN the_DT resistant_JJ cells_NNS
+        provides_VBZ a_DT plausible_JJ link_NN with_IN the_DT JNK_NNP and_CC ERK_NNP regulation_NN
+        pathways_NNS in_IN the_DT resistant_JJ cells_NNS ._. Although_IN the_DT interaction_NN
+        among_IN 
+        GSTP_NNP 1_CD -_: 1_CD and_CC genes_NNS of_IN proliferation_NN
+        and_CC kinase_NN pathways_NNS needs_VBZ to_TO be_VB verified_VBN and_CC the_DT roles_NNS of_IN
+        other_JJ differential_NN genes_NNS in_IN the_DT TLK_NNP 286_CD resistant_JJ cell_NN line_NN
+        need_VBP further_JJ investigation_NN ,_, the_DT expression_NN pattern_NN
+        generated_VBN with_IN ADGE_NNP microarray_NN provides_VBZ a_DT blueprint_NN for_IN
+        designing_VBG further_JJ experiments_NNS ._.
+      
+      
+        Conclusions_NNP
+        ADGE_NNP microarray_NN is_VBZ the_DT combination_NN of_IN ADGE_NNP technique_NN and_CC
+        DNA_NNP microarray_NN ._. It_PRP magnified_VBD the_DT ratios_NNS of_IN differential_NN
+        gene_NN expression_NN in_IN power_NN function_NN ,_, improved_VBN detection_NN
+        sensitivity_NN and_CC fidelity_NN and_CC reduced_VBD the_DT requirement_NN for_IN
+        starting_VBG material_NN while_IN maintaining_VBG high_JJ throughput_NN ._. ADGE_NNP
+        microarray_NN generated_VBD a_DT more_RBR informative_JJ expression_NN pattern_NN
+        than_IN regular_JJ microarray_NN ._.
+      
+      
+        Methods_NNP
+        
+          Cell_NNP lines_NNS
+          The_DT HL_NNP 60_CD /_NN TLK_NNP 286_CD cell_NN line_NN is_VBZ resistant_JJ to_TO the_DT prodrug_NN
+          TLK_NNP 286_CD and_CC derived_VBN from_IN the_DT wild-type_JJ HL_NNP 60_CD by_IN stepwise_NN
+          selection_NN ._. Both_DT HL_NNP 60_CD /_NN TLK_NNP 286_CD and_CC HL_NNP 60_CD cell_NN lines_NNS were_VBD
+          cultured_JJ in_IN RPMI-_NNP 1640_CD medium_NN supplemented_JJ with_IN 2_CD mM_NN
+          L-_NNP glutamine_NN ,_, 50_CD U_NNP /_NN ml_NN penicillin_NN ,_, 50_CD μg_NN /_NN ml_NN streptomycin_NN
+          and_CC 10_CD %_NN heat-inactivated_JJ fetal_JJ bovine_JJ serum_NN ._. Cells_NNP were_VBD
+          maintained_VBN in_IN a_DT humidified_JJ atmosphere_NN of_IN 5_CD %_NN CO_NNP 
+          2_CD at_IN 37_CD °_NN C_NNP ._.
+        
+        
+          Adapters_NNP and_CC primers_NNS
+          The_DT sequences_NNS of_IN the_DT adapters_NNS and_CC primers_NNS were_VBD
+          modified_VBN from_IN reference_NN [_NN 6_CD ]_NN for_IN better_JJR priming_VBG
+          efficiency_NN ._.
+          CT_NNP adapter_NN :_: AAC_NNP TGC_NNP AGG_NNP AGG_NNP GAC_NNP AGT_NNP TGA_NNP AGG_NNP AGG_NNP CA_NNP CC_NNP
+          TCC_NNP GTG_NNP C_NNP
+          TT_NNP adapter_NN :_: AAC_NNP TCA_NNP GAG_NNP GTG_NNP AGA_NNP CAG_NNP GAG_NNP TGG_NNP AGG_NNP CA_NNP CC_NNP
+          TCC_NNP GTG_NNP C_NNP
+          CT_NNP primer_NN :_: GCA_NNP GGA_NNP GGG_NNP ACA_NNP GTT_NNP GAA_NNP GGA_NNP G_NNP
+          TT_NNP primer_NN :_: CAG_NNP AGG_NNP TGA_NNP GAC_NNP AGG_NNP AGT_NNP GGA_NNP G_NNP
+        
+        
+          Verification_NNP of_IN ratio_NN magnification_NN
+          In_IN order_NN to_TO verify_VB the_DT ratio_NN magnification_NN for_IN ADGE_NNP
+          and_CC to_TO build_VB a_DT relationship_NN between_IN input_NN and_CC detected_VBD
+          ratios_NNS ,_, a_DT contiguous_JJ area_NN of_IN twelve_CD spots_NNS (_( 3_CD ×_NN 4_LS )_) on_IN the_DT
+          microarray_NN chip_NN was_VBD selected_VBN ._. The_DT corresponding_JJ clones_NNS
+          were_VBD amplified_VBN by_IN using_VBG PCR_NNP with_IN the_DT primers_NNS having_VBG a_DT 
+          Taq_NNP I_PRP site_NN at_IN the_DT end_NN ._. The_DT PCR_NNP
+          products_NNS were_VBD then_RB purified_JJ and_CC cut_VB with_IN 
+          Taq_NNP I_PRP at_IN 65_CD °_NN C_NNP for_IN 2_CD hr_NN ._. The_DT same_JJ
+          amount_NN of_IN 
+          Taq_NNP I_PRP fragments_VBZ for_IN each_DT clone_NN was_VBD
+          ligated_JJ to_TO the_DT CT_NNP and_CC TT_NNP adapters_NNS at_IN 16_CD °_NN C_NNP overnight_JJ ._. The_DT
+          CT_NNP and_CC TT_NNP adapter-linked_JJ DNA_NNP fragments_NNS were_VBD mixed_JJ in_IN
+          ratios_NNS of_IN 1_CD :_: 1_CD for_IN the_DT three_CD clones_NNS of_IN the_DT first_JJ column_NN ,_,
+          1_CD :_: 2_CD and_CC 1_CD :_: 6_CD for_IN the_DT clones_NNS of_IN the_DT second_JJ column_NN ,_, 1_CD :_: 3_CD and_CC
+          1_CD :_: 10_CD for_IN the_DT clones_NNS of_IN the_DT third_JJ column_NN ,_, 1_CD :_: 4_CD and_CC 1_CD :_: 20_CD for_IN
+          the_DT clones_NNS of_IN the_DT fourth_JJ column_NN (_( see_VB clone_NN arrangement_NN in_IN
+          Fig_NNP ._. 1_LS )_) ._. Reverse_VBP ratios_NNS were_VBD also_RB made_VBN for_IN all_DT except_IN
+          1_CD :_: 1_CD ._. A_DT fraction_NN of_IN each_DT mixture_NN was_VBD reassociated_JJ by_IN
+          denaturing_VBG at_IN 95_CD °_NN C_NNP for_IN 5_CD min_NN and_CC annealing_VBG at_IN 68_CD °_NN C_NNP for_IN 20_CD
+          hr_NN ._. Due_JJ to_TO high_JJ concentration_NN of_IN templates_NNS and_CC
+          possibility_NN of_IN effects_NNS of_IN template_NN abundance_NN ,_, the_DT
+          reassociated_JJ DNA_NNP was_VBD diluted_VBN 1000_CD or_CC 100_CD ,_, 000_CD times_NNS ,_, then_RB
+          amplified_VBN using_VBG PCR_NNP with_IN the_DT CT_NNP or_CC TT_NNP primers_NNS ._. A_DT PCR_NNP
+          reaction_NN was_VBD set_VBN up_RP with_IN 1_CD μl_NN of_IN the_DT reassociated_JJ DNA_NNP ,_, 5_CD
+          μl_NN of_IN 10_CD x_SYM Clontech_NNP PCR_NNP buffer_NN ,_, 1_CD μl_NN of_IN 10_CD mM_NN dNTPS_NN ,_, 2_CD μl_NN
+          of_IN 10_CD μM_NN CT_NNP primer_NN or_CC TT_NNP primer_NN ,_, 1_CD μl_NN of_IN Clontech_NNP cDNA_NN
+          polymerase_NN and_CC 40_CD μl_NN of_IN ddH_NN 
+          2_CD O_NNP ._. The_DT reaction_NN cycling_NN conditions_NNS
+          were_VBD 72_CD °_NN C_NNP for_IN 5_CD min_NN (_( for_IN filling_VBG in_IN the_DT adapter_NN ends_VBZ )_) ,_,
+          94_CD °_NN C_NNP for_IN 1_CD min_NN ,_, then_RB 15_CD or_CC 20_CD cycles_NNS of_IN 94_CD °_NN C_NNP for_IN 30_CD s_VBZ ,_,
+          66_CD °_NN C_NNP for_IN 30_CD s_VBZ ,_, 72_CD °_NN C_NNP for_IN 90_CD s_VBZ ,_, then_RB 72_CD °_NN C_NNP for_IN a_DT final_JJ
+          extension_NN ._. The_DT PCR_NNP products_NNS were_VBD purified_JJ with_IN Qiagen_NNP PCR_NNP
+          Purification_NNP Kit_NNP (_( Qiagen_NNP ,_, Valencia_NNP ,_, CA_NNP )_) and_CC eluted_JJ into_IN
+          42_CD μl_NN of_IN ddH_NN 
+          2_CD O_NNP ,_, which_WDT was_VBD used_VBN for_IN indirect_JJ
+          labeling_VBG with_IN PCR_NNP ._. The_DT PCR_NNP labeling_VBG reaction_NN was_VBD set_VBN up_RP
+          with_IN 42_CD μl_NN of_IN DNA_NNP templates_NNS ,_, 5_CD μl_NN of_IN 10_CD x_SYM Clontech_NNP PCR_NNP
+          buffer_NN ,_, 1_CD μl_NN of_IN 10_CD mM_NN dNTPS_NN containing_VBG 8_CD mM_NN
+          aminoallyl-d_JJ UTP_NNP and_CC 2_CD mM_NN dTTP_NN ,_, 1_CD μl_NN of_IN 10_CD μM_NN CT_NNP primer_NN or_CC
+          TT_NNP primer_NN and_CC 1_CD μl_NN of_IN Clontech_NNP cDNA_NN polymerase_NN ._. The_DT
+          reaction_NN cycling_NN conditions_NNS were_VBD 94_CD °_NN C_NNP for_IN 1_CD min_NN ,_, then_RB 3_CD
+          cycles_NNS of_IN 94_CD °_NN C_NNP for_IN 30_CD s_VBZ ,_, 64_CD °_NN C_NNP for_IN 30_CD s_VBZ ,_, 72_CD °_NN C_NNP for_IN 90_CD s_VBZ ,_,
+          then_RB 72_CD °_NN C_NNP for_IN a_DT final_JJ extension_NN ._. The_DT PCR_NNP product_NN was_VBD
+          ethanol-precipitated_JJ ,_, resuspended_JJ in_IN 5_CD μl_NN 2_CD x_SYM coupling_NN
+          buffer_NN ,_, then_RB coupled_VBN with_IN 5_CD μl_NN of_IN Cy_NNP 3_CD or_CC Cy_NNP 5_CD dye_NN
+          (_( Amersham_NNP Pharmacia_NNP ,_, Piscataway_NNP ,_, NJ_NNP )_) for_IN 1_CD hr_NN in_IN the_DT
+          dark_NN ._. The_DT labeled_VBN DNA_NNP was_VBD mixed_VBN with_IN 50_CD μl_NN of_IN 100_CD mM_NN
+          sodium_NN acetate_NN (_( pH_NN 5_CD ._. 2_LS )_) ,_, purified_JJ with_IN Qiagen_NNP PCR_NNP
+          Purification_NNP Kit_NNP ,_, reduced_VBN to_TO a_DT final_JJ volume_NN of_IN 7_CD ._. 5_CD μl_NN
+          with_IN a_DT speed_NN vac_NN ,_, mixed_VBN with_IN 3_CD ._. 75_CD μl_NN of_IN 20_CD x_SYM SSC_NNP ,_, 0_CD ._. 75_CD μl_NN
+          of_IN 10_CD %_NN SDS_NNP ,_, 1_CD ._. 5_CD μl_NN of_IN 1_CD μg_NN /_NN μl_NN salmon_NN DNA_NNP and_CC 1_CD ._. 5_CD μl_NN of_IN
+          50_CD x_SYM Denhardt_NNP 's_POS solution_NN ,_, denatured_JJ at_IN 95_CD °_NN C_NNP for_IN 5_CD min_NN ,_,
+          cooled_VBN on_IN ice_NN and_CC incubated_JJ at_IN 42_CD °_NN C_NNP for_IN 15_CD min_NN ._. The_DT
+          denatured_JJ Cy_NNP 3_CD and_CC Cy_NNP 5_CD DNA_NNP were_VBD mixed_JJ and_CC loaded_VBN onto_IN the_DT
+          area_NN of_IN the_DT twelve_CD selected_VBN spots_NNS on_IN the_DT microarray_NN chip_NN ._.
+          The_DT hybridization_NN and_CC washing_VBG conditions_NNS were_VBD the_DT same_JJ as_IN
+          for_IN regular_JJ microarray_NN ._.
+          As_IN a_DT control_NN ,_, another_DT fraction_NN of_IN the_DT mixture_NN of_IN each_DT
+          ratio_NN from_IN 1_CD to_TO 4_CD directly_RB proceeded_VBD to_TO the_DT PCR_NNP indirect_JJ
+          labeling_VBG without_IN DNA_NNP reassociation_NN ._. The_DT conditions_NNS for_IN
+          chip_NN hybridization_NN and_CC washing_VBG were_VBD the_DT same_JJ as_IN above_IN ._.
+          Four_CD replicates_NNS were_VBD performed_VBN for_IN both_DT the_DT control_NN and_CC
+          the_DT combination_NN of_IN ADGE_NNP and_CC microarray_NN ._.
+        
+        
+          Regular_JJ DNA_NNP microarray_NN
+          Total_NNP RNA_NNP was_VBD isolated_VBN from_IN both_DT HL_NNP 60_CD and_CC HL_NNP 60_CD /_NN TLK_NNP 286_CD
+          cell_NN lines_NNS with_IN a_DT Qiagen_NNP RNeasy_NNP Midi_NNP Kit_NNP ._. Regular_JJ
+          microarray_NN was_VBD carried_VBN out_IN following_VBG the_DT manufacturer_NN 's_POS
+          instructions_NNS for_IN the_DT FairPlay_NNP ™_NN microarray_NN labeling_VBG kit_NN
+          (_( Stratagene_NNP ,_, La_NNP Jolla_NNP ,_, CA_NNP )_) ._. Briefly_NNP ,_, twenty_CD μg_NN of_IN total_JJ
+          RNA_NNP from_IN HL_NNP 60_CD or_CC HL_NNP 60_CD /_NN TLK_NNP 286_CD cells_NNS was_VBD
+          reverse-transcribed_JJ into_IN single_JJ stranded_VBN cDNA_NN ._. The_DT cDNA_NN
+          was_VBD purified_JJ with_IN ethanol_NN precipitation_NN and_CC resuspended_JJ
+          in_IN 5_CD μl_NN of_IN 2_CD x_SYM coupling_NN buffer_NN ,_, then_RB coupled_VBN with_IN 5_CD μl_NN of_IN
+          Cy_NNP 3_CD or_CC Cy_NNP 5_CD dye_NN for_IN 1_CD hr_NN in_IN the_DT dark_NN ._. The_DT labeled_VBN HL_NNP 60_CD
+          cDNA_NN and_CC HL_NNP 60_CD /_NN TLK_NNP 286_CD cDNA_NN were_VBD combined_VBN and_CC purified_JJ ._. The_DT
+          labeled_VBN cDNA_NN was_VBD mixed_VBN with_IN 1_CD ._. 5_CD μl_NN of_IN 10_CD μg_NN /_NN μl_NN Cot-_NNP 1_CD DNA_NNP ,_,
+          1_CD ._. 5_CD μl_NN of_IN 8_CD μg_NN /_NN μl_NN poly_RB d_SYM (_( A_DT )_) ,_, 1_CD ._. 5_CD μl_NN of_IN 4_CD μg_NN /_NN μl_NN yeast_NN
+          tRNA_NN ,_, 4_CD ._. 5_CD μl_NN of_IN 20_CD x_SYM SSC_NNP and_CC 0_CD ._. 75_CD μl_NN of_IN 10_CD %_NN SDS_NNP ,_, heated_JJ at_IN
+          99_CD °_NN C_NNP for_IN 2_CD minutes_NNS ,_, and_CC then_RB incubated_JJ at_IN 45_CD °_NN C_NNP for_IN 15_CD
+          minutes_NNS ._. The_DT labeled_VBN DNA_NNP was_VBD loaded_VBN onto_IN a_DT microarray_NN
+          chip_NN ._. A_DT hybridization_NN chamber_NN was_VBD assembled_VBN with_IN the_DT
+          microarray_NN chip_NN and_CC submerged_JJ in_IN a_DT water_NN bath_NN at_IN 60_CD °_NN C_NNP
+          overnight_JJ ._. The_DT microarray_NN chip_NN was_VBD washed_VBN in_IN wash_NN buffer_NN
+          I_PRP (_( 2_CD x_SYM SSC_NNP ,_, 0_CD ._. 1_CD %_NN SDS_NNP )_) for_IN 5_CD minutes_NNS ,_, then_RB in_IN wash_NN buffer_NN
+          II_NNP (_( 1_CD x_SYM SSC_NNP )_) for_IN 5_CD minutes_NNS and_CC wash_VB buffer_NN III_NNP (_( 0_CD ._. 2_LS x_SYM SSC_NNP )_)
+          for_IN 5_CD minutes_NNS ._. The_DT slide_NN was_VBD dried_VBN by_IN centrifuging_VBG at_IN 650_CD
+          rpm_NN for_IN 5_CD minutes_NNS and_CC scanned_JJ with_IN Affymetrix_NNP 428_CD Array_NNP
+          Scanner_NNP using_VBG the_DT Cy_NNP 3_CD and_CC Cy_NNP 5_CD channels_NNS ._. Three_CD replicates_NNS
+          were_VBD performed_VBN on_IN the_DT first_JJ set_NN of_IN human_JJ microarray_NN chips_NNS
+          containing_VBG 10_CD ,_, 368_CD genes_NNS each_DT made_VBN at_IN the_DT Fox_NNP Chase_NNP Cancer_NNP
+          Center_NNP Microarray_NNP Facility_NNP ._.
+        
+        
+          ADGE_NNP microarray_NN
+          The_DT protocol_NN of_IN ADGE_NNP microarray_NN is_VBZ available_JJ on_IN
+          http_NN :_: /_NN /_NN www_NN ._. fccc_NN ._. edu_NN /_NN research_NN /_NN ADGEmicroarray_NNP ._. Briefly_NNP ,_, ten_CD
+          μg_NN of_IN total_JJ RNA_NNP was_VBD reverse-transcribed_JJ into_IN single_JJ
+          stranded_VBN cDNA_NN with_IN oligo_NN (_( dT_NN )_) 
+          12_CD -_: 18_CD ._. Then_RB the_DT double_RB stranded_VBN cDNA_NN
+          for_IN HL_NNP 60_CD and_CC HL_NNP 60_CD /_NN TLK_NNP 286_CD was_VBD generated_VBN with_IN the_DT cDNA_NN
+          Synthesis_NNP System_NNP (_( Life_NNP Technologies_NNPS ,_, Rockville_NNP ,_, MD_NNP )_) ._.
+          After_IN phenol_NN extraction_NN and_CC ethanol_NN precipitation_NN ,_, the_DT
+          cDNA_NN was_VBD resuspended_JJ in_IN 25_CD μl_NN of_IN ddH_NN 
+          2_CD O_NNP ._. Both_DT HL_NNP 60_CD and_CC HL_NNP 60_CD /_NN TLK_NNP 286_CD cDNA_NN
+          were_VBD digested_VBN with_IN 3_CD μl_NN (_( 30_CD units_NNS )_) of_IN the_DT restriction_NN
+          enzyme_NN 
+          Taq_NNP I_PRP in_IN a_DT final_JJ volume_NN of_IN 30_CD μl_NN ._.
+          The_DT 
+          Taq_NNP I_PRP fragments_VBZ of_IN HL_NNP 60_CD cDNA_NN were_VBD
+          ligated_JJ with_IN the_DT CT_NNP adapter_NN at_IN 16_CD °_NN C_NNP overnight_JJ with_IN 3_CD μl_NN
+          (_( 9_CD units_NNS )_) of_IN T_NN 4_CD ligase_NN (_( Promega_NNP ,_, Madison_NNP ,_, WI_NNP )_) while_IN the_DT 
+          Taq_NNP I_PRP fragments_VBZ of_IN HL_NNP 60_CD /_NN TLK_NNP 286_CD cDNA_NN
+          were_VBD ligated_JJ with_IN the_DT TT_NNP adapter_NN ._. Fifteen_CD μl_NN each_DT of_IN the_DT
+          adapterized_JJ HL_NNP 60_CD cDNA_NN and_CC HL_NNP 60_CD /_NN TLK_NNP 286_CD cDNA_NN were_VBD mixed_VBN
+          with_IN 30_CD μl_NN of_IN 2_CD x_SYM HB_NNP buffer_NN in_IN a_DT final_JJ volume_NN of_IN 60_CD μl_NN ,_,
+          denatured_JJ at_IN 95_CD °_NN C_NNP for_IN 5_CD min_NN and_CC annealed_JJ at_IN 68_CD °_NN C_NNP for_IN 20_CD
+          hours_NNS ._. The_DT reassociated_JJ DNA_NNP was_VBD used_VBN as_IN a_DT template_NN for_IN
+          the_DT PCR_NNP direct_JJ labeling_VBG ._. To_TO generate_VB the_DT probe_NN of_IN HL_NNP 60_CD
+          DNA_NNP ,_, a_DT PCR_NNP reaction_NN was_VBD set_VBN up_RP with_IN 0_CD ._. 5_CD μl_NN of_IN the_DT
+          reassociated_JJ DNA_NNP ,_, 5_CD μl_NN of_IN 10_CD x_SYM Clontech_NNP PCR_NNP buffer_NN ,_, 1_CD μl_NN
+          of_IN dNTPS_NN (_( 10_CD mM_NN dATP_NN ,_, dTTP_NN ,_, and_CC dGTP_NN each_DT ,_, 6_CD mM_NN dCTP_NN )_) ,_, 4_CD
+          μl_NN of_IN FluoroLink_NNP Cy_NNP 3_CD -_: dCTP_NN (_( Amersham_NNP Pharmacia_NNP )_) ,_, 4_CD ._. 5_CD μl_NN of_IN
+          10_CD μM_NN CT_NNP primer_NN ,_, 1_CD μl_NN of_IN Clontech_NNP cDNA_NN polymerase_NN and_CC 34_CD
+          μl_NN of_IN ddH_NN 
+          2_CD O_NNP ._. In_IN the_DT PCR_NNP reaction_NN for_IN the_DT probe_NN
+          of_IN HL_NNP 60_CD /_NN TLK_NNP 286_CD DNA_NNP ,_, Cy_NNP 5_CD -_: dCTP_NN and_CC TT_NNP primer_NN were_VBD used_VBN
+          instead_RB of_IN Cy_NNP 3_CD -_: dCTP_NN and_CC CT_NNP primer_NN ._. The_DT reaction_NN cycling_NN
+          conditions_NNS were_VBD 72_CD °_NN C_NNP for_IN 5_CD min_NN (_( for_IN filling_VBG in_IN the_DT
+          adapter_NN ends_VBZ )_) ,_, 94_CD °_NN C_NNP for_IN 1_CD min_NN ,_, then_RB 30_CD cycles_NNS of_IN 94_CD °_NN C_NNP for_IN
+          30_CD s_VBZ ,_, 62_CD °_NN C_NNP for_IN 30_CD s_VBZ ,_, 72_CD °_NN C_NNP for_IN 60_CD s_VBZ ,_, then_RB 72_CD °_NN C_NNP for_IN a_DT final_JJ
+          extension_NN ._. Three_CD PCR_NNP reactions_NNS were_VBD set_VBN up_RP for_IN each_DT
+          probe_NN ._. The_DT Cy_NNP 3_CD (_( HL_NNP 60_CD )_) and_CC Cy_NNP 5_CD (_( HL_NNP 60_CD /_NN TLK_NNP 286_CD )_) PCR_NNP products_NNS
+          were_VBD purified_JJ with_IN Qiagen_NNP PCR_NNP purification_NN kit_NN ,_, reduced_VBN
+          to_TO a_DT final_JJ volume_NN of_IN 7_CD ._. 5_CD μl_NN with_IN a_DT speed_NN vac_NN ,_, mixed_VBN with_IN
+          3_CD ._. 75_CD μl_NN of_IN 20_CD x_SYM SSC_NNP ,_, 0_CD ._. 75_CD μl_NN of_IN 10_CD %_NN SDS_NNP ,_, 1_CD ._. 5_CD μl_NN of_IN 1_CD μg_NN /_NN μl_NN
+          salmon_NN DNA_NNP and_CC 1_CD ._. 5_CD μl_NN of_IN 50_CD x_SYM Denhardt_NNP 's_POS solution_NN ,_,
+          denatured_JJ at_IN 95_CD °_NN C_NNP for_IN 5_CD min_NN ,_, cooled_VBN on_IN ice_NN and_CC incubated_JJ
+          at_IN 42_CD °_NN C_NNP for_IN 15_CD min_NN ._. The_DT denatured_JJ Cy_NNP 3_CD (_( HL_NNP 60_CD )_) and_CC Cy_NNP 5_CD
+          (_( HL_NNP 60_CD /_NN TLK_NNP 286_CD )_) DNA_NNP were_VBD mixed_JJ and_CC loaded_VBN onto_IN a_DT microarray_NN
+          chip_NN ._. The_DT hybridization_NN and_CC washing_VBG conditions_NNS were_VBD the_DT
+          same_JJ as_IN for_IN regular_JJ microarray_NN ._. Three_CD replicates_NNS were_VBD
+          performed_VBN on_IN the_DT first_JJ and_CC second_JJ sets_NNS of_IN human_JJ
+          microarray_NN chips_NNS containing_VBG 10_CD ,_, 368_CD genes_NNS each_DT ._.
+        
+        
+          RT-PCR_NNP
+          Quantitative_NNP RT-PCR_NNP was_VBD used_VBN to_TO verify_VB the_DT results_NNS of_IN
+          ADGE_NNP microarray_NN ._. Primers_NNP for_IN RT-PCR_NNP were_VBD designed_VBN with_IN
+          Software_NNP OLIGO_NNP 4_CD ._. 0_CD based_VBN upon_IN the_DT sequences_NNS of_IN the_DT genes_NNS
+          corresponding_JJ to_TO the_DT identified_VBN spots_NNS on_IN the_DT chip_NN ._. The_DT
+          total_JJ RNA_NNP samples_NNS of_IN HL_NNP 60_CD and_CC HL_NNP 60_CD /_NN TLK_NNP 286_CD were_VBD
+          reverse-transcribed_JJ with_IN Superscript_NNP II_NNP reverse_VB
+          transcriptase_NN ._. The_DT cDNA_NN templates_NNS of_IN the_DT two_CD samples_NNS were_VBD
+          normalized_JJ with_IN beta-actin_JJ ._. Three_CD levels_NNS of_IN dilution_NN were_VBD
+          made_VBN for_IN templates_NNS ._. For_IN each_DT gene_NN ,_, specific_JJ PCR_NNP cycle_NN
+          conditions_NNS were_VBD selected_VBN to_TO optimize_NN the_DT levels_NNS of_IN
+          differential_NN expression_NN ._. The_DT bands_NNS of_IN PCR_NNP products_NNS were_VBD
+          quantified_VBN with_IN NIH_NNP Image_NN 1_CD ._. 62_CD and_CC ratios_NNS were_VBD
+          calculated_VBN ._.
+        
+        
+          Analysis_NNP of_IN microarray_NN data_NNS
+          The_DT spots_NNS from_IN the_DT microarray_NN images_NNS were_VBD quantified_VBN
+          with_IN ImaGene_NNP 4_CD ._. 1_LS (_( Biodiscovery_NNP ,_, Los_NNP Angeles_NNP ,_, CA_NNP )_) ._. The_DT Cy_NNP 3_CD
+          and_CC Cy_NNP 5_CD data_NNS were_VBD integrated_VBN into_IN a_DT data_NNS set_VBN and_CC
+          transformed_VBN with_IN GeneSight_NNP 3_CD ._. 0_CD (_( Biodiscovery_NNP )_) by_IN using_VBG
+          local_JJ background_NN correction_NN and_CC logarithm_NN of_IN base_NN 2_CD for_IN
+          the_DT verification_NN experiment_NN of_IN ratio_NN magnification_NN ._. The_DT
+          following_VBG sequence_NN was_VBD used_VBN for_IN regular_JJ and_CC ADGE_NNP
+          microarray_NN :_: local_JJ background_NN correction_NN ,_, removal_NN of_IN
+          flagged_JJ spots_NNS ,_, logarithm_NN of_IN base_NN 2_CD ,_, ratio_NN calculation_NN and_CC
+          linear_JJ regression_NN normalization_NN ._. The_DT transformed_VBN data_NN
+          were_VBD exported_VBN into_IN Microsoft_NNP Excel_NNP ._. The_DT three_CD replicates_NNS
+          were_VBD combined_VBN and_CC MA_NNP plots_NNS were_VBD constructed_VBN [_NN 21_CD 22_CD ]_NN ._. M_NNP
+          =_SYM log_VB 
+          2_CD (_( Cy_NNP 5_CD /_NN Cy_NNP 3_LS )_) =_SYM log_VB 
+          2_CD Cy_NNP 5_CD -_: log_VB 
+          2_CD Cy_NNP 3_CD ;_: A_DT =_SYM log_NN 
+          2_CD (_( (_( Cy_NNP 5_CD *_NN Cy_NNP 3_LS )_) 1_CD /_NN 2_LS )_) =_SYM (_( log_VB 
+          2_CD Cy_NNP 5_CD +_NN log_NN 
+          2_CD Cy_NNP 3_LS )_) /_NN 2_CD ._. A_DT represents_VBZ the_DT intensity_NN
+          of_IN a_DT spot_NN ._. M_NNP represents_VBZ the_DT ratios_NNS in_IN the_DT power_NN of_IN 2_CD ,_,
+          with_IN positive_JJ values_NNS for_IN up-regulated_JJ genes_NNS (_( Cy_NNP 5_CD /_NN Cy_NNP 3_LS )_) ,_,
+          negative_JJ values_NNS for_IN down-regulated_JJ genes_NNS (_( Cy_NNP 3_CD /_NN Cy_NNP 5_LS )_) ,_, zero_CD
+          for_IN unchanged_JJ genes_NNS ._. In_IN addition_NN ,_, variances_NNS of_IN Cy_NNP 3_CD and_CC
+          Cy_NNP 5_CD and_CC the_DT p-values_JJ of_IN t_NN test_NN were_VBD calculated_VBN for_IN each_DT
+          gene_NN ._. Confidence_NN levels_NNS were_VBD calculated_VBN from_IN the_DT
+          p-values_JJ ._. Genes_NNP with_IN significantly_RB altered_VBN expression_NN
+          were_VBD selected_VBN based_VBN on_IN a_DT threshold_NN of_IN ratios_NNS and_CC
+          confidence_NN level_NN ._.
+        
+      
+      
+        Authors_NNP '_'' contributions_NNS
+        ZJC_NNP participated_VBD in_IN the_DT design_NN of_IN the_DT study_NN ,_, carried_VBD out_IN
+        major_JJ experiments_NNS ,_, performed_VBD the_DT data_NNS analysis_NN and_CC drafted_VBD
+        the_DT manuscript_NN ._. LG_NNP participated_VBD in_IN the_DT design_NN of_IN the_DT study_NN
+        and_CC carried_VBD out_IN part_NN of_IN the_DT experiments_NNS ._. WD_NNP participated_VBD in_IN
+        the_DT design_NN of_IN the_DT study_NN ._. KEI_NNP carried_VBD out_IN part_NN of_IN the_DT
+        experiments_NNS ._. KDT_NNP participated_VBD in_IN the_DT design_NN of_IN the_DT study_NN
+        and_CC coordination_NN ._. All_DT authors_NNS read_VBP and_CC approved_VBD the_DT final_JJ
+        manuscript_NN ._.
+      
+    
+  
