@@ -41,9 +41,9 @@
 
     "prebuild":      "npm run cleanup && npm run abbreviations && npm run diss-version",
     "build":         "npm run compile && npm run bib && npm run compile",
-    "postbuild":     "npm run copy-pdf && npm run cleanup && open-cli dissertation.pdf",
+    "postbuild":     "npm run copy-pdf && open-cli dissertation.pdf",
 
-    "preversion":    "npm run log-start && npm run build && npm run log-end && npm run archive"
+    "preversion":    "npm run log-start && npm run build && npm run log-end && npm run archive && npm run cleanup"
 
   },
   "devDependencies": {
