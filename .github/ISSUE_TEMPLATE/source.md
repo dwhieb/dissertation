@@ -5,13 +5,9 @@ title:     ''
 labels:    bibliography
 assignees: ''
 ---
-## Citation
 <!-- Full citation for this item -->
 
-## Format
-- [ ] Kindle
-- [ ] PDF
-- [ ] physical
+**Format:** PDF | Kindle | physical
 
 ## Tasks
 - [ ] read
