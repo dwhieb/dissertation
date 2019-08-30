@@ -17,6 +17,8 @@ const whiteList = [
   `**/*.bbx`,
   `**/*.bib`,
   `**/*.cbx`,
+  `**/*.json`,
+  `**/*.md`,
   `**/*.pdf`,
   `**/*.sty`,
   `**/*.tex`,
