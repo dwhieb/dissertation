@@ -25,7 +25,7 @@ async function copyFiles() {
     await copy(distFilePath, path.join(rootDir, `dissertation.pdf`));
 
     // Copy latest dist to versioned PDF
-    await copy(distFilePath, path.join(rootDir, `archive/v${meta.version}.pdf`));
+    await copy(distFilePath, path.join(rootDir, `archive/drafts/v${meta.version}.pdf`));
 
   } catch (e) {
 
