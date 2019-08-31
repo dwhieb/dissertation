@@ -34,7 +34,7 @@ You will need to download Node and npm in order to run most of the scripts in th
 
 In order to run the scripts in this project yourself, or use them with new data, you will need to follow these steps:
 
-1. <dfn>Clone</dfn> this repository (copy it to your local machine). Instructions for cloning a repository may be found [here][cloning].
+1. *Clone* this repository (copy it to your local machine). Instructions for cloning a repository may be found [here][cloning].
 
 1. Install the necessary packages for this project by navigating to the root folder of this project in the command line and running `npm install`.
 
@@ -46,19 +46,7 @@ The MASC data may be downloaded from the [MASC download page][MASC-download] in 
 
 ### Stage 4: Data Preparation
 
-<!--
-
-Some of the necessary steps in coding the data (such as tagging the data for part of speech and lemmatizing the corpus) have already been done by the research team behind the OANC, and those annotations are publicly available. All annotations for the OANC, including part-of-speech tags, are *stand-off* annotations, where each annotation is stored in a separate file from the primary data. Therefore as a first step in data preparation, it is necessary to merge the part-of-speech tags directly into the primary data for ease of scripting and additional data coding.
-
-It is therefore necessary to perform several steps to prepare the MASC data for additional data coding and analysis:
-
-1. [tag the corpus for parts of speech](#tagging-the-corpus)
-1. [lemmatize the corpus](#lemmatizing-the-corpus)
-1. [convert the corpus to JSON format](#converting-the-corpus-to-json)
-
-The following sections detail how to perform each of these steps.
-
-#### Tagging the Corpus
+Some of the necessary steps in coding the data, such as tagging the data for part of speech, have already been undertaken by the research team behind the OANC. These annotations are freely available for download along with the OANC data itself. All annotations for the OANC are *stand-off* annotations, where each annotation is stored in a separate file from the primary data. Therefore as a first step in data preparation, it is necessary to merge the part-of-speech information directly into the primary data for ease of scripting and additional data coding.
 
 The OANC project provides an ANC Tool for this purpose. This tool produces a version of the corpus where each word in a text is followed by an underscore and then the abbreviation for its part of speech according to the Penn tag set. For example, the following sentence:
 
@@ -74,11 +62,15 @@ All_DT hotels_NNS accept_VBP major_JJ credit_NN cards_NNS ._.
 
 More information about the ANC Tool may be found [here][ANC-Tool]. Steps for applying part-of-speech tags to the OANC are as follows:
 
-1. Download the ANC Tool from the [ANC Tool download page][ANC-Tool] and unzip the folder. If you have already cloned this repository, you can skip this step; the ANC Tool will be located in the `scripts/ANC` folder.
+1. Download the ANC Tool from the [ANC Tool download page][ANC-Tool] and unzip the folder. **NOTE:** The MASC data uses a slightly different version of the ANC Tool than the regular OANC. Make sure you download the version designed to work with MASC 3.0 ([download link here][ANC-Tool-download]).
+
+  If you have already cloned this repository, you can skip this step; the ANC Tool will be located in the `scripts/ANC` folder.
 
 1. If you do not have Java installed on your computer, download it from [here][Java] and then install it on your computer.
 
-1. Run the ANC Tool following the instructions on the [ANC Tool page][ANC-Tool]. It is recommended that you run the tool from the command line following the format `java -Xmx500M -jar ANCTool-x.y.z-jar.jar`. See the [ANC Tool page][ANC-Tool] for complete details. If you have `npm` installed on your computer, you can simply run the ANC Tool from the command line with `npm run anc`.
+1. Run the ANC Tool following the instructions on the [ANC Tool page][ANC-Tool]. The MASC version of the ANC Tool must be run from the command line following the format `java -Xmx500M -jar ANCTool-x.y.z-jar.jar`. See the [ANC Tool page][ANC-Tool] for complete details.
+
+  If you have `npm` installed on your computer, you can skip the above step and simply run `npm run anc` from the command line to start the ANC Tool.
 
 1. The first time you run the ANC Tool, it will ask you to specify the location of the folder where you placed the OANC data. Select this folder and click _Accept_.
 
@@ -105,8 +97,6 @@ To convert the OANC to JSON format, I wrote a small JavaScript script called `ta
 The `tags2dlx` package creates a JSON file for each text in the corpus with the same filename as the original text, but with the `.txt` extension replaced by `.json`. This new file is created in the same folder as the original file.
 
 To use the `tags2dlx` package to convert the OANC corpus in this repository to JSON, run `npm run convert-oanc` from the command line. This will take a few minutes. To use the `tags2dlx` package to convert other data sets, or data that lives elsewhere, follow the instructions in the `tags2dlx` readme, located [here][tags2dlx].
-
--->
 
 ### Stage 5: Data Coding
 
@@ -135,14 +125,15 @@ Add copyright and license for each section of this repository
 * <p id=MarcusSantoriniMarcinkiewicz1993>Marcus, Mitchell, Beatrice Santorini & Mary Ann Marcinkiewicz. 1993. Building a large annotated corpus of English: The Penn Treebank. <cite>Computational Linguistics</cite> 19(2). 313–330.<p>
 
 <!-- Links -->
-[ANC-Tool]:      http://www.anc.org/software/anc-tool/
-[cloning]:       https://help.github.com/en/articles/cloning-a-repository
-[Daffodil]:      https://format.digitallinguistics.io/
-[dissertation]:  https://files.danielhieber.com/publications/dissertation.pdf
-[Java]:          https://www.java.com/en/
-[JSON]:          http://json.org/
-[MASC-download]: http://www.anc.org/data/masc/downloads/data-download/
-[OANC]:          http://www.anc.org/
-[Node]:          https://nodejs.org/
-[npm]:           https://www.npmjs.com/
-[tags2dlx]:      https://developer.digitallinguistics.io/tags2dlx/
+[ANC-Tool]:          http://www.anc.org/software/anc-tool/
+[ANC-Tool-download]: http://www.anc.org/tools/ANCTool-3.0.2.zip
+[cloning]:           https://help.github.com/en/articles/cloning-a-repository
+[Daffodil]:          https://format.digitallinguistics.io/
+[dissertation]:      https://files.danielhieber.com/publications/dissertation.pdf
+[Java]:              https://www.java.com/en/
+[JSON]:              http://json.org/
+[MASC-download]:     http://www.anc.org/data/masc/downloads/data-download/
+[OANC]:              http://www.anc.org/
+[Node]:              https://nodejs.org/
+[npm]:               https://www.npmjs.com/
+[tags2dlx]:          https://developer.digitallinguistics.io/tags2dlx/
