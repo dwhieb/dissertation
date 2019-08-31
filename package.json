@@ -25,7 +25,7 @@
   "type": "module",
   "scripts": {
     "abbreviations": "node --experimental-modules --no-warnings scripts/build/abbreviations.js",
-    "anc": "java -Xmx500M -jar scripts/ANC/ANCTool-3.0.2-jar",
+    "anc": "cd scripts/ANC && run.sh && cd ../..",
     "archive": "node --experimental-modules --no-warnings scripts/build/archive.js",
     "bib": "biber src/main",
     "cleanup": "node --experimental-modules --no-warnings scripts/build/cleanup.js",

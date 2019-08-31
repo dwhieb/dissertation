@@ -40,53 +40,53 @@ In order to run the scripts in this project yourself, or use them with new data,
 
 ### Stage 3: Data Collection
 
-The data used for the investigation of English in this study come from the [Open American National Corpus][OANC] (<abbr title='Open American National Corpus'>OANC</abbr>), a 15 million word corpus whose data are entirely open access. This corpus comes with part-of-speech tags from several different tag sets. The OANC also comes with a Manually Annotated Sub-Corpus (<abbr title='Manually Annotated Sub-Corpus'>MASC</abbr>) of approximately 500,000 words whose annotations have been manually produced, and which include tags for lemmas. For this project I have elected to use just the Manually Annotated Sub-Corpus (MASC) of the OANC, and chosen to use the Penn tag set for part-of-speech annotations. More information about the OANC may be found at the [OANC web page][OANC]. More information about the Penn tag set may be found in Marcus, Santorini, & Marcinkiewicz ([1993](#MarcusSantoriniMarcinkiewicz1993)).
+As mentioned above, all the data in this study are publicly available. This section presents the necessary steps for obtaining that data. Note that this repository does not contain the primary data itself, just annotations, statistics, and other accompanying data that is produced from the original data. The primary data itself lives in various places online, described below.
+
+The data used for the investigation of English in this study come from the [Open American National Corpus][OANC] (<abbr title='Open American National Corpus'>OANC</abbr>), a 15 million word corpus whose data are entirely open access. This corpus comes with part-of-speech tags from several different tag sets. The OANC includes a Manually Annotated Sub-Corpus (<abbr title='Manually Annotated Sub-Corpus'>MASC</abbr>) of approximately 500,000 words whose annotations have been manually produced, and which include tags for lemmas. For this project I have elected to use just the Manually Annotated Sub-Corpus (MASC) of the OANC, and chosen to use the Penn tag set for part-of-speech annotations and lemmatization. More information about the OANC may be found at the [OANC web page][OANC]. More information about the Penn tag set may be found in Marcus, Santorini, & Marcinkiewicz ([1993](#MarcusSantoriniMarcinkiewicz1993)).
 
 The MASC data may be downloaded from the [MASC download page][MASC-download] in either `zip` or `tar` formats. You will need to unzip the folder after you have downloaded it.
 
 ### Stage 4: Data Preparation
 
-Some of the necessary steps in coding the data, such as tagging the data for part of speech, have already been undertaken by the research team behind the OANC. These annotations are freely available for download along with the OANC data itself. All annotations for the OANC are *stand-off* annotations, where each annotation is stored in a separate file from the primary data. Therefore as a first step in data preparation, it is necessary to merge the part-of-speech information directly into the primary data for ease of scripting and additional data coding.
+Some types of annotations, such as part-of-speech and lemma information, have already been produced by the research team behind the OANC. These annotations are freely available for download along with the OANC data itself. All annotations for the OANC are *stand-off* annotations, where each annotation is stored in a separate file from the primary data. Therefore as a first step in data preparation, it is necessary to merge the part-of-speech and lemma information directly into the primary data for ease of scripting and additional data coding.
 
-The OANC project provides an ANC Tool for this purpose. This tool produces a version of the corpus where each word in a text is followed by an underscore and then the abbreviation for its part of speech according to the Penn tag set. For example, the following sentence:
+The OANC project provides an ANC Tool for this purpose. This tool provides various ways of generating tagged versions of the OANC corpus. For this project, I chose to generate the corpus in CoNLL format (that used by the Conference on Natural Language Learning). This format represents each text as a tab-delimited text file, so that each word in the corpus is one row whose columns contain information about that word's part of speech and lemma.
 
-```
-All hotels accept major credit cards.
-```
-
-is converted to the following format:
-
-```
-All_DT hotels_NNS accept_VBP major_JJ credit_NN cards_NNS ._.
-```
-
-More information about the ANC Tool may be found [here][ANC-Tool]. Steps for applying part-of-speech tags to the OANC are as follows:
+More information about the ANC Tool may be found [here][ANC-Tool]. Steps for converting the MASC data to CoNLL format with part-of-speech and lemma information are as follows:
 
 1. Download the ANC Tool from the [ANC Tool download page][ANC-Tool] and unzip the folder. **NOTE:** The MASC data uses a slightly different version of the ANC Tool than the regular OANC. Make sure you download the version designed to work with MASC 3.0 ([download link here][ANC-Tool-download]).
 
-  If you have already cloned this repository, you can skip this step; the ANC Tool will be located in the `scripts/ANC` folder.
+  If you have already cloned this repository, you can skip this step; the ANC Tool is located in the `scripts/ANC` folder.
 
 1. If you do not have Java installed on your computer, download it from [here][Java] and then install it on your computer.
 
-1. Run the ANC Tool following the instructions on the [ANC Tool page][ANC-Tool]. The MASC version of the ANC Tool must be run from the command line following the format `java -Xmx500M -jar ANCTool-x.y.z-jar.jar`. See the [ANC Tool page][ANC-Tool] for complete details.
+1. Run the ANC Tool following the instructions on the [ANC Tool page][ANC-Tool]. The MASC version of the ANC Tool must be run from the command line by navigating to the folder where `ANCTool-x.x.x.jar` is located and entering `run.sh` on the command line.
 
-  If you have `npm` installed on your computer, you can skip the above step and simply run `npm run anc` from the command line to start the ANC Tool.
+  If you have `npm` installed on your computer and have cloned this repository, you can skip the above step and simply run `npm run anc` from the command line to start the ANC Tool.
 
-1. The first time you run the ANC Tool, it will ask you to specify the location of the folder where you placed the OANC data. Select this folder and click _Accept_.
+1. The first time you run the ANC Tool, it will ask you to specify the location of a resource header file. Point this to the file `resource-header.xml` located in the root of the MASC data folder you downloaded and click _Accept_.
 
-1. A screen with various settings will appear. Select the following for each setting:
+1. A screen with various settings will appear. Select the following for each setting to apply the part-of-speech tags to the corpus:
+
   - **Input directory:** Select the folder containing the data for the OANC
+
   - **Output directory:** Select the location where you would like the new version of the corpus to be generated
-  - **Input format:** Select _GrAF_
-  - **Encoding (Text):** Select _UTF-8_
+
   - **Copy directory structure:** Check this box (although leaving it unchecked should not affect the results or scripts in this project)
-  - **MonoConc Pro:** Select this tab (this ensures that the corpus will be generated following the format described above)
-  - **POS tags:** Select _Hepple (Penn) tags_ to apply the Penn tag set
-  - **Separator character:** Leave this set to the underscore `_`
+
+  - **CoNLL:** Select this tab
+
+  - **Annotation types:** Select _structural markup_
+
+  - **Token Type:** Select _Penn POS tags_
+
+  - **Sentence Type:** Select _Penn_
 
 1. Click the _Process_ button. This will begin converting the corpus, which will take several minutes.
 
-In this repository, the converted corpus is located in the folder `data/English/OANC/data`.
+In this repository, the converted corpus is located in the folder `data/English/data`.
+
+<!--
 
 #### Converting the Corpus to JSON
 
@@ -97,6 +97,8 @@ To convert the OANC to JSON format, I wrote a small JavaScript script called `ta
 The `tags2dlx` package creates a JSON file for each text in the corpus with the same filename as the original text, but with the `.txt` extension replaced by `.json`. This new file is created in the same folder as the original file.
 
 To use the `tags2dlx` package to convert the OANC corpus in this repository to JSON, run `npm run convert-oanc` from the command line. This will take a few minutes. To use the `tags2dlx` package to convert other data sets, or data that lives elsewhere, follow the instructions in the `tags2dlx` readme, located [here][tags2dlx].
+
+-->
 
 ### Stage 5: Data Coding
 
