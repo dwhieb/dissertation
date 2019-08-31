@@ -56,31 +56,31 @@ More information about the ANC Tool may be found [here][ANC-Tool]. Steps for con
 
 1. Download the ANC Tool from the [ANC Tool download page][ANC-Tool] and unzip the folder. **NOTE:** The MASC data uses a slightly different version of the ANC Tool than the regular OANC. Make sure you download the version designed to work with MASC 3.0 ([download link here][ANC-Tool-download]).
 
-  If you have already cloned this repository, you can skip this step; the ANC Tool is located in the `scripts/ANC` folder.
+    If you have already cloned this repository, you can skip this step; the ANC Tool is located in the `scripts/ANC` folder.
 
 1. If you do not have Java installed on your computer, download it from [here][Java] and then install it on your computer.
 
 1. Run the ANC Tool following the instructions on the [ANC Tool page][ANC-Tool]. The MASC version of the ANC Tool must be run from the command line by navigating to the folder where `ANCTool-x.x.x.jar` is located and entering `run.sh` on the command line.
 
-  If you have `npm` installed on your computer and have cloned this repository, you can skip the above step and simply run `npm run anc` from the command line to start the ANC Tool.
+    If you have `npm` installed on your computer and have cloned this repository, you can skip the above step and simply run `npm run anc` from the command line to start the ANC Tool.
 
 1. The first time you run the ANC Tool, it will ask you to specify the location of a resource header file. Point this to the file `resource-header.xml` located in the root of the MASC data folder you downloaded and click _Accept_.
 
 1. A screen with various settings will appear. Select the following for each setting to apply the part-of-speech tags to the corpus:
 
-  - **Input directory:** Select the folder containing the data for the OANC
+    - **Input directory:** Select the folder containing the data for the OANC
 
-  - **Output directory:** Select the location where you would like the new version of the corpus to be generated
+    - **Output directory:** Select the location where you would like the new version of the corpus to be generated
 
-  - **Copy directory structure:** Check this box (although leaving it unchecked should not affect the results or scripts in this project)
+    - **Copy directory structure:** Check this box (although leaving it unchecked should not affect the results or scripts in this project)
 
-  - **CoNLL:** Select this tab
+    - **CoNLL:** Select this tab
 
-  - **Annotation types:** Select _structural markup_
+    - **Annotation types:** Select _structural markup_
 
-  - **Token Type:** Select _Penn POS tags_
+    - **Token Type:** Select _Penn POS tags_
 
-  - **Sentence Type:** Select _Penn_
+    - **Sentence Type:** Select _Penn_
 
 1. Click the _Process_ button. This will begin converting the corpus, which will take several minutes.
 
