@@ -89,7 +89,7 @@ More information about the ANC Tool may be found [here][ANC-Tool]. Steps for app
   - **Input format:** Select _GrAF_
   - **Encoding (Text):** Select _UTF-8_
   - **Copy directory structure:** Check this box (although leaving it unchecked should not affect the results or scripts in this project)
-  - **MonoConc:** Select this tab (this ensures that the corpus will be generated following the format described above)
+  - **MonoConc Pro:** Select this tab (this ensures that the corpus will be generated following the format described above)
   - **POS tags:** Select _Hepple (Penn) tags_ to apply the Penn tag set
   - **Separator character:** Leave this set to the underscore `_`
 
