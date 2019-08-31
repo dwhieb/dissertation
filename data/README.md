@@ -1,3 +1,3 @@
 # Data
 
-This folder contains the raw data used in this dissertation.
+This folder contains the linguistic data used in this dissertation.
