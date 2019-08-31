@@ -48,17 +48,19 @@ The MASC data may be downloaded from the [MASC download page][MASC-download] in 
 
 <!--
 
-For this study, it was necessary to perform several steps to prepare the MASC data for coding and analysis:
+Some of the necessary steps in coding the data (such as tagging the data for part of speech and lemmatizing the corpus) have already been done by the research team behind the OANC, and those annotations are publicly available. All annotations for the OANC, including part-of-speech tags, are *stand-off* annotations, where each annotation is stored in a separate file from the primary data. Therefore as a first step in data preparation, it is necessary to merge the part-of-speech tags directly into the primary data for ease of scripting and additional data coding.
+
+It is therefore necessary to perform several steps to prepare the MASC data for additional data coding and analysis:
 
 1. [tag the corpus for parts of speech](#tagging-the-corpus)
-1. [lemmatizie the corpus](#lemmatizing-the-corpus)
+1. [lemmatize the corpus](#lemmatizing-the-corpus)
 1. [convert the corpus to JSON format](#converting-the-corpus-to-json)
 
 The following sections detail how to perform each of these steps.
 
 #### Tagging the Corpus
 
-All annotations for the OANC, including part-of-speech tags, are *stand-off* annotations, where each annotation is stored in a separate file from the primary data. Therefore as a first step in data preparation, it is necessary to merge the part-of-speech tags directly into the primary data for ease of scripting. The OANC project provides an ANC Tool for this purpose. This tool produces a version of the corpus where each word in a text is followed by an underscore and then the abbreviation for its part of speech according to the Penn tag set. For example, the following sentence:
+The OANC project provides an ANC Tool for this purpose. This tool produces a version of the corpus where each word in a text is followed by an underscore and then the abbreviation for its part of speech according to the Penn tag set. For example, the following sentence:
 
 ```
 All hotels accept major credit cards.
