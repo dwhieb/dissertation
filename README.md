@@ -13,11 +13,7 @@ The process of obtaining the results from this study, as in all empirical scient
 3. [data collection](#stage-3-data-collection)
 4. [data preparation](#stage-4-data-preparation)
 5. [data coding](#stage-5-data-coding)
-6. [data description / analysis](#stage-6-data-description--analysis)
-  - [frequency counts](#frequency-counts)
-  - [descriptive statistics](#descriptive-statistics)
-  - [exploratory statistics](#exploratory-statistics)
-  - [inferential / predictive statistics](#inferential--predictive-statistics)
+6. [quantitative analysis](#stage-6-quantitative-analysis)
 7. qualitative analysis
 
 This readme documents that process from [Stage 3: Data Collection](#stage-3-data-collection) through [Stage 6: Data Description & Analysis](#stage-6-data-description--analysis). Discussion of the theoretical prerequisites and qualitative analysis of the data may be found in my dissertation document, downloadable [here][dissertation].
@@ -44,24 +40,25 @@ In order to run the scripts in this project yourself, or use them with new data,
 
 ### Stage 3: Data Collection
 
-<!-- This section summarizes how to obtain each of the original data sets used in this study. -->
+The data used for the investigation of English in this study come from the [Open American National Corpus][OANC] (<abbr title='Open American National Corpus'>OANC</abbr>), a 15 million word corpus whose data are entirely open access. This corpus comes with part-of-speech tags from several different tag sets. The OANC also comes with a Manually Annotated Sub-Corpus (<abbr title='Manually Annotated Sub-Corpus'>MASC</abbr>) whose annotations have been manually produced, and which include tags for lemmas. For this project I have elected to use just the Manually Annotated Sub-Corpus (MASC) of the OANC, and chosen to use the Penn tag set for part-of-speech annotations. More information about the OANC may be found at the [OANC web page][OANC]. More information about the Penn tag set may be found in Marcus, Santorini, & Marcinkiewicz ([1993](#MarcusSantoriniMarcinkiewicz1993)).
 
-The data used for the investigation of English in this study come from the [Open American National Corpus][OANC] (<abbr title='Open American National Corpus'>OANC</abbr>), a 15 million word corpus whose data are entirely open access. This corpus comes with part-of-speech tags from several different tag sets. The OANC also comes with a Manually Annotated Sub-Corpus (<abbr title='Manually Annotated Sub-Corpus'>MASC</abbr>) whose annotations have been manually produced. For this project I have elected to use the entirety of the OANC rather than just the Manually Annotated Sub-Corpus, and chosen to use the Penn tag set for part-of-speech annotations. More information about the Penn tag set may be found in Marcus, Santorini, & Marcinkiewicz ([1993](#MarcusSantoriniMarcinkiewicz1993)).
-
-The OANC corpus may be downloaded from the [OANC Download page][OANC-download] in either `zip` or `tar` formats. Note that it is a large download (~5GB) and will take some time to download completely. You will also need to unzip the folder after you have downloaded it.
+The MASC data may be downloaded from the [MASC download page][MASC-download] in either `zip` or `tar` formats. You will need to unzip the folder after you have downloaded it.
 
 ### Stage 4: Data Preparation
 
-For this study, it was necessary to perform several steps to prepare the OANC data for coding and analysis:
+<!--
 
-1. [tag the corpus](#tagging-the-corpus)
+For this study, it was necessary to perform several steps to prepare the MASC data for coding and analysis:
+
+1. [tag the corpus for parts of speech](#tagging-the-corpus)
+1. [lemmatizie the corpus](#lemmatizing-the-corpus)
 1. [convert the corpus to JSON format](#converting-the-corpus-to-json)
 
 The following sections detail how to perform each of these steps.
 
 #### Tagging the Corpus
 
-All annotations for the OANC, including part-of-speech tags, are <dfn>stand-off</dfn> annotations, where each annotation is stored in a separate file from the primary data. Therefore as a first step in data preparation, it is necessary to merge the part-of-speech tags directly into the primary data for ease of scripting. The OANC project provides an ANC Tool for this purpose. This tool produces a version of the corpus where each word in a text is followed by an underscore and then the abbreviation for its part of speech according to the Penn tag set. For example, the following sentence:
+All annotations for the OANC, including part-of-speech tags, are *stand-off* annotations, where each annotation is stored in a separate file from the primary data. Therefore as a first step in data preparation, it is necessary to merge the part-of-speech tags directly into the primary data for ease of scripting. The OANC project provides an ANC Tool for this purpose. This tool produces a version of the corpus where each word in a text is followed by an underscore and then the abbreviation for its part of speech according to the Penn tag set. For example, the following sentence:
 
 ```
 All hotels accept major credit cards.
@@ -107,17 +104,11 @@ The `tags2dlx` package creates a JSON file for each text in the corpus with the 
 
 To use the `tags2dlx` package to convert the OANC corpus in this repository to JSON, run `npm run convert-oanc` from the command line. This will take a few minutes. To use the `tags2dlx` package to convert other data sets, or data that lives elsewhere, follow the instructions in the `tags2dlx` readme, located [here][tags2dlx].
 
+-->
+
 ### Stage 5: Data Coding
 
-### Stage 6: Data Description & Analysis
-
-#### Frequency Counts
-
-#### Descriptive Statistics
-
-#### Exploratory Statistics
-
-#### Inferential / Predictive Statistics
+### Stage 6: Quantitative Analysis
 
 ## Legal
 
@@ -148,8 +139,8 @@ Add copyright and license for each section of this repository
 [dissertation]:  https://files.danielhieber.com/publications/dissertation.pdf
 [Java]:          https://www.java.com/en/
 [JSON]:          http://json.org/
+[MASC-download]: http://www.anc.org/data/masc/downloads/data-download/
 [OANC]:          http://www.anc.org/
-[OANC-download]: http://www.anc.org/data/oanc/download/
 [Node]:          https://nodejs.org/
 [npm]:           https://www.npmjs.com/
 [tags2dlx]:      https://developer.digitallinguistics.io/tags2dlx/
