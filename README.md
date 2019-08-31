@@ -133,7 +133,6 @@ Add copyright and license for each section of this repository
 - [ ] document (copyright to me, licensed under CC BY 4.0)
 - [ ] corpora
   - [ ] OANC (copyright, license)
-  - [ ] SBC (copyright,  license)
 - [ ] comics (individual copyrights)
 - [ ] scripts
   - [ ] ANC tool
