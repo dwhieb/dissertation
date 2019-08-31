@@ -22,6 +22,26 @@ The process of obtaining the results from this study, as in all empirical scient
 
 This readme documents that process from [Stage 3: Data Collection](#stage-3-data-collection) through [Stage 6: Data Description & Analysis](#stage-6-data-description--analysis). Discussion of the theoretical prerequisites and qualitative analysis of the data may be found in my dissertation document, downloadable [here][dissertation].
 
+### Technical Prerequisites
+
+#### Node.js
+
+Since my preferred programming language is JavaScript, the scripts for this project are written in Node.js, software that allows JavaScript to be run on a local computer. Once Node is installed on your computer, any Node script can be run from the command line with the command `node script.js`.
+
+Node also comes with the Node Package Manager (npm), which allows you to install packages that other programmers have written in Node. Any public package in the npm registry may be installed by running `npm install package-name` from the command line. npm also allows you to run scripts within a project from the command line. For example, this project has a script called `copy-pdf`, which copies the compiled LaTeX PDF from `src/main.pdf` to `dissertation.pdf`. These project-specific scripts can be run on the command line following the format `npm run copy-pdf`.
+
+For more information about Node.js and npm, visit the [Node.js][Node] and [npm][npm] websites.
+
+You will need to download Node and npm in order to run most of the scripts in this project. You can download both pieces of software from the [Node.js web page][Node]. Be sure to download the `Current` version rather than the `LTS` version; otherwise some scripts may not work correctly.
+
+#### Cloning this Repository
+
+In order to run the scripts in this project yourself, or use them with new data, you will need to follow these steps:
+
+1. <dfn>Clone</dfn> this repository (copy it to your local machine). Instructions for cloning a repository may be found [here][cloning].
+
+1. Install the necessary packages for this project by navigating to the root folder of this project in the command line and running `npm install`.
+
 ### Stage 3: Data Collection
 
 <!-- This section summarizes how to obtain each of the original data sets used in this study. -->
@@ -31,6 +51,15 @@ The data used for the investigation of English in this study come from the [Open
 The OANC corpus may be downloaded from the [OANC Download page][OANC-download] in either `zip` or `tar` formats. Note that it is a large download (~5GB) and will take some time to download completely. You will also need to unzip the folder after you have downloaded it.
 
 ### Stage 4: Data Preparation
+
+For this study, it was necessary to perform several steps to prepare the OANC data for coding and analysis:
+
+1. [tag the corpus](#tagging-the-corpus)
+1. [convert the corpus to JSON format](#converting-the-corpus-to-json)
+
+The following sections detail how to perform each of these steps.
+
+#### Tagging the Corpus
 
 All annotations for the OANC, including part-of-speech tags, are <dfn>stand-off</dfn> annotations, where each annotation is stored in a separate file from the primary data. Therefore as a first step in data preparation, it is necessary to merge the part-of-speech tags directly into the primary data for ease of scripting. The OANC project provides an ANC Tool for this purpose. This tool produces a version of the corpus where each word in a text is followed by an underscore and then the abbreviation for its part of speech according to the Penn tag set. For example, the following sentence:
 
@@ -46,11 +75,11 @@ All_DT hotels_NNS accept_VBP major_JJ credit_NN cards_NNS ._.
 
 More information about the ANC Tool may be found [here][ANC-Tool]. Steps for applying part-of-speech tags to the OANC are as follows:
 
-1. Download the ANC Tool from the [ANC Tool download page][ANC-Tool] and unzip the folder.
+1. Download the ANC Tool from the [ANC Tool download page][ANC-Tool] and unzip the folder. If you have already cloned this repository, you can skip this step; the ANC Tool will be located in the `scripts/ANC` folder.
 
 1. If you do not have Java installed on your computer, download it from [here][Java] and then install it on your computer.
 
-1. Run the ANC Tool following the instructions on the [ANC Tool page][ANC-Tool]. It is recommended that you run the tool from the command line following the format `java -Xmx500M -jar ANCTool-x.y.z-jar.jar`. See the [ANC Tool page][ANC-Tool] for complete details. If you have `npm` installed on your computer and have downloaded this repository, you can run the ANC Tool from the command line with `npm run anc`.
+1. Run the ANC Tool following the instructions on the [ANC Tool page][ANC-Tool]. It is recommended that you run the tool from the command line following the format `java -Xmx500M -jar ANCTool-x.y.z-jar.jar`. See the [ANC Tool page][ANC-Tool] for complete details. If you have `npm` installed on your computer, you can simply run the ANC Tool from the command line with `npm run anc`.
 
 1. The first time you run the ANC Tool, it will ask you to specify the location of the folder where you placed the OANC data. Select this folder and click _Accept_.
 
@@ -68,6 +97,16 @@ More information about the ANC Tool may be found [here][ANC-Tool]. Steps for app
 1. Click the _Process_ button. This will begin converting the corpus, which will take several minutes.
 
 In this repository, the converted corpus is located in the folder `data/English/OANC/data`.
+
+#### Converting the Corpus to JSON
+
+When scripting with JavaScript, I find it significantly easier to work with data in <abbr title='JavaScript Object Notation'>JSON</abbr> (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about the JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][Daffodil].
+
+To convert the OANC to JSON format, I wrote a small JavaScript script called `tags2dlx`, which converts linguistic texts tagged in MonoConc format (the word followed by an underscore and then the part-of-speech tag) to JSON. More specifically, it converts the text to a JSON format that adheres to the Data Format for Digital Linguistics (<abbr title='Data Format for Digital Linguistics'><Daffodil</abbr>), a standard for representing linguistic texts and other linguistic data in JSON. More information about the `tags2dlx` library and how to use it may be found [here][tags2dlx]. More information about the Data Format for Digital Linguistics may be found [here][Daffodil].
+
+The `tags2dlx` package creates a JSON file for each text in the corpus with the same filename as the original text, but with the `.txt` extension replaced by `.json`. This new file is created in the same folder as the original file.
+
+To use the `tags2dlx` package to convert the OANC corpus in this repository to JSON, run `npm run convert-oanc` from the command line. This will take a few minutes. To use the `tags2dlx` package to convert other data sets, or data that lives elsewhere, follow the instructions in the `tags2dlx` readme, located [here][tags2dlx].
 
 ### Stage 5: Data Coding
 
@@ -106,7 +145,13 @@ Add copyright and license for each section of this repository
 
 <!-- Links -->
 [ANC-Tool]:      http://www.anc.org/software/anc-tool/
+[cloning]:       https://help.github.com/en/articles/cloning-a-repository
+[Daffodil]:      https://format.digitallinguistics.io/
 [dissertation]:  https://files.danielhieber.com/publications/dissertation.pdf
 [Java]:          https://www.java.com/en/
+[JSON]:          http://json.org/
 [OANC]:          http://www.anc.org/
 [OANC-download]: http://www.anc.org/data/oanc/download/
+[Node]:          https://nodejs.org/
+[npm]:           https://www.npmjs.com/
+[tags2dlx]:      https://developer.digitallinguistics.io/tags2dlx/
