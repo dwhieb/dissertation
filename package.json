@@ -41,11 +41,13 @@
     "prebuild": "npm run cleanup && npm run abbreviations && npm run diss-version",
     "build": "npm run compile && npm run bib && npm run compile",
     "postbuild": "npm run copy-pdf && open-cli dissertation.pdf",
-    "preversion": "npm run log-start && npm run build && npm run log-end && npm run archive && npm run cleanup"
+    "preversion": "npm run log-start && npm run build && npm run log-end && npm run archive && npm run cleanup",
+    "start": "node --experimental-modules --no-warnings scripts/data/convert.js"
   },
   "devDependencies": {
     "@azure/storage-blob": "^10.3.0",
     "babel-eslint": "^10.0.3",
+    "csv-parse": "^4.4.5",
     "eslint": "^6.0.1",
     "open-cli": "^5.0.0",
     "ora": "^3.4.0",
