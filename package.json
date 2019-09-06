@@ -30,7 +30,7 @@
     "bib": "biber src/main",
     "cleanup": "node --experimental-modules --no-warnings scripts/build/cleanup.js",
     "compile": "cd src && xelatex -halt-on-error main.tex && cd ..",
-    "convert-masc": "node --experimental-modules --no-warnings scripts/data/convertCoNLL.js data/English/data",
+    "convert-masc": "node --experimental-modules --no-warnings scripts/data/convertCoNLL.js \"data/English/data\"",
     "copy-pdf": "node --experimental-modules --no-warnings scripts/build/copyPDF.js",
     "diss-version": "node --experimental-modules --no-warnings scripts/build/version.js",
     "log-start": "node --experimental-modules --no-warnings scripts/build/startLog.js",
