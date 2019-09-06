@@ -28,7 +28,7 @@ Node also comes with the Node Package Manager (npm), which allows you to install
 
 For more information about Node.js and npm, visit the [Node.js][Node] and [npm][npm] websites.
 
-You will need to download Node and npm in order to run most of the scripts in this project. You can download both pieces of software from the [Node.js web page][Node]. Be sure to download the `Current` version rather than the `LTS` version; otherwise some scripts may not work correctly.
+You will need to download Node and npm in order to run most of the scripts in this project. You can download both pieces of software from the [Node.js web page][Node]. The scripts in this repository were written using Version 12 of Node, so you may need to download that specific version in order for the scripts in this project to work correctly.
 
 #### Cloning this Repository
 
@@ -112,7 +112,11 @@ The resulting JSON files are located alongside the original `.conll` file, but w
 
 To convert the CoNLL-formatted files located in this directory, simply enter `npm run convert-masc` on the command line. This will regenerate the JSON files in the MASC data directory (`data/English/data`).
 
-To convert CoNLL-formatted files in another directory,
+To convert CoNLL-formatted files in another directory, enter the following command on the command line, replacing `{directory}` with the path to your directory of CoNLL files.
+
+```cmd
+node --experimental-modules --no-warnings scripts/data/convertCoNLL.js {directory}
+```
 
 ### Stage 5: Data Coding
 
