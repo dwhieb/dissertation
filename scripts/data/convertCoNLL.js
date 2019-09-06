@@ -1,6 +1,8 @@
-import createParser from 'csv-parse';
-import fs           from 'fs';
-import path         from 'path';
+import createParser      from 'csv-parse';
+import { fileURLToPath } from 'url';
+import fs                from 'fs';
+import path              from 'path';
+import recurse           from 'recursive-readdir';
 
 const columns = [
   `ID`,
@@ -20,11 +22,15 @@ const parserOptions = {
   trim:               true,
 };
 
+// eslint-disable-next-line no-underscore-dangle, no-shadow
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const dataDir   = path.join(__dirname, `../../data/English/data`);
+
 /**
  * Converts a CoNLL CSV file to JSON and saves it alongside the original
  * @param  {String} filePath The path to the CoNLL file to convert
  */
-export default function convertCoNLL(filePath) {
+const convertCoNLL = filePath => new Promise((resolve, reject) => {
 
   const dir          = path.dirname(filePath);
   const filename     = path.basename(filePath, `.conll`);
@@ -38,7 +44,7 @@ export default function convertCoNLL(filePath) {
 
   writeStream.write(`[\n`);
 
-  parser.on(`error`, console.error);
+  parser.on(`error`, reject);
 
   parser.on(`readable`, () => {
 
@@ -64,8 +70,41 @@ export default function convertCoNLL(filePath) {
 
   });
 
-  parser.on(`end`, () => writeStream.write(`]`));
+  parser.on(`end`, () => {
+    writeStream.end(`]`);
+    resolve();
+  });
 
   readStream.pipe(parser);
 
+});
+
+/**
+ * The ignore function for the recurse method
+ */
+function ignore(filePath, stats) {
+  if (stats.isDirectory()) return false;
+  return path.extname(filePath) === `.json`;
 }
+
+/**
+ * Converts the CoNLL version of the MASC data to JSON
+ * @return {Promise}
+ */
+void async function convert() {
+
+  try {
+
+    const files = await recurse(dataDir, [ignore]);
+
+    for (const filepath of files) {
+      await convertCoNLL(filepath); // eslint-disable-line no-await-in-loop
+    }
+
+  } catch (e) {
+
+    console.error(e);
+
+  }
+
+}();
