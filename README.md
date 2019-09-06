@@ -48,9 +48,18 @@ The MASC data may be downloaded from the [MASC download page][MASC-download] in 
 
 ### Stage 4: Data Preparation
 
+Preparing the MASC data for additional annotation and statistical analysis involves the following steps:
+
+1. [apply stand-off annotations](#applying-stand--off-annotations)
+1. [convert corpus to JSON](#converting-the-corpus-to-json)
+
+Details for accomplishing each of these tasks are given in the sections below.
+
+#### Applying Stand-Off Annotations
+
 Some types of annotations, such as part-of-speech and lemma information, have already been produced by the research team behind the OANC. These annotations are freely available for download along with the OANC data itself. All annotations for the OANC are *stand-off* annotations, where each annotation is stored in a separate file from the primary data. Therefore as a first step in data preparation, it is necessary to merge the part-of-speech and lemma information directly into the primary data for ease of scripting and additional data coding.
 
-The OANC project provides an ANC Tool for this purpose. This tool provides various ways of generating tagged versions of the OANC corpus. For this project, I chose to generate the corpus in CoNLL format (that used by the Conference on Natural Language Learning). This format represents each text as a tab-delimited text file, so that each word in the corpus is one row whose columns contain information about that word's part of speech and lemma.
+The OANC project provides an [ANC Tool][ANC-Tool] for this purpose. This tool provides various ways of generating tagged versions of the OANC corpus. For this project, I chose to generate the corpus in CoNLL format (that used by the Conference on Natural Language Learning). This format represents each text as a tab-delimited text file, so that each word in the corpus is one row whose columns contain information about that word's part of speech and lemma.
 
 More information about the ANC Tool may be found [here][ANC-Tool]. Steps for converting the MASC data to CoNLL format with part-of-speech and lemma information are as follows:
 
@@ -86,19 +95,24 @@ More information about the ANC Tool may be found [here][ANC-Tool]. Steps for con
 
 In this repository, the converted corpus is located in the folder `data/English/data`.
 
-<!--
-
 #### Converting the Corpus to JSON
 
 When scripting with JavaScript, I find it significantly easier to work with data in <abbr title='JavaScript Object Notation'>JSON</abbr> (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about the JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][Daffodil].
 
-To convert the OANC to JSON format, I wrote a small JavaScript script called `tags2dlx`, which converts linguistic texts tagged in MonoConc format (the word followed by an underscore and then the part-of-speech tag) to JSON. More specifically, it converts the text to a JSON format that adheres to the Data Format for Digital Linguistics (<abbr title='Data Format for Digital Linguistics'>Daffodil</abbr>), a standard for representing linguistic texts and other linguistic data in JSON. More information about the `tags2dlx` library and how to use it may be found [here][tags2dlx]. More information about the Data Format for Digital Linguistics may be found [here][Daffodil].
+To convert the MASC data to JSON format, I wrote a small JavaScript script which traverses a data directory for `.conll` files, and converts them to a JSON file where each word in the corpus is represented by a single JSON object. That JSON object contains the following fields:
 
-The `tags2dlx` package creates a JSON file for each text in the corpus with the same filename as the original text, but with the `.txt` extension replaced by `.json`. This new file is created in the same folder as the original file.
+  - ID
+  - startIndex
+  - endIndex
+  - token
+  - lemma
+  - POS
 
-To use the `tags2dlx` package to convert the OANC corpus in this repository to JSON, run `npm run convert-oanc` from the command line. This will take a few minutes. To use the `tags2dlx` package to convert other data sets, or data that lives elsewhere, follow the instructions in the `tags2dlx` readme, located [here][tags2dlx].
+The resulting JSON files are located alongside the original `.conll` file, but with a `.json` extension instead.
 
--->
+To convert the CoNLL-formatted files located in this directory, simply enter `npm run convert-masc` on the command line. This will regenerate the JSON files in the MASC data directory (`data/English/data`).
+
+To convert CoNLL-formatted files in another directory,
 
 ### Stage 5: Data Coding
 

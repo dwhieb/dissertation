@@ -1,8 +1,7 @@
-import createParser      from 'csv-parse';
-import { fileURLToPath } from 'url';
-import fs                from 'fs';
-import path              from 'path';
-import recurse           from 'recursive-readdir';
+import createParser from 'csv-parse';
+import fs           from 'fs';
+import path         from 'path';
+import recurse      from 'recursive-readdir';
 
 const columns = [
   `ID`,
@@ -22,9 +21,7 @@ const parserOptions = {
   trim:               true,
 };
 
-// eslint-disable-next-line no-underscore-dangle, no-shadow
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const dataDir   = path.join(__dirname, `../../data/English/data`);
+const [,, dataDir] = process.argv;
 
 /**
  * Converts a CoNLL CSV file to JSON and saves it alongside the original
