@@ -67,10 +67,7 @@ const convertCoNLL = filePath => new Promise((resolve, reject) => {
 
   });
 
-  parser.on(`end`, () => {
-    writeStream.end(`]`);
-    resolve();
-  });
+  parser.on(`end`, () => writeStream.end(`]`, resolve));
 
   readStream.pipe(parser);
 
