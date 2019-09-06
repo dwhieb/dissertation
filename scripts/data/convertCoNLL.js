@@ -1,6 +1,7 @@
 import createParser from 'csv-parse';
 import fs           from 'fs';
 import path         from 'path';
+import ProgressBar  from 'progress';
 import recurse      from 'recursive-readdir';
 
 const columns = [
@@ -89,10 +90,12 @@ void async function convert() {
 
   try {
 
-    const files = await recurse(dataDir, [ignore]);
+    const files       = await recurse(dataDir, [ignore]);
+    const progressBar = new ProgressBar(`:bar`, { total: files.length });
 
     for (const filepath of files) {
       await convertCoNLL(filepath); // eslint-disable-line no-await-in-loop
+      progressBar.tick();
     }
 
   } catch (e) {
