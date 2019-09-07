@@ -1,7 +1,7 @@
 import createParser      from 'csv-parse';
-import { createRequire } from 'module';
 import { fileURLToPath } from 'url';
 import fs                from 'fs';
+import module            from 'module'; // eslint-disable-line no-shadow
 import path              from 'path';
 import { processDir }    from '../utilities/index.js';
 
@@ -25,7 +25,7 @@ const parserOptions = {
   trim:               true,
 };
 
-const require = createRequire(fileURLToPath(import.meta.url)); // eslint-disable-line no-shadow
+const require = module.createRequire(fileURLToPath(import.meta.url)); // eslint-disable-line no-shadow
 
 /**
  * Converts a CoNLL CSV file to JSON and saves it alongside the original

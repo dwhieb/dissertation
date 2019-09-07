@@ -2,13 +2,13 @@
  * Removes all JSON files from the provided directory
  */
 
-import { createRequire } from 'module';
 import { fileURLToPath } from 'url';
 import fs                from 'fs';
+import module            from 'module'; // eslint-disable-line no-shadow
 import path              from 'path';
 import { processDir }    from '../utilities/index.js';
 
-const require = createRequire(fileURLToPath(import.meta.url)); // eslint-disable-line no-shadow
+const require = module.createRequire(fileURLToPath(import.meta.url)); // eslint-disable-line no-shadow
 
 const { unlink } = fs.promises;
 
