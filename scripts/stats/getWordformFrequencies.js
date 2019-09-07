@@ -5,7 +5,7 @@ import { compare } from '../utilities/index.js';
  * @param  {Array} text An array of CoNLL records in JSON format
  * @return {Map}        A Map object with raw frequencies of each wordform
  */
-export default function getTextWordformFrequencies(text) {
+export default function getWordformFrequencies(text) {
 
   const frequencies = text.reduce((map, { token }) => {
     token = token.toLowerCase(); // eslint-disable-line no-param-reassign
