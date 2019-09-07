@@ -5,7 +5,7 @@ import path           from 'path';
 import pennTags       from '../constants/POS.json';
 import { processDir } from '../utilities/index.js';
 
-const { unlink } = fs.promises;
+const { rename, unlink } = fs.promises;
 
 const [,, dataDir] = process.argv;
 const numberRegExp = /[0-9]/gu;
@@ -53,12 +53,11 @@ const removeBadTokens = filePath => new Promise((resolve, reject) => {
 
   });
 
-  parser.on(`end`, () => {
-    writeStream.end(`]`, async () => {
-      await unlink(filePath);
-      resolve();
-    });
-  });
+  parser.on(`end`, () => writeStream.end(`]`, async () => {
+    await unlink(filePath);
+    await rename(newFilePath, filePath);
+    resolve();
+  }));
 
   readStream.pipe(parser);
 
@@ -69,9 +68,7 @@ const removeBadTokens = filePath => new Promise((resolve, reject) => {
  */
 function ignore(filePath, stats) {
   if (stats.isDirectory()) return false;
-  if (path.extname(filePath) !== `.json`) return true;
-  if (path.basename(filePath, `.json`).endsWith(`_filtered`)) return true;
-  return false;
+  return path.extname(filePath) !== `.json`;
 }
 
 processDir(dataDir, removeBadTokens, ignore);
