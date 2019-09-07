@@ -2,7 +2,7 @@ import fs      from 'fs';
 import path    from 'path';
 import recurse from 'recursive-readdir';
 
-const { unlink } = fs;
+const { unlink } = fs.promises;
 
 const dir = `data/English/data`;
 
@@ -13,10 +13,18 @@ function ignore(filePath, stats) {
 
 void async function removeJSONFiles() {
 
-  const files = await recurse(dir, [ignore]);
+  try {
 
-  for (const file of files) {
-    await unlink(file); // eslint-disable-line no-await-in-loop
+    const files = await recurse(dir, [ignore]);
+
+    for (const file of files) {
+      await unlink(file); // eslint-disable-line no-await-in-loop
+    }
+
+  } catch (e) {
+
+    console.error(e);
+
   }
 
 }();
