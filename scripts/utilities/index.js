@@ -1,7 +1,7 @@
 import compare    from './compare.js';
-import convertDir from './convertDir.js';
+import processDir from './processDir.js';
 
 export {
   compare,
-  convertDir,
+  processDir,
 };

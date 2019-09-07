@@ -1,7 +1,7 @@
-import { convertDir } from '../utilities/index.js';
 import createParser   from 'csv-parse';
 import fs             from 'fs';
 import path           from 'path';
+import { processDir } from '../utilities/index.js';
 
 const columns = [
   `ID`,
@@ -81,4 +81,4 @@ function ignore(filePath, stats) {
   return path.extname(filePath) === `.json`;
 }
 
-convertDir(dataDir, convertCoNLL, ignore);
+processDir(dataDir, convertCoNLL, ignore);

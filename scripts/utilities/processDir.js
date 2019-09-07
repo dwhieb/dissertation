@@ -2,13 +2,13 @@ import ProgressBar from 'progress';
 import recurse     from 'recursive-readdir';
 
 /**
- * Converts a directory of files by applying the provided conversion function to each file in the directory
- * @param  {String}   dir     The path to the directory to convert
- * @param  {Function} convert The conversion function to apply to each file in the directory
+ * Processes a directory of files by applying the provided function to each file in the directory
+ * @param  {String}   dir     The path to the directory to process
+ * @param  {Function} task    The function to apply to each file in the directory
  * @param  {Function} ignore  A function that accepts two arguments (filePath and stats), and should return true if the file should be ignored. Used to ignore files in the specified directory of files to convert.
  * @return {Promise}
  */
-export default async function convertDir(dir, convert, ignore) {
+export default async function convertDir(dir, task, ignore) {
 
   try {
 
@@ -16,7 +16,7 @@ export default async function convertDir(dir, convert, ignore) {
     const progressBar = new ProgressBar(`:bar`, { total: files.length });
 
     for (const filePath of files) {
-      await convert(filePath); // eslint-disable-line no-await-in-loop
+      await task(filePath); // eslint-disable-line no-await-in-loop
       progressBar.tick();
     }
 
