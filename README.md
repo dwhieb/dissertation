@@ -16,7 +16,9 @@ The process of obtaining the results from this study, as in all empirical scient
 6. [quantitative analysis](#stage-6-quantitative-analysis)
 7. qualitative analysis
 
-This readme documents that process from [Stage 3: Data Collection](#stage-3-data-collection) through [Stage 6: Data Description & Analysis](#stage-6-data-description--analysis). Discussion of the theoretical prerequisites and qualitative analysis of the data may be found in my dissertation document, downloadable [here][dissertation].
+There are not always clear boundaries between each stage (for example, a data selection step occurs at several places), but the above steps nonetheless provide a useful overview of the process.
+
+This readme documents the technical steps relating to [data collection](#stage-3-data-collection), [data preparation](#stage-4-data-preparation), and [quantitative analysis](#stage-6-quantitative-analysis). Discussion of the theoretical prerequisites, data coding, and qualitative analysis of the data may be found in my dissertation document, downloadable [here][dissertation].
 
 ### Technical Prerequisites
 
@@ -110,18 +112,38 @@ To convert the MASC data to JSON format, I wrote a small JavaScript script which
 
 The resulting JSON files are located alongside the original `.conll` file, but with a `.json` extension instead.
 
-To convert the CoNLL-formatted files located in this directory, simply enter `npm run convert-masc` on the command line. This will regenerate the JSON files in the MASC data directory (`data/English/data`).
-
-To convert CoNLL-formatted files in another directory, enter the following command on the command line, replacing `{directory}` with the path to your directory of CoNLL files.
+To convert the CoNLL-formatted files located in this project, enter the following on the command line:
 
 ```cmd
-node --experimental-modules --no-warnings scripts/data/convertCoNLL.js {directory}
+node --experimental-modules --no-warnings scripts/data/convertCoNLL.js data/English/data
 ```
 
-### Stage 5: Data Coding
+This will regenerate the JSON files in the MASC data directory (`data/English/data`).
+
+To convert CoNLL-formatted files in another directory, simply replace the directory in the command above (`data/English/data`) with the path to your directory of CoNLL files.
+
+#### Removing Unwanted Data
+
+As mentioned above, data selection occurs at several stages of the data workflow for this project. The MASC data contains many tokens which are not relevant for this study, specifically punctuation and numerals. Rather than run computationally-intense statistical scripts on extraneous data, I elected to remove these unwanted tokens from the data set before moving on to later steps.
+
+To achieve this, I wrote a script that removes these unnecessary tokens from the JSON files generated in the previous step. You can run this script on the command line using the following command:
+
+```cmd
+node --experimental-modules --no-warnings scripts/data/removeBadTokens.js data/English/data
+```
+
+You can run this script on JSON files in a different directory by replacing `data/English/data` with the path to your directory instead.
 
 ### Stage 6: Quantitative Analysis
+<!--
+All of the statistical data for this project can be generated with a single command:
 
+```cmd
+npm run stats
+```
+
+This script performs each of the steps outlined below. For each step, I have also provided information on how to run that individual step in the process.
+ -->
 ## Legal
 
 Currently, none of the materials in this repository are licensed for copying, reproduction, redistribution, modification, or reuse. Please contact [Daniel W. Hieber](https://danielhieber.com) if you wish to use any of the materials in this repository.
