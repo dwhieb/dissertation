@@ -9,7 +9,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const dataDir = path.join(__dirname, `../../data/English/data`);
 
-void async function stats() {
+void async function data() {
 
   console.info(`removing auxiliary files`);
   await clearAuxFiles(dataDir);

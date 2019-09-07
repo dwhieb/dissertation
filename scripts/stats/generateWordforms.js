@@ -1,10 +1,12 @@
 // IMPORTS
 
-import csvStringify  from 'csv-stringify';
-import fs            from 'fs';
-import JSONStream    from 'JSONStream';
-import path          from 'path';
-import { promisify } from 'util';
+import csvStringify      from 'csv-stringify';
+import { fileURLToPath } from 'url';
+import fs                from 'fs';
+import JSONStream        from 'JSONStream';
+import module            from 'module'; // eslint-disable-line no-shadow
+import path              from 'path';
+import { promisify }     from 'util';
 
 import {
   compare,
@@ -12,39 +14,42 @@ import {
 } from '../utilities/index.js';
 
 const json2csv      = promisify(csvStringify);
+const require       = module.createRequire(fileURLToPath(import.meta.url)); // eslint-disable-line no-shadow
 const { writeFile } = fs.promises;
 
 // VARIABLES
 
+/**
+ * Column names for the generated CSV file
+ * @type {Array}
+ */
 const columns = [
   `wordform`,
   `frequency`,
 ];
 
+/**
+ * Options for the CSV stringifier
+ * @type {Object}
+ */
 const csvOptions = {
   columns,
   delimiter: `\t`,
   header:    true,
 };
 
-const [,, dataDir] = process.argv;
+/**
+ * A Map of aggregate frequencies for each wordform in the corpus
+ * @type {Map}
+ */
+const frequencies = new Map;
 
 // METHODS
 
-const convertFrequencies = map => [...map.entries()]
-.sort(([wordA, freqA], [wordB, freqB]) => compare(freqB, freqA) || compare(wordA, wordB));
-
-const generateWordforms = filePath => new Promise((resolve, reject) => {
-
-  const dir         = path.dirname(filePath);
-  const filename    = path.basename(filePath, `.json`);
-  const newFilename = `${filename}_wordforms.json`;
-  const newFilePath = path.join(dir, newFilename);
+const aggregateWordforms = filePath => new Promise((resolve, reject) => {
 
   const parser     = JSONStream.parse(`*.token`);
   const readStream = fs.createReadStream(filePath);
-
-  const frequencies = new Map;
 
   parser.on(`error`, reject);
 
@@ -57,22 +62,33 @@ const generateWordforms = filePath => new Promise((resolve, reject) => {
 
   });
 
-  parser.on(`end`, async () => {
-    console.log(await json2csv(convertFrequencies(frequencies), csvOptions));
-    // await writeFile(newFilePath, ``, `utf8`);
-    resolve();
-  });
+  parser.on(`end`, resolve);
 
   readStream.pipe(parser);
 
 });
 
+function convertFrequencies(map) {
+  return [...map.entries()]
+  .sort(([wordA, freqA], [wordB, freqB]) => compare(freqB, freqA) || compare(wordA, wordB));
+}
+
+async function generateWordforms(dir, outputPath) {
+  await processDir(dir, aggregateWordforms, ignore);
+  const csv = await json2csv(convertFrequencies(frequencies), csvOptions);
+  await writeFile(outputPath, csv, `utf8`);
+}
+
 function ignore(filePath, stats) {
   if (stats.isDirectory()) return false;
-  if (filePath.endsWith(`_wordforms.json`)) return true;
   return path.extname(filePath) !== `.json`;
 }
 
 // MAIN
 
-processDir(dataDir, generateWordforms, ignore);
+if (require.main === module) {
+  const [,, dataDir, outputPath] = process.argv;
+  generateWordforms(dataDir, outputPath);
+}
+
+export default (dataDir, outputPath) => generateWordforms(dataDir, outputPath);

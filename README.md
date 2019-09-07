@@ -56,7 +56,7 @@ Preparing the MASC data for additional annotation and statistical analysis invol
 1. [convert corpus to JSON](#converting-the-corpus-to-json)
 1. [remove unwanted data](#removing-unwanted-data)
 
-Details for accomplishing each of these tasks are given in the sections below. At any point you can also delete all the JSON files (but not CoNLL files) generated in this section and start over by running `npm run clear-stats` from the command line.
+Details for accomplishing each of these tasks are given in the sections below. You can also perform all the steps in this section by simply running `npm run data` from the command line.
 
 #### Applying Stand-Off Annotations
 
@@ -136,15 +136,15 @@ node --experimental-modules --no-warnings scripts/data/removeBadTokens.js data/E
 You can run this script on JSON files in a different directory by replacing `data/English/data` with the path to your directory instead.
 
 ### Stage 6: Quantitative Analysis
-<!--
+
 All of the statistical data for this project can be generated with a single command:
 
 ```cmd
 npm run stats
 ```
 
-This script performs each of the steps outlined below. For each step, I have also provided information on how to run that individual step in the process.
- -->
+<!-- This script performs each of the steps outlined below. For each step, I have also provided information on how to run that individual step in the process. -->
+
 ## Legal
 
 Currently, none of the materials in this repository are licensed for copying, reproduction, redistribution, modification, or reuse. Please contact [Daniel W. Hieber](https://danielhieber.com) if you wish to use any of the materials in this repository.
