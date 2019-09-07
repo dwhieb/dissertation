@@ -35,6 +35,7 @@
     "clear-aux": "node --experimental-modules --no-warnings scripts/data/clearAuxFiles.js data/English/data",
     "compile": "cd src && xelatex -halt-on-error main.tex && cd ..",
     "copy-pdf": "node --experimental-modules --no-warnings scripts/build/copyPDF.js",
+    "data": "node --experimental-modules --no-warnings scripts/data/index.js",
     "diss-version": "node --experimental-modules --no-warnings scripts/build/version.js",
     "log-start": "node --experimental-modules --no-warnings scripts/build/startLog.js",
     "log-end": "node --experimental-modules --no-warnings scripts/build/endLog.js",
