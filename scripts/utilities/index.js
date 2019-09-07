@@ -1,3 +1,7 @@
-import compare from './compare.js';
+import compare    from './compare.js';
+import processDir from './processDir.js';
 
-export { compare };
+export {
+  compare,
+  processDir,
+};

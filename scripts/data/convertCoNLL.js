@@ -1,8 +1,7 @@
-import createParser from 'csv-parse';
-import fs           from 'fs';
-import path         from 'path';
-import ProgressBar  from 'progress';
-import recurse      from 'recursive-readdir';
+import createParser   from 'csv-parse';
+import fs             from 'fs';
+import path           from 'path';
+import { processDir } from '../utilities/index.js';
 
 const columns = [
   `ID`,
@@ -82,26 +81,4 @@ function ignore(filePath, stats) {
   return path.extname(filePath) === `.json`;
 }
 
-/**
- * Converts the CoNLL version of the MASC data to JSON
- * @return {Promise}
- */
-void async function convert() {
-
-  try {
-
-    const files       = await recurse(dataDir, [ignore]);
-    const progressBar = new ProgressBar(`:bar`, { total: files.length });
-
-    for (const filepath of files) {
-      await convertCoNLL(filepath); // eslint-disable-line no-await-in-loop
-      progressBar.tick();
-    }
-
-  } catch (e) {
-
-    console.error(e);
-
-  }
-
-}();
+processDir(dataDir, convertCoNLL, ignore);

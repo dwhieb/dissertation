@@ -22,6 +22,9 @@
     "type": "git",
     "url": "git+https://github.com/dwhieb/dissertation.git"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "type": "module",
   "scripts": {
     "abbreviations": "node --experimental-modules --no-warnings scripts/build/abbreviations.js",
@@ -30,7 +33,6 @@
     "bib": "biber src/main",
     "cleanup": "node --experimental-modules --no-warnings scripts/build/cleanup.js",
     "compile": "cd src && xelatex -halt-on-error main.tex && cd ..",
-    "convert-masc": "node --experimental-modules --no-warnings scripts/data/convertCoNLL.js \"data/English/data\"",
     "copy-pdf": "node --experimental-modules --no-warnings scripts/build/copyPDF.js",
     "diss-version": "node --experimental-modules --no-warnings scripts/build/version.js",
     "log-start": "node --experimental-modules --no-warnings scripts/build/startLog.js",
@@ -42,10 +44,12 @@
     "build": "npm run compile && npm run bib && npm run compile",
     "postbuild": "npm run copy-pdf && open-cli dissertation.pdf",
     "preversion": "npm run log-start && npm run build && npm run log-end && npm run archive && npm run cleanup",
-    "start": "node --experimental-modules --no-warnings scripts/data/convert.js"
+    "start": "node --experimental-modules --no-warnings temp.js",
+    "stats": "node --experimental-modules --no-warnings scripts/stats/index.js"
   },
   "devDependencies": {
     "@azure/storage-blob": "^10.3.0",
+    "JSONStream": "^1.3.5",
     "babel-eslint": "^10.0.3",
     "csv-parse": "^4.4.5",
     "eslint": "^6.0.1",
