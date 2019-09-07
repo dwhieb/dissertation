@@ -12,6 +12,8 @@ const columns = [
   `POS`,
 ];
 
+const [,, dataDir] = process.argv;
+
 const parserOptions = {
   columns,
   delimiter:          `\t`,
@@ -20,8 +22,6 @@ const parserOptions = {
   skipLinesWithError: true,
   trim:               true,
 };
-
-const [,, dataDir] = process.argv;
 
 /**
  * Converts a CoNLL CSV file to JSON and saves it alongside the original
@@ -78,7 +78,7 @@ const convertCoNLL = filePath => new Promise((resolve, reject) => {
  */
 function ignore(filePath, stats) {
   if (stats.isDirectory()) return false;
-  return path.extname(filePath) === `.json`;
+  return path.extname(filePath) !== `.conll`;
 }
 
 processDir(dataDir, convertCoNLL, ignore);

@@ -30,6 +30,7 @@ const generateWordforms = filePath => new Promise((resolve, reject) => {
 
 function ignore(filePath, stats) {
   if (stats.isDirectory()) return false;
+  if (filePath.endsWith(`_wordforms.json`)) return true;
   return path.extname(filePath) !== `.json`;
 }
 

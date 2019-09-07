@@ -10,7 +10,7 @@ const { unlink } = fs.promises;
 
 const [,, dir] = process.argv;
 
-function clearStats(filePath) {
+function clearAuxFiles(filePath) {
   return unlink(filePath);
 }
 
@@ -19,4 +19,4 @@ function ignore(filePath, stats) {
   return path.extname(filePath) !== `.json`;
 }
 
-processDir(dir, clearStats, ignore);
+processDir(dir, clearAuxFiles, ignore);

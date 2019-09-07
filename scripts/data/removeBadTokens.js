@@ -67,8 +67,13 @@ const removeBadTokens = filePath => new Promise((resolve, reject) => {
  * The ignore function for the recurse method
  */
 function ignore(filePath, stats) {
+
   if (stats.isDirectory()) return false;
+
+  if (filePath.endsWith(`_wordforms.json`)) return true;
+
   return path.extname(filePath) !== `.json`;
+
 }
 
 processDir(dataDir, removeBadTokens, ignore);
