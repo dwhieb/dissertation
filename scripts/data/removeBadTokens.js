@@ -5,6 +5,8 @@ import path           from 'path';
 import pennTags       from '../constants/POS.json';
 import { processDir } from '../utilities/index.js';
 
+const { unlink } = fs.promises;
+
 const [,, dataDir] = process.argv;
 const numberRegExp = /[0-9]/gu;
 const pos          = Object.keys(pennTags);
@@ -51,7 +53,12 @@ const removeBadTokens = filePath => new Promise((resolve, reject) => {
 
   });
 
-  parser.on(`end`, () => writeStream.end(`]`, resolve));
+  parser.on(`end`, () => {
+    writeStream.end(`]`, async () => {
+      await unlink(filePath);
+      resolve();
+    });
+  });
 
   readStream.pipe(parser);
 
