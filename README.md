@@ -54,8 +54,9 @@ Preparing the MASC data for additional annotation and statistical analysis invol
 
 1. [apply stand-off annotations](#applying-stand--off-annotations)
 1. [convert corpus to JSON](#converting-the-corpus-to-json)
+1. [remove unwanted data](#removing-unwanted-data)
 
-Details for accomplishing each of these tasks are given in the sections below.
+Details for accomplishing each of these tasks are given in the sections below. At any point you can also delete all the JSON files (but not CoNLL files) generated in this section and start over by running `npm run clear-stats` from the command line.
 
 #### Applying Stand-Off Annotations
 

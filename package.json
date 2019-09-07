@@ -32,6 +32,7 @@
     "archive": "node --experimental-modules --no-warnings scripts/build/archive.js",
     "bib": "biber src/main",
     "cleanup": "node --experimental-modules --no-warnings scripts/build/cleanup.js",
+    "clear-stats": "node --experimental-modules --no-warnings scripts/data/clearStats.js data/English/data",
     "compile": "cd src && xelatex -halt-on-error main.tex && cd ..",
     "copy-pdf": "node --experimental-modules --no-warnings scripts/build/copyPDF.js",
     "diss-version": "node --experimental-modules --no-warnings scripts/build/version.js",
@@ -44,7 +45,7 @@
     "build": "npm run compile && npm run bib && npm run compile",
     "postbuild": "npm run copy-pdf && open-cli dissertation.pdf",
     "preversion": "npm run log-start && npm run build && npm run log-end && npm run archive && npm run cleanup",
-    "start": "node --experimental-modules --no-warnings scripts/data/removeBadTokens.js data/English/data",
+    "start": "",
     "stats": "node --experimental-modules --no-warnings scripts/stats/index.js data/English/data"
   },
   "devDependencies": {
