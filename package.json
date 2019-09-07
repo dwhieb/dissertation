@@ -22,6 +22,9 @@
     "type": "git",
     "url": "git+https://github.com/dwhieb/dissertation.git"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "type": "module",
   "scripts": {
     "abbreviations": "node --experimental-modules --no-warnings scripts/build/abbreviations.js",
