@@ -14,8 +14,6 @@ const columns = [
   `POS`,
 ];
 
-const [,, dataDir] = process.argv;
-
 const parserOptions = {
   columns,
   delimiter:          `\t`,
@@ -85,6 +83,9 @@ function ignore(filePath, stats) {
   return path.extname(filePath) !== `.conll`;
 }
 
-if (require.main === module) processDir(dataDir, convertCoNLL, ignore);
+if (require.main === module) {
+  const [,, dataDir] = process.argv;
+  processDir(dataDir, convertCoNLL, ignore);
+}
 
-export default () => processDir(dataDir, convertCoNLL, ignore);
+export default dataDir => processDir(dataDir, convertCoNLL, ignore);

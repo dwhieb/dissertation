@@ -12,8 +12,6 @@ const require = module.createRequire(fileURLToPath(import.meta.url)); // eslint-
 
 const { unlink } = fs.promises;
 
-const [,, dir] = process.argv;
-
 function clearAuxFiles(filePath) {
   return unlink(filePath);
 }
@@ -23,6 +21,9 @@ function ignore(filePath, stats) {
   return path.extname(filePath) !== `.json`;
 }
 
-if (require.main === module) processDir(dir, clearAuxFiles, ignore);
+if (require.main === module) {
+  const [,, dir] = process.argv;
+  processDir(dir, clearAuxFiles, ignore);
+}
 
-export default () => processDir(dir, clearAuxFiles, ignore);
+export default dir => processDir(dir, clearAuxFiles, ignore);

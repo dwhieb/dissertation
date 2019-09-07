@@ -12,7 +12,6 @@ const { rename, unlink } = fs.promises;
 const require = module.createRequire(fileURLToPath(import.meta.url)); // eslint-disable-line no-shadow
 
 const badCharsRegExp = /[-./0-9]/gu;
-const [,, dataDir]   = process.argv;
 const pos            = Object.keys(pennTags);
 
 /**
@@ -80,6 +79,9 @@ function ignore(filePath, stats) {
 
 }
 
-if (require.main === module) processDir(dataDir, removeBadTokens, ignore);
+if (require.main === module) {
+  const [,, dataDir]   = process.argv;
+  processDir(dataDir, removeBadTokens, ignore);
+}
 
-export default () => processDir(dataDir, removeBadTokens, ignore);
+export default dataDir => processDir(dataDir, removeBadTokens, ignore);
