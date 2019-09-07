@@ -1,11 +1,15 @@
-import badPOS         from '../constants/badPOS.json';
-import fs             from 'fs';
-import JSONStream     from 'JSONStream';
-import path           from 'path';
-import pennTags       from '../constants/POS.json';
-import { processDir } from '../utilities/index.js';
+import badPOS            from '../constants/badPOS.json';
+import { createRequire } from 'module';
+import { fileURLToPath } from 'url';
+import fs                from 'fs';
+import JSONStream        from 'JSONStream';
+import path              from 'path';
+import pennTags          from '../constants/POS.json';
+import { processDir }    from '../utilities/index.js';
 
 const { rename, unlink } = fs.promises;
+
+const require = createRequire(fileURLToPath(import.meta.url)); // eslint-disable-line no-shadow
 
 const badCharsRegExp = /[-./0-9]/gu;
 const [,, dataDir]   = process.argv;
@@ -76,4 +80,6 @@ function ignore(filePath, stats) {
 
 }
 
-processDir(dataDir, removeBadTokens, ignore);
+if (require.main === module) processDir(dataDir, removeBadTokens, ignore);
+
+export default () => processDir(dataDir, removeBadTokens, ignore);

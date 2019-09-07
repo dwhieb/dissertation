@@ -1,7 +1,9 @@
-import createParser   from 'csv-parse';
-import fs             from 'fs';
-import path           from 'path';
-import { processDir } from '../utilities/index.js';
+import createParser      from 'csv-parse';
+import { createRequire } from 'module';
+import { fileURLToPath } from 'url';
+import fs                from 'fs';
+import path              from 'path';
+import { processDir }    from '../utilities/index.js';
 
 const columns = [
   `ID`,
@@ -22,6 +24,8 @@ const parserOptions = {
   skipLinesWithError: true,
   trim:               true,
 };
+
+const require = createRequire(fileURLToPath(import.meta.url)); // eslint-disable-line no-shadow
 
 /**
  * Converts a CoNLL CSV file to JSON and saves it alongside the original
@@ -81,4 +85,6 @@ function ignore(filePath, stats) {
   return path.extname(filePath) !== `.conll`;
 }
 
-processDir(dataDir, convertCoNLL, ignore);
+if (require.main === module) processDir(dataDir, convertCoNLL, ignore);
+
+export default () => processDir(dataDir, convertCoNLL, ignore);

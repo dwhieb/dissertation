@@ -46,7 +46,7 @@
     "postbuild": "npm run copy-pdf && open-cli dissertation.pdf",
     "preversion": "npm run log-start && npm run build && npm run log-end && npm run archive && npm run cleanup",
     "start": "",
-    "stats": "node --experimental-modules --no-warnings scripts/stats/index.js data/English/data"
+    "stats": "node --experimental-modules --no-warnings scripts/stats/index.js"
   },
   "devDependencies": {
     "@azure/storage-blob": "^10.3.0",
