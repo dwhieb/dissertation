@@ -1,21 +1,13 @@
-import badPOS            from '../constants/badPOS.json';
-import { fileURLToPath } from 'url';
-import fs                from 'fs';
-import JSONStream        from 'JSONStream';
-import path              from 'path';
-import pennTags          from '../constants/POS.json';
+import badPOS         from '../constants/badPOS.json';
+import fs             from 'fs';
+import JSONStream     from 'JSONStream';
+import path           from 'path';
+import pennTags       from '../constants/POS.json';
+import { processDir } from '../utilities/index.js';
 
-// eslint-disable-next-line no-underscore-dangle, no-shadow
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-const testFilePath = path.join(__dirname, `../../data/English/data/spoken/court-transcript/Lessig-court-transcript.json`);
-
-const outputFilePath = path.join(__dirname, `../../temp.json`);
-
+const [,, dataDir] = process.argv;
 const numberRegExp = /[0-9]/gu;
 const pos          = Object.keys(pennTags);
-
-// numerals
 
 /**
  * Checks whether a word contains unnecessary data
@@ -28,11 +20,16 @@ function isBadData({ POS, token }) {
   || numberRegExp.test(token); // includes an Arabic numeral
 }
 
-const removeBadTokens = () => new Promise((resolve, reject) => {
+const removeBadTokens = filePath => new Promise((resolve, reject) => {
+
+  const dir         = path.dirname(filePath);
+  const filename    = path.basename(filePath, `.json`);
+  const newFilename = `${filename}_filtered.json`;
+  const newFilePath = path.join(dir, newFilename);
 
   const parser      = JSONStream.parse(`*`);
-  const readStream  = fs.createReadStream(testFilePath);
-  const writeStream = fs.createWriteStream(outputFilePath);
+  const readStream  = fs.createReadStream(filePath);
+  const writeStream = fs.createWriteStream(newFilePath);
 
   let firstChunk = true;
 
@@ -60,4 +57,14 @@ const removeBadTokens = () => new Promise((resolve, reject) => {
 
 });
 
-removeBadTokens();
+/**
+ * The ignore function for the recurse method
+ */
+function ignore(filePath, stats) {
+  if (stats.isDirectory()) return false;
+  if (path.extname(filePath) !== `.json`) return true;
+  if (path.basename(filePath, `.json`).endsWith(`_filtered`)) return true;
+  return false;
+}
+
+processDir(dataDir, removeBadTokens, ignore);
