@@ -1,12 +1,10 @@
 // IMPORTS
 
-import csvStringify      from 'csv-stringify';
-import { fileURLToPath } from 'url';
-import fs                from 'fs';
-import JSONStream        from 'JSONStream';
-import module            from 'module'; // eslint-disable-line no-shadow
-import path              from 'path';
-import { promisify }     from 'util';
+import csvStringify  from 'csv-stringify';
+import fs            from 'fs';
+import JSONStream    from 'JSONStream';
+import path          from 'path';
+import { promisify } from 'util';
 
 import {
   compare,
@@ -14,7 +12,6 @@ import {
 } from '../utilities/index.js';
 
 const json2csv      = promisify(csvStringify);
-const require       = module.createRequire(fileURLToPath(import.meta.url)); // eslint-disable-line no-shadow
 const { writeFile } = fs.promises;
 
 // VARIABLES
@@ -82,13 +79,6 @@ async function generateWordforms(dir, outputPath) {
 function ignore(filePath, stats) {
   if (stats.isDirectory()) return false;
   return path.extname(filePath) !== `.json`;
-}
-
-// MAIN
-
-if (require.main === module) {
-  const [,, dataDir, outputPath] = process.argv;
-  generateWordforms(dataDir, outputPath);
 }
 
 export default (dataDir, outputPath) => generateWordforms(dataDir, outputPath);

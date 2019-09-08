@@ -1,13 +1,11 @@
-import { fileURLToPath } from 'url';
 import generateWordforms from './generateWordforms.js';
 import path              from 'path';
 
-// eslint-disable-next-line no-underscore-dangle, no-shadow
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+export default function runStats(dataDir, outputDir) {
 
-const dataDir       = path.join(__dirname, `../../data/English/data`);
-const wordformsPath = path.join(__dirname, `../../data/English/stats/wordforms.tsv`);
+  const wordformsPath = path.join(outputDir, `wordforms.tsv`);
 
-void async function stats() {
-  await generateWordforms(dataDir, wordformsPath);
-}();
+  console.info(`Generating list of wordforms`);
+  return generateWordforms(dataDir, wordformsPath);
+
+}

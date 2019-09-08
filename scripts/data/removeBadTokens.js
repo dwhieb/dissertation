@@ -1,17 +1,13 @@
-import badPOS            from '../constants/badPOS.json';
-import { fileURLToPath } from 'url';
-import fs                from 'fs';
-import JSONStream        from 'JSONStream';
-import module            from 'module'; // eslint-disable-line no-shadow
-import path              from 'path';
-import pennTags          from '../constants/POS.json';
-import { processDir }    from '../utilities/index.js';
+import badPOS         from '../constants/badPOS.json';
+import fs             from 'fs';
+import JSONStream     from 'JSONStream';
+import path           from 'path';
+import pennTags       from '../constants/POS.json';
+import { processDir } from '../utilities/index.js';
 
 const { rename, unlink } = fs.promises;
 
-const require = module.createRequire(fileURLToPath(import.meta.url)); // eslint-disable-line no-shadow
-
-const badCharsRegExp = /[-./0-9]/gu;
+const badCharsRegExp = /[-./0-9]|\[|\]/gu;
 const pos            = Object.keys(pennTags);
 
 /**
@@ -73,15 +69,8 @@ function ignore(filePath, stats) {
 
   if (stats.isDirectory()) return false;
 
-  if (filePath.endsWith(`_wordforms.json`)) return true;
-
   return path.extname(filePath) !== `.json`;
 
-}
-
-if (require.main === module) {
-  const [,, dataDir]   = process.argv;
-  processDir(dataDir, removeBadTokens, ignore);
 }
 
 export default dataDir => processDir(dataDir, removeBadTokens, ignore);
