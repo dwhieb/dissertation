@@ -21,8 +21,6 @@ const parserOptions = {
   trim:               true,
 };
 
-const [,, dataDir] = process.argv;
-
 /**
  * Converts a CoNLL CSV file to JSON and saves it alongside the original
  * @param  {String} filePath The path to the CoNLL file to convert
@@ -78,7 +76,7 @@ const convertCoNLL = filePath => new Promise((resolve, reject) => {
  */
 function ignore(filePath, stats) {
   if (stats.isDirectory()) return false;
-  return path.extname(filePath) === `.json`;
+  return path.extname(filePath) !== `.conll`;
 }
 
-processDir(dataDir, convertCoNLL, ignore);
+export default dataDir => processDir(dataDir, convertCoNLL, ignore);

@@ -1,6 +1,11 @@
-import data                       from '../../data/English/data/spoken/court-transcript/Lessig-court-transcript.json';
-import getTextWordformFrequencies from './getTextWordformFrequencies.js';
+import generateWordforms from './generateWordforms.js';
+import path              from 'path';
 
-void function getStats() {
-  console.log(getTextWordformFrequencies(data));
-}();
+export default function runStats(dataDir, outputDir) {
+
+  const wordformsPath = path.join(outputDir, `wordforms.tsv`);
+
+  console.info(`Generating list of wordforms`);
+  return generateWordforms(dataDir, wordformsPath);
+
+}
