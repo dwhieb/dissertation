@@ -7,7 +7,7 @@ import path          from 'path';
 import { promisify } from 'util';
 
 import {
-  compare,
+  convertFrequencies,
   processDir,
 } from '../utilities/index.js';
 
@@ -65,20 +65,13 @@ const aggregateWordforms = filePath => new Promise((resolve, reject) => {
 
 });
 
-function convertFrequencies(map) {
-  return [...map.entries()]
-  .sort(([wordA, freqA], [wordB, freqB]) => compare(freqB, freqA) || compare(wordA, wordB));
-}
-
-async function generateWordforms(dir, outputPath) {
-  await processDir(dir, aggregateWordforms, ignore);
-  const csv = await json2csv(convertFrequencies(frequencies), csvOptions);
-  await writeFile(outputPath, csv, `utf8`);
-}
-
 function ignore(filePath, stats) {
   if (stats.isDirectory()) return false;
   return path.extname(filePath) !== `.json`;
 }
 
-export default (dataDir, outputPath) => generateWordforms(dataDir, outputPath);
+export default async function generateWordforms(dir, outputPath) {
+  await processDir(dir, aggregateWordforms, ignore);
+  const csv = await json2csv(convertFrequencies(frequencies), csvOptions);
+  await writeFile(outputPath, csv, `utf8`);
+}
