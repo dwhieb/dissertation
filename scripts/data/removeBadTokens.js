@@ -7,8 +7,8 @@ import { processDir } from '../utilities/index.js';
 
 const { rename, unlink } = fs.promises;
 
-const badCharsRegExp = /[-_./%*+&|?@\\~#�><[\]0-9]/gu;
-const pos            = Object.keys(pennTags);
+const goodCharsRegExp = /^[A-Za-z']$/u;
+const pos             = Object.keys(pennTags);
 
 /**
  * Checks whether a word contains unnecessary data
@@ -16,9 +16,9 @@ const pos            = Object.keys(pennTags);
  * @return {Boolean}
  */
 function isBadData({ POS, token }) {
-  return badPOS.includes(POS)    // unnecessary part of speech
-  || !pos.includes(POS)          // not a recognized part of speech
-  || badCharsRegExp.test(token); // includes Arabic numerals or other punctuation
+  return badPOS.includes(POS)      // unnecessary part of speech
+  || !pos.includes(POS)            // not a recognized part of speech
+  || !goodCharsRegExp.test(token); // includes Arabic numerals or other punctuation
 }
 
 const removeBadTokens = filePath => new Promise((resolve, reject) => {
