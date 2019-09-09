@@ -7,7 +7,7 @@ import { processDir } from '../utilities/index.js';
 
 const { rename, unlink } = fs.promises;
 
-const badCharsRegExp = /[-./[\]0-9]/gu;
+const badCharsRegExp = /[-_./%�[\]0-9]/gu;
 const pos            = Object.keys(pennTags);
 
 /**
@@ -43,10 +43,6 @@ const removeBadTokens = filePath => new Promise((resolve, reject) => {
   parser.on(`data`, word => {
 
     if (isBadData(word)) return;
-
-    const { token } = word;
-
-    if (nonASCIIRegExp.test(token) && !token.includes(`'`)) console.log(token);
 
     if (!firstChunk) writeStream.write(`,\n`);
 
