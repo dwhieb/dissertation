@@ -1,11 +1,11 @@
 import { aggregate } from '../utilities/index.js';
 
 /**
- * Column names for the generated CSV file
+ * The columns to use at the top of the resulting TSV file
  * @type {Array}
  */
 const columns = [
-  `wordform`,
+  `lexeme`,
   `frequency`,
 ];
 
@@ -15,12 +15,12 @@ const columns = [
  * @param  {String} POS         The part of speech for the word token
  * @param  {String} lemma       The lemma for the word token
  */
-function aggregateWordforms(frequencies, { POS, token }) {
+function aggregateLexemes(frequencies, { POS, lemma }) {
 
-  const wordform = `${token.toLowerCase()}_${POS}`;
+  const lexeme = `${lemma}_${POS}`;
 
-  if (frequencies.has(wordform)) frequencies.set(wordform, frequencies.get(wordform) + 1);
-  else frequencies.set(wordform, 1);
+  if (frequencies.has(lexeme)) frequencies.set(lexeme, frequencies.get(lexeme) + 1);
+  else frequencies.set(lexeme, 1);
 
 }
 
@@ -30,6 +30,6 @@ function aggregateWordforms(frequencies, { POS, token }) {
  * @param  {String}  outputPath The path to the file to save the results in
  * @return {Promise}
  */
-export default function generateWordforms(dir, outputPath) {
-  return aggregate(dir, outputPath, aggregateWordforms, columns);
+export default function generateLexemes(dir, outputPath) {
+  return aggregate(dir, outputPath, aggregateLexemes, columns);
 }
