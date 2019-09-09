@@ -41,7 +41,7 @@
     "log-end":       "node --experimental-modules --no-warnings scripts/build/endLog.js",
     "quick-bib":     "npm run compile && npm run bib && npm run compile && open-cli src/main.pdf",
     "quick-build":   "npm run compile && open-cli src/main.pdf",
-    "start":         "node --experimental-modules --no-warnings scripts/bin/generateLexemes.js data/English/data data/English/stats/lexemes.tsv",
+    "start":         "node --experimental-modules --no-warnings scripts/bin/generateWordforms.js data/English/data data/English/stats/wordforms.tsv",
     "stats":         "node --experimental-modules --no-warnings scripts/bin/runStats.js data/English/data data/English/stats",
     "upload":        "node --experimental-modules --no-warnings scripts/build/upload.js",
 
