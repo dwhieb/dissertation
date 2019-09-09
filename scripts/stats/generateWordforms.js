@@ -1,20 +1,4 @@
-// IMPORTS
-
-import csvStringify  from 'csv-stringify';
-import fs            from 'fs';
-import JSONStream    from 'JSONStream';
-import path          from 'path';
-import { promisify } from 'util';
-
-import {
-  convertFrequencies,
-  processDir,
-} from '../utilities/index.js';
-
-const json2csv      = promisify(csvStringify);
-const { writeFile } = fs.promises;
-
-// VARIABLES
+import { aggregate } from '../utilities/index.js';
 
 /**
  * Column names for the generated CSV file
@@ -26,52 +10,26 @@ const columns = [
 ];
 
 /**
- * Options for the CSV stringifier
- * @type {Object}
+ * Aggregator function used to generate the list of lexeme frequencies
+ * @param  {Map}    frequencies A map of lexeme frequencies
+ * @param  {String} POS         The part of speech for the word token
+ * @param  {String} lemma       The lemma for the word token
  */
-const csvOptions = {
-  columns,
-  delimiter: `\t`,
-  header:    true,
-};
+function aggregateWordforms(frequencies, { POS, token }) {
 
-/**
- * A Map of aggregate frequencies for each wordform in the corpus
- * @type {Map}
- */
-const frequencies = new Map;
+  const wordform = `${token.toLowerCase()}_${POS}`;
 
-// METHODS
+  if (frequencies.has(wordform)) frequencies.set(wordform, frequencies.get(wordform) + 1);
+  else frequencies.set(wordform, 1);
 
-const aggregateWordforms = filePath => new Promise((resolve, reject) => {
-
-  const parser     = JSONStream.parse(`*`);
-  const readStream = fs.createReadStream(filePath);
-
-  parser.on(`error`, reject);
-
-  parser.on(`data`, ({ POS, token }) => {
-
-    const wordform = `${token.toLowerCase()}_${POS}`;
-
-    if (frequencies.has(wordform)) frequencies.set(wordform, frequencies.get(wordform) + 1);
-    else frequencies.set(wordform, 1);
-
-  });
-
-  parser.on(`end`, resolve);
-
-  readStream.pipe(parser);
-
-});
-
-function ignore(filePath, stats) {
-  if (stats.isDirectory()) return false;
-  return path.extname(filePath) !== `.json`;
 }
 
-export default async function generateWordforms(dir, outputPath) {
-  await processDir(dir, aggregateWordforms, ignore);
-  const csv = await json2csv(convertFrequencies(frequencies), csvOptions);
-  await writeFile(outputPath, csv, `utf8`);
+/**
+* Generates a list of lexemes and their frequencies based on a data directory
+ * @param  {String}  dir        The path to the data directory
+ * @param  {String}  outputPath The path to the file to save the results in
+ * @return {Promise}
+ */
+export default function generateWordforms(dir, outputPath) {
+  return aggregate(dir, outputPath, aggregateWordforms, columns);
 }
