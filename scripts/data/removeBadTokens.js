@@ -21,8 +21,6 @@ function isBadData({ POS, token }) {
   || badCharsRegExp.test(token); // includes Arabic numerals or other punctuation
 }
 
-const nonASCIIRegExp = /[^A-Za-z]/gu;
-
 const removeBadTokens = filePath => new Promise((resolve, reject) => {
 
   const dir         = path.dirname(filePath);
