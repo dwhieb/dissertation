@@ -45,17 +45,17 @@ const frequencies = new Map;
 
 const aggregateWordforms = filePath => new Promise((resolve, reject) => {
 
-  const parser     = JSONStream.parse(`*.token`);
+  const parser     = JSONStream.parse(`*`);
   const readStream = fs.createReadStream(filePath);
 
   parser.on(`error`, reject);
 
-  parser.on(`data`, token => {
+  parser.on(`data`, ({ POS, token }) => {
 
-    token = token.toLowerCase(); // eslint-disable-line no-param-reassign
+    const wordform = `${token.toLowerCase()}_${POS}`;
 
-    if (frequencies.has(token)) frequencies.set(token, frequencies.get(token) + 1);
-    else frequencies.set(token, 1);
+    if (frequencies.has(wordform)) frequencies.set(wordform, frequencies.get(wordform) + 1);
+    else frequencies.set(wordform, 1);
 
   });
 
