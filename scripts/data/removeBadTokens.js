@@ -7,7 +7,7 @@ import { processDir } from '../utilities/index.js';
 
 const { rename, unlink } = fs.promises;
 
-const badCharsRegExp = /[-_./%�[\]0-9]/gu;
+const badCharsRegExp = /[-_./%*+&|?@\\~#�><[\]0-9]/gu;
 const pos            = Object.keys(pennTags);
 
 /**
