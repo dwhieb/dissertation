@@ -18,7 +18,19 @@ const pos             = Object.keys(pennTags);
 function isBadData({ POS, token }) {
   return badPOS.includes(POS)      // unnecessary part of speech
   || !pos.includes(POS)            // not a recognized part of speech
+  || isBadOneLetterWord(token)     // one letter other than "a" or "I"
   || !goodCharsRegExp.test(token); // includes Arabic numerals or other punctuation
+}
+
+/**
+ * Checks whether a token is one letter long but not "a" or "I"
+ */
+function isBadOneLetterWord(token) {
+  return token.length === 1
+  && !(
+    token === `a`
+    || token === `I`
+  );
 }
 
 const removeBadTokens = filePath => new Promise((resolve, reject) => {
