@@ -22,12 +22,6 @@ const { writeFile } = fs.promises;
  */
 const csvOptions = { delimiter: `\t` };
 
-/**
- * A Map of aggregate frequencies for each lexeme in the corpus
- * @type {Map}
- */
-const frequencies = new Map;
-
 // METHODS
 
 function ignore(filePath, stats) {
@@ -46,6 +40,8 @@ function ignore(filePath, stats) {
  * @return {Promise}
  */
 export default async function aggregate(dir, outputPath, aggregator, columns) {
+
+  const frequencies = new Map;
 
   const processFile = filePath => new Promise((resolve, reject) => {
 
