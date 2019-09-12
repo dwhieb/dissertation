@@ -1,6 +1,6 @@
-import clearDataFiles   from './clearDataFiles.js';
-import convertCoNLL    from './convertCoNLL.js';
-import removeBadTokens from './removeBadTokens.js';
+import clearDataFiles       from './clearDataFiles.js';
+import convertCoNLL         from './convertCoNLL.js';
+import removeUnwantedTokens from './removeUnwantedTokens.js';
 
 export default async function prepareData(dataDir) {
 
@@ -11,6 +11,6 @@ export default async function prepareData(dataDir) {
   await convertCoNLL(dataDir);
 
   console.info(`removing unwanted data`);
-  await removeBadTokens(dataDir);
+  await removeUnwantedTokens(dataDir);
 
 }

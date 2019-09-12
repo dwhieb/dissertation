@@ -33,7 +33,7 @@ function isBadOneLetterWord(token) {
   );
 }
 
-const removeBadTokens = filePath => new Promise((resolve, reject) => {
+const removeUnwantedTokens = filePath => new Promise((resolve, reject) => {
 
   const dir         = path.dirname(filePath);
   const filename    = path.basename(filePath, `.json`);
@@ -85,4 +85,4 @@ function ignore(filePath, stats) {
 
 }
 
-export default dataDir => processDir(dataDir, removeBadTokens, ignore);
+export default dataDir => processDir(dataDir, removeUnwantedTokens, ignore);
