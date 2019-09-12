@@ -130,7 +130,7 @@ As mentioned above, data selection occurs at several stages of the data workflow
 To achieve this, I wrote a script that removes these unnecessary tokens from the JSON files generated in the previous step. You can run this script on the command line using the following command:
 
 ```cmd
-node --experimental-modules --no-warnings scripts/bin/removeBadTokens.js data/English/data
+node --experimental-modules --no-warnings scripts/bin/removeUnwantedTokens.js data/English/data
 ```
 
 You can run this script on JSON files in a different directory by replacing `data/English/data` with the path to your directory instead.
