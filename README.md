@@ -125,7 +125,7 @@ To convert CoNLL-formatted files in another directory, simply replace the direct
 
 #### Removing Unwanted Data
 
-As mentioned above, data selection occurs at several stages of the data workflow for this project. The MASC data contains many tokens which are not relevant for this study, specifically punctuation, numerals, and the possessive `'s` (which is treated as a separate token by the OANC). Rather than run computationally-intense statistical scripts on extraneous data, I elected to remove these unwanted tokens from the data set before moving on to later steps.
+As mentioned above, data selection occurs at several stages of the data workflow for this project. The MASC data contains many tokens which are not relevant for this study, specifically punctuation, numerals, and the possessive `'s` (which is treated as a separate token by the OANC). Rather than run computationally-intense statistical scripts on extraneous data, I elected to remove these unwanted tokens from the data set before moving on to later steps. Since this thesis is also only focused on lexical flexibility between the major parts of speech—noun, verb, and adjective—I also removed any word tokens from other parts of speech such as Determiners, etc.
 
 To achieve this, I wrote a script that removes these unnecessary tokens from the JSON files generated in the previous step. You can run this script on the command line using the following command:
 
