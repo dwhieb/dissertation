@@ -87,25 +87,11 @@ More information about the ANC Tool may be found [here][ANC-Tool]. Steps for con
 
 In this repository, the converted corpus is located in the folder `data/English/data`.
 
-<!-- Columns -->
-<!--
-ID
-startIndex
-endIndex
-token
-lemma
-POS
--->
-
 #### Removing Unwanted Data
 
-As mentioned above, data selection occurs at several stages of the data workflow for this project. The MASC data contains many tokens which are not relevant for this study, specifically punctuation, numerals, and the possessive `'s` (which is treated as a separate token by the OANC). Rather than run computationally-intense statistical scripts on extraneous data, I elected to remove these unwanted tokens from the data set before moving on to later steps. Since this thesis is also only focused on lexical flexibility between the major parts of speech—noun, verb, and adjective—I also removed any word tokens from other parts of speech such as Determiners, etc.
+As mentioned above, data selection occurs at several stages of the data workflow for this project. The MASC data contains many tokens which should not be included in any frequency counts, specifically punctuation and the possessive `'s` (which is treated as a separate token by the OANC). The CoNLL files also contain several columns which contain unnecessary data. Rather than run computationally-intense statistical scripts on extraneous data, I created cleaned versions of each CoNLL file with the extraneous data removed, and saved these as `.tsv` files alongside their original `.conll` files.
 
-Several columns in the CoNLL files are also unnecessary for this project, and can likewise be removed.
-
-To accomplish these two tasks, I wrote the R script located in `scripts/data/clean_data.R`
-
-<!-- Describe what this script does and while files it produces -->
+To accomplish this, I wrote an R script called `clean_data.R`, located at `scripts/data/prepare_data.R`. Running this script will generate a cleaned version of each CoNLL in the data directory in this repository. To run this script on a data directory located elsewhere, simply change the `data_dir` variable at the top of the file to point to the directory where your data are located.
 
 ### Stage 6: Quantitative Analysis
 
