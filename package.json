@@ -31,7 +31,6 @@
     "archive":       "node --experimental-modules --no-warnings scripts/build/archive.js",
     "bib":           "biber src/main",
     "cleanup":       "node --experimental-modules --no-warnings scripts/build/cleanup.js",
-    "clear-data":    "node --experimental-modules --no-warnings scripts/bin/clearDataFiles.js data/English/data",
     "compile":       "cd src && xelatex -halt-on-error main.tex && cd ..",
     "copy-pdf":      "node --experimental-modules --no-warnings scripts/build/copyPDF.js",
     "diss-version":  "node --experimental-modules --no-warnings scripts/build/version.js",
