@@ -95,4 +95,4 @@ process_file <- function(file_path) {
 }
 
 # clean each file
-lapply(files[10], process_file)
+lapply(files, process_file)
