@@ -22,23 +22,15 @@ This readme documents the technical steps relating to [data collection](#stage-3
 
 ### Technical Prerequisites
 
-#### Node.js
-
-Since my preferred programming language is JavaScript, the scripts for this project are written in Node.js, software that allows JavaScript to be run on a local computer. Once Node is installed on your computer, any Node script can be run from the command line with the command `node script.js`.
-
-Node also comes with the Node Package Manager (npm), which allows you to install packages that other programmers have written in Node. Any public package in the npm registry may be installed by running `npm install package-name` from the command line. npm also allows you to run scripts within a project from the command line. For example, this project has a script called `copy-pdf`, which copies the compiled LaTeX PDF from `src/main.pdf` to `dissertation.pdf`. These project-specific scripts can be run on the command line following the format `npm run copy-pdf`.
-
-For more information about Node.js and npm, visit the [Node.js][Node] and [npm][npm] websites.
-
-You will need to download Node and npm in order to run most of the scripts in this project. You can download both pieces of software from the [Node.js web page][Node]. The scripts in this repository were written using Version 12 of Node, so you may need to download that specific version in order for the scripts in this project to work correctly.
-
 #### Cloning this Repository
 
-In order to run the scripts in this project yourself, or use them with new data, you will need to follow these steps:
+This project and all its accompanying data and code are stored in a repository on [GitHub][GitHub]. In order to run the scripts in this project yourself, or use them with new data, you will need to clone this repository (copy it to your local machine), by following the instructions [here][cloning]. When this is done, all the necessary scripts will be on your computer, available for you to run.
 
-1. *Clone* this repository (copy it to your local machine). Instructions for cloning a repository may be found [here][cloning].
+#### R
 
-1. Install the necessary packages for this project by navigating to the root folder of this project in the command line and running `npm install`.
+The programming language R is one of the most widely-used programming languages for data science and statistical analysis. It is open source, and its quality and ongoing maintenance are ensured by the [R Foundation for Statistical Computing][R-Foundation]. The language is well documented, and there exists a vibrant community of developers, forums, and open-source packages for the language. Especially given that it is the most common programming language used for data preparation and statistical analysis in linguistics, I have elected to use R for all data-related scripts for this thesis.
+
+You will need to download R from the [R website][R] in order to run the scripts for this project. I also personally recommend downloading the free version of [RStudio][RStudio], which provides a convenient user interface for working with R scripts. If you are using RStudio, and once you have this repository cloned to your computer, you can open this R project by selecting `File > Open Project` in RStudio, navigating to the folder where you cloned this repository, and then selecting the file `dissertation.Rproj`.
 
 ### Stage 3: Data Collection
 
@@ -53,10 +45,9 @@ The MASC data may be downloaded from the [MASC download page][MASC-download] in 
 Preparing the MASC data for additional annotation and statistical analysis involves the following steps:
 
 1. [apply stand-off annotations](#applying-stand--off-annotations)
-1. [convert corpus to JSON](#converting-the-corpus-to-json)
 1. [remove unwanted data](#removing-unwanted-data)
 
-Details for accomplishing each of these tasks are given in the sections below. Once the stand-off annotations are applied to the corpus, you can perform all the remaining steps in this section by simply running `npm run data` from the command line.
+Details for accomplishing each of these tasks are given in the sections below.
 
 #### Applying Stand-Off Annotations
 
@@ -73,8 +64,6 @@ More information about the ANC Tool may be found [here][ANC-Tool]. Steps for con
 1. If you do not have Java installed on your computer, download it from [here][Java] and then install it on your computer.
 
 1. Run the ANC Tool following the instructions on the [ANC Tool page][ANC-Tool]. The MASC version of the ANC Tool must be run from the command line by navigating to the folder where `ANCTool-x.x.x.jar` is located and entering `run.sh` on the command line.
-
-    If you have `npm` installed on your computer and have cloned this repository, you can skip the above step and simply run `npm run anc` from the command line to start the ANC Tool.
 
 1. The first time you run the ANC Tool, it will ask you to specify the location of a resource header file. Point this to the file `resource-header.xml` located in the root of the MASC data folder you downloaded and click _Accept_.
 
@@ -98,42 +87,25 @@ More information about the ANC Tool may be found [here][ANC-Tool]. Steps for con
 
 In this repository, the converted corpus is located in the folder `data/English/data`.
 
-#### Converting the Corpus to JSON
-
-When scripting with JavaScript, I find it significantly easier to work with data in <abbr title='JavaScript Object Notation'>JSON</abbr> (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about the JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][Daffodil].
-
-To convert the MASC data to JSON format, I wrote a small JavaScript script which traverses a data directory for `.conll` files, and converts them to a JSON file where each word in the corpus is represented by a single JSON object. That JSON object contains the following fields:
-
-  - ID
-  - startIndex
-  - endIndex
-  - token
-  - lemma
-  - POS
-
-The resulting JSON files are located alongside the original `.conll` file, but with a `.json` extension instead.
-
-To convert the CoNLL-formatted files located in this project, enter the following on the command line:
-
-```cmd
-node --experimental-modules --no-warnings scripts/bin/convertCoNLL.js data/English/data
-```
-
-This will regenerate the JSON files in the MASC data directory (`data/English/data`).
-
-To convert CoNLL-formatted files in another directory, simply replace the directory in the command above (`data/English/data`) with the path to your directory of CoNLL files.
+<!-- Columns -->
+<!--
+ID
+startIndex
+endIndex
+token
+lemma
+POS
+-->
 
 #### Removing Unwanted Data
 
 As mentioned above, data selection occurs at several stages of the data workflow for this project. The MASC data contains many tokens which are not relevant for this study, specifically punctuation, numerals, and the possessive `'s` (which is treated as a separate token by the OANC). Rather than run computationally-intense statistical scripts on extraneous data, I elected to remove these unwanted tokens from the data set before moving on to later steps. Since this thesis is also only focused on lexical flexibility between the major parts of speech—noun, verb, and adjective—I also removed any word tokens from other parts of speech such as Determiners, etc.
 
-To achieve this, I wrote a script that removes these unnecessary tokens from the JSON files generated in the previous step. You can run this script on the command line using the following command:
+Several columns in the CoNLL files are also unnecessary for this project, and can likewise be removed.
 
-```cmd
-node --experimental-modules --no-warnings scripts/bin/removeUnwantedTokens.js data/English/data
-```
+To accomplish these two tasks, I wrote the R script located in `scripts/data/clean_data.R`
 
-You can run this script on JSON files in a different directory by replacing `data/English/data` with the path to your directory instead.
+<!-- Describe what this script does and while files it produces -->
 
 ### Stage 6: Quantitative Analysis
 
@@ -239,10 +211,14 @@ Add copyright and license for each section of this repository
 [cloning]:           https://help.github.com/en/articles/cloning-a-repository
 [Daffodil]:          https://format.digitallinguistics.io/
 [dissertation]:      https://files.danielhieber.com/publications/dissertation.pdf
+[GitHub]:            https://github.com/dwhieb/dissertation
 [Java]:              https://www.java.com/en/
 [JSON]:              http://json.org/
 [MASC-download]:     http://www.anc.org/data/masc/downloads/data-download/
 [OANC]:              http://www.anc.org/
 [Node]:              https://nodejs.org/
 [npm]:               https://www.npmjs.com/
+[R]:                 https://www.r-project.org/
+[R-Foundation]:      https://www.r-project.org/foundation/
+[RStudio]:           https://www.rstudio.com/
 [tags2dlx]:          https://developer.digitallinguistics.io/tags2dlx/
