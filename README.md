@@ -22,23 +22,27 @@ This readme documents the technical steps relating to [data collection](#stage-3
 
 ### Technical Prerequisites
 
-#### Node.js
+#### Cloning this Repository
 
-Since my preferred programming language is JavaScript, the scripts for this project are written in Node.js, software that allows JavaScript to be run on a local computer. Once Node is installed on your computer, any Node script can be run from the command line with the command `node script.js`.
+This project and all its accompanying data and code are stored in a repository on [GitHub][GitHub]. In order to run the scripts in this project yourself, or use them with new data, you will need to clone this repository (copy it to your local computer), by following the instructions [here][cloning]. When this is done, all the necessary scripts will be on your computer, available for you to run.
 
-Node also comes with the Node Package Manager (npm), which allows you to install packages that other programmers have written in Node. Any public package in the npm registry may be installed by running `npm install package-name` from the command line. npm also allows you to run scripts within a project from the command line. For example, this project has a script called `copy-pdf`, which copies the compiled LaTeX PDF from `src/main.pdf` to `dissertation.pdf`. These project-specific scripts can be run on the command line following the format `npm run copy-pdf`.
+#### Running Scripts
+
+While the inferential statistics and data visualization for this thesis were undertaken using the R programming language, R is not well suited to large-scale data manipulation or processing of large files (Adler [2010](#Adler2010): 157&ndash;158). Therefore it is generally recommended that data preprocessing be conducted using other programming languages. In linguistics, this is typically done with Python. However, since the programming language I am most comfortable with is JavaScript, the scripts for this project are written in Node.js, software that allows JavaScript to be run on a local computer.
+
+Node also comes with the Node Package Manager (npm), which allows you to install packages that other programmers have written in Node. Any public package in the npm registry may be installed by running `npm install {package-name}` from the command line.
 
 For more information about Node.js and npm, visit the [Node.js][Node] and [npm][npm] websites.
 
 You will need to download Node and npm in order to run most of the scripts in this project. You can download both pieces of software from the [Node.js web page][Node]. The scripts in this repository were written using Version 12 of Node, so you may need to download that specific version in order for the scripts in this project to work correctly.
 
-#### Cloning this Repository
+Once Node is installed on your computer, any Node script can be run from the command line with the command `node {filename}`.
 
-In order to run the scripts in this project yourself, or use them with new data, you will need to follow these steps:
+npm also allows you to run save commonly-used command-line commands as project-specific scripts, saving you from having to retype the command and all its arguments each time you want to run it. You can run any of the npm scripts in this repository from the command line following the format `npm run {script-name}`.
 
-1. *Clone* this repository (copy it to your local machine). Instructions for cloning a repository may be found [here][cloning].
+#### Installing the Project
 
-1. Install the necessary packages for this project by navigating to the root folder of this project in the command line and running `npm install`.
+Once you have cloned this repository and installed npm and Node, install the necessary packages for this project by navigating to the root folder of the repository in the command line and running `npm install`.
 
 ### Stage 3: Data Collection
 
@@ -102,7 +106,7 @@ In this repository, the converted corpus is located in the folder `data/English/
 
 When scripting with JavaScript, I find it significantly easier to work with data in <abbr title='JavaScript Object Notation'>JSON</abbr> (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about the JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][Daffodil].
 
-To convert the MASC data to JSON format, I wrote a small JavaScript script which traverses a data directory for `.conll` files, and converts them to a JSON file where each word in the corpus is represented by a single JSON object. That JSON object contains the following fields:
+To convert the MASC data to JSON format, I wrote a small JavaScript script which traverses a data directory for `.conll` files, and converts them to a JSON file where each word in the corpus is represented by a single JSON object. That JSON object contains the following fields (note that the original CoNLL files contained more fields than this, but with irrelevant data):
 
   - ID
   - startIndex
@@ -125,9 +129,9 @@ To convert CoNLL-formatted files in another directory, simply replace the direct
 
 #### Removing Unwanted Data
 
-As mentioned above, data selection occurs at several stages of the data workflow for this project. The MASC data contains many tokens which are not relevant for this study, specifically punctuation, numerals, and the possessive `'s` (which is treated as a separate token by the OANC). Rather than run computationally-intense statistical scripts on extraneous data, I elected to remove these unwanted tokens from the data set before moving on to later steps. Since this thesis is also only focused on lexical flexibility between the major parts of speech—noun, verb, and adjective—I also removed any word tokens from other parts of speech such as Determiners, etc.
+As mentioned above, data selection occurs at several stages of the data workflow for this project. The MASC data contains many tokens which should not be included in any frequency counts, specifically punctuation and the possessive `'s` (which is treated as a separate token by the OANC). Rather than run computationally-intense statistical scripts on extraneous data, I elected to remove this data at the outset instead.
 
-To achieve this, I wrote a script that removes these unnecessary tokens from the JSON files generated in the previous step. You can run this script on the command line using the following command:
+To achieve this, I wrote a script that removes unnecessary tokens from the JSON files generated in the previous step. You can run this script on the command line using the following command:
 
 ```cmd
 node --experimental-modules --no-warnings scripts/bin/removeUnwantedTokens.js data/English/data
@@ -137,31 +141,33 @@ You can run this script on JSON files in a different directory by replacing `dat
 
 ### Stage 6: Quantitative Analysis
 
-Once the data are prepared and stored as JSON files, they are ready for statistical analysis. For this project, I generated the following statistical data:
+Once the data are prepared and stored as JSON files, they are ready for statistical analysis. For this project, I generated statistical data on three types of linguistic objects—wordforms, lexemes, and archlexemes. For each of these types, I wrote a script in the `scripts/stats` folder which generates a list of items of that type, and the relevant statistics about each item:
 
-- [wordform frequencies](#wordform-frequencies)
-- [lexeme frequencies](#lexeme-frequencies)
-- [archlexeme frequencies](#archlexeme-frequencies)
+- `generateWordforms.js`: Generates a tab-delimited file containing each unique wordform in the corpus and its raw frequency
 
-All of the statistical data for this project can be generated with a single command:
+- `generateLexemes.js`: Generates a tab-delimited file containing each lexeme in the corpus and its raw frequency
+
+- `generateArchlexemes.js`: Generates a tab-delimited file containing each archlexeme in the corpus and its raw frequency
+
+Each of these scripts can be run with the following command:
+
+```cmd
+node --experimental-modules --no-warnings scripts/bin/{script}.js {data directory} {output path}
+```
+
+`{script}` is the name of the script to run (`generateWordforms`, `generateLexemes`, or `generateArchlexemes`), `{data directory}` is the path to your directory of JSON data files, and `{output path}` is the path where you would like the resulting file generated. For example:
+
+```cmd
+node --experimental-modules --no-warnings scripts/bin/generateArchlexemes.js data/English/data data/English/stats/archlexemes.tsv
+```
+
+All three of these statistical files can also be generated with a single command:
 
 ```cmd
 npm run stats
 ```
 
-Alternatively, the procedures for generating each type of statistical data are covered in the sections below.
-
-#### Wordform Frequencies
-
-The raw frequencies of each wordform in the corpus may be generated by running the following on the command line:
-
-```cmd
-node --experimental-modules --no-warnings scripts/bin/generateWordforms.js {data directory} {output path}
-```
-
-Replace `{data directory}` with the path to the data directory (`data/English/data` in this project) and `{output path}` with the path to the file where you would like the resulting tab-separated file saved (`data/English/stats/wordforms.tsv` in this project).
-
-The script will generate a tab-delimited file (`.tsv`) containing each wordform in the corpus and its token frequency, and will look similar to the table below.
+The resulting files will look something like this:
 
 Wordform | Frequency
 -------- | ---------
@@ -170,46 +176,6 @@ to_TO    | 13480
 and_CC   | 12527
 of_IN    | 12000
 a_DT     | 9748
-
-#### Lexeme Frequencies
-
-The raw frequencies of each lexeme in the corpus may be generated by running the following on the command line:
-
-```cmd
-node --experimental-modules --no-warnings scripts/bin/generateLexemes.js {data directory} {output path}
-```
-
-Replace `{data directory}` with the path to the data directory (`data/English/data` in this project) and `{output path}` with the path to the file where you would like the resulting tab-separated file saved (`data/English/stats/lexemes.tsv` in this project).
-
-The script will generate a tab-delimited file (`.tsv`) containing each lexeme in the corpus and its token frequency, and will look similar to the table below.
-
-Lexeme | Frequency
------- | ---------
-the_DT | 26116
-to_TO  | 13480
-and_CC | 12528
-of_IN  | 11999
-a_DT   | 9748
-
-#### Archlexeme Frequencies
-
-The raw frequencies of each archlexeme (a lexeme that crosses traditional part-of-speech boundaries) in the corpus may be generated by running the following on the command line:
-
-```cmd
-node --experimental-modules --no-warnings scripts/bin/generateArchlexemes.js {data directory} {output path}
-```
-
-Replace `{data directory}` with the path to the data directory (`data/English/data` in this project) and `{output path}` with the path to the file where you would like the resulting tab-separated file saved (`data/English/stats/archlexemes.tsv` in this project).
-
-The script will generate a tab-delimited file (`.tsv`) containing each lexeme in the corpus and its token frequency, and will look similar to the table below.
-
-Archlexeme | Frequency
----------- | ---------
-the	       | 26137
-be	       | 19018
-to	       | 13548
-and	       | 12528
-of	       | 12005
 
 ## Legal
 
@@ -231,6 +197,8 @@ Add copyright and license for each section of this repository
 
 ## References
 
+* <p id=Adler2010>Adler, Joseph. 2010. <cite>R in a nutshell: A quick desktop reference</cite>. O'Reilly</p>
+
 * <p id=MarcusSantoriniMarcinkiewicz1993>Marcus, Mitchell, Beatrice Santorini & Mary Ann Marcinkiewicz. 1993. Building a large annotated corpus of English: The Penn Treebank. <cite>Computational Linguistics</cite> 19(2). 313–330.<p>
 
 <!-- Links -->
@@ -239,6 +207,7 @@ Add copyright and license for each section of this repository
 [cloning]:           https://help.github.com/en/articles/cloning-a-repository
 [Daffodil]:          https://format.digitallinguistics.io/
 [dissertation]:      https://files.danielhieber.com/publications/dissertation.pdf
+[GitHub]:            https://github.com/dwhieb/dissertation
 [Java]:              https://www.java.com/en/
 [JSON]:              http://json.org/
 [MASC-download]:     http://www.anc.org/data/masc/downloads/data-download/
