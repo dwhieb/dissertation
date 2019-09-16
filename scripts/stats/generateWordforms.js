@@ -1,4 +1,7 @@
-import { aggregate } from '../utilities/index.js';
+import {
+  aggregate,
+  isMajorCategory,
+} from '../utilities/index.js';
 
 /**
  * Column names for the generated CSV file
@@ -16,6 +19,9 @@ const columns = [
  * @param  {String} lemma       The lemma for the word token
  */
 function aggregateWordforms(frequencies, { POS, token }) {
+
+  // NB: Comment out the following line to calculate archlexeme frequencies based on all word classes
+  if (!isMajorCategory(POS)) return;
 
   const wordform = `${token.toLowerCase()}_${POS}`;
 
