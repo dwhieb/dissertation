@@ -39,7 +39,7 @@ function isBadOneLetterWord(token) {
   && !(
     token === `a`
     || token === `I`
-    || /[0-9]/u.test(token)
+    || /^[0-9]$/u.test(token)
   );
 }
 
