@@ -1,4 +1,7 @@
-import { aggregate } from '../utilities/index.js';
+import {
+  aggregate,
+  isMajorCategory,
+} from '../utilities/index.js';
 
 /**
  * The columns to use at the top of the resulting TSV file
@@ -16,6 +19,9 @@ const columns = [
  * @param  {String} lemma       The lemma for the word token
  */
 function aggregateLexemes(frequencies, { POS, lemma }) {
+
+  // NB: Comment out the following line to calculate lexeme frequencies based on all word classes
+  if (!isMajorCategory(POS)) return;
 
   const lexeme = `${lemma}_${POS}`;
 
