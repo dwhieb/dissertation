@@ -12,9 +12,9 @@ const lexicalTags     = yamlParser.load(yaml);
 
 /**
  * Determines whether a POS tag belongs to the major categories of Noun, Verb, or Adjective according to the Penn tag set
- * @param  {String}  POS The Penn tag to test
+ * @param  {String}  tag The Penn tag to test
  * @return {Boolean}
  */
-export default function isMajorCategory(POS) {
-  return lexicalTags.includes(POS);
+export default function isMajorCategory(tag) {
+  return lexicalTags.includes(tag);
 }

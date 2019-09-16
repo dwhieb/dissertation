@@ -17,9 +17,9 @@ const columns = [
  * @param  {Map}    frequencies A Map of archlexeme frequencies
  * @param  {String} lemma       The lemma for the word token
  */
-function aggregateArchlexemes(frequencies, { lemma, POS }) {
+function aggregateArchlexemes(frequencies, { lemma, tag }) {
   // NB: Comment out the following line to calculate archlexeme frequencies based on all word classes
-  if (!isMajorCategory(POS)) return;
+  if (!isMajorCategory(tag)) return;
   if (frequencies.has(lemma)) frequencies.set(lemma, frequencies.get(lemma) + 1);
   else frequencies.set(lemma, 1);
 }

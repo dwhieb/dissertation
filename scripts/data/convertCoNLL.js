@@ -9,7 +9,7 @@ const columns = [
   `endIndex`,
   `token`,
   `lemma`,
-  `POS`,
+  `tag`,
 ];
 
 const parserOptions = {
