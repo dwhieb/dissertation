@@ -10,16 +10,15 @@ const { rename, unlink } = fs.promises;
 // eslint-disable-next-line no-shadow, no-underscore-dangle
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const badTagsPath     = path.join(__dirname, `../constants/nonLexicalTags.yml`);
-const goodCharsRegExp = /^[A-Za-z']+$/u;
-const tagsPath        = path.join(__dirname, `../constants/tags.yml`);
+const badTags = [
+  `POS`,
+  `SYM`,
+];
 
-const pennTagsYAML = fs.readFileSync(tagsPath); // eslint-disable-line no-sync
+const pennTagsPath = path.join(__dirname, `../constants/tags.yml`);
+const pennTagsYAML = fs.readFileSync(pennTagsPath); // eslint-disable-line no-sync
 const pennTagsJSON = yamlParser.load(pennTagsYAML);
-const pos          = Object.keys(pennTagsJSON);
-
-const badTagsYAML = fs.readFileSync(badTagsPath); // eslint-disable-line no-sync
-const badTags     = yamlParser.load(badTagsYAML);
+const pennTags     = Object.keys(pennTagsJSON);
 
 /**
  * Checks whether a word contains unnecessary data
@@ -27,10 +26,9 @@ const badTags     = yamlParser.load(badTagsYAML);
  * @return {Boolean}
  */
 function isBadData({ POS, token }) {
-  return badTags.includes(POS)      // unnecessary part of speech
-  || !pos.includes(POS)            // not a recognized part of speech
-  || isBadOneLetterWord(token)     // one letter other than "a" or "I"
-  || !goodCharsRegExp.test(token); // includes Arabic numerals or other punctuation
+  return badTags.includes(POS)  // unnecessary part of speech
+  || !pennTags.includes(POS)    // not a recognized part of speech
+  || isBadOneLetterWord(token); // one letter other than "a" or "I"
 }
 
 /**
@@ -41,6 +39,7 @@ function isBadOneLetterWord(token) {
   && !(
     token === `a`
     || token === `I`
+    || /[0-9]/u.test(token)
   );
 }
 
