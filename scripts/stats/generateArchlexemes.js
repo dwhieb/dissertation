@@ -1,4 +1,7 @@
-import { aggregate } from '../utilities/index.js';
+import {
+  aggregate,
+  isMajorCategory,
+} from '../utilities/index.js';
 
 /**
  * The columns to use at the top of the resulting TSV file
@@ -14,7 +17,8 @@ const columns = [
  * @param  {Map}    frequencies A Map of archlexeme frequencies
  * @param  {String} lemma       The lemma for the word token
  */
-function aggregateArchlexemes(frequencies, { lemma }) {
+function aggregateArchlexemes(frequencies, { lemma, POS }) {
+  if (!isMajorCategory(POS)) return;
   if (frequencies.has(lemma)) frequencies.set(lemma, frequencies.get(lemma) + 1);
   else frequencies.set(lemma, 1);
 }

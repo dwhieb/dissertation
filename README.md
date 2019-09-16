@@ -141,7 +141,7 @@ You can run this script on JSON files in a different directory by replacing `dat
 
 ### Stage 6: Quantitative Analysis
 
-Once the data are prepared and stored as JSON files, they are ready for statistical analysis. For this project, I generated statistical data on three types of linguistic objects—wordforms, lexemes, and archlexemes. For each of these types, I wrote a script in the `scripts/stats` folder which generates a list of items of that type, and the relevant statistics about each item:
+Once the data are prepared and stored as JSON files, they are ready for statistical analysis. For this project, I generated statistical data on three types of linguistic objects—wordforms, lexemes, and archlexemes. I generated the statistical data only for words falling under the major lexical categories of Noun, Verb, and Adjective. For each linguistic type, I wrote a script in the `scripts/stats` folder which generates a list of items of that type, and the relevant statistics about each item:
 
 - `generateWordforms.js`: Generates a tab-delimited file containing each unique wordform in the corpus and its raw frequency
 
@@ -176,6 +176,39 @@ to_TO    | 13480
 and_CC   | 12527
 of_IN    | 12000
 a_DT     | 9748
+
+#### Choosing Categories to Include
+
+The decision to calculate frequencies for only the major lexical categories of Noun, Verb, and Adjective is based on the fact that there were no significant disparities between the distribution of all the words in the corpus (whether lexical or grammatical) and the distribution of only the major lexical words in the corpus. Since only the major lexical categories of Noun, Verb, and Adjective are of interest for this study, this was sufficient justification to exclude any non-lexical words from the statistical data.
+
+The figure below shows the frequency distribution of all wordforms in the corpus on the left, and the frequency distribution of wordforms which are members of major lexical categories on the right. There does not appear to be any significant difference between their distributions.
+
+<!-- figure here -->
+<!-- location of script to reproduce figure -->
+
+The next figure shows the frequency distribution of all lexemes in the corpus on the left, and the frequency distribution of only lexemes which are members of major lexical categories on the right. Again, there does not appear to be any significant difference between their distributions.
+
+<!-- figure here -->
+<!-- location of script to reproduce figure -->
+
+The left side of the final figure (below) shows the frequency distribution for archlexemes when lexemes of all word classes are included. The right side of this figure shows the frequency distribution for archlexemes when only lexemes in the major lexical categories are included. There does not appear to be any significant difference between the two distributions.
+
+<!-- figure here -->
+<!-- location of script to reproduce figure -->
+
+Note that the scales for all three sets of histograms are the same.
+
+Given that at each linguistic level there did not seem to be any significant difference in frequency distributions when the data were limited to just the major lexical categories of Noun, Verb, and Adjective, I elected to focus on just these data, to the exclusion of other word classes.
+
+<hr>
+
+The raw data used to create the above figures are in the following locations:
+
+- `data/English/stats/wordforms_all.tsv`
+- `data/English/stats/lexemes_all.tsv`
+- `data/English/stats/archlexemes_all.tsv`
+
+These datasets were produced with earlier versions of the `generateWordforms.js`, `generateLexemes.js`, and `generateArchlexemes.js` scripts which did not filter out lexical categories. These datasets can still be reproduced, however, by commenting out a single line in each of those scripts (indicated with a comment within the script itself).
 
 ## Legal
 
