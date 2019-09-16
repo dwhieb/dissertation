@@ -13,6 +13,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const badTags = [
   `POS`,
   `SYM`,
+  `UH`,
 ];
 
 const pennTagsPath = path.join(__dirname, `../../data/English/PennTags.yml`);
