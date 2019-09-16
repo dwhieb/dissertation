@@ -15,7 +15,7 @@ const badTags = [
   `SYM`,
 ];
 
-const pennTagsPath = path.join(__dirname, `../constants/PennTags.yml`);
+const pennTagsPath = path.join(__dirname, `../../data/English/PennTags.yml`);
 const pennTagsYAML = fs.readFileSync(pennTagsPath); // eslint-disable-line no-sync
 const pennTagsJSON = yamlParser.load(pennTagsYAML);
 const pennTags     = Object.keys(pennTagsJSON);
