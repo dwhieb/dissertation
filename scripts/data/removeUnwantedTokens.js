@@ -25,8 +25,9 @@ const pennTags     = Object.keys(pennTagsJSON);
  * @param  {Object}  word The word as a POJO
  * @return {Boolean}
  */
-function isBadData({ POS, token }) {
-  return badTags.includes(POS)  // unnecessary part of speech
+function isBadData({ lemma, POS, token }) {
+  return lemma === `_`          // URL or other non-lexical information
+  || badTags.includes(POS)      // unnecessary part of speech
   || !pennTags.includes(POS)    // not a recognized part of speech
   || isBadOneLetterWord(token); // one letter other than "a" or "I"
 }
