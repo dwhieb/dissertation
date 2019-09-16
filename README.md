@@ -12,13 +12,13 @@ The process of obtaining the results from this study, as in all empirical scient
 2. data selection
 3. [data collection](#stage-3-data-collection)
 4. [data preparation](#stage-4-data-preparation)
-5. data coding
+5. data annotation
 6. [quantitative analysis](#stage-6-quantitative-analysis)
 7. qualitative analysis
 
 There are not always clear boundaries between each stage (for example, a data selection step occurs at several places), but the above steps nonetheless provide a useful overview of the process.
 
-This readme documents the technical steps relating to [data collection](#stage-3-data-collection), [data preparation](#stage-4-data-preparation), and [quantitative analysis](#stage-6-quantitative-analysis). Discussion of the theoretical prerequisites, data coding, and qualitative analysis of the data may be found in my dissertation document, downloadable [here][dissertation].
+This readme documents the technical steps relating to [data collection](#stage-3-data-collection), [data preparation](#stage-4-data-preparation), and [quantitative analysis](#stage-6-quantitative-analysis). Discussion of the theoretical prerequisites, data annotation, and qualitative analysis of the data may be found in my dissertation document, downloadable [here][dissertation].
 
 ### Technical Prerequisites
 
@@ -64,7 +64,7 @@ Details for accomplishing each of these tasks are given in the sections below. O
 
 #### Applying Stand-Off Annotations
 
-Some types of annotations, such as part-of-speech and lemma information, have already been produced by the research team behind the OANC. These annotations are freely available for download along with the OANC data itself. All annotations for the OANC are *stand-off* annotations, where each annotation is stored in a separate file from the primary data. Therefore as a first step in data preparation, it is necessary to merge the part-of-speech and lemma information directly into the primary data for ease of scripting and additional data coding.
+Some types of annotations, such as part-of-speech and lemma information, have already been produced by the research team behind the OANC. These annotations are freely available for download along with the OANC data itself. All annotations for the OANC are *stand-off* annotations, where each annotation is stored in a separate file from the primary data. Therefore as a first step in data preparation, it is necessary to merge the part-of-speech and lemma information directly into the primary data for ease of scripting and additional data annotation.
 
 The OANC project provides an [ANC Tool][ANC-Tool] for this purpose. This tool provides various ways of generating tagged versions of the OANC corpus. For this project, I chose to generate the corpus in CoNLL format (that used by the Conference on Natural Language Learning). This format represents each text as a tab-delimited text file, so that each word in the corpus is one row whose columns contain information about that word's part of speech and lemma.
 
