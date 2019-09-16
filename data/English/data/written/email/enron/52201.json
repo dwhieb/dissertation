@@ -1,5 +1,21 @@
 [
 {
+  "ID": "1",
+  "startIndex": "3",
+  "endIndex": "13",
+  "token": "Message-ID",
+  "lemma": "message-id",
+  "POS": "NNP"
+},
+{
+  "ID": "4",
+  "startIndex": "16",
+  "endIndex": "58",
+  "token": "7553175.1075863444700.JavaMail.evans@thyme",
+  "lemma": "7553175.1075863444700.javamail.evans@thyme",
+  "POS": "NN"
+},
+{
   "ID": "6",
   "startIndex": "60",
   "endIndex": "64",
@@ -16,12 +32,44 @@
   "POS": "NNP"
 },
 {
+  "ID": "10",
+  "startIndex": "71",
+  "endIndex": "73",
+  "token": "17",
+  "lemma": "17",
+  "POS": "CD"
+},
+{
   "ID": "11",
   "startIndex": "74",
   "endIndex": "77",
   "token": "Sep",
   "lemma": "sep",
   "POS": "NNP"
+},
+{
+  "ID": "12",
+  "startIndex": "78",
+  "endIndex": "82",
+  "token": "2001",
+  "lemma": "2001",
+  "POS": "CD"
+},
+{
+  "ID": "13",
+  "startIndex": "83",
+  "endIndex": "91",
+  "token": "21:01:37",
+  "lemma": "21:01:37",
+  "POS": "NN"
+},
+{
+  "ID": "15",
+  "startIndex": "93",
+  "endIndex": "97",
+  "token": "0700",
+  "lemma": "0700",
+  "POS": "CD"
 },
 {
   "ID": "17",
@@ -32,6 +80,38 @@
   "POS": "NNP"
 },
 {
+  "ID": "19",
+  "startIndex": "104",
+  "endIndex": "108",
+  "token": "From",
+  "lemma": "from",
+  "POS": "IN"
+},
+{
+  "ID": "21",
+  "startIndex": "110",
+  "endIndex": "132",
+  "token": "wolak@zia.stanford.edu",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
+  "ID": "22",
+  "startIndex": "133",
+  "endIndex": "135",
+  "token": "To",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
+  "ID": "24",
+  "startIndex": "137",
+  "endIndex": "157",
+  "token": "j.kaminski@enron.com",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
   "ID": "25",
   "startIndex": "158",
   "endIndex": "165",
@@ -40,11 +120,35 @@
   "POS": "NNP"
 },
 {
+  "ID": "27",
+  "startIndex": "168",
+  "endIndex": "173",
+  "token": "Mime-",
+  "lemma": "mime-",
+  "POS": "NNP"
+},
+{
   "ID": "28",
   "startIndex": "173",
   "endIndex": "180",
   "token": "Version",
   "lemma": "version",
+  "POS": "NNP"
+},
+{
+  "ID": "30",
+  "startIndex": "182",
+  "endIndex": "185",
+  "token": "1.0",
+  "lemma": "1.0",
+  "POS": "CD"
+},
+{
+  "ID": "31",
+  "startIndex": "186",
+  "endIndex": "194",
+  "token": "Content-",
+  "lemma": "content-",
   "POS": "NNP"
 },
 {
@@ -80,12 +184,44 @@
   "POS": "NN"
 },
 {
+  "ID": "40",
+  "startIndex": "220",
+  "endIndex": "228",
+  "token": "us-ascii",
+  "lemma": "us-ascius",
+  "POS": "JJ"
+},
+{
+  "ID": "41",
+  "startIndex": "229",
+  "endIndex": "237",
+  "token": "Content-",
+  "lemma": "content-",
+  "POS": "NNP"
+},
+{
+  "ID": "42",
+  "startIndex": "237",
+  "endIndex": "246",
+  "token": "Transfer-",
+  "lemma": "transfer-",
+  "POS": "NNP"
+},
+{
   "ID": "43",
   "startIndex": "246",
   "endIndex": "254",
   "token": "Encoding",
   "lemma": "encode",
   "POS": "NNP"
+},
+{
+  "ID": "45",
+  "startIndex": "256",
+  "endIndex": "257",
+  "token": "7",
+  "lemma": "7",
+  "POS": "CD"
 },
 {
   "ID": "46",
@@ -104,6 +240,14 @@
   "POS": "NNP"
 },
 {
+  "ID": "49",
+  "startIndex": "273",
+  "endIndex": "274",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
+},
+{
   "ID": "50",
   "startIndex": "275",
   "endIndex": "280",
@@ -112,12 +256,52 @@
   "POS": "VBP"
 },
 {
+  "ID": "51",
+  "startIndex": "281",
+  "endIndex": "285",
+  "token": "with",
+  "lemma": "with",
+  "POS": "IN"
+},
+{
+  "ID": "52",
+  "startIndex": "286",
+  "endIndex": "289",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
+},
+{
+  "ID": "53",
+  "startIndex": "290",
+  "endIndex": "294",
+  "token": "that",
+  "lemma": "that",
+  "POS": "IN"
+},
+{
+  "ID": "54",
+  "startIndex": "295",
+  "endIndex": "297",
+  "token": "it",
+  "lemma": "it",
+  "POS": "PRP"
+},
+{
   "ID": "55",
   "startIndex": "297",
   "endIndex": "299",
   "token": "'s",
   "lemma": "be",
   "POS": "VBZ"
+},
+{
+  "ID": "56",
+  "startIndex": "300",
+  "endIndex": "301",
+  "token": "a",
+  "lemma": "a",
+  "POS": "DT"
 },
 {
   "ID": "57",
@@ -144,6 +328,14 @@
   "POS": "VBP"
 },
 {
+  "ID": "60",
+  "startIndex": "321",
+  "endIndex": "323",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "61",
   "startIndex": "324",
   "endIndex": "329",
@@ -160,12 +352,44 @@
   "POS": "RB"
 },
 {
+  "ID": "63",
+  "startIndex": "335",
+  "endIndex": "338",
+  "token": "and",
+  "lemma": "and",
+  "POS": "CC"
+},
+{
+  "ID": "64",
+  "startIndex": "339",
+  "endIndex": "343",
+  "token": "over",
+  "lemma": "over",
+  "POS": "IN"
+},
+{
   "ID": "65",
   "startIndex": "344",
   "endIndex": "349",
   "token": "again",
   "lemma": "again",
   "POS": "RB"
+},
+{
+  "ID": "67",
+  "startIndex": "352",
+  "endIndex": "353",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
+},
+{
+  "ID": "68",
+  "startIndex": "354",
+  "endIndex": "356",
+  "token": "ca",
+  "lemma": "can",
+  "POS": "MD"
 },
 {
   "ID": "69",
@@ -184,6 +408,22 @@
   "POS": "VB"
 },
 {
+  "ID": "71",
+  "startIndex": "365",
+  "endIndex": "368",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
+},
+{
+  "ID": "72",
+  "startIndex": "369",
+  "endIndex": "372",
+  "token": "how",
+  "lemma": "how",
+  "POS": "WRB"
+},
+{
   "ID": "73",
   "startIndex": "373",
   "endIndex": "377",
@@ -200,12 +440,36 @@
   "POS": "NNS"
 },
 {
+  "ID": "75",
+  "startIndex": "390",
+  "endIndex": "391",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
+},
+{
   "ID": "76",
   "startIndex": "392",
   "endIndex": "395",
   "token": "met",
   "lemma": "meet",
   "POS": "VBD"
+},
+{
+  "ID": "77",
+  "startIndex": "396",
+  "endIndex": "400",
+  "token": "over",
+  "lemma": "over",
+  "POS": "IN"
+},
+{
+  "ID": "78",
+  "startIndex": "401",
+  "endIndex": "404",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
 },
 {
   "ID": "79",
@@ -222,6 +486,14 @@
   "token": "year",
   "lemma": "year",
   "POS": "NN"
+},
+{
+  "ID": "81",
+  "startIndex": "415",
+  "endIndex": "418",
+  "token": "who",
+  "lemma": "who",
+  "POS": "WP"
 },
 {
   "ID": "82",
@@ -264,6 +536,14 @@
   "POS": "NNS"
 },
 {
+  "ID": "87",
+  "startIndex": "445",
+  "endIndex": "448",
+  "token": "and",
+  "lemma": "and",
+  "POS": "CC"
+},
+{
   "ID": "88",
   "startIndex": "449",
   "endIndex": "458",
@@ -296,12 +576,52 @@
   "POS": "VB"
 },
 {
+  "ID": "92",
+  "startIndex": "476",
+  "endIndex": "479",
+  "token": "how",
+  "lemma": "how",
+  "POS": "WRB"
+},
+{
+  "ID": "93",
+  "startIndex": "480",
+  "endIndex": "482",
+  "token": "or",
+  "lemma": "or",
+  "POS": "CC"
+},
+{
+  "ID": "94",
+  "startIndex": "483",
+  "endIndex": "486",
+  "token": "why",
+  "lemma": "why",
+  "POS": "WRB"
+},
+{
+  "ID": "95",
+  "startIndex": "487",
+  "endIndex": "491",
+  "token": "they",
+  "lemma": "they",
+  "POS": "PRP"
+},
+{
   "ID": "96",
   "startIndex": "492",
   "endIndex": "496",
   "token": "work",
   "lemma": "work",
   "POS": "VBP"
+},
+{
+  "ID": "98",
+  "startIndex": "499",
+  "endIndex": "504",
+  "token": "These",
+  "lemma": "these",
+  "POS": "DT"
 },
 {
   "ID": "99",
@@ -328,6 +648,14 @@
   "POS": "RB"
 },
 {
+  "ID": "102",
+  "startIndex": "517",
+  "endIndex": "520",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
+},
+{
   "ID": "103",
   "startIndex": "521",
   "endIndex": "526",
@@ -344,12 +672,36 @@
   "POS": "NNS"
 },
 {
+  "ID": "105",
+  "startIndex": "536",
+  "endIndex": "538",
+  "token": "in",
+  "lemma": "in",
+  "POS": "IN"
+},
+{
   "ID": "106",
   "startIndex": "539",
   "endIndex": "549",
   "token": "Sacramento",
   "lemma": "sacramento",
   "POS": "NNP"
+},
+{
+  "ID": "108",
+  "startIndex": "551",
+  "endIndex": "554",
+  "token": "but",
+  "lemma": "but",
+  "POS": "CC"
+},
+{
+  "ID": "109",
+  "startIndex": "555",
+  "endIndex": "558",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
 },
 {
   "ID": "110",
@@ -376,12 +728,28 @@
   "POS": "NNS"
 },
 {
+  "ID": "113",
+  "startIndex": "578",
+  "endIndex": "580",
+  "token": "in",
+  "lemma": "in",
+  "POS": "IN"
+},
+{
   "ID": "114",
   "startIndex": "581",
   "endIndex": "591",
   "token": "Washington",
   "lemma": "washington",
   "POS": "NNP"
+},
+{
+  "ID": "116",
+  "startIndex": "596",
+  "endIndex": "597",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
 },
 {
   "ID": "117",
@@ -400,6 +768,22 @@
   "POS": "VBP"
 },
 {
+  "ID": "119",
+  "startIndex": "609",
+  "endIndex": "613",
+  "token": "that",
+  "lemma": "that",
+  "POS": "IN"
+},
+{
+  "ID": "120",
+  "startIndex": "614",
+  "endIndex": "617",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
+},
+{
   "ID": "121",
   "startIndex": "618",
   "endIndex": "626",
@@ -416,12 +800,28 @@
   "POS": "NN"
 },
 {
+  "ID": "123",
+  "startIndex": "637",
+  "endIndex": "640",
+  "token": "can",
+  "lemma": "can",
+  "POS": "MD"
+},
+{
   "ID": "124",
   "startIndex": "641",
   "endIndex": "645",
   "token": "play",
   "lemma": "play",
   "POS": "VB"
+},
+{
+  "ID": "126",
+  "startIndex": "647",
+  "endIndex": "649",
+  "token": "an",
+  "lemma": "an",
+  "POS": "DT"
 },
 {
   "ID": "127",
@@ -438,6 +838,14 @@
   "token": "role",
   "lemma": "role",
   "POS": "NN"
+},
+{
+  "ID": "129",
+  "startIndex": "665",
+  "endIndex": "667",
+  "token": "in",
+  "lemma": "in",
+  "POS": "IN"
 },
 {
   "ID": "130",
@@ -464,6 +872,22 @@
   "POS": "NN"
 },
 {
+  "ID": "133",
+  "startIndex": "691",
+  "endIndex": "694",
+  "token": "and",
+  "lemma": "and",
+  "POS": "CC"
+},
+{
+  "ID": "134",
+  "startIndex": "695",
+  "endIndex": "697",
+  "token": "in",
+  "lemma": "in",
+  "POS": "IN"
+},
+{
   "ID": "135",
   "startIndex": "698",
   "endIndex": "708",
@@ -472,12 +896,28 @@
   "POS": "VBG"
 },
 {
+  "ID": "136",
+  "startIndex": "709",
+  "endIndex": "712",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
+},
+{
   "ID": "137",
   "startIndex": "713",
   "endIndex": "718",
   "token": "logic",
   "lemma": "logic",
   "POS": "NN"
+},
+{
+  "ID": "138",
+  "startIndex": "719",
+  "endIndex": "721",
+  "token": "of",
+  "lemma": "of",
+  "POS": "IN"
 },
 {
   "ID": "139",
@@ -496,12 +936,36 @@
   "POS": "NN"
 },
 {
+  "ID": "143",
+  "startIndex": "746",
+  "endIndex": "747",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
+},
+{
+  "ID": "144",
+  "startIndex": "747",
+  "endIndex": "749",
+  "token": "'d",
+  "lemma": "have",
+  "POS": "MD"
+},
+{
   "ID": "145",
   "startIndex": "750",
   "endIndex": "754",
   "token": "like",
   "lemma": "like",
   "POS": "VB"
+},
+{
+  "ID": "146",
+  "startIndex": "755",
+  "endIndex": "757",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
 },
 {
   "ID": "147",
@@ -512,12 +976,28 @@
   "POS": "VB"
 },
 {
+  "ID": "148",
+  "startIndex": "764",
+  "endIndex": "768",
+  "token": "that",
+  "lemma": "that",
+  "POS": "WDT"
+},
+{
   "ID": "149",
   "startIndex": "769",
   "endIndex": "771",
   "token": "is",
   "lemma": "be",
   "POS": "VBZ"
+},
+{
+  "ID": "150",
+  "startIndex": "772",
+  "endIndex": "774",
+  "token": "in",
+  "lemma": "in",
+  "POS": "IN"
 },
 {
   "ID": "151",
@@ -534,6 +1014,22 @@
   "token": "part",
   "lemma": "part",
   "POS": "NN"
+},
+{
+  "ID": "153",
+  "startIndex": "786",
+  "endIndex": "790",
+  "token": "what",
+  "lemma": "what",
+  "POS": "WP"
+},
+{
+  "ID": "154",
+  "startIndex": "791",
+  "endIndex": "792",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
 },
 {
   "ID": "155",
@@ -558,6 +1054,14 @@
   "token": "trying",
   "lemma": "try",
   "POS": "VBG"
+},
+{
+  "ID": "158",
+  "startIndex": "810",
+  "endIndex": "812",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
 },
 {
   "ID": "159",

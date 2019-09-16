@@ -1,5 +1,21 @@
 [
 {
+  "ID": "1",
+  "startIndex": "3",
+  "endIndex": "13",
+  "token": "Message-ID",
+  "lemma": "message-id",
+  "POS": "NNP"
+},
+{
+  "ID": "4",
+  "startIndex": "16",
+  "endIndex": "59",
+  "token": "29555721.1075857154511.JavaMail.evans@thyme",
+  "lemma": "29555721.1075857154511.javamail.evans@thyme",
+  "POS": "NN"
+},
+{
   "ID": "6",
   "startIndex": "61",
   "endIndex": "65",
@@ -16,6 +32,14 @@
   "POS": "NNP"
 },
 {
+  "ID": "10",
+  "startIndex": "72",
+  "endIndex": "74",
+  "token": "14",
+  "lemma": "14",
+  "POS": "CD"
+},
+{
   "ID": "11",
   "startIndex": "75",
   "endIndex": "78",
@@ -24,12 +48,68 @@
   "POS": "NNP"
 },
 {
+  "ID": "12",
+  "startIndex": "79",
+  "endIndex": "83",
+  "token": "2000",
+  "lemma": "2000",
+  "POS": "CD"
+},
+{
+  "ID": "13",
+  "startIndex": "84",
+  "endIndex": "92",
+  "token": "06:28:00",
+  "lemma": "06:28:00",
+  "POS": "NN"
+},
+{
+  "ID": "15",
+  "startIndex": "94",
+  "endIndex": "98",
+  "token": "0700",
+  "lemma": "0700",
+  "POS": "CD"
+},
+{
   "ID": "17",
   "startIndex": "100",
   "endIndex": "103",
   "token": "PDT",
   "lemma": "pdt",
   "POS": "NNP"
+},
+{
+  "ID": "19",
+  "startIndex": "105",
+  "endIndex": "109",
+  "token": "From",
+  "lemma": "from",
+  "POS": "IN"
+},
+{
+  "ID": "21",
+  "startIndex": "111",
+  "endIndex": "136",
+  "token": "benjamin.rogers@enron.com",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
+  "ID": "22",
+  "startIndex": "137",
+  "endIndex": "139",
+  "token": "To",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
+  "ID": "24",
+  "startIndex": "141",
+  "endIndex": "164",
+  "token": "stuart.zisman@enron.com",
+  "lemma": "_",
+  "POS": "NN"
 },
 {
   "ID": "25",
@@ -56,11 +136,35 @@
   "POS": "NNP"
 },
 {
+  "ID": "29",
+  "startIndex": "197",
+  "endIndex": "202",
+  "token": "Mime-",
+  "lemma": "mime-",
+  "POS": "NNP"
+},
+{
   "ID": "30",
   "startIndex": "202",
   "endIndex": "209",
   "token": "Version",
   "lemma": "version",
+  "POS": "NNP"
+},
+{
+  "ID": "32",
+  "startIndex": "211",
+  "endIndex": "214",
+  "token": "1.0",
+  "lemma": "1.0",
+  "POS": "CD"
+},
+{
+  "ID": "33",
+  "startIndex": "215",
+  "endIndex": "223",
+  "token": "Content-",
+  "lemma": "content-",
   "POS": "NNP"
 },
 {
@@ -96,12 +200,44 @@
   "POS": "NN"
 },
 {
+  "ID": "42",
+  "startIndex": "249",
+  "endIndex": "257",
+  "token": "us-ascii",
+  "lemma": "us-ascius",
+  "POS": "JJ"
+},
+{
+  "ID": "43",
+  "startIndex": "258",
+  "endIndex": "266",
+  "token": "Content-",
+  "lemma": "content-",
+  "POS": "NNP"
+},
+{
+  "ID": "44",
+  "startIndex": "266",
+  "endIndex": "275",
+  "token": "Transfer-",
+  "lemma": "transfer-",
+  "POS": "NNP"
+},
+{
   "ID": "45",
   "startIndex": "275",
   "endIndex": "283",
   "token": "Encoding",
   "lemma": "encode",
   "POS": "NNP"
+},
+{
+  "ID": "47",
+  "startIndex": "285",
+  "endIndex": "286",
+  "token": "7",
+  "lemma": "7",
+  "POS": "CD"
 },
 {
   "ID": "48",
@@ -128,6 +264,14 @@
   "POS": "VBZ"
 },
 {
+  "ID": "51",
+  "startIndex": "300",
+  "endIndex": "303",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
+},
+{
   "ID": "52",
   "startIndex": "304",
   "endIndex": "310",
@@ -152,12 +296,44 @@
   "POS": "RB"
 },
 {
+  "ID": "56",
+  "startIndex": "323",
+  "endIndex": "326",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
+},
+{
+  "ID": "57",
+  "startIndex": "327",
+  "endIndex": "330",
+  "token": "may",
+  "lemma": "may",
+  "POS": "MD"
+},
+{
+  "ID": "58",
+  "startIndex": "331",
+  "endIndex": "334",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
+},
+{
   "ID": "59",
   "startIndex": "335",
   "endIndex": "342",
   "token": "changes",
   "lemma": "change",
   "POS": "NNS"
+},
+{
+  "ID": "60",
+  "startIndex": "343",
+  "endIndex": "344",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
 },
 {
   "ID": "61",
@@ -176,12 +352,36 @@
   "POS": "VBG"
 },
 {
+  "ID": "63",
+  "startIndex": "354",
+  "endIndex": "356",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "64",
   "startIndex": "357",
   "endIndex": "360",
   "token": "run",
   "lemma": "run",
   "POS": "VB"
+},
+{
+  "ID": "65",
+  "startIndex": "361",
+  "endIndex": "363",
+  "token": "it",
+  "lemma": "it",
+  "POS": "PRP"
+},
+{
+  "ID": "66",
+  "startIndex": "364",
+  "endIndex": "366",
+  "token": "by",
+  "lemma": "by",
+  "POS": "IN"
 },
 {
   "ID": "67",
@@ -200,6 +400,14 @@
   "POS": "NNP"
 },
 {
+  "ID": "69",
+  "startIndex": "379",
+  "endIndex": "382",
+  "token": "and",
+  "lemma": "and",
+  "POS": "CC"
+},
+{
   "ID": "70",
   "startIndex": "383",
   "endIndex": "387",
@@ -208,12 +416,44 @@
   "POS": "VB"
 },
 {
+  "ID": "71",
+  "startIndex": "388",
+  "endIndex": "390",
+  "token": "it",
+  "lemma": "it",
+  "POS": "PRP"
+},
+{
+  "ID": "72",
+  "startIndex": "391",
+  "endIndex": "395",
+  "token": "over",
+  "lemma": "over",
+  "POS": "IN"
+},
+{
+  "ID": "73",
+  "startIndex": "396",
+  "endIndex": "398",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "74",
   "startIndex": "399",
   "endIndex": "406",
   "token": "CINergy",
   "lemma": "cinergy",
   "POS": "NNP"
+},
+{
+  "ID": "76",
+  "startIndex": "409",
+  "endIndex": "410",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
 },
 {
   "ID": "77",
@@ -232,12 +472,28 @@
   "POS": "VBG"
 },
 {
+  "ID": "79",
+  "startIndex": "421",
+  "endIndex": "423",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "80",
   "startIndex": "424",
   "endIndex": "427",
   "token": "get",
   "lemma": "get",
   "POS": "VB"
+},
+{
+  "ID": "81",
+  "startIndex": "428",
+  "endIndex": "432",
+  "token": "this",
+  "lemma": "this",
+  "POS": "DT"
 },
 {
   "ID": "82",
@@ -256,12 +512,52 @@
   "POS": "NN"
 },
 {
+  "ID": "85",
+  "startIndex": "448",
+  "endIndex": "450",
+  "token": "so",
+  "lemma": "so",
+  "POS": "IN"
+},
+{
+  "ID": "86",
+  "startIndex": "451",
+  "endIndex": "452",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
+},
+{
+  "ID": "87",
+  "startIndex": "453",
+  "endIndex": "456",
+  "token": "can",
+  "lemma": "can",
+  "POS": "MD"
+},
+{
   "ID": "88",
   "startIndex": "457",
   "endIndex": "461",
   "token": "head",
   "lemma": "head",
   "POS": "VB"
+},
+{
+  "ID": "89",
+  "startIndex": "462",
+  "endIndex": "466",
+  "token": "down",
+  "lemma": "down",
+  "POS": "IN"
+},
+{
+  "ID": "90",
+  "startIndex": "467",
+  "endIndex": "469",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
 },
 {
   "ID": "91",
@@ -272,6 +568,14 @@
   "POS": "NNP"
 },
 {
+  "ID": "92",
+  "startIndex": "478",
+  "endIndex": "480",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "93",
   "startIndex": "481",
   "endIndex": "485",
@@ -280,12 +584,36 @@
   "POS": "VB"
 },
 {
+  "ID": "94",
+  "startIndex": "486",
+  "endIndex": "488",
+  "token": "up",
+  "lemma": "up",
+  "POS": "RP"
+},
+{
+  "ID": "95",
+  "startIndex": "489",
+  "endIndex": "493",
+  "token": "with",
+  "lemma": "with",
+  "POS": "IN"
+},
+{
   "ID": "96",
   "startIndex": "494",
   "endIndex": "497",
   "token": "Don",
   "lemma": "don",
   "POS": "NNP"
+},
+{
+  "ID": "97",
+  "startIndex": "498",
+  "endIndex": "501",
+  "token": "and",
+  "lemma": "and",
+  "POS": "CC"
 },
 {
   "ID": "98",
@@ -320,6 +648,14 @@
   "POS": "NNP"
 },
 {
+  "ID": "104",
+  "startIndex": "557",
+  "endIndex": "559",
+  "token": "by",
+  "lemma": "by",
+  "POS": "IN"
+},
+{
   "ID": "105",
   "startIndex": "560",
   "endIndex": "568",
@@ -352,6 +688,30 @@
   "POS": "NNP"
 },
 {
+  "ID": "111",
+  "startIndex": "584",
+  "endIndex": "586",
+  "token": "on",
+  "lemma": "on",
+  "POS": "IN"
+},
+{
+  "ID": "112",
+  "startIndex": "587",
+  "endIndex": "597",
+  "token": "06/14/2000",
+  "lemma": "06/14/2000",
+  "POS": "CD"
+},
+{
+  "ID": "113",
+  "startIndex": "599",
+  "endIndex": "604",
+  "token": "01:27",
+  "lemma": "01:27",
+  "POS": "NN"
+},
+{
   "ID": "114",
   "startIndex": "605",
   "endIndex": "607",
@@ -376,12 +736,52 @@
   "POS": "NNP"
 },
 {
+  "ID": "122",
+  "startIndex": "659",
+  "endIndex": "676",
+  "token": "jwahl@Cinergy.com",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
+  "ID": "124",
+  "startIndex": "678",
+  "endIndex": "680",
+  "token": "on",
+  "lemma": "on",
+  "POS": "IN"
+},
+{
+  "ID": "125",
+  "startIndex": "681",
+  "endIndex": "691",
+  "token": "06/06/2000",
+  "lemma": "06/06/2000",
+  "POS": "CD"
+},
+{
+  "ID": "126",
+  "startIndex": "692",
+  "endIndex": "700",
+  "token": "10:43:34",
+  "lemma": "10:43:34",
+  "POS": "NN"
+},
+{
   "ID": "127",
   "startIndex": "701",
   "endIndex": "703",
   "token": "AM",
   "lemma": "be",
   "POS": "NNP"
+},
+{
+  "ID": "128",
+  "startIndex": "712",
+  "endIndex": "714",
+  "token": "To",
+  "lemma": "to",
+  "POS": "TO"
 },
 {
   "ID": "132",
@@ -398,6 +798,14 @@
   "token": "Rogers",
   "lemma": "roger",
   "POS": "NNP"
+},
+{
+  "ID": "137",
+  "startIndex": "732",
+  "endIndex": "757",
+  "token": "benjamin.rogers@enron.com",
+  "lemma": "_",
+  "POS": "NN"
 },
 {
   "ID": "139",
@@ -424,6 +832,14 @@
   "POS": "NNP"
 },
 {
+  "ID": "147",
+  "startIndex": "789",
+  "endIndex": "807",
+  "token": "mcyrus@Cinergy.com",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
   "ID": "149",
   "startIndex": "810",
   "endIndex": "817",
@@ -448,6 +864,14 @@
   "POS": "NNP"
 },
 {
+  "ID": "153",
+  "startIndex": "843",
+  "endIndex": "847",
+  "token": "This",
+  "lemma": "this",
+  "POS": "DT"
+},
+{
   "ID": "154",
   "startIndex": "848",
   "endIndex": "855",
@@ -462,6 +886,22 @@
   "token": "up",
   "lemma": "up",
   "POS": "RB"
+},
+{
+  "ID": "156",
+  "startIndex": "859",
+  "endIndex": "861",
+  "token": "on",
+  "lemma": "on",
+  "POS": "IN"
+},
+{
+  "ID": "157",
+  "startIndex": "862",
+  "endIndex": "866",
+  "token": "your",
+  "lemma": "your",
+  "POS": "PRP$"
 },
 {
   "ID": "158",
@@ -496,12 +936,36 @@
   "POS": "VBG"
 },
 {
+  "ID": "162",
+  "startIndex": "896",
+  "endIndex": "899",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
+},
+{
   "ID": "163",
   "startIndex": "900",
   "endIndex": "906",
   "token": "status",
   "lemma": "status",
   "POS": "NN"
+},
+{
+  "ID": "164",
+  "startIndex": "907",
+  "endIndex": "909",
+  "token": "of",
+  "lemma": "of",
+  "POS": "IN"
+},
+{
+  "ID": "165",
+  "startIndex": "910",
+  "endIndex": "913",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
 },
 {
   "ID": "166",
@@ -520,12 +984,28 @@
   "POS": "NNP"
 },
 {
+  "ID": "168",
+  "startIndex": "940",
+  "endIndex": "942",
+  "token": "in",
+  "lemma": "in",
+  "POS": "IN"
+},
+{
   "ID": "169",
   "startIndex": "943",
   "endIndex": "948",
   "token": "light",
   "lemma": "light",
   "POS": "NN"
+},
+{
+  "ID": "170",
+  "startIndex": "949",
+  "endIndex": "951",
+  "token": "of",
+  "lemma": "of",
+  "POS": "IN"
 },
 {
   "ID": "171",
@@ -542,6 +1022,22 @@
   "token": "discussions",
   "lemma": "discussion",
   "POS": "NNS"
+},
+{
+  "ID": "173",
+  "startIndex": "972",
+  "endIndex": "979",
+  "token": "between",
+  "lemma": "between",
+  "POS": "IN"
+},
+{
+  "ID": "174",
+  "startIndex": "980",
+  "endIndex": "983",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
 },
 {
   "ID": "175",
@@ -576,6 +1072,14 @@
   "POS": "VBZ"
 },
 {
+  "ID": "180",
+  "startIndex": "1012",
+  "endIndex": "1015",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
+},
+{
   "ID": "181",
   "startIndex": "1016",
   "endIndex": "1022",
@@ -590,6 +1094,22 @@
   "token": "draft",
   "lemma": "draft",
   "POS": "NN"
+},
+{
+  "ID": "183",
+  "startIndex": "1029",
+  "endIndex": "1031",
+  "token": "of",
+  "lemma": "of",
+  "POS": "IN"
+},
+{
+  "ID": "184",
+  "startIndex": "1032",
+  "endIndex": "1035",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
 },
 {
   "ID": "185",
@@ -608,6 +1128,14 @@
   "POS": "NNP"
 },
 {
+  "ID": "187",
+  "startIndex": "1062",
+  "endIndex": "1067",
+  "token": "which",
+  "lemma": "which",
+  "POS": "WDT"
+},
+{
   "ID": "188",
   "startIndex": "1068",
   "endIndex": "1071",
@@ -624,12 +1152,44 @@
   "POS": "VBN"
 },
 {
+  "ID": "190",
+  "startIndex": "1084",
+  "endIndex": "1086",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
+  "ID": "191",
+  "startIndex": "1087",
+  "endIndex": "1090",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
+},
+{
+  "ID": "192",
+  "startIndex": "1091",
+  "endIndex": "1093",
+  "token": "on",
+  "lemma": "on",
+  "POS": "IN"
+},
+{
   "ID": "193",
   "startIndex": "1094",
   "endIndex": "1097",
   "token": "May",
   "lemma": "may",
   "POS": "NNP"
+},
+{
+  "ID": "194",
+  "startIndex": "1098",
+  "endIndex": "1100",
+  "token": "13",
+  "lemma": "13",
+  "POS": "CD"
 },
 {
   "ID": "196",
@@ -648,12 +1208,44 @@
   "POS": "NN"
 },
 {
+  "ID": "198",
+  "startIndex": "1115",
+  "endIndex": "1117",
+  "token": "me",
+  "lemma": "me",
+  "POS": "PRP"
+},
+{
+  "ID": "199",
+  "startIndex": "1118",
+  "endIndex": "1122",
+  "token": "with",
+  "lemma": "with",
+  "POS": "IN"
+},
+{
+  "ID": "200",
+  "startIndex": "1123",
+  "endIndex": "1126",
+  "token": "any",
+  "lemma": "any",
+  "POS": "DT"
+},
+{
   "ID": "201",
   "startIndex": "1127",
   "endIndex": "1135",
   "token": "comments",
   "lemma": "comment",
   "POS": "NNS"
+},
+{
+  "ID": "202",
+  "startIndex": "1136",
+  "endIndex": "1138",
+  "token": "or",
+  "lemma": "or",
+  "POS": "CC"
 },
 {
   "ID": "203",
@@ -680,12 +1272,28 @@
   "POS": "NNP"
 },
 {
+  "ID": "209",
+  "startIndex": "1180",
+  "endIndex": "1184",
+  "token": "with",
+  "lemma": "with",
+  "POS": "IN"
+},
+{
   "ID": "210",
   "startIndex": "1185",
   "endIndex": "1190",
   "token": "Enron",
   "lemma": "enron",
   "POS": "NNP"
+},
+{
+  "ID": "211",
+  "startIndex": "1191",
+  "endIndex": "1196",
+  "token": "which",
+  "lemma": "which",
+  "POS": "WDT"
 },
 {
   "ID": "212",
@@ -704,6 +1312,14 @@
   "POS": "VBN"
 },
 {
+  "ID": "214",
+  "startIndex": "1206",
+  "endIndex": "1208",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "215",
   "startIndex": "1209",
   "endIndex": "1212",
@@ -720,6 +1336,30 @@
   "POS": "NNP"
 },
 {
+  "ID": "217",
+  "startIndex": "1220",
+  "endIndex": "1222",
+  "token": "on",
+  "lemma": "on",
+  "POS": "IN"
+},
+{
+  "ID": "218",
+  "startIndex": "1223",
+  "endIndex": "1228",
+  "token": "51200",
+  "lemma": "51200",
+  "POS": "CD"
+},
+{
+  "ID": "220",
+  "startIndex": "1232",
+  "endIndex": "1236",
+  "token": "this",
+  "lemma": "this",
+  "POS": "DT"
+},
+{
   "ID": "221",
   "startIndex": "1237",
   "endIndex": "1244",
@@ -734,6 +1374,14 @@
   "token": "is",
   "lemma": "be",
   "POS": "VBZ"
+},
+{
+  "ID": "223",
+  "startIndex": "1248",
+  "endIndex": "1249",
+  "token": "a",
+  "lemma": "a",
+  "POS": "DT"
 },
 {
   "ID": "224",
@@ -760,6 +1408,14 @@
   "POS": "VBG"
 },
 {
+  "ID": "227",
+  "startIndex": "1274",
+  "endIndex": "1277",
+  "token": "all",
+  "lemma": "all",
+  "POS": "DT"
+},
+{
   "ID": "228",
   "startIndex": "1278",
   "endIndex": "1288",
@@ -774,6 +1430,22 @@
   "token": "changes",
   "lemma": "change",
   "POS": "NNS"
+},
+{
+  "ID": "230",
+  "startIndex": "1297",
+  "endIndex": "1301",
+  "token": "from",
+  "lemma": "from",
+  "POS": "IN"
+},
+{
+  "ID": "231",
+  "startIndex": "1302",
+  "endIndex": "1313",
+  "token": "59437v3.DOC",
+  "lemma": "59437v3.doc",
+  "POS": "NNP"
 },
 {
   "ID": "235",
@@ -792,12 +1464,28 @@
   "POS": "NNP"
 },
 {
+  "ID": "237",
+  "startIndex": "1342",
+  "endIndex": "1346",
+  "token": "with",
+  "lemma": "with",
+  "POS": "IN"
+},
+{
   "ID": "238",
   "startIndex": "1347",
   "endIndex": "1352",
   "token": "Enron",
   "lemma": "enron",
   "POS": "NNP"
+},
+{
+  "ID": "239",
+  "startIndex": "1353",
+  "endIndex": "1358",
+  "token": "which",
+  "lemma": "which",
+  "POS": "WDT"
 },
 {
   "ID": "240",
@@ -816,6 +1504,14 @@
   "POS": "VBN"
 },
 {
+  "ID": "242",
+  "startIndex": "1368",
+  "endIndex": "1370",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "243",
   "startIndex": "1371",
   "endIndex": "1374",
@@ -832,6 +1528,30 @@
   "POS": "NNP"
 },
 {
+  "ID": "245",
+  "startIndex": "1382",
+  "endIndex": "1384",
+  "token": "on",
+  "lemma": "on",
+  "POS": "IN"
+},
+{
+  "ID": "246",
+  "startIndex": "1385",
+  "endIndex": "1390",
+  "token": "51200",
+  "lemma": "51200",
+  "POS": "CD"
+},
+{
+  "ID": "248",
+  "startIndex": "1395",
+  "endIndex": "1399",
+  "token": "this",
+  "lemma": "this",
+  "POS": "DT"
+},
+{
   "ID": "249",
   "startIndex": "1400",
   "endIndex": "1407",
@@ -846,6 +1566,14 @@
   "token": "is",
   "lemma": "be",
   "POS": "VBZ"
+},
+{
+  "ID": "251",
+  "startIndex": "1411",
+  "endIndex": "1412",
+  "token": "a",
+  "lemma": "a",
+  "POS": "DT"
 },
 {
   "ID": "252",
@@ -872,6 +1600,14 @@
   "POS": "VBG"
 },
 {
+  "ID": "255",
+  "startIndex": "1437",
+  "endIndex": "1440",
+  "token": "all",
+  "lemma": "all",
+  "POS": "DT"
+},
+{
   "ID": "256",
   "startIndex": "1441",
   "endIndex": "1451",
@@ -886,4 +1622,20 @@
   "token": "changes",
   "lemma": "change",
   "POS": "NNS"
+},
+{
+  "ID": "258",
+  "startIndex": "1460",
+  "endIndex": "1464",
+  "token": "from",
+  "lemma": "from",
+  "POS": "IN"
+},
+{
+  "ID": "259",
+  "startIndex": "1466",
+  "endIndex": "1477",
+  "token": "59437v3.DOC",
+  "lemma": "59437v3.doc",
+  "POS": "NNP"
 }]
