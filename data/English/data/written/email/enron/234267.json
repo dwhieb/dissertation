@@ -1,5 +1,21 @@
 [
 {
+  "ID": "1",
+  "startIndex": "3",
+  "endIndex": "13",
+  "token": "Message-ID",
+  "lemma": "message-id",
+  "POS": "NNP"
+},
+{
+  "ID": "4",
+  "startIndex": "16",
+  "endIndex": "58",
+  "token": "4232844.1075860516484.JavaMail.evans@thyme",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
   "ID": "6",
   "startIndex": "60",
   "endIndex": "64",
@@ -16,6 +32,14 @@
   "POS": "NNP"
 },
 {
+  "ID": "10",
+  "startIndex": "71",
+  "endIndex": "72",
+  "token": "1",
+  "lemma": "1",
+  "POS": "CD"
+},
+{
   "ID": "11",
   "startIndex": "73",
   "endIndex": "76",
@@ -24,12 +48,84 @@
   "POS": "NNP"
 },
 {
+  "ID": "12",
+  "startIndex": "77",
+  "endIndex": "81",
+  "token": "2000",
+  "lemma": "2000",
+  "POS": "CD"
+},
+{
+  "ID": "13",
+  "startIndex": "82",
+  "endIndex": "90",
+  "token": "01:43:00",
+  "lemma": "01:43:00",
+  "POS": "NN"
+},
+{
+  "ID": "15",
+  "startIndex": "92",
+  "endIndex": "96",
+  "token": "0800",
+  "lemma": "0800",
+  "POS": "CD"
+},
+{
   "ID": "17",
   "startIndex": "98",
   "endIndex": "101",
   "token": "PST",
   "lemma": "pst",
   "POS": "NNP"
+},
+{
+  "ID": "19",
+  "startIndex": "103",
+  "endIndex": "107",
+  "token": "From",
+  "lemma": "from",
+  "POS": "IN"
+},
+{
+  "ID": "21",
+  "startIndex": "109",
+  "endIndex": "128",
+  "token": "mary.hain@enron.com",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
+  "ID": "22",
+  "startIndex": "129",
+  "endIndex": "131",
+  "token": "To",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
+  "ID": "24",
+  "startIndex": "133",
+  "endIndex": "158",
+  "token": "richard.sanders@enron.com",
+  "lemma": "richard.sanders@enron.com",
+  "POS": "NN"
+},
+{
+  "ID": "26",
+  "startIndex": "160",
+  "endIndex": "185",
+  "token": "christian.yoder@enron.com",
+  "lemma": "christian.yoder@enron.com",
+  "POS": "NN"
+},
+{
+  "ID": "28",
+  "startIndex": "187",
+  "endIndex": "203",
+  "token": "ellen@tca-us.com",
+  "lemma": "_",
+  "POS": "NN"
 },
 {
   "ID": "29",
@@ -48,11 +144,43 @@
   "POS": "JJ"
 },
 {
+  "ID": "33",
+  "startIndex": "227",
+  "endIndex": "242",
+  "token": "client-attorney",
+  "lemma": "client-attorney",
+  "POS": "JJ"
+},
+{
+  "ID": "35",
+  "startIndex": "244",
+  "endIndex": "249",
+  "token": "Mime-",
+  "lemma": "mime-",
+  "POS": "NNP"
+},
+{
   "ID": "36",
   "startIndex": "249",
   "endIndex": "256",
   "token": "Version",
   "lemma": "version",
+  "POS": "NNP"
+},
+{
+  "ID": "38",
+  "startIndex": "258",
+  "endIndex": "261",
+  "token": "1.0",
+  "lemma": "1.0",
+  "POS": "CD"
+},
+{
+  "ID": "39",
+  "startIndex": "262",
+  "endIndex": "270",
+  "token": "Content-",
+  "lemma": "content-",
   "POS": "NNP"
 },
 {
@@ -88,6 +216,30 @@
   "POS": "NN"
 },
 {
+  "ID": "48",
+  "startIndex": "296",
+  "endIndex": "304",
+  "token": "us-ascii",
+  "lemma": "us-ascii",
+  "POS": "JJ"
+},
+{
+  "ID": "49",
+  "startIndex": "305",
+  "endIndex": "313",
+  "token": "Content-",
+  "lemma": "content-",
+  "POS": "NNP"
+},
+{
+  "ID": "50",
+  "startIndex": "313",
+  "endIndex": "322",
+  "token": "Transfer-",
+  "lemma": "transfer-",
+  "POS": "NNP"
+},
+{
   "ID": "51",
   "startIndex": "322",
   "endIndex": "330",
@@ -96,12 +248,28 @@
   "POS": "NNP"
 },
 {
+  "ID": "53",
+  "startIndex": "332",
+  "endIndex": "333",
+  "token": "7",
+  "lemma": "7",
+  "POS": "CD"
+},
+{
   "ID": "54",
   "startIndex": "333",
   "endIndex": "336",
   "token": "bit",
   "lemma": "bit",
   "POS": "NN"
+},
+{
+  "ID": "55",
+  "startIndex": "337",
+  "endIndex": "343",
+  "token": "X-From",
+  "lemma": "x-from",
+  "POS": "NNP"
 },
 {
   "ID": "57",
@@ -117,6 +285,14 @@
   "endIndex": "354",
   "token": "Hain",
   "lemma": "hain",
+  "POS": "NNP"
+},
+{
+  "ID": "59",
+  "startIndex": "355",
+  "endIndex": "359",
+  "token": "X-To",
+  "lemma": "x-to",
   "POS": "NNP"
 },
 {
@@ -152,6 +328,38 @@
   "POS": "NNP"
 },
 {
+  "ID": "67",
+  "startIndex": "395",
+  "endIndex": "411",
+  "token": "ellen@tca-us.com",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
+  "ID": "68",
+  "startIndex": "412",
+  "endIndex": "416",
+  "token": "X-cc",
+  "lemma": "x-cc",
+  "POS": "NNP"
+},
+{
+  "ID": "70",
+  "startIndex": "419",
+  "endIndex": "424",
+  "token": "X-bcc",
+  "lemma": "x-bcc",
+  "POS": "NNP"
+},
+{
+  "ID": "72",
+  "startIndex": "427",
+  "endIndex": "435",
+  "token": "X-Folder",
+  "lemma": "x-folder",
+  "POS": "NNP"
+},
+{
   "ID": "75",
   "startIndex": "438",
   "endIndex": "445",
@@ -176,6 +384,14 @@
   "POS": "NNP"
 },
 {
+  "ID": "80",
+  "startIndex": "457",
+  "endIndex": "461",
+  "token": "2000",
+  "lemma": "2000",
+  "POS": "CD"
+},
+{
   "ID": "82",
   "startIndex": "462",
   "endIndex": "467",
@@ -192,12 +408,44 @@
   "POS": "NNP"
 },
 {
+  "ID": "85",
+  "startIndex": "476",
+  "endIndex": "479",
+  "token": "All",
+  "lemma": "all",
+  "POS": "DT"
+},
+{
   "ID": "86",
   "startIndex": "480",
   "endIndex": "489",
   "token": "documents",
   "lemma": "document",
   "POS": "NNS"
+},
+{
+  "ID": "87",
+  "startIndex": "490",
+  "endIndex": "498",
+  "token": "X-Origin",
+  "lemma": "x-origin",
+  "POS": "NNP"
+},
+{
+  "ID": "89",
+  "startIndex": "500",
+  "endIndex": "508",
+  "token": "Sanders-",
+  "lemma": "sanders-",
+  "POS": "NNP"
+},
+{
+  "ID": "91",
+  "startIndex": "510",
+  "endIndex": "520",
+  "token": "X-FileName",
+  "lemma": "x-filename",
+  "POS": "NNP"
 },
 {
   "ID": "93",
@@ -222,6 +470,14 @@
   "token": "Forwarded",
   "lemma": "forwarded",
   "POS": "NNP"
+},
+{
+  "ID": "98",
+  "startIndex": "570",
+  "endIndex": "572",
+  "token": "by",
+  "lemma": "by",
+  "POS": "IN"
 },
 {
   "ID": "99",
@@ -256,12 +512,44 @@
   "POS": "NNP"
 },
 {
+  "ID": "105",
+  "startIndex": "591",
+  "endIndex": "593",
+  "token": "on",
+  "lemma": "on",
+  "POS": "IN"
+},
+{
+  "ID": "106",
+  "startIndex": "594",
+  "endIndex": "604",
+  "token": "02/01/2000",
+  "lemma": "02/01/2000",
+  "POS": "CD"
+},
+{
+  "ID": "107",
+  "startIndex": "605",
+  "endIndex": "610",
+  "token": "09:47",
+  "lemma": "09:47",
+  "POS": "NN"
+},
+{
   "ID": "108",
   "startIndex": "611",
   "endIndex": "613",
   "token": "AM",
   "lemma": "am",
   "POS": "NNP"
+},
+{
+  "ID": "110",
+  "startIndex": "643",
+  "endIndex": "647",
+  "token": "From",
+  "lemma": "from",
+  "POS": "IN"
 },
 {
   "ID": "112",
@@ -280,6 +568,30 @@
   "POS": "NNP"
 },
 {
+  "ID": "114",
+  "startIndex": "663",
+  "endIndex": "665",
+  "token": "on",
+  "lemma": "on",
+  "POS": "IN"
+},
+{
+  "ID": "115",
+  "startIndex": "666",
+  "endIndex": "676",
+  "token": "02/01/2000",
+  "lemma": "02/01/2000",
+  "POS": "CD"
+},
+{
+  "ID": "116",
+  "startIndex": "677",
+  "endIndex": "682",
+  "token": "09:18",
+  "lemma": "09:18",
+  "POS": "NN"
+},
+{
   "ID": "117",
   "startIndex": "683",
   "endIndex": "685",
@@ -288,12 +600,28 @@
   "POS": "NNP"
 },
 {
+  "ID": "118",
+  "startIndex": "686",
+  "endIndex": "688",
+  "token": "To",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "120",
   "startIndex": "690",
   "endIndex": "694",
   "token": "Mary",
   "lemma": "mary",
   "POS": "NNP"
+},
+{
+  "ID": "121",
+  "startIndex": "695",
+  "endIndex": "711",
+  "token": "Hain/HOU/ECT@ECT",
+  "lemma": "_",
+  "POS": "NN"
 },
 {
   "ID": "122",
@@ -317,6 +645,14 @@
   "endIndex": "739",
   "token": "confidential",
   "lemma": "confidential",
+  "POS": "JJ"
+},
+{
+  "ID": "128",
+  "startIndex": "741",
+  "endIndex": "756",
+  "token": "client-attorney",
+  "lemma": "client-attorney",
   "POS": "JJ"
 },
 {
@@ -376,12 +712,28 @@
   "POS": "RB"
 },
 {
+  "ID": "137",
+  "startIndex": "814",
+  "endIndex": "816",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "138",
   "startIndex": "817",
   "endIndex": "822",
   "token": "Ellen",
   "lemma": "ellen",
   "POS": "NNP"
+},
+{
+  "ID": "139",
+  "startIndex": "823",
+  "endIndex": "825",
+  "token": "B.",
+  "lemma": "B.",
+  "POS": "NN"
 },
 {
   "ID": "140",
@@ -392,12 +744,28 @@
   "POS": "NNP"
 },
 {
+  "ID": "142",
+  "startIndex": "838",
+  "endIndex": "839",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
+},
+{
   "ID": "143",
   "startIndex": "840",
   "endIndex": "845",
   "token": "added",
   "lemma": "add",
   "POS": "VBD"
+},
+{
+  "ID": "144",
+  "startIndex": "846",
+  "endIndex": "849",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
 },
 {
   "ID": "145",
@@ -408,6 +776,14 @@
   "POS": "NN"
 },
 {
+  "ID": "146",
+  "startIndex": "860",
+  "endIndex": "863",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
+},
+{
   "ID": "147",
   "startIndex": "864",
   "endIndex": "870",
@@ -416,12 +792,28 @@
   "POS": "VBD"
 },
 {
+  "ID": "148",
+  "startIndex": "871",
+  "endIndex": "874",
+  "token": "and",
+  "lemma": "and",
+  "POS": "CC"
+},
+{
   "ID": "149",
   "startIndex": "875",
   "endIndex": "882",
   "token": "updated",
   "lemma": "update",
   "POS": "VBN"
+},
+{
+  "ID": "150",
+  "startIndex": "883",
+  "endIndex": "886",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
 },
 {
   "ID": "151",
@@ -438,6 +830,22 @@
   "token": "ones",
   "lemma": "one",
   "POS": "NNS"
+},
+{
+  "ID": "154",
+  "startIndex": "899",
+  "endIndex": "902",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
+},
+{
+  "ID": "155",
+  "startIndex": "902",
+  "endIndex": "905",
+  "token": "'ll",
+  "lemma": "will",
+  "POS": "MD"
 },
 {
   "ID": "156",
@@ -480,6 +888,22 @@
   "POS": "NNS"
 },
 {
+  "ID": "162",
+  "startIndex": "952",
+  "endIndex": "959",
+  "token": "because",
+  "lemma": "because",
+  "POS": "IN"
+},
+{
+  "ID": "163",
+  "startIndex": "960",
+  "endIndex": "961",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
+},
+{
   "ID": "164",
   "startIndex": "962",
   "endIndex": "965",
@@ -504,6 +928,22 @@
   "POS": "VB"
 },
 {
+  "ID": "167",
+  "startIndex": "973",
+  "endIndex": "976",
+  "token": "off",
+  "lemma": "off",
+  "POS": "RP"
+},
+{
+  "ID": "168",
+  "startIndex": "977",
+  "endIndex": "980",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
+},
+{
   "ID": "169",
   "startIndex": "981",
   "endIndex": "985",
@@ -512,12 +952,52 @@
   "POS": "NN"
 },
 {
+  "ID": "170",
+  "startIndex": "986",
+  "endIndex": "988",
+  "token": "at",
+  "lemma": "at",
+  "POS": "IN"
+},
+{
   "ID": "171",
   "startIndex": "990",
   "endIndex": "993",
   "token": "Jan",
   "lemma": "jan",
   "POS": "NNP"
+},
+{
+  "ID": "172",
+  "startIndex": "994",
+  "endIndex": "995",
+  "token": "1",
+  "lemma": "1",
+  "POS": "CD"
+},
+{
+  "ID": "173",
+  "startIndex": "996",
+  "endIndex": "1000",
+  "token": "2000",
+  "lemma": "2000",
+  "POS": "CD"
+},
+{
+  "ID": "175",
+  "startIndex": "1003",
+  "endIndex": "1007",
+  "token": "i.e.",
+  "lemma": "i.e.",
+  "POS": "NN"
+},
+{
+  "ID": "177",
+  "startIndex": "1009",
+  "endIndex": "1012",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
 },
 {
   "ID": "178",
@@ -544,6 +1024,14 @@
   "POS": "VBD"
 },
 {
+  "ID": "181",
+  "startIndex": "1042",
+  "endIndex": "1045",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
+},
+{
   "ID": "182",
   "startIndex": "1046",
   "endIndex": "1050",
@@ -566,6 +1054,14 @@
   "token": "worth",
   "lemma": "worth",
   "POS": "NN"
+},
+{
+  "ID": "186",
+  "startIndex": "1065",
+  "endIndex": "1067",
+  "token": "of",
+  "lemma": "of",
+  "POS": "IN"
 },
 {
   "ID": "187",

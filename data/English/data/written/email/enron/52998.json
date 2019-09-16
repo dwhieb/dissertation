@@ -1,5 +1,21 @@
 [
 {
+  "ID": "1",
+  "startIndex": "3",
+  "endIndex": "13",
+  "token": "Message-ID",
+  "lemma": "message-id",
+  "POS": "NNP"
+},
+{
+  "ID": "4",
+  "startIndex": "16",
+  "endIndex": "59",
+  "token": "29291085.1075856621619.JavaMail.evans@thyme",
+  "lemma": "29291085.1075856621619.javamail.evans@thyme",
+  "POS": "NN"
+},
+{
   "ID": "6",
   "startIndex": "61",
   "endIndex": "65",
@@ -16,6 +32,14 @@
   "POS": "NNP"
 },
 {
+  "ID": "10",
+  "startIndex": "72",
+  "endIndex": "74",
+  "token": "28",
+  "lemma": "28",
+  "POS": "CD"
+},
+{
   "ID": "11",
   "startIndex": "75",
   "endIndex": "78",
@@ -24,12 +48,68 @@
   "POS": "NNP"
 },
 {
+  "ID": "12",
+  "startIndex": "79",
+  "endIndex": "83",
+  "token": "2000",
+  "lemma": "2000",
+  "POS": "CD"
+},
+{
+  "ID": "13",
+  "startIndex": "84",
+  "endIndex": "92",
+  "token": "05:32:00",
+  "lemma": "05:32:00",
+  "POS": "NN"
+},
+{
+  "ID": "15",
+  "startIndex": "94",
+  "endIndex": "98",
+  "token": "0800",
+  "lemma": "0800",
+  "POS": "CD"
+},
+{
   "ID": "17",
   "startIndex": "100",
   "endIndex": "103",
   "token": "PST",
   "lemma": "pst",
   "POS": "NNP"
+},
+{
+  "ID": "19",
+  "startIndex": "105",
+  "endIndex": "109",
+  "token": "From",
+  "lemma": "from",
+  "POS": "IN"
+},
+{
+  "ID": "21",
+  "startIndex": "111",
+  "endIndex": "137",
+  "token": "shirley.crenshaw@enron.com",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
+  "ID": "22",
+  "startIndex": "138",
+  "endIndex": "140",
+  "token": "To",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
+  "ID": "24",
+  "startIndex": "142",
+  "endIndex": "160",
+  "token": "jmyan@stanford.edu",
+  "lemma": "_",
+  "POS": "NN"
 },
 {
   "ID": "25",
@@ -62,6 +142,22 @@
   "token": "Interview",
   "lemma": "interview",
   "POS": "NNP"
+},
+{
+  "ID": "31",
+  "startIndex": "194",
+  "endIndex": "198",
+  "token": "with",
+  "lemma": "with",
+  "POS": "IN"
+},
+{
+  "ID": "32",
+  "startIndex": "199",
+  "endIndex": "202",
+  "token": "The",
+  "lemma": "the",
+  "POS": "DT"
 },
 {
   "ID": "33",
@@ -104,11 +200,67 @@
   "POS": "NNP"
 },
 {
+  "ID": "40",
+  "startIndex": "234",
+  "endIndex": "260",
+  "token": "lance.cunningham@enron.com",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
+  "ID": "42",
+  "startIndex": "262",
+  "endIndex": "282",
+  "token": "alex.huang@enron.com",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
+  "ID": "44",
+  "startIndex": "284",
+  "endIndex": "308",
+  "token": "vince.kaminski@enron.com",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
+  "ID": "46",
+  "startIndex": "312",
+  "endIndex": "339",
+  "token": "vasant.shanbhogue@enron.com",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
+  "ID": "47",
+  "startIndex": "340",
+  "endIndex": "345",
+  "token": "Mime-",
+  "lemma": "mime-",
+  "POS": "NNP"
+},
+{
   "ID": "48",
   "startIndex": "345",
   "endIndex": "352",
   "token": "Version",
   "lemma": "version",
+  "POS": "NNP"
+},
+{
+  "ID": "50",
+  "startIndex": "354",
+  "endIndex": "357",
+  "token": "1.0",
+  "lemma": "1.0",
+  "POS": "CD"
+},
+{
+  "ID": "51",
+  "startIndex": "358",
+  "endIndex": "366",
+  "token": "Content-",
+  "lemma": "content-",
   "POS": "NNP"
 },
 {
@@ -152,6 +304,38 @@
   "POS": "NNP"
 },
 {
+  "ID": "63",
+  "startIndex": "398",
+  "endIndex": "401",
+  "token": "3.4",
+  "lemma": "3.4",
+  "POS": "CD"
+},
+{
+  "ID": "65",
+  "startIndex": "402",
+  "endIndex": "406",
+  "token": "1968",
+  "lemma": "1968",
+  "POS": "CD"
+},
+{
+  "ID": "66",
+  "startIndex": "407",
+  "endIndex": "415",
+  "token": "Content-",
+  "lemma": "content-",
+  "POS": "NNP"
+},
+{
+  "ID": "67",
+  "startIndex": "415",
+  "endIndex": "424",
+  "token": "Transfer-",
+  "lemma": "transfer-",
+  "POS": "NNP"
+},
+{
   "ID": "68",
   "startIndex": "424",
   "endIndex": "432",
@@ -160,12 +344,52 @@
   "POS": "NNP"
 },
 {
+  "ID": "70",
+  "startIndex": "434",
+  "endIndex": "450",
+  "token": "quoted-printable",
+  "lemma": "quoted-printable",
+  "POS": "JJ"
+},
+{
   "ID": "71",
   "startIndex": "451",
   "endIndex": "454",
   "token": "Bcc",
   "lemma": "bcc",
   "POS": "NNP"
+},
+{
+  "ID": "73",
+  "startIndex": "456",
+  "endIndex": "482",
+  "token": "lance.cunningham@enron.com",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
+  "ID": "75",
+  "startIndex": "484",
+  "endIndex": "504",
+  "token": "alex.huang@enron.com",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
+  "ID": "77",
+  "startIndex": "506",
+  "endIndex": "530",
+  "token": "vince.kaminski@enron.com",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
+  "ID": "79",
+  "startIndex": "534",
+  "endIndex": "561",
+  "token": "vasant.shanbhogue@enron.com",
+  "lemma": "_",
+  "POS": "NN"
 },
 {
   "ID": "80",
@@ -182,6 +406,14 @@
   "token": "Thanks",
   "lemma": "thanks",
   "POS": "NNS"
+},
+{
+  "ID": "83",
+  "startIndex": "582",
+  "endIndex": "585",
+  "token": "for",
+  "lemma": "for",
+  "POS": "IN"
 },
 {
   "ID": "84",
@@ -208,6 +440,14 @@
   "POS": "RB"
 },
 {
+  "ID": "88",
+  "startIndex": "609",
+  "endIndex": "610",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
+},
+{
   "ID": "89",
   "startIndex": "611",
   "endIndex": "615",
@@ -222,6 +462,14 @@
   "token": "scheduled",
   "lemma": "schedule",
   "POS": "VBN"
+},
+{
+  "ID": "91",
+  "startIndex": "626",
+  "endIndex": "629",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
 },
 {
   "ID": "92",
@@ -248,6 +496,22 @@
   "POS": "NNP"
 },
 {
+  "ID": "98",
+  "startIndex": "674",
+  "endIndex": "675",
+  "token": "6",
+  "lemma": "6",
+  "POS": "CD"
+},
+{
+  "ID": "100",
+  "startIndex": "678",
+  "endIndex": "682",
+  "token": "1:00",
+  "lemma": "1:00",
+  "POS": "NN"
+},
+{
   "ID": "101",
   "startIndex": "683",
   "endIndex": "685",
@@ -272,6 +536,22 @@
   "POS": "NN"
 },
 {
+  "ID": "105",
+  "startIndex": "700",
+  "endIndex": "702",
+  "token": "It",
+  "lemma": "it",
+  "POS": "PRP"
+},
+{
+  "ID": "106",
+  "startIndex": "703",
+  "endIndex": "707",
+  "token": "will",
+  "lemma": "will",
+  "POS": "MD"
+},
+{
   "ID": "107",
   "startIndex": "708",
   "endIndex": "712",
@@ -288,6 +568,14 @@
   "POS": "RB"
 },
 {
+  "ID": "109",
+  "startIndex": "727",
+  "endIndex": "728",
+  "token": "1",
+  "lemma": "1",
+  "POS": "CD"
+},
+{
   "ID": "110",
   "startIndex": "729",
   "endIndex": "733",
@@ -296,12 +584,76 @@
   "POS": "NN"
 },
 {
+  "ID": "112",
+  "startIndex": "735",
+  "endIndex": "737",
+  "token": "We",
+  "lemma": "we",
+  "POS": "PRP"
+},
+{
+  "ID": "113",
+  "startIndex": "738",
+  "endIndex": "742",
+  "token": "will",
+  "lemma": "will",
+  "POS": "MD"
+},
+{
   "ID": "114",
   "startIndex": "743",
   "endIndex": "747",
   "token": "call",
   "lemma": "call",
   "POS": "VB"
+},
+{
+  "ID": "115",
+  "startIndex": "748",
+  "endIndex": "751",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
+},
+{
+  "ID": "116",
+  "startIndex": "752",
+  "endIndex": "754",
+  "token": "at",
+  "lemma": "at",
+  "POS": "IN"
+},
+{
+  "ID": "118",
+  "startIndex": "756",
+  "endIndex": "759",
+  "token": "605",
+  "lemma": "605",
+  "POS": "CD"
+},
+{
+  "ID": "120",
+  "startIndex": "761",
+  "endIndex": "764",
+  "token": "497",
+  "lemma": "497",
+  "POS": "CD"
+},
+{
+  "ID": "122",
+  "startIndex": "765",
+  "endIndex": "769",
+  "token": "4045",
+  "lemma": "4045",
+  "POS": "CD"
+},
+{
+  "ID": "123",
+  "startIndex": "770",
+  "endIndex": "776",
+  "token": "unless",
+  "lemma": "unless",
+  "POS": "IN"
 },
 {
   "ID": "124",
@@ -320,12 +672,36 @@
   "POS": "VBN"
 },
 {
+  "ID": "127",
+  "startIndex": "800",
+  "endIndex": "802",
+  "token": "If",
+  "lemma": "if",
+  "POS": "IN"
+},
+{
+  "ID": "128",
+  "startIndex": "803",
+  "endIndex": "806",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
+},
+{
   "ID": "129",
   "startIndex": "807",
   "endIndex": "811",
   "token": "have",
   "lemma": "have",
   "POS": "VBP"
+},
+{
+  "ID": "130",
+  "startIndex": "812",
+  "endIndex": "815",
+  "token": "any",
+  "lemma": "any",
+  "POS": "DT"
 },
 {
   "ID": "131",
@@ -360,12 +736,52 @@
   "POS": "JJ"
 },
 {
+  "ID": "136",
+  "startIndex": "844",
+  "endIndex": "846",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "137",
   "startIndex": "847",
   "endIndex": "854",
   "token": "contact",
   "lemma": "contact",
   "POS": "VB"
+},
+{
+  "ID": "138",
+  "startIndex": "855",
+  "endIndex": "857",
+  "token": "me",
+  "lemma": "me",
+  "POS": "PRP"
+},
+{
+  "ID": "139",
+  "startIndex": "858",
+  "endIndex": "860",
+  "token": "at",
+  "lemma": "at",
+  "POS": "IN"
+},
+{
+  "ID": "140",
+  "startIndex": "861",
+  "endIndex": "868",
+  "token": "713/853",
+  "lemma": "713/853",
+  "POS": "CD"
+},
+{
+  "ID": "142",
+  "startIndex": "869",
+  "endIndex": "873",
+  "token": "5290",
+  "lemma": "5290",
+  "POS": "CD"
 },
 {
   "ID": "144",
@@ -424,12 +840,60 @@
   "POS": "NNP"
 },
 {
+  "ID": "157",
+  "startIndex": "936",
+  "endIndex": "954",
+  "token": "jmyan@stanford.edu",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
+  "ID": "159",
+  "startIndex": "956",
+  "endIndex": "958",
+  "token": "on",
+  "lemma": "on",
+  "POS": "IN"
+},
+{
+  "ID": "160",
+  "startIndex": "959",
+  "endIndex": "969",
+  "token": "11/28/2000",
+  "lemma": "11/28/2000",
+  "POS": "CD"
+},
+{
+  "ID": "161",
+  "startIndex": "970",
+  "endIndex": "978",
+  "token": "12:59:55",
+  "lemma": "12:59:55",
+  "POS": "NN"
+},
+{
   "ID": "162",
   "startIndex": "979",
   "endIndex": "981",
   "token": "PM",
   "lemma": "pm",
   "POS": "NNP"
+},
+{
+  "ID": "163",
+  "startIndex": "982",
+  "endIndex": "984",
+  "token": "To",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
+  "ID": "165",
+  "startIndex": "986",
+  "endIndex": "1012",
+  "token": "Shirley.Crenshaw@enron.com",
+  "lemma": "_",
+  "POS": "NN"
 },
 {
   "ID": "166",
@@ -446,6 +910,22 @@
   "token": "Vince",
   "lemma": "vince",
   "POS": "NNP"
+},
+{
+  "ID": "170",
+  "startIndex": "1023",
+  "endIndex": "1043",
+  "token": "J.Kaminski@enron.com",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
+  "ID": "172",
+  "startIndex": "1044",
+  "endIndex": "1046",
+  "token": "20",
+  "lemma": "20",
+  "POS": "CD"
 },
 {
   "ID": "173",
@@ -480,6 +960,22 @@
   "POS": "NNP"
 },
 {
+  "ID": "179",
+  "startIndex": "1080",
+  "endIndex": "1084",
+  "token": "with",
+  "lemma": "with",
+  "POS": "IN"
+},
+{
+  "ID": "180",
+  "startIndex": "1085",
+  "endIndex": "1088",
+  "token": "The",
+  "lemma": "the",
+  "POS": "DT"
+},
+{
   "ID": "181",
   "startIndex": "1089",
   "endIndex": "1094",
@@ -512,6 +1008,14 @@
   "POS": "NNP"
 },
 {
+  "ID": "186",
+  "startIndex": "1117",
+  "endIndex": "1120",
+  "token": "Ms.",
+  "lemma": "Ms.",
+  "POS": "NN"
+},
+{
   "ID": "187",
   "startIndex": "1121",
   "endIndex": "1129",
@@ -526,6 +1030,14 @@
   "token": "Thank",
   "lemma": "thank",
   "POS": "VB"
+},
+{
+  "ID": "190",
+  "startIndex": "1139",
+  "endIndex": "1142",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
 },
 {
   "ID": "191",
@@ -544,12 +1056,36 @@
   "POS": "RB"
 },
 {
+  "ID": "193",
+  "startIndex": "1153",
+  "endIndex": "1156",
+  "token": "for",
+  "lemma": "for",
+  "POS": "IN"
+},
+{
+  "ID": "194",
+  "startIndex": "1157",
+  "endIndex": "1160",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
+},
+{
   "ID": "195",
   "startIndex": "1161",
   "endIndex": "1168",
   "token": "message",
   "lemma": "message",
   "POS": "NN"
+},
+{
+  "ID": "197",
+  "startIndex": "1170",
+  "endIndex": "1171",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
 },
 {
   "ID": "198",
@@ -576,12 +1112,36 @@
   "POS": "JJ"
 },
 {
+  "ID": "201",
+  "startIndex": "1191",
+  "endIndex": "1193",
+  "token": "in",
+  "lemma": "in",
+  "POS": "IN"
+},
+{
+  "ID": "202",
+  "startIndex": "1194",
+  "endIndex": "1197",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
+},
+{
   "ID": "203",
   "startIndex": "1198",
   "endIndex": "1209",
   "token": "opportunity",
   "lemma": "opportunity",
   "POS": "NN"
+},
+{
+  "ID": "204",
+  "startIndex": "1210",
+  "endIndex": "1212",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
 },
 {
   "ID": "205",
@@ -592,12 +1152,36 @@
   "POS": "VB"
 },
 {
+  "ID": "206",
+  "startIndex": "1218",
+  "endIndex": "1220",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "207",
   "startIndex": "1221",
   "endIndex": "1230",
   "token": "personnel",
   "lemma": "personnel",
   "POS": "NNS"
+},
+{
+  "ID": "208",
+  "startIndex": "1231",
+  "endIndex": "1235",
+  "token": "from",
+  "lemma": "from",
+  "POS": "IN"
+},
+{
+  "ID": "209",
+  "startIndex": "1236",
+  "endIndex": "1239",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
 },
 {
   "ID": "210",
@@ -616,12 +1200,36 @@
   "POS": "NNP"
 },
 {
+  "ID": "212",
+  "startIndex": "1255",
+  "endIndex": "1257",
+  "token": "at",
+  "lemma": "at",
+  "POS": "IN"
+},
+{
   "ID": "213",
   "startIndex": "1258",
   "endIndex": "1263",
   "token": "Enron",
   "lemma": "enron",
   "POS": "NNP"
+},
+{
+  "ID": "215",
+  "startIndex": "1265",
+  "endIndex": "1272",
+  "token": "Between",
+  "lemma": "between",
+  "POS": "IN"
+},
+{
+  "ID": "216",
+  "startIndex": "1273",
+  "endIndex": "1276",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
 },
 {
   "ID": "217",
@@ -640,12 +1248,28 @@
   "POS": "NNS"
 },
 {
+  "ID": "219",
+  "startIndex": "1286",
+  "endIndex": "1289",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
+},
+{
   "ID": "220",
   "startIndex": "1290",
   "endIndex": "1297",
   "token": "suggest",
   "lemma": "suggest",
   "POS": "VBP"
+},
+{
+  "ID": "222",
+  "startIndex": "1299",
+  "endIndex": "1300",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
 },
 {
   "ID": "223",
@@ -664,12 +1288,36 @@
   "POS": "NNP"
 },
 {
+  "ID": "225",
+  "startIndex": "1318",
+  "endIndex": "1322",
+  "token": "12/6",
+  "lemma": "12/6",
+  "POS": "CD"
+},
+{
   "ID": "227",
   "startIndex": "1324",
   "endIndex": "1335",
   "token": "Considering",
   "lemma": "consider",
   "POS": "VBG"
+},
+{
+  "ID": "228",
+  "startIndex": "1336",
+  "endIndex": "1339",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
+},
+{
+  "ID": "229",
+  "startIndex": "1340",
+  "endIndex": "1348",
+  "token": "two-hour",
+  "lemma": "two-hour",
+  "POS": "JJ"
 },
 {
   "ID": "230",
@@ -688,6 +1336,14 @@
   "POS": "NN"
 },
 {
+  "ID": "232",
+  "startIndex": "1365",
+  "endIndex": "1372",
+  "token": "between",
+  "lemma": "between",
+  "POS": "IN"
+},
+{
   "ID": "233",
   "startIndex": "1373",
   "endIndex": "1383",
@@ -696,12 +1352,28 @@
   "POS": "NNP"
 },
 {
+  "ID": "234",
+  "startIndex": "1384",
+  "endIndex": "1387",
+  "token": "and",
+  "lemma": "and",
+  "POS": "CC"
+},
+{
   "ID": "235",
   "startIndex": "1388",
   "endIndex": "1393",
   "token": "Texas",
   "lemma": "texa",
   "POS": "NNP"
+},
+{
+  "ID": "237",
+  "startIndex": "1395",
+  "endIndex": "1400",
+  "token": "11:00",
+  "lemma": "11:00",
+  "POS": "NN"
 },
 {
   "ID": "238",
@@ -728,12 +1400,28 @@
   "POS": "NN"
 },
 {
+  "ID": "242",
+  "startIndex": "1418",
+  "endIndex": "1422",
+  "token": "1:00",
+  "lemma": "1:00",
+  "POS": "NN"
+},
+{
   "ID": "243",
   "startIndex": "1423",
   "endIndex": "1425",
   "token": "pm",
   "lemma": "pm",
   "POS": "NN"
+},
+{
+  "ID": "244",
+  "startIndex": "1426",
+  "endIndex": "1430",
+  "token": "your",
+  "lemma": "your",
+  "POS": "PRP$"
 },
 {
   "ID": "245",
@@ -752,12 +1440,28 @@
   "POS": "VBZ"
 },
 {
+  "ID": "248",
+  "startIndex": "1443",
+  "endIndex": "1445",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "249",
   "startIndex": "1446",
   "endIndex": "1448",
   "token": "be",
   "lemma": "be",
   "POS": "VB"
+},
+{
+  "ID": "250",
+  "startIndex": "1449",
+  "endIndex": "1450",
+  "token": "a",
+  "lemma": "a",
+  "POS": "DT"
 },
 {
   "ID": "251",
@@ -784,6 +1488,14 @@
   "POS": "RB"
 },
 {
+  "ID": "256",
+  "startIndex": "1471",
+  "endIndex": "1472",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
+},
+{
   "ID": "257",
   "startIndex": "1473",
   "endIndex": "1475",
@@ -808,6 +1520,22 @@
   "POS": "JJS"
 },
 {
+  "ID": "260",
+  "startIndex": "1486",
+  "endIndex": "1488",
+  "token": "of",
+  "lemma": "of",
+  "POS": "IN"
+},
+{
+  "ID": "261",
+  "startIndex": "1489",
+  "endIndex": "1492",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
+},
+{
   "ID": "262",
   "startIndex": "1493",
   "endIndex": "1496",
@@ -816,12 +1544,44 @@
   "POS": "NN"
 },
 {
+  "ID": "263",
+  "startIndex": "1497",
+  "endIndex": "1499",
+  "token": "on",
+  "lemma": "on",
+  "POS": "IN"
+},
+{
+  "ID": "264",
+  "startIndex": "1500",
+  "endIndex": "1504",
+  "token": "12/6",
+  "lemma": "12/6",
+  "POS": "CD"
+},
+{
   "ID": "265",
   "startIndex": "1505",
   "endIndex": "1507",
   "token": "so",
   "lemma": "so",
   "POS": "RB"
+},
+{
+  "ID": "266",
+  "startIndex": "1508",
+  "endIndex": "1510",
+  "token": "if",
+  "lemma": "if",
+  "POS": "IN"
+},
+{
+  "ID": "267",
+  "startIndex": "1511",
+  "endIndex": "1515",
+  "token": "some",
+  "lemma": "some",
+  "POS": "DT"
 },
 {
   "ID": "268",
@@ -864,6 +1624,22 @@
   "POS": "JJ"
 },
 {
+  "ID": "273",
+  "startIndex": "1544",
+  "endIndex": "1546",
+  "token": "on",
+  "lemma": "on",
+  "POS": "IN"
+},
+{
+  "ID": "274",
+  "startIndex": "1547",
+  "endIndex": "1551",
+  "token": "your",
+  "lemma": "your",
+  "POS": "PRP$"
+},
+{
   "ID": "275",
   "startIndex": "1552",
   "endIndex": "1555",
@@ -886,6 +1662,14 @@
   "token": "let",
   "lemma": "let",
   "POS": "VB"
+},
+{
+  "ID": "279",
+  "startIndex": "1568",
+  "endIndex": "1570",
+  "token": "me",
+  "lemma": "me",
+  "POS": "PRP"
 },
 {
   "ID": "280",
@@ -912,6 +1696,14 @@
   "POS": "RB"
 },
 {
+  "ID": "285",
+  "startIndex": "1593",
+  "endIndex": "1594",
+  "token": "I",
+  "lemma": "i",
+  "POS": "PRP"
+},
+{
   "ID": "286",
   "startIndex": "1595",
   "endIndex": "1599",
@@ -928,12 +1720,52 @@
   "POS": "RB"
 },
 {
+  "ID": "288",
+  "startIndex": "1608",
+  "endIndex": "1610",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "289",
   "startIndex": "1611",
   "endIndex": "1618",
   "token": "talking",
   "lemma": "talk",
   "POS": "VBG"
+},
+{
+  "ID": "290",
+  "startIndex": "1619",
+  "endIndex": "1621",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
+  "ID": "291",
+  "startIndex": "1622",
+  "endIndex": "1625",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
+},
+{
+  "ID": "292",
+  "startIndex": "1626",
+  "endIndex": "1629",
+  "token": "and",
+  "lemma": "and",
+  "POS": "CC"
+},
+{
+  "ID": "293",
+  "startIndex": "1630",
+  "endIndex": "1634",
+  "token": "your",
+  "lemma": "your",
+  "POS": "PRP$"
 },
 {
   "ID": "294",
@@ -952,6 +1784,14 @@
   "POS": "NNP"
 },
 {
+  "ID": "297",
+  "startIndex": "1658",
+  "endIndex": "1660",
+  "token": "On",
+  "lemma": "on",
+  "POS": "IN"
+},
+{
   "ID": "298",
   "startIndex": "1661",
   "endIndex": "1664",
@@ -960,12 +1800,36 @@
   "POS": "NNP"
 },
 {
+  "ID": "300",
+  "startIndex": "1666",
+  "endIndex": "1668",
+  "token": "28",
+  "lemma": "28",
+  "POS": "CD"
+},
+{
   "ID": "301",
   "startIndex": "1669",
   "endIndex": "1672",
   "token": "Nov",
   "lemma": "nov",
   "POS": "NNP"
+},
+{
+  "ID": "302",
+  "startIndex": "1673",
+  "endIndex": "1677",
+  "token": "2000",
+  "lemma": "2000",
+  "POS": "CD"
+},
+{
+  "ID": "303",
+  "startIndex": "1678",
+  "endIndex": "1704",
+  "token": "Shirley.Crenshaw@enron.com",
+  "lemma": "_",
+  "POS": "NN"
 },
 {
   "ID": "304",
@@ -1024,12 +1888,36 @@
   "POS": "JJ"
 },
 {
+  "ID": "316",
+  "startIndex": "1770",
+  "endIndex": "1774",
+  "token": "your",
+  "lemma": "your",
+  "POS": "PRP$"
+},
+{
   "ID": "317",
   "startIndex": "1775",
   "endIndex": "1781",
   "token": "resume",
   "lemma": "resume",
   "POS": "NN"
+},
+{
+  "ID": "318",
+  "startIndex": "1782",
+  "endIndex": "1784",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
+  "ID": "319",
+  "startIndex": "1785",
+  "endIndex": "1788",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
 },
 {
   "ID": "320",
@@ -1048,6 +1936,30 @@
   "POS": "NNP"
 },
 {
+  "ID": "323",
+  "startIndex": "1805",
+  "endIndex": "1808",
+  "token": "and",
+  "lemma": "and",
+  "POS": "CC"
+},
+{
+  "ID": "325",
+  "startIndex": "1811",
+  "endIndex": "1815",
+  "token": "they",
+  "lemma": "they",
+  "POS": "PRP"
+},
+{
+  "ID": "326",
+  "startIndex": "1816",
+  "endIndex": "1821",
+  "token": "would",
+  "lemma": "would",
+  "POS": "MD"
+},
+{
   "ID": "327",
   "startIndex": "1822",
   "endIndex": "1826",
@@ -1056,12 +1968,28 @@
   "POS": "VB"
 },
 {
+  "ID": "328",
+  "startIndex": "1827",
+  "endIndex": "1829",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "329",
   "startIndex": "1830",
   "endIndex": "1837",
   "token": "conduct",
   "lemma": "conduct",
   "POS": "VB"
+},
+{
+  "ID": "330",
+  "startIndex": "1838",
+  "endIndex": "1839",
+  "token": "a",
+  "lemma": "a",
+  "POS": "DT"
 },
 {
   "ID": "331",
@@ -1078,6 +2006,22 @@
   "token": "interview",
   "lemma": "interview",
   "POS": "NN"
+},
+{
+  "ID": "333",
+  "startIndex": "1860",
+  "endIndex": "1864",
+  "token": "with",
+  "lemma": "with",
+  "POS": "IN"
+},
+{
+  "ID": "334",
+  "startIndex": "1865",
+  "endIndex": "1868",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
 },
 {
   "ID": "336",
@@ -1104,12 +2048,36 @@
   "POS": "NN"
 },
 {
+  "ID": "341",
+  "startIndex": "1892",
+  "endIndex": "1894",
+  "token": "at",
+  "lemma": "at",
+  "POS": "IN"
+},
+{
+  "ID": "342",
+  "startIndex": "1895",
+  "endIndex": "1899",
+  "token": "your",
+  "lemma": "your",
+  "POS": "PRP$"
+},
+{
   "ID": "343",
   "startIndex": "1900",
   "endIndex": "1911",
   "token": "convenience",
   "lemma": "convenience",
   "POS": "NN"
+},
+{
+  "ID": "345",
+  "startIndex": "1913",
+  "endIndex": "1916",
+  "token": "The",
+  "lemma": "the",
+  "POS": "DT"
 },
 {
   "ID": "346",
@@ -1128,6 +2096,14 @@
   "POS": "NNS"
 },
 {
+  "ID": "348",
+  "startIndex": "1927",
+  "endIndex": "1932",
+  "token": "would",
+  "lemma": "would",
+  "POS": "MD"
+},
+{
   "ID": "349",
   "startIndex": "1933",
   "endIndex": "1935",
@@ -1144,12 +2120,36 @@
   "POS": "NNP"
 },
 {
+  "ID": "352",
+  "startIndex": "1945",
+  "endIndex": "1949",
+  "token": "12/5",
+  "lemma": "12/5",
+  "POS": "CD"
+},
+{
+  "ID": "353",
+  "startIndex": "1950",
+  "endIndex": "1952",
+  "token": "or",
+  "lemma": "or",
+  "POS": "CC"
+},
+{
   "ID": "355",
   "startIndex": "1955",
   "endIndex": "1964",
   "token": "Wednesday",
   "lemma": "wednesday",
   "POS": "NNP"
+},
+{
+  "ID": "357",
+  "startIndex": "1966",
+  "endIndex": "1970",
+  "token": "12/6",
+  "lemma": "12/6",
+  "POS": "CD"
 },
 {
   "ID": "361",
@@ -1168,12 +2168,28 @@
   "POS": "VB"
 },
 {
+  "ID": "363",
+  "startIndex": "1987",
+  "endIndex": "1989",
+  "token": "me",
+  "lemma": "me",
+  "POS": "PRP"
+},
+{
   "ID": "364",
   "startIndex": "1990",
   "endIndex": "1994",
   "token": "know",
   "lemma": "know",
   "POS": "VB"
+},
+{
+  "ID": "365",
+  "startIndex": "1995",
+  "endIndex": "2000",
+  "token": "which",
+  "lemma": "which",
+  "POS": "WDT"
 },
 {
   "ID": "366",
@@ -1184,12 +2200,36 @@
   "POS": "NN"
 },
 {
+  "ID": "367",
+  "startIndex": "2005",
+  "endIndex": "2008",
+  "token": "and",
+  "lemma": "and",
+  "POS": "CC"
+},
+{
+  "ID": "368",
+  "startIndex": "2009",
+  "endIndex": "2013",
+  "token": "what",
+  "lemma": "what",
+  "POS": "WP"
+},
+{
   "ID": "369",
   "startIndex": "2014",
   "endIndex": "2018",
   "token": "time",
   "lemma": "time",
   "POS": "NN"
+},
+{
+  "ID": "370",
+  "startIndex": "2019",
+  "endIndex": "2024",
+  "token": "would",
+  "lemma": "would",
+  "POS": "MD"
 },
 {
   "ID": "371",
@@ -1208,12 +2248,60 @@
   "POS": "JJS"
 },
 {
+  "ID": "373",
+  "startIndex": "2033",
+  "endIndex": "2036",
+  "token": "for",
+  "lemma": "for",
+  "POS": "IN"
+},
+{
+  "ID": "374",
+  "startIndex": "2037",
+  "endIndex": "2040",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
+},
+{
+  "ID": "375",
+  "startIndex": "2041",
+  "endIndex": "2044",
+  "token": "and",
+  "lemma": "and",
+  "POS": "CC"
+},
+{
+  "ID": "377",
+  "startIndex": "2047",
+  "endIndex": "2051",
+  "token": "they",
+  "lemma": "they",
+  "POS": "PRP"
+},
+{
+  "ID": "378",
+  "startIndex": "2052",
+  "endIndex": "2056",
+  "token": "will",
+  "lemma": "will",
+  "POS": "MD"
+},
+{
   "ID": "379",
   "startIndex": "2057",
   "endIndex": "2061",
   "token": "call",
   "lemma": "call",
   "POS": "VB"
+},
+{
+  "ID": "380",
+  "startIndex": "2062",
+  "endIndex": "2065",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
 },
 {
   "ID": "382",
@@ -1224,12 +2312,28 @@
   "POS": "VB"
 },
 {
+  "ID": "383",
+  "startIndex": "2071",
+  "endIndex": "2073",
+  "token": "me",
+  "lemma": "me",
+  "POS": "PRP"
+},
+{
   "ID": "384",
   "startIndex": "2074",
   "endIndex": "2078",
   "token": "know",
   "lemma": "know",
   "POS": "VB"
+},
+{
+  "ID": "385",
+  "startIndex": "2079",
+  "endIndex": "2082",
+  "token": "the",
+  "lemma": "the",
+  "POS": "DT"
 },
 {
   "ID": "386",
@@ -1248,12 +2352,36 @@
   "POS": "NN"
 },
 {
+  "ID": "388",
+  "startIndex": "2100",
+  "endIndex": "2104",
+  "token": "that",
+  "lemma": "that",
+  "POS": "IN"
+},
+{
+  "ID": "389",
+  "startIndex": "2105",
+  "endIndex": "2108",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
+},
+{
   "ID": "390",
   "startIndex": "2109",
   "endIndex": "2113",
   "token": "wish",
   "lemma": "wish",
   "POS": "VBP"
+},
+{
+  "ID": "391",
+  "startIndex": "2114",
+  "endIndex": "2116",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
 },
 {
   "ID": "392",
@@ -1272,12 +2400,36 @@
   "POS": "VBN"
 },
 {
+  "ID": "395",
+  "startIndex": "2132",
+  "endIndex": "2134",
+  "token": "at",
+  "lemma": "at",
+  "POS": "IN"
+},
+{
+  "ID": "399",
+  "startIndex": "2140",
+  "endIndex": "2143",
+  "token": "The",
+  "lemma": "the",
+  "POS": "DT"
+},
+{
   "ID": "400",
   "startIndex": "2144",
   "endIndex": "2156",
   "token": "interviewers",
   "lemma": "interviewer",
   "POS": "NNS"
+},
+{
+  "ID": "401",
+  "startIndex": "2157",
+  "endIndex": "2162",
+  "token": "would",
+  "lemma": "would",
+  "POS": "MD"
 },
 {
   "ID": "402",
@@ -1320,12 +2472,28 @@
   "POS": "NNP"
 },
 {
+  "ID": "410",
+  "startIndex": "2204",
+  "endIndex": "2207",
+  "token": "and",
+  "lemma": "and",
+  "POS": "CC"
+},
+{
   "ID": "411",
   "startIndex": "2208",
   "endIndex": "2212",
   "token": "Head",
   "lemma": "head",
   "POS": "NNP"
+},
+{
+  "ID": "412",
+  "startIndex": "2213",
+  "endIndex": "2215",
+  "token": "of",
+  "lemma": "of",
+  "POS": "IN"
 },
 {
   "ID": "413",
@@ -1456,12 +2624,36 @@
   "POS": "RB"
 },
 {
+  "ID": "437",
+  "startIndex": "2355",
+  "endIndex": "2357",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "438",
   "startIndex": "2358",
   "endIndex": "2365",
   "token": "hearing",
   "lemma": "hear",
   "POS": "NN"
+},
+{
+  "ID": "439",
+  "startIndex": "2366",
+  "endIndex": "2370",
+  "token": "from",
+  "lemma": "from",
+  "POS": "IN"
+},
+{
+  "ID": "440",
+  "startIndex": "2371",
+  "endIndex": "2374",
+  "token": "you",
+  "lemma": "you",
+  "POS": "PRP"
 },
 {
   "ID": "444",
@@ -1536,6 +2728,30 @@
   "POS": "NNP"
 },
 {
+  "ID": "460",
+  "startIndex": "2470",
+  "endIndex": "2473",
+  "token": "713",
+  "lemma": "713",
+  "POS": "CD"
+},
+{
+  "ID": "462",
+  "startIndex": "2474",
+  "endIndex": "2477",
+  "token": "853",
+  "lemma": "853",
+  "POS": "CD"
+},
+{
+  "ID": "464",
+  "startIndex": "2478",
+  "endIndex": "2482",
+  "token": "5290",
+  "lemma": "5290",
+  "POS": "CD"
+},
+{
   "ID": "469",
   "startIndex": "2548",
   "endIndex": "2556",
@@ -1560,6 +2776,14 @@
   "POS": "NNP"
 },
 {
+  "ID": "474",
+  "startIndex": "2572",
+  "endIndex": "2597",
+  "token": "jmyan@leland.stanford.edu",
+  "lemma": "_",
+  "POS": "NN"
+},
+{
   "ID": "475",
   "startIndex": "2598",
   "endIndex": "2608",
@@ -1568,12 +2792,44 @@
   "POS": "NNP"
 },
 {
+  "ID": "476",
+  "startIndex": "2609",
+  "endIndex": "2611",
+  "token": "of",
+  "lemma": "of",
+  "POS": "IN"
+},
+{
   "ID": "477",
   "startIndex": "2612",
   "endIndex": "2621",
   "token": "Economics",
   "lemma": "economics",
   "POS": "NNP"
+},
+{
+  "ID": "479",
+  "startIndex": "2623",
+  "endIndex": "2626",
+  "token": "650",
+  "lemma": "650",
+  "POS": "CD"
+},
+{
+  "ID": "481",
+  "startIndex": "2627",
+  "endIndex": "2630",
+  "token": "497",
+  "lemma": "497",
+  "POS": "CD"
+},
+{
+  "ID": "483",
+  "startIndex": "2631",
+  "endIndex": "2635",
+  "token": "4045",
+  "lemma": "4045",
+  "POS": "CD"
 },
 {
   "ID": "487",
@@ -1592,6 +2848,30 @@
   "POS": "NNP"
 },
 {
+  "ID": "490",
+  "startIndex": "2661",
+  "endIndex": "2664",
+  "token": "650",
+  "lemma": "650",
+  "POS": "CD"
+},
+{
+  "ID": "492",
+  "startIndex": "2665",
+  "endIndex": "2668",
+  "token": "725",
+  "lemma": "725",
+  "POS": "CD"
+},
+{
+  "ID": "494",
+  "startIndex": "2669",
+  "endIndex": "2673",
+  "token": "8914",
+  "lemma": "8914",
+  "POS": "CD"
+},
+{
   "ID": "498",
   "startIndex": "2678",
   "endIndex": "2686",
@@ -1606,6 +2886,22 @@
   "token": "CA",
   "lemma": "can",
   "POS": "NNP"
+},
+{
+  "ID": "501",
+  "startIndex": "2691",
+  "endIndex": "2696",
+  "token": "94305",
+  "lemma": "94305",
+  "POS": "CD"
+},
+{
+  "ID": "502",
+  "startIndex": "2697",
+  "endIndex": "2700",
+  "token": "358",
+  "lemma": "358",
+  "POS": "CD"
 },
 {
   "ID": "505",
@@ -1624,6 +2920,14 @@
   "POS": "NNP"
 },
 {
+  "ID": "508",
+  "startIndex": "2777",
+  "endIndex": "2779",
+  "token": "If",
+  "lemma": "if",
+  "POS": "IN"
+},
+{
   "ID": "509",
   "startIndex": "2780",
   "endIndex": "2783",
@@ -1638,6 +2942,14 @@
   "token": "seeks",
   "lemma": "seek",
   "POS": "VBZ"
+},
+{
+  "ID": "511",
+  "startIndex": "2790",
+  "endIndex": "2792",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
 },
 {
   "ID": "512",
@@ -1656,12 +2968,28 @@
   "POS": "RB"
 },
 {
+  "ID": "514",
+  "startIndex": "2808",
+  "endIndex": "2811",
+  "token": "and",
+  "lemma": "and",
+  "POS": "CC"
+},
+{
   "ID": "515",
   "startIndex": "2812",
   "endIndex": "2818",
   "token": "attain",
   "lemma": "attain",
   "POS": "VB"
+},
+{
+  "ID": "516",
+  "startIndex": "2819",
+  "endIndex": "2821",
+  "token": "it",
+  "lemma": "it",
+  "POS": "PRP"
 },
 {
   "ID": "518",
@@ -1672,6 +3000,14 @@
   "POS": "RB"
 },
 {
+  "ID": "519",
+  "startIndex": "2828",
+  "endIndex": "2832",
+  "token": "what",
+  "lemma": "what",
+  "POS": "WP"
+},
+{
   "ID": "520",
   "startIndex": "2833",
   "endIndex": "2835",
@@ -1680,12 +3016,36 @@
   "POS": "VBZ"
 },
 {
+  "ID": "521",
+  "startIndex": "2836",
+  "endIndex": "2841",
+  "token": "there",
+  "lemma": "there",
+  "POS": "EX"
+},
+{
+  "ID": "522",
+  "startIndex": "2842",
+  "endIndex": "2844",
+  "token": "to",
+  "lemma": "to",
+  "POS": "TO"
+},
+{
   "ID": "523",
   "startIndex": "2845",
   "endIndex": "2851",
   "token": "repine",
   "lemma": "repine",
   "POS": "NN"
+},
+{
+  "ID": "524",
+  "startIndex": "2852",
+  "endIndex": "2857",
+  "token": "about",
+  "lemma": "about",
+  "POS": "RP"
 },
 {
   "ID": "527",
