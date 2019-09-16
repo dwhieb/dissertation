@@ -26,7 +26,7 @@ const pennTags     = Object.keys(pennTagsJSON);
  * @return {Boolean}
  */
 function isBadData({ lemma, POS, token }) {
-  return lemma === `_`          // URL or other non-lexical information
+  return lemma === `_`          // lemmas that could not be determined by Penn
   || badTags.includes(POS)      // unnecessary part of speech
   || !pennTags.includes(POS)    // not a recognized part of speech
   || isBadOneLetterWord(token); // one letter other than "a" or "I"
