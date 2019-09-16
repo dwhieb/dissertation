@@ -1,14 +1,25 @@
-import badPOS         from '../constants/badPOS.json';
-import fs             from 'fs';
-import JSONStream     from 'JSONStream';
-import path           from 'path';
-import pennTags       from '../constants/POS.json';
-import { processDir } from '../utilities/index.js';
+import { fileURLToPath } from 'url';
+import fs                from 'fs';
+import JSONStream        from 'JSONStream';
+import path              from 'path';
+import { processDir }    from '../utilities/index.js';
+import yamlParser        from 'js-yaml';
 
 const { rename, unlink } = fs.promises;
 
+// eslint-disable-next-line no-shadow, no-underscore-dangle
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+const badTagsPath     = path.join(__dirname, `../constants/nonLexicalTags.yml`);
 const goodCharsRegExp = /^[A-Za-z']+$/u;
-const pos             = Object.keys(pennTags);
+const tagsPath        = path.join(__dirname, `../constants/tags.yml`);
+
+const pennTagsYAML = fs.readFileSync(tagsPath); // eslint-disable-line no-sync
+const pennTagsJSON = yamlParser.load(pennTagsYAML);
+const pos          = Object.keys(pennTagsJSON);
+
+const badTagsYAML = fs.readFileSync(badTagsPath); // eslint-disable-line no-sync
+const badTags     = yamlParser.load(badTagsYAML);
 
 /**
  * Checks whether a word contains unnecessary data
@@ -16,7 +27,7 @@ const pos             = Object.keys(pennTags);
  * @return {Boolean}
  */
 function isBadData({ POS, token }) {
-  return badPOS.includes(POS)      // unnecessary part of speech
+  return badTags.includes(POS)      // unnecessary part of speech
   || !pos.includes(POS)            // not a recognized part of speech
   || isBadOneLetterWord(token)     // one letter other than "a" or "I"
   || !goodCharsRegExp.test(token); // includes Arabic numerals or other punctuation

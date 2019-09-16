@@ -41,7 +41,7 @@
     "log-end":       "node --experimental-modules --no-warnings scripts/build/endLog.js",
     "quick-bib":     "npm run compile && npm run bib && npm run compile && open-cli src/main.pdf",
     "quick-build":   "npm run compile && open-cli src/main.pdf",
-    "start":         "node --experimental-modules --no-warnings scripts/bin/removeUnwantedTokens.js data/English/data",
+    "start":         "",
     "stats":         "node --experimental-modules --no-warnings scripts/bin/runStats.js data/English/data data/English/stats",
     "upload":        "node --experimental-modules --no-warnings scripts/build/upload.js",
 
@@ -59,6 +59,7 @@
     "csv-parse": "^4.4.5",
     "csv-stringify": "^5.3.3",
     "eslint": "^6.0.1",
+    "js-yaml": "^3.13.1",
     "open-cli": "^5.0.0",
     "ora": "^3.4.0",
     "progress": "^2.0.3",
