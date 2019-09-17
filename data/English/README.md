@@ -1,6 +1,6 @@
 # English
 
-This folder contains data from the Manually Annotated Sub-Corpus (MASC) of the Open American National Corpus (OANC), and other relevant resources.
+This folder contains data from the Manually Annotated Sub-Corpus (MASC) of the Open American National Corpus (OANC), related resources, and any accompanying statistical data or figures derived from this corpus.
 
 ## Penn POS Tags
 

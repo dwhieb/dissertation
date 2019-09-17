@@ -13,9 +13,10 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const badTags = [
   `POS`,
   `SYM`,
+  `UH`,
 ];
 
-const pennTagsPath = path.join(__dirname, `../constants/tags.yml`);
+const pennTagsPath = path.join(__dirname, `../../data/English/PennTags.yml`);
 const pennTagsYAML = fs.readFileSync(pennTagsPath); // eslint-disable-line no-sync
 const pennTagsJSON = yamlParser.load(pennTagsYAML);
 const pennTags     = Object.keys(pennTagsJSON);
@@ -25,9 +26,10 @@ const pennTags     = Object.keys(pennTagsJSON);
  * @param  {Object}  word The word as a POJO
  * @return {Boolean}
  */
-function isBadData({ POS, token }) {
-  return badTags.includes(POS)  // unnecessary part of speech
-  || !pennTags.includes(POS)    // not a recognized part of speech
+function isBadData({ lemma, tag, token }) {
+  return lemma === `_`          // lemmas that could not be determined by Penn
+  || badTags.includes(tag)      // unnecessary part of speech
+  || !pennTags.includes(tag)    // not a recognized part of speech
   || isBadOneLetterWord(token); // one letter other than "a" or "I"
 }
 

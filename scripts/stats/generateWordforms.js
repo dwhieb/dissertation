@@ -1,4 +1,7 @@
-import { aggregate } from '../utilities/index.js';
+import {
+  aggregate,
+  isMajorCategory,
+} from '../utilities/index.js';
 
 /**
  * Column names for the generated CSV file
@@ -12,12 +15,15 @@ const columns = [
 /**
  * Aggregator function used to generate the list of lexeme frequencies
  * @param  {Map}    frequencies A map of lexeme frequencies
- * @param  {String} POS         The part of speech for the word token
+ * @param  {String} tag         The part of speech for the word token
  * @param  {String} lemma       The lemma for the word token
  */
-function aggregateWordforms(frequencies, { POS, token }) {
+function aggregateWordforms(frequencies, { tag, token }) {
 
-  const wordform = `${token.toLowerCase()}_${POS}`;
+  // NB: Comment out the following line to calculate archlexeme frequencies based on all word classes
+  if (!isMajorCategory(tag)) return;
+
+  const wordform = `${token.toLowerCase()}_${tag}`;
 
   if (frequencies.has(wordform)) frequencies.set(wordform, frequencies.get(wordform) + 1);
   else frequencies.set(wordform, 1);
