@@ -39,7 +39,7 @@ This project and all its accompanying data and code are stored in a repository o
 
 ### Running Scripts
 
-While the inferential statistics and data visualization for this thesis were produced using the R programming language, R is not well suited to large-scale data manipulation or processing of large files (Adler [2010](#Adler2010): 157&ndash;158). Therefore it is generally recommended that data preprocessing be conducted using other programming languages. In linguistics, this is typically done with Python. However, since the programming language I am most comfortable with is JavaScript, the scripts for this project are written in Node.js, software that allows JavaScript to be run on a local computer.
+While the inferential statistics and data visualization for this thesis were produced using the R programming language, R is not well suited to large-scale data manipulation or processing of large files (Adler [2010](#Adler2010): 157&ndash;158). Therefore it is generally recommended that data preprocessing be conducted using other programming languages. In linguistics, this is typically done with Python. However, since I am proficient in JavaScript and not Python, the scripts for this project are written in JavaScript (specifically Node.js, which can JavaScript on a local computer). JavaScript (via Node.js) is however gaining traction in data science, a trend which is expected to continue.
 
 Node also comes with the Node Package Manager (<abbr title='Node package manager'>npm</abbr>), which allows you to install packages that other programmers have written in Node. Any public package in the npm registry may be installed by running `npm install {package-name}` from the command line.
 
@@ -57,9 +57,13 @@ Once you have cloned this repository and installed npm and Node, install the nec
 
 ## 3. Data Collection ([back to top](#readme))
 
-As mentioned above, all the data in this study are publicly available. This section presents the necessary steps for obtaining that data. Note that this repository does not contain the primary data itself, just annotations, statistics, and other accompanying data that is produced from the original data. The primary data itself lives in various places online, described below.
+As mentioned above, all the data in this study are publicly available. This section presents the necessary steps for obtaining that data.
 
-The data used for the investigation of English in this study come from the [Santa Barbara Corpus of Spoken American English][SBC] (<abbr title='Santa Barbara Corpus of Spoken American English'>SBC</abbr>), a 249,000-word corpus whose data are entirely open access. More information about the SBC may be found at the [SBC web page][SBC].
+The data used for the investigation of English come from the [Open American National Corpus][OANC] (<abbr title='Open American National Corpus'>OANC</abbr>), a 15 million word corpus whose data are entirely open access. Since the data from other languages in this study are all from spoken texts, I elected to use just the spoken portion of the OANC, totaling 3,217,772 words. This spoken portion of the OANC is actually composed of two distinct subcorpora—the [Charlotte Narrative & Conversation Collection][Charlotte] (<abbr title='Charlotte Narrative &amp; Conversation Collection'>CNCC</abbr> or simply "the Charlotte corpus") and the [Switchboard Corpus][Switchboard]. More details about the Charlotte corpus may be found [here][Charlotte], and the Switchboard corpus [here][Switchboard].
+
+The OANC may be downloaded in its entirety from from the [OANC download page][OANC-download] in `.zip` (625MB) or `.tgz` formats. You will need to unzip the folder after you have downloaded it. The spoken portion of the corpus is in `data/spoken` inside the downloaded folder.
+
+In this repository, the OANC data is stored in the folder `data/English/data`. For the purposes of this study, only the `.txt` versions of the files were needed (the accompanying XML files contain stand-off annotations for each text), so any other extraneous files were removed.
 
 ## 4. Data Preparation ([back to top](#readme))
 
@@ -70,46 +74,6 @@ When scripting with JavaScript, I find it significantly easier to work with data
 -->
 
 ## 5. Data Analysis ([back to top](#readme))
-
-<!--
-
-Once the data are prepared and stored as JSON files, they are ready for statistical analysis. For this project, I generated statistical data on three types of linguistic objects—wordforms, lexemes, and archlexemes. For each linguistic type, I wrote a script in the `scripts/stats` folder which generates a list of items of that type, and the relevant statistics about each item:
-
-- `generateWordforms.js`: Generates a tab-delimited file containing each unique wordform in the corpus and its raw frequency
-
-- `generateLexemes.js`: Generates a tab-delimited file containing each lexeme in the corpus and its raw frequency
-
-- `generateArchlexemes.js`: Generates a tab-delimited file containing each archlexeme in the corpus and its raw frequency
-
-Each of these scripts can be run with the following command:
-
-```cmd
-node --experimental-modules --no-warnings scripts/bin/{script}.js {data directory} {output path}
-```
-
-`{script}` is the name of the script to run (`generateWordforms`, `generateLexemes`, or `generateArchlexemes`), `{data directory}` is the path to your directory of JSON data files, and `{output path}` is the path where you would like the resulting file generated. For example:
-
-```cmd
-node --experimental-modules --no-warnings scripts/bin/generateArchlexemes.js data/English/data data/English/stats/archlexemes.tsv
-```
-
-All three of these statistical files can also be generated with a single command:
-
-```cmd
-npm run stats
-```
-
-The resulting files will look something like this:
-
-Wordform | Frequency
--------- | ---------
-the_DT   | 26116
-to_TO    | 13480
-and_CC   | 12527
-of_IN    | 12000
-a_DT     | 9748
-
--->
 
 ## 6. References ([back to top](#readme))
 
@@ -134,11 +98,14 @@ Add copyright and license for each section of this repository
   - [ ] my scripts (MIT license)
 
 <!-- Links -->
-[cloning]:      https://help.github.com/en/articles/cloning-a-repository
-[Daffodil]:     https://format.digitallinguistics.io/
-[dissertation]: https://files.danielhieber.com/publications/dissertation.pdf
-[GitHub]:       https://github.com/dwhieb/dissertation
-[JSON]:         http://json.org/
-[Node]:         https://nodejs.org/
-[npm]:          https://www.npmjs.com/
-[SBC]:          https://www.linguistics.ucsb.edu/research/santa-barbara-corpus
+[Charlotte]:     https://newsouthvoices.uncc.edu
+[cloning]:       https://help.github.com/en/articles/cloning-a-repository
+[Daffodil]:      https://format.digitallinguistics.io/
+[dissertation]:  https://files.danielhieber.com/publications/dissertation.pdf
+[GitHub]:        https://github.com/dwhieb/dissertation
+[JSON]:          http://json.org/
+[Node]:          https://nodejs.org/
+[npm]:           https://www.npmjs.com/
+[OANC]:          http://www.anc.org/
+[OANC-download]: http://www.anc.org/data/oanc/download/
+[Switchboard]:   https://catalog.ldc.upenn.edu/LDC97S62
