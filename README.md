@@ -15,7 +15,8 @@ A self-imposed requirement for this project is that of empirical accountability 
 1. [References](#references)
 1. [Legal](#legal)
 
-## 1. Introduction ([back to top](#readme))
+([back to top](#readme))
+## 1. Introduction
 
 The process of obtaining the results from this study, as in all empirical scientific studies, can be divided into several stages:
 
@@ -31,7 +32,8 @@ There are not always clear boundaries between each stage (for example, a data se
 
 This readme documents the _technical_ steps relating to [data collection](#data-collection), [data preparation](#data-preparation), [data annotation](#data-annotation) and [data analysis](#data-analysis). Discussion of the research questions, the decisions made during data annotation, and the results obtained may be found in my dissertation document, downloadable [here][dissertation].
 
-## 2. Technical Prerequisites ([back to top](#readme))
+([back to top](#readme))
+## 2. Technical Prerequisites
 
 ### Cloning this Repository
 
@@ -55,7 +57,8 @@ NPM also allows you to run save commonly-used command line commands as project-s
 
 Once you have cloned this repository and installed npm and Node, install the necessary packages for this project by navigating to the root folder of the repository in the command line and running `npm install`.
 
-## 3. Data Collection ([back to top](#readme))
+([back to top](#readme))
+## 3. Data Collection
 
 As mentioned above, all the data in this study are publicly available. This section presents the necessary steps for obtaining that data.
 
@@ -65,7 +68,8 @@ The OANC may be downloaded in its entirety from from the [OANC download page][OA
 
 In this repository, the OANC data is stored in the folder `data/English/data`. For the purposes of this study, only the `.txt` versions of the files were needed (the accompanying XML files contain stand-off annotations for each text), so any other extraneous files were removed.
 
-## 4. Data Preparation ([back to top](#readme))
+([back to top](#readme))
+## 4. Data Preparation
 
 <!--
 ### Converting the Corpus to JSON
@@ -73,13 +77,16 @@ In this repository, the OANC data is stored in the folder `data/English/data`. F
 When scripting with JavaScript, I find it significantly easier to work with data in <abbr title='JavaScript Object Notation'>JSON</abbr> (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about the JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][Daffodil].
 -->
 
-## 5. Data Analysis ([back to top](#readme))
+([back to top](#readme))
+## 5. Data Analysis
 
-## 6. References ([back to top](#readme))
+([back to top](#readme))
+## 6. References
 
 * <p id=Adler2010>Adler, Joseph. 2010. <cite>R in a nutshell: A quick desktop reference</cite>. O'Reilly</p>
 
-## 7. Legal ([back to top](#readme))
+([back to top](#readme))
+## 7. Legal
 
 Currently, none of the materials in this repository are licensed for copying, reproduction, redistribution, modification, or reuse. Please contact [Daniel W. Hieber](https://danielhieber.com) if you wish to use any of the materials in this repository.
 
