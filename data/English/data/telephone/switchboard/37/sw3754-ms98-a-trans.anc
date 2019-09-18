@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cesHeader xmlns="http://www.xces.org/ns/GrAF/1.0/" creator="KBS" date.created="2005-03-29"
+           version="1.0.4">
+    <fileDesc>
+        <titleStmt>
+            <title>sw3754-ms98-a-trans</title>
+        </titleStmt>
+        <extent wordCount="1051"/>
+        <sourceDesc>
+            <title>Switchboard Corpus: VACATION SPOTS</title>
+            <distributor type="org">Linguistic Data Consortium</distributor>
+            <pubPlace>USA</pubPlace>
+            <pubDate>1992</pubDate>
+        </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <editorialStmt>In the LDC Switchboard corpus, each "side" of a conversation is 
+            contained in a separate document. In the ANC version, the two sides of the conversation 
+            have been merged (based on timestamps) so that each document in the ANC Switchboard 
+            sub-corpus contains a complete conversation representing utterances by each side in turn.
+        </editorialStmt>
+    </encodingDesc>
+    <profileDesc>
+        <textClass catRef="SP TP">
+            <subject>VACATION SPOTS</subject>
+            <audience>Adult</audience>
+            <medium>Spoken</medium>
+        </textClass>
+        <particDesc>
+            <person age="1935" id="spkr1481" role="caller" sex="F">Dialect : NORTH MIDLAND, Side : A, Education : 1, Partition : ET</person>
+            <person age="1944" id="spkr1443" role="callee" sex="F">Dialect : NORTHERN, Side : B, Education : 2, Partition : EN2</person>
+        </particDesc>
+        <settingDesc>
+            <setting who="spkr1481 spkr1443">
+                <time>920115 1036</time>
+                <activity>PLEASE DISCUSS TYPES OF VACATIONS AND TRIPS YOU ENJOY. FIND OUT WHETHER THE OTHER CALLER CAN INTEREST YOU IN A VACATION SPOT YOU HAVEN'T VISITED.</activity>
+            </setting>
+        </settingDesc>
+        <primaryData loc="sw3754-ms98-a-trans.txt" medium="text"/>
+        <annotations>
+            <annotation ann.loc="sw3754-ms98-a-trans.txt" type="content">Text content</annotation>
+            <annotation ann.loc="sw3754-ms98-a-trans-logical.xml" type="logical">Logical structure</annotation>
+            <annotation ann.loc="sw3754-ms98-a-trans-s.xml" type="s">Sentence boundaries</annotation>
+            <annotation ann.loc="sw3754-ms98-a-trans-hepple.xml" type="hepple">Hepple part of speech tags</annotation>
+            <annotation ann.loc="sw3754-ms98-a-trans-vp.xml" type="vp">Verb chunks</annotation>
+            <annotation ann.loc="sw3754-ms98-a-trans-np.xml" type="np">Noun chunks</annotation>
+        </annotations>
+    </profileDesc>
+    <revisionDesc>
+        <change>
+            <changeDate>2005-03-29   </changeDate>
+            <respName>Keith Suderman</respName>
+            <item>Updated to v1.0.4 with complete standoff markup</item>
+            <item>Added Hepple part of speech tags</item>
+            <item>Fixed sentence boundaries</item>
+            <item>Added noun and verb chunks</item>
+        </change>
+        <change>
+            <changeDate>2007-11-02</changeDate>
+            <respName>Keith Suderman</respName>
+            <item>Added validated sentence annotations</item>
+        </change>
+        <change>
+            <changeDate>2007-11-02</changeDate>
+            <respName>Keith Suderman</respName>
+            <item>Added validated sentence annotations</item>
+        </change>
+    </revisionDesc>
+</cesHeader>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cesHeader xmlns="http://www.xces.org/ns/GrAF/1.0/" creator="KBS" date.created="2005-03-29"
+           version="1.0.4">
+    <fileDesc>
+        <titleStmt>
+            <title>sw2478-ms98-a-trans</title>
+        </titleStmt>
+        <extent wordCount="1845"/>
+        <sourceDesc>
+            <title>Switchboard Corpus: SVGS &amp; LOAN BAILOUT</title>
+            <distributor type="org">Linguistic Data Consortium</distributor>
+            <pubPlace>USA</pubPlace>
+            <pubDate>1992</pubDate>
+        </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <editorialStmt>In the LDC Switchboard corpus, each "side" of a conversation is 
+            contained in a separate document. In the ANC version, the two sides of the conversation 
+            have been merged (based on timestamps) so that each document in the ANC Switchboard 
+            sub-corpus contains a complete conversation representing utterances by each side in turn.
+        </editorialStmt>
+    </encodingDesc>
+    <profileDesc>
+        <particDesc>
+            <person age="1938" id="spkr1104" role="caller" sex="M">Dialect : NYC, Side : A,
+                Education : 3, Partition : DT</person>
+            <person age="1954" id="spkr1209" role="callee" sex="M">Dialect : SOUTH MIDLAND, Side :
+                B, Education : 2, Partition : XP</person>
+        </particDesc>
+        <settingDesc>
+            <setting who="spkr1104 spkr1209">
+                <time>910406 1816</time>
+                <activity>WHAT DO YOU THINK WERE THE CAUSES OF THE CURRENT SAVINGS AND LOAN CRISIS?
+                    DO YOU BELIEVE THAT THE PROBLEM IS MOSTLY UNDER CONTROL? IS IT BEING HANDLED
+                    CORRECTLY? COULD IT HAPPEN AGAIN?</activity>
+            </setting>
+        </settingDesc>
+    </profileDesc>
+    <revisionDesc>
+        <change>
+            <changeDate>2005-09-11</changeDate>
+            <respName>Keith Suderman</respName>
+            <item>Updated to v1.0.4 with complete standoff markup</item>
+            <item>Added Brill part of speech tags</item>
+            <item>Fixed sentence boundaries</item>
+        </change>
+        <change>
+            <changeDate>2007-11-02</changeDate>
+            <respName>Keith Suderman</respName>
+            <item>Added validated sentence annotations</item>
+        </change>
+        <change>
+            <changeDate>2007-11-02</changeDate>
+            <respName>Keith Suderman</respName>
+            <item>Added validated sentence annotations</item>
+        </change>
+    </revisionDesc>
+</cesHeader>

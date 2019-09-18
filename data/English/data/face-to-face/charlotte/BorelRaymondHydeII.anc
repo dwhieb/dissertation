@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cesHeader creator="KBS" date.created="2005-04-18" version="1.0.4"
+    xmlns="http://www.xces.org/ns/GrAF/1.0/" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <fileDesc>
+        <titleStmt>
+            <title>BorelRaymondHydeII</title>
+        </titleStmt>
+        <extent wordCount="6084"/>
+        <sourceDesc>
+            <publisher type="org">Project MORE : Charlotte</publisher>
+            <pubDate value="1998-00-0"/>
+        </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+        <textClass catRef="SP FF">
+            <subject>Personal Narrative</subject>
+            <audience>Adult</audience>
+            <medium>Spoken</medium>
+        </textClass>
+        <particDesc>
+            <person age="Unknown" id="SF" sex="f"/>
+            <person age="25-44" id="B2" sex="m"/>
+            <person age="0-10" id="B3" sex="m"/>
+            <person age="Unknown" id="UV" sex="u"/>
+        </particDesc>
+        <settingDesc>
+            <setting>
+                <locale>North Carolina</locale>
+                <activity>Face to face conversation.</activity>
+            </setting>
+        </settingDesc>
+        <primaryData loc="BorelRaymondHydeII.txt" medium="text"/>
+        <annotations>
+            <annotation ann.loc="BorelRaymondHydeII.txt" type="content">Text content</annotation>
+            <annotation ann.loc="BorelRaymondHydeII-logical.xml" type="logical">Logical structure</annotation>
+            <annotation ann.loc="BorelRaymondHydeII-s.xml" type="s">Sentence boundaries</annotation>
+            <annotation ann.loc="BorelRaymondHydeII-hepple.xml" type="hepple">Hepple part of speech tags</annotation>
+            <annotation ann.loc="BorelRaymondHydeII-np.xml" type="np">Noun chunks</annotation>
+            <annotation ann.loc="BorelRaymondHydeII-vp.xml" type="vp">Verb chunks</annotation>
+        </annotations>
+    </profileDesc>
+    <revisionDesc>
+        <change>
+            <changeDate>2005-04-18</changeDate>
+            <respName>Keith Suderman</respName>
+            <item>Updated to v1.0.4 with complete standoff markup</item>
+            <item>Added Hepple part of speech tags</item>
+            <item>Fixed sentence boundaries</item>
+        </change>
+        <change>
+            <changeDate>2007-11-02</changeDate>
+            <respName>Keith Suderman</respName>
+            <item>Added validated sentence annotations</item>
+        </change>
+        <change>
+            <changeDate>2007-11-02</changeDate>
+            <respName>Keith Suderman</respName>
+            <item>Added validated sentence annotations</item>
+        </change>
+    </revisionDesc>
+</cesHeader>
