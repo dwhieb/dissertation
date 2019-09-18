@@ -5,7 +5,7 @@ import recurse     from 'recursive-readdir';
 
 function ignore(filePath, stats) {
   if (stats.isDirectory()) return false;
-  return path.extname(filePath) !== `.txt`;
+  return path.extname(filePath) === `.txt`;
 }
 
 void async function deleteUnwantedFiles() {
