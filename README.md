@@ -6,14 +6,14 @@ A self-imposed requirement for this project is that of empirical accountability 
 
 ## Contents
 
-1. [Introduction](#Introduction)
-1. [Technical Prerequisites](#technical-prerequisites)
-1. [Data Collection](#data-collection)
-1. [Data Preparation](#data-preparation)
-1. [Data Annotation](#data-annotation)
-1. [Data Analysis](#data-analysis)
-1. [References](#references)
-1. [Legal](#legal)
+1. [Introduction](#1-introduction)
+1. [Technical Prerequisites](#2-technical-prerequisites)
+1. [Data Collection](#3-data-collection)
+1. [Data Preparation](#4-data-preparation)
+1. [Data Annotation](#5-data-annotation)
+1. [Data Analysis](#6-data-analysis)
+1. [References](#7-references)
+1. [Legal](#8-legal)
 
 ([back to top](#readme))
 
@@ -23,15 +23,15 @@ The process of obtaining the results from this study, as in all empirical scient
 
 1. research questions
 1. data selection
-1. [data collection](#data-collection)
-1. [data preparation](#data-preparation)
-1. [data annotation](#data-annotation)
-1. [data analysis](#data-analysis)
+1. [data collection](#3-data-collection)
+1. [data preparation](#4-data-preparation)
+1. [data annotation](#5-data-annotation)
+1. [data analysis](#6-data-analysis)
 1. reporting results
 
 There are not always clear boundaries between each stage (for example, a data selection step occurs at several places), but the above steps nonetheless provide a useful overview of the process.
 
-This readme documents the _technical_ steps relating to [data collection](#data-collection), [data preparation](#data-preparation), [data annotation](#data-annotation) and [data analysis](#data-analysis). Discussion of the research questions, the decisions made during data annotation, and the results obtained may be found in my dissertation document, downloadable [here][dissertation].
+This readme documents the _technical_ steps relating to [data collection](#3-data-collection), [data preparation](#4-data-preparation), [data annotation](#5-data-annotation) and [data analysis](#6-data-analysis). Discussion of the research questions, the decisions made during data annotation, and the results obtained may be found in my dissertation document, downloadable [here][dissertation].
 
 ([back to top](#readme))
 
