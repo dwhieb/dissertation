@@ -25,7 +25,7 @@ The process of obtaining the results from this study, as in all empirical scient
 1. data selection
 1. [data collection](#data-collection)
 1. [data preparation](#data-preparation)
-1. data annotation
+1. [data annotation](#data-annotation)
 1. [data analysis](#data-analysis)
 1. reporting results
 
@@ -77,7 +77,16 @@ In this repository, the OANC data is stored in the folder `data/English/data`. F
 
 For ease of analysis, I chose to format all the corpora used in this study as [Scription][Scription] files, a simple, very readable text format, which places one interlinear glossed utterance on each line. (For the English data, this simply amounts to placing one utterance / sentence on each line, with no accompanying translation or glosses.) Read more about the Scription format [here][Scription].
 
-The annotations on those data are then <dfn>stand-off</dfn> or <dfn>standalone</dfn> annotations—that is, annotations which live in a separate file, and contain information about the original utterances they apply to. For this project, I stored the annotations in basic tab-separated files (`.tsv`), making it easy to add and edit annotations using spreadsheet software such as [Microsoft Excel][Excel] or [Apache OpenOffice Calc][OpenOffice], among others. All annotations were placed in a single large spreadsheet, with the language of each annotation / observation indicated.
+<!--
+### Converting the Corpus to JSON
+
+When scripting with JavaScript, I find it significantly easier to work with data in <abbr title='JavaScript Object Notation'>JSON</abbr> (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about the JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][Daffodil].
+-->
+
+([back to top](#readme))
+## 5. Data Annotation
+
+The annotations on the data are <dfn>stand-off</dfn> or <dfn>standalone</dfn> annotations—that is, annotations which live in a separate file, and contain information about the original utterances they apply to. For this project, I stored the annotations in basic tab-separated files (`.tsv`), making it easy to add and edit annotations using spreadsheet software such as [Microsoft Excel][Excel] or [Apache OpenOffice Calc][OpenOffice], among others. All annotations were placed in a single large spreadsheet, with the language of each annotation / observation indicated.
 
 The columns included in the annotation spreadsheet are below.
 
@@ -90,23 +99,19 @@ archlexeme    | The archlexeme that this word token and lexeme belongs to.
 function      | The discourse function of this word token. This must have a value of `R` (reference), `P`, (predication), or `M` (modification).
 transcription | A transcription of the utterance that the word token appears in, without prosodic markup or punctuation.
 translation   | A translation of the utterance that the word token appears in. This was not included for English data.
-
-<!--
-### Converting the Corpus to JSON
-
-When scripting with JavaScript, I find it significantly easier to work with data in <abbr title='JavaScript Object Notation'>JSON</abbr> (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about the JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][Daffodil].
--->
+text          | The name of the text that the token appears in.
+utterance     | The number of the utterance within the text that the token appears in. (Numbering starts at 1.)
 
 ([back to top](#readme))
-## 5. Data Analysis
+## 6. Data Analysis
 
 ([back to top](#readme))
-## 6. References
+## 7. References
 
 * <p id=Adler2010>Adler, Joseph. 2010. <cite>R in a nutshell: A quick desktop reference</cite>. O'Reilly</p>
 
 ([back to top](#readme))
-## 7. Legal
+## 8. Legal
 
 Currently, none of the materials in this repository are licensed for copying, reproduction, redistribution, modification, or reuse. Please contact [Daniel W. Hieber](https://danielhieber.com) if you wish to use any of the materials in this repository.
 
