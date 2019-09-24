@@ -16,6 +16,7 @@ A self-imposed requirement for this project is that of empirical accountability 
 1. [Legal](#legal)
 
 ([back to top](#readme))
+
 ## 1. Introduction
 
 The process of obtaining the results from this study, as in all empirical scientific studies, can be divided into several stages:
@@ -33,6 +34,7 @@ There are not always clear boundaries between each stage (for example, a data se
 This readme documents the _technical_ steps relating to [data collection](#data-collection), [data preparation](#data-preparation), [data annotation](#data-annotation) and [data analysis](#data-analysis). Discussion of the research questions, the decisions made during data annotation, and the results obtained may be found in my dissertation document, downloadable [here][dissertation].
 
 ([back to top](#readme))
+
 ## 2. Technical Prerequisites
 
 ### Cloning this Repository
@@ -51,25 +53,43 @@ You will need to download Node and npm in order to run many scripts in this proj
 
 Once Node is installed on your computer, any Node script can be run from the command line with the command `node {filename}`.
 
-NPM also allows you to run save commonly-used command line commands as project-specific scripts, saving you from having to retype the command and all its arguments each time you want to run it. You can run any of the npm scripts in this repository from the command line following the format `npm run {script-name}`.
+NPM also allows you to save commonly-used command line commands as project-specific scripts, saving you from having to retype the command and all its arguments each time you want to run it. You can run any of the npm scripts in this repository from the command line following the format `npm run {script-name}`.
 
 ### Installing the Project
 
 Once you have cloned this repository and installed npm and Node, install the necessary packages for this project by navigating to the root folder of the repository in the command line and running `npm install`.
 
 ([back to top](#readme))
+
 ## 3. Data Collection
 
 As mentioned above, all the data in this study are publicly available. This section presents the necessary steps for obtaining that data.
 
-The data used for the investigation of English come from the [Open American National Corpus][OANC] (<abbr title='Open American National Corpus'>OANC</abbr>), a 15 million word corpus whose data are entirely open access. Since the data from other languages in this study are all from spoken texts, I elected to use just the spoken portion of the OANC, totaling 3,217,772 words. This spoken portion of the OANC is actually composed of two distinct subcorpora—the [Charlotte Narrative & Conversation Collection][Charlotte] (<abbr title='Charlotte Narrative &amp; Conversation Collection'>CNCC</abbr> or simply "the Charlotte corpus") and the [Switchboard Corpus][Switchboard]. More details about the Charlotte corpus may be found [here][Charlotte], and the Switchboard corpus [here][Switchboard].
+The data used for the investigation of English come from the [Open American National Corpus][OANC] (<abbr title='Open American National Corpus'>OANC</abbr>), a 15 million word corpus whose data are entirely open access. Since the data from other languages in this study are all from spoken texts, I elected to use just the spoken portion of the OANC, totaling 3,217,772 tokens. This spoken portion of the OANC is actually composed of two distinct subcorpora—the [Charlotte Narrative & Conversation Collection][Charlotte] (<abbr title='Charlotte Narrative &amp; Conversation Collection'>CNCC</abbr> or simply "the Charlotte corpus") and the [Switchboard Corpus][Switchboard]. More details about the Charlotte corpus may be found [here][Charlotte], and the Switchboard corpus [here][Switchboard].
 
 The OANC may be downloaded in its entirety from from the [OANC download page][OANC-download] in `.zip` (625MB) or `.tgz` formats. You will need to unzip the folder after you have downloaded it. The spoken portion of the corpus is in `data/spoken` inside the downloaded folder.
 
 In this repository, the OANC data is stored in the folder `data/English/data`. For the purposes of this study, only the `.txt` versions of the files were needed (the accompanying XML files contain stand-off annotations for each text), so any other extraneous files were removed.
 
 ([back to top](#readme))
+
 ## 4. Data Preparation
+
+For ease of analysis, I chose to format all the corpora used in this study as [Scription][Scription] files, a simple, very readable text format, which places one interlinear glossed utterance on each line. (For the English data, this simply amounts to placing one utterance / sentence on each line, with no accompanying translation or glosses.) Read more about the Scription format [here][Scription].
+
+The annotations on those data are then <dfn>stand-off</dfn> or <dfn>standalone</dfn> annotations—that is, annotations which live in a separate file, and contain information about the original utterances they apply to. For this project, I stored the annotations in basic tab-separated files (`.tsv`), making it easy to add and edit annotations using spreadsheet software such as [Microsoft Excel][Excel] or [Apache OpenOffice Calc][OpenOffice], among others. All annotations were placed in a single large spreadsheet, with the language of each annotation / observation indicated.
+
+The columns included in the annotation spreadsheet are below.
+
+Column Name   | Description
+------------- | -----------
+language      | The ISO 639-3 code for the language of this observation.
+token         | A transcription of the word token being annotated. This may also be called the <dfn>wordform</dfn>. It does not include any prosodic markup or punctuation.
+lexeme        | The headword representing the lexeme that this word token belongs to. For homonymous lexemes, a trailing number is sometimes added (for example, `house1`, `house2`).
+archlexeme    | The archlexeme that this word token and lexeme belongs to.
+function      | The discourse function of this word token. This must have a value of `R` (reference), `P`, (predication), or `M` (modification).
+transcription | A transcription of the utterance that the word token appears in, without prosodic markup or punctuation.
+translation   | A translation of the utterance that the word token appears in. This was not included for English data.
 
 <!--
 ### Converting the Corpus to JSON
@@ -109,10 +129,13 @@ Add copyright and license for each section of this repository
 [cloning]:       https://help.github.com/en/articles/cloning-a-repository
 [Daffodil]:      https://format.digitallinguistics.io/
 [dissertation]:  https://files.danielhieber.com/publications/dissertation.pdf
+[Excel]:         https://products.office.com/en-us/excel
 [GitHub]:        https://github.com/dwhieb/dissertation
 [JSON]:          http://json.org/
 [Node]:          https://nodejs.org/
 [npm]:           https://www.npmjs.com/
 [OANC]:          http://www.anc.org/
 [OANC-download]: http://www.anc.org/data/oanc/download/
+[OpenOffice]:    http://www.openoffice.org/product/calc.html
+[Scription]:     https://scription.digitallinguistics.io/
 [Switchboard]:   https://catalog.ldc.upenn.edu/LDC97S62
