@@ -112,6 +112,14 @@ To convert the OANC to JSON, I used a JavaScript library called [`tags2dlx`][tag
 
 To convert the OANC, follow the instructions for using the `tags2dlx` library, which can be found [here][tags2dlx]. In this repository, the converted files are located in `data/English/data`, and end in a `.json` extension.
 
+### Calculating Wordform Frequencies
+
+In order to determine which archilexemes I wanted to annotate, I first had to calculate the raw frequency of each wordform in the corpus. This allowed me to the select archilexemes from different frequency bins for annotation. To accomplish this, I wrote a script which parses a corpus of DLx JSON files and produces a tab-delimited (`.tsv`) file containing the frequencies of each wordform in the corpus. You can run this script on a corpus using the following command, where `{directory}` is the path to the directory where the JSON corpus is located, and `{output path}` is the location where you would like the resulting TSV file generated.
+
+```cmd
+node --experimental-modules --no-warnings scripts/bin/generateWordforms {directory} {output path}
+```
+
 <!-- For ease of analysis, I chose to format all the corpora used in this study as [Scription][Scription] files, a simple, very readable text format, which places one interlinear glossed utterance on each line. (For the English data, this simply amounts to placing one utterance / sentence on each line, with no accompanying translation or glosses.) Read more about the Scription format [here][Scription]. -->
 
 ([back to top](#readme))
@@ -126,7 +134,7 @@ Column Name   | Description
 language      | The ISO 639-3 code for the language of this observation.
 token         | A transcription of the word token being annotated. This may also be called the <dfn>wordform</dfn>. It does not include any prosodic markup or punctuation.
 lexeme        | The headword representing the lexeme that this word token belongs to. For homonymous lexemes, a trailing number is sometimes added (for example, `house1`, `house2`).
-archlexeme    | The archlexeme that this word token and lexeme belongs to.
+archilexeme   | The archilexeme that this word token and lexeme belongs to.
 function      | The discourse function of this word token. This must have a value of `R` (reference), `P`, (predication), or `M` (modification).
 transcription | A transcription of the utterance that the word token appears in, without prosodic markup or punctuation.
 translation   | A translation of the utterance that the word token appears in. This was not included for English data.
