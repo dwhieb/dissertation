@@ -63,17 +63,11 @@ Once you have cloned this repository and installed npm and Node, install the nec
 
 ## 3. Data Collection
 
-As mentioned above, all the data in this study are publicly available. This section presents the necessary steps for obtaining that data.
+As mentioned above, all the data in this study are publicly available. This section presents the necessary steps for obtaining that data. Note that this repository does not contain the primary data itself, just annotations, statistics, and other derived versions of that data. The primary data itself lives in various places online, described below.
 
 The data used for the investigation of English come from the [Open American National Corpus][OANC] (<abbr title='Open American National Corpus'>OANC</abbr>), a 15 million word corpus whose data are entirely open access. Since the data from other languages in this study are all from spoken texts, I elected to use just the spoken portion of the OANC, totaling 3,217,772 tokens. This spoken portion of the OANC is actually composed of two distinct subcorpora—the [Charlotte Narrative & Conversation Collection][Charlotte] (<abbr title='Charlotte Narrative &amp; Conversation Collection'>CNCC</abbr> or simply "the Charlotte corpus") and the [Switchboard Corpus][Switchboard]. More details about the Charlotte corpus may be found [here][Charlotte], and the Switchboard corpus [here][Switchboard].
 
 The OANC may be downloaded in its entirety from from the [OANC download page][OANC-download] in `.zip` (625MB) or `.tgz` formats. You will need to unzip the folder after you have downloaded it. The spoken portion of the corpus is in `data/spoken` inside the downloaded folder.
-
-In this repository, the OANC data is stored in the folder `data/English/data`. For the purposes of this study, only the `.txt` files and Hepple tags (`-hepple.xml`) files were needed, so other extraneous files were removed. You can likewise remove extraneous files from your own data folder by running the following on the command line, replacing `{directory path}` with the path to your data directory, and `{extension}` with the file extension or last part of the filenames you wish to delete.
-
-```cmd
-node --experimental-modules --no-warnings scripts/bin/removeFiles.js {directory path} {extension}
-```
 
 ([back to top](#readme))
 
@@ -81,11 +75,15 @@ node --experimental-modules --no-warnings scripts/bin/removeFiles.js {directory 
 
 This section covers the steps necessary to convert and otherwise prepare the data used in this study for annotation and analysis.
 
-When scripting with JavaScript, I find it significantly easier to work with data in <abbr title='JavaScript Object Notation'>JSON</abbr> (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about the JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][Daffodil].
+When scripting with JavaScript, I find it significantly easier to work with data in <abbr title='JavaScript Object Notation'>JSON</abbr> (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][Daffodil].
 
-Thus a first step before beginning to annotate the data is converting the corpora to JSON format.
+### English
 
-For the OANC, this involved first tokenizing the corpus. The OANC project provides an [ANC Tool][ANC-Tool] for this purpose, which offers various ways of converting and tagging OANC data. More information about the ANC Tool may be found [here][ANC-Tool]. Steps for tokenizing the OANC using the ANC Tool are as follows:
+This section covers the steps for converting the OANC data to JSON format.
+
+#### Tokenizing the OANC
+
+For the OANC, converting the data to JSON involved first tokenizing the corpus. The OANC project provides an [ANC Tool][ANC-Tool] for this purpose, which offers various ways of converting and tagging OANC data. More information about the ANC Tool may be found [here][ANC-Tool]. Steps for tokenizing the OANC using the ANC Tool are as follows:
 
 1. Download the ANC Tool from the [ANC Tool download page][ANC-Tool] and unzip the folder. If you have already cloned this repository, you may skip this step; the ANC Tool is located in the `scripts/ANC` folder.
 
@@ -98,7 +96,7 @@ For the OANC, this involved first tokenizing the corpus. The OANC project provid
 1. A screen with various settings will appear. Select the following:
 
     - **Input Directory:** Select the folder containing the data you wish to tokenize.
-    - **Output Directory:** Select the location where you would like the new version of the corpus to be generated.
+    - **Output Directory:** Select the location where you would like the new version of the corpus to be generated. Make sure this folder is **different** from the input directory.
     - **Input Format:** Select _GrAF_.
     - **Encoding (Text):** Select _UTF-8_.
     - **Copy Directory Structure:** Check this box. (However, leaving it uncheck should not affect the scripts in this project.)
@@ -106,9 +104,11 @@ For the OANC, this involved first tokenizing the corpus. The OANC project provid
     - **Part of Speech:** Select _Hepple part of speech tags_
     - **Separator Character:** Leave this set to the underscore (`_`)
 
-1. Click the _Process_ button. This will begin converting the corpus, which will take several minutes.
+1. Click the _Process_ button. This will begin converting the corpus, which will take several minutes. This converts each text in the OANC to a new file that is tokenized and tagged for part of speech.
 
-The result of the above process 
+#### Converting the OANC to JSON
+
+To convert the OANC to JSON, I used a JavaScript library called `tags2dlx`, which I wrote and published for this purpose. It takes a directory of texts tagged for part of speech (where each word token is followed by an underscore and then its part-of-speech tag) and converts it to a JSON file.
 
 <!-- For ease of analysis, I chose to format all the corpora used in this study as [Scription][Scription] files, a simple, very readable text format, which places one interlinear glossed utterance on each line. (For the English data, this simply amounts to placing one utterance / sentence on each line, with no accompanying translation or glosses.) Read more about the Scription format [here][Scription]. -->
 
