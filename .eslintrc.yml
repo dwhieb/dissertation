@@ -394,6 +394,7 @@ rules:
   - allow:
     - _ts
     - _etag
+    - __dirname
   no-unexpected-multiline: error
   no-unmodified-loop-condition: warn
   no-unneeded-ternary:

@@ -28,7 +28,7 @@
   "type": "module",
   "scripts": {
 
-    "start":         "",
+    "start":         "node --experimental-modules --no-warnings scripts/bin/convertOANC.js data/English/data",
 
     "abbreviations": "node --experimental-modules --no-warnings scripts/build/abbreviations.js",
     "archive":       "node --experimental-modules --no-warnings scripts/build/archive.js",
@@ -52,6 +52,7 @@
   },
   "devDependencies": {
     "@azure/storage-blob": "^10.3.0",
+    "@digitallinguistics/tags2dlx": "^0.2.1",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.0.1",
     "open-cli": "^5.0.0",
