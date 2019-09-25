@@ -28,7 +28,7 @@
   "type": "module",
   "scripts": {
 
-    "start":         "node --experimental-modules --no-warnings scripts/bin/removeFiles.js data/English/data -np.xml",
+    "start":         "node --experimental-modules --no-warnings scripts/bin/removeFiles.js data/English/data -s.xml",
 
     "abbreviations": "node --experimental-modules --no-warnings scripts/build/abbreviations.js",
     "anc":           "java -Xmx500M -jar scripts/ANC/ANCTool-2.0.0-jar.jar",
