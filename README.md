@@ -69,7 +69,11 @@ The data used for the investigation of English come from the [Open American Nati
 
 The OANC may be downloaded in its entirety from from the [OANC download page][OANC-download] in `.zip` (625MB) or `.tgz` formats. You will need to unzip the folder after you have downloaded it. The spoken portion of the corpus is in `data/spoken` inside the downloaded folder.
 
-In this repository, the OANC data is stored in the folder `data/English/data`. For the purposes of this study, only the `.txt` versions of the files were needed (the accompanying XML files contain stand-off annotations for each text), so any other extraneous files were removed.
+In this repository, the OANC data is stored in the folder `data/English/data`. For the purposes of this study, only the `.txt` files and Hepple tags (`-hepple.xml`) files were needed, so any other extraneous files were removed. You can likewise remove extraneous files from your own data folder by running the following on the command line, replacing `{directory path}` with the path to your data directory.
+
+```cmd
+node --experimental-modules --no-warnings scripts/bin/cleanupOANC.js {directory path}
+```
 
 ([back to top](#readme))
 
