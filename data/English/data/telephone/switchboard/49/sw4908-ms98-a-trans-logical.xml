@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph xmlns="http://www.xces.org/ns/GrAF/1.0/">
+    <header>
+        <tagsDecl>
+            <tagUsage gi="body" occurs="1"/>
+            <tagUsage gi="turn" occurs="35"/>
+            <tagUsage gi="u" occurs="48"/>
+            <tagUsage gi="cesDoc" occurs="1"/>
+        </tagsDecl>
+        <annotationSets>
+            <annotationSet name="xces" type="http://www.xces.org/schema/2003"/>
+        </annotationSets>
+    </header>
+    <region xml:id="n-r0" anchors="0 4718"/>
+    <node xml:id="n-n0">
+        <link targets="n-r0"/>
+    </node>
+    <a label="cesDoc" ref="n-n0" as="xces">
+        <fs>
+            <f name="xmlns:xlink" value="http://www.w3.org/1999/xlink"/>
+            <f name="xmlns:xsi" value="http://www.w3.org/2001/XMLSchema-instance"/>
+            <f name="version" value="1.0"/>
+            <f name="xmlns" value="http://www.xces.org/schema/2003"/>
+        </fs>
+    </a>
+    <region xml:id="n-r1" anchors="10 4715"/>
+    <node xml:id="n-n1">
+        <link targets="n-r1"/>
+    </node>
+    <a label="body" ref="n-n1" as="xces"/>
+    <region xml:id="n-r2" anchors="13 142"/>
+    <node xml:id="n-n2">
+        <link targets="n-r2"/>
+    </node>
+    <a label="turn" ref="n-n2" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t1"/>
+        </fs>
+    </a>
+    <region xml:id="n-r3" anchors="17 139"/>
+    <node xml:id="n-n3">
+        <link targets="n-r3"/>
+    </node>
+    <a label="u" ref="n-n3" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0001"/>
+            <f name="end" value="10.395375"/>
+            <f name="start" value="0.000000"/>
+        </fs>
+    </a>
+    <region xml:id="n-r4" anchors="145 154"/>
+    <node xml:id="n-n4">
+        <link targets="n-r4"/>
+    </node>
+    <a label="turn" ref="n-n4" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t2"/>
+        </fs>
+    </a>
+    <region xml:id="n-r5" anchors="149 151"/>
+    <node xml:id="n-n5">
+        <link targets="n-r5"/>
+    </node>
+    <a label="u" ref="n-n5" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0001"/>
+            <f name="end" value="1.042750"/>
+            <f name="start" value="0.000000"/>
+        </fs>
+    </a>
+    <region xml:id="n-r6" anchors="157 458"/>
+    <node xml:id="n-n6">
+        <link targets="n-r6"/>
+    </node>
+    <a label="turn" ref="n-n6" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t3"/>
+        </fs>
+    </a>
+    <region xml:id="n-r7" anchors="161 247"/>
+    <node xml:id="n-n7">
+        <link targets="n-r7"/>
+    </node>
+    <a label="u" ref="n-n7" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0002"/>
+            <f name="end" value="15.763375"/>
+            <f name="start" value="10.395375"/>
+        </fs>
+    </a>
+    <region xml:id="n-r8" anchors="251 455"/>
+    <node xml:id="n-n8">
+        <link targets="n-r8"/>
+    </node>
+    <a label="u" ref="n-n8" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0003"/>
+            <f name="end" value="28.235500"/>
+            <f name="start" value="15.763375"/>
+        </fs>
+    </a>
+    <region xml:id="n-r9" anchors="461 479"/>
+    <node xml:id="n-n9">
+        <link targets="n-r9"/>
+    </node>
+    <a label="turn" ref="n-n9" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t4"/>
+        </fs>
+    </a>
+    <region xml:id="n-r10" anchors="465 476"/>
+    <node xml:id="n-n10">
+        <link targets="n-r10"/>
+    </node>
+    <a label="u" ref="n-n10" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0003"/>
+            <f name="end" value="29.750375"/>
+            <f name="start" value="28.152250"/>
+        </fs>
+    </a>
+    <region xml:id="n-r11" anchors="482 585"/>
+    <node xml:id="n-n11">
+        <link targets="n-r11"/>
+    </node>
+    <a label="turn" ref="n-n11" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t5"/>
+        </fs>
+    </a>
+    <region xml:id="n-r12" anchors="486 582"/>
+    <node xml:id="n-n12">
+        <link targets="n-r12"/>
+    </node>
+    <a label="u" ref="n-n12" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0004"/>
+            <f name="end" value="35.090000"/>
+            <f name="start" value="28.235500"/>
+        </fs>
+    </a>
+    <region xml:id="n-r13" anchors="588 651"/>
+    <node xml:id="n-n13">
+        <link targets="n-r13"/>
+    </node>
+    <a label="turn" ref="n-n13" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t6"/>
+        </fs>
+    </a>
+    <region xml:id="n-r14" anchors="592 648"/>
+    <node xml:id="n-n14">
+        <link targets="n-r14"/>
+    </node>
+    <a label="u" ref="n-n14" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0005"/>
+            <f name="end" value="38.522500"/>
+            <f name="start" value="34.431750"/>
+        </fs>
+    </a>
+    <region xml:id="n-r15" anchors="654 827"/>
+    <node xml:id="n-n15">
+        <link targets="n-r15"/>
+    </node>
+    <a label="turn" ref="n-n15" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t7"/>
+        </fs>
+    </a>
+    <region xml:id="n-r16" anchors="658 824"/>
+    <node xml:id="n-n16">
+        <link targets="n-r16"/>
+    </node>
+    <a label="u" ref="n-n16" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0006"/>
+            <f name="end" value="46.807000"/>
+            <f name="start" value="37.863625"/>
+        </fs>
+    </a>
+    <region xml:id="n-r17" anchors="830 843"/>
+    <node xml:id="n-n17">
+        <link targets="n-r17"/>
+    </node>
+    <a label="turn" ref="n-n17" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t8"/>
+        </fs>
+    </a>
+    <region xml:id="n-r18" anchors="834 840"/>
+    <node xml:id="n-n18">
+        <link targets="n-r18"/>
+    </node>
+    <a label="u" ref="n-n18" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0007"/>
+            <f name="end" value="41.002125"/>
+            <f name="start" value="39.625500"/>
+        </fs>
+    </a>
+    <region xml:id="n-r19" anchors="846 1086"/>
+    <node xml:id="n-n19">
+        <link targets="n-r19"/>
+    </node>
+    <a label="turn" ref="n-n19" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t9"/>
+        </fs>
+    </a>
+    <region xml:id="n-r20" anchors="850 1083"/>
+    <node xml:id="n-n20">
+        <link targets="n-r20"/>
+    </node>
+    <a label="u" ref="n-n20" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0007"/>
+            <f name="end" value="60.262375"/>
+            <f name="start" value="46.807000"/>
+        </fs>
+    </a>
+    <region xml:id="n-r21" anchors="1089 1099"/>
+    <node xml:id="n-n21">
+        <link targets="n-r21"/>
+    </node>
+    <a label="turn" ref="n-n21" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t10"/>
+        </fs>
+    </a>
+    <region xml:id="n-r22" anchors="1093 1096"/>
+    <node xml:id="n-n22">
+        <link targets="n-r22"/>
+    </node>
+    <a label="u" ref="n-n22" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0009"/>
+            <f name="end" value="61.824875"/>
+            <f name="start" value="60.093000"/>
+        </fs>
+    </a>
+    <region xml:id="n-r23" anchors="1102 1155"/>
+    <node xml:id="n-n23">
+        <link targets="n-r23"/>
+    </node>
+    <a label="turn" ref="n-n23" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t11"/>
+        </fs>
+    </a>
+    <region xml:id="n-r24" anchors="1106 1152"/>
+    <node xml:id="n-n24">
+        <link targets="n-r24"/>
+    </node>
+    <a label="u" ref="n-n24" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0008"/>
+            <f name="end" value="62.880125"/>
+            <f name="start" value="60.262375"/>
+        </fs>
+    </a>
+    <region xml:id="n-r25" anchors="1158 1613"/>
+    <node xml:id="n-n25">
+        <link targets="n-r25"/>
+    </node>
+    <a label="turn" ref="n-n25" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t12"/>
+        </fs>
+    </a>
+    <region xml:id="n-r26" anchors="1162 1249"/>
+    <node xml:id="n-n26">
+        <link targets="n-r26"/>
+    </node>
+    <a label="u" ref="n-n26" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0010"/>
+            <f name="end" value="68.465750"/>
+            <f name="start" value="61.824875"/>
+        </fs>
+    </a>
+    <region xml:id="n-r27" anchors="1253 1447"/>
+    <node xml:id="n-n27">
+        <link targets="n-r27"/>
+    </node>
+    <a label="u" ref="n-n27" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0011"/>
+            <f name="end" value="81.145000"/>
+            <f name="start" value="68.465750"/>
+        </fs>
+    </a>
+    <region xml:id="n-r28" anchors="1451 1610"/>
+    <node xml:id="n-n28">
+        <link targets="n-r28"/>
+    </node>
+    <a label="u" ref="n-n28" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0012"/>
+            <f name="end" value="95.890625"/>
+            <f name="start" value="81.145000"/>
+        </fs>
+    </a>
+    <region xml:id="n-r29" anchors="1616 1669"/>
+    <node xml:id="n-n29">
+        <link targets="n-r29"/>
+    </node>
+    <a label="turn" ref="n-n29" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t13"/>
+        </fs>
+    </a>
+    <region xml:id="n-r30" anchors="1620 1666"/>
+    <node xml:id="n-n30">
+        <link targets="n-r30"/>
+    </node>
+    <a label="u" ref="n-n30" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0010"/>
+            <f name="end" value="98.980000"/>
+            <f name="start" value="95.717500"/>
+        </fs>
+    </a>
+    <region xml:id="n-r31" anchors="1672 1681"/>
+    <node xml:id="n-n31">
+        <link targets="n-r31"/>
+    </node>
+    <a label="turn" ref="n-n31" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t14"/>
+        </fs>
+    </a>
+    <region xml:id="n-r32" anchors="1676 1678"/>
+    <node xml:id="n-n32">
+        <link targets="n-r32"/>
+    </node>
+    <a label="u" ref="n-n32" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0014"/>
+            <f name="end" value="100.174625"/>
+            <f name="start" value="98.424000"/>
+        </fs>
+    </a>
+    <region xml:id="n-r33" anchors="1684 1844"/>
+    <node xml:id="n-n33">
+        <link targets="n-r33"/>
+    </node>
+    <a label="turn" ref="n-n33" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t15"/>
+        </fs>
+    </a>
+    <region xml:id="n-r34" anchors="1688 1841"/>
+    <node xml:id="n-n34">
+        <link targets="n-r34"/>
+    </node>
+    <a label="u" ref="n-n34" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0011"/>
+            <f name="end" value="108.318500"/>
+            <f name="start" value="98.980000"/>
+        </fs>
+    </a>
+    <region xml:id="n-r35" anchors="1847 1913"/>
+    <node xml:id="n-n35">
+        <link targets="n-r35"/>
+    </node>
+    <a label="turn" ref="n-n35" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t16"/>
+        </fs>
+    </a>
+    <region xml:id="n-r36" anchors="1851 1910"/>
+    <node xml:id="n-n36">
+        <link targets="n-r36"/>
+    </node>
+    <a label="u" ref="n-n36" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0016"/>
+            <f name="end" value="110.588000"/>
+            <f name="start" value="106.827250"/>
+        </fs>
+    </a>
+    <region xml:id="n-r37" anchors="1916 2068"/>
+    <node xml:id="n-n37">
+        <link targets="n-r37"/>
+    </node>
+    <a label="turn" ref="n-n37" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t17"/>
+        </fs>
+    </a>
+    <region xml:id="n-r38" anchors="1920 2065"/>
+    <node xml:id="n-n38">
+        <link targets="n-r38"/>
+    </node>
+    <a label="u" ref="n-n38" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0013"/>
+            <f name="end" value="121.057250"/>
+            <f name="start" value="109.928500"/>
+        </fs>
+    </a>
+    <region xml:id="n-r39" anchors="2071 2210"/>
+    <node xml:id="n-n39">
+        <link targets="n-r39"/>
+    </node>
+    <a label="turn" ref="n-n39" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t18"/>
+        </fs>
+    </a>
+    <region xml:id="n-r40" anchors="2075 2082"/>
+    <node xml:id="n-n40">
+        <link targets="n-r40"/>
+    </node>
+    <a label="u" ref="n-n40" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0018"/>
+            <f name="end" value="120.318125"/>
+            <f name="start" value="117.599500"/>
+        </fs>
+    </a>
+    <region xml:id="n-r41" anchors="2086 2207"/>
+    <node xml:id="n-n41">
+        <link targets="n-r41"/>
+    </node>
+    <a label="u" ref="n-n41" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0019"/>
+            <f name="end" value="130.644125"/>
+            <f name="start" value="120.318125"/>
+        </fs>
+    </a>
+    <region xml:id="n-r42" anchors="2213 2222"/>
+    <node xml:id="n-n42">
+        <link targets="n-r42"/>
+    </node>
+    <a label="turn" ref="n-n42" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t19"/>
+        </fs>
+    </a>
+    <region xml:id="n-r43" anchors="2217 2219"/>
+    <node xml:id="n-n43">
+        <link targets="n-r43"/>
+    </node>
+    <a label="u" ref="n-n43" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0014"/>
+            <f name="end" value="122.808750"/>
+            <f name="start" value="121.057250"/>
+        </fs>
+    </a>
+    <region xml:id="n-r44" anchors="2225 2470"/>
+    <node xml:id="n-n44">
+        <link targets="n-r44"/>
+    </node>
+    <a label="turn" ref="n-n44" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t20"/>
+        </fs>
+    </a>
+    <region xml:id="n-r45" anchors="2229 2374"/>
+    <node xml:id="n-n45">
+        <link targets="n-r45"/>
+    </node>
+    <a label="u" ref="n-n45" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0020"/>
+            <f name="end" value="145.560750"/>
+            <f name="start" value="130.644125"/>
+        </fs>
+    </a>
+    <region xml:id="n-r46" anchors="2378 2467"/>
+    <node xml:id="n-n46">
+        <link targets="n-r46"/>
+    </node>
+    <a label="u" ref="n-n46" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0021"/>
+            <f name="end" value="155.614125"/>
+            <f name="start" value="145.560750"/>
+        </fs>
+    </a>
+    <region xml:id="n-r47" anchors="2473 2686"/>
+    <node xml:id="n-n47">
+        <link targets="n-r47"/>
+    </node>
+    <a label="turn" ref="n-n47" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t21"/>
+        </fs>
+    </a>
+    <region xml:id="n-r48" anchors="2477 2683"/>
+    <node xml:id="n-n48">
+        <link targets="n-r48"/>
+    </node>
+    <a label="u" ref="n-n48" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0016"/>
+            <f name="end" value="167.842500"/>
+            <f name="start" value="154.932000"/>
+        </fs>
+    </a>
+    <region xml:id="n-r49" anchors="2689 3024"/>
+    <node xml:id="n-n49">
+        <link targets="n-r49"/>
+    </node>
+    <a label="turn" ref="n-n49" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t22"/>
+        </fs>
+    </a>
+    <region xml:id="n-r50" anchors="2693 2695"/>
+    <node xml:id="n-n50">
+        <link targets="n-r50"/>
+    </node>
+    <a label="u" ref="n-n50" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0023"/>
+            <f name="end" value="164.969000"/>
+            <f name="start" value="163.106375"/>
+        </fs>
+    </a>
+    <region xml:id="n-r51" anchors="2699 2779"/>
+    <node xml:id="n-n51">
+        <link targets="n-r51"/>
+    </node>
+    <a label="u" ref="n-n51" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0024"/>
+            <f name="end" value="172.512750"/>
+            <f name="start" value="164.969000"/>
+        </fs>
+    </a>
+    <region xml:id="n-r52" anchors="2783 2889"/>
+    <node xml:id="n-n52">
+        <link targets="n-r52"/>
+    </node>
+    <a label="u" ref="n-n52" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0025"/>
+            <f name="end" value="184.150375"/>
+            <f name="start" value="172.512750"/>
+        </fs>
+    </a>
+    <region xml:id="n-r53" anchors="2893 3021"/>
+    <node xml:id="n-n53">
+        <link targets="n-r53"/>
+    </node>
+    <a label="u" ref="n-n53" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0026"/>
+            <f name="end" value="196.648250"/>
+            <f name="start" value="184.150375"/>
+        </fs>
+    </a>
+    <region xml:id="n-r54" anchors="3027 3037"/>
+    <node xml:id="n-n54">
+        <link targets="n-r54"/>
+    </node>
+    <a label="turn" ref="n-n54" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t23"/>
+        </fs>
+    </a>
+    <region xml:id="n-r55" anchors="3031 3034"/>
+    <node xml:id="n-n55">
+        <link targets="n-r55"/>
+    </node>
+    <a label="u" ref="n-n55" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0018"/>
+            <f name="end" value="193.104750"/>
+            <f name="start" value="191.848000"/>
+        </fs>
+    </a>
+    <region xml:id="n-r56" anchors="3040 3209"/>
+    <node xml:id="n-n56">
+        <link targets="n-r56"/>
+    </node>
+    <a label="turn" ref="n-n56" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t24"/>
+        </fs>
+    </a>
+    <region xml:id="n-r57" anchors="3044 3206"/>
+    <node xml:id="n-n57">
+        <link targets="n-r57"/>
+    </node>
+    <a label="u" ref="n-n57" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0027"/>
+            <f name="end" value="209.411375"/>
+            <f name="start" value="196.648250"/>
+        </fs>
+    </a>
+    <region xml:id="n-r58" anchors="3212 3221"/>
+    <node xml:id="n-n58">
+        <link targets="n-r58"/>
+    </node>
+    <a label="turn" ref="n-n58" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t25"/>
+        </fs>
+    </a>
+    <region xml:id="n-r59" anchors="3216 3218"/>
+    <node xml:id="n-n59">
+        <link targets="n-r59"/>
+    </node>
+    <a label="u" ref="n-n59" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0020"/>
+            <f name="end" value="210.818750"/>
+            <f name="start" value="209.122000"/>
+        </fs>
+    </a>
+    <region xml:id="n-r60" anchors="3224 3542"/>
+    <node xml:id="n-n60">
+        <link targets="n-r60"/>
+    </node>
+    <a label="turn" ref="n-n60" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t26"/>
+        </fs>
+    </a>
+    <region xml:id="n-r61" anchors="3228 3409"/>
+    <node xml:id="n-n61">
+        <link targets="n-r61"/>
+    </node>
+    <a label="u" ref="n-n61" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0028"/>
+            <f name="end" value="221.839375"/>
+            <f name="start" value="209.411375"/>
+        </fs>
+    </a>
+    <region xml:id="n-r62" anchors="3413 3539"/>
+    <node xml:id="n-n62">
+        <link targets="n-r62"/>
+    </node>
+    <a label="u" ref="n-n62" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0029"/>
+            <f name="end" value="229.857250"/>
+            <f name="start" value="221.839375"/>
+        </fs>
+    </a>
+    <region xml:id="n-r63" anchors="3545 3555"/>
+    <node xml:id="n-n63">
+        <link targets="n-r63"/>
+    </node>
+    <a label="turn" ref="n-n63" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t27"/>
+        </fs>
+    </a>
+    <region xml:id="n-r64" anchors="3549 3552"/>
+    <node xml:id="n-n64">
+        <link targets="n-r64"/>
+    </node>
+    <a label="u" ref="n-n64" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0022"/>
+            <f name="end" value="230.742875"/>
+            <f name="start" value="229.143625"/>
+        </fs>
+    </a>
+    <region xml:id="n-r65" anchors="3558 3567"/>
+    <node xml:id="n-n65">
+        <link targets="n-r65"/>
+    </node>
+    <a label="turn" ref="n-n65" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t28"/>
+        </fs>
+    </a>
+    <region xml:id="n-r66" anchors="3562 3564"/>
+    <node xml:id="n-n66">
+        <link targets="n-r66"/>
+    </node>
+    <a label="u" ref="n-n66" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0030"/>
+            <f name="end" value="231.817750"/>
+            <f name="start" value="229.857250"/>
+        </fs>
+    </a>
+    <region xml:id="n-r67" anchors="3570 3899"/>
+    <node xml:id="n-n67">
+        <link targets="n-r67"/>
+    </node>
+    <a label="turn" ref="n-n67" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t29"/>
+        </fs>
+    </a>
+    <region xml:id="n-r68" anchors="3574 3640"/>
+    <node xml:id="n-n68">
+        <link targets="n-r68"/>
+    </node>
+    <a label="u" ref="n-n68" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0023"/>
+            <f name="end" value="234.471875"/>
+            <f name="start" value="230.742875"/>
+        </fs>
+    </a>
+    <region xml:id="n-r69" anchors="3644 3896"/>
+    <node xml:id="n-n69">
+        <link targets="n-r69"/>
+    </node>
+    <a label="u" ref="n-n69" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0024"/>
+            <f name="end" value="248.999375"/>
+            <f name="start" value="234.471875"/>
+        </fs>
+    </a>
+    <region xml:id="n-r70" anchors="3902 3940"/>
+    <node xml:id="n-n70">
+        <link targets="n-r70"/>
+    </node>
+    <a label="turn" ref="n-n70" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t30"/>
+        </fs>
+    </a>
+    <region xml:id="n-r71" anchors="3906 3937"/>
+    <node xml:id="n-n71">
+        <link targets="n-r71"/>
+    </node>
+    <a label="u" ref="n-n71" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0032"/>
+            <f name="end" value="250.979375"/>
+            <f name="start" value="248.681000"/>
+        </fs>
+    </a>
+    <region xml:id="n-r72" anchors="3943 4067"/>
+    <node xml:id="n-n72">
+        <link targets="n-r72"/>
+    </node>
+    <a label="turn" ref="n-n72" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t31"/>
+        </fs>
+    </a>
+    <region xml:id="n-r73" anchors="3947 4064"/>
+    <node xml:id="n-n73">
+        <link targets="n-r73"/>
+    </node>
+    <a label="u" ref="n-n73" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0025"/>
+            <f name="end" value="256.390625"/>
+            <f name="start" value="248.999375"/>
+        </fs>
+    </a>
+    <region xml:id="n-r74" anchors="4070 4342"/>
+    <node xml:id="n-n74">
+        <link targets="n-r74"/>
+    </node>
+    <a label="turn" ref="n-n74" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t32"/>
+        </fs>
+    </a>
+    <region xml:id="n-r75" anchors="4074 4218"/>
+    <node xml:id="n-n75">
+        <link targets="n-r75"/>
+    </node>
+    <a label="u" ref="n-n75" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0034"/>
+            <f name="end" value="265.926750"/>
+            <f name="start" value="255.815375"/>
+        </fs>
+    </a>
+    <region xml:id="n-r76" anchors="4222 4339"/>
+    <node xml:id="n-n76">
+        <link targets="n-r76"/>
+    </node>
+    <a label="u" ref="n-n76" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0035"/>
+            <f name="end" value="276.613625"/>
+            <f name="start" value="265.926750"/>
+        </fs>
+    </a>
+    <region xml:id="n-r77" anchors="4345 4366"/>
+    <node xml:id="n-n77">
+        <link targets="n-r77"/>
+    </node>
+    <a label="turn" ref="n-n77" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t33"/>
+        </fs>
+    </a>
+    <region xml:id="n-r78" anchors="4349 4355"/>
+    <node xml:id="n-n78">
+        <link targets="n-r78"/>
+    </node>
+    <a label="u" ref="n-n78" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0027"/>
+            <f name="end" value="271.413625"/>
+            <f name="start" value="269.997375"/>
+        </fs>
+    </a>
+    <region xml:id="n-r79" anchors="4359 4363"/>
+    <node xml:id="n-n79">
+        <link targets="n-r79"/>
+    </node>
+    <a label="u" ref="n-n79" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0029"/>
+            <f name="end" value="277.805625"/>
+            <f name="start" value="276.580125"/>
+        </fs>
+    </a>
+    <region xml:id="n-r80" anchors="4369 4547"/>
+    <node xml:id="n-n80">
+        <link targets="n-r80"/>
+    </node>
+    <a label="turn" ref="n-n80" as="xces">
+        <fs>
+            <f name="who" value="B"/>
+            <f name="id" value="t34"/>
+        </fs>
+    </a>
+    <region xml:id="n-r81" anchors="4373 4544"/>
+    <node xml:id="n-n81">
+        <link targets="n-r81"/>
+    </node>
+    <a label="u" ref="n-n81" as="xces">
+        <fs>
+            <f name="id" value="sw4908B-0036"/>
+            <f name="end" value="290.787375"/>
+            <f name="start" value="276.613625"/>
+        </fs>
+    </a>
+    <region xml:id="n-r82" anchors="4550 4711"/>
+    <node xml:id="n-n82">
+        <link targets="n-r82"/>
+    </node>
+    <a label="turn" ref="n-n82" as="xces">
+        <fs>
+            <f name="who" value="A"/>
+            <f name="id" value="t35"/>
+        </fs>
+    </a>
+    <region xml:id="n-r83" anchors="4554 4560"/>
+    <node xml:id="n-n83">
+        <link targets="n-r83"/>
+    </node>
+    <a label="u" ref="n-n83" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0031"/>
+            <f name="end" value="281.798500"/>
+            <f name="start" value="280.437750"/>
+        </fs>
+    </a>
+    <region xml:id="n-r84" anchors="4564 4707"/>
+    <node xml:id="n-n84">
+        <link targets="n-r84"/>
+    </node>
+    <a label="u" ref="n-n84" as="xces">
+        <fs>
+            <f name="id" value="sw4908A-0033"/>
+            <f name="end" value="299.170000"/>
+            <f name="start" value="290.597625"/>
+        </fs>
+    </a>
+</graph>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graph xmlns="http://www.xces.org/ns/GrAF/1.0/">
+    <header>
+        <tagsDecl>
+            <tagUsage gi="u" occurs="3"/>
+        </tagsDecl>
+        <annotationSets>
+            <annotationSet name="xces" type="http://www.xces.org/schema/2003"/>
+        </annotationSets>
+    </header>
+    <region xml:id="s-r0" anchors="17 72"/>
+    <node xml:id="s-n0">
+        <link targets="s-r0"/>
+    </node>
+    <a label="u" ref="s-n0" as="xces">
+        <fs>
+            <f name="id" value="t1u1"/>
+        </fs>
+    </a>
+    <region xml:id="s-r1" anchors="88 177"/>
+    <node xml:id="s-n1">
+        <link targets="s-r1"/>
+    </node>
+    <a label="u" ref="s-n1" as="xces">
+        <fs>
+            <f name="id" value="t2u1"/>
+        </fs>
+    </a>
+    <region xml:id="s-r2" anchors="187 979"/>
+    <node xml:id="s-n2">
+        <link targets="s-r2"/>
+    </node>
+    <a label="u" ref="s-n2" as="xces">
+        <fs>
+            <f name="id" value="t3u1"/>
+        </fs>
+    </a>
+</graph>
