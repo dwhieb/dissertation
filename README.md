@@ -69,10 +69,10 @@ The data used for the investigation of English come from the [Open American Nati
 
 The OANC may be downloaded in its entirety from from the [OANC download page][OANC-download] in `.zip` (625MB) or `.tgz` formats. You will need to unzip the folder after you have downloaded it. The spoken portion of the corpus is in `data/spoken` inside the downloaded folder.
 
-In this repository, the OANC data is stored in the folder `data/English/data`. For the purposes of this study, only the `.txt` files and Hepple tags (`-hepple.xml`) files were needed, so any other extraneous files were removed. You can likewise remove extraneous files from your own data folder by running the following on the command line, replacing `{directory path}` with the path to your data directory.
+In this repository, the OANC data is stored in the folder `data/English/data`. For the purposes of this study, only the `.txt` files and Hepple tags (`-hepple.xml`) files were needed, so other extraneous files were removed. You can likewise remove extraneous files from your own data folder by running the following on the command line, replacing `{directory path}` with the path to your data directory, and `{extension}` with the file extension or last part of the filenames you wish to delete.
 
 ```cmd
-node --experimental-modules --no-warnings scripts/bin/cleanupOANC.js {directory path}
+node --experimental-modules --no-warnings scripts/bin/removeFiles.js {directory path} {extension}
 ```
 
 ([back to top](#readme))
@@ -92,6 +92,23 @@ For the OANC, this involved first tokenizing the corpus. The OANC project provid
 1. If you do not have Java installed on your computer, download it from [here][Java] and then install it on your computer.
 
 1. Run the ANC Tool following the instructions on the [ANC Tool page][ANC-Tool]. It is recommended that you run the tool from the command line following the format `java -Xmx500M -jar ANCTool-x.y.z-jar.jar`. See the [ANC Tool page][ANC-Tool] for complete details. If you have npm installed on your computer, you can simply run the ANC Tool from the command line with `npm run anc`.
+
+1. The first time you run the ANC Tool, it will ask you to specify the location of the folder where the files `annotations.xml` and `OANC-corpus-header.xml` are located. Select this folder and click _Accept_.
+
+1. A screen with various settings will appear. Select the following:
+
+    - **Input Directory:** Select the folder containing the data you wish to tokenize.
+    - **Output Directory:** Select the location where you would like the new version of the corpus to be generated.
+    - **Input Format:** Select _GrAF_.
+    - **Encoding (Text):** Select _UTF-8_.
+    - **Copy Directory Structure:** Check this box. (However, leaving it uncheck should not affect the scripts in this project.)
+    - **MonoConc Pro**: Select this tab.
+    - **Part of Speech:** Select _Hepple part of speech tags_
+    - **Separator Character:** Leave this set to the underscore (`_`)
+
+1. Click the _Process_ button. This will begin converting the corpus, which will take several minutes.
+
+The result of the above process 
 
 <!-- For ease of analysis, I chose to format all the corpora used in this study as [Scription][Scription] files, a simple, very readable text format, which places one interlinear glossed utterance on each line. (For the English data, this simply amounts to placing one utterance / sentence on each line, with no accompanying translation or glosses.) Read more about the Scription format [here][Scription]. -->
 
