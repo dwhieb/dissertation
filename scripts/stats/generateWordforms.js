@@ -2,7 +2,6 @@
 
 import csvStringify  from 'csv-stringify';
 import fs            from 'fs';
-import JSONStream    from 'JSONStream';
 import path          from 'path';
 import { promisify } from 'util';
 
@@ -11,8 +10,12 @@ import {
   processDir,
 } from '../utilities/index.js';
 
-const json2csv      = promisify(csvStringify);
-const { writeFile } = fs.promises;
+const json2csv = promisify(csvStringify);
+
+const {
+  readFile,
+  writeFile,
+} = fs.promises;
 
 // VARIABLES
 
@@ -48,17 +51,20 @@ function convertFrequencies(map) {
 }
 
 /**
- * Accepts a DLx Word Token object and a Map of wordform frequencies and increments the frequency in the Map for that wordform
- * @param  {Object} word        A DLx Word Token object
- * @param  {Map}    frequencies A map of wordforms to frequencies
+ * Counts the word tokens in an utterance and adds them to the frequencies Map
+ * @param  {Utterance} utterance   A DLx Utterance object
+ * @param  {Map}       frequencies A Map of wordforms to their frequencies
+ * @return {[type]}             [description]
  */
-function countToken({ transcription }, frequencies) {
+function countUtterance({ words }, frequencies) {
+  words.forEach(({ transcription }) => {
 
-  const wordform = transcription.toLowerCase();
+    const wordform = transcription.toLowerCase();
 
-  if (frequencies.has(wordform)) frequencies.set(wordform, frequencies.get(wordform) + 1);
-  else frequencies.set(wordform, 1);
+    if (frequencies.has(wordform)) frequencies.set(wordform, frequencies.get(wordform) + 1);
+    else frequencies.set(wordform, 1);
 
+  });
 }
 
 /**
@@ -75,21 +81,13 @@ function ignore(filePath, stats) {
  * @param  {Map}     frequencies A Map of wordforms to frequencies. Affects the original Map.
  * @return {Promise}
  */
-function processFile(filePath, frequencies) {
-  return new Promise((resolve, reject) => {
+async function processFile(filePath, frequencies) {
 
-    const parser     = JSONStream.parse(`utterances`);
-    const readStream = fs.createReadStream(filePath);
+  const json           = await readFile(filePath, `utf8`);
+  const { utterances } = JSON.parse(json);
 
-    parser.on(`error`, reject);
-    parser.on(`data`, word => countToken(word, frequencies));
-    parser.on(`end`, resolve);
+  utterances.map(u => countUtterance(u, frequencies));
 
-    // parser.on(`data`, console.log);
-
-    readStream.pipe(parser);
-
-  });
 }
 
 // MAIN
