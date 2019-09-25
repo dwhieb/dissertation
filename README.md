@@ -108,7 +108,9 @@ For the OANC, converting the data to JSON involved first tokenizing the corpus. 
 
 #### Converting the OANC to JSON
 
-To convert the OANC to JSON, I used a JavaScript library called `tags2dlx`, which I wrote and published for this purpose. It takes a directory of texts tagged for part of speech (where each word token is followed by an underscore and then its part-of-speech tag) and converts it to a JSON file.
+To convert the OANC to JSON, I used a JavaScript library called [`tags2dlx`][tags2dlx], which I wrote and published for this purpose. It takes a directory of texts tagged for part of speech (where each word token is followed by an underscore and then its part-of-speech tag) and converts it to a JSON file. More information about the `tags2dlx` library may be found [here][tags2dlx].
+
+To convert the OANC, follow the instructions for using the `tags2dlx` library, which can be found [here][tags2dlx]. In this repository, the converted files are located in `data/English/data`, and end in a `.json` extension.
 
 <!-- For ease of analysis, I chose to format all the corpora used in this study as [Scription][Scription] files, a simple, very readable text format, which places one interlinear glossed utterance on each line. (For the English data, this simply amounts to placing one utterance / sentence on each line, with no accompanying translation or glosses.) Read more about the Scription format [here][Scription]. -->
 
@@ -175,3 +177,4 @@ Add copyright and license for each section of this repository
 [OpenOffice]:    http://www.openoffice.org/product/calc.html
 [Scription]:     https://scription.digitallinguistics.io/
 [Switchboard]:   https://catalog.ldc.upenn.edu/LDC97S62
+[tags2dlx]:      https://github.com/digitallinguistics/tags2dlx
