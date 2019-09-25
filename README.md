@@ -75,13 +75,21 @@ In this repository, the OANC data is stored in the folder `data/English/data`. F
 
 ## 4. Data Preparation
 
-For ease of analysis, I chose to format all the corpora used in this study as [Scription][Scription] files, a simple, very readable text format, which places one interlinear glossed utterance on each line. (For the English data, this simply amounts to placing one utterance / sentence on each line, with no accompanying translation or glosses.) Read more about the Scription format [here][Scription].
-
-<!--
-### Converting the Corpus to JSON
+This section covers the steps necessary to convert and otherwise prepare the data used in this study for annotation and analysis.
 
 When scripting with JavaScript, I find it significantly easier to work with data in <abbr title='JavaScript Object Notation'>JSON</abbr> (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about the JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][Daffodil].
--->
+
+Thus a first step before beginning to annotate the data is converting the corpora to JSON format.
+
+For the OANC, this involved first tokenizing the corpus. The OANC project provides an [ANC Tool][ANC-Tool] for this purpose, which offers various ways of converting and tagging OANC data. More information about the ANC Tool may be found [here][ANC-Tool]. Steps for tokenizing the OANC using the ANC Tool are as follows:
+
+1. Download the ANC Tool from the [ANC Tool download page][ANC-Tool] and unzip the folder. If you have already cloned this repository, you may skip this step; the ANC Tool is located in the `scripts/ANC` folder.
+
+1. If you do not have Java installed on your computer, download it from [here][Java] and then install it on your computer.
+
+1. Run the ANC Tool following the instructions on the [ANC Tool page][ANC-Tool]. It is recommended that you run the tool from the command line following the format `java -Xmx500M -jar ANCTool-x.y.z-jar.jar`. See the [ANC Tool page][ANC-Tool] for complete details. If you have npm installed on your computer, you can simply run the ANC Tool from the command line with `npm run anc`.
+
+<!-- For ease of analysis, I chose to format all the corpora used in this study as [Scription][Scription] files, a simple, very readable text format, which places one interlinear glossed utterance on each line. (For the English data, this simply amounts to placing one utterance / sentence on each line, with no accompanying translation or glosses.) Read more about the Scription format [here][Scription]. -->
 
 ([back to top](#readme))
 ## 5. Data Annotation
@@ -130,12 +138,14 @@ Add copyright and license for each section of this repository
   - [ ] my scripts (MIT license)
 
 <!-- Links -->
+[ANC-Tool]:      http://www.anc.org/software/anc-tool/
 [Charlotte]:     https://newsouthvoices.uncc.edu
 [cloning]:       https://help.github.com/en/articles/cloning-a-repository
 [Daffodil]:      https://format.digitallinguistics.io/
 [dissertation]:  https://files.danielhieber.com/publications/dissertation.pdf
 [Excel]:         https://products.office.com/en-us/excel
 [GitHub]:        https://github.com/dwhieb/dissertation
+[Java]:          https://www.java.com
 [JSON]:          http://json.org/
 [Node]:          https://nodejs.org/
 [npm]:           https://www.npmjs.com/
