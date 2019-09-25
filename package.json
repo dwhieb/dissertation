@@ -27,33 +27,30 @@
   },
   "type": "module",
   "scripts": {
-
-    "start":         "",
-
+    "start": "node --experimental-modules --no-warnings scripts/bin/generateWordforms.js data/English/data data/English/stats/wordforms.tsv",
     "abbreviations": "node --experimental-modules --no-warnings scripts/build/abbreviations.js",
-    "anc":           "java -Xmx500M -jar scripts/ANC/ANCTool-2.0.0-jar.jar",
-    "archive":       "node --experimental-modules --no-warnings scripts/build/archive.js",
-    "bib":           "biber src/main",
-    "cleanup":       "node --experimental-modules --no-warnings scripts/build/cleanup.js",
-    "compile":       "cd src && xelatex -halt-on-error main.tex && cd ..",
-    "copy-pdf":      "node --experimental-modules --no-warnings scripts/build/copyPDF.js",
-    "diss-version":  "node --experimental-modules --no-warnings scripts/build/version.js",
-    "log-start":     "node --experimental-modules --no-warnings scripts/build/startLog.js",
-    "log-end":       "node --experimental-modules --no-warnings scripts/build/endLog.js",
-    "quick-bib":     "npm run compile && npm run bib && npm run compile && open-cli src/main.pdf",
-    "quick-build":   "npm run compile && open-cli src/main.pdf",
-    "upload":        "node --experimental-modules --no-warnings scripts/build/upload.js",
-
-    "prebuild":      "npm run cleanup && npm run abbreviations && npm run diss-version",
-    "build":         "npm run compile && npm run bib && npm run compile",
-    "postbuild":     "npm run copy-pdf && open-cli dissertation.pdf",
-
-    "preversion":    "npm run log-start && npm run build && npm run log-end && npm run archive && npm run cleanup"
-
+    "anc": "java -Xmx500M -jar scripts/ANC/ANCTool-2.0.0-jar.jar",
+    "archive": "node --experimental-modules --no-warnings scripts/build/archive.js",
+    "bib": "biber src/main",
+    "cleanup": "node --experimental-modules --no-warnings scripts/build/cleanup.js",
+    "compile": "cd src && xelatex -halt-on-error main.tex && cd ..",
+    "copy-pdf": "node --experimental-modules --no-warnings scripts/build/copyPDF.js",
+    "diss-version": "node --experimental-modules --no-warnings scripts/build/version.js",
+    "log-start": "node --experimental-modules --no-warnings scripts/build/startLog.js",
+    "log-end": "node --experimental-modules --no-warnings scripts/build/endLog.js",
+    "quick-bib": "npm run compile && npm run bib && npm run compile && open-cli src/main.pdf",
+    "quick-build": "npm run compile && open-cli src/main.pdf",
+    "upload": "node --experimental-modules --no-warnings scripts/build/upload.js",
+    "prebuild": "npm run cleanup && npm run abbreviations && npm run diss-version",
+    "build": "npm run compile && npm run bib && npm run compile",
+    "postbuild": "npm run copy-pdf && open-cli dissertation.pdf",
+    "preversion": "npm run log-start && npm run build && npm run log-end && npm run archive && npm run cleanup"
   },
   "devDependencies": {
     "@azure/storage-blob": "^10.3.0",
+    "@digitallinguistics/tags2dlx": "^0.2.1",
     "babel-eslint": "^10.0.3",
+    "csv-stringify": "^5.3.3",
     "eslint": "^6.0.1",
     "open-cli": "^5.0.0",
     "ora": "^3.4.0",
