@@ -10,10 +10,11 @@ A self-imposed requirement for this project is that of empirical accountability 
 1. [Technical Prerequisites](#2-technical-prerequisites)
 1. [Data Collection](#3-data-collection)
 1. [Data Preparation](#4-data-preparation)
-1. [Data Annotation](#5-data-annotation)
-1. [Data Analysis](#6-data-analysis)
-1. [References](#7-references)
-1. [Legal](#8-legal)
+1. [Data Selection](#5-data-selection)
+1. [Data Annotation](#6-data-annotation)
+1. [Data Analysis](#7-data-analysis)
+1. [References](#8-references)
+1. [Legal](#9-legal)
 
 ([back to top](#readme))
 
@@ -25,8 +26,9 @@ The process of obtaining the results from this study, as in all empirical scient
 1. data selection
 1. [data collection](#3-data-collection)
 1. [data preparation](#4-data-preparation)
-1. [data annotation](#5-data-annotation)
-1. [data analysis](#6-data-analysis)
+1. [data selection](#5-data-selection) (again)
+1. [data annotation](#6-data-annotation)
+1. [data analysis](#7-data-analysis)
 1. reporting results
 
 There are not always clear boundaries between each stage (for example, a data selection step occurs at several places), but the above steps nonetheless provide a useful overview of the process.
@@ -112,18 +114,32 @@ To convert the OANC to JSON, I used a JavaScript library called [`tags2dlx`][tag
 
 To convert the OANC, follow the instructions for using the `tags2dlx` library, which can be found [here][tags2dlx]. In this repository, the converted files are located in `data/English/data`, and end in a `.json` extension.
 
-### Calculating Wordform Frequencies
-
-In order to determine which archilexemes I wanted to annotate, I first had to calculate the raw frequency of each wordform in the corpus. This allowed me to the select archilexemes from different frequency bins for annotation. To accomplish this, I wrote a script which parses a corpus of DLx JSON files and produces a tab-delimited (`.tsv`) file containing the frequencies of each wordform in the corpus. You can run this script on a corpus using the following command, where `{directory}` is the path to the directory where the JSON corpus is located, and `{output path}` is the location where you would like the resulting TSV file generated.
-
-```cmd
-node --experimental-modules --no-warnings scripts/bin/generateWordforms {directory} {output path}
-```
-
 <!-- For ease of analysis, I chose to format all the corpora used in this study as [Scription][Scription] files, a simple, very readable text format, which places one interlinear glossed utterance on each line. (For the English data, this simply amounts to placing one utterance / sentence on each line, with no accompanying translation or glosses.) Read more about the Scription format [here][Scription]. -->
 
 ([back to top](#readme))
-## 5. Data Annotation
+
+## 5. Data Selection
+
+100 archilexemes were selected from each corpus for annotation. These archilexemes were chosen randomly from the set of wordforms in each corpus, by first dividing those wordforms into 100 different bins depending on the corpus dispersion of that wordform (measured using <dfn>Deviation of Proportions</dfn> (<abbr title='Deviation of Proportions'>DP</abbr>)), and then selecting one word randomly from each bin. Words which did not meet the selection criteria were thrown out, and the process was repeated until 100 viable archilexemes were found. (The selection criteria for archilexemes are discussed in the Data & Methods chapter of my dissertation document, available [here][dissertation].)
+
+To do this, I wrote a script which produces two files:
+
+- `wordforms.tsv`: A tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion.
+- `text-sizes.tsv`: A tab-delimited file listing its text in the corpus and the number of word tokens it has
+
+In addition, the script prints the total size of the corpus to the console.
+
+The script can be run on the command line using the following command, where `{input}` is the path to the directory where the JSON corpus is located, and `{output}` is the location where you would like the resulting TSV file generated.
+
+```cmd
+node --experimental-modules --no-warnings scripts/bin/generateWordforms {input} {output}
+```
+
+<!-- script to randomly select words from each dispersion bin -->
+
+([back to top](#readme))
+
+## 6. Data Annotation
 
 The annotations on the data used in this study are <dfn>stand-off</dfn> or <dfn>standalone</dfn> annotations—that is, annotations which live in a separate file, and contain information about the original utterances they apply to. For this project, I stored the annotations in basic tab-separated files (`.tsv`), making it easy to add and edit annotations using spreadsheet software such as [Microsoft Excel][Excel] or [Apache OpenOffice Calc][OpenOffice], among others. All annotations were placed in a single large spreadsheet, with the language of each annotation / observation indicated.
 
@@ -142,15 +158,18 @@ text          | The name of the text that the token appears in.
 utterance     | The number of the utterance within the text that the token appears in. (Numbering starts at 1.)
 
 ([back to top](#readme))
-## 6. Data Analysis
+
+## 7. Data Analysis
 
 ([back to top](#readme))
-## 7. References
+
+## 8. References
 
 * <p id=Adler2010>Adler, Joseph. 2010. <cite>R in a nutshell: A quick desktop reference</cite>. O'Reilly</p>
 
 ([back to top](#readme))
-## 8. Legal
+
+## 9. Legal
 
 Currently, none of the materials in this repository are licensed for copying, reproduction, redistribution, modification, or reuse. Please contact [Daniel W. Hieber](https://danielhieber.com) if you wish to use any of the materials in this repository.
 
