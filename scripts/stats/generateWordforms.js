@@ -95,12 +95,6 @@ export default async function generateWordforms(dataDir, outputPath) {
       wordforms: textWordforms,
     });
 
-    // these steps save the wordforms for each text as a JSON file,
-    // for reading in the next step in the calcuation of corpus dispersions
-    // const textFrequenciesJSON   = JSON.stringify(Object.fromEntries(textWordforms), null, 2);
-    // const textWordformsFilename = path.join(path.dirname(filePath), `${filename}_wordforms.json`);
-    // await writeFile(textWordformsFilename, textFrequenciesJSON, `utf8`);
-
     frequenciesProgressBar.tick();
 
   }
@@ -134,21 +128,6 @@ export default async function generateWordforms(dataDir, outputPath) {
       });
 
     }
-
-    // for (const filePath of textWordformFiles) {
-    //
-    //   // these steps retrieve text wordform frequencies from JSON files
-    //   const json          = await readFile(filePath, `utf8`);
-    //   const textWordforms = JSON.parse(json);
-    //   const filename      = path.basename(filePath, `_wordforms.json`);
-    //   const textFrequency = textWordforms[wordform] || 0;
-    //
-    //   textFrequencies.set(filename, {
-    //     raw:      textFrequency,
-    //     relative: textFrequency / corpusFrequency,
-    //   });
-    //
-    // }
 
     // absolute difference between expected relative frequency of wordform in each text
     // and actual relative frequency of wordform in each text
