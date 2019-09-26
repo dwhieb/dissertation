@@ -122,12 +122,7 @@ To convert the OANC, follow the instructions for using the `tags2dlx` library, w
 
 100 archilexemes were selected from each corpus for annotation. These archilexemes were chosen randomly from the set of wordforms in each corpus, by first dividing those wordforms into 100 different bins depending on the corpus dispersion of that wordform (measured using <dfn>Deviation of Proportions</dfn> (<abbr title='Deviation of Proportions'>DP</abbr>)), and then selecting one word randomly from each bin. Words which did not meet the selection criteria were thrown out, and the process was repeated until 100 viable archilexemes were found. (The selection criteria for archilexemes are discussed in the Data & Methods chapter of my dissertation document, available [here][dissertation].)
 
-To do this, I wrote a script which produces two files:
-
-- `wordforms.tsv`: A tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion.
-- `text-sizes.tsv`: A tab-delimited file listing its text in the corpus and the number of word tokens it has
-
-In addition, the script prints the total size of the corpus to the console.
+To do this, I wrote a script which produces a tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion. In addition, the script prints the total size of the corpus to the console.
 
 The script can be run on the command line using the following command, where `{input}` is the path to the directory where the JSON corpus is located, and `{output}` is the location where you would like the resulting TSV file generated.
 

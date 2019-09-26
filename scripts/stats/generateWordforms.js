@@ -1,108 +1,93 @@
+/* eslint-disable
+  no-await-in-loop,
+*/
+
 // IMPORTS
 
-import csvStringify  from 'csv-stringify';
-import fs            from 'fs';
-import path          from 'path';
-import { promisify } from 'util';
-
-import {
-  compare,
-  processDir,
-} from '../utilities/index.js';
-
-const json2csv = promisify(csvStringify);
+import fs          from 'fs';
+import path        from 'path';
+import ProgressBar from 'progress';
+import recurse     from 'recursive-readdir';
 
 const {
   readFile,
   writeFile,
 } = fs.promises;
 
-/**
- * Options for the CSV stringifier
- * @type {Object}
- */
-const csvOptions = {
-  delimiter: `\t`,
-  header:    true,
-};
+// METHODS
 
 /**
- * Accepts a Map of items to their frequencies and converts it to a JSON array sorted by frequency
- * @param  {Map}   map A Map of items to their frequencies
- * @return {Array}     Returns an array of entries (array of arrays)
+ * Increments the frequency of a word token in a frequency Map
+ * @param  {Object} word        A DLx Word Token object
+ * @param  {Map}    frequencies A Map of wordforms to their frequencies
  */
-function convertFrequencies(map) {
-  return [...map.entries()]
-  .sort(([wordA, freqA], [wordB, freqB]) => compare(freqB, freqA) || compare(wordA, wordB));
+function countToken({ transcription }, frequencies) {
+
+  const wordform = transcription.toLowerCase();
+
+  if (frequencies.has(wordform)) frequencies.set(wordform, frequencies.get(wordform) + 1);
+  else frequencies.set(wordform, 1);
+
 }
 
 /**
- * Counts the word tokens in an utterance and adds them to the frequencies Map
- * @param  {Utterance} utterance   A DLx Utterance object
- * @param  {Map}       frequencies A Map of wordforms to their frequencies
- * @return {[type]}             [description]
+ * Ignore method which tells recursive-readdir to ignore any non-JSON files
  */
-function countUtterance({ words }, frequencies) {
-  words.forEach(({ transcription }) => {
-
-    const wordform = transcription.toLowerCase();
-
-    if (frequencies.has(wordform)) frequencies.set(wordform, frequencies.get(wordform) + 1);
-    else frequencies.set(wordform, 1);
-
-  });
-}
-
-/**
- * Ignore function for recursive-readdir
- */
-function ignore(filePath, stats) {
+function ignoreNonJSON(filePath, stats) {
   if (stats.isDirectory()) return false;
   return path.extname(filePath) !== `.json`;
 }
 
-/**
- * Counts the tokens in an individual text and adds them to the provided frequencies Map. Affects the original Map.
- * @param  {String}  filePath    The path to the file to count tokens in
- * @param  {Map}     frequencies A Map of wordforms to frequencies. Affects the original Map.
- * @return {Promise}
- */
-async function processFile(filePath, frequencies, textSizes) {
-
-  const json           = await readFile(filePath, `utf8`);
-  const { utterances } = JSON.parse(json);
-  const textSize       = utterances.reduce((sum, { words }) => sum + words.length, 0);
-  const filename       = path.basename(filePath, `.json`);
-
-  textSizes.set(filename, textSize);
-
-  utterances.map(u => countUtterance(u, frequencies));
-
-}
-
 // MAIN
 
-export default async function generateWordforms(dataDir, outputDir) {
+/**
+ * Generates a tab-delimited file of raw frequencies and dispersions for each wordform in the corpus
+ * @param  {String} dataDir    The directory of JSON files to calculate frequencies for
+ * @param  {String} outputPath The path to the file to generate
+ * @return {Promise}
+ */
+export default async function generateWordforms(dataDir, outputPath) {
 
-  const frequencies = new Map;
-  const textSizes   = new Map;
+  const corpusWordformFrequencies = new Map;
+  const textSizes                 = new Map;
 
-  await processDir(dataDir, filePath => processFile(filePath, frequencies, textSizes), ignore);
+  const files       = await recurse(dataDir, [ignoreNonJSON]);
+  const progressBar = new ProgressBar(`:bar`, { total: files.length });
 
-  const corpusSize = Array.from(textSizes.values()).reduce((sum, size) => sum + size, 0);
-  console.info(`Size of Corpus: ${corpusSize.toLocaleString()} tokens`);
+  console.info(`Calculating raw frequencies`);
 
-  // text-sizes.tsv
-  const textSizesColumns = [`text`, `tokens`];
-  const textSizesOptions = Object.assign({ columns: textSizesColumns }, csvOptions);
-  const textSizesTSV     = await json2csv(convertFrequencies(textSizes), textSizesOptions);
-  await writeFile(path.join(outputDir, `text-sizes.tsv`), textSizesTSV, `utf8`);
+  for (const filePath of files) {
 
-  // wordforms.tsv
-  const wordformsColumns = [`wordform`, `frequency`];
-  const wordformsOptions = Object.assign({ columns: wordformsColumns }, csvOptions);
-  const wordformsTSV     = await json2csv(convertFrequencies(frequencies), wordformsOptions);
-  await writeFile(path.join(outputDir, `wordforms.tsv`), wordformsTSV, `utf8`);
+    const json                    = await readFile(filePath, `utf8`);
+    const { utterances }          = JSON.parse(json);
+    const textWordformFrequencies = new Map;
 
+    // increment text and corpus counts for each token in the text
+    utterances.forEach(({ words }) => words.forEach(w => {
+      countToken(w, textWordformFrequencies);
+      countToken(w, corpusWordformFrequencies);
+    }));
+
+    const filename = path.basename(filePath, `.json`);
+    const textSize = Array.from(textWordformFrequencies.values()).reduce((sum, count) => sum + count, 0);
+
+    textSizes.set(filename, textSize);
+
+    const textFrequenciesJSON   = JSON.stringify(Object.fromEntries(textWordformFrequencies), null, 2);
+    const textWordformsFilename = path.join(path.dirname(filePath), `${filename}_wordforms.json`);
+    await writeFile(textWordformsFilename, textFrequenciesJSON, `utf8`);
+
+    progressBar.tick();
+
+  }
+
+  // generate total wordform frequencies file
+  // get the total corpus size
+  // start a new progress bar
+  // then, for each wordform in the corpus wordforms file, calculate its dispersion
+  // end progress bar
+  // start a new progress bar
+  // cleanup the text wordform frequency files after
+  // end progress bar
 
 }
