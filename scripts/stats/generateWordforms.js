@@ -5,7 +5,6 @@
 
 // IMPORTS
 
-import { compare }   from '../utilities/index.js';
 import csvStringify  from 'csv-stringify';
 import fs            from 'fs';
 import path          from 'path';
@@ -177,10 +176,10 @@ export default async function generateWordforms(dataDir, outputPath) {
     header:    true,
   };
 
+  // wordforms.tsv
   const tableData = Array.from(corpusWordforms.entries())
   .map(([wordform, { dispersion, frequency }]) => [wordform, frequency, dispersion]);
 
-  // wordforms.tsv
   const wordformsTSV = await json2csv(tableData, csvOptions);
   await writeFile(outputPath, wordformsTSV, `utf8`);
 
