@@ -48,6 +48,13 @@ function ignoreNonWordforms(filePath, stats) {
   return !filePath.endsWith(`_wordforms.json`);
 }
 
+/**
+ * Checks whether a DLx Word Token object has any unwanted characters
+ */
+function isUnwantedWord({ transcription }) {
+  return /[^A-Za-z']/gu.test(transcription);
+}
+
 // MAIN
 
 /**
@@ -59,7 +66,7 @@ function ignoreNonWordforms(filePath, stats) {
 export default async function generateWordforms(dataDir, outputPath) {
 
   const corpusWordforms = new Map;
-  const textSizes       = new Map;
+  const texts           = new Map;
 
   const dlxFiles               = await recurse(dataDir, [ignoreNonDLx]);
   const frequenciesProgressBar = new ProgressBar(`:bar`, { total: dlxFiles.length });
@@ -74,6 +81,7 @@ export default async function generateWordforms(dataDir, outputPath) {
 
     // increment text and corpus counts for each token in the text
     utterances.forEach(({ words }) => words.forEach(w => {
+      if (isUnwantedWord(w)) return;
       countToken(w, textWordforms);
       countToken(w, corpusWordforms);
     }));
@@ -82,11 +90,16 @@ export default async function generateWordforms(dataDir, outputPath) {
     const textSize = Array.from(textWordforms.values())
     .reduce((sum, count) => sum + count, 0);
 
-    textSizes.set(filename, textSize);
+    texts.set(filename, {
+      rawSize:   textSize,
+      wordforms: textWordforms,
+    });
 
-    const textFrequenciesJSON   = JSON.stringify(Object.fromEntries(textWordforms), null, 2);
-    const textWordformsFilename = path.join(path.dirname(filePath), `${filename}_wordforms.json`);
-    await writeFile(textWordformsFilename, textFrequenciesJSON, `utf8`);
+    // these steps save the wordforms for each text as a JSON file,
+    // for reading in the next step in the calcuation of corpus dispersions
+    // const textFrequenciesJSON   = JSON.stringify(Object.fromEntries(textWordforms), null, 2);
+    // const textWordformsFilename = path.join(path.dirname(filePath), `${filename}_wordforms.json`);
+    // await writeFile(textWordformsFilename, textFrequenciesJSON, `utf8`);
 
     frequenciesProgressBar.tick();
 
@@ -97,21 +110,77 @@ export default async function generateWordforms(dataDir, outputPath) {
 
   console.info(`\nSize of Corpus: ${corpusSize.toLocaleString()} words\n`);
 
+  texts.forEach(info => {
+    // eslint-disable-next-line no-param-reassign
+    info.relativeSize = info.rawSize / corpusSize;
+  });
+
   const dispersionsProgressBar = new ProgressBar(`:bar`, { total: corpusWordforms.size });
+  // const textWordformFiles      = await recurse(dataDir, [ignoreNonWordforms]);
 
-  corpusWordforms.forEach((corpusFrequency, wordform) => {
+  console.info(`Calculating corpus dispersions`);
 
-    // calculate the dispersion of the wordform
-    // swap corpus frequency for an info object with frequency & dispersion properties
+  for (const [wordform, corpusFrequency] of corpusWordforms) {
+
+    const textFrequencies = new Map;
+
+    for (const [text, { wordforms }] of texts) {
+
+      const textFrequency = wordforms.get(wordform) || 0;
+
+      textFrequencies.set(text, {
+        raw:      textFrequency,
+        relative: textFrequency / corpusFrequency,
+      });
+
+    }
+
+    // for (const filePath of textWordformFiles) {
+    //
+    //   // these steps retrieve text wordform frequencies from JSON files
+    //   const json          = await readFile(filePath, `utf8`);
+    //   const textWordforms = JSON.parse(json);
+    //   const filename      = path.basename(filePath, `_wordforms.json`);
+    //   const textFrequency = textWordforms[wordform] || 0;
+    //
+    //   textFrequencies.set(filename, {
+    //     raw:      textFrequency,
+    //     relative: textFrequency / corpusFrequency,
+    //   });
+    //
+    // }
+
+    // absolute difference between expected relative frequency of wordform in each text
+    // and actual relative frequency of wordform in each text
+    const differences = Array.from(texts.entries())
+    .reduce((diffs, [text, { relativeSize: expectedFreq }]) => {
+
+      const { relative: actualFreq } = textFrequencies.get(text);
+      const diff = Math.abs(expectedFreq - actualFreq);
+
+      return diffs.set(text, diff);
+
+    }, new Map);
+
+    // sum of the absolute differences calculated above
+    const sumDifferences = Array.from(differences.values()).reduce((sum, count) => sum + count, 0);
+
+    // measure of corpus dispersion (Deviation of Proportions (DP))
+    const dispersion = sumDifferences / 2;
+
+    corpusWordforms.set(wordform, {
+      dispersion,
+      frequency: corpusFrequency,
+    });
 
     dispersionsProgressBar.tick();
 
-  });
+  }
 
-  // start a new progress bar
-  // cleanup the text wordform frequency files
-  // end progress bar
+  // TODO: start a new progress bar
+  // TODO: cleanup the text wordform frequency files
+  // TODO: end progress bar
 
-  // generate wordforms file (with total corpus frequencies and dispersions)
+  // TODO: generate wordforms file (with total corpus frequencies and dispersions)
 
 }
