@@ -92,13 +92,13 @@ export default async function generateWordforms(dataDir, outputDir) {
   // text-sizes.tsv
   const textSizesColumns = [`text`, `tokens`];
   const textSizesOptions = Object.assign({ columns: textSizesColumns }, csvOptions);
-  const textSizesTSV     = json2csv(convertFrequencies(textSizes), textSizesOptions);
+  const textSizesTSV     = await json2csv(convertFrequencies(textSizes), textSizesOptions);
   await writeFile(path.join(outputDir, `text-sizes.tsv`), textSizesTSV, `utf8`);
 
   // wordforms.tsv
   const wordformsColumns = [`wordform`, `frequency`];
   const wordformsOptions = Object.assign({ columns: wordformsColumns }, csvOptions);
-  const wordformsTSV     = json2csv(convertFrequencies(textSizes), wordformsOptions);
+  const wordformsTSV     = await json2csv(convertFrequencies(frequencies), wordformsOptions);
   await writeFile(path.join(outputDir, `wordforms.tsv`), wordformsTSV, `utf8`);
 
 
