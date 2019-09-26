@@ -17,28 +17,14 @@ const {
   writeFile,
 } = fs.promises;
 
-// VARIABLES
-
-/**
- * Column names for the generated CSV file
- * @type {Array}
- */
-const columns = [
-  `wordform`,
-  `frequency`,
-];
-
 /**
  * Options for the CSV stringifier
  * @type {Object}
  */
 const csvOptions = {
-  columns,
   delimiter: `\t`,
   header:    true,
 };
-
-// METHODS
 
 /**
  * Accepts a Map of items to their frequencies and converts it to a JSON array sorted by frequency
@@ -81,10 +67,14 @@ function ignore(filePath, stats) {
  * @param  {Map}     frequencies A Map of wordforms to frequencies. Affects the original Map.
  * @return {Promise}
  */
-async function processFile(filePath, frequencies) {
+async function processFile(filePath, frequencies, textSizes) {
 
   const json           = await readFile(filePath, `utf8`);
   const { utterances } = JSON.parse(json);
+  const textSize       = utterances.reduce((sum, { words }) => sum + words.length, 0);
+  const filename       = path.basename(filePath, `.json`);
+
+  textSizes.set(filename, textSize);
 
   utterances.map(u => countUtterance(u, frequencies));
 
@@ -92,15 +82,24 @@ async function processFile(filePath, frequencies) {
 
 // MAIN
 
-export default async function generateWordforms(dataDir, outputPath) {
+export default async function generateWordforms(dataDir, outputDir) {
 
   const frequencies = new Map;
+  const textSizes   = new Map;
 
-  await processDir(dataDir, filePath => processFile(filePath, frequencies), ignore);
+  await processDir(dataDir, filePath => processFile(filePath, frequencies, textSizes), ignore);
 
-  const json = convertFrequencies(frequencies);
-  const csv  = await json2csv(json, csvOptions);
+  // text-sizes.tsv
+  const textSizesColumns = [`text`, `tokens`];
+  const textSizesOptions = Object.assign({ columns: textSizesColumns }, csvOptions);
+  const textSizesTSV     = json2csv(convertFrequencies(textSizes), textSizesOptions);
+  await writeFile(path.join(outputDir, `text-sizes.tsv`), textSizesTSV, `utf8`);
 
-  await writeFile(outputPath, csv, `utf8`);
+  // wordforms.tsv
+  const wordformsColumns = [`wordform`, `frequency`];
+  const wordformsOptions = Object.assign({ columns: wordformsColumns }, csvOptions);
+  const wordformsTSV     = json2csv(convertFrequencies(textSizes), wordformsOptions);
+  await writeFile(path.join(outputDir, `wordforms.tsv`), wordformsTSV, `utf8`);
+
 
 }
