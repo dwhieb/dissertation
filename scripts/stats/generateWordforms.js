@@ -44,13 +44,6 @@ function ignore(filePath, stats) {
   return path.extname(filePath) !== `.json`;
 }
 
-/**
- * Checks whether a DLx Word Token object has any unwanted characters
- */
-function isUnwantedWord({ transcription }) {
-  return /[^A-Za-z']/gu.test(transcription);
-}
-
 // MAIN
 
 /**
@@ -80,7 +73,6 @@ export default async function generateWordforms(dataDir, outputPath) {
 
     // increment text and corpus counts for each token in the text
     utterances.forEach(({ words }) => words.forEach(w => {
-      if (isUnwantedWord(w)) return;
       countToken(w, textWordforms);
       countToken(w, corpusWordforms);
     }));
