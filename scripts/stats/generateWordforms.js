@@ -5,10 +5,15 @@
 
 // IMPORTS
 
-import fs          from 'fs';
-import path        from 'path';
-import ProgressBar from 'progress';
-import recurse     from 'recursive-readdir';
+import { compare }   from '../utilities/index.js';
+import csvStringify  from 'csv-stringify';
+import fs            from 'fs';
+import path          from 'path';
+import ProgressBar   from 'progress';
+import { promisify } from 'util';
+import recurse       from 'recursive-readdir';
+
+const json2csv = promisify(csvStringify);
 
 const {
   readFile,
@@ -34,18 +39,10 @@ function countToken({ transcription }, frequencies) {
 /**
  * Ignore method which tells recursive-readdir to ignore any non-DLx files
  */
-function ignoreNonDLx(filePath, stats) {
+function ignore(filePath, stats) {
   if (stats.isDirectory()) return false;
   if (filePath.endsWith(`_wordforms.json`)) return true;
   return path.extname(filePath) !== `.json`;
-}
-
-/**
- * Ignore all files except JSON files containing wordform frequencies (_wordforms.json)
- */
-function ignoreNonWordforms(filePath, stats) {
-  if (stats.isDirectory()) return false;
-  return !filePath.endsWith(`_wordforms.json`);
 }
 
 /**
@@ -68,8 +65,11 @@ export default async function generateWordforms(dataDir, outputPath) {
   const corpusWordforms = new Map;
   const texts           = new Map;
 
-  const dlxFiles               = await recurse(dataDir, [ignoreNonDLx]);
+  const dlxFiles               = await recurse(dataDir, [ignore]);
   const frequenciesProgressBar = new ProgressBar(`:bar`, { total: dlxFiles.length });
+
+
+  // RAW WORDFORM FREQUENCIES
 
   console.info(`Calculating raw frequencies`);
 
@@ -99,25 +99,34 @@ export default async function generateWordforms(dataDir, outputPath) {
 
   }
 
+
+  // CORPUS SIZE
+
   const corpusSize = Array.from(corpusWordforms.values())
   .reduce((sum, count) => sum + count, 0);
 
   console.info(`\nSize of Corpus: ${corpusSize.toLocaleString()} words\n`);
+
+
+  // RELATIVE TEXT SIZES
 
   texts.forEach(info => {
     // eslint-disable-next-line no-param-reassign
     info.relativeSize = info.rawSize / corpusSize;
   });
 
-  const dispersionsProgressBar = new ProgressBar(`:bar`, { total: corpusWordforms.size });
-  // const textWordformFiles      = await recurse(dataDir, [ignoreNonWordforms]);
+
+  // DISPERSIONS
 
   console.info(`Calculating corpus dispersions`);
+
+  const dispersionsProgressBar = new ProgressBar(`:bar`, { total: corpusWordforms.size });
 
   for (const [wordform, corpusFrequency] of corpusWordforms) {
 
     const textFrequencies = new Map;
 
+    // raw and relative frequencies of the wordform in each text
     for (const [text, { wordforms }] of texts) {
 
       const textFrequency = wordforms.get(wordform) || 0;
@@ -129,8 +138,10 @@ export default async function generateWordforms(dataDir, outputPath) {
 
     }
 
-    // absolute difference between expected relative frequency of wordform in each text
-    // and actual relative frequency of wordform in each text
+    // absolute difference between
+    // expected relative frequency of the wordform in each text
+    // and
+    // actual relative frequency of the wordform in each text
     const differences = Array.from(texts.entries())
     .reduce((diffs, [text, { relativeSize: expectedFreq }]) => {
 
@@ -156,10 +167,21 @@ export default async function generateWordforms(dataDir, outputPath) {
 
   }
 
-  // TODO: start a new progress bar
-  // TODO: cleanup the text wordform frequency files
-  // TODO: end progress bar
+  const csvOptions = {
+    columns: [
+      `wordform`,
+      `frequency`,
+      `dispersion`,
+    ],
+    delimiter: `\t`,
+    header:    true,
+  };
 
-  // TODO: generate wordforms file (with total corpus frequencies and dispersions)
+  const tableData = Array.from(corpusWordforms.entries())
+  .sort(([, { dispersionA }], [, { dispersionB }]) => compare(dispersionA, dispersionB));
+
+  // wordforms.tsv
+  const wordformsTSV = await json2csv(tableData, csvOptions);
+  await writeFile(outputPath, wordformsTSV, `utf8`);
 
 }
