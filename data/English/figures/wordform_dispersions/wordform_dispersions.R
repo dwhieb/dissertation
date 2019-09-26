@@ -1,5 +1,5 @@
 wordforms_path <- 'data/English/stats/wordforms.tsv'
-graph_path     <- 'data/English/figures/wordform_frequencies/wordform_frequencies.pdf'
+graph_path     <- 'data/English/figures/wordform_dispersions/wordform_dispersions.pdf'
 
 # load data
 data <- read.table(
@@ -14,15 +14,15 @@ data <- read.table(
 pdf(graph_path)
 
 # density plot
-d <- density(log(data$frequency))
+d <- density(data$dispersion)
 
 plot(
   d,
-  main = 'Density of (log) Wordform Frequencies',
+  main = 'Density of Wordform Dispersions',
 )
 
 # end PDF generation
 dev.off()
 
 # show summary statistics
-print(summary(data$frequency))
+print(summary(data$dispersion))
