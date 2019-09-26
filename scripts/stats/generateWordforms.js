@@ -1,14 +1,16 @@
+/* eslint-disable
+  max-statements,
+  no-await-in-loop,
+*/
+
 // IMPORTS
 
 import csvStringify  from 'csv-stringify';
 import fs            from 'fs';
 import path          from 'path';
+import ProgressBar   from 'progress';
 import { promisify } from 'util';
-
-import {
-  compare,
-  processDir,
-} from '../utilities/index.js';
+import recurse       from 'recursive-readdir';
 
 const json2csv = promisify(csvStringify);
 
@@ -17,92 +19,168 @@ const {
   writeFile,
 } = fs.promises;
 
-/**
- * Options for the CSV stringifier
- * @type {Object}
- */
-const csvOptions = {
-  delimiter: `\t`,
-  header:    true,
-};
+// METHODS
 
 /**
- * Accepts a Map of items to their frequencies and converts it to a JSON array sorted by frequency
- * @param  {Map}   map A Map of items to their frequencies
- * @return {Array}     Returns an array of entries (array of arrays)
+ * Increments the frequency of a word token in a frequency Map
+ * @param  {Object} word        A DLx Word Token object
+ * @param  {Map}    frequencies A Map of wordforms to their frequencies
  */
-function convertFrequencies(map) {
-  return [...map.entries()]
-  .sort(([wordA, freqA], [wordB, freqB]) => compare(freqB, freqA) || compare(wordA, wordB));
+function countToken({ transcription }, frequencies) {
+
+  const wordform = transcription.toLowerCase();
+
+  if (frequencies.has(wordform)) frequencies.set(wordform, frequencies.get(wordform) + 1);
+  else frequencies.set(wordform, 1);
+
 }
 
 /**
- * Counts the word tokens in an utterance and adds them to the frequencies Map
- * @param  {Utterance} utterance   A DLx Utterance object
- * @param  {Map}       frequencies A Map of wordforms to their frequencies
- * @return {[type]}             [description]
- */
-function countUtterance({ words }, frequencies) {
-  words.forEach(({ transcription }) => {
-
-    const wordform = transcription.toLowerCase();
-
-    if (frequencies.has(wordform)) frequencies.set(wordform, frequencies.get(wordform) + 1);
-    else frequencies.set(wordform, 1);
-
-  });
-}
-
-/**
- * Ignore function for recursive-readdir
+ * Ignore method which tells recursive-readdir to ignore any non-DLx files
  */
 function ignore(filePath, stats) {
   if (stats.isDirectory()) return false;
+  if (filePath.endsWith(`_wordforms.json`)) return true;
   return path.extname(filePath) !== `.json`;
 }
 
 /**
- * Counts the tokens in an individual text and adds them to the provided frequencies Map. Affects the original Map.
- * @param  {String}  filePath    The path to the file to count tokens in
- * @param  {Map}     frequencies A Map of wordforms to frequencies. Affects the original Map.
- * @return {Promise}
+ * Checks whether a DLx Word Token object has any unwanted characters
  */
-async function processFile(filePath, frequencies, textSizes) {
-
-  const json           = await readFile(filePath, `utf8`);
-  const { utterances } = JSON.parse(json);
-  const textSize       = utterances.reduce((sum, { words }) => sum + words.length, 0);
-  const filename       = path.basename(filePath, `.json`);
-
-  textSizes.set(filename, textSize);
-
-  utterances.map(u => countUtterance(u, frequencies));
-
+function isUnwantedWord({ transcription }) {
+  return /[^A-Za-z']/gu.test(transcription);
 }
 
 // MAIN
 
-export default async function generateWordforms(dataDir, outputDir) {
+/**
+ * Generates a tab-delimited file of raw frequencies and dispersions for each wordform in the corpus
+ * @param  {String} dataDir    The directory of JSON files to calculate frequencies for
+ * @param  {String} outputPath The path to the file to generate
+ * @return {Promise}
+ */
+export default async function generateWordforms(dataDir, outputPath) {
 
-  const frequencies = new Map;
-  const textSizes   = new Map;
+  const corpusWordforms = new Map;
+  const texts           = new Map;
 
-  await processDir(dataDir, filePath => processFile(filePath, frequencies, textSizes), ignore);
+  const dlxFiles               = await recurse(dataDir, [ignore]);
+  const frequenciesProgressBar = new ProgressBar(`:bar`, { total: dlxFiles.length });
 
-  const corpusSize = Array.from(textSizes.values()).reduce((sum, size) => sum + size, 0);
-  console.info(`Size of Corpus: ${corpusSize.toLocaleString()} tokens`);
 
-  // text-sizes.tsv
-  const textSizesColumns = [`text`, `tokens`];
-  const textSizesOptions = Object.assign({ columns: textSizesColumns }, csvOptions);
-  const textSizesTSV     = await json2csv(convertFrequencies(textSizes), textSizesOptions);
-  await writeFile(path.join(outputDir, `text-sizes.tsv`), textSizesTSV, `utf8`);
+  // RAW WORDFORM FREQUENCIES
+
+  console.info(`Calculating raw frequencies`);
+
+  for (const filePath of dlxFiles) {
+
+    const json           = await readFile(filePath, `utf8`);
+    const { utterances } = JSON.parse(json);
+    const textWordforms  = new Map;
+
+    // increment text and corpus counts for each token in the text
+    utterances.forEach(({ words }) => words.forEach(w => {
+      if (isUnwantedWord(w)) return;
+      countToken(w, textWordforms);
+      countToken(w, corpusWordforms);
+    }));
+
+    const filename = path.basename(filePath, `.json`);
+    const textSize = Array.from(textWordforms.values())
+    .reduce((sum, count) => sum + count, 0);
+
+    texts.set(filename, {
+      rawSize:   textSize,
+      wordforms: textWordforms,
+    });
+
+    frequenciesProgressBar.tick();
+
+  }
+
+
+  // CORPUS SIZE
+
+  const corpusSize = Array.from(corpusWordforms.values())
+  .reduce((sum, count) => sum + count, 0);
+
+  console.info(`\nSize of Corpus: ${corpusSize.toLocaleString()} words\n`);
+
+
+  // RELATIVE TEXT SIZES
+
+  texts.forEach(info => {
+    // eslint-disable-next-line no-param-reassign
+    info.relativeSize = info.rawSize / corpusSize;
+  });
+
+
+  // DISPERSIONS
+
+  console.info(`Calculating corpus dispersions`);
+
+  const dispersionsProgressBar = new ProgressBar(`:bar`, { total: corpusWordforms.size });
+
+  for (const [wordform, corpusFrequency] of corpusWordforms) {
+
+    const textFrequencies = new Map;
+
+    // raw and relative frequencies of the wordform in each text
+    for (const [text, { wordforms }] of texts) {
+
+      const textFrequency = wordforms.get(wordform) || 0;
+
+      textFrequencies.set(text, {
+        raw:      textFrequency,
+        relative: textFrequency / corpusFrequency,
+      });
+
+    }
+
+    // absolute difference between
+    // expected relative frequency of the wordform in each text
+    // and
+    // actual relative frequency of the wordform in each text
+    const differences = Array.from(texts.entries())
+    .reduce((diffs, [text, { relativeSize: expectedFreq }]) => {
+
+      const { relative: actualFreq } = textFrequencies.get(text);
+      const diff = Math.abs(expectedFreq - actualFreq);
+
+      return diffs.set(text, diff);
+
+    }, new Map);
+
+    // sum of the absolute differences calculated above
+    const sumDifferences = Array.from(differences.values()).reduce((sum, count) => sum + count, 0);
+
+    // measure of corpus dispersion (Deviation of Proportions (DP))
+    const dispersion = sumDifferences / 2;
+
+    corpusWordforms.set(wordform, {
+      dispersion,
+      frequency: corpusFrequency,
+    });
+
+    dispersionsProgressBar.tick();
+
+  }
+
+  const csvOptions = {
+    columns: [
+      `wordform`,
+      `frequency`,
+      `dispersion`,
+    ],
+    delimiter: `\t`,
+    header:    true,
+  };
 
   // wordforms.tsv
-  const wordformsColumns = [`wordform`, `frequency`];
-  const wordformsOptions = Object.assign({ columns: wordformsColumns }, csvOptions);
-  const wordformsTSV     = await json2csv(convertFrequencies(frequencies), wordformsOptions);
-  await writeFile(path.join(outputDir, `wordforms.tsv`), wordformsTSV, `utf8`);
+  const tableData = Array.from(corpusWordforms.entries())
+  .map(([wordform, { dispersion, frequency }]) => [wordform, frequency, dispersion]);
 
+  const wordformsTSV = await json2csv(tableData, csvOptions);
+  await writeFile(outputPath, wordformsTSV, `utf8`);
 
 }
