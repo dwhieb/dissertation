@@ -89,6 +89,9 @@ export default async function generateWordforms(dataDir, outputDir) {
 
   await processDir(dataDir, filePath => processFile(filePath, frequencies, textSizes), ignore);
 
+  const corpusSize = Array.from(textSizes.values()).reduce((sum, size) => sum + size, 0);
+  console.info(`Size of Corpus: ${corpusSize.toLocaleString()} tokens`);
+
   // text-sizes.tsv
   const textSizesColumns = [`text`, `tokens`];
   const textSizesOptions = Object.assign({ columns: textSizesColumns }, csvOptions);
