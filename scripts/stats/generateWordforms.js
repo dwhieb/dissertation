@@ -1,4 +1,5 @@
 /* eslint-disable
+  max-statements,
   no-await-in-loop,
 */
 
@@ -31,11 +32,20 @@ function countToken({ transcription }, frequencies) {
 }
 
 /**
- * Ignore method which tells recursive-readdir to ignore any non-JSON files
+ * Ignore method which tells recursive-readdir to ignore any non-DLx files
  */
-function ignoreNonJSON(filePath, stats) {
+function ignoreNonDLx(filePath, stats) {
   if (stats.isDirectory()) return false;
+  if (filePath.endsWith(`_wordforms.json`)) return true;
   return path.extname(filePath) !== `.json`;
+}
+
+/**
+ * Ignore all files except JSON files containing wordform frequencies (_wordforms.json)
+ */
+function ignoreNonWordforms(filePath, stats) {
+  if (stats.isDirectory()) return false;
+  return !filePath.endsWith(`_wordforms.json`);
 }
 
 // MAIN
@@ -48,46 +58,60 @@ function ignoreNonJSON(filePath, stats) {
  */
 export default async function generateWordforms(dataDir, outputPath) {
 
-  const corpusWordformFrequencies = new Map;
-  const textSizes                 = new Map;
+  const corpusWordforms = new Map;
+  const textSizes       = new Map;
 
-  const files       = await recurse(dataDir, [ignoreNonJSON]);
-  const progressBar = new ProgressBar(`:bar`, { total: files.length });
+  const dlxFiles               = await recurse(dataDir, [ignoreNonDLx]);
+  const frequenciesProgressBar = new ProgressBar(`:bar`, { total: dlxFiles.length });
 
   console.info(`Calculating raw frequencies`);
 
-  for (const filePath of files) {
+  for (const filePath of dlxFiles) {
 
-    const json                    = await readFile(filePath, `utf8`);
-    const { utterances }          = JSON.parse(json);
-    const textWordformFrequencies = new Map;
+    const json           = await readFile(filePath, `utf8`);
+    const { utterances } = JSON.parse(json);
+    const textWordforms  = new Map;
 
     // increment text and corpus counts for each token in the text
     utterances.forEach(({ words }) => words.forEach(w => {
-      countToken(w, textWordformFrequencies);
-      countToken(w, corpusWordformFrequencies);
+      countToken(w, textWordforms);
+      countToken(w, corpusWordforms);
     }));
 
     const filename = path.basename(filePath, `.json`);
-    const textSize = Array.from(textWordformFrequencies.values()).reduce((sum, count) => sum + count, 0);
+    const textSize = Array.from(textWordforms.values())
+    .reduce((sum, count) => sum + count, 0);
 
     textSizes.set(filename, textSize);
 
-    const textFrequenciesJSON   = JSON.stringify(Object.fromEntries(textWordformFrequencies), null, 2);
+    const textFrequenciesJSON   = JSON.stringify(Object.fromEntries(textWordforms), null, 2);
     const textWordformsFilename = path.join(path.dirname(filePath), `${filename}_wordforms.json`);
     await writeFile(textWordformsFilename, textFrequenciesJSON, `utf8`);
 
-    progressBar.tick();
+    frequenciesProgressBar.tick();
 
   }
 
-  // generate total wordform frequencies file
-  // get the total corpus size
+  const corpusSize = Array.from(corpusWordforms.values())
+  .reduce((sum, count) => sum + count, 0);
+
+  console.info(`\nSize of Corpus: ${corpusSize.toLocaleString()} words\n`);
+
+  const dispersionsProgressBar = new ProgressBar(`:bar`, { total: corpusWordforms.size });
+
+  corpusWordforms.forEach((corpusFrequency, wordform) => {
+
+    // calculate the dispersion of the wordform
+    // swap corpus frequency for an info object with frequency & dispersion properties
+
+    dispersionsProgressBar.tick();
+
+  });
+
   // start a new progress bar
-  // then, for each wordform in the corpus wordforms file, calculate its dispersion
+  // cleanup the text wordform frequency files
   // end progress bar
-  // start a new progress bar
-  // cleanup the text wordform frequency files after
-  // end progress bar
+
+  // generate wordforms file (with total corpus frequencies and dispersions)
 
 }
