@@ -178,7 +178,7 @@ export default async function generateWordforms(dataDir, outputPath) {
   };
 
   const tableData = Array.from(corpusWordforms.entries())
-  .sort(([, { dispersionA }], [, { dispersionB }]) => compare(dispersionA, dispersionB));
+  .map(([wordform, { dispersion, frequency }]) => [wordform, frequency, dispersion]);
 
   // wordforms.tsv
   const wordformsTSV = await json2csv(tableData, csvOptions);
