@@ -14,8 +14,12 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const badCharsRegExp     = /[^A-Za-z]/u;
 
 const nonLexicalTagsPath = path.join(__dirname, `../../data/English/nonLexicalTags.yml`);
-const yaml               = fs.readFileSync(nonLexicalTagsPath, `utf8`); // eslint-disable-line no-sync
-const nonLexicalTags     = YAML.parse(yaml);
+const nonLexicalTagsYAML = fs.readFileSync(nonLexicalTagsPath, `utf8`); // eslint-disable-line no-sync
+const nonLexicalTags     = YAML.parse(nonLexicalTagsYAML);
+
+const blacklistPath      = path.join(__dirname, `../../data/English/blacklist.yml`);
+const blacklistYAML      = fs.readFileSync(blacklistPath, `utf8`); // eslint-disable-line no-sync
+const blacklist          = YAML.parse(blacklistYAML);
 
 // METHODS
 
@@ -31,6 +35,7 @@ function hasBadChars(string) {
  * @return {Boolean}
  */
 function isGoodToken({ tags: { Penn }, transcription }) {
+  if (blacklist.includes(transcription)) return false;
   if (hasBadChars(transcription)) return false;
   if (nonLexicalTags.includes(Penn)) return false;
   return true;
