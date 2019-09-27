@@ -29,7 +29,7 @@
   "scripts": {
     "start": "",
     "abbreviations": "node --experimental-modules --no-warnings scripts/build/abbreviations.js",
-    "anc": "java -Xmx500M -jar scripts/ANC/ANCTool-2.0.0-jar.jar",
+    "anc": "cd scripts/ANC && java -Xmx500M -jar ANCTool-2.0.0-jar.jar && cd ../..",
     "archive": "node --experimental-modules --no-warnings scripts/build/archive.js",
     "bib": "biber src/main",
     "cleanup": "node --experimental-modules --no-warnings scripts/build/cleanup.js",
