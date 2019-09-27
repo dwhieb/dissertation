@@ -120,17 +120,17 @@ To convert the OANC, follow the instructions for using the `tags2dlx` library, w
 
 ## 5. Data Selection
 
-100 archilexemes were selected from each corpus for annotation. These archilexemes were chosen randomly from the set of wordforms in each corpus, by first dividing those wordforms into 100 different bins depending on the corpus dispersion of that wordform (measured using <dfn>Deviation of Proportions</dfn> (<abbr title='Deviation of Proportions'>DP</abbr>)), and then selecting one word randomly from each bin. Words which did not meet the selection criteria were thrown out, and the process was repeated until 100 viable archilexemes were found. (The selection criteria for archilexemes are discussed in the Data & Methods chapter of my dissertation document, available [here][dissertation].)
+100 archilexemes were selected from each corpus for annotation. These archilexemes were chosen randomly from the set of wordforms in each corpus, by first dividing those wordforms into 100 different bins depending on the corpus dispersion of that wordform (measured using <dfn>Deviation of Proportions</dfn> (<abbr title='Deviation of Proportions'>DP</abbr>) [Gries [2008](#Gries2008)]), and then selecting one word randomly from each bin. Words which did not meet the selection criteria were thrown out, and the process was repeated until 100 viable archilexemes were found. The selection criteria for archilexemes are discussed in the Data & Methods chapter of my dissertation document, available [here][dissertation].
 
-To do this, I wrote a script which produces a tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion. In addition, the script prints the total size of the corpus to the console.
+To select the 100 archilexemes, I first wrote a script which produces a tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion. In addition, the script prints the total size of the corpus to the console.
 
 The script can be run on the command line using the following command, where `{input}` is the path to the directory where the JSON corpus is located, and `{output}` is the location where you would like the resulting TSV file generated.
 
 ```cmd
-node --experimental-modules --no-warnings scripts/bin/generateWordforms {input} {output}
+node --experimental-modules --no-warnings scripts/bin/generateWordforms.js {input} {output}
 ```
 
-<!-- script to randomly select words from each dispersion bin -->
+Having generated the list of wordforms and their statistics, I then wrote an R script which bins wordforms based on their corpus dispersions, and generates a list of 100 wordforms (one from each dispersion bin) and saves it to a text file. This script is located in `scripts/stats/selectWordforms.R`. You can adjust the `input_path` and `output_path` variables at the top of the file to point it to the list of wordforms generated above, and the location where you would like the list of selected wordforms, respectively.
 
 ([back to top](#readme))
 
@@ -160,7 +160,9 @@ utterance     | The number of the utterance within the text that the token appea
 
 ## 8. References
 
-* <p id=Adler2010>Adler, Joseph. 2010. <cite>R in a nutshell: A quick desktop reference</cite>. O'Reilly</p>
+* <p id=Adler2010>Adler, Joseph. 2010. <cite>R in a nutshell: A quick desktop reference</cite>. O'Reilly.</p>
+
+* <p id=Gries2008>Gries, Stefan Th. 2008. Dispersions and adjusted frequencies in corpora. <cite>International Journal of Corpus Linguistics</cite> 13(4): 403–437. DOI:<a href=https://doi.org/10.1075/ijcl.13.4.02gri>10.1075/ijcl.13.4.02gri</a>.</p>
 
 ([back to top](#readme))
 
