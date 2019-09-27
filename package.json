@@ -27,7 +27,7 @@
   },
   "type": "module",
   "scripts": {
-    "start": "node --experimental-modules --no-warnings scripts/bin/generateEnglishWordforms.js data/English/data/face-to-face/charlotte wordforms.tsv",
+    "start": "node --experimental-modules --no-warnings scripts/bin/generateEnglishWordforms.js data/English/data data/English/stats/wordforms.tsv",
     "abbreviations": "node --experimental-modules --no-warnings scripts/build/abbreviations.js",
     "anc": "cd scripts/ANC && java -Xmx500M -jar ANCTool-2.0.0-jar.jar && cd ../..",
     "archive": "node --experimental-modules --no-warnings scripts/build/archive.js",
