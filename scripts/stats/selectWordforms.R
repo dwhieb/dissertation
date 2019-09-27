@@ -9,6 +9,9 @@ input_path  <- 'data/English/stats/wordforms.tsv'
 # you would like the list of selected wordforms generated
 output_path <- 'data/English/stats/suggestedWordforms.txt'
 
+# the number of wordforms to suggest
+num_wordforms <- 100
+
 # load data
 data <- read.table(
   input_path,
@@ -19,10 +22,11 @@ data <- read.table(
 )
 
 filteredData      <- data[which(data$frequency >= 3),]
-filteredData$bins <- cut(filteredData$dispersion, breaks = 100)
+filteredData$bins <- cut(filteredData$dispersion, breaks = num_wordforms)
 
 select_wordform_from_bin <- function(bin) {
   observations <- filteredData$wordform[which(filteredData$bins == bin)]
+  print(observations)
   if (length(observations)) return(sample(observations, size = 1))
   else return(NA)
 }
