@@ -10,7 +10,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // CONSTANTS
 
-const badCharsRegExp     = /[^A-Za-z'’]/gu;
+const badCharsRegExp     = /[^A-Za-z'’]/u;
 
 const nonLexicalTagsPath = path.join(__dirname, `../../data/English/nonLexicalTags.yml`);
 const yaml               = fs.readFileSync(nonLexicalTagsPath, `utf8`); // eslint-disable-line no-sync
