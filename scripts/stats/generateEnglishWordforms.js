@@ -31,7 +31,7 @@ function hasBadChars(string) {
  */
 function isGoodToken({ tags: { Penn }, transcription }) {
   if (hasBadChars(transcription)) return false;
-  // if (nonLexicalTags.includes(Penn)) return false;
+  if (nonLexicalTags.includes(Penn)) return false;
   return true;
 }
 
