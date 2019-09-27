@@ -6,11 +6,12 @@ import generateWordforms from './generateWordforms.js';
 import path              from 'path';
 import YAML              from 'yaml';
 
+// eslint-disable-next-line no-shadow
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // CONSTANTS
 
-const badCharsRegExp     = /[^A-Za-z'’]/u;
+const badCharsRegExp     = /[^A-Za-z]/u;
 
 const nonLexicalTagsPath = path.join(__dirname, `../../data/English/nonLexicalTags.yml`);
 const yaml               = fs.readFileSync(nonLexicalTagsPath, `utf8`); // eslint-disable-line no-sync

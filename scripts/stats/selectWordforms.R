@@ -7,11 +7,11 @@ input_path  <- 'data/English/stats/wordforms.tsv'
 
 # update this variable to point to the location where
 # you would like the list of selected wordforms generated
-output_path <- 'data/English/stats/selectedWordforms.txt'
+output_path <- 'data/English/stats/suggestedWordforms.txt'
 
 # load data
 data <- read.table(
-  file_path,
+  input_path,
   colClasses = c('character', 'integer', 'numeric'),
   header     = TRUE,
   quote      = '',
