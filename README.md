@@ -26,9 +26,8 @@ The process of obtaining the results from this study, as in all empirical scient
 1. data selection
 1. [data collection](#3-data-collection)
 1. [data preparation](#4-data-preparation)
-1. [data selection](#5-data-selection) (again)
-1. [data annotation](#6-data-annotation)
-1. [data analysis](#7-data-analysis)
+1. [data annotation](#5-data-annotation)
+1. [data analysis](#6-data-analysis)
 1. reporting results
 
 There are not always clear boundaries between each stage (for example, a data selection step occurs at several places), but the above steps nonetheless provide a useful overview of the process.
@@ -65,7 +64,7 @@ Once you have cloned this repository and installed npm and Node, install the nec
 
 ## 3. Data Collection
 
-As mentioned above, all the data in this study are publicly available. This section presents the necessary steps for obtaining that data. Note that this repository does not contain the primary data itself, just annotations, statistics, and other derived versions of that data. The primary data itself lives in various places online, described below.
+As mentioned above, all the data in this study are publicly available. This section presents the necessary steps for obtaining that data. Note that this repository does not contain the primary data itself, just annotations, statistics, and other derived versions of that data. The primary data lives in various places online, described below.
 
 The data used for the investigation of English come from the [Open American National Corpus][OANC] (<abbr title='Open American National Corpus'>OANC</abbr>), a 15 million word corpus whose data are entirely open access. Since the data from other languages in this study are all from spoken texts, I elected to use just the spoken portion of the OANC, totaling 3,217,772 tokens. This spoken portion of the OANC is actually composed of two distinct subcorpora—the [Charlotte Narrative & Conversation Collection][Charlotte] (<abbr title='Charlotte Narrative &amp; Conversation Collection'>CNCC</abbr> or simply "the Charlotte corpus") and the [Switchboard Corpus][Switchboard]. More details about the Charlotte corpus may be found [here][Charlotte], and the Switchboard corpus [here][Switchboard].
 
@@ -118,23 +117,28 @@ To convert the OANC, follow the instructions for using the `tags2dlx` library, w
 
 ([back to top](#readme))
 
-## 5. Data Selection
+## 5. Data Annotation
+
+### Selecting Words for Annotation
 
 100 archilexemes were selected from each corpus for annotation. These archilexemes were chosen randomly from the set of wordforms in each corpus, by first dividing those wordforms into 100 different bins depending on the corpus dispersion of that wordform (measured using <dfn>Deviation of Proportions</dfn> (<abbr title='Deviation of Proportions'>DP</abbr>) [Gries [2008](#Gries2008)]), and then selecting one word randomly from each bin. Words which did not meet the selection criteria were thrown out, and the process was repeated until 100 viable archilexemes were found. The selection criteria for archilexemes are discussed in the Data & Methods chapter of my dissertation document, available [here][dissertation].
 
-To select the 100 archilexemes, I first wrote a script which produces a tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion. In addition, the script prints the total size of the corpus to the console.
-
-The script can be run on the command line using the following command, where `{input}` is the path to the directory where the JSON corpus is located, and `{output}` is the location where you would like the resulting TSV file generated.
+To select the 100 archilexemes, I first wrote a script which produces a tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion. In addition, the script prints the total size of the corpus to the console. This script is located in the file `scripts/bin/generateWordforms.js`, and can be run on the command line using the following command, where `{input}` is the path to the directory where the JSON corpus is located, and `{output}` is the location where you would like the resulting TSV file generated.
 
 ```cmd
 node --experimental-modules --no-warnings scripts/bin/generateWordforms.js {input} {output}
 ```
 
-Having generated the list of wordforms and their statistics, I then wrote an R script which bins wordforms based on their corpus dispersions, and generates a list of 100 wordforms (one from each dispersion bin) and saves it to a text file. This script is located in `scripts/stats/selectWordforms.R`. You can adjust the `input_path` and `output_path` variables at the top of the file to point it to the list of wordforms generated above, and the location where you would like the list of selected wordforms, respectively.
+However, this script by itself does not filter the data in any way. The list of wordforms it generates includes many that are unnecessary for this study. To make the task of selecting words for annotation easier, I therefore created one script for each corpus in this study, which filters out unwanted tokens from the resulting list of wordforms (without affecting the calculation of dispersion). The scripts for each language can be run as follows:
 
-([back to top](#readme))
+```cmd
+node --experimental-modules --no-warnings scripts/bin/generateEnglishWordforms.js {input} {output}
+node --experimental-modules --no-warnings scripts/bin/generateNuuchWordforms.js {input} {output}
+```
 
-## 6. Data Annotation
+Having generated the list of wordforms and their statistics, I then wrote an R script which bins wordforms based on their corpus dispersions, and generates a list of 100 wordforms (one from each dispersion bin) and saves it to a text file. This script is located in `scripts/stats/selectWordforms.R`. You can adjust the `input_path` and `output_path` variables at the top of the file to point it to the lists of wordforms generated above, and the location where you would like the list of selected wordforms to be generated, respectively.
+
+### The Annotations File
 
 The annotations on the data used in this study are <dfn>stand-off</dfn> or <dfn>standalone</dfn> annotations—that is, annotations which live in a separate file, and contain information about the original utterances they apply to. For this project, I stored the annotations in basic tab-separated files (`.tsv`), making it easy to add and edit annotations using spreadsheet software such as [Microsoft Excel][Excel] or [Apache OpenOffice Calc][OpenOffice], among others. All annotations were placed in a single large spreadsheet, with the language of each annotation / observation indicated.
 

@@ -36,6 +36,14 @@ function countToken({ transcription }, frequencies) {
 }
 
 /**
+ * A no-op filter function for use with Array#filter
+ * @return {Boolean} Always returns true
+ */
+function filter() {
+  return true;
+}
+
+/**
  * Ignore method which tells recursive-readdir to ignore any non-DLx files
  */
 function ignore(filePath, stats) {
@@ -48,12 +56,14 @@ function ignore(filePath, stats) {
 
 /**
  * Generates a tab-delimited file of raw frequencies and dispersions for each wordform in the corpus
- * @param  {String} dataDir    The directory of JSON files to calculate frequencies for
- * @param  {String} outputPath The path to the file to generate
+ * @param  {String}   dataDir        The directory of JSON files to calculate frequencies for
+ * @param  {String}   outputPath     The path to the file to generate
+ * @param  {Function} filterFunction A filter function which accepts a DLx Word Token, and returns true to keep the word, false otherwise. Excluded words will be included in frequency counts, but not the final list of generated wordforms.
  * @return {Promise}
  */
-export default async function generateWordforms(dataDir, outputPath) {
+export default async function generateWordforms(dataDir, outputPath, filterFunction = filter) {
 
+  let   corpusSize      = 0;
   const corpusWordforms = new Map;
   const texts           = new Map;
 
@@ -70,16 +80,27 @@ export default async function generateWordforms(dataDir, outputPath) {
     const json           = await readFile(filePath, `utf8`);
     const { utterances } = JSON.parse(json);
     const textWordforms  = new Map;
+    let   textSize       = 0;
 
     // increment text and corpus counts for each token in the text
-    utterances.forEach(({ words }) => words.forEach(w => {
-      countToken(w, textWordforms);
-      countToken(w, corpusWordforms);
-    }));
+    // filter out unwanted data (using provided filter function)
+    // add remaining data to corpus and text wordforms Maps
+    // eslint-disable-next-line no-loop-func
+    utterances.forEach(({ words }) => {
+
+      corpusSize += words.length;
+      textSize   += words.length;
+
+      words
+      .filter(filterFunction)
+      .forEach(w => {
+        countToken(w, textWordforms);
+        countToken(w, corpusWordforms);
+      });
+
+    });
 
     const filename = path.basename(filePath, `.json`);
-    const textSize = Array.from(textWordforms.values())
-    .reduce((sum, count) => sum + count, 0);
 
     texts.set(filename, {
       rawSize:   textSize,
@@ -93,11 +114,7 @@ export default async function generateWordforms(dataDir, outputPath) {
 
   // CORPUS SIZE
 
-  const corpusSize = Array.from(corpusWordforms.values())
-  .reduce((sum, count) => sum + count, 0);
-
   console.info(`\nSize of Corpus: ${corpusSize.toLocaleString()} words\n`);
-
 
   // RELATIVE TEXT SIZES
 
@@ -144,7 +161,8 @@ export default async function generateWordforms(dataDir, outputPath) {
     }, new Map);
 
     // sum of the absolute differences calculated above
-    const sumDifferences = Array.from(differences.values()).reduce((sum, count) => sum + count, 0);
+    const sumDifferences = Array.from(differences.values())
+    .reduce((sum, count) => sum + count, 0);
 
     // measure of corpus dispersion (Deviation of Proportions (DP))
     const dispersion = sumDifferences / 2;
