@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import generateEnglishWordforms from '../stats/generateEnglishWordforms.js';
+import generateEnglishWordforms from '../scripts/generateEnglishWordforms.js';
 
 const [,, dataDir, outputPath] = process.argv;
 
