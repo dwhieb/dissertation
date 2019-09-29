@@ -26,7 +26,7 @@ filteredData$bins <- cut(filteredData$dispersion, breaks = num_wordforms)
 
 select_wordform_from_bin <- function(bin) {
   observations <- filteredData$wordform[which(filteredData$bins == bin)]
-  print(observations)
+  # print(observations)
   if (length(observations)) return(sample(observations, size = 1))
   else return(NA)
 }

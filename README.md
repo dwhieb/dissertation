@@ -132,11 +132,11 @@ node --experimental-modules --no-warnings scripts/bin/generateWordforms.js {inpu
 However, this script by itself does not filter the data in any way. The list of wordforms it generates includes many that are unnecessary for this study. To make the task of selecting words for annotation easier, I therefore created one script for each corpus in this study, which filters out unwanted tokens from the resulting list of wordforms (without affecting the calculation of dispersion). The scripts for each language can be run as follows:
 
 ```cmd
-node --experimental-modules --no-warnings scripts/bin/generateEnglishWordforms.js {input} {output}
-node --experimental-modules --no-warnings scripts/bin/generateNuuchWordforms.js {input} {output}
+node --experimental-modules --no-warnings data/English/bin/generateEnglishWordforms.js {input} {output}
+node --experimental-modules --no-warnings data/Nuuchahnulth/bin/generateNuuchWordforms.js {input} {output}
 ```
 
-The script for English relies on two files: `blacklist.yml` and `nonLexicalTags.yml`, both located in the `data/English` folder. The `blacklist.yml` file contains a list of wordforms that should not be included in the list of wordforms (but again, without affecting calculation of dispersion, or the overall reported corpus frequency). Similarly, the `nonLexicalTags.yml` file contains Penn tags which should be excluded from the resulting wordlist. You can update either of these files to change the words which are filtered out of the English data.
+The script for English relies on two files: `blacklist.yml` and `nonLexicalTags.yml`, both located in the `data/English/constants` folder. The `blacklist.yml` file contains a list of wordforms that should not be included in the list of wordforms (but again, without affecting calculation of dispersion, or the overall reported corpus frequency). Similarly, the `nonLexicalTags.yml` file contains Penn tags which should be excluded from the resulting wordlist. You can update either of these files to change the words which are filtered out of the English data.
 
 Having generated the list of wordforms and their statistics, I then wrote an R script which bins wordforms based on their corpus dispersions, and generates a list of 100 suggested wordforms (one from each dispersion bin) and saves it to a text file. This script is located in `scripts/stats/selectWordforms.R`. You can adjust the `input_path` and `output_path` variables at the top of the file to point it to the lists of wordforms generated above, and the location where you would like the list of selected wordforms to be generated, respectively.
 
@@ -148,19 +148,55 @@ The final list of 100 archilexemes was created manually, and is located in `data
 
 The annotations on the data used in this study are <dfn>stand-off</dfn> or <dfn>standalone</dfn> annotations—that is, annotations which live in a separate file, and contain information about the original utterances they apply to. For this project, I stored the annotations in basic tab-separated files (`.tsv`), making it easy to add and edit annotations using spreadsheet software such as [Microsoft Excel][Excel] or [Apache OpenOffice Calc][OpenOffice], among others. All annotations were placed in a single large spreadsheet, with the language of each annotation / observation indicated.
 
-The columns included in the annotation spreadsheet are below.
+The columns included in the annotation spreadsheet are below. The annotations spreadsheet followed a Keyword-in-Context (KWIC) format, allowing me to see the immediately preceding and following context for each token.
 
 Column Name   | Description
 ------------- | -----------
 language      | The ISO 639-3 code for the language of this observation.
-token         | A transcription of the word token being annotated. This may also be called the <dfn>wordform</dfn>. It does not include any prosodic markup or punctuation.
-lexeme        | The headword representing the lexeme that this word token belongs to. For homonymous lexemes, a trailing number is sometimes added (for example, `house1`, `house2`).
-archilexeme   | The archilexeme that this word token and lexeme belongs to.
-function      | The discourse function of this word token. This must have a value of `R` (reference), `P`, (predication), or `M` (modification).
-transcription | A transcription of the utterance that the word token appears in, without prosodic markup or punctuation.
-translation   | A translation of the utterance that the word token appears in. This was not included for English data.
 text          | The name of the text that the token appears in.
 utterance     | The number of the utterance within the text that the token appears in. (Numbering starts at 1.)
+word          | The number of the word within the utterance that the token appears in. (Numbering starts at 1.)
+archilexeme   | The archilexeme that this word token and lexeme belongs to.
+lexeme        | The headword representing the lexeme that this word token belongs to. For homonymous lexemes, a trailing number is sometimes added (for example, `house1`, `house2`).
+function      | The discourse function of this word token. This must have a value of `R` (reference), `P`, (predication), or `M` (modification).
+pre           | The words in the utterance preceding the token.
+token         | A transcription of the word token being annotated. This may also be called the <dfn>wordform</dfn>. It does not include any prosodic markup or punctuation.
+post          | The words in the utterance following the token.
+translation   | A translation of the utterance that the word token appears in. This was not included for English data.
+
+Rather than copy-paste each token and its surrounding context into this spreadsheet, I utilized the [DLx concordance library][dlx-concordance], a tool I wrote and published which takes a list of wordforms, finds every instance of those wordforms in a corpus, and generates a tab-delimited list of tokens in Keyword-in-Context format.
+
+In preparation for generating this file, I first created a list of every possible inflected wordform of the 100 archilexemes that were selected for annotation. Morphologically derived forms were not included, but suppletive inflections variants were included. Thus for the archilexeme _know_, I included the following wordforms:
+
+- _knew_
+- _know_
+- _knowing_
+- _known_
+- _knows_
+
+Some of these wordforms also function as morphologically derived words. This is a function of the fact that certain morphemes in English, like _‑ing_, have both inflectional and derivational uses. To be thorough I had to begin by including both inflectional and derivational uses in the list of tokens to annotate. However, when a derivational use of one of these words was encountered, I manually removed it from the data, since this study is focused on only morphologically unmarked derivation, i.e. conversion.
+
+I also had to include some seemingly unusual wordforms in this list. For example, the forms of the archilexeme _one_ are as follows:
+
+- _one_
+- _ones_
+- _oned_
+- _oning_ (possible spelling variant of _onning_)
+- _onning_
+
+Including the strange-looking verbal forms of _one_ allow the script to find any potential predicative uses of the word _one_ in addition to modificational or referential uses. While there are no such predicative uses of _one_ in the OANC, examples can easily be found online, such as the following:
+
+> What might be if we were **Oned**? United, as we would say (David Grieve, _Love in thin places_)
+
+Therefore it was necessary to construct the list of wordforms to annotate as inclusively as possible, in order to be open to the possibility of finding even seemingly unlikely or impossible cases of conversion.
+
+For English, I did not have to included possessive forms in the list of wordforms because `'s` is tokenized as a separate word by the OANC.
+
+The resulting list of English wordforms to annotate is located in `data/English/stats/selectedWordforms.txt`.
+
+### The Annotation Process
+
+Some of the archilexemes I investigated encompass more than one historically unrelated sense. For example, the two primary senses of the English word _like_—'be pleasing' and 'be similar'—are historically unrelated. In these cases, I chose one of the historical forms and annotated only uses relating to that form, removing tokens of any other words from the data. I tried to choose the more frequent use in each case.
 
 ([back to top](#readme))
 
@@ -195,20 +231,21 @@ Add copyright and license for each section of this repository
   - [ ] my scripts (MIT license)
 
 <!-- Links -->
-[ANC-Tool]:      http://www.anc.org/software/anc-tool/
-[Charlotte]:     https://newsouthvoices.uncc.edu
-[cloning]:       https://help.github.com/en/articles/cloning-a-repository
-[Daffodil]:      https://format.digitallinguistics.io/
-[dissertation]:  https://files.danielhieber.com/publications/dissertation.pdf
-[Excel]:         https://products.office.com/en-us/excel
-[GitHub]:        https://github.com/dwhieb/dissertation
-[Java]:          https://www.java.com
-[JSON]:          http://json.org/
-[Node]:          https://nodejs.org/
-[npm]:           https://www.npmjs.com/
-[OANC]:          http://www.anc.org/
-[OANC-download]: http://www.anc.org/data/oanc/download/
-[OpenOffice]:    http://www.openoffice.org/product/calc.html
-[Scription]:     https://scription.digitallinguistics.io/
-[Switchboard]:   https://catalog.ldc.upenn.edu/LDC97S62
-[tags2dlx]:      https://github.com/digitallinguistics/tags2dlx
+[ANC-Tool]:         http://www.anc.org/software/anc-tool/
+[Charlotte]:        https://newsouthvoices.uncc.edu
+[cloning]:          https://help.github.com/en/articles/cloning-a-repository
+[Daffodil]:         https://format.digitallinguistics.io/
+[dissertation]:     https://files.danielhieber.com/publications/dissertation.pdf
+[dlx-concordance]:  https://github.com/digitallinguistics/concordance/
+[Excel]:            https://products.office.com/en-us/excel
+[GitHub]:           https://github.com/dwhieb/dissertation
+[Java]:             https://www.java.com
+[JSON]:             http://json.org/
+[Node]:             https://nodejs.org/
+[npm]:              https://www.npmjs.com/
+[OANC]:             http://www.anc.org/
+[OANC-download]:    http://www.anc.org/data/oanc/download/
+[OpenOffice]:       http://www.openoffice.org/product/calc.html
+[Scription]:        https://scription.digitallinguistics.io/
+[Switchboard]:      https://catalog.ldc.upenn.edu/LDC97S62
+[tags2dlx]:         https://github.com/digitallinguistics/tags2dlx

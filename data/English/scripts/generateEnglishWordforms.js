@@ -2,7 +2,7 @@
 
 import { fileURLToPath } from 'url';
 import fs                from 'fs';
-import generateWordforms from './generateWordforms.js';
+import generateWordforms from '../../../scripts/stats/generateWordforms.js';
 import path              from 'path';
 import YAML              from 'yaml';
 
@@ -13,11 +13,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const badCharsRegExp     = /[^A-Za-z]/u;
 
-const nonLexicalTagsPath = path.join(__dirname, `../../data/English/nonLexicalTags.yml`);
+const nonLexicalTagsPath = path.join(__dirname, `../constants/nonLexicalTags.yml`);
 const nonLexicalTagsYAML = fs.readFileSync(nonLexicalTagsPath, `utf8`); // eslint-disable-line no-sync
 const nonLexicalTags     = YAML.parse(nonLexicalTagsYAML);
 
-const blacklistPath      = path.join(__dirname, `../../data/English/blacklist.yml`);
+const blacklistPath      = path.join(__dirname, `../constants/English/blacklist.yml`);
 const blacklistYAML      = fs.readFileSync(blacklistPath, `utf8`); // eslint-disable-line no-sync
 const blacklist          = YAML.parse(blacklistYAML);
 
