@@ -119,6 +119,8 @@ To convert the OANC, follow the instructions for using the `tags2dlx` library, w
 
 ## 5. Data Annotation
 
+This section covers the technical steps involved in the process of annotating the data for this study.
+
 ### Selecting Words for Annotation
 
 100 archilexemes were selected from each corpus for annotation. These archilexemes were chosen randomly from the set of wordforms in each corpus, by first dividing those wordforms into 100 different bins depending on the corpus dispersion of that wordform (measured using <dfn>Deviation of Proportions</dfn> (<abbr title='Deviation of Proportions'>DP</abbr>) [Gries [2008](#Gries2008)]), and then selecting one word randomly from each bin. Words which did not meet the selection criteria were thrown out, and the process was repeated until 100 viable archilexemes were found. The selection criteria for archilexemes are discussed in the Data & Methods chapter of my dissertation document, available [here][dissertation].
@@ -138,11 +140,41 @@ node --experimental-modules --no-warnings data/Nuuchahnulth/bin/generateNuuchWor
 
 The script for English relies on two files: `blacklist.yml` and `nonLexicalTags.yml`, both located in the `data/English/constants` folder. The `blacklist.yml` file contains a list of wordforms that should not be included in the list of wordforms (but again, without affecting calculation of dispersion, or the overall reported corpus frequency). Similarly, the `nonLexicalTags.yml` file contains Penn tags which should be excluded from the resulting wordlist. You can update either of these files to change the words which are filtered out of the English data.
 
+---
+
 Having generated the list of wordforms and their statistics, I then wrote an R script which bins wordforms based on their corpus dispersions, and generates a list of 100 suggested wordforms (one from each dispersion bin) and saves it to a text file. This script is located in `scripts/stats/selectWordforms.R`. You can adjust the `input_path` and `output_path` variables at the top of the file to point it to the lists of wordforms generated above, and the location where you would like the list of selected wordforms to be generated, respectively.
 
 Finally, I used this list of suggested wordforms to pick which archilexemes I wanted to annotate. If a suggested wordform didn't meet the selection criteria, I added it to `blacklist.yml` and regenerated the list of wordforms. Occasionally, in the higher frequencies, there were no wordforms in that dispersion bin. When this happened, I selected a word from the next lowest dispersion bin, with the result that a few bins are represented more than once in the annotated data.
 
 The final list of 100 archilexemes was created manually, and is located in `data/English/stats/selectedArchilexemes.txt`.
+
+After this was done, I next created a list of every possible inflected wordform of the 100 archilexemes that were selected for annotation. Morphologically derived forms were not included, but suppletive inflections variants were included. Thus for the archilexeme _know_, I included the following wordforms:
+
+- _knew_
+- _know_
+- _knowing_
+- _known_
+- _knows_
+
+Some of these wordforms also function as morphologically derived words. This is a function of the fact that certain morphemes in English, like _‑ing_, have both inflectional and derivational uses. To be thorough I had to begin by including both inflectional and derivational uses in the list of tokens to annotate. However, when a derivational use of one of these words was encountered, I manually removed it from the data, since this study is focused on only morphologically unmarked derivation, i.e. conversion.
+
+I also had to include some seemingly unusual wordforms in this list. For example, the forms of the archilexeme _one_ are as follows:
+
+- _one_
+- _ones_
+- _oned_
+- _oning_
+- _onning_
+
+Including the strange-looking verbal forms of _one_ allow the script to find any potential predicative uses of the word _one_ in addition to modificational or referential uses. While there are no such predicative uses of _one_ in the OANC, examples can easily be found online, such as the following:
+
+> What might be if we were **Oned**? United, as we would say (David Grieve, _Love in thin places_)
+
+Therefore it was necessary to construct the list of wordforms to annotate as inclusively as possible, in order to be open to the possibility of finding even seemingly unlikely or impossible cases of conversion.
+
+For English, I did not have to included possessive forms in the list of wordforms because `'s` is tokenized as a separate word by the OANC.
+
+The resulting list of English wordforms to annotate is located in `data/English/stats/selectedWordforms.txt`.
 
 ### The Annotations File
 
@@ -164,35 +196,9 @@ token         | A transcription of the word token being annotated. This may also
 post          | The words in the utterance following the token.
 translation   | A translation of the utterance that the word token appears in. This was not included for English data.
 
-Rather than copy-paste each token and its surrounding context into this spreadsheet, I utilized the [DLx concordance library][dlx-concordance], a tool I wrote and published which takes a list of wordforms, finds every instance of those wordforms in a corpus, and generates a tab-delimited list of tokens in Keyword-in-Context format.
+Rather than copy-paste each token and its surrounding context into this spreadsheet, I utilized the [DLx concordance library][dlx-concordance], a tool I wrote and published which takes a list of wordforms, finds every instance of those wordforms in a corpus, and generates a tab-delimited list of tokens in Keyword-in-Context format. In this repository, the script `scripts/stats/generateConcordance.js` runs the DLx concordance library on the list of selected wordforms from the `selectedWordforms.txt` file (see [Selecting Words for Annotation](#selecting-words-for-annotation) above).
 
-In preparation for generating this file, I first created a list of every possible inflected wordform of the 100 archilexemes that were selected for annotation. Morphologically derived forms were not included, but suppletive inflections variants were included. Thus for the archilexeme _know_, I included the following wordforms:
-
-- _knew_
-- _know_
-- _knowing_
-- _known_
-- _knows_
-
-Some of these wordforms also function as morphologically derived words. This is a function of the fact that certain morphemes in English, like _‑ing_, have both inflectional and derivational uses. To be thorough I had to begin by including both inflectional and derivational uses in the list of tokens to annotate. However, when a derivational use of one of these words was encountered, I manually removed it from the data, since this study is focused on only morphologically unmarked derivation, i.e. conversion.
-
-I also had to include some seemingly unusual wordforms in this list. For example, the forms of the archilexeme _one_ are as follows:
-
-- _one_
-- _ones_
-- _oned_
-- _oning_ (possible spelling variant of _onning_)
-- _onning_
-
-Including the strange-looking verbal forms of _one_ allow the script to find any potential predicative uses of the word _one_ in addition to modificational or referential uses. While there are no such predicative uses of _one_ in the OANC, examples can easily be found online, such as the following:
-
-> What might be if we were **Oned**? United, as we would say (David Grieve, _Love in thin places_)
-
-Therefore it was necessary to construct the list of wordforms to annotate as inclusively as possible, in order to be open to the possibility of finding even seemingly unlikely or impossible cases of conversion.
-
-For English, I did not have to included possessive forms in the list of wordforms because `'s` is tokenized as a separate word by the OANC.
-
-The resulting list of English wordforms to annotate is located in `data/English/stats/selectedWordforms.txt`.
+If you would like to generate a concordance of different words, or for a different corpus, follow the instructions for the DLx concordance library, located [here][dlx-concordance].
 
 ### The Annotation Process
 
