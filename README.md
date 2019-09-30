@@ -174,7 +174,7 @@ Therefore it was necessary to construct the list of wordforms to annotate as inc
 
 For English, I did not have to included possessive forms in the list of wordforms because `'s` is tokenized as a separate word by the OANC.
 
-The resulting list of English wordforms to annotate is located in `data/English/stats/selectedWordforms.txt`.
+The resulting list of English wordforms to annotate is located in `data/English/stats/selectedWordforms.json`.
 
 ### The Annotations File
 
@@ -196,9 +196,17 @@ token         | A transcription of the word token being annotated. This may also
 post          | The words in the utterance following the token.
 translation   | A translation of the utterance that the word token appears in. This was not included for English data.
 
-Rather than copy-paste each token and its surrounding context into this spreadsheet, I utilized the [DLx concordance library][dlx-concordance], a tool I wrote and published which takes a list of wordforms, finds every instance of those wordforms in a corpus, and generates a tab-delimited list of tokens in Keyword-in-Context format. In this repository, the script `scripts/stats/generateConcordance.js` runs the DLx concordance library on the list of selected wordforms from the `selectedWordforms.txt` file (see [Selecting Words for Annotation](#selecting-words-for-annotation) above).
+Rather than copy-paste each token and its surrounding context into this spreadsheet, I utilized the [DLx concordance library][dlx-concordance], a tool I wrote and published which takes a list of wordforms, finds every instance of those wordforms in a corpus, and generates a tab-delimited list of tokens in Keyword-in-Context format. You can run this script on the command line as follows:
 
-If you would like to generate a concordance of different words, or for a different corpus, follow the instructions for the DLx concordance library, located [here][dlx-concordance].
+```cmd
+node node_modules/@digitallinguistics/concordance/concordance.js --dir={directory} --kwic --outputPath={output path} --wordlist={wordlist}
+```
+
+In this command, `{directory}` is the path to the directory where the corpus is located, `--kwic` indicates that the concordance should be generated in Keyword-in-Context format, `{output path}` is the path where you would like the concordance file generated, and `{wordlist}` is the path to the JSON file containing an array of wordforms to concordance (the `selectedWordforms.json` file generated in the previous section).
+
+In this repository, the resulting concordance files are stored in `data/English/tokens.tsv` and `data/Nuuchahnulth/tokens.tsv` respectively.
+
+You can generate a concordance using a different corpus, list of words, or other options by following the usage instructions for the [DLx concordance library][dlx-concordance].
 
 ### The Annotation Process
 
