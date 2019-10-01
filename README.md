@@ -119,6 +119,8 @@ To convert the OANC, follow the instructions for using the `tags2dlx` library, w
 
 ## 5. Data Annotation
 
+This section covers the technical steps involved in the process of annotating the data for this study.
+
 ### Selecting Words for Annotation
 
 100 archilexemes were selected from each corpus for annotation. These archilexemes were chosen randomly from the set of wordforms in each corpus, by first dividing those wordforms into 100 different bins depending on the corpus dispersion of that wordform (measured using <dfn>Deviation of Proportions</dfn> (<abbr title='Deviation of Proportions'>DP</abbr>) [Gries [2008](#Gries2008)]), and then selecting one word randomly from each bin. Words which did not meet the selection criteria were thrown out, and the process was repeated until 100 viable archilexemes were found. The selection criteria for archilexemes are discussed in the Data & Methods chapter of my dissertation document, available [here][dissertation].
@@ -138,35 +140,15 @@ node --experimental-modules --no-warnings data/Nuuchahnulth/bin/generateNuuchWor
 
 The script for English relies on two files: `blacklist.yml` and `nonLexicalTags.yml`, both located in the `data/English/constants` folder. The `blacklist.yml` file contains a list of wordforms that should not be included in the list of wordforms (but again, without affecting calculation of dispersion, or the overall reported corpus frequency). Similarly, the `nonLexicalTags.yml` file contains Penn tags which should be excluded from the resulting wordlist. You can update either of these files to change the words which are filtered out of the English data.
 
+---
+
 Having generated the list of wordforms and their statistics, I then wrote an R script which bins wordforms based on their corpus dispersions, and generates a list of 100 suggested wordforms (one from each dispersion bin) and saves it to a text file. This script is located in `scripts/stats/selectWordforms.R`. You can adjust the `input_path` and `output_path` variables at the top of the file to point it to the lists of wordforms generated above, and the location where you would like the list of selected wordforms to be generated, respectively.
 
 Finally, I used this list of suggested wordforms to pick which archilexemes I wanted to annotate. If a suggested wordform didn't meet the selection criteria, I added it to `blacklist.yml` and regenerated the list of wordforms. Occasionally, in the higher frequencies, there were no wordforms in that dispersion bin. When this happened, I selected a word from the next lowest dispersion bin, with the result that a few bins are represented more than once in the annotated data.
 
 The final list of 100 archilexemes was created manually, and is located in `data/English/stats/selectedArchilexemes.txt`.
 
-### The Annotations File
-
-The annotations on the data used in this study are <dfn>stand-off</dfn> or <dfn>standalone</dfn> annotations—that is, annotations which live in a separate file, and contain information about the original utterances they apply to. For this project, I stored the annotations in basic tab-separated files (`.tsv`), making it easy to add and edit annotations using spreadsheet software such as [Microsoft Excel][Excel] or [Apache OpenOffice Calc][OpenOffice], among others. All annotations were placed in a single large spreadsheet, with the language of each annotation / observation indicated.
-
-The columns included in the annotation spreadsheet are below. The annotations spreadsheet followed a Keyword-in-Context (KWIC) format, allowing me to see the immediately preceding and following context for each token.
-
-Column Name   | Description
-------------- | -----------
-language      | The ISO 639-3 code for the language of this observation.
-text          | The name of the text that the token appears in.
-utterance     | The number of the utterance within the text that the token appears in. (Numbering starts at 1.)
-word          | The number of the word within the utterance that the token appears in. (Numbering starts at 1.)
-archilexeme   | The archilexeme that this word token and lexeme belongs to.
-lexeme        | The headword representing the lexeme that this word token belongs to. For homonymous lexemes, a trailing number is sometimes added (for example, `house1`, `house2`).
-function      | The discourse function of this word token. This must have a value of `R` (reference), `P`, (predication), or `M` (modification).
-pre           | The words in the utterance preceding the token.
-token         | A transcription of the word token being annotated. This may also be called the <dfn>wordform</dfn>. It does not include any prosodic markup or punctuation.
-post          | The words in the utterance following the token.
-translation   | A translation of the utterance that the word token appears in. This was not included for English data.
-
-Rather than copy-paste each token and its surrounding context into this spreadsheet, I utilized the [DLx concordance library][dlx-concordance], a tool I wrote and published which takes a list of wordforms, finds every instance of those wordforms in a corpus, and generates a tab-delimited list of tokens in Keyword-in-Context format.
-
-In preparation for generating this file, I first created a list of every possible inflected wordform of the 100 archilexemes that were selected for annotation. Morphologically derived forms were not included, but suppletive inflections variants were included. Thus for the archilexeme _know_, I included the following wordforms:
+After this was done, I next created a list of every possible inflected wordform of the 100 archilexemes that were selected for annotation. Morphologically derived forms were not included, but suppletive inflections variants were included. Thus for the archilexeme _know_, I included the following wordforms:
 
 - _knew_
 - _know_
@@ -181,7 +163,7 @@ I also had to include some seemingly unusual wordforms in this list. For example
 - _one_
 - _ones_
 - _oned_
-- _oning_ (possible spelling variant of _onning_)
+- _oning_
 - _onning_
 
 Including the strange-looking verbal forms of _one_ allow the script to find any potential predicative uses of the word _one_ in addition to modificational or referential uses. While there are no such predicative uses of _one_ in the OANC, examples can easily be found online, such as the following:
@@ -192,7 +174,40 @@ Therefore it was necessary to construct the list of wordforms to annotate as inc
 
 For English, I did not have to included possessive forms in the list of wordforms because `'s` is tokenized as a separate word by the OANC.
 
-The resulting list of English wordforms to annotate is located in `data/English/stats/selectedWordforms.txt`.
+The resulting list of English wordforms to annotate is located in `data/English/stats/selectedWordforms.json`.
+
+### The Annotations File
+
+The annotations on the data used in this study are <dfn>stand-off</dfn> or <dfn>standalone</dfn> annotations—that is, annotations which live in a separate file, and contain information about the original utterances they apply to. For this project, I stored the annotations in basic tab-separated files (`.tsv`), making it easy to add and edit annotations using spreadsheet software such as [Microsoft Excel][Excel] or [Apache OpenOffice Calc][OpenOffice], among others. All annotations were placed in a single large spreadsheet, with the language of each annotation / observation indicated.
+
+The columns included in the annotation spreadsheet are below. The annotations spreadsheet followed a Keyword-in-Context (KWIC) format, allowing me to see the immediately preceding and following context for each token.
+
+Column Name   | Description
+------------- | -----------
+language      | The ISO 639-3 code for the language of this observation.
+text          | The name of the text that the token appears in.
+utterance     | The number of the utterance within the text that the token appears in. (Numbering starts at 1.)
+word          | The number of the word within the utterance that the token appears in. (Numbering starts at 1.)
+archilexeme   | The archilexeme that this word token and lexeme belongs to.
+function      | The discourse function of this word token. This must have a value of `R` (reference), `P`, (predication), or `M` (modification).
+pre           | The words in the utterance preceding the token.
+token         | A transcription of the word token being annotated. This may also be called the <dfn>wordform</dfn>. It does not include any prosodic markup or punctuation.
+post          | The words in the utterance following the token.
+translation   | A translation of the utterance that the word token appears in. This was not included for English data.
+
+<!-- lexeme        | The headword representing the lexeme that this word token belongs to. For homonymous lexemes, a trailing number is sometimes added (for example, `house1`, `house2`). -->
+
+Rather than copy-paste each token and its surrounding context into this spreadsheet, I utilized the [DLx concordance library][dlx-concordance], a tool I wrote and published which takes a list of wordforms, finds every instance of those wordforms in a corpus, and generates a tab-delimited list of tokens in Keyword-in-Context format. You can run this script on the command line as follows:
+
+```cmd
+node node_modules/@digitallinguistics/concordance/concordance.js --dir={directory} --KWIC --outputPath={output path} --wordlist={wordlist}
+```
+
+In this command, `{directory}` is the path to the directory where the corpus is located, `--KWIC` indicates that the concordance should be generated in Keyword-in-Context format, `{output path}` is the path where you would like the concordance file generated, and `{wordlist}` is the path to the JSON file containing an array of wordforms to concordance (the `selectedWordforms.json` file generated in the previous section).
+
+In this repository, the resulting concordance files are stored in `data/English/tokens.tsv` and `data/Nuuchahnulth/tokens.tsv` respectively.
+
+You can generate a concordance using a different corpus, list of words, or other options by following the usage instructions for the [DLx concordance library][dlx-concordance].
 
 ### The Annotation Process
 
