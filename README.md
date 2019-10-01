@@ -199,10 +199,10 @@ translation   | A translation of the utterance that the word token appears in. T
 Rather than copy-paste each token and its surrounding context into this spreadsheet, I utilized the [DLx concordance library][dlx-concordance], a tool I wrote and published which takes a list of wordforms, finds every instance of those wordforms in a corpus, and generates a tab-delimited list of tokens in Keyword-in-Context format. You can run this script on the command line as follows:
 
 ```cmd
-node node_modules/@digitallinguistics/concordance/concordance.js --dir={directory} --kwic --outputPath={output path} --wordlist={wordlist}
+node node_modules/@digitallinguistics/concordance/concordance.js --dir={directory} --KWIC --outputPath={output path} --wordlist={wordlist}
 ```
 
-In this command, `{directory}` is the path to the directory where the corpus is located, `--kwic` indicates that the concordance should be generated in Keyword-in-Context format, `{output path}` is the path where you would like the concordance file generated, and `{wordlist}` is the path to the JSON file containing an array of wordforms to concordance (the `selectedWordforms.json` file generated in the previous section).
+In this command, `{directory}` is the path to the directory where the corpus is located, `--KWIC` indicates that the concordance should be generated in Keyword-in-Context format, `{output path}` is the path where you would like the concordance file generated, and `{wordlist}` is the path to the JSON file containing an array of wordforms to concordance (the `selectedWordforms.json` file generated in the previous section).
 
 In this repository, the resulting concordance files are stored in `data/English/tokens.tsv` and `data/Nuuchahnulth/tokens.tsv` respectively.
 
