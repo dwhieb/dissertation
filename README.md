@@ -189,12 +189,13 @@ text          | The name of the text that the token appears in.
 utterance     | The number of the utterance within the text that the token appears in. (Numbering starts at 1.)
 word          | The number of the word within the utterance that the token appears in. (Numbering starts at 1.)
 archilexeme   | The archilexeme that this word token and lexeme belongs to.
-lexeme        | The headword representing the lexeme that this word token belongs to. For homonymous lexemes, a trailing number is sometimes added (for example, `house1`, `house2`).
 function      | The discourse function of this word token. This must have a value of `R` (reference), `P`, (predication), or `M` (modification).
 pre           | The words in the utterance preceding the token.
 token         | A transcription of the word token being annotated. This may also be called the <dfn>wordform</dfn>. It does not include any prosodic markup or punctuation.
 post          | The words in the utterance following the token.
 translation   | A translation of the utterance that the word token appears in. This was not included for English data.
+
+<!-- lexeme        | The headword representing the lexeme that this word token belongs to. For homonymous lexemes, a trailing number is sometimes added (for example, `house1`, `house2`). -->
 
 Rather than copy-paste each token and its surrounding context into this spreadsheet, I utilized the [DLx concordance library][dlx-concordance], a tool I wrote and published which takes a list of wordforms, finds every instance of those wordforms in a corpus, and generates a tab-delimited list of tokens in Keyword-in-Context format. You can run this script on the command line as follows:
 
