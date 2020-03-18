@@ -2,8 +2,9 @@
 name:      Bibliographic Source
 about:     A bibliographic reference to read and annotate
 title:     ''
-labels:    bibliography
+labels:    [bibliography]
 assignees: ''
+projects:  [Bibliography]
 ---
 <!-- Full citation for this item -->
 
