@@ -4,7 +4,7 @@ about:     A bibliographic reference to read and annotate
 title:     ''
 labels:    bibliography
 assignees: ''
-projects:  Bibliography
+projects:  [Bibliography]
 ---
 <!-- Full citation for this item -->
 
