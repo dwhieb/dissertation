@@ -7,10 +7,16 @@ assignees: ''
 ---
 <!-- Full citation for this item -->
 
-**Format:** PDF | Kindle | physical
+**Format:**
 
 ## Tasks
-- [ ] read
-- [ ] take notes
-- [ ] annotate
-- [ ] add to outlines / document
+- [ ] obtain source
+- [ ] fix bibliographic data
+- [ ] rename document file
+- [ ] add tags
+- [ ] add to private group (keep tags, add citation key)
+- [ ] (if needed) add PDF
+- [ ] read and highlight source
+- [ ] summarize source
+- [ ] (optional) copy source to public group for bibliography
+- [ ] take notes on source
