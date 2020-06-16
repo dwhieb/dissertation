@@ -6,15 +6,30 @@ A self-imposed requirement for this project is that of empirical accountability 
 
 ## Contents
 
-1. [Introduction](#1-introduction)
-1. [Technical Prerequisites](#2-technical-prerequisites)
-1. [Data Collection](#3-data-collection)
-1. [Data Preparation](#4-data-preparation)
-1. [Data Selection](#5-data-selection)
-1. [Data Annotation](#6-data-annotation)
-1. [Data Analysis](#7-data-analysis)
-1. [References](#8-references)
-1. [Legal](#9-legal)
+<!-- TOC -->
+
+- [Dissertation](#dissertation)
+  - [Contents](#contents)
+  - [1. Introduction](#1-introduction)
+  - [2. Technical Prerequisites](#2-technical-prerequisites)
+    - [Cloning this Repository](#cloning-this-repository)
+    - [Running Scripts](#running-scripts)
+    - [Installing the Project](#installing-the-project)
+  - [3. Data Collection](#3-data-collection)
+  - [4. Data Preparation](#4-data-preparation)
+    - [English](#english)
+      - [Tokenizing the OANC](#tokenizing-the-oanc)
+      - [Converting the OANC to JSON](#converting-the-oanc-to-json)
+  - [5. Data Annotation](#5-data-annotation)
+    - [Selecting Words for Annotation](#selecting-words-for-annotation)
+    - [The Annotations File](#the-annotations-file)
+    - [The Annotation Process](#the-annotation-process)
+  - [7. Data Analysis](#7-data-analysis)
+  - [8. References](#8-references)
+  - [9. Legal](#9-legal)
+    - [Todo](#todo)
+
+<!-- /TOC -->
 
 ([back to top](#readme))
 
@@ -114,6 +129,12 @@ To convert the OANC to JSON, I used a JavaScript library called [`tags2dlx`][tag
 To convert the OANC, follow the instructions for using the `tags2dlx` library, which can be found [here][tags2dlx]. In this repository, the converted files are located in `data/English/data`, and end in a `.json` extension.
 
 <!-- For ease of analysis, I chose to format all the corpora used in this study as [Scription][Scription] files, a simple, very readable text format, which places one interlinear glossed utterance on each line. (For the English data, this simply amounts to placing one utterance / sentence on each line, with no accompanying translation or glosses.) Read more about the Scription format [here][Scription]. -->
+
+### Nuuchahnulth
+
+<!-- Explain how you typed the data first in a practical orthography, and then transliterated it to the actual orthography used in the texts. -->
+
+<!-- Make files available for both orthographies. -->
 
 ([back to top](#readme))
 
