@@ -57,7 +57,7 @@ This project and all its accompanying data and code are stored in a repository o
 
 ### Running Scripts
 
-While the inferential statistics and data visualization for this thesis were produced using the R programming language, R is not well suited to large-scale data manipulation or processing of large files (Adler [2010](#Adler2010): 157&ndash;158). Therefore it is generally recommended that data preprocessing be conducted using other programming languages. In linguistics, this is typically done with Python. However, since I am proficient in JavaScript and not Python, the scripts for this project are written in JavaScript (specifically Node.js, which can JavaScript on a local computer). JavaScript (via Node.js) is however gaining traction in data science, a trend which is expected to continue.
+While the inferential statistics and data visualization for this thesis were produced using the [R programming language][R], R is not well suited to large-scale data manipulation or processing of large files (Adler [2010](#Adler2010): 157–158). Therefore it is generally recommended that data preprocessing be conducted using other programming languages. In linguistics, this is typically done with Python. However, since I am proficient in JavaScript and not Python, the scripts for this project are written in JavaScript (specifically Node.js, which runs JavaScript on a local computer). JavaScript (via Node.js) is however gaining traction in data science,[^node-data-science] a trend which is expected to continue.
 
 Node also comes with the Node Package Manager (<abbr title='Node package manager'>npm</abbr>), which allows you to install packages that other programmers have written in Node. Any public package in the npm registry may be installed by running `npm install {package-name}` from the command line.
 
@@ -264,10 +264,13 @@ Add copyright and license for each section of this repository
   - [ ] ANC tool
   - [ ] my scripts (MIT license)
 
+<!-- Footnotes -->
+[^node-data-science]: https://opensource.com/article/20/6/data-science-nodejs
+
 <!-- Links -->
 [ANC-Tool]:         http://www.anc.org/software/anc-tool/
 [Charlotte]:        https://newsouthvoices.uncc.edu
-[cloning]:          https://help.github.com/en/articles/cloning-a-repository
+[cloning]:          https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
 [Daffodil]:         https://format.digitallinguistics.io/
 [dissertation]:     https://files.danielhieber.com/publications/dissertation.pdf
 [dlx-concordance]:  https://github.com/digitallinguistics/concordance/
@@ -280,6 +283,7 @@ Add copyright and license for each section of this repository
 [OANC]:             http://www.anc.org/
 [OANC-download]:    http://www.anc.org/data/oanc/download/
 [OpenOffice]:       http://www.openoffice.org/product/calc.html
+[R]:                https://www.r-project.org/
 [Scription]:        https://scription.digitallinguistics.io/
 [Switchboard]:      https://catalog.ldc.upenn.edu/LDC97S62
 [tags2dlx]:         https://github.com/digitallinguistics/tags2dlx
