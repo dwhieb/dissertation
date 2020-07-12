@@ -23,40 +23,39 @@
     "url": "git+https://github.com/dwhieb/dissertation.git"
   },
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   },
   "type": "module",
   "scripts": {
-    "start":         "node --experimental-modules --no-warnings scripts/bin/generateEnglishWordforms.js data/English/data data/English/stats/wordforms.tsv",
+    "start": "node --experimental-modules --no-warnings scripts/bin/generateEnglishWordforms.js data/English/data data/English/stats/wordforms.tsv",
     "abbreviations": "node --experimental-modules --no-warnings scripts/build/abbreviations.js",
-    "anc":           "cd scripts/ANC && java -Xmx500M -jar ANCTool-2.0.0-jar.jar && cd ../..",
-    "bib":           "biber src/main",
-    "cleanup":       "node --experimental-modules --no-warnings scripts/build/cleanup.js",
-    "compile":       "cd src && xelatex -halt-on-error main.tex && cd ..",
-    "copy-pdf":      "node --experimental-modules --no-warnings scripts/build/copyPDF.js",
-    "diss-version":  "node --experimental-modules --no-warnings scripts/build/version.js",
-    "log-start":     "node --experimental-modules --no-warnings scripts/build/startLog.js",
-    "log-end":       "node --experimental-modules --no-warnings scripts/build/endLog.js",
-    "quick-bib":     "npm run compile && npm run bib && npm run compile && open-cli src/main.pdf",
-    "quick-build":   "npm run compile && open-cli src/main.pdf",
-    "upload":        "node --experimental-modules --no-warnings scripts/build/upload.js",
-    "prebuild":      "npm run cleanup && npm run abbreviations && npm run diss-version",
-    "build":         "npm run compile && npm run bib && npm run compile",
-    "postbuild":     "npm run copy-pdf && open-cli dissertation.pdf",
-    "preversion":    "npm run log-start && npm run build && npm run log-end && npm run cleanup"
+    "anc": "cd scripts/ANC && java -Xmx500M -jar ANCTool-2.0.0-jar.jar && cd ../..",
+    "bib": "biber src/main",
+    "cleanup": "node --experimental-modules --no-warnings scripts/build/cleanup.js",
+    "compile": "cd src && xelatex -halt-on-error main.tex && cd ..",
+    "copy-pdf": "node --experimental-modules --no-warnings scripts/build/copyPDF.js",
+    "diss-version": "node --experimental-modules --no-warnings scripts/build/version.js",
+    "log-start": "node --experimental-modules --no-warnings scripts/build/startLog.js",
+    "log-end": "node --experimental-modules --no-warnings scripts/build/endLog.js",
+    "quick-bib": "npm run compile && npm run bib && npm run compile && open-cli src/main.pdf",
+    "quick-build": "npm run compile && open-cli src/main.pdf",
+    "upload": "node --experimental-modules --no-warnings scripts/build/upload.js",
+    "prebuild": "npm run cleanup && npm run abbreviations && npm run diss-version",
+    "build": "npm run compile && npm run bib && npm run compile",
+    "postbuild": "npm run copy-pdf && open-cli dissertation.pdf",
+    "preversion": "npm run log-start && npm run build && npm run log-end && npm run cleanup"
   },
   "devDependencies": {
-    "@azure/storage-blob":             "^10.3.0",
+    "@azure/storage-blob": "^10.3.0",
     "@digitallinguistics/concordance": "^0.4.0",
-    "@digitallinguistics/tags2dlx":    "^0.4.0",
-    "babel-eslint":                    "^10.0.3",
-    "csv-stringify":                   "^5.3.3",
-    "eslint":                          "^6.0.1",
-    "open-cli":                        "^5.0.0",
-    "ora":                             "^3.4.0",
-    "progress":                        "^2.0.3",
-    "recursive-readdir":               "^2.2.2",
-    "winston":                         "^3.2.1",
-    "yaml":                            "^1.6.0"
+    "@digitallinguistics/tags2dlx": "^0.4.0",
+    "csv-stringify": "^5.5.0",
+    "eslint": "^7.4.0",
+    "open-cli": "^6.0.1",
+    "ora": "^4.0.4",
+    "progress": "^2.0.3",
+    "recursive-readdir": "^2.2.2",
+    "winston": "^3.3.3",
+    "yaml": "^1.10.0"
   }
 }
