@@ -16,7 +16,7 @@ const jsonLoggerConfig = {
   ),
   transports: [
     // new transports.Console(),
-    new transports.File({ filename: `builds.log` }),
+    new transports.File({ filename: `thesis/builds.log` }),
   ],
 };
 
@@ -35,7 +35,7 @@ const tsvLoggerConfig = {
   ),
   transports: [
     // new transports.Console(),
-    new transports.File({ filename: `builds.tsv` }),
+    new transports.File({ filename: `thesis/builds.tsv` }),
   ],
 };
 

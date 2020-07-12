@@ -11,7 +11,7 @@ const config = {
   ),
   transports: [
     // new transports.Console(),
-    new transports.File({ filename: `builds.log` }),
+    new transports.File({ filename: `thesis/builds.log` }),
   ],
 };
 
