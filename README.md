@@ -57,17 +57,17 @@ This project and all its accompanying data and code are stored in a repository o
 
 ### Running Scripts
 
-While the inferential statistics and data visualization for this thesis were produced using the [R programming language][R], R is not well suited to large-scale data manipulation or processing of large files (Adler [2010](#Adler2010): 157–158). Therefore it is generally recommended that data preprocessing be conducted using other programming languages. In linguistics, this is typically done with Python. However, since I am proficient in JavaScript and not Python, the scripts for this project are written in JavaScript (specifically Node.js, which runs JavaScript on a local computer). JavaScript (via Node.js) is however gaining traction in data science,[^node-data-science] a trend which is expected to continue.
+While the inferential statistics and data visualization for this thesis were produced using the [R programming language][R], R is not well suited to large-scale data manipulation or processing of large files (Adler [2010](#Adler2010): 157–158). Therefore it is generally recommended that data preprocessing be conducted using other programming languages. In linguistics, this is typically done with Python. However, since I am proficient in JavaScript and not Python, the scripts for this project are written in JavaScript (specifically Node.js, which runs JavaScript on a local computer). JavaScript (via Node.js) is however gaining traction in data science, a trend which is expected to continue.
 
-Node also comes with the Node Package Manager (<abbr title='Node package manager'>npm</abbr>), which allows you to install packages that other programmers have written in Node. Any public package in the npm registry may be installed by running `npm install {package-name}` from the command line.
+Node also comes with the Node Package Manager (<abbr title='Node package manager'>npm</abbr>), which allows you to install packages that other programmers have written in Node. Any public package in the npm registry may be installed by running `npm install {package-name}` from the command line in the folder you would like to install it in.
 
 For more information about Node.js and npm, visit the [Node.js][Node] and [npm][npm] websites.
 
-You will need to download Node and npm in order to run many scripts in this project. You can download both pieces of software from the [Node.js web page][Node]. The scripts in this repository were written using Version 12 of Node, so you may need to download that specific version in order for the scripts in this project to work correctly.
+You will need to download Node and npm in order to run many scripts in this project. You can download both pieces of software at once from the [Node.js web page][Node]. The scripts in this repository were written using Version 14 of Node, so you may need to download that specific version in order for the scripts in this project to work correctly.
 
-Once Node is installed on your computer, any Node script can be run from the command line with the command `node {filename}`.
+Once Node is installed on your computer, any Node script can be run from the command line with the command `node {path-to-file}`.
 
-NPM also allows you to save commonly-used command line commands as project-specific scripts, saving you from having to retype the command and all its arguments each time you want to run it. You can run any of the npm scripts in this repository from the command line following the format `npm run {script-name}`.
+npm also allows you to save commonly-used command line commands as project-specific scripts, saving you from having to retype the command and all its arguments each time you want to run it. You can run any of the npm scripts in this repository from the command line following the format `npm run {script-name}`.
 
 ### Installing the Project
 
@@ -77,11 +77,17 @@ Once you have cloned this repository and installed npm and Node, install the nec
 
 ## 3. Data Collection
 
-As mentioned above, all the data in this study are publicly available. This section presents the necessary steps for obtaining that data. Note that this repository does not contain the primary data itself, just annotations, statistics, and other derived versions of that data. The primary data lives in various places online, described below.
+All the data in this study are publicly available. This section describes the necessary steps for obtaining that data.
 
-The data used for the investigation of English come from the [Open American National Corpus][OANC] (<abbr title='Open American National Corpus'>OANC</abbr>), a 15 million word corpus whose data are entirely open access. Since the data from other languages in this study are all from spoken texts, I elected to use just the spoken portion of the OANC, totaling 3,217,772 tokens. This spoken portion of the OANC is actually composed of two distinct subcorpora—the [Charlotte Narrative & Conversation Collection][Charlotte] (<abbr title='Charlotte Narrative &amp; Conversation Collection'>CNCC</abbr> or simply "the Charlotte corpus") and the [Switchboard Corpus][Switchboard]. More details about the Charlotte corpus may be found [here][Charlotte], and the Switchboard corpus [here][Switchboard].
+### English
 
-The OANC may be downloaded in its entirety from from the [OANC download page][OANC-download] in `.zip` (625MB) or `.tgz` formats. You will need to unzip the folder after you have downloaded it. The spoken portion of the corpus is in `data/spoken` inside the downloaded folder.
+The data used for the investigation of English come from the [Open American National Corpus][OANC] (<abbr title='Open American National Corpus'>OANC</abbr>), a 15 million word corpus whose data are entirely open access. Since most linguistic data on small, endangered, and/or indigenous languages come from spoken corpora, I elected to use just the spoken portion of the OANC for comparability. This portion of the corpus totals 3,217,772 tokens, and is composed of two distinct subcorpora—the [Charlotte Narrative & Conversation Collection][Charlotte] (<abbr title='Charlotte Narrative &amp; Conversation Collection'>CNCC</abbr> or simply "the Charlotte corpus") and the [Switchboard Corpus][Switchboard]. More details about the Charlotte corpus may be found [here][Charlotte], and the Switchboard corpus [here][Switchboard].
+
+The OANC may be downloaded in its entirety from from the [OANC download page][OANC-download] in `.zip` or `.tgz` formats. You will need to unzip the folder after you have downloaded it. The spoken portion of the corpus is in `data/spoken` inside the downloaded folder.
+
+### Nuuchahnulth
+
+<!-- TODO -->
 
 ([back to top](#readme))
 
@@ -89,23 +95,23 @@ The OANC may be downloaded in its entirety from from the [OANC download page][OA
 
 This section covers the steps necessary to convert and otherwise prepare the data used in this study for annotation and analysis.
 
-When scripting with JavaScript, I find it significantly easier to work with data in <abbr title='JavaScript Object Notation'>JSON</abbr> (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][Daffodil].
+When scripting with JavaScript, I find it significantly easier to work with data in [<abbr title='JavaScript Object Notation'>JSON</abbr>][JSON] (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][Daffodil]. This section shows how to convert the data for this study to JSON for further annotation.
 
 ### English
 
-This section covers the steps for converting the OANC data to JSON format.
+This section covers the steps for converting the English OANC data to JSON format.
 
 #### Tokenizing the OANC
 
 For the OANC, converting the data to JSON involves first tokenizing the corpus. The OANC project provides an [ANC Tool][ANC-Tool] for this purpose, which offers various ways of converting and tagging OANC data. More information about the ANC Tool may be found [here][ANC-Tool]. Steps for tokenizing the OANC using the ANC Tool are as follows:
 
-1. Download the ANC Tool from the [ANC Tool download page][ANC-Tool] and unzip the folder. If you have already cloned this repository, you may skip this step; the ANC Tool is located in the `scripts/ANC` folder.
+1. Download the ANC Tool from the [ANC Tool download page][ANC-Tool] and unzip the folder. If you have already cloned this repository, you may skip this step; the ANC Tool is located in the `data/English/scripts/ANC` folder.
 
 1. If you do not have Java installed on your computer, download it from [here][Java] and then install it on your computer.
 
-1. Run the ANC Tool following the instructions on the [ANC Tool page][ANC-Tool]. It is recommended that you run the tool from the command line following the format `java -Xmx500M -jar ANCTool-x.y.z-jar.jar`. See the [ANC Tool page][ANC-Tool] for complete details. If you have npm installed on your computer, you can simply run the ANC Tool from the command line with `npm run anc`.
+1. Run the ANC Tool following the instructions on the [ANC Tool page][ANC-Tool]. It is recommended that you run the tool from the command line following the format `java -Xmx500M -jar ANCTool-x.y.z-jar.jar`. See the [ANC Tool page][ANC-Tool] for complete details. If you have npm installed on your computer, you can simply run the ANC Tool from the command line with `npm run anc` from the root of this repository.
 
-1. The first time you run the ANC Tool, it will ask you to specify the location of the folder where the files `annotations.xml` and `OANC-corpus-header.xml` are located. Select this folder and click _Accept_.
+1. The first time you run the ANC Tool, it will ask you to specify the location of the folder where the files `annotations.xml` and `OANC-corpus-header.xml` are located. Find this folder where you downloaded them and click _Accept_.
 
 1. A screen with various settings will appear. Select the following:
 
@@ -118,7 +124,7 @@ For the OANC, converting the data to JSON involves first tokenizing the corpus. 
     - **Part of Speech:** Select _Hepple part of speech tags_
     - **Separator Character:** Leave this set to the underscore (`_`)
 
-1. Click the _Process_ button. This will begin converting the corpus, which will take several minutes. This converts each text in the OANC to a new file that is tokenized and tagged for part of speech.
+1. Click the _Process_ button. This will begin converting the corpus, which will take several minutes. This converts each text in the OANC to a new text file (`.txt`) that is tokenized and tagged for part of speech.
 
 #### Converting the OANC to JSON
 
@@ -130,9 +136,7 @@ To convert the OANC, follow the instructions for using the `tags2dlx` library, w
 
 ### Nuuchahnulth
 
-<!-- Explain how you typed the data first in a practical orthography, and then transliterated it to the actual orthography used in the texts. -->
-
-<!-- Make files available for both orthographies. -->
+<!-- TODO -->
 
 ([back to top](#readme))
 
@@ -140,24 +144,25 @@ To convert the OANC, follow the instructions for using the `tags2dlx` library, w
 
 This section covers the technical steps involved in the process of annotating the data for this study.
 
-### Selecting Words for Annotation
+### English
 
-100 archilexemes were selected from each corpus for annotation. These archilexemes were chosen randomly from the set of wordforms in each corpus, by first dividing those wordforms into 100 different bins depending on the corpus dispersion of that wordform (measured using <dfn>Deviation of Proportions</dfn> (<abbr title='Deviation of Proportions'>DP</abbr>) [Gries [2008](#Gries2008)]), and then selecting one word randomly from each bin. Words which did not meet the selection criteria were thrown out, and the process was repeated until 100 viable archilexemes were found. The selection criteria for archilexemes are discussed in the Data & Methods chapter of my dissertation document, available [here][dissertation].
+#### Selecting Words for Annotation
 
-To select the 100 archilexemes, I first wrote a script which produces a tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion. In addition, the script prints the total size of the corpus to the console. This script is located in the file `scripts/bin/generateWordforms.js`, and can be run on the command line using the following command, where `{input}` is the path to the directory where the JSON corpus is located, and `{output}` is the location where you would like the resulting TSV file generated.
+100 archilexemes were selected from the English corpus for annotation. These archilexemes were chosen randomly from the set of wordforms in the corpus, by first dividing those wordforms into 100 different bins depending on the corpus dispersion of that wordform (measured using <dfn>Deviation of Proportions</dfn> (<abbr title='Deviation of Proportions'>DP</abbr>) [Gries [2008](#Gries2008)]), and then selecting one word randomly from each bin. Words which did not meet the selection criteria were thrown out, and the process was repeated until 100 viable archilexemes were found. The selection criteria for archilexemes are discussed in the Data & Methods chapter of my dissertation document, available [here][dissertation].
 
-```cmd
-node --experimental-modules --no-warnings scripts/bin/generateWordforms.js {input} {output}
-```
-
-However, this script by itself does not filter the data in any way. The list of wordforms it generates includes many that are unnecessary for this study. To make the task of selecting words for annotation easier, I therefore created one script for each corpus in this study, which filters out unwanted tokens from the resulting list of wordforms (without affecting the calculation of dispersion). The scripts for each language can be run as follows:
+To select the 100 archilexemes, I first wrote a script which produces a tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion. In addition, the script prints the total size of the corpus to the console. This script can be run on the command line using the following command, where `{input}` is the path to the directory where the JSON corpus is located, and `{output}` is the location where you would like the resulting TSV file generated:
 
 ```cmd
-node --experimental-modules --no-warnings data/English/bin/generateEnglishWordforms.js {input} {output}
-node --experimental-modules --no-warnings data/Nuuchahnulth/bin/generateNuuchWordforms.js {input} {output}
+node stats/scripts/bin/generateWordforms.js {input} {output}
 ```
 
-The script for English relies on two files: `blacklist.yml` and `nonLexicalTags.yml`, both located in the `data/English/constants` folder. The `blacklist.yml` file contains a list of wordforms that should not be included in the list of wordforms (but again, without affecting calculation of dispersion, or the overall reported corpus frequency). Similarly, the `nonLexicalTags.yml` file contains Penn tags which should be excluded from the resulting wordlist. You can update either of these files to change the words which are filtered out of the English data.
+However, this script by itself does not filter the data in any way. The list of wordforms it generates includes many that are unnecessary for this study. To make the task of selecting words for annotation easier, I created another script which filters out unwanted tokens from the resulting list of wordforms (without affecting the calculation of dispersion). This script can be run with the following command:
+
+```cmd
+node data/English/scripts/bin/generateEnglishWordforms.js {input} {output}
+```
+
+This script relies on two files: `blacklist.yml` and `nonLexicalTags.yml`, both located in the `data/English/scripts/constants` folder. The `blacklist.yml` file contains a list of wordforms that should not be included in the list of wordforms (but again, without affecting calculation of dispersion, or the overall reported corpus frequency). Similarly, the `nonLexicalTags.yml` file contains Penn tags which should be excluded from the resulting wordlist. You can update either of these files to change the words which are filtered out of the English data.
 
 ---
 
@@ -195,7 +200,7 @@ For English, I did not have to included possessive forms in the list of wordform
 
 The resulting list of English wordforms to annotate is located in `data/English/stats/selectedWordforms.json`.
 
-### The Annotations File
+#### The Annotations File
 
 The annotations on the data used in this study are <dfn>stand-off</dfn> or <dfn>standalone</dfn> annotations—that is, annotations which live in a separate file, and contain information about the original utterances they apply to. For this project, I stored the annotations in basic tab-separated files (`.tsv`), making it easy to add and edit annotations using spreadsheet software such as [Microsoft Excel][Excel] or [Apache OpenOffice Calc][OpenOffice], among others. All annotations were placed in a single large spreadsheet, with the language of each annotation / observation indicated.
 
@@ -228,9 +233,13 @@ In this repository, the resulting concordance files are stored in `data/English/
 
 You can generate a concordance using a different corpus, list of words, or other options by following the usage instructions for the [DLx concordance library][dlx-concordance].
 
-### The Annotation Process
+#### The Annotation Process
 
 Some of the archilexemes I investigated encompass more than one historically unrelated sense. For example, the two primary senses of the English word _like_—'be pleasing' and 'be similar'—are historically unrelated. In these cases, I chose one of the historical forms and annotated only uses relating to that form, removing tokens of any other words from the data. I tried to choose the more frequent use in each case.
+
+### Nuuchahnulth
+
+<!-- TODO -->
 
 ([back to top](#readme))
 
@@ -263,9 +272,6 @@ Add copyright and license for each section of this repository
 - [ ] scripts
   - [ ] ANC tool
   - [ ] my scripts (MIT license)
-
-<!-- Footnotes -->
-[^node-data-science]: https://opensource.com/article/20/6/data-science-nodejs
 
 <!-- Links -->
 [ANC-Tool]:         http://www.anc.org/software/anc-tool/
