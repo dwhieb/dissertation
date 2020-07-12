@@ -5,8 +5,9 @@ parserOptions:
     impliedStrict: true
   sourceType: module
 env:
-  browser: true
+  browser: false
   es6:     true
+  es2020:  true
   jasmine: false
   node:    true
 reportUnusedDisableDirectives: true
