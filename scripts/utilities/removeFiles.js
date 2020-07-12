@@ -1,5 +1,5 @@
 /**
- * This scripts deletes any files from the OANC that are not .txt, -hepple.xml, .conll, or .json files
+ * This scripts deletes any files in a directory that have the specified extension
  */
 
 import fs             from 'fs';
