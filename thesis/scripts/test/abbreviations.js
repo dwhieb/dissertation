@@ -1,3 +1,7 @@
+/**
+ * It looks like this test file was being written for issue #440, but not yet finished.
+ */
+
 import { createRequire } from 'module';
 import fs                from 'fs';
 import path              from 'path';

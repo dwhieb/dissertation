@@ -4,23 +4,25 @@
 
 import { createRequire } from 'module';
 import createSpinner     from 'ora';
+import { fileURLToPath } from 'url';
 import fs                from 'fs';
-import meta              from '../../package.json';
 import path              from 'path';
-import rootDir           from '../constants/rootDir.js';
 
+const currentDir    = path.dirname(fileURLToPath(import.meta.url));
 const require       = createRequire(import.meta.url);
-const { writeFile } = fs.promises;
-const versionPath   = path.join(rootDir, `src/utilities/version.tex`);
-const { version }   = meta;
+const { version }   = require(`../../../package.json`);
 
-async function populateVersion() {
+const { writeFile } = fs.promises;
+
+
+void async function populateVersion() {
 
   const spinner = createSpinner(`Populating \\version variable`).start();
 
   try {
 
-    const data = `\\def\\version{${version}}`;
+    const data        = `\\def\\version{${version}}`;
+    const versionPath = path.join(currentDir, `../../src/utilities/version.tex`);
 
     await writeFile(versionPath, data, `utf8`);
 
@@ -32,8 +34,4 @@ async function populateVersion() {
 
   spinner.succeed(`\\version variable populated`);
 
-}
-
-if (require.main === undefined) populateVersion();
-
-export default populateVersion;
+}();

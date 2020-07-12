@@ -2,22 +2,24 @@
  * Generates the List of Abbreviations in the frontmatter
  */
 
-import { compare }   from '../utilities/index.js';
-import createSpinner from 'ora';
-import fs            from 'fs';
-import path          from 'path';
-import rootDir       from '../constants/rootDir.js';
-import yamlParser    from 'yaml';
+import { compare }       from '../utilities/compare.js';
+import createSpinner     from 'ora';
+import { fileURLToPath } from 'url';
+import fs                from 'fs';
+import path              from 'path';
+import yamlParser        from 'yaml';
 
-const abbreviationsChapterPath = path.join(rootDir, `src/frontmatter/abbreviations.tex`);
-const abbreviationsListPath    = path.join(rootDir, `src/abbreviations.yml`);
+const { readFile, writeFile } = fs.promises;
+
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
+
+const abbreviationsChapterPath = path.join(currentDir, `../../src/frontmatter/abbreviations.tex`);
+const abbreviationsListPath    = path.join(currentDir, `../../src/abbreviations.yml`);
 // padding to use at the beginning of each line of the List of Abbreviations table
 const padding                  = 6;
 const tableRegExp              = /(?<beg>% BEGIN ABBREVIATIONS)(?<tableLines>.+?)(?<end>\s+% END ABBREVIATIONS)/su;
 
-const { readFile, writeFile } = fs.promises;
-
-async function generateAbbreviations() {
+void async function generateAbbreviations() {
 
   const spinner = createSpinner(`Generating List of Abbreviations`).start();
 
@@ -48,6 +50,4 @@ async function generateAbbreviations() {
 
   spinner.succeed(`Generated List of Abbreviations`);
 
-}
-
-generateAbbreviations();
+}();

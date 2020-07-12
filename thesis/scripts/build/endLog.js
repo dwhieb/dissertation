@@ -1,10 +1,12 @@
-import meta    from '../../package.json';
-import util    from 'util';
-import winston from 'winston';
+import { createRequire } from 'module';
+import util              from 'util';
+import winston           from 'winston';
+
+const require = createRequire(import.meta.url);
 
 const endTime = new Date();
 
-const { version }                          = meta;
+const { version }                          = require(`../../../package.json`);
 const { promisify }                        = util;
 const { createLogger, format, transports } = winston;
 
@@ -41,7 +43,7 @@ const tsvLoggerConfig = {
 
 const tsvLogger = createLogger(tsvLoggerConfig);
 
-async function endLog() {
+void async function endLog() {
 
   const { file: [logItem] } = await query(queryOptions);
   const startTime           = new Date(logItem.message.startTime);
@@ -59,6 +61,4 @@ async function endLog() {
 
   console.info(`PDF built in ${buildTimeInSeconds} seconds`);
 
-}
-
-endLog();
+}();

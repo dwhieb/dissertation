@@ -1,15 +1,15 @@
 /**
- * Cleans build files from the provided directory, except .aux files
+ * Cleans build files from the source directory, except .aux files
  */
 
-import { createRequire } from 'module';
 import createSpinner     from 'ora';
+import { fileURLToPath } from 'url';
 import fs                from 'fs';
 import path              from 'path';
 import recurse           from 'recursive-readdir';
-import rootDir           from '../constants/rootDir.js';
 
-const require                = createRequire(import.meta.url);
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
+
 const { unlink: removeFile } = fs.promises;
 
 const whiteList = [
@@ -25,13 +25,13 @@ const whiteList = [
   `**/*.yml`,
 ];
 
-async function cleanup(dir = `.`) {
+void async function cleanup() {
 
-  const spinner = createSpinner(`Cleaining directory ${dir}`).start();
+  const spinner = createSpinner(`Cleaining source directory`).start();
 
   try {
 
-    const files = await recurse(dir, whiteList);
+    const files = await recurse(path.join(currentDir, `../../src`), whiteList);
 
     await Promise.all(files.map(removeFile));
 
@@ -43,8 +43,4 @@ async function cleanup(dir = `.`) {
 
   spinner.succeed(`Directory cleaned`);
 
-}
-
-if (require.main === undefined) cleanup(path.join(rootDir, `src`));
-
-export default cleanup;
+}();

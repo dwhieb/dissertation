@@ -1,5 +1,5 @@
 /**
- * Copies src/main.pdf > dissertation.pdf
+ * Copies thesis/src/main.pdf > dissertation.pdf
  */
 
 import createSpinner     from 'ora';
@@ -8,9 +8,9 @@ import fs                from 'fs';
 import path              from 'path';
 
 const { copyFile } = fs.promises;
-const __dirname    = path.dirname(fileURLToPath(import.meta.url));
-const distPath     = path.join(__dirname, `../../dissertation.pdf`);
-const srcPath      = path.join(__dirname, `../../src/main.pdf`);
+const currentDir   = path.dirname(fileURLToPath(import.meta.url));
+const distPath     = path.join(currentDir, `../../../dissertation.pdf`);
+const srcPath      = path.join(currentDir, `../../src/main.pdf`);
 
 void async function copyPDF() {
 

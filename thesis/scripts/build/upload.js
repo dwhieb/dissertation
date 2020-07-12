@@ -37,7 +37,7 @@ void async function upload() {
     const serviceURL   = new ServiceURL(url, pipeline);
     const containerURL = ContainerURL.fromServiceURL(serviceURL, `publications`);
     const aborter      = Aborter.none;
-    const filePath     = path.join(currentDir, `../../dissertation.pdf`);
+    const filePath     = path.join(currentDir, `../../../dissertation.pdf`);
     const blockBlobURL = BlockBlobURL.fromContainerURL(containerURL, filePath);
 
     await uploadFileToBlockBlob(aborter, filePath, blockBlobURL, uploadOptions);

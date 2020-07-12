@@ -1,5 +1,9 @@
-import meta    from '../../package.json';
-import winston from 'winston';
+import { createRequire } from 'module';
+import winston           from 'winston';
+
+const require = createRequire(import.meta.url);
+
+const { version } = require(`../../../package.json`);
 
 const { createLogger, format, transports } = winston;
 
@@ -19,5 +23,5 @@ const logger = createLogger(config);
 
 logger.info({
   startTime: new Date,
-  version:   meta.version,
+  version,
 });

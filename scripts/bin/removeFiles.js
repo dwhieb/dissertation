@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { removeFiles } from '../utilities/index.js';
+import removeFiles from '../utilities/removeFiles.js';
 
 const [,, dir, ending] = process.argv;
 
