@@ -1,13 +1,7 @@
 import Azure             from '@azure/storage-blob';
 import createSpinner     from 'ora';
-import credentials       from '../constants/credentials.js';
 import { fileURLToPath } from 'url';
 import path              from 'path';
-
-const {
-  AZURE_STORAGE_ACCOUNT: account,
-  AZURE_STORAGE_KEY: key,
-} = credentials;
 
 const {
   Aborter,
@@ -25,17 +19,21 @@ void async function upload() {
 
   const spinner = createSpinner(`Uploading PDF`).start();
 
-  const uploadOptions = {
-    blobHTTPHeaders: {
-      blobContentType: `application/pdf`,
-    },
-  };
-
   try {
 
-    const credential   = new SharedKeyCredential(account, key);
+    if (!process.env.AZURE_STORAGE_KEY) {
+      await import(`../constants/credentials.js`);
+    }
+
+    const uploadOptions = {
+      blobHTTPHeaders: {
+        blobContentType: `application/pdf`,
+      },
+    };
+
+    const credential   = new SharedKeyCredential(process.env.AZURE_STORAGE_ACCOUNT, process.env.AZURE_STORAGE_KEY);
     const pipeline     = StorageURL.newPipeline(credential);
-    const url          = `https://${account}.blob.core.windows.net`;
+    const url          = `https://${process.env.AZURE_STORAGE_ACCOUNT}.blob.core.windows.net`;
     const serviceURL   = new ServiceURL(url, pipeline);
     const containerURL = ContainerURL.fromServiceURL(serviceURL, `publications`);
     const aborter      = Aborter.none;
@@ -47,6 +45,7 @@ void async function upload() {
   } catch (e) {
 
     spinner.fail(e.message);
+    throw e;
 
   }
 
