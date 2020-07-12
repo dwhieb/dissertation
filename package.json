@@ -30,7 +30,6 @@
     "start":         "node --experimental-modules --no-warnings scripts/bin/generateEnglishWordforms.js data/English/data data/English/stats/wordforms.tsv",
     "abbreviations": "node --experimental-modules --no-warnings scripts/build/abbreviations.js",
     "anc":           "cd scripts/ANC && java -Xmx500M -jar ANCTool-2.0.0-jar.jar && cd ../..",
-    "archive":       "node --experimental-modules --no-warnings scripts/build/archive.js",
     "bib":           "biber src/main",
     "cleanup":       "node --experimental-modules --no-warnings scripts/build/cleanup.js",
     "compile":       "cd src && xelatex -halt-on-error main.tex && cd ..",
@@ -44,7 +43,7 @@
     "prebuild":      "npm run cleanup && npm run abbreviations && npm run diss-version",
     "build":         "npm run compile && npm run bib && npm run compile",
     "postbuild":     "npm run copy-pdf && open-cli dissertation.pdf",
-    "preversion":    "npm run log-start && npm run build && npm run log-end && npm run archive && npm run cleanup"
+    "preversion":    "npm run log-start && npm run build && npm run log-end && npm run cleanup"
   },
   "devDependencies": {
     "@azure/storage-blob":             "^10.3.0",
