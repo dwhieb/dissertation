@@ -1,3 +1,3 @@
 # English
 
-This folder contains data and any derived statistics or figures for English.
+This folder contains data and annotations for English.
