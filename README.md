@@ -30,7 +30,6 @@ A self-imposed requirement for this project is that of empirical accountability 
 - [7. Statistical Analysis](#7-statistical-analysis)
 - [8. References](#8-references)
 - [9. Legal](#9-legal)
-  - [Todo](#todo)
 
 <!-- /TOC -->
 
@@ -93,6 +92,8 @@ The OANC may be downloaded in its entirety from from the [OANC download page][OA
 ### Nuuchahnulth
 
 The data used for the investigation of Nuuchahnulth comes from a corpus of texts collected and edited by Toshihide Nakayama, and published in Nakayama ([2003a](#Nakayama2003a), [2003b](#Nakayama2003b)). I manually typed the corpus as simple text files, using a computationally-parseable format for representing linguistic texts known as [scription][scription]. The resulting digitally-searchable corpus may be found [here on GitHub][Nuuchahnulth].
+
+The Nuuchahnulth corpus consists of 24 texts dictated by two speakers, containing 2,081 utterances, and 8,366 tokens (comprising 4,216 types).
 
 Since the Nuuchahnulth corpus was already available in both scription and [DLx JSON format][DaFoDiL], I simply copied the JSON versions of the texts into the repository for this dissertation.
 
