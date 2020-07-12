@@ -3,11 +3,11 @@
 
 # update this variable to point to the tab-delimited file of wordforms,
 # frequencies, and dispersions
-input_path  <- 'data/English/stats/wordforms.tsv'
+input_path  <- 'stats/data/English_wordforms.tsv'
 
 # update this variable to point to the location where
 # you would like the list of selected wordforms generated
-output_path <- 'data/English/stats/suggestedWordforms.txt'
+output_path <- 'suggestedWordforms.txt'
 
 # the number of wordforms to suggest
 num_wordforms <- 100

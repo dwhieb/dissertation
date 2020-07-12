@@ -14,15 +14,20 @@ A self-imposed requirement for this project is that of empirical accountability 
   - [Running Scripts](#running-scripts)
   - [Installing the Project](#installing-the-project)
 - [3. Data Collection](#3-data-collection)
-- [4. Data Preparation](#4-data-preparation)
   - [English](#english)
+  - [Nuuchahnulth](#nuuchahnulth)
+- [4. Data Preparation](#4-data-preparation)
+  - [English](#english-1)
     - [Tokenizing the OANC](#tokenizing-the-oanc)
     - [Converting the OANC to JSON](#converting-the-oanc-to-json)
+  - [Nuuchahnulth](#nuuchahnulth-1)
 - [5. Data Annotation](#5-data-annotation)
-  - [Selecting Words for Annotation](#selecting-words-for-annotation)
-  - [The Annotations File](#the-annotations-file)
-  - [The Annotation Process](#the-annotation-process)
-- [7. Data Analysis](#7-data-analysis)
+  - [English](#english-2)
+    - [Selecting Words for Annotation](#selecting-words-for-annotation)
+    - [Generating the Annotations File](#generating-the-annotations-file)
+    - [The Annotation Process](#the-annotation-process)
+  - [Nuuchahnulth](#nuuchahnulth-2)
+- [7. Statistical Analysis](#7-statistical-analysis)
 - [8. References](#8-references)
 - [9. Legal](#9-legal)
   - [Todo](#todo)
@@ -166,11 +171,11 @@ This script relies on two files: `blacklist.yml` and `nonLexicalTags.yml`, both 
 
 ---
 
-Having generated the list of wordforms and their statistics, I then wrote an R script which bins wordforms based on their corpus dispersions, and generates a list of 100 suggested wordforms (one from each dispersion bin) and saves it to a text file. This script is located in `scripts/stats/selectWordforms.R`. You can adjust the `input_path` and `output_path` variables at the top of the file to point it to the lists of wordforms generated above, and the location where you would like the list of selected wordforms to be generated, respectively.
+Having generated the list of wordforms and their statistics, I then wrote an R script which bins wordforms based on their corpus dispersions, generates a list of 100 suggested wordforms (one from each dispersion bin) and saves it to a text file. This script is located in `scripts/stats/selectWordforms.R`. You can adjust the `input_path` and `output_path` variables at the top of the file to point it to the lists of wordforms generated in the previous step, and the location where you would like the list of selected wordforms to be generated, respectively.
 
 Finally, I used this list of suggested wordforms to pick which archilexemes I wanted to annotate. If a suggested wordform didn't meet the selection criteria, I added it to `blacklist.yml` and regenerated the list of wordforms. Occasionally, in the higher frequencies, there were no wordforms in that dispersion bin. When this happened, I selected a word from the next lowest dispersion bin, with the result that a few bins are represented more than once in the annotated data.
 
-The final list of 100 archilexemes was created manually, and is located in `data/English/stats/selectedArchilexemes.txt`.
+The final list of 100 archilexemes was created manually, and is located in `data/English/selected_archilexemes.txt`.
 
 After this was done, I next created a list of every possible inflected wordform of the 100 archilexemes that were selected for annotation. Morphologically derived forms were not included, but suppletive inflections variants were included. Thus for the archilexeme _know_, I included the following wordforms:
 
@@ -180,7 +185,7 @@ After this was done, I next created a list of every possible inflected wordform 
 - _known_
 - _knows_
 
-Some of these wordforms also function as morphologically derived words. This is a function of the fact that certain morphemes in English, like _‑ing_, have both inflectional and derivational uses. To be thorough I had to begin by including both inflectional and derivational uses in the list of tokens to annotate. However, when a derivational use of one of these words was encountered, I manually removed it from the data, since this study is focused on only morphologically unmarked derivation, i.e. conversion.
+Some of these wordforms also function as morphologically derived words. This is a function of the fact that certain morphemes in English, like _‑ing_, have both inflectional and derivational uses. To be thorough I had to begin by including both inflectional and derivational uses in the list of tokens to annotate. However, when a derivational use of one of these words was encountered, I did not include it in the annotated data, since this study is focused on only morphologically unmarked derivation, i.e. conversion.
 
 I also had to include some seemingly unusual wordforms in this list. For example, the forms of the archilexeme _one_ are as follows:
 
@@ -198,13 +203,13 @@ Therefore it was necessary to construct the list of wordforms to annotate as inc
 
 For English, I did not have to included possessive forms in the list of wordforms because `'s` is tokenized as a separate word by the OANC.
 
-The resulting list of English wordforms to annotate is located in `data/English/stats/selectedWordforms.json`.
+The resulting list of English wordforms to annotate is located in `data/English/selected_wordforms.json`.
 
-#### The Annotations File
+#### Generating the Annotations File
 
-The annotations on the data used in this study are <dfn>stand-off</dfn> or <dfn>standalone</dfn> annotations—that is, annotations which live in a separate file, and contain information about the original utterances they apply to. For this project, I stored the annotations in basic tab-separated files (`.tsv`), making it easy to add and edit annotations using spreadsheet software such as [Microsoft Excel][Excel] or [Apache OpenOffice Calc][OpenOffice], among others. All annotations were placed in a single large spreadsheet, with the language of each annotation / observation indicated.
+The annotations on the English data are <dfn>stand-off</dfn> or <dfn>standalone</dfn> annotations—that is, annotations which live in a separate file, and contain information about the original utterances they apply to. For this project, I stored the annotations in basic tab-separated files (`.tsv`), making it easy to add and edit annotations using spreadsheet software such as [Microsoft Excel][Excel] or [Apache OpenOffice Calc][OpenOffice], among others. All annotations were placed in a single large spreadsheet, with the language of each annotation / observation indicated.
 
-The columns included in the annotation spreadsheet are below. The annotations spreadsheet followed a Keyword-in-Context (KWIC) format, allowing me to see the immediately preceding and following context for each token.
+The columns included in the annotation spreadsheet are below. The annotations spreadsheet followed a [Keyword-in-Context][KWIC] (KWIC) format, allowing me to see the immediately preceding and following context for each token.
 
 Column Name   | Description
 ------------- | -----------
@@ -221,21 +226,21 @@ translation   | A translation of the utterance that the word token appears in. T
 
 <!-- lexeme        | The headword representing the lexeme that this word token belongs to. For homonymous lexemes, a trailing number is sometimes added (for example, `house1`, `house2`). -->
 
-Rather than copy-paste each token and its surrounding context into this spreadsheet, I utilized the [DLx concordance library][dlx-concordance], a tool I wrote and published which takes a list of wordforms, finds every instance of those wordforms in a corpus, and generates a tab-delimited list of tokens in Keyword-in-Context format. You can run this script on the command line as follows:
+Rather than copy-paste each token and its surrounding context into this spreadsheet, I utilized the [DLx concordance library][dlx-concordance], a tool I wrote and published which takes a list of wordforms, finds every instance of those wordforms in a DLx (JSON) formatted corpus, and generates a tab-delimited list of tokens in Keyword-in-Context format. You can run this script on the command line as follows (making sure you've installed either this project, or the `@digitallinguistics/concordance` library first):
 
 ```cmd
 node node_modules/@digitallinguistics/concordance/concordance.js --dir={directory} --KWIC --outputPath={output path} --wordlist={wordlist}
 ```
 
-In this command, `{directory}` is the path to the directory where the corpus is located, `--KWIC` indicates that the concordance should be generated in Keyword-in-Context format, `{output path}` is the path where you would like the concordance file generated, and `{wordlist}` is the path to the JSON file containing an array of wordforms to concordance (the `selectedWordforms.json` file generated in the previous section).
+In this command, `{directory}` is the path to the directory where the corpus is located, `--KWIC` indicates that the concordance should be generated in Keyword-in-Context format, `{output path}` is the path where you would like the concordance file generated, and `{wordlist}` is the path to the JSON file containing an array of wordforms to concordance (the `selected_wordforms.json` file generated in the previous section).
 
-In this repository, the resulting concordance files are stored in `data/English/tokens.tsv` and `data/Nuuchahnulth/tokens.tsv` respectively.
+The resulting concordance file for English is stored in `data/English/tokens.tsv`.
 
 You can generate a concordance using a different corpus, list of words, or other options by following the usage instructions for the [DLx concordance library][dlx-concordance].
 
 #### The Annotation Process
 
-Some of the archilexemes I investigated encompass more than one historically unrelated sense. For example, the two primary senses of the English word _like_—'be pleasing' and 'be similar'—are historically unrelated. In these cases, I chose one of the historical forms and annotated only uses relating to that form, removing tokens of any other words from the data. I tried to choose the more frequent use in each case.
+Once the concordance was generated for English, I was able to open it using Microsoft Excel and manually annotate all ~380,000 tokens for reference, predication, and modification. The resulting annotations are saved in `data/English/annotations` in both Excel and TSV formats.
 
 ### Nuuchahnulth
 
@@ -243,7 +248,7 @@ Some of the archilexemes I investigated encompass more than one historically unr
 
 ([back to top](#readme))
 
-## 7. Data Analysis
+## 7. Statistical Analysis
 
 ([back to top](#readme))
 
@@ -284,6 +289,7 @@ Add copyright and license for each section of this repository
 [GitHub]:           https://github.com/dwhieb/dissertation
 [Java]:             https://www.java.com
 [JSON]:             http://json.org/
+[KWIC]:             https://en.wikipedia.org/wiki/Key_Word_in_Context#:~:text=KWIC%20is%20an%20acronym%20for%20Key%20Word%20In,for%20Manchester%20libraries%20in%201864%20by%20Andrea%20Crestadoro.
 [Node]:             https://nodejs.org/
 [npm]:              https://www.npmjs.com/
 [OANC]:             http://www.anc.org/
