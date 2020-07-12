@@ -135,9 +135,7 @@ For the OANC, converting the data to JSON involves first tokenizing the corpus. 
 
 To convert the OANC to JSON, I used a JavaScript library called [`tags2dlx`][tags2dlx], which I wrote and published for this purpose. It takes a directory of texts tagged for part of speech (where each word token is followed by an underscore and then its part-of-speech tag) and converts it to a JSON file. More information about the `tags2dlx` library may be found [here][tags2dlx].
 
-To convert the OANC, follow the instructions for using the `tags2dlx` library, which can be found [here][tags2dlx]. In this repository, the converted files are located in `data/English/data`, and end in a `.json` extension.
-
-<!-- For ease of analysis, I chose to format all the corpora used in this study as [Scription][Scription] files, a simple, very readable text format, which places one interlinear glossed utterance on each line. (For the English data, this simply amounts to placing one utterance / sentence on each line, with no accompanying translation or glosses.) Read more about the Scription format [here][Scription]. -->
+To convert the OANC, follow the instructions for using the `tags2dlx` library, which can be found [here][tags2dlx]. In this repository, the converted files are located in `data/English/texts`, and end in a `.json` extension.
 
 ### Nuuchahnulth
 
@@ -223,8 +221,6 @@ pre           | The words in the utterance preceding the token.
 token         | A transcription of the word token being annotated. This may also be called the <dfn>wordform</dfn>. It does not include any prosodic markup or punctuation.
 post          | The words in the utterance following the token.
 translation   | A translation of the utterance that the word token appears in. This was not included for English data.
-
-<!-- lexeme        | The headword representing the lexeme that this word token belongs to. For homonymous lexemes, a trailing number is sometimes added (for example, `house1`, `house2`). -->
 
 Rather than copy-paste each token and its surrounding context into this spreadsheet, I utilized the [DLx concordance library][dlx-concordance], a tool I wrote and published which takes a list of wordforms, finds every instance of those wordforms in a DLx (JSON) formatted corpus, and generates a tab-delimited list of tokens in Keyword-in-Context format. You can run this script on the command line as follows (making sure you've installed either this project, or the `@digitallinguistics/concordance` library first):
 
