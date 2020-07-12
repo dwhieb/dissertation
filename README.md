@@ -92,7 +92,9 @@ The OANC may be downloaded in its entirety from from the [OANC download page][OA
 
 ### Nuuchahnulth
 
-<!-- TODO -->
+The data used for the investigation of Nuuchahnulth comes from a corpus of texts collected and edited by Toshihide Nakayama, and published in Nakayama ([2003a](#Nakayama2003a), [2003b](#Nakayama2003b)). I manually typed the corpus as simple text files, using a computationally-parseable format for representing linguistic texts known as [scription][scription]. The resulting digitally-searchable corpus may be found [here on GitHub][Nuuchahnulth].
+
+Since the Nuuchahnulth corpus was already available in both scription and [DLx JSON format][DaFoDiL], I simply copied the JSON versions of the texts into the repository for this dissertation.
 
 ([back to top](#readme))
 
@@ -100,7 +102,7 @@ The OANC may be downloaded in its entirety from from the [OANC download page][OA
 
 This section covers the steps necessary to convert and otherwise prepare the data used in this study for annotation and analysis.
 
-When scripting with JavaScript, I find it significantly easier to work with data in [<abbr title='JavaScript Object Notation'>JSON</abbr>][JSON] (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][Daffodil]. This section shows how to convert the data for this study to JSON for further annotation.
+When scripting with JavaScript, I find it significantly easier to work with data in [<abbr title='JavaScript Object Notation'>JSON</abbr>][JSON] (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][DaFoDiL]. This section shows how to convert the data for this study to JSON for further annotation.
 
 ### English
 
@@ -135,13 +137,11 @@ For the OANC, converting the data to JSON involves first tokenizing the corpus. 
 
 To convert the OANC to JSON, I used a JavaScript library called [`tags2dlx`][tags2dlx], which I wrote and published for this purpose. It takes a directory of texts tagged for part of speech (where each word token is followed by an underscore and then its part-of-speech tag) and converts it to a JSON file. More information about the `tags2dlx` library may be found [here][tags2dlx].
 
-To convert the OANC, follow the instructions for using the `tags2dlx` library, which can be found [here][tags2dlx]. In this repository, the converted files are located in `data/English/data`, and end in a `.json` extension.
-
-<!-- For ease of analysis, I chose to format all the corpora used in this study as [Scription][Scription] files, a simple, very readable text format, which places one interlinear glossed utterance on each line. (For the English data, this simply amounts to placing one utterance / sentence on each line, with no accompanying translation or glosses.) Read more about the Scription format [here][Scription]. -->
+To convert the OANC, follow the instructions for using the `tags2dlx` library, which can be found [here][tags2dlx]. In this repository, the converted files are located in `data/English/texts`, and end in a `.json` extension.
 
 ### Nuuchahnulth
 
-<!-- TODO -->
+Since the [Nuuchahnulth corpus][Nuuchahnulth] was already available in DLx JSON format, no further preprocessing of the data was necessary. Once the JSON versions of the Nuuchahnulth texts were copied into this project, they were ready for annotation and analysis.
 
 ([back to top](#readme))
 
@@ -224,8 +224,6 @@ token         | A transcription of the word token being annotated. This may also
 post          | The words in the utterance following the token.
 translation   | A translation of the utterance that the word token appears in. This was not included for English data.
 
-<!-- lexeme        | The headword representing the lexeme that this word token belongs to. For homonymous lexemes, a trailing number is sometimes added (for example, `house1`, `house2`). -->
-
 Rather than copy-paste each token and its surrounding context into this spreadsheet, I utilized the [DLx concordance library][dlx-concordance], a tool I wrote and published which takes a list of wordforms, finds every instance of those wordforms in a DLx (JSON) formatted corpus, and generates a tab-delimited list of tokens in Keyword-in-Context format. You can run this script on the command line as follows (making sure you've installed either this project, or the `@digitallinguistics/concordance` library first):
 
 ```cmd
@@ -240,7 +238,7 @@ You can generate a concordance using a different corpus, list of words, or other
 
 #### The Annotation Process
 
-Once the concordance was generated for English, I was able to open it using Microsoft Excel and manually annotate all ~380,000 tokens for reference, predication, and modification. The resulting annotations are saved in `data/English/annotations` in both Excel and TSV formats.
+Once the tab-separated concordance in KWIC format was generated for English, I was able to open it using Microsoft Excel and manually annotate all ~380,000 tokens for reference, predication, and modification. The resulting annotations are saved in `data/English/annotations` in both Excel and TSV formats.
 
 ### Nuuchahnulth
 
@@ -258,31 +256,30 @@ Once the concordance was generated for English, I was able to open it using Micr
 
 * <p id=Gries2008>Gries, Stefan Th. 2008. Dispersions and adjusted frequencies in corpora. <cite>International Journal of Corpus Linguistics</cite> 13(4): 403–437. DOI:<a href=https://doi.org/10.1075/ijcl.13.4.02gri>10.1075/ijcl.13.4.02gri</a>.</p>
 
+* <p id=Nakayama2003a>Nakayama, Toshihide. 2003. Caroline Little's Nuu-chah-nulth (Ahousaht) texts with grammatical analysis (Endangered Languages of the Pacific Rim A2-027). Nakanishi Printing.</p>
+
+* <p id=Nakayama2003b>Nakayama, Toshihide. 2003. George Louie's Nuu-chah-nulth (Ahousaht) texts with grammatical analysis (Endangered Languages of the Pacific Rim A2-028). Nakanishi Printing.</p>
+
 ([back to top](#readme))
 
 ## 9. Legal
 
-Currently, none of the materials in this repository are licensed for copying, reproduction, redistribution, modification, or reuse. Please contact [Daniel W. Hieber](https://danielhieber.com) if you wish to use any of the materials in this repository.
+[My dissertation][dissertation] is copyrighted to me, and made available for public use under a [CC-BY-ND 4.0 license][CCBYND]. Please feel free to copy and redistribute my thesis, but not to modify it.
 
-### Todo
+The English data in this repository come from the [Open American National Corpus][OANC], and made be freely used without restriction.
 
-(see issue #[549](https://github.com/dwhieb/dissertation/issues/549))
+The Nuuchahnulth data in this repository are copyright to Caroline Little and George Louie, and may not be modified or reproduced without first consulting [Toshihide Nakayama][Toshi], editor of the corpus.
 
-Add copyright and license for each section of this repository
+The scripts in this repository are made freely available under an [MIT license][MIT].
 
-- [ ] document (copyright to me, licensed under CC BY 4.0)
-- [ ] corpora
-  - [ ] OANC (copyright, license)
-- [ ] comics (individual copyrights)
-- [ ] scripts
-  - [ ] ANC tool
-  - [ ] my scripts (MIT license)
+Please contact me, [Daniel W. Hieber](https://danielhieber.com), if you have any other questions about using materials in this repository.
 
 <!-- Links -->
 [ANC-Tool]:         http://www.anc.org/software/anc-tool/
+[CCBYND]:           https://creativecommons.org/licenses/by-nd/4.0/
 [Charlotte]:        https://newsouthvoices.uncc.edu
 [cloning]:          https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
-[Daffodil]:         https://format.digitallinguistics.io/
+[DaFoDiL]:          https://format.digitallinguistics.io/
 [dissertation]:     https://files.danielhieber.com/publications/dissertation.pdf
 [dlx-concordance]:  https://github.com/digitallinguistics/concordance/
 [Excel]:            https://products.office.com/en-us/excel
@@ -290,12 +287,15 @@ Add copyright and license for each section of this repository
 [Java]:             https://www.java.com
 [JSON]:             http://json.org/
 [KWIC]:             https://en.wikipedia.org/wiki/Key_Word_in_Context#:~:text=KWIC%20is%20an%20acronym%20for%20Key%20Word%20In,for%20Manchester%20libraries%20in%201864%20by%20Andrea%20Crestadoro.
+[MIT]:              https://choosealicense.com/licenses/mit/
 [Node]:             https://nodejs.org/
 [npm]:              https://www.npmjs.com/
+[Nuuchahnulth]:     https://github.com/dwhieb/Nuuchahnulth
 [OANC]:             http://www.anc.org/
 [OANC-download]:    http://www.anc.org/data/oanc/download/
 [OpenOffice]:       http://www.openoffice.org/product/calc.html
 [R]:                https://www.r-project.org/
-[Scription]:        https://scription.digitallinguistics.io/
+[scription]:        https://scription.digitallinguistics.io/
 [Switchboard]:      https://catalog.ldc.upenn.edu/LDC97S62
 [tags2dlx]:         https://github.com/digitallinguistics/tags2dlx
+[Toshi]:            http://www.aa.tufs.ac.jp/en/staff/list1/nakayamat
