@@ -21,7 +21,7 @@ export default async function findAndReplace(searchFunction = u => u, { searchOn
 
   const spinner = createSpinner(`Running ${searchOnly ? `search` : `find and replace`}${testRun ? ` as a test run` : ``}.`).start();
 
-  const jsonPath  = path.join(`texts`, `json`);
+  const jsonPath  = path.join(`data`, `Nuuchahnulth`, `texts`);
   const filenames = await readDir(jsonPath);
 
   const progressBar = new ProgressBar(`:bar :current :total :percent :eta`, { total: filenames.length });
