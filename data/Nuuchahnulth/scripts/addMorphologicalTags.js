@@ -12,46 +12,50 @@ import glossTags      from './constants/glossTags.js';
 
 const glosses = new Map(Object.entries(glossTags));
 
-void async function addMorphologicalTags() {
+async function addMorphologicalTags() {
 
   const options = {
     searchOnly: false,
     testRun:    true,
   };
 
-  await findAndReplace(({ words }) => {
+  await findAndReplace(utterance => {
 
-    if (!words) return;
+    if (!utterance.words) return;
 
-    words.forEach(word => {
+    utterance.words = utterance.words.map(word => {
 
       word.tags = {};
 
-      if (!word.morphemes) return;
+      if (!word.morphemes) return word;
 
-      if (!Array.isArray(word.morphemes)) {
-        console.log(word.morphemes);
-      }
-
-      const tags = words.morphemes.map(({ gloss }) => glosses.get(gloss));
+      const tags = word.morphemes
+      .map(({ gloss }) => glosses.get(gloss))
+      .filter(Boolean);
 
       if (tags.includes(`PRED-REF`)) {
         word.tags.morphPOS = `PRED-REF`;
-        return;
+        return word;
       }
 
-      if (tags.include(`REF`)) {
+      if (tags.includes(`REF`)) {
         word.tags.morphPOS = `REF`;
-        return;
+        return word;
       }
 
       if (tags.includes(`PRED`)) {
         word.tags.morphPOS = `PRED`;
+        return word;
       }
+
+      return word;
 
     });
 
+    return utterance;
+
   }, options);
 
+}
 
-}();
+addMorphologicalTags().catch(console.error);
