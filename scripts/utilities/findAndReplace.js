@@ -26,7 +26,7 @@ export default async function findAndReplace(searchFunction = u => u, { searchOn
 
   const progressBar = new ProgressBar(`:bar :current :total :percent :eta`, { total: filenames.length });
 
-  await Promise.all(filenames.map(async filename => {
+  await Promise.all(filenames.filter(filename => !filename.endsWith(`-updated.json`)).map(async filename => {
 
     const filePath = path.join(jsonPath, filename);
     const text     = await readJSON(filePath);
