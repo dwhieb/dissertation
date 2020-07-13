@@ -16,7 +16,7 @@ async function addMorphologicalTags() {
 
   const options = {
     searchOnly: false,
-    testRun:    true,
+    testRun:    false,
   };
 
   await findAndReplace(utterance => {
