@@ -31,7 +31,7 @@ export default async function findAndReplace(searchFunction = u => u, { searchOn
     const filePath = path.join(jsonPath, filename);
     const text     = await readJSON(filePath);
 
-    text.utterances = text.utterances.map(searchFunction);
+    text.utterances = text.utterances.map(utterance => searchFunction(utterance) ?? utterance);
 
     if (searchOnly) return progressBar.tick();
 
