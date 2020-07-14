@@ -243,7 +243,7 @@ Once the tab-separated concordance in KWIC format was generated for English, I w
 
 ### Nuuchahnulth
 
-<!-- TODO -->
+Because the size of the Nuuchahnulth corpus is significantly smaller than that of the English corpus, it was not necessary to select a subset of the data to code. Instead, it was possible to annotate every lexical item in the corpus. In addition, because the Nuuchahnulth corpus consists of interlinear glossed texts, it was possible to programmatically tag all words in the corpus for part of speech based on their morphology. This was accomplished with a simple script, which can be run by entering `node data/Nuuchahnulth/scripts/addMorphologicalTags.js` from the command line. This script adds a `morphPOS` tag to each word in the corpus based on that word's morphology. For example, if a word has the the definite suffix _‑ʔiˑ_ it is marked as a nominal. The value of this tag is either `REF` (reference), `PRED` (predication), or `PRED-REF` (ambiguous between predication and reference; this applies specifically to words which have a indefinite relative suffix). Because words tagged as `PRED-REF` are categorially ambiguous in isolation, I further examined each of these cases and manually annotated them as predicates or referents depending on their context in discourse.
 
 ([back to top](#readme))
 
