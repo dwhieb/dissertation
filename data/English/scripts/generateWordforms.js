@@ -1,18 +1,25 @@
-import createSpinner     from 'ora';
+/* eslint-disable
+  max-statements,
+*/
+
+import csvStringify      from 'csv-stringify';
 import { fileURLToPath } from 'url';
 import fs                from 'fs-extra';
 import path              from 'path';
 import processDir        from '../../../scripts/utilities/processDir.js';
+import ProgressBar       from 'progress';
+import { promisify }     from 'util';
 import YAML              from 'yaml';
 
 const {
   readFile,
   readJSON,
-  writeJSON,
+  writeFile,
 } = fs;
 
 const badCharsRegExp = /[^A-Za-z]/u;
 const currentDir     = path.dirname(fileURLToPath(import.meta.url));
+const json2csv       = promisify(csvStringify);
 
 /**
  * Increments the frequency of a word token in a frequency Map
@@ -42,14 +49,13 @@ function ignore(filePath, stats) {
 
 /**
  * Generates a tab-delimited file of raw frequencies and dispersions for each wordform in the corpus
- * @param  {String}   dataDir        The directory of JSON files to calculate frequencies for
- * @param  {String}   outputPath     The path to the file to generate
- * @param  {Function} filterFunction A filter function which accepts a DLx Word Token, and returns true to keep the word, false otherwise. Excluded words will be included in frequency counts, but not the final list of generated wordforms.
+ * @param  {String}   dataDir    The directory of JSON files to calculate frequencies for
+ * @param  {String}   outputPath The path to the file to generate
  * @return {Promise}
  */
 export default async function generateWordforms(dataDir, outputPath) {
 
-  const spinner = createSpinner(`Calculating raw frequencies of wordforms`).start();
+  console.info(`Calculating raw frequencies of wordforms`);
 
   const corpusWordforms = new Map;
   const texts           = new Map;
@@ -107,13 +113,88 @@ export default async function generateWordforms(dataDir, outputPath) {
 
   };
 
-  try {
-    await processDir(dataDir, processFile, ignore);
-  } catch (e) {
-    spinner.fail(e.message);
-    throw e;
-  }
+  // RAW FREQUENCIES OF WORDFORMS
+
+  await processDir(dataDir, processFile, ignore);
+
+  // CORPUS SIZE
 
   console.info(`\nSize of Corpus: ${corpusSize.toLocaleString()} words\n`);
+
+  // RELATIVE TEXT SIZES
+
+  texts.forEach(info => {
+    // eslint-disable-next-line no-param-reassign
+    info.relativeSize = info.rawSize / corpusSize;
+  });
+
+  // CORPUS DISPERSIONS
+
+  console.info(`Calculating corpus dispersions`);
+
+  const progressBar = new ProgressBar(`:bar`, { total: corpusWordforms.size });
+
+  for (const [wordform, corpusFrequency] of corpusWordforms) {
+
+    const textFrequencies = new Map;
+
+    // get raw and relative frequencies of the wordform in each text
+    for (const [text, { wordforms }] of texts) {
+
+      const textFrequency = wordforms.get(wordform) || 0;
+
+      textFrequencies.set(text, {
+        raw:      textFrequency,
+        relative: textFrequency / corpusFrequency,
+      });
+
+    }
+
+    // get absolute difference between
+    // expected relative frequency of the wordform in each text
+    // and
+    // actual relative frequency of the wordform in each text
+    const differences = Array.from(texts.entries())
+    .reduce((diffs, [text, { relativeSize: expectedFreq }]) => {
+
+      const { relative: actualFreq } = textFrequencies.get(text);
+      const diff = Math.abs(expectedFreq - actualFreq);
+
+      return diffs.set(text, diff);
+
+    }, new Map);
+
+    // get sum of the absolute differences calculated above
+    const sumDifferences = Array.from(differences.values())
+    .reduce((sum, count) => sum + count, 0);
+
+    // get measure of corpus dispersion (Deviation of Proportions (DP))
+    const dispersion = sumDifferences / 2;
+
+    corpusWordforms.set(wordform, {
+      dispersion,
+      frequency: corpusFrequency,
+    });
+
+    progressBar.tick();
+
+  }
+
+  const csvOptions = {
+    columns: [
+      `wordform`,
+      `frequency`,
+      `dispersion`,
+    ],
+    delimiter: `\t`,
+    header:    true,
+  };
+
+  // generate wordforms.tsv
+  const tableData = Array.from(corpusWordforms.entries())
+  .map(([wordform, { dispersion, frequency }]) => [wordform, frequency, dispersion]);
+
+  const wordformsTSV = await json2csv(tableData, csvOptions);
+  await writeFile(outputPath, wordformsTSV, `utf8`);
 
 }
