@@ -45,7 +45,7 @@ findAndReplace(utterance => {
 
   return utterance;
 
-}, { searchOnly: false, testRun: true })
+}, { searchOnly: false, testRun: false })
 .catch(e => {
   throw e;
 });
