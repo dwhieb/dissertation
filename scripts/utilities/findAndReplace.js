@@ -1,10 +1,9 @@
 import createSpinner from 'ora';
 import fs            from 'fs-extra';
 import path          from 'path';
-import ProgressBar   from 'progress';
+import processDir    from './processDir.js';
 
 const {
-  readdir: readDir,
   readJSON,
   writeJSON,
 } = fs;
@@ -19,30 +18,37 @@ const {
  */
 export default async function findAndReplace(searchFunction = u => u, { searchOnly = true, testRun = true } = {}) {
 
-  const spinner = createSpinner(`Running ${searchOnly ? `search` : `find and replace`}${testRun ? ` as a test run` : ``}.`).start();
+  const spinner  = createSpinner(`Running ${searchOnly ? `search` : `find and replace`}${testRun ? ` as a test run` : ``}.`).start();
+  const jsonPath = path.join(`data`, `Nuuchahnulth`, `texts`);
 
-  const jsonPath  = path.join(`data`, `Nuuchahnulth`, `texts`);
-  const filenames = await readDir(jsonPath);
+  /**
+   * Ignore method which tells processDir to ignore the -updated.json files
+   * and any non-JSON files
+   */
+  const ignore = (filePath, stats) => {
+    if (stats.isDirectory()) return false;
+    if (filePath.endsWith(`-updated.json`)) return true;
+    return path.extname(filePath) !== `.json`;
+  };
 
-  const progressBar = new ProgressBar(`:bar :current :total :percent :eta`, { total: filenames.length });
+  const processFile = async filePath => {
 
-  await Promise.all(filenames.filter(filename => !filename.endsWith(`-updated.json`)).map(async filename => {
-
-    const filePath = path.join(jsonPath, filename);
-    const text     = await readJSON(filePath);
+    const text = await readJSON(filePath);
 
     text.utterances = text.utterances.map(utterance => searchFunction(utterance) ?? utterance);
 
-    if (searchOnly) return progressBar.tick();
+    if (searchOnly) return;
 
     const writePath = testRun ? filePath.replace(`.json`, `-updated.json`) : filePath;
     await writeJSON(writePath, text, { spaces: 2 });
-    progressBar.tick();
 
-  })).catch(e => {
+  };
+
+  try {
+    await processDir(jsonPath, processFile, ignore);
+  } catch (e) {
     spinner.fail(e.message);
-    throw e;
-  });
+  }
 
   spinner.succeed(`${searchOnly ? `Search` : `Find and replace`} complete.`);
 
