@@ -13,9 +13,14 @@
   no-undefined,
 */
 
-import findAndReplace from '../../../scripts/utilities/findAndReplace.js';
+import { fileURLToPath } from 'url';
+import findAndReplace    from '../../../scripts/utilities/findAndReplace.js';
+import path              from 'path';
 
-findAndReplace(utterance => {
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
+const dataDir    = path.join(currentDir, `../texts`);
+
+findAndReplace(dataDir, utterance => {
 
   if (!utterance.words) return utterance;
 

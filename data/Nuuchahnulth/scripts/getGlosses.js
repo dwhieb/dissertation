@@ -6,13 +6,18 @@
   max-nested-callbacks,
 */
 
-import findAndReplace from '../../../scripts/utilities/findAndReplace.js';
+import { fileURLToPath } from 'url';
+import findAndReplace    from '../../../scripts/utilities/findAndReplace.js';
+import path              from 'path';
+
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
 
 void async function getGlosses() {
 
-  let glosses = new Set;
+  const dataDir = path.join(currentDir, `../texts`);
+  let   glosses = new Set;
 
-  await findAndReplace(({ words }) => {
+  await findAndReplace(dataDir, ({ words }) => {
 
     if (!words) return;
 

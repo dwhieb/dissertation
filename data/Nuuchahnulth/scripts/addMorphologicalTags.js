@@ -7,19 +7,24 @@
   no-param-reassign,
 */
 
-import findAndReplace from '../../../scripts/utilities/findAndReplace.js';
-import glossTags      from './constants/glossTags.js';
+import { fileURLToPath } from 'url';
+import findAndReplace    from '../../../scripts/utilities/findAndReplace.js';
+import glossTags         from './constants/glossTags.js';
+import path              from 'path';
 
-const glosses = new Map(Object.entries(glossTags));
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
 
 async function addMorphologicalTags() {
+
+  const dataDir = path.join(currentDir, `../texts`);
+  const glosses = new Map(Object.entries(glossTags));
 
   const options = {
     searchOnly: false,
     testRun:    false,
   };
 
-  await findAndReplace(utterance => {
+  await findAndReplace(dataDir, utterance => {
 
     if (!utterance.words) return utterance;
 

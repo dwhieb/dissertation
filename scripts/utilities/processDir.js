@@ -10,20 +10,12 @@ import recurse     from 'recursive-readdir';
  */
 export default async function processDir(dir, task, ignore) {
 
-  try {
+  const files       = await recurse(dir, [ignore]);
+  const progressBar = new ProgressBar(`:bar :current :total :percent :eta`, { total: files.length });
 
-    const files       = await recurse(dir, [ignore]);
-    const progressBar = new ProgressBar(`:bar`, { total: files.length });
-
-    for (const filePath of files) {
-      await task(filePath); // eslint-disable-line no-await-in-loop
-      progressBar.tick();
-    }
-
-  } catch (e) {
-
-    console.error(e);
-
+  for (const filePath of files) {
+    await task(filePath); // eslint-disable-line no-await-in-loop
+    progressBar.tick();
   }
 
 }

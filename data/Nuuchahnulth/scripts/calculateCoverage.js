@@ -7,14 +7,19 @@
   max-nested-callbacks,
 */
 
-import findAndReplace from '../../../scripts/utilities/findAndReplace.js';
+import { fileURLToPath } from 'url';
+import findAndReplace    from '../../../scripts/utilities/findAndReplace.js';
+import path              from 'path';
+
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
 
 void async function calculateCoverage() {
 
+  const dataDir = path.join(currentDir, `../texts`);
   let numTokens = 0;
   let numTagged = 0;
 
-  await findAndReplace(utterance => {
+  await findAndReplace(dataDir, utterance => {
 
     if (!utterance?.words) return;
 
