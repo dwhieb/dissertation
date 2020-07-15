@@ -293,7 +293,7 @@ Please contact me, [Daniel W. Hieber](https://danielhieber.com), if you have any
 [GitHub]:           https://github.com/dwhieb/dissertation
 [Java]:             https://www.java.com
 [JSON]:             http://json.org/
-[KWIC]:             https://en.wikipedia.org/wiki/Key_Word_in_Context#:~:text=KWIC%20is%20an%20acronym%20for%20Key%20Word%20In,for%20Manchester%20libraries%20in%201864%20by%20Andrea%20Crestadoro.
+[KWIC]:             https://en.wikipedia.org/wiki/Key_Word_in_Context
 [MIT]:              https://choosealicense.com/licenses/mit/
 [Node]:             https://nodejs.org/
 [npm]:              https://www.npmjs.com/
