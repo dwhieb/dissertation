@@ -21,7 +21,7 @@ async function addMorphologicalTags() {
 
   await findAndReplace(utterance => {
 
-    if (!utterance.words) return;
+    if (!utterance.words) return utterance;
 
     utterance.words = utterance.words.map(word => {
 
