@@ -5,19 +5,35 @@
 
 // IMPORTS
 
-import csvStringify  from 'csv-stringify';
-import fs            from 'fs';
-import path          from 'path';
-import ProgressBar   from 'progress';
-import { promisify } from 'util';
-import recurse       from 'recursive-readdir';
-
-const json2csv = promisify(csvStringify);
+import csvStringify      from 'csv-stringify';
+import { fileURLToPath } from 'url';
+import fs                from 'fs';
+import path              from 'path';
+import ProgressBar       from 'progress';
+import { promisify }     from 'util';
+import recurse           from 'recursive-readdir';
+import YAML              from 'yaml';
 
 const {
   readFile,
   writeFile,
 } = fs.promises;
+
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
+
+const json2csv = promisify(csvStringify);
+
+// CONSTANTS
+
+const badCharsRegExp     = /[^A-Za-z]/u;
+
+const nonLexicalTagsPath = path.join(currentDir, `./constants/nonLexicalTags.yml`);
+const nonLexicalTagsYAML = fs.readFileSync(nonLexicalTagsPath, `utf8`); // eslint-disable-line no-sync
+const nonLexicalTags     = YAML.parse(nonLexicalTagsYAML);
+
+const blacklistPath      = path.join(currentDir, `./constants/blacklist.yml`);
+const blacklistYAML      = fs.readFileSync(blacklistPath, `utf8`); // eslint-disable-line no-sync
+const blacklist          = YAML.parse(blacklistYAML);
 
 // METHODS
 
@@ -44,28 +60,26 @@ function filter() {
 }
 
 /**
- * Ignore method which tells recursive-readdir to ignore any non-DLx files
- */
-function ignore(filePath, stats) {
-  if (stats.isDirectory()) return false;
-  if (filePath.endsWith(`_wordforms.json`)) return true;
-  return path.extname(filePath) !== `.json`;
-}
-
-// MAIN
-
-/**
  * Generates a tab-delimited file of raw frequencies and dispersions for each wordform in the corpus
  * @param  {String}   dataDir        The directory of JSON files to calculate frequencies for
  * @param  {String}   outputPath     The path to the file to generate
  * @param  {Function} filterFunction A filter function which accepts a DLx Word Token, and returns true to keep the word, false otherwise. Excluded words will be included in frequency counts, but not the final list of generated wordforms.
  * @return {Promise}
  */
-export default async function generateWordforms(dataDir, outputPath, filterFunction = filter) {
+async function generateWordforms(dataDir, outputPath, filterFunction = filter) {
 
   let   corpusSize      = 0;
   const corpusWordforms = new Map;
   const texts           = new Map;
+
+  /**
+   * Ignore method which tells recursive-readdir to ignore any non-DLx files
+   */
+  function ignore(filePath, stats) {
+    if (stats.isDirectory()) return false;
+    if (filePath.endsWith(`_wordforms.json`)) return true;
+    return path.extname(filePath) !== `.json`;
+  }
 
   const dlxFiles               = await recurse(dataDir, [ignore]);
   const frequenciesProgressBar = new ProgressBar(`:bar`, { total: dlxFiles.length });
@@ -194,3 +208,23 @@ export default async function generateWordforms(dataDir, outputPath, filterFunct
   await writeFile(outputPath, wordformsTSV, `utf8`);
 
 }
+
+function hasBadChars(string) {
+  return badCharsRegExp.test(string);
+}
+
+/**
+ * A filter function which accepts a DLx Word Token object for a word in English,
+ * and returns true if the token should be included in the wordforms list,
+ * false otherwise.
+ * @param  {Word}    word A DLx Word Token object for an English word token
+ * @return {Boolean}
+ */
+function isGoodToken({ tags: { Penn }, transcription }) {
+  if (blacklist.includes(transcription)) return false;
+  if (hasBadChars(transcription)) return false;
+  if (nonLexicalTags.includes(Penn)) return false;
+  return true;
+}
+
+export default (dataDir, outputPath) => generateWordforms(dataDir, outputPath, isGoodToken);

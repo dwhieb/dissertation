@@ -156,19 +156,13 @@ This section covers the technical steps involved in the process of annotating th
 
 100 archilexemes were selected from the English corpus for annotation. These archilexemes were chosen randomly from the set of wordforms in the corpus, by first dividing those wordforms into 100 different bins depending on the corpus dispersion of that wordform (measured using <dfn>Deviation of Proportions</dfn> (<abbr title='Deviation of Proportions'>DP</abbr>) [Gries [2008](#Gries2008)]), and then selecting one word randomly from each bin. Words which did not meet the selection criteria were thrown out, and the process was repeated until 100 viable archilexemes were found. The selection criteria for archilexemes are discussed in the Data & Methods chapter of my dissertation document, available [here][dissertation].
 
-To select the 100 archilexemes, I first wrote a script which produces a tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion. In addition, the script prints the total size of the corpus to the console. This script can be run on the command line using the following command, where `{input}` is the path to the directory where the JSON corpus is located, and `{output}` is the location where you would like the resulting TSV file generated:
+To select the 100 archilexemes, I wrote a script which produces a tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion. In addition, the script prints the total size of the corpus to the console. This script can be run on the command line using the following command, where `{input}` is the path to the directory where the JSON corpus is located, and `{output}` is the location where you would like the resulting TSV file generated:
 
 ```cmd
 node stats/scripts/bin/generateWordforms.js {input} {output}
 ```
 
-However, this script by itself does not filter the data in any way. The list of wordforms it generates includes many that are unnecessary for this study. To make the task of selecting words for annotation easier, I created another script which filters out unwanted tokens from the resulting list of wordforms (without affecting the calculation of dispersion). This script can be run with the following command:
-
-```cmd
-node data/English/scripts/bin/generateEnglishWordforms.js {input} {output}
-```
-
-This script relies on two files: `blacklist.yml` and `nonLexicalTags.yml`, both located in the `data/English/scripts/constants` folder. The `blacklist.yml` file contains a list of wordforms that should not be included in the list of wordforms (but again, without affecting calculation of dispersion, or the overall reported corpus frequency). Similarly, the `nonLexicalTags.yml` file contains Penn tags which should be excluded from the resulting wordlist. You can update either of these files to change the words which are filtered out of the English data.
+This script also filters out unwanted tokens from the data (without affecting the calculation of dispersion). It relies on two files: `blacklist.yml` and `nonLexicalTags.yml`, both located in the `data/English/scripts/constants` folder. The `blacklist.yml` file contains a list of wordforms that should not be included in the list of wordforms (but again, without affecting calculation of dispersion, or the overall reported corpus frequency). Similarly, the `nonLexicalTags.yml` file contains Penn tags which should be excluded from the resulting wordlist. You can update either of these files to change the words which are filtered out of the English data.
 
 ---
 

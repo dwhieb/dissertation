@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-import generateEnglishWordforms from '../generateEnglishWordforms.js';
+import generateWordforms from '../generateWordforms.js';
 
 const [,, dataDir, outputPath] = process.argv;
 
 if (!dataDir) throw new Error(`Please provide the path to the data directory as the first argument.`);
 if (!outputPath) throw new Error(`Please provide the path where you would like the wordforms file generated.`);
 
-generateEnglishWordforms(dataDir, outputPath).catch(console.error);
+generateWordforms(dataDir, outputPath).catch(console.error);
