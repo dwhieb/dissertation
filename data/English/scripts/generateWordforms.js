@@ -51,11 +51,30 @@ function countToken({ transcription }, frequencies) {
 
 }
 
+function hasBadChars(string) {
+  return badCharsRegExp.test(string);
+}
+
 /**
- * A no-op filter function for use with Array#filter
- * @return {Boolean} Always returns true
+ * Ignore method which tells recursive-readdir to ignore any non-DLx files
  */
-function filter() {
+function ignore(filePath, stats) {
+  if (stats.isDirectory()) return false;
+  if (filePath.endsWith(`_wordforms.json`)) return true;
+  return path.extname(filePath) !== `.json`;
+}
+
+/**
+ * A filter function which accepts a DLx Word Token object for a word in English,
+ * and returns true if the token should be included in the wordforms list,
+ * false otherwise.
+ * @param  {Word}    word A DLx Word Token object for an English word token
+ * @return {Boolean}
+ */
+function isGoodToken({ tags: { Penn }, transcription }) {
+  if (blacklist.includes(transcription)) return false;
+  if (hasBadChars(transcription)) return false;
+  if (nonLexicalTags.includes(Penn)) return false;
   return true;
 }
 
@@ -66,24 +85,14 @@ function filter() {
  * @param  {Function} filterFunction A filter function which accepts a DLx Word Token, and returns true to keep the word, false otherwise. Excluded words will be included in frequency counts, but not the final list of generated wordforms.
  * @return {Promise}
  */
-async function generateWordforms(dataDir, outputPath, filterFunction = filter) {
+export default async function generateWordforms(dataDir, outputPath) {
 
   let   corpusSize      = 0;
   const corpusWordforms = new Map;
   const texts           = new Map;
 
-  /**
-   * Ignore method which tells recursive-readdir to ignore any non-DLx files
-   */
-  function ignore(filePath, stats) {
-    if (stats.isDirectory()) return false;
-    if (filePath.endsWith(`_wordforms.json`)) return true;
-    return path.extname(filePath) !== `.json`;
-  }
-
   const dlxFiles               = await recurse(dataDir, [ignore]);
   const frequenciesProgressBar = new ProgressBar(`:bar`, { total: dlxFiles.length });
-
 
   // RAW WORDFORM FREQUENCIES
 
@@ -106,7 +115,7 @@ async function generateWordforms(dataDir, outputPath, filterFunction = filter) {
       textSize   += words.length;
 
       words
-      .filter(filterFunction)
+      .filter(isGoodToken)
       .forEach(w => {
         countToken(w, textWordforms);
         countToken(w, corpusWordforms);
@@ -208,23 +217,3 @@ async function generateWordforms(dataDir, outputPath, filterFunction = filter) {
   await writeFile(outputPath, wordformsTSV, `utf8`);
 
 }
-
-function hasBadChars(string) {
-  return badCharsRegExp.test(string);
-}
-
-/**
- * A filter function which accepts a DLx Word Token object for a word in English,
- * and returns true if the token should be included in the wordforms list,
- * false otherwise.
- * @param  {Word}    word A DLx Word Token object for an English word token
- * @return {Boolean}
- */
-function isGoodToken({ tags: { Penn }, transcription }) {
-  if (blacklist.includes(transcription)) return false;
-  if (hasBadChars(transcription)) return false;
-  if (nonLexicalTags.includes(Penn)) return false;
-  return true;
-}
-
-export default (dataDir, outputPath) => generateWordforms(dataDir, outputPath, isGoodToken);
