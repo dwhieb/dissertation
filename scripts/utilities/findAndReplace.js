@@ -11,15 +11,19 @@ const {
 /**
  * Searches the entire Nuuchahnulth corpus using the provided search function,
  * and saves any changes that are made to the corpus, overwriting old files
+ * @param {String}   dataDir                   The path to the directory to run the find and replace in
  * @param {Function} searchFunction            A function that accepts an utterance as an argument, and returns an updated utterance. Return the original utterance if no changes need to be made.
  * @param {Object}   [options={}]              An options hash
  * @param {Boolean}  [options.testRun=true]    Whether to resave the files over the originals (testRun = false), or as a new file (testRun = true). Defaults to true.
  * @param {Boolean}  [options.searchOnly=true] Whether function is being called for search, or for find and replace. If true, does not update/resave files. If false, files are saved/overwritten.
  */
-export default async function findAndReplace(searchFunction = u => u, { searchOnly = true, testRun = true } = {}) {
+export default async function findAndReplace(
+  dataDir,
+  searchFunction = u => u,
+  { searchOnly = true, testRun = true } = {},
+) {
 
   const spinner  = createSpinner(`Running ${searchOnly ? `search` : `find and replace`}${testRun ? ` as a test run` : ``}.`).start();
-  const jsonPath = path.join(`data`, `Nuuchahnulth`, `texts`);
 
   /**
    * Ignore method which tells processDir to ignore the -updated.json files
@@ -45,7 +49,7 @@ export default async function findAndReplace(searchFunction = u => u, { searchOn
   };
 
   try {
-    await processDir(jsonPath, processFile, ignore);
+    await processDir(dataDir, processFile, ignore);
   } catch (e) {
     spinner.fail(e.message);
     throw e;

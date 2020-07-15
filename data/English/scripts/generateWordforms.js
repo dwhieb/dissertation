@@ -23,12 +23,12 @@ const json2csv       = promisify(csvStringify);
 
 /**
  * Increments the frequency of a word token in a frequency Map
- * @param  {Object} word        A DLx Word Token object
+ * @param  {String} token       The word token
  * @param  {Map}    frequencies A Map of wordforms to their frequencies
  */
-function countToken({ transcription }, frequencies) {
+function countToken(token, frequencies) {
 
-  const wordform = transcription.toLowerCase();
+  const wordform = token.toLowerCase();
 
   if (frequencies.has(wordform)) frequencies.set(wordform, frequencies.get(wordform) + 1);
   else frequencies.set(wordform, 1);
@@ -98,8 +98,8 @@ export default async function generateWordforms(dataDir, outputPath) {
       words
       .filter(isGoodToken)
       .forEach(word => {
-        countToken(word, textWordforms);
-        countToken(word, corpusWordforms);
+        countToken(word.transcription, textWordforms);
+        countToken(word.transcription, corpusWordforms);
       });
 
     });
