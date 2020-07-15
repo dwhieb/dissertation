@@ -1,41 +1,18 @@
-/* eslint-disable
-  max-statements,
-  no-await-in-loop,
-*/
-
-// IMPORTS
-
-import csvStringify      from 'csv-stringify';
+import createSpinner     from 'ora';
 import { fileURLToPath } from 'url';
-import fs                from 'fs';
+import fs                from 'fs-extra';
 import path              from 'path';
-import ProgressBar       from 'progress';
-import { promisify }     from 'util';
-import recurse           from 'recursive-readdir';
+import processDir        from '../../../scripts/utilities/processDir.js';
 import YAML              from 'yaml';
 
 const {
   readFile,
-  writeFile,
-} = fs.promises;
+  readJSON,
+  writeJSON,
+} = fs;
 
-const currentDir = path.dirname(fileURLToPath(import.meta.url));
-
-const json2csv = promisify(csvStringify);
-
-// CONSTANTS
-
-const badCharsRegExp     = /[^A-Za-z]/u;
-
-const nonLexicalTagsPath = path.join(currentDir, `./constants/nonLexicalTags.yml`);
-const nonLexicalTagsYAML = fs.readFileSync(nonLexicalTagsPath, `utf8`); // eslint-disable-line no-sync
-const nonLexicalTags     = YAML.parse(nonLexicalTagsYAML);
-
-const blacklistPath      = path.join(currentDir, `./constants/blacklist.yml`);
-const blacklistYAML      = fs.readFileSync(blacklistPath, `utf8`); // eslint-disable-line no-sync
-const blacklist          = YAML.parse(blacklistYAML);
-
-// METHODS
+const badCharsRegExp = /[^A-Za-z]/u;
+const currentDir     = path.dirname(fileURLToPath(import.meta.url));
 
 /**
  * Increments the frequency of a word token in a frequency Map
@@ -56,26 +33,11 @@ function hasBadChars(string) {
 }
 
 /**
- * Ignore method which tells recursive-readdir to ignore any non-DLx files
+ * Ignore method which tells recursive-readdir to ignore any non-JSON files
  */
 function ignore(filePath, stats) {
   if (stats.isDirectory()) return false;
-  if (filePath.endsWith(`_wordforms.json`)) return true;
   return path.extname(filePath) !== `.json`;
-}
-
-/**
- * A filter function which accepts a DLx Word Token object for a word in English,
- * and returns true if the token should be included in the wordforms list,
- * false otherwise.
- * @param  {Word}    word A DLx Word Token object for an English word token
- * @return {Boolean}
- */
-function isGoodToken({ tags: { Penn }, transcription }) {
-  if (blacklist.includes(transcription)) return false;
-  if (hasBadChars(transcription)) return false;
-  if (nonLexicalTags.includes(Penn)) return false;
-  return true;
 }
 
 /**
@@ -87,28 +49,41 @@ function isGoodToken({ tags: { Penn }, transcription }) {
  */
 export default async function generateWordforms(dataDir, outputPath) {
 
-  let   corpusSize      = 0;
+  const spinner = createSpinner(`Calculating raw frequencies of wordforms`).start();
+
   const corpusWordforms = new Map;
   const texts           = new Map;
+  let   corpusSize      = 0;
 
-  const dlxFiles               = await recurse(dataDir, [ignore]);
-  const frequenciesProgressBar = new ProgressBar(`:bar`, { total: dlxFiles.length });
+  const nonLexicalTagsPath = path.join(currentDir, `./constants/nonLexicalTags.yml`);
+  const nonLexicalTagsYAML = await readFile(nonLexicalTagsPath, `utf8`);
+  const nonLexicalTags     = YAML.parse(nonLexicalTagsYAML);
 
-  // RAW WORDFORM FREQUENCIES
+  const blacklistPath      = path.join(currentDir, `./constants/blacklist.yml`);
+  const blacklistYAML      = await readFile(blacklistPath, `utf8`);
+  const blacklist          = YAML.parse(blacklistYAML);
 
-  console.info(`Calculating raw frequencies`);
+  /**
+   * A filter function which accepts a DLx Word Token object for a word in English,
+   * and returns true if the token should be included in the wordforms list,
+   * false otherwise.
+   * @param  {Word}    word A DLx Word Token object for an English word token
+   * @return {Boolean}
+   */
+  const isGoodToken = ({ tags: { Penn }, transcription }) => {
+    if (blacklist.includes(transcription)) return false;
+    if (hasBadChars(transcription)) return false;
+    if (nonLexicalTags.includes(Penn)) return false;
+    return true;
+  };
 
-  for (const filePath of dlxFiles) {
+  const processFile = async filePath => {
 
-    const json           = await readFile(filePath, `utf8`);
-    const { utterances } = JSON.parse(json);
-    const textWordforms  = new Map;
-    let   textSize       = 0;
+    const textWordforms = new Map;
+    let   textSize      = 0;
 
-    // increment text and corpus counts for each token in the text
-    // filter out unwanted data (using provided filter function)
-    // add remaining data to corpus and text wordforms Maps
-    // eslint-disable-next-line no-loop-func
+    const { utterances } = await readJSON(filePath);
+
     utterances.forEach(({ words }) => {
 
       corpusSize += words.length;
@@ -116,9 +91,9 @@ export default async function generateWordforms(dataDir, outputPath) {
 
       words
       .filter(isGoodToken)
-      .forEach(w => {
-        countToken(w, textWordforms);
-        countToken(w, corpusWordforms);
+      .forEach(word => {
+        countToken(word, textWordforms);
+        countToken(word, corpusWordforms);
       });
 
     });
@@ -130,90 +105,15 @@ export default async function generateWordforms(dataDir, outputPath) {
       wordforms: textWordforms,
     });
 
-    frequenciesProgressBar.tick();
-
-  }
-
-
-  // CORPUS SIZE
-
-  console.info(`\nSize of Corpus: ${corpusSize.toLocaleString()} words\n`);
-
-  // RELATIVE TEXT SIZES
-
-  texts.forEach(info => {
-    // eslint-disable-next-line no-param-reassign
-    info.relativeSize = info.rawSize / corpusSize;
-  });
-
-
-  // DISPERSIONS
-
-  console.info(`Calculating corpus dispersions`);
-
-  const dispersionsProgressBar = new ProgressBar(`:bar`, { total: corpusWordforms.size });
-
-  for (const [wordform, corpusFrequency] of corpusWordforms) {
-
-    const textFrequencies = new Map;
-
-    // raw and relative frequencies of the wordform in each text
-    for (const [text, { wordforms }] of texts) {
-
-      const textFrequency = wordforms.get(wordform) || 0;
-
-      textFrequencies.set(text, {
-        raw:      textFrequency,
-        relative: textFrequency / corpusFrequency,
-      });
-
-    }
-
-    // absolute difference between
-    // expected relative frequency of the wordform in each text
-    // and
-    // actual relative frequency of the wordform in each text
-    const differences = Array.from(texts.entries())
-    .reduce((diffs, [text, { relativeSize: expectedFreq }]) => {
-
-      const { relative: actualFreq } = textFrequencies.get(text);
-      const diff = Math.abs(expectedFreq - actualFreq);
-
-      return diffs.set(text, diff);
-
-    }, new Map);
-
-    // sum of the absolute differences calculated above
-    const sumDifferences = Array.from(differences.values())
-    .reduce((sum, count) => sum + count, 0);
-
-    // measure of corpus dispersion (Deviation of Proportions (DP))
-    const dispersion = sumDifferences / 2;
-
-    corpusWordforms.set(wordform, {
-      dispersion,
-      frequency: corpusFrequency,
-    });
-
-    dispersionsProgressBar.tick();
-
-  }
-
-  const csvOptions = {
-    columns: [
-      `wordform`,
-      `frequency`,
-      `dispersion`,
-    ],
-    delimiter: `\t`,
-    header:    true,
   };
 
-  // wordforms.tsv
-  const tableData = Array.from(corpusWordforms.entries())
-  .map(([wordform, { dispersion, frequency }]) => [wordform, frequency, dispersion]);
+  try {
+    await processDir(dataDir, processFile, ignore);
+  } catch (e) {
+    spinner.fail(e.message);
+    throw e;
+  }
 
-  const wordformsTSV = await json2csv(tableData, csvOptions);
-  await writeFile(outputPath, wordformsTSV, `utf8`);
+  console.info(`\nSize of Corpus: ${corpusSize.toLocaleString()} words\n`);
 
 }
