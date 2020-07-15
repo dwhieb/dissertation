@@ -159,7 +159,7 @@ This section covers the technical steps involved in the process of annotating th
 To select the 100 archilexemes, I wrote a script which produces a tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion. In addition, the script prints the total size of the corpus to the console. This script can be run on the command line using the following command, where `{input}` is the path to the directory where the JSON corpus is located, and `{output}` is the location where you would like the resulting TSV file generated:
 
 ```cmd
-node stats/scripts/bin/generateWordforms.js {input} {output}
+node data/English/scripts/bin/generateWordforms.js {input} {output}
 ```
 
 This script also filters out unwanted tokens from the data (without affecting the calculation of dispersion). It relies on two files: `blacklist.yml` and `nonLexicalTags.yml`, both located in the `data/English/scripts/constants` folder. The `blacklist.yml` file contains a list of wordforms that should not be included in the list of wordforms (but again, without affecting calculation of dispersion, or the overall reported corpus frequency). Similarly, the `nonLexicalTags.yml` file contains Penn tags which should be excluded from the resulting wordlist. You can update either of these files to change the words which are filtered out of the English data.
