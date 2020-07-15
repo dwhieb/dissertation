@@ -48,6 +48,7 @@ export default async function findAndReplace(searchFunction = u => u, { searchOn
     await processDir(jsonPath, processFile, ignore);
   } catch (e) {
     spinner.fail(e.message);
+    throw e;
   }
 
   spinner.succeed(`${searchOnly ? `Search` : `Find and replace`} complete.`);
