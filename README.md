@@ -156,13 +156,13 @@ This section covers the technical steps involved in the process of annotating th
 
 100 archilexemes were selected from the English corpus for annotation. These archilexemes were chosen randomly from the set of wordforms in the corpus, by first dividing those wordforms into 100 different bins depending on the corpus dispersion of that wordform (measured using <dfn>Deviation of Proportions</dfn> (<abbr title='Deviation of Proportions'>DP</abbr>) [Gries [2008](#Gries2008)]), and then selecting one word randomly from each bin. Words which did not meet the selection criteria were thrown out, and the process was repeated until 100 viable archilexemes were found. The selection criteria for archilexemes are discussed in the Data & Methods chapter of my dissertation document, available [here][dissertation].
 
-To select the 100 archilexemes, I wrote a script which produces a tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion. In addition, the script prints the total size of the corpus to the console. This script can be run on the command line using the following command, where `{input}` is the path to the directory where the JSON corpus is located, and `{output}` is the location where you would like the resulting TSV file generated:
+To select the 100 archilexemes, I wrote a script which produces a tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion. In addition, the script prints the total size of the corpus to the console. This script can be run on the command line using the following command, where `{output}` is the location where you would like the resulting TSV file generated:
 
 ```cmd
-node data/English/scripts/bin/generateWordforms.js {input} {output}
+node stats/scripts/bin/getStatistics.js data/English/texts --out {output} --unit wordform --filter data/English/scripts/tokenFilter.js
 ```
 
-This script also filters out unwanted tokens from the data (without affecting the calculation of dispersion). It relies on two files: `blacklist.yml` and `nonLexicalTags.yml`, both located in the `data/English/scripts/constants` folder. The `blacklist.yml` file contains a list of wordforms that should not be included in the list of wordforms (but again, without affecting calculation of dispersion, or the overall reported corpus frequency). Similarly, the `nonLexicalTags.yml` file contains Penn tags which should be excluded from the resulting wordlist. You can update either of these files to change the words which are filtered out of the English data.
+The `--unit` option specifies that you want statistics for `wordform`s rather than `lexeme`s, and the `--filter` option points to a filtering function, which tells the script to ignore certain tokens in the corpus. In particular, the script filters out unwanted tokens from the data (without affecting the calculation of dispersion). It relies on two files: `blacklist.yml` and `nonLexicalTags.yml`, both located in the `data/English/scripts/constants` folder. The `blacklist.yml` file contains a list of wordforms that should not be included in the list of wordforms (but again, without affecting calculation of dispersion, or the overall reported corpus frequency). Similarly, the `nonLexicalTags.yml` file contains Penn tags which should be excluded from the resulting wordlist. You can update either of these files to change the words which are filtered out of the English data.
 
 ---
 
@@ -196,7 +196,7 @@ Including the strange-looking verbal forms of _one_ allow the script to find any
 
 Therefore it was necessary to construct the list of wordforms to annotate as inclusively as possible, in order to be open to the possibility of finding even seemingly unlikely or impossible cases of conversion.
 
-For English, I did not have to included possessive forms in the list of wordforms because `'s` is tokenized as a separate word by the OANC.
+For English, I did not have to include possessive forms in the list of wordforms because `'s` is tokenized as a separate word by the OANC.
 
 The resulting list of English wordforms to annotate is located in `data/English/selected_wordforms.json`.
 
@@ -241,7 +241,7 @@ Because the size of the Nuuchahnulth corpus is significantly smaller than that o
 
 To lemmatize the corpus (that is, identify the stem of each token), I wrote a script which can be run with the command `node data/Nuuchahnulth/scripts/lemmatize.js`. To oversimplify somewhat, this script strips away the grammatical morphemes within each token, leaving just the lexical core of the word. This set of lexical morphemes is then set as the `"stem"` property on the word. For example, the word _c̓us-ʼi·tap-ʼaƛ_ 'dig-on.the.ground-FINITE' is lemmatized as _c̓us-ʼi·tap_ 'dig-on.the.ground'. This is considered the stem of the word.
 
-Next, I programmatically tagged words in the corpus for part of speech based on their morphology. This was accomplished with a simple script, which can be run by entering `node data/Nuuchahnulth/scripts/addMorphologicalTags.js` from the command line. This script adds a `morphPOS` tag to each word in the corpus based on that word's morphology. For example, if a word has the the definite suffix _‑ʔiˑ_ it is marked as a nominal. The value of this tag is either `REF` (reference), `PRED` (predication), or `PRED-REF` (ambiguous between predication and reference; this applies specifically to words which have a indefinite relative suffix). Because words tagged as `PRED-REF` are categorially ambiguous in isolation, I further examined each of these cases (187 instances) and manually annotated them as predicates or referents depending on their context in discourse.
+Next, I programmatically tagged words in the corpus for part of speech based on their morphology. This was accomplished with a script which can be run by entering `node data/Nuuchahnulth/scripts/addMorphologicalTags.js` from the command line. This script adds a `morphPOS` tag to each word in the corpus based on that word's morphology. For example, if a word has the definite suffix _‑ʔiˑ_ it is marked as a nominal. The value of this tag is either `REF` (reference), `PRED` (predication), or `PRED-REF` (ambiguous between predication and reference; this applies specifically to words which have a indefinite relative suffix). Because words tagged as `PRED-REF` are categorially ambiguous in isolation, I further examined each of these cases (187 instances) and manually annotated them as predicates or referents depending on their context in discourse.
 
 Tagging the corpus by morphological part of speech resulted in 37% coverage. That is, 37% of tokens (3,123 out of 8,366) overtly indicate their part of speech in their morphology.
 
