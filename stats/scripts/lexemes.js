@@ -89,8 +89,9 @@ export default async function getLexemeFrequencies(dataDir, outputPath) {
       textSize   += words.length;
 
       words.forEach(word => {
-        countToken(word.analysis, textLexemes);
-        countToken(word.analysis, corpusLexemes);
+        if (!word.stem) return;
+        countToken(word.stem, textLexemes);
+        countToken(word.stem, corpusLexemes);
       });
 
     });
@@ -176,7 +177,7 @@ export default async function getLexemeFrequencies(dataDir, outputPath) {
   const tableData = Array
   .from(corpusLexemes.entries())
   .map(([lexeme, { dispersion, frequency }]) => [lexeme, dispersion, frequency])
-  .sort(([, a], [, b]) => compare(b, a));
+  .sort(([, a], [, b]) => compare(a, b));
 
   if (!outputPath) {
     return console.info(tableData
