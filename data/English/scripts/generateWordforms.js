@@ -107,7 +107,7 @@ export default async function generateWordforms(dataDir, outputPath) {
     const filename = path.basename(filePath, `.json`);
 
     texts.set(filename, {
-      rawSize:   textSize,
+      numTokens:   textSize,
       wordforms: textWordforms,
     });
 
@@ -125,14 +125,14 @@ export default async function generateWordforms(dataDir, outputPath) {
 
   texts.forEach(info => {
     // eslint-disable-next-line no-param-reassign
-    info.relativeSize = info.rawSize / corpusSize;
+    info.relativeSize = info.numTokens / corpusSize;
   });
 
   // CORPUS DISPERSIONS
 
   console.info(`Calculating corpus dispersions`);
 
-  const progressBar = new ProgressBar(`:bar`, { total: corpusWordforms.size });
+  const progressBar = new ProgressBar(`:bar :current :total :percent :eta`, { total: corpusWordforms.size });
 
   for (const [wordform, corpusFrequency] of corpusWordforms) {
 

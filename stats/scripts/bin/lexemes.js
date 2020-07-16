@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import getLexemeFrequencies from '../lexemeFrequencies.js';
+import getLexemeFrequencies from '../lexemes.js';
 
 const [,, dataDir, outputPath] = process.argv;
 
