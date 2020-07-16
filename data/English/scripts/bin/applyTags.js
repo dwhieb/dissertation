@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import applyTags from '../applyTags.js';
+import applyTags from '../applyTags-2.js';
 
 const [,, annotationsPath, dataDir] = process.argv;
 
