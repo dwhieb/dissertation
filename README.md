@@ -28,6 +28,10 @@ A self-imposed requirement for this project is that of empirical accountability 
     - [The Annotation Process](#the-annotation-process)
   - [Nuuchahnulth](#nuuchahnulth-2)
 - [7. Statistical Analysis](#7-statistical-analysis)
+  - [Descriptive Statistics](#descriptive-statistics)
+    - [Archilexeme Frequencies](#archilexeme-frequencies)
+    - [Archilexeme Corpus Dispersions](#archilexeme-corpus-dispersions)
+  - [Inferential Statistics](#inferential-statistics)
 - [8. References](#8-references)
 - [9. Legal](#9-legal)
 
@@ -235,6 +239,10 @@ You can generate a concordance using a different corpus, list of words, or other
 
 Once the tab-separated concordance in KWIC format was generated for English, I was able to open it using Microsoft Excel and manually annotate all ~380,000 tokens for reference, predication, and modification. The resulting annotations are saved in `data/English/annotations` in both Excel and TSV formats.
 
+<!-- #### Applying the Annotations to the Corpus -->
+
+<!-- After each of the selected tokens was annotated for its pragmatic function (reference, predication, or modification), those tags needed to be applied back to the original JSON corpus. This can be done with the following script: -->
+
 ### Nuuchahnulth
 
 Because the size of the Nuuchahnulth corpus is significantly smaller than that of the English corpus, it was not necessary to select a subset of the data to code. Instead, it was possible to annotate every lexical item in the corpus. Since the Nuuchahnulth corpus consists of interlinear glossed texts, it was possible to programmatically lemmatize and tag the corpus (although the automated tagging process did not achieve full coverage of the corpus; see below).
@@ -248,6 +256,33 @@ Tagging the corpus by morphological part of speech resulted in 37% coverage. Tha
 ([back to top](#readme))
 
 ## 7. Statistical Analysis
+
+Once the two corpora were annotated for pragmatic function, numerous descriptive statistics and hypothesis-testing statistics needed to be conducted. This section outlines the steps for running each of these statistics. In most cases, this requires simply running a script which reports the result. In some cases, an initial step is required to extra data from the JSON corpus into a TSV file. This also entails merely running a script from the command line. All the scripts in this section are found in the `stats/scripts` folder.
+
+### Descriptive Statistics
+
+#### Archilexeme Frequencies
+
+To calculate the frequency of each archilexeme in a corpus, run the following script:
+
+```cmd
+node stats/scripts/bin/getStatistics.js {dataDir} --out {outputPath} --unit "lexeme" --filter data/English/scripts/tokenFilter.js
+```
+
+For English, it is important to include a `--filter` option whose value is set to the above. This excludes unwanted tokens from the results.
+
+Option     | Description
+-----------|--------------------------------------------------
+dataDir    | The path to the directory of JSON versions of the texts for a language
+`--filter` | The path to a file which exports a filter function. This function should accept a Word object as its argument, and return true if the word should be included in the wordform/lexemes list, false if it should not. Allows the user to filter out unwanted tokens.
+`--out`    | The path to the file where you would like the results outputted
+`--unit`   | Whether to calculate statistics by `wordform` or `lexeme`.
+
+#### Archilexeme Corpus Dispersions
+
+To calculate corpus dispersions (measured as a Deviation of Proportions (DP) — see Gries ([2008](#Gries2008)) for more details), run the same script as you did for [Archilexeme Frequencies](#archilexeme-frequencies) above. This script produces a results table which lists both frequencies and dispersions.
+
+### Inferential Statistics
 
 ([back to top](#readme))
 

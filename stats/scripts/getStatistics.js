@@ -68,7 +68,7 @@ function ignore(filePath, stats) {
  * @param  {Object} [options={}]            The options hash
  * @param  {String} [options.unit=`lexeme`] The type of linguistic unit calculate statistics for. Values may be either `lexeme` or `wordform`. Defaults to `lexeme`.
  * @param  {String} [options.outputPath]    The path to the file where you would like the statistical results outputted. If omitted, logs the list to the console instead.
- * @param  {String} [options.wordFilter]    Path to a file which exports a filter function. This funtion should accept a Word object as its argument, and return true if the word should be included in the wordform/lexemes list, false if it should not.
+ * @param  {String} [options.wordFilter]    Path to a file which exports a filter function. This function should accept a Word object as its argument, and return true if the word should be included in the wordform/lexemes list, false if it should not.
  * @return {Promise}
  */
 export default async function getStatistics(dataDir, { outputPath, unit = `lexeme`, wordFilter } = {}) {
