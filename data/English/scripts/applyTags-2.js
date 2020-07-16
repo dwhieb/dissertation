@@ -28,39 +28,45 @@ function ignore(filePath, stats) {
  */
 export default async function applyTags(annotationsPath, dataDir) {
 
+  const options = {
+    columns:            true,
+    delimiter:          `\t`,
+    skipLinesWithError: true,
+    trim:               true,
+  };
+
+  const readStream = fs.createReadStream(annotationsPath, `utf8`);
+  const parser     = parseTSV(options);
+  let   records    = [];
+
+  readStream.pipe(parser);
+
+  for await (const record of parser) {
+    records.push(record);
+  }
+
   const processText = async function(filePath) {
 
-    const options = {
-      columns:            true,
-      delimiter:          `\t`,
-      skipLinesWithError: true,
-      trim:               true,
-    };
+    const name = path.basename(filePath, `.json`);
+    const text = await readJSON(filePath);
 
-    const name       = path.basename(filePath, `.json`);
-    const text       = await readJSON(filePath);
-    const readStream = fs.createReadStream(annotationsPath, `utf8`);
-    const parser     = parseTSV(options);
+    records = records
+    .filter(({
+      function: discourseFunction,
+      text: textName,
+      utterance: u,
+      word: w,
+    }) => {
 
-    readStream.pipe(parser);
-
-    for await (const record of parser) {
-
-      if (record.text === name) {
-
-        const {
-          function: discourseFunction,
-          utterance: u,
-          word: w,
-        } = record;
-
+      if (name === textName) {
         const word = text.utterances[u - 1].words[w - 1];
-
         word.tags.discourseFunction = discourseFunction;
-
+        return false;
       }
 
-    }
+      return true;
+
+    });
 
     // const newFilePath = filePath.replace(`.json`, `-updated.json`);
     await writeJSON(filePath, text, { spaces: 2 });
