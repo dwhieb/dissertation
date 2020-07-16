@@ -9,11 +9,11 @@ import YAML              from 'yaml';
 
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 
-const nonLexicalTagsPath = path.join(currentDir, `./constants/nonLexicalTags.yml`);
+const nonLexicalTagsPath = path.join(currentDir, `./nonLexicalTags.yml`);
 const nonLexicalTagsYAML = fs.readFileSync(nonLexicalTagsPath, `utf8`);
 const nonLexicalTags     = YAML.parse(nonLexicalTagsYAML);
 
-const blacklistPath      = path.join(currentDir, `./constants/blacklist.yml`);
+const blacklistPath      = path.join(currentDir, `./blacklist.yml`);
 const blacklistYAML      = fs.readFileSync(blacklistPath, `utf8`);
 const blacklist          = YAML.parse(blacklistYAML);
 

@@ -8,6 +8,8 @@
 
 /* eslint-disable
   max-statements,
+  no-param-reassign,
+  require-atomic-updates,
 */
 
 import csvStringify  from 'csv-stringify';
@@ -66,15 +68,22 @@ function ignore(filePath, stats) {
  * @param  {Object} [options={}]            The options hash
  * @param  {String} [options.unit=`lexeme`] The type of linguistic unit calculate statistics for. Values may be either `lexeme` or `wordform`. Defaults to `lexeme`.
  * @param  {String} [options.outputPath]    The path to the file where you would like the statistical results outputted. If omitted, logs the list to the console instead.
+ * @param  {String} [options.wordFilter]    Path to a file which exports a filter function. This funtion should accept a Word object as its argument, and return true if the word should be included in the wordform/lexemes list, false if it should not.
  * @return {Promise}
  */
-export default async function getStatistics(dataDir, { outputPath, unit = `lexeme` } = {}) {
+export default async function getStatistics(dataDir, { outputPath, unit = `lexeme`, wordFilter } = {}) {
 
   // VARIABLES
 
   const corpusLexemes = new Map;
   let   corpusSize    = 0;
   const texts         = new Map;
+
+  if (wordFilter) {
+    wordFilter = await import(wordFilter);
+  } else {
+    wordFilter = () => true;
+  }
 
   // METHODS
 
@@ -92,7 +101,9 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
       corpusSize += words.length;
       textSize   += words.length;
 
-      words.forEach(word => {
+      words
+      .filter(wordFilter)
+      .forEach(word => {
 
         const prop = unit === `wordform` ? `transcription` : `stem`;
 
@@ -126,7 +137,6 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
   // calculate relative text sizes
 
   texts.forEach(text => {
-    // eslint-disable-next-line no-param-reassign
     text.relativeSize = text.size / corpusSize;
   });
 
