@@ -239,9 +239,13 @@ You can generate a concordance using a different corpus, list of words, or other
 
 Once the tab-separated concordance in KWIC format was generated for English, I was able to open it using Microsoft Excel and manually annotate all ~380,000 tokens for reference, predication, and modification. The resulting annotations are saved in `data/English/annotations` in both Excel and TSV formats.
 
-<!-- #### Applying the Annotations to the Corpus -->
+#### Applying the Annotations to the Corpus
 
-<!-- After each of the selected tokens was annotated for its pragmatic function (reference, predication, or modification), those tags needed to be applied back to the original JSON corpus. This can be done with the following script: -->
+After each of the selected tokens was annotated for its pragmatic function (reference, predication, or modification), those tags needed to be applied back to the original JSON corpus. This can be done with the following script:
+
+```cmd
+ node data/English/scripts/bin/applyTags.js data/English/annotations/annotations.tsv data/English/texts
+```
 
 ### Nuuchahnulth
 
