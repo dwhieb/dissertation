@@ -63,12 +63,12 @@ function ignore(filePath, stats) {
 /**
  * Calculates the raw frequency and corpus dispersion of each wordform or lexeme in a DLx corpus.
  * @param  {String} dataDir                 The path to the directory of DLx JSON files. May have subdirectories.
- * @param  {String} [outputPath]            The path to the file where you would like the statistical results outputted. If omitted, logs the list to the console instead.
  * @param  {Object} [options={}]            The options hash
  * @param  {String} [options.unit=`lexeme`] The type of linguistic unit calculate statistics for. Values may be either `lexeme` or `wordform`. Defaults to `lexeme`.
+ * @param  {String} [options.outputPath]    The path to the file where you would like the statistical results outputted. If omitted, logs the list to the console instead.
  * @return {Promise}
  */
-export default async function getStatistics(dataDir, outputPath, { unit = `lexeme` } = {}) {
+export default async function getStatistics(dataDir, { outputPath, unit = `lexeme` } = {}) {
 
   // VARIABLES
 

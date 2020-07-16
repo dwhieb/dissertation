@@ -1,25 +1,26 @@
+/**
+ * This is a slightly modified form of the stats/scripts/getStatistics.js script,
+ * which excludes some unwanted wordforms from the results.
+ */
+
 /* eslint-disable
   max-statements,
 */
 
-import csvStringify      from 'csv-stringify';
-import { fileURLToPath } from 'url';
-import fs                from 'fs-extra';
-import path              from 'path';
-import processDir        from '../../../scripts/utilities/processDir.js';
-import ProgressBar       from 'progress';
-import { promisify }     from 'util';
-import YAML              from 'yaml';
+import csvStringify  from 'csv-stringify';
+import fs            from 'fs-extra';
+import path          from 'path';
+import processDir    from '../../../scripts/utilities/processDir.js';
+import ProgressBar   from 'progress';
+import { promisify } from 'util';
+import tokenFilter   from './tokenFilter.js';
 
 const {
-  readFile,
   readJSON,
   writeFile,
 } = fs;
 
-const badCharsRegExp = /[^A-Za-z]/u;
-const currentDir     = path.dirname(fileURLToPath(import.meta.url));
-const json2csv       = promisify(csvStringify);
+const json2csv = promisify(csvStringify);
 
 /**
  * Increments the frequency of a word token in a frequency Map
@@ -33,10 +34,6 @@ function countToken(token, frequencies) {
   if (frequencies.has(wordform)) frequencies.set(wordform, frequencies.get(wordform) + 1);
   else frequencies.set(wordform, 1);
 
-}
-
-function hasBadChars(string) {
-  return badCharsRegExp.test(string);
 }
 
 /**
@@ -61,28 +58,6 @@ export default async function generateWordforms(dataDir, outputPath) {
   const texts           = new Map;
   let   corpusSize      = 0;
 
-  const nonLexicalTagsPath = path.join(currentDir, `./constants/nonLexicalTags.yml`);
-  const nonLexicalTagsYAML = await readFile(nonLexicalTagsPath, `utf8`);
-  const nonLexicalTags     = YAML.parse(nonLexicalTagsYAML);
-
-  const blacklistPath      = path.join(currentDir, `./constants/blacklist.yml`);
-  const blacklistYAML      = await readFile(blacklistPath, `utf8`);
-  const blacklist          = YAML.parse(blacklistYAML);
-
-  /**
-   * A filter function which accepts a DLx Word Token object for a word in English,
-   * and returns true if the token should be included in the wordforms list,
-   * false otherwise.
-   * @param  {Word}    word A DLx Word Token object for an English word token
-   * @return {Boolean}
-   */
-  const isGoodToken = ({ tags: { Penn }, transcription }) => {
-    if (blacklist.includes(transcription)) return false;
-    if (hasBadChars(transcription)) return false;
-    if (nonLexicalTags.includes(Penn)) return false;
-    return true;
-  };
-
   const processFile = async filePath => {
 
     const textWordforms = new Map;
@@ -96,7 +71,7 @@ export default async function generateWordforms(dataDir, outputPath) {
       textSize   += words.length;
 
       words
-      .filter(isGoodToken)
+      .filter(tokenFilter)
       .forEach(word => {
         countToken(word.transcription, textWordforms);
         countToken(word.transcription, corpusWordforms);
@@ -107,7 +82,7 @@ export default async function generateWordforms(dataDir, outputPath) {
     const filename = path.basename(filePath, `.json`);
 
     texts.set(filename, {
-      numTokens:   textSize,
+      numTokens: textSize,
       wordforms: textWordforms,
     });
 
