@@ -25,7 +25,7 @@ void async function addWordTranscriptions() {
 
   const options = {
     searchOnly: false,
-    testRun:    true,
+    testRun:    false,
   };
 
   await findAndReplace(dataDir, utterance => {
