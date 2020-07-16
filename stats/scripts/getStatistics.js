@@ -1,6 +1,9 @@
 /**
  * This script calculates the raw frequencies and corpus dispersion (measured as Deviation of Proportions (DP))
- * for all the lexemes in a DLx JSON corpus. Relies on the word.stem field to assign a word to its lexeme.
+ * for all wordforms or lexemes in a DLx JSON corpus. Relies on the word.stem field to assign a word to its lexeme.
+ *
+ * NB: In many places in this script, "lexeme" is a cover term for lexeme or wordform, depending on which option
+ * the user chooses to run the script with.
  */
 
 /* eslint-disable
@@ -36,13 +39,13 @@ function compare(a, b) {
 }
 
 /**
- * Increments the frequency of a word token in a frequency Map
- * @param  {String} lexeme
- * @param  {Map}    frequencies A Map of wordforms to their frequencies
+ * Increments the frequency of an item in a frequency Map
+ * @param  {String} item
+ * @param  {Map}    frequencies A Map of items to their frequencies
  */
-function countToken(lexeme, frequencies) {
+function countToken(item, frequencies) {
 
-  const wordform = lexeme.toLowerCase();
+  const wordform = item.toLowerCase();
 
   if (frequencies.has(wordform)) frequencies.set(wordform, frequencies.get(wordform) + 1);
   else frequencies.set(wordform, 1);
@@ -58,13 +61,14 @@ function ignore(filePath, stats) {
 }
 
 /**
- * Calculates the raw frequency of each lexeme in a DLx corpus, using the "stem"
- * property to group wordforms into lexemes.
- * @param  {String} dataDir      The path to the directory of DLx JSON files. May have subdirectories.
- * @param  {String} [outputPath] The path to the file where you would like the list of lexemes outputted. If omitted, logs the list of lexemes to the console instead.
+ * Calculates the raw frequency and corpus dispersion of each wordform or lexeme in a DLx corpus.
+ * @param  {String} dataDir                 The path to the directory of DLx JSON files. May have subdirectories.
+ * @param  {String} [outputPath]            The path to the file where you would like the statistical results outputted. If omitted, logs the list to the console instead.
+ * @param  {Object} [options={}]            The options hash
+ * @param  {String} [options.unit=`lexeme`] The type of linguistic unit calculate statistics for. Values may be either `lexeme` or `wordform`. Defaults to `lexeme`.
  * @return {Promise}
  */
-export default async function getLexemeFrequencies(dataDir, outputPath) {
+export default async function getStatistics(dataDir, outputPath, { unit = `lexeme` } = {}) {
 
   // VARIABLES
 
@@ -89,9 +93,13 @@ export default async function getLexemeFrequencies(dataDir, outputPath) {
       textSize   += words.length;
 
       words.forEach(word => {
-        if (!word.stem) return;
-        countToken(word.stem, textLexemes);
-        countToken(word.stem, corpusLexemes);
+
+        const prop = unit === `wordform` ? `transcription` : `stem`;
+
+        if (!word[prop]) return;
+        countToken(word[prop], textLexemes);
+        countToken(word[prop], corpusLexemes);
+
       });
 
     });
@@ -107,7 +115,7 @@ export default async function getLexemeFrequencies(dataDir, outputPath) {
 
   // calculate raw frequencies of lexemes
 
-  console.info(`Calculating raw frequencies of lexemes`);
+  console.info(`Calculating raw frequencies`);
 
   await processDir(dataDir, processFile, ignore);
 
@@ -124,7 +132,7 @@ export default async function getLexemeFrequencies(dataDir, outputPath) {
 
   // calculate corpus dispersions
 
-  console.info(`Calculating corpus dispersions of lexemes`);
+  console.info(`Calculating corpus dispersions`);
 
   const progressBar = new ProgressBar(`:bar :current :total :percent :eta`, { total: corpusLexemes.size });
 
@@ -187,7 +195,7 @@ export default async function getLexemeFrequencies(dataDir, outputPath) {
 
   const csvOptions = {
     columns: [
-      `lexeme`,
+      unit,
       `frequency`,
       `dispersion`,
     ],
