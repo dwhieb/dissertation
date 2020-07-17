@@ -52,6 +52,7 @@ export default async function applyTags(annotationsPath, dataDir) {
 
     records = records
     .filter(({
+      archilexeme,
       function: discourseFunction,
       text: textName,
       utterance: u,
@@ -60,6 +61,7 @@ export default async function applyTags(annotationsPath, dataDir) {
 
       if (name === textName) {
         const word = text.utterances[u - 1].words[w - 1];
+        word.stem = archilexeme;
         word.tags.discourseFunction = discourseFunction;
         return false;
       }
