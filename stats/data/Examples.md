@@ -1,4 +1,4 @@
-# Examples
+# Suffix Migration
 
 Suffix migration can happen when a lexical suffix has semantic scope over the phrase.
 
@@ -24,7 +24,7 @@ greatly ‑making nice canoe
 
 # 4
 kʼacḥaʕinɬit
-kʼacḥaq ‑ʼinl         ‑it
+kʼacḥaq ‑ʼinɬ         ‑it
 blanket -distributing -PAST
 ‘He gave out blankets.’ (discourse)
 
@@ -49,6 +49,24 @@ large ‑owning ‑1.SG canoe
 ‘I own a big canoe.’ (discourse)
 
 Mood suffixes also show migratory behavior. Person suffixes are often fused with mood suffixes, but can occur alone. Person suffixes must always occur on the main predicate.
+
+# 8
+ḥawʼiɬʔiš
+ḥawʼiɬ ‑ʔiˑš
+chief  ‑IND.3
+‘He is a chief.’
+
+# 9
+ƛuɬʔiiš     ḥawʼiɬ
+ƛuɬ  ‑ʔiˑš  ḥawʼiɬ
+good ‑IND.3 chief
+‘He is a good chief.’
+
+# 10
+ʔiiḥʔiš       ƛuɬ  ḥawʼiɬ
+ʔiˑḥ   ‑ʔiˑš  ƛuɬ  ḥawʼiɬ
+really ‑IND.3 good chief
+‘He is a really good chief.’
 
 Aspectual suffixes do _not_ show migratory behavior. (Lexical suffixes seem to be inserted  between roots and aspectual suffixes? Toshi’s grammar isn’t clear.)
 
