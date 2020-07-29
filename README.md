@@ -253,6 +253,8 @@ Because the size of the Nuuchahnulth corpus is significantly smaller than that o
 
 To lemmatize the corpus (that is, identify the stem of each token), I wrote a script which can be run with the command `node data/Nuuchahnulth/scripts/lemmatize.js`. To oversimplify somewhat, this script strips away the grammatical morphemes within each token, leaving just the lexical core of the word. This set of lexical morphemes is then set as the `"stem"` property on the word. For example, the word _c̓us-ʼi·tap-ʼaƛ_ 'dig-on.the.ground-FINITE' is lemmatized as _c̓us-ʼi·tap_ 'dig-on.the.ground'. This is considered the stem of the word.
 
+The lemmatize script also identifies the root of each word, and sets this as the `"root"` property.
+
 Next, I programmatically tagged words in the corpus for part of speech based on their morphology. This was accomplished with a script which can be run by entering `node data/Nuuchahnulth/scripts/addMorphologicalTags.js` from the command line. This script adds a `morphPOS` tag to each word in the corpus based on that word's morphology. For example, if a word has the definite suffix _‑ʔiˑ_ it is marked as a nominal. The value of this tag is either `REF` (reference), `PRED` (predication), or `PRED-REF` (ambiguous between predication and reference; this applies specifically to words which have a indefinite relative suffix). Because words tagged as `PRED-REF` are categorially ambiguous in isolation, I further examined each of these cases (187 instances) and manually annotated them as predicates or referents depending on their context in discourse.
 
 Tagging the corpus by morphological part of speech resulted in 37% coverage. That is, 37% of tokens (3,123 out of 8,366) overtly indicate their part of speech in their morphology.
