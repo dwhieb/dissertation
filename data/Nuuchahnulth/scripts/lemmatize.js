@@ -42,9 +42,15 @@ findAndReplace(dataDir, utterance => {
 
     if (morphemeTypes[0] === null) lexicalMorphemes.shift();
 
-    word.stem = lexicalMorphemes
-    .map(morpheme => morpheme.transcription)
-    .join(`-`);
+    if (lexicalMorphemes.length) {
+
+      word.root = lexicalMorphemes[0].transcription;
+
+      word.stem = lexicalMorphemes
+      .map(morpheme => morpheme.transcription)
+      .join(`-`);
+
+    }
 
   });
 
