@@ -282,7 +282,7 @@ Option     | Description
 dataDir    | The path to the directory of JSON versions of the texts for a language
 `--filter` | The path to a file which exports a filter function. This function should accept a Word object as its argument, and return true if the word should be included in the wordform/lexemes list, false if it should not. Allows the user to filter out unwanted tokens.
 `--out`    | The path to the file where you would like the results outputted
-`--unit`   | Whether to calculate statistics by `wordform` or `lexeme`.
+`--unit`   | Whether to calculate statistics by `wordform`, `lexeme`, or `root`.
 
 #### Archilexeme Corpus Dispersions
 
