@@ -26,7 +26,13 @@ void async function validateTexts() {
   const filenames   = await readDir(textsDir);
   const progressBar = new ProgressBar(`:bar :current :total :percent :eta`, { total: filenames.length });
   const data        = await Promise.all(filenames.map(readFile));
-  const models      = data.map(textData => new Text(textData));
+
+  const models = data
+  .map(textData => new Text(textData))
+  .map(text => {
+    text.language = { cid: `1` }; // eslint-disable-line no-param-reassign
+    return text;
+  });
 
   return Promise.all(models.map(async (model, i) => {
 
