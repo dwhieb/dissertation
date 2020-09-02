@@ -5,6 +5,7 @@
 import { fileURLToPath } from 'url';
 import fs                from 'fs-extra';
 import path              from 'path';
+import ProgressBar       from 'progress';
 import { Text }          from '@digitallinguistics/javascript/models';
 
 const {
@@ -22,17 +23,19 @@ function readFile(filename) {
 
 void async function validateTexts() {
 
-  const filenames = await readDir(textsDir);
-  const data      = await Promise.all(filenames.map(readFile));
-  const models    = data.map(textData => new Text(textData));
+  const filenames   = await readDir(textsDir);
+  const progressBar = new ProgressBar(`:bar :current :total :percent :eta`, { total: filenames.length });
+  const data        = await Promise.all(filenames.map(readFile));
+  const models      = data.map(textData => new Text(textData));
 
-  return Promise.all(models.map((model, i) => {
+  return Promise.all(models.map(async (model, i) => {
 
-    const json     = JSON.stringify(model, null, 2);
     const filename = filenames[i];
     const filePath = path.join(textsDir, filename);
 
-    return writeJSON(filePath, json, `utf8`);
+    await writeJSON(filePath, model, { encoding: `utf8`, spaces: 2 });
+
+    progressBar.tick();
 
   }));
 
