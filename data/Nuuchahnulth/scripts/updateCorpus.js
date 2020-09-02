@@ -1,6 +1,6 @@
 /**
  * This script updates the corpus by replacing each utterance in the old texts with each utterance in the new text,
- * while preserving any tags from the old texts.
+ * while preserving the "stem" field and any tags from the old texts.
  */
 
 import { fileURLToPath } from 'url';
