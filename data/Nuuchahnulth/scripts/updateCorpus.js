@@ -7,6 +7,7 @@ import { fileURLToPath } from 'url';
 import fs                from 'fs-extra';
 import path              from 'path';
 import processDir        from '../../../scripts/utilities/processDir.js';
+import { Text }          from '@digitallinguistics/javascript/models';
 
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 
@@ -32,6 +33,8 @@ async function processFile(filePath) {
   const newText  = await readJSON(filePath);
   const oldText  = await readJSON(path.join(oldDir, filename));
 
+  oldText.language = { cid: `1` };
+
   oldText.utterances = newText.utterances.map((newUtterance, u) => {
 
     const oldUtterance = oldText.utterances[u];
@@ -47,7 +50,7 @@ async function processFile(filePath) {
 
   });
 
-  await writeJSON(path.join(oldDir, filename), oldText, { spaces: 2 });
+  await writeJSON(path.join(oldDir, filename), new Text(oldText), { spaces: 2 });
 
 }
 
