@@ -9,15 +9,15 @@
 
 import { fileURLToPath } from 'url';
 import findAndReplace    from '../../../scripts/utilities/findAndReplace.js';
-import glossTags         from './constants/glossTags.js';
+// import glossMappingsData from './constants/glossMappings.js';
 import path              from 'path';
 
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 
 async function addMorphologicalTags() {
 
-  const dataDir = path.join(currentDir, `../texts`);
-  const glosses = new Map(Object.entries(glossTags));
+  const dataDir       = path.join(currentDir, `../texts`);
+  // const glossMappings = new Map(Object.entries(glossMappingsData));
 
   const options = {
     searchOnly: false,
@@ -30,28 +30,33 @@ async function addMorphologicalTags() {
 
     utterance.words = utterance.words.map(word => {
 
-      word.tags = {};
-
       if (!word.morphemes) return word;
 
-      const tags = word.morphemes
-      .map(({ gloss }) => glosses.get(gloss))
-      .filter(Boolean);
+      word.tags = word.tags ?? {};
 
-      if (tags.includes(`PRED-REF`)) {
-        word.tags.morphPOS = `PRED-REF`;
-        return word;
+      if (word.tags.POS) {
+        word.tags.function = word.tags.POS;
+        delete word.tags.POS;
       }
 
-      if (tags.includes(`REF`)) {
-        word.tags.morphPOS = `REF`;
-        return word;
-      }
-
-      if (tags.includes(`PRED`)) {
-        word.tags.morphPOS = `PRED`;
-        return word;
-      }
+      // const POSTags = word.morphemes
+      // .map(({ gloss }) => glossMappings.get(gloss))
+      // .filter(Boolean);
+      //
+      // if (POSTags.includes(`PRED-REF`)) {
+      //   word.tags.morphPOS = `PRED-REF`;
+      //   return word;
+      // }
+      //
+      // if (POSTags.includes(`REF`)) {
+      //   word.tags.morphPOS = `REF`;
+      //   return word;
+      // }
+      //
+      // if (POSTags.includes(`PRED`)) {
+      //   word.tags.morphPOS = `PRED`;
+      //   return word;
+      // }
 
       return word;
 
