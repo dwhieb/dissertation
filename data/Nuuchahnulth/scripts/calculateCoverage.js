@@ -27,7 +27,7 @@ void async function calculateCoverage() {
 
       numTokens++;
 
-      if (word.tags.morphPOS) numTagged++;
+      if (word.tags.function) numTagged++;
 
     });
 
