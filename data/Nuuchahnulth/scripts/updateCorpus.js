@@ -5,6 +5,7 @@
 
 import { fileURLToPath } from 'url';
 import fs                from 'fs-extra';
+import mergeTexts        from './mergeTexts.js';
 import path              from 'path';
 import processDir        from '../../../scripts/utilities/processDir.js';
 import { Text }          from '@digitallinguistics/javascript/models';
@@ -27,35 +28,16 @@ const ignore = (filePath, stats) => {
   return path.extname(filePath) !== `.json`;
 };
 
-let textCID = 1;
-
 async function processFile(filePath) {
 
-  const filename = path.basename(filePath);
-  const newText  = await readJSON(filePath);
-  const oldText  = await readJSON(path.join(oldDir, filename));
+  const filename    = path.basename(filePath);
+  const newTextData = await readJSON(filePath);
+  const oldTextData = await readJSON(path.join(oldDir, filename));
+  const newText     = new Text(newTextData);
+  const oldText     = new Text(oldTextData);
+  const updatedText = mergeTexts(oldText, newText);
 
-  oldText.cid      = String(textCID);
-  oldText.language = { cid: `1` };
-
-  textCID++;
-
-  oldText.utterances = newText.utterances.map((newUtterance, u) => {
-
-    const oldUtterance = oldText.utterances[u];
-    if (!oldUtterance.words) return newUtterance;
-
-    oldUtterance.words.forEach((oldWord, w) => {
-      const newWord = newUtterance.words[w];
-      newWord.tags = oldWord.tags;
-      newWord.stem = oldWord.stem;
-    });
-
-    return newUtterance;
-
-  });
-
-  await writeJSON(path.join(oldDir, filename), new Text(oldText), { spaces: 2 });
+  await writeJSON(path.join(oldDir, filename), updatedText, { spaces: 2 });
 
 }
 
