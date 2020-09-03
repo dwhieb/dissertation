@@ -8,7 +8,7 @@ import recurse     from 'recursive-readdir';
  * @param  {Function} ignore  A function that accepts two arguments (filePath and stats), and should return true if the file should be ignored. Used to ignore files in the specified directory of files to convert.
  * @return {Promise}
  */
-export default async function processDir(dir, task, ignore) {
+export default async function processDir(dir, task, ignore = () => false) {
 
   const files       = await recurse(dir, [ignore]);
   const progressBar = new ProgressBar(`:bar :current :total :percent :eta`, { total: files.length });

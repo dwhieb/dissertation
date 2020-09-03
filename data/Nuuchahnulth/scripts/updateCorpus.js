@@ -27,13 +27,18 @@ const ignore = (filePath, stats) => {
   return path.extname(filePath) !== `.json`;
 };
 
+let textCID = 1;
+
 async function processFile(filePath) {
 
   const filename = path.basename(filePath);
   const newText  = await readJSON(filePath);
   const oldText  = await readJSON(path.join(oldDir, filename));
 
+  oldText.cid      = String(textCID);
   oldText.language = { cid: `1` };
+
+  textCID++;
 
   oldText.utterances = newText.utterances.map((newUtterance, u) => {
 
