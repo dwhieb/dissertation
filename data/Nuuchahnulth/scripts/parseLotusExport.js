@@ -9,8 +9,8 @@ import path              from 'path';
 import processDir        from '../../../scripts/utilities/processDir.js';
 import { Text }          from '@digitallinguistics/javascript/models';
 
-const currentDir   = path.dirname(fileURLToPath(import.meta.url));
-const { readJSON } = fs;
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
+const { readJSON, writeJSON } = fs;
 
 const [,, exportFilePath] = process.argv;
 const textsDir            = path.join(currentDir, `../texts`);
@@ -32,16 +32,13 @@ void async function parseLotusExport() {
   .map(text => new Text(text));
 
   await processDir(textsDir, async filePath => {
-
     const dissertationTextData = await readJSON(filePath, `utf8`);
     const dissertationText     = new Text(dissertationTextData);
     const lotusText            = lotusTexts.find(text => text.cid === dissertationText.cid);
     const updatedText          = mergeTexts(dissertationText, lotusText);
-    console.log(updatedText);
-
+    await writeJSON(filePath, updatedText, { encoding: `utf8`, spaces: 2 });
   });
 
-  // merge each text into existing (need to modularize a mergeTexts script)
-  // report new coverage statistics
+  await import(`./calculateCoverage.js`);
 
 }();
