@@ -268,7 +268,7 @@ Tag                 | Description
 `function: MOD`     | Item is being used to modify.
 `function: PRED`    | Item is being used to predicate.
 `function: REF`     | Item is being used to refer.
-`function: X`       | Item is sound-imitative, a discourse hesitation, or a mention rather than a use.
+`function: X`       | Item is sound-imitative, a discourse hesitation, a conjunction (_waa_ 'and', _ʔuḥ_ 'and'), a complementizer (_ʔan_ 'that, because'), or a mention rather than a use.
 
 ([back to top](#readme))
 
