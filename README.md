@@ -259,6 +259,17 @@ Next, I programmatically tagged words in the corpus for part of speech based on 
 
 Tagging the corpus by morphological part of speech resulted in 37% coverage. That is, 37% of tokens (3,123 out of 8,366) overtly indicate their part of speech in their morphology.
 
+#### The Annotation Process
+
+Tag                 | Description
+--------------------|---------------------------------------------------
+`function: English` | Item is a word or phrase in English.
+`function: INTJ`    | Item is an interjection.
+`function: MOD`     | Item is being used to modify.
+`function: PRED`    | Item is being used to predicate.
+`function: REF`     | Item is being used to refer.
+`function: X`       | Item is sound-imitative, a discourse hesitation, or a mention rather than a use.
+
 ([back to top](#readme))
 
 ## 7. Statistical Analysis
