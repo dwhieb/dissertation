@@ -85,3 +85,19 @@ really ‑IND.3 good chief
 Aspectual suffixes do _not_ show migratory behavior. (Lexical suffixes seem to be inserted  between roots and aspectual suffixes? Toshi’s grammar isn’t clear.)
 
 It seems like there’s some variability as to the ordering of the aspectual and lexical affixes.
+
+# Serialization
+
+* Manner
+* Time
+* Location
+* Comitative _ʔukʷink_
+* Prepositional _qʷayacʼiik_ 'doing to'
+* Accompanying Action / Situation
+* Relation 'for, with reference to, together, by, according to'
+* Entity-Relating _qu-_
+
+# Possession
+
+* V + POSS: subject N = possessor
+* N + POSS: N = possessee
