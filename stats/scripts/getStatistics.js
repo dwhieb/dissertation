@@ -201,12 +201,12 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
 
   const tableData = Array
   .from(corpusLexemes.entries())
-  .map(([lexeme, { dispersion, frequency }]) => [lexeme, dispersion, frequency])
+  .map(([lexeme, { dispersion, frequency }]) => [lexeme, frequency, dispersion])
   .sort(([, a], [, b]) => compare(a, b));
 
   if (!outputPath) {
     return console.info(tableData
-      .map(([lexeme, dispersion, frequency]) => `${lexeme}:\t${frequency} ${dispersion}`)
+      .map(([lexeme, frequency, dispersion]) => `${lexeme}:\t${frequency} ${dispersion}`)
       .join(`\n`));
   }
 
