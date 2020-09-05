@@ -26,5 +26,5 @@ function search(u) {
 
 const dataDir = 'data/Nuuchahnulth/texts';
 
-findAndReplace(dataDir, search, { searchOnly: false testRun: false })
+findAndReplace(dataDir, search, { searchOnly: false, testRun: false })
 .catch(console.error);
