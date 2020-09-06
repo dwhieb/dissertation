@@ -318,7 +318,7 @@ This section outlines the steps for creating descriptive and inferential statist
 
 #### Archlexeme Frequencies & Dispersions
 
-The following script calculates the raw frequency, observed relative frequency (instances per 1,000 words), log of the observed relative frequency, and corpus dispersions of each archlexeme in a corpus of JSON texts. Corpus dispersions are measured as a Deviation of Proportions (DP) (Gries [2008](#Gries2008)).
+The following script calculates various statistics regarding the frequencies and dispersions of each archlexeme in the corpus. It produces a single tab-delimited file with columns for each statistic.
 
 ```cmd
 node stats/scripts/bin/getStatistics.js {dataDir} --out {outputPath} --unit "lexeme" --filter data/English/scripts/tokenFilter.js
@@ -334,6 +334,17 @@ dataDir    | The path to the directory of JSON versions of the texts for a langu
 `--filter` | The path to a file which exports a filter function. This function should accept a Word object as its argument, and return true if the word should be included in the wordform/lexemes list, false if it should not. Allows the user to filter out unwanted tokens.
 `--out`    | The path to the file where you would like the results outputted
 `--unit`   | Whether to calculate statistics by `wordform`, `lexeme`, or `root`.
+
+The columns in the resulting file are as follows:
+
+Column     | Description
+-----------|------------------------------------------------------------------------------------------------------------------------------------
+lexeme     | The lexeme which the statistics refer to.
+frequency  | The raw frequency with which the lexeme occurs in the corpus.
+dispersion | The corpus dispersion of the lexeme. Corpus dispersions are measured as a Deviation of Proportions (DP) (Gries [2008](#Gries2008)).
+REF        | The number of times that the lexeme was used for reference in the corpus.
+PRED       | The number of times that the lexeme was used for predication in the corpus.
+MOD        | The number of times that the lexeme was used for modification in the corpus.
 
 ### Inferential Statistics
 
