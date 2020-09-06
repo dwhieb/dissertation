@@ -41,20 +41,6 @@ function compare(a, b) {
 }
 
 /**
- * Increments the frequency of an item in a frequency Map
- * @param  {String} item
- * @param  {Map}    frequencies A Map of items to their frequencies
- */
-function countToken(item, frequencies) {
-
-  const wordform = item.toLowerCase();
-
-  if (frequencies.has(wordform)) frequencies.set(wordform, frequencies.get(wordform) + 1);
-  else frequencies.set(wordform, 1);
-
-}
-
-/**
  * Ignore method which tells recursive-readdir to ignore any non-JSON files
  */
 function ignore(filePath, stats) {
@@ -75,7 +61,7 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
 
   // VARIABLES
 
-  const corpusLexemes = new Map;
+  const corpusFrequencies = new Map;
   let   corpusSize    = 0;
   const texts         = new Map;
 
@@ -83,8 +69,8 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
 
   const processFile = async filePath => {
 
-    const textLexemes = new Map;
-    let   textSize    = 0;
+    const textFrequencies = new Map;
+    let   textSize        = 0;
 
     const { utterances } = await readJSON(filePath);
 
@@ -107,9 +93,27 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
           case `root`: prop = `root`; break;
         }
 
-        if (!word[prop]) return;
-        countToken(word[prop], textLexemes);
-        countToken(word[prop], corpusLexemes);
+        const key = word[prop]?.toLowerCase();
+
+        if (!key) return;
+
+        let frequency = textFrequencies.get(key) ?? 0;
+        textFrequencies.set(key, ++frequency);
+
+        const itemFrequencies = corpusFrequencies.get(key) ?? {
+          MOD:   0,
+          PRED:  0,
+          REF:   0,
+          total: 0,
+        };
+
+        itemFrequencies.total++;
+
+        if (word.tags.function === `X`) return;
+
+        itemFrequencies[word.tags.function]++;
+
+        corpusFrequencies.set(key, itemFrequencies);
 
       });
 
@@ -118,7 +122,7 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
     const filename = path.basename(filePath, `.json`);
 
     texts.set(filename, {
-      lexemes: textLexemes,
+      lexemes: textFrequencies,
       size:    textSize,
     });
 
@@ -144,16 +148,17 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
 
   console.info(`Calculating corpus dispersions`);
 
-  const progressBar = new ProgressBar(`:bar :current :total :percent :eta`, { total: corpusLexemes.size });
+  const progressBar = new ProgressBar(`:bar :current :total :percent :eta`, { total: corpusFrequencies.size });
 
-  for (const [lexeme, corpusFrequency] of corpusLexemes) {
+  for (const [lexeme, itemFrequencies] of corpusFrequencies) {
 
     const textFrequencies = new Map;
+    const corpusFrequency = itemFrequencies.total;
 
     // get raw and relative frequencies of the lexeme in each text
     for (const [text, { lexemes }] of texts) {
 
-      const textFrequency = lexemes.get(lexeme) || 0;
+      const textFrequency   = lexemes.get(lexeme) || 0;
 
       textFrequencies.set(text, {
         raw:      textFrequency,
@@ -183,7 +188,7 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
     // get measure of corpus dispersion (Deviation of Proportions (DP))
     const dispersion = sumDifferences / 2;
 
-    corpusLexemes.set(lexeme, {
+    corpusFrequencies.set(lexeme, {
       dispersion,
       frequency:         corpusFrequency,
       relativeFrequency: (corpusFrequency * 1000) / corpusSize,
@@ -194,7 +199,7 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
   }
 
   const tableData = Array
-  .from(corpusLexemes.entries())
+  .from(corpusFrequencies.entries())
   .map(([
     lexeme, {
       dispersion,
