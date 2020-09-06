@@ -1,6 +1,6 @@
 library('vcd')
 
-language <- 'Nuuchahnulth'
+language <- 'English'
 
 file_path  <- paste('stats/data/', language, '_archlexemes.tsv', sep='')
 graph_path <- 'stats/figures/temp/temp.pdf'
