@@ -210,22 +210,20 @@ The resulting list of English wordforms to annotate is located in `data/English/
 
 #### Generating the Annotations File
 
-The annotations on the English data are <dfn>stand-off</dfn> or <dfn>standalone</dfn> annotations—that is, annotations which live in a separate file, and contain information about the original utterances they apply to. For this project, I stored the annotations in basic tab-separated files (`.tsv`), making it easy to add and edit annotations using spreadsheet software such as [Microsoft Excel][Excel] or [Apache OpenOffice Calc][OpenOffice], among others. All annotations were placed in a single large spreadsheet, with the language of each annotation / observation indicated.
+To make annotations on the English data, I created a spreadsheet of each of the ~380,000 tokens in [Keyword-in-Context][KWIC] (KWIC) format, allowing me to see the immediately preceding and following context for each token. The columns included in the annotation spreadsheet are below.
 
-The columns included in the annotation spreadsheet are below. The annotations spreadsheet followed a [Keyword-in-Context][KWIC] (KWIC) format, allowing me to see the immediately preceding and following context for each token.
-
-Column Name   | Description
-------------- | -----------
-language      | The ISO 639-3 code for the language of this observation.
-text          | The name of the text that the token appears in.
-utterance     | The number of the utterance within the text that the token appears in. (Numbering starts at 1.)
-word          | The number of the word within the utterance that the token appears in. (Numbering starts at 1.)
-archlexeme   | The archlexeme that this word token and lexeme belongs to.
-function      | The discourse function of this word token. This must have a value of `R` (reference), `P`, (predication), or `M` (modification).
-pre           | The words in the utterance preceding the token.
-token         | A transcription of the word token being annotated. This may also be called the <dfn>wordform</dfn>. It does not include any prosodic markup or punctuation.
-post          | The words in the utterance following the token.
-translation   | A translation of the utterance that the word token appears in. This was not included for English data.
+Column Name | Description
+------------|------------------------------------------------------------------------------------------------------------------------------------------------------------
+language    | The ISO 639-3 code for the language of this observation.
+text        | The name of the text that the token appears in.
+utterance   | The number of the utterance within the text that the token appears in. (Numbering starts at 1.)
+word        | The number of the word within the utterance that the token appears in. (Numbering starts at 1.)
+archlexeme  | The archlexeme that this word token and lexeme belongs to.
+function    | The discourse function of this word token. This must have a value of `R` (reference), `P`, (predication), or `M` (modification).
+pre         | The words in the utterance preceding the token.
+token       | A transcription of the word token being annotated. This may also be called the <dfn>wordform</dfn>. It does not include any prosodic markup or punctuation.
+post        | The words in the utterance following the token.
+translation | A translation of the utterance that the word token appears in. This was not included for English data.
 
 Rather than copy-paste each token and its surrounding context into this spreadsheet, I utilized the [DLx concordance library][dlx-concordance], a tool I wrote and published which takes a list of wordforms, finds every instance of those wordforms in a DLx (JSON) formatted corpus, and generates a tab-delimited list of tokens in Keyword-in-Context format. You can run this script on the command line as follows (making sure you've installed either this project, or the `@digitallinguistics/concordance` library first):
 
@@ -248,7 +246,7 @@ Once the tab-separated concordance in KWIC format was generated for English, I w
 After each of the selected tokens was annotated for its pragmatic function (reference, predication, or modification), those tags needed to be applied back to the original JSON corpus. This can be done with the following script:
 
 ```cmd
- node data/English/scripts/bin/applyTags.js data/English/annotations/annotations.tsv data/English/texts
+node data/English/scripts/bin/applyTags.js data/English/annotations/annotations.tsv data/English/texts
 ```
 
 ### Nuuchahnulth
@@ -339,7 +337,6 @@ Please contact me, [Daniel W. Hieber](https://danielhieber.com), if you have any
 [DaFoDiL]:          https://format.digitallinguistics.io/
 [dissertation]:     https://files.danielhieber.com/publications/dissertation.pdf
 [dlx-concordance]:  https://github.com/digitallinguistics/concordance/
-[Excel]:            https://products.office.com/en-us/excel
 [GitHub]:           https://github.com/dwhieb/dissertation
 [Java]:             https://www.java.com
 [JSON]:             http://json.org/
@@ -350,7 +347,6 @@ Please contact me, [Daniel W. Hieber](https://danielhieber.com), if you have any
 [Nuuchahnulth]:     https://github.com/dwhieb/Nuuchahnulth
 [OANC]:             http://www.anc.org/
 [OANC-download]:    http://www.anc.org/data/oanc/download/
-[OpenOffice]:       http://www.openoffice.org/product/calc.html
 [R]:                https://www.r-project.org/
 [scription]:        https://scription.digitallinguistics.io/
 [Switchboard]:      https://catalog.ldc.upenn.edu/LDC97S62
