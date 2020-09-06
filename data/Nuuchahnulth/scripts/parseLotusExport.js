@@ -39,6 +39,4 @@ void async function parseLotusExport() {
     await writeJSON(filePath, updatedText, { encoding: `utf8`, spaces: 2 });
   });
 
-  await import(`./calculateCoverage.js`);
-
 }();
