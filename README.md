@@ -219,7 +219,7 @@ text        | The name of the text that the token appears in.
 utterance   | The number of the utterance within the text that the token appears in. (Numbering starts at 1.)
 word        | The number of the word within the utterance that the token appears in. (Numbering starts at 1.)
 archlexeme  | The archlexeme that this word token and lexeme belongs to.
-function    | The discourse function of this word token. This must have a value of `R` (reference), `P`, (predication), or `M` (modification).
+function    | The discourse function of this word token. See table below.
 pre         | The words in the utterance preceding the token.
 token       | A transcription of the word token being annotated. This may also be called the <dfn>wordform</dfn>. It does not include any prosodic markup or punctuation.
 post        | The words in the utterance following the token.
@@ -240,6 +240,20 @@ You can generate a concordance using a different corpus, list of words, or other
 #### The Annotation Process
 
 Once the tab-separated concordance in KWIC format was generated for English, I was able to open it using Microsoft Excel and manually annotate all ~380,000 tokens for reference, predication, and modification. The resulting annotations are saved in `data/English/annotations` in both Excel and TSV formats.
+
+The following codes were used in the annotation of the data (in the `function` column).
+
+Code | Description
+-----|-------------------------------
+C    | predicate construction
+G    | gerund
+I    | infinitive
+M    | modification
+P    | predication
+R    | reference
+X    | other
+
+Predicate constructions refer to nominal predication, adjectival predication, etc.
 
 #### Applying the Annotations to the Corpus
 
