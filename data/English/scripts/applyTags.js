@@ -12,6 +12,16 @@ const {
   writeJSON,
 } = fs;
 
+const functions = {
+  C: `X`,
+  G: `X`,
+  I: `X`,
+  M: `MOD`,
+  P: `PRED`,
+  R: `REF`,
+  X: `X`,
+};
+
 /**
  * Ignore method which tells recursive-readdir to ignore any non-JSON files
  */
@@ -62,7 +72,7 @@ export default async function applyTags(annotationsPath, dataDir) {
       if (name === textName) {
         const word = text.utterances[u - 1].words[w - 1];
         word.stem = archilexeme;
-        word.tags.discourseFunction = discourseFunction;
+        word.tags.function = functions[discourseFunction];
         return false;
       }
 
