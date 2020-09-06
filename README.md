@@ -168,7 +168,9 @@ The following script produces a tab-delimited file listing each wordform in the 
 node stats/scripts/bin/getStatistics.js {path-to-data-directory} --out {output-path} --unit wordform --filter data/English/scripts/tokenFilter.js
 ```
 
-The `--unit` option specifies that you want statistics for `wordform`s rather than `lexeme`s, and the `--filter` option points to a filtering function, which tells the script to ignore certain tokens in the corpus. In particular, the script filters out unwanted tokens from the data (without affecting the calculation of dispersion). It relies on two files: `blacklist.yml` and `nonLexicalTags.yml`, both located in the `data/English/scripts/constants` folder. The `blacklist.yml` file contains a list of wordforms that should not be included in the list of wordforms (but again, without affecting calculation of dispersion, or the overall reported corpus frequency). Similarly, the `nonLexicalTags.yml` file contains Penn tags which should be excluded from the resulting wordlist. You can update either of these files to change the words which are filtered out of the English data.
+The `--unit` option specifies that you want statistics for wordforms rather than lexemes, and the `--filter` option points to a filtering function, which tells the script to ignore certain tokens in the corpus. In particular, the script filters out unwanted tokens from the data (without affecting the calculation of dispersion). It relies on two files: `blacklist.yml` and `nonLexicalTags.yml`, both located in the `data/English/scripts/constants` folder. The `blacklist.yml` file contains a list of wordforms that should not be included in the list of wordforms (but again, without affecting calculation of dispersion, or the overall reported corpus frequency). Similarly, the `nonLexicalTags.yml` file contains Penn tags which should be excluded from the resulting wordlist. You can update either of these files to change the words which are filtered out of the English data.
+
+The resulting file of English wordform frequencies is located at `stats/data/English_wordforms.csv`.
 
 ---
 
@@ -178,7 +180,7 @@ Finally, I used this list of suggested wordforms to pick which archlexemes I wan
 
 The final list of 100 archlexemes was created manually, and is located in `data/English/selected_archlexemes.txt`.
 
-After this was done, I next created a list of every possible inflected wordform of the 100 archlexemes that were selected for annotation. Morphologically derived forms were not included, but suppletive inflections variants were included. Thus for the archlexeme _know_, I included the following wordforms:
+After this was done, I next created a list of every possible inflected wordform of the 100 archlexemes that were selected for annotation. Morphologically derived forms were not included, but suppletive inflectional variants were included. Thus for the archlexeme _know_, I included the following wordforms:
 
 - _knew_
 - _know_
@@ -186,9 +188,9 @@ After this was done, I next created a list of every possible inflected wordform 
 - _known_
 - _knows_
 
-Some of these wordforms also function as morphologically derived words. This is a function of the fact that certain morphemes in English, like _‑ing_, have both inflectional and derivational uses. To be thorough I had to begin by including both inflectional and derivational uses in the list of tokens to annotate. However, when a derivational use of one of these words was encountered, I did not include it in the annotated data, since this study is focused on only morphologically unmarked derivation, i.e. conversion.
+Some of these wordforms also function as morphologically derived words. This is the result of the fact that certain morphemes in English, like _‑ing_, have both inflectional and derivational uses. For thoroughness, I included both inflectional and derivational uses in the list of tokens to annotate. However, whenever I encountered a derivational use of one of these words during the data annotation process, I did not annotate it, since this study is focused on only morphologically unmarked derivation, i.e. conversion.
 
-I also had to include some seemingly unusual wordforms in this list. For example, the forms of the archlexeme _one_ are as follows:
+The list also includes some seemingly unusual wordforms. For example, the forms of the archlexeme _one_ are as follows:
 
 - _one_
 - _ones_
@@ -200,7 +202,7 @@ Including the strange-looking verbal forms of _one_ allow the script to find any
 
 > What might be if we were **Oned**? United, as we would say (David Grieve, _Love in thin places_)
 
-Therefore it was necessary to construct the list of wordforms to annotate as inclusively as possible, in order to be open to the possibility of finding even seemingly unlikely or impossible cases of conversion.
+Therefore it was necessary to construct the list of wordforms in such a way as to allow the possibility of finding even seemingly unlikely or impossible cases of conversion.
 
 For English, I did not have to include possessive forms in the list of wordforms because `'s` is tokenized as a separate word by the OANC.
 
