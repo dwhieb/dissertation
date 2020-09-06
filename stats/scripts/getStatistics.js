@@ -186,8 +186,7 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
     .reduce((sum, count) => sum + count, 0);
 
     // get measure of corpus dispersion (Deviation of Proportions (DP))
-    itemStats.dispersion        = sumDifferences / 2;
-    itemStats.relativeFrequency = (corpusFrequency * 1000) / corpusSize;
+    itemStats.dispersion = sumDifferences / 2;
 
     progressBar.tick();
 
@@ -198,7 +197,6 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
   .map(([
     lexeme, {
       frequency,
-      relativeFrequency,
       dispersion,
       REF,
       PRED,
@@ -207,7 +205,6 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
   ]) => [
     lexeme,
     frequency,
-    relativeFrequency,
     dispersion,
     REF,
     PRED,
@@ -220,12 +217,11 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
       .map(([
         lexeme,
         frequency,
-        relativeFrequency,
         dispersion,
         REF,
         PRED,
         MOD,
-      ]) => `${lexeme}:\t${frequency} ${relativeFrequency} ${dispersion} ${REF} ${PRED} ${MOD}`)
+      ]) => `${lexeme}:\t${frequency} ${dispersion} ${REF} ${PRED} ${MOD}`)
       .join(`\n`));
   }
 
@@ -233,7 +229,6 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
     columns: [
       unit,
       `frequency`,
-      `relativeFrequency`,
       `dispersion`,
       `REF`,
       `PRED`,
