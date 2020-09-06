@@ -29,8 +29,8 @@ A self-imposed requirement for this project is that of empirical accountability 
   - [Nuuchahnulth](#nuuchahnulth-2)
 - [7. Statistical Analysis](#7-statistical-analysis)
   - [Descriptive Statistics](#descriptive-statistics)
-    - [Archilexeme Frequencies](#archlexeme-frequencies)
-    - [Archilexeme Corpus Dispersions](#archlexeme-corpus-dispersions)
+    - [Archlexeme Frequencies](#archlexeme-frequencies)
+    - [Archlexeme Corpus Dispersions](#archlexeme-corpus-dispersions)
   - [Inferential Statistics](#inferential-statistics)
 - [8. References](#8-references)
 - [9. Legal](#9-legal)
@@ -275,30 +275,42 @@ Tagging the corpus by morphological part of speech resulted in 37% coverage. Tha
 
 #### The Annotation Process
 
+To annotate the remaining 63% of the Nuuchahnulth corpus for pragmatic function, I utilized the [Lotus][Lotus], an browser-based web application which allows linguists to manage and analyze their linguistic data. Since the Nuuchahnulth data were already in the [JSON format][DaFoDiL] required for use with this tool, I simply imported the texts into Lotus, and then used the Tagger tool to tag each token for reference, predication, or modification. The full set of tags used is below.
+
 Tag                 | Description
 --------------------|---------------------------------------------------
-`function: English` | Item is a word or phrase in English.
-`function: INTJ`    | Item is an interjection.
-`function: MOD`     | Item is being used to modify.
-`function: PRED`    | Item is being used to predicate.
-`function: REF`     | Item is being used to refer.
-`function: X`       | Item is sound-imitative, a discourse hesitation, a conjunction (_waa_ 'and', _ʔuḥ_ 'and'), a complementizer (_ʔan_ 'that, because'), a vocative/exclamative, or a mention rather than a use.
+`function: English` | Item is a word or phrase in English.
+`function: INTJ`    | Item is an interjection.
+`function: MOD`     | Item is being used to modify.
+`function: PRED`    | Item is being used to predicate.
+`function: REF`     | Item is being used to refer.
+`function: X`       | Item is sound-imitative, a discourse hesitation, a conjunction (_waa_ 'and', _ʔuḥ_ 'and'), a complementizer (_ʔan_ 'that, because'), a vocative/exclamative, or a mention rather than a use.
+
+When all 8,366 tokens were tagged, I then exported the corpus from Lotus and merged the new tags back into the existing corpus. Since the Lotus app exports a single file, this required a small script:
+
+```cmd
+node data/Nuuchahnulth/scripts/parseLotusExport.js {path-to-export-file}
+```
+
+Note that this script merges newer tags into the corpus in this repository. It does not overwrite the existing files.
 
 ([back to top](#readme))
 
 ## 7. Statistical Analysis
 
-Once the two corpora were annotated for pragmatic function, numerous descriptive statistics and hypothesis-testing statistics needed to be conducted. This section outlines the steps for running each of these statistics. In most cases, this requires simply running a script which reports the result. In some cases, an initial step is required to extra data from the JSON corpus into a TSV file. This also entails merely running a script from the command line. All the scripts in this section are found in the `stats/scripts` folder.
+This section outlines the steps for creating descriptive and inferential statistics for the annotated English and Nuuchahnulth datasets.
 
 ### Descriptive Statistics
 
-#### Archilexeme Frequencies
+#### Archlexeme Frequencies & Dispersions
 
-To calculate the frequency of each archlexeme in a corpus, run the following script:
+The following script calculates the raw frequency, observed relative frequency (instances per 1,000 words), log of the observed relative frequency, and corpus dispersions of each archlexeme in a corpus of JSON texts. Corpus dispersions are measured as a Deviation of Proportions (DP) (Gries [2008](#Gries2008)).
 
 ```cmd
 node stats/scripts/bin/getStatistics.js {dataDir} --out {outputPath} --unit "lexeme" --filter data/English/scripts/tokenFilter.js
 ```
+
+You will need to run this script once for English and once for Nuuchahnulth.
 
 For English, it is important to include a `--filter` option whose value is set to the above. This excludes unwanted tokens from the results.
 
@@ -308,10 +320,6 @@ dataDir    | The path to the directory of JSON versions of the texts for a langu
 `--filter` | The path to a file which exports a filter function. This function should accept a Word object as its argument, and return true if the word should be included in the wordform/lexemes list, false if it should not. Allows the user to filter out unwanted tokens.
 `--out`    | The path to the file where you would like the results outputted
 `--unit`   | Whether to calculate statistics by `wordform`, `lexeme`, or `root`.
-
-#### Archilexeme Corpus Dispersions
-
-To calculate corpus dispersions (measured as a Deviation of Proportions (DP) — see Gries ([2008](#Gries2008)) for more details), run the same script as you did for [Archilexeme Frequencies](#archlexeme-frequencies) above. This script produces a results table which lists both frequencies and dispersions.
 
 ### Inferential Statistics
 
@@ -353,6 +361,7 @@ Please contact me, [Daniel W. Hieber](https://danielhieber.com), if you have any
 [Java]:             https://www.java.com
 [JSON]:             http://json.org/
 [KWIC]:             https://en.wikipedia.org/wiki/Key_Word_in_Context
+[Lotus]:            https://app.digitallinguistics.io/
 [MIT]:              https://choosealicense.com/licenses/mit/
 [Node]:             https://nodejs.org/
 [npm]:              https://www.npmjs.com/
