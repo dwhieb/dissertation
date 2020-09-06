@@ -244,7 +244,7 @@ Once the tab-separated concordance in KWIC format was generated for English, I w
 The following codes were used in the annotation of the data (in the `function` column).
 
 Code | Description
------|-------------------------------
+-----|-----------------------
 C    | predicate construction
 G    | gerund
 I    | infinitive
