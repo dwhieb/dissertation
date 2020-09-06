@@ -29,8 +29,8 @@ A self-imposed requirement for this project is that of empirical accountability 
   - [Nuuchahnulth](#nuuchahnulth-2)
 - [7. Statistical Analysis](#7-statistical-analysis)
   - [Descriptive Statistics](#descriptive-statistics)
-    - [Archilexeme Frequencies](#archilexeme-frequencies)
-    - [Archilexeme Corpus Dispersions](#archilexeme-corpus-dispersions)
+    - [Archilexeme Frequencies](#archlexeme-frequencies)
+    - [Archilexeme Corpus Dispersions](#archlexeme-corpus-dispersions)
   - [Inferential Statistics](#inferential-statistics)
 - [8. References](#8-references)
 - [9. Legal](#9-legal)
@@ -73,9 +73,9 @@ For more information about Node.js and npm, visit the [Node.js][Node] and [npm][
 
 You will need to download Node and npm in order to run many scripts in this project. You can download both pieces of software at once from the [Node.js web page][Node]. The scripts in this repository were written using Version 14 of Node, so you may need to download that specific version in order for the scripts in this project to work correctly.
 
-Once Node is installed on your computer, any Node script can be run from the command line with the command `node {path-to-file}`.
+Once Node is installed on your computer, any Node script can be run from the command line with the command `node {path-to-script}`.
 
-npm also allows you to save commonly-used command line commands as project-specific scripts, saving you from having to retype the command and all its arguments each time you want to run it. You can run any of the npm scripts in this repository from the command line following the format `npm run {script-name}`.
+npm also allows you to save commonly-used command line commands as project-specific scripts, saving you from having to retype the command and all its arguments each time you want to run it. A few of the scripts in this repository have been made into this kind of project-specific script, and can be run from the command line following the format `npm run {script-name}`.
 
 ### Installing the Project
 
@@ -85,27 +85,29 @@ Once you have cloned this repository and installed npm and Node, install the nec
 
 ## 3. Data Collection
 
-All the data in this study are publicly available. This section describes the necessary steps for obtaining that data.
+All the data in this study are publicly available. This section describes the necessary steps for obtaining those data.
 
 ### English
 
 The data used for the investigation of English come from the [Open American National Corpus][OANC] (<abbr title='Open American National Corpus'>OANC</abbr>), a 15 million word corpus whose data are entirely open access. Since most linguistic data on small, endangered, and/or indigenous languages come from spoken corpora, I elected to use just the spoken portion of the OANC for comparability. This portion of the corpus totals 3,217,772 tokens, and is composed of two distinct subcorpora—the [Charlotte Narrative & Conversation Collection][Charlotte] (<abbr title='Charlotte Narrative &amp; Conversation Collection'>CNCC</abbr> or simply "the Charlotte corpus") and the [Switchboard Corpus][Switchboard]. More details about the Charlotte corpus may be found [here][Charlotte], and the Switchboard corpus [here][Switchboard].
 
-The OANC may be downloaded in its entirety from from the [OANC download page][OANC-download] in `.zip` or `.tgz` formats. You will need to unzip the folder after you have downloaded it. The spoken portion of the corpus is in `data/spoken` inside the downloaded folder.
+The OANC may be downloaded in its entirety from from the [OANC download page][OANC-download] in `.zip` or `.tgz` formats. You will need to unzip the folder after you have downloaded it. Inside the downloaded folder, the spoken portion of the corpus is in `data/spoken`.
+
+In this repository, the English data are located in `data/English/texts`.
 
 ### Nuuchahnulth
 
-The data used for the investigation of Nuuchahnulth comes from a corpus of texts collected and edited by Toshihide Nakayama, and published in Nakayama ([2003a](#Nakayama2003a), [2003b](#Nakayama2003b)). I manually typed the corpus as simple text files, using a computationally-parseable format for representing linguistic texts known as [scription][scription]. The resulting digitally-searchable corpus may be found [here on GitHub][Nuuchahnulth].
+The data used for the investigation of Nuuchahnulth comes from a corpus of texts collected and edited by Toshihide Nakayama, and published in Nakayama ([2003a](#Nakayama2003a), [2003b](#Nakayama2003b)). I manually typed the corpus as simple text files, using a computationally-parseable format for representing linguistic texts known as [scription][scription]. The resulting digitally-searchable corpus is available [on GitHub][Nuuchahnulth].
 
 The Nuuchahnulth corpus consists of 24 texts dictated by two speakers, containing 2,081 utterances, and 8,366 tokens (comprising 4,216 types).
 
-Since the Nuuchahnulth corpus was already available in both scription and [DLx JSON format][DaFoDiL], I simply copied the JSON versions of the texts into the repository for this dissertation.
+In this repository, the Nuuchahnulth data are located in `data/Nuuchahnulth/texts`.
 
 ([back to top](#readme))
 
 ## 4. Data Preparation
 
-This section covers the steps necessary to convert and otherwise prepare the data used in this study for annotation and analysis.
+This section covers steps for converting and otherwise preparing the data used in this study for annotation and analysis.
 
 When scripting with JavaScript, I find it significantly easier to work with data in [<abbr title='JavaScript Object Notation'>JSON</abbr>][JSON] (JavaScript Object Notation) format rather than raw text files. JSON is a simple text format that is highly human-readable, and can be natively parsed by every major programming language. As such it has become the standard data interchange format for the modern web. More information about JSON format can be found [here][JSON]. More details about the use of JSON format for linguistic data can be found [here][DaFoDiL]. This section shows how to convert the data for this study to JSON for further annotation.
 
@@ -121,7 +123,7 @@ For the OANC, converting the data to JSON involves first tokenizing the corpus. 
 
 1. If you do not have Java installed on your computer, download it from [here][Java] and then install it on your computer.
 
-1. Run the ANC Tool following the instructions on the [ANC Tool page][ANC-Tool]. It is recommended that you run the tool from the command line following the format `java -Xmx500M -jar ANCTool-x.y.z-jar.jar`. See the [ANC Tool page][ANC-Tool] for complete details. If you have npm installed on your computer, you can simply run the ANC Tool from the command line with `npm run anc` from the root of this repository.
+1. Run the ANC Tool from the command line using `npm run anc`. Alternatively, you can run the ANC Tool following the instructions on the [ANC Tool page][ANC-Tool]. It is recommended that you run the tool from the command line following the format `java -Xmx500M -jar ANCTool-x.y.z-jar.jar`. See the [ANC Tool page][ANC-Tool] for complete details.
 
 1. The first time you run the ANC Tool, it will ask you to specify the location of the folder where the files `annotations.xml` and `OANC-corpus-header.xml` are located. Find this folder where you downloaded them and click _Accept_.
 
@@ -131,7 +133,7 @@ For the OANC, converting the data to JSON involves first tokenizing the corpus. 
     - **Output Directory:** Select the location where you would like the new version of the corpus to be generated. Make sure this folder is **different** from the input directory.
     - **Input Format:** Select _GrAF_.
     - **Encoding (Text):** Select _UTF-8_.
-    - **Copy Directory Structure:** Check this box. (However, leaving it uncheck should not affect the scripts in this project.)
+    - **Copy Directory Structure:** Check this box. (However, leaving it unchecked should not affect the scripts in this project.)
     - **MonoConc Pro**: Select this tab.
     - **Part of Speech:** Select _Hepple part of speech tags_
     - **Separator Character:** Leave this set to the underscore (`_`)
@@ -158,12 +160,12 @@ This section covers the technical steps involved in the process of annotating th
 
 #### Selecting Words for Annotation
 
-100 archilexemes were selected from the English corpus for annotation. These archilexemes were chosen randomly from the set of wordforms in the corpus, by first dividing those wordforms into 100 different bins depending on the corpus dispersion of that wordform (measured using <dfn>Deviation of Proportions</dfn> (<abbr title='Deviation of Proportions'>DP</abbr>) [Gries [2008](#Gries2008)]), and then selecting one word randomly from each bin. Words which did not meet the selection criteria were thrown out, and the process was repeated until 100 viable archilexemes were found. The selection criteria for archilexemes are discussed in the Data & Methods chapter of my dissertation document, available [here][dissertation].
+100 archlexemes were selected from the English corpus for annotation (see [my dissertation][dissertation] for a definition of the notion of <dfn>archlexeme</dfn>). These archlexemes were chosen randomly from the set of wordforms in the corpus, by first dividing those wordforms into 100 different bins depending on the corpus dispersion of that wordform (measured using <dfn>Deviation of Proportions</dfn> (<abbr title='Deviation of Proportions'>DP</abbr>) [Gries [2008](#Gries2008)]), and then selecting one word randomly from each bin. Words which did not meet the selection criteria were thrown out, and the process was repeated until 100 viable archlexemes were found. The selection criteria for archlexemes are discussed in the Data & Methods chapter of my dissertation document, available [here][dissertation].
 
-To select the 100 archilexemes, I wrote a script which produces a tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion. In addition, the script prints the total size of the corpus to the console. This script can be run on the command line using the following command, where `{output}` is the location where you would like the resulting TSV file generated:
+The following script produces a tab-delimited file listing each wordform in the corpus, its raw frequency, and its corpus dispersion. It also prints the total size of the corpus to the console.
 
 ```cmd
-node stats/scripts/bin/getStatistics.js data/English/texts --out {output} --unit wordform --filter data/English/scripts/tokenFilter.js
+node stats/scripts/bin/getStatistics.js {path-to-data-directory} --out {output-path} --unit wordform --filter data/English/scripts/tokenFilter.js
 ```
 
 The `--unit` option specifies that you want statistics for `wordform`s rather than `lexeme`s, and the `--filter` option points to a filtering function, which tells the script to ignore certain tokens in the corpus. In particular, the script filters out unwanted tokens from the data (without affecting the calculation of dispersion). It relies on two files: `blacklist.yml` and `nonLexicalTags.yml`, both located in the `data/English/scripts/constants` folder. The `blacklist.yml` file contains a list of wordforms that should not be included in the list of wordforms (but again, without affecting calculation of dispersion, or the overall reported corpus frequency). Similarly, the `nonLexicalTags.yml` file contains Penn tags which should be excluded from the resulting wordlist. You can update either of these files to change the words which are filtered out of the English data.
@@ -172,11 +174,11 @@ The `--unit` option specifies that you want statistics for `wordform`s rather th
 
 Having generated the list of wordforms and their statistics, I then wrote an R script which bins wordforms based on their corpus dispersions, generates a list of 100 suggested wordforms (one from each dispersion bin) and saves it to a text file. This script is located in `scripts/stats/selectWordforms.R`. You can adjust the `input_path` and `output_path` variables at the top of the file to point it to the lists of wordforms generated in the previous step, and the location where you would like the list of selected wordforms to be generated, respectively.
 
-Finally, I used this list of suggested wordforms to pick which archilexemes I wanted to annotate. If a suggested wordform didn't meet the selection criteria, I added it to `blacklist.yml` and regenerated the list of wordforms. Occasionally, in the higher frequencies, there were no wordforms in that dispersion bin. When this happened, I selected a word from the next lowest dispersion bin, with the result that a few bins are represented more than once in the annotated data.
+Finally, I used this list of suggested wordforms to pick which archlexemes I wanted to annotate. If a suggested wordform didn't meet the selection criteria, I added it to `blacklist.yml` and regenerated the list of wordforms. Occasionally, in the higher frequencies, there were no wordforms in that dispersion bin. When this happened, I selected a word from the next lowest dispersion bin, with the result that a few bins are represented more than once in the annotated data.
 
-The final list of 100 archilexemes was created manually, and is located in `data/English/selected_archilexemes.txt`.
+The final list of 100 archlexemes was created manually, and is located in `data/English/selected_archlexemes.txt`.
 
-After this was done, I next created a list of every possible inflected wordform of the 100 archilexemes that were selected for annotation. Morphologically derived forms were not included, but suppletive inflections variants were included. Thus for the archilexeme _know_, I included the following wordforms:
+After this was done, I next created a list of every possible inflected wordform of the 100 archlexemes that were selected for annotation. Morphologically derived forms were not included, but suppletive inflections variants were included. Thus for the archlexeme _know_, I included the following wordforms:
 
 - _knew_
 - _know_
@@ -186,7 +188,7 @@ After this was done, I next created a list of every possible inflected wordform 
 
 Some of these wordforms also function as morphologically derived words. This is a function of the fact that certain morphemes in English, like _‑ing_, have both inflectional and derivational uses. To be thorough I had to begin by including both inflectional and derivational uses in the list of tokens to annotate. However, when a derivational use of one of these words was encountered, I did not include it in the annotated data, since this study is focused on only morphologically unmarked derivation, i.e. conversion.
 
-I also had to include some seemingly unusual wordforms in this list. For example, the forms of the archilexeme _one_ are as follows:
+I also had to include some seemingly unusual wordforms in this list. For example, the forms of the archlexeme _one_ are as follows:
 
 - _one_
 - _ones_
@@ -216,7 +218,7 @@ language      | The ISO 639-3 code for the language of this observation.
 text          | The name of the text that the token appears in.
 utterance     | The number of the utterance within the text that the token appears in. (Numbering starts at 1.)
 word          | The number of the word within the utterance that the token appears in. (Numbering starts at 1.)
-archilexeme   | The archilexeme that this word token and lexeme belongs to.
+archlexeme   | The archlexeme that this word token and lexeme belongs to.
 function      | The discourse function of this word token. This must have a value of `R` (reference), `P`, (predication), or `M` (modification).
 pre           | The words in the utterance preceding the token.
 token         | A transcription of the word token being annotated. This may also be called the <dfn>wordform</dfn>. It does not include any prosodic markup or punctuation.
@@ -280,7 +282,7 @@ Once the two corpora were annotated for pragmatic function, numerous descriptive
 
 #### Archilexeme Frequencies
 
-To calculate the frequency of each archilexeme in a corpus, run the following script:
+To calculate the frequency of each archlexeme in a corpus, run the following script:
 
 ```cmd
 node stats/scripts/bin/getStatistics.js {dataDir} --out {outputPath} --unit "lexeme" --filter data/English/scripts/tokenFilter.js
@@ -297,7 +299,7 @@ dataDir    | The path to the directory of JSON versions of the texts for a langu
 
 #### Archilexeme Corpus Dispersions
 
-To calculate corpus dispersions (measured as a Deviation of Proportions (DP) — see Gries ([2008](#Gries2008)) for more details), run the same script as you did for [Archilexeme Frequencies](#archilexeme-frequencies) above. This script produces a results table which lists both frequencies and dispersions.
+To calculate corpus dispersions (measured as a Deviation of Proportions (DP) — see Gries ([2008](#Gries2008)) for more details), run the same script as you did for [Archilexeme Frequencies](#archlexeme-frequencies) above. This script produces a results table which lists both frequencies and dispersions.
 
 ### Inferential Statistics
 
