@@ -100,20 +100,20 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
         let frequency = textFrequencies.get(key) ?? 0;
         textFrequencies.set(key, ++frequency);
 
-        const itemFrequencies = corpusFrequencies.get(key) ?? {
-          MOD:   0,
-          PRED:  0,
-          REF:   0,
-          total: 0,
+        const itemStats = corpusFrequencies.get(key) ?? {
+          frequency: 0,
+          MOD:       0,
+          PRED:      0,
+          REF:       0,
         };
 
-        itemFrequencies.total++;
+        itemStats.frequency++;
 
         if (word.tags.function === `X`) return;
 
-        itemFrequencies[word.tags.function]++;
+        itemStats[word.tags.function]++;
 
-        corpusFrequencies.set(key, itemFrequencies);
+        corpusFrequencies.set(key, itemStats);
 
       });
 
@@ -150,10 +150,10 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
 
   const progressBar = new ProgressBar(`:bar :current :total :percent :eta`, { total: corpusFrequencies.size });
 
-  for (const [lexeme, itemFrequencies] of corpusFrequencies) {
+  for (const [lexeme, itemStats] of corpusFrequencies) {
 
     const textFrequencies = new Map;
-    const corpusFrequency = itemFrequencies.total;
+    const corpusFrequency = itemStats.frequency;
 
     // get raw and relative frequencies of the lexeme in each text
     for (const [text, { lexemes }] of texts) {
@@ -186,13 +186,8 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
     .reduce((sum, count) => sum + count, 0);
 
     // get measure of corpus dispersion (Deviation of Proportions (DP))
-    const dispersion = sumDifferences / 2;
-
-    corpusFrequencies.set(lexeme, {
-      dispersion,
-      frequency:         corpusFrequency,
-      relativeFrequency: (corpusFrequency * 1000) / corpusSize,
-    });
+    itemStats.dispersion        = sumDifferences / 2;
+    itemStats.relativeFrequency = (corpusFrequency * 1000) / corpusSize;
 
     progressBar.tick();
 
@@ -202,15 +197,21 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
   .from(corpusFrequencies.entries())
   .map(([
     lexeme, {
-      dispersion,
       frequency,
       relativeFrequency,
+      dispersion,
+      REF,
+      PRED,
+      MOD,
     },
   ]) => [
     lexeme,
     frequency,
     relativeFrequency,
     dispersion,
+    REF,
+    PRED,
+    MOD,
   ])
   .sort(([,,, a], [,,, b]) => compare(a, b));
 
@@ -221,7 +222,10 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
         frequency,
         relativeFrequency,
         dispersion,
-      ]) => `${lexeme}:\t${frequency} ${relativeFrequency} ${dispersion}`)
+        REF,
+        PRED,
+        MOD,
+      ]) => `${lexeme}:\t${frequency} ${relativeFrequency} ${dispersion} ${REF} ${PRED} ${MOD}`)
       .join(`\n`));
   }
 
@@ -231,6 +235,9 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
       `frequency`,
       `relativeFrequency`,
       `dispersion`,
+      `REF`,
+      `PRED`,
+      `MOD`,
     ],
     delimiter: `\t`,
     header:    true,
