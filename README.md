@@ -251,15 +251,27 @@ node data/English/scripts/bin/applyTags.js data/English/annotations/annotations.
 
 ### Nuuchahnulth
 
-Because the size of the Nuuchahnulth corpus is significantly smaller than that of the English corpus, it was not necessary to select a subset of the data to code. Instead, it was possible to annotate every lexical item in the corpus. Since the Nuuchahnulth corpus consists of interlinear glossed texts, it was possible to programmatically lemmatize and tag the corpus (although the automated tagging process did not achieve full coverage of the corpus; see below).
+Because the size of the Nuuchahnulth corpus is significantly smaller than that of the English corpus, it was not necessary to select a subset of the data to code. Instead, it was possible to annotate every lexical item in the corpus. Since the Nuuchahnulth corpus consists of interlinear glossed texts, it was also possible to programmatically lemmatize and tag a portion of the corpus.
 
-To lemmatize the corpus (that is, identify the stem of each token), I wrote a script which can be run with the command `node data/Nuuchahnulth/scripts/lemmatize.js`. To oversimplify somewhat, this script strips away the grammatical morphemes within each token, leaving just the lexical core of the word. This set of lexical morphemes is then set as the `"stem"` property on the word. For example, the word _c̓us-ʼi·tap-ʼaƛ_ 'dig-on.the.ground-FINITE' is lemmatized as _c̓us-ʼi·tap_ 'dig-on.the.ground'. This is considered the stem of the word.
+To lemmatize the corpus (that is, identify the stem of each token), run the following script:
 
-The lemmatize script also identifies the root of each word, and sets this as the `"root"` property.
+```cmd
+node data/Nuuchahnulth/scripts/lemmatize.js
+```
 
-Next, I programmatically tagged words in the corpus for part of speech based on their morphology. This was accomplished with a script which can be run by entering `node data/Nuuchahnulth/scripts/addMorphologicalTags.js` from the command line. This script adds a `morphPOS` tag to each word in the corpus based on that word's morphology. For example, if a word has the definite suffix _‑ʔiˑ_ it is marked as a nominal. The value of this tag is either `REF` (reference), `PRED` (predication), or `PRED-REF` (ambiguous between predication and reference; this applies specifically to words which have a indefinite relative suffix). Because words tagged as `PRED-REF` are categorially ambiguous in isolation, I further examined each of these cases (187 instances) and manually annotated them as predicates or referents depending on their context in discourse.
+To oversimplify the grammatical discussion somewhat, this script strips away the grammatical morphemes within each token, leaving just the lexical core of the word. This set of lexical morphemes is then set as the `"stem"` property on the word. For example, the word _c̓us-ʼi·tap-ʼaƛ_ 'dig-on.the.ground-FINITE' is lemmatized as _c̓us-ʼi·tap_ 'dig-on.the.ground'. This is considered the stem of the word.
 
-Tagging the corpus by morphological part of speech resulted in 37% coverage. That is, 37% of tokens (3,123 out of 8,366) overtly indicate their part of speech in their morphology.
+This script also identifies the root of each word, and sets this as the `"root"` property.
+
+Next, I programmatically tagged words in the corpus for its pragmatic function based on their morphology. This is accomplished with the following script:
+
+```cmd
+node data/Nuuchahnulth/scripts/addMorphologicalTags.js
+```
+
+This script adds a `function` tag to each word in the corpus based on that word's morphology. For example, if a word has the definite suffix _‑ʔiˑ_ it is marked as a referent. The value of this tag is either `REF` (reference), `PRED` (predication), or `PRED-REF` (ambiguous between predication and reference; this applies specifically to words which have a indefinite relative suffix). Because words tagged as `PRED-REF` are categorially ambiguous in isolation, I further examined each of these cases (187 instances) and manually updated the tag to either `PRED` or `REF` as appropriate.
+
+Tagging the corpus by morphological part of speech resulted in 37% coverage. That is, 37% of tokens (3,123 out of 8,366) overtly indicate their pragmatic function in their morphology.
 
 #### The Annotation Process
 
