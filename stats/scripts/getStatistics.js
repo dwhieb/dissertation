@@ -126,7 +126,7 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
 
   // calculate raw frequencies of lexemes
 
-  console.info(`Calculating raw frequencies`);
+  console.info(`Calculating frequencies`);
 
   await processDir(dataDir, processFile, ignore);
 
@@ -185,7 +185,8 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
 
     corpusLexemes.set(lexeme, {
       dispersion,
-      frequency: corpusFrequency,
+      frequency:         corpusFrequency,
+      relativeFrequency: (corpusFrequency * 1000) / corpusSize,
     });
 
     progressBar.tick();
@@ -194,12 +195,28 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
 
   const tableData = Array
   .from(corpusLexemes.entries())
-  .map(([lexeme, { dispersion, frequency }]) => [lexeme, frequency, dispersion])
-  .sort(([,, a], [,, b]) => compare(a, b));
+  .map(([
+    lexeme, {
+      dispersion,
+      frequency,
+      relativeFrequency,
+    },
+  ]) => [
+    lexeme,
+    frequency,
+    relativeFrequency,
+    dispersion,
+  ])
+  .sort(([,,, a], [,,, b]) => compare(a, b));
 
   if (!outputPath) {
     return console.info(tableData
-      .map(([lexeme, frequency, dispersion]) => `${lexeme}:\t${frequency} ${dispersion}`)
+      .map(([
+        lexeme,
+        frequency,
+        relativeFrequency,
+        dispersion,
+      ]) => `${lexeme}:\t${frequency} ${relativeFrequency} ${dispersion}`)
       .join(`\n`));
   }
 
@@ -207,6 +224,7 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
     columns: [
       unit,
       `frequency`,
+      `relativeFrequency`,
       `dispersion`,
     ],
     delimiter: `\t`,
