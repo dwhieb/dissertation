@@ -10,10 +10,13 @@ const csvOptions = {
   columns: [
     `item`,
     `frequency`,
-    `dispersion`,
     `REF`,
     `PRED`,
     `MOD`,
+    `dispersion`,
+    `dispersionREF`,
+    `dispersionPRED`,
+    `dispersionMOD`,
   ],
   delimiter: `\t`,
   header:    true,
@@ -25,33 +28,26 @@ export default async function createStatsFile(outputPath, lexemeStats) {
   .map(([
     lexeme, {
       frequency,
-      dispersion,
       REF,
       PRED,
       MOD,
+      dispersion,
+      dispersionREF,
+      dispersionPRED,
+      dispersionMOD,
     },
   ]) => [
     lexeme,
     frequency,
-    dispersion,
     REF,
     PRED,
     MOD,
+    dispersion,
+    dispersionREF,
+    dispersionPRED,
+    dispersionMOD,
   ])
-  .sort(([,, a], [,, b]) => compare(a, b));
-
-  if (!outputPath) {
-    return console.info(tableData
-      .map(([
-        lexeme,
-        frequency,
-        dispersion,
-        REF,
-        PRED,
-        MOD,
-      ]) => `${lexeme}:\t${frequency} ${dispersion} ${REF} ${PRED} ${MOD}`)
-      .join(`\n`));
-  }
+  .sort(([a], [b]) => compare(a, b));
 
   const tsv = await json2csv(tableData, csvOptions);
   await writeFile(outputPath, tsv, `utf8`);
