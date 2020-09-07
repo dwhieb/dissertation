@@ -19,36 +19,43 @@ export default function calculateDispersion(lexeme, corpusStats, textsFrequencie
       REF:       0,
     };
 
+    const textDiffs = {};
+
     // actualFrequency = the actual text frequency of the lexeme, relative to its corpus frequency
-    const actualFrequency     = lexemeStats.frequency / corpusStats.frequency;
-    const difference          = Math.abs(expectedFrequency - actualFrequency);
+    const actualFrequency = lexemeStats.frequency / corpusStats.frequency;
+    textDiffs.all = Math.abs(expectedFrequency - actualFrequency);
 
-    const actualFrequencyMOD  = lexemeStats.MOD / (corpusStats.MOD || 1);
-    const differenceMOD       = Math.abs(expectedFrequency - actualFrequencyMOD);
+    if (corpusStats.MOD) {
+      const actualFrequencyMOD = lexemeStats.MOD / corpusStats.MOD;
+      textDiffs.MOD = Math.abs(expectedFrequency - actualFrequencyMOD);
+    }
 
-    const actualFrequencyPRED = lexemeStats.PRED / (corpusStats.PRED || 1);
-    const differencePRED      = Math.abs(expectedFrequency - actualFrequencyPRED);
+    if (corpusStats.PRED) {
+      const actualFrequencyPRED = lexemeStats.PRED / corpusStats.PRED;
+      textDiffs.PRED = Math.abs(expectedFrequency - actualFrequencyPRED);
+    }
 
-    const actualFrequencyREF  = lexemeStats.REF / (corpusStats.REF || 1);
-    const differenceREF       = Math.abs(expectedFrequency - actualFrequencyREF);
+    if (corpusStats.REF) {
+      const actualFrequencyREF = lexemeStats.REF / corpusStats.REF;
+      textDiffs.REF = Math.abs(expectedFrequency - actualFrequencyREF);
+    }
 
-    return diffs.set(filename, {
-      difference,
-      differenceMOD,
-      differencePRED,
-      differenceREF,
-    });
+    return diffs.set(filename, textDiffs);
 
   }, new Map);
 
   // get sum of the absolute differences calculated above
   const sumDifferences = Array.from(differences.values())
   .reduce((sums, counts) => {
-    sums.all  += counts.difference;
-    sums.MOD  += counts.differenceMOD;
-    sums.PRED += counts.differencePRED;
-    sums.REF  += counts.differenceREF;
+
+    sums.all += counts.all;
+
+    if (counts.MOD) sums.MOD += counts.MOD;
+    if (counts.PRED) sums.PRED += counts.PRED;
+    if (counts.REF) sums.REF += counts.REF;
+
     return sums;
+
   }, {
     all:  0,
     MOD:  0,
@@ -57,8 +64,8 @@ export default function calculateDispersion(lexeme, corpusStats, textsFrequencie
   });
 
   corpusStats.dispersion     = sumDifferences.all / 2;
-  corpusStats.dispersionMOD  = sumDifferences.MOD / 2;
-  corpusStats.dispersionPRED = sumDifferences.PRED / 2;
-  corpusStats.dispersionREF  = sumDifferences.REF / 2;
+  corpusStats.dispersionMOD  = (sumDifferences.MOD / 2) || 1;
+  corpusStats.dispersionPRED = (sumDifferences.PRED / 2) || 1;
+  corpusStats.dispersionREF  = (sumDifferences.REF / 2) || 1;
 
 }
