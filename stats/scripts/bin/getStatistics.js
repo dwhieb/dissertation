@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import getStatistics     from '../getStatistics.js';
+import getStatistics     from '../getStatistics/index.js';
 import parseArguments    from 'yargs-parser';
 import { pathToFileURL } from 'url';
 

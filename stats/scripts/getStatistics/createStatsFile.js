@@ -1,4 +1,4 @@
-import compare       from '../../scripts/utilities/compare.js';
+import compare       from '../../../scripts/utilities/compare.js';
 import csvStringify  from 'csv-stringify';
 import fs            from 'fs-extra';
 import { promisify } from 'util';
