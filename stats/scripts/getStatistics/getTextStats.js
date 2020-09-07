@@ -44,12 +44,12 @@ export default async function getTextStats(filePath, wordFilter, unit) {
         REF:       0,
       };
 
+      lexemeFrequencies.set(key, itemStats);
       itemStats.frequency++; // count frequency of all words, even untagged ones
 
       if (!tags.includes(word.tags.function)) return;
 
       itemStats[word.tags.function]++;
-      lexemeFrequencies.set(key, itemStats);
 
     });
 

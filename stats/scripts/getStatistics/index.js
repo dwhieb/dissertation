@@ -21,6 +21,6 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
 
   await createStatsFile(outputPath, lexemeStats);
 
-  console.info(`Corpus size: ${corpusSize}`);
+  console.info(`Corpus size: ${corpusSize.toLocaleString()}`);
 
 }
