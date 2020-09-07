@@ -1,8 +1,11 @@
 /* eslint-disable
   no-param-reassign,
+  sort-keys,
 */
 
-export default function calculateDispersion(lexeme, corpusStats, textsFrequencies) {
+import getDPNorm from './getDPNorm.js';
+
+export default function getDispersions(lexeme, corpusStats, textsFrequencies, smallestTextSize) {
 
   const differences = Array.from(textsFrequencies.entries())
   .reduce((diffs, [filename, textStats]) => {
@@ -63,9 +66,24 @@ export default function calculateDispersion(lexeme, corpusStats, textsFrequencie
     REF:  0,
   });
 
-  corpusStats.dispersion     = sumDifferences.all / 2;
-  corpusStats.dispersionMOD  = (sumDifferences.MOD / 2) || 1;
-  corpusStats.dispersionPRED = (sumDifferences.PRED / 2) || 1;
-  corpusStats.dispersionREF  = (sumDifferences.REF / 2) || 1;
+  const dispersion         = sumDifferences.all / 2;
+  const dispersionMOD      = (sumDifferences.MOD / 2) || 1;
+  const dispersionPRED     = (sumDifferences.PRED / 2) || 1;
+  const dispersionREF      = (sumDifferences.REF / 2) || 1;
+  const dispersionNorm     = getDPNorm(dispersion, smallestTextSize);
+  const dispersionMODNorm  = getDPNorm(dispersionMOD, smallestTextSize);
+  const dispersionPREDNorm = getDPNorm(dispersionPRED, smallestTextSize);
+  const dispersionREFNorm  = getDPNorm(dispersionREF, smallestTextSize);
+
+  Object.assign(corpusStats, {
+    dispersion,
+    dispersionMOD,
+    dispersionPRED,
+    dispersionREF,
+    dispersionNorm,
+    dispersionMODNorm,
+    dispersionPREDNorm,
+    dispersionREFNorm,
+  });
 
 }

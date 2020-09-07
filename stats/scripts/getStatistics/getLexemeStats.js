@@ -1,6 +1,12 @@
-import calculateDispersion from './calculateDispersion.js';
+import getDispersions      from './getDispersions.js';
+import getSmallestTextSize from './getSmallestTextSize.js';
 
 export default function getLexemeStats(corpusFrequencies, textsFrequencies) {
-  corpusFrequencies.forEach((corpusStats, lexeme) => calculateDispersion(lexeme, corpusStats, textsFrequencies));
+
+  const smallestTextSize = getSmallestTextSize(textsFrequencies);
+
+  corpusFrequencies.forEach((corpusStats, lexeme) => getDispersions(lexeme, corpusStats, textsFrequencies, smallestTextSize));
+
   return corpusFrequencies;
+
 }
