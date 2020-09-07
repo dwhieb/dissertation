@@ -11,10 +11,13 @@ data <- read.table(
   colClasses   = c(
     'character',
     'integer',
+    'integer',
+    'integer',
+    'integer',
     'numeric',
-    'integer',
-    'integer',
-    'integer'
+    'numeric',
+    'numeric',
+    'numeric'
   ),
   comment.char = "",
   encoding     = "UTF-8",
@@ -23,17 +26,16 @@ data <- read.table(
   sep          = '\t',
 )
 
-functionCounts <- data[4:6]
+functionDispersions <- 1 - data[7:9]
 
 # start PDF generation
 pdf(graph_path)
 
 ternaryplot(
-  functionCounts[rowSums(functionCounts) > 0, ],
-  labels    = 'none',
-  main      = paste('Frequency of Use by Discourse Function (', language, ')', sep=''),
-  pch       = 20,
-  # prop_size = TRUE, # plot weighted values
+  functionDispersions[rowSums(functionDispersions) > 0, ],
+  labels = 'none',
+  main   = paste('Frequency of Use by Discourse Function (', language, ')', sep=''),
+  pch    = 20,
 )
 
 # end PDF generation

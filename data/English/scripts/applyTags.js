@@ -13,7 +13,7 @@ const {
 } = fs;
 
 const functions = {
-  C: `PRED`,
+  C: `X`,
   G: `X`,
   I: `X`,
   M: `MOD`,
