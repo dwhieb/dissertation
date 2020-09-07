@@ -11,9 +11,9 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
   const textsStats = await getTextsStats(dataDir, wordFilter, unit);
   const corpusSize = getCorpusSize(textsStats);
 
-  textsStats.forEach(info => {
+  textsStats.forEach(textStats => {
     // eslint-disable-next-line no-param-reassign
-    info.relativeSize = info.size / corpusSize;
+    textStats.relativeSize = textStats.size / corpusSize;
   });
 
   const corpusFrequencies = getLexemeFrequencies(textsStats);

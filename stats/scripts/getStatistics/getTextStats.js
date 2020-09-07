@@ -55,11 +55,6 @@ export default async function getTextStats(filePath, wordFilter, unit) {
 
   });
 
-  lexemeFrequencies.forEach(itemStats => {
-    // eslint-disable-next-line no-param-reassign
-    itemStats.relativeFrequency = itemStats.frequency / textSize;
-  });
-
   return {
     lexemeFrequencies,
     size: textSize,

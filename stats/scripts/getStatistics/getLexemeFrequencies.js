@@ -14,6 +14,9 @@ export default function getCorpusFrequencies(textsInfo) {
       };
 
       corpusStats.frequency += textStats.frequency;
+      corpusStats.REF       += textStats.REF;
+      corpusStats.PRED      += textStats.PRED;
+      corpusStats.MOD       += textStats.MOD;
 
       corpusLexemeFrequencies.set(lexeme, corpusStats);
 
