@@ -33,7 +33,7 @@ pdf(graph_path)
 
 ternaryplot(
   functionDispersions[rowSums(functionDispersions) > 0, ],
-  labels = 'none',
+  # labels = 'none',
   main   = paste('Frequency of Use by Discourse Function (', language, ')', sep=''),
   pch    = 20,
 )
