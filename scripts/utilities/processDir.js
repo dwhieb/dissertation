@@ -12,10 +12,14 @@ export default async function processDir(dir, task, ignore = () => false) {
 
   const files       = await recurse(dir, [ignore]);
   const progressBar = new ProgressBar(`:bar :current :total :percent :eta`, { total: files.length });
+  const results     = [];
 
   for (const filePath of files) {
-    await task(filePath); // eslint-disable-line no-await-in-loop
+    const result = await task(filePath); // eslint-disable-line no-await-in-loop
+    results.push(result);
     progressBar.tick();
   }
+
+  return results;
 
 }
