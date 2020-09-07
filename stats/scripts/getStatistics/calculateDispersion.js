@@ -9,7 +9,7 @@ export default function calculateDispersion(lexeme, corpusStats, textsFrequencie
 
     const textLexemeFrequencies         = textStats.lexemeFrequencies;
     const expectedRelativeTextFrequency = textStats.relativeSize;
-    const actualRelativeTextFrequency   = textLexemeFrequencies.get(lexeme)?.frequency ?? 0 / corpusStats.frequency;
+    const actualRelativeTextFrequency   = (textLexemeFrequencies.get(lexeme)?.frequency ?? 0) / corpusStats.frequency;
     const difference                    = Math.abs(expectedRelativeTextFrequency - actualRelativeTextFrequency);
 
     return diffs.set(filename, difference);

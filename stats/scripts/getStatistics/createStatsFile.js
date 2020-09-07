@@ -38,7 +38,7 @@ export default async function createStatsFile(outputPath, lexemeStats) {
     PRED,
     MOD,
   ])
-  .sort(([,,, a], [,,, b]) => compare(a, b));
+  .sort(([,, a], [,, b]) => compare(a, b));
 
   if (!outputPath) {
     return console.info(tableData
