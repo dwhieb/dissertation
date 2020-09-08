@@ -1,8 +1,6 @@
 library(ggtern)
 source("stats/scripts/load_data.R")
 
-language <- "English"
-
 file_path  <- paste("stats/data/English_archlexemes_strict.tsv", sep = "")
 
 data <- load_data(file_path)

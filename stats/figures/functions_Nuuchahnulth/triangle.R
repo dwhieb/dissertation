@@ -1,7 +1,7 @@
 library(ggtern)
 source("stats/scripts/load_data.R")
 
-file_path  <- paste("stats/data/English_archlexemes_all.tsv", sep = "")
+file_path  <- paste("stats/data/Nuuchahnulth_archlexemes.tsv", sep = "")
 
 data <- load_data(file_path)
 
@@ -15,7 +15,7 @@ plot <- ggtern(functions, aes(dispersionREF, dispersionPRED, dispersionMOD)) +
   geom_point()
 
 ggsave(
-  "stats/figures/functions_English_all/triangle.png",
+  "stats/figures/functions_Nuuchahnulth/triangle.png",
   width  = 10,
   height = 10
 )
