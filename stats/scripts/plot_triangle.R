@@ -6,7 +6,6 @@ plot_triangle <- function(functions, plot_title = "") {
   ) +
     labs(title = plot_title) +
     theme(
-      # top, right, bottom, left
       plot.title.position = "plot",
       plot.title = element_text(hjust = 0.5),
       tern.axis.title.R = element_text(hjust = 1.25),
