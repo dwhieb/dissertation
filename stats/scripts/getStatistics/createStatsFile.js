@@ -21,6 +21,7 @@ const csvOptions = {
     `dispersionREFNorm`,
     `dispersionPREDNorm`,
     `dispersionMODNorm`,
+    `gloss`,
   ],
   delimiter: `\t`,
   header:    true,
@@ -43,6 +44,7 @@ export default async function createStatsFile(outputPath, lexemeStats) {
       dispersionREFNorm,
       dispersionPREDNorm,
       dispersionMODNorm,
+      gloss,
     },
   ]) => [
     lexeme,
@@ -58,6 +60,7 @@ export default async function createStatsFile(outputPath, lexemeStats) {
     dispersionREFNorm,
     dispersionPREDNorm,
     dispersionMODNorm,
+    gloss,
   ])
   .sort(([a], [b]) => compare(a, b));
 

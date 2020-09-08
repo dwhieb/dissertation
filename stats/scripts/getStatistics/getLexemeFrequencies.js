@@ -13,6 +13,7 @@ export default function getCorpusFrequencies(textsInfo) {
         REF:       0,
       };
 
+      corpusStats.gloss     = textStats.gloss;
       corpusStats.frequency += textStats.frequency;
       corpusStats.REF       += textStats.REF;
       corpusStats.PRED      += textStats.PRED;
