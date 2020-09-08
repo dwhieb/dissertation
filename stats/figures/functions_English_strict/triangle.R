@@ -1,10 +1,8 @@
 library(ggtern)
 source("stats/scripts/load_data.R")
 
-file_path  <- paste("stats/data/English_archlexemes_strict.tsv", sep = "")
-
-data <- load_data(file_path)
-
+file_path <- "stats/data/English_archlexemes_strict.tsv"
+data      <- load_data(file_path)
 functions <- 1 - data[7:9] # DP
 
 plot <- ggtern(functions, aes(dispersionREF, dispersionPRED, dispersionMOD)) +
