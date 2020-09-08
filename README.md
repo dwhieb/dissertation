@@ -263,6 +263,8 @@ After each of the selected tokens was annotated for its pragmatic function (refe
 node data/English/scripts/bin/applyTags.js data/English/annotations/annotations.tsv data/English/texts
 ```
 
+This script can be adjusted slightly to determine how it is that the tags on the data map to discourse functions. In particular, it is debatable whether items tagged as gerunds or infinitives should be considered referential in nature, and thus tagged as `REF`, or excluded from the data; likewise it is unclear whether predicate nominals and predicate adjectives should be considered predicative in nature, and thus tagged as `PRED`, or excluded from the data. By updating the `functions` object in the `applyTags.js` script, it is possible to adjust these mappings.
+
 ### Nuuchahnulth
 
 Because the size of the Nuuchahnulth corpus is significantly smaller than that of the English corpus, it was not necessary to select a subset of the data to code. Instead, it was possible to annotate every lexical item in the corpus. Since the Nuuchahnulth corpus consists of interlinear glossed texts, it was also possible to programmatically lemmatize and tag a portion of the corpus.
