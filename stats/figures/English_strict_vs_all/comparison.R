@@ -15,7 +15,7 @@ plot_strict      <- plot_triangle(functions_strict, "Strict")
 plots <- ggtern::grid.arrange(plot_all, plot_strict, ncol = 2)
 
 ggsave(
-  "stats/figures/compare_functions_English_strict_vs_all/comparison.png",
+  "stats/figures/English_strict_vs_all/comparison.png",
   plots,
   height = 10,
   width = 10,

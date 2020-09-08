@@ -8,7 +8,7 @@ functions <- 1 - data[7:9] # DP
 plot      <- plot_triangle(functions)
 
 ggsave(
-  "stats/figures/functions_Nuuchahnulth/triangle.png",
+  "stats/figures/Nuuchahnulth/triangle.png",
   width  = 10,
   height = 10
 )
