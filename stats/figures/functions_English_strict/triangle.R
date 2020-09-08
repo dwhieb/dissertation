@@ -1,16 +1,11 @@
 library(ggtern)
 source("stats/scripts/load_data.R")
+source("stats/scripts/plot_triangle.R")
 
 file_path <- "stats/data/English_archlexemes_strict.tsv"
 data      <- load_data(file_path)
 functions <- 1 - data[7:9] # DP
-
-plot <- ggtern(functions, aes(dispersionREF, dispersionPRED, dispersionMOD)) +
-  Tlab("Predication") +
-  Llab("Reference") +
-  Rlab("Modification") +
-  tern_limits(T = 1.05, L = 1.05, R = 1.05) +
-  geom_point()
+plot      <- plot_triangle(functions)
 
 ggsave(
   "stats/figures/functions_English_strict/triangle.png",
