@@ -24,4 +24,4 @@ plot <- ggtern(functions, aes(dispersionREF, dispersionPRED, dispersionMOD)) +
 
 # grid.arrange(plot, zoomed, ncol = 2, top = "Regular vs. Zoomed Plots")
 
-ggsave("stats/figures/temp/plot.png", width = 10, height = 10)
+ggsave("stats/figures/temp/temp.png", width = 10, height = 10)
