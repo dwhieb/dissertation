@@ -11,18 +11,17 @@ data <- load_data(file_path)
 functions <- 1 - data[7:9] # DP
 
 plot <- ggtern(functions, aes(dispersionREF, dispersionPRED, dispersionMOD)) +
-  labs(title = "Regular") +
   Tlab("Predication") +
   Llab("Reference") +
   Rlab("Modification") +
-  tern_limits(T = 1.2, L = 1.2, R = 1.2) +
+  tern_limits(T = 1.05, L = 1.05, R = 1.05) +
   # geom_text(aes(label = data$item))
   geom_point()
 
-zoomed <- plot +
-  labs(title = "Zoomed to R Corner") +
-  tern_limits(T = .1, L = .1, R = 1.05)
+# zoomed <- plot +
+#   labs(title = "Zoomed to R Corner") +
+#   tern_limits(T = .1, L = .1, R = 1.05)
 
-grid.arrange(plot, zoomed, ncol = 2, top = "Regular vs. Zoomed Plots")
+# grid.arrange(plot, zoomed, ncol = 2, top = "Regular vs. Zoomed Plots")
 
-ggsave("stats/figures/temp/plot.png", width = 25, height = 25)
+ggsave("stats/figures/temp/plot.png", width = 10, height = 10)
