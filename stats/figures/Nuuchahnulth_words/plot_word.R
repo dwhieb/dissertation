@@ -4,7 +4,7 @@ source("stats/scripts/load_data.R")
 source("stats/scripts/plot_triangle.R")
 
 # set the index of the word to plot here
-index <- 1381
+index <- 862
 
 file_path  <- "stats/data/Nuuchahnulth_archlexemes.tsv"
 data       <- load_data(file_path)
@@ -19,8 +19,6 @@ plot <- plot_triangle(functions) +
 ggsave(
   paste(
     "stats/figures/Nuuchahnulth_words/plots/",
-    index,
-    "-",
     gloss,
     ".png",
     sep = ""

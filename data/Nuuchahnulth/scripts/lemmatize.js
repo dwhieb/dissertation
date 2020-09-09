@@ -48,7 +48,7 @@ findAndReplace(dataDir, utterance => {
 
       word.stemGloss = lexicalMorphemes
       .map(morpheme => morpheme.gloss.eng)
-      .join(`-`);
+      .join(`-`) || word.gloss.eng;
 
     }
 
