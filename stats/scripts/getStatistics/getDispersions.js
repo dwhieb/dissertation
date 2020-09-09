@@ -1,4 +1,5 @@
 /* eslint-disable
+  max-statements,
   no-param-reassign,
   sort-keys,
 */
@@ -25,7 +26,6 @@ export default function getDispersions(lexeme, corpusStats, textsFrequencies, sm
       REF:       0,
     };
 
-
     const textDiffs = {};
 
     // actualFrequency = the actual text frequency of the lexeme, relative to its corpus frequency
@@ -47,6 +47,18 @@ export default function getDispersions(lexeme, corpusStats, textsFrequencies, sm
       textDiffs.REF = Math.abs(expectedFrequency - actualFrequencyREF);
     }
 
+    // calculate dispersion for expanded definition of predicate
+    const lexemeFrequencyPREDbroad = lexemeStats.PRED + lexemeStats.PREDCXN;
+    const corpusFrequencyPREDbroad = corpusStats.PRED + corpusStats.PREDCXN;
+    const actualFrequencyPREDbroad = lexemeFrequencyPREDbroad / corpusFrequencyPREDbroad;
+    textDiffs.PREDbroad = Math.abs(expectedFrequency - actualFrequencyPREDbroad);
+
+    // calculate dispersion for expanded definition of referent
+    const lexemeFrequencyREFbroad = lexemeStats.REF + lexemeStats.GER + lexemeStats.INF;
+    const corpusFrequencyREFbroad = corpusStats.REF + corpusStats.GET + corpusStats.INF;
+    const actualFrequencyREFbroad = lexemeFrequencyREFbroad / corpusFrequencyREFbroad;
+    textDiffs.REFbroad = Math.abs(expectedFrequency - actualFrequencyREFbroad);
+
     return diffs.set(filename, textDiffs);
 
   }, new Map);
@@ -61,29 +73,38 @@ export default function getDispersions(lexeme, corpusStats, textsFrequencies, sm
     if (counts.PRED) sums.PRED += counts.PRED;
     if (counts.REF) sums.REF += counts.REF;
 
+    sums.PREDbroad += counts.PREDbroad;
+    sums.REFbroad  += counts.REFbroad;
+
     return sums;
 
   }, {
-    all:  0,
-    MOD:  0,
-    PRED: 0,
-    REF:  0,
+    all:       0,
+    MOD:       0,
+    PRED:      0,
+    PREDbroad: 0,
+    REF:       0,
+    REFbroad:  0,
   });
 
-  const dispersion         = sumDifferences.all / 2;
-  const dispersionMOD      = (sumDifferences.MOD / 2) || 1;
-  const dispersionPRED     = (sumDifferences.PRED / 2) || 1;
-  const dispersionREF      = (sumDifferences.REF / 2) || 1;
-  const dispersionNorm     = getDPNorm(dispersion, smallestTextSize);
-  const dispersionMODNorm  = getDPNorm(dispersionMOD, smallestTextSize);
-  const dispersionPREDNorm = getDPNorm(dispersionPRED, smallestTextSize);
-  const dispersionREFNorm  = getDPNorm(dispersionREF, smallestTextSize);
+  const dispersion          = sumDifferences.all / 2;
+  const dispersionMOD       = (sumDifferences.MOD / 2) || 1;
+  const dispersionPRED      = (sumDifferences.PRED / 2) || 1;
+  const dispersionREF       = (sumDifferences.REF / 2) || 1;
+  const dispersionPREDbroad = (sumDifferences.PREDbroad / 2) || 1;
+  const dispersionREFbroad  = (sumDifferences.REFbroad / 2) || 1;
+  const dispersionNorm      = getDPNorm(dispersion, smallestTextSize);
+  const dispersionMODNorm   = getDPNorm(dispersionMOD, smallestTextSize);
+  const dispersionPREDNorm  = getDPNorm(dispersionPRED, smallestTextSize);
+  const dispersionREFNorm   = getDPNorm(dispersionREF, smallestTextSize);
 
   Object.assign(corpusStats, {
     dispersion,
     dispersionMOD,
     dispersionPRED,
     dispersionREF,
+    dispersionPREDbroad,
+    dispersionREFbroad,
     dispersionNorm,
     dispersionMODNorm,
     dispersionPREDNorm,
