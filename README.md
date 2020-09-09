@@ -316,6 +316,8 @@ Note that this script merges newer tags into the corpus in this repository. It d
 
 This section outlines the steps for creating descriptive and inferential statistics for the annotated English and Nuuchahnulth datasets.
 
+<!-- TODO: cite packages used -->
+
 ### Descriptive Statistics
 
 #### Archlexeme Frequencies & Dispersions
