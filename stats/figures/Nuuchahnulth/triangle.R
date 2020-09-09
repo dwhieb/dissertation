@@ -1,4 +1,5 @@
 library(ggtern)
+
 source("stats/scripts/load_data.R")
 source("stats/scripts/plot_triangle.R")
 
