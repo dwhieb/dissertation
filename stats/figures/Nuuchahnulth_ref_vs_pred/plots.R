@@ -24,6 +24,8 @@ plot_rel_freq <- ggplot(rel_freq, aes(ref, pred)) +
   theme_minimal() +
   xlab("reference") +
   ylab("predication") +
+  xlim(0, 5) +
+  ylim(0, 5) +
   geom_point()
 
 plot_DP <- ggplot(DP, aes(ref, pred)) +
@@ -35,29 +37,30 @@ plot_DP <- ggplot(DP, aes(ref, pred)) +
   ylim(0, 0.8) +
   geom_point()
 
-plots <- ggtern::grid.arrange(
+plots <- grid.arrange(
   plot_rel_freq,
   plot_DP,
-  ncol = 2
+  ncol = 2,
+  heights = unit(12.5, "cm")
 )
 
 ggsave(
   "stats/figures/Nuuchahnulth_ref_vs_pred/rel_freq.png",
   plot_rel_freq,
-  height = 7.5,
-  width  = 7.5
+  height = 10,
+  width  = 10
 )
 
 ggsave(
   "stats/figures/Nuuchahnulth_ref_vs_pred/DP.png",
   plot_DP,
-  height = 7.5,
-  width  = 7.5
+  height = 10,
+  width  = 10
 )
 
 ggsave(
   "stats/figures/Nuuchahnulth_ref_vs_pred/comparison.png",
   plots,
   height = 10,
-  width = 10,
+  width  = 10
 )
