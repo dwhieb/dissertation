@@ -21,8 +21,8 @@ const csvOptions = {
     `dispersion_ref`,
     `dispersion_pred`,
     `dispersion_mod`,
-    `dispersion_pred_broad`,
     `dispersion_ref_broad`,
+    `dispersion_pred_broad`,
     `dispersion_norm`,
     `dispersion_ref_norm`,
     `dispersion_pred_norm`,
@@ -49,8 +49,8 @@ export default async function createStatsFile(outputPath, lexemeStats) {
       dispersionREF,
       dispersionPRED,
       dispersionMOD,
-      dispersionPREDbroad,
       dispersionREFbroad,
+      dispersionPREDbroad,
       dispersionNorm,
       dispersionREFNorm,
       dispersionPREDNorm,
@@ -70,13 +70,14 @@ export default async function createStatsFile(outputPath, lexemeStats) {
     dispersionREF,
     dispersionPRED,
     dispersionMOD,
-    dispersionPREDbroad,
     dispersionREFbroad,
+    dispersionPREDbroad,
     dispersionNorm,
     dispersionREFNorm,
     dispersionPREDNorm,
     dispersionMODNorm,
   ])
+  .filter(([, gloss]) => !gloss.includes(`?`))
   .sort(([a], [b]) => compare(a, b));
 
   const tsv = await json2csv(tableData, csvOptions);

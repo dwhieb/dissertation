@@ -1,5 +1,4 @@
 /* eslint-disable
-  max-statements,
   no-param-reassign,
   sort-keys,
 */
