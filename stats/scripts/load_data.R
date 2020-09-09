@@ -1,5 +1,25 @@
 load_data <- function(file_path) {
 
+  item
+  frequency
+  GER
+  INF
+  MOD
+  PRED
+  PREDCXN
+  REF
+  dispersion
+  dispersionREF
+  dispersionPRED
+  dispersionMOD
+  dispersionPREDbroad
+  dispersionREFbroad
+  dispersionNorm
+  dispersionREFNorm
+  dispersionPREDNorm
+  dispersionMODNorm
+  gloss
+
   data <- read.table(
     file_path,
     colClasses = c(
@@ -23,7 +43,7 @@ load_data <- function(file_path) {
     quote        = "",
     sep          = "\t",
   )
-  
+
   return(data)
 
 }
