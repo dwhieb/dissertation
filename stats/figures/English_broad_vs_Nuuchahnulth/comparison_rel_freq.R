@@ -12,7 +12,7 @@ functions_English <- data.frame(
   data_English$mod_rel
 )
 
-plot_English <- plot_triangle(functions_English, "English (broad)")
+plot_English <- plot_triangle(functions_English, "English (broad)", "Relative Frequencies")
 
 file_path_Nuuchahnulth <- "stats/data/Nuuchahnulth_archlexemes.tsv"
 data_Nuuchahnulth      <- load_data(file_path_Nuuchahnulth)
@@ -23,7 +23,7 @@ functions_Nuuchahnulth <- data.frame(
  data_Nuuchahnulth$mod_rel
 )
 
-plot_Nuuchahnulth <- plot_triangle(functions_Nuuchahnulth, "Nuuchahnulth")
+plot_Nuuchahnulth <- plot_triangle(functions_Nuuchahnulth, "Nuuchahnulth", "Relative Frequencies")
 
 plots <- ggtern::grid.arrange(plot_English, plot_Nuuchahnulth, ncol = 2)
 

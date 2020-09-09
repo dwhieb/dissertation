@@ -18,12 +18,12 @@ DP <- 1 - data.frame(
   data$dispersion_mod
 )
 
-plot_rel_freq <- plot_triangle(rel_freq)
-plot_DP       <- plot_triangle(DP)
+plot_rel_freq <- plot_triangle(rel_freq, "English (broad)", "Relative Frequency")
+plot_DP       <- plot_triangle(DP, "English (broad)", "Deviation of Proportions (DP)")
 
 plots <- ggtern::grid.arrange(
-  rel_freq,
-  DP,
+  plot_rel_freq,
+  plot_DP,
   ncol = 2
 )
 
