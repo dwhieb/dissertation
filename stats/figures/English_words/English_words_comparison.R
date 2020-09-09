@@ -3,26 +3,36 @@
 library(ggtern)
 source("stats/scripts/load_data.R")
 
-file_path_all    <- "stats/data/English_archlexemes_all.tsv"
-file_path_strict <- "stats/data/English_archlexemes_strict.tsv"
+file_path <- "stats/data/English_archlexemes.tsv"
+data      <- load_data(file_path)
+cols      <- c("ref", "pred", "mod")
 
-data_all    <- load_data(file_path_all)
-data_strict <- load_data(file_path_strict)
+functions_broad <- 1 - data.frame(
+  data$dispersion_ref_broad,
+  data$dispersion_pred_broad,
+  data$dispersion_mod
+)
 
-functions_all    <- 1 - data_all[7:9] # DP
-functions_strict <- 1 - data_strict[7:9] # DP
+functions_strict <- 1 - data.frame(
+  data$dispersion_ref,
+  data$dispersion_pred,
+  data$dispersion_mod
+)
 
-for (i in 1:length(functions_all$dispersionREF)) {
+colnames(functions_broad)  <- cols
+colnames(functions_strict) <- cols
 
-  archlexeme         <- data_all[i, 1]
-  dispersions_all    <- functions_all[i, ]
+for (i in 1:length(functions_broad$ref)) {
+
+  archlexeme         <- data[i, 1]
+  dispersions_broad  <- functions_broad[i, ]
   dispersions_strict <- functions_strict[i, ]
-  data               <- data.frame(dispersions_all)
-  data               <- rbind(data, dispersions_strict)
+  item_data          <- data.frame(dispersions_broad)
+  item_data          <- rbind(item_data, dispersions_strict)
 
   plot <- ggtern(
-    data,
-    aes(dispersionREF, dispersionPRED, dispersionMOD)
+    item_data,
+    aes(ref, pred, mod)
   ) +
     labs(title = archlexeme) +
     theme(
