@@ -47,7 +47,7 @@ export default async function getTextStats(filePath, wordFilter, unit) {
       lexemeFrequencies.set(key, itemStats);
       itemStats.frequency++; // count frequency of all words, even untagged ones
 
-      itemStats.gloss = word.gloss?.eng;
+      itemStats.gloss = word.stemGloss;
       if (!tags.includes(word.tags.function)) return;
 
       itemStats[word.tags.function]++;

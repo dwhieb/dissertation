@@ -7,7 +7,6 @@
  */
 
 /* eslint-disable
-  max-len,
   max-nested-callbacks,
   no-param-reassign,
   no-undefined,
