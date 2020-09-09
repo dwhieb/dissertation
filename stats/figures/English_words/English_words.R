@@ -1,40 +1,43 @@
-# This script creates and saves 1 ternary plot for each English archlexeme
-
 library(ggtern)
+
 source("stats/scripts/load_data.R")
+source("stats/scripts/name_cols.R")
 
 file_path <- "stats/data/English_archlexemes.tsv"
 data      <- load_data(file_path)
 cols      <- c("ref", "pred", "mod")
 
-functions_broad <- 1 - data.frame(
+DP_broad <- 1 - data.frame(
   data$dispersion_ref_broad,
   data$dispersion_pred_broad,
   data$dispersion_mod
 )
 
-functions_strict <- 1 - data.frame(
+DP_strict <- 1 - data.frame(
   data$dispersion_ref,
   data$dispersion_pred,
   data$dispersion_mod
 )
 
-colnames(functions_broad)  <- cols
-colnames(functions_strict) <- cols
+name_cols(DP_broad)
+name_cols(DP_strict)
 
-for (i in 1:length(functions_broad$ref)) {
+for (i in 1:length(DP_broad$ref)) {
 
   archlexeme         <- data[i, 1]
-  dispersions_broad  <- functions_broad[i, ]
-  dispersions_strict <- functions_strict[i, ]
+  dispersions_broad  <- DP_broad[i, ]
+  dispersions_strict <- DP_strict[i, ]
   item_data          <- data.frame(dispersions_broad)
   item_data          <- rbind(item_data, dispersions_strict)
 
-  plot <- ggtern(
+  plot_dispersions <- ggtern(
     item_data,
     aes(ref, pred, mod)
   ) +
-    labs(title = archlexeme) +
+    labs(
+      title = archlexeme,
+      subtitle = "Deviation of Proportions (DP)"
+    ) +
     theme(
       plot.title.position = "plot",
       plot.title = element_text(hjust = 0.5),
@@ -56,6 +59,7 @@ for (i in 1:length(functions_broad$ref)) {
       ".png",
       sep = ""
     ),
+    plot_dispersions,
     width  = 10,
     height = 10
   )
