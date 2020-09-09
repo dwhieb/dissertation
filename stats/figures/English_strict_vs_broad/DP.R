@@ -18,13 +18,13 @@ functions_strict <- 1 - data.frame(
   data$dispersion_mod
 )
 
-plot_broad  <- plot_triangle(functions_broad, "Broad")
-plot_strict <- plot_triangle(functions_strict, "Strict")
+plot_broad  <- plot_triangle(functions_broad, "Broad", "Deviation of Proportions (DP)")
+plot_strict <- plot_triangle(functions_strict, "Strict", "Deviation of Proportions (DP)")
 
 plots <- ggtern::grid.arrange(plot_broad, plot_strict, ncol = 2)
 
 ggsave(
-  "stats/figures/English_strict_vs_broad/comparison.png",
+  "stats/figures/English_strict_vs_broad/DP.png",
   plots,
   height = 10,
   width = 10,
