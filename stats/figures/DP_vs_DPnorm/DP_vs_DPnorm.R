@@ -1,33 +1,32 @@
 library(ggtern)
 source("stats/scripts/load_data.R")
-source("stats/scripts/name_cols.R")
 source("stats/scripts/plot_triangle.R")
 
 file_path_English <- "stats/data/English_archlexemes.tsv"
 data_English      <- load_data(file_path_English)
 
 # English DP
-functions_English_DP <- 1 - name_cols(data.frame(
-  data_English$dispersion_ref_broad,
-  data_English$dispersion_pred_broad,
+functions_English_DP <- 1 - data.frame(
+  data_English$dispersion_ref,
+  data_English$dispersion_pred,
   data_English$dispersion_mod
-))
+)
 
 # English DPnorm
-functions_English_DPnorm <- 1 - name_cols(data_English[17:19])
+functions_English_DPnorm <- 1 - data_English[17:19]
 
 file_path_Nuuchahnulth <- "stats/data/Nuuchahnulth_archlexemes.tsv"
 data_Nuuchahnulth      <- load_data(file_path_Nuuchahnulth)
 
 # Nuuchahnulth DP
-functions_Nuuchahnulth_DP <- 1 - name_cols(data.frame(
+functions_Nuuchahnulth_DP <- 1 - data.frame(
   data_Nuuchahnulth$dispersion_ref,
   data_Nuuchahnulth$dispersion_pred,
   data_Nuuchahnulth$dispersion_mod
-))
+)
 
 # Nuuchahnulth DPnorm
-functions_Nuuchahnulth_DPnorm <- 1 - name_cols(data_Nuuchahnulth[17:19])
+functions_Nuuchahnulth_DPnorm <- 1 - data_Nuuchahnulth[17:19]
 
 plot_English_DP          <- plot_triangle(functions_English_DP, "English (DP)")
 plot_English_DPnorm      <- plot_triangle(functions_English_DPnorm, "English (DPnorm)")

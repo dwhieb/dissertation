@@ -1,15 +1,8 @@
-plot_triangle_text <- function(data, title = "", labels, broad = TRUE) {
+plot_triangle_text <- function(data, title = "", labels) {
 
-  x <- if(a==1) 1 else 2
+  colnames(data) <- c("ref", "pred", "mod")
 
-  plot <- ggtern(
-    data,
-    aes(
-      if (broad == TRUE) dispersionREFbroad else dispersionREF,
-      if (broad == TRUE) dispersionPREDbroad else dispersionPRED,
-      dispersionMOD
-    )
-  ) +
+  plot <- ggtern(data, aes(ref, pred, mod)) +
   labs(title = archlexeme) +
   theme(
     plot.title.position = "plot",

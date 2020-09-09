@@ -4,8 +4,14 @@ source("stats/scripts/plot_triangle.R")
 
 file_path <- "stats/data/Nuuchahnulth_archlexemes.tsv"
 data      <- load_data(file_path)
-functions <- 1 - data[7:9] # DP
-plot      <- plot_triangle(functions)
+
+functions <- 1 - data.frame(
+  data$dispersion_ref,
+  data$dispersion_pred,
+  data$dispersion_mod
+)
+
+plot <- plot_triangle(functions)
 
 ggsave(
   "stats/figures/Nuuchahnulth/triangle.png",

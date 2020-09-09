@@ -1,3 +1,7 @@
+# TODO: update this file to plot any generic word given an index
+# TODO: write another function which plots all the words whose frequency
+# is greater than 6 (this will result in about 200 plots)
+
 library(ggtern)
 
 source("stats/scripts/load_data.R")
@@ -8,9 +12,14 @@ index <- 1443
 
 file_path  <- "stats/data/Nuuchahnulth_archlexemes.tsv"
 data       <- load_data(file_path)
-functions  <- data[index, 7:9]
 archlexeme <- data[index, 1]
-gloss      <- data[index, 14]
+gloss      <- data[index, 2]
+
+functions  <- 1 - data.frame(
+  data$dispersion_ref[index],
+  data$dispersion_pred[index],
+  data$dispersion_mod[index]
+)
 
 plot <- plot_triangle(functions) +
   geom_text(aes(label = archlexeme), vjust = 1.5) +

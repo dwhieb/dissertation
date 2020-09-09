@@ -1,10 +1,12 @@
 plot_triangle <- function(
-  functions,
+  data,
   plot_title = "",
   plot_subtitle = ""
 ) {
 
-  plot <- ggtern(functions, aes(ref, pred, mod)) +
+  colnames(data) <- c("ref", "pred", "mod")
+
+  plot <- ggtern(data, aes(ref, pred, mod)) +
     labs(title = plot_title, subtitle = plot_subtitle) +
     theme(
       plot.title.position = "plot",
