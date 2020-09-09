@@ -3,9 +3,12 @@ import fs from 'fs-extra';
 const { readJSON } = fs;
 
 const tags = [
-  `REF`,
-  `PRED`,
+  `GER`,
+  `INF`,
   `MOD`,
+  `PRED`,
+  `PREDCXN`,
+  `REF`,
 ];
 
 export default async function getTextStats(filePath, wordFilter, unit) {
@@ -39,8 +42,11 @@ export default async function getTextStats(filePath, wordFilter, unit) {
 
       const itemStats = lexemeFrequencies.get(key) ?? {
         frequency: 0,
+        GER:       0,
+        INF:       0,
         MOD:       0,
         PRED:      0,
+        PREDCXN:   0,
         REF:       0,
       };
 

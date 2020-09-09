@@ -17,10 +17,14 @@ export default function getDispersions(lexeme, corpusStats, textsFrequencies, sm
     // lexemeStats = corpus-level stats for this lexeme
     const lexemeStats = lexemeFrequencies.get(lexeme) ?? {
       frequency: 0,
+      GER:       0,
+      INF:       0,
       MOD:       0,
       PRED:      0,
+      PREDCXN:   0,
       REF:       0,
     };
+
 
     const textDiffs = {};
 
