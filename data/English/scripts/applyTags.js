@@ -13,9 +13,9 @@ const {
 } = fs;
 
 const functions = {
-  C: `X`,
-  G: `X`,
-  I: `X`,
+  C: `PREDCXN`,
+  G: `GER`,
+  I: `INF`,
   M: `MOD`,
   P: `PRED`,
   R: `REF`,
