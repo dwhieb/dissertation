@@ -7,6 +7,8 @@ load_data <- function(file_path) {
       "character", # gloss
       "integer",   # corpus frequency
       "numeric",   # relative frequency
+      "numeric",   # flexibility (frequency)
+      "numeric",   # flexibility (frequency broad)
       "integer",   # GER frequency
       "integer",   # INF frequency
       "integer",   # MOD frequency
