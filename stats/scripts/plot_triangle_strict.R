@@ -7,8 +7,8 @@ plot_triangle <- function(
   plot <- ggtern(
       functions,
       aes(
-        dispersionREFbroad,
-        dispersionPREDbroad,
+        dispersionREF,
+        dispersionPRED,
         dispersionMOD,
       )
     ) +

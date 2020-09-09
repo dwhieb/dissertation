@@ -12,8 +12,10 @@ export default function getCorpusFrequencies(textsInfo) {
         INF:       0,
         MOD:       0,
         PRED:      0,
+        PREDbroad: 0,
         PREDCXN:   0,
         REF:       0,
+        REFbroad:  0,
       };
 
       corpusStats.gloss      = textStats.gloss;
@@ -22,8 +24,10 @@ export default function getCorpusFrequencies(textsInfo) {
       corpusStats.INF       += textStats.INF;
       corpusStats.MOD       += textStats.MOD;
       corpusStats.PRED      += textStats.PRED;
+      corpusStats.PREDbroad += textStats.PREDbroad;
       corpusStats.PREDCXN   += textStats.PREDCXN;
       corpusStats.REF       += textStats.REF;
+      corpusStats.REFbroad  += textStats.REFbroad;
 
       corpusLexemeFrequencies.set(lexeme, corpusStats);
 

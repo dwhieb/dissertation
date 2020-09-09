@@ -46,8 +46,10 @@ export default async function getTextStats(filePath, wordFilter, unit) {
         INF:       0,
         MOD:       0,
         PRED:      0,
+        PREDbroad: 0,
         PREDCXN:   0,
         REF:       0,
+        REFbroad:  0,
       };
 
       lexemeFrequencies.set(key, itemStats);
@@ -57,6 +59,9 @@ export default async function getTextStats(filePath, wordFilter, unit) {
       if (!tags.includes(word.tags.function)) return;
 
       itemStats[word.tags.function]++;
+      if (word.tags.function === `GER`) return itemStats.REFbroad++;
+      if (word.tags.function === `INF`) return itemStats.REFbroad++;
+      if (word.tags.function === `PREDCXN`) itemStats.PREDbroad++;
 
     });
 
