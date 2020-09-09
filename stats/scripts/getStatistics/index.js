@@ -17,7 +17,7 @@ export default async function getStatistics(dataDir, { outputPath, unit = `lexem
   });
 
   const corpusFrequencies = getLexemeFrequencies(textsStats);
-  const lexemeStats       = getLexemeStats(corpusFrequencies, textsStats);
+  const lexemeStats       = getLexemeStats(corpusFrequencies, textsStats, corpusSize);
 
   await createStatsFile(outputPath, lexemeStats);
 
