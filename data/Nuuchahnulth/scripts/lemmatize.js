@@ -31,7 +31,7 @@ findAndReplace(dataDir, utterance => {
     const grammaticalGlossRegExp = /^[A-Z123.]+$/u;
 
     const morphemeTypes = word.morphemes
-    .map(morpheme => (grammaticalGlossRegExp.test(morpheme.gloss) ? null : morpheme.gloss));
+    .map(morpheme => (grammaticalGlossRegExp.test(morpheme.gloss.eng) ? null : morpheme.gloss));
 
     // start at index 1 so as to skip any reduplication morphemes at the start of the word
     let firstGrammaticalMorphemeIndex = morphemeTypes.indexOf(null, 1);
@@ -44,10 +44,10 @@ findAndReplace(dataDir, utterance => {
 
     if (lexicalMorphemes.length) {
 
-      word.root = lexicalMorphemes[0].transcription;
+      word.root = lexicalMorphemes[0].transcription.default;
 
       word.stem = lexicalMorphemes
-      .map(morpheme => morpheme.transcription)
+      .map(morpheme => morpheme.transcription.default)
       .join(`-`);
 
     }
