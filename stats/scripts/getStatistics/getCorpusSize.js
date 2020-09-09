@@ -1,4 +1,5 @@
+import sum from '../../../scripts/utilities/sum.js';
+
 export default function getCorpusSize(textsInfo) {
-  return Array.from(textsInfo.values())
-  .reduce((acc, { size }) => acc + size, 0);
+  return sum(Array.from(textsInfo.values()));
 }
