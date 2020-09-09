@@ -4,14 +4,7 @@ plot_triangle <- function(
   plot_subtitle = ""
 ) {
 
-  plot <- ggtern(
-      functions,
-      aes(
-        ref,
-        pred,
-        mod,
-      )
-    ) +
+  plot <- ggtern(functions, aes(ref, pred, mod)) +
     labs(title = plot_title, subtitle = plot_subtitle) +
     theme(
       plot.title.position = "plot",

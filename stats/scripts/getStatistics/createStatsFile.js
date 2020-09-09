@@ -22,7 +22,7 @@ const csvOptions = {
     `dispersion_pred`,
     `dispersion_mod`,
     `dispersion_pred_broad`,
-    `dipsersion_ref_broad`,
+    `dispersion_ref_broad`,
     `dispersion_norm`,
     `dispersion_ref_norm`,
     `dispersion_pred_norm`,

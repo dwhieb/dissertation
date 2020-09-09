@@ -7,36 +7,45 @@ file_path_English <- "stats/data/English_archlexemes.tsv"
 data_English      <- load_data(file_path_English)
 
 # English DP
-functions_English_DP <- name_cols(data.frame(
-  data_English$dispersionREFbroad,
-  data_English$dispersionPREDbroad,
-  data_English$dispersionMOD
+functions_English_DP <- 1 - name_cols(data.frame(
+  data_English$dispersion_ref_broad,
+  data_English$dispersion_pred_broad,
+  data_English$dispersion_mod
 ))
 
-# functions_English_DPnorm <- 1 - data_English[17:19] # DPnorm
+# English DPnorm
+functions_English_DPnorm <- 1 - name_cols(data_English[17:19])
 
-# file_path_Nuuchahnulth        <- "stats/data/Nuuchahnulth_archlexemes.tsv"
-# data_Nuuchahnulth             <- load_data(file_path_Nuuchahnulth)
-# functions_Nuuchahnulth_DP     <- 1 - data_Nuuchahnulth[11:13] # DP
-# functions_Nuuchahnulth_DPnorm <- 1 - data_Nuuchahnulth[17:19] # DPnorm
+file_path_Nuuchahnulth <- "stats/data/Nuuchahnulth_archlexemes.tsv"
+data_Nuuchahnulth      <- load_data(file_path_Nuuchahnulth)
 
-# plot_English_DP          <- plot_triangle(functions_English_DP, "English (DP)")
-# plot_English_DPnorm      <- plot_triangle(functions_English_DPnorm, "English (DPnorm)")
-# plot_Nuuchahnulth_DP     <- plot_triangle(functions_Nuuchahnulth_DP, "Nuuchahnulth (DP)")
-# plot_Nuuchahnulth_DPnorm <- plot_triangle(functions_Nuuchahnulth_DPnorm, "Nuuchahnulth (DPnorm)")
+# Nuuchahnulth DP
+functions_Nuuchahnulth_DP <- 1 - name_cols(data.frame(
+  data_Nuuchahnulth$dispersion_ref,
+  data_Nuuchahnulth$dispersion_pred,
+  data_Nuuchahnulth$dispersion_mod
+))
 
-# plots <- ggtern::grid.arrange(
-#   plot_English_DP,
-#   plot_English_DPnorm,
-#   plot_Nuuchahnulth_DP,
-#   plot_Nuuchahnulth_DPnorm,
-#   ncol = 2,
-#   nrow = 2
-# )
+# Nuuchahnulth DPnorm
+functions_Nuuchahnulth_DPnorm <- 1 - name_cols(data_Nuuchahnulth[17:19])
 
-# ggsave(
-#   "stats/figures/DP_vs_DPnorm/comparison.png",
-#   plots,
-#   height = 10,
-#   width = 10,
-# )
+plot_English_DP          <- plot_triangle(functions_English_DP, "English (DP)")
+plot_English_DPnorm      <- plot_triangle(functions_English_DPnorm, "English (DPnorm)")
+plot_Nuuchahnulth_DP     <- plot_triangle(functions_Nuuchahnulth_DP, "Nuuchahnulth (DP)")
+plot_Nuuchahnulth_DPnorm <- plot_triangle(functions_Nuuchahnulth_DPnorm, "Nuuchahnulth (DPnorm)")
+
+plots <- ggtern::grid.arrange(
+  plot_English_DP,
+  plot_English_DPnorm,
+  plot_Nuuchahnulth_DP,
+  plot_Nuuchahnulth_DPnorm,
+  ncol = 2,
+  nrow = 2
+)
+
+ggsave(
+  "stats/figures/DP_vs_DPnorm/comparison.png",
+  plots,
+  height = 10,
+  width = 10,
+)
