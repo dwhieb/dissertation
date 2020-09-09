@@ -28,7 +28,7 @@ plot_Nuuchahnulth <- plot_triangle(functions_Nuuchahnulth, "Nuuchahnulth")
 plots <- ggtern::grid.arrange(plot_English, plot_Nuuchahnulth, ncol = 2)
 
 ggsave(
-  "stats/figures/English_broad_vs_Nuuchahnulth/comparison.png",
+  "stats/figures/English_broad_vs_Nuuchahnulth/comparison_DP.png",
   plots,
   height = 10,
   width = 10,
