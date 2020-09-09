@@ -7,9 +7,9 @@ plot_triangle <- function(
   plot <- ggtern(
       functions,
       aes(
-        dispersionREFbroad,
-        dispersionPREDbroad,
-        dispersionMOD,
+        ref,
+        pred,
+        mod,
       )
     ) +
     labs(title = plot_title, subtitle = plot_subtitle) +
