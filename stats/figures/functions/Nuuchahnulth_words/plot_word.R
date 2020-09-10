@@ -1,12 +1,6 @@
 source("stats/scripts/name_cols.R")
 
-plot_triangle <- function(
-  data,
-  plot_title = "",
-  plot_subtitle = ""
-) {
-
-  data <- name_cols(data)
+plot_word <- function(functions, archlexeme, gloss, title) {
 
   limits <- data.frame(
     ref  = c(1, 0, 0),
@@ -14,8 +8,10 @@ plot_triangle <- function(
     mod  = c(0, 0, 1)
   )
 
-  plot <- ggtern(data, aes(ref, pred, mod)) +
-    labs(title = plot_title, subtitle = plot_subtitle) +
+  functions <- name_cols(functions)
+
+  plot <- ggtern(functions, aes(ref, pred, mod)) +
+    labs(title = title) +
     theme_minimal() +
     theme(
       plot.title.position = "plot",
@@ -28,14 +24,16 @@ plot_triangle <- function(
     Tlab("Predication") +
     Llab("Reference") +
     Rlab("Modification") +
-    tern_limits(T = 1.05, L = 1.05, R = 1.05) +
+    tern_limits(T = 1.2, L = 1.2, R = 1.2) +
     geom_polygon(
       data = limits,
       alpha = 0,
       color = "#BBBBBB",
       size  = 0.5
     ) +
-    geom_point()
+    geom_point() +
+    geom_text(aes(label = archlexeme), vjust = 1.5) +
+    geom_text(aes(label = gloss), vjust = 3)
 
   return(plot)
 
