@@ -20,4 +20,8 @@ export default function getLexicalFlexibility(corpusStats) {
   corpusStats.flexibility      = getRelativeEntropy(frequencies);
   corpusStats.flexibilityBroad = getRelativeEntropy(frequenciesBroad);
 
+  if (Number.isNaN(corpusStats.flexibility)) {
+    corpusStats.flexibility = 0;
+  }
+
 }

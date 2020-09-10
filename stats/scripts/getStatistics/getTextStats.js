@@ -27,6 +27,8 @@ export default async function getTextStats(filePath, wordFilter, unit) {
     .filter(wordFilter)
     .forEach(word => {
 
+      if (word.stem === `NA`) return;
+
       let prop;
 
       switch (unit) {
