@@ -1,6 +1,4 @@
 library(ggplot2)
-library(gridExtra)
-library(reshape)
 
 source("stats/scripts/load_data.R")
 
@@ -16,7 +14,12 @@ combined <- rbind(
 )
 
 plot <- ggplot(combined, aes(x = flexibility, color = lang)) +
-  stat_ecdf()
+  theme_minimal() +
+  theme(
+    axis.title.y = element_blank()
+  ) +
+  scale_color_discrete(name = "Language") +
+  stat_ecdf(size = 1.5)
 
 ggsave(
   "stats/figures/flexibility/ecdf.png",
