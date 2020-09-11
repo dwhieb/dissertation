@@ -22,6 +22,7 @@ English_rel_freq <- data.frame(
 
 file_path_Nuuchahnulth <- "stats/data/Nuuchahnulth_archlexemes.tsv"
 data_Nuuchahnulth      <- load_data(file_path_Nuuchahnulth)
+data_Nuuchahnulth      <- data_Nuuchahnulth[which(data_Nuuchahnulth$frequency > 1), ]
 
 # Nuuchahnulth DP
 Nuuchahnulth_DP <- 1 - data.frame(
