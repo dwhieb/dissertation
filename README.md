@@ -4,6 +4,13 @@ This repository contains the data and source code for my Ph.D. dissertation in l
 
 A self-imposed requirement for this project is that of empirical accountability and replicability. **This readme documents the steps to reproduce the results of this study,** whether using the same data employed in my dissertation, or a new data set entirely.
 
+p-value          | Description
+-----------------|----------------------------
+0.05 ≤ p < 0.1   | marginally significant (ms)
+0.01 ≤ p < 0.05  | significant (\*)
+0.001 ≤ p < 0.01 | very significant (\*\*)
+p < 0.001        | highly significant (\*\*\*)
+
 ## Contents
 
 <!-- TOC -->

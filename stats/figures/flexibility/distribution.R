@@ -7,7 +7,8 @@ data_English      <- load_data("stats/data/English_archlexemes.tsv")
 data_Nuuchahnulth <- load_data("stats/data/Nuuchahnulth_archlexemes.tsv")
 data_Nuuchahnulth <- data_Nuuchahnulth[which(data_Nuuchahnulth$frequency > 1 & data_Nuuchahnulth$flexibility != "NaN"), ]
 
-data_English_nonzero <- data_English[which(data_English$flexibility != 0), ]
+data_English_nonzero      <- data_English[which(data_English$flexibility != 0), ]
+data_Nuuchahnulth_nonzero <- data_Nuuchahnulth[which(data_Nuuchahnulth$flexibility != 0), ]
 
 bin_width <- 0.05 # results in 20 bins
 
@@ -235,4 +236,6 @@ grid
 ggsave(
   "stats/figures/flexibility/distribution.png",
   grid,
+  height = 10,
+  width  = 10
 )
