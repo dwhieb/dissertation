@@ -4,6 +4,7 @@ source("stats/scripts/load_data.R")
 
 file_path <- "stats/data/Nuuchahnulth_archlexemes.tsv"
 data      <- load_data(file_path)
+data      <- data[which(data$frequency > 1), ]
 cols      <- c("ref", "pred")
 
 rel_freq <- data.frame(
