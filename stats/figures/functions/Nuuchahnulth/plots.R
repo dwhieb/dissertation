@@ -5,6 +5,7 @@ source("stats/scripts/plot_triangle.R")
 
 file_path <- "stats/data/Nuuchahnulth_archlexemes.tsv"
 data      <- load_data(file_path)
+data      <- data[which(data$frequency > 1), ]
 
 rel_freq <- data.frame(
   data$ref_rel,
