@@ -3,6 +3,7 @@ library(ggplot2)
 source("stats/scripts/load_data.R")
 
 data <- load_data("stats/data/Nuuchahnulth_archlexemes.tsv")
+data <- data[which(data$frequency > 1), ]
 data <- data[order(-data$flexibility), ]
 data <- data[1:100, ]
 
