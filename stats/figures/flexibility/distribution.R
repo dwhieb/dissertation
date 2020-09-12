@@ -39,8 +39,7 @@ English_hist <- ggplot(data_English, aes(x = flexibility)) +
     linetype = "dashed",
     size     = 1
   ) +
-  xlim(-0.1, 1) +
-  ylim(0, 675)
+  xlim(-0.1, 1)
 
 English_boxplot <- ggplot(data_English, aes(x = flexibility)) +
   theme(
@@ -93,8 +92,7 @@ Nuuchahnulth_hist <- ggplot(data_Nuuchahnulth, aes(x = flexibility)) +
     linetype = "dashed",
     size     = 1
   ) +
-  xlim(-0.1, 1) +
-  ylim(0, 675)
+  xlim(-0.1, 1)
 
 Nuuchahnulth_boxplot <- ggplot(data_Nuuchahnulth, aes(x = flexibility)) +
   theme(
@@ -147,7 +145,7 @@ English_hist_nonzero <- ggplot(data_English_nonzero, aes(x = flexibility)) +
     linetype = "dashed",
     size     = 1
   ) +
-  xlim(0, 1) +
+  xlim(-0.1, 1) +
   ylim(0, 45)
 
 English_boxplot_nonzero <- ggplot(data_English_nonzero, aes(x = flexibility)) +
@@ -171,7 +169,7 @@ English_boxplot_nonzero <- ggplot(data_English_nonzero, aes(x = flexibility)) +
     size = 1
   ) +
   geom_rug(length = unit(0.2, "cm")) +
-  xlim(0, 1) +
+  xlim(-0.1, 1) +
   ylim(-0.5, 0.5)
 
 Nuuchahnulth_hist_nonzero <- ggplot(data_Nuuchahnulth_nonzero, aes(x = flexibility)) +
@@ -201,7 +199,7 @@ Nuuchahnulth_hist_nonzero <- ggplot(data_Nuuchahnulth_nonzero, aes(x = flexibili
     linetype = "dashed",
     size     = 1
   ) +
-  xlim(0, 1) +
+  xlim(-0.1, 1) +
   ylim(0, 45)
 
 Nuuchahnulth_boxplot_nonzero <- ggplot(data_Nuuchahnulth_nonzero, aes(x = flexibility)) +
@@ -225,7 +223,7 @@ Nuuchahnulth_boxplot_nonzero <- ggplot(data_Nuuchahnulth_nonzero, aes(x = flexib
     size = 1
   ) +
   geom_rug(length = unit(0.2, "cm")) +
-  xlim(0, 1) +
+  xlim(-0.1, 1) +
   ylim(-0.5, 0.5)
 
 grid <- plot_grid(

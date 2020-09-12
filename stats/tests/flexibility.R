@@ -50,6 +50,15 @@ fligner.test(flexibility~language) # χ2 = 299, p < .0001
 # Result:
 # H1 is true: The variances are not homogenous.
 
+# Q: Do English and Nuuchahnulth differ significantly in the distribution of their flexibility?
+# H0: No
+# H1: Yes
+# Test: Kolmogorov-Smirnov test for differences in distributions
+# There are not enough English data points to run this test.
+
+ks.test(flexibility[language = "English"], flexibility[language = "Nuuchahnulth"])
+# (test fails)
+
 # Q: Do English and Nuuchahnulth differ significantly in terms of their median flexibility?
 # Cannot test differences in *mean* flexibility because the data are not normally distributed,
 # and the variances are not homogenous.
@@ -76,12 +85,3 @@ wilcox.test(
 
 # Result:
 # H1 is true: English and Nuuchahnulth differ highly significantly in terms of their median flexibility.
-
-# Q: Do English and Nuuchahnulth differ significantly in the distribution of their flexibility?
-# H0: No
-# H1: Yes
-# Test: Kolmogorov-Smirnov test for differences in distributions
-# There are not enough English data points to run this test.
-
-ks.test(flexibility[language = "English"], flexibility[language = "Nuuchahnulth"])
-# (test fails)
