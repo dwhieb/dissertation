@@ -53,7 +53,8 @@ English_boxplot <- ggplot(data_English, aes(x = flexibility)) +
   ) +
   geom_boxplot(
     na.rm = TRUE,
-    notch = TRUE
+    notch = TRUE,
+    width = 0.5
   ) +
   geom_vline(
     aes(xintercept = mean(flexibility)),
@@ -61,7 +62,9 @@ English_boxplot <- ggplot(data_English, aes(x = flexibility)) +
     linetype = "dashed",
     size = 1
   ) +
-  xlim(-0.1, 1)
+  geom_rug(length = unit(0.2, "cm")) +
+  xlim(-0.1, 1) +
+  ylim(-0.5, 0.5)
 
 Nuuchahnulth_hist <- ggplot(data_Nuuchahnulth, aes(x = flexibility)) +
   labs(title = "Nuuchahnulth") +
@@ -104,7 +107,8 @@ Nuuchahnulth_boxplot <- ggplot(data_Nuuchahnulth, aes(x = flexibility)) +
   ) +
   geom_boxplot(
     na.rm = TRUE,
-    notch = TRUE
+    notch = TRUE,
+    width = 0.5
   ) +
   geom_vline(
     aes(xintercept = mean(flexibility)),
@@ -112,7 +116,9 @@ Nuuchahnulth_boxplot <- ggplot(data_Nuuchahnulth, aes(x = flexibility)) +
     linetype = "dashed",
     size = 1
   ) +
-  xlim(-0.1, 1)
+  geom_rug(length = unit(0.2, "cm")) +
+  xlim(-0.1, 1) +
+  ylim(-0.5, 0.5)
 
 English_hist_nonzero <- ggplot(data_English_nonzero, aes(x = flexibility)) +
   labs(title = "English (nonzero)") +
@@ -155,7 +161,8 @@ English_boxplot_nonzero <- ggplot(data_English_nonzero, aes(x = flexibility)) +
   ) +
   geom_boxplot(
     na.rm = TRUE,
-    notch = TRUE
+    notch = TRUE,
+    width = 0.5
   ) +
   geom_vline(
     aes(xintercept = mean(flexibility)),
@@ -163,7 +170,9 @@ English_boxplot_nonzero <- ggplot(data_English_nonzero, aes(x = flexibility)) +
     linetype = "dashed",
     size = 1
   ) +
-  xlim(0, 1)
+  geom_rug(length = unit(0.2, "cm")) +
+  xlim(0, 1) +
+  ylim(-0.5, 0.5)
 
 Nuuchahnulth_hist_nonzero <- ggplot(data_Nuuchahnulth_nonzero, aes(x = flexibility)) +
   labs(title = "Nuuchahnulth (nonzero)") +
@@ -206,7 +215,8 @@ Nuuchahnulth_boxplot_nonzero <- ggplot(data_Nuuchahnulth_nonzero, aes(x = flexib
   ) +
   geom_boxplot(
     na.rm = TRUE,
-    notch = TRUE
+    notch = TRUE,
+    width = 0.5
   ) +
   geom_vline(
     aes(xintercept = mean(flexibility)),
@@ -214,7 +224,9 @@ Nuuchahnulth_boxplot_nonzero <- ggplot(data_Nuuchahnulth_nonzero, aes(x = flexib
     linetype = "dashed",
     size = 1
   ) +
-  xlim(0, 1)
+  geom_rug(length = unit(0.2, "cm")) +
+  xlim(0, 1) +
+  ylim(-0.5, 0.5)
 
 grid <- plot_grid(
   align = "v",
