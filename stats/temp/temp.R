@@ -1,58 +1,24 @@
-library(ggplot2)
-library(gridExtra)
+source("stats/scripts/load_all_data.R")
 
-source("stats/scripts/load_data.R")
+data <- load_all_data()
+data <- data[which(data$flexibility != "NaN"), ]
+data <- data[which(data$flexibility > 0), ]
+data <- data[which(data$frequency > 1 & data$frequency < 100), ]
 
-data_English      <- load_data("stats/data/English_archlexemes.tsv")
-data_Nuuchahnulth <- load_data("stats/data/Nuuchahnulth_archlexemes.tsv")
-
-data_English_nonzero      <- data_English[which(data_English$flexibility != 0), ]
-data_Nuuchahnulth_nonzero <- data_Nuuchahnulth[which(data_Nuuchahnulth$flexibility != 0), ]
-
-ggplot(data_English, aes(x = flexibility)) +
-  labs(title = "English flexibility") +
-  geom_histogram(
-    aes(y = ..density..),
-    color = "black",
-    fill = "white"
-  ) +
-  geom_density(alpha = 0.2, fill = "#FF6666") +
-  geom_vline(
-    aes(xintercept = mean(flexibility)),
-    color = "red",
-    linetype = "dashed",
-    size = 1
-  )
-
-plot_English <- ggplot(mapping = aes(data_English$flexibility)) +
+plot <- ggplot(data, aes(
+  x     = flexibility,
+  y     = rel_freq,
+  color = language,
+  shape = language
+)) +
+  ylab("relative frequency (per 1,000 words)") +
+  labs(color = "Language", shape = "Language") +
   theme_minimal() +
-  xlab("English") +
-  xlim(-0.1, 1) +
-  geom_histogram()
+  geom_point(size = 2) +
+  geom_rug() +
+  xlim(0, 1) +
+  # clip 9 values for readability
+  ylim(0, 10) +
+  facet_grid(cols = vars(language))
 
-plot_Nuuchahnulth <- ggplot(mapping = aes(data_Nuuchahnulth$flexibility)) +
-  theme_minimal() +
-  xlab("Nuuchahnulth") +
-  xlim(-0.1, 1) +
-  geom_histogram()
-
-plot_English_nonzero <- ggplot(mapping = aes(data_English_nonzero$flexibility)) +
-  theme_minimal() +
-  xlab("English") +
-  xlim(-0.1, 1) +
-  geom_histogram()
-
-plot_Nuuchahnulth_nonzero <- ggplot(mapping = aes(data_Nuuchahnulth_nonzero$flexibility)) +
-  theme_minimal() +
-  xlab("Nuuchahnulth") +
-  xlim(-0.1, 1) +
-  geom_histogram()
-
-grid.arrange(
-  plot_English,
-  plot_Nuuchahnulth,
-  plot_English_nonzero,
-  plot_Nuuchahnulth_nonzero,
-  ncol = 2,
-  nrow = 2
-)
+plot

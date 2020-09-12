@@ -227,7 +227,6 @@ Nuuchahnulth_boxplot_nonzero <- ggplot(data_Nuuchahnulth_nonzero, aes(x = flexib
   ylim(-0.5, 0.5)
 
 grid <- plot_grid(
-  align = "v",
   English_hist,
   Nuuchahnulth_hist,
   English_boxplot,
@@ -236,8 +235,9 @@ grid <- plot_grid(
   Nuuchahnulth_hist_nonzero,
   English_boxplot_nonzero,
   Nuuchahnulth_boxplot_nonzero,
-  ncol = 2,
-  nrow = 4,
+  align = "v",
+  ncol  = 2,
+  nrow  = 4,
   rel_heights = c(3.5, 1, 3.5, 1)
 )
 
