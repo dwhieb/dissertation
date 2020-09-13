@@ -39,6 +39,7 @@ cor.test(flexibility, rel_freq, method = "kendall")
 # Frequency accounts statistically for ~17% of the variance in flexibility.
 
 # Next test each language independently
+
 Eng <- data[which(language == "English"), ]
 Nuu <- data[which(language == "Nuuchahnulth"), ]
 
@@ -60,7 +61,7 @@ t2_Nuu  <- tau^2 * 100; t2
 
 # There is a very low negative correlation between relative frequency and flexibility in English.
 # There is a very low positive correlation between relative frequency and flexibility in Nuuchahnulth.
-# ~17% of the variance in flexibility in both languages can be statistically accounted for by frequency.
+# ~17% of the variance in flexibility in both langdispeuages can be statistically accounted for by frequency.
 
 # Is the correlation between frequency and flexibility significant?
 # H0: The correlation is not significant

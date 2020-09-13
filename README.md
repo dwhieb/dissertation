@@ -10,6 +10,7 @@ A self-imposed requirement for this project is that of empirical accountability 
 
 p-value            | Description
 -------------------|----------------------------
+`0.1 ≤ p < 1`      | not significant (ns)
 `0.05 ≤ p < 0.1`   | marginally significant (ms)
 `0.01 ≤ p < 0.05`  | significant (`*`)
 `0.001 ≤ p < 0.01` | very significant (`**`)
