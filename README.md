@@ -21,7 +21,7 @@ Correlation Coefficient | Description    | Type
 :----------------------:|----------------|---------
     `0.7 < r <= 1`      | very high      | positive
    `0.5 < r <= 0.7`     | high           | positive
-   `0.2 < r  <= 0.5`    | intermediate   | positive
+   `0.2 < r <= 0.5`     | intermediate   | positive
     `0 < r <= 0.2`      | low            | positive
         `r ≈ 0`         | no correlation | (H0)
     `0 > r >= -0.2`     | low            | negative

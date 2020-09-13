@@ -7,7 +7,19 @@ data <- load_all_data()
 data <- data[which(data$flexibility != "NaN"), ]
 attach(data)
 
-data_nonzero <- data[which(flexibility > 0), ]
+data_nonzero      <- data[which(flexibility > 0), ]
+data_English      <- data_nonzero[which(language == "English"), ]
+data_Nuuchahnulth <- data_nonzero[which(language == "Nuuchahnulth"), ]
+
+model_English      <- lm(data_English$flexibility~data_English$rel_freq)
+model_Nuuchahnulth <- lm(data_Nuuchahnulth$flexibility~data_Nuuchahnulth$rel_freq)
+
+models <- data.frame(
+  c("English", "Nuuchahnulth"),
+  c(model_English$coefficients[1], model_Nuuchahnulth$coefficients[1]),
+  c(model_English$coefficients[2], model_Nuuchahnulth$coefficients[2])
+)
+colnames(models) <- c("language", "intercepts", "slopes")
 
 histogram <- ggplot(data_nonzero, aes(
   x     = flexibility,
@@ -36,10 +48,6 @@ scatterplot <- ggplot(data_nonzero, aes(
   shape = language
 )) +
   ylab("relative frequency (per 1,000 words)") +
-  labs(
-    #color = "Language",
-    #shape = "Language"
-  ) +
   theme_minimal() +
   theme(
     axis.text.x  = element_blank(),
@@ -49,10 +57,23 @@ scatterplot <- ggplot(data_nonzero, aes(
   ) +
   geom_point(
     show.legend = FALSE,
-    size = 2
+    size = 1
   ) +
   geom_rug(
     show.legend = FALSE
+  ) +
+  geom_density2d(
+    show.legend = FALSE
+  ) +
+  geom_abline(
+    aes(
+      color     = language,
+      intercept = intercepts,
+      slope     = slopes
+    ),
+    data        = models,
+    show.legend = FALSE,
+    size        = 0.75
   ) +
   xlim(0, 1) +
   # clip 9 values for readability
@@ -96,6 +117,6 @@ grid <- plot_grid(
 grid
 
 ggsave(
-  "stats/figures/freq_vs_flex/plot.png",
+  "stats/figures/freq_vs_flex/comparison.png",
   grid
 )
