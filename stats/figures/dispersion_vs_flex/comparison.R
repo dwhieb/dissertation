@@ -5,9 +5,9 @@ source("stats/scripts/load_all_data.R")
 
 data              <- load_all_data()
 data              <- data[which(data$flexibility != "NaN"), ]
+data_nonzero      <- data[which(data$flexibility > 0), ]
 data_English      <- data[which(language == "English"), ]
 data_Nuuchahnulth <- data[which(language == "Nuuchahnulth"), ]
-data              <- data[which(flexibility > 0), ]
 attach(data)
 
 model_English      <- lm(data_English$flexibility~data_English$dispersion)
@@ -20,7 +20,7 @@ models <- data.frame(
 )
 colnames(models) <- c("language", "intercepts", "slopes")
 
-histogram <- ggplot(data, aes(
+histogram <- ggplot(data_nonzero, aes(
   x     = flexibility,
   fill  = language
 )) +
@@ -62,6 +62,7 @@ scatterplot <- ggplot(data, aes(
     show.legend = FALSE
   ) +
   geom_density2d(
+    data = data_nonzero,
     show.legend = FALSE
   ) +
   geom_abline(
@@ -77,7 +78,7 @@ scatterplot <- ggplot(data, aes(
   xlim(0, 1) +
   facet_grid(cols = vars(language))
 
-boxplot <- ggplot(data, aes(
+boxplot <- ggplot(data_nonzero, aes(
   x    = flexibility,
   fill = language
 )) +
