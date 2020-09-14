@@ -1,26 +1,30 @@
 library(cowplot)
 library(ggplot2)
 
-source("stats/scripts/load_all_data.R")
+source("stats/scripts/load_data.R")
+source("stats/scripts/load_Nuuchahnulth_100.R")
 
-data              <- load_all_data()
+data_Eng          <- load_data("stats/data/English_archlexemes.tsv")
+data_Nuu          <- load_Nuuchahnulth_100()
+data_Eng$language <- "English"
+data_Nuu$language <- "Nuuchahnulth"
+data              <- rbind(data_Eng, data_Nuu)
 data              <- data[which(data$flexibility != "NaN"), ]
-data_nonzero      <- data[which(data$flexibility > 0), ]
-data_English      <- data[which(language == "English"), ]
-data_Nuuchahnulth <- data[which(language == "Nuuchahnulth"), ]
+
 attach(data)
 
-model_English      <- lm(data_English$flexibility~data_English$dispersion)
-model_Nuuchahnulth <- lm(data_Nuuchahnulth$flexibility~data_Nuuchahnulth$dispersion)
+model_Eng <- lm(data_Eng$flexibility ~ data_Eng$dispersion)
+model_Nuu <- lm(data_Nuu$flexibility ~ data_Nuu$dispersion)
 
 models <- data.frame(
   c("English", "Nuuchahnulth"),
-  c(model_English$coefficients[1], model_Nuuchahnulth$coefficients[1]),
-  c(model_English$coefficients[2], model_Nuuchahnulth$coefficients[2])
+  c(model_Eng$coefficients[1], model_Nuu$coefficients[1]),
+  c(model_Eng$coefficients[2], model_Nuu$coefficients[2])
 )
+
 colnames(models) <- c("language", "intercepts", "slopes")
 
-histogram <- ggplot(data_nonzero, aes(
+histogram <- ggplot(data, aes(
   x     = flexibility,
   fill  = language
 )) +
@@ -62,7 +66,6 @@ scatterplot <- ggplot(data, aes(
     show.legend = FALSE
   ) +
   geom_density2d(
-    data = data_nonzero,
     show.legend = FALSE
   ) +
   geom_abline(
@@ -76,9 +79,10 @@ scatterplot <- ggplot(data, aes(
     size        = 0.75
   ) +
   xlim(0, 1) +
+  ylim(0, 1) +
   facet_grid(cols = vars(language))
 
-boxplot <- ggplot(data_nonzero, aes(
+boxplot <- ggplot(data, aes(
   x    = flexibility,
   fill = language
 )) +
