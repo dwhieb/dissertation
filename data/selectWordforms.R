@@ -9,7 +9,7 @@ input_path <- "stats/data/Nuuchahnulth_archlexemes.tsv"
 
 # update this variable to point to the location where
 # you would like the list of selected wordforms generated
-output_path <- "data/Nuuchahnulth/selected_wordforms.txt"
+output_path <- "data/Nuuchahnulth/suggested_wordforms.txt"
 
 # the number of wordforms to suggest
 num_wordforms <- 100
