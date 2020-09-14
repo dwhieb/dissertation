@@ -200,7 +200,7 @@ The resulting file of English wordform frequencies is located at `stats/data/Eng
 
 ---
 
-Having generated the list of wordforms and their statistics, I then wrote an R script which bins wordforms based on their corpus dispersions, generates a list of 100 suggested wordforms (one from each dispersion bin) and saves it to a text file. This script is located in `scripts/stats/selectWordforms.R`. You can adjust the `input_path` and `output_path` variables at the top of the file to point it to the lists of wordforms generated in the previous step, and the location where you would like the list of selected wordforms to be generated, respectively.
+Having generated the list of wordforms and their statistics, I then wrote an R script which bins wordforms based on their corpus dispersions, generates a list of 100 suggested wordforms (one from each dispersion bin) and saves it to a text file. This script is located in `data/selectWordforms.R`. You can adjust the `input_path` and `output_path` variables at the top of the file to point it to the lists of wordforms generated in the previous step, and the location where you would like the list of selected wordforms to be generated, respectively.
 
 Finally, I used this list of suggested wordforms to pick which archlexemes I wanted to annotate. If a suggested wordform didn't meet the selection criteria, I added it to `blacklist.yml` and regenerated the list of wordforms. Occasionally, in the higher frequencies, there were no wordforms in that dispersion bin. When this happened, I selected a word from the next lowest dispersion bin, with the result that a few bins are represented more than once in the annotated data.
 
