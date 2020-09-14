@@ -1,20 +1,18 @@
 library(cowplot)
 library(ggplot2)
 
-source("stats/scripts/load_data.R")
-source("stats/scripts/load_Nuuchahnulth_100.R")
+source("stats/scripts/load_100.R")
 
-data_Eng          <- load_data("stats/data/English_archlexemes.tsv")
-data_Nuu          <- load_Nuuchahnulth_100()
-data_Eng$language <- "English"
-data_Nuu$language <- "Nuuchahnulth"
-data              <- rbind(data_Eng, data_Nuu)
-data              <- data[which(data$flexibility != "NaN"), ]
+data <- load_100()
+data <- data[which(data$flexibility != "NaN"), ]
+
+data_Eng <- data[which(language == "English"), ]
+data_Nuu <- data[which(language == "Nuuchahnulth"), ]
 
 attach(data)
 
-model_Eng <- lm(data_Eng$flexibility ~ data_Eng$dispersion)
-model_Nuu <- lm(data_Nuu$flexibility ~ data_Nuu$dispersion)
+model_Eng <- lm(data_Eng$flexibility ~ data_Eng$rel_freq)
+model_Nuu <- lm(data_Nuu$flexibility ~ data_Nuu$rel_freq)
 
 models <- data.frame(
   c("English", "Nuuchahnulth"),
@@ -46,11 +44,11 @@ histogram <- ggplot(data, aes(
 
 scatterplot <- ggplot(data, aes(
   x     = flexibility,
-  y     = dispersion,
+  y     = rel_freq,
   color = language,
   shape = language
 )) +
-  ylab("dispersion (Deviation of Proportions)") +
+  ylab("relative frequency (per 1,000 words)") +
   theme_minimal() +
   theme(
     axis.text.x  = element_blank(),
@@ -79,7 +77,8 @@ scatterplot <- ggplot(data, aes(
     size        = 0.75
   ) +
   xlim(0, 1) +
-  ylim(0, 1) +
+  # clip 9 values for readability
+  ylim(0, 5) +
   facet_grid(cols = vars(language))
 
 boxplot <- ggplot(data, aes(
@@ -119,6 +118,6 @@ grid <- plot_grid(
 grid
 
 ggsave(
-  "stats/figures/dispersion_vs_flex/comparison.png",
+  "stats/figures/frequency_vs_flexibility/comparison.png",
   grid
 )

@@ -1,27 +1,24 @@
 library(cowplot)
 library(ggplot2)
 
-source("stats/scripts/load_all_data.R")
+source("stats/scripts/load_100.R")
 
-data <- load_all_data()
-data <- data[which(data$flexibility != "NaN"), ]
+data <- load_100()
+
 attach(data)
 
-data_nonzero      <- data[which(flexibility > 0), ]
-data_English      <- data_nonzero[which(language == "English"), ]
-data_Nuuchahnulth <- data_nonzero[which(language == "Nuuchahnulth"), ]
-
-model_English      <- lm(data_English$flexibility~data_English$rel_freq)
-model_Nuuchahnulth <- lm(data_Nuuchahnulth$flexibility~data_Nuuchahnulth$rel_freq)
+model_Eng <- lm(data_Eng$flexibility ~ data_Eng$dispersion)
+model_Nuu <- lm(data_Nuu$flexibility ~ data_Nuu$dispersion)
 
 models <- data.frame(
   c("English", "Nuuchahnulth"),
-  c(model_English$coefficients[1], model_Nuuchahnulth$coefficients[1]),
-  c(model_English$coefficients[2], model_Nuuchahnulth$coefficients[2])
+  c(model_Eng$coefficients[1], model_Nuu$coefficients[1]),
+  c(model_Eng$coefficients[2], model_Nuu$coefficients[2])
 )
+
 colnames(models) <- c("language", "intercepts", "slopes")
 
-histogram <- ggplot(data_nonzero, aes(
+histogram <- ggplot(data, aes(
   x     = flexibility,
   fill  = language
 )) +
@@ -41,13 +38,13 @@ histogram <- ggplot(data_nonzero, aes(
   xlim(0, 1) +
   facet_grid(cols = vars(language))
 
-scatterplot <- ggplot(data_nonzero, aes(
+scatterplot <- ggplot(data, aes(
   x     = flexibility,
-  y     = rel_freq,
+  y     = dispersion,
   color = language,
   shape = language
 )) +
-  ylab("relative frequency (per 1,000 words)") +
+  ylab("dispersion (Deviation of Proportions)") +
   theme_minimal() +
   theme(
     axis.text.x  = element_blank(),
@@ -76,11 +73,10 @@ scatterplot <- ggplot(data_nonzero, aes(
     size        = 0.75
   ) +
   xlim(0, 1) +
-  # clip 9 values for readability
-  ylim(0, 10) +
+  ylim(0, 1) +
   facet_grid(cols = vars(language))
 
-boxplot <- ggplot(data_nonzero, aes(
+boxplot <- ggplot(data, aes(
   x    = flexibility,
   fill = language
 )) +
@@ -117,6 +113,6 @@ grid <- plot_grid(
 grid
 
 ggsave(
-  "stats/figures/freq_vs_flex/comparison.png",
+  "stats/figures/dispersion_vs_flexibility/comparison.png",
   grid
 )
