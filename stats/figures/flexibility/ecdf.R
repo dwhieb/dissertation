@@ -1,9 +1,10 @@
 library(ggplot2)
 
 source("stats/scripts/load_data.R")
+source("stats/scripts/load_Nuuchahnulth_100.R")
 
 data_English      <- load_data("stats/data/English_archlexemes.tsv")
-data_Nuuchahnulth <- load_data("stats/data/Nuuchahnulth_archlexemes.tsv")
+data_Nuuchahnulth <- load_Nuuchahnulth_100()
 data_Nuuchahnulth <- data_Nuuchahnulth[which(data_Nuuchahnulth$frequency > 1), ]
 
 data_English_nonzero      <- data_English[which(data_English$flexibility != 0), ]
