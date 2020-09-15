@@ -10,7 +10,9 @@
             "Penn": "CD",
             "function": "MOD"
           },
-          "transcription": "one",
+          "transcription": {
+            "default": "one"
+          },
           "stem": "one"
         },
         {
@@ -18,54 +20,71 @@
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "way",
+          "transcription": {
+            "default": "way"
+          },
           "stem": "way"
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "or"
+          "transcription": {
+            "default": "or"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "JJ",
             "function": "REF"
           },
-          "transcription": "other",
+          "transcription": {
+            "default": "other"
+          },
           "stem": "other"
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "'re"
+          "transcription": {
+            "default": "'re"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "now"
+          "transcription": {
+            "default": "now"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "recording"
+          "transcription": {
+            "default": "recording"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -73,9 +92,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "okay"
+          "transcription": {
+            "default": "okay"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -83,9 +105,12 @@
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -93,33 +118,44 @@
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         },
         {
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "oh"
+          "transcription": {
+            "default": "oh"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "yeah"
+          "transcription": {
+            "default": "yeah"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "home"
+          "transcription": {
+            "default": "home"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "repair"
+          "transcription": {
+            "default": "repair"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -127,33 +163,44 @@
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "were"
+          "transcription": {
+            "default": "were"
+          }
         },
         {
           "tags": {
             "Penn": "VBG"
           },
-          "transcription": "helping"
+          "transcription": {
+            "default": "helping"
+          }
         },
         {
           "tags": {
             "Penn": "PRP$"
           },
-          "transcription": "your"
+          "transcription": {
+            "default": "your"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "parents"
+          "transcription": {
+            "default": "parents"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -162,52 +209,69 @@
             "Penn": "NN",
             "function": "X"
           },
-          "transcription": "right",
+          "transcription": {
+            "default": "right"
+          },
           "stem": "right"
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "still"
+          "transcription": {
+            "default": "still"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "am"
+          "transcription": {
+            "default": "am"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "really"
+          "transcription": {
+            "default": "really"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "they"
+          "transcription": {
+            "default": "they"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "'re"
+          "transcription": {
+            "default": "'re"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -215,89 +279,118 @@
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "sort"
+          "transcription": {
+            "default": "sort"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "VBG"
           },
-          "transcription": "remodeling"
+          "transcription": {
+            "default": "remodeling"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "house",
+          "transcription": {
+            "default": "house"
+          },
           "stem": "house"
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "out"
+          "transcription": {
+            "default": "out"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "downtown"
+          "transcription": {
+            "default": "downtown"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "Atlanta"
+          "transcription": {
+            "default": "Atlanta"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "Candler"
+          "transcription": {
+            "default": "Candler"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "Park"
+          "transcription": {
+            "default": "Park"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "uh"
+          "transcription": {
+            "default": "uh"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -305,9 +398,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "uh-huh"
+          "transcription": {
+            "default": "uh-huh"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -315,143 +411,190 @@
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "'ve"
+          "transcription": {
+            "default": "'ve"
+          }
         },
         {
           "tags": {
             "Penn": "VBN"
           },
-          "transcription": "done"
+          "transcription": {
+            "default": "done"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "lots"
+          "transcription": {
+            "default": "lots"
+          }
         },
         {
           "tags": {
             "Penn": "TO"
           },
-          "transcription": "to"
+          "transcription": {
+            "default": "to"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "'ve"
+          "transcription": {
+            "default": "'ve"
+          }
         },
         {
           "tags": {
             "Penn": "VBN",
             "function": "PRED"
           },
-          "transcription": "taken",
+          "transcription": {
+            "default": "taken"
+          },
           "stem": "take"
         },
         {
           "tags": {
             "Penn": "RP"
           },
-          "transcription": "out"
+          "transcription": {
+            "default": "out"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "glass"
+          "transcription": {
+            "default": "glass"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "JJS"
           },
-          "transcription": "most"
+          "transcription": {
+            "default": "most"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "windows"
+          "transcription": {
+            "default": "windows"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "sashes"
+          "transcription": {
+            "default": "sashes"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "replaced"
+          "transcription": {
+            "default": "replaced"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "them"
+          "transcription": {
+            "default": "them"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -459,33 +602,44 @@
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "so"
+          "transcription": {
+            "default": "so"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "'re"
+          "transcription": {
+            "default": "'re"
+          }
         },
         {
           "tags": {
             "Penn": "VBG"
           },
-          "transcription": "remodeling"
+          "transcription": {
+            "default": "remodeling"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "okay"
+          "transcription": {
+            "default": "okay"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -493,9 +647,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "um-hum"
+          "transcription": {
+            "default": "um-hum"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -503,21 +660,28 @@
           "tags": {
             "Penn": "WRB"
           },
-          "transcription": "how"
+          "transcription": {
+            "default": "how"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "about"
+          "transcription": {
+            "default": "about"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -525,91 +689,120 @@
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "well"
+          "transcription": {
+            "default": "well"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "just"
+          "transcription": {
+            "default": "just"
+          }
         },
         {
           "tags": {
             "Penn": "VBP",
             "function": "PRED"
           },
-          "transcription": "live",
+          "transcription": {
+            "default": "live"
+          },
           "stem": "live"
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         },
         {
           "tags": {
             "Penn": "VB",
             "function": "PRED"
           },
-          "transcription": "live",
+          "transcription": {
+            "default": "live"
+          },
           "stem": "live"
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "apartment"
+          "transcription": {
+            "default": "apartment"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "now"
+          "transcription": {
+            "default": "now"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         },
         {
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "uh"
+          "transcription": {
+            "default": "uh"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -618,46 +811,61 @@
             "Penn": "CD",
             "function": "MOD"
           },
-          "transcription": "two",
+          "transcription": {
+            "default": "two"
+          },
           "stem": "two"
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "summers"
+          "transcription": {
+            "default": "summers"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "ago"
+          "transcription": {
+            "default": "ago"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "went"
+          "transcription": {
+            "default": "went"
+          }
         },
         {
           "tags": {
             "Penn": "TO"
           },
-          "transcription": "to"
+          "transcription": {
+            "default": "to"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "Massachusetts"
+          "transcription": {
+            "default": "Massachusetts"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -665,9 +873,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "uh-huh"
+          "transcription": {
+            "default": "uh-huh"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -675,89 +886,118 @@
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "went"
+          "transcription": {
+            "default": "went"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "with"
+          "transcription": {
+            "default": "with"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "friend",
+          "transcription": {
+            "default": "friend"
+          },
           "stem": "friend"
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "mine"
+          "transcription": {
+            "default": "mine"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "undertook"
+          "transcription": {
+            "default": "undertook"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "building"
+          "transcription": {
+            "default": "building"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "house"
+          "transcription": {
+            "default": "house"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -765,9 +1005,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "uh-huh"
+          "transcription": {
+            "default": "uh-huh"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -775,131 +1018,174 @@
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "this"
+          "transcription": {
+            "default": "this"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "Lincoln"
+          "transcription": {
+            "default": "Lincoln"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "log"
+          "transcription": {
+            "default": "log"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "house",
+          "transcription": {
+            "default": "house"
+          },
           "stem": "house"
         },
         {
           "tags": {
             "Penn": "WRB"
           },
-          "transcription": "where"
+          "transcription": {
+            "default": "where"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "have"
+          "transcription": {
+            "default": "have"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "wall"
+          "transcription": {
+            "default": "wall"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "partitions"
+          "transcription": {
+            "default": "partitions"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "'s"
+          "transcription": {
+            "default": "'s"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "preconstructed"
+          "transcription": {
+            "default": "preconstructed"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "MD"
           },
-          "transcription": "might"
+          "transcription": {
+            "default": "might"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "say"
+          "transcription": {
+            "default": "say"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -907,9 +1193,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "uh-huh"
+          "transcription": {
+            "default": "uh-huh"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -917,33 +1206,44 @@
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "started"
+          "transcription": {
+            "default": "started"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -951,269 +1251,358 @@
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "started"
+          "transcription": {
+            "default": "started"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "from"
+          "transcription": {
+            "default": "from"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "an"
+          "transcription": {
+            "default": "an"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "empty"
+          "transcription": {
+            "default": "empty"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "lot"
+          "transcription": {
+            "default": "lot"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "with"
+          "transcription": {
+            "default": "with"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "trees"
+          "transcription": {
+            "default": "trees"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "stuff"
+          "transcription": {
+            "default": "stuff"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "on"
+          "transcription": {
+            "default": "on"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "had"
+          "transcription": {
+            "default": "had"
+          }
         },
         {
           "tags": {
             "Penn": "TO"
           },
-          "transcription": "to"
+          "transcription": {
+            "default": "to"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "cut"
+          "transcription": {
+            "default": "cut"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "them"
+          "transcription": {
+            "default": "them"
+          }
         },
         {
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "uh"
+          "transcription": {
+            "default": "uh"
+          }
         },
         {
           "tags": {
             "Penn": "RB",
             "function": "X"
           },
-          "transcription": "down",
+          "transcription": {
+            "default": "down"
+          },
           "stem": "down"
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "clear"
+          "transcription": {
+            "default": "clear"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "lot"
+          "transcription": {
+            "default": "lot"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "had"
+          "transcription": {
+            "default": "had"
+          }
         },
         {
           "tags": {
             "Penn": "TO"
           },
-          "transcription": "to"
+          "transcription": {
+            "default": "to"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "call"
+          "transcription": {
+            "default": "call"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "escavators"
+          "transcription": {
+            "default": "escavators"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "have"
+          "transcription": {
+            "default": "have"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "them"
+          "transcription": {
+            "default": "them"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "dig"
+          "transcription": {
+            "default": "dig"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "basement"
+          "transcription": {
+            "default": "basement"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "pour"
+          "transcription": {
+            "default": "pour"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "basement"
+          "transcription": {
+            "default": "basement"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -1221,9 +1610,12 @@
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "wow"
+          "transcription": {
+            "default": "wow"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -1231,39 +1623,52 @@
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "went"
+          "transcription": {
+            "default": "went"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "from"
+          "transcription": {
+            "default": "from"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "ground"
+          "transcription": {
+            "default": "ground"
+          }
         },
         {
           "tags": {
             "Penn": "RP"
           },
-          "transcription": "up"
+          "transcription": {
+            "default": "up"
+          }
         },
         {
           "tags": {
             "Penn": "PRP$"
           },
-          "transcription": "our"
+          "transcription": {
+            "default": "our"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -1271,9 +1676,12 @@
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "wow"
+          "transcription": {
+            "default": "wow"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -1282,127 +1690,167 @@
             "Penn": "CD",
             "function": "REF"
           },
-          "transcription": "one",
+          "transcription": {
+            "default": "one"
+          },
           "stem": "one"
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "PRP$"
           },
-          "transcription": "our"
+          "transcription": {
+            "default": "our"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "main"
+          "transcription": {
+            "default": "main"
+          }
         },
         {
           "tags": {
             "Penn": "NNS",
             "function": "REF"
           },
-          "transcription": "problems",
+          "transcription": {
+            "default": "problems"
+          },
           "stem": "problem"
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "as"
+          "transcription": {
+            "default": "as"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "well"
+          "transcription": {
+            "default": "well"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "Massachusetts"
+          "transcription": {
+            "default": "Massachusetts"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         },
         {
           "tags": {
             "Penn": "VBD",
             "function": "PRED"
           },
-          "transcription": "thought",
+          "transcription": {
+            "default": "thought"
+          },
           "stem": "think"
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "gonna"
+          "transcription": {
+            "default": "gonna"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "well"
+          "transcription": {
+            "default": "well"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "MOD"
           },
-          "transcription": "fun",
+          "transcription": {
+            "default": "fun"
+          },
           "stem": "fun"
         },
         {
@@ -1410,124 +1858,163 @@
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "time",
+          "transcription": {
+            "default": "time"
+          },
           "stem": "time"
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "but"
+          "transcription": {
+            "default": "but"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         },
         {
           "tags": {
             "Penn": "VBD",
             "function": "PRED"
           },
-          "transcription": "thought",
+          "transcription": {
+            "default": "thought"
+          },
           "stem": "think"
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "gosh"
+          "transcription": {
+            "default": "gosh"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "summer"
+          "transcription": {
+            "default": "summer"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "time",
+          "transcription": {
+            "default": "time"
+          },
           "stem": "time"
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "VBP",
             "function": "X"
           },
-          "transcription": "know",
+          "transcription": {
+            "default": "know"
+          },
           "stem": "know"
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "well"
+          "transcription": {
+            "default": "well"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "all"
+          "transcription": {
+            "default": "all"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "ever"
+          "transcription": {
+            "default": "ever"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "did"
+          "transcription": {
+            "default": "did"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "rain"
+          "transcription": {
+            "default": "rain"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "thunderstorms"
+          "transcription": {
+            "default": "thunderstorms"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -1535,9 +2022,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "um-hum"
+          "transcription": {
+            "default": "um-hum"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -1546,7 +2036,9 @@
             "Penn": "CD",
             "function": "MOD"
           },
-          "transcription": "one",
+          "transcription": {
+            "default": "one"
+          },
           "stem": "one"
         },
         {
@@ -1554,88 +2046,117 @@
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "thing",
+          "transcription": {
+            "default": "thing"
+          },
           "stem": "thing"
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "is"
+          "transcription": {
+            "default": "is"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "that"
+          "transcription": {
+            "default": "that"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "'re"
+          "transcription": {
+            "default": "'re"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "had"
+          "transcription": {
+            "default": "had"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "were"
+          "transcription": {
+            "default": "were"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "gonna"
+          "transcription": {
+            "default": "gonna"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "pour"
+          "transcription": {
+            "default": "pour"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "basement"
+          "transcription": {
+            "default": "basement"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "foundation"
+          "transcription": {
+            "default": "foundation"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -1643,9 +2164,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "um-hum"
+          "transcription": {
+            "default": "um-hum"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -1653,77 +2177,102 @@
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "'re"
+          "transcription": {
+            "default": "'re"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "process"
+          "transcription": {
+            "default": "process"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "started"
+          "transcription": {
+            "default": "started"
+          }
         },
         {
           "tags": {
             "Penn": "VBG"
           },
-          "transcription": "pouring"
+          "transcription": {
+            "default": "pouring"
+          }
         },
         {
           "tags": {
             "Penn": "RB",
             "function": "X"
           },
-          "transcription": "down",
+          "transcription": {
+            "default": "down"
+          },
           "stem": "down"
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "rain"
+          "transcription": {
+            "default": "rain"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -1731,9 +2280,12 @@
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -1741,107 +2293,142 @@
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "guess"
+          "transcription": {
+            "default": "guess"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "had"
+          "transcription": {
+            "default": "had"
+          }
         },
         {
           "tags": {
             "Penn": "JJS"
           },
-          "transcription": "most"
+          "transcription": {
+            "default": "most"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBN"
           },
-          "transcription": "done"
+          "transcription": {
+            "default": "done"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "but"
+          "transcription": {
+            "default": "but"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "MOD"
           },
-          "transcription": "end",
+          "transcription": {
+            "default": "end"
+          },
           "stem": "end"
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "result"
+          "transcription": {
+            "default": "result"
+          }
         },
         {
           "tags": {
             "Penn": "WP"
           },
-          "transcription": "what"
+          "transcription": {
+            "default": "what"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "happened"
+          "transcription": {
+            "default": "happened"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "that"
+          "transcription": {
+            "default": "that"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -1849,247 +2436,328 @@
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "some"
+          "transcription": {
+            "default": "some"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "water"
+          "transcription": {
+            "default": "water"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "lot"
+          "transcription": {
+            "default": "lot"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "water"
+          "transcription": {
+            "default": "water"
+          }
         },
         {
           "tags": {
             "Penn": "VBN"
           },
-          "transcription": "settled"
+          "transcription": {
+            "default": "settled"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "on"
+          "transcription": {
+            "default": "on"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "top"
+          "transcription": {
+            "default": "top"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "really"
+          "transcription": {
+            "default": "really"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "did"
+          "transcription": {
+            "default": "did"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "n't"
+          "transcription": {
+            "default": "n't"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "give"
+          "transcription": {
+            "default": "give"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "very"
+          "transcription": {
+            "default": "very"
+          }
         },
         {
           "tags": {
             "Penn": "JJ",
             "function": "MOD"
           },
-          "transcription": "good",
+          "transcription": {
+            "default": "good"
+          },
           "stem": "good"
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "finish"
+          "transcription": {
+            "default": "finish"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "some"
+          "transcription": {
+            "default": "some"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "sort"
+          "transcription": {
+            "default": "sort"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "sandy"
+          "transcription": {
+            "default": "sandy"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "not"
+          "transcription": {
+            "default": "not"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "very"
+          "transcription": {
+            "default": "very"
+          }
         },
         {
           "tags": {
             "Penn": "JJ",
             "function": "MOD"
           },
-          "transcription": "good",
+          "transcription": {
+            "default": "good"
+          },
           "stem": "good"
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "finish"
+          "transcription": {
+            "default": "finish"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -2097,9 +2765,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "um-hum"
+          "transcription": {
+            "default": "um-hum"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -2107,105 +2778,140 @@
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "but"
+          "transcription": {
+            "default": "but"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "turned"
+          "transcription": {
+            "default": "turned"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "okay"
+          "transcription": {
+            "default": "okay"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "'s"
+          "transcription": {
+            "default": "'s"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "only"
+          "transcription": {
+            "default": "only"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "basement"
+          "transcription": {
+            "default": "basement"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "floor"
+          "transcription": {
+            "default": "floor"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "so"
+          "transcription": {
+            "default": "so"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "okay"
+          "transcription": {
+            "default": "okay"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -2213,9 +2919,12 @@
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "yeah"
+          "transcription": {
+            "default": "yeah"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -2223,71 +2932,94 @@
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "but"
+          "transcription": {
+            "default": "but"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "kept"
+          "transcription": {
+            "default": "kept"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "us"
+          "transcription": {
+            "default": "us"
+          }
         },
         {
           "tags": {
             "Penn": "RB",
             "function": "X"
           },
-          "transcription": "pretty",
+          "transcription": {
+            "default": "pretty"
+          },
           "stem": "pretty"
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "busy"
+          "transcription": {
+            "default": "busy"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "only"
+          "transcription": {
+            "default": "only"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -2295,82 +3027,108 @@
           "tags": {
             "Penn": "EX"
           },
-          "transcription": "there"
+          "transcription": {
+            "default": "there"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "well"
+          "transcription": {
+            "default": "well"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "me"
+          "transcription": {
+            "default": "me"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP$"
           },
-          "transcription": "my"
+          "transcription": {
+            "default": "my"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "friend",
+          "transcription": {
+            "default": "friend"
+          },
           "stem": "friend"
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "then"
+          "transcription": {
+            "default": "then"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "just"
+          "transcription": {
+            "default": "just"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "had"
+          "transcription": {
+            "default": "had"
+          }
         },
         {
           "tags": {
             "Penn": "IN",
             "function": "X"
           },
-          "transcription": "like",
+          "transcription": {
+            "default": "like"
+          },
           "stem": "like"
         },
         {
@@ -2378,46 +3136,61 @@
             "Penn": "CD",
             "function": "MOD"
           },
-          "transcription": "two",
+          "transcription": {
+            "default": "two"
+          },
           "stem": "two"
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "helpers"
+          "transcription": {
+            "default": "helpers"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "uh"
+          "transcription": {
+            "default": "uh"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "sort"
+          "transcription": {
+            "default": "sort"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -2425,9 +3198,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "um-hum"
+          "transcription": {
+            "default": "um-hum"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -2435,50 +3211,66 @@
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "family"
+          "transcription": {
+            "default": "family"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "type"
+          "transcription": {
+            "default": "type"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "n't"
+          "transcription": {
+            "default": "n't"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "VBP",
             "function": "X"
           },
-          "transcription": "know",
+          "transcription": {
+            "default": "know"
+          },
           "stem": "know"
         },
         {
@@ -2486,66 +3278,87 @@
             "Penn": "IN",
             "function": "X"
           },
-          "transcription": "like",
+          "transcription": {
+            "default": "like"
+          },
           "stem": "like"
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "commercial"
+          "transcription": {
+            "default": "commercial"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "project"
+          "transcription": {
+            "default": "project"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "just"
+          "transcription": {
+            "default": "just"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "PREDCXN"
           },
-          "transcription": "something",
+          "transcription": {
+            "default": "something"
+          },
           "stem": "something"
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "that"
+          "transcription": {
+            "default": "that"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "sort"
+          "transcription": {
+            "default": "sort"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "just"
+          "transcription": {
+            "default": "just"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -2553,14 +3366,18 @@
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "VBP",
             "function": "X"
           },
-          "transcription": "know",
+          "transcription": {
+            "default": "know"
+          },
           "stem": "know"
         },
         {
@@ -2568,204 +3385,269 @@
             "Penn": "IN",
             "function": "X"
           },
-          "transcription": "like",
+          "transcription": {
+            "default": "like"
+          },
           "stem": "like"
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "get"
+          "transcription": {
+            "default": "get"
+          }
         },
         {
           "tags": {
             "Penn": "PRP$"
           },
-          "transcription": "your"
+          "transcription": {
+            "default": "your"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "get"
+          "transcription": {
+            "default": "get"
+          }
         },
         {
           "tags": {
             "Penn": "PRP$"
           },
-          "transcription": "his"
+          "transcription": {
+            "default": "his"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "VBP",
             "function": "X"
           },
-          "transcription": "know",
+          "transcription": {
+            "default": "know"
+          },
           "stem": "know"
         },
         {
           "tags": {
             "Penn": "PRP$"
           },
-          "transcription": "my"
+          "transcription": {
+            "default": "my"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "brother"
+          "transcription": {
+            "default": "brother"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "brother"
+          "transcription": {
+            "default": "brother"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "well"
+          "transcription": {
+            "default": "well"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "maybe"
+          "transcription": {
+            "default": "maybe"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "VBP",
             "function": "X"
           },
-          "transcription": "know",
+          "transcription": {
+            "default": "know"
+          },
           "stem": "know"
         },
         {
           "tags": {
             "Penn": "PRP$"
           },
-          "transcription": "my"
+          "transcription": {
+            "default": "my"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "cousin"
+          "transcription": {
+            "default": "cousin"
+          }
         },
         {
           "tags": {
             "Penn": "POS"
           },
-          "transcription": "'s"
+          "transcription": {
+            "default": "'s"
+          }
         },
         {
           "tags": {
             "Penn": "VBG",
             "function": "PRED"
           },
-          "transcription": "coming",
+          "transcription": {
+            "default": "coming"
+          },
           "stem": "come"
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "over"
+          "transcription": {
+            "default": "over"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "today"
+          "transcription": {
+            "default": "today"
+          }
         },
         {
           "tags": {
             "Penn": "TO"
           },
-          "transcription": "to"
+          "transcription": {
+            "default": "to"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "help"
+          "transcription": {
+            "default": "help"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "us"
+          "transcription": {
+            "default": "us"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "do"
+          "transcription": {
+            "default": "do"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "that"
+          "transcription": {
+            "default": "that"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "kind"
+          "transcription": {
+            "default": "kind"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "thing",
+          "transcription": {
+            "default": "thing"
+          },
           "stem": "thing"
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "so"
+          "transcription": {
+            "default": "so"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -2773,9 +3655,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "uh-huh"
+          "transcription": {
+            "default": "uh-huh"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -2783,150 +3668,198 @@
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "scheduling"
+          "transcription": {
+            "default": "scheduling"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "everything",
+          "transcription": {
+            "default": "everything"
+          },
           "stem": "everything"
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "kind"
+          "transcription": {
+            "default": "kind"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "hectic"
+          "transcription": {
+            "default": "hectic"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "sometimes"
+          "transcription": {
+            "default": "sometimes"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "then"
+          "transcription": {
+            "default": "then"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "materials"
+          "transcription": {
+            "default": "materials"
+          }
         },
         {
           "tags": {
             "Penn": "VBG",
             "function": "MOD"
           },
-          "transcription": "coming",
+          "transcription": {
+            "default": "coming"
+          },
           "stem": "come"
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "so"
+          "transcription": {
+            "default": "so"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "'re"
+          "transcription": {
+            "default": "'re"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "'re"
+          "transcription": {
+            "default": "'re"
+          }
         },
         {
           "tags": {
             "Penn": "VBG"
           },
-          "transcription": "hopping"
+          "transcription": {
+            "default": "hopping"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "around"
+          "transcription": {
+            "default": "around"
+          }
         },
         {
           "tags": {
             "Penn": "RB",
             "function": "X"
           },
-          "transcription": "pretty",
+          "transcription": {
+            "default": "pretty"
+          },
           "stem": "pretty"
         },
         {
@@ -2934,162 +3867,213 @@
             "Penn": "JJ",
             "function": "PREDCXN"
           },
-          "transcription": "good",
+          "transcription": {
+            "default": "good"
+          },
           "stem": "good"
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "but"
+          "transcription": {
+            "default": "but"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "overall"
+          "transcription": {
+            "default": "overall"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "yeah"
+          "transcription": {
+            "default": "yeah"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "got"
+          "transcription": {
+            "default": "got"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBN"
           },
-          "transcription": "done"
+          "transcription": {
+            "default": "done"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "'s"
+          "transcription": {
+            "default": "'s"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "'s"
+          "transcription": {
+            "default": "'s"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "CD",
             "function": "MOD"
           },
-          "transcription": "three",
+          "transcription": {
+            "default": "three"
+          },
           "stem": "three"
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "bedroom"
+          "transcription": {
+            "default": "bedroom"
+          }
         },
         {
           "tags": {
             "Penn": "CD",
             "function": "MOD"
           },
-          "transcription": "two",
+          "transcription": {
+            "default": "two"
+          },
           "stem": "two"
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "bath"
+          "transcription": {
+            "default": "bath"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "house",
+          "transcription": {
+            "default": "house"
+          },
           "stem": "house"
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "'s"
+          "transcription": {
+            "default": "'s"
+          }
         },
         {
           "tags": {
             "Penn": "RB",
             "function": "X"
           },
-          "transcription": "pretty",
+          "transcription": {
+            "default": "pretty"
+          },
           "stem": "pretty"
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "neat"
+          "transcription": {
+            "default": "neat"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3097,9 +4081,12 @@
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "wow"
+          "transcription": {
+            "default": "wow"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3107,9 +4094,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "um-hum"
+          "transcription": {
+            "default": "um-hum"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3117,9 +4107,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "nice"
+          "transcription": {
+            "default": "nice"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3127,15 +4120,20 @@
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "yeah"
+          "transcription": {
+            "default": "yeah"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "so"
+          "transcription": {
+            "default": "so"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3143,69 +4141,92 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "nice"
+          "transcription": {
+            "default": "nice"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "so"
+          "transcription": {
+            "default": "so"
+          }
         },
         {
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "uh"
+          "transcription": {
+            "default": "uh"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "mean"
+          "transcription": {
+            "default": "mean"
+          }
         },
         {
           "tags": {
             "Penn": "WP"
           },
-          "transcription": "what"
+          "transcription": {
+            "default": "what"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "for"
+          "transcription": {
+            "default": "for"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "just"
+          "transcription": {
+            "default": "just"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3213,127 +4234,168 @@
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "well"
+          "transcription": {
+            "default": "well"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "for"
+          "transcription": {
+            "default": "for"
+          }
         },
         {
           "tags": {
             "Penn": "PRP$"
           },
-          "transcription": "my"
+          "transcription": {
+            "default": "my"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "X"
           },
-          "transcription": "friend",
+          "transcription": {
+            "default": "friend"
+          },
           "stem": "friend"
         },
         {
           "tags": {
             "Penn": "POS"
           },
-          "transcription": "'s"
+          "transcription": {
+            "default": "'s"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "parents"
+          "transcription": {
+            "default": "parents"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "they"
+          "transcription": {
+            "default": "they"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "had"
+          "transcription": {
+            "default": "had"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "some"
+          "transcription": {
+            "default": "some"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "property"
+          "transcription": {
+            "default": "property"
+          }
         },
         {
           "tags": {
             "Penn": "EX"
           },
-          "transcription": "there"
+          "transcription": {
+            "default": "there"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "they"
+          "transcription": {
+            "default": "they"
+          }
         },
         {
           "tags": {
             "Penn": "MD"
           },
-          "transcription": "'d"
+          "transcription": {
+            "default": "'d"
+          }
         },
         {
           "tags": {
             "Penn": "VBD",
             "function": "PRED"
           },
-          "transcription": "lived",
+          "transcription": {
+            "default": "lived"
+          },
           "stem": "live"
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "this"
+          "transcription": {
+            "default": "this"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3341,127 +4403,166 @@
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "this"
+          "transcription": {
+            "default": "this"
+          }
         },
         {
           "tags": {
             "Penn": "JJ",
             "function": "MOD"
           },
-          "transcription": "old",
+          "transcription": {
+            "default": "old"
+          },
           "stem": "old"
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "'s"
+          "transcription": {
+            "default": "'s"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "sort"
+          "transcription": {
+            "default": "sort"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "IN",
             "function": "X"
           },
-          "transcription": "like",
+          "transcription": {
+            "default": "like"
+          },
           "stem": "like"
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "farm"
+          "transcription": {
+            "default": "farm"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "MD"
           },
-          "transcription": "might"
+          "transcription": {
+            "default": "might"
+          }
         },
         {
           "tags": {
             "Penn": "VB",
             "function": "PRED"
           },
-          "transcription": "say",
+          "transcription": {
+            "default": "say"
+          },
           "stem": "say"
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "they"
+          "transcription": {
+            "default": "they"
+          }
         },
         {
           "tags": {
             "Penn": "VBP",
             "function": "PRED"
           },
-          "transcription": "live",
+          "transcription": {
+            "default": "live"
+          },
           "stem": "live"
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "this"
+          "transcription": {
+            "default": "this"
+          }
         },
         {
           "tags": {
             "Penn": "JJ",
             "function": "MOD"
           },
-          "transcription": "old",
+          "transcription": {
+            "default": "old"
+          },
           "stem": "old"
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "house"
+          "transcription": {
+            "default": "house"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3469,9 +4570,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "um-hum"
+          "transcription": {
+            "default": "um-hum"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3479,14 +4583,18 @@
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "for"
+          "transcription": {
+            "default": "for"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "something",
+          "transcription": {
+            "default": "something"
+          },
           "stem": "something"
         },
         {
@@ -3494,256 +4602,337 @@
             "Penn": "IN",
             "function": "X"
           },
-          "transcription": "like",
+          "transcription": {
+            "default": "like"
+          },
           "stem": "like"
         },
         {
           "tags": {
             "Penn": "CD"
           },
-          "transcription": "thirty"
+          "transcription": {
+            "default": "thirty"
+          }
         },
         {
           "tags": {
             "Penn": "NNS",
             "function": "REF"
           },
-          "transcription": "years",
+          "transcription": {
+            "default": "years"
+          },
           "stem": "year"
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "or"
+          "transcription": {
+            "default": "or"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "something",
+          "transcription": {
+            "default": "something"
+          },
           "stem": "something"
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP$"
           },
-          "transcription": "his"
+          "transcription": {
+            "default": "his"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "mom"
+          "transcription": {
+            "default": "mom"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "just"
+          "transcription": {
+            "default": "just"
+          }
         },
         {
           "tags": {
             "Penn": "VBD",
             "function": "PRED"
           },
-          "transcription": "wanted",
+          "transcription": {
+            "default": "wanted"
+          },
           "stem": "want"
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "new"
+          "transcription": {
+            "default": "new"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "house",
+          "transcription": {
+            "default": "house"
+          },
           "stem": "house"
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "VBP",
             "function": "X"
           },
-          "transcription": "know",
+          "transcription": {
+            "default": "know"
+          },
           "stem": "know"
         },
         {
           "tags": {
             "Penn": "WDT"
           },
-          "transcription": "that"
+          "transcription": {
+            "default": "that"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "VBN"
           },
-          "transcription": "been"
+          "transcription": {
+            "default": "been"
+          }
         },
         {
           "tags": {
             "Penn": "PRP$"
           },
-          "transcription": "her"
+          "transcription": {
+            "default": "her"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "dream"
+          "transcription": {
+            "default": "dream"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "so"
+          "transcription": {
+            "default": "so"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "did"
+          "transcription": {
+            "default": "did"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "that"
+          "transcription": {
+            "default": "that"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "uh"
+          "transcription": {
+            "default": "uh"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "she"
+          "transcription": {
+            "default": "she"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "was"
+          "transcription": {
+            "default": "was"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "really"
+          "transcription": {
+            "default": "really"
+          }
         },
         {
           "tags": {
             "Penn": "VBN"
           },
-          "transcription": "pleased"
+          "transcription": {
+            "default": "pleased"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "with"
+          "transcription": {
+            "default": "with"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "so"
+          "transcription": {
+            "default": "so"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBD",
             "function": "PRED"
           },
-          "transcription": "came",
+          "transcription": {
+            "default": "came"
+          },
           "stem": "come"
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "really"
+          "transcription": {
+            "default": "really"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "great"
+          "transcription": {
+            "default": "great"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "so"
+          "transcription": {
+            "default": "so"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3751,9 +4940,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "um-hum"
+          "transcription": {
+            "default": "um-hum"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3761,21 +4953,28 @@
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "that"
+          "transcription": {
+            "default": "that"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "'s"
+          "transcription": {
+            "default": "'s"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "great"
+          "transcription": {
+            "default": "great"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3783,9 +4982,12 @@
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "wow"
+          "transcription": {
+            "default": "wow"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3793,87 +4995,116 @@
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "so"
+          "transcription": {
+            "default": "so"
+          }
         },
         {
           "tags": {
             "Penn": "WP"
           },
-          "transcription": "what"
+          "transcription": {
+            "default": "what"
+          }
         },
         {
           "tags": {
             "Penn": "WRB"
           },
-          "transcription": "why"
+          "transcription": {
+            "default": "why"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "is"
+          "transcription": {
+            "default": "is"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "that"
+          "transcription": {
+            "default": "that"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "weather"
+          "transcription": {
+            "default": "weather"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "Atlanta"
+          "transcription": {
+            "default": "Atlanta"
+          }
         },
         {
           "tags": {
             "Penn": "WDT"
           },
-          "transcription": "that"
+          "transcription": {
+            "default": "that"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "gets"
+          "transcription": {
+            "default": "gets"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "very"
+          "transcription": {
+            "default": "very"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "hot"
+          "transcription": {
+            "default": "hot"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3881,9 +5112,12 @@
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "hm"
+          "transcription": {
+            "default": "hm"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3891,47 +5125,62 @@
           "tags": {
             "Penn": "WRB"
           },
-          "transcription": "where"
+          "transcription": {
+            "default": "where"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "VBP",
             "function": "PRED"
           },
-          "transcription": "live",
+          "transcription": {
+            "default": "live"
+          },
           "stem": "live"
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "gets"
+          "transcription": {
+            "default": "gets"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "very"
+          "transcription": {
+            "default": "very"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "hot"
+          "transcription": {
+            "default": "hot"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3939,21 +5188,28 @@
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "yeah"
+          "transcription": {
+            "default": "yeah"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "does"
+          "transcription": {
+            "default": "does"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -3961,181 +5217,240 @@
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "that"
+          "transcription": {
+            "default": "that"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "'s"
+          "transcription": {
+            "default": "'s"
+          }
         },
         {
           "tags": {
             "Penn": "WRB"
           },
-          "transcription": "why"
+          "transcription": {
+            "default": "why"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "'re"
+          "transcription": {
+            "default": "'re"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "windows"
+          "transcription": {
+            "default": "windows"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "have"
+          "transcription": {
+            "default": "have"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "WP"
           },
-          "transcription": "what"
+          "transcription": {
+            "default": "what"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "type"
+          "transcription": {
+            "default": "type"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "windows"
+          "transcription": {
+            "default": "windows"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "are"
+          "transcription": {
+            "default": "are"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "VBG",
             "function": "PRED"
           },
-          "transcription": "putting",
+          "transcription": {
+            "default": "putting"
+          },
           "stem": "put"
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "because"
+          "transcription": {
+            "default": "because"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "windows"
+          "transcription": {
+            "default": "windows"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "are"
+          "transcription": {
+            "default": "are"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "something",
+          "transcription": {
+            "default": "something"
+          },
           "stem": "something"
         },
         {
           "tags": {
             "Penn": "WDT"
           },
-          "transcription": "that"
+          "transcription": {
+            "default": "that"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "is"
+          "transcription": {
+            "default": "is"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "conducive"
+          "transcription": {
+            "default": "conducive"
+          }
         },
         {
           "tags": {
             "Penn": "TO"
           },
-          "transcription": "to"
+          "transcription": {
+            "default": "to"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -4143,9 +5458,12 @@
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -4153,59 +5471,78 @@
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "temperature"
+          "transcription": {
+            "default": "temperature"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "changes"
+          "transcription": {
+            "default": "changes"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "VBP",
             "function": "X"
           },
-          "transcription": "know",
+          "transcription": {
+            "default": "know"
+          },
           "stem": "know"
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "solar"
+          "transcription": {
+            "default": "solar"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "game"
+          "transcription": {
+            "default": "game"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -4213,9 +5550,12 @@
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "right"
+          "transcription": {
+            "default": "right"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -4223,89 +5563,118 @@
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "have"
+          "transcription": {
+            "default": "have"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "WP"
           },
-          "transcription": "what"
+          "transcription": {
+            "default": "what"
+          }
         },
         {
           "tags": {
             "Penn": "WP"
           },
-          "transcription": "what"
+          "transcription": {
+            "default": "what"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "are"
+          "transcription": {
+            "default": "are"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "VBG",
             "function": "PRED"
           },
-          "transcription": "putting",
+          "transcription": {
+            "default": "putting"
+          },
           "stem": "put"
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "triple"
+          "transcription": {
+            "default": "triple"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "glaze"
+          "transcription": {
+            "default": "glaze"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "or"
+          "transcription": {
+            "default": "or"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "double"
+          "transcription": {
+            "default": "double"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "glaze"
+          "transcription": {
+            "default": "glaze"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "or"
+          "transcription": {
+            "default": "or"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -4313,183 +5682,242 @@
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "no"
+          "transcription": {
+            "default": "no"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "just"
+          "transcription": {
+            "default": "just"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "just"
+          "transcription": {
+            "default": "just"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "went"
+          "transcription": {
+            "default": "went"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "into"
+          "transcription": {
+            "default": "into"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "building"
+          "transcription": {
+            "default": "building"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "supply"
+          "transcription": {
+            "default": "supply"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "store"
+          "transcription": {
+            "default": "store"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "bought"
+          "transcription": {
+            "default": "bought"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "plate"
+          "transcription": {
+            "default": "plate"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "glass"
+          "transcription": {
+            "default": "glass"
+          }
         },
         {
           "tags": {
             "Penn": "PRP$"
           },
-          "transcription": "my"
+          "transcription": {
+            "default": "my"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "parents"
+          "transcription": {
+            "default": "parents"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "do"
+          "transcription": {
+            "default": "do"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "not"
+          "transcription": {
+            "default": "not"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "have"
+          "transcription": {
+            "default": "have"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "JJ",
             "function": "MOD"
           },
-          "transcription": "whole",
+          "transcription": {
+            "default": "whole"
+          },
           "stem": "whole"
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "lot"
+          "transcription": {
+            "default": "lot"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "money",
+          "transcription": {
+            "default": "money"
+          },
           "stem": "money"
         },
         {
           "tags": {
             "Penn": "TO"
           },
-          "transcription": "to"
+          "transcription": {
+            "default": "to"
+          }
         },
         {
           "tags": {
             "Penn": "VB",
             "function": "INF"
           },
-          "transcription": "put",
+          "transcription": {
+            "default": "put"
+          },
           "stem": "put"
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "into"
+          "transcription": {
+            "default": "into"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -4497,21 +5925,28 @@
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "oh"
+          "transcription": {
+            "default": "oh"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "okay"
+          "transcription": {
+            "default": "okay"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "okay"
+          "transcription": {
+            "default": "okay"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -4519,71 +5954,94 @@
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "uh"
+          "transcription": {
+            "default": "uh"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "but"
+          "transcription": {
+            "default": "but"
+          }
         },
         {
           "tags": {
             "Penn": "VB",
             "function": "X"
           },
-          "transcription": "see",
+          "transcription": {
+            "default": "see"
+          },
           "stem": "see"
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "lot"
+          "transcription": {
+            "default": "lot"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "windows"
+          "transcription": {
+            "default": "windows"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -4591,9 +6049,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "um-hum"
+          "transcription": {
+            "default": "um-hum"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -4601,46 +6062,60 @@
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "'s"
+          "transcription": {
+            "default": "'s"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "house",
+          "transcription": {
+            "default": "house"
+          },
           "stem": "house"
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "is"
+          "transcription": {
+            "default": "is"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "eighty"
+          "transcription": {
+            "default": "eighty"
+          }
         },
         {
           "tags": {
             "Penn": "NNS",
             "function": "REF"
           },
-          "transcription": "years",
+          "transcription": {
+            "default": "years"
+          },
           "stem": "year"
         },
         {
@@ -4648,150 +6123,199 @@
             "Penn": "JJ",
             "function": "X"
           },
-          "transcription": "old",
+          "transcription": {
+            "default": "old"
+          },
           "stem": "old"
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "'s"
+          "transcription": {
+            "default": "'s"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "had"
+          "transcription": {
+            "default": "had"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "several"
+          "transcription": {
+            "default": "several"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "owners"
+          "transcription": {
+            "default": "owners"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "stuff"
+          "transcription": {
+            "default": "stuff"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "um"
+          "transcription": {
+            "default": "um"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "they"
+          "transcription": {
+            "default": "they"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "had"
+          "transcription": {
+            "default": "had"
+          }
         },
         {
           "tags": {
             "Penn": "VBN",
             "function": "PRED"
           },
-          "transcription": "put",
+          "transcription": {
+            "default": "put"
+          },
           "stem": "put"
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "plastic"
+          "transcription": {
+            "default": "plastic"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "Plexiglas"
+          "transcription": {
+            "default": "Plexiglas"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "kind"
+          "transcription": {
+            "default": "kind"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "stuff"
+          "transcription": {
+            "default": "stuff"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "some"
+          "transcription": {
+            "default": "some"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "windows"
+          "transcription": {
+            "default": "windows"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -4799,9 +6323,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "okay"
+          "transcription": {
+            "default": "okay"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -4809,143 +6336,190 @@
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "oh"
+          "transcription": {
+            "default": "oh"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "these"
+          "transcription": {
+            "default": "these"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "are"
+          "transcription": {
+            "default": "are"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "so"
+          "transcription": {
+            "default": "so"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "you"
+          "transcription": {
+            "default": "you"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "have"
+          "transcription": {
+            "default": "have"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "sash"
+          "transcription": {
+            "default": "sash"
+          }
         },
         {
           "tags": {
             "Penn": "NNS"
           },
-          "transcription": "windows"
+          "transcription": {
+            "default": "windows"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "did"
+          "transcription": {
+            "default": "did"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "did"
+          "transcription": {
+            "default": "did"
+          }
         },
         {
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "uh"
+          "transcription": {
+            "default": "uh"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "did"
+          "transcription": {
+            "default": "did"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "go"
+          "transcription": {
+            "default": "go"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "go"
+          "transcription": {
+            "default": "go"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "up"
+          "transcription": {
+            "default": "up"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "RB",
             "function": "X"
           },
-          "transcription": "down",
+          "transcription": {
+            "default": "down"
+          },
           "stem": "down"
         },
         {
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "oh"
+          "transcription": {
+            "default": "oh"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "see"
+          "transcription": {
+            "default": "see"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -4953,9 +6527,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "um-hum"
+          "transcription": {
+            "default": "um-hum"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -4963,9 +6540,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "um-hum"
+          "transcription": {
+            "default": "um-hum"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -4973,27 +6553,36 @@
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "yeah"
+          "transcription": {
+            "default": "yeah"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "so"
+          "transcription": {
+            "default": "so"
+          }
         },
         {
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "uh"
+          "transcription": {
+            "default": "uh"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -5001,47 +6590,62 @@
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "so"
+          "transcription": {
+            "default": "so"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "we"
+          "transcription": {
+            "default": "we"
+          }
         },
         {
           "tags": {
             "Penn": "VBD",
             "function": "PRED"
           },
-          "transcription": "wanted",
+          "transcription": {
+            "default": "wanted"
+          },
           "stem": "want"
         },
         {
           "tags": {
             "Penn": "TO"
           },
-          "transcription": "to"
+          "transcription": {
+            "default": "to"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "get"
+          "transcription": {
+            "default": "get"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -5049,39 +6653,52 @@
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "all"
+          "transcription": {
+            "default": "all"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "new"
+          "transcription": {
+            "default": "new"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "stuff"
+          "transcription": {
+            "default": "stuff"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "EX"
           },
-          "transcription": "there"
+          "transcription": {
+            "default": "there"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "so"
+          "transcription": {
+            "default": "so"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -5089,9 +6706,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "um-hum"
+          "transcription": {
+            "default": "um-hum"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -5099,127 +6719,168 @@
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "yes"
+          "transcription": {
+            "default": "yes"
+          }
         },
         {
           "tags": {
             "Penn": "EX"
           },
-          "transcription": "there"
+          "transcription": {
+            "default": "there"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "'s"
+          "transcription": {
+            "default": "'s"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "problem",
+          "transcription": {
+            "default": "problem"
+          },
           "stem": "problem"
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "with"
+          "transcription": {
+            "default": "with"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "those"
+          "transcription": {
+            "default": "those"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "those"
+          "transcription": {
+            "default": "those"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "are"
+          "transcription": {
+            "default": "are"
+          }
         },
         {
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "uh"
+          "transcription": {
+            "default": "uh"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "they"
+          "transcription": {
+            "default": "they"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "usually"
+          "transcription": {
+            "default": "usually"
+          }
         },
         {
           "tags": {
             "Penn": "JJS"
           },
-          "transcription": "most"
+          "transcription": {
+            "default": "most"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN",
             "function": "REF"
           },
-          "transcription": "time",
+          "transcription": {
+            "default": "time"
+          },
           "stem": "time"
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "do"
+          "transcription": {
+            "default": "do"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "n't"
+          "transcription": {
+            "default": "n't"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "open"
+          "transcription": {
+            "default": "open"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "very"
+          "transcription": {
+            "default": "very"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "well"
+          "transcription": {
+            "default": "well"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -5227,133 +6888,176 @@
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "yeah"
+          "transcription": {
+            "default": "yeah"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "ours"
+          "transcription": {
+            "default": "ours"
+          }
         },
         {
           "tags": {
             "Penn": "VBD"
           },
-          "transcription": "did"
+          "transcription": {
+            "default": "did"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "n't"
+          "transcription": {
+            "default": "n't"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NNS",
             "function": "REF"
           },
-          "transcription": "ones",
+          "transcription": {
+            "default": "ones"
+          },
           "stem": "one"
         },
         {
           "tags": {
             "Penn": "WDT"
           },
-          "transcription": "that"
+          "transcription": {
+            "default": "that"
+          }
         },
         {
           "tags": {
             "Penn": "MD"
           },
-          "transcription": "would"
+          "transcription": {
+            "default": "would"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "open"
+          "transcription": {
+            "default": "open"
+          }
         },
         {
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "uh"
+          "transcription": {
+            "default": "uh"
+          }
         },
         {
           "tags": {
             "Penn": "MD"
           },
-          "transcription": "would"
+          "transcription": {
+            "default": "would"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "n't"
+          "transcription": {
+            "default": "n't"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "wanna"
+          "transcription": {
+            "default": "wanna"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "stay"
+          "transcription": {
+            "default": "stay"
+          }
         },
         {
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "open"
+          "transcription": {
+            "default": "open"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "they"
+          "transcription": {
+            "default": "they"
+          }
         },
         {
           "tags": {
             "Penn": "VBD",
             "function": "PRED"
           },
-          "transcription": "wanted",
+          "transcription": {
+            "default": "wanted"
+          },
           "stem": "want"
         },
         {
           "tags": {
             "Penn": "TO"
           },
-          "transcription": "to"
+          "transcription": {
+            "default": "to"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "slam"
+          "transcription": {
+            "default": "slam"
+          }
         },
         {
           "tags": {
             "Penn": "VBN"
           },
-          "transcription": "shut"
+          "transcription": {
+            "default": "shut"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -5361,9 +7065,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "uh-huh"
+          "transcription": {
+            "default": "uh-huh"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -5371,140 +7078,186 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "um-hum"
+          "transcription": {
+            "default": "um-hum"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "they"
+          "transcription": {
+            "default": "they"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "also"
+          "transcription": {
+            "default": "also"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "they"
+          "transcription": {
+            "default": "they"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "'re"
+          "transcription": {
+            "default": "'re"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "they"
+          "transcription": {
+            "default": "they"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "they"
+          "transcription": {
+            "default": "they"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "lot"
+          "transcription": {
+            "default": "lot"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "of"
+          "transcription": {
+            "default": "of"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "vibration"
+          "transcription": {
+            "default": "vibration"
+          }
         },
         {
           "tags": {
             "Penn": "CC"
           },
-          "transcription": "and"
+          "transcription": {
+            "default": "and"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "causes"
+          "transcription": {
+            "default": "causes"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "the"
+          "transcription": {
+            "default": "the"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "glass"
+          "transcription": {
+            "default": "glass"
+          }
         },
         {
           "tags": {
             "Penn": "TO"
           },
-          "transcription": "to"
+          "transcription": {
+            "default": "to"
+          }
         },
         {
           "tags": {
             "Penn": "VB"
           },
-          "transcription": "crack"
+          "transcription": {
+            "default": "crack"
+          }
         },
         {
           "tags": {
             "Penn": "PRP"
           },
-          "transcription": "it"
+          "transcription": {
+            "default": "it"
+          }
         },
         {
           "tags": {
             "Penn": "VBZ"
           },
-          "transcription": "'s"
+          "transcription": {
+            "default": "'s"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "a"
+          "transcription": {
+            "default": "a"
+          }
         },
         {
           "tags": {
             "Penn": "RB",
             "function": "X"
           },
-          "transcription": "never",
+          "transcription": {
+            "default": "never"
+          },
           "stem": "never"
         },
         {
@@ -5512,7 +7265,9 @@
             "Penn": "RB",
             "function": "X"
           },
-          "transcription": "never",
+          "transcription": {
+            "default": "never"
+          },
           "stem": "never"
         },
         {
@@ -5520,16 +7275,21 @@
             "Penn": "VBG",
             "function": "MOD"
           },
-          "transcription": "ending",
+          "transcription": {
+            "default": "ending"
+          },
           "stem": "end"
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "problem"
+          "transcription": {
+            "default": "problem"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -5537,9 +7297,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "um-hum"
+          "transcription": {
+            "default": "um-hum"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -5547,9 +7310,12 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "um-hum"
+          "transcription": {
+            "default": "um-hum"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -5557,9 +7323,12 @@
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "yep"
+          "transcription": {
+            "default": "yep"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -5567,75 +7336,100 @@
           "tags": {
             "Penn": "JJ"
           },
-          "transcription": "afraid"
+          "transcription": {
+            "default": "afraid"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "have"
+          "transcription": {
+            "default": "have"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "n't"
+          "transcription": {
+            "default": "n't"
+          }
         },
         {
           "tags": {
             "Penn": "UH"
           },
-          "transcription": "uh"
+          "transcription": {
+            "default": "uh"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         },
         {
           "tags": {
             "Penn": "VBP"
           },
-          "transcription": "have"
+          "transcription": {
+            "default": "have"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "n't"
+          "transcription": {
+            "default": "n't"
+          }
         },
         {
           "tags": {
             "Penn": "VBN"
           },
-          "transcription": "been"
+          "transcription": {
+            "default": "been"
+          }
         },
         {
           "tags": {
             "Penn": "IN"
           },
-          "transcription": "in"
+          "transcription": {
+            "default": "in"
+          }
         },
         {
           "tags": {
             "Penn": "DT"
           },
-          "transcription": "any"
+          "transcription": {
+            "default": "any"
+          }
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "really"
+          "transcription": {
+            "default": "really"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     },
     {
       "words": [
@@ -5643,35 +7437,46 @@
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "home"
+          "transcription": {
+            "default": "home"
+          }
         },
         {
           "tags": {
             "Penn": "NN"
           },
-          "transcription": "repair"
+          "transcription": {
+            "default": "repair"
+          }
         },
         {
           "tags": {
             "Penn": "NNS",
             "function": "REF"
           },
-          "transcription": "things",
+          "transcription": {
+            "default": "things"
+          },
           "stem": "thing"
         },
         {
           "tags": {
             "Penn": "RB"
           },
-          "transcription": "lately"
+          "transcription": {
+            "default": "lately"
+          }
         },
         {
           "tags": {
             "Penn": "NNP"
           },
-          "transcription": "i"
+          "transcription": {
+            "default": "i"
+          }
         }
-      ]
+      ],
+      "transcription": {}
     }
   ],
   "cid": "97ffa539-ed17-4b96-934f-865b5cfc80f2",
