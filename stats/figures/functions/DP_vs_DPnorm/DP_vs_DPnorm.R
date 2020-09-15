@@ -1,55 +1,85 @@
 library(ggtern)
-source("stats/scripts/load_data.R")
+
+source("stats/scripts/load_100.R")
 source("stats/scripts/plot_triangle.R")
 
-file_path_English <- "stats/data/English_archlexemes.tsv"
-data_English      <- load_data(file_path_English)
+data <- load_100()
 
-# English DP
-functions_English_DP <- 1 - data.frame(
-  data_English$dispersion_ref,
-  data_English$dispersion_pred,
-  data_English$dispersion_mod
-)
+data$dispersion_ref       = 1 - data$dispersion_ref
+data$dispersion_pred      = 1 - data$dispersion_pred
+data$dispersion_mod       = 1 - data$dispersion_mod
+data$dispersion_ref_norm  = 1 - data$dispersion_ref_norm
+data$dispersion_pred_norm = 1 - data$dispersion_pred_norm
+data$dispersion_mod_norm  = 1 - data$dispersion_mod_norm
 
-# English DPnorm
-functions_English_DPnorm <- 1 - data.frame(
-  data_English$dispersion_ref_norm,
-  data_English$dispersion_pred_norm,
-  data_English$dispersion_mod_norm
-)
+attach(data)
 
-file_path_Nuuchahnulth <- "stats/data/Nuuchahnulth_archlexemes.tsv"
-data_Nuuchahnulth      <- load_data(file_path_Nuuchahnulth)
-data_Nuuchahnulth      <- data_Nuuchahnulth[which(data_Nuuchahnulth$frequency > 1), ]
+DP <- ggtern(data, aes(
+  dispersion_ref,
+  dispersion_pred,
+  dispersion_mod,
+  color = language
+)) +
+  theme_minimal() +
+  theme_hidelabels() +
+  theme(
+    tern.axis.title.L = element_text(hjust = -0.25),
+    tern.axis.title.R = element_text(hjust = 1.25)
+  ) +
+  Tlab("Predication") +
+  Llab("Reference") +
+  Rlab("Modification") +
+  tern_limits(T = 1.05, L = 1.05, R = 1.05) +
+  geom_polygon(
+    data = data.frame(
+      dispersion_ref  = c(1, 0, 0),
+      dispersion_pred = c(0, 1, 0),
+      dispersion_mod  = c(0, 0, 1)
+    ),
+    alpha = 0,
+    color = "#BBBBBB",
+    size  = 0.5
+  ) +
+  geom_point(show.legend = FALSE) +
+  facet_grid(rows = vars(language))
 
-# Nuuchahnulth DP
-functions_Nuuchahnulth_DP <- 1 - data.frame(
-  data_Nuuchahnulth$dispersion_ref,
-  data_Nuuchahnulth$dispersion_pred,
-  data_Nuuchahnulth$dispersion_mod
-)
-
-# Nuuchahnulth DPnorm
-functions_Nuuchahnulth_DPnorm <- 1 - data.frame(
-  data_Nuuchahnulth$dispersion_ref_norm,
-  data_Nuuchahnulth$dispersion_pred_norm,
-  data_Nuuchahnulth$dispersion_mod_norm
-)
-
-plot_English_DP          <- plot_triangle(functions_English_DP, "English (DP)")
-plot_English_DPnorm      <- plot_triangle(functions_English_DPnorm, "English (DPnorm)")
-plot_Nuuchahnulth_DP     <- plot_triangle(functions_Nuuchahnulth_DP, "Nuuchahnulth (DP)")
-plot_Nuuchahnulth_DPnorm <- plot_triangle(functions_Nuuchahnulth_DPnorm, "Nuuchahnulth (DPnorm)")
+DPnorm <- ggtern(data, aes(
+  dispersion_ref_norm,
+  dispersion_pred_norm,
+  dispersion_mod_norm,
+  color = language
+)) +
+  theme_minimal() +
+  theme_hidelabels() +
+  theme(
+    tern.axis.title.L = element_text(hjust = -0.25),
+    tern.axis.title.R = element_text(hjust = 1.25)
+  ) +
+  Tlab("Predication") +
+  Llab("Reference") +
+  Rlab("Modification") +
+  tern_limits(T = 1.05, L = 1.05, R = 1.05) +
+  geom_polygon(
+    data = data.frame(
+      dispersion_ref_norm  = c(1, 0, 0),
+      dispersion_pred_norm = c(0, 1, 0),
+      dispersion_mod_norm  = c(0, 0, 1)
+    ),
+    alpha = 0,
+    color = "#BBBBBB",
+    size  = 0.5
+  ) +
+  geom_point(show.legend = FALSE) +
+  facet_grid(rows = vars(language))
 
 plots <- ggtern::grid.arrange(
-  plot_English_DP,
-  plot_English_DPnorm,
-  plot_Nuuchahnulth_DP,
-  plot_Nuuchahnulth_DPnorm,
+  DP,
+  DPnorm,
   ncol = 2,
-  nrow = 2
+  nrow = 1
 )
+
+plots
 
 ggsave(
   "stats/figures/functions/DP_vs_DPnorm/comparison.png",
