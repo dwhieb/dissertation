@@ -1,35 +1,43 @@
 library(ggtern)
 
-source("stats/scripts/load_data.R")
-source("stats/scripts/plot_triangle.R")
+source("stats/scripts/load_100.R")
 
-file_path_English <- "stats/data/English_archlexemes.tsv"
-data_English      <- load_data(file_path_English)
+data <- load_100()
 
-functions_English <- 1 - data.frame(
-  data_English$dispersion_ref_broad,
-  data_English$dispersion_pred_broad,
-  data_English$dispersion_mod
-)
+data$dispersion_ref  = 1 - data$dispersion_ref
+data$dispersion_pred = 1 - data$dispersion_pred
+data$dispersion_mod  = 1 - data$dispersion_mod
 
-plot_English <- plot_triangle(functions_English, "English (broad)", "Deviation of Proportions (DP)")
-
-file_path_Nuuchahnulth <- "stats/data/Nuuchahnulth_archlexemes.tsv"
-data_Nuuchahnulth      <- load_data(file_path_Nuuchahnulth)
-
-functions_Nuuchahnulth <- 1 - data.frame(
-  data_Nuuchahnulth$dispersion_ref,
-  data_Nuuchahnulth$dispersion_pred,
-  data_Nuuchahnulth$dispersion_mod
-)
-
-plot_Nuuchahnulth <- plot_triangle(functions_Nuuchahnulth, "Nuuchahnulth", "Deviation of Proportions (DP)")
-
-plots <- ggtern::grid.arrange(plot_English, plot_Nuuchahnulth, ncol = 2)
+plot <- ggtern(data, aes(
+  dispersion_ref,
+  dispersion_pred,
+  dispersion_mod,
+  color = language
+)) +
+  theme_minimal() +
+  theme_hidelabels() +
+  theme(
+    tern.axis.title.L = element_text(hjust = -0.25),
+    tern.axis.title.R = element_text(hjust = 1.25)
+  ) +
+  Tlab("Predication") +
+  Llab("Reference") +
+  Rlab("Modification") +
+  tern_limits(T = 1.05, L = 1.05, R = 1.05) +
+  geom_polygon(
+    data = data.frame(
+      dispersion_ref  = c(1, 0, 0),
+      dispersion_pred = c(0, 1, 0),
+      dispersion_mod  = c(0, 0, 1)
+    ),
+    alpha = 0,
+    color = "#BBBBBB",
+    size  = 0.5
+  ) +
+  geom_point(show.legend = FALSE) +
+  facet_grid(cols = vars(language))
 
 ggsave(
   "stats/figures/functions/English_broad_vs_Nuuchahnulth/comparison_DP.png",
-  plots,
-  height = 10,
-  width = 10,
+  plot
 )

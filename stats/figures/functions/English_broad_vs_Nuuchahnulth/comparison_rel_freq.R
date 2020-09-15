@@ -1,35 +1,43 @@
 library(ggtern)
 
-source("stats/scripts/load_data.R")
-source("stats/scripts/plot_triangle.R")
+source("stats/scripts/load_100.R")
 
-file_path_English <- "stats/data/English_archlexemes.tsv"
-data_English      <- load_data(file_path_English)
+data <- load_100()
 
-functions_English <- data.frame(
-  data_English$ref_rel_broad,
-  data_English$pred_rel_broad,
-  data_English$mod_rel
-)
+data$ref_rel  = data$ref_rel
+data$pred_rel = data$pred_rel
+data$mod_rel  = data$mod_rel
 
-plot_English <- plot_triangle(functions_English, "English (broad)", "Relative Frequencies")
-
-file_path_Nuuchahnulth <- "stats/data/Nuuchahnulth_archlexemes.tsv"
-data_Nuuchahnulth      <- load_data(file_path_Nuuchahnulth)
-
-functions_Nuuchahnulth <- data.frame(
- data_Nuuchahnulth$ref_rel,
- data_Nuuchahnulth$pred_rel,
- data_Nuuchahnulth$mod_rel
-)
-
-plot_Nuuchahnulth <- plot_triangle(functions_Nuuchahnulth, "Nuuchahnulth", "Relative Frequencies")
-
-plots <- ggtern::grid.arrange(plot_English, plot_Nuuchahnulth, ncol = 2)
+plot <- ggtern(data, aes(
+  ref_rel,
+  pred_rel,
+  mod_rel,
+  color = language
+)) +
+  theme_minimal() +
+  theme_hidelabels() +
+  theme(
+    tern.axis.title.L = element_text(hjust = -0.25),
+    tern.axis.title.R = element_text(hjust = 1.25)
+  ) +
+  Tlab("Predication") +
+  Llab("Reference") +
+  Rlab("Modification") +
+  tern_limits(T = 1.05, L = 1.05, R = 1.05) +
+  geom_polygon(
+    data = data.frame(
+      ref_rel  = c(1, 0, 0),
+      pred_rel = c(0, 1, 0),
+      mod_rel  = c(0, 0, 1)
+    ),
+    alpha = 0,
+    color = "#BBBBBB",
+    size  = 0.5
+  ) +
+  geom_point(show.legend = FALSE) +
+  facet_grid(cols = vars(language))
 
 ggsave(
- "stats/figures/functions/English_broad_vs_Nuuchahnulth/comparison_rel_freq.png",
- plots,
- height = 10,
- width = 10,
+  "stats/figures/functions/English_broad_vs_Nuuchahnulth/comparison_rel_freq.png",
+  plot
 )
