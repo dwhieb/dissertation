@@ -6,8 +6,8 @@ file_path_English <- "stats/data/English_archlexemes.tsv"
 data_English      <- load_data(file_path_English)
 
 functions_English <- 1 - data.frame(
-  data_English$dispersion_ref,
-  data_English$dispersion_pred,
+  data_English$dispersion_ref_broad,
+  data_English$dispersion_pred_broad,
   data_English$dispersion_mod
 )
 
@@ -17,8 +17,8 @@ file_path_Nuuchahnulth <- "stats/data/Nuuchahnulth_archlexemes.tsv"
 data_Nuuchahnulth      <- load_data(file_path_Nuuchahnulth)
 
 functions_Nuuchahnulth <- 1 - data.frame(
-  data_Nuuchahnulth$dispersion_ref,
-  data_Nuuchahnulth$dispersion_pred,
+  data_Nuuchahnulth$dispersion_ref_broad,
+  data_Nuuchahnulth$dispersion_pred_broad,
   data_Nuuchahnulth$dispersion_mod
 )
 

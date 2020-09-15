@@ -1,11 +1,9 @@
 library(ggtern)
 
-source("stats/scripts/load_data.R")
+source("stats/scripts/load_Nuuchahnulth_100.R")
 source("stats/scripts/plot_triangle.R")
 
-file_path <- "stats/data/Nuuchahnulth_archlexemes.tsv"
-data      <- load_data(file_path)
-data      <- data[which(data$frequency > 1), ]
+data <- load_Nuuchahnulth_100()
 
 rel_freq <- data.frame(
   data$ref_rel,

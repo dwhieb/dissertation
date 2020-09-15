@@ -4,14 +4,14 @@ source("stats/scripts/load_100.R")
 
 data <- load_100()
 
-data$ref_rel  = data$ref_rel
-data$pred_rel = data$pred_rel
-data$mod_rel  = data$mod_rel
+data$dispersion_ref  = 1 - data$dispersion_ref
+data$dispersion_pred = 1 - data$dispersion_pred
+data$dispersion_mod  = 1 - data$dispersion_mod
 
 plot <- ggtern(data, aes(
-  ref_rel,
-  pred_rel,
-  mod_rel,
+  dispersion_ref,
+  dispersion_pred,
+  dispersion_mod,
   color = language
 )) +
   theme_minimal() +
@@ -26,9 +26,9 @@ plot <- ggtern(data, aes(
   tern_limits(T = 1.05, L = 1.05, R = 1.05) +
   geom_polygon(
     data = data.frame(
-      ref_rel  = c(1, 0, 0),
-      pred_rel = c(0, 1, 0),
-      mod_rel  = c(0, 0, 1)
+      dispersion_ref  = c(1, 0, 0),
+      dispersion_pred = c(0, 1, 0),
+      dispersion_mod  = c(0, 0, 1)
     ),
     alpha = 0,
     color = "#BBBBBB",
@@ -38,6 +38,6 @@ plot <- ggtern(data, aes(
   facet_grid(cols = vars(language))
 
 ggsave(
-  "stats/figures/functions/English_broad_vs_Nuuchahnulth/comparison_rel_freq.png",
+  "stats/figures/functions/English_strict_vs_Nuuchahnulth/comparison_DP.png",
   plot
 )
