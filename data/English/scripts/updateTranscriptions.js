@@ -21,17 +21,7 @@ async function updateTranscriptions(filePath) {
 
   const text = await readJSON(filePath);
 
-  text.utterances.forEach(u => {
-
-    u.transcription = {};
-
-    u.words.forEach(w => {
-
-      w.transcription = { default: w.transcription };
-
-    });
-
-  });
+  text.type = 'Text';
 
   await writeJSON(filePath, text, { encoding: `utf8`, spaces: 2 });
 
