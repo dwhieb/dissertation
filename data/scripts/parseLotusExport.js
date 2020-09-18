@@ -36,8 +36,6 @@ void async function parseLotusExport() {
 
   const exportData = await readJSON(exportFilePath, `utf8`);
 
-  console.log(exportData);
-
   const lotusTexts = exportData
   .filter(item => item.type === `Text`)
   .filter(item => item.language.cid === `2`);
