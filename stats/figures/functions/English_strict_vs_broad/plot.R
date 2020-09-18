@@ -3,7 +3,7 @@ library(ggtern)
 source("stats/scripts/load_data.R")
 source("stats/scripts/plot_triangle.R")
 
-file_path <- "stats/data/English_archlexemes.tsv"
+file_path <- "stats/data/English.tsv"
 data      <- load_data(file_path)
 
 functions_broad <- 1 - data.frame(
@@ -23,8 +23,10 @@ plot_strict <- plot_triangle(functions_strict, "Strict", "Deviation of Proportio
 
 plots <- ggtern::grid.arrange(plot_broad, plot_strict, ncol = 2)
 
+plots
+
 ggsave(
-  "stats/figures/functions/English_strict_vs_broad/DP.png",
+  "stats/figures/functions/English_strict_vs_broad/plot.png",
   plots,
   height = 10,
   width = 10,
