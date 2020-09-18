@@ -6,7 +6,7 @@
   max-nested-callbacks,
 */
 
-import fs         from 'fs';
+import fs         from 'fs-extra';
 import path       from 'path';
 import processDir from '../../../scripts/utilities/processDir.js';
 
@@ -48,7 +48,7 @@ void async function lemmatizeTexts() {
         if (!pragmaticFunction) return;
         if (!whitelist.includes(pragmaticFunction)) return;
 
-        const wordform = w.transcription.default;
+        const wordform = w.transcription.default.toLowerCase();
         const lexeme   = wordforms[wordform];
 
         if (!lexeme) return;
