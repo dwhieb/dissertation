@@ -89,13 +89,10 @@ scatterplot <- ggplot(data, aes(
     show.legend = FALSE,
     size        = 0.75
   ) +
-  geom_rug(
-    show.legend = FALSE
-  ) +
   xlim(0, 1) +
   ylim(0, 1) +
   facet_grid(cols = vars(language))
-  
+
 boxplot <- ggplot(data, aes(
   x    = flexibility,
   fill = language
@@ -127,7 +124,7 @@ grid <- plot_grid(
   align = "v",
   ncol  = 1,
   nrow  = 3,
-  rel_heights = c(1, 3.5, 1)
+  rel_heights = c(1, 4, 1)
 )
 
 grid
