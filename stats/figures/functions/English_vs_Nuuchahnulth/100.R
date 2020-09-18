@@ -37,7 +37,9 @@ plot <- ggtern(data, aes(
   geom_point(show.legend = FALSE) +
   facet_grid(cols = vars(language))
 
+plot
+
 ggsave(
-  "stats/figures/functions/English_strict_vs_Nuuchahnulth/comparison_DP.png",
+  "stats/figures/functions/English_vs_Nuuchahnulth/100.png",
   plot
 )
