@@ -1,13 +1,12 @@
 library(cowplot)
 library(ggplot2)
 
-source("stats/scripts/load_100.R")
+source("stats/scripts/load_small.R")
 
-data <- load_100()
-data <- data[which(data$flexibility != "NaN"), ]
+data <- load_small()
 
-data_Eng <- data[which(language == "English"), ]
-data_Nuu <- data[which(language == "Nuuchahnulth"), ]
+data_Eng <- data[which(data$language == "English"), ]
+data_Nuu <- data[which(data$language == "Nuuchahnulth"), ]
 
 attach(data)
 
@@ -40,6 +39,7 @@ histogram <- ggplot(data, aes(
     show.legend = FALSE
   ) +
   xlim(0, 1) +
+  ylim(0, 10) +
   facet_grid(cols = vars(language))
 
 scatterplot <- ggplot(data, aes(
@@ -60,12 +60,6 @@ scatterplot <- ggplot(data, aes(
     show.legend = FALSE,
     size = 1
   ) +
-  geom_rug(
-    show.legend = FALSE
-  ) +
-  geom_density2d(
-    show.legend = FALSE
-  ) +
   geom_abline(
     aes(
       color     = language,
@@ -77,7 +71,6 @@ scatterplot <- ggplot(data, aes(
     size        = 0.75
   ) +
   xlim(0, 1) +
-  # clip 9 values for readability
   ylim(0, 5) +
   facet_grid(cols = vars(language))
 
@@ -118,6 +111,6 @@ grid <- plot_grid(
 grid
 
 ggsave(
-  "stats/figures/frequency_vs_flexibility/comparison.png",
+  "stats/figures/frequency_vs_flexibility/small.png",
   grid
 )
