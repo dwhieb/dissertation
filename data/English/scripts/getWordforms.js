@@ -8,7 +8,7 @@ import processDir from '../../../scripts/utilities/processDir.js';
 
 const { readJSON, writeFile } = fs;
 
-const sampleDir = `data/English/sample`;
+const subcorpusDir = `data/English/subcorpus`;
 
 const badCharsRegExp = /[^A-Za-z]/u;
 
@@ -36,6 +36,9 @@ async function getWordforms(filePath) {
       const wordform = w.transcription.default.toLowerCase();
 
       if (hasBadChars(wordform)) return;
+      if (!w.tags?.function) return;
+
+      if (wordform === `a`) console.log(u.words.map(w => w.transcription.default).join(` `));
 
       wordforms.add(wordform);
 
@@ -50,10 +53,10 @@ async function saveWordforms() {
   const sorted = Array.from(wordforms.values()).sort();
   const text   = sorted.join(`\r\n`);
 
-  await writeFile(`data/English/wordforms.txt`, text, `utf8`);
+  await writeFile(`data/English/subcorpus_wordforms.txt`, text, `utf8`);
 
 }
 
-processDir(sampleDir, getWordforms, ignore)
+processDir(subcorpusDir, getWordforms, ignore)
 .then(saveWordforms)
 .catch(console.error);
