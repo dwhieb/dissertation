@@ -2,18 +2,14 @@
   max-nested-callbacks,
 */
 
-import { fileURLToPath } from 'url';
 import fs                from 'fs-extra';
 import mergeTexts        from './mergeTexts.js';
-import path              from 'path';
 import processDir        from '../../../scripts/utilities/processDir.js';
 import { Text }          from '@digitallinguistics/javascript/models';
 
-const currentDir = path.dirname(fileURLToPath(import.meta.url));
 const { readJSON, writeJSON } = fs;
 
-const [,, exportFilePath] = process.argv;
-const textsDir            = path.join(currentDir, `../texts`);
+const [,, exportFilePath, textsDir] = process.argv;
 
 /**
  * Parses an export file from the Lotus app, merging it with the existing Nuuchahnulth texts.
@@ -22,7 +18,11 @@ const textsDir            = path.join(currentDir, `../texts`);
 void async function parseLotusExport() {
 
   if (!exportFilePath) {
-    throw new Error(`Please provide the path to the Lotus export file.`);
+    throw new Error(`Please provide the path to the Lotus export file as the first argument.`);
+  }
+
+  if (!textsDir) {
+    throw new Error(`Please provide the path to the directory of texts to update as the second argument.`);
   }
 
   const exportData = await readJSON(exportFilePath, `utf8`);
