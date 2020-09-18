@@ -1,31 +1,9 @@
-source("stats/scripts/load_100.R")
+source("stats/scripts/load_all.R")
 
 library(ggplot2)
 library(cowplot)
 
-data <- load_100()
-
-# simple visualization first
-
-par(mfrow = c(2, 1))
-
-boxplot(
-  data$dispersion[which(data$language == "English")],
-  horizontal = TRUE,
-  main       = "English",
-  notch      = TRUE,
-  ylim       = c(0, 1)
-)
-
-boxplot(
-  data$dispersion[which(data$language == "Nuuchahnulth")],
-  horizontal = TRUE,
-  main       = "Nuuchahnulth",
-  notch      = TRUE,
-  ylim       = c(0, 1)
-)
-
-# ggplot visualization
+data <- load_all()
 
 boxplot <- ggplot(data, aes(
   x    = dispersion,
@@ -54,6 +32,6 @@ boxplot <- ggplot(data, aes(
 boxplot
 
 ggsave(
-  "stats/figures/dispersion/100.png",
+  "stats/figures/dispersion/all.png",
   boxplot
 )
