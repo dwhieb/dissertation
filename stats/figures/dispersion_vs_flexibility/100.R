@@ -11,6 +11,13 @@ Nuu <- data[which(data$language == "Nuuchahnulth"), ]
 Eng_nonzero <- Eng[which(Eng$flexibility > 0), ]
 Nuu_nonzero <- Nuu[which(Nuu$flexibility > 0), ]
 
+# simple visualization first
+
+par(mfrow = c(1, 1))
+plot(Eng$dispersion ~ Eng$flexibility)
+
+# ggplot visualization
+
 model_Eng <- lm(Eng$flexibility ~ Eng$dispersion)
 model_Nuu <- lm(Nuu$flexibility ~ Nuu$dispersion)
 
@@ -133,4 +140,3 @@ ggsave(
   "stats/figures/dispersion_vs_flexibility/100.png",
   grid
 )
-

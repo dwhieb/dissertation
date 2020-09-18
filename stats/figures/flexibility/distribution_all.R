@@ -1,13 +1,17 @@
 library(cowplot)
 library(ggplot2)
 
-source("stats/scripts/load_100.R")
+source("stats/scripts/load_all.R")
 
-data <- load_100()
+data <- load_all()
+data <- data[which(data$language == "English"), ]
 
 bin_width <- 0.05 # results in 20 bins
 
 histogram <- ggplot(data, aes(x = flexibility)) +
+  labs(
+    title = "Distribution of Flexibility Ratings (English, 100 archlexemes)"
+  ) +
   theme(
     axis.text.x  = element_blank(),
     axis.title.x = element_blank(),
@@ -37,8 +41,7 @@ histogram <- ggplot(data, aes(x = flexibility)) +
     size        = 1,
     show.legend = FALSE
   ) +
-  xlim(-0.1, 1) +
-  facet_grid(cols = vars(language))
+  xlim(0, 1)
 
 boxplot <- ggplot(data, aes(x = flexibility)) +
   theme(
@@ -63,9 +66,7 @@ boxplot <- ggplot(data, aes(x = flexibility)) +
     size        = 1
   ) +
   geom_rug(length = unit(0.2, "cm")) +
-  xlim(-0.1, 1) +
-  ylim(-0.5, 0.5) +
-  facet_grid(cols = vars(language))
+  xlim(0, 1)
 
 grid <- plot_grid(
   histogram,
@@ -79,6 +80,6 @@ grid <- plot_grid(
 grid
 
 ggsave(
-  "stats/figures/flexibility/distribution.png",
+  "stats/figures/flexibility/distribution_all.png",
   grid
 )
