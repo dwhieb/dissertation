@@ -1,26 +1,37 @@
-library(cowplot)
-library(ggplot2)
-
 source("stats/scripts/load_100.R")
+
+library(ggplot2)
+library(cowplot)
 
 data <- load_100()
 
-attach(data)
+Eng <- data[which(data$language == "English"), ]
+Nuu <- data[which(data$language == "Nuuchahnulth"), ]
 
-model_Eng <- lm(data_Eng$flexibility ~ data_Eng$dispersion)
-model_Nuu <- lm(data_Nuu$flexibility ~ data_Nuu$dispersion)
+Eng_nonzero <- Eng[which(Eng$flexibility > 0), ]
+Nuu_nonzero <- Nuu[which(Nuu$flexibility > 0), ]
+
+model_Eng <- lm(Eng$flexibility ~ Eng$dispersion)
+model_Nuu <- lm(Nuu$flexibility ~ Nuu$dispersion)
+
+model_Eng_nonzero <- lm(Eng_nonzero$flexibility ~ Eng_nonzero$dispersion)
+model_Nuu_nonzero <- lm(Nuu_nonzero$flexibility ~ Nuu_nonzero$dispersion)
 
 models <- data.frame(
-  c("English", "Nuuchahnulth"),
-  c(model_Eng$coefficients[1], model_Nuu$coefficients[1]),
-  c(model_Eng$coefficients[2], model_Nuu$coefficients[2])
+  language   = c("English", "Nuuchahnulth"),
+  intercepts = c(model_Eng$coefficients[1], model_Nuu$coefficients[1]),
+  slopes     = c(model_Eng$coefficients[2], model_Nuu$coefficients[2])
 )
 
-colnames(models) <- c("language", "intercepts", "slopes")
+models_nonzero <- data.frame(
+  language   = c("English", "Nuuchahnulth"),
+  intercepts = c(model_Eng_nonzero$coefficients[1], model_Nuu_nonzero$coefficients[1]),
+  slopes     = c(model_Eng_nonzero$coefficients[2], model_Nuu_nonzero$coefficients[2])
+)
 
 histogram <- ggplot(data, aes(
-  x     = flexibility,
-  fill  = language
+  x    = flexibility,
+  fill = language
 )) +
   theme_minimal() +
   theme(
@@ -31,11 +42,12 @@ histogram <- ggplot(data, aes(
     plot.margin      = margin(0.5, 0.5, 0, 0.5, "cm")
   ) +
   geom_histogram(
-    binwidth    = 0.05,
+    bins        = 20,
     color       = "black",
     show.legend = FALSE
   ) +
   xlim(0, 1) +
+  ylim(0, 15) +
   facet_grid(cols = vars(language))
 
 scatterplot <- ggplot(data, aes(
@@ -56,12 +68,6 @@ scatterplot <- ggplot(data, aes(
     show.legend = FALSE,
     size = 1
   ) +
-  geom_rug(
-    show.legend = FALSE
-  ) +
-  geom_density2d(
-    show.legend = FALSE
-  ) +
   geom_abline(
     aes(
       color     = language,
@@ -72,10 +78,24 @@ scatterplot <- ggplot(data, aes(
     show.legend = FALSE,
     size        = 0.75
   ) +
+  geom_abline(
+    aes(
+      color     = language,
+      intercept = intercepts,
+      slope     = slopes
+    ),
+    data        = models_nonzero,
+    linetype    = "dashed",
+    show.legend = FALSE,
+    size        = 0.75
+  ) +
+  geom_rug(
+    show.legend = FALSE
+  ) +
   xlim(0, 1) +
   ylim(0, 1) +
   facet_grid(cols = vars(language))
-
+  
 boxplot <- ggplot(data, aes(
   x    = flexibility,
   fill = language
@@ -113,6 +133,7 @@ grid <- plot_grid(
 grid
 
 ggsave(
-  "stats/figures/dispersion_vs_flexibility/comparison.png",
+  "stats/figures/dispersion_vs_flexibility/100.png",
   grid
 )
+
