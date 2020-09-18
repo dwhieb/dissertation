@@ -8,12 +8,19 @@ export default function mergeTexts(oldText, newText) {
   oldText.utterances = newText.utterances.map((newUtterance, u) => {
 
     const oldUtterance = oldText.utterances[u];
+
     if (!oldUtterance.words) return newUtterance;
 
-    oldUtterance.words.forEach((oldWord, w) => {
-      const newWord = newUtterance.words[w];
+    newUtterance.words.forEach((newWord, w) => {
+
+      const oldWord = oldUtterance.words[w];
+
       oldWord.stem = newWord.stem;
-      newWord.tags.forEach((value, category) => oldWord.tags.set(category, value));
+
+      Object.entries(newWord.tags).forEach(([category, value]) => {
+        oldWord.tags[category] = value;
+      });
+
     });
 
     return oldUtterance;

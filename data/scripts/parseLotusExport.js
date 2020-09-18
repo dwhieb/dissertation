@@ -36,15 +36,16 @@ void async function parseLotusExport() {
 
   const exportData = await readJSON(exportFilePath, `utf8`);
 
+  console.log(exportData);
+
   const lotusTexts = exportData
   .filter(item => item.type === `Text`)
-  .map(text => new Text(text));
+  .filter(item => item.language.cid === `2`);
 
   await processDir(textsDir, async filePath => {
 
-    const dissertationTextData = await readJSON(filePath, `utf8`);
-    const dissertationText     = new Text(dissertationTextData);
-    const lotusText            = lotusTexts.find(text => text.cid === dissertationText.cid);
+    const dissertationText = await readJSON(filePath, `utf8`);
+    const lotusText        = lotusTexts.find(text => text.cid === dissertationText.cid);
 
     if (!lotusText) return;
 
