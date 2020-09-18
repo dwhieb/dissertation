@@ -31,8 +31,8 @@ function hasBadChars(string) {
  * @return {Boolean}
  */
 export default function isGoodToken({ tags: { Penn }, transcription }) {
-  if (blacklist.includes(transcription)) return false;
-  if (hasBadChars(transcription)) return false;
+  if (blacklist.includes(transcription.default)) return false;
+  if (hasBadChars(transcription.default)) return false;
   if (nonLexicalTags.includes(Penn)) return false;
   return true;
 }

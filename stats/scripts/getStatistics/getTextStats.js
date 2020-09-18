@@ -15,7 +15,7 @@ export default async function getTextStats(filePath, wordFilter, unit) {
 
   const { utterances }    = await readJSON(filePath);
   const lexemeFrequencies = new Map;
-  let   textSize              = 0;
+  let   textSize          = 0;
 
   utterances.forEach(({ words }) => {
 
