@@ -1,40 +1,28 @@
-data <- data.frame(
-  ref       = c(1),
-  pred      = c(1),
-  mod       = c(1),
-  frequency = c(3),
-  entropy   = c(1)
-)
+file_path <- "stats/tests/simulated.csv"
+log3      <- log(3)
 
-log3 <- log(3)
+log_with_0 <- function(x) {
+  return(ifelse(x == 0, 0, log(x)))
+}
 
 calculate_entropy <- function(values) {
   percentages <- values / sum(values)
-  return(-sum(percentages * log(percentages)) / log3)
+  return(-sum(percentages * log_with_0(percentages)) / log3)
 }
 
-# frequency loop
-for (f in 1:100) {
+data <- read.csv(
+  file_path,
+  header = TRUE
+)
+
+for (i in 1:length(data$freq)) {
   
-  # observations loop
-  for (o in 1:100) {
-    
-    values <- runif(f)
-    
-    observations <- cut(
-      values,
-      breaks = c(0, 0.333, 0.666, 1),
-      include.lowest = TRUE,
-      labels = c("ref", "pred", "mod")
-    )
-    
-    counts  <- data.frame(table(observations))
-    entropy <- calculate_entropy(1 + counts$Freq)
-    lexeme  <- c(counts$Freq, f, entropy)
-    data    <- rbind(data, lexeme)
-    
-  }
-
+  data$entropy[i] = calculate_entropy(c(data$ref[i], data$pred[i], data$mod[i]))
+  
 }
 
-plot(data$frequency ~ data$entropy)
+write.csv(
+  data,
+  "stats/tests/simulated_entropy.csv",
+  row.names = FALSE
+)
