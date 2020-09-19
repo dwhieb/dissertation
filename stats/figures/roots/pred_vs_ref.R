@@ -45,6 +45,6 @@ grid <- plot_grid(
 grid
 
 ggsave(
-  "stats/figures/roots/ref_vs_pred.png",
+  "stats/figures/roots/pred_vs_ref.png",
   grid
 )

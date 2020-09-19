@@ -133,4 +133,3 @@ ggsave(
   "stats/figures/dispersion_vs_flexibility/small.png",
   grid
 )
-
