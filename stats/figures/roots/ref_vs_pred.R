@@ -1,5 +1,6 @@
 source("stats/scripts/load_data.R")
 
+library(cowplot)
 library(ggplot2)
 
 data_path_roots <- "stats/data/Nuuchahnulth_roots.tsv"
