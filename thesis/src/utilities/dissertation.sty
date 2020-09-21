@@ -139,13 +139,13 @@
 %
 \DeclareTextFontCommand{\inlinetitle}{\itshape}
 
-% \tx
+% \txn
 %
-% For inline mentions of language, i.e. inline examples. \tx is short for 'transcription', since every example / mention is a transcription of some piece of language. NB: This command substitutes non-breaking hyphens for regular hyphens
+% For inline mentions of language, i.e. inline examples. \txn is short for 'transcription', since every example / mention is a transcription of some piece of language. NB: This command substitutes non-breaking hyphens for regular hyphens
 %
 % Example:
 %
-% The English Participle \tx{-ing} does is, obviously, specific to English.
+% The English Participle \txn{-ing} does is, obviously, specific to English.
 %
-% \newcommand{\tx}[1]{\StrSubstitute{\textit{#1}}{-}{‑}}
-\newcommand{\tx}[1]{\textit{\StrSubstitute{#1}{-}{‑}}}
+% \newcommand{\txn}[1]{\StrSubstitute{\textit{#1}}{-}{‑}}
+\newcommand{\txn}[1]{\textit{\StrSubstitute{#1}{-}{‑}}}
