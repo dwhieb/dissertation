@@ -4,19 +4,19 @@
 % PACKAGES
 
 \usepackage[
-  firstpage=true,
-  pages=some
+  firstpage = true,
+  pages     = some
 ]{background}
 
 % NB: This line needs to come before the todonotes package is loaded
 \setlength{\marginparwidth}{1in}
 
 \usepackage[
-  backgroundcolor=cyan,
+  backgroundcolor = cyan,
   colorinlistoftodos,
-  linecolor=cyan,
+  linecolor = cyan,
   obeyDraft,
-  textsize=footnotesize
+  textsize = footnotesize
 ]{todonotes}
 
 % NB: This needs to be declared *after* the todonotes package
@@ -40,10 +40,10 @@
 \newcommand{\addcite}[1]{%
   \hl{(CITE: #1)}%
   \todo[
-    caption={citation},
-    color=magenta,
+    caption = {citation},
+    color   = magenta,
     noline,
-    size=\tiny
+    size    = \tiny
   ]{}%
 }
 
@@ -70,10 +70,10 @@
 \newcommand{\addref}[1]{%
   \textcolor{blue}{#1}%
   \todo[
-    caption={cross reference},
-    color=blue,
+    caption = {cross reference},
+    color   = blue,
     noline,
-    size=\tiny
+    size    = \tiny
   ]{}%
 }
 
