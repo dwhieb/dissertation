@@ -2,7 +2,7 @@
  * Generates the List of Abbreviations in the frontmatter
  */
 
-import { compare }       from '../../scripts/utilities/compare.js';
+import compare           from '../../../scripts/utilities/compare.js';
 import createSpinner     from 'ora';
 import { fileURLToPath } from 'url';
 import fs                from 'fs';
