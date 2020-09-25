@@ -29,16 +29,16 @@ export default async function getTextStats(filePath, wordFilter, unit) {
 
       if (word.stem === `NA`) return;
 
-      let prop;
+      let key;
 
       switch (unit) {
-        case `wordform`: prop = `transcription`; break;
-        case `lexeme`: prop = `stem`; break;
-        case `root`: prop = `root`; break;
+        case `wordform`: key = word.transcription.default; break;
+        case `lexeme`: key = word.stem; break;
+        case `root`: key = word.root; break;
         default:
       }
 
-      const key = word[prop]?.toLowerCase();
+      key = key.toLowerCase();
 
       if (!key) return;
 
