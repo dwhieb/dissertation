@@ -1,37 +1,32 @@
 /**
- * Populates the TeX \version variable in version.tex
+ * Populates the TeX \version variable in constants.tex
  */
 
-import { createRequire } from 'module';
-import createSpinner     from 'ora';
 import { fileURLToPath } from 'url';
-import fs                from 'fs';
+import fs                from 'fs-extra';
 import path              from 'path';
 
+const {
+  readFile,
+  readJSON,
+  writeFile,
+} = fs;
+
 const currentDir    = path.dirname(fileURLToPath(import.meta.url));
-const require       = createRequire(import.meta.url);
-const { version }   = require(`../../../package.json`);
-
-const { writeFile } = fs.promises;
-
+const constantsPath = path.join(currentDir, `../../src/utilities/constants.tex`);
+const packagePath   = path.join(currentDir, `../../../package.json`);
 
 void async function populateVersion() {
 
-  const spinner = createSpinner(`Populating \\version variable`).start();
+  console.info(`Populating \\version variable`);
 
-  try {
+  let constants     = await readFile(constantsPath, `utf8`);
+  const { version } = await readJSON(packagePath);
 
-    const data        = `\\def\\version{${version}}`;
-    const versionPath = path.join(currentDir, `../../src/utilities/version.tex`);
+  constants = constants.replace(/\\version\{(?<version>.+?)\}/u, `\\version{${version}}`);
 
-    await writeFile(versionPath, data, `utf8`);
+  await writeFile(constantsPath, constants, `utf8`);
 
-  } catch (e) {
-
-    return spinner.fail(e.message);
-
-  }
-
-  spinner.succeed(`\\version variable populated`);
+  console.info(`\\version variable populated`);
 
 }();
