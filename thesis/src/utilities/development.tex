@@ -1,7 +1,7 @@
 % The packages, settings, and commands in this file are only used for development
 % not the final dissertation document
 
-% PACKAGES
+% DEVELOPMENT PACKAGES
 
 \usepackage[
   firstpage = true,
@@ -25,8 +25,6 @@
 \usepackage{soul}
 \sethlcolor{magenta}
 
-\input{utilities/version}
-
 % COMMANDS
 
 % \addcite{}
@@ -47,27 +45,15 @@
   ]{}%
 }
 
-% \addissue{}{}
-%
-% Add a todo note that references a GitHub issue
-%
-% Example:
-%
-% \todo{add Abstract}{357}
-%
-\newcommand{\addissue}[2]{%
-  \todo{#1 (\href{https://github.com/dwhieb/dissertation/issues/#2}{\##2})}%
-}
-
-% \addref{}
+% \addcrossref{}
 %
 % Add a cross-reference
 %
 % Example:
 %
-% For a complete list of languages used in this thesis, see the \addref{List of Languages}.
+% For a complete list of languages used in this thesis, see the \addcrossref{List of Languages}.
 %
-\newcommand{\addref}[1]{%
+\newcommand{\addcrossref}[1]{%
   \textcolor{blue}{#1}%
   \todo[
     caption = {cross reference},
