@@ -4,7 +4,7 @@ import getLexemeFrequencies from './getLexemeFrequencies.js';
 import getLexemeStats       from './getLexemeStats.js';
 import getTextsStats        from './getTextsStats.js';
 
-export default async function getStatistics(dataDir, { outputPath, unit = `lexeme`, wordFilter } = {}) {
+export default async function getStatistics(dataDir, { outputPath, unit = `stem`, wordFilter } = {}) {
 
   console.info(`Calculating text frequencies`);
 

@@ -33,16 +33,17 @@ export default async function getTextStats(filePath, wordFilter, unit) {
 
       switch (unit) {
         case `wordform`: key = word.transcription.default; break;
-        case `lexeme`: key = word.stem; break;
+        case `stem`: key = word.stem; break;
         case `root`: key = word.root; break;
         default:
       }
 
-      key = key.toLowerCase();
-
       if (!key) return;
 
+      key = key.toLowerCase();
+
       const itemStats = lexemeFrequencies.get(key) ?? {
+        aspect:    word.tags.aspect ?? `NULL`,
         frequency: 0,
         GER:       0,
         INF:       0,

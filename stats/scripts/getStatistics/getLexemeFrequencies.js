@@ -18,6 +18,7 @@ export default function getCorpusFrequencies(textsInfo) {
         REFbroad:  0,
       };
 
+      corpusStats.aspect     = textStats.aspect;
       corpusStats.gloss      = textStats.gloss;
       corpusStats.frequency += textStats.frequency;
       corpusStats.GER       += textStats.GER;

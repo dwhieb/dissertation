@@ -10,6 +10,7 @@ const csvOptions = {
   columns: [
     `item`,
     `gloss`,
+    `aspect`,
     `frequency`,
     `rel_freq`,
     `flexibility`,
@@ -47,6 +48,7 @@ export default async function createStatsFile(outputPath, lexemeStats) {
     lexeme, {
       frequency,
       gloss,
+      aspect,
       flexibility,
       flexibilityBroad,
       GER,
@@ -75,6 +77,7 @@ export default async function createStatsFile(outputPath, lexemeStats) {
   ]) => [
     lexeme,
     gloss,
+    aspect,
     frequency,
     relativeFrequency,
     flexibility,
