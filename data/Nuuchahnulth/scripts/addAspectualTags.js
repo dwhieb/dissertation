@@ -20,7 +20,7 @@ async function addAspectualTags() {
 
   const options = {
     searchOnly: false,
-    testRun:    true,
+    testRun:    false,
   };
 
   await findAndReplace(dataDir, utterance => {
