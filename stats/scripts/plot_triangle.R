@@ -19,10 +19,10 @@ plot_triangle <- function(
     theme_minimal() +
     theme(
       plot.title.position = "plot",
-      plot.title = element_text(hjust = 0.5),
-      plot.subtitle = element_text(hjust = 0.5),
-      tern.axis.title.R = element_text(hjust = 1.25),
-      tern.axis.title.L = element_text(hjust = -0.25)
+      plot.title          = element_text(hjust = 0.5),
+      plot.subtitle       = element_text(hjust = 0.5),
+      tern.axis.title.R   = element_text(hjust = 1.25),
+      tern.axis.title.L   = element_text(hjust = -0.25)
     ) +
     theme_hidelabels() +
     Tlab("Predication") +
@@ -30,7 +30,7 @@ plot_triangle <- function(
     Rlab("Modification") +
     tern_limits(T = 1.05, L = 1.05, R = 1.05) +
     geom_polygon(
-      data = limits,
+      data  = limits,
       alpha = 0,
       color = "#BBBBBB",
       size  = 0.5

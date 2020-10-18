@@ -2,9 +2,11 @@ load_data <- function(file_path) {
 
   data <- read.table(
     file_path,
+    na.strings = "NULL",
     colClasses = c(
       "character", # lexeme
       "character", # gloss
+      "character", # aspect
       "integer",   # corpus frequency
       "numeric",   # relative frequency
       "numeric",   # flexibility (frequency)
