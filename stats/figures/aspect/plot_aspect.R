@@ -16,7 +16,7 @@ plot_aspect <- function(data, color = "black") {
     Tlab("predication") +
     Llab("reference") +
     Rlab("modification") +
-    tern_limits(T = 1.05, L = 1.05, R = 1.05) +
+    tern_limits(T = 1.1, L = 1.1, R = 1.1) +
     geom_polygon(
       data = data.frame(
         dispersion_ref  = c(1, 0, 0),
@@ -28,8 +28,10 @@ plot_aspect <- function(data, color = "black") {
       size  = 0.5
     ) +
     geom_point(
-      size = 2.5,
-      color = color
+      alpha       = 0.5,
+      color       = color,
+      show.legend = FALSE,
+      size        = 5
     )
 
   return(plot)
