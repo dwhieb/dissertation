@@ -1,3 +1,7 @@
+/* eslint-disable
+  max-nested-callbacks,
+*/
+
 import fs from 'fs-extra';
 
 const { readJSON } = fs;
@@ -42,8 +46,11 @@ export default async function getTextStats(filePath, wordFilter, unit) {
 
       key = key.toLowerCase();
 
+      const glosses = word.morphemes.map(({ gloss }) => gloss.eng);
+
       const itemStats = lexemeFrequencies.get(key) ?? {
         aspect:    word.tags.aspect ?? `NULL`,
+        definite:  glosses.includes(`DEF`),
         frequency: 0,
         GER:       0,
         INF:       0,
