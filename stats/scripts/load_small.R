@@ -9,6 +9,7 @@ load_small <- function() {
   data_Nuuchahnulth$language <- "Nuuchahnulth"
 
   data <- rbind(data_English, data_Nuuchahnulth)
+  data <- data[which(data$frequency >= 4), ]
 
   return(data)
 
