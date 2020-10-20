@@ -46,11 +46,10 @@ export default async function getTextStats(filePath, wordFilter, unit) {
 
       key = key.toLowerCase();
 
-      const glosses = word.morphemes.map(({ gloss }) => gloss.eng);
 
       const itemStats = lexemeFrequencies.get(key) ?? {
         aspect:    word.tags.aspect ?? `NULL`,
-        definite:  glosses.includes(`DEF`),
+        definite:  0,
         frequency: 0,
         GER:       0,
         INF:       0,
@@ -61,6 +60,9 @@ export default async function getTextStats(filePath, wordFilter, unit) {
         REF:       0,
         REFbroad:  0,
       };
+
+      const glosses = word.morphemes.map(({ gloss }) => gloss.eng);
+      if (glosses.includes(`DEF`)) itemStats.definite++;
 
       lexemeFrequencies.set(key, itemStats);
       itemStats.frequency++; // count frequency of all words, even untagged ones

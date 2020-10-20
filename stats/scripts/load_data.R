@@ -11,6 +11,7 @@ load_data <- function(file_path) {
       "numeric",   # relative frequency
       "numeric",   # flexibility (frequency)
       "numeric",   # flexibility (frequency broad)
+      "integer",   # definite
       "integer",   # GER frequency
       "integer",   # INF frequency
       "integer",   # MOD frequency
