@@ -1,8 +1,5 @@
-/* eslint-disable
-  max-nested-callbacks,
-*/
-
-import fs from 'fs-extra';
+import fs         from 'fs-extra';
+import getGlosses from '../../../scripts/utilities/getGlosses.js';
 
 const { readJSON } = fs;
 
@@ -61,7 +58,7 @@ export default async function getTextStats(filePath, wordFilter, unit) {
         REFbroad:  0,
       };
 
-      const glosses = word.morphemes.map(({ gloss }) => gloss.eng);
+      const glosses = getGlosses(word);
       if (glosses.includes(`DEF`)) itemStats.definite++;
 
       lexemeFrequencies.set(key, itemStats);

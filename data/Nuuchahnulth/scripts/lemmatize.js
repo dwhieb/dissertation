@@ -9,50 +9,65 @@
 /* eslint-disable
   max-nested-callbacks,
   no-param-reassign,
-  no-undefined,
 */
 
-import { fileURLToPath } from 'url';
-import findAndReplace    from '../../../scripts/utilities/findAndReplace.js';
-import path              from 'path';
+import { fileURLToPath }   from 'url';
+import findAndReplace      from '../../../scripts/utilities/findAndReplace.js';
+import grammaticalGlosses from './constants/grammaticalGlosses.js';
+import path                from 'path';
 
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 const dataDir    = path.join(currentDir, `../texts`);
 
+const grammaticalGlossRegExp = /^[A-Z123.]+$/u;
+
 findAndReplace(dataDir, utterance => {
 
-  if (!utterance.words) return utterance;
+  if (!utterance?.words?.length) return utterance;
 
   utterance.words.forEach(word => {
 
     if (!word?.morphemes?.length) return;
 
-    const grammaticalGlossRegExp = /^[A-Z123.]+$/u;
+    const morphemes = [...word.morphemes];
 
-    const morphemeTypes = word.morphemes
-    .map(morpheme => (grammaticalGlossRegExp.test(morpheme.gloss.eng) ? `grammatical` : `lexical`));
+    // remove reduplicated morpheme if present
+    const redupIndex = morphemes.findIndex(m => m.transcription.default.includes(`DUP`));
+    if (redupIndex) morphemes.splice(redupIndex, 1);
 
-    // start at index 1 so as to skip any reduplication morphemes at the start of the word
-    const firstGrammaticalMorphemeIndex = morphemeTypes.indexOf(`grammatical`, 1) || undefined;
-    const lexicalMorphemes              = word.morphemes.slice(0, firstGrammaticalMorphemeIndex);
+    // assign word root and gloss
+    word.root = morphemes[0].transcription.default;
+    if (!word.stemGloss) word.stemGloss = word.gloss.eng;
 
-    if (morphemeTypes[0] === `grammatical`) lexicalMorphemes.shift();
+    // remove ƛa· 'also/again'
+    const hasAlsoMorpheme = morphemes[morphemes.length - 1].transcription.default === `ƛa·`;
+    if (hasAlsoMorpheme) morphemes.pop();
 
-    if (lexicalMorphemes.length) {
-
-      word.root = lexicalMorphemes[0].transcription.default;
-
-      word.stem = lexicalMorphemes
-      .map(morpheme => morpheme.transcription.default)
-      .join(`-`);
-
-      word.stemGloss = lexicalMorphemes
-      .map(morpheme => morpheme.gloss.eng)
-      .join(`-`);
-
+    // if stem has 1 morpheme, assign it
+    if (morphemes.length === 1) {
+      word.stem = morphemes[0].gloss.eng;
+      return;
     }
 
-    if (!word.stemGloss) word.stemGloss = word.gloss.eng;
+    // if stem ends in lexical morpheme, assign stem
+    const lastMorpheme          = morphemes[morphemes.length - 1];
+    const isGrammaticalMorpheme = grammaticalGlossRegExp.test(lastMorpheme.gloss.eng);
+
+    if (!isGrammaticalMorpheme) {
+      word.stem = morphemes.map(m => m.gloss.eng).join(`-`);
+      return;
+    }
+
+    // remove non-aspectual grammatical morphemes
+    const [stemEndIndex] = morphemes
+    .map((m, i) => [i, m])
+    .filter(([, m]) => !grammaticalGlosses.includes(m.gloss.eng))
+    .pop() || [-1];
+
+    morphemes.splice(stemEndIndex);
+
+    // assign stem
+    word.stem = morphemes.map(m => m.gloss.eng).join(`-`);
 
   });
 

@@ -1,4 +1,5 @@
 export default {
+  'among.MOM':             `MOM`,
   CONT:                    `CONT`,
   DUR:                     `DUR`,
   FIN:                     `TEL`,

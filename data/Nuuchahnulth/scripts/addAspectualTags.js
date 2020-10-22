@@ -10,6 +10,7 @@
 import aspectualMappingsData from './constants/aspectualGlossMappings.js';
 import { fileURLToPath }     from 'url';
 import findAndReplace        from '../../../scripts/utilities/findAndReplace.js';
+import getGlosses            from '../../../scripts/utilities/getGlosses.js';
 import path                  from 'path';
 
 const glossMappings = new Map(Object.entries(aspectualMappingsData));
@@ -33,7 +34,7 @@ async function addAspectualTags() {
 
       word.tags = word.tags ?? {};
 
-      const glosses = word.morphemes.map(({ gloss }) => gloss.eng);
+      const glosses = getGlosses(word);
 
       word.tags.aspect = glosses.reduceRight((asp, gloss) => {
 
