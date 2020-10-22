@@ -61,6 +61,10 @@ findAndReplace(dataDir, utterance => {
     const hasReallyMorpheme = lastMorpheme.transcription.default === `sa`;
     if (hasReallyMorpheme) morphemes.pop();
 
+    // remove ‑ča 'maybe'
+    const hasMaybeMorpheme = lastMorpheme.transcription.default === `ča`;
+    if (hasMaybeMorpheme) morphemes.pop();
+
     // if stem has 1 morpheme, assign it
     if (morphemes.length === 1) {
       word.stem      = getStem(morphemes);
