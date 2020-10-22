@@ -78,7 +78,6 @@ export default [
   `REL.DUB.1PL`,
   `REL.DUB.3`,
   `SHIFT`,
-  `SIM`,
   `SONG`,
   `SOUND`,
   `SUB.1PL`,

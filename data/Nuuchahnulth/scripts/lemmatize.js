@@ -8,18 +8,27 @@
 
 /* eslint-disable
   max-nested-callbacks,
+  max-statements,
   no-param-reassign,
 */
 
-import { fileURLToPath }   from 'url';
-import findAndReplace      from '../../../scripts/utilities/findAndReplace.js';
+import { fileURLToPath }  from 'url';
+import findAndReplace     from '../../../scripts/utilities/findAndReplace.js';
 import grammaticalGlosses from './constants/grammaticalGlosses.js';
-import path                from 'path';
+import path               from 'path';
 
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 const dataDir    = path.join(currentDir, `../texts`);
 
 const grammaticalGlossRegExp = /^[A-Z123.]+$/u;
+
+function getStem(morphemes) {
+  return morphemes.map(m => m.transcription.default).join(`-`);
+}
+
+function getStemGloss(morphemes) {
+  return morphemes.map(m => m.gloss.eng).join(`-`);
+}
 
 findAndReplace(dataDir, utterance => {
 
@@ -33,19 +42,23 @@ findAndReplace(dataDir, utterance => {
 
     // remove reduplicated morpheme if present
     const redupIndex = morphemes.findIndex(m => m.transcription.default.includes(`DUP`));
-    if (redupIndex) morphemes.splice(redupIndex, 1);
+    if (redupIndex !== -1) morphemes.splice(redupIndex, 1);
 
-    // assign word root and gloss
+    // assign word root
     word.root = morphemes[0].transcription.default;
-    if (!word.stemGloss) word.stemGloss = word.gloss.eng;
 
-    // remove ƛa· 'also/again'
+    // remove ‑ƛa· 'also/again'
     const hasAlsoMorpheme = morphemes[morphemes.length - 1].transcription.default === `ƛa·`;
     if (hasAlsoMorpheme) morphemes.pop();
 
+    // remove ‑ʔaːɬ 'always'
+    const hasAlwaysMorpheme = morphemes[morphemes.length - 1].transcription.default === `ʔaːɬ`;
+    if (hasAlwaysMorpheme) morphemes.pop();
+
     // if stem has 1 morpheme, assign it
     if (morphemes.length === 1) {
-      word.stem = morphemes[0].gloss.eng;
+      word.stem      = getStem(morphemes);
+      word.stemGloss = getStemGloss(morphemes);
       return;
     }
 
@@ -54,7 +67,8 @@ findAndReplace(dataDir, utterance => {
     const isGrammaticalMorpheme = grammaticalGlossRegExp.test(lastMorpheme.gloss.eng);
 
     if (!isGrammaticalMorpheme) {
-      word.stem = morphemes.map(m => m.gloss.eng).join(`-`);
+      word.stem      = getStem(morphemes);
+      word.stemGloss = getStemGloss(morphemes);
       return;
     }
 
@@ -64,10 +78,11 @@ findAndReplace(dataDir, utterance => {
     .filter(([, m]) => !grammaticalGlosses.includes(m.gloss.eng))
     .pop() || [-1];
 
-    morphemes.splice(stemEndIndex);
+    morphemes.splice(stemEndIndex + 1);
 
     // assign stem
-    word.stem = morphemes.map(m => m.gloss.eng).join(`-`);
+    word.stem      = getStem(morphemes);
+    word.stemGloss = getStemGloss(morphemes);
 
   });
 

@@ -24,6 +24,7 @@ export default {
   'on.the.ground.MOMCAUS': `MOM`,
   'on.top.MOM':            `MOM`,
   REP:                     `REP`,
+  SIM:                     `SIM`,
   SPOR:                    `IT`,
   'there.MOM':             `MOM`,
 };
