@@ -47,13 +47,19 @@ findAndReplace(dataDir, utterance => {
     // assign word root
     word.root = morphemes[0].transcription.default;
 
+    let lastMorpheme = morphemes[morphemes.length - 1];
+
     // remove ‑ƛa· 'also/again'
-    const hasAlsoMorpheme = morphemes[morphemes.length - 1].transcription.default === `ƛa·`;
+    const hasAlsoMorpheme = lastMorpheme.transcription.default === `ƛa·`;
     if (hasAlsoMorpheme) morphemes.pop();
 
     // remove ‑ʔaːɬ 'always'
-    const hasAlwaysMorpheme = morphemes[morphemes.length - 1].transcription.default === `ʔaːɬ`;
+    const hasAlwaysMorpheme = lastMorpheme.transcription.default === `ʔaːɬ`;
     if (hasAlwaysMorpheme) morphemes.pop();
+
+    // remove ‑sa 'really'
+    const hasReallyMorpheme = lastMorpheme.transcription.default === `sa`;
+    if (hasReallyMorpheme) morphemes.pop();
 
     // if stem has 1 morpheme, assign it
     if (morphemes.length === 1) {
@@ -63,7 +69,7 @@ findAndReplace(dataDir, utterance => {
     }
 
     // if stem ends in lexical morpheme, assign stem
-    const lastMorpheme          = morphemes[morphemes.length - 1];
+    lastMorpheme                = morphemes[morphemes.length - 1];
     const isGrammaticalMorpheme = grammaticalGlossRegExp.test(lastMorpheme.gloss.eng);
 
     if (!isGrammaticalMorpheme) {
