@@ -1,4 +1,9 @@
+### Versioning
+- **major**: `v0` for development, `v1` for the filed version and errata
+- **minor**: new sections added or major revisions undertaken
+- **patch**: typos, minor fixes and changes
+
+### Checklist
 - [ ] version bump: `npm version {major|minor|patch}`
-- [ ] cleanup project: `npm run cleanup`
 - [ ] compile project: `npm run build`
-- [ ] run diff on the PDF (Adobe) versus the previous version and save diff as `diff.pdf`
+- [ ] run diff on the PDF using Adobe and inspect differences
