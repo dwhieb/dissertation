@@ -5,5 +5,9 @@
 
 ### Checklist
 - [ ] version bump: `npm version {major|minor|patch}`
+- [ ] add language information
+- [ ] add language indexes
+- [ ] add citations
+- [ ] add placeholders
 - [ ] compile project: `npm run build`
 - [ ] run diff on the PDF using Adobe and inspect differences

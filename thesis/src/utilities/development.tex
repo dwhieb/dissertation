@@ -14,9 +14,9 @@
 \usepackage[
   backgroundcolor = cyan,
   colorinlistoftodos,
-  linecolor = cyan,
+  linecolor       = cyan,
   obeyDraft,
-  textsize = footnotesize
+  textsize        = footnotesize
 ]{todonotes}
 
 % NB: This needs to be declared *after* the todonotes package
@@ -61,6 +61,20 @@
     noline,
     size    = \tiny
   ]{}%
+}
+
+% \TODO{}
+%
+% Add a todo item
+%
+% Example:
+%
+% \TODO[caption]{This is a todo item.}
+\newcommand{\TODO}[2][]{%
+  \todo[
+    caption = {#1},
+    size    = footnotesize
+  ]{\begin{spacing}{1}#2\end{spacing}}%
 }
 
 % CONTENT
