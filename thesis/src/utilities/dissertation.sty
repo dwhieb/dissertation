@@ -114,6 +114,26 @@
 \doublespacing
 \setmainfont{Linux Libertine}
 
+% REFERENCE COMMANDS
+
+% \chref
+%
+% For references to chapters.
+%
+% Example:
+%
+% A more precise definition of lexical flexibility is given in \chref{ch:introduction}.
+\newcommand{\chref}[1]{Chapter~\ref{#1}}
+
+% \tabref
+%
+% For references to tables.
+%
+% Example:
+%
+% Some of the attributive adjectives reported in \tabref{tab:Thompson-1989} …
+\newcommand{\tabref}[1]{Table~\ref{#1}}
+
 % COMMANDS
 
 % \dfn
@@ -123,7 +143,6 @@
 % Example:
 %
 % A \dfn{morpheme} is a minimal meaningful part of a word.
-%
 \DeclareTextFontCommand{\dfn}{\itshape}
 
 % \gl
@@ -133,7 +152,6 @@
 % Example:
 %
 % Mithun (2008) glosses this as \gl{agt}.
-%
 \DeclareTextFontCommand{\gl}{\scshape}
 
 % \inlinetitle
@@ -143,7 +161,6 @@
 % Example:
 %
 % In her survey \inlinetitle{The languages of Native North America}, Mithun says\ldots
-%
 \DeclareTextFontCommand{\inlinetitle}{\itshape}
 
 % \tln
@@ -153,7 +170,6 @@
 % Example:
 %
 % The Chitimacha word \txn{guxt-} \tln{eat} is an example of a verb.
-%
 \newcommand{\tln}[1]{\enquote*{#1}}
 
 % \txn

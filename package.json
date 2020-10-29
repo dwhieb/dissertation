@@ -37,7 +37,7 @@
     "log-start":     "node thesis/scripts/build/startLog.js",
     "log-end":       "node thesis/scripts/build/endLog.js",
     "quick-bib":     "npm run compile && npm run bib && npm run compile",
-    "quick-build":   "npm run compile && npm run copy-pdf",
+    "quick-build":   "npm run compile",
     "upload":        "node thesis/scripts/build/upload.js",
     "prebuild":      "npm run cleanup && npm run abbreviations && npm run diss-version",
     "build":         "npm run compile && npm run bib && npm run compile",
