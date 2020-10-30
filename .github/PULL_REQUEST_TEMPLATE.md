@@ -12,4 +12,5 @@
 - [ ] add citations
 - [ ] compile project: `npm run build`
 - [ ] handle warnings in console
+- [ ] copy to Word and run spelling and grammar check
 - [ ] run diff on the PDF using Adobe and inspect differences

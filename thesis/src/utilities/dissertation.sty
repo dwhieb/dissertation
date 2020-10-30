@@ -121,26 +121,13 @@
 % Text (fontspec, setspace packages)
 \doublespacing
 \setmainfont{Linux Libertine}
+\setmonofont[Scale = MatchLowercase]{Linux Libertine Mono}
 
 % REFERENCE COMMANDS
 
-% \chref
-%
-% For references to chapters.
-%
-% Example:
-%
-% A more precise definition of lexical flexibility is given in \chref{ch:introduction}.
-\newcommand{\chref}[1]{Chapter~\ref{#1}}
-
-% \tabref
-%
-% For references to tables.
-%
-% Example:
-%
-% Some of the attributive adjectives reported in \tabref{tab:Thompson-1989} …
-\newcommand{\tabref}[1]{Table~\ref{#1}}
+\newcommand{\chref}[1]{Chapter~\ref{#1}} % Chapters: ch:introduction
+\newcommand{\secref}[1]{§\ref{#1}}       % Section:  sec:1.2
+\newcommand{\tabref}[1]{Table~\ref{#1}}  % Tables:   tab:table-name
 
 % COMMANDS
 
