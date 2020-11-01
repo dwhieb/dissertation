@@ -69,12 +69,9 @@
 %
 % Example:
 %
-% \TODO[caption]{This is a todo item.}
+% \TODO[caption = {This is the caption.}]{This is a todo item.}
 \newcommand{\TODO}[2][]{%
-  \todo[
-    caption = {#1},
-    size    = footnotesize
-  ]{\begin{spacing}{1}#2\end{spacing}}%
+  \todo[caption = {#2}, #1]{\begin{spacing}{1}#2\end{spacing}}%
 }
 
 % CONTENT

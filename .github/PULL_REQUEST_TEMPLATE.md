@@ -5,6 +5,7 @@
 
 ### Checklist
 - [ ] version bump: `npm version {major|minor|patch}`
+- [ ] search for `??` in the PDF
 - [ ] add examples
 - [ ] add cross references
 - [ ] add language information

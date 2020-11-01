@@ -37,20 +37,21 @@
 % Index
 \makeindex[
   columns = 2,
-  intoc,
   title   = {Language Index}
 ]
 
 % Links
 \hypersetup{
-  citecolor       = purple,      % bibliography links
-  citebordercolor = {0.5 0 0.5}, % bibliography links underline color
-  colorlinks      = true,        % use colored links instead of boxes
-  final           = true,        % turn on all options
-  linkbordercolor = {1 1 1},     % color of internal link underline
-  linkcolor       = cyan,        % internal links
-  urlbordercolor  = {0 0 1},     % color of URL underline
-  urlcolor        = blue         % URL links
+  bookmarksopen     = true,        % start with PDF bookmarks expanded
+  bookmarksnumbered = true,        % number PDF bookmarks
+  citecolor         = purple,      % bibliography links
+  citebordercolor   = {0.5 0 0.5}, % bibliography links underline color
+  colorlinks        = true,        % use colored links instead of boxes
+  final             = true,        % turn on all options
+  linkbordercolor   = {1 1 1},     % color of internal link underline
+  linkcolor         = cyan,        % internal links
+  urlbordercolor    = {0 0 1},     % color of URL underline
+  urlcolor          = blue         % URL links
 }
 
   % underline links
@@ -62,6 +63,7 @@
   \makeatother
 
 % List of Tables
+\setlength{\cftbeforetabskip}{0.5em}
 \renewcommand{\cfttabnumwidth}{4.3em} % originally: 2.3em
 \renewcommand{\cfttabaftersnumb}{\hspace*{-2em}}
 
@@ -125,9 +127,9 @@
 
 % REFERENCE COMMANDS
 
-\newcommand{\chref}[1]{Chapter~\ref{#1}} % Chapters: ch:introduction
-\newcommand{\secref}[1]{§\ref{#1}}       % Section:  sec:1.2
-\newcommand{\tabref}[1]{Table~\ref{#1}}  % Tables:   tab:table-name
+\newcommand{\chref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}} % Chapters: ch:introduction
+\newcommand{\secref}[1]{§\ref{#1}}                       % Sections: sec:1.2
+\newcommand{\tabref}[1]{\hyperref[#1]{Table~\ref*{#1}}}  % Tables:   tab:table-name
 
 % COMMANDS
 
