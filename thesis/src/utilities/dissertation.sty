@@ -40,6 +40,87 @@
   title   = {Language Index}
 ]
 
+% Interlinear Examples
+\setlength{\glossglue}{1em}
+
+\gdef\twosent#1\\ #2\\{% #1 = first line, #2 = second line
+  \getwords(\lineone,\eachwordone)#1 \\%
+  \getwords(\linetwo,\eachwordtwo)#2 \\%
+  \loop
+    \lastword{\eachwordone}{\lineone}{\wordone}%
+    \lastword{\eachwordtwo}{\linetwo}{\wordtwo}%
+    \global\setbox\gline=\hbox{
+      \unhbox\gline
+      \hskip\glossglue
+      \vtop{
+        \box\wordone % vtop was vbox
+        \nointerlineskip
+        \box\wordtwo
+      }%
+    }%
+    \testdone
+    \ifnotdone
+  \repeat
+  \egroup % matches \bgroup in \gloss
+  \gl@stop
+}
+
+\gdef\threesent#1\\ #2\\ #3\\{% #1 = first line, #2 = second line, #3 = third
+  \getwords(\lineone,\eachwordone)#1 \\%
+  \getwords(\linetwo,\eachwordtwo)#2 \\%
+  \getwords(\linethree,\eachwordthree)#3 \\%
+  \loop
+    \lastword{\eachwordone}{\lineone}{\wordone}%
+    \lastword{\eachwordtwo}{\linetwo}{\wordtwo}%
+    \lastword{\eachwordthree}{\linethree}{\wordthree}%
+    \global\setbox\gline=\hbox{
+      \unhbox\gline
+      \hskip\glossglue
+      \vtop{
+        \box\wordone % vtop was vbox
+        \nointerlineskip
+        \box\wordtwo
+        \nointerlineskip
+        \box\wordthree
+      }%
+    }%
+  \testdone
+  \ifnotdone
+  \repeat
+  \egroup % matches \bgroup in \gloss
+  \gl@stop
+}
+
+\gdef\foursent#1\\ #2\\ #3\\ #4\\{% #1 = first line, #2 = second line, #3 = third line, #4 = fourth line
+  \getwords(\lineone,\eachwordone)#1 \\%
+  \getwords(\linetwo,\eachwordtwo)#2 \\%
+  \getwords(\linethree,\eachwordthree)#3 \\%
+  \getwords(\linefour,\eachwordfour)#4 \\%
+  \loop
+    \lastword{\eachwordone}{\lineone}{\wordone}%
+    \lastword{\eachwordtwo}{\linetwo}{\wordtwo}%
+    \lastword{\eachwordthree}{\linethree}{\wordthree}%
+    \lastword{\eachwordfour}{\linefour}{\wordfour}%
+    \global\setbox\gline=\hbox{%
+      \unhbox\gline
+      \hskip\glossglue
+      \vtop{%
+        \box\wordone % vtop was vbox
+        \nointerlineskip
+        \box\wordtwo
+        \nointerlineskip
+        \box\wordthree
+        \nointerlineskip
+        \box\wordfour
+      }%
+    }%
+    \testdone
+    \ifnotdone
+  \repeat
+  \egroup % matches \bgroup in \gloss
+  \gl@stop%
+}
+
 % Links
 \hypersetup{
   bookmarksopen     = true,        % start with PDF bookmarks expanded
@@ -125,7 +206,7 @@
 \setmainfont{Linux Libertine}
 \setmonofont[Scale = MatchLowercase]{Linux Libertine Mono}
 
-% REFERENCE COMMANDS
+% CROSS-REFERENCES
 
 \newcommand{\chref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}} % Chapters: ch:introduction
 \newcommand{\secref}[1]{§\ref{#1}}                       % Sections: sec:1.2
@@ -142,6 +223,53 @@
 % A \dfn{morpheme} is a minimal meaningful part of a word.
 \DeclareTextFontCommand{\dfn}{\itshape}
 
+% \em{}
+%
+% Emphasized text within linguistic examples
+%
+% Example:
+%
+% \txn{kanakt‑\em{à:ke}}
+\let\em\relax % there's no \RedeclareTextFontCommand
+\DeclareTextFontCommand{\em}{\bfseries}
+
+% \exinfo{}
+%
+% Information at the top of an example
+%
+% Example:
+%
+% \begin{exe}
+%   \ex\label{ex:1.1}
+%   \exinfo{English (Indo-European > Germanic; England)}
+%   \begin{xlist}
+%     \ex And the spots of paint would change every hundred degrees.
+%     \ex One story does come to my mind though where you painted the foundation coating on the house and got tar all over you.
+%     \ex And it happened to be one of the rare paint jobs.
+%   \end{xlist}
+% \end{exe}
+\newcommand{\exinfo}[1]{\underline{#1}}
+
+% \exsource{}
+%
+% Add citation information for an example
+%
+% Example:
+%
+% \tln{translation}
+% \exsource{Nakayama 2001: 73}
+\newcommand{\exsource}[2][]{\hfill\hspace*{1em}\mbox{\footnotesize\citep[#1]{#2}\normalsize}}
+
+% \exsourcebelow{}
+%
+% Add citation information below an example
+%
+% Example:
+%
+% \tln{translation}
+% \exsourcebelow{Nakayama 2001: 73}
+\newcommand{\exsourcebelow}[2][]{\sn\vspace{-0.25em}\begin{flushright}\mbox{\footnotesize\citep[#1]{#2}\normalsize}\end{flushright}}
+
 % \gl
 %
 % For glosses of grammatical morphemes. NB: Gloss should be in lowercase in the source code.
@@ -150,6 +278,22 @@
 %
 % Mithun (2008) glosses this as \gl{agt}.
 \DeclareTextFontCommand{\gl}{\scshape}
+
+% \gllll
+%
+% Four-line glosses
+\newbox\linefour%
+\newbox\wordfour%
+\@ifundefined{eachwordfour}{\let\eachwordfour=\rmfamily}{\relax}
+
+\def\gllll% Introduces 4-line text-and-gloss.
+{\begin{flushleft}
+  \ifx\@gsingle1% conditionally force single spacing (hpk/MC)
+    \vskip\baselineskip\def\baselinestretch{1}%
+    \@selfnt\vskip-\baselineskip\fi%
+  \bgroup
+  \foursent
+}
 
 % \inlinetitle
 %

@@ -5,13 +5,13 @@
 
 ### Checklist
 - [ ] version bump: `npm version {major|minor|patch}`
-- [ ] search for `??` in the PDF
 - [ ] add examples
 - [ ] add cross references
 - [ ] add language information
 - [ ] add language indexes
 - [ ] add citations
-- [ ] compile project: `npm run build`
-- [ ] handle warnings in console
+- [ ] check new bibliography entries
+- [ ] handle build warnings in console
 - [ ] copy to Word and run spelling and grammar check
+- [ ] search for `??` in the PDF
 - [ ] run diff on the PDF using Adobe and inspect differences
