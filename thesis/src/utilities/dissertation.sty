@@ -2,6 +2,9 @@
 
 % FORMATTING
 
+% BIBLIOGRAPHY
+\setlength{\bibitemsep}{0.5em}
+
 % Block Quotes
 \renewcommand{\mkblockquote}[4]{\small#1#2#4#3}
 
@@ -184,6 +187,15 @@
 \let\em\relax % there's no \RedeclareTextFontCommand
 \DeclareTextFontCommand{\em}{\bfseries\color{red}}
 
+% \emph{}
+% Emphasized text within body text
+% Example:
+%
+% ...the resulting verbs are used for objects that one \emph{causes} something to happen \emph{with}
+%
+\let\emph\relax % there's no \RedeclareTextFontCommand
+\DeclareTextFontCommand{\emph}{\itshape}
+
 % \exinfo{}
 %
 % Information at the top of an example
@@ -274,20 +286,6 @@
 %
 % \newcommand{\txn}[1]{\StrSubstitute{\textit{#1}}{-}{‑}}
 \newcommand{\txn}[1]{\textit{\StrSubstitute{#1}{-}{‑}}}
-
-% BIBLIOGRAPHY
-% NB: For some reason, these commands have to follow the \gllll definition
-
-\setlength{\bibitemsep}{0.5em}
-
-\makeatletter
-\renewrobustcmd*{\mkbibitalic}{\textit}
-\protected\long\def\blx@imc@mkbibemph#1{%
-  \textit{#1}\blx@imc@setpunctfont\textit%
-}
-\makeatother
-
-\let\mkbibemph\mkbibitalic
 
 % EXAMPLES
 % NB: For some reason, these commands have to come later in this file

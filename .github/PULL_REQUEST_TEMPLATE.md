@@ -9,6 +9,7 @@
 - [ ] add cross references
 - [ ] add language information
 - [ ] add language indexes
+- [ ] update List of Languages
 - [ ] add citations
 - [ ] check new bibliography entries
 - [ ] handle build warnings in console
