@@ -8,9 +8,6 @@
 % Block Quotes
 \renewcommand{\mkblockquote}[4]{\small#1#2#4#3}
 
-% Citations
-\let\citeps\parencites
-
 % Captions
 \captionsetup{
   font      = small,
@@ -18,6 +15,9 @@
   labelfont = bf,
   margin    = 5em
 }
+
+% Citations
+\newcommand{\nestcite}[2][]{\brackettext{\citeyear[#1]{#2}}}
 
 % Header & Footer (fancyhdr package)
 \pagestyle{fancy}
