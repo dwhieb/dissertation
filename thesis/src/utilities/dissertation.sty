@@ -2,9 +2,6 @@
 
 % FORMATTING
 
-% Bibliography
-\setlength{\bibitemsep}{0.5em}
-
 % Block Quotes
 \renewcommand{\mkblockquote}[4]{\small#1#2#4#3}
 
@@ -43,54 +40,6 @@
 % Interlinear Examples
 \setlength{\glossglue}{1em}
 
-\gdef\twosent#1\\ #2\\{% #1 = first line, #2 = second line
-  \getwords(\lineone,\eachwordone)#1 \\%
-  \getwords(\linetwo,\eachwordtwo)#2 \\%
-  \loop
-    \lastword{\eachwordone}{\lineone}{\wordone}%
-    \lastword{\eachwordtwo}{\linetwo}{\wordtwo}%
-    \global\setbox\gline=\hbox{
-      \unhbox\gline
-      \hskip\glossglue
-      \vtop{
-        \box\wordone % vtop was vbox
-        \nointerlineskip
-        \box\wordtwo
-      }%
-    }%
-    \testdone
-    \ifnotdone
-  \repeat
-  \egroup % matches \bgroup in \gloss
-  \gl@stop
-}
-
-\gdef\threesent#1\\ #2\\ #3\\{% #1 = first line, #2 = second line, #3 = third
-  \getwords(\lineone,\eachwordone)#1 \\%
-  \getwords(\linetwo,\eachwordtwo)#2 \\%
-  \getwords(\linethree,\eachwordthree)#3 \\%
-  \loop
-    \lastword{\eachwordone}{\lineone}{\wordone}%
-    \lastword{\eachwordtwo}{\linetwo}{\wordtwo}%
-    \lastword{\eachwordthree}{\linethree}{\wordthree}%
-    \global\setbox\gline=\hbox{
-      \unhbox\gline
-      \hskip\glossglue
-      \vtop{
-        \box\wordone % vtop was vbox
-        \nointerlineskip
-        \box\wordtwo
-        \nointerlineskip
-        \box\wordthree
-      }%
-    }%
-  \testdone
-  \ifnotdone
-  \repeat
-  \egroup % matches \bgroup in \gloss
-  \gl@stop
-}
-
 \gdef\foursent#1\\ #2\\ #3\\ #4\\{% #1 = first line, #2 = second line, #3 = third line, #4 = fourth line
   \getwords(\lineone,\eachwordone)#1 \\%
   \getwords(\linetwo,\eachwordtwo)#2 \\%
@@ -117,7 +66,7 @@
     \testdone
     \ifnotdone
   \repeat
-  \egroup % matches \bgroup in \gloss
+  \egroup% matches \bgroup in \gloss
   \gl@stop%
 }
 
@@ -131,6 +80,7 @@
   final             = true,        % turn on all options
   linkbordercolor   = {1 1 1},     % color of internal link underline
   linkcolor         = cyan,        % internal links
+  linktoc           = all,         % link all parts of TOC entry
   urlbordercolor    = {0 0 1},     % color of URL underline
   urlcolor          = blue         % URL links
 }
@@ -209,6 +159,7 @@
 % CROSS-REFERENCES
 
 \newcommand{\chref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}} % Chapters: ch:introduction
+\newcommand{\exref}[1]{(\ref{#1})}
 \newcommand{\secref}[1]{§\ref{#1}}                       % Sections: sec:1.2
 \newcommand{\tabref}[1]{\hyperref[#1]{Table~\ref*{#1}}}  % Tables:   tab:table-name
 
@@ -231,7 +182,7 @@
 %
 % \txn{kanakt‑\em{à:ke}}
 \let\em\relax % there's no \RedeclareTextFontCommand
-\DeclareTextFontCommand{\em}{\bfseries}
+\DeclareTextFontCommand{\em}{\bfseries\color{red}}
 
 % \exinfo{}
 %
@@ -268,7 +219,7 @@
 %
 % \tln{translation}
 % \exsourcebelow{Nakayama 2001: 73}
-\newcommand{\exsourcebelow}[2][]{\sn\vspace{-0.25em}\begin{flushright}\mbox{\footnotesize\citep[#1]{#2}\normalsize}\end{flushright}}
+\newcommand{\exsourcebelow}[2][]{\sn\vspace{-1.25em}\begin{flushright}\mbox{\footnotesize\citep[#1]{#2}\normalsize}\end{flushright}}
 
 % \gl
 %
@@ -323,3 +274,33 @@
 %
 % \newcommand{\txn}[1]{\StrSubstitute{\textit{#1}}{-}{‑}}
 \newcommand{\txn}[1]{\textit{\StrSubstitute{#1}{-}{‑}}}
+
+% BIBLIOGRAPHY
+% NB: For some reason, these commands have to follow the \gllll definition
+
+\setlength{\bibitemsep}{0.5em}
+
+\makeatletter
+\renewrobustcmd*{\mkbibitalic}{\textit}
+\protected\long\def\blx@imc@mkbibemph#1{%
+  \textit{#1}\blx@imc@setpunctfont\textit%
+}
+\makeatother
+
+\let\mkbibemph\mkbibitalic
+
+% EXAMPLES
+% NB: For some reason, these commands have to come later in this file
+
+\makeatletter
+\apptocmd{\@exe}{%
+  \singlespacing
+  \setlength{\itemsep}{1em}%
+}{}{}
+\makeatother
+
+\makeatletter
+\apptocmd{\@xlist}{%
+  \setlength{\itemsep}{1em}%
+}{}{}
+\makeatother

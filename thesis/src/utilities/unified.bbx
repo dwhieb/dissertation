@@ -353,20 +353,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % This gets rid of the Oxford comma in name lists and uses the ampersand rather than "and":
-
 \renewcommand*{\finalnamedelim}{\addspace\&\addspace}
 \renewcommand*{\finallistdelim}{\addspace\&\addspace}
 
 % no colon after "In" in incollection entries (overriding biblatex.def):
-
 \renewcommand{\intitlepunct}{\addspace}
-
 \renewcommand{\subtitlepunct}{\addcolon\space}
 \renewcommand*{\bibpagespunct}{\newunitpunct}  % No comma before pages, just the usual new unit period
 
 \DefineBibliographyStrings{english}{%
-  edition          = {edn\adddot},
-  phdthesis        = {dissertation},
+  edition   = {edn\adddot},
+  phdthesis = {dissertation},
 }
 
 % basically everything is in sentence case, other than journals and book series (recurring titles)
@@ -378,11 +375,12 @@
 % Just like book titles, thesis titles are in italics
 \DeclareFieldFormat[thesis]{title}{\mkbibemph{#1}}
 
-\DeclareFieldFormat{pages}{#1}     % no pp. prefix, took \mkpageprefix out [kvf]
+\DeclareFieldFormat{pages}{#1} % no pp. prefix, took \mkpageprefix out [kvf]
+
 \DeclareFieldFormat{doi}{%
   \ifhyperref
-    {DOI:\href{https://doi.org/#1}{\nolinkurl{#1}}}
-    {DOI:\nolinkurl{#1}}}
+    {doi:\href{https://doi.org/#1}{\nolinkurl{#1}}}
+    {doi:\nolinkurl{#1}}}
 \DeclareFieldFormat{url}{\url{#1}}
 
 % This is for printing the volume field of a proceedings with an ISSN as an article
@@ -414,9 +412,9 @@
   \newunit\newblock
   \printfield{version}%
   \newunit\newblock
-% \usebibmacro{in:}%                         We don't use "In: " before journal titles
+% \usebibmacro{in:}% We don't use "In: " before journal titles
   \usebibmacro{journal+issuetitle+editor}%
-  \newblock%                          \newblock ensures period before pages
+  \newblock% \newblock ensures period before pages
   \usebibmacro{note+pages}%
   \newunit\newblock
   \iftoggle{bbx:isbn}
@@ -456,7 +454,7 @@
     {}%
   \newunit
   \printfield{volumes}%
-  \setunit{\addspace}%                         crucial difference from standard.bbx: space and then (Series + number)
+  \setunit{\addspace}% crucial difference from standard.bbx: space and then (Series + number)
   \usebibmacro{series+number}%
   \newunit\newblock
   \printfield{note}%
