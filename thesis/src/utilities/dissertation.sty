@@ -162,13 +162,13 @@
 % CROSS-REFERENCES
 
 \newcommand{\chref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}} % Chapters: ch:introduction
-\newcommand{\exref}[1]{(\ref{#1})}
+\newcommand{\exref}[1]{(\ref{#1})}                       % Examples: ex:1.1
 \newcommand{\secref}[1]{§\ref{#1}}                       % Sections: sec:1.2
 \newcommand{\tabref}[1]{\hyperref[#1]{Table~\ref*{#1}}}  % Tables:   tab:table-name
 
 % COMMANDS
 
-% \dfn
+% \dfn{}
 %
 % For definitions in prose.
 %
@@ -233,7 +233,7 @@
 % \exsourcebelow{Nakayama 2001: 73}
 \newcommand{\exsourcebelow}[2][]{\sn\vspace{-1.25em}\begin{flushright}\mbox{\footnotesize\citep[#1]{#2}\normalsize}\end{flushright}}
 
-% \gl
+% \gl{}
 %
 % For glosses of grammatical morphemes. NB: Gloss should be in lowercase in the source code.
 %
@@ -258,14 +258,24 @@
   \foursent
 }
 
-% \inlinetitle
+% idx{}
+%
+% Prints the provided text and makes an entry in the index for it.
+\newcommand{\idx}[1]{#1\index{#1}}
+
+% \pubtitle{}
 %
 % Use to style titles of books, journals, etc. in prose
 %
 % Example:
 %
-% In her survey \inlinetitle{The languages of Native North America}, Mithun says\ldots
-\DeclareTextFontCommand{\inlinetitle}{\itshape}
+% In her survey \pubtitle{The languages of Native North America}, Mithun says\ldots
+\DeclareTextFontCommand{\pubtitle}{\itshape}
+
+% \qem{}
+%
+% For my emphasis within quotations. Use \emph{} for original emphasis.
+\DeclareTextFontCommand{\qem}{\bfseries}
 
 % \tln
 %
@@ -276,7 +286,7 @@
 % The Chitimacha word \txn{guxt-} \tln{eat} is an example of a verb.
 \newcommand{\tln}[1]{\enquote*{#1}}
 
-% \txn
+% \txn{}
 %
 % For inline mentions of language, i.e. inline examples. \txn is short for 'transcription', since every example / mention is a transcription of some piece of language. NB: This command substitutes non-breaking hyphens for regular hyphens
 %

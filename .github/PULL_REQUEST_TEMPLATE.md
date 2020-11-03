@@ -7,8 +7,8 @@
 - [ ] version bump: `npm version {major|minor|patch}`
 - [ ] add examples
 - [ ] add cross references
-- [ ] add language information
 - [ ] add language indexes
+- [ ] add language info (when the language is discussed)
 - [ ] update List of Languages
 - [ ] add citations
 - [ ] check new bibliography entries
