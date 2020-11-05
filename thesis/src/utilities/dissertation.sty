@@ -16,9 +16,6 @@
   margin    = 5em
 }
 
-% Citations
-\newcommand{\nestcite}[2][]{\brackettext{\citeyear[#1]{#2}}}
-
 % Header & Footer (fancyhdr package)
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
@@ -221,7 +218,7 @@
 %
 % \tln{translation}
 % \exsource{Nakayama 2001: 73}
-\newcommand{\exsource}[2][]{\hfill\hspace*{1em}\mbox{\footnotesize\citep[#1]{#2}\normalsize}}
+\newcommand{\exsource}[2][]{\hfill\hspace*{1em}\mbox{\footnotesize\parencite[#1]{#2}\normalsize}}
 
 % \exsourcebelow{}
 %
@@ -231,7 +228,7 @@
 %
 % \tln{translation}
 % \exsourcebelow{Nakayama 2001: 73}
-\newcommand{\exsourcebelow}[2][]{\sn\vspace{-1.25em}\begin{flushright}\mbox{\footnotesize\citep[#1]{#2}\normalsize}\end{flushright}}
+\newcommand{\exsourcebelow}[2][]{\sn\vspace{-1.25em}\begin{flushright}\mbox{\footnotesize\parencite[#1]{#2}\normalsize}\end{flushright}}
 
 % \gl{}
 %

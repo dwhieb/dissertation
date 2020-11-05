@@ -1,36 +1,24 @@
-\ProvidesFile{unified.bbx}
+\ProvidesFile{langsci-unified.bbx}
 
 % NB: The Unified Style Sheet wants abbreviated "ed(s)", "edn". But using the abbreviate option also abbreviates the names of months. But then dateabbrev=false restores the long names of months
-% biblatex has a "useprefix" option, which makes "von" count for alphabetization; the Unified Stylesheet does not want that, so it is important that this option be disabled (even if an author tries to set it to true)
 
-% For backward compatibility: choose labeldate or labeldateparts depending on the biblatex version
-\@ifpackagelater{biblatex}{2016/09/09}
-{%
-  \ExecuteBibliographyOptions{labeldateparts} % as of biblatex 3.5 (2016/09/10)
+\ExecuteBibliographyOptions{
+  abbreviate,
+  dateabbrev = false,
+  labeldateparts,
+  sorting   = nyt,
+  useprefix = false
 }
-{%
-  \ExecuteBibliographyOptions{labeldate}
-  \def\printlabeldateextra{\printdateextralabel}
-}%
-
-\ExecuteBibliographyOptions{sorting=nyt,abbreviate,dateabbrev=false,useprefix=false}
 
 % biblatex by default calls biblatex.def, we add to this authoryear.bbx, which in turn loads standard.bbx. So, sp-biblatex.bbx is built on top of those styles; once authoryear.bbx is loaded, we tell it not to put in dashes for repeated authors (in accordance with the Unified Stylesheet)
 
 \RequireBibliographyStyle{authoryear}
-\ExecuteBibliographyOptions{dashed=false,isbn=false,eprint=false}
 
-% If an @article entry contains Issuetitle and Editor information, we might
-% not want to print it. The Unified Style Sheet does not offer explicit
-% guidelines on this, but they don't have any examples where either of these
-% pieces of information are actually printed. Therefore, we can offer an option
-% for the user to decide whether to print it. The default will be not to print
-% it since the Unified Style Sheet does not have examples where this information
-% is printed. The user can print it by setting `issueandeditor=true` as a package
-% option when biblatex is called.
-\newtoggle{issueandeditor}
-\DeclareBibliographyOption{issueandeditor}[false]{%
-  \settoggle{issueandeditor}{#1}}
+\ExecuteBibliographyOptions{
+  dashed = false,
+  isbn   = false,
+  eprint = false
+}
 
 % Formatting directives for name lists
 % ------------------------------------------------------------------
@@ -46,7 +34,6 @@
 % In biblatex v3.3 and onwards, the name formatting has changed in a big way. See for example: http://tex.stackexchange.com/questions/299036/biblatex-3-3-name-formatting, https://github.com/plk/biblatex/issues/372, and http://www.texdev.net/2016/03/13/biblatex-a-new-syntax-for-declarenameformat/. The name formats in biblatex.def are not called first-last etc. anymore but given-family etc. And while there are safeguard legacy aliases (\DeclareNameAlias{first-last}{given-family}, for example), the new formats then use macros like \usebibmacro{name:family-given}, which of course our old redefinitions didn't adjust. So, for newer biblatex, we need to do new versions of \renewbibmacro{name:...}.
 
 %% Redefinitions of name:last and name:last-first for old biblatex
-
 \renewbibmacro*{name:last}[4]{%
      \usebibmacro{name:delim}{#3#1}%
      \usebibmacro{name:hook}{#3#1}%
@@ -185,20 +172,24 @@
      \printfield{series}%
      \setunit{\addspace}}%
   \usebibmacro{volume+number+eid}%
-  \iftoggle{issueandeditor}
-    {\setunit{\addspace}%
-     \usebibmacro{issue+date}%
-     \setunit{\addcolon\space}%
-     \usebibmacro{issue}
-     % The following three lines were originally not included inside of
-     % the journal+issuetitle bibmacro. They have been moved inside of
-     % this macro in order to allow them to be controlled by the toggle
-     % `issuetitle` that is defined at the top of this style file.
-     \newunit
-     \usebibmacro{byeditor+others}%
-     \newunit}
-    {}%
   \newunit}
+
+% In case that year is not given, but pubstate. This mainly occurs for titles that are forthcoming, in press, etc.
+\renewbibmacro*{addendum+pubstate}{% Thanks to https://tex.stackexchange.com/a/154367 for the idea
+  \printfield{addendum}%
+  \iffieldequalstr{labeldatesource}{pubstate}{}
+  {\newunit\newblock\lowercase{\printfield{pubstate}}}
+}
+
+\DeclareLabeldate{%
+  \field{date}
+  \field{year}
+  \field{eventdate}
+  \field{origdate}
+  \field{urldate}
+  \field{pubstate}
+  \literal{nodate}
+}
 
 % The next three bib macros are for printing the maintitle and booktitle fields
 % of an @inproceedings entry with an ISSN as an article in accordance with the
@@ -258,27 +249,6 @@
   \setunit{\addcomma\space}%
   \printfield{eid}}
 
-% Because of the weird format "3 May, 2007" specified in the Unified Stylesheet for URL access dates, we need a special way to format the urldate
-
-\newcommand{\mkbibdateunified}[3]{% Year-Month-Day as input --> xx Month, Year
-  \iffieldundef{#3}
-    {}
-    {\stripzeros{\thefield{#3}}%
-     \nobreakspace}%
-  \iffieldundef{#2}
-    {\iffieldundef{#1}%
-      {}%
-      {\stripzeros{\thefield{#1}}}}%
-    {\mkbibmonth{\thefield{#2}}%
-     \iffieldundef{#1}%
-      {}%
-      {\iffieldundef{#3}%
-           {}%
-           {,}%
-         \space\stripzeros{\thefield{#1}}}%
-    }%
-  }%
-
 \renewbibmacro*{url+urldate}{%
   \printfield{url}%
   \iffieldundef{urlyear}%
@@ -329,10 +299,10 @@
     {}
     {\setunit*{\addcolon\space}}%
   \printlist{institution}%
-  \setunit{\addspace}%
-  \printfield{type}%
   \setunit*{\addcomma\space}%
-  \usebibmacro{date}%
+  \usebibmacro{date} %
+  \setunit{\adddot\space}%
+  \printtext[parens]{\printfield{type}}%
   \newunit}
 
 % The following is a hack to satisfy the Unified Stylesheet's decision to give the edition right after the OED as used as a sortlabel.
@@ -355,11 +325,9 @@
 % This gets rid of the Oxford comma in name lists and uses the ampersand rather than "and":
 \renewcommand*{\finalnamedelim}{\addspace\&\addspace}
 \renewcommand*{\finallistdelim}{\addspace\&\addspace}
-
-% no colon after "In" in incollection entries (overriding biblatex.def):
-\renewcommand{\intitlepunct}{\addspace}
+\renewcommand{\intitlepunct}{\addspace} % no colon after "In" in incollection entries (overriding biblatex.def):
 \renewcommand{\subtitlepunct}{\addcolon\space}
-\renewcommand*{\bibpagespunct}{\newunitpunct}  % No comma before pages, just the usual new unit period
+\renewcommand*{\bibpagespunct}{\newunitpunct} % No comma before pages, just the usual new unit period
 
 \DefineBibliographyStrings{english}{%
   edition   = {edn\adddot},
@@ -368,24 +336,11 @@
 
 % basically everything is in sentence case, other than journals and book series (recurring titles)
 \DeclareFieldFormat[article,book,collection,incollection,inproceedings,thesis,unpublished]{titlecase}{\MakeSentenceCase*{#1}}%
-
-% No quotes around titles
-\DeclareFieldFormat[article,inbook,incollection,inproceedings,patent,thesis,unpublished]{title}{#1}
-
-% Just like book titles, thesis titles are in italics
-\DeclareFieldFormat[thesis]{title}{\mkbibemph{#1}}
-
+\DeclareFieldFormat[article,inbook,incollection,inproceedings,patent,thesis,unpublished]{title}{#1} % No quotes around titles
+\DeclareFieldFormat[thesis]{title}{\mkbibemph{#1}} % Just like book titles, thesis titles are in italics
 \DeclareFieldFormat{pages}{#1} % no pp. prefix, took \mkpageprefix out [kvf]
-
-\DeclareFieldFormat{doi}{%
-  \ifhyperref
-    {doi:\href{https://doi.org/#1}{\nolinkurl{#1}}}
-    {doi:\nolinkurl{#1}}}
+\DeclareFieldFormat{doi}{doi\addcolon\href{https://doi.org/#1}{\nolinkurl{#1}}}
 \DeclareFieldFormat{url}{\url{#1}}
-
-% This is for printing the volume field of a proceedings with an ISSN as an article
-% in accordance with the unified style sheet guidelines
-\DeclareFieldFormat{volume:unified:proc-as-article}{#1}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % The bibliography drivers, specifying the formats of each type of entry in the bibliography
@@ -412,7 +367,6 @@
   \newunit\newblock
   \printfield{version}%
   \newunit\newblock
-% \usebibmacro{in:}% We don't use "In: " before journal titles
   \usebibmacro{journal+issuetitle+editor}%
   \newblock% \newblock ensures period before pages
   \usebibmacro{note+pages}%
@@ -483,10 +437,6 @@
 
 % Aliased to ensure no period between the title and the series.
 \DeclareBibliographyAlias{collection}{book}
-
-% @inbook entries look terrible as-is, and have fields very similar to @incollection anyway
-\DeclareBibliographyAlias{inbook}{incollection}
-
 \DeclareBibliographyAlias{incollection}{inproceedings}
 
 % Given the guidelines in the unified style sheet, we should print conference
@@ -650,3 +600,8 @@
      \usebibmacro{related}}
     {}%
   \usebibmacro{finentry}}
+
+%% changes of bibliography style (bbx)
+\DeclareFieldFormat{postnote}{#1}% display pages without page prefix (p., pp.)
+\DeclareBibliographyAlias{inbook}{incollection}% see https://github.com/semprag/biblatex-sp-unified/issues/35
+\DeclareFieldFormat[techreport,report,misc]{titlecase}{\MakeSentenceCase*{#1}}% techreport/report and misc are not genuinely supported by biblatex-sp-unified

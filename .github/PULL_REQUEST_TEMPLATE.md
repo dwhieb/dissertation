@@ -14,7 +14,7 @@
 - [ ] add citations
 - [ ] update bibliography
 - [ ] check new bibliography entries
-- [ ] handle build warnings in console
+- [ ] handle build warnings in console / log
 - [ ] copy to Word and run spelling and grammar check
 - [ ] search for `??` in the PDF
 - [ ] use `samepage` environment on examples that break across pages
