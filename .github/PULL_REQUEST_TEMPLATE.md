@@ -5,5 +5,17 @@
 
 ### Checklist
 - [ ] version bump: `npm version {major|minor|patch}`
-- [ ] compile project: `npm run build`
+- [ ] finish outstanding todo items
+- [ ] add examples
+- [ ] add cross references
+- [ ] add language indexes
+- [ ] add language info (when the language is discussed)
+- [ ] update List of Languages
+- [ ] add citations
+- [ ] update bibliography
+- [ ] check new bibliography entries
+- [ ] handle build warnings in console / log
+- [ ] copy to Word and run spelling and grammar check
+- [ ] search for `??` in the PDF
+- [ ] use `samepage` environment on examples that break across pages
 - [ ] run diff on the PDF using Adobe and inspect differences

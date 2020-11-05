@@ -2,11 +2,19 @@
 
 % FORMATTING
 
-% Bibliography
+% BIBLIOGRAPHY
 \setlength{\bibitemsep}{0.5em}
 
-% Citations
-\let\citeps\parencites
+% Block Quotes
+\renewcommand{\mkblockquote}[4]{\small#1#2#4#3}
+
+% Captions
+\captionsetup{
+  font      = small,
+  format    = hang,
+  labelfont = bf,
+  margin    = 5em
+}
 
 % Header & Footer (fancyhdr package)
 \pagestyle{fancy}
@@ -25,21 +33,56 @@
 
 % Index
 \makeindex[
-  columns=2,
-  intoc,
-  title={Language Index}
+  columns = 2,
+  title   = {Language Index}
 ]
+
+% Interlinear Examples
+\setlength{\glossglue}{1em}
+
+\gdef\foursent#1\\ #2\\ #3\\ #4\\{% #1 = first line, #2 = second line, #3 = third line, #4 = fourth line
+  \getwords(\lineone,\eachwordone)#1 \\%
+  \getwords(\linetwo,\eachwordtwo)#2 \\%
+  \getwords(\linethree,\eachwordthree)#3 \\%
+  \getwords(\linefour,\eachwordfour)#4 \\%
+  \loop
+    \lastword{\eachwordone}{\lineone}{\wordone}%
+    \lastword{\eachwordtwo}{\linetwo}{\wordtwo}%
+    \lastword{\eachwordthree}{\linethree}{\wordthree}%
+    \lastword{\eachwordfour}{\linefour}{\wordfour}%
+    \global\setbox\gline=\hbox{%
+      \unhbox\gline
+      \hskip\glossglue
+      \vtop{%
+        \box\wordone % vtop was vbox
+        \nointerlineskip
+        \box\wordtwo
+        \nointerlineskip
+        \box\wordthree
+        \nointerlineskip
+        \box\wordfour
+      }%
+    }%
+    \testdone
+    \ifnotdone
+  \repeat
+  \egroup% matches \bgroup in \gloss
+  \gl@stop%
+}
 
 % Links
 \hypersetup{
-  citecolor=purple,            % bibliography links
-  citebordercolor={0.5 0 0.5}, % bibliography links underline color
-  colorlinks=true,             % use colored links instead of boxes
-  final=true,
-  linkbordercolor={1 1 1},     % color of internal link underline
-  linkcolor=cyan,              % internal links
-  urlbordercolor={0 0 1},      % color of URL underline
-  urlcolor=blue                % URL links
+  bookmarksopen     = true,        % start with PDF bookmarks expanded
+  bookmarksnumbered = true,        % number PDF bookmarks
+  citecolor         = purple,      % bibliography links
+  citebordercolor   = {0.5 0 0.5}, % bibliography links underline color
+  colorlinks        = true,        % use colored links instead of boxes
+  final             = true,        % turn on all options
+  linkbordercolor   = {1 1 1},     % color of internal link underline
+  linkcolor         = cyan,        % internal links
+  linktoc           = all,         % link all parts of TOC entry
+  urlbordercolor    = {0 0 1},     % color of URL underline
+  urlcolor          = blue         % URL links
 }
 
   % underline links
@@ -49,6 +92,11 @@
     \def\@pdfborderstyle{/S/U/W 1} % Overrides border style set with colorlinks=true
   }
   \makeatother
+
+% List of Tables
+\setlength{\cftbeforetabskip}{0.5em}
+\renewcommand{\cfttabnumwidth}{4.3em} % originally: 2.3em
+\renewcommand{\cfttabaftersnumb}{\hspace*{-2em}}
 
 % Quote
 \let\origbegquote\quote
@@ -106,46 +154,158 @@
 % Text (fontspec, setspace packages)
 \doublespacing
 \setmainfont{Linux Libertine}
+\setmonofont[Scale = MatchLowercase]{Linux Libertine Mono}
+
+% CROSS-REFERENCES
+
+\newcommand{\chref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}} % Chapters: ch:introduction
+\newcommand{\exref}[1]{(\ref{#1})}                       % Examples: ex:1.1
+\newcommand{\secref}[1]{§\ref{#1}}                       % Sections: sec:1.2
+\newcommand{\tabref}[1]{\hyperref[#1]{Table~\ref*{#1}}}  % Tables:   tab:table-name
 
 % COMMANDS
 
-% \dfn
+% \dfn{}
 %
 % For definitions in prose.
 %
 % Example:
 %
 % A \dfn{morpheme} is a minimal meaningful part of a word.
-%
 \DeclareTextFontCommand{\dfn}{\itshape}
 
-% \gl
+% \em{}
+%
+% Emphasized text within linguistic examples
+%
+% Example:
+%
+% \txn{kanakt‑\em{à:ke}}
+\let\em\relax % there's no \RedeclareTextFontCommand
+\DeclareTextFontCommand{\em}{\bfseries\color{red}}
+
+% \emph{}
+% Emphasized text within body text
+% Example:
+%
+% ...the resulting verbs are used for objects that one \emph{causes} something to happen \emph{with}
+%
+\let\emph\relax % there's no \RedeclareTextFontCommand
+\DeclareTextFontCommand{\emph}{\itshape}
+
+% \exinfo{}
+%
+% Information at the top of an example
+%
+% Example:
+%
+% \begin{exe}
+%   \ex\label{ex:1.1}
+%   \exinfo{English (Indo-European > Germanic; England)}
+%   \begin{xlist}
+%     \ex And the spots of paint would change every hundred degrees.
+%     \ex One story does come to my mind though where you painted the foundation coating on the house and got tar all over you.
+%     \ex And it happened to be one of the rare paint jobs.
+%   \end{xlist}
+% \end{exe}
+\newcommand{\exinfo}[1]{\underline{#1}}
+
+% \exsource{}
+%
+% Add citation information for an example
+%
+% Example:
+%
+% \tln{translation}
+% \exsource{Nakayama 2001: 73}
+\newcommand{\exsource}[2][]{\hfill\hspace*{1em}\mbox{\footnotesize\parencite[#1]{#2}\normalsize}}
+
+% \exsourcebelow{}
+%
+% Add citation information below an example
+%
+% Example:
+%
+% \tln{translation}
+% \exsourcebelow{Nakayama 2001: 73}
+\newcommand{\exsourcebelow}[2][]{\sn\vspace{-1.25em}\begin{flushright}\mbox{\footnotesize\parencite[#1]{#2}\normalsize}\end{flushright}}
+
+% \gl{}
 %
 % For glosses of grammatical morphemes. NB: Gloss should be in lowercase in the source code.
 %
 % Example:
 %
 % Mithun (2008) glosses this as \gl{agt}.
-%
 \DeclareTextFontCommand{\gl}{\scshape}
 
-% \inlinetitle
+% \gllll
+%
+% Four-line glosses
+\newbox\linefour%
+\newbox\wordfour%
+\@ifundefined{eachwordfour}{\let\eachwordfour=\rmfamily}{\relax}
+
+\def\gllll% Introduces 4-line text-and-gloss.
+{\begin{flushleft}
+  \ifx\@gsingle1% conditionally force single spacing (hpk/MC)
+    \vskip\baselineskip\def\baselinestretch{1}%
+    \@selfnt\vskip-\baselineskip\fi%
+  \bgroup
+  \foursent
+}
+
+% idx{}
+%
+% Prints the provided text and makes an entry in the index for it.
+\newcommand{\idx}[1]{#1\index{#1}}
+
+% \pubtitle{}
 %
 % Use to style titles of books, journals, etc. in prose
 %
 % Example:
 %
-% In her survey \inlinetitle{The languages of Native North America}, Mithun says\ldots
-%
-\DeclareTextFontCommand{\inlinetitle}{\itshape}
+% In her survey \pubtitle{The languages of Native North America}, Mithun says\ldots
+\DeclareTextFontCommand{\pubtitle}{\itshape}
 
-% \txn
+% \qem{}
+%
+% For my emphasis within quotations. Use \emph{} for original emphasis.
+\DeclareTextFontCommand{\qem}{\bfseries}
+
+% \tln
+%
+% For inline translations.
+%
+% Example:
+%
+% The Chitimacha word \txn{guxt-} \tln{eat} is an example of a verb.
+\newcommand{\tln}[1]{\enquote*{#1}}
+
+% \txn{}
 %
 % For inline mentions of language, i.e. inline examples. \txn is short for 'transcription', since every example / mention is a transcription of some piece of language. NB: This command substitutes non-breaking hyphens for regular hyphens
 %
 % Example:
 %
-% The English Participle \txn{-ing} does is, obviously, specific to English.
+% The English Participle \txn{-ing} is, obviously, specific to English.
 %
 % \newcommand{\txn}[1]{\StrSubstitute{\textit{#1}}{-}{‑}}
 \newcommand{\txn}[1]{\textit{\StrSubstitute{#1}{-}{‑}}}
+
+% EXAMPLES
+% NB: For some reason, these commands have to come later in this file
+
+\makeatletter
+\apptocmd{\@exe}{%
+  \singlespacing
+  \setlength{\itemsep}{1em}%
+}{}{}
+\makeatother
+
+\makeatletter
+\apptocmd{\@xlist}{%
+  \setlength{\itemsep}{1em}%
+}{}{}
+\makeatother

@@ -5,6 +5,7 @@
   oneside,
 ]{book}
 
+% These imports are ordered
 \include{utilities/packages}
 \include{utilities/constants}
 \usepackage{utilities/dissertation}
@@ -14,7 +15,9 @@
 \ifdraft{\include{utilities/development}}{}
 
 % Uncomment to build only the listed chapters
-% \includeonly{title.tex}
+% \includeonly{
+%   frontmatter/languages
+% }
 
 \begin{document}
 
@@ -24,7 +27,7 @@
 
   \ifdraft{
     \begin{singlespace}
-      \listoftodos
+      \listoftodos[To Do]
     \end{singlespace}
   }{}
 

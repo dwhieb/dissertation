@@ -1,31 +1,15 @@
 \backmatter
 
-\include{backmatter/cross-references}
+\include{cross-references}
 
-\chapter*{References}
-\label{ch:references}
+\addtocontents{toc}{\setlength{\cftchapindent}{\cftchapnumwidth}}
 \addcontentsline{toc}{chapter}{References}
 
 \singlespacing
 
-\defbibnote{data}{The references listed in this section are the sources for the interlinear glossed examples in this thesis.}
+\printbibliography[title = References]
+\label{ch:references}
 
-\defbibnote{literature}{The references listed in this section are literature on the topic of this thesis that have been cited in the text.}
-
-\printbibliography[
-  heading=subbibintoc,
-  keyword=data,
-  prenote=data,
-  title={Sources of Examples}
-]
-
-\printbibliography[
-  heading=subbibintoc,
-  keyword=literature,
-  prenote=literature,
-  title={Sources of Literature}
-]
-
+\addcontentsline{toc}{chapter}{Language Index}
+\label{ch:index}
 \printindex
-
-\doublespacing

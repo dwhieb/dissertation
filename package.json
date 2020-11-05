@@ -1,6 +1,6 @@
 {
   "name": "dissertation",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "My Ph.D. dissertation in linguistics at the University of California, Santa Barbara",
   "author": {
     "name": "Daniel W. Hieber",
@@ -37,7 +37,7 @@
     "log-start":     "node thesis/scripts/build/startLog.js",
     "log-end":       "node thesis/scripts/build/endLog.js",
     "quick-bib":     "npm run compile && npm run bib && npm run compile",
-    "quick-build":   "npm run compile && npm run copy-pdf",
+    "quick-build":   "npm run compile",
     "upload":        "node thesis/scripts/build/upload.js",
     "prebuild":      "npm run cleanup && npm run abbreviations && npm run diss-version",
     "build":         "npm run compile && npm run bib && npm run compile",

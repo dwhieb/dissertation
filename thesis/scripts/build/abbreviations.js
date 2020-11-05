@@ -15,9 +15,8 @@ const currentDir = path.dirname(fileURLToPath(import.meta.url));
 
 const abbreviationsChapterPath = path.join(currentDir, `../../src/frontmatter/abbreviations.tex`);
 const abbreviationsListPath    = path.join(currentDir, `../../src/abbreviations.yml`);
-// padding to use at the beginning of each line of the List of Abbreviations table
-const padding                  = 6;
-const tableRegExp              = /(?<beg>% BEGIN ABBREVIATIONS)(?<tableLines>.+?)(?<end>\s+% END ABBREVIATIONS)/su;
+const padding                  = 6; // padding to use at the beginning of each line of the List of Abbreviations table
+const tableRegExp              = /(?<beg>% BEGIN ABBREVIATIONS %)(?<tableLines>.+?)(?<end>\s+% END ABBREVIATIONS %)/su;
 
 void async function generateAbbreviations() {
 
@@ -25,7 +24,6 @@ void async function generateAbbreviations() {
 
   try {
 
-    // Read list of known abbreviations from YAML file
     const yaml = await readFile(abbreviationsListPath, `utf8`);
     const json = yamlParser.parse(yaml);
 
