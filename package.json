@@ -23,26 +23,24 @@
     "url": "git+https://github.com/dwhieb/dissertation.git"
   },
   "engines": {
-    "node": "14.x"
+    "node": "15.x"
   },
   "type": "module",
   "scripts": {
     "abbreviations": "node thesis/scripts/build/abbreviations.js",
-    "anc":           "cd data/English/scripts/ANC && java -Xmx500M -jar ANCTool-2.0.0-jar.jar && cd ../../../..",
-    "bib":           "biber thesis/src/main",
-    "cleanup":       "node thesis/scripts/build/cleanup.js",
-    "compile":       "cd thesis/src && xelatex -halt-on-error main.tex && cd ../..",
-    "copy-pdf":      "node thesis/scripts/build/copyPDF.js",
-    "diss-version":  "node thesis/scripts/build/version.js",
-    "log-start":     "node thesis/scripts/build/startLog.js",
-    "log-end":       "node thesis/scripts/build/endLog.js",
-    "quick-bib":     "npm run compile && npm run bib && npm run compile",
-    "quick-build":   "npm run compile",
-    "upload":        "node thesis/scripts/build/upload.js",
-    "prebuild":      "npm run cleanup && npm run abbreviations && npm run diss-version",
-    "build":         "npm run compile && npm run bib && npm run compile",
-    "postbuild":     "npm run copy-pdf",
-    "preversion":    "npm run log-start && npm run build && npm run log-end && npm run cleanup"
+    "anc": "cd data/English/scripts/ANC && java -Xmx500M -jar ANCTool-2.0.0-jar.jar && cd ../../../..",
+    "bib": "biber thesis/src/main",
+    "cleanup": "node thesis/scripts/build/cleanup.js",
+    "compile": "cd thesis/src && xelatex -halt-on-error main.tex && cd ../..",
+    "copy-pdf": "node thesis/scripts/build/copyPDF.js",
+    "diss-version": "node thesis/scripts/build/version.js",
+    "quick-bib": "npm run compile && npm run bib && npm run compile",
+    "quick-build": "npm run compile",
+    "upload": "node thesis/scripts/build/upload.js",
+    "prebuild": "npm run cleanup && npm run abbreviations && npm run diss-version",
+    "build": "npm run compile && npm run bib && npm run compile",
+    "postbuild": "npm run copy-pdf",
+    "test": "node thesis/scripts/test/abbreviations.js"
   },
   "bin": {
     "generateWordforms": "./stats/scripts/bin/generateWordforms.js"
@@ -59,7 +57,6 @@
     "ora": "^4.0.4",
     "progress": "^2.0.3",
     "recursive-readdir": "^2.2.2",
-    "winston": "^3.3.3",
     "yaml": "^1.10.0",
     "yargs-parser": "^18.1.3"
   }

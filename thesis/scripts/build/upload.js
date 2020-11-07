@@ -22,7 +22,7 @@ void async function upload() {
   try {
 
     if (!process.env.AZURE_STORAGE_KEY) {
-      await import(`../constants/credentials.js`);
+      await import(`./credentials.js`);
     }
 
     const uploadOptions = {

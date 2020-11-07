@@ -1,16 +1,12 @@
-/**
- * It looks like this test file was being written for issue #440, but not yet finished.
- */
-
-import { createRequire } from 'module';
+import { fileURLToPath } from 'url';
 import fs                from 'fs';
 import path              from 'path';
 import recurse           from 'recursive-readdir';
-import rootDir           from '../constants/rootDir.js';
+import yaml              from 'yaml';
 
 const { readFile } = fs.promises;
-// const require      = createRequire(import.meta.url);
-const srcDir       = path.join(rootDir, `src`);
+
+const currentDir = path.dirname(fileURLToPath(import.meta.url));
 
 const whiteList = [
   `abstract.tex`,
@@ -22,21 +18,18 @@ const whiteList = [
   `5-conclusion.tex`,
 ];
 
-function ignoreFilter(filePath, stats) {
-  if (stats.isDirectory()) return false;
-  return !whiteList.includes(path.basename(filePath));
+async function getListGlosses() {
+  const yamlList  = await readFile(path.join(currentDir, `../../src/abbreviations.yml`), `utf8`);
+  const glossData = yaml.parse(yamlList);
+  return new Set(Object.keys(glossData));
 }
 
-async function generateAbbreviations() {
+async function getThesisGlosses() {
 
-  // Get list of relevant TeX files
-  const filePaths = await recurse(srcDir, [ignoreFilter]);
-
-  // Retrieve contents of relevant TeX files
+  const filePaths    = await recurse(path.join(currentDir, `../../src`), [ignoreFilter]);
   const fileContents = await Promise.all(filePaths.map(filePath => readFile(filePath, `utf8`)));
 
-  // Generate a Set of unique glosses from the TeX files
-  const glosses = fileContents.reduce((set, text) => {
+  return fileContents.reduce((set, text) => {
 
     const matches = text.matchAll(/\\gl\{(?<gloss>.+?)\}/gu);
 
@@ -59,7 +52,30 @@ async function generateAbbreviations() {
 
 }
 
-generateAbbreviations();
-// if (require.main === undefined) generateAbbreviations();
+function ignoreFilter(filePath, stats) {
+  if (stats.isDirectory()) return false;
+  return !whiteList.includes(path.basename(filePath));
+}
 
-export default generateAbbreviations;
+/**
+ * Get the symmetric difference between two sets
+ */
+function symmetricDifference(a, b) {
+  return Array.from(a).filter(item => !b.has(item));
+}
+
+void async function generateAbbreviations() {
+
+  const listGlosses    = await getListGlosses();
+  const thesisGlosses  = await getThesisGlosses();
+  const missingGlosses = symmetricDifference(thesisGlosses, listGlosses).sort();
+
+  if (missingGlosses.length) {
+    console.error(`\nWARNING: Some glosses are missing from the abbreviations list.\n`);
+    console.table(missingGlosses);
+    throw new Error(`MissingGlossesError`);
+  } else {
+    console.info(`\nNo missing abbreviations.\n`);
+  }
+
+}();
