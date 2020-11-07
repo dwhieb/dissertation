@@ -23,6 +23,9 @@ jobs:
       - name: install dependencies
         run:  npm ci
 
+      - name: run tests
+        run: npm test
+
       - name: generate dissertation file
         run: npm run build
 
