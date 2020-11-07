@@ -15,7 +15,6 @@
 - [ ] update bibliography
 - [ ] check new bibliography entries
 - [ ] handle build warnings in console / log
-- [ ] copy to Word and run spelling and grammar check
+- [ ] export to Word and run spelling and grammar check
 - [ ] search for `??` in the PDF
 - [ ] use `samepage` environment on examples that break across pages
-- [ ] run diff on the PDF using Adobe and inspect differences
