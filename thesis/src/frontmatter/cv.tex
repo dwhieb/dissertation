@@ -1,11 +1,12 @@
 \newlength{\datewidth}
-\setlength{\datewidth}{6em}
+\setlength{\datewidth}{6.5em}
 
 \renewcommand{\arraystretch}{1.5}
 
 \newenvironment{cvsection}[1]
-{
-  \subsection*{#1}
+{%
+  \subsection*{\large\scshape#1}
+  \vspace{-1em}
   \begin{longtabu} to \textwidth { p{\datewidth} >{\hangindent=\defaulthang}X[l] }
 }
 {\end{longtabu}}
@@ -63,7 +64,8 @@
   2006 & Boren Scholarship, National Security Education Program (NSEP)
 \end{cvsection}
 
-\subsection*{Fields of Study}
+\subsection*{\large\scshape{}Fields of Study}
+\vspace{-1em}
 
 \begin{longtabu} to \textwidth {>{\hangindent=\defaulthang}X[l]}
 
