@@ -72,17 +72,17 @@
 
 % Links
 \hypersetup{
-  bookmarksopen     = true,        % start with PDF bookmarks expanded
-  bookmarksnumbered = true,        % number PDF bookmarks
-  citecolor         = purple,      % bibliography links
-  citebordercolor   = {0.5 0 0.5}, % bibliography links underline color
-  colorlinks        = true,        % use colored links instead of boxes
-  final             = true,        % turn on all options
-  linkbordercolor   = {1 1 1},     % color of internal link underline
-  linkcolor         = cyan,        % internal links
-  linktoc           = all,         % link all parts of TOC entry
-  urlbordercolor    = {0 0 1},     % color of URL underline
-  urlcolor          = blue         % URL links
+  bookmarksopen     = true,           % start with PDF bookmarks expanded
+  bookmarksnumbered = true,           % number PDF bookmarks
+  citecolor         = [rgb]{0 0.5 1}, % bibliography links
+  citebordercolor   = {1 1 1},        % bibliography links underline color
+  colorlinks        = true,           % use colored links instead of boxes
+  final             = true,           % turn on all options
+  linkcolor         = [rgb]{0 0.5 1}, % color for in-document links
+  linkbordercolor   = {1 1 1},        % underline color for in-document links
+  linktoc           = all,            % link all parts of TOC entry
+  urlbordercolor    = {0 0 1},        % color of URL underline
+  urlcolor          = blue            % URL links
 }
 
   % underline links
@@ -127,25 +127,6 @@
 
 \titlespacing*
 {name=\section, numberless}
-{0em} % left margin
-{0em} % vertical space before heading
-{0em} % vertical space after heading
-[0em] % right margin
-
-% Subsection (unnumbered)
-\titleformat
-{name=\subsection, numberless}
-{ % formatting
-  \large
-  \scshape
-}
-{}    % label
-{0em} % separation
-{}    % code before
-[]    % code after
-
-\titlespacing*
-{name=\subsection, numberless}
 {0em} % left margin
 {0em} % vertical space before heading
 {0em} % vertical space after heading
