@@ -1,5 +1,7 @@
 source("stats/scripts/load_data.R")
 
+library(readr)
+
 # This script bins wordforms based on their corpus dispersions
 # (measured using Deviation of Proportions (DP))
 
@@ -29,9 +31,18 @@ select_wordform_from_bin <- function(bin) {
 
 }
 
-bins               <- levels(data_filtered$bins)
-selected_wordforms <- sapply(bins, select_wordform_from_bin)
+bins                          <- levels(data_filtered$bins)
+suggested_wordforms           <- sapply(bins, select_wordform_from_bin)
+suggested_wordforms           <- data.frame(suggested_wordforms)
+colnames(suggested_wordforms) <- c("item")
+data_filtered                 <- data.frame(data_filtered$item, data_filtered$gloss, data_filtered$rel_freq, data_filtered$flexibility)
+colnames(data_filtered)       <- c("item", "gloss", "rel_freq", "flexibility")
+suggested_wordforms           <- merge(data_filtered, suggested_wordforms, by = "item")
 
-connection <- file(output_path)
-writeLines(selected_wordforms, connection, useBytes = TRUE)
-close(connection)
+write_delim(
+  suggested_wordforms,
+  output_path,
+  col_names    = TRUE,
+  delim        = "\t",
+  quote_escape = FALSE
+)
