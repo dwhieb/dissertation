@@ -7,6 +7,9 @@ library(mgcv)
 
 data_small <- load_small()
 
+# For language-specific results (make sure to change filename too)
+# data_small <- data_small[which(data_small$language == "English"), ]
+
 model_small <- bam(
   flexibility ~ s(dispersion),
   data = data_small,
@@ -95,3 +98,8 @@ summary(model_100)
 # OVERALL RESULTS
 # There does not seem to be a significant effect of dispersion on flexibility.
 # If there is an effect, it is quite small and negative.
+# The results are generally the same when examining just English.
+# For Nuuchahnulth, dispersion is significant.
+# For the small corpus of Nuuchahnulth, dispersion is very highly significant (p < .001).
+# For the 100 lexemes of Nuuchahnulth, dispersion is marginally significant (p < .1).
+# In both cases the relationship is linear and slightly negative.

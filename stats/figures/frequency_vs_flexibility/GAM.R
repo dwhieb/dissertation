@@ -8,6 +8,9 @@ library(mgcv)
 data_small              <- load_small()
 data_small$log_rel_freq <- log2(data_small$rel_freq)
 
+# For language-specific results (be sure to change filename too)
+# data_small <- data_small[which(data_small$language == "Nuuchahnulth"), ]
+
 model_small <- bam(
   flexibility ~ s(log_rel_freq),
   data = data_small,
@@ -28,7 +31,7 @@ model_100 <- bam(
 # Plots
 
 png(
-  filename = "stats/figures/frequency_vs_flexibility/GAM.png",
+  filename = "stats/figures/frequency_vs_flexibility/GAM_Nuuchahnulth.png",
   height   = 500,
   width    = 1000,
 )
@@ -97,3 +100,6 @@ summary(model_100)
 # OVERALL RESULTS
 # There does not seem to be a significant effect of frequency on flexibility.
 # If there is an effect, it is small and positive.
+# There are also no significant correlations when examining just English.
+# In the small corpus of Nuuchahnulth, relative frequency shows a highly significant but small positive linear correlation with flexibility.
+# No correlations were found for the 100-lexeme sample of Nuuchahnulth.
