@@ -12,14 +12,24 @@ load_100 <- function() {
 
   Nuu_all  <- load_data("stats/data/Nuuchahnulth.tsv")
   data_Nuu <- merge(Nuu_all, Nuu_lexemes, by = "item")
+  return(data_Nuu)
 
-  data_Eng <- load_data("stats/data/English.tsv")
-
-  data_Eng$language <- "English"
-  data_Nuu$language <- "Nuuchahnulth"
-  data              <- rbind(data_Eng, data_Nuu)
-  data              <- data[which(data$frequency <= 4), ]
-
-  return(data)
+  # Eng_lexemes <- read.delim(
+  #   "data/English/selected_archlexemes.txt",
+  #   encoding = "UTF-8",
+  #   header   = FALSE
+  # )
+  #
+  # colnames(Eng_lexemes) <- c("item")
+  #
+  # Eng_all  <- load_data("stats/data/English.tsv")
+  # data_Eng <- merge(Eng_all, Eng_lexemes, by = "item")
+  #
+  # data_Eng$language <- "English"
+  # data_Nuu$language <- "Nuuchahnulth"
+  # data              <- rbind(data_Eng, data_Nuu)
+  # data              <- data[which(data$frequency <= 4), ]
+  #
+  # return(data)
 
 }

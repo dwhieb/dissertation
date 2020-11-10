@@ -3,9 +3,9 @@ source("stats/scripts/load_data.R")
 # This script bins wordforms based on their corpus dispersions
 # (measured using Deviation of Proportions (DP))
 
-# update this variable to point to the tab-delimited file of wordforms,
-# frequencies, and dispersions
-input_path <- "stats/data/Nuuchahnulth_archlexemes.tsv"
+# update this variable to point to the tab-delimited file of
+# wordforms, frequencies, and dispersions
+input_path <- "stats/data/Nuuchahnulth.tsv"
 
 # update this variable to point to the location where
 # you would like the list of selected wordforms generated
@@ -17,7 +17,7 @@ num_wordforms <- 100
 # load data
 data <- load_data(input_path)
 
-data_filtered      <- data[which(data$frequency >= 2), ]
+data_filtered      <- data[which(data$frequency >= 4), ]
 data_filtered$bins <- cut(data_filtered$dispersion, breaks = num_wordforms)
 
 select_wordform_from_bin <- function(bin) {
