@@ -4,4 +4,4 @@ library(mgcv)
 
 data <- load_100()
 
-model <- gam(flexibility ~ s(rel_freq) + s(dispersion), data = data, method = "REML")
+# model <- gam(flexibility ~ s(rel_freq) + s(dispersion), data = data, method = "REML")
