@@ -12,9 +12,9 @@ data_100              <- load_100()
 data_100$log_rel_freq <- log2(data_100$rel_freq)
 
 # language-specific data (update filenames of plots too)
-lang       <- "Nuuchahnulth"
-data_small <- data_small[which(data_small$language == lang), ]
-data_100   <- data_100[which(data_100$language == lang), ]
+# lang       <- "Nuuchahnulth"
+# data_small <- data_small[which(data_small$language == lang), ]
+# data_100   <- data_100[which(data_100$language == lang), ]
 
 # models
 
@@ -242,6 +242,19 @@ tensor_model <- gam(
 summary(tensor_model)
 
 # NB: "The univariate smooths are additive, and then the interaction is an addition effect on top of those."
+
+# Parametric coefficients:
+#   Estimate Std. Error t value Pr(>|t|)    
+# (Intercept)  0.20215    0.02645   7.643 9.35e-13 ***
+# 
+# Approximate significance of smooth terms:
+#   edf Ref.df     F p-value
+# s(log_rel_freq)             1.928  2.486 0.404   0.811
+# s(dispersion)               1.000  1.000 1.493   0.223
+# ti(log_rel_freq,dispersion) 1.929  2.291 0.932   0.455
+# 
+# R-sq.(adj) =  0.0384   Deviance explained = 6.17%
+# -REML = 8.3547  Scale est. = 0.058134  n = 201
 
 # RESULTS
 # The tensor model shows no significant interactions overall (for either dataset).
