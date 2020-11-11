@@ -34,7 +34,7 @@ create_graphic <- function(data) {
   geom_rug() +
   xlim(-0.1, 1) +
   facet_grid(cols = vars(language))
-  
+
   boxplot <- ggplot(
       data,
       aes(
