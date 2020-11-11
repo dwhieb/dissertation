@@ -4,6 +4,7 @@ library(ggplot2)
 
 file_path <- "stats/data/Nuuchahnulth_stems.tsv"
 data      <- load_data(file_path)
+data      <- data[which(data$frequency >= 4), ]
 
 data <- 1 - data.frame(
   ref  = data$dispersion_ref,

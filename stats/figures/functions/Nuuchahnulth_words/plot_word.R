@@ -21,14 +21,14 @@ plot_word <- function(functions, archlexeme, gloss, title) {
       tern.axis.title.L = element_text(hjust = -0.25)
     ) +
     theme_hidelabels() +
-    Tlab("Predication") +
-    Llab("Reference") +
-    Rlab("Modification") +
+    Tlab("predication") +
+    Llab("reference") +
+    Rlab("modification") +
     tern_limits(T = 1.2, L = 1.2, R = 1.2) +
     geom_polygon(
-      data = limits,
       alpha = 0,
       color = "#BBBBBB",
+      data  = limits,
       size  = 0.5
     ) +
     geom_point() +
