@@ -1,11 +1,13 @@
 source("stats/scripts/load_data.R")
 
+library(readr)
+
 # This script bins wordforms based on their corpus dispersions
 # (measured using Deviation of Proportions (DP))
 
-# update this variable to point to the tab-delimited file of wordforms,
-# frequencies, and dispersions
-input_path <- "stats/data/Nuuchahnulth_archlexemes.tsv"
+# update this variable to point to the tab-delimited file of
+# wordforms, frequencies, and dispersions
+input_path <- "stats/data/Nuuchahnulth.tsv"
 
 # update this variable to point to the location where
 # you would like the list of selected wordforms generated
@@ -17,7 +19,7 @@ num_wordforms <- 100
 # load data
 data <- load_data(input_path)
 
-data_filtered      <- data[which(data$frequency >= 2), ]
+data_filtered      <- data[which(data$frequency >= 4), ]
 data_filtered$bins <- cut(data_filtered$dispersion, breaks = num_wordforms)
 
 select_wordform_from_bin <- function(bin) {
@@ -29,9 +31,18 @@ select_wordform_from_bin <- function(bin) {
 
 }
 
-bins               <- levels(data_filtered$bins)
-selected_wordforms <- sapply(bins, select_wordform_from_bin)
+bins                          <- levels(data_filtered$bins)
+suggested_wordforms           <- sapply(bins, select_wordform_from_bin)
+suggested_wordforms           <- data.frame(suggested_wordforms)
+colnames(suggested_wordforms) <- c("item")
+data_filtered                 <- data.frame(data_filtered$item, data_filtered$gloss, data_filtered$rel_freq, data_filtered$flexibility)
+colnames(data_filtered)       <- c("item", "gloss", "rel_freq", "flexibility")
+suggested_wordforms           <- merge(data_filtered, suggested_wordforms, by = "item")
 
-connection <- file(output_path)
-writeLines(selected_wordforms, connection, useBytes = TRUE)
-close(connection)
+write_delim(
+  suggested_wordforms,
+  output_path,
+  col_names    = TRUE,
+  delim        = "\t",
+  quote_escape = FALSE
+)

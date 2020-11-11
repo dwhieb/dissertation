@@ -351,7 +351,7 @@ This section outlines the steps for creating descriptive and inferential statist
 The following script calculates various statistics regarding the frequencies and dispersions of each archlexeme in the corpus. It produces a single tab-delimited file with columns for each statistic.
 
 ```cmd
-node stats/scripts/bin/getStatistics.js {dataDir} --out {outputPath} --unit "lexeme" --filter data/English/scripts/tokenFilter.js
+node stats/scripts/bin/getStatistics.js {dataDir} --out {outputPath} --unit "stem" --filter data/English/scripts/tokenFilter.js
 ```
 
 You will need to run this script once for English and once for Nuuchahnulth.
@@ -363,7 +363,7 @@ Option     | Description
 dataDir    | The path to the directory of JSON versions of the texts for a language
 `--filter` | The path to a file which exports a filter function. This function should accept a Word object as its argument, and return true if the word should be included in the wordform/lexemes list, false if it should not. Allows the user to filter out unwanted tokens.
 `--out`    | The path to the file where you would like the results outputted
-`--unit`   | Whether to calculate statistics by `wordform`, `lexeme`, or `root`.
+`--unit`   | Whether to calculate statistics by `wordform`, `stem`, or `root`.
 
 The columns in the resulting file are as follows:
 
