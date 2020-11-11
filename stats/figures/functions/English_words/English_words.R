@@ -1,10 +1,10 @@
-library(ggtern)
-
 source("stats/scripts/load_data.R")
 source("stats/scripts/name_cols.R")
 
-file_path <- "stats/data/English_archlexemes.tsv"
-data      <- load_data(file_path)
+library(ggtern)
+
+data <- load_data("stats/data/English_archlexemes.tsv")
+data <- data[which(data$frequency >= 4), ]
 
 rel_freq_broad <- name_cols(data.frame(
   data$ref_rel_broad,
