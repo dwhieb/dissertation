@@ -48,8 +48,6 @@ graphic_100_Nuu <- create_graphic(data_100_Nuu)
 graphic_small_Eng <- create_graphic(data_small_Eng)
 graphic_small_Nuu <- create_graphic(data_small_Nuu)
 
-graphic_small_Nuu
-
 figure_height = 15
 
 ggsave(

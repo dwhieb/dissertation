@@ -41,9 +41,9 @@ create_plot <- function() {
     geom_point(
       size = 2.5
     )
-  
+
   return (plot)
-    
+
 }
 
 plot_all <- create_plot()

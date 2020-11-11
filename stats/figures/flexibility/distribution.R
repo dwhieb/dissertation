@@ -78,8 +78,6 @@ data_small <- load_small()
 graphic_100   <- create_graphic(data_100)
 graphic_small <- create_graphic(data_small)
 
-graphic_100
-
 graphic_height <- 5
 graphic_width  <- 10
 
