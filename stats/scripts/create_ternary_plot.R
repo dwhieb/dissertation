@@ -1,6 +1,6 @@
 source("stats/scripts/name_cols.R")
 
-plot_triangle <- function(
+create_ternary_plot <- function(
   data,
   plot_title = "",
   plot_subtitle = ""
@@ -15,19 +15,22 @@ plot_triangle <- function(
   )
 
   plot <- ggtern(data, aes(ref, pred, mod)) +
-    labs(title = plot_title, subtitle = plot_subtitle) +
+    labs(
+      subtitle = plot_subtitle,
+      title    = plot_title
+    ) +
     theme_minimal() +
+    theme_hidelabels() +
     theme(
       plot.title.position = "plot",
-      plot.title          = element_text(hjust = 0.5),
-      plot.subtitle       = element_text(hjust = 0.5),
+      tern.axis.title.L   = element_text(hjust = -0.25),
       tern.axis.title.R   = element_text(hjust = 1.25),
-      tern.axis.title.L   = element_text(hjust = -0.25)
+      plot.subtitle       = element_text(hjust = 0.5),
+      plot.title          = element_text(hjust = 0.5)
     ) +
-    theme_hidelabels() +
-    Tlab("Predication") +
-    Llab("Reference") +
-    Rlab("Modification") +
+    Tlab("predication") +
+    Llab("reference") +
+    Rlab("modification") +
     tern_limits(T = 1.05, L = 1.05, R = 1.05) +
     geom_polygon(
       data  = limits,
