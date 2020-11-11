@@ -5,7 +5,7 @@ source("stats/figures/aspect/plot_aspect.R")
 library(ggtern)
 library(scales)
 
-data <- load_data("stats/data/Nuuchahnulth.tsv")
+data <- load_data("stats/data/Nuuchahnulth_stems.tsv")
 
 data$dispersion_ref  <- 1 - data$dispersion_ref
 data$dispersion_pred <- 1 - data$dispersion_pred
