@@ -1,21 +1,17 @@
+source("stats/scripts/load_100.R")
+source("stats/scripts/load_small.R")
+
 library(ggplot2)
 
-source("stats/scripts/load_data.R")
-source("stats/scripts/load_Nuuchahnulth_100.R")
+create_plot <- function(data) {
 
-data_English      <- load_data("stats/data/English_archlexemes.tsv")
-data_Nuuchahnulth <- load_Nuuchahnulth_100()
-data_Nuuchahnulth <- data_Nuuchahnulth[which(data_Nuuchahnulth$frequency > 1), ]
-
-data_English_nonzero      <- data_English[which(data_English$flexibility != 0), ]
-data_Nuuchahnulth_nonzero <- data_Nuuchahnulth[which(data_Nuuchahnulth$flexibility != 0), ]
-
-combined <- rbind(
-  data.frame(lang = "English", flexibility = data_English_nonzero$flexibility),
-  data.frame(lang = "Nuuchahnulth", flexibility = data_Nuuchahnulth_nonzero$flexibility)
-)
-
-plot <- ggplot(combined, aes(x = flexibility, color = lang)) +
+  plot <- ggplot(
+    data,
+    aes(
+      color = language,
+      x     = flexibility
+    )
+  ) +
   theme_minimal() +
   theme(
     axis.title.y = element_blank()
@@ -23,8 +19,33 @@ plot <- ggplot(combined, aes(x = flexibility, color = lang)) +
   scale_color_discrete(name = "Language") +
   stat_ecdf(size = 1.5)
 
+  return(plot)
+
+}
+
+data_100   <- load_100()
+data_small <- load_small()
+
+# filter out cases where flexibility = 0
+# (NB: be sure to update filenames for figures)
+# data_100   <- data_100[which(data_100$flexibility != 0), ]
+# data_small <- data_small[which(data_small$flexibility != 0), ]
+
+plot_100   <- create_plot(data_100)
+plot_small <- create_plot(data_small)
+
+fig_dim <- 10
+
 ggsave(
-  "stats/figures/flexibility/ecdf.png",
-  height = 10,
-  width  = 10
+  "stats/figures/flexibility/ecdf_100.png",
+  plot_100,
+  height = fig_dim,
+  width  = fig_dim
+)
+
+ggsave(
+  "stats/figures/flexibility/ecdf_small.png",
+  plot_small,
+  height = fig_dim,
+  width  = fig_dim
 )
