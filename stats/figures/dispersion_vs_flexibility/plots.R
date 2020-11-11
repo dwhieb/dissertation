@@ -11,8 +11,8 @@ create_graphic <- function(data) {
   Eng <- data[which(data$language == "English"), ]
   Nuu <- data[which(data$language == "Nuuchahnulth"), ]
 
-  model_Eng <- lm(Eng$flexibility ~ Eng$dispersion)
-  model_Nuu <- lm(Nuu$flexibility ~ Nuu$dispersion)
+  model_Eng <- lm(Eng$dispersion ~ Eng$flexibility)
+  model_Nuu <- lm(Nuu$dispersion ~ Nuu$flexibility)
 
   models <- data.frame(
     language   = c("English", "Nuuchahnulth"),
@@ -23,7 +23,7 @@ create_graphic <- function(data) {
   # ggplot visualization
 
   histogram <- ggplot(data, aes(
-    x    = flexibility,
+    x    = dispersion,
     fill = language
   )) +
     theme_minimal() +
@@ -44,12 +44,12 @@ create_graphic <- function(data) {
     facet_grid(cols = vars(language))
 
   scatterplot <- ggplot(data, aes(
-    x     = flexibility,
-    y     = dispersion,
+    x     = dispersion,
+    y     = flexibility,
     color = language,
     shape = language
   )) +
-    ylab("dispersion (Deviation of Proportions)") +
+    ylab("flexbility (Shannon H)") +
     theme_minimal() +
     theme(
       axis.text.x  = element_blank(),
@@ -76,7 +76,7 @@ create_graphic <- function(data) {
     facet_grid(cols = vars(language))
 
   boxplot <- ggplot(data, aes(
-    x    = flexibility,
+    x    = dispersion,
     fill = language
   )) +
     theme_minimal() +
@@ -89,6 +89,7 @@ create_graphic <- function(data) {
       plot.margin        = margin(0, 0.5, 0.5, 0.5, "cm"),
       strip.text.x       = element_blank()
     ) +
+    xlab("dispersion (Deviation of Proportions)") +
     geom_boxplot(
       na.rm       = TRUE,
       notch       = TRUE,
