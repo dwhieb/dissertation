@@ -1,12 +1,13 @@
-library(ggplot2)
-
 source("stats/scripts/load_data.R")
 
-file_path <- "stats/data/Nuuchahnulth.tsv"
+library(ggplot2)
+
+file_path <- "stats/data/Nuuchahnulth_stems.tsv"
 data      <- load_data(file_path)
+data      <- data[which(data$frequency >= 4), ]
 
 data <- 1 - data.frame(
-  ref = data$dispersion_ref,
+  ref  = data$dispersion_ref,
   pred = data$dispersion_pred
 )
 
@@ -24,6 +25,6 @@ plot
 ggsave(
   "stats/figures/functions/Nuuchahnulth_ref_vs_pred/plot.png",
   plot,
-  height = 10,
-  width  = 10
+  height = 5,
+  width  = 5
 )
