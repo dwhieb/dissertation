@@ -2,7 +2,7 @@
 
 % FORMATTING
 
-% BIBLIOGRAPHY
+% Bibliography
 \setlength{\bibitemsep}{0.5em}
 
 % Block Quotes
@@ -138,11 +138,22 @@
 \setmonofont[Scale = MatchLowercase]{Linux Libertine Mono}
 
 % CROSS-REFERENCES
+% unstarred = short cross-reference
+% starred   = long cross-reference
 
-\newcommand{\chref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}} % Chapters: ch:introduction
-\newcommand{\exref}[1]{(\ref{#1})}                       % Examples: ex:1.1
-\newcommand{\secref}[1]{§\ref{#1}}                       % Sections: sec:1.2
-\newcommand{\tabref}[1]{\hyperref[#1]{Table~\ref*{#1}}}  % Tables:   tab:table-name
+% Chapters: ch:introduction
+\newcommand*{\chref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}}
+
+% Examples: ex:1.1
+\newcommand*{\exref}[1]{(\ref{#1})}
+
+% Sections: sec:1.2
+\newcommand*{\secref@starred}[1]{\hyperref[#1]{Section~\ref*{#1}}}
+\newcommand*{\secref@unstarred}[1]{§\ref{#1}}
+\newcommand*{\secref}{\@ifstar{\secref@starred}{\secref@unstarred}}
+
+% Tables: tab:table-name
+\newcommand*{\tabref}[1]{\hyperref[#1]{Table~\ref*{#1}}}
 
 % COMMANDS
 
