@@ -12,14 +12,16 @@ const currentDir = path.dirname(fileURLToPath(import.meta.url));
 
 const { unlink: removeFile } = fs.promises;
 
-const whiteList = [
+const allowList = [
   `**/*.aux`,
   `**/*.bbx`,
   `**/*.bib`,
   `**/*.cbx`,
+  `**/*.jpg`,
   `**/*.json`,
   `**/*.md`,
   `**/*.pdf`,
+  `**/*.png`,
   `**/*.sty`,
   `**/*.tex`,
   `**/*.yml`,
@@ -31,7 +33,7 @@ void async function cleanup() {
 
   try {
 
-    const files = await recurse(path.join(currentDir, `../../src`), whiteList);
+    const files = await recurse(path.join(currentDir, `../../src`), allowList);
 
     await Promise.all(files.map(removeFile));
 

@@ -147,6 +147,9 @@
 % Examples: ex:1.1
 \newcommand*{\exref}[1]{(\ref{#1})}
 
+% Figures: fig:figure-name
+\newcommand*{\figref}[1]{\hyperref[#1]{Figure~\ref*{#1}}}
+
 % Sections: sec:1.2
 \newcommand*{\secref@starred}[1]{\hyperref[#1]{Section~\ref*{#1}}}
 \newcommand*{\secref@unstarred}[1]{§\ref{#1}}

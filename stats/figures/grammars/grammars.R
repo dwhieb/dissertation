@@ -19,17 +19,19 @@ png(
 
 plot(
   NA,
-  axes   = FALSE,
-  xlab   = "",
-  xlim   = c(1300, 1650),
-  ylab   = "year",
-  ylim   = c(-0.5, 0.5)
+  axes     = FALSE,
+  cex.lab  = 2,
+  font.lab = 2,
+  xlab     = "",
+  xlim     = c(1300, 1650),
+  ylab     = "year",
+  ylim     = c(-0.5, 0.5)
 )
 
 text(
   1475,
   0.5,
-  cex    = 1.5,
+  cex    = 2,
   font   = 2,
   labels = c("European languages")
 )
@@ -37,7 +39,7 @@ text(
 text(
   1475,
   -0.5,
-  cex    = 1.5,
+  cex    = 2,
   font   = 2,
   labels = c("American languages")
 )
@@ -54,7 +56,7 @@ axis_labels <- seq.int(1300, 1650, 50)
 text(
   axis_labels,
   0,
-  cex    = 1.5,
+  cex    = 2,
   font   = 2,
   labels = axis_labels,
   pos    = 1
@@ -62,7 +64,7 @@ text(
 
 # add data points
 
-Europe_pos   <- c(0.25, 0.375, 0.25, 0.25, 0.25, 0.375, 0.5, 0.25)
+Europe_pos   <- c(0.25, 0.25, 0.25, 0.25, 0.25, 0.375, 0.5, 0.25)
 Americas_pos <- c(0.25, 0.375, 0.5)
 
 segments(
