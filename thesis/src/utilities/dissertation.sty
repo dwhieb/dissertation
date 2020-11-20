@@ -75,23 +75,12 @@
   bookmarksopen     = true,           % start with PDF bookmarks expanded
   bookmarksnumbered = true,           % number PDF bookmarks
   citecolor         = [rgb]{0 0.5 1}, % bibliography links
-  citebordercolor   = {1 1 1},        % bibliography links underline color
   colorlinks        = true,           % use colored links instead of boxes
   final             = true,           % turn on all options
   linkcolor         = [rgb]{0 0.5 1}, % color for in-document links
-  linkbordercolor   = {1 1 1},        % underline color for in-document links
   linktoc           = all,            % link all parts of TOC entry
-  urlbordercolor    = {0 0 1},        % color of URL underline
   urlcolor          = blue            % URL links
 }
-
-  % underline links
-  \makeatletter
-  \Hy@AtBeginDocument{
-    \def\@pdfborder{0 0 1}         % Overrides border definition set with colorlinks=true
-    \def\@pdfborderstyle{/S/U/W 1} % Overrides border style set with colorlinks=true
-  }
-  \makeatother
 
 % List of Tables
 \setlength{\cftbeforetabskip}{0.5em}
