@@ -17,15 +17,16 @@
 \usepackage{setspace}
 \usepackage{tabu}
 \usepackage{tabularx}
-\usepackage{tocloft}
 \usepackage{titlesec}
 \usepackage{titling}
 \usepackage{xcolor}
 \usepackage{xstring}
 
+% enable linguistic examples
 \usepackage{gb4e} % must be loaded late to avoid issues with underscores
 \noautomath       % avoids subsequent issues with gb43 redefining the underscore
 
+% set citation options
 \usepackage[
   backend      = biber,
   maxbibnames  = 99,
@@ -33,6 +34,7 @@
   style        = utilities/unified
 ]{biblatex}
 
+% set page dimensions
 \usepackage[
   top    = 1in,
   bottom = 1in,
@@ -40,11 +42,14 @@
   right  = 1in,
 ]{geometry}
 
-\usepackage[
-  final
-]{graphicx}
+% enable embedded graphics
+\usepackage[final]{graphicx}
 
+% enable superscripts
 \usepackage[super]{nth}
+
+% "titles" option makes hyperlinks to ToC, LoF, LoT work correctly
+\usepackage[titles]{tocloft}
 
 % NB: Best practice is to import the hyperref package last
 \usepackage{hyperref}
