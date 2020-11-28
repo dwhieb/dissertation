@@ -204,7 +204,7 @@
 % Example:
 %
 % \tln{translation}
-% \exsource{Nakayama 2001: 73}
+% \exsource[73]{Nakayama2001}
 \newcommand{\exsource}[2][]{\hfill\hspace*{1em}\mbox{\footnotesize\parencite[#1]{#2}\normalsize}}
 
 % \exsourcebelow{}
@@ -214,8 +214,17 @@
 % Example:
 %
 % \tln{translation}
-% \exsourcebelow{Nakayama 2001: 73}
+% \exsourcebelow[73]{Nakayama2001}
 \newcommand{\exsourcebelow}[2][]{\sn\vspace{-1.25em}\begin{flushright}\mbox{\footnotesize\parencite[#1]{#2}\normalsize}\end{flushright}}
+
+% \foreign{}
+%
+% Phrase in a foreign language
+%
+% Example:
+%
+% …lexicalized as a plural-only (\foreign{plurale tantum}) noun…
+\DeclareTextFontCommand{\foreign}{\itshape}
 
 % \gl{}
 %
