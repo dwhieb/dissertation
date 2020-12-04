@@ -3,13 +3,16 @@
 \include{cross-references}
 
 \addtocontents{toc}{\setlength{\cftchapindent}{\cftchapnumwidth}}
-\addcontentsline{toc}{chapter}{References}
-
 \singlespacing
 
-\printbibliography[title = References]
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{References}
 \label{ch:references}
+\printbibliography[title = References]
 
+\clearpage
+\phantomsection
 \addcontentsline{toc}{chapter}{Language Index}
 \label{ch:index}
 \printindex
