@@ -7,6 +7,7 @@
 - [ ] version bump: `npm version {major|minor|patch}`
 - [ ] finish outstanding todo items
 - [ ] add examples
+- [ ] update List of Abbreviations
 - [ ] renumber examples and cross-references to them
 - [ ] add cross references
 - [ ] add language indexes
