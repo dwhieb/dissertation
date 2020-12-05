@@ -13,8 +13,10 @@
 - [ ] add language indexes
 - [ ] update List of Languages
 - [ ] add citations
-- [ ] remove unused references
+- [ ] add BibTeX references
+- [ ] add DOIs
 - [ ] update bibliography
+- [ ] remove unused references
 - [ ] check new bibliography entries
 - [ ] handle build warnings in console / log
 - [ ] export to Word and run spelling and grammar check
