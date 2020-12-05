@@ -13,6 +13,7 @@
 - [ ] add language indexes
 - [ ] update List of Languages
 - [ ] add citations
+- [ ] remove unused references
 - [ ] update bibliography
 - [ ] check new bibliography entries
 - [ ] handle build warnings in console / log
