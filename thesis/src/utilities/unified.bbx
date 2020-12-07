@@ -178,7 +178,7 @@
 \renewbibmacro*{addendum+pubstate}{% Thanks to https://tex.stackexchange.com/a/154367 for the idea
   \printfield{addendum}%
   \iffieldequalstr{labeldatesource}{pubstate}{}
-  {\newunit\newblock\lowercase{\printfield{pubstate}}}
+  {\newunit\newblock\printfield{pubstate}}
 }
 
 \DeclareLabeldate{%
