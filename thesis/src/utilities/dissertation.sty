@@ -134,6 +134,9 @@
 % unstarred = short cross-reference
 % starred   = long cross-reference
 
+% Appendices: app:grammars
+\newcommand*{\appref}[1]{\hyperref[#1]{Appendix~\ref*{#1}}}
+
 % Chapters: ch:introduction
 \newcommand*{\chref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}}
 
@@ -290,6 +293,12 @@
 %
 % \newcommand{\txn}[1]{\StrSubstitute{\textit{#1}}{-}{‑}}
 \newcommand{\txn}[1]{\textit{\StrSubstitute{#1}{-}{‑}}}
+
+% \vfix
+%
+% Removes extraneous vertical space in examples. Often have to use at top level of examples, after exinfo and before translation.
+%
+\newcommand{\vfix}{\vspace{-0.75em}}
 
 % EXAMPLES
 % NB: For some reason, these commands have to come later in this file

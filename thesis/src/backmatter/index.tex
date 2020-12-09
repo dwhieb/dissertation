@@ -1,9 +1,10 @@
-\backmatter
-
-\include{cross-references}
-
 \addtocontents{toc}{\setlength{\cftchapindent}{\cftchapnumwidth}}
 \singlespacing
+
+\appendix
+\include{backmatter/appendix}
+
+\backmatter
 
 \clearpage
 \phantomsection
@@ -14,4 +15,5 @@
 \clearpage
 \phantomsection
 \label{ch:index}
+\include{cross-references}
 \printindex
