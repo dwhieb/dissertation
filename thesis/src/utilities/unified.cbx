@@ -42,7 +42,7 @@
         \usebibmacro{cite:label}%
         \setunit{\addspace}%
       }%
-      \printtext[bibhyperref]{% Include labelname in hyperlink
+      \printtext[bibhyperref]{%
         \DeclareFieldAlias{bibhyperref}{default}% Prevent nested hyperlinks
         \usebibmacro{cite:labelyear+extradate}%
       }%
@@ -56,7 +56,7 @@
             \printnames{labelname}%
             \setunit{\nameyeardelim}%
           }%
-          \printtext[bibhyperref]{% Include labelname in hyperlink
+          \printtext[bibhyperref]{%
             \DeclareFieldAlias{bibhyperref}{default}% Prevent nested hyperlinks
             \usebibmacro{cite:labelyear+extradate}%
           }%
@@ -123,14 +123,16 @@
         }%
       }
       {%
-        \printtext{% Include labelname in hyperlink
-          \DeclareFieldAlias{bibhyperref}{default}% Prevent nested hyperlinks
+        \printtext{%
           \printnames{labelname}%
           \setunit{%
             \global\booltrue{cbx:parens}%
             \addspace\bibopenparen%
           }%
           \ifnumequal{\value{citecount}}{1}{\usebibmacro{prenote}}{}%
+        }%
+        \printtext[bibhyperref]{%
+          \DeclareFieldAlias{bibhyperref}{default}% Prevent nested hyperlinks
           \iffieldundef{shorthand}{%
             \iffieldundef{labelyear}
               {\usebibmacro{cite:label}}
@@ -140,6 +142,8 @@
             \usebibmacro{cite:shorthand}%
             \global\undef\cbx@lastyear%
           }%
+        }%
+        \printtext{%
           \ifthenelse{%
             \iffieldundef{postnote}\AND\(\value{multicitetotal}=0\AND\value{citetotal}=1\)%
           }{%
