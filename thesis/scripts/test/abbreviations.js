@@ -8,7 +8,7 @@ const { readFile } = fs.promises;
 
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 
-const whiteList = [
+const allowList = [
   `abstract.tex`,
   `conventions.tex`,
   `1-introduction.tex`,
@@ -54,7 +54,7 @@ async function getThesisGlosses() {
 
 function ignoreFilter(filePath, stats) {
   if (stats.isDirectory()) return false;
-  return !whiteList.includes(path.basename(filePath));
+  return !allowList.includes(path.basename(filePath));
 }
 
 /**

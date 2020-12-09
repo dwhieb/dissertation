@@ -17,6 +17,20 @@ const abbreviationsChapterPath = path.join(currentDir, `../../src/frontmatter/ab
 const abbreviationsListPath    = path.join(currentDir, `../../src/abbreviations.yml`);
 const padding                  = 6; // padding to use at the beginning of each line of the List of Abbreviations table
 const tableRegExp              = /(?<beg>% BEGIN ABBREVIATIONS %)(?<tableLines>.+?)(?<end>\s+% END ABBREVIATIONS %)/su;
+const columnLength             = 28;
+
+function chunk(arr, size) {
+  return Array.from(
+    { length: Math.ceil(arr.length / size) },
+    (item, i) => arr.slice(i * size, (i * size) + size),
+  );
+}
+
+function createColumn(rows) {
+  rows.unshift(`    \\begin{tabular}{ p{5em} l }`);
+  rows.push(`    \\end{tabular}`);
+  return rows.join(`\r\n`);
+}
 
 void async function generateAbbreviations() {
 
@@ -32,11 +46,13 @@ void async function generateAbbreviations() {
     .map(([abbr, meaning]) => {
       const str = `\\gl{${abbr}} & ${meaning}\\\\`;
       return str.padStart(str.length + padding);
-    })
-    .join(`\r\n`);
+    });
+
+    const groups    = chunk(tableLines, columnLength);
+    const tableText = groups.map(createColumn).join(`\r\n\r\n`);
 
     const oldTeX = await readFile(abbreviationsChapterPath, `utf8`);
-    const newTeX = oldTeX.replace(tableRegExp, `$1\r\n${tableLines}$3`);
+    const newTeX = oldTeX.replace(tableRegExp, `$1\r\n${tableText}$3`);
 
     await writeFile(abbreviationsChapterPath, newTeX, `utf8`);
 

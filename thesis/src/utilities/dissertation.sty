@@ -2,7 +2,7 @@
 
 % FORMATTING
 
-% BIBLIOGRAPHY
+% Bibliography
 \setlength{\bibitemsep}{0.5em}
 
 % Block Quotes
@@ -23,6 +23,9 @@
 \fancyhf{}
 \fancyfoot[C]{\thepage}
 
+% Headings
+\setcounter{secnumdepth}{3}
+
 % Indents
 \newlength{\defaulthang}
 \setlength{\defaulthang}{1.5em}
@@ -34,7 +37,8 @@
 % Index
 \makeindex[
   columns = 2,
-  title   = {Language Index}
+  intoc,
+  title = {Language Index}
 ]
 
 % Interlinear Examples
@@ -75,23 +79,12 @@
   bookmarksopen     = true,           % start with PDF bookmarks expanded
   bookmarksnumbered = true,           % number PDF bookmarks
   citecolor         = [rgb]{0 0.5 1}, % bibliography links
-  citebordercolor   = {1 1 1},        % bibliography links underline color
   colorlinks        = true,           % use colored links instead of boxes
   final             = true,           % turn on all options
   linkcolor         = [rgb]{0 0.5 1}, % color for in-document links
-  linkbordercolor   = {1 1 1},        % underline color for in-document links
   linktoc           = all,            % link all parts of TOC entry
-  urlbordercolor    = {0 0 1},        % color of URL underline
   urlcolor          = blue            % URL links
 }
-
-  % underline links
-  \makeatletter
-  \Hy@AtBeginDocument{
-    \def\@pdfborder{0 0 1}         % Overrides border definition set with colorlinks=true
-    \def\@pdfborderstyle{/S/U/W 1} % Overrides border style set with colorlinks=true
-  }
-  \makeatother
 
 % List of Tables
 \setlength{\cftbeforetabskip}{0.5em}
@@ -138,11 +131,28 @@
 \setmonofont[Scale = MatchLowercase]{Linux Libertine Mono}
 
 % CROSS-REFERENCES
+% unstarred = short cross-reference
+% starred   = long cross-reference
 
-\newcommand{\chref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}} % Chapters: ch:introduction
-\newcommand{\exref}[1]{(\ref{#1})}                       % Examples: ex:1.1
-\newcommand{\secref}[1]{§\ref{#1}}                       % Sections: sec:1.2
-\newcommand{\tabref}[1]{\hyperref[#1]{Table~\ref*{#1}}}  % Tables:   tab:table-name
+% Appendices: app:grammars
+\newcommand*{\appref}[1]{\hyperref[#1]{Appendix~\ref*{#1}}}
+
+% Chapters: ch:introduction
+\newcommand*{\chref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}}
+
+% Examples: ex:1.1
+\newcommand*{\exref}[1]{(\ref{#1})}
+
+% Figures: fig:figure-name
+\newcommand*{\figref}[1]{\hyperref[#1]{Figure~\ref*{#1}}}
+
+% Sections: sec:1.2
+\newcommand*{\secref@starred}[1]{\hyperref[#1]{Section~\ref*{#1}}}
+\newcommand*{\secref@unstarred}[1]{§\ref{#1}}
+\newcommand*{\secref}{\@ifstar{\secref@starred}{\secref@unstarred}}
+
+% Tables: tab:table-name
+\newcommand*{\tabref}[1]{\hyperref[#1]{Table~\ref*{#1}}}
 
 % COMMANDS
 
@@ -198,7 +208,7 @@
 % Example:
 %
 % \tln{translation}
-% \exsource{Nakayama 2001: 73}
+% \exsource[73]{Nakayama2001}
 \newcommand{\exsource}[2][]{\hfill\hspace*{1em}\mbox{\footnotesize\parencite[#1]{#2}\normalsize}}
 
 % \exsourcebelow{}
@@ -208,8 +218,17 @@
 % Example:
 %
 % \tln{translation}
-% \exsourcebelow{Nakayama 2001: 73}
+% \exsourcebelow[73]{Nakayama2001}
 \newcommand{\exsourcebelow}[2][]{\sn\vspace{-1.25em}\begin{flushright}\mbox{\footnotesize\parencite[#1]{#2}\normalsize}\end{flushright}}
+
+% \foreign{}
+%
+% Phrase in a foreign language
+%
+% Example:
+%
+% …lexicalized as a plural-only (\foreign{plurale tantum}) noun…
+\DeclareTextFontCommand{\foreign}{\itshape}
 
 % \gl{}
 %
@@ -274,6 +293,12 @@
 %
 % \newcommand{\txn}[1]{\StrSubstitute{\textit{#1}}{-}{‑}}
 \newcommand{\txn}[1]{\textit{\StrSubstitute{#1}{-}{‑}}}
+
+% \vfix
+%
+% Removes extraneous vertical space in examples. Often have to use at top level of examples, after exinfo and before translation.
+%
+\newcommand{\vfix}{\vspace{-0.75em}}
 
 % EXAMPLES
 % NB: For some reason, these commands have to come later in this file

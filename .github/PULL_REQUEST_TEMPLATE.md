@@ -7,12 +7,16 @@
 - [ ] version bump: `npm version {major|minor|patch}`
 - [ ] finish outstanding todo items
 - [ ] add examples
+- [ ] update List of Abbreviations
+- [ ] renumber examples and cross-references to them
 - [ ] add cross references
 - [ ] add language indexes
-- [ ] add language info (when the language is discussed)
 - [ ] update List of Languages
 - [ ] add citations
+- [ ] add BibTeX references
+- [ ] add DOIs
 - [ ] update bibliography
+- [ ] remove unused references
 - [ ] check new bibliography entries
 - [ ] handle build warnings in console / log
 - [ ] export to Word and run spelling and grammar check
