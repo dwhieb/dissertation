@@ -164,57 +164,87 @@
 }
 
 \newbibmacro*{posscite}{% Based on textcite bib macro above
-  \iffieldequals{namehash}{\cbx@lasthash}
-    {\iffieldundef{shorthand}
-       {\usebibmacro{labelyearrepeat}}
-       {\setunit{\compcitedelim}%
-        \usebibmacro{cite:shorthand}%
-        \global\undef\cbx@lastyear}}
-    {\ifnameundef{labelname}
-       {\printtext{% Include labelname in hyperlink
-          \DeclareFieldAlias{bibhyperref}{default}% Prevent nested hyperlinks
-          \iffieldundef{shorthand}
-            {\usebibmacro{cite:label}%
-             \setunit{%
-               \global\booltrue{cbx:parens}%
-               \addspace\bibopenparen}%
-             \ifnumequal{\value{citecount}}{1}
-               {\usebibmacro{prenote}}
-               {}%
-             \usebibmacro{cite:labelyear+extradate}}
-            {\usebibmacro{cite:shorthand}}%
-          \ifthenelse{\iffieldundef{postnote}\AND
-                      \(\value{multicitetotal}=0\AND\value{citetotal}=1\)}
-            {\bibcloseparen% Include closing parenthesis in hyperlink
-             \global\boolfalse{cbx:parens}}
-            {}}}
-       {\printtext{% Include labelname in hyperlink
-          \DeclareFieldAlias{bibhyperref}{default}% Prevent nested hyperlinks
-          \printnames{labelname}'s%
+  \iffieldequals{namehash}{\cbx@lasthash}{%
+    \iffieldundef{shorthand}
+    {\usebibmacro{labelyearrepeat}}
+    {%
+      \setunit{\compcitedelim}%
+      \usebibmacro{cite:shorthand}%
+      \global\undef\cbx@lastyear%
+    }%
+  }{%
+    \ifnameundef{labelname}{%
+      \iffieldundef{shorthand}{%
+        \printtext{%
+          \usebibmacro{cite:label}%
           \setunit{%
             \global\booltrue{cbx:parens}%
-            \addspace\bibopenparen}%
+            \addspace\bibopenparen%
+          }%
           \ifnumequal{\value{citecount}}{1}
-            {\usebibmacro{prenote}}
-            {}%
-          \iffieldundef{shorthand}
-            {\iffieldundef{labelyear}
-               {\usebibmacro{cite:label}}
-               {\usebibmacro{cite:labelyear+extradate}}%
-             \savefield{labelyear}{\cbx@lastyear}}
-            {\usebibmacro{cite:shorthand}%
-             \global\undef\cbx@lastyear}%
-          \ifthenelse{\iffieldundef{postnote}\AND
-                      \(\value{multicitetotal}=0\AND\value{citetotal}=1\)}
-            {\bibcloseparen% Include closing parenthesis in hyperlink
-             \global\boolfalse{cbx:parens}}
-            {}}%
-          \savefield{namehash}{\cbx@lasthash}}}%
+          {\usebibmacro{prenote}}
+          {}%
+        }%
+        \printtext[bibhyperref]{% Include labelname in hyperlink
+          \DeclareFieldAlias{bibhyperref}{default}% Prevent nested hyperlinks
+          \usebibmacro{cite:labelyear+extradate}%
+        }%
+      }{%
+        \printtext{%
+          \usebibmacro{cite:shorthand}%
+        }%
+      }%
+      \printtext{%
+        \ifthenelse{%
+          \iffieldundef{postnote}\AND\(\value{multicitetotal}=0\AND\value{citetotal}=1\)%
+        }{%
+          \bibcloseparen% Include closing parenthesis in hyperlink
+          \global\boolfalse{cbx:parens}%
+        }
+        {}%
+      }%
+    }{%
+      \printtext{%
+        \printnames{labelname}'s%
+        \setunit{%
+          \global\booltrue{cbx:parens}%
+          \addspace\bibopenparen%
+        }%
+        \ifnumequal{\value{citecount}}{1}
+        {\usebibmacro{prenote}}
+        {}%
+      }%
+      \printtext[bibhyperref]{% Include labelname in hyperlink
+        \DeclareFieldAlias{bibhyperref}{default}% Prevent nested hyperlinks
+        \iffieldundef{shorthand}{%
+          \iffieldundef{labelyear}
+          {\usebibmacro{cite:label}}
+          {\usebibmacro{cite:labelyear+extradate}}%
+          \savefield{labelyear}{\cbx@lastyear}%
+        }{%
+          \usebibmacro{cite:shorthand}%
+          \global\undef\cbx@lastyear%
+        }%
+      }%
+      \printtext{%
+        \ifthenelse{%
+          \iffieldundef{postnote}\AND\(\value{multicitetotal}=0\AND\value{citetotal}=1\)%
+        }{%
+          \bibcloseparen% Include closing parenthesis in hyperlink
+          \global\boolfalse{cbx:parens}%
+        }
+        {}%
+      }%
+      \savefield{namehash}{\cbx@lasthash}%
+    }%
+  }%
   \setunit{%
     \ifbool{cbx:parens}
-      {\bibcloseparen\global\boolfalse{cbx:parens}}
-      {}%
-    \multicitedelim}}
+    {\bibcloseparen\global\boolfalse{cbx:parens}}
+    {}%
+    \multicitedelim%
+  }%
+}
 
 \newbibmacro*{cite:shorthand}{%
   \printtext{\printfield{shorthand}}}
@@ -338,7 +368,7 @@
   {\ifciteindex
      {\indexnames{labelname}}
      {}%
-   \printtext{\printnames{labelname}}}
+   \printtext[bibhyperref]{\printnames{labelname}}}
   {\multicitedelim}
   {\usebibmacro{postnote}}
 
