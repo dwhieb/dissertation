@@ -74,40 +74,6 @@
   \gl@stop%
 }
 
-\gdef\fivesent#1\\ #2\\ #3\\ #4\\ #5\\{% #1 = first line, #2 = second line, #3 = third line, #4 = fourth line, #5 = fifth line
-  \getwords(\lineone,\eachwordone)#1 \\%
-  \getwords(\linetwo,\eachwordtwo)#2 \\%
-  \getwords(\linethree,\eachwordthree)#3 \\%
-  \getwords(\linefour,\eachwordfour)#4 \\%
-  \getwords(\linefive,\eachwordfive)#5 \\%
-  \loop
-    \lastword{\eachwordone}{\lineone}{\wordone}%
-    \lastword{\eachwordtwo}{\linetwo}{\wordtwo}%
-    \lastword{\eachwordthree}{\linethree}{\wordthree}%
-    \lastword{\eachwordfour}{\linefour}{\wordfour}%
-    \lastword{\eachwordfive}{\linefive}{\wordfive}%
-    \global\setbox\gline=\hbox{%
-      \unhbox\gline
-      \hskip\glossglue
-      \vtop{%
-        \box\wordone % vtop was vbox
-        \nointerlineskip
-        \box\wordtwo
-        \nointerlineskip
-        \box\wordthree
-        \nointerlineskip
-        \box\wordfour
-        \nointerlineskip
-        \box\wordfive
-      }%
-    }%
-    \testdone
-    \ifnotdone
-  \repeat
-  \egroup% matches \bgroup in \gloss
-  \gl@stop%
-}
-
 % Links
 \hypersetup{
   bookmarksopen     = true,           % start with PDF bookmarks expanded
@@ -287,22 +253,6 @@
     \@selfnt\vskip-\baselineskip\fi%
   \bgroup
   \foursent
-}
-
-% \glllll
-%
-% Five-line glosses
-\newbox\linefive%
-\newbox\wordfive%
-\@ifundefined{eachwordfive}{\let\eachwordfive=\rmfamily}{\relax}
-
-\def\glllll% Introduces 5-line text-and-gloss.
-{\begin{flushleft}
-  \ifx\@gsingle1% conditionally force single spacing (hpk/MC)
-    \vskip\baselineskip\def\baselinestretch{1}%
-    \@selfnt\vskip-\baselineskip\fi%
-  \bgroup
-  \fivesent
 }
 
 % idx{}
