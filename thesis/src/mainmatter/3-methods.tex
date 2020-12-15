@@ -12,8 +12,43 @@ The second self-imposed requirement for this study is adherence to the \href{htt
 
 Finally, as a matter of scientific accountability, this study is designed to be replicable using the same or other datasets. All of the technical details regarding how to acquire the data, annotate it, and run statistical analyses for those data are documented in the GitHub repository for this project, which may be viewed at \url{https://github.com/dwhieb/dissertation}.
 
+The remainder of this chapter details the methods used to answer each of the major research questions presented in \chref{ch:introduction}. The core empirical question addressed by this study is \ref{R1}: \enquote{How flexible are lexical items in English and Nuuchahnulth?} The other two research questions build on this one. To answer this core question, I count the frequency with which stems are used for each of the three functions of reference, predication, and modification in corpora for each language. \secref*{sec:3.2} describes the corpora used, where to acquire the data, and how lexical items in the corpora were selected for annotation. \secref*{sec:3.3} describes the details of this annotation procedure. Finally, \secref*{sec:3.4} explains how to use this frequency data to calculate a measure of lexical flexibility for each of the lexical items in the sample. This procedure for quantifying lexical flexibility based on corpus data is the primary methodological contribution of this thesis.
+
 \section{Data}
 \label{sec:3.2}
+
+* quick recap of languages and corpora chosen
+* how to obtain each corpus
+* cannibalize / quickly summarize content from Ch. 1
+
+The sheer size of the OANC—even when considering just the smaller, spoken portion of 3.2 million tokens—made it practically impossible to tag every token in the corpus for its discourse function for the time being. At the opposite end of the spectrum, the Nuuchahnulth corpus is small enough ($\sim8,300$ tokens) that it was possible to tag every single lexical token in the corpus. Given this size disparity, it was important to sample lexical items from each corpus in such a way as to make them reasonably comparable. I did this by extracting two kinds of samples from each corpus: 1) a 100-item sample of lexemes randomly selected from different dispersion bins, and 2) a small corpus sample ($\less10,000$ tokens) for which all lexical items in the sample were annotated.
+
+To create the 100-lexeme samples, I first \dfn{lemmatized} each corpus. For every lexical token in the corpus, I programmatically determined the lemma associated with that particular wordform. For example, the English wordforms \txn{knows} and \txn{knew} were associated with the lemma \txn{know}. For English, lemmatization was accomplished with the \href{http://www.nltk.org/}{Natural Language Toolkit} for Python \parencite{BirdKleinLoper2009}, using the Wordnet lemmatizer. The OANC includes Penn tags for parts of speech, so I was able to use those part-of-speech tags with Wordnet's \texttt{lemmatize()} method to improve lemmatization. For Nuuchahnulth, lemmatization simply involved programmatically stripping away the inflectional morphology from each token, leaving just the stem. For example, the following token from the corpus was lemmatized as an instance of the stem \txn{ʔam-umɬ-} \tln{first‑be.born}. Since the entire Nuuchahnulth corpus is interlinearized with glosses and stored in DLx JSON format \parencite{Hieber2020a}, this was accomplished with a simple Node (JavaScript) script.
+
+\begin{exe}
+  \ex\label{ex:3.1}
+  \exinfo{Nuuchahnulth (Wakashan > Southern Wakashan)}
+  \gllll ʔaamumɬʔaƛquu\\
+         ʔam‑umɬ‑ʼaƛ‑quː\\
+         first‑be.born‑\gl{fin}‑\gl{cond}\\
+         when.first.born\\
+         \tln{when [a baby] was born}
+  \exsource[Afterbirth 1]{Little2003}
+\end{exe}
+
+* calculated corpus frequency
+* calculated corpus dispersion
+* binned lexemes into 100 bins based on corpus dispersion
+* randomly selected one lexeme from each bin
+* ignored:
+  - words with punctuation or numbers
+  - code-switching
+  - transcategorial words (so not \txn{be})
+  - words with a raw corpus frequency < 4 (because at least 4 tokens are needed to return a statistically significant value for the flexibility metric to be presented in Section XX)
+  - Some of the archlexemes I investigated encompass more than one historically unrelated sense. For example, the two primary senses of the English word _like_ —'be pleasing' and 'be similar'—are historically unrelated. In these cases, I chose one of the historical forms (in this case, 'be pleasing') and annotated only uses relating to that form, removing tokens of any other words from the data. I tried to choose the more frequent use in each case.
+* complete list of lexemes sampled from each corpus is given in Appendix, along with their frequencies and other statistical information
+* result: lexemes from a range of frequencies (cite the low and high frequencies for English)
+* result: number of tokens to take (380,000 for English)
 
 \section{Methods}
 \label{sec:3.3}
