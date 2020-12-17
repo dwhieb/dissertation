@@ -17,7 +17,7 @@ The remainder of this chapter details the methods used to answer each of the maj
 \section{Data}
 \label{sec:3.2}
 
-In \secref*{sec:1.3}, I discussed the motivations for using English and Nuuchahnulth as the languages of focus in this study. Both languages have featured prominently in the literature on lexical flexibility, with researchers taking opposite positions as to their overall flexibility. For English, I opted to use the \href{http://www.anc.org/}{Open American National Corpus} (OANC), a 15-million-token open access corpus of American English \parencite{IdeSuderman2005}. I restricted my analysis to just the spoken portion of the corpus, comprising approximately 3.2 million tokens, so that the data would be comparable to the spoken corpus of Nuuchahnulth and other documentary corpora. The spoken portion of the corpus itself consists of two distinct subcorpora—the \href{https://newsouthvoices.uncc.edu/}{Charlotte Narrative \& Conversation Collection} \parentext{the \enquote{Charlotte corpus}} and the \href{https://catalog.ldc.upenn.edu/LDC97S62}{Switchboard Corpus}. The Open American National Corpus can be obtained for free at \url{http://www.anc.org/}.
+In \secref*{sec:1.3}, I discussed the motivations for using English and Nuuchahnulth as the languages of focus in this study. Both languages have featured prominently in the literature on lexical flexibility, with researchers taking opposite positions as to their overall flexibility. For English, I opted to use the \href{http://www.anc.org/}{Open American National Corpus} (OANC), a 15-million-token open access corpus of American English \parencite{OANC}. I restricted my analysis to just the spoken portion of the corpus, comprising approximately 3.2 million tokens, so that the data would be comparable to the spoken corpus of Nuuchahnulth and other documentary corpora. The spoken portion of the corpus itself consists of two distinct subcorpora—the \href{https://newsouthvoices.uncc.edu/}{Charlotte Narrative \& Conversation Collection} \parentext{the \enquote{Charlotte corpus}} and the \href{https://catalog.ldc.upenn.edu/LDC97S62}{Switchboard Corpus}. The Open American National Corpus can be obtained for free at \url{http://www.anc.org/}.
 
 The data for Nuuchahnulth come from a documentary corpus compiled by Toshihide Nakayama and published in \textcite{Little2003} and \textcite{Louie2003}. The corpus consists of 24 texts by two speakers (Caroline Little and George Louie), containing 2,081 utterances and 8,366 tokens. The texts are personal narratives, traditional stories, and procedural texts. I manually retyped the corpus in \href{https://scription.digitallinguistics.io}{scription} format \parencite{Hieber2021b}, which is a simple way of formatting interlinear texts so as to make them computationally parseable. I then converted the corpus to the Data Format for Digital Linguistics (DaFoDiL) \parencite{Hieber2021a}, which is a way of representing interlinearized data in JSON, allowing programmers to easily and programmatically work with linguistic data. The resulting corpus is available in both formats on GitHub at \url{https://github.com/dwhieb/Nuuchahnulth}.
 
@@ -27,7 +27,7 @@ To create the 100-lexeme samples, I first \dfn{lemmatized} each corpus. For ever
 
 \begin{exe}
   \ex\label{ex:3.1}
-  \exinfo{Nuuchahnulth (Wakashan > Southern Wakashan)}
+  \exinfo{Nuuchahnulth}
   \vfix
   \gllll ʔaamumɬʔaƛquu\\
          ʔam‑umɬ‑ʼaƛ‑quː\\
@@ -93,9 +93,7 @@ First, only lexical uses of words were annotated. Grammatical/functional words a
 
 The function of each lexical item was determined in relation to its most immediate syntactic constituent. As an illustration, consider how to analyze the word \txn{time} in the phrase \txn{all time favorite}. The phrase \txn{all time} is functioning to modify the referring expression \txn{favorite}, with the syntactic structure \txn{[[all time] favorite]}. However, within the context of \txn{all time}, the word \txn{time} is a referent, not a modifier. Compare this to the expression \txn{all time slots}, which has the syntactic structure \txn{[all [time [slots]]]}, and where \txn{time} is indeed modifying the referent \txn{slots} directly. Thefore I annotated \txn{time} as a referent in the phrase \textit{all time\func{ref} favorite} and as a modifier in the phrase \textit{all time\func{mod} slots}. As another example, when annotating tokens of the word \txn{woman} I excluded its appearance in the phrase \txn{anti-women statements}, because it forms one part of the complex word \txn{anti-women}, with the structure \textit{[[anti-women]\func{mod} statements]}. If the phrase had been just \txn{women statements} instead, I would have analyzed \txn{women} as a modifier.
 
-In the remainder of this section I discuss some analytical issues specific to English and Nuuchahnulth respectively, and then provide a sample extract of annotated data from each language.
-
-The following points are specific to English:
+In the remainder of this section I discuss some analytical issues specific to English and Nuuchahnulth respectively. The following points are specific to English:
 
 \begin{itemize}
 
@@ -114,6 +112,38 @@ The following points are specific to English:
   \item Stative (modificational) versus dynamic (predicational) uses of past participle forms required special consideration. It was not always possible to discern with certainty whether a given token of a past participle form was being used statively or dynamically. Compare the use of the word \txn{relieved} in the phrases \txn{she was relieved of duty} vs. \txn{she was relieved to find her car}. The first use is arguably predicative while the second seems more like a predicate adjective. In cases where the discourse context does not make the intended use clear, I opted to code the data as a predicate, since this is the more conservative, historically prior form. Stative, predicate adjective uses were excluded from the analysis.
 
 \end{itemize}
+
+The analysis of discourse functions in Nuuchahnulth faces a different set of issues. A first problem is that \posscitet{Nakayama2001} grammar is inconsistent in the application of the notions of reference, predication, and modification. He says, for example, that \textquote[{\cite[113]{Nakayama2001}}]{[i]n \dfn{modification} one predicate restricts the interpretation of the other semantically main predicate.} This implies that a word in Nuuchahnulth can simultaneously be both a modifier and a predicate. This conflation arises, I believe, from the holophrastic nature of Nuuchahnulth, in which it is extremely common for a single word to constitute an entire clause \parentext{52.2\% of the time according to \textcite[149]{Nakayama2001}}. While an individual lexical item may be functioning as a predicate within its clause, the clause itself may be functioning to refer or to modify. Since the inflected word and the clause are coterminous, however, the potential for ambiguity arises. This problem is exacerbated by the fact that, even though Nuuchahnulth is highly polysynthetic, it is nonetheless quite common for stems to appear with no inflectional morphology indicating their discourse function. To the researcher not familiar with Nuuchahnulth morphosyntax and discourse patterns, it can seem at first glance as though determining clausal boundaries with any certainty in the language is near impossible.
+
+Thankfully, this impression is just superficial. While there are indeed tokens that are ambiguous as to their discourse function, this is generally not the case. Converging evidence from morphology, word order, topic continuity, word-level translations, and utterance-level translations is typically sufficient to determine the discourse function of any token with a high degree of confidence. The following paragraphs briefly summarize the relevant factors for determining the discourse function of a given token.
+
+Two features of Nuuchahnulth grammar in particular are extremely helpful in determining the discourse function of words. First, Nuuchahnulth is strongly predicate-initial. When an argument is present, the predicate precedes the argument 84.9\% of the time \parencite[149]{Nakayama2001}. Arguments only precede their predicates in pragmatically marked situations like contrast or disambiguation, which is typically made clear by an accompanying topicalization construction in the English translation. Second, Nuuchahnulth speakers have a strong dispreference for using more than one argument in a clause. In a sample of 734 clauses, only 39 (3.8\%) have two arguments, and none have three \parencite[149]{Nakayama2001}. This disinclination is so strong that speakers often express a single event in successive clauses, repeating the predicate \parencite[75]{Nakayama2001}. Consider the examples in \addcrossref{EX} and \addcrossref{EX}.
+
+\TODO[inline]{add examples from Nakayama (2001: 75), \#190 \& \#191}
+
+\noindent In \addcrossref{EX}, the arguments \txn{ƛaʔuukʷiʔatḥ} \tln{Clayoquot} and \txn{minwaaʔathʔi} \tln{the British soldiers} are distributed over two clauses, with the predicate \txn{hinaačiƛ} is repeated in each clause. Example \addcrossref{EX} follows a similar pattern. Awareness of just these few abovementioned facts does most of the work of determining the discourse functions of words by establishing the predicate and referent in each clause.
+
+Certain inflectional markers, when present, also unambiguously indicate the discourse function of the word they appear with. Words which take the definite suffix \txn{ʔi·} (glossed as \gl{ref}) or one of the relative suffixes (glossed as \gl{rel}) always function to refer. Except when they co-occur with either the definite or relative markers, the following kinds of mood suffixes always indicate a predicate. In Nuuchahnulth, most mood suffixes are fused with the following person suffixes, so each of the suffixes in this list has multiple realizations depending on the person and number of the clausal arguments.
+
+\begin{itemize}
+  \singlespacing
+  \item conditional (\gl{cond})
+  \item dubitive (\gl{dub})
+  \item imperative (\gl{imp})
+  \item indicative (\gl{ind})
+  \item interrogative (\gl{inter})
+  \item purposive (\gl{purp})
+  \item quotative (\gl{quot})
+  \item subordinate (\gl{subord})
+\end{itemize}
+
+\noindent In Nuuchahnulth, verb serialization is quite common, and the above mood suffixes only appear on the first (main) stem in a serial verb construction \parencite[42]{Nakayama2001}. Main predicates are also predominantly marked for person even if mood marking is not present (over 90\% of main predicates in the first person) \parencite[29]{Nakayama2001}. Aspect markers, however, are not a completely reliable indicator of predication. Though it happens infrequently, aspect markers may occur with referents or modifiers as well (see \addcrossref{section on aspect markers + definite marker in Ch. 4} for more details).
+
+Certain distributional behaviors also abet identification of the discourse function of a word. \citeauthor{Nakayama2001} notes the following in regard to referents: \textquote[{\cite[49]{Nakayama2001}}]{Nominals can be modified with expressions of property concepts, quantity, or quantifiers, but not directly with qualifying expressions like \txn{hiikʷaɬ} \tln{almost} or \txn{ʔanatʼuu} \tln{barely}.} Syntactic patterns are also helpful: Negation is accomplished by means of a negative predicate \txn{wik-}, which takes another predicate as its complement. Modifiers generally precede their heads, whether the head is a referent or predicate. In serial verb constructions, only the main predicate takes person and mood marking, and the other members of the serialization immediately follow the main predicate as bare stems.
+
+Finally, discourse-level considerations play an important role in determining the pragmatic function of each word. Most helpful is topic continuity, wherein a referent is already established in the discourse. This is accomplished either directly via an overt referent, or indirectly via inflectional affixes or features on a word that imply the existence of an referent—what \textcite{Kibrik2011} calls \dfn{referential aids}. Each successive lexical item encountered in a text must be interpreted in the context of the previously established discourse referents, so that certain interpretations of the item are much more sensible than others. Lastly, in a few particularly ambiguous cases, I consulted the audio files accompanying the corpus in order to prosodic information into account. Clear prosodic breaks in the discourse help to determine clausal boundaries.
+
+Small annotated extracts from each corpus are given in \addcrossref{Appendix XX} in order to illustrate the resulting annotations. While the actual annotations are stored in JSON format, these extracts are presented in a more human-readable format instead. The discourse function of each token is written as a subscript (\textsc{ref}, \textsc{pred}, or \textsc{mod}). Tokens without a discourse function indicated were excluded from the analysis for one of the reasons mentioned above.
 
 \section{Analysis}
 \label{sec:3.4}
