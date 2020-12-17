@@ -28,10 +28,12 @@ To create the 100-lexeme samples, I first \dfn{lemmatized} each corpus. For ever
 \begin{exe}
   \ex\label{ex:3.1}
   \exinfo{Nuuchahnulth (Wakashan > Southern Wakashan)}
+  \vfix
   \gllll ʔaamumɬʔaƛquu\\
          ʔam‑umɬ‑ʼaƛ‑quː\\
          first‑be.born‑\gl{fin}‑\gl{cond}\\
          when.first.born\\
+         \vfix
          \tln{when [a baby] was born}
   \exsource[Afterbirth 1]{Little2003}
 \end{exe}
@@ -64,6 +66,54 @@ With the two samples prepared, I next turned to the process of annotating each l
 
 \section{Methods}
 \label{sec:3.3}
+
+Within each of the samples, not every token was annotated for its discourse function. This section discusses the various reasons why tokens might be excluded from the analysis, and the factors that contributed to the determination of the discourse function for each token.
+
+First, only lexical uses of words were annotated. Grammatical/functional words and discourse markers were ignored. Among lexical words, adverbial uses were also excluded. Ignoring adverbial uses of words sometimes resulted in lexical items with a very high overall corpus frequency, but very low occurrences of use for reference, predication, or modification. For example, the English word \txn{never} has a high overall frequency (3,024 tokens), but has exactly 1 modifying use (\textit{that's a \em{never} touch}). The rest of its uses are adverbial. Proper names \emph{were} included, a decision which turned out to be fortuitous since proper names displayed flexible, non-referential uses in both English and Nuuchahnulth, as in \addcrossref{EX} and \addcrossref{EX}.
+
+\begin{exe}
+
+  \ex\label{ex:3.1}
+  \exinfo{English}\\
+  they settled down in the \em{Chicago} suburbs
+  \exsource[JamiesonSean]{OANC}
+
+  \ex\label{ex:3.2}
+  \exinfo{Nuuchahnulth}
+  \vfix
+  \gllll qʷaa y̓uuqʷaa \em{w̓iikinanišitquu}\\
+         qʷaː y̓uːqʷaː \em{w̓iːkinaniš‑it‑quː}\\
+         thus also    \em{\gl{name}‑\gl{past}‑\gl{cond.3}}\\
+         thus also    \em{who.was.W̓iikinaniš}\\
+         \vfix
+         \tln{So was the one whose name was \txn{W̓iikinaniš}}
+  \exsource[GL 19]{Louie2003}
+
+\end{exe}
+
+The function of each lexical item was determined in relation to its most immediate syntactic constituent. As an illustration, consider how to analyze the word \txn{time} in the phrase \txn{all time favorite}. The phrase \txn{all time} is functioning to modify the referring expression \txn{favorite}, with the syntactic structure \txn{[[all time] favorite]}. However, within the context of \txn{all time}, the word \txn{time} is a referent, not a modifier. Compare this to the expression \txn{all time slots}, which has the syntactic structure \txn{[all [time [slots]]]}, and where \txn{time} is indeed modifying the referent \txn{slots} directly. Thefore I annotated \txn{time} as a referent in the phrase \textit{all time\func{ref} favorite} and as a modifier in the phrase \textit{all time\func{mod} slots}. As another example, when annotating tokens of the word \txn{woman} I excluded its appearance in the phrase \txn{anti-women statements}, because it forms one part of the complex word \txn{anti-women}, with the structure \textit{[[anti-women]\func{mod} statements]}. If the phrase had been just \txn{women statements} instead, I would have analyzed \txn{women} as a modifier.
+
+In the remainder of this section I discuss some analytical issues specific to English and Nuuchahnulth respectively, and then provide a sample extract of annotated data from each language.
+
+The following points are specific to English:
+
+\begin{itemize}
+
+  \singlespacing
+
+  \item Words related through stress shifts (e.g. \txn{conˈduct} and \txn{ˈconduct}) were treated as separate lexical items since their phonological forms are distinct. In the corpus, context always made it possible to determine which use was intended.
+
+  \item Compound words were included in the analysis, but individual components of compound words were not. For example, when annotating tokens of the word \txn{back}, instances within the compounds \txn{back yard} or \txn{hard back book} or \txn{back burner} were excluded from the analysis. Instances of lexical items within noun-verb compounds \parentext{\enquote{noun incorporation}} were also excluded, such as \txn{pie} in \txn{pie baking}. However, compound words as a whole \emph{were} included in the analysis. For example, the lexical item \txn{back yard} was treated as a lexical unit and analyzed for its discourse function. Therefore I analyze \txn{back yard} as a referent in \textit{we were sitting in the [back yard]\func{ref}} and a modifier in \textit{it was a [back yard]\func{mod} party}.
+
+  \item Lexicalized phrasal verbs such as \txn{back up} were treated as a lexical unit, such that it was possible for the lexical item to appear in different discourse functions: \textit{he doesn't [back up]\func{pred} that point} vs. \textit{please make a [back up]\func{ref}} vs. \textit{you have a fairly good [back up]\func{mod} quarterback}.
+
+  \item Tokens used as gerunds, infinitives, or predicate nominals / adjectives were tagged separately and ultimately excluded from the analysis, since most researchers would consider these to be instances of morphologically marked conversion in English.
+
+  \item Adverbial uses of participles similar in function to the Latin ablative absolute were excluded from analysis, e.g. \txn{talking about the golf thing, […]}.
+
+  \item Stative (modificational) versus dynamic (predicational) uses of past participle forms required special consideration. It was not always possible to discern with certainty whether a given token of a past participle form was being used statively or dynamically. Compare the use of the word \txn{relieved} in the phrases \txn{she was relieved of duty} vs. \txn{she was relieved to find her car}. The first use is arguably predicative while the second seems more like a predicate adjective. In cases where the discourse context does not make the intended use clear, I opted to code the data as a predicate, since this is the more conservative, historically prior form. Stative, predicate adjective uses were excluded from the analysis.
+
+\end{itemize}
 
 \section{Analysis}
 \label{sec:3.4}
