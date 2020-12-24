@@ -58,7 +58,7 @@ Various other types of words were excluded from this process as well:
 
 \noindent Some types of items that were \emph{not} excluded are compounds written as a single word (e.g. \txn{guidepost}) and proper names (e.g. \txn{San Francisco}), although neither of these wound up in the final list.
 
-The output of this selection process was a list of 100 lexical items in each language to be examined for lexical flexibility. The complete list of lexical items for each corpus is given in \addcrossref{Appendix XX}, along with statistics about their frequencies, corpus dispersions, and flexibility.
+The output of this selection process was a list of 100 lexical items in each language to be examined for lexical flexibility. The list of 100 lexical items for each corpus is given in \addcrossref{Appendix XX}, along with statistics about their frequencies, corpus dispersions, and flexibility.
 
 Next I created a small corpus sample ($<10,000$ tokens) for each language. The smaller size of these samples allowed me to annotate every single lexical item in the sample for its discourse function. The Nuuchahnulth sample simply consists of the entirety of the corpus (8,300 tokens), while the English sample consists of the first 4 texts in the corpus, totaling $\sim9,700$ tokens. These two subcorpora are both available in the GitHub repository for this study at \url{https://github.com/dwhieb/dissertation}.
 
@@ -143,7 +143,62 @@ Certain distributional behaviors also abet identification of the discourse funct
 
 Finally, discourse-level considerations play an important role in determining the pragmatic function of each word. Most helpful is topic continuity, wherein a referent is already established in the discourse. This is accomplished either directly via an overt referent, or indirectly via inflectional affixes or features on a word that imply the existence of an referent—what \textcite{Kibrik2011} calls \dfn{referential aids}. Each successive lexical item encountered in a text must be interpreted in the context of the previously established discourse referents, so that certain interpretations of the item are much more sensible than others. Lastly, in a few particularly ambiguous cases, I consulted the audio files accompanying the corpus in order to prosodic information into account. Clear prosodic breaks in the discourse help to determine clausal boundaries.
 
-Small annotated extracts from each corpus are given in \addcrossref{Appendix XX} in order to illustrate the resulting annotations. While the actual annotations are stored in JSON format, these extracts are presented in a more human-readable format instead. The discourse function of each token is written as a subscript (\textsc{ref}, \textsc{pred}, or \textsc{mod}). Tokens without a discourse function indicated were excluded from the analysis for one of the reasons mentioned above.
+Small annotated extracts from each corpus are given in \addcrossref{Appendix XX} in order to illustrate the resulting annotations. While the actual annotations are stored in JSON format, these extracts are presented in a more human-readable format instead. The discourse function of each token is written as a subscript (\textsc{ref}, \textsc{pred}, or \textsc{mod}). Tokens without their discourse function indicated were excluded from the analysis for one of the reasons mentioned above.
 
 \section{Analysis}
 \label{sec:3.4}
+
+\subsection{Measuring lexical flexibility}
+\label{sec:3.4.1}
+
+Once the lexical tokens in a corpus are annotated for their discourse functions, it is possible to calculate the flexibility of each lexical item using a measure known as Shannon's diversity index. This section summarizes the rationale for using this metric and the procedure for calculating it.
+
+Intuitively speaking, a lexical item is most flexible when it is used with equal frequency for reference, predication, and modification. A perfectly flexible lexical item which appears 300 times a corpus would therefore have a distribution like that in \tabref{tab:perfectly-flexible}. By contrast, a perfectly rigid / inflexible lexical item with the same overall frequency would have a distribution like that in \tabref{tab:perfectly-rigid}. What is needed is a metric that captures how evenly distributed the tokens of a lexical item are across the different discourse functions. A perfectly flexible item like that in \tabref{tab:perfectly-flexible} should receive a high rating (say, 1), while a perfectly rigid item like that in \tabref{tab:perfectly-rigid} should receive a low rating (say, 0).
+
+\begin{table}[h]
+  \centering
+  \caption{Distribution of discourse functions for a perfectly flexible lexical item}
+  \label{tab:perfectly-flexible}
+  \begin{tabular}{ l c c c }
+    \toprule
+    lexical item & reference & predication & modification\\
+    \midrule
+    \txn{stem}   & 100       & 100         & 100\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \caption{Distribution of discourse functions for a perfectly rigid/inflexible lexical item}
+  \label{tab:perfectly-rigid}
+  \begin{tabular}{ l c c c }
+    \toprule
+    lexical item & reference & predication & modification\\
+    \midrule
+    \txn{stem}   & 300       & 0           & 0\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+I elected to use Shannon's diversity index ($H$) for this purpose \parencites{Shannon1948}{Shannon1951}. Originally devised as a measure of entropy in text (uncertainty or information content), the Shannon index has also become a popular measure of species diversity in ecology \parencites{Avolioetal2012} and attention diversity in political science \parencite{BoydstunBevanThomas2014}. Here I am using it as a measure of the functional diversity of lexical items. The normalized version of Shannon's $H$ yields a value between $0$ (low diversity) and $1$ (high diversity). For a categorical variable with $n$ possible values, $H_{norm}$ is calculated using the formula in \addcrossref{XX}, where $p_i$ corresponds to the percent frequency of the $i$\textsuperscript{th} possible value of the variable.
+
+\begin{exe}
+  \ex\label{ex:Shannon-H}
+  $H_{norm} = \displaystyle\frac{-\displaystyle\sum_{i = 1}^{n}(p_i \cdot \ln p_i)}{\ln n}$
+\end{exe}
+
+\noindent For this study, $n$ will always be $3$ (reference, predication, and modification). Future researchers may wish to adjust this number depending on the number of discourse functions examined (for example, if the predicate modifier function were included).
+
+Frequently there will not be any instances of a lexical item being used in one discourse function or another. Since $\log 0$ is undefined, the above formula cannot be resolved in these cases. One common workaround to this problem is to increment the frequencies of each discourse function by 1 before performing the calculation. Another is to simply treat $\log 0$ as equal to $0$ \parencite[120--121]{Gries2013}. I used the latter procedure in this study.
+
+Applying Shannon's $H$ to the fabricated data in \tabref{tab:perfectly-flexible} and \tabref{tab:prefectly-rigid} produces the desired results: a value of $1$ for $H$ in the perfectly flexible case and a value of $0$ in the perfectly rigid case.
+
+One limitation of the Shannon diversity index as applied to this study stems from the fact that there are so few discourse functions under consideration (just 3: reference, predication, and modification). This means that at low frequencies there are only a limited number of possible values of Shannon's $H$. For example, a lexical item with a frequency of 2 will either have an H value of 0 or .63, because there are only 2 ways those tokens can be distributed across discourse functions (2 0 0 or 1 1 0). A lexical item with a frequency of 3 will either have an H value of 0, .58, or 1, because there are only 3 ways those tokens can be distributed across discourse functions (3 0 0, 2 1 0, or 1 1 1), and so on.
+
+To address this issue, I only included lexical items in the samples that had a raw frequency of at least 4. This cutoff was established based on the fact that 4 is the smallest frequency that can theoretically return a significant result for Shannon's $H$ when a lexical item is maximally flexible, in one of the two ways one can compute a multinomial test (probabilities vs. a χ\textsuperscript{2} test).
+
+Shannon's $H$ was calculated for each of the lexical items in the samples from both corpora to produce a flexibility rating for each item. The resulting flexibility ratings for the 100-item samples are provided in \addcrossref{Appendix XX}.
+
+\subsection{Frequency vs. dispersion}
+\label{sec:3.4.2}
