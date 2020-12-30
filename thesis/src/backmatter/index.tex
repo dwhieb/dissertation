@@ -1,19 +1,17 @@
-\addtocontents{toc}{\setlength{\cftchapindent}{\cftchapnumwidth}}
-\singlespacing
-
-\appendix
-\include{backmatter/appendix}
-
 \backmatter
+
+\singlespacing
+\addtocontents{toc}{\setlength{\cftchapindent}{\cftchapnumwidth}}
 
 \clearpage
 \phantomsection
 \addcontentsline{toc}{chapter}{References}
-\label{ch:references}
 \printbibliography[title = References]
+\label{ch:references}
 
 \clearpage
 \phantomsection
-\label{ch:index}
+\addcontentsline{toc}{chapter}{Language Index}
 \include{cross-references}
 \printindex
+\label{ch:index}
