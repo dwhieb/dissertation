@@ -30,7 +30,7 @@
     "abbreviations": "node thesis/scripts/build/abbreviations.js",
     "anc": "cd data/English/scripts/ANC && java -Xmx500M -jar ANCTool-2.0.0-jar.jar && cd ../../../..",
     "bib": "biber thesis/src/main",
-    "checkcites": "cd thesis/src && checkcites --backend biber main.bcf",
+    "check-cites": "cd thesis/src && checkcites --backend biber main.bcf",
     "cleanup": "node thesis/scripts/build/cleanup.js",
     "compile": "cd thesis/src && xelatex -halt-on-error main.tex && cd ../..",
     "copy-pdf": "node thesis/scripts/build/copyPDF.js",
