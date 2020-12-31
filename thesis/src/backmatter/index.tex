@@ -3,15 +3,20 @@
 \singlespacing
 \addtocontents{toc}{\setlength{\cftchapindent}{\cftchapnumwidth}}
 
-\clearpage
-\phantomsection
-\addcontentsline{toc}{chapter}{References}
-\printbibliography[title = References]
-\label{ch:references}
+\addcontentsline{toc}{part}{Backmatter}
 
 \clearpage
 \phantomsection
-\addcontentsline{toc}{chapter}{Language Index}
+\TODO{update page number}
+\setcounter{page}{108}
+\addcontentsline{toc}{chapter}{References}
+\printbibliography[title = {References}]
+\label{ch:references}
+
 \include{cross-references}
+\clearpage
+\phantomsection
+\TODO{update page number}
+\setcounter{page}{124}
 \printindex
 \label{ch:index}

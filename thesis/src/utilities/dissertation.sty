@@ -36,6 +36,7 @@
 
 % Index
 \makeindex[
+  intoc,
   columns = 2,
   title   = {Language Index}
 ]
@@ -128,6 +129,9 @@
 {0em} % vertical space before heading
 {0em} % vertical space after heading
 [0em] % right margin
+
+% Table of Contents
+\cftpagenumbersoff{part}
 
 % Text (fontspec, setspace packages)
 \doublespacing
