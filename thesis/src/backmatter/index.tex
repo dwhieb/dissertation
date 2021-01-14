@@ -1,19 +1,22 @@
-\addtocontents{toc}{\setlength{\cftchapindent}{\cftchapnumwidth}}
-\singlespacing
-
-\appendix
-\include{backmatter/appendix}
-
 \backmatter
 
-\clearpage
-\phantomsection
-\addcontentsline{toc}{chapter}{References}
-\label{ch:references}
-\printbibliography[title = References]
+\singlespacing
+\addtocontents{toc}{\setlength{\cftchapindent}{\cftchapnumwidth}}
+
+\addcontentsline{toc}{part}{Backmatter}
 
 \clearpage
 \phantomsection
-\label{ch:index}
+\TODO{update page number}
+\setcounter{page}{108}
+\addcontentsline{toc}{chapter}{References}
+\printbibliography[title = {References}]
+\label{ch:references}
+
 \include{cross-references}
+\clearpage
+\phantomsection
+\TODO{update page number}
+\setcounter{page}{124}
 \printindex
+\label{ch:index}

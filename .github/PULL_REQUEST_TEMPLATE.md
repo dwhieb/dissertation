@@ -16,7 +16,7 @@
 - [ ] add BibTeX references
 - [ ] add DOIs
 - [ ] update bibliography
-- [ ] remove unused references
+- [ ] remove unused references (`npm run check-cites`)
 - [ ] check new bibliography entries
 - [ ] handle build warnings in console / log
 - [ ] export to Word and run spelling and grammar check
