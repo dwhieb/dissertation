@@ -26,9 +26,8 @@ export default async function getTextStats(filePath, wordFilter, unit) {
 
     words
     .filter(wordFilter)
+    .filter(w => w.stem !== `NA`)
     .forEach(word => {
-
-      if (word.stem === `NA`) return;
 
       let key;
 

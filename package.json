@@ -43,9 +43,6 @@
     "postbuild": "npm run copy-pdf",
     "test": "node thesis/scripts/test/abbreviations.js"
   },
-  "bin": {
-    "generateWordforms": "stats/scripts/bin/generateWordforms.js"
-  },
   "devDependencies": {
     "@azure/storage-blob": "^10.3.0",
     "@digitallinguistics/concordance": "^0.4.0",
@@ -53,7 +50,7 @@
     "@digitallinguistics/tags2dlx": "^0.4.0",
     "csv-parse": "^4.11.1",
     "csv-stringify": "^5.5.0",
-    "eslint": "^7.4.0",
+    "eslint": "^7.18.0",
     "fs-extra": "^9.0.1",
     "ora": "^4.0.4",
     "progress": "^2.0.3",
