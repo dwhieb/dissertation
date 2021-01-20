@@ -1,18 +1,16 @@
-import csvStringify       from 'csv-stringify';
+import createStringifier  from 'csv-stringify';
 import EnglishFilter      from '../../data/English/scripts/tokenFilter.js';
 import { fileURLToPath }  from 'url';
 import fs                 from 'fs-extra';
 import getRelativeEntropy from './getStatistics/getRelativeEntropy.js';
 import path               from 'path';
 import processDir         from '../../scripts/utilities/processDir.js';
-import { promisify }      from 'util';
+
+const { readFileSync, readJSON } = fs;
 
 const currentDir       = path.dirname(fileURLToPath(import.meta.url));
 const dataDir          = path.join(currentDir, `../../data`);
 const EnglishStemsPath = path.join(dataDir, `English/selected_archlexemes.txt`);
-
-const { readJSON, readFileSync, writeFile } = fs;
-const json2csv = promisify(csvStringify);
 
 const EnglishStemList = readFileSync(EnglishStemsPath, `utf8`);
 
@@ -21,39 +19,35 @@ const EnglishStems = EnglishStemList
   .map(stem => stem.trim())
   .filter(Boolean);
 
-const csvOptions = {
-  delimiter: `\t`,
+const defaultStats = {
+  frequency: 0,
+  MOD:       0,
+  PRED:      0,
+  REF:       0,
 };
 
-const defaultStats = {
-  MOD:  0,
-  PRED: 0,
-  REF:  0,
-};
+const functions = [
+  `REF`,
+  `PRED`,
+  `MOD`,
+];
 
 const languageSettings = {
   English:      {
-    sampleIncrement: 10000,
-    textsDir:        path.join(dataDir, `English/texts`),
+    textsDir: path.join(dataDir, `English/texts`),
     wordFilter(w) {
       return EnglishFilter(w) && EnglishStems.includes(w.stem);
     },
   },
   Nuuchahnulth: {
-    sampleIncrement: 1000,
-    textsDir:        path.join(dataDir, `Nuuchahnulth/texts`),
+    textsDir: path.join(dataDir, `Nuuchahnulth/texts`),
     wordFilter() { return true; },
   },
 };
 
 const minFrequency = 4;
 
-/**
- * Calculates the flexibility rating for a sample
- * @param  {Object} frequencies A hash of raw frequencies (REF, PRED, MOD) for the sample
- * @return {Number}             Returns a flexibility rating
- */
-function calculateFlexibilityRating({ REF, PRED, MOD }) {
+function calculateFlexibilityRating(REF, PRED, MOD) {
 
   let flexibility = getRelativeEntropy([REF, PRED, MOD]);
 
@@ -68,60 +62,22 @@ function calculateFlexibilityRating({ REF, PRED, MOD }) {
 
 }
 
-/**
- * Convert raw frequencies to flexibility ratings
- * @param  {Map} frequencies Map of stems, each containing an Array of corpus samples
- * @return {Map}             Returns a Map of stems, each containing an Array of corpus samples
- */
-function calculateFlexibilityRatings(frequencies) {
+function createStreams(outputPath) {
 
-  const flexibilityRatings = new Map;
+  const ws  = fs.createWriteStream(outputPath);
+  const tsv = createStringifier({ delimiter: `\t` });
 
-  frequencies.forEach((samples, stem) => {
-    flexibilityRatings.set(stem, samples.map(calculateFlexibilityRating));
-  });
+  ws.on(`error`, e => { throw e; });
+  tsv.on(`error`, e => { throw e; });
 
-  return flexibilityRatings;
+  tsv.pipe(ws);
+
+  return tsv;
 
 }
 
-function fillMissingRatings(ratings, numSamples) {
-
-  ratings.forEach((samples, stem) => {
-
-    const sampleRatings = [];
-
-    for (let i = 0; i < numSamples; i++) {
-      sampleRatings[i] = samples[i] ?? sampleRatings[i - 1] ?? 0;
-    }
-
-    ratings.set(stem, sampleRatings);
-
-  });
-
-}
-
-function ignore(filePath, stats) {
-  if (stats.isDirectory()) return false;
-  return path.extname(filePath) !== `.json`;
-}
-
-function ratings2tabular(ratings) {
-  return Array.from(ratings).map(([stem, samples]) => [stem, ...samples]);
-}
-
-export default async function getCorpusSizeData(language, outputPath = `./out.tsv`) {
-
-  const {
-    sampleIncrement,
-    textsDir,
-    wordFilter,
-  } = languageSettings[language];
-
-  let frequencies = new Map;
-  let tokens      = 0;
-
-  async function countText(filePath) {
+function createTextProcessor(frequencies, tsv, wordFilter) {
+  return async function processText(filePath) {
 
     const text = await readJSON(filePath);
 
@@ -129,53 +85,59 @@ export default async function getCorpusSizeData(language, outputPath = `./out.ts
 
       if (!words?.length) return;
 
-      words = words
+      words = words // eslint-disable-line no-param-reassign
       .filter(wordFilter)
       .filter(w => w.stem !== `NA`)
       .filter(w => w.stem);
 
       words.forEach(w => {
 
+        if (!functions.includes(w.tags.function)) return;
+
         const key = w.stem.toLowerCase();
 
-        if (!frequencies.has(key)) frequencies.set(key, []);
+        if (!frequencies.has(key)) frequencies.set(key, Object.assign({}, defaultStats));
 
-        const wordStats       = frequencies.get(key);
-        const sampleNum       = Math.floor(tokens / sampleIncrement);
-        const prevSampleStats = wordStats[sampleNum - 1];
+        const stats = frequencies.get(key);
 
-        wordStats[sampleNum] ??= Object.assign({}, prevSampleStats ?? defaultStats);
+        stats[w.tags.function] += 1;
+        stats.frequency += 1;
 
-        const sampleStats = wordStats[sampleNum];
-        sampleStats[w.tags.function] += 1;
+        if (stats.frequency < minFrequency) return;
 
-        wordStats.frequency ??= 0;
-        wordStats.frequency++;
+        const { frequency, REF, PRED, MOD } = stats;
+        const flexibility = calculateFlexibilityRating(REF, PRED, MOD);
 
-        tokens++;
+        tsv.write([key, REF, PRED, MOD, frequency, flexibility]);
 
       });
 
     });
 
-  }
+  };
+}
 
-  console.info(`Compiling data on flexibility vs. corpus size.`);
+function ignore(filePath, stats) {
+  if (stats.isDirectory()) return false;
+  return path.extname(filePath) !== `.json`;
+}
 
-  await processDir(textsDir, countText, ignore);
+export default async function getCorpusSizeData(language, outputPath = `./out.tsv`) {
 
-  frequencies = new Map(Array.from(frequencies.entries())
-    .filter(([, samples]) => samples.frequency >= minFrequency));
+  const { wordFilter, textsDir } = languageSettings[language];
 
-  const flexibilityRatings = calculateFlexibilityRatings(frequencies);
-  const numSamples         = Math.max(...Array.from(flexibilityRatings.values()).map(samples => samples.length));
+  const frequencies = new Map;
+  const tsv         = createStreams(outputPath);
+  const processText = createTextProcessor(frequencies, tsv, wordFilter);
 
-  fillMissingRatings(flexibilityRatings, numSamples);
+  const endStream = new Promise(resolve => {
+    tsv.on(`end`, resolve);
+  });
 
-  const tableData = ratings2tabular(flexibilityRatings);
-  const tsv       = await json2csv(tableData, csvOptions);
+  await processDir(textsDir, processText, ignore);
 
-  await writeFile(outputPath, tsv, `utf8`);
-  console.info(`Corpus size data compiled to ${outputPath}`);
+  tsv.end();
+
+  await endStream;
 
 }
