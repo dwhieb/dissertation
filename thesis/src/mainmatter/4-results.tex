@@ -123,17 +123,7 @@ In this section I examine the interactions between lexical flexibility, token fr
 
 To investigate the possible interactions among flexibility, frequency, and dispersion I deploy a Generalized Additive Model (GAM) in order to account for the possibility of interactions not just between flexibility and frequency / dispersion, but for interactions between frequency and dispersion as well. For example, it may be the case that there are correlations between flexibility and dispersion, but only for high frequency words. A Generalized Additive Model allows for the exploration of multiple interactions in this way.
 
-Frequency is represented in this model as $\log_2$ of the relative frequency of the stem. Since relative frequency and corpus dispersion utilize different scales, I also use a tensor smooth to examine the combined contribution of frequency and dispersion to flexibility, over and above their individual contributions. The complete R code for the model, using the \texttt{mgcv} package, is below.
-
-\begin{verbatim}
-model_Eng <- gam(
-  flexibility ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
-  data   = data_Eng,
-  method = "REML",
-)
-\end{verbatim}
-
-\noindent I again used the 100-item sample for the English model, and the entire corpus for Nuuchahnulth.
+Frequency is represented in this model as $\log_2$ of the relative frequency of the stem. Since relative frequency and corpus dispersion utilize different scales, I also use a tensor smooth to examine the combined contribution of frequency and dispersion to flexibility, over and above their individual contributions. I again used the 100-item sample for the English model, and the entire corpus for Nuuchahnulth.
 
 \figref{fig:interaction-heat-English} and \figref{fig:interaction-heat-Nuuchahnulth} show heat maps of the interactions of the three variables for English and Nuuchahnulth, respectively. The x-axis shows $log_2$ of relative frequency, and the y-axis shows corpus dispersion as Deviation of Propotions ($DP$), with more evenly dispersed items to the bottom of the scale and less evenly dispersed items to the top of the scale. Light-colored areas indicate a high degree of flexibility, while dark-colored areas indicate a low degree of flexibility.
 
@@ -168,6 +158,6 @@ Several semantic classes stand out as being among the lowest flexibility words i
 
 It is easy to see why some of these classes of words would have such low flexibility ratings: each is highly prototypical of one particular discourse function. Adult human animates are the most canonical type of noun crosslinguistically \addcite{sources for this}, while \txn{thing} and its variants are the most generic terms there are for referents. Words denoting size, age, or physical properties are among the core semantic classes for modifiers crosslinguistically \parencite{Dixon1977}. It is entirely unsurprising that these categories of words, then, would always be construed by speakers in the discourse functions that they are the most prototypical exemplars of. At the same time, these data show that such classification is not absolute. Even words that are strongly prototypical of a given discourse function are still occasionally used for other functions.
 
-It is less clear why words of cognition or perception have low flexibility ratings, except that in each case there is a corresponding overtly-derived referential term which potentially blocks the use of the word as a referent: \txn{enjoy} is blocked by \txn{enjoyment}; \txn{believe} is blocked by \txn{belief}; \txn{hate} is blocked by \txn{hatred}; \txn{know} is blocked by \txn{knowledge}; and so on. These referential counterparts do not necessarily \emph{prevent} the use of these stems as referents (e.g. \txn{to be in the \em{know}}), but they are likely a significant contributing factor. Regardless, it is unclear why these words have morphologically derived referential counterparts but most of the highest-flexibility words such as \txn{paint}, \txn{work}, \txn{order}, and \txn{transfer} do not.
+It is less clear why words of cognition or perception have low flexibility ratings, except that in each case there is a corresponding overtly-derived referential term which potentially blocks the use of the word as a referent: \txn{enjoy} is blocked by \txn{enjoyment}; \txn{believe} is blocked by \txn{belief}; \txn{hate} is blocked by \txn{hatred}; \txn{know} is blocked by \txn{knowledge}; and so on. These referential counterparts do not necessarily \emph{prevent} the use of these stems as referents (e.g. \textit{to be in the \textbf{know}}), but they are likely a significant contributing factor. Regardless, it is unclear why these words have morphologically derived referential counterparts but most of the highest-flexibility words such as \txn{paint}, \txn{work}, \txn{order}, and \txn{transfer} do not.
 
 % NEXT UP: Nuuchahnulth
