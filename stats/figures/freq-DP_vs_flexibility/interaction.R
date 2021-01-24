@@ -1,32 +1,27 @@
-source("stats/scripts/load_small.R")
-source("stats/scripts/load_100.R")
+source("stats/scripts/load_data.R")
 
 library(mgcv)
 
 # data
 
-data_small              <- load_small()
-data_small$log_rel_freq <- log2(data_small$rel_freq)
+hundred_items         <- load_data("stats/data/100_item_samples.csv")
+data_Eng              <- hundred_items[which(hundred_items$language == "English"), ]
+data_Eng$log_rel_freq <- log2(data_Eng$rel_freq)
 
-data_100              <- load_100()
-data_100$log_rel_freq <- log2(data_100$rel_freq)
-
-# language-specific data (update filenames of plots too)
-# lang       <- "Nuuchahnulth"
-# data_small <- data_small[which(data_small$language == lang), ]
-# data_100   <- data_100[which(data_100$language == lang), ]
+data_Nuu              <- load_data("stats/data/Nuuchahnulth_stems.tsv")
+data_Nuu$log_rel_freq <- log2(data_Nuu$rel_freq)
 
 # models
 
-model_small <- bam(
+model_Eng <- bam(
   flexibility ~ te(log_rel_freq, dispersion),
-  data   = data_small,
+  data   = data_Eng,
   method = "REML",
 )
 
-model_100 <- bam(
+model_Nuu <- bam(
   flexibility ~ te(log_rel_freq, dispersion),
-  data   = data_100,
+  data   = data_Nuu,
   method = "REML",
 )
 
@@ -41,17 +36,17 @@ png(
 par(mfrow = c(1, 2))
 
 plot(
-  model_small,
+  model_Eng,
   cex  = 0.5,
-  main = "Small Corpus",
+  main = "English",
   pch  = 1,
   ylim = c(0, 1),
 )
 
 plot(
-  model_100,
+  model_Nuu,
   cex  = 0.5,
-  main = "100 Lexemes",
+  main = "Nuuchahnulth",
   pch  = 1,
   ylim = c(0, 1),
 )
@@ -69,20 +64,20 @@ png(
 par(mfrow = c(1, 2))
 
 vis.gam(
-  main      = "Small Corpus",
+  main      = "English",
   view      = c("log_rel_freq", "dispersion"),
   plot.type = "contour",
   too.far   = 0.1,
-  x         = model_small,
+  x         = model_Eng,
   ylim      = c(0, 1),
 )
 
 vis.gam(
-  main      = "100 Lexemes",
+  main      = "Nuuchahnulth",
   view      = c("log_rel_freq", "dispersion"),
   plot.type = "contour",
   too.far   = 0.1,
-  x         = model_100,
+  x         = model_Nuu,
   ylim      = c(0, 1),
 )
 
@@ -244,15 +239,15 @@ summary(tensor_model)
 # NB: "The univariate smooths are additive, and then the interaction is an addition effect on top of those."
 
 # Parametric coefficients:
-#   Estimate Std. Error t value Pr(>|t|)    
+#   Estimate Std. Error t value Pr(>|t|)
 # (Intercept)  0.20215    0.02645   7.643 9.35e-13 ***
-# 
+#
 # Approximate significance of smooth terms:
 #   edf Ref.df     F p-value
 # s(log_rel_freq)             1.928  2.486 0.404   0.811
 # s(dispersion)               1.000  1.000 1.493   0.223
 # ti(log_rel_freq,dispersion) 1.929  2.291 0.932   0.455
-# 
+#
 # R-sq.(adj) =  0.0384   Deviance explained = 6.17%
 # -REML = 8.3547  Scale est. = 0.058134  n = 201
 

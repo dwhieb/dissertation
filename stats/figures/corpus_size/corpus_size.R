@@ -26,7 +26,7 @@ load_data <- function(file_path) {
     quote        = "",
     sep          = "\t",
   )
-  
+
   return(data)
 
 }
@@ -44,7 +44,7 @@ plot_Nuu <- ggplot(data_Nuu, aes(
   color = stem
 )) +
   labs(title = "Nuuchahnulth") +
-  ylab("flexibility") +
+  ylab("flexibility (Shannon's H)") +
   xlab("# tokens observed") +
   theme_minimal() +
   theme(
@@ -69,7 +69,7 @@ plot_Eng <- ggplot(data_Eng, aes(
   y = flexibility
 )) +
   labs(title = "English") +
-  ylab("flexibility") +
+  ylab("flexibility (Shannon's H)") +
   xlab("# tokens observed") +
   theme_minimal() +
   theme(
@@ -111,7 +111,7 @@ plot_Eng_words <- ggplot(data_Eng_words, aes(
   color = stem
 )) +
   labs(title = "high-frequency English stems") +
-  ylab("flexibility") +
+  ylab("flexibility (Shannon's H)") +
   xlab("# tokens observed") +
   theme_minimal() +
   theme(
@@ -153,7 +153,7 @@ plot_Nuu_words <- ggplot(data_Nuu_words, aes(
   color = stem
 )) +
   labs(title = "high-frequency Nuuchahnulth stems") +
-  ylab("flexibility") +
+  ylab("flexibility (Shannon's H)") +
   xlab("# tokens observed") +
   theme_minimal() +
   theme(
