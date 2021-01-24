@@ -94,23 +94,23 @@ png(
 par(mfrow = c(1, 2))
 
 vis.gam(
-  main      = "Small Corpus",
+  main      = "English",
   phi       = 90,
   plot.type = "persp",
   r         = 5,
   too.far   = 0.1,
   view      = c("log_rel_freq", "dispersion"),
-  x         = model_small,
+  x         = model_Eng,
 )
 
 vis.gam(
-  main      = "100 Lexemes",
+  main      = "Nuuchahnulth",
   phi       = 90,
   plot.type = "persp",
   r         = 5,
   too.far   = 0.1,
   view      = c("log_rel_freq", "dispersion"),
-  x         = model_100,
+  x         = model_Nuu,
 )
 
 dev.off()
