@@ -13,45 +13,75 @@ data_Nuu$log_rel_freq <- log2(data_Nuu$rel_freq)
 
 # models
 
-model_Eng <- bam(
-  flexibility ~ te(log_rel_freq, dispersion),
+model_Eng <- gam(
+  flexibility ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
   data   = data_Eng,
   method = "REML",
 )
 
-model_Nuu <- bam(
-  flexibility ~ te(log_rel_freq, dispersion),
+summary(model_Eng)
+
+# NB: "The univariate smooths are additive, and then the interaction is
+# an addition effect on top of those."
+
+# Parametric coefficients:
+#             Estimate Std. Error t-value Pr(>|t|)
+# (Intercept) 0.23872  0.04479    5.33    6.53e-07 ***
+
+# Approximate significance of smooth terms:
+#                             edf    Ref.df F     p-value
+# s(log_rel_freq)             1.000  1.000  0.022 0.882
+# s(dispersion)               2.047  2.704  0.711 0.638
+# ti(log_rel_freq,dispersion) 1.210  1.350  0.286 0.755
+
+# R-sq.(adj)         = 0.00414
+# Deviance explained = 4.65%
+# -REML              = 1.5948
+# Scale est.         = 0.052983
+# n                  = 101
+
+# RESULTS
+# The tensor model shows no significant interactions overall.
+
+model_Nuu <- gam(
+  flexibility ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
   data   = data_Nuu,
   method = "REML",
 )
 
-# contour plots
+summary(model_Nuu)
+# Parametric coefficients:
+#             Estimate Std. Error t-value Pr(>|t|)
+# (Intercept) 0.034369 0.005315   6.467   1.21e-10 ***
 
-png(
-  filename = "stats/figures/freq-DP_vs_flexibility/interaction_contour.png",
-  height   = 500,
-  width    = 1000,
-)
+# Approximate significance of smooth terms:
+# edf Ref.df      F p-value
+# s(log_rel_freq)             2.825  3.461 37.582  <2e-16 ***
+# s(dispersion)               3.197  4.180  2.384  0.0506 .
+# ti(log_rel_freq,dispersion) 3.191  3.565  2.979  0.0471 *
 
-par(mfrow = c(1, 2))
+# R-sq.(adj)         = 0.178
+# Deviance explained = 18.2%
+# -REML              = -1443.8
+# Scale est.         = 0.017135
+# n                  = 2384
 
-plot(
-  model_Eng,
-  cex  = 0.5,
-  main = "English",
-  pch  = 1,
-  ylim = c(0, 1),
-)
-
-plot(
-  model_Nuu,
-  cex  = 0.5,
-  main = "Nuuchahnulth",
-  pch  = 1,
-  ylim = c(0, 1),
-)
-
-dev.off()
+# RESULTS
+# - Frequency correlates in a very highly significant way with flexibility
+# - Frequencies in the middle ranges are more likely to be flexible.
+# - Dispersion shows only a partially significant correlation.
+# - The interaction of frequency and dispersion also contributes significantly to flexibility.
+#
+# However, the 3D interaction plot shows that as stems grow in frequency,
+# the standard deviation for their flexibility ratings grows dramatically,
+# resembling that of English.
+#
+# Moreover, the strong correlation in the low frequencies is very likely due to
+# the very large number of items with zero frequency. Given what we have seen in
+# the previous section about the number of tokens required to have a reliable
+# measure of lexical flexibility, one should not accept these results unquestioningly.
+# It is very likely that the correlations in the Nuuchahnulth data would disappear
+# with a larger corpus.
 
 # heat maps
 
@@ -64,53 +94,21 @@ png(
 par(mfrow = c(1, 2))
 
 vis.gam(
-  main      = "English",
-  view      = c("log_rel_freq", "dispersion"),
-  plot.type = "contour",
-  too.far   = 0.1,
-  x         = model_Eng,
-  ylim      = c(0, 1),
+  main        = "English",
+  plot.type   = "contour",
+  too.far     = 0.1,
+  view        = c("log_rel_freq", "dispersion"),
+  x           = model_Eng,
+  ylim        = c(0, 1),
 )
 
 vis.gam(
   main      = "Nuuchahnulth",
-  view      = c("log_rel_freq", "dispersion"),
   plot.type = "contour",
   too.far   = 0.1,
+  view      = c("log_rel_freq", "dispersion"),
   x         = model_Nuu,
   ylim      = c(0, 1),
-)
-
-dev.off()
-
-# 3D heat maps (looking top down the flexibility axis)
-
-png(
-  filename = "stats/figures/freq-DP_vs_flexibility/interaction_3D-heat.png",
-  height   = 500,
-  width    = 1000,
-)
-
-par(mfrow = c(1, 2))
-
-vis.gam(
-  main      = "English",
-  phi       = 90,
-  plot.type = "persp",
-  r         = 5,
-  too.far   = 0.1,
-  view      = c("log_rel_freq", "dispersion"),
-  x         = model_Eng,
-)
-
-vis.gam(
-  main      = "Nuuchahnulth",
-  phi       = 90,
-  plot.type = "persp",
-  r         = 5,
-  too.far   = 0.1,
-  view      = c("log_rel_freq", "dispersion"),
-  x         = model_Nuu,
 )
 
 dev.off()
@@ -126,21 +124,23 @@ png(
 par(mfrow = c(1, 2))
 
 vis.gam(
-  main      = "Small Corpus",
-  phi       = 5,
+  main      = "English",
+  phi       = 25,
   plot.type = "persp",
+  theta     = 180,
   too.far   = 0.1,
   view      = c("log_rel_freq", "dispersion"),
-  x         = model_small,
+  x         = model_Eng,
 )
 
 vis.gam(
-  main      = "100 Lexemes",
-  phi       = 5,
+  main      = "Nuuchahnulth",
+  phi       = 25,
   plot.type = "persp",
+  theta     = 180,
   too.far   = 0.1,
   view      = c("log_rel_freq", "dispersion"),
-  x         = model_100,
+  x         = model_Nuu,
 )
 
 dev.off()
@@ -156,103 +156,23 @@ png(
 par(mfrow = c(1, 2))
 
 vis.gam(
-  main      = "Small Corpus",
+  main      = "English",
   phi       = 20,
   plot.type = "persp",
   se        = 2,
   too.far   = 0.1,
   view      = c("log_rel_freq", "dispersion"),
-  x         = model_small,
+  x         = model_Eng,
 )
 
 vis.gam(
-  main      = "100 Lexemes",
+  main      = "Nuuchahnulth",
   phi       = 20,
   plot.type = "persp",
   se        = 2,
   too.far   = 0.1,
   view      = c("log_rel_freq", "dispersion"),
-  x         = model_100,
+  x         = model_Nuu,
 )
 
 dev.off()
-
-# HYPOTHESES
-# For low-frequency items, increased dispersion correlates strongly to lower flexibility.
-# For high-frequency items, increased dispersion correlates strongly to high flexibility.
-# Put differently: Items that are both frequent and evenly dispersed are very flexible.
-# EXCEPT: This trend is reversed for 100-lexeme samples, especially for English.
-# Hypothesis: This might just be do to overall frequency effects.
-
-summary(model_small)
-# Parametric coefficients:
-#             Estimate Std. Error t value Pr(>|t|)
-# (Intercept) 0.137237   0.009949   13.79   <2e-16 ***
-#
-# Approximate significance of smooth terms:
-#                               edf Ref.df     F p-value
-# te(log_rel_freq,dispersion) 3.972  4.692 2.257   0.058 .
-#
-# R-sq.(adj) =  0.0135   Deviance explained = 2.04%
-# -REML = -5.8398  Scale est. = 0.056325  n = 569
-
-# RESULTS
-# For the small corpus, the effects of frequency and dispersion combined
-# are marginally significant (p < .1).
-#
-# English: The results for the small corpus are insignificant.
-# Nuuchahnulth: Frequency + dispersion are very highly significant (p < .001).
-# - For low-frequency items, higher dispersion = higher flexibility
-# - For high-frequency items, lower dispersion = higher flexibility
-# - Explains 5.94% of the deviance. The effect is small.
-
-summary(model_100)
-# Parametric coefficients:
-#             Estimate Std. Error t value Pr(>|t|)
-# (Intercept)  0.20339    0.01703   11.94   <2e-16 ***
-#
-# Approximate significance of smooth terms:
-#                               edf Ref.df     F p-value
-# te(log_rel_freq,dispersion) 4.544  5.261 1.923  0.0929 .
-#
-# R-sq.(adj) =  0.0354   Deviance explained = 5.73%
-# -REML = 2.8363  Scale est. = 0.058312  n = 201
-
-# RESULTS
-# For the 100-lexeme dataset, the effects of frequency and dispersion combined
-# are marginally significant (p < .1).
-#
-# English: The results for the 100-lexeme dataset are insignificant.
-# Nuuchahnulth: Frequency + dispersion are significant (p < .01).
-# - The same patterns hold as for the small corpus
-#   (unsurprising, given that they come from the same sample).
-# - Explains 11.3% of the deviance.
-
-tensor_model <- gam(
-  flexibility ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
-  data   = data_100,
-  method = "REML",
-)
-
-summary(tensor_model)
-
-# NB: "The univariate smooths are additive, and then the interaction is an addition effect on top of those."
-
-# Parametric coefficients:
-#   Estimate Std. Error t value Pr(>|t|)
-# (Intercept)  0.20215    0.02645   7.643 9.35e-13 ***
-#
-# Approximate significance of smooth terms:
-#   edf Ref.df     F p-value
-# s(log_rel_freq)             1.928  2.486 0.404   0.811
-# s(dispersion)               1.000  1.000 1.493   0.223
-# ti(log_rel_freq,dispersion) 1.929  2.291 0.932   0.455
-#
-# R-sq.(adj) =  0.0384   Deviance explained = 6.17%
-# -REML = 8.3547  Scale est. = 0.058134  n = 201
-
-# RESULTS
-# The tensor model shows no significant interactions overall (for either dataset).
-# English shows no significant interactions (for either dataset).
-# For Nuuchahnulth in the small dataset, dispersion is very highly significant (p < 0.001).
-# For Nuuchahnulth in the 100-lexeme dataset, frequency + dispersion is significant (p < 0.05)
