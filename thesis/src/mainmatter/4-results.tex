@@ -131,42 +131,93 @@ Also remember from \chref{ch:methods} that corpus dispersion is a better measure
 \section{R1: Degree of lexical flexibility}
 \label{sec:4.3}
 
-In this section I examine the degree of lexical flexibility for words in English and Nuuchahnulth from several angles, both independently and in comparison, using the lexical flexibility ratings calculated with the methods in \secref*{sec:3.4.1}. The result of these calculations for the 100-item samples are shown in \appref{app:100-item-samples}, and a selection of the results appear in \tabref{tab:English-sample} for English and \tabref{tab:Nuuchahnulth-sample} for Nuuchahnulth.
+In this section I examine the degree of lexical flexibility for words in English and Nuuchahnulth from several angles, both independently and in comparison, using the lexical flexibility ratings calculated with the methods in \secref*{sec:3.4.1}. The result of these calculations for the 100-item samples are shown in \appref{app:100-item-samples}.
 
-\TODO[inline]{add English-sample table, based on the one in your colloquium talk}
+\figref{fig:histogram-100-items} visualizes these flexibility ratings for the 100-item samples from English (lefthand side) and Nuuchahnulth (righthand side). The top portion of each figure is a histogram showing the number of lexical items at different flexibility ratings, providing an approximate representation of the distribution of the flexibility ratings. Beneath the histograms are boxplots showing the median flexibility rating for each language. \figref{fig:histogram-small-corpus} shows the same visualizations for the small corpus samples.
 
-\TODO[inline]{add Nuuchahnulth-sample table, based on the one in your colloquium talk}
+\begin{figure}
 
-\figref{fig:histogram-100-items} visualizes these flexibility ratings for the 100-item samples from English (lefthand side) and Nuuchahnulth (righthand side). The top portion of each figure is a histogram showing the number of lexical items at different flexibility ratings, providing an approximate representation of the distribution of the flexibility ratings. Beneath the histograms are boxplots showing the median flexibility rating for each language.
+  \centering
+  \caption{Distribution of flexibility ratings for the 100-item samples of English and Nuuchahnulth}
+  \label{fig:histogram-100-items}
 
-\TODO[inline]{add the histograms (with boxplots) for the 100-item samples}
+  \includegraphics[width=\linewidth]{distribution-100.png}
 
-\noindent \figref{fig:histogram-small-corpus} shows the same visualizations for the small corpus samples.
+  \begin{tabular}{ l c c }
+    \toprule
+    { }                & English & Nuuchahnulth\\
+    \midrule
+    mean               & 0.223   & 0.183       \\
+    median             & 0.134   & 0.000       \\
+    standard deviation & 0.230   & 0.259       \\
+    \bottomrule
+  \end{tabular}
 
-\TODO[inline]{add the histograms (with boxplots) for the small corpus samples}
+\end{figure}
 
-\noindent Tables \ref{tab:100-item-stats} and \ref{tab:small-corpus stats} summarize basic descriptive statistics for each of the samples.
+\begin{figure}
 
-\TODO[inline]{tables showing min, max, mean, median for each sample}
+  \centering
+  \caption{Distribution of flexibility ratings for the small corpus samples of English and Nuuchahnulth}
+  \label{fig:histogram-small-corpus}
 
-One immediately obvious observation to be made from these flexibility ratings is that individual lexical items may vary widely in their flexibility, both within and across languages. While this finding is entirely unsurprising, the results very well could have been otherwise. The way Nuuchahnulth is often described, one might expect all the lexical items in the language to fall within a more limited range of high-flexibility values. This is clearly not the case. Flexibility ratings for Nuuchahnulth range from the theoretical minimum of $0$ to a maximum of $.920$ or $0.000$ depending on the sample.\TODO{update these values} However, \TODO{XX (XX\%)} of the small corpus Nuuchahnulth sample have a flexibility rating of $0$ (\TODO{XX or XX\% for the 100-item sample}), potentially challenging the claim that all Nuuchahnulth stems are flexible.
+  \includegraphics[width=\linewidth]{distribution-small.png}
 
-Likewise, those who claim that English parts of speech are well defined must confront the fact that the range of flexibility values for English is nearly the same as for Nuuchahnulth for both samples: $0$ on the lower end and $.919$ or $0.000$ on the upper end.\TODO{update these values} In fact, in both samples there are fewer English stems with a flexibility rating of $0$ than there are Nuuchahnulth stems with a flexibility rating of $0$.\TODO{verify that this is true} In this respect, then, English could be viewed as more flexible than Nuuchahnulth. Of course, it may be that this difference is due to the large difference in corpus sizes between English and Nuuchahnulth, an issue which is explored in \secref*{sec:4.4}.
+  \begin{tabular}{ l c c }
+    \toprule
+    { }                & English & Nuuchahnulth\\
+    \midrule
+    mean               & 0.122   & 0.143       \\
+    median             & 0.000   & 0.000       \\
+    standard deviation & 0.226   & 0.243       \\
+    \bottomrule
+  \end{tabular}
+
+\end{figure}
+
+One immediately obvious observation to be made from these flexibility ratings is that individual lexical items may vary widely in their flexibility, both within and across languages. While this finding is entirely unsurprising, the results very well could have been otherwise. The way Nuuchahnulth is often described, one might expect all the lexical items in the language to fall within a more limited range of high-flexibility values. This is clearly not the case. Flexibility ratings for Nuuchahnulth range from the theoretical minimum of $0$ to a maximum of $0.920$ (100-item sample) or $0.985$ (small corpus sample). However, 282 of 483 stems in the small corpus Nuuchahnulth sample (69.97\%) have a flexibility rating of $0$ (58 of stems in the 100-item sample), potentially challenging the claim that all Nuuchahnulth stems are flexible.
+
+Likewise, those who claim that English parts of speech are well defined must confront the fact that the range of flexibility values for English is nearly the same as for Nuuchahnulth for both samples: $0$ on the lower end and $.919$ (100-item sample) or $0.865$ (small corpus sample) on the upper end. In fact, in the 100-item samples there are fewer English stems with a flexibility rating of $0$ than there are Nuuchahnulth stems with a flexibility rating of $0$ (8 stems out of 100). The percentage of zero-flexibility stems in the small corpus samples are about equal (125 of 166 stems, or 75.30\%). In this respect, then, English could be viewed as similarly flexible to Nuuchahnulth. Of course, it may be that this difference is due to the large difference in corpus sizes between English and Nuuchahnulth, an issue which is explored in \secref*{sec:4.4}.
 
 Thus the answer to the question, \enquote{Are some lexical items more flexible than others?} is unsurprisingly \enquote{yes}. To pose a related question, \enquote{Can it be shown empirically and quantitatively that some lexical items are more flexible than others, as many linguists have claimed?}. The answer is again, \enquote{yes}. If we want to evaluate the claim that some languages are more or less flexible than others, it must be possible to quantify that flexibility at the level of the individual lexical item and compare them in a meaningful way. The data and methods in this thesis show that this is indeed possible, and that we can provide clear empirical answers to these kinds of questions. The flexibility of individual lexical items varies widely both within and between languages.
 
-A slightly different question than whether individual stems vary in their flexibility is whether they exhibit flexibility to any substantive degree in the first place. Or, to invert the question, is lexical flexibility a marginal / rare phenomenon which has merely been given disproportionate attention in the literature? A quick look at the flexibility data above shows that this is not the case. When lexical items in English and Nuuchahnulth exhibit flexibility, it is typically not to a marginal degree. A stem is more likely to have a flexibility of, say, $.2$ than something like $.002$. According to a one-sided, one-sample sign test, the median flexibility in all samples differs highly significantly from zero (see the summary table in \tabref{tab:English-vs-Nuuchahnulth-median}).
+A slightly different question than whether individual stems vary in their flexibility is whether they exhibit flexibility to any substantive degree in the first place. Or, to invert the question, is lexical flexibility a marginal / rare phenomenon which has merely been given disproportionate attention in the literature? A quick look at the flexibility data above shows that this is not the case. When lexical items in English and Nuuchahnulth exhibit flexibility, it is typically not to a marginal degree. A stem is more likely to have a flexibility of, say, $.200$ than something like $.002$. According to one-sided, one-sample sign tests, the median flexibility in all samples differs highly significantly from zero (see the summary table in \tabref{tab:English-vs-Nuuchahnulth-median}).
 
-% (English: $V = 4371$, $p < .001$; Nuuchahnulth: $V = 20503$, $p < .001$).
-\TODO[inline]{summarize the statistical results comparing the median flexibility in a table}
+\begin{table}
+  \centering
+  \caption{One-sided, one-sample sign tests for deviation from zero for each corpus sample}
+  \label{tab:English-vs-Nuuchahnulth-median}
+  \begin{tabular}{ l r l }
+    \toprule
+    sample                    & V    & p-value\\
+    \midrule
+    English 100 items         & 4371 & p < .0001\\
+    Nuuchahnulth 100 items    & 903  & p < .0001\\
+    English small corpus      & 861  & p < .0001\\
+    Nuuchahnulth small corpus & 7381 & p < .0001\\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
 This result may seem obvious, but it must be recognized that the result could have been different. Flexibility for English stems could have been so marginal as to not significantly deviate from zero. This would have supported an analysis of lexical flexibility in English as mere occasional language play, something exceptional rather than rampant or productive. The data show otherwise: lexical flexibility is a prevalent feature of both English and Nuuchahnulth, though to different degrees.
 
-Another obvious question to ask of these data is whether English and Nuuchahnulth differ in their overall flexibility. The answer to this is clearly \enquote{yes}, as the mean and median flexibility ratings in Tables \ref{tab:100-item-stats} and \ref{tab:small-corpus-stats} show. The mean flexibility ratings are higher for Nuuchahnulth than English in both samples. \TODO{verify this} But to reduce the entire lexicon of a language to a single average obscures important details. While it is certainly interesting that Nuuchahnulth stems are on net more flexible than English stems, the way in which the two languages exhibit flexibility is arguably the more interesting finding from this study.
+Another obvious question to ask of these data is whether English and Nuuchahnulth differ in their overall flexibility. The answer to this is not immediately obvious, given how similar the mean and median flexibility ratings for English and Nuuchahnulth are in \figref{fig:histogram-100-items} and \figref{fig:histogram-small-corpus}. But to reduce the entire lexicon of a language to a single measure of central tendency obscures important details. The \emph{way} in which the two languages exhibit flexibility is arguably the more interesting finding from this study.
 
-How then is lexical flexibility realized in English and Nuuchahnulth? In addition to the histograms in Figures \ref{fig:histogram-100-items} and \ref{fig:histogram-small-corpus}, the ternary plots in Figures \ref{fig:ternary-100-items} and \ref{fig:ternary-small-corpus} illustrate just how flexibility operates in the two languages. In these figures, each lexical item is represented by a single point on the ternary plot.
+How then is lexical flexibility realized in English and Nuuchahnulth? In addition to the histograms in \figref{fig:histogram-100-items} and \figref{fig:histogram-small-corpus}, the ternary plots in \figref{fig:ternary-100-items} and \figref{fig:ternary-small-corpus} illustrate the way that flexibility operates in these two languages. In these figures, each lexical item is represented by a single point on the ternary plot.
 
-\TODO[inline]{add ternary plots comparing English vs. Nuuchahnulth for both samples}
+\begin{figure}[h!]
+  \centering
+  \caption{Distribution of functions for the 100-item samples of English and Nuuchahnulth}
+  \label{fig:ternary-100-items}
+  \includegraphics[width=\linewidth]{functions-100.png}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \caption{Distribution of functions for the small corpus samples of English and Nuuchahnulth}
+  \label{fig:ternary-small-corpus}
+  \includegraphics[width=\linewidth]{functions-small.png}
+\end{figure}
 
 Beginning with English, we can see that most lexical items exhibit some flexibility, but to a relatively small degree. After zero-flexibility cases, the next most frequent flexibility rating is in the $0$–$0.05$ range. This is evident from the ternary plots, where lexical items tend to cluster near (but not precisely on) the corners for their most prototypical functions. Interestingly, the small English corpus appears to show \emph{more} flexibility than the 100-item sample. This could be an effect of the specific words chosen, but it could also be the case that it takes a certain number of tokens for the prototypical function of an item to become evident. This possibility is examined further in \secref*{sec:4.4}.
 
@@ -174,7 +225,7 @@ Nuuchahnulth differs from English in several notable ways. First, a much higher 
 
 This bifurcation of the data is very likely due to the small size of the Nuuchahnulth corpus, as the discussion in \secref*{sec:4.4} suggests. It may be that Nuuchahnulth words are generally highly flexible, but that more tokens are needed to see this trend. Alternatively, it may be that certain Nuuchahnulth stems are strongly associated with a specific discourse function and thus inflexible, while others are generally flexible. This would suggest a probabilistic division of Nuuchahnulth stems into two classes: those that are productively flexible, and those that are not.
 
-This second possibility would challenge existing analyses of Nuuchahnulth. The existence of a productively flexible class of stems would be counterevidence to the many claims that Nuuchahnulth word classes can in fact be clearly defined using selectional criteria such as ability to take possession or the definite suffix \addcite{citations}. Similarly, \textcite[???]{Nakayama2001} characterizes word classes in Nuuchahnulth as \enquote{strong statistical tendencies} \TODO{get exact phrasing and page for this}. For many Nuuchahnulth stems, however, there is no clear prototypical use. Many stems are used roughly as equally for predication as they are for reference, making it difficult to assess which use is more basic or unmarked.
+This second possibility would challenge existing analyses of Nuuchahnulth. The existence of a productively flexible class of stems would be counterevidence to the many claims that Nuuchahnulth word classes can in fact be clearly defined using selectional criteria such as ability to take possession or the definite suffix \addcite{citations}. Similarly, \textcite[57]{Nakayama2001} characterizes word classes in Nuuchahnulth as strong statistical tendencies in discourse. For many Nuuchahnulth stems, however, there is no clear prototypical use. Many stems are used roughly as equally for predication as they are for reference, making it difficult to assess which use is more basic or unmarked.
 
 As the ternary plots for Nuuchahnulth in \figref{fig:ternary-100-items} and \figref{fig:ternary-small-corpus} make clear, the distribution of lexical items across functions in Nuuchahnulth differs strongly from that of English. For starters, there is very little clustering around prototypical functions in the corners, in direct contrast to English. Secondly, Nuuchahnulth shows very little flexibility in the modification direction, but rampant flexibility along the reference-predication axis. For the small corpus sample in particular, there is a smooth cline of values between reference and predication. Nuuchahnulth stems sit anywhere on a continuum from prototypical referents to prototypical predicates, but none show prototypical modifier behavior.
 
@@ -183,7 +234,7 @@ These findings nicely reflect the intuitions of many researchers about these two
 \section{R2: Lexical flexibility and corpus size}
 \label{sec:4.4}
 
-It seems intuitively plausible that the more tokens of a word one encounters, the more likely one is to find flexible uses of a word. With a large enough corpus, all items would exhibit flexibility. This has been claimed by \textcite[77]{MoselHovdhaugen1992}. It may be the case that larger corpora are statistically more flexible than smaller corpora. However, to my knowledge this claim has never been tested empirically. In this section I examine the results of comparing the number of tokens encountered for a stem to its cumulative flexibility rating, the question being, \enquote{Does the cumulative flexibility for the lexical item increase as one encounters more tokens?}.
+It seems intuitively plausible that the more tokens of a word one encounters, the more likely one is to find flexible uses of a word. With a large enough corpus, all items would exhibit flexibility. This has been claimed by \textcite[77]{MoselHovdhaugen1992}. It may be the case that larger corpora are statistically more flexible than smaller corpora. However, to my knowledge this claim has never been tested empirically, although the fact that the median flexibility for the small corpus sample of English is $0$ while the median flexibility of the much larger 100-item sample is $0.134$ suggests that the hypothesis might be true. Thus in this section I examine the results of comparing the number of tokens encountered for a stem to its cumulative flexibility rating, the question being, \enquote{Does the cumulative flexibility for the lexical item increase as one encounters more tokens?}.
 
 It is important to understand here that number of tokens encountered is not the same thing as frequency. A very low-frequency word could nonetheless have a high number of tokens in a given corpus if that corpus is very large. Likewise, a high-frequency word could have a low number of tokens in a small corpus.
 
