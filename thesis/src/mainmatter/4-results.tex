@@ -13,11 +13,41 @@ This chapter presents the empirical findings from this study, answering the rese
 
 In \secref*{sec:3.4.1} I describe the procedure for quantifying the lexical flexibility of an item in a corpus using a Shannon diversity index ($H$). While the resulting values nicely align with our intuitions about when a lexical item is more or less flexible, some information is lost in the process. Reducing the lexical flexibility of an item to a single number obscures the fact that items can be equally flexible in different ways. Consider the fictional frequency data for two different stems in \tabref{tab:equal-flexibility-stems}. Stem A displays a great deal of reference-predicate flexibility, but very few instances of use as a modifier. Stem B, in contrast, displays extensive reference-modifier flexibility, but few instances of use as a predicate. However, the overall flexibility ratings of the two stems are the same.
 
-\TODO[inline]{add table}
+\begin{table}
+  \centering
+  \caption{Stems with different distributions of discourse functions and the same flexibility}
+  \label{tab:equal-flexibility-stems}
+  \begin{tabular}{ l c c c c }
+    \toprule
+    stem   & reference & predication & modification & flexibility\\
+    \midrule
+    Stem A & 25        & 25          & 0            & 0.631      \\
+    Stem B & 25        & 0           & 25           & 0.631      \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
 One way to address this reduction in fidelity is to report frequencies and corpus dispersions for each function in addition to the overall flexibility rating for each stem. I provide this information in \appref{app:100-item-samples} alongside each item's flexibility rating. However, it is also possible to visualize the relative usage of an item for each discourse function in an intuitive way by using a \dfn{ternary plot} (also called a \dfn{triangle plot}, \dfn{simplex plot}, \dfn{Gibbs triangle}, or \dfn{de Finetti diagram}). A ternary plot depicts the ratios of three variables as points within an equilateral triangle. Each corner of the triangle corresponds to one of the three possible categories (in this case, reference, predication, or modification). The closer a data point is to a particular corner, the larger the ratio of that category is. To illustrate with an example: \figref{fig:difficult} is a ternary plot for the functions of the word \txn{difficult} in English, along with the underlying frequency data and resulting flexibility rating.
 
-\TODO[inline]{add ternary plot for `difficult', along with underlying data}
+\begin{figure}
+
+  \centering
+  \caption{Flexibility of English \textit{difficult}}
+  \label{fig:difficult}
+
+  \includegraphics[width=\linewidth]{difficult.png}
+
+  \begin{tabular}{ c c c c }
+    \toprule
+    reference & predication & modification & flexibility\\
+    \midrule
+    0         & 0           & 54           & 0.000      \\
+    \bottomrule
+  \end{tabular}
+
+\end{figure}
+
+\TODO[inline]{show dispersion only; add underlying data for plot}
 
 \noindent Because the word \txn{difficult} only appears as a modifier in the corpus, it has a flexibility rating of $0$. In the ternary plot, this is evident from the fact that the plot point for \txn{difficult} sits in the modification corner of the triangle.
 
