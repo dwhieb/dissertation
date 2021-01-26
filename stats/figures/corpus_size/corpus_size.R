@@ -34,23 +34,15 @@ load_data <- function(file_path) {
 data_Nuu <- load_data("stats/data/Nuuchahnulth_corpus_size.tsv")
 data_Eng <- load_data("stats/data/English_corpus_size.tsv")
 
-# data_Eng$language <- "English"
-# data_Nuu$language <- "Nuuchahnulth"
-# data              <- rbind(data_Eng, data_Nuu)
-
 plot_Nuu <- ggplot(data_Nuu, aes(
   x     = tokens_observed,
   y     = flexibility,
   color = stem
 )) +
-  labs(title = "Nuuchahnulth") +
   ylab("flexibility (Shannon's H)") +
   xlab("# tokens observed") +
   theme_minimal() +
-  theme(
-    plot.title          = element_text(hjust = 0.5),
-    plot.title.position = "plot"
-  ) +
+  theme(plot.title = element_blank()) +
   ylim(0, 1) +
   geom_point(
     show.legend = FALSE,
@@ -68,26 +60,22 @@ plot_Eng <- ggplot(data_Eng, aes(
   x = tokens_observed,
   y = flexibility
 )) +
-  labs(title = "English") +
   ylab("flexibility (Shannon's H)") +
   xlab("# tokens observed") +
   theme_minimal() +
-  theme(
-    plot.title          = element_text(hjust = 0.5),
-    plot.title.position = "plot"
-  ) +
+  theme(plot.title = element_blank()) +
   ylim(0, 1) +
   geom_point(
     show.legend = FALSE,
     size        = 0.5
-  ) # +
-  # scale_x_continuous(trans="log10")
+  ) +
+ scale_x_continuous(trans="log10")
 
 ggsave(
-  "stats/figures/corpus_size/English.png",
+  "stats/figures/corpus_size/English_log10.png",
   plot_Eng,
-  height = 10,
-  width  = 20
+  height = 5,
+  width  = 10
 )
 
 high_frequency_Eng_words <- c(
@@ -110,14 +98,10 @@ plot_Eng_words <- ggplot(data_Eng_words, aes(
   y = flexibility,
   color = stem
 )) +
-  labs(title = "high-frequency English stems") +
   ylab("flexibility (Shannon's H)") +
   xlab("# tokens observed") +
   theme_minimal() +
-  theme(
-    plot.title          = element_text(hjust = 0.5),
-    plot.title.position = "plot"
-  ) +
+  theme(plot.title = element_blank()) +
   ylim(0, 1) +
   geom_point(
     show.legend = TRUE,
@@ -152,14 +136,10 @@ plot_Nuu_words <- ggplot(data_Nuu_words, aes(
   y = flexibility,
   color = stem
 )) +
-  labs(title = "high-frequency Nuuchahnulth stems") +
   ylab("flexibility (Shannon's H)") +
   xlab("# tokens observed") +
   theme_minimal() +
-  theme(
-    plot.title          = element_text(hjust = 0.5),
-    plot.title.position = "plot"
-  ) +
+  theme(plot.title = element_blank()) +
   ylim(0, 1) +
   geom_point(
     show.legend = TRUE,

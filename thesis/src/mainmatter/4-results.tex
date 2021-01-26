@@ -240,9 +240,42 @@ It is important to understand here that number of tokens encountered is not the 
 
 Only stems with a frequency of at least 4 were included (see \secref{sec:3.4.1} for the motivation behind this restriction). For English, I used the 100-item sample, and for Nuuchahnulth I used the entire corpus. Using a script and going sequentially through the corpora, each time I encountered a new token of a lexical item, I recalculated its flexibility and recorded that value and token frequency at that point in the corpus.
 
-\figref{fig:cumulative-flexibility-words-English} shows the result of these calculations for the the ten most frequent words in the English corpus, and \figref{fig:cumulative-flexibility-words-Nuuchahnulth} shows the same for Nuuchahnulth. The number of tokens encountered is shown on the x-axis, and the cumulative flexibility is shown on the y-axis. I show only the most frequent words here merely because they provide the clearest visual representation of the data; more comprehensive (but more difficult to read) plots for each language are given in \figref{fig:cumulative-flexibility-all-English} and \figref{fig:cumulative-flexibility-all-Nuuchahnulth}. For ease of visualization, a version of the English data with $\log_{10}$ frequency on the x-axis is also given in \figref{fig:cumulative-flexibility-English-log}.
+\figref{fig:cumulative-flexibility-words-English} shows the result of these calculations for the the ten most frequent words in the English corpus, and \figref{fig:cumulative-flexibility-words-Nuuchahnulth} shows the same for Nuuchahnulth. The number of tokens encountered is shown on the x-axis, and the cumulative flexibility is shown on the y-axis. I show only the most frequent words here merely because they provide the clearest visual representation of the data; more comprehensive (but difficult to read) plots for each language are given in \figref{fig:cumulative-flexibility-all-English} and \figref{fig:cumulative-flexibility-all-Nuuchahnulth}. For ease of visualization, a version of the English data with $\log_{10}$ frequency on the x-axis is also given in \figref{fig:cumulative-flexibility-English-log}.
 
-\TODO[inline]{all five plots of cumulative flexibility}
+\begin{figure}[h!]
+  \centering
+  \caption{Cumulative lexical flexibility for English (10 most frequent words)}
+  \label{fig:cumulative-flexibility-words-English}
+  \includegraphics[width=\linewidth]{cumulative-flexibility-words-English.png}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \caption{Cumulative lexical flexibility for Nuuchahnulth (10 most frequent words)}
+  \label{fig:cumulative-flexibility-words-Nuuchahnulth}
+  \includegraphics[width=\linewidth]{cumulative-flexibility-words-Nuuchahnulth.png}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \caption{Cumulative lexical flexibility for English (all words)}
+  \label{fig:cumulative-flexibility-all-English}
+  \includegraphics[width=\linewidth]{cumulative-flexibility-all-English.png}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \caption{Cumulative lexical flexibility for English (all words)}
+  \label{fig:cumulative-flexibility-all-Nuuchahnulth}
+  \includegraphics[width=\linewidth]{cumulative-flexibility-all-Nuuchahnulth.png}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \caption{Cumulative lexical flexibility for English ($log_10$ scale)}
+  \label{fig:cumulative-flexibility-English-log}
+  \includegraphics[width=\linewidth]{cumulative-flexibility-English-log.png}
+\end{figure}
 
 The first thing to notice from both plots of high-frequency words is that it takes a certain number of tokens for the flexibility of a word to become evident and stable. For English, the trend lines are generally no longer stochastic after $\sim$1,000 tokens encountered (this can be more easily seen in \figref{fig:cumulative-flexibility-English-log}). It we take 1,000 tokens as a reliability threshhold for determining the flexibility of a lexical item, then no Nuuchahnulth item appears with sufficient frequency in the corpus to be certain of its flexibility. That said, the flexibility of the ten words in the Nuuchahnulth sample appears to be relatively stable after 50–75 tokens. There are some words in the English sample which achieve a relatively stable flexibility rating as early as 100 tokens as well. One way to interpret these data is that, since some stems appear in a wider range of discourse contexts than others, one requires a higher number of tokens before their overall flexibility becomes evident; in contrast, the flexibility of stems that appear in a relatively small range of discourse contexts should become clear right away.
 
@@ -252,7 +285,19 @@ On the other hand, by the time one encounters 5,000 tokens of a word in English,
 
 We can also look at the data for each language in aggregate. \figref{fig:cumulative-mean-flexibility-English} shows the cumulative mean flexibility for English per token encountered. Each time a new token of a lexical item was encountered, I calculated the current flexibility ratings of each lexical item encountered up to that point, and calculated their average. The resulting plot shows number of tokens encountered on the x-axis and mean flexibility for the entire corpus up to that point on the y-axis. \figref{fig:cumulative-mean-flexibility-Nuuchahnulth} shows parallel data for Nuuchahnulth. Both graphs clearly show that the average flexibility of the corpus does not increase as the corpus grows larger. Instead it remains flat after a sufficent number of tokens are encountered.
 
-\TODO[inline]{insert plots for English and Nuuchahnulth}
+\begin{figure}[h!]
+  \centering
+  \caption{Cumulative mean flexibility for English}
+  \label{fig:cumulative-mean-flexibility-English}
+  \includegraphics[width=\linewidth]{cumulative-mean-flexibility-English.png}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \caption{Cumulative mean flexibility for Nuuchahnulth}
+  \label{fig:cumulative-mean-flexibility-Nuuchahnulth}
+  \includegraphics[width=\linewidth]{cumulative-mean-flexibility-Nuuchahnulth.png}
+\end{figure}
 
 To summarize, once enough tokens of a word are encountered as to give a reliable flexibility rating, that flexibility rating does not increase as the number of tokens encountered continues to grow. Lexical items appear to have (synchronically) fixed degrees of flexibility, that vary from word to word. This suggests that the discourse functions of any given stem are conventionalized, so that speakers know which uses a word has, and generally use them with the same proportionate frequency. Logically, aggregating this data at the language level produces the same result: languages have (synchronically) fixed degrees of flexibility, that vary from language to language.
 
@@ -265,11 +310,23 @@ To investigate the possible interactions among flexibility, frequency, and dispe
 
 Frequency is represented in this model as $\log_2$ of the relative frequency of the stem. Since relative frequency and corpus dispersion utilize different scales, I also use a tensor smooth to examine the combined contribution of frequency and dispersion to flexibility, over and above their individual contributions. I again used the 100-item sample for the English model, and the entire corpus for Nuuchahnulth.
 
-\figref{fig:interaction-heat-English} and \figref{fig:interaction-heat-Nuuchahnulth} show heat maps of the interactions of the three variables for English and Nuuchahnulth, respectively. The x-axis shows $log_2$ of relative frequency, and the y-axis shows corpus dispersion as Deviation of Propotions ($DP$), with more evenly dispersed items to the bottom of the scale and less evenly dispersed items to the top of the scale. Light-colored areas indicate a high degree of flexibility, while dark-colored areas indicate a low degree of flexibility.
+\figref{fig:interaction-heat} shows heat maps of the interactions of the three variables for English and Nuuchahnulth. The x-axis shows $log_2$ of relative frequency, and the y-axis shows corpus dispersion as Deviation of Propotions ($DP$), with more evenly dispersed items to the bottom of the scale and less evenly dispersed items to the top of the scale. Light-colored areas indicate a high degree of flexibility, while dark-colored areas indicate a low degree of flexibility.
 
-\TODO[inline]{interaction heat maps of English and Nuuchahnulth}
+\begin{figure}
+  \centering
+  \caption{Interactions among frequency, dispersion, and flexibility for English vs. Nuuchahnulth (heat map)}
+  \label{fig:interaction-heat}
+  \includegraphics[width=\linewidth]{interaction-heat.png}
+\end{figure}
 
-\figref{fig:interaction-3D-English} and \figref{fig:interaction-3D-Nuuchahnulth} are 3D representations of the same data, rotated for ease of visualization. $\log_2$ relative frequency is shown on the x-axis (with higher relative frequency to the left), flexibility is shown on the y-axis (with higher flexibility at the top of the scale), and corpus dispersion is shown on the z-axis (with more evenly dispersed values further away).
+\figref{fig:interaction-3D} shows 3D representations of the same data, rotated for ease of visualization. $\log_2$ relative frequency is shown on the x-axis (with higher relative frequency to the left), flexibility is shown on the y-axis (with higher flexibility at the top of the scale), and corpus dispersion is shown on the z-axis (with more evenly dispersed values further away).
+
+\begin{figure}
+  \centering
+  \caption{Interactions among frequency, dispersion, and flexibility for English vs. Nuuchahnulth (3D map)}
+  \label{fig:interaction-3D}
+  \includegraphics[width=\linewidth]{interaction-3D.png}
+\end{figure}
 
 In English, high frequency, evenly dispersed items appear to have low flexibility ratings, while low frequency, unevenly dispersed items appear to have high flexibility ratings. However, none of the interactions for the English model are significant. The reason for this becomes apparent when looking at the same 3D interaction plot but with maps added at a standard deviation of 2, as in \figref{fig:interaction-SD-English}. There is so much variability in the data for English that no firm conclusions can be drawn.
 
