@@ -9,7 +9,7 @@ const {
 } = fs;
 
 /**
- * Searches the entire Nuuchahnulth corpus using the provided search function,
+ * Searches an entire corpus using the provided search function,
  * and saves any changes that are made to the corpus, overwriting old files
  * @param {String}   dataDir                   The path to the directory to run the find and replace in
  * @param {Function} searchFunction            A function that accepts an utterance and its text as an argument, and returns an updated utterance. Return the original utterance if no changes need to be made.

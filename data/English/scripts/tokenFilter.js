@@ -13,9 +13,9 @@ const nonLexicalTagsPath = path.join(currentDir, `./nonLexicalTags.yml`);
 const nonLexicalTagsYAML = fs.readFileSync(nonLexicalTagsPath, `utf8`);
 const nonLexicalTags     = YAML.parse(nonLexicalTagsYAML);
 
-const blacklistPath      = path.join(currentDir, `./blacklist.yml`);
-const blacklistYAML      = fs.readFileSync(blacklistPath, `utf8`);
-const blacklist          = YAML.parse(blacklistYAML);
+const excludeListPath      = path.join(currentDir, `./excludeList.yml`);
+const excludeListYAML      = fs.readFileSync(excludeListPath, `utf8`);
+const excludeList          = YAML.parse(excludeListYAML);
 
 const badCharsRegExp = /[^A-Za-z]/u;
 
@@ -31,7 +31,7 @@ function hasBadChars(string) {
  * @return {Boolean}
  */
 export default function isGoodToken({ tags: { Penn }, transcription }) {
-  if (blacklist.includes(transcription.default)) return false;
+  if (excludeList.includes(transcription.default)) return false;
   if (hasBadChars(transcription.default)) return false;
   if (nonLexicalTags.includes(Penn)) return false;
   return true;
