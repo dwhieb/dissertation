@@ -80,5 +80,47 @@ Overall, the findings in this dissertation confirm much of what we thought we kn
 \section{Limitations \& future research}
 \label{sec:5.4}
 
+By far the biggest limitation of this study was the size of the two corpora utilized. For English, the limiting factor was how large the corpus is, while for Nuuchahnulth the limiting factor was how small the corpus is. In total I manually annotated approximately 380,000 tokens of English for the 100-item sample, a process which took about three months of regular work. Obviously, scaling this to additional words or corpora would require a huge investment of person-hours, but this is the logical next step. We could gain a much more comprehensive picture of English by looking at a 1,000-item sample, for example, perhaps carefully sampled from different semantic classes of words.
+
+While the Nuuchahnulth corpus is sizeable for a documentary corpus ($\sim$8,300 tokens), Zipf's law entails that the frequencies of most items in a corpus of that size will nonetheless be quite low. Fortunately, other corpora of Nuuchahnulth exist. \textcite{Nakayama2001} mentions that he recorded other texts not included in \textcite{Little2003} or \textcite{Louie2003}. \addcite{Swadesh \& Sapir} also collected an extensive collection of texts in Nuuchahnulth. Typing up this corpus for digital annotation and searching would only take a few weeks (it took me approximately four weeks to type the entire Nakayama corpus), and would result in a significantly larger corpus, and a more accurate picture of flexibility in Nuuchahnulth.
+
+The fact that the Nuuchahnulth corpus contains interlinear glossing also makes it possible to investigate a wide range of research questions unavailable to flat corpora like the OANC. Thanks to Nakayama's detailed analysis, future research can explore the correlations between flexibility or discourse function and any kind of morphological marking. One could explore, for example, whether different kinds of aspect marking correlate more strongly with certain discourse functions over others. For many languages, it is also possible to do some automated annotation of discourse function based purely on morphological criteria. If it is known that a given morpheme in a language is only ever used in one discourse function, than researchers can programmatically annotate every token containing that morpheme, saving a good deal of manual annotation. Interlinearized glossed documentary corpora are thus highly compatible with research into lexical flexibility.
+
+There are a few other obvious ways in which to expand the empirical coverage on lexical flexibility. First, we can examine additional languages. It is my hope that other researchers will adopt the quantitative methods presented in \chref{ch:methods} and apply them to the investigation of a range of languages. A few in particular would be excellent choices:
+
+\begin{itemize}
+
+  \singlespacing
+
+  \item \textbf{Cayuga} has been the center of a well-known debate on lexical flexibility \addcite{Mithun etc.}.
+
+  \item \textbf{Classical Nahuatl} is famously claimed to exhibit omnipredicativity \parencites{Launey1994}{Launey2004}. It is worth investigating this empirically to see just how often stems are used to predicate in the language.
+
+  \item \textbf{Latin} is the idealized model of a language with rigid parts of speech. It would be interesting to see whether lexical categories are as inflexible in the language has is generally assumed.
+
+  \item \textbf{Mandarin} is an strongly isolating language with few morphological indications of discourse function, sometimes claimed to lack parts of speech \addcite{citations}.
+
+  \item \textbf{Riau Indonesian} is claimed to have no parts of speech whatsoever \parencite{Gil1994}, but this has not yet been shown in a comprehensive way.
+
+  \item \textbf{Swahili} and other Bantu languages seem to show a great deal of referent-predicate flexibility for stems, but have never to my knowledge been discussed in the literature on lexical flexibility.
+
+  \item \textbf{Spanish and French} are both generally thought to display little to no flexibility, but hardly any work has been done to show this \parentext{though see \parencite{Kihm2017}}.
+
+  \item \textbf{Pacific Northwest} languages all show similar tendencies to Nuuchahnulth according to the existing literature. It would be interesting to see whether they do in fact pattern in similar ways.
+
+\end{itemize}
+
+Examining a range of languages like this also allows for the investigation of any correlations between flexibility and morphological type, potentially answering such questions as, \enquote{Are isolating languages more flexible than synthetic ones?}. (\textcite{Vonen1994} argues, for example, that typological similarities between English and Tokelau account for the fact that both languages are fairly flexible.)
+
+Another way that, in retrospect, I wish I had extended the empirical coverage for this study is to include adverbial (predicate modifying) uses of stems as well. I suspect that the overall flexibility rating of English may have been significantly lower had predicate modifiers been included in the analysis. I recommend that any future researchers include this category in their analysis as well. This does not affect the calculation of the flexibility rating for each stem in any meaningful way: the number of levels will simply be $4$ instead of $3$. Shannon's $H$ should still be an accurate representation of the functional diversity of each stem when applied in this way.
+
+Other research desiderata would require additional coding than what was done here. For example, a more thorough investigation of the semantics of lexical flexibility would require tagging each stem for its semantic class(es) and/or features. One could also investigate the effect of blocking (the existence of an overtly-derived form which preempts the use of a stem in that discourse function) by annotating each stem for whether an overtly-derived counterpart exists. I suspect that the flexibility ratings for blocked forms will be very low but not necessarily zero (as evidenced by the fact that one can use \txn{know} as a referent in English despite the existence of the potential blocker \txn{knowledge}).
+
+I also believe that one of the most important areas in need of investigation is the diachrony of lexical flexibility. Since competing diachronic forces can change the overall flexibility of a language in either direction, it is important to understand exactly how these changes take place. Studies that examine the trajectory of individual lexemes and how their flexibility evolved over time would be especially valuable. The long history of written documentation for English and other European languages also makes it possible to determine whether languages change significantly in their overall flexibility over time. One could study this by comparing the flexibility of corpora of Old English with Modern English, or Old French with Modern French. Some work has already been done in this area \parencites[414]{Cannon1985}{Kastovsky1996}, suggesting that English has become more flexible over time, starting with the paradigm leveling that took place in Middle English. Within English, one could also compare the flexibility of words of Germanic origin with words of Romance origin, to see if there are notable flexibility effects based on source language.
+
+The number of research questions this project spawned is vastly greater than the ones addressed in this dissertation itself. However, I hope I have shown that it is possible to answer these questions in an empirically adequate way, using the methodological foundations set forth here.
+
 \section{Conclusion}
 \label{sec:5.5}
+
+This dissertation makes three primary contributions, one methodological, one theoretical, and one empirical. The methodological contribution is the creation of a metric for measuring the lexical flexibility of individual lexemes in a language, using the Shannon diversity index. This metric nicely captures the intuition behind lexical flexibility in a way that can be consistently applied across lexemes and languages. Theoretically, I have argued for a reversal of the canonical position on parts of speech. Rather than viewing lexical flexibility as something exotic, and as a problem for theories of lexical categories, I argue that lexical flexibility is a fundamental design feature of language. Lexical flexibility exists in all cases where a language has yet to develop dedicated morphosyntactic constructions for different discourse functions, or where diachronic changes in the language have leveled such distinctions over time. Finally, the empirical contribution of this thesis is a first comprehensive understanding of just how lexical flexibility operates in English and Nuuchahnulth.
