@@ -3,8 +3,10 @@
 \include{frontmatter/title}
 \include{frontmatter/signature}
 \include{frontmatter/copyright}
-\include{frontmatter/dedication}
-\include{frontmatter/acknowledgments}
+\ifdraft{}{
+  \include{frontmatter/dedication}
+  \include{frontmatter/acknowledgments}
+}
 \include{frontmatter/cv}
 \include{frontmatter/abstract}
 
