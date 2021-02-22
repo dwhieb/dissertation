@@ -27,17 +27,17 @@ load_data <- function(file_path) {
 # DATA
 
 # English small corpus sample
-data_Eng_small <- load_data("stats/figures/freq-DP_vs_flexibility/Eng_small.csv")
+data_Eng_small <- load_data("Eng_small.csv")
 
 # Nuuchahnulth small corpus sample
-data_Nuu_small <- load_data("stats/figures/freq-DP_vs_flexibility/Nuu_small.csv")
+data_Nuu_small <- load_data("Nuu_small.csv")
 
 # English 100-item sample
-data_Eng_100              <- load_data("stats/figures/freq-DP_vs_flexibility/Eng_100.csv")
+data_Eng_100              <- load_data("Eng_100.csv")
 data_Eng_100$log_rel_freq <- log2(data_Eng_100$rel_freq)
 
 # Nuuchahnulth 100-item sample
-data_Nuu_100              <- load_data("stats/figures/freq-DP_vs_flexibility/Nuu_100.csv")
+data_Nuu_100              <- load_data("Nuu_100.csv")
 data_Nuu_100$log_rel_freq <- log2(data_Nuu_100$rel_freq)
 
 # MODELS
