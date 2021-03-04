@@ -255,7 +255,7 @@ Token frequencies can be misleading, however \parencites{Gries2008}{Gries2021}{G
   \label{fig:Gries-frequency-vs-dispersion}
 \end{figure}
 
-Disparities between token frequency and dispersion are especially common for lexical items in the middle frequencies (between 1,000 and 10,000 tokens), as demonstrated in \figref{fig:Gries-frequency-vs-dispersion} from \textcite[112]{Gries2021}. In this plot, word frequency is shown on the x-axis (logged to the base of 10), and dispersion is shown on the y-axis (measured using \dfn{Deviation of Proportions} ($DP$); see below for details). Each word in the corpus is represented by a gray point. Lexical items are divided into 10 bins based on frequency, and the blue whisker in each bin represents the range of dispersion values in that frequency bin. The plot makes clear just how widely words within the same frequency bin can vary in terms of their dispersion, especially in the middle frequencies.
+Disparities between token frequency and dispersion are especially common for lexical items in the middle frequencies (between 1,000 and 10,000 tokens), as demonstrated in \figref{fig:Gries-frequency-vs-dispersion} from \textcite[112]{Gries2021}. In this plot, word frequency is shown on the x-axis (logged to the base of 10), and dispersion is shown on the y-axis (measured using \dfn{Deviation of Proportions} [$DP$]; see below for details). Each word in the corpus is represented by a gray point. Lexical items are divided into 10 bins based on frequency, and the blue whisker in each bin represents the range of dispersion values in that frequency bin. The plot makes clear just how widely words within the same frequency bin can vary in terms of their dispersion, especially in the middle frequencies.
 
 If what we are intending to capture with these statistics is some idea of the regularity with which speakers encounter a word, it is clear that raw frequency is a deceptive measure. Instead, recent work has shown that \dfn{corpus dispersion}—how evenly an item is distributed in a corpus—more accurately represents frequency of exposure or lexical access \parencites{Gries2008}{Gries2010}{Griesfc}. Corpus dispersion correlates more strongly with reaction time data than does frequency, for example \parencite{Griesfc}.
 
@@ -276,6 +276,8 @@ Thus for this project I report a measure of corpus dispersion in addition to rel
 \end{exe}
 
 \noindent A more detailed explanation of this calculation, with examples, is in \textcite[§3]{Gries2008}. Note that while the theoretical range of $DP$ is between $0$ and $1$, it will never actually reach these two limits because a particular proportion of the lexical item was expected to occur in each corpus part anyway. This issue is only noticeable in corpora with a very small number of parts.
+
+For this study, each text within the selected corpora is treated as a single corpus part. The spoken portion of the Open American National Corpus contains 2,410 texts, each contained within its own separate file. The Nuuchahnulth corpus contains 24 texts, also each contained within its own file.
 
 Both the token frequencies and corpus dispersions of each lexical item in the 100-item samples are reported in \appref{app:100-item-samples}.
 
