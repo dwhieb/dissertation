@@ -286,9 +286,184 @@ In this section I examine the interactions between lexical flexibility, token fr
 
 To investigate the possible interactions among flexibility, frequency, and dispersion I deploy a Generalized Additive Model (GAM) in order to account for the possibility of interactions not just between flexibility and frequency / dispersion, but for interactions between frequency and dispersion as well. For example, it may be the case that there are correlations between flexibility and dispersion, but only for high frequency words. A Generalized Additive Model allows for the exploration of multiple interactions in this way.
 
-Frequency is represented in this model as $\log_2$ of the relative frequency of the stem. Since relative frequency and corpus dispersion utilize different scales, I also use a tensor smooth to examine the combined contribution of frequency and dispersion to flexibility, over and above their individual contributions. I again used the 100-item sample for the English model, and the entire corpus for Nuuchahnulth.
+Frequency is represented in this model as $\log_2$ of the relative frequency of the stem. Since relative frequency and corpus dispersion utilize different scales, I also use a tensor smooth to examine the combined contribution of frequency and dispersion to flexibility, over and above their individual contributions. The models were run in R using the \texttt{mgcv} package with the following formula:
 
-\figref{fig:interaction-heat} shows heat maps of the interactions of the three variables for English and Nuuchahnulth. The x-axis shows $log_2$ of relative frequency, and the y-axis shows corpus dispersion as Deviation of Propotions ($DP$), with more evenly dispersed items to the bottom of the scale and less evenly dispersed items to the top of the scale. Light-colored areas indicate a high degree of flexibility, while dark-colored areas indicate a low degree of flexibility.
+\begin{verbatim}
+flexibility ~ s(log_rel_freq) + s(dispersion)
+  + ti(log_rel_freq, dispersion)
+\end{verbatim}
+
+The results of each of the four models are shown in \tabref{tab:GAM-Eng-small} through \tabref{tab:GAM-Nuu-100} below.
+
+\begin{table}[h!]
+
+  \caption{Results for the Generalized Additive Model for the English small corpus sample}
+  \label{tab:GAM-Eng-small}
+
+  \begin{subtable}[h]{\textwidth}
+    \centering
+    \caption{Coefficients for linear predictors}
+    \begin{tabular}{ l c c c c c }
+      {       } & Estimate & Standard Error & t-value & p-value & { }\\
+      \midrule
+      intercept & 0.12475  & 0.01856        & 6.72    & < 0.001 & ***\\
+    \end{tabular}
+  \end{subtable}
+
+  \vspace{1em}
+
+  \begin{subtable}[h]{\textwidth}
+    \centering
+    \caption{Coefficients for smooth terms and tensors}
+    \begin{tabular}{ l c c c c }
+      { }                           & edf   & Ref.df & F     & p-value\\
+      \midrule
+      s(log\_rel\_freq)             & 1.000 & 1.000  & 0.482 & 0.488\\
+      s(dispersion)                 & 2.423 & 3.102  & 1.483 & 0.220\\
+      ti(log\_rel\_freq,dispersion) & 1.000 & 1.000  & 0.153 & 0.696\\
+    \end{tabular}
+  \end{subtable}
+
+  \vspace{1em}
+
+  \begin{subtable}[h]{\textwidth}
+    \centering
+    \caption{Explanatory value}
+    \begin{tabular}{ c c }
+      $R^2$  & Deviance Explained\\
+      0.0153 & 4.17\%\\
+    \end{tabular}
+  \end{subtable}
+
+\end{table}
+
+\begin{table}[h!]
+
+  \caption{Results for the Generalized Additive Model for the Nuuchahnulth small corpus sample}
+  \label{tab:GAM-Nuu-small}
+
+  \begin{subtable}[h]{\textwidth}
+    \centering
+    \caption{Coefficients for linear predictors}
+    \begin{tabular}{ l c c c c c }
+      {       } & Estimate & Standard Error & t-value & p-value & { }\\
+      \midrule
+      intercept & 0.21806  & 0.02995        & 7.28    & < 0.001 & ***\\
+    \end{tabular}
+  \end{subtable}
+
+  \vspace{1em}
+
+  \begin{subtable}[h]{\textwidth}
+    \centering
+    \caption{Coefficients for smooth terms and tensors}
+    \begin{tabular}{ l c c c c c }
+      { }                           & edf   & Ref.df & F     & p-value & { }\\
+      \midrule
+      s(log\_rel\_freq)             & 1.000 & 1.000  & 2.019 & 0.1586  & { } \\
+      s(dispersion)                 & 1.000 & 1.000  & 1.818 & 0.1806  & { } \\
+      ti(log\_rel\_freq,dispersion) & 1.000 & 1.000  & 4.274 & 0.0413  & *\\
+    \end{tabular}
+  \end{subtable}
+
+  \vspace{1em}
+
+  \begin{subtable}[h]{\textwidth}
+    \centering
+    \caption{Explanatory value}
+    \begin{tabular}{ c c }
+      $R^2$  & Deviance Explained\\
+      0.0857 & 11.3\%\\
+    \end{tabular}
+  \end{subtable}
+
+\end{table}
+
+\begin{table}[h!]
+
+  \caption{Results for the Generalized Additive Model for the English 100-item sample}
+  \label{tab:GAM-Eng-100}
+
+  \begin{subtable}[h]{\textwidth}
+    \centering
+    \caption{Coefficients for linear predictors}
+    \begin{tabular}{ l c c c c c }
+      {       } & Estimate & Standard Error & t-value & p-value & { }\\
+      \midrule
+      intercept & 0.22529  & 0.03848        & 5.854   & < 0.001 & ***\\
+    \end{tabular}
+  \end{subtable}
+
+  \vspace{1em}
+
+  \begin{subtable}[h]{\textwidth}
+    \centering
+    \caption{Coefficients for smooth terms and tensors}
+    \begin{tabular}{ l c c c c }
+      { }                           & edf   & Ref.df & F     & p-value\\
+      \midrule
+      s(log\_rel\_freq)             & 1.000 & 1.000  & 0.235 & 0.629\\
+      s(dispersion)                 & 1.724 & 2.258  & 0.222 & 0.733\\
+      ti(log\_rel\_freq,dispersion) & 1.000 & 1.000  & 0.005 & 0.942\\
+    \end{tabular}
+  \end{subtable}
+
+  \vspace{1em}
+
+  \begin{subtable}[h]{\textwidth}
+    \centering
+    \caption{Explanatory value}
+    \begin{tabular}{ c c }
+      $R^2$    & Deviance Explained\\
+      -0.00362 & 3.38\%\\
+    \end{tabular}
+  \end{subtable}
+
+\end{table}
+
+\begin{table}[h!]
+
+  \caption{Results for the Generalized Additive Model for the Nuuchahnulth 100-item sample}
+  \label{tab:GAM-Nuu-100}
+
+  \begin{subtable}[h]{\textwidth}
+    \centering
+    \caption{Coefficients for linear predictors}
+    \begin{tabular}{ l c c c c c }
+      {       } & Estimate & Standard Error & t-value & p-value & { }\\
+      \midrule
+      intercept & 0.21806  & 0.02995        & 7.28    & < 0.001 & ***\\
+    \end{tabular}
+  \end{subtable}
+
+  \vspace{1em}
+
+  \begin{subtable}[h]{\textwidth}
+    \centering
+    \caption{Coefficients for smooth terms and tensors}
+    \begin{tabular}{ l c c c c c }
+      { }                           & edf   & Ref.df & F     & p-value & { }\\
+      \midrule
+      s(log\_rel\_freq)             & 1.000 & 1.000  & 2.019 & 0.1586  & { }\\
+      s(dispersion)                 & 1.000 & 1.000  & 1.818 & 0.1806  & { }\\
+      ti(log\_rel\_freq,dispersion) & 1.000 & 1.000  & 4.274 & 0.0413  & *\\
+    \end{tabular}
+  \end{subtable}
+
+  \vspace{1em}
+
+  \begin{subtable}[h]{\textwidth}
+    \centering
+    \caption{Explanatory value}
+    \begin{tabular}{ c c }
+      $R^2$    & Deviance Explained\\
+      -0.00362 & 11.3\%\\
+    \end{tabular}
+  \end{subtable}
+
+\end{table}
+
+\figref{fig:interaction-heat} shows heat maps of the interactions of the three variables for the 100-item English sample and the entire corpus for Nuuchahnulth. The x-axis shows $log_2$ of relative frequency, and the y-axis shows corpus dispersion as Deviation of Propotions ($DP$), with more evenly dispersed items to the bottom of the scale and less evenly dispersed items to the top of the scale. Light-colored areas indicate a high degree of flexibility, while dark-colored areas indicate a low degree of flexibility.
 
 \begin{figure}
   \centering
@@ -306,7 +481,7 @@ Frequency is represented in this model as $\log_2$ of the relative frequency of 
   \includegraphics[width=\linewidth]{interaction-3D.png}
 \end{figure}
 
-In \idx{English}, high frequency evenly dispersed items appear to have low flexibility ratings, while low frequency unevenly dispersed items appear to have high flexibility ratings. However, none of the interactions for the English model are significant. The reason for this becomes apparent when we look at the same 3D interaction plot but with maps added at a standard deviation of 2, as in \figref{fig:interaction-3D-SD}. There is so much variability in the data for English that no firm conclusions can be drawn.
+In \idx{English}, high frequency evenly dispersed items appear to have low flexibility ratings, while low frequency unevenly dispersed items appear to have high flexibility ratings. However, none of the interactions for either of the English models are significant. The reason for this becomes apparent when we look at the same 3D interaction plot but with maps added at a standard deviation of 2, as in \figref{fig:interaction-3D-SD}. There is so much variability in the data that the results are largely uninterpretable. In both English models, $R^2$ is tiny / negative, and the deviance explained is extremely small (4.17\% and 3.38\% for the small corpus sample and the 100-item sample respectively). No conclusions can be drawn from the data.
 
 \begin{figure}
   \centering
@@ -315,9 +490,9 @@ In \idx{English}, high frequency evenly dispersed items appear to have low flexi
   \includegraphics[width=\linewidth]{interaction-3D-SE.png}
 \end{figure}
 
-In \idx{Nuuchahnulth}, high-frequency evenly-dispersed items appear to have high flexibility ratings. However, the model for \idx{Nuuchahnulth} also fails to show any significant interactions.
+In \idx{Nuuchahnulth}, high-frequency evenly-dispersed items appear to have high flexibility ratings. However, the models for both \idx{Nuuchahnulth} samples also fail to show any significant interactions, with one exception: the combined effect of log relative frequency and dispersion (above and beyond their individual contributions) is significant for both models at p < 0.05. However, the $R^2$ values for both models are again extremely small. The deviance explained for both models is 11.3\%. Like with English, no conclusions can be drawn from the data.
 
-In summary, the data on lexical flexibility and frequency / corpus dispersion are not clear enough to draw any firm conclusions regarding their interactions.
+In summary, the data on lexical flexibility and frequency / corpus dispersion show no notable evidence for any interactions among the three variables.
 
 \section{R4: The semantics of lexical flexibility}
 \label{sec:4.6}
