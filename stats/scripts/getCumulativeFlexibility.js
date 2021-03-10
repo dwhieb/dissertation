@@ -1,18 +1,31 @@
-import createStringifier from 'csv-stringify';
-import englishFilter     from '../../data/English/scripts/tokenFilter.js';
-import { fileURLToPath } from 'url';
-import path              from 'path';
-import recurse           from 'recursive-readdir';
+/* eslint-disable
+  max-statements,
+  no-await-in-loop,
+*/
 
-import { createWriteStream, readFileSync }  from 'fs';
+import createStringifier  from 'csv-stringify';
+import englishFilter      from '../../data/English/scripts/tokenFilter.js';
+import { fileURLToPath }  from 'url';
+import getRelativeEntropy from './getStatistics/getRelativeEntropy.js';
+import path               from 'path';
+import ProgressBar        from 'progress';
+import recurse            from 'recursive-readdir';
 
-// Paths
+import {
+  createWriteStream,
+  promises,
+  readFileSync,
+}  from 'fs';
+
+const { readFile } = promises;
+
+// PATHS
 
 const currentDir       = path.dirname(fileURLToPath(import.meta.url));
 const dataDir          = path.join(currentDir, `../../data`);
 const englishStemsPath = path.join(dataDir, `English/selected_archlexemes.txt`);
 
-// get list of English stems
+// English Stem List
 
 const englishStemList = readFileSync(englishStemsPath, `utf8`);
 
@@ -20,6 +33,21 @@ const englishStems = englishStemList
   .split(/[\r\n]+/gu)
   .map(stem => stem.trim())
   .filter(Boolean);
+
+const defaultStats = {
+  frequency: 0,
+  MOD:       0,
+  PRED:      0,
+  REF:       0,
+};
+
+// CONSTANTS
+
+const functions = [
+  `REF`,
+  `PRED`,
+  `MOD`,
+];
 
 const languageSettings = {
   English:      {
@@ -34,6 +62,36 @@ const languageSettings = {
   },
 };
 
+const minFrequency = 4;
+
+// METHODS
+
+function calculateFlexibilityRating(REF, PRED, MOD) {
+
+  let flexibility = getRelativeEntropy([REF, PRED, MOD]);
+
+  if (
+    Object.is(flexibility, -0)
+    || Number.isNaN(flexibility)
+  ) {
+    flexibility = 0;
+  }
+
+  return flexibility;
+
+}
+
+function calculateMeanFlexibility(frequencies) {
+
+  const flexibilityRatings = Array.from(frequencies.values())
+  .map(({ flexibility }) => flexibility)
+  .filter(Boolean);
+
+  return flexibilityRatings
+  .reduce((acc, val) => acc + val, 0) / flexibilityRatings.length;
+
+}
+
 function createTSVStream(outputPath) {
 
   const ws  = createWriteStream(outputPath);
@@ -46,6 +104,11 @@ function createTSVStream(outputPath) {
 
   return tsv;
 
+}
+
+function ignore(filePath, stats) {
+  if (stats.isDirectory()) return false;
+  return path.extname(filePath) !== `.json`;
 }
 
 /**
@@ -63,9 +126,82 @@ function shuffle([...arr]) {
   return arr;
 }
 
-function ignore(filePath, stats) {
-  if (stats.isDirectory()) return false;
-  return path.extname(filePath) !== `.json`;
+class TextProcessor {
+
+  constructor({
+    frequencies,
+    languageTSV,
+    sampleNum,
+    wordFilter,
+    wordsTSV,
+  }) {
+    this.frequencies = frequencies;
+    this.languageTSV = languageTSV;
+    this.sampleNum   = sampleNum;
+    this.wordFilter  = wordFilter;
+    this.wordsTSV    = wordsTSV;
+  }
+
+  async processText(filePath) {
+    const text = await TextProcessor.readText(filePath);
+    text.utterances.forEach(u => this.processUtterance(u));
+  }
+
+  processUtterance({ words }) {
+
+    if (!words?.length) return;
+
+    words = words // eslint-disable-line no-param-reassign
+    .filter(this.wordFilter)
+    .filter(w => w.stem !== `NA`)
+    .filter(w => w.stem);
+
+    words.forEach(w => this.processWord(w));
+
+  }
+
+  processWord(w) {
+
+    if (!functions.includes(w.tags.function)) return;
+
+    const key = w.stem.toLowerCase();
+
+    if (!this.frequencies.has(key)) this.frequencies.set(key, Object.assign({}, defaultStats));
+
+    const stats = this.frequencies.get(key);
+
+    stats[w.tags.function] += 1;
+    stats.frequency        += 1;
+
+    if (stats.frequency < minFrequency) return;
+
+    const { frequency, REF, PRED, MOD } = stats;
+
+    stats.flexibility = calculateFlexibilityRating(REF, PRED, MOD);
+
+    this.wordsTSV.write([
+      this.sampleNum,
+      key,
+      REF,
+      PRED,
+      MOD,
+      frequency,
+      stats.flexibility,
+    ]);
+
+    const meanFlexibility = calculateMeanFlexibility(this.frequencies);
+
+    if (!Number.isNaN(meanFlexibility)) {
+      this.languageTSV.write([this.sampleNum, meanFlexibility]);
+    }
+
+  }
+
+  static async readText(filePath) {
+    const json = await readFile(filePath, `utf8`);
+    return JSON.parse(json);
+  }
+
 }
 
 export default async function getCumulativeFlexibility(
@@ -92,6 +228,31 @@ export default async function getCumulativeFlexibility(
   const endWordsStream = new Promise(resolve => {
     wordsTSV.on(`end`, resolve);
   });
+
+  for (let i = 0; i < samples.length; i++) {
+
+    const sampleNum = i + 1;
+
+    console.info(`Running sample ${sampleNum} of ${samples.length}.`);
+
+    const frequencies = new Map;
+    const sample      = samples[i];
+    const progressBar = new ProgressBar(`:bar :current :total :percent :eta`, { total: sample.length });
+
+    const textProcessor = new TextProcessor({
+      frequencies,
+      languageTSV,
+      sampleNum,
+      wordFilter,
+      wordsTSV,
+    });
+
+    for (const filename of sample) {
+      await textProcessor.processText(filename);
+      progressBar.tick();
+    }
+
+  }
 
   languageTSV.end();
   wordsTSV.end();
