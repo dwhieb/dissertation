@@ -6,7 +6,7 @@
  * Arguments:
  *
  * <corpus> (required)                       "English" or "Nuuchahnulth"
- * -o, --out (optional; default = "out.tsv") The path where you would like the data output
+ * -o, --out (optional; default = "out.tsv") The *folder* path where you would like the data output (two files will be created)
  * -s, --samples (optional; default = 1)     The number of samples to run
  */
 
