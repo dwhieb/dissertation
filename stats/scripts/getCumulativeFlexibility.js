@@ -233,7 +233,7 @@ export default async function getCumulativeFlexibility(
 
     const sampleNum = i + 1;
 
-    console.info(`Running sample ${sampleNum} of ${samples.length}.`);
+    console.info(`Running sample ${sampleNum} of ${numSamples}.`);
 
     const frequencies = new Map;
     const sample      = samples[i];
