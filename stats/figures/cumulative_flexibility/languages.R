@@ -1,12 +1,16 @@
-data_Eng <- read.table("stats/data/English_means.tsv")
-colnames(data_Eng) <- c("mean")
+library(ggplot2)
 
-plot_Eng <- ggplot(data_Eng, aes(
-    x = seq_along(mean),
-    y = mean
+data_Eng                  <- read.table("stats/cumulative_flexibility/English.tsv")
+data_Eng_subset           <- data_Eng[seq(1, nrow(data_Eng), 1000), ]
+colnames(data_Eng_subset) <- c("sample", "cumulative_flexibility")
+data_Eng_subset$token     <- sequence(rle(as.character(data_Eng_subset$sample))$lengths)
+
+plot_Eng <- ggplot(data_Eng_subset, aes(
+    x = token,
+    y = cumulative_flexibility
   )) +
-  labs(title = "cumulative mean flexibility (English)") +
-  ylab("mean flexibility (Shannon's H)") +
+  labs(title = "cumulative flexibility (English)") +
+  ylab("cumulative flexibility (Shannon's H)") +
   xlab("# tokens observed") +
   theme_minimal() +
   theme(
@@ -14,26 +18,28 @@ plot_Eng <- ggplot(data_Eng, aes(
     plot.title.position = "plot"
   ) +
   ylim(0, 1) +
-  geom_point()
+  geom_point(alpha = 0.1)
 
 plot_Eng
 
 ggsave(
-  "stats/figures/cumulative_mean_flexibility/English.png",
+  "stats/figures/cumulative_flexibility/English.png",
   plot_Eng,
   height = 5,
   width  = 10
 )
 
-data_Nuu <- read.table("stats/data/Nuuchahnulth_means.tsv")
-colnames(data_Nuu) <- c("mean")
+data_Nuu                  <- read.table("stats/cumulative_flexibility/Nuuchahnulth.tsv")
+data_Nuu_subset           <- data_Nuu[seq(1, nrow(data_Nuu), 10), ]
+colnames(data_Nuu_subset) <- c("sample", "cumulative_flexibility")
+data_Nuu_subset$token     <- sequence(rle(as.character(data_Nuu_subset$sample))$lengths)
 
-plot_Nuu <- ggplot(data_Nuu, aes(
-    x = seq_along(mean),
-    y = mean
+plot_Nuu <- ggplot(data_Nuu_subset, aes(
+    x = token,
+    y = cumulative_flexibility
   )) +
-  labs(title = "cumulative mean flexibility (Nuuchahnulth)") +
-  ylab("mean flexibility (Shannon's H)") +
+  labs(title = "cumulative flexibility (Nuuchahnulth)") +
+  ylab("cumulative flexibility (Shannon's H)") +
   xlab("# tokens observed") +
   theme_minimal() +
   theme(
@@ -41,12 +47,12 @@ plot_Nuu <- ggplot(data_Nuu, aes(
     plot.title.position = "plot"
   ) +
   ylim(0, 1) +
-  geom_point()
+  geom_point(alpha = 0.1)
 
 plot_Nuu
 
 ggsave(
-  "stats/figures/cumulative_mean_flexibility/Nuuchahnulth.png",
+  "stats/figures/cumulative_flexibility/Nuuchahnulth.png",
   plot_Nuu,
   height = 5,
   width  = 10
