@@ -1,7 +1,10 @@
 library(ggplot2)
 
+displayPoints <- 10000
+
 data_Eng                  <- read.table("stats/cumulative_flexibility/English.tsv")
-data_Eng_subset           <- data_Eng[seq(1, nrow(data_Eng), 1000), ]
+numObservations_Eng       <- nrow(data_Eng)
+data_Eng_subset           <- data_Eng[seq(1, numObservations_Eng, numObservations_Eng / displayPoints), ]
 colnames(data_Eng_subset) <- c("sample", "cumulative_flexibility")
 data_Eng_subset$token     <- sequence(rle(as.character(data_Eng_subset$sample))$lengths)
 
@@ -30,7 +33,8 @@ ggsave(
 )
 
 data_Nuu                  <- read.table("stats/cumulative_flexibility/Nuuchahnulth.tsv")
-data_Nuu_subset           <- data_Nuu[seq(1, nrow(data_Nuu), 10), ]
+numObservations_Nuu       <- nrow(data_Nuu)
+data_Nuu_subset           <- data_Nuu[seq(1, numObservations_Nuu, numObservations_Nuu / displayPoints), ]
 colnames(data_Nuu_subset) <- c("sample", "cumulative_flexibility")
 data_Nuu_subset$token     <- sequence(rle(as.character(data_Nuu_subset$sample))$lengths)
 
