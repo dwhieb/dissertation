@@ -19,12 +19,12 @@ plot_words <- function(path, data, lang) {
   )
 
   for (i in 1:length(data$item)) {
-    
+
     item       <- data[i, 1]
     gloss      <- data[i, 2]
     file_label <- "unknown"
     item_label <- "unknown"
-    
+
     if (lang == "English") {
       file_label <- item
       item_label <- item
