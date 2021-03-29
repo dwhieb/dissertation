@@ -216,44 +216,13 @@ These findings nicely reflect the intuitions of many researchers about these two
 
 It seems intuitively plausible that the more tokens of a word one encounters, the more likely one is to find flexible uses of a word. With a large enough corpus, all items would exhibit flexibility. This has been claimed by \textcite[77]{MoselHovdhaugen1992}. It may be the case that larger corpora are statistically more flexible than smaller corpora. However, to my knowledge this claim has never been tested empirically. In this study, we have already seen some evidence suggesting that this may be the case. The one sample which shows a median flexibility greater than $0$ (the 100-item sample of English) is the sample with the largest token counts (up to $\sim$11,000 in the case of the word \txn{know}). This suggests that a fairly large sample is needed in order to reliably detect flexibility. In this section I examine the results of comparing the number of tokens encountered for a stem to its cumulative flexibility rating, the question being, \enquote{Does the cumulative flexibility for the lexical item increase as one encounters more tokens?}.
 
-Only stems with a frequency of at least 4 were studied (see \secref{sec:3.4.1} for the motivation behind this restriction). For English, I examined the 100-item sample, and for Nuuchahnulth I used the entire corpus. Using a script and going sequentially through the corpora, each time I encountered a new token of a lexical item, I recalculated its flexibility and recorded that value and token frequency at that point in the corpus.
+Only stems with a frequency of at least 4 were studied (see \secref{sec:3.4.1} for the motivation behind this restriction). For English, I examined the 100-item sample, and for Nuuchahnulth I used the entire corpus. Using a script and going sequentially through the corpora, I recalculated the overall flexibility of each word each time I encountered a new token of that word, and recorded the flexibility rating and token frequency at that point in the corpus.
 
-\figref{fig:cumulative-flexibility-words-English} shows the result of these calculations for the ten most frequent words in the \idx{English} corpus, and \figref{fig:cumulative-flexibility-words-Nuuchahnulth} shows the same for \idx{Nuuchahnulth}. The number of tokens encountered is shown on the x-axis, and the cumulative flexibility is shown on the y-axis. I show only the most frequent words here merely because they provide the clearest visual representation of the data; more comprehensive (but more difficult to read) plots for each language are given in \figref{fig:cumulative-flexibility-all-English} and \figref{fig:cumulative-flexibility-all-Nuuchahnulth}. For ease of visualization, a version of the English data with $\log_{10}$ frequency on the x-axis is also given in \figref{fig:cumulative-flexibility-English-log}.
+\figref{fig:cumulative-flexibility-words-English} shows the result of these calculations for the ten most frequent words in the \idx{English} corpus, and \figref{fig:cumulative-flexibility-words-Nuuchahnulth} shows the same for \idx{Nuuchahnulth}. The number of tokens encountered is shown on the x-axis, and the cumulative flexibility is shown on the y-axis. In other words, these plots show how the flexibility of the lexical item changes as the size of the corpus grows.
 
-\begin{figure}[h!]
-  \centering
-  \caption{Cumulative lexical flexibility for \idx{English} (10 most frequent words)}
-  \label{fig:cumulative-flexibility-words-English}
-  \includegraphics[width=\linewidth]{cumulative-flexibility-words-English.png}
-\end{figure}
+\TODO[inline]{Replace cumulative flexibility plots. You'll need one multi-plot showing the 10 plots for English, and another multi-plot showing the 10 plots for Nuuchahnulth. Both of these should get their own page.}
 
-\begin{figure}[h!]
-  \centering
-  \caption{Cumulative lexical flexibility for \idx{Nuuchahnulth} (10 most frequent words)}
-  \label{fig:cumulative-flexibility-words-Nuuchahnulth}
-  \includegraphics[width=\linewidth]{cumulative-flexibility-words-Nuuchahnulth.png}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \caption{Cumulative lexical flexibility for \idx{English} (all words)}
-  \label{fig:cumulative-flexibility-all-English}
-  \includegraphics[width=\linewidth]{cumulative-flexibility-all-English.png}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \caption{Cumulative lexical flexibility for \idx{Nuuchahnulth} (all words)}
-  \label{fig:cumulative-flexibility-all-Nuuchahnulth}
-  \includegraphics[width=\linewidth]{cumulative-flexibility-all-Nuuchahnulth.png}
-\end{figure}
-
-\begin{figure}[h!]
-  \centering
-  \caption{Cumulative lexical flexibility for \idx{English} ($log_10$ scale)}
-  \label{fig:cumulative-flexibility-English-log}
-  \includegraphics[width=\linewidth]{cumulative-flexibility-English-log.png}
-\end{figure}
+\TODO[options]{Update prose discussing cumulative flexibility for English and Nuuchahnulth.}
 
 The first thing to notice from both plots of high-frequency words is that it takes a certain number of tokens for the flexibility of a word to become evident and stable. For \idx{English}, the trend lines are generally no longer stochastic after $\sim$1,000 tokens encountered (this can be more easily seen in \figref{fig:cumulative-flexibility-English-log}). If we take 1,000 tokens as a reliability threshhold for determining the flexibility of a lexical item, then no \idx{Nuuchahnulth} item appears with sufficient frequency in the corpus to be certain of its flexibility. That said, the flexibility of the ten words in the Nuuchahnulth sample appears to be relatively stable after 50–75 tokens. There are some words in the English sample which achieve a relatively stable flexibility rating as early as 100 tokens as well. One way to interpret these data is that, since some stems appear in a wider range of discourse contexts than others, it takes a higher number of tokens before the overall flexibility of those stems becomes evident; in contrast, the flexibility of stems that appear in a relatively small range of discourse contexts should become clear right away.
 
