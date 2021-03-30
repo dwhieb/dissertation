@@ -17,21 +17,21 @@
 \ifdraft{\include{utilities/development}}{}
 
 % Uncomment to build only the listed chapters
-\includeonly{mainmatter/4-results}
+% \includeonly{mainmatter/4-results}
 
 \begin{document}
 
-  % \addtocontents{toc}{\setlength{\cftpartindent}{\cftchapnumwidth}}
+  \addtocontents{toc}{\setlength{\cftpartindent}{\cftchapnumwidth}}
 
-  % \input{frontmatter/index}
+  \input{frontmatter/index}
   \input{mainmatter/index}
-  % \input{appendices/index}
-  % \input{backmatter/index}
+  \input{appendices/index}
+  \input{backmatter/index}
 
-  % \ifdraft{
-  %   \begin{singlespace}
-  %     \listoftodos[To Do]
-  %   \end{singlespace}
-  % }{}
+  \ifdraft{
+    \begin{singlespace}
+      \listoftodos[To Do]
+    \end{singlespace}
+  }{}
 
 \end{document}

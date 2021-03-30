@@ -346,29 +346,27 @@ Only stems with a frequency of at least 4 were studied (see \secref{sec:3.4.1} f
 
 \end{figure}
 
-\TODO[inline]{Update prose discussing cumulative flexibility for English and Nuuchahnulth.}
+The first thing to notice from the plots of high-frequency words is that it takes a certain number of tokens for the flexibility of a word to become evident and stable. For \idx{English}, the trend lines are generally no longer stochastic after $\sim$1,000 tokens encountered. If we take 1,000 tokens as a reliability threshhold for determining the flexibility of a lexical item, then no \idx{Nuuchahnulth} item appears with sufficient frequency in the corpus to be certain of its flexibility. That said, the flexibility of some of the ten words in the Nuuchahnulth sample appears to be relatively stable after even a small number of tokens. There are some words in the English sample which achieve a relatively stable flexibility rating as early as 100 tokens as well. One way to interpret these data is that, since some stems appear in a wider range of discourse contexts than others, it takes a larger number of tokens before the overall flexibility of those stems becomes evident; in contrast, the flexibility of stems that appear in a relatively small range of discourse contexts should become clear right away.
 
-The first thing to notice from both plots of high-frequency words is that it takes a certain number of tokens for the flexibility of a word to become evident and stable. For \idx{English}, the trend lines are generally no longer stochastic after $\sim$1,000 tokens encountered (this can be more easily seen in \figref{fig:cumulative-flexibility-English-log}). If we take 1,000 tokens as a reliability threshhold for determining the flexibility of a lexical item, then no \idx{Nuuchahnulth} item appears with sufficient frequency in the corpus to be certain of its flexibility. That said, the flexibility of the ten words in the Nuuchahnulth sample appears to be relatively stable after 50–75 tokens. There are some words in the English sample which achieve a relatively stable flexibility rating as early as 100 tokens as well. One way to interpret these data is that, since some stems appear in a wider range of discourse contexts than others, it takes a higher number of tokens before the overall flexibility of those stems becomes evident; in contrast, the flexibility of stems that appear in a relatively small range of discourse contexts should become clear right away.
-
-The thing to observe regarding these data is that, once the trend line for cumulative flexibility becomes smooth, it stays flat. This shows that corpora do not become more flexible as they increase in size. If this were true, we would expect to see a continual and gradual increase in flexibility for many of the stems in the dataset, and this is not the case.
+The central point to observe regarding these data is that, once the trend line for cumulative flexibility becomes smooth, it stays flat. This shows that corpora do not become more flexible as they increase in size. If this were true, we would expect to see a continual and gradual increase in flexibility for many of the stems in the dataset, and this is not the case.
 
 On the other hand, by the time one encounters 5,000 tokens of a word in \idx{English}, there are no stems with a flexibility of zero. English flexibility ratings cluster in the lower range ($\sim0.3$), but when sufficient tokens are encountered, there do not seem to be any truly inflexible words. Therefore it does seem to be true (for English at least) that words will eventually display \emph{some} flexibility as the size of the corpus increases, but not that the overall flexibility of the word will increase.
 
-We can also look at the data for each language in aggregate. \figref{fig:cumulative-mean-flexibility-English} shows the cumulative mean flexibility for \idx{English} per token encountered. Each time a new token of a lexical item was encountered, I calculated the current flexibility ratings of each lexical item encountered up to that point, and calculated their average. The resulting plot shows number of tokens encountered on the x-axis and mean flexibility for the entire corpus up to that point on the y-axis. \figref{fig:cumulative-mean-flexibility-Nuuchahnulth} shows parallel data for \idx{Nuuchahnulth}. Both graphs clearly show that the average flexibility of the corpus does not increase as the corpus grows larger. Instead it remains flat after a sufficient number of tokens are encountered.
+We can also look at the data for each language in aggregate. \figref{fig:cumulative-flexibility-English} shows the cumulative mean flexibility for \idx{English} per token encountered. Each time a new token of a lexical item was encountered, I determined the current flexibility ratings of each lexical item encountered up to that point, and calculated their average. The resulting plot shows number of tokens encountered on the x-axis and cumulative mean flexibility for the entire corpus up to that point on the y-axis. \figref{fig:cumulative-flexibility-Nuuchahnulth} shows parallel data for \idx{Nuuchahnulth}. Both graphs clearly show that the average flexibility of the corpus does not increase as the corpus grows larger. Instead it remains flat after a sufficient number of tokens are encountered.
 
-% \begin{figure}[h!]
-%   \centering
-%   \caption{Cumulative mean flexibility for \idx{English}}
-%   \label{fig:cumulative-mean-flexibility-English}
-%   \includegraphics[width=\linewidth]{cumulative-mean-flexibility-English.png}
-% \end{figure}
+\begin{figure}[h!]
+  \centering
+  \caption{Cumulative mean flexibility for \idx{English}}
+  \label{fig:cumulative-flexibility-English}
+  \includegraphics[width=\linewidth]{cumulative-flexibility-English.png}
+\end{figure}
 
-% \begin{figure}[h!]
-%   \centering
-%   \caption{Cumulative mean flexibility for \idx{Nuuchahnulth}}
-%   \label{fig:cumulative-mean-flexibility-Nuuchahnulth}
-%   \includegraphics[width=\linewidth]{cumulative-mean-flexibility-Nuuchahnulth.png}
-% \end{figure}
+\begin{figure}[h!]
+  \centering
+  \caption{Cumulative mean flexibility for \idx{Nuuchahnulth}}
+  \label{fig:cumulative-flexibility-Nuuchahnulth}
+  \includegraphics[width=\linewidth]{cumulative-flexibility-Nuuchahnulth.png}
+\end{figure}
 
 To summarize, once enough tokens of a word are encountered to give a reliable flexibility rating, that flexibility rating does not increase as the number of tokens encountered continues to grow. Lexical items appear to have (synchronically) fixed degrees of flexibility, that vary from word to word. This suggests that the discourse functions of any given stem are conventionalized, so that speakers know which uses a word has, and generally use them with the same proportionate frequency. Logically, aggregating the data at the language level produces the same result: languages have (synchronically) fixed degrees of flexibility, that vary from language to language.
 
