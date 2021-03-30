@@ -92,7 +92,6 @@ plot_word <- function(stem_data) {
     x = token,
     y = flexibility
   )) +
-    labs(title = paste(stem_data$stem[1], " ‘", stem_data$gloss[1], "’", sep = "")) +
     ylab("flexibility (Shannon's H)") +
     xlab("# tokens observed") +
     theme_minimal() +
@@ -112,9 +111,9 @@ plot_word <- function(stem_data) {
 }
 
 plot_words <- function(data, wordlist) {
-  
+
   for (i in 1:length(wordlist$stem)) {
-    
+
     stem            <- wordlist$stem[i]
     gloss           <- wordlist$gloss[i]
     language        <- wordlist$language[i]
@@ -122,14 +121,14 @@ plot_words <- function(data, wordlist) {
     stem_data$gloss <- gloss
     stem_data$token <- sequence(rle(as.character(stem_data$sample))$lengths)
     plot            <- plot_word(stem_data)
-    
+
     ggsave(
       paste("stats/figures/cumulative_flexibility/", language, "/", language, "_", gloss, ".png", sep = ""),
       plot,
       height = 5,
       width  = 10
     )
-    
+
   }
 
 }

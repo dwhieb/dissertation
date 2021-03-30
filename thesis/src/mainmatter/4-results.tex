@@ -216,13 +216,137 @@ These findings nicely reflect the intuitions of many researchers about these two
 
 It seems intuitively plausible that the more tokens of a word one encounters, the more likely one is to find flexible uses of a word. With a large enough corpus, all items would exhibit flexibility. This has been claimed by \textcite[77]{MoselHovdhaugen1992}. It may be the case that larger corpora are statistically more flexible than smaller corpora. However, to my knowledge this claim has never been tested empirically. In this study, we have already seen some evidence suggesting that this may be the case. The one sample which shows a median flexibility greater than $0$ (the 100-item sample of English) is the sample with the largest token counts (up to $\sim$11,000 in the case of the word \txn{know}). This suggests that a fairly large sample is needed in order to reliably detect flexibility. In this section I examine the results of comparing the number of tokens encountered for a stem to its cumulative flexibility rating, the question being, \enquote{Does the cumulative flexibility for the lexical item increase as one encounters more tokens?}.
 
-Only stems with a frequency of at least 4 were studied (see \secref{sec:3.4.1} for the motivation behind this restriction). For English, I examined the 100-item sample, and for Nuuchahnulth I used the entire corpus. Using a script and going sequentially through the corpora, I recalculated the overall flexibility of each word each time I encountered a new token of that word, and recorded the flexibility rating and token frequency at that point in the corpus.
+Only stems with a frequency of at least 4 were studied (see \secref{sec:3.4.1} for the motivation behind this restriction). For English, I examined the 100-item sample, and for Nuuchahnulth I used the entire corpus. Using a script and going sequentially through the corpora, I recalculated the overall flexibility of each word each time I encountered a new token of that word, and recorded the flexibility rating and token frequency at that point in the corpus. I then randomized the order of the texts and repeated this process for a total of 100 times, so as to avoid any ordering effects, thereby providing a sort of \enquote{confidence interval} for the cumulative flexibility ratings.
 
-\figref{fig:cumulative-flexibility-words-English} shows the result of these calculations for the ten most frequent words in the \idx{English} corpus, and \figref{fig:cumulative-flexibility-words-Nuuchahnulth} shows the same for \idx{Nuuchahnulth}. The number of tokens encountered is shown on the x-axis, and the cumulative flexibility is shown on the y-axis. In other words, these plots show how the flexibility of the lexical item changes as the size of the corpus grows.
+\figref{fig:cumulative-flexibility-English-items} shows the result of these calculations for the ten most frequent words in the \idx{English} corpus, and \figref{fig:cumulative-flexibility-Nuuchahnulth-items} shows the same for \idx{Nuuchahnulth}. The number of tokens encountered is shown on the x-axis, and the cumulative flexibility is shown on the y-axis. In other words, these plots show how the flexibility of the lexical item changes as the size of the corpus grows.
 
-\TODO[inline]{Replace cumulative flexibility plots. You'll need one multi-plot showing the 10 plots for English, and another multi-plot showing the 10 plots for Nuuchahnulth. Both of these should get their own page.}
+\begin{figure}
 
-\TODO[options]{Update prose discussing cumulative flexibility for English and Nuuchahnulth.}
+  \caption{Cumulative flexibility of high-frequency lexical items in English}
+  \label{fig:cumulative-flexibility-English-items}
+  \centering
+
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{good}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/English/English_good.png}
+  \end{subfigure}%
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{know}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/English/English_know.png}
+  \end{subfigure}
+
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{one}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/English/English_one.png}
+  \end{subfigure}%
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{right}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/English/English_right.png}
+  \end{subfigure}
+
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{say}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/English/English_say.png}
+  \end{subfigure}%
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{see}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/English/English_see.png}
+  \end{subfigure}
+
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{thing}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/English/English_thing.png}
+  \end{subfigure}%
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{think}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/English/English_think.png}
+  \end{subfigure}
+
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{time}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/English/English_time.png}
+  \end{subfigure}%
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{year}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/English/English_year.png}
+  \end{subfigure}
+
+\end{figure}
+
+\begin{figure}
+
+  \caption{Cumulative flexibility of high-frequency lexical items in Nuuchahnulth}
+  \label{fig:cumulative-flexibility-Nuuchahnulth-items}
+  \centering
+
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{ḥaw̓iɬ} \tln{chief}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/Nuuchahnulth/Nuuchahnulth_chief.png}
+  \end{subfigure}%
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{qaḥ} \tln{dead}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/Nuuchahnulth/Nuuchahnulth_dead.png}
+  \end{subfigure}
+
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{qʷis} \tln{do so}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/Nuuchahnulth/Nuuchahnulth_do-so.png}
+  \end{subfigure}%
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{huḥtak} \tln{know}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/Nuuchahnulth/Nuuchahnulth_know.png}
+  \end{subfigure}
+
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{huːʔak} \tln{long ago}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/Nuuchahnulth/Nuuchahnulth_long-ago.png}
+  \end{subfigure}%
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{ʔaya} \tln{many}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/Nuuchahnulth/Nuuchahnulth_many.png}
+  \end{subfigure}
+
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{wik} \tln{not}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/Nuuchahnulth/Nuuchahnulth_not.png}
+  \end{subfigure}%
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{quːʔas} \tln{person}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/Nuuchahnulth/Nuuchahnulth_person.png}
+  \end{subfigure}
+
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{wa·} \tln{say}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/Nuuchahnulth/Nuuchahnulth_say.png}
+  \end{subfigure}%
+  \begin{subfigure}{0.5\linewidth}
+    \centering
+    \caption{\txn{hiɬ} \tln{there}}
+    \includegraphics[width=0.95\linewidth]{cumulative-flexibility/Nuuchahnulth/Nuuchahnulth_there.png}
+  \end{subfigure}
+
+\end{figure}
+
+\TODO[inline]{Update prose discussing cumulative flexibility for English and Nuuchahnulth.}
 
 The first thing to notice from both plots of high-frequency words is that it takes a certain number of tokens for the flexibility of a word to become evident and stable. For \idx{English}, the trend lines are generally no longer stochastic after $\sim$1,000 tokens encountered (this can be more easily seen in \figref{fig:cumulative-flexibility-English-log}). If we take 1,000 tokens as a reliability threshhold for determining the flexibility of a lexical item, then no \idx{Nuuchahnulth} item appears with sufficient frequency in the corpus to be certain of its flexibility. That said, the flexibility of the ten words in the Nuuchahnulth sample appears to be relatively stable after 50–75 tokens. There are some words in the English sample which achieve a relatively stable flexibility rating as early as 100 tokens as well. One way to interpret these data is that, since some stems appear in a wider range of discourse contexts than others, it takes a higher number of tokens before the overall flexibility of those stems becomes evident; in contrast, the flexibility of stems that appear in a relatively small range of discourse contexts should become clear right away.
 
@@ -232,19 +356,19 @@ On the other hand, by the time one encounters 5,000 tokens of a word in \idx{Eng
 
 We can also look at the data for each language in aggregate. \figref{fig:cumulative-mean-flexibility-English} shows the cumulative mean flexibility for \idx{English} per token encountered. Each time a new token of a lexical item was encountered, I calculated the current flexibility ratings of each lexical item encountered up to that point, and calculated their average. The resulting plot shows number of tokens encountered on the x-axis and mean flexibility for the entire corpus up to that point on the y-axis. \figref{fig:cumulative-mean-flexibility-Nuuchahnulth} shows parallel data for \idx{Nuuchahnulth}. Both graphs clearly show that the average flexibility of the corpus does not increase as the corpus grows larger. Instead it remains flat after a sufficient number of tokens are encountered.
 
-\begin{figure}[h!]
-  \centering
-  \caption{Cumulative mean flexibility for \idx{English}}
-  \label{fig:cumulative-mean-flexibility-English}
-  \includegraphics[width=\linewidth]{cumulative-mean-flexibility-English.png}
-\end{figure}
+% \begin{figure}[h!]
+%   \centering
+%   \caption{Cumulative mean flexibility for \idx{English}}
+%   \label{fig:cumulative-mean-flexibility-English}
+%   \includegraphics[width=\linewidth]{cumulative-mean-flexibility-English.png}
+% \end{figure}
 
-\begin{figure}[h!]
-  \centering
-  \caption{Cumulative mean flexibility for \idx{Nuuchahnulth}}
-  \label{fig:cumulative-mean-flexibility-Nuuchahnulth}
-  \includegraphics[width=\linewidth]{cumulative-mean-flexibility-Nuuchahnulth.png}
-\end{figure}
+% \begin{figure}[h!]
+%   \centering
+%   \caption{Cumulative mean flexibility for \idx{Nuuchahnulth}}
+%   \label{fig:cumulative-mean-flexibility-Nuuchahnulth}
+%   \includegraphics[width=\linewidth]{cumulative-mean-flexibility-Nuuchahnulth.png}
+% \end{figure}
 
 To summarize, once enough tokens of a word are encountered to give a reliable flexibility rating, that flexibility rating does not increase as the number of tokens encountered continues to grow. Lexical items appear to have (synchronically) fixed degrees of flexibility, that vary from word to word. This suggests that the discourse functions of any given stem are conventionalized, so that speakers know which uses a word has, and generally use them with the same proportionate frequency. Logically, aggregating the data at the language level produces the same result: languages have (synchronically) fixed degrees of flexibility, that vary from language to language.
 
