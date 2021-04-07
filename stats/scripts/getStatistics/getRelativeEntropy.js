@@ -14,6 +14,6 @@ export default function getRelativeEntropy(values) {
     return percent * (percent === 0 ? 0 : Math.log(percent));
   });
 
-  return -sum(calculatedValues) / Math.log(values.length);
+  return Math.abs(-sum(calculatedValues) / Math.log(values.length));
 
 }

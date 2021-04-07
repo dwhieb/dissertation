@@ -297,6 +297,7 @@ rules:
     - 3
     - 10
     - 60
+    - 100
     - 200
     - 201
     - 204
@@ -351,9 +352,7 @@ rules:
   no-obj-calls: error
   no-octal: error
   no-octal-escape: error
-  no-param-reassign:
-  - error
-  - props: true
+  no-param-reassign: error
   no-plusplus: 'off'
   no-promise-executor-return: warn
   no-proto: error
@@ -563,7 +562,7 @@ rules:
   symbol-description: error
   template-curly-spacing:
   - warn
-  - never
+  - always
   template-tag-spacing:
   - error
   - never
