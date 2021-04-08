@@ -231,7 +231,30 @@ One limitation of the Shannon diversity index as applied to this study stems fro
 
 To address this issue, I only included lexical items in the samples that had a raw frequency of at least $4$. This cutoff was established based on the fact that $4$ is the smallest frequency that can theoretically return a significant result for Shannon's $H$ when a lexical item is maximally flexible, in one of the two ways one can compute a multinomial test (probabilities vs. a χ\textsuperscript{2} test).
 
-Shannon's $H$ was calculated for each of the lexical items in the samples from both corpora to produce a flexibility rating for each item. The resulting flexibility ratings for the 100-item samples are provided in \appref{app:100-item-samples}.
+Another consideration when determining how to calculate lexical flexibility is whether the counts of each function type (reference, predication, and modification) should first be normalized to their overall incidence in the corpus before being used for the calculation of Shannon's $H$. For example, Nuuchahnulth displays a relatively low overall incidence of modification, as \tabref{tab:Nuuchahnulth-function-proportions} shows.
+
+\begin{table}[h]
+  \centering
+  \caption{Distribution of discourse functions in Nuuchahnulth}
+  \label{tab:Nuuchahnulth-function-proportions}
+  \begin{tabular}{ l r r }
+    \toprule
+    discourse function & token frequency & percentage\\
+    \midrule
+    modification &    81 &   1.07\%\\
+    predication  & 5,049 &  67.17\%\\
+    reference    & 2,387 &  31.75\%\\
+    \midrule
+    total        & 7,517 & 100.00\%\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\noindent Since the language overall displays significantly fewer cases of modification, we expect that individual lexical items will also display fewer cases of modification. A reasonable intuition is that we should therefore give any occurrences of modification more weight when it comes to calculating lexical flexibility. Normalizing flexibility ratings for the overall incidence of each function in this way could either increase or decrease the flexibility of any given token, depending on whether the functions of each lexical item are underrepresented or overrepresented compared to their overall incidences.
+
+On the other hand, a language like Nuuchahnulth, with relatively few occurrences of modification, \emph{is} skewed in terms of the frequency with which each function is used. The language as a whole is less flexible precisely because there is an uneven distribution of tokens across discourse functions. Normalizing the flexibility ratings thus makes languages like Nuuchahnulth look more flexible than they actually are. To frame this another way: Nuuchahnulth's lopsided distribution of discourse functions is something to represent faithfully in the flexibility ratings, rather than something that should be normalized away. Thus I opted to use raw function frequencies when calculating lexical flexibility, rather than normalizing those frequencies to their overall incidence in the corpus.
+
+Using the procedure outlined above, I calculated Shannon's $H$ for each of the lexical items in the samples from both corpora to produce a flexibility rating for each item. The resulting flexibility ratings for the 100-item samples are provided in \appref{app:100-item-samples}.
 
 One final methodological point is merited: many common constructions recognized by all speakers nonetheless do not appear in even a 1.5-million-word corpus. For example, in the spoken portion of the Open American National Corpus, the word \txn{hate} occurs as a predicate and a modifier but never as a referent. We know that referential uses of \txn{hate} are possible (for instance in phrases like \txn{five-minute hate} or \txn{don't spread hate}), but they are not attested in the OANC. As a consequence, the English stem \txn{hate} in this study shows no flexibility in the reference dimension, even though we know such cases are possible. The flexibility ratings in this study are necessarily approximations, based on a representative sample.
 
