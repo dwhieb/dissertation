@@ -9,7 +9,7 @@ data <- load_data(data_path)
 
 bin_width <- 0.05 # results in 20 bins
 
-histogram <- ggplot(data, aes(x = flexibility)) +
+histogram <- ggplot(data, aes(x = diversity)) +
   theme(
     axis.text.x  = element_blank(),
     axis.title.x = element_blank(),
@@ -25,7 +25,7 @@ histogram <- ggplot(data, aes(x = flexibility)) +
   ylim(0, 60)
 
 scatterplot <- ggplot(data, aes(
-  x = flexibility,
+  x = diversity,
   y = rel_freq
 )) +
   ylab("relative frequency") +
