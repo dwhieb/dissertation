@@ -8,8 +8,8 @@ create_graphic <- function(data) {
   plot <- ggplot(
     data,
     aes(
-      x = flexibility,
-      y = reorder(item, flexibility)
+      x = diversity,
+      y = reorder(item, diversity)
     )
   ) +
   theme_minimal() +
@@ -18,7 +18,7 @@ create_graphic <- function(data) {
     plot.title          = element_text(hjust = 0.5)
   ) +
   labs(title = data$language[1]) +
-  ylab("archlexeme") +
+  ylab("stem") +
   scale_y_discrete(labels = paste(data$item, data$gloss, sep = "   ")) +
   geom_point() +
   xlim(0, 1)
@@ -28,10 +28,10 @@ create_graphic <- function(data) {
 }
 
 data_100 <- load_100()
-data_100 <- data_100[order(-data_100$flexibility), ]
+data_100 <- data_100[order(-data_100$diversity), ]
 
 data_small <- load_small()
-data_small <- data_small[order(-data_small$flexibility), ]
+data_small <- data_small[order(-data_small$diversity), ]
 
 data_100_Eng <- data_100[which(data_100$language == "English"), ]
 data_100_Nuu <- data_100[which(data_100$language == "Nuuchahnulth"), ]
@@ -51,25 +51,25 @@ graphic_small_Nuu <- create_graphic(data_small_Nuu)
 figure_height = 15
 
 ggsave(
-  "stats/figures/flexibility/dot_plot_Eng_100.png",
+  "stats/figures/functional_diversity/dot_plot_Eng_100.png",
   graphic_100_Eng,
   height = figure_height
 )
 
 ggsave(
-  "stats/figures/flexibility/dot_plot_Nuu_100.png",
+  "stats/figures/functional_diversity/dot_plot_Nuu_100.png",
   graphic_100_Nuu,
   height = figure_height
 )
 
 ggsave(
-  "stats/figures/flexibility/dot_plot_Eng_small.png",
+  "stats/figures/functional_diversity/dot_plot_Eng_small.png",
   graphic_small_Eng,
   height = 10
 )
 
 ggsave(
-  "stats/figures/flexibility/dot_plot_Nuu_small.png",
+  "stats/figures/functional_diversity/dot_plot_Nuu_small.png",
   graphic_small_Nuu,
   height = figure_height
 )

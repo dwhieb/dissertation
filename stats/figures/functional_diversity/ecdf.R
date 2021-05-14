@@ -9,7 +9,7 @@ create_plot <- function(data) {
     data,
     aes(
       color = language,
-      x     = flexibility
+      x     = diversity
     )
   ) +
   theme_minimal() +
@@ -26,10 +26,10 @@ create_plot <- function(data) {
 data_100   <- load_100()
 data_small <- load_small()
 
-# filter out cases where flexibility = 0
+# filter out cases where diversity = 0
 # (NB: be sure to update filenames for figures)
-# data_100   <- data_100[which(data_100$flexibility != 0), ]
-# data_small <- data_small[which(data_small$flexibility != 0), ]
+# data_100   <- data_100[which(data_100$diversity != 0), ]
+# data_small <- data_small[which(data_small$diversity != 0), ]
 
 plot_100   <- create_plot(data_100)
 plot_small <- create_plot(data_small)
@@ -37,14 +37,14 @@ plot_small <- create_plot(data_small)
 fig_dim <- 10
 
 ggsave(
-  "stats/figures/flexibility/ecdf_100.png",
+  "stats/figures/functional_diversity/ecdf_100.png",
   plot_100,
   height = fig_dim,
   width  = fig_dim
 )
 
 ggsave(
-  "stats/figures/flexibility/ecdf_small.png",
+  "stats/figures/functional_diversity/ecdf_small.png",
   plot_small,
   height = fig_dim,
   width  = fig_dim
