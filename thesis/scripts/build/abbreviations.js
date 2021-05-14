@@ -44,7 +44,7 @@ void async function generateAbbreviations() {
     const tableLines = Object.entries(json)
     .sort(([a], [b]) => compare(a, b))
     .map(([abbr, meaning]) => {
-      const str = `\\gl{${abbr}} & ${meaning}\\\\`;
+      const str = `\\gl{${ abbr }} & ${ meaning }\\\\`;
       return str.padStart(str.length + padding);
     });
 
@@ -52,7 +52,7 @@ void async function generateAbbreviations() {
     const tableText = groups.map(createColumn).join(`\r\n\r\n`);
 
     const oldTeX = await readFile(abbreviationsChapterPath, `utf8`);
-    const newTeX = oldTeX.replace(tableRegExp, `$1\r\n${tableText}$3`);
+    const newTeX = oldTeX.replace(tableRegExp, `$1\r\n${ tableText }$3`);
 
     await writeFile(abbreviationsChapterPath, newTeX, `utf8`);
 

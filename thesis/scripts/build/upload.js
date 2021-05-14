@@ -33,7 +33,7 @@ void async function upload() {
 
     const credential   = new SharedKeyCredential(process.env.AZURE_STORAGE_ACCOUNT, process.env.AZURE_STORAGE_KEY);
     const pipeline     = StorageURL.newPipeline(credential);
-    const url          = `https://${process.env.AZURE_STORAGE_ACCOUNT}.blob.core.windows.net`;
+    const url          = `https://${ process.env.AZURE_STORAGE_ACCOUNT }.blob.core.windows.net`;
     const serviceURL   = new ServiceURL(url, pipeline);
     const containerURL = ContainerURL.fromServiceURL(serviceURL, `publications`);
     const aborter      = Aborter.none;
