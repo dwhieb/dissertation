@@ -70,7 +70,7 @@ load_data <- function(file_path) {
       "PRED",
       "MOD",
       "tokens_observed",
-      "flexibility"
+      "functional_diversity"
     ),
     comment.char = "",
     encoding     = "UTF-8",
@@ -90,9 +90,9 @@ plot_word <- function(stem_data) {
 
   plot <- ggplot(stem_data, aes(
     x = token,
-    y = flexibility
+    y = functional_diversity
   )) +
-    ylab("flexibility (Shannon's H)") +
+    ylab("functional diversity (Shannon's H)") +
     xlab("# tokens observed") +
     theme_minimal() +
     theme(
@@ -123,7 +123,7 @@ plot_words <- function(data, wordlist) {
     plot            <- plot_word(stem_data)
 
     ggsave(
-      paste("stats/figures/cumulative_flexibility/", language, "/", language, "_", gloss, ".png", sep = ""),
+      paste("stats/figures/cumulative_functional_diversity/", language, "/", language, "_", gloss, ".png", sep = ""),
       plot,
       height = 5,
       width  = 10
@@ -133,8 +133,8 @@ plot_words <- function(data, wordlist) {
 
 }
 
-data_Nuu <- load_data("stats/cumulative_flexibility/Nuuchahnulth_items.tsv")
-data_Eng <- load_data("stats/cumulative_flexibility/English_items.tsv")
+data_Nuu <- load_data("stats/cumulative_functional_diversity/Nuuchahnulth_items.tsv")
+data_Eng <- load_data("stats/cumulative_functional_diversity/English_items.tsv")
 
 data_Nuu_stems <- data_Nuu[data_Nuu$stem %in% Nuu_stems$stem, ]
 data_Eng_stems <- data_Eng[data_Eng$stem %in% Eng_stems$stem, ]
