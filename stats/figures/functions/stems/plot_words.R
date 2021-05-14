@@ -55,12 +55,12 @@ plot_words <- function(path, data, lang) {
 
 data_Nuu <- load_data("stats/data/Nuuchahnulth_stems.tsv")
 data_Nuu <- data_Nuu[which(data_Nuu$frequency >= 4), ]
-data_Nuu <- data_Nuu[order(-data_Nuu$flexibility), ]
+data_Nuu <- data_Nuu[order(-data_Nuu$diversity), ]
 data_Nuu <- data_Nuu[1:100, ]
 
 data_Eng <- load_data("stats/data/English_stems.tsv")
 data_Eng <- data_Eng[which(data_Eng$frequency >= 4), ]
-data_Eng <- data_Eng[order(-data_Eng$flexibility), ]
+data_Eng <- data_Eng[order(-data_Eng$diversity), ]
 
 plot_words("stats/figures/functions/stems/Nuuchahnulth/", data_Nuu, "Nuuchahnulth")
 plot_words("stats/figures/functions/stems/English/", data_Eng, "English")
