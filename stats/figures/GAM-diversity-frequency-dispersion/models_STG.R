@@ -14,7 +14,7 @@ load_data <- function(file_path) {
       "character", # gloss
       "integer",   # token frequency
       "numeric",   # relative frequency
-      "numeric",   # flexibility
+      "numeric",   # functional diversity
       "numeric"    # dispersion
     ),
     encoding     = "UTF-8"
@@ -46,7 +46,7 @@ data_Nuu_100$log_rel_freq <- log2(data_Nuu_100$rel_freq)
 
 # English small corpus sample
 model_Eng_small <- gam(
-  flexibility ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
+  diversity ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
   data   = data_Eng_small,
   method = "REML",
 )
@@ -55,7 +55,7 @@ summary(model_Eng_small)
 
 # Nuuchahnulth small corpus sample
 model_Nuu_small <- gam(
-  flexibility ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
+  diversity ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
   data   = data_Nuu_100,
   method = "REML",
 )
@@ -64,7 +64,7 @@ summary(model_Nuu_small)
 
 # English 100-item sample
 model_Eng_100 <- gam(
-  flexibility ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
+  diversity ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
   data   = data_Eng_100,
   method = "REML",
 )
@@ -73,7 +73,7 @@ summary(model_Eng_100)
 
 # Nuuchahnulth 100-item sample
 model_Nuu_100 <- gam(
-  flexibility ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
+  diversity ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
   data   = data_Nuu_100,
   method = "REML",
 )

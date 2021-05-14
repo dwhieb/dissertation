@@ -9,13 +9,13 @@ data_small              <- load_small()
 data_small$log_rel_freq <- log2(data_small$rel_freq)
 
 model_small <- bam(
-  flexibility ~ s(log_rel_freq) + s(dispersion),
+  diversity ~ s(log_rel_freq) + s(dispersion),
   data = data_small,
   method = "REML",
 )
 
 png(
-  filename = "stats/figures/freq-DP_vs_flexibility/partials_small.png",
+  filename = "stats/figures/freq-DP_vs_diversity/partials_small.png",
   height   = 500,
   width    = 1000,
 )
@@ -39,13 +39,13 @@ data_100              <- load_100()
 data_100$log_rel_freq <- log2(data_100$rel_freq)
 
 model_100 <- bam(
-  flexibility ~ s(log_rel_freq) + s(dispersion),
+  diversity ~ s(log_rel_freq) + s(dispersion),
   data = data_100,
   method = "REML",
 )
 
 png(
-  filename = "stats/figures/freq-DP_vs_flexibility/partials_100.png",
+  filename = "stats/figures/freq-DP_vs_diversity/partials_100.png",
   height   = 500,
   width    = 1000,
 )

@@ -14,7 +14,7 @@ data_Nuu$log_rel_freq <- log2(data_Nuu$rel_freq)
 # models
 
 model_Eng <- gam(
-  flexibility ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
+  diversity ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
   data   = data_Eng,
   method = "REML",
 )
@@ -44,7 +44,7 @@ summary(model_Eng)
 # The tensor model shows no significant interactions overall.
 
 model_Nuu <- gam(
-  flexibility ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
+  diversity ~ s(log_rel_freq) + s(dispersion) + ti(log_rel_freq, dispersion),
   data   = data_Nuu,
   method = "REML",
 )
@@ -67,26 +67,26 @@ summary(model_Nuu)
 # n                  = 2384
 
 # RESULTS
-# - Frequency correlates in a very highly significant way with flexibility
-# - Frequencies in the middle ranges are more likely to be flexible.
+# - Frequency correlates in a very highly significant way with functional diversity
+# - Frequencies in the middle ranges are more likely to be functionally diverse.
 # - Dispersion shows only a partially significant correlation.
-# - The interaction of frequency and dispersion also contributes significantly to flexibility.
+# - The interaction of frequency and dispersion also contributes significantly to functional diversity.
 #
 # However, the 3D interaction plot shows that as stems grow in frequency,
-# the standard deviation for their flexibility ratings grows dramatically,
+# the standard deviation for their functional diversity ratings grows dramatically,
 # resembling that of English.
 #
 # Moreover, the strong correlation in the low frequencies is very likely due to
 # the very large number of items with zero frequency. Given what we have seen in
 # the previous section about the number of tokens required to have a reliable
-# measure of lexical flexibility, one should not accept these results unquestioningly.
+# measure of functional diversity, one should not accept these results unquestioningly.
 # It is very likely that the correlations in the Nuuchahnulth data would disappear
 # with a larger corpus.
 
 # heat maps
 
 png(
-  filename = "stats/figures/freq-DP_vs_flexibility/interaction_heat.png",
+  filename = "stats/figures/freq-DP_vs_diversity/interaction_heat.png",
   height   = 500,
   width    = 1000,
 )
@@ -116,7 +116,7 @@ dev.off()
 # 3D perspective plots (without standard errors)
 
 png(
-  filename = "stats/figures/freq-DP_vs_flexibility/interaction_3D.png",
+  filename = "stats/figures/freq-DP_vs_diversity/interaction_3D.png",
   height   = 500,
   width    = 1000,
 )
@@ -148,7 +148,7 @@ dev.off()
 # 3D perspective plot (with standard errors)
 
 png(
-  filename = "stats/figures/freq-DP_vs_flexibility/interaction_3Dse.png",
+  filename = "stats/figures/freq-DP_vs_diversity/interaction_3Dse.png",
   height   = 500,
   width    = 1000,
 )
