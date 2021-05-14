@@ -51,6 +51,7 @@ create_graphic <- function(data) {
       plot.margin        = margin(0, 0.5, 0.5, 0.5, "cm"),
       strip.text.x       = element_blank()
     ) +
+    xlab("functional diversity (Shannon's H)") +
     geom_boxplot(
       notch       = TRUE,
       show.legend = FALSE,
