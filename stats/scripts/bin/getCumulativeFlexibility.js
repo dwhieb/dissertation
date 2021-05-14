@@ -10,8 +10,8 @@
  * -s, --samples (optional; default = 1)     The number of samples to run
  */
 
-import getCumulativeFlexibility from '../getCumulativeFlexibility.js';
-import parseArgs                from 'yargs-parser';
+import getCumulativeDiversity from '../getCumulativeDiversity.js';
+import parseArgs              from 'yargs-parser';
 
 const {
   _: [language],
@@ -25,7 +25,7 @@ if (!language) {
   throw new Error(`Please provide the language as the first argument: English | Nuuchahnulth`);
 }
 
-getCumulativeFlexibility(
+getCumulativeDiversity(
   language,
   o || out,
   s || samples,

@@ -1,23 +1,23 @@
 English      <- load_data("stats/data/English_archlexemes.tsv")
 Nuuchahnulth <- load_data("stats/data/Nuuchahnulth_archlexemes.tsv")
-Nuuchahnulth <- Nuuchahnulth[which(Nuuchahnulth$flexibility != "NaN"), ]
+Nuuchahnulth <- Nuuchahnulth[which(Nuuchahnulth$diversity != "NaN"), ]
 
-# Q: Does the mean flexibility of each language differ significantly from zero?
+# Q: Does the mean diversity of each language differ significantly from zero?
 # H0: No (t = 0)
 # H1: Yes (t != 0)
 # Test: one-sided t-test
 
 # descriptive statistics
-mean(English$flexibility)
-sd(English$flexibility)
+mean(English$diversity)
+sd(English$diversity)
 
-mean(Nuuchahnulth$flexibility)
-sd(Nuuchahnulth$flexibility)
+mean(Nuuchahnulth$diversity)
+sd(Nuuchahnulth$diversity)
 
 # Assumption of the t-test: The data are normally distributed.
 # Test for normality (H0 = normal distribution; H1 = non-normal distribution)
-shapiro.test(English$flexibility)      # W = 0.86085, p < .0001
-shapiro.test(Nuuchahnulth$flexibility) # W = 0.35818, p < .0001
+shapiro.test(English$diversity)      # W = 0.86085, p < .0001
+shapiro.test(Nuuchahnulth$diversity) # W = 0.35818, p < .0001
 
 # The data are not normally distributed.
 # Test: one-sided, one-sample sign test for the median
@@ -26,16 +26,16 @@ shapiro.test(Nuuchahnulth$flexibility) # W = 0.35818, p < .0001
 
 # one-sample sign test is run using wilcox.test()
 wilcox.test(
-  English$flexibility,
+  English$diversity,
   alternative = "greater",
   mu = 0
 ) # V = 4371, p < .0001
 
 wilcox.test(
-  Nuuchahnulth$flexibility,
+  Nuuchahnulth$diversity,
   alternative = "greater",
   mu = 0
 ) # V = 20503, p < .0001
 
 # Result
-# The median flexibility differs highly significantly from zero for both English and Nuuchahnulth.
+# The median diversity differs highly significantly from zero for both English and Nuuchahnulth.

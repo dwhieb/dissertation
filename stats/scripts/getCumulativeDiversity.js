@@ -66,29 +66,29 @@ const minFrequency = 4;
 
 // METHODS
 
-function calculateFlexibilityRating(REF, PRED, MOD) {
+function calculateDiversityRating(REF, PRED, MOD) {
 
-  let flexibility = getRelativeEntropy([REF, PRED, MOD]);
+  let diversity = getRelativeEntropy([REF, PRED, MOD]);
 
   if (
-    Object.is(flexibility, -0)
-    || Number.isNaN(flexibility)
+    Object.is(diversity, -0)
+    || Number.isNaN(diversity)
   ) {
-    flexibility = 0;
+    diversity = 0;
   }
 
-  return flexibility;
+  return diversity;
 
 }
 
-function calculateMeanFlexibility(frequencies) {
+function calculateMeanDiversity(frequencies) {
 
-  const flexibilityRatings = Array.from(frequencies.values())
-  .map(({ flexibility }) => flexibility)
+  const diversityRatings = Array.from(frequencies.values())
+  .map(({ diversity }) => diversity)
   .filter(Boolean);
 
-  return flexibilityRatings
-  .reduce((acc, val) => acc + val, 0) / flexibilityRatings.length;
+  return diversityRatings
+  .reduce((acc, val) => acc + val, 0) / diversityRatings.length;
 
 }
 
@@ -177,7 +177,7 @@ class TextProcessor {
 
     const { frequency, REF, PRED, MOD } = stats;
 
-    stats.flexibility = calculateFlexibilityRating(REF, PRED, MOD);
+    stats.diversity = calculateDiversityRating(REF, PRED, MOD);
 
     this.wordsTSV.write([
       this.sampleNum,
@@ -186,13 +186,13 @@ class TextProcessor {
       PRED,
       MOD,
       frequency,
-      stats.flexibility,
+      stats.diversity,
     ]);
 
-    const meanFlexibility = calculateMeanFlexibility(this.frequencies);
+    const meanDiversity = calculateMeanDiversity(this.frequencies);
 
-    if (!Number.isNaN(meanFlexibility)) {
-      this.languageTSV.write([this.sampleNum, meanFlexibility]);
+    if (!Number.isNaN(meanDiversity)) {
+      this.languageTSV.write([this.sampleNum, meanDiversity]);
     }
 
   }
@@ -204,7 +204,7 @@ class TextProcessor {
 
 }
 
-export default async function getCumulativeFlexibility(
+export default async function getCumulativeDiversity(
   language,
   outputPath = `.`,
   numSamples = 1,
@@ -218,8 +218,8 @@ export default async function getCumulativeFlexibility(
     samples.push(shuffle(files));
   }
 
-  const languageTSV = createTSVStream(path.join(outputPath, `${language}.tsv`));
-  const wordsTSV    = createTSVStream(path.join(outputPath, `${language}_items.tsv`));
+  const languageTSV = createTSVStream(path.join(outputPath, `${ language }.tsv`));
+  const wordsTSV    = createTSVStream(path.join(outputPath, `${ language }_items.tsv`));
 
   const endLanguageStream = new Promise(resolve => {
     languageTSV.on(`end`, resolve);
@@ -233,7 +233,7 @@ export default async function getCumulativeFlexibility(
 
     const sampleNum = i + 1;
 
-    console.info(`Running sample ${sampleNum} of ${numSamples}.`);
+    console.info(`Running sample ${ sampleNum } of ${ numSamples }.`);
 
     const frequencies = new Map;
     const sample      = samples[i];
