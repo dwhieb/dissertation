@@ -70,7 +70,7 @@ load_data <- function(file_path) {
       "PRED",
       "MOD",
       "tokens_observed",
-      "functional_diversity"
+      "diversity"
     ),
     comment.char = "",
     encoding     = "UTF-8",
@@ -90,7 +90,7 @@ plot_word <- function(stem_data) {
 
   plot <- ggplot(stem_data, aes(
     x = token,
-    y = functional_diversity
+    y = diversity
   )) +
     ylab("functional diversity (Shannon's H)") +
     xlab("# tokens observed") +

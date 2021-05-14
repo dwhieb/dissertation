@@ -346,7 +346,7 @@ This section outlines the steps for creating descriptive and inferential statist
 
 ### Descriptive Statistics
 
-#### Archlexeme Frequencies & Dispersions
+#### Stem Frequencies & Dispersions
 
 The following script calculates various statistics regarding the frequencies and dispersions of each archlexeme in the corpus. It produces a single tab-delimited file with columns for each statistic.
 

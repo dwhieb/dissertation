@@ -12,7 +12,7 @@ create_graphic <- function(data) {
     data,
     aes(
       fill = language,
-      x    = flexibility,
+      x    = diversity,
     )
   ) +
   theme_minimal() +
@@ -39,7 +39,7 @@ create_graphic <- function(data) {
       data,
       aes(
         fill = language,
-        x    = flexibility
+        x    = diversity
       )
     ) +
     theme_minimal() +
@@ -82,14 +82,14 @@ graphic_height <- 5
 graphic_width  <- 10
 
 ggsave(
-  "stats/figures/flexibility/distribution_100.png",
+  "stats/figures/functional_diversity/distribution_100.png",
   graphic_100,
   height = graphic_height,
   width  = graphic_width
 )
 
 ggsave(
-  "stats/figures/flexibility/distribution_small.png",
+  "stats/figures/functional_diversity/distribution_small.png",
   graphic_small,
   height = graphic_height,
   width  = graphic_width

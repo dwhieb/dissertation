@@ -1,5 +1,5 @@
 import createStatsFile              from './createStatsFile.js';
-import getAverageFlexibility        from './getAverageFlexibility.js';
+import getAverageDiversity          from './getAverageDiversity.js';
 import getCorpusFunctionFrequencies from './getCorpusFunctionFrequencies.js';
 import getCorpusSize                from './getCorpusSize.js';
 import getLexemeFrequencies         from './getLexemeFrequencies.js';
@@ -28,18 +28,18 @@ export default async function getStatistics(dataDir, { outputPath, unit = `stem`
   );
 
   const {
-    meanFlexibility,
-    meanNormalizedFlexibility,
-    medianFlexibility,
-    medianNormalizedFlexibility,
-  } = getAverageFlexibility(lexemeStats);
+    meanDiversity,
+    meanNormalizedDiversity,
+    medianDiversity,
+    medianNormalizedDiversity,
+  } = getAverageDiversity(lexemeStats);
 
   await createStatsFile(outputPath, lexemeStats);
 
   console.info(`Corpus size: ${ corpusSize.toLocaleString() }`);
-  console.info(`Mean flexibility: ${ meanFlexibility }`);
-  console.info(`Mean normalized flexibility: ${ meanNormalizedFlexibility }`);
-  console.info(`Median flexibility: ${ medianFlexibility }`);
-  console.info(`Median normalized flexibility: ${ medianNormalizedFlexibility }`);
+  console.info(`Mean functional diversity: ${ meanDiversity }`);
+  console.info(`Mean normalized functional diversity: ${ meanNormalizedDiversity }`);
+  console.info(`Median functional diversity: ${ medianDiversity }`);
+  console.info(`Median normalized functional diversity: ${ medianNormalizedDiversity }`);
 
 }

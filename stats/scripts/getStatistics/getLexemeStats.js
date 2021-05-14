@@ -1,7 +1,7 @@
-import getDispersions           from './getDispersions.js';
-import getLexicalFlexibility    from './getLexicalFlexibility.js';
-import getRelativeFrequencies   from './getRelativeFrequencies.js';
-import getSmallestTextSize      from './getSmallestTextSize.js';
+import getDispersions         from './getDispersions.js';
+import getFunctionalDiversity from './getFunctionalDiversity.js';
+import getRelativeFrequencies from './getRelativeFrequencies.js';
+import getSmallestTextSize    from './getSmallestTextSize.js';
 
 export default function getLexemeStats(corpusFrequencies, textsFrequencies, corpusSize, corpusFunctionFrequencies) {
 
@@ -10,7 +10,7 @@ export default function getLexemeStats(corpusFrequencies, textsFrequencies, corp
   corpusFrequencies.forEach((corpusStats, lexeme) => {
     getRelativeFrequencies(corpusStats, corpusSize);
     getDispersions(lexeme, corpusStats, textsFrequencies, smallestTextSize);
-    getLexicalFlexibility(corpusStats, corpusFunctionFrequencies);
+    getFunctionalDiversity(corpusStats, corpusFunctionFrequencies);
   });
 
   return corpusFrequencies;
