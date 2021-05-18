@@ -11,15 +11,15 @@ This chapter presents the empirical findings of this study, answering the resear
 \section{Interpreting the results}
 \label{sec:4.2}
 
-In \secref*{sec:3.4.1} I describe the procedure for quantifying the lexical flexibility of an item in a corpus using a Shannon diversity index ($H$). While the resulting values nicely align with our intuitions about when a lexical item is more or less flexible, some information is lost in the process. Reducing the lexical flexibility of an item to a single number obscures the fact that items can be equally flexible in different ways. Consider the fictional frequency data for two different stems in \tabref{tab:equal-flexibility-stems}. Stem A displays a great deal of reference-predicate flexibility, but no instances of use as a modifier. Stem B, in contrast, displays extensive reference-modifier flexibility, but no instances of use as a predicate. However, the overall flexibility ratings of the two stems are the same.
+In \secref*{sec:3.4.1} I describe the procedure for quantifying the functional diversity of an item in a corpus using a Shannon diversity index ($H$). While the resulting values nicely align with our intuitions about when a lexical item is more or less polyfunctional, some information is lost in the process. Reducing the lexical polyfunctionality of an item to a single number obscures the fact that items can be equally polyfunctional in different ways. Consider the fictional frequency data for two different stems in \tabref{tab:equal-polyfunctional-stems}. Stem A displays a great deal of reference-predicate polyfunctionality, but no instances of use as a modifier. Stem B, in contrast, displays extensive reference-modifier polyfunctionality, but no instances of use as a predicate. However, the overall functional diversity ratings of the two stems are the same.
 
 \begin{table}[h!]
   \centering
-  \caption{Stems with different distributions of discourse functions and the same flexibility}
-  \label{tab:equal-flexibility-stems}
+  \caption{Stems with different distributions of discourse functions and the same functional diversity}
+  \label{tab:equal-polyfunctional-stems}
   \begin{tabular}{ l c c c c }
     \toprule
-    stem   & reference & predication & modification & flexibility\\
+    stem   & reference & predication & modification & functional diversity\\
     \midrule
     Stem A & 25        & 25          & 0            & 0.631      \\
     Stem B & 25        & 0           & 25           & 0.631      \\
@@ -27,19 +27,19 @@ In \secref*{sec:3.4.1} I describe the procedure for quantifying the lexical flex
   \end{tabular}
 \end{table}
 
-One way to address this reduction in fidelity is to report frequencies and corpus dispersions for each function in addition to the overall flexibility rating for each stem. I provide this information in \appref{app:100-item-samples} alongside each item's flexibility rating. However, it is also possible to visualize the relative usage of an item for each discourse function in an intuitive way by using a \dfn{ternary plot} (also called a \dfn{triangle plot} or \dfn{simplex plot}). A ternary plot depicts the ratios of three variables as points within an equilateral triangle. Each corner of the triangle corresponds to one of the three possible categories (in this case, reference, predication, or modification). The closer a data point is to a particular corner, the larger the ratio of that category is. To illustrate with an example: \figref{fig:Eng-difficult} is a ternary plot for the functions of the word \txn{difficult} in \idx{English}, along with the underlying frequency data and resulting flexibility rating. Because the word \txn{difficult} only appears as a modifier in the corpus, it has a flexibility rating of $0$. In the ternary plot, this is evident from the fact that the plot point for \txn{difficult} sits in the modification corner of the triangle.
+One way to address this reduction in fidelity is to report frequencies and corpus dispersions for each function in addition to the overall functional diversity rating for each stem. I provide this information in \appref{app:100-item-samples} alongside each item's functional diversity rating. However, it is also possible to visualize the relative usage of an item for each discourse function in an intuitive way by using a \dfn{ternary plot} (also called a \dfn{triangle plot} or \dfn{simplex plot}). A ternary plot depicts the ratios of three variables as points within an equilateral triangle. Each corner of the triangle corresponds to one of the three possible categories (in this case, reference, predication, or modification). The closer a data point is to a particular corner, the larger the ratio of that category is. To illustrate with an example: \figref{fig:Eng-difficult} is a ternary plot for the functions of the word \txn{difficult} in \idx{English}, along with the underlying frequency data and resulting functional diversity rating. Because the word \txn{difficult} only appears as a modifier in the corpus, it has a functional diversity rating of $0$. In the ternary plot, this is evident from the fact that the plot point for \txn{difficult} sits in the modification corner of the triangle.
 
 \begin{figure}
 
   \centering
-  \caption{Flexibility of \idx{English} \textit{difficult}}
+  \caption{Functional diversity of \idx{English} \textit{difficult}}
   \label{fig:Eng-difficult}
 
   \includegraphics{Eng-difficult.png}
 
   \begin{tabular}{ c c c c }
     \toprule
-    reference & predication & modification & flexibility\\
+    reference & predication & modification & functional diversity\\
     \midrule
     0         & 0           & 54           & 0.000      \\
     \bottomrule
@@ -47,19 +47,19 @@ One way to address this reduction in fidelity is to report frequencies and corpu
 
 \end{figure}
 
-Compare the plot for \txn{difficult} in \figref{fig:Eng-difficult} to that of \txn{anything} in \figref{fig:Eng-anything}. The stem \txn{anything} also has a flexibility rating of $0$ because all of its tokens are used for reference. Even though its flexibility rating is the same as that of \txn{difficult}, it is plotted in a different corner of the ternary plot (reference).
+Compare the plot for \txn{difficult} in \figref{fig:Eng-difficult} to that of \txn{anything} in \figref{fig:Eng-anything}. The stem \txn{anything} also has a functional diversity rating of $0$ because all of its tokens are used for reference. Even though its functional diversity rating is the same as that of \txn{difficult}, it is plotted in a different corner of the ternary plot (reference).
 
 \begin{figure}
 
   \centering
-  \caption{Flexibility of \idx{English} \textit{anything}}
+  \caption{Functional diversity of \idx{English} \textit{anything}}
   \label{fig:Eng-anything}
 
   \includegraphics{Eng-anything.png}
 
   \begin{tabular}{ c c c c }
     \toprule
-    reference & predication & modification & flexibility\\
+    reference & predication & modification & functional diversity\\
     \midrule
     2,081     & 0           & 0            & 0.000      \\
     \bottomrule
@@ -67,21 +67,21 @@ Compare the plot for \txn{difficult} in \figref{fig:Eng-difficult} to that of \t
 
 \end{figure}
 
-\figref{fig:Eng-childhood} shows a case where a stem (\txn{childhood}) is flexible between reference and modification, but not predication. Finally, a perfectly flexible item which has equal use as a referent, predicate, and modifier, would sit exactly in the center of the triangle. The \idx{Nuuchahnulth} stem \txn{ʔu·q} \tln{good} is one such case, shown in \figref{fig:Nuu-good}. The closer a point is towards the center of the triangle, the more flexible it is.
+\figref{fig:Eng-childhood} shows a case where a stem (\txn{childhood}) is polyfunctional between reference and modification, but not predication. Finally, a perfectly polyfunctional item which has equal use as a referent, predicate, and modifier, would sit exactly in the center of the triangle. The \idx{Nuuchahnulth} stem \txn{ʔu·q} \tln{good} is one such case, shown in \figref{fig:Nuu-good}. The closer a point is towards the center of the triangle, the more functionally diverse it is.
 
 \begin{figure}
 
   \centering
-  \caption{Flexibility of \idx{English} \textit{childhood}}
+  \caption{Functional diversity of \idx{English} \textit{childhood}}
   \label{fig:Eng-childhood}
 
   \includegraphics{Eng-childhood.png}
 
   \begin{tabular}{ c c c c }
     \toprule
-    reference & predication & modification & flexibility\\
+    reference & predication & modification & functional diversity\\
     \midrule
-    2         & 0           & 2            & 0.631      \\
+    2         & 0           & 2            & 0.631\\
     \bottomrule
   \end{tabular}
 
@@ -90,16 +90,16 @@ Compare the plot for \txn{difficult} in \figref{fig:Eng-difficult} to that of \t
 \begin{figure}
 
   \centering
-  \caption{Flexibility of \idx{Nuuchahnulth} \textit{ʔu·q} \tln{good}}
+  \caption{Functional diversity of \idx{Nuuchahnulth} \textit{ʔu·q} \tln{good}}
   \label{fig:Nuu-good}
 
   \includegraphics{Nuu-good.png}
 
   \begin{tabular}{ c c c c }
     \toprule
-    reference & predication & modification & flexibility\\
+    reference & predication & modification & functional diversity\\
     \midrule
-    1         & 1           & 1            & 1.000      \\
+    1         & 1           & 1            & 1.000\\
     \bottomrule
   \end{tabular}
 
@@ -112,17 +112,17 @@ Also remember from \chref{ch:methods} that corpus dispersion is a better measure
 \begin{figure}
 
   \centering
-  \caption{Flexibility using frequency vs. corpus dispersion for \idx{English} \textit{favorite}}
+  \caption{Functional diversity using frequency vs. corpus dispersion for \idx{English} \textit{favorite}}
   \label{fig:plot-frequency-vs-dispersion}
 
   \includegraphics{Eng-favorite-comparison.png}
 
   \begin{tabular}{ c c c c c c c c c }
     \toprule
-    Frequency & Flexibility     & Dispersion & \multicolumn{3}{c}{Frequencies}        & \multicolumn{3}{c}{Dispersions ($DP$)}\\
-    { }       & (Shannon's $H$) & ($DP$)     & Reference & Predication & Modification & Reference & Predication & Modification\\
+    Frequency & Functional Diversity & Dispersion & \multicolumn{3}{c}{Frequencies}        & \multicolumn{3}{c}{Dispersions ($DP$)}\\
+    { }       & (Shannon's $H$)      & ($DP$)     & Reference & Predication & Modification & Reference & Predication & Modification\\
     \midrule
-    17        & 0.551           & 0.999      & 5         & 0           & 12           & 0.999     & 1.000       & 0.999       \\
+    17        & 0.551                & 0.999      & 5         & 0           & 12           & 0.999     & 1.000       & 0.999       \\
     \bottomrule
   \end{tabular}
 
