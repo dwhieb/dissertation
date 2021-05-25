@@ -1,6 +1,6 @@
 {
   "name": "dissertation",
-  "version": "0.11.1",
+  "version": "0.12.0",
   "description": "My Ph.D. dissertation in linguistics at the University of California, Santa Barbara",
   "author": {
     "name": "Daniel W. Hieber",
@@ -28,20 +28,20 @@
   "type": "module",
   "scripts": {
     "abbreviations": "node thesis/scripts/build/abbreviations.js",
-    "anc":           "cd data/English/scripts/ANC && java -Xmx500M -jar ANCTool-2.0.0-jar.jar && cd ../../../..",
-    "bib":           "biber thesis/src/main",
-    "check-cites":   "cd thesis/src && checkcites --backend biber main.bcf",
-    "cleanup":       "node thesis/scripts/build/cleanup.js",
-    "compile":       "cd thesis/src && xelatex -halt-on-error main.tex && cd ../..",
-    "copy-pdf":      "node thesis/scripts/build/copyPDF.js",
-    "diss-version":  "node thesis/scripts/build/version.js",
-    "quick-bib":     "npm run compile && npm run bib && npm run compile",
-    "quick-build":   "npm run compile",
-    "upload":        "node thesis/scripts/build/upload.js",
-    "prebuild":      "npm run cleanup && npm run abbreviations && npm run diss-version",
-    "build":         "npm run compile && npm run bib && npm run compile",
-    "postbuild":     "npm run copy-pdf",
-    "test":          "node thesis/scripts/test/abbreviations.js"
+    "anc": "cd data/English/scripts/ANC && java -Xmx500M -jar ANCTool-2.0.0-jar.jar && cd ../../../..",
+    "bib": "biber thesis/src/main",
+    "check-cites": "cd thesis/src && checkcites --backend biber main.bcf",
+    "cleanup": "node thesis/scripts/build/cleanup.js",
+    "compile": "cd thesis/src && xelatex -halt-on-error main.tex && cd ../..",
+    "copy-pdf": "node thesis/scripts/build/copyPDF.js",
+    "diss-version": "node thesis/scripts/build/version.js",
+    "quick-bib": "npm run compile && npm run bib && npm run compile",
+    "quick-build": "npm run compile",
+    "upload": "node thesis/scripts/build/upload.js",
+    "prebuild": "npm run cleanup && npm run abbreviations && npm run diss-version",
+    "build": "npm run compile && npm run bib && npm run compile",
+    "postbuild": "npm run copy-pdf",
+    "test": "node thesis/scripts/test/abbreviations.js"
   },
   "devDependencies": {
     "@azure/storage-blob": "^10.3.0",
