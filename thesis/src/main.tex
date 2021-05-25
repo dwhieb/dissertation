@@ -1,6 +1,5 @@
 \documentclass[
   12pt,
-  draft,
   letterpaper,
   oneside,
 ]{book}
@@ -14,7 +13,8 @@
 \graphicspath{{img/}}
 
 % Load development packages
-\ifdraft{\include{utilities/development}}{}
+% TODO: remove these
+\include{utilities/development}
 
 % Uncomment to build only the listed chapters
 % \includeonly{mainmatter/1-introduction}
