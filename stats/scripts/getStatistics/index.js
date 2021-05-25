@@ -1,8 +1,10 @@
-import createStatsFile      from './createStatsFile.js';
-import getCorpusSize        from './getCorpusSize.js';
-import getLexemeFrequencies from './getLexemeFrequencies.js';
-import getLexemeStats       from './getLexemeStats.js';
-import getTextsStats        from './getTextsStats.js';
+import createStatsFile              from './createStatsFile.js';
+import getAverageDiversity          from './getAverageDiversity.js';
+import getCorpusFunctionFrequencies from './getCorpusFunctionFrequencies.js';
+import getCorpusSize                from './getCorpusSize.js';
+import getLexemeFrequencies         from './getLexemeFrequencies.js';
+import getLexemeStats               from './getLexemeStats.js';
+import getTextsStats                from './getTextsStats.js';
 
 export default async function getStatistics(dataDir, { outputPath, unit = `stem`, wordFilter } = {}) {
 
@@ -12,15 +14,32 @@ export default async function getStatistics(dataDir, { outputPath, unit = `stem`
   const corpusSize = getCorpusSize(textsStats);
 
   textsStats.forEach(textStats => {
-    // eslint-disable-next-line no-param-reassign
     textStats.relativeSize = textStats.size / corpusSize;
   });
 
-  const corpusFrequencies = getLexemeFrequencies(textsStats);
-  const lexemeStats       = getLexemeStats(corpusFrequencies, textsStats, corpusSize);
+  const corpusFrequencies         = getLexemeFrequencies(textsStats);
+  const corpusFunctionFrequencies = getCorpusFunctionFrequencies(textsStats);
+
+  const lexemeStats = getLexemeStats(
+    corpusFrequencies,
+    textsStats,
+    corpusSize,
+    corpusFunctionFrequencies,
+  );
+
+  const {
+    meanDiversity,
+    meanNormalizedDiversity,
+    medianDiversity,
+    medianNormalizedDiversity,
+  } = getAverageDiversity(lexemeStats);
 
   await createStatsFile(outputPath, lexemeStats);
 
-  console.info(`Corpus size: ${corpusSize.toLocaleString()}`);
+  console.info(`Corpus size: ${ corpusSize.toLocaleString() }`);
+  console.info(`Mean functional diversity: ${ meanDiversity }`);
+  console.info(`Mean normalized functional diversity: ${ meanNormalizedDiversity }`);
+  console.info(`Median functional diversity: ${ medianDiversity }`);
+  console.info(`Median normalized functional diversity: ${ medianNormalizedDiversity }`);
 
 }

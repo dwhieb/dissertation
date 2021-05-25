@@ -9,25 +9,25 @@ const { readFile } = fs.promises;
 const currentDir = path.dirname(fileURLToPath(import.meta.url));
 
 const allowList = [
-  `abstract.tex`,
-  `conventions.tex`,
-  `1-introduction.tex`,
-  `2-background.tex`,
-  `3-methods.tex`,
-  `4-results.tex`,
-  `5-conclusion.tex`,
+  'abstract.tex',
+  'conventions.tex',
+  '1-introduction.tex',
+  '2-background.tex',
+  '3-methods.tex',
+  '4-results.tex',
+  '5-conclusion.tex',
 ];
 
 async function getListGlosses() {
-  const yamlList  = await readFile(path.join(currentDir, `../../src/abbreviations.yml`), `utf8`);
+  const yamlList  = await readFile(path.join(currentDir, '../../src/abbreviations.yml'), 'utf8');
   const glossData = yaml.parse(yamlList);
   return new Set(Object.keys(glossData));
 }
 
 async function getThesisGlosses() {
 
-  const filePaths    = await recurse(path.join(currentDir, `../../src`), [ignoreFilter]);
-  const fileContents = await Promise.all(filePaths.map(filePath => readFile(filePath, `utf8`)));
+  const filePaths    = await recurse(path.join(currentDir, '../../src'), [ignoreFilter]);
+  const fileContents = await Promise.all(filePaths.map(filePath => readFile(filePath, 'utf8')));
 
   return fileContents.reduce((set, text) => {
 
@@ -71,11 +71,11 @@ void async function generateAbbreviations() {
   const missingGlosses = symmetricDifference(thesisGlosses, listGlosses).sort();
 
   if (missingGlosses.length) {
-    console.error(`\nWARNING: Some glosses are missing from the abbreviations list.\n`);
+    console.error('\nWARNING: Some glosses are missing from the abbreviations list.\n');
     console.table(missingGlosses);
-    throw new Error(`MissingGlossesError`);
+    throw new Error('MissingGlossesError');
   } else {
-    console.info(`\nNo missing abbreviations.\n`);
+    console.info('\nNo missing abbreviations.\n');
   }
 
 }();

@@ -54,6 +54,9 @@ export default async function getTextStats(filePath, wordFilter, unit) {
         PREDCXN:   0,
         REF:       0,
         REFbroad:  0,
+        totalMOD:  0,
+        totalPRED: 0,
+        totalREF:  0,
       };
 
       const glosses = getGlosses(word);

@@ -1,6 +1,5 @@
 \documentclass[
   12pt,
-  draft,
   letterpaper,
   oneside,
 ]{book}
@@ -14,10 +13,11 @@
 \graphicspath{{img/}}
 
 % Load development packages
-\ifdraft{\include{utilities/development}}{}
+% TODO: remove these
+\include{utilities/development}
 
 % Uncomment to build only the listed chapters
-% \includeonly{mainmatter/4-results}
+% \includeonly{mainmatter/1-introduction}
 
 \begin{document}
 
@@ -27,11 +27,5 @@
   \input{mainmatter/index}
   \input{appendices/index}
   \input{backmatter/index}
-
-  \ifdraft{
-    \begin{singlespace}
-      \listoftodos[To Do]
-    \end{singlespace}
-  }{}
 
 \end{document}

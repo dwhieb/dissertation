@@ -1,7 +1,3 @@
-/* eslint-disable
-  no-param-reassign,
-*/
-
 export default function getRelativeFrequencies(corpusStats, corpusSize) {
 
   const relativize = frequency => (frequency * 1000) / corpusSize;

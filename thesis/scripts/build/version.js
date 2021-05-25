@@ -23,7 +23,7 @@ void async function populateVersion() {
   let constants     = await readFile(constantsPath, `utf8`);
   const { version } = await readJSON(packagePath);
 
-  constants = constants.replace(/\\version\{(?<version>.+?)\}/u, `\\version{${version}}`);
+  constants = constants.replace(/\\version\{(?<version>.+?)\}/u, `\\version{${ version }}`);
 
   await writeFile(constantsPath, constants, `utf8`);
 

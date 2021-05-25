@@ -9,8 +9,8 @@ load_data <- function(file_path) {
       "character", # aspect
       "integer",   # corpus frequency
       "numeric",   # relative frequency
-      "numeric",   # flexibility (frequency)
-      "numeric",   # flexibility (frequency broad)
+      "numeric",   # functional diversity (frequency)
+      "numeric",   # functional diversity (frequency broad)
       "integer",   # definite
       "integer",   # GER frequency
       "integer",   # INF frequency
