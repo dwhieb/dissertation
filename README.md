@@ -380,7 +380,11 @@ MOD        | The number of times that the lexeme was used for modification in th
 
 ([back to top](#readme))
 
-## 8. References
+## 8. Errata
+
+This section will contain any errata discovered after the dissertation was filed. This repository will always contain the latest, corrected version of the dissertation.
+
+## 9. References
 
 * <p id=Adler2010>Adler, Joseph. 2010. <cite>R in a nutshell: A quick desktop reference</cite>. O'Reilly.</p>
 
@@ -392,7 +396,7 @@ MOD        | The number of times that the lexeme was used for modification in th
 
 ([back to top](#readme))
 
-## 9. Legal
+## 10. Legal
 
 [My dissertation][dissertation] is copyrighted to me, and made available for public use under a [CC-BY-ND 4.0 license][CCBYND]. Please feel free to copy and redistribute my thesis, but not to modify it.
 
