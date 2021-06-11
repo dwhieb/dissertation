@@ -98,7 +98,7 @@ There were several factors which determined whether a lexical token was included
 
 Compound words were included in the analysis, but individual components of compound words were not. For example, when annotating tokens of the word \txn{back}, instances within the compounds \txn{backyard}, \txn{hardback book}, \txn{backburner} were excluded from the analysis. Instances of lexical items within noun-verb compounds \parentext{\enquote{noun incorporation}} were also excluded, such as \txn{pie} in \txn{pie baking}. However, compound words as a whole \emph{were} included in the analysis. For example, the term \txn{backyard} was treated as a lexical unit and analyzed for its discourse function. Therefore I analyze \txn{backyard} as a referent in \textit{we were sitting in the [backyard]\func{ref}} and a modifier in \textit{it was a [backyard]\func{mod} party}.
 
-Determining when a complex term is a compound rather than a phrase is admittedly not a straightforward task. I operationalized the distinction between compound and phrase in a simplistic but consistent way: if the term is written as a single word, I treat it as a compound; if the term is written with space between the two elements, I treat it as nominal modification. This is obviously an imperfect operationalization. However, it allows me to rely on the judgments of the original compilers and transcribers of the corpus, who were presumably much better acquainted with the context of each potential compound and the intended meaning.
+Determining when a complex term is a compound rather than a phrase is admittedly not a straightforward task. I operationalized the distinction between compound and phrase in an overly simplistic but consistent way: if the term is written as a single word, I treat it as a compound; if the term is written with space between the two elements, I treat it as nominal modification. This is obviously an imperfect operationalization. While it does allow me to rely on the judgments of the original compilers and transcribers of the corpus, who were presumably much better acquainted with the context of each potential compound and the intended meaning, it comes with primarily one significant deficiency, especially for English—namely, this operationalization of compounding likely significantly under-reports the number of compounds \parentext{or \dfn{binominal lexemes} \parencite{Pepper2020}} in the corpus. Many binominal items with clearly conventionalized meanings, such as \txn{distance learning} or \txn{soap opera}, are nonetheless treated as compositional in this study. As a result, the amount of reference-modification polyfunctionality in English is undoubtedly over-reported to some degree (see especially \figref{fig:ternary-100-items} and \figref{fig:ternary-small-corpus}).
 
 Note that the issue of compounding is primarily relevant to \idx{English}. \idx{Nuuchahnulth} does have a construction which \textcite[90]{Nakayama2001} calls \dfn{nominal concatenation}, exemplified in \exref{ex:3.4}, but this is quite rare.
 
@@ -237,15 +237,38 @@ The following principles also guided the annotation of the English data.
 
 \end{itemize}
 
-What follows is a sample annotation of some of the data from the English corpus, applying the principles above.
+What follows is a sample annotation of some of the data from the English corpus, applying the principles above. I then explain each coding decision for the sample passage in the bullet points that follow. Since some bullet points apply to more than one token, and each token may be referred to by more than one bullet point, each point is listed along with the tokens it applies to.
 
 \begin{exe}
   \ex\label{ex:3.7}
   \exinfo{\idx{English} (Indo-European > Germanic)}\\
   \onehalfspacing
-  Well life\func{ref} there in the country\func{ref} is nice and tranquil. I lived\func{pred} working\func{mod} all of my life\func{ref} with livestock\func{ref}. I always had to get\func{pred} up early milk\func{pred} the cows\func{ref} and uh run\func{pred} run\func{pred} them as we say\func{pred} because it's a— to the pastures\func{ref} until times\func{ref} got\func{pred} pretty bad and one\func{mod} day\func{ref} I sent\func{pred} my daughter\func{ref} to to the pasture\func{ref} to bring in the cows\func{ref}. We brought\func{pred} them back in the afternoon\func{ref} when I saw\func{pred} that behind her there came\func{pred} a big\func{mod} group\func{ref} of they looked\func{pred} like soldiers\func{ref} but in street\func{mod} clothes\func{ref}. Then she came\func{pred} my daughter\func{ref} came\func{pred} almost green pale and she said\func{pred} to me ``Mama" she said\func{pred} to me ``Those are guerillas\func{ref}!" That was the first\func{mod} time\func{ref} I saw\func{pred} them the gue— the guerillas\func{ref}.
+  Well life\super{1}\func{ref} there in the country\super{2}\func{ref} is nice and tranquil. I lived\super{3}\func{pred} working all of my life\super{4}\func{ref} with livestock\super{5}\func{ref}. I always had to get up early milk\super{6}\func{pred} the cows\super{7}\func{ref} and uh run\super{8}\func{pred} run\super{9}\func{pred} them as we say\super{10}\func{pred} because it's a— to the pastures\super{11}\func{ref} until times\super{12}\func{ref} got pretty bad and one\super{13}\func{mod} day\super{14}\func{ref} I sent\super{15}\func{pred} my daughter\super{16}\func{ref} to to the pasture\super{17}\func{ref} to bring in the cows\super{18}\func{ref}. We brought\super{19}\func{pred} them back in the afternoon\super{20}\func{ref} when I saw\super{21}\func{pred} that behind her there came\super{22}\func{pred} a big\super{23}\func{mod} group\super{24}\func{ref} of they looked like soldiers\super{25}\func{ref} but in street\super{26}\func{mod} clothes\super{27}\func{ref}. Then she came\super{28}\func{pred} my daughter\super{29}\func{ref} came\super{30}\func{pred} almost green pale and she said\super{31}\func{pred} to me ``Mama" she said\super{32}\func{pred} to me ``Those are guerillas!" That was the first\super{33}\func{mod} time\super{34}\func{ref} I saw\super{35}\func{pred} them the gue— the guerillas\super{36}\func{ref}.
   \exsourcebelow[ArguetaBertila-ENG]{OANC}
 \end{exe}
+
+\begin{itemize}
+  \singlespacing
+  \item {[\txn{life}\super{1}; \txn{times}\super{12}]} \textsc{ref:} These words are Subjects of copular predicates (including inchoative uses of \txn{get}).
+  \item {[\txn{country}\super{2}; \txn{life}\super{4}; \txn{livestock}\super{5}; \txn{pastures}\super{11}; \txn{pasture}\super{17}; \txn{afternoon}\super{20}; \txn{clothes}\super{27}]} \textsc{ref:} These words are heads of referential expressions that are objects of Prepositions.
+  \item {[\txn{times}\super{2}; \txn{cows}\super{7}; \txn{pastures}\super{11}; \txn{pasture}\super{17}; \txn{cows}\super{18}; \txn{afternoon}\super{20}; \txn{group}\super{24}; \txn{time}\super{34}; \txn{guerillas}\super{36}]} \textsc{ref:} These words are heads of referential expressions that are marked with Definite or Indefinite Articles.
+  \item {[\txn{lived}\super{3}; \txn{sent}\super{15}; \txn{brought}\super{19}; \txn{saw}\super{21}; \txn{came}\super{22}; \txn{came}\super{28}; \txn{came}\super{30}; \txn{said}\super{31}; \txn{said}\super{32}; \txn{saw}\super{35}]} \textsc{pred:} This word takes the Past Tense \txn{‑ed} predicate construction, or is the inflectional form for Past Tense if an irregular form.
+  \item {[\txn{life}\super{4}; \txn{daughter}\super{16}; \txn{daughter}\super{29}]} \textsc{ref:} These words are heads of referential expressions that are modified by Possessive Pronouns.
+  \item {[\txn{life}\super{4}; \txn{cows}\super{7}; \txn{daughter}\super{16}; \txn{cows}\super{18}; \txn{soldiers}\super{25}; \txn{guerillas}\super{36}]} \textsc{ref:} These words are heads of referential expressions functioning as the Object of a predicate or Participle construction.
+  \item {[\txn{milk}\super{6}; \txn{run}\super{8}; \txn{run}\super{9}]} \textsc{pred:} These words are objects of the modal expression \txn{had to}.
+  \item {[\txn{milk}\super{6}]} \textsc{pred:} This word is modified by the predicate modifier \txn{always}.
+  \item {[\txn{say}\super{10}; \txn{saw}\super{35}]} \textsc{pred:} These words function as heads of Relative Clause constructions.
+  \item {[\txn{one}\super{13}; \txn{big}\super{23}; \txn{street}\super{26}; \txn{first}\super{33}]} \textsc{mod:} These words enrich the meaning of the following referent, as part of a broader referring expression.
+  \item {[\txn{day}\super{14}; \txn{group}\super{24}; \txn{clothes}\super{27}; \txn{time}\super{34}]} \textsc{ref:} These words function as heads of referring expressions which are enriched by a preceding modifier.
+  \item {[\txn{saw}\super{21}]} \textsc{pred:} This word takes a complement clause as its object.
+  \item {[\txn{came}\super{22}]} \textsc{pred:} This word fills the predicate slot in a Presentative \parencite[1408]{Quirketal1985} construction following \txn{there}.
+\end{itemize}
+
+Words that did not receive an analysis were excluded because they are either a) grammatical function items (as opposed to lexical; e.g. articles, prepositions, etc.), b) discourse markers, or c) overtly marked for their discourse function.
+
+Finally, a special note about the phrase \txn{street clothes}: This phrase is arguably a single binominal lexeme consisting of the two stems \txn{street} and \txn{clothes}. \txn{street clothes} as a lexical unit contrasts with athletic clothes or formalwear. This is especially obvious when compared with other potential, non-lexicalized uses of the expression, where it could mean \tln{clothes lying in the street} or \tln{clothes with images of streets printed on them}. These latter meanings are not lexicalized, whereas the former meaning is.
+
+Under this analysis, the expression \txn{street clothes} in the above passage should be analyzed as a single unit. However, remember from earlier in this section that the identification of compounds / binominal lexemes is operationalized in this study using whitespace. If a term is written as a single word, it is treated as a compound; otherwise, the two components of the phrase are treated as distinct lexical items. As noted, this operationalization under-reports the number of binominal lexemes in English. The case of \txn{street clothes} is the perfect illustration of this under-reporting. Semantic analysis of the expression \txn{street clothes} suggests that it should be treated as a single lexical unit, but the operationalization of compounds in this dissertation requires that I treat these words as distinct lexical items.
 
 The complete set of annotations for the English corpus may be found at \href{https://github.com/dwhieb/dissertation}{https://github.com/\\dwhieb/dissertation}.
 
@@ -410,7 +433,7 @@ It is important to distinguish these cases of \dfn{clause combining} from \dfn{s
             ḥayu‑qʔičḥ‑ʼaƛ‑it‑s                  qʷiyu‑ʔa·k‑(y)iːs             qaḥ‑ši(ƛ)     ʔumʔi·qsu\\
             ten‑year‑\gl{fin}‑\gl{past}‑\gl{1sg} when‑\gl{poss}‑\gl{indef.1sg} dead‑\gl{mom} mother\\
             I.was.ten.years.old                when.mine.did                died          mother\\
-            \gl{pred}                          \gl{pred}                    \gl{pred}     \gl{ref}\\
+            \gl{pred}                          { }                        \gl{pred}     \gl{ref}\\
             \tln{I was ten years old when my mother died.}
     \exsource[98]{Nakayama2001}
 
@@ -444,7 +467,7 @@ It is important to distinguish these cases of \dfn{clause combining} from \dfn{s
             naʔaːt‑ʼat‑imt‑s                         qʷiyu‑(y)iːs        ʔaʔim      ƛiːsƛiːs‑ši(ƛ)\\
             understand‑\gl{shift}‑\gl{past}‑\gl{1sg} when‑\gl{indef.1sg} first.time go.to.school‑\gl{mom}\\
             I.sort.of.understood                    whenever.I         first.time started.school\\
-            \gl{pred}                               \gl{pred}           \gl{pred} \gl{pred}\\
+            \gl{pred}                               { }                \gl{pred} \gl{pred}\\
             \tln{I sort of understood (English) when I first went to school.}
     \exsource[GL 040]{Louie2003}
 
@@ -490,7 +513,11 @@ It is important to distinguish these cases of \dfn{clause combining} from \dfn{s
   \end{xlist}
 \end{exe}
 
-It is also important to keep in mind that property concepts and numerals/quantifiers are very often predicates in Nuuchahnulth, as shown in the following examples. Note that \exref{ex:3.15b} is a serialized predicate construction.
+For this study, I coded each stem in a serial verb sequence as an individual predicate. In each of the examples in \exref{ex:3.14}, for instance, both words are coded individually as predicates. An alternative approach to the coding of serial verb constructions in Nuuchahnulth would be to consider each sequence of serial verbs as a single complex predicate, and assign just one data point to that complex construction. In this approach, the predicate being analyzed in \exref{ex:3.14a} would not be \txn{t̓iqʷiɬ} \tln{sit on the floor} and \txn{hiiɬ} \tln{there in the house} separately, but instead the single complex predicate \txn{t̓iqʷiɬ hiiɬ} \tln{sit there in the house}. The motivation for this latter approach is the fact, mentioned above, that serial verb constructions are used when the speaker wishes to package the scene as a single state of affairs rather than multiple ones \parencite[98--99]{Nakayama2001}. It may be the case, therefore, that serialized verbs are better treated as a single lexical unit and constitute a single data point rather than multiple ones for the purpose of this study. This would have the presumed effect of significantly reducing the overall polyfunctionality rating for Nuuchahnulth, since there is no structurally unmarked referential counterpart to verb serialization in Nuuchahnulth. That is, a serialized verb construction like \txn{t̓iqʷiɬ hiiɬ} will never be used as a referent without additional structural coding (the relative mood suffix).
+
+However, languages (and individual predicates within a language) vary widely in terms of how lexically unified the components of their serial verb constructions are \parencite[11--12]{Aikhenvald2006}. In some languages, serial verb constructions are highly lexicalized and unified, and one cannot paraphrase them using a sequence of separate clauses and still obtain a felicitous interpretation or the same intended meaning \parencite[6, 11--12]{Aikhenvald2006}. In other languages, serial verb constructions are quite compositional. Nuuchahnulth lies on the compositional end of this spectrum. \textcite[98]{Nakayama2001} notes that Nuuchahnulth speakers may choose to express the same scene either as a single state of affairs (with a serial verb construction) or as multiple states of affairs (with clause combining). Additional evidence of the compositionality of serial verb constructions in Nuuchahnulth is their token frequency: though I have not yet done explicit counts of each combination of verbs in different serial verb constructions, I can confidently assert that individual combinations of verbs in a serial verb construction rarely reoccur beyond their immediate discourse context. Phrases like \txn{t̓iqʷiɬ hiiɬ} \tln{sit there in the house} do not appear to be a lexicalized unit with a conventionally-associated meaning in the same way that English compounds or phrasal verbs are. My decision to code each verb in Nuuchahnulth serial verb constructions as an individual predicate thus reflects the compositionality of those constructions.
+
+Another useful heuristic to keep in mind when determining discourse functions in Nuuchahnulth is that property concepts and numerals/quantifiers are very often predicates, as shown in the following examples. Note that \exref{ex:3.15b} is a serialized predicate construction.
 
 \begin{exe}
   \ex\label{ex:3.15}
@@ -542,7 +569,7 @@ It is also important to keep in mind that property concepts and numerals/quantif
   \exsource[FoodThief 046]{Little2003}
 \end{exe}
 
-\enquote{Adverbials} (that is, predicate modifiers) are also encoded via predicate constructions in Nuuchahnulth. \citeauthor{Nakayama2001} states, \textquote[{\cite[51]{Nakayama2001}}]{It is, however, difficult to distinguish the structural behavior of such \enquote{adverbs} and that of other intransitive verbals in serialization}. Examples of this kind of serialization are in \exref{ex:3.17}.
+\idx{Nuuchahnulth} does not have any \enquote{adverbial} (predicate modifier) constructions. Meanings that are conveyed by predicate modifiers in other languages are expressed with single predicates or verb serialization in Nuuchahnulth. \citeauthor{Nakayama2001} states, \textquote[{\cite[51]{Nakayama2001}}]{It is, however, difficult to distinguish the structural behavior of such \enquote{adverbs} and that of other intransitive verbals in serialization}. Examples of this kind of serialization are in \exref{ex:3.17}.
 
 \begin{exe}
   \ex\label{ex:3.17}
@@ -588,7 +615,11 @@ It is also important to keep in mind that property concepts and numerals/quantif
   \end{xlist}
 \end{exe}
 
-Certain inflectional markers, when present, also unambiguously indicate the discourse function of the word they appear with. Words which take the definite suffix \txn{-ʔi·} (glossed as \gl{def}) or one of the relative suffixes (glossed as \gl{rel}) always function to refer. Except when they co-occur with either the definite or relative markers, the following kinds of mood suffixes always indicate a predicate. In \idx{Nuuchahnulth}, most mood suffixes are fused with the following person suffixes, so each of the suffixes in this list has multiple realizations depending on the person and number of the clausal arguments.
+Certain inflectional markers, when present, also unambiguously indicate the discourse function of the word they appear with. Words which take the Definite suffix \txn{-ʔi·} (glossed as \gl{def}) or one of the Relative suffixes (glossed as \gl{rel}) always function to refer.
+
+The status of the Definite marker in Nuuchahnulth and its parallels / cognates in other Pacific Northwest languages is a matter of some debate. Here, I treat it as an inflectional marker which incidentally and unambiguously indicates that the word it attaches to is a referent. While \textcite[48]{Nakayama2001} does explicitly talk about \enquote{nominalization with the use of \txn{‑ʔi·} \textsc{definite}}, he does not explicitly call the suffix a nominalizer or label it as such. And while the examples in \textcite[48]{Nakayama2001} do indeed make the Definite suffix appear derivational in nature, these examples are not representative. The majority of uses of the Definite suffix in the Nuuchahnulth corpus occur with typical object words rather than action words. In one text (Bluejay), 10 out of 13 instances of the Definite suffix occur with object words. Given this distribution, it seems more accurate to state that the Definite suffix is inflectional, and incidentally happens to indicate that the word is a referent, than that it is derivational.
+
+Other inflectional markers also unambiguously indicate the discourse function of the word they appear with. Except when they co-occur with either the Definite or Relative markers, the following kinds of mood suffixes always indicate a predicate. In \idx{Nuuchahnulth}, most mood suffixes are fused with the following person suffixes, so each of the suffixes in this list has multiple realizations depending on the person and number of the clausal arguments.
 
 \begin{itemize}
   \singlespacing
@@ -608,7 +639,7 @@ Certain distributional behaviors also abet identification of the discourse funct
 
 Finally, discourse-level considerations play an important role in determining the pragmatic function of each word. Most helpful is topic continuity, wherein a referent is already established in the discourse. This is accomplished either directly via an overt referent in a lexical argument or bound person marker, or indirectly via other kinds of inflectional affixes or features of a word that imply the existence of a referent \parentext{what \textcite{Kibrik2011} calls \dfn{referential aids}}. Each successive lexical item encountered in a text must be interpreted in the context of the previously established discourse referents, so that certain interpretations of the item are much more sensible than others. Lastly, I consulted the audio files accompanying the corpus in order to take prosodic information into account. Clear prosodic breaks in the discourse are a strong sign of clausal boundaries.\index{Nuuchahnulth}
 
-What follows is a sample annotated abstract from the beginning of the Kingfisher story \parencite{Louie2003}, with each relevant lexical item annotated for its discourse function. Lexical items that are excluded from this study for one of the reasons discussed in \secref*{sec:3.3.1} are not given an annotation.
+What follows is a sample annotated abstract from the beginning of the Kingfisher story \parencite{Louie2003}, with each relevant lexical item annotated for its discourse function. Lexical items that are excluded from this study for one of the reasons discussed in \secref*{sec:3.3.1} are not given an annotation. Following this passage, the reasons for each coding decision are provided in bullet point format. Each point may apply to multiple lexical items, and vice versa. The tokens that each point applies to are indicated at the beginning of that bullet point.
 
 \begin{exe}
 
@@ -617,130 +648,145 @@ What follows is a sample annotated abstract from the beginning of the Kingfisher
   \singlespacing
   \renewcommand{\eachwordfive}{\rule[-10pt]{0pt}{0pt}\rmfamily}
 
-  \glllll qiiʔaƛ                   qiit̓an̓aƛ                          qʷiyuckʷiʔitq        qʷis        ʔaḥ\\
-  qiː‑ʼaƛ                  qiː‑t̓an̓a‑ʼaƛ                      qʷiyu‑ckʷi·‑ʔi·tq    qʷis        ʔaḥ\\
-  for.a.long.time‑\gl{fin} for.a.long.time‑slightly‑\gl{fin} time‑done‑\gl{rel.3} happen.thus this\\
-  happened.long.ago        quite.a.while.ago                 when.it.occurred     happen.thus this\\
-  \gl{pred}                \gl{pred}                         \gl{ref}             \gl{pred}   \gl{ref}\\
-  \vfix
-  \tln{This happened a long time ago.}
+  \glllll qiiʔaƛ\super{1}          qiit̓an̓aƛ\super{2}                 qʷiyuckʷiʔitq\super{3} qʷis\super{4} ʔaḥ\super{5}\\
+          qiː‑ʼaƛ                  qiː‑t̓an̓a‑ʼaƛ                      qʷiyu‑ckʷi·‑ʔi·tq      qʷis          ʔaḥ\\
+          for.a.long.time‑\gl{fin} for.a.long.time‑slightly‑\gl{fin} time‑done‑\gl{rel.3}   happen.thus   this\\
+          happened.long.ago        quite.a.while.ago                 when.it.occurred       happen.thus   this\\
+          \gl{pred}                \gl{pred}                         { }                    \gl{pred}     \gl{ref}\\
+          \vfix
+          \tln{This happened a long time ago.}
 
-  \glllll siikc̓inƛ           siikaa            hitac̓inƛ                  maaqtusiis\\
-  siːk‑c̓inƛ          siːk‑(y)a·        hita‑c̓inƛ                 maːqtusiːs\\
-  sailing‑into.a.bay sailing‑\gl{cont} there.\gl{mom}‑into.a.bay \gl{name}\\
-  sail.into.a.bay    sailing           entered.into.a.bay        \gl{name}\\
-  \gl{pred}          \gl{pred}         \gl{pred}                 \gl{ref}\\
-  \vfix
-  \tln{They sailed into the bay of Maaqtusiis.}
+  \glllll siikc̓inƛ\super{6}  siikaa\super{7}   hitac̓inƛ\super{8}         maaqtusiis\super{9}\\
+          siːk‑c̓inƛ          siːk‑(y)a·        hita‑c̓inƛ                 maːqtusiːs\\
+          sailing‑into.a.bay sailing‑\gl{cont} there.\gl{mom}‑into.a.bay \gl{name}\\
+          sail.into.a.bay    sailing           entered.into.a.bay        \gl{name}\\
+          \gl{pred}          \gl{pred}         \gl{pred}                 \gl{ref}\\
+          \vfix
+          \tln{They sailed into the bay of Maaqtusiis.}
 
-  \glllll yuupickʷimatak              yuupi    yuksaaʔa\\
-  yuːpi‑ckʷi·‑matak           yuːpi    yu‑ksa·ʔa\\
-  breeze‑done‑probably        breeze   blowing‑come.to.land\\
-  probably.there.was.a.breeze breeze   breeze.along.the.shoreline\\
-  \gl{pred}                   \gl{ref} \gl{pred}\\
-  \vfix
-  \tln{There probably was a little wind, blowing towards the land.}
+  \glllll yuupickʷimatak\super{10}    yuupi\super{11} yuksaaʔa\super{12}\\
+          yuːpi‑ckʷi·‑matak           yuːpi           yu‑ksa·ʔa\\
+          breeze‑done‑probably        breeze          blowing‑come.to.land\\
+          probably.there.was.a.breeze breeze          breeze.along.the.shoreline\\
+          \gl{pred}                   \gl{ref}        \gl{pred}\\
+          \vfix
+          \tln{There probably was a little wind, blowing towards the land.}
 
-  \glllll qʷiyimtii                   n̓aas     hitac̓inƛ\\
-  qʷiyu‑imt‑(y)iː             n̓aːs     hita‑c̓inƛ\\
-  when‑\gl{past}‑\gl{indef.3} day      there.\gl{mom}‑in.a.bay\\
-  whenever.it.was             day      entered.a.bay\\
-  \gl{pred}                   \gl{ref} \gl{pred}\\
-  \vfix
-  \tln{They came into the bay one day.}
+  \glllll qʷiyimtii\super{13}         n̓aas\super{14} hitac̓inƛ\super{15}\\
+          qʷiyu‑imt‑(y)iː             n̓aːs           hita‑c̓inƛ\\
+          when‑\gl{past}‑\gl{indef.3} day            there.\gl{mom}‑in.a.bay\\
+          whenever.it.was             day            entered.a.bay\\
+          { }                         \gl{ref}       \gl{pred}\\
+          \vfix
+          \tln{They came into the bay one day.}
 
-  \glllll hitac̓u      ʔukɬaakʔakna                          y̓uuqʷaa\\
-  hitac̓u      ʔu‑kɬa·‑ak‑ʔa·k‑na·                   y̓uːqʷaː\\
-  \gl{name}   it‑called‑\gl{dur}‑\gl{poss}‑\gl{1pl} also\\
-  \gl{name}   we.also.call.it                       also\\
-  { }         \gl{pred}                             \gl{pred}\\
-  \vfix
-  \tln{We also call it (the bay) ``\txn{hitac̓u}".}
+  \glllll hitac̓u\super{16} ʔukɬaakʔakna\super{17}                y̓uuqʷaa\super{18}\\
+          hitac̓u           ʔu‑kɬa·‑ak‑ʔa·k‑na·                   y̓uːqʷaː\\
+          \gl{name}        it‑called‑\gl{dur}‑\gl{poss}‑\gl{1pl} also\\
+          \gl{name}        we.also.call.it                       also\\
+          { }              \gl{pred}                             \gl{pred}\\
+          \vfix
+          \tln{We also call it (the bay) ``\txn{hitac̓u}".}
 
-  \glllll waɬyuu       maaqtusiis  wiiḥaaqsusiis\\
-  waɬ‑yu·      maːqtusiːs  wiːḥaːqsusiːs\\
-  go.home‑done \gl{name}   \gl{name}\\
-  gone.home    \gl{name}   \gl{name}\\
-  \gl{pred}    \gl{ref}    { }\\
-  \vfix
-  \tln{They went to Maaqtusiis — [to be exact,] \txn{Wiiḥaaqsusiis}.}
+  \glllll waɬyuu\super{19} maaqtusiis\super{20} wiiḥaaqsusiis\super{21}\\
+          waɬ‑yu·          maːqtusiːs           wiːḥaːqsusiːs\\
+          go.home‑done     \gl{name}            \gl{name}\\
+          gone.home        \gl{name}            \gl{name}\\
+          \gl{pred}        \gl{ref}             { }\\
+          \vfix
+          \tln{They went to Maaqtusiis — [to be exact,] \txn{Wiiḥaaqsusiis}.}
 
-  \glllll ʔuʔiiyačištckʷi          wiiḥaaqsusiis t̓ayuukʷiƛ         kuunaa\\
-  ʔu‑ʔi·ya‑ačišt‑ckʷi·     wiːḥaːqsusiːs t̓ayuː‑kʷi(ƛ)      kuːnaː\\
-  it‑reach‑on.the.sea‑done \gl{name}     anchored‑\gl{mom} schooner\\
-  reached                  \gl{name}     anchored          schooner\\
-  \gl{pred}                \gl{ref}      \gl{pred}         \gl{ref}\\
-  \vfix
-  \tln{The schooner reached \txn{Wiiḥaaqsusiis} and dropped anchor.}
+  \glllll ʔuʔiiyačištckʷi\super{22} wiiḥaaqsusiis\super{23} t̓ayuukʷiƛ\super{24} kuunaa\super{25}\\
+          ʔu‑ʔi·ya‑ačišt‑ckʷi·      wiːḥaːqsusiːs           t̓ayuː‑kʷi(ƛ)        kuːnaː\\
+          it‑reach‑on.the.sea‑done  \gl{name}               anchored‑\gl{mom}   schooner\\
+          reached                   \gl{name}               anchored            schooner\\
+          \gl{pred}                 \gl{ref}                \gl{pred}           \gl{ref}\\
+          \vfix
+          \tln{The schooner reached \txn{Wiiḥaaqsusiis} and dropped anchor.}
 
-  \glllll wik       ʔiiḥ      wikckʷii  ʔiiḥ\\
-  wik       ʔiːḥ      wik‑ckʷi· ʔiːḥ\\
-  not       large     not‑done  large\\
-  not       large     was.not   large\\
-  \gl{pred} \gl{pred} \gl{pred} \gl{pred}\\
-  \vfix
-  \tln{It (the schooner) was not so big.}
+  \glllll wik\super{26} ʔiiḥ\super{27} wikckʷii\super{28} ʔiiḥ\super{29}\\
+          wik           ʔiːḥ           wik‑ckʷi·          ʔiːḥ\\
+          not           large          not‑done           large\\
+          not           large          was.not            large\\
+          \gl{pred}     \gl{pred}      \gl{pred}          \gl{pred}\\
+          \vfix
+          \tln{It (the schooner) was not so big.}
 
-  \glllll ʔaƛa      ʔaƛista             qacc̓istamitquu\\
-  ʔaƛa      ʔaƛa‑ista           qacc̓a‑ista‑mit‑quː\\
-  two       two‑people.on.board three‑people.on.board‑\gl{past}‑\gl{cond.3}\\
-  two       two.people.on.board there.could.have.been.three.people.on.board\\
-  \gl{pred} \gl{ref}            \gl{pred}\\
-  \vfix
-  \tln{There were two crewmen, or there could have been three, on the ship.}
+  \glllll ʔaƛa\super{30} ʔaƛista\super{31}   qacc̓istamitquu\super{32}\\
+          ʔaƛa           ʔaƛa‑ista           qacc̓a‑ista‑mit‑quː\\
+          two            two‑people.on.board three‑people.on.board‑\gl{past}‑\gl{cond.3}\\
+          two            two.people.on.board there.could.have.been.three.people.on.board\\
+          \gl{pred}      \gl{ref}            \gl{pred}\\
+          \vfix
+          \tln{There were two crewmen, or there could have been three, on the ship.}
 
-  \glllll hinaačiƛ̓aɬ                            yaqitii\\
-  hin‑a·či(ƛ)‑ʔa·ɬ                      yaq‑it‑(y)iː\\
-  there.\gl{mom}‑go.out.to.meet‑\gl{pl} who‑\gl{past}‑\gl{indef.3}\\
-  they.go.out.to.meet                   whoever.it.was\\
-  \gl{pred}                             \gl{ref}\\
-  \vfix
-  \tln{Some people went out to meet them (the people on the schooner).}
+  \glllll hinaačiƛ̓aɬ\super{33}                  yaqitii\super{34}\\
+          hin‑a·či(ƛ)‑ʔa·ɬ                      yaq‑it‑(y)iː\\
+          there.\gl{mom}‑go.out.to.meet‑\gl{pl} who‑\gl{past}‑\gl{indef.3}\\
+          they.go.out.to.meet                   whoever.it.was\\
+          \gl{pred}                             { }\\
+          \vfix
+          \tln{Some people went out to meet them (the people on the schooner).}
 
-  \glllll ʔin   ʔutwiickʷiʔaaɬ          hinaačiƛ                      wiʔakʔi        wiiʔaksaʔi           ḥaaʔak̓atʔi                ɬim̓aqsti\\
-  ʔin   ʔutwiː‑ckʷi·‑ʔaːɬ       hin‑a·či(ƛ)                   wiʔak‑ʔi·      wiʔak‑sa‑ʔi·         ḥaːʔak‑ʼat‑ʔi·            ɬim̓aqsti\\
-  since first‑done‑always       there.\gl{mom}‑go.out.to.meet brave‑\gl{def} brave‑real‑\gl{def}  strong‑\gl{poss}‑\gl{def} mind\\
-  since they.were.the.first.one go.out.to.meet                the.brave.one  the.bravest.one      the.one.with.strong.one   mind\\
-  { }   \gl{pred}               \gl{pred}                     \gl{ref}       \gl{ref}             \gl{ref}                  \gl{ref}\\
-  \vfix
-  \tln{The first ones to go out were the bravest ones, the ones with strong minds.}
+  \glllll ʔin\super{35} ʔutwiickʷiʔaaɬ\super{36} hinaačiƛ\super{37}            wiʔakʔi\super{38} wiiʔaksaʔi\super{39} ḥaaʔak̓atʔi\super{40}      ɬim̓aqsti\super{41}\\
+          ʔin           ʔutwiː‑ckʷi·‑ʔaːɬ        hin‑a·či(ƛ)                   wiʔak‑ʔi·         wiʔak‑sa‑ʔi·         ḥaːʔak‑ʼat‑ʔi·            ɬim̓aqsti\\
+          since         first‑done‑always        there.\gl{mom}‑go.out.to.meet brave‑\gl{def}    brave‑real‑\gl{def}  strong‑\gl{poss}‑\gl{def} mind\\
+          since         they.were.the.first.one  go.out.to.meet                the.brave.one     the.bravest.one      the.one.with.strong.one   mind\\
+          { }           \gl{pred}                \gl{pred}                     \gl{ref}          \gl{ref}             \gl{ref}                  \gl{ref}\\
+          \vfix
+          \tln{The first ones to go out were the bravest ones, the ones with strong minds.}
 
-  \glllll ʔin naʔaackʷaƛ         ʔaya     mamaɬn̓i   hisiickʷiʔitqʔaɬ           hiistiƛ   ciqy̓ak           čiinuukʔatḥ\\
-  ʔin naʔaː‑ckʷi·‑ʼaƛ    ʔaya     mamaɬn̓i   hisiː‑ckʷi·‑ʔi·tq‑ʔa·ɬ     hiːstiƛ   ciq‑y̓akʷ         č̓iːnuːk‑ʼatḥ\\
-  ??  hear‑done‑\gl{fin} many     white.man ??‑done‑\gl{rel.3}‑\gl{pl} from      speak‑instrument Chinook‑belonging.to\\
-  ??  understood         many     white.man the.way.they.spoke         from      language         Chinook\\
-  { } \gl{pred}          \gl{mod} \gl{ref}  \gl{ref}                   \gl{pred} \gl{ref}         \gl{pred}\\
-  \vfix
-  \tln{Many white men could understand Chinook Jargon.}
+  \glllll ʔin\super{42} naʔaackʷaƛ\super{43} ʔaya\super{44} mamaɬn̓i\super{45} hisiickʷiʔitqʔaɬ\super{46} hiistiƛ\super{47} ciqy̓ak\super{48} čiinuukʔatḥ\super{49}\\
+          ʔin           naʔaː‑ckʷi·‑ʼaƛ      ʔaya           mamaɬn̓i           hisiː‑ckʷi·‑ʔi·tq‑ʔa·ɬ     hiːstiƛ           ciq‑y̓akʷ         č̓iːnuːk‑ʼatḥ\\
+          ??            hear‑done‑\gl{fin}   many           white.man         ??‑done‑\gl{rel.3}‑\gl{pl} from              speak‑instrument Chinook‑belonging.to\\
+          ??            understood           many           white.man         the.way.they.spoke         from              language         Chinook\\
+          { }           \gl{pred}            \gl{mod}       \gl{ref}          { }                        \gl{pred}         \gl{ref}         \gl{ref}\\
+          \vfix
+          \tln{Many white men could understand Chinook Jargon.}
 
-  \glllll čiičiinukʷackʷaƛ                                ʔuuš\\
-  \gl{dup}‑čiːnu·k‑(y)a‑ckʷi·‑ʼaƛ                 ʔuːš\\
-  \gl{distr}‑speak.Chinook‑\gl{rep}‑done‑\gl{fin} some\\
-  spoke.Chinook.Jargon                            some\\
-  \gl{pred}                                       \gl{ref}\\
-  \vfix
-  \tln{Some of them spoke Chinook Jargon.}
+  \glllll čiičiinukʷackʷaƛ\super{50}                      ʔuuš\super{51}\\
+          \gl{dup}‑čiːnu·k‑(y)a‑ckʷi·‑ʼaƛ                 ʔuːš\\
+          \gl{distr}‑speak.Chinook‑\gl{rep}‑done‑\gl{fin} some\\
+          spoke.Chinook.Jargon                            some\\
+          \gl{pred}                                       \gl{ref}\\
+          \vfix
+          \tln{Some of them spoke Chinook Jargon.}
 
-  \glllll hist̓atḥckʷaƛukʔaɬ                                  ʔaḥ      [Hudson Bay]\\
-  hist‑ʼatḥ‑ckʷi·‑ʼaƛ‑uk‑ʔa·ɬ                        ʔaḥ      ~\\
-  there‑belonging.to‑done‑\gl{fin}‑\gl{poss}‑\gl{pl} this     ~\\
-  they.got.theirs.from.there                         they     ~\\
-  \gl{pred}                                          \gl{ref} { }\\
-  \vfix
-  \tln{They got theirs (= their knowledge of Chinook Jargon) from Hudson Bay Company.}
+  \glllll hist̓atḥckʷaƛukʔaɬ\super{52}                        ʔaḥ\super{53} [Hudson Bay]\\
+          hist‑ʼatḥ‑ckʷi·‑ʼaƛ‑uk‑ʔa·ɬ                        ʔaḥ           ~\\
+          there‑belonging.to‑done‑\gl{fin}‑\gl{poss}‑\gl{pl} this          ~\\
+          they.got.theirs.from.there                         they          ~\\
+          \gl{pred}                                          \gl{ref}      { }\\
+          \vfix
+          \tln{They got theirs (= their knowledge of Chinook Jargon) from Hudson Bay Company.}
 
-  \glllll yaqʷiiyii               naʔaaʔaƛ      Captainmitquu                 yaqʷacʔitq                  šipʔii\\
-  yaqʷ‑wi·‑(y)iː          naʔaː‑ʼaƛ     Captain‑mit‑quː               yaqʷ‑ac‑ʔi·tq               šip‑ʔi·\\
-  who‑first‑\gl{indef.3}  hear‑\gl{fin} captain‑\gl{past}‑\gl{cond.3} who‑belonging.to‑\gl{rel.3} ship‑\gl{def}\\
-  the.ones.who.were.first understood    one.who.was.Captain           owner.of                    the.ship\\
-  \gl{ref}                \gl{pred}     \gl{pred}                     \gl{ref}                    \gl{ref}\\
-  \vfix
-  \tln{Among the first ones that [learned to] understand the language might have been the Captain who was taking command of the ship.}
+  \glllll yaqʷiiyii\super{54}     naʔaaʔaƛ\super{55} Captainmitquu\super{56}       yaqʷacʔitq\super{57}        šipʔii\super{58}\\
+          yaqʷ‑wi·‑(y)iː          naʔaː‑ʼaƛ          Captain‑mit‑quː               yaqʷ‑ac‑ʔi·tq               šip‑ʔi·\\
+          who‑first‑\gl{indef.3}  hear‑\gl{fin}      captain‑\gl{past}‑\gl{cond.3} who‑belonging.to‑\gl{rel.3} ship‑\gl{def}\\
+          the.ones.who.were.first understood         one.who.was.Captain           owner.of                    the.ship\\
+          { }                     \gl{pred}          \gl{pred}                     { }                         \gl{ref}\\
+          \vfix
+          \tln{Among the first ones that [learned to] understand the language might have been the Captain who was taking command of the ship.}
 
   \parencite[Kingfisher]{Louie2003}
   \renewcommand{\eachwordfive}{\rmfamily}
 
 \end{exe}
+
+\begin{itemize}
+  \singlespacing
+  \item {[\txn{qiiʔaƛ}\super{1}; \txn{qʷis}\super{4}; \txn{siikc̓inƛ}\super{6}; \txn{siikaa}\super{7}; \txn{yuupickʷimatak}\super{10}; \txn{yuksaaʔa}\super{12}; \txn{hitac̓inƛ}\super{15}; \txn{waɬyuu}\super{19}; \txn{ʔuʔiiyačištckʷi}\super{22}; \txn{t̓ayuukʷiƛ}\super{24}; \txn{wik}\super{26}; \txn{wikckʷii}\super{28}; \txn{ʔaƛa}\super{30}; \txn{qacc̓istamitquu}\super{32}; \txn{hinaačiƛ̓aɬ}\super{33}; \txn{ʔutwiickʷiʔaaɬ}\super{36}; \txn{naʔaackʷaƛ}\super{43}; \txn{hiistiƛ}\super{47}; \txn{čiičiinukʷackʷaƛ}\super{50}; \txn{hist̓atḥckʷaƛukʔaɬ}\super{52}; \txn{Captainmitquu}\super{56}]} \textsc{pred:} These words are in initial position in their clause, with no obvious topicalization or focus construction which would trigger another item to precede them.
+  \item {[\txn{qiit̓an̓aƛ}\super{2}; \txn{hitac̓inƛ}\super{8}; \txn{y̓uuqʷaa}\super{18}; \txn{ʔiiḥ}\super{27}; \txn{ʔiiḥ}\super{29}; \txn{hinaačiƛ}\super{37}; \txn{naʔaaʔaƛ}\super{55}]} \textsc{pred:} These words are serialized predicates, immediately following another predicate, with no person or mood marking (i.e. as a bare stem), and can be reasonably interpreted as one part of a single state of affairs rather than separate states of affairs.
+  \item {[\txn{ʔaḥ}\super{5}; \txn{maaqtusiis}\super{9}; \txn{yuupi}\super{11}; \txn{n̓aas}\super{14}; \txn{maaqtusiis}\super{20}; \txn{wiiḥaaqsusiis}\super{23}; \txn{kuunaa}\super{25}; \txn{ʔaƛista}\super{31}; \txn{wiʔakʔi}\super{38}; \txn{mamaɬn̓i}\super{45}; \txn{ciqy̓ak}\super{48}; \txn{ʔuuš}\super{51}; \txn{ʔaḥ}\super{53}; \txn{šipʔii}\super{58}]} \textsc{ref:} These words fill either the Subject or Object slot immediately following the predicate or serialized predicate construction. Subjects and Objects rarely co-occur in Nuuchahnulth clauses, making the post-predicate position a useful heuristic for reference.
+  \item {[\txn{yuksaaʔa}\super{12}]} \textsc{pred:} These words constitute their own prosodic unit, and thus likely are functioning as the predicative head of their clause. In particular, these words come at the end of the larger utterance, and seem to be antitopics.
+  \item {[\txn{ʔukɬaakʔakna}\super{17}; \txn{qacc̓istamitquu}\super{32}; \txn{hinaačiƛ̓aɬ}\super{33}; \txn{hist̓atḥckʷaƛukʔaɬ}\super{52}; \txn{Captainmitquu}\super{56}]} \textsc{pred:} These words take person and/or mood inflection.
+  \item {[\txn{wiʔakʔi}\super{38}; \txn{wiiʔaksaʔi}\super{39}; \txn{ḥaaʔak̓atʔi}\super{40}; \txn{šipʔii}\super{58}]} \textsc{ref:} These words take the Definite suffix \txn{-ʔi·}.
+  \item {[\txn{ʔaya}\super{44}]} \textsc{mod:} This word enriches the meaning of the following referent, and fills the modifier slot immediately preceding it. It also forms part of the same prosodic unit as the following referent.
+\end{itemize}
+
+Words that are not coded for their discourse function are either a) proper names, b) uninterpretable by \textcite{Nakayama2001}, or c) contain overt derivation (the Relative or Indefinite suffixes).
+
+One final note on the negative predicate \txn{wik‑}: \textcite[119--122]{Nakayama2001} treats this stem like any other lexical predicate. While in many languages negation is primarily a grammatical phenomenon (i.e. it is coded through grammatical affixes or otherwise highly-grammaticalized words), in Nuuchahnulth negation appears to be primarily a lexical phenomenon accomplished with complement-taking predicates such as \txn{wik‑} \tln{not} and \txn{wiiy̓a} \tln{never}. This distinction between lexical and grammatical negation is analagous to the distinction between lexical and grammatical aspect. Behaviorally, negative constructions in Nuuchahnulth act just like other lexical complement-taking predicates, including allowing for the presence of lexical suffixes, e.g. \txn{wik‑maɬ} \tln{not-surviving}. Because these negators are more lexical than grammatical for Nuuchahnulth, they are treated as lexical items and given an analysis in this study (usually but not always as predicates).
 
 The complete set of annotations for the Nuuchahnulth corpus may be found at \href{https://github.com/dwhieb/dissertation}{https://github.com/\\dwhieb/dissertation}.
 
