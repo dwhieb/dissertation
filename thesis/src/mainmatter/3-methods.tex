@@ -25,6 +25,8 @@ The sheer size of the Open American National Corpus\index{English}—even when c
 
 To create the 100-item samples, I first \dfn{lemmatized} each corpus. For every lexical token in the corpus, I programmatically determined the lemma associated with that particular wordform. For example, the English wordforms \txn{knows} and \txn{knew} are associated with the lemma \txn{know}. For \idx{English}, lemmatization was accomplished with the \href{http://www.nltk.org/}{Natural Language Toolkit} for Python \parencite{BirdKleinLoper2009}, using the Wordnet lemmatizer. The OANC includes Penn tags for parts of speech, so I was able to use those part-of-speech tags with Wordnet's \texttt{lemmatize()} method to improve lemmatization. For \idx{Nuuchahnulth}, lemmatization simply involved programmatically stripping away the inflectional morphology from each token, leaving just the stem. For example, the token in \exref{ex:3.1} is lemmatized as an instance of the stem \txn{ʔam-umɬ-} \tln{first‑be.born}. Since the entire Nuuchahnulth corpus is interlinearized with glosses and stored in DLx JSON format \parencite{Hieber2021a}, this was accomplished with a simple Node (JavaScript) script.
 
+\clearpage
+
 \begin{exe}
   \ex\label{ex:3.1}
   \exinfo{\idx{Nuuchahnulth} (Wakashan > Southern Wakashan)}
@@ -127,6 +129,8 @@ Note that the issue of compounding is primarily relevant to \idx{English}. \idx{
 
 \noindent \idx{Nuuchahnulth} and the other languages of the Pacific Northwest are also well known for having \dfn{lexical affixes}, i.e. affixes with concrete lexical meanings. Nuuchahnulth has over 400 such lexical suffixes, a sample of which are shown in \exref{ex:3.5}.
 
+\clearpage
+
 \begin{exe}
 
   \ex\label{ex:3.5}
@@ -197,6 +201,8 @@ Note that the issue of compounding is primarily relevant to \idx{English}. \idx{
           \tln{[In order to get there] we needed to take a boat.}
     \exsource[19]{Nakayama2001}
 
+    \clearpage
+
     \ex\label{ex:3.6c}
     \glll ʔayaʔinɬit k̓acḥaq\\
           ʔaya‑\em{ʼinɬ}‑it                k̓acḥaq\\
@@ -236,6 +242,8 @@ The following principles also guided the annotation of the English data.
   \item Stative (modificational) versus dynamic (predicational) uses of past participle forms required special consideration. It was not always possible to discern with certainty whether a given token of a past participle form was being used statively or dynamically. Compare the use of the word \txn{relieved} in the phrases \txn{she was relieved of duty} vs. \txn{she was relieved to find her car}. The first use is arguably predicative while the second seems more like a predicate adjective. In cases where the discourse context does not make the intended use clear, I opted to code the data as a predicate, since this is the more conservative, historically prior form. Stative, predicate adjective uses were excluded from the analysis.
 
 \end{itemize}
+
+\clearpage
 
 What follows is a sample annotation of some of the data from the English corpus, applying the principles above. I then explain each coding decision for the sample passage in the bullet points that follow. Since some bullet points apply to more than one token, and each token may be referred to by more than one bullet point, each point is listed along with the tokens it applies to.
 
@@ -331,11 +339,14 @@ A few features of \idx{Nuuchahnulth} grammar in particular are extremely helpful
             \tln{Sometimes the large mountains would become out of sight.}
     \exsourcebelow[Qawiqaalth 092]{Louie2003}
 
+    \clearpage
+
     \ex\label{ex:3.9b}
     \gllll \em{maaqtusiis} hiistmaɬits.\\
            \em{maaqtusiis} hist‑maɬ‑it‑s\\
            \em{\gl{name}}  get.there‑being.born‑\gl{past}‑\gl{1sg}\\
            \em{\gl{ref}} \gl{pred}\\
+           \tln{Maaqtusiis. I was born in Maaqtusiis.}
     \exsource[149]{Nakayama2001}
 
   \end{xlist}
@@ -395,6 +406,8 @@ Sequences of clauses each containing a single predicate are also extremely commo
             \tln{This happened a long time ago.}
     \exsource[Kingfisher 001]{Louie2003}
 
+    \clearpage
+
     \ex\label{ex:3.11b}
     \includegraphics[width=\linewidth]{Qawiqaalth-046.png}
     \glllll č̓uuyukʷiƛ.        hiiniiʔatu.\\
@@ -411,6 +424,8 @@ Sequences of clauses each containing a single predicate are also extremely commo
 \end{exe}
 
 It is important to distinguish these cases of \dfn{clause combining} from \dfn{serialization}. \textcite[98]{Nakayama2001} explains that in cases of serialization, the state of affairs is conceptualized and expressed as a single event, and that in clause combining the state of affairs is conceptualized and expressed as separate events. The same scene can be expressed using either serialization or clause combining, depending on the speaker's choice. Structurally, serialization is distinguished from clause combining by the fact that only the initial predicate will carry person and mood suffixes in cases of serialization. The other members of the serialization immediately follow the main predicate as bare stems. In cases of clause combining, each predicate may take its own mood and participant marking. \textcite[99]{Nakayama2001} provides the following examples showing the contrast between serialization and clause combining respectively.
+
+\clearpage
 
 \begin{exe}
   \ex\label{ex:3.12}
@@ -441,6 +456,8 @@ It is important to distinguish these cases of \dfn{clause combining} from \dfn{s
 \end{exe}
 
 \noindent Prosody provides additional evidence that speakers conceptualize serialization as a unitary state of affairs, as the pitch traces for \exref{ex:3.13a} and \exref{ex:3.13b} show. The two predicates in \exref{ex:3.13a} fall under the same intonational contour, whereas in \exref{ex:3.13b} they are divided into distinct intonational contours.
+
+\clearpage
 
 \begin{exe}
   \ex\label{ex:3.13}
@@ -641,6 +658,8 @@ Finally, discourse-level considerations play an important role in determining th
 
 What follows is a sample annotated abstract from the beginning of the Kingfisher story \parencite{Louie2003}, with each relevant lexical item annotated for its discourse function. Lexical items that are excluded from this study for one of the reasons discussed in \secref*{sec:3.3.1} are not given an annotation. Following this passage, the reasons for each coding decision are provided in bullet point format. Each point may apply to multiple lexical items, and vice versa. The tokens that each point applies to are indicated at the beginning of that bullet point.
 
+\clearpage
+
 \begin{exe}
 
   \ex\label{ex:3.18}
@@ -727,6 +746,8 @@ What follows is a sample annotated abstract from the beginning of the Kingfisher
           \gl{pred}                             { }\\
           \vfix
           \tln{Some people went out to meet them (the people on the schooner).}
+
+  \clearpage
 
   \glllll ʔin\super{35} ʔutwiickʷiʔaaɬ\super{36} hinaačiƛ\super{37}            wiʔakʔi\super{38} wiiʔaksaʔi\super{39} ḥaaʔak̓atʔi\super{40}      ɬim̓aqsti\super{41}\\
           ʔin           ʔutwiː‑ckʷi·‑ʔaːɬ        hin‑a·či(ƛ)                   wiʔak‑ʔi·         wiʔak‑sa‑ʔi·         ḥaːʔak‑ʼat‑ʔi·            ɬim̓aqsti\\
